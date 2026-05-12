@@ -1,0 +1,1261 @@
+% Presentacion - PFM02 / Sesion 01
+% Conversion de fracciones a decimales y viceversa
+
+\pdfminorversion=7
+\documentclass[
+	spanish,
+	aspectratio=1610,
+	xcolor={dvipsnames,table}
+]{beamer}
+
+\geometry{paperwidth=19.2cm,paperheight=12cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usetikzlibrary{
+	arrows.meta,
+	positioning,
+	calc,
+	decorations.pathreplacing,
+	shapes.geometric,
+	shapes.callouts,
+	fit,
+	backgrounds,
+	overlay-beamer-styles
+}
+\usepackage{hyperref}
+
+% Datos del alumno y del programa
+\newcommand{\studentname}{Mtro. Martin Jonathan de la Cruz Munoz}
+\newcommand{\studentshort}{M. de la Cruz Munoz}
+\newcommand{\studentid}{00841}
+\newcommand{\studentemail}{martin.delacruz@campus.iiiepe.edu.mx}
+\newcommand{\programname}{Maestria en Aprendizaje y Ensenanza de las Matematicas}
+\newcommand{\programshort}{MAEM}
+\newcommand{\coursecode}{PFM02}
+\newcommand{\coursename}{Temas selectos de matematicas I}
+\newcommand{\coursegroup}{Grupo A}
+\newcommand{\courseperiod}{Marzo--julio 2026}
+\newcommand{\institutionname}{IIIEPE}
+\newcommand{\institutionlongname}{Instituto de Investigacion, Innovacion y Estudios de Posgrado para la Educacion del Estado de Nuevo Leon}
+\newcommand{\institutionplace}{Monterrey, Nuevo Leon}
+\newcommand{\iiiepelogo}{img/iiiepe/logo-iiiepe-blanco.png}
+\newcommand{\iiiepemark}{img/iiiepe/marca-iiiepe.png}
+\newcommand{\iiiepedots}{img/iiiepe/logo-puntos.png}
+
+% Paleta institucional
+\definecolor{iiiepeNavy}{HTML}{163B5C}
+\definecolor{iiiepeBlue}{HTML}{1F6F9F}
+\definecolor{iiiepeAqua}{HTML}{20B7A8}
+\definecolor{iiiepeOrange}{HTML}{F28C28}
+\definecolor{iiiepePaper}{HTML}{F6F8F7}
+\definecolor{iiiepeInk}{HTML}{1E2A32}
+\definecolor{iiiepeMuted}{HTML}{667085}
+
+\tikzset{
+	paso/.style={
+		draw=iiiepeBlue,
+		rounded corners=2mm,
+		fill=iiiepeBlue!8,
+		align=center,
+		inner sep=5pt,
+		font=\small
+	},
+	dato/.style={
+		draw=iiiepeNavy,
+		rounded corners=2mm,
+		fill=iiiepePaper,
+		align=center,
+		inner sep=5pt,
+		font=\small\bfseries
+	},
+	resultado/.style={
+		draw=iiiepeAqua!80!black,
+		rounded corners=2mm,
+		fill=iiiepeAqua!12,
+		align=center,
+		inner sep=5pt,
+		font=\small\bfseries
+	},
+	verificacion/.style={
+		draw=iiiepeOrange,
+		rounded corners=2mm,
+		fill=iiiepeOrange!12,
+		align=center,
+		inner sep=5pt,
+		font=\scriptsize
+	},
+	nota/.style={
+		draw=iiiepeOrange,
+		rounded corners=2mm,
+		fill=iiiepeOrange!10,
+		align=center,
+		inner sep=4pt,
+		font=\scriptsize
+	},
+	flecha/.style={
+		-{Latex[length=2.5mm]},
+		thick,
+		iiiepeBlue
+	},
+	flechaSecundaria/.style={
+		-{Latex[length=2.2mm]},
+		thick,
+		dashed,
+		iiiepeOrange
+	},
+	resaltar/.style={
+		draw=iiiepeOrange,
+		rounded corners=1.5mm,
+		thick,
+		inner sep=2pt
+	}
+}
+
+\newcommand{\cadenaConversion}[4]{%
+\begin{tikzpicture}[node distance=1.25cm]
+	\node[dato,visible on=<1->] (a) {#1};
+	\node[paso, right=of a,visible on=<2->] (b) {#2};
+	\node[resultado, right=of b,visible on=<3->] (c) {#3};
+	\node[verificacion, below=0.65cm of b,visible on=<4->] (d) {#4};
+	\draw[flecha,visible on=<1->] (a) -- (b);
+	\draw[flecha,visible on=<2->] (b) -- (c);
+	\draw[flechaSecundaria,visible on=<4->] (d) -- (b);
+\end{tikzpicture}%
+}
+
+\newcommand{\ejercicioTikzTresPasos}[5]{%
+\begin{tikzpicture}[node distance=0.95cm and 1.1cm]
+	\node[dato,visible on=<1->] (dato) {#1};
+	\node[paso, right=of dato,visible on=<2->] (puno) {#2};
+	\node[paso, right=of puno,visible on=<3->] (pdos) {#3};
+	\node[resultado, right=of pdos,visible on=<4->] (res) {#4};
+	\node[verificacion, below=0.75cm of pdos,visible on=<5->] (ver) {#5};
+	\draw[flecha,visible on=<1->] (dato) -- (puno);
+	\draw[flecha,visible on=<2->] (puno) -- (pdos);
+	\draw[flecha,visible on=<3->] (pdos) -- (res);
+	\draw[flechaSecundaria,visible on=<5->] (ver) -- (pdos);
+\end{tikzpicture}%
+}
+
+\mode<presentation>{
+	\usetheme{default}
+	\usefonttheme{professionalfonts}
+	\setbeamertemplate{navigation symbols}{}
+	\setbeamertemplate{blocks}[rounded][shadow=false]
+}
+
+\hypersetup{
+	colorlinks=true,
+	urlcolor=iiiepeBlue,
+	linkcolor=iiiepeNavy
+}
+
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=iiiepeInk,bg=white}
+\setbeamercolor{structure}{fg=iiiepeBlue}
+\setbeamercolor{frametitle}{fg=white,bg=iiiepeNavy}
+\setbeamercolor{title}{fg=white,bg=iiiepeNavy}
+\setbeamercolor{block title}{fg=white,bg=iiiepeBlue}
+\setbeamercolor{block body}{fg=iiiepeInk,bg=iiiepePaper}
+\setbeamercolor{alerted text}{fg=iiiepeOrange}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{block title}{series=\bfseries}
+\setbeamertemplate{itemize item}{\textcolor{iiiepeAqua}{\large$\blacktriangleright$}}
+\setbeamertemplate{itemize subitem}{\textcolor{iiiepeOrange}{\scriptsize$\blacksquare$}}
+\setbeamertemplate{enumerate item}{\textcolor{iiiepeBlue}{\insertenumlabel.}}
+
+\newcommand{\localLogo}[1]{%
+	\IfFileExists{#1}{\includegraphics[height=0.58cm]{#1}}{\textbf{\institutionname}}%
+}
+
+\setbeamertemplate{frametitle}{
+	\nointerlineskip
+	\begin{beamercolorbox}[wd=\textwidth,ht=1.05cm,dp=0.22cm,leftskip=0.35cm,rightskip=0.25cm]{frametitle}
+		\begin{minipage}[c]{0.72\textwidth}
+			\insertframetitle
+		\end{minipage}
+		\hfill
+		\raisebox{-0.1cm}{\localLogo{\iiiepelogo}}
+	\end{beamercolorbox}
+	\vspace{-0.04cm}
+	{\color{iiiepeOrange}\rule{\textwidth}{1.4pt}}
+}
+
+\setbeamertemplate{footline}{
+	\leavevmode
+	\hbox{%
+		\begin{beamercolorbox}[wd=.34\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}
+			\color{white}\studentshort
+		\end{beamercolorbox}
+		\begin{beamercolorbox}[wd=.38\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}
+			\color{white}\programshort\ · \coursecode
+		\end{beamercolorbox}
+		\begin{beamercolorbox}[wd=.20\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}
+			\color{white}Matricula \studentid\hfill\insertframenumber/\inserttotalframenumber
+		\end{beamercolorbox}
+	}
+}
+\setbeamercolor{author in head/foot}{bg=iiiepeNavy}
+\setbeamercolor{title in head/foot}{bg=iiiepeBlue}
+\setbeamercolor{date in head/foot}{bg=iiiepeNavy}
+
+\newcommand{\accentbar}{%
+	\begin{tikzpicture}[remember picture,overlay]
+		\path[use as bounding box] (0,0) rectangle (0,0);
+		\fill[iiiepeAqua] (current page.south west) rectangle ([xshift=0.42\paperwidth,yshift=0.08cm]current page.south west);
+		\fill[iiiepeOrange] ([xshift=0.42\paperwidth]current page.south west) rectangle ([xshift=\paperwidth,yshift=0.08cm]current page.south west);
+	\end{tikzpicture}
+}
+
+\newcommand{\sectionframe}[1]{%
+	\begin{frame}[plain]
+		\begin{tikzpicture}[remember picture,overlay]
+			\fill[iiiepeNavy] (current page.south west) rectangle (current page.north east);
+			\IfFileExists{\iiiepedots}{%
+				\node[opacity=0.13,anchor=east] at ([xshift=0.8cm]current page.east) {\includegraphics[height=9.4cm]{\iiiepedots}};
+			}{}
+			\fill[iiiepeAqua] ([xshift=0.85cm,yshift=2.1cm]current page.south west) rectangle ([xshift=1.05cm,yshift=6.3cm]current page.south west);
+			\fill[iiiepeOrange] ([xshift=1.15cm,yshift=2.1cm]current page.south west) rectangle ([xshift=1.35cm,yshift=5.35cm]current page.south west);
+		\end{tikzpicture}
+		\vspace{1.8cm}
+		\hspace{1.25cm}
+		\begin{minipage}{0.72\paperwidth}
+			{\color{white}\Huge\bfseries #1}\\[0.25cm]
+			{\color{white!75}Sesion 01 · Conversion de fracciones y decimales}
+		\end{minipage}
+	\end{frame}
+}
+
+% Separadores automaticos desactivados para evitar diapositivas repetitivas.
+% \AtBeginSection[]{\sectionframe{\insertsectionhead}}
+
+\title[\coursecode]{Conversion de fracciones a decimales y viceversa}
+\subtitle{Sesion 01 · \coursename}
+\author[\studentshort]{\texorpdfstring{\studentname\\\footnotesize Matricula: \studentid\\\href{mailto:\studentemail}{\studentemail}}{\studentname, Matricula: \studentid}}
+\institute[\institutionname]{\institutionlongname\\\coursecode\ · \coursegroup}
+\date[\courseperiod]{\texorpdfstring{\institutionplace\\\courseperiod}{\institutionplace, \courseperiod}}
+
+\begin{document}
+
+\begin{frame}[plain]
+	\begin{tikzpicture}[remember picture,overlay]
+		\fill[iiiepeNavy] (current page.south west) rectangle ([xshift=0.56\paperwidth]current page.north west);
+		\fill[iiiepeBlue] ([xshift=0.56\paperwidth]current page.south west) rectangle (current page.north east);
+		\IfFileExists{\iiiepedots}{%
+			\node[opacity=0.16,anchor=south east] at ([xshift=0.8cm,yshift=-0.3cm]current page.south east) {\includegraphics[height=8.6cm]{\iiiepedots}};
+		}{}
+		\node[anchor=north west] at ([xshift=0.55cm,yshift=-0.45cm]current page.north west) {\localLogo{\iiiepelogo}};
+		\fill[iiiepeOrange] ([xshift=0.58\paperwidth,yshift=1.20cm]current page.south west) rectangle ([xshift=0.92\paperwidth,yshift=1.34cm]current page.south west);
+		\fill[iiiepeAqua] ([xshift=0.58\paperwidth,yshift=0.90cm]current page.south west) rectangle ([xshift=0.82\paperwidth,yshift=1.04cm]current page.south west);
+	\end{tikzpicture}
+
+	\vspace{1.75cm}
+	\begin{minipage}{0.51\paperwidth}
+		{\color{white}\Huge\bfseries Conversion de fracciones\\ a decimales\\ y viceversa}\\[0.25cm]
+		{\color{white!86}\large PFM02 · Sesion 01}\\[0.35cm]
+		{\color{iiiepeOrange}\rule{0.82\linewidth}{1.3pt}}\\[0.45cm]
+		{\color{white}\studentname}\\
+		{\color{white!80}\footnotesize Matricula: \studentid}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.35\paperwidth}
+		\raggedleft
+		{\color{white}\Large\bfseries \institutionname}\\[0.18cm]
+		{\color{white!82}\footnotesize \programname}\\[0.5cm]
+		{\color{white}\small \coursecode\ · \coursename}\\
+		{\color{white!78}\small \courseperiod}\\[0.5cm]
+		{\color{white!74}\footnotesize \institutionplace}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{Contenido}
+	\tableofcontents
+\end{frame}
+
+\section{Actividad}
+
+\begin{frame}{Ficha de la sesion}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Contenido}
+				Expresion de fracciones como decimales y de decimales como fracciones.
+			\end{block}
+			\begin{block}{PDA}
+				Usa diversas estrategias al convertir numeros fraccionarios a decimales y viceversa.
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Aprendizaje de la secuencia}
+				Convertir fracciones a decimales y viceversa, distinguiendo decimales finitos y periodicos.
+			\end{block}
+			\begin{block}{Producto}
+				Procedimientos claros, ejercicios resueltos, situaciones en contexto, evaluacion y retroalimentacion.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Criterios incorporados desde la retroalimentacion}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Estructura de secuencia}
+				La actividad se organiza en cinco fases: antecedente, explicacion, practica, evaluacion y retroalimentacion.
+			\end{block}
+			\begin{block}{Evidencia esperada}
+				No basta la respuesta: debe observarse estrategia, procedimiento, simplificacion, verificacion e interpretacion.
+			\end{block}
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Criterios de evaluacion}
+				Las actividades y exposiciones deben mostrar claridad matematica, aplicacion contextual y reflexion sobre errores.
+			\end{block}
+			\begin{block}{Mejora aplicada}
+				Se retoma la experiencia de la Sesion 02 para hacer visible la retroalimentacion y los criterios de revision.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Ruta pedagogica de la actividad}
+	\begin{columns}[T]
+		\begin{column}{0.20\textwidth}
+			\begin{block}{1. Recuperar}
+				Valor posicional, division y simplificacion.
+			\end{block}
+		\end{column}
+		\begin{column}{0.20\textwidth}
+			\begin{block}{2. Clasificar}
+				Decimal finito, periodico o fraccion decimal.
+			\end{block}
+		\end{column}
+		\begin{column}{0.20\textwidth}
+			\begin{block}{3. Convertir}
+				Usar valor posicional, division o ecuaciones.
+			\end{block}
+		\end{column}
+		\begin{column}{0.20\textwidth}
+			\begin{block}{4. Verificar}
+				Comprobar equivalencia y simplificacion.
+			\end{block}
+		\end{column}
+		\begin{column}{0.20\textwidth}
+			\begin{block}{5. Aplicar}
+				Interpretar medidas, edades y porcentajes.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{0.25cm}
+	\begin{block}{Criterio docente}
+		El procedimiento es suficiente cuando el estudiante puede explicar que hizo, por que funciona y como comprueba que no cambio la cantidad.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Referentes para explicar procedimientos}
+	\small
+	\begin{block}{Criterios aplicados}
+		\begin{itemize}
+			\item \textbf{OpenStax:} una fraccion se interpreta como division; para convertirla a decimal se divide numerador entre denominador.
+			\item \textbf{LibreTexts:} en decimales periodicos se multiplica por potencias de $10$ y se resta para cancelar la parte repetida.
+			\item \textbf{NCTM:} la fluidez procedimental debe conectar conceptos y procedimientos, usar estrategias y verificar el sentido del resultado.
+		\end{itemize}
+	\end{block}
+	\begin{block}{Aplicacion en esta presentacion}
+		Cada ejercicio guiado muestra: anticipacion, procedimiento, resultado y verificacion.
+	\end{block}
+	{\scriptsize
+	Fuentes consultadas:
+	\begin{itemize}
+		\item \href{https://openstax.org/books/prealgebra-2e/pages/5-3-decimals-and-fractions}{OpenStax, 5.3 Decimals and Fractions}.
+		\item \href{https://math.libretexts.org/Bookshelves/Applied_Mathematics/Contemporary_Mathematics_\%28OpenStax\%29/03\%3A_Real_Number_Systems_and_Number_Theory/3.04\%3A__Rational_Numbers/3.4.00\%3A_Exercises}{LibreTexts, Converting Repeating Decimals to a Fraction}.
+		\item \href{https://www.nctm.org/Standards-and-Positions/Position-Statements/Procedural-Fluency-in-Mathematics/}{NCTM, Procedural Fluency in Mathematics}.
+	\end{itemize}}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Mapa general de conversion}
+	\centering
+	\begin{tikzpicture}[
+		node distance=1.05cm and 1.25cm,
+		box/.style={rectangle, rounded corners=3pt, draw=iiiepeNavy, very thick, fill=iiiepePaper, align=center, minimum width=3.2cm, minimum height=1cm},
+		decision/.style={diamond, aspect=2.1, draw=iiiepeBlue, very thick, fill=iiiepeAqua!10, align=center, inner sep=2pt},
+		arrow/.style={-{Latex[length=2.8mm]}, very thick, draw=iiiepeBlue}
+	]
+		\node[box] (frac) {Fraccion\\$\frac{a}{b}$};
+		\node[decision, right=of frac] (tipo) {¿denominador\\$10,100,1000$?};
+		\node[box, above right=of tipo] (pos) {Valor posicional\\contar ceros};
+		\node[box, below right=of tipo] (div) {Division\\$a\div b$};
+		\node[box, right=of pos] (finito) {Decimal\\finito};
+		\node[box, right=of div] (periodico) {Decimal\\finito o periodico};
+		\draw[arrow] (frac) -- (tipo);
+		\draw[arrow] (tipo) -- node[above,sloped]{si} (pos);
+		\draw[arrow] (tipo) -- node[below,sloped]{no} (div);
+		\draw[arrow] (pos) -- (finito);
+		\draw[arrow] (div) -- (periodico);
+	\end{tikzpicture}
+	\vspace{0.25cm}
+	\begin{block}{Idea clave}
+		Convertir no significa cambiar la cantidad: significa escribir el mismo valor en otra representacion.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\section{Fraccion a decimal}
+
+\begin{frame}{Caso 1: fraccion decimal}
+	\begin{columns}[T]
+		\begin{column}{0.46\textwidth}
+			\begin{block}{Que se hace}
+				\begin{enumerate}
+					\item Identificar cuantos ceros tiene el denominador.
+					\item Tomar el numerador.
+					\item Colocar el punto decimal contando esa cantidad de lugares desde la derecha.
+				\end{enumerate}
+			\end{block}
+			\[
+				\frac{375}{1000}=0.375
+			\]
+			\begin{block}{Por que funciona}
+				$1000$ representa milesimas; por eso $375$ milesimas se escribe $0.375$.
+			\end{block}
+		\end{column}
+		\begin{column}{0.50\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.9]
+		
+		% Celdas de valor posicional
+		\foreach \x/\lab in {0/U,1/d,2/c,3/m}{
+			\draw[fill=iiiepePaper] (\x*1.25,0) rectangle ++(1.25,0.9);
+			\node at (\x*1.25+0.625,0.45) {\lab};
+		}
+		
+		% Etiquetas verticales
+		\node[font=\scriptsize, rotate=90, anchor=east] at (0.625,-0.18) {unidades};
+		\node[font=\scriptsize, rotate=90, anchor=east] at (1.875,-0.18) {décimas};
+		\node[font=\scriptsize, rotate=90, anchor=east] at (3.125,-0.18) {centésimas};
+		\node[font=\scriptsize, rotate=90, anchor=east] at (4.375,-0.18) {milésimas};
+		
+		% Número decimal
+		\node[font=\large\bfseries, color=iiiepeOrange] at (0.625,1.45) {0.};
+		\node[font=\Large\bfseries, color=iiiepeBlue] at (1.875,1.45) {3};
+		\node[font=\Large\bfseries, color=iiiepeBlue] at (3.125,1.45) {7};
+		\node[font=\Large\bfseries, color=iiiepeBlue] at (4.375,1.45) {5};
+		
+		% Flecha explicativa
+		\draw[-{Latex[length=2.5mm]}, very thick, iiiepeOrange] 
+			(4.55,2.15) -- (1.55,2.15);
+			
+		\node[font=\small, align=center] at (3.05,2.55) 
+			{$1000$ tiene\\3 ceros};
+		
+	\end{tikzpicture}
+			\vspace{0.2cm}
+			\begin{block}{Error a evitar}
+				No mover el punto ``a ojo'': el numero de ceros determina el numero de cifras decimales.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Caso 2: fraccion no decimal}
+	\begin{block}{Idea de partida}
+		Si el denominador no es $10$, $100$, $1000$, etc., se divide el numerador entre el denominador. Antes de operar, se estima la magnitud.
+	\end{block}
+	\begin{columns}[T]
+		\begin{column}{0.47\textwidth}
+			\[
+			\frac{41}{50}=41\div 50
+			\]
+			\[
+			\begin{array}{rcl}
+				41.00\div 50 &=& 0.82\\
+				50\times 0.8 &=& 40\\
+				41-40 &=& 1\\
+				1.00\div 50 &=& 0.02
+			\end{array}
+			\]
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Lectura didactica}
+				\begin{enumerate}
+					\item $41<50$, entonces el resultado debe ser menor que $1$.
+					\item La division produce $0.82$.
+					\item Se verifica regresando a fraccion.
+				\end{enumerate}
+			\end{block}
+			\begin{block}{Verificacion}
+				\[
+					0.82=\frac{82}{100}=\frac{41}{50}
+				\]
+				La fraccion inicial y el decimal final conservan el mismo valor.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Representacion visual: $\frac{3}{4}=0.75$}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=1.05]
+				\draw[fill=iiiepePaper, thick] (0,0) rectangle (4,1);
+				\foreach \x in {1,2,3}{\draw[thick] (\x,0) -- (\x,1);}
+				\fill[iiiepeAqua!65] (0,0) rectangle (3,1);
+				\node at (2,-0.35) {$\frac{3}{4}$ sombreado};
+				\draw[-{Latex[length=2.5mm]}, thick, iiiepeBlue] (0,-1.1) -- (4.25,-1.1);
+				\foreach \x/\lab in {0/0,1/{0.25},2/{0.50},3/{0.75},4/1}{
+					\draw (\x,-1.22) -- (\x,-0.98);
+					\node[font=\scriptsize] at (\x,-1.48) {\lab};
+				}
+				\fill[iiiepeOrange] (3,-1.1) circle (2.2pt);
+			\end{tikzpicture}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Tres formas del mismo valor}
+				\[
+					\frac{3}{4}=\frac{75}{100}=0.75
+				\]
+			\end{block}
+			\begin{itemize}
+				\item La imagen muestra magnitud.
+				\item La fraccion muestra partes de un entero.
+				\item El decimal usa valor posicional.
+			\end{itemize}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Decimales periodicos}
+	\begin{columns}[T]
+		\begin{column}{0.47\textwidth}
+			\begin{block}{Ejemplo}
+				\[
+					\frac{8}{11}=8\div 11=0.7272\ldots=0.\overline{72}
+				\]
+			\end{block}
+			\begin{enumerate}
+				\item La division no termina.
+				\item Los residuos se repiten.
+				\item Las cifras repetidas forman el periodo.
+			\end{enumerate}
+			\begin{block}{Criterio}
+				$0.\overline{72}$ no es aproximacion: es una forma exacta de escribir una repeticion infinita.
+			\end{block}
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\centering
+			\begin{tikzpicture}[
+				node distance=1.15cm,
+				circ/.style={circle, draw=iiiepeBlue, very thick, fill=iiiepePaper, minimum size=0.95cm},
+				arrow/.style={-{Latex[length=2.5mm]}, thick, draw=iiiepeOrange}
+			]
+				\node[circ] (r8) {$8$};
+				\node[circ, right=of r8] (r3) {$3$};
+				\node[circ, below=of r3] (r8b) {$8$};
+				\node[align=center, left=of r8b] (txt) {residuos\\se repiten};
+				\draw[arrow] (r8) -- node[above] {$7$} (r3);
+				\draw[arrow] (r3) -- node[right] {$2$} (r8b);
+				\draw[arrow] (r8b) -- (r8);
+				\node[font=\small] at ($(r3)!0.5!(r8b)+(1.4,0)$) {$72,72,72,\ldots$};
+			\end{tikzpicture}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\section{Decimal a fraccion}
+
+\begin{frame}{Decimal finito a fraccion}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Procedimiento}
+				\begin{enumerate}
+					\item Quitar el punto decimal.
+					\item Colocar como denominador $1$ seguido de tantos ceros como cifras decimales tenga el numero.
+					\item Simplificar.
+				\end{enumerate}
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\[
+				4.325=\frac{4325}{1000}
+			\]
+			\[
+				\frac{4325}{1000}=\frac{865}{200}=\frac{173}{40}
+			\]
+			\begin{block}{Resultado}
+				\[
+					4.325=\frac{173}{40}
+				\]
+			\end{block}
+			\begin{block}{Verificacion}
+				La fraccion final debe quedar simplificada; si se divide $173\div 40$, se recupera $4.325$.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Decimal periodico a fraccion}
+	\begin{block}{Ejemplo: $0.\overline{18}$}
+		\[
+			x=0.181818\ldots
+		\]
+		\[
+			100x=18.181818\ldots
+		\]
+		\[
+			100x-x=18.181818\ldots-0.181818\ldots
+		\]
+		\[
+			99x=18 \qquad x=\frac{18}{99}=\frac{2}{11}
+		\]
+	\end{block}
+	\begin{block}{Por que funciona}
+		Al restar, la parte decimal periodica se elimina porque ambas expresiones tienen los mismos decimales infinitos.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Decimal periodico mixto}
+	\begin{block}{Ejemplo: $0.82\overline{1}$}
+		\[
+			x=0.821111\ldots
+		\]
+		\[
+			1000x=821.111\ldots \qquad 100x=82.111\ldots
+		\]
+		\[
+			1000x-100x=821.111\ldots-82.111\ldots
+		\]
+		\[
+			900x=739 \qquad x=\frac{739}{900}
+		\]
+	\end{block}
+	\begin{itemize}
+		\item Se multiplica por $100$ para dejar el punto antes del periodo.
+		\item Se multiplica por $1000$ para dejar el punto despues de la primera repeticion.
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Selector de estrategia}
+	\centering
+	\begin{tikzpicture}[
+		node distance=0.9cm and 1.15cm,
+		box/.style={rectangle, rounded corners=3pt, draw=iiiepeNavy, very thick, fill=iiiepePaper, align=center, minimum height=0.9cm, minimum width=3.2cm},
+		decision/.style={diamond, aspect=2, draw=iiiepeBlue, very thick, fill=iiiepeAqua!12, align=center, inner sep=1pt},
+		arrow/.style={-{Latex[length=2.5mm]}, thick, draw=iiiepeBlue}
+	]
+		\node[box] (inicio) {¿Que tengo?};
+		\node[decision, below left=of inicio] (frac) {fraccion};
+		\node[decision, below right=of inicio] (dec) {decimal};
+		\node[box, below=of frac] (div) {Dividir\\numerador ÷ denominador};
+		\node[box, below=of dec] (den) {Usar denominador\\$10,100,1000$\\o eliminar periodo};
+		\node[box, below=1.0cm of $(div)!0.5!(den)$] (ver) {Verificar: estimar, simplificar y revisar sentido};
+		\draw[arrow] (inicio) -- (frac);
+		\draw[arrow] (inicio) -- (dec);
+		\draw[arrow] (frac) -- (div);
+		\draw[arrow] (dec) -- (den);
+		\draw[arrow] (div) -- (ver);
+		\draw[arrow] (den) -- (ver);
+	\end{tikzpicture}
+	\accentbar
+\end{frame}
+
+\section{Ejercicios resueltos}
+
+\begin{frame}{Ejercicio guiado 1: fraccion propia}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}<1->{Ejemplo}
+				Convertir $\frac{3}{4}$ a numero decimal.
+			\end{block}
+			\begin{block}<2->{Anticipacion}
+				Como $3<4$, el resultado sera menor que $1$; como $3$ esta cerca de $4$, debe estar cerca de $1$.
+			\end{block}
+			\onslide<2->{
+			\[\frac{3}{4}=3\div 4\]
+			}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}<3->{Procedimiento}
+				\onslide<3->{
+				\[
+				\begin{array}{rcl}
+					3.00\div 4 &=& 0.75\\
+					30\div 4 &=& 7\quad R2\\
+					20\div 4 &=& 5\quad R0
+				\end{array}
+				\]
+				}
+			\end{block}
+			\begin{block}<4->{Verificacion}
+				\onslide<4->{\[0.75=\frac{75}{100}=\frac{3}{4}\]}
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{-0.12cm}
+	\begin{center}
+		\resizebox{0.62\textwidth}{!}{%
+			\onslide<3->{\cadenaConversion
+				{$\frac{3}{4}$}
+				{$3.00\div4$}
+				{$0.75$}
+				{Verificar: $0.75=\frac{75}{100}=\frac{3}{4}$}}
+		}
+	\end{center}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Ejercicio guiado 2: fraccion impropia y mixta}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}<1->{Impropia: $\frac{13}{8}$}
+				\onslide<1->{\[13\div 8=1.625\]}
+				\onslide<2->{
+				\[\begin{array}{rcl}
+					13\div 8 &=& 1\quad R5\\
+					50\div 8 &=& 6\quad R2\\
+					20\div 8 &=& 2\quad R4\\
+					40\div 8 &=& 5\quad R0
+				\end{array}\]
+				}
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}<3->{Mixta: $6\frac{13}{40}$}
+				\onslide<3->{Conservar la parte entera y convertir solo la fraccion:}
+				\onslide<3->{\[\frac{13}{40}=13\div 40=0.325\]}
+				\onslide<4->{\[6\frac{13}{40}=6+0.325=6.325\]}
+			\end{block}
+			\begin{block}<5->{Criterio de revision}
+				\onslide<5->{Una fraccion impropia o mixta debe producir un decimal mayor que $1$.}
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{-0.12cm}
+	\begin{center}
+		\resizebox{0.78\textwidth}{!}{%
+		\begin{tikzpicture}[node distance=0.66cm and 0.90cm]
+			\onslide<1->{\node[dato] (i1) {$\frac{13}{8}$};
+			\node[paso, right=of i1] (i2) {$13\div8$};
+			\node[resultado, right=of i2] (i3) {$1.625$};
+			\node[verificacion, right=of i3] (i4) {Mayor que $1$ porque $13>8$.};
+			\draw[flecha] (i1) -- (i2);
+			\draw[flecha] (i2) -- (i3);
+			\draw[flechaSecundaria] (i4) -- (i3);}
+			\onslide<3->{\node[dato, below=of i1] (m1) {$6\frac{13}{40}$};
+			\node[paso, right=of m1] (m2) {$6+(13\div40)$};
+			\node[resultado, right=of m2] (m3) {$6.325$};
+			\node[verificacion, right=of m3] (m4) {La parte entera se conserva.};
+			\draw[flecha] (m1) -- (m2);
+			\draw[flecha] (m2) -- (m3);
+			\draw[flechaSecundaria] (m4) -- (m3);}
+		\end{tikzpicture}}
+	\end{center}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Ejercicio guiado 3: fraccion periodica}
+	\begin{columns}[T]
+		\begin{column}{0.46\textwidth}
+			\begin{block}<1->{Ejemplo}
+				Convertir $\frac{22}{90}$ a decimal.
+			\end{block}
+			\begin{block}<2->{Primero simplificar}
+				\onslide<2->{\[\frac{22}{90}=\frac{11}{45}\]}
+			\end{block}
+			\begin{block}<3->{Anticipacion}
+				\onslide<3->{Como $11<45$, el resultado debe ser menor que $1$.}
+			\end{block}
+		\end{column}
+		\begin{column}{0.50\textwidth}
+			\begin{block}<4->{Division}
+				\onslide<4->{\[\begin{array}{rcl}
+					11.00\div 45 &=& 0.2\ldots\\
+					110\div 45 &=& 2\quad R20\\
+					200\div 45 &=& 4\quad R20\\
+					200\div 45 &=& 4\quad R20
+				\end{array}\]}
+			\end{block}
+			\begin{block}<5->{Resultado}
+				\onslide<5->{El residuo $20$ se repite; por eso:}
+				\onslide<5->{\[\frac{22}{90}=0.2\overline{4}\]}
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{-0.12cm}
+	\begin{center}
+		\resizebox{0.62\textwidth}{!}{%
+		\begin{tikzpicture}[node distance=0.78cm and 0.92cm]
+			\onslide<1->{\node[dato] (a) {$\frac{22}{90}$};}
+			\onslide<2->{\node[paso, right=of a] (b) {Simplificar\\$\frac{11}{45}$};}
+			\onslide<4->{\node[paso, right=of b] (c) {Dividir\\$11\div45$};}
+			\onslide<5->{\node[resultado, right=of c] (d) {$0.2\overline{4}$};}
+			\onslide<4->{\node[verificacion, below=0.60cm of c] (e) {El residuo $20$ se repite.};}
+			\onslide<1->{\draw[flecha] (a) -- (b);}
+			\onslide<4->{\draw[flecha] (b) -- (c);}
+			\onslide<5->{\draw[flecha] (c) -- (d);}
+			\onslide<4->{\draw[flechaSecundaria] (e) -- (c);}
+		\end{tikzpicture}}
+	\end{center}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Ejercicio guiado 4: decimal finito}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}<1->{Ejemplo}
+				\onslide<1->{Convertir $0.525$ a fraccion.}
+			\end{block}
+			\begin{block}<2->{Procedimiento}
+				\onslide<2->{Tiene tres cifras decimales, por eso el denominador inicial es $1000$:}
+				\onslide<2->{\[0.525=\frac{525}{1000}\]}
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}<3->{Simplificacion}
+				\onslide<3->{\[\frac{525}{1000}=\frac{105}{200}=\frac{21}{40}\]}
+			\end{block}
+			\begin{block}<4->{Verificacion}
+				\onslide<4->{\[21\div 40=0.525\]}
+				\onslide<4->{La fraccion simplificada conserva el mismo valor.}
+			\end{block}
+		\end{column}
+	\end{columns}
+	\begin{center}
+		\resizebox{0.90\textwidth}{!}{%
+			\onslide<2->{\ejercicioTikzTresPasos
+				{$0.525$}
+				{3 cifras decimales}
+				{$\frac{525}{1000}$}
+				{$\frac{21}{40}$}
+				{Comprobar: $21\div40=0.525$}}
+		}
+	\end{center}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Ejercicio guiado 5: decimal periodico mixto}
+	\begin{block}<1->{Ejemplo}
+		\onslide<1->{Convertir $5.8\overline{72}=5.8727272\ldots$ a fraccion.}
+	\end{block}
+	\begin{center}
+		\resizebox{0.58\textwidth}{!}{%
+		\begin{tikzpicture}[node distance=0.55cm]
+			\onslide<2->{\node[dato] (x) {$x=5.8727272\ldots$};}
+			\onslide<3->{\node[paso, below=of x] (a) {$1000x=5872.7272\ldots$};}
+			\onslide<4->{\node[paso, below=of a] (b) {$10x=58.7272\ldots$};}
+			\onslide<5->{\node[resultado, below=of b] (c) {$990x=5814$};}
+			\onslide<6->{\node[resultado, right=2.2cm of c] (d) {$x=\frac{323}{55}$};}
+			\onslide<3->{\draw[flecha] (x) -- node[right, font=\scriptsize] {mover 3 lugares} (a);}
+			\onslide<4->{\draw[flecha] (a) -- node[right, font=\scriptsize] {restar} (b);}
+			\onslide<5->{\draw[flecha] (b) -- (c);}
+			\onslide<6->{\draw[flecha] (c) -- (d);}
+		\end{tikzpicture}}
+	\end{center}
+	\begin{block}<7->{Verificacion}
+		\scriptsize
+		\onslide<7->{La resta cancela la parte periodica: $1000x-10x=5814$, por eso $990x=5814$ y $x=\frac{5814}{990}=\frac{323}{55}$. El resultado tiene sentido porque queda entre $5$ y $6$.}
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Banco de respuestas: fracciones a decimal}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Conversiones finitas}
+				\begin{itemize}
+					\item $\frac{375}{1000}=0.375$
+					\item $\frac{1}{8}=0.125$
+					\item $\frac{13}{8}=1.625$
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Conversiones mixtas o periodicas}
+				\begin{itemize}
+					\item $6\frac{13}{40}=6.325$
+					\item $\frac{22}{90}=0.2\overline{4}$
+					\item $\frac{1}{3}=0.\overline{3}$
+				\end{itemize}
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{0.2cm}
+	\begin{block}{Criterio}
+		Las respuestas sirven para verificar; el aprendizaje se demuestra con procedimiento, estimacion y comprobacion.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Banco de respuestas: decimales a fraccion}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Decimales finitos}
+				\begin{itemize}
+					\item $1.6=\frac{8}{5}$
+					\item $0.525=\frac{21}{40}$
+					\item $0.025=\frac{1}{40}$
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Decimales periodicos}
+				\begin{itemize}
+					\item $0.\overline{18}=\frac{2}{11}$
+					\item $0.5\overline{3}=\frac{8}{15}$
+					\item $5.8\overline{72}=\frac{323}{55}$
+				\end{itemize}
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{0.2cm}
+	\begin{block}{Criterio}
+		En decimales finitos se usa denominador potencia de $10$; en periodicos se alinea el periodo y se restan ecuaciones.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\section{Situaciones}
+
+\begin{frame}{Situaciones en contexto: valor posicional}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Situacion 01}
+				\begin{itemize}
+					\item $9$ de cada $100$: $\frac{9}{100}=0.09$.
+					\item La misma lectura aplica para $14$, $32$ y $29$ de cada $100$.
+				\end{itemize}
+			\end{block}
+			\begin{block}{Situacion 04}
+				$0.16=\frac{16}{100}=\frac{4}{25}$.
+			\end{block}
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Situacion 05}
+				\begin{itemize}
+					\item $3.790=\frac{3790}{1000}$.
+					\item Simplificacion: $\frac{3790}{1000}=\frac{379}{100}$.
+				\end{itemize}
+			\end{block}
+			\begin{block}{Criterio}
+				El numero de cifras decimales determina el denominador inicial.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Situaciones en contexto: division y complemento}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Situaciones 02 y 03}
+				\begin{itemize}
+					\item Edad: $4\frac{5}{12}=4+5\div12=4.41\overline{6}$.
+					\item Falta sembrar: $\frac{18}{18}-\frac{7}{18}=\frac{11}{18}=0.6\overline{1}$.
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Situaciones 06 y 09}
+				\begin{itemize}
+					\item Llave: $\frac{11}{16}=0.6875$.
+					\item Hilo: $\frac{7}{40}=\frac{175}{1000}=0.175$.
+				\end{itemize}
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{0.2cm}
+	\begin{block}{Transicion}
+		Las situaciones 07, 08, 10, 11 y 12 se trabajan con representaciones porque dependen de lectura de escala, peso, perimetro o diametro.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\iffalse
+
+\begin{frame}{Situaciones en contexto: valor posicional}
+	\scriptsize
+	\begin{tabular}{p{0.09\textwidth}p{0.54\textwidth}p{0.28\textwidth}}
+		\toprule
+		\textbf{Sit.} & \textbf{Dato} & \textbf{Respuesta}\\
+		\midrule
+		01 & Rezago educativo: $9$, $14$, $32$ y $29$ de cada $100$. & $0.09$, $0.14$, $0.32$, $0.29$.\\
+		02 & Edad: $4\frac{5}{12}$ anos. & $4.41\overline{6}$ anos.\\
+		03 & Eduardo sembró $7$ de $18$ partes; falta sembrar. & $\frac{11}{18}=0.6\overline{1}$.\\
+		04 & IVA: $0.16$. & $\frac{16}{100}=\frac{4}{25}$.\\
+		05 & Galon: $3.790$ litros. & $\frac{3790}{1000}=\frac{379}{100}$.\\
+		06 & Llave espanola: $\frac{11}{16}$ pulgadas. & $0.6875$ pulgadas.\\
+		09 & Hilo especial: $\frac{7}{40}$ mm. & $0.175$ mm.\\
+		\bottomrule
+	\end{tabular}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Procedimientos para situaciones seleccionadas}
+	\scriptsize
+	\begin{columns}[T]
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Valor posicional}
+				\begin{itemize}
+					\item $9$ de cada $100$: $\frac{9}{100}=0.09$; se repite la misma lectura para $14$, $32$ y $29$.
+					\item IVA: $0.16=\frac{16}{100}=\frac{4}{25}$; se simplifica dividiendo entre $4$.
+					\item Galon: $3.790=\frac{3790}{1000}=\frac{379}{100}$; tres cifras decimales implican milésimos.
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Division y complemento}
+				\begin{itemize}
+					\item Edad: $4\frac{5}{12}=4+5\div12=4.41\overline{6}$.
+					\item Falta sembrar: $\frac{18}{18}-\frac{7}{18}=\frac{11}{18}=0.6\overline{1}$.
+					\item Llave: $\frac{11}{16}=11\div16=0.6875$; hilo: $\frac{7}{40}=\frac{175}{1000}=0.175$.
+				\end{itemize}
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{0.1cm}
+	\begin{block}{Criterio de revision}
+		La respuesta final debe acompanarse de estrategia visible y de una comprobacion rapida del valor obtenido.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\fi
+
+\begin{frame}{Representacion: regla y bascula}
+	\begin{columns}[T]
+		\begin{column}{0.50\textwidth}
+			\begin{block}{Medidas como fraccion decimal}
+				Leer la medida en decimal y escribir:
+				\[
+					2.35=\frac{235}{100}
+				\]
+			\end{block}
+			\centering
+			\begin{tikzpicture}[scale=0.82]
+				\draw[thick] (0,0) rectangle (6,0.65);
+				\foreach \x in {0,...,6}{
+					\draw[thick] (\x,0.65) -- (\x,0.25);
+					\node[font=\scriptsize] at (\x,-0.18) {\x};
+				}
+				\foreach \x in {0.1,0.2,...,5.9}{\draw (\x,0.65) -- (\x,0.45);}
+				\draw[iiiepeOrange, very thick] (2.35,0.9) -- (2.35,-0.05);
+				\draw[flechaSecundaria] (2.35,0.9) -- (2.35,1.08);
+				\node[font=\small, color=iiiepeOrange] at (2.35,1.2) {$2.35=\frac{235}{100}$};
+				\node[nota, text width=2.1cm] at (4.85,1.35) {Lectura directa\\de la escala};
+			\end{tikzpicture}
+		\end{column}
+		\begin{column}{0.46\textwidth}
+			\begin{block}{Peso en bascula}
+				Leer la aguja como parte de la unidad; por ejemplo:
+				\[
+					0.75\text{ kg}=\frac{75}{100}=\frac{3}{4}\text{ kg}
+				\]
+			\end{block}
+			\centering
+			\begin{tikzpicture}[scale=0.8]
+				\draw[thick, fill=iiiepePaper] (0,0) circle (1.45);
+				\foreach \ang/\lab in {210/0,270/{1/2},330/1}{
+					\draw[thick] (\ang:1.15) -- (\ang:1.35);
+					\node[font=\scriptsize] at (\ang:1.72) {\lab};
+				}
+				\draw[iiiepeOrange, very thick, -{Latex[length=2.5mm]}] (0,0) -- (305:1.05);
+				\node[font=\small] at (0,-2.0) {lectura aproximada};
+				\node[paso] at (3.15,0.25) {$0.75$ kg};
+				\node[resultado] at (5.0,0.25) {$\frac{3}{4}$ kg};
+				\node[verificacion] at (4.05,-0.70) {$\frac{75}{100}=\frac{3}{4}$};
+				\draw[flecha] (3.75,0.25) -- (4.45,0.25);
+				\draw[flechaSecundaria] (4.05,-0.50) -- (4.05,0.00);
+			\end{tikzpicture}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Representacion: perimetro y diametro}
+	\begin{columns}[T]
+		\begin{column}{0.50\textwidth}
+			\begin{block}{Perimetro}
+				Sumar los lados con denominador comun:
+				\[
+					P=a+b+c+d
+				\]
+			\end{block}
+			\centering
+			\begin{tikzpicture}[scale=0.78]
+				\coordinate (A) at (0,0);
+				\coordinate (B) at (3.1,0.35);
+				\coordinate (C) at (2.55,2.1);
+				\coordinate (D) at (-0.25,1.6);
+				\draw[very thick, fill=iiiepeAqua!10] (A)--(B)--(C)--(D)--cycle;
+				\node[below] at ($(A)!0.5!(B)$) {$\frac{3}{4}$};
+				\node[right] at ($(B)!0.5!(C)$) {$\frac{5}{8}$};
+				\node[above] at ($(C)!0.5!(D)$) {$\frac{1}{2}$};
+				\node[left] at ($(D)!0.5!(A)$) {$\frac{7}{16}$};
+				\node[nota] at (1.55,2.75) {Sumar todos\\los lados};
+				\draw[flechaSecundaria] (1.55,2.50) -- (1.55,1.70);
+				\node at (1.35,-0.8) {$P=\frac{12+10+8+7}{16}=\frac{37}{16}$};
+			\end{tikzpicture}
+		\end{column}
+		\begin{column}{0.46\textwidth}
+			\begin{block}{Diametro de ruedas}
+				Convertir cada diametro fraccionario:
+				\[
+					\frac{5}{8}=5\div 8=0.625
+				\]
+			\end{block}
+			\centering
+			\begin{tikzpicture}[scale=0.82]
+				\draw[very thick, fill=iiiepePaper] (0,0) circle (1.25);
+				\draw[very thick, iiiepeBlue] (-1.25,0) -- (1.25,0);
+				\fill[iiiepeOrange] (-1.25,0) circle (2pt);
+				\fill[iiiepeOrange] (1.25,0) circle (2pt);
+				\node[above] at (0,0.15) {diametro};
+				\node[below] at (0,-1.55) {$d=\frac{5}{8}=0.625$};
+				\node[nota] at (3.05,0.85) {Fraccion\\$\rightarrow$ division};
+				\draw[flechaSecundaria] (2.35,0.60) -- (1.45,0.15);
+			\end{tikzpicture}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Representacion: perimetro de rectangulo}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.45\textwidth}
+			\begin{block}{Datos}
+				\[
+					l=\frac{15}{4}=3.75,\qquad a=\frac{10}{8}=1.25
+				\]
+			\end{block}
+			\begin{block}{Operacion}
+				Usar la formula $P=2(l+a)$.
+			\end{block}
+		\end{column}
+		\begin{column}{0.52\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.86]
+				\draw[very thick, fill=iiiepePaper] (0,0) rectangle (4.4,2.1);
+				\node[below] at (2.2,0) {$l=3.75$};
+				\node[right] at (4.4,1.05) {$a=1.25$};
+				\node[paso] at (7.15,1.45) {$P=2(l+a)$};
+				\node[resultado] at (7.15,0.35) {$P=10$};
+				\draw[flecha] (4.9,1.05) -- (6.15,1.25);
+				\draw[flechaSecundaria] (7.15,1.05) -- (7.15,0.70);
+			\end{tikzpicture}
+		\end{column}
+	\end{columns}
+	\vspace{0.1cm}
+	\begin{block}{Verificacion}
+		$2(3.75+1.25)=2(5)=10$; el resultado queda expresado como numero decimal.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\section{Evaluacion}
+
+\begin{frame}{Autoevaluacion}
+	\scriptsize
+	\begin{tabular}{p{0.56\textwidth}ccc}
+		\toprule
+		\textbf{Indicador} & \textbf{3} & \textbf{2} & \textbf{1}\\
+		\midrule
+		Convierto fracciones a decimales usando el algoritmo aprendido. & $\square$ & $\square$ & $\square$\\[0.2cm]
+		Convierto decimales finitos y periodicos a fracciones. & $\square$ & $\square$ & $\square$\\[0.2cm]
+		Reconozco y escribo decimales periodicos con la notacion correcta. & $\square$ & $\square$ & $\square$\\[0.2cm]
+		Verifico equivalencia, simplificacion y sentido contextual. & $\square$ & $\square$ & $\square$\\
+		\bottomrule
+	\end{tabular}
+	\vspace{0.25cm}
+	\begin{block}{Cierre metacognitivo}
+		Que estrategia use mejor: valor posicional, division o eliminacion del periodo. Que error debo vigilar en mi siguiente intento.
+		\iffalse
+		¿Que estrategia use mejor: valor posicional, division o eliminacion del periodo? ¿En que tipo de ejercicio necesito mas practica?
+		\fi
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Retroalimentacion para mejorar}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Errores frecuentes}
+				\begin{itemize}
+					\item Dividir denominador entre numerador.
+					\item Colocar mal el punto decimal.
+					\item Omitir la barra del periodo.
+					\item No simplificar la fraccion final.
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Preguntas de revision}
+				\begin{itemize}
+					\item Que estrategia correspondia al tipo de numero?
+					\item El resultado conserva la misma cantidad?
+					\item La respuesta puede simplificarse?
+					\item El resultado tiene sentido en el contexto?
+				\end{itemize}
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\section{Cierre}
+
+\begin{frame}{Conclusiones}
+	\begin{enumerate}
+		\item Una fraccion decimal se convierte con valor posicional.
+		\item Una fraccion no decimal se convierte dividiendo numerador entre denominador.
+		\item Un decimal finito se escribe con denominador potencia de $10$ y se simplifica.
+		\item Un decimal periodico se convierte eliminando el periodo mediante resta de ecuaciones.
+		\item Los procedimientos se presentan con estrategia, desarrollo y verificacion, siguiendo los criterios de OpenStax, LibreTexts y NCTM.
+		\item La mejora incorpora evaluacion y retroalimentacion como parte del aprendizaje, no solo como cierre administrativo.
+	\end{enumerate}
+	\accentbar
+\end{frame}
+
+\begin{frame}[plain]
+	\begin{tikzpicture}[remember picture,overlay]
+		\fill[iiiepeNavy] (current page.south west) rectangle (current page.north east);
+		\IfFileExists{\iiiepedots}{%
+			\node[opacity=0.13,anchor=south east] at ([xshift=0.8cm,yshift=-0.2cm]current page.south east) {\includegraphics[height=9cm]{\iiiepedots}};
+		}{}
+		\node[anchor=north west] at ([xshift=0.55cm,yshift=-0.45cm]current page.north west) {\localLogo{\iiiepelogo}};
+	\end{tikzpicture}
+	\vspace{2.2cm}
+	\begin{center}
+		{\color{white}\Huge\bfseries Gracias}\\[0.55cm]
+		{\color{white}\Large \studentname}\\[0.18cm]
+		{\color{white!78}\footnotesize Matricula \studentid\ · \studentemail}\\[0.45cm]
+		{\color{iiiepeOrange}\rule{0.36\paperwidth}{1.4pt}}\\[0.35cm]
+		{\color{white!72}\footnotesize \institutionname\ · \coursecode\ · \coursename}
+	\end{center}
+\end{frame}
+
+\end{document}

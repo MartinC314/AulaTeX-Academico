@@ -1,0 +1,458 @@
+Universidad Abierta y a Distancia de México
+Licenciatura en Derecho
+Filosofía del Derecho
+
+
+
+
+    Glosario y análisis de caso.
+ Conceptos jurídicos fundamentales,
+         moral y Derecho
+                 Semana 5 - Actividad 3 - Filosofía del Derecho
+
+
+
+
+                                              Alumno:       Martín Jonathan de la Cruz
+                                              Matrícula:   ES2611202040
+                                              Profesor:     Reyna Patricia
+                                                            González Rodríguez
+
+                                              Fecha de realización: 10 de mayo de 2026
+                                              Roma Norte, Ciudad de México
+                                                                                              i
+
+
+
+Resumen
+   Objetivo: Analizar conceptos jurídicos fundamentales y su relación con la moral y el Dere-
+cho mediante un glosario crítico y la aplicación de esos conceptos al caso de la jurisprudencia
+1a./J. 43/2015 (10a.) de la Suprema Corte de Justicia de la Nación sobre matrimonio igualita-
+rio.
+   Postura de análisis: El Derecho no funciona solo como un catálogo de definiciones; opera
+como un sistema de conceptos conectados que permite decidir qué normas son válidas, efica-
+ces, exigibles y compatibles con principios constitucionales. Desde esta perspectiva, el caso
+del matrimonio igualitario muestra que una regla legal puede existir formalmente y, aun así,
+perder legitimidad jurídica cuando reproduce una distinción moralmente excluyente y consti-
+tucionalmente discriminatoria.
+
+
+
+
+Conceptos jurídicos fundamentales, moral y Derecho                    030 Filosofía del Derecho
+Índice de Contenidos                                                                          ii
+
+
+
+Índice de Contenidos
+
+1.   Introducción                                                                            1
+
+2.   Glosario de conceptos jurídicos fundamentales                                           2
+
+3.   Análisis de caso                                                                        6
+
+4.   Conclusiones                                                                            8
+
+Referencias                                                                                  9
+
+
+
+Índice de Tablas
+1.     Conceptos jurídicos aplicados al caso de matrimonio igualitario . . . . . . . . . .   7
+
+
+
+
+Conceptos jurídicos fundamentales, moral y Derecho                    030 Filosofía del Derecho
+Introducción                                                                                  1
+
+
+
+1.      Introducción
+   Los conceptos jurídicos fundamentales no son palabras técnicas para memorizar; son pie-
+zas de operación del sistema jurídico. Si un concepto se entiende mal, también se debilita la
+forma de interpretar una norma, identificar un derecho, ubicar una obligación o valorar si una
+autoridad actuó dentro de sus límites. Por eso, estudiar conceptos como norma, validez, efi-
+cacia, sanción, persona jurídica, acto jurídico o relación jurídica permite ver el Derecho como
+estructura y no solo como acumulación de leyes.
+   La actividad cobra especial importancia cuando se vincula con la relación entre moral y
+Derecho. Una norma jurídica puede ordenar conductas externas y contar con mecanismos
+de coercibilidad; sin embargo, eso no significa que su contenido sea automáticamente justo.
+La filosofía del Derecho obliga a mirar una capa más profunda: cómo se conecta la legalidad
+con valores como igualdad, dignidad, libertad, seguridad y no discriminación. En ese sentido,
+la reflexión filosófica no se limita a preguntar si una regla existe, sino si puede justificarse
+racionalmente dentro de un sistema que pretende ordenar la convivencia (Rodríguez, 2020,
+Finnis et al., 2017). Ese es el punto central del análisis: la norma jurídica tiene forma, pero
+también produce consecuencias humanas.
+   El caso elegido es la jurisprudencia de la Primera Sala de la Suprema Corte de Justicia
+de la Nación que declaró inconstitucional definir el matrimonio únicamente como unión entre
+hombre y mujer o vincularlo necesariamente con la procreación (Suprema Corte de Justicia
+de la Nación, 2015). La elección no es casual. Este criterio permite observar cómo conceptos
+aparentemente abstractos se activan en una situación concreta: una institución civil, una nor-
+ma legislativa, derechos subjetivos, validez constitucional, eficacia del precedente y tensión
+entre moral social y Derecho constitucional.
+   Las fuentes se emplean con funciones distintas dentro del análisis. García Máynez aporta
+la base conceptual de la norma, el deber, la relación jurídica y los efectos del Derecho; Lastra
+Lastra permite ubicar esos conceptos dentro de una clasificación general; el Poder Judicial
+del Estado de Guanajuato ayuda a aterrizar definiciones operativas; Laun sirve para distinguir
+la moral del Derecho; y la SCJN ofrece el caso donde esos conceptos se prueban en una de-
+cisión constitucional concreta (Suprema Corte de Justicia de la Nación, 2015, García Máynez,
+2002, Lastra Lastra, s. f., Poder Judicial del Estado de Guanajuato, 2007, Laun, 2021). Esta
+separación es importante porque una cita no debe funcionar como adorno: debe sostener una
+parte verificable del razonamiento.
+
+
+
+
+Conceptos jurídicos fundamentales, moral y Derecho                     030 Filosofía del Derecho
+Glosario de conceptos jurídicos fundamentales                                                             2
+
+
+
+2.        Glosario de conceptos jurídicos fundamenta-
+          les
+Ubicación conceptual previa
+   Los conceptos jurídicos fundamentales pueden ubicarse por la función que cumplen dentro
+del sistema: unos explican la norma y sus consecuencias; otros identifican sujetos, facultades,
+deberes y relaciones; y otros permiten evaluar la conexión entre Derecho, moral y decisión
+judicial. Esta lectura sigue la clasificación general propuesta por Lastra Lastra y la base con-
+ceptual desarrollada por García Máynez (Lastra Lastra, s. f., pp. 400–403)(García Máynez,
+2002). Con ese criterio, el glosario conserva el orden alfabético, pero parte de la siguiente
+ubicación conceptual:
+
+ Categoría de análisis              Conceptos ubicados en esa categoría
+
+ Derecho como sistema               Derecho, derecho objetivo, sistema jurídico, norma jurídica, va-
+                                    lidez, eficacia, coercibilidad, coacción, sanción y persona jurídi-
+                                    ca.
+ Estructura de la norma             Consecuencia jurídica, deber jurídico, obligación, derecho sub-
+                                    jetivo y capacidad jurídica.
+ Relaciones entre sujetos           Relación jurídica, persona jurídica, derecho subjetivo, deber ju-
+                                    rídico y obligación.
+ Hechos, actos y decisión insti-    Hecho jurídico, acto jurídico y jurisprudencia.
+ tucional
+ Moral, ética y control constitu-   Moral, ética jurídica, validez, sistema jurídico y jurisprudencia.
+ cional
+
+Acto jurídico. Es la manifestación de voluntad realizada con intención de producir conse-
+     cuencias reconocidas por el Derecho (García Máynez, 2002, Poder Judicial del Estado
+     de Guanajuato, 2007). No basta con que una persona quiera algo; esa voluntad debe
+     exteriorizarse dentro de una forma o supuesto previsto por la norma. En términos prácti-
+     cos, el acto jurídico convierte una decisión humana en un hecho jurídicamente relevante,
+     como sucede con el matrimonio, el contrato, el testamento o el reconocimiento de una
+     obligación.
+
+Capacidad jurídica. Es la aptitud que tiene una persona para ser titular de derechos y obli-
+     gaciones y, en su caso, ejercerlos por sí misma (García Máynez, 2002, Poder Judicial
+
+Conceptos jurídicos fundamentales, moral y Derecho                           030 Filosofía del Derecho
+Glosario de conceptos jurídicos fundamentales                                                 3
+
+
+     del Estado de Guanajuato, 2007). Su función es determinar quién puede participar váli-
+     damente en relaciones jurídicas. Esta noción es clave porque el sistema jurídico no solo
+     reconoce derechos en abstracto, sino que necesita identificar a los sujetos capaces de
+     ejercerlos, exigirlos o cumplirlos.
+
+Coacción. Es el uso institucional de la fuerza o de medios compulsivos para hacer cumplir el
+     Derecho cuando la conducta voluntaria no se realiza (García Máynez, 2002, Poder Judi-
+     cial del Estado de Guanajuato, 2007). No debe confundirse con la sanción: la sanción es
+     la consecuencia jurídica prevista; la coacción es el medio de imposición. Su importancia
+     está en que muestra el componente operativo del Estado, aunque también exige límites
+     constitucionales para no convertirse en arbitrariedad.
+
+Coercibilidad. Es la posibilidad de que una norma jurídica sea impuesta aun contra la vo-
+     luntad del obligado (García Máynez, 2002, Laun, 2021). Esta característica distingue a
+     las normas jurídicas de las normas morales, porque la moral exige convicción interna,
+     mientras que el Derecho puede reclamar cumplimiento externo mediante órganos esta-
+     tales. La coercibilidad no significa abuso de fuerza; significa respaldo institucional para
+     asegurar la eficacia mínima del orden jurídico.
+
+Consecuencia jurídica. Es el efecto previsto por la norma cuando se realiza un supuesto
+     jurídico (García Máynez, 2002, Poder Judicial del Estado de Guanajuato, 2007). Puede
+     consistir en crear, modificar, transmitir o extinguir derechos y obligaciones. Su utilidad
+     está en conectar hechos con resultados normativos: si ocurre determinado hecho o ac-
+     to, el sistema produce una respuesta jurídica. Sin esta conexión, la norma sería una
+     declaración sin capacidad real de ordenar conductas.
+
+Deber jurídico. Es la conducta exigida a un sujeto por una norma jurídica, cuyo incumplimien-
+     to puede generar una consecuencia normativa (García Máynez, 2002, Poder Judicial del
+     Estado de Guanajuato, 2007). A diferencia del deber moral, el deber jurídico puede ser
+     exigido por otra persona o por una autoridad. Su función es ordenar responsabilidades
+     concretas: dar, hacer, no hacer o tolerar algo dentro de una relación reconocida por el
+     Derecho.
+
+Derecho. Es un sistema de normas, principios, instituciones y procedimientos que regula
+     la conducta externa de las personas en sociedad, atribuye facultades, impone deberes
+     y busca condiciones de convivencia con seguridad, igualdad y justicia (Poder Judicial
+     del Estado de Guanajuato, 2007, Rojas-González, 2018). No lo entiendo solo como ley
+
+
+
+Conceptos jurídicos fundamentales, moral y Derecho                     030 Filosofía del Derecho
+Glosario de conceptos jurídicos fundamentales                                                   4
+
+
+     escrita: también funciona como lenguaje institucional para resolver conflictos, controlar
+     poder y proteger bienes jurídicos relevantes.
+
+Derecho objetivo. Es el conjunto de normas jurídicas vigentes que integran el ordenamien-
+     to de una comunidad (García Máynez, 2002, Poder Judicial del Estado de Guanajuato,
+     2007). Su función es ofrecer reglas generales de conducta: permite saber qué está per-
+     mitido, ordenado o prohibido. En términos de sistema, el derecho objetivo es la arquitec-
+     tura normativa sobre la cual se apoyan derechos subjetivos, obligaciones, sanciones y
+     procedimientos.
+
+Derecho subjetivo. Es la facultad reconocida por el orden jurídico a una persona para exigir
+     una conducta, realizar un acto o reclamar protección frente a una afectación (García Máy-
+     nez, 2002, Poder Judicial del Estado de Guanajuato, 2007). Su importancia está en que
+     traduce el derecho objetivo en poder jurídico concreto. Si el derecho objetivo es la re-
+     gla general, el derecho subjetivo es la posibilidad de usar esa regla para defender una
+     posición propia.
+
+Eficacia. Es el grado en que una norma jurídica se cumple, se aplica o produce efectos
+     reales en la vida social (García Máynez, 2002, Laun, 2021). Una norma puede ser válida
+     formalmente y, aun así, ser poco eficaz si no se obedece, no se ejecuta o no transforma
+     las prácticas que pretende regular. Para mí, este concepto es clave porque obliga a
+     distinguir el Derecho en el papel del Derecho en funcionamiento.
+
+Ética jurídica. Es el criterio profesional que orienta la actuación de quienes interpretan, apli-
+     can o ejercen el Derecho (Rodríguez, 2020, Laun, 2021). No sustituye a la ley, pero im-
+     pide reducir la práctica jurídica a cumplimiento mecánico de reglas. Su función aparece
+     cuando una decisión legalmente posible puede producir un efecto injusto, discriminatorio
+     o contrario a la dignidad de las personas; ahí el operador jurídico debe revisar no solo
+     qué norma aplica, sino qué consecuencia humana genera.
+
+Hecho jurídico. Es un acontecimiento natural o humano que produce consecuencias de De-
+     recho, aunque no siempre exista intención de generarlas (García Máynez, 2002, Poder
+     Judicial del Estado de Guanajuato, 2007). Su valor conceptual está en ampliar la mirada:
+     no todo efecto jurídico nace de una voluntad dirigida a crear derechos u obligaciones;
+     también pueden producirlo el nacimiento, la muerte, el transcurso del tiempo, un daño o
+     un acontecimiento involuntario.
+
+Jurisprudencia. Es el criterio obligatorio o relevante que emiten los tribunales competentes
+     al interpretar la Constitución, la ley o los principios jurídicos en casos concretos (Suprema
+
+Conceptos jurídicos fundamentales, moral y Derecho                       030 Filosofía del Derecho
+Glosario de conceptos jurídicos fundamentales                                                   5
+
+
+     Corte de Justicia de la Nación, 2015, García Máynez, 2002). Su función no se reduce a
+     resolver un expediente: orienta decisiones posteriores y da estabilidad interpretativa al
+     sistema. En México, los criterios de la Suprema Corte pueden transformar la forma en
+     que se entiende una institución jurídica.
+
+Moral. Es un sistema de normas, valores y juicios internos o sociales que orientan la conducta
+     desde la conciencia, la aprobación o la desaprobación colectiva (García Máynez, 2002,
+     Laun, 2021). A diferencia del Derecho, la moral no opera principalmente por coacción
+     estatal, sino por convicción, responsabilidad o presión social. Su relación con el Derecho
+     es inevitable, pero no automática: puede inspirarlo, criticarlo o revelar sus límites.
+
+Norma jurídica. Es una regla de conducta creada o reconocida por el sistema jurídico, que
+     atribuye derechos, impone deberes y prevé consecuencias en caso de cumplimiento o
+     incumplimiento (García Máynez, 2002, Poder Judicial del Estado de Guanajuato, 2007).
+     Su estructura permite ordenar la vida social porque vincula supuesto, conducta y conse-
+     cuencia. La norma jurídica no solo describe lo que ocurre; prescribe lo que debe hacerse
+     dentro de un marco institucional.
+
+Obligación. Es el vínculo jurídico por el cual una persona, llamada deudor o sujeto pasivo,
+     debe realizar una prestación de dar, hacer o no hacer frente a otra persona que puede
+     exigirla (García Máynez, 2002, Poder Judicial del Estado de Guanajuato, 2007). La obli-
+     gación muestra que el Derecho trabaja con relaciones, no con sujetos aislados. Cada
+     deber relevante suele tener una contraparte: alguien facultado para reclamar su cumpli-
+     miento.
+
+Persona jurídica. Es todo ente reconocido por el Derecho como capaz de tener derechos
+     y obligaciones (García Máynez, 2002, Poder Judicial del Estado de Guanajuato, 2007).
+     Puede tratarse de una persona física o de una persona moral. Este concepto es básico
+     porque el sistema jurídico necesita identificar quién puede ser titular de una facultad,
+     asumir una deuda, reclamar protección o responder por una conducta.
+
+Relación jurídica. Es el vínculo regulado por el Derecho entre dos o más sujetos, en el cual
+     se conectan facultades, deberes y consecuencias (García Máynez, 2002, Poder Judicial
+     del Estado de Guanajuato, 2007). Su importancia está en que permite observar el Dere-
+     cho como red de posiciones: sujeto activo, sujeto pasivo, objeto y norma aplicable. Sin
+     relación jurídica, los conceptos de derecho subjetivo y deber jurídico quedarían aislados.
+
+Sanción. Es la consecuencia desfavorable prevista por el orden jurídico ante el incumplimien-
+     to de una norma o la realización de una conducta antijurídica (García Máynez, 2002,
+
+Conceptos jurídicos fundamentales, moral y Derecho                       030 Filosofía del Derecho
+Análisis de caso                                                                               6
+
+
+     Poder Judicial del Estado de Guanajuato, 2007). Su función no es únicamente castigar;
+     también comunica que el sistema toma en serio ciertos bienes jurídicos. Una sanción sin
+     fundamento puede ser abuso, pero una norma sin consecuencia puede perder capacidad
+     de dirección.
+
+Sistema jurídico. Es el conjunto ordenado de normas, principios, instituciones, procedimien-
+     tos y criterios interpretativos que operan de manera articulada dentro de una comunidad
+     política (García Máynez, 2002, Rojas-González, 2018). Este concepto evita ver la ley co-
+     mo piezas sueltas. Una norma sobre matrimonio, por ejemplo, no puede analizarse de
+     forma aislada: debe ubicarse frente a Constitución, derechos humanos, jurisprudencia,
+     igualdad y no discriminación.
+
+Validez. Es la cualidad de una norma o acto que ha sido creado conforme a los criterios
+     formales y materiales exigidos por el sistema jurídico (Suprema Corte de Justicia de la
+     Nación, 2015, García Máynez, 2002). Una norma puede tener origen legislativo y, aun
+     así, perder validez constitucional si contradice derechos fundamentales. Este concepto
+     es decisivo porque muestra que el Derecho no solo pregunta quién emitió la regla, sino
+     si esa regla respeta los límites superiores del ordenamiento.
+
+
+
+3.      Análisis de caso
+   El caso de análisis corresponde a la jurisprudencia 1a./J. 43/2015 (10a.) de la Primera
+Sala de la Suprema Corte de Justicia de la Nación. En dicho criterio, la Corte sostuvo que
+es inconstitucional una ley local que considere la procreación como finalidad del matrimonio
+o que lo defina exclusivamente como la unión entre un hombre y una mujer. El razonamiento
+central es que la orientación sexual no constituye un criterio constitucionalmente válido para
+excluir a una persona o pareja del acceso a la institución matrimonial (Suprema Corte de
+Justicia de la Nación, 2015).
+   Desde una lectura filosófico-jurídica, el caso no solo discute una definición civil. Discute
+la forma en que el Derecho corrige una moral social cuando esta se convierte en exclusión
+normativa. La norma que limita el matrimonio a parejas heterosexuales no falla únicamente
+por estar mal redactada; falla porque convierte una preferencia moral tradicional en criterio
+jurídico de acceso a derechos. Si el Derecho busca ordenar bienes humanos y proteger con-
+diciones básicas de convivencia, entonces la orientación sexual no puede operar como criterio
+para cancelar el acceso a una institución civil (Finnis et al., 2017, Suprema Corte de Justicia
+de la Nación, 2015). Ahí aparece el punto fuerte del análisis: el sistema jurídico constitucional
+
+
+Conceptos jurídicos fundamentales, moral y Derecho                      030 Filosofía del Derecho
+Análisis de caso                                                                                         7
+
+
+no puede usar la moral mayoritaria como filtro para negar igualdad.
+   Con base en el criterio de clasificación anterior, la tabla no busca repetir definiciones del
+glosario, sino verificar cómo trabajan los conceptos dentro del caso. Esa diferencia es rele-
+vante: definir un concepto muestra comprensión básica; aplicarlo a una situación concreta
+muestra si realmente se entiende su función, su límite y su consecuencia.
+
+              Tabla 1: Conceptos jurídicos aplicados al caso de matrimonio igualitario
+
+ Concepto                  Aplicación práctica en el caso
+
+ Acto jurídico             El matrimonio es un acto jurídico civil porque requiere manifestación de
+                           voluntad y produce consecuencias de Derecho: estado civil, derechos
+                           familiares, obligaciones recíprocas y efectos patrimoniales. La SCJN no
+                           elimina el acto; corrige el criterio de acceso para que no dependa de la
+                           orientación sexual.
+
+ Derecho subjetivo         Las parejas del mismo sexo reclaman la posibilidad concreta de acceder
+                           a una institución jurídica en condiciones de igualdad. No se trata de una
+                           petición simbólica, sino del ejercicio de una facultad protegida por el
+                           sistema constitucional.
+
+ Jurisprudencia            La tesis 1a./J. 43/2015 (10a.) transforma la interpretación obligatoria del
+                           matrimonio al establecer que las definiciones excluyentes son incompa-
+                           tibles con la Constitución. Su efecto práctico es orientar a autoridades y
+                           tribunales frente a normas locales discriminatorias.
+
+ Moral                     El caso muestra una tensión entre moral social tradicional y Derecho
+                           constitucional. Una parte de la sociedad puede sostener una idea moral
+                           de matrimonio vinculada con procreación; sin embargo, esa visión no
+                           puede convertirse en barrera jurídica para excluir derechos.
+
+ Norma jurídica            La norma local que define el matrimonio como unión entre hombre y
+                           mujer funciona como regla de acceso a una institución civil. El problema
+                           es que su contenido introduce una distinción no justificada, por lo que
+                           debe analizarse frente a igualdad y no discriminación.
+
+ Persona jurídica          Las personas homosexuales son sujetos plenos de derechos y obliga-
+                           ciones. Su orientación sexual no modifica su calidad jurídica ni autoriza
+                           una disminución de derechos civiles. La Corte protege precisamente
+                           esa condición de titularidad jurídica.
+
+
+
+Conceptos jurídicos fundamentales, moral y Derecho                          030 Filosofía del Derecho
+Conclusiones                                                                                              8
+
+
+
+  Concepto                Aplicación práctica en el caso
+
+
+  Sistema jurídico        La decisión obliga a leer el matrimonio dentro del sistema constitucional
+                          completo: Constitución, derechos humanos, igualdad, protección de la
+                          familia, jurisprudencia y legislación civil. La norma civil aislada cede ante
+                          principios superiores del orden jurídico.
+
+  Validez                 Aunque una legislatura local haya aprobado la definición tradicional de
+                          matrimonio, esa norma pierde validez constitucional si excluye injustifi-
+                          cadamente a un grupo. La validez no depende solo del procedimiento
+                          legislativo, sino de la compatibilidad con derechos fundamentales.
+
+
+
+
+4.       Conclusiones
+   En el caso analizado se identifican varios actos jurídicos y actos institucionales conecta-
+dos entre sí. El matrimonio aparece como acto jurídico principal, porque la voluntad de las
+personas que desean contraerlo busca producir consecuencias reconocidas por el Derecho.
+También se observa el acto legislativo de definir el matrimonio en una norma civil, el acto
+jurisdiccional de revisar esa definición mediante amparo y el acto interpretativo de la Supre-
+ma Corte al fijar jurisprudencia. Visto como sistema, el caso no se reduce a una pareja que
+quiere casarse; muestra una cadena normativa donde voluntad, ley, autoridad y Constitución
+interactúan.
+   La relación con la moral es el punto más delicado. Considero que el Derecho no debe
+negar toda influencia moral, porque muchos principios jurídicos nacen de preocupaciones éti-
+cas: dignidad, igualdad, responsabilidad y justicia. Sin embargo, cuando una moral particular
+se usa para excluir a un grupo, deja de funcionar como orientación ética y se convierte en
+mecanismo de restricción. En este caso, vincular el matrimonio exclusivamente con la pro-
+creación o con la heterosexualidad no protegía mejor a la familia; más bien cerraba el acceso
+a una institución jurídica con base en una característica personal irrelevante para el fin cons-
+titucional.
+   La conclusión que sostengo es que los conceptos jurídicos fundamentales sirven como
+herramientas de diagnóstico. Permiten detectar si una norma existe, si obliga, si produce
+efectos, si reconoce sujetos, si genera relaciones y si respeta límites constitucionales. En
+el caso del matrimonio igualitario, esa revisión conceptual demuestra que la validez de una
+norma no puede separarse de su contenido material. Una ley puede estar escrita, publicada
+
+
+Conceptos jurídicos fundamentales, moral y Derecho                           030 Filosofía del Derecho
+Referencias                                                                                      9
+
+
+y aplicada, pero si produce discriminación, el sistema jurídico tiene que corregirla. Ese es el
+valor práctico de estudiar filosofía del Derecho: pasar de la definición al criterio y del criterio
+a la decisión justa. En lo personal, esta actividad me deja una idea muy concreta: aprender
+conceptos jurídicos no sirve de mucho si no se usan para revisar la realidad que producen las
+normas.
+
+
+
+Referencias
+Rodríguez, V. R., “Filosofía del derecho”, Revista de Filosofía Universidad Iberoamericana,
+  vol. 52, pp. 6–11, junio 2020, doi:10.48102/rdf.v52i149.53.
+
+Finnis, J., Serrano, J. S., y Correas, C. I. M., Estudios de teoría del derecho natural. Universi-
+  dad Nacional Autónoma de México, 2017.
+
+Suprema Corte de Justicia de la Nación, “Matrimonio. la ley de cualquier entidad federativa
+  que, por un lado, considere que la finalidad de aquél es la procreación y/o que lo defina
+  como el que se celebra entre un hombre y una mujer, es inconstitucional”, 2015, https:
+  //sjf2.scjn.gob.mx/detalle/tesis/2009407. Tesis 1a./J. 43/2015 (10a.), Registro digital
+  2009407. Semanario Judicial de la Federación.
+
+García Máynez, E., Introducción al estudio del derecho. Universidad Abierta y a Distancia de
+  México, 5 ed., 2002.
+
+Lastra Lastra, J. M., “Conceptos jurídicos fundamentales”, s. f., http://bibliohistorico.juridicas.
+  unam.mx/libros/1/116/25.pdf.
+
+Poder Judicial del Estado de Guanajuato, “Conceptos jurídicos fundamentales”, 2007, https:
+  //www.poderjudicialgto.gob.mx/pdfs/ifsp_conceptosjuridicosfundamentales-1.pdf.
+
+Laun, R., Derecho y moral. Ediciones Olejnik, enero 2021, doi:10.5771/9789563929119.
+
+Rojas-González, G., Filosofía del Derecho. Universidad Católica de Colombia, 2018.
+
+
+
+
+Conceptos jurídicos fundamentales, moral y Derecho                       030 Filosofía del Derecho
+

@@ -1,0 +1,938 @@
+﻿% Presentacion - PFM02 / Sesion 02
+% Suma y resta con fracciones
+
+\pdfminorversion=7
+\documentclass[
+	spanish,
+	aspectratio=1610,
+	xcolor={dvipsnames,table}
+]{beamer}
+
+\geometry{paperwidth=19.2cm,paperheight=12cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,shapes.geometric,fit,backgrounds,overlay-beamer-styles}
+\usepackage{hyperref}
+
+% Datos del alumno y del programa
+\newcommand{\studentname}{Mtro. Martin Jonathan de la Cruz Munoz}
+\newcommand{\studentshort}{M. de la Cruz Munoz}
+\newcommand{\studentid}{00841}
+\newcommand{\studentemail}{martin.delacruz@campus.iiiepe.edu.mx}
+\newcommand{\programname}{Maestria en Aprendizaje y Ensenanza de las Matematicas}
+\newcommand{\programshort}{MAEM}
+\newcommand{\coursecode}{PFM02}
+\newcommand{\coursename}{Temas selectos de matematicas I}
+\newcommand{\coursegroup}{Grupo A}
+\newcommand{\courseperiod}{Marzo--julio 2026}
+\newcommand{\institutionname}{IIIEPE}
+\newcommand{\institutionlongname}{Instituto de Investigacion, Innovacion y Estudios de Posgrado para la Educacion del Estado de Nuevo Leon}
+\newcommand{\institutionplace}{Monterrey, Nuevo Leon}
+\newcommand{\iiiepelogo}{img/iiiepe/logo-iiiepe-blanco.png}
+\newcommand{\iiiepemark}{img/iiiepe/marca-iiiepe.png}
+\newcommand{\iiiepedots}{img/iiiepe/logo-puntos.png}
+
+% Paleta institucional
+\definecolor{iiiepeNavy}{HTML}{163B5C}
+\definecolor{iiiepeBlue}{HTML}{1F6F9F}
+\definecolor{iiiepeAqua}{HTML}{20B7A8}
+\definecolor{iiiepeOrange}{HTML}{F28C28}
+\definecolor{iiiepePaper}{HTML}{F6F8F7}
+\definecolor{iiiepeInk}{HTML}{1E2A32}
+\definecolor{iiiepeMuted}{HTML}{667085}
+
+\mode<presentation>{
+	\usetheme{default}
+	\usefonttheme{professionalfonts}
+	\setbeamertemplate{navigation symbols}{}
+	\setbeamertemplate{blocks}[rounded][shadow=false]
+}
+
+\hypersetup{
+	colorlinks=true,
+	urlcolor=iiiepeBlue,
+	linkcolor=iiiepeNavy
+}
+
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=iiiepeInk,bg=white}
+\setbeamercolor{structure}{fg=iiiepeBlue}
+\setbeamercolor{frametitle}{fg=white,bg=iiiepeNavy}
+\setbeamercolor{title}{fg=white,bg=iiiepeNavy}
+\setbeamercolor{block title}{fg=white,bg=iiiepeBlue}
+\setbeamercolor{block body}{fg=iiiepeInk,bg=iiiepePaper}
+\setbeamercolor{alerted text}{fg=iiiepeOrange}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{block title}{series=\bfseries}
+\setbeamertemplate{itemize item}{\textcolor{iiiepeAqua}{\large$\blacktriangleright$}}
+\setbeamertemplate{itemize subitem}{\textcolor{iiiepeOrange}{\scriptsize$\blacksquare$}}
+\setbeamertemplate{enumerate item}{\textcolor{iiiepeBlue}{\insertenumlabel.}}
+
+\newcommand{\localLogo}[1]{%
+	\IfFileExists{#1}{\includegraphics[height=0.58cm]{#1}}{\textbf{\institutionname}}%
+}
+
+\setbeamertemplate{frametitle}{
+	\nointerlineskip
+	\begin{beamercolorbox}[wd=\textwidth,ht=1.05cm,dp=0.22cm,leftskip=0.35cm,rightskip=0.25cm]{frametitle}
+		\begin{minipage}[c]{0.72\textwidth}
+			\insertframetitle
+		\end{minipage}
+		\hfill
+		\raisebox{-0.1cm}{\localLogo{\iiiepelogo}}
+	\end{beamercolorbox}
+	\vspace{-0.04cm}
+	{\color{iiiepeOrange}\rule{\textwidth}{1.4pt}}
+}
+
+\setbeamertemplate{footline}{
+	\leavevmode
+	\hbox{%
+		\begin{beamercolorbox}[wd=.34\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}
+			\color{white}\studentshort
+		\end{beamercolorbox}
+		\begin{beamercolorbox}[wd=.38\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}
+			\color{white}\programshort\ -- \coursecode
+		\end{beamercolorbox}
+		\begin{beamercolorbox}[wd=.20\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}
+			\color{white}Matricula \studentid\hfill\insertframenumber/\inserttotalframenumber
+		\end{beamercolorbox}
+	}
+}
+\setbeamercolor{author in head/foot}{bg=iiiepeNavy}
+\setbeamercolor{title in head/foot}{bg=iiiepeBlue}
+\setbeamercolor{date in head/foot}{bg=iiiepeNavy}
+
+\newcommand{\accentbar}{%
+	\begin{tikzpicture}[remember picture,overlay]
+		\path[use as bounding box] (0,0) rectangle (0,0);
+		\fill[iiiepeAqua] (current page.south west) rectangle ([xshift=0.42\paperwidth,yshift=0.08cm]current page.south west);
+		\fill[iiiepeOrange] ([xshift=0.42\paperwidth]current page.south west) rectangle ([xshift=\paperwidth,yshift=0.08cm]current page.south west);
+	\end{tikzpicture}
+}
+
+\newcommand{\DividirEntre}[2]{\ensuremath{#1\,\text{ entre }\,#2}}
+
+\tikzset{
+	cajaProc/.style={
+		draw=iiiepeBlue,
+		rounded corners=2mm,
+		align=center,
+		inner sep=4pt,
+		minimum height=8mm,
+		font=\small
+	},
+	cajaDato/.style={
+		cajaProc,
+		fill=iiiepeBlue!8
+	},
+	cajaOp/.style={
+		cajaProc,
+		fill=iiiepeOrange!12
+	},
+	cajaRes/.style={
+		cajaProc,
+		fill=iiiepeAqua!12
+	},
+	flechaProc/.style={
+		-{Latex[length=2.4mm]},
+		thick,
+		draw=iiiepeBlue
+	},
+	notaProc/.style={
+		draw=iiiepeOrange,
+		rounded corners=2mm,
+		fill=iiiepeOrange!12,
+		align=center,
+		inner sep=4pt,
+		font=\scriptsize
+	},
+	decisionProc/.style={
+		diamond,
+		aspect=2.1,
+		draw=iiiepeBlue,
+		fill=iiiepeAqua!10,
+		align=center,
+		inner sep=2pt,
+		font=\scriptsize
+	}
+}
+
+\newcommand{\RutaOperacion}[4]{%
+\begin{tikzpicture}[node distance=6mm]
+	\node[cajaDato,visible on=<1->] (a) {#1};
+	\node[cajaOp, right=of a,visible on=<2->] (b) {#2};
+	\node[cajaOp, right=of b,visible on=<3->] (c) {#3};
+	\node[cajaRes, right=of c,visible on=<4->] (d) {#4};
+	\draw[flechaProc,visible on=<1->] (a) -- (b);
+	\draw[flechaProc,visible on=<2->] (b) -- (c);
+	\draw[flechaProc,visible on=<3->] (c) -- (d);
+\end{tikzpicture}%
+}
+
+\newcommand{\sectionframe}[1]{%
+	\begin{frame}[plain]
+		\begin{tikzpicture}[remember picture,overlay]
+			\fill[iiiepeNavy] (current page.south west) rectangle (current page.north east);
+			\IfFileExists{\iiiepedots}{%
+				\node[opacity=0.13,anchor=east] at ([xshift=0.8cm]current page.east) {\includegraphics[height=9.4cm]{\iiiepedots}};
+			}{}
+			\fill[iiiepeAqua] ([xshift=0.85cm,yshift=2.1cm]current page.south west) rectangle ([xshift=1.05cm,yshift=6.3cm]current page.south west);
+			\fill[iiiepeOrange] ([xshift=1.15cm,yshift=2.1cm]current page.south west) rectangle ([xshift=1.35cm,yshift=5.35cm]current page.south west);
+		\end{tikzpicture}
+		\vspace{1.8cm}
+		\hspace{1.25cm}
+		\begin{minipage}{0.72\paperwidth}
+			{\color{white}\Huge\bfseries #1}\\[0.25cm]
+			{\color{white!75}Sesion 02 -- Suma y resta con fracciones}
+		\end{minipage}
+	\end{frame}
+}
+
+% Separadores automaticos desactivados para evitar diapositivas repetitivas.
+% \AtBeginSection[]{\sectionframe{\insertsectionhead}}
+
+\title[\coursecode]{Suma y resta con fracciones}
+\subtitle{Sesion 02 -- \coursename}
+\author[\studentshort]{\texorpdfstring{\studentname\\\footnotesize Matricula: \studentid\\\href{mailto:\studentemail}{\studentemail}}{\studentname, Matricula: \studentid}}
+\institute[\institutionname]{\institutionlongname\\\coursecode\ -- \coursegroup}
+\date[\courseperiod]{\texorpdfstring{\institutionplace\\\courseperiod}{\institutionplace, \courseperiod}}
+
+\begin{document}
+
+\begin{frame}[plain]
+	\begin{tikzpicture}[remember picture,overlay]
+		\fill[iiiepeNavy] (current page.south west) rectangle ([xshift=0.56\paperwidth]current page.north west);
+		\fill[iiiepeBlue] ([xshift=0.56\paperwidth]current page.south west) rectangle (current page.north east);
+		\IfFileExists{\iiiepedots}{%
+			\node[opacity=0.16,anchor=south east] at ([xshift=0.8cm,yshift=-0.3cm]current page.south east) {\includegraphics[height=8.6cm]{\iiiepedots}};
+		}{}
+		\node[anchor=north west] at ([xshift=0.55cm,yshift=-0.45cm]current page.north west) {\localLogo{\iiiepelogo}};
+		\fill[iiiepeOrange] ([xshift=0.58\paperwidth,yshift=1.20cm]current page.south west) rectangle ([xshift=0.92\paperwidth,yshift=1.34cm]current page.south west);
+		\fill[iiiepeAqua] ([xshift=0.58\paperwidth,yshift=0.90cm]current page.south west) rectangle ([xshift=0.82\paperwidth,yshift=1.04cm]current page.south west);
+	\end{tikzpicture}
+
+	\vspace{1.75cm}
+	\begin{minipage}{0.51\paperwidth}
+		{\color{white}\Huge\bfseries Suma y resta\\ con fracciones}\\[0.25cm]
+		{\color{white!86}\large PFM02 -- Sesion 02}\\[0.35cm]
+		{\color{iiiepeOrange}\rule{0.82\linewidth}{1.3pt}}\\[0.45cm]
+		{\color{white}\studentname}\\
+		{\color{white!80}\footnotesize Matricula: \studentid}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.35\paperwidth}
+		\raggedleft
+		{\color{white}\Large\bfseries \institutionname}\\[0.18cm]
+		{\color{white!82}\footnotesize \programname}\\[0.5cm]
+		{\color{white}\small \coursecode\ -- \coursename}\\
+		{\color{white!78}\small \courseperiod}\\[0.5cm]
+		{\color{white!74}\footnotesize \institutionplace}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{Contenido}
+	\tableofcontents
+\end{frame}
+
+\section{Actividad}
+
+\begin{frame}{Ficha de la sesion}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Contenido}
+				Extension del significado de las operaciones y sus relaciones inversas.
+			\end{block}
+			\begin{block}{PDA}
+				Reconoce el significado de las cuatro operaciones basicas y sus relaciones inversas al resolver problemas con numeros con signo.
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Aprendizaje de la secuencia}
+				Resolver situaciones problematicas que involucran sumar o restar fracciones.
+			\end{block}
+			\begin{block}{Producto}
+				Procedimientos visibles, ejercicios resueltos, situaciones en contexto, evaluacion y retroalimentacion.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Criterios incorporados}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Estructura de secuencia}
+				La actividad se organiza en cinco fases: antecedente, explicacion, practica, evaluacion y retroalimentacion.
+			\end{block}
+			\begin{block}{Evidencia esperada}
+				No basta la respuesta: debe observarse estrategia, procedimiento, simplificacion e interpretacion.
+			\end{block}
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Criterios de evaluacion}
+				Actividades diarias, exposicion de secuencia, escrito reflexivo y exposicion final requieren claridad matematica y reflexion.
+			\end{block}
+			\begin{block}{Decision didactica}
+				Cada ejemplo muestra que se hace, por que funciona y como se comprueba.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Ruta pedagogica de la actividad}
+	\begin{columns}[T]
+		\begin{column}{0.20\textwidth}
+			\begin{block}{1. Recuperar}
+				Simplificar, convertir mixtas e impropias.
+			\end{block}
+		\end{column}
+		\begin{column}{0.20\textwidth}
+			\begin{block}{2. Igualar}
+				Construir denominador comun.
+			\end{block}
+		\end{column}
+		\begin{column}{0.20\textwidth}
+			\begin{block}{3. Operar}
+				Sumar o restar numeradores.
+			\end{block}
+		\end{column}
+		\begin{column}{0.20\textwidth}
+			\begin{block}{4. Simplificar}
+				Reducir a forma irreductible.
+			\end{block}
+		\end{column}
+		\begin{column}{0.20\textwidth}
+			\begin{block}{5. Verificar}
+				Revisar sentido del contexto.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{0.25cm}
+	\begin{block}{Criterio docente}
+		El procedimiento es suficiente cuando el estudiante puede explicar la unidad comun, el calculo y la respuesta final.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Mapa general de suma y resta con fracciones}
+	\centering
+	\resizebox{0.98\textwidth}{!}{%
+	\begin{tikzpicture}[node distance=0.8cm and 0.95cm]
+		\node[cajaDato,visible on=<1->] (inicio) {Fracciones};
+		\node[decisionProc, right=of inicio,visible on=<2->] (tipo) {¿hay mixtas\\o enteros?};
+		\node[cajaOp, above right=0.45cm and 0.9cm of tipo,visible on=<3->] (convertir) {si:\\convertir a\\impropias};
+		\node[cajaOp, below right=0.45cm and 0.9cm of tipo,visible on=<3->] (mantener) {no:\\mantener\\fracciones};
+		\node[decisionProc, right=2.65cm of tipo,visible on=<4->] (mismo) {¿mismo\\denominador?};
+		\node[cajaOp, above right=0.45cm and 0.9cm of mismo,visible on=<5->] (operar) {operar\\numeradores};
+		\node[cajaOp, below right=0.45cm and 0.9cm of mismo,visible on=<5->] (comun) {buscar\\denominador\\comun};
+		\node[cajaOp, right=of operar,visible on=<6->] (simplificar) {simplificar};
+		\node[cajaRes, right=of simplificar,visible on=<7->] (verificar) {verificar\\contexto};
+		\draw[flechaProc,visible on=<1->] (inicio) -- (tipo);
+		\draw[flechaProc,visible on=<2->] (tipo) -- (convertir);
+		\draw[flechaProc,visible on=<2->] (tipo) -- (mantener);
+		\draw[flechaProc,visible on=<3->] (convertir) -- (mismo);
+		\draw[flechaProc,visible on=<3->] (mantener) -- (mismo);
+		\draw[flechaProc,visible on=<4->] (mismo) -- (operar);
+		\draw[flechaProc,visible on=<4->] (mismo) -- (comun);
+		\draw[flechaProc,visible on=<5->] (comun.north) -- (operar.south);
+		\draw[flechaProc,visible on=<6->] (operar) -- (simplificar);
+		\draw[flechaProc,visible on=<7->] (simplificar) -- (verificar);
+	\end{tikzpicture}
+	}
+	\vspace{0.25cm}
+	\begin{block}{Lectura del mapa}
+		La unidad comun permite comparar partes; la respuesta final debe conservar la cantidad y tener sentido en el problema.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Idea clave: partes comparables}
+	\begin{columns}[T]
+		\begin{column}{0.45\textwidth}
+			\begin{block}{Mismo denominador}
+				Si las partes tienen el mismo tamano, se operan numeradores y se conserva el denominador.
+				\[
+					\frac{a}{c}+\frac{b}{c}=\frac{a+b}{c}
+				\]
+			\end{block}
+		\end{column}
+		\begin{column}{0.52\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.86]
+				\onslide<1->{\foreach \i in {0,1,2,3}{\draw[thick] (\i,0) rectangle +(1,0.45);}}
+				\onslide<2->{\fill[iiiepeAqua!65] (0,0) rectangle +(1,0.45);}
+				\onslide<3->{\fill[iiiepeAqua!65] (1,0) rectangle +(1,0.45);}
+				\onslide<4->{\fill[iiiepeOrange!75] (2,0) rectangle +(1,0.45);}
+				\onslide<4->{\node[below] at (2,-0.15) {$\frac{2}{4}+\frac{1}{4}=\frac{3}{4}$};}
+				\onslide<4->{\node[above] at (2,0.65) {mismas partes: cuartos};}
+			\end{tikzpicture}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\section{Procedimientos}
+
+\begin{frame}{Procedimiento 1: mismo denominador}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Suma}
+				\[
+				\frac{7}{2}+\frac{5}{2}=\frac{7+5}{2}=\frac{12}{2}=6
+				\]
+				\resizebox{\linewidth}{!}{%
+					\RutaOperacion
+					{$\frac{7}{2}+\frac{5}{2}$}
+					{mismos\\medios}
+					{$\frac{7+5}{2}$}
+					{$\frac{12}{2}=6$}%
+				}
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Resta}
+				\[
+				\frac{17}{4}-\frac{10}{4}=\frac{17-10}{4}=\frac{7}{4}=1\,\frac{3}{4}
+				\]
+				\resizebox{\linewidth}{!}{%
+					\RutaOperacion
+					{$\frac{17}{4}-\frac{10}{4}$}
+					{mismos\\cuartos}
+					{$\frac{17-10}{4}$}
+					{$\frac{7}{4}=1\,\frac{3}{4}$}%
+				}
+			\end{block}
+		\end{column}
+	\end{columns}
+	\begin{block}{Verificacion}
+		El denominador no se suma ni se resta porque representa el tamano de la parte.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Procedimiento 2: denominador comun}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.46\textwidth}
+			\begin{block}{Paso 1: elegir unidad comun}
+				Para $\frac{3}{4}+\frac{1}{2}$, el mcm de $4$ y $2$ es $4$.
+			\end{block}
+			\begin{block}{Paso 2: convertir}
+				\[
+				\frac{1}{2}=\frac{2}{4}
+				\]
+			\end{block}
+		\end{column}
+		\begin{column}{0.50\textwidth}
+			\begin{block}{Paso 3: operar}
+				\[
+				\frac{3}{4}+\frac{2}{4}=\frac{5}{4}=1\,\frac{1}{4}
+				\]
+			\end{block}
+			\begin{block}{Sentido}
+				$\frac{3}{4}$ mas $\frac{1}{2}$ debe ser mayor que $1$; $1\,\frac{1}{4}$ cumple esa estimacion.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{0.15cm}
+	\centering
+	\resizebox{0.86\textwidth}{!}{%
+		\RutaOperacion
+		{$\frac{3}{4}+\frac{1}{2}$}
+		{igualar\\denominador}
+		{$\frac{3}{4}+\frac{2}{4}$}
+		{$\frac{5}{4}=1\,\frac{1}{4}$}%
+	}
+	\vspace{0.12cm}
+	\begin{block}{Nota}
+		El denominador comun no cambia la cantidad; solo expresa ambas fracciones con la misma unidad.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Procedimiento 3: producto cruzado}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Regla como atajo}
+				\[
+				\frac{a}{b}+\frac{c}{d}=\frac{ad+bc}{bd}
+				\]
+				\[
+				\frac{a}{b}-\frac{c}{d}=\frac{ad-bc}{bd}
+				\]
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Ejemplo}
+				\[
+				\frac{1}{2}+\frac{3}{7}=\frac{1(7)+3(2)}{14}=\frac{13}{14}
+				\]
+			\end{block}
+			\begin{block}{Cuidado}
+				Despues del producto cruzado siempre se revisa si la fraccion puede simplificarse.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{0.15cm}
+	\centering
+	\resizebox{0.78\textwidth}{!}{%
+		\RutaOperacion
+		{$\frac{1}{2}+\frac{3}{7}$}
+		{crear comun\\$2\cdot7=14$}
+		{$\frac{1(7)+3(2)}{14}$}
+		{$\frac{13}{14}$}%
+	}
+	\vspace{0.12cm}
+	\begin{block}{Sentido del atajo}
+		El producto cruzado crea un denominador comun usando el producto de los denominadores.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Procedimiento 4: enteros y fracciones mixtas}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Convertir mixta}
+				\[
+				5\,\frac{2}{3}=\frac{5(3)+2}{3}=\frac{17}{3}
+				\]
+			\end{block}
+			\begin{block}{Convertir entero}
+				\[
+				4=\frac{4}{1}
+				\]
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Ejemplo completo}
+				\[
+				5\,\frac{2}{3}+\frac{2}{8}=\frac{17}{3}+\frac{1}{4}
+				\]
+				\[
+				\frac{68}{12}+\frac{3}{12}=\frac{71}{12}=5\,\frac{11}{12}
+				\]
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{0.12cm}
+	\centering
+	\resizebox{0.72\textwidth}{!}{%
+		\RutaOperacion
+		{$5\,\frac{2}{3}$}
+		{multiplicar\\entero}
+		{$\frac{5(3)+2}{3}$}
+		{$\frac{17}{3}$}%
+	}
+	\vspace{0.08cm}
+	\resizebox{0.82\textwidth}{!}{%
+		\RutaOperacion
+		{$\frac{17}{3}+\frac{1}{4}$}
+		{denominador\\$12$}
+		{$\frac{68}{12}+\frac{3}{12}$}
+		{$\frac{71}{12}=5\,\frac{11}{12}$}%
+	}
+	\accentbar
+\end{frame}
+
+\section{Ejercicios resueltos}
+
+\begin{frame}{Antecedente: simplificar fracciones}
+	\scriptsize
+	La tabla muestra varios incisos resueltos; el esquema representa la ruta comun que se aplica al bloque.
+	\vspace{0.08cm}
+	\begin{tabular}{llll}
+		\toprule
+		\textbf{Fraccion} & \textbf{Resultado} & \textbf{Fraccion} & \textbf{Resultado}\\
+		\midrule
+		$\frac{4}{20}$ & $\frac{4/4}{20/4}=\frac15$ & $\frac{9}{27}$ & $\frac{9/9}{27/9}=\frac13$\\[0.15cm]
+		$\frac{6}{24}$ & $\frac{6/6}{24/6}=\frac14$ & $\frac{24}{32}$ & $\frac{24/8}{32/8}=\frac34$\\[0.15cm]
+		$\frac{12}{30}$ & $\frac{12/6}{30/6}=\frac25$ & $\frac{15}{25}$ & $\frac{15/5}{25/5}=\frac35$\\
+		\bottomrule
+	\end{tabular}
+	\vspace{0.25cm}
+	\centering
+	\resizebox{0.62\textwidth}{!}{%
+		\RutaOperacion
+		{$\frac{4}{20}$}
+		{dividir ambos\\entre $4$}
+		{$\frac{4/4}{20/4}$}
+		{$\frac{1}{5}$}%
+	}
+	\vspace{0.14cm}
+	\begin{block}{Criterio}
+		Una fraccion esta simplificada cuando numerador y denominador ya no comparten divisor mayor que $1$.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Antecedente: impropias y mixtas}
+	\scriptsize
+	La tabla muestra varios incisos resueltos; los esquemas representan la ruta comun que se aplica al bloque.
+	\vspace{0.08cm}
+	\begin{columns}[T]
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Impropias a mixtas}
+				\begin{tabular}{ll}
+				$\frac54=1\,\frac14$ & $\frac{50}{3}=16\,\frac23$\\
+				$\frac83=2\,\frac23$ & $\frac{11}{2}=5\,\frac12$\\
+				$\frac74=1\,\frac34$ & $\frac43=1\,\frac13$\\
+				\end{tabular}
+			\end{block}
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Mixtas a impropias}
+				\begin{tabular}{ll}
+				$5\,\frac32=\frac{13}{2}$ & $15\,\frac13=\frac{46}{3}$\\
+				$9\,\frac23=\frac{29}{3}$ & $7\,\frac78=\frac{63}{8}$\\
+				$8\,\frac34=\frac{35}{4}$ & $2\,\frac{3}{16}=\frac{35}{16}$\\
+				\end{tabular}
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{0.1cm}
+	\centering
+	\resizebox{0.58\textwidth}{!}{%
+		\RutaOperacion
+		{$\frac{50}{3}$}
+		{$50=16(3)+2$}
+		{$16+\frac{2}{3}$}
+		{$16\,\frac{2}{3}$}%
+	}
+	\quad
+	\resizebox{0.36\textwidth}{!}{%
+		\RutaOperacion
+		{$15\,\frac{1}{3}$}
+		{$15(3)+1$}
+		{$\frac{46}{3}$}
+		{$\frac{46}{3}$}%
+	}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Ejercicios: mismo denominador}
+	\small
+	La tabla muestra varios incisos resueltos; el esquema representa la ruta comun que se aplica al bloque.
+	\vspace{0.08cm}
+	\begin{block}{Operar numeradores y conservar denominador}
+	\[
+	\frac{7}{2}+\frac{5}{2}=\frac{12}{2}=6
+	\qquad
+	\frac{8}{7}+\frac{1}{7}+\frac{2}{7}=\frac{11}{7}=1\,\frac47
+	\]
+	\[
+	\frac{17}{4}-\frac{10}{4}=\frac{7}{4}=1\,\frac34
+	\qquad
+	\frac{12}{9}-\frac{3}{9}-\frac{4}{9}=\frac{5}{9}
+	\]
+	\end{block}
+	\centering
+	\resizebox{0.72\textwidth}{!}{%
+		\RutaOperacion
+		{$\frac{8}{7}+\frac{1}{7}+\frac{2}{7}$}
+		{mismos\\septimos}
+		{$\frac{8+1+2}{7}$}
+		{$\frac{11}{7}=1\,\frac{4}{7}$}%
+	}
+	\vspace{0.1cm}
+	\begin{block}{Revision}
+		Todas las respuestas deben estar simplificadas o expresadas como mixta cuando convenga para interpretar la cantidad.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Ejercicios: distinto denominador por producto cruzado}
+	\small
+	La tabla muestra varios incisos resueltos; el esquema representa la ruta comun que se aplica al bloque.
+	\vspace{0.08cm}
+	\begin{block}{Producto cruzado como denominador comun}
+	\[
+	\frac12+\frac37=\frac{7+6}{14}=\frac{13}{14}
+	\qquad
+	\frac69+\frac{2}{10}=\frac{60+18}{90}=\frac{13}{15}
+	\]
+	\[
+	\frac32-\frac35=\frac{15-6}{10}=\frac{9}{10}
+	\qquad
+	\frac{10}{3}-\frac94=\frac{40-27}{12}=\frac{13}{12}=1\,\frac{1}{12}
+	\]
+	\end{block}
+	\centering
+	\resizebox{0.78\textwidth}{!}{%
+		\RutaOperacion
+		{$\frac{1}{2}+\frac{3}{7}$}
+		{cruzar\\productos}
+		{$\frac{1(7)+3(2)}{14}$}
+		{$\frac{13}{14}$}%
+	}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Ejercicios: distinto denominador por equivalentes}
+	\small
+	La tabla muestra varios incisos resueltos; el esquema representa la ruta comun que se aplica al bloque.
+	\vspace{0.08cm}
+	\begin{block}{Construir fracciones equivalentes}
+	\[
+	\frac34+\frac12=\frac54=1\,\frac14
+	\qquad
+	\frac74+\frac{3}{20}=\frac{38}{20}=\frac{19}{10}
+	\]
+	\[
+	\frac23+\frac17=\frac{17}{21}
+	\qquad
+	\frac49-\frac13=\frac19
+	\]
+	\[
+	\frac{7}{15}-\frac25=\frac{1}{15}
+	\qquad
+	\frac53-\frac{4}{27}=\frac{41}{27}=1\,\frac{14}{27}
+	\]
+	\end{block}
+	\centering
+	\resizebox{0.78\textwidth}{!}{%
+		\RutaOperacion
+		{$\frac{3}{4}+\frac{1}{2}$}
+		{convertir\\$\frac{1}{2}=\frac{2}{4}$}
+		{$\frac{3}{4}+\frac{2}{4}$}
+		{$\frac{5}{4}=1\,\frac{1}{4}$}%
+	}
+	\accentbar
+\end{frame}
+
+\section{Situaciones}
+
+\begin{frame}{Situaciones en contexto: combinar cantidades}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{01 Receta}
+				Escalar de $4$ a $12$ porciones: $1\,\frac12\cdot3=4\,\frac12$ tazas de agua; $\frac14\cdot3=\frac34$ de piloncillo.
+			\end{block}
+			\begin{block}{02 Pizza}
+				\[
+				\frac13+\frac14=\frac{4}{12}+\frac{3}{12}=\frac{7}{12}
+				\]
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{04 Ciclismo}
+				\[
+				\frac28+5\,\frac23=\frac14+\frac{17}{3}=\frac{71}{12}=5\,\frac{11}{12}
+				\]
+			\end{block}
+			\begin{block}{08 Distancia}
+				\[
+				4\,\frac12+3\,\frac58+3\,\frac34=\frac{95}{8}=11\,\frac78
+				\]
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Situaciones en contexto: encontrar lo que falta}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{03 Caramelos}
+				\[
+				1-\bigl(\frac14+\frac12\bigr)=1-\frac34=\frac14
+				\]
+			\end{block}
+			\begin{block}{05 Yeso}
+				\[
+				1\,\frac12-\frac64=\frac32-\frac32=0
+				\]
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{06 Rancho}
+				\[
+				1-\bigl(\frac18+\frac14\bigr)=1-\frac38=\frac58
+				\]
+			\end{block}
+			\begin{block}{07 Encuesta}
+				\[
+				1-\bigl(\frac14+\frac16+\frac13\bigr)=\frac14
+				\]
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Situacion 09: tablas apiladas}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.46\textwidth}
+			\begin{block}{Sumar espesores}
+				\[
+				\frac{7}{12}+\frac56+\frac23
+				\]
+				\[
+				\frac{7}{12}+\frac{10}{12}+\frac{8}{12}=\frac{25}{12}=2\,\frac{1}{12}
+				\]
+			\end{block}
+			\resizebox{\linewidth}{!}{%
+				\RutaOperacion
+				{$\frac{7}{12}+\frac56+\frac23$}
+				{convertir\\a doceavos}
+				{$\frac{7+10+8}{12}$}
+				{$2\,\frac{1}{12}$}%
+			}
+		\end{column}
+		\begin{column}{0.50\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.82]
+				\foreach \y/\h/\lab/\col in {0/0.45/$\frac{2}{3}$/iiiepeBlue!35,0.62/0.56/$\frac{5}{6}$/iiiepeOrange!45,1.35/0.39/$\frac{7}{12}$/iiiepeAqua!45}{
+					\draw[thick, fill=\col] (0,\y) rectangle (4,\y+\h);
+					\draw[thick, dashed] (-0.45,\y) -- (0,\y);
+					\draw[thick, dashed] (-0.45,\y+\h) -- (0,\y+\h);
+					\node[left] at (-0.5,\y+0.5*\h) {\lab};
+				}
+				\node[notaProc] at (2,2.25) {sumar espesores};
+				\draw[flechaProc] (2,2.02) -- (2,1.80);
+			\end{tikzpicture}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Situacion 10: perimetro de rectangulo}
+	\begin{columns}[T]
+		\begin{column}{0.45\textwidth}
+			\begin{block}{Datos}
+				Largo $4\,\frac34=\frac{19}{4}$ cm; ancho $2\,\frac12=\frac{5}{2}$ cm.
+			\end{block}
+			\begin{block}{Procedimiento}
+				\[
+				P=2\biggl(\frac{19}{4}+\frac{5}{2}\biggr)
+				\]
+				\[
+				P=2\biggl(\frac{19}{4}+\frac{10}{4}\biggr)
+				=2\biggl(\frac{29}{4}\biggr)=\frac{29}{2}
+				\]
+			\end{block}
+			\resizebox{\linewidth}{!}{%
+				\RutaOperacion
+				{$l+a$}
+				{igualar\\cuartos}
+				{$\frac{19}{4}+\frac{10}{4}$}
+				{$\frac{29}{4}$}%
+			}
+		\end{column}
+		\begin{column}{0.52\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.86]
+				\draw[thick, fill=iiiepeAqua!12] (0,0) rectangle (5.2,2.4);
+				\draw[thick, <->] (0,-0.35) -- (5.2,-0.35);
+				\draw[thick, <->] (5.55,0) -- (5.55,2.4);
+				\node[below] at (2.6,-0.35) {$4\,\frac{3}{4}$ cm};
+				\node[right] at (5.55,1.2) {$2\,\frac{1}{2}$ cm};
+				\node at (2.6,1.2) {$P=\frac{29}{2}$ cm};
+			\end{tikzpicture}
+			\vspace{0.2cm}
+			\begin{block}{Respuesta}
+				Opcion a: $\frac{29}{2}$.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\section{Evaluacion}
+
+\begin{frame}{Autoevaluacion y evidencia}
+	\scriptsize
+	\begin{tabular}{p{0.58\textwidth}ccc}
+		\toprule
+		\textbf{Indicador} & \textbf{3} & \textbf{2} & \textbf{1}\\
+		\midrule
+		Realizo sumas de fracciones usando el algoritmo aprendido. & $\square$ & $\square$ & $\square$\\[0.16cm]
+		Realizo restas de fracciones de forma correcta. & $\square$ & $\square$ & $\square$\\[0.16cm]
+		Identifico la operacion necesaria para resolver un problema. & $\square$ & $\square$ & $\square$\\[0.16cm]
+		Justifico denominador comun, simplificacion y respuesta contextual. & $\square$ & $\square$ & $\square$\\
+		\bottomrule
+	\end{tabular}
+	\vspace{0.25cm}
+	\begin{block}{Cierre metacognitivo}
+		Que error debo vigilar: sumar denominadores, no simplificar, operar sin convertir mixtas o no interpretar el contexto.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Retroalimentacion}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Errores frecuentes}
+				\begin{itemize}
+					\item Sumar denominadores.
+					\item Omitir la simplificacion.
+					\item Tratar mixtas como si fueran enteros separados.
+					\item Responder sin unidad o contexto.
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Preguntas de revision}
+				\begin{itemize}
+					\item Que unidad comun use?
+					\item El resultado puede simplificarse?
+					\item La respuesta es razonable?
+					\item La operacion corresponde al problema?
+				\end{itemize}
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\section{Cierre}
+
+\begin{frame}{Conclusiones}
+	\begin{enumerate}
+		\item Sumar o restar fracciones exige operar partes comparables.
+		\item El denominador comun representa una unidad compartida, no un adorno del algoritmo.
+		\item Las fracciones mixtas se convierten a impropias para evitar errores de operacion.
+		\item La respuesta debe simplificarse e interpretarse en el contexto.
+		\item La actividad sigue las cinco fases institucionales: antecedente, explicacion, practica, evaluacion y retroalimentacion.
+	\end{enumerate}
+	\accentbar
+\end{frame}
+
+\begin{frame}[plain]
+	\begin{tikzpicture}[remember picture,overlay]
+		\fill[iiiepeNavy] (current page.south west) rectangle (current page.north east);
+		\IfFileExists{\iiiepedots}{%
+			\node[opacity=0.13,anchor=south east] at ([xshift=0.8cm,yshift=-0.2cm]current page.south east) {\includegraphics[height=9cm]{\iiiepedots}};
+		}{}
+		\node[anchor=north west] at ([xshift=0.55cm,yshift=-0.45cm]current page.north west) {\localLogo{\iiiepelogo}};
+	\end{tikzpicture}
+	\vspace{2.2cm}
+	\begin{center}
+		{\color{white}\Huge\bfseries Gracias}\\[0.55cm]
+		{\color{white}\Large \studentname}\\[0.18cm]
+		{\color{white!78}\footnotesize Matricula \studentid\ -- \studentemail}\\[0.45cm]
+		{\color{iiiepeOrange}\rule{0.36\paperwidth}{1.4pt}}\\[0.35cm]
+		{\color{white!72}\footnotesize \institutionname\ -- \coursecode\ -- \coursename}
+	\end{center}
+\end{frame}
+
+\end{document}
+

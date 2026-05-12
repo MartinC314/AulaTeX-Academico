@@ -1,0 +1,955 @@
+﻿% Presentacion - PFM02 / Sesion 03
+% Multiplicacion y division con fracciones
+
+\pdfminorversion=7
+\documentclass[
+	spanish,
+	aspectratio=1610,
+	xcolor={dvipsnames,table}
+]{beamer}
+
+\geometry{paperwidth=19.2cm,paperheight=12cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{textcomp}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing,shapes.geometric,fit,backgrounds,overlay-beamer-styles}
+\usepackage{hyperref}
+
+% Datos del alumno y del programa
+\newcommand{\studentname}{Mtro. Martin Jonathan de la Cruz Munoz}
+\newcommand{\studentshort}{M. de la Cruz Munoz}
+\newcommand{\studentid}{00841}
+\newcommand{\studentemail}{martin.delacruz@campus.iiiepe.edu.mx}
+\newcommand{\programname}{Maestria en Aprendizaje y Ensenanza de las Matematicas}
+\newcommand{\programshort}{MAEM}
+\newcommand{\coursecode}{PFM02}
+\newcommand{\coursename}{Temas selectos de matematicas I}
+\newcommand{\coursegroup}{Grupo A}
+\newcommand{\courseperiod}{Marzo--julio 2026}
+\newcommand{\institutionname}{IIIEPE}
+\newcommand{\institutionlongname}{Instituto de Investigacion, Innovacion y Estudios de Posgrado para la Educacion del Estado de Nuevo Leon}
+\newcommand{\institutionplace}{Monterrey, Nuevo Leon}
+\newcommand{\iiiepelogo}{img/iiiepe/logo-iiiepe-blanco.png}
+\newcommand{\iiiepemark}{img/iiiepe/marca-iiiepe.png}
+\newcommand{\iiiepedots}{img/iiiepe/logo-puntos.png}
+
+% Paleta institucional
+\definecolor{iiiepeNavy}{HTML}{163B5C}
+\definecolor{iiiepeBlue}{HTML}{1F6F9F}
+\definecolor{iiiepeAqua}{HTML}{20B7A8}
+\definecolor{iiiepeOrange}{HTML}{F28C28}
+\definecolor{iiiepePaper}{HTML}{F6F8F7}
+\definecolor{iiiepeInk}{HTML}{1E2A32}
+\definecolor{iiiepeMuted}{HTML}{667085}
+
+\mode<presentation>{
+	\usetheme{default}
+	\usefonttheme{professionalfonts}
+	\setbeamertemplate{navigation symbols}{}
+	\setbeamertemplate{blocks}[rounded][shadow=false]
+}
+
+\hypersetup{
+	colorlinks=true,
+	urlcolor=iiiepeBlue,
+	linkcolor=iiiepeNavy
+}
+
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=iiiepeInk,bg=white}
+\setbeamercolor{structure}{fg=iiiepeBlue}
+\setbeamercolor{frametitle}{fg=white,bg=iiiepeNavy}
+\setbeamercolor{title}{fg=white,bg=iiiepeNavy}
+\setbeamercolor{block title}{fg=white,bg=iiiepeBlue}
+\setbeamercolor{block body}{fg=iiiepeInk,bg=iiiepePaper}
+\setbeamercolor{alerted text}{fg=iiiepeOrange}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{block title}{series=\bfseries}
+\setbeamertemplate{itemize item}{\textcolor{iiiepeAqua}{\large$\blacktriangleright$}}
+\setbeamertemplate{itemize subitem}{\textcolor{iiiepeOrange}{\scriptsize$\blacksquare$}}
+\setbeamertemplate{enumerate item}{\textcolor{iiiepeBlue}{\insertenumlabel.}}
+
+\newcommand{\localLogo}[1]{%
+	\IfFileExists{#1}{\includegraphics[height=0.58cm]{#1}}{\textbf{\institutionname}}%
+}
+
+\setbeamertemplate{frametitle}{
+	\nointerlineskip
+	\begin{beamercolorbox}[wd=\textwidth,ht=1.05cm,dp=0.22cm,leftskip=0.35cm,rightskip=0.25cm]{frametitle}
+		\begin{minipage}[c]{0.72\textwidth}
+			\insertframetitle
+		\end{minipage}
+		\hfill
+		\raisebox{-0.1cm}{\localLogo{\iiiepelogo}}
+	\end{beamercolorbox}
+	\vspace{-0.04cm}
+	{\color{iiiepeOrange}\rule{\textwidth}{1.4pt}}
+}
+
+\setbeamertemplate{footline}{
+	\leavevmode
+	\hbox{%
+		\begin{beamercolorbox}[wd=.34\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}
+			\color{white}\studentshort
+		\end{beamercolorbox}
+		\begin{beamercolorbox}[wd=.38\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}
+			\color{white}\programshort\ -- \coursecode
+		\end{beamercolorbox}
+		\begin{beamercolorbox}[wd=.20\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}
+			\color{white}Matricula \studentid\hfill\insertframenumber/\inserttotalframenumber
+		\end{beamercolorbox}
+	}
+}
+\setbeamercolor{author in head/foot}{bg=iiiepeNavy}
+\setbeamercolor{title in head/foot}{bg=iiiepeBlue}
+\setbeamercolor{date in head/foot}{bg=iiiepeNavy}
+
+\newcommand{\accentbar}{%
+	\begin{tikzpicture}[remember picture,overlay]
+		\path[use as bounding box] (0,0) rectangle (0,0);
+		\fill[iiiepeAqua] (current page.south west) rectangle ([xshift=0.42\paperwidth,yshift=0.08cm]current page.south west);
+		\fill[iiiepeOrange] ([xshift=0.42\paperwidth]current page.south west) rectangle ([xshift=\paperwidth,yshift=0.08cm]current page.south west);
+	\end{tikzpicture}
+}
+
+\newcommand{\DividirEntre}[2]{\ensuremath{#1\,\text{ entre }\,#2}}
+\newcommand{\signodiv}{\mathbin{\text{\normalfont\textdiv}}}
+
+\tikzset{
+	cajaProc/.style={
+		draw=iiiepeBlue,
+		rounded corners=2mm,
+		align=center,
+		inner sep=4pt,
+		minimum height=8mm,
+		font=\small
+	},
+	cajaDato/.style={
+		cajaProc,
+		fill=iiiepeBlue!8
+	},
+	cajaOp/.style={
+		cajaProc,
+		fill=iiiepeOrange!12
+	},
+	cajaRes/.style={
+		cajaProc,
+		fill=iiiepeAqua!12
+	},
+	flechaProc/.style={
+		-{Latex[length=2.4mm]},
+		thick,
+		draw=iiiepeBlue
+	},
+	notaProc/.style={
+		draw=iiiepeOrange,
+		rounded corners=2mm,
+		fill=iiiepeOrange!12,
+		align=center,
+		inner sep=4pt,
+		font=\scriptsize
+	},
+	decisionProc/.style={
+		diamond,
+		aspect=2.1,
+		draw=iiiepeBlue,
+		fill=iiiepeAqua!10,
+		align=center,
+		inner sep=2pt,
+		font=\scriptsize
+	}
+}
+
+\newcommand{\RutaOperacion}[4]{%
+\begin{tikzpicture}[node distance=6mm]
+	\node[cajaDato,visible on=<1->] (a) {#1};
+	\node[cajaOp, right=of a,visible on=<2->] (b) {#2};
+	\node[cajaOp, right=of b,visible on=<3->] (c) {#3};
+	\node[cajaRes, right=of c,visible on=<4->] (d) {#4};
+	\draw[flechaProc,visible on=<1->] (a) -- (b);
+	\draw[flechaProc,visible on=<2->] (b) -- (c);
+	\draw[flechaProc,visible on=<3->] (c) -- (d);
+\end{tikzpicture}%
+}
+
+\newcommand{\RutaOperacionCinco}[5]{%
+\begin{tikzpicture}[node distance=5.5mm]
+	\node[cajaDato,visible on=<1->] (a) {#1};
+	\node[cajaOp, right=of a,visible on=<2->] (b) {#2};
+	\node[cajaOp, right=of b,visible on=<3->] (c) {#3};
+	\node[cajaOp, right=of c,visible on=<4->] (d) {#4};
+	\node[cajaRes, right=of d,visible on=<5->] (e) {#5};
+	\draw[flechaProc,visible on=<1->] (a) -- (b);
+	\draw[flechaProc,visible on=<2->] (b) -- (c);
+	\draw[flechaProc,visible on=<3->] (c) -- (d);
+	\draw[flechaProc,visible on=<4->] (d) -- (e);
+\end{tikzpicture}%
+}
+
+\newcommand{\GridProducto}[5]{%
+\begin{tikzpicture}[scale=#5]
+	\pgfmathsetmacro{\yini}{#4-#3}
+	\pgfmathsetmacro{\xmitad}{#1/2}
+	\pgfmathsetmacro{\ymitad}{#4-#3/2}
+	\pgfmathsetmacro{\yarriba}{#4+0.22}
+	\pgfmathsetmacro{\xderecha}{#2+0.18}
+	\draw[step=1,gray!55,very thin,visible on=<1->] (0,0) grid (#2,#4);
+	\draw[thick,visible on=<1->] (0,0) rectangle (#2,#4);
+	\fill[iiiepeBlue!18,visible on=<2->] (0,0) rectangle (#1,#4);
+	\fill[iiiepeOrange!18,visible on=<3->] (0,\yini) rectangle (#2,#4);
+	\fill[iiiepeAqua!55,visible on=<4->] (0,\yini) rectangle (#1,#4);
+	\draw[decorate,decoration={brace,mirror,raise=3pt},visible on=<5->] (0,-0.08) -- (#2,-0.08)
+	node[midway,below=6pt] {\scriptsize #2 partes};
+	\draw[decorate,decoration={brace,raise=3pt},visible on=<5->] (-0.08,0) -- (-0.08,#4)
+	node[midway,left=6pt] {\scriptsize #4 partes};
+	\node[above,visible on=<5->] at (\xmitad,\yarriba) {\scriptsize #1 tomadas};
+	\node[right,visible on=<5->] at (\xderecha,\ymitad) {\scriptsize #3 tomadas};
+\end{tikzpicture}%
+}
+
+\newcommand{\sectionframe}[1]{%
+	\begin{frame}[plain]
+		\begin{tikzpicture}[remember picture,overlay]
+			\fill[iiiepeNavy] (current page.south west) rectangle (current page.north east);
+			\IfFileExists{\iiiepedots}{%
+				\node[opacity=0.13,anchor=east] at ([xshift=0.8cm]current page.east) {\includegraphics[height=9.4cm]{\iiiepedots}};
+			}{}
+			\fill[iiiepeAqua] ([xshift=0.85cm,yshift=2.1cm]current page.south west) rectangle ([xshift=1.05cm,yshift=6.3cm]current page.south west);
+			\fill[iiiepeOrange] ([xshift=1.15cm,yshift=2.1cm]current page.south west) rectangle ([xshift=1.35cm,yshift=5.35cm]current page.south west);
+		\end{tikzpicture}
+		\vspace{1.8cm}
+		\hspace{1.25cm}
+		\begin{minipage}{0.72\paperwidth}
+			{\color{white}\Huge\bfseries #1}\\[0.25cm]
+			{\color{white!75}Sesion 03 -- Multiplicacion y division con fracciones}
+		\end{minipage}
+	\end{frame}
+}
+
+% Separadores automaticos desactivados para evitar diapositivas repetitivas.
+% \AtBeginSection[]{\sectionframe{\insertsectionhead}}
+
+\title[\coursecode]{Multiplicacion y division con fracciones}
+\subtitle{Sesion 03 -- \coursename}
+\author[\studentshort]{\texorpdfstring{\studentname\\\footnotesize Matricula: \studentid\\\href{mailto:\studentemail}{\studentemail}}{\studentname, Matricula: \studentid}}
+\institute[\institutionname]{\institutionlongname\\\coursecode\ -- \coursegroup}
+\date[\courseperiod]{\texorpdfstring{\institutionplace\\\courseperiod}{\institutionplace, \courseperiod}}
+
+\begin{document}
+
+\begin{frame}[plain]
+	\begin{tikzpicture}[remember picture,overlay]
+		\fill[iiiepeNavy] (current page.south west) rectangle ([xshift=0.56\paperwidth]current page.north west);
+		\fill[iiiepeBlue] ([xshift=0.56\paperwidth]current page.south west) rectangle (current page.north east);
+		\IfFileExists{\iiiepedots}{%
+			\node[opacity=0.16,anchor=south east] at ([xshift=0.8cm,yshift=-0.3cm]current page.south east) {\includegraphics[height=8.6cm]{\iiiepedots}};
+		}{}
+		\node[anchor=north west] at ([xshift=0.55cm,yshift=-0.45cm]current page.north west) {\localLogo{\iiiepelogo}};
+		\fill[iiiepeOrange] ([xshift=0.58\paperwidth,yshift=1.20cm]current page.south west) rectangle ([xshift=0.92\paperwidth,yshift=1.34cm]current page.south west);
+		\fill[iiiepeAqua] ([xshift=0.58\paperwidth,yshift=0.90cm]current page.south west) rectangle ([xshift=0.82\paperwidth,yshift=1.04cm]current page.south west);
+	\end{tikzpicture}
+
+	\vspace{1.62cm}
+	\begin{minipage}{0.52\paperwidth}
+		{\color{white}\Huge\bfseries Multiplicacion y division\\ con fracciones}\\[0.25cm]
+		{\color{white!86}\large PFM02 -- Sesion 03}\\[0.35cm]
+		{\color{iiiepeOrange}\rule{0.82\linewidth}{1.3pt}}\\[0.45cm]
+		{\color{white}\studentname}\\
+		{\color{white!80}\footnotesize Matricula: \studentid}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.35\paperwidth}
+		\raggedleft
+		{\color{white}\Large\bfseries \institutionname}\\[0.18cm]
+		{\color{white!82}\footnotesize \programname}\\[0.5cm]
+		{\color{white}\small \coursecode\ -- \coursename}\\
+		{\color{white!78}\small \courseperiod}\\[0.5cm]
+		{\color{white!74}\footnotesize \institutionplace}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{Contenido}
+	\tableofcontents
+\end{frame}
+
+\section{Actividad}
+
+\begin{frame}{Ficha de la sesion}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Contenido}
+				Extension del significado de las operaciones y sus relaciones inversas.
+			\end{block}
+			\begin{block}{PDA}
+				Reconoce el significado de las cuatro operaciones basicas y sus relaciones inversas al resolver problemas con numeros con signo.
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Aprendizaje de la secuencia}
+				Resolver situaciones problematicas que involucran multiplicar o dividir fracciones.
+			\end{block}
+			\begin{block}{Producto}
+				Procedimientos visibles, ejercicios resueltos, situaciones en contexto, evaluacion y retroalimentacion.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Criterios incorporados}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Estructura de secuencia}
+				La actividad se organiza en cinco fases: antecedente, explicacion, practica, evaluacion y retroalimentacion.
+			\end{block}
+			\begin{block}{Evidencia esperada}
+				No basta la respuesta: debe observarse estrategia, procedimiento, simplificacion e interpretacion.
+			\end{block}
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Criterios de evaluacion}
+				Actividades diarias, exposicion de secuencia, escrito reflexivo y exposicion final requieren claridad matematica y reflexion.
+			\end{block}
+			\begin{block}{Decision didactica}
+				Cada ejemplo muestra que se hace, por que funciona y como se comprueba.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Ruta pedagogica de la actividad}
+	\begin{columns}[T]
+		\begin{column}{0.20\textwidth}
+			\begin{block}{1. Recuperar}
+				Signos, simplificacion, enteros y mixtas.
+			\end{block}
+		\end{column}
+		\begin{column}{0.20\textwidth}
+			\begin{block}{2. Interpretar}
+				Producto: parte de parte. Division: cuantos caben.
+			\end{block}
+		\end{column}
+		\begin{column}{0.20\textwidth}
+			\begin{block}{3. Transformar}
+				Usar impropias y reciproco cuando hay division.
+			\end{block}
+		\end{column}
+		\begin{column}{0.20\textwidth}
+			\begin{block}{4. Operar}
+				Multiplicar numeradores y denominadores.
+			\end{block}
+		\end{column}
+		\begin{column}{0.20\textwidth}
+			\begin{block}{5. Verificar}
+				Simplificar, revisar signo y unidad.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{0.25cm}
+	\begin{block}{Criterio docente}
+		El procedimiento es suficiente cuando se entiende que multiplicar por una fraccion puede reducir y dividir entre una fraccion pregunta cuantas veces cabe esa parte.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Mapa general de multiplicacion y division}
+	\centering
+	\resizebox{0.96\textwidth}{!}{%
+	\begin{tikzpicture}[node distance=0.85cm and 1.0cm]
+		\node[cajaDato] (inicio) {Fracciones};
+		\node[decisionProc, right=of inicio] (op) {operacion};
+		\node[cajaOp, above right=0.45cm and 1.0cm of op] (mult) {multiplicacion:\\parte de parte};
+		\node[cajaOp, below right=0.45cm and 1.0cm of op] (divi) {division:\\usar reciproco};
+		\node[cajaOp, right=2.7cm of op] (convertir) {convertir\\mixtas o enteros};
+		\node[cajaOp, right=of convertir] (operar) {multiplicar\\factores};
+		\node[cajaOp, right=of operar] (simplificar) {simplificar};
+		\node[cajaRes, right=of simplificar] (verificar) {interpretar\\unidad};
+		\draw[flechaProc] (inicio) -- (op);
+		\draw[flechaProc] (op) -- (mult);
+		\draw[flechaProc] (op) -- (divi);
+		\draw[flechaProc] (mult) -- (convertir);
+		\draw[flechaProc] (divi) -- (convertir);
+		\draw[flechaProc] (convertir) -- (operar);
+		\draw[flechaProc] (operar) -- (simplificar);
+		\draw[flechaProc] (simplificar) -- (verificar);
+	\end{tikzpicture}
+	}
+	\vspace{0.25cm}
+	\begin{block}{Lectura del mapa}
+		La division se transforma en multiplicacion por el reciproco; despues ambos procedimientos se revisan con simplificacion, signo y sentido contextual.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Idea clave: parte de parte y cuantos caben}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Multiplicar fracciones}
+				Una fraccion de otra fraccion se representa como superposicion de partes.
+				\[
+					\frac{a}{b}\times\frac{c}{d}=\frac{ac}{bd}
+				\]
+			\end{block}
+			\centering
+			\GridProducto{3}{4}{5}{9}{0.30}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Dividir fracciones}
+				Dividir entre una fraccion equivale a contar grupos de ese tamano.
+				\[
+					\frac{a}{b}\signodiv\frac{c}{d}=\frac{a}{b}\times\frac{d}{c}
+				\]
+			\end{block}
+			\centering
+			\resizebox{0.98\linewidth}{!}{%
+			\RutaOperacion
+			{$\frac{7}{8}\signodiv\frac{1}{6}$}
+			{$\frac{7}{8}\times\frac{6}{1}$}
+			{$\frac{42}{8}$}
+			{$5\,\frac14$}}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\section{Procedimientos}
+
+\begin{frame}{Procedimiento 1: multiplicar fracciones}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Regla operativa}
+				\[
+					\frac{3}{4}\times\frac{5}{9}
+					=\frac{3\cdot5}{4\cdot9}
+					=\frac{15}{36}
+					=\frac{5}{12}
+				\]
+			\end{block}
+			\begin{block}{Sentido}
+				Se toma una parte de otra parte. La zona doblemente sombreada representa el numerador del producto.
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\centering
+			\GridProducto{3}{4}{5}{9}{0.39}
+			\vspace{0.15cm}
+			\[
+				\text{interseccion}=\frac{3\cdot5}{4\cdot9}
+			\]
+		\end{column}
+	\end{columns}
+	\begin{block}{Verificacion}
+		Despues de multiplicar se revisa si numerador y denominador comparten divisor comun.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Procedimiento 2: enteros y fracciones mixtas}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Convertir antes de operar}
+				\[
+					3\,\frac25=\frac{3(5)+2}{5}=\frac{17}{5},
+					\qquad
+					1\,\frac17=\frac{8}{7}
+				\]
+			\end{block}
+			\begin{block}{Entero como fraccion}
+				\[
+					7\times\frac{3}{11}
+					=\frac{7}{1}\times\frac{3}{11}
+					=\frac{21}{11}
+				\]
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Ejemplo completo}
+				\[
+					3\,\frac25\times1\,\frac17
+					=\frac{17}{5}\times\frac{8}{7}
+					=\frac{136}{35}
+					=3\,\frac{31}{35}
+				\]
+			\end{block}
+			\centering
+			\resizebox{0.98\linewidth}{!}{%
+			\RutaOperacionCinco
+			{$3\,\frac25$}
+			{$\frac{17}{5}$}
+			{$\frac{17}{5}\times\frac87$}
+			{$\frac{136}{35}$}
+			{$3\,\frac{31}{35}$}}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Procedimiento 3: dividir por el reciproco}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Regla}
+				\[
+					\frac{a}{b}\signodiv\frac{c}{d}
+					=
+					\frac{a}{b}\times\frac{d}{c}
+				\]
+			\end{block}
+			\begin{block}{Ejemplo}
+				\[
+					\frac{7}{8}\signodiv\frac{1}{6}
+					=
+					\frac{7}{8}\times\frac{6}{1}
+					=
+					\frac{42}{8}
+					=
+					5\,\frac14
+				\]
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{alertblock}{Cuidado}
+				Solo se invierte la segunda fraccion: la que indica el tamano del grupo o divisor.
+			\end{alertblock}
+			\centering
+			\resizebox{0.95\linewidth}{!}{%
+			\RutaOperacion
+			{$\frac{7}{8}\signodiv\frac{1}{6}$}
+			{$\frac{7}{8}\times\frac{6}{1}$}
+			{$\frac{42}{8}$}
+			{$5\,\frac14$}}
+		\end{column}
+	\end{columns}
+	\begin{block}{Sentido del atajo}
+		Dividir por $\frac{1}{6}$ significa preguntar cuantas sextas partes caben en $\frac{7}{8}$.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Procedimiento 4: signos y simplificacion}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Signos}
+				\[
+					(+)(+)=+,
+					\qquad (+)(-)=-,
+					\qquad (-)(-) = +
+				\]
+			\end{block}
+			\begin{block}{Ejemplo con signo}
+				\[
+					-\frac{4}{7}\times\frac{3}{6}
+					=
+					-\frac{12}{42}
+					=
+					-\frac{2}{7}
+				\]
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Simplificar}
+				\[
+					\frac{5}{6}\signodiv\frac{2}{3}
+					=
+					\frac{5}{6}\times\frac{3}{2}
+					=
+					\frac{15}{12}
+					=
+					\frac54
+				\]
+			\end{block}
+			\begin{alertblock}{Revision obligatoria}
+				El resultado debe quedar simplificado y, si conviene, expresado como mixta para interpretarlo.
+			\end{alertblock}
+		\end{column}
+	\end{columns}
+	\centering
+	\resizebox{0.66\textwidth}{!}{%
+	\RutaOperacion
+	{$\frac{15}{12}$}
+	{MCD $3$}
+	{$\frac{15/3}{12/3}$}
+	{$\frac54=1\,\frac14$}}
+	\accentbar
+\end{frame}
+
+\section{Ejercicios resueltos}
+
+\begin{frame}{Ejercicios: multiplicaciones basicas}
+	\small
+	La tabla presenta varios incisos resueltos; el esquema posterior muestra la ruta comun que se aplica al bloque.
+	\vspace{0.1cm}
+	\begin{block}{Multiplicar factores y simplificar}
+		\centering
+		\begin{tabular}{p{0.21\textwidth}p{0.43\textwidth}p{0.19\textwidth}}
+			\toprule
+			\textbf{Inciso} & \textbf{Operacion} & \textbf{Resultado}\\
+			\midrule
+			a & $\frac34\times\frac59=\frac{15}{36}=\frac{5}{12}$ & $\frac{5}{12}$\\
+			b & $\frac49\cdot\frac{12}{7}=\frac{48}{63}=\frac{16}{21}$ & $\frac{16}{21}$\\
+			c & $\frac{23}{25}\cdot\frac65=\frac{138}{125}$ & $1\,\frac{13}{125}$\\
+			\bottomrule
+		\end{tabular}
+	\end{block}
+	\centering
+	\resizebox{0.82\linewidth}{!}{%
+	\RutaOperacion
+	{$\frac34\times\frac59$}
+	{$\frac{3\cdot5}{4\cdot9}$}
+	{$\frac{15}{36}$}
+	{$\frac{5}{12}$}}
+	\begin{block}{Criterio}
+		El producto no siempre es mayor que los factores: si se multiplica por una fraccion menor que $1$, la cantidad puede disminuir.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Ejercicios: mixtas y factores}
+	\small
+	La tabla presenta varios incisos resueltos; el esquema posterior muestra la ruta comun que se aplica al bloque.
+	\begin{columns}[T]
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Resultados}
+				\scriptsize
+				\setlength{\tabcolsep}{2pt}
+				\begin{tabular}{@{}p{0.16\linewidth}p{0.56\linewidth}p{0.20\linewidth}@{}}
+					\toprule
+					\textbf{Inciso} & \textbf{Operacion} & \textbf{Resultado}\\
+					\midrule
+					d & $7\times\frac{3}{11}=\frac{21}{11}$ & $1\,\frac{10}{11}$\\
+					e & $3\,\frac25\times1\,\frac17=\frac{17}{5}\times\frac87$ & $3\,\frac{31}{35}$\\
+					f & $\frac34\times\frac25\times\frac69=\frac{36}{180}$ & $\frac15$\\
+					\bottomrule
+				\end{tabular}
+			\end{block}
+		\end{column}
+		\begin{column}{0.41\textwidth}
+			\centering
+			\resizebox{0.92\linewidth}{!}{%
+			\RutaOperacionCinco
+			{$3\,\frac25$}
+			{$\frac{17}{5}$}
+			{$\frac{17}{5}\times\frac87$}
+			{$\frac{136}{35}$}
+			{$3\,\frac{31}{35}$}}
+			\vspace{0.15cm}
+			\begin{alertblock}{Cuidado}
+				Convierte la mixta completa antes de operar.
+			\end{alertblock}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Ejercicios: divisiones por reciproco I}
+	\small
+	La tabla presenta varios incisos resueltos; el esquema posterior muestra la ruta comun que se aplica al bloque.
+	\begin{block}{Cambiar division por multiplicacion}
+		\centering
+		\begin{tabular}{p{0.18\textwidth}p{0.48\textwidth}p{0.18\textwidth}}
+			\toprule
+			\textbf{Inciso} & \textbf{Operacion} & \textbf{Resultado}\\
+			\midrule
+			a & $\frac78\signodiv\frac16=\frac78\times\frac61=\frac{42}{8}$ & $5\,\frac14$\\
+			b & $\frac57\signodiv\frac13=\frac57\times\frac31=\frac{15}{7}$ & $2\,\frac17$\\
+			c & $\frac27\signodiv\frac67=\frac27\times\frac76=\frac{14}{42}$ & $\frac13$\\
+			\bottomrule
+		\end{tabular}
+	\end{block}
+	\centering
+	\resizebox{0.72\textwidth}{!}{%
+	\RutaOperacion
+	{$\frac78\signodiv\frac16$}
+	{$\frac78\times\frac61$}
+	{$\frac{42}{8}$}
+	{$5\,\frac14$}}
+	\vspace{0.2cm}
+	\begin{block}{Revision}
+		En division, invertir la primera fraccion cambia el problema; solo se invierte el divisor.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Ejercicios: divisiones con mixtas y simplificacion}
+	\small
+	La tabla presenta varios incisos resueltos; el esquema posterior muestra la ruta comun que se aplica al bloque.
+	\begin{block}{Convertir, usar reciproco, simplificar}
+		\centering
+		\scriptsize
+		\begin{tabular}{p{0.15\textwidth}p{0.55\textwidth}p{0.16\textwidth}}
+			\toprule
+			\textbf{Inciso} & \textbf{Operacion} & \textbf{Resultado}\\
+			\midrule
+			d & $1\,\frac27\signodiv2\,\frac58=\frac97\signodiv\frac{21}{8}=\frac97\times\frac8{21}$ & $\frac{24}{49}$\\
+			e & $\frac56\signodiv\frac23=\frac56\times\frac32=\frac{15}{12}$ & $1\,\frac14$\\
+			f & $\frac34\signodiv\frac25=\frac34\times\frac52$ & $1\,\frac78$\\
+			g & $\frac89\signodiv\frac32=\frac89\times\frac23$ & $\frac{16}{27}$\\
+			\bottomrule
+		\end{tabular}
+	\end{block}
+	\centering
+	\resizebox{0.74\textwidth}{!}{%
+	\RutaOperacionCinco
+	{$1\,\frac27\signodiv2\,\frac58$}
+	{$\frac97\signodiv\frac{21}{8}$}
+	{$\frac97\times\frac8{21}$}
+	{$\frac{72}{147}$}
+	{$\frac{24}{49}$}}
+	\accentbar
+\end{frame}
+
+\section{Situaciones}
+
+\begin{frame}{Situaciones: multiplicar una parte}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{02b Tela}
+				Usar la mitad de $\frac34$ m$^2$:
+				\[
+					\frac12\times\frac34=\frac38.
+				\]
+			\end{block}
+			\begin{block}{03 Deuda}
+				\[
+					\frac34(132)=99,
+					\qquad
+					\frac23(99)=66,
+					\qquad
+					99-66=33.
+				\]
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{10 Queso}
+				\[
+					\frac34\times4\,\frac23
+					=
+					\frac34\times\frac{14}{3}
+					=
+					\frac{42}{12}=\frac72.
+				\]
+			\end{block}
+			\centering
+			\GridProducto{3}{4}{1}{2}{0.62}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Situaciones: dividir entre una medida}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{04 Varillas}
+				\[
+					4\,\frac34\signodiv\frac14
+					=
+					\frac{19}{4}\times\frac41=19.
+				\]
+			\end{block}
+			\begin{block}{08 Botellas}
+				\[
+					32\,\frac15\signodiv1\,\frac25
+					=
+					\frac{161}{5}\signodiv\frac75=23.
+				\]
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{09 Vasos}
+				\[
+					11\,\frac14\signodiv\frac34
+					=
+					\frac{45}{4}\times\frac43=15.
+				\]
+			\end{block}
+			\begin{block}{11 Bolsas}
+				\[
+					1\,\frac12\signodiv\frac{1}{10}
+					=
+					\frac32\times10=15.
+				\]
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Situaciones: area y medida faltante}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.46\textwidth}
+			\begin{block}{06 Ancho de mesa}
+				\[
+					ancho=\frac{area}{largo}
+					=
+					\frac{21}{4}\signodiv\frac72
+					=
+					\frac32\text{ m}.
+				\]
+			\end{block}
+			\begin{block}{07 Piso de bano}
+				\[
+					A=\frac{13}{7}\times\frac45
+					=
+					\frac{52}{35}
+					=
+					1\,\frac{17}{35}.
+				\]
+			\end{block}
+		\end{column}
+		\begin{column}{0.50\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.78]
+				\draw[thick, fill=iiiepeAqua!12] (0,0) rectangle (4.6,2.0);
+				\draw[Latex-Latex] (0,-0.35) -- (4.6,-0.35) node[midway,below] {$3\,\frac12$ m};
+				\draw[Latex-Latex] (-0.35,0) -- (-0.35,2.0) node[midway,left] {$?$};
+				\node at (2.3,1.0) {$A=\frac{21}{4}\text{ m}^2$};
+				\node[cajaOp, text width=3.8cm] at (7.4,1.0) {
+					$\frac{21}{4}\signodiv\frac72$\\[1mm]
+					$=\frac{21}{4}\times\frac27$\\[1mm]
+					$=\frac32$ m
+				};
+			\end{tikzpicture}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Situaciones: procesos encadenados}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{01 Desperdicio alimentario}
+				\[
+					8\times\frac13=\frac83=2\,\frac23,
+					\qquad
+					\frac12\times\frac13=\frac16.
+				\]
+			\end{block}
+			\begin{block}{02a Jugos}
+				\[
+					3\times12\times\frac34=36\times\frac34=27\text{ L}.
+				\]
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{05 Finca}
+				\[
+					\frac25(20)=8,
+					\qquad
+					20-8=12,
+					\qquad
+					\frac34(12)=9.
+				\]
+				Quedan $3$ hectareas.
+			\end{block}
+			\centering
+			\resizebox{0.95\linewidth}{!}{%
+			\RutaOperacionCinco
+			{$20$ ha}
+			{vender\\$8$}
+			{restan\\$12$}
+			{alquilar\\$9$}
+			{quedan\\$3$}}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\section{Evaluacion}
+
+\begin{frame}{Autoevaluacion y evidencia}
+	\scriptsize
+	\begin{tabular}{p{0.58\textwidth}ccc}
+		\toprule
+		\textbf{Indicador} & \textbf{3} & \textbf{2} & \textbf{1}\\
+		\midrule
+		Realizo multiplicaciones de fracciones usando el algoritmo aprendido. & $\square$ & $\square$ & $\square$\\[0.16cm]
+		Realizo divisiones de fracciones usando el reciproco de forma correcta. & $\square$ & $\square$ & $\square$\\[0.16cm]
+		Identifico la operacion necesaria para resolver un problema. & $\square$ & $\square$ & $\square$\\[0.16cm]
+		Convierto mixtas, simplifico e interpreto la respuesta contextual. & $\square$ & $\square$ & $\square$\\
+		\bottomrule
+	\end{tabular}
+	\vspace{0.25cm}
+	\begin{block}{Cierre metacognitivo}
+		Que error debo vigilar: invertir la fraccion equivocada, no convertir mixtas, olvidar unidades o creer que todo producto aumenta.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Retroalimentacion}
+	\small
+	\begin{columns}[T]
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Errores frecuentes}
+				\begin{itemize}
+					\item Multiplicar sin simplificar el resultado.
+					\item Dividir sin usar el reciproco.
+					\item Invertir la primera fraccion en vez del divisor.
+					\item Tratar la mixta como entero separado.
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\begin{block}{Preguntas de revision}
+				\begin{itemize}
+					\item Estoy tomando una parte de otra parte?
+					\item Estoy preguntando cuantos grupos caben?
+					\item Converti enteros y mixtas a fracciones?
+					\item La unidad final responde al contexto?
+				\end{itemize}
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\section{Cierre}
+
+\begin{frame}{Conclusiones}
+	\begin{enumerate}
+		\item Multiplicar fracciones significa tomar una parte de otra parte.
+		\item Dividir entre una fraccion significa contar cuantos grupos de ese tamano caben en una cantidad.
+		\item El reciproco no es una regla aislada: expresa la relacion inversa entre multiplicacion y division.
+		\item Las respuestas deben simplificarse, conservar signo correcto e interpretarse con unidad.
+		\item La actividad sigue las cinco fases institucionales: antecedente, explicacion, practica, evaluacion y retroalimentacion.
+	\end{enumerate}
+	\accentbar
+\end{frame}
+
+\begin{frame}[plain]
+	\begin{tikzpicture}[remember picture,overlay]
+		\fill[iiiepeNavy] (current page.south west) rectangle (current page.north east);
+		\IfFileExists{\iiiepedots}{%
+			\node[opacity=0.13,anchor=south east] at ([xshift=0.8cm,yshift=-0.2cm]current page.south east) {\includegraphics[height=9cm]{\iiiepedots}};
+		}{}
+		\node[anchor=north west] at ([xshift=0.55cm,yshift=-0.45cm]current page.north west) {\localLogo{\iiiepelogo}};
+	\end{tikzpicture}
+	\vspace{2.2cm}
+	\begin{center}
+		{\color{white}\Huge\bfseries Gracias}\\[0.55cm]
+		{\color{white}\Large \studentname}\\[0.18cm]
+		{\color{white!78}\footnotesize Matricula \studentid\ -- \studentemail}\\[0.45cm]
+		{\color{iiiepeOrange}\rule{0.36\paperwidth}{1.4pt}}\\[0.35cm]
+		{\color{white!72}\footnotesize \institutionname\ -- \coursecode\ -- \coursename}
+	\end{center}
+\end{frame}
+
+\end{document}
+

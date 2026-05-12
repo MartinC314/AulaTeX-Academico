@@ -1,0 +1,262 @@
+
+% CREACIÓN DEL DOCUMENTO
+\documentclass[
+	spanish, % Idioma: spanish, english, etc.
+	letterpaper, oneside
+]{article}
+
+% INFORMACIÓN DEL DOCUMENTO
+\def\documenttitle {Cuadro comparativo entre Derecho Natural y Positivismo Jurídico}
+\def\documentsubtitle {Actividad 2 - Filosofía del Derecho}
+\def\documentsubject {Actividad Semana 3}
+
+\def\documentauthor {Martín Jonathan de la Cruz}
+\def\coursename {Filosofía del Derecho}
+\def\coursecode {030}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Filosofía del Derecho}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de México}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\authortable {
+	\begin{tabular}{ll}
+		\textbf{Alumno:}
+		& \begin{tabular}[t]{l}
+			 Martín Jonathan de la Cruz \\	
+		\end{tabular} \\
+		Matrícula: &   ES2611202040 \\
+		
+		\textit{Profesor:}
+		& \begin{tabular}[t]{l}
+			Reyna Patricia \\ González Rodríguez
+		\end{tabular} \\
+		% Auxiliar:
+		% & \begin{tabular}[t]{l}
+		% 	Auxiliar 1
+		% \end{tabular} \\
+		% Ayudantes:
+		% & \begin{tabular}[t]{l}
+		% 	Ayudante 1 \\
+		% 	Ayudante 2
+		% \end{tabular} \\
+		% \multicolumn{2}{l}{Ayudante de laboratorio: Ayudante 1} \\
+		& \\
+		\multicolumn{2}{l}{Fecha de realización: \today} \\
+		% \multicolumn{2}{l}{Fecha de entrega: \today} \\
+		\multicolumn{2}{l}{\universitylocation}
+	\end{tabular}
+}
+
+% IMPORTACIÓN DEL TEMPLATE
+\input{template}
+
+% ==============================================================================
+% MARCA DE AGUA EN PORTADA
+% - Se aplica solo a la portada porque usa \AddToShipoutPictureBG*.
+% - Para apagarla en alguna actividad: \def\coverwatermarkenabled {false}
+% - Usar opacidad baja para que no compita con titulo, datos ni logotipo.
+% ==============================================================================
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+	\ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+		\AddToShipoutPictureBG*{%
+			\begin{tikzpicture}[remember picture,overlay]
+				\node[
+					opacity=\coverwatermarkopacity,
+					inner sep=0pt,
+					xshift=\coverwatermarkxshift,
+					yshift=\coverwatermarkyshift
+				] at (current page.center) {%
+					\includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+				};
+			\end{tikzpicture}%
+		}%
+	}{}%
+}
+
+% FORMATO SOLICITADO
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% CITAS EN FORMATO AUTOR-AÑO (APA)
+\setcitestyle{authoryear,open={(},close={)}}
+
+% INICIO DE PÁGINAS
+\begin{document}
+
+% PORTADA
+\insertcoverwatermark
+\templatePortrait
+
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\templatePagecfg
+\onehalfspacing
+
+% RESUMEN O ABSTRACT
+\begin{abstractd}
+	\textbf{Objetivo:} Comparar el Derecho Natural y el Positivismo Jurídico a partir de sus fundamentos, principios, características y formas de aplicación, con el fin de valorar cómo ambas corrientes ayudan a interpretar el derecho mexicano contemporáneo.
+
+	\textbf{Postura de análisis:} La comparación no se plantea como una revisión neutral de teorías, sino como un problema de decisión jurídica: cómo controlar el poder sin perder justicia y cómo defender la justicia sin destruir la seguridad jurídica. La postura central es que el Derecho Natural cumple una función crítica frente a normas injustas, mientras que el Positivismo Jurídico cumple una función operativa al convertir principios en procedimientos, competencias y consecuencias institucionales.
+\end{abstractd}
+
+% TABLA DE CONTENIDOS - ÍNDICE
+\templateIndex
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+\section{Introducción}
+
+El Derecho no sólo ordena conductas: organiza poder, define límites y distribuye consecuencias. Por eso, el debate entre Derecho Natural y Positivismo Jurídico no es una discusión abstracta, sino una forma de responder dos preguntas decisivas para la práctica jurídica: qué hace válida a una norma y qué permite juzgarla como justa. La primera pregunta mira hacia la autoridad, las fuentes y los procedimientos; la segunda mira hacia la dignidad humana, la justicia y los costos que una decisión legal puede imponer sobre personas concretas \citep{ruizrodriguezFilosofiaDerecho2009}.
+
+El Derecho Natural sostiene que existen principios racionales, morales o derivados de la naturaleza humana que sirven como criterio para valorar el derecho positivo. Desde esta postura, la ley no agota el fenómeno jurídico: una norma puede haber sido creada formalmente por la autoridad y, sin embargo, ser criticable si contradice exigencias básicas de justicia, dignidad o bien común. En su versión contemporánea, esta corriente ya no depende solamente de formulaciones religiosas o metafísicas, sino también de la defensa de bienes humanos básicos, derechos fundamentales y razones prácticas que orientan la vida social \citep{finnisEstudiosTeoriaDerecho2017,ruizrodriguezFilosofiaDerecho2009}.
+
+El Positivismo Jurídico, por su parte, insiste en que la ciencia jurídica debe identificar el derecho vigente a partir de hechos institucionales: autoridad competente, procedimiento, jerarquía normativa, eficacia y criterios reconocidos por el propio sistema. Esta corriente permite ordenar la práctica jurídica, reducir la arbitrariedad y distinguir entre la pregunta por la validez de una norma y la pregunta por su justicia. Sin embargo, cuando se interpreta de modo rígido, corre el riesgo de separar excesivamente el derecho de la moral y de convertir la legalidad formal en el único criterio de corrección \citep{rojas-gonzalezFilosofiaDerecho2018,ruizrodriguezFilosofiaDerecho2009}.
+
+En el contexto mexicano, esta discusión tiene aplicación directa. Instrumentos como el juicio de amparo, la Ley General de Víctimas y los marcos de protección frente a la violencia contra las mujeres muestran que el derecho positivo no sólo organiza competencias, procedimientos y recursos, sino que también incorpora valores constitucionales y de derechos humanos como dignidad, igualdad, reparación integral, debida diligencia y acceso efectivo a la justicia \citep{LeyAmparoReglamentaria,LeyGeneralVictimas,franzoniacevedoLeyGeneralAcceso2017}. Desde esta perspectiva, el problema central no consiste en repetir qué dice cada corriente, sino en identificar qué función cumple dentro del sistema jurídico y qué costo genera cuando se usa sin criterio crítico.
+
+\section{Comparación entre Derecho Natural y Positivismo Jurídico}
+
+\textbf{Criterio de comparación}
+
+El cuadro se organiza a partir de criterios que permiten comparar de forma razonada ambas corrientes: concepto, autores principales, fundamento, principios, características y ejemplos de aplicación. Además, en la parte final se integran teorías contemporáneas que muestran cómo el debate actual ya no se reduce a la oposición simple entre iusnaturalismo y positivismo, sino que incorpora enfoques sobre derechos humanos, argumentación, principios constitucionales, justicia distributiva, género y reparación de víctimas \citep{rojas-gonzalezFilosofiaDerecho2018,lovonManualPracticoFilosofia2020}.
+
+La lectura que guía el cuadro parte de una idea central: el Derecho no puede reducirse ni a moral abstracta ni a pura formalidad normativa. La primera puede quedarse sin mecanismos de cumplimiento; la segunda puede olvidar que una norma válida también puede producir injusticia. Por eso, el cuadro no sólo recopila datos, sino que reconstruye la función de cada corriente, el problema que resuelve y el punto en el que necesita ser corregida por la otra.
+
+\clearpage
+\pagestyle{empty}
+\begin{landscape}
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.35}
+\begin{longtable}{@{}p{0.18\linewidth}p{0.39\linewidth}p{0.39\linewidth}@{}}
+\caption{Cuadro comparativo entre Derecho Natural y Positivismo Jurídico}\label{tab:cuadro-natural-positivismo}\\
+\toprule
+\textbf{Elemento} & \textbf{Derecho Natural} & \textbf{Positivismo Jurídico} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Elemento} & \textbf{Derecho Natural} & \textbf{Positivismo Jurídico} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{Continúa en la siguiente página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+
+Concepto &
+Corriente que afirma la existencia de criterios de justicia anteriores o superiores a la ley positiva. El derecho no se reduce al mandato estatal, porque también debe responder a la dignidad de la persona, al bien común y a exigencias racionales de justicia \citep{finnisEstudiosTeoriaDerecho2017,ruizrodriguezFilosofiaDerecho2009}. &
+Corriente que identifica el derecho por su origen institucional: normas creadas, reconocidas o aplicadas por autoridades competentes conforme a procedimientos válidos. La validez jurídica depende del sistema normativo, no necesariamente de la justicia moral de cada norma \citep{rojas-gonzalezFilosofiaDerecho2018,ruizrodriguezFilosofiaDerecho2009}. \\
+\midrule
+
+Autores principales &
+Sus antecedentes clásicos se encuentran en Aristóteles y Tomás de Aquino; en la modernidad aparecen Grocio y otros racionalistas; en el debate contemporáneo destacan Finnis, Hervada y autores que recuperan la razón práctica, la persona y los derechos humanos como fundamentos de juridicidad \citep{finnisEstudiosTeoriaDerecho2017}. &
+Entre sus representantes se ubican Austin, Kelsen, Hart, Bobbio y García Máynez. Kelsen expresa la versión normativista y formalista; Hart introduce la regla de reconocimiento y la textura abierta; Bobbio permite distinguir usos metodológicos, teóricos e ideológicos del positivismo \citep{ruizrodriguezFilosofiaDerecho2009}. \\
+\midrule
+
+Fundamento &
+Se fundamenta en la naturaleza humana, la razón práctica, la dignidad personal, los bienes humanos básicos y la idea de que la justicia opera como criterio para valorar las normas. La ley positiva debe desarrollar o concretar esos principios, no negarlos \citep{finnisEstudiosTeoriaDerecho2017,LeyGeneralVictimas}. &
+Se fundamenta en la positividad: autoridad competente, procedimiento legislativo o jurisdiccional, jerarquía normativa, eficacia general del sistema y criterios internos de reconocimiento. El derecho se estudia como orden normativo identificable, aunque después pueda ser evaluado moral o políticamente \citep{rojas-gonzalezFilosofiaDerecho2018,ruizrodriguezFilosofiaDerecho2009}. \\
+\midrule
+
+Principios &
+Justicia, dignidad humana, bien común, igualdad, razonabilidad, protección de la persona, derechos humanos y prohibición de la arbitrariedad. Estos principios funcionan como límite crítico frente a leyes injustas o prácticas estatales que lesionan bienes básicos \citep{finnisEstudiosTeoriaDerecho2017,LeyGeneralVictimas}. &
+Legalidad, seguridad jurídica, validez, competencia, jerarquía normativa, certeza, coercibilidad y separación metodológica entre derecho y moral. Estos principios permiten saber qué normas integran el sistema y cómo deben aplicarse institucionalmente \citep{LeyAmparoReglamentaria,ruizrodriguezFilosofiaDerecho2009}. \\
+\midrule
+
+Características &
+Tiene una función crítica: permite juzgar el derecho vigente desde criterios de justicia. Es universalista en sus pretensiones, pero requiere concreción histórica mediante normas positivas. Reconoce que los derechos necesitan instituciones para hacerse exigibles \citep{finnisEstudiosTeoriaDerecho2017,ruizrodriguezFilosofiaDerecho2009}. &
+Tiene una función ordenadora: describe el derecho vigente y ofrece criterios de validez. Favorece la previsibilidad, la estabilidad institucional y la técnica jurídica. Su riesgo aparece cuando convierte la legalidad formal en un criterio suficiente, sin revisar impactos de injusticia o exclusión \citep{rojas-gonzalezFilosofiaDerecho2018}. \\
+\midrule
+
+Relación entre derecho y moral &
+Sostiene una conexión necesaria: el derecho debe orientarse por la justicia, aunque la forma concreta de esa justicia se determine históricamente. La moral jurídica no sustituye a la ley, pero la evalúa y le da sentido racional \citep{finnisEstudiosTeoriaDerecho2017,ruizrodriguezFilosofiaDerecho2009}. &
+Distingue conceptualmente el derecho que es del derecho que debe ser. En versiones rígidas separa validez y moralidad; en versiones incluyentes admite que un sistema puede incorporar principios morales como criterios jurídicos cuando la Constitución o la práctica institucional los reconocen \citep{rojas-gonzalezFilosofiaDerecho2018}. \\
+\midrule
+
+Interpretación y decisión judicial &
+El juez no sólo subsume hechos en normas: también interpreta conforme a principios, bienes jurídicos y justicia del caso. Esto es especialmente relevante cuando una regla positiva es insuficiente para proteger dignidad, igualdad o reparación \citep{LeyGeneralVictimas}. &
+La decisión judicial parte de reglas vigentes, competencia, procedimiento y precedentes. En casos difíciles, Hart admite zonas de textura abierta donde el juzgador debe ejercer discrecionalidad, pero dentro del marco institucional del sistema jurídico \citep{ruizrodriguezFilosofiaDerecho2009}. \\
+\midrule
+
+Ejemplo de aplicación &
+La Ley General de Víctimas expresa una lógica cercana al Derecho Natural al colocar la dignidad humana como base de los demás derechos, exigir trato como sujeto titular de derechos y reconocer reparación integral, verdad, justicia y garantías de no repetición \citep{LeyGeneralVictimas}. &
+La Ley de Amparo expresa una lógica positivista en sentido técnico: define objeto, vías, partes, interés jurídico o legítimo, plazos y procedimientos para controlar actos, omisiones y normas generales que vulneren derechos humanos \citep{LeyAmparoReglamentaria}. \\
+\midrule
+
+Aplicación en igualdad y género &
+La protección de mujeres, adolescentes y niñas frente a la violencia se apoya en la dignidad, la igualdad sustantiva, la no discriminación, la libertad y la universalidad de los derechos humanos; estos valores operan como razones de justicia frente a estructuras históricas de subordinación \citep{franzoniacevedoLeyGeneralAcceso2017}. &
+La misma protección requiere positivización: tipos de violencia, competencias, sistemas de coordinación, políticas públicas, medidas de protección, obligaciones de prevención, atención, investigación y sanción. Sin diseño normativo e institucional, el valor moral queda sin eficacia práctica \citep{franzoniacevedoLeyGeneralAcceso2017,LeyGeneralVictimas}. \\
+\midrule
+
+Valoración crítica &
+Su fortaleza es que impide identificar automáticamente ley y justicia. Su debilidad aparece cuando sus principios se formulan de modo demasiado abstracto o se invocan sin mediación institucional, pues pueden volverse ambiguos en sociedades plurales \citep{ruizrodriguezFilosofiaDerecho2009}. &
+Su fortaleza es la certeza: permite operar tribunales, procedimientos y competencias. Su debilidad es el formalismo: puede describir correctamente una norma injusta sin ofrecer, por sí solo, una razón suficiente para transformarla \citep{rojas-gonzalezFilosofiaDerecho2018}. \\
+\midrule
+
+\multicolumn{3}{@{}l@{}}{\textbf{Teorías contemporáneas de la Filosofía del Derecho}} \\
+\midrule
+
+Neoiusnaturalismo &
+Actualiza el Derecho Natural mediante la razón práctica, los bienes humanos básicos y la idea de que la ley debe favorecer formas razonables de vida en común. Finnis representa esta línea al reconstruir el iusnaturalismo con lenguaje filosófico contemporáneo \citep{finnisEstudiosTeoriaDerecho2017}. &
+Dialoga con el positivismo porque acepta la necesidad del derecho positivo, pero rechaza que la validez formal agote la pregunta jurídica. La norma necesita forma institucional, pero también debe poder justificarse racionalmente. \\
+\midrule
+
+Positivismo incluyente y analítico &
+Desde una lectura iusnaturalista, su aporte es reconocer que la moral puede ingresar al derecho cuando el propio sistema la incorpora, por ejemplo, mediante cláusulas constitucionales de derechos humanos \citep{rojas-gonzalezFilosofiaDerecho2018}. &
+Mantiene la identificación institucional del derecho, pero admite que los criterios de validez pueden incluir principios morales si la regla de reconocimiento o la Constitución los vuelven jurídicamente relevantes. Es una respuesta a la rigidez del positivismo excluyente \citep{rojas-gonzalezFilosofiaDerecho2018}. \\
+\midrule
+
+Principialismo constitucional &
+Se acerca al Derecho Natural al sostener que los principios no son simples consejos morales, sino razones jurídicas que orientan la decisión en casos difíciles, especialmente cuando están en juego dignidad, igualdad o libertad \citep{rojas-gonzalezFilosofiaDerecho2018}. &
+Se conecta con el positivismo porque esos principios operan dentro de una Constitución, leyes, precedentes y procedimientos. En México, el amparo muestra esa convergencia al proteger derechos humanos mediante un procedimiento formalmente regulado \citep{LeyAmparoReglamentaria}. \\
+\midrule
+
+Justicia como equidad &
+La teoría de Rawls recupera la prioridad de la justicia en las instituciones: los derechos y libertades básicas no deben sacrificarse por conveniencia mayoritaria. Esta idea refuerza la crítica iusnaturalista a leyes que lesionan la dignidad o la igualdad \citep{ruizrodriguezFilosofiaDerecho2009}. &
+Desde el positivismo, la justicia como equidad requiere traducirse en normas, procedimientos y políticas públicas. Su eficacia depende de que las instituciones incorporen criterios de imparcialidad, distribución de cargas y protección de libertades. \\
+\midrule
+
+Enfoques críticos, género y víctimas &
+Cuestionan la neutralidad aparente de la ley cuando reproduce desigualdad. Desde una lectura material de justicia, exigen observar daño, vulnerabilidad, discriminación estructural, reparación integral y dignidad de las personas afectadas \citep{LeyGeneralVictimas,franzoniacevedoLeyGeneralAcceso2017}. &
+Obligan al positivismo a mirar no sólo la existencia formal de la norma, sino su capacidad institucional para prevenir, investigar, sancionar y reparar. La técnica jurídica conserva importancia, pero debe evaluarse por su impacto real en el acceso a la justicia \citep{LeyGeneralVictimas}. \\
+
+\end{longtable}
+\endgroup
+\end{landscape}
+\pagestyle{fancy}
+
+\subsection{Análisis}
+
+La comparación muestra que ambas corrientes responden a necesidades distintas dentro del sistema jurídico. El Derecho Natural resulta indispensable cuando la ley positiva se vuelve insuficiente para proteger a la persona concreta, porque permite afirmar que la legalidad no basta si una norma vulnera la dignidad humana, desconoce derechos fundamentales o perpetúa desigualdades. Su función es crítica: obliga a preguntar quién soporta el costo de una decisión legal y si ese costo puede justificarse frente a la justicia. Esto se advierte con claridad en materias sensibles como víctimas, género, reparación integral y límites al poder público, donde el problema jurídico no es sólo aplicar una regla, sino evitar que el propio sistema reproduzca daño \citep{LeyGeneralVictimas,franzoniacevedoLeyGeneralAcceso2017}.
+
+El Positivismo Jurídico, en cambio, es necesario porque explica cómo opera el derecho como sistema: quién puede crear normas, qué procedimientos deben seguirse, qué autoridad decide, qué efectos produce una sentencia y cómo se garantizan seguridad jurídica y certeza. Su función es de control institucional: evita que cada persona sustituya el derecho vigente por su propia idea de justicia. Sin este componente, los principios podrían quedar como aspiraciones sin cauce operativo. El juicio de amparo ilustra este punto, porque convierte la protección de derechos humanos en un procedimiento con partes, reglas, plazos y efectos jurídicos definidos \citep{LeyAmparoReglamentaria}.
+
+La tensión más importante aparece cuando una norma formalmente válida produce consecuencias injustas. Frente a ese problema, la posición asumida en este trabajo es clara: la solución no consiste en abandonar la legalidad, sino en interpretarla desde principios constitucionales y derechos humanos. Las teorías contemporáneas ayudan a construir ese puente: el constitucionalismo incorpora principios; el positivismo incluyente reconoce criterios morales positivizados; las teorías de la argumentación distinguen reglas y principios; y los enfoques críticos obligan a revisar la eficacia real de las instituciones. Así, la Filosofía del Derecho contemporánea no elimina la oposición entre Derecho Natural y Positivismo Jurídico, pero la transforma en una herramienta de análisis para decidir con validez, justicia y responsabilidad institucional \citep{rojas-gonzalezFilosofiaDerecho2018,ruizrodriguezFilosofiaDerecho2009}.
+
+\section{Conclusión}
+
+El Derecho Natural y el Positivismo Jurídico representan dos modos necesarios de comprender el derecho. La conclusión principal es que la formación jurídica debe conservar una doble exigencia: obedecer el orden normativo válido y, al mismo tiempo, examinar si ese orden protege de manera real a la persona. El Derecho Natural recuerda que la ley debe orientarse por la justicia, la dignidad humana y el bien común; el Positivismo Jurídico permite identificar y aplicar el derecho vigente mediante criterios de validez, competencia y procedimiento. Una formación jurídica sólida no puede prescindir de ninguno: sin Derecho Natural, la legalidad puede volverse formalismo; sin Positivismo Jurídico, la justicia puede quedarse sin instrumentos efectivos de garantía \citep{finnisEstudiosTeoriaDerecho2017}.
+
+En México, esta relación se observa en la manera en que el ordenamiento positivo incorpora valores materiales. La Ley de Amparo no sólo establece un procedimiento, sino que protege derechos humanos frente a actos, omisiones y normas generales; la Ley General de Víctimas no sólo organiza autoridades, sino que parte de la dignidad humana, la buena fe, la debida diligencia y la reparación integral; y la legislación relacionada con el acceso de las mujeres a una vida libre de violencia muestra que la igualdad exige tanto principios como políticas públicas, tipos normativos y obligaciones institucionales \citep{LeyAmparoReglamentaria,LeyGeneralVictimas,franzoniacevedoLeyGeneralAcceso2017}.
+
+Por tanto, el cuadro comparativo permite concluir que la Filosofía del Derecho no es una reflexión abstracta separada de la práctica. Sus categorías sirven para interpretar normas, evaluar instituciones y argumentar soluciones jurídicas con dirección. Para la formación como abogado, la enseñanza principal es que no basta con saber qué dice la norma: también debe analizarse a quién protege, a quién excluye, qué daño evita, qué estructura sostiene y qué razones permiten defenderla públicamente. La tarea del jurista contemporáneo consiste en sostener ese equilibrio: respetar la legalidad y, al mismo tiempo, exigir que el derecho vigente realice de manera suficiente la dignidad, la igualdad, la libertad y la justicia que dice proteger \citep{ruizrodriguezFilosofiaDerecho2009,lovonManualPracticoFilosofia2020}.
+
+\bibliography{FilosofiaDerechoAct2}
+
+% FIN DEL DOCUMENTO
+\end{document}

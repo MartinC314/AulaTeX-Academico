@@ -1,0 +1,3145 @@
+BIBLIOTECA DE FILOSOFÍA DEL DERECHO
+
+     Carlos Alarcón Cabrera
+            (Director)
+
+Carlos Antonio Agurto Gonzáles
+Sonia Lidia Quequejana Mamani
+    Benigno Choque Cuenca
+  (Coordinadores Generales)
+                  RUDOLF LAUN
+Ex rector y profesor de la Universidad de Hamburgo
+
+
+
+
+          DERECHO Y MORAL
+
+
+
+
+              Edición al cuidado de
+        Carlos Antonio Agurto Gonzáles
+        Sonia Lidia Quequejana Mamani
+            Benigno Choque Cuenca
+                                 DERECHO Y MORAL
+
+
+
+
+     Título: DERECHO Y MORAL
+
+©    RUDOLF LAUN
+
+©    Ediciones Olejnik
+     Huérfanos 611, Santiago - Chile
+     E-mail: contacto@edicionesolejnik.com
+     Web site: http://www.edicionesolejnik.com
+
+Primera edición en Ediciones Olejnik: 2020
+
+ISBN: 978-956-392-911-9
+
+Diseño de Carátula: Ena Zuñiga
+Diagramación: Luis A. Sierra Cárdenas
+
+     Reservados todos los derechos. Ni la totalidad ni parte de este libro puede
+     reproducirse o transmitirse por ningún procedimiento electrónico ni mecánico,
+     incluyendo fotocopia, grabación magnética o cualquier almacenamiento de
+     información y sistema de recuperación, sin permiso expreso del editor.
+
+
+     Impreso en Argentina            2020      Printed in Argentina
+
+                                          6
+                                                    ÍNDICE
+
+
+
+
+                                               ÍNDICE
+                             «ÉTICA», MORAL Y DERECHO
+                                      JULIO DE ZAN
+
+1.     LOS DIFERENTES TIPOS DE DISCURSO PRÁCTICO .......                                                     9
+       1.1. Discurso pragmático ...........................................................                  9
+       1.2. Discurso «ético» ...................................................................            12
+       1.3. Discurso moral .....................................................................            17
+2.     LA DEBILIDAD DE LA MORAL .............................................                               22
+3.     LA MEDIACIÓN DE «ÉTICA», MORAL Y DERECHO .....                                                       27
+4.     RAZÓN PÚBLICA Y DISCURSO JURÍDICO-POLÍTICO ...                                                       29
+5.     EL «SÍ MISMO COMO OTRO» Y LA JUSTICIA ..................                                             43
+       BIBLIOGRAFÍA ............................................................................            49
+
+                                      DERECHO Y MORAL
+.........................................................................................................   59
+
+
+
+
+                                                       7
+DERECHO Y MORAL
+
+
+
+
+      8
+                                          ÍNDICE
+
+
+
+
+                 «ÉTICA», MORAL Y DERECHO
+
+1.     LOS DIFERENTES TIPOS DE DISCURSO PRÁCTICO
+      Podría decirse en sentido general que la Ética ha buscado siem-
+pre las respuestas a esta misma pregunta que se plantea el hombre en
+la perplejidad frente a diferentes alternativas de acción: ¿cómo debo
+comportarme; qué debo hacer? Pero estas preguntas mantienen toda-
+vía un significado muy impreciso mientras no se aclare cuál es el tipo
+de problemas prácticos que uno se plantea y bajo qué aspecto se los
+quiere resolver. Tres alternativas —por lo menos— se presentan para
+la razón práctica en su búsqueda de respuestas a las preguntas enun-
+ciadas: 1) bajo el aspecto de los resultados a lograr y de la adecuación
+de los medios al fin, 2) desde el punto de vista del hombre que es en sí
+bueno, o quiere serlo y desea ante todo obrar bien, cualesquiera sean
+los fines que se proponga y, 3) desde el punto de vista de lo correcto,
+o del deber de justicia en relación con las otras personas. Estos tres tipos
+de problemas son bien diferentes, requieren usos diversos de la propia
+razón práctica y dan lugar a otros tantos tipos de discurso, que son
+los que han privilegiado respectivamente los planteamientos
+consecuencialistas del empirismo, la ética aristotélica de la buena vida
+y de la virtud, y la reflexión de tipo kantiano sobre la igualdad y la
+reciprocidad (o la justicia) como criterio de la moralidad.1
+1.1. Discurso pragmático
+     Una primera clase de discursos prácticos que es preciso diferen-
+ciar son los que buscan aclarar y resolver problemas pragmáticos.
+1
+     Cf. J. Habermas, «Vom Pragmatischen, ethischen und moralischen Gebrauch der
+     praktischen Vernunft», en Erläuterungen zur Diskursethik, Fráncfort, 1991, 100-118;
+     hay trad. española: Aclaraciones a la ética del discurso, Madrid, 2000. En este punto
+     sigo en parte la exposición de Habermas en el citado trabajo. Las referencias
+     dentro del texto de este apartado sin otro dato que el número de página remiten a
+     la primera edición alemana del texto de Habermas.
+
+                                            9
+                              JULIO DE ZAN
+
+Los discursos pragmáticos, en los cuales buscamos esclarecer pro-
+blemas técnicos o estratégicos, son del mismo tipo y se ubican en el
+mismo nivel de discurso que los discursos teóricos, y su validez de-
+pende del saber empírico en el que se apoyan. Es claro que esta
+validez o verdad del discurso pragmático no depende además para
+nada del hecho de que el actor aplique o no sus indicaciones en la
+acción. Pero a su vez, este tipo de discurso tampoco influye directa-
+mente sobre las decisiones de la voluntad del actor, sino a través de
+sus fines y preferencias personales, las cuales quedan fuera de estos
+discursos pragmáticos.
+      Problemas pragmáticos se nos plantean en las situaciones en
+que tenemos que realizar la elección entre diversos fines posibles, o en-
+tre los medios para el logro del fin elegido. Así, por ejemplo, con más
+o menos frecuencia, según los casos, se les plantea a las personas el
+problema de qué hacer cuando no les alcanza el dinero para satisfa-
+cer ciertas necesidades, o para llevar a cabo determinados planes.
+Frente a este problema se puede presentar, según la posición social
+de la persona, un espectro más o menos amplio de vías o medios
+posibles para resolver la situación, por ejemplo: tomar un crédito,
+vender un bien, trabajar más duramente, o buscar otra actividad,
+etc. Pero al sopesar los compromisos o exigencias requeridas para
+obtener los medios, se vuelve a evaluar también, por lo general, si
+los planes o los fines propuestos guardan una proporción racional
+con la magnitud (o el costo) de los medios y el tiempo de trabajo que
+habría que invertir para lograrlos, es decir, puede cuestionarse tam-
+bién si vale la pena el esfuerzo que se requeriría para conseguir tales
+fines, y bajo este aspecto también los fines se vuelven problemáticos.
+     El tipo de problemas mencionado requiere un uso pragmático
+de la razón, el cual tiende a la determinación precisa de los datos
+empíricos que permiten una decisión racional. El resultado de un
+discurso pragmático de este tipo será entonces la recomendación de
+los medios más adecuados y más eficaces, del camino más seguro y
+más corto, o más económico, para alcanzar las metas o valores que
+uno desea realizar. «Se trata de la elección racional de los medios
+con respecto a fines ya dados, o de sopesar los fines posibles con
+relación a preferencias previamente aceptadas. Nuestra voluntad se
+encuentra ya fácticamente decidida por medio de los deseos y valo-
+res que tiene asumidos [...] Mientras la pregunta ‘¿qué debo hacer?’
+
+                                   10
+                        «ÉTICA», MORAL Y DERECHO
+
+se refiera a este tipo de tareas pragmáticas, lo que se requiere son
+observaciones, análisis de situación, confrontaciones y ponderación
+de las ventajas relativas que podemos obtener sobre la base de infor-
+maciones empíricas, desde el punto de vista de la eficiencia, o con
+arreglo a otras reglas de la teoría de las decisiones racionales. La
+reflexión práctica se mueve aquí en el horizonte de la racionalidad
+instrumental con arreglo a fines» (1991, p. 102).
+     Cuando los padres intentan aconsejar a los jóvenes, por ejem-
+plo, acerca de la elección de una carrera o de una profesión, el dis-
+curso se centra por lo general ya en primera instancia en torno a los
+diversos fines posibles: ¿qué estudiar: medicina o economía...?; o más
+bien dedicarse al comercio, buscar un empleo, etc... Lo que se eva-
+lúa en este nivel con respecto a los fines es su factibilidad en relación
+con los medios disponibles, o su costo y el posible rendimiento futu-
+ro. La cuestión del «significado final para la vida», o del valor (en el
+lenguaje de Max Scheler), no puede ser planteada ni resuelta en este
+nivel de problematización del uso pragmático de la razón práctica.
+En el discurso pragmático, los fines entran en juego como datos, con
+referencia a los cuales se seleccionan los medios y se evalúa su ade-
+cuación al fin. Kant hablaba en este contexto de imperativos técni-
+cos y pragmáticos que son reglas de destreza y sagacidad, o de pru-
+dencia. Estos son imperativos condicionados que expresan lo que
+«se debe» hacer en una determinada situación si uno desea lograr
+determinados fines. En este tipo de discurso práctico no se plantea
+ninguna cuestión acerca de la validez de los fines. Las cuestiones
+que se busca dilucidar no son cuestiones de validez sino conexiones
+de hechos. El utilitarismo y la teoría de las decisiones racionales han
+elaborado procedimientos muy refinados para resolver este tipo de
+problemas pragmáticos pero, como el empirismo, no conocen otro
+uso de la razón en el campo práctico más que éste: «como guía de
+nuestros juicios concernientes a causas y efectos» y como medio para
+corregir nuestras decisiones «cuando están basadas en una falsa
+suposición o elegimos medios insuficientes para el fin deseado» (D.
+Hume, Tratado de la naturaleza humana, L. III, parte III, sec. III, edic.
+esp. de F. Duque, pp. 614-622).
+     El uso pragmático de la razón práctica tiene un amplio campo
+también fuera de los problemas de la vida práctica, en el ámbito de
+la tecnología o de la ingeniería. Como ha escrito K. Popper: «La
+
+                                   11
+                              JULIO DE ZAN
+
+ingeniería social fragmentaria se parece a la ingeniería física en que
+considera que los fines están fuera del campo de la tecnología. Todo
+lo que la tecnología puede decir sobre fines es si son compatibles
+entre sí o realizables» (Karl Popper, La miseria del historicismo, 1973,
+p. 78). Tampoco Popper reconoce o admite otro tipo de ciencia so-
+cial más que esta «ingeniería social fragmentaria». «Pero, tan pron-
+to como es la validez de los propios fines la que se ha vuelto proble-
+mática, la misma pregunta, ‘qué debo hacer’, nos remite más allá de
+la racionalidad instrumental conforme a fines» (1991, pp. 102-103).
+1.2. Discurso «ético»
+     Los mismos casos que he dado como ejemplos llevan implica-
+das o presupuestas decisiones que van mucho más allá de las cues-
+tiones meramente pragmáticas (independientemente de que el suje-
+to se las plantee o no como problemas). El joven que busca orienta-
+ción para la elección de una profesión o una carrera, por ejemplo,
+no sabe a veces todavía con claridad qué es lo que quiere llegar a
+ser. Por eso en un primer nivel esta búsqueda tiene que tener en
+cuenta las propias inclinaciones y aptitudes, a partir de un mejor
+conocimiento de sí mismo, de qué es lo que más le gusta o despierta
+su interés y en qué tipo de actividad podría realizarse mejor. Pero si
+este examen se lleva más a fondo desemboca en la pregunta sobre
+qué forma de vida quisiéramos llevar, y en esto va implicado «qué
+persona es uno o quisiera ser». Es claro que no todas las elecciones
+triviales de la vida cotidiana conllevan este tipo de decisiones pro-
+fundas y no pueden ser llevadas por lo tanto hasta este nivel de
+reflexión en el que las razones pragmáticas se evalúan (implícita o
+explícitamente) en el horizonte de ese otro tipo de presuposiciones
+valorativas que se conectan con un determinado ethos, pero estas
+opciones axiológicas profundas están implicadas o se ven compro-
+metidas mucho más frecuentemente de lo que pensamos.
+     En los discursos «éticos», a diferencia del discurso pragmático,
+los fundamentos aportados por el discurso constituyen ya, por sí
+mismos, las motivaciones profundas para la determinación de las
+actitudes del sujeto y para sus decisiones existenciales. «No se pue-
+de realizar aquí ya, como en el caso de las recomendaciones técni-
+cas o estratégicas, una separación entre génesis y validez [...] En los
+discursos ético-existenciales razón y voluntad se determinan recí-
+
+                                  12
+                               «ÉTICA», MORAL Y DERECHO
+
+procamente, con lo cual el discurso no puede desligarse del contexto
+histórico vivido que tematiza» (p. 112). Aunque no se plantean aquí
+pretensiones de validez universal, se puede hablar también de «dis-
+curso» en el ámbito de la «ética», por cuanto no se trata de argu-
+mentos idiosincrásicos, sino que tienen que ser comunicables y aptos
+para el reconocimiento intersubjetivo en el marco del mundo de la
+vida, o del contexto sociocultural de pertenencia de los propios suje-
+tos, como lo pone de relieve especialmente el contextualismo.
+     Habermas alude en este punto a las preferencias «fuertes», como
+llama Charles Taylor a las valoraciones en las que se pone en juego
+la autocomprensión de una persona, las cuales se hallan entreteji-
+das con la propia identidad. Las opciones existenciales de este tipo,
+que se fundamentan en decisiones serias acerca de valores, son las
+que se consideran, desde Aristóteles, como las cuestiones de la vida
+buena. Los estándares valorativos que los individuos aplican en este
+nivel no pueden comprenderse como opciones de la conciencia mo-
+ral subjetiva o como preferencias puramente individuales, sino que
+se trata de estándares formados en el proceso de socialización den-
+tro de un grupo y de una tradición. Por eso la autocomprensión de
+la identidad exige la apropiación de la propia historia de vida, así
+como de las tradiciones y del contexto del mundo vital que han de-
+terminado el proceso de la formación de esta identidad. Bajo este
+aspecto, la filosofía práctica comprende un momento hermenéutico,
+el cual es necesario para esclarecer el sentido del bien que forma el
+núcleo de la ética. En este sentido, como ha escrito H. G. Gadamer,
+«la gran tradición de la filosofía práctica [de Aristóteles] sigue vi-
+viendo en una hermenéutica que se hace conciente de sus
+implicaciones filosóficas».2 Pero Habermas piensa que este esclareci-
+miento hermenéutico no puede ser valorativamente neutral, sino que
+debiera alcanzar el nivel de una «hermenéutica profunda» y capaz
+de autocrítica.3
+    En un libro anterior he presentado la concepción de la ética de
+Ricoeur (J. De Zan, 2002, pp. 67-88), quien renueva con método
+
+2
+    Cf. «Hermeneutik als praktische philosophie», en el libro de Gadamer, Vernunft
+    im Zeitalter der Wissenschaften, Francfort, 1976, pp. 78 y ss.
+3
+    Sobre este concepto de «hermenéutica racional» en Habermas, cf. nuestro trabajo
+    anterior: «Hermenéutica y Reconstrucción racional», en Mónica Cragnolini y R.
+    Maliandi (comps.), La razón y el minotauro, Almagesto, Buenos Aires, 1998, pp. 301-332.
+
+                                            13
+                                      JULIO DE ZAN
+
+hermenéutico el planteamiento de la ética teleológica del bien, pero
+también integra el punto de vista moral en el sentido kantiano. En
+este contexto he citado también a MacIntyre como otro definido re-
+presentante de la ética del bien en la filosofía contemporánea. En su
+libro Tras la virtud (Barcelona, 1987) realiza este autor un rastreo
+histórico de la tradición de la ética del bien en la cultura occidental,
+centrado en el concepto de virtud, pero al final de su investigación
+se ve precisado a confesar lo siguiente: «Una objeción que podría
+plantearse a la historia que hasta aquí he relatado es que, incluso
+dentro de la tradición relativamente coherente de pensamiento que
+he esbozado, hay demasiados conceptos de virtud diferentes e in-
+compatibles, y no puede encontrarse unidad alguna en el concepto
+ni en la realidad de la historia [...] Uno de los rasgos del concepto de
+virtud que hasta ahora han surgido es que siempre exige la acepta-
+ción de alguna interpretación previa de ciertos rasgos de la vida
+moral y social, en términos de la cual tiene que definirse y explicarse
+[...]» (A. MacIntyre, 1987, p. 232). Esta comprobación del propio
+MacIntyre tiene su raíz en la esencial historicidad y relatividad de la
+«ética», y se puede comprender como prueba de la dificultad quizás
+insalvable del propósito de este autor de reconstruir «un concepto
+unitario y central de las virtudes» mediante un método histórico.
+       Desde el punto de vista «ético», en cuanto diferente del punto de
+vista moral, podría considerarse como más coherente por lo tanto la
+posición de R. Rorty cuando, retomando la elaboración de Wilfred
+Sellars afirma que: la «ética» «toma la forma de una respuesta a la
+pregunta ‘¿quiénes somos nosotros, cómo llegamos a ser lo que so-
+mos y qué podríamos llegar a ser?’, antes que la forma de una res-
+puesta a la pregunta ‘¿qué reglas deben determinar mis acciones?’.
+En otras palabras: la filosofía moral toma la forma de una narración
+[...] antes que la de una búsqueda de principios generales [...] [Y en
+tal sentido] el significado central de ‘acción inmoral’ es: ‘el tipo de
+cosas que nosotros no hacemos’ [...] Si las hace uno de nosotros, o si
+las hace reiteradamente, esa persona deja de ser uno de nosotros...».4
+Esta reducción de lo moral a la perspectiva particularista del noso-
+tros podría evaluarse, sin embargo, desde las concepciones
+universalistas de la moral, como una regresión al nivel de la eticidad
+
+4
+    R. Rorty, Contingencia, ironía y solidaridad, Barcelona, 1991.
+
+                                            14
+                       «ÉTICA», MORAL Y DERECHO
+
+arcaica, etnocéntrica, premoderna, o al estadio de la conciencia moral
+convencional, en la terminología de Kohlberg.
+      Entre los autores contemporáneos que han reivindicado la «éti-
+ca» como alternativa excluyente de la moral, la posición
+contextualista de R. Rorty deja ver más claramente que ninguna
+otra lo que está aquí en juego. «Podemos mantener la noción de
+moralidad sólo en la medida en que dejemos de concebirla como
+la voz de la parte divina de nosotros mismos y, en lugar de ello, la
+concibamos como nuestra propia voz en cuanto miembros de una
+comunidad, hablantes de un lenguaje común. Puedo conservar la
+diferencia entre moralidad y prudencia [esta palabra está usada aquí
+con el sentido de sagacidad] si la concibo, no como la diferencia
+entre una apelación a lo incondicional y una apelación a lo condi-
+cionado, sino como la diferencia entre una apelación a los intere-
+ses de nuestra comunidad y la apelación a nuestros intereses pri-
+vados, posiblemente conflictivos. La importancia de este cambio está
+en que hace imposible formular la pregunta: ‘¿Es la nuestra una socie-
+dad moral?’ Hace imposible pensar que hay algo que se halla con
+respecto a mi comunidad en la misma relación en que mi comuni-
+dad se halla con respecto a mí: una comunidad más amplia llama-
+da ‘humanidad’ que tenga una naturaleza intrínseca» (R. Rorty,
+1991, p. 78). Dejando de lado el cuestionamiento del concepto de
+«naturaleza intrínseca» de la humanidad, con el que Rorty erra el
+tiro, porque no es lo que está planteado en la discusión poskantiana,
+es claro que, en rigor terminológico, el sentido de «moralidad» que
+Rorty acepta mantener no es la moralidad en el sentido de Kant,
+sino más bien la eticidad en el sentido antiguo de la «ética» de
+Aristóteles. Por eso me parece conceptualmente más preciso este
+otro texto del mismo Rorty: «Pienso que la distinción entre morali-
+dad y prudencia, y el propio término ‘moral’, no son ya muy úti-
+les. Mi pensamiento gira en torno de la habitual tesis antikantiana
+de que los ‘principios morales’ (el imperativo categórico, el princi-
+pio utilitario, etc.) tienen objeto sólo en la medida en que incorpo-
+ran una referencia tácita a todo un orden de instituciones, prácti-
+cas y léxicos de deliberación moral y política. Son alusiones o abre-
+viaturas de tales prácticas, no su justificación. En el mejor de los
+casos constituyen un auxilio pedagógico para la incorporación de
+estas prácticas» (1991, p. 77).
+
+                                 15
+                                     JULIO DE ZAN
+
+     Podría pensarse que la exclusión de la posibilidad de la pregun-
+ta por la moralidad de la propia sociedad, que he subrayado en el
+texto de Rorty, no es una consecuencia de su teoría sino quizás el
+interés inicial que lo orientaba desde el comienzo: el interés de pro-
+teger a un grupo social privilegiado, el de los blancos anglosajones
+de los Estados Unidos, frente a todo posible cuestionamiento moral
+interno o externo de sus intereses, o de sus privilegios. Pero no es
+esta la línea de discusión que quiero desarrollar aquí, sino la que se
+abre a partir de otra pregunta que Rorty ni siquiera se plantea y que
+también se hace imposible dentro de su posición. Esta otra pregunta
+la podríamos formular así: «¿Es moral la forma como yo o mi grupo
+social tratamos a los otros?». Podríamos preguntar todavía: «¿qué sig-
+nifica moral en esta relación?». La respuesta que quisiera evocar aquí
+es la que sostiene que el término «moral» alude precisamente a la
+relación con los otros, y significa o exige en esta relación fundamen-
+talmente: justicia y solidaridad.5 La «ética» en cambio permanece cen-
+trada en el nosotros, como hemos podido comprobarlo en las expre-
+siones de Rorty. Pero es naturalmente ciega y sorda frente a la inter-
+pelación del otro, que es la interpelación propiamente moral, por cuan-
+to la relación con el otro, en sentido fuerte (otras culturas, otras iden-
+tidades), no puede ya inscribirse en el contexto de «las instituciones,
+prácticas y léxicos» compartidos del nosotros. Frente a los extraños
+(a los que no pertenecen a nuestro propio círculo social y cultural),
+solamente quedaría en esta posición una conversación posible sobre
+ellos (entre los que participamos de la misma comunidad), pero no
+un verdadero diálogo con ellos; es decir, frente a los otros quedaría
+solamente la relación objetivante del observador externo, el uso prag-
+mático de la razón práctica, y de los procedimientos de la acción
+instrumental estratégica, o las relaciones de poder.
+     Esta no es una derivación maliciosa que extraigo aquí de las
+premisas de Rorty, sino que el propio autor la explicita con el na-
+tural desparpajo que caracteriza a su lenguaje: «A menos que to-
+dos estén bastante de acuerdo en qué se considera un ser humano
+
+5
+    Cf. J. Habermas, «Justicia y solidaridad», en: K.-O. Apel, A. Cortina, J. De Zany, D.
+    Michelini, Ética comunicativa y democracia, Crítica, Barcelona, 1991; en el mismo
+    volumen, cf. también: J. De Zan, «Significación moral de la democracia», pp. 297-
+    320; en la misma línea puede verse el libro posterior de J. Habermas, Die Einbeziehung
+    des Anderen, Fráncfort, 1996 (La inclusión del otro, Madrid, 1999).
+
+                                           16
+                               «ÉTICA», MORAL Y DERECHO
+
+decente y qué no, no se puede tener una trasnochada Gemeinschaft.
+Pero se puede tener una sociedad civil de tipo democrático bur-
+gués. Todo lo que se necesita es la capacidad de controlar nuestros
+sentimientos cuando una persona radicalmente diferente se pre-
+senta en el ayuntamiento, en la verdulería o en el bazar. Cuando
+esto sucede, lo que hay que hacer es sonreír, hacer el mejor trato
+posible y, tras un esforzado regateo, retirarnos a nuestro club. Allí
+nos sentiremos reconfortados por la compañía de nuestros
+partenaires morales».6
+1.3. Discurso moral
+      Las cuestiones pragmáticas referentes a los medios más eficaces
+para el logro de determinados fines se plantean en el marco de la
+relación sujeto-objeto, desde la perspectiva egocéntrica de los pro-
+pios sujetos (individuales o colectivos) de la acción; en esta perspec-
+tiva los otros se tienen en cuenta solamente como medios, o como
+condiciones objetivas, cuyos intereses y posibles reacciones hay que
+tener en cuenta para el desarrollo de los planes de acción de cada
+uno en orden a la consecución de los propios fines. En los juegos de
+interacción estratégica los actores toman sus decisiones en base al
+criterio de sus propios intereses, como egoístas autointeresados. La
+regulación de la conflictividad siempre latente bajo tales presupues-
+tos, la limitación de los procedimientos estratégicos permitidos en
+estos juegos de interacción, y el criterio para la exclusión de los me-
+dios que son moralmente inaceptables, requieren un cambio de pers-
+pectiva. «Sin un radical cambio de perspectiva y de actitud, el con-
+flicto interpersonal no puede ser ni siquiera percibido por los parti-
+cipantes en cuanto problema moral [...] La pregunta ‘qué debo hacer’
+cambia de sentido una vez más tan pronto mis acciones afectan los
+intereses de los otros y conducen a situaciones de conflicto que de-
+ben ser reguladas con imparcialidad, es decir, desde el punto de
+vista moral (de la justicia)» (p. 105).
+    Los discursos práctico-morales exigen, a diferencia de los dis-
+cursos «éticos», la ruptura con todos los presupuestos y valores
+sobreentendidos desde los cuales acostumbramos a juzgar las co-
+sas de la vida en nuestro círculo social y en la cultura a la cual
+
+6
+    R. Rorty, Objetividad, relativismo y verdad, Barcelona, 1996, p. 283.
+
+
+                                            17
+                                      JULIO DE ZAN
+
+pertenecemos. Y como estas formas de ver y valorar las cosas son
+constitutivas del mundo vivido y están indisolublemente entreteji-
+das con nuestra propia identidad, lo que se nos exige con esto es,
+en cierto modo, una toma de distancia con respecto a nosotros
+mismos. Esta difícil exigencia se plantea como una condición ne-
+cesaria para alcanzar el punto de vista moral universal de la jus-
+ticia como imparcialidad. A dicho objetivo apunta la hipótesis
+rawlsiana de la «posición originaria» y el velo de ignorancia. 7
+Pero esta construcción teórica de la reflexión filosófica no ha roto
+aún con el solipsismo metódico y sigue siendo insatisfactoria. «So-
+lamente bajo las presuposiciones comunicativas de un discurso
+ampliado, o abierto universalmente, en el cual puedan tomar parte
+todos los posibles afectados (por las normas o formas de acción
+que se intentan justificar), se constituye la más elevada
+intersubjetividad del entrecruzamiento de las perspectivas de cada
+uno con las de todos» (p. 113).
+     De lo que se trata ahora, en el discurso práctico-moral, es de la
+fundamentación de normas que generan deberes y obligaciones re-
+cíprocas entre los individuos y los grupos, de tal manera que sean
+susceptibles de obtener el reconocimiento por parte de todos los afec-
+tados, como justas y aptas para la coordinación de la interacción y
+para la regulación imparcial de los posibles conflictos interpersonales
+y sociales. Tan pronto como examinamos nuestras máximas desde
+el punto de vista de la compatibilidad con las máximas de los otros
+nos aproximamos a la manera propiamente moral de considerar las
+cosas. (Las máximas son, sin embargo, un terreno en el que se en-
+cuentran la «ética» y la moral, por cuanto ellas pueden ser conside-
+radas desde ambos puntos de vista. «En términos generales las máxi-
+mas forman las unidades elementales de una red de prácticas o cos-
+tumbres en las cuales se configura la identidad y el proyecto de vida
+de una persona o de un grupo [...] En tal sentido Kant tenía en
+vistas sobre todo las máximas de la naciente sociedad burguesa dife-
+renciada en sus estamentos profesionales» (pp. 106-107). Lo cual
+muestra que la moral no puede nunca separarse de la «ética», aun-
+que pretenda hacerlo, como era el caso del propio Kant, pero no ya
+de Habermas o de Rawls.
+
+7
+    John Rawls, Una teoría de la justicia, (1971), México, 1979.
+
+                                            18
+                       «ÉTICA», MORAL Y DERECHO
+
+      Retornando a nuestro ejemplo del comienzo de este apartado,
+uno puede encontrar que la manera menos costosa de resolver un
+problema de dinero desde el punto de vista pragmático puede ser
+absteniéndose del pago de algunos impuestos mediante el sencillo
+procedimiento de no hacer figurar en los papeles ciertas operacio-
+nes. Desde el punto de vista «ético» podría considerarse que la máxi-
+ma que me autorizaría a realizar este tipo de maniobras fraudulen-
+tas no es buena para mí por cuanto no se corresponde con la imagen
+de la persona honesta que yo quisiera ser y como quisiera ser reco-
+nocido en mi comunidad. Podría considerarse también, todavía sin
+trascender el punto de vista «ético», que esta forma de conducta no
+es buena para los intereses de la comunidad o que es perjudicial para
+el bien común. Pero cuando los directivos de una empresa deliberan
+por ejemplo sobre las ventajas de la evasión o de otras estrategias de
+dudosa moralidad de sus sucursales en un país extranjero lejano,
+estos argumentos «éticos» revelan toda su insuficiencia, porque ta-
+les conductas se podrían justificar desde este punto de vista por los
+beneficios para la comunidad de la empresa y del país de pertenen-
+cia de quienes toman esas decisiones. Para responder desde el punto
+de vista moral a esta otra clase de problemas sería preciso preguntar
+a todos «si podrían aceptar que en una situación como la mía (o
+como la nuestra) cada cual actuara conforme a esta misma máxima
+de conducta», porque solamente puede ser justa, es decir moral, una
+máxima que sea pública y valga para todos igual. Este criterio plan-
+tea la exigencia de imparcialidad en el juicio moral, que se deriva de
+la igualdad de las personas y de la reciprocidad de sus derechos y
+obligaciones. «Solamente una máxima con aptitud de
+universalizabilidad desde la perspectiva de todos los afectados (es
+decir, de todos los que pudieren hallarse en situaciones semejantes),
+vale como una norma que puede obtener aceptación universal y, en
+cuanto tal, merece reconocimiento, es decir, es moralmente obligato-
+ria [...] Solamente el sentido moral de este tipo de mandamientos se
+puede interpretar como un deber que ya no depende ni de los fines
+y preferencias subjetivas, ni siquiera del fin absoluto para mí de lo-
+grar el bien o la plena autorrealización de la vida» (p. 108).
+     Tampoco el punto de vista «ético» alcanza a plantearse esta
+otra clase de problemas en toda su amplitud o proyección universal
+que implica tratar a los otros, a todos los seres humanos como igua-
+
+                                 19
+                                    JULIO DE ZAN
+
+les, es decir, como personas autónomas y como fines en sí. Las cues-
+tiones éticas se orientan en otra dirección y no exigen como tales
+todavía una ruptura con la perspectiva egocéntrica o etnocéntrica,
+que en Aristóteles estaba ligada a los que eran ciudadanos de la
+polis (helenos, varones, propietarios).
+     De este contextualismo etnocéntrico de la «ética» se desprende
+por primera vez, en un campo no filosófico, el mensaje de la religión
+cristiana. En la filosofía se encuentra claramente planteado sobre
+todo en la Ilustración moderna, y en especial a través del universa-
+lismo de la moral kantiana con la formulación del principio de la
+moralidad como principio de universalizabilidad de las máximas.
+Pero Kant pretendió expulsar de la filosofía moral los otros dos usos
+de la razón práctica, como formas de la razón impura, ligada a los
+impulsos, deseos e intereses y a las contingencias fenoménicas. El
+conflicto entre la moral y la «ética», que había sido ya uno de los
+temas más profundos de la tragedia griega, y que había cobrado en
+la figura de Sócrates su primera víctima filosófica, no podía ser re-
+suelto por Kant en el marco del paradigma de la filosofía de la con-
+ciencia, que es el paradigma de la modernidad. Por eso Kant se ubi-
+ca en el extremo opuesto, desplazando la filosofía práctica del cam-
+po de la «ética» enraizada en la polis, a la subjetividad de la con-
+ciencia y de la razón pura. Si los antiguos habían condenado la moral
+en la figura de Sócrates, la Ilustración y Kant condenarán la «ética»
+en la figura de Aristóteles. Esta incapacidad sistemática de pensar y
+comprender el «mundo ético» intersubjetivo es lo que había entrevis-
+to ya la crítica de Hegel a la moralidad kantiana. Para encontrar el
+camino de la resolución de este conflicto se requería un cambio de
+paradigma filosófico como el que se ha operado con el giro pragmá-
+tico de la filosofía contemporánea.8
+     El punto de vista moral presupone la posibilidad de trascender
+mediante el discurso el contexto de las prácticas, las instituciones y
+el lenguaje que conforman el ethos del grupo de pertenencia. «Tiene
+que haber una base común sobre la cual es posible la comprensión
+entre las culturas, comunidades religiosas, paradigmas y formas de
+vida que son extranjeras las unas para las otras. Es decir, tiene que
+
+8
+    Cf. J. De Zan, «Pragmática del lenguaje y racionalidad comunicativa», en Stromata,
+    XLVI, Buenos Aires, 1988, pp. 105-137.
+
+                                         20
+                               «ÉTICA», MORAL Y DERECHO
+
+ser posible una traducción entre los diferentes lenguajes valorativos
+[...] Los lenguajes tienen que ser porosos los unos para los otros, y
+no pueden estar de tal manera trabados en un contexto monádico
+cerrado e imposible de sobrepasar desde dentro, que los nativos y
+socializados en ese contexto queden aprisionados en él» (p. 208). En
+esto ve Habermas, con J. Rawls, la diferencia entre las comprensio-
+nes del mundo tradicionales de tipo fundamentalistas, rígidamente
+dogmáticas, y las comprensiones del mundo que han alcanzado un
+grado de reflexividad compatible con la conciencia moderna. Las
+modernas comprensiones del mundo se diferencian por la aptitud
+para asumir reflexivamente la comprensión de sí mismas como pro-
+puestas alternativas que han de convivir (y competir) con otras dife-
+rentes, en el mismo universo de pretensiones de validez. La
+reflexividad de este saber mediante el cual las diferentes culturas,
+sus interpretaciones del mundo y sus sistemas de valores se sitúan a
+sí mismas en relación con las otras en cuanto diferentes, o la com-
+prensión de «sí mismo como otro» (en la bella expresión de P.
+Ricoeur), presupone que ellas pueden confrontarse y, eventualmen-
+te, aprender las unas de las otras, porque no son universos cerrados,
+inconmensurables, intraducibles y absolutamente incomunicables,
+como quieren ciertos contextualismos.
+     El propio Rorty ha criticado a Lyotard cuando éste pretende
+apoyarse en Wittgenstein para sostener que «no existe una unidad
+del lenguaje sino más bien islas de lenguaje, cada una de ellas regi-
+da por un sistema de reglas intraducible al de los demás».9 No po-
+dríamos hablar siquiera de lenguaje con respecto a una práctica ex-
+traña y enteramente ajena a nosotros, frente a la cual hubiéramos
+abandonado «toda esperanza de saber cómo sería participar en ella».
+En este sentido, siguiendo a Davidson, sostiene Rorty que «la noción
+de un lenguaje intraducible al nuestro carece de significado» (R.
+Rorty, 1996, 290). Como explica Gadamer, la traductibilidad es
+definitoria de nuestro concepto de lo que es un lenguaje. El proble-
+ma de Rorty es su manera de entender la comprensión y la traduc-
+ción como el aprendizaje de una práctica, o «la adquisición de una
+habilidad» (1996, p. 291), con lo cual parecen confundirse dos cosas
+tan diferentes como el aprender a hablar y el problema hermenéutico
+
+9
+    J.-Fr. Lyotard, Tombeau de Vintelectuel, París, 1984, p. 61.
+
+                                            21
+                                      JULIO DE ZAN
+
+de la comprensión y de la búsqueda del entendimiento con los
+hablantes de otra lengua. No obstante su propósito de reemplazar
+la epistemología por la hermenéutica, Rorty vuelve a anular el espa-
+cio propio del problema hermenéutico en la medida en que, según
+su concepción, «el fracaso en encontrar un único gran código co-
+mún en el que escribir un manual universal de traducción», nos deja
+en la alternativa de «la necesidad de aprender constantemente nue-
+vos lenguajes» (R. Rorty, 1996, p. 294). Con esto queda eliminado el
+locus propio de la hermenéutica, ese intersticio entre la pertenencia
+y la extrañeza, como decía Gadamer, en el que se despliega el diálo-
+go con el otro. Este espacio propio de la hermenéutica, entre la iden-
+tidad y la alteridad, es también el mismo espacio de la imparcialidad
+del discurso moral y de la justicia.
+2.     LA DEBILIDAD DE LA MORAL
+     Ya la axiología clásica de M. Scheler y de N. Hartmann, en su
+intento de fundamentar la ética en valores objetivos y universales,
+había señalado que la apertura intencional del espíritu a este hori-
+zonte de valores no ha de comprenderse como un impulso ontológico,
+como una fuerza real capaz de mover a la acción y vencer toda
+resistencia para orientar la vida práctica en el sentido de los valores
+superiores. «El espíritu carece originariamente de todo poderío, fuer-
+za, actividad eficaz [...]».10 Es solamente apertura y disponibilidad
+para la verdad, para el bien y los valores; pura intencionalidad lógi-
+ca y axiológica que descubre un sentido y señala una dirección obje-
+tiva, pero no posee por sí mismo la energía real para mover las co-
+sas. «N. Hartmann ha expresado con mucha exactitud esta idea,
+que ya había definido yo en mi Ética; las categorías superiores del
+ser y del valor son por naturaleza las más débiles [...] originariamen-
+te lo inferior es poderoso, mientras que lo superior es impotente»
+(Scheler, 1964, pp. 87-88).11
+    Los discursos morales (ya sea que tematicen la posible
+fundamentación de normas o la aplicación de las normas adecuadas a
+cada situación) son «un negocio meramente cognitivo», advierte
+Habermas, y no ofrecen por lo tanto ninguna compensación para la
+10
+     M. Scheler, El puesto del hombre en el cosmos, Buenos Aires 1964, p. 78.
+11
+     Cf. J. De Zan, «El saber y los valores en la filosofía de Max Scheler», en Stromata,
+     XXXV, n° 1-2, Buenos Aires 1979, pp. 19-60.
+
+                                           22
+                        «ÉTICA», MORAL Y DERECHO
+
+desconexión del juicio moral con respecto a las motivaciones que
+mueven a la acción, a la fuerza de las pasiones y de los impulsos
+vitales que ellos mismos exigen poner fuera de juego en la delibera-
+ción, como condición de la imparcialidad. La validez de los manda-
+mientos morales es independiente del hecho de que los propios suje-
+tos logren reunir la fuerza necesaria para cumplir lo que ellos mis-
+mos tienen que reconocer como lo correcto. Pero la voluntad llega a
+ser verdaderamente autónoma en la medida en que obra efectiva-
+mente conforme a la razón y a los principios morales porque única-
+mente entonces obedece sólo a su propia ley. Esta manera de vincu-
+lar recíprocamente la autonomía de la voluntad, la racionalidad y el
+deber moral es característica de la ética kantiana. Esto no quiere
+decir, sin embargo, que los juicios morales sean capaces de producir
+por sí mismos un obrar efectivamente autónomo. Podría decirse in-
+cluso que Kant había confundido en cierto modo voluntad autóno-
+ma con voluntad autosuficiente (u omnipotente). Y es así como pudo
+pensar que era posible prescindir en la ética de las motivaciones
+empíricas, los intereses y los sentimientos del sujeto.
+      Podría pensarse que la exigencia de un punto de vista impar-
+cial, que pretende trascender la subjetividad de la perspectiva de los
+participantes en el discurso, equivale a poner a la filosofía moral en
+la misma actitud de tercera persona, objetivante y pretendidamente
+neutral del saber científico. Cabría preguntarse entonces si es posi-
+ble en esta materia la pretendida objetividad de un observador ex-
+terno, y además, si esta actitud no cierra más bien todo acceso a la
+comprensión de las pretensiones de validez del mundo vivido, que
+es lo que se trata de comprender, de justificar o discutir en el discur-
+so moral. Podemos estar aquí, por cierto, enteramente de acuerdo
+con estas objeciones. No es conforme al modelo de la relación suje-
+to-objeto que es posible comprender y tematizar la pretensión de
+validez moral, puesto que esta se plantea solamente en la relación
+sujeto-cosujeto de la comunicación y la interacción. El punto de vista
+moral no puede interpretarse, ni en el sentido del principio abstracto
+de una moral fundada en la reflexión trascendental de la pura ra-
+zón al estilo kantiano, ni en la perspectiva del observador externo y
+de la actitud objetivante de las ciencias positivas. El juicio moral no
+puede ser nunca tampoco un juicio en el sentido del proceso judicial
+que presupone la existencia de un juez independiente, que no es
+
+                                  23
+                              JULIO DE ZAN
+
+parte, sino aquel ante quien se desarrolla el proceso. En las cuestio-
+nes morales, que por definición afectan a todo hombre, el sujeto que
+juzga está siempre lógicamente involucrado en cuanto sujeto moral,
+y no puede haber juez independiente, ni un tribunal de la razón
+pura, situados por encima de las partes. Esta situación se aclara es-
+pecialmente en el marco teórico del concepto de la racionalidad
+comunicativa, la cual se diferencia de la razón práctica, tal como fue
+concebida en la filosofía moderna, por el hecho de que ella no se
+entiende ya como el atributo o la facultad de un sujeto: ni del sujeto
+individual empírico, ni de un problemático sujeto trascendental, ni
+de algún macrosujeto de la historia (como fue pensado por Hegel y
+por Marx). La racionalidad comunicativa se constituye solamente
+entre los sujetos, en el medio o el ámbito del entendimiento
+intersubjetivo, a través de la cual se teje la trama de la interacción
+comunicativa del mundo de la vida (el Lebenswelt, en el sentido de la
+tradición fenomenológica y hermenéutica). Este horizonte de com-
+prensión es el lugar originario de la racionalidad comunicativa, a partir
+del cual se reconstruyen las reglas y las condiciones de validez del
+discurso, tanto del discurso teórico, como del discurso moral. No es
+a partir del discurso de la ciencia o de la filosofía que se establecen
+las condiciones de validez o de racionalidad que se habrán de impo-
+ner al mundo de la vida, sino precisamente a la inversa.
+     En este contexto teórico filosófico se puede comprender ahora
+mejor la conexión intrínseca de la moral con la «ética», que Kant y
+la tradición racionalista habían desconectado, sin borrar de nuevo
+con esto la profunda diferencia entre ambas. Esta relación no se puede
+comprender ahora según el modo de una regulación externa de la
+vida «ética» por un ordenamiento formal de tipo jurídico, porque
+los principios morales se explicitan a partir de la reconstrucción de
+la forma y las condiciones de sentido y validez de la propia
+interacción comunicativa del mundo de la vida, y la fuerza
+motivacional de los valores del ethos vivido se transmite, de alguna
+manera, a los principios universales de la moral, porque el discurso
+moral no es nada más que «la continuación de la acción comunicativa
+con otros medios». En este sentido, la ética discursiva de Apel y de
+Habermas no se expone a las críticas que ha merecido la teoría de la
+justicia de Rawls, por ejemplo, de reproducir el abismo kantiano
+entre las exigencias normativas racionales construidas in vacuo, y la
+
+                                   24
+                        «ÉTICA», MORAL Y DERECHO
+
+facticidad de la realidad de la vida social. Con lo cual tiene que
+pagar otra vez el precio de la impotencia del puro deber. Habermas
+ha tomado desde el comienzo un camino diferente del
+construccionismo normativista kantiano. La Teoría de la acción
+comunicativa se apoya en las teorías sociológicas de la acción social y
+se desarrolla como una reconstrucción racional que explicita y poten-
+cia los elementos normativos que están ya desde siempre incorpora-
+dos y operantes en los procesos reales de la interacción social. En tal
+sentido, como lo ha reconocido K.-O. Apel, las investigaciones de
+Habermas en los campos de la pragmática del lenguaje y de la ac-
+ción comunicativa vienen a tender un puente entre la teoría de la
+acción social y el punto de vista moral de las éticas deontológicas,
+sin el cual la moralidad carecería de posibilidad de inserción efecti-
+va en la estructura de la interacción humana y de la realidad social,
+y la ética discursiva quedaría flotando en el aire como una teoría
+típicamente alemana.
+     La moralidad universalista no podría contar de todos modos en
+la sociedad moderna con las fuerzas especiales de las motivaciones
+externas con que contaba la «ética» tradicional. Los fundamentos
+morales no reciben ya el mismo refuerzo de la presión social y cultu-
+ral, ni se conectan sustantivamente con la propia identidad del suje-
+to en cuanto socializado en el ethos colectivo de donde provienen las
+motivaciones «éticas». Por lo tanto, deberíamos ser más bien escép-
+ticos con respecto a la fuerza motivacional de los sentimientos mo-
+rales en la sociedad contemporánea. Algunos filósofos morales
+postanalíticos centran su expectativa en este terreno de los senti-
+mientos morales y trabajan intensamente en el análisis del lenguaje
+expresivo de estos sentimientos, lo cual no es por cierto una contri-
+bución desechable, pero es claro que los sentimientos son tributarios
+de las convicciones, y las convicciones fuertes son las que se anudan
+en la identidad de un ethos vivido comunitariamente, es decir, se
+apoyan en la realidad concreta de la vida colectiva, no en la moral
+sino en la «ética». En tal sentido puede decirse que los fundamentos
+«éticos» de la orientación de la acción de los miembros de una co-
+munidad (especialmente de una comunidad premoderna) provienen
+de la identidad constitutiva de su propio ser, son más bien ónticos
+que lógicos, u ontológicos. Las fundamentaciones que puede dar la
+moral, en cambio, no provienen del ser de la conciencia, sino de su
+
+                                  25
+                             JULIO DE ZAN
+
+saber; solamente pueden hacer jugar por lo tanto, «la débil fuerza
+motivacional» de la validez racional, o del logos; no una fuerza real
+en sentido ontológico, sino la «fuerza espiritual» de la mera convic-
+ción que conllevan las buenas razones, la «fuerza ilocucionaria» de
+los buenos argumentos en cuanto tales, y la «fuerza moral» de la
+exigencia de fidelidad a la verdad.
+     La concepción clásica identificaba la razón práctica con la ra-
+cionalidad «ética» vinculada a una forma de vida histórica, enraizada
+en un mundo cultural homogéneo, en prácticas sociales consagra-
+das por una tradición y en un ordenamiento jurídico político que
+institucionalizaba esa forma de vida y sus valores sustantivos do-
+tándolos de poder y coercitividad, por eso pretendía poder dirigir la
+voluntad mediante motivaciones mucho más eficaces que las que
+provienen de las meras razones o buenos argumentos del discurso
+filosófico. De ahí que A. MacIntyre no hace más que expresar su
+coherencia con aquella doctrina cuando se lamenta de que, para la
+democracia moderna, «el gobierno y la ley son o deben ser neutrales
+entre las concepciones rivales del buen vivir y, por ello, aunque sea
+tarea del gobierno promover la obediencia a la ley, según la opinión
+liberal, no es parte de la función legítima del gobierno el inculcar
+ninguna perspectiva moral [...] o exigir el ejercicio de las virtudes»
+(1984, p. 242). Yo creo en cambio que no es necesario declararse
+partidario de un individualismo liberal extremo para oponerse a la
+concepción del Estado paternalista que sugiere restaurar este autor,
+y defender como un gran logro de la modernidad la neutralidad
+«ética» del ordenamiento jurídico y del Estado frente a los planes de
+vida de los individuos, o al ethos de las diferentes comunidades que
+viven bajo su jurisdicción.
+    La «fuerza» de la racionalidad comunicativa «queda bajo este
+aspecto por detrás de las pretensiones de la razón práctica que pre-
+tendía, mediante la institución de motivaciones eficaces, dirigir la
+voluntad a determinados fines [...] Su normatividad conlleva sola-
+mente la débil fuerza de las motivaciones de la validez racional, que
+no alcanzan a garantizar por sí mismas la trasposición del discerni-
+miento moral en las acciones concretas de los individuos» (J.
+Habermas 1992, p. 19). Pretender que la filosofía moral pueda tener
+por sí misma una fuerza motivadora capaz de determinar a la vo-
+luntad es ilusorio y peligroso. La filosofía tiene que preservarse de
+
+                                 26
+                                «ÉTICA», MORAL Y DERECHO
+
+semejantes pretensiones («debe guardarse de querer ser edificante»,
+como pedía Hegel), porque ella se propone como instancia de re-
+flexión crítica sobre todas las fuerzas motivacionales, ya sean de
+carácter vital, religioso, «ético»-cultural, o sociales y jurídico-políti-
+cas, de las que no podrían por cierto prescindir el hombre en la vida
+práctica y la sociedad, pero que requieren al mismo tiempo una ins-
+tancia discursivo-racional de autorreflexión crítica y de juicio moral.
+3.     LA MEDIACIÓN DE «ÉTICA», MORAL Y DERECHO
+     Más delante sostendré que el procedimiento del discurso y las
+presuposiciones normativas de la argumentación o del diálogo ra-
+cional se revelan como condiciones necesarias de la intersubjetividad
+humana y de lo público político, porque entran en juego en toda co-
+municación e interacción social, y constituyen al mismo tiempo las
+fuentes de las normas de una Ética mínima.12 Pero no se pretende
+decir con ello que estos principios sean ya la condición suficiente para
+reconstruir toda la riqueza de contenido de una eticidad concreta
+capaz de orientar la vida personal y la convivencia armónica de la
+sociedad. También Habermas ha advertido que: «El principio de la
+ética del discurso se refiere a un procedimiento, es decir, a la resolu-
+ción discursiva de pretensiones de validez normativa, y en cuanto
+tal la ética del discurso se puede caracterizar correctamente como
+formal. Ella no da orientaciones de contenido, sino solamente un
+procedimiento: el discurso práctico, el cual no es por cierto un pro-
+cedimiento para la producción de los contenidos, sino para el exa-
+men de la validez de las normas propuestas. Los discursos prácticos
+deben recibir por lo tanto su contenido» (Habermas, 1983, p. 113). Este
+lugar originario de los contenidos valiosos del ethos, o de las preten-
+siones de validez que son tematizadas por el discurso moral, es el
+mundo de la vida histórica de la sociedad y de la cultura.
+    Podría decirse que las teorías contemporáneas de la Ética nor-
+mativa han tenido en cuenta las críticas de Hegel al formalismo de
+la moralidad kantiana, y en tal sentido su planteamiento es
+postkantiano; pero el procedimiento del discurso reclama para sí
+también la competencia para la crítica de las pretensiones de vali-
+12
+     Cfr. también: A. Cortina, Ética mínima, Madrid, 1996. Retomo en este punto mi
+     exposición anterior en J. De Zan, Panorama de la ética continental contemporánea, Akal,
+     Madrid, 2002, p. 62-66.
+
+                                             27
+                              JULIO DE ZAN
+
+dez inherentes a la «ética». El ethos sustancial es reconocido en esta
+relación solamente como punto de partida del examen crítico. Y en
+este último sentido la ética discursiva es también posthegeliana, y
+reactualiza contra Hegel el punto de vista de Kant, afirmando la
+superioridad del juicio moral sobre la tradición, las costumbres y las
+instituciones que pueden ser injustas o insensibles a ciertos derechos
+y a las nuevas exigencias de justicia.
+     Las formulaciones de Apel son bien claras con respecto a la
+reciprocidad de las relaciones de la interacción comunicativa del
+mundo de la vida «ética» y el discurso moral reflexivo: «La prima-
+cía sustantiva de las normas [mejor sería decir de los valores] del
+mundo de la vida, que son las que dan en la praxis el contenido al
+discurso moral, y el primado de la autorreflexión trascendental del
+discurso filosófico [en el orden de la fundamentación], no se exclu-
+yen, sino que se requieren mutuamente» (Apel, 1983, p. 415). El
+autor ha reaccionado por lo tanto con justificada indignación frente
+a las interpretaciones, que considera malintencionadas, de algunos
+neoaristotélicos tradicionalistas, según las cuales el universalismo
+racionalista de la ética del discurso ‘declara como prohibido el ethos
+recibido’, mientras no sea «autorizado mediante el discurso» (O.
+Marquard). Incluso la ética apriorista de la razón kantiana es senci-
+llamente mal comprendida cuando se la interpreta como respuesta
+a la pregunta: «¿Cómo es posible la ética prescindiendo de la expe-
+riencia de la vida?», o cómo es posible la moralidad fuera del mun-
+do «ético», porque ya la ética de Kant era más bien «una respuesta
+a la pregunta: ¿cómo es posible un criterio universalmente válido
+para el juicio moral de las diferentes y siempre cambiantes experien-
+cias de la vida?» (Apel, 1988, pp. 160 y 163).
+     La reflexividad crítica del discurso moral presupone siempre los
+contenidos «éticos» del mundo de la vida (el ethos) y no puede nun-
+ca cuestionar in toto sus presuposiciones. En esto los éticos discursivos
+se han dejado instruir por la comprensión del círculo hermenéutico
+de la precomprensión, a través de Heidegger y de Gadamer. No ig-
+noran ni rechazan el reconocimiento de este a priori de la facticidad
+y de la historicidad, que es como el abecé de la filosofía continental
+y especialmente de la tradición alemana. El discurso práctico tiene
+lugar por otro lado cuando se ha producido en el mundo de la vida
+un conflicto o el cuestionamiento de una norma previamente acep-
+
+                                   28
+                         «ÉTICA», MORAL Y DERECHO
+
+tada. Normalmente no es el discurso filosófico el que introduce o
+genera desde fuera de la praxis los cuestionamientos (aunque tam-
+bién puede hacerlo). La necesidad del discurso se plantea entonces
+como medio para volver a reconstruir los consensos quebrados y
+resolver los conflictos a fin de que sea posible un nuevo entendi-
+miento intersubjetivo que permita retomar la interacción
+comunicativa).
+     La autorreflexión del discurso moral presupone por cierto una
+diferencia y un distanciamiento frente al mundo de la eticidad his-
+tórica objetiva, pero no se trata ya de la autorreflexión de la pura
+conciencia subjetiva, conforme al paradigma del solipsismo metódi-
+co, sino que se trata del discurso como institución pública del reco-
+nocimiento intersubjetivo y de la resolución racional y razonable de
+los desacuerdos y conflictos acerca de pretensiones de validez en las
+relaciones interpersonales y en la vida social en cuanto comunidad
+de comunicación. Los discursos prácticos se sitúan ya en el espacio
+público de la vida social y de las instituciones de la eticidad; en la
+medida en que estas últimas, a su vez, se pueden considerar tam-
+bién en parte (en el Estado de derecho y conforme al principio de la
+legitimación democrática) como realización u objetivación de pre-
+tensiones de validez objetiva reconocidas, o de consensos sociales
+logrados mediante anteriores discursos y renovados en la interacción
+comunicativa cotidiana, parece entonces que «ética» y moral no
+deberían ya contraponerse, sino que en la sociedad moderna tien-
+den a compenetrarse (o al menos a solaparse, para emplear una ex-
+presión de Rawls), en el sentido de una institucionalización de la
+moralidad y de una moralización de la eticidad, sin que nunca pue-
+da desaparecer sin embargo su diferencia, porque con ello se le qui-
+taría el piso a la autonomía de la conciencia moral y al juicio crítico
+independiente.
+4.   RAZÓN PÚBLICA Y DISCURSO JURÍDICO-POLÍTICO
+     De acuerdo a todo lo expuesto, en las sociedades contemporá-
+neas el discurso político y el discurso jurídico tienen que integrar los
+tres tipos de discurso práctico que se han diferenciado anteriormen-
+te, porque las condiciones de racionalidad y de razonabilidad exi-
+gen de las decisiones políticas y judiciales; 1) que se ajusten ante todo a
+los principios universales de la moral pública y a los derechos hu-
+
+                                    29
+                              JULIO DE ZAN
+
+manos, y que los hagan valer, 2) que sean respetuosas de la «ética»,
+es decir, de la forma de ser y los valores propios de las personas y de
+las diferentes comunidades, y 3) que sean pragmáticamente consis-
+tentes y realizables. El orden de la enumeración corresponde al or-
+den de prioridad de las razones prácticas y de los tipos de validez
+que estas pretenden fundamentar: validez moral, «ética» y pragmáti-
+ca. La pretensión de validez específica que se juega en el discurso
+político, la legitimidad, es en lo fundamental la resultante de la inte-
+gración de las tres anteriores, pero de tal manera que si alguna de
+ellas tiene un valor negativo, la validez política es nula. Es decir, por
+ejemplo, aunque una propuesta política sea muy loable desde los
+puntos de vista «ético» y moral, si es pragmáticamente irrealizable,
+carece obviamente de toda validez y tiene que ser desechada; si desde
+el punto de vista pragmático tiene todas las razones a favor y favo-
+rece el bien común colectivo, pero su implementación lesionaría los
+principios morales de justicia o implicaría la violación de derechos
+fundamentales de algunas personas, su legitimidad es cuestionable
+y debe ser revisada, etc.
+      La validez del discurso jurídico se apoya fundamentalmente en
+el derecho, porque puede presuponer que el derecho y las leyes han
+integrado, mediante los procedimientos de su producción, los resul-
+tados de discursos políticos democráticos en los que se han expuesto
+y sometido a crítica los puntos de vista pragmáticos de la viabilidad,
+se han evaluado las consecuencias o los resultados posibles de su
+aplicación y se han tenido en cuenta los puntos de vista «éticos» y
+morales, todo lo cual fundamenta su legitimidad. La filosofía del
+derecho se tiene que interrogar si esas importantes presuposiciones,
+aún cuando los procedimientos legislativos funcionaran de manera
+ideal, alcanzan para tener resueltos de manera automática los pro-
+blemas de aplicación del derecho a cada caso particular; y si esas
+presuposiciones con las que trabajan en principio los jueces los exi-
+men de un examen personal, reflexivo y crítico de la justificación
+racional actual y de las consecuencias futuras de la aplicación de
+dichos precedentes jurídicos en sus decisiones, o de su validez y
+aplicabilidad al caso que ellos tienen que juzgar. En el capítulo 4
+volveré sobre estas cuestiones fundamentales para una ética judi-
+cial. El funcionamiento del sistema jurídico no es como el movimien-
+to mecánico de una máquina, de la cual los jueces fueran los últi-
+
+                                   30
+                       «ÉTICA», MORAL Y DERECHO
+
+mos engranajes, sino que es un proceso discursivo de construcción,
+integración y transferencia de los diferentes tipos de validez racio-
+nal (que han sido explicados más arriba como los temas de las tres
+clases de discurso práctico). Estos diferentes tipos de pretensiones
+de validez no pueden reducirse a la validez lógica formal del razo-
+namiento, ni pueden resolverse mediante la simple aplicación de las
+reglas de la lógica, aunque es obvio que estas reglas tienen que ser
+aquí también respetadas, como en todo discurso racional. Parece
+entonces que, toda vez que alguna de esas pretensiones de validez
+y, por lo tanto, la legitimidad de los precedentes jurídicos, hayan
+sido seriamente cuestionadas de manera razonable, o que el propio
+juez haya llegado a la conclusión de que hay sólidas razones (ya
+sean pragmáticas, «éticas» o morales) para decidir en contrario, su
+responsabilidad personal le exige producir una reinterpretación o la
+revisión de la ley. Se comprende por lo tanto que la función del juez
+no puede consistir en aplicar ciegamente, como autómata, la letra
+de la ley sin escuchar o tener en cuenta las advertencias fundadas
+en buenas razones sobre, por ejemplo, las desastrosas o trágicas con-
+secuencias sociales, culturales o económicas de una decisión, ya sea
+para el procesado o para la sociedad. ¿Qué es lo que espera la socie-
+dad de la alta investidura y del gran poder que le ha otorgado: que
+decida sin preocuparse, o sin pensar, y sin hacerse cargo del mal, de
+la injusticia o del daño que va a ocasionar al procesado o a la socie-
+dad, según sea la decisión que tome? ¿Puede un hombre o una mu-
+jer, que son juristas, eximirse de toda responsabilidad personal cuan-
+do la aplicación rutinaria y mecánica de cierta legislación compro-
+mete o lesiona, en determinadas circunstancias, derechos fundamen-
+tales de las personas? En el mencionado capítulo 3 se analizarán los
+distintos marcos teóricos que permiten pensar diferentes soluciones
+a estos problemas morales de la profesión judicial.
+      Conforme a las condiciones de validez de todo discurso, y te-
+niendo en cuenta especialmente las condiciones de legitimación en
+el contexto político de una democracia deliberativa, el discurso polí-
+tico, y también el discurso jurídico (con las modalidades que corres-
+ponde), tienen que estar abiertos a las opiniones y críticas de todos
+los ciudadanos. Para el discurso jurídico, sin embargo, la voluntad
+general se presupone ya dada en lo fundamental en el derecho y las
+leyes legítimamente sancionadas conforme a los procedimientos de-
+
+                                 31
+                             JULIO DE ZAN
+
+mocráticos. Las decisiones políticas y las leyes pueden obedecer y
+justificarse también (como acontece la mayoría de las veces) mediante
+otro tipo de «discursos» (empleando ahora este término en un senti-
+do muy amplio) orientados a la celebración de pactos sociales que
+no necesitan justificarse más que como acuerdos de la voluntad de
+diferentes sectores sociales sobre cuestiones de interés general, y
+mediante negociaciones y compromisos que equilibren la puja de
+intereses particulares no generalizables y potencialmente conflicti-
+vos. El discurso jurídico debe permanecer ajeno y mantener su inde-
+pendencia frente a tales procesos de negociación política, aunque
+después tenga que evaluar quizás la legitimidad de sus resultados,
+es decir, de las decisiones políticas y legislativas. Porque las estra-
+tegias de la construcción de los consensos sociales y políticos (que
+incluyen juegos de poder en los que se imponen la pura sagacidad
+o las relaciones de fuerza, muchas veces en perjuicio de los dere-
+chos de los más débiles o de las minorías) no se legitiman tampoco
+por la mera facticidad de los acuerdos logrados mediante dichas
+negociaciones y juegos estratégicos de poder, o por la marginación
+del desacuerdo mediante una decisión por mayoría. La validez o
+legitimidad de los resultados de estos procedimientos formales o infor-
+males del proceso político democrático, y del principio de la mayoría,
+está también condicionada a la racionalidad y a la razonabilidad de las
+condiciones pragmática, «ética» y moral de toda validez en general. Los
+procedimientos de construcción política de las decisiones colectivas
+deben estar sometidos por lo tanto al control judicial de legitimidad
+desde estos puntos de vista, de los derechos y de la Constitución. Es
+por esta única razón que los jueces deben mantener su independen-
+cia frente a la política.
+     En las sociedades modernas, abiertas y pluralistas, las razones
+«éticas», en el sentido restringido en que esta ha sido definida aquí,
+no forma parte de la razón pública, en el sentido de Rawls. Es decir
+que las posiciones derivadas del ethos y de los valores propios de los
+diferentes grupos sociales, religiosos, etc., no se pueden hacer valer
+como argumentos positivos en el discurso político y jurídico. La moral
+en cambio es la condición fundamental y constitutiva de la razón
+pública. Ahora bien, por razones específicamente morales, la razón
+pública tiene por lo menos un deber negativo de respetar la inviola-
+bilidad de las concepciones «éticas» razonables, propias de las per-
+
+                                  32
+                        «ÉTICA», MORAL Y DERECHO
+
+sonas y de las diferentes comunidades que forman parte de la socie-
+dad civil. Una cuestión disputada es hasta qué punto se debe acep-
+tar además que la mayoría instrumente al Estado y a las institucio-
+nes públicas, incluyendo a la escuela pública, para promover positi-
+vamente la hegemonía de los valores «éticos» de la propia tradición
+nacional. En todo caso esta afirmación positiva de la «ética» debe
+respetar unos límites morales precisos, que son los derechos de las
+minorías.
+     Las ideologías políticas dominantes en la modernidad, tanto en
+Europa como en las Américas, presuponían que el Estado moderno
+tenía que tener en su base un ethos y una cultura nacional homogé-
+nea como fundamento de su unidad y de su soberanía política. Por
+eso los Estados nacionales desarrollaron de manera sistemática polí-
+ticas culturales y educativas con el objetivo de borrar intencionalmente
+las diferencias culturales existentes en la sociedad y de construir e
+instituir una cultura nacional como el marco identitario de la ciuda-
+danía política. La cuestión de la identidad ha sido una política de Esta-
+do. El Estado moderno llevó a cabo una política de inclusión y de
+exclusión que ha merecido con toda razón las más fuertes críticas y
+que es considerada hoy como reprochable y absolutamente inacep-
+table en la sociedad contemporánea. La construcción política de las
+identidades nacionales ha llevado muchas veces, y no solamente en
+la Alemania de Hitler, a los programas genocidas de limpieza étnica,
+como el que se llevó a cabo con la llamada «conquista del desierto»
+en la Argentina del siglo XIX. Estas políticas de identidad se continua-
+ron aplicando en nuestra sociedad casi hasta finales del siglo XX,
+con medios menos violentos en los períodos llamados democráticos,
+pero igualmente lesivos de la autonomía moral de las personas, de
+las diferencias de los grupos sociales y de las culturas regionales o
+locales.
+     Distintos procesos, pero sobre todo el creciente pluralismo de la
+sociedad civil y de la cultura actual, han contribuido finalmente a la
+inviabilidad y al abandono de hecho de las políticas tradicionales en
+el campo de la cultura y de la identidad. El desplazamiento del Es-
+tado nacional del centro de la escena ha tenido como efecto secun-
+dario la recuperación de las autonomías regionales y locales y la
+liberación de las identidades y de las culturas particulares que ha-
+bían quedado aplastadas por la política unitaria del Estado moder-
+
+                                   33
+                                 JULIO DE ZAN
+
+no. Ahora se ve con claridad que, como ha escrito John Gray, «No
+necesitamos una misma identidad ni los mismos valores comunes
+para vivir juntos en paz. Lo que sí necesitamos son instituciones
+comunes en las que muchas formas de vida puedan coexistir». El
+Estado actual, ha escrito Benjamín Barber, «es como un vecindario
+de extranjeros».13 Los ciudadanos ya no pueden ni desean enten-
+derse y sentirse unidos mediante el tipo de relaciones íntimas de la
+amistad ni del parentesco, como había descrito Aristóteles el vínculo
+«ético» constituyente de la antigua polis. En esta sociedad los indivi-
+duos valoran sobre todo la vida privada y los espacios libres de la
+sociedad civil, son celosos de su independencia, de la libertad de
+pensamiento y de forma de vida, etc. Sin embargo, tampoco debe-
+rían tratarse con indiferencia. El hecho de vivir en el mismo país y
+de ser miembros de la misma sociedad política, o Estado, se podría
+pensar con el mencionado modelo de las relaciones entre vecinos,
+que tienen sus casas en la misma calle o en el mismo edificio y, si
+bien ninguno admite que el vecino se le meta en su propia casa
+para decirle cómo tiene que vivir, sin embargo están en el mismo
+barrio, por lo tanto, tienen muchos intereses comunes. Además, es
+de buenos vecinos interesarse por la salud del que vive enfrente, y
+darle una mano solidaria cuando lo necesita. En el contexto de
+estos cambios de la sociedad contemporánea se producen impor-
+tantes corrimientos de las líneas de demarcación entre lo público y
+lo no público, que avanzan con velocidades muy desiguales en las
+diferentes sociedades y regiones del mundo, pero en todas partes
+se desplazan en el mismo sentido de la expansión de lo no público.
+¿Qué es lo que queda entonces del proyecto (o del mito) de la mo-
+dernidad sobre la comprensión omniabarcante de lo público? John
+Rawls ha defendido una concepción modesta, pero realista de esta
+idea en las condiciones de la sociedad actual y de las democracias
+liberales, la cual me parece muy importante, sobre todo para el dis-
+curso jurídico.
+      La idea de razón pública especifica al nivel más profundo los
+      valores morales y políticos básicos [en nuestro léxico hablaría-
+      mos aquí más bien de reglas (JDZ)] que restringen las relaciones
+      de un gobierno democrático con sus ciudadanos, y de estos en-
+13
+     Benjamín Barber, «La democracia liberal y los costos del consenso», en N.
+     Rosenblum, El liberalismo y la vida moral, Buenos Aires 1993, p. 72.
+
+                                      34
+                       «ÉTICA», MORAL Y DERECHO
+
+    tre sí. Dicho en pocas palabras, concierne a cómo se ha de en-
+    tender la relación política. Quienes rechazan la democracia cons-
+    titucional rechazarán también obviamente la idea misma de
+    razón pública [con sus importantes limitaciones]. Para ellos, la
+    relación política podrá ser de amistad o de enemistad, según la
+    pertenencia a una comunidad [en sentido fuerte], o no; o puede
+    ser también una lucha incesante [en el sentido literal del estado
+    de guerra] para imponer la verdad absoluta al mundo entero.
+    Es claro que el liberalismo político no puede atraer a quienes
+    piensan así (Rawls, 2001, p. 157).
+     La idea de razón pública de Rawls presenta un núcleo simple e
+intuitivamente plausible. Su desarrollo es bastante complejo y cues-
+tionable en diversos aspectos, pero no podré entrar ahora en esa
+discusión. Me limitaré a rescatar aquí el núcleo aproblemático de la
+idea. Rawls explica su idea de esta manera: todo agente racional y
+razonable, individual o colectivo, se fija un plan y una meta para
+sus actividades en el campo en el que está comprometido. El modo
+en que delibera en el marco de esos presupuestos son sus razones
+particulares. La razón pública es tal en cuanto 1) es la razón del
+público, o de los ciudadanos en general y en cuanto tales; 2) la fi-
+nalidad que se busca en el ejercicio de la razón pública es el bien
+general o la satisfacción de un interés público. La existencia y el
+funcionamiento posible de una razón público-política se vinculan
+solamente con aquellos intereses que son comunes a todos. Presupo-
+ne además que hay un acuerdo de los ciudadanos en la validez moral
+de los principios de justicia, en el mantenimiento de un orden cons-
+titucional aceptado y legitimado en cuanto institucionaliza dichos
+principios, e incluso un compromiso de cooperación en la busca del
+bien común. Los individuos saben al mismo tiempo que también es-
+tán divididos por intereses divergentes, por creencias o concepcio-
+nes comprensivas del mundo y de la vida, ideales «éticos», religio-
+sos, etc., que no pueden compartir con todos los demás. La razón
+pública es precisamente entonces la capacidad de los ciudadanos de
+explicarse unos a otros los fundamentos de su aceptación del orden
+constitucional común y de los principios que lo inspiran, y de justi-
+ficar sus propias preferencias y acciones políticas, sin apelar a sus
+particulares creencias y concepciones del mundo y de la vida (filo-
+sóficas, «éticas», religiosas, etc.) sino mediante razones tales que
+
+                                 35
+                              JULIO DE ZAN
+
+puedan tener una adecuada comprensibilidad y eventual
+aceptabilidad para cualquier otro ciudadano, es decir, que puedan
+ser apoyadas o discutidas con argumentos que pueden desplegarse
+y apoyarse en un terreno común a todas las personas razonables.
+Este es precisamente el tipo de las razones públicas. Hay muchas
+razones no públicas, pero una sola razón pública. Las primeras no
+se pueden hacer valer en el espacio público y en el discurso político
+de una democracia pluralista como razones para fundamentar deci-
+siones colectivas que involucran a todos los ciudadanos. Esto no debe
+interpretarse en el sentido de una restricción de la libertad de expre-
+sión y del derecho de las personas y de las comunidades religiosas,
+por ejemplo, a declarar, proponer y defender, o difundir pública-
+mente sus creencias y valores.
+    [Las restricciones de la idea de razón pública] no se aplican a
+    todos los debates políticos sobre cuestiones fundamentales, sino
+    a aquellas cuestiones que caen dentro de lo que propongo lla-
+    mar foro público. Este foro se puede dividir en tres partes: el
+    discurso de los jueces en sus decisiones y, en especial, el de los
+    magistrados en el Tribunal Supremo; el discurso de los funcio-
+    narios públicos y, en especial, el de los altos funcionarios del
+    Ejecutivo y del Legislativo; y finalmente el discurso de los can-
+    didatos a los cargos públicos [...] La idea de la razón pública no
+    se aplica de la misma manera en estos casos y en otros [...] se
+    aplica de manera más estricta a los jueces que a otros, pero las
+    exigencias de justificación pública de esta razón son siempre las
+    mismas para todos (Rawls, 2001, p. 158).
+    La razón pública rige de un modo especial para el Poder Judi-
+    cial, sobre todo para un tribunal en una democracia con poder
+    de revisión judicial. Esto se debe a que los jueces tienen que
+    explicar y justificar sus decisiones fundándolas en su interpre-
+    tación de la Constitución y de las leyes antecedentes y relevan-
+    tes [...] El especial papel de los tribunales de justicia los convier-
+    te en el paradigma de la razón pública [...] La razón pública es
+    la única razón de que se vale el tribunal. Él es la única rama del
+    Estado que es palmaria y visiblemente criatura de la razón, y
+    sólo de tal razón. Los ciudadanos y los legisladores pueden vo-
+    tar de acuerdo con sus respectivas doctrinas comprensivas, más
+    abarcadoras [...] y no necesitan justificar mediante la razón
+
+                                   36
+                        «ÉTICA», MORAL Y DERECHO
+
+    porqué han votado como lo hicieron [...] Pero el papel de los
+    jueces consiste precisamente en hacer eso, y al hacerlo no pue-
+    den exponer otra razón que la pública, ni otros valores que los
+    de la razón pública-política, es decir, los principios de justicia
+    del derecho y de la Constitución (Rawls, 1996, pp. 250-251 y
+    270-271).
+     Rawls propone dos restricciones fundamentales a la idea de
+razón pública. La primera se refiere a los temas que pueden ser so-
+metidos a una decisión pública vinculante. Sobre este aspecto no
+necesito agregar nada aquí, porque esta demarcación es la que he
+tratado ampliamente en los apartados precedentes mediante la dis-
+tinción de la «ética» y la moral, aunque el propio Rawls usa otro
+lenguaje, el de su propia teoría de la justicia. El único tema de la
+razón pública «es el bien público referente a cuestiones de justicia
+política fundamental, es decir, cuestiones esenciales de justicia bási-
+ca», tal como se definen en El liberalismo político, VI, 5. El motivo de
+esta restricción es claro: porque se supone que en estas cuestiones de
+los principios constitucionales es posible un acuerdo democrático aún
+en una sociedad que se hace cada vez más pluralista, siempre que
+todos estén dispuestos a poner en juego en este debate solamente
+razones públicas, es decir, independientes de los presupuestos teóri-
+cos y «éticos» de sus concepciones del mundo y de la vida. Una
+objeción que se puede hacer a esta demarcación de los contenidos
+de la razón pública es que parece identificar lo público-político con
+los contenidos del discurso jurídico. Los temas de la razón pública
+rawlsiana son importantes para diseñar el marco jurídico constitu-
+cional en el cual se pueden desarrollar los debates y las «luchas»
+político-sociales de la democracia, como las luchas por la inclusión
+social y el reconocimiento de los derechos, la competencia de los
+proyectos políticos rivales, las negociaciones entre intereses sectoria-
+les o regionales conflictivos, etc. Las preguntas que tengo que dejar
+pendientes aquí son si este concepto de la razón pública no deja
+fuera de juego todo el campo de la política propiamente dicha, y
+cómo se articula este campo con la razón pública. No estoy seguro
+de si el propio Rawls tenía una respuesta para estas preguntas.
+     La exclusión de las cuestiones «éticas» sustantivas del foro pú-
+blico no implica desconocer sin embargo el uso de la razón práctica
+en la «ética» o considerar estas cuestiones como no racionales. A
+
+                                  37
+                            JULIO DE ZAN
+
+diferencia de lo que pensaron Kierkegaard y Wittgenstein (y si-
+guen sosteniendo sus respectivos epígonos) yo creo que puede ad-
+mitirse, con los comunitaristas como Ch. Taylor y A. MacIntyre, la
+posibilidad de un discurso «ético» diferente del discurso moral, pero
+que es más que una mera conversación privada en el sentido de
+Rorty. Aunque las pretensiones de validez que se dirimen en los
+discursos éticos no sean universalizables, se puede hablar también
+de discurso en la «ética» por cuanto no se trata de meros senti-
+mientos, de intuiciones emocionales en el sentido de M. Scheler, o
+de preferencias idiosincrásicas, sino de valores comunicables y ap-
+tos para el reconocimiento intersubjetivo en el marco de un mun-
+do de la vida, o de los contextos socioculturales de pertenencia.
+Pero estos discursos «éticos» sobre valores y modelos de vida se
+apoyan en presupuestos que pertenecen a un determinado
+Lebenswelt o que son reconocidos solamente en las comunidades
+particulares, a las que libremente hemos adherido. Lo que no pue-
+de aceptarse en las sociedades modernas, respetuosas de la plura-
+lidad y las diferencias de las convicciones e ideales de vida, es que
+los contenidos sustantivos de las razones «éticas» pretendan ha-
+cerse valer en la esfera pública como universales. El pluralismo éti-
+co de las motivaciones del vivir no podría suprimirse sin lesionar
+nuestro sentido moderno de la libertad. Y no puede concebirse y
+mantenerse este pluralismo sin aceptar al mismo tiempo la inviola-
+ble privacidad de las convicciones «éticas» y de la libertad de con-
+ciencia. Esta comprensión viene a coincidir en este aspecto con la
+de R. Rorty cuando dice que él intenta «mostrar el aspecto que
+cobran las cosas si excluimos la exigencia de una teoría que unifi-
+que lo público y lo privado y nos contentamos con tratar las exi-
+gencias de creación de sí mismo y de solidaridad humana como
+igualmente válidas, aunque definitivamente inconmensurables» (R.
+Rorty, 1991). La restricción de los contenidos de la razón pública
+se refiere precisamente a «la aplicación de estas concepciones en
+los debates sobre normas coercitivas que se convierten en leyes le-
+gítimas de una sociedad democrática» (Rawls, 2001, p. 157).
+     Las cuestiones éticas, como la cuestión central, de sentido
+aristotélico, que MacIntyre considera fundante del concepto de
+virtud, acerca del «telos que constituye el bien de la vida humana
+completa concebida como unidad», etc., son cuestiones que sola-
+
+                                 38
+                                «ÉTICA», MORAL Y DERECHO
+
+mente admiten discusión y perspectivas de entendimiento en ám-
+bitos particulares, libremente elegidos y recortados por los pro-
+pios miembros de una comunidad de vida. En el contexto de la
+fractura de las grandes identidades colectivas y del
+multiculturalismo de la sociedad moderna parece que la «ética»
+se ha privatizado de manera irreparable. No sería correcto sin
+embargo hablar de la ética como un asunto meramente privado.
+Ello equivaldría a decir que en este ámbito ya no es posible nin-
+gún discurso, porque es claro después de Wittgenstein que no
+puede haber un lenguaje privado, y menos aún entonces un dis-
+curso privado. También J. Rawls se ha planteado este mismo pro-
+blema y ha intentado no solamente conectar lo que él llama la
+razón pública con las razones no públicas de los diferentes gru-
+pos humanos, asociaciones e instituciones de la sociedad civil, sino
+mostrar como ellas se entrecruzan y pueden constituir un
+overlaping consensus, que se requiere para estabilizar la estructura
+básica constitucional de una sociedad bien ordenada.14 Por eso es
+además importante remarcar que: «La distinción de público ver-
+sus no público no coincide aquí con la distinción entre público y
+privado, porque no hay algo así como una razón privada» (J.
+Rawls, 1996, p. 255).
+    Es preciso advertir además que la restricción de los temas o cues-
+tiones marcada por este autor se refiere específicamente al «foro
+
+14
+     La expresión de Rawls se ha traducido como «consenso entrecruzado»; se entiende
+     con ello el acuerdo de los ciudadanos y los diversos grupos sociales y el apoyo que
+     le prestan a las instituciones de la democracia liberal y a la defensa de los derechos
+     fundamentales de los individuos. No obstante las profundas diferencias de las
+     doctrinas comprensivas (es decir de las convicciones filosóficas, éticas y religio-
+     sas, etc.), del trasfondo cultural y de las formas de vida de los grupos sociales, cada
+     uno conecta y refuerza la fundamentación de los valores de la democracia y de los
+     derechos humanos con los valores sustantivos de sus propias creencias, o con los
+     recursos simbólicos de su cultura de base, y todos convergen en apoyar la estruc-
+     tura básica de la misma sociedad, aunque por razones o motivos diferentes. El
+     consenso entrecruzado se funda también, sin embargo, en una doble exclusión: 1)
+     se excluyen del discurso público las razones derivadas de las propias doctrinas
+     comprensivas, 2) se excluyen del espacio mismo del discurso las doctrinas com-
+     prensivas no razonables. Lo que no encuentro aclarado en este autor es quién
+     toma la decisión de estas exclusiones y cuál es el procedimiento para decidirlas.
+     Este es un blanco de fuertes críticas al liberalismo político como un decisionismo
+     encubierto, cf. Ch. Mouffe, «Carl Schmitt y la paradoja de la democracia liberal»,
+     en Tópicos. Revista de Filosofía de Santa Fe, n° 10, 2002, pp. 5-25.
+
+                                             39
+                              JULIO DE ZAN
+
+público», que tiene un carácter institucional, estatal o paraestatal.
+De todos modos, la razón pública es una cosa demasiado importan-
+te para hacer de ella la razón de un foro especial y ligado al sistema
+de poder administrativo del Estado. La mayoría de los autores que
+han tratado estos asuntos hablan en cambio de «el espacio público».
+Esta expresión resulta hoy sin embargo muy ambigua, porque en la
+teoría política anterior el espacio público era concebido como un
+espacio unificado y como el lugar propio de lo político, centrado en
+el Estado. En la teoría política más actual se suele emplear más bien
+en plural la expresión «los espacios públicos de la sociedad civil»,
+los cuales no son espacios meramente políticos, pero naturalmente
+son (de manera deliberada o no) también políticos. Y en una demo-
+cracia deliberativa son los lugares fundamentales de la constitución
+de la opinión pública y del poder comunicativo, es decir, de lo polí-
+tico, en el que se apoya el sistema institucional y el poder adminis-
+trativo del Estado. Está claro que los discursos públicos no tienen nin-
+guna clase de restricciones temáticas en los espacios públicos así
+comprendidos, tampoco para Rawls, aunque él no haya empleado
+esta última expresión.
+     La otra restricción de la idea de razón pública en Rawls se re-
+fiere a los sujetos de la misma, los cuales están especificados en el
+párrafo citado más arriba. Me interesaba aquí especialmente ese texto
+por el significado paradigmático que le asigna el autor al lenguaje
+de los jueces para la definición de la idea misma de razón pública y
+porque, recíprocamente, propone una definición de la función judi-
+cial a partir de esta idea. Pero cabe preguntar si para el autor los
+jueces, legisladores y otros funcionarios son los únicos sujetos reco-
+nocidos y autorizados para hacer uso de la razón pública. El texto
+de Rawls tiene que ser releído e interpretado en el contexto del libro
+del que ha sido extractado, y de su teoría política. Creo que está
+claro que esta restricción tiene que ser comprendida en el sentido
+negativo de que estos sujetos solamente pueden recurrir para la
+fundamentación o justificación de sus decisiones oficiales a la razón
+pública, excluyendo toda otra clase de razones o motivos. Pero no
+que estos sujetos tengan el monopolio de la razón pública, porque
+«dicha razón es pública en primer lugar como razón de los ciuda-
+danos libres e iguales, es decir: como la razón del público», y su
+aplicación debe estar sometida «al control ciudadano para que los
+
+                                  40
+                                «ÉTICA», MORAL Y DERECHO
+
+principios derivados de aquellas concepciones de justicia [en las que
+se basa la razón pública] satisfagan el criterio de reciprocidad»
+(Rawls, 2001, p. 156).15
+     Después de la quiebra del socialismo de Estado se puede ver
+más claramente que nunca que el error teórico fundamental del lla-
+mado socialismo real fue confundir el significado normativo de las
+ideas socialistas con la construcción y la imposición de un modelo
+de organización social rígidamente regimentado como una «forma
+de vida» planificada y sancionada con fuerza de obligatoriedad «éti-
+ca» y jurídica para toda la sociedad. El fracaso de esta manera de
+concebir el socialismo y las desviaciones caricaturescas, por no decir
+macabras, de la práctica con respecto a los propios valores y a la
+«ética» en que se inspiraba, es el experimento moderno más instruc-
+tivo de la inviabilidad histórica de cualquier proyecto «ético» colecti-
+vo en las condiciones de las grandes sociedades complejas y de los
+Estados modernos, por más nobles que sean los valores que se tra-
+tan de encarnar. Ese es el destino manifiesto de todo proyecto de
+restauración de una «ética» vinculante para toda la sociedad, sea
+de derecha o de izquierda. El error no está en el ala en que uno se
+ubique, sino en el corazón de esta clase de proyectos.
+      Sin embargo, el mayor riesgo de la sociedad occidental contem-
+poránea no es ya el de la instalación de algún modelo constrictivo,
+cohesionado por fuertes motivaciones colectivas, sino la disolución
+de toda eticidad comunitaria, aun en las esferas de la vida privada,
+por el avance de la «colonización interna del mundo vivido» por
+parte de la racionalidad puramente instrumental y estratégica de
+los juegos competitivos del mercado o del poder burocrático gerencial.
+En este aspecto es preciso atender a las críticas comunitaristas de las
+democracias liberales en cuanto «formadas por individuos con pro-
+yectos orientados en su concepción del bien [o del interés] propio,
+pero sin ninguna concepción del bien sostenida en común y defen-
+dida por la sociedad misma. Esta parece ser la fórmula de una so-
+ciedad instrumental, que excluye por completo la forma republica-
+na como una empresa común con la que se identifican los ciudada-
+15
+     Confrontar esta comprensión de las restricciones rawlsianas de la idea de razón
+     pública con la del Prof. Osvaldo Guariglia, Una ética para el siglo XXI. Ética y derechos
+     humanos en un tiempo posmetafísico, FCE, Buenos Aires, 2002, pp. 140-155. Si no lo
+     interpreto mal, su lectura es diferente.
+
+                                              41
+                                  JULIO DE ZAN
+
+nos, en la que el lazo de solidaridad conlleva el sentimiento de un
+destino compartido y donde el hecho de compartir tiene valor por sí
+mismo».16 Pero los comunitaristas más conservadores consideran que
+el cierre cada vez más asfixiante de la «jaula de hierro» de la racio-
+nalidad instrumental weberiana tiene su raíz en el politeísmo de los
+valores de la modernidad, el cual ha fragmentado a la comunidad y
+ha debilitado o anulado su capacidad de resistencia. Y por lo tanto
+la lucha de los neoconservadores fuertes se verá llevada a atacar
+ante todo la raíz del problema. Será una lucha cultural contra aquel
+politeísmo, es decir, contra el pluralismo de la sociedad moderna.
+Rawls y los filósofos del liberalismo político, en cambio, piensan
+que el pluralismo ha venido para quedarse en la sociedad, y que
+tiene que considerarse como un progreso de la libertad (el cual
+puede favorecer y estimular incluso la autenticidad y la vitalidad
+propia del ethos de las comunidades). Habermas apela precisamente
+a la pluralidad de los espacios públicos, de las iniciativas informa-
+les de la sociedad civil y de los movimientos sociales, como la ins-
+tancia desde donde es posible pensar en un control democrático
+de la racionalidad estratégica y burocrática, en una recuperación
+de lo político y en el ejercicio de la ciudadanía como fuente del
+poder comunicativo de una democracia deliberativa. En su teoría
+de la democracia deliberativa él pretende rescatar de la idea del so-
+cialismo el proyecto y las condiciones necesarias de las formas de
+vida emancipadas, sobre las cuales son los propios participantes
+quienes tienen que ponerse de acuerdo. Pero al mismo tiempo cree
+posible reconstruir ese proyecto como el núcleo normativo de la auto-
+organización democrática de una sociedad abierta, constituida como
+Estado de derecho.
+     La idea de la democracia deliberativa y del papel político
+protagónico de la sociedad civil no deriva en el anarquismo, ni en
+las utopías de la anulación de las mediaciones representativas y de
+la democracia directa. El pluralismo, la fragmentación y la comple-
+jidad de la sociedad contemporánea aleja más que nunca la posibi-
+lidad de pensar esas ideas utópicas. La construcción de los consen-
+sos sociales y la generación de poder político comunicativo tienen
+
+16
+     Charles Taylor, «Propósitos cruzados: el debate liberal-comunitario», en R.
+     Rosenblum, o. cit., pp. 187-189.
+
+                                       42
+                              «ÉTICA», MORAL Y DERECHO
+
+que poder canalizarse a su vez a través de las vías institucionales,
+jurídico-políticas. «La constitución de la forma del derecho [su
+coactividad respaldada en la fuerza del Estado] se torna necesaria
+para compensar las deficiencias [de cohesión y normalidad social]
+que se producen con la caída de la eticidad tradicional. Por cuanto
+la moral autónoma, apoyada solamente en los fundamentos racio-
+nales, alcanza para respaldar únicamente el juicio [pero no las con-
+ductas de los individuos y la forma de ser de la sociedad]. Con el
+pasaje al nivel de la fundamentación posconvencional la conciencia
+moral se desprende de la praxis tradicional en la que se había for-
+mado [...]» (Habermas, 1992, p. 145). En esta situación se hace espe-
+cialmente necesaria la compensación de la debilidad práctica de una
+moralidad racional, que se actualiza como una forma de saber, y su
+complementación mediante el derecho, si bien la juridización de la
+moral tiene que ser muy austera o limitada, y mantener especial-
+mente su independencia de la «ética».
+5.     EL «SÍ MISMO COMO OTRO» Y LA JUSTICIA
+     Otra comprensión de los mismos problemas tratados en este
+capítulo, que enriquece y complementa los puntos de vista de los
+autores trabajados en los puntos anteriores, es la que podemos
+encontrar en Paul Ricoeur. La extraña expresión sí mismo como
+otro está tomada del título de uno de los últimos libros de Ricoeur,
+Soi-même comme un autre, de 1990.17 Este título tiene la intención
+filosófica de disociar los dos significados de «identidad», según
+que se la entienda a partir de las palabra latina «idem», de la
+que deriva el término castellano, o de la palabra «ipse» que se
+traduce precisamente como «sí mismo» y denota otro nivel y otro
+significado de la identidad. La identidad idem connota ante todo
+permanencia siempre igual, sin modificaciones en el tiempo. Uno
+sigue siendo idéntico en cuanto sigue siendo igual que antes, es
+decir, en cuanto no ha cambiado y permanece en algún sentido
+inalterable. La tesis de Ricoeur será precisamente que la identi-
+dad en el sentido de ipse (o la ipseidad) tiene un sentido más
+profundo, pero «no implica sin embargo ninguna afirmación so-
+bre un pretendido núcleo inalterable de la personalidad» (o. cit.,
+XIII). La expresión «sí mismo», a diferencia de idem, presupone
+
+17
+     Paul Ricoeur, Sí mismo como otro, México, 1996.
+
+                                           43
+                             JULIO DE ZAN
+
+además una cierta relación dialéctica de mismidad y alteridad, del
+sí con otros, o frente a otros.
+     Ricoeur nos propone reflexionar sobre la diferencia de dos mo-
+delos de identificación y de permanencia en el tiempo que están
+subyacentes al hablar de nosotros mismos y que se pueden distin-
+guir mediante estos dos términos, «a la vez descriptivos y
+emblemáticos: el carácter y la palabra dada» (1996, p. 112). Los ras-
+gos del carácter permiten identificar al individuo como siendo el
+mismo a través del tiempo, no sólo numéricamente sino también
+cualitativamente. Esta identidad del carácter proviene del nacimien-
+to, forma parte de lo involuntario de mi ser, no es elegida, pero
+tiene que ser asumida como una condición de la finitud humana.
+(Sobre este aspecto remite el autor a otro libro suyo, Le volontaire et
+l’involontaire, 1950). El carácter es en parte herencia natural y en
+parte herencia de la cultura, adquirida al crecer en una comuni-
+dad con determinados valores, costumbres y forma de ser. Bajo
+este último aspecto el que uno siga siendo el mismo (idem) depen-
+de también de la lealtad o fidelidad a su origen. Pero en otro as-
+pecto, según piensa Ricoeur, este modelo de la identidad como
+permanencia del carácter conlleva el ocultamiento de la problemá-
+tica de la diferencia del idem y el ipse.
+     Este «ocultamiento» del que habla Ricoeur, es el que tiene lu-
+gar, me parece, por ejemplo, en A. MacIntyre, en quien se borra la
+diferencia de los dos modelos de la identidad: «Soy hijo o hija de
+alguien [...] ciudadano de esta o aquella ciudad, miembro de este o
+aquel gremio o profesión [...] Como tal heredo del pasado de mi
+familia, mi ciudad, mi tribu, mi nación, una variedad de deberes,
+herencias, expectativas correctas y obligaciones. Ellas constituyen
+los datos previos de mi vida, mi punto de partida moral. Estas
+ideas posiblemente parezcan extrañas e incluso sorprendentes des-
+de el punto de vista del individualismo moderno, según el cual yo
+soy lo que haya escogido ser, y siempre puedo, si quiero, poner en
+cuestión lo que aparece como meros rasgos sociales contingentes
+de mi existencia [...] Según el punto de vista narrativo del yo, sin
+embargo, la historia de mi vida está siempre embebida en la de
+aquellas comunidades de las que derivo mi identidad. He nacido
+de un pasado, e intentar desgajarme de ese pasado de manera in-
+dividualista es deformar mis relaciones presentes. La posesión de
+
+                                  44
+                              «ÉTICA», MORAL Y DERECHO
+
+una identidad histórica y la posesión de una identidad social coin-
+ciden. Tengamos presente que la rebelión contra mi identidad es
+siempre también un modo posible de expresarla» (Tras la virtud,
+Barcelona, 1984, pp. 271-272).
+     El otro modelo de identificación, que Ricoeur se esfuerza por
+diferenciar de ese determinismo del origen que encontramos en la
+imagen nostálgica de la sociedad tradicional trasmitida por
+MacIntyre, es el modelo de la fidelidad a las libres elecciones de la
+voluntad; el mantenimiento de la palabra dada, el cual pone de
+relieve la diferencia de la identidad como ipseidad frente a la mera
+permanencia del carácter. «El cumplimiento de la promesa parece
+constituir un desafío al tiempo, una negación del cambio: [el pro-
+meter es asegurar que] aunque cambie mi deseo, aunque yo cam-
+bie de opinión, de inclinación [de profesión], ‘yo me mantendré’
+[en la promesa dada].18 Basta por sí misma la justificación propia-
+mente ética de la promesa que está implicada en la obligación de
+salvaguardar la institución del lenguaje y de responder a la con-
+fianza que el otro ha depositado en mi fidelidad» (Ricoeur, 1996,
+p. 119). Este segundo modelo de la identidad es más capaz de ven-
+cer la contingencia del tiempo; es más fuerte y más significativo
+que la terquedad del carácter.
+     La diferencia entre la permanencia del carácter y el manteni-
+miento de la palabra como dos modelos de la identidad personal se
+conecta también esencialmente con la diferencia entre la ética y la
+moral; aunque el propio Ricoeur no explicita esta conexión, basta
+recordar el significado especial de la promesa en Kant como el más
+claro ejemplo de los deberes estrictos conforme al criterio de
+universalizabilidad de la ley moral. Por lo tanto, podríamos decir
+que su propia concepción fundamental en este libro no está centra-
+da en la identidad del ethos (que está en el plano del carácter), sino
+en la identidad moral de la persona.
+    En el centro y en lo más profundo de la intención ética de la
+vida buena cree encontrar Ricoeur la actitud y el sentimiento de la
+18
+     El título del libro de A. Garapon sobre los jueces es, precisamente: Le Gardien des
+     promesses (El guardián de las promesas). Hay en esta expresión una clara resonan-
+     cia del pensamiento de Ricoeur, la cual se ha perdido lamentablemente en la
+     traducción española que ha suprimido esa bella expresión, y titula: Juez y democra-
+     cia, Madrid, 1997.
+
+                                           45
+                                      JULIO DE ZAN
+
+estima de sí, la solicitud por el otro y la percepción de sí mismo como
+un otro con los otros. La solicitud por el otro no se agrega desde
+afuera de la estima de sí, sino que está ya implícita en ella, y sólo
+se requiere un trabajo de análisis fenomenológico para descubrir-
+la como el despliegue de la esencial dimensión dialógica del sí
+mismo. La instancia de la alteridad es insoslayable y constitutiva
+de la propia identidad narrativa (dime con quién andas y te diré
+quién eres). Ninguna historia de vida humana es solipsista y
+monológica, sino que está esencialmente entretejida con las otras
+historias con las cuales cada sí mismo está involucrado desde el
+nacimiento y se va comprometiendo hasta la muerte. La presen-
+cia y el acogimiento del otro, antes de ser un imperativo moral,
+es un constitutivo ontológico de la persona. 19 El sí mismo sola-
+mente llega a ser sí mismo y quien es por la mediación de la
+alteridad y el reconocimiento recíproco con el otro. Ya al realizar
+el primer acto de habla se dirige a un otro y no puede comenzar a
+decir yo sin presuponer el tú.
+     El sentido de justicia es para Ricoeur una ampliación de la
+dialéctica de la estima de sí y la solicitud por el otro, que se pro-
+longa más allá de la relación interpersonal, cara a cara, en el pla-
+no de las instituciones y de la vida política donde el otro es «el
+cada uno sin rostro» que reclama una justa distribución de las car-
+gas y beneficios de la vida en común, en la institución. Ya Levinas
+había señalado este camino: a través del rostro de este otro concre-
+to se me revela «él», la tercera persona, es decir, todo otro hombre.
+Y en esta dimensión ampliada del tercero, el otro sin rostro, se
+plantean las relaciones institucionales de justicia. Por institución
+entiende Ricoeur «las estructuras del vivir juntos de una comuni-
+dad histórica». El fundamento de las instituciones de la vida en
+común no está, para Ricoeur, como para Aristóteles, en las reglas
+coactivas que fijan deberes y derechos, sino que la institucionalidad
+tiene su origen ante todo en la voluntad de vivir juntos, y se con-
+solida mediante costumbres y sentimientos compartidos que confi-
+guran un ethos común a sus miembros. Es decir que tiene una raíz
+ética antes que moral o jurídica, aunque luego requiera también
+
+19
+     Cf. A. Fornari, en J. De Zan y otros, «Los fundamentos de la ética en la época
+     contemporánea. Problemas y propuestas», Tópicos. Revista de Filosofía de Santa Fe, n°
+     3, 1995, pp. 123-124.
+
+                                            46
+                        «ÉTICA», MORAL Y DERECHO
+
+del apoyo de las normas. El sentido de la justicia emerge de la
+ética, del querer vivir juntos una vida buena, y no del punto de
+vista moral, de la prohibición y del sistema jurídico, aunque allí
+tendrá la formalización que confiere a las instituciones la coheren-
+cia y la protección que les permite adquirir estabilidad y perdurar
+en el tiempo.
+      En este punto recupera Ricoeur el concepto del poder, de
+Hannah Arendt, como opuesto a la violencia o a la fuerza y como
+resultado del querer vivir juntos y de la acción en común, o de la
+praxis (no poiesis), en el sentido de Aristóteles. A partir de estas
+fuentes de pensamiento quiero agregar que este lugar originario
+del poder que se transfiere luego a las instituciones y al orden po-
+lítico, un poder que no es «violencia legítima» (expresión contra-
+dictoria, que M. Weber trasmitió con éxito lamentable a la ciencia
+política contemporánea), permanece de ordinario invisible y se haya
+encubierto por las estructuras institucionales y las relaciones de
+dominación. (Habermas diferencia en este sentido la génesis
+comunicativa del uso administrativo del poder). Pero el estrato visible
+solamente existe y se mantiene sin apelar a la violencia mientras
+logra conectar con aquella base y canalizar algo de la fuente ge-
+nuina del poder democrático. Esta fuente sólo se hace visible y sube
+al centro del escenario político de manera discontinua, en situacio-
+nes excepcionales, en los momentos fundacionales de las comuni-
+dades y de los Estados, en las circunstancias de crispación política
+en que el pueblo se vuelca disruptivamente a las calles para decir
+que no, y en «el caso serio» de las situaciones revolucionarias, en
+las que la irrupción del descontento de la multitud disuelve y ba-
+rre todo un orden institucional jurídico-político que se ha desco-
+nectado de su fuente del poder, se ha tornado ilegítimo y se sostie-
+ne solamente por la fuerza, porque ha devenido, a la vez, impo-
+tente e injusto.
+     El genuino poder que legitima y sostiene el vigor del poder ad-
+ministrativo de los gobernantes y de las instituciones, es al mismo
+tiempo la fuente del cuestionamiento que les sustrae ese poder, las
+desestabiliza y, finalmente, las hace caer toda vez que estas se des-
+conectan de su base constitutiva y distorsionan o traicionan la in-
+tención ética más profunda de la institucionalidad de la vida en
+común. Lo novedoso de esta apropiación del pensamiento arendtiano
+
+                                  47
+                             JULIO DE ZAN
+
+sobre el poder por parte de Ricoeur, es que él ha puesto en esta
+base profunda y anterior a las instituciones y a sus formas jurídicas
+la raíz del sentido de la justicia y del reclamo de justicia como una
+exigencia ética, antes que jurídica y política. Y por esta vía inten-
+tará proveer a las teorías de la justicia, como la de Rawls, de otro
+fundamento independiente, más profundo y más potente que el
+del construccionismo racional y contractualista. «Por evasivo que
+sea el poder en su estructura fundamental; por débil que él sea sin
+la ayuda de una autoridad que lo articule en sus fundamentos más
+antiguos, es él, en cuanto querer obrar y vivir juntos, el que aporta
+a la intención ética el punto de aplicación de su tercera dimensión
+indispensable, la justicia» (Ricoeur, 1996, p. 230).
+     La justicia como la primera virtud de las instituciones es la
+intención ética que tiende a poner la dominación política bajo la
+dirección y el control del poder social. Esta tarea podría caracteri-
+zar el proyecto definitorio de la democracia. Pero es sin embargo
+una tarea siempre inacabada, y «nada es más grave como el con-
+fundir el poder con la dominación [...] si el poder es la fuente olvi-
+dada de la dominación [...] es incontestable la ausencia de parale-
+lismo entre la autonomía moral y lo que sería para un pueblo la
+autolegislación mediante la cual la dominación no haría más que
+arrancar del olvido el querer vivir juntos y el actuar en común de
+un pueblo» (Ricoeur, 1996, p. 283). Ricoeur se separa con esto de
+la utopía democrática en la cual la dominación se suprimiría como
+tal para dar lugar al puro poder inmanente a la praxis, en el sen-
+tido de H. Arendt. El propio Kant, influenciado por Rousseau, había
+sostenido que: «El poder legislativo sólo puede corresponderle a la
+voluntad unificada de todo el pueblo, de quien debe emanar todo
+derecho [... ] Por consiguiente sólo puede ser legisladora la volun-
+tad consensuada y unificada de todos» (Doctrina del derecho, § 46).
+La crítica liberal ha insistido, como se sabe, en que este concepto
+de la voluntad unificada del pueblo es una ficción que sólo podría
+realizarse suprimiendo las diferencias y la heterogeneidad de las
+voluntades individuales. Es claro que la posición de Ricoeur tiene
+en cuenta este tipo de críticas y por eso contradice la propuesta
+rousseauniana de H. Arendt. Pero esta es una discusión abierta, y
+sin dudas fundamental, en la filosofía política contemporánea, en
+la que ya no podré entrar ahora.
+
+                                 48
+                        «ÉTICA», MORAL Y DERECHO
+
+    BIBLIOGRAFÍA
+    AGAMBEN, Giorgio, La comunidad que viene, Pretextos, 1999.
+     ALEXY, Robert, Theorie der Juristischen Argumentation, Fráncfort,
+1978 (trad. esp.: Teoría de la argumentación jurídica, Madrid, 1989).
+     – Teoría del discurso y derechos humanos, Colombia, 1995.
+     APEL, Karl-Otto, Transformación de la filosofía (1972), Madrid,
+1985, 2 vol.
+     – Estudios éticos, Barcelona, 1986.
+     – Diskurs und Verantwortung, Fráncfort, 1988
+     – A. Cortina, J. De Zan y D. Michelini, Ética comunicativa y
+         democracia, Crítica, Barcelona, 1991
+     – Auseinandersetzungen, Fráncfort, 1999.
+     ARATO, Andrew, «Procedural Law and Civil Society.
+Interpreting the Radical Democratic Paradigm», en M. Rosenfeld and
+A. Arato, Habermas on Law andDemocracy: Critical Exchanges, Berkeley,
+California, 1998.
+     ARENDT, Hannah, La vida del Espíritu, Madrid, 1984, p. 526.
+     – ¿Qué es la política?, Barcelona, 1997.
+     – Eichmann en Jerusalén, 2a ed., Barcelona, 1999.
+     ARNIO, A., Lo racional como razonable, Madrid, 1991.
+     AYER, a. J., Language, Truth an Logic, 2a ed., 1946, (trad. caste-
+llana: Lenguaje, verdad y lógica, Eudeba, Buenos Aires).
+     BARBER, Benjamín, «La democracia liberal y los costos del consen-
+so», en N. Rosenblum, El liberalismo y la vida moral, Buenos Aires, 1993.
+     – Un lugar para todos, Barcelona, 2000.
+     BOBBIO, Norberto, El futuro de la democracia, FCE, México, 1986.
+     – L’Età dei diritti, Turín, 1990, (trad. española El tiempo de los
+         derechos, Madrid, 1991.
+     – El tercero ausente, Madrid, 1997.
+     BOURDIEU, Pierre, Contrafuegos. Reflexiones para servir a la re-
+sistencia contra la invasión neoliberal, Barcelona, 1999.
+     – Poder, derecho y clases sociales, Desclée de Bouwer, Bilbao, 2001.
+     CALSAMAGLIA, A., «Ensayo sobre Dworkin», prólogo a la
+edición española de Los derechos en serio, Barcelona, 1984.
+
+                                   49
+                              JULIO DE ZAN
+
+     CAMPS, Victoria, «Moral pública y moral privada», en J. S.
+Avarezunde (ed.), Actas del 2° Congreso Nacional de Bioética Funda-
+mental y Clínica, Madrid, 1999.
+     CANADIAN JUDICIAL COUNCIL, Ethical Principles for Judges,
+Ottawa, Ontario, 1998.
+     CANIVET, G., «Le droit communitaire et l’office du juge
+national», Droit et Société, 1992, n° 20-21.
+     CORTINA, A., Ética aplicada y democracia radical, Tecnos,
+Madrid, 1993.
+     – Ética mínima, Madrid, 1996.
+     – «Universalizar la aristocracia. Por una ética de las profesio-
+        nes», en Actas del 2° Congreso Nacional de Bioética Fundamen-
+        tal y Clínica, Madrid, 1999.
+     CRUZ, Manuel, Hacerse cargo, Barcelona, 1999.
+     DAHL, Robert, Los dilemas del pluralismo democrático. Autono-
+mía vs. control, México, 1991.
+     DE TOCQUEVILLE, A., La democracia en América, Madrid, 1968.
+     DE ZAN, J., «El saber y los valores en la filosofía de Max
+Scheler», en Stromata, XXXV, n° 1-2, Buenos Aires, 1979.
+     – Apel y el problema de la fundamentación de la ética en la épo-
+        ca de la ciencia» en Stromata, XLII, n° 1-2, Buenos Aires, 1986.
+     – «Pragmática del lenguaje y racionalidad comunicativa», en
+        Stromata, XLVI, Buenos Aires, 1988.
+     – «Moralidad y eticidad, o Kant y Hegel», en Cuadernos de
+        ética, n° 7, Buenos Aires, 1989.
+     – Libertad, poder y discurso, Buenos Aires, Almagesto, 1993.
+     – «Racionalidad científico-tecnológica y cultura», en D.
+        Michelini y otros, Racionalidad y cultura (vol. col.), ICALA,
+        Río Cuarto, 1993.
+     – «Etica y moral en J. Habermas», en P. Britos, J. De Zan y
+        otros, Éticas del siglo, Rosario, 1994.
+     – «Poder, pactos políticos y procedimientos democráticos», en
+        D. Picotti (comp.), Pensar desde América Latina, Catálogos,
+        Buenos Aires, 1995.
+     – «Una teoría del estado de derecho», en Cuadernos de ética,
+        n° 19-20, Buenos Aires, 1995.
+
+                                  50
+                   «ÉTICA», MORAL Y DERECHO
+
+–   «Pensamiento reconstructivo y mundo simbólico», en Tópi-
+    cos n° 4, Santa Fe, 1996.
+–   «Ética, derecho y política en K.-O. Apel y J. Habermas», en
+    D. Michelini y otros, Eficiencia y justicia social, Río Cuarto,
+    1996.
+–   «El problema ético y político de la época de la ciencia y de
+    la técnica», en C. Ruta y otros, Saber del tiempo, tiempo del
+    saber, J. Baudino Ediciones, Buenos Aires, 1997.
+–   «Hermenéutica y reconstrucción racional», en Mónica
+    Cragnolini y R. Maliandi (comps.), La razón y el minotauro,
+    Almagesto, Buenos Aires, 1998.
+–   «Wittgenstein y la ética», en Tópicos, n° 7, Santa Fe, 1999.
+– «Identidad y universalidad en Paul Ricoeur», en Erasmus,
+  Revista Latinoamericana Interdisciplinaria del ICALA, n° 1,
+  Río Cuarto, 1999.
+– Panorama de la ética continental contemporánea, Akal, Madrid,
+  2002
+– «Decir que no», en Tópicos. Revista de Filosofía de Santa Fe,
+  n° 10, 2002.
+– «La sociedad dividida», en Violencia, instituciones y educa-
+  ción, vol. Colectivo, editado por D. Michelini y otros, Funda-
+  ción ICALA, Río Cuarto, 2002.
+– Panorama de la ética contemporánea, Akal, Madrid, 2003
+– «La exclusión del otro», en Erasmus, V, n° 2, Río Cuarto,
+  2003.
+– «Filosofía y política en Hannah Arendt», en Cuadernos del
+  Sur, Revista de la Universidad Nacional del Sur, Bahía Blan-
+  ca, 2003
+– La filosofía práctica de Hegel, ICALA, Río Cuarto, 2003.
+– «La filosofía de la liberación de los ’70 y la Argentina del
+  siglo XXI», en Erasmus, V, n° 1-2, 2004.
+– «E. Tugendhat: Filosofía analítica y fundamentación de la
+  ética normativa», Teoría, Tucumán, n° extraordinario en
+  homenaje al Prof. Dr. Roberto Rojo, 2004.
+DELMAS MARTY, M., Pour un droit comun, Ed. Du Seuil, París, 1994.
+
+                              51
+                              JULIO DE ZAN
+
+      DERRIDA, J., Fuerza de ley. El «fundamento mítico de la autori-
+dad», Tecnos, Madrid, 1997.
+      DWORKIN, Ronald, Los derechos en serio, Barcelona, 1984.
+      – Law’sEmpire, Cambridge, Massachussets, 1986.
+      – Ética privada e igualitarismo político, (1990), Barcelona, 1993.
+      – La comunidad liberal, Bogotá, 1996.
+      ELLSCHEID, G., W. HASSEMER (eds.), Interessen jurisprudence,
+Darmstadt, 1974.
+      FALK, Richard, «Una revisión del cosmopolitismo» en M.
+Nussbaum, 1999.
+      FARELL, M. D., «La ética de la función judicial», en J. Malem,
+y otros, La función judicial. Ética y democracia, Gedisa, Barcelona, 2003.
+      FERNÁNDEZ FERNÁNDEZ, J. L. y A. HORTAL ALONSO
+(comp.), Ética de las profesiones jurídicas, Comillas, 2001.
+      FISS, O., «Objectivity and Interpretation», en Stanford Law
+Review, 34, 1982.
+      FORNARI, A., en J. DE ZAN y otros, «Los fundamentos de la
+ética en la época contemporánea. Problemas y propuestas», Tópicos.
+Revista de filosofía de Santa Fe, n° 3, 1995.
+      FORST, R., Kontexte der Gerechtigkeit, 1994.
+      GADAMER, Hans-Georg, «Hermeneutik als praktische
+philosophie», en el libro del mismo: Vernunft im Zeitalter der
+Wissenschaften, Fráncfort, 1976, p. 78 ss.
+      – GADAMER, H.-G., Verdad y método I, Salamanca, 1993.
+      – GADAMER, H.-G., Verdad y método II, Salamanca, 1998.
+      GARAPON, A., Le Gardien des Promesses. Justice et Démocracie,
+(París, 1996), (trad. esp. Juez y Democracia, Madrid, 1997).
+      GARCÍA PASCUAL, G., Legitimidad democrática y poder judi-
+cial, Valencia, 1997.
+      GARGARELLA, R., La Justicia contra el gobierno, Ariel, Barcelo-
+na, 1996.
+      – Crítica de la Constitución. Sus zonas oscuras, Buenos Aires,
+         2004.
+      GAUCHET, M., «L’expérience totalitaire et la pensée du
+politique», en Esprit, n° 7-8, 1976.
+
+                                   52
+                        «ÉTICA», MORAL Y DERECHO
+
+     GRAY, John, Las dos caras del liberalismo, Barcelona, 1993.
+     – Las dos caras del liberalismo. Una nueva interpretación de la
+         tolerancia liberal, Paidós, Barcelona, 2000.
+     GUARIGLIA, O., Moralidad, Ética universal y sujeto moral, Bue-
+nos Aires, FCE, 1996.
+     GUARIGLIA, O., Una ética para el siglo XXI. Ética y derechos
+humanos en un tiempo posmetafísico, FCE, Buenos Aires, 2002.
+     GUÉHENNO, Jean-Marie, El fin de la democracia. La crisis políti-
+ca y las nuevas reglas de juego, Barcelona, 1995.
+     GÜNTHER, Klaus,              Der Sinn für          Angemesenheit.
+Anwendungsdiskurse in Moral und Recht, Fráncfort, 1988.
+     HABERMAS, Jürgen, Theorie des kommunikativen Handelns,
+Fráncfort, 1981, 2 tomos, (trad. esp.: Teoría de la acción comunicativa,
+Madrid, 1987.
+     – Erläuterungen zur Diskursethik, Fráncfort, 1991, (trad. espa-
+         ñola: Aclaraciones a la ética del discurso, Madrid, 2000).
+     – Faktizität und Geltung. Beiträge zur Diskurstheorie des Rechts
+         und des demokratischen Rechtsstaats, Suhrkamp. Fráncfort,
+         1992, (traducción española: Facticidad y Validez. Contribucio-
+         nes para una teoría discursiva del derecho y del estado de dere-
+         cho democrático, Madrid, 1998).
+     – «El Estado-nación europeo y las presiones de la
+         globalización», en New Left Review, n° 1, Barcelona, 2000.
+     – Die Einbeziehung des Anderen, Francfort, 1996, (trad. La in-
+         clusión del otro, Madrid, 1999).
+     HAMPSHIRE, Stuart, Moral pública y privada, (1978), México,
+1983.
+     HASSEMER, Winfried, «Juristische Heremeutik», en Archiv
+fürRechts- und SozialPhilosophie, n° 72, LXXII/Heft 2, Stuttgart, 1986.
+     HEGEL, G.W.F., Filosofía del derecho.
+     HELD, David, Democracy and the Global Order. From the Modern
+State to Cosmopolitan Democracy. Polity Press, Londres, 1995.
+     – «Violencia y justicia en una era mundial», diario El País,
+         Madrid, 19 de septiembre de 2001.
+     – «Law of States, Law of Peoples: Three Models of
+         Soveregnity», en Legal Theory, I, 2002.
+
+                                   53
+                              JULIO DE ZAN
+
+    –    A. MCGREW, Governing globalization. Power, authority and
+         global governance, Polity Press, Cambridge, 2002.
+     HIERRO PESCADOR, J., «Ética», en Diccionario de filosofía con-
+temporánea, Salamanca, 1979.
+     HOBBES, TH., De Cive, (trad. esp. Sobre el ciudadano, Trotta, 2002).
+     HÖFFE, Otfried, Derecho intercultural, Barcelona, 1999.
+     – «¿Hay un derecho penal intercultural? Ensayo filosófico»,
+         en Erasmus, n° 1, Río Cuarto, 1999.
+     – Demokratie im Zeitalter der Globalisierung, Múnich, 1999.
+     HONNETH, Axel, La lucha por el reconocimiento. Por una gramá-
+tica moral de los conflictos sociales, Crítica, Barcelona, 1997.
+     HUDSON, W. D., La filosofía moral contemporánea, Madrid, 1974.
+     KANT, I., Fundamentación de la metafísica de las costumbres (Ak.
+Ausg., IV, 415), ed. española bilingüe, Ariel, Barcelona, 1996.
+     KYMLICKA, Will, «La tradición del contrato social», en P.
+Singer, Companion to Ethics, 1991, (trad. esp. Compendio de ética,
+Madrid, 2000).
+     LARENZ, K., Derecho justo. Fundamentos de ética jurídica, Civitas,
+Madrid, 1985.
+     LENOBLE, Jacques, «Law and Undecidibility», M. Rosenfeld and
+A. Arato, en Habermas on Law and Democracy: Critical Exchanges,
+Berkeley, California, 1998.
+     LYOTARD, J.-Fr., Tombeau de l’intelectuel, París, 1984.
+     MACINTYRE, A., After Virtue, New York, 1984; Tras la virtud,
+Crítica, Barcelona, 1987.
+     MACKIE, John L., Ética. La invención de lo bueno y de lo malo,
+(1977), Barcelona, 2000.
+     MALAMUD GOTTI, J., Los dilemas morales de la Justicia interna-
+cional. El caso Pinochet, Ciepp/Miño y Dávila, Buenos Aires, noviem-
+bre de 2003.
+     MALIANDI, Ricardo, Ética, conceptos y problemas, 3a ed., Biblos,
+Buenos Aires, 2004.
+     MAUS, I., Zur Aufklärung der Demokratietheorie, Fráncfort, 1992.
+     MICHELMANN, F., «Justificatio and the Justificabilty of Law»,
+en Nomos, XVIII, 1986.
+
+                                   54
+                        «ÉTICA», MORAL Y DERECHO
+
+     MOUFFE, CH., «Carl Schmitt y la paradoja de la democracia
+liberal», en Tópicos. Revista de filosofía de Santa Fe, n° 10, 2002.
+     NAGEL, Thomas, «Los grandes crímenes modernos son críme-
+nes públicos», en Stuart Hampshire, 1983.
+     – «La crueldad en la vida pública», en Stuart Hampshire, 1983.
+     NEGRI, T., M. HARDT, Multitud, guerra y democracia en la era
+del imperio, Sudamericana, Buenos Aires, 2004.
+     NINO, C., Ética y derechos humanos, Buenos Aires, Paidos, 1984.
+     ORTEGA Y Gasset, J., La rebelión de las masas (1926), Buenos
+Aires, 1949.
+     PELLEGRINO, E. D., D. C. THOMASMA, The virtues in medical
+practice, New York/ Oxford, 1993.
+     PERELMANN, Ch., L.OLBRECHTS-TYTECA, La nouvelle
+rethorique (1958), 2a ed., Bruselas, 1970.
+     PETERS, B., Rationalität, Recht und Gesellschaft, Fráncfort, 1991
+     PIAGET, J., El criterio moral en el niño, Martínez Roca, Barcelo-
+na, 1984.
+     PIEGLER, JOSEF , «Der Richter im Rechtstaat», Österr
+Juristenzeitung, 1965.
+     POPPER, Karl, Conjeturas y refutaciones. El desarrollo del conoci-
+miento científico, Barcelona, 1983.
+     RADBRUCH, Die Natur der Sache als juristische Denkform, 1960.
+     RAWLS, John, Una teoría de la justicia (1971), México, 1979.
+     – Political liberalism, New York, 1993, (trad. El liberalismo polí-
+         tico, Crítica, Barcelona, 1996.
+     El derecho de gentes (1999), Barcelona, 2001.
+     RAYNAUD, PH. y ST.RIALS (ed.), Diccionario de filosofía políti-
+ca, Madrid, 2001.
+     RICOEUR, P., Soi-même comme un autre, 1990, (edic. castellana:
+Sí mismo como otro, México, 1996).
+     RIUTORT SERRA, Bernat, Razón política, globalización y moder-
+nidad compleja, El Viejo Topo, España, 2001.
+     – (ed.), Conflictos bélicos y nuevo orden mundial, Barcelona, 2003.
+     RORTY, Richard, Contingencia, ironía y solidaridad, Paidós, Bar-
+celona, 1991.
+
+                                  55
+                             JULIO DE ZAN
+
+     SCHAMBECK, Herber, «Richteramt und Ethic» en
+Wissenschaftliche Ajhandlungen und Reden zur Philosophie, Politik und
+Geistesgeschichte, Band 15, Duncker and Humboldt, Berlin.
+     SCHELER, Max, El resentimiento en la moral, Espasa-Calpe, Bue-
+nos Aires, México, 1944.
+     – El puesto del hombre en el cosmos, Buenos Aires, 1964.
+     SCHMITT, Carl, Sobre el parlamentarismo, Tecnos, 1990.
+     SHIENTAG, B. L., «The Virtue of Impartiality», en G. R. Winters
+(ed.), Handbook for Judges, American Judicature Society, 1975.
+     SINGER, Peter, One World, (2002), (trad. Un solo mundo. La éti-
+ca de la globalización, Paidós, Barcelona, 2003).
+     SOUZA Santos, B., La globalización del derecho. Los nuevos cami-
+nos de la regulación y la emancipación, Bogotá, 2002.
+    SUMNERS, R. S., Instrumentalism and American Legal Theory,
+Ithaca, 1982.
+    TARELLO, G., Cultura giuridica e política del diritto, Bolonia, Il
+Mulino, 1988.
+    TAYLOR, Charles, «Propósitos cruzados: el debate liberal-co-
+munitario», en R. Rosenblum, El liberalismo y la vida moral, Buenos
+Aires, 1993.
+    THOMAS, James Burrows, Judicial Ethics in Australia, The Law
+Book Company, Sydney, 1988.
+     THOMPSON, Dennis, La ética política y el ejercicio de cargos pú-
+blicos, Barcelona, 1999.
+     TORBISCO CASAL, N., «Sobre la relevancia de la justicia in-
+ternacional», en Malamud Jaime, Los dilemas morales de la justicia
+internacional. El caso Pinochet, CIEPP/Miño y Dávila, 2003.
+    TUGENDHAT, Ernst, Lecciones de Ética, Barcelona, 1997.
+    TULMIN, S., Uses of Argument, Cambridge, 1958.
+    VALCARCE, Amelia, Ética para un mundo global, Madrid, 2002.
+   VATTIMO, G., J. DERRIDA, Diritto, giustizia e interpretatione.
+Anuario filosófico europeo, Roma-Bari, Laterza, 1998.
+    VIGO, R. L., Perspectivas iusfilosóficas contemporáneas, Abeledo-
+Perrot, Buenos Aires, 1991.
+
+                                 56
+                        «ÉTICA», MORAL Y DERECHO
+
+    VIRNO, Paolo, Gramática de la multitud, Colihue, Buenos Aires,
+2003.
+    WALZER, Michel, «Political action: the problem of dirty hands»,
+en Philosophy and Public Affairs, 2, n° 2, 1973.
+    –   Thick and Thin. Moral Arguments at home and Abroad, New
+        York, 1994, (trad. esp. Moralidad en el ámbito local e interna-
+        cional, (1994), Madrid, 1996.
+    –   Jus and Unjust Wars, Harmondsworth, Penguin, 1980, (trad.
+        esp.: Barcelona, Paidós, 2001).
+     WAYNE MACKAY, A., «Judicial Ethics: Exploring Misconduct
+and Accountability for Judges», Dalhousie University, 1995,
+Discussion Paper for Commonwealth Chief Justices Roundtable
+Meeting, <http://is.dal.ca/~cjei/mackay.html>.
+     WEBER, M., Politik als Beruf. Wissenschaft als Beruf (trad. esp. La
+política como vocación, Madrid, 1975).
+     – La ética protestante y el espíritu del capitalismo (Gesammelte
+         Aufsätze zur Religionssoziologie), I, pp. 1-202), Premia, Méxi-
+         co, 1981.
+     WINCH, P., The idea of a Social Science, London, 1958.
+     WINGERT, L., Gemeinsinn und Moral, 1993.
+     ZOLO, Danilo, Cosmópolis (Perspectiva y riesgos de un gobierno
+mundial), Paidós, Barcelona, 2000.
+
+
+
+
+                                  57
+RUDOLF LAUN
+
+
+
+
+    58
+                                DERECHO Y MORAL
+
+
+
+
+                       DERECHO Y MORAL
+     Siguiendo una vieja tradición académica*, recojo el símbolo del
+cargo de manos de mi estimado predecesor, y suplico, ante todo, se
+rae permita expresarle mi gratitud por las hermosas y cordiales pa-
+labras que acaba de pronunciar.
+     Le doy también las gracias a nombre de la Universidad, del Se-
+nado Académico y de las Facultades, por todo lo que ha hecho por
+la Universidad durante el año rectoral que acaba de transcurrir, por
+sus múltiples y valiosos esfuerzos siempre coronados de éxito y por
+el enorme cúmulo de talento, trabajo y dedicación que puso al servi-
+cio de su cargo. La Universidad no olvidará todo eso.
+      De acuerdo con una hermosa costumbre académica, pido, ade-
+más, se me permita contribuir a la fiesta de hoy con algunas medita-
+ciones acerca del campo de mis investigaciones. Versarán sobre un
+tema que es para todos nosotros de la mayor importancia, tanto en
+lo que se refiere a los fundamentos de nuestra concepción del mun-
+do, cuanto en lo que concierne a las decisiones prácticas inmediatas
+que a diario tomamos en la vida privada, en el derecho y en la polí-
+tica. Se trata del problema del derecho y la moral.
+     Claro es que en el breve lapso en que puedo ocupar la pacien-
+cia de ustedes, sólo me será posible trazar escuetos contornos, seme-
+jantes a las pocas líneas con que un pintor bosqueja el cuadro antes
+de realizarlo. Yo debo también, como el pintor, reservar la ejecución
+a trabajos posteriores.
+     Nuestro punto de partida lo constituye el juicio de valor, el juicio
+sobre el bien y el mal y la vivencia correspondiente del deber, de la
+obligación, de la orden, del mandato, del imperativo, de la norma, o,
+en otras palabras, la pregunta ¿qué debo hacer? o ¿qué es bueno?
+*
+    Discurso rectoral pronunciado por el doctor Rudolf Laun el día 10 de noviembre
+    de 1984, al tomar posesión de la rectoría de la Universidad de Hamburgo. (Nota
+    del Traductor.)
+
+                                       59
+                              RUDOLF LAUN
+
+     Ya Shaftesbury reconoció que la respuesta a esa pregunta no
+puede derivarse de la amenaza divina de una recompensa o castigo,
+ni tampoco de leyes naturales, físicas o fisiológicas, sino que el juicio
+de valor es de especie propia. Pero Shaftesbury no pensó hasta el
+final este pensamiento.
+     Como es sabido, fue Kant el primero en fundar una nueva éti-
+ca, independiente de los dogmas religiosos y las leyes naturales, al
+concebir la diferencia entre el acontecer y el deber como una oposi-
+ción de categorías irreductibles de nuestro conocimiento.
+     Esta oposición entre el ser y el deber es fundamental para nues-
+tro pensamiento. Domina incluso nuestra clasificación suprema de
+las ciencias. En efecto, distinguimos las ciencias causales de las nor-
+mativas, o imperativistas. Las primeras indagan lo que es; las segun-
+das, lo que debe ser.
+     La ética y la ciencia del derecho pertenecen a ambos campos.
+De una parte, estudian las costumbres e instituciones jurídicas exis-
+tentes de manera causal, descriptiva y explicativa, histórica, psicoló-
+gica y sociológica. Pero, de otra, preguntan ¿qué debo hacer?..., ¿qué
+estoy obligado a hacer? Hablamos entonces de una ética y una cien-
+cia jurídica imperativista o normativa. Los juristas llaman, de prefe-
+rencia, dogmática a la consideración imperativista del derecho. Pro-
+cede también normativa o dogmáticamente la práctica de los tribu-
+nales, de las autoridades y abogados y de toda la literatura jurídica
+enfocada hacia una aplicación práctica. Porque en todos estos casos
+no se quiere describir o explicar causalmente, sino contestar la pre-
+gunta ¿qué debe ser?, ¿qué es justo o injusto?
+    ¿Cómo se puede responder a la pregunta qué debo hacer?
+     Nos encontramos aquí frente a una grave dificultad. Del ser no
+es posible derivar ningún deber. De que el mundo causal transcurra
+de tal o cual manera, no se sigue todavía que yo o alguien deba hacer
+algo. De que alguien ordene algo —por ejemplo—, o que lo obtenga
+por la fuerza, no se infiere que otro esté obligado a obedecer.
+     En el campo de la moral, Kant y todos los partidarios de la
+ética imperativista eludieron la dificultad. Kant enseñó que la ley
+moral es autónoma, que el hombre «sólo está sometido a una legis-
+lación propia y sin embargo general». Lo cual significa que quien
+
+                                   60
+                           DERECHO Y MORAL
+
+cumple un deber moral obedece a una ley que él mismo se ha dado,
+convencido de su universal validez.
+    Pero ¿qué sucede con el derecho?
+     Todos los juristas, teóricos y prácticos, han estado acordes des-
+de siempre en que éste es heterónomo, es decir, que en él no nos
+liga la voluntad propia, sino una voluntad extraña, la del llamado
+legislador.
+    Pero al mismo tiempo, todos los que han comprendido la oposi-
+ción de las categorías epistemológicas del acontecer y el deber, lle-
+gan con necesidad ineludible a la conclusión de que el derecho per-
+tenece al mundo normativo.
+     El derecho vale, por tanto, como un deber heterónomo, esto es,
+como un sistema de mandatos, imperativos y deberes, cuyo conteni-
+do nos es impuesto por una voluntad extraña, precisamente la del
+legislador, ya sea que nos obligue inmediatamente —como acepta
+sin críticas la mayoría—, o sólo nos ligue mediatamente, derivando
+su autoridad de la ley moral —como en Kant—, o sometiéndonos
+nosotros al derecho por virtud de una aceptación general o —según
+la frase de Radbruch— «aceptándolo en blanco».
+     A esta concepción de la ciencia y la práctica del derecho como
+deber heterónomo me opongo yo, sin embargo. Si no nos conforma-
+mos con la descripción y explicación causal, sino que queremos con-
+testar a la pregunta ¿qué debo hacer?, pregunta que forzosamente
+tenemos que planteamos, debemos entonces afirmar que los manda-
+tos jurídicos son objeto de la auto-legislación o —en otras palabras—
+que son autónomos.
+    Los mandatos del derecho son autónomos, pues quien obedece un
+deber jurídico, no una necesidad o una coacción, sigue tan sólo una ley
+que él mismo se ha dado para cada caso de aplicación concreta.
+     Para poder fundar y desarrollar mi tesis y derivar de ella con-
+clusiones ulteriores, séame permitido retroceder hasta su supuesto
+último y más general: la categoría epistemológica del deber, del
+mandato, del imperativo.
+    También aquí encontraremos en Kant las bases de nuestro pen-
+samiento, aunque en una forma que en parte debo criticar.
+
+                                  61
+                              RUDOLF LAUN
+
+     Como es sabido, el filósofo de Koenigsberg enseña que todos los
+imperativos son hipotéticos o categóricos. Los hipotéticos ordenan una
+acción como medio para un fin; los categóricos, en cambio —sin refe-
+rencia a ningún fin— la ordenan como buena en sí. Categórica es,
+por tanto, únicamente la ley moral que nos obliga inmediatamente
+como un fin supremo, como un fin en sí. Todos los demás imperativos
+son hipotéticos; son reglas de la habilidad y de la inteligencia. Que el
+fin al que sirvan como medios sea moral, no interesa. Así —por ejem-
+plo— observan el médico y el envenenador las mismas prescripcio-
+nes: uno para aliviar al paciente, el otro para matar a su víctima.
+     Imperativos hipotéticos son también —según Kant— las leyes
+jurídicas que, en oposición a la ley moral autónoma, se conciben como
+leyes heterónomas. La ley moral es en el sentido kantiano un deber
+categórico; las leyes jurídicas, en cambio, son deberes hipotéticos.
+     Se afirma aquí, por tanto, una oposición entre las formas
+epistemológicas de lo categórico y lo hipotético. Tal vez fuera prefe-
+rible hablar de lo incondicionado y lo condicionado, porque la ex-
+presión «categórico» se necesita —como he procurado demostrarlo
+en otro lugar (Archivo de derecho público, tomo XXXIV)— para desig-
+nar el opuesto categórico de «disyuntivo».
+     Ahora bien, me veo obligado a sostener que el más grande de
+todos los pensadores, en su doctrina del imperativo, no ha distingui-
+do con la necesaria precisión el imperativo como categoría epistemológica
+—el deber en oposición al acontecer— del imperativo como simple medio
+lingüístico de expresión.
+    Es cierto que la gramática conoce frases imperativas condicio-
+nadas e incondicionadas; pero eso nada tiene que ver con nuestro
+problema, porque lingüísticamente se pueden formular
+incondicionadamente las frases más diversas, no sólo la ley moral.
+     Pero si invocamos, no la forma lingüística, sino el contenido ló-
+gico, habrá que concluir de la siguiente manera: la relación entre
+medio y fin es causal. Los imperativos hipotéticos de Kant expresan
+la relación de medio a fin. En consecuencia, son expresiones de una
+relación causal. Del acontecer causal, empero, no es posible derivar
+ningún deber. Por tanto, según la misma distinción kantiana del deber
+y del acontecer, no significan ningún deber, ningún imperativo, sino
+un acontecer.
+
+                                   62
+                           DERECHO Y MORAL
+
+     El mismo Kant comprendió que los imperativos hipotéticos se
+encontraban frente a los categóricos en una oposición distinta de la
+de lo condicionado frente a lo incondicionado. A ello alude repeti-
+das veces, como cuando dice que los imperativos de la inteligencia,
+«hablando con precisión, no ordenan», sino que más bien deben
+considerarse como «consejos (consilia) o preceptos (praecepta) de la
+razón»; pero, sin embargo, él los trató como imperativos, como de-
+beres. En especial unió los imperativos jurídicos, aunque —en su
+opinión— son tan sólo hipotéticos, con los de la moral, bajo el con-
+cepto de «leyes de la libertad», y juntos los opuso —como leyes del
+deber o «morales»— a las de la naturaleza — o leyes de la necesi-
+dad. Pero como expresión de relaciones causales, los llamados impe-
+rativos hipotéticos no son la manifestación de un deber, por tanto,
+tampoco de un deber condicionado, sino declaraciones sobre una
+necesidad condicionada.
+     Esto lo demuestra el propio ejemplo de Kant. Las reglas sobre
+las mezclas de medicinas y venenos, no me dicen que yo deba em-
+plear una determinada, sino que tengo que aplicarla como conse-
+cuencia de una necesidad causal, si quiero curar una enfermedad o
+matar a un hombre. Esto no es un deber sujeto a condición, sino
+una necesidad condicionada.
+    Otro ejemplo: las reglas de la gramática inglesa no me dicen
+que deba yo hablar en determinada forma, sino que —por virtud de
+una necesidad causal— tengo que hacerlo así, si quiero hablar y ser
+entendido como si fuera un inglés.
+     Pero si ello me es indiferente, como en el caso de que no desee
+aprender inglés, desaparece la condición de la necesidad y las reglas
+de la gramática no me importan lo más mínimo. Esas reglas no con-
+tienen un deber, una obligación.
+     Sin embargo, también aquella conducta que es objeto de la ex-
+presión del llamado imperativo hipotético puede convertirse en con-
+tenido de un deber, como cualquiera otra conducta causal. Supon-
+gamos —por ejemplo— que, por su profesión, el médico está obliga-
+do moral o jurídicamente a curar a un enfermo según su leal saber y
+entender, o que alguien está obligado también profesionalmente a
+aprender inglés con todo empeño. Entonces las reglas técnicas, los
+«imperativos hipotéticos» de la terapia o de la gramática inglesa se
+
+                                 63
+                              RUDOLF LAUN
+
+convierten mediatamente en objeto de un deber. Pero, aun enton-
+ces, debe separarse la necesidad causalmente condicionada, del de-
+ber. Las reglas técnicas de la terapia o de la gramática inglesa, no
+me obligan inmediatamente como tales, sino que mi obligación tiene
+un fundamento especial, jurídico o moral, situado más allá de di-
+chas reglas. Al desaparecer éste, resulta evidente que aquellas reglas
+no tienen por objeto un deber, una obligación.
+     Hemos llegado, pues, a esta conclusión: un imperativo, en sentido
+lingüístico, es o heterónomo —en cuyo caso no puede implicar un deber—
+o implica un deber —pero entonces no puede ser heterónomo. Si tratamos
+de traducir este pensamiento del lenguaje de los filósofos al español,
+podemos decir lo siguiente: una frase que me ordena algo es o expresión
+de una voluntad ajena —en cuyo caso no me puede obligar— o me obliga
+— pero entonces no puede ser expresión de una voluntad extraña.
+     Ahora bien, como en el derecho buscamos obligaciones y debe-
+res, de aquí se sigue que los mandatos jurídicos no pueden ser ex-
+presión de una voluntad extraña, sino únicamente de la propia, o,
+en otras palabras, que esos mandatos son autónomos.
+    Pero con ello no queda resuelto el problema. Existen evidente-
+mente muchos mandatos que unos dan y otros obedecen; esto es,
+que se nos presentan como heterónomos, como, por ejemplo, los del
+llamado «derecho positivo».
+    Según la opinión dominante, las fuentes de tal derecho son:
+     1° Las costumbres, es decir, el llamado derecho consuetudina-
+rio, o no-escrito.
+    2° Las leyes y convenios estatales, el derecho escrito o legislado; y
+     3° Además, según la opinión más difundida, las órdenes de un
+poderoso o vencedor ante las que se doblegan los más débiles o los
+vencidos, sin que exista una costumbre ni se observen las formas
+determinadas de la legislación o de los convenios, como en el caso
+de la revolución y del golpe de Estado.
+     En todos estos casos una voluntad extraña, la del legislador, la
+de las autoridades o demás personas detentadoras del poder, quiere
+someter a los demás.
+    Pero de lo que hagan los detentadores del poder, de que dicten,
+promulguen y publiquen leyes y las impongan por la fuerza, no se
+
+                                  64
+                            DERECHO Y MORAL
+
+infiere que alguien deba obedecer; de los discursos, firmas, papeles
+impresos y bayonetas no se sigue ningún deber. El llamado derecho
+positivo no tiene, por ende, como contenido, ningún deber, sino
+únicamente una necesidad condicionada.
+    El hecho de que la obediencia o desobediencia traigan consigo
+consecuencias jurídicas, implica una necesidad.
+     Dichas consecuencias jurídicas consisten primeramente, tratán-
+dose de los ordenamientos jurídicos dotados de fundamentos reli-
+giosos, en recompensas y castigos en el más allá, en los que creen los
+que están sometidos al derecho, y por virtud de los cuales obedecen
+los mandatos de las autoridades terrenas. Si prescindimos de todo
+postulado metafísico y permanecemos en la esfera del llamado mundo
+de la experiencia, tendremos que reconocer que esas consecuencias
+jurídicas son recompensas, castigos y coacción. Pues la recompensa
+desemboca en último término en una coacción que se ejerce sobre el
+órgano que ha de otorgarla.
+     La consecuencia jurídica es, por consiguiente, la aplicación de
+la fuerza por parte del más poderoso contra el más débil. En donde
+resalta esto con más claridad es en las relaciones interestatales, en el
+derecho internacional. Pero vale también para los demás sectores. El
+poder coactivo del Estado no es otra cosa que el poder de aquel que
+en un cierto territorio es el más fuerte y el mejor organizado. x
+     El llamado derecho positivo —en consecuencia— es un conjunto de
+declaraciones sobre la aplicación condicionada del poder del más fuerte.
+Es poder, pura y simplemente. No contiene ningún deber, ninguna obli-
+gación.
+     Pero esta consideración causal no es por sí sola suficiente, por-
+que no nos permite emitir un juicio de valor. Por ello nos hace impo-
+sible obtener una imagen cierta del universo, una concepción del
+mundo, que naturalmente debe también responder a la pregunta
+¿qué debo hacer? Tampoco satisface a la práctica la consideración
+puramente causal, porque ella tiene asimismo que preguntar cons-
+tantemente ¿qué debe suceder? Si prescindiéramos de un juicio de
+valor, tendríamos incluso que equiparar —según el llamado derecho
+positivo— al ladrón a quien no se puede probar su delito, con el
+hombre honrado que no aprovecha, para robar, una oportunidad
+segura y sin peligro. Sin un juicio de valor únicamente habría una
+
+                                  65
+                             RUDOLF LAUN
+
+diferencia técnica y cuantitativa entre el Estado y una banda de la-
+drones, incluso según el llamado derecho positivo, que es, en el caso,
+el derecho internacional. Para esta concepción sólo existe la fuerza.
+El derecho se reduce entonces a la voluntad del más fuerte o del
+vencedor. Entre los hombres vale el mismo «derecho» que entre los
+animales: el más fuerte devora a su gusto al más débil, mientras no
+se lo impida alguien más fuerte todavía, y con ello no viola ningún
+«deber» ni comete tampoco ninguna «injusticia». La palabra «dere-
+cho» resulta entonces superflua. No hablamos —por ejemplo— del
+«derecho» del lobo de destrozar a la oveja.
+     Por tal razón sería más exacto no hablar nunca del «derecho
+del más fuerte» o del vencedor, sino siempre del «poder del más
+fuerte» o del vencedor, y —en consecuencia— preferible sería tam-
+bién no hablar nunca del «derecho positivo», sino siempre del «po-
+der positivo», en cuyo caso podría perfectamente suprimirse la pa-
+labra «positivo».
+     Pero desde antaño es costumbre aplicar el título honorífico de
+«derecho» a los preceptos heterónomos, porque en todos los tiem-
+pos los detentadores del poder han sabido presentar su voluntad
+como si fuera el «derecho» mismo. En la actualidad no podemos
+todavía suprimir ese uso del lenguaje, pero no por ello debemos de-
+jamos engañar por la palabra. Tenemos que estar seguros de que del
+poder no es posible derivar ningún deber, ni aun en el caso de que se
+llame «derecho» a la fuerza.
+     Por esta razón deberíamos —al menos en la ciencia— hablar
+siempre del «derecho positivo» o introducir designaciones como —
+por ejemplo— «derecho heterónomo» o «derecho de la fuerza», para
+evitar, en estos giros, toda apariencia de consagración moral.
+    Pero un número de hombres que en los pueblos civilizados cre-
+ce paulatinamente, conforme aumenta la cultura, se opone a consi-
+derar el derecho sólo causalmente, sólo como poder. Claro es que la
+mayoría no piensa teóricamente sobre estas cosas, pero obra de
+acuerdo con ellas. Los más no robamos ni siquiera en el caso de que
+pudiéramos hacerlo con toda seguridad y sin ningún peligro. Tam-
+bién establecemos entre el Estado y la banda de ladrones una dife-
+rencia no puramente técnica y cuantitativa, sino axiológica. Por ello
+fueron a la guerra cientos de miles, impulsados por el sentimiento
+
+                                 66
+                           DERECHO Y MORAL
+
+del deber, y sufrieron voluntariamente en el campo de batalla, en
+nombre de ese sentimiento, las más duras penalidades. Más aún,
+muchos prefirieron la muerte al incumplimiento del deber, aun en
+aquellos casos en que habrían podido violarlo impunemente. Aun-
+que los ejemplos de semejantes heroísmos representan sólo una mi-
+noría, en un inmenso número de casos puede empero observarse un
+sentimiento del deber menos elevado, menos heroico.
+     El deber —por tanto— existe. Es objeto de una vivencia. En medio
+de las consideraciones de la propia conservación y del egoísmo que
+llenan la mayor parte de nuestra existencia, vivimos también esa
+pregunta que nos hacemos a nosotros mismos: ¿qué debo hacer?,
+¿cuál es mi deber? En el lenguaje usual se llama a esto la voz de la
+conciencia o del sentimiento jurídico.
+     A los hombres incapaces de tales inquietudes los llamamos sin
+conciencia. Por numerosos que sean, no podemos construir, sobre
+ellos únicamente, el derecho y el Estado, por lo menos en la etapa
+actual de la evolución, en que el miedo a los castigos infernales ya
+no lo domina todo. Porque si todos obedecieran sólo bajo la presión
+de la fuerza, habría que colocar detrás de cada gendarme a un se-
+gundo para empujar al primero, y detrás del segundo a un tercero,
+y así sucesivamente.
+     El derecho y el Estado descansan, por tanto, indiscutiblemente,
+sobre el hecho de que una gran parte de los hombres viven realmen-
+te el deber, la obligación.
+    Ahora bien, cómo contestan esos hombres a la pregunta ¿qué
+debo hacer?, ¿cuál es mi deber?
+     El conocimiento del mundo causal no puede brindarles la res-
+puesta, porque del acontecer no se sigue deber ninguno. Cierto es
+que muchos hablan del deber y piensan únicamente en el ejecutor,
+en la prisión o en el infierno, esto es, en una necesidad condiciona-
+da, pero no en el deber mismo. Mas de lo expuesto se deduce que
+obrar por miedo es algo esencialmente distinto de obrar por deber,
+por presión interna del sentimiento jurídico o de la conciencia. La
+conducta externa puede, es cierto, ser presionada por amenazas o
+por la fuerza, pero la aprobación de la conciencia o del sentimiento
+jurídico, incluso del último y más hábil, no puede ser arrancado por
+ningún poder terreno.
+
+                                 67
+                              RUDOLF LAUN
+
+     Del mundo causal en que actúan los legisladores, verdugos y
+carceleros no puede —por tanto— obtenerse el contenido de lo que
+debo hacer. Sólo podemos damos cuenta de aquello que debemos hacer,
+del contenido de nuestro deber, por la propia e inmediata vivencia. Esta
+vivencia nadie puede conocerla si no es por experiencia propia. A
+quien no sea capaz de vivencia semejante, a quien no haya escucha-
+do la voz de la conciencia ni experimentado la inquietud del senti-
+miento jurídico, no es posible describirla ni, menos aún, enseñarla.
+     Sea ello como fuere, precisa puntualizar que la vivencia del de-
+ber, de la obligación, no es tan sólo la de un interés cualquiera, la de
+una inclinación egoísta. De otro modo, todo lo que alguien quisiera
+sería al mismo tiempo lo que debe, y el crimen resultaría tan obliga-
+torio como la acción más altruista. La vivencia del deber tiene más
+bien que abarcar la convicción, aunque inconsciente, de que en la
+misma situación todo hombre estaría obligado a obrar del mismo
+modo, lo que implica —por ende— un juicio de valor no sólo sobre
+la propia conducta, sino también sobre la humana en general.
+     Por ello no podemos, refiriéndonos a animales, hablar de un
+deber moral o jurídico, de una obligación, y, tratándose de hombres
+y pueblos primitivos, sólo podemos hacerlo en relación con cosas
+primitivas. Pero también en los peldaños más elevados es muy dis-
+tinto, individualmente, el círculo dentro del cual se vive un deber.
+Evidentemente está determinado por muchos factores causales; so-
+bre todo por la educación política del individuo y del pueblo.
+     Pero las vivencias del deber no pueden ser explicadas de un
+modo exhaustivo en su contenido, en su peculiaridad de criterio
+axiológico supremo y soberano, por factores tomados del mundo
+causal, sino que revelan, en cada momento en que se realizan, fragmentos
+del carácter del individuo, del pueblo y de la humanidad, comprensibles
+tan sólo metafísicamente.
+    La vivencia del deber es una vivencia primaria en su contenido
+concreto y, en consecuencia, científicamente irreductible e inexplicable.
+     Estas vivencias primarias son incondicionadas, como las del
+acontecer. Yo no puedo ver lo blanco condicionadamente, sino que
+lo veo o no lo veo. Del mismo modo tampoco puedo tener ninguna
+vivencia condicionada del «tú debes» en relación con un hecho con-
+
+                                   68
+                           DERECHO Y MORAL
+
+creto, esto es, que me he dado de manera incondicionada. O la ten-
+go o no la tengo.
+    Por tanto, mientras las reglas heterónomas son todas condicio-
+nadas, el deber autónomo es incondicionado. Sólo tendré que abste-
+nerme del robo en el caso de que quiera evitar la cárcel y el infierno.
+A quien no intimiden éstos, ningún obstáculo se opone en el mundo
+causal a ese delito. En cambio, si tengo la vivencia «no debes robar»,
+esa vivencia es incondicionada en cada caso concreto y en relación
+con cada hecho.
+     Tampoco aquí debemos dejamos engañar por la forma lingüís-
+tica que, tratándose de frase lógicamente incondicionada, suele re-
+producir los hechos en forma condicional.
+     La vivencia del deber no sólo es dada incondicionalmente, sino
+también ineludiblemente, con absoluta necesidad. Cierto es que puedo
+obrar contra la llamada voz de mi conciencia o contra el sentimien-
+to jurídico, pero no negarla cuando está presente. Menos aún puedo
+suplirla cuando está ausente.
+     La vivencia del deber ser es —desde luego— algo enteramente
+subjetivo. Pero de la conformidad de una pluralidad de personas re-
+sulta una objetividad empírica, aunque sólo relativa, del derecho au-
+tónomo. Porque para cada uno el sentimiento jurídico de los demás
+queda fuera de su propia subjetividad y es algo objetivamente dado.
+     La conformidad puede ser simultánea y —por ejemplo— «exte-
+riorizarse», bajo determinadas circunstancias, en las elecciones y
+plebiscitos que se realizan sin coacción ni engaño o en revoluciones
+u otros movimientos populares espontáneos. Pero la concordancia,
+incluso de muchos, puede existir aunque no se manifieste de mane-
+ra tan clara. El artículo tal o cual del Código civil puede, indepen-
+dientemente de la coacción con que sea impuesto en el mundo cau-
+sal, representar una magnitud de objetividad empírica relativa, en
+el caso de que miles de jueces y abogados consideren dicha disposi-
+ción en un sentido determinado como derecho y semejante práctica
+se apoye en la confianza general de millones de personas, aunque
+éstas no conozcan siquiera el artículo o incluso algunas de ellas, en
+casos aislados, se rebelen contra él movidas por un sentimiento jurí-
+dico divergente.
+
+                                  69
+                              RUDOLF LAUN
+
+      Pero también debe tenerse en cuenta una conformidad o conti-
+nuidad en sucesión cronológica, como en muchos casos de forma-
+ción de derecho consuetudinario y en otras evoluciones que nos ofrece
+la historia del derecho. Tales concordancias y coincidencias pueden
+rastrearse a través de generaciones, quizás a lo largo de la historia
+de todo un pueblo o, incluso, de toda la humanidad. Porque aquello
+que cambia indudablemente de pueblo a pueblo y de época a época,
+son tan sólo los hechos a los que se refieren los juicios de valor. Pero
+es un problema muy distinto saber si también estos juicios y el ca-
+rácter humano están por completo históricamente condicionados, o
+es posible afirmar algo que exista con independencia del mundo
+causal dado; en otras palabras, si toda la historia está dominada
+exclusivamente por leyes causales, por leyes naturales del acontecer
+social o propias del carácter humano, comprensibles tan sólo meta-
+físicamente. Abordar hoy este problema nos llevaría demasiado le-
+jos. Pero de lo dicho se sigue ya que debemos decidimos por la se-
+gunda parte de la alternativa. Pero entonces debe permitírsenos pre-
+guntar por un derecho distinto de la subjetividad del individuo y, en este
+sentido, objetivamente autónomo, hacia el cual se dirige lentamente la
+humanidad, partiendo primitivamente de la fuerza bruta animal, a través
+de toda su historia, hasta realizarlo plenamente. Mas este derecho nun-
+ca nos es dado de otro modo que en una suma de vivencias indivi-
+duales, subjetivas y autónomas del deber, de la obligación.
+    ¿Cómo se comporta, ahora, el derecho autónomo respecto del
+llamado positivo?
+     En las vivencias del deber agregamos a los procesos del mundo
+causal algo nuevo, algo propio, la ley de nuestro carácter. Por la
+adición de esta vivencia en el caso concreto, se convierten los pre-
+ceptos heterónomos y condicionados del llamado derecho positivo,
+que en sí sólo implican una necesidad, una fuerza condicionada, en
+deberes incondicionados y autónomos para dicho caso individual de apli-
+cación; se convierten en derecho verdadero. En otras palabras: aquello
+que decretó la fuerza y que en sí no obliga a nadie, se convierte para
+mí en el caso individual de aplicación, en derecho obligatorio, por virtud
+de la aprobación de mi conciencia o de mi sentimiento jurídico. Por esto
+podríamos llamar al derecho autónomo, al derecho verdadero, «de-
+recho del sentimiento», en oposición al heterónomo, «positivo», apa-
+rente, «derecho de la fuerza».
+
+                                   70
+                            DERECHO Y MORAL
+
+     Por tanto, no puede hablarse de un reconocimiento del orden
+jurídico como totalidad, de una «aceptación en blanco». De otro
+modo, sólo nos quedaría la alternativa entre una obediencia muerta,
+ciega, sin crítica, frente a todo aquello que nos impongan los órga-
+nos de quien detenta el poder, y la negación completa de todo dere-
+cho, la anarquía. Pero nadie piensa de esta manera, sino que, por lo
+contrario, todos distinguimos entre aquellos preceptos positivos que
+consideramos como «derecho» (Recht) y aquellos otros que conside-
+ramos como «entuerto» (Unrecht).
+     Sin embargo, aquel cuya mentalidad ha sido en cierto modo
+deformada por un estudio positivista del derecho, no se atreve ya a
+afirmar que una ley o un convenio estatal le causen agravio. Pero
+todos los demás piensan, hablan y obran de ese modo.
+     Quien reconozca —por ejemplo— la institución de la propie-
+dad privada, por regla general no tocará voluntariamente la propie-
+dad ajena, aun en el caso de que pudiera robar completamente in-
+advertido y sin peligro ninguno. La misma persona, en cambio, sólo
+observará por regla general, cuando sea obligada a ello, aquellos
+preceptos que desapruebe por ser contrarios a su convicción moral,
+como —por ejemplo— algunos relativos a impuestos o al inquilinato
+forzoso. Sin ningún escrúpulo moral, buscará en este caso, en la ley,
+algo que le permita eludir su cumplimiento. Sin el menor remordi-
+miento, ocultará a las autoridades determinados hechos o hará mani-
+festaciones falsas en su declaración de impuestos, en tanto que se-
+guramente condenaría como fraudulenta una conducta similar res-
+pecto de un cliente. Más aún, en determinadas circunstancias y aun-
+que la disposición no le afecte directamente y —por tanto— no en-
+tre en juego su egoísmo, aconsejará a sus amigos que eludan la ley y
+les prestará su apoyo.
+     De lo expuesto se desprende que el individuo puede adoptar una
+doble actitud frente al llamado derecho positivo, frente a las leyes y
+convenios estatales, etc., en cada caso de aplicación concreta: o las
+aprueba y las vive en cada caso individual de aplicación como un
+deber, como una presión interna de su conciencia o del sentimiento
+jurídico, en cuyo caso son para él derecho, aunque no las observe; o
+falta esta aprobación interna, en cuyo caso son para él tan sólo fuerza,
+aunque se doblegue ante ellas. No existe una tercera actitud.
+
+                                  71
+                                 RUDOLF LAUN
+
+     De las consideraciones anteriores se desprende que sólo existe
+un deber. Derecho y moral, concebidos ambos como un deber en oposi-
+ción al acontecer, son una y la misma cosa. Son la totalidad de las viven-
+cias del deber; son el deber concebido unitariamente.
+     A ello obedece que la conciencia y el sentimiento jurídico, en el senti-
+do de una fuente creadora de supremos valores autónomos, sean una y
+la misma cosa. Son la facultad, irreductible a leyes causales y sólo concebible
+metafísicamente, de vivir un deber. Son el deber potencial del individuo.
+    La unidad de derecho y moral no es afectada por los llamados
+conflictos entre ésta y aquél.
+      Debemos distinguir los conflictos entre deber y necesidad, de los con-
+flictos entre deber y deber.
+     En un conflicto entre deber y necesidad se encontraba —por
+ejemplo—, durante la guerra del Ruhr, el habitante alemán que era
+fiel a su patria, cuando consideraba las leyes alemanas como un
+deber y las disposiciones francesas, contrarias a ellas, tan sólo como
+una necesidad, como una fuerza. En situación semejante se encon-
+traba y se encuentra el legitimista, el partidario del antiguo régimen,
+frente a un golpe de Estado realizado con éxito o frente a una revo-
+lución triunfante. Lo mismo sucede a quien en su más profunda
+convicción moral se siente obligado a un duelo, y —por tanto— des-
+aprueba, considerándola como coacción injusta, la prohibición legal
+que se opone al mismo.
+     Tratándose de las convicciones que se presuponen en estos ejem-
+plos —y, bien entendido, sólo tratándose de ellas— luchan de un mis-
+mo lado el derecho autónomo y la moral y, del otro, la fuerza. No existe
+un conflicto entre derecho autónomo y moral.
+      Pero también hay conflictos entre deber y deber, esto es, con-
+flictos en los que existen dos o más posibilidades de conducta im-
+pregnada de valor. Piénsese —por ejemplo— en la situación en que
+se encuentran durante una lucha entre el Estado y la Iglesia, quie-
+nes se sienten obligados frente a ambos legisladores, verbi gratia un
+obispo católico de Prusia fiel a la ley y a la patria, durante la Lucha
+Cultural.
+     Otro ejemplo lo brinda el empleado veraz, que sólo cree poder
+salvar mediante una mentira el secreto oficial que se le confió.
+
+                                      72
+                             DERECHO Y MORAL
+
+     Un tercer ejemplo: si un ministro de alguno de los Estados que
+están interesados en el sostenimiento del tratado de paz, estudiase
+con seriedad y profundidad verdaderamente científicas y partiendo
+de los resultados efectivos más importantes de las investigaciones ac-
+tuales, el problema de la culpa de la guerra, se vería envuelto, a causa
+de semejante imprudencia, en un conflicto parecido, como ya deben
+reconocerlo en la actualidad muchos miembros de esos Estados.
+     En todos los ejemplos de esta segunda especie luchan el deber
+contra el deber, la obligación contra la obligación. Pero nada nos auto-
+riza para afirmar que de un lado luche precisamente el derecho y del otro
+precisamente la moral. Con toda claridad se demuestra esto en el ejem-
+plo de la lucha entre el Estado y la Iglesia. ¿De qué lado se encontra-
+ría aquí el derecho y de qué lado la moral? En otras palabras,
+     ¿a qué partido debemos reprocharle injusticia y a cuál inmora-
+lidad? Las mismas consideraciones valen también para los demás
+casos imaginables. Tan pronto como entendamos bajo la palabra
+«derecho» no la necesidad, la fuerza, sino un deber autónomo, la
+diferencia entre moral y derecho se convierte en una inútil disputa
+de palabras. Así —por ejemplo— se puede, si se quiere, designar el
+deber del empleado de decir la verdad como deber jurídico o consi-
+derar como moral su actitud respecto del secreto oficial.
+      En realidad, los conflictos entre deber y deber no son otros sino los
+que ya en la actualidctd consideramos como conflictos internos de la mo-
+ral, o morales. Estos conflictos son resueltos por el mismo legislador
+que ha creado el conflicto, por el individuo mismo. Él es el único
+que puede resolver, dentro de su propia conciencia, qué valor, qué
+deber, qué obligación es la más elevada. Por tanto, tampoco aquí se
+pone en duda la unidad de la moral y del derecho autónomo.
+     La unidad de derecho y moral nos ofrece una imagen notoria-
+mente más sencilla de determinados procesos sociales, que la que
+teníamos hasta ahora.
+     Todas las relaciones de poderío en la sociedad humana pueden fun-
+darse de dos maneras: en una necesidad o en un deber.
+    En cuanto se apoyan en una necesidad, son fuerza, aun en el caso de
+que se llame «derecho» a esa fuerza. En cambio, en cuanto significan
+un deber, son independientes de toda fuerza; son legislación autó-
+noma de la personalidad moral; son moral y derecho al mismo tiempo.
+
+                                    73
+                               RUDOLF LAUN
+
+     No existe una tercera solución. Por eso no existe ningún «derecho
+natural», ningún «derecho justo», ninguna «justicia», distintos del deber
+autónomo ético jurídico, y por eso no existe tampoco un derecho inco-
+rrecto, injusto, inmoral, una moral injusta, una justicia inmoral, etc.
+     En el terreno del deber no es posible tampoco establecer ningu-
+na diferencia entre el derecho «como es» y «como debía ser,» entre «lex
+lata» y «lex ferenda,» entre dogmática y política jurídicas. Cuando ha-
+blamos del derecho «como es,» de la lex lata, nos referimos general-
+mente a preceptos heterónomos que son observados y aplicados efec-
+tivamente —por tanto— a relaciones causales de poderío, a la nece-
+sidad condicionada, a la fuerza, al llamado derecho «positivo,» no a
+ningún deber. A veces también, cuando se contrapone la lex lata a
+las propias convicciones, de lege ferenda, se entienden bajo lex lata
+los juicios de valor de los demás, que se aceptan como un hecho
+dado y sobre los cuales se ejerce la crítica. En el mundo de mi deber,
+en cambio, no existe ninguna oposición entre lo que debo y lo que
+debería deber, ningún deber elevado a la segunda, a la tercera o a la
+cuarta potencias. Una conducta o es objeto de un deber o no lo es,
+pero no es posible tener el deber de tener un deber.
+     En cambio, quien emplea inversamente palabras como lex ferenda,
+derecho natural, derecho justo, quiere casi siempre designar con ello
+la aplicación de un criterio axiológico autónomo a medidas reales o
+imaginarias de la fuerza o al sentimiento jurídico de los demás.
+     Correspondiendo a la unidad de derecho y moral, la ciencia del
+derecho tiene, del mismo modo que la ciencia de la moral, una do-
+ble tarea.
+      O es ciencia causal, en cuyo caso debe tratar todo, incluso el llamado
+derecho positivo, con un criterio estrictamente causal, renunciando a todo
+juicio de valor y colocándose en cierto modo, más allá del bien y del mal;
+o aspira a emitir juicios de valor, en cuyo caso es al mismo tiempo ética
+imperativista y filosofía del derecho o —en otras palabras— ciencia uni-
+taria del deber unitario.
+     En cambio, la dogmática jurídica actual, llamada positivista, se
+preocupa, a pesar de la admirable agudeza de sus deducciones lógi-
+cas, por un problema que, según sus propios postulados, es insolu-
+ble: se propone derivar del poder, derecho; de la fuerza, obligacio-
+nes; de la causalidad, deberes.
+
+                                    74
+                            DERECHO Y MORAL
+
+     En realidad, los resultados de la dogmática jurídica positivista que
+—como es preciso subrayar— tienen un gran valor, formulados co-
+rrectamente desde el punto de vista del método, deben considerarse
+como hipótesis o suposiciones condicionadas, que se valen de la lla-
+mada deducción jurídica como de un medio auxiliar. Son hipótesis
+en doble sentido.
+     En primer lugar, son hipótesis sobre una necesidad condicionada,
+porque intentan predecir cómo juzgarán los tribunales y las autoridades
+administrativas. Por tanto, dan efectivamente a la ciencia causal del
+derecho sólo un medio auxiliar; a la práctica, empero, le procuran
+reglas técnicas, instrucciones para el uso del orden jurídico, compa-
+rables metódicamente con las instrucciones para el empleo de una
+mercancía; consejos para el abogado, el notario, el comerciante, el
+industrial, pero también para el delincuente.
+     Cuando el autor positivista expone solemnemente estas reglas
+técnicas, estas instrucciones prácticas, como si fueran un deber, tra-
+tando con ello de indicar a la práctica de los tribunales y de las
+autoridades cómo debe juzgar, se le escapan inadvertidamente man-
+damientos de su sentimiento jurídico subjetivo, porque de ninguna
+otra parte podría obtener un deber.
+     En consecuencia, cuando cree anunciar un derecho positivo
+objetivo, expone, casi siempre sin crítica ninguna, sus concepciones
+subjetivas. En el sentido de mis explicaciones, para que pudiese en-
+señar por lo menos algo relativamente objetivo sobre el deber, ten-
+dría que investigar si —y hasta qué punto— sus juicios de valor son
+compartidos por los demás, y construir hipótesis fundadas sobre el
+resultado. Éste es el segundo punto de vista, desde el cual las deduc-
+ciones dogmático-jurídicas pueden tener importancia como hipóte-
+sis. Así debe entenderse por regla general la dogmática jurídica en
+los fundamentos de las sentencias judiciales y de las resoluciones
+administrativas.
+     Con esta dogmática positiva que cree poder deducir deberes de
+la fuerza, tiene que caer también la doctrina de la llamada omnipoten-
+cia del legislador.
+   Todos están de acuerdo en que, en sentido causal, nadie es
+omnipotente. Pero para el planteamiento imperativista del proble-
+ma no existe ningún legislador heterónomo, por tanto tampoco ningún
+
+                                   75
+                               RUDOLF LAUN
+
+legislador heterónomo omnipotente, sino únicamente un deber autónomo.
+Y éste no es de ningún modo «omnipotente» porque no puede ordenar
+algo distinto de aquello que es vivido efectivamente por la conciencia o el
+sentimiento jurídico.
+     Lo que la dogmática positivista llama omnipotencia formal del
+legislador, o sea su competencia para prescribir todo lo imaginable,
+no es en realidad más que la posibilidad causal, de que disfruta quien
+detenta el poder, de dictar cualesquiera órdenes. Claro es que en el
+concepto de competencia del legislador va implícita la afirmación
+de los juristas de que estas órdenes son «obligatorias» para todos en
+cuanto a la pena y la ejecución. Pero precisamente en esto estriba el
+error. Debemos más bien preguntar siempre: primero —
+causalmente— si las órdenes son observadas y ejecutadas de una
+manera efectiva; y segundo —normativamente— si las mismas son
+vividas realmente como deber, como derecho, y por quién.
+     Sólo si afirmamos lo primero son, para aquel a quien quieren
+someter, una necesidad condicionada, una fuerza; son lo que se lla-
+ma derecho positivo. Sólo si se afirma lo segundo son, para aquel
+que vive el deber, derecho autónomo, verdadero. Si no se da ninguno
+de ambos casos, las órdenes del legislador no son otra cosa que palabras
+vacías o papel impreso.
+     En consecuencia, ni en uno ni en otro sentido hay la menor
+huella de omnipotencia. Empero, la fe positivista en la omnipoten-
+cia del legislador ha causado mucho daño. A ella se debe que los
+detentadores del poder, que en su mayor parte no sienten ya por
+encima de sí mismos, como antaño, las férreas leyes de un derecho
+divino, canónico o natural, piensen que pueden dar órdenes sin ton
+ni son y disponer lo que les plazca.
+     El mal se ha generalizado. Sin duda en todos los países se que-
+jan los miembros de los más diversos partidos de la elaboración en
+masa de leyes arbitrarias. Pero entre los engendros de esta locura de
+la omnipotencia del legislador no hay que contar únicamente mu-
+chas leyes «soberanas», sino también los convenios estatales «sobe-
+ranos», como los tratados de paz. Citar ejemplos resulta evidente-
+mente innecesario.
+     Frente a la arbitrariedad del legislador, a la dogmática positi-
+vista no le queda —como es sabido— más que la alternativa entre
+
+                                    76
+                               DERECHO Y MORAL
+
+la ciega obediencia del esclavo y la negación absoluta de la compe-
+tencia del legislador; por tanto, la negación del derecho y del Esta-
+do, la anarquía.
+      Nosotros, en cambio, hemos visto cómo la conciencia y el senti-
+miento jurídico resuelven, en cada caso individual de aplicación, so-
+bre el valor o desvalor de aquello que el legislador exige. Los súbditos y
+la ciencia del derecho no son esclavos del legislador sino sus jueces, quienes,
+aun en el caso que tengan que doblegarse ante la fuerza externa, son los
+llamados a resolver, en cada momento nuevamente, si aquello que les ha
+mandado dicha fuerza es bueno, es decir, moral y jurídico a la vez. De aquí
+que el deber autónomo, como premisa suprema de la deducción imperativista,
+ética y jurídica al mismo tiempo, esté situado, desde el punto de vista nor-
+mativo, por encima del Estado y de su legislación positiva, que no es otra
+cosa que su criatura y el instrumento de sus exigencias de poderío.
+      De este modo los preceptos heterónomos del llamado derecho
+positivo, las leyes, decretos, convenios estatales, etc., nos presentan
+un nuevo aspecto. Hasta ahora sólo los habíamos conocido como
+declaraciones sobre una necesidad causal condicionada, sobre la
+imposición de la coacción y la pena. Pero, en una medida cada vez
+más creciente, son también algo distinto: son el material intelectual o,
+hablando metafóricamente, proyectos y ofertas que los legisladores diri-
+gen a los demás solicitando para ellos la aprobación ético- jurídica.
+      Los conceptos del llamado derecho positivo constituyen —por
+tanto— el medio más importante para obtener, en un círculo más o
+menos amplio, una objetividad, por lo menos relativa, del derecho
+autónomo, y solicitar la aprobación no de un individuo aislado, sino
+de la mayoría de los afectados por el precepto. De este modo, una
+gran parte de nuestro llamado derecho positivo podría considerarse,
+en un sentido objetivo supraindividual, como derecho verdadero y
+autónomo, siempre y cuando sea aprobado actual y potencialmente
+por una mayoría seria y poderosa; es decir que los preceptos positivos
+correspondan a aquello que los individuos viven como deber en los
+negocios de la vida diaria, como la compraventa, el arrendamiento,
+etc., o siempre y cuando los individuos estén dispuestos, en caso de
+un conflicto con el propio sentimiento jurídico, a sobreponer la sabi-
+duría del legislador y de las autoridades al sentimiento propio.
+    Ahora bien, el legislador tiene un camino para obtener la apro-
+bación ético-jurídica de los súbditos, que no debemos pasar por alto.
+
+                                      77
+                              RUDOLF LAUN
+
+Se trata del engaño intencional o fortuito, de la desviación consciente o
+inconsciente del sentimiento jurídico.
+      Probablemente en todos los Estados se han dado tales casos.
+Recordemos —por ejemplo— la ficción, que nos fue impuesta por el
+legislador, de que el marco de papel era equivalente al de oro, en
+aquella época en que la masa aceptaba todavía de buena fe el mar-
+co de papel en lugar del marco oro. Sería —por tanto— indebido,
+criticar estas cosas tan sólo en relación con un Estado o con un gru-
+po de Estados. Sobre todo durante la guerra, se trabajó en ambos
+lados con cierta desviación del sentimiento jurídico y no debe, por
+tanto, sorprendemos que estos métodos desempeñen también un
+papel en la continuación de la guerra después de la guerra. No debe
+—por lo mismo— interpretarse como deseo de dirigir reproches uni-
+laterales, el que mencione expresamente aquel ejemplo que por su
+tamaño gigantesco sobrepasa a todos los demás y es único en la
+historia y en la sociología jurídicas. Me refiero a las ficciones y false-
+dades con que se ha tratado de presentar como «justos» los tratados
+de paz de 1919. Así, sobre todo, la ficción de que Alemania es la
+culpable de la guerra; o la ficción de que Austria-Hungría haya que-
+rido desencadenar la Guerra Mundial con su desafortunado ultimá-
+tum dirigido a Servia; o la afirmación de que las fronteras estatales
+de 1919 son el resultado de una autodeterminación, como se enseña
+en ciertos tratados franceses de historia; o —por último— el aserto
+de que precisamente el pueblo alemán sea incapaz de administrar
+colonias, etc.
+     Una campaña intelectual gigantesca, llevada en muchos casos
+con la mejor intención, trata de engañar y mantener en error a la
+conciencia y al sentimiento jurídico de cientos de millones de hom-
+bres, frente a dichos asertos. La escuela y la prensa de los más diver-
+sos países, principalmente, trabajan en este sentido, sin darse cuen-
+ta de ello en la mayoría de los casos. En la misma dirección actúan
+infinidad de medidas de la más diversa índole, como, por ejemplo,
+la designación propagandista de la contribución de la guerra como
+«deuda de reparación», como «mandato»; o la prohibición de nom-
+bres inveterados y con profunda raigambre en el sentimiento jurídi-
+co de las masas, como el de «Austria Alemana» en el tratado de paz
+de San Germán, el de «Tirol» en Italia y el de «Bohemia Alemana»
+en Checoeslovaquia.
+
+                                   78
+                            DERECHO Y MORAL
+
+      Este problema de la desviación del sentimiento jurídico es —en
+mi opinión— uno de los más graves, más difíciles y más importantes
+de las ciencias del derecho y del Estado, aunque, por desgracia, no
+haya sido, hasta la fecha, percibido y apreciado en su plena signifi-
+cación. En mi sentir, coloca a la ciencia y a la administración esta-
+tal, en cuanto ésta se ocupa de educación e ilustración, frente a pro-
+blemas nuevos. Tratarlos aquí sería imposible. Pero, independiente-
+mente de ellos, vale la regla general de que el derecho y el Estado
+son juzgados por aquellos a quienes oprimen con sus mandatos.
+     Pero, ¿acaso esta doctrina de la autonomía del derecho que hoy
+he tenido el honor de exponer, no significa arbitrio individual ilimi-
+tado e incontrolable, disolución de todo orden jurídico y estatal; en
+suma, anarquía?
+     De ninguna manera. Precisamente la concepción anterior de que el
+derecho es heterónomo, de que es voluntad extraña, conduce a la anarquía
+si se la piensa consecuentemente hasta el final.
+     La práctica política de todos los pueblos y épocas ha escapado
+—hasta ahora— a esta fatal consecuencia, principalmente, porque
+en alguna forma se ha apoyado el derecho y el Estado en recompen-
+sas y castigos ultraterrenos. Desde la deificación de los antiguos dés-
+potas hasta las modernas doctrinas de la gracia de Dios y todas
+aquellas que consideran el patriotismo y la sumisión a las autorida-
+des seglares como deber religioso, se ha fundado siempre en la reli-
+gión la exigencia de la obediencia frente al derecho «positivo»
+heterónomo. Y cuando en la época de la Ilustración, grupos de per-
+sonas cultas volvieron por primera vez la espalda a la religión,
+Voltaire acuñó la famosa frase: «Si no existiese Dios, habría que in-
+ventarlo.»
+    Ahora bien, la importancia de las diferentes religiones es —to-
+davía en la actualidad— inmensa, y tal vez atraviesen en estos mo-
+mentos, entre nosotros, por un período de crecimiento, aunque a
+veces se desconozca su influencia. Sin embargo, la ciencia tiene que
+declarar, sin consideraciones de ninguna especie y con la franqueza
+a que está obligada, que actualmente ya no es posible fundar el de-
+recho y el Estado sobre la fe en recompensas del más allá.
+    Pero entonces, ¿de qué otro modo será posible inducir a los ciu-
+dadanos a la obediencia frente a una voluntad extraña?
+
+                                  79
+                               RUDOLF LAUN
+
+      Se ha realizado un intento audaz y magnífico de construir so-
+bre bases materialistas y —por tanto— sin el postulado de la reli-
+gión divina, una nueva ética, opuesta precisamente al anarquismo,
+y una nueva doctrina del derecho y del Estado. Se trata de la filo-
+sofía de la historia de Marx y Engels. Pero por muy espirituales y
+elevados que sean los valores morales que han sido infundidos a
+esta nueva ética, no es posible llegar nunca a un deber, a una
+obligación, si se toma como punto de partida el materialismo y la
+causalidad. Si todo está condicionado material y causalmente, si
+también los movimientos de la conciencia y del sentimiento jurídi-
+co son únicamente reacciones causales adquiridas en el curso de
+generaciones, entonces no encontramos en el mundo entero —que
+en este caso sería tan sólo el causal— absolutamente nada que
+pudiera impedir al individuo obrar de acuerdo con un egoísmo sin
+límites ni escrúpulos. El Estado se convertiría entonces en una so-
+ciedad de egoístas absolutos. Por ello no es Marx, sino Max Stirner,
+a pesar de los graves defectos de su libro, el representante más
+consecuente de la doctrina heterónoma del derecho y del Estado
+liberada de supuestos ideológicos. Cuando preguntan los anarquistas
+por qué debe uno obedecer cuando otro ordena, nada puede con-
+testar la doctrina de la heteronomía del derecho, si no quiere recu-
+rrir al garrote y a las penas infernales. En consecuencia, la concep-
+ción heterónoma del derecho y del Estado no puede resistir a la
+crítica anarquista.
+     La doctrina de la autonomía del derecho expuesta aquí preten-
+de, en cambio, demostrar cómo un gran número de hombres, que
+aparentemente crece al aumentar la cultura, es en cada momento el
+sustentáculo del orden jurídico y estatal, independientemente de toda
+creencia religiosa y de todo medio de coacción terrena; y cómo di-
+chos hombres sustentan en parte ese orden cuando rechazan y vio-
+lan el resto.
+     La doctrina de la autonomía del derecho no nos lleva, por tan-
+to, a la negación del derecho y del Estado, sino a la inteligencia de
+su verdadera justificación: el derecho y el Estado, y todos los
+detentadores del poder dentro de éste y en la comunidad internacional,
+tienen que luchar continuamente por conquistar la obediencia no sólo ex-
+terna, sino interna y espontánea, lo mismo que la conciencia del deber y la
+aprobación ética de todos aquellos a quienes oprimen con sus mandatos.
+
+                                    80
+                            DERECHO Y MORAL
+
+     En consecuencia, el carácter del pueblo y de la humanidad deciden
+sobre la forma en que deben estar organizados el Estado y el dere-
+cho, para descansar sobre una mayoría que pueda servirles de sus-
+tentáculo: cuanto más egoísta, tanto más poder; cuanto más consciente
+del deber, tanto más derecho; cuanto más cercano al animal, tanto más
+poder; cuanto más avanzado en la evolución ética, tanto más derecho.
+     No sería posible, en el marco de estas explicaciones, penetrar
+más profundamente en esos pensamientos que desenvuelven ante
+nosotros el problema de la historia mundial. Por ello pondré sólo de
+relieve un punto de vista cuya importancia político-jurídica es espe-
+cialmente grande.
+     Si el derecho y el Estado tienen que reconquistar cada día la
+aprobación ética y la obediencia espontánea de aquellos a quienes
+oprimen con sus mandatos, es evidente que, de todas las formas de
+Estados conocidos hasta ahora, es el Estado nacional y su derecho nacio-
+nal el que descansa sobre más sólidos fundamentos. Porque el llamado
+sentimiento nacional, la conciencia popular, muy especialmente, en
+su anhelo de unir a todos los miembros de la comunidad en un Es-
+tado y bajo un mismo derecho, es una de las expresiones más im-
+portantes del sentimiento jurídico, quizá la fundamental. Y esto no
+vale únicamente para la época que se inicia en el siglo XIX —en que
+el sentimiento nacional hace su aparición en la conciencia de los
+pueblos como una fuerza que actúa independientemente—, sino que,
+desde el principio de la historia —hasta donde nosotros alcanzamos
+a ver— la conciencia de la comunidad popular ha sido la fuerza
+creadora del Estado y del derecho tal vez más importante, aunque
+en un principio se la haya confundido, por regla general, con la
+conciencia de la comunidad de fe o de la comunidad de Estado, de
+clase o de casta, o de cualquiera otra de índole política. Esta enorme
+importancia de la conciencia popular no sería superada de ningún
+modo en una verdadera Liga de las Naciones o en una confedera-
+ción mundial de Estados. Porque también aquí el punto de grave-
+dad de la vida jurídica cotidiana, y de las preocupaciones diarias de
+la administración, radicaría en los Estados confederados, por lo que
+su estructura nacional unitaria continuaría siendo, como en la ac-
+tualidad, el centro de todas las exigencias éticas dirigidas al Estado
+y a la comunidad de Estados. Más aún, en el caso de que intentáse-
+mos representarnos un Estado mundial unitario, mientras todos los
+
+                                  81
+                              RUDOLF LAUN
+
+habitantes de la tierra no hablen un idioma común, ni tengan las
+mismas costumbres y un sentimiento jurídico unitario, no podría-
+mos imaginarlo de manera distinta que en la forma de una superes-
+tructura, construida sobre provincias nacionales limitadas, con am-
+plísima autonomía administrativa y amplísima libertad para la for-
+mación de un derecho particular nacional. Por consiguiente, el pro-
+blema nacional no perdería un ápice de su importancia ético- jurídi-
+ca con la organización del mundo, fuese cual fuese la amplitud de
+ésta, así como no ha perdido actualmente su importancia ético-jurí-
+dica en el interior de Suiza o de Checoeslovaquia.
+     En consecuencia, uno de los mayores errores, que muchos come-
+ten, consiste en considerar el sentimiento nacional como un punto de
+vista superado, o en querer educar a los hombres conforme a una
+ética que lo condena como desvalor. Así como los sentimientos del
+amor y de la pertenencia a la familia no pueden parecemos en el
+pasado histórico o en un futuro previsible algo superado o reprobado
+por el juicio ético de los pueblos, así tampoco podemos afirmar lo
+mismo respecto del sentimiento del amor y de la pertenencia al pro-
+pio pueblo. Teniendo en cuenta la experiencia adquirida en el curso
+de la historia, no podemos imaginarnos ningún vínculo más sólido
+para unir a un grupo de hombres en forma duradera, contra todos
+los golpes del destino, bajo un mismo derecho y un mismo Estado,
+que la conciencia de la comunidad natural y moral, que la conciencia
+popular. Formaciones estatales artificiales cuyas fronteras han sido tra-
+zadas por el arbitrio de un déspota o por el sable de un dictador,
+sobre pueblos enteros o a través de los mismos; Estados en los que por
+esta sola razón una gran parte de la población se doblega tan sólo
+ante la fuerza y no tiene en el corazón otro sentimiento para la llama-
+da patria que el odio y el desprecio, aunque no pueda demostrarlo
+abiertamente; Estados como ésos, descansan sobre los fundamentos
+más inseguros y deleznables, aunque aparentemente disfruten de una
+situación económica favorable y ostenten cierto brillo exterior.
+     En cambio, precisamente el destino de Alemania en los últimos
+años, o acontecimientos como la adhesión unánime de los austro-ale-
+manes y bohemio-alemanes al Estado Alemán el día 12 de noviembre
+de 1918, pocos días después de la catástrofe, demuestran las enormes
+fuerzas psíquicas de que dispone el Estado nacional, aun en el instan-
+te de la mayor desgracia y de la más profunda humillación.
+
+                                   82
+                             DERECHO Y MORAL
+
+     Por tanto, la doctrina de la autonomía del derecho, muy lejos de
+conducir a la anarquía, nos demuestra que el Estado y el derecho,
+que hasta ahora habían brotado en gran parte, en una forma salva-
+je y anárquica, de las necesidades momentáneas de los detentadores
+del poder y que, por tanto, habían estado amenazados por la des-
+obediencia, la revolución y la anarquía, en vez de fundarse sobre la
+retribución en el más allá y la coacción terrena, deben construirse, en
+forma cada vez más amplia, sobre la conciencia y el sentimiento jurídico
+de los ciudadanos o, por lo menos, de una mayoría resistente y lo más
+numerosa posible de ellos.
+     La fuerza por sí sola no lo logra. Porque, como es sabido, con
+las bayonetas se puede hacer todo, menos sentarse en ellas. También
+frente a un bandido practicaré la «política de cumplimiento», mientras
+esto signifique para mí el mal menor. Pero cumplimiento «leal « de acción
+voluntaria por deber y sin coacción, lealtad hacia leyes y convenios, sólo
+se dan en ese mundo en que no existe el llamado derecho del más fuerte y
+del vencedor, en el mundo del deber, de la auto- legislación ética.
+     En consecuencia, la tarea de la ciencia estriba en enseñar a los
+detentadores del poder, en todos los pueblos y en todos los Estados,
+que el derecho no está en las leyes y convenios de papel, ni tampoco en las
+penas de la cárcel y el infierno, sino en la moral, en el corazón de los
+hombres.
+
+
+
+
+                                    83
+            DERECHO Y MORAL,
+        de RUDOLF LAUN, se imprimió
+en la República Argentina en diciembre de 2020.
+

@@ -1,0 +1,846 @@
+\pdfminorversion=7
+\documentclass[spanish,aspectratio=1610,xcolor={dvipsnames,table}]{beamer}
+
+% Lienzo amplio conservando proporción 16:10
+% Original: 19.2cm x 12cm
+\geometry{paperwidth=28cm,paperheight=17.5cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{
+  arrows.meta,
+  babel,
+  calc,
+  angles,
+  quotes,
+  positioning,
+  decorations.pathreplacing
+}
+
+% =============================================================
+% Plantilla genérica: sin datos personales, institucionales ni secciones.
+% Título del documento: Diagramas TikZ.
+% Ejemplo central: plano inclinado con aparición paso a paso.
+% =============================================================
+
+\definecolor{navy}{HTML}{163B5C}
+\definecolor{blue}{HTML}{175CD3}
+\definecolor{red}{HTML}{B42318}
+\definecolor{green}{HTML}{067647}
+\definecolor{orange}{HTML}{B54708}
+\definecolor{paper}{HTML}{F6F8F7}
+\definecolor{ink}{HTML}{1E2A32}
+\definecolor{muted}{HTML}{667085}
+
+\mode<presentation>{
+  \usetheme{default}
+  \usefonttheme{professionalfonts}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamercovered{invisible}
+}
+
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=ink,bg=white}
+\setbeamercolor{structure}{fg=blue}
+\setbeamercolor{frametitle}{fg=white,bg=navy}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\textwidth,ht=1.00cm,dp=0.22cm,leftskip=0.42cm,rightskip=0.25cm]{frametitle}
+    \insertframetitle
+  \end{beamercolorbox}
+  {\color{orange}\rule{\textwidth}{1.2pt}}
+}
+
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.80\paperwidth,ht=2.5ex,dp=1ex,leftskip=1em]{author in head/foot}%
+      \color{white}Diagramas TikZ
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.20\paperwidth,ht=2.5ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}%
+      \color{white}\hfill\insertframenumber/\inserttotalframenumber
+    \end{beamercolorbox}%
+  }%
+}
+\setbeamercolor{author in head/foot}{bg=navy}
+\setbeamercolor{date in head/foot}{bg=navy}
+
+\title{Diagramas TikZ}
+\date{}
+
+\begin{document}
+
+% -------------------------------------------------------------
+% Portada con formato conservado
+% -------------------------------------------------------------
+\begin{frame}[plain]
+	\begin{tikzpicture}[remember picture,overlay]
+		\fill[navy] (current page.south west) rectangle (current page.north east);
+		\fill[blue,opacity=0.35] ([xshift=0.58\paperwidth]current page.south west) rectangle (current page.north east);
+
+		\fill[orange]
+		([xshift=1.15cm,yshift=2.0cm]current page.south west)
+		rectangle
+			([xshift=1.35cm,yshift=7.3cm]current page.south west);
+
+		\fill[green]
+		([xshift=1.55cm,yshift=2.0cm]current page.south west)
+		rectangle
+			([xshift=1.75cm,yshift=6.4cm]current page.south west);
+
+		\node[
+			anchor=west,
+			text=white,
+			font=\Huge\bfseries
+		] at ([xshift=2.25cm,yshift=1.0cm]current page.west) {Diagramas TikZ};
+
+		\node[
+			anchor=west,
+			text=white!75,
+			font=\large
+		] at ([xshift=2.28cm,yshift=0.25cm]current page.west) {Ejemplo con plano inclinado y overlays};
+	\end{tikzpicture}
+\end{frame}
+
+% ------------------------------------------------------------------
+% Diapositiva principal
+% ------------------------------------------------------------------
+
+\begin{frame}{Carrito en plano inclinado}
+	\begin{center}
+		\begin{tikzpicture}[
+				caja/.style={draw, rounded corners, fill=blue!10, inner sep=6pt},
+				flecha/.style={-{Latex}, thick},
+				nota/.style={draw, rounded corners, fill=yellow!20, align=center}
+			]
+
+			\node[caja] (eq1) {$2x + 3 = 11$};
+			\node[caja, below=1.2cm of eq1] (eq2) {$2x = 11 - 3$};
+			\node[caja, below=1.2cm of eq2] (eq3) {$2x = 8$};
+			\node[caja, below=1.2cm of eq3] (eq4) {$x = \frac{8}{2}$};
+			\node[caja, below=1.2cm of eq4] (eq5) {$x = 4$};
+
+			\draw[flecha] (eq1) -- node[right] {Restar 3 en ambos lados} (eq2);
+			\draw[flecha] (eq2) -- node[right] {Simplificar} (eq3);
+			\draw[flecha] (eq3) -- node[right] {Dividir entre 2} (eq4);
+			\draw[flecha] (eq4) -- node[right] {Resultado} (eq5);
+
+			\node[nota, right=2.5cm of eq3] (nota1) {El objetivo es\\dejar sola a $x$};
+			\draw[flecha, dashed] (nota1) -- (eq3);
+
+		\end{tikzpicture}
+	\end{center}
+\end{frame}
+
+% -------------------------------------------------------------------
+% Diapositiva: plano inclinado con DCL, modelo dinámico y cinemática
+% -------------------------------------------------------------------
+\begin{frame}{Plano inclinado con DCL, modelo dinámico y cinemática}
+
+	\centering
+
+	\begin{tikzpicture}[
+			x=1cm,
+			y=1cm,
+			>=Stealth,
+			force/.style={-{Stealth[length=3.2mm,width=2.4mm]}, very thick, line cap=round},
+			component/.style={-{Stealth[length=2.8mm,width=2.1mm]}, very thick, dashed, line cap=round},
+			axis/.style={-{Stealth[length=2.6mm,width=2.0mm]}, thick, muted},
+			panel/.style={rounded corners=4pt, draw=muted!35, fill=paper, inner sep=5pt},
+			label/.style={font=\scriptsize, inner sep=1pt},
+			smalllabel/.style={font=\tiny, inner sep=1pt},
+			eq/.style={font=\footnotesize, align=left, text=ink},
+			every node/.style={font=\small}
+		]
+
+		% =============================================================
+		% DISTRIBUCIÓN GENERAL
+		% =============================================================
+		% Panel izquierdo: Sistema físico
+		% Panel central: DCL
+		% Panel derecho superior: Modelo dinámico
+		% Panel derecho inferior: Cinemática
+		% =============================================================
+
+		% -------------------------------------------------------------
+		% Panel 1: sistema físico más alto
+		% -------------------------------------------------------------
+		\only<1->{
+				\node[
+					panel,
+					minimum width=12.2cm,
+					minimum height=9.15cm,
+					anchor=north west
+				] at (-13.2,6.85) {};
+
+				\node[
+					anchor=west,
+					font=\bfseries\small,
+					text=navy
+				] at (-12.75,6.38) {Sistema físico};
+			}
+
+		% Coordenadas del plano
+		\def\ang{28}
+		\coordinate (A) at (-12.35,-0.55);
+		\coordinate (B) at (-2.15,-0.55);
+		\coordinate (C) at (-2.15,4.55);
+		\coordinate (P) at ($(A)!0.56!(C)$);
+		\coordinate (Pc) at ($(P)+(0.00,0.35)$);
+
+		% Plano inclinado
+		\only<1->{
+				\fill[gray!11] (A) -- (B) -- (C) -- cycle;
+				\draw[thick, muted] (A) -- (B) -- (C);
+				\draw[very thick, ink] (A) -- (C);
+
+				% Ángulo theta
+				\draw[thick, ink!70]
+				($(A)+(0.92,0)$)
+				arc[start angle=0,end angle=\ang,radius=0.92];
+
+				\node[label] at ($(A)+(1.12,0.30)$) {$\theta$};
+
+				% Etiqueta horizontal
+				\node[label,text=muted] at ($(A)!0.50!(B)+(0,-0.34)$) {horizontal};
+
+				% Etiqueta del plano, bajada y movida para no encimarse con W sin(theta)
+				\node[
+					label,
+					text=muted,
+					rotate=\ang
+				] at ($(A)!0.22!(C)+(0.25,-0.52)$) {plano inclinado};
+			}
+
+		% Bloque
+		\only<2->{
+				\begin{scope}[shift={(P)}, rotate=\ang]
+					\draw[
+						fill=blue!12,
+						draw=blue!80!black,
+						thick,
+						rounded corners=1pt
+					] (-0.62,-0.34) rectangle (0.62,0.42);
+
+					\node[text=blue!45!black] at (0,0.04) {$m$};
+				\end{scope}
+			}
+
+		% Ejes locales
+		\only<2->{
+				\coordinate (E) at ($(P)+(1.55,0.90)$);
+
+				\draw[axis] (E) -- ++({1.35*cos(\ang)},{1.35*sin(\ang)})
+				node[right,label,text=ink] {$+x$};
+
+				\draw[axis] (E) -- ++({1.08*cos(\ang+90)},{1.08*sin(\ang+90)})
+				node[above,label,text=ink] {$+y$};
+			}
+
+		% Peso W
+		\only<3->{
+				\draw[force, red] (Pc) -- ++(0,-2.35)
+				node[below=2pt,label,text=red] {$W=mg$};
+			}
+
+		% Normal
+		\only<4->{
+				\draw[force, blue] (Pc) -- ++({1.75*cos(\ang+90)},{1.75*sin(\ang+90)})
+				node[above left=1pt,label,text=blue] {$N$};
+			}
+
+		% Fuerza paralela al plano
+		\only<5->{
+				\draw[force, green] (Pc) -- ++({2.45*cos(\ang)},{2.45*sin(\ang)})
+				node[right=2pt,label,text=green] {$F$};
+			}
+
+		% Componentes del peso
+		\only<6->{
+				% Se desplazan ligeramente para no encimarse con W
+				\coordinate (Pcomp) at ($(Pc)+(-0.18,-0.08)$);
+
+				\draw[component, orange] (Pcomp) -- ++({-1.95*cos(\ang)},{-1.95*sin(\ang)})
+				node[left=2pt,label,text=orange] {$W\sin\theta$};
+
+				\draw[component, orange] (Pcomp) -- ++({-1.55*cos(\ang+90)},{-1.55*sin(\ang+90)})
+				node[below left=1pt,label,text=orange] {$W\cos\theta$};
+
+				% Nota de descomposición, arriba a la izquierda y sin tocar las flechas
+				\node[
+					eq,
+					anchor=north west,
+					text width=5.0cm
+				] at (-12.55,5.95) {
+					\textbf{Descomposición del peso:}\\[-1mm]
+					\[
+						\begin{aligned}
+							W_x & = W\sin\theta \\
+							W_y & = W\cos\theta
+						\end{aligned}
+					\]
+				};
+			}
+
+		% -------------------------------------------------------------
+		% Panel 2: DCL más alto
+		% -------------------------------------------------------------
+		\only<7->{
+				\node[
+					panel,
+					minimum width=6.2cm,
+					minimum height=9.15cm,
+					anchor=north west
+				] at (-0.45,6.85) {};
+
+				\node[
+					anchor=west,
+					font=\bfseries\small,
+					text=navy
+				] at (-0.05,6.38) {DCL: cuerpo libre};
+
+				\coordinate (D) at (2.65,2.00);
+
+				% Bloque DCL
+				\draw[
+					fill=blue!12,
+					draw=blue!80!black,
+					thick,
+					rounded corners=1pt
+				] ($(D)+(-0.46,-0.34)$) rectangle ($(D)+(0.46,0.34)$);
+
+				\node[text=blue!45!black] at (D) {$m$};
+
+				% Ejes del DCL
+				\draw[axis] ($(D)+(-2.05,-2.35)$) -- ++(1.55,0)
+				node[right,label,text=ink] {$+x$};
+
+				\draw[axis] ($(D)+(-2.05,-2.35)$) -- ++(0,1.45)
+				node[above,label,text=ink] {$+y$};
+
+				% Fuerzas DCL
+				\draw[force, green] (D) -- ++(2.00,0)
+				node[right=2pt,label,text=green] {$F$};
+
+				\draw[force, blue] (D) -- ++(0,2.00)
+				node[above=2pt,label,text=blue] {$N$};
+
+				\draw[force, orange] (D) -- ++(-2.00,0)
+				node[left=2pt,label,text=orange] {$W\sin\theta$};
+
+				\draw[force, orange] (D) -- ++(0,-2.00)
+				node[below=2pt,label,text=orange] {$W\cos\theta$};
+			}
+
+		% -------------------------------------------------------------
+		% Panel 3: modelo dinámico más alto
+		% -------------------------------------------------------------
+		\only<8->{
+				\node[
+					panel,
+					minimum width=8.6cm,
+					minimum height=6.15cm,
+					anchor=north west
+				] at (6.25,6.85) {};
+
+				\node[
+					anchor=west,
+					font=\bfseries\small,
+					text=navy
+				] at (6.65,6.38) {Modelo dinámico};
+
+				\node[
+					eq,
+					anchor=north west,
+					text width=7.70cm
+				] at (6.70,5.78) {
+					\[
+						\begin{aligned}
+							\sum F_x & = F-W\sin\theta   \\[2mm]
+							\sum F_y & = N-W\cos\theta=0
+						\end{aligned}
+					\]
+				};
+			}
+
+		\only<9->{
+				\node[
+					eq,
+					anchor=north west,
+					text width=7.70cm
+				] at (6.70,3.70) {
+					Como $W=mg$:
+					\[
+						ma=F-mg\sin\theta
+					\]
+
+					\[
+						\boxed{
+							a=\dfrac{F-mg\sin\theta}{m}
+						}
+					\]
+				};
+			}
+
+		% -------------------------------------------------------------
+		% Panel 4: cinemática más abajo y con aire
+		% -------------------------------------------------------------
+		\only<10->{
+				\node[
+					panel,
+					minimum width=8.6cm,
+					minimum height=3.00cm,
+					anchor=north west
+				] at (6.25,0.25) {};
+
+				\node[
+					anchor=west,
+					font=\bfseries\small,
+					text=navy
+				] at (6.65,-0.22) {Cinemática};
+
+				\node[
+					eq,
+					anchor=north west,
+					text width=7.70cm
+				] at (6.70,-0.72) {
+					Si $v_0=0$ y $t=3\,s$:
+					\[
+						\boxed{x=\frac{1}{2}a(3)^2}
+						\qquad
+						\boxed{v_f=a(3)}
+					\]
+				};
+			}
+
+	\end{tikzpicture}
+\end{frame}
+
+% -------------------------------------------------------------
+% Frame 1: construcción de vectores y componentes
+% -------------------------------------------------------------
+\begin{frame}{Sumatoria de vectores: construcción y componentes}
+
+	\centering
+
+	\begin{tikzpicture}[
+			x=1cm,
+			y=1cm,
+			>=Stealth,
+			vector/.style={-{Stealth[length=3.2mm,width=2.4mm]}, very thick, line cap=round},
+			component/.style={-{Stealth[length=2.8mm,width=2.1mm]}, very thick, dashed, line cap=round},
+			axis/.style={-{Stealth[length=2.6mm,width=2.0mm]}, thick, muted},
+			panel/.style={rounded corners=4pt, draw=muted!35, fill=paper, inner sep=5pt},
+			label/.style={font=\scriptsize, inner sep=1pt},
+			eq/.style={font=\footnotesize, align=left, text=ink},
+			every node/.style={font=\small}
+		]
+
+		% =============================================================
+		% Datos del problema
+		% F1 = 50, theta1 = 60°
+		% F2 = 70, theta2 = 113°
+		%
+		% Fx1 = 25.00
+		% Fy1 = 43.30
+		% Fx2 = -27.35
+		% Fy2 = 64.44
+		% =============================================================
+
+		% -------------------------------------------------------------
+		% Panel izquierdo: sistema vectorial
+		% -------------------------------------------------------------
+		\only<1->{
+				\node[
+					panel,
+					minimum width=15.0cm,
+					minimum height=9.25cm,
+					anchor=north west
+				] at (-13.15,6.85) {};
+
+				\node[
+					anchor=west,
+					font=\bfseries\small,
+					text=navy
+				] at (-12.70,6.35) {Sistema vectorial};
+			}
+
+		% Escala y puntos
+		\coordinate (O) at (-7.00,0.35);
+		\def\s{0.052}
+
+		\coordinate (Fone) at ($(O)+({50*cos(60)*\s},{50*sin(60)*\s})$);
+			\coordinate (Ftwo) at ($(O)+({70*cos(113)*\s},{70*sin(113)*\s})$);
+
+			\coordinate (FxOne) at ($(O)+({25.00*\s},0)$);
+			\coordinate (FxTwo) at ($(O)+({-27.35*\s},0)$);
+
+			% Ejes
+			\only<1->{
+			\draw[axis] ($(O)+(-4.6,0)$) -- ($(O)+(5.2,0)$)
+			node[right,label,text=ink] {$+x$};
+
+			\draw[axis] (O) -- ++(0,5.2)
+			node[above,label,text=ink] {$+y$};
+
+			\node[label,text=muted] at ($(O)+(-0.20,-0.25)$) {$O$};
+			}
+
+			% Vector F1
+			\only<2->{
+			\draw[vector, blue] (O) -- (Fone)
+			node[pos=0.64, below right=2pt, label, text=blue] {$\vec{F}_1$};
+
+			\node[
+				label,
+				text=blue,
+				anchor=west
+			] at ($(Fone)+(0.18,0.06)$) {$F_1=50$};
+			}
+
+			% Ángulo theta1
+			\only<3->{
+			\draw[blue, thick]
+			($(O)+(0.95,0)$)
+			arc[start angle=0,end angle=60,radius=0.95];
+
+			\node[label,text=blue] at ($(O)+(0.88,0.62)$) {$\theta_1=60^\circ$};
+			}
+
+			% Componentes F1
+			\only<4->{
+			\draw[component, blue] (O) -- (FxOne)
+			node[midway, below=2pt, label, text=blue] {$F_{x1}$};
+
+			\draw[component, blue] (FxOne) -- (Fone)
+			node[midway, right=2pt, label, text=blue] {$F_{y1}$};
+			}
+
+			% Vector F2
+			\only<5->{
+			\draw[vector, green] (O) -- (Ftwo)
+			node[pos=0.62, above left=2pt, label, text=green] {$\vec{F}_2$};
+
+			\node[
+				label,
+				text=green,
+				anchor=east
+			] at ($(Ftwo)+(-0.18,0.08)$) {$F_2=70$};
+			}
+
+			% Ángulo theta2
+			\only<6->{
+			\draw[green, thick]
+			($(O)+(1.45,0)$)
+			arc[start angle=0,end angle=113,radius=1.45];
+
+			\node[
+				label,
+				text=green,
+				anchor=south
+			] at ($(O)+(-0.10,1.62)$) {$\theta_2=113^\circ$};
+			}
+
+			% Componentes F2
+			\only<7->{
+			\draw[component, green] (O) -- (FxTwo)
+			node[midway, below=2pt, label, text=green] {$F_{x2}$};
+
+			\draw[component, green] (FxTwo) -- (Ftwo)
+			node[midway, left=2pt, label, text=green] {$F_{y2}$};
+			}
+
+			% -------------------------------------------------------------
+			% Panel derecho: tabla de componentes
+			% -------------------------------------------------------------
+			\only<8->{
+			\node[
+				panel,
+				minimum width=10.15cm,
+				minimum height=9.25cm,
+				anchor=north west
+			] at (2.35,6.85) {};
+
+			\node[
+				anchor=west,
+				font=\bfseries\small,
+				text=navy
+			] at (2.75,6.35) {Tabla de componentes};
+
+			\node[
+			eq,
+			anchor=north west,
+			text width=9.15cm
+			] at (2.80,5.75) {
+			\[
+			\begin{array}{c|c|c}
+				\textbf{Vector} & F_x & F_y \\
+				\hline
+				\vec{F}_1       &
+				F_1\cos\theta_1 &
+				F_1\sin\theta_1             \\[1mm]
+				\vec{F}_2       &
+				F_2\cos\theta_2 &
+				F_2\sin\theta_2
+			\end{array}
+		\]
+		};
+		}
+
+		\only<9->{
+				\node[
+					eq,
+					anchor=north west,
+					text width=9.15cm
+				] at (2.80,3.55) {
+					Para $\vec{F}_1$:
+					\[
+						\begin{aligned}
+							F_{x1} & = 50\cos(60^\circ)=25.00 \\[1mm]
+							F_{y1} & = 50\sin(60^\circ)=43.30
+						\end{aligned}
+					\]
+				};
+			}
+
+		\only<10->{
+				\node[
+					eq,
+					anchor=north west,
+					text width=9.15cm
+				] at (2.80,1.30) {
+					Para $\vec{F}_2$:
+					\[
+						\begin{aligned}
+							F_{x2} & = 70\cos(113^\circ)=-27.35 \\[1mm]
+							F_{y2} & = 70\sin(113^\circ)=64.44
+						\end{aligned}
+					\]
+				};
+			}
+
+	\end{tikzpicture}
+
+\end{frame}
+
+
+% -------------------------------------------------------------
+% Frame 2: sumatorias, resultante y DCL
+% -------------------------------------------------------------
+\begin{frame}{Sumatoria de vectores: resultante y ángulo}
+
+	\centering
+
+	\begin{tikzpicture}[
+			x=1cm,
+			y=1cm,
+			>=Stealth,
+			vector/.style={-{Stealth[length=3.2mm,width=2.4mm]}, very thick, line cap=round},
+			component/.style={-{Stealth[length=2.8mm,width=2.1mm]}, very thick, dashed, line cap=round},
+			axis/.style={-{Stealth[length=2.6mm,width=2.0mm]}, thick, muted},
+			panel/.style={rounded corners=4pt, draw=muted!35, fill=paper, inner sep=5pt},
+			label/.style={font=\scriptsize, inner sep=1pt},
+			eq/.style={font=\footnotesize, align=left, text=ink},
+			every node/.style={font=\small}
+		]
+
+		% =============================================================
+		% Datos finales:
+		% Sum Fx = -2.35
+		% Sum Fy = 107.74
+		% R = 107.76
+		% theta_R = 91.25°
+		% =============================================================
+
+		% -------------------------------------------------------------
+		% Panel izquierdo: DCL de la resultante
+		% -------------------------------------------------------------
+		\only<1->{
+				\node[
+					panel,
+					minimum width=12.4cm,
+					minimum height=9.25cm,
+					anchor=north west
+				] at (-13.15,6.85) {};
+
+				\node[
+					anchor=west,
+					font=\bfseries\small,
+					text=navy
+				] at (-12.70,6.35) {DCL de la resultante};
+			}
+
+		\coordinate (Q) at (-7.15,1.10);
+
+		% Ejes DCL
+		\only<1->{
+				\draw[axis] ($(Q)+(-3.0,0)$) -- ($(Q)+(3.6,0)$)
+				node[right,label,text=ink] {$+x$};
+
+				\draw[axis] ($(Q)+(0,-2.0)$) -- ($(Q)+(0,4.7)$)
+				node[above,label,text=ink] {$+y$};
+
+				\node[label,text=muted] at ($(Q)+(-0.18,-0.25)$) {$O$};
+			}
+
+		% Componente en x
+		\only<2->{
+				\draw[component, red] (Q) -- ++(-0.90,0)
+				node[left,label,text=red] {$\sum F_x=-2.35$};
+			}
+
+		% Componente en y
+		\only<3->{
+				\draw[component, red] (Q) -- ++(0,3.85)
+				node[above,label,text=red] {$\sum F_y=107.74$};
+			}
+
+		% Resultante
+		\only<4->{
+				\draw[vector, red] (Q) -- ++(-0.90,3.85)
+				node[above left=2pt,label,text=red] {$\vec{R}$};
+
+				\node[
+					label,
+					text=red,
+					anchor=west
+				] at ($(Q)+(-0.45,4.10)$) {$R=107.76$};
+			}
+
+		% Ángulo correcto medido desde +x
+		\only<5->{
+				\draw[red, thick]
+				($(Q)+(1.05,0)$)
+				arc[start angle=0,end angle=91.25,radius=1.05];
+
+				\node[
+					label,
+					text=red,
+					anchor=west
+				] at ($(Q)+(0.72,1.05)$) {$\theta_R=91.25^\circ$};
+			}
+
+		% Nota conceptual
+		\only<6->{
+				\node[
+					eq,
+					anchor=north west,
+					text width=9.3cm
+				] at (-12.55,-1.85) {
+					La resultante queda casi vertical, ligeramente hacia la izquierda, porque:
+					\[
+						\sum F_x<0,
+						\qquad
+						\sum F_y>0
+					\]
+				};
+			}
+
+		% -------------------------------------------------------------
+		% Panel derecho superior: sumatorias
+		% -------------------------------------------------------------
+		\only<7->{
+				\node[
+					panel,
+					minimum width=10.15cm,
+					minimum height=4.85cm,
+					anchor=north west
+				] at (2.35,6.85) {};
+
+				\node[
+					anchor=west,
+					font=\bfseries\small,
+					text=navy
+				] at (2.75,6.35) {Sumatorias};
+
+				\node[
+					eq,
+					anchor=north west,
+					text width=9.15cm
+				] at (2.80,5.70) {
+					\[
+						\begin{aligned}
+							\sum F_x & = F_{x1}+F_{x2}  \\
+							         & = 25.00+(-27.35) \\
+							         & = \boxed{-2.35}
+						\end{aligned}
+					\]
+				};
+			}
+
+		\only<8->{
+				\node[
+					eq,
+					anchor=north west,
+					text width=9.15cm
+				] at (2.80,3.40) {
+					\[
+						\begin{aligned}
+							\sum F_y & = F_{y1}+F_{y2}  \\
+							         & = 43.30+64.44    \\
+							         & = \boxed{107.74}
+						\end{aligned}
+					\]
+				};
+			}
+
+		% -------------------------------------------------------------
+		% Panel derecho inferior: magnitud y ángulo
+		% -------------------------------------------------------------
+		\only<9->{
+				\node[
+					panel,
+					minimum width=10.15cm,
+					minimum height=5.95cm,
+					anchor=north west
+				] at (2.35,1.55) {};
+
+				\node[
+					anchor=west,
+					font=\bfseries\small,
+					text=navy
+				] at (2.75,1.05) {Vector resultante};
+
+				\node[
+					eq,
+					anchor=north west,
+					text width=9.15cm
+				] at (2.80,0.45) {
+					\[
+						\begin{aligned}
+							R & = \sqrt{(\sum F_x)^2+(\sum F_y)^2} \\
+							  & = \sqrt{(-2.35)^2+(107.74)^2}      \\
+							  & = \boxed{107.76}
+						\end{aligned}
+					\]
+				};
+			}
+
+		\only<10->{
+				\node[
+					eq,
+					anchor=north west,
+					text width=9.15cm
+				] at (2.80,-2.10) {
+					\[
+						\begin{aligned}
+							\theta_R
+							 & = \operatorname{atan2}\left(\sum F_y,\sum F_x\right) \\
+							 & = \operatorname{atan2}(107.74,-2.35)                 \\
+							 & = \boxed{91.25^\circ}
+						\end{aligned}
+					\]
+				};
+			}
+
+	\end{tikzpicture}
+
+\end{frame}
+
+\end{document}

@@ -1,0 +1,197 @@
+% CREACION DEL DOCUMENTO
+\documentclass[
+	spanish,
+	letterpaper, oneside
+]{article}
+
+% INFORMACION DEL DOCUMENTO
+\def\documenttitle {Comunicación efectiva en el ámbito laboral: juego de roles}
+\def\documentsubtitle {Juego de roles de comunicación laboral}
+\def\documentsubject {Actividad 3 - Redacción en contextos virtuales}
+
+\def\documentauthor {Martín Jonathan de la Cruz}
+\def\coursename {Redacción en contextos virtuales}
+\def\coursecode {017}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Redacción en contextos virtuales}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de México}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\authortable {
+	\begin{tabular}{ll}
+		\textbf{Alumno:}
+		& \begin{tabular}[t]{l}
+			 Martín Jonathan de la Cruz \\
+		\end{tabular} \\
+		Matrícula: & ES2611202040 \\
+
+		\textit{Profesora:}
+		& \begin{tabular}[t]{l}
+			Ana Rosa \\ Arceo Luna
+		\end{tabular} \\
+		& \\
+		\multicolumn{2}{l}{Fecha de realización: \today} \\
+		\multicolumn{2}{l}{\universitylocation}
+	\end{tabular}
+}
+
+% IMPORTACION DEL TEMPLATE
+\input{template}
+
+% FORMATO
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{array}
+\usepackage{longtable}
+\setcitestyle{authoryear,open={(},close={)}}
+
+% ==============================================================================
+% MARCA DE AGUA EN PORTADA
+% - Se aplica solo a la portada porque usa \AddToShipoutPictureBG*.
+% - Para apagarla en alguna actividad: \def\coverwatermarkenabled {false}
+% - Usar opacidad baja para que no compita con titulo, datos ni logotipo.
+% ==============================================================================
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+	\ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+		\AddToShipoutPictureBG*{%
+			\begin{tikzpicture}[remember picture,overlay]
+				\node[
+					opacity=\coverwatermarkopacity,
+					inner sep=0pt,
+					xshift=\coverwatermarkxshift,
+					yshift=\coverwatermarkyshift
+				] at (current page.center) {%
+					\includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+				};
+			\end{tikzpicture}%
+		}%
+	}{}%
+}
+
+\begin{document}
+
+% PORTADA
+\insertcoverwatermark
+\templatePortrait
+
+% CONFIGURACION DE PAGINA Y ENCABEZADOS
+\templatePagecfg
+\onehalfspacing
+
+% RESUMEN
+\begin{abstractd}
+	\textbf{Objetivo:} Aplicar los principios de la comunicación efectiva en el ámbito laboral mediante el análisis de correos electrónicos y la redacción de mensajes adecuados al receptor, la intención comunicativa y el nivel de formalidad requerido.
+
+	\textbf{Producto elaborado:} Juego de roles con análisis de ejemplos, redacción de un correo inadecuado, reformulación formal y reflexión final.
+
+	\textbf{Enfoque de análisis:} La comunicación laboral escrita no se limita a transmitir información; también ordena responsabilidades, cuida la relación profesional y reduce el margen de malentendido.
+\end{abstractd}
+
+% TABLA DE CONTENIDOS
+\templateIndex
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+\section{Introducción}
+
+La comunicación escrita en el ámbito laboral exige más que corrección gramatical. Un correo puede contener una solicitud válida y, aun así, producir resistencia si el tono es impreciso, apresurado o descortés. En contextos profesionales, la forma del mensaje también comunica: muestra respeto por el receptor, claridad sobre la tarea y conciencia de las consecuencias que una petición puede generar.
+
+Desde esta perspectiva, la redacción académica y profesional funciona como una herramienta de control del sentido. No se trata de escribir de manera rígida, sino de elegir palabras, estructura y nivel de formalidad de acuerdo con el contexto. La lectura y la redacción deben entenderse como procesos vinculados: primero se interpreta la situación comunicativa y después se construye un mensaje adecuado a su propósito \citep{ayalaTallerLecturaRedaccion2010}. Como señalan los estudios sobre escritura académica, producir un texto implica organizar ideas, adecuarlas a una situación comunicativa y hacerlas comprensibles para un lector concreto \citep{nunezcortesEscrituraAcademicaTeoria2015,vitoriaEscrituraAcademicaFormacion2019}. Por ello, esta actividad analiza dos correos laborales, identifica errores y aciertos, y propone una versión inadecuada y una versión formal a partir de una situación de trabajo.
+
+\section{Análisis de ejemplos}
+
+Los dos correos de la planeación muestran una diferencia central: el primero comunica urgencia, pero no construye condiciones para la colaboración; el segundo conserva la urgencia, pero la organiza con cortesía, estructura y precisión. En términos de redacción, el problema no es pedir algo con rapidez, sino hacerlo sin asunto claro, sin contexto suficiente y con expresiones que pueden ser interpretadas como presión o descuido profesional.
+
+\begin{longtable}{@{}p{0.22\linewidth}p{0.34\linewidth}p{0.34\linewidth}@{}}
+\caption{Análisis comparativo de los correos de ejemplo}\label{tab:analisis-correos}\\
+\toprule
+\textbf{Criterio} & \textbf{Correo inadecuado} & \textbf{Correo adecuado} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Criterio} & \textbf{Correo inadecuado} & \textbf{Correo adecuado} \\
+\midrule
+\endhead
+Asunto & El asunto ``duda'' es demasiado general y no permite anticipar la finalidad del mensaje. En un entorno laboral, un asunto impreciso obliga al receptor a interpretar antes de actuar. & El asunto ``Solicitud de envío de reporte pendiente'' indica con claridad la acción esperada y el documento requerido. Facilita priorizar, localizar y responder el mensaje. \\
+\addlinespace
+Tono & Usa expresiones coloquiales como ``oye'', ``qué onda'' y ``urge''. El mensaje puede percibirse como exigente, aunque la intención sea resolver una necesidad inmediata. & Mantiene cortesía mediante saludo, agradecimiento y cierre formal. La solicitud es directa, pero no invasiva. \\
+\addlinespace
+Claridad & La petición no explica con precisión qué documento se necesita, para qué se requiere ni por qué el tiempo es relevante. & Explica que se da seguimiento a una solicitud previa, identifica el reporte mensual y justifica la necesidad por una entrega programada. \\
+\addlinespace
+Estructura & Carece de apertura formal, contexto, desarrollo y cierre profesional. La información aparece como presión acumulada. & Presenta saludo, contexto, solicitud, disponibilidad para aclaraciones, agradecimiento y firma. Esa estructura reduce ambigüedad. \\
+\addlinespace
+Adecuación al receptor & No considera la posición ni el tiempo del destinatario. La urgencia se traslada al receptor sin construir una solicitud profesional. & Reconoce al destinatario con tratamiento formal y deja abierta la posibilidad de comentarios o información adicional. \\
+\bottomrule
+\end{longtable}
+
+En el primer correo se identifican al menos tres errores relevantes: asunto vago, tono informal y falta de estructura. También se observa una urgencia mal gestionada, porque el mensaje no explica el motivo de la premura ni ofrece información suficiente para que la otra persona responda con eficiencia. En cambio, el segundo correo presenta tres aciertos claros: asunto específico, cortesía profesional y solicitud contextualizada. Esta diferencia confirma que la claridad no depende solo de usar menos palabras, sino de ordenar la información para que el receptor entienda qué se solicita, por qué se solicita y cómo puede responder.
+
+\section{Juego de roles}
+
+Para el juego de roles se eligió la situación laboral: \textbf{dar seguimiento a una actividad pendiente}. El supuesto es el siguiente: una persona integrante de un equipo jurídico-administrativo necesita solicitar a una compañera el envío de observaciones pendientes sobre un documento que debe integrarse a un expediente de trabajo antes del cierre del día.
+
+\subsection{Versión 1: correo inadecuado}
+
+\begin{quote}
+\textbf{Asunto:} pendientes
+
+Hola, Laura:
+
+Oye, sigo esperando tus observaciones del documento. Me dijiste que me las ibas a mandar y todavía no me llega nada. La verdad sí me urge porque tengo que cerrar esto hoy y no puedo avanzar si no me contestas.
+
+Mándamelo en cuanto puedas porque ya vamos tarde.
+
+Gracias.
+\end{quote}
+
+Esta versión es coherente con una situación laboral real, pero contiene errores típicos: el asunto es impreciso, el tono transmite molestia, no se identifica con claridad el documento, no se explica el propósito institucional de la solicitud y la urgencia se expresa como presión personal. El mensaje podría generar una respuesta defensiva porque coloca el problema sobre la destinataria sin organizar la petición de manera profesional.
+
+\subsection{Versión 2: correo formal y adecuado}
+
+\begin{quote}
+\textbf{Asunto:} Seguimiento a observaciones pendientes del documento de expediente
+
+Estimada Laura:
+
+Recibe un cordial saludo.
+
+Me permito dar seguimiento a las observaciones pendientes sobre el documento de integración del expediente que revisamos durante la mañana. Agradecería mucho si pudieras compartirme tus comentarios antes de las 16:00 horas, ya que son necesarios para consolidar la versión final y enviarla dentro del plazo programado.
+
+Quedo atento a cualquier duda o ajuste que consideres necesario revisar antes del envío.
+
+Agradezco de antemano tu apoyo.
+
+Atentamente,
+
+Martín Jonathan de la Cruz
+\end{quote}
+
+La segunda versión conserva la misma intención comunicativa, pero modifica la relación con el receptor. En lugar de trasladar presión, organiza la solicitud: identifica el documento, precisa el plazo, justifica la urgencia y mantiene apertura para resolver dudas. Desde una lógica profesional, este tipo de redacción no solo mejora la cortesía; también aumenta la posibilidad de obtener una respuesta útil, porque el receptor recibe instrucciones claras y un contexto suficiente para actuar.
+
+\section{Reflexión final}
+
+Entre ambas versiones realicé cambios de tono, estructura y precisión. El correo inadecuado parte de la urgencia personal y se expresa con informalidad; el correo formal parte del contexto laboral y convierte la urgencia en una solicitud organizada. Apliqué tres principios de comunicación efectiva: claridad, porque el mensaje indica qué documento se requiere y en qué plazo; formalidad, porque el saludo, el tratamiento y el cierre corresponden al ámbito profesional; y cortesía, porque la petición reconoce al receptor y deja abierta la posibilidad de aclaraciones. Considero que esta diferencia es importante para la formación jurídica, ya que un mensaje mal redactado puede afectar la coordinación, generar tensión innecesaria o debilitar la confianza en quien lo emite. La escritura profesional debe servir para resolver, no para aumentar el ruido del problema.
+
+\section{Conclusión}
+
+El ejercicio permite observar que la comunicación laboral escrita requiere equilibrio entre intención, receptor y contexto. Un mensaje puede ser urgente sin ser brusco, directo sin ser descortés y breve sin ser ambiguo. La diferencia está en la forma de organizar la información: un asunto claro, una apertura respetuosa, una solicitud precisa, una justificación suficiente y un cierre profesional convierten una petición cotidiana en un acto comunicativo eficaz.
+
+Desde mi perspectiva, la principal enseñanza de la actividad es que escribir bien en el ámbito profesional significa anticipar la interpretación del receptor. La redacción no solo expresa lo que se necesita; también construye la relación desde la cual se espera una respuesta. En ese sentido, la claridad, la formalidad y la cortesía no son adornos del correo laboral, sino condiciones mínimas para trabajar con responsabilidad en entornos académicos, administrativos y jurídicos.
+
+\bibliography{RedaccionContextosVirtuales}
+
+\end{document}

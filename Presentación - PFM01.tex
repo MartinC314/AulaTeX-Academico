@@ -1,0 +1,662 @@
+% Plantilla de presentación - PFM01 / IIIEPE
+% Alumno: Mtro. Martin Jonathan de la Cruz Muñoz
+% Matrícula: 00874
+%
+% ==============================================================================
+% PLANTILLA BASE DE ACTIVIDADES - PFM01
+% Fundamentos para la enseñanza y el aprendizaje
+% Maestría en Aprendizaje y Enseñanza de las Matemáticas
+% Marzo-julio 2026, Grupo A
+% ==============================================================================
+% Uso recomendado:
+% 1. Duplica este archivo por actividad y conserva el original como plantilla.
+%    Ejemplo: PFM01_B1S1_Actividad3_SociedadesSigloXXI.tex
+% 2. Actualiza el título visible de portada, la sección de actividad editable y la
+%    fecha de entrega cuando corresponda.
+% 3. Conserva las diapositivas de identidad PFM01 cuando la entrega requiera
+%    contextualizar la unidad; si no son necesarias, comenta la sección completa.
+% 4. No pegues la consigna completa en el producto final. Usa la consigna como
+%    lista de cumplimiento y redacta una respuesta académica propia.
+% 5. Toda actividad debe cerrar con postura profesional: posición, razón y efecto.
+% 6. Si la actividad pide silueta, matriz, tabla, esquema, mapa, línea de tiempo,
+%    infografía o producto visual, constrúyelo en LaTeX/TikZ cuando sea viable.
+%
+% Enfoque académico para PFM01:
+% - Partir de la práctica docente como objeto de reflexión y mejora.
+% - Relacionar enseñanza, aprendizaje, paradigmas, matemáticas y contexto social.
+% - Evitar resúmenes planos: concepto -> función -> límite -> ejemplo de aula ->
+%   implicación para la enseñanza de las matemáticas.
+% - Integrar experiencia docente sin convertirla en anécdota suelta; usarla como
+%   evidencia situada para analizar decisiones, creencias y necesidades.
+% - Priorizar una voz profesional: clara, reflexiva, argumentada y situada.
+%
+% Estructura sugerida por actividad:
+% [ ] Portada con unidad, bloque/sesión, actividad, alumno, matrícula y fecha.
+% [ ] Objetivo de la actividad redactado con palabras propias.
+% [ ] Problema o pregunta detonadora.
+% [ ] Desarrollo con conceptos, criterios, experiencia, evidencias y análisis.
+% [ ] Producto solicitado visible: silueta, matriz, tabla, esquema, etc.
+% [ ] Aplicación a la práctica docente y a la enseñanza de las matemáticas.
+% [ ] Conclusión con postura: posición, razón y consecuencia.
+% [ ] Fuentes consultadas en formato consistente.
+%
+% Checklist antes de entregar:
+% [ ] Título, actividad, bloque, sesión y fecha están actualizados.
+% [ ] El objetivo coincide con la consigna del EVA.
+% [ ] El producto solicitado aparece visible, rotulado y completo.
+% [ ] La introducción plantea un problema o postura, no solo anuncia el tema.
+% [ ] El desarrollo explica, conecta y analiza; no copia ni parafrasea sin aporte.
+% [ ] Hay relación explícita con práctica docente y matemáticas.
+% [ ] La conclusión incluye postura personal argumentada.
+% [ ] Ortografía, acentos, nombres propios y fechas revisadas.
+% [ ] El PDF compila sin errores y las imágenes institucionales cargan.
+% ==============================================================================
+
+\pdfminorversion=7
+\documentclass[
+	spanish,
+	aspectratio=1610,
+	xcolor={dvipsnames,table}
+]{beamer}
+
+% Lienzo 16:10 ampliado: da más espacio por diapositiva sin cambiar el diseño.
+\geometry{paperwidth=19.2cm,paperheight=12cm}
+
+% Idioma, tipografía y recursos visuales
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+% Datos del alumno y del programa
+\newcommand{\studentname}{Mtro. Martin Jonathan de la Cruz Muñoz}
+\newcommand{\studentshort}{M. de la Cruz Muñoz}
+\newcommand{\studentid}{00874}
+\newcommand{\studentemail}{martin.delacruz@campus.iiiepe.edu.mx}
+\newcommand{\programname}{Maestría en Aprendizaje y Enseñanza de las Matemáticas}
+\newcommand{\programshort}{MAEM}
+\newcommand{\modality}{Modalidad presencial}
+\newcommand{\periodname}{1er tetramestre marzo--julio 2026}
+\newcommand{\coursecode}{PFM01}
+\newcommand{\coursename}{Fundamentos para la enseñanza y el aprendizaje}
+\newcommand{\coursegroup}{Grupo A}
+\newcommand{\courseperiod}{Marzo--julio 2026}
+\newcommand{\learningunit}{Unidad de aprendizaje}
+\newcommand{\evaname}{EVA posgrado}
+\newcommand{\blockname}{Bloque 1}
+\newcommand{\sessionname}{Sesión 1}
+\newcommand{\videoreflection}{https://youtu.be/WbOtm0zkxLQ?si=2mrILdsI5lxxwPju}
+\newcommand{\scottreading}{El futuro del aprendizaje (I): ¿Por qué deben cambiar el contenido y los métodos de aprendizaje en el siglo XXI?}
+
+% Datos institucionales
+\newcommand{\institutionname}{IIIEPE}
+\newcommand{\institutionlongname}{Instituto de Investigación, Innovación y Estudios de Posgrado para la Educación del Estado de Nuevo León}
+\newcommand{\institutionurl}{https://iiiepe.edu.mx/}
+\newcommand{\institutionplace}{Monterrey, Nuevo León}
+
+% Recursos oficiales descargados desde el sitio del IIIEPE
+\newcommand{\iiiepelogo}{img/iiiepe/logo-iiiepe-blanco.png}
+\newcommand{\iiiepemark}{img/iiiepe/marca-iiiepe.png}
+\newcommand{\iiiepecover}{img/iiiepe/portada-institucional.png}
+\newcommand{\iiiepedots}{img/iiiepe/logo-puntos.png}
+\newcommand{\maemplanimage}{img/iiiepe/maem-plan-estudios.png}
+\newcommand{\maemsource}{https://iiiepe.edu.mx/maestria-en-aprendizaje-y-ensenanza-de-las-matematicas/}
+
+% Paleta inspirada en la identidad visual del sitio institucional
+\definecolor{iiiepeNavy}{HTML}{163B5C}
+\definecolor{iiiepeBlue}{HTML}{1F6F9F}
+\definecolor{iiiepeAqua}{HTML}{20B7A8}
+\definecolor{iiiepeOrange}{HTML}{F28C28}
+\definecolor{iiiepePaper}{HTML}{F6F8F7}
+\definecolor{iiiepeInk}{HTML}{1E2A32}
+\definecolor{iiiepeMuted}{HTML}{667085}
+
+\mode<presentation>{
+	\usetheme{default}
+	\usefonttheme{professionalfonts}
+	\setbeamertemplate{navigation symbols}{}
+	\setbeamertemplate{blocks}[rounded][shadow=false]
+	\setbeamercovered{invisible}
+}
+
+\hypersetup{
+	colorlinks=true,
+	urlcolor=iiiepeBlue,
+	linkcolor=iiiepeNavy
+}
+
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=iiiepeInk,bg=white}
+\setbeamercolor{structure}{fg=iiiepeBlue}
+\setbeamercolor{frametitle}{fg=white,bg=iiiepeNavy}
+\setbeamercolor{title}{fg=white,bg=iiiepeNavy}
+\setbeamercolor{subtitle}{fg=white}
+\setbeamercolor{block title}{fg=white,bg=iiiepeBlue}
+\setbeamercolor{block body}{fg=iiiepeInk,bg=iiiepePaper}
+\setbeamercolor{alerted text}{fg=iiiepeOrange}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{block title}{series=\bfseries}
+\setbeamertemplate{itemize item}{\textcolor{iiiepeAqua}{\large$\blacktriangleright$}}
+\setbeamertemplate{itemize subitem}{\textcolor{iiiepeOrange}{\scriptsize$\blacksquare$}}
+\setbeamertemplate{enumerate item}{\textcolor{iiiepeBlue}{\insertenumlabel.}}
+
+\setbeamertemplate{frametitle}{
+	\nointerlineskip
+	\begin{beamercolorbox}[wd=\textwidth,ht=1.05cm,dp=0.22cm,leftskip=0.35cm,rightskip=0.25cm]{frametitle}
+		\begin{minipage}[c]{0.72\textwidth}
+			\insertframetitle
+		\end{minipage}
+		\hfill
+		\raisebox{-0.1cm}{\includegraphics[height=0.58cm]{\iiiepelogo}}
+	\end{beamercolorbox}
+	\vspace{-0.04cm}
+	{\color{iiiepeOrange}\rule{\textwidth}{1.4pt}}
+}
+
+\setbeamertemplate{footline}{
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=.34\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}%
+			\color{white}\studentshort
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.38\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}%
+			\color{white}\programshort\ · \modality
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.20\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}%
+			\color{white}Matrícula \studentid\hfill\insertframenumber/\inserttotalframenumber
+		\end{beamercolorbox}%
+	}%
+	\vskip0pt%
+}
+\setbeamercolor{author in head/foot}{bg=iiiepeNavy}
+\setbeamercolor{title in head/foot}{bg=iiiepeBlue}
+\setbeamercolor{date in head/foot}{bg=iiiepeNavy}
+
+\newcommand{\accentbar}{%
+	\begin{tikzpicture}[remember picture,overlay]
+		\path[use as bounding box] (0,0) rectangle (0,0);
+		\fill[iiiepeAqua] (current page.south west) rectangle ([xshift=0.42\paperwidth,yshift=0.08cm]current page.south west);
+		\fill[iiiepeOrange] ([xshift=0.42\paperwidth]current page.south west) rectangle ([xshift=\paperwidth,yshift=0.08cm]current page.south west);
+	\end{tikzpicture}
+}
+
+\newcommand{\sectionframe}[1]{%
+	\begin{frame}[plain]
+		\begin{tikzpicture}[remember picture,overlay]
+			\fill[iiiepeNavy] (current page.south west) rectangle (current page.north east);
+			\node[opacity=0.13,anchor=east] at ([xshift=0.8cm]current page.east) {\includegraphics[height=9.4cm]{\iiiepedots}};
+			\fill[iiiepeAqua] ([xshift=0.85cm,yshift=2.1cm]current page.south west) rectangle ([xshift=1.05cm,yshift=6.3cm]current page.south west);
+			\fill[iiiepeOrange] ([xshift=1.15cm,yshift=2.1cm]current page.south west) rectangle ([xshift=1.35cm,yshift=5.35cm]current page.south west);
+		\end{tikzpicture}
+		\vspace{1.8cm}
+		\hspace{1.25cm}
+		\begin{minipage}{0.72\paperwidth}
+			{\color{white}\Huge\bfseries #1}\\[0.25cm]
+			{\color{white!75}\programname}
+		\end{minipage}
+	\end{frame}
+}
+
+\AtBeginSection[]{
+	\sectionframe{\insertsectionhead}
+}
+
+\title[\coursecode]{\coursename}
+\subtitle{\programname}
+\author[\studentshort]{\texorpdfstring{\studentname\\\footnotesize Matrícula: \studentid\\\href{mailto:\studentemail}{\studentemail}}{\studentname, Matricula: \studentid}}
+\institute[\institutionname]{\institutionlongname\\\coursecode\ · \coursegroup}
+\date[\courseperiod]{\institutionplace\\\courseperiod}
+
+\begin{document}
+
+% Portada institucional
+\begin{frame}[plain]
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=center,opacity=0.18] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{\iiiepecover}};
+		\fill[iiiepeNavy,opacity=0.94] (current page.south west) rectangle ([xshift=0.55\paperwidth]current page.north west);
+		\fill[iiiepeBlue,opacity=0.92] ([xshift=0.55\paperwidth]current page.south west) rectangle (current page.north east);
+		\node[anchor=north west] at ([xshift=0.55cm,yshift=-0.45cm]current page.north west) {\includegraphics[width=4.15cm]{\iiiepelogo}};
+		\node[opacity=0.17,anchor=south east] at ([xshift=0.9cm,yshift=-0.3cm]current page.south east) {\includegraphics[height=8.8cm]{\iiiepedots}};
+		\fill[iiiepeOrange] ([xshift=0.56\paperwidth,yshift=1.15cm]current page.south west) rectangle ([xshift=0.92\paperwidth,yshift=1.28cm]current page.south west);
+		\fill[iiiepeAqua] ([xshift=0.56\paperwidth,yshift=0.88cm]current page.south west) rectangle ([xshift=0.82\paperwidth,yshift=1.01cm]current page.south west);
+	\end{tikzpicture}
+
+	\vspace{1.9cm}
+	\begin{minipage}{0.50\paperwidth}
+		{\color{white}\Huge\bfseries Fundamentos para la enseñanza\\ y el aprendizaje}\\[0.25cm]
+		{\color{white!86}\large \coursecode\ · \coursegroup}\\[0.35cm]
+		{\color{iiiepeOrange}\rule{0.82\linewidth}{1.3pt}}\\[0.45cm]
+		{\color{white}\studentname}\\
+		{\color{white!80}\footnotesize Matrícula: \studentid\ · \studentemail}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.36\paperwidth}
+		\raggedleft
+		{\color{white}\Large\bfseries \institutionname}\\[0.18cm]
+		{\color{white!82}\footnotesize \institutionlongname}\\[0.5cm]
+		{\color{white}\small \programname}\\
+		{\color{white!78}\small \courseperiod}\\[0.5cm]
+		{\color{white!74}\footnotesize \institutionplace\ · \learningunit}\\
+		{\color{white!74}\footnotesize \href{\institutionurl}{\institutionurl}}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{Contenido}
+	\tableofcontents
+\end{frame}
+
+\section{Identidad PFM01}
+
+\begin{frame}{Ficha de la unidad}
+	\begin{columns}[T]
+		\begin{column}{0.42\textwidth}
+			\begin{center}
+				\includegraphics[width=0.54\linewidth]{\iiiepemark}\\[0.35cm]
+				{\Large\bfseries\color{iiiepeNavy}\institutionname}\\
+				{\small\color{iiiepeMuted}\evaname}
+			\end{center}
+		\end{column}
+		\begin{column}{0.54\textwidth}
+			\begin{block}{Alumno}
+				\textbf{\studentname}\\
+				Matrícula: \studentid\\
+				Correo: \href{mailto:\studentemail}{\studentemail}
+			\end{block}
+			\begin{block}{Unidad de aprendizaje}
+				\textbf{\coursecode\ · \coursename}\\
+				\coursegroup\\
+				\courseperiod
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Contexto académico}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Datos generales}
+				\begin{itemize}
+					\item Programa: \programname.
+					\item Unidad: \coursename.
+					\item Clave: \coursecode.
+					\item Periodo: \courseperiod.
+					\item Grupo: \coursegroup.
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Propósito de la unidad}
+				Analizar los fundamentos de la enseñanza y el aprendizaje en el
+				contexto actual, reconociendo el papel docente, las características
+				de las clases de matemáticas y las habilidades necesarias para
+				promover aprendizajes significativos.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Introducción a la unidad}
+	\begin{block}{Sentido de la unidad}
+		La unidad analiza el papel del docente en las sociedades del siglo XXI,
+		los cambios educativos actuales y las implicaciones que estos tienen en
+		la enseñanza de las matemáticas.
+	\end{block}
+	\begin{columns}[T]
+		\begin{column}{0.32\textwidth}
+			\begin{block}{Docencia}
+				Reconocer identidad, decisiones, creencias y áreas de fortalecimiento.
+			\end{block}
+		\end{column}
+		\begin{column}{0.32\textwidth}
+			\begin{block}{Aprendizaje}
+				Revisar tipos de aprendizaje, habilidades y condiciones actuales.
+			\end{block}
+		\end{column}
+		\begin{column}{0.32\textwidth}
+			\begin{block}{Matemáticas}
+				Vincular los fundamentos educativos con la práctica matemática escolar.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Temario base de la unidad}
+	\begin{enumerate}
+		\item Introducción: enseñanza, aprendizaje, paradigmas y matemáticas.
+		\item Sociedades del siglo XXI y transformación educativa.
+		\item Tipos de aprendizaje en las sociedades actuales.
+		\item Siete habilidades básicas para el contexto contemporáneo.
+		\item Sugerencias metodológicas para fortalecer la práctica educativa.
+		\item Enseñanza de las matemáticas y características de sus clases.
+		\item Programa 2022 de la Nueva Escuela Mexicana.
+		\item Trabajo final integrador.
+	\end{enumerate}
+	\accentbar
+\end{frame}
+
+\section{\blockname\ · \sessionname}
+
+\begin{frame}{Introducción a la sesión}
+	\begin{block}{Punto de partida}
+		La primera sesión promueve una reflexión inicial sobre conceptos
+		fundamentales del campo educativo: enseñanza, aprendizaje, paradigmas y
+		matemáticas.
+	\end{block}
+	\begin{itemize}
+		\item Recuperar experiencia profesional y saberes previos.
+		\item Identificar creencias y perspectivas sobre la práctica docente.
+		\item Construir significados desde el diálogo y el análisis crítico.
+		\item Evitar respuestas únicas; privilegiar reflexión argumentada.
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Recurso de reflexión}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Video}
+				El recurso invita a reflexionar sobre paradigmas educativos
+				tradicionales y la necesidad de replantear la enseñanza y el
+				aprendizaje en las sociedades actuales.
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Clave de análisis}
+				Relacionar el planteamiento del video con la experiencia docente y
+				con la enseñanza de las matemáticas.
+			\end{block}
+			{\scriptsize \href{\videoreflection}{\videoreflection}}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Actividad diagnóstica}
+	\begin{block}{Propósito}
+		Identificar ideas previas sobre enseñanza, aprendizaje, paradigmas y
+		matemáticas para establecer un punto de partida de la unidad.
+	\end{block}
+	\scriptsize
+	\begin{tabular}{p{0.20\textwidth}p{0.70\textwidth}}
+		\toprule
+		\textbf{Concepto} & \textbf{Pregunta orientadora} \\
+		\midrule
+		Enseñanza & ¿Qué decisiones tomo para orientar, mediar o transformar el aprendizaje? \\
+		Aprendizaje & ¿Cómo reconozco que un estudiante construyó comprensión matemática? \\
+		Paradigmas & ¿Qué creencias sostienen mi forma de enseñar y evaluar? \\
+		Matemáticas & ¿Las presento como procedimiento, lenguaje, razonamiento o herramienta cultural? \\
+		\bottomrule
+	\end{tabular}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Actividad: ¿Cómo soy como maestro?}
+	\begin{block}{Propósito}
+		Analizar la identidad docente, reconocer fortalezas, áreas de oportunidad
+		y necesidades de formación para fortalecer la práctica profesional en la
+		enseñanza de las matemáticas.
+	\end{block}
+	\begin{itemize}
+		\item Elaborar una silueta que represente la identidad docente.
+		\item Explicar fortalezas y áreas de oportunidad desde la práctica real.
+		\item Identificar bibliografía o formación necesaria para mejorar.
+		\item Compartir hallazgos en diálogo presencial y reflexión grupal.
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Silueta docente: organización}
+	\begin{columns}[T]
+		\begin{column}{0.32\textwidth}
+			\begin{block}{Lado izquierdo}
+				Fortalezas y áreas de oportunidad como docente de matemáticas,
+				explicadas con ejemplos de práctica.
+			\end{block}
+		\end{column}
+		\begin{column}{0.32\textwidth}
+			\begin{block}{Centro}
+				Definición personal como docente y rasgos que caracterizan la
+				práctica educativa.
+			\end{block}
+		\end{column}
+		\begin{column}{0.32\textwidth}
+			\begin{block}{Lado derecho}
+				Necesidades de formación o bibliografía justificadas por su aporte
+				al desarrollo profesional.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\section{Actividad 3}
+
+\begin{frame}{Sociedades del siglo XXI}
+	\begin{block}{Propósito de la actividad}
+		Analizar los factores que impulsan la transformación de la enseñanza y
+		construir una postura fundamentada sobre su impacto en la educación y en
+		la enseñanza de las matemáticas.
+	\end{block}
+	\begin{itemize}
+		\item Lectura base: \textit{\scottreading}, de Cynthia Luna Scott.
+		\item Apertura: sábado 25 de abril de 2026, 8:01 a. m.
+		\item Entrega: viernes 1 de mayo de 2026, 11:59 p. m.
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Factores de transformación}
+	\scriptsize
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{itemize}
+				\item Competencias nuevas para un mundo complejo.
+				\item Nuevas características de las y los estudiantes.
+				\item Desinterés juvenil y abandono prematuro.
+				\item Valor actual de la educación formal.
+				\item Escasez de preparación.
+				\item Evolución del mercado de trabajo.
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{itemize}
+				\item Cambios en modelos de enseñanza y aprendizaje.
+				\item Nuevos medios didácticos y vías de aprendizaje.
+				\item Nuevas normas de evaluación y rendición de cuentas.
+				\item Aprendizaje en cualquier momento y lugar.
+				\item Crecimiento acelerado de la información.
+				\item Del alumno consumidor al productor de conocimiento.
+			\end{itemize}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Matriz para argumentar cada factor}
+	\scriptsize
+	\begin{tabular}{p{0.22\textwidth}p{0.22\textwidth}p{0.22\textwidth}p{0.20\textwidth}}
+		\toprule
+		\textbf{Factor} & \textbf{Relevancia} & \textbf{Relación educativa} & \textbf{Postura docente} \\
+		\midrule
+		Escribir factor & Explicar por qué transforma la enseñanza & Vincular con aula, estudiantes o currículo & Sostener posición con razón y efecto \\
+		\bottomrule
+	\end{tabular}
+	\vspace{0.45cm}
+	\begin{block}{Regla de escritura}
+		No limitarse a describir: cada factor debe convertirse en argumento,
+		con relevancia, relación con el contexto actual y conexión con la
+		enseñanza de las matemáticas.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Recursos de apoyo}
+	\begin{block}{Lectura principal}
+		Cynthia Luna Scott, \textit{\scottreading}. Usar la lectura para
+		construir argumentos sobre cambio educativo, no para copiar definiciones.
+	\end{block}
+	\begin{block}{Organizador visual}
+		La infografía de procesos y etapas puede servir como referencia de forma:
+		jerarquizar, ordenar, sintetizar y conectar ideas dentro de productos
+		visuales propios.
+	\end{block}
+	\begin{block}{Criterio de uso}
+		Todo recurso debe convertirse en análisis situado: qué plantea, por qué
+		importa, cómo se relaciona con el aula y qué exige a la enseñanza de las
+		matemáticas.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\section{Pautas de plantilla}
+
+\begin{frame}{Ruta sugerida para cada actividad}
+	\begin{enumerate}
+		\item Leer la consigna y convertirla en objetivo propio.
+		\item Identificar producto esperado: silueta, matriz, exposición, análisis o propuesta.
+		\item Separar conceptos, criterios, evidencias y experiencia docente.
+		\item Construir argumento: problema, fundamento, aplicación y consecuencia.
+		\item Integrar relación explícita con la enseñanza de las matemáticas.
+		\item Cerrar con postura profesional: posición, razón y efecto.
+	\end{enumerate}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Criterios de calidad para entregar}
+	\begin{itemize}
+		\item Claridad: cada diapositiva debe sostener una idea principal.
+		\item Pertinencia: responder a la actividad, no solo al tema general.
+		\item Evidencia: incluir fuentes, ejemplos, casos o productos verificables.
+		\item Análisis: explicar relaciones, límites, implicaciones y decisiones didácticas.
+		\item Identidad profesional: conectar aprendizaje, experiencia y mejora docente.
+		\item Escritura propia: evitar copiar o parafrasear sin argumento.
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Checklist antes de entregar}
+	\begin{itemize}
+		\item Título, unidad, bloque, sesión, alumno y fecha actualizados.
+		\item Objetivo alineado con la consigna real del EVA.
+		\item Producto solicitado visible, rotulado y completo.
+		\item Relación con práctica docente y enseñanza de matemáticas.
+		\item Conclusión con postura personal argumentada.
+		\item Fuentes revisadas y citadas de forma consistente.
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\section{Plantilla editable}
+
+\begin{frame}{Título de la actividad}
+	\begin{columns}[T]
+		\begin{column}{0.62\textwidth}
+			\begin{itemize}
+				\item Sustituir este punto por la idea principal de la actividad.
+				\item Agregar evidencias, argumentos o referencias de clase.
+				\item Cerrar con una implicación para la práctica docente.
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.32\textwidth}
+			\begin{block}{Enfoque}
+				Fundamentos de enseñanza y aprendizaje aplicados a la práctica
+				docente en matemáticas.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Objetivo de la actividad}
+	\begin{block}{Redactar objetivo}
+		Escribir aquí el objetivo de la actividad en una frase propia, usando un
+		verbo observable: analizar, comparar, diseñar, evaluar, explicar,
+		proponer, argumentar o sintetizar.
+	\end{block}
+	\begin{itemize}
+		\item ¿Qué se va a estudiar o producir?
+		\item ¿Con qué criterio teórico o didáctico se trabajará?
+		\item ¿Para qué mejora, decisión o aprendizaje servirá?
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Análisis}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Concepto clave}
+				Escribir aquí la definición, postura teórica o problema central.
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Aplicación}
+				Relacionar el concepto con la enseñanza y aprendizaje de las matemáticas.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vfill
+	\begin{center}
+		{\color{iiiepeMuted}\small \institutionname\ · \coursecode\ · \courseperiod}
+	\end{center}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Producto solicitado}
+	\begin{block}{Tipo de producto}
+		Indicar si la actividad pide cuadro comparativo, mapa conceptual, línea
+		de tiempo, exposición, ensayo breve, análisis de caso, propuesta
+		didáctica, secuencia, rúbrica o ambiente de aprendizaje.
+	\end{block}
+	\begin{block}{Evidencia de elaboración}
+		Insertar aquí el producto construido o una síntesis visual editable.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Aplicación a la práctica docente}
+	\begin{itemize}
+		\item Contexto educativo o grupo al que podría aplicarse.
+		\item Problema matemático, didáctico o evaluativo que atiende.
+		\item Estrategia de intervención o mejora propuesta.
+		\item Evidencia esperada para valorar su impacto.
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\section{Cierre}
+
+\begin{frame}{Conclusiones}
+	\begin{enumerate}
+		\item Sintetizar el aprendizaje principal.
+		\item Explicar su relevancia para el contexto educativo.
+		\item Plantear una mejora o pregunta para continuar investigando.
+	\end{enumerate}
+	\accentbar
+\end{frame}
+
+\begin{frame}[plain]
+	\begin{tikzpicture}[remember picture,overlay]
+		\fill[iiiepeNavy] (current page.south west) rectangle (current page.north east);
+		\node[opacity=0.13,anchor=south east] at ([xshift=0.8cm,yshift=-0.2cm]current page.south east) {\includegraphics[height=9cm]{\iiiepedots}};
+		\node[anchor=north west] at ([xshift=0.55cm,yshift=-0.45cm]current page.north west) {\includegraphics[width=3.7cm]{\iiiepelogo}};
+	\end{tikzpicture}
+	\vspace{2.2cm}
+	\begin{center}
+		{\color{white}\Huge\bfseries Gracias}\\[0.55cm]
+		{\color{white}\Large \studentname}\\[0.18cm]
+		{\color{white!78}\footnotesize Matrícula \studentid\ · \studentemail}\\[0.45cm]
+		{\color{iiiepeOrange}\rule{0.36\paperwidth}{1.4pt}}\\[0.35cm]
+		{\color{white!72}\footnotesize \institutionname\ · \coursecode\ · \coursename}
+	\end{center}
+\end{frame}
+
+\end{document}
