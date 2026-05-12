@@ -1,0 +1,11 @@
+# IDE
+.idea/
+.vscode/
+
+# Python
+*.pyc
+
+# Otros
+*._**
+node_modules/
+.DS_Store

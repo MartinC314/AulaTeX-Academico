@@ -24,6 +24,7 @@
 
 # Releases
 *.zip
+!retroalimentacion-editorial/fuentes/template-latex-web/**/*.zip
 
 # Windows
 desktop.ini
