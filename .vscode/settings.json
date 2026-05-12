@@ -1,0 +1,49 @@
+{
+  "latex-workshop.latex.cwd": "%WORKSPACE_FOLDER%",
+  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/build/latex",
+  "latex-workshop.synctex.afterBuild.enabled": false,
+  "latex-workshop.latex.recipe.default": "lastUsed",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "AulaTeX: latexmk -> salidas/pdf",
+      "tools": [
+        "aulatex-latexmk"
+      ]
+    },
+    {
+      "name": "AulaTeX: TikZ -> PDF/SVG/PNG",
+      "tools": [
+        "aulatex-tikz"
+      ]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "aulatex-latexmk",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "%WORKSPACE_FOLDER%/scripts/latexmk-build.ps1",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "aulatex-tikz",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "%WORKSPACE_FOLDER%/scripts/tikz-export.ps1",
+        "%DOC%",
+        "-Format",
+        "all"
+      ]
+    }
+  ],
+  "latex-workshop.view.pdf.viewer": "tab"
+}

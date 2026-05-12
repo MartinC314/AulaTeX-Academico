@@ -10,6 +10,14 @@
 *.lol
 *.bbl
 *.blg
+*.bcf
+*.fdb_latexmk
+*.fls
+*.nav
+*.run.xml
+*.snm
+*.vrb
+*.xdv
 *.equ
 *(busy)*
 *._**
@@ -47,9 +55,13 @@ dist/example.tex
 dist/template_config.tex
 
 # Archivos temporales
+build/
+salidas/auxiliares-antiguos/
 *.xlsx
 *_temp.tex
 TODO.txt
 
-# Otros
-.vscode
+# VS Code: compartir recetas del proyecto, no estado local del editor
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
