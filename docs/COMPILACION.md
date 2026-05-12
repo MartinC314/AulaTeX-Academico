@@ -42,13 +42,13 @@ Abre cualquier `.tex`, elige la receta y compila. La receta ejecuta los scripts 
 Configura un comando de usuario o el compilador por defecto con:
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "D:\Documentos\LaTEX\Template-Informe\scripts\latexmk-build.ps1" %.tex
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "<ruta-del-proyecto>\scripts\latexmk-build.ps1" %.tex
 ```
 
 Para TikZ:
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "D:\Documentos\LaTEX\Template-Informe\scripts\tikz-export.ps1" %.tex -Format all
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "<ruta-del-proyecto>\scripts\tikz-export.ps1" %.tex -Format all
 ```
 
 La clave es compilar mediante los scripts o mediante `latexmk` desde la raiz del repositorio. Asi los documentos movidos a `trabajos/` siguen encontrando la plantilla y las bibliografias.

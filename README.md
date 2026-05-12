@@ -6,6 +6,7 @@ Entorno personal de trabajo academico en LaTeX, construido sobre `Template-Infor
 
 - Escribe documentos en `trabajos/`.
 - Guarda bibliografia y documentos fuente en `referencias/`.
+- Coloca materiales pendientes de integrar en `Revisión/`.
 - Compila con `latexmk` mediante los scripts o las recetas de VS Code.
 - Recibe PDFs finales en `salidas/pdf`.
 - Exporta diagramas TikZ a `salidas/tikz/pdf`, `salidas/tikz/svg` y `salidas/tikz/png`.
