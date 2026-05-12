@@ -11,6 +11,7 @@
 - `scripts/`: comandos reutilizables para compilar y exportar.
 - `plantillas/latex`: bases originales, adaptaciones institucionales y moldes por materia.
 - `Revisión/`: bandeja temporal para proyectos o materiales que todavia no tienen ubicacion definitiva.
+- `retroalimentacion-editorial/`: metabitacora de cambios, criterios, propuestas y lineamientos.
 
 ## Trabajo academico
 
@@ -32,6 +33,15 @@
 - `Revisión/`: coloca aqui carpetas nuevas, como proyectos Slidev o materiales externos, antes de integrarlas al flujo principal.
 - La regla practica: nada se mueve a `trabajos/`, `referencias/` o `herramientas/` hasta decidir si sera materia, proyecto, recurso transversal o herramienta.
 - El contenido de `Revisión/` queda fuera de Git salvo `README.md` e `INVENTARIO.md`.
+
+## Retroalimentacion editorial
+
+- `retroalimentacion-editorial/indice.md`: punto de entrada de la bitacora.
+- Los archivos tematicos registran decisiones de estructura, flujo de
+  actividades, referencias, plantillas, compilacion, TikZ y propuestas de
+  evolucion.
+- La carpeta no sustituye a `docs/`; registra por que se toman decisiones y
+  como deberia evolucionar AulaTeX.
 
 ## Referencias
 
