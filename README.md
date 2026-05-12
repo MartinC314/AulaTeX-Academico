@@ -8,6 +8,7 @@ Entorno personal de trabajo academico en LaTeX, construido sobre `Template-Infor
 - Guarda bibliografia y documentos fuente en `referencias/`.
 - Coloca materiales pendientes de integrar en `Revisión/`.
 - Usa `plantillas/latex/` para distinguir bases oficiales, adaptaciones institucionales y moldes por materia.
+- Registra decisiones, propuestas y lineamientos en `retroalimentacion-editorial/`.
 - Compila con `latexmk` mediante los scripts o las recetas de VS Code.
 - Recibe PDFs finales en `salidas/pdf`.
 - Exporta diagramas TikZ a `salidas/tikz/pdf`, `salidas/tikz/svg` y `salidas/tikz/png`.
@@ -29,6 +30,7 @@ Entorno personal de trabajo academico en LaTeX, construido sobre `Template-Infor
 - [Catalogo de plantillas](plantillas/latex/README.md)
 - [Referencias](referencias/README.md)
 - [Mapa de bibliografias](referencias/MAPA_BIBLIOGRAFIAS.md)
+- [Retroalimentacion editorial](retroalimentacion-editorial/indice.md)
 
 ## Base original
 
