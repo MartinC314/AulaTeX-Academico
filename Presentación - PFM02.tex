@@ -1,0 +1,723 @@
+% Plantilla de presentación - PFM02 / IIIEPE
+% Alumno: Mtro. Martin Jonathan de la Cruz Muñoz
+% Matrícula: 00874
+%
+% ==============================================================================
+% PLANTILLA BASE DE ACTIVIDADES - PFM02
+% Temas selectos de matemáticas I
+% Maestría en Aprendizaje y Enseñanza de las Matemáticas
+% Marzo-julio 2026, Grupo A
+% ==============================================================================
+% Uso recomendado:
+% 1. Duplica este archivo por actividad y conserva el original como plantilla.
+%    Ejemplo: PFM02_S03_Enteros_SecuenciaDidactica.tex
+% 2. Actualiza el título visible de portada, la sección de actividad editable y la
+%    fecha de entrega cuando corresponda.
+% 3. Conserva las diapositivas de identidad PFM02 cuando la entrega requiera
+%    contextualizar la unidad; si no son necesarias, comenta la sección completa.
+% 4. No pegues la consigna completa en el producto final. Usa la consigna como
+%    lista de cumplimiento y redacta una respuesta académica propia.
+% 5. Toda actividad debe cerrar con evidencia matemática y reflexión didáctica.
+% 6. Si la actividad pide secuencia, ficha, tabla, mecanizaciones, situación en
+%    contexto o instrumento de evaluación, constrúyelo en LaTeX/TikZ cuando sea viable.
+%
+% Enfoque académico para PFM02:
+% - Partir de un contenido matemático escolar y su proceso de desarrollo de aprendizaje.
+% - Relacionar concepto, procedimiento, representación, situación en contexto y evaluación.
+% - Evitar hojas de ejercicios sin intención didáctica: antecedente -> explicación ->
+%   práctica -> situación contextualizada -> evaluación -> metacognición.
+% - Integrar el Programa Sintético Fase 6 y el campo Saberes y Pensamiento Científico
+%   cuando la secuencia se vincule con secundaria.
+% - Priorizar una voz docente: precisa en lo matemático, clara en lo didáctico y
+%   cuidadosa en la progresión de dificultad.
+%
+% Estructura sugerida por actividad:
+% [ ] Portada con sesión, tema, alumno, matrícula, grupo y fecha.
+% [ ] Contenido, PDA y aprendizaje de la secuencia.
+% [ ] Fase 1: conocimientos previos o antecedente del contenido.
+% [ ] Fase 2: exploración, introducción y explicación del contenido.
+% [ ] Fase 3: práctica del contenido: mecanizaciones y situaciones en contexto.
+% [ ] Fase 4: evaluación: examen, laboratorio, exposición, actividad lúdica,
+%     autoevaluación o coevaluación.
+% [ ] Fase 5: retroalimentación y reflexión del desempeño/contenido.
+% [ ] Fuentes consultadas en formato consistente.
+%
+% Checklist antes de entregar:
+% [ ] Título, actividad, bloque, sesión y fecha están actualizados.
+% [ ] El objetivo coincide con la consigna del EVA.
+% [ ] El contenido, PDA y aprendizaje esperado están completos.
+% [ ] La secuencia respeta las cinco fases de trabajo.
+% [ ] Hay ejercicios graduados, situaciones en contexto y cierre metacognitivo.
+% [ ] La evaluación corresponde al aprendizaje de la secuencia.
+% [ ] Las operaciones, fórmulas, unidades y resultados matemáticos fueron revisados.
+% [ ] Ortografía, acentos, nombres propios y fechas revisadas.
+% [ ] El PDF compila sin errores y las imágenes institucionales cargan.
+% ==============================================================================
+
+\pdfminorversion=7
+\documentclass[
+	spanish,
+	aspectratio=1610,
+	xcolor={dvipsnames,table}
+]{beamer}
+
+% Lienzo 16:10 ampliado: da más espacio por diapositiva sin cambiar el diseño.
+\geometry{paperwidth=19.2cm,paperheight=12cm}
+
+% Idioma, tipografía y recursos visuales
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+% Datos del alumno y del programa
+\newcommand{\studentname}{Mtro. Martin Jonathan de la Cruz Muñoz}
+\newcommand{\studentshort}{M. de la Cruz Muñoz}
+\newcommand{\studentid}{00874}
+\newcommand{\studentemail}{martin.delacruz@campus.iiiepe.edu.mx}
+\newcommand{\programname}{Maestría en Aprendizaje y Enseñanza de las Matemáticas}
+\newcommand{\programshort}{MAEM}
+\newcommand{\modality}{Modalidad presencial}
+\newcommand{\periodname}{1er tetramestre marzo--julio 2026}
+\newcommand{\coursecode}{PFM02}
+\newcommand{\coursename}{Temas selectos de matemáticas I}
+\newcommand{\coursegroup}{Grupo A}
+\newcommand{\courseperiod}{Marzo--julio 2026}
+\newcommand{\learningunit}{Unidad de aprendizaje}
+\newcommand{\evaname}{EVA posgrado}
+\newcommand{\blockname}{Secuencia didáctica}
+\newcommand{\sessionname}{Sesiones 01--03}
+\newcommand{\methodology}{Aprendizaje basado en indagación}
+\newcommand{\steamenfoque}{STEAM como enfoque}
+\newcommand{\curriculumsource}{Programa Sintético Fase 6}
+\newcommand{\formativefield}{Saberes y Pensamiento Científico}
+\newcommand{\mainproduct}{Secuencia didáctica matemática}
+
+% Datos institucionales
+\newcommand{\institutionname}{IIIEPE}
+\newcommand{\institutionlongname}{Instituto de Investigación, Innovación y Estudios de Posgrado para la Educación del Estado de Nuevo León}
+\newcommand{\institutionurl}{https://iiiepe.edu.mx/}
+\newcommand{\institutionplace}{Monterrey, Nuevo León}
+
+% Recursos oficiales descargados desde el sitio del IIIEPE
+\newcommand{\iiiepelogo}{img/iiiepe/logo-iiiepe-blanco.png}
+\newcommand{\iiiepemark}{img/iiiepe/marca-iiiepe.png}
+\newcommand{\iiiepecover}{img/iiiepe/portada-institucional.png}
+\newcommand{\iiiepedots}{img/iiiepe/logo-puntos.png}
+\newcommand{\maemplanimage}{img/iiiepe/maem-plan-estudios.png}
+\newcommand{\maemsource}{https://iiiepe.edu.mx/maestria-en-aprendizaje-y-ensenanza-de-las-matematicas/}
+
+% Paleta inspirada en la identidad visual del sitio institucional
+\definecolor{iiiepeNavy}{HTML}{163B5C}
+\definecolor{iiiepeBlue}{HTML}{1F6F9F}
+\definecolor{iiiepeAqua}{HTML}{20B7A8}
+\definecolor{iiiepeOrange}{HTML}{F28C28}
+\definecolor{iiiepePaper}{HTML}{F6F8F7}
+\definecolor{iiiepeInk}{HTML}{1E2A32}
+\definecolor{iiiepeMuted}{HTML}{667085}
+
+\mode<presentation>{
+	\usetheme{default}
+	\usefonttheme{professionalfonts}
+	\setbeamertemplate{navigation symbols}{}
+	\setbeamertemplate{blocks}[rounded][shadow=false]
+	\setbeamercovered{invisible}
+}
+
+\hypersetup{
+	colorlinks=true,
+	urlcolor=iiiepeBlue,
+	linkcolor=iiiepeNavy
+}
+
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=iiiepeInk,bg=white}
+\setbeamercolor{structure}{fg=iiiepeBlue}
+\setbeamercolor{frametitle}{fg=white,bg=iiiepeNavy}
+\setbeamercolor{title}{fg=white,bg=iiiepeNavy}
+\setbeamercolor{subtitle}{fg=white}
+\setbeamercolor{block title}{fg=white,bg=iiiepeBlue}
+\setbeamercolor{block body}{fg=iiiepeInk,bg=iiiepePaper}
+\setbeamercolor{alerted text}{fg=iiiepeOrange}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{block title}{series=\bfseries}
+\setbeamertemplate{itemize item}{\textcolor{iiiepeAqua}{\large$\blacktriangleright$}}
+\setbeamertemplate{itemize subitem}{\textcolor{iiiepeOrange}{\scriptsize$\blacksquare$}}
+\setbeamertemplate{enumerate item}{\textcolor{iiiepeBlue}{\insertenumlabel.}}
+
+\setbeamertemplate{frametitle}{
+	\nointerlineskip
+	\begin{beamercolorbox}[wd=\textwidth,ht=1.05cm,dp=0.22cm,leftskip=0.35cm,rightskip=0.25cm]{frametitle}
+		\begin{minipage}[c]{0.72\textwidth}
+			\insertframetitle
+		\end{minipage}
+		\hfill
+		\raisebox{-0.1cm}{\includegraphics[height=0.58cm]{\iiiepelogo}}
+	\end{beamercolorbox}
+	\vspace{-0.04cm}
+	{\color{iiiepeOrange}\rule{\textwidth}{1.4pt}}
+}
+
+\setbeamertemplate{footline}{
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=.34\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}%
+			\color{white}\studentshort
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.38\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}%
+			\color{white}\programshort\ · \modality
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.20\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}%
+			\color{white}Matrícula \studentid\hfill\insertframenumber/\inserttotalframenumber
+		\end{beamercolorbox}%
+	}%
+	\vskip0pt%
+}
+\setbeamercolor{author in head/foot}{bg=iiiepeNavy}
+\setbeamercolor{title in head/foot}{bg=iiiepeBlue}
+\setbeamercolor{date in head/foot}{bg=iiiepeNavy}
+
+\newcommand{\accentbar}{%
+	\begin{tikzpicture}[remember picture,overlay]
+		\path[use as bounding box] (0,0) rectangle (0,0);
+		\fill[iiiepeAqua] (current page.south west) rectangle ([xshift=0.42\paperwidth,yshift=0.08cm]current page.south west);
+		\fill[iiiepeOrange] ([xshift=0.42\paperwidth]current page.south west) rectangle ([xshift=\paperwidth,yshift=0.08cm]current page.south west);
+	\end{tikzpicture}
+}
+
+\newcommand{\sectionframe}[1]{%
+	\begin{frame}[plain]
+		\begin{tikzpicture}[remember picture,overlay]
+			\fill[iiiepeNavy] (current page.south west) rectangle (current page.north east);
+			\node[opacity=0.13,anchor=east] at ([xshift=0.8cm]current page.east) {\includegraphics[height=9.4cm]{\iiiepedots}};
+			\fill[iiiepeAqua] ([xshift=0.85cm,yshift=2.1cm]current page.south west) rectangle ([xshift=1.05cm,yshift=6.3cm]current page.south west);
+			\fill[iiiepeOrange] ([xshift=1.15cm,yshift=2.1cm]current page.south west) rectangle ([xshift=1.35cm,yshift=5.35cm]current page.south west);
+		\end{tikzpicture}
+		\vspace{1.8cm}
+		\hspace{1.25cm}
+		\begin{minipage}{0.72\paperwidth}
+			{\color{white}\Huge\bfseries #1}\\[0.25cm]
+			{\color{white!75}\programname}
+		\end{minipage}
+	\end{frame}
+}
+
+\AtBeginSection[]{
+	\sectionframe{\insertsectionhead}
+}
+
+\title[\coursecode]{\coursename}
+\subtitle{\programname}
+\author[\studentshort]{\texorpdfstring{\studentname\\\footnotesize Matrícula: \studentid\\\href{mailto:\studentemail}{\studentemail}}{\studentname, Matricula: \studentid}}
+\institute[\institutionname]{\institutionlongname\\\coursecode\ · \coursegroup}
+\date[\courseperiod]{\institutionplace\\\courseperiod}
+
+\begin{document}
+
+% Portada institucional
+\begin{frame}[plain]
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=center,opacity=0.18] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{\iiiepecover}};
+		\fill[iiiepeNavy,opacity=0.94] (current page.south west) rectangle ([xshift=0.55\paperwidth]current page.north west);
+		\fill[iiiepeBlue,opacity=0.92] ([xshift=0.55\paperwidth]current page.south west) rectangle (current page.north east);
+		\node[anchor=north west] at ([xshift=0.55cm,yshift=-0.45cm]current page.north west) {\includegraphics[width=4.15cm]{\iiiepelogo}};
+		\node[opacity=0.17,anchor=south east] at ([xshift=0.9cm,yshift=-0.3cm]current page.south east) {\includegraphics[height=8.8cm]{\iiiepedots}};
+		\fill[iiiepeOrange] ([xshift=0.56\paperwidth,yshift=1.15cm]current page.south west) rectangle ([xshift=0.92\paperwidth,yshift=1.28cm]current page.south west);
+		\fill[iiiepeAqua] ([xshift=0.56\paperwidth,yshift=0.88cm]current page.south west) rectangle ([xshift=0.82\paperwidth,yshift=1.01cm]current page.south west);
+	\end{tikzpicture}
+
+	\vspace{1.9cm}
+	\begin{minipage}{0.50\paperwidth}
+		{\color{white}\Huge\bfseries Temas selectos\\ de matemáticas I}\\[0.25cm]
+		{\color{white!86}\large \coursecode\ · \coursegroup}\\[0.35cm]
+		{\color{iiiepeOrange}\rule{0.82\linewidth}{1.3pt}}\\[0.45cm]
+		{\color{white}\studentname}\\
+		{\color{white!80}\footnotesize Matrícula: \studentid\ · \studentemail}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.36\paperwidth}
+		\raggedleft
+		{\color{white}\Large\bfseries \institutionname}\\[0.18cm]
+		{\color{white!82}\footnotesize \institutionlongname}\\[0.5cm]
+		{\color{white}\small \programname}\\
+		{\color{white!78}\small \courseperiod}\\[0.5cm]
+		{\color{white!74}\footnotesize \institutionplace\ · \learningunit}\\
+		{\color{white!74}\footnotesize \href{\institutionurl}{\institutionurl}}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{Contenido}
+	\tableofcontents
+\end{frame}
+
+\section{Identidad PFM02}
+
+\begin{frame}{Ficha de la unidad}
+	\begin{columns}[T]
+		\begin{column}{0.42\textwidth}
+			\begin{center}
+				\includegraphics[width=0.54\linewidth]{\iiiepemark}\\[0.35cm]
+				{\Large\bfseries\color{iiiepeNavy}\institutionname}\\
+				{\small\color{iiiepeMuted}\evaname}
+			\end{center}
+		\end{column}
+		\begin{column}{0.54\textwidth}
+			\begin{block}{Alumno}
+				\textbf{\studentname}\\
+				Matrícula: \studentid\\
+				Correo: \href{mailto:\studentemail}{\studentemail}
+			\end{block}
+			\begin{block}{Unidad de aprendizaje}
+				\textbf{\coursecode\ · \coursename}\\
+				\coursegroup\\
+				\courseperiod
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Contexto académico}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Datos generales}
+				\begin{itemize}
+					\item Programa: \programname.
+					\item Unidad: \coursename.
+					\item Clave: \coursecode.
+					\item Periodo: \courseperiod.
+					\item Grupo: \coursegroup.
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Propósito de la unidad}
+				Diseñar, analizar y presentar secuencias didácticas para contenidos
+				matemáticos de secundaria, articulando contenido, PDA, práctica,
+				situaciones en contexto, evaluación y retroalimentación.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Enfoque metodológico}
+	\begin{block}{Metodología de referencia}
+		\methodology\ con \steamenfoque: organizar el aprendizaje desde preguntas,
+		exploración, uso de saberes previos, práctica matemática, aplicación y
+		reflexión sobre el desempeño.
+	\end{block}
+	\begin{columns}[T]
+		\begin{column}{0.32\textwidth}
+			\begin{block}{Inicio}
+				Antecedente del contenido, conocimientos previos y preguntas de
+				indagación.
+			\end{block}
+		\end{column}
+		\begin{column}{0.32\textwidth}
+			\begin{block}{Desarrollo}
+				Exploración, explicación, mecanización y situaciones en contexto.
+			\end{block}
+		\end{column}
+		\begin{column}{0.32\textwidth}
+			\begin{block}{Cierre}
+				Evaluación, coevaluación, autoevaluación y metacognición.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Base curricular}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Documento base}
+				\curriculumsource\ para educación secundaria, especialmente el
+				campo formativo \formativefield.
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Criterio de uso}
+				El Programa Sintético funciona como punto de partida; la secuencia
+				debe contextualizar contenido, PDA, evaluación y actividades a las
+				necesidades del grupo.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Mapa de materiales revisados}
+	\begin{enumerate}
+		\item Presentación inicial: metodología de indagación y fases de trabajo.
+		\item Plantilla DOCX: estructura de secuencia didáctica en cinco fases.
+		\item Sesión 01: conversión de fracciones a decimales y viceversa.
+		\item Sesión 02: suma y resta con fracciones.
+		\item Sesión 03A: multiplicación y división con fracciones.
+		\item Sesión 03B: operaciones con enteros.
+		\item Sesión 11A: volumen de prismas y pirámides.
+	\end{enumerate}
+	\accentbar
+\end{frame}
+
+\section{Secuencias revisadas}
+
+\begin{frame}{Sesión 01}
+	\begin{block}{Conversión de fracciones a decimales y viceversa}
+		Contenido: expresión de fracciones como decimales y de decimales como
+		fracciones.
+	\end{block}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{PDA}
+				Usa diversas estrategias al convertir números fraccionarios a
+				decimales y viceversa.
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Aprendizaje}
+				Convertir fracciones a decimales y decimales a fracciones.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Sesión 02}
+	\begin{block}{Suma y resta con fracciones}
+		Contenido: extensión del significado de las operaciones y sus relaciones
+		inversas.
+	\end{block}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{PDA}
+				Reconoce el significado de las cuatro operaciones básicas y sus
+				relaciones inversas al resolver problemas.
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Aprendizaje}
+				Resolver situaciones problemáticas que involucran sumar o restar
+				fracciones.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Sesión 03A}
+	\begin{block}{Multiplicación y división con fracciones}
+		Contenido: extensión del significado de las operaciones y sus relaciones
+		inversas.
+	\end{block}
+	\begin{itemize}
+		\item Aprendizaje: resolver situaciones problemáticas que involucran
+		multiplicar o dividir fracciones.
+		\item Práctica: operaciones directas, interpretación del procedimiento y
+		revisión de resultados.
+		\item Cuidado didáctico: evitar que ``invertir y multiplicar'' quede como
+		regla aislada sin significado.
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Sesión 03B}
+	\begin{block}{Operaciones con enteros}
+		Contenido: extensión de los números a positivos y negativos y su orden.
+	\end{block}
+	\begin{itemize}
+		\item PDA: reconoce la necesidad de los números negativos usando cantidades
+		que tienen al cero como referencia.
+		\item Aprendizaje: resolver sumas, restas, multiplicaciones y divisiones de
+		números con signo.
+		\item Situaciones en contexto: balance financiero, profundidad bajo el nivel
+		del mar y variaciones respecto a cero.
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Sesión 11A}
+	\begin{block}{Volumen de prismas y pirámides}
+		Contenido: medición y cálculo en diferentes contextos.
+	\end{block}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{PDA}
+				Usa diferentes estrategias para calcular el volumen de prismas,
+				pirámides y cilindros.
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Aprendizaje}
+				Calcular el volumen de prismas y pirámides mediante fórmulas,
+				unidades y problemas contextualizados.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\section{Modelo de secuencia}
+
+\begin{frame}{Estructura de secuencia didáctica}
+	\begin{block}{Datos de entrada}
+		Tema, contenido, PDA, aprendizaje de la secuencia, nombre del estudiante,
+		grupo y fecha.
+	\end{block}
+	\scriptsize
+	\begin{tabular}{p{0.20\textwidth}p{0.70\textwidth}}
+		\toprule
+		\textbf{Elemento} & \textbf{Función didáctica} \\
+		\midrule
+		Contenido & Precisa el objeto matemático escolar que se abordará. \\
+		PDA & Describe el proceso esperado de desarrollo de aprendizaje. \\
+		Aprendizaje & Traduce el PDA en logro operativo de la secuencia. \\
+		Evidencia & Muestra cómo se verificará comprensión, procedimiento y uso. \\
+		\bottomrule
+	\end{tabular}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Cinco fases de trabajo}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Fase 1}
+				Conocimientos previos: recuperar antecedentes, errores frecuentes y
+				preguntas iniciales.
+			\end{block}
+			\begin{block}{Fase 2}
+				Explicación del contenido: explorar, representar, formalizar y
+				ejemplificar.
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Fase 3}
+				Práctica: resolver mecanizaciones y situaciones en contexto.
+			\end{block}
+			\begin{block}{Fases 4 y 5}
+				Evaluar, retroalimentar y promover reflexión del desempeño personal.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Matriz editable de secuencia}
+	\scriptsize
+	\begin{tabular}{p{0.18\textwidth}p{0.30\textwidth}p{0.26\textwidth}p{0.16\textwidth}}
+		\toprule
+		\textbf{Fase} & \textbf{Actividad docente} & \textbf{Actividad del estudiante} & \textbf{Evidencia} \\
+		\midrule
+		1. Previos & Plantea problema inicial & Explica estrategias conocidas & Respuestas iniciales \\
+		2. Explicación & Modela procedimiento & Registra pasos y ejemplos & Apuntes y ejercicios \\
+		3. Práctica & Propone retos graduados & Resuelve y justifica & Procedimientos \\
+		4. Evaluación & Aplica instrumento & Demuestra desempeño & Producto/rúbrica \\
+		5. Reflexión & Retroalimenta & Reconoce logros y dudas & Metacognición \\
+		\bottomrule
+	\end{tabular}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Criterios matemáticos}
+	\begin{itemize}
+		\item Precisar el significado del concepto antes de mecanizar.
+		\item Usar representaciones diversas: simbólica, verbal, gráfica, tabular o geométrica.
+		\item Graduar dificultad: ejemplo guiado, práctica directa, variación y problema contextual.
+		\item Revisar unidades, signos, equivalencias, simplificación y sentido del resultado.
+		\item Anticipar errores frecuentes y convertirlos en retroalimentación.
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\section{Plantilla editable}
+
+\begin{frame}{Portada de actividad}
+	\begin{block}{Sustituir datos}
+		Tema: escribir aquí el contenido matemático de la sesión.
+	\end{block}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Identificación}
+				\coursecode\ · \coursename\\
+				\coursegroup\ · \courseperiod\\
+				Alumno: \studentshort
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Producto}
+				\mainproduct\\
+				Sesión: escribir número\\
+				Fecha: escribir fecha
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Contenido, PDA y aprendizaje}
+	\begin{block}{Contenido}
+		Escribir el contenido matemático tal como se trabajará en la secuencia.
+	\end{block}
+	\begin{block}{Proceso de desarrollo de aprendizaje}
+		Escribir el PDA correspondiente, cuidando que sea observable y coherente
+		con el Programa Sintético o con la consigna del curso.
+	\end{block}
+	\begin{block}{Aprendizaje de la secuencia}
+		Redactar qué será capaz de resolver, explicar, justificar o aplicar el
+		estudiante al terminar.
+	\end{block}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Fase 1: conocimientos previos}
+	\begin{block}{Propósito}
+		Identificar antecedentes del contenido, estrategias espontáneas y posibles
+		errores antes de presentar el procedimiento formal.
+	\end{block}
+	\begin{itemize}
+		\item Pregunta detonadora o situación inicial.
+		\item Registro de saberes previos.
+		\item Diagnóstico rápido: ejercicio, discusión, ejemplo o predicción.
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Fase 2: explicación del contenido}
+	\begin{block}{Propósito}
+		Introducir el contenido con representaciones, lenguaje matemático y
+		ejemplos graduados.
+	\end{block}
+	\begin{itemize}
+		\item Definición o regla matemática.
+		\item Ejemplo guiado paso a paso.
+		\item Contraejemplo o error frecuente.
+		\item Pregunta de verificación conceptual.
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Fase 3: práctica del contenido}
+	\begin{block}{Propósito}
+		Resolver mecanizaciones y situaciones en contexto para pasar del
+		procedimiento a la interpretación.
+	\end{block}
+	\begin{itemize}
+		\item Ejercicios directos para consolidar procedimiento.
+		\item Problemas con contexto escolar, financiero, geométrico o cotidiano.
+		\item Justificación del método usado.
+		\item Comparación de estrategias cuando sea posible.
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Fase 4: evaluación}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Instrumentos posibles}
+				Examen breve, laboratorio, exposición, actividad lúdica,
+				autoevaluación, coevaluación o rúbrica.
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Evidencia esperada}
+				Procedimiento correcto, argumentación, interpretación del resultado
+				y transferencia a una situación nueva.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Fase 5: retroalimentación}
+	\begin{block}{Reflexión del desempeño}
+		Usar preguntas de cierre para que el estudiante identifique qué aprendió,
+		qué estrategia le funcionó, qué dificultad permanece y cómo resolvería un
+		problema similar.
+	\end{block}
+	\begin{itemize}
+		\item Hoy aprendí que...
+		\item El paso más difícil fue...
+		\item Una estrategia que me ayudó fue...
+		\item Si volviera a resolver un problema parecido, primero haría...
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\section{Pautas de entrega}
+
+\begin{frame}{Ruta sugerida para crear una secuencia}
+	\begin{enumerate}
+		\item Elegir contenido y PDA.
+		\item Definir aprendizaje de la secuencia con verbo observable.
+		\item Diseñar fase 1 con saberes previos y pregunta detonadora.
+		\item Explicar el contenido con ejemplos y representaciones.
+		\item Graduar práctica: mecanización, variación y contexto.
+		\item Evaluar y cerrar con metacognición.
+	\end{enumerate}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Checklist PFM02}
+	\begin{itemize}
+		\item Tema, contenido, PDA y aprendizaje están alineados.
+		\item Las cinco fases aparecen completas.
+		\item Los ejercicios tienen progresión de dificultad.
+		\item Hay al menos una situación en contexto.
+		\item La evaluación mide el aprendizaje declarado.
+		\item La retroalimentación permite reflexión del contenido y desempeño.
+	\end{itemize}
+	\accentbar
+\end{frame}
+
+\begin{frame}{Producto solicitado}
+	\begin{columns}[T]
+		\begin{column}{0.58\textwidth}
+			\begin{itemize}
+				\item Insertar aquí la secuencia didáctica o síntesis visual.
+				\item Incluir fórmulas, operaciones, tablas o problemas contextualizados.
+				\item Cerrar con evaluación y retroalimentación.
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.36\textwidth}
+			\begin{block}{Enfoque}
+				Contenido matemático + PDA + cinco fases + evidencia de aprendizaje.
+			\end{block}
+		\end{column}
+	\end{columns}
+	\accentbar
+\end{frame}
+
+\section{Cierre}
+
+\begin{frame}{Conclusiones}
+	\begin{enumerate}
+		\item Sintetizar el contenido matemático trabajado.
+		\item Explicar cómo la secuencia favorece comprensión, práctica y transferencia.
+		\item Plantear una mejora didáctica para una nueva aplicación.
+	\end{enumerate}
+	\accentbar
+\end{frame}
+
+\begin{frame}[plain]
+	\begin{tikzpicture}[remember picture,overlay]
+		\fill[iiiepeNavy] (current page.south west) rectangle (current page.north east);
+		\node[opacity=0.13,anchor=south east] at ([xshift=0.8cm,yshift=-0.2cm]current page.south east) {\includegraphics[height=9cm]{\iiiepedots}};
+		\node[anchor=north west] at ([xshift=0.55cm,yshift=-0.45cm]current page.north west) {\includegraphics[width=3.7cm]{\iiiepelogo}};
+	\end{tikzpicture}
+	\vspace{2.2cm}
+	\begin{center}
+		{\color{white}\Huge\bfseries Gracias}\\[0.55cm]
+		{\color{white}\Large \studentname}\\[0.18cm]
+		{\color{white!78}\footnotesize Matrícula \studentid\ · \studentemail}\\[0.45cm]
+		{\color{iiiepeOrange}\rule{0.36\paperwidth}{1.4pt}}\\[0.35cm]
+		{\color{white!72}\footnotesize \institutionname\ · \coursecode\ · \coursename}
+	\end{center}
+\end{frame}
+
+\end{document}

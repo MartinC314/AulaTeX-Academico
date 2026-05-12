@@ -1,0 +1,628 @@
+% ==============================================================================
+% PLANTILLA DE INFORME - PFM02 / IIIEPE / MAEM
+% ==============================================================================
+% Uso:
+% 1. Duplica este archivo y renombra la copia por unidad, sesion y actividad.
+% 2. Actualiza documenttitle, documentsubtitle, documentsubject, sesionname,
+%    activityname, docente y fecha de entrega.
+% 3. Lee la consigna del EVA/posgrado y NO pegues las instrucciones completas
+%    dentro del producto final. Usa la consigna como lista de cumplimiento.
+% 4. Revisa la bibliografia indicada, toma notas, registra citas y redacta con
+%    comprension propia.
+% 5. Identifica el producto academico o didactico solicitado y construyelo dentro
+%    del documento siempre que sea posible.
+% 6. Entrega en PDF con la nomenclatura indicada por la unidad de aprendizaje.
+%
+% Formato institucional recomendado para IIIEPE:
+% - Fuente tipo Helvetica, equivalente visual a Arial.
+% - Interlineado 1.5.
+% - Citas autor-anio con natbib: usar \citep{clave} o \citet{clave}.
+% - Referencias en bibliografia BibTeX, formato APA 7 en cuerpo y referencias.
+% - Caratula, resumen breve, desarrollo, producto solicitado, conclusion y
+%   bibliografia.
+% - Redaccion academica clara, coherente, cohesionada, formal y sin faltas.
+% - Portada con identidad IIIEPE, programa MAEM, matricula y correo institucional.
+% - La portada puede llevar una marca de agua institucional discreta; ajustar
+%   las variables coverwatermark... si se requiere apagarla o cambiar intensidad.
+%
+% Criterios generales de cumplimiento:
+% - Responder exactamente a la actividad solicitada en el EVA o por la figura docente.
+% - Alinear contenido matematico, PDA, aprendizaje de la secuencia, fases,
+%   evaluacion y retroalimentacion.
+% - Identificar conceptos, elementos, criterios o categorias de forma precisa.
+% - Analizar, interpretar y tomar postura; no solo copiar fuentes.
+% - Organizar la informacion por jerarquia, secuencia y criterios claros.
+% - Incluir conclusion personal cuando la actividad lo permita o lo solicite.
+% - Usar citas y referencias en APA 7.
+% - Evitar copiar las indicaciones de la actividad en el cuerpo final.
+%
+% Regla para productos visuales:
+% - Si la actividad pide tabla, cuadro comparativo, esquema, mapa conceptual,
+%   mapa mental, linea de tiempo, diagrama, matriz, lista de verificacion, red
+%   conceptual, SQA, organizador grafico o producto similar, realizarlo
+%   preferentemente con LaTeX/TikZ para mantener nitidez, evidencia editable y
+%   diseno controlado.
+% - Si la consigna exige Canva, Miro u otra herramienta externa, insertar una
+%   captura nitida y conservar la explicacion dentro del documento.
+% - Para tablas extensas, usar pagina limpia, sin encabezados ni pies, landscape,
+%   letra pequena y restaurar el estilo al terminar.
+%
+% Criterios de redaccion personal:
+% - No escribir para llenar espacio; escribir para sostener una idea.
+% - Convertir informacion en criterio: que significa, como funciona, que problema
+%   resuelve, que limite presenta y que consecuencia produce.
+% - Estructura mental recomendada: problema -> sistema -> consecuencia -> postura.
+% - Usar pensamiento de diagnostico: entrada -> proceso -> salida.
+% - Cada parrafo debe tener funcion: presentar, explicar, comparar, valorar o
+%   concluir.
+% - Usar primera persona con moderacion academica: "Considero que",
+%   "Desde esta perspectiva", "La posicion que sostengo es". Evitar "yo creo".
+%
+% Notas de enfoque personal segun enfoque_personal.txt:
+% - La voz debe ser academica, tecnica, directa, estrategica y funcional.
+% - El texto no debe sonar como estudiante pasivo que recopila: debe sonar como
+%   alguien que interpreta, ordena, cruza datos y busca consecuencia practica.
+% - Antes de redactar, identificar la funcion de cada seccion: abrir problema,
+%   definir criterio, demostrar con evidencia, comparar, valorar o concluir.
+% - Evitar frases genericas como "es importante porque si" o "desde siempre".
+%   Sustituirlas por relaciones verificables: causa, efecto, limite, costo,
+%   funcion, riesgo, implicacion o mejora.
+% - Cada concepto debe pasar de definicion a analisis. Formula util:
+%   concepto -> funcion -> riesgo si se aplica mal -> consecuencia -> postura.
+% - La postura personal no debe ser opinion suelta. Debe tener tres piezas:
+%   posicion, razon y efecto. Ejemplo: "Considero que X, porque Y; por ello Z".
+% - Integrar experiencia o criterio propio sin perder formalidad: no narrar la
+%   vida personal, sino usar mirada practica para explicar por que el tema
+%   importa en educacion, derecho, instituciones, comunicacion o profesion.
+%
+% Estilo observado en actividades ya realizadas:
+% - Abrir con una tesis concreta:
+%   "La ensenanza de las matematicas no solo transmite procedimientos:
+%   organiza formas de razonar, representar y justificar."
+% - Formular el problema en negativo y positivo:
+%   "El problema no es solo..., sino..."
+% - Convertir el producto visual en argumento:
+%   "El cuadro no solo recopila datos; reconstruye la funcion, el problema y el
+%   punto que requiere correccion."
+% - Cerrar con aprendizaje transferible:
+%   "No basta con saber que dice la norma; tambien debe analizarse a quien
+%   protege, a quien excluye y que razones permiten defenderla publicamente."
+%
+% Nivel cognitivo esperado:
+% - Recordar: usar solo para definir conceptos basicos. No debe ser el nivel
+%   dominante en una actividad ponderable.
+% - Comprender: explicar con palabras propias y relacionar con el tema.
+% - Aplicar: llevar el concepto a un caso, norma, texto, correo, dilema o hecho.
+% - Analizar: separar elementos, detectar causas, efectos, tensiones y limites.
+% - Evaluar: sostener una postura con criterios, fuentes y consecuencias.
+% - Crear: elaborar producto propio: mapa, cuadro, linea de tiempo, ensayo,
+%   propuesta, reformulacion, glosario, portafolio o solucion argumentada.
+%
+% Regla de nivel minimo:
+% - Si la actividad vale puntos y pide producto, no quedarse en recordar o
+%   comprender. Debe llegar por lo menos a aplicar y analizar; si pide conclusion
+%   o postura, debe llegar a evaluar.
+%
+% Uso de tecnicas didacticas:
+% - Esta plantilla conserva el manual "Tecnicas didacticas del aprendizaje" como
+%   apoyo para construir productos visuales, analiticos y reflexivos.
+% - Cuando la actividad mencione una tecnica didactica, identificar: definicion
+%   de la tecnica, producto esperado, pasos de construccion, criterios de revision
+%   y cierre reflexivo.
+% - La tecnica didactica no debe verse como adorno. Debe mostrar seleccion,
+%   jerarquia, relacion entre ideas y lectura propia.
+% - Siempre que sea viable, construir la tecnica en LaTeX/TikZ: cuadro
+%   comparativo, mapa conceptual, esquema, mapa mental, linea de tiempo, matriz,
+%   red conceptual, diagrama de flujo, tabla SQA o lista de verificacion.
+%
+% Checklist antes de entregar:
+% [ ] El titulo, unidad de aprendizaje, sesion, docente y fecha estan actualizados.
+% [ ] El objetivo coincide con la consigna del EVA/posgrado.
+% [ ] El contenido, PDA y aprendizaje de la secuencia estan alineados.
+% [ ] La actividad considera las cinco fases de PFM02 cuando se trate de una secuencia.
+% [ ] La practica incluye mecanizacion, variacion y al menos una situacion en contexto.
+% [ ] La evaluacion mide el aprendizaje declarado y no solo la repeticion del algoritmo.
+% [ ] El producto solicitado aparece visible, rotulado y completo.
+% [ ] La introduccion plantea un problema o postura, no solo anuncia el tema.
+% [ ] El desarrollo explica, conecta y analiza.
+% [ ] Hay citas APA autor-anio dentro del texto.
+% [ ] La bibliografia final coincide con las fuentes citadas.
+% [ ] La conclusion responde que se comprendio y que postura se sostiene.
+% [ ] El nivel cognitivo llega al menos a aplicacion y analisis.
+% [ ] Si hay conclusion/postura, incluye posicion, razon y consecuencia.
+% [ ] La tecnica didactica solicitada esta construida y explicada.
+% [ ] No aparecen instrucciones copiadas de la consigna dentro del producto.
+% [ ] Ortografia, acentos, sintaxis y nombres propios revisados.
+% [ ] Si se uso IA como apoyo, el texto fue comprendido, revisado y apropiado.
+% ==============================================================================
+
+% CREACION DEL DOCUMENTO
+\documentclass[
+	spanish,
+	letterpaper, oneside
+]{article}
+
+% ==============================================================================
+% INFORMACION DEL DOCUMENTO
+% Actualizar en cada actividad.
+% Ejemplos:
+% \def\documenttitle {Cuadro comparativo de conceptos fundamentales}
+% \def\documentsubtitle {Actividad X - Nombre de la asignatura}
+% \def\documentsubject {Actividad Semana X}
+% ==============================================================================
+\def\documenttitle {Titulo de la actividad}
+\def\documentsubtitle {PFM02 - Temas selectos de matematicas I}
+\def\documentsubject {Informe academico / Secuencia didactica}
+
+\def\documentauthor {Mtro. Martin Jonathan de la Cruz Munoz}
+\def\coursename {Temas selectos de matematicas I}
+\def\coursecode {PFM02}
+
+\def\universityname {Instituto de Investigacion, Innovacion y Estudios de Posgrado para la Educacion del Estado de Nuevo Leon}
+\def\universityfaculty {Maestria en Aprendizaje y Ensenanza de las Matematicas}
+\def\universitydepartment {Temas selectos de matematicas I}
+\def\universitydepartmentimage {img/iiiepe/marca-iiiepe.png}
+\def\universitydepartmentimagecfg {height=1.75cm}
+\def\universitylocation {Monterrey, Nuevo Leon}
+
+% DATOS FIJOS DEL POSGRADO
+\def\studentfullname {Mtro. Martin Jonathan de la Cruz Munoz}
+\def\studentid {00874}
+\def\studentemail {martin.delacruz@campus.iiiepe.edu.mx}
+\def\institutionurl {https://iiiepe.edu.mx/}
+\def\programperiod {1er tetramestre marzo--julio 2026}
+\def\programmodality {Modalidad presencial}
+\def\programshort {MAEM}
+\def\maemsource {https://iiiepe.edu.mx/maestria-en-aprendizaje-y-ensenanza-de-las-matematicas/}
+\def\coursegroup {Grupo A}
+\def\courseperiod {Marzo--julio 2026}
+\def\evaname {EVA posgrado}
+\def\activityname {Nombre de la actividad}
+\def\sessionname {Sesion por definir}
+\def\blockname {Bloque por definir}
+\def\methodology {Aprendizaje basado en indagacion}
+\def\steamenfoque {STEAM como enfoque}
+\def\curriculumsource {Programa Sintetico Fase 6}
+\def\formativefield {Saberes y Pensamiento Cientifico}
+\def\mainproduct {Informe academico con secuencia didactica matematica}
+\def\docentename {Nombre de la figura docente}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\authortable {
+	\begin{tabular}{ll}
+		\textbf{Alumno:}
+		& \begin{tabular}[t]{l}
+			 \studentfullname \\
+		\end{tabular} \\
+		Matricula: & \studentid \\
+		Correo institucional: & \studentemail \\
+
+		\textit{Figura docente:}
+		& \begin{tabular}[t]{l}
+			\docentename
+		\end{tabular} \\
+		Unidad: & \coursename \\
+		Clave: & \coursecode \\
+		Grupo: & \coursegroup \\
+		Sesion/Bloque: & \sessionname\ / \blockname \\
+		Actividad: & \activityname \\
+		Programa: & \programshort \\
+		Periodo: & \courseperiod \\
+		& \\
+		\multicolumn{2}{l}{Fecha de realizacion: \today} \\
+		\multicolumn{2}{l}{\universitylocation}
+	\end{tabular}
+}
+
+% IMPORTACION DEL TEMPLATE BASE
+\input{template}
+
+% FORMATO GENERAL
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% IDENTIDAD VISUAL IIIEPE
+\definecolor{iiiepeNavy}{HTML}{163B5C}
+\definecolor{iiiepeBlue}{HTML}{1F6F9F}
+\definecolor{iiiepeAqua}{HTML}{20B7A8}
+\definecolor{iiiepeOrange}{HTML}{F28C28}
+\definecolor{iiiepePaper}{HTML}{F6F8F7}
+\definecolor{iiiepeInk}{HTML}{1E2A32}
+\definecolor{iiiepeMuted}{HTML}{667085}
+\def\portraittitlecolor {iiiepeNavy}
+
+% TABLAS Y PRODUCTOS VISUALES
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usetikzlibrary{
+	arrows.meta,
+	positioning,
+	calc,
+	matrix,
+	fit,
+	shapes.geometric,
+	shadows.blur
+}
+
+% CITAS EN FORMATO AUTOR-ANIO, COMPATIBLE CON APA 7 EN EL CUERPO DEL TEXTO
+% Usar:
+% - Cita parentetica: \citep{clave}
+% - Cita narrativa: \citet{clave}
+% - Varias fuentes: \citep{clave1,clave2}
+\setcitestyle{authoryear,open={(},close={)}}
+
+% ==============================================================================
+% AYUDAS DE REDACCION
+% Quitar o comentar \pendiente cuando el documento final este terminado.
+% ==============================================================================
+\newcommand{\pendiente}[1]{\textcolor{red}{[PENDIENTE: #1]}}
+
+% ==============================================================================
+% MARCA DE AGUA EN PORTADA
+% - Se aplica solo a la portada porque usa \AddToShipoutPictureBG*.
+% - Para apagarla en alguna actividad: \def\coverwatermarkenabled {false}
+% - Usar opacidad baja para que no compita con titulo, datos ni logotipo.
+% ==============================================================================
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/iiiepe/logo-puntos.png}
+\def\coverwatermarkopacity {0.09}
+\def\coverwatermarkwidth {0.58\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.15cm}
+
+\newcommand{\insertcoverwatermark}{%
+	\ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+		\AddToShipoutPictureBG*{%
+			\begin{tikzpicture}[remember picture,overlay]
+				\node[
+					opacity=\coverwatermarkopacity,
+					inner sep=0pt,
+					xshift=\coverwatermarkxshift,
+					yshift=\coverwatermarkyshift
+				] at (current page.center) {%
+					\includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+				};
+			\end{tikzpicture}%
+		}%
+	}{}%
+}
+
+\begin{document}
+
+% PORTADA
+\insertcoverwatermark
+\templatePortrait
+
+% CONFIGURACION DE PAGINA Y ENCABEZADOS
+\templatePagecfg
+\onehalfspacing
+
+% ==============================================================================
+% RESUMEN / ABSTRACT
+% Debe ser breve. Formula recomendada:
+% Tema + objetivo + tecnica/producto + enfoque personal.
+% ==============================================================================
+\begin{abstractd}
+	\textbf{Objetivo:} \pendiente{Redactar el objetivo con verbo academico: analizar, disenar, aplicar, evaluar, argumentar o proponer. En PFM02 debe vincularse con un contenido matematico, un PDA y una evidencia de aprendizaje.}
+
+	\textbf{Producto elaborado:} \pendiente{Indicar si el producto es informe, secuencia didactica, tabla, banco de ejercicios, analisis de sesion, recurso matematico, evaluacion, rubrica o reflexion docente.}
+
+	\textbf{Enfoque de analisis:} \pendiente{Enunciar el criterio de lectura: contenido matematico + representacion + procedimiento + contexto + evaluacion. Debe mostrar como la actividad favorece comprension y no solo mecanizacion.}
+
+	\textbf{Nivel cognitivo:} \pendiente{Indicar el nivel dominante: aplicar, analizar, evaluar o crear. Para secuencias didacticas, el nivel esperado suele llegar a crear porque se disena una propuesta propia con intencion pedagogica.}
+\end{abstractd}
+
+% TABLA DE CONTENIDOS - INDICE
+\templateIndex
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+% ==============================================================================
+% SECCION 1: INTRODUCCION
+% Apertura recomendada:
+% - Iniciar con una afirmacion clara, no con una frase generica.
+% - Traducir la consigna a un problema academico, didactico, matematico,
+%   pedagogico o profesional, segun la unidad de aprendizaje.
+% - Explicar por que importa.
+% - Cerrar anticipando el enfoque personal.
+% ==============================================================================
+\section{Introduccion}
+
+\pendiente{Abrir con una afirmacion propia sobre el contenido matematico de la actividad. Ejemplo: "La ensenanza de los numeros con signo no puede reducirse a memorizar reglas; requiere construir referencias, relaciones de orden y sentido en situaciones reales".}
+
+\pendiente{Explicar el problema didactico que atiende la actividad: conversion entre representaciones, comprension de operaciones, uso de signos, interpretacion de unidades, volumen, dificultad de lenguaje matematico, evaluacion o transferencia a contexto.}
+
+\pendiente{Cerrar con la postura inicial: que criterio guiara el informe y que evidencia permitira sostener que hubo aprendizaje matematico.}
+
+% ==============================================================================
+% SECCION OPCIONAL: IDENTIDAD DEL PROGRAMA
+% Conservar cuando el informe requiera contextualizar la actividad en la MAEM.
+% Puede comentarse en entregas breves.
+% ==============================================================================
+\section{Contexto institucional y formativo}
+
+\subsection{Datos del programa}
+
+La actividad se desarrolla en el marco de la \universityfaculty, adscrita al
+\universityname. El programa corresponde a una formacion de posgrado orientada a
+fortalecer la reflexion, el diseno, la implementacion y la evaluacion de
+propuestas didacticas para la ensenanza y el aprendizaje de las matematicas.
+
+\subsection{Sentido formativo de la MAEM}
+
+La \programshort\ coloca la practica docente como objeto de analisis profesional:
+no basta con resolver una consigna, sino que es necesario reconocer que problema
+educativo se atiende, que criterio teorico o didactico se usa, que evidencia se
+produce y que mejora puede derivarse para el aula.
+
+\subsection{Base academica del curso PFM02}
+
+La unidad de aprendizaje \coursecode\ --\coursename-- se orienta al analisis y
+diseno de actividades para contenidos matematicos escolares. Su eje de trabajo
+consiste en articular el contenido, el proceso de desarrollo de aprendizaje, la
+explicacion didactica, la practica, la evaluacion y la retroalimentacion.
+
+De acuerdo con el enfoque observado en los materiales de la unidad, la
+secuencia didactica se organiza en cinco momentos: conocimientos previos,
+explicacion o exploracion del contenido, practica con mecanizaciones y
+situaciones en contexto, evaluacion y retroalimentacion. Esta estructura permite
+que el informe no se limite a presentar ejercicios, sino que explique la
+intencion matematica y pedagogica de cada decision.
+
+\subsection{Referencia curricular}
+
+Cuando la actividad se relacione con secundaria, se recomienda revisar el
+\curriculumsource, especialmente el campo \formativefield. Este documento
+funciona como punto de partida curricular: define contenidos y procesos de
+desarrollo de aprendizaje, pero exige contextualizacion docente para convertirlos
+en actividades pertinentes para un grupo real \citep{sepFase6}.
+
+% Para insertar la malla curricular oficial en una actividad que lo requiera:
+% \begin{figure}[H]
+% 	\centering
+% 	\includegraphics[width=0.85\linewidth]{img/iiiepe/maem-plan-estudios.png}
+% 	\caption{Plan de estudios de la Maestria en Aprendizaje y Ensenanza de las Matematicas.}
+% \end{figure}
+
+\subsection{Datos del estudiante}
+
+\begin{itemize}
+	\item Alumno: \studentfullname.
+	\item Matricula: \studentid.
+	\item Correo institucional: \studentemail.
+	\item Modalidad: \programmodality.
+	\item Unidad de aprendizaje: \coursecode\ -- \coursename.
+	\item Grupo y periodo: \coursegroup, \courseperiod.
+\end{itemize}
+
+% ==============================================================================
+% SECCION 2: DESARROLLO / ANALISIS
+% Adaptar los subtitulos segun la unidad de aprendizaje y la consigna.
+%
+% Productos posibles:
+% - Cuadro comparativo: criterios, evidencia, diferencia, valoracion.
+% - Mapa conceptual: concepto central, conceptos secundarios, conectores claros.
+% - Linea de tiempo: fecha/etapa, hecho, aporte, consecuencia.
+% - Secuencia didactica: contenido, PDA, fase, actividad, evidencia y evaluacion.
+% - Estudio de caso: situacion, elementos, problema, interpretacion, solucion.
+% - Lista de verificacion: criterio observable, indicador, cumplimiento, mejora.
+% - Glosario: concepto, definicion, funcion, ejemplo, fuente.
+% - Reporte o ensayo: tesis, argumentos, evidencia, postura y cierre.
+%
+% Regla de parrafo:
+% Entrada: concepto o problema.
+% Proceso: explicacion, fuente y relacion.
+% Salida: consecuencia, criterio o postura.
+% ==============================================================================
+\section{Desarrollo}
+
+\subsection{Contexto y problema didactico}
+
+\pendiente{Presentar la actividad, sesion o contenido matematico. Convertir la consigna en problema didactico: que dificultad suele presentar el aprendizaje, que representacion se necesita, que error frecuente debe anticiparse y que evidencia demostrara comprension.}
+
+\subsection{Contenido, PDA y aprendizaje de la secuencia}
+
+\begin{longtable}{@{}p{0.25\linewidth}p{0.68\linewidth}@{}}
+	\caption{Ficha base para actividades de PFM02}\label{tab:ficha-pfm02}\\
+	\toprule
+	\textbf{Elemento} & \textbf{Descripcion para completar} \\
+	\midrule
+	\endfirsthead
+	\toprule
+	\textbf{Elemento} & \textbf{Descripcion para completar} \\
+	\midrule
+	\endhead
+	Tema de la sesion & \pendiente{Ejemplo: conversion de fracciones a decimales, suma y resta de fracciones, operaciones con enteros, volumen de prismas y piramides.} \\
+	Contenido matematico & \pendiente{Escribir el contenido curricular o matematico que se abordara. Debe ser preciso y no demasiado amplio.} \\
+	PDA & \pendiente{Registrar el proceso de desarrollo de aprendizaje correspondiente. Si se usa Fase 6, citar el documento curricular.} \\
+	Aprendizaje de la secuencia & \pendiente{Redactar con verbo observable: resolver, convertir, justificar, comparar, calcular, modelar, argumentar o interpretar.} \\
+	Evidencia esperada & \pendiente{Indicar que producto mostrara el aprendizaje: procedimiento, tabla, problema resuelto, explicacion, recurso, evaluacion, rubrica o reflexion.} \\
+	Criterio de evaluacion & \pendiente{Senalar como se distinguira una respuesta correcta de una comprension suficiente: procedimiento, argumento, unidades, signo, representacion y sentido del resultado.} \\
+	\bottomrule
+\end{longtable}
+
+\subsection{Mapa de contenidos base}
+
+Los materiales revisados para PFM02 muestran una progresion centrada en
+contenidos fundamentales de secundaria: representacion de numeros racionales,
+operaciones con fracciones, numeros con signo y medicion geometrica. La tabla
+siguiente sirve como guia para contextualizar futuras actividades.
+
+\begin{longtable}{@{}p{0.16\linewidth}p{0.26\linewidth}p{0.30\linewidth}p{0.20\linewidth}@{}}
+	\caption{Referentes de contenido para PFM02}\label{tab:contenidos-pfm02}\\
+	\toprule
+	\textbf{Sesion} & \textbf{Tema} & \textbf{Contenido/PDA de referencia} & \textbf{Evidencia sugerida} \\
+	\midrule
+	\endfirsthead
+	\toprule
+	\textbf{Sesion} & \textbf{Tema} & \textbf{Contenido/PDA de referencia} & \textbf{Evidencia sugerida} \\
+	\midrule
+	\endhead
+	01 & Conversion fraccion--decimal & Expresion de fracciones como decimales y de decimales como fracciones; uso de diversas estrategias de conversion. & Conversiones justificadas y comparacion de estrategias. \\
+	02 & Suma y resta con fracciones & Extension del significado de las operaciones y sus relaciones inversas al resolver problemas. & Problemas con procedimiento, equivalencias y explicacion. \\
+	03A & Multiplicacion y division con fracciones & Uso de operaciones con fracciones en situaciones problematicas; cuidado con reglas sin significado. & Ejercicios graduados y situacion contextualizada. \\
+	03B & Operaciones con enteros & Extension a numeros positivos y negativos; uso del cero como referencia. & Recta numerica, balance, temperatura o profundidad. \\
+	11A & Volumen de prismas y piramides & Medicion y calculo en diferentes contextos; uso de estrategias para calcular volumen. & Problemas con formulas, unidades e interpretacion. \\
+	\bottomrule
+\end{longtable}
+
+\subsection{Marco conceptual}
+
+\pendiente{Explicar los conceptos centrales con fuentes. No acumular definiciones: cada concepto debe mostrar funcion, limite, ejemplo de aula o consecuencia para el aprendizaje. En PFM02 conviene distinguir concepto, procedimiento, representacion y uso contextual.}
+
+\subsection{Nivel cognitivo aplicado}
+
+\pendiente{Explicar brevemente que operacion cognitiva exige la actividad. En una secuencia PFM02 no basta con recordar formulas: se espera aplicar procedimientos, analizar errores, evaluar estrategias y crear una organizacion didactica propia.}
+
+\subsection{Producto solicitado}
+
+\pendiente{Insertar aqui el producto solicitado por la actividad: informe, secuencia didactica, matriz, banco de ejercicios, recurso matematico, analisis de sesion, evaluacion, rubrica, tabla o reflexion. Si es visual, realizarlo en LaTeX/TikZ siempre que sea posible.}
+
+\subsection{Modelo de secuencia didactica}
+
+\begin{longtable}{@{}p{0.17\linewidth}p{0.25\linewidth}p{0.25\linewidth}p{0.20\linewidth}@{}}
+	\caption{Matriz editable de secuencia didactica PFM02}\label{tab:secuencia-pfm02}\\
+	\toprule
+	\textbf{Fase} & \textbf{Actividad docente} & \textbf{Actividad del estudiante} & \textbf{Evidencia} \\
+	\midrule
+	\endfirsthead
+	\toprule
+	\textbf{Fase} & \textbf{Actividad docente} & \textbf{Actividad del estudiante} & \textbf{Evidencia} \\
+	\midrule
+	\endhead
+	1. Conocimientos previos & \pendiente{Plantear pregunta detonadora, diagnostico breve o problema inicial.} & \pendiente{Explicar estrategias conocidas, anticipar resultados o resolver un caso simple.} & \pendiente{Registro de saberes previos, respuestas o errores iniciales.} \\
+	2. Explicacion/exploracion & \pendiente{Modelar el contenido con representaciones, ejemplos y contraejemplos.} & \pendiente{Registrar pasos, justificar decisiones y formular dudas.} & \pendiente{Apuntes, ejemplo guiado, tabla o representacion.} \\
+	3. Practica & \pendiente{Proponer mecanizaciones, variaciones y situaciones en contexto.} & \pendiente{Resolver, comparar estrategias y explicar procedimientos.} & \pendiente{Ejercicios resueltos, problemas contextualizados y justificacion.} \\
+	4. Evaluacion & \pendiente{Aplicar instrumento: examen breve, rubrica, laboratorio, exposicion, autoevaluacion o coevaluacion.} & \pendiente{Demostrar desempeno mediante procedimiento correcto y explicacion.} & \pendiente{Producto evaluable con criterios claros.} \\
+	5. Retroalimentacion & \pendiente{Devolver criterios, corregir errores frecuentes y orientar mejora.} & \pendiente{Reconocer logro, dificultad, estrategia util y siguiente paso.} & \pendiente{Reflexion metacognitiva o plan de mejora.} \\
+	\bottomrule
+\end{longtable}
+
+\subsection{Tecnica o estrategia didactica aplicada}
+
+\pendiente{Cuando la actividad indique una tecnica didactica, explicar aqui como se uso. En PFM02 puede justificarse la estrategia desde la indagacion: antecedente, pregunta, exploracion, formalizacion, practica, evaluacion y metacognicion.}
+
+% ==============================================================================
+% BLOQUE OPCIONAL: TABLA O CUADRO COMPARATIVO AMPLIO
+% Usar cuando el producto necesite mucho ancho:
+% - \clearpage para iniciar en pagina limpia.
+% - \pagestyle{empty} para quitar encabezado y pie en el producto amplio.
+% - landscape para aprovechar el ancho horizontal.
+% - scriptsize, tabcolsep y arraystretch para controlar legibilidad.
+% - Restaurar \pagestyle{fancy} al terminar.
+%
+% Si la tabla es corta, puede omitirse landscape y usarse longtable normal.
+% ==============================================================================
+% \clearpage
+% \pagestyle{empty}
+% \begin{landscape}
+% \begingroup
+% \scriptsize
+% \setlength{\tabcolsep}{4pt}
+% \renewcommand{\arraystretch}{1.35}
+% \begin{longtable}{@{}p{0.18\linewidth}p{0.39\linewidth}p{0.39\linewidth}@{}}
+% \caption{Titulo del cuadro comparativo}\label{tab:cuadro-comparativo}\\
+% \toprule
+% \textbf{Criterio} & \textbf{Elemento 1} & \textbf{Elemento 2} \\
+% \midrule
+% \endfirsthead
+% \toprule
+% \textbf{Criterio} & \textbf{Elemento 1} & \textbf{Elemento 2} \\
+% \midrule
+% \endhead
+% Concepto & \pendiente{Contenido sintetico con cita si aplica.} & \pendiente{Contenido sintetico con cita si aplica.} \\
+% Caracteristicas & \pendiente{Contenido.} & \pendiente{Contenido.} \\
+% Funcion & \pendiente{Contenido.} & \pendiente{Contenido.} \\
+% Valoracion critica & \pendiente{Contenido.} & \pendiente{Contenido.} \\
+% \bottomrule
+% \end{longtable}
+% \endgroup
+% \end{landscape}
+% \pagestyle{fancy}
+
+% ==============================================================================
+% BLOQUE OPCIONAL: PRODUCTO VISUAL EN TIKZ
+% Usar para mapa conceptual, mapa mental, esquema, flujo, proceso o diagrama.
+% Cada flecha debe expresar relacion; no usar nodos sueltos sin conectores.
+% ==============================================================================
+% \begin{figure}[H]
+% 	\centering
+% 	\begin{tikzpicture}[
+% 		node distance=1.3cm,
+% 		box/.style={rectangle, rounded corners=2pt, draw=black!65, fill=black!4, align=center, minimum width=3.2cm, minimum height=0.9cm},
+% 		arrow/.style={-{Latex[length=2.5mm]}, thick, draw=black!65}
+% 	]
+% 		\node[box] (centro) {Concepto central};
+% 		\node[box, right=of centro] (relacion) {Concepto relacionado};
+% 		\node[box, below=of relacion] (efecto) {Consecuencia};
+%
+% 		\draw[arrow] (centro) -- node[above]{implica} (relacion);
+% 		\draw[arrow] (relacion) -- node[right]{produce} (efecto);
+% 	\end{tikzpicture}
+% 	\caption{Titulo del producto visual.}
+% \end{figure}
+
+\subsection{Analisis propio}
+
+\pendiente{Explicar que muestra el producto, que criterio se sostiene y que aprendizaje se obtiene. En PFM02 conviene usar la secuencia: dificultad matematica -> decision didactica -> evidencia de aprendizaje -> mejora posible.}
+
+\subsection{Aplicacion a la practica docente}
+
+\pendiente{Explicar como el analisis o producto puede transferirse a la ensenanza de las matematicas: grupo, contenido, dificultad, representacion, estrategia, evidencia de aprendizaje y mejora esperada.}
+
+\subsection{Lista de verificacion PFM02}
+
+Antes de entregar, revisar que la actividad cumpla los siguientes criterios:
+
+\begin{itemize}
+	\item El tema, contenido, PDA y aprendizaje de la secuencia estan alineados.
+	\item La introduccion plantea un problema didactico, no solo anuncia el tema.
+	\item La explicacion matematica distingue concepto, procedimiento y representacion.
+	\item La practica incluye ejercicios directos y al menos una situacion en contexto.
+	\item La dificultad progresa de lo guiado a lo autonomo.
+	\item La evaluacion mide el aprendizaje declarado y permite revisar errores.
+	\item La retroalimentacion incluye una pregunta metacognitiva o plan de mejora.
+	\item Las operaciones, signos, unidades, formulas y resultados fueron verificados.
+	\item Las fuentes consultadas aparecen citadas en el texto y en bibliografia.
+\end{itemize}
+
+% ==============================================================================
+% SECCION 3: POSTURA PERSONAL
+% Debe mostrar comprension real. No repetir fuentes; interpretar.
+% ==============================================================================
+\section{Postura personal}
+
+\pendiente{Redactar una postura academica y moderada. Relacionar el tema con PFM02, la formacion docente y la ensenanza de las matematicas. Formula recomendada: "Considero que una secuencia de matematicas es pertinente cuando...", "La razon es...", "La consecuencia didactica de esto es...".}
+
+% ==============================================================================
+% SECCION 4: CONCLUSION
+% Cierre recomendado:
+% - Responder directamente a la actividad.
+% - Indicar que se comprendio, no solo que se elaboro.
+% - Mencionar criterio personal final.
+% - No introducir informacion nueva.
+% ==============================================================================
+\section{Conclusion}
+
+\pendiente{Cerrar con sintesis, aprendizaje y postura final. Debe responder que se aprendio sobre el contenido matematico y que criterio docente se fortalece para disenar nuevas actividades.}
+
+% ==============================================================================
+% MANUAL DE TECNICAS DIDACTICAS
+% Dejar incluido en la plantilla maestra. En una entrega final, puede comentarse
+% esta linea si la docente solo solicita el producto de la semana.
+% ==============================================================================
+\input{Técnicas didácticas del aprendizaje}
+
+% BIBLIOGRAFIA
+% Cambiar o agregar archivos .bib segun la unidad/actividad.
+% Ejemplo: \bibliography{IIIEPE,PFM02}
+\nocite{iiiepeMAEM,iiiepeSitio,sepFase6,nctmPrinciplesActions}
+\bibliography{IIIEPE,PFM02,UnADM}
+
+% FIN DEL DOCUMENTO
+\end{document}

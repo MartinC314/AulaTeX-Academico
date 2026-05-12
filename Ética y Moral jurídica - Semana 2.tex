@@ -1,0 +1,241 @@
+
+% CREACIÓN DEL DOCUMENTO
+\documentclass[
+	spanish, % Idioma: spanish, english, etc.
+	letterpaper, oneside
+]{article}
+
+% INFORMACIÓN DEL DOCUMENTO
+\def\documenttitle {Cuadro comparativo de escuelas éticas}
+\def\documentsubtitle {}
+\def\documentsubject {Actividad Semana 2}
+
+\def\documentauthor {Martín Jonathan de la Cruz}
+\def\coursename {Ética y Moral jurídica}
+\def\coursecode {030}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Ética y Moral jurídica}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de México}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\authortable {
+	\begin{tabular}{ll}
+		\textbf{Alumno:}
+		& \begin{tabular}[t]{l}
+			 Martín Jonathan de la Cruz \\	
+		\end{tabular} \\
+		Matrícula: &   ES2611202040 \\
+		
+		\textit{Profesor:}
+		& \begin{tabular}[t]{l}
+			Emma Liliana \\ Padilla Cano
+		\end{tabular} \\
+		& \\
+		\multicolumn{2}{l}{Fecha de realización: \today} \\
+		% \multicolumn{2}{l}{Fecha de entrega: \today} \\
+		\multicolumn{2}{l}{\universitylocation}
+	\end{tabular}
+}
+
+% IMPORTACIÓN DEL TEMPLATE
+\input{template}
+
+% CITAS EN FORMATO AUTOR-AÑO (APA)
+\setcitestyle{authoryear,open={(},close={)}}
+
+% ==============================================================================
+% MARCA DE AGUA EN PORTADA
+% - Se aplica solo a la portada porque usa \AddToShipoutPictureBG*.
+% - Para apagarla en alguna actividad: \def\coverwatermarkenabled {false}
+% - Usar opacidad baja para que no compita con titulo, datos ni logotipo.
+% ==============================================================================
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+	\ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+		\AddToShipoutPictureBG*{%
+			\begin{tikzpicture}[remember picture,overlay]
+				\node[
+					opacity=\coverwatermarkopacity,
+					inner sep=0pt,
+					xshift=\coverwatermarkxshift,
+					yshift=\coverwatermarkyshift
+				] at (current page.center) {%
+					\includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+				};
+			\end{tikzpicture}%
+		}%
+	}{}%
+}
+
+% INICIO DE PÁGINAS
+\begin{document}
+
+% PORTADA
+\insertcoverwatermark
+\templatePortrait
+
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\templatePagecfg
+
+% RESUMEN O ABSTRACT
+\begin{abstractd}
+
+	\textbf{Objetivo específico:} Analizar y comparar las principales escuelas clásicas de la ética, mediante un cuadro comparativo, para identificar sus fundamentos sobre el bien, la virtud y el deber y el hombre jurídico.
+
+	El presente trabajo tiene como objetivo analizar comparativamente diversas escuelas éticas clásicas —ética de la virtud, deontológica, hedonismo, estoicismo, epicureísmo y cinismo— con el fin de identificar sus principios fundamentales, semejanzas y diferencias en torno a la conducta humana y la búsqueda del bien \citep{ronquillo2018etica,singer1995compendio}. A través de la elaboración de un cuadro comparativo, se sistematiza la información relevante de cada corriente, permitiendo una visión estructurada de sus enfoques sobre la moral, el deber, el placer y la virtud. Este ejercicio favorece la comprensión crítica de las teorías éticas y su aplicación en la interpretación de decisiones humanas dentro de contextos sociales y filosóficos \citep{prieto2009favor}.
+
+	El presente trabajo analiza comparativamente seis escuelas éticas fundamentales: ética de la virtud, deontológica, hedonismo, estoicismo, epicureísmo y cinismo. El propósito es identificar sus coincidencias y diferencias en torno al bien, la felicidad, la conducta moral y el ideal de vida humana. A partir de la revisión de la obra \textit{Ética con los clásicos}, de Miguel Martínez Huerta, se observa que cada sistema ético organiza su propuesta alrededor de un valor central: la virtud, el deber, el placer, la autosuficiencia o el dominio de sí. Aristóteles vincula la felicidad con la virtud y la razón; Kant sitúa el fundamento moral en el deber y la ley universal; los estoicos elevan la virtud como único bien auténtico; el hedonismo y el epicureísmo colocan el placer en el centro, aunque este último lo modera racionalmente; y el cinismo rechaza las convenciones sociales para recuperar una vida natural y austera. En conjunto, estas corrientes muestran que la ética no solo prescribe normas, sino que propone distintas formas de comprender la vida buena y la realización humana \citep{huerta2000etica}.
+
+\end{abstractd}
+
+% TABLA DE CONTENIDOS - ÍNDICE
+\templateIndex
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+\section{Introducción}
+
+La ética, como rama fundamental de la filosofía, se encarga del estudio de la conducta humana y de los principios que orientan la distinción entre lo correcto y lo incorrecto \citep{ronquillo2018etica}. A lo largo de la historia, diversas escuelas filosóficas han propuesto modelos explicativos sobre cómo debe vivir el ser humano y cuáles son los fines que deben guiar sus acciones.
+
+En este contexto, el análisis comparativo de las principales corrientes éticas permite comprender no solo sus postulados individuales, sino también las tensiones y coincidencias entre ellas. La ética de la virtud, la deontología, el hedonismo, el estoicismo, el epicureísmo y el cinismo representan distintas formas de concebir la moralidad, el bienestar y la libertad \citep{huerta2000etica}.
+
+El presente trabajo tiene como propósito desarrollar un cuadro comparativo que facilite la organización, análisis y contrastación de estas corrientes, promoviendo una visión integral y crítica del pensamiento ético clásico.
+
+\section{Escuelas éticas clásicas}
+
+Se compara las siguientes escuelas éticas clásicas: Ética de la virtud (Aristóteles), Deontológica (Kant), Hedonismo (general), Estoicismo (Séneca/Epicteto), Epicureísmo (Epicuro), Cinismo (Diógenes).
+
+\subsection*{Ética de la virtud (Aristóteles)}
+
+La ética de la virtud sostiene que la felicidad (\textit{eudaimonía}) es el fin último del ser humano y se alcanza mediante el desarrollo de hábitos virtuosos guiados por la razón. La virtud consiste en el justo medio entre extremos, evitando tanto el exceso como el defecto. La vida buena es una actividad racional conforme a la virtud \citep{huerta2000etica}.
+
+\subsection*{Ética deontológica (Kant)}
+
+La ética deontológica establece que la moralidad depende del cumplimiento del deber conforme a la ley moral. Según Kant, una acción es moral cuando se realiza por respeto a la ley y no por inclinaciones personales. El valor moral reside en la buena voluntad y en la intención del sujeto \citep{huerta2000etica}.
+
+\subsection*{Hedonismo}
+
+El hedonismo sostiene que el fin último de la vida es el placer y la ausencia de dolor. Considera que lo bueno es aquello que genera satisfacción y lo malo lo que produce sufrimiento. Esta corriente coloca el placer sensible como valor central de la conducta humana \citep{huerta2000etica}.
+
+\subsection*{Estoicismo}
+
+El estoicismo afirma que la virtud es el único bien verdadero y que la felicidad depende del dominio interior. El ser humano debe enfocarse en aquello que puede controlar y aceptar con serenidad lo que no depende de él. La vida virtuosa implica autodisciplina y racionalidad \citep{huerta2000etica}.
+
+\subsection*{Epicureísmo}
+
+El epicureísmo plantea que el placer es el bien supremo, pero entendido como un placer moderado y racional. Su objetivo es alcanzar la tranquilidad del alma (\textit{ataraxia}), evitando excesos y sufrimientos innecesarios. Promueve una vida sencilla y equilibrada \citep{huerta2000etica}.
+
+\subsection*{Cinismo}
+
+El cinismo propone una vida conforme a la naturaleza, basada en la autosuficiencia y el rechazo de las convenciones sociales. Defiende una existencia austera y libre de dependencias materiales o sociales, privilegiando la autenticidad y la independencia personal \citep{huerta2000etica}.
+
+\section{Tabla comparativa de escuelas éticas clásicas}
+
+% \subsection*{Proceso de elaboración del cuadro comparativo}
+
+% \begin{enumerate}
+% 	\item \textbf{Seleccionar.} Subrayar, separar y catalogar la información relevante y útil de cada escuela ética para contar con insumos suficientes para la comparación.
+% 	\item \textbf{Trazar la tabla.} Definir el número de conceptos o temas y la cantidad de categorías que se usarán en la comparación. Cada concepto se coloca en una columna y cada categoría en una fila.
+% 	\item \textbf{Titular el cuadro.} Enunciar con claridad los conceptos o temas que se comparan.
+% 	\item \textbf{Distribuir la información.} Colocar los conceptos en la parte superior de las columnas y ubicar las categorías en las celdas correspondientes, con nombres puntuales y claros.
+% 	\item \textbf{Revisar.} Verificar la pertinencia de la información, la redacción y la claridad general del cuadro comparativo.
+% \end{enumerate}
+
+
+\begin{landscape}
+
+\begin{table}[htbp]
+\centering
+\caption{Cuadro comparativo de escuelas éticas clásicas}
+\label{tab:cuadro-eticas}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|p{2.9cm}|p{3.1cm}|p{3.1cm}|p{3.1cm}|p{3.1cm}|p{3.1cm}|p{3.1cm}|}
+\hline
+\textbf{Categoría} & \textbf{Ética de la virtud} & \textbf{Deontológica} & \textbf{Hedonismo} & \textbf{Estoicismo} & \textbf{Epicureísmo} & \textbf{Cinismo} \\
+\hline
+Representante principal & Aristóteles & Immanuel Kant & Aristipo de Cirene (tradición hedonista) & Séneca y Epicteto & Epicuro & Diógenes de Sinope \\
+\hline
+Fundamento moral & Formación del carácter por hábitos virtuosos & Cumplimiento del deber y ley moral universal & Búsqueda del placer y evitación del dolor & Virtud como único bien verdadero & Placer racional y moderado & Vida natural y autosuficiente \\
+\hline
+Fin último del ser humano & Eudaimonía (vida lograda) & Obrar por deber con buena voluntad & Obtener placer y minimizar sufrimiento & Alcanzar serenidad interior mediante dominio de sí & Ataraxia (tranquilidad del alma) & Libertad frente a convenciones sociales \\
+\hline
+Criterio para actuar bien & Justo medio guiado por la razón & Imperativo categórico & Consecuencias placenteras de la acción & Conformidad con la razón y la naturaleza & Evaluación prudente de placeres y dolores & Rechazo de lo superfluo y lo artificial \\
+\hline
+Actitud ante bienes externos & Son útiles, pero subordinados a la virtud & No determinan el valor moral & Son valiosos si producen placer & Son indiferentes frente a la virtud & Se aceptan con moderación & Se minimizan para preservar la independencia \\
+\hline
+Aporte para el hombre jurídico & Énfasis en prudencia, justicia y formación ética profesional & Centralidad del deber, norma y universalidad & Consideración del bienestar y daño en decisiones & Autocontrol, resiliencia y rectitud ante la adversidad & Moderación y equilibrio en la toma de decisiones & Crítica de prácticas jurídicas vacías y apego a la autenticidad \\
+\hline
+\end{tabular}%
+}
+\end{table}
+
+\end{landscape}
+
+La comparación evidencia que todas las escuelas buscan orientar la acción humana hacia una vida buena, pero difieren en el criterio rector: virtud, deber, placer, autodominio, moderación o autosuficiencia. Esta distinción permite valorar sus aportes para la formación ética del profesional del derecho \citep{huerta2000etica,prieto2009favor}.
+
+
+\section{Conclusión}
+
+El análisis comparativo de las escuelas éticas clásicas pone de relieve la diversida de enfoques sobre la moralidad y el bien. Cada corriente ofrece una perspectiva particular sobre cómo alcanzar la felicidad y vivir de manera virtuosa, lo que enriquece la comprensión de la ética como disciplina. Pero todas tienen en común la preocupación por orientar la conducta humana hacia un ideal del bien y la realización personal, lo que resulta fundamental para la formación ética de los profesionales del derecho y su ejercicio responsable en la sociedad \citep{ronquillo2018etica}.
+
+\begin{thebibliography}{99}
+
+% @misc{ronquillo2018etica,
+%   title={{\'E}tica general y profesional (2da. Ed.). Editorial Mar y Trinchera},
+%   author={Ronquillo Armas, LA},
+%   year={2018}
+% }
+
+\bibitem[Ronquillo Armas(2018)]{ronquillo2018etica}
+Ronquillo Armas, L. A. (2018). \textit{Ética general y profesional} (2.ª ed.). Editorial Mar y Trinchera.
+
+% @book{singer1995compendio,
+%   title={Compendio de {\'e}tica},
+%   author={Singer, Peter and Rubio, Jorge Vigil and Vigil, Margarita},
+%   year={1995},
+%   publisher={Alianza Madrid}
+% }
+
+\bibitem[Singer et al.(1995)]{singer1995compendio}
+Singer, P., Rubio, J. V., \& Vigil, M. (1995). \textit{Compendio de ética}. Alianza.
+
+% @article{prieto2009favor,
+%   title={En favor de los cl{\'a}sicos: una {\'e}tica para el siglo XXI},
+%   author={Prieto Arciniega, Alberto},
+%   journal={Faventia},
+%   volume={31},
+%   number={1-2},
+%   pages={0305--314},
+%   year={2009}
+% }
+
+\bibitem[Prieto Arciniega(2009)]{prieto2009favor}
+Prieto Arciniega, A. (2009). En favor de los clásicos: una ética para el siglo XXI. \textit{Faventia}, 31(1–2), 305–314.
+
+% @book{huerta2000etica,
+%   title={{\'E}tica con los cl{\'a}sicos},
+%   author={Huerta, Miguel Mart{\'\i}nez},
+%   year={2000},
+%   publisher={Plaza y Vald{\'e}s}
+% }
+
+\bibitem[Huerta(2000)]{huerta2000etica}
+Huerta, M. M. (2000). \textit{Ética con los clásicos}. Plaza y Valdés.
+
+\end{thebibliography}
+
+% FIN DEL DOCUMENTO
+\end{document}

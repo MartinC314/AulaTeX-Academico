@@ -1,0 +1,445 @@
+% ==============================================================================
+% PLANTILLA MAESTRA - ETICA Y MORAL JURIDICA / UnADM
+% ==============================================================================
+% Uso:
+% 1. Duplica este archivo y renombra la copia por semana/actividad.
+% 2. Actualiza documenttitle, documentsubtitle y documentsubject.
+% 3. Lee la planeacion semanal y NO pegues las instrucciones completas dentro del
+%    producto final. Usa la planeacion como lista de cumplimiento.
+% 4. Consulta la bibliografia indicada por la docente, toma notas y redacta con
+%    criterio propio: concepto -> caracteristicas -> funcion juridica -> postura.
+% 5. Entrega en PDF con la nomenclatura indicada en el aula.
+%
+% Objetivo general de la asignatura:
+% - Comprender las bases eticas y las relaciones morales del Derecho.
+%
+% Objetivos especificos recurrentes en las planeaciones:
+% - Identificar las principales escuelas de etica relacionadas con el Derecho.
+% - Reconocer las implicaciones de la moral en el ambito juridico.
+% - Relacionar etica y moral en el contexto social.
+% - Analizar derechos y dignidad humana en el contexto juridico.
+%
+% Formato institucional aplicado:
+% - Fuente tipo Helvetica, equivalente visual a Arial.
+% - Interlineado 1.5.
+% - Citas autor-anio con natbib: usar \citep{clave} o \citet{clave}.
+% - Referencias en bibliografia BibTeX, formato APA 7 en cuerpo y referencias.
+% - Redaccion academica, clara, con analisis propio y buena ortografia.
+% - Caratula, desarrollo, conclusion y bibliografia.
+%
+% Regla para productos visuales:
+% - Si la actividad pide tabla, cuadro comparativo, esquema, mapa conceptual,
+%   mapa mental, linea de tiempo, diagrama, matriz, red conceptual, SQA,
+%   organizador grafico o producto similar, realizarlo preferentemente con
+%   LaTeX/TikZ para mantener nitidez, evidencia editable y diseno controlado.
+% - Si se usa Canva, Miro u otra plataforma, insertar capturas nitidas y conservar
+%   evidencia suficiente dentro del PDF.
+%
+% Criterios derivados de la evaluacion recibida en Etica y Moral juridica:
+% - Plantea conceptos precisos: 3 puntos.
+% - Menciona caracteristicas con claridad: 3 puntos.
+% - Presenta buena redaccion y ortografia: 2 puntos.
+% - Usa fuentes, citas y referencias en formato APA 7: 2 puntos.
+%
+% Criterios de Semana 3 detectados en planeacion:
+% - Realiza un formato correcto.
+% - Utiliza contenido filosofico puro cuando la actividad lo solicite.
+% - Integra criticas pertinentes, no solo definiciones.
+% - Mantiene redaccion clara y referencias APA 7.
+%
+% Criterios de redaccion personal (enfoque aplicado):
+% - No escribir para llenar espacio; escribir para sostener una idea.
+% - Cada concepto debe responder: que es, que caracteristicas tiene, como
+%   funciona, que problema resuelve, que limite presenta y que implicacion
+%   juridica tiene.
+% - Evitar listas sin analisis. Despues de cada dato importante, explicar su
+%   consecuencia.
+% - Estructura mental recomendada: problema etico -> criterio moral -> efecto
+%   juridico -> postura personal.
+% - Usar primera persona con moderacion academica: "Considero que",
+%   "Desde esta perspectiva", "La posicion que sostengo es". Evitar "yo creo".
+%
+% Productos recurrentes segun planeaciones de la materia:
+% - Semana 2: Cuadro comparativo.
+% - Semana 3: Esquema.
+% - Semana 4: Linea de tiempo.
+% - Semana 5: Mapa conceptual.
+% - Semana 6: Resumen.
+% - Semana 7: Reporte de lectura general.
+% - Semana 8: Analisis de hechos.
+% - Semana 9: Ensayo.
+%
+% Checklist antes de entregar:
+% [ ] El objetivo coincide con la planeacion de la semana.
+% [ ] El producto solicitado aparece de forma visible y bien rotulada.
+% [ ] Los conceptos son precisos y no se contradicen.
+% [ ] Las caracteristicas estan explicadas con claridad, no solo enumeradas.
+% [ ] Hay citas APA autor-anio dentro del texto.
+% [ ] Hay bibliografia al final y coincide con las fuentes citadas.
+% [ ] La introduccion plantea una idea propia, no solo anuncia la actividad.
+% [ ] La conclusion responde que se comprendio y que postura se sostiene.
+% [ ] No aparecen instrucciones copiadas de la planeacion dentro del producto.
+% [ ] Si se uso IA como apoyo, el texto fue comprendido, revisado y apropiado.
+% ==============================================================================
+
+% CREACION DEL DOCUMENTO
+\documentclass[
+	spanish,
+	letterpaper, oneside
+]{article}
+
+% ==============================================================================
+% INFORMACION DEL DOCUMENTO
+% Actualizar en cada actividad.
+% Ejemplos:
+% \def\documenttitle {Cuadro comparativo de escuelas clasicas de la etica}
+% \def\documentsubtitle {Actividad 2 - Etica y Moral juridica}
+% \def\documentsubject {Actividad Semana 2}
+% ==============================================================================
+\def\documenttitle {Título de la actividad}
+\def\documentsubtitle {Actividad X - Ética y Moral jurídica}
+\def\documentsubject {Actividad Semana X}
+
+\def\documentauthor {Martín Jonathan de la Cruz}
+\def\coursename {Ética y Moral jurídica}
+\def\coursecode {030}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Ética y Moral jurídica}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de México}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\authortable {
+	\begin{tabular}{ll}
+		\textbf{Alumno:}
+		& \begin{tabular}[t]{l}
+			 Martín Jonathan de la Cruz \\
+		\end{tabular} \\
+		Matrícula: & ES2611202040 \\
+
+		\textit{Profesor:}
+		& \begin{tabular}[t]{l}
+			Emma Liliana \\ Padilla Cano
+		\end{tabular} \\
+		& \\
+		\multicolumn{2}{l}{Fecha de realización: \today} \\
+		\multicolumn{2}{l}{\universitylocation}
+	\end{tabular}
+}
+
+% IMPORTACION DEL TEMPLATE
+\input{template}
+
+% FORMATO SOLICITADO / USADO EN ACTIVIDADES CORREGIDAS
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% PRODUCTOS VISUALES EN TIKZ
+\usepackage{tikz}
+\usetikzlibrary{
+	arrows.meta,
+	positioning,
+	calc,
+	matrix,
+	fit,
+	shapes.geometric,
+	shadows.blur
+}
+
+% CITAS EN FORMATO AUTOR-ANIO, COMPATIBLE CON APA 7 EN EL CUERPO DEL TEXTO
+% Usar:
+% - Cita parentetica: \citep{clave}
+% - Cita narrativa: \citet{clave}
+% - Varias fuentes: \citep{clave1,clave2}
+\setcitestyle{authoryear,open={(},close={)}}
+
+% ==============================================================================
+% AYUDAS DE REDACCION
+% Quitar o comentar \pendiente cuando el documento final este terminado.
+% ==============================================================================
+\newcommand{\pendiente}[1]{\textcolor{red}{[PENDIENTE: #1]}}
+
+\begin{document}
+
+% PORTADA
+\templatePortrait
+
+% CONFIGURACION DE PAGINA Y ENCABEZADOS
+\templatePagecfg
+\onehalfspacing
+
+% ==============================================================================
+% RESUMEN / ABSTRACT
+% Debe ser breve, no copiar instrucciones.
+% Formula recomendada:
+% Tema + objetivo + tecnica/producto + enfoque personal.
+% ==============================================================================
+\begin{abstractd}
+	\textbf{Objetivo:} \pendiente{Redactar el objetivo con verbo academico: analizar, comparar, explicar, evaluar, interpretar o relacionar. Debe coincidir con la planeacion semanal.}
+
+	\textbf{Producto elaborado:} \pendiente{Indicar si es cuadro comparativo, esquema, linea de tiempo, mapa conceptual, resumen, reporte de lectura, analisis de hechos o ensayo.}
+
+	\textbf{Enfoque de analisis:} \pendiente{Enunciar la postura central: que criterio etico/moral se analizara y por que importa para la practica juridica.}
+\end{abstractd}
+
+% TABLA DE CONTENIDOS - INDICE
+\templateIndex
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+% ==============================================================================
+% SECCION 1: INTRODUCCION
+% Apertura recomendada:
+% - Iniciar con una afirmacion fuerte.
+% - Traducir la consigna a problema etico-juridico.
+% - Mostrar por que el tema importa para la formacion juridica.
+% - Cerrar anticipando el enfoque personal.
+%
+% Evitar:
+% - "En este trabajo hablare de..."
+% - "La etica es muy importante..."
+% - Definiciones de diccionario sin interpretacion.
+% ==============================================================================
+\section{Introducción}
+
+\pendiente{Abrir con una afirmacion directa. Ejemplo: "La etica juridica no opera como adorno moral del Derecho; funciona como criterio de control frente al poder, la decision y la responsabilidad profesional."}
+
+\pendiente{Explicar el problema de la actividad: que conceptos, escuelas, hechos, valores o dilemas deben analizarse.}
+
+\pendiente{Cerrar con postura inicial. Ejemplo: "La posicion que guia este trabajo es que el valor de una teoria etica se mide por su capacidad para orientar decisiones juridicas concretas sin perder de vista dignidad, responsabilidad y justicia."}
+
+% ==============================================================================
+% SECCION 2: DESARROLLO / ANALISIS
+% Organizar segun el producto solicitado:
+% - Cuadro comparativo: escuela/concepto, definicion, caracteristicas,
+%   fundamento, pregunta clave, critica, autor y aplicacion juridica.
+% - Esquema: concepto central, ramas principales, notas de funcion y limites.
+% - Linea de tiempo: periodo, autor, escuela, aporte, consecuencia etica/juridica.
+% - Mapa conceptual: conceptos unidos por conectores verbales claros.
+% - Resumen: tesis central de la lectura, argumentos, conceptos y cierre personal.
+% - Reporte de lectura: ficha, objetivo, ideas centrales, analisis y valoracion.
+% - Analisis de hechos: hechos, problema etico, criterios, valoracion, postura.
+% - Ensayo: tesis, argumentos, contraargumento, postura y conclusion.
+%
+% Regla de parrafo:
+% Entrada: concepto o problema.
+% Proceso: explicacion, fuente y relacion.
+% Salida: consecuencia etica, moral o juridica.
+% ==============================================================================
+\section{Desarrollo}
+
+\subsection{Contexto y problema}
+
+\pendiente{Presentar el contexto del tema en Etica y Moral juridica. Relacionar con conducta humana, moral social, dignidad, derechos, deber profesional o decision juridica.}
+
+\pendiente{Transformar la consigna en problema operativo: que hay que comparar, organizar, resumir, explicar o valorar.}
+
+\subsection{Análisis conceptual}
+
+\pendiente{Explicar conceptos centrales con fuentes. Cada definicion debe incluir caracteristicas y funcion. Ejemplo de cita APA: \citep{ronquilloarmasEticaGeneralProfesional2018}.}
+
+\pendiente{No acumular autores como lista. Comparar por criterio: bien, deber, placer, virtud, dignidad, responsabilidad, consecuencia, contexto o justicia.}
+
+\subsection{Aplicación jurídica}
+
+\pendiente{Aterrizar el tema a un dilema juridico, derechos humanos, dignidad humana, responsabilidad profesional, CNDH, funcion judicial, legislacion, victimas o justicia social.}
+
+\pendiente{Incluir lectura personal academica: que criterio parece mas util, que limite se observa y que riesgo aparece si se aplica de forma automatica.}
+
+% ==============================================================================
+% BLOQUE OPCIONAL: CUADRO COMPARATIVO
+% Usar cuando la actividad pida cuadro comparativo.
+% Rubrica de referencia:
+% - Conceptos precisos.
+% - Caracteristicas claras.
+% - Redaccion y ortografia.
+% - APA 7 en citas y referencias.
+% ==============================================================================
+%
+% \clearpage
+% \pagestyle{empty}
+% \begin{landscape}
+% \begingroup
+% \scriptsize
+% \setlength{\tabcolsep}{4pt}
+% \renewcommand{\arraystretch}{1.35}
+% \begin{longtable}{@{}p{0.16\linewidth}p{0.13\linewidth}p{0.13\linewidth}p{0.13\linewidth}p{0.13\linewidth}p{0.13\linewidth}p{0.13\linewidth}@{}}
+% \caption{Cuadro comparativo de escuelas eticas}\label{tab:cuadro-etico}\\
+% \toprule
+% \textbf{Criterio} &
+% \textbf{Escuela 1} &
+% \textbf{Escuela 2} &
+% \textbf{Escuela 3} &
+% \textbf{Escuela 4} &
+% \textbf{Escuela 5} &
+% \textbf{Escuela 6} \\
+% \midrule
+% \endfirsthead
+% \toprule
+% \textbf{Criterio} & \textbf{Escuela 1} & \textbf{Escuela 2} & \textbf{Escuela 3} & \textbf{Escuela 4} & \textbf{Escuela 5} & \textbf{Escuela 6} \\
+% \midrule
+% \endhead
+% \midrule
+% \multicolumn{7}{r}{Continua en la siguiente pagina} \\
+% \endfoot
+% \bottomrule
+% \endlastfoot
+%
+% Concepto &
+% [Definicion precisa.] &
+% [Definicion precisa.] &
+% [Definicion precisa.] &
+% [Definicion precisa.] &
+% [Definicion precisa.] &
+% [Definicion precisa.] \\
+% \midrule
+%
+% Caracteristicas &
+% [3 rasgos claros.] &
+% [3 rasgos claros.] &
+% [3 rasgos claros.] &
+% [3 rasgos claros.] &
+% [3 rasgos claros.] &
+% [3 rasgos claros.] \\
+% \midrule
+%
+% Pregunta etica &
+% [Pregunta que guia la escuela.] &
+% [Pregunta que guia la escuela.] &
+% [Pregunta que guia la escuela.] &
+% [Pregunta que guia la escuela.] &
+% [Pregunta que guia la escuela.] &
+% [Pregunta que guia la escuela.] \\
+% \midrule
+%
+% Critica o limite &
+% [Riesgo filosofico o juridico.] &
+% [Riesgo filosofico o juridico.] &
+% [Riesgo filosofico o juridico.] &
+% [Riesgo filosofico o juridico.] &
+% [Riesgo filosofico o juridico.] &
+% [Riesgo filosofico o juridico.] \\
+%
+% \end{longtable}
+% \endgroup
+% \end{landscape}
+% \pagestyle{fancy}
+
+% ==============================================================================
+% BLOQUE OPCIONAL: ESQUEMA EN TIKZ
+% Usar cuando la actividad pida esquema. Mantener jerarquia clara:
+% titulo -> conceptos principales -> ideas secundarias -> criticas/aplicacion.
+% ==============================================================================
+%
+% \clearpage
+% \begin{figure}[H]
+% \centering
+% \resizebox{0.95\linewidth}{!}{%
+% \begin{tikzpicture}[
+% 	root/.style={rectangle, rounded corners=2pt, draw=black, fill=black!10,
+% 		text width=4cm, align=center, minimum height=1.2cm, font=\bfseries},
+% 	nodebox/.style={rectangle, rounded corners=2pt, draw=black!60, fill=gray!8,
+% 		text width=4cm, align=center, minimum height=1cm, font=\small},
+% 	edge/.style={-{Stealth[length=2.2mm]}, thick, black!55}
+% ]
+% \node[root] (centro) {Tema central};
+% \node[nodebox, below left=1.3cm and 3cm of centro] (a) {Idea principal 1};
+% \node[nodebox, below=1.3cm of centro] (b) {Idea principal 2};
+% \node[nodebox, below right=1.3cm and 3cm of centro] (c) {Idea principal 3};
+% \draw[edge] (centro) -- (a);
+% \draw[edge] (centro) -- (b);
+% \draw[edge] (centro) -- (c);
+% \end{tikzpicture}}
+% \caption{Esquema de [tema]}
+% \label{fig:esquema}
+% \end{figure}
+
+% ==============================================================================
+% BLOQUE OPCIONAL: LINEA DE TIEMPO EN TIKZ
+% Usar cuando la actividad pida linea de tiempo.
+% Cada punto debe tener fecha, autor/escuela, aporte y consecuencia.
+% ==============================================================================
+%
+% \clearpage
+% \begin{figure}[H]
+% \centering
+% \begin{tikzpicture}[
+% 	event/.style={rectangle, rounded corners=2pt, draw=black!60, fill=gray!8,
+% 		text width=3.4cm, align=center, font=\scriptsize, inner sep=5pt},
+% 	dot/.style={circle, fill=black, inner sep=2pt}
+% ]
+% \draw[thick, -{Stealth[length=2.5mm]}] (0,0) -- (14,0);
+% \foreach \x/\year/\text in {
+% 	0.8/{Año}/{Aporte principal},
+% 	4.0/{Año}/{Aporte principal},
+% 	7.2/{Año}/{Aporte principal},
+% 	10.4/{Año}/{Aporte principal},
+% 	13.0/{Año}/{Aporte principal}
+% }{
+% 	\node[dot] at (\x,0) {};
+% 	\node[event, above=0.45cm of {( \x,0 )}] {\textbf{\year}\\\text};
+% }
+% \end{tikzpicture}
+% \caption{Linea de tiempo de [tema]}
+% \label{fig:linea-tiempo}
+% \end{figure}
+
+% ==============================================================================
+% SECCION 3: POSTURA / ANALISIS PERSONAL
+% Esta seccion ayuda a que el producto no se perciba como simple reproduccion.
+% Debe contestar:
+% - Que posicion se sostiene.
+% - Por que esa posicion es razonable.
+% - Que fuente o argumento la respalda.
+% - Como se aplica a la practica juridica.
+% ==============================================================================
+\section{Postura personal}
+
+\pendiente{Redactar una posicion clara. Ejemplo: "La posicion que sostengo es que una decision juridica eticamente defendible no depende solo de cumplir una norma, sino de reconocer sus efectos sobre la dignidad y la responsabilidad social."}
+
+\pendiente{Justificar con causa-efecto-consecuencia: si una escuela etica privilegia cierto criterio, entonces produce cierto tipo de decision; por eso conviene usarla con limites.}
+
+\pendiente{Aterrizar a la formacion como abogado: que permite decidir, interpretar, argumentar, cuestionar o proteger.}
+
+% ==============================================================================
+% SECCION 4: CONCLUSION
+% Debe cerrar con fuerza:
+% - Sintetizar el hallazgo.
+% - Reafirmar postura.
+% - Indicar aplicacion real.
+% - Evitar repetir la introduccion.
+% ==============================================================================
+\section{Conclusión}
+
+\pendiente{Sintetizar el resultado: que se comprendio, que relacion se encontro entre etica, moral y Derecho, y que criterio queda como mas relevante para la actividad.}
+
+\pendiente{Reafirmar postura personal con aplicacion: "Para la practica juridica, este enfoque resulta relevante porque..."}
+
+\pendiente{Cerrar con una frase de consecuencia: que cambia en la forma de interpretar, argumentar o aplicar el Derecho.}
+
+% ==============================================================================
+% MANUAL OPERATIVO DE TECNICAS DIDACTICAS
+% Este archivo funciona como memoria para futuras sesiones y como guia de
+% elaboracion. Para una entrega final, comentar la siguiente linea si el manual no
+% debe aparecer dentro del PDF de la actividad.
+% ==============================================================================
+\input{Técnicas didácticas del aprendizaje}
+
+% ==============================================================================
+% REFERENCIAS
+% Reglas:
+% - Toda fuente citada en el texto debe estar en el .bib.
+% - Toda cita debe tener clave correcta.
+% - Usar fuentes de la planeacion y, si se complementa, que sean confiables.
+% - En el cuerpo: \citep{clave}; no usar solo URLs sueltas.
+% ==============================================================================
+\bibliography{EticaMoralJuridica}
+
+% FIN DEL DOCUMENTO
+\end{document}

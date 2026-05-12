@@ -1,0 +1,523 @@
+% ==============================================================================
+% PLANTILLA MAESTRA - FILOSOFIA DEL DERECHO / UnADM
+% ==============================================================================
+% Uso:
+% 1. Duplica este archivo y renombra la copia por semana/actividad.
+% 2. Actualiza documenttitle, documentsubtitle y documentsubject.
+% 3. Lee la planeacion de la semana y NO pegues las instrucciones completas en el
+%    producto final. Usa las instrucciones solo como lista de cumplimiento.
+% 4. Identifica primero el producto solicitado: mapa, cuadro, glosario, tabla,
+%    estudio de caso, reflexion, video, etc. El formato pedido manda sobre el
+%    gusto personal por escribir ensayo.
+% 5. Revisa bibliografia, toma notas, define categorias y redacta con postura.
+% 6. Entrega en PDF con la nomenclatura indicada por la planeacion.
+%
+% Formato institucional aplicado:
+% - Fuente tipo Helvetica.
+% - Interlineado 1.5.
+% - Citas autor-anio con natbib: usar \citep{clave} o \citet{clave}.
+% - Referencias en bibliografia BibTeX.
+% - Redaccion academica, clara, con analisis propio.
+% - Productos visuales elaborados preferentemente en LaTeX/TikZ: tablas,
+%   cuadros comparativos, mapas conceptuales/mentales, lineas de tiempo,
+%   diagramas de flujo, esquemas, cronologias, matrices y organizadores.
+%
+% Criterios derivados de retroalimentacion docente:
+% - No limitarse a reproducir fuentes: interpretar, conectar y tomar postura.
+% - La pregunta guia antes de entregar debe ser: cual es mi posicion frente a lo
+%   que expongo y que razones sostienen esa posicion.
+% - Evitar redaccion excesivamente general, repeticion de estructuras y tono de
+%   resumen automatico. Cada parrafo debe tener una decision propia.
+% - Las fuentes no se mencionan como lista decorativa: cada autor debe sostener
+%   una definicion, un criterio, una diferencia, una tension o una aplicacion.
+% - Toda referencia final debe estar citada dentro del texto y toda cita dentro
+%   del texto debe aparecer en referencias. Revisar coincidencia uno a uno.
+% - Incluir conclusion personal cuando la actividad lo solicite.
+% - En cuadros comparativos: categorias claras, jerarquias, secuencia y sintesis.
+% - Revisar diseno solicitado: producto visual/cuadro, conclusiones y referencias.
+% - Si la consigna pide mapa conceptual, cuadro, tabla o glosario, construir ese
+%   producto. No convertirlo en texto expositivo salvo que la planeacion lo pida.
+% - Usar APA 7 edicion en citas y referencias.
+% - No presentar las indicaciones de la actividad dentro del documento final.
+% - Si se usa IA como apoyo, el resultado debe estar leido, corregido, apropiado
+%   y transformado con criterio personal; nunca entregar texto sin procesamiento.
+%
+% Protocolo contra observaciones de "IA" o "falta de autenticidad":
+% - Abrir cada seccion con una idea propia, no con definiciones genericas.
+% - Integrar por lo menos una frase de valoracion: "El punto critico es...",
+%   "Desde esta perspectiva...", "La consecuencia juridica es...".
+% - Pasar de definicion a funcion: que hace el concepto dentro del sistema.
+% - Pasar de funcion a consecuencia: que ocurre si se interpreta mal.
+% - En conclusiones, no repetir; responder que se comprendio, que se sostiene y
+%   que cambia para la interpretacion o practica juridica.
+%
+% APA 7 operativo para esta materia:
+% - La cita puede ser parafraseada o textual. Si la planeacion dice "explica con
+%   tus propias palabras", preferir parafrasis con cita autor-anio.
+% - En glosarios, colocar la cita junto a la definicion base y despues desarrollar
+%   comentario propio. Formula: definicion base + cita -> funcion -> ejemplo o
+%   consecuencia.
+% - Usar cita textual solo cuando la frase exacta sea necesaria; incluir pagina:
+%   \citep[p.~00]{clave}. No llenar todo el trabajo de comillas.
+% - En citas de varias fuentes, no acumular autores sin distinguir aportes. Mejor
+%   explicar que aporta cada fuente en una frase breve.
+% - No usar URLs sueltas dentro del texto. Registrar la fuente en .bib y citarla.
+%
+% Criterios de redaccion personal (enfoque_personal.txt + guia estrategica):
+% - No escribir para llenar espacio; escribir para posicionar una idea con peso.
+% - Cada seccion debe responder: que es, como funciona, por que importa,
+%   que implica y cual es la postura.
+% - Evitar texto generico. Convertir informacion en criterio.
+% - Estructura mental recomendada: problema -> sistema -> consecuencia -> postura.
+% - Usar un tono formal, directo, analitico y con intencion.
+% - Integrar pensamiento de sistemas: funcion, estructura, control, criterio,
+%   costo, decision, consecuencia, limites, aplicacion real.
+% - Usar primera persona solo con moderacion: "Desde esta perspectiva",
+%   "Considero que", "La posicion que sostengo es". Evitar "yo creo".
+%
+% Checklist antes de entregar:
+% [ ] El producto coincide exactamente con la tecnica solicitada en planeacion.
+% [ ] El objetivo esta alineado con la planeacion.
+% [ ] Las instrucciones no fueron copiadas como contenido del producto.
+% [ ] Hay citas en APA autor-anio dentro del texto, ubicadas donde se usa la idea.
+% [ ] La bibliografia final coincide con las citas del cuerpo, sin sobrantes.
+% [ ] La introduccion abre con una afirmacion fuerte, no con relleno.
+% [ ] El desarrollo explica, interpreta y conecta.
+% [ ] Cada fuente cumple una funcion analitica, no solo aparece mencionada.
+% [ ] Hay ejemplos juridicos o aplicacion al sistema mexicano cuando proceda.
+% [ ] La conclusion incluye postura personal argumentada: posicion, razon y efecto.
+% [ ] No aparecen instrucciones de la planeacion copiadas en el cuerpo final.
+% [ ] Si la actividad pide producto visual, se construyo con TikZ/LaTeX o se
+%     justifico por que se uso una captura externa.
+% [ ] Si es mapa conceptual, hay jerarquia, palabras de enlace y relaciones.
+% [ ] Si es cuadro comparativo, hay categorias comparables y sintesis critica.
+% [ ] Si es glosario, cada concepto tiene definicion propia, cita y aplicacion.
+% [ ] Si es caso, se identifican hechos, problema, conceptos, aplicacion y postura.
+% [ ] Ortografia, acentos, sintaxis y nombres propios revisados.
+% [ ] Si se uso IA como apoyo, el texto fue comprendido, revisado y apropiado.
+% ==============================================================================
+
+% CREACION DEL DOCUMENTO
+\documentclass[
+	spanish,
+	letterpaper, oneside
+]{article}
+
+% ==============================================================================
+% INFORMACION DEL DOCUMENTO
+% Actualizar en cada actividad.
+% Ejemplos:
+% \def\documenttitle {Mapa conceptual de la Filosofia del Derecho}
+% \def\documentsubtitle {Actividad 1 - Filosofia del Derecho}
+% \def\documentsubject {Actividad Semana 2}
+% ==============================================================================
+\def\documenttitle {Título de la actividad}
+\def\documentsubtitle {Actividad X - Filosofía del Derecho}
+\def\documentsubject {Actividad Semana X}
+
+\def\documentauthor {Martín Jonathan de la Cruz}
+\def\coursename {Filosofía del Derecho}
+\def\coursecode {030}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Filosofía del Derecho}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de Mexico}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\authortable {
+	\begin{tabular}{ll}
+		\textbf{Alumno:}
+		& \begin{tabular}[t]{l}
+			 Martín Jonathan de la Cruz \\
+		\end{tabular} \\
+		Matrícula: & ES2611202040 \\
+
+		\textit{Profesor:}
+		& \begin{tabular}[t]{l}
+			Reyna Patricia \\ González Rodríguez
+		\end{tabular} \\
+		& \\
+		\multicolumn{2}{l}{Fecha de realización: \today} \\
+		\multicolumn{2}{l}{\universitylocation}
+	\end{tabular}
+}
+
+% IMPORTACION DEL TEMPLATE
+\input{template}
+
+% FORMATO SOLICITADO / USADO EN ACTIVIDADES CORREGIDAS
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% PRODUCTOS VISUALES EN TIKZ
+% Usar TikZ para construir productos solicitados cuando sea posible:
+% cuadro comparativo, tabla, mapa conceptual, mapa mental, linea de tiempo,
+% diagrama de flujo, mapa de cajas, redes conceptuales, esquemas, matrices,
+% SQA, Venn, procesos, cronologias, arboles de decision y organizadores.
+\usepackage{tikz}
+\usetikzlibrary{
+	arrows.meta,
+	positioning,
+	calc,
+	matrix,
+	fit,
+	shapes.geometric,
+	shadows.blur
+}
+
+% CITAS EN FORMATO AUTOR-ANIO, COMPATIBLE CON APA 7 EN EL CUERPO DEL TEXTO
+% Usar:
+% - Cita parentetica: \citep{clave}
+% - Cita narrativa: \citet{clave}
+% - Varias fuentes: \citep{clave1,clave2}
+% - Parafrasis con pagina si conviene: \citep[p.~00]{clave}
+% - Cita textual breve: "texto exacto" \citep[p.~00]{clave}
+%
+% Regla practica:
+% - Si la consigna pide "con tus propias palabras", usar parafrasis con cita.
+% - Si se toma una frase exacta, usar comillas y pagina.
+% - En definiciones de glosario, citar inmediatamente despues de la definicion
+%   base y desarrollar el analisis propio en las oraciones siguientes.
+\setcitestyle{authoryear,open={(},close={)}}
+
+% ==============================================================================
+% AYUDAS DE REDACCION
+% Quitar o comentar \pendiente cuando el documento final este terminado.
+% ==============================================================================
+\newcommand{\pendiente}[1]{\textcolor{red}{[PENDIENTE: #1]}}
+
+% ==============================================================================
+% MARCA DE AGUA EN PORTADA
+% - Se aplica solo a la portada porque usa \AddToShipoutPictureBG*.
+% - Para apagarla en alguna actividad: \def\coverwatermarkenabled {false}
+% - Usar opacidad baja para que no compita con titulo, datos ni logotipo.
+% ==============================================================================
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+	\ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+		\AddToShipoutPictureBG*{%
+			\begin{tikzpicture}[remember picture,overlay]
+				\node[
+					opacity=\coverwatermarkopacity,
+					inner sep=0pt,
+					xshift=\coverwatermarkxshift,
+					yshift=\coverwatermarkyshift
+				] at (current page.center) {%
+					\includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+				};
+			\end{tikzpicture}%
+		}%
+	}{}%
+}
+
+\begin{document}
+
+% PORTADA
+\insertcoverwatermark
+\templatePortrait
+
+% CONFIGURACION DE PAGINA Y ENCABEZADOS
+\templatePagecfg
+\onehalfspacing
+
+% ==============================================================================
+% RESUMEN / ABSTRACT
+% Debe ser breve, no copiar instrucciones.
+% Formula recomendada:
+% Tema + objetivo + enfoque/metodo + postura/resultado.
+% ==============================================================================
+\begin{abstractd}
+	\textbf{Objetivo:} \pendiente{Redactar el objetivo con verbo academico: analizar, comparar, explicar, evaluar o interpretar. Debe corresponder a la planeacion de la semana.}
+
+	\textbf{Postura de analisis:} \pendiente{Enunciar la postura central. No usar una frase generica. Debe anticipar que problema juridico se analiza, que funcion cumple el tema y por que importa para el sistema juridico mexicano.}
+\end{abstractd}
+
+% TABLA DE CONTENIDOS - INDICE
+\templateIndex
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+% ==============================================================================
+% SECCION 1: INTRODUCCION
+% Apertura recomendada:
+% - Iniciar con una afirmacion fuerte.
+% - Traducir la consigna a problema juridico.
+% - Mostrar por que el tema importa.
+% - Cerrar anticipando el enfoque personal.
+%
+% Evitar:
+% - "En este trabajo hablare de..."
+% - "Es muy importante..."
+% - Definiciones de diccionario sin interpretacion.
+% ==============================================================================
+\section{Introducción}
+
+\pendiente{Abrir con una afirmacion directa. Ejemplo de estructura: "[Tema] no es solo [definicion basica]; funciona como [sistema/criterio/control] porque [consecuencia juridica]."}
+
+\pendiente{Explicar el problema: que tension, decision, conflicto o funcion juridica permite comprender el tema.}
+
+\pendiente{Cerrar la introduccion con una postura inicial. Ejemplo: "La posicion que guia este trabajo es que..." o "Desde esta perspectiva, el punto central no es repetir conceptos, sino identificar su funcion dentro del sistema juridico."}
+
+% ==============================================================================
+% SECCION 2: DESARROLLO / ANALISIS
+% Organizar segun el producto solicitado:
+% - Mapa conceptual: concepto central, conceptos principales, conceptos secundarios,
+%   relaciones y conclusion.
+% - Cuadro comparativo: categorias, criterios, autores, fundamentos, principios,
+%   caracteristicas, ejemplos, limites y valoracion critica.
+% - Glosario: termino, definicion operativa, fuente, ejemplo juridico y comentario.
+% - Estudio de caso: hechos, problema juridico, normas/principios, analisis,
+%   postura y solucion.
+%
+% Regla derivada de Actividad 3:
+% - Cuando la actividad pida glosario y analisis de caso, no basta con enumerar
+%   conceptos. Ubicar primero la funcion de los conceptos y despues explicar cada
+%   uno con definicion base + cita + comentario propio.
+% - En la tabla del caso, no repetir la definicion del glosario: aplicar el
+%   concepto a hechos, norma, criterio judicial, consecuencia o tension moral.
+%
+% Regla de parrafo:
+% Entrada: idea/concepto.
+% Proceso: como funciona.
+% Salida: por que importa o que consecuencia produce.
+% ==============================================================================
+\section{Desarrollo}
+
+\subsection{Contexto y problema}
+
+\pendiente{Presentar el contexto del tema. Ubicarlo en Filosofia del Derecho y en el sistema juridico.}
+
+\pendiente{Transformar la consigna en problema operativo: que hay que comparar, analizar, interpretar o resolver.}
+
+\subsection{Análisis conceptual}
+
+\pendiente{Explicar los conceptos centrales con fuentes. Cada definicion debe incluir funcion e implicacion. Citar en APA: \citep{ruizrodriguezFilosofiaDerecho2009}.}
+
+\pendiente{No acumular autores como lista. Relacionarlos por criterio: que problema responde cada autor o corriente, que aporta y que limite presenta.}
+
+\subsection{Aplicación jurídica}
+
+\pendiente{Aterrizar el tema al sistema juridico mexicano, derechos humanos, normas, instituciones, juicio de amparo, victimas, igualdad, poder estatal o interpretacion juridica, segun corresponda.}
+
+\pendiente{Incluir una lectura personal academica: que criterio parece mas util, que riesgo se observa, que costo institucional existe si se aplica mal.}
+
+% ==============================================================================
+% BLOQUE OPCIONAL: GLOSARIO Y ANALISIS DE CASO
+% Usar cuando la planeacion pida "Glosario", "conceptos juridicos fundamentales",
+% "analisis de caso" o una tabla concepto/aplicacion practica.
+%
+% Reglas derivadas de la retroalimentacion:
+% - Minimo de conceptos: respetar el numero de la planeacion.
+% - Orden alfabetico si se solicita.
+% - Cada concepto: definicion propia + cita APA + funcion juridica.
+% - No usar citas textuales en todos los conceptos si se piden palabras propias.
+% - Cita textual solo si es indispensable; incluir pagina.
+% - Antes del glosario, se puede incluir una ubicacion conceptual breve, no una
+%   explicacion larga de la consigna.
+% - En el caso: identificar al menos los conceptos pedidos y explicar como operan.
+% - Conclusion: actos juridicos identificados + relacion con moral/derecho +
+%   postura personal.
+% ==============================================================================
+%
+% \section{Glosario de conceptos juridicos fundamentales}
+%
+% \subsection*{Ubicacion conceptual previa}
+% \pendiente{Clasificar brevemente los conceptos por funcion: sistema juridico,
+% norma, sujetos, relacion juridica, hechos/actos, moral/derecho. No copiar la
+% instruccion de la planeacion.}
+%
+% \begin{description}
+% \item[\textbf{Concepto.}]
+% Definicion base en palabras propias \citep{claveFuente}. Funcion del concepto
+% dentro del sistema juridico. Ejemplo breve o consecuencia si se interpreta mal.
+%
+% \item[\textbf{Otro concepto.}]
+% Definicion base en palabras propias \citep[p.~00]{claveFuente}. Comentario
+% propio: que problema resuelve, que limite tiene y como se aplica.
+% \end{description}
+%
+% \section{Analisis de caso}
+%
+% \begingroup
+% \small
+% \setlength{\tabcolsep}{5pt}
+% \renewcommand{\arraystretch}{1.35}
+% \begin{longtable}{@{}p{0.24\linewidth}p{0.70\linewidth}@{}}
+% \caption{Conceptos juridicos aplicados al caso}\label{tab:analisis-caso}\\
+% \toprule
+% \textbf{Concepto} & \textbf{Aplicacion practica en el caso} \\
+% \midrule
+% \endfirsthead
+% \toprule
+% \textbf{Concepto} & \textbf{Aplicacion practica en el caso} \\
+% \midrule
+% \endhead
+% \bottomrule
+% \endlastfoot
+%
+% \textbf{Concepto juridico} &
+% Aplicar el concepto al hecho, norma, autoridad, derecho, deber, sancion,
+% validez, eficacia o tension moral del caso. No repetir la definicion. \\
+% \midrule
+%
+% \end{longtable}
+% \endgroup
+
+% ==============================================================================
+% BLOQUE OPCIONAL: CUADRO COMPARATIVO
+% Usar cuando la actividad pida cuadro comparativo.
+% Comentarios de rubrica:
+% - Categorias claras y jerarquizadas.
+% - No solo datos: incluir funcion, limites, aplicacion y valoracion critica.
+% - Al final del cuadro debe venir conclusion/postura personal si la planeacion lo pide.
+% ==============================================================================
+%
+% \clearpage
+% \pagestyle{empty}
+% \begin{landscape}
+% \begingroup
+% \scriptsize
+% \setlength{\tabcolsep}{4pt}
+% \renewcommand{\arraystretch}{1.35}
+% \begin{longtable}{@{}p{0.18\linewidth}p{0.39\linewidth}p{0.39\linewidth}@{}}
+% \caption{Cuadro comparativo entre [tema A] y [tema B]}\label{tab:cuadro-comparativo}\\
+% \toprule
+% \textbf{Criterio} & \textbf{Tema A} & \textbf{Tema B} \\
+% \midrule
+% \endfirsthead
+% \toprule
+% \textbf{Criterio} & \textbf{Tema A} & \textbf{Tema B} \\
+% \midrule
+% \endhead
+% \midrule
+% \multicolumn{3}{r}{Continua en la siguiente pagina} \\
+% \endfoot
+% \bottomrule
+% \endlastfoot
+%
+% Concepto &
+% [Definicion con funcion, no solo descripcion. Cita APA.] &
+% [Definicion con funcion, no solo descripcion. Cita APA.] \\
+% \midrule
+%
+% Fundamento &
+% [Base teorica, juridica o filosofica.] &
+% [Base teorica, juridica o filosofica.] \\
+% \midrule
+%
+% Principios &
+% [Principios ordenados por jerarquia.] &
+% [Principios ordenados por jerarquia.] \\
+% \midrule
+%
+% Aplicacion &
+% [Ejemplo real o normativo.] &
+% [Ejemplo real o normativo.] \\
+% \midrule
+%
+% Valoracion critica &
+% [Fortaleza, limite y costo si se aplica mal.] &
+% [Fortaleza, limite y costo si se aplica mal.] \\
+%
+% \end{longtable}
+% \endgroup
+% \end{landscape}
+% \pagestyle{fancy}
+
+% ==============================================================================
+% BLOQUE OPCIONAL: MAPA CONCEPTUAL O FIGURA
+% Usar si la actividad pide mapa conceptual, esquema o evidencia visual.
+% Si se usa herramienta externa, insertar captura y, si procede, enlace.
+%
+% Reglas por retroalimentacion:
+% - Si la planeacion pide mapa conceptual, el producto principal debe ser mapa,
+%   no un texto expositivo disfrazado.
+% - Incluir concepto central claramente identificado.
+% - Incluir conceptos principales y secundarios.
+% - Usar palabras de enlace en las flechas o conexiones.
+% - Mostrar jerarquia logica: no repetir conceptos en el mismo nivel sin relacion.
+% - Agregar conclusion breve solo si la planeacion lo pide o ayuda a cerrar.
+% ==============================================================================
+%
+% \clearpage
+% \begin{figure}[H]
+% 	\centering
+% 	\includegraphics[width=0.95\linewidth]{img/nombre-del-mapa.png}
+% 	\caption{Mapa conceptual de [tema]}
+% 	\label{fig:mapa-conceptual}
+% \end{figure}
+
+% ==============================================================================
+% SECCION 3: POSTURA / ANALISIS PERSONAL
+% Esta seccion evita la observacion de "informacion general" o "no se detecta
+% autenticidad". Debe contestar:
+% - Que posicion se sostiene.
+% - Por que esa posicion es razonable.
+% - Que evidencia/fuente la respalda.
+% - Como se aplica al sistema juridico mexicano.
+% ==============================================================================
+\section{Postura personal}
+
+\pendiente{Redactar una posicion clara. Ejemplo: "La posicion que sostengo es que..." Evitar "yo creo".}
+
+\pendiente{Justificar con causa-efecto-consecuencia: si el sistema juridico opera de cierta forma, entonces produce ciertos efectos; por eso el criterio elegido resulta mas relevante.}
+
+\pendiente{Aterrizar a la formacion como abogado: que permite decidir, interpretar, controlar o cuestionar en la practica profesional.}
+
+% ==============================================================================
+% SECCION 4: CONCLUSION
+% Debe cerrar con fuerza:
+% - Sintetizar el hallazgo.
+% - Reafirmar postura.
+% - Indicar aplicacion real.
+% - Evitar repetir la introduccion.
+%
+% Si la actividad pregunta "cual corriente tiene mayor relevancia y por que",
+% responder de forma directa, no dejarlo implicito.
+% ==============================================================================
+\section{Conclusión}
+
+\pendiente{Sintetizar el resultado: que se comprendio, que relacion se encontro y que criterio queda como mas relevante.}
+
+\pendiente{Reafirmar postura personal con aplicacion: "Para el sistema juridico mexicano, este enfoque resulta relevante porque..."}
+
+\pendiente{Cerrar con una frase de consecuencia: que cambia en la forma de interpretar, argumentar o aplicar el derecho.}
+
+% ==============================================================================
+% MANUAL OPERATIVO DE TECNICAS DIDACTICAS
+% Este archivo funciona como memoria para futuras sesiones y como guia de
+% elaboracion. Para una entrega final, comentar la siguiente linea si el manual no
+% debe aparecer dentro del PDF de la actividad.
+% ==============================================================================
+\input{Técnicas didácticas del aprendizaje}
+
+% ==============================================================================
+% REFERENCIAS
+% Reglas:
+% - Toda fuente citada en el texto debe estar en el .bib.
+% - Toda referencia en el .bib debe estar citada en el texto final; quitar
+%   fuentes que no se usaron.
+% - Toda cita debe tener clave correcta y coincidir con autor/anio visible.
+% - Usar fuentes de la planeacion y, si se complementa, que sean confiables.
+% - En el cuerpo: \citep{clave}; no usar solo URLs sueltas.
+% - Si se trabaja con PDF local, registrar datos bibliograficos completos:
+%   autor, anio, titulo, editorial/institucion y URL/DOI si existe.
+% - Si la fuente no tiene fecha, usar s. f. con cuidado y preferir confirmar los
+%   datos en la portada o ficha bibliografica del documento.
+% ==============================================================================
+\bibliography{FilosofiaDerechoAct2}
+
+% FIN DEL DOCUMENTO
+\end{document}
