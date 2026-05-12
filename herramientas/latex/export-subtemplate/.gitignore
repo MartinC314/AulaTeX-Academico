@@ -1,0 +1,29 @@
+# Cache
+.DS_Store
+*.pyc
+*._**
+__pycache__
+.idea/
+.vscode/
+
+# Scripts
+*.bat
+*.sh
+
+# Gráficos
+*.png
+
+# Subreleases
+.old_releases.zip
+dist/*.zip
+extlbx/res/upload.json
+
+# Logs
+*.log
+log.txt
+
+# Test file
+_test
+
+# Virtual environment
+venv/

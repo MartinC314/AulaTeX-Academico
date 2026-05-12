@@ -1,0 +1,114 @@
+% Template:     Poster LaTeX
+% Documento:    Funciones para insertar títulos
+% Versión:      1.3.1 (02/12/2025)
+% Codificación: UTF-8
+%
+% Autor: Pablo Pizarro R.
+%        pablo@ppizarror.com
+%
+% Manual template: [https://latex.ppizarror.com/poster]
+% Licencia MIT:    [https://opensource.org/licenses/MIT]
+
+% Parcha el formato de secciones al pasar desde una anum, vuelve a activar número
+% de la sección
+\pretocmd{\section}{%
+	\ifthenelse{\equal{\showsectioncaptioncode}{sec}}{% Reinicia código fuente
+		\addtocounter{templateListings}{\value{lstlisting}}%
+		\setcounter{lstlisting}{0}%
+	}{}%
+	\ifthenelse{\equal{\showsectioncaptioneqn}{sec}}{% Reinicia ecuaciones
+		\addtocounter{templateEquations}{\value{equation}}%
+		\setcounter{equation}{0}%
+	}{}%
+	\ifthenelse{\equal{\equationrestart}{sec}}{% Reinicia ecuaciones
+		\addtocounter{templateEquations}{\value{equation}}%
+		\setcounter{equation}{0}%
+	}{}%
+	\ifthenelse{\equal{\showsectioncaptionfig}{sec}}{% Reinicia figuras
+		\addtocounter{templateFigures}{\value{figure}}%
+		\setcounter{figure}{0}%
+	}{}%
+	\ifthenelse{\equal{\showsectioncaptiontab}{sec}}{% Reinicia tablas
+		\addtocounter{templateTables}{\value{table}}%
+		\setcounter{table}{0}%
+	}{}%
+}{}{}
+
+% Comienza nueva subsección, si está dentro de una sectionanum entonces no dibuja el
+% número de sección, si no entonces dibuja el número de forma normal
+\pretocmd{\subsection}{%
+	\ifthenelse{\equal{\showsectioncaptioncode}{ssec}}{% Reinicia código fuente
+		\addtocounter{templateListings}{\value{lstlisting}}%
+		\setcounter{lstlisting}{0}%
+	}{}%
+	\ifthenelse{\equal{\showsectioncaptioneqn}{ssec}}{% Reinicia ecuaciones
+		\addtocounter{templateEquations}{\value{equation}}%
+		\setcounter{equation}{0}%
+	}{}%
+	\ifthenelse{\equal{\equationrestart}{ssec}}{% Reinicia ecuaciones
+		\addtocounter{templateEquations}{\value{equation}}%
+		\setcounter{equation}{0}%
+	}{}%
+	\ifthenelse{\equal{\showsectioncaptionfig}{ssec}}{% Reinicia figuras
+		\addtocounter{templateFigures}{\value{figure}}%
+		\setcounter{figure}{0}%
+	}{}%
+	\ifthenelse{\equal{\showsectioncaptiontab}{ssec}}{% Reinicia tablas
+		\addtocounter{templateTables}{\value{table}}%
+		\setcounter{table}{0}%
+	}{}%
+}{}{}
+
+% Comienza nueva subsubsección, aquí hay varios casos:
+%	- si está dentro de una subsección sin número ignora la sección
+%	- si no, entonces puede estar dentro de una sección sin número o no, en ese caso
+%	  debe evaluar ambas posibilidades
+\pretocmd{\subsubsection}{%
+	\ifthenelse{\equal{\showsectioncaptioncode}{sssec}}{% Reinicia código fuente
+		\addtocounter{templateListings}{\value{lstlisting}}%
+		\setcounter{lstlisting}{0}%
+	}{}%
+	\ifthenelse{\equal{\showsectioncaptioneqn}{sssec}}{% Reinicia ecuaciones
+		\addtocounter{templateEquations}{\value{equation}}%
+		\setcounter{equation}{0}%
+	}{}%
+	\ifthenelse{\equal{\equationrestart}{sssec}}{% Reinicia ecuaciones
+		\addtocounter{templateEquations}{\value{equation}}%
+		\setcounter{equation}{0}%
+	}{}%
+	\ifthenelse{\equal{\showsectioncaptionfig}{sssec}}{% Reinicia figuras
+		\addtocounter{templateFigures}{\value{figure}}%
+		\setcounter{figure}{0}%
+	}{}%
+	\ifthenelse{\equal{\showsectioncaptiontab}{sssec}}{% Reinicia tablas
+		\addtocounter{templateTables}{\value{table}}%
+		\setcounter{table}{0}%
+	}{}%
+}{}{}
+
+% Entorno que permite desactivar los capítulos
+\makeatletter
+\newcommand*\coredisabledchapter{%
+	\@ifstar{\coredisabledchapterstar}{\@dblarg\coredisabledchapternostar}}
+\newcommand*\coredisabledchapterstar[1]{%
+	\noindent\textcolor{red}{Error (chapter):} \newline#1%
+	\throwwarning{La insercion de capitulos esta desactivada}%
+}
+\def\coredisabledchapternostar[#1]#2{%
+	\noindent\textcolor{red}{Error (chapter):} #1%
+	\throwwarning{La insercion de capitulos esta desactivada}%
+}
+\makeatother
+\let\oldchapter\chapter
+
+% Desactiva los capítulos
+\newcommand{\disablechapter}{%
+	\let\chapter\coredisabledchapter%
+	\global\def\GLOBALtitlechapterenabled {false}%
+}
+
+% Activa los capítulos
+\newcommand{\enablechapter}{%
+	\let\chapter\oldchapter%
+	\global\def\GLOBALtitlechapterenabled {true}%
+}

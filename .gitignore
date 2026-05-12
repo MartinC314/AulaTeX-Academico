@@ -61,6 +61,11 @@ salidas/auxiliares-antiguos/
 *_temp.tex
 TODO.txt
 
+# Bandeja local de revision: solo se versionan sus notas de control
+Revisión/*
+!Revisión/README.md
+!Revisión/INVENTARIO.md
+
 # VS Code: compartir recetas del proyecto, no estado local del editor
 .vscode/*
 !.vscode/settings.json

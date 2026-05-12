@@ -1,0 +1,135 @@
+% Template:     Poster LaTeX
+% Documento:    Archivo de ejemplo
+% Versión:      1.3.1 (02/12/2025)
+% Codificación: UTF-8
+%
+% Autor: Pablo Pizarro R.
+%        pablo@ppizarror.com
+%
+% Manual template: [https://latex.ppizarror.com/poster]
+% Licencia MIT:    [https://opensource.org/licenses/MIT]
+
+\begin{block}{Introducción}
+	Este template permite crear pósters usando las funciones y entornos de toda la suite \href{https://latex.ppizarror.com/}{Template-Latex}. Los entornos para insertar imágenes, códigos fuente, tablas y otros elementos son exactamente los mismos, lo que facilita el uso y la migración entre estilos.
+	
+	\insertimage{test-image}{width=0.75\colwidth}{Ejemplo de imagen.}
+\end{block}
+
+\begin{exampleblock}{}
+	Template-Poster, basado en el proyecto \href{https://github.com/anishathalye/gemini}{gemini}, ofrece la posibilidad de ser compilado en múltiples sistemas, como overleaf o texstudio sin requerir de complicados comandos por terminal ni de makefiles.
+	
+	\begin{itemize}
+		\item Fácil de usar \cite{template}
+		\item Múltiples comandos adicionales
+		\item Totalmente personalizable
+		\item Soporte instantáneo a bibliografía \cite{einstein}
+	\end{itemize}
+\end{exampleblock}
+
+\begin{block}{Insertar tablas}
+	Insertar tablas es muy fácil, para ello se deben usar exactamente los mismos comandos que en todo el resto de templates, dando soporte a celdas de colores, notas al pie, entre otros. También funcionan los plugins \cite{tablesgenerator, excel2latex}.
+	
+	% Tabla generada con el plugin Excel2Latex
+	\begin{table}[H]
+		\centering
+		\caption{Ejemplo de tablas.}
+		\begin{tabular}{ccc}
+			\hline
+			\textbf{Columna 1} & \textbf{Columna 2} & \textbf{Columna 3} \bigstrut\\
+			\hline
+			$\omega$ & $\nu$ & $\delta$ \bigstrut[t]\\
+			$\Phi$ & $\Theta$ & $\varSigma$ \\
+			$\xi$ & $\kappa$ & $\varpi$ \bigstrut[b] \\
+			\hline
+		\end{tabular}
+		\label{tab:tabla-1}
+	\end{table}
+
+	O bien, con notas:
+	
+	\begin{table}
+		\begin{threeparttable}
+			\centering
+			\caption{Ejemplo de tabla que usa múltiples columnas y tiene notas.}
+			\begin{tabular}{cccc}
+				\hline
+				\textbf{Columna 1} & \textbf{Columna 2} & \textbf{Columna 3} & \textbf{Columna 4} \bigstrut\\
+				\hline
+				1 & $\omega$ & $\nu$ & $\delta$ \tnote{a} \\
+				2 & $\Phi$ & $\Theta$ & $\varSigma$ \tnote{1} \\
+				3 & $\xi$ & $\kappa$ & $\varpi$ \\
+				\hline
+			\end{tabular}
+			\begin{tablenotes}
+				Esta tabla acepta comentarios y notas al margen.
+				\item[a] Este elemento tiene una descripción debajo de la tabla
+				\item[1] Más comentarios
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+
+	Para insertar ecuaciones, se puede de la forma tradicional o bien usando cualquier función del template \ref{eqn:identidad-imposible}:
+	
+	\insertequation[\label{eqn:identidad-imposible}]{\pow{a}{k}=\pow{b}{k}+\pow{c}{k} \quad \forall k>2}
+	\insertequationcaptioned[\label{eqn:formulasinsentido}]{\int_{a}^{b} f(x) \dd{x} = \fracnpartial{f(x)}{x}{\eta} \cdotp \textstyle \sum_{x=a}^{b} f(x)\cancelto{1+\frac{\epsilon}{k}}{\bigp{1+\Delta x}}}{Ecuación sin sentido \cite{einstein}.}
+\end{block}
+
+
+% CREA UNA NUEVA COLUMNA
+\separatorcolumn
+
+
+\begin{block}{Párrafos e imágenes múltiples}
+	El entorno \textbf{images} ofrece funciones para insertar imágenes múltiples:
+	
+	\begin{images}{Ejemplo de imagen múltiple.}
+		\addimage{test-image}{height=7cm}{Ciudad}
+		\addimageanum{test-image-wrap}{height=7cm}
+	\end{images}
+
+	Para párrafos, basta usar \textbf{multicol}:
+	
+	\begin{multicols}{2}
+		\lipsum[1]
+		
+		\begin{enumeratebf}[label=\alph*) ] % Fuente en negrita
+			\item Peras
+			\item Manzanas
+			\item Naranjas
+		\end{enumeratebf}
+		
+		\begin{enumerate}[label=\roman*) ]
+			\item Rojo
+			\item Café
+			\item Morado
+		\end{enumerate}
+		
+		\begin{enumerate}[label=\greek*) ]
+			\item Matemáticas
+			\item Lenguaje
+			\item Filosofía
+		\end{enumerate}
+	\end{multicols}
+
+	Para insertar códigos fuente el procedimiento es igual que el resto de templates:
+
+\begin{sourcecode}{matlab}{Ejemplo en Matlab.}
+% Se crea gráfico
+f = figure(1); hold on; movegui(f, 'center');
+xlabel('td/Tn'); ylabel('FAD=Umax/Uf0');
+
+for j = 1:length(BETA)
+	fad = ones(1, NDATOS); % Arreglo para el FAD
+	for i = 1:NDATOS
+		[t, u_t, ~, ~] = main(BETA(j), r(i), M, K, F0, 0);
+		fad(i) = max(abs(u_t)) / uf0;
+	end
+end
+\end{sourcecode}
+
+	\lipsum[11]
+\end{block}
+
+\begin{block}{Referencias}
+	\bibliography{library}
+\end{block}

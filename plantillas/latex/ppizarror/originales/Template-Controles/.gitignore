@@ -1,0 +1,40 @@
+# Archivos creados por TeXstudio
+*.aux
+*.lof
+*.lomycapequ
+*.lot
+*.out
+*.synctex.gz
+*.toc
+*.log
+*.lol
+*.bbl
+*.blg
+*._**
+
+# Releases
+.releases/*
+*.zip
+
+# Version antigua
+_old/
+
+# Windows
+desktop.ini
+
+# OSX
+__MACOSX/
+.DS_Store
+
+# Archivos PyCharm
+.idea/
+
+# Compilados python
+*.pyc
+
+# Compilados pdf
+control.pdf
+main.pdf
+
+# Otros
+.vscode

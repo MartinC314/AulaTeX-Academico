@@ -1,0 +1,136 @@
+% Template:     Tesis LaTeX
+% Documento:    Archivo principal
+% Versión:      3.4.8 (02/12/2025)
+
+% CREACIÓN DEL DOCUMENTO
+\documentclass[
+	spanish, % Idioma: spanish, english, etc.	
+	letterpaper, oneside
+]{book}
+
+% INFORMACIÓN DEL DOCUMENTO
+% DESIGN OF ROBUST CONTROL SYSTEMS
+\def\documenttitle {Diseño de sistemas de control robustos}
+\def\documentsubtitle {}
+\def\degreetitle {
+	% FROM CLASSICAL TO MODFRN PRACTICAI. APPROACHES
+	Del enfoque clásico al moderno en el diseño de sistemas de control
+	\bigbreak\vspace{0.3cm}
+	Un enfoque práctico - Marcel J. Sidi
+}
+
+\def\universityname {Universidad Autónoma de Nuevo León}
+\def\universityfaculty {Facultad de Ingeniería Mecánica y Eléctrica}
+\def\universitydepartment {Ingeniería Eléctrica}
+\def\universitydepartmentimage {departamentos/fime-logo-cel}
+\def\universitydepartmentimagecfg {height=3cm}
+\def\universitylocation {San Nicolás de los Garza, Nuevo León, México}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\documentauthor {Joanathan de la Cruz}
+\def\documentdate {\the\year}
+
+\def\portrait {
+	\begin{center}
+	\vspace{1.5cm} ~ \\
+	\MakeUppercase{\textbf{\documenttitle}} ~ \\
+	\vspace{1.5cm}
+	\MakeUppercase{\degreetitle} ~ \\
+	\vfill
+	\begin{tabular}{c}
+		\MakeUppercase{\textbf{\documentauthor}} \\ \\
+		\vspace{1.0cm} \\
+		% PROFESOR GUÍA: \\
+		% PROFESOR 1 \\
+		% \vspace{0.5cm} \\
+		% MIEMBROS DE LA COMISIÓN: \\
+		% PROFESOR 2 \\
+		% PROFESOR 3 \\
+		% \vspace{0.5cm} \\
+		% Este trabajo ha sido parcialmente financiado por: \\
+		% NOMBRE INSTITUCIÓN \\
+		\vspace{0.5cm} \\
+		\MakeUppercase{\universitylocation} \\
+		\MakeUppercase{\documentdate}
+	\end{tabular}
+	\end{center}
+}
+\def\abstracttable {
+	% \begin{tabular}{l}
+	% 	RESUMEN DE LA MEMORIA PARA OPTAR \\
+	% 	AL TÍTULO DE MAGÍSTER EN CIENCIAS \\
+	% 	DE LA INGENIERÍA \\
+	% 	POR: \MakeUppercase{\documentauthor} \\
+	% 	FECHA: \MakeUppercase{\documentdate} \\
+	% 	PROF. GUÍA: NOMBRE PROFESOR
+	% \end{tabular}
+}
+
+% IMPORTACIÓN DEL TEMPLATE
+\input{template}
+
+% INICIO DE LAS PÁGINAS
+\begin{document}
+
+% PORTADA
+\templatePortrait
+
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\templatePagecfg
+
+% RESUMEN O ABSTRACT
+\begin{abstractd}
+	Una de las principales motivaciones para escribir este libro es el creciente abandono de la teoría de diseño clásica frente al tremendo desarrollo de la teoría de control en los últimos veinte años. Con demasiada frecuencia, el estudiante de hoy omite los enfoques de diseño clásico y se enfoca directamente en teorías avanzadas modernas. Esto es desafortunado. Una comprensión profunda de la teoría fundamental clásica de retroalimentación es esencial para entender procedimientos de diseño avanzados como el control óptimo $H_{\infty}$. Para remediar esta deficiencia, nuestro enfoque es introducir progresivamente al lector en técnicas modernas de diseño de control a través de la presentación de teoría de control clásica más tradicional.
+
+	La segunda motivación para escribir el libro es de importancia práctica. Los trabajos avanzados en teoría de control se concentran en desarrollos teóricos y al leer tales libros, uno se fascina por la exposición del autor, las pruebas matemáticas, etc. Sin embargo, con demasiada frecuencia, según la experiencia de este autor con estudiantes, la esencia del material estudiado nunca se comprende completamente, a menos que el estudiante se enfrente a problemas ilustrativos y su solución. Entonces la aplicabilidad de los teoremas enunciados y comprobados se hace aparente. En Diseño de Sistemas de Control Robusto, se atribuye menor importancia a las pruebas de teoremas (estas se pueden encontrar en muchos libros excelentes sobre teoría de control). Por otro lado, cada tema recién tratado es seguido por un ejemplo que ilustra completamente los problemas de diseño, permitiendo al lector repetir la solución y adquirir la experiencia necesaria y comprensión de la técnica presentada.
+
+	El libro enfatiza los aspectos prácticos en el diseño de sistemas de control de retroalimentación en los que la planta puede ser no mínima, inestable e incluso altamente incierta. La anticipación temprana e interpretación correcta de estos efectos puede acortar considerablemente el proceso de diseño. La propiedad de incertidumbre de la planta está estrechamente relacionada con lo que hoy se llama `robustez'. Una tarea importante en control automático es diseñar sistemas controlados de retroalimentación bien comportados que permanezcan `robustos' y satisfagan desempeños cuantitativos formalmente definidos para toda la región de incertidumbre de la planta. Los enfoques de diseño `clásico' y `moderno' para plantas inciertas se explican lado a lado y se utilizan para resolver ejemplos de diseño similares. Esto permite al lector comparar resultados obtenidos por ambos enfoques. De aquí proviene el nombre del libro.
+
+	Los enfoques de diseño presentados en el texto enfatizan fuertemente el principio de `diseño a especificaciones cuantitativas'. Este enfoque elimina parcialmente la necesidad de múltiples iteraciones de diseño de prueba y error hasta lograr una solución satisfactoria.
+
+	El enfoque fundamental de diseño `clásico' presentado aquí, que ha sido desarrollado desde principios de los años setenta, es un área de investigación vinculada a necesidades industriales. También enfatiza la importancia de diseñar con capacidad robusta exactamente para la cantidad de incertidumbre de la planta, pero no más, ahorrando así en ancho de banda y costo de retroalimentación. La técnica de diseño se realiza en el dominio de la frecuencia, que es muy transparente en compensaciones entre diferentes requisitos del sistema. Afortunadamente, también existen buenas aproximaciones para traducir especificaciones del dominio del tiempo al dominio de la frecuencia.
+
+	Al lector se le instruye en cómo resolver eficientemente problemas de control mediante cálculos manuales. Aunque excelente software económico puede usarse hoy en día para propósitos de diseño de control, su uso eficiente depende fuertemente de experiencia práctica de diseño mediante cálculos manuales. Por ejemplo, la caja de herramientas QFT-Matlab se utiliza para resolver el problema de retroalimentación de plantas altamente inciertas en el dominio de la frecuencia. Sin embargo, este software nunca puede utilizarse eficientemente a menos que el diseñador tenga experiencia resolviendo tales problemas mediante cálculos manuales, dibujando manualmente límites permisibles en la función de transmisión de lazo abierto nominal en el plano complejo logarítmico, etc.
+
+	De especial interés son las limitaciones de ganancia-ancho de banda cuando la planta a ser controlada no es de fase mínima, sino que contiene polos inestables y/o ceros en el semiplano derecho. Es importante que los estudiantes se familiaricen con estas limitaciones teóricas de ancho de banda antes de intentar un diseño detallado.
+
+	La teoría de espacio de estados y técnicas de diseño que surgieron a finales de los años cincuenta se formulan en el dominio del tiempo, pero también están estrechamente vinculadas al dominio de la frecuencia y así nos permiten mezclar requisitos y técnicas de diseño en ambos dominios. Técnicas de diseño como el LQR (Regulador Cuadrático Lineal) y LQG (Gaussiano Cuadrático Lineal) han estado en uso común durante mucho tiempo. Se presentan en el texto con algunos ejemplos ilustrativos completamente resueltos. La deficiencia de estas celebradas técnicas de diseño radica en su incapacidad para lidiar con la incertidumbre de plantas restringidas. Esta deficiencia motivó el uso del paradigma de optimización de norma $H_{\infty}$ para resolver el problema de control de plantas inciertas. El enfoque de control $H_{\infty}$, que emergió a principios de los años ochenta, se está difundiendo rápidamente hoy en día entre la comunidad de control. Las características fundamentales de estos nuevos enfoques de diseño también se tratan en el libro. Problemas de control básicos resueltos con técnicas clásicas en el dominio de la frecuencia también se resuelven con técnicas de diseño de optimización de norma $H_{\infty}$. Nuestro deseo es darle al lector la oportunidad de comprender las características comunes de ambas filosofías de diseño, así como apreciar la superioridad, si la hay, de cada enfoque con respecto a este detalle u otro. En la opinión del autor, es lógico ver todas estas técnicas de diseño como complementarias. Una solución correcta y apropiada de un sistema de control de retroalimentación con el enfoque de diseño de control $H_{\infty}$ requiere conocimiento de teoría de control clásica en el dominio de la frecuencia. Para ilustrar este punto, el conocimiento de cómo traducir requisitos técnicos del dominio del tiempo al dominio de la frecuencia y cómo elegir óptimamente las funciones de transferencia ponderadas es de suma importancia si el enfoque de diseño de control $H_{\infty}$ es para producir la mejor solución `práctica'. Además, las deficiencias en una técnica pueden compensarse con características superiores de la otra. Estos puntos importantes se subrayan en el libro mediante los problemas presentados y sus soluciones detalladas. Por otra parte, se intenta en el texto usar una técnica de diseño combinada QFT/$H_{\infty}$ para sistemas de retroalimentación altamente inciertos de dos grados de libertad, tanto SISO como MIMO.
+
+	El libro es el resultado de mi experiencia docente en la Universidad de Tel-Aviv, así como de mi experiencia práctica como ingeniero de control de desarrollo en Israel Aircraft Industries Ltd., donde durante más de 25 años diseñé sistemas de control de vuelo de retroalimentación para aviones, misiles y naves espaciales.
+
+	Un requisito previo para leer este libro es un primer curso en control automático, de tiempo continuo y de datos muestreados, e introducción a sistemas lineales y álgebra lineal. El libro está destinado a estudiantes avanzados de pregrado, estudiantes de posgrado, así como para ingenieros en ejercicio.
+
+	La mayoría de los ejemplos fueron resueltos por software producido por MATHWORKS Inc., incluyendo programas MATLAB relacionados con control, tales como Control System, Robust Control, QFT, $\mu$-Analysis and Synthesis y LMI Control Toolboxes.
+\end{abstractd}
+
+% DEDICATORIA
+\begin{dedicatory}
+	% A study of the practical aspects in designing feedback control systems in which the plant may be non-minimum phase, unstable and also highly uncertain. Classical (QFT) and modern (Hoo) design approaches are explained side-by-side and are used to solve design examples.
+	Un estudio de los aspectos prácticos en el diseño de sistemas de control en los que la planta puede ser no mínima, inestable y también altamente incierta. Los enfoques de diseño clásico (QFT) y moderno (H∞) se explican lado a lado y se utilizan para resolver ejemplos de diseño.
+	% Una frase de dedicatoria, \\
+	% pueden ser dos líneas. \\
+	% ~ \\
+	% \textbf{Saludos
+
+	\textbf{Sapere aude}
+\end{dedicatory}
+
+% AGRADECIMIENTOS
+% \begin{acknowledgments}
+% 	\lipsum[1]
+% \end{acknowledgments}
+
+% TABLA DE CONTENIDOS - ÍNDICE
+\templateIndex
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+\input{Capitulo1_Introduccion.tex}
+\input{Capitulo2_PropiedadesBasicasYDisenoSistemasRealimentacionSISO.tex}
+\input{example} % Ejemplo, se puede borrar
+
+% FIN DEL DOCUMENTO
+\end{document}

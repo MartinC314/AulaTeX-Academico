@@ -1,0 +1,926 @@
+
+\chapter{Propiedades básicas y diseño de sistemas de retroalimentación SISO}
+
+Los \textbf{Capítulos 2 a 5} del libro se concentran en sistemas de retroalimentación \textbf{SISO}. El autor parte de la idea de que muchas propiedades fundamentales de la retroalimentación se comprenden mejor en este contexto, y que después pueden extenderse al caso \textbf{MIMO}. En este capítulo se fijan las definiciones básicas, se presenta la formulación matemática de la retroalimentación, se introducen las herramientas clásicas de diseño en frecuencia (\textbf{Nyquist, Bode y Nichols}) y, finalmente, se conecta ese enfoque con la formulación moderna basada en \textbf{optimización con norma \(H_\infty\)}.
+
+
+\section{Definiciones introductorias}
+La estructura de retroalimentación que se utilizará a lo largo del capítulo es una forma canónica de \textbf{dos grados de libertad (TDOF)} con retroalimentación unitaria. En comparación con la estructura general del capítulo anterior:
+
+\begin{itemize}
+  \item el bloque \(H(s)\) se omite porque, desde el punto de vista de las propiedades de retroalimentación, puede incorporarse a \(G(s)\);
+  \item el filtro de precomando \(F_c(s)\) se omite por simplicidad, ya que no altera las propiedades fundamentales del lazo cerrado;
+  \item las subplantas en cascada \(P_1\) y \(P_2\) se agrupan en una sola planta \(P(s)\).
+\end{itemize}
+
+En esta estructura, la entrada de mando \(r(t)\) y la salida \(y(t)\) pueden medirse de manera independiente. Bajo esa hipótesis, dos compensadores de diseño —\(G(s)\) y \(F(s)\)— permiten actuar sobre dos especificaciones distintas del sistema.
+
+\insertimage[\label{img:estructura-canonica-retroalimentacion}]{2024_06_29_804c621bf2d98037ffbeg-021_337_1135_202_763}{width=0.75\textwidth}{Estructura canónica de retroalimentación unitaria de dos grados de libertad.}
+
+Las funciones de transferencia relevantes para esta estructura son:
+
+\[
+T(s)\stackrel{\text{def}}{=}\frac{y(s)}{r(s)}=F(s)\frac{L(s)}{1+L(s)}, 
+\qquad 
+L(s)\stackrel{\text{def}}{=}G(s)P(s) \tag{2.1.1}
+\]
+
+\[
+T_{d1}(s)\stackrel{\text{def}}{=}\frac{y(s)}{d_1(s)}=\frac{P(s)}{1+L(s)} \tag{2.1.2}
+\]
+
+\[
+T_d(s)\stackrel{\text{def}}{=}\frac{y(s)}{d(s)}=\frac{1}{1+L(s)}\equiv S(s) \tag{2.1.3}
+\]
+
+\[
+T_{un}(s)\stackrel{\text{def}}{=}\frac{u(s)}{n(s)}
+=\frac{-G(s)}{1+L(s)}
+=-G(s)S(s)
+=-\frac{1}{P(s)}\frac{L(s)}{1+L(s)} \tag{2.1.4}
+\]
+
+\[
+T_1(s)\stackrel{\text{def}}{=}\frac{y(s)}{r_1(s)}=\frac{L(s)}{1+L(s)}\equiv T_{uf}(s) \tag{2.1.5}
+\]
+
+\[
+T_{ud}(s)\stackrel{\text{def}}{=}\frac{u(s)}{d(s)}=\frac{-G(s)}{1+L(s)} \tag{2.1.6}
+\]
+
+\[
+T_{yn}(s)=\frac{y(s)}{n(s)}=-\frac{L(s)}{1+L(s)} \tag{2.1.7}
+\]
+
+\subsection{Significado físico de las funciones de transferencia}
+\begin{itemize}
+  \item \textbf{\(T(s)\)} es la función de seguimiento entrada-salida en una estructura \textbf{TDOF}.
+  \item \textbf{\(T_1(s)\)} es la función de seguimiento en una estructura \textbf{ODOF} (un solo grado de libertad), es decir, cuando no existe o no puede implementarse el prefiltro \(F(s)\).
+  \item \textbf{\(T_d(s)\)} describe cómo una perturbación aplicada a la salida de la planta afecta a la salida del sistema.
+  \item \textbf{\(T_{d1}(s)\)} hace lo mismo para una perturbación aplicada a la entrada de la planta.
+  \item \textbf{\(S(s)\)} es la \textbf{función de sensibilidad} y es crucial porque también mide la sensibilidad del sistema frente a incertidumbre de la planta.
+  \item \textbf{\(T_{un}(s)\)} cuantifica la amplificación del ruido del sensor hacia la entrada de la planta.
+  \item \textbf{\(T_{yn}(s)\)} describe cuánto del ruido del sensor llega a la salida del sistema.
+\end{itemize}
+
+Una identidad fundamental es:
+
+\[
+T_1(s)+S(s)=1 \tag{2.1.8}
+\]
+
+Esta ecuación significa que, en un sistema \textbf{ODOF}, las dos funciones más importantes —la complementaria \(T_1(s)\) y la sensibilidad \(S(s)\)— \textbf{no pueden imponerse de manera independiente}.
+
+También es útil escribir la salida y la entrada de la planta en términos de todas las señales externas:
+
+\[
+y(s)=T(s)r(s)+S(s)d(s)+P(s)S(s)d_1(s)-T_1(s)n(s) \tag{2.1.9}
+\]
+
+$$
+u(s)=F(s)G(s)S(s)r(s)-G(s)S(s)d(s)+S(s)d_1(s)-G(s)S(s)n(s)
+$$
+
+De aquí se obtienen varias conclusiones de diseño:
+
+\begin{enumerate}
+  \item Para atenuar perturbaciones \(d\) y \(d_1\), se necesita que \(|S(j\omega)|\) sea pequeño en los rangos de frecuencia donde estas perturbaciones son significativas.
+  \item Para evitar que el ruido del sensor domine la salida, se requiere que \(|T_1(j\omega)|\) sea pequeño en la banda donde el ruido está concentrado.
+  \item Para mantener bajo el esfuerzo de control y evitar saturación, \(|G(j\omega)|\) debe ser pequeño, sobre todo a altas frecuencias.
+\end{enumerate}
+
+La consecuencia inmediata es que el diseño de \(L(s)=G(s)P(s)\) exige \textbf{compromisos}: conviene una gran magnitud de \(|L(j\omega)|\) en frecuencias bajas e intermedias, pero una magnitud pequeña en frecuencias altas, donde domina el ruido.
+
+
+
+\section{2.2 Definición matemática de la retroalimentación}
+
+\subsection{2.2.1 El origen de la teoría de la retroalimentación}
+La teoría de la retroalimentación surge históricamente en el diseño de \textbf{amplificadores con realimentación}, con trabajos de \textbf{Nyquist, Black y Bode}. El objetivo original era reducir la sensibilidad de la función de transferencia frente a incertidumbres de hardware.
+
+Para ilustrarlo, el autor considera \(G(s)=k\), y retoma la definición de sensibilidad de Bode:
+
+$$
+S_k^T(s)=\frac{\partial \ln T}{\partial \ln k}
+=\frac{\partial T/T}{\partial k/k}
+$$
+
+Aplicada a la estructura de la Figura 2.1.1, se obtiene:
+
+$$
+S_k^T(s)=\frac{1}{1+kP(s)}=\frac{1}{1+L(s)}
+$$
+
+es decir,
+
+$$
+S_k^T(s)=S(s)
+$$
+
+La interpretación es muy importante: la incertidumbre relativa de la transferencia cerrada \(T(s)\) respecto a la incertidumbre relativa del elemento directo queda reducida por el factor \(1+L(s)\). En otras palabras, la retroalimentación reduce sensibilidad a variaciones paramétricas.
+
+\subsection{2.2.2 Razón de retorno, diferencia de retorno e invariancia de su numerador}
+Un sistema real puede contener varios lazos locales de retroalimentación. Sin embargo, al final puede llevarse a una forma canónica equivalente. Para analizar estructuras de múltiples lazos, el autor usa \textbf{grafos de flujo de señal} y la idea de \textbf{razón de retorno}.
+
+La idea operativa es la siguiente:
+
+\begin{itemize}
+  \item se anulan las entradas externas;
+  \item se “abre” el punto del sistema que se quiere usar como referencia;
+  \item se inyecta una señal de prueba en el camino directo;
+  \item se calcula la señal que regresa por el camino de retorno.
+\end{itemize}
+
+Con ello se define la \textbf{razón de retorno} y, a partir de ella, la \textbf{diferencia de retorno}. El resultado esencial es que, aunque la forma concreta de la diferencia de retorno dependa del elemento elegido como referencia, \textbf{el numerador de esa diferencia es siempre el mismo}: coincide con el \textbf{polinomio característico del sistema}.
+
+En notación compacta, si \(\Delta\) es el determinante del grafo y \(\Delta^k\) el determinante asociado al elemento de referencia \(k\), entonces:
+
+\[
+F_k=\frac{\Delta}{\Delta^k} \tag{2.2.6}
+\]
+
+y el numerador de \(\Delta\) no depende del elemento escogido. Esa invariancia explica por qué los polos de lazo cerrado del sistema son independientes del punto desde el que se “mire” el lazo.
+
+\insertimage[\label{img:grafo-flujo-senal}]{2024_06_29_804c621bf2d98037ffbeg-023_804_1124_194_772}{width=0.45\textwidth}{Representación mediante grafo de flujo de señal de una estructura con múltiples lazos.}
+
+El ejemplo del libro con los elementos \(k_1\) y \(k_2\) muestra que las diferencias de retorno calculadas respecto a ambos elementos poseen \textbf{denominadores distintos}, pero \textbf{el mismo numerador}:
+
+$$
+D(s)=Js^2+k_2s+k_1
+$$
+
+\insertimage[\label{img:diferencia-retorno-k1-k2}]{2024_06_29_804c621bf2d98037ffbeg-023_330_1102_1612_2217}{width=0.45\textwidth}{Cálculo de la diferencia de retorno tomando como referencia \(k_1\) y \(k_2\).}
+
+En la estructura canónica de la Figura 2.1.1, si el lazo se abre en la entrada de \(G(s)\), la razón de retorno es \(-L(s)\) y la diferencia de retorno es:
+
+$$
+F(s)=1+L(s)
+$$
+
+Este mismo término aparece en el denominador de todas las funciones de transferencia del sistema.
+
+\subsection{2.2.3 Estabilidad asintótica e interna}
+
+\subsubsection{Estabilidad asintótica}
+En sistemas LTI racionales, una función de transferencia es \textbf{asintóticamente estable} si y solo si \textbf{todos sus polos están en el semiplano izquierdo abierto} del plano \(s\). Polos sobre el eje imaginario se consideran inestables en este contexto.
+
+Eso implica dos cosas:
+
+\begin{itemize}
+  \item toda entrada acotada produce una salida acotada;
+  \item la parte transitoria decae exponencialmente con el tiempo.
+\end{itemize}
+
+\subsubsection{Estabilidad interna}
+La \textbf{estabilidad interna} es más exigente. El sistema es internamente estable si, para toda señal externa acotada \((r, d_1, d, n)\), también son acotadas todas las variables internas relevantes \((e, u)\) y la salida \(y\).
+
+Equivale a exigir que \textbf{todas} las funciones de transferencia desde entradas externas hacia variables internas y de salida sean estables.
+
+El resultado central del capítulo es:
+
+\textbf{Teorema 2.2.} El sistema de retroalimentación es internamente estable si y solo si:
+
+a. \(1+L(s)\) no tiene ceros en el semiplano derecho;\\
+b. al formar \(L(s)=P(s)G(s)\), \textbf{no hay cancelaciones polo-cero en el semiplano derecho cerrado}.
+
+Esto es crucial. No basta con que el numerador de \(1+L(s)\) sea estable. Puede ocurrir que la transferencia de mando \(y/r\) resulte estable, pero alguna transferencia interna como \(y/d_1\) o \(u/n\) siga siendo inestable debido a una cancelación inadmisible de un polo o cero inestable de la planta. Por eso, los polos y ceros inestables de la planta \textbf{deben permanecer explícitamente en \(L(s)\)} y no ser “cancelados” por el compensador.
+
+
+
+\section{2.3 Definición de algunos problemas de control a partir de la ecuación básica de retroalimentación}
+Todas las funciones de transferencia de interés comparten el mismo término \(1+L(s)\). En consecuencia, una vez que se diseña \(G(s)\), queda fijado el comportamiento de \(S(s)\), \(T_1(s)\), \(T_d(s)\), \(T_{d1}(s)\), \(T_{un}(s)\), etc. Solo \(T(s)\) conserva un grado adicional de manipulación mediante el prefiltro \(F(s)\).
+
+El autor enfatiza que, en control clásico, el diseño suele realizarse en el \textbf{dominio de la frecuencia}. Allí se usan principalmente:
+
+\begin{itemize}
+  \item el criterio de \textbf{Nyquist};
+  \item los diagramas de \textbf{Bode};
+  \item la \textbf{carta de Nichols}.
+\end{itemize}
+
+\subsection{2.3.1 Consideraciones de estabilidad asintótica y relativa en el plano \(s\) y en el dominio \(\omega\)}
+
+\subsubsection{El criterio de estabilidad de Nyquist}
+Sea \(\Gamma_N\) el contorno de Nyquist que encierra todo el semiplano derecho, y sea \(\Gamma_L\) su imagen por la función \(L(s)\). El criterio de Nyquist establece que si la imagen de ese contorno rodea el punto crítico \([-1+j0]\) un número \(N\) de veces, y \(L(s)\) tiene \(p\) polos en el semiplano derecho, entonces el número de ceros \(z\) de \(1+L(s)\) en el semiplano derecho es:
+
+\[
+z=N+p \tag{2.3.1}
+\]
+
+La estabilidad de lazo cerrado se logra si y solo si \(z=0\), es decir, si:
+
+$$
+N=-p
+$$
+
+Dicho de otro modo: si \(L(s)\) tiene \(p\) polos inestables, el contorno de Nyquist debe rodear el punto crítico \([-1+j0]\) exactamente \(p\) veces en el sentido adecuado para compensarlos.
+
+\insertimage[\label{img:criterio-nyquist-punto-critico}]{2024_06_29_804c621bf2d98037ffbeg-026_580_1125_94_808}{width=0.45\textwidth}{Interpretación gráfica del criterio de Nyquist y del punto crítico de estabilidad.}
+
+\subsubsection{Estabilidad relativa: márgenes de ganancia y fase}
+La \textbf{estabilidad relativa} mide qué tan cerca está el lazo abierto de la inestabilidad. Los indicadores clásicos son:
+
+\begin{itemize}
+  \item \textbf{Margen de fase (PM)}: cuánto retraso de fase adicional puede tolerarse en la frecuencia de cruce sin perder estabilidad.
+  \item \textbf{Margen de ganancia (GM)}: cuánto puede aumentarse la ganancia en la frecuencia donde la fase vale \(-180^\circ\) antes de provocar inestabilidad.
+\end{itemize}
+
+El punto \([-1+j0]\) se denomina \textbf{punto crítico de estabilidad}.
+
+\subsection{2.3.2 Diseño en el dominio de la frecuencia con técnicas de Bode}
+Antes del diseño con Bode, el autor recuerda dos nociones básicas:
+
+\begin{itemize}
+  \item la \textbf{magnitud logarítmica};
+  \item la medición en \textbf{decibelios}:
+\end{itemize}
+
+$$
+20\log_{10}|P(j\omega)|
+$$
+
+Un diagrama de Bode representa, en escala semilogarítmica:
+
+\begin{itemize}
+  \item la magnitud en dB contra \(\log \omega\);
+  \item la fase contra \(\log \omega\).
+\end{itemize}
+
+La gran ventaja es que el comportamiento de una transferencia racional puede obtenerse sumando y restando aritméticamente las contribuciones de polos y ceros. Así, una vez conocido \(P(j\omega)\), el diseñador elige \(G(j\omega)\) para obtener un \(L(j\omega)\) que cumpla con:
+
+\begin{itemize}
+  \item coeficientes de error en estado estacionario;
+  \item frecuencia de cruce \(\omega_{co}\);
+  \item márgenes de fase y ganancia adecuados;
+  \item estabilidad del sistema en lazo cerrado.
+\end{itemize}
+
+\insertimage[\label{img:bode-margenes-frecuencias}]{2024_06_29_804c621bf2d98037ffbeg-027_960_1000_136_817}{width=0.45\textwidth}{Definición de \(\omega_{co}\), \(\omega_{GM}\), margen de fase y margen de ganancia en el diagrama de Bode.}
+
+\subsection{2.3.3 La carta de Nichols y sus características especiales}
+La desventaja principal del diseño solo con Bode es que no muestra de forma explícita el comportamiento de la transferencia cerrada. La \textbf{carta de Nichols} sí lo hace.
+
+La transferencia unitaria cerrada es:
+
+\[
+T_1(s)=\frac{L(s)}{1+L(s)} \tag{2.3.3}
+\]
+
+En la carta de Nichols se dibuja \(L(j\omega)\) usando:
+
+\begin{itemize}
+  \item magnitud de lazo abierto en dB sobre el eje vertical;
+  \item fase de lazo abierto en grados sobre el eje horizontal.
+\end{itemize}
+
+Sobre ese plano se superponen curvas de nivel de magnitud constante de \(|T_1(j\omega)|\). Esto permite ver directamente:
+
+\begin{itemize}
+  \item el valor pico de \(|T_1|\);
+  \item los márgenes de estabilidad relativa;
+  \item el compromiso entre ancho de banda y sobreoscilación.
+\end{itemize}
+
+\insertimage[\label{img:carta-nichols}]{2024_06_29_804c621bf2d98037ffbeg-027_910_1148_996_2176}{width=0.45\textwidth}{Carta de Nichols con contornos de ganancia constante de \(|L/(1+L)|\).}
+
+\subsubsection{Ubicación del punto crítico y lectura de márgenes}
+En la carta de Nichols, el punto crítico de Nyquist aparece en:
+
+$$
+[0\ \text{dB},\ -180^\circ]
+$$
+
+y desde ahí se identifican de forma inmediata los márgenes de fase y de ganancia.
+
+\subsubsection{Carta de Nichols invertida}
+Como
+
+$$
+S(j\omega)=\frac{1}{1+L(j\omega)}
+$$
+
+y si se define \(l(s)=1/L(s)\), entonces:
+
+\[
+S(j\omega)=\frac{l(j\omega)}{1+l(j\omega)} \tag{2.3.4}
+\]
+
+Esto lleva a la \textbf{carta de Nichols invertida}, cuyas curvas corresponden a niveles constantes de \(|S(j\omega)|\). Geométricamente, esas curvas se obtienen al rotar las curvas de \(|T_1|\) alrededor del punto crítico. Esta herramienta es muy útil para estudiar rechazo de perturbaciones y sensibilidad.
+
+\insertimage[\label{img:carta-nichols-invertida}]{2024_06_29_804c621bf2d98037ffbeg-028_910_1147_170_2212}{width=0.45\textwidth}{Carta de Nichols invertida, con contornos de \(|S|=|1/(1+L)|\), superpuesta sobre la carta de Nichols estándar.}
+
+\subsubsection{¿Por qué Bode y Nichols son superiores al diseño directo en el plano complejo?}
+El autor remarca dos razones prácticas:
+
+\begin{enumerate}
+  \item En Bode y Nichols, magnitudes y fases se \textbf{suman} aritméticamente; en el plano complejo, el moldeado de \(L(j\omega)\) es mucho menos intuitivo.
+  \item A altas frecuencias, donde \(|L(j\omega)|\) es muy pequeño, la escala logarítmica de Bode/Nichols permite trabajar con más claridad y precisión.
+\end{enumerate}
+
+\subsection{2.3.4 Distinción entre sistemas ODOF y TDOF}
+La diferencia esencial es la existencia o no del prefiltro \(F(s)\).
+
+\begin{itemize}
+  \item En un sistema \textbf{TDOF}, \(G(s)\) puede usarse para resolver robustez, rechazo de perturbaciones y márgenes de estabilidad, mientras que \(F(s)\) se utiliza para ajustar la transferencia entrada-salida \(T(s)\) según la especificación de seguimiento.
+  \item En un sistema \textbf{ODOF}, solo existe \(G(s)\). En ese caso, el diseño debe comprometer simultáneamente propiedades de \(L(s)\) y de \(T(s)\), porque no se pueden especificar por separado.
+\end{itemize}
+
+El autor pone dos ejemplos conceptuales:
+
+\begin{itemize}
+  \item un sistema de control de vuelo de una aeronave, donde \(F(s)\) sí puede implementarse físicamente;
+  \item un sistema de seguimiento por radar, donde solo el error es medible y por tanto no se puede introducir un prefiltro físico independiente.
+\end{itemize}
+
+El capítulo subraya una consecuencia importante: en un sistema TDOF se puede usar \(F(s)\) para cancelar dinámicas subamortiguadas de \(T_1(s)\) y obtener la respuesta temporal deseada sin alterar directamente la robustez del lazo principal. En un sistema ODOF esa separación no es posible.
+
+\subsection{2.3.5 Diseño en frecuencia de sistemas ODOF}
+El diseño comienza moldeando \(L(j\omega)\). Los parámetros más usados son:
+
+\begin{itemize}
+  \item \textbf{frecuencia de cruce} \(\omega_{co}\), donde \(|L(j\omega)|=1\);
+  \item \textbf{frecuencia de margen de ganancia} \(\omega_{GM}\), donde \(\arg L(j\omega)=-180^\circ\);
+  \item ancho de banda de lazo cerrado;
+  \item rechazo de perturbaciones;
+  \item sensibilidad al ruido.
+\end{itemize}
+
+\subsubsection{Frecuencia de cruce y estabilidad condicional}
+La frecuencia de cruce está relacionada con la rapidez del sistema, aunque no es igual al ancho de banda de lazo cerrado. Si el lazo tiene comportamientos más complejos —por ejemplo, varios cruces o polos inestables—, los diagramas de Bode por sí solos no bastan, y la estabilidad debe revisarse con Nyquist.
+
+\subsubsection{Desempeño de lazo cerrado y ancho de banda \(\omega_{-3dB}\)}
+El ancho de banda de \(|T_1(j\omega)|\) surge como resultado del diseño del lazo abierto; en un sistema ODOF no suele especificarse de manera independiente. Está fuertemente relacionado con \(\omega_{co}\), pero no coincide exactamente con él.
+
+\subsubsection{Rechazo de perturbaciones}
+Para obtener buen rechazo, es deseable que \(|L(j\omega)|\) sea grande en el rango donde se concentra la perturbación. Eso hace pequeño a \(|S(j\omega)|\).
+
+\subsubsection{Loopshaping}
+El moldeado de \(L(j\omega)\) se realiza con redes:
+
+\begin{itemize}
+  \item \textbf{lead-lag},
+  \item \textbf{lag-lead},
+  \item combinaciones más complejas,
+  \item y polos lejanos (“far-off poles”) para reducir ruido a altas frecuencias.
+\end{itemize}
+
+Los ejemplos del libro ilustran cómo usar estas redes para cumplir simultáneamente con especificaciones como:
+
+\begin{itemize}
+  \item coeficiente de error de velocidad \(K_v\),
+  \item margen de fase,
+  \item frecuencia de cruce deseada,
+  \item y limitación del ruido.
+\end{itemize}
+
+Los mensajes principales de los ejemplos son:
+
+\begin{itemize}
+  \item una red \textbf{lead-lag} puede aumentar fase cerca de \(\omega_{co}\) y mejorar los márgenes;
+  \item una red \textbf{lag-lead} puede ajustar la magnitud sin sacrificar demasiado la fase;
+  \item un \textbf{polo lejano adicional} ayuda a atenuar la amplificación del ruido del sensor.
+\end{itemize}
+
+\begin{images}[\label{img:loopshaping-bode-nichols}]{Ejemplos de loopshaping en Bode y Nichols mediante redes lead-lag y lag-lead.}
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-032_384_1040_183_2248}{width=0.45\textwidth}{2.3.8}
+  \imagesnewline
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-032_362_1014_605_2243}{width=0.45\textwidth}{2.3.9}
+  \imagesnewline
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-032_835_1026_1065_2237}{width=0.45\textwidth}{2.3.10}
+  \imagesnewline
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-033_784_1024_198_2237}{width=0.45\textwidth}{2.3.11a}
+  \imagesnewline
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-033_812_1036_1103_2214}{width=0.45\textwidth}{2.3.11b}
+\end{images}
+
+\subsubsection{Limitaciones de los sistemas ODOF}
+En los sistemas de un solo grado de libertad, la transferencia de seguimiento y las propiedades del lazo no pueden fijarse en forma independiente. El ancho de banda de \(|T_1|\) y su forma son consecuencia indirecta del diseño del lazo.
+
+\subsection{2.3.6 Diseño en frecuencia de sistemas TDOF}
+Si el prefiltro \(F(s)\) puede implementarse, entonces la transferencia total:
+
+$$
+T(s)=T_1(s)F(s)
+$$
+
+puede moldearse casi a voluntad una vez que \(T_1(s)\) ya fue obtenido mediante el diseño de \(L(s)\). Eso permite satisfacer exactamente una especificación adicional de seguimiento sin arruinar las propiedades del lazo principal.
+
+En el ejemplo 2.3.4, el libro muestra cómo, partiendo de un lazo ya diseñado, se agrega un prefiltro para obtener un ancho de banda cerrado deseado de aproximadamente:
+
+$$
+\omega_{-3dB}\approx 1\ \text{rad/s}
+$$
+
+La idea conceptual es clara: en TDOF, el diseño del controlador \(G(s)\) y el del prefiltro \(F(s)\) son procesos \textbf{separables}.
+
+
+
+\section{2.4 Compromisos de diseño en sistemas de retroalimentación}
+La necesidad de compromisos aparece porque el diseñador busca simultáneamente:
+
+\begin{itemize}
+  \item buen seguimiento,
+  \item fuerte rechazo de perturbaciones,
+  \item baja sensibilidad a incertidumbre,
+  \item poco ruido amplificado,
+  \item y esfuerzo de control limitado.
+\end{itemize}
+
+Todo eso no puede maximizarse al mismo tiempo.
+
+\subsection{2.4.1 El problema de amplificación del ruido del sensor}
+La transferencia del ruido del sensor a la entrada de la planta es:
+
+$$
+|T_{un}(j\omega)|=\left|\frac{G(j\omega)}{1+L(j\omega)}\right|
+=\left|\frac{1}{P(j\omega)}\frac{L(j\omega)}{1+L(j\omega)}\right|
+$$
+
+El autor divide el espectro de frecuencias en tres zonas.
+
+\subsubsection{a) Frecuencias bajas: \(|L(j\omega)|\gg 1\)}
+\[
+|T_{un}(j\omega)|\approx \left|\frac{1}{P(j\omega)}\right| \tag{2.4.2}
+\]
+
+En esta región, la amplificación del ruido está determinada principalmente por la planta.
+
+\subsubsection{b) Frecuencias altas: \(|L(j\omega)|\ll 1\)}
+\[
+|T_{un}(j\omega)|\approx |G(j\omega)|
+=\left|\frac{L(j\omega)}{P(j\omega)}\right| \tag{2.4.3}
+\]
+
+Esta es la región más importante para el ruido, porque allí suele concentrarse el espectro del sensor.
+
+\subsubsection{c) Frecuencias intermedias: \(|L(j\omega)|\approx 1\)}
+En esta zona el valor de \(|T_{un}|\) depende de qué tan cerca pase \(L(j\omega)\) del punto crítico. Si el diseño evita picos excesivos de \(|T_1|\) y \(|S|\), entonces también se limita la amplificación de ruido en esta banda.
+
+\insertimage[\label{img:ruido-sensor-frecuencia}]{2024_06_29_804c621bf2d98037ffbeg-035_942_1174_172_2181}{width=0.45\textwidth}{Generación de amplificación de ruido del sensor en el dominio de la frecuencia.}
+
+La conclusión importante es esta: para que el valor RMS del ruido amplificado sea finito, es necesario que \(|T_{un}(j\omega)|\to 0\) cuando \(\omega\to\infty\). Por tanto:
+
+\begin{itemize}
+  \item \(G(s)\) debe ser \textbf{estrictamente propia};
+  \item la pendiente de \(|L(j\omega)|\) a altas frecuencias debe ser más negativa que la de \(|P(j\omega)|\).
+\end{itemize}
+
+\subsection{2.4.2 Cálculo RMS de \(|T_{un}(j\omega)|\)}
+El libro muestra, mediante un ejemplo, cómo estimar gráficamente el valor RMS del ruido amplificado integrando el área bajo \(|T_{un}(j\omega)|^2\). En el ejemplo presentado:
+
+\begin{itemize}
+  \item cálculo gráfico: \(\approx 201.6\),
+  \item cálculo exacto en Matlab: \(\approx 203.74\).
+\end{itemize}
+
+\begin{images}[\label{img:calculo-rms-ruido}]{Cálculo gráfico de la amplificación RMS del ruido del sensor.}
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-036_916_1147_176_748}{width=0.45\textwidth}{2.4.2}
+  \imagesnewline
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-036_901_1151_188_2179}{width=0.45\textwidth}{2.4.3}
+\end{images}
+
+El punto didáctico del ejemplo es que una magnitud de \(L(j\omega)\) demasiado alta en una banda extensa puede dar lugar a una amplificación RMS muy severa.
+
+\subsection{2.4.3 Optimización de la función de transmisión de lazo \(L(j\omega)\)}
+En el rango donde \(|L(j\omega)|>1\), aumentar \(|L|\) mejora en general los beneficios de la retroalimentación: baja sensibilidad, mejor rechazo de perturbaciones y mejor seguimiento.
+
+Sin embargo, no puede aumentarse indiscriminadamente. El autor muestra que el criterio práctico consiste en \textbf{explotar al máximo el retraso de fase permitido} sin arruinar el margen de fase y sin acercarse demasiado al punto crítico.
+
+La idea es usar una red apropiada para aumentar la magnitud de \(L(j\omega)\) debajo de \(\omega_{co}\), manteniendo todavía un margen de fase satisfactorio.
+
+\begin{images}[\label{img:optimizacion-lazo-laglead}]{Implementación del criterio de optimización del lazo y uso conceptual de una red lag-lead.}
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-037_924_1142_176_746}{width=0.45\textwidth}{2.4.4}
+  \imagesnewline
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-037_676_664_1262_986}{width=0.45\textwidth}{2.4.5}
+\end{images}
+
+
+
+\section{2.5 Loopshaping basado en optimización con norma \(H_\infty\)}
+Hasta aquí el diseño se presentó con herramientas clásicas moldeando directamente \(L(s)\). Ahora el autor reescribe las funciones cerradas en términos de \(S(s)\) y \(T_1(s)\):
+
+\[
+T(s)=F(s)T_1(s) \tag{2.5.1}
+\]
+
+\[
+T_{d1}(s)=P(s)S(s) \tag{2.5.2}
+\]
+
+\[
+T_d(s)=S(s) \tag{2.5.3}
+\]
+
+\[
+T_{un}(s)=-G(s)S(s)=T_{ud}(s) \tag{2.5.4}
+\]
+
+$$
+T_1(s)=1-S(s)=G(s)P(s)S(s)=-T_{yn}(s)
+$$
+
+Además, en frecuencias bajas y altas se cumplen aproximaciones útiles:
+
+$$
+|L(j\omega)|\gg 1 \Rightarrow S(j\omega)\approx \frac{1}{L(j\omega)},\quad T_1(j\omega)\approx 1
+$$
+
+$$
+|L(j\omega)|\ll 1 \Rightarrow S(j\omega)\approx 1,\quad T_1(j\omega)\approx |L(j\omega)|
+$$
+
+En la región intermedia, donde \(|L|\approx 1\), ya no valen simplificaciones tan directas, y es justamente ahí donde pueden aparecer picos indeseables de \(|S|\) y \(|T_1|\).
+
+\subsection{2.5.1 Definición de las normas \(H_\infty\) y \(H_2\)}
+La norma \(H_\infty\) de una función estable y propia \(F(s)\) se define como:
+
+\[
+\|F(s)\|_\infty \stackrel{\text{def}}{=} \max_\omega |F(j\omega)| \tag{2.5.6}
+\]
+
+o, si el máximo no existe de forma estricta,
+
+\[
+\|F(s)\|_\infty = \sup_\omega |F(j\omega)| \tag{2.5.6a}
+\]
+
+Es, en esencia, el \textbf{valor pico} del diagrama de magnitud de Bode.
+
+La norma \(H_2\) se define como:
+
+$$
+\|F(j\omega)\|_2=
+\left[
+\frac{1}{2\pi}\int_{-\infty}^{\infty}|F(j\omega)|^2\,d\omega
+\right]^{1/2}
+$$
+
+También vale la propiedad:
+
+$$
+\|F_1(s)F_2(s)\|_\infty \le \|F_1(s)\|_\infty \,\|F_2(s)\|_\infty
+$$
+
+El capítulo recuerda además:
+
+\begin{itemize}
+  \item \(\|F\|_2\) es finita si \(F\) es estrictamente propia y no tiene polos sobre el eje imaginario;
+  \item \(\|F\|_\infty\) es finita si \(F\) es propia y no tiene polos sobre el eje imaginario.
+\end{itemize}
+
+\subsubsection{Interpretación física}
+La norma \(H_2\) aparece cuando se quiere minimizar energía promedio o esperada de señales como el error y el esfuerzo de control. En cambio, la norma \(H_\infty\) aparece de manera natural cuando interesa controlar el \textbf{peor caso}.
+
+Por ejemplo, si se quiere penalizar simultáneamente error y esfuerzo de control, puede definirse un índice del tipo:
+
+$$
+PI = E\left\{\|e\|_2^2+\beta^2\|u\|_2^2\right\}
+$$
+
+que conduce a una formulación \(H_2\). Si lo que interesa es limitar el peor caso sobre perturbaciones con energía acotada, entonces aparece la formulación \(H_\infty\).
+
+\subsection{2.5.2 Requisitos básicos de estabilidad relativa}
+El autor relaciona los márgenes clásicos con los picos máximos de \(|T_1|\) y \(|S|\). La idea es muy útil porque traduce márgenes geométricos a especificaciones directas sobre magnitudes cerradas.
+
+\begin{itemize}
+  \item Si \(|T_1(j\omega)|_{\max}\le 3\ \text{dB}\), queda garantizado aproximadamente que:
+
+  \begin{itemize}
+    \item \(PM>45^\circ\),
+    \item \(GM>4\ \text{dB}\).
+  \end{itemize}
+  \item Si \(|S(j\omega)|_{\max}\le 3\ \text{dB}\), queda garantizado aproximadamente que:
+
+  \begin{itemize}
+    \item \(PM>45^\circ\),
+    \item \(GM>11\ \text{dB}\).
+  \end{itemize}
+\end{itemize}
+
+En particular, para \(|S(j\omega)|_{\max}\), el texto deduce:
+
+\[
+GM \ge \frac{|S(j\omega)|_{\max}}{|S(j\omega)|_{\max}-1} \tag{2.5.12}
+\]
+
+y
+
+\[
+PM \ge 2\sin^{-1}\left[\frac{1}{2|S(j\omega)|_{\max}}\right] \tag{2.5.13}
+\]
+
+Esto permite traducir restricciones de robustez y estabilidad relativa a cotas directamente sobre el pico de la sensibilidad.
+
+\subsection{2.5.3 Sensibilidad ponderada}
+Como \(S(s)\) interviene en:
+
+\begin{itemize}
+  \item sensibilidad a incertidumbre,
+  \item error de seguimiento,
+  \item rechazo de perturbaciones,
+  \item estabilidad relativa,
+\end{itemize}
+
+se desea que su magnitud sea pequeña en la banda adecuada. Pero esa exigencia no debe ser uniforme en todas las frecuencias; debe depender del problema.
+
+Por eso se introduce una función de ponderación \(W_S(s)\) tal que:
+
+\[
+|S(j\omega)|<\frac{1}{|W_S(j\omega)|},\qquad \forall \omega \tag{2.5.15}
+\]
+
+equivalentemente,
+
+\[
+\|W_S(j\omega)S(j\omega)\|_\infty<1 \tag{2.5.16}
+\]
+
+Esto quiere decir que la magnitud de \(S\) debe quedar por debajo de una “envolvente” definida por \(1/|W_S|\).
+
+Además, como \(S=1/(1+L)\), de ahí se obtiene:
+
+\[
+|1+L(j\omega)|>|W_S(j\omega)| \tag{2.5.17}
+\]
+
+lo que puede interpretarse geométricamente como una restricción sobre la distancia de \(L(j\omega)\) al punto crítico \(-1\).
+
+\insertimage[\label{img:especificaciones-s-circulos}]{2024_06_29_804c621bf2d98037ffbeg-041_839_911_1134_848}{width=0.45\textwidth}{Interpretación geométrica de las especificaciones sobre \(S(j\omega)\) en términos de círculos alrededor del punto crítico.}
+
+\subsection{2.5.4 Sensibilidad mixta}
+En la práctica no basta con imponer una cota a \(S\). También interesa limitar, por ejemplo:
+
+\begin{itemize}
+  \item la transferencia de ruido a la entrada de la planta \(T_{un}\),
+  \item la transferencia complementaria \(T_1\).
+\end{itemize}
+
+Así surgen especificaciones simultáneas del tipo:
+
+\[
+\|W_S S\|_\infty<1,\qquad
+\|W_{un}T_{un}\|_\infty<1,\qquad
+\|W_1T_1\|_\infty<1 \tag{2.5.19}
+\]
+
+Como en un sistema ODOF solo existe un controlador \(G(s)\), tales especificaciones no pueden cumplirse todas de forma exacta e independiente. De ahí la idea de \textbf{sensibilidad mixta}, reuniéndolas en un solo vector de desempeño:
+
+\[
+\mathbf{PV}=
+\begin{bmatrix}
+W_S S\\
+W_{un}T_{un}\\
+W_1T_1
+\end{bmatrix}
+\tag{2.5.20}
+\]
+
+y minimizando:
+
+\section{\$\$\\
+|\textbackslash mathbf\{PV\}(j\textbackslash omega)|\_\textbackslash infty}
+\textbackslash max\_\textbackslash omega\\
+\textbackslash sqrt\{|W\_SS|\textsuperscript{2+|W\_\{un\}T\_\{un\}|}2+|W\_1T\_1|\^{}2\}\\
+<1 \textbackslash tag\{2.5.21\}
+
+\$\$
+
+El problema de diseño se formula entonces como:
+
+\[
+\underset{G(s)}{\text{minimizar}}\ \|\mathbf{PV}(G)\|_\infty \tag{2.5.22}
+\]
+
+El autor advierte que esta formulación es conservadora: con \(n\) requisitos mezclados, el error máximo respecto al cumplimiento individual puede llegar a un factor \(\sqrt{n}\).
+
+\subsection{2.5.5 El problema regulador estándar \(H_\infty\)}
+La sensibilidad mixta es un caso particular del \textbf{problema regulador estándar \(H_\infty\)}. Para formularlo, se construye una \textbf{planta generalizada} \(M(s)\) que incorpora la planta física, las ponderaciones y las señales exógenas.
+
+En la estructura correspondiente aparecen tres salidas ponderadas, por ejemplo:
+
+$$
+z_1=-S W_S\,d
+$$
+
+$$
+z_2=-G S W_{un}\,n=-T_{un}W_{un}\,n
+$$
+
+\[
+z_3=T_1 W_1\,r_1 \tag{2.5.23}
+\]
+
+y se definen:
+
+$$
+\mathbf{w}(s)=\text{col}[d(s),n(s),r_1(s)]
+$$
+
+$$
+\mathbf{z}(s)=\text{col}[z_1(s),z_2(s),z_3(s)]
+$$
+
+donde \(\mathbf{z}\) es el vector de errores ponderados que se desea minimizar.
+
+\begin{images}[\label{img:sensibilidad-mixta-regulador}]{Estructura de sensibilidad mixta y forma canónica del problema regulador estándar \(H_\infty\).}
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-042_496_1152_1462_741}{width=0.45\textwidth}{2.5.2}
+  \imagesnewline
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-042_358_469_1580_2489}{width=0.45\textwidth}{2.5.3}
+\end{images}
+
+En forma compacta:
+
+\[
+\mathbf{z}=\mathbf{T}_{wz}\mathbf{w} \tag{2.5.28}
+\]
+
+y el problema general consiste en encontrar el controlador que minimice:
+
+\[
+\underset{\mathbf{G}(s)}{\text{minimizar}}\ \|\mathbf{T}_{wz}\|_\infty \tag{2.5.29}
+\]
+
+\subsection{2.5.6 Selección de funciones de ponderación}
+La elección de \(W_S(s)\), \(W_1(s)\) y \(W_{un}(s)\) es el paso inicial y más delicado del diseño. Deben codificar en forma matemática los requisitos del cliente o del problema físico:
+
+\begin{itemize}
+  \item espectro y atenuación requerida para perturbaciones;
+  \item error estacionario máximo permitido;
+  \item ancho de banda y sobrepico admisibles de seguimiento;
+  \item ruido del sensor o restricciones especiales sobre el esfuerzo de control.
+\end{itemize}
+
+El autor aclara que \(W_{un}(s)\) puede tomarse inicialmente igual a 1 si no existe una exigencia particular, y refinarse después.
+
+\subsection{2.5.7 Solución \(H_\infty\) del problema de sensibilidad mixta}
+El capítulo resuelve un ejemplo completo.
+
+\subsubsection{Ejemplo 2.5.1}
+La planta es:
+
+$$
+P(s)=\frac{5}{(s+1)(s+0.1)}
+$$
+
+y las especificaciones son:
+
+\begin{enumerate}
+  \item \(K_v=10\);
+  \item ancho de banda de \(S\): \(\omega_{S,-3dB}=5\ \text{rad/s}\);
+  \item \(PM>40^\circ\), equivalente a \(|S|_{\max}<1.46\approx 3.3\ \text{dB}\);
+  \item \(|T_1|_{\max}<1.3\approx 2.3\ \text{dB}\);
+  \item ancho de banda de \(|T_1|\): \(\omega_{-3dB}=8\ \text{rad/s}\);
+  \item mantener lo más pequeña posible la amplificación del ruido del sensor.
+\end{enumerate}
+
+\subsubsection{Etapa 1: definición de \(W_S(s)\)}
+A partir de \(K_v=10\) y del requisito de ancho de banda/sobrepico para \(S\), el texto propone:
+
+$$
+\frac{1}{W_S(s)}=
+\frac{s(1+s/2.13)}{10(1+s/5.58)^2}
+$$
+
+\subsubsection{Etapa 2: definición de \(W_1(s)\)}
+Para imponer el pico y el ancho de banda de \(T_1\), se elige:
+
+$$
+\frac{1}{W_1(s)}=
+\frac{1.3}{(1+s/6)(1+s/20)(1+s/30)}
+$$
+
+\subsubsection{Etapa 3: definición de \(W_{un}(s)\)}
+En este ejemplo se toma simplemente:
+
+$$
+W_{un}(s)=1
+$$
+
+\subsubsection{Etapa 4: solución con \(H_\infty\)}
+Usando el algoritmo \textbf{hinfsyn} de \(\mu\)-Tools, el autor obtiene un compensador subóptimo de orden elevado:
+
+$$
+G(s)=
+\frac{80000(s+100)\left(s^2+200s+100.16\right)(s+3)(s+1)(s+0.1)}
+{(s+6091)\left(s^2+209s+10972\right)(s+91.17)(s+13.74)(s+2.13)(s+0.001)}
+$$
+
+\textbf{[Espacio para la Tabla 2.5.1]}\\
+\textbf{Tabla 2.5.1.} Script de Matlab que construye la planta generalizada y aplica el algoritmo \texttt{hinfsyn}.
+
+\subsubsection{Etapa 5: evaluación y comparación con diseño clásico}
+El mismo problema se resuelve también por métodos clásicos, obteniéndose un compensador mucho más simple:
+
+$$
+G_{\text{clas}}(s)=\frac{2000(s+0.1)(s+1)}{s(s+20)(s+50)}
+$$
+
+El resultado comparativo es interesante:
+
+\begin{itemize}
+  \item ambas soluciones cumplen razonablemente bien;
+  \item la solución clásica presenta anchos de banda algo mayores en \(S\) y \(T_1\);
+  \item la solución \(H_\infty\) produce una amplificación RMS del ruido del sensor significativamente mayor:
+\end{itemize}
+
+$$
+|T_{un}|_{H_\infty,\ RMS}\approx 767.431
+$$
+
+frente a
+
+$$
+|T_{un}|_{\text{clas},\ RMS}\approx 181.2
+$$
+
+La explicación es que el lazo abierto obtenido por \(H_\infty\) cae con una pendiente menos negativa en alta frecuencia. El autor recomienda, por ello, \textbf{afinar después la solución \(H_\infty\) con criterios clásicos}, agregando polos lejanos si es necesario para mejorar la atenuación del ruido del sensor sin degradar el desempeño en la banda útil.
+
+\begin{images}[\label{img:comparacion-clasico-hinf}]{Comparación entre diseño clásico y diseño \(H_\infty\): sensibilidad, transferencia complementaria, lazo abierto y respuestas temporales.}
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-045_490_1159_170_742}{width=0.45\textwidth}{2.5.4}
+  \imagesnewline
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-045_442_1139_1475_743}{width=0.45\textwidth}{2.5.5}
+  \imagesnewline
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-045_848_1080_179_2237}{width=0.45\textwidth}{2.5.6}
+  \imagesnewline
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-045_894_1108_1104_2208}{width=0.45\textwidth}{2.5.7}
+  \imagesnewline
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-046_848_1121_179_770}{width=0.45\textwidth}{2.5.8}
+\end{images}
+
+Una observación final muy importante: si el prefiltro \(F(s)\) es físicamente implementable, la \(|T_1(j\omega)|\) obtenida con el diseño \(H_\infty\) también puede ajustarse después para satisfacer una especificación completa de seguimiento:
+
+$$
+|T(j\omega)|=|T_1(j\omega)|\,|F(j\omega)|
+$$
+
+\section{2.6 Loopshaping clásico versus loopshaping moderno con \(H_\infty\)}
+
+% In the present chapter, feedback control was approached by classical and modern design techniques. In both design paradigms, a control network $G(s)$ was sought to shape the loop transmission function $L(s)=P(s) G(s)$, so that initially specified closed-loop performances are achieved. Some major differences exist between both approaches. In the classical approach, the closed-loop specifications are achieved by directly shaping the loop transmission function $L(j \omega)$ by Nyquist/Bode/Nichols oriented design procedures. With this approach, the design process is very transparent to the designer; by using the Bode plots and the Nichols chart, both open- and closedloop properties are under the designer's control during the loopshaping process. On the other hand, the modern $H_{\infty}$-feedback control design procedure consists in defin-ing weighting functions for the closed-loop performance specifications, and, by using $H_{\infty}$ optimization algorithms to obtain the control network $G(s)$. Thus, a large part of the design effort is transferred to the computer. The commercial $H_{\infty}$-optimization algorithms that are available change iteratively the parameters of the assumed $G(s)$ until a satisfactory solution is obtained. However, if the final outcome is not exactly what the designer expected to obtain, some of the weighting functions can be altered in a logical way so that an ameliorated solution will be achieved.
+
+% When SISO feedback systems are designed, comparable solutions from system point of view are obtained with both approaches. However, for the MIMO case, the classical approach is less efficient and also less transparent to the designer, because shaping of any individual loop out of the $n$ loops to be designed, influences the previously obtained feedback properties of the remaining loops. This point will be clarified in Chapter 6, where the MIMO feedback design is treated.
+
+En el presente capítulo se abordó el control por retroalimentación mediante técnicas de diseño clásicas y modernas. En ambos paradigmas de diseño, se buscó una red de control \(G(s)\) para moldear la función de transmisión de lazo \(L(s)=P(s)G(s)\), de modo que se cumplieran especificaciones de lazo cerrado inicialmente especificadas. Existen algunas diferencias importantes entre ambos enfoques. En el enfoque clásico, las especificaciones de lazo cerrado se logran moldeando directamente la función de transmisión de lazo \(L(j\omega)\) mediante procedimientos de diseño orientados a Nyquist/Bode/Nichols. Con este enfoque, el proceso de diseño es muy transparente para el diseñador; al usar los diagramas de Bode y el gráfico de Nichols, tanto las propiedades del lazo abierto como del lazo cerrado están bajo el control del diseñador durante el proceso de loopshaping. Por otro lado, el procedimiento moderno de diseño de control por retroalimentación \(H_\infty\) consiste en definir funciones de ponderación para las especificaciones de desempeño del lazo cerrado y, utilizando algoritmos de optimización \(H_\infty\), obtener la red de control \(G(s)\). Así, gran parte del esfuerzo de diseño se transfiere a la computadora. Los algoritmos comerciales de optimización \(H_\infty\) disponibles cambian iterativamente los parámetros del supuesto \(G(s)\) hasta que se obtiene una solución satisfactoria. Sin embargo, si el resultado final no es exactamente lo que el diseñador esperaba obtener, algunas de las funciones de ponderación pueden ser alteradas de manera lógica para lograr una solución mejorada.
+
+Cuando se diseñan sistemas de retroalimentación SISO, se obtienen soluciones comparables desde el punto de vista del sistema con ambos enfoques. Sin embargo, para el caso MIMO, el enfoque clásico es menos eficiente y también menos transparente para el diseñador, porque moldear cualquiera de los lazos individuales de los \(n\) lazos a diseñar influye en las propiedades de retroalimentación previamente obtenidas de los lazos restantes. Este punto se aclarará en el Capítulo 6, donde se trata el diseño de retroalimentación MIMO.
+
+\begin{sourcecode}{matlab}{Programa Matlab para diseñar el controlador subóptimo \(H_\infty\) \(G(s)\).}
+% Hinf solution of Example 2.5.1; mu251.m; 20 december 1997
+% Plant G = 5 / (s+0.1)(s+1)
+% Ws = 10(1+s/5.58)^2 / ((s+0.001)(1+s/2.13))
+% Wt = (1+s/6)(1+s/20)(1+s/30) / (1.3(1+s/100)^3)
+% Wu = 1
+% computation of G, Wt and Ws
+ng = [1];
+dg = [1 1.1 0.1];
+G = nd2sys(ng, dg, 5); % plant
+nws = 10 * [1/5.58^2 2/5.18 1];
+dws = [1/2.13 1+0.001/2.13 0.001];
+Ws = nd2sys(nws, dws, 1.0);
+nwt = 213.7 * [1569003600];
+dwt = [13003 c+4 le +6];
+Wt = nd2sys(nwt, dwt, 1/1.3);
+Wu = 1;
+% end
+% preparation of generalized plant P
+systemnames = 'G Wt Wu Ws';
+inputvar = '[w(1); u(1)]';
+outputvar = '[Wt; Wu; Ws; w - G]';
+input_to_G = '[u]';
+input_to_Wt = '[G]';
+input_to_Wu = '[u]';
+input_to_Ws = '[G-u]';
+sysoutname = 'P';
+cleanupsysic = 'yes';
+sysic;
+% end
+% start of Hinf algorithm
+nmeas = 1;
+nu = 1;
+gmn = 0.5;
+gmx = 20;
+tol = 0.001;
+[khinf, ghinf, gopt] = hinfsyn(P, nmeas, nu, gmn, gmx, tol);
+% end
+% calculation of suboptimal compensator
+[a, b, c, d] = unpck(khinf);
+[numg, deng] = ss2tf(a, b, c, d);
+roots(numg)
+roots(deng)
+end
+\end{sourcecode}
+
+\section{2.7 Resumen}
+Este capítulo establece las bases del diseño robusto en frecuencia para sistemas SISO.
+
+\begin{enumerate}
+  \item Se definen las transferencias fundamentales del problema de retroalimentación: \(T\), \(T_1\), \(S\), \(T_d\), \(T_{d1}\), \(T_{un}\), etc.
+  \item Se explica la noción de sensibilidad de Bode y la importancia central del término \(1+L(s)\).
+  \item Se distingue entre \textbf{estabilidad asintótica} y \textbf{estabilidad interna}, subrayando que no se permiten cancelaciones de polos o ceros en el semiplano derecho.
+  \item Se introducen las herramientas clásicas de diseño: \textbf{Nyquist, Bode, Nichols y Nichols invertida}.
+  \item Se aclara la diferencia entre sistemas \textbf{ODOF} y \textbf{TDOF}, y el papel del prefiltro \(F(s)\).
+  \item Se muestra que el diseño del lazo está lleno de \textbf{compromisos} entre robustez, seguimiento, rechazo de perturbaciones, saturación y amplificación de ruido.
+  \item Finalmente, se formula el mismo problema en lenguaje moderno mediante \textbf{sensibilidad ponderada}, \textbf{sensibilidad mixta} y el \textbf{regulador estándar \(H_\infty\)}, cerrando con una comparación práctica entre una solución clásica y una obtenida por optimización.
+\end{enumerate}
+
+La idea más importante del capítulo es que el diseño de control por retroalimentación no consiste en “hacer grande el lazo” sin más, sino en darle a \(L(j\omega)\) una forma cuidadosamente balanceada en frecuencia, de modo que el sistema sea \textbf{estable, robusto, realizable y físicamente sensato}.
+

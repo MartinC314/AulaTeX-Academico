@@ -1,0 +1,49 @@
+% CREACIÓN DEL DOCUMENTO
+\documentclass[
+	spanish, % Idioma: spanish, english, etc.
+	letterpaper, oneside
+]{article}
+
+% INFORMACIÓN DEL DOCUMENTO
+\def\documenttitle {Título del reporte}
+\def\documentsubtitle {}
+\def\documentsubject {Tema a tratar}
+\def\documentdate {\today}
+
+\def\documentauthor {Nombre del autor}
+\def\coursename {Curso}
+\def\coursecode {CO-1234}
+
+\def\universityname {Universidad de Chile}
+\def\universityfaculty {Facultad de Ciencias Físicas y Matemáticas}
+\def\universitydepartment {Departamento de la Universidad}
+\def\universitydepartmentimage {departamentos/fcfm}
+\def\universitylocation {Santiago de Chile}
+
+% IMPORTACIÓN DEL TEMPLATE
+\input{template}
+
+% INICIO DE PÁGINAS
+\begin{document}
+
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\templatePagecfg
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+% Título y nombre del autor
+\inserttitle
+
+% Resumen o Abstract
+\begin{abstract}
+	\lipsum[11]
+\end{abstract}
+
+% Ejemplo, se puede borrar
+\input{example}
+
+% FIN DEL DOCUMENTO
+\end{document}

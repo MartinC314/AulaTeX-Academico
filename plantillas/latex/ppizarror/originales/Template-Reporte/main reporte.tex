@@ -1,0 +1,59 @@
+% CREACIÓN DEL DOCUMENTO
+\documentclass[
+	spanish, % Idioma: spanish, english, etc.
+	letterpaper, oneside
+]{article}
+
+% INFORMACIÓN DEL DOCUMENTO
+\def\documenttitle {Actividad 1: Entradas y salidas de un programa}
+\def\documentsubtitle {}
+\def\documentsubject {Entradas y salidas de un programa}
+\def\documentdate {\today}
+
+\def\documentauthor {Emilio Abraham Castillo Urdiales}
+\def\coursename {Metodología de la Programación}
+\def\coursecode {Enero -Junio 2026}
+
+\def\universityname {Universidad Autónoma de Nuevo Léon}
+\def\universityfaculty {Facultad de Ingeniería Mecánica y Eléctrica}
+\def\universitydepartment {Ingeniería en Administración y Sistemas}
+\def\universitydepartmentimage {departamentos/fcfm}
+\def\universitylocation {San Nicolás de los Garza, Nuevo León, México}
+
+% IMPORTACIÓN DEL TEMPLATE
+\input{template}
+
+% INICIO DE PÁGINAS
+\begin{document}
+
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\templatePagecfg
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======== Ejemplo de insertar bloque de código pseudocódigo en el documento =======================
+%\begin{sourcecode}{pseudocodecolor}{Algoritmo con fondo de color.}
+%	input: int N, int D
+%	output: int
+%	begin
+%	res $\gets$ 0
+%	while N $\geq$ D 
+%	N $\gets$ N - D
+%	res $\gets$ res + 1      
+%	end
+%	return res
+%	end    
+%\end{sourcecode}
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+% Título y nombre del autor
+\inserttitle
+
+% Resumen o Abstract
+
+\include{Entradas y salidas}
+
+% FIN DEL DOCUMENTO
+\end{document}
