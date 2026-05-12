@@ -9,6 +9,7 @@
 - `.latexmkrc`: regla comun de compilacion.
 - `.vscode/`: recetas para LaTeX Workshop.
 - `scripts/`: comandos reutilizables para compilar y exportar.
+- `Revisión/`: bandeja temporal para proyectos o materiales que todavia no tienen ubicacion definitiva.
 
 ## Trabajo academico
 
@@ -16,6 +17,11 @@
 - `trabajos/instituciones`: materiales por institucion.
 - `trabajos/proyectos`: reportes y presentaciones por proyecto.
 - `trabajos/diagramas/tikz`: fuentes TikZ y beamer orientadas a diagramas.
+
+## Revision previa
+
+- `Revisión/`: coloca aqui carpetas nuevas, como proyectos Slidev o materiales externos, antes de integrarlas al flujo principal.
+- La regla practica: nada se mueve a `trabajos/`, `referencias/` o `herramientas/` hasta decidir si sera materia, proyecto, recurso transversal o herramienta.
 
 ## Referencias
 
