@@ -1,0 +1,163 @@
+% Template:     Professional-CV
+% Documento:    Configuraciones iniciales del documento
+% Versión:      4.1.7 (05/01/2026)
+% Codificación: UTF-8
+%
+% Autor: Pablo Pizarro R.
+%        pablo@ppizarror.com
+%
+% Manual template: [https://latex.ppizarror.com/professional-cv]
+% Licencia MIT:    [https://opensource.org/licenses/MIT]
+
+% Se revisa si las variables no han sido borradas
+\checkvardefined{\birthday}
+\checkvardefined{\birthmonth}
+\checkvardefined{\birthyear}
+\checkvardefined{\email}
+\checkvardefined{\name}
+\checkvardefined{\phonenumber}
+
+% Se añade \xspace a las variables
+\makeatletter
+	\g@addto@macro\birthday\xspace
+	\g@addto@macro\birthmonth\xspace
+	\g@addto@macro\birthyear\xspace
+	\g@addto@macro\name\xspace
+	\g@addto@macro\phonenumber\xspace
+\makeatother
+
+% Crea el título del documento
+\ifthenelse{\equal{\writetitleheader}{true}}{%
+	\def\cvdoctitle {\headertitle~ \name}
+}{
+	\def\cvdoctitle {\name}
+}%
+
+% Se define metadata del pdf
+\ifthenelse{\equal{\cfgshowbookmarkmenu}{true}}{
+	\def\cdfpagemodepdf {UseOutlines}
+}{
+	\def\cdfpagemodepdf {UseNone}
+}
+\hypersetup{
+	keeppdfinfo,
+	bookmarksopen={\cfgpdfbookmarkopen},
+	bookmarksopenlevel={\cfgbookmarksopenlevel},
+	bookmarkstype={toc},
+	pdfauthor={\name},
+	pdfcenterwindow={\cfgpdfcenterwindow},
+	pdfcopyright={\headertitle, \name. Email: \email. Phone: \phonenumber},
+	pdfcreator={LaTeX},
+	pdfdisplaydoctitle={\cfgpdfdisplaydoctitle},
+	pdffitwindow={\cfgpdffitwindow},
+	pdfinfo={
+		Author.Email={\email},
+		Author.Name={\name},
+		Author.Phone={\phonenumber},
+		Template.Author.Alias={ppizarror},
+		Template.Author.Email={pablo@ppizarror.com},
+		Template.Author.Name={Pablo Pizarro R.},
+		Template.Author.Web={https://ppizarror.com/},
+		Template.Date={05/01/2026},
+		Template.Encoding={UTF-8},
+		Template.License.Type={MIT},
+		Template.License.Web={https://opensource.org/licenses/MIT/},
+		Template.Name={Professional-CV},
+		Template.Type={Normal},
+		Template.Version.Dev={4.1.7-2},
+		Template.Version.Hash={89E7E7A4FD4D1E69D543E983539EBF86},
+		Template.Version.Release={4.1.7},
+		Template.Web.Dev={https://github.com/Template-Latex/Professional-CV/},
+		Template.Web.Manual={https://latex.ppizarror.com/Professional-CV/}
+	},
+	pdfkeywords={CV, \name, \headertitle, \email},
+	pdfmenubar={\cfgpdfmenubar},
+	pdfpagelayout={\cfgpdfpagemode},
+	pdfpagemode={\cdfpagemodepdf},
+	pdfproducer={Professional-CV v4.1.7 | (Pablo Pizarro R.) ppizarror.com},
+	pdfremotestartview={Fit},
+	pdfstartpage={1},
+	pdfstartview={\cfgpdfpageview},
+	pdfsubject={CV \name},
+	pdftitle={\cvdoctitle},
+	pdftoolbar={\cfgpdftoolbar},
+	pdftype={Text}
+}
+
+% Establece la carpeta de imágenes por defecto
+\graphicspath{{./img}}
+
+% Ajuste del entrelineado
+\renewcommand{\baselinestretch}{\documentinterline}
+
+% Ajuste de tablas
+\setlength{\tabcolsep}{0.5em} % Horizontal
+\def\arraystretch {1} % Vertical
+
+% Configuración de los colores
+\color{\maintextcolor} % Color principal
+\arrayrulecolor{\tablelinecolor} % Color de las líneas de las tablas
+\sethlcolor{\highlightcolor} % Color del subrayado por defecto
+\ifthenelse{\equal{\showborderonlinks}{true}}{
+	\hypersetup{
+		% Color de links con borde
+		citebordercolor=\numcitecolor,
+		linkbordercolor=\urlcolor,
+		urlbordercolor=\urlcolor
+	}
+}{
+	\hypersetup{
+		% Color de links sin borde
+		hidelinks,
+		colorlinks=true,
+		citecolor=\numcitecolor,
+		filecolor=\urlcolor,
+		linkcolor=\urlcolor,
+		urlcolor=\urlcolor
+	}
+}
+\ifthenelse{\equal{\colorpage}{white}}{}{
+	\pagecolor{\colorpage}
+}
+
+% Configuración de la identación
+\newlength{\newparindent}
+\addtolength{\newparindent}{\indentwidth pt}
+\setenumerate{itemsep=0pt}
+\setitemize{itemsep=0pt}
+
+% Configuración de hbox y vbox
+\hfuzz=200pt
+\vfuzz=200pt
+\hbadness=\maxdimen
+\vbadness=\maxdimen
+
+% Se activa el word-wrap para textos con \texttt{}
+\ttfamily \hyphenchar\the\font=`\-
+
+% Se define el tipo de texto de los url
+\urlstyle{\fonturl}
+
+% Se define la versión menor a compilar
+\ifthenelse{\equal{\compilertype}{pdf2latex}}{
+	% Nivel de compresión
+	\pdfcompresslevel=9
+	
+	% El óptimo es 2, según
+	% https://texdoc.org/serve/pdftex-a.pdf/0 p.20
+	\pdfdecimaldigits=2
+	
+	% Inclusión de PDF
+	\pdfinclusionerrorlevel=0
+	
+	% Versión
+	\pdfminorversion=\pdfcompileversion
+	
+	% Compresión de objetos
+	\pdfobjcompresslevel=2
+}{}
+
+% Configura items
+\AfterEndEnvironment{itemize}{\vspace{-0.4\baselineskip}}
+\AfterEndEnvironment{enumerate}{\vspace{-0.4\baselineskip}}
+\renewcommand{\labelitemi}{\raisebox{0.5\height}{\scalebox{0.5}{$\blacksquare$}}}

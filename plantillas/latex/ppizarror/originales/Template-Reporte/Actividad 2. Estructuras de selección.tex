@@ -1,0 +1,585 @@
+% CREACIÓN DEL DOCUMENTO
+\documentclass[
+	spanish, % Idioma: spanish, english, etc.
+	letterpaper, oneside
+]{article}
+
+% INFORMACIÓN DEL DOCUMENTO
+\def\documenttitle {Actividad 2. Estructuras de selección}
+\def\documentsubtitle {}
+\def\documentsubject {Estructuras de selección en PSEINT}
+\def\documentdate {\today}
+
+\def\documentauthor {Emilio Abraham Castillo Urdiales}
+\def\coursename {Metodología de la Programación}
+\def\coursecode {Enero -Junio 2026}
+
+\def\universityname {Universidad Autónoma de Nuevo Léon}
+\def\universityfaculty {Facultad de Ingeniería Mecánica y Eléctrica}
+\def\universitydepartment {Ingeniería en Administración y Sistemas}
+\def\universitydepartmentimage {departamentos/fcfm}
+\def\universitylocation {San Nicolás de los Garza, Nuevo León, México}
+
+% IMPORTACIÓN DEL TEMPLATE
+\input{template}
+
+% INICIO DE PÁGINAS
+\begin{document}
+
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\templatePagecfg
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= Descripción de la actividad ================
+
+% UTILIZAR IF (SI-ENTONCES)
+% Programa 1: Introducir un número entero e imprimir si dicho número es par o impar.
+% Programa 2: Se conocen los lados de un triángulo y se desea imprimir que tipo de triángulo es. (Equilátero, isósceles o escaleno).
+
+% Programa 3: Se tienen 3 numeros, y se desea identificar cual de ellos es el mayor y cual es el menor e imprimirlos
+
+% UTILIZAR SWITCH (SEGÚN)
+% Programa 4: La compañía de la luz desea generar el recibo de un cliente, el cual se puede ubicar en una de las cuatro zonas en que se divide el área metropolitana. Los datos disponibles son:
+% Nombre del cliente.
+% Consumo en kilowatts.
+% Zona en la que se ubica.
+% El recibo solo deberá contener el nombre y el pago del cliente.
+
+% \begin{tabular}{l|c|}
+% \hline \multicolumn{1}{|c|}{ Zona } & Tarifa $/ \mathrm{kw}$ \\
+% \hline 1.- Monterrey & $\$ 0.85$ \\
+% \hline 2.- San Pedro & $\$ 0.90$ \\
+% \hline 3.- San Nicolás & $\$ 0.87$ \\
+% \hline 4.- Guadalupe & $\$ 0.82$ \\
+% \hline
+% \end{tabular}
+
+% Programa 5: Una empresa desea generar el recibo de nómina de un empleado, el cual se puede ubicar en alguno de los departamentos de dicha empresa. Los datos que tiene la empresa del empleado son:
+% Nombre del empleado.
+% Horas trabajadas.
+% Departamento en el que labora.
+% El recibo solo deberá contener el nombre y sueldo del empleado.
+% NOTA: Las horas normales de trabajo a la semana son 40, después de estas se pagarán como extras.
+
+% \begin{tabular}{|l|c|c|}
+% \hline \multicolumn{1}{|c|}{ Departamento } & Tarifa Hr. Normal & Tarifa Hr. Extra \\
+% \hline 1.- Recursos Humanos & $\$ 23.25$ & $\$ 46.50$ \\
+% \hline 2.- Producción & $\$ 25.20$ & $\$ 50.40$ \\
+% \hline 3.- Sistemas & $\$ 24.30$ & $\$ 48.60$ \\
+% \hline
+% \end{tabular}
+
+% ======================= Ejemplos de pseudocódigo con Pseint =======================
+%// este es el ejemplo más simple de esta ayuda, 
+%// toma dos numeros, los suma y muestra el resultado
+%
+
+%Algoritmo Suma
+%
+%
+%// para cargar un dato, se le muestra un mensaje al usuario
+%// con la instrucción Escribir, y luego se lee el dato en 
+%// una variable (A para el primero, B para el segundo) con 
+%// la instrucción Leer
+%
+%Escribir "Ingrese el primer numero:"
+%Leer A
+%
+%Escribir "Ingrese el segundo numero:"
+%Leer B
+%
+%
+%// ahora se calcula la suma y se guarda el resultado en la
+%// variable C mediante la asignación (<-)
+%
+%C <- A+B
+%
+%
+%// finalmente, se muestra el resultado, precedido de un 
+%// mensaje para avisar al usuario, todo en una sola
+%// instrucción Escribir
+%
+%Escribir "El resultado es: ",C
+%
+%FinAlgoritmo
+
+%// Este ejemplo muestra el uso de expresiones, operadores y funciones matematicas
+%
+%Algoritmo Matematicas
+%
+%
+%EligeSalir<-Falso
+%Escribir 'Ingresar un número:'
+%Leer N
+%Repetir
+%Escribir ' '
+%Escribir 'Presione una tecla para continuar'
+%Esperar Tecla
+%Limpiar Pantalla
+%Escribir 'Elija una opción:'
+%Escribir '  1 - Seno, coseno, arcotangente'
+%Escribir '  2 - Lograritmo natural, función exponencial'
+%Escribir '  3 - Truncar, redondear'
+%Escribir '  4 - Raíz cuadrada'
+%Escribir '  5 - Valor absoluto'
+%Escribir '  6 - Separar parte entera y decimal'
+%Escribir '  7 - Hallar factorial'
+%Escribir '  8 - Averiguar si es primo'
+%Escribir '  9 - Ingresar otro número'
+%Escribir '  0 - Salir'
+%Escribir ' '
+%Leer eleccion
+%Segun eleccion Hacer
+%1: 
+%Escribir 'Seno:',Sen(N)
+%Escribir 'Coseno:',Cos(N)
+%Escribir 'Arcotangente:',Atan(N)
+%2: 
+%Si N<=0
+%Entonces Escribir 'El numero debe ser mayor a cero!'
+%SiNo
+%Escribir 'Logaritmo natural: ',ln(N)
+%Escribir 'Función exponencial: ',exp(N)
+%FinSi
+%3: 
+%Escribir 'Truncar: ',trunc(N)
+%Escribir 'Redondear: ',redon(N)
+%4: Escribir 'Raiz Cuad.: ',rc(N)
+%5: Escribir 'Valor Abs.: ',abs(N)
+%6: 
+%Escribir 'Parte Entera: ',Trunc(n)
+%Escribir 'Parte Decimal: ',n-Trunc(n)
+%7: 
+%Si N<>Trunc(N)
+%Entonces
+%Escribir 'El numero debe ser entero!'
+%SiNo
+%Si abs(N)>50
+%Entonces Escribir 'Resultado muy grande!'
+%SiNo
+%r<-1; f<-1
+%Mientras f<=abs(N) Hacer
+%Si N<0 
+%Entonces r<-(-f)*r
+%SiNo
+%r<-f*r
+%FinSi
+%f<-f+1
+%FinMientras
+%Escribir 'Factorial:',r
+%FinSi
+%FinSi
+%8: 
+%Si N<>Trunc(N) Entonces
+%Escribir 'El numero debe ser entero!'
+%SiNo
+%Si N<0  entonces 
+%Nu<-N*(-1)
+%SiNo
+%Nu<-N
+%FinSi
+%Si N mod 2 = 0 Entonces 
+%Escribir 'Numero Primo:',Nu=2
+%Si Nu<>2 Entonces
+%Escribir N,'=2x',N/2
+%FinSi
+%SiNo
+%EsPrimo<-Nu<>1 
+%Nu<-RC(Nu)
+%Divisor<-3
+%Mientras Divisor<=Raiz(Nu) & EsPrimo Hacer
+%Si N mod Divisor = 0 Entonces 
+%EsPrimo<-Falso
+%Sino
+%Divisor<-Divisor+2
+%FinSi
+%FinMientras
+%Escribir 'Numero primo:',EsPrimo
+%Si N>1 & ~ EsPrimo Entonces 
+%Escribir N,'=',Divisor,'x',N/Divisor
+%FinSi
+%FinSi
+%FinSi
+%9:
+%Escribir 'Ingrese un número:'
+%Leer N
+%0: EligeSalir<-Verdadero
+%De Otro Modo:
+%Escribir 'eleccionción  no válida!'
+%FinSegun
+%Hasta que EligeSalir
+%FinAlgoritmo
+
+
+% ======== Ejemplo de insertar bloque de código pseudocódigo en el documento =======================
+%\begin{sourcecode}{pseudocodecolor}{Algoritmo con fondo de color.}
+%	input: int N, int D
+%	output: int
+%	begin
+%	res $\gets$ 0
+%	while N $\geq$ D 
+%	N $\gets$ N - D
+%	res $\gets$ res + 1      
+%	end
+%	return res
+%	end    
+%\end{sourcecode}
+
+% ======= Ejemplo de insertar una imagen en el documento =======================
+
+% \insertimage[\label{img:diagramaVolumenEsfera}]{0IH7toh9jWq0SrzXVHQ4bdC4FBfhl3t72cQ7H-4tj_U_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de volumen de una esfera.}
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+% Título y nombre del autor
+\inserttitle
+
+% ======================= Ejemplo de abstract =======================
+% Se realizan 7 programas en PSEINT, cada uno con su respectivo pseudocódigo, diagrama de flujo y ejecución. Los programas son los siguientes:
+% \begin{enumerate}
+% 	\item Suma de dos números.
+% 	\item Operaciones básicas (suma, resta, multiplicación, división).
+% 	\item Energía potencial en caída libre ($E_{pot} = mgh$).
+% 	\item Volumen de una esfera ($V = \frac{4}{3}\pi r^3$).
+% 	\item Generación de recibo de luz.
+% 	\item Conversión de acres a hectáreas.
+% 	\item Conversión de pies y libras a metros y kilogramos.
+% \end{enumerate}
+
+% Resumen o Abstract
+
+\begin{abstract}
+
+	En esta actividad se hará uso de las estructuras de selección en PSEINT, utilizando tanto la estructura IF (SI-ENTONCES) como la estructura SWITCH (SEGÚN). Se desarrollarán cinco programas que implementen estas estructuras para resolver problemas específico. Cada programa se acompañará de su pseudocódigo, diagrama de flujo y ejecución en PSEINT.
+	
+	\begin{itemize}
+	    \item Programa 1: Determinar si un número es par o impar.
+	    \item Programa 2: Identificar el tipo de triángulo según sus lados.
+	    \item Programa 3: Encontrar el mayor y el menor de tres números.
+	    \item Programa 4: Generar el recibo de luz de un cliente.
+	    \item Programa 5: Generar el recibo de nómina según horas y departamento.
+	\end{itemize}
+
+\end{abstract}
+
+\section{Determinar si un número es par o impar}
+
+Este programa solicitará al usuario que ingrese un número entero y luego determinará si dicho número es par o impar. Para esto, se utilizará la estructura IF (SI-ENTONCES) para evaluar si el número es divisible por 2. Si el número es divisible por 2, se imprimirá que es par; de lo contrario, se imprimirá que es impar. A continuación se presentará el pseudocódigo, diagrama de flujo y ejecución del programa en PSEINT.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo para determinar si un número es par o impar.}
+Algoritmo ParImpar
+    Escribir "Ingrese un número entero:"
+    // Lee el número ingresado por el usuario
+    Leer numero
+	
+    // Verifica si el número es divisible entre 2
+    Si numero mod 2 = 0 Entonces
+        // Si el residuo es 0, el número es par
+        Escribir "El número es par."
+    SiNo
+        // En caso contrario, el número es impar
+        Escribir "El número es impar."
+    FinSi
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaParImpar}]{XRe-SZ6iKlrJI-2TrYyx7ovFCghNgQCfNxqr8pBevEk_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa para determinar si un número es par o impar.}
+
+\insertimage[\label{img:ejecucionParImpar}]{s9Hl9o80k70CHyz_C6NLYjVl0gUP97G2EFY1S-Ib_b4_original_fullsize}{width=0.45\textwidth}{Ejecución del programa para determinar si un número es par o impar en PSEINT.}
+
+\section{Identificar el tipo de triángulo según sus lados}
+
+Este programa solicitará al usuario que ingrese las longitudes de los tres lados de un triángulo. Luego, utilizando la estructura IF (SI-ENTONCES), se evaluará el tipo de triángulo que se forma con esos lados. Si los tres lados son iguales, el triángulo es equilátero; si dos lados son iguales y el tercero es diferente, el triángulo es isósceles; y si los tres lados son diferentes, el triángulo es escaleno. A continuación se presentará el pseudocódigo, diagrama de flujo y ejecución del programa en PSEINT.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo para identificar el tipo de triángulo según sus lados.}
+Algoritmo TipoTriangulo
+    Escribir "Ingrese la longitud del primer lado:"
+    // Lee la medida del primer lado
+    Leer lado1
+    Escribir "Ingrese la longitud del segundo lado:"
+    // Lee la medida del segundo lado
+    Leer lado2
+    Escribir "Ingrese la longitud del tercer lado:"
+    // Lee la medida del tercer lado
+    Leer lado3
+    
+    // Verifica el tipo de triángulo según las longitudes de los lados
+    Si lado1 = lado2 y lado2 = lado3 Entonces
+        // Si los tres lados son iguales, es equilátero
+        Escribir "El triángulo es equilátero."
+    SiNo Si lado1 = lado2 o lado1 = lado3 o lado2 = lado3 Entonces
+			// Si solo dos lados son iguales, es isósceles
+			Escribir "El triángulo es isósceles."
+		SiNo
+			// Si todos los lados son diferentes, es escaleno
+			Escribir "El triángulo es escaleno."
+		FinSi
+	FinSi
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaTipoTriangulo}]{X5MfuIAV_Owsfg-7zw94xpj5xdk-VPYvVfhMYjbo5lc_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa para identificar el tipo de triángulo según sus lados.}
+
+\insertimage[\label{img:ejecucionTipoTriangulo}]{btzV7d4uX5iruCdLs47WmzYRKag4FS4TTCnORli_c8s_original_fullsize}{width=0.45\textwidth}{Ejecución del programa para identificar el tipo de triángulo según sus lados en PSEINT.}
+
+\section{Encontrar el mayor y el menor de tres números}
+
+Este programa solicitará al usuario que ingrese tres números. Luego, utilizando la estructura IF (SI-ENTONCES), se evaluará cuál de los tres números es el mayor y cuál es el menor. El programa comparará los números entre sí para determinar el mayor y el menor, y luego imprimirá los resultados. A continuación se presentará el pseudocódigo, diagrama de flujo y ejecución del programa en PSEINT.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo para encontrar el mayor y el menor de tres números.}
+Algoritmo MayorMenor
+    Escribir "Ingrese el primer número:"
+    // Lee el primer número
+    Leer num1
+    Escribir "Ingrese el segundo número:"
+    // Lee el segundo número
+    Leer num2
+    Escribir "Ingrese el tercer número:"
+    // Lee el tercer número
+    Leer num3
+    
+    // Inicializa las variables mayor y menor con el primer número
+    mayor <- num1
+    menor <- num1
+    
+    // Compara el segundo número con mayor y menor
+    Si num2 > mayor Entonces
+        mayor <- num2
+    FinSi
+    Si num2 < menor Entonces
+        menor <- num2
+    FinSi
+    
+    // Compara el tercer número con mayor y menor
+    Si num3 > mayor Entonces
+        mayor <- num3
+    FinSi
+    Si num3 < menor Entonces
+        menor <- num3
+    FinSi
+    
+    // Imprime los resultados del mayor y menor
+    Escribir "El número mayor es: ", mayor
+    Escribir "El número menor es: ", menor
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaMayorMenor}]{_5FsenEuLGiSh0DpDGRHQeYDr41ISEMFTHNx8vRjA7I_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa para encontrar el mayor y el menor de tres números.}
+
+\insertimage[\label{img:ejecucionMayorMenor}]{kDv9zzOyVFLXBefHCTuak9DG98p7-7lhmC-5BpYvhVs_original_fullsize}{width=0.45\textwidth}{Ejecución del programa para encontrar el mayor y el menor de tres números en PSEINT.}
+
+\section{Generar el recibo de luz de un cliente}
+
+Este programa solicitará al usuario que ingrese el nombre del cliente, el consumo en kilowatts y la zona en la que se ubica. Luego, utilizando la estructura SWITCH (SEGÚN), se determinará la tarifa por kilowatt según la zona del cliente. Finalmente, se calculará el pago total multiplicando el consumo por la tarifa correspondiente y se imprimirá el recibo con el nombre del cliente y el pago total. A continuación se presentará el pseudocódigo, diagrama de flujo y ejecución del programa en PSEINT.
+
+\begin{tabular}{l|c|}
+\hline \multicolumn{1}{|c|}{ Zona } & Tarifa $/ \mathrm{kw}$ \\
+\hline 1.- Monterrey & $\$ 0.85$ \\
+\hline 2.- San Pedro & $\$ 0.90$ \\
+\hline 3.- San Nicolás & $\$ 0.87$ \\
+\hline 4.- Guadalupe & $\$ 0.82$ \\
+\hline
+\end{tabular}
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo para generar el recibo de luz de un cliente.}
+Algoritmo ReciboLuz
+    Escribir "Ingrese el nombre del cliente:"
+    // Lee el nombre del cliente
+    Leer nombreCliente
+    Escribir "Ingrese el consumo en kilowatts:"
+    // Lee el consumo en kilowatts
+    Leer consumo
+    Escribir "Ingrese la zona (1: Monterrey, 2: San Pedro, 3: San Nicolás, 4: Guadalupe):"
+    // Lee la zona del cliente
+    Leer zona
+    
+    // Determina la tarifa por kilowatt según la zona utilizando SWITCH
+    Segun zona Hacer
+        1: tarifa <- 0.85 // Monterrey
+        2: tarifa <- 0.90 // San Pedro
+        3: tarifa <- 0.87 // San Nicolás
+        4: tarifa <- 0.82 // Guadalupe
+        De Otro Modo:
+            Escribir "Zona no válida. Se asignará una tarifa por defecto de 0.85."
+            tarifa <- 0.85 // Tarifa por defecto
+    FinSegun
+    
+    // Calcula el pago total multiplicando el consumo por la tarifa
+    pagoTotal <- consumo * tarifa
+    
+    // Imprime el recibo con el nombre del cliente y el pago total
+    Escribir "Recibo de Luz"
+    Escribir "Cliente: ", nombreCliente
+    Escribir "Pago Total: ", pagoTotal
+FinAlgoritmo
+\end{sourcecode}
+
+% \insertimage[\label{img:diagramaReciboLuz}]{k483IMZ-uJmuzcCgCqXD0Te0VxWJNKQ_L0kEtIL9NIE_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa para generar el recibo de luz de un cliente.}
+
+\insertimage[\label{img:ejecucionReciboLuz}]{k483IMZ-uJmuzcCgCqXD0Te0VxWJNKQ_L0kEtIL9NIE_original_fullsize}{width=0.45\textwidth}{Ejecución del programa para generar el recibo de luz de un cliente en PSEINT.}
+
+\section{Generar el recibo de nómina según horas y departamento}
+
+Este programa solicitará al usuario que ingrese el nombre del empleado, las horas trabajadas y el departamento en el que labora. Luego, utilizando la estructura SWITCH (SEGÚN), se determinará la tarifa por hora normal y por hora extra según el departamento del empleado. Se calculará el sueldo total considerando las horas normales (hasta 40 horas) y las horas extras (horas trabajadas por encima de 40). Finalmente, se imprimirá el recibo de nómina con el nombre del empleado y su sueldo total. A continuación se presentará el pseudocódigo, diagrama de flujo y ejecución del programa en PSEINT.
+
+\begin{tabular}{|l|c|c|}
+\hline \multicolumn{1}{|c|}{ Departamento } & Tarifa Hr. Normal & Tarifa Hr. Extra \\
+\hline 1.- Recursos Humanos & $\$ 23.25$ & $\$ 46.50$ \\
+\hline 2.- Producción & $\$ 25.20$ & $\$ 50.40$ \\
+\hline 3.- Sistemas & $\$ 24.30$ & $\$ 48.60$ \\
+\hline
+\end{tabular}
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo para generar el recibo de nómina según horas y departamento.}
+Algoritmo ReciboNomina
+    Escribir "Ingrese el nombre del empleado:"
+    // Lee el nombre del empleado
+    Leer nombreEmpleado
+    Escribir "Ingrese las horas trabajadas:"
+    // Lee las horas trabajadas
+    Leer horasTrabajadas
+    Escribir "Ingrese el departamento (1: Recursos Humanos, 2: Producción, 3: Sistemas):"
+    // Lee el departamento del empleado
+    Leer departamento
+    
+    // Determina la tarifa por hora normal y por hora extra según el departamento utilizando SWITCH
+    Segun departamento Hacer
+        1: 
+            tarifaNormal <- 23.25 // Recursos Humanos
+            tarifaExtra <- 46.50 // Recursos Humanos
+        2: 
+            tarifaNormal <- 25.20 // Producción
+            tarifaExtra <- 50.40 // Producción
+        3: 
+            tarifaNormal <- 24.30 // Sistemas
+            tarifaExtra <- 48.60 // Sistemas
+        De Otro Modo:
+            Escribir "Departamento no válido. Se asignarán tarifas por defecto de 23.25 para hora normal y 46.50 para hora extra."
+            tarifaNormal <- 23.25 // Tarifa por defecto para hora normal
+            tarifaExtra <- 46.50 // Tarifa por defecto para hora extra
+    FinSegun
+    
+    // Calcula el sueldo total considerando horas normales y horas extras
+    Si horasTrabajadas <= 40 Entonces
+        sueldoTotal <- horasTrabajadas * tarifaNormal
+    SiNo
+        horasExtras <- horasTrabajadas - 40
+        sueldoTotal <- (40 * tarifaNormal) + (horasExtras * tarifaExtra)
+    FinSi
+    
+    // Imprime el recibo de nómina con el nombre del empleado y su sueldo total
+    Escribir "Recibo de Nómina"
+    Escribir "Empleado: ", nombreEmpleado
+    Escribir "Sueldo Total: ", sueldoTotal
+FinAlgoritmo
+\end{sourcecode}
+
+% \insertimage[\label{img:diagramaReciboNomina}]{5hUMDOS7zw0amjl0x9rgfKML6Qd1Ycq4iOt10aco3Xg_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa para generar el recibo de nómina según horas y departamento.}
+
+\insertimage[\label{img:ejecucionReciboNomina}]{5hUMDOS7zw0amjl0x9rgfKML6Qd1Ycq4iOt10aco3Xg_original_fullsize}{width=0.45\textwidth}{Ejecución del programa para generar el recibo de nómina según horas y departamento en PSEINT.}
+
+
+% FIN DEL DOCUMENTO
+\end{document}
+
+% \documentclass[11pt]{article}
+% \usepackage[spanish]{babel}
+% \usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{graphicx}
+% \usepackage[export]{adjustbox}
+% \graphicspath{ {./images/} }
+% \usepackage{amsmath}
+% \usepackage{amsfonts}
+% \usepackage{amssymb}
+% \usepackage[version=4]{mhchem}
+% \usepackage{stmaryrd}
+
+% \begin{document}
+% UTILIZAR IF (SI-ENTONCES)\\
+% Programa 1: Introducir un número entero e imprimir si dicho número es par o impar.
+
+% \begin{center}
+% \includegraphics[max width=\textwidth, alt={original image}]{XRe-SZ6iKlrJI-2TrYyx7ovFCghNgQCfNxqr8pBevEk_original_fullsize}
+% \end{center}
+
+% \begin{center}
+% \includegraphics[max width=\textwidth, alt={original image}]{s9Hl9o80k70CHyz_C6NLYjVl0gUP97G2EFY1S-Ib_b4_original_fullsize}
+% \end{center}
+
+% Programa 2: Se conocen los lados de un triángulo y se desea imprimir que tipo de triángulo es. (Equilátero, isósceles o escaleno).
+
+% \begin{center}
+% \includegraphics[max width=\textwidth, alt={original image}]{X5MfuIAV_Owsfg-7zw94xpj5xdk-VPYvVfhMYjbo5lc_original_fullsize}
+% \end{center}
+
+% \begin{center}
+% \includegraphics[max width=\textwidth, alt={original image}]{btzV7d4uX5iruCdLs47WmzYRKag4FS4TTCnORli_c8s_original_fullsize}
+% \end{center}
+
+% Programa 3: Se tienen 3 numeros, y se desea identificar cual de ellos es el mayor y cual es el menor e imprimirlos
+
+% \begin{center}
+% \includegraphics[max width=\textwidth, alt={original image}]{_5FsenEuLGiSh0DpDGRHQeYDr41ISEMFTHNx8vRjA7I_original_fullsize}
+% \end{center}
+
+% \begin{center}
+% \includegraphics[max width=\textwidth, alt={original image}]{kDv9zzOyVFLXBefHCTuak9DG98p7-7lhmC-5BpYvhVs_original_fullsize}
+% \end{center}
+
+% UTILIZAR SWITCH (SEGÚN)\\
+% Programa 4: La compañía de la luz desea generar el recibo de un cliente, el cual se puede ubicar en una de las cuatro zonas en que se divide el área metropolitana. Los datos disponibles son:\\
+% Nombre del cliente.\\
+% Consumo en kilowatts.\\
+% Zona en la que se ubica.\\
+% El recibo solo deberá contener el nombre y el pago del cliente.
+
+% \begin{center}
+% \begin{tabular}{l|c|}
+% \hline
+% \multicolumn{1}{|c|}{Zona} & Tarifa $/ \mathrm{kw}$ \\
+% \hline
+% 1.- Monterrey & $\$ 0.85$ \\
+% \hline
+% 2.- San Pedro & $\$ 0.90$ \\
+% \hline
+% 3.- San Nicolás & $\$ 0.87$ \\
+% \hline
+% 4.- Guadalupe & $\$ 0.82$ \\
+% \hline
+% \end{tabular}
+% \end{center}
+
+% \begin{center}
+% \includegraphics[max width=\textwidth, alt={original image}]{k483IMZ-uJmuzcCgCqXD0Te0VxWJNKQ_L0kEtIL9NIE_original_fullsize}
+% \end{center}
+
+% Programa 5: Una empresa desea generar el recibo de nómina de un empleado, el cual se puede ubicar en alguno de los departamentos de dicha empresa. Los datos que tiene la empresa del empleado son:\\
+% Nombre del empleado.\\
+% Horas trabajadas.\\
+% Departamento en el que labora.\\
+% El recibo solo deberá contener el nombre y sueldo del empleado.\\
+% NOTA: Las horas normales de trabajo a la semana son 40, después de estas se pagarán como extras.
+
+% \begin{center}
+% \begin{tabular}{|l|c|c|}
+% \hline
+% \multicolumn{1}{|c|}{Departamento} & Tarifa Hr. Normal & Tarifa Hr. Extra \\
+% \hline
+% 1.- Recursos Humanos & $\$ 23.25$ & $\$ 46.50$ \\
+% \hline
+% 2.- Producción & $\$ 25.20$ & $\$ 50.40$ \\
+% \hline
+% 3.- Sistemas & $\$ 24.30$ & $\$ 48.60$ \\
+% \hline
+% \end{tabular}
+% \end{center}
+
+% \begin{center}
+% \includegraphics[max width=\textwidth, alt={original image}]{5hUMDOS7zw0amjl0x9rgfKML6Qd1Ycq4iOt10aco3Xg_original_fullsize}
+% \end{center}
+
+
+% \end{document}

@@ -9,6 +9,7 @@
 - `.latexmkrc`: regla comun de compilacion.
 - `.vscode/`: recetas para LaTeX Workshop.
 - `scripts/`: comandos reutilizables para compilar y exportar.
+- `plantillas/latex`: bases originales, adaptaciones institucionales y moldes por materia.
 - `Revisión/`: bandeja temporal para proyectos o materiales que todavia no tienen ubicacion definitiva.
 
 ## Trabajo academico
@@ -17,11 +18,20 @@
 - `trabajos/instituciones`: materiales por institucion.
 - `trabajos/proyectos`: reportes y presentaciones por proyecto.
 - `trabajos/diagramas/tikz`: fuentes TikZ y beamer orientadas a diagramas.
+- Si una materia produce mas de un tipo de entrega, usa subcarpetas como `informes`, `presentaciones` y `recursos`.
+
+## Plantillas
+
+- `plantillas/latex/ppizarror/originales`: copias base descargadas de Template-Latex; no se editan directamente.
+- `plantillas/latex/adaptadas/instituciones`: plantillas maestras para UnADM, IIIEPE u otra institucion.
+- `plantillas/latex/adaptadas/materias`: moldes derivados para una materia especifica.
+- `plantillas/entradas`: entradas historicas del template base.
 
 ## Revision previa
 
 - `Revisión/`: coloca aqui carpetas nuevas, como proyectos Slidev o materiales externos, antes de integrarlas al flujo principal.
 - La regla practica: nada se mueve a `trabajos/`, `referencias/` o `herramientas/` hasta decidir si sera materia, proyecto, recurso transversal o herramienta.
+- El contenido de `Revisión/` queda fuera de Git salvo `README.md` e `INVENTARIO.md`.
 
 ## Referencias
 

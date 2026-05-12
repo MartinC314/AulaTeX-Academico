@@ -1,0 +1,287 @@
+
+\chapter{Introducción}
+
+La primera investigación analítica conocida sobre estabilidad fue realizada por Maxwell en 1868, cuando analizó la estabilidad del regulador centrífugo de James Watt para controlar la velocidad, desarrollado en 1788. La teoría del control automático, tal como hoy se entiende, comenzó a tomar forma a inicios de la década de 1930, cuando los amplificadores con retroalimentación para comunicaciones empezaron a usarse comercialmente. El uso de la \textbf{retroalimentación} surgió con el objetivo de hacer que las características del amplificador fueran menos sensibles a las incertidumbres y anomalías físicas de los componentes electrónicos comunes de aquella época. La retroalimentación también permitió conferir propiedades definidas al “amplificador” como un todo.
+
+Como hoy es bien sabido, la retroalimentación también crea serios problemas de estabilidad. El primer trabajo que trató la inestabilidad fue publicado por \textbf{Nyquist (1932)}, quien formuló el célebre criterio de estabilidad de Nyquist. Su trabajo fue ampliado por \textbf{Black (1934)}, que investigó y analizó la estabilidad de los amplificadores con retroalimentación. La teoría del control automático avanzó de manera sustancial gracias al trabajo fundamental de \textbf{Bode (1945)}.
+
+Durante la Segunda Guerra Mundial, la teoría de la retroalimentación se orientó a resolver problemas de control relacionados con equipos bélicos, como la entonces novedosa instrumentación de radar, el control de submarinos y otros sistemas similares. La teoría de control avanzó con rapidez y, hacia finales de la década de 1950, lo que hoy se denomina \textbf{teoría clásica de control} permitía diseñar numerosos sistemas complejos basados en principios de retroalimentación. Más adelante, con la aparición de hardware muy sofisticado —como aeronaves avanzadas, misiles, naves espaciales, plantas químicas complejas y centrales nucleares—, los teóricos del control tuvieron que buscar y desarrollar nuevos enfoques de diseño, basados en lo que hoy llamamos \textbf{teoría moderna de control}, la cual puede entenderse, en cierto sentido, como una continuación natural de la teoría clásica. Por ello, una buena comprensión de la teoría clásica es requisito previo para entender las complejidades inherentes a las técnicas modernas de diseño de control.
+
+Tanto la teoría clásica como la moderna partieron inicialmente del estudio de procesos con parámetros conocidos y fijos. Desafortunadamente, las plantas complejas suelen ser \textbf{inciertas}, en el sentido de que sus parámetros no se conocen con exactitud; solo se conocen los rangos de sus valores. El sistema de control por retroalimentación debe comportarse de acuerdo con desempeños cuantitativamente especificados; en otras palabras, debe comportarse de manera \textbf{robusta} a pesar de las incertidumbres de la planta.
+
+El objetivo de este libro es aplicar enfoques prácticos de diseño, tanto clásicos como modernos, a sistemas de control por retroalimentación inciertos. El material del libro trata únicamente sistemas inciertos lineales e invariantes en el tiempo. Sin embargo, para fines de ingeniería, también resulta aplicable a plantas con parámetros que varían lentamente.
+
+
+\section{La Estructura y Componentes de un Sistema de Control Realimentado}
+Un sistema de control por retroalimentación es una combinación de componentes físicos que, en conjunto, cumplen una misión definida. En la \textbf{Figura 1.1} se muestra una estructura generalizada de un sistema de control por retroalimentación (SISO o MIMO), seguida de la explicación de sus distintos componentes.
+
+\insertimage[\label{img:estructura-general-retroalimentacion}]{2024_06_29_804c621bf2d98037ffbeg-015_451_1134_1462_737}{width=\textwidth}{Estructura general de retroalimentación de dos grados de libertad. El elemento \(G\) se denomina a veces red de control, compensador de control o simplemente controlador/compensador.}
+
+\subsection{Los componentes de un sistema de control realimentado}
+Se distinguen, básicamente, dos tipos de componentes funcionales:
+
+\begin{enumerate}
+  \item \textbf{Los componentes pertenecientes a la planta física definida que debe controlarse}, de modo que se alcancen los objetivos especificados del sistema. La \textbf{planta} denota la parte condicionada del sistema, cuyas salidas son las salidas del sistema. Puede describirse mediante un solo bloque de función de transferencia o, si es necesario y factible, mediante varios bloques de subplantas, \(P_1, P_2, \ldots, P_n\), de modo que puedan obtenerse beneficios adicionales de control al medir sus salidas.
+
+  \item \textbf{Los componentes pertenecientes al controlador del sistema de retroalimentación}, que son inherentes y una parte indispensable del sistema controlado, representados por los bloques de función de transferencia \(S, H, G, F_f, F_c\).
+
+\end{enumerate}
+
+\textbf{Descripción de los bloques principales:}
+
+\begin{itemize}
+  \item \textbf{\(G\)}: compensador dinámico cuya tarea principal es proporcionar al sistema de retroalimentación la estabilidad dinámica necesaria y los coeficientes definidos de error en estado estacionario. El compensador dinámico también se utiliza para satisfacer especificaciones definidas de lazo cerrado. Es un componente esencial de control en cualquier sistema con retroalimentación.
+  \item \textbf{\(S\)}: hardware del sensor que mide las salidas de la planta utilizadas para controlar el sistema de retroalimentación.
+  \item \textbf{\(H\)}: filtro dinámico cuyos objetivos principales son procesar las salidas de los sensores. Su función básica es atenuar el ruido inherente de los sensores y las señales asociadas con dinámicas estructurales de la planta (si estas existen), entre otros efectos.
+  \item \textbf{\(F_f\)}: prefiltro usado para moldear convenientemente el desempeño de seguimiento entrada-salida del sistema controlado. Si puede implementarse físicamente, proporciona al sistema un \textbf{segundo grado de libertad} para fines de diseño.
+  \item \textbf{\(F_c\)}: filtro de precomando que acelera intencionalmente la salida del sistema al acceder directamente a la entrada de la planta.
+\end{itemize}
+
+No hace falta decir que estos componentes del controlador pueden implementarse mediante hardware electrónico o mediante software en microprocesador.
+
+\subsection{Las señales en un sistema de control realimentado}
+Se distinguen distintas señales básicas, tales como señales externas de referencia y de perturbación, salidas del sistema y señales de control a la entrada de la planta.
+
+\begin{itemize}
+  \item \textbf{Entradas de referencia}: pueden ser de dos tipos:\\
+(i) entradas de mando generadas por operadores humanos, como un piloto, por ejemplo; o\\
+(ii) entradas de mando generadas por la cinemática de un cuerpo en movimiento, como en un sistema de radar que sigue un objeto volador.
+
+  \item \textbf{Entradas de perturbación}: son señales no deseadas que tienden a afectar al sistema controlado, actuando sobre la planta en diferentes puntos de entrada.
+
+  \item \textbf{Señales de ruido}: se producen dentro de los sensores físicos. Pueden causar deterioro en el desempeño del sistema de retroalimentación controlado.
+
+  \item \textbf{Señales de salida}: son las variables que deben controlarse. En un sistema MIMO, la salida es un vector cuyos elementos son las variables dinámicas de la planta. En general, no todas ellas se miden ni se especifican como controlables; incluso algunas podrían no ser medibles.
+
+  \item \textbf{Señales de control en la entrada de la planta}: a veces llamadas \textbf{esfuerzo de control}, son generadas por el compensador \(G\) e inyectadas a la entrada de la planta. Su nivel de amplitud debe mantenerse tan bajo como sea posible para evitar la saturación de la entrada de la planta.
+
+\end{itemize}
+
+\noindent\rule{\textwidth}{0.5pt}
+
+\section{¿Por qué Realimentación?}
+
+¿Por qué necesitamos aplicar retroalimentación para controlar un sistema físico cuya planta es matemáticamente conocida? Para responder de forma sencilla a esta pregunta, se simplifica la estructura de retroalimentación de la Figura 1.1 a la de la \textbf{Figura 1.2a}, donde \(P(s)\) se supone una planta SISO cuya salida es \(y(s)\).
+
+\begin{images}[\label{img:figura-1-2}]{Obtención de características entrada-salida sin retroalimentación. La idea central de la figura es mostrar que, en ausencia de perturbaciones e incertidumbre, podría intentarse imponer una dinámica deseada mediante un bloque directo delante de la planta.}
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-016_272_755_145_1069}{width=0.45\textwidth}{a.}
+  \imagesnewline
+  \addimage{2024_06_29_804c621bf2d98037ffbeg-016_285_1134_469_737}{width=0.45\textwidth}{b.}
+\end{images}
+
+Supóngase que la meta es obtener, para el sistema controlado, una función de transferencia entrada-salida especificada:
+
+\[
+T(s) = \frac{y(s)}{r(s)} \tag{1.2}
+\]
+
+Si la perturbación \(d(s)=0\), esta meta puede alcanzarse agregando delante de la planta una red de control
+
+\[
+G(s)=\frac{T(s)}{P(s)}
+\]
+
+como en la Figura 1.2b. Esto equivale a cancelar la dinámica de la planta y sustituirla por la dinámica especificada de \(T(s)\).
+
+\subsection{¿Qué tiene de malo este enfoque?}
+Aunque existen muchos argumentos a favor del uso de retroalimentación, aquí se presentan los dos principales:
+
+\subsection{A. Sensibilidad a incertidumbre en la planta}
+Para una planta perfectamente conocida, este procedimiento podría resultar satisfactorio. Pero, si la planta no se conoce exactamente, entonces \(G(s)\) será una solución errónea. Por tanto, la respuesta entrada-salida no será lo suficientemente parecida a la deseada. En casos extremos, si la planta \(P(s)\) incluye un polo inestable ubicado en \(+a\), incluso una incertidumbre muy pequeña \(\varepsilon\) en \(+a\) hará que la función de transferencia entrada-salida contenga un dipolo inestable de la forma
+
+\[
+\frac{s-a+\varepsilon}{s-a}
+\]
+
+porque ya no podrá lograrse una cancelación perfecta del polo inestable. En consecuencia, la salida de la planta divergerá inevitablemente.
+
+\subsection{B. Imposibilidad práctica de cancelar perturbaciones desconocidas}
+Si la perturbación \(d(s)\) fuera conocida, su efecto en la salida de la planta podría anularse inyectando a la entrada de la planta la señal corregida siguiente:
+
+\[
+ u_p(s) = \frac{r(s)T(s)}{P(s)} - d(s), \qquad y(s)=P(s)u_p(s) \tag{1.3}
+\]
+
+Entonces la salida sería la respuesta deseada \(y(s)=T(s)r(s)\). Pero, desafortunadamente, la perturbación \(d(s)\) rara vez es bien conocida y sus características por lo general no son deterministas. Por ello, la salida real puede desviarse fuertemente de la respuesta deseada debida únicamente a la entrada de mando \(r(s)\).
+
+\noindent\rule{\textwidth}{0.5pt}
+
+\section{Elementos a Considerar por Diseñadores de Sistemas de Control Realimentado}
+La estructura generalizada de retroalimentación se muestra en la Figura 1.1. Las ventajas obtenidas mediante retroalimentación son invaluables. Sin embargo, la propia retroalimentación introduce problemas prácticos. Supóngase que debemos usar retroalimentación alrededor de una planta estable para lograr ciertas características deseadas del sistema controlado. Si el sistema está mal diseñado, puede volverse inestable, aun cuando la planta sea, en esencia, un sistema físico estable. Comprender la estructura de retroalimentación ayuda a entender cuáles son los problemas de diseño y cómo serán tratados en este libro.
+
+\subsection{Especificaciones de diseño}
+La realimentación se usa para lograr características y desempeños especificados que, como ya se explicó, no pueden alcanzarse en lazo abierto. Principalmente se busca:
+
+\begin{enumerate}
+  \item \textbf{especificaciones cuantitativas de seguimiento entrada-salida}, y
+  \item \textbf{atenuación del efecto de perturbaciones externas esperadas} (aunque no exactamente conocidas), ya sea en la salida o en la entrada de la planta.
+\end{enumerate}
+
+Las plantas LTI que no incluyen polos ni ceros en el semiplano derecho (RHP) pueden controlarse mediante un controlador LTI para alcanzar cualquier especificación deseada de lazo cerrado, siempre que el nivel de ruido del sensor sea despreciable y que la planta tenga la capacidad física de proporcionar el esfuerzo de control requerido.
+
+Los sistemas estabilizados con plantas que contienen \textbf{polos en RHP} (pero no ceros en RHP) pueden sufrir un ancho de banda del lazo abierto demasiado elevado, intolerable desde el punto de vista de las limitaciones físicas. Lo contrario ocurre en sistemas estabilizados cuya planta contiene \textbf{ceros en RHP}.
+
+En resumen, cuando la planta contiene polos y/o ceros en el semiplano derecho, existen \textbf{limitaciones teóricas} sobre las especificaciones de lazo cerrado que pueden alcanzarse. Una tarea importante de este libro es tratar estas limitaciones de manera cuantitativa.
+
+\subsection{Incertidumbre de los parámetros de la planta}
+Los parámetros de la planta no se conocen exactamente; es decir, son inciertos y solo se conocen los rangos de sus valores. El desempeño nominal de lazo cerrado no cambiará drásticamente ante variaciones pequeñas de los parámetros de la planta. Sin embargo, si esos parámetros cambian de manera significativa, esto puede generar problemas serios en el diseño de sistemas de control por retroalimentación, en los que deben mantenerse la \textbf{estabilidad} y los \textbf{desempeños especificados}, a pesar de la incertidumbre conocida de la planta.
+
+Este es el llamado \textbf{problema de robustez}, uno de los principales objetivos de análisis y diseño del libro. Se mostrará que, si la planta incierta incluye ceros en RHP, no existe garantía de que las especificaciones inicialmente definidas puedan alcanzarse.
+
+\subsection{Saturación de la planta}
+Cuando deben alcanzarse especificaciones exigentes, el esfuerzo de control requerido puede sobrepasar las capacidades de la planta. En ese caso aparecen efectos no lineales que deben tratarse de manera adecuada.
+
+Si la planta puede subdividirse físicamente en dos o más subplantas en cascada, como en la Figura 1.1, entonces existe una ventaja en usar la salida de \(P_2\), si esta es medible, con el fin de obtener un mejor desempeño cerrando un lazo interno de retroalimentación.
+
+\subsection{Amplificación del ruido del sensor}
+Los sensores siempre están presentes en un sistema de control realimentado. Desafortunadamente, producen ruido eléctrico interno que se superpone a la señal medida y útil que debe enviarse al controlador \(G(s)\). Este ruido puede tener un efecto enorme en el diseño de cualquier sistema de retroalimentación.
+
+Como se verá, para lograr tanto baja sensibilidad del sistema de lazo cerrado frente a incertidumbres paramétricas como buen rechazo de perturbaciones externas, se necesita una \textbf{alta ganancia de lazo abierto} en un amplio rango de frecuencias.
+
+Por ejemplo, considérese el problema de atenuar la perturbación \(d(s)\) en la salida del sistema \(y(s)\) en la Figura 1.1:
+
+\[
+ y(s)=\frac{d(s)}{1+G(s)H(s)P(s)S(s)}=\frac{d(s)}{1+L(s)} \tag{1.4}
+\]
+
+Es claro que, para mantener pequeña a \(y(s)\) frente a la perturbación externa \(d(s)\), la magnitud de
+
+\[
+L(j\omega)=G(j\omega)H(j\omega)P(j\omega)S(j\omega)
+\]
+
+debe ser grande en un rango de frecuencias suficientemente amplio. Como la planta \(P(s)\) está dada y no puede modificarse, queda claro que la magnitud de \(G(j\omega)H(j\omega)S(j\omega)\) debe incrementarse para disminuir el nivel de \(y(s)\), es decir, para lograr una buena atenuación de perturbaciones.
+
+Pero aumentar la magnitud de \(G(j\omega)H(j\omega)S(j\omega)\) tiene una desventaja importante: el ruido del sensor \(n(s)\) se amplifica a la entrada de la planta de acuerdo con
+
+\[
+ u(s)=\frac{-G(s)H(s)}{1+G(s)H(s)P(s)S(s)}n(s)= -\frac{G(s)H(s)}{1+L(s)}n(s) \tag{1.5}
+\]
+
+Ahora considérese dos rangos de frecuencia.
+
+\subsubsection{(i) Rango donde \(|L(j\omega)| \gg 1\)}
+Generalmente esto aplica a bajas frecuencias, donde suele concentrarse la mayor parte de la energía de la perturbación. En ese caso,
+
+\[
+ u(s) \cong -\frac{n(s)}{P(s)S(s)}, \qquad |L(j\omega)| \gg 1 \tag{1.6}
+\]
+
+La Ec. (1.6) muestra que, en este rango de frecuencia, la amplificación del ruido no depende realmente del controlador diseñado \(G(s)\) ni del filtro del sensor \(H(s)\), sino exclusivamente de las propiedades de la planta \(P(s)\) y del hardware del sensor \(S(s)\).
+
+\subsubsection{(ii) Rango donde \(|L(j\omega)| \ll 1\)}
+En ese caso,
+
+\[
+ u(s) \cong -G(s)H(s)n(s), \qquad |L(j\omega)| \ll 1 \tag{1.7}
+\]
+
+La Ec. (1.7) muestra cualitativamente que, cuanto mayor sea la magnitud de \(G(j\omega)H(j\omega)\) en este rango, mayor será el efecto de la amplificación del ruido del sensor en la entrada de la planta. En general, la energía del ruido del sensor se concentra justamente en esta región. Así, controladores de mayor ancho de banda amplían el rango de frecuencias en el que el efecto del ruido blanco del sensor resulta significativo.
+
+\subsection{Conclusión práctica de esta sección}
+Diseñar el compensador de control para lograr un buen rechazo de perturbaciones externas empeora, en sentido contrario, la amplificación del ruido del sensor y todos los problemas asociados con ella. Por tanto, uno de los desafíos más básicos del control por retroalimentación es encontrar controladores satisfactorios que logren un compromiso entre estos problemas contrapuestos, presentes en la mayoría de los sistemas físicos reales. Este es uno de los temas centrales del libro.
+
+En síntesis, las técnicas de diseño con retroalimentación deben considerar cuantitativamente:
+
+\begin{itemize}
+  \item la sensibilidad aceptable de la función de transferencia de seguimiento entrada-salida ante la incertidumbre de la planta;
+  \item el rechazo de perturbaciones externas;
+  \item las limitaciones del sistema debidas a polos y ceros en RHP presentes en la planta; y
+  \item la amplificación del ruido del sensor, que, si no se atenúa adecuadamente, puede saturar la entrada de la planta.
+\end{itemize}
+
+\noindent\rule{\textwidth}{0.5pt}
+
+\section{Contenido del Libro}
+El libro trata sistemas lineales de retroalimentación \textbf{SISO} (una entrada, una salida) y \textbf{MIMO} (múltiples entradas, múltiples salidas). Las propiedades fundamentales de la retroalimentación se explican y comprenden con mayor claridad mediante sistemas SISO. Además, dado que algunas de las técnicas de diseño MIMO que se estudiarán se apoyan en procedimientos de diseño SISO, es natural dedicar los primeros capítulos principalmente a sistemas SISO, aunque se hará referencia a sistemas MIMO cuando sea necesario. Los capítulos restantes están dedicados a sistemas MIMO.
+
+A continuación se presenta una breve descripción del contenido de cada capítulo, procurando resaltar las interrelaciones más importantes entre ellos.
+
+\subsection{Capítulo 2}
+Este capítulo comienza definiendo el problema de retroalimentación. Después se tratan e ilustran propiedades básicas de la retroalimentación. A continuación se introduce y analiza la \textbf{función de sensibilidad entrada-salida}, tan importante para la calidad del sistema de control diseñado. Luego se define la \textbf{estabilidad interna} de los sistemas de retroalimentación y se demuestra un teorema básico relacionado con ese tema.
+
+Se revisan los conceptos básicos de diseño. Se explican los principios de \textbf{loop shaping}. Los enfoques de diseño del libro se basan en gran medida en técnicas en el dominio de la frecuencia. Primero se enuncia el criterio fundamental de estabilidad de Nyquist y después se define la \textbf{estabilidad relativa} clásica. Luego se estudian técnicas de diseño orientadas por Nyquist usando diagramas de \textbf{Bode}, la carta de \textbf{Nichols} y la carta de Nichols invertida.
+
+Se explican e ilustran, con ejemplos completamente resueltos, técnicas básicas de loop shaping para lograr márgenes de estabilidad, anchos de banda especificados y atenuación suficiente tanto de perturbaciones externas como del ruido del sensor.
+
+También se discuten estructuras de retroalimentación de \textbf{uno} y de \textbf{dos grados de libertad}, y se ejemplifica detalladamente el loop shaping para ambas. Se enuncian y comparan las limitaciones y superioridades de ambas estructuras.
+
+Se introducen los compromisos de diseño en sistemas con retroalimentación. Después se analizan requisitos de desempeño tales como márgenes de ganancia y de fase, expresados en términos de las funciones de sensibilidad y de transferencia de unidad-retroalimentada. A la definición de las sensibilidades \textbf{ponderada} y \textbf{mixta} le sigue la definición del \textbf{problema estándar del regulador óptimo \(H_{\infty}\)}. Finalmente, se ilustra el loop shaping mediante el uso de un algoritmo de optimización en norma \(H_{\infty}\), con un ejemplo resuelto en detalle.
+
+\subsection{Capítulo 3}
+Este capítulo trata características básicas y temas prácticos en el diseño de sistemas SISO con retroalimentación. Las especificaciones de diseño suelen darse en el dominio del tiempo. Sin embargo, dado que las técnicas de diseño se realizan principalmente en el dominio de la frecuencia, primero se traducen a especificaciones en frecuencia las especificaciones prácticas en tiempo para sistemas de fase mínima y no mínima.
+
+Se desarrollan técnicas de traducción del dominio del tiempo al dominio de la frecuencia y los resultados se resumen en gráficas apropiadas y relaciones analíticas aproximadas. Existe una traducción directa y exacta del dominio del tiempo al de la frecuencia si se conoce la parte real de una función de transferencia. Desafortunadamente, por razones prácticas, los ingenieros de control trabajan mayormente con la \textbf{magnitud} de la función de transferencia, para la cual solo existen relaciones aproximadas entre frecuencia y tiempo. Esas aproximaciones se enuncian y analizan en este capítulo.
+
+Se discute el problema de lograr, de forma óptima, un ancho de banda de ganancia especificado para funciones de transferencia de fase mínima, a través de la llamada \textbf{Característica Ideal de Bode}. Los sistemas que incluyen ceros y/o polos en RHP, y/o retardo puro, sufren limitaciones inherentes para alcanzar anchos de banda deseados. Estas limitaciones se analizan y se obtienen resultados analíticos para predecir los mejores anchos de banda alcanzables cuando tales polos y ceros en RHP están incluidos en la función de transferencia de la planta. Se presentan además algunos resultados nuevos, ilustrados con soluciones numéricas detalladas.
+
+La \textbf{estabilización} es un tema que merece especial atención. La \textbf{parametrización de Youla} (o \textbf{Q-parametrización}) es una técnica de síntesis para encontrar todos los controladores estabilizantes para una planta dada. Esta técnica, explicada aquí para sistemas SISO con retroalimentación, se ilustra con ejemplos resueltos.
+
+Cuando la planta incluye varios polos y ceros en RHP, suele ser difícil elegir la estructura matemática correcta del compensador que estabilizará el sistema de retroalimentación. Los procedimientos mecanizados que aparecen en la literatura para enfrentar este problema suelen producir una solución estable, pero en general con ganancia de lazo abierto de ancho de banda muy limitado y con márgenes de fase y ganancia pobres, lo cual implica malas propiedades de retroalimentación. Se explican e ilustran con ejemplos detallados procesos de diseño orientados a obtener las mejores propiedades de retroalimentación posibles a partir de una planta difícil, inestable y no mínima fase.
+
+\subsection{Capítulo 4}
+El material de los capítulos previos trata la síntesis y el diseño de sistemas de retroalimentación en los que la planta está bien definida y sus parámetros son fijos y conocidos. En sistemas reales, los parámetros ni se conocen bien ni pueden considerarse completamente invariantes en el tiempo. Cuando la planta lineal es altamente incierta, las técnicas de diseño de los capítulos 2 y 3 ya no pueden usarse con éxito.
+
+En este capítulo se introduce una planta altamente incierta cuyos parámetros no se conocen con precisión. Solo se conocen los rangos de sus valores. Se desarrollan técnicas de diseño para satisfacer las especificaciones a pesar de las incertidumbres de la planta. Aquí aparece formalmente el tema de la \textbf{robustez}. La teoría detrás de esta técnica se conoce hoy como \textbf{Teoría Cuantitativa de la Retroalimentación (QFT)} y se basa en la teoría clásica de control en frecuencia.
+
+La técnica fundamental presentada para plantas inciertas de fase mínima puede emplearse para obtener una solución de ingeniería para cualquier conjunto de especificaciones a priori del sistema controlado, naturalmente al costo de una función de transmisión de lazo con ancho de banda amplio.
+
+Cuando se consideran plantas con ceros en RHP o sistemas de retroalimentación muestreados, la técnica fundamental debe modificarse ligeramente. Además, debido a limitaciones inherentes en sistemas que incluyen ceros en RHP, puede ocurrir incluso que el diseño no logre cumplir todas las especificaciones inicialmente planteadas. Completar el diseño requiere relajar el desempeño inicialmente exigido e intentar una iteración adicional.
+
+La técnica fundamental, con todas sus variantes para sistemas de fase no mínima y sistemas muestreados, se ilustra con ejemplos prácticos resueltos sistemáticamente y evaluados mediante simulaciones en el dominio del tiempo y en el de la frecuencia.
+
+También se trata en este capítulo el diseño de sistemas inciertos basado en el enfoque de control óptimo \(H_{\infty}\). Se introducen y ejemplifican modelos de incertidumbre de planta compatibles con el paradigma de la norma \(H_{\infty}\). Luego se aborda el diseño para estabilidad robusta y para desempeño robusto, también mediante ejemplos detallados. Finalmente, el problema del sistema SISO incierto lineal con dos grados de libertad se resuelve con el enfoque de control óptimo \(H_{\infty}\) usando principios de QFT. Tanto el diseño QFT como el diseño QFT/\(H_{\infty}\) concluyen con soluciones de calidad comparable.
+
+\subsection{Capítulo 5}
+Este capítulo trata plantas en cascada de entrada única. La existencia de una variable interna adicional medible puede aprovecharse en el diseño de un sistema de control por retroalimentación \textbf{SIMO} (una entrada, múltiples salidas) para alcanzar el desempeño especificado con un nivel reducido de ruido de sensor amplificado en la entrada de la planta. Cada variable medible adicional permite cerrar un lazo de retroalimentación interno adicional, reduciendo así la carga de control sobre el lazo principal externo. Esta posibilidad es especialmente importante cuando se trabaja con plantas inciertas.
+
+\subsection{Capítulo 6}
+Este capítulo trata la síntesis y el diseño de sistemas MIMO LTI con retroalimentación. El control de sistemas MIMO es una de las áreas más investigadas de las últimas décadas. Se aborda tanto en el marco del espacio de estados como en el dominio de la frecuencia y del plano \(s\).
+
+Primero se explican e ilustran algunas técnicas comunes de diseño para sistemas MIMO “ciertos”, en el plano \(s\) y en frecuencia, tales como la diagonalización de la matriz de transferencia de lazo abierto, la no interacción mediante inversión de la matriz de transferencia de la planta y la técnica de cierre secuencial de lazos.
+
+También se enuncian resultados generales sobre \textbf{estabilidad interna} en sistemas MIMO. Luego se explica la \textbf{Q-parametrización} como preludio a la teoría de los algoritmos que resuelven el problema estándar del regulador óptimo \(H_{\infty}\).
+
+El objetivo principal de este capítulo es presentar herramientas cuantitativas de diseño para sintetizar un controlador alrededor de una planta MIMO altamente incierta, con el propósito de lograr especificaciones deseadas de seguimiento entrada-salida. Cuando los sistemas MIMO inciertos se tratan en el marco de QFT, la idea básica es dividir el proceso de diseño en una secuencia de \(n\) diseños SISO, donde \(n\) es el orden del sistema MIMO. La solución al problema original es entonces la combinación de las soluciones de cada etapa secuencial con las técnicas SISO desarrolladas en el Capítulo 4.
+
+\subsection{Capítulo 7}
+La finalidad principal del Capítulo 8 es resolver el problema MIMO incierto con dos grados de libertad en el contexto de la optimización en norma \(H_{\infty}\). En este caso, aunque los requisitos de desempeño técnico también se definen en el dominio de la frecuencia, los algoritmos fundamentales de optimización \(H_{\infty}\) tienen sus raíces en la formulación en \textbf{espacio de estados}.
+
+Además, como aquí se enfrenta un problema MIMO, es esencial contar al menos con una comprensión cercana —aunque sea introductoria— de la teoría básica de optimización para diseño de control MIMO, culminando en la solución del problema del \textbf{Regulador Cuadrático Lineal (LQR)}. Eso es precisamente lo que se desarrolla en este capítulo.
+
+Después, las técnicas LQR se adaptan para resolver problemas de seguimiento de trayectorias, como el seguimiento implícito y explícito de modelo. Luego se revisa brevemente el problema \textbf{Lineal-Cuadrático-Gaussiano (LQG)} para aquellos casos en que algunos estados no son medibles. Como esos estados no pueden medirse, deben estimarse de alguna manera óptima para permitir la implementación de la ley de control óptima obtenida con la técnica LQR. La solución de estos problemas se vincula con la solución de ecuaciones matriciales de Riccati. Por lo general, las demostraciones de teoremas importantes se omiten, pues pueden encontrarse en excelentes libros de texto y artículos técnicos referenciados cuando se requiere.
+
+Comprender estos temas es una etapa necesaria antes de abordar la solución del problema MIMO incierto con dos grados de libertad dentro del contexto de optimización en norma \(H_{\infty}\).
+
+\subsection{Capítulo 8}
+Este capítulo trata el problema general de retroalimentación MIMO incierta resuelto con el paradigma de optimización en norma \(H_{\infty}\).
+
+Primero se explican algunos hechos elementales sobre \textbf{valores singulares}, así como su uso para medir el tamaño de matrices de transferencia y para definir desempeños en sistemas MIMO. Después se plantea el \textbf{problema estándar del regulador \(H_{\infty}\)} y se bosqueja la matemática de un algoritmo de optimización para resolverlo.
+
+Finalmente se presenta una técnica de diseño para resolver el problema MIMO incierto de dos grados de libertad. El mismo ejemplo de planta MIMO incierta resuelto en el Capítulo 6 con la técnica clásica QFT se resuelve aquí dentro del paradigma de control \(H_{\infty}\), complementado con principios de QFT. Luego se comparan los desempeños alcanzados con ambas técnicas de diseño.
+
+\subsection{Apéndices}
+Los apéndices del libro tienen la intención de resumir algunos aspectos importantes y bien conocidos de la teoría de sistemas lineales usados a lo largo del texto. Naturalmente, no incluyen demostraciones rigurosas.
+
+\begin{itemize}
+  \item \textbf{Apéndice A}: trata los \textbf{grafos de flujo de señal}. El resultado final es la conocida \textbf{fórmula de ganancia de Mason}, útil para resolver gráficamente ecuaciones lineales simultáneas, calcular transferencias entre señales y obtener sistemáticamente funciones de transferencia de estructuras de retroalimentación complicadas.
+
+  \item \textbf{Apéndice B}: al tratar problemas MIMO, especialmente aquellos resueltos con algoritmos de optimización en norma \(H_{\infty}\), se usan ampliamente nociones de norma vectorial y matricial. Aquí se enuncian y explican igualdades y desigualdades de valores singulares. También se definen nociones básicas de la formulación en espacio de estados, así como eigenvalores y eigenvectores de matrices reales de funciones de transferencia, para su uso en conexión con el criterio generalizado de estabilidad de Nyquist. Además, se definen transformaciones lineales fraccionales y relaciones asociadas utilizadas en la solución del regulador óptimo \(H_{\infty}\).
+
+  \item \textbf{Apéndice C}: cuando el diseño de control se realiza en el dominio de la frecuencia, el compensador se obtiene durante la etapa de loop shaping agregando polos y ceros reales de primer orden, polos y ceros complejos de segundo orden, y también redes lead-lag o lag-lead. Otro recurso muy útil es una red de control compuesta por dos polos y dos ceros colocados de tal manera que se obtienen características especiales de ganancia y fase durante el loop shaping. Para ello se incluyen gráficas y tablas útiles. También se definen la carta de Nichols y su versión invertida, junto con una explicación práctica de su uso.
+
+  \item \textbf{Apéndice D}: presenta, para conveniencia del lector, definiciones y teoremas básicos de las teorías de \textbf{Fourier}, \textbf{Laplace} y \textbf{\(Z\)}.
+
+  \item \textbf{Apéndice E}: la teoría del control por retroalimentación trata con funciones analíticas \(F(s)\) en el plano \(s\). \(F(s)\) puede describir la dinámica de un proceso lineal —usualmente llamado planta— o representar la función de transmisión de lazo abierto o de lazo cerrado en sistemas de retroalimentación. De hecho, todas las teorías de control en el dominio \(s\) se basan en este tipo de funciones.
+
+Cuando se trabaja en el dominio práctico de la frecuencia, a cada valor de \(s=j\omega\) le corresponde un valor de la función en el plano complejo, expresado como
+\[
+F(j\omega)=A(\omega)+jB(\omega)
+\]
+Las partes real e imaginaria de estas funciones desempeñan un papel importante en el análisis de sistemas lineales. Además, existen relaciones muy importantes entre esas partes real e imaginaria, con fuerte impacto sobre propiedades prácticas de retroalimentación, como el ancho de banda máximo alcanzable. Este apéndice resume relaciones útiles, de carácter práctico, entre las partes real e imaginaria de funciones analíticas usadas en teoría de control, y también señala resultados importantes sobre restricciones teóricas de dichas funciones. El material sigue de cerca el trabajo fundamental de Bode (1945), así como aportaciones de Guillemin (1949), Seshu y Balabanian (1959) y Horowitz (1963).
+
+  \item \textbf{Apéndice F}: investiga cuál es el \textbf{orden mínimo de un compensador} necesario para lograr la estabilización de un sistema de retroalimentación específico cuando se utiliza un procedimiento de ubicación de polos, como en una técnica de diseño presentada en el Capítulo 3.
+
+  \item \textbf{Apéndice G}: los \textbf{coeficientes de error en estado estacionario} desempeñan un papel importante al preparar especificaciones para un sistema controlado por retroalimentación. Aquí se definen e ilustran los coeficientes usuales para entradas de posición, velocidad y aceleración en distintos tipos de sistemas de retroalimentación.
+
+\end{itemize}

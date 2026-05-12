@@ -1,0 +1,192 @@
+Se realizan 7 programas en PSEINT, cada uno con su respectivo pseudocódigo, diagrama de flujo y ejecución. Los programas son los siguientes:
+\begin{enumerate}
+	\item Suma de dos números.
+	\item Operaciones básicas (suma, resta, multiplicación, división).
+	\item Energía potencial en caída libre ($E_{pot} = mgh$).
+	\item Volumen de una esfera ($V = \frac{4}{3}\pi r^3$).
+	\item Generación de recibo de luz.
+	\item Conversión de acres a hectáreas.
+	\item Conversión de pies y libras a metros y kilogramos.
+\end{enumerate}
+
+%\begin{multicols}{2}
+
+\section{Suma de dos números}
+
+El programa solicita al usuario ingresar dos números, realiza la suma de ambos y muestra el resultado en pantalla. El pseudocódigo, diagrama de flujo y ejecución se presentan a continuación.		
+	
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo del programa de suma de dos números.}
+Algoritmo SumaDosNumeros
+    Escribir "Ingrese el primer número:"
+    // Escribe el primer número en pantalla y lo lee desde el teclado
+    Leer numero1
+    Escribir "Ingrese el segundo número:"
+    // Escribe el segundo número en pantalla y lo lee desde el teclado
+    Leer numero2
+    // Realiza la suma de los dos números y almacena el resultado en la variable suma
+    suma <- numero1 + numero2
+    // Escribe el resultado de la suma en pantalla
+    Escribir "El resultado de la suma es: ", suma
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaSumaDosNumeros}]{wVTA6MDTxNuGsL_CoY_f9eVqoQwKmprMQ0_UBUYD8Mc_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de suma de dos números.}
+
+\insertimage[\label{img:ejecucionSumaDosNumeros}]{QRmCLQYLN09bKG1r-KeCjKUBVgviZE3uglSzaakOGUE_original_fullsize}{width=0.45\textwidth}{Ejecución del programa de suma de dos números.}
+
+\section{Suma, Resta, Multiplicación y División de dos números}
+
+El programa solicita al usuario ingresar dos números, realiza las operaciones de suma, resta, multiplicación y división, y muestra los resultados en pantalla. El pseudocódigo, diagrama de flujo y ejecución se presentan a continuación.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo del programa de operaciones básicas.}
+Algoritmo OperacionesBasicas
+    Escribir "Ingrese el primer número:"
+    // Lee el primer valor ingresado por el usuario
+    Leer numero1
+    Escribir "Ingrese el segundo número:"
+    // Lee el segundo valor ingresado por el usuario
+    Leer numero2
+    // Calcula la suma de ambos números
+    suma <- numero1 + numero2
+    // Calcula la resta del primer número menos el segundo
+    resta <- numero1 - numero2
+    // Calcula la multiplicación de ambos números
+    multiplicacion <- numero1 * numero2
+    // Valida que el divisor sea diferente de cero antes de dividir
+    Si numero2 <> 0 Entonces
+        // Realiza la división cuando es válida
+        division <- numero1 / numero2
+    Sino
+        // Muestra un mensaje de error si el divisor es cero
+        Escribir "No se puede dividir por cero"
+    FinSi
+    // Muestra todos los resultados calculados
+    Escribir "Suma: ", suma
+    Escribir "Resta: ", resta
+    Escribir "Multiplicación: ", multiplicacion
+    Escribir "División: ", division
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaOperacionesBasicas}]{VlDw_pMjVS0DTo9f96Sqe7TrbfeD021Rf_F-i0c3AG8_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de operaciones básicas.}
+
+\insertimage[\label{img:ejecucionOperacionesBasicas}]{g4BahtJicLW6VnQD7Phe7xrrqIutu_A_lt0i_BFeH5c_original_fullsize}{width=0.45\textwidth}{Ejecución del programa de operaciones básicas.}
+
+\section{Energía potencial de un cuerpo en caída libre}
+
+El programa calcula la energía potencial de un cuerpo en caída libre utilizando la fórmula $E_{pot} = mgh$, donde $m$ es la masa del cuerpo, $g$ es la aceleración debido a la gravedad (9.81 m/s²) y $h$ es la altura desde la cual cae el cuerpo. El pseudocódigo, diagrama de flujo y ejecución se presentan a continuación.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo del programa de energía potencial.}
+Algoritmo EnergiaPotencial
+	Escribir "Ingrese la masa del cuerpo (en kg):"
+	// Lee la masa del cuerpo ingresada por el usuario
+	Leer masa
+	Escribir "Ingrese la altura desde la cual cae el cuerpo (en metros):"
+	// Lee la altura desde la cual cae el cuerpo ingresada por el usuario
+	Leer altura
+	// Define la constante de gravedad
+	gravedad <- 9.81
+	// Calcula la energía potencial utilizando la fórmula Epot = mgh
+	energia_potencial <- masa * gravedad * altura
+	// Muestra el resultado de la energía potencial en pantalla
+	Escribir "La energía potencial del cuerpo es: ", energia_potencial, " Joules"
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaEnergiaPotencial}]{6_rVw212epf2vyUVNSIDrqbcmMXGcnvgFx9RHssXgCg_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de energía potencial.}
+
+\insertimage[\label{img:ejecucionEnergiaPotencial}]{ZEAn9IWjIodIKlQt6pWWjhDDPMShedOIDWDW5c1VS5A_original_fullsize}{width=0.45\textwidth}{Ejecución del programa de energía potencial.}
+
+\section{Volumen de una esfera}
+
+El programa calcula el volumen de una esfera utilizando la fórmula $V = \frac{4}{3}\pi r^3$, donde $r$ es el radio de la esfera. El pseudocódigo, diagrama de flujo y ejecución se presentan a continuación.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo del programa de volumen de una esfera.}
+Algoritmo calculoVolumenEsfera
+    Escribir "Ingrese el radio de la esfera (en metros):"
+    // Lee el radio de la esfera ingresado por el usuario
+    Leer radio
+    // Calcula el volumen de la esfera utilizando la fórmula vol = (4/3) * π * r^3
+    volumen <- (4/3) * 3.14159 * (radio^3)
+    // Muestra el resultado del volumen calculado
+    Escribir "El volumen de la esfera es: ", volumen, " metros cúbicos"
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaVolumenEsfera}]{0IH7toh9jWq0SrzXVHQ4bdC4FBfhl3t72cQ7H-4tj_U_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de volumen de una esfera.}
+
+\insertimage[\label{img:ejecucionVolumenEsfera}]{-57AH2iXf95ibZNPnJ48dlz0lr8et5lp83lDMfH6MaU_original_fullsize}{width=0.45\textwidth}{Ejecución del programa de volumen de una esfera.}
+
+\section{Recibo de luz}
+
+El programa genera un recibo de luz a partir de los datos ingresados por el usuario: nombre del cliente, consumo en kilowatts y tarifa del kilowatt. El recibo muestra el nombre del cliente y el pago total. El pseudocódigo, diagrama de flujo y ejecución se presentan a continuación.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo del programa de recibo de luz.}
+Algoritmo generarReciboLuz
+    Escribir "Ingrese el nombre del cliente:"
+    // Lee el nombre del cliente ingresado por el usuario
+    Leer nombreCliente
+    Escribir "Ingrese el consumo en kilowatts:"
+    // Lee el consumo en kilowatts ingresado por el usuario
+    Leer consumoKilowatts
+    Escribir "Ingrese la tarifa del kilowatt:"
+    // Lee la tarifa del kilowatt ingresada por el usuario
+    Leer tarifaKilowatt
+    // Calcula el pago total multiplicando el consumo por la tarifa
+    pagoTotal <- consumoKilowatts * tarifaKilowatt
+    // Muestra el recibo con el nombre del cliente y el pago total
+    Escribir "Recibo de la compañía de la luz"
+    Escribir "Cliente: ", nombreCliente
+    Escribir "Pago total: ", pagoTotal
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaReciboLuz}]{VPCyOpBiWVDx3o0B4pRpBT5xGlO0iJVtVdFnh1Iecbk_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de recibo de luz.}
+
+\insertimage[\label{img:ejecucionReciboLuz}]{0X7n2SguGBr7fJO7MA9w6AawY7YvsEjsei3EmUrH7-0_original_fullsize}{width=0.45\textwidth}{Ejecución del programa de recibo de luz.}
+
+\section{Conversión de acres a hectáreas}
+
+El programa convierte la extensión de un terreno de acres a hectáreas utilizando las equivalencias: 1 acre = 4047 m² y 1 hectárea = 10000 m². El programa solicita al usuario ingresar la extensión del terreno en acres, realiza la conversión y muestra el resultado en pantalla en hectáreas. El pseudocódigo, diagrama de flujo y ejecución se presentan a continuación.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo del programa de conversión de acres a hectáreas.}
+Algoritmo conversionAcresHectareas
+    Escribir "Ingrese la extensión del terreno en acres:"
+    // Lee la extensión del terreno en acres ingresada por el usuario
+    Leer extensionAcres
+    // Convierte la extensión de acres a hectáreas utilizando la equivalencia 1 acre = 0.4047 hectáreas
+    extensionHectareas <- extensionAcres * 0.4047
+    // Muestra el resultado de la conversión en pantalla
+    Escribir "La extensión del terreno en hectáreas es: ", extensionHectareas, " ha"
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaConversionAcresHectareas}]{TlppQIz-eW4O78lhtq5lW5ghqqjOnd57OmoTqxjdPgU_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de conversión de acres a hectáreas.}
+
+\insertimage[\label{img:ejecucionConversionAcresHectareas}]{6ixxdOeiDU_dlse8QuXMQ8Es0o8gXuFspW5Ug76Kx04_original_fullsize}{width=0.45\textwidth}{Ejecución del programa de conversión de acres a hectáreas.}
+%
+\section{Conversión de pies y libras a metros y kilogramos}
+
+El programa solicita al usuario ingresar la longitud en pies y el peso en libras, realiza la conversión a metros y kilogramos utilizando las equivalencias dadas, y muestra los resultados en pantalla. El pseudocódigo, diagrama de flujo y ejecución se presentan a continuación.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo del programa de conversión de pies y libras a metros y kilogramos.}
+Algoritmo conversionPiesLibras
+    Escribir "Ingrese la longitud en pies:"
+    // Lee la longitud en pies ingresada por el usuario
+    Leer longitudPies
+    Escribir "Ingrese el peso en libras:"
+    // Lee el peso en libras ingresado por el usuario
+    Leer pesoLibras
+    // Convierte la longitud de pies a metros utilizando la equivalencia 1 pie = 0.3048 metros
+    longitudMetros <- longitudPies * 0.3048
+    // Convierte el peso de libras a kilogramos utilizando la equivalencia 1 libra = 0.45359 kilogramos
+    pesoKilogramos <- pesoLibras * 0.45359
+    // Muestra los resultados de la conversión en pantalla
+    Escribir "La longitud en metros es: ", longitudMetros, " m"
+    Escribir "El peso en kilogramos es: ", pesoKilogramos, " kg"
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaConversionPiesLibras}]{WQhtTmkyyyRaY4ecjoMBHaPLd7plI45D--nv3TSS3Tg_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de conversión de pies y libras a metros y kilogramos.}
+
+\insertimage[\label{img:ejecucionConversionPiesLibras}]{6TEUI5N0AJjGVBWvXW2EhrcY4HKP0jGRqrtdIqXDXa4_original_fullsize}{width=0.45\textwidth}{Ejecución del programa de conversión de pies y libras a metros y kilogramos.}

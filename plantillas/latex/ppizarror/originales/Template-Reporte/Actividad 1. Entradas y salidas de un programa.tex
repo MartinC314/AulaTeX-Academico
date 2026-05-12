@@ -1,0 +1,435 @@
+% CREACIÓN DEL DOCUMENTO
+\documentclass[
+	spanish, % Idioma: spanish, english, etc.
+	letterpaper, oneside
+]{article}
+
+% INFORMACIÓN DEL DOCUMENTO
+\def\documenttitle {Actividad 1: Entradas y salidas de un programa}
+\def\documentsubtitle {}
+\def\documentsubject {Entradas y salidas de un programa}
+\def\documentdate {\today}
+
+\def\documentauthor {Emilio Abraham Castillo Urdiales}
+\def\coursename {Metodología de la Programación}
+\def\coursecode {Enero -Junio 2026}
+
+\def\universityname {Universidad Autónoma de Nuevo Léon}
+\def\universityfaculty {Facultad de Ingeniería Mecánica y Eléctrica}
+\def\universitydepartment {Ingeniería en Administración y Sistemas}
+\def\universitydepartmentimage {departamentos/fcfm}
+\def\universitylocation {San Nicolás de los Garza, Nuevo León, México}
+
+% IMPORTACIÓN DEL TEMPLATE
+\input{template}
+
+% INICIO DE PÁGINAS
+\begin{document}
+
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\templatePagecfg
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= Descripción de la actividad ================
+%Cada programa deberá ser entregado en la actividad programada en Teams como "Actividad fundamental 1"
+%Se deberán entregar 7 programas (.psc) Generados por PSEINT
+%Además de esto, deberán entregar un PDF con todos los diagramas, pseudocodigos y ejecuciones de sus programas especificando cual programa es cada uno.
+%
+%Ejemplo:
+%Programa 1:
+%*Foto de pseudocódigo (Screenshot)
+%*Foto de diagrama (Screenshot)
+%*Foto de la ejecución del programa (Screenshot)
+%Programa 2:
+%*Foto de pseudocodigo (Screenshot)
+%*Foto de diagrama (Screenshot)
+%*Foto de la ejecución del programa (Screenshot)
+%Así con los 7 programas
+%RESUMEN: se entregarán:
+%7 archivos .psc (no comprimidos, si se entregan comprimidos se bajarán puntos)
+%1 PDF (no .Docx ni .Pptx)
+%||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+%Programa 1: Suma de dos números y mostrar el resultado
+%Programa 2: Suma, Resta, Multiplicación y división de dos números (mostrar los 4 resultados)
+%Programa 3: Programa el cual calcule la energía potencial de un cuerpo en caída libre. (Epot = mgh)
+%
+%Programa 4: Programa Que calcule e imprima el volumen de una esfera vol $=4 / 3 \Pi r^3$
+%Programa 5: La compañía de la luz desea generar el recibo de un cliente a partir de los siguientes datos:
+%Nombre del cliente
+%Consumo en kilowatts
+%Tarifa del kilowatt.
+%El recibo solo deberá contener el nombre y pago del cliente.
+%Programa 6: Una persona compró un terreno en un país. La extensión del terreno está especificada en acres. Introducir como dato la extensión del terreno en acres, calcular e imprimir la extensión del mismo en hectáreas.
+%- Un acre $=4047 \mathrm{~m} 2$.
+%- Una hectárea $=10000 \mathrm{~m} 2$.
+%
+%Programa 7: Introducir como datos los valores de la longitud y el peso de un objeto expresado en pies y libras, imprimir los datos de este objeto pero expresado en metros y kilogramos.
+%- Un pie $=0.3048$ Mts.
+%- Una libra $=0.45359 \mathrm{Kgs}$.
+
+% ======================= Ejemplos de pseudocódigo con Pseint =======================
+%// este es el ejemplo más simple de esta ayuda, 
+%// toma dos numeros, los suma y muestra el resultado
+%
+
+%Algoritmo Suma
+%
+%
+%// para cargar un dato, se le muestra un mensaje al usuario
+%// con la instrucción Escribir, y luego se lee el dato en 
+%// una variable (A para el primero, B para el segundo) con 
+%// la instrucción Leer
+%
+%Escribir "Ingrese el primer numero:"
+%Leer A
+%
+%Escribir "Ingrese el segundo numero:"
+%Leer B
+%
+%
+%// ahora se calcula la suma y se guarda el resultado en la
+%// variable C mediante la asignación (<-)
+%
+%C <- A+B
+%
+%
+%// finalmente, se muestra el resultado, precedido de un 
+%// mensaje para avisar al usuario, todo en una sola
+%// instrucción Escribir
+%
+%Escribir "El resultado es: ",C
+%
+%FinAlgoritmo
+
+%// Este ejemplo muestra el uso de expresiones, operadores y funciones matematicas
+%
+%Algoritmo Matematicas
+%
+%
+%EligeSalir<-Falso
+%Escribir 'Ingresar un número:'
+%Leer N
+%Repetir
+%Escribir ' '
+%Escribir 'Presione una tecla para continuar'
+%Esperar Tecla
+%Limpiar Pantalla
+%Escribir 'Elija una opción:'
+%Escribir '  1 - Seno, coseno, arcotangente'
+%Escribir '  2 - Lograritmo natural, función exponencial'
+%Escribir '  3 - Truncar, redondear'
+%Escribir '  4 - Raíz cuadrada'
+%Escribir '  5 - Valor absoluto'
+%Escribir '  6 - Separar parte entera y decimal'
+%Escribir '  7 - Hallar factorial'
+%Escribir '  8 - Averiguar si es primo'
+%Escribir '  9 - Ingresar otro número'
+%Escribir '  0 - Salir'
+%Escribir ' '
+%Leer eleccion
+%Segun eleccion Hacer
+%1: 
+%Escribir 'Seno:',Sen(N)
+%Escribir 'Coseno:',Cos(N)
+%Escribir 'Arcotangente:',Atan(N)
+%2: 
+%Si N<=0
+%Entonces Escribir 'El numero debe ser mayor a cero!'
+%SiNo
+%Escribir 'Logaritmo natural: ',ln(N)
+%Escribir 'Función exponencial: ',exp(N)
+%FinSi
+%3: 
+%Escribir 'Truncar: ',trunc(N)
+%Escribir 'Redondear: ',redon(N)
+%4: Escribir 'Raiz Cuad.: ',rc(N)
+%5: Escribir 'Valor Abs.: ',abs(N)
+%6: 
+%Escribir 'Parte Entera: ',Trunc(n)
+%Escribir 'Parte Decimal: ',n-Trunc(n)
+%7: 
+%Si N<>Trunc(N)
+%Entonces
+%Escribir 'El numero debe ser entero!'
+%SiNo
+%Si abs(N)>50
+%Entonces Escribir 'Resultado muy grande!'
+%SiNo
+%r<-1; f<-1
+%Mientras f<=abs(N) Hacer
+%Si N<0 
+%Entonces r<-(-f)*r
+%SiNo
+%r<-f*r
+%FinSi
+%f<-f+1
+%FinMientras
+%Escribir 'Factorial:',r
+%FinSi
+%FinSi
+%8: 
+%Si N<>Trunc(N) Entonces
+%Escribir 'El numero debe ser entero!'
+%SiNo
+%Si N<0  entonces 
+%Nu<-N*(-1)
+%SiNo
+%Nu<-N
+%FinSi
+%Si N mod 2 = 0 Entonces 
+%Escribir 'Numero Primo:',Nu=2
+%Si Nu<>2 Entonces
+%Escribir N,'=2x',N/2
+%FinSi
+%SiNo
+%EsPrimo<-Nu<>1 
+%Nu<-RC(Nu)
+%Divisor<-3
+%Mientras Divisor<=Raiz(Nu) & EsPrimo Hacer
+%Si N mod Divisor = 0 Entonces 
+%EsPrimo<-Falso
+%Sino
+%Divisor<-Divisor+2
+%FinSi
+%FinMientras
+%Escribir 'Numero primo:',EsPrimo
+%Si N>1 & ~ EsPrimo Entonces 
+%Escribir N,'=',Divisor,'x',N/Divisor
+%FinSi
+%FinSi
+%FinSi
+%9:
+%Escribir 'Ingrese un número:'
+%Leer N
+%0: EligeSalir<-Verdadero
+%De Otro Modo:
+%Escribir 'eleccionción  no válida!'
+%FinSegun
+%Hasta que EligeSalir
+%FinAlgoritmo
+
+
+% ======== Ejemplo de insertar bloque de código pseudocódigo en el documento =======================
+%\begin{sourcecode}{pseudocodecolor}{Algoritmo con fondo de color.}
+%	input: int N, int D
+%	output: int
+%	begin
+%	res $\gets$ 0
+%	while N $\geq$ D 
+%	N $\gets$ N - D
+%	res $\gets$ res + 1      
+%	end
+%	return res
+%	end    
+%\end{sourcecode}
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+% Título y nombre del autor
+\inserttitle
+
+% Resumen o Abstract
+
+\begin{abstract}
+	
+	Se realizan 7 programas en PSEINT, cada uno con su respectivo pseudocódigo, diagrama de flujo y ejecución. Los programas son los siguientes:
+	\begin{enumerate}
+		\item Suma de dos números.
+		\item Operaciones básicas (suma, resta, multiplicación, división).
+		\item Energía potencial en caída libre ($E_{pot} = mgh$).
+		\item Volumen de una esfera ($V = \frac{4}{3}\pi r^3$).
+		\item Generación de recibo de luz.
+		\item Conversión de acres a hectáreas.
+		\item Conversión de pies y libras a metros y kilogramos.
+	\end{enumerate}
+
+\end{abstract}
+
+%\begin{multicols}{2}
+
+\section{Suma de dos números}
+
+El programa solicita al usuario ingresar dos números, realiza la suma de ambos y muestra el resultado en pantalla. El pseudocódigo, diagrama de flujo y ejecución se presentan a continuación.		
+	
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo del programa de suma de dos números.}
+Algoritmo SumaDosNumeros
+    Escribir "Ingrese el primer número:"
+    // Escribe el primer número en pantalla y lo lee desde el teclado
+    Leer numero1
+    Escribir "Ingrese el segundo número:"
+    // Escribe el segundo número en pantalla y lo lee desde el teclado
+    Leer numero2
+    // Realiza la suma de los dos números y almacena el resultado en la variable suma
+    suma <- numero1 + numero2
+    // Escribe el resultado de la suma en pantalla
+    Escribir "El resultado de la suma es: ", suma
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaSumaDosNumeros}]{wVTA6MDTxNuGsL_CoY_f9eVqoQwKmprMQ0_UBUYD8Mc_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de suma de dos números.}
+
+\insertimage[\label{img:ejecucionSumaDosNumeros}]{QRmCLQYLN09bKG1r-KeCjKUBVgviZE3uglSzaakOGUE_original_fullsize}{width=0.45\textwidth}{Ejecución del programa de suma de dos números.}
+
+\section{Suma, Resta, Multiplicación y División de dos números}
+
+El programa solicita al usuario ingresar dos números, realiza las operaciones de suma, resta, multiplicación y división, y muestra los resultados en pantalla. El pseudocódigo, diagrama de flujo y ejecución se presentan a continuación.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo del programa de operaciones básicas.}
+Algoritmo OperacionesBasicas
+    Escribir "Ingrese el primer número:"
+    // Lee el primer valor ingresado por el usuario
+    Leer numero1
+    Escribir "Ingrese el segundo número:"
+    // Lee el segundo valor ingresado por el usuario
+    Leer numero2
+    // Calcula la suma de ambos números
+    suma <- numero1 + numero2
+    // Calcula la resta del primer número menos el segundo
+    resta <- numero1 - numero2
+    // Calcula la multiplicación de ambos números
+    multiplicacion <- numero1 * numero2
+    // Valida que el divisor sea diferente de cero antes de dividir
+    Si numero2 <> 0 Entonces
+        // Realiza la división cuando es válida
+        division <- numero1 / numero2
+    Sino
+        // Muestra un mensaje de error si el divisor es cero
+        Escribir "No se puede dividir por cero"
+    FinSi
+    // Muestra todos los resultados calculados
+    Escribir "Suma: ", suma
+    Escribir "Resta: ", resta
+    Escribir "Multiplicación: ", multiplicacion
+    Escribir "División: ", division
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaOperacionesBasicas}]{VlDw_pMjVS0DTo9f96Sqe7TrbfeD021Rf_F-i0c3AG8_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de operaciones básicas.}
+
+\insertimage[\label{img:ejecucionOperacionesBasicas}]{g4BahtJicLW6VnQD7Phe7xrrqIutu_A_lt0i_BFeH5c_original_fullsize}{width=0.45\textwidth}{Ejecución del programa de operaciones básicas.}
+
+\section{Energía potencial de un cuerpo en caída libre}
+
+El programa calcula la energía potencial de un cuerpo en caída libre utilizando la fórmula $E_{pot} = mgh$, donde $m$ es la masa del cuerpo, $g$ es la aceleración debido a la gravedad (9.81 m/s²) y $h$ es la altura desde la cual cae el cuerpo. El pseudocódigo, diagrama de flujo y ejecución se presentan a continuación.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo del programa de energía potencial.}
+Algoritmo EnergiaPotencial
+	Escribir "Ingrese la masa del cuerpo (en kg):"
+	// Lee la masa del cuerpo ingresada por el usuario
+	Leer masa
+	Escribir "Ingrese la altura desde la cual cae el cuerpo (en metros):"
+	// Lee la altura desde la cual cae el cuerpo ingresada por el usuario
+	Leer altura
+	// Define la constante de gravedad
+	gravedad <- 9.81
+	// Calcula la energía potencial utilizando la fórmula Epot = mgh
+	energia_potencial <- masa * gravedad * altura
+	// Muestra el resultado de la energía potencial en pantalla
+	Escribir "La energía potencial del cuerpo es: ", energia_potencial, " Joules"
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaEnergiaPotencial}]{6_rVw212epf2vyUVNSIDrqbcmMXGcnvgFx9RHssXgCg_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de energía potencial.}
+
+\insertimage[\label{img:ejecucionEnergiaPotencial}]{ZEAn9IWjIodIKlQt6pWWjhDDPMShedOIDWDW5c1VS5A_original_fullsize}{width=0.45\textwidth}{Ejecución del programa de energía potencial.}
+
+\section{Volumen de una esfera}
+
+El programa calcula el volumen de una esfera utilizando la fórmula $V = \frac{4}{3}\pi r^3$, donde $r$ es el radio de la esfera. El pseudocódigo, diagrama de flujo y ejecución se presentan a continuación.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo del programa de volumen de una esfera.}
+Algoritmo calculoVolumenEsfera
+    Escribir "Ingrese el radio de la esfera (en metros):"
+    // Lee el radio de la esfera ingresado por el usuario
+    Leer radio
+    // Calcula el volumen de la esfera utilizando la fórmula vol = (4/3) * π * r^3
+    volumen <- (4/3) * 3.14159 * (radio^3)
+    // Muestra el resultado del volumen calculado
+    Escribir "El volumen de la esfera es: ", volumen, " metros cúbicos"
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaVolumenEsfera}]{0IH7toh9jWq0SrzXVHQ4bdC4FBfhl3t72cQ7H-4tj_U_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de volumen de una esfera.}
+
+\insertimage[\label{img:ejecucionVolumenEsfera}]{-57AH2iXf95ibZNPnJ48dlz0lr8et5lp83lDMfH6MaU_original_fullsize}{width=0.45\textwidth}{Ejecución del programa de volumen de una esfera.}
+
+\section{Recibo de luz}
+
+El programa genera un recibo de luz a partir de los datos ingresados por el usuario: nombre del cliente, consumo en kilowatts y tarifa del kilowatt. El recibo muestra el nombre del cliente y el pago total. El pseudocódigo, diagrama de flujo y ejecución se presentan a continuación.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo del programa de recibo de luz.}
+Algoritmo generarReciboLuz
+    Escribir "Ingrese el nombre del cliente:"
+    // Lee el nombre del cliente ingresado por el usuario
+    Leer nombreCliente
+    Escribir "Ingrese el consumo en kilowatts:"
+    // Lee el consumo en kilowatts ingresado por el usuario
+    Leer consumoKilowatts
+    Escribir "Ingrese la tarifa del kilowatt:"
+    // Lee la tarifa del kilowatt ingresada por el usuario
+    Leer tarifaKilowatt
+    // Calcula el pago total multiplicando el consumo por la tarifa
+    pagoTotal <- consumoKilowatts * tarifaKilowatt
+    // Muestra el recibo con el nombre del cliente y el pago total
+    Escribir "Recibo de la compañía de la luz"
+    Escribir "Cliente: ", nombreCliente
+    Escribir "Pago total: ", pagoTotal
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaReciboLuz}]{VPCyOpBiWVDx3o0B4pRpBT5xGlO0iJVtVdFnh1Iecbk_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de recibo de luz.}
+
+\insertimage[\label{img:ejecucionReciboLuz}]{0X7n2SguGBr7fJO7MA9w6AawY7YvsEjsei3EmUrH7-0_original_fullsize}{width=0.45\textwidth}{Ejecución del programa de recibo de luz.}
+
+\section{Conversión de acres a hectáreas}
+
+El programa convierte la extensión de un terreno de acres a hectáreas utilizando las equivalencias: 1 acre = 4047 m² y 1 hectárea = 10000 m². El programa solicita al usuario ingresar la extensión del terreno en acres, realiza la conversión y muestra el resultado en pantalla en hectáreas. El pseudocódigo, diagrama de flujo y ejecución se presentan a continuación.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo del programa de conversión de acres a hectáreas.}
+Algoritmo conversionAcresHectareas
+    Escribir "Ingrese la extensión del terreno en acres:"
+    // Lee la extensión del terreno en acres ingresada por el usuario
+    Leer extensionAcres
+    // Convierte la extensión de acres a hectáreas utilizando la equivalencia 1 acre = 0.4047 hectáreas
+    extensionHectareas <- extensionAcres * 0.4047
+    // Muestra el resultado de la conversión en pantalla
+    Escribir "La extensión del terreno en hectáreas es: ", extensionHectareas, " ha"
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaConversionAcresHectareas}]{TlppQIz-eW4O78lhtq5lW5ghqqjOnd57OmoTqxjdPgU_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de conversión de acres a hectáreas.}
+
+\insertimage[\label{img:ejecucionConversionAcresHectareas}]{6ixxdOeiDU_dlse8QuXMQ8Es0o8gXuFspW5Ug76Kx04_original_fullsize}{width=0.45\textwidth}{Ejecución del programa de conversión de acres a hectáreas.}
+%
+\section{Conversión de pies y libras a metros y kilogramos}
+
+El programa solicita al usuario ingresar la longitud en pies y el peso en libras, realiza la conversión a metros y kilogramos utilizando las equivalencias dadas, y muestra los resultados en pantalla. El pseudocódigo, diagrama de flujo y ejecución se presentan a continuación.
+
+\begin{sourcecode}{pseudocodecolor}{Pseudocódigo del programa de conversión de pies y libras a metros y kilogramos.}
+Algoritmo conversionPiesLibras
+    Escribir "Ingrese la longitud en pies:"
+    // Lee la longitud en pies ingresada por el usuario
+    Leer longitudPies
+    Escribir "Ingrese el peso en libras:"
+    // Lee el peso en libras ingresado por el usuario
+    Leer pesoLibras
+    // Convierte la longitud de pies a metros utilizando la equivalencia 1 pie = 0.3048 metros
+    longitudMetros <- longitudPies * 0.3048
+    // Convierte el peso de libras a kilogramos utilizando la equivalencia 1 libra = 0.45359 kilogramos
+    pesoKilogramos <- pesoLibras * 0.45359
+    // Muestra los resultados de la conversión en pantalla
+    Escribir "La longitud en metros es: ", longitudMetros, " m"
+    Escribir "El peso en kilogramos es: ", pesoKilogramos, " kg"
+FinAlgoritmo
+\end{sourcecode}
+
+\insertimage[\label{img:diagramaConversionPiesLibras}]{WQhtTmkyyyRaY4ecjoMBHaPLd7plI45D--nv3TSS3Tg_original_fullsize}{width=0.75\textwidth}{Diagrama de flujo del programa de conversión de pies y libras a metros y kilogramos.}
+
+\insertimage[\label{img:ejecucionConversionPiesLibras}]{6TEUI5N0AJjGVBWvXW2EhrcY4HKP0jGRqrtdIqXDXa4_original_fullsize}{width=0.45\textwidth}{Ejecución del programa de conversión de pies y libras a metros y kilogramos.}
+
+%\end{multicols}
+
+% FIN DEL DOCUMENTO
+\end{document}
