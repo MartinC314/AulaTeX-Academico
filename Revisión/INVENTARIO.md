@@ -1,12 +1,16 @@
-# Inventario de Revisión
+# Inventario de Revision
 
-Pendiente de decidir:
+## Pendiente de decidir
 
-- `template-latex.github.io/`: copia del sitio/documentacion de `latex.ppizarror.com`; sirve como referencia, no como plantilla de trabajo.
-- Archivos raiz descargados junto con las plantillas (`LICENSE`, `.gitignore`, `.gitattributes`): conservar localmente solo si ayudan a revisar el origen.
+No hay materiales pendientes en este momento.
 
-Ya integrado:
+## Integrado
 
-- Plantillas oficiales pequeñas de ppizarror: `plantillas/latex/ppizarror/originales/`.
+- `template-latex.github.io/`: integrado como fuente editorial en
+  `retroalimentacion-editorial/fuentes/template-latex-web/`.
+- Archivos raiz del lote (`LICENSE`, `.gitignore`, `.gitattributes`):
+  conservados como evidencia en `retroalimentacion-editorial/fuentes/lote-revision/`.
+- Plantillas oficiales de ppizarror: `plantillas/latex/ppizarror/originales/`.
 - Herramientas `cwl-docs` y `Export-Subtemplate`: `herramientas/latex/`.
-- Plantillas maestras UnADM, IIIEPE, Filosofia del Derecho y Temas Selectos: `plantillas/latex/adaptadas/`.
+- Plantillas maestras UnADM, IIIEPE, Filosofia del Derecho y Temas Selectos:
+  `plantillas/latex/adaptadas/`.

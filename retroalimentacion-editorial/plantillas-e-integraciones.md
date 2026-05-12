@@ -11,6 +11,19 @@ plantillas/latex/ppizarror/originales/
 Ese espacio incluye familias como articulo, reporte, tesis, presentacion,
 poster, controles, auxiliares y CV profesional.
 
+## Fuente editorial de Pizarro
+
+La copia del sitio `template-latex.github.io` que estaba en `Revision` se
+integro en:
+
+```text
+retroalimentacion-editorial/fuentes/template-latex-web/
+```
+
+Esa fuente no sustituye a las plantillas originales. Sirve para entender el
+ecosistema de Template-Latex: paginas publicas, configuraciones de releases,
+documentacion, recursos visuales y enlaces a cada familia.
+
 ## Plantillas adaptadas
 
 Las adaptaciones viven en:
@@ -47,3 +60,6 @@ Cuando llegue una nueva carpeta a `Revision`, se debe decidir si es:
 
 Hasta que exista esa decision, el material puede permanecer en `Revision` sin
 entrar al historial principal de Git.
+
+Cuando el material ya tenga valor editorial claro, puede pasar a
+`retroalimentacion-editorial/fuentes/` y dejar limpia la bandeja de `Revision`.

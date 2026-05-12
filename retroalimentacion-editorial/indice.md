@@ -25,9 +25,15 @@ proyecto.
 - [Lineamientos del proyecto](lineamientos-del-proyecto.md)
 - [Flujo de actividades academicas](flujo-de-actividades.md)
 - [Plantillas e integraciones](plantillas-e-integraciones.md)
+- [Fuente editorial Template-Latex](fuentes-template-latex.md)
 - [Referencias y bibliografias](referencias-y-bibliografias.md)
 - [Compilacion, salidas y TikZ](compilacion-y-tikz.md)
 - [Propuestas de evolucion](propuestas-de-evolucion.md)
+
+## Fuentes integradas
+
+- [Fuentes editoriales integradas](fuentes/README.md)
+- [Sitio Template-Latex Web](fuentes/template-latex-web/README.md)
 
 ## Estados sugeridos
 

@@ -15,4 +15,7 @@
 *.pfb binary
 *.gz binary
 *.zip binary
+*.psd binary
+*.xla binary
+*.oxt binary
 *.snm binary
