@@ -26,7 +26,7 @@ Por ahora se copiaron los `.bib` existentes a sus carpetas tematicas, pero se de
 Cuando una actividad ya este lista para usar esta estructura, se puede actualizar su ruta bibliografica. En BibTeX normalmente se referencia sin extension:
 
 ```tex
-\bibliography{referencias/materias/filosofia-derecho/bib/FilosofiaDerechoAct3}
+\bibliography{referencias/materias/filosofia-derecho/bib-filosofia-derecho/FilosofiaDerecho}
 ```
 
 Conviene hacer esa migracion actividad por actividad, compilando despues de cada cambio.

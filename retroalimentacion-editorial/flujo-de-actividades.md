@@ -25,9 +25,12 @@ Sus referencias podrian vivir asi:
 
 ```text
 referencias/materias/etica-moral-juridica/
-  bibliografia.bib
-  documentos/
-  marco-conceptual/
+  bib-etica-moral-juridica/
+    bibliografia.bib
+  documentos-base-etica-moral-juridica/
+  marco-conceptual-etica-moral-juridica/
+  libros-etica-moral-juridica/
+  articulos-etica-moral-juridica/
 ```
 
 El archivo `main.tex` de la actividad seria una copia adaptada de una plantilla,

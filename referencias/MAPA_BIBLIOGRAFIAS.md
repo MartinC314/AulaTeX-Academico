@@ -6,44 +6,40 @@ Este mapa registra las copias iniciales hechas desde la raiz del proyecto hacia 
 
 | Archivo | Carpeta nueva |
 | --- | --- |
-| `library.bib` | `referencias/00-general/bib/` |
+| `library.bib` | `referencias/00-general/bib-general/` |
 
 ## Filosofia del Derecho
 
 | Archivo | Carpeta nueva |
 | --- | --- |
-| `FilosofiaDerechoAct2.bib` | `referencias/materias/filosofia-derecho/bib/` |
-| `FilosofiaDerechoAct3.bib` | `referencias/materias/filosofia-derecho/bib/` |
-| `FilosofiaDerechoAct4.bib` | `referencias/materias/filosofia-derecho/bib/` |
-| `Filosofía del derecho - Act2.bib` | `referencias/materias/filosofia-derecho/bib/` |
-| `Filosofía del derecho - Act3.bib` | `referencias/materias/filosofia-derecho/bib/` |
+| `FilosofiaDerecho.bib` | `referencias/materias/filosofia-derecho/bib-filosofia-derecho/` |
 
 ## Etica y Moral juridica
 
 | Archivo | Carpeta nueva |
 | --- | --- |
-| `EticaMoralJuridica.bib` | `referencias/materias/etica-moral-juridica/bib/` |
-| `Ética y Moral jurídica.bib` | `referencias/materias/etica-moral-juridica/bib/` |
+| `EticaMoralJuridica.bib` | `referencias/materias/etica-moral-juridica/bib-etica-moral-juridica/` |
+| `Ética y Moral jurídica.bib` | `referencias/materias/etica-moral-juridica/bib-etica-moral-juridica/` |
 
 ## Redaccion en contextos virtuales
 
 | Archivo | Carpeta nueva |
 | --- | --- |
-| `RedaccionContextosVirtuales.bib` | `referencias/materias/redaccion-contextos-virtuales/bib/` |
-| `Redacción en contextos virtuales.bib` | `referencias/materias/redaccion-contextos-virtuales/bib/` |
+| `RedaccionContextosVirtuales.bib` | `referencias/materias/redaccion-contextos-virtuales/bib-redaccion-contextos-virtuales/` |
+| `Redacción en contextos virtuales.bib` | `referencias/materias/redaccion-contextos-virtuales/bib-redaccion-contextos-virtuales/` |
 
 ## Instituciones
 
 | Archivo | Carpeta nueva |
 | --- | --- |
-| `IIIEPE.bib` | `referencias/instituciones/iiiepe/bib/` |
-| `UnADM.bib` | `referencias/instituciones/unadm/bib/` |
+| `IIIEPE.bib` | `referencias/instituciones/iiiepe/bib-iiiepe/` |
+| `UnADM.bib` | `referencias/instituciones/unadm/bib-unadm/` |
 
 ## Proyectos
 
 | Archivo | Carpeta nueva |
 | --- | --- |
-| `PFM02.bib` | `referencias/proyectos/pfm02/bib/` |
+| `PFM02.bib` | `referencias/proyectos/pfm02/bib-pfm02/` |
 
 ## Siguiente paso sugerido
 

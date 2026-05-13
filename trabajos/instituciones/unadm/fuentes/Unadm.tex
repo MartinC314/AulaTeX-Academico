@@ -1,4 +1,3 @@
-
 % CREACIÓN DEL DOCUMENTO
 \documentclass[
 	spanish, % Idioma: spanish, english, etc.
@@ -26,13 +25,14 @@
 	\begin{tabular}{ll}
 		\textbf{Alumno:}
 		& \begin{tabular}[t]{l}
-			 Martín Jonathan de la Cruz \\	
+		 \t Martín Jonathan de la Cruz \\
 		\end{tabular} \\
 		Matrícula: &   ES2611202040 \\
 		
 		Profesor:
 		& \begin{tabular}[t]{l}
-			Reyna Patricia \\ Gonzales Rodríguez
+		\tReyna Patricia \\
+		\tGonzález Rodríguez
 		\end{tabular} \\
 		% Auxiliar:
 		% & \begin{tabular}[t]{l}
@@ -51,8 +51,10 @@
 	\end{tabular}
 }
 
-% IMPORTACIÓN DEL TEMPLATE
-\input{template}
+% IMPORTACIÓN DEL TEMPLATE Y CONFIGURACIÓN
+% Cargar template_config.tex y template.tex desde la raíz del proyecto
+\input{../../../template_config}
+\input{../../../template}
 
 % INICIO DE PÁGINAS
 \begin{document}
@@ -76,7 +78,7 @@
 
 % ======================= INICIO DEL DOCUMENTO =======================
 
-\input{src/etc/example} % Ejemplo, se puede borrar
+\input{../../../src/etc/example} % Ejemplo, se puede borrar
 
 % FIN DEL DOCUMENTO
 \end{document}

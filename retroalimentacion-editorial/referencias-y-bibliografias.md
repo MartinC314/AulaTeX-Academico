@@ -20,10 +20,12 @@ Dentro de cada materia, puede existir una estructura como:
 
 ```text
 referencias/materias/nombre-de-la-materia/
-  bibliografia.bib
-  documentos/
-  marco-conceptual/
-  consignas/
+  bib-nombre-de-la-materia/
+    bibliografia.bib
+  documentos-base-nombre-de-la-materia/
+  marco-conceptual-nombre-de-la-materia/
+  libros-nombre-de-la-materia/
+  articulos-nombre-de-la-materia/
 ```
 
 ## Criterio para archivos `.bib`
