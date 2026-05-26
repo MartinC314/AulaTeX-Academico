@@ -1,78 +1,56 @@
 % ==============================================================================
-% PLANTILLA MAESTRA - REDACCION EN CONTEXTOS VIRTUALES / UnADM
+% PLANTILLA MAESTRA - UnADM (instrucciones comunes)
 % ==============================================================================
-% Uso:
-% 1. Duplica este archivo y renombra la copia por semana/actividad.
-% 2. Actualiza documenttitle, documentsubtitle y documentsubject.
-% 3. Lee la planeacion semanal y NO pegues las instrucciones completas dentro del
-%    producto final. Usa la planeacion como lista de cumplimiento.
-% 4. Identifica la tecnica didactica solicitada y construye el producto dentro
-%    del documento.
-% 5. Redacta con criterio propio: problema comunicativo -> analisis -> producto
-%    solicitado -> postura personal -> conclusion.
-% 6. Entrega en PDF con la nomenclatura indicada en el aula.
+% Uso rapido:
+% 1) Duplica la plantilla y renombra la copia por semana/actividad.
+% 2) Actualiza \documenttitle, \documentsubtitle y \documentsubject.
+% 3) Lee la planeacion y NO pegues las instrucciones completas dentro del PDF.
+%    Usa la planeacion como lista de cumplimiento y redacta con criterio propio.
+% 4) Elabora productos visuales preferentemente en LaTeX/TikZ para mantener
+%    nitidez y evidencia editable; si usas herramientas externas, inserta
+%    capturas de alta resolucion y conserva evidencia dentro del PDF.
+% 5) Entrega en PDF con la nomenclatura solicitada en el aula.
 %
-% Objetivo general de la asignatura:
-% - Desarrollar habilidades basicas para la redaccion de textos academicos que
-%   utilicen las tecnologias de la informacion y comunicacion, considerando
-%   entornos de aprendizaje abiertos y a distancia.
+% Formato institucional (recomendado):
+% - Fuente: Helvetica / sans-serif equivalente (\usepackage{helvet}).
+% - Interlineado: 1.5 (\onehalfspacing).
+% - Citas: autor-año mediante natbib (\citep, \citet, \citep[e.g.][]{clave}).
+% - Bibliografía: archivo .bib con formato APA 7; todas las citas del texto
+%   deben aparecer en la bibliografía y viceversa.
+% - Estructura mínima: portada, resumen/abstract, desarrollo, conclusión y
+%   bibliografía.
 %
-% Objetivos especificos recurrentes:
-% - Comprender la importancia de la redaccion academica en la formacion
-%   profesional y laboral.
-% - Analizar las habilidades necesarias para producir textos academicos mediante
-%   tecnologias de informacion y comunicacion.
-% - Comprender las bases de la redaccion academica en entornos abiertos y a
-%   distancia.
-% - Analizar bases de investigacion documental.
+% Reglas para productos visuales and tablas extensas:
+% - Para tablas o cuadros amplios use longtable + booktabs y evite líneas
+%   verticales; controlar espaciado con \setlength{\tabcolsep} y
+%   \renewcommand{\arraystretch}.
+% - Para tablas en página propia: use \clearpage, \pagestyle{empty},
+%   entorno landscape, reducir tamaño con \scriptsize y luego restaurar
+%   \pagestyle{fancy} al finalizar la tabla.
 %
-% Formato institucional aplicado:
-% - Fuente tipo Helvetica, equivalente visual a Arial.
-% - Interlineado 1.5.
-% - Citas autor-anio con natbib: usar \citep{clave} o \citet{clave}.
-% - Referencias en bibliografia BibTeX, formato APA 7 en cuerpo y referencias.
-% - Redaccion academica clara, coherente, cohesionada, formal y sin faltas.
-% - Caratula, resumen breve, desarrollo, producto solicitado, conclusion y
-%   bibliografia.
+% Buenas prácticas de redacción académica (guía operativa):
+% - No escribir para llenar espacio; escribir para sostener y defender una idea.
+% - Cada concepto debe responder: qué es, qué características tiene, cómo
+%   funciona, qué problema resuelve, qué límite presenta y qué implicación
+%   jurídica posee.
+% - Evitar listas sin análisis: tras cada dato relevante incluya su consecuencia
+%   o aplicación jurídica.
+% - Primera persona: usar moderadamente ("Considero que", "Desde esta
+%   perspectiva"); evite expresiones coloquiales como "yo creo".
 %
-% Criterios generales de evaluacion para actividades de redaccion:
-% - Cumplir con el producto solicitado en la planeacion.
-% - Identificar conceptos, elementos, criterios o categorias de forma precisa.
-% - Analizar la informacion, no solo copiarla o resumirla.
-% - Organizar el producto con jerarquia, legibilidad y secuencia logica.
-% - Redactar con claridad, coherencia, cohesion, formalidad y correccion.
-% - Integrar una postura personal academica cuando la actividad lo permita.
-% - Citar y referenciar fuentes en APA 7.
+% Protocolos de integridad y uso de IA:
+% - Si se usa IA, el resultado debe ser leído, corregido y transformado con
+%   criterio propio. No entregar texto sin procesamiento.
+% - Incluir siempre juicio propio y referencias que sostengan la postura.
 %
-% Regla para productos visuales:
-% - Si la actividad pide tabla, cuadro comparativo, mapa conceptual, mapa mental,
-%   linea de tiempo, diagrama, matriz, lista de verificacion, esquema, flujo,
-%   red conceptual, SQA u organizador grafico, realizarlo preferentemente con
-%   LaTeX/TikZ para mantener nitidez, evidencia editable y diseno controlado.
-% - Para tablas o cuadros extensos, seguir el ajuste usado en actividades previas:
-%   usar \clearpage, \pagestyle{empty}, entorno landscape, letra pequena,
-%   menor separacion entre columnas y luego restaurar \pagestyle{fancy}.
-%
-% Criterios de redaccion personal (enfoque aplicado):
-% - No escribir para llenar espacio; escribir para sostener una idea.
-% - Convertir informacion en criterio: que significa, como funciona, que riesgo
-%   evita y que consecuencia produce.
-% - Usar pensamiento de diagnostico: entrada -> proceso -> salida.
-% - Cada parrafo debe tener funcion: presentar, explicar, comparar, valorar o
-%   concluir.
-% - Usar primera persona con moderacion academica: "Considero que",
-%   "Desde esta perspectiva", "La posicion que sostengo es". Evitar "yo creo".
-%
-% Checklist antes de entregar:
-% [ ] El objetivo coincide con la planeacion semanal.
-% [ ] El producto solicitado aparece visible, rotulado y completo.
-% [ ] La informacion se organiza por criterios o categorias claras.
-% [ ] El texto muestra comprension, analisis y postura cuando corresponde.
-% [ ] Hay citas APA autor-anio dentro del texto.
-% [ ] La bibliografia final coincide con las fuentes citadas.
-% [ ] No aparecen instrucciones copiadas de la planeacion dentro del producto.
-% [ ] El documento tiene buena ortografia, sintaxis y presentacion.
-% [ ] Si se uso IA como apoyo, el texto fue comprendido, revisado y apropiado.
+% Checklist operativo antes de entregar:
+% [ ] El producto coincide con la técnica solicitada en la planeación.
+% [ ] El objetivo y el contenido están alineados con la planeación.
+% [ ] El producto visual está rotulado y presentado como se pide.
+% [ ] Hay citas APA autor-año dentro del texto y bibliografía completa.
+% [ ] No se incluyeron instrucciones copiadas de la planeación dentro del
+%     contenido entregado.
+% [ ] Ortografía y redacción revisadas; la argumentación es propia.
 % ==============================================================================
 
 % CREACION DEL DOCUMENTO
