@@ -93,7 +93,9 @@ New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot '.build/latex/
 
 Push-Location $ProjectRoot
 try {
-    & latexmk -pdf -interaction=nonstopmode -file-line-error @LatexmkArgs $ResolvedTex
+    # Force mode allows latexmk to complete bibliography passes even when
+    # the first pdflatex run reports temporary undefined citations.
+    & latexmk -f -pdf -interaction=nonstopmode -file-line-error @LatexmkArgs $ResolvedTex
     $LatexmkExitCode = $LASTEXITCODE
     if ($LatexmkExitCode -ne 0) {
         exit $LatexmkExitCode
