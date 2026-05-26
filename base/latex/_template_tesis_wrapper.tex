@@ -1,10 +1,7 @@
 % Wrapper para template_tesis - Define rutas base
 \makeatletter
-\def\input@path{{../../engine/}{../../engine/src/}{../../engine/img/}}
+\def\input@path{{../Plantilla-Informe/}{../Plantilla-Informe/src/}{../Plantilla-Informe/src/cfg/}{../Plantilla-Informe/src/cmd/}{../Plantilla-Informe/src/env/}{../Plantilla-Informe/src/etc/}{../Plantilla-Informe/src/page/}{../Plantilla-Informe/src/style/}{../../src/}{../../src/cfg/}{../../src/cmd/}{../../src/env/}{../../src/etc/}{../../src/page/}{../../src/style/}}
 \makeatother
 
-% Define rutas de imágenes
-\graphicspath{{../../engine/img/}}
-
-% Importa el template real
-\input{../../engine/template_tesis}
+% Importa el template real desde TEXINPUTS
+\input{template_tesis}

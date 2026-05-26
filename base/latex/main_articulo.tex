@@ -18,11 +18,31 @@
 % INFORMACIÓN DEL DOCUMENTO
 \def\documenttitle {Título del artículo}
 \def\documentsubtitle {}
+\def\documentsubject {Tema del artículo}
+\def\documentauthor {Autor principal}
 \def\documentdate {\today}
 \def\journalname {Revista, conferencia del artículo}
+\def\coursecode {AR-0000}
+\def\coursename {Artículo}
+\def\authortable {}
+\def\universityname {Universidad de Chile}
+\def\universityfaculty {Facultad de Ciencias Físicas y Matemáticas}
+\def\universitydepartment {Departamento de la Universidad}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Santiago de Chile}
+
+% CONFIGURACIÓN PROPIA DEL TEMPLATE DE ARTÍCULO
+\def\titleauthorspacing {0.35}
+\def\titleauthormarginbottom {0.2}
+\def\titleauthormargintop {0.6}
+\def\titleauthormaxwidth {0.85}
+\def\titlebold {true}
+\def\titlestyle {style1}
+\def\abstractmarginbottom {0.5}
+\def\abstractmargintop {0}
 
 % IMPORTACIÓN DEL TEMPLATE
-\input{../../engine/template_articulo}
+\input{_template_articulo_wrapper}
 
 % CONFIGURA LOS AUTORES
 \def\authorshf {P. Pizarro et al.} % Nombres en header-footer
@@ -55,7 +75,7 @@
 
 % Contenido
 \begin{multicols}{2}
-	\input{../../engine/src/etc/example_articulo} % Ejemplo, se puede borrar
+	\input{example_articulo} % Ejemplo, se puede borrar
 \end{multicols}
 
 % FIN DEL DOCUMENTO

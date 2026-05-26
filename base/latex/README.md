@@ -27,4 +27,6 @@ Todas tienen espacio en el catalogo. Algunas entraran al flujo cotidiano antes q
 - `materias/filosofia-derecho/plantilla-maestra-filosofia-derecho-unadm.tex`
 - `materias/temas-selectos-matematicas-1/plantilla-informe-temas-selectos-iiiepe.tex`
 
-Regla de trabajo: copiar una plantilla adaptada hacia `trabajos/` y editar la copia. Las plantillas base se modifican solo cuando se quiere cambiar el molde general.
+Regla de trabajo: copiar una plantilla adaptada hacia la carpeta institucional
+correspondiente (`UnADM/`, `UCNL/` o `IIIEPE/`) y editar la copia. Las
+plantillas base se modifican solo cuando se quiere cambiar el molde general.

@@ -6,4 +6,4 @@ Uso recomendado:
 
 - Consultar cambios, estructura y ejemplos originales.
 - Comparar contra adaptaciones propias.
-- Evitar editar estos archivos directamente; crear adaptaciones en `plantillas/latex/adaptadas/`.
+- Evitar editar estos archivos directamente; crear adaptaciones en `base/latex/adaptadas/`.

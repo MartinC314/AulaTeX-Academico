@@ -22,6 +22,16 @@
 \pretocmd\start@align{\def\@rowc@lors{}}{}{}
 \makeatother
 
+% Configura bibliografía
+% -----------------------------------------------------------------------------
+\ifthenelse{\equal{\stylecitereferences}{bibtex}}{%
+	\bibliographystyle{\bibtexstyle}
+}{%
+	\ifthenelse{\equal{\stylecitereferences}{custom}}{}{%
+		\throwbadconfig{Estilo citas desconocido}{\stylecitereferences}{bibtex,custom}%
+	}%
+}
+
 % Define el tamaño de página
 % -----------------------------------------------------------------------------
 % (N+1)*\sepwidth + N*\colwidth = \paperwidth
