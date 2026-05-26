@@ -44,17 +44,56 @@
 % IMPORTACIÓN DEL TEMPLATE
 \input{template}
 
+% FORMATO SOLICITADO / USADO EN ACTIVIDADES CORREGIDAS
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% MARCA DE AGUA TIKZ EN PORTADA
+\usepackage{tikz}
+
 % CITAS EN FORMATO AUTOR-AÑO (APA)
 \setcitestyle{authoryear,open={(},close={)}}
+
+% ==============================================================================
+% MARCA DE AGUA EN PORTADA
+% - Se aplica solo a la portada porque usa \AddToShipoutPictureBG*.
+% - Para apagarla en alguna actividad: \def\coverwatermarkenabled {false}
+% - Usar opacidad baja para que no compita con titulo, datos ni logotipo.
+% ==============================================================================
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+	\ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+		\AddToShipoutPictureBG*{%
+			\begin{tikzpicture}[remember picture,overlay]
+				\node[
+					opacity=\coverwatermarkopacity,
+					inner sep=0pt,
+					xshift=\coverwatermarkxshift,
+					yshift=\coverwatermarkyshift
+				] at (current page.center) {%
+					\includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+				};
+			\end{tikzpicture}%
+		}%
+	}{}%
+}
 
 % INICIO DE PÁGINAS
 \begin{document}
 
 % PORTADA
+\insertcoverwatermark
 \templatePortrait
 
 % CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
 \templatePagecfg
+\onehalfspacing
 
 % RESUMEN O ABSTRACT
 \begin{abstractd}
