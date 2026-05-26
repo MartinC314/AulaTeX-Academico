@@ -44,17 +44,56 @@
 % IMPORTACIÓN DEL TEMPLATE
 \input{template}
 
+% FORMATO SOLICITADO / USADO EN ACTIVIDADES CORREGIDAS
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% MARCA DE AGUA TIKZ EN PORTADA
+\usepackage{tikz}
+
 % CITAS EN FORMATO AUTOR-AÑO (APA)
 \setcitestyle{authoryear,open={(},close={)}}
+
+% ==============================================================================
+% MARCA DE AGUA EN PORTADA
+% - Se aplica solo a la portada porque usa \AddToShipoutPictureBG*.
+% - Para apagarla en alguna actividad: \def\coverwatermarkenabled {false}
+% - Usar opacidad baja para que no compita con titulo, datos ni logotipo.
+% ==============================================================================
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+	\ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+		\AddToShipoutPictureBG*{%
+			\begin{tikzpicture}[remember picture,overlay]
+				\node[
+					opacity=\coverwatermarkopacity,
+					inner sep=0pt,
+					xshift=\coverwatermarkxshift,
+					yshift=\coverwatermarkyshift
+				] at (current page.center) {%
+					\includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+				};
+			\end{tikzpicture}%
+		}%
+	}{}%
+}
 
 % INICIO DE PÁGINAS
 \begin{document}
 
 % PORTADA
+\insertcoverwatermark
 \templatePortrait
 
 % CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
 \templatePagecfg
+\onehalfspacing
 
 % RESUMEN O ABSTRACT
 \begin{abstractd}
@@ -92,18 +131,7 @@ Las implicaciones educativas y laborales son directas. En el aula virtual, un me
 
 Mi postura es que el problema no fue el desacuerdo, sino la falta de criterio comunicativo. En un entorno académico, la opinión solo tiene valor formativo cuando se convierte en argumento, y el argumento solo funciona cuando respeta al interlocutor. María tenía derecho a cuestionar la idea de Luis, pero también tenía la responsabilidad de hacerlo con precisión, respeto y finalidad constructiva. La comunicación digital exige dominar esa decisión: escribir no para descargar una reacción, sino para producir diálogo, aprendizaje y colaboración. En la educación y en el trabajo, quien no controla su mensaje pierde capacidad de influencia; quien lo estructura con claridad gana autoridad y construye mejores relaciones.
 
-\begin{thebibliography}{99}
-
-\bibitem[Romero Hernández(2022)]{romero2022taller}
-Romero Hernández, G. (2022). \textit{Taller de lectura y redacción I}. Klik Soluciones Educativas.
-
-\bibitem[Ayala(2005)]{ayala2005taller}
-Ayala, L. (2005). \textit{Taller de lectura y redacción: libro de consulta}. Instituto Politécnico Nacional.
-
-\bibitem[Romero Rodríguez(2014)]{romero2014volver}
-Romero Rodríguez, V. J. (2014). \textit{Volver a escribir: nueve pasos para mejorar la redacción}. Sello Editorial Javeriano.
-		
-\end{thebibliography}
+\bibliography{redaccion-en-contextos-virtuales}
 
 % FIN DEL DOCUMENTO
 \end{document}
