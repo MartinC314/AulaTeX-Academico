@@ -1,85 +1,56 @@
 % ==============================================================================
-% PLANTILLA MAESTRA - ETICA Y MORAL JURIDICA / UnADM
+% PLANTILLA MAESTRA - UnADM (instrucciones comunes)
 % ==============================================================================
-% Uso:
-% 1. Duplica este archivo y renombra la copia por semana/actividad.
-% 2. Actualiza documenttitle, documentsubtitle y documentsubject.
-% 3. Lee la planeacion semanal y NO pegues las instrucciones completas dentro del
-%    producto final. Usa la planeacion como lista de cumplimiento.
-% 4. Consulta la bibliografia indicada por la docente, toma notas y redacta con
-%    criterio propio: concepto -> caracteristicas -> funcion juridica -> postura.
-% 5. Entrega en PDF con la nomenclatura indicada en el aula.
+% Uso rapido:
+% 1) Duplica la plantilla y renombra la copia por semana/actividad.
+% 2) Actualiza \documenttitle, \documentsubtitle y \documentsubject.
+% 3) Lee la planeacion y NO pegues las instrucciones completas dentro del PDF.
+%    Usa la planeacion como lista de cumplimiento y redacta con criterio propio.
+% 4) Elabora productos visuales preferentemente en LaTeX/TikZ para mantener
+%    nitidez y evidencia editable; si usas herramientas externas, inserta
+%    capturas de alta resolucion y conserva evidencia dentro del PDF.
+% 5) Entrega en PDF con la nomenclatura solicitada en el aula.
 %
-% Objetivo general de la asignatura:
-% - Comprender las bases eticas y las relaciones morales del Derecho.
+% Formato institucional (recomendado):
+% - Fuente: Helvetica / sans-serif equivalente (\usepackage{helvet}).
+% - Interlineado: 1.5 (\onehalfspacing).
+% - Citas: autor-año mediante natbib (\citep, \citet, \citep[e.g.][]{clave}).
+% - Bibliografía: archivo .bib con formato APA 7; todas las citas del texto
+%   deben aparecer en la bibliografía y viceversa.
+% - Estructura mínima: portada, resumen/abstract, desarrollo, conclusión y
+%   bibliografía.
 %
-% Objetivos especificos recurrentes en las planeaciones:
-% - Identificar las principales escuelas de etica relacionadas con el Derecho.
-% - Reconocer las implicaciones de la moral en el ambito juridico.
-% - Relacionar etica y moral en el contexto social.
-% - Analizar derechos y dignidad humana en el contexto juridico.
+% Reglas para productos visuales y tablas extensas:
+% - Para tablas o cuadros amplios use longtable + booktabs y evite líneas
+%   verticales; controlar espaciado con \setlength{\tabcolsep} y
+%   \renewcommand{\arraystretch}.
+% - Para tablas en página propia: use \clearpage, \pagestyle{empty},
+%   entorno landscape, reducir tamaño con \scriptsize y luego restaurar
+%   \pagestyle{fancy} al finalizar la tabla.
 %
-% Formato institucional aplicado:
-% - Fuente tipo Helvetica, equivalente visual a Arial.
-% - Interlineado 1.5.
-% - Citas autor-anio con natbib: usar \citep{clave} o \citet{clave}.
-% - Referencias en bibliografia BibTeX, formato APA 7 en cuerpo y referencias.
-% - Redaccion academica, clara, con analisis propio y buena ortografia.
-% - Caratula, desarrollo, conclusion y bibliografia.
+% Buenas prácticas de redacción académica (guía operativa):
+% - No escribir para llenar espacio; escribir para sostener y defender una idea.
+% - Cada concepto debe responder: qué es, qué características tiene, cómo
+%   funciona, qué problema resuelve, qué límite presenta y qué implicación
+%   jurídica posee.
+% - Evitar listas sin análisis: tras cada dato relevante incluya su consecuencia
+%   o aplicación jurídica.
+% - Primera persona: usar moderadamente ("Considero que", "Desde esta
+%   perspectiva"); evite expresiones coloquiales como "yo creo".
 %
-% Regla para productos visuales:
-% - Si la actividad pide tabla, cuadro comparativo, esquema, mapa conceptual,
-%   mapa mental, linea de tiempo, diagrama, matriz, red conceptual, SQA,
-%   organizador grafico o producto similar, realizarlo preferentemente con
-%   LaTeX/TikZ para mantener nitidez, evidencia editable y diseno controlado.
-% - Si se usa Canva, Miro u otra plataforma, insertar capturas nitidas y conservar
-%   evidencia suficiente dentro del PDF.
+% Protocolos de integridad y uso de IA:
+% - Si se usa IA, el resultado debe ser leído, corregido y transformado con
+%   criterio propio. No entregar texto sin procesamiento.
+% - Incluir siempre juicio propio y referencias que sostengan la postura.
 %
-% Criterios derivados de la evaluacion recibida en Etica y Moral juridica:
-% - Plantea conceptos precisos: 3 puntos.
-% - Menciona caracteristicas con claridad: 3 puntos.
-% - Presenta buena redaccion y ortografia: 2 puntos.
-% - Usa fuentes, citas y referencias en formato APA 7: 2 puntos.
-%
-% Criterios de Semana 3 detectados en planeacion:
-% - Realiza un formato correcto.
-% - Utiliza contenido filosofico puro cuando la actividad lo solicite.
-% - Integra criticas pertinentes, no solo definiciones.
-% - Mantiene redaccion clara y referencias APA 7.
-%
-% Criterios de redaccion personal (enfoque aplicado):
-% - No escribir para llenar espacio; escribir para sostener una idea.
-% - Cada concepto debe responder: que es, que caracteristicas tiene, como
-%   funciona, que problema resuelve, que limite presenta y que implicacion
-%   juridica tiene.
-% - Evitar listas sin analisis. Despues de cada dato importante, explicar su
-%   consecuencia.
-% - Estructura mental recomendada: problema etico -> criterio moral -> efecto
-%   juridico -> postura personal.
-% - Usar primera persona con moderacion academica: "Considero que",
-%   "Desde esta perspectiva", "La posicion que sostengo es". Evitar "yo creo".
-%
-% Productos recurrentes segun planeaciones de la materia:
-% - Semana 2: Cuadro comparativo.
-% - Semana 3: Esquema.
-% - Semana 4: Linea de tiempo.
-% - Semana 5: Mapa conceptual.
-% - Semana 6: Resumen.
-% - Semana 7: Reporte de lectura general.
-% - Semana 8: Analisis de hechos.
-% - Semana 9: Ensayo.
-%
-% Checklist antes de entregar:
-% [ ] El objetivo coincide con la planeacion de la semana.
-% [ ] El producto solicitado aparece de forma visible y bien rotulada.
-% [ ] Los conceptos son precisos y no se contradicen.
-% [ ] Las caracteristicas estan explicadas con claridad, no solo enumeradas.
-% [ ] Hay citas APA autor-anio dentro del texto.
-% [ ] Hay bibliografia al final y coincide con las fuentes citadas.
-% [ ] La introduccion plantea una idea propia, no solo anuncia la actividad.
-% [ ] La conclusion responde que se comprendio y que postura se sostiene.
-% [ ] No aparecen instrucciones copiadas de la planeacion dentro del producto.
-% [ ] Si se uso IA como apoyo, el texto fue comprendido, revisado y apropiado.
+% Checklist operativo antes de entregar:
+% [ ] El producto coincide con la técnica solicitada en la planeación.
+% [ ] El objetivo y el contenido están alineados con la planeación.
+% [ ] El producto visual está rotulado y presentado como se pide.
+% [ ] Hay citas APA autor-año dentro del texto y bibliografía completa.
+% [ ] No se incluyeron instrucciones copiadas de la planeación dentro del
+%     contenido entregado.
+% [ ] Ortografía y redacción revisadas; la argumentación es propia.
 % ==============================================================================
 
 % CREACION DEL DOCUMENTO
