@@ -2,6 +2,9 @@ param(
     [Parameter(Mandatory = $true, Position = 0)]
     [string]$TexFile,
 
+    [ValidateSet('none', 'safe', 'full')]
+    [string]$CleanMode = 'safe',
+
     [Parameter(ValueFromRemainingArguments = $true)]
     [string[]]$LatexmkArgs
 )
@@ -45,6 +48,45 @@ function Resolve-TexFile {
     throw "No se encontro el archivo TeX '$Path'. Se intento desde la carpeta actual y desde la raiz del proyecto."
 }
 
+function Invoke-BuildCleanup {
+    param(
+        [string]$Mode,
+        [string]$Root
+    )
+
+    if ($Mode -eq 'none') {
+        return
+    }
+
+    $buildRoot = Join-Path $Root '.build/latex'
+    if (-not (Test-Path -LiteralPath $buildRoot -PathType Container)) {
+        return
+    }
+
+    if ($Mode -eq 'full') {
+        Get-ChildItem -LiteralPath $buildRoot -Recurse -File -Force -ErrorAction SilentlyContinue |
+            Remove-Item -Force -ErrorAction SilentlyContinue
+        return
+    }
+
+    # Limpieza segura: elimina auxiliares temporales y conserva .log para diagnostico.
+    $ephemeralExtensions = @(
+        '.aux', '.bbl', '.blg', '.fdb_latexmk', '.fls',
+        '.lof', '.lot', '.nav', '.out', '.run.xml', '.snm',
+        '.synctex.gz', '.toc', '.vrb', '.xdv'
+    )
+
+    Get-ChildItem -LiteralPath $buildRoot -Recurse -File -Force -ErrorAction SilentlyContinue |
+        Where-Object {
+            $ext = $_.Extension.ToLowerInvariant()
+            if ($ext -eq '.gz' -and $_.Name.ToLowerInvariant().EndsWith('.synctex.gz')) {
+                return $true
+            }
+            return $ephemeralExtensions -contains $ext
+        } |
+        Remove-Item -Force -ErrorAction SilentlyContinue
+}
+
 $ResolvedTex = Resolve-TexFile $TexFile
 New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot '.build/latex') | Out-Null
 New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot '.build/latex/aux') | Out-Null
@@ -73,6 +115,7 @@ try {
     }
 
     Copy-Item -LiteralPath $GeneratedPdf -Destination $FinalPdf -Force
+    Invoke-BuildCleanup -Mode $CleanMode -Root $ProjectRoot
     Write-Host "PDF final: $FinalPdf"
     exit 0
 }
