@@ -29,21 +29,14 @@ if (-not $ResolvedTex) {
 }
 
 $BaseName = [System.IO.Path]::GetFileNameWithoutExtension($ResolvedTex.Path)
-$PdfSource = Join-Path $ProjectRoot "salidas/pdf/$BaseName.pdf"
+$OutputDir = Split-Path -Parent $ResolvedTex.Path
+$PdfSource = Join-Path $OutputDir "$BaseName.pdf"
 if (-not (Test-Path -LiteralPath $PdfSource)) {
     throw "No se encontro el PDF esperado: $PdfSource"
 }
 
-$TikzPdfDir = Join-Path $ProjectRoot 'salidas/tikz/pdf'
-$TikzSvgDir = Join-Path $ProjectRoot 'salidas/tikz/svg'
-$TikzPngDir = Join-Path $ProjectRoot 'salidas/tikz/png'
-New-Item -ItemType Directory -Force -Path $TikzPdfDir, $TikzSvgDir, $TikzPngDir | Out-Null
-
-$PdfTarget = Join-Path $TikzPdfDir "$BaseName.pdf"
-Copy-Item -LiteralPath $PdfSource -Destination $PdfTarget -Force
-
 if ($Format -in @('all', 'svg')) {
-    $SvgTarget = Join-Path $TikzSvgDir "$BaseName.svg"
+    $SvgTarget = Join-Path $OutputDir "$BaseName.svg"
     if (Get-Command inkscape -ErrorAction SilentlyContinue) {
         & inkscape $PdfSource --export-type=svg --export-filename=$SvgTarget
     }
@@ -53,7 +46,7 @@ if ($Format -in @('all', 'svg')) {
 }
 
 if ($Format -in @('all', 'png')) {
-    $PngTarget = Join-Path $TikzPngDir "$BaseName.png"
+    $PngTarget = Join-Path $OutputDir "$BaseName.png"
     if (Get-Command inkscape -ErrorAction SilentlyContinue) {
         & inkscape $PdfSource --export-type=png --export-dpi=$Dpi --export-filename=$PngTarget
     }

@@ -1,39 +1,96 @@
 # AulaTeX-Academico
 
-Entorno personal de trabajo academico en LaTeX, construido sobre `Template-Informe` y adaptado para materias, proyectos, referencias bibliograficas, diagramas TikZ y salidas compiladas ordenadas.
+Entorno academico en LaTeX organizado por institucion, con una base comun de
+plantillas Pizarror y puntos de entrada canonicos para reportes, actividades,
+presentaciones y bibliografias.
 
-## Flujo principal
+## Flujo Principal
 
-- Escribe documentos en `trabajos/`.
-- Guarda bibliografia y documentos fuente en `referencias/`.
-- Coloca materiales pendientes de integrar en `Revisión/`.
-- Usa `plantillas/latex/` para distinguir bases oficiales, adaptaciones institucionales y moldes por materia.
-- Registra decisiones, propuestas y lineamientos en `retroalimentacion-editorial/`.
-- Compila con `latexmk` mediante los scripts o las recetas de VS Code.
-- Recibe PDFs finales en `salidas/pdf`.
-- Exporta diagramas TikZ a `salidas/tikz/pdf`, `salidas/tikz/svg` y `salidas/tikz/png`.
+- Plantillas maestras y motor LaTeX: `base/`.
+- Trabajos canonicos por institucion: `UnADM/`, `UCNL/`, `IIIEPE/`.
+- Material editorial y criterios de revision: `retroalimentacion-editorial/`.
+- Automatizacion de compilacion y exportacion: `scripts/`.
+- Residuales de compilacion: `.build/`.
 
-## Comandos utiles
+## Comandos Utiles
 
 ```powershell
-.\scripts\latexmk-build.ps1 .\main.tex
+.\scripts\latexmk-build.ps1 .\UnADM\reporte-unadm.tex
 ```
 
 ```powershell
-.\scripts\tikz-export.ps1 "trabajos\diagramas\tikz\fuentes\Diagramas TikZ.tex" -Format all
+.\scripts\latexmk-build.ps1 .\IIIEPE\temas-selectos-de-matematicas-I\reporte-temas-selectos-de-matematicas-I.tex
 ```
 
-## Documentacion interna
+```powershell
+.\scripts\latexmk-build.ps1 .\base\Templates-Informe\main.tex
+```
 
-- [Estructura](docs/ESTRUCTURA.md)
-- [Compilacion](docs/COMPILACION.md)
-- [Catalogo de plantillas](plantillas/latex/README.md)
-- [Referencias](referencias/README.md)
-- [Mapa de bibliografias](referencias/MAPA_BIBLIOGRAFIAS.md)
-- [Retroalimentacion editorial](retroalimentacion-editorial/indice.md)
+El PDF final se copia en la misma carpeta del archivo `.tex`.
 
-## Base original
+Cada carpeta de materia tiene un `COMPILACION.md` con el comando exacto, el
+`.bib` esperado y el contrato de compilacion. Regla central: al script solo se
+le pasa el `.tex`; `\input{template}` se resuelve con `TEXINPUTS` y
+`\bibliography{...}` se resuelve con `BIBINPUTS`, ambos definidos en
+`.latexmkrc`.
 
-Este proyecto conserva el nucleo de `Template-Informe` de Pablo Pizarro R. como base tecnica de la plantilla. La personalizacion de `AulaTeX-Academico` organiza el flujo local de trabajo, referencias, materias, proyectos y salidas compiladas.
+## Estructura Canonica
 
-Licencia base: MIT.
+```text
+AulaTeX-Academico/
+|-- README.md
+|-- base/
+|   |-- cwl-docs/
+|   |-- Export-Subtemmplate/
+|   |-- Plantilla-Informe/
+|   |-- latex/
+|   |-- Professional-CV/
+|   |-- Template-Articulo/
+|   |-- Template-Auxiliares/
+|   |-- Template-Controles/
+|   |-- Templates-Informe/
+|   |-- Template-Informe-master/
+|   |-- Template-latex.github.io/
+|   |-- Template-Poster/
+|   |-- Template-Presentacion/
+|   |-- Template-Reporte/
+|   `-- Template-Tesis/
+|-- UnADM/
+|   |-- bibliografia-unadm.bib
+|   |-- reporte-unadm.tex
+|   |-- presentacion-unadm.tex
+|   |-- referencias-unadm/
+|   |-- redaccion-en-contextos-virtuales/
+|   |-- etica-y-moral-juridica/
+|   `-- filosofia-del-derecho/
+|-- UCNL/
+|   |-- bibliografia-ucnl.bib
+|   |-- reporte-ucnl.tex
+|   |-- presentacion-ucnl.tex
+|   |-- referencias-ucnl/
+|   |-- administracion-I/
+|   |-- contabilidad-I/
+|   |-- curso-inductivo/
+|   |-- desarrollo-sustentable/
+|   |-- ingles-I/
+|   |-- matematicas-I/
+|   `-- microeconomia/
+|-- IIIEPE/
+|   |-- temas-selectos-de-matematicas-I/
+|   `-- fundamentos-para-la-enseñanza-y-el-aprendizaje-I/
+|-- retroalimentacion-editorial/
+`-- scripts/
+```
+
+## Convenciones
+
+- Reporte general: `reporte-<materia>.tex`.
+- Actividad: `reporte-<materia>-Actividad-N.tex`.
+- Presentacion: `presentacion-<materia>.tex`.
+- Bibliografia local: `<materia>.bib`.
+
+## Base Original
+
+El proyecto conserva el nucleo tecnico de `Template-Informe` de Pablo Pizarro R.
+en `base/Plantilla-Informe/`, junto con copias originales y adaptaciones
+institucionales. Licencia base: MIT.

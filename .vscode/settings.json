@@ -1,11 +1,11 @@
 {
   "latex-workshop.latex.cwd": "%WORKSPACE_FOLDER%",
-  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/build/latex",
+  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/.build/latex",
   "latex-workshop.synctex.afterBuild.enabled": false,
   "latex-workshop.latex.recipe.default": "lastUsed",
   "latex-workshop.latex.recipes": [
     {
-      "name": "AulaTeX: latexmk -> salidas/pdf",
+      "name": "AulaTeX: latexmk -> PDF junto al tex",
       "tools": [
         "aulatex-latexmk"
       ]
@@ -45,5 +45,12 @@
       ]
     }
   ],
-  "latex-workshop.view.pdf.viewer": "tab"
+  "latex-workshop.view.pdf.viewer": "tab",
+  "aulatex.entryPoints": [
+    "base/Templates-Informe/main.tex",
+    "base/latex/main.tex",
+    "UnADM/reporte-unadm.tex",
+    "UnADM/filosofia-del-derecho/reporte-filosofia-del-derecho-Actividad-5.tex",
+    "IIIEPE/temas-selectos-de-matematicas-I/reporte-temas-selectos-de-matematicas-I.tex"
+  ]
 }

@@ -8,7 +8,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$ProjectRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
+$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 
 function Resolve-TexFile {
     param([string]$Path)
@@ -23,13 +23,31 @@ function Resolve-TexFile {
     }
 
     $fromRoot = Join-Path $ProjectRoot $Path
-    return (Resolve-Path -LiteralPath $fromRoot).Path
+    if (Test-Path -LiteralPath $fromRoot) {
+        return (Resolve-Path -LiteralPath $fromRoot).Path
+    }
+
+    if ([System.IO.Path]::GetFileName($Path) -eq $Path) {
+        $matches = @(Get-ChildItem -LiteralPath $ProjectRoot -Recurse -File -ErrorAction SilentlyContinue |
+            Where-Object { $_.Name -ieq $Path } |
+            Sort-Object FullName)
+
+        if ($matches.Count -eq 1) {
+            return $matches[0].FullName
+        }
+
+        if ($matches.Count -gt 1) {
+            $matchList = ($matches | ForEach-Object { $_.FullName }) -join ', '
+            throw "Se encontraron varios archivos con el nombre '$Path': $matchList. Usa una ruta mas especifica."
+        }
+    }
+
+    throw "No se encontro el archivo TeX '$Path'. Se intento desde la carpeta actual y desde la raiz del proyecto."
 }
 
 $ResolvedTex = Resolve-TexFile $TexFile
-New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot 'build/latex') | Out-Null
-New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot 'build/latex/aux') | Out-Null
-New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot 'salidas/pdf') | Out-Null
+New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot '.build/latex') | Out-Null
+New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot '.build/latex/aux') | Out-Null
 
 Push-Location $ProjectRoot
 try {
@@ -40,11 +58,17 @@ try {
     }
 
     $BaseName = [System.IO.Path]::GetFileNameWithoutExtension($ResolvedTex)
-    $GeneratedPdf = Join-Path $ProjectRoot ("build/latex/{0}.pdf" -f $BaseName)
-    $FinalPdf = Join-Path $ProjectRoot ("salidas/pdf/{0}.pdf" -f $BaseName)
+    $GeneratedPdfCandidates = @(
+        (Join-Path $ProjectRoot (".build/latex/{0}.pdf" -f $BaseName)),
+        (Join-Path $ProjectRoot (".build/latex/aux/{0}.pdf" -f $BaseName))
+    )
+    $GeneratedPdf = $GeneratedPdfCandidates | Where-Object {
+        Test-Path -LiteralPath $_ -PathType Leaf
+    } | Select-Object -First 1
+    $FinalPdf = Join-Path (Split-Path -Parent $ResolvedTex) ("{0}.pdf" -f $BaseName)
 
-    if (-not (Test-Path -LiteralPath $GeneratedPdf -PathType Leaf)) {
-        Write-Error "No se encontro el PDF generado: $GeneratedPdf"
+    if (-not $GeneratedPdf) {
+        Write-Error "No se encontro el PDF generado en las rutas esperadas: $($GeneratedPdfCandidates -join ', ')"
         exit 1
     }
 

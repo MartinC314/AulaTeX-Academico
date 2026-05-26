@@ -29,29 +29,39 @@ $interaction = 'nonstopmode';
 $emulate_aux = 1;
 $max_repeat = 5;
 
-$out_dir = 'build/latex';
-$aux_dir = 'build/latex/aux';
-$pdflatex = 'pdflatex -interaction=nonstopmode -file-line-error %O %S';
+$out_dir = '.build/latex';
+$aux_dir = '.build/latex/aux';
+# Batch mode avoids MiKTeX console flush failures on long reports with large logs.
+# The full diagnostics remain available in .build/latex/aux/*.log.
+$pdflatex = 'pdflatex %O -interaction=batchmode -file-line-error %S';
 $bibtex = 'bibtex %O %B';
 
 prepend_env_paths('TEXINPUTS',
     aulatex_path('.', 0),
-    aulatex_path('src', 1),
-    aulatex_path('img', 1),
-    aulatex_path('trabajos', 1),
-    aulatex_path('plantillas', 1),
-    aulatex_path('referencias', 1)
+    aulatex_path('base/Plantilla-Informe', 1),
+    aulatex_path('base/Plantilla-Informe/src', 1),
+    aulatex_path('base/Plantilla-Informe/img', 1),
+    aulatex_path('base/latex', 1),
+    aulatex_path('base', 1),
+    aulatex_path('UnADM', 1),
+    aulatex_path('UCNL', 1),
+    aulatex_path('IIIEPE', 1)
 );
 
+# Keep bibliography lookup explicit enough to avoid stale archived copies
+# (for example other templates with the same jobname `main` or `library.bib`).
 prepend_env_paths('BIBINPUTS',
-    aulatex_path('.', 1),
-    aulatex_path('referencias', 1),
-    aulatex_path('trabajos', 1)
+    aulatex_path('.', 0),
+    aulatex_path('base/Plantilla-Informe', 1),
+    aulatex_path('UnADM', 1),
+    aulatex_path('UCNL', 1),
+    aulatex_path('IIIEPE', 1)
 );
 
 prepend_env_paths('BSTINPUTS',
-    aulatex_path('.', 1),
-    aulatex_path('herramientas/bibtex', 1)
+    aulatex_path('.', 0),
+    aulatex_path('base/Plantilla-Informe/bibtex', 1),
+    aulatex_path('base/Plantilla-Informe', 1)
 );
 
 $clean_ext = 'aux bbl bcf blg fdb_latexmk fls lof log lot nav out run.xml snm synctex.gz toc vrb xdv';
