@@ -61,6 +61,8 @@ salidas/
 *.xlsx
 *_temp.tex
 TODO.txt
+scripts/preview/
+scripts/tikz-preview/
 
 # VS Code: compartir recetas del proyecto, no estado local del editor
 .vscode/*
