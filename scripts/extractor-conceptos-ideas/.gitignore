@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+extractor.ev
+.env
+.env.local
+.env.secrets
+.cache/
+output/
+input/fuentes/
+input/planeaciones/
+

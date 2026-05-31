@@ -1,0 +1,58 @@
+# ============================================================
+# EXTRACTOR DE CONCEPTOS E IDEAS - TEMPLATE-INFORME
+# Configuración local para usar Azure OpenAI dentro del repositorio.
+# ============================================================
+
+# Carpeta principal con fuentes de la materia.
+FUENTES_DIR=../../UnADM/etica-y-moral-juridica/referencias-etica-y-moral-juridica/libros-etica-y-moral-juridica
+RECURSIVO=true
+EXTENSIONES=.pdf,.docx,.txt,.md,.markdown
+
+# Planeación a procesar.
+PLANEACION_PATH=../../UnADM/etica-y-moral-juridica/planeaciones-etica-y-moral-juridica/Planificacion-S8-extraida.txt
+
+# Archivo opcional de conceptos semilla.
+CONCEPTOS_PATH=
+PLANEACION_CONCEPTOS=20
+
+# Carpeta de salida editorial reutilizable.
+OUTPUT_DIR=../../salidas/fichas/etica-y-moral-juridica/semana-08
+
+# Motores: tfidf | tfhub | azure | openai | anthropicfoundry
+MOTOR=anthropicfoundry
+TFHUB_MODEL=https://tfhub.dev/google/universal-sentence-encoder-multilingual/3
+
+TOP_K=12
+MAX_CITAS=8
+AUTO_CONCEPTOS=25
+UMBRAL=
+MAX_CARACTERES_CITA=700
+MAX_CARACTERES_FRAGMENTO=1200
+MIN_CARACTERES_FRAGMENTO=160
+CACHE_EMBEDDINGS=true
+API_BATCH_SIZE=64
+PLANEACION_ASISTIDA_CON_CHAT=true
+PLANEACION_CHAT_AUTO=true
+PLANEACION_CONFIANZA_MINIMA=0.75
+REFINAR_FICHAS_ITERATIVAMENTE=true
+RONDAS_REFINAMIENTO=2
+CONSULTAS_EXPANSION=3
+HITS_POR_EXPANSION=4
+
+# ===== Azure OpenAI / Azure AI Foundry =====
+AZURE_OPENAI_BASE_URL=https://TU-RECURSO.openai.azure.com/openai/v1/
+AZURE_OPENAI_API_KEY=PEGA_AQUI_TU_CLAVE
+AZURE_OPENAI_EMBEDDING_DEPLOYMENT=text-embedding-3-small
+AZURE_OPENAI_CHAT_DEPLOYMENT=gpt-4.1-mini
+NORMALIZAR_CONCEPTOS_CON_CHAT=false
+AUTO_CONCEPTOS_MOTOR=local
+
+# ===== Anthropic Foundry, recomendado para chat/normalización =====
+ANTHROPIC_FOUNDRY_BASE_URL=https://TU-RECURSO.services.ai.azure.com/anthropic/
+ANTHROPIC_FOUNDRY_API_KEY=PEGA_AQUI_TU_CLAVE_ANTHROPIC
+ANTHROPIC_FOUNDRY_CHAT_DEPLOYMENT=claude-sonnet-4-6
+
+# ===== OpenAI público, opcional =====
+# OPENAI_API_KEY=PEGA_AQUI_TU_CLAVE_OPENAI
+OPENAI_EMBEDDING_MODEL=text-embedding-3-small
+# OPENAI_CHAT_MODEL=gpt-4.1-mini
