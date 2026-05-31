@@ -1,0 +1,97 @@
+{
+  "tema": "Redacción académica basada en la autogestión del aprendizaje (3.1 Características de la educación superior abierta y a distancia. 3.2 Qué es la autogestión del aprendizaje. 3.3 Criterios generales de la redacción académica en una educación superior abierta y a distancia.)",
+  "objetivo": "Identificar las características de la educación superior abierta y a distancia, así como los principios de la autogestión del aprendizaje, para aplicar criterios generales de redacción académica en la elaboración de textos pertinentes, claros y acordes con las exigencias del contexto universitario.",
+  "tecnica_didactica": "Mapa conceptual",
+  "actividad": "Elaborar un mapa conceptual en el que se relacionen los conceptos: Educación abierta y a distancia, Autogestión del aprendizaje, Organización del tiempo, Responsabilidad académica, Aprendizaje autónomo, Redacción académica, Claridad, Coherencia, Cohesión, Formalidad y Comunicación en entornos virtuales. Se deben establecer relaciones claras mediante conectores, palabras enlace y jerarquización de ideas, incluyendo ejemplos breves cuando se considere necesario. El mapa puede elaborarse en Canva, CmapTools, PowerPoint, Word, Genially o Lucidchart. Se entrega en formato PDF en la plataforma a más tardar el 31 de mayo de 2026 a las 23:55 (HC).",
+  "bibliografia": [
+    "Nuñez Cortés, J. (2015). Escritura académica: de la teoría a la práctica. BibliotecaTechnia. [General]",
+    "Correa, J. (2018). Manual básico para la escritura académica en la universidad. BibliotecaTechnia. [Complementaria]",
+    "Côrte Vitória, M. I. (2019). Escritura académica en la formación universitaria. Ecoe Ediciones. [Optativa]"
+  ],
+  "criterios_entrega": [
+    "Entrega en formato PDF subido a la plataforma.",
+    "Fecha límite: 31 de mayo de 2026 a las 23:55 (HC).",
+    "La entrega corresponde a un solo intento.",
+    "Las entregas extemporáneas tienen penalización de 3 puntos; se reciben únicamente hasta el martes de la semana correspondiente.",
+    "Las actividades deben estar debidamente citadas en formato APA 7ª edición.",
+    "El uso de IA al 100% resulta en calificación de cero. Entre 75%-99% de IA: penalización de 8 puntos. Entre 50%-74% de IA: penalización de 5 puntos.",
+    "No se reciben entregas por medios distintos al aula virtual ni posterior al cierre de la misma.",
+    "Aporta 15 puntos sobre 100 a la calificación final."
+  ],
+  "aprendizajes": [
+    "Identificar las características de la educación superior abierta y a distancia.",
+    "Comprender los principios de la autogestión del aprendizaje.",
+    "Aplicar criterios generales de redacción académica en entornos universitarios abiertos y a distancia.",
+    "Establecer relaciones lógicas entre conceptos mediante conectores, palabras enlace y jerarquización de ideas.",
+    "Utilizar herramientas digitales para la representación gráfica del conocimiento."
+  ],
+  "conceptos_clave": [
+    "Educación abierta y a distancia",
+    "Autogestión del aprendizaje",
+    "Organización del tiempo",
+    "Responsabilidad académica",
+    "Aprendizaje autónomo",
+    "Redacción académica",
+    "Claridad",
+    "Coherencia",
+    "Cohesión",
+    "Formalidad",
+    "Comunicación en entornos virtuales"
+  ],
+  "page_evidence": {
+    "tema": [
+      "p. 3, bloque 3",
+      "p. 3, bloque 4"
+    ],
+    "objetivo": [
+      "p. 3, bloque 5"
+    ],
+    "tecnica_didactica": [
+      "p. 3, bloque 6"
+    ],
+    "actividad": [
+      "p. 4, bloque 6",
+      "p. 4, bloque 7",
+      "p. 4, bloque 8",
+      "p. 4, bloque 9",
+      "p. 4, bloque 10",
+      "p. 4, bloque 11",
+      "p. 4, bloque 12"
+    ],
+    "bibliografia": [
+      "p. 3, bloque 8"
+    ],
+    "criterios_entrega": [
+      "p. 4, bloque 12",
+      "p. 5, bloque 4",
+      "p. 5, bloque 11",
+      "p. 6, bloque 1",
+      "p. 6, bloque 5",
+      "p. 6, bloque 6",
+      "p. 6, bloque 8"
+    ],
+    "aprendizajes": [
+      "p. 3, bloque 5",
+      "p. 4, bloque 7",
+      "p. 4, bloque 8",
+      "p. 4, bloque 9",
+      "p. 4, bloque 10"
+    ],
+    "conceptos_clave": [
+      "p. 4, bloque 8"
+    ],
+    "criterios_evaluacion": [
+      "p. 6, bloque 11",
+      "p. 6, bloque 13",
+      "p. 6, bloque 14",
+      "p. 6, bloque 15",
+      "p. 6, bloque 16",
+      "p. 6, bloque 17"
+    ]
+  },
+  "warnings": [
+    "La bibliografía no incluye año de consulta ni URL/DOI para los recursos de BibliotecaTechnia; se transcribió tal como aparece en el documento.",
+    "Los criterios de evaluación indican solo dos niveles de cumplimiento (3 puntos o 0 puntos por criterio, 5 criterios = 15 puntos máximo), lo cual es consistente con el porcentaje asignado (15/100), pero no se especifica nivel intermedio de desempeño.",
+    "El concentrado de calificaciones de la semana 10 (Autoevaluación) figura como 'No ponderable', por lo que la suma explícita de actividades ponderables alcanza 100 puntos sin incluirla; no se detecta inconsistencia numérica, pero conviene verificarlo con el docente."
+  ]
+}

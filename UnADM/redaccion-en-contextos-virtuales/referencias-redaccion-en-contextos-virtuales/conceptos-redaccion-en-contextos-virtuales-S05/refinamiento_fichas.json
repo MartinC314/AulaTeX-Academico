@@ -1,0 +1,355 @@
+{
+  "Escritura académica": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición escritura académica características formales géneros discursivos universitarios",
+            "escritura académica pensamiento crítico alfabetización académica Carlino Cassany fundamentos teóricos",
+            "limitaciones escritura académica modelos herméticos exclusión diversidad epistémica crítica"
+          ],
+          "nota": "Las citas recuperadas son fragmentos periféricos de un único texto (Corte Vitoria) y presentan similitudes bajas (máx. 0.31), lo que indica poca pertinencia directa al concepto. No se identifica ninguna definición explícita de escritura académica, no hay fundamento teórico desarrollado, no se nombran autores de referencia canónica en el campo (e.g., Carlino, Cassany, Bazerman), no se ofrece un ejemplo concreto de género o tarea académica, y no aparece ninguna crítica o límite articulado del concepto. Se requieren al menos tres rondas adicionales con consultas más específicas para cubrir todos los elementos de la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición escritura académica características formales géneros discursivos universitarios",
+            "hits": 4
+          },
+          {
+            "consulta": "escritura académica pensamiento crítico alfabetización académica Carlino Cassany fundamentos teóricos",
+            "hits": 4
+          },
+          {
+            "consulta": "limitaciones escritura académica modelos herméticos exclusión diversidad epistémica crítica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "Cassany escritura académica características géneros discursivos universitarios",
+            "críticas limitaciones escritura académica modelos herméticos exclusión voz propia estudiante",
+            "ejemplos prácticos géneros textuales escritura académica ensayo reseña informe universitario"
+          ],
+          "nota": "Las citas recuperadas ofrecen una aproximación funcional al concepto (comunicación, distanciamiento, competencias) y apuntan a su fundamento institucional y cultural, pero ninguna cita atribuye explícitamente una definición a un autor reconocido (como Cassany, Carlino o Bazerman). Tampoco se presentan ejemplos concretos de géneros textuales académicos ni se desarrolla una crítica o límite del modelo, más allá de menciones tangenciales a 'modelos herméticos'. La similitud promedio es baja (≈0.27), lo que sugiere que las citas son periféricas al núcleo conceptual buscado. Se recomienda una tercera ronda de búsqueda orientada a autoría, ejemplificación y dimensión crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Cassany escritura académica características géneros discursivos universitarios",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas limitaciones escritura académica modelos herméticos exclusión voz propia estudiante",
+            "hits": 4
+          },
+          {
+            "consulta": "ejemplos prácticos géneros textuales escritura académica ensayo reseña informe universitario",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 24
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 24
+  },
+  "Lectura digital": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "lectura digital definición características pantalla hipertexto comprensión",
+            "lectura digital versus lectura impresa efectos cognitivos aprendizaje universitario",
+            "Mangen Walgermo Brønnick lectura en pantalla comprensión lectora estudio empírico"
+          ],
+          "nota": "Las citas recuperadas son marginalmente relevantes para el concepto de 'lectura digital': abordan escritura digital, texto impreso vs. digital y niveles de lectura en universitarios, pero ninguna define ni caracteriza específicamente la lectura digital como práctica o fenómeno. No se identifica ningún autor de referencia en el campo (p. ej., Mangen, Wolf, Carr), no hay fundamento teórico sobre los procesos cognitivos implicados, no se presenta un ejemplo o aplicación concreta, ni se recoge crítica o límite del concepto. La similitud semántica de todas las citas es muy baja (máximo 0.2056), lo que confirma que el corpus disponible no contiene material suficiente sobre este concepto. Se requieren búsquedas específicas orientadas a literatura especializada en lectura digital."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "lectura digital definición características pantalla hipertexto comprensión",
+            "hits": 4
+          },
+          {
+            "consulta": "lectura digital versus lectura impresa efectos cognitivos aprendizaje universitario",
+            "hits": 4
+          },
+          {
+            "consulta": "Mangen Walgermo Brønnick lectura en pantalla comprensión lectora estudio empírico",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 15
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 15,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición específica de lectura digital como concepto diferenciado de la lectura impresa",
+            "Fundamento teórico sobre los procesos cognitivos implicados en la lectura digital (lectura en pantalla, hipertextualidad, navegación no lineal)",
+            "Autor o corriente de referencia central en el estudio de la lectura digital (ej. Mangen, Wolf, Coiro, Cassany)",
+            "Ejemplo concreto de práctica o contexto de lectura digital en entornos académicos o formativos",
+            "Crítica o límite documentado: efectos negativos en comprensión profunda, dispersión atencional, lectura superficial (skimming/scanning) frente a lectura analítica"
+          ],
+          "consultas": [
+            "lectura digital hipertextual comprensión lectora pantalla diferencias lectura impresa",
+            "Mangan Wolf lectura en pantalla efectos cognitivos comprensión profunda crítica",
+            "Cassany lectura digital literacidad estrategias lector entornos digitales académicos"
+          ],
+          "nota": "Las citas recuperadas en esta ronda son marginalmente relevantes: aluden al tránsito del texto impreso al digital y a estrategias generales de comprensión lectora, pero ninguna define 'lectura digital' como concepto propio, ni aporta autor de referencia en este campo específico, ni ofrece ejemplo aplicado ni crítica fundamentada. La similitud semántica es muy baja (máx. 0.20), lo que indica que el corpus disponible no contiene material central sobre este concepto. Se recomienda ampliar la búsqueda con términos más precisos orientados a autores clave del área (Maryanne Wolf, Anne Mangen, Daniel Cassany en literacidad digital) y a los efectos cognitivos y pedagógicos documentados de la lectura en entornos digitales."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "lectura digital hipertextual comprensión lectora pantalla diferencias lectura impresa",
+            "hits": 4
+          },
+          {
+            "consulta": "Mangan Wolf lectura en pantalla efectos cognitivos comprensión profunda crítica",
+            "hits": 4
+          },
+          {
+            "consulta": "Cassany lectura digital literacidad estrategias lector entornos digitales académicos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 20
+  },
+  "Tecnologías de la información y comunicación": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición tecnologías de la información y comunicación TIC educación superior",
+            "impacto crítico TIC enseñanza aprendizaje universitario limitaciones riesgos",
+            "autores referentes TIC pedagogía Castells Prensky competencia digital"
+          ],
+          "nota": "Las cinco citas recuperadas son meramente tangenciales: mencionan las TIC de pasada como contexto de la escritura académica o la competencia comunicativa, pero ninguna ofrece una definición estructurada del concepto, un fundamento teórico, un autor especializado, un ejemplo concreto de aplicación ni una crítica o límite documentado. La similitud semántica es muy baja (máximo 0.21), lo que confirma que el corpus consultado no cubre adecuadamente este concepto. Se requieren búsquedas dirigidas específicamente a literatura sobre TIC en educación superior, marcos teóricos de competencia digital y análisis críticos de su implementación."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición tecnologías de la información y comunicación TIC educación superior",
+            "hits": 4
+          },
+          {
+            "consulta": "impacto crítico TIC enseñanza aprendizaje universitario limitaciones riesgos",
+            "hits": 4
+          },
+          {
+            "consulta": "autores referentes TIC pedagogía Castells Prensky competencia digital",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 17,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición tecnologías de la información y comunicación educación superior",
+            "TIC impacto escritura académica universitaria ventajas limitaciones",
+            "autores referentes TIC aprendizaje Castells Area Moreira competencia digital"
+          ],
+          "nota": "Las cinco citas recuperadas son tangenciales y de similitud muy baja (máximo 0.21). Ninguna ofrece una definición formal del concepto, ni un fundamento teórico sólido, ni atribución a autores especializados en TIC, ni un ejemplo aplicado concreto, ni una crítica o límite identificado. Las menciones se limitan a referencias contextuales sobre el impacto general de las TIC en la escritura y la gestión del conocimiento, sin desarrollar el concepto en profundidad. Se requiere una nueva ronda de búsqueda con consultas más específicas orientadas a definición, teoría y crítica del concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición tecnologías de la información y comunicación educación superior",
+            "hits": 4
+          },
+          {
+            "consulta": "TIC impacto escritura académica universitaria ventajas limitaciones",
+            "hits": 4
+          },
+          {
+            "consulta": "autores referentes TIC aprendizaje Castells Area Moreira competencia digital",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  },
+  "Comprensión lectora": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Ejemplo concreto o aplicación práctica de un modelo de comprensión lectora en un contexto educativo específico",
+            "Crítica o límite reconocido a los modelos de comprensión lectora (p. ej., reduccionismo cognitivo, exclusión del contexto sociocultural, dificultades de evaluación)"
+          ],
+          "consultas": [
+            "modelos de comprensión lectora limitaciones críticas enfoque cognitivo sociocultural",
+            "aplicación práctica estrategias comprensión lectora educación universitaria ejemplo",
+            "críticas al modelo de comprensión lectora Solé Cassany inferencias conocimiento previo"
+          ],
+          "nota": "La ficha cuenta con una definición funcional sólida (Parodi, 2005) y referencias a autores relevantes (Solé, Cassany, Colomer). Sin embargo, carece de un ejemplo aplicado que ilustre cómo opera la comprensión lectora en una tarea concreta, y no recoge ninguna crítica o límite explícito a los modelos presentados. La cita sobre el déficit lector universitario (p. 26) podría usarse como evidencia de límite aplicado, pero no constituye una crítica teórica al concepto en sí. Se recomienda una ronda adicional centrada en esas dos dimensiones ausentes."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "modelos de comprensión lectora limitaciones críticas enfoque cognitivo sociocultural",
+            "hits": 4
+          },
+          {
+            "consulta": "aplicación práctica estrategias comprensión lectora educación universitaria ejemplo",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al modelo de comprensión lectora Solé Cassany inferencias conocimiento previo",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 15
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 15,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "ejemplo o aplicación concreta de estrategias de comprensión lectora en contexto académico o jurídico",
+            "crítica o límite del enfoque cognitivo de comprensión lectora (p.ej., omisión de factores socioculturales, emocionales o motivacionales)",
+            "modelos alternativos o debates teóricos entre enfoques (bottom-up vs top-down vs interactivo)"
+          ],
+          "consultas": [
+            "modelos bottom-up top-down interactivo comprensión lectora críticas limitaciones",
+            "dificultades comprensión lectora estudiantes universitarios estrategias aplicación práctica",
+            "comprensión lectora enfoque sociocultural crítica modelo cognitivo Cassany"
+          ],
+          "nota": "La ficha cuenta con una definición sólida apoyada en Parodi (2005) y referencias a estrategias lectoras (Solé, Cassany), así como mención de autores relevantes. Sin embargo, carece de un ejemplo aplicado que ilustre cómo operan estas estrategias en un texto concreto, y no incluye ninguna crítica o límite explícito al modelo cognitivo dominante. Incorporar al menos un caso de aplicación y una postura crítica (p.ej., Cassany sobre lectura sociocultural) haría la ficha más completa y equilibrada."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "modelos bottom-up top-down interactivo comprensión lectora críticas limitaciones",
+            "hits": 4
+          },
+          {
+            "consulta": "dificultades comprensión lectora estudiantes universitarios estrategias aplicación práctica",
+            "hits": 4
+          },
+          {
+            "consulta": "comprensión lectora enfoque sociocultural crítica modelo cognitivo Cassany",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 19
+  }
+}
