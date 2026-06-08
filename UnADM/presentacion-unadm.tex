@@ -1,28 +1,446 @@
-\documentclass[spanish,aspectratio=169]{beamer}
+% ==============================================================================
+% PLANTILLA DE PRESENTACION - UnADM
+% Inspirada en la estructura visual de la plantilla beamer de IIIEPE, pero
+% adaptada a la identidad academica y al flujo de contenido de los reportes UnADM.
+%
+% Uso recomendado:
+% 1. Duplica este archivo por materia o actividad.
+% 2. Actualiza los metadatos editables: titulo, actividad, asignatura, docente,
+%    matricula, fecha y bibliografia de apoyo.
+% 3. Usa esta presentacion como traduccion visual del reporte UnADM:
+%    resumen -> objetivo, introduccion -> problema, desarrollo -> ejes,
+%    postura -> lectura critica, conclusion -> cierre, referencias -> fuentes.
+% 4. No pegues la planeacion completa en las diapositivas. Convierte la consigna
+%    en narrativa, criterios y decisiones de contenido.
+% 5. Si la actividad exige producto visual adicional, inserta una diapositiva con
+%    esquema, cuadro, mapa o evidencia construida en LaTeX/TikZ o como imagen.
+% 6. Compilar desde la raiz del repositorio con:
+%    .\scripts\latexmk-build.ps1 .\UnADM\presentacion-unadm.tex
+%
+% Estructura sugerida para cada actividad:
+% [ ] Portada institucional.
+% [ ] Objetivo y alcance de la presentacion.
+% [ ] Contexto del caso, concepto o problema.
+% [ ] Desarrollo en 2-4 ejes claros.
+% [ ] Producto visual o evidencia central, si la planeacion lo requiere.
+% [ ] Postura personal o lectura critica.
+% [ ] Conclusion con aplicacion real.
+% [ ] Referencias.
+% ==============================================================================
 
-\usepackage[spanish,es-tabla]{babel}
+\documentclass[
+  spanish,
+  aspectratio=169,
+  xcolor={dvipsnames,table}
+]{beamer}
+
+% Lienzo ampliado 16:9: mantiene la proporcion panoramica y da mas espacio
+% util que el tamano por defecto de beamer (12.8 cm x 7.2 cm).
+\geometry{paperwidth=19.2cm,paperheight=10.8cm}
+
+% Idioma, tipografia y recursos visuales
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usetikzlibrary{calc,positioning,fit,shadows.blur}
 
-\title{Presentacion institucional UnADM}
-\subtitle{Punto de entrada canonico}
-\author{Martin Jonathan de la Cruz}
-\institute{Universidad Abierta y a Distancia de Mexico}
-\date{\today}
+% ------------------------------------------------------------------------------
+% DATOS EDITABLES
+% ------------------------------------------------------------------------------
+\newcommand{\studentname}{Martin Jonathan de la Cruz}
+\newcommand{\studentshort}{M. J. de la Cruz}
+\newcommand{\studentid}{ES2611202040}
+\newcommand{\studentemail}{martin.delacruz@unadmexico.mx}
+\newcommand{\universityname}{Universidad Abierta y a Distancia de Mexico}
+\newcommand{\facultyname}{Licenciatura en Derecho}
+\newcommand{\coursename}{Nombre de la asignatura}
+\newcommand{\coursecode}{000}
+\newcommand{\activitytitle}{Titulo de la presentacion}
+\newcommand{\activitysubtitle}{Actividad X - Nombre de la asignatura}
+\newcommand{\activityweek}{Semana X}
+\newcommand{\teachingfigure}{Nombre de la figura docente}
+\newcommand{\deliverydate}{\today}
+\newcommand{\locationname}{Roma Norte, Ciudad de Mexico}
+\newcommand{\generalbib}{bibliografia-unadm.bib}
+\newcommand{\coursebib}{reporte-unadm.tex y bibliografia de la materia}
+\newcommand{\departmentlogo}{img/departamentos/UnADM.pdf}
+\newcommand{\campusurl}{https://www.unadmexico.mx/}
+
+% ------------------------------------------------------------------------------
+% PALETA VISUAL
+% Direccion visual: institucional sobria, derivada del isotipo local y pensada
+% para conservar compatibilidad con el estilo de los reportes UnADM.
+% ------------------------------------------------------------------------------
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+\definecolor{unadmMuted}{HTML}{5D6B66}
+
+\mode<presentation>{
+  \usetheme{default}
+  \usefonttheme{professionalfonts}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{blocks}[rounded][shadow=false]
+  \setbeamercovered{invisible}
+}
+\setbeamersize{text margin left=0.55cm,text margin right=0.55cm}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=unadmGreenDark,
+  linkcolor=unadmGreenDark
+}
+
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=unadmInk,bg=white}
+\setbeamercolor{structure}{fg=unadmGreenDark}
+\setbeamercolor{frametitle}{fg=white,bg=unadmGreenDark}
+\setbeamercolor{title}{fg=white,bg=unadmGreenDark}
+\setbeamercolor{subtitle}{fg=white}
+\setbeamercolor{block title}{fg=white,bg=unadmGreen}
+\setbeamercolor{block body}{fg=unadmInk,bg=unadmPaper}
+\setbeamercolor{alerted text}{fg=unadmGold}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{block title}{series=\bfseries}
+\setbeamertemplate{itemize item}{\textcolor{unadmGreen}{\large$\blacktriangleright$}}
+\setbeamertemplate{itemize subitem}{\textcolor{unadmGold}{\scriptsize$\blacksquare$}}
+\setbeamertemplate{enumerate item}{\textcolor{unadmGreenDark}{\insertenumlabel.}}
+
+\setbeamertemplate{frametitle}{
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\textwidth,ht=1.02cm,dp=0.22cm,leftskip=0.35cm,rightskip=0.25cm]{frametitle}
+    \begin{minipage}[c]{0.72\textwidth}
+      \insertframetitle
+    \end{minipage}
+    \hfill
+    \raisebox{-0.1cm}{\includegraphics[height=0.60cm]{\departmentlogo}}
+  \end{beamercolorbox}
+  \vspace{-0.04cm}
+  {\color{unadmGold}\rule{\textwidth}{1.3pt}}
+}
+
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}%
+      \color{white}\studentshort
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.40\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}%
+      \color{white}\coursename
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.26\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}%
+      \color{white}\coursecode\hfill\insertframenumber/\inserttotalframenumber
+    \end{beamercolorbox}%
+  }%
+  \vskip0pt%
+}
+\setbeamercolor{author in head/foot}{bg=unadmGreenDark}
+\setbeamercolor{title in head/foot}{bg=unadmGreen}
+\setbeamercolor{date in head/foot}{bg=unadmGreenDark}
+
+\newcommand{\accentbar}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \path[use as bounding box] (0,0) rectangle (0,0);
+    \fill[unadmGreen] (current page.south west) rectangle ([xshift=0.56\paperwidth,yshift=0.08cm]current page.south west);
+    \fill[unadmGold] ([xshift=0.56\paperwidth]current page.south west) rectangle ([xshift=\paperwidth,yshift=0.08cm]current page.south west);
+  \end{tikzpicture}
+}
+
+\newcommand{\sectionframe}[1]{%
+  \begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay]
+      \path[use as bounding box] (0,0) rectangle (0,0);
+      \fill[unadmGreenDark] (current page.south west) rectangle (current page.north east);
+      \node[opacity=0.09,anchor=east] at ([xshift=-0.45cm]current page.east) {\includegraphics[width=0.43\paperwidth]{\departmentlogo}};
+      \fill[unadmGreen] ([xshift=1.05cm,yshift=2.25cm]current page.south west) rectangle ([xshift=1.25cm,yshift=6.40cm]current page.south west);
+      \fill[unadmGold] ([xshift=1.48cm,yshift=2.25cm]current page.south west) rectangle ([xshift=1.68cm,yshift=5.25cm]current page.south west);
+      \node[
+        anchor=west,
+        align=left,
+        text=white,
+        text width=0.54\paperwidth,
+        font=\fontsize{26}{31}\selectfont\bfseries
+      ] at ([xshift=2.08cm,yshift=0.55cm]current page.west) {#1};
+      \node[
+        anchor=west,
+        align=left,
+        text=white!78,
+        font=\large
+      ] at ([xshift=2.08cm,yshift=-0.55cm]current page.west) {\facultyname};
+    \end{tikzpicture}
+  \end{frame}
+}
+
+\newcommand{\unadmsection}[1]{%
+  \section{#1}
+  \sectionframe{#1}
+}
+
+\title[\coursecode]{\activitytitle}
+\subtitle{\activitysubtitle}
+\author[\studentshort]{\texorpdfstring{\studentname\\\footnotesize Matricula: \studentid\\\href{mailto:\studentemail}{\studentemail}}{\studentname, Matricula: \studentid}}
+\institute[UnADM]{\universityname\\\facultyname\\\coursecode\ \textperiodcentered\ \coursename}
+\date[\activityweek]{\locationname\\\activityweek\\\deliverydate}
 
 \begin{document}
 
-\begin{frame}
-  \titlepage
+% Portada institucional
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \path[use as bounding box] (0,0) rectangle (0,0);
+    \fill[unadmGreenDark,opacity=0.96] (current page.south west) rectangle ([xshift=0.58\paperwidth]current page.north west);
+    \fill[unadmGreen,opacity=0.92] ([xshift=0.58\paperwidth]current page.south west) rectangle (current page.north east);
+    \node[anchor=center,opacity=0.10] at (current page.center) {\includegraphics[width=0.72\paperwidth]{\departmentlogo}};
+    \node[anchor=north west] at ([xshift=0.58cm,yshift=-0.46cm]current page.north west) {\includegraphics[width=2.55cm]{\departmentlogo}};
+    \fill[unadmGold] ([xshift=0.60\paperwidth,yshift=1.18cm]current page.south west) rectangle ([xshift=0.93\paperwidth,yshift=1.30cm]current page.south west);
+    \fill[white,opacity=0.15] ([xshift=0.60\paperwidth,yshift=0.92cm]current page.south west) rectangle ([xshift=0.84\paperwidth,yshift=1.02cm]current page.south west);
+  \end{tikzpicture}
+
+  \vspace*{1.80cm}
+  \begin{minipage}{0.55\paperwidth}
+    {\color{white}\fontsize{25}{30}\selectfont\bfseries\raggedright \activitytitle\par}
+    \vspace{0.22cm}
+    {\color{white!86}\large \activitysubtitle}\\[0.32cm]
+    {\color{unadmGold}\rule{0.82\linewidth}{1.3pt}}\\[0.42cm]
+    {\color{white}\studentname}\\
+    {\color{white!82}\footnotesize Matricula: \studentid}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.34\paperwidth}
+    \raggedleft
+    {\color{white}\Large\bfseries UnADM}\\[0.18cm]
+    {\color{white!84}\footnotesize \universityname}\\[0.45cm]
+    {\color{white}\small \facultyname}\\
+    {\color{white!78}\small \coursename}\\[0.45cm]
+    {\color{white!74}\footnotesize \coursecode\ \textperiodcentered\ \activityweek}\\
+    {\color{white!74}\footnotesize \locationname}\\
+    {\color{white!74}\footnotesize \href{\campusurl}{\campusurl}}
+  \end{minipage}
 \end{frame}
 
-\begin{frame}{Estructura academica}
+\begin{frame}{Contenido}
+  \tableofcontents
+\end{frame}
+
+\unadmsection{Identidad Academica}
+
+\begin{frame}{Ficha de la actividad}
+  \begin{columns}[T]
+    \begin{column}{0.40\textwidth}
+      \begin{center}
+        \includegraphics[width=0.44\linewidth]{\departmentlogo}\\[0.25cm]
+        {\Large\bfseries\color{unadmGreenDark}UnADM}\\
+        {\small\color{unadmMuted}\facultyname}
+      \end{center}
+    \end{column}
+    \begin{column}{0.56\textwidth}
+      \begin{block}{Datos generales}
+        \textbf{Alumno:} \studentname\\
+        \textbf{Matricula:} \studentid\\
+        \textbf{Asignatura:} \coursename\\
+        \textbf{Codigo:} \coursecode\\
+        \textbf{Actividad:} \activitysubtitle
+      \end{block}
+      \begin{block}{Figura docente}
+        \teachingfigure\\
+        \deliverydate
+      \end{block}
+    \end{column}
+  \end{columns}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Contexto academico}
+  \begin{columns}[T]
+    \begin{column}{0.49\textwidth}
+      \begin{block}{Enfoque institucional}
+        La presentacion funciona como traduccion visual del reporte academico:
+        selecciona el problema, organiza los ejes centrales y muestra una
+        postura argumentada sin convertir las diapositivas en un documento.
+      \end{block}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+      \begin{block}{Ruta de contenido}
+        \begin{itemize}
+          \item Objetivo y alcance.
+          \item Problema, caso o concepto central.
+          \item Desarrollo por ejes.
+          \item Postura personal.
+          \item Conclusion y referencias.
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+  \accentbar
+\end{frame}
+
+\unadmsection{Enfoque de Contenido}
+
+\begin{frame}{Correspondencia con la plantilla de informe}
+  \begin{block}{Logica recomendada}
+    La presentacion no debe repetir el reporte completo. Debe condensar su
+    estructura para exponer con claridad: resumen del objetivo, problema central,
+    desarrollo por ejes, producto o evidencia, postura y cierre.
+  \end{block}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Secciones del reporte}
+        \begin{itemize}
+          \item Resumen / abstract.
+          \item Introduccion.
+          \item Desarrollo.
+          \item Postura personal.
+          \item Conclusion.
+          \item Bibliografia.
+        \end{itemize}
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Traduccion a diapositivas}
+        \begin{itemize}
+          \item Objetivo y tesis.
+          \item Contexto y problema.
+          \item Dos o tres ejes de analisis.
+          \item Producto visual o caso.
+          \item Lectura critica.
+          \item Cierre y fuentes.
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Narrativa sugerida}
+  \begin{enumerate}
+    \item Abrir con una afirmacion fuerte, no con una definicion blanda.
+    \item Traducir la consigna a un problema operativo o pregunta central.
+    \item Desarrollar solo los ejes que sostienen la postura.
+    \item Usar producto visual cuando la actividad lo pida: cuadro, mapa, esquema, linea de tiempo o tabla.
+    \item Cerrar con implicacion practica: que cambia en la lectura del tema.
+  \end{enumerate}
+  \begin{alertblock}{Regla de contenido}
+    Cada diapositiva debe responder una pregunta concreta. Si una diapositiva no
+    agrega criterio, debe comprimirse o eliminarse.
+  \end{alertblock}
+  \accentbar
+\end{frame}
+
+\unadmsection{Plantilla Editable}
+
+\begin{frame}{Diapositiva tipo: objetivo y problema}
+  \begin{block}{Objetivo}
+    \textit{Editable:} Analizar, explicar, comparar, interpretar o evaluar el
+    tema solicitado por la actividad.
+  \end{block}
+  \begin{block}{Problema central}
+    \textit{Editable:} El problema no se limita a \ldots, sino a \ldots
+  \end{block}
+  \begin{block}{Tesis de trabajo}
+    \textit{Editable:} La posicion que guia esta presentacion es que \ldots
+  \end{block}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Diapositiva tipo: desarrollo por ejes}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Eje 1}
+        \textit{Concepto} $\rightarrow$ \textit{funcion} $\rightarrow$ \textit{implicacion}.
+      \end{block}
+      \begin{block}{Eje 2}
+        \textit{Problema} $\rightarrow$ \textit{sistema} $\rightarrow$ \textit{consecuencia}.
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Eje 3 o evidencia}
+        \textit{Caso, norma, cuadro comparativo, mapa o ejemplo aplicado.}
+      \end{block}
+      \begin{block}{Criterio de seleccion}
+        No acumular datos. Mantener solo lo que sostiene la conclusion.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Diapositiva tipo: producto visual}
+  \begin{block}{Cuando la actividad pida evidencia grafica}
+    Insertar aqui un cuadro comparativo, esquema, mapa conceptual, red de ideas,
+    linea de tiempo o tabla sintesis. Si el producto se construye fuera de LaTeX,
+    usar captura nitida y agregar una frase que explique su funcion.
+  \end{block}
+  \begin{center}
+    \fbox{\parbox[c][4.2cm][c]{0.84\linewidth}{\centering Espacio reservado para el producto visual o evidencia central}}
+  \end{center}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Diapositiva tipo: cierre}
+  \begin{block}{Postura personal}
+    \textit{Editable:} Desde mi perspectiva, el punto mas importante no es
+    \ldots, sino \ldots, porque \ldots
+  \end{block}
+  \begin{block}{Conclusion}
+    \textit{Editable:} En sintesis, el valor del tema esta en \ldots y su
+    aplicacion real se observa en \ldots
+  \end{block}
+  \begin{alertblock}{Cierre util}
+    No terminar con resumen plano. Terminar con consecuencia, criterio o
+    aprendizaje transferible.
+  \end{alertblock}
+  \accentbar
+\end{frame}
+
+\unadmsection{Fuentes y Revision}
+
+\begin{frame}{Fuentes y bibliografia}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Bibliografia general UnADM}
+        \texttt{\generalbib}
+      \end{block}
+      \begin{block}{Plantilla de informe base}
+        \texttt{reporte-unadm.tex}
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Fuentes de la materia}
+        \texttt{\coursebib}
+      \end{block}
+      \begin{block}{Sitio institucional}
+        \href{\campusurl}{\campusurl}
+      \end{block}
+    \end{column}
+  \end{columns}
+  \begin{alertblock}{Regla}
+    La presentacion no sustituye la bibliografia del reporte. Solo sintetiza las
+    fuentes que sostienen la exposicion.
+  \end{alertblock}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Checklist de revision}
   \begin{itemize}
-    \item Bibliografia general: \texttt{bibliografia-unadm.bib}
-    \item Materias: Redaccion, Etica y Filosofia del Derecho
-    \item Actividades: archivos \texttt{reporte-*-Actividad-N.tex}
+    \item La portada y los datos de actividad estan actualizados.
+    \item La narrativa responde a la planeacion sin copiarla literalmente.
+    \item Cada diapositiva tiene una funcion clara.
+    \item El contenido mantiene enfoque personal, criterio y postura.
+    \item El producto visual aparece cuando la actividad lo exige.
+    \item La conclusion traduce el tema a una consecuencia practica.
+    \item Las fuentes finales coinciden con el reporte y la bibliografia usada.
   \end{itemize}
+  \accentbar
 \end{frame}
 
 \end{document}
