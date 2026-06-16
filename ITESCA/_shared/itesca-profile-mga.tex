@@ -1,0 +1,37 @@
+\newif\ifitescaprofiledirect
+\itescaprofiledirectfalse
+\ifdefined\pdfstrcmp
+\ifnum\pdfstrcmp{\jobname}{itesca-profile-mga}=0
+\itescaprofiledirecttrue
+\fi
+\fi
+
+\ifitescaprofiledirect
+\documentclass[spanish]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\begin{document}
+Perfil editorial compartido ITESCA para Maestria en Gestion Administrativa.
+\end{document}
+\else
+\providecommand{\itescastudentname}{Martin Jonathan de la Cruz}
+\providecommand{\itescastudentshort}{M. J. de la Cruz}
+\providecommand{\itescastudentid}{ITESCA-MGA}
+\providecommand{\itescafaculty}{Instituto Tecnologico Superior de Cajeme}
+\providecommand{\itescafacultyname}{Maestria en Gestion Administrativa}
+\providecommand{\itescacoursename}{Maestria en Gestion Administrativa}
+\providecommand{\itescacoursecode}{MGA}
+\providecommand{\itescadepartment}{Trayectoria academica por carrera}
+\providecommand{\itescateachingfigure}{Coordinacion academica por definir}
+\providecommand{\itescaprogramlevel}{Maestria}
+\providecommand{\itescaprogramperiod}{Periodo academico por definir}
+\providecommand{\itescamodality}{Modalidad por definir}
+\providecommand{\itescaprofessionalprofile}{La Maestria en Gestion Administrativa exige analizar decisiones organizacionales con criterio, evidencia, pertinencia institucional y enfoque de mejora.}
+\providecommand{\itescatransfercontext}{Diagnostico organizacional, planeacion, gestion de procesos y toma de decisiones administrativas}
+\providecommand{\itescalocation}{Cajeme, Sonora}
+\providecommand{\itescalocationname}{Cajeme, Sonora}
+\providecommand{\itescabibliography}{bibliografia-itesca-mga}
+\providecommand{\itescageneralbib}{bibliografia-itesca-mga.bib}
+\providecommand{\itescacoursebib}{bibliografia-itesca-mga.bib y referencias-itesca-mga/}
+\fi

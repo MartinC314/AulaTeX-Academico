@@ -7,7 +7,7 @@ presentaciones y bibliografias.
 ## Flujo Principal
 
 - Plantillas maestras y motor LaTeX: `base/`.
-- Trabajos canonicos por institucion: `UnADM/`, `UCNL/`, `IIIEPE/`.
+- Trabajos canonicos por institucion: `UnADM/`, `UCNL/`, `IIIEPE/`, `ITESCA/`.
 - Material editorial y criterios de revision: `retroalimentacion-editorial/`.
 - Automatizacion de compilacion y exportacion: `scripts/`.
 - Residuales de compilacion: `.build/`.
@@ -20,6 +20,10 @@ presentaciones y bibliografias.
 
 ```powershell
 .\scripts\latexmk-build.ps1 .\IIIEPE\temas-selectos-de-matematicas-I\reporte-temas-selectos-de-matematicas-I.tex
+```
+
+```powershell
+.\scripts\latexmk-build.ps1 .\ITESCA\ingenieria-en-sistemas-computacionales\primer-ingreso\reporte-primer-ingreso.tex
 ```
 
 ```powershell
@@ -78,6 +82,19 @@ AulaTeX-Academico/
 |-- IIIEPE/
 |   |-- temas-selectos-de-matematicas-I/
 |   `-- fundamentos-para-la-enseñanza-y-el-aprendizaje-I/
+|-- ITESCA/
+|   |-- ingenieria-en-sistemas-computacionales/
+|   |   |-- bibliografia-itesca-isc.bib
+|   |   |-- reporte-itesca-isc.tex
+|   |   |-- presentacion-itesca-isc.tex
+|   |   |-- referencias-itesca-isc/
+|   |   `-- primer-ingreso/
+|   `-- maestria-en-gestion-administrativa/
+|       |-- bibliografia-itesca-mga.bib
+|       |-- reporte-itesca-mga.tex
+|       |-- presentacion-itesca-mga.tex
+|       |-- referencias-itesca-mga/
+|       `-- primer-ingreso/
 |-- retroalimentacion-editorial/
 `-- scripts/
 ```
@@ -88,6 +105,7 @@ AulaTeX-Academico/
 - Actividad: `reporte-<materia>-Actividad-N.tex`.
 - Presentacion: `presentacion-<materia>.tex`.
 - Bibliografia local: `<materia>.bib`.
+- Cuando una institucion tiene mas de un programa educativo, el nivel canonico se mueve a `institucion/carrera/materia`.
 
 ## Base Original
 

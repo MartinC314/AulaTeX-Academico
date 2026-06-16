@@ -1,0 +1,30 @@
+\newif\ifitescaprofiledirect
+\itescaprofiledirectfalse
+\ifdefined\pdfstrcmp
+\ifnum\pdfstrcmp{\jobname}{itesca-profile-mga-primer-ingreso}=0
+\itescaprofiledirecttrue
+\fi
+\fi
+
+\ifitescaprofiledirect
+\documentclass[spanish]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\begin{document}
+Perfil editorial compartido ITESCA para primer ingreso de MGA.
+\end{document}
+\else
+\input{ITESCA/_shared/itesca-profile-mga}
+
+\def\itescacoursename {Primer ingreso}
+\def\itescacoursecode {MGA-PI}
+\def\itescafaculty {Maestria en Gestion Administrativa}
+\def\itescafacultyname {Maestria en Gestion Administrativa}
+\def\itescadepartment {Primer ingreso}
+\def\itescateachingfigure {Figura docente por definir}
+\def\itescaprofessionalprofile {En la Maestria en Gestion Administrativa, el primer ingreso debe convertir la induccion en habitos de analisis, planeacion, evidencia y mejora organizacional.}
+\def\itescatransfercontext {Habitos de posgrado, diagnostico administrativo, comunicacion ejecutiva y documentacion de decisiones}
+\def\itescabibliography {ITESCA/maestria-en-gestion-administrativa/primer-ingreso/primer-ingreso}
+\def\itescacoursebib {primer-ingreso.bib}
+\fi

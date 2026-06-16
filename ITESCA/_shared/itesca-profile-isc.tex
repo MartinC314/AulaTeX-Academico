@@ -1,0 +1,37 @@
+\newif\ifitescaprofiledirect
+\itescaprofiledirectfalse
+\ifdefined\pdfstrcmp
+\ifnum\pdfstrcmp{\jobname}{itesca-profile-isc}=0
+\itescaprofiledirecttrue
+\fi
+\fi
+
+\ifitescaprofiledirect
+\documentclass[spanish]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\begin{document}
+Perfil editorial compartido ITESCA para Ingenieria en Sistemas Computacionales.
+\end{document}
+\else
+\providecommand{\itescastudentname}{Martin Jonathan de la Cruz}
+\providecommand{\itescastudentshort}{M. J. de la Cruz}
+\providecommand{\itescastudentid}{ITESCA-ISC}
+\providecommand{\itescafaculty}{Instituto Tecnologico Superior de Cajeme}
+\providecommand{\itescafacultyname}{Ingenieria en Sistemas Computacionales}
+\providecommand{\itescacoursename}{Ingenieria en Sistemas Computacionales}
+\providecommand{\itescacoursecode}{ISC}
+\providecommand{\itescadepartment}{Trayectoria academica por carrera}
+\providecommand{\itescateachingfigure}{Coordinacion academica por definir}
+\providecommand{\itescaprogramlevel}{Licenciatura}
+\providecommand{\itescaprogramperiod}{Periodo academico por definir}
+\providecommand{\itescamodality}{Modalidad por definir}
+\providecommand{\itescaprofessionalprofile}{La formacion en Ingenieria en Sistemas Computacionales exige documentar problemas, procesos y decisiones tecnicas con claridad, trazabilidad y sentido de mejora.}
+\providecommand{\itescatransfercontext}{Desarrollo de software, sistemas de informacion, analisis de procesos y documentacion tecnica}
+\providecommand{\itescalocation}{Cajeme, Sonora}
+\providecommand{\itescalocationname}{Cajeme, Sonora}
+\providecommand{\itescabibliography}{bibliografia-itesca-isc}
+\providecommand{\itescageneralbib}{bibliografia-itesca-isc.bib}
+\providecommand{\itescacoursebib}{bibliografia-itesca-isc.bib y referencias-itesca-isc/}
+\fi

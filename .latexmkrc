@@ -45,7 +45,8 @@ prepend_env_paths('TEXINPUTS',
     aulatex_path('base', 1),
     aulatex_path('UnADM', 1),
     aulatex_path('UCNL', 1),
-    aulatex_path('IIIEPE', 1)
+    aulatex_path('IIIEPE', 1),
+    aulatex_path('ITESCA', 1)
 );
 
 # Keep bibliography lookup explicit enough to avoid stale archived copies
@@ -55,7 +56,8 @@ prepend_env_paths('BIBINPUTS',
     aulatex_path('base/Plantilla-Informe', 1),
     aulatex_path('UnADM', 1),
     aulatex_path('UCNL', 1),
-    aulatex_path('IIIEPE', 1)
+    aulatex_path('IIIEPE', 1),
+    aulatex_path('ITESCA', 1)
 );
 
 prepend_env_paths('BSTINPUTS',
