@@ -3,7 +3,9 @@ param(
     [switch]$ExistingEditorial,
     [switch]$Compile,
     [switch]$Commit,
-    [int]$Limit = 0
+    [int]$Limit = 0,
+    [int]$StartIndex = 1,
+    [int]$EndIndex = 0
 )
 
 $ErrorActionPreference = 'Stop'
@@ -652,6 +654,8 @@ if ($UnadmDerecho) {
     $count = 0
     foreach ($course in Get-UnadmLawCourses) {
         $count++
+        if ($count -lt $StartIndex) { continue }
+        if ($EndIndex -gt 0 -and $count -gt $EndIndex) { break }
         if ($Limit -gt 0 -and $count -gt $Limit) { break }
         Ensure-UnadmLawCourse $course
     }
