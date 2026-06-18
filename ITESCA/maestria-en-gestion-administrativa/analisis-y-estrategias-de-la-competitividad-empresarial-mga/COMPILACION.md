@@ -14,3 +14,12 @@ Ejecutar desde la raiz del repositorio que contiene la carpeta ITESCA:
 - La bibliografia local de la materia vive en analisis-y-estrategias-de-la-competitividad-empresarial.bib.
 - Esta carpeta corresponde a la categoria LGAC gestion e innovacion de las organizaciones.
 - La identidad institucional se hereda desde ITESCA/_shared/ y usa los assets oficiales descargados en ITESCA/assets-itesca/web/.
+
+## Checklist editorial
+
+- Definir la competitividad como decision estrategica, no como adjetivo generico.
+- Vincular ventaja competitiva con evidencia: sector, mercado, procesos o talento.
+- Explicar recursos, riesgos, indicadores y condiciones de implementacion.
+- Evitar copiar modelos sin aplicacion: toda herramienta debe cerrar con una decision.
+- La carpeta `referencias-analisis-y-estrategias-de-la-competitividad-empresarial/`
+  resguarda fuentes, matrices, casos y evidencia auxiliar de la materia.
