@@ -1,0 +1,26 @@
+﻿# Compilacion - Planeacion estrategica financiera
+
+Ejecutar siempre desde la raiz del proyecto:
+
+`powershell
+.\scripts\latexmk-build.ps1 .\UCNL\licenciatura-en-administracion\planeacion-estrategica-financiera-lad\reporte-planeacion-estrategica-financiera.tex
+.\scripts\latexmk-build.ps1 .\UCNL\licenciatura-en-administracion\planeacion-estrategica-financiera-lad\reporte-planeacion-estrategica-financiera-Actividad-1.tex
+.\scripts\latexmk-build.ps1 .\UCNL\licenciatura-en-administracion\planeacion-estrategica-financiera-lad\presentacion-planeacion-estrategica-financiera.tex
+`
+
+## Contrato de compilacion
+
+- El unico argumento obligatorio del script es la ruta del .tex.
+- El \input{template} no se pasa como argumento. MiKTeX lo busca con TEXINPUTS, definido en .latexmkrc.
+- En reportes, \input{template} debe resolver a ase/Plantilla-Informe/template.tex.
+- El .bib no se pasa al script. Los reportes deben declarar \bibliography{planeacion-estrategica-financiera}.
+- BibTeX busca $(@{Tetramestre=9; Name=Planeacion estrategica financiera; Folder=planeacion-estrategica-financiera-lad; BibStem=planeacion-estrategica-financiera; ReportStem=planeacion-estrategica-financiera; PresentationStem=planeacion-estrategica-financiera; Code=PLA-ESF}.BibStem).bib con BIBINPUTS.
+- El estilo 
+atnumurl.bst se resuelve con BSTINPUTS.
+- El PDF final queda en esta misma carpeta, junto al .tex.
+- Los auxiliares quedan en .build/latex y .build/latex/aux.
+
+## Checklist del .tex
+
+- Mantener el formato del reporte de la materia al crear nuevas actividades.
+- Toda clave citada debe existir en $(@{Tetramestre=9; Name=Planeacion estrategica financiera; Folder=planeacion-estrategica-financiera-lad; BibStem=planeacion-estrategica-financiera; ReportStem=planeacion-estrategica-financiera; PresentationStem=planeacion-estrategica-financiera; Code=PLA-ESF}.BibStem).bib.
