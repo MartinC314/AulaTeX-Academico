@@ -1,0 +1,78 @@
+{
+  "run_id": "20260618-134354",
+  "source_scope_key": "ITESCA/ingenieria-en-sistemas-computacionales",
+  "build_level": "institucion",
+  "propagation_mode": "arriba-y-laterales",
+  "iterations": 1,
+  "engines": [
+    "Codex"
+  ],
+  "built_scopes": [
+    "ITESCA/ingenieria-en-sistemas-computacionales",
+    "ITESCA/maestria-en-gestion-administrativa",
+    "ITESCA",
+    "IIIEPE",
+    "UANL",
+    "UCNL",
+    "UnADM"
+  ],
+  "cycles": [
+    {
+      "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales",
+      "scope_level": "carrera",
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 2265
+    },
+    {
+      "scope_key": "ITESCA/maestria-en-gestion-administrativa",
+      "scope_level": "carrera",
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 2251
+    },
+    {
+      "scope_key": "ITESCA",
+      "scope_level": "institucion",
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 2338
+    },
+    {
+      "scope_key": "IIIEPE",
+      "scope_level": "institucion",
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 2271
+    },
+    {
+      "scope_key": "UANL",
+      "scope_level": "institucion",
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 2296
+    },
+    {
+      "scope_key": "UCNL",
+      "scope_level": "institucion",
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 2299
+    },
+    {
+      "scope_key": "UnADM",
+      "scope_level": "institucion",
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 2241
+    }
+  ],
+  "ok": true
+}

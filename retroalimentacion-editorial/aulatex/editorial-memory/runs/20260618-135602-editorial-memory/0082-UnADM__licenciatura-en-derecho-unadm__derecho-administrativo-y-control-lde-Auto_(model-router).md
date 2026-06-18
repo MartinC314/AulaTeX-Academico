@@ -1,0 +1,71 @@
+{
+  "summary": [
+    "Consolidar Derecho administrativo y control con union-dedupe lossless y sin regresion.",
+    "Mantener alerta por antecedente de salida no JSON parseable desde Codex para UnADM.",
+    "Alinear la materia con semestre 6, bloque 1, tipo obligatoria y 8 creditos segun malla local.",
+    "Reutilizar solo reglas editoriales generales desde Filosofia del derecho; no trasladar contenido doctrinal no verificado."
+  ],
+  "identity_rules": [
+    "Mantener identidad UnADM en portada, metadatos y redaccion academica.",
+    "Usar nombre de materia exacto: Derecho administrativo y control.",
+    "Conservar enfoque de Licenciatura en Derecho en todos los entregables.",
+    "Marcar como provisional cualquier regla originada en Codex desde ingenieria-en-sistemas-computacionales. [supuesto]",
+    "Declarar cuando una regla provenga de fuente provisional. [supuesto]"
+  ],
+  "structure_rules": [
+    "Usar la carpeta de materia como punto de entrada canonico.",
+    "Alinear entregables a la planeacion semanal y al programa analitico local.",
+    "Organizar cada producto con problema, conceptos y fuentes, analisis propio y conclusion juridica.",
+    "Mantener consistencia entre README, plantilla .tex y archivo .bib.",
+    "Corregir artefactos de estructura en README antes de publicar indices.",
+    "Nombrar archivos con slug derecho-administrativo-y-control cuando aplique."
+  ],
+  "activity_rules": [
+    "Explicitar el producto solicitado antes del desarrollo.",
+    "Incluir postura academica propia en cada actividad.",
+    "Formular criterio juridico transferible a la practica profesional.",
+    "Vincular el tema de actividad con control administrativo y practica profesional.",
+    "No omitir conclusion final orientada a aplicacion juridica.",
+    "Separar reglas editoriales generales de contenidos sustantivos heredados de otras materias."
+  ],
+  "quality_gates": [
+    "Revisar que la salida sea JSON parseable antes de aplicar memoria aguas abajo.",
+    "Detener propagacion si hay respuesta no estructurada o campos vacios criticos.",
+    "Verificar integridad academica con citas verificables y sin fuentes inventadas.",
+    "Confirmar trazabilidad entre afirmaciones y bibliografia local.",
+    "Validar que el README no conserve placeholders ni rutas corruptas.",
+    "Revisar que las reglas heredadas no contradigan el programa analitico local."
+  ],
+  "latex_rules": [
+    "Mantener plantilla LaTeX en espanol y formato letterpaper segun archivo base.",
+    "Completar metadatos institucionales y de curso antes de compilar.",
+    "Conservar tabla de datos academicos del estudiante y docente en portada.",
+    "Asegurar coherencia entre \\documenttitle, \\documentsubtitle y actividad real.",
+    "Actualizar Actividad X por el numero y nombre real de la actividad.",
+    "Mantener coursecode LDE-S6B1 salvo evidencia institucional distinta."
+  ],
+  "bibliography_rules": [
+    "Registrar fuentes de la actividad en derecho-administrativo-y-control.bib.",
+    "Priorizar fuentes institucionales UnADM y documentos curriculares locales.",
+    "Incluir datos minimos verificables: autor, titulo, anio, medio y nota de consulta.",
+    "No agregar referencias sin evidencia documental.",
+    "Usar la malla curricular local como fuente para ubicacion curricular.",
+    "Agregar fuentes especificas solo cuando hayan sido consultadas o proporcionadas."
+  ],
+  "propagation_hints": [
+    "Propagar arriba y laterales solo tras validacion de estructura JSON.",
+    "Aplicar normalizacion manual en ciclo 1 cuando la fuente sea provisional.",
+    "Mantener estrategia lossless por union-dedupe en fusiones futuras.",
+    "Marcar conflictos de nomenclatura entre rutas antes de consolidar. [supuesto]",
+    "Propagar a laterales solo reglas editoriales compartibles, no contenidos especificos de actividad.",
+    "Preservar alerta institucional sobre respuestas no estructuradas en niveles superiores."
+  ],
+  "open_questions": [
+    "Definir fuente definitiva para reemplazar la referencia provisional de origen Codex.",
+    "Confirmar nombre de figura docente en plantilla de reporte.",
+    "Validar si existe formato institucional obligatorio de citas para la Licenciatura en Derecho.",
+    "Corregir posibles artefactos de ruta o nombre en listado de estructura del README. [supuesto]",
+    "Confirmar si el archivo de referencias debe llamarse referencias-derecho-administrativo-y-control o usar otra convencion local.",
+    "Verificar si el anio de consulta del sitio institucional UnADM debe mantenerse como 2026."
+  ]
+}

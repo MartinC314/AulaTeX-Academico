@@ -1,0 +1,24 @@
+{
+  "run_id": "20260618-130622",
+  "source_scope_key": "UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde",
+  "build_level": "materia",
+  "propagation_mode": "local",
+  "iterations": 1,
+  "engines": [
+    "Codex"
+  ],
+  "built_scopes": [
+    "UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde"
+  ],
+  "cycles": [
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": false,
+      "chars": 30
+    }
+  ],
+  "ok": false
+}

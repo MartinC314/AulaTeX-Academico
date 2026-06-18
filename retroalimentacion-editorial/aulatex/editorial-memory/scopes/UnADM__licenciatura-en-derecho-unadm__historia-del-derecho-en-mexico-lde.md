@@ -1,0 +1,171 @@
+# Memoria editorial AulaTeX
+
+- Alcance: materia
+- Etiqueta: historia-del-derecho-en-mexico-lde
+- Ruta: UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde
+- Compresion: union-dedupe
+- Sin regresion: si
+
+## summary
+
+- Salida sin JSON parseable desde Codex para historia-del-derecho-en-mexico-lde
+- Materia con plantilla base LaTeX, programa analitico y .bib local disponibles.
+- Se conserva alerta previa: hubo salida no JSON parseable en ciclo anterior.
+- Se agrega memoria estructural verificable desde README y programa analitico.
+- Destino: materia Historia del Derecho en Mexico de la Licenciatura en Derecho UnADM.
+- Se conserva alerta: hubo salida no JSON parseable desde Codex en ciclos previos.
+- Memoria estructural verificada desde README, programa analitico, plantilla y .bib local.
+- Origen declarado: Filosofia del Derecho, actividad 1; sin contenido adicional verificable en el contexto.
+- Plantilla declara autor Martin Jonathan de la Cruz, matricula ES2611202040, figura docente por definir.
+- Salida sin JSON parseable desde GPT-Pro para historia-del-derecho-en-mexico-lde
+- Materia destino con base editorial verificable en README, programa analitico, plantilla LaTeX y .bib local.
+- Se mantiene alerta historica: hubo salidas no JSON parseables en ciclos previos [supuesto: motor variable].
+- Origen declarado: Filosofia del Derecho actividad 1, sin reglas nuevas verificables transferibles en este contexto.
+- Materia con README, programa analitico, plantilla LaTeX y .bib local verificables.
+- Ubicacion curricular local: semestre 1, bloque 1, obligatoria, 8 creditos.
+- Plantilla declara alumno Martin Jonathan de la Cruz y matricula ES2611202040.
+- Figura docente pendiente por definir.
+- Se conserva alerta: hubo salidas no JSON parseables en ciclos previos.
+- Origen declarado: Filosofia del Derecho actividad 1, sin contenido adicional verificable transferible.
+- Memoria heredada institucional UnADM aporta alerta de normalizacion y fuente provisional.
+- README local contiene posibles errores de render en nombres de archivos [supuesto].
+- Programa analitico local define estructura editorial de cinco ejes.
+- Salida sin JSON parseable desde Codex para historia-del-derecho-en-mexico-lde.
+- Salida sin JSON parseable desde GPT-Pro para historia-del-derecho-en-mexico-lde.
+- Se conserva alerta historica: hubo salidas no JSON parseables en ciclos previos [supuesto: motor variable].
+- Plantilla declara coursecode local LDE-S1B1 y universidad UnADM en Roma Norte, Ciudad de Mexico.
+
+## identity_rules
+
+- Fuente provisional: Codex desde historia-del-derecho-en-mexico-lde
+- Mantener identidad institucional UnADM en portada, metadatos y redaccion.
+- Usar nombre oficial de materia: Historia del Derecho en Mexico.
+- Conservar datos curriculares: semestre 1, bloque 1, obligatoria, 8 creditos.
+- Fuente provisional vigente: Codex para consolidacion de memoria [supuesto].
+- Usar nombre local de materia: Historia del Derecho en Mexico.
+- Mantener fuente curricular local: UnADM/assets-unadm/malla-curricular-derecho-unadm.pdf.
+- Conservar antecedente provisional institucional: Codex desde ingenieria-en-sistemas-computacionales.
+- Conservar antecedente provisional del destino: Codex desde historia-del-derecho-en-mexico-lde.
+- Marcar como supuesto cualquier fuente operativa no confirmada.
+- Fuente provisional: GPT-Pro desde Actividad 1
+- Usar nombre oficial local: Historia del Derecho en Mexico.
+- Marcar como supuesto toda fuente operativa no confirmada.
+- Verificar acentuacion oficial de Mexico/México antes de entrega final.
+- Conservar datos curriculares locales: semestre 1, bloque 1, obligatoria, 8 creditos.
+- Conservar alumno local: Martin Jonathan de la Cruz.
+- Conservar matricula local: ES2611202040.
+- Mantener figura docente como Nombre por definir hasta confirmacion oficial.
+- Conservar antecedentes provisionales de fuente operativa: Codex y GPT-Pro [supuesto].
+- Usar nombre oficial local de materia: Historia del Derecho en Mexico.
+
+## structure_rules
+
+- Tratar la carpeta de materia como punto de entrada canonico.
+- Alinear cada entrega a los 5 ejes: problema, conceptos/fuentes, producto, analisis propio, conclusion transferible.
+- Mantener coherencia entre README, programa analitico, .tex y .bib.
+- Registrar fuentes especificas de actividad en historia-del-derecho-en-mexico.bib.
+- Alinear cada entrega a cinco ejes: problema, conceptos y fuentes, producto, analisis propio, conclusion transferible.
+- Transformar planeacion semanal en reportes, presentaciones o productos visuales segun se solicite.
+- No mezclar contenido tematico de Filosofia del Derecho sin evidencia local verificable.
+- Conservar subcarpeta referencias-historia-del-derecho-en-mexico para materiales de apoyo.
+- No mezclar contenido de Filosofia del Derecho sin evidencia local verificable.
+- Conservar subcarpeta referencias-historia-del-derecho-en-mexico para apoyo documental.
+- Corregir placeholders de Slug en README y programa antes de automatizar.
+
+## activity_rules
+
+- Iniciar cada actividad con problema juridico o social concreto.
+- Desarrollar analisis propio con postura academica explicita.
+- Cerrar con conclusion juridica aplicable a practica profesional.
+- Adaptar formato de salida al producto solicitado (reporte, presentacion o visual).
+- Usar conceptos, normas, doctrina o datos pertinentes al problema.
+- Adaptar formato de salida al producto solicitado: reporte, presentacion o visual.
+- Conservar integridad academica y citas verificables en cada actividad.
+- Cerrar con conclusion juridica aplicable a la practica profesional.
+- Adaptar el formato al producto solicitado: reporte, presentacion o visual.
+- Mantener integridad academica y citas verificables en cada actividad.
+
+## quality_gates
+
+- Revisar respuesta no estructurada antes de aplicar aguas abajo.
+- Validar JSON parseable en cada ciclo de memoria.
+- Verificar consistencia entre datos curriculares y portada del documento.
+- Comprobar que toda afirmacion sustantiva tenga soporte verificable.
+- Aplicar union-dedupe sin recortar reglas utiles previas.
+- Normalizar manualmente ciclo 1 antes de reutilizar aguas abajo.
+- Revisar render de nombres de archivos en README antes de automatizar.
+- Revisar respuesta no estructurada antes de propagar aguas abajo.
+- Aplicar compresion union-dedupe sin recortar reglas utiles previas.
+- Normalizar manualmente salidas de ciclo 1 antes de reutilizacion automatica.
+- Revisar render de nombres de archivo en README antes de automatizar.
+- Revisar placeholders de Slug antes de compilar o citar.
+- No aplicar contenido heredado si no es verificable en el destino.
+
+## latex_rules
+
+- Usar la plantilla reporte-historia-del-derecho-en-mexico.tex como base editable.
+- Conservar metadatos clave: documenttitle, documentsubtitle, coursename y coursecode.
+- Mantener tabla de autor con alumno, matricula, figura docente, semestre/bloque y creditos.
+- No eliminar campos institucionales; solo actualizar valores concretos por actividad.
+- Usar reporte-historia-del-derecho-en-mexico.tex como base editable para reportes.
+- Conservar metadatos clave: documenttitle, documentsubtitle, documentsubject, coursename y coursecode.
+- Conservar universidad, facultad, departamento, imagen institucional y ubicacion.
+- Mantener tabla de autor con alumno, matricula, figura docente, semestre/bloque y tipo/creditos.
+- Actualizar documentsubtitle con numero y nombre real de actividad.
+- Mantener coursecode local LDE-S1B1 salvo confirmacion contraria.
+- Usar tambien presentacion-historia-del-derecho-en-mexico.tex para productos tipo presentacion.
+- Usar presentacion-historia-del-derecho-en-mexico.tex para productos tipo presentacion.
+- Conservar metadatos: documenttitle, documentsubtitle, documentsubject, coursename y coursecode.
+- Mantener campos institucionales; solo actualizar valores concretos por actividad.
+- Mantener coursecode local LDE-S1B1 salvo confirmacion oficial contraria [supuesto].
+
+## bibliography_rules
+
+- Usar historia-del-derecho-en-mexico.bib como repositorio bibliografico local.
+- Conservar entradas institucionales existentes de UnADM y malla curricular.
+- Agregar solo fuentes realmente consultadas; no inventar referencias.
+- Incluir trazabilidad minima en notas de referencia (origen y fecha de consulta cuando aplique).
+- Incluir trazabilidad minima en notas de referencia: origen y fecha de consulta cuando aplique.
+- Corregir referencias a placeholders de Slug antes de compilar o citar.
+- Evitar propagar bibliografia de Filosofia del Derecho sin consulta efectiva.
+- Conservar entradas institucionales de UnADM y malla curricular.
+- Incluir trazabilidad minima: origen y fecha de consulta cuando aplique.
+- Corregir placeholders de Slug en README y programa antes de compilar o citar.
+- No propagar bibliografia de Filosofia del Derecho sin consulta efectiva.
+- Agregar solo fuentes realmente consultadas.
+- No inventar referencias.
+
+## propagation_hints
+
+- Ciclo 1 necesita normalizacion manual si se reutiliza.
+- Propagar a nivel superior y lateral reglas de validacion JSON y normalizacion temprana.
+- Reutilizar en materias hermanas la estructura de 5 ejes con ajuste tematico.
+- Priorizar deduplicacion por union sin recorte de reglas utiles previas.
+- Propagar arriba y laterales solo reglas editoriales transversales verificables.
+- Propagar validacion JSON y normalizacion temprana a materias hermanas.
+- Reutilizar estructura de cinco ejes con ajuste tematico por asignatura.
+- Mantener alerta de salidas no JSON parseables en niveles superiores.
+- No propagar datos curriculares de esta materia a materias laterales.
+- Reutilizar la estructura de cinco ejes con ajuste tematico por asignatura.
+- Mantener alerta de salidas no parseables en niveles superiores.
+- No propagar datos curriculares especificos de esta materia a laterales.
+- Conservar alerta de ciclo 1 si se reutiliza memoria heredada.
+- Ciclo 2 necesita normalizacion manual si se reutiliza.
+
+## open_questions
+
+- Confirmar si 'Fuente provisional: Codex' debe reemplazarse por fuente operativa definitiva.
+- Definir nombre oficial de figura docente para plantillas de actividades.
+- Verificar y corregir posibles errores de render en listado de archivos del README [supuesto].
+- Verificar acentuacion oficial de 'Mexico' en el nombre de la materia.
+- Verificar y corregir posibles errores de render en listado de archivos del README.
+- Confirmar si LDE-S1B1 es codigo oficial o codigo local de plantilla.
+- Aportar memoria verificable de Filosofia del Derecho actividad 1 si debe fusionarse contenido editorial especifico.
+- Confirmar fuente operativa definitiva para consolidacion de memoria.
+- Definir nombre oficial de figura docente en plantillas.
+- Confirmar si LDE-S1B1 es codigo oficial o codigo local.
+- Validar acentuacion oficial de Mexico/México segun lineamiento institucional.
+- Corregir entradas con salto de linea anomalo en README (eporte, eferencias) [supuesto de render].
+- Aportar contenido verificable de Filosofia del Derecho actividad 1 si se requiere fusion tematica.
+- Verificar y corregir posibles errores de render en README: eporte y eferencias [supuesto].
+- Corregir entrada README con placeholder $(@{Name=...}.Slug).bib.

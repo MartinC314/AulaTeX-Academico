@@ -1,0 +1,28 @@
+{
+  "summary": [
+    "Salida sin JSON parseable desde Codex para UANL"
+  ],
+  "identity_rules": [
+    "Fuente provisional: Codex desde ingenieria-en-sistemas-computacionales"
+  ],
+  "structure_rules": [],
+  "activity_rules": [],
+  "quality_gates": [
+    "Revisar respuesta no estructurada antes de aplicar aguas abajo."
+  ],
+  "latex_rules": [],
+  "bibliography_rules": [],
+  "propagation_hints": [
+    "Ciclo 1 necesita normalizacion manual si se reutiliza."
+  ],
+  "open_questions": [],
+  "sources": [
+    "ITESCA/ingenieria-en-sistemas-computacionales",
+    "UANL"
+  ],
+  "compression": {
+    "method": "union-dedupe",
+    "lossless": true
+  },
+  "schema_version": 1
+}

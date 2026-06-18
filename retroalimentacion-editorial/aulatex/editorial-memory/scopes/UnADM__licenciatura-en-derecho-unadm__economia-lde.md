@@ -1,0 +1,183 @@
+# Memoria editorial AulaTeX
+
+- Alcance: materia
+- Etiqueta: economia-lde
+- Ruta: UnADM/licenciatura-en-derecho-unadm/economia-lde
+- Compresion: union-dedupe
+- Sin regresion: si
+
+## summary
+
+- Base heredada indica salida no parseable previa y requiere normalizacion manual en ciclo 1.
+- Materia destino Economia LDE usa enfoque juridico con evidencia, analisis propio y conclusion transferible.
+- Se conserva compresion por union-dedupe sin perdida y sin regresion.
+- Base heredada indica salida previa no parseable y requiere normalización manual en ciclo 1.
+- Materia destino Economía LDE usa enfoque jurídico con evidencia, análisis propio y conclusión transferible.
+- Se conserva compresión por unión-dedupe sin pérdida y sin regresión.
+- Contexto local confirma ubicación curricular: semestre 3, bloque 2, obligatoria, 8 créditos.
+- Bibliografía local inicia con sitio institucional UnADM y malla curricular de Derecho.
+- Contexto local confirma ubicacion curricular: semestre 3, bloque 2, obligatoria, 8 creditos.
+- Bibliografia local inicia con sitio institucional UnADM y malla curricular de Derecho.
+- Origen de aprendizaje en ciclo 1: actividad-1 de filosofia-del-derecho-lde.
+- Salida sin JSON parseable desde GPT-Pro para economia-lde
+- Se mantiene normalizacion manual pendiente por salida no parseable en ciclo 1.
+- Economia LDE conserva enfoque juridico con evidencia, analisis propio y conclusion transferible.
+- Se confirma ubicacion curricular local: semestre 3, bloque 2, obligatoria, 8 creditos.
+- La bibliografia base inicia con fuentes institucionales UnADM y malla curricular local.
+- Se conserva compresion union-dedupe sin perdida y sin regresion.
+- Se integra alerta heredada: salida no parseable previa desde Codex en alcance institucional.
+- Materia destino: Economía LDE de UnADM.
+- Ubicación curricular confirmada: semestre 3, bloque 2, obligatoria, 8 créditos.
+- La materia usa enfoque jurídico con evidencia, análisis propio y conclusión transferible.
+- La bibliografía local inicia con sitio institucional UnADM y malla curricular de Derecho.
+- Origen de aprendizaje: actividad 1 de Filosofía del Derecho LDE.
+- Existe alerta heredada por salida no parseable desde GPT-Pro en ciclo 1.
+- Existe alerta heredada por salida no parseable desde Codex en alcance institucional.
+- Materia destino: Economía LDE de UnADM, enfoque jurídico con evidencia, análisis propio y conclusión transferible.
+- Fuente curricular local: malla-curricular-derecho-unadm.pdf en assets-unadm.
+- Origen de aprendizaje ciclo 1: actividad 1 de Filosofía del Derecho LDE.
+- Compresión por unión-dedupe sin pérdida y sin regresión.
+- Alerta heredada: salida no parseable desde GPT-Pro en ciclo 1 (economia-lde).
+- Alerta heredada: salida no parseable desde Codex en alcance institucional UnADM.
+- Normalización manual pendiente por salidas no parseables previas.
+- README local define cinco archivos canónicos y pauta editorial de integridad académica.
+
+## identity_rules
+
+- Mantener identidad institucional UnADM en todo entregable.
+- Usar contexto de Licenciatura en Derecho para Economia (semestre 3, bloque 2, obligatoria, 8 creditos).
+- Conservar voz academica formal y enfoque juridico aplicado.
+- Marcar como supuesto cualquier dato no confirmado por la planeacion oficial.
+- Usar contexto de Licenciatura en Derecho para Economía.
+- Conservar voz académica formal y enfoque jurídico aplicado.
+- Marcar como supuesto cualquier dato no confirmado por planeación oficial.
+- Tratar fuente Codex heredada como provisional hasta validación editorial.
+- Tratar fuente Codex heredada como provisional hasta validacion editorial.
+- Fuente provisional: GPT-Pro desde Actividad 1
+- Usar contexto de Licenciatura en Derecho para Economia: semestre 3, bloque 2, obligatoria, 8 creditos.
+- Marcar como supuesto cualquier dato no confirmado por planeacion oficial.
+- Tratar fuentes heredadas de modelos (GPT-Pro o Codex) como provisionales hasta validacion editorial.
+- Usar datos curriculares confirmados: semestre 3, bloque 2, obligatoria, 8 créditos.
+- Tratar fuentes heredadas de modelos como provisionales hasta validación editorial.
+- Supuesto: las alertas GPT-Pro y Codex son controles de calidad, no fuentes académicas.
+- Usar contexto de Licenciatura en Derecho para Economía: semestre 3, bloque 2, obligatoria, 8 créditos.
+- Tratar fuentes heredadas de modelos (GPT-Pro o Codex) como provisionales hasta validación editorial.
+
+## structure_rules
+
+- Organizar cada producto con problema, conceptos o datos, analisis propio y cierre argumentativo.
+- Alinear contenido a los cinco ejes del programa analitico de Economia.
+- Mantener la carpeta de materia como punto de entrada canonico.
+- Agregar fuentes especificas de actividad en economia.bib.
+- Organizar cada producto con problema, conceptos o datos, análisis propio y cierre argumentativo.
+- Alinear contenido a los cinco ejes del programa analítico de Economía.
+- Mantener la carpeta de materia como punto de entrada canónico.
+- Agregar fuentes específicas de actividad en economia.bib.
+- Usar reportes, presentaciones o productos visuales según planeación.
+- Corregir rutas visibles del README si aparecen artefactos de plantilla.
+- Usar reportes, presentaciones o productos visuales segun planeacion.
+- Corregir artefactos visibles de plantilla en README y archivos de apoyo.
+- Normalizar nombres visibles: reporte-economia.tex, presentacion-economia.tex, economia.bib y referencias-economia.
+- Supuesto: README contiene placeholders sin expandir ($(@{...}.Slug)); resolver a economia.bib.
+
+## activity_rules
+
+- Adaptar cada actividad al producto solicitado (reporte, presentacion o visual).
+- Incluir conclusion juridica con criterio propio en cada actividad.
+- Verificar que el planteamiento responda a un problema juridico o social concreto.
+- No inventar hechos, normas ni referencias.
+- Adaptar cada actividad al producto solicitado.
+- Incluir conclusión jurídica con criterio propio en cada actividad.
+- Verificar que el planteamiento responda a un problema jurídico o social concreto.
+- Distinguir conceptos económicos, datos y argumentos jurídicos.
+- Conectar la conclusión con práctica jurídica o impacto social.
+- Distinguir conceptos economicos, datos y argumentos juridicos.
+- Conectar la conclusion con practica juridica o impacto social.
+- Adaptar cada actividad al producto solicitado (reporte, presentación o visual).
+
+## quality_gates
+
+- Validar JSON parseable antes de propagar memoria.
+- Revisar respuestas no estructuradas antes de aplicar aguas abajo.
+- Confirmar trazabilidad entre afirmaciones y fuentes disponibles.
+- Bloquear propagacion si hay campos criticos vacios sin marcar como supuesto.
+- Bloquear propagación si hay campos críticos vacíos sin marcar como supuesto.
+- Verificar que las fuentes citadas existan en economia.bib o en assets locales.
+- Confirmar que metadatos de portada coincidan con README y plantilla base.
+- Revisar respuesta no estructurada antes de aplicar aguas abajo.
+- Verificar que las fuentes citadas existan en economia.bib o assets locales.
+- Mantener alerta de parseo hasta cierre editorial documentado.
+
+## latex_rules
+
+- Conservar plantilla base de reporte-economia.tex como referencia de formato.
+- Mantener metadatos academicos completos en portada (alumno, matricula, semestre, bloque, tipo, creditos).
+- Usar estilo de citacion authoryear consistente con setcitestyle definido.
+- Evitar cambios de paquetes o clase sin justificacion tecnica verificable.
+- Mantener metadatos académicos completos en portada.
+- Incluir alumno, matrícula, figura docente, semestre, bloque, tipo y créditos.
+- Usar estilo de citación authoryear consistente con setcitestyle definido.
+- Evitar cambios de paquetes o clase sin justificación técnica verificable.
+- Mantener español y papel carta salvo instrucción oficial distinta.
+- Marcar figura docente pendiente como dato por definir.
+- Mantener metadatos academicos completos en portada (alumno, matricula, figura docente, semestre, bloque, tipo, creditos).
+- Mantener espanol y papel carta salvo instruccion oficial distinta.
+- Conservar coursecode LDE-S3B2 coherente con semestre y bloque.
+- Mantener metadatos academicos completos en portada.
+- Incluir alumno, matricula, figura docente, semestre, bloque, tipo y creditos.
+- Conservar reporte-economia.tex como plantilla base de formato.
+- Mantener metadatos académicos completos en portada (alumno, matrícula, figura docente, semestre, bloque, tipo, créditos).
+
+## bibliography_rules
+
+- Usar economia.bib como repositorio local de referencias de la materia.
+- Priorizar fuentes institucionales UnADM y documentos curriculares oficiales.
+- Registrar fecha de consulta cuando aplique a recursos web.
+- No agregar fuentes no verificables o inexistentes.
+- Conservar entrada unadmSitioWeb mientras su fecha de consulta sea verificable.
+- Conservar entrada unadmMallaDerecho2024 como referencia institucional local.
+- Agregar referencias específicas solo cuando se usen en el producto.
+- Agregar referencias especificas solo cuando se usen en el producto.
+- Conservar entrada unadmSitioWeb si su fecha de consulta es verificable.
+- Conservar unadmSitioWeb mientras su fecha de consulta sea verificable.
+- Conservar unadmMallaDerecho2024 como referencia institucional local.
+- No tratar salidas de modelos como bibliografía académica.
+
+## propagation_hints
+
+- Propagar arriba y laterales solo tras normalizacion manual de ciclo 1.
+- Aplicar estrategia union-dedupe para evitar duplicados sin recorte.
+- Conservar reglas heredadas validas y anexar solo mejoras verificables.
+- Marcar incidencias de parseo como alerta persistente hasta cierre.
+- Propagar arriba y laterales solo tras normalización manual de ciclo 1.
+- Aplicar estrategia unión-dedupe para evitar duplicados sin recorte.
+- Conservar reglas heredadas válidas y anexar solo mejoras verificables.
+- Propagar reglas generales de integridad académica a materias laterales.
+- No propagar datos específicos de Economía como si fueran institucionales.
+- Propagar reglas generales de integridad academica a materias laterales.
+- No propagar datos especificos de Economia como si fueran institucionales.
+- Ciclo 1 necesita normalizacion manual si se reutiliza.
+- Aplicar union-dedupe para evitar duplicados sin recorte.
+- Mantener alerta de parseo hasta cierre editorial.
+- Aplicar unión-dedupe para evitar duplicados sin recorte.
+- Propagar incidencias de parseo como alerta persistente, no como contenido académico.
+- Ciclo 2 necesita normalizacion manual si se reutiliza.
+
+## open_questions
+
+- Definir nombre de figura docente para metadatos de portada.
+- Confirmar si existe guia formal de formato adicional para Economia en LDE.
+- Validar si la referencia unadmSitioWeb requiere actualizacion anual de year y consulta.
+- Confirmar si existe guía formal de formato adicional para Economía en LDE.
+- Validar si la referencia unadmSitioWeb requiere actualización anual de year y consulta.
+- Confirmar si el README debe registrar solo economia.bib como nombre canónico.
+- Confirmar planeación oficial de actividades antes de crear fuentes específicas.
+- Confirmar si el README debe registrar solo economia.bib como nombre canonico.
+- Confirmar planeacion oficial de actividades antes de crear fuentes especificas.
+- Validar actualizacion anual de year y fecha de consulta en unadmSitioWeb.
+- Confirmar si README debe registrar solo economia.bib como nombre canonico.
+- Supuesto: la referencia heredada de Codex aplica solo como alerta de calidad y no como fuente academica.
+- Validar si unadmSitioWeb requiere actualización anual de year y fecha de consulta.
+- Confirmar si README debe registrar solo economia.bib como nombre canónico.
+- Cerrar validación editorial de alertas GPT-Pro y Codex.
+- Confirmar si los placeholders del README deben resolverse y regenerarse.

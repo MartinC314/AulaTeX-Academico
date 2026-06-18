@@ -1,0 +1,23 @@
+# Auditoria agentica AulaTeX
+
+- 2026-06-18 11:55:16 [ok] `initialized` init: AulaTeX workflow initialized
+- 2026-06-18 11:55:17 [ok] `initialized` llm-start: planificar: Planificador editorial via Codex
+- 2026-06-18 11:55:30 [ok] `initialized` llm-end: planificar: 4935 chars
+- 2026-06-18 11:55:30 [ok] `planned` initialized->planned: plan editorial producido
+- 2026-06-18 11:55:30 [ok] `planned` llm-start: investigar: Investigador documental via Claude Foundry
+- 2026-06-18 11:55:53 [ok] `planned` llm-end: investigar: 3570 chars
+- 2026-06-18 11:55:53 [ok] `researched` planned->researched: diagnostico documental producido
+- 2026-06-18 11:55:53 [ok] `researched` llm-start: generar: Arquitecto de plantillas via GPT-Pro
+- 2026-06-18 11:56:29 [ok] `researched` llm-end: generar: 0 chars
+- 2026-06-18 11:56:29 [ok] `generated` researched->generated: propuesta editorial producida
+- 2026-06-18 11:56:29 [ok] `generated` llm-start: validar: Verificador y validador via Auto (model-router)
+- 2026-06-18 11:56:53 [ok] `generated` llm-end: validar: 0 chars
+- 2026-06-18 11:56:53 [ok] `generated` llm-start: criticar: Critico adversarial via Codex
+- 2026-06-18 11:57:04 [ok] `generated` llm-end: criticar: 3672 chars
+- 2026-06-18 11:57:04 [ok] `generated` tool-select: latexmk-build.ps1 seleccionado para compilar objetivos canonicos
+- 2026-06-18 12:03:11 [error] `generated` tool-result: UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde/reporte-historia-del-derecho-en-mexico.tex rc=1
+- 2026-06-18 12:06:19 [error] `generated` tool-result: UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde/presentacion-historia-del-derecho-en-mexico.tex rc=1
+- 2026-06-18 12:06:19 [ok] `compiled` generated->compiled: compilacion latexmk ejecutada
+- 2026-06-18 12:06:19 [ok] `compiled` consensus: score=7.30
+- 2026-06-18 12:06:19 [ok] `evaluated` compiled->evaluated: validacion y consenso completados
+- 2026-06-18 12:06:19 [ok] `finalized` evaluated->finalized: ciclo agentico cerrado
