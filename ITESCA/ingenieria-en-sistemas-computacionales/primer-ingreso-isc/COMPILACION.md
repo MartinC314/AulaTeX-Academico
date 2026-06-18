@@ -15,4 +15,4 @@ Ejecutar siempre desde la raiz del proyecto:
 - La bibliografia local de la materia vive en `primer-ingreso.bib`.
 - Esta materia es la base para extender la estructura academica de ITESCA.
 - La identidad institucional se hereda desde `ITESCA/_shared/` y usa los assets
-	oficiales descargados en `ITESCA/assets/web/`.
+	oficiales descargados en `ITESCA/assets-itesca/web/`.

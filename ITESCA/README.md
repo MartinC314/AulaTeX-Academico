@@ -10,8 +10,8 @@ La identidad visual institucional se centraliza en:
 - `ITESCA/_shared/itesca-profile-isc-primer-ingreso.tex`
 - `ITESCA/_shared/itesca-profile-mga.tex`
 - `ITESCA/_shared/itesca-profile-mga-primer-ingreso.tex`
-- `ITESCA/assets/web/logo-itesca-contorno.png`
-- `ITESCA/assets/itesca-monograma.png`
+- `ITESCA/assets-itesca/web/logo-itesca-contorno.png`
+- `ITESCA/assets-itesca/itesca-monograma.png`
 - `ITESCA/bibliografia-itesca.bib`
 
 Esta carpeta introduce un nivel nuevo en el repositorio:
