@@ -1,0 +1,105 @@
+{
+  "run_id": "20260618-115618",
+  "target": "UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde",
+  "level": "materia",
+  "action": "evaluar",
+  "activity_number": 1,
+  "engines": [
+    "Codex",
+    "Claude Foundry",
+    "GPT-Pro",
+    "Auto (model-router)"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": true,
+      "error": "",
+      "chars": 4477
+    }
+  ],
+  "compile_results": [],
+  "consensus": {
+    "consensus_score": 9.23,
+    "passed": true,
+    "criteria": {
+      "identidad_institucional": true,
+      "bibliografia": true,
+      "trazabilidad": true,
+      "compilacion": true,
+      "riesgos": true
+    },
+    "role_scores": {
+      "Planificador editorial": 8.6
+    },
+    "risks": [],
+    "recommendations": [
+      "Usar el reporte como retroalimentacion editorial aplicable al objetivo."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-06-18 11:56:18",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-06-18 11:56:18",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-06-18 11:56:31",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "ok",
+      "detail": "planificar: 4477 chars"
+    },
+    {
+      "timestamp": "2026-06-18 11:56:31",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-06-18 11:56:31",
+      "state": "planned",
+      "action": "consensus",
+      "status": "ok",
+      "detail": "score=9.23"
+    },
+    {
+      "timestamp": "2026-06-18 11:56:31",
+      "state": "evaluated",
+      "action": "planned->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-06-18 11:56:31",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}

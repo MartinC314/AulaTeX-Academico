@@ -30,6 +30,10 @@ presentaciones y bibliografias.
 .\scripts\latexmk-build.ps1 .\base\Templates-Informe\main.tex
 ```
 
+```powershell
+.\scripts\aulatex.ps1
+```
+
 El PDF final se copia en la misma carpeta del archivo `.tex`.
 
 Cada carpeta de materia tiene un `COMPILACION.md` con el comando exacto, el
