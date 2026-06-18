@@ -13,6 +13,7 @@ from .agentic_patterns import (
     pattern_catalog_markdown,
     safe_invoke,
 )
+from .editorial_memory import EditorialMemoryStore
 from .llm_bridge import LLM_ENGINES, AulaTeXLLMClient, LLMCallResult
 from .workspace import AulaTeXWorkspace
 
@@ -23,6 +24,10 @@ class AgentRequest:
     level: str = "materia"
     action: str = "generar-plantilla"
     activity_number: int = 1
+    generation_mode: str = "direct"
+    parent_scope_key: str = ""
+    child_level: str = ""
+    child_name: str = ""
     engines: list[str] = field(default_factory=lambda: ["Codex", "Claude Foundry", "GPT-Pro", "Auto (model-router)"])
     iterations: int = 5
     compile_tex: bool = True
@@ -39,6 +44,19 @@ class AgentRunResult:
     manifest_path: Path
 
 
+@dataclass(frozen=True)
+class AgentTargetContext:
+    target_path: Path
+    context_path: Path
+    scope_key: str
+    display_target: str
+    generation_mode: str
+    parent_scope_key: str = ""
+    child_level: str = ""
+    child_name: str = ""
+    child_preview: str = ""
+
+
 class AulaTeXAgent:
     def __init__(
         self,
@@ -47,9 +65,11 @@ class AulaTeXAgent:
     ) -> None:
         self.workspace = workspace or AulaTeXWorkspace()
         self.llm = llm_bridge or AulaTeXLLMClient()
+        self.editorial_memory = EditorialMemoryStore(self.workspace)
 
     def run(self, request: AgentRequest) -> AgentRunResult:
-        target = self.workspace.resolve_target(request.target)
+        target_ctx = self._resolve_target_context(request)
+        target = target_ctx.target_path
         run_id = self.workspace.timestamp()
         safe_action = request.action.lower().replace(" ", "-")
         run_dir = self.workspace.feedback_root / "runs" / f"{run_id}-{safe_action}"
@@ -57,7 +77,20 @@ class AulaTeXAgent:
 
         workflow = AgenticStateMachine()
         memory = SharedMemory()
-        context = self.workspace.context_summary(target)
+        context = self.workspace.context_summary(target_ctx.context_path)
+        if target_ctx.generation_mode == "downward":
+            context += (
+                "\n\n## Generacion descendente\n"
+                f"- Padre seleccionado: {target_ctx.parent_scope_key}\n"
+                f"- Nivel hijo: {target_ctx.child_level}\n"
+                f"- Hijo solicitado: {target_ctx.child_name or f'Actividad {request.activity_number}'}\n"
+                f"- Vista previa: {target_ctx.child_preview or 'Pendiente de definir'}\n"
+                "- Regla: reutiliza memoria editorial ascendente del padre y genera hacia abajo sin asumir que el hijo exista ya.\n"
+            )
+        if target_ctx.scope_key:
+            memory_context = self.editorial_memory.summarize_for_scope(target_ctx.scope_key, include_ancestors=True, max_chars=6000)
+            if memory_context.strip():
+                context += "\n\n## Memoria editorial persistente\n" + memory_context
         base_tasks = build_editorial_tasks(request, context, memory)
         selected_tasks = base_tasks[: max(1, min(request.iterations, len(base_tasks)))]
         engines = self._normalize_engines(request.engines)
@@ -89,7 +122,7 @@ class AulaTeXAgent:
         compile_results = []
         if request.compile_tex:
             workflow.record("tool-select", "ok", "latexmk-build.ps1 seleccionado para compilar objetivos canonicos")
-            for tex in self._select_compile_targets(target):
+            for tex in self._select_compile_targets(target_ctx):
                 invocation = safe_invoke(self.workspace.compile_tex, tex, clean_mode="none")
                 if invocation.ok:
                     build = invocation.result
@@ -133,9 +166,15 @@ class AulaTeXAgent:
         manifest = {
             "run_id": run_id,
             "target": self.workspace.relative(target),
+            "display_target": target_ctx.display_target,
             "level": request.level,
             "action": request.action,
             "activity_number": request.activity_number,
+            "generation_mode": request.generation_mode,
+            "parent_scope_key": request.parent_scope_key,
+            "child_level": request.child_level,
+            "child_name": request.child_name,
+            "child_preview": target_ctx.child_preview,
             "engines": engines,
             "agentic_patterns": [
                 "planning-memory",
@@ -165,7 +204,7 @@ class AulaTeXAgent:
 
         report_path = run_dir / "reporte-aulatex.md"
         report_path.write_text(
-            self._build_report(request, target, selected_tasks, stage_results, compile_results, consensus),
+            self._build_report(request, target_ctx, selected_tasks, stage_results, compile_results, consensus),
             encoding="utf-8",
         )
         self.workspace.append_bitacora(run_id, request.action, manifest)
@@ -212,8 +251,49 @@ class AulaTeXAgent:
         out = [engine for engine in engines if engine in allowed]
         return out or ["Codex", "Claude Foundry"]
 
-    def _select_compile_targets(self, target: Path) -> list[Path]:
-        tex_files = self.workspace.find_tex_files(target, limit=30)
+    def _resolve_target_context(self, request: AgentRequest) -> AgentTargetContext:
+        target = self.workspace.resolve_target(request.target)
+        if request.generation_mode != "downward":
+            scope = self.workspace.find_scope_for_target(target, activity_number=request.activity_number)
+            return AgentTargetContext(
+                target_path=target,
+                context_path=target,
+                scope_key=scope.key if scope is not None else "",
+                display_target=self.workspace.relative(target),
+                generation_mode="direct",
+            )
+
+        by_key, _children = self.workspace.editorial_scope_index()
+        parent_scope = by_key.get(request.parent_scope_key)
+        if parent_scope is None:
+            raise ValueError("No se pudo resolver el padre editorial para la generacion descendente.")
+
+        parent_path = self.workspace.resolve_target(parent_scope.relative_path)
+        child_name = request.child_name.strip() if request.child_name.strip() else f"Actividad {request.activity_number}"
+        child_preview = self._preview_child(parent_scope, request.child_level, child_name, request.activity_number)
+        return AgentTargetContext(
+            target_path=parent_path,
+            context_path=parent_path,
+            scope_key=parent_scope.key,
+            display_target=f"{parent_scope.key} -> {request.child_level}:{child_name}",
+            generation_mode="downward",
+            parent_scope_key=parent_scope.key,
+            child_level=request.child_level,
+            child_name=child_name,
+            child_preview=child_preview,
+        )
+
+    def _preview_child(self, parent_scope, child_level: str, child_name: str, activity_number: int) -> str:
+        parent_rel = parent_scope.relative_path.rstrip("/")
+        if child_level == "actividad":
+            return f"{parent_rel} :: reporte-{parent_scope.label}-Actividad-{activity_number}.tex"
+        slug = child_name.strip().lower().replace(" ", "-")
+        return f"{parent_rel}/{slug}"
+
+    def _select_compile_targets(self, target_ctx: AgentTargetContext) -> list[Path]:
+        if target_ctx.generation_mode == "downward":
+            return []
+        tex_files = self.workspace.find_tex_files(target_ctx.target_path, limit=30)
         reports = [p for p in tex_files if p.name.startswith("reporte-")]
         presentations = [p for p in tex_files if p.name.startswith("presentacion-")]
         selected = reports[:1] + presentations[:1]
@@ -235,7 +315,7 @@ class AulaTeXAgent:
     def _build_report(
         self,
         request: AgentRequest,
-        target: Path,
+        target_ctx: AgentTargetContext,
         tasks: list[AgentTask],
         stage_results: list[LLMCallResult],
         compile_results: list[dict],
@@ -244,7 +324,7 @@ class AulaTeXAgent:
         lines = [
             "# Reporte AulaTeX",
             "",
-            f"- Objetivo: `{self.workspace.relative(target)}`",
+            f"- Objetivo: `{target_ctx.display_target}`",
             f"- Nivel: {request.level}",
             f"- Accion: {request.action}",
             f"- Actividad: {request.activity_number}",
@@ -256,6 +336,14 @@ class AulaTeXAgent:
             "- Flujo con maquina de estados y auditoria",
             "- Verificacion/validacion editorial",
             "- Consenso multiagente con critico adversarial",
+            "",
+            "## Contexto de ejecucion",
+            "",
+            f"- Modo de generacion: {request.generation_mode}",
+            f"- Padre editorial: {target_ctx.parent_scope_key or 'N/A'}",
+            f"- Nivel hijo: {target_ctx.child_level or 'N/A'}",
+            f"- Hijo solicitado: {target_ctx.child_name or 'N/A'}",
+            f"- Vista previa: {target_ctx.child_preview or 'N/A'}",
             "",
             "## Ciclo LLM",
             "",

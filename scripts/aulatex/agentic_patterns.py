@@ -324,6 +324,10 @@ def build_editorial_tasks(request: Any, context: str, memory: SharedMemory | Non
         f"Nivel: {request.level}\n"
         f"Accion: {request.action}\n"
         f"Actividad: {request.activity_number}\n\n"
+        f"Modo de generacion: {getattr(request, 'generation_mode', 'direct')}\n"
+        f"Padre editorial: {getattr(request, 'parent_scope_key', '') or 'N/A'}\n"
+        f"Nivel hijo: {getattr(request, 'child_level', '') or 'N/A'}\n"
+        f"Hijo solicitado: {getattr(request, 'child_name', '') or 'N/A'}\n\n"
         f"Memoria compartida:\n{memory_text or 'Sin memoria previa en este ciclo.'}\n\n"
         f"Contexto local:\n{context}\n"
     )

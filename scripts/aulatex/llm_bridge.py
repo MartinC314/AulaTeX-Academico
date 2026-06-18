@@ -7,7 +7,10 @@ from pathlib import Path
 from typing import Any, Callable
 from urllib.parse import urlsplit
 
-import requests
+try:
+    import requests as _requests
+except ModuleNotFoundError:
+    _requests = None
 
 from .config import ENGINE_ENV_PREFIX, LLM_ENGINES, load_aulatex_env
 
@@ -159,7 +162,12 @@ def check_llm_connection(
     if config is None:
         return LLMCallResult(selected, False, "", "Configuracion incompleta o validacion LLM deshabilitada.")
 
-    post = post_func or requests.post
+    try:
+        requests_mod = _require_requests()
+    except RuntimeError as exc:
+        return LLMCallResult(selected, False, "", _friendly_error(exc))
+
+    post = post_func or requests_mod.post
     timeout = max(3, min(timeout_seconds, config.timeout_seconds))
     try:
         if config.is_anthropic():
@@ -178,13 +186,13 @@ def check_llm_connection(
                 timeout=timeout,
             )
         response.raise_for_status()
-    except requests.Timeout:
+    except requests_mod.Timeout:
         return LLMCallResult(selected, False, "", "Tiempo de espera agotado.")
-    except requests.HTTPError as exc:
+    except requests_mod.HTTPError as exc:
         response = exc.response
         status_code = response.status_code if response is not None else "desconocido"
         return LLMCallResult(selected, False, "", f"HTTP {status_code}.")
-    except requests.RequestException as exc:
+    except requests_mod.RequestException as exc:
         return LLMCallResult(selected, False, "", f"Error de red: {type(exc).__name__}.")
     except Exception as exc:
         return LLMCallResult(selected, False, "", _friendly_error(exc))
@@ -203,11 +211,12 @@ def call_llm_text(
     config = AulaTeXLLMConfig.from_env(selected)
     if config is None:
         raise RuntimeError(f"Configuracion LLM incompleta para {selected}")
+    requests_mod = _require_requests()
 
     timeout = max(5, min(timeout_seconds, config.timeout_seconds))
     max_output = max(16, max_tokens)
     if config.is_anthropic():
-        response = requests.post(
+        response = requests_mod.post(
             _anthropic_messages_endpoint(config),
             headers=_anthropic_headers(config),
             json=_anthropic_payload(config, prompt, max_output),
@@ -215,7 +224,7 @@ def call_llm_text(
         )
     else:
         endpoint = _openai_compatible_endpoint(config)
-        response = requests.post(
+        response = requests_mod.post(
             endpoint,
             headers=_api_key_headers(config),
             json=_openai_payload(endpoint, config, prompt, max_output, temperature=config.temperature),
@@ -241,13 +250,14 @@ def call_llm_multimodal(
     config = AulaTeXLLMConfig.from_env(selected)
     if config is None:
         raise RuntimeError(f"Configuracion LLM incompleta para {selected}")
+    requests_mod = _require_requests()
 
     timeout = max(5, min(timeout_seconds, config.timeout_seconds))
     max_output = max(16, max_tokens)
     encoded = base64.b64encode(image_bytes).decode("ascii")
 
     if config.is_anthropic():
-        response = requests.post(
+        response = requests_mod.post(
             _anthropic_messages_endpoint(config),
             headers=_anthropic_headers(config),
             json={
@@ -269,7 +279,7 @@ def call_llm_multimodal(
     else:
         endpoint = _openai_compatible_endpoint(config)
         data_url = f"data:{media_type};base64,{encoded}"
-        response = requests.post(
+        response = requests_mod.post(
             endpoint,
             headers=_api_key_headers(config),
             json=_openai_multimodal_payload(endpoint, config, prompt, data_url, max_output),
@@ -456,12 +466,20 @@ def _openai_multimodal_payload(
 
 
 def _friendly_error(exc: Exception) -> str:
-    if isinstance(exc, requests.HTTPError):
+    if isinstance(exc, RuntimeError) and str(exc):
+        return str(exc)
+    if _requests is not None and isinstance(exc, _requests.HTTPError):
         response = exc.response
         status_code = response.status_code if response is not None else "desconocido"
         return f"HTTP {status_code}."
-    if isinstance(exc, requests.Timeout):
+    if _requests is not None and isinstance(exc, _requests.Timeout):
         return "Tiempo de espera agotado."
-    if isinstance(exc, requests.RequestException):
+    if _requests is not None and isinstance(exc, _requests.RequestException):
         return f"Error de red: {type(exc).__name__}."
     return f"{type(exc).__name__}: {exc}"
+
+
+def _require_requests() -> Any:
+    if _requests is None:
+        raise RuntimeError("Dependencia faltante: instala requests en .venv para habilitar llamadas LLM.")
+    return _requests

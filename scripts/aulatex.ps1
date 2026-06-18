@@ -8,10 +8,18 @@ $ErrorActionPreference = 'Stop'
 
 $repoRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
 $entry = Join-Path $PSScriptRoot 'aulatex_agent.py'
+$venvPython = Join-Path $repoRoot '.venv\Scripts\python.exe'
 
-if (($null -eq $CommandArgs) -or ($CommandArgs.Count -eq 0)) {
-    python $entry gui
+$pythonCmd = if (Test-Path $venvPython) {
+    $venvPython
 }
 else {
-    python $entry @CommandArgs
+    'python'
+}
+
+if (($null -eq $CommandArgs) -or ($CommandArgs.Count -eq 0)) {
+    & $pythonCmd $entry gui
+}
+else {
+    & $pythonCmd $entry @CommandArgs
 }
