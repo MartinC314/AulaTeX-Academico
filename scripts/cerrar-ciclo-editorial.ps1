@@ -540,7 +540,7 @@ function Ensure-UnadmLawCourse {
             $pdf = [System.IO.Path]::ChangeExtension($tex, '.pdf')
             if (Test-Path -LiteralPath $tex -PathType Leaf) {
                 if (-not (Test-Path -LiteralPath $pdf)) {
-                    & $BuildScript $tex
+                    & $BuildScript $tex -CleanMode none
                     $changed = $true
                 }
             }
