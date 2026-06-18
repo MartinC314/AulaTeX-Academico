@@ -1,0 +1,140 @@
+\documentclass[
+  spanish,
+  aspectratio=169,
+  xcolor={dvipsnames,table}
+]{beamer}
+
+\geometry{paperwidth=19.2cm,paperheight=10.8cm}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usetikzlibrary{calc,positioning,fit,shadows.blur}
+
+\newcommand{\studentname}{Martin Jonathan de la Cruz}
+\newcommand{\studentshort}{M. J. de la Cruz}
+\newcommand{\studentid}{ES2611202040}
+\newcommand{\universityname}{Universidad Abierta y a Distancia de Mexico}
+\newcommand{\facultyname}{Licenciatura en Derecho}
+\newcommand{\coursename}{Tecnica legislativa}
+\newcommand{\coursecode}{LDE-S7B1}
+\newcommand{\activitytitle}{Plantilla base de Tecnica legislativa}
+\newcommand{\activitysubtitle}{Actividad X - Tecnica legislativa}
+\newcommand{\activityweek}{Semana X}
+\newcommand{\teachingfigure}{Nombre de la figura docente}
+\newcommand{\deliverydate}{\today}
+\newcommand{\locationname}{Roma Norte, Ciudad de Mexico}
+\newcommand{\departmentlogo}{img/departamentos/UnADM.pdf}
+
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+
+\mode<presentation>{
+  \usetheme{default}
+  \usefonttheme{professionalfonts}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{blocks}[rounded][shadow=false]
+}
+\setbeamersize{text margin left=0.60cm,text margin right=0.60cm}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=unadmInk,bg=white}
+\setbeamercolor{structure}{fg=unadmGreenDark}
+\setbeamercolor{frametitle}{fg=white,bg=unadmGreenDark}
+\setbeamercolor{block title}{fg=white,bg=unadmGreen}
+\setbeamercolor{block body}{fg=unadmInk,bg=unadmPaper}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{itemize item}{\textcolor{unadmGreen}{\large$\blacktriangleright$}}
+
+\setbeamertemplate{frametitle}{
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\textwidth,ht=1.02cm,dp=0.22cm,leftskip=0.35cm,rightskip=0.25cm]{frametitle}
+    \insertframetitle\hfill\includegraphics[height=0.60cm]{\departmentlogo}
+  \end{beamercolorbox}
+  {\color{unadmGold}\rule{\textwidth}{1.3pt}}
+}
+
+\setbeamertemplate{footline}{
+  \leavevmode
+  \hbox{
+    \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}\color{white}\studentshort\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.40\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}\color{white}\coursename\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.26\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}\color{white}\coursecode\hfill\insertframenumber/\inserttotalframenumber\end{beamercolorbox}
+  }
+}
+\setbeamercolor{author in head/foot}{bg=unadmGreenDark}
+\setbeamercolor{title in head/foot}{bg=unadmGreen}
+\setbeamercolor{date in head/foot}{bg=unadmGreenDark}
+
+\title[\coursecode]{\activitytitle}
+\subtitle{\activitysubtitle}
+\author[\studentshort]{\studentname\\\footnotesize Matricula: \studentid}
+\institute[UnADM]{\universityname\\\facultyname}
+\date[\activityweek]{\locationname\\\activityweek\\\deliverydate}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[unadmGreenDark] (current page.south west) rectangle ([xshift=0.58\paperwidth]current page.north west);
+    \fill[unadmGreen] ([xshift=0.58\paperwidth]current page.south west) rectangle (current page.north east);
+    \node[anchor=center,opacity=0.10] at (current page.center) {\includegraphics[width=0.72\paperwidth]{\departmentlogo}};
+    \node[anchor=north west] at ([xshift=0.58cm,yshift=-0.46cm]current page.north west) {\includegraphics[width=2.55cm]{\departmentlogo}};
+  \end{tikzpicture}
+  \vspace*{1.80cm}
+  {\color{white}\fontsize{25}{30}\selectfont\bfseries \activitytitle\par}
+  \vspace{0.28cm}
+  {\color{white!86}\large \activitysubtitle}\\[0.35cm]
+  {\color{unadmGold}\rule{0.58\linewidth}{1.3pt}}\\[0.35cm]
+  {\color{white}\studentname}\\
+  {\color{white!82}\footnotesize \facultyname}
+\end{frame}
+
+\begin{frame}{Objetivo y alcance}
+  \begin{block}{Objetivo editable}
+    Convertir la consigna de la actividad en un problema juridico delimitado,
+    con evidencia, fundamento y postura academica propia.
+  \end{block}
+  \begin{itemize}
+    \item Semestre: 7. Bloque: 1.
+    \item Tipo: Obligatoria. Creditos: 8.
+    \item Fuente curricular: malla de Derecho UnADM incluida en assets-unadm.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Estructura narrativa}
+  \begin{itemize}
+    \item Problema o caso juridico.
+    \item Conceptos y fuentes principales.
+    \item Producto visual, matriz, cuadro o argumento central.
+    \item Postura personal y cierre transferible.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Producto visual}
+  \begin{block}{Espacio editable}
+    Insertar aqui mapa conceptual, cuadro comparativo, linea de tiempo,
+    matriz de analisis, red argumentativa o sintesis del caso.
+  \end{block}
+  \centering
+  \fbox{\parbox[c][3.2cm][c]{0.76\linewidth}{\centering Evidencia visual o producto solicitado}}
+\end{frame}
+
+\begin{frame}{Fuentes y revision}
+  \begin{itemize}
+    \item Bibliografia local: \texttt{tecnica-legislativa.bib}.
+    \item Malla curricular: \texttt{UnADM/assets-unadm/malla-curricular-derecho-unadm.pdf}.
+    \item Revisar citas, ortografia, producto visual y conclusion juridica.
+  \end{itemize}
+\end{frame}
+
+\end{document}
