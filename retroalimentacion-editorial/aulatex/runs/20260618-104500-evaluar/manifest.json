@@ -1,0 +1,19 @@
+{
+  "run_id": "20260618-104500",
+  "target": "UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde",
+  "level": "materia",
+  "action": "evaluar",
+  "activity_number": 1,
+  "engines": [
+    "Codex"
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": true,
+      "error": "",
+      "chars": 4804
+    }
+  ],
+  "compile_results": []
+}

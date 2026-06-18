@@ -58,11 +58,14 @@ base/Plantilla-Informe/dist/template_config.tex
 # Archivos temporales
 .build/
 salidas/
+.venv/
+logs-compilacion-tex/
 *.xlsx
 *_temp.tex
 TODO.txt
 scripts/preview/
 scripts/tikz-preview/
+scripts/aulatex.env
 
 # VS Code: compartir recetas del proyecto, no estado local del editor
 .vscode/*
