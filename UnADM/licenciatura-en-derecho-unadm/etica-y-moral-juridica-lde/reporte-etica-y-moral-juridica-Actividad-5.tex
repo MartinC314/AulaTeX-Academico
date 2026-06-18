@@ -1,0 +1,200 @@
+% ==============================================================================
+% PLANTILLA MAESTRA - ETICA Y MORAL JURIDICA / UnADM
+% ================================================================================
+% Actividad elaborada con base en la planeacion de Semana 6.
+% Producto solicitado: resumen.
+% Formato: caratula, contenido, conclusion y bibliografia.
+% No se copian instrucciones de la planeacion dentro del producto final.
+% ================================================================================
+
+\documentclass[
+	spanish,
+	letterpaper, oneside
+]{article}
+
+% ==============================================================================
+% INFORMACION DEL DOCUMENTO
+% ================================================================================
+\def\documenttitle {La sociedad y su relación con la ética y la moral}
+\def\documentsubtitle {Actividad 5 - Ética y Moral jurídica}
+\def\documentsubject {Semana 6 - Resumen}
+
+\def\documentauthor {Martín Jonathan de la Cruz}
+\def\coursename {Ética y Moral jurídica}
+\def\coursecode {030}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Ética y Moral jurídica}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de México}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\authortable {
+	\begin{tabular}{ll}
+		\textbf{Alumno:}
+		& \begin{tabular}[t]{l}
+			 Martín Jonathan de la Cruz \\
+		\end{tabular} \\
+		Matrícula: & ES2611202040 \\
+
+		\textit{Profesor:}
+		& \begin{tabular}[t]{l}
+			Emma Liliana \\ Padilla Cano
+		\end{tabular} \\
+		& \\
+		\multicolumn{2}{l}{Fecha de realización: \today} \\
+		\multicolumn{2}{l}{\universitylocation}
+	\end{tabular}
+}
+
+% IMPORTACION DEL TEMPLATE
+\input{template}
+
+% FORMATO SOLICITADO / USADO EN ACTIVIDADES CORREGIDAS
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% PRODUCTOS VISUALES EN TIKZ
+\usepackage{tikz}
+\usetikzlibrary{
+	arrows.meta,
+	positioning,
+	calc,
+	matrix,
+	fit,
+	shapes.geometric,
+	shadows.blur
+}
+
+% ==============================================================================
+% MARCA DE AGUA
+% ================================================================================
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+	\ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+		\AddToShipoutPictureBG*{%
+			\begin{tikzpicture}[remember picture,overlay]
+				\node[
+					opacity=\coverwatermarkopacity,
+					inner sep=0pt,
+					xshift=\coverwatermarkxshift,
+					yshift=\coverwatermarkyshift
+				] at (current page.center) {%
+					\includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+				};
+			\end{tikzpicture}%
+		}%
+	}{}%
+}
+
+% CITAS EN FORMATO AUTOR-ANIO
+\setcitestyle{authoryear,open={(},close={)}}
+
+\begin{document}
+
+% PORTADA
+\insertcoverwatermark
+\templatePortrait
+
+% CONFIGURACION DE PAGINA Y ENCABEZADOS
+\templatePagecfg
+\onehalfspacing
+
+\begin{abstractd}
+	\textbf{Objetivo:} Resumir la relación entre sociedad, ética y moral desde el ámbito del Derecho, considerando normas constitucionales, límites al poder estatal y valores contemporáneos como familia y solidaridad.
+
+	\textbf{Producto elaborado:} Resumen académico con contenido, conclusión y referencias en formato APA 7.
+
+	\textbf{Enfoque de análisis:} La sociedad se analiza como un sistema de convivencia regulado por normas jurídicas, pero también orientado por criterios éticos y morales. El Derecho no sólo ordena conductas; también debe proteger dignidad, limitar el poder y sostener condiciones mínimas de justicia social.
+\end{abstractd}
+
+% TABLA DE CONTENIDOS - INDICE
+\templateIndex
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+\section{Introducción}
+
+La sociedad no funciona solamente por convivencia espontánea. Para que una comunidad pueda sostenerse en el tiempo necesita reglas, límites y criterios compartidos. Ahí aparece el Derecho, no como un simple conjunto de artículos, sino como una estructura que organiza la vida social y traduce ciertos valores en obligaciones exigibles. Sin embargo, el Derecho tampoco puede separarse por completo de la ética y la moral, porque toda norma jurídica termina afectando personas concretas: su libertad, su dignidad, su familia, su patrimonio, su seguridad y su posibilidad real de participar en la vida social.
+
+Desde esta perspectiva, la relación entre sociedad, ética y moral debe entenderse como un sistema. La sociedad genera prácticas, conflictos y necesidades; la moral expresa valores, costumbres y juicios sobre la conducta; la ética permite revisar críticamente esos valores; y el Derecho fija reglas institucionales para ordenar la convivencia. El punto importante está en que ninguna de estas dimensiones opera sola. Una sociedad sin Derecho queda expuesta a la arbitrariedad; un Derecho sin ética puede volverse puro formalismo; y una moral sin límites jurídicos puede convertirse en imposición privada.
+
+El presente resumen aborda tres ejes. Primero, describe la sociedad desde el ámbito del Derecho, con apoyo en normas constitucionales que regulan la convivencia. Segundo, explica la relación Estado--individuo por medio del Derecho, especialmente en cuanto a límites al poder estatal y protección de derechos. Tercero, retoma aportes de autores y valores contemporáneos, con énfasis en familia y solidaridad como criterios sociales que no deben quedarse en discurso, sino expresarse en responsabilidad jurídica y convivencia digna.
+
+\section{Contenido}
+
+\subsection{La sociedad desde el Derecho}
+
+La sociedad puede entenderse como una red de relaciones humanas que necesita reglas para evitar que la fuerza, la costumbre o el interés particular sean los únicos mecanismos de organización. Desde el Derecho, la sociedad no es solamente un grupo de personas reunidas en un territorio; es una comunidad regulada por normas que determinan derechos, obligaciones, procedimientos, límites y consecuencias. En ese sentido, el Derecho cumple una función de orden: permite anticipar conductas, resolver conflictos y establecer criterios comunes para la convivencia.
+
+La Constitución mexicana expresa esta relación entre sociedad y Derecho desde sus primeros artículos. El artículo 1o. reconoce los derechos humanos y ordena a todas las autoridades promoverlos, respetarlos, protegerlos y garantizarlos; además, prohíbe la discriminación que afecte la dignidad humana \citep{constitucionCPEUM2026}. Este artículo es clave porque coloca a la persona en el centro del sistema jurídico. La convivencia social no puede organizarse a costa de la dignidad; al contrario, la dignidad funciona como límite y fundamento del orden jurídico.
+
+También existen otras normas constitucionales que regulan la vida social. El artículo 3o. vincula educación y desarrollo de la persona, lo cual influye directamente en la construcción de ciudadanía. El artículo 4o. reconoce igualdad entre mujeres y hombres, así como elementos relacionados con familia, salud, vivienda y niñez. El artículo 6o. protege la libre manifestación de ideas, mientras que los artículos 14 y 16 establecen garantías de legalidad y seguridad jurídica. El artículo 17 reconoce el acceso a la justicia. En conjunto, estos preceptos muestran que la sociedad se regula mediante un equilibrio: libertad individual, responsabilidad colectiva y límites a la autoridad \citep{constitucionCPEUM2026}.
+
+Desde una lectura ética, estas normas no son adornos del texto constitucional. Funcionan como criterios mínimos para evitar abusos. Por ejemplo, la igualdad no sólo significa que todas las personas aparezcan mencionadas en la ley; implica que las instituciones no reproduzcan trato discriminatorio. La libertad de expresión no sólo protege opiniones cómodas; también protege la posibilidad de participar críticamente en la vida pública. El acceso a la justicia no se reduce a que existan tribunales; exige condiciones reales para que una persona pueda reclamar sus derechos.
+
+En este punto aparece la relación entre moral y Derecho. La moral social puede impulsar ciertos valores de convivencia, como respeto, solidaridad o responsabilidad familiar. Pero el Derecho debe convertir esos valores en reglas claras, aplicables y compatibles con la dignidad humana. Si una costumbre social discrimina, humilla o excluye, no basta decir que ``así se acostumbra''. La ética permite cuestionar esa costumbre, y el Derecho debe establecer límites para impedir que se traduzca en abuso.
+
+\subsection{Relación Estado--individuo vía Derecho}
+
+La relación entre Estado e individuo es uno de los puntos más delicados del Derecho. El Estado concentra poder: crea normas, administra recursos, impone sanciones y decide sobre asuntos que afectan directamente la vida de las personas. Por eso, el Derecho no sólo sirve para ordenar a la ciudadanía; también sirve para controlar al propio Estado. Una autoridad sin límites jurídicos puede transformarse en arbitrariedad, aunque diga actuar en nombre del orden o del interés público.
+
+El Estado moderno se justifica cuando protege derechos y organiza condiciones de convivencia. La Constitución mexicana sostiene esa relación por medio de la soberanía popular, la división de poderes, el régimen republicano y la protección de derechos humanos. La sociedad delega poder al Estado, pero ese poder no es absoluto. Debe ejercerse dentro de competencias, procedimientos y límites constitucionales. Desde esta lógica, el Derecho es el canal que permite convertir el poder en autoridad legítima.
+
+El artículo 1o. constitucional es central para esta relación porque impone obligaciones concretas a todas las autoridades: promover, respetar, proteger y garantizar derechos humanos \citep{constitucionCPEUM2026}. Esto significa que el Estado no puede actuar como si los derechos fueran concesiones graciosas. Los derechos pertenecen a las personas y el Estado está obligado a protegerlos. La función pública queda sometida a una exigencia ética y jurídica: tratar a cada persona como sujeto de derechos, no como expediente, molestia o número de trámite.
+
+Los artículos 14 y 16 también muestran límites al poder estatal. Ninguna persona debe ser privada de derechos sin un procedimiento legal, y los actos de autoridad deben estar fundados y motivados. Esta fórmula puede parecer técnica, pero en la práctica es una barrera contra el abuso. Si una autoridad actúa sin explicar la norma aplicable, sin justificar su decisión o sin respetar el procedimiento, rompe la relación legítima entre Estado e individuo. Ahí el problema ya no es sólo administrativo: también es ético, porque se usa el poder sin responsabilidad.
+
+La Comisión Nacional de los Derechos Humanos representa un mecanismo institucional relacionado con esa función de control, pues su marco normativo se vincula con la protección no jurisdiccional de los derechos humanos frente a actos de autoridad \citep{cndhMarcoNormativo}. Su existencia muestra que la protección de derechos no puede quedar únicamente en el discurso constitucional. Se requieren instituciones, procedimientos y vías de denuncia para revisar el comportamiento estatal.
+
+Desde mi perspectiva, la relación Estado--individuo debe leerse como una relación de poder vigilado. El individuo no es enemigo del Estado; es la razón por la cual el Estado existe. Pero el Estado tampoco puede quedar reducido a una estructura decorativa. Su función consiste en garantizar condiciones de convivencia, seguridad, justicia y protección de derechos. El problema aparece cuando el poder estatal olvida su finalidad y se vuelve autosuficiente. Ahí la ética jurídica exige regresar a la pregunta base: ¿esta actuación protege a la persona o sólo protege a la institución?
+
+\subsection{Ética, moral y valores contemporáneos en la sociedad mexicana}
+
+La ética y la moral se relacionan, pero no son idénticas. La moral se manifiesta en valores, costumbres, hábitos y juicios que una persona o sociedad considera correctos. La ética, en cambio, implica reflexión crítica sobre esos valores. Por eso, una sociedad puede tener prácticas moralmente aceptadas durante cierto tiempo y, aun así, ser cuestionadas éticamente cuando dañan dignidad, igualdad o libertad. Esta diferencia es importante para el Derecho, porque no toda moral social debe convertirse en norma jurídica.
+
+Ronquillo Armas presenta la ética general y profesional como un campo que orienta la conducta desde valores como responsabilidad, honestidad, respeto y compromiso con los demás \citep{ronquilloarmasEticaGeneralProfesional2018}. En el ámbito jurídico, esto tiene una consecuencia directa: el profesional del Derecho no puede limitarse a operar normas; debe comprender los efectos de sus decisiones. Una demanda, un contrato, una asesoría, una sentencia o un trámite no son sólo actos técnicos. Tienen impacto en personas concretas y, por lo tanto, exigen criterio ético.
+
+Singer, desde una perspectiva de ética aplicada, permite entender que los problemas morales no pueden resolverse únicamente desde preferencias personales. La ética exige considerar consecuencias, intereses afectados y razones que puedan sostenerse frente a otros \citep{singerCompendioEtica1995}. Esta idea es útil para la sociedad mexicana porque muchos conflictos públicos se discuten desde emociones, prejuicios o intereses de grupo. La ética obliga a subir el nivel de análisis: no basta preguntar qué conviene a una persona; hay que preguntar qué decisión puede justificarse frente a quienes serán afectados.
+
+Entre los valores contemporáneos solicitados en la actividad destacan familia y solidaridad. La familia puede entenderse como un espacio básico de socialización, cuidado, afecto y responsabilidad. Jurídicamente, no debe verse como un modelo único impuesto a toda la sociedad, sino como una institución social plural que merece protección cuando garantiza desarrollo, cuidado y dignidad. La Constitución mexicana reconoce la igualdad entre mujeres y hombres y protege aspectos vinculados con la familia, la niñez y el bienestar social \citep{constitucionCPEUM2026}. Esto permite sostener que la familia no debe usarse como argumento para excluir, sino como base para proteger relaciones de cuidado.
+
+La solidaridad, por su parte, es un valor clave para comprender la dimensión social del Derecho. No se reduce a ayudar cuando sobra tiempo o cuando conviene. Implica reconocer que la vida social genera dependencias reales: nadie vive totalmente aislado. En una sociedad desigual, la solidaridad permite justificar deberes de cooperación, políticas públicas, protección a grupos vulnerables y responsabilidad frente al daño. Desde el Derecho, la solidaridad se traduce en instituciones, garantías, servicios públicos y mecanismos de protección.
+
+Sin embargo, estos valores deben manejarse con cuidado. Familia y solidaridad pueden usarse de forma positiva cuando fortalecen dignidad, responsabilidad y apoyo mutuo. Pero también pueden deformarse. La familia puede volverse excusa para controlar, discriminar o invisibilizar violencia. La solidaridad puede convertirse en discurso vacío si no se acompaña de acciones reales. Por eso, la ética jurídica no debe idealizar valores; debe revisarlos en su funcionamiento concreto.
+
+La sociedad mexicana enfrenta problemas donde esta relación se vuelve evidente: corrupción, desigualdad, discriminación, violencia familiar, abuso de autoridad, precariedad laboral y desconfianza institucional. En todos estos casos, el Derecho establece reglas, pero la ética pregunta si esas reglas se aplican con justicia y si realmente protegen a la persona. La moral social puede condenar ciertos actos, pero el Derecho debe probar, sancionar y reparar conforme a procedimiento. Ahí se observa la diferencia entre indignación moral y respuesta jurídica.
+
+\subsection{Síntesis del resumen}
+
+La sociedad, desde el Derecho, se organiza mediante normas que permiten convivencia, seguridad y solución de conflictos. Pero esas normas necesitan fundamento ético para no convertirse en una simple maquinaria formal. La Constitución mexicana ofrece ese marco al reconocer derechos humanos, igualdad, libertad, legalidad, seguridad jurídica y acceso a la justicia. Estos elementos no son sólo conceptos teóricos; funcionan como límites al poder y como garantías para que la convivencia social no dependa del capricho de autoridades o mayorías.
+
+La relación Estado--individuo se sostiene en una idea central: el poder estatal sólo es legítimo cuando se ejerce conforme al Derecho y en favor de la dignidad humana. El Estado puede ordenar, prohibir, sancionar y administrar, pero debe hacerlo con fundamento, motivación, proporcionalidad y respeto a derechos. Cuando la autoridad actúa sin esos límites, el problema no es únicamente jurídico; también es moral, porque el poder se usa contra la persona que debería proteger.
+
+Los valores contemporáneos, como familia y solidaridad, ayudan a comprender que el Derecho no opera en el vacío. La familia refleja cuidado, pertenencia y responsabilidad; la solidaridad expresa cooperación y reconocimiento del otro. Ambos valores pueden fortalecer la convivencia, siempre que se interpreten desde la dignidad y no desde la imposición. En ese sentido, ética, moral y Derecho deben dialogar: la moral aporta sensibilidad social, la ética aporta crítica racional y el Derecho aporta estructura institucional.
+
+\section{Conclusión}
+
+La sociedad requiere Derecho porque la convivencia necesita reglas claras, procedimientos y límites al poder. Sin embargo, el Derecho no puede reducirse a forma legal. Una norma puede estar vigente y aun así necesitar interpretación crítica para no producir injusticia. Por eso, la ética y la moral tienen un papel relevante: permiten revisar si las normas y las decisiones jurídicas responden a valores como dignidad, igualdad, justicia, familia, solidaridad y responsabilidad social.
+
+La relación Estado--individuo muestra el punto más importante del tema. El Estado tiene poder, pero ese poder sólo es aceptable si está limitado por derechos humanos, legalidad y procedimientos. Desde esta perspectiva, el Derecho funciona como control del poder y como protección de la persona. Cuando una autoridad respeta derechos, el Derecho cumple su función; cuando los ignora, la norma deja de ser garantía y se vuelve instrumento de abuso.
+
+Mi postura es que la ética jurídica debe servir como filtro de responsabilidad. No basta cumplir mecánicamente una regla ni repetir valores de forma abstracta. El trabajo jurídico exige analizar consecuencias, proteger dignidad y sostener razones que puedan defenderse públicamente. En pocas palabras: la sociedad necesita Derecho para ordenar la convivencia, pero necesita ética para impedir que ese orden se vuelva frío, injusto o indiferente frente a las personas.
+
+% ==============================================================================
+% REFERENCIAS
+% ================================================================================
+\bibliography{etica-y-moral-juridica}
+
+\end{document}

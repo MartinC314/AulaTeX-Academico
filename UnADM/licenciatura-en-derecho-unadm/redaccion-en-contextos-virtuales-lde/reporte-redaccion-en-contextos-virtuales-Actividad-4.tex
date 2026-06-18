@@ -1,0 +1,217 @@
+% CREACION DEL DOCUMENTO
+\documentclass[
+	spanish,
+	letterpaper, oneside
+]{article}
+
+% INFORMACION DEL DOCUMENTO
+\def\documenttitle {Lista de verificación para evaluar textos digitales}
+\def\documentsubtitle {Análisis de contenido de un texto académico digital}
+\def\documentsubject {Actividad 4 - Redacción en contextos virtuales}
+
+\def\documentauthor {Martín Jonathan de la Cruz}
+\def\coursename {Redacción en contextos virtuales}
+\def\coursecode {017}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Redacción en contextos virtuales}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de México}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\authortable {
+	\begin{tabular}{ll}
+		\textbf{Alumno:}
+		& \begin{tabular}[t]{l}
+			 Martín Jonathan de la Cruz \\
+		\end{tabular} \\
+		Matrícula: & ES2611202040 \\
+
+		\textit{Profesora:}
+		& \begin{tabular}[t]{l}
+			Ana Rosa \\ Arceo Luna
+		\end{tabular} \\
+		& \\
+		\multicolumn{2}{l}{Fecha de realización: \today} \\
+		\multicolumn{2}{l}{\universitylocation}
+	\end{tabular}
+}
+
+% IMPORTACION DEL TEMPLATE
+\input{template}
+
+% FORMATO
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{ragged2e}
+\setcitestyle{authoryear,open={(},close={)}}
+
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+
+% ==============================================================================
+% MARCA DE AGUA EN PORTADA
+% ==============================================================================
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+	\ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+		\AddToShipoutPictureBG*{%
+			\begin{tikzpicture}[remember picture,overlay]
+				\node[
+					opacity=\coverwatermarkopacity,
+					inner sep=0pt,
+					xshift=\coverwatermarkxshift,
+					yshift=\coverwatermarkyshift
+				] at (current page.center) {%
+					\includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+				};
+			\end{tikzpicture}%
+		}%
+	}{}%
+}
+
+\begin{document}
+
+% PORTADA
+\insertcoverwatermark
+\templatePortrait
+
+% CONFIGURACION DE PAGINA Y ENCABEZADOS
+\templatePagecfg
+\onehalfspacing
+
+% RESUMEN
+\begin{abstractd}
+	\textbf{Objetivo:} Evaluar un texto académico digital a partir de criterios verificables de claridad, estructura, tono, legibilidad y corrección, con el fin de determinar si realmente orienta la lectura en pantalla.
+
+	\textbf{Producto elaborado:} Lista de verificación aplicada al texto propio \textit{Comunicación efectiva en el ámbito laboral: juego de roles}, acompañada de un análisis breve sobre fortalezas, límites y ajustes de forma.
+
+	\textbf{Enfoque de análisis:} Un texto digital no se sostiene solo por tener información correcta. También debe ordenar la lectura, hacer visible su propósito y facilitar que el lector ubique rápido qué se dice, por qué importa y cómo está argumentado.
+\end{abstractd}
+
+% TABLA DE CONTENIDOS
+\templateIndex
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+\section{Introducción}
+
+Evaluar un texto digital no consiste en revisar si \"suena bien\". Consiste en comprobar si su estructura realmente guía al lector. En formato virtual, un trabajo académico debe cumplir una doble función: sostener una idea con claridad y, al mismo tiempo, presentarla de una manera que pueda recorrerse sin fricción en pantalla. Cuando esa organización falla, incluso un contenido correcto pierde fuerza comunicativa.
+
+Desde esta perspectiva, la lista de verificación funciona como un instrumento de diagnóstico. Permite observar si el texto tiene propósito definido, secuencia lógica, tono pertinente y condiciones mínimas de legibilidad. La escritura académica exige ordenar ideas, seleccionar información relevante y adecuar el lenguaje al contexto comunicativo \citep{nunezcortesEscrituraAcademicaTeoria2015}. Además, en el ámbito universitario escribir no significa solo entregar información, sino construir una explicación comprensible, coherente y sustentada \citep{correaManualBasicoEscritura2018,vitoriaEscrituraAcademicaFormacion2019}. Por ello, en esta actividad se revisa un texto propio de la unidad anterior para identificar qué funciona, qué limita la lectura digital y qué ajustes conviene realizar.
+
+\section{Texto digital seleccionado}
+
+El texto seleccionado para la evaluación es un trabajo propio elaborado previamente en la asignatura: \textit{Comunicación efectiva en el ámbito laboral: juego de roles}. Se trata de un documento académico digital de más de una página de extensión, integrado por portada, resumen, introducción, análisis comparativo de correos, juego de roles, reflexión final, conclusión y referencias.
+
+\begingroup
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.28}
+\begin{longtable}{@{}L{0.27\linewidth}L{0.66\linewidth}@{}}
+\caption{Ficha del texto digital evaluado}\label{tab:ficha-texto}\\
+\toprule
+\textbf{Elemento} & \textbf{Descripción} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Elemento} & \textbf{Descripción} \\
+\midrule
+\endhead
+Tipo de texto & Texto académico digital propio. \\
+\addlinespace
+Título & \textit{Comunicación efectiva en el ámbito laboral: juego de roles}. \\
+\addlinespace
+Contexto & Actividad previa de la asignatura \textit{Redacción en contextos virtuales}. \\
+\addlinespace
+Propósito & Analizar la diferencia entre un correo laboral deficiente y una reformulación formal, clara y profesional. \\
+\addlinespace
+Extensión & Documento mayor a una página, con desarrollo, producto solicitado y cierre reflexivo. \\
+\bottomrule
+\end{longtable}
+\endgroup
+
+\section{Lista de verificación aplicada}
+
+\begingroup
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.32}
+\begin{longtable}{@{}L{0.18\linewidth}L{0.43\linewidth}L{0.13\linewidth}L{0.20\linewidth}@{}}
+\caption{Lista de verificación para evaluar el texto digital}\label{tab:lista-verificacion}\\
+\toprule
+\textbf{Categoría} & \textbf{Criterio} & \textbf{Cumple} & \textbf{Observación breve} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Categoría} & \textbf{Criterio} & \textbf{Cumple} & \textbf{Observación breve} \\
+\midrule
+\endhead
+Propósito y claridad & El texto tiene un propósito claro. & Sí & El objetivo se reconoce desde el resumen y la introducción. \\
+\addlinespace
+Propósito y claridad & La idea principal se identifica fácilmente desde el inicio. & Sí & Desde el arranque queda claro que el eje es la comunicación laboral escrita. \\
+\addlinespace
+Organización y estructura & Los párrafos son breves y están bien delimitados. & Parcial & Algunos párrafos concentran varias operaciones de análisis y convendría fragmentarlos. \\
+\addlinespace
+Organización y estructura & La información se presenta de forma lógica y ordenada. & Sí & La secuencia avanza de contexto a análisis, producto, reflexión y cierre. \\
+\addlinespace
+Organización y estructura & Se utilizan conectores que dan coherencia al texto. & Sí & Las transiciones articulan comparación, consecuencia y cierre argumentativo. \\
+\addlinespace
+Lenguaje y tono & El lenguaje es adecuado al contexto académico o profesional. & Sí & El vocabulario mantiene formalidad y relación directa con la práctica laboral. \\
+\addlinespace
+Lenguaje y tono & Se evita el uso de expresiones coloquiales o informales. & Sí & Las expresiones coloquiales solo aparecen dentro del ejemplo problemático que se corrige. \\
+\addlinespace
+Lenguaje y tono & El tono es claro, formal y respetuoso. & Sí & El texto sostiene una crítica funcional sin perder equilibrio académico. \\
+\addlinespace
+Legibilidad en formato digital & El texto es fácil de leer en pantalla. & Parcial & La división por secciones ayuda, pero algunos bloques siguen siendo densos. \\
+\addlinespace
+Legibilidad en formato digital & No hay párrafos excesivamente largos. & Parcial & Persisten párrafos amplios que reducen velocidad de lectura y escaneabilidad. \\
+\addlinespace
+Legibilidad en formato digital & La estructura facilita la lectura rápida o escaneabilidad. & Parcial & Los títulos orientan, aunque faltan apoyos visuales breves para sintetizar criterios. \\
+\addlinespace
+Corrección & No presenta errores ortográficos. & Sí & No se detectan faltas ortográficas relevantes. \\
+\addlinespace
+Corrección & No presenta errores gramaticales. & Sí & La sintaxis es clara, estable y coherente con el propósito del texto. \\
+\bottomrule
+\end{longtable}
+\endgroup
+
+\section{Análisis breve del texto evaluado}
+
+El texto evaluado sí cumple con su función central: mostrar que la comunicación laboral no depende solo del contenido del mensaje, sino de la forma en que se organiza, se formula y se dirige al destinatario. Su principal fortaleza está en la secuencia argumentativa. Primero presenta el problema, después contrasta ejemplos y finalmente explica por qué una reformulación más clara y profesional mejora la eficacia del intercambio. Esa estructura le da coherencia y evita que el trabajo se quede en una simple opinión sobre ``escribir mejor''.
+
+También destaca el tono. El documento mantiene formalidad, evita coloquialismos fuera del ejemplo analizado y sostiene una postura académica clara. El punto más débil aparece en la lectura digital: algunos párrafos concentran demasiadas ideas en un solo bloque y eso reduce velocidad de lectura, especialmente en pantalla. En términos prácticos, el problema no está en el contenido, sino en la densidad visual del texto.
+
+A partir de esa observación, el ajuste más útil sería redistribuir la información. Dividir párrafos extensos, separar idea principal de consecuencia y añadir un apoyo visual breve permitiría que el lector identifique con mayor rapidez qué criterio se evalúa y qué mejora se propone. Así, el trabajo no solo informa; también orienta mejor la lectura. Ahí está la mejora clave.
+
+\section{Ajustes concretos propuestos}
+
+\begin{enumerate}
+	\item \textbf{Fragmentar los bloques extensos.} Conviene separar los párrafos que reúnen contexto, análisis y consecuencia en un mismo tramo. Esa división mejora legibilidad sin reducir contenido.
+	\item \textbf{Incorporar una síntesis visual breve.} Un cuadro o mini-lista con criterios como claridad, tono y estructura ayudaría a identificar con rapidez qué cambió entre el correo problemático y la versión corregida.
+\end{enumerate}
+
+\section{Conclusión}
+
+La lista de verificación permite sostener que el texto evaluado tiene base sólida: cumple su propósito, conserva orden argumentativo y utiliza un tono adecuado para el contexto académico. Sin embargo, la revisión también muestra un límite importante. En escritura digital no basta con redactar bien; también es necesario diseñar la lectura.
+
+Esa es la idea central que deja esta actividad. Un texto funciona mejor cuando organiza el recorrido del lector, hace visibles sus criterios y reduce la carga innecesaria en pantalla. Por ello, la mejora principal no exige cambiar el análisis de fondo, sino ajustar su presentación para que la claridad del contenido se traduzca también en claridad visual.
+
+\bibliography{redaccion-en-contextos-virtuales}
+
+\end{document}

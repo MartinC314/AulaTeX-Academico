@@ -1,0 +1,715 @@
+{
+  "Redacción académica": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "fundamento teórico o epistemológico de la redacción académica (por qué se distingue de otros tipos de escritura, qué marcos la sustentan)",
+            "ejemplo concreto de aplicación o género textual académico con sus características formales desarrolladas",
+            "crítica o límite del concepto (limitaciones del enfoque normativo, tensiones entre escritura académica y creatividad, exclusión social, etc.)"
+          ],
+          "consultas": [
+            "características formales géneros discursivos escritura académica universitaria",
+            "críticas limitaciones escritura académica normativa exclusión diversidad lingüística",
+            "fundamentos epistemológicos escritura académica comunidades discursivas Swales Bazerman"
+          ],
+          "nota": "Las citas recuperadas ofrecen una definición funcional aceptable (escritura como tarea fundamental del trabajo universitario) y mencionan autores institucionales, pero la cobertura es superficial. No se desarrolla ningún fundamento teórico sólido (p. ej., teoría de géneros, comunidades discursivas), no se presenta un ejemplo concreto con análisis de sus rasgos textuales, y no aparece ninguna posición crítica sobre los límites o tensiones del concepto. Se recomienda una segunda ronda de búsqueda orientada a estos tres elementos faltantes."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "características formales géneros discursivos escritura académica universitaria",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas limitaciones escritura académica normativa exclusión diversidad lingüística",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamentos epistemológicos escritura académica comunidades discursivas Swales Bazerman",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 18,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "critica"
+          ],
+          "consultas": [
+            "definición de redacción académica características formales estilo científico",
+            "fundamentos epistemológicos escritura académica universidad alfabetización",
+            "críticas limitaciones enseñanza escritura académica educación superior"
+          ],
+          "nota": "Las citas recuperadas abordan tangencialmente la escritura académica a través del concepto de géneros discursivos y el rol de la escritura en la universidad, y mencionan autores relevantes como Bajtin, Arnoux y Bazerman. Sin embargo, no se encuentra una definición explícita de 'redacción académica' como concepto autónomo, tampoco un fundamento teórico o pedagógico que la sustente directamente, y está completamente ausente cualquier perspectiva crítica o señalamiento de sus límites. Las similitudes bajas (máximo 0.25) confirman que las citas son periféricas al concepto central. Se requieren búsquedas más focalizadas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de redacción académica características formales estilo científico",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamentos epistemológicos escritura académica universidad alfabetización",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas limitaciones enseñanza escritura académica educación superior",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "Comunicación profesional escrita": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion: No hay una definición explícita y precisa de 'comunicación profesional escrita' como concepto diferenciado; las citas rozan el tema pero no lo definen directamente.",
+            "fundamento: Falta una base teórica o normativa que sustente por qué la comunicación profesional escrita tiene características propias (propósito, registro, destinatario especializado).",
+            "autor: No se identifica ningún autor de referencia canónico en el campo (p.ej. Bhatia, Swales, van Dijk) que respalde el concepto de forma directa.",
+            "ejemplo: No hay un ejemplo concreto de documento profesional escrito analizado (informe, contrato, memo, historia clínica) con sus rasgos distintivos.",
+            "critica: No se registra ninguna crítica, límite o debate en torno al concepto (p.ej. ambigüedad entre escritura académica y profesional, riesgos de la hiperespecialización del lenguaje)."
+          ],
+          "consultas": [
+            "definición y características de la comunicación profesional escrita géneros discursivos Bhatia Swales",
+            "diferencias entre escritura académica y escritura profesional propósito registro destinatario",
+            "críticas y limitaciones de la comunicación escrita en contextos profesionales opacidad lenguaje especializado"
+          ],
+          "nota": "Las citas recuperadas aportan elementos periféricos útiles (ortografía, comunidades profesionales, géneros textuales como informes o historias clínicas) pero ninguna define ni fundamenta directamente el concepto de 'comunicación profesional escrita'. La similitud semántica es muy baja (máximo 0.11), lo que indica que los fragmentos fueron recuperados por proximidad léxica genérica y no por pertinencia conceptual. Se requiere una ronda adicional con consultas más focalizadas en teoría de géneros profesionales y en autores clave del campo."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y características de la comunicación profesional escrita géneros discursivos Bhatia Swales",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencias entre escritura académica y escritura profesional propósito registro destinatario",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y limitaciones de la comunicación escrita en contextos profesionales opacidad lenguaje especializado",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición características comunicación profesional escrita géneros textuales laborales informes memorandos",
+            "fundamentos retórica situacional comunicación escrita contexto profesional organizacional Swales Bazerman",
+            "limitaciones dificultades comunicación escrita profesional barreras claridad precisión registro formal"
+          ],
+          "nota": "Las citas recuperadas en esta ronda no cubren ningún elemento esencial del concepto 'comunicación profesional escrita'. Los fragmentos giran exclusivamente en torno a géneros discursivos académicos universitarios (reseña, resumen, monografía, examen), que constituyen un dominio distinto al profesional-laboral. No hay definición del concepto, ni fundamento teórico aplicable al entorno profesional, ni autores de referencia en comunicación organizacional o técnica, ni ejemplos de documentos profesionales (informes, cartas comerciales, memorandos), ni críticas o limitaciones del campo. Se requieren búsquedas orientadas específicamente al ámbito laboral y organizacional de la escritura, incluyendo autores como Swales, Bazerman o Yates, y géneros como el informe técnico, el correo profesional o la propuesta comercial."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición características comunicación profesional escrita géneros textuales laborales informes memorandos",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamentos retórica situacional comunicación escrita contexto profesional organizacional Swales Bazerman",
+            "hits": 4
+          },
+          {
+            "consulta": "limitaciones dificultades comunicación escrita profesional barreras claridad precisión registro formal",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "Principios de la comunicación efectiva": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "principios de la comunicación efectiva claridad concisión coherencia",
+            "modelos de comunicación efectiva Shannon Jakobson Watzlawick axiomas",
+            "barreras y límites de la comunicación efectiva críticas"
+          ],
+          "nota": "Las citas recuperadas son de muy baja similitud (ninguna supera 0.10) y no abordan en ningún momento el concepto central de 'principios de la comunicación efectiva' como constructo teórico. Los fragmentos pertenecen a textos sobre escritura académica y narración, y solo tangencialmente aluden a 'principios' en contextos distintos. No se cubre ninguno de los cinco elementos evaluados: falta una definición del concepto, no hay fundamento teórico ni marco disciplinar, no se identifica ningún autor canónico (Watzlawick, Shannon, Jakobson, etc.), no se presentan ejemplos o aplicaciones concretas, y no aparece ninguna crítica o límite del enfoque. Se recomienda una nueva ronda de búsqueda con consultas más específicas y directas al dominio de la comunicación."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "principios de la comunicación efectiva claridad concisión coherencia",
+            "hits": 4
+          },
+          {
+            "consulta": "modelos de comunicación efectiva Shannon Jakobson Watzlawick axiomas",
+            "hits": 4
+          },
+          {
+            "consulta": "barreras y límites de la comunicación efectiva críticas",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 17,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "fundamento teórico o comunicológico de los principios (modelo comunicativo, teoría de base)",
+            "autor reconocido que sistematice los principios de comunicación efectiva (más allá de Ayala y la mención tangencial a Watzlawick)",
+            "ejemplo concreto de aplicación de los principios en un contexto comunicativo real",
+            "crítica o límite de los principios (p.ej., tensión entre claridad y complejidad conceptual, o limitaciones culturales/contextuales)"
+          ],
+          "consultas": [
+            "Watzlawick axiomas comunicación efectiva fundamento teórico aplicación",
+            "principios comunicación efectiva autor crítica limitaciones contexto académico profesional",
+            "comunicación efectiva claridad concisión ejemplo aplicación práctica organizacional o jurídica"
+          ],
+          "nota": "La ficha cubre una definición operativa de los principios (claridad, concisión, sencillez, naturalidad, originalidad) con base en Ayala, y hay una referencia útil aunque superficial a Watzlawick. Sin embargo, la similitud de las citas es muy baja (máximo 0.17), lo que indica recuperación débil. Faltan el fundamento teórico comunicológico, un autor canónico que respalde sistemáticamente el concepto, ejemplos aplicados y, sobre todo, cualquier perspectiva crítica o identificación de límites. La ficha en su estado actual es descriptiva pero carece de profundidad analítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Watzlawick axiomas comunicación efectiva fundamento teórico aplicación",
+            "hits": 4
+          },
+          {
+            "consulta": "principios comunicación efectiva autor crítica limitaciones contexto académico profesional",
+            "hits": 4
+          },
+          {
+            "consulta": "comunicación efectiva claridad concisión ejemplo aplicación práctica organizacional o jurídica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  },
+  "Claridad comunicativa": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "claridad comunicativa principios Grice máximas conversacionales",
+            "claridad textual criterios legibilidad Flesch o Van Dijk teoría del texto",
+            "límites claridad comunicativa ambigüedad necesaria lenguaje jurídico o literario"
+          ],
+          "nota": "La ficha ofrece una definición operativa de claridad (pensamiento diáfano, comprensible, directo) y algunas estrategias prácticas como el uso de frases cortas y estructura canónica, pero carece de fundamento teórico sólido, de autor de referencia que respalde el concepto, de ejemplos concretos aplicados y de toda discusión crítica sobre sus límites o tensiones (p.ej., la claridad vs. precisión técnica o la ambigüedad funcional). Las similitudes bajas en la mayoría de citas (0.06–0.09) indican que el corpus recuperado no está centrado en este concepto. Se recomienda buscar en teorías lingüísticas y retóricas especializadas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "claridad comunicativa principios Grice máximas conversacionales",
+            "hits": 4
+          },
+          {
+            "consulta": "claridad textual criterios legibilidad Flesch o Van Dijk teoría del texto",
+            "hits": 4
+          },
+          {
+            "consulta": "límites claridad comunicativa ambigüedad necesaria lenguaje jurídico o literario",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 16
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 16,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "claridad comunicativa Habermas acción comunicativa fundamento teórico",
+            "claridad estilo redacción ejemplos textos oscuros ambigüedad consecuencias",
+            "límites claridad comunicativa simplicidad excesiva pérdida matiz crítica"
+          ],
+          "nota": "Las citas recuperadas ofrecen una definición operativa aceptable de claridad (pensamiento diáfano, comprensión sin esfuerzo, Ayala), pero la cobertura es superficial y proviene de una sola fuente principal. No hay ningún autor teórico de referencia consolidado (p. ej., Habermas, Grice, van Dijk explícitamente sobre claridad), ningún fundamento pragmático o lingüístico que justifique por qué la claridad es una propiedad comunicativa deseable, ningún ejemplo concreto que ilustre textos claros versus oscuros, y ninguna perspectiva crítica que señale tensiones (p. ej., la simplificación puede traicionar la complejidad del pensamiento o reproducir asimetrías de poder al privilegiar un registro sobre otro). La cita de Van Dijk sobre comunidades epistémicas apunta tangencialmente a la relatividad de la comprensión, pero no está articulada como crítica a la claridad. Se necesitan al menos tres rondas adicionales de búsqueda focalizadas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "claridad comunicativa Habermas acción comunicativa fundamento teórico",
+            "hits": 4
+          },
+          {
+            "consulta": "claridad estilo redacción ejemplos textos oscuros ambigüedad consecuencias",
+            "hits": 4
+          },
+          {
+            "consulta": "límites claridad comunicativa simplicidad excesiva pérdida matiz crítica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  },
+  "Correo electrónico formal": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "características y estructura del correo electrónico formal en comunicación escrita",
+            "normas redacción correo electrónico formal académico o profesional",
+            "diferencias correo electrónico formal e informal registro lingüístico"
+          ],
+          "nota": "Las cinco citas recuperadas no guardan ninguna relación semántica relevante con el concepto 'correo electrónico formal'. Dos citas provienen de fragmentos literarios que mencionan la palabra 'correo' en su sentido postal tradicional (García Márquez), y las otras tres abordan escritura académica universitaria sin referirse al género discursivo del correo electrónico. Ninguna de las cinco citas cubre definición, fundamento teórico, autoría académica, ejemplos de estructura o críticas/limitaciones del correo electrónico formal. La ficha debe reconstruirse completamente con fuentes pertinentes sobre comunicación escrita formal, géneros discursivos digitales o redacción profesional."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "características y estructura del correo electrónico formal en comunicación escrita",
+            "hits": 4
+          },
+          {
+            "consulta": "normas redacción correo electrónico formal académico o profesional",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencias correo electrónico formal e informal registro lingüístico",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "estructura y características del correo electrónico formal redacción profesional",
+            "normas protocolo correo electrónico formal saludo despedida asunto",
+            "diferencias correo electrónico formal informal comunicación escrita digital"
+          ],
+          "nota": "Las cinco citas recuperadas no guardan relación directa con el concepto de correo electrónico formal. Abordan temas generales de escritura académica, procesos de redacción y signo lingüístico, sin mencionar en ningún momento el correo electrónico como género textual. La cobertura es nula en todos los criterios evaluados: no hay definición del concepto, no se expone su fundamento comunicativo o pragmático, no se cita ningún autor especializado en comunicación digital o epistolar, no se ofrece ningún ejemplo concreto de estructura o fórmulas de cortesía, ni tampoco se plantea crítica o límite alguno. Se requieren búsquedas orientadas específicamente al género textual del correo electrónico formal, su estructura canónica, convenciones de cortesía y sus diferencias respecto a otras modalidades de comunicación escrita."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "estructura y características del correo electrónico formal redacción profesional",
+            "hits": 4
+          },
+          {
+            "consulta": "normas protocolo correo electrónico formal saludo despedida asunto",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencias correo electrónico formal informal comunicación escrita digital",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "Cortesía": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 1,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "principio de cortesía Leech máximas pragmática lingüística",
+            "teoría cortesía Brown Levinson face threatening acts imagen social",
+            "cortesía verbal estrategias comunicativas límites críticas Habermas"
+          ],
+          "nota": "La única cita recuperada hace una referencia tangencial al término 'cortesía' en el contexto del leísmo gramatical, sin abordar el concepto como objeto de estudio pragmático o sociolingüístico. No hay definición teórica, ningún fundamento conceptual, ningún autor relevante del campo (p.ej. Leech, Brown & Levinson, Grice), ningún ejemplo de aplicación analítica y ninguna crítica o límite del concepto. La cobertura es prácticamente nula y se requieren búsquedas dirigidas a la pragmática de la cortesía verbal y sus principales marcos teóricos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "principio de cortesía Leech máximas pragmática lingüística",
+            "hits": 4
+          },
+          {
+            "consulta": "teoría cortesía Brown Levinson face threatening acts imagen social",
+            "hits": 4
+          },
+          {
+            "consulta": "cortesía verbal estrategias comunicativas límites críticas Habermas",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 13
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 13,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "principio de cortesía Leech máximas pragmática lingüística",
+            "teoría de la cortesía Brown Levinson imagen pública face threatening acts",
+            "cortesía verbal estrategias comunicativas ejemplos análisis del discurso"
+          ],
+          "nota": "Las citas recuperadas no cubren ninguno de los elementos requeridos para una ficha conceptual sólida sobre 'cortesía' en sentido lingüístico-pragmático. La única referencia mínimamente relevante es el 'leísmo de cortesía' (Núñez Cortés, p. 63), que apenas roza el concepto de forma tangencial y gramatical, sin abordar la cortesía como fenómeno pragmático. El resto de citas trata sobre escritura académica, neurociencia educativa y socialización familiar, sin ninguna conexión sustantiva con el concepto. Es necesario recuperar literatura especializada sobre la teoría de la cortesía (Brown & Levinson, Leech, Grice) para cubrir definición, fundamento teórico, autoría canónica, ejemplos de aplicación y críticas al modelo."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "principio de cortesía Leech máximas pragmática lingüística",
+            "hits": 4
+          },
+          {
+            "consulta": "teoría de la cortesía Brown Levinson imagen pública face threatening acts",
+            "hits": 4
+          },
+          {
+            "consulta": "cortesía verbal estrategias comunicativas ejemplos análisis del discurso",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 16
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 16
+  },
+  "Formalidad": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 2,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición de formalidad en el discurso académico y sus características lingüísticas",
+            "registro formal versus informal en la escritura académica según autores como Cassany o Swales",
+            "críticas o límites del uso de la formalidad en textos académicos rigidez comunicativa"
+          ],
+          "nota": "Las dos citas recuperadas mencionan tangencialmente las 'formalidades' de la escritura académica, pero ninguna ofrece una definición conceptual de formalidad, ni explicita su fundamento teórico, ni identifica un autor que la desarrolle sistemáticamente. Tampoco hay ejemplos concretos de rasgos formales ni discusión crítica sobre sus límites o efectos. La similitud muy baja (0.07 en ambos casos) confirma que las citas son periféricas al concepto. Se requiere una segunda ronda de búsqueda con consultas más precisas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de formalidad en el discurso académico y sus características lingüísticas",
+            "hits": 4
+          },
+          {
+            "consulta": "registro formal versus informal en la escritura académica según autores como Cassany o Swales",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas o límites del uso de la formalidad en textos académicos rigidez comunicativa",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 13
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 13,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición formalidad requisitos formales acto jurídico derecho",
+            "formalidad como condición validez contrato consecuencias incumplimiento formalidad",
+            "crítica al formalismo jurídico exceso formalidad acceso justicia"
+          ],
+          "nota": "Las citas recuperadas no guardan relación con el concepto jurídico de 'formalidad'. Provienen de un texto sobre escritura académica universitaria y abordan género discursivo, escritura formal y producción textual estudiantil. Ninguna cita cubre la definición jurídica de formalidad (requisito de forma en actos o negocios jurídicos), su fundamento normativo, autores doctrinarios relevantes, ejemplos de aplicación en casos concretos ni críticas al formalismo excesivo. Se requiere una búsqueda completamente distinta orientada a fuentes de derecho civil, procesal o teoría general del derecho."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición formalidad requisitos formales acto jurídico derecho",
+            "hits": 4
+          },
+          {
+            "consulta": "formalidad como condición validez contrato consecuencias incumplimiento formalidad",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica al formalismo jurídico exceso formalidad acceso justicia",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 24
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 24
+  },
+  "Intención comunicativa": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "intención comunicativa definición pragmática Grice Austin Searle actos de habla",
+            "intención comunicativa en la escritura académica propósito del autor texto",
+            "límites críticas intención comunicativa interpretación textual hermenéutica"
+          ],
+          "nota": "Las citas recuperadas son periféricas y de baja similitud (ninguna supera 0.09). Ninguna aborda directamente el concepto de 'intención comunicativa': no hay definición explícita, no se identifica un autor de referencia (Grice, Austin, Searle, etc.), no existe fundamento teórico-pragmático, ni ejemplo aplicado, ni crítica o límite del concepto. La única mención tangencial aparece en la última cita ('reconocer la intención del autor del texto'), pero sin desarrollo conceptual. Se requiere una segunda ronda de búsqueda con consultas más específicas orientadas a la pragmática lingüística y la teoría de los actos de habla."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "intención comunicativa definición pragmática Grice Austin Searle actos de habla",
+            "hits": 4
+          },
+          {
+            "consulta": "intención comunicativa en la escritura académica propósito del autor texto",
+            "hits": 4
+          },
+          {
+            "consulta": "límites críticas intención comunicativa interpretación textual hermenéutica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 18,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "intención comunicativa definición propósito del hablante pragmática lingüística",
+            "Grice máximas conversacionales intención comunicativa inferencia pragmática",
+            "intención comunicativa escritura académica función retórica género discursivo"
+          ],
+          "nota": "Las citas recuperadas en esta ronda son completamente inadecuadas para el concepto evaluado. Ninguna de ellas aborda la 'intención comunicativa' de manera directa ni teórica: se trata de fragmentos sobre escritura académica universitaria, competencia comunicativa general y modelos de composición escrita, sin ninguna referencia específica al concepto pragmático-lingüístico de intención comunicativa. La ficha carece en su totalidad de: (1) una definición técnica del término, (2) el fundamento teórico —especialmente desde la pragmática de Grice, Searle o Austin—, (3) autores canónicos asociados al concepto, (4) ejemplos concretos de aplicación y (5) críticas o límites al concepto. Se recomienda reformular las consultas de búsqueda apuntando explícitamente a la pragmática lingüística y a la teoría de los actos de habla."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "intención comunicativa definición propósito del hablante pragmática lingüística",
+            "hits": 4
+          },
+          {
+            "consulta": "Grice máximas conversacionales intención comunicativa inferencia pragmática",
+            "hits": 4
+          },
+          {
+            "consulta": "intención comunicativa escritura académica función retórica género discursivo",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 25
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 25
+  }
+}

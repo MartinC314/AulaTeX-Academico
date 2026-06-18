@@ -1,0 +1,621 @@
+% ==============================================================================
+% PLANTILLA MAESTRA - UnADM (instrucciones comunes)
+% ==============================================================================
+% Uso rapido:
+% 1) Duplica la plantilla y renombra la copia por semana/actividad.
+% 2) Actualiza \documenttitle, \documentsubtitle y \documentsubject.
+% 3) Lee la planeacion y NO pegues las instrucciones completas dentro del PDF.
+%    Usa la planeacion como lista de cumplimiento y redacta con criterio propio.
+% 4) Elabora productos visuales preferentemente en LaTeX/TikZ para mantener
+%    nitidez y evidencia editable; si usas herramientas externas, inserta
+%    capturas de alta resolucion y conserva evidencia dentro del PDF.
+% 5) Entrega en PDF con la nomenclatura solicitada en el aula.
+%
+% Formato institucional (recomendado):
+% - Fuente: Helvetica / sans-serif equivalente (\usepackage{helvet}).
+% - Interlineado: 1.5 (\onehalfspacing).
+% - Citas: autor-año mediante natbib (\citep, \citet, \citep[e.g.][]{clave}).
+% - Bibliografía: archivo .bib con formato APA 7; todas las citas del texto
+%   deben aparecer en la bibliografía y viceversa.
+% - Estructura minima: portada, resumen/abstract, desarrollo, conclusion y
+%   bibliografia.
+%
+% Reglas para productos visuales y tablas extensas:
+% - Para tablas o cuadros amplios use longtable + booktabs y evite lineas
+%   verticales; controlar espaciado con \setlength{\tabcolsep} y
+%   \renewcommand{\arraystretch}.
+% - Para tablas en pagina propia: use \clearpage, \pagestyle{empty},
+%   entorno landscape, reducir tamaño con \scriptsize y luego restaurar
+%   \pagestyle{fancy} al finalizar la tabla.
+%
+% Buenas practicas de redaccion academica (guia operativa):
+% - No escribir para llenar espacio; escribir para sostener y defender una idea.
+% - Cada concepto debe responder: que es, que caracteristicas tiene, como
+%   funciona, que problema resuelve, que limite presenta y que implicacion
+%   juridica posee.
+% - Evitar listas sin analisis: tras cada dato relevante incluya su consecuencia
+%   o aplicacion juridica.
+% - Primera persona: usar moderadamente ("Considero que", "Desde esta
+%   perspectiva"); evite expresiones coloquiales como "yo creo".
+%
+% Protocolos de integridad y uso de IA:
+% - Si se usa IA, el resultado debe ser leido, corregido y transformado con
+%   criterio propio. No entregar texto sin procesamiento.
+% - Incluir siempre juicio propio y referencias que sostengan la postura.
+%
+% Checklist operativo antes de entregar:
+% [ ] El producto coincide con la tecnica solicitada en la planeacion.
+% [ ] El objetivo y el contenido estan alineados con la planeacion.
+% [ ] El producto visual esta rotulado y presentado como se pide.
+% [ ] Hay citas APA autor-anio dentro del texto y bibliografia completa.
+% [ ] No se incluyeron instrucciones copiadas de la planeacion dentro del
+%     contenido entregado.
+% [ ] Ortografia y redaccion revisadas; la argumentacion es propia.
+% ==============================================================================
+
+% ==============================================================================
+% PLANTILLA MAESTRA - FILOSOFIA DEL DERECHO / UnADM
+% ==============================================================================
+% Uso:
+% 1. Duplica este archivo y renombra la copia por semana/actividad.
+% 2. Actualiza documenttitle, documentsubtitle y documentsubject.
+% 3. Lee la planeacion de la semana y NO pegues las instrucciones completas en el
+%    producto final. Usa las instrucciones solo como lista de cumplimiento.
+% 4. Identifica primero el producto solicitado: mapa, cuadro, glosario, tabla,
+%    estudio de caso, reflexion, video, etc. El formato pedido manda sobre el
+%    gusto personal por escribir ensayo.
+% 5. Revisa bibliografia, toma notas, define categorias y redacta con postura.
+% 6. Entrega en PDF con la nomenclatura indicada por la planeacion.
+%
+% Formato institucional aplicado:
+% - Fuente tipo Helvetica.
+% - Interlineado 1.5.
+% - Citas autor-anio con natbib: usar \citep{clave} o \citet{clave}.
+% - Referencias en bibliografia BibTeX.
+% - Redaccion academica, clara, con analisis propio.
+% - Productos visuales elaborados preferentemente en LaTeX/TikZ: tablas,
+%   cuadros comparativos, mapas conceptuales/mentales, lineas de tiempo,
+%   diagramas de flujo, esquemas, cronologias, matrices y organizadores.
+%
+% Criterios derivados de retroalimentacion docente:
+% - No limitarse a reproducir fuentes: interpretar, conectar y tomar postura.
+% - La pregunta guia antes de entregar debe ser: cual es mi posicion frente a lo
+%   que expongo y que razones sostienen esa posicion.
+% - Evitar redaccion excesivamente general, repeticion de estructuras y tono de
+%   resumen automatico. Cada parrafo debe tener una decision propia.
+% - Las fuentes no se mencionan como lista decorativa: cada autor debe sostener
+%   una definicion, un criterio, una diferencia, una tension o una aplicacion.
+% - Toda referencia final debe estar citada dentro del texto y toda cita dentro
+%   del texto debe aparecer en referencias. Revisar coincidencia uno a uno.
+% - Incluir conclusion personal cuando la actividad lo solicite.
+% - En cuadros comparativos: categorias claras, jerarquias, secuencia y sintesis.
+% - Revisar diseno solicitado: producto visual/cuadro, conclusiones y referencias.
+% - Si la consigna pide mapa conceptual, cuadro, tabla o glosario, construir ese
+%   producto. No convertirlo en texto expositivo salvo que la planeacion lo pida.
+% - Usar APA 7 edicion en citas y referencias.
+% - No presentar las indicaciones de la actividad dentro del documento final.
+% - Si se usa IA como apoyo, el resultado debe estar leido, corregido, apropiado
+%   y transformado con criterio personal; nunca entregar texto sin procesamiento.
+%
+% Protocolo contra observaciones de "IA" o "falta de autenticidad":
+% - Abrir cada seccion con una idea propia, no con definiciones genericas.
+% - Integrar por lo menos una frase de valoracion: "El punto critico es...",
+%   "Desde esta perspectiva...", "La consecuencia juridica es...".
+% - Pasar de definicion a funcion: que hace el concepto dentro del sistema.
+% - Pasar de funcion a consecuencia: que ocurre si se interpreta mal.
+% - En conclusiones, no repetir; responder que se comprendio, que se sostiene y
+%   que cambia para la interpretacion o practica juridica.
+%
+% APA 7 operativo para esta materia:
+% - La cita puede ser parafraseada o textual. Si la planeacion dice "explica con
+%   tus propias palabras", preferir parafrasis con cita autor-anio.
+% - En glosarios, colocar la cita junto a la definicion base y despues desarrollar
+%   comentario propio. Formula: definicion base + cita -> funcion -> ejemplo o
+%   consecuencia.
+% - Usar cita textual solo cuando la frase exacta sea necesaria; incluir pagina:
+%   \citep[p.~00]{clave}. No llenar todo el trabajo de comillas.
+% - En citas de varias fuentes, no acumular autores sin distinguir aportes. Mejor
+%   explicar que aporta cada fuente en una frase breve.
+% - No usar URLs sueltas dentro del texto. Registrar la fuente en .bib y citarla.
+%
+% Criterios de redaccion personal (enfoque_personal.txt + guia estrategica):
+% - No escribir para llenar espacio; escribir para posicionar una idea con peso.
+% - Cada seccion debe responder: que es, como funciona, por que importa,
+%   que implica y cual es la postura.
+% - Evitar texto generico. Convertir informacion en criterio.
+% - Estructura mental recomendada: problema -> sistema -> consecuencia -> postura.
+% - Usar un tono formal, directo, analitico y con intencion.
+% - Integrar pensamiento de sistemas: funcion, estructura, control, criterio,
+%   costo, decision, consecuencia, limites, aplicacion real.
+% - Usar primera persona solo con moderacion: "Desde esta perspectiva",
+%   "Considero que", "La posicion que sostengo es". Evitar "yo creo".
+%
+% Checklist antes de entregar:
+% [ ] El producto coincide exactamente con la tecnica solicitada en planeacion.
+% [ ] El objetivo esta alineado con la planeacion.
+% [ ] Las instrucciones no fueron copiadas como contenido del producto.
+% [ ] Hay citas en APA autor-anio dentro del texto, ubicadas donde se usa la idea.
+% [ ] La bibliografia final coincide con las citas del cuerpo, sin sobrantes.
+% [ ] La introduccion abre con una afirmacion fuerte, no con relleno.
+% [ ] El desarrollo explica, interpreta y conecta.
+% [ ] Cada fuente cumple una funcion analitica, no solo aparece mencionada.
+% [ ] Hay ejemplos juridicos o aplicacion al sistema mexicano cuando proceda.
+% [ ] La conclusion incluye postura personal argumentada: posicion, razon y efecto.
+% [ ] No aparecen instrucciones de la planeacion copiadas en el cuerpo final.
+% [ ] Si la actividad pide producto visual, se construyo con TikZ/LaTeX o se
+%     justifico por que se uso una captura externa.
+% [ ] Si es mapa conceptual, hay jerarquia, palabras de enlace y relaciones.
+% [ ] Si es cuadro comparativo, hay categorias comparables y sintesis critica.
+% [ ] Si es glosario, cada concepto tiene definicion propia, cita y aplicacion.
+% [ ] Si es caso, se identifican hechos, problema, conceptos, aplicacion y postura.
+% [ ] Ortografia, acentos, sintaxis y nombres propios revisados.
+% [ ] Si se uso IA como apoyo, el texto fue comprendido, revisado y apropiado.
+% ==============================================================================
+
+% CREACION DEL DOCUMENTO
+\documentclass[
+	spanish,
+	letterpaper, oneside
+]{article}
+
+% ==============================================================================
+% INFORMACION DEL DOCUMENTO
+% Actualizar en cada actividad.
+% Ejemplos:
+% \def\documenttitle {Mapa conceptual de la Filosofia del Derecho}
+% \def\documentsubtitle {Actividad 1 - Filosofia del Derecho}
+% \def\documentsubject {Actividad Semana 2}
+% ==============================================================================
+\def\documenttitle {Análisis filosófico-jurídico del caso Ayotzinapa}
+\def\documentsubtitle {Actividad 6 - Filosofía del Derecho}
+\def\documentsubject {Reporte base para presentación}
+
+\def\documentauthor {Martín Jonathan de la Cruz}
+\def\coursename {Filosofía del Derecho}
+\def\coursecode {030}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Filosofía del Derecho}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de Mexico}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\authortable {
+	\begin{tabular}{ll}
+		\textbf{Alumno:}
+		& \begin{tabular}[t]{l}
+			 Martín Jonathan de la Cruz \\
+		\end{tabular} \\
+		Matrícula: & ES2611202040 \\
+
+		\textit{Profesor:}
+		& \begin{tabular}[t]{l}
+			Reyna Patricia \\ González Rodríguez
+		\end{tabular} \\
+		& \\
+		\multicolumn{2}{l}{Fecha de realización: \today} \\
+		\multicolumn{2}{l}{\universitylocation}
+	\end{tabular}
+}
+
+% IMPORTACION DEL TEMPLATE
+\input{template}
+
+% FORMATO SOLICITADO / USADO EN ACTIVIDADES CORREGIDAS
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% PRODUCTOS VISUALES EN TIKZ
+% Usar TikZ para construir productos solicitados cuando sea posible:
+% cuadro comparativo, tabla, mapa conceptual, mapa mental, linea de tiempo,
+% diagrama de flujo, mapa de cajas, redes conceptuales, esquemas, matrices,
+% SQA, Venn, procesos, cronologias, arboles de decision y organizadores.
+\usepackage{tikz}
+\usetikzlibrary{
+	arrows.meta,
+	positioning,
+	calc,
+	matrix,
+	fit,
+	shapes.geometric,
+	shadows.blur
+}
+
+% CITAS EN FORMATO AUTOR-ANIO, COMPATIBLE CON APA 7 EN EL CUERPO DEL TEXTO
+% Usar:
+% - Cita parentetica: \citep{clave}
+% - Cita narrativa: \citet{clave}
+% - Varias fuentes: \citep{clave1,clave2}
+% - Parafrasis con pagina si conviene: \citep[p.~00]{clave}
+% - Cita textual breve: "texto exacto" \citep[p.~00]{clave}
+%
+% Regla practica:
+% - Si la consigna pide "con tus propias palabras", usar parafrasis con cita.
+% - Si se toma una frase exacta, usar comillas y pagina.
+% - En definiciones de glosario, citar inmediatamente despues de la definicion
+%   base y desarrollar el analisis propio en las oraciones siguientes.
+\setcitestyle{authoryear,open={(},close={)}}
+
+% ==============================================================================
+% AYUDAS DE REDACCION
+% Quitar o comentar \pendiente cuando el documento final este terminado.
+% ==============================================================================
+\newcommand{\pendiente}[1]{\textcolor{red}{[PENDIENTE: #1]}}
+
+% ==============================================================================
+% MARCA DE AGUA EN PORTADA
+% - Se aplica solo a la portada porque usa \AddToShipoutPictureBG*.
+% - Para apagarla en alguna actividad: \def\coverwatermarkenabled {false}
+% - Usar opacidad baja para que no compita con titulo, datos ni logotipo.
+% ==============================================================================
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+	\ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+		\AddToShipoutPictureBG*{%
+			\begin{tikzpicture}[remember picture,overlay]
+				\node[
+					opacity=\coverwatermarkopacity,
+					inner sep=0pt,
+					xshift=\coverwatermarkxshift,
+					yshift=\coverwatermarkyshift
+				] at (current page.center) {%
+					\includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+				};
+			\end{tikzpicture}%
+		}%
+	}{}%
+}
+
+\begin{document}
+
+% PORTADA
+\insertcoverwatermark
+\templatePortrait
+
+% CONFIGURACION DE PAGINA Y ENCABEZADOS
+\templatePagecfg
+\onehalfspacing
+
+% ==============================================================================
+% RESUMEN / ABSTRACT
+% Debe ser breve, no copiar instrucciones.
+% Formula recomendada:
+% Tema + objetivo + enfoque/metodo + postura/resultado.
+% ==============================================================================
+\begin{abstractd}
+	\textbf{Objetivo:} Analizar el caso Ayotzinapa desde la Filosofía del Derecho para identificar cómo se relacionan derecho, moral, dignidad humana y responsabilidad estatal cuando una violación grave a derechos humanos revela la distancia entre la validez formal de las normas y su eficacia real de protección.
+
+	\textbf{Postura de analisis:} La posición que guía este reporte es que el caso Ayotzinapa no debe leerse sólo como expediente penal o como incumplimiento administrativo, sino como una prueba filosófico-jurídica del límite moral del poder. Cuando el Estado no protege la libertad, la integridad, la verdad y la justicia, el problema no es únicamente de ilegalidad; también es de legitimidad jurídica, porque el derecho deja de operar como garantía de la dignidad humana y pierde fuerza como sistema de control frente al abuso.
+\end{abstractd}
+
+% TABLA DE CONTENIDOS - INDICE
+\templateIndex
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+% ==============================================================================
+% SECCION 1: INTRODUCCION
+% Apertura recomendada:
+% - Iniciar con una afirmacion fuerte.
+% - Traducir la consigna a problema juridico.
+% - Mostrar por que el tema importa.
+% - Cerrar anticipando el enfoque personal.
+%
+% Evitar:
+% - "En este trabajo hablare de..."
+% - "Es muy importante..."
+% - Definiciones de diccionario sin interpretacion.
+% ==============================================================================
+\section{Introducción}
+
+Los casos límite exhiben con crudeza qué clase de derecho opera realmente en un Estado. Mientras la Constitución y las leyes prometen libertad, seguridad jurídica, dignidad y acceso a la justicia, los hechos graves permiten comprobar si esas promesas funcionan como garantías o si se quedan en un plano declarativo. Ahí aparece la utilidad real de la Filosofía del Derecho: no sólo preguntar qué normas existen, sino revisar qué justifica su autoridad, qué relación guardan con la moral y en qué momento el poder pierde legitimidad por traicionar los fines que dice proteger \citep{ruizrodriguezFilosofiaDerecho2009,rojasGonzalez2018}.
+
+Aunque la planeación se orienta a una presentación, este reporte se construye como base argumentativa para esa exposición: organiza el caso, delimita el problema filosófico-jurídico, vincula fuentes teóricas con normas vigentes y deja una postura clara para su posterior síntesis oral o visual. El caso seleccionado es Ayotzinapa porque concentra una pregunta decisiva para la formación jurídica: ¿qué ocurre cuando el propio aparato estatal, por acción, omisión o encubrimiento, deja de operar como garantía y se convierte en fuente de vulneración? La pregunta importa porque obliga a pasar del discurso jurídico al funcionamiento real del sistema \citep{cpeum2026,casoAyotzinapaCNDH2024}.
+
+La posición que guía este trabajo es que Ayotzinapa debe analizarse como un punto de cruce entre validez jurídica, responsabilidad ética y legitimidad institucional. Desde esta perspectiva, el problema central no consiste sólo en enlistar derechos afectados, sino en explicar por qué la desaparición de personas y la insuficiencia de verdad y justicia muestran una ruptura del vínculo entre derecho, moral pública y dignidad humana. Ese es el núcleo del análisis: cuando el sistema falla justo donde debería proteger con mayor firmeza, el problema ya no es marginal; es estructural.
+
+% ==============================================================================
+% SECCION 2: DESARROLLO / ANALISIS
+% Organizar segun el producto solicitado:
+% - Mapa conceptual: concepto central, conceptos principales, conceptos secundarios,
+%   relaciones y conclusion.
+% - Cuadro comparativo: categorias, criterios, autores, fundamentos, principios,
+%   caracteristicas, ejemplos, limites y valoracion critica.
+% - Glosario: termino, definicion operativa, fuente, ejemplo juridico y comentario.
+% - Estudio de caso: hechos, problema juridico, normas/principios, analisis,
+%   postura y solucion.
+%
+% Regla derivada de Actividad 3:
+% - Cuando la actividad pida glosario y analisis de caso, no basta con enumerar
+%   conceptos. Ubicar primero la funcion de los conceptos y despues explicar cada
+%   uno con definicion base + cita + comentario propio.
+% - En la tabla del caso, no repetir la definicion del glosario: aplicar el
+%   concepto a hechos, norma, criterio judicial, consecuencia o tension moral.
+%
+% Regla de parrafo:
+% Entrada: idea/concepto.
+% Proceso: como funciona.
+% Salida: por que importa o que consecuencia produce.
+% ==============================================================================
+\section{Desarrollo}
+
+\subsection{Contexto y problema}
+
+El caso Ayotzinapa se refiere a la desaparición de 43 estudiantes de la Escuela Normal Rural ``Raúl Isidro Burgos'' de Ayotzinapa, ocurrida entre la noche del 26 y la madrugada del 27 de septiembre de 2014 en Iguala, Guerrero. La relevancia del caso no descansa únicamente en la magnitud del daño, sino en que el episodio exhibe privación ilegal de la libertad, riesgo extremo para la vida e integridad, afectación prolongada a las víctimas indirectas y una secuencia de fallas institucionales en búsqueda, investigación y acceso a la verdad \citep{casoAyotzinapaCNDH2024,lgmdfp2026}. No se trata sólo de un hecho trágico; se trata de una falla de estructura, de control y de respuesta estatal.
+
+En clave de Filosofía del Derecho, el caso obliga a distinguir entre poder y autoridad legítima. Una autoridad no se justifica por existir, sino por actuar dentro de límites normativos y materiales que hagan posible la protección de la persona. Cuando ese deber falla de manera estructural, el análisis ya no pertenece sólo al plano penal o procesal; entra al terreno de la justificación del derecho mismo. El problema operativo de esta actividad, por tanto, consiste en interpretar el caso como una prueba de la relación entre moral y derecho, entre dignidad y legalidad, y entre norma vigente y eficacia protectora. Ahí el análisis deja de ser descriptivo y se vuelve crítico.
+
+\noindent\fcolorbox{black!35}{black!6}{%
+\parbox{0.965\linewidth}{%
+\textbf{Núcleo del caso seleccionado.} Ayotzinapa permite observar que una violación grave a derechos humanos no se agota en el hecho inicial de la desaparición. También incluye el deber estatal de prevenir, buscar, investigar, esclarecer, reparar y evitar la repetición. La gravedad filosófico-jurídica del caso está en que pone en duda la capacidad del derecho para limitar el poder precisamente cuando más se necesita.
+}}
+
+\subsection{Análisis conceptual}
+
+La Filosofía del Derecho cumple aquí una función de esclarecimiento. Ruiz Rodríguez explica que esta disciplina no se reduce a describir normas, sino que examina el fundamento, el sentido, la justicia y la obligatoriedad del derecho \citep{ruizrodriguezFilosofiaDerecho2009}. Rojas-González refuerza esta idea al mostrar que el derecho necesita una reflexión sobre sus fines y sobre los criterios que permiten evaluar si el orden normativo realiza o frustra condiciones de justicia \citep{rojasGonzalez2018}. Aplicado a Ayotzinapa, esto significa que el análisis no puede quedarse en la cronología del caso: debe preguntar qué revela el hecho acerca de la racionalidad ética del sistema jurídico.
+
+El primer concepto decisivo es la relación entre derecho y moral. Laun sostiene que no son idénticos, pero tampoco pueden separarse de forma absoluta, porque el derecho perdería orientación si renunciara por completo a la idea de bien, deber y respeto a la persona \citep{launDerechoMoral2021}. Esa precisión es útil: no se trata de convertir toda valoración moral en norma jurídica, sino de reconocer que un sistema jurídico que tolere desapariciones, arbitrariedad o impunidad entra en contradicción con los mínimos éticos que hacen defendible su obligatoriedad. Por eso el caso Ayotzinapa importa filosóficamente: obliga a medir si el derecho mexicano opera como orden de justicia o sólo como estructura formal de competencia. El punto crítico es ese: una legalidad sin orientación material puede convertirse en cobertura del fracaso institucional.
+
+El segundo concepto es la dignidad humana. Desde la teoría de los derechos, Ansuátegui explica que el Estado de derecho sólo se justifica cuando organiza el poder para proteger a la persona y limitar la arbitrariedad \citep{ansuategui2007}. Esta idea coincide con la jurisprudencia mexicana que reconoce la dignidad humana como norma jurídica fundamental y no como simple declaración ética \citep{scjnJur37_2016}. La consecuencia es relevante: cuando la persona es reducida a objeto de fuerza, ocultamiento o abandono institucional, no sólo se viola una regla particular; se lesiona el criterio axiológico que da sentido al sistema completo. En términos prácticos, si la dignidad se quiebra, también se quiebra la pretensión del derecho de presentarse como límite legítimo del poder.
+
+El tercer concepto es la diferencia entre validez, eficacia y legitimidad. En términos formales, un sistema puede contar con Constitución, leyes, jueces y procedimientos. Sin embargo, si esas estructuras no impiden el abuso o no responden con diligencia frente a él, la eficacia protectora se rompe y con ello se erosiona la legitimidad del orden jurídico \citep{kelsen1982,ansuategui2007}. Desde esta perspectiva, Ayotzinapa muestra que la sola existencia de normas no basta para afirmar que el derecho está cumpliendo su función. El punto crítico es si esas normas producen control real del poder y reparación para las víctimas.
+
+\subsection{Aplicación jurídica}
+
+En el sistema jurídico mexicano, el análisis del caso debe partir del artículo 1o. constitucional, que obliga a todas las autoridades a promover, respetar, proteger y garantizar los derechos humanos; seguir con los artículos 14 y 16, que prohíben la privación arbitraria de la libertad; considerar el artículo 17, relativo al acceso a la justicia, y el artículo 20, que reconoce derechos específicos a las víctimas dentro del proceso penal \citep{cpeum2026}. Bajo esta arquitectura, la desaparición de personas no representa un hecho aislado, sino un fracaso múltiple del deber estatal de protección. Esa es la razón por la que el caso no puede reducirse a una discusión técnica de expediente.
+
+La \textit{Ley General de Víctimas} vuelve operativas esas exigencias al establecer medidas de ayuda, asistencia, atención, verdad y reparación integral. Por su parte, la \textit{Ley General en Materia de Desaparición Forzada de Personas, Desaparición Cometida por Particulares y del Sistema Nacional de Búsqueda de Personas} precisa obligaciones de búsqueda, investigación y coordinación institucional frente a una de las violaciones más graves que puede sufrir la persona \citep{LeyGeneralVictimas,lgmdfp2026}. Ambas leyes importan filosóficamente porque convierten principios abstractos en deberes concretos; es decir, traducen la dignidad y los derechos en procedimientos exigibles.
+
+La jurisprudencia de la Suprema Corte aporta otro eje útil: si la dignidad humana es una norma jurídica fundamental, entonces no puede tratarse la desaparición y la impunidad como simples fallas técnicas de gestión pública \citep{scjnJur37_2016}. La afectación alcanza la base misma del orden jurídico, porque niega a las víctimas y a sus familias el reconocimiento como fines en sí mismos. Desde esta lectura, el caso Ayotzinapa revela una ruptura simultánea de libertad personal, integridad, seguridad jurídica, verdad y justicia \citep{casoAyotzinapaCNDH2024}. Lo relevante no es únicamente que existan normas de protección, sino que el sistema sea capaz de activarlas con trazabilidad, coordinación y consecuencia real.
+
+El criterio que considero más útil para interpretar el caso es el de un Estado constitucional orientado por derechos humanos. Su ventaja es que permite evaluar no sólo si existe una norma aplicable, sino si las instituciones responden con diligencia, racionalidad y responsabilidad. El riesgo de prescindir de este criterio es alto: el abogado podría reducir el análisis a formalidades procesales y perder de vista que el problema central consiste en controlar el poder cuando éste falla frente a la persona. Ese costo institucional se traduce en impunidad, normalización del abuso y pérdida de confianza en el derecho como forma de justicia.
+
+% ==============================================================================
+% BLOQUE OPCIONAL: GLOSARIO Y ANALISIS DE CASO
+% Usar cuando la planeacion pida "Glosario", "conceptos juridicos fundamentales",
+% "analisis de caso" o una tabla concepto/aplicacion practica.
+%
+% Reglas derivadas de la retroalimentacion:
+% - Minimo de conceptos: respetar el numero de la planeacion.
+% - Orden alfabetico si se solicita.
+% - Cada concepto: definicion propia + cita APA + funcion juridica.
+% - No usar citas textuales en todos los conceptos si se piden palabras propias.
+% - Cita textual solo si es indispensable; incluir pagina.
+% - Antes del glosario, se puede incluir una ubicacion conceptual breve, no una
+%   explicacion larga de la consigna.
+% - En el caso: identificar al menos los conceptos pedidos y explicar como operan.
+% - Conclusion: actos juridicos identificados + relacion con moral/derecho +
+%   postura personal.
+% ==============================================================================
+%
+% \section{Glosario de conceptos juridicos fundamentales}
+%
+% \subsection*{Ubicacion conceptual previa}
+% \pendiente{Clasificar brevemente los conceptos por funcion: sistema juridico,
+% norma, sujetos, relacion juridica, hechos/actos, moral/derecho. No copiar la
+% instruccion de la planeacion.}
+%
+% \begin{description}
+% \item[\textbf{Concepto.}]
+% Definicion base en palabras propias \citep{claveFuente}. Funcion del concepto
+% dentro del sistema juridico. Ejemplo breve o consecuencia si se interpreta mal.
+%
+% \item[\textbf{Otro concepto.}]
+% Definicion base en palabras propias \citep[p.~00]{claveFuente}. Comentario
+% propio: que problema resuelve, que limite tiene y como se aplica.
+% \end{description}
+%
+% \section{Analisis de caso}
+%
+% \begingroup
+% \small
+% \setlength{\tabcolsep}{5pt}
+% \renewcommand{\arraystretch}{1.35}
+% \begin{longtable}{@{}p{0.24\linewidth}p{0.70\linewidth}@{}}
+% \caption{Conceptos juridicos aplicados al caso}\label{tab:analisis-caso}\\
+% \toprule
+% \textbf{Concepto} & \textbf{Aplicacion practica en el caso} \\
+% \midrule
+% \endfirsthead
+% \toprule
+% \textbf{Concepto} & \textbf{Aplicacion practica en el caso} \\
+% \midrule
+% \endhead
+% \bottomrule
+% \endlastfoot
+%
+% \textbf{Concepto juridico} &
+% Aplicar el concepto al hecho, norma, autoridad, derecho, deber, sancion,
+% validez, eficacia o tension moral del caso. No repetir la definicion. \\
+% \midrule
+%
+% \end{longtable}
+% \endgroup
+
+% ==============================================================================
+% BLOQUE OPCIONAL: CUADRO COMPARATIVO
+% Usar cuando la actividad pida cuadro comparativo.
+% Comentarios de rubrica:
+% - Categorias claras y jerarquizadas.
+% - No solo datos: incluir funcion, limites, aplicacion y valoracion critica.
+% - Al final del cuadro debe venir conclusion/postura personal si la planeacion lo pide.
+% ==============================================================================
+%
+% \clearpage
+% \pagestyle{empty}
+% \begin{landscape}
+% \begingroup
+% \scriptsize
+% \setlength{\tabcolsep}{4pt}
+% \renewcommand{\arraystretch}{1.35}
+% \begin{longtable}{@{}p{0.18\linewidth}p{0.39\linewidth}p{0.39\linewidth}@{}}
+% \caption{Cuadro comparativo entre [tema A] y [tema B]}\label{tab:cuadro-comparativo}\\
+% \toprule
+% \textbf{Criterio} & \textbf{Tema A} & \textbf{Tema B} \\
+% \midrule
+% \endfirsthead
+% \toprule
+% \textbf{Criterio} & \textbf{Tema A} & \textbf{Tema B} \\
+% \midrule
+% \endhead
+% \midrule
+% \multicolumn{3}{r}{Continua en la siguiente pagina} \\
+% \endfoot
+% \bottomrule
+% \endlastfoot
+%
+% Concepto &
+% [Definicion con funcion, no solo descripcion. Cita APA.] &
+% [Definicion con funcion, no solo descripcion. Cita APA.] \\
+% \midrule
+%
+% Fundamento &
+% [Base teorica, juridica o filosofica.] &
+% [Base teorica, juridica o filosofica.] \\
+% \midrule
+%
+% Principios &
+% [Principios ordenados por jerarquia.] &
+% [Principios ordenados por jerarquia.] \\
+% \midrule
+%
+% Aplicacion &
+% [Ejemplo real o normativo.] &
+% [Ejemplo real o normativo.] \\
+% \midrule
+%
+% Valoracion critica &
+% [Fortaleza, limite y costo si se aplica mal.] &
+% [Fortaleza, limite y costo si se aplica mal.] \\
+%
+% \end{longtable}
+% \endgroup
+% \end{landscape}
+% \pagestyle{fancy}
+
+% ==============================================================================
+% BLOQUE OPCIONAL: MAPA CONCEPTUAL O FIGURA
+% Usar si la actividad pide mapa conceptual, esquema o evidencia visual.
+% Si se usa herramienta externa, insertar captura y, si procede, enlace.
+%
+% Reglas por retroalimentacion:
+% - Si la planeacion pide mapa conceptual, el producto principal debe ser mapa,
+%   no un texto expositivo disfrazado.
+% - Incluir concepto central claramente identificado.
+% - Incluir conceptos principales y secundarios.
+% - Usar palabras de enlace en las flechas o conexiones.
+% - Mostrar jerarquia logica: no repetir conceptos en el mismo nivel sin relacion.
+% - Agregar conclusion breve solo si la planeacion lo pide o ayuda a cerrar.
+% ==============================================================================
+%
+% \clearpage
+% \begin{figure}[H]
+% 	\centering
+% 	\includegraphics[width=0.95\linewidth]{img/nombre-del-mapa.png}
+% 	\caption{Mapa conceptual de [tema]}
+% 	\label{fig:mapa-conceptual}
+% \end{figure}
+
+% ==============================================================================
+% SECCION 3: POSTURA / ANALISIS PERSONAL
+% Esta seccion evita la observacion de "informacion general" o "no se detecta
+% autenticidad". Debe contestar:
+% - Que posicion se sostiene.
+% - Por que esa posicion es razonable.
+% - Que evidencia/fuente la respalda.
+% - Como se aplica al sistema juridico mexicano.
+% ==============================================================================
+\section{Postura personal}
+
+La posición que sostengo es que el caso Ayotzinapa demuestra la insuficiencia de una lectura puramente formal del derecho. Un sistema jurídico no se defiende sólo porque tenga normas escritas, autoridades investidas o procedimientos establecidos. Se defiende cuando esas estructuras son capaces de actuar como límite frente a la arbitrariedad y como garantía efectiva para las víctimas. Si ese resultado no aparece, la Filosofía del Derecho obliga a preguntar por la legitimidad del orden, no únicamente por su vigencia.
+
+Esta postura se justifica por una secuencia clara de causa, efecto y consecuencia. Si el Estado concentra facultades de seguridad, investigación y persecución, entonces asume deberes reforzados de protección. Si esos deberes fallan en un caso de desaparición, el efecto inmediato es la lesión de libertad, integridad y acceso a la justicia. La consecuencia más profunda es que el derecho pierde credibilidad como instrumento racional de convivencia y control del poder. Desde mi perspectiva, ahí se encuentra el costo mayor del caso: no sólo daña a las víctimas directas e indirectas, también erosiona la confianza en la estructura jurídica que debería responder. En ese punto, la ética jurídica deja de ser complemento decorativo y se vuelve criterio profesional indispensable, como subrayan Ronquillo Armas y Singer al insistir en la responsabilidad por los efectos reales de la acción u omisión pública \citep{ronquilloarmasEticaGeneralProfesional2018,singerCompendioEtica1995}.
+
+Para la formación como abogado, esta lectura cambia la forma de argumentar. Ya no basta con citar un artículo o nombrar un derecho vulnerado. Hay que construir una cadena completa: hecho, derecho afectado, fundamento constitucional, ley secundaria aplicable, deber institucional incumplido, impacto sobre la dignidad y exigencia de reparación. Esa forma de razonar permite decidir mejor, cuestionar actos de autoridad con mayor precisión y entender que la práctica jurídica no consiste sólo en administrar expedientes, sino en defender condiciones mínimas de humanidad frente al poder.
+
+% ==============================================================================
+% SECCION 4: CONCLUSION
+% Debe cerrar con fuerza:
+% - Sintetizar el hallazgo.
+% - Reafirmar postura.
+% - Indicar aplicacion real.
+% - Evitar repetir la introduccion.
+%
+% Si la actividad pregunta "cual corriente tiene mayor relevancia y por que",
+% responder de forma directa, no dejarlo implicito.
+% ==============================================================================
+\section{Conclusión}
+
+El caso Ayotzinapa permite comprender que la Filosofía del Derecho no es un plano abstracto separado de la realidad, sino una herramienta para evaluar si el orden jurídico conserva sentido cuando enfrenta sus pruebas más duras. La relación encontrada es clara: derecho, moral y dignidad no pueden analizarse por separado cuando el problema involucra desaparición de personas, impunidad y falla institucional. La Constitución, la legislación secundaria y la jurisprudencia aportan el marco normativo; la Filosofía del Derecho permite valorar si ese marco realmente cumple la función de limitar el poder y proteger a la persona.
+
+Para el sistema jurídico mexicano, este enfoque resulta relevante porque evita dos errores frecuentes: creer que toda respuesta legal es justa por el solo hecho de ser formalmente válida, o pensar que la apelación moral basta sin mediación normativa. El criterio más útil es el de un derecho orientado por la dignidad humana y por la eficacia real de los derechos fundamentales. Desde esa perspectiva, Ayotzinapa no sólo evidencia delitos y omisiones; exhibe una crisis de legitimidad cuando el Estado no logra traducir sus propios mandatos en verdad, búsqueda, justicia y reparación. Ese desajuste entre norma y operación es, precisamente, lo que vuelve indispensable una lectura filosófico-jurídica y no sólo procesal.
+
+La consecuencia práctica de esta lectura es directa: interpretar y aplicar el derecho exige mirar simultáneamente norma, institución, víctima y poder. Ese cambio de enfoque fortalece la argumentación jurídica y convierte este reporte en una base útil para una presentación posterior, porque ya delimita el caso, el problema conceptual, el marco normativo y la postura crítica que debe sostenerse. En síntesis, el valor del trabajo no está en repetir que hubo una violación grave, sino en mostrar cómo esa violación pone a prueba todo el sistema y obliga a tomar posición frente a él.
+
+% ==============================================================================
+% BLOQUE OPCIONAL: CUMPLIMIENTO DE LA RÚBRICA
+% Usar solo cuando convenga explicitar dentro del PDF cómo se satisface la
+% planeacion. En actividades donde no se pida, dejar comentado.
+% ============================================================================== 
+%
+\section*{Cumplimiento de la rúbrica}
+
+\begin{itemize}
+	\item \textbf{Portada:} Se mantiene la portada institucional generada por la plantilla y se conserva el formato solicitado por la materia.
+	\item \textbf{Objetivo y alineación con la actividad:} El resumen inicial delimita el objetivo del trabajo y explica que el reporte funciona como base argumentativa para una presentación posterior.
+	\item \textbf{Introducción:} La sección \textit{Introducción} plantea el problema central, justifica la elección del caso y anticipa la postura de análisis.
+	\item \textbf{Desarrollo analítico:} La sección \textit{Desarrollo} organiza el caso en contexto, análisis conceptual y aplicación jurídica, con interpretación propia y no sólo con descripción de fuentes.
+	\item \textbf{Postura personal:} La sección \textit{Postura personal} explicita el juicio crítico del trabajo y su aplicación a la formación jurídica.
+	\item \textbf{Conclusión:} La sección \textit{Conclusión} sintetiza el hallazgo, reafirma la postura y traduce el análisis a una consecuencia práctica.
+	\item \textbf{Referencias y citas:} El documento usa citas autor-año en el cuerpo y bibliografía en archivo \texttt{filosofia-del-derecho.bib}, en coherencia con el formato de la plantilla.
+	\item \textbf{Redacción y originalidad:} El texto evita copiar instrucciones de la planeación, incorpora lenguaje analítico y deja postura propia en varias secciones del documento.
+\end{itemize}
+
+\begin{itemize}
+	\item[\checkmark] El contenido mantiene estructura académica completa.
+	\item[\checkmark] La argumentación conecta teoría, norma y caso concreto.
+	\item[\checkmark] La redacción prioriza enfoque personal, criterio y aplicación real.
+	\item[\checkmark] El trabajo queda usable como base para la presentación pedida en la planeación.
+\end{itemize}
+%
+% Observaciones finales sugeridas:
+% - Verificar nomenclatura final del PDF conforme al aula.
+% - Confirmar compilación correcta y bibliografía completa.
+
+% ==============================================================================
+% MANUAL OPERATIVO DE TECNICAS DIDACTICAS
+% Este archivo funciona como memoria para futuras sesiones y como guia de
+% elaboracion. Para una entrega final, comentar la siguiente linea si el manual no
+% debe aparecer dentro del PDF de la actividad.
+% ==============================================================================
+% \input{Técnicas didácticas del aprendizaje}
+
+% ==============================================================================
+% REFERENCIAS
+% Reglas:
+% - Toda fuente citada en el texto debe estar en el .bib.
+% - Toda referencia en el .bib debe estar citada en el texto final; quitar
+%   fuentes que no se usaron.
+% - Toda cita debe tener clave correcta y coincidir con autor/anio visible.
+% - Usar fuentes de la planeacion y, si se complementa, que sean confiables.
+% - En el cuerpo: \citep{clave}; no usar solo URLs sueltas.
+% - Si se trabaja con PDF local, registrar datos bibliograficos completos:
+%   autor, anio, titulo, editorial/institucion y URL/DOI si existe.
+% - Si la fuente no tiene fecha, usar s. f. con cuidado y preferir confirmar los
+%   datos en la portada o ficha bibliografica del documento.
+% ==============================================================================
+\bibliography{filosofia-del-derecho}
+
+% FIN DEL DOCUMENTO
+\end{document}

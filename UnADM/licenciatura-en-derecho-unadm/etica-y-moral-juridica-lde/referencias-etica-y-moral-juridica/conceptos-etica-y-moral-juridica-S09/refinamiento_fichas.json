@@ -1,0 +1,983 @@
+{
+  "Constitución Política de los Estados Unidos Mexicanos": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 3,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "Constitución Política de los Estados Unidos Mexicanos artículos fundamentales estructura norma suprema",
+            "supremacía constitucional México principios constitucionales derechos humanos reforma constitucional",
+            "críticas límites Constitución mexicana 1917 reformas constitucionales exceso poder ejecutivo"
+          ],
+          "nota": "Las tres citas recuperadas son completamente irrelevantes para el concepto evaluado. Ninguna aborda la Constitución Política de los Estados Unidos Mexicanos: la primera cita refiere a la Constitución ecuatoriana de 2008, la segunda trata sobre ética y política en Platón, y la tercera versa sobre el pragmatismo filosófico anglosajón. La similitud semántica es extremadamente baja en los tres casos (máximo 0.1647), lo que indica que la base documental disponible carece de fuentes pertinentes sobre el tema. Se requieren búsquedas específicas que recuperen contenido sobre la estructura, principios, historia y críticas de la Constitución mexicana de 1917."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Constitución Política de los Estados Unidos Mexicanos artículos fundamentales estructura norma suprema",
+            "hits": 1
+          },
+          {
+            "consulta": "supremacía constitucional México principios constitucionales derechos humanos reforma constitucional",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas límites Constitución mexicana 1917 reformas constitucionales exceso poder ejecutivo",
+            "hits": 1
+          }
+        ],
+        "hits_finales": 8
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "Constitución Política de los Estados Unidos Mexicanos artículos fundamentales supremacía constitucional",
+            "principios constitucionales mexicanos derechos humanos garantías individuales reforma 2011",
+            "críticas reforma constitucional México límites control constitucional poder judicial"
+          ],
+          "nota": "Las citas recuperadas no guardan relación sustantiva con la Constitución Política de los Estados Unidos Mexicanos. Los fragmentos hacen referencia a la Constitución del Ecuador, a bibliografías de ética filosófica y a filosofía moral, sin aportar ningún elemento relevante sobre la norma fundamental mexicana. No se cubre ninguno de los cinco criterios evaluados: no hay definición del concepto, no se expone su fundamento jurídico-político, no se identifica autor o doctrinario mexicano relevante, no se presenta ejemplo o aplicación práctica, ni tampoco crítica o límite alguno. Se requiere una búsqueda completamente reorientada hacia fuentes de derecho constitucional mexicano."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Constitución Política de los Estados Unidos Mexicanos artículos fundamentales supremacía constitucional",
+            "hits": 3
+          },
+          {
+            "consulta": "principios constitucionales mexicanos derechos humanos garantías individuales reforma 2011",
+            "hits": 3
+          },
+          {
+            "consulta": "críticas reforma constitucional México límites control constitucional poder judicial",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 11
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 11
+  },
+  "Derecho mexicano": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 5,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "sistema jurídico mexicano definición fuentes derecho positivo México",
+            "historia derecho mexicano constitución 1917 fundamento legal orden normativo",
+            "críticas al derecho mexicano acceso justicia corrupción aplicación ley"
+          ],
+          "nota": "Las citas recuperadas no guardan relación sustantiva con el concepto 'Derecho mexicano'. Los fragmentos abordan temas de filosofía del derecho, ética, valores y libertad jurídica en términos abstractos y generales, sin ninguna referencia específica al sistema jurídico de México, sus fuentes, instituciones, historia, estructura normativa ni sus críticas particulares. La similitud semántica es extremadamente baja (máximo 0.14), lo que confirma que las fuentes consultadas no contienen información relevante sobre este concepto. Se requieren búsquedas en fuentes especializadas en derecho constitucional mexicano, teoría del Estado mexicano y análisis crítico del sistema de justicia en México."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "sistema jurídico mexicano definición fuentes derecho positivo México",
+            "hits": 4
+          },
+          {
+            "consulta": "historia derecho mexicano constitución 1917 fundamento legal orden normativo",
+            "hits": 3
+          },
+          {
+            "consulta": "críticas al derecho mexicano acceso justicia corrupción aplicación ley",
+            "hits": 1
+          }
+        ],
+        "hits_finales": 13
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 13,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "sistema jurídico mexicano características fuentes del derecho México",
+            "historia y evolución del derecho mexicano constitución codificación",
+            "críticas al derecho mexicano corrupción acceso a la justicia Estado de derecho"
+          ],
+          "nota": "Las citas recuperadas no cubren ninguno de los elementos requeridos para una ficha conceptual sobre 'Derecho mexicano'. Los fragmentos provienen de textos de ética y filosofía del derecho general (García Máynez, Martínez Huerta) y abordan temas como el jusnaturalismo, la libertad anarquista o la filosofía de los valores, sin ninguna referencia específica al sistema jurídico mexicano, sus fuentes, instituciones, historia, autores representativos ni sus críticas particulares. La similitud semántica es muy baja (máximo 0.17), lo que indica que el corpus disponible no contiene material adecuado para este concepto. Se requieren búsquedas orientadas específicamente al derecho positivo mexicano, su evolución histórica y sus limitaciones estructurales."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "sistema jurídico mexicano características fuentes del derecho México",
+            "hits": 4
+          },
+          {
+            "consulta": "historia y evolución del derecho mexicano constitución codificación",
+            "hits": 3
+          },
+          {
+            "consulta": "críticas al derecho mexicano corrupción acceso a la justicia Estado de derecho",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 18
+  },
+  "Derechos humanos": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 5,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición y concepto de derechos humanos universalidad inalienabilidad dignidad persona",
+            "fundamento filosófico derechos humanos iusnaturalismo positivismo Declaración Universal 1948",
+            "críticas y límites de los derechos humanos relativismo cultural universalismo tensiones"
+          ],
+          "nota": "Las citas recuperadas son extremadamente superficiales: los derechos humanos aparecen apenas mencionados de pasada en listados temáticos más amplios, sin que ninguna cita aporte definición, fundamento teórico, autor de referencia, ejemplo concreto de aplicación ni crítica o límite del concepto. La similitud semántica muy baja (máxima 0.22) confirma que los documentos disponibles no contienen desarrollo sustantivo sobre este concepto. Se requiere una nueva ronda de búsqueda con consultas mucho más específicas orientadas a los cinco elementos de cobertura faltantes."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y concepto de derechos humanos universalidad inalienabilidad dignidad persona",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento filosófico derechos humanos iusnaturalismo positivismo Declaración Universal 1948",
+            "hits": 3
+          },
+          {
+            "consulta": "críticas y límites de los derechos humanos relativismo cultural universalismo tensiones",
+            "hits": 3
+          }
+        ],
+        "hits_finales": 7
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 7,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición y clasificación de derechos humanos universalidad inalienabilidad",
+            "fundamento filosófico derechos humanos dignidad persona Kant Nino Bobbio",
+            "críticas a los derechos humanos relativismo cultural universalismo límites"
+          ],
+          "nota": "Las citas recuperadas son de calidad muy baja (similitudes entre 0.09 y 0.22) y ninguna aborda directamente el concepto de derechos humanos. Se limitan a menciones tangenciales dentro de contextos de ética profesional o utilitarismo. No hay definición formal del concepto, ni fundamento iusfilosófico, ni autor canónico (como Bobbio, Ferrajoli o Nino), ni ejemplo concreto de aplicación jurídica, ni crítica o límite del concepto. Se requiere una nueva búsqueda enfocada específicamente en los elementos estructurales del concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y clasificación de derechos humanos universalidad inalienabilidad",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento filosófico derechos humanos dignidad persona Kant Nino Bobbio",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas a los derechos humanos relativismo cultural universalismo límites",
+            "hits": 3
+          }
+        ],
+        "hits_finales": 8
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 8
+  },
+  "Dignidad humana": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 2,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "critica"
+          ],
+          "consultas": [
+            "dignidad humana definición Kant imperativo categórico fin en sí mismo",
+            "fundamento filosófico dignidad humana derechos humanos Alexy Habermas",
+            "límites críticas concepto dignidad humana relativismo cultural bioética"
+          ],
+          "nota": "Las dos citas recuperadas son marginales y de baja similitud. La primera apenas menciona la dignidad humana como referencia negativa dentro de un ejemplo histórico (código de la nobleza), y la segunda aporta un matiz interesante sobre dolor y muerte, pero sin definir ni fundamentar el concepto. No hay definición canónica, ningún autor principal tratado (p. ej. Kant, Pico della Mirandola, Alexy), ni fundamento iusnaturalista o constitucional, ni crítica o límite teórico. Se requieren al menos tres rondas adicionales de búsqueda orientadas a cubrir los elementos faltantes."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "dignidad humana definición Kant imperativo categórico fin en sí mismo",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento filosófico dignidad humana derechos humanos Alexy Habermas",
+            "hits": 4
+          },
+          {
+            "consulta": "límites críticas concepto dignidad humana relativismo cultural bioética",
+            "hits": 1
+          }
+        ],
+        "hits_finales": 9
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 9,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "critica"
+          ],
+          "consultas": [
+            "dignidad humana definición persona fin en sí misma Kant",
+            "fundamento filosófico dignidad humana derechos fundamentales",
+            "críticas al concepto de dignidad humana relativismo cultural o límites jurídicos"
+          ],
+          "nota": "La ficha actual ofrece una referencia valiosa de García Máynez que conecta dignidad con la distinción kantiana entre personas y cosas (fines vs. medios), y un ejemplo histórico de violación a la dignidad (derecho de pernada). Sin embargo, falta una definición explícita y autónoma del concepto, el fundamento filosófico o jurídico desarrollado con profundidad (más allá de la mención indirecta al imperativo categórico), y cualquier crítica o límite al concepto. Las citas de Ronquillo sobre el imperativo categórico son tangenciales y no abordan directamente la dignidad humana. Se requieren búsquedas más focalizadas para completar la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "dignidad humana definición persona fin en sí misma Kant",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento filosófico dignidad humana derechos fundamentales",
+            "hits": 3
+          },
+          {
+            "consulta": "críticas al concepto de dignidad humana relativismo cultural o límites jurídicos",
+            "hits": 1
+          }
+        ],
+        "hits_finales": 14
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 14
+  },
+  "Dimensión filosófica y jurídica": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 2,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "dimensión filosófica y jurídica del derecho definición iusnaturalismo iuspositivismo",
+            "relación entre filosofía del derecho y ciencia jurídica fundamentos epistemológicos autores Kelsen Dworkin Hart",
+            "críticas a la separación entre dimensión filosófica y dimensión jurídica del derecho ejemplos aplicación práctica"
+          ],
+          "nota": "Las citas recuperadas son completamente insuficientes para construir una ficha conceptual sobre 'Dimensión filosófica y jurídica'. Los fragmentos abordan tangencialmente la norma jurídica y la ética profesional, pero no desarrollan ningún elemento central del concepto evaluado: no hay definición del término, no se identifica fundamento teórico ni epistemológico, no se cita autor relevante de filosofía del derecho, no se ofrece ejemplo de aplicación y no se presenta ninguna crítica o límite conceptual. La similitud semántica extremadamente baja (0.10 y 0.09) confirma que los textos fuente no contienen material pertinente. Se requieren fuentes especializadas en filosofía del derecho y teoría jurídica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "dimensión filosófica y jurídica del derecho definición iusnaturalismo iuspositivismo",
+            "hits": 3
+          },
+          {
+            "consulta": "relación entre filosofía del derecho y ciencia jurídica fundamentos epistemológicos autores Kelsen Dworkin Hart",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas a la separación entre dimensión filosófica y dimensión jurídica del derecho ejemplos aplicación práctica",
+            "hits": 1
+          }
+        ],
+        "hits_finales": 7
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 7,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "dimensión filosófica del derecho iusnaturalismo iuspositivismo fundamento",
+            "filosofía jurídica concepto derecho Kelsen Hart Dworkin dimensión normativa",
+            "relación entre filosofía y derecho crítica límites dimensión jurídica ética"
+          ],
+          "nota": "Las citas recuperadas son de muy baja similitud semántica (todas por debajo de 0.11) y no abordan en absoluto el concepto de 'dimensión filosófica y jurídica' como tal. Los fragmentos tratan definiciones genéricas de norma, relaciones entre ética y filosofía, y nociones de libertad jurídica, pero ninguno desarrolla qué es la dimensión filosófica del derecho, cuál es su fundamento epistemológico u ontológico, qué autores la han tematizado sistemáticamente (p. ej., Radbruch, Kelsen, Hart, Dworkin), ni ejemplos concretos de su aplicación o sus límites críticos. Se requieren búsquedas mucho más específicas orientadas a la filosofía del derecho como disciplina y a sus debates centrales."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "dimensión filosófica del derecho iusnaturalismo iuspositivismo fundamento",
+            "hits": 0
+          },
+          {
+            "consulta": "filosofía jurídica concepto derecho Kelsen Hart Dworkin dimensión normativa",
+            "hits": 3
+          },
+          {
+            "consulta": "relación entre filosofía y derecho crítica límites dimensión jurídica ética",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 11
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 11
+  },
+  "Fundamento de los derechos humanos": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 5,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "fundamento filosófico de los derechos humanos dignidad humana iusnaturalismo",
+            "teorías del fundamento de los derechos humanos Nino Alexy Ferrajoli",
+            "críticas al fundamento de los derechos humanos relativismo cultural universalismo"
+          ],
+          "nota": "Las citas recuperadas son completamente inadecuadas para el concepto evaluado. Ninguna aborda el fundamento de los derechos humanos de manera sustantiva: se limitan a menciones tangenciales o de contexto (ética profesional, Singer en bioética, feminismo). No hay definición del concepto, ninguna teoría fundacional (iusnaturalista, iuspositivista, constructivista, etc.), ningún autor canónico tratado con profundidad (Kant, Rawls, Nino, Alexy, Ferrajoli), ningún ejemplo de aplicación de un fundamento específico y ninguna crítica relevante (relativismo cultural, escepticismo moral). Se requiere una nueva ronda de búsqueda con consultas mucho más específicas sobre el núcleo teórico-filosófico del concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "fundamento filosófico de los derechos humanos dignidad humana iusnaturalismo",
+            "hits": 4
+          },
+          {
+            "consulta": "teorías del fundamento de los derechos humanos Nino Alexy Ferrajoli",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al fundamento de los derechos humanos relativismo cultural universalismo",
+            "hits": 3
+          }
+        ],
+        "hits_finales": 8
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "fundamento filosófico de los derechos humanos dignidad iusnaturalismo positivismo",
+            "teorías del fundamento de los derechos humanos Nino Alexy Dworkin",
+            "críticas al fundamento de los derechos humanos relativismo cultural universalismo"
+          ],
+          "nota": "Las cinco citas recuperadas son completamente irrelevantes para el concepto evaluado. Ninguna aborda el fundamento de los derechos humanos de manera directa: se trata de menciones tangenciales o de índice sin desarrollo conceptual. La similitud semántica extremadamente baja (máx. 0.1457) confirma que el sistema de recuperación no encontró material pertinente en la fuente consultada. Es necesario buscar en fuentes especializadas en filosofía del derecho o teoría de los derechos humanos que aborden: (1) la definición del concepto de 'fundamento' aplicado a los derechos humanos, (2) las principales corrientes —iusnaturalismo, iuspositivismo, constructivismo moral—, (3) autores canónicos como Bobbio, Nino, Alexy o Rawls, (4) ejemplos de aplicación o casos concretos, y (5) las críticas desde el relativismo cultural, el escepticismo moral o el positivismo estricto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "fundamento filosófico de los derechos humanos dignidad iusnaturalismo positivismo",
+            "hits": 3
+          },
+          {
+            "consulta": "teorías del fundamento de los derechos humanos Nino Alexy Dworkin",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al fundamento de los derechos humanos relativismo cultural universalismo",
+            "hits": 3
+          }
+        ],
+        "hits_finales": 8
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 8
+  },
+  "Jurisprudencia de la SCJN": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 0,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición y concepto de jurisprudencia de la Suprema Corte de Justicia de la Nación México requisitos formación",
+            "fundamento constitucional y legal jurisprudencia SCJN Ley de Amparo artículos 215 216 217 obligatoriedad",
+            "críticas y límites jurisprudencia SCJN precedente judicial vinculatoriedad sistema mexicano doctrina"
+          ],
+          "nota": "No se recuperó ninguna cita en esta ronda. La ficha está completamente vacía. Es indispensable obtener fuentes que cubran los cinco elementos básicos: (1) definición técnica de jurisprudencia en el sistema jurídico mexicano, (2) su fundamento normativo (Constitución, Ley de Amparo), (3) autores o doctrinarios relevantes (e.g., Héctor Fix-Zamudio, Eduardo Ferrer Mac-Gregor), (4) ejemplos de jurisprudencias relevantes de la SCJN y su aplicación práctica, y (5) críticas sobre su obligatoriedad, rigidez o tensión con el control de convencionalidad."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y concepto de jurisprudencia de la Suprema Corte de Justicia de la Nación México requisitos formación",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento constitucional y legal jurisprudencia SCJN Ley de Amparo artículos 215 216 217 obligatoriedad",
+            "hits": 0
+          },
+          {
+            "consulta": "críticas y límites jurisprudencia SCJN precedente judicial vinculatoriedad sistema mexicano doctrina",
+            "hits": 0
+          }
+        ],
+        "hits_finales": 4
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 4,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "jurisprudencia SCJN obligatoriedad tesis criterios Suprema Corte de Justicia de la Nación",
+            "formación jurisprudencia mexicana reiteración contradicción tesis Ley de Amparo",
+            "límites jurisprudencia SCJN críticas vinculatoriedad tribunales inferiores México"
+          ],
+          "nota": "Las citas recuperadas son completamente irrelevantes para el concepto evaluado. Provienen de un texto de ética filosófica y no contienen ningún elemento relacionado con la jurisprudencia de la SCJN: ni su definición técnico-jurídica, ni su fundamento normativo (Ley de Amparo, artículos 215-228), ni autores especializados en derecho procesal o constitucional mexicano, ni ejemplos de tesis jurisprudenciales concretas, ni críticas sobre su alcance o límites. La similitud semántica extremadamente baja (máximo 0.1186) confirma que el sistema de recuperación no encontró fuentes pertinentes. Se requieren consultas orientadas específicamente al derecho constitucional mexicano y al sistema de fuentes del derecho en México."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "jurisprudencia SCJN obligatoriedad tesis criterios Suprema Corte de Justicia de la Nación",
+            "hits": 4
+          },
+          {
+            "consulta": "formación jurisprudencia mexicana reiteración contradicción tesis Ley de Amparo",
+            "hits": 0
+          },
+          {
+            "consulta": "límites jurisprudencia SCJN críticas vinculatoriedad tribunales inferiores México",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 10
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 10
+  },
+  "Ordenamiento jurídico": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 1,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "ordenamiento jurídico definición estructura normas Kelsen Hart",
+            "concepto ordenamiento jurídico jerarquía normativa validez coherencia plenitud",
+            "ordenamiento jurídico críticas antinomias lagunas límites Bobbio"
+          ],
+          "nota": "La única cita recuperada es completamente irrelevante para el concepto de 'ordenamiento jurídico'. Trata sobre deontología profesional y la relación entre normas jurídicas y morales, sin abordar en ningún momento la definición, estructura, fundamento teórico ni características del ordenamiento jurídico como sistema normativo. Ninguno de los cinco elementos evaluados está cubierto. Se requieren búsquedas específicas que apunten a autores iusfilosóficos clave como Kelsen (pirámide normativa), Hart (reglas primarias y secundarias) o Bobbio (unidad, coherencia y plenitud del ordenamiento), así como ejemplos de aplicación concreta y críticas al concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "ordenamiento jurídico definición estructura normas Kelsen Hart",
+            "hits": 2
+          },
+          {
+            "consulta": "concepto ordenamiento jurídico jerarquía normativa validez coherencia plenitud",
+            "hits": 0
+          },
+          {
+            "consulta": "ordenamiento jurídico críticas antinomias lagunas límites Bobbio",
+            "hits": 0
+          }
+        ],
+        "hits_finales": 2
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 2,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "ordenamiento jurídico definición unidad coherencia plenitud Kelsen Hart Bobbio",
+            "ordenamiento jurídico sistema de normas jerarquía validez fundamento teoría del derecho",
+            "críticas al ordenamiento jurídico lagunas antinomias pluralismo jurídico límites"
+          ],
+          "nota": "Las citas recuperadas son completamente inadecuadas para el concepto de 'ordenamiento jurídico'. Ambas provienen de un texto de ética profesional y solo abordan la definición genérica de norma y la distinción entre normas jurídicas y morales, sin referirse en ningún momento al ordenamiento jurídico como sistema integrado. No se cubre ninguno de los cinco elementos evaluados: ni la definición técnica del ordenamiento como conjunto sistemático y jerarquizado de normas, ni su fundamento (norma hipotética fundamental, regla de reconocimiento), ni los autores canónicos (Kelsen, Hart, Bobbio, Romano), ni ejemplos de aplicación (pirámide normativa, control de constitucionalidad), ni críticas o límites (lagunas, antinomias, pluralismo jurídico). Se requiere una búsqueda completamente nueva orientada a fuentes de teoría general del derecho."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "ordenamiento jurídico definición unidad coherencia plenitud Kelsen Hart Bobbio",
+            "hits": 1
+          },
+          {
+            "consulta": "ordenamiento jurídico sistema de normas jerarquía validez fundamento teoría del derecho",
+            "hits": 3
+          },
+          {
+            "consulta": "críticas al ordenamiento jurídico lagunas antinomias pluralismo jurídico límites",
+            "hits": 3
+          }
+        ],
+        "hits_finales": 7
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 7
+  },
+  "Principio rector": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 3,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "principio rector definición función normativa derecho",
+            "principios rectores ordenamiento jurídico Dworkin Alexy reglas y principios",
+            "críticas principios rectores indeterminación aplicación judicial límites"
+          ],
+          "nota": "Las tres citas recuperadas son completamente irrelevantes para el concepto 'principio rector': dos hacen referencia a cargos de Rector universitario y una cita de Kant sobre el fin en sí mismo no aborda directamente la noción jurídica o filosófica de principio rector. Ninguna dimensión requerida (definición, fundamento, autor relevante, ejemplo de aplicación ni crítica) queda cubierta. Se requieren búsquedas orientadas específicamente a la teoría jurídica y filosófica del concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "principio rector definición función normativa derecho",
+            "hits": 3
+          },
+          {
+            "consulta": "principios rectores ordenamiento jurídico Dworkin Alexy reglas y principios",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas principios rectores indeterminación aplicación judicial límites",
+            "hits": 1
+          }
+        ],
+        "hits_finales": 10
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 10,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "principio rector definición función orientadora derecho",
+            "principios rectores diferencia norma regla jurídica Dworkin Alexy",
+            "principios rectores aplicación interpretación constitucional ejemplo límite"
+          ],
+          "nota": "Las citas recuperadas son marginalmente relevantes: mencionan 'principios rectores' solo de forma tangencial (actividad humana, valores éticos, norma moral) sin ofrecer una definición técnico-jurídica del concepto, ni su fundamento teórico, ni un autor canónico que lo desarrolle, ni ejemplos de aplicación concreta, ni críticas o límites reconocidos. La similitud promedio es muy baja (0.08–0.13), lo que confirma que el corpus consultado no cubre adecuadamente el concepto. Se requieren búsquedas orientadas a la teoría jurídica del derecho (Dworkin, Alexy, Esser) y a su aplicación en sistemas constitucionales o procesales concretos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "principio rector definición función orientadora derecho",
+            "hits": 2
+          },
+          {
+            "consulta": "principios rectores diferencia norma regla jurídica Dworkin Alexy",
+            "hits": 4
+          },
+          {
+            "consulta": "principios rectores aplicación interpretación constitucional ejemplo límite",
+            "hits": 1
+          }
+        ],
+        "hits_finales": 13
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 13
+  },
+  "Valor ético": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 5,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "critica"
+          ],
+          "consultas": [
+            "definición de valor ético axiología moral Scheler Hartmann",
+            "crítica relativismo valor ético objetividad subjetividad",
+            "concepto valor moral distinción valor ético jurídico García Maynez"
+          ],
+          "nota": "Las citas recuperadas ilustran bien el fundamento del valor ético (Kant, Scheler, Hartmann), ofrecen ejemplos concretos (caridad, amistad, justicia) y mencionan autores relevantes. Sin embargo, ninguna cita proporciona una definición clara y directa del concepto 'valor ético' como tal, sino que se infiere de contextos argumentativos. Tampoco aparece una crítica explícita al concepto ni un tratamiento de sus límites (p.ej., relativismo, inconmensurabilidad de valores, tensión entre valores éticos y jurídicos). La similitud semántica de las citas es baja (máximo 0.27), lo que sugiere que el corpus podría contener definiciones más precisas aún no recuperadas. Se recomienda una segunda ronda de búsqueda orientada específicamente a la definición formal del concepto y a las objeciones que recibe."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de valor ético axiología moral Scheler Hartmann",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica relativismo valor ético objetividad subjetividad",
+            "hits": 4
+          },
+          {
+            "consulta": "concepto valor moral distinción valor ético jurídico García Maynez",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 10
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 10,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "critica"
+          ],
+          "consultas": [
+            "definición de valor ético características objetividad universalidad García Maynez",
+            "crítica relativismo valores éticos subjetivismo estimativa García Maynez",
+            "jerarquía valores éticos tabla de valores Scheler Hartmann deber ser"
+          ],
+          "nota": "La ficha contiene referencias valiosas sobre el fundamento del valor ético (Kant, Scheler, Hartmann), un autor principal (García Maynez) y ejemplos concretos (caridad, amistad, justicia). Sin embargo, falta una definición explícita y precisa del concepto 'valor ético' como tal —las citas lo ilustran y contextualizan pero no lo definen directamente—. Asimismo, no aparece ninguna cita que recoja críticas o límites al concepto, como el relativismo axiológico o las tensiones entre objetivismo y subjetivismo en la estimativa moral. Las similitudes bajas (máx. 0.27) refuerzan que la recuperación semántica aún no ha capturado los fragmentos definitórios centrales."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de valor ético características objetividad universalidad García Maynez",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica relativismo valores éticos subjetivismo estimativa García Maynez",
+            "hits": 4
+          },
+          {
+            "consulta": "jerarquía valores éticos tabla de valores Scheler Hartmann deber ser",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 19
+  },
+  "Ética jurídica": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 5,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición ética jurídica relación entre derecho y moral",
+            "fundamentos filosóficos ética jurídica iusnaturalismo positivismo",
+            "críticas límites ética jurídica obediencia al derecho injusto"
+          ],
+          "nota": "Las citas recuperadas son de muy baja similitud (máximo 0.185) y no abordan de manera directa el concepto de 'ética jurídica'. Los fragmentos tratan tangencialmente la norma jurídica, la responsabilidad ética profesional y los códigos de ética, pero ninguno ofrece una definición explícita de ética jurídica como disciplina, ni expone sus fundamentos teóricos, ni identifica autores canónicos del área (p. ej., Radbruch, Fuller, Dworkin, Nino), ni presenta ejemplos de aplicación concreta, ni recoge críticas o límites del concepto. La ficha actual no es apta para su uso académico y requiere una segunda ronda de búsqueda con consultas más específicas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición ética jurídica relación entre derecho y moral",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamentos filosóficos ética jurídica iusnaturalismo positivismo",
+            "hits": 1
+          },
+          {
+            "consulta": "críticas límites ética jurídica obediencia al derecho injusto",
+            "hits": 3
+          }
+        ],
+        "hits_finales": 10
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 10,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion: No existe una definición clara y específica de 'ética jurídica' como disciplina autónoma; las citas se refieren a ética general o profesional",
+            "fundamento: Falta el sustento filosófico o iusfilosófico que articula la relación entre ética y derecho",
+            "autor: No hay autores canónicos de ética jurídica citados (e.g., Radbruch, Fuller, Dworkin, Alexy, García Máynez)",
+            "ejemplo: No se presenta ningún caso concreto de aplicación de la ética jurídica (dilema del abogado, objeción de conciencia del juez, etc.)",
+            "critica: Ausencia total de límites o tensiones conceptuales (positivismo vs. iusnaturalismo, autonomía del derecho frente a la moral, relativismo ético)"
+          ],
+          "consultas": [
+            "definición de ética jurídica como disciplina iusfilosófica relación entre derecho y moral",
+            "García Máynez Radbruch Fuller ética jurídica fundamento filosófico abogado juez",
+            "críticas al iusnaturalismo positivismo jurídico límites ética jurídica autonomía del derecho"
+          ],
+          "nota": "Las cinco citas recuperadas son periféricas al concepto: abordan norma moral, ética profesional general y axiología, pero ninguna trata específicamente la 'ética jurídica' como campo propio que vincula Derecho y Moral. La similitud semántica promedio es muy baja (≈0.15), lo que confirma que las fuentes disponibles no cubren el concepto con suficiente especificidad. Se requieren búsquedas orientadas a iusfilosofía, deontología del abogado y el debate positivismo-iusnaturalismo para construir una ficha sólida."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de ética jurídica como disciplina iusfilosófica relación entre derecho y moral",
+            "hits": 4
+          },
+          {
+            "consulta": "García Máynez Radbruch Fuller ética jurídica fundamento filosófico abogado juez",
+            "hits": 3
+          },
+          {
+            "consulta": "críticas al iusnaturalismo positivismo jurídico límites ética jurídica autonomía del derecho",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 16
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 16
+  }
+}

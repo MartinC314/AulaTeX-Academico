@@ -1,0 +1,621 @@
+{
+  "Redacción académica": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "fundamento teórico o epistemológico de la redacción académica (por qué es una competencia clave, marcos teóricos como literacidad académica o escritura a través del currículo)",
+            "ejemplo concreto o aplicación práctica de una estrategia o género de redacción académica",
+            "crítica o límite del concepto (p.ej. restricciones del registro formal, exclusión de voces no hegemónicas, tensiones con la escritura creativa)"
+          ],
+          "consultas": [
+            "literacidad académica fundamento teórico escritura universitaria Carlino",
+            "limitaciones redacción académica registro formal exclusión escritura no hegemónica",
+            "ejemplo géneros textuales redacción académica ensayo informe tesis universitaria"
+          ],
+          "nota": "Las citas recuperadas ofrecen una definición funcional aceptable y remiten a autores identificables (Corte Vitoria, Núñez Cortés), pero la ficha carece de un anclaje teórico explícito (p.ej. teoría de la literacidad académica, WAC/WID), de un ejemplo desarrollado que ilustre la aplicación del concepto, y de cualquier posición crítica respecto a sus límites o cuestionamientos desde la investigación contemporánea. Se recomienda una segunda ronda de búsqueda orientada a esos tres ejes."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "literacidad académica fundamento teórico escritura universitaria Carlino",
+            "hits": 4
+          },
+          {
+            "consulta": "limitaciones redacción académica registro formal exclusión escritura no hegemónica",
+            "hits": 4
+          },
+          {
+            "consulta": "ejemplo géneros textuales redacción académica ensayo informe tesis universitaria",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición de redacción académica características formales y propósito comunicativo en educación superior",
+            "principios y fundamentos de la escritura académica claridad coherencia argumentación Carlino Cassany",
+            "críticas y limitaciones de la enseñanza de la redacción académica en la universidad géneros discursivos"
+          ],
+          "nota": "Las citas recuperadas en esta ronda son fragmentos periféricos que abordan géneros textuales específicos (tesis doctoral, TFG, TFM) y aspectos contextuales del aprendizaje escritural, pero ninguna ofrece una definición clara de redacción académica, ni expone sus fundamentos teóricos, ni presenta un autor con postura central, ni un ejemplo concreto de aplicación, ni una crítica o límite del concepto. La similitud baja de todas las citas (máximo 0.17) confirma que el corpus no está siendo consultado con términos suficientemente precisos. Se requieren búsquedas más directas sobre la definición, las características formales y las críticas al modelo estándar de escritura académica universitaria."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de redacción académica características formales y propósito comunicativo en educación superior",
+            "hits": 4
+          },
+          {
+            "consulta": "principios y fundamentos de la escritura académica claridad coherencia argumentación Carlino Cassany",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y limitaciones de la enseñanza de la redacción académica en la universidad géneros discursivos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  },
+  "Comunicación virtual": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición comunicación virtual mediada por tecnología características",
+            "fundamentos teóricos comunicación virtual interacción digital asincrónica sincrónica",
+            "limitaciones críticas comunicación virtual ausencia corporalidad brecha digital"
+          ],
+          "nota": "Las citas recuperadas provienen de un único texto sobre escritura académica y solo rozan tangencialmente el concepto de 'comunicación virtual' al mencionar al lector como interlocutor imaginado o virtual en el contexto de la escritura. No existe ninguna cita que defina propiamente la comunicación virtual como fenómeno tecnológico o social, no se identifican autores de referencia en el campo (p.ej. Lévy, Rheingold, Castells), no hay ejemplos concretos de plataformas o prácticas de comunicación virtual, no se expone ningún fundamento teórico sólido y no aparece ninguna crítica o límite del concepto. La similitud promedio es muy baja (≈0.09), lo que confirma que las citas son marginalmente relevantes. Se requiere una nueva ronda de búsqueda con consultas más específicas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición comunicación virtual mediada por tecnología características",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamentos teóricos comunicación virtual interacción digital asincrónica sincrónica",
+            "hits": 4
+          },
+          {
+            "consulta": "limitaciones críticas comunicación virtual ausencia corporalidad brecha digital",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 14
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 14,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición comunicación virtual características interacción digital",
+            "teorías comunicación mediada por computadora autores Walther Rheingold",
+            "limitaciones críticas comunicación virtual ausencia presencia física"
+          ],
+          "nota": "Las citas recuperadas son extremadamente débiles para construir una ficha conceptual sobre 'comunicación virtual'. Solo hay una referencia tangencial al 'interlocutor virtual' en el contexto de la escritura académica, y menciones genéricas a TIC y blogs. No existe definición del concepto, ningún fundamento teórico, ningún autor especializado en comunicación virtual, ningún ejemplo concreto ni crítica o límite del concepto. Las citas provienen todas de un único texto sobre escritura académica, lo que indica que la fuente no es la adecuada para este concepto. Se requieren búsquedas orientadas a teorías específicas de comunicación mediada por tecnología."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición comunicación virtual características interacción digital",
+            "hits": 4
+          },
+          {
+            "consulta": "teorías comunicación mediada por computadora autores Walther Rheingold",
+            "hits": 4
+          },
+          {
+            "consulta": "limitaciones críticas comunicación virtual ausencia presencia física",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 19
+  },
+  "Claridad": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "claridad estilo redacción Cassany principios fundamento teórico",
+            "claridad escritura ejemplo oración confusa versus clara redacción académica",
+            "límites claridad simplicidad excesiva pérdida precisión escritura académica"
+          ],
+          "nota": "La ficha cuenta con una definición aceptable (pensamiento diáfano, comprensible, directo) y menciones contextuales de la claridad como requisito general del texto académico. Sin embargo, carece de fundamento teórico explícito que explique por qué la claridad es esencial (p. ej., desde la teoría de la comunicación o la retórica), no atribuye el concepto a ningún autor de referencia con cita directa, no ofrece ejemplos concretos que contrasten un texto claro frente a uno oscuro (salvo la mención tangencial de anfibología), y no recoge ninguna crítica o límite al concepto (por ejemplo, la tensión entre claridad y rigor terminológico especializado). Se recomienda ampliar la búsqueda con consultas orientadas a Cassany u otros autores canónicos de la didáctica de la escritura, a ejemplos ilustrativos y a posibles objeciones al imperativo de claridad."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "claridad estilo redacción Cassany principios fundamento teórico",
+            "hits": 4
+          },
+          {
+            "consulta": "claridad escritura ejemplo oración confusa versus clara redacción académica",
+            "hits": 4
+          },
+          {
+            "consulta": "límites claridad simplicidad excesiva pérdida precisión escritura académica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 17,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "fundamento",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "claridad textual principios retóricos fundamento comunicativo Quintiliano",
+            "ejemplos de falta de claridad en textos académicos ambigüedad oscuridad redacción",
+            "críticas al concepto de claridad escritura académica subjetividad cultural límites"
+          ],
+          "nota": "La ficha cubre aceptablemente la definición (Ayala: pensamiento diáfano, directo) y menciona un autor de referencia (Azorín como codificador de las cualidades del estilo). Sin embargo, el fundamento teórico es débil: no se explica por qué la claridad es una condición necesaria de la comunicación escrita desde un marco retórico, lingüístico o pragmático. Tampoco hay ejemplos concretos que ilustren un texto claro versus uno oscuro. Finalmente, no existe ninguna cita que problematice o limite el concepto, por ejemplo, la tensión entre claridad y precisión técnica, o la relatividad cultural de lo que se considera 'claro'. Se recomiendan búsquedas orientadas a fundamento retórico-clásico, ejemplificación práctica y posición crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "claridad textual principios retóricos fundamento comunicativo Quintiliano",
+            "hits": 4
+          },
+          {
+            "consulta": "ejemplos de falta de claridad en textos académicos ambigüedad oscuridad redacción",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al concepto de claridad escritura académica subjetividad cultural límites",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  },
+  "Coherencia": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion: No hay una definición formal y precisa del concepto de coherencia textual; las citas solo aluden a ella de manera tangencial o descriptiva.",
+            "fundamento: No se expone el fundamento teórico-lingüístico de la coherencia (p. ej., teoría textual, semántica del discurso, pragmática).",
+            "autor: No se cita a ningún autor canónico que haya teorizado la coherencia (p. ej., Van Dijk, Beaugrande y Dressler, Halliday y Hasan).",
+            "ejemplo: No se incluye ningún ejemplo concreto de texto coherente o incoherente que ilustre el concepto.",
+            "critica: No se presenta ninguna crítica, límite o debate en torno al concepto de coherencia."
+          ],
+          "consultas": [
+            "definición de coherencia textual Van Dijk macroestructura semántica discurso",
+            "Beaugrande Dressler coherencia cohesión estándares de textualidad criterios",
+            "coherencia pragmática contexto pertinencia límites críticas lingüística del texto"
+          ],
+          "nota": "Las citas recuperadas son de muy baja similitud (ninguna supera 0.27) y provienen casi en su totalidad de un único texto enfocado en errores de escritura universitaria. No cubren ninguno de los cinco elementos evaluados de forma satisfactoria. Se requiere una nueva ronda de búsqueda orientada a fuentes de lingüística textual y análisis del discurso que aporten definición formal, sustento teórico, autoría canónica, ejemplificación y discusión crítica del concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de coherencia textual Van Dijk macroestructura semántica discurso",
+            "hits": 4
+          },
+          {
+            "consulta": "Beaugrande Dressler coherencia cohesión estándares de textualidad criterios",
+            "hits": 4
+          },
+          {
+            "consulta": "coherencia pragmática contexto pertinencia límites críticas lingüística del texto",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 17,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion: No hay una definición formal y precisa de coherencia textual como propiedad del texto; solo referencias indirectas al concepto.",
+            "fundamento: Falta la base teórica que explique por qué la coherencia es una propiedad esencial del texto (semántica, pragmática, lingüística del texto).",
+            "autor: No se cita ningún autor canónico que haya teorizado la coherencia (e.g., Beaugrande y Dressler, Halliday, van Dijk, Bernárdez).",
+            "ejemplo: No existe ningún ejemplo concreto que ilustre un texto coherente o incoherente para contrastar.",
+            "critica: No se identifica ninguna crítica, limitación o debate sobre el concepto de coherencia como categoría analítica."
+          ],
+          "consultas": [
+            "definición coherencia textual propiedad semántica van Dijk Beaugrande Dressler lingüística del texto",
+            "coherencia macroestructura microestructura progresión temática ejemplo texto académico",
+            "límites coherencia textual crítica ambigüedad pragmática contexto interpretación"
+          ],
+          "nota": "Las citas recuperadas en esta segunda ronda son de baja similitud (ninguna supera 0.27) y abordan la coherencia de forma periférica, principalmente desde los problemas que presentan los estudiantes universitarios al escribir. No se ha logrado cubrir ninguno de los cinco elementos clave de la ficha conceptual. Se requieren búsquedas más orientadas a fuentes teóricas canónicas de la lingüística textual para construir una ficha sólida."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición coherencia textual propiedad semántica van Dijk Beaugrande Dressler lingüística del texto",
+            "hits": 4
+          },
+          {
+            "consulta": "coherencia macroestructura microestructura progresión temática ejemplo texto académico",
+            "hits": 4
+          },
+          {
+            "consulta": "límites coherencia textual crítica ambigüedad pragmática contexto interpretación",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 20
+  },
+  "Cohesión": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "mecanismos de cohesión léxica y gramatical ejemplos referencia sustitución elipsis",
+            "límites cohesión textual diferencia coherencia cohesión crítica Beaugrande Dressler",
+            "cohesión sin coherencia texto incoherente pero cohesionado ejemplo aplicación práctica"
+          ],
+          "nota": "La ficha cubre con solidez la definición (relaciones de sentido entre enunciados) y el fundamento teórico (Halliday 1976, Pécora 2002), y menciona autores relevantes. Sin embargo, carece completamente de ejemplos concretos que ilustren mecanismos específicos de cohesión (referencia anafórica, elipsis, conectores, etc.) y no presenta ninguna crítica o límite del concepto, como la distinción con coherencia o los casos en que un texto cohesionado puede ser semánticamente incoherente. Se recomiendan búsquedas orientadas a ejemplificación práctica y a posiciones críticas o complementarias al modelo hallidayano."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "mecanismos de cohesión léxica y gramatical ejemplos referencia sustitución elipsis",
+            "hits": 4
+          },
+          {
+            "consulta": "límites cohesión textual diferencia coherencia cohesión crítica Beaugrande Dressler",
+            "hits": 4
+          },
+          {
+            "consulta": "cohesión sin coherencia texto incoherente pero cohesionado ejemplo aplicación práctica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 13
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 13,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "mecanismos de cohesión léxica y gramatical ejemplos texto académico",
+            "limitaciones cohesión textual diferencia coherencia cohesión crítica lingüística",
+            "cohesión referencia sustitución elipsis conectores ejemplos concretos"
+          ],
+          "nota": "La ficha cubre razonablemente la definición (relaciones mutuas entre elementos que configuran un todo unitario), el fundamento semántico (relaciones de sentido entre enunciados) y el autor principal (Halliday, 1976, citado también por Pécora, 2002). Sin embargo, carece por completo de ejemplos concretos que ilustren los mecanismos de cohesión (referencia, sustitución, elipsis, conectores, cohesión léxica), y no presenta ninguna crítica o limitación del concepto, como la distinción problemática entre cohesión y coherencia o los casos en que un texto cohesionado puede resultar incoherente. Se recomienda una tercera ronda de búsqueda orientada específicamente a estos dos elementos ausentes."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "mecanismos de cohesión léxica y gramatical ejemplos texto académico",
+            "hits": 4
+          },
+          {
+            "consulta": "limitaciones cohesión textual diferencia coherencia cohesión crítica lingüística",
+            "hits": 4
+          },
+          {
+            "consulta": "cohesión referencia sustitución elipsis conectores ejemplos concretos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 17
+  },
+  "Formalidad": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 2,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición de formalidad jurídica requisitos forma acto jurídico",
+            "formalidad como requisito de validez o existencia del acto jurídico doctrina",
+            "críticas al formalismo jurídico exceso de forma sobre fondo derecho"
+          ],
+          "nota": "Las dos citas recuperadas provienen de un texto sobre escritura académica y solo mencionan 'formalidades' en sentido coloquial o pedagógico, sin ninguna relación con el concepto jurídico de Formalidad. No cubren ninguno de los cinco elementos evaluados: no hay definición técnica, ni fundamento normativo o doctrinal, ni autor de referencia, ni ejemplo de aplicación jurídica, ni crítica o límite al concepto. La similitud extremadamente baja (0.07) confirma que las citas son irrelevantes para el concepto buscado. Se recomienda buscar en fuentes de teoría general del derecho, derecho civil o derecho administrativo."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de formalidad jurídica requisitos forma acto jurídico",
+            "hits": 4
+          },
+          {
+            "consulta": "formalidad como requisito de validez o existencia del acto jurídico doctrina",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al formalismo jurídico exceso de forma sobre fondo derecho",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 13
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 13,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición de formalidad jurídica requisito validez acto jurídico derecho",
+            "formalidad como elemento esencial contrato consecuencias incumplimiento requisito formal",
+            "críticas al formalismo jurídico exceso de formalidades acceso a la justicia"
+          ],
+          "nota": "Las cinco citas recuperadas provienen de un único texto sobre escritura académica y no aportan ningún elemento relevante para una ficha conceptual jurídica sobre 'formalidad'. No se cubre la definición jurídica del término, su fundamento normativo o doctrinal, ningún autor de referencia en derecho, ejemplos de aplicación en actos o negocios jurídicos, ni críticas al formalismo. La similitud semántica es extremadamente baja (máximo 0.093), lo que confirma que las fuentes disponibles no contienen material pertinente. Se requieren búsquedas dirigidas específicamente al concepto jurídico de formalidad."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de formalidad jurídica requisito validez acto jurídico derecho",
+            "hits": 4
+          },
+          {
+            "consulta": "formalidad como elemento esencial contrato consecuencias incumplimiento requisito formal",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al formalismo jurídico exceso de formalidades acceso a la justicia",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 20
+  },
+  "Educación a distancia": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición y características de la educación a distancia modalidad virtual",
+            "Moore Keegan fundamentos teóricos educación a distancia e-learning",
+            "críticas limitaciones educación a distancia brecha digital acceso"
+          ],
+          "nota": "Las cinco citas recuperadas no guardan relación temática con el concepto de educación a distancia. Provienen de un texto sobre escritura académica y referencias bibliográficas generales de educación superior. Ninguna cita aporta definición, fundamento teórico, autor especializado en la materia, ejemplo de aplicación ni crítica al modelo. La similitud semántica es extremadamente baja (máximo 0.12), lo que confirma que el corpus consultado carece de documentos específicos sobre este concepto. Se recomienda buscar fuentes especializadas en tecnología educativa, e-learning y modalidades a distancia."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y características de la educación a distancia modalidad virtual",
+            "hits": 4
+          },
+          {
+            "consulta": "Moore Keegan fundamentos teóricos educación a distancia e-learning",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas limitaciones educación a distancia brecha digital acceso",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 13
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 13,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición y características de la educación a distancia modelos pedagógicos",
+            "Otto Peters Moore educación a distancia teoría fundamentos",
+            "ventajas limitaciones críticas educación a distancia e-learning"
+          ],
+          "nota": "Las citas recuperadas no guardan relación sustantiva con el concepto de educación a distancia. Los fragmentos abordan escritura académica, TIC en la redacción y referencias bibliográficas de evaluación universitaria, sin aportar ningún elemento relevante: ni definición del concepto, ni su fundamento teórico-pedagógico, ni autores canónicos del campo (como Otto Peters, Michael Moore o Desmond Keegan), ni ejemplos o modelos concretos de aplicación, ni críticas o límites reconocidos. La similitud coseno extremadamente baja (máximo 0,12) confirma que el corpus consultado no contiene fuentes adecuadas para construir esta ficha. Se recomienda buscar en fuentes especializadas en educación a distancia y tecnología educativa."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y características de la educación a distancia modelos pedagógicos",
+            "hits": 4
+          },
+          {
+            "consulta": "Otto Peters Moore educación a distancia teoría fundamentos",
+            "hits": 4
+          },
+          {
+            "consulta": "ventajas limitaciones críticas educación a distancia e-learning",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 16
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 16
+  }
+}

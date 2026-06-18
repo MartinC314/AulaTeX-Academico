@@ -1,0 +1,279 @@
+% ===============================================================================
+% PLANTILLA MAESTRA - UnADM (instrucciones comunes)
+% ===============================================================================
+% Uso rapido:
+% 1) Duplica la plantilla y renombra la copia por semana/actividad.
+% 2) Actualiza \documenttitle, \documentsubtitle y \documentsubject.
+% 3) Lee la planeacion y NO pegues las instrucciones completas dentro del PDF.
+%    Usa la planeacion como lista de cumplimiento y redacta con criterio propio.
+% 4) Elabora productos visuales preferentemente en LaTeX/TikZ para mantener
+%    nitidez y evidencia editable; si usas herramientas externas, inserta
+%    capturas de alta resolucion y conserva evidencia dentro del PDF.
+% 5) Entrega en PDF con la nomenclatura solicitada en el aula.
+%
+% Formato institucional (recomendado):
+% - Fuente: Helvetica / sans-serif equivalente (\usepackage{helvet}).
+% - Interlineado: 1.5 (\onehalfspacing).
+% - Citas: autor-año mediante natbib (\citep, \citet, \citep[e.g.]{clave}).
+% - Bibliografía: archivo .bib con formato APA 7; todas las citas del texto
+%   deben aparecer en la bibliografía y viceversa.
+% - Estructura mínima: portada, resumen/abstract, desarrollo, conclusión y
+%   bibliografía.
+%
+% Reglas para productos visuales y tablas extensas:
+% - Para tablas o cuadros amplios use longtable + booktabs y evite líneas
+%   verticales; controlar espaciado con \setlength{\tabcolsep} y
+%   \renewcommand{\arraystretch}.
+% - Para tablas en página propia: use \clearpage, \pagestyle{empty},
+%   entorno landscape, reducir tamaño con \scriptsize y luego restaurar
+%   \pagestyle{fancy} al finalizar la tabla.
+%
+% Buenas prácticas de redacción académica (guía operativa):
+% - No escribir para llenar espacio; escribir para sostener y defender una idea.
+% - Cada concepto debe responder: qué es, qué características tiene, cómo
+%   funciona, qué problema resuelve, qué límite presenta y qué implicación
+%   jurídica posee.
+% - Evitar listas sin análisis: tras cada dato relevante incluya su consecuencia
+%   o aplicación jurídica.
+% - Primera persona: usar moderadamente ("Considero que", "Desde esta
+%   perspectiva"); evite expresiones coloquiales como "yo creo".
+%
+% Protocolos de integridad y uso de IA:
+% - Si se usa IA, el resultado debe ser leído, corregido y transformado con
+%   criterio propio. No entregar texto sin procesamiento.
+% - Incluir siempre juicio propio y referencias que sostengan la postura.
+%
+% Checklist operativo antes de entregar:
+% [ ] El producto coincide con la técnica solicitada en la planeación.
+% [ ] El objetivo y el contenido están alineados con la planeación.
+% [ ] El producto visual está rotulado y presentado como se pide.
+% [ ] Hay citas APA autor-año dentro del texto y bibliografía completa.
+% [ ] No se incluyeron instrucciones copiadas de la planeación dentro del
+%     contenido entregado.
+% [ ] Ortografía y redacción revisadas; la argumentación es propia.
+% ===============================================================================
+
+% CREACION DEL DOCUMENTO
+\documentclass[
+	spanish,
+	letterpaper, oneside
+]{article}
+
+% INFORMACION DEL DOCUMENTO (actualizar)
+\def\documenttitle {Derechos constitucionales mexicanos: alcance, evolución y relevancia actual}
+\def\documentsubtitle {Actividad 6 - Ética y Moral jurídica}
+\def\documentsubject {Semana 7 - Reporte de lectura general}
+
+\def\documentauthor {Martín Jonathan de la Cruz}
+\def\coursename {Ética y Moral jurídica}
+\def\coursecode {030}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Ética y Moral jurídica}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de México}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\authortable {
+	\begin{tabular}{ll}
+		\textbf{Alumno:}
+		& \begin{tabular}[t]{l}
+			 Martín Jonathan de la Cruz \\
+		\end{tabular} \\
+		Matrícula: & ES2611202040 \\
+
+		\textit{Profesor:}
+		& \begin{tabular}[t]{l}
+			Emma Liliana \\ Padilla Cano
+		\end{tabular} \\
+		& \\
+		\multicolumn{2}{l}{Fecha de realización: \today} \\
+		\multicolumn{2}{l}{\universitylocation}
+	\end{tabular}
+}
+
+% IMPORTACION DEL TEMPLATE
+\input{template}
+
+% FORMATO
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% TIKZ
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}
+
+% CITAS AUTOR-AÑO
+\setcitestyle{authoryear,open={(},close={)}}
+
+% AYUDAS
+\newcommand{\pendiente}[1]{\textcolor{red}{[PENDIENTE: #1]}}
+
+% MARCA DE AGUA EN PORTADA
+% Se aplica solo a la portada porque usa \AddToShipoutPictureBG*.
+% Para apagarla: \def\coverwatermarkenabled {false}
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {base/Plantilla-Informe/img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.22}
+\def\coverwatermarkwidth {0.78\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.25cm}
+
+\newcommand{\insertcoverwatermark}{%
+	\ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+		\AddToShipoutPictureBG*{%
+			\begin{tikzpicture}[remember picture,overlay]
+			\node[
+				opacity=\coverwatermarkopacity,
+				inner sep=0pt,
+				xshift=\coverwatermarkxshift,
+				yshift=\coverwatermarkyshift
+			] at (current page.center) {\includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}};
+			\end{tikzpicture}%
+		}%
+	}{}%
+}
+
+\begin{document}
+
+% PORTADA
+\insertcoverwatermark
+\templatePortrait
+
+% CONFIGURACION
+\templatePagecfg
+\onehalfspacing
+
+% RESUMEN / ABSTRACT
+\begin{abstractd}
+	\textbf{Objetivo:} Identificar y analizar los derechos fundamentales establecidos en la Constitución Política de los Estados Unidos Mexicanos mediante un reporte de lectura general que explique su alcance, su evolución y su relevancia práctica en el sistema jurídico mexicano.
+
+	\textbf{Producto elaborado:} Reporte de lectura general con introducción, desarrollo analítico, clasificación de derechos constitucionales, cuadro sintético de artículos relevantes, postura crítica y conclusión.
+
+	\textbf{Enfoque de análisis:} La Constitución no opera como listado decorativo de promesas; funciona como sistema de control del poder y como estructura mínima de protección de la dignidad. Por eso, el valor de los derechos constitucionales se mide por su capacidad de limitar abusos, ordenar la actuación estatal y producir condiciones reales de igualdad, libertad y justicia.
+\end{abstractd}
+
+% INDICE
+\templateIndex
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+\section{Introducción}
+
+Los derechos constitucionales mexicanos no pueden leerse como una suma pasiva de artículos. Funcionan como la parte más delicada del sistema jurídico porque fijan qué puede exigir la persona, qué debe respetar la autoridad y qué límites no puede romper el poder público sin perder legitimidad. Cuando esta capa protectora se debilita, la legalidad queda reducida a trámite; cuando se toma en serio, la Constitución deja de ser texto simbólico y se convierte en criterio real de control.
+
+La planeación de la semana pide revisar el Título Primero de la Constitución, clasificar derechos civiles, políticos, sociales y colectivos, e identificar su evolución y relevancia actual. El punto importante no está sólo en enumerarlos. El problema de fondo consiste en entender cómo esos derechos organizan la convivencia, cómo frenan decisiones arbitrarias y por qué siguen siendo un campo de disputa práctica en temas como discriminación, acceso a la justicia, libertad de expresión, protección de pueblos indígenas, medio ambiente, trabajo y seguridad jurídica.
+
+La postura que guía este reporte es que los derechos constitucionales valen en la medida en que obligan a traducir dignidad, igualdad y libertad en decisiones jurídicas concretas. Desde esta perspectiva, estudiar su clasificación sólo tiene sentido si al mismo tiempo se explica su función operativa, su desarrollo histórico y la consecuencia que producen para la práctica profesional del Derecho.
+
+% ===== DESARROLLO (compacto y con enfoque personal) =====
+\section{Desarrollo analítico de los derechos constitucionales}
+
+\subsection{Origen, función y problema jurídico}
+
+Entrada: la Constitución de 1917 no es una lista decorativa; nace como respuesta a concentraciones de poder y desigualdad.
+
+Proceso: la reforma de 2011 vinculó la Carta magna con estándares internacionales de derechos humanos y consolidó deberes estatales de promover, respetar, proteger y garantizar derechos \citep{constitucionCPEUM2026}.
+
+Salida: el análisis debe centrarse en la operatividad de los derechos y en su capacidad para traducir dignidad en decisiones públicas.
+
+\subsection{Clasificación funcional y sentido práctico}
+
+Civil y político: barreras frente a la arbitrariedad (igualdad, libertad de expresión, debido proceso). Su eficacia depende de procedimientos y controles.
+
+Social: imponen obligaciones estatales de políticas públicas (educación, salud, trabajo). Sin implementación, la igualdad es formal.
+
+Colectivos y estructurales: protegen comunidades y bienes comunes (pueblos indígenas, ambiente, función social de la propiedad); exigen redistribución y reconocimiento.
+
+Marco ético: la progresividad obliga a interpretar derechos con criterios de impacto y dignidad \citep{singerCompendioEtica1995,ronquilloarmasEticaGeneralProfesional2018}.
+
+\subsection{Progresividad como criterio de interpretación}
+
+Entrada: la progresividad impone que la protección no retroceda sin justificación.
+
+Proceso: evaluar derechos exige medir resultados reales (acceso efectivo, reparación y no regresión) y justificar decisiones públicas frente a quienes resultan afectados.
+
+Salida: el ejercicio profesional debe ir más allá del formalismo; el jurista administra impactos sobre dignidad, igualdad y libertad.
+
+\subsection{Aplicación jurídica y control constitucional}
+
+- Identificar el derecho comprometido y su alcance.
+- Determinar el estándar de control aplicable.
+- Proponer la vía de reparación o protección adecuada (preventiva, no jurisdiccional, jurisdiccional).
+
+Ejemplo: una detención arbitraria activa los artículos 14, 16 y 20; una negativa discriminatoria obliga a leer el artículo 1o. con el 4o.; un conflicto indígena remite al 2o. \citep{constitucionCPEUM2026}.
+
+La defensa efectiva combina prevención, denuncia, litigio estratégico y reparación; la Comisión Nacional de los Derechos Humanos aporta documentación y recomendación, pero no sustituye mecanismos judiciales \citep{cndhMarcoNormativo}.
+
+Considero que la lectura sistemática con enfoque de dignidad es el criterio más útil: evita convertir la Constitución en formulario y obliga a conectar igualdad, debido proceso, acceso a la justicia y protección social.
+
+% ===== Tabla sintética en horizontal =====
+\clearpage
+\pagestyle{empty}
+\begin{landscape}
+\thispagestyle{empty}
+\begingroup
+\scriptsize
+\centering
+\setlength{\tabcolsep}{3.2pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{longtable}{@{}p{0.12\linewidth}p{0.07\linewidth}p{0.35\linewidth}p{0.40\linewidth}@{}}
+\caption{Clasificación sintética de derechos constitucionales mexicanos}\label{tab:derechos-constitucionales}\\
+\toprule
+\textbf{Categoría} & \textbf{Art.} & \textbf{Alcance principal} & \textbf{Ejemplo actual de relevancia} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Categoría} & \textbf{Art.} & \textbf{Alcance principal} & \textbf{Ejemplo actual de relevancia} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{Continúa en la siguiente página} \\
+\endfoot
+\bottomrule
+\endlastfoot
+Civil-político & 1o. & Reconoce derechos humanos y prohíbe la discriminación. & Control de actos que excluyen por género, origen, discapacidad o condición social. \\
+Colectivo & 2o. & Reconoce la composición pluricultural y la autodeterminación indígena. & Consulta y reconocimiento de sistemas normativos indígenas en decisiones sobre territorio y comunidad. \\
+Social & 3o. & Garantiza el derecho a la educación. & Debate sobre acceso real, calidad y formación cívica en contextos desiguales. \\
+Social & 4o. & Protege igualdad, salud, vivienda, ambiente, familia, niñez y alimentación. & Litigios y políticas sobre salud, cuidados, agua, ambiente sano y protección familiar. \\
+Social & 5o. & Reconoce la libertad de profesión, industria, comercio o trabajo lícito. & Defensa frente a restricciones desproporcionadas para ejercer actividades productivas o profesionales. \\
+Civil-político & 6o. & Garantiza libertad de expresión y acceso a la información. & Transparencia y control ciudadano del gasto y de decisiones administrativas. \\
+Civil-político & 7o. & Protege la libertad de difundir opiniones e información. & Protección del periodismo crítico frente a censura o presión institucional. \\
+Civil-político & 8o. & Reconoce el derecho de petición. & Exigencia de respuesta fundada a escritos dirigidos a autoridades. \\
+Civil-político & 9o. & Protege la asociación y reunión pacífica. & Manifestaciones y organización estudiantil, sindical y ciudadana. \\
+Civil-político & 11 & Reconoce libre tránsito y reglas sobre asilo y refugio. & Protección de movilidad y atención a personas desplazadas o migrantes. \\
+Civil-político & 14 & Prohíbe retroactividad en perjuicio y exige debido proceso. & Nulidad de sanciones sin procedimiento legal previo. \\
+Civil-político & 16 & Exige fundamentación y motivación en actos de autoridad. & Revisión de cateos, detenciones, aseguramientos y datos personales. \\
+Civil-político & 17 & Garantiza acceso a la justicia y prohíbe autotutela. & Exigencia de tribunales eficaces, plazos razonables y mecanismos alternos. \\
+Civil-político & 18 & Regula el sistema penitenciario con base en reinserción social. & Debate sobre condiciones carcelarias y respeto a derechos de personas privadas de libertad. \\
+Civil-político & 20 & Establece derechos del proceso penal para imputados y víctimas. & Debido proceso, asesoría jurídica y reparación del daño en materia penal. \\
+Civil-político & 24 & Garantiza libertad de convicciones, conciencia y religión. & Protección frente a imposiciones ideológicas o religiosas de la autoridad. \\
+Estructural & 25 & Otorga al Estado la rectoría del desarrollo nacional. & Políticas económicas orientadas a bienestar y equidad. \\
+Estructural & 27 & Regula propiedad, tierras, aguas y función social de los recursos. & Conflictos por territorio, uso de suelo, ejidos, energía y bienes nacionales. \\
+Estructural & 28 & Prohíbe monopolios y protege competencia económica. & Control de concentraciones de mercado que afectan precios y acceso a servicios. \\
+Garantía extraordinaria & 29 & Regula la suspensión o restricción de derechos en situaciones excepcionales. & Límite constitucional para evitar abusos incluso en emergencias. \\
+Social & 123 & Reconoce derechos laborales individuales y colectivos. & Debate sobre jornadas, salario digno, seguridad social y libertad sindical. \\
+\end{longtable}
+\endgroup
+\end{landscape}
+\clearpage
+\pagestyle{fancy}
+
+% CONCLUSION
+\section{Conclusión}
+
+Los derechos constitucionales mexicanos no son un inventario neutro, sino una arquitectura que limita el poder y protege la persona. Su clasificación (civiles, políticos, sociales, colectivos y estructurales) ayuda a identificar funciones distintas: unos frenan abusos inmediatos; otros exigen prestaciones materiales; otros protegen comunidades y recursos.
+
+La reforma de 2011 y la progresividad constitucional obligan a medir la eficacia de los derechos por sus resultados reales, no por su sola existencia. Para la práctica jurídica esto significa argumentar con enfoque de dignidad, conectar normas con políticas públicas y priorizar remedios que produzcan efectos verificables en la vida de las personas.
+
+Interpretar derechos exige más que citar artículos: exige criterio ético, atención al contexto y responsabilidad pública. Cuando esa exigencia se asume, el Derecho recupera su función esencial: garantizar condiciones mínimas de justicia y dignidad.
+
+% REFERENCIAS
+\bibliography{etica-y-moral-juridica}
+
+\end{document}

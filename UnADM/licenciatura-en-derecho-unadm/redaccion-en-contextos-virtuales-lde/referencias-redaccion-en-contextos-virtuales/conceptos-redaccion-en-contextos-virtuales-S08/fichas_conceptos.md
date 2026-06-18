@@ -1,0 +1,931 @@
+# Fichas de conceptos
+
+Las citas textuales se extrajeron de las fuentes de entrada. La búsqueda puede agrupar referencias del mismo concepto aunque estén en archivos distintos.
+
+## Ficha 01. Redacción académica
+
+**Calidad estimada:** media
+**Mejor similitud:** 0.2472
+**Similitud promedio:** 0.1107
+**Fuentes:** Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf
+**Ubicaciones:** Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 12; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 15; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 16; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 73; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 74; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 118; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 127; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 130; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 131; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 137; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 144; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 151; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 153; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 154; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 20; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 32; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 48; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 49; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 5; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 52; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 56; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 82; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 86
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 16 — similitud 0.2472
+
+**Detalle de puntaje:** tfidf=0.2172; bonus=0.0300
+
+> concretas de producir, interpretar y poner en circulación los discursos (Arnoux, 2009). Estas formas particulares —entendidas como conjuntos de enunciados producidos a partir de determinadas actividades humanas— son los géneros discursivos (Bajtin, 1998). Esto supone que las personas, al participar en diferentes ámbitos de la actividad humana, conozcan y utilicen diversos géneros discursivos.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 5 — similitud 0.1712
+
+**Detalle de puntaje:** tfidf=0.1312; bonus=0.0400
+
+> Coreografías y buenas prácticas docentes Coreografías didácticas y tipologías textuales La escritura en los estudios de grado: comentarios de texto, resúmenes, blogs, diarios 5. LOS GRANDES GÉNEROS TEXTUALES EN EDUCACIÓN SUPERIOR: TRABAJO FINAL DE GRADUACIÓN, TRABAJO FINAL DE MÁSTER Y TESIS DOCTORAL Trabajos finales de titulación: TFG y TFM Los trabajos final de graduación en Latinoamérica: Argentina, Chile, Colombia, Brasil, Uruguay La tesis doctoral 6. EPÍLOGO.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 73 — similitud 0.1603
+
+**Detalle de puntaje:** tfidf=0.1303; bonus=0.0300
+
+> INTRODUCCIÓN: EL ÁMBITO ACADÉMICO Y SUS DISCURSOS El ámbito académico conforma un espacio social cuyos miembros realizan prácticas de lectura y escritura de específicas cualidades. Estas prácticas se cristalizan en el uso de diferentes géneros discursivos que, con una finalidad concreta y en función de particulares modos de decir, permiten producir y reproducir los saberes especializados que circulan, por ejemplo, en instituciones como la universidad.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 153 — similitud 0.1332
+
+**Detalle de puntaje:** tfidf=0.1032; bonus=0.0300
+
+> Más allá de la calidad y la competencia. BOUD, D. y MOLLOY, E.: El feedback en educación superior y profesional. BROWN, S. y GLASNER, A. (Edits.): Evaluar en la Universidad.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 12 — similitud 0.1323
+
+**Detalle de puntaje:** tfidf=0.1023; bonus=0.0300
+
+> El tercer capítulo, Los géneros discursivos académicos, presenta algunos de los géneros más frecuentes producidos por los estudiantes en la universidad, a saber: la reseña, el resumen, la monografía y el examen escrito. En cada uno de los apartados se da información sobre las características principales de estos géneros, su estructura o sus propiedades lingüístico-discursivas.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 131 — similitud 0.1318
+
+**Detalle de puntaje:** tfidf=0.0918; bonus=0.0400
+
+> Este doble componente y la jerarquía entre ambos se deja ver bien en los libros existentes sobre las tesis doctorales. A diferencia de las guías existentes sobre otros géneros textuales académicos, los libros sobre tesis de doctorado están dedicados a insistir en cómo se concibe y desarrolla un proceso de investigación, los diferentes modelos o enfoques de investigación que el doctorando puede utilizar en función del problema a estudiar, los instrumentos de recogida de la información habituales en las investigaciones, los modos de analizar y representar los datos obtenidos, etc.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 73 — similitud 0.1277
+
+**Detalle de puntaje:** tfidf=0.1077; bonus=0.0200
+
+> vista conceptual) y convencionalizados (con reglas preestablecidas a nivel de su formato, estructura, fraseología y terminología). Son numerosos los géneros discursivos que investigadores, docentes y estudiantes emplean dentro del ámbito académico. En este capítulo se presentarán los que se consideran de uso más común por parte de estudiantes universitarios en las carreras de grado: la reseña, el resumen, la monografía y el examen escrito.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 130 — similitud 0.1275
+
+**Detalle de puntaje:** tfidf=0.0975; bonus=0.0300
+
+> Mi objetivo no es competir con los especialistas que los han escrito, sino completar el razonamiento que he venido haciendo con respecto a la escritura académica en las etapas anteriores de la formación y poder cerrar así el círculo de la escritura académica desde que se ingresa a la universidad hasta que se supera el último de los escalones académicos: el doctorado. La tesis doctoral como documento de investigación La primera cuestión relevante a remarcar en las tesis es su naturaleza de documento o informe de investigación. Las diferentes definiciones que se pueden encontrar sobre las tesis como documentos académicos coinciden todas en esa idea: «una tesis doctoral es 130
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 52 — similitud 0.1270
+
+**Detalle de puntaje:** tfidf=0.0870; bonus=0.0400
+
+> Las situaciones están definidas por el tipo de acción social que se realiza en cada esfera de actividad. Así, cada esfera de actividad, por ejemplo el ámbito académico, da lugar a géneros discursivos diversos: tesis, informe, reseñas de libros, proyectos, anotaciones, etc.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 144 — similitud 0.1175
+
+**Detalle de puntaje:** tfidf=0.0775; bonus=0.0400
+
+> El análisis del qué escribir depende del contexto en el que surja el texto. En el control del cómo se escribe entran características generales de toda escritura: la expresión formal, la estructura del tipo de texto solicitado, las convenciones ortográficas, los elementos de cohesión y de coherencia, la atención a las consignas y pautas de trabajo, la claridad y objetividad de la escritura, la consistencia de las ideas presentadas. Conviene prestar atención a que hay claras diferencia entre escribir bonito y escribir claro.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 154 — similitud 0.1118
+
+**Detalle de puntaje:** tfidf=0.0818; bonus=0.0300
+
+> técnicas, instrumentos y experiencias. MACFARLANE, B.: La libertad académica del estudiante en contextos de educación superior. MATEOS, V.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 56 — similitud 0.1063
+
+**Detalle de puntaje:** tfidf=0.0663; bonus=0.0400
+
+> A pesar de esto, el proceso por el cual se aprenden las prácticas discursivas de cada disciplina universitaria es arduo y conviene que esté mediado por alguna persona que tenga experiencia en la redacción de los textos de la especialidad y que conozca, de primera mano, los «vericuetos» de la publicación; algún docente o investigador que ya domine «ese adquirir, elaborar y comunicar el conocimiento de su ámbito específico» (Carlino, 2005). No existe disciplina universitaria que pueda (o deba) prescindir de la comunicación escrita.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 151 — similitud 0.1047
+
+**Detalle de puntaje:** tfidf=0.0747; bonus=0.0300
+
+> B. (2008). La competencia oral y escrita en la educación superior. Bogotá: Ministerio de Educación Nacional de Colombia.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 127 — similitud 0.1000
+
+**Detalle de puntaje:** tfidf=0.0700; bonus=0.0300
+
+> Consideraciones finales Al finalizar el análisis de los cinco países del cono sur americano, y tomando prestadas las palabras de escritores latinoamericanos que me marcaron por diferentes razones y en diferentes tiempos, me propuse mapear las limitaciones y las potencialidades evidenciadas en la escritura académica de los Trabajos Final de Grado de los países de mi entorno. He partido de dos principios básicos que caracterizan la escritura académica: su compromiso por producir y difundir conocimiento.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 20 — similitud 0.0988
+
+**Detalle de puntaje:** tfidf=0.0788; bonus=0.0200
+
+> I De la escritura como cultura a la escritura como competencia La redacción escrita es una de las tareas fundamentales del trabajo universitario y, en general, del trabajo en instituciones académicas de todo tipo: universidades, laboratorios, institutos de investigación y escuelas superiores de formación. Docentes e investigadores, tanto los que empiezan su trayectoria en la vida académica como aquellos que ya han logrado posiciones más destacadas, dedican muchas horas (una gran parte de la jornada académica y, con frecuencia, mucho más) a escribir (y a leer).
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 153 — similitud 0.0962
+
+**Detalle de puntaje:** tfidf=0.0762; bonus=0.0200
+
+> KNIGHT, P. T.: El profesorado de educación superior. Formación para la excelencia.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 49 — similitud 0.0951
+
+**Detalle de puntaje:** tfidf=0.0651; bonus=0.0300
+
+> Si pensamos en el sentido y en la naturaleza de la escritura como producto cultural, debemos recordar que también sirve para comunicar, difundir ideas, conocimientos, pareceres, reflexiones y análisis que no siempre pueden vehicularse a través de modelos herméticos o protocolares. Por eso, es necesario subrayar que la escrita académica es un género de escritura que une el rigor del lenguaje científico con los recursos típicos del lenguaje escrito para constituirse como una escritura que combina contenido y estructura formal. No se trata, pues, de analizar solo lo que el estudiante escribe, sino también cómo lo escribe.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 82 — similitud 0.0943
+
+**Detalle de puntaje:** tfidf=0.0643; bonus=0.0300
+
+> Ciertamente, los estudiantes podrían llegar a un cierto nivel de competencia en su escritura, aunque la institución universitaria y su profesorado no la consideraran una competencia transversal a la que se ha de prestar especial atención en la formación universitaria. Como ya hemos señalado, muchos profesores estarían de acuerdo en pensar que el escribir no es una tarea universitaria porque quienes ingresan en cursos superiores deberían dominar esa competencia como condición previa.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 127 — similitud 0.0922
+
+**Detalle de puntaje:** tfidf=0.0822; bonus=0.0100
+
+> Escribir con excelencia ortográfica, sintaxis y estilo adecuados son problemas mencionados por los académicos, así como una buena estructuración lógico-argumentativa del texto. Cabe destacar que, a pesar de los problemas identificados en la escritura académica, las universidades uruguayas han puesto en marcha muchas iniciativas que traducen la preocupación institucional por la escritura académica en proyectos para desarrollar las competencias necesarias para mejorar el desempeño académico de los estudiantes.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 137 — similitud 0.0904
+
+**Detalle de puntaje:** tfidf=0.0804; bonus=0.0100
+
+> 3. La escritura académica como comunicación. La importancia de un cierto distanciamiento entre la escritura y el estudiante.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 49 — similitud 0.0882
+
+**Detalle de puntaje:** tfidf=0.0782; bonus=0.0100
+
+> especializados que circulan en el ámbito científico y que, por lo tanto, guardan ciertos rasgos comunes. Sin embargo, hemos de considerar que una escritura académica, aunque deba salvaguardar los rasgos que le son propios, debe también incorporar otros elementos que forman parte de la escritura más allá del contexto académico. Si pensamos en el sentido y en la naturaleza de la escritura como producto cultural, debemos recordar que también sirve para comunicar, difundir ideas, conocimientos, pareceres, reflexiones y análisis que no siempre pueden vehicularse a través de modelos herméticos o protocolares.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 74 — similitud 0.0843
+
+**Detalle de puntaje:** tfidf=0.0743; bonus=0.0100
+
+> 3.2. LA RESEÑA ACADÉMICA 3.2.1. ¿Qué es una reseña académica? ¿Cuáles son sus características? Conocida también con el nombre de «recensión», la reseña es un género discursivo escrito, por medio del cual se describen y evalúan los aspectos más importantes de una obra científica o artística de reciente publicación.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 118 — similitud 0.0782
+
+**Detalle de puntaje:** tfidf=0.0482; bonus=0.0300
+
+> Todo ello sin olvidar las condiciones generales de los textos escritos en sede académica, o sea, una elaboración que evidencie coherencia temática, protocolos de lenguaje, estructura formal, objetividad, claridad, punto de vista, convenciones ortográficas y gramaticales. Los trabajos de final de graduación en Latinoamérica Este libro se propone discutir las cuestiones relacionadas con la escritura académica que, como ya hemos comentado, afronta dos retos principales: aprender a escribir con la calidad que exige la Educación Superior y aprender los contenidos formativos propios de cada especialidad a través de la escritura.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 32 — similitud 0.0775
+
+**Detalle de puntaje:** tfidf=0.0575; bonus=0.0200
+
+> Pensamos que ofrecer siempre la misma tipología textual a los estudiantes y requerirles trabajos escritos bajo consignas y propuestas muy similares sería lo mismo que ofrecer siempre los mismos desafíos cognitivos y esperar que ellos desarrollen todo el espectro de habilidades que esperamos (como hablantes, oyentes, productores de texto y lectores). Así comprendida, la escritura académica en la enseñanza superior se convierte en un juego de elecciones y de seducción por parte de los docentes en el cual las palabras diversidad, asiduidad y sistematicidad representan las condiciones básicas de una metodología adecuada y apetecible.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 15 — similitud 0.0774
+
+**Detalle de puntaje:** tfidf=0.0674; bonus=0.0100
+
+> A partir de estas propuestas, se puede entender la alfabetización académica como el proceso mediante el cual se desarrolla la competencia comunicativa de los estudiantes desde la universidad con el objetivo de hacerlos partícipes y miembros de una comunidad con una cultura, la académica, que tiene sus particulares formas de decir, y que valora especialmente el potencial epistémico de la escritura.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 49 — similitud 0.0773
+
+**Detalle de puntaje:** tfidf=0.0473; bonus=0.0300
+
+> A pesar del material teórico existente y de las innumerables investigaciones sobre el tema de la escritura, son todavía escasas las investigaciones y la bibliografía que hayan abordado el modo cómo en la escritura académica se relaciona la producción escrita con las diferentes modalidades de presentación de la información. Cuando escribimos se producen una compleja red de relaciones entre la idea inicial, el proceso de escritura y el resultado final (el texto).
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 48 — similitud 0.0765
+
+**Detalle de puntaje:** tfidf=0.0465; bonus=0.0300
+
+> El registro escrito difícil y oscuro causa una increíble admiración en las personas, lo que eleva el lenguaje rebuscado al estatus de algo importante por su naturaleza compleja y profunda, mientras que el lenguaje simple y objetivo queda relegado a una posición de producto pobre y sin prestigio. Para algunos, la sofisticación lingüística se entiende como sinónimo de riqueza de expresión.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 86 — similitud 0.0757
+
+**Detalle de puntaje:** tfidf=0.0657; bonus=0.0100
+
+> los protocolos de la escritura que casi nunca pensamos en el sentido que esta tiene para ellos y ellas. Esa era la idea que nos transmitían dos estudiantes, Lorena y Rocío, para quienes la escritura académica es aquella que se produce en el ámbito universitario y científico, y no solamente aquella que se hace para el ámbito universitario y científico. Por tanto, la escritura académica comprende tanto los trabajos producidos por los alumnos universitarios (exámenes y textos de diversos géneros que funcionan como trabajos prácticos, evaluaciones, etc.), como aquellos otros elaborados en la academia para la difusión del conocimiento científico.
+
+**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 6 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 02. Comunicación virtual
+
+**Calidad estimada:** baja
+**Mejor similitud:** 0.1264
+**Similitud promedio:** 0.0768
+**Fuentes:** Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf
+**Ubicaciones:** Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 10; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 20; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 26; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 110; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 123; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 13; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 137; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 153; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 16; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 38; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 46; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 5; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 52; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 86; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf, p. 19; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf, p. 45
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 110 — similitud 0.1264
+
+**Detalle de puntaje:** tfidf=0.1064; bonus=0.0200
+
+> actividad y generar un espacio virtual de comunicación e interacción de un alto interés para audiencias diversas. El mundo entero cabe en un blog.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 46 — similitud 0.1001
+
+**Detalle de puntaje:** tfidf=0.0801; bonus=0.0200
+
+> Para mejorar estas dificultades, podrían incorporarse periodos de escritura, frecuentes y graduados en exigencia, en los que cada sujeto pudiera ir reforzando sus actitudes positivas hacia sí mismo y hacia los textos que elabore: tomar apuntes, recodificar textos ajenos, prestar apoyo en las revisiones y segundas versiones (ya que la escritura académica exige una sumisión adicional a reglas prescriptivas, además de las funcionales), etc. Una teoría integrada de la escritura Desde esta perspectiva, estos son los puntos recurrentes en una teoría integrada de la escritura; la escritura: • • Es un acto de comunicación cuyo interlocutor es virtual.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 38 — similitud 0.0971
+
+**Detalle de puntaje:** tfidf=0.0871; bonus=0.0100
+
+> En lo que respecta a las tecnologías de la información parece obvio que nuestros estudiantes rehúyen el escribir a mano y prefieren hacerlo utilizando las nuevas herramientas que ofrecen las TIC. Se ha pasado del texto impreso al texto digital. Pero este tránsito no es neutral en la construcción de los textos escritos.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 52 — similitud 0.0909
+
+**Detalle de puntaje:** tfidf=0.0809; bonus=0.0100
+
+> Todos ellos constituyen objetos escritos que se llevan a cabo respondiendo a distintas situaciones en una misma esfera de actividad. Es necesario destacar, por otro lado, que las situaciones no vienen definidas principalmente por las condiciones materiales de la comunicación sino que son construcciones sociales que surgen como resultado del significado y de la interpretación que los humanos confieren a sus actividades. Si la tipificación de una actividad discursiva es útil en la comunicación porque genera consenso y facilita la comunicación entra en una especie de repertorio estable de géneros comunicativos y su utilización puede convertirse en rutina para los miembros de 52
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 137 — similitud 0.0844
+
+**Detalle de puntaje:** tfidf=0.0644; bonus=0.0200
+
+> La importancia de un cierto distanciamiento entre la escritura y el estudiante. La corrección del texto como ejercicio de autocorrección, mediada por el profesor, pero protagonizada por el estudiante. La importancia de la escritura de diferentes géneros textuales.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 137 — similitud 0.0768
+
+**Detalle de puntaje:** tfidf=0.0668; bonus=0.0100
+
+> Según esto, escribir es pensarse como interlocutor de un diálogo virtual pues, independientemente de la interface que utilizamos, nuestro lector es siempre alguien imaginado y, en función de ello, tendremos que poner en marcha todos nuestros recursos de expresión escrita para hacernos comprender en esta interlocución asincrónica que se da entre quien escribe y quien lee. De esta forma, la escritura académica requiere de una especie de compromiso social: 137
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 26 — similitud 0.0765
+
+**Detalle de puntaje:** tfidf=0.0565; bonus=0.0200
+
+> Estas dificultades, vinculadas a la ausencia de las estrategias o habilidades presentadas, han puesto de manifiesto la presencia de analfabetos funcionales en la universidad, que se caracterizan, entre otros aspectos, por el desconocimiento de las propias deficiencias en la lectura, el desconocimiento de la utilidad del diccionario y su falta de uso, y la desestimación del contexto en el que eran usadas palabras cuya primera acepción era solo la que tenían en cuenta.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 13 — similitud 0.0739
+
+**Detalle de puntaje:** tfidf=0.0639; bonus=0.0100
+
+> variada, estructurada, explícita y, al mismo tiempo, ambigua, creativa y tradicional en cada nueva manifestación. Por tanto, se trata de ofrecer al estudiante universitario recursos variados y polivalentes de escritura académica, evitando modelos pre- establecidos de escritura y ofreciéndole posibilidades diferenciadas de elaboración de sus escritos académicos. Se trata, también, de revisar algunos conceptos basados en teorías tradicionales (que priorizan la eficacia y la organización) para contraponerlos a los conceptos que se amparan en teorías críticas (que insisten en la reflexión y en la emancipación).
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 20 — similitud 0.0734
+
+**Detalle de puntaje:** tfidf=0.0534; bonus=0.0200
+
+> investigaciones sobre la escritura de estudiantes de los diferentes niveles educativos. El modelo de Flower y Hayes, propuesto en el año 1981 en A Cognitive Process Theory of Writing y matizado por los mismos autores años después, tiene en cuenta el problema retórico, la memoria a largo plazo y tres procesos interrelacionados, que son la planificación, la traducción y la revisión. A partir de estos procesos, se han propuesto una serie de estrategias o habilidades de la expresión escrita que todo estudiante universitario ha de tener en cuenta (Cassany, Luna y Sanz, 1994; Prado, 2004).
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 137 — similitud 0.0727
+
+**Detalle de puntaje:** tfidf=0.0627; bonus=0.0100
+
+> 3. La escritura académica como comunicación. La importancia de un cierto distanciamiento entre la escritura y el estudiante.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 20 — similitud 0.0692
+
+**Detalle de puntaje:** tfidf=0.0592; bonus=0.0100
+
+> A partir de estos procesos, se han propuesto una serie de estrategias o habilidades de la expresión escrita que todo estudiante universitario ha de tener en cuenta (Cassany, Luna y Sanz, 1994; Prado, 2004). Estas se pueden incluir, en general, en cuatro grandes estrategias: análisis de la situación de comunicación, planificación, redacción o textualización y revisión.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 86 — similitud 0.0673
+
+**Detalle de puntaje:** tfidf=0.0473; bonus=0.0200
+
+> En otros casos, no se trata exactamente del valor y poder de la audiencia, sino del género discursivo (una especie de audiencia virtual con capacidad para predefinir la forma de configurar los textos escritos pertenecientes a cada género: una tesis, un artículo de revista, un trabajo de clase, etc.). Digamos, por tanto, que en sede académica, el peso de una escritura reglada, orientada a la audiencia, es preponderante.
+
+### Taller de lectura y redaccion_ - Leopoldo Ayala.pdf — p. 45 — similitud 0.0655
+
+**Detalle de puntaje:** tfidf=0.0555; bonus=0.0100
+
+> LECTURA EN VOZ ALTA En la expresión escrita participa el mundo del que escribe. La expresión es participación, comunicación, y con mayor razón aún la expresión escrita de la lengua literaria. El narrador, el poeta, utilizan como puente para la comunicación su arte escrito, y lo hacen manifestándose a los demás con la responsabilidad y el auténtico sentido humano, que les permite el tratar de comprender a los otros y haberse comprendido a sí mismos.
+
+### Taller de lectura y redaccion_ - Leopoldo Ayala.pdf — p. 19 — similitud 0.0649
+
+**Detalle de puntaje:** tfidf=0.0549; bonus=0.0100
+
+> EL LENGUAJE COMO MEDIO DE COMUNICACIÓN Las especies humana y animal se diferencian por el tipo de lenguaje que em- plean. En este capítulo abordaremos el lenguaje humano.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 123 — similitud 0.0648
+
+**Detalle de puntaje:** tfidf=0.0348; bonus=0.0300
+
+> Los profesores guías deben reunirse con sus estudiantes al menos dos veces durante el semestre y/o corregir de forma virtual las dos entregas parciales mínimas de la investigación. En caso de que el trabajo se extienda por más de un semestre, se debe solicitar una ampliación de la Inscripción del Proyecto.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 16 — similitud 0.0645
+
+**Detalle de puntaje:** tfidf=0.0545; bonus=0.0100
+
+> Con la escritura, se da un proceso inverso: nuestros aciertos son considerados algo esperado, y nuestros errores merecedores de críticas, generalmente acompañas de ríos de líneas reprobatorias que salen del lápiz rojo del profesor recolector de errores. No es de extrañar que de forma bien temprana tendamos a percibir la escritura como un producto, no como un proceso.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 10 — similitud 0.0644
+
+**Detalle de puntaje:** tfidf=0.0444; bonus=0.0200
+
+> Introducción En la sociedad globalizada del conocimiento o del aprendizaje, líquida y digital, las personas han de tener la capacidad para adaptarse a un cambio continuo. De esta manera, entre otras muchas, el desempeño en la escritura se erige como una competencia clave para el aprendizaje en la educación superior.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 153 — similitud 0.0635
+
+**Detalle de puntaje:** tfidf=0.0435; bonus=0.0200
+
+> CANTÓN, I. y TARDIF, M.: Identidad profesional docente. CEBRIÁN, M. (Coord.): Enseñanza virtual para la innovación universitaria. CÔRTE VITÓRIA, M.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 5 — similitud 0.0631
+
+**Detalle de puntaje:** tfidf=0.0431; bonus=0.0200
+
+> EPÍLOGO. SIETE PRINCIPIOS PARA EL DESARROLLO DE LA COMPETENCIA DE LA ESCRITURA EN LAS UNIVERSIDADES La escritura académica como comunicación La importancia de un cierto distanciamiento entre la escritura y el estudiante La corrección del texto como ejercicio de autocorrección, mediada por el profesor, pero protagonizada por el estudiante La importancia de la escritura de diferentes géneros textuales No hay buena escritura sin una lectura constante Evaluación de los procesos de escritura académica en la educación superior Convertir la escritura en una rutina amable y afectiva BIBLIOGRAFÍA 5
+
+**Observación automática:** La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 14 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 03. Claridad
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.3618
+**Similitud promedio:** 0.1257
+**Fuentes:** La escritura academica en la fo - Maria Ines Corte Vitoria.pdf; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf
+**Ubicaciones:** La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 118; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 126; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 13; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 137; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 139; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 144; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 145; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 44; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 49; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 50; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 52; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 62; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 70; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 76; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf, p. 145; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf, p. 151; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf, p. 162; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf, p. 163; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf, p. 48; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf, p. 94
+
+### Taller de lectura y redaccion_ - Leopoldo Ayala.pdf — p. 151 — similitud 0.3618
+
+**Detalle de puntaje:** tfidf=0.2918; bonus=0.0700
+
+> Son reglas o requisitos que debe contener un buen texto. Éstas son: claridad, concisión, sencillez, naturalidad y originalidad. Claridad Claridad significa escribir con un pensamiento diáfano, comprensible, directo, con los conceptos bien digeridos.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 144 — similitud 0.1781
+
+**Detalle de puntaje:** tfidf=0.1081; bonus=0.0700
+
+> El análisis del qué escribir depende del contexto en el que surja el texto. En el control del cómo se escribe entran características generales de toda escritura: la expresión formal, la estructura del tipo de texto solicitado, las convenciones ortográficas, los elementos de cohesión y de coherencia, la atención a las consignas y pautas de trabajo, la claridad y objetividad de la escritura, la consistencia de las ideas presentadas. Conviene prestar atención a que hay claras diferencia entre escribir bonito y escribir claro.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 145 — similitud 0.1568
+
+**Detalle de puntaje:** tfidf=0.0868; bonus=0.0700
+
+> textos de los docentes como a los de los estudiantes. En nuestro caso, podemos sugerir al estudiante que inicia sus primeras escrituras académicas algunas estrategias facilitadoras de la claridad: frases cortas, estructura canónica de las frases (sujeto, verbo y complementos), etc. También ayuda a mejorar los escritos la lectura de los textos por los pares, pues la horizontalidad de la colaboración facilita que surjan preguntas del tipo: «¿qué quisiste decir en este párrafo?» o «¿qué significa esto que está escrito aquí?».
+
+### Taller de lectura y redaccion_ - Leopoldo Ayala.pdf — p. 151 — similitud 0.1450
+
+**Detalle de puntaje:** tfidf=0.1250; bonus=0.0200
+
+> LIBRO DE CONSULTA 151 y cuando me lo estás allá haciendo, sabe que estoy haciendo la deshecha. SOR JUANA INÉS DE LA CRUZ CUALIDADES DEL ESTILO Tradicionalmente las cualidades del estilo fueron señaladas por Azorín, y por válidas se tomaron durante el siglo XX. Azorín considera cuatro cualidades primordiales del estilo, agregaremos una más.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 118 — similitud 0.1307
+
+**Detalle de puntaje:** tfidf=0.0607; bonus=0.0700
+
+> Todo ello sin olvidar las condiciones generales de los textos escritos en sede académica, o sea, una elaboración que evidencie coherencia temática, protocolos de lenguaje, estructura formal, objetividad, claridad, punto de vista, convenciones ortográficas y gramaticales. Los trabajos de final de graduación en Latinoamérica Este libro se propone discutir las cuestiones relacionadas con la escritura académica que, como ya hemos comentado, afronta dos retos principales: aprender a escribir con la calidad que exige la Educación Superior y aprender los contenidos formativos propios de cada especialidad a través de la escritura.
+
+### Taller de lectura y redaccion_ - Leopoldo Ayala.pdf — p. 163 — similitud 0.1260
+
+**Detalle de puntaje:** tfidf=0.0560; bonus=0.0700
+
+> Anfibología Anfi significa dos. La anfibología es la falta de claridad en una expresión. Cuan- do una frase da lugar a dos o más formas de entenderse o interpretarse, se dice que hay anfibología.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 49 — similitud 0.1247
+
+**Detalle de puntaje:** tfidf=0.0947; bonus=0.0300
+
+> No se trata, pues, de analizar solo lo que el estudiante escribe, sino también cómo lo escribe. Nuestro planteamiento es que debemos considerar la escritura académica como una producción cultural. La escritura académica en función de la modalidad de input
+
+### Taller de lectura y redaccion_ - Leopoldo Ayala.pdf — p. 151 — similitud 0.1235
+
+**Detalle de puntaje:** tfidf=0.0535; bonus=0.0700
+
+> Ejemplo de claridad es el fragmento del poema Vámonos patria a caminar, del poeta guatemalteco Otto René Castillo, maestro del frente Edgar Ibarra de las FAR, muerto en Sierra de Minas en 1967. VÁMONOS PATRIA A CAMINAR, YO TE ACOMPAÑO Yo bajaré los abismos que me digas.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 52 — similitud 0.1224
+
+**Detalle de puntaje:** tfidf=0.0924; bonus=0.0300
+
+> Escritura y carrera académica La escritura académica como género Una de las cuestiones importantes a considerar, cuando hablamos de escritura académica, es la del género, esto es, las diversas formas de discurso. Entre ellos está, obviamente, el discurso académico.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 62 — similitud 0.1213
+
+**Detalle de puntaje:** tfidf=0.0513; bonus=0.0700
+
+> Nuestra intención es que las contribuciones teóricas nos ayuden a comprender los problemas reales de los estudiantes, o sea, los que se evidencian en el uso de la lengua escrita. Algunos de los más mencionados son: convenciones ortográficas, gramática y semántica, problemas de estructura y contenido, claridad, consistencia, autonomía, estructura del párrafo, cohesión textual, coherencia textual, carácter disertativo, argumentación adecuada, criticidad y calidad estilística.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 50 — similitud 0.1185
+
+**Detalle de puntaje:** tfidf=0.0485; bonus=0.0700
+
+> Cada texto escrito fue analizado bajo 11 variables: claridad, consistencia, estructura de párrafo, cohesión textual, coherencia textual, carácter expositivo, competencia de argumentación, convenciones ortográficas, puntuación, morfosintaxis y semántica. He aquí algunos de los resultados de esta investigación: • Al dar pie a géneros textuales distintos a partir de las diferentes modalidades de presentación de la información, se han movilizado variados procesos de codificación y recodificación de signos, exigiendo de los estudiantes la activación de habilidades mentales múltiples para poder completar la tarea.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 76 — similitud 0.1168
+
+**Detalle de puntaje:** tfidf=0.0968; bonus=0.0200
+
+> De todas formas, esa vinculación entre la ciencia y el arte es consustancial a la buena enseñanza. Las investigaciones van iluminando algunos espacios inciertos en los procesos de escritura (por ejemplo, el funcionamiento del cerebro al escribir), van identificando algunos patrones de actuación docente que resultan más funcionales y eficaces en el aprendizaje de la escritura (por ejemplo, la combinación entre componentes mecánicos y formales de la escritura y componentes cognitivos) y otros que conviene descartar por ineficaces o desorientadores (como la mera insistencia en los aspectos formales).
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 13 — similitud 0.1145
+
+**Detalle de puntaje:** tfidf=0.0745; bonus=0.0400
+
+> variada, estructurada, explícita y, al mismo tiempo, ambigua, creativa y tradicional en cada nueva manifestación. Por tanto, se trata de ofrecer al estudiante universitario recursos variados y polivalentes de escritura académica, evitando modelos pre- establecidos de escritura y ofreciéndole posibilidades diferenciadas de elaboración de sus escritos académicos. Se trata, también, de revisar algunos conceptos basados en teorías tradicionales (que priorizan la eficacia y la organización) para contraponerlos a los conceptos que se amparan en teorías críticas (que insisten en la reflexión y en la emancipación).
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 144 — similitud 0.1096
+
+**Detalle de puntaje:** tfidf=0.0696; bonus=0.0400
+
+> Conviene prestar atención a que hay claras diferencia entre escribir bonito y escribir claro. Por eso insistimos en la idea de que la escritura académica trata más de la claridad que de la belleza, o sea, lo que importa es expresarse de manera objetiva y clara, evitando que el lector intente adivinar lo que el autor quiso decir. Y esto afecta tanto a 144
+
+### Taller de lectura y redaccion_ - Leopoldo Ayala.pdf — p. 162 — similitud 0.1091
+
+**Detalle de puntaje:** tfidf=0.0891; bonus=0.0200
+
+> Lo que es indispensable señalar es que las grandes obras de la literatura universal deben tener una lengua literaria que todos puedan entender y comprender. VICIOS DEL ESTILO Para tener un buen estilo en redacción no basta con observar las cualidades, sino evitar los vicios y defectos. Los vicios del estilo son frases incorrectas, tanto en la estructura de las palabras como en la sintaxis.
+
+### Taller de lectura y redaccion_ - Leopoldo Ayala.pdf — p. 48 — similitud 0.1085
+
+**Detalle de puntaje:** tfidf=0.0785; bonus=0.0300
+
+> Los defectos más frecuen- tes son: la ininteligibilidad, monotonía, lentitud y apresuramiento. Ininteligibilidad La falta de dicción, la falta de claridad, la falta de puntuación y sobre todo la excesiva rapidez, ocasionan la ininteligibilidad. Lo ininteligible es lo que no se comprende fácilmente.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 137 — similitud 0.1055
+
+**Detalle de puntaje:** tfidf=0.0855; bonus=0.0200
+
+> 3. La escritura académica como comunicación. La importancia de un cierto distanciamiento entre la escritura y el estudiante.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 139 — similitud 0.0998
+
+**Detalle de puntaje:** tfidf=0.0698; bonus=0.0300
+
+> Por eso mismo, registrar sin vacilación lo que nos viene a la cabeza, incluso si esa primera escritura fuera aparentemente tosca y primaria, significa dar un gran paso en la dirección a una escritura que será mejorada y cuidada en momentos posteriores. Solo podemos mejorar aquello que ya existe y es precisamente esa idea de escritura académica la que queremos enfatizar: el distanciamiento como forma de analizar y reelaborar la propia escritura con más precisión y objetividad.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 126 — similitud 0.0993
+
+**Detalle de puntaje:** tfidf=0.0793; bonus=0.0200
+
+> En las carreras que sí exigen textos académicos, la tendencia es a unificarlos en un solo trabajo de egreso. Las dificultades más marcadas de los estudiantes uruguayos en la escritura académica tienen que ver, sobre todo con el contenido.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 44 — similitud 0.0942
+
+**Detalle de puntaje:** tfidf=0.0542; bonus=0.0400
+
+> Si no tenemos una idea inicial clara, todo irá mal; pero también irá mal aunque esta idea inicial esté clara, si no somos capaces de decodificarla bien (por ejemplo, cuando tenemos que escribir algo en una lengua que no es la nuestra o cuando tenemos que hacer un dibujo que represente la idea que queremos comunicar, si no somos buenos dibujantes). Igualmente, la comunicación irá mal si, pese a tener clara la idea y saber codificarla bien, no se poseen buenos transmisores (letra que no se entiende, voz que no se oye, etc.).
+
+### Taller de lectura y redaccion_ - Leopoldo Ayala.pdf — p. 145 — similitud 0.0923
+
+**Detalle de puntaje:** tfidf=0.0823; bonus=0.0100
+
+> ELEMENTOS E IMPORTANCIA DEL ESTILO LITERARIO El estilo es a la obra literaria como la personalidad al individuo. Hay tantos estilos como seres humanos.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 70 — similitud 0.0678
+
+**Detalle de puntaje:** tfidf=0.0478; bonus=0.0200
+
+> Es necesario considerar, en consecuencia, que cuando se habla de totalidad textual, no se está hablando de una totalidad cerrada en torno a la idea de cohesión e indiferente a las finalidades que orientan la producción del texto escrito sino, justamente, de una condición de la calidad del texto supeditada a que este pueda cumplir con eficacia su propósito comunicativo. La cohesión textual resulta importante en la medida en que mejora la eficacia del texto.
+
+### Taller de lectura y redaccion_ - Leopoldo Ayala.pdf — p. 94 — similitud 0.0657
+
+**Detalle de puntaje:** tfidf=0.0357; bonus=0.0300
+
+> La noticia, aunque breve, debe contener toda la información que permita el conocimiento del suceso para formarse un criterio. Es importante señalar que todos los principios de expresión escrita y del estilo deberán apli- carse a fin de lograr una redacción correcta, ágil y directa. El único contacto entre el hecho y el lector es la información que proporciona el periodista.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 2 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 04. Coherencia
+
+**Calidad estimada:** media
+**Mejor similitud:** 0.2658
+**Similitud promedio:** 0.1220
+**Fuentes:** Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf
+**Ubicaciones:** Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 17; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 22; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 78; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 86; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 118; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 22; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 43; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 50; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 62; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 67; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 69; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 70; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 71; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 81; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 99; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf, p. 56
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 70 — similitud 0.2658
+
+**Detalle de puntaje:** tfidf=0.1958; bonus=0.0700
+
+> Ante la falta de un repertorio más amplio o de una reflexión más profunda acerca de lo que cada elemento cohesivo representa, el estudiante utiliza los más usuales para casi todas las situaciones. Problemas de coherencia: ¿qué hacer? La coherencia textual pone el foco de atención en la estructura del texto.
+
+### Taller de lectura y redaccion_ - Leopoldo Ayala.pdf — p. 56 — similitud 0.1732
+
+**Detalle de puntaje:** tfidf=0.1032; bonus=0.0700
+
+> Desarrollar ordenadamente las ideas nos garantiza la coherencia y la efectivi- dad. Recomendamos ejercicios de memorización en el orden de diferentes ideas, a fin de adquirir la experiencia necesaria.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 71 — similitud 0.1633
+
+**Detalle de puntaje:** tfidf=0.0933; bonus=0.0700
+
+> ver, también, con la pertinencia entre texto y contexto: incoherente es el texto que no responde adecuadamente al sentido que tiene, a lo que se espera de él en el contexto en el que se produce. Conviene recordar que estamos hablando de estudiantes universitarios cuya búsqueda de coherencia viene muy matizada por su particular estatuto de estudiante y por el contexto en que se ve forzado a construir sus textos.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 71 — similitud 0.1549
+
+**Detalle de puntaje:** tfidf=0.0849; bonus=0.0700
+
+> Si se examinan los problemas de coherencia en los textos de nuestros estudiantes es fácil constatar que se trata de una dimensión que se ve muy afectada por las condiciones que el contexto académico impone a la realización de dichos textos. Si el escribir significa desarrollar una actividad que existe exclusivamente en función del propio ambiente escolar, algo cuyo valor es exclusivamente escolar y cuyo destino es cumplir una exigencia circunstancial, no será fácil convencer a los estudiantes para que desarrollen el esfuerzo que conlleva la coherencia.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 67 — similitud 0.1367
+
+**Detalle de puntaje:** tfidf=0.0667; bonus=0.0700
+
+> En Argentina, el estudio llevado a cabo por Di Stefano y Pereira (2004) también encuentra problemas importantes en la escritura de los universitarios de su país. Entre ellos mencionan: — — — — — Errores léxico-semánticos que afectan a la coherencia. Errores en las relaciones anafóricas que llevan a perder la continuidad.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 86 — similitud 0.1309
+
+**Detalle de puntaje:** tfidf=0.0609; bonus=0.0700
+
+> Tener en cuenta al lector o destinatario, es decir, el profesor. — Planificar la escritura. — Citar correctamente la bibliografía utilizada, en caso de ser un examen domiciliario. — No utilizar expresiones del registro coloquial/oral. — Seleccionar adecuadamente el léxico terminológico de acuerdo con las teorías involucradas en el temario. — Tener en cuenta la coherencia, la progresión temática y la cohesión del texto que se presenta. — Adecuarse estrictamente a las operaciones cognitivas solicitadas en la consigna. — Revisar el texto escrito antes de entregarlo. REFERENCIAS BIBLIOGRÁFICAS
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 118 — similitud 0.1288
+
+**Detalle de puntaje:** tfidf=0.0588; bonus=0.0700
+
+> Todo ello sin olvidar las condiciones generales de los textos escritos en sede académica, o sea, una elaboración que evidencie coherencia temática, protocolos de lenguaje, estructura formal, objetividad, claridad, punto de vista, convenciones ortográficas y gramaticales. Los trabajos de final de graduación en Latinoamérica Este libro se propone discutir las cuestiones relacionadas con la escritura académica que, como ya hemos comentado, afronta dos retos principales: aprender a escribir con la calidad que exige la Educación Superior y aprender los contenidos formativos propios de cada especialidad a través de la escritura.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 99 — similitud 0.1268
+
+**Detalle de puntaje:** tfidf=0.0568; bonus=0.0700
+
+> No es frecuente que las universidades potencien esta policromía de expresiones y textos. Tal vez eso explique por qué no siempre hay coherencia entre lo que los estudiantes quisieran escribir y lo lo que tienen que escribir; ni entre las demandas que los profesores les hacemos y los productos que ellos elaboran. Estudiantes-autores Además, merece destacarse el compromiso de los estudiantes con su propia escritura, 99
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 22 — similitud 0.1112
+
+**Detalle de puntaje:** tfidf=0.0712; bonus=0.0400
+
+> Así, algunos errores frecuentes son, por ejemplo, la falta de concordancia, la pobreza e imprecisión del léxico, el predominio de un registro coloquial y formas propias de la oralidad, la alternancia de registros y de características concretas de unos géneros en otros, la presencia de un modelo reproductivo con prevalencia del plagio, las continuas digresiones, la falta de progresión temática y de jerarquía en la información, la descontextualización o una revisión centrada en aspectos superficiales.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 62 — similitud 0.1112
+
+**Detalle de puntaje:** tfidf=0.0812; bonus=0.0300
+
+> Nuestra intención es que las contribuciones teóricas nos ayuden a comprender los problemas reales de los estudiantes, o sea, los que se evidencian en el uso de la lengua escrita. Algunos de los más mencionados son: convenciones ortográficas, gramática y semántica, problemas de estructura y contenido, claridad, consistencia, autonomía, estructura del párrafo, cohesión textual, coherencia textual, carácter disertativo, argumentación adecuada, criticidad y calidad estilística.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 70 — similitud 0.1084
+
+**Detalle de puntaje:** tfidf=0.0884; bonus=0.0200
+
+> Problemas de coherencia: ¿qué hacer? La coherencia textual pone el foco de atención en la estructura del texto. Coherencia es la forma en que las ideas contenidas en el texto se vinculan entre sí.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 50 — similitud 0.1067
+
+**Detalle de puntaje:** tfidf=0.0767; bonus=0.0300
+
+> Cada texto escrito fue analizado bajo 11 variables: claridad, consistencia, estructura de párrafo, cohesión textual, coherencia textual, carácter expositivo, competencia de argumentación, convenciones ortográficas, puntuación, morfosintaxis y semántica. He aquí algunos de los resultados de esta investigación: • Al dar pie a géneros textuales distintos a partir de las diferentes modalidades de presentación de la información, se han movilizado variados procesos de codificación y recodificación de signos, exigiendo de los estudiantes la activación de habilidades mentales múltiples para poder completar la tarea.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 22 — similitud 0.1021
+
+**Detalle de puntaje:** tfidf=0.0721; bonus=0.0300
+
+> Actualmente, un vasto campo interdisciplinar —desde la pragmática, la lingüística del texto, la etnografía de la comunicación y la semiótica textual, hasta la sociolingüística, los enfoques socio-cognitivos y el análisis del discurso— aparecen como nuevas posibilidades para abordar el trabajo educativo con la escritura académica. También las aportaciones de la neurociencia nos han abierto nuevos campos de consideración sobre el desarrollo de las capacidades de los individuos y lo que eso significa en relación a la escritura.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 17 — similitud 0.1016
+
+**Detalle de puntaje:** tfidf=0.0916; bonus=0.0100
+
+> Se aprenderá que la verdad es, entonces, «una declaración que los miembros de una comunidad epistémica aceptan como correspondiente a aquello que ven como hechos» (Van Dijk, 2002, p. 6) pero que puede ser interpretada por otra comunidad epistémica con criterios de conocimiento divergentes como falsa, incompleta,
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 71 — similitud 0.0940
+
+**Detalle de puntaje:** tfidf=0.0640; bonus=0.0300
+
+> Conviene recordar que estamos hablando de estudiantes universitarios cuya búsqueda de coherencia viene muy matizada por su particular estatuto de estudiante y por el contexto en que se ve forzado a construir sus textos. El estudiante, en general, no se siente ni actúa como autor natural de un texto académico sino como el estudiante que cumple con una tarea escolar obligatoria que procura desarrollar de la manera más simple y rápida; para el estudiante supone solo una tarea más que ha venido precedida de otras y será seguida por otras.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 78 — similitud 0.0917
+
+**Detalle de puntaje:** tfidf=0.0717; bonus=0.0200
+
+> 5. Revisión, corrección y escritura final del resumen, atendiendo a su coherencia y a su cohesión. Por otro lado, algunos recursos estilísticos propios del resumen son:
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 43 — similitud 0.0913
+
+**Detalle de puntaje:** tfidf=0.0613; bonus=0.0300
+
+> Por lo general, la estructura interna de la competencia en escritura suele recoger los siguientes componentes: Diseñar un plan para la elaboración del texto. Conocer y mantener en todo momento las exigencias de coherencia, pertinencia y cohesión.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 81 — similitud 0.0817
+
+**Detalle de puntaje:** tfidf=0.0517; bonus=0.0300
+
+> El dilema entre los componentes lingüísticos y los componentes sociales del discurso: la idea de los géneros Cualquier texto puede ser analizado desde el punto de vista lingüístico (aspectos formales, semánticos y sintácticos) y desde el punto de vista de su naturaleza como hecho social comunicativo (perspectiva pragmática). En algún sentido, el polo lingüístico significa considerar el texto como un objeto con sentido en sí mismo mientras el polo social sitúa el texto en su contexto comunicativa (por qué y para qué se escribe, para quién, bajo qué condiciones, etc.).
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 81 — similitud 0.0811
+
+**Detalle de puntaje:** tfidf=0.0511; bonus=0.0300
+
+> En algún sentido, el polo lingüístico significa considerar el texto como un objeto con sentido en sí mismo mientras el polo social sitúa el texto en su contexto comunicativa (por qué y para qué se escribe, para quién, bajo qué condiciones, etc.). De esa conjunción entre contenido y contexto nace el concepto social de género discursivo (que en nuestro caso es género textual). El concepto de género nos ayuda a situar las producciones textuales en unos contextos determinados: las comunidades de 81
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 69 — similitud 0.0786
+
+**Detalle de puntaje:** tfidf=0.0586; bonus=0.0200
+
+> Pécora (2002) se refiere a una textualidad que depende, en gran parte, de ciertos factores responsables de la cohesión textual, concepto semántico que se refiere a las relaciones de sentido que se establece entre los enunciados que componen un texto, haciendo que la interpretación de un elemento sea dependiente de la interpretación de los otros elementos que configuran el texto. La cohesión textual, tal como fue desarrollada especialmente por Halliday (1976), se refiere al hecho de que un texto no es el producto de una yuxtaposición de elementos lingüísticos sin referencia entre sí.
+
+**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 1 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 05. Cohesión
+
+**Calidad estimada:** media
+**Mejor similitud:** 0.2111
+**Similitud promedio:** 0.1201
+**Fuentes:** Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf
+**Ubicaciones:** Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 100; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 107; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 56; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 78; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 83; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 86; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 126; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 144; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 43; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 50; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 62; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 69; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 70
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 70 — similitud 0.2111
+
+**Detalle de puntaje:** tfidf=0.1411; bonus=0.0700
+
+> Cada uno de ellos funciona en el marco de las condiciones que el propio contexto comunicativo y textual le marcan. Por lo tanto, cabe decir que existe cohesión en un texto cuando los elementos de dicho texto se relacionan mutuamente y, de esa forma, configuran la identidad el texto como un todo unitario. Cuando hablamos de la noción de totalidad, es preciso considerar algunas cuestiones que Halliday no desarrolla y que se refieren, sobre todo, a la caracterización del texto como un uso particular del lenguaje que tiene una función comunicativa.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 70 — similitud 0.1863
+
+**Detalle de puntaje:** tfidf=0.1463; bonus=0.0400
+
+> Un texto puede ser incoherente porque las cosas que dice se contradicen entre sí; puede serlo, igualmente, cuando la posición de dichas ideas no resulta adecuada porque dificulta la comprensión del texto como un todo o porque el juego entre ideas principales y secundarias resulta confuso; incoherencia es que las ideas se repitan innecesariamente. La coherencia tiene que ver con el interior del texto pero tiene que 70
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 70 — similitud 0.1701
+
+**Detalle de puntaje:** tfidf=0.1001; bonus=0.0700
+
+> Es necesario considerar, en consecuencia, que cuando se habla de totalidad textual, no se está hablando de una totalidad cerrada en torno a la idea de cohesión e indiferente a las finalidades que orientan la producción del texto escrito sino, justamente, de una condición de la calidad del texto supeditada a que este pueda cumplir con eficacia su propósito comunicativo. La cohesión textual resulta importante en la medida en que mejora la eficacia del texto.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 69 — similitud 0.1619
+
+**Detalle de puntaje:** tfidf=0.0919; bonus=0.0700
+
+> Pécora (2002) se refiere a una textualidad que depende, en gran parte, de ciertos factores responsables de la cohesión textual, concepto semántico que se refiere a las relaciones de sentido que se establece entre los enunciados que componen un texto, haciendo que la interpretación de un elemento sea dependiente de la interpretación de los otros elementos que configuran el texto. La cohesión textual, tal como fue desarrollada especialmente por Halliday (1976), se refiere al hecho de que un texto no es el producto de una yuxtaposición de elementos lingüísticos sin referencia entre sí.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 86 — similitud 0.1358
+
+**Detalle de puntaje:** tfidf=0.0658; bonus=0.0700
+
+> Tener en cuenta al lector o destinatario, es decir, el profesor. — Planificar la escritura. — Citar correctamente la bibliografía utilizada, en caso de ser un examen domiciliario. — No utilizar expresiones del registro coloquial/oral. — Seleccionar adecuadamente el léxico terminológico de acuerdo con las teorías involucradas en el temario. — Tener en cuenta la coherencia, la progresión temática y la cohesión del texto que se presenta. — Adecuarse estrictamente a las operaciones cognitivas solicitadas en la consigna. — Revisar el texto escrito antes de entregarlo. REFERENCIAS BIBLIOGRÁFICAS
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 144 — similitud 0.1266
+
+**Detalle de puntaje:** tfidf=0.0566; bonus=0.0700
+
+> El análisis del qué escribir depende del contexto en el que surja el texto. En el control del cómo se escribe entran características generales de toda escritura: la expresión formal, la estructura del tipo de texto solicitado, las convenciones ortográficas, los elementos de cohesión y de coherencia, la atención a las consignas y pautas de trabajo, la claridad y objetividad de la escritura, la consistencia de las ideas presentadas. Conviene prestar atención a que hay claras diferencia entre escribir bonito y escribir claro.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 78 — similitud 0.1254
+
+**Detalle de puntaje:** tfidf=0.0554; bonus=0.0700
+
+> 5. Revisión, corrección y escritura final del resumen, atendiendo a su coherencia y a su cohesión. Por otro lado, algunos recursos estilísticos propios del resumen son:
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 62 — similitud 0.1237
+
+**Detalle de puntaje:** tfidf=0.0537; bonus=0.0700
+
+> Nuestra intención es que las contribuciones teóricas nos ayuden a comprender los problemas reales de los estudiantes, o sea, los que se evidencian en el uso de la lengua escrita. Algunos de los más mencionados son: convenciones ortográficas, gramática y semántica, problemas de estructura y contenido, claridad, consistencia, autonomía, estructura del párrafo, cohesión textual, coherencia textual, carácter disertativo, argumentación adecuada, criticidad y calidad estilística.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 50 — similitud 0.1208
+
+**Detalle de puntaje:** tfidf=0.0508; bonus=0.0700
+
+> Cada texto escrito fue analizado bajo 11 variables: claridad, consistencia, estructura de párrafo, cohesión textual, coherencia textual, carácter expositivo, competencia de argumentación, convenciones ortográficas, puntuación, morfosintaxis y semántica. He aquí algunos de los resultados de esta investigación: • Al dar pie a géneros textuales distintos a partir de las diferentes modalidades de presentación de la información, se han movilizado variados procesos de codificación y recodificación de signos, exigiendo de los estudiantes la activación de habilidades mentales múltiples para poder completar la tarea.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 78 — similitud 0.1133
+
+**Detalle de puntaje:** tfidf=0.0733; bonus=0.0400
+
+> Además, en el nuevo texto, se tendrá en cuenta el empleo del léxico especializado propio del texto base, así como la aplicación de operaciones resuntivas (suprimir, seleccionar, generalizar e integrar), que permitan conservar la información elemental e imprescindible de la fuente. Sintéticamente, los pasos necesarios para hacer un resumen son los siguientes: 1.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 70 — similitud 0.1019
+
+**Detalle de puntaje:** tfidf=0.0819; bonus=0.0200
+
+> un texto: sustitución, elipse, repetición y coordinación. Cada uno de ellos funciona en el marco de las condiciones que el propio contexto comunicativo y textual le marcan.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 43 — similitud 0.0907
+
+**Detalle de puntaje:** tfidf=0.0607; bonus=0.0300
+
+> condiciones formales, etc.) de un texto académico; bien porque no se han establecido bien los objetivos a alcanzar o una vez establecidos no se han tomado en consideración; bien porque no se ha trabajado suficientemente la documentación necesaria para realizar el trabajo (trabajos muy de opinión, muy superficiales, de corta y pega). De esa forma, las capacidades puestas en curso en el desarrollo de la escritura son varias y de distinta naturaleza, todas moldeadas por el cerebro que, al mismo tiempo, se transforma, se cambia, se modifica.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 126 — similitud 0.0891
+
+**Detalle de puntaje:** tfidf=0.0491; bonus=0.0400
+
+> Otras carreras como las licenciaturas en Letras o Ciencias Sociales piden monográficos. O sea, la modalidad de texto académico requerido depende de la carrera que se esté cursando. En casos de gran afluencia de matrícula, los trabajos de investigación debieron ser sustituidos por otras modalidades de evaluación.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 107 — similitud 0.0889
+
+**Detalle de puntaje:** tfidf=0.0789; bonus=0.0100
+
+> B2. refutación refutación 5.3. EL USO DE LOS CONECTORES EN LA ARGUMENTACIÓN Como se ha podido observar, en los textos argumentativos adquieren gran relevancia los conectores. Por ejemplo, entre los argumentos y la conclusión hay o se pueden reponer conectores de causa (como porque, dado que, puesto que, ya que) o de consecuencia (como por tanto, en consecuencia, como resultado) según el caso.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 83 — similitud 0.0756
+
+**Detalle de puntaje:** tfidf=0.0456; bonus=0.0300
+
+> Leer luego de las partes centrales de la monografía y verificar que no se haya omitido ningu información. Revisar la cohesión textual, la conexión interpárrafos, la gramática adecuación léxica.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 56 — similitud 0.0607
+
+**Detalle de puntaje:** tfidf=0.0507; bonus=0.0100
+
+> 2.4.1. ¿Víctor o Victoria?: cuestiones de género gramatical Para formar el femenino en español se distingue entre los sustantivos que designan seres animados o no, porque siguen procedimientos diferentes, como se muestra a continuación (RAE, 2009, 2010b): a) Si se refieren a seres sexuados, la tendencia de la lengua es reflejar la realidad biológica en lo gramatical mediante los siguientes procedimientos: — Alternancia genérica o desdoblamiento vocálico: es el modo de indicar el cambio de género gramatical mediante morfemas que designan el sexo del referente, manteniendo la misma raíz del sustantivo para ambas formas (niño / niña; también, profesor / profesora; actor / actriz; nene / nena...
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 100 — similitud 0.0599
+
+**Detalle de puntaje:** tfidf=0.0399; bonus=0.0200
+
+> DESAGENTIVACIÓN DISCURSIVA EN LA EXPOSICIÓN Uno de los rasgos más sobresalientes de las exposiciones es la tendencia al borrado de las formas modalizantes y marcas deícticas y valorativas del enunciador, que no resultan aconsejables en un tipo textual cuya finalidad es eminentemente cognitiva. Este efecto de objetividad se logra mediante la aplicación de múltiples mecanismos léxicos y gramaticales que, a su vez, facilitan la construcción de estos conceptos de manera más general y abstracta, lo cual es relevante dado que los referentes no son objetos o entidades observables sino postulados teóricos.
+
+**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 3 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 06. Formalidad
+
+**Calidad estimada:** baja
+**Mejor similitud:** 0.0927
+**Similitud promedio:** 0.0610
+**Fuentes:** Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf
+**Ubicaciones:** Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 112; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 113; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 137; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 38; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 77; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 96; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 11; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 119; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 120; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 16; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 28; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 35; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 42; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 57; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 63; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 64; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 90; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf, p. 247; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf, p. 74
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 120 — similitud 0.0927
+
+**Detalle de puntaje:** tfidf=0.0727; bonus=0.0200
+
+> que este trabajo podrá ser presentado para concluir, con él, los requisitos curriculares de la titulación. En lo que se refiere a los requisitos formales a los que se han de ajustar los TFG, por lo general, la legislación otorga autonomía a las universidades para poder establecerlos.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 90 — similitud 0.0910
+
+**Detalle de puntaje:** tfidf=0.0710; bonus=0.0200
+
+> En fin, que la tarea de escribir constituye una secuencia de momentos en la que ninguno de ellos puede ni debe ser omitido, pues iría en detrimento de la calidad de nuestra escritura. Con todo, la experiencia como docentes nos señala que no es demasiado operativo insistir en poner muchas condiciones y requisitos al acto de escribir. Insistir demasiado en ellas puede llevar a algunos estudiantes más perfeccionistas a no comenzar nunca con la escritura propiamente dicha, consumiendo su tiempo en la preparación o a agobiarse ante la complejidad de lograr una buena escritura.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 16 — similitud 0.0783
+
+**Detalle de puntaje:** tfidf=0.0583; bonus=0.0200
+
+> Con la escritura, se da un proceso inverso: nuestros aciertos son considerados algo esperado, y nuestros errores merecedores de críticas, generalmente acompañas de ríos de líneas reprobatorias que salen del lápiz rojo del profesor recolector de errores. No es de extrañar que de forma bien temprana tendamos a percibir la escritura como un producto, no como un proceso.
+
+### Taller de lectura y redaccion_ - Leopoldo Ayala.pdf — p. 247 — similitud 0.0707
+
+**Detalle de puntaje:** tfidf=0.0507; bonus=0.0200
+
+> Al no ser correspondido plenamente en su amor sufre todos los matices posibles has- ta el desengaño amoroso: la tristeza, la melancolía, la ira, el dolor, etc. La sole- dad es un elemento esencial del Romanticismo. Werther termina por suicidarse escribiendo la última carta a la mujer que ama.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 42 — similitud 0.0700
+
+**Detalle de puntaje:** tfidf=0.0000; bonus=0.0700
+
+> Determinar las características de los destinatarios de nuestro texto y acomodarse a las condiciones que ese contexto nos impone (en nuestro caso, se trata de textos académicos que tienen sus reglas; de profesores cuyas exigencias son particulares; de disciplinas cuyos contenidos y formalidades nos exigen un tipo de texto particular). c) Decidir los objetivos de nuestro trabajo (a veces nos vienen impuestos y nuestra tarea como escritores es entenderlos y estar en condición de aplicarlos; en otras ocasiones, hemos de establecerlos nosotros mismos y para ello deberemos tomar en consideración la naturaleza de nuestro trabajo y el contexto en el que se desarrolla). d) Hacernos con la...
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 64 — similitud 0.0700
+
+**Detalle de puntaje:** tfidf=0.0000; bonus=0.0700
+
+> Los problemas suelen empezar cuando los alumnos tienen que expresarse por escrito atendiendo a las formalidades básicas de la escritura; y la situación empeora en el momento en que precisan escribir textos académicos de por sí más reglamentados y sometidos a prácticas discursivas ya establecidas. Por eso es importante tener claro las diferencias entre hablar y escribir.
+
+### Taller de lectura y redaccion_ - Leopoldo Ayala.pdf — p. 74 — similitud 0.0695
+
+**Detalle de puntaje:** tfidf=0.0595; bonus=0.0100
+
+> Salu- demos esa epopeya sublime del peón convertido en hombre libre por la rebeldía, y pongamos todo lo que esté de nuestra parte, nuestro dinero, nuestro talento, nuestra energía, nuestra buena voluntad, y si es necesario sacrifiquemos nuestro bienestar, nuestra libertad y aun nuestra vida para que esa Revolución no termine con el en- cumbramiento de ningún hombre al poder, sino que, siguiendo su curso reivindicador, termine con la abolición del derecho de propiedad privada y la muerte del principio de autoridad; porque mientras haya hombres que poseen y hombres que nada tie- nen, el bienestar y la libertad serán un sueño, continuarán existiendo tan solo como una bella ilusión jamás...
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 57 — similitud 0.0651
+
+**Detalle de puntaje:** tfidf=0.0551; bonus=0.0100
+
+> También, para obtener fondos para investigaciones. La escasez de recursos aumenta la competitividad y provoca que se aumenten los requisitos para la promoción. Estos requisitos se pueden traducir de manera directa en la exigencia de mayor calidad y cantidad de publicaciones y en la obtención de proyectos de investigación.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 112 — similitud 0.0578
+
+**Detalle de puntaje:** tfidf=0.0378; bonus=0.0200
+
+> Podríamos preguntarnos: la  liberación de gases de efecto invernadero, la deforestación, la dependencia del petróleo, ¿son causas o  son consecuencias? 3.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 63 — similitud 0.0555
+
+**Detalle de puntaje:** tfidf=0.0255; bonus=0.0300
+
+> lentamente, de una escritura más impersonal y formal a una escritura más «de autor», más creadora y comprometida desde el punto de vista intelectual. Para Fons (2004: 24), «escribir es un proceso que va más allá de poner letras y signos sobre una hoja de papel en blanco». Y aunque hoy esta simple idea pueda parecernos obvia, no siempre fue así.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 28 — similitud 0.0553
+
+**Detalle de puntaje:** tfidf=0.0253; bonus=0.0300
+
+> Una de las conclusiones de su trabajo es la siguiente: El lenguaje escrito es posterior al lenguaje interiorizado (LI) y presupone su existencia. De ahí que el acto de escribir implique una interpretación del habla interiorizada, y requiera una estructuración intencional de los significados. Así como el niño, de acuerdo con Vygotski, en su primera infancia construye en su interacción con el medio físico, «esquemas representativos», y en su interacción social, «esquemas comunicativos».
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 119 — similitud 0.0541
+
+**Detalle de puntaje:** tfidf=0.0241; bonus=0.0300
+
+> ¿Qué características tienen los trabajos finales y/o tesinas de las carreras de grado? ¿Qué requisitos formales tienen estos trabajos? ¿Cuáles son las principales dificultades de los estudiantes? ¿Qué documentos o materiales orientadores existen para la elaboración de los trabajos finales y/o tesinas de grado? Para poder responder a esas preguntas he entrado en contacto con colegas de esos países, expertos en escritura académica, y hemos analizado conjuntamente los datos existentes al respecto.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 38 — similitud 0.0525
+
+**Detalle de puntaje:** tfidf=0.0325; bonus=0.0200
+
+> ORTOGRAFÍA Según la RAE (Real Academia Española) (2010a: Intr. § 2.5.), «la función esencial de la ortografía es garantizar y facilitar la comunicación escrita entre los usuarios de una lengua mediante el establecimiento de un código común para su representación gráfica». Asimismo, «cumple, además, un papel esencial como factor de unidad puesto que impone una representación gráfica uniforme y común por encima de las numerosas variantes de pronunciación existentes, debidas a factores geográficos, socioculturales e incluso individuales». Esto es especialmente necesario en un idioma como el español, que se extiende por un vasto territorio con cerca de 470 millones de hablantes.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 77 — similitud 0.0523
+
+**Detalle de puntaje:** tfidf=0.0323; bonus=0.0200
+
+> Aquí aprender a leer supone establecer las fases textuales —discurso, propósito, cognición e interlocución— propias de las Instituciones científicas y la necesaria recontextualización en sus correspondientes fases de la Comunidad de habla. Si los ámbitos de lo económico, jurídico, político, sanitario y cultural nos conducen realmente como ciudadanos, se percibe claramente que, ante este tipo de textos, sólo el enfoque sociocultural logra desentrañar el conglomerado de intereses ideológicos y comerciales que los sustentan silenciosamente.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 120 — similitud 0.0506
+
+**Detalle de puntaje:** tfidf=0.0206; bonus=0.0300
+
+> En lo que se refiere a los requisitos formales a los que se han de ajustar los TFG, por lo general, la legislación otorga autonomía a las universidades para poder establecerlos. Hay países en los que no hay una normativa que indique como requisito para la obtención de un título de grado la elaboración de un trabajo final. Hay otros en los que la realización del trabajo final dependerá de lo que determinen los Proyectos Pedagógicos de cada carrera.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 96 — similitud 0.0501
+
+**Detalle de puntaje:** tfidf=0.0301; bonus=0.0200
+
+> Actividad 4 (Descargar o imprimir) Describa al posible lector de la siguiente definición de «escritor competente» (Cassany, 2014). Luego, reescríbala pensando en un lector diferente y explique las decisiones tomadas durante la escritura, ¿de qué manera modificó la definición original? ¿Por qué?
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 137 — similitud 0.0484
+
+**Detalle de puntaje:** tfidf=0.0284; bonus=0.0200
+
+> ámbitos involucrados en su estudio: el político, el económico y el sanitario. El debate se presenta debido a que, por un lado, hay quienes todavía cuestionan la existencia y los efectos del fenómeno, y por el otro, se indaga respecto a qué hacer frente al mismo, y con qué urgencia deben ser adoptadas las medidas para evitar consecuencias catastróficas. Hoy en día, no se puede negar la existencia de un cambio climático global.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 11 — similitud 0.0481
+
+**Detalle de puntaje:** tfidf=0.0281; bonus=0.0200
+
+> El acto de escritura se materializa a través de un proceso en el cual el redactor imagina a su audiencia, concibe propósitos, desarrolla ideas, elabora borradores, produce anotaciones y acaba configurando un texto que corrige para satisfacer las expectativas de la audiencia. Escribir con más eficacia requiere cuidar todo este conjunto de actividades que comprende el acto de escritura, no solamente centrar el esfuerzo en el producto final, como suele suceder a muchos 11
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 113 — similitud 0.0441
+
+**Detalle de puntaje:** tfidf=0.0341; bonus=0.0100
+
+> Complete las analogías sugeridas por el texto a través de explicitar posibles prolongaciones alusivas de las metáforas utilizadas: Medicar solo para paliar los síntomas es a la verdadera medicina/cura lo que …………………… 5.6.2. La definición como técnica argumentativa El uso de la definición como técnica argumentativa es observable cuando el argumentador, de todas las definiciones posibles acerca de un mismo concepto, selecciona una que servirá para validar su hipótesis y se orienta a un determinado razonamiento. En el texto puede observarse su uso en el párrafo 4: el autor define al capitalismo como un modelo basado exclusivamente en la acumulación continua e infinita del capital.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 35 — similitud 0.0431
+
+**Detalle de puntaje:** tfidf=0.0331; bonus=0.0100
+
+> La perspectiva brasileña de la educación, con Freire como gran referencia, no acepta un sistema educativo cuyo objetivo sea facilitar el acceso de los sujetos al conocimiento de las clases dominantes. Es preciso que la alfabetización garantice el reconocimiento de las experiencias y la cultura que cada sujeto trae del medio social del que proviene.
+
+**Observación automática:** La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 18 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 07. Educación a distancia
+
+**Calidad estimada:** baja
+**Mejor similitud:** 0.1225
+**Similitud promedio:** 0.0711
+**Fuentes:** Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf
+**Ubicaciones:** Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 10; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 12; Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf, p. 2; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 141; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 151; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 153; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 154; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 157; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 16; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 21; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 26; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 38; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 40; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 47; La escritura academica en la fo - Maria Ines Corte Vitoria.pdf, p. 66; Taller de lectura y redaccion_ - Leopoldo Ayala.pdf, p. 170
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 157 — similitud 0.1225
+
+**Detalle de puntaje:** tfidf=0.1125; bonus=0.0100
+
+> Filosofía de la educación García Gutiérrez, Juan 9788427723122 216 Páginas Cómpralo y empieza a leer Esta obra se enmarca en el ámbito de la Filosofía de la Educación y es de suma utilidad tanto para los universitarios que cursan estudios relacionados con la educación, como para los profesionales en ejercicio, pues los temas que se abordan son de permanente actualidad. En este libro se analiza el fenómeno educativo y se estudian las características de la perspectiva filosófica y de la Filosofía de la Educación como “aproximación filosófica al conocimiento de la educación” y como “disciplina académica”.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 38 — similitud 0.1077
+
+**Detalle de puntaje:** tfidf=0.0977; bonus=0.0100
+
+> En lo que respecta a las tecnologías de la información parece obvio que nuestros estudiantes rehúyen el escribir a mano y prefieren hacerlo utilizando las nuevas herramientas que ofrecen las TIC. Se ha pasado del texto impreso al texto digital. Pero este tránsito no es neutral en la construcción de los textos escritos.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 66 — similitud 0.0761
+
+**Detalle de puntaje:** tfidf=0.0461; bonus=0.0300
+
+> Cuando se ha logrado el dominio de las características estructurales del texto exigido, cuando existen buenos modelos de referencia y cuando una lectura cada vez más atenta y reflexiva forma parte del día a día académico, la realización de las actividades de escritura será motivadora por ella misma. c) «La conclusión a la que llegamos es que la escuela no debe estar cumpliendo adecuadamente su papel de desarrollar la habilidad de expresión escrita.» Sobre este aspecto, conviene pensar que desarrollar la habilidad de la expresión escrita es algo que exige un tratamiento bien minucioso, ya que no tenemos cómo apuntar una razón que explique los problemas que los estudiantes tienen para...
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 153 — similitud 0.0760
+
+**Detalle de puntaje:** tfidf=0.0660; bonus=0.0100
+
+> Más allá de la calidad y la competencia. BOUD, D. y MOLLOY, E.: El feedback en educación superior y profesional. BROWN, S. y GLASNER, A. (Edits.): Evaluar en la Universidad.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 10 — similitud 0.0736
+
+**Detalle de puntaje:** tfidf=0.0536; bonus=0.0200
+
+> Introducción En la sociedad globalizada del conocimiento o del aprendizaje, líquida y digital, las personas han de tener la capacidad para adaptarse a un cambio continuo. De esta manera, entre otras muchas, el desempeño en la escritura se erige como una competencia clave para el aprendizaje en la educación superior.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 154 — similitud 0.0731
+
+**Detalle de puntaje:** tfidf=0.0631; bonus=0.0100
+
+> técnicas, instrumentos y experiencias. MACFARLANE, B.: La libertad académica del estudiante en contextos de educación superior. MATEOS, V.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 26 — similitud 0.0725
+
+**Detalle de puntaje:** tfidf=0.0525; bonus=0.0200
+
+> Como en todas las inteligencias, al escribir y, por tanto, elaborar un texto, se produce en nosotros un desdoblamiento de perspectivas de análisis: actuamos como autores pero podemos tomar distancia del proceso de ejecución para poder actuar, también, como revisores de nuestro propio texto. Lo cognitivo (transformar la idea en texto) se combina con lo metacognitivo (analizar y valorar nuestra performance como autores).
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 21 — similitud 0.0663
+
+**Detalle de puntaje:** tfidf=0.0563; bonus=0.0100
+
+> Y ahí es donde aparece la importante función cultural de las escuelas. Freire reafirma la necesidad de que educadores y educandos se posicionen críticamente frente a la educación, superando posturas ingenuas o «interesadas», negando con claridad la pretendida neutralidad de la educación. Según el autor brasileño, la educación debe de ser vivida como una práctica concreta de liberación y de construcción de la historia, 21
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 151 — similitud 0.0656
+
+**Detalle de puntaje:** tfidf=0.0556; bonus=0.0100
+
+> B. (2008). La competencia oral y escrita en la educación superior. Bogotá: Ministerio de Educación Nacional de Colombia.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 16 — similitud 0.0644
+
+**Detalle de puntaje:** tfidf=0.0544; bonus=0.0100
+
+> Con la escritura, se da un proceso inverso: nuestros aciertos son considerados algo esperado, y nuestros errores merecedores de críticas, generalmente acompañas de ríos de líneas reprobatorias que salen del lápiz rojo del profesor recolector de errores. No es de extrañar que de forma bien temprana tendamos a percibir la escritura como un producto, no como un proceso.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 47 — similitud 0.0643
+
+**Detalle de puntaje:** tfidf=0.0543; bonus=0.0100
+
+> Esta negligencia genera en el estudiante una idea de la escritura como producto y no como proceso. No nos sorprende que exista, pues, una gran distancia entre el consumo popular de la literatura y las obras más prestigiosas según la crítica, de manera que muchos perciben que aquello que alcanza prestigio, desde un punto de vista lingüístico, es lo más complejo.
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 40 — similitud 0.0622
+
+**Detalle de puntaje:** tfidf=0.0522; bonus=0.0100
+
+> la información, pero somos conscientes de la gran importancia que las condiciones de nuestro contexto imponen a los procesos de enseñanza y aprendizaje en la Educación Superior. Es necesario, desde luego, que el profesorado esté (estemos) actualizado para acompañar a nuestros estudiantes en este complejo mundo de las TIC.
+
+### Taller de lectura y redaccion_ - Leopoldo Ayala.pdf — p. 170 — similitud 0.0613
+
+**Detalle de puntaje:** tfidf=0.0513; bonus=0.0100
+
+> 5.– Los bancos, compañías de seguros, hospitales, clínicas, centros de fabrica- ción y distribución de drogas, los transportes públicos, la radio y televisión y la explotación de los recursos naturales, serán del Estado. 6.– El Estado dará gratuitamente educación a todos los colombianos. 7.– La educación será obligatoria hasta finalizar la educación secundaria o téc- nica.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 12 — similitud 0.0549
+
+**Detalle de puntaje:** tfidf=0.0449; bonus=0.0100
+
+> Por último, los capítulos 4 y 5 atienden a los dos tipos de textos más frecuentes en la universidad, los textos expositivos y los argumentativos, respectivamente. En ellos, se ofrecen nociones para su escritura y, de la misma manera que en el anterior, con detalle, se exponen sus fundamentos básicos. JUAN A.
+
+### Escritura academica. De la teor - Juan Antonio Nunez Cortes.pdf — p. 2 — similitud 0.0519
+
+**Detalle de puntaje:** tfidf=0.0419; bonus=0.0100
+
+> Coordinador Juan Antonio Núñez Cortés PROFESOR EN EL DEPARTAMENTO DE FILOLOGÍAS Y SU DIDÁCTICA EN LA UNIVERSIDAD AUTÓNOMA DE MADRID Escritura académica De la teoría a la práctica
+
+### La escritura academica en la fo - Maria Ines Corte Vitoria.pdf — p. 141 — similitud 0.0449
+
+**Detalle de puntaje:** tfidf=0.0349; bonus=0.0100
+
+> Insistimos, por tanto, en la tarea de autocorrección como forma de pensar en la propia escritura como un ejercicio permanente de ajustes y reelaboraciones por parte de los estudiantes, no del profesor. Incluimos en este punto las ventajas del ejercicio de corrección entre pares. Creemos que al corregir lo que hacen los compañeros e identificar las dificultades encontradas en el texto del colega, se desarrolla una sensibilidad a los detalles y una capacidad analítica que posteriormente serán utilizadas en los propios procesos de autocorrección.
+
+**Observación automática:** La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 14 referencia(s) de baja similitud que podrían introducir ruido.

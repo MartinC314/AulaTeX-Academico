@@ -1,0 +1,691 @@
+% ==============================================================================
+% PLANTILLA DE PRESENTACION - FILOSOFIA DEL DERECHO / UnADM
+% ==============================================================================
+% Uso rapido:
+% 1) Duplica este archivo para una actividad concreta cuando necesites exponer.
+% 2) Actualiza los datos editables: titulo, actividad, semana, docente y fecha.
+% 3) Lee la planeacion correspondiente y traduce la consigna a una narrativa:
+%    problema -> conceptos -> sistema juridico -> postura -> consecuencia.
+% 4) Usa los modulos de esta plantilla segun el producto pedido:
+%    mapa conceptual, cuadro comparativo, glosario, estudio de caso, reflexion,
+%    interpretacion juridica, analisis constitucional o caso filosofico-juridico.
+% 5) No pegues instrucciones de la planeacion. La diapositiva debe mostrar
+%    criterio, no relleno.
+% 6) Compilar desde la raiz del repositorio:
+%    .\scripts\latexmk-build.ps1 .\UnADM\filosofia-del-derecho\presentacion-filosofia-del-derecho.tex
+%
+% Contrato de contenido heredado de los reportes de la materia:
+% - Cada slide debe tener una pregunta o afirmacion principal.
+% - Las fuentes sostienen una funcion analitica: definir, contrastar, aplicar,
+%   validar, problematizar o justificar una postura.
+% - Toda exposicion debe cerrar con postura personal argumentada.
+% - Las actividades visuales se construyen como evidencia: mapa, cuadro, tabla,
+%   matriz, linea de tiempo o diagrama, no como decoracion.
+% ==============================================================================
+
+\documentclass[
+  spanish,
+  aspectratio=169,
+  xcolor={dvipsnames,table}
+]{beamer}
+
+% Lienzo ampliado 16:9: mantiene proporcion panoramica y da mas espacio util
+% que el tamano por defecto de beamer.
+\geometry{paperwidth=19.2cm,paperheight=10.8cm}
+
+% Idioma, tipografia y recursos visuales
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usetikzlibrary{arrows.meta,calc,fit,matrix,positioning,shadows.blur,shapes.geometric}
+
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+
+% ------------------------------------------------------------------------------
+% DATOS EDITABLES
+% ------------------------------------------------------------------------------
+\newcommand{\studentname}{Martin Jonathan de la Cruz}
+\newcommand{\studentshort}{M. J. de la Cruz}
+\newcommand{\studentid}{ES2611202040}
+\newcommand{\studentemail}{martin.delacruz@unadmexico.mx}
+\newcommand{\universityname}{Universidad Abierta y a Distancia de Mexico}
+\newcommand{\facultyname}{Licenciatura en Derecho}
+\newcommand{\coursename}{Filosofia del Derecho}
+\newcommand{\coursecode}{030}
+\newcommand{\activitytitle}{Plantilla de presentacion de Filosofia del Derecho}
+\newcommand{\activitysubtitle}{Base para actividades existentes y nuevas}
+\newcommand{\activityweek}{Semanas 2--8}
+\newcommand{\teachingfigure}{Reyna Patricia Gonzalez Rodriguez}
+\newcommand{\deliverydate}{\today}
+\newcommand{\locationname}{Roma Norte, Ciudad de Mexico}
+\newcommand{\generalbib}{bibliografia-unadm.bib}
+\newcommand{\coursebib}{filosofia-del-derecho.bib}
+\newcommand{\reporttemplate}{reporte-filosofia-del-derecho.tex}
+\newcommand{\departmentlogo}{img/departamentos/UnADM.pdf}
+\newcommand{\campusurl}{https://www.unadmexico.mx/}
+
+% ------------------------------------------------------------------------------
+% PALETA VISUAL
+% Sobria e institucional, con verde UnADM y acento dorado.
+% ------------------------------------------------------------------------------
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+\definecolor{unadmMuted}{HTML}{5D6B66}
+\definecolor{unadmSoft}{HTML}{E9EEE6}
+
+\mode<presentation>{
+  \usetheme{default}
+  \usefonttheme{professionalfonts}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{blocks}[rounded][shadow=false]
+  \setbeamercovered{invisible}
+}
+\setbeamersize{text margin left=0.55cm,text margin right=0.55cm}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=unadmGreenDark,
+  linkcolor=unadmGreenDark
+}
+
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=unadmInk,bg=white}
+\setbeamercolor{structure}{fg=unadmGreenDark}
+\setbeamercolor{frametitle}{fg=white,bg=unadmGreenDark}
+\setbeamercolor{title}{fg=white,bg=unadmGreenDark}
+\setbeamercolor{subtitle}{fg=white}
+\setbeamercolor{block title}{fg=white,bg=unadmGreen}
+\setbeamercolor{block body}{fg=unadmInk,bg=unadmPaper}
+\setbeamercolor{alerted text}{fg=unadmGold}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{block title}{series=\bfseries}
+\setbeamertemplate{itemize item}{\textcolor{unadmGreen}{\large$\blacktriangleright$}}
+\setbeamertemplate{itemize subitem}{\textcolor{unadmGold}{\scriptsize$\blacksquare$}}
+\setbeamertemplate{enumerate item}{\textcolor{unadmGreenDark}{\insertenumlabel.}}
+
+\setbeamertemplate{frametitle}{
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\textwidth,ht=1.02cm,dp=0.22cm,leftskip=0.35cm,rightskip=0.25cm]{frametitle}
+    \begin{minipage}[c]{0.76\textwidth}
+      \insertframetitle
+    \end{minipage}
+    \hfill
+    \raisebox{-0.1cm}{\includegraphics[height=0.60cm]{\departmentlogo}}
+  \end{beamercolorbox}
+  \vspace{-0.04cm}
+  {\color{unadmGold}\rule{\textwidth}{1.3pt}}
+}
+
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}%
+      \color{white}\studentshort
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.40\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}%
+      \color{white}\coursename
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.26\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}%
+      \color{white}\coursecode\hfill\insertframenumber/\inserttotalframenumber
+    \end{beamercolorbox}%
+  }%
+  \vskip0pt%
+}
+\setbeamercolor{author in head/foot}{bg=unadmGreenDark}
+\setbeamercolor{title in head/foot}{bg=unadmGreen}
+\setbeamercolor{date in head/foot}{bg=unadmGreenDark}
+
+\newcommand{\accentbar}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \path[use as bounding box] (0,0) rectangle (0,0);
+    \fill[unadmGreen] (current page.south west) rectangle ([xshift=0.56\paperwidth,yshift=0.08cm]current page.south west);
+    \fill[unadmGold] ([xshift=0.56\paperwidth]current page.south west) rectangle ([xshift=\paperwidth,yshift=0.08cm]current page.south west);
+  \end{tikzpicture}
+}
+
+\newcommand{\sectionframe}[1]{%
+  \begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay]
+      \path[use as bounding box] (0,0) rectangle (0,0);
+      \fill[unadmGreenDark] (current page.south west) rectangle (current page.north east);
+      \node[opacity=0.09,anchor=east] at ([xshift=-0.45cm]current page.east) {\includegraphics[width=0.43\paperwidth]{\departmentlogo}};
+      \fill[unadmGreen] ([xshift=1.05cm,yshift=2.25cm]current page.south west) rectangle ([xshift=1.25cm,yshift=6.40cm]current page.south west);
+      \fill[unadmGold] ([xshift=1.48cm,yshift=2.25cm]current page.south west) rectangle ([xshift=1.68cm,yshift=5.25cm]current page.south west);
+      \node[
+        anchor=west,
+        align=left,
+        text=white,
+        text width=0.58\paperwidth,
+        font=\fontsize{26}{31}\selectfont\bfseries
+      ] at ([xshift=2.08cm,yshift=0.55cm]current page.west) {#1};
+      \node[
+        anchor=west,
+        align=left,
+        text=white!78,
+        font=\large
+      ] at ([xshift=2.08cm,yshift=-0.55cm]current page.west) {\coursename};
+    \end{tikzpicture}
+  \end{frame}
+}
+
+\newcommand{\unadmsection}[1]{%
+  \section{#1}
+  \sectionframe{#1}
+}
+
+\newcommand{\tagbox}[2]{%
+  \begin{tikzpicture}[baseline=(n.base)]
+    \node[
+      rounded corners=2pt,
+      fill=#1,
+      text=white,
+      inner xsep=5pt,
+      inner ysep=2pt,
+      font=\scriptsize\bfseries
+    ] (n) {#2};
+  \end{tikzpicture}%
+}
+
+\title[\coursecode]{\activitytitle}
+\subtitle{\activitysubtitle}
+\author[\studentshort]{\texorpdfstring{\studentname\\\footnotesize Matricula: \studentid\\\href{mailto:\studentemail}{\studentemail}}{\studentname, Matricula: \studentid}}
+\institute[UnADM]{\universityname\\\facultyname\\\coursecode\ \textperiodcentered\ \coursename}
+\date[\activityweek]{\locationname\\\activityweek\\\deliverydate}
+
+\begin{document}
+
+% Portada institucional
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \path[use as bounding box] (0,0) rectangle (0,0);
+    \fill[unadmGreenDark,opacity=0.96] (current page.south west) rectangle ([xshift=0.58\paperwidth]current page.north west);
+    \fill[unadmGreen,opacity=0.92] ([xshift=0.58\paperwidth]current page.south west) rectangle (current page.north east);
+    \node[anchor=center,opacity=0.10] at (current page.center) {\includegraphics[width=0.72\paperwidth]{\departmentlogo}};
+    \node[anchor=north west] at ([xshift=0.58cm,yshift=-0.46cm]current page.north west) {\includegraphics[width=2.55cm]{\departmentlogo}};
+    \fill[unadmGold] ([xshift=0.60\paperwidth,yshift=1.18cm]current page.south west) rectangle ([xshift=0.93\paperwidth,yshift=1.30cm]current page.south west);
+    \fill[white,opacity=0.15] ([xshift=0.60\paperwidth,yshift=0.92cm]current page.south west) rectangle ([xshift=0.84\paperwidth,yshift=1.02cm]current page.south west);
+  \end{tikzpicture}
+
+  \vspace*{1.80cm}
+  \begin{minipage}{0.55\paperwidth}
+    {\color{white}\fontsize{24}{29}\selectfont\bfseries\raggedright \activitytitle\par}
+    \vspace{0.22cm}
+    {\color{white!86}\large \activitysubtitle}\\[0.32cm]
+    {\color{unadmGold}\rule{0.82\linewidth}{1.3pt}}\\[0.42cm]
+    {\color{white}\studentname}\\
+    {\color{white!82}\footnotesize Matricula: \studentid}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.34\paperwidth}
+    \raggedleft
+    {\color{white}\Large\bfseries UnADM}\\[0.18cm]
+    {\color{white!84}\footnotesize \universityname}\\[0.45cm]
+    {\color{white}\small \facultyname}\\
+    {\color{white!78}\small \coursename}\\[0.45cm]
+    {\color{white!74}\footnotesize \coursecode\ \textperiodcentered\ \activityweek}\\
+    {\color{white!74}\footnotesize \locationname}\\
+    {\color{white!74}\footnotesize \href{\campusurl}{\campusurl}}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}{Uso de esta plantilla}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Antes de construir slides}
+        \begin{itemize}
+          \item Identifica el producto pedido por la planeacion.
+          \item Extrae del reporte: objetivo, problema, conceptos, caso y postura.
+          \item Selecciona solo los ejes que sostienen la exposicion.
+          \item Sustituye los textos guia por contenido propio de la actividad.
+        \end{itemize}
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Regla de oro}
+        La presentacion no es el reporte reducido: es la defensa visual de una
+        postura. Cada slide debe mostrar una decision: que se afirma, con que
+        concepto se sostiene y que consecuencia juridica produce.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Contenido}
+  \tableofcontents
+\end{frame}
+
+\unadmsection{Contrato de la materia}
+
+\begin{frame}{Ficha academica reutilizable}
+  \begin{columns}[T]
+    \begin{column}{0.38\textwidth}
+      \begin{center}
+        \includegraphics[width=0.42\linewidth]{\departmentlogo}\\[0.20cm]
+        {\Large\bfseries\color{unadmGreenDark}Filosofia del Derecho}\\
+        {\small\color{unadmMuted}\facultyname}
+      \end{center}
+    \end{column}
+    \begin{column}{0.58\textwidth}
+      \begin{block}{Datos para copiar a cada actividad}
+        \textbf{Alumno:} \studentname\\
+        \textbf{Matricula:} \studentid\\
+        \textbf{Asignatura:} \coursename\\
+        \textbf{Codigo:} \coursecode\\
+        \textbf{Figura docente:} \teachingfigure
+      \end{block}
+      \begin{alertblock}{Archivos base}
+        \texttt{\reporttemplate}\\
+        \texttt{\coursebib}
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Lo que ya exige la materia}
+  \small
+  \begin{tabularx}{\linewidth}{@{}p{0.17\linewidth}Y Y@{}}
+    \toprule
+    \textbf{Actividad} & \textbf{Producto trabajado} & \textbf{Lectura que debe conservarse} \\
+    \midrule
+    1 & Mapa conceptual & Filosofia del Derecho como red: objeto, justicia, corrientes, evolucion e importancia practica. \\
+    2 & Cuadro comparativo & Derecho Natural y Positivismo como tension entre justicia material y validez institucional. \\
+    3 & Glosario + caso & Conceptos juridicos aplicados a matrimonio igualitario y moral constitucional. \\
+    4 & Estudio de caso & Poder, Estado y Derecho desde articulos constitucionales y ejemplos periodisticos. \\
+    5 & Reflexion + criterios & Interpretacion juridica, hermeneutica y argumentacion en casos penales complejos. \\
+    6 & Caso filosofico-juridico & Ayotzinapa como prueba de dignidad, legitimidad, verdad, justicia y limite del poder. \\
+    \bottomrule
+  \end{tabularx}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Nucleo narrativo comun}
+  \begin{center}
+    \begin{tikzpicture}[
+      node distance=0.55cm,
+      box/.style={
+        rounded corners=4pt,
+        draw=unadmGreen!40,
+        fill=unadmPaper,
+        text width=3.20cm,
+        minimum height=1.15cm,
+        align=center,
+        font=\small
+      },
+      arrow/.style={-{Stealth[length=2.5mm]},very thick,draw=unadmGold}
+    ]
+      \node[box] (p) {\textbf{Problema}\\Que tension juridica se analiza};
+      \node[box,right=of p] (c) {\textbf{Conceptos}\\Que categoria explica el caso};
+      \node[box,right=of c] (s) {\textbf{Sistema}\\Que norma, autoridad o institucion opera};
+      \node[box,right=of s] (po) {\textbf{Postura}\\Que posicion se defiende};
+      \draw[arrow] (p) -- (c);
+      \draw[arrow] (c) -- (s);
+      \draw[arrow] (s) -- (po);
+    \end{tikzpicture}
+  \end{center}
+  \begin{alertblock}{Uso}
+    Esta secuencia sirve para actividades nuevas aunque cambie el producto:
+    evita exponer definiciones sueltas y obliga a cerrar con consecuencia.
+  \end{alertblock}
+  \accentbar
+\end{frame}
+
+\unadmsection{Rutas por producto}
+
+\begin{frame}{Matriz de seleccion del producto}
+  \scriptsize
+  \renewcommand{\arraystretch}{1.18}
+  \begin{tabularx}{\linewidth}{@{}p{0.19\linewidth}Y Y Y@{}}
+    \toprule
+    \textbf{Si la planeacion pide} & \textbf{Estructura de slides} & \textbf{Evidencia visual} & \textbf{Cierre obligatorio} \\
+    \midrule
+    Mapa conceptual & concepto central, ramas, enlaces, lectura critica & red jerarquica con palabras de enlace & que relacion permite entender el derecho \\
+    Cuadro comparativo & criterio, postura A, postura B, sintesis & tabla de 2 o 3 columnas & que enfoque resuelve mejor el problema \\
+    Glosario & ubicacion conceptual, definiciones, aplicacion & tarjetas concepto-funcion-caso & que concepto cambia la decision \\
+    Estudio de caso & hechos, problema, normas, analisis, postura & matriz hecho-norma-consecuencia & que debe hacer el sistema juridico \\
+    Reflexion & tesis, razones, limite, aprendizaje & flujo argumento-consecuencia & que criterio profesional se sostiene \\
+    Presentacion oral & tesis, 3 ejes, prueba, postura & slides de apoyo, no texto completo & consecuencia practica y fuente clave \\
+    \bottomrule
+  \end{tabularx}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Plantilla: mapa conceptual}
+  \begin{columns}[T]
+    \begin{column}{0.44\textwidth}
+      \begin{block}{Cuando usarla}
+        Para actividades como la Semana 2 o cualquier consigna que pida
+        identificar relaciones, jerarquias, corrientes, elementos o funciones.
+      \end{block}
+      \begin{alertblock}{Regla}
+        No basta dibujar cajas: cada enlace debe decir que tipo de relacion hay.
+      \end{alertblock}
+    \end{column}
+    \begin{column}{0.52\textwidth}
+      \resizebox{0.96\linewidth}{!}{%
+      \begin{tikzpicture}[
+        every node/.style={font=\scriptsize},
+        root/.style={rounded corners=5pt,fill=unadmGreenDark,text=white,align=center,minimum width=2.8cm,minimum height=0.9cm},
+        branch/.style={rounded corners=4pt,fill=unadmGreen,text=white,align=center,text width=2.3cm,minimum height=0.70cm},
+        leaf/.style={rounded corners=3pt,fill=unadmPaper,draw=unadmGreen!40,align=center,text width=2.25cm,minimum height=0.55cm},
+        link/.style={-{Stealth[length=2mm]},draw=unadmGold,thick}
+      ]
+        \node[root] (r) {Tema juridico};
+        \node[branch,above left=0.65cm and 1.00cm of r] (a) {Concepto};
+        \node[branch,above right=0.65cm and 1.00cm of r] (b) {Corriente};
+        \node[branch,below left=0.65cm and 1.00cm of r] (c) {Norma};
+        \node[branch,below right=0.65cm and 1.00cm of r] (d) {Caso};
+        \node[leaf,above=0.35cm of a] (a1) {define};
+        \node[leaf,above=0.35cm of b] (b1) {contrasta};
+        \node[leaf,below=0.35cm of c] (c1) {aplica};
+        \node[leaf,below=0.35cm of d] (d1) {prueba};
+        \draw[link] (r) -- node[above,sloped]{se explica por} (a);
+        \draw[link] (r) -- node[above,sloped]{dialoga con} (b);
+        \draw[link] (r) -- node[below,sloped]{se concreta en} (c);
+        \draw[link] (r) -- node[below,sloped]{se verifica en} (d);
+        \draw[link] (a) -- (a1);
+        \draw[link] (b) -- (b1);
+        \draw[link] (c) -- (c1);
+        \draw[link] (d) -- (d1);
+      \end{tikzpicture}
+      }
+    \end{column}
+  \end{columns}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Plantilla: cuadro comparativo}
+  \small
+  \begin{tabularx}{\linewidth}{@{}p{0.20\linewidth}Y Y@{}}
+    \toprule
+    \textbf{Criterio} & \textbf{Enfoque A} & \textbf{Enfoque B} \\
+    \midrule
+    Fundamento & Que justifica su validez o autoridad. & Que justifica su validez o autoridad. \\
+    Funcion juridica & Que problema resuelve dentro del sistema. & Que problema resuelve dentro del sistema. \\
+    Riesgo & Que ocurre si se aplica sin limite critico. & Que ocurre si se aplica sin limite critico. \\
+    Ejemplo mexicano & Norma, sentencia, institucion o caso. & Norma, sentencia, institucion o caso. \\
+    Sintesis & \multicolumn{2}{Y}{Postura: no repetir diferencias; explicar que combinacion o criterio permite resolver mejor el problema.} \\
+    \bottomrule
+  \end{tabularx}
+  \begin{alertblock}{Uso en la materia}
+    Replica la logica de Derecho Natural vs. Positivismo: comparar no es poner
+    columnas simetricas, sino mostrar una decision entre justicia, validez,
+    seguridad juridica, dignidad y eficacia institucional.
+  \end{alertblock}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Plantilla: glosario critico}
+  \begin{columns}[T]
+    \begin{column}{0.31\textwidth}
+      \begin{block}{1. Definicion}
+        Concepto breve con fuente: que es y que lugar ocupa en el sistema.
+      \end{block}
+    \end{column}
+    \begin{column}{0.31\textwidth}
+      \begin{block}{2. Funcion}
+        Que permite decidir, exigir, limitar, validar o interpretar.
+      \end{block}
+    \end{column}
+    \begin{column}{0.31\textwidth}
+      \begin{block}{3. Aplicacion}
+        Como opera en un caso: matrimonio igualitario, poder estatal, victimas,
+        interpretacion penal o desaparicion de personas.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vspace{0.28cm}
+  \begin{alertblock}{Formula}
+    Definicion base + cita \(\rightarrow\) funcion juridica \(\rightarrow\) consecuencia concreta.
+  \end{alertblock}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Plantilla: estudio de caso}
+  \small
+  \begin{tabularx}{\linewidth}{@{}p{0.18\linewidth}Y Y@{}}
+    \toprule
+    \textbf{Paso} & \textbf{Pregunta de trabajo} & \textbf{Salida esperada} \\
+    \midrule
+    Hechos & Que ocurrio y por que importa juridicamente. & Descripcion sobria, sin dramatizar ni ocultar el dano. \\
+    Problema & Que tension se debe resolver. & Pregunta juridica concreta. \\
+    Normas & Que articulos, leyes, tesis o principios aplican. & Marco normativo con funcion, no lista decorativa. \\
+    Conceptos & Que categorias de Filosofia del Derecho explican el caso. & Poder, Estado, dignidad, validez, moral, interpretacion. \\
+    Postura & Que lectura sostengo y que consecuencia produce. & Cierre argumentado y transferible. \\
+    \bottomrule
+  \end{tabularx}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Plantilla: interpretacion juridica}
+  \begin{columns}[T]
+    \begin{column}{0.47\textwidth}
+      \begin{block}{Cuatro capas}
+        \begin{enumerate}
+          \item Texto: que dice literalmente la norma.
+          \item Sistema: como se relaciona con otras normas.
+          \item Finalidad: que bien juridico protege.
+          \item Consecuencia: a quien beneficia o perjudica la lectura.
+        \end{enumerate}
+      \end{block}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \begin{alertblock}{Evitar}
+        No presentar la interpretacion como opinion personal aislada. Debe
+        apoyarse en hermeneutica, argumentacion, precedentes y efecto real.
+      \end{alertblock}
+      \begin{block}{Ejemplo trabajado}
+        Actividad 5: violencia fisica, incapacidad de resistencia y consentimiento.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Plantilla: postura personal}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Estructura minima}
+        \begin{itemize}
+          \item \textbf{Posicion:} sostengo que \ldots
+          \item \textbf{Razon:} porque el concepto/norma/caso muestra \ldots
+          \item \textbf{Limite:} el riesgo de esta lectura es \ldots
+          \item \textbf{Efecto:} para la practica juridica implica \ldots
+        \end{itemize}
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{alertblock}{Tono}
+        Usar primera persona con medida. La postura debe sonar propia, pero no
+        coloquial: \emph{Desde esta perspectiva}, \emph{considero que},
+        \emph{la posicion que sostengo es}.
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+  \accentbar
+\end{frame}
+
+\unadmsection{Banco de ejes}
+
+\begin{frame}{Conceptos recurrentes para armar slides}
+  \small
+  \begin{tabularx}{\linewidth}{@{}p{0.23\linewidth}Y Y@{}}
+    \toprule
+    \textbf{Eje} & \textbf{Pregunta guia} & \textbf{Uso en actividades} \\
+    \midrule
+    Validez y eficacia & La norma existe y ademas protege realmente. & Natural/positivismo, matrimonio igualitario, Ayotzinapa. \\
+    Derecho y moral & Cuando la moral orienta y cuando excluye. & Moral constitucional, dignidad, normas injustas. \\
+    Poder y limite & Quien manda, bajo que reglas y con que control. & Estado mexicano, division de poderes, victimas. \\
+    Interpretacion & Que lectura evita formalismo y estereotipos. & Casos penales, jurisprudencia, principios. \\
+    Dignidad humana & Que trato exige reconocer a la persona como fin. & Derechos humanos, desaparicion, igualdad, reparacion. \\
+    \bottomrule
+  \end{tabularx}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Corrientes y autores como herramientas}
+  \begin{columns}[T]
+    \begin{column}{0.49\textwidth}
+      \begin{block}{No usarlos como lista}
+        \begin{itemize}
+          \item Garcia Maynez: conceptos juridicos y estructura normativa.
+          \item Kelsen: validez, sistema normativo y Estado como orden juridico.
+          \item Finnis: bienes humanos, razon practica y justicia.
+          \item Laun: relacion y tension entre derecho y moral.
+        \end{itemize}
+      \end{block}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+      \begin{block}{Usarlos con funcion}
+        \begin{itemize}
+          \item Definir una categoria.
+          \item Contrastar una corriente.
+          \item Justificar un criterio.
+          \item Evaluar una norma o sentencia.
+          \item Cerrar una postura personal.
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Sistema mexicano: prueba de realidad}
+  \begin{columns}[T]
+    \begin{column}{0.32\textwidth}
+      \begin{block}{Normas}
+        Constitucion, Ley de Amparo, Ley General de Victimas, leyes especiales,
+        codigos penales y legislacion secundaria.
+      \end{block}
+    \end{column}
+    \begin{column}{0.32\textwidth}
+      \begin{block}{Instituciones}
+        SCJN, tribunales, autoridades administrativas, fiscalias, congreso,
+        organos electorales y organismos de derechos humanos.
+      \end{block}
+    \end{column}
+    \begin{column}{0.32\textwidth}
+      \begin{block}{Casos}
+        Matrimonio igualitario, poder estatal, interpretacion penal, victimas,
+        desaparicion de personas y control constitucional.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Fuentes: criterio de uso en la exposicion}
+  \small
+  \begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}Y Y@{}}
+    \toprule
+    \textbf{Tipo de fuente} & \textbf{Funcion en slides} & \textbf{Error a evitar} \\
+    \midrule
+    Bibliografia teorica & Define, distingue o fundamenta conceptos. & Mencionar autores sin explicar que aportan. \\
+    Norma vigente & Muestra el marco obligatorio de decision. & Copiar articulos largos sin interpretarlos. \\
+    Jurisprudencia & Prueba como se aplica un concepto en conflicto real. & Reducirla a resumen de expediente. \\
+    Nota periodistica & Aterriza el problema en un hecho verificable. & Convertir la exposicion en narracion de noticias. \\
+    Reporte propio & Da tesis, postura, estructura y cierre. & Leer parrafos completos en pantalla. \\
+    \bottomrule
+  \end{tabularx}
+  \accentbar
+\end{frame}
+
+\unadmsection{Actividades modelo}
+
+\begin{frame}{Actividades 1--3: de conceptos a aplicacion}
+  \small
+  \begin{tabularx}{\linewidth}{@{}p{0.20\linewidth}Y Y@{}}
+    \toprule
+    \textbf{Actividad} & \textbf{Claim de presentacion} & \textbf{Slide clave} \\
+    \midrule
+    A1: mapa conceptual & La Filosofia del Derecho ordena el fenomeno juridico porque conecta justicia, norma, corrientes y practica. & Mapa con jerarquias y palabras de enlace. \\
+    A2: cuadro comparativo & El jurista necesita legalidad positiva y critica material de justicia; una sin la otra produce formalismo o abstraccion. & Tabla comparativa con sintesis final. \\
+    A3: glosario y caso & Los conceptos juridicos no son definiciones escolares: permiten diagnosticar discriminacion, validez y eficacia. & Tarjetas de concepto + matriz de caso. \\
+    \bottomrule
+  \end{tabularx}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Actividades 4--6: del poder al caso limite}
+  \small
+  \begin{tabularx}{\linewidth}{@{}p{0.20\linewidth}Y Y@{}}
+    \toprule
+    \textbf{Actividad} & \textbf{Claim de presentacion} & \textbf{Slide clave} \\
+    \midrule
+    A4: Estado y Derecho & El Estado de Derecho existe cuando poder politico, social y juridico quedan sometidos a limites constitucionales. & Matriz articulo-concepto-ejemplo. \\
+    A5: interpretacion & Interpretar decide que derechos protege realmente el sistema y que sesgos corrige o reproduce. & Flujo texto-sistema-finalidad-consecuencia. \\
+    A6: Ayotzinapa & La desaparicion forzada prueba si el derecho funciona como garantia de dignidad o solo como legalidad declarativa. & Caso: hecho-problema-concepto-norma-postura. \\
+    \bottomrule
+  \end{tabularx}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Slide base: caso filosofico-juridico}
+  \begin{columns}[T]
+    \begin{column}{0.49\textwidth}
+      \begin{block}{Caso}
+        \textit{Editable:} identifica el hecho o criterio judicial que pone a
+        prueba una categoria de la Filosofia del Derecho.
+      \end{block}
+      \begin{block}{Problema}
+        \textit{Editable:} formula una pregunta: que revela el caso sobre
+        validez, justicia, moral, poder, dignidad o interpretacion.
+      \end{block}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+      \begin{block}{Aplicacion}
+        \textit{Editable:} vincula conceptos, normas y fuentes con una
+        consecuencia juridica especifica.
+      \end{block}
+      \begin{alertblock}{Postura}
+        \textit{Editable:} sostengo que \ldots porque \ldots y esto implica \ldots
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+  \accentbar
+\end{frame}
+
+\unadmsection{Control de calidad}
+
+\begin{frame}{Checklist antes de entregar}
+  \begin{itemize}
+    \item La portada coincide con actividad, semana, materia, docente y fecha.
+    \item La presentacion responde a la planeacion sin copiar instrucciones.
+    \item Cada slide tiene funcion clara: problema, concepto, evidencia o cierre.
+    \item El producto visual pedido aparece como evidencia principal.
+    \item Hay postura personal argumentada, no solo resumen de fuentes.
+    \item Las fuentes citadas en el reporte sostienen tambien la exposicion.
+    \item El cierre traduce el tema a una consecuencia juridica concreta.
+  \end{itemize}
+  \accentbar
+\end{frame}
+
+\begin{frame}{Cierre editable}
+  \begin{block}{Hallazgo principal}
+    \textit{Editable:} La actividad permite concluir que \ldots
+  \end{block}
+  \begin{block}{Criterio profesional}
+    \textit{Editable:} Para la practica juridica, este tema exige \ldots
+  \end{block}
+  \begin{alertblock}{Ultima frase}
+    No cerrar con ``eso fue todo''. Cerrar con una idea defendible:
+    norma, justicia, poder y persona deben leerse juntos.
+  \end{alertblock}
+  \accentbar
+\end{frame}
+
+\end{document}
