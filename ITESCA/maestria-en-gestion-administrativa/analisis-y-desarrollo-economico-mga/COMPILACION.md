@@ -14,3 +14,12 @@ Ejecutar desde la raiz del repositorio que contiene la carpeta ITESCA:
 - La bibliografia local de la materia vive en analisis-y-desarrollo-economico.bib.
 - Esta carpeta corresponde a la categoria tronco comun MGA.
 - La identidad institucional se hereda desde ITESCA/_shared/ y usa los assets oficiales descargados en ITESCA/assets-itesca/web/.
+
+## Checklist editorial
+
+- Usar indicadores oficiales con periodo, unidad de medida y cobertura territorial.
+- Distinguir crecimiento, desarrollo, bienestar, productividad y competitividad.
+- Traducir cada dato a una decision administrativa, sectorial o institucional.
+- Evitar listados de cifras sin interpretacion: toda evidencia debe cerrar con implicacion.
+- La carpeta `referencias-analisis-y-desarrollo-economico/` resguarda fuentes,
+  tabulados y notas de lectura de la materia.
