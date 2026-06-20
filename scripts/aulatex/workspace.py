@@ -470,7 +470,28 @@ class AulaTeXWorkspace:
             chunks.append(f"## {self.relative(candidate)}\n{text[:remaining]}")
         return "\n\n".join(chunks)
 
-    def compile_tex(self, tex_file: str | Path, clean_mode: str = "none") -> CommandResult:
+    def _terminate_process_tree(self, proc: subprocess.Popen[str]) -> None:
+        if proc.poll() is not None:
+            return
+        try:
+            if proc.args and str(proc.args[0]).lower().endswith(("powershell", "powershell.exe")):
+                subprocess.run(
+                    ["taskkill", "/PID", str(proc.pid), "/T", "/F"],
+                    capture_output=True,
+                    text=True,
+                    encoding="utf-8",
+                    errors="replace",
+                    timeout=15,
+                )
+                return
+        except Exception:
+            pass
+        try:
+            proc.kill()
+        except Exception:
+            pass
+
+    def compile_tex(self, tex_file: str | Path, clean_mode: str = "safe", timeout_seconds: int = 360) -> CommandResult:
         tex = self.resolve_target(tex_file)
         script = self.scripts_dir / "latexmk-build.ps1"
         cmd = [
@@ -484,15 +505,29 @@ class AulaTeXWorkspace:
             "-CleanMode",
             clean_mode,
         ]
-        proc = subprocess.run(
+        proc = subprocess.Popen(
             cmd,
             cwd=str(self.repo_root),
-            capture_output=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
             text=True,
             encoding="utf-8",
             errors="replace",
         )
-        return CommandResult(proc.returncode == 0, proc.returncode, proc.stdout, proc.stderr)
+        try:
+            stdout, stderr = proc.communicate(timeout=timeout_seconds)
+        except subprocess.TimeoutExpired:
+            self._terminate_process_tree(proc)
+            try:
+                stdout, stderr = proc.communicate(timeout=10)
+            except subprocess.TimeoutExpired:
+                stdout, stderr = "", ""
+            message = (
+                f"Tiempo de espera agotado tras {timeout_seconds}s al compilar "
+                f"{self.relative(tex)} con latexmk-build.ps1."
+            )
+            return CommandResult(False, 124, (stdout or "") + "\n" + message + "\n", stderr or "")
+        return CommandResult(proc.returncode == 0, proc.returncode, stdout, stderr)
 
     def append_bitacora(self, run_id: str, title: str, data: dict) -> None:
         path = self.feedback_root / "bitacora.md"

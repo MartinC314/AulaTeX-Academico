@@ -31,9 +31,8 @@ $max_repeat = 5;
 
 $out_dir = '.build/latex';
 $aux_dir = '.build/latex/aux';
-# Batch mode avoids MiKTeX console flush failures on long reports with large logs.
-# The full diagnostics remain available in .build/latex/aux/*.log.
-$pdflatex = 'pdflatex %O -interaction=batchmode -file-line-error %S';
+# Keep diagnostics visible for AulaTeX agents and stop immediately on hard errors.
+$pdflatex = 'pdflatex -halt-on-error -interaction=nonstopmode -file-line-error %O %S';
 $bibtex = 'bibtex %O %B';
 
 prepend_env_paths('TEXINPUTS',

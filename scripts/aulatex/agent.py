@@ -15,6 +15,7 @@ from .agentic_patterns import (
 )
 from .editorial_memory import EditorialMemoryStore
 from .llm_bridge import LLM_ENGINES, AulaTeXLLMClient, LLMCallResult
+from .template_materializer import MaterializationResult, TemplateMaterializer
 from .workspace import AulaTeXWorkspace
 
 
@@ -66,6 +67,7 @@ class AulaTeXAgent:
         self.workspace = workspace or AulaTeXWorkspace()
         self.llm = llm_bridge or AulaTeXLLMClient()
         self.editorial_memory = EditorialMemoryStore(self.workspace)
+        self.template_materializer = TemplateMaterializer(self.workspace)
 
     def run(self, request: AgentRequest) -> AgentRunResult:
         target_ctx = self._resolve_target_context(request)
@@ -119,11 +121,25 @@ class AulaTeXAgent:
             stage_path = run_dir / f"stage-{index:02d}-{task.stage}.md"
             stage_path.write_text(self._format_stage(result, task), encoding="utf-8")
 
+        materialization_result: MaterializationResult | None = None
+        if self._should_materialize_template(request, target_ctx):
+            workflow.record("materialize-start", "ok", "generar-plantilla materializara estructura canonica de archivos")
+            materialization_result = self.template_materializer.materialize_subject(
+                target_ctx.target_path,
+                activity_number=request.activity_number,
+                force=True,
+            )
+            workflow.record(
+                "materialize-end",
+                "ok" if materialization_result.ok else "error",
+                f"{len(materialization_result.artifacts)} artefactos procesados",
+            )
+
         compile_results = []
         if request.compile_tex:
             workflow.record("tool-select", "ok", "latexmk-build.ps1 seleccionado para compilar objetivos canonicos")
             for tex in self._select_compile_targets(target_ctx):
-                invocation = safe_invoke(self.workspace.compile_tex, tex, clean_mode="none")
+                invocation = safe_invoke(self.workspace.compile_tex, tex, clean_mode="safe")
                 if invocation.ok:
                     build = invocation.result
                     ok = bool(build.ok)
@@ -196,6 +212,7 @@ class AulaTeXAgent:
                 for r in stage_results
             ],
             "compile_results": compile_results,
+            "materialization": self._materialization_manifest(materialization_result),
             "consensus": consensus.as_dict(),
             "workflow_events": workflow.as_dicts(),
         }
@@ -207,6 +224,13 @@ class AulaTeXAgent:
             self._build_report(request, target_ctx, selected_tasks, stage_results, compile_results, consensus),
             encoding="utf-8",
         )
+        if materialization_result is not None:
+            report_path.write_text(
+                report_path.read_text(encoding="utf-8")
+                + "\n"
+                + self._render_materialization_report(materialization_result),
+                encoding="utf-8",
+            )
         self.workspace.append_bitacora(run_id, request.action, manifest)
 
         if request.apply_feedback:
@@ -214,6 +238,8 @@ class AulaTeXAgent:
 
         ok = all(r.ok for r in stage_results) and all(item.get("ok") for item in compile_results or [{"ok": True}])
         ok = ok and consensus.passed
+        if materialization_result is not None:
+            ok = ok and materialization_result.ok
         return AgentRunResult(run_id, run_dir, ok, report_path, manifest_path)
 
     def _build_prompts(self, request: AgentRequest, context: str) -> list[str]:
@@ -298,6 +324,37 @@ class AulaTeXAgent:
         presentations = [p for p in tex_files if p.name.startswith("presentacion-")]
         selected = reports[:1] + presentations[:1]
         return selected or tex_files[:1]
+
+    def _should_materialize_template(self, request: AgentRequest, target_ctx: AgentTargetContext) -> bool:
+        return (
+            request.action.strip().lower() == "generar-plantilla"
+            and target_ctx.generation_mode == "direct"
+            and request.level in {"materia", "actividad"}
+        )
+
+    def _materialization_manifest(self, result: MaterializationResult | None) -> dict:
+        if result is None:
+            return {"enabled": False}
+        return {
+            "enabled": True,
+            "ok": result.ok,
+            "target_dir": self.workspace.relative(result.target_dir),
+            "artifacts": [self.workspace.relative(path) for path in result.artifacts],
+            "notes": list(result.notes),
+        }
+
+    def _render_materialization_report(self, result: MaterializationResult) -> str:
+        lines = [
+            "## Materializacion de plantilla",
+            "",
+            f"- Estado: {'OK' if result.ok else 'CON OBSERVACIONES'}",
+            f"- Carpeta: `{self.workspace.relative(result.target_dir)}`",
+            "",
+            "### Artefactos",
+        ]
+        lines.extend(f"- `{self.workspace.relative(path)}`" for path in result.artifacts)
+        lines.append("")
+        return "\n".join(lines)
 
     def _format_stage(self, result: LLMCallResult, task: AgentTask) -> str:
         status = "ok" if result.ok else "error"

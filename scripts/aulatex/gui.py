@@ -13,6 +13,7 @@ from .agent import AgentRequest, AulaTeXAgent
 from .agentic_patterns import pattern_catalog_markdown
 from .chat_sessions import AulaTeXChatStore, MULTIMOTOR_SEVERITY_LABELS, multimotor_severity_label
 from .config import credential_status
+from .construction import ConstructionBuilder, ConstructionEvent, ConstructionRequest, ConstructionStore
 from .editorial_memory import (
     EDITORIAL_LEVELS,
     ENGINE_PRIORITY,
@@ -22,8 +23,16 @@ from .editorial_memory import (
     EditorialMemoryRequest,
     EditorialMemoryStore,
 )
+from .investigation import (
+    KNOWLEDGE_SECTIONS,
+    InvestigationBuildResult,
+    InvestigationBuilder,
+    InvestigationEvent,
+    InvestigationRequest,
+    InvestigationStore,
+)
 from .llm_bridge import LLM_ENGINES, AulaTeXLLMClient
-from .workspace import AulaTeXWorkspace, EditorialScope
+from .workspace import GENERATION_MARKER_FILENAME, AulaTeXWorkspace, EditorialScope
 
 
 UNSELECTED_OPTION = "Sin seleccionar"
@@ -31,6 +40,7 @@ PROPAGATION_LABELS = {
     "local": "Solo origen",
     "ascendente": "Ascendente",
     "ascendente-exhaustivo": "Ascendente exhaustivo",
+    "recursivo": "Recursivo completo",
 }
 PROPAGATION_VALUES = tuple(PROPAGATION_LABELS)
 
@@ -85,6 +95,10 @@ class AulaTeXApp(tk.Tk):
         self.agent = AulaTeXAgent(self.workspace, self.llm)
         self.editorial_store = EditorialMemoryStore(self.workspace)
         self.editorial_builder = EditorialMemoryBuilder(self.workspace, self.llm, self.editorial_store)
+        self.investigation_store = InvestigationStore(self.workspace)
+        self.investigation_builder = InvestigationBuilder(self.workspace, self.llm, self.investigation_store, self.editorial_store)
+        self.construction_store = ConstructionStore(self.workspace)
+        self.construction_builder = ConstructionBuilder(self.workspace, self.llm, self.construction_store, self.editorial_store)
         self.editorial_scopes, self.editorial_children = self.workspace.editorial_scope_index()
         self.events: queue.Queue[tuple[str, object]] = queue.Queue()
         self._tooltips: list[ToolTip] = []
@@ -92,6 +106,8 @@ class AulaTeXApp(tk.Tk):
         self.llm_session_nodes: dict[str, str] = {}
         self.llm_multi_severity = tk.StringVar(value="normal")
         self.feedback_cancel_event = threading.Event()
+        self.investigation_cancel_event = threading.Event()
+        self.generation_cancel_event = threading.Event()
 
         self._build_ui()
         self.after(250, self._drain_events)
@@ -107,27 +123,30 @@ class AulaTeXApp(tk.Tk):
         self.agent_tab = ttk.Frame(notebook, padding=12)
         self.arch_tab = ttk.Frame(notebook, padding=12)
         self.builder_tab = ttk.Frame(notebook, padding=12)
-        self.compile_tab = ttk.Frame(notebook, padding=12)
-        self.extractor_tab = ttk.Frame(notebook, padding=12)
         self.feedback_tab = ttk.Frame(notebook, padding=12)
+        self.investigation_tab = ttk.Frame(notebook, padding=12)
+        self.extractor_tab = ttk.Frame(notebook, padding=12)
+        self.compile_tab = ttk.Frame(notebook, padding=12)
 
         notebook.add(self.panel_tab, text="Panel")
         notebook.add(self.llm_tab, text="LLM")
         notebook.add(self.agent_tab, text="Agente")
         notebook.add(self.arch_tab, text="Arquitectura")
-        notebook.add(self.builder_tab, text="Construccion")
-        notebook.add(self.compile_tab, text="Compilar")
-        notebook.add(self.extractor_tab, text="Extractor")
+        notebook.add(self.builder_tab, text="Generación")
         notebook.add(self.feedback_tab, text="Retroalimentacion")
+        notebook.add(self.investigation_tab, text="Investigación")
+        notebook.add(self.extractor_tab, text="Extractor")
+        notebook.add(self.compile_tab, text="Compilar")
 
         self._build_panel_tab()
         self._build_llm_tab()
         self._build_agent_tab()
         self._build_arch_tab()
         self._build_builder_tab()
-        self._build_compile_tab()
-        self._build_extractor_tab()
         self._build_feedback_tab()
+        self._build_investigation_tab()
+        self._build_extractor_tab()
+        self._build_compile_tab()
 
     def _build_panel_tab(self) -> None:
         self.panel_tab.columnconfigure(1, weight=1)
@@ -139,21 +158,24 @@ class AulaTeXApp(tk.Tk):
         ttk.Button(self.panel_tab, text="Verificar LLMs", command=self._check_llms).grid(row=2, column=0, sticky="w", pady=12)
         ttk.Button(self.panel_tab, text="Refrescar arbol", command=self._refresh_tree).grid(row=2, column=1, sticky="w", pady=12)
 
-        columns = ("bib", "pres", "rep")
+        columns = ("mem", "lock", "gen")
         self.template_tree = ttk.Treeview(self.panel_tab, columns=columns, show="tree headings")
-        self.template_tree.heading("#0", text="Plantillas")
-        self.template_tree.heading("bib", text="Bibliografia")
-        self.template_tree.heading("pres", text="Presentacion")
-        self.template_tree.heading("rep", text="Reporte")
+        self.template_tree.heading("#0", text="Nodos editoriales")
+        self.template_tree.heading("mem", text="Memoria")
+        self.template_tree.heading("lock", text="Fijas")
+        self.template_tree.heading("gen", text="Gen")
         self.template_tree.column("#0", width=480)
-        self.template_tree.column("bib", width=100, anchor="center")
-        self.template_tree.column("pres", width=100, anchor="center")
-        self.template_tree.column("rep", width=100, anchor="center")
+        self.template_tree.column("mem", width=100, anchor="center")
+        self.template_tree.column("lock", width=100, anchor="center")
+        self.template_tree.column("gen", width=100, anchor="center")
         self.template_tree.grid(row=3, column=0, columnspan=2, sticky="nsew")
 
         self.template_details = tk.Text(self.panel_tab, height=8)
         self.template_details.grid(row=4, column=0, columnspan=2, sticky="ew")
         self.template_tree.bind("<<TreeviewSelect>>", self._on_template_selected)
+        self.template_tree.bind("<Return>", self._show_template_node_details)
+        self.template_tree.bind("<KP_Enter>", self._show_template_node_details)
+        self.template_tree.bind("<Double-1>", self._toggle_template_node)
         self._refresh_tree()
 
     def _build_llm_tab(self) -> None:
@@ -343,40 +365,205 @@ class AulaTeXApp(tk.Tk):
 
     def _build_builder_tab(self) -> None:
         self.builder_tab.columnconfigure(0, weight=1)
-        self.builder_tab.rowconfigure(1, weight=1)
+        self.builder_tab.rowconfigure(4, weight=1)
+        self.builder_tab.rowconfigure(6, weight=1)
 
-        summary = tk.Text(self.builder_tab, height=12, wrap="word")
-        summary.grid(row=0, column=0, sticky="ew")
-        summary.insert(
-            "end",
-            "CONSTRUCCION DESCENDENTE DE NODOS\n\n"
-            "Este flujo es distinto de Retroalimentacion y distinto del Agente actual.\n\n"
-            "Objetivo:\n"
-            "- Crear instituciones, carreras, materias o actividades nuevas.\n"
-            "- Generar memoria fundacional.\n"
-            "- Generar plan editorial.\n"
-            "- Generar maqueta TEX.\n\n"
-            "Memoria utilizada:\n"
-            "Ancestros + Padre + Hermanos existentes.\n\n"
-            "Formula:\n"
-            "NodoNuevo = Ancestros + Padre + Hermanos + ReglasInterinstitucionales\n\n"
-            "Posteriormente la maqueta pasa al flujo de investigacion, redaccion y evaluacion.\n"
-        )
-        summary.configure(state="disabled")
+        self.generation_institution = tk.StringVar(value=UNSELECTED_OPTION)
+        self.generation_career = tk.StringVar(value=UNSELECTED_OPTION)
+        self.generation_subject = tk.StringVar(value=UNSELECTED_OPTION)
+        self.generation_node_level = tk.StringVar(value="actividad")
+        self.generation_mode = tk.StringVar(value="crear")
+        self.generation_node_name = tk.StringVar(value="")
+        self.generation_activity_number = tk.IntVar(value=1)
+        self.generation_destination = tk.StringVar(value="")
+        self.generation_ingest_document = tk.StringVar(value="")
+        self.generation_iterations = tk.IntVar(value=2)
+        self.generation_max_tokens = tk.IntVar(value=1800)
+        self.generation_engines = tk.StringVar(value=", ".join(self._ordered_feedback_engines()))
+        self.generation_scope_status = tk.StringVar(value="Padre editorial: pendiente")
+        self.generation_progress_status = tk.StringVar(value="Listo para generar memoria fundacional.")
+        self.generation_progress = tk.DoubleVar(value=0.0)
 
-        planner = tk.Text(self.builder_tab, wrap="word")
-        planner.grid(row=1, column=0, sticky="nsew", pady=(10, 0))
-        planner.insert(
-            "end",
-            "Pendiente de implementacion operativa:\n\n"
-            "1. Seleccionar padre editorial.\n"
-            "2. Detectar hermanos existentes.\n"
-            "3. Construir memoria fundacional.\n"
-            "4. Generar plan.md.\n"
-            "5. Generar maqueta.tex.\n"
-            "6. Transferir al flujo de investigacion/redaccion.\n"
+        header = ttk.Frame(self.builder_tab)
+        header.grid(row=0, column=0, sticky="ew")
+        header.columnconfigure(0, weight=1)
+        ttk.Label(
+            header,
+            text="Generación editorial descendente para crear o reforzar nodos con memoria fundacional, plan y maqueta.",
+            wraplength=900,
+        ).grid(row=0, column=0, sticky="w")
+        self.generation_help_button = ttk.Button(header, text="Ayuda", command=self._show_generation_help)
+        self.generation_help_button.grid(row=0, column=1, sticky="e")
+
+        source_frame = ttk.LabelFrame(self.builder_tab, text="Padre editorial", padding=10)
+        source_frame.grid(row=1, column=0, sticky="ew", pady=(10, 0))
+        for index in range(6):
+            source_frame.columnconfigure(index, weight=1 if index % 2 else 0)
+
+        ttk.Label(source_frame, text="Institucion").grid(row=0, column=0, sticky="w")
+        self.generation_institution_combo = ttk.Combobox(source_frame, textvariable=self.generation_institution, state="readonly")
+        self.generation_institution_combo.grid(row=0, column=1, sticky="ew", padx=(6, 12))
+        self.generation_institution_combo.bind("<<ComboboxSelected>>", self._on_generation_parent_changed)
+
+        ttk.Label(source_frame, text="Carrera").grid(row=0, column=2, sticky="w")
+        self.generation_career_combo = ttk.Combobox(source_frame, textvariable=self.generation_career, state="readonly")
+        self.generation_career_combo.grid(row=0, column=3, sticky="ew", padx=(6, 12))
+        self.generation_career_combo.bind("<<ComboboxSelected>>", self._on_generation_parent_changed)
+
+        ttk.Label(source_frame, text="Materia").grid(row=0, column=4, sticky="w")
+        self.generation_subject_combo = ttk.Combobox(source_frame, textvariable=self.generation_subject, state="readonly")
+        self.generation_subject_combo.grid(row=0, column=5, sticky="ew", padx=(6, 0))
+        self.generation_subject_combo.bind("<<ComboboxSelected>>", self._on_generation_parent_changed)
+
+        ttk.Label(source_frame, textvariable=self.generation_scope_status).grid(row=1, column=0, columnspan=6, sticky="w", pady=(10, 0))
+
+        control_frame = ttk.LabelFrame(self.builder_tab, text="Definicion del nodo", padding=10)
+        control_frame.grid(row=2, column=0, sticky="ew", pady=(10, 0))
+        for index in range(8):
+            control_frame.columnconfigure(index, weight=1 if index in {1, 3, 5} else 0)
+
+        ttk.Label(control_frame, text="Tipo de nodo").grid(row=0, column=0, sticky="w")
+        self.generation_level_combo = ttk.Combobox(
+            control_frame,
+            textvariable=self.generation_node_level,
+            values=("institucion", "carrera", "materia", "actividad"),
+            state="readonly",
         )
-        planner.configure(state="disabled")
+        self.generation_level_combo.grid(row=0, column=1, sticky="ew", padx=(6, 12))
+        self.generation_level_combo.bind("<<ComboboxSelected>>", self._on_generation_level_changed)
+
+        ttk.Label(control_frame, text="Modo").grid(row=0, column=2, sticky="w")
+        self.generation_mode_combo = ttk.Combobox(
+            control_frame,
+            textvariable=self.generation_mode,
+            values=("crear", "reforzar"),
+            state="readonly",
+        )
+        self.generation_mode_combo.grid(row=0, column=3, sticky="ew", padx=(6, 12))
+        self.generation_mode_combo.bind("<<ComboboxSelected>>", self._on_generation_level_changed)
+
+        ttk.Label(control_frame, text="Numero de actividad").grid(row=0, column=4, sticky="w")
+        self.generation_activity_spin = ttk.Spinbox(control_frame, from_=1, to=99, textvariable=self.generation_activity_number, width=8)
+        self.generation_activity_spin.grid(row=0, column=5, sticky="w", padx=(6, 12))
+
+        ttk.Label(control_frame, text="Iteraciones").grid(row=0, column=6, sticky="w")
+        self.generation_iterations_spin = ttk.Spinbox(control_frame, from_=1, to=12, textvariable=self.generation_iterations, width=8)
+        self.generation_iterations_spin.grid(row=0, column=7, sticky="w", padx=(6, 0))
+
+        ttk.Label(control_frame, text="Nombre del nodo").grid(row=1, column=0, sticky="w", pady=(10, 0))
+        self.generation_name_entry = ttk.Entry(control_frame, textvariable=self.generation_node_name)
+        self.generation_name_entry.grid(row=1, column=1, columnspan=3, sticky="ew", padx=(6, 12), pady=(10, 0))
+        self.generation_name_entry.bind("<KeyRelease>", self._on_generation_level_changed)
+
+        ttk.Label(control_frame, text="Destino").grid(row=1, column=4, sticky="w", pady=(10, 0))
+        self.generation_destination_entry = ttk.Entry(control_frame, textvariable=self.generation_destination)
+        self.generation_destination_entry.grid(row=1, column=5, columnspan=2, sticky="ew", padx=(6, 12), pady=(10, 0))
+        self.generation_destination_entry.bind("<KeyRelease>", self._on_generation_level_changed)
+        self.generation_destination_button = ttk.Button(control_frame, text="Buscar", command=self._browse_generation_destination)
+        self.generation_destination_button.grid(row=1, column=7, sticky="w", pady=(10, 0))
+
+        ttk.Label(control_frame, text="Motores en orden").grid(row=2, column=0, sticky="w", pady=(10, 0))
+        self.generation_engines_entry = ttk.Entry(control_frame, textvariable=self.generation_engines)
+        self.generation_engines_entry.grid(row=2, column=1, columnspan=5, sticky="ew", padx=(6, 12), pady=(10, 0))
+
+        ttk.Label(control_frame, text="Max tokens").grid(row=2, column=6, sticky="w", pady=(10, 0))
+        self.generation_tokens_spin = ttk.Spinbox(control_frame, from_=128, to=16000, increment=128, textvariable=self.generation_max_tokens, width=10)
+        self.generation_tokens_spin.grid(row=2, column=7, sticky="w", padx=(6, 0), pady=(10, 0))
+
+        ttk.Label(control_frame, text="Ingesta textual").grid(row=3, column=0, sticky="nw", pady=(10, 0))
+        self.generation_ingest_text = tk.Text(control_frame, height=5, wrap="word")
+        self.generation_ingest_text.grid(row=3, column=1, columnspan=7, sticky="ew", padx=(6, 0), pady=(10, 0))
+        self.generation_ingest_text.bind("<KeyRelease>", self._on_generation_level_changed)
+
+        ttk.Label(control_frame, text="Documento de ingesta").grid(row=4, column=0, sticky="w", pady=(10, 0))
+        self.generation_ingest_document_entry = ttk.Entry(control_frame, textvariable=self.generation_ingest_document)
+        self.generation_ingest_document_entry.grid(row=4, column=1, columnspan=6, sticky="ew", padx=(6, 12), pady=(10, 0))
+        self.generation_ingest_document_entry.bind("<KeyRelease>", self._on_generation_level_changed)
+        self.generation_ingest_document_button = ttk.Button(control_frame, text="Buscar documento", command=self._browse_generation_ingest_document)
+        self.generation_ingest_document_button.grid(row=4, column=7, sticky="w", pady=(10, 0))
+
+        action_frame = ttk.Frame(self.builder_tab)
+        action_frame.grid(row=3, column=0, sticky="ew", pady=(10, 0))
+        action_frame.columnconfigure(4, weight=1)
+        self.generation_run_button = ttk.Button(action_frame, text="Generar nodo", command=self._run_generation)
+        self.generation_run_button.grid(row=0, column=0, sticky="w")
+        self.generation_cancel_button = ttk.Button(action_frame, text="Cancelar", command=self._cancel_generation, state="disabled")
+        self.generation_cancel_button.grid(row=0, column=1, sticky="w", padx=(8, 0))
+        self.generation_refresh_button = ttk.Button(action_frame, text="Refrescar vista", command=self._reset_generation_view)
+        self.generation_refresh_button.grid(row=0, column=2, sticky="w", padx=(8, 0))
+        self.generation_help_inline_button = ttk.Button(action_frame, text="Ayuda", command=self._show_generation_help)
+        self.generation_help_inline_button.grid(row=0, column=3, sticky="w", padx=(8, 0))
+        ttk.Progressbar(action_frame, variable=self.generation_progress, maximum=100).grid(row=0, column=4, sticky="ew", padx=(12, 0))
+        ttk.Label(action_frame, textvariable=self.generation_progress_status).grid(row=1, column=0, columnspan=5, sticky="w", pady=(8, 0))
+
+        preview_frame = ttk.LabelFrame(self.builder_tab, text="Vista previa del nodo", padding=10)
+        preview_frame.grid(row=4, column=0, sticky="nsew", pady=(10, 0))
+        preview_frame.columnconfigure(0, weight=1)
+        preview_frame.rowconfigure(0, weight=1)
+        self.generation_preview_text = tk.Text(preview_frame, height=12, wrap="word")
+        self.generation_preview_text.grid(row=0, column=0, sticky="nsew")
+
+        metrics_frame = ttk.LabelFrame(self.builder_tab, text="Metricas historicas del nodo", padding=10)
+        metrics_frame.grid(row=5, column=0, sticky="nsew", pady=(10, 0))
+        metrics_frame.columnconfigure(0, weight=1)
+        metrics_frame.rowconfigure(0, weight=1)
+        self.generation_metrics_text = tk.Text(metrics_frame, height=7, wrap="word")
+        self.generation_metrics_text.grid(row=0, column=0, sticky="nsew")
+
+        output_frame = ttk.LabelFrame(self.builder_tab, text="Salida del orquestador", padding=10)
+        output_frame.grid(row=6, column=0, sticky="nsew", pady=(10, 0))
+        output_frame.columnconfigure(0, weight=1)
+        output_frame.rowconfigure(0, weight=1)
+        self.generation_output = tk.Text(output_frame, height=14, wrap="word")
+        self.generation_output.grid(row=0, column=0, sticky="nsew")
+
+        self._attach_tooltip(self.generation_help_button, "Abre una guía corta sobre generación editorial, memoria fundacional, ancestros, hermanos, destino y contrato futuro del Agente.")
+        self._attach_tooltip(self.generation_institution_combo, "Selecciona la institución padre cuando el nodo nuevo depende de ella. El filtrado de carrera y materia se actualiza de forma dependiente.")
+        self._attach_tooltip(self.generation_career_combo, "Selecciona la carrera padre si el nuevo nodo es una materia o si la actividad depende de una materia dentro de esa carrera.")
+        self._attach_tooltip(self.generation_subject_combo, "Selecciona la materia padre cuando vayas a generar o reforzar una actividad.")
+        self._attach_tooltip(self.generation_level_combo, "Define si vas a generar o reforzar una institución, carrera, materia o actividad.")
+        self._attach_tooltip(self.generation_mode_combo, "Crear exige nodo y destino nuevos. Reforzar permite reutilizar un destino existente y mejorar la memoria fundacional sin regresión.")
+        self._attach_tooltip(self.generation_activity_spin, "Solo aplica a actividades. Sirve para validar numeración y para nombrar la maqueta inicial de forma consistente.")
+        self._attach_tooltip(self.generation_iterations_spin, "Número de ciclos completos del orquestador. Cada ciclo vuelve a consultar los motores en el orden configurado.")
+        self._attach_tooltip(self.generation_name_entry, "Nombre editorial del nodo nuevo o del nodo a reforzar. Se usa para clave, etiqueta y maqueta.")
+        self._attach_tooltip(self.generation_destination_entry, "Ruta destino relativa o absoluta. Puede ser una carpeta existente para reforzar o una nueva para crear el nodo.")
+        self._attach_tooltip(self.generation_destination_button, "Selecciona una carpeta ya existente como destino. Si necesitas una carpeta nueva, puedes escribirla manualmente en el campo de destino.")
+        self._attach_tooltip(self.generation_ingest_text, "Texto libre opcional. Puedes pegar lineamientos, instrucciones del docente o notas editoriales; también funciona combinado con el documento.")
+        self._attach_tooltip(self.generation_ingest_document_entry, "Documento opcional de apoyo. Puedes usarlo solo o junto con la ingesta textual para orientar memoria y TEX editorial.")
+        self._attach_tooltip(self.generation_ingest_document_button, "Selecciona un documento de apoyo para usarlo como ingesta. Se intentará leer si es texto o DOCX; otros tipos se conservarán como referencia contextual.")
+        self._attach_tooltip(self.generation_engines_entry, "Lista separada por comas. Se ejecutan secuencialmente para proponer y fusionar memoria fundacional, plan y maqueta.")
+        self._attach_tooltip(self.generation_tokens_spin, "Límite de salida por llamada LLM para cada motor y ciclo.")
+        self._attach_tooltip(self.generation_run_button, "Inicia la generación editorial descendente del nodo configurado y persiste memoria, plan, maqueta y métricas.")
+        self._attach_tooltip(self.generation_cancel_button, "Solicita cancelación cooperativa. La corrida se cierra cuando termina la llamada LLM que esté en curso.")
+        self._attach_tooltip(self.generation_refresh_button, "Reinicia la pestaña Generación a su estado inicial, recarga el catálogo editorial y deja la vista lista para otra corrida.")
+        self._attach_tooltip(self.generation_help_inline_button, "Abre la ayuda operativa de la pestaña Generación.")
+        self._attach_tooltip(self.generation_preview_text, "Muestra el padre resuelto, la clave del nodo, el destino final, el modo crear/reforzar y el contrato editorial del destino.")
+        self._attach_tooltip(self.generation_metrics_text, "Resume llamadas, caracteres, tiempos y errores por motor, además del avance por ciclo del nodo actualmente previsualizado.")
+        self._attach_tooltip(self.generation_output, "Bitácora en vivo del orquestador de generación: inicio, progreso por motor, resultados y cierre de la corrida.")
+        self._register_busy_widgets(
+            "generation",
+            self.generation_run_button,
+            self.generation_refresh_button,
+            self.generation_help_button,
+            self.generation_help_inline_button,
+            self.generation_institution_combo,
+            self.generation_career_combo,
+            self.generation_subject_combo,
+            self.generation_level_combo,
+            self.generation_mode_combo,
+            self.generation_activity_spin,
+            self.generation_iterations_spin,
+            self.generation_name_entry,
+            self.generation_destination_entry,
+            self.generation_destination_button,
+            self.generation_ingest_text,
+            self.generation_ingest_document_entry,
+            self.generation_ingest_document_button,
+            self.generation_engines_entry,
+            self.generation_tokens_spin,
+        )
+
+        self._refresh_generation_catalog()
 
     def _build_compile_tab(self) -> None:
         self.compile_tab.columnconfigure(1, weight=1)
@@ -534,7 +721,7 @@ class AulaTeXApp(tk.Tk):
         self._attach_tooltip(self.feedback_subject_combo, "Selecciona la materia si quieres precisión local; desde aquí también se habilita la selección de actividades detectadas.")
         self._attach_tooltip(self.feedback_activity_combo, "La actividad afina el punto de arranque. La memoria puede propagarse desde ella hacia materia, carrera, institución e interinstitucional.")
         self._attach_tooltip(self.feedback_build_combo, "Define hasta qué nivel debe llegar la construcción en esta corrida: desde el origen actual hacia materia, carrera, institución o interinstitucional.")
-        self._attach_tooltip(self.feedback_propagation_combo, "Ascendente: sube hasta el nivel destino. Ascendente exhaustivo: antes de consolidar cada nivel incorpora todos los elementos del nivel inferior.")
+        self._attach_tooltip(self.feedback_propagation_combo, "Ascendente: sube hasta el nivel destino. Ascendente exhaustivo: antes de consolidar cada nivel incorpora todos los elementos del nivel inferior. Recursivo completo: consolida el subárbol descendente completo de cada nivel antes de subir al siguiente ancestro.")
         self._attach_tooltip(self.feedback_iterations_spin, "Número de pasadas completas del orquestador. Cada ciclo vuelve a consultar los motores en el orden configurado.")
         self._attach_tooltip(self.feedback_engines_entry, "Lista separada por comas. Se ejecutan del más rápido al más profundo; el orden por defecto ya sigue esa estrategia.")
         self._attach_tooltip(self.feedback_tokens_spin, "Límite de salida por llamada LLM. Útil para controlar profundidad y costo por ciclo.")
@@ -568,6 +755,171 @@ class AulaTeXApp(tk.Tk):
         self._refresh_feedback_catalog()
         self._refresh_feedback()
 
+    def _build_investigation_tab(self) -> None:
+        self.investigation_tab.columnconfigure(0, weight=1)
+        self.investigation_tab.rowconfigure(4, weight=1)
+        self.investigation_tab.rowconfigure(5, weight=1)
+        self.investigation_tab.rowconfigure(6, weight=1)
+        self.investigation_tab.rowconfigure(7, weight=1)
+
+        self.investigation_institution = tk.StringVar(value=UNSELECTED_OPTION)
+        self.investigation_career = tk.StringVar(value=UNSELECTED_OPTION)
+        self.investigation_subject = tk.StringVar(value=UNSELECTED_OPTION)
+        self.investigation_activity = tk.StringVar(value=UNSELECTED_OPTION)
+        self.investigation_iterations = tk.IntVar(value=2)
+        self.investigation_max_tokens = tk.IntVar(value=1800)
+        self.investigation_engines = tk.StringVar(value=", ".join(self._ordered_feedback_engines()))
+        self.investigation_scope_status = tk.StringVar(value="Scope de investigación: pendiente")
+        self.investigation_progress_status = tk.StringVar(value="Listo para consolidar la base de conocimiento.")
+        self.investigation_progress = tk.DoubleVar(value=0.0)
+
+        header = ttk.Frame(self.investigation_tab)
+        header.grid(row=0, column=0, sticky="ew")
+        header.columnconfigure(0, weight=1)
+        ttk.Label(
+            header,
+            text="Investiga y consolida la base de conocimiento antes del extractor: contexto local, consultas web, bibliografía, referencias y assets.",
+            wraplength=940,
+        ).grid(row=0, column=0, sticky="w")
+        self.investigation_help_button = ttk.Button(header, text="Ayuda", command=self._show_investigation_help)
+        self.investigation_help_button.grid(row=0, column=1, sticky="e")
+
+        source_frame = ttk.LabelFrame(self.investigation_tab, text="Scope editorial", padding=10)
+        source_frame.grid(row=1, column=0, sticky="ew", pady=(10, 0))
+        for index in range(8):
+            source_frame.columnconfigure(index, weight=1 if index % 2 else 0)
+
+        ttk.Label(source_frame, text="Institucion").grid(row=0, column=0, sticky="w")
+        self.investigation_institution_combo = ttk.Combobox(source_frame, textvariable=self.investigation_institution, state="readonly")
+        self.investigation_institution_combo.grid(row=0, column=1, sticky="ew", padx=(6, 12))
+        self.investigation_institution_combo.bind("<<ComboboxSelected>>", self._on_investigation_source_changed)
+
+        ttk.Label(source_frame, text="Carrera").grid(row=0, column=2, sticky="w")
+        self.investigation_career_combo = ttk.Combobox(source_frame, textvariable=self.investigation_career, state="readonly")
+        self.investigation_career_combo.grid(row=0, column=3, sticky="ew", padx=(6, 12))
+        self.investigation_career_combo.bind("<<ComboboxSelected>>", self._on_investigation_source_changed)
+
+        ttk.Label(source_frame, text="Materia").grid(row=0, column=4, sticky="w")
+        self.investigation_subject_combo = ttk.Combobox(source_frame, textvariable=self.investigation_subject, state="readonly")
+        self.investigation_subject_combo.grid(row=0, column=5, sticky="ew", padx=(6, 12))
+        self.investigation_subject_combo.bind("<<ComboboxSelected>>", self._on_investigation_source_changed)
+
+        ttk.Label(source_frame, text="Actividad").grid(row=0, column=6, sticky="w")
+        self.investigation_activity_combo = ttk.Combobox(source_frame, textvariable=self.investigation_activity, state="readonly")
+        self.investigation_activity_combo.grid(row=0, column=7, sticky="ew", padx=(6, 0))
+        self.investigation_activity_combo.bind("<<ComboboxSelected>>", self._on_investigation_source_changed)
+
+        ttk.Label(source_frame, textvariable=self.investigation_scope_status).grid(row=1, column=0, columnspan=8, sticky="w", pady=(10, 0))
+
+        control_frame = ttk.LabelFrame(self.investigation_tab, text="Orquestación", padding=10)
+        control_frame.grid(row=2, column=0, sticky="ew", pady=(10, 0))
+        for index in range(6):
+            control_frame.columnconfigure(index, weight=1 if index in {1, 3, 5} else 0)
+
+        ttk.Label(control_frame, text="Iteraciones").grid(row=0, column=0, sticky="w")
+        self.investigation_iterations_spin = ttk.Spinbox(control_frame, from_=1, to=12, textvariable=self.investigation_iterations, width=8)
+        self.investigation_iterations_spin.grid(row=0, column=1, sticky="w", padx=(6, 12))
+
+        ttk.Label(control_frame, text="Motores en orden").grid(row=0, column=2, sticky="w")
+        self.investigation_engines_entry = ttk.Entry(control_frame, textvariable=self.investigation_engines)
+        self.investigation_engines_entry.grid(row=0, column=3, sticky="ew", padx=(6, 12))
+
+        ttk.Label(control_frame, text="Max tokens").grid(row=0, column=4, sticky="w")
+        self.investigation_tokens_spin = ttk.Spinbox(control_frame, from_=128, to=16000, increment=128, textvariable=self.investigation_max_tokens, width=10)
+        self.investigation_tokens_spin.grid(row=0, column=5, sticky="w", padx=(6, 0))
+
+        ttk.Label(control_frame, text="Consultas web").grid(row=1, column=0, sticky="nw", pady=(10, 0))
+        self.investigation_queries_text = tk.Text(control_frame, height=5, wrap="word")
+        self.investigation_queries_text.grid(row=1, column=1, columnspan=5, sticky="ew", padx=(6, 0), pady=(10, 0))
+
+        ttk.Label(control_frame, text="URLs semilla").grid(row=2, column=0, sticky="nw", pady=(10, 0))
+        self.investigation_urls_text = tk.Text(control_frame, height=4, wrap="word")
+        self.investigation_urls_text.grid(row=2, column=1, columnspan=5, sticky="ew", padx=(6, 0), pady=(10, 0))
+
+        action_frame = ttk.Frame(self.investigation_tab)
+        action_frame.grid(row=3, column=0, sticky="ew", pady=(10, 0))
+        action_frame.columnconfigure(5, weight=1)
+        self.investigation_run_button = ttk.Button(action_frame, text="Consolidar investigación", command=self._run_investigation)
+        self.investigation_run_button.grid(row=0, column=0, sticky="w")
+        self.investigation_cancel_button = ttk.Button(action_frame, text="Cancelar", command=self._cancel_investigation, state="disabled")
+        self.investigation_cancel_button.grid(row=0, column=1, sticky="w", padx=(8, 0))
+        self.investigation_refresh_button = ttk.Button(action_frame, text="Refrescar vista", command=self._refresh_investigation)
+        self.investigation_refresh_button.grid(row=0, column=2, sticky="w", padx=(8, 0))
+        self.investigation_defaults_button = ttk.Button(action_frame, text="Restaurar consultas", command=self._reset_investigation_queries)
+        self.investigation_defaults_button.grid(row=0, column=3, sticky="w", padx=(8, 0))
+        self.investigation_help_inline_button = ttk.Button(action_frame, text="Ayuda", command=self._show_investigation_help)
+        self.investigation_help_inline_button.grid(row=0, column=4, sticky="w", padx=(8, 0))
+        ttk.Progressbar(action_frame, variable=self.investigation_progress, maximum=100).grid(row=0, column=5, sticky="ew", padx=(12, 0))
+        ttk.Label(action_frame, textvariable=self.investigation_progress_status).grid(row=1, column=0, columnspan=6, sticky="w", pady=(8, 0))
+
+        preview_frame = ttk.LabelFrame(self.investigation_tab, text="Plan y artefactos previstos", padding=10)
+        preview_frame.grid(row=4, column=0, sticky="nsew", pady=(10, 0))
+        preview_frame.columnconfigure(0, weight=1)
+        preview_frame.rowconfigure(0, weight=1)
+        self.investigation_preview_text = tk.Text(preview_frame, height=10, wrap="word")
+        self.investigation_preview_text.grid(row=0, column=0, sticky="nsew")
+
+        knowledge_frame = ttk.LabelFrame(self.investigation_tab, text="Base de conocimiento actual", padding=10)
+        knowledge_frame.grid(row=5, column=0, sticky="nsew", pady=(10, 0))
+        knowledge_frame.columnconfigure(0, weight=1)
+        knowledge_frame.rowconfigure(0, weight=1)
+        self.investigation_knowledge_text = tk.Text(knowledge_frame, height=12, wrap="word")
+        self.investigation_knowledge_text.grid(row=0, column=0, sticky="nsew")
+
+        metrics_frame = ttk.LabelFrame(self.investigation_tab, text="Metricas del orquestador", padding=10)
+        metrics_frame.grid(row=6, column=0, sticky="nsew", pady=(10, 0))
+        metrics_frame.columnconfigure(0, weight=1)
+        metrics_frame.rowconfigure(0, weight=1)
+        self.investigation_metrics_text = tk.Text(metrics_frame, height=7, wrap="word")
+        self.investigation_metrics_text.grid(row=0, column=0, sticky="nsew")
+
+        output_frame = ttk.LabelFrame(self.investigation_tab, text="Salida del orquestador", padding=10)
+        output_frame.grid(row=7, column=0, sticky="nsew", pady=(10, 0))
+        output_frame.columnconfigure(0, weight=1)
+        output_frame.rowconfigure(0, weight=1)
+        self.investigation_output = tk.Text(output_frame, height=10, wrap="word")
+        self.investigation_output.grid(row=0, column=0, sticky="nsew")
+
+        self._attach_tooltip(self.investigation_help_button, "Explica cómo usar la fase Investigación para consolidar bibliografía, referencias, programa analítico y assets antes del extractor.")
+        self._attach_tooltip(self.investigation_institution_combo, "Selecciona la institución base. El resto de filtros se actualiza según la jerarquía editorial detectada.")
+        self._attach_tooltip(self.investigation_career_combo, "Selecciona la carrera cuando quieras investigar un programa completo o una materia dentro de esa trayectoria.")
+        self._attach_tooltip(self.investigation_subject_combo, "Selecciona la materia para priorizar programa analítico, bibliografía recomendada y carpeta de referencias.")
+        self._attach_tooltip(self.investigation_activity_combo, "Refina la investigación a una actividad concreta. Esto permite crear una carpeta de referencias específica si hace falta.")
+        self._attach_tooltip(self.investigation_iterations_spin, "Número de ciclos del orquestador. Cada pasada reevalúa el conocimiento acumulado y refuerza hallazgos útiles.")
+        self._attach_tooltip(self.investigation_engines_entry, "Lista separada por comas. Los motores se usan secuencialmente en cada iteración para consolidar consenso y cubrir vacíos.")
+        self._attach_tooltip(self.investigation_tokens_spin, "Límite de salida por llamada LLM durante la fase Investigación.")
+        self._attach_tooltip(self.investigation_queries_text, "Una consulta por línea. Si lo dejas vacío, AulaTeX propondrá búsquedas por defecto según el scope seleccionado.")
+        self._attach_tooltip(self.investigation_urls_text, "Una URL por línea. Útil para sembrar sitios institucionales, PDF curriculares o fuentes recomendadas antes de lanzar la corrida.")
+        self._attach_tooltip(self.investigation_run_button, "Inicia la consolidación de base de conocimiento y materializa artefactos como base-conocimiento, BibTeX, referencias, assets y programa analítico cuando aplique.")
+        self._attach_tooltip(self.investigation_cancel_button, "Solicita cancelación cooperativa. La corrida se detiene al terminar la llamada LLM en curso.")
+        self._attach_tooltip(self.investigation_refresh_button, "Relee el scope, la vista previa, las métricas y el conocimiento persistido para la selección actual.")
+        self._attach_tooltip(self.investigation_defaults_button, "Rellena de nuevo las consultas sugeridas para el scope actual, respetando la estructura editorial del repositorio.")
+        self._attach_tooltip(self.investigation_help_inline_button, "Abre la ayuda operativa de la pestaña Investigación.")
+        self._attach_tooltip(self.investigation_preview_text, "Muestra los archivos y carpetas que AulaTeX planea consolidar para el scope seleccionado antes de invocar el extractor.")
+        self._attach_tooltip(self.investigation_knowledge_text, "Renderiza la base de conocimiento persistida actualmente para el scope: hallazgos locales, web, bibliografía, vacíos y acciones siguientes.")
+        self._attach_tooltip(self.investigation_metrics_text, "Resume el historial de llamadas por motor y por ciclo en la fase Investigación para este scope.")
+        self._attach_tooltip(self.investigation_output, "Bitácora en vivo de la corrida de Investigación: inicio, progreso, resultados, cancelación y cierre.")
+        self._register_busy_widgets(
+            "investigation",
+            self.investigation_run_button,
+            self.investigation_refresh_button,
+            self.investigation_defaults_button,
+            self.investigation_help_button,
+            self.investigation_help_inline_button,
+            self.investigation_institution_combo,
+            self.investigation_career_combo,
+            self.investigation_subject_combo,
+            self.investigation_activity_combo,
+            self.investigation_iterations_spin,
+            self.investigation_engines_entry,
+            self.investigation_tokens_spin,
+            self.investigation_queries_text,
+            self.investigation_urls_text,
+        )
+
+        self._refresh_investigation_catalog()
+        self._refresh_investigation()
+
     def _thread(self, fn) -> None:
         threading.Thread(target=fn, daemon=True).start()
 
@@ -598,6 +950,12 @@ class AulaTeXApp(tk.Tk):
             widget.configure(state="disabled" if busy else initial_state)
         if group == "feedback":
             self.feedback_cancel_button.configure(state="normal" if busy else "disabled")
+        if group == "investigation":
+            self.investigation_cancel_button.configure(state="normal" if busy else "disabled")
+        if group == "generation":
+            self.generation_cancel_button.configure(state="normal" if busy else "disabled")
+            if not busy:
+                self._sync_generation_form_state()
 
     def _show_llm_help(self) -> None:
         messagebox.showinfo(
@@ -624,10 +982,292 @@ class AulaTeXApp(tk.Tk):
             "3. Ajusta iteraciones, motores y max tokens.\n"
             "4. Revisa el plan de propagación antes de ejecutar.\n"
             "5. Construye la memoria: el progreso avanza por scope, ciclo y motor.\n"
-            "6. Usa 'Fijar reglas actuales' para congelar secciones validadas y evitar que futuras corridas las alteren.\n"
-            "7. Consulta métricas por motor y ciclo para comparar profundidad, estabilidad y volumen de salida.\n"
-            "8. Si cancelas, se conserva lo ya consolidado y el manifiesto queda marcado como cancelado.",
+            "6. Usa recursivo completo cuando necesites una construcción editorial integral: consolida el subárbol completo de cada ancestro antes de seguir subiendo.\n"
+            "7. Usa 'Fijar reglas actuales' para congelar secciones validadas y evitar que futuras corridas las alteren.\n"
+            "8. Consulta métricas por motor y ciclo para comparar profundidad, estabilidad y volumen de salida.\n"
+            "9. Si cancelas, se conserva lo ya consolidado y el manifiesto queda marcado como cancelado.",
         )
+
+    def _show_investigation_help(self) -> None:
+        messagebox.showinfo(
+            "AulaTeX - Investigación",
+            "1. Selecciona institución, carrera, materia o actividad.\n"
+            "2. Ajusta iteraciones, motores y max tokens.\n"
+            "3. Escribe consultas web y URLs semilla si ya conoces fuentes clave.\n"
+            "4. Revisa la vista previa: AulaTeX mostrará la bibliografía, referencias, programa analítico y assets que piensa consolidar.\n"
+            "5. Ejecuta la corrida para reunir base de conocimiento previa al extractor.\n"
+            "6. La salida persiste base-conocimiento, fuentes-web y métricas del scope; además refuerza el archivo .bib canonico y crea carpetas de referencias o assets cuando corresponda.\n"
+            "7. Para materias se intenta preparar programa-analitico-*.md si aún no existe; para actividades se crea una carpeta de referencias específica.",
+        )
+
+    def _show_generation_help(self) -> None:
+        messagebox.showinfo(
+            "AulaTeX - Generación editorial",
+            "1. Generación crea o refuerza nodos editoriales descendentes sin ejecutar todavía investigación ni redacción completa.\n"
+            "2. La memoria fundacional se construye con ancestros + padre + síntesis de hermanos + reglas interinstitucionales.\n"
+            "3. Los ancestros son todos los niveles superiores disponibles; el padre es el nodo inmediatamente superior.\n"
+            "4. Los hermanos sirven solo para sintetizar patrones editoriales recurrentes, no para copiar memoria literal.\n"
+            "5. Puedes aportar ingesta textual, un documento de apoyo o ambos; la generación los toma como restricciones editoriales y material base.\n"
+            "6. El destino puede ser una carpeta existente para reforzar o una nueva para crear el nodo.\n"
+            "7. La salida produce memoria-fundacional-<slug>.json, plan.md y maqueta-<slug>.tex, dejando además un marcador interno para que AulaTeX reconozca el nodo generado.\n"
+            "8. La maqueta-<slug>.tex funciona como instructivo editorial con indicaciones para plantilla, actividad, reporte y presentación.\n"
+            "9. Después, el Agente podrá investigar, redactar, evaluar y compilar sobre esa maqueta, pero esa fase no se ejecuta en esta pestaña.",
+        )
+
+    def _refresh_generation_catalog(self) -> None:
+        self.editorial_scopes, self.editorial_children = self.workspace.editorial_scope_index()
+        institutions = sorted(scope.label for scope in self.editorial_scopes.values() if scope.level == "institucion")
+        self.generation_institution_combo.configure(values=self._with_unselected(institutions))
+        if self.generation_institution.get() not in self.generation_institution_combo.cget("values"):
+            self.generation_institution.set(UNSELECTED_OPTION)
+        self._sync_generation_parent_filters()
+        self._sync_generation_form_state()
+        self._refresh_generation_preview()
+
+    def _reset_generation_view(self) -> None:
+        self.generation_cancel_event = threading.Event()
+        self.generation_institution.set(UNSELECTED_OPTION)
+        self.generation_career.set(UNSELECTED_OPTION)
+        self.generation_subject.set(UNSELECTED_OPTION)
+        self.generation_node_level.set("actividad")
+        self.generation_mode.set("crear")
+        self.generation_node_name.set("")
+        self.generation_activity_number.set(1)
+        self.generation_destination.set("")
+        self.generation_ingest_document.set("")
+        self.generation_iterations.set(2)
+        self.generation_max_tokens.set(1800)
+        self.generation_engines.set(", ".join(self._ordered_feedback_engines()))
+        self.generation_ingest_text.delete("1.0", "end")
+        self.generation_progress.set(0.0)
+        self.generation_scope_status.set("Padre editorial: pendiente")
+        self.generation_progress_status.set("Listo para generar memoria fundacional.")
+        self._set_text(self.generation_output, "")
+        self._refresh_generation_catalog()
+
+    def _sync_generation_parent_filters(self) -> None:
+        institution = self._selected_feedback_value(self.generation_institution)
+        selected_career = self._selected_feedback_value(self.generation_career)
+        selected_subject = self._selected_feedback_value(self.generation_subject)
+
+        careers = sorted(
+            scope.label
+            for scope in self.editorial_scopes.values()
+            if scope.level == "carrera" and scope.institution == institution
+        )
+        career_values = self._with_unselected(careers)
+        self.generation_career_combo.configure(values=career_values)
+        if selected_career not in careers:
+            self.generation_career.set(UNSELECTED_OPTION)
+            selected_career = ""
+
+        subjects = sorted(
+            scope.label
+            for scope in self.editorial_scopes.values()
+            if scope.level == "materia"
+            and scope.institution == institution
+            and scope.career == selected_career
+        )
+        self.generation_subject_combo.configure(values=self._with_unselected(subjects))
+        if selected_subject not in subjects:
+            self.generation_subject.set(UNSELECTED_OPTION)
+
+    def _sync_generation_form_state(self) -> None:
+        level = self.generation_node_level.get()
+        if level == "institucion":
+            self.generation_institution.set(UNSELECTED_OPTION)
+            self.generation_career.set(UNSELECTED_OPTION)
+            self.generation_subject.set(UNSELECTED_OPTION)
+            self.generation_institution_combo.configure(state="disabled")
+            self.generation_career_combo.configure(state="disabled")
+            self.generation_subject_combo.configure(state="disabled")
+        elif level == "carrera":
+            self.generation_career.set(UNSELECTED_OPTION)
+            self.generation_subject.set(UNSELECTED_OPTION)
+            self.generation_institution_combo.configure(state="readonly")
+            self.generation_career_combo.configure(state="disabled")
+            self.generation_subject_combo.configure(state="disabled")
+        elif level == "materia":
+            self.generation_subject.set(UNSELECTED_OPTION)
+            self.generation_institution_combo.configure(state="readonly")
+            self.generation_career_combo.configure(state="readonly")
+            self.generation_subject_combo.configure(state="disabled")
+        else:
+            self.generation_institution_combo.configure(state="readonly")
+            self.generation_career_combo.configure(state="readonly")
+            self.generation_subject_combo.configure(state="readonly")
+        self.generation_activity_spin.configure(state="normal" if level == "actividad" else "disabled")
+
+    def _on_generation_parent_changed(self, _event=None) -> None:
+        self._sync_generation_parent_filters()
+        self._refresh_generation_preview()
+
+    def _on_generation_level_changed(self, _event=None) -> None:
+        self._sync_generation_parent_filters()
+        self._sync_generation_form_state()
+        self._refresh_generation_preview()
+
+    def _resolve_generation_parent_scope(self) -> EditorialScope | None:
+        level = self.generation_node_level.get()
+        institution = self._selected_feedback_value(self.generation_institution)
+        career = self._selected_feedback_value(self.generation_career)
+        subject = self._selected_feedback_value(self.generation_subject)
+
+        if level == "institucion":
+            return self.editorial_scopes.get("interinstitucional")
+        if level == "carrera":
+            if not institution:
+                return None
+            return self.editorial_scopes.get(self.workspace._scope_key("institucion", institution=institution))
+        if level == "materia":
+            if career:
+                return self.editorial_scopes.get(self.workspace._scope_key("carrera", institution=institution, career=career))
+            if institution:
+                return self.editorial_scopes.get(self.workspace._scope_key("institucion", institution=institution))
+            return None
+        if not subject:
+            return None
+        return self.editorial_scopes.get(self.workspace._scope_key("materia", institution=institution, career=career, subject=subject))
+
+    def _parse_generation_engines(self) -> list[str]:
+        selected = [item.strip() for item in self.generation_engines.get().split(",") if item.strip()]
+        valid = [engine for engine in selected if engine in self.llm.engines()]
+        return valid or self._ordered_feedback_engines()
+
+    def _build_generation_request(self) -> ConstructionRequest:
+        parent_scope = self._resolve_generation_parent_scope()
+        if parent_scope is None:
+            raise ValueError("Selecciona un padre editorial válido para el nivel solicitado.")
+        name = self.generation_node_name.get().strip()
+        if not name:
+            raise ValueError("Escribe el nombre del nodo a generar o reforzar.")
+        ingest_text = self.generation_ingest_text.get("1.0", "end").strip()
+        return ConstructionRequest(
+            parent_scope_key=parent_scope.key,
+            node_level=self.generation_node_level.get(),
+            node_name=name,
+            activity_number=max(1, int(self.generation_activity_number.get())),
+            operation_mode=self.generation_mode.get(),
+            destination_path=self.generation_destination.get().strip(),
+            ingest_text=ingest_text,
+            ingest_document_path=self.generation_ingest_document.get().strip(),
+            engines=self._parse_generation_engines(),
+            iterations=max(1, int(self.generation_iterations.get())),
+            max_tokens=max(128, int(self.generation_max_tokens.get())),
+        )
+
+    def _refresh_generation_preview(self) -> None:
+        self.generation_preview_text.delete("1.0", "end")
+        self.generation_metrics_text.delete("1.0", "end")
+        parent_scope = self._resolve_generation_parent_scope()
+        if parent_scope is None:
+            self.generation_scope_status.set("Padre editorial: pendiente")
+            self.generation_preview_text.insert(
+                "end",
+                "Selecciona el padre editorial adecuado según el nivel:\n"
+                "- Institución: padre interinstitucional.\n"
+                "- Carrera: requiere institución.\n"
+                "- Materia: requiere institución y opcionalmente carrera.\n"
+                "- Actividad: requiere materia.\n",
+            )
+            self.generation_metrics_text.insert("end", "# Metricas de generación\n\n- Sin nodo previsualizado.\n")
+            return
+
+        self.generation_scope_status.set(
+            f"Padre editorial: {parent_scope.level} | {parent_scope.key} | ruta {parent_scope.relative_path or '.'}"
+        )
+        try:
+            request = self._build_generation_request()
+            node = self.construction_builder.preview_node(request)
+        except ValueError as exc:
+            self.generation_preview_text.insert("end", f"Vista previa incompleta: {exc}\n")
+            self.generation_metrics_text.insert("end", "# Metricas de generación\n\n- El nodo todavía no puede resolverse.\n")
+            return
+
+        destination_exists = node.output_dir.exists()
+        context_target = node.output_dir if destination_exists else node.output_dir.parent
+        destination_context = self.workspace.context_summary(context_target, max_chars=2200)
+        self.generation_preview_text.insert(
+            "end",
+            f"Nodo: {node.label}\n"
+            f"Clave: {node.key}\n"
+            f"Nivel: {node.level}\n"
+            f"Modo: {node.operation_mode}\n"
+            f"Padre: {node.parent_scope_key}\n"
+            f"Destino: {node.relative_path}\n"
+            f"Existe en disco: {'sí' if destination_exists else 'no'}\n"
+            f"Ingesta textual: {'sí' if request.ingest_text else 'no'}\n"
+            f"Documento de ingesta: {request.ingest_document_path or 'no'}\n"
+            f"Entrada futura del agente: {node.future_agent_entrypoint}\n\n"
+            f"Contrato del destino:\n{self.construction_builder._destination_contract(node)}\n\n"
+            f"Contexto disponible:\n{destination_context}\n",
+        )
+        self.generation_metrics_text.insert("end", self.construction_store.render_metrics_markdown(node.key))
+
+    def _browse_generation_destination(self) -> None:
+        path = filedialog.askdirectory(initialdir=str(self.workspace.repo_root))
+        if path:
+            self.generation_destination.set(self.workspace.relative(path))
+            self._refresh_generation_preview()
+
+    def _browse_generation_ingest_document(self) -> None:
+        path = filedialog.askopenfilename(initialdir=str(self.workspace.repo_root))
+        if path:
+            self.generation_ingest_document.set(self.workspace.relative(path))
+            self._refresh_generation_preview()
+
+    def _run_generation(self) -> None:
+        try:
+            request = self._build_generation_request()
+            node = self.construction_builder.preview_node(request)
+        except ValueError as exc:
+            messagebox.showwarning("AulaTeX", str(exc))
+            return
+
+        self.generation_cancel_event = threading.Event()
+        self.generation_progress.set(0.0)
+        self.generation_progress_status.set("Generando memoria fundacional, plan y maqueta...")
+        self._log(
+            self.generation_output,
+            f"[GENERACION] Inicio {node.key} | modo={request.operation_mode} | destino={node.relative_path} | motores={', '.join(self._parse_generation_engines())}",
+        )
+        self._set_busy("generation", True)
+
+        def on_progress(event: ConstructionEvent) -> None:
+            self.events.put(("generation-progress", event))
+
+        def work() -> None:
+            try:
+                result = self.construction_builder.build(request, progress=on_progress, cancel_event=self.generation_cancel_event)
+                self.events.put(("generation-result", result))
+            except Exception as exc:
+                self.events.put(("generation-error", f"[GENERACION] ERROR {type(exc).__name__}: {exc}"))
+
+        self._thread(work)
+
+    def _cancel_generation(self) -> None:
+        if self.generation_cancel_button.cget("state") == "disabled":
+            return
+        self.generation_cancel_event.set()
+        self.generation_progress_status.set("Cancelación solicitada. Se cerrará al terminar la llamada en curso.")
+        self._log(self.generation_output, "[GENERACION] Cancelación solicitada por el usuario.")
+
+    def _handle_generation_progress(self, event: ConstructionEvent) -> None:
+        percent = 0.0
+        if event.total > 0:
+            percent = (float(event.current) / float(event.total)) * 100.0
+        self.generation_progress.set(percent)
+        self.generation_progress_status.set(event.message)
+        prefix = f"[{event.kind.upper()}]"
+        if event.engine:
+            prefix += f" {event.engine}"
+        if event.cycle:
+            prefix += f" ciclo={event.cycle}"
+        if event.node_key:
+            prefix += f" node={event.node_key}"
+        self._log(self.generation_output, f"{prefix} {event.message}")
+        if event.kind in {"result", "done"}:
+            self._refresh_generation_preview()
 
     def _selected_llm_session(self) -> str:
         selected = self.llm_session_tree.selection() if hasattr(self, "llm_session_tree") else ()
@@ -781,39 +1421,253 @@ class AulaTeXApp(tk.Tk):
         self._thread(work)
 
     def _refresh_tree(self) -> None:
+        selected_key = ""
+        selected = self.template_tree.selection()
+        if selected:
+            current_scope = self.template_nodes.get(selected[0]) if hasattr(self, "template_nodes") else None
+            selected_key = current_scope.key if current_scope is not None else ""
         for item in self.template_tree.get_children():
             self.template_tree.delete(item)
 
-        self.template_details.delete("1.0", "end")
-        self.template_details.insert("end", "Seleccione un nodo para ver detalles.\n")
+        self.editorial_scopes, self.editorial_children = self.workspace.editorial_scope_index()
+        self._set_text(
+            self.template_details,
+            "Selecciona un nodo editorial para ver el resumen. Presiona Enter para abrir el visor del nodo. "
+            "Usa flechas o doble clic para expandir y contraer niveles.\n",
+        )
 
         self.template_nodes = {}
-        for node in self.workspace.scan_template_inventory():
-            self._insert_template_node("", node)
+        root_scope = self.editorial_scopes.get("interinstitucional")
+        if root_scope is not None:
+            self._insert_template_node("", root_scope)
 
-    def _insert_template_node(self, parent: str, node) -> None:
+        if selected_key:
+            for item, scope in self.template_nodes.items():
+                if scope.key == selected_key:
+                    self.template_tree.selection_set(item)
+                    self.template_tree.focus(item)
+                    self.template_tree.see(item)
+                    self._on_template_selected()
+                    break
+        elif self.template_tree.get_children():
+            first = self.template_tree.get_children()[0]
+            self.template_tree.selection_set(first)
+            self.template_tree.focus(first)
+            self._on_template_selected()
+
+    def _insert_template_node(self, parent: str, scope: EditorialScope) -> None:
+        memory = self.editorial_store.get_memory(scope.key)
+        has_memory = any(memory.get(section) for section in MEMORY_SECTIONS)
+        generation_ready = self._scope_has_generation_artifacts(scope)
         values = (
-            "[x]" if node.has_bibliography else "[ ]",
-            "[x]" if node.has_presentation else "[ ]",
-            "[x]" if node.has_report else "[ ]",
+            "[x]" if has_memory else "[ ]",
+            str(len(memory.get("locked_sections", []))) if has_memory else "0",
+            "[x]" if generation_ready else "[ ]",
         )
-        item = self.template_tree.insert(parent, "end", text=f"{node.level}: {node.name}", values=values, open=node.level != "materia")
-        self.template_nodes[item] = node
-        for child in node.children:
+        item = self.template_tree.insert(
+            parent,
+            "end",
+            text=f"{scope.level}: {scope.label}",
+            values=values,
+            open=scope.level in {"interinstitucional", "institucion", "carrera"},
+        )
+        self.template_nodes[item] = scope
+        for child in self.editorial_children.get(scope.key, []):
             self._insert_template_node(item, child)
+
+    def _scope_has_generation_artifacts(self, scope: EditorialScope) -> bool:
+        if self.construction_store.node_exists(scope.key):
+            return True
+        if not scope.relative_path or scope.relative_path == ".":
+            return False
+        scope_path = self.workspace.resolve_target(scope.relative_path)
+        if not scope_path.exists() or not scope_path.is_dir():
+            return False
+        if (scope_path / GENERATION_MARKER_FILENAME).exists():
+            return True
+        return (
+            any(scope_path.glob("memoria-fundacional*.json"))
+            or (scope_path / "plan.md").exists()
+            or any(scope_path.glob("maqueta*.tex"))
+        )
+
+    def _render_template_scope_summary(self, scope: EditorialScope) -> str:
+        memory = self.editorial_store.get_memory(scope.key)
+        local_sections = [section for section in MEMORY_SECTIONS if memory.get(section)]
+        metrics = self.editorial_store.render_metrics_markdown([scope.key]).strip()
+        generation_state = "sí" if self._scope_has_generation_artifacts(scope) else "no"
+        lines = [
+            f"Nivel: {scope.level}",
+            f"Etiqueta: {scope.label}",
+            f"Clave: {scope.key}",
+            f"Ruta: {scope.relative_path or '.'}",
+            f"Padre: {scope.parent_key or 'raíz'}",
+            f"Memoria local: {'sí' if local_sections else 'no'}",
+            f"Secciones con contenido: {', '.join(local_sections) or 'ninguna'}",
+            f"Secciones fijadas: {', '.join(memory.get('locked_sections', [])) or 'ninguna'}",
+            f"Artefactos de generación: {generation_state}",
+            "",
+            "Atajos:",
+            "- Enter: visualizar nodo",
+            "- Doble clic: expandir o contraer",
+            "- Flechas: navegar el árbol",
+            "",
+            metrics,
+        ]
+        return "\n".join(lines).strip()
 
     def _on_template_selected(self, _event=None) -> None:
         selected = self.template_tree.selection()
         if not selected:
             return
-        node = self.template_nodes.get(selected[0])
-        if node is None:
+        scope = self.template_nodes.get(selected[0])
+        if scope is None:
             return
-        self.template_details.delete("1.0", "end")
-        self.template_details.insert(
-            "end",
-            f"Nivel: {node.level}\nRuta: {node.relative_path}\nBibliografia: {', '.join(node.bibliography_files) or 'FALTA'}\nPresentacion: {', '.join(node.presentation_files) or 'FALTA'}\nReporte: {', '.join(node.report_files) or 'FALTA'}\nEstado: {'COMPLETO' if node.is_complete else 'INCOMPLETO'}",
+        self._set_text(self.template_details, self._render_template_scope_summary(scope))
+
+    def _toggle_template_node(self, event=None):
+        item = self.template_tree.identify_row(event.y) if event is not None else ""
+        if not item:
+            item = self.template_tree.focus()
+        if not item:
+            return "break"
+        self.template_tree.selection_set(item)
+        self.template_tree.focus(item)
+        self.template_tree.item(item, open=not bool(self.template_tree.item(item, "open")))
+        return "break"
+
+    def _show_template_node_details(self, _event=None):
+        selected = self.template_tree.selection()
+        if not selected:
+            return "break"
+        scope = self.template_nodes.get(selected[0])
+        if scope is None:
+            return "break"
+
+        window = tk.Toplevel(self)
+        window.title(f"Nodo editorial | {scope.label}")
+        window.geometry("980x720")
+        window.minsize(760, 520)
+        window.transient(self)
+
+        container = ttk.Frame(window, padding=12)
+        container.pack(fill="both", expand=True)
+        container.columnconfigure(0, weight=1)
+        container.rowconfigure(1, weight=1)
+
+        header = ttk.Frame(container)
+        header.grid(row=0, column=0, sticky="ew", pady=(0, 10))
+        header.columnconfigure(0, weight=1)
+        ttk.Label(header, text=f"{scope.level} | {scope.label}", font=("TkDefaultFont", 11, "bold")).grid(row=0, column=0, sticky="w")
+        ttk.Label(header, text=f"Clave: {scope.key} | Ruta: {scope.relative_path or '.'}", wraplength=860).grid(row=1, column=0, sticky="w", pady=(4, 0))
+
+        notebook = ttk.Notebook(container)
+        notebook.grid(row=1, column=0, sticky="nsew")
+
+        summary_text = self._build_template_scope_dialog_summary(scope)
+        memory_text = self._build_template_scope_memory(scope)
+        inherited_text = self._build_template_scope_inherited_memory(scope)
+        generation_text = self._build_template_scope_generation(scope)
+
+        for tab_title, content in (
+            ("Resumen", summary_text),
+            ("Memoria", memory_text),
+            ("Herencia", inherited_text),
+            ("Generación", generation_text),
+        ):
+            frame = ttk.Frame(notebook, padding=8)
+            frame.columnconfigure(0, weight=1)
+            frame.rowconfigure(0, weight=1)
+            text = tk.Text(frame, wrap="word")
+            text.grid(row=0, column=0, sticky="nsew")
+            self._set_text(text, content, readonly=True)
+            notebook.add(frame, text=tab_title)
+
+        ttk.Button(container, text="Cerrar", command=window.destroy).grid(row=2, column=0, sticky="e", pady=(10, 0))
+        return "break"
+
+    def _build_template_scope_dialog_summary(self, scope: EditorialScope) -> str:
+        chain = [f"{item.level}: {item.label}" for item in reversed(self.workspace.scope_chain(scope.key))]
+        editorial_metrics = self.editorial_store.render_metrics_markdown([scope.key]).strip()
+        construction_metrics = self.construction_store.render_metrics_markdown(scope.key).strip()
+        return (
+            f"Nivel: {scope.level}\n"
+            f"Etiqueta: {scope.label}\n"
+            f"Clave: {scope.key}\n"
+            f"Ruta: {scope.relative_path or '.'}\n"
+            f"Padre: {scope.parent_key or 'raíz'}\n"
+            f"Cadena editorial: {' > '.join(chain)}\n\n"
+            f"{editorial_metrics}\n\n"
+            f"{construction_metrics}"
         )
+
+    def _build_template_scope_memory(self, scope: EditorialScope) -> str:
+        memory = self.editorial_store.get_memory(scope.key)
+        if any(memory.get(section) for section in MEMORY_SECTIONS):
+            return self.editorial_store.render_memory_markdown(scope, memory)
+        return (
+            "# Memoria editorial AulaTeX\n\n"
+            "- Este nodo todavía no tiene memoria local persistida.\n"
+            "- Puede heredar contexto desde sus ancestros o desde snapshots de generación."
+        )
+
+    def _build_template_scope_inherited_memory(self, scope: EditorialScope) -> str:
+        inherited = self.editorial_store.summarize_for_scope(scope.key, include_ancestors=True, max_chars=14000).strip()
+        if inherited:
+            return inherited
+        return "# Herencia editorial\n\n- No hay memoria heredada disponible todavía para este nodo.\n"
+
+    def _build_template_scope_generation(self, scope: EditorialScope) -> str:
+        latest_run = self.construction_store.get_latest_run(scope.key)
+        snapshots = self.construction_store.list_memory_snapshots(scope.key, limit=12)
+        cycles = self.construction_store.list_recent_cycles(scope.key, limit=12)
+        lines = ["# Generación editorial", ""]
+        if latest_run is not None:
+            status = "OK" if int(latest_run["ok"] or 0) else "ERROR"
+            if int(latest_run["cancelled"] or 0):
+                status = "CANCELADA"
+            lines.extend(
+                [
+                    "## Última corrida",
+                    "",
+                    f"- Run ID: {latest_run['run_id']}",
+                    f"- Estado: {status}",
+                    f"- Creada: {latest_run['created_at']}",
+                    f"- Finalizada: {latest_run['completed_at'] or 'en curso o sin cierre'}",
+                    f"- Iteraciones: {latest_run['iterations']}",
+                    f"- Manifiesto: {latest_run['manifest_path'] or 'sin manifiesto'}",
+                    "",
+                ]
+            )
+        else:
+            lines.extend(["## Última corrida", "", "- No hay corridas de generación registradas para este nodo.", ""])
+
+        lines.extend([self.construction_store.render_metrics_markdown(scope.key).strip(), ""])
+
+        if snapshots:
+            lines.extend(["## Snapshots de memoria", ""])
+            for snapshot in snapshots:
+                summary = str(snapshot["summary_text"] or "").strip().replace("\n", " ")
+                lines.append(
+                    f"- {snapshot['memory_kind']} | {snapshot['created_at']} | run={snapshot['run_id']} | {summary[:220] or 'sin resumen'}"
+                )
+            lines.append("")
+        else:
+            lines.extend(["## Snapshots de memoria", "", "- No hay snapshots de generación para este nodo.", ""])
+
+        if cycles:
+            lines.extend(["## Ciclos recientes", ""])
+            for cycle in cycles:
+                lines.append(
+                    f"- Ciclo {cycle['cycle_index']} | {cycle['engine']} | {'OK' if int(cycle['ok'] or 0) else 'ERROR'} | "
+                    f"chars={int(cycle['response_chars'] or 0)} | memoria={int(cycle['memory_items'] or 0)} | "
+                    f"secciones={int(cycle['sections_created'] or 0)} | avance={int(cycle['progress_percent'] or 0)}% | {cycle['created_at']}"
+                )
+            lines.append("")
+        else:
+            lines.extend(["## Ciclos recientes", "", "- No hay ciclos de generación persistidos para este nodo.", ""])
+
+        return "\n".join(lines).strip()
 
     def _run_llm_prompt(self) -> None:
         session_key = self._selected_llm_session()
@@ -1101,6 +1955,35 @@ class AulaTeXApp(tk.Tk):
         )
         return "\n".join(lines)
 
+    def _investigation_schema_preview(self, scope: EditorialScope | None = None) -> str:
+        lines = ["# Base de conocimiento prevista", ""]
+        if scope is not None:
+            lines.extend(
+                [
+                    f"- Alcance actual: {scope.level}",
+                    f"- Scope: {scope.key}",
+                    "",
+                ]
+            )
+        lines.append("## Secciones persistentes")
+        lines.append("")
+        for section in KNOWLEDGE_SECTIONS:
+            lines.append(f"- {section}: inventario, hallazgos y acciones deduplicadas")
+        lines.extend(
+            [
+                "- bib_entries: entradas BibTeX consolidadas o sugeridas.",
+                "",
+                "## Artefactos canónicos",
+                "",
+                "- investigacion-aulatex/base-conocimiento.json",
+                "- investigacion-aulatex/base-conocimiento.md",
+                "- investigacion-aulatex/fuentes-web.md",
+                "- archivo .bib del scope o sugerido si aún no existe",
+                "- referencias-*/ o assets-*/ según el nivel seleccionado",
+            ]
+        )
+        return "\n".join(lines)
+
     def _ordered_feedback_engines(self) -> list[str]:
         return sorted(self.llm.engines(), key=lambda engine: (ENGINE_PRIORITY.get(engine, 999), engine))
 
@@ -1114,6 +1997,9 @@ class AulaTeXApp(tk.Tk):
         if not value or value == UNSELECTED_OPTION:
             return ""
         return value
+
+    def _parse_lines_from_widget(self, widget: tk.Text) -> list[str]:
+        return [line.strip() for line in widget.get("1.0", "end").splitlines() if line.strip()]
 
     def _with_unselected(self, values: list[str]) -> tuple[str, ...]:
         return tuple([UNSELECTED_OPTION, *values])
@@ -1151,6 +2037,178 @@ class AulaTeXApp(tk.Tk):
                 self.events.put(("feedback-error", f"[MEMORIA] ERROR {type(exc).__name__}: {exc}"))
 
         self._thread(work)
+
+    def _refresh_investigation_catalog(self) -> None:
+        self.editorial_scopes, self.editorial_children = self.workspace.editorial_scope_index()
+        institutions = sorted(scope.label for scope in self.editorial_scopes.values() if scope.level == "institucion")
+        self.investigation_institution_combo.configure(values=self._with_unselected(institutions))
+        if self.investigation_institution.get() not in self.investigation_institution_combo.cget("values"):
+            self.investigation_institution.set(UNSELECTED_OPTION)
+        self._sync_investigation_source_filters()
+
+    def _sync_investigation_source_filters(self) -> None:
+        institution = self._selected_feedback_value(self.investigation_institution)
+        selected_career = self._selected_feedback_value(self.investigation_career)
+        selected_subject = self._selected_feedback_value(self.investigation_subject)
+        selected_activity = self._selected_feedback_value(self.investigation_activity)
+
+        careers = sorted(
+            scope.label
+            for scope in self.editorial_scopes.values()
+            if scope.level == "carrera" and scope.institution == institution
+        )
+        self.investigation_career_combo.configure(values=self._with_unselected(careers))
+        if selected_career not in careers:
+            self.investigation_career.set(UNSELECTED_OPTION)
+            selected_career = ""
+
+        subjects = sorted(
+            scope.label
+            for scope in self.editorial_scopes.values()
+            if scope.level == "materia"
+            and scope.institution == institution
+            and scope.career == selected_career
+        )
+        self.investigation_subject_combo.configure(values=self._with_unselected(subjects))
+        if selected_subject not in subjects:
+            self.investigation_subject.set(UNSELECTED_OPTION)
+            selected_subject = ""
+
+        activities = sorted(
+            scope.label
+            for scope in self.editorial_scopes.values()
+            if scope.level == "actividad"
+            and scope.institution == institution
+            and scope.career == selected_career
+            and scope.subject == selected_subject
+        )
+        self.investigation_activity_combo.configure(values=self._with_unselected(activities))
+        if selected_activity not in activities:
+            self.investigation_activity.set(UNSELECTED_OPTION)
+
+    def _on_investigation_source_changed(self, _event=None) -> None:
+        self._sync_investigation_source_filters()
+        self._refresh_investigation()
+
+    def _resolve_investigation_scope(self) -> EditorialScope | None:
+        institution = self._selected_feedback_value(self.investigation_institution)
+        career = self._selected_feedback_value(self.investigation_career)
+        subject = self._selected_feedback_value(self.investigation_subject)
+        activity = self._selected_feedback_value(self.investigation_activity)
+
+        if activity and subject:
+            key = self.workspace._scope_key("actividad", institution=institution, career=career, subject=subject, activity=activity)
+        elif subject:
+            key = self.workspace._scope_key("materia", institution=institution, career=career, subject=subject)
+        elif career:
+            key = self.workspace._scope_key("carrera", institution=institution, career=career)
+        elif institution:
+            key = self.workspace._scope_key("institucion", institution=institution)
+        else:
+            key = "interinstitucional"
+        return self.editorial_scopes.get(key)
+
+    def _reset_investigation_queries(self) -> None:
+        scope = self._resolve_investigation_scope()
+        if scope is None:
+            return
+        defaults = self.investigation_builder.default_search_terms(scope)
+        self._set_text(self.investigation_queries_text, "\n".join(defaults))
+        self._refresh_investigation()
+
+    def _refresh_investigation(self) -> None:
+        self._refresh_investigation_catalog()
+        scope = self._resolve_investigation_scope()
+        self.investigation_preview_text.delete("1.0", "end")
+        self.investigation_metrics_text.delete("1.0", "end")
+        self.investigation_knowledge_text.delete("1.0", "end")
+        if scope is None:
+            self.investigation_scope_status.set("Scope de investigación: no encontrado")
+            self.investigation_preview_text.insert("end", "Selecciona un scope válido para consolidar la base de conocimiento.\n")
+            self.investigation_metrics_text.insert("end", "# Metricas de investigación\n\n- Sin scope seleccionado.\n")
+            self.investigation_knowledge_text.insert("end", self._investigation_schema_preview())
+            return
+
+        self.investigation_scope_status.set(f"Scope de investigación: {scope.level} | {scope.key} | ruta {scope.relative_path or '.'}")
+        queries = self._parse_lines_from_widget(self.investigation_queries_text)
+        if not queries:
+            queries = self.investigation_builder.default_search_terms(scope)
+            self._set_text(self.investigation_queries_text, "\n".join(queries))
+        seed_urls = self._parse_lines_from_widget(self.investigation_urls_text)
+        self.investigation_preview_text.insert("end", self.investigation_builder.preview_markdown(scope, queries, seed_urls))
+        self.investigation_metrics_text.insert("end", self.investigation_store.render_metrics_markdown(scope.key))
+        payload = self.investigation_store.get_knowledge(scope.key)
+        if any(payload.get(section) for section in KNOWLEDGE_SECTIONS) or payload.get("bib_entries"):
+            self.investigation_knowledge_text.insert("end", self.investigation_store.render_knowledge_markdown(scope, payload))
+        else:
+            self.investigation_knowledge_text.insert("end", self._investigation_schema_preview(scope))
+
+    def _parse_investigation_engines(self) -> list[str]:
+        selected = [item.strip() for item in self.investigation_engines.get().split(",") if item.strip()]
+        valid = [engine for engine in selected if engine in self.llm.engines()]
+        return valid or self._ordered_feedback_engines()
+
+    def _run_investigation(self) -> None:
+        scope = self._resolve_investigation_scope()
+        if scope is None:
+            messagebox.showwarning("AulaTeX", "Selecciona un scope editorial válido para investigar.")
+            return
+
+        queries = self._parse_lines_from_widget(self.investigation_queries_text)
+        if not queries:
+            queries = self.investigation_builder.default_search_terms(scope)
+            self._set_text(self.investigation_queries_text, "\n".join(queries))
+        seed_urls = self._parse_lines_from_widget(self.investigation_urls_text)
+        request = InvestigationRequest(
+            scope_key=scope.key,
+            iterations=max(1, int(self.investigation_iterations.get())),
+            engines=self._parse_investigation_engines(),
+            max_tokens=max(128, int(self.investigation_max_tokens.get())),
+            search_terms=tuple(queries),
+            seed_urls=tuple(seed_urls),
+        )
+
+        self.investigation_cancel_event = threading.Event()
+        self.investigation_progress.set(0.0)
+        self.investigation_progress_status.set("Consolidando base de conocimiento...")
+        self._log(self.investigation_output, f"[INVESTIGACION] Inicio en {scope.key} con motores: {', '.join(self._parse_investigation_engines())}")
+        self._set_busy("investigation", True)
+
+        def on_progress(event: InvestigationEvent) -> None:
+            self.events.put(("investigation-progress", event))
+
+        def work() -> None:
+            try:
+                result = self.investigation_builder.build(request, progress=on_progress, cancel_event=self.investigation_cancel_event)
+                self.events.put(("investigation-result", result))
+            except Exception as exc:
+                self.events.put(("investigation-error", f"[INVESTIGACION] ERROR {type(exc).__name__}: {exc}"))
+
+        self._thread(work)
+
+    def _cancel_investigation(self) -> None:
+        if self.investigation_cancel_button.cget("state") == "disabled":
+            return
+        self.investigation_cancel_event.set()
+        self.investigation_progress_status.set("Cancelación solicitada. Se cerrará al terminar la llamada en curso.")
+        self._log(self.investigation_output, "[INVESTIGACION] Cancelación solicitada por el usuario.")
+
+    def _handle_investigation_progress(self, event: InvestigationEvent) -> None:
+        percent = 0.0
+        if event.total > 0:
+            percent = (float(event.current) / float(event.total)) * 100.0
+        self.investigation_progress.set(percent)
+        self.investigation_progress_status.set(event.message)
+        prefix = f"[{event.kind.upper()}]"
+        if event.engine:
+            prefix += f" {event.engine}"
+        if event.cycle:
+            prefix += f" ciclo={event.cycle}"
+        if event.scope_key:
+            prefix += f" scope={event.scope_key}"
+        self._log(self.investigation_output, f"{prefix} {event.message}")
+        if event.kind in {"result", "done"}:
+            self._refresh_investigation()
 
     def _cancel_feedback_memory(self) -> None:
         if self.feedback_cancel_button.cget("state") == "disabled":
@@ -1232,6 +2290,45 @@ class AulaTeXApp(tk.Tk):
                 self._set_busy("feedback", False)
                 self.feedback_progress_status.set("Fallo en la construccion de memoria editorial.")
                 self._log(self.feedback_output, str(event))
+            elif category == "investigation-progress":
+                self._handle_investigation_progress(event)
+            elif category == "investigation-result":
+                self._set_busy("investigation", False)
+                self.investigation_progress.set(100.0)
+                if event.cancelled:
+                    self.investigation_progress_status.set("Investigación cancelada.")
+                    self._log(self.investigation_output, f"[INVESTIGACION] CANCELADA\nManifest: {event.manifest_path}")
+                else:
+                    self.investigation_progress_status.set(f"Investigación cerrada: {'OK' if event.ok else 'CON OBSERVACIONES'}")
+                    self._log(
+                        self.investigation_output,
+                        f"[INVESTIGACION] {'OK' if event.ok else 'CON OBSERVACIONES'}\nManifest: {event.manifest_path}\nArtefactos: {event.knowledge_path}, {event.bibliography_path}, {event.web_sources_path}",
+                    )
+                self._refresh_investigation()
+            elif category == "investigation-error":
+                self._set_busy("investigation", False)
+                self.investigation_progress_status.set("Fallo en la consolidación de investigación.")
+                self._log(self.investigation_output, str(event))
+            elif category == "generation-progress":
+                self._handle_generation_progress(event)
+            elif category == "generation-result":
+                self._set_busy("generation", False)
+                self.generation_progress.set(100.0)
+                if event.cancelled:
+                    self.generation_progress_status.set("Generación cancelada.")
+                    self._log(self.generation_output, f"[GENERACION] CANCELADA\nManifest: {event.manifest_path}")
+                else:
+                    self.generation_progress_status.set(f"Generación cerrada: {'OK' if event.ok else 'CON OBSERVACIONES'}")
+                    self._log(
+                        self.generation_output,
+                        f"[GENERACION] {'OK' if event.ok else 'CON OBSERVACIONES'}\nManifest: {event.manifest_path}\nArtefactos: {event.memory_path}, {event.plan_path}, {event.maqueta_path}",
+                    )
+                self._refresh_generation_catalog()
+                self._refresh_feedback_catalog()
+            elif category == "generation-error":
+                self._set_busy("generation", False)
+                self.generation_progress_status.set("Fallo en la generación editorial.")
+                self._log(self.generation_output, str(event))
         self.after(250, self._drain_events)
 
     def _handle_feedback_progress(self, event: EditorialMemoryEvent) -> None:

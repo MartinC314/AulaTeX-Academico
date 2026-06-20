@@ -7,8 +7,10 @@ from pathlib import Path
 from .agent import AgentRequest, AulaTeXAgent
 from .agentic_patterns import pattern_catalog_markdown
 from .config import credential_status, load_aulatex_env
+from .construction import ConstructionBuilder, ConstructionRequest
 from .editorial_memory import EDITORIAL_LEVELS, EditorialMemoryBuilder, EditorialMemoryRequest
 from .gui import main as gui_main
+from .investigation import InvestigationBuilder, InvestigationRequest
 from .llm_bridge import LLM_ENGINES, AulaTeXLLMClient
 from .workspace import AulaTeXWorkspace
 
@@ -48,10 +50,32 @@ def build_parser() -> argparse.ArgumentParser:
     editorial.add_argument("--target", default=".")
     editorial.add_argument("--activity", type=int, default=0)
     editorial.add_argument("--build-level", default="materia", choices=EDITORIAL_LEVELS)
-    editorial.add_argument("--propagation-mode", default="ascendente", choices=("local", "ascendente", "ascendente-exhaustivo"))
+    editorial.add_argument("--propagation-mode", default="ascendente", choices=("local", "ascendente", "ascendente-exhaustivo", "recursivo"))
     editorial.add_argument("--engine", action="append", choices=LLM_ENGINES)
     editorial.add_argument("--iterations", type=int, default=2)
     editorial.add_argument("--max-tokens", type=int, default=1400)
+
+    investigation = sub.add_parser("investigation", help="Consolidate the knowledge base before extractor: local context, web sources and bibliography.")
+    investigation.add_argument("--target", default=".")
+    investigation.add_argument("--activity", type=int, default=0)
+    investigation.add_argument("--engine", action="append", choices=LLM_ENGINES)
+    investigation.add_argument("--iterations", type=int, default=2)
+    investigation.add_argument("--max-tokens", type=int, default=1800)
+    investigation.add_argument("--query", action="append", default=[])
+    investigation.add_argument("--url", action="append", default=[])
+
+    generation = sub.add_parser("generation", help="Create or reinforce an editorial node with foundational memory, plan and maqueta.")
+    generation.add_argument("--parent-scope-key", default="interinstitucional")
+    generation.add_argument("--node-level", required=True, choices=("institucion", "carrera", "materia", "actividad"))
+    generation.add_argument("--node-name", required=True)
+    generation.add_argument("--activity", type=int, default=1)
+    generation.add_argument("--mode", default="crear", choices=("crear", "reforzar"))
+    generation.add_argument("--destination", default="")
+    generation.add_argument("--ingest-text", default="")
+    generation.add_argument("--ingest-document", default="")
+    generation.add_argument("--engine", action="append", choices=LLM_ENGINES)
+    generation.add_argument("--iterations", type=int, default=2)
+    generation.add_argument("--max-tokens", type=int, default=1800)
 
     compile_cmd = sub.add_parser("compile", help="Compile a TeX file with the shared latexmk wrapper.")
     compile_cmd.add_argument("tex")
@@ -136,6 +160,73 @@ def main(argv: list[str] | None = None) -> None:
                     "run_dir": str(result.run_dir),
                     "manifest": str(result.manifest_path),
                     "built_scopes": list(result.built_scopes),
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    if args.command == "investigation":
+        workspace = AulaTeXWorkspace()
+        scope = workspace.find_scope_for_target(args.target, activity_number=args.activity or None)
+        if scope is None:
+            raise SystemExit(f"No se pudo resolver un scope editorial para: {args.target}")
+        builder = InvestigationBuilder(workspace=workspace, llm_bridge=AulaTeXLLMClient())
+        request = InvestigationRequest(
+            scope_key=scope.key,
+            iterations=args.iterations,
+            engines=args.engine or ["Codex", "Auto (model-router)", "Claude Foundry", "GPT-Pro"],
+            max_tokens=args.max_tokens,
+            search_terms=tuple(args.query or []),
+            seed_urls=tuple(args.url or []),
+        )
+        result = builder.build(request)
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "cancelled": result.cancelled,
+                    "run_dir": str(result.run_dir),
+                    "manifest": str(result.manifest_path),
+                    "knowledge": str(result.knowledge_path),
+                    "bibliography": str(result.bibliography_path),
+                    "web_sources": str(result.web_sources_path),
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    if args.command == "generation":
+        workspace = AulaTeXWorkspace()
+        builder = ConstructionBuilder(workspace=workspace, llm_bridge=AulaTeXLLMClient())
+        request = ConstructionRequest(
+            parent_scope_key=args.parent_scope_key,
+            node_level=args.node_level,
+            node_name=args.node_name,
+            activity_number=args.activity,
+            operation_mode=args.mode,
+            destination_path=args.destination,
+            ingest_text=args.ingest_text,
+            ingest_document_path=args.ingest_document,
+            engines=args.engine or ["Codex", "Auto (model-router)", "Claude Foundry", "GPT-Pro"],
+            iterations=args.iterations,
+            max_tokens=args.max_tokens,
+        )
+        result = builder.build(request)
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "cancelled": result.cancelled,
+                    "run_dir": str(result.run_dir),
+                    "manifest": str(result.manifest_path),
+                    "node_dir": str(result.node_dir),
+                    "memory": str(result.memory_path),
+                    "plan": str(result.plan_path),
+                    "maqueta": str(result.maqueta_path),
                 },
                 ensure_ascii=False,
                 indent=2,

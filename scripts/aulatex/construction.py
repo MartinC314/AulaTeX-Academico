@@ -1,9 +1,11 @@
 from __future__ import annotations
 
+import html
 import json
 import re
 import sqlite3
 import time
+import zipfile
 from dataclasses import dataclass
 from pathlib import Path
 from threading import Event
@@ -52,6 +54,13 @@ MAQUETA_LIST_FIELDS = (
     "marcadores_investigacion",
 )
 
+EDITORIAL_TEX_SECTIONS = (
+    "plantilla",
+    "actividad",
+    "reporte",
+    "presentacion",
+)
+
 
 @dataclass(frozen=True)
 class ConstructionRequest:
@@ -61,6 +70,8 @@ class ConstructionRequest:
     activity_number: int = 1
     operation_mode: str = "crear"
     destination_path: str = ""
+    ingest_text: str = ""
+    ingest_document_path: str = ""
     engines: list[str] | tuple[str, ...] = ("Codex", "Auto (model-router)", "Claude Foundry", "GPT-Pro")
     iterations: int = 2
     max_tokens: int = 1800
@@ -322,6 +333,50 @@ class ConstructionStore:
             ).fetchall()
         return list(rows)
 
+    def get_latest_run(self, node_key: str) -> sqlite3.Row | None:
+        with self._connect() as conn:
+            row = conn.execute(
+                """
+                SELECT run_id, node_key, parent_scope_key, node_level, node_name, activity_number,
+                       iterations, engines_json, manifest_path, created_at, completed_at, ok, cancelled
+                FROM construction_runs
+                WHERE node_key=?
+                ORDER BY created_at DESC, run_id DESC
+                LIMIT 1
+                """,
+                (node_key,),
+            ).fetchone()
+        return row
+
+    def list_memory_snapshots(self, node_key: str, limit: int = 12) -> list[sqlite3.Row]:
+        with self._connect() as conn:
+            rows = conn.execute(
+                """
+                SELECT run_id, memory_kind, summary_text, created_at
+                FROM construction_memories
+                WHERE node_key=?
+                ORDER BY created_at DESC, id DESC
+                LIMIT ?
+                """,
+                (node_key, max(1, int(limit))),
+            ).fetchall()
+        return list(rows)
+
+    def list_recent_cycles(self, node_key: str, limit: int = 12) -> list[sqlite3.Row]:
+        with self._connect() as conn:
+            rows = conn.execute(
+                """
+                SELECT cycle_index, engine, ok, elapsed_ms, response_chars, memory_items,
+                       sections_created, progress_percent, created_at
+                FROM construction_cycles
+                WHERE node_key=?
+                ORDER BY created_at DESC, id DESC
+                LIMIT ?
+                """,
+                (node_key, max(1, int(limit))),
+            ).fetchall()
+        return list(rows)
+
     def render_metrics_markdown(self, node_key: str) -> str:
         if not node_key:
             return "# Metricas de construccion\n\n- Sin nodo seleccionado.\n"
@@ -401,7 +456,7 @@ class ConstructionBuilder:
         by_key, children = self.workspace.editorial_scope_index()
         parent_scope = self._resolve_parent_scope(request, by_key)
         node = self._build_node_spec(parent_scope, request, by_key, children)
-        inputs = self._build_inputs(parent_scope, node, by_key, children)
+        inputs = self._build_inputs(request, parent_scope, node, by_key, children)
 
         run_id = self.workspace.timestamp()
         run_dir = self.store.root / "runs" / f"{run_id}-{_slugify(node.name or node.label)}"
@@ -424,6 +479,13 @@ class ConstructionBuilder:
             "reglas-interinstitucionales",
             inputs["interinstitutional_payload"],
             inputs["interinstitutional_text"],
+        )
+        self.store.save_memory_snapshot(
+            node.key,
+            run_id,
+            "ingesta",
+            inputs["ingestion_payload"],
+            inputs["ingestion_summary"],
         )
 
         consolidated = self._load_existing_payload(node)
@@ -508,13 +570,18 @@ class ConstructionBuilder:
 
         final_payload = self._finalize_payload(consolidated, node, inputs)
         node.output_dir.mkdir(parents=True, exist_ok=True)
-        memory_path = node.output_dir / "memoria-fundacional.json"
+        artifact_names = _construction_artifact_names(
+            node_level=node.level,
+            node_name=node.name,
+            output_dir=node.output_dir,
+            activity_number=int(node.activity_number),
+        )
+        memory_path = node.output_dir / artifact_names["memory"]
         plan_path = node.output_dir / "plan.md"
-        maqueta_path = node.output_dir / "maqueta.tex"
+        maqueta_path = node.output_dir / artifact_names["maqueta"]
 
         memory_path.write_text(json.dumps(final_payload, ensure_ascii=False, indent=2), encoding="utf-8")
         plan_path.write_text(self._render_plan_markdown(node, final_payload), encoding="utf-8")
-        maqueta_path.write_text(self._render_maqueta_tex(node, final_payload), encoding="utf-8")
         self._write_node_marker(node, final_payload)
 
         self.store.save_memory_snapshot(
@@ -535,6 +602,7 @@ class ConstructionBuilder:
             "activity_number": int(node.activity_number),
             "operation_mode": node.operation_mode,
             "destination_path": node.relative_path,
+            "ingestion": inputs["ingestion_manifest"],
             "engines": engines,
             "iterations": int(request.iterations),
             "cancelled": cancelled,
@@ -543,7 +611,7 @@ class ConstructionBuilder:
             "artifacts": {
                 "memory": self.workspace.relative(memory_path),
                 "plan": self.workspace.relative(plan_path),
-                "maqueta": self.workspace.relative(maqueta_path),
+                "maqueta": "",
             },
             "future_agent_contract": final_payload["future_agent_contract"],
             "cycle_logs": cycle_logs,
@@ -551,10 +619,8 @@ class ConstructionBuilder:
         manifest_path = run_dir / "manifest.json"
         manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
 
-        (run_dir / "memoria-fundacional.json").write_text(memory_path.read_text(encoding="utf-8"), encoding="utf-8")
+        (run_dir / artifact_names["memory"]).write_text(memory_path.read_text(encoding="utf-8"), encoding="utf-8")
         (run_dir / "plan.md").write_text(plan_path.read_text(encoding="utf-8"), encoding="utf-8")
-        (run_dir / "maqueta.tex").write_text(maqueta_path.read_text(encoding="utf-8"), encoding="utf-8")
-
         final_ok = overall_ok and not cancelled
         self.store.finish_run(run_id, ok=final_ok, cancelled=cancelled, manifest_path=manifest_path)
         self.store.upsert_node(node, "ready" if final_ok else ("cancelled" if cancelled else "observed"))
@@ -610,6 +676,10 @@ class ConstructionBuilder:
             raise ValueError(f"Modo de operación inválido: {request.operation_mode}")
 
         destination_hint = (request.destination_path or "").strip()
+        effective_parent = parent_scope
+        if destination_hint:
+            hinted_output_dir = self.workspace.resolve_target(destination_hint)
+            effective_parent = self._infer_parent_scope_from_destination(request.node_level, hinted_output_dir, parent_scope)
 
         if request.node_level == "institucion":
             node_key = name
@@ -618,8 +688,8 @@ class ConstructionBuilder:
             label = name
         elif request.node_level in {"carrera", "materia"}:
             slug = _slugify(name)
-            node_key = f"{parent_scope.key}/{slug}"
-            relative_path = f"{parent_scope.relative_path.rstrip('/')}/{slug}" if parent_scope.relative_path != "." else slug
+            node_key = f"{effective_parent.key}/{slug}"
+            relative_path = f"{effective_parent.relative_path.rstrip('/')}/{slug}" if effective_parent.relative_path != "." else slug
             output_dir = self.workspace.resolve_target(relative_path)
             label = name
         else:
@@ -627,8 +697,8 @@ class ConstructionBuilder:
                 raise ValueError("El número de actividad debe ser mayor o igual a 1.")
             slug = _slugify(name)
             activity_key = f"actividad-{int(request.activity_number):02d}-{slug}"
-            node_key = f"{parent_scope.key}/{activity_key}"
-            relative_path = f"{parent_scope.relative_path.rstrip('/')}/_aulatex-construccion-{activity_key}"
+            node_key = f"{effective_parent.key}/{activity_key}"
+            relative_path = f"{effective_parent.relative_path.rstrip('/')}/_aulatex-construccion-{activity_key}"
             output_dir = self.workspace.resolve_target(relative_path)
             label = f"Actividad {int(request.activity_number)} - {name}"
 
@@ -637,6 +707,8 @@ class ConstructionBuilder:
             relative_path = self.workspace.relative(output_dir)
             if request.node_level == "institucion" and relative_path == ".":
                 raise ValueError("La institución nueva no puede apuntar a la raíz del repositorio.")
+            if request.node_level in {"carrera", "materia"}:
+                node_key = f"{effective_parent.key}/{output_dir.name}"
 
         exists_in_catalog = node_key in by_key
         exists_in_store = self.store.node_exists(node_key)
@@ -654,7 +726,7 @@ class ConstructionBuilder:
 
         return ConstructionNodeSpec(
             key=node_key,
-            parent_scope_key=parent_scope.key,
+            parent_scope_key=effective_parent.key,
             level=request.node_level,
             name=name,
             label=label,
@@ -662,8 +734,28 @@ class ConstructionBuilder:
             operation_mode=mode,
             relative_path=relative_path,
             output_dir=output_dir,
-            future_agent_entrypoint=self.workspace.relative(output_dir / "maqueta.tex"),
+            future_agent_entrypoint=self.workspace.relative(output_dir / "plan.md"),
         )
+
+    def _infer_parent_scope_from_destination(
+        self,
+        node_level: str,
+        output_dir: Path,
+        fallback_parent: EditorialScope,
+    ) -> EditorialScope:
+        if node_level == "institucion":
+            return fallback_parent
+        anchor = output_dir.parent if node_level in {"carrera", "materia", "actividad"} else output_dir
+        inferred = self.workspace.find_scope_for_target(anchor)
+        if inferred is None:
+            return fallback_parent
+        if node_level == "carrera" and inferred.level == "institucion":
+            return inferred
+        if node_level == "materia" and inferred.level in {"carrera", "institucion"}:
+            return inferred
+        if node_level == "actividad" and inferred.level == "materia":
+            return inferred
+        return fallback_parent
 
     def _validate_new_activity(
         self,
@@ -679,6 +771,7 @@ class ConstructionBuilder:
 
     def _build_inputs(
         self,
+        request: ConstructionRequest,
         parent_scope: EditorialScope,
         node: ConstructionNodeSpec,
         by_key: dict[str, EditorialScope],
@@ -750,6 +843,7 @@ class ConstructionBuilder:
             "memory": inter_text,
             "context": inter_context,
         }
+        ingestion_payload, ingestion_summary = self._build_ingestion_payload(request)
         destination_exists = node.output_dir.exists()
         if destination_exists:
             destination_context = self.workspace.context_summary(node.output_dir, max_chars=2200)
@@ -773,6 +867,14 @@ class ConstructionBuilder:
             "interinstitutional_text": (
                 f"Memoria:\n{inter_text or 'Sin memoria consolidada.'}\n\nContexto:\n{inter_context or 'Sin contexto adicional.'}"
             ),
+            "ingestion_payload": ingestion_payload,
+            "ingestion_summary": ingestion_summary,
+            "ingestion_manifest": {
+                "has_text": bool(ingestion_payload.get("text")),
+                "has_document": bool(ingestion_payload.get("document", {}).get("path")),
+                "document_path": ingestion_payload.get("document", {}).get("path", ""),
+            },
+            "ingestion_text": self._render_ingestion_text(ingestion_payload, ingestion_summary),
             "destination_payload": destination_payload,
             "destination_text": (
                 f"Destino: {node.relative_path}\n"
@@ -833,6 +935,9 @@ class ConstructionBuilder:
         consolidated: dict,
         cycle_index: int,
     ) -> str:
+        reinforcement_hint = ""
+        if node.operation_mode == "reforzar" or cycle_index > 1:
+            reinforcement_hint = self._build_reinforcement_focus(consolidated, node)
         return (
             "Eres AulaTeX en modo GENERACION EDITORIAL DESCENDENTE. Este flujo crea o refuerza nodos editoriales. "
             "No investigues a fondo, no redactes la actividad completa y no ejecutes el flujo del Agente. "
@@ -874,6 +979,12 @@ class ConstructionBuilder:
             '    "criterios_evaluacion": ["..."],\n'
             '    "bibliografia_requerida": ["..."],\n'
             '    "marcadores_investigacion": ["..."]\n'
+            "  },\n"
+            '  "tex_editorial": {\n'
+            '    "plantilla": ["..."],\n'
+            '    "actividad": ["..."],\n'
+            '    "reporte": ["..."],\n'
+            '    "presentacion": ["..."]\n'
             "  }\n"
             "}\n\n"
             "Restricciones:\n"
@@ -881,14 +992,58 @@ class ConstructionBuilder:
             "- La maqueta.tex debe quedar lista para que el Agente luego investigue, redacte, evalúe y compile.\n"
             "- No generes la actividad completa ni bibliografía inventada.\n"
             "- Si el modo es reforzar, mejora la memoria existente sin perder reglas previas útiles.\n"
-            "- Usa bullets breves, accionables y deduplicados.\n\n"
+            "- Si hay ingesta textual o documental, úsala como restricción editorial y como material base para orientar el TEX final.\n"
+            "- Usa bullets breves, accionables y deduplicados.\n"
+            f"{reinforcement_hint}\n"
             f"Memoria consolidada actual:\n{json.dumps(consolidated, ensure_ascii=False, indent=2)}\n\n"
             f"Memoria de ancestros:\n{inputs['ancestors_text']}\n\n"
             f"Memoria del padre:\n{inputs['parent_text']}\n\n"
             f"Sintesis de hermanos:\n{inputs['siblings_synthesis']}\n\n"
+            f"Ingesta adicional:\n{inputs['ingestion_text']}\n\n"
             f"Contexto del destino:\n{inputs['destination_text']}\n\n"
             f"Reglas interinstitucionales:\n{inputs['interinstitutional_text']}\n"
         )
+
+    def _build_reinforcement_focus(self, consolidated: dict, node: ConstructionNodeSpec) -> str:
+        payload = _normalize_construction_payload(consolidated, node)
+        gaps: list[str] = []
+
+        missing_memory = [section for section in FUNDATIONAL_MEMORY_SECTIONS if not payload["memoria_fundacional"].get(section)]
+        if missing_memory:
+            gaps.append(f"Completa memoria fundacional faltante: {', '.join(missing_memory)}.")
+
+        weak_plan = [
+            section
+            for section in PLAN_SECTIONS
+            if len(payload["plan_editorial"].get(section, [])) < 1
+        ]
+        if weak_plan:
+            gaps.append(f"Cierra huecos del plan editorial: {', '.join(weak_plan)}.")
+
+        weak_tex = [
+            section
+            for section in EDITORIAL_TEX_SECTIONS
+            if len(payload["tex_editorial"].get(section, [])) < 2
+        ]
+        if weak_tex:
+            gaps.append(f"Vuelve específicas las indicaciones por entregable en: {', '.join(weak_tex)}.")
+
+        if len(payload["maqueta_inicial"].get("criterios_evaluacion", [])) < 2:
+            gaps.append("Refuerza criterios de evaluación de la maqueta con señales verificables y no genéricas.")
+
+        if len(payload["maqueta_inicial"].get("estructura_sugerida", [])) < 2:
+            gaps.append("Define una estructura sugerida más operativa para reporte, presentación y futuras actividades.")
+
+        if not gaps:
+            gaps.append("No dupliques contenido: mejora especificidad, trazabilidad y consistencia entre memoria, maqueta y entregables.")
+
+        lines = [
+            "- En esta pasada debes reforzar primero los huecos concretos detectados, antes de agregar nuevas variantes.",
+            *[f"- {gap}" for gap in gaps],
+            "- Si una sección ya es suficiente, no la reescribas; solo añade reglas que mejoren precisión editorial o trazabilidad.",
+            "- Prioriza herencia ascendente utilizable en reporte y presentación, no solo bullets genéricos de memoria.",
+        ]
+        return "\\n".join(lines)
 
     def _parse_response(self, response_text: str, node: ConstructionNodeSpec, engine: str) -> dict:
         payload = _extract_first_json(response_text)
@@ -925,6 +1080,12 @@ class ConstructionBuilder:
                 "bibliografia_requerida": [],
                 "marcadores_investigacion": ["Definir fuentes, citas y vacíos de contenido antes de redactar."],
             },
+            "tex_editorial": {
+                "plantilla": ["Definir plantilla base con reglas editoriales, assets y referencias de estilo antes de redactar."],
+                "actividad": ["Desarrollar la actividad respetando objetivo, criterios de evaluación y marcadores de investigación."],
+                "reporte": ["Estructurar el reporte con bibliografía requerida y cierre verificable."],
+                "presentacion": ["Preparar la presentación con síntesis visual, continuidad editorial y evidencias clave."],
+            },
         }
 
     def _merge_payload(self, current: dict, candidate: dict, node: ConstructionNodeSpec, inputs: dict) -> dict:
@@ -945,6 +1106,10 @@ class ConstructionBuilder:
             merged["maqueta_inicial"][field] = _dedupe_lines(
                 merged["maqueta_inicial"].get(field, []) + candidate_payload["maqueta_inicial"].get(field, [])
             )
+        for section in EDITORIAL_TEX_SECTIONS:
+            merged["tex_editorial"][section] = _dedupe_lines(
+                merged["tex_editorial"].get(section, []) + candidate_payload["tex_editorial"].get(section, [])
+            )
         merged["node"] = {
             "key": node.key,
             "level": node.level,
@@ -964,13 +1129,25 @@ class ConstructionBuilder:
             "ancestors": inputs["ancestors_payload"],
             "parent": inputs["parent_payload"],
             "siblings_synthesis": inputs["siblings_synthesis"],
+            "ingesta": inputs["ingestion_payload"],
             "destino": inputs["destination_payload"],
             "reglas_interinstitucionales": inputs["interinstitutional_payload"],
         }
+        defaults = self._default_tex_editorial_guidance(node, normalized, inputs)
+        for section in EDITORIAL_TEX_SECTIONS:
+            normalized["tex_editorial"][section] = _dedupe_lines(
+                normalized["tex_editorial"].get(section, []) + defaults.get(section, [])
+            )
+        artifact_names = _construction_artifact_names(
+            node_level=node.level,
+            node_name=node.name,
+            output_dir=node.output_dir,
+            activity_number=int(node.activity_number),
+        )
         normalized["generation_contract"] = {
             "mode": node.operation_mode,
             "destination_path": node.relative_path,
-            "files": ["memoria-fundacional.json", "plan.md", "maqueta.tex"],
+            "files": [artifact_names["memory"], "plan.md"],
         }
         normalized["future_agent_contract"] = {
             "status": "ready-for-agent",
@@ -991,6 +1168,8 @@ class ConstructionBuilder:
             f"- Modo: {node.operation_mode}",
             f"- Destino: {node.relative_path}",
             f"- Entrada futura del agente: {payload['future_agent_contract']['entrypoint']}",
+            f"- Ingesta textual: {'sí' if payload.get('input_memory', {}).get('ingesta', {}).get('text') else 'no'}",
+            f"- Ingesta documental: {'sí' if payload.get('input_memory', {}).get('ingesta', {}).get('document', {}).get('path') else 'no'}",
             "",
         ]
         titles = {
@@ -1015,6 +1194,8 @@ class ConstructionBuilder:
 
     def _render_maqueta_tex(self, node: ConstructionNodeSpec, payload: dict) -> str:
         maqueta = payload["maqueta_inicial"]
+        tex_editorial = payload.get("tex_editorial", {})
+        ingesta = payload.get("input_memory", {}).get("ingesta", {})
         title = _latex_escape(maqueta.get("titulo") or node.label)
         sections = [
             ("Objetivo", maqueta.get("objetivo", [])),
@@ -1034,6 +1215,7 @@ class ConstructionBuilder:
             "\\usepackage[spanish]{babel}",
             "\\usepackage{enumitem}",
             "\\usepackage{hyperref}",
+            "\\usepackage{longtable}",
             "",
             f"\\title{{{title}}}",
             "\\author{AulaTeX}",
@@ -1049,6 +1231,37 @@ class ConstructionBuilder:
             f"\\textbf{{Contrato futuro:}} {_latex_escape(payload['future_agent_contract']['status'])}",
             "",
         ]
+        lines.extend(
+            [
+                "\\section*{Ingesta base}",
+                "\\begin{itemize}[leftmargin=*]",
+                f"  \\item Texto libre proporcionado: {_latex_escape('sí' if ingesta.get('text') else 'no')}",
+                f"  \\item Documento de apoyo proporcionado: {_latex_escape(ingesta.get('document', {}).get('path') or 'no')}",
+                "\\end{itemize}",
+                "",
+            ]
+        )
+        if ingesta.get("text"):
+            lines.extend(
+                [
+                    "\\subsection*{Resumen de la ingesta textual}",
+                    "\\begin{quote}",
+                    _latex_escape(_truncate_text(ingesta.get("text", ""), 1200)),
+                    "\\end{quote}",
+                    "",
+                ]
+            )
+        document_excerpt = ingesta.get("document", {}).get("excerpt", "")
+        if document_excerpt:
+            lines.extend(
+                [
+                    "\\subsection*{Resumen del documento de apoyo}",
+                    "\\begin{quote}",
+                    _latex_escape(_truncate_text(document_excerpt, 1200)),
+                    "\\end{quote}",
+                    "",
+                ]
+            )
         for heading, items in sections:
             lines.extend(
                 [
@@ -1058,6 +1271,28 @@ class ConstructionBuilder:
             )
             safe_items = items or ["Pendiente de desarrollo en la siguiente fase del Agente."]
             lines.extend(f"  \\item {_latex_escape(item)}" for item in safe_items)
+            lines.extend(["\\end{itemize}", ""])
+        lines.extend(
+            [
+                "\\section*{Indicaciones editoriales por entregable}",
+                "",
+            ]
+        )
+        tex_titles = {
+            "plantilla": "Plantilla",
+            "actividad": "Actividad",
+            "reporte": "Reporte",
+            "presentacion": "Presentación",
+        }
+        for section in EDITORIAL_TEX_SECTIONS:
+            lines.extend(
+                [
+                    f"\\subsection*{{{_latex_escape(tex_titles[section])}}}",
+                    "\\begin{itemize}[leftmargin=*]",
+                ]
+            )
+            section_items = tex_editorial.get(section, []) or ["Pendiente de consolidar en siguientes ciclos."]
+            lines.extend(f"  \\item {_latex_escape(item)}" for item in section_items)
             lines.extend(["\\end{itemize}", ""])
         lines.extend(["\\end{document}", ""])
         return "\n".join(lines)
@@ -1070,11 +1305,119 @@ class ConstructionBuilder:
                 chunks.append(f"{section}: {len(items)}")
         return ", ".join(chunks) or "Sin memoria fundacional consolidada."
 
+    def _build_ingestion_payload(self, request: ConstructionRequest) -> tuple[dict, str]:
+        text = re.sub(r"\s+", " ", (request.ingest_text or "")).strip()
+        payload: dict = {
+            "text": text,
+            "document": {},
+        }
+        summary_parts: list[str] = []
+        if text:
+            summary_parts.append(f"Texto libre: {min(len(text), 4000)} chars")
+        document_path = (request.ingest_document_path or "").strip()
+        if document_path:
+            resolved = self.workspace.resolve_target(document_path)
+            if not resolved.exists() or not resolved.is_file():
+                raise ValueError(f"Documento de ingesta no encontrado: {document_path}")
+            payload["document"] = self._extract_document_payload(resolved)
+            summary_parts.append(f"Documento: {payload['document'].get('path', document_path)}")
+        if not summary_parts:
+            summary_parts.append("Sin ingesta adicional.")
+        return payload, " | ".join(summary_parts)
+
+    def _render_ingestion_text(self, payload: dict, summary: str) -> str:
+        lines = [summary]
+        text = payload.get("text", "")
+        if text:
+            lines.extend(["", "Texto libre:", _truncate_text(text, 1800)])
+        document = payload.get("document", {})
+        if isinstance(document, dict) and document.get("path"):
+            lines.extend(
+                [
+                    "",
+                    f"Documento: {document.get('path')}",
+                    f"Tipo: {document.get('kind', 'desconocido')}",
+                    document.get("note", ""),
+                    _truncate_text(document.get("excerpt", ""), 2200),
+                ]
+            )
+        return "\n".join(line for line in lines if line)
+
+    def _extract_document_payload(self, path: Path) -> dict:
+        suffix = path.suffix.lower()
+        excerpt = ""
+        note = ""
+        kind = suffix.lstrip(".") or "archivo"
+        if suffix in {".md", ".txt", ".tex", ".bib", ".json", ".yml", ".yaml"}:
+            excerpt = path.read_text(encoding="utf-8", errors="replace")
+            kind = "texto"
+        elif suffix == ".docx":
+            kind = "docx"
+            try:
+                with zipfile.ZipFile(path) as archive:
+                    document_xml = archive.read("word/document.xml").decode("utf-8", errors="replace")
+                excerpt = re.sub(r"<[^>]+>", " ", document_xml)
+                excerpt = html.unescape(re.sub(r"\s+", " ", excerpt)).strip()
+            except (KeyError, OSError, zipfile.BadZipFile) as exc:
+                note = f"No se pudo extraer texto de DOCX: {exc}"
+        else:
+            kind = "binario"
+            note = "Tipo de documento no extraíble automáticamente; se usará solo como referencia contextual."
+        return {
+            "path": self.workspace.relative(path),
+            "kind": kind,
+            "note": note,
+            "excerpt": _truncate_text(excerpt, 6000),
+            "size_bytes": path.stat().st_size,
+        }
+
+    def _default_tex_editorial_guidance(self, node: ConstructionNodeSpec, payload: dict, inputs: dict) -> dict:
+        memory = payload.get("memoria_fundacional", {})
+        plan = payload.get("plan_editorial", {})
+        maqueta = payload.get("maqueta_inicial", {})
+        ingestion = inputs.get("ingestion_payload", {})
+        destination = inputs.get("destination_payload", {})
+        text_hint = "Usa la ingesta proporcionada como restricción editorial inicial." if ingestion.get("text") or ingestion.get("document", {}).get("path") else "Trabaja con la memoria fundacional consolidada como fuente base."
+        return {
+            "plantilla": _dedupe_lines(
+                [
+                    destination.get("layout_contract", ""),
+                    *memory.get("latex_rules", [])[:3],
+                    *memory.get("structure_rules", [])[:3],
+                    text_hint,
+                ]
+            ),
+            "actividad": _dedupe_lines(
+                [
+                    *maqueta.get("objetivo", [])[:2],
+                    *maqueta.get("criterios_evaluacion", [])[:3],
+                    *memory.get("research_markers", [])[:3],
+                    text_hint,
+                ]
+            ),
+            "reporte": _dedupe_lines(
+                [
+                    *plan.get("estructura_base", [])[:3],
+                    *memory.get("style_rules", [])[:3],
+                    *memory.get("bibliography_rules", [])[:3],
+                    *memory.get("quality_gates", [])[:3],
+                ]
+            ),
+            "presentacion": _dedupe_lines(
+                [
+                    *maqueta.get("resultados_esperados", [])[:3],
+                    *memory.get("style_rules", [])[:2],
+                    *plan.get("alcance", [])[:2],
+                    "Sintetiza visualmente la memoria editorial sin perder continuidad con plantilla, actividad y reporte.",
+                ]
+            ),
+        }
+
     def _load_existing_payload(self, node: ConstructionNodeSpec) -> dict:
         payload = _empty_construction_payload(node)
         if node.operation_mode != "reforzar":
             return payload
-        for candidate in (node.output_dir / "memoria-fundacional.json", node.output_dir / "memory-fundacional.json"):
+        for candidate in _construction_memory_candidates(node):
             if not candidate.exists() or not candidate.is_file():
                 continue
             try:
@@ -1120,6 +1463,41 @@ def _empty_construction_payload(node: ConstructionNodeSpec) -> dict:
     return _normalize_construction_payload({}, node)
 
 
+def _construction_artifact_names(
+    *,
+    node_level: str,
+    node_name: str,
+    output_dir: Path,
+    activity_number: int,
+) -> dict[str, str]:
+    folder_slug = output_dir.name
+    if node_level == "materia":
+        base_slug = re.sub(r"-(lde|lad|mga|isc|imtc)$", "", folder_slug, flags=re.IGNORECASE)
+    elif node_level == "actividad":
+        base_slug = f"actividad-{int(activity_number):02d}-{_slugify(node_name)}"
+    else:
+        base_slug = _slugify(node_name) or _slugify(folder_slug) or node_level
+    base_slug = base_slug.strip("-") or node_level
+    return {
+        "memory": f"memoria-fundacional-{base_slug}.json",
+        "maqueta": f"maqueta-{base_slug}.tex",
+    }
+
+
+def _construction_memory_candidates(node: ConstructionNodeSpec) -> tuple[Path, ...]:
+    artifact_names = _construction_artifact_names(
+        node_level=node.level,
+        node_name=node.name,
+        output_dir=node.output_dir,
+        activity_number=int(node.activity_number),
+    )
+    return (
+        node.output_dir / artifact_names["memory"],
+        node.output_dir / "memoria-fundacional.json",
+        node.output_dir / "memory-fundacional.json",
+    )
+
+
 def _normalize_construction_payload(payload: dict, node: ConstructionNodeSpec) -> dict:
     normalized = {
         "node": {
@@ -1131,6 +1509,7 @@ def _normalize_construction_payload(payload: dict, node: ConstructionNodeSpec) -
         "memoria_fundacional": {section: [] for section in FUNDATIONAL_MEMORY_SECTIONS},
         "plan_editorial": {section: [] for section in PLAN_SECTIONS},
         "maqueta_inicial": {"titulo": node.label, **{field: [] for field in MAQUETA_LIST_FIELDS}},
+        "tex_editorial": {section: [] for section in EDITORIAL_TEX_SECTIONS},
         "input_summary": {},
     }
     if not isinstance(payload, dict):
@@ -1150,6 +1529,10 @@ def _normalize_construction_payload(payload: dict, node: ConstructionNodeSpec) -
             normalized["maqueta_inicial"]["titulo"] = re.sub(r"\s+", " ", title).strip()
         for field in MAQUETA_LIST_FIELDS:
             normalized["maqueta_inicial"][field] = _normalize_list(maqueta.get(field, []))
+    tex_editorial = payload.get("tex_editorial", {})
+    if isinstance(tex_editorial, dict):
+        for section in EDITORIAL_TEX_SECTIONS:
+            normalized["tex_editorial"][section] = _normalize_list(tex_editorial.get(section, []))
     input_summary = payload.get("input_summary", {})
     if isinstance(input_summary, dict):
         normalized["input_summary"] = input_summary
@@ -1213,6 +1596,9 @@ def _count_sections(payload: dict) -> int:
         sections += 1
     for field in MAQUETA_LIST_FIELDS:
         if payload["maqueta_inicial"].get(field):
+            sections += 1
+    for field in EDITORIAL_TEX_SECTIONS:
+        if payload.get("tex_editorial", {}).get(field):
             sections += 1
     return sections
 
@@ -1279,3 +1665,10 @@ def _latex_escape(value: str) -> str:
     for old, new in replacements.items():
         text = text.replace(old, new)
     return text
+
+
+def _truncate_text(text: str, max_chars: int) -> str:
+    cleaned = re.sub(r"\s+", " ", text or "").strip()
+    if len(cleaned) <= max_chars:
+        return cleaned
+    return cleaned[: max_chars - 3].rstrip() + "..."

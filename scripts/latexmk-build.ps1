@@ -90,6 +90,7 @@ function Invoke-BuildCleanup {
 $ResolvedTex = Resolve-TexFile $TexFile
 New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot '.build/latex') | Out-Null
 New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot '.build/latex/aux') | Out-Null
+Invoke-BuildCleanup -Mode $CleanMode -Root $ProjectRoot
 
 Push-Location $ProjectRoot
 try {

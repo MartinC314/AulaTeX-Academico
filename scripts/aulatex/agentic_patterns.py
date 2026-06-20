@@ -338,7 +338,8 @@ def build_editorial_tasks(request: Any, context: str, memory: SharedMemory | Non
             mission="descomponer el objetivo en plan ejecutable y criterios de aceptacion",
             prompt=base
             + "\nROL PLANIFICADOR: produce un plan breve por fases para investigar, generar, compilar y evaluar. "
-            "Incluye criterios de aceptacion por institucion, carrera, materia y actividad.",
+            "Incluye criterios de aceptacion por institucion, carrera, materia y actividad, "
+            "mas una seccion explicita de riesgos, faltantes, placeholders y errores bloqueantes.",
             weight=1.0,
         ),
         AgentTask(

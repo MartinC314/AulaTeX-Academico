@@ -39,6 +39,29 @@ MEMORY_SECTIONS = (
     "open_questions",
 )
 
+MEMORY_STRING_FIELDS = (
+    "artifact_name",
+)
+
+MEMORY_LIST_FIELDS = (
+    "sources",
+    "artifact_types",
+    "supported_artifact_types",
+    "source_documents",
+    "source_fragments",
+    "concepts",
+    "section_titles",
+    "citations",
+    "bibliography_index",
+)
+
+MEMORY_DICT_FIELDS = (
+    "node_metadata",
+    "curricular_context",
+    "artifact_templates",
+    "tex_blueprint",
+)
+
 
 @dataclass(frozen=True)
 class EditorialMemoryRequest:
@@ -221,6 +244,7 @@ class EditorialMemoryStore:
 
     def save_memory(self, scope: EditorialScope, payload: dict, source_scope_key: str) -> None:
         normalized = self._normalize_memory(payload)
+        normalized = self._enrich_memory(scope, normalized)
         self.upsert_scope(scope)
         with self._connect() as conn:
             conn.execute(
@@ -239,6 +263,154 @@ class EditorialMemoryStore:
         json_path.write_text(json.dumps(normalized, ensure_ascii=False, indent=2), encoding="utf-8")
         markdown_path = self.scopes_dir / f"{scope.key.replace('/', '__')}.md"
         markdown_path.write_text(self.render_memory_markdown(scope, normalized), encoding="utf-8")
+        self._write_local_scope_memory(scope, normalized)
+
+    def _write_local_scope_memory(self, scope: EditorialScope, payload: dict) -> None:
+        from pathlib import Path
+
+        rel = Path(scope.relative_path)
+        if scope.level == "actividad":
+            subject_dir = self.workspace.repo_root / rel
+            memory_dir = subject_dir / f".memoria-{scope.subject}"
+            filename = f"memoria-{scope.subject}-{scope.activity.lower().replace(' ', '-')}.json"
+        elif scope.level == "materia":
+            career_dir = (self.workspace.repo_root / rel).parent
+            memory_dir = career_dir / f".memoria-{scope.career or career_dir.name}"
+            filename = f"memoria-{scope.subject}.json"
+        elif scope.level == "carrera":
+            institution_dir = (self.workspace.repo_root / rel).parent
+            memory_dir = institution_dir / f".memoria-{scope.institution}"
+            filename = f"memoria-{scope.career}.json"
+        elif scope.level == "institucion":
+            memory_dir = self.workspace.repo_root / ".memoria-global"
+            filename = f"memoria-{scope.institution}.json"
+        else:
+            return
+
+        memory_dir.mkdir(parents=True, exist_ok=True)
+        (memory_dir / filename).write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+
+    def _enrich_memory(self, scope: EditorialScope, payload: dict) -> dict:
+        enriched = self._normalize_memory(payload)
+        metadata = {
+            "scope_key": scope.key,
+            "level": scope.level,
+            "label": scope.label,
+            "relative_path": scope.relative_path,
+            "institution": scope.institution,
+            "career": scope.career,
+            "subject": scope.subject,
+            "activity": scope.activity,
+            "parent_key": scope.parent_key,
+        }
+        enriched["node_metadata"] = {**enriched.get("node_metadata", {}), **metadata}
+
+        if scope.level not in {"actividad", "materia"}:
+            enriched["schema_version"] = 2
+            return enriched
+
+        subject_dir = self.workspace.repo_root / scope.relative_path
+        activity_number = "".join(ch for ch in scope.activity if ch.isdigit()) if scope.level == "actividad" else ""
+
+        artifact_paths: dict[str, Path] = {}
+        report_template = subject_dir / f"reporte-{scope.subject}.tex"
+        presentation_template = subject_dir / f"presentacion-{scope.subject}.tex"
+        if report_template.exists():
+            artifact_paths["reporte_base"] = report_template
+        if presentation_template.exists():
+            artifact_paths["presentacion_base"] = presentation_template
+        if scope.level == "actividad" and activity_number:
+            report_activity = subject_dir / f"reporte-{scope.subject}-Actividad-{activity_number}.tex"
+            presentation_activity = subject_dir / f"presentacion-{scope.subject}-Actividad-{activity_number}.tex"
+            if report_activity.exists():
+                artifact_paths["reporte"] = report_activity
+            if presentation_activity.exists():
+                artifact_paths["presentacion"] = presentation_activity
+
+        artifact_types = [kind for kind in ("reporte", "presentacion") if kind in artifact_paths]
+        supported_types = [kind for kind in ("reporte", "presentacion") if f"{kind}_base" in artifact_paths or kind in artifact_paths]
+        if scope.level == "actividad":
+            primary_type = artifact_types[0] if artifact_types else (supported_types[0] if supported_types else "reporte")
+            if activity_number:
+                enriched["artifact_name"] = f"{primary_type}-{scope.subject}-Actividad-{activity_number}"
+            enriched["artifact_types"] = _dedupe_lines(enriched.get("artifact_types", []) + artifact_types)
+        else:
+            templates: dict[str, str] = dict(enriched.get("artifact_templates", {}))
+            if "reporte_base" in artifact_paths:
+                templates["reporte"] = f"reporte-{scope.subject}"
+            if "presentacion_base" in artifact_paths:
+                templates["presentacion"] = f"presentacion-{scope.subject}"
+            enriched["artifact_templates"] = templates
+            enriched["supported_artifact_types"] = _dedupe_lines(enriched.get("supported_artifact_types", []) + supported_types)
+
+        source_documents = list(enriched.get("source_documents", []))
+        source_fragments = list(enriched.get("source_fragments", []))
+        concepts = list(enriched.get("concepts", []))
+        section_titles = list(enriched.get("section_titles", []))
+        citations = list(enriched.get("citations", []))
+        bibliography_index = list(enriched.get("bibliography_index", []))
+        tex_blueprint = dict(enriched.get("tex_blueprint", {}))
+
+        readme_path = subject_dir / "README.md"
+        if readme_path.exists():
+            source_documents.append(self.workspace.relative(readme_path))
+            source_fragments.extend(_extract_nonempty_lines(self._safe_read_text(readme_path), limit=6, max_len=220))
+
+        program_path = next(iter(sorted(subject_dir.glob("programa-analitico*.md"))), None)
+        curricular_context = dict(enriched.get("curricular_context", {}))
+        if program_path is not None and program_path.exists():
+            source_documents.append(self.workspace.relative(program_path))
+            program_context = _extract_program_context(self._safe_read_text(program_path))
+            curricular_context = {**program_context, **curricular_context}
+            source_fragments.extend(program_context.get("source_fragments", []))
+            concepts.extend(program_context.get("work_axes", []))
+
+        bib_paths = [path for path in sorted(subject_dir.glob("*.bib")) if path.is_file()]
+        for bib_path in bib_paths:
+            source_documents.append(self.workspace.relative(bib_path))
+            bib_index = _extract_bibliography_index(self._safe_read_text(bib_path))
+            bibliography_index.extend(bib_index)
+            concepts.extend(_extract_bibliography_titles(bib_index))
+
+        artifact_blueprints: dict[str, dict] = {}
+        for kind, tex_path in artifact_paths.items():
+            source_documents.append(self.workspace.relative(tex_path))
+            blueprint = _extract_tex_blueprint(self._safe_read_text(tex_path), self.workspace.relative(tex_path))
+            artifact_blueprints[kind] = blueprint
+            section_titles.extend(blueprint.get("section_titles", []))
+            citations.extend(blueprint.get("cited_keys", []))
+            concepts.extend(blueprint.get("concepts", []))
+            source_fragments.extend(blueprint.get("source_fragments", []))
+            for key in ("coursename", "coursecode", "documentsubject", "documenttitle", "documentsubtitle"):
+                value = blueprint.get(key)
+                if value and key not in curricular_context:
+                    curricular_context[key] = value
+
+        if artifact_blueprints:
+            tex_blueprint["artifacts"] = artifact_blueprints
+            preferred_key = "reporte" if "reporte" in artifact_blueprints else next(iter(artifact_blueprints.keys()))
+            tex_blueprint["primary"] = artifact_blueprints.get(preferred_key, {})
+
+        enriched["curricular_context"] = curricular_context
+        enriched["tex_blueprint"] = tex_blueprint
+        enriched["source_documents"] = _dedupe_lines(source_documents)
+        enriched["source_fragments"] = _dedupe_lines(source_fragments)
+        enriched["concepts"] = _dedupe_lines(concepts)
+        enriched["section_titles"] = _dedupe_lines(section_titles)
+        enriched["citations"] = _dedupe_lines(citations)
+        enriched["bibliography_index"] = _dedupe_lines(bibliography_index)
+        enriched["sources"] = _dedupe_lines(enriched.get("sources", []) + enriched["source_documents"])
+        enriched["schema_version"] = 2
+        return enriched
+
+    def _safe_read_text(self, path: Path) -> str:
+        try:
+            return path.read_text(encoding="utf-8", errors="replace")
+        except OSError:
+            return ""
 
     def render_memory_markdown(self, scope: EditorialScope, payload: dict | None = None) -> str:
         data = self._normalize_memory(payload or self.get_memory(scope.key))
@@ -364,27 +536,40 @@ class EditorialMemoryStore:
 
     def _empty_memory(self) -> dict:
         payload = {section: [] for section in MEMORY_SECTIONS}
-        payload["sources"] = []
+        for field in MEMORY_STRING_FIELDS:
+            payload[field] = ""
+        for field in MEMORY_LIST_FIELDS:
+            payload[field] = []
+        for field in MEMORY_DICT_FIELDS:
+            payload[field] = {}
         payload["locked_sections"] = []
         payload["compression"] = {"method": "union-dedupe", "lossless": True}
-        payload["schema_version"] = 1
+        payload["schema_version"] = 2
         return payload
 
     def _normalize_memory(self, payload: dict) -> dict:
         normalized = self._empty_memory()
         if not isinstance(payload, dict):
             return normalized
+        for field in MEMORY_STRING_FIELDS:
+            value = payload.get(field, "")
+            normalized[field] = value.strip() if isinstance(value, str) else ""
         for section in MEMORY_SECTIONS:
             items = payload.get(section, [])
             if isinstance(items, str):
                 items = [items]
             if isinstance(items, list):
                 normalized[section] = _dedupe_lines(items)
-        sources = payload.get("sources", [])
-        if isinstance(sources, str):
-            sources = [sources]
-        if isinstance(sources, list):
-            normalized["sources"] = _dedupe_lines(sources)
+        for field in MEMORY_LIST_FIELDS:
+            items = payload.get(field, [])
+            if isinstance(items, str):
+                items = [items]
+            if isinstance(items, list):
+                normalized[field] = _dedupe_lines(items)
+        for field in MEMORY_DICT_FIELDS:
+            value = payload.get(field, {})
+            if isinstance(value, dict):
+                normalized[field] = value
         locked_sections = payload.get("locked_sections", [])
         if isinstance(locked_sections, str):
             locked_sections = [locked_sections]
@@ -398,6 +583,10 @@ class EditorialMemoryStore:
                 "method": compression.get("method", "union-dedupe"),
                 "lossless": bool(compression.get("lossless", True)),
             }
+        try:
+            normalized["schema_version"] = max(2, int(payload.get("schema_version", 2)))
+        except (TypeError, ValueError):
+            normalized["schema_version"] = 2
         return normalized
 
 
@@ -562,7 +751,7 @@ class EditorialMemoryBuilder:
         by_key: dict[str, EditorialScope],
         children: dict[str, list[EditorialScope]],
     ) -> list[EditorialScope]:
-        allowed = {"local", "ascendente", "ascendente-exhaustivo"}
+        allowed = {"local", "ascendente", "ascendente-exhaustivo", "recursivo"}
         mode = propagation_mode if propagation_mode in allowed else "ascendente"
         order = {level: index for index, level in enumerate(EDITORIAL_LEVELS)}
         if order[build_level] < order[source_scope.level]:
@@ -572,7 +761,10 @@ class EditorialMemoryBuilder:
         seen: set[str] = set()
         current = source_scope
         while current is not None:
-            self._append_scope(plan, seen, current)
+            if mode == "recursivo":
+                self._append_subtree_postorder(plan, seen, current, children)
+            else:
+                self._append_scope(plan, seen, current)
 
             if mode == "ascendente-exhaustivo":
                 parent = by_key.get(current.parent_key)
@@ -593,6 +785,17 @@ class EditorialMemoryBuilder:
             return
         plan.append(scope)
         seen.add(scope.key)
+
+    def _append_subtree_postorder(
+        self,
+        plan: list[EditorialScope],
+        seen: set[str],
+        scope: EditorialScope,
+        children: dict[str, list[EditorialScope]],
+    ) -> None:
+        for child in children.get(scope.key, []):
+            self._append_subtree_postorder(plan, seen, child, children)
+        self._append_scope(plan, seen, scope)
 
     def _build_prompt(
         self,
@@ -680,7 +883,7 @@ class EditorialMemoryBuilder:
         )
         merged["locked_sections"] = sorted(locked_sections)
         merged["compression"] = {"method": "union-dedupe", "lossless": True}
-        merged["schema_version"] = 1
+        merged["schema_version"] = max(2, int(candidate_normalized.get("schema_version", 2) or 2))
         return merged
 
     def _emit(self, callback: Callable[[EditorialMemoryEvent], None] | None, event: EditorialMemoryEvent) -> None:
@@ -751,3 +954,117 @@ def _extract_bullets(text: str) -> list[str]:
         if re.match(r"^\d+[.)]\s+", line):
             bullets.append(re.sub(r"^\d+[.)]\s+", "", line))
     return _dedupe_lines(bullets)
+
+
+def _latex_to_plain(text: str) -> str:
+    value = text or ""
+    value = re.sub(r"\\textbf\{([^{}]*)\}", r"\1", value)
+    value = re.sub(r"\\textit\{([^{}]*)\}", r"\1", value)
+    value = re.sub(r"\\emph\{([^{}]*)\}", r"\1", value)
+    value = value.replace("\\\\", " ")
+    value = value.replace("~", " ")
+    value = re.sub(r"\\[a-zA-Z]+", " ", value)
+    value = value.replace("{", " ").replace("}", " ")
+    value = re.sub(r"\s+", " ", value)
+    return value.strip()
+
+
+def _extract_nonempty_lines(text: str, *, limit: int = 8, max_len: int = 240) -> list[str]:
+    lines: list[str] = []
+    for raw in text.splitlines():
+        line = _latex_to_plain(raw)
+        if not line:
+            continue
+        lines.append(line[:max_len])
+        if len(lines) >= limit:
+            break
+    return _dedupe_lines(lines)
+
+
+def _extract_program_context(text: str) -> dict:
+    normalized = text or ""
+    headings = list(re.finditer(r"^##\s+(.+)$", normalized, re.MULTILINE))
+    sections: dict[str, str] = {}
+    for index, match in enumerate(headings):
+        start = match.end()
+        end = headings[index + 1].start() if index + 1 < len(headings) else len(normalized)
+        sections[match.group(1).strip().lower()] = normalized[start:end].strip()
+
+    work_axes: list[str] = []
+    ejes = sections.get("ejes de trabajo", "")
+    for line in ejes.splitlines():
+        stripped = line.strip()
+        if re.match(r"^\d+[.)]?\s+", stripped):
+            work_axes.append(re.sub(r"^\d+[.)]?\s+", "", stripped))
+
+    source_fragments = []
+    for key in ("encuadre institucional", "proposito de realizacion"):
+        if sections.get(key):
+            source_fragments.extend(_extract_nonempty_lines(sections[key], limit=2, max_len=240))
+    source_fragments.extend(work_axes[:5])
+    return {
+        "institutional_frame": _latex_to_plain(sections.get("encuadre institucional", "")),
+        "purpose": _latex_to_plain(sections.get("proposito de realizacion", "")),
+        "work_axes": _dedupe_lines(work_axes),
+        "source_fragments": _dedupe_lines(source_fragments),
+    }
+
+
+def _extract_bibliography_index(text: str) -> list[str]:
+    entries: list[str] = []
+    entry_pattern = re.compile(r"@\w+\{\s*([^,]+),(.+?)(?=^@\w+\{|\Z)", re.DOTALL | re.MULTILINE)
+    for match in entry_pattern.finditer(text or ""):
+        key = match.group(1).strip()
+        body = match.group(2)
+        title_match = re.search(r"\btitle\s*=\s*[{"](.+?)[}"]\s*,?\n", body, re.DOTALL | re.IGNORECASE)
+        title = _latex_to_plain(title_match.group(1)) if title_match else ""
+        entries.append(f"{key} :: {title}" if title else key)
+    return _dedupe_lines(entries)
+
+
+def _extract_bibliography_titles(entries: list[str]) -> list[str]:
+    titles: list[str] = []
+    for item in entries:
+        if " :: " in item:
+            _key, title = item.split(" :: ", 1)
+            if title:
+                titles.append(title)
+    return _dedupe_lines(titles)
+
+
+def _extract_tex_blueprint(text: str, relative_path: str) -> dict:
+    macros: dict[str, str] = {}
+    for name in ("documenttitle", "documentsubtitle", "documentsubject", "coursename", "coursecode", "documentauthor"):
+        match = re.search(rf"\\def\\{name}\s*\{{(.*?)\}}", text, re.DOTALL)
+        if match:
+            macros[name] = _latex_to_plain(match.group(1))
+
+    abstract_match = re.search(r"\\begin\{abstractd\}(.*?)\\end\{abstractd\}", text, re.DOTALL)
+    abstract_text = _latex_to_plain(abstract_match.group(1)) if abstract_match else ""
+    section_titles = _dedupe_lines([_latex_to_plain(item) for item in re.findall(r"\\section\{([^}]*)\}", text)])
+    subsection_titles = _dedupe_lines([_latex_to_plain(item) for item in re.findall(r"\\subsection\{([^}]*)\}", text)])
+    cited_keys: list[str] = []
+    for chunk in re.findall(r"\\cite\w*\{([^}]*)\}", text):
+        cited_keys.extend(part.strip() for part in chunk.split(",") if part.strip())
+    concept_nodes = _dedupe_lines(
+        [_latex_to_plain(item) for item in re.findall(r"\\node\[[^\]]+\]\s*\([^)]+\)\s*at\s*\([^)]+\)\s*\{([^}]*)\};", text)]
+    )
+    intro_match = re.search(r"\\section\{Introducci[oó]n\}(.*?)(?=\\section\{|\\end\{document\})", text, re.DOTALL | re.IGNORECASE)
+    intro_text = _latex_to_plain(intro_match.group(1)) if intro_match else ""
+    source_fragments = []
+    if abstract_text:
+        source_fragments.extend(_extract_nonempty_lines(abstract_text, limit=3, max_len=260))
+    if intro_text:
+        source_fragments.extend(_extract_nonempty_lines(intro_text, limit=4, max_len=260))
+    source_fragments.extend(concept_nodes[:8])
+
+    return {
+        "relative_path": relative_path,
+        **macros,
+        "abstract": abstract_text,
+        "section_titles": section_titles,
+        "subsection_titles": subsection_titles,
+        "cited_keys": _dedupe_lines(cited_keys),
+        "concepts": concept_nodes,
+        "source_fragments": _dedupe_lines(source_fragments),
+    }
