@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -31,6 +32,34 @@
 - Bibliografia local depurada corresponde a actividad de Interpretacion juridica (Semana 7); su aplicacion a actividad-3 es supuesto hasta confirmar consigna.
 - Existen incidencias previas de parseo desde Codex y GPT-Pro; no tratarlas como evidencia academica.
 - Memoria de actividad-3 consolidada con deduplicacion lossless y sin regresion.
+- Persisten incidencias historicas de salida no JSON parseable; normalizar manualmente antes de propagacion automatica.
+- La pauta editorial exige identidad UnADM, integridad academica, citas verificables y conclusion juridica propia.
+- La bibliografia local depurada corresponde a Interpretacion juridica (Semana 7); su uso en actividad-3 es supuesto hasta confirmar consigna.
+- Salida sin JSON parseable desde Auto (model-router) para Actividad 3
+- Salida sin JSON parseable desde Claude Foundry para Actividad 3
+- Memoria de actividad-3 consolidada con deduplicación lossless y sin regresión.
+- Persisten incidencias históricas de salida no JSON parseable; normalizar manualmente antes de propagación automática.
+- La bibliografía local depurada corresponde a Interpretación jurídica (Semana 7); su uso en actividad-3 es supuesto hasta confirmar consigna.
+- Existen incidencias de parseo de herramientas previas; no tratarlas como evidencia académica.
+- Existen incidencias de parseo de herramientas previas; no tratarlas como evidencia academica.
+- Memoria de actividad-3 consolidada con deduplicacion semantica lossless.
+- Memoria de actividad-3 consolidada con deduplicación semántica lossless y sin regresión.
+- Memoria de actividad-3 consolidada con deduplicacion semantica lossless y sin regresion.
+- Persisten incidencias historicas de salida no JSON parseable; aplicar normalizacion manual antes de propagacion automatica.
+- Las incidencias de parseo de herramientas previas son antecedentes tecnicos, no evidencia academica.
+- Persisten incidencias históricas de salida no JSON parseable; aplicar normalización manual antes de propagación automática.
+- Las incidencias de parseo de herramientas previas son antecedentes técnicos, no evidencia académica.
+- La bibliografia local depurada corresponde a Interpretacion juridica (Semana 7); su uso en actividad-3 queda como supuesto hasta confirmar consigna.
+- Salida sin JSON parseable desde Codex para Actividad 3
+- La asignatura exige identidad UnADM, integridad academica, citas verificables y conclusion juridica propia.
+- Ciclo 15: mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 16: mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 17: mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 18: mantener deduplicación semántica lossless sin recortar reglas útiles.
+- Ciclo 19: mantener deduplicación semántica lossless sin recortar reglas útiles.
+- Ciclo 20: mantener deduplicación semántica lossless sin recortar reglas útiles.
+- Ciclo 21: mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 22: mantener deduplicacion semantica lossless sin recortar reglas utiles.
 
 ## identity_rules
 
@@ -47,6 +76,22 @@
 - Tratar memoria editorial Codex/GPT-Pro como antecedente provisional, no como fuente academica.
 - Registrar origen provisional de incidencias de parseo sin convertirlo en evidencia academica.
 - Fuente provisional: Codex desde ingenieria en sistemas computacionales.
+- Marcar como supuesto todo dato no confirmado por evidencia local.
+- Registrar origen de incidencias de parseo sin convertirlo en evidencia academica.
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Registrar origen de incidencias de parseo sin convertirlo en evidencia académica.
+- Fuente provisional: Auto (model-router) desde actividad-1.
+- Fuente provisional: Claude Foundry desde actividad-1.
+- Tratar memoria editorial como antecedente provisional, no como fuente academica.
+- Fuente provisional: actividad-1 como origen de propagacion.
+- Fuente provisional: actividad-1 como origen de propagación.
+- Fuentes provisionales de incidencias: Codex, GPT-Pro, Auto (model-router), Claude Foundry.
+- Tratar la memoria editorial como antecedente provisional, no como fuente academica.
+- Tratar la memoria editorial como antecedente provisional, no como fuente académica.
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional de propagación: actividad-1.
+- Fuente provisional de propagacion: actividad-1.
 
 ## structure_rules
 
@@ -60,6 +105,7 @@
 - Integrar claridad, fundamento jurídico, evidencia y transferencia profesional.
 - Transformar la planeacion semanal en reporte, presentacion o producto visual segun corresponda.
 - Integrar claridad, fundamento juridico, evidencia y transferencia profesional.
+- Usar estructura minima: problema, conceptos y fuentes, analisis propio, conclusion juridica transferible.
 
 ## activity_rules
 
@@ -92,6 +138,8 @@
 - Normalizar manualmente memorias con incidencias de parseo antes de reutilizarlas.
 - Confirmar que cada fuente citada exista en bibliografia local o se agregue con datos verificables.
 - Distinguir fuentes academicas, normativas, jurisprudenciales y antecedentes editoriales.
+- Revisar respuesta no estructurada antes de aplicar propagacion aguas abajo.
+- Revisar respuesta no estructurada antes de aplicar propagación aguas abajo.
 
 ## latex_rules
 
@@ -110,6 +158,10 @@
 - Usar archivos .tex de reporte o presentacion segun el producto solicitado.
 - Corregir rutas o nombres de archivo solo con verificacion local.
 - Archivos canonicos supuestos por README: reporte-filosofia-del-derecho.tex y presentacion-filosofia-del-derecho.tex.
+- Usar archivos .tex de reporte o presentacion segun producto solicitado.
+- Archivos canonicos (supuesto por README): reporte-filosofia-del-derecho.tex y presentacion-filosofia-del-derecho.tex.
+- Archivos canónicos (supuesto por README): reporte-filosofia-del-derecho.tex y presentacion-filosofia-del-derecho.tex.
+- Mantener las claves originales del .bib para evitar recompilaciones.
 
 ## bibliography_rules
 
@@ -127,6 +179,7 @@
 - Usar la bibliografia local depurada solo cuando coincida con las citas del documento.
 - Conservar fuentes UNAM-IIJ y SCJN solo si estan efectivamente citadas.
 - No usar memoria editorial como bibliografia academica.
+- Priorizar fuentes institucionales UnADM y fuentes normativas, doctrinales o jurisprudenciales verificables.
 
 ## propagation_hints
 
@@ -147,6 +200,85 @@
 - Propagar reglas especificas de Filosofia del Derecho solo a actividades laterales de la misma asignatura.
 - En ciclo 2, mantener deduplicacion semantica sin recortar reglas utiles.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 1 requiere normalizacion manual si se reutiliza.
+- Propagar reglas especificas de Filosofia del Derecho solo a actividades de la misma asignatura.
+- Propagar reglas específicas de Filosofía del Derecho solo a actividades de la misma asignatura.
+- Ciclo 1 requiere normalización manual si se reutiliza.
+- Ciclo 2 necesita normalización manual si se reutiliza.
+- Propagar recursivamente solo despues de normalizacion manual por incidencias de parseo.
+- Ciclo 1 y ciclo 2 requieren normalizacion manual si se reutilizan.
+- En ciclo 3 mantener deduplicacion semantica sin recortar reglas utiles.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- En ciclo 2 mantener deduplicacion semantica sin recortar reglas utiles.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente solo después de normalización manual por incidencias de parseo.
+- Ciclos 1 a 6 requieren normalización manual si se reutilizan.
+- En ciclo 7 mantener deduplicación semántica lossless sin recortar reglas útiles.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 7 requieren normalizacion manual si se reutilizan.
+- En ciclo 8 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 8 requieren normalizacion manual si se reutilizan.
+- En ciclo 9 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 9 requieren normalización manual si se reutilizan.
+- En ciclo 10 mantener deduplicación semántica lossless sin recortar reglas útiles.
+- Ciclo 10 necesita normalización manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 10 requieren normalizacion manual si se reutilizan.
+- En ciclo 11 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- En ciclo 2 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- En ciclo 3 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- En ciclo 7 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- En ciclo 10 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclos 1 y 2 requieren normalizacion manual si se reutilizan.
+- Ciclos 1 a 10 requieren normalización manual si se reutilizan.
+- En ciclo 11 mantener deduplicación semántica lossless sin recortar reglas útiles.
+- Ciclo 11 necesita normalización manual si se reutiliza.
+- Ciclos 1 a 11 requieren normalizacion manual si se reutilizan.
+- En ciclo 5 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- En ciclo 6 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclos 1 a 11 requieren normalización manual si se reutilizan.
+- En ciclo 8 mantener deduplicación semántica lossless sin recortar reglas útiles.
+- Ciclo 8 necesita normalización manual si se reutiliza.
+- En ciclo 9 mantener deduplicación semántica lossless sin recortar reglas útiles.
+- En ciclo 12 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 12 requieren normalizacion manual si se reutilizan.
+- En ciclo 13 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 13 requieren normalizacion manual si se reutilizan.
+- En ciclo 14 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 15 requieren normalizacion manual si se reutilizan.
+- En ciclo 15 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 16 requieren normalizacion manual si se reutilizan.
+- En ciclo 16 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 17 requieren normalizacion manual si se reutilizan.
+- En ciclo 17 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 18 requieren normalización manual si se reutilizan.
+- En ciclo 18 mantener deduplicación semántica lossless sin recortar reglas útiles.
+- Ciclo 18 necesita normalización manual si se reutiliza.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 19 requieren normalización manual si se reutilizan.
+- En ciclo 19 mantener deduplicación semántica lossless sin recortar reglas útiles.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 20 requieren normalización manual si se reutilizan.
+- En ciclo 20 mantener deduplicación semántica lossless sin recortar reglas útiles.
+- Ciclo 20 necesita normalización manual si se reutiliza.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 21 requieren normalizacion manual si se reutilizan.
+- En ciclo 21 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 22 requieren normalizacion manual si se reutilizan.
+- En ciclo 22 mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -163,3 +295,4 @@
 - Falta confirmar formato de entrega requerido en actividad-3: reporte, presentación u otro.
 - Falta confirmar si actividad-3 corresponde a interpretacion juridica o a otra semana.
 - Falta confirmar si la bibliografia depurada de Semana 7 aplica a actividad-3.
+- Falta confirmar formato de entrega requerido en actividad-3: reporte, presentacion u otro.

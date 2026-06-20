@@ -19,7 +19,15 @@
     "El programa analitico contiene un token de plantilla pendiente para el archivo .bib.",
     "El reporte .tex mantiene titulo, subtitulo y campos de plantilla pendientes de personalizar.",
     "La bibliografia local contiene entradas base UnADM y malla curricular de Derecho.",
-    "Derecho financiero y bancario pertenece a Licenciatura en Derecho: semestre 3, bloque 2, obligatoria, 8 creditos."
+    "Derecho financiero y bancario pertenece a Licenciatura en Derecho: semestre 3, bloque 2, obligatoria, 8 creditos.",
+    "Salida sin JSON parseable desde Codex para derecho-financiero-y-bancario-lde",
+    "Salida sin JSON parseable desde Auto (model-router) para derecho-financiero-y-bancario-lde",
+    "Salida sin JSON parseable desde Claude Foundry para derecho-financiero-y-bancario-lde",
+    "Base institucional UnADM consolidada con compresion union-dedupe lossless y sin regresion.",
+    "Se detectaron antecedentes de salida no parseable en JSON desde Codex, GPT-Pro, Auto (model-router) y Claude Foundry.",
+    "README y programa analitico contienen artefactos de plantilla en nombres de archivo.",
+    "La bibliografia local conserva entradas base institucionales verificables.",
+    "El token de plantilla del archivo .bib debe expandirse a derecho-financiero-y-bancario.bib."
   ],
   "identity_rules": [
     "Mantener identidad institucional UnADM en portada y metadatos.",
@@ -44,7 +52,15 @@
     "Marcar como supuesto cualquier dato no confirmado del docente.",
     "Marcar como supuesto cualquier dato no confirmado del grupo.",
     "Tratar GPT-Pro desde Actividad 1 como fuente provisional heredada.",
-    "Tratar Codex desde ingenieria-en-sistemas-computacionales como fuente provisional heredada."
+    "Tratar Codex desde ingenieria-en-sistemas-computacionales como fuente provisional heredada.",
+    "Fuente provisional: Codex desde Actividad 1",
+    "Fuente provisional: Auto (model-router) desde Actividad 1",
+    "Fuente provisional: Claude Foundry desde Actividad 1",
+    "Fuente provisional: Codex desde ingenieria-en-sistemas-computacionales.",
+    "Fuente provisional: GPT-Pro desde Actividad 1.",
+    "Fuente provisional: Auto (model-router) desde Actividad 1.",
+    "Fuente provisional: Claude Foundry desde Actividad 1.",
+    "Fuente provisional: Codex desde Actividad 1."
   ],
   "structure_rules": [
     "Alinear cada entrega al flujo: problema, conceptos/normas, producto, analisis propio, conclusion transferible.",
@@ -63,7 +79,8 @@
     "Corregir nombres de archivos con caracteres faltantes en README.",
     "No eliminar reglas previas validas.",
     "Agregar solo mejoras verificables.",
-    "Corregir artefactos de plantilla y caracteres faltantes en nombres de archivo del README."
+    "Corregir artefactos de plantilla y caracteres faltantes en nombres de archivo del README.",
+    "No eliminar reglas previas validas; agregar solo mejoras verificables."
   ],
   "activity_rules": [
     "Iniciar cada actividad con un problema juridico o social delimitado.",
@@ -74,7 +91,8 @@
     "Separar descripcion de conceptos, analisis propio y conclusion juridica.",
     "Separar descripcion conceptual, analisis propio y conclusion juridica.",
     "Cerrar con postura juridica propia aplicable a la practica profesional.",
-    "Adaptar el producto a la planeacion semanal confirmada."
+    "Adaptar el producto a la planeacion semanal confirmada.",
+    "Adaptar el producto solicitado a la planeacion semanal confirmada."
   ],
   "quality_gates": [
     "Verificar que la salida sea JSON parseable antes de propagar memoria.",
@@ -90,7 +108,8 @@
     "Comprobar que cada mejora agregada sea verificable y sin fuentes inventadas.",
     "Comprobar que cada mejora agregada sea verificable.",
     "Bloquear fuentes o metadatos bibliograficos inventados.",
-    "Normalizar manualmente si reaparece salida no estructurada."
+    "Normalizar manualmente si reaparece salida no estructurada.",
+    "Validar deduplicacion semantica antes de guardar memoria."
   ],
   "latex_rules": [
     "Mantener plantilla article en espanol y formato letterpaper oneside salvo instruccion contraria.",
@@ -119,7 +138,8 @@
     "Usar derecho-financiero-y-bancario.bib como archivo bibliografico canonico de la materia.",
     "Conservar entradas base unadmSitioWeb y unadmMallaDerecho2024.",
     "Agregar entradas BibTeX solo con fuente verificable.",
-    "Incluir fecha de consulta en referencias web."
+    "Incluir fecha de consulta en referencias web.",
+    "Mantener entradas base unadmSitioWeb y unadmMallaDerecho2024."
   ],
   "propagation_hints": [
     "Propagar arriba y laterales solo reglas validadas y deduplicadas.",
@@ -134,7 +154,31 @@
     "Si reaparece salida no estructurada en ciclo 2, aplicar normalizacion manual como contingencia.",
     "Aplicar normalizacion manual si se reutiliza memoria de ciclo 1 con salida no estructurada.",
     "Propagar lateralmente solo reglas independientes de la asignatura o actividad especifica.",
-    "Ciclo 2 necesita normalizacion manual si se reutiliza."
+    "Ciclo 2 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 3 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 4 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 5 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 6 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 7 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 8 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 9 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 10 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 11 necesita normalizacion manual si se reutiliza.",
+    "Propagar a nivel materia reglas generales de identidad, estructura y bibliografia.",
+    "Aplicar normalizacion manual si se reutiliza memoria de ciclos con salida no estructurada.",
+    "Ciclo 12 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 13 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 14 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 15 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 16 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 17 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 18 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 19 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 20 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 21: mantener contingencia de normalizacion manual por historial de salidas no parseables.",
+    "Ciclo 21 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 22: mantener contingencia de normalizacion manual por historial de salidas no parseables.",
+    "Ciclo 22 necesita normalizacion manual si se reutiliza."
   ],
   "open_questions": [
     "Confirmar nombre de la figura docente para completar plantilla.",
@@ -154,13 +198,15 @@
     "Confirmar numero real de actividad para sustituir Actividad X en el subtitulo del .tex.",
     "Confirmar nombre real de la figura docente para completar plantilla.",
     "Definir formato obligatorio de citacion para la materia (APA, IEEE u otro); supuesto: no definido aun.",
-    "Confirmar planeacion semanal vigente antes de generar actividades especificas."
+    "Confirmar planeacion semanal vigente antes de generar actividades especificas.",
+    "Verificar si los nombres de archivo del README deben corregirse manualmente o regenerarse."
   ],
   "sources": [
     "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
     "UnADM/licenciatura-en-derecho-unadm/derecho-financiero-y-bancario-lde",
     "UnADM"
   ],
+  "locked_sections": [],
   "compression": {
     "method": "union-dedupe",
     "lossless": true

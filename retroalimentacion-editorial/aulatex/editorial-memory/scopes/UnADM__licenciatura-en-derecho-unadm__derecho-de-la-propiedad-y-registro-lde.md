@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/derecho-de-la-propiedad-y-registro-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -23,6 +24,13 @@
 - Supuesto: la actividad origen no aporta reglas nuevas parseables en este ciclo.
 - Antecedentes con salidas no JSON parseables desde Codex y GPT-Pro.
 - Antecedentes con salidas no JSON parseables desde Codex y GPT-Pro; requieren normalizacion antes de reutilizarse.
+- Salida sin JSON parseable desde Codex para derecho-de-la-propiedad-y-registro-lde
+- Salida sin JSON parseable desde Auto (model-router) para derecho-de-la-propiedad-y-registro-lde
+- Salida sin JSON parseable desde Claude Foundry para derecho-de-la-propiedad-y-registro-lde
+- Antecedentes con salidas no JSON parseables desde Codex, GPT-Pro, Auto (model-router) y Claude Foundry; requieren normalizacion antes de reutilizarse.
+- Pauta editorial activa: identidad UnADM, integridad academica, citas verificables y cierre juridico propio.
+- Se detectan tokens corruptos en README para nombres de archivos; usar slug canonico para resolver rutas.
+- Antecedentes con salidas no JSON parseables; requieren normalizacion antes de reutilizarse.
 
 ## identity_rules
 
@@ -38,6 +46,14 @@
 - Marcar como provisional toda regla heredada desde otro programa academico.
 - Fuente provisional: Codex desde ingenieria-en-sistemas-computacionales.
 - Fuente provisional: GPT-Pro desde Actividad 1.
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Mantener autor por defecto Martin Jonathan de la Cruz salvo instruccion distinta.
+- Conservar matricula del alumno ES2611202040 en tabla de autor.
+- Fuente provisional: Codex desde Actividad 1.
+- Fuente provisional: Auto (model-router) desde Actividad 1.
+- Fuente provisional: Claude Foundry desde Actividad 1.
 
 ## structure_rules
 
@@ -77,6 +93,7 @@
 - Revisar respuesta no estructurada antes de aplicar aguas abajo.
 - Revisar toda respuesta no estructurada heredada antes de aplicarla aguas abajo.
 - Revisar sintaxis LaTeX de authortable antes de compilar.
+- Aplicar normalizacion manual a salidas no JSON antes de reutilizarlas.
 
 ## latex_rules
 
@@ -123,6 +140,38 @@
 - Propagar identidad UnADM a nodos laterales solo si comparten institucion.
 - Aplicar ciclo 2 con revision de antecedentes no estructurados.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Ciclo 12: mantener misma politica de normalizacion manual para antecedentes no JSON.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13: mantener misma politica de normalizacion manual para antecedentes no JSON.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclo 14: mantener misma politica de normalizacion manual para antecedentes no JSON.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclo 15: mantener misma politica de normalizacion manual para antecedentes no JSON.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16: mantener misma politica de normalizacion manual para antecedentes no JSON.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclo 17: mantener misma politica de normalizacion manual para antecedentes no JSON.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Aplicar normalizacion manual a antecedentes no JSON antes de reutilizarlos.
+- Ciclo 18: mantener misma politica de normalizacion manual para antecedentes no JSON.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclo 19: mantener misma politica de normalizacion manual para antecedentes no JSON.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclo 20: mantener misma politica de normalizacion manual para antecedentes no JSON.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclo 21: mantener misma politica de normalizacion manual para antecedentes no JSON.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclo 22: mantener misma politica de normalizacion manual para antecedentes no JSON.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 

@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -22,6 +23,12 @@
 - Existen antecedentes de salida no parseable desde Codex y GPT-Pro; aplicar validación JSON estricta.
 - La memoria heredada incluye normalización manual pendiente de ciclos previos.
 - Existe antecedente de salida no parseable desde Codex y GPT-Pro; aplicar validación JSON estricta.
+- Salida sin JSON parseable desde Auto (model-router) para Actividad 4
+- Salida sin JSON parseable desde Claude Foundry para Actividad 4
+- Existen antecedentes de salida no parseable; aplicar validación JSON estricta.
+- Supuesto: se conserva memoria institucional heredada por unión-dedupe sin recorte.
+- Existe antecedente de salidas no parseables; aplicar validación JSON estricta.
+- Existen antecedentes de salidas no parseables; aplicar validación JSON estricta.
 
 ## identity_rules
 
@@ -37,6 +44,10 @@
 - Tratar memoria heredada de fuentes provisionales como provisional hasta validación local.
 - Fuente provisional: Codex desde ingeniería en sistemas computacionales.
 - Fuente provisional: GPT-Pro desde Actividad 1.
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1.
+- Fuente provisional: Claude Foundry desde Actividad 1.
 
 ## structure_rules
 
@@ -60,6 +71,7 @@
 - Desarrollar análisis propio antes de la conclusión.
 - Cerrar con conclusión jurídica aplicable a la práctica profesional.
 - Supuesto: confirmar si la actividad 4 corresponde a interpretación jurídica antes de fijar fuentes específicas.
+- Adaptar la actividad 4 a los ejes de trabajo del programa analítico de la asignatura.
 
 ## quality_gates
 
@@ -108,6 +120,7 @@
 - Supuesto: filosofia-del-derecho-clean.bib se asocia a interpretación jurídica (Semana 7); verificar si aplica a actividad 4.
 - Supuesto: la entrada scjnIncapacidadResistencia2019 está truncada; no citar hasta completarla.
 - Supuesto: filosofia-del-derecho-clean.bib se asocia a interpretación jurídica, Semana 7; verificar si aplica a actividad 4.
+- Supuesto: filosofia-del-derecho-clean.bib se asocia a interpretación jurídica (Semana 7); verificar si aplica a la actividad 4.
 
 ## propagation_hints
 
@@ -122,6 +135,63 @@
 - Ciclo 1 necesita normalizacion manual si se reutiliza.
 - Ciclo 1 necesita normalización manual si se reutiliza.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 2 necesita normalización manual si se reutiliza.
+- Mantener bandera de normalización manual cuando existan salidas no estructuradas.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 3 necesita normalización manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalización manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Propagar arriba-y-laterales conservando unión-dedupe sin regresión.
+- Ciclo 5 necesita normalización manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalización manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalización manual si se reutiliza.
+- Ciclo 8 necesita normalización manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9: mantener validación JSON estricta por historial de errores de parseo.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10: mantener validación JSON estricta por historial de errores de parseo.
+- Ciclo 9 necesita normalización manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalización manual si se reutiliza.
+- Ciclo 11: mantener validación JSON estricta por historial de errores de parseo.
+- Ciclo 11 necesita normalización manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Ciclo 12: mantener validación JSON estricta por historial de errores de parseo.
+- Ciclo 12 necesita normalización manual si se reutiliza.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13: mantener validación JSON estricta por historial de errores de parseo.
+- Ciclo 13 necesita normalización manual si se reutiliza.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclo 14: mantener validación JSON estricta por historial de errores de parseo.
+- Ciclo 14 necesita normalización manual si se reutiliza.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclo 15: mantener validación JSON estricta por historial de errores de parseo.
+- Ciclo 15 necesita normalización manual si se reutiliza.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16: mantener validación JSON estricta por historial de errores de parseo.
+- Ciclo 16 necesita normalización manual si se reutiliza.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclo 17: mantener validación JSON estricta por historial de errores de parseo.
+- Ciclo 17 necesita normalización manual si se reutiliza.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclo 18: mantener validación JSON estricta por historial de errores de parseo.
+- Ciclo 18 necesita normalización manual si se reutiliza.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclo 19: mantener validación JSON estricta por historial de errores de parseo.
+- Ciclo 19 necesita normalización manual si se reutiliza.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclo 20: mantener validación JSON estricta por historial de errores de parseo.
+- Ciclo 20 necesita normalización manual si se reutiliza.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclo 21: mantener validación JSON estricta por historial de errores de parseo.
+- Ciclo 21 necesita normalización manual si se reutiliza.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclo 22: mantener validación JSON estricta por historial de errores de parseo.
+- Ciclo 22 necesita normalización manual si se reutiliza.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 

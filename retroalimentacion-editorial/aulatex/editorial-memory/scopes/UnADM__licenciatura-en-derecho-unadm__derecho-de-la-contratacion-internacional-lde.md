@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/derecho-de-la-contratacion-internacional-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -30,6 +31,30 @@
 - Se detectan nombres corruptos en README para reporte, referencias y BibTeX.
 - Se conserva trazabilidad heredada desde filosofia-del-derecho-lde/actividad-1.
 - Se hereda incidente institucional historico: salida no JSON parseable (Codex y GPT-Pro).
+- Se consolida memoria editorial de Derecho de la contratacion internacional en UnADM.
+- Se mantiene incidente historico: hubo salidas no JSON parseables en ciclos previos.
+- Se aplica compresion union-dedupe lossless sin regresion.
+- La asignatura pertenece a Licenciatura en Derecho, semestre 6, bloque 2, obligatoria, 8 creditos.
+- Supuesto: la incidencia JSON sigue pendiente hasta validacion explicita en este ciclo.
+- Supuesto: README y programa mantienen placeholders o nombres corruptos que deben normalizarse.
+- Salida sin JSON parseable desde Auto (model-router) para derecho-de-la-contratacion-internacional-lde
+- Salida sin JSON parseable desde Claude Foundry para derecho-de-la-contratacion-internacional-lde
+- Se mantiene incidente historico de salidas no JSON parseables en ciclos previos.
+- Se detectan nombres corruptos y placeholder de slug en README y programa analitico.
+- Salida sin JSON parseable desde Codex para derecho-de-la-contratacion-internacional-lde
+- Se consolida memoria editorial de la materia con compresion union-dedupe lossless.
+- Supuesto: la incidencia JSON sigue pendiente hasta validacion explicita del ciclo actual.
+- Se conserva trazabilidad de origen desde filosofia-del-derecho-lde/actividad-1.
+- Se mantiene compresion union-dedupe lossless sin regresion.
+- La asignatura pertenece a la Licenciatura en Derecho, semestre 6, bloque 2, obligatoria, 8 creditos.
+- Se conserva incidente historico: hubo salidas no JSON parseables en ciclos previos.
+- Se confirma evidencia local de nombres corruptos y placeholder de slug en README y programa analitico.
+- Se conserva incidente historico de salidas no JSON parseables en ciclos previos.
+- Supuesto: la incidencia JSON sigue pendiente hasta validacion explicita del ciclo 18.
+- Supuesto: la incidencia JSON sigue pendiente hasta validacion explicita del ciclo 19.
+- Supuesto: la incidencia JSON sigue pendiente hasta validacion explicita del ciclo 20.
+- Supuesto: la incidencia JSON sigue pendiente hasta validacion explicita del ciclo 21.
+- Supuesto: la incidencia JSON sigue pendiente hasta validacion explicita del ciclo 22.
 
 ## identity_rules
 
@@ -52,6 +77,17 @@
 - Registrar fuente provisional heredada: Codex desde ingenieria-en-sistemas-computacionales.
 - Registrar fuente provisional heredada: GPT-Pro desde Actividad 1.
 - Etiquetar herencias institucionales como provisionales hasta normalizacion completa.
+- Registrar fuentes heredadas institucionales como provisionales hasta normalizacion completa.
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Fuente provisional: Codex desde ingenieria-en-sistemas-computacionales.
+- Fuente provisional: GPT-Pro desde Actividad 1.
+- Fuente provisional: Auto (model-router) desde Actividad 1.
+- Fuente provisional: Claude Foundry desde Actividad 1.
+- Etiquetar fuentes heredadas institucionales como provisionales hasta normalizacion completa.
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Codex desde Actividad 1.
+- Conservar trazabilidad de origen heredado: filosofia-del-derecho-lde/actividad-1.
 
 ## structure_rules
 
@@ -72,6 +108,14 @@
 - Corregir el placeholder de slug BibTeX en README y programa antes de publicar.
 - Supuesto: nombres de archivos del README estan corruptos en reporte y referencias.
 - Supuesto: nombres de archivos del README estan corruptos en reporte y referencias (salto inicial y placeholder de slug).
+- Corregir placeholder de slug BibTeX en README y programa antes de publicar.
+- Usar derecho-de-la-contratacion-internacional.bib como archivo bibliografico canonico.
+- Supuesto: README mantiene nombres corruptos en reporte y referencias.
+- Supuesto: README mantiene nombres corruptos en reporte y referencias (salto inicial).
+- Corregir nombres corruptos de README en reporte y referencias antes de publicar.
+- Supuesto: README mantiene salto inicial en nombres de reporte y referencias.
+- Supuesto: README/programa mantienen placeholder de slug BibTeX sin resolver.
+- Supuesto: README y programa mantienen placeholder de slug BibTeX sin resolver.
 
 ## activity_rules
 
@@ -89,6 +133,9 @@
 - Incluir una conclusion juridica aplicable a la practica profesional.
 - Evitar citar fuentes heredadas no consultadas para la actividad destino.
 - Diferenciar con claridad resumen descriptivo y postura propia.
+- Incluir transferencia profesional y criterio juridico propio.
+- Incluir analisis propio con criterio juridico.
+- No citar fuentes heredadas no consultadas para la actividad destino.
 
 ## quality_gates
 
@@ -107,6 +154,37 @@
 - Validar que las fuentes web incluyan fecha de consulta.
 - Validar que las macros LaTeX institucionales no sean sustituidas por texto libre sin necesidad editorial.
 - Normalizar manualmente la herencia de ciclo 1 si se reutiliza.
+- Supuesto: normalizar manualmente ciclo 2 si se reutiliza arrastre de incidencias.
+- Supuesto: normalizar manualmente ciclo 3 si se reutiliza arrastre de incidencias.
+- Supuesto: normalizar manualmente ciclo 4 si se reutiliza arrastre de incidencias.
+- Supuesto: normalizar manualmente ciclo 5 si se reutiliza arrastre de incidencias.
+- Supuesto: normalizar manualmente ciclo 6 si se reutiliza arrastre de incidencias.
+- Normalizar manualmente herencias de ciclos 1 a 7 si se reutiliza arrastre de incidencias.
+- Supuesto: ciclo 8 requiere normalizacion manual si se reutiliza arrastre.
+- Normalizar manualmente herencias de ciclos 1 a 9 si se reutiliza arrastre de incidencias.
+- Supuesto: ciclo 10 requiere normalizacion manual si se reutiliza arrastre de incidencias.
+- Normalizar manualmente herencias de ciclos 1 a 11 si se reutiliza arrastre de incidencias.
+- Supuesto: ciclo 12 requiere normalizacion manual si se reutiliza arrastre de incidencias.
+- Normalizar manualmente herencias de ciclos 1 a 12 si se reutiliza arrastre de incidencias.
+- Supuesto: ciclo 13 requiere normalizacion manual si se reutiliza arrastre de incidencias.
+- Normalizar manualmente herencias de ciclos 1 a 13 si se reutiliza arrastre de incidencias.
+- Supuesto: ciclo 14 requiere normalizacion manual si se reutiliza arrastre de incidencias.
+- Normalizar manualmente herencias de ciclos 1 a 14 si se reutiliza arrastre de incidencias.
+- Supuesto: ciclo 15 requiere normalizacion manual si se reutiliza arrastre de incidencias.
+- Normalizar manualmente herencias de ciclos 1 a 15 si se reutiliza arrastre de incidencias.
+- Supuesto: ciclo 16 requiere normalizacion manual si se reutiliza arrastre de incidencias.
+- Normalizar manualmente herencias de ciclos 1 a 16 si se reutiliza arrastre de incidencias.
+- Supuesto: ciclo 17 requiere normalizacion manual si se reutiliza arrastre de incidencias.
+- Normalizar manualmente herencias de ciclos 1 a 17 si se reutiliza arrastre de incidencias.
+- Supuesto: ciclo 18 requiere normalizacion manual si se reutiliza arrastre de incidencias.
+- Normalizar manualmente herencias de ciclos 1 a 18 si se reutiliza arrastre de incidencias.
+- Supuesto: ciclo 19 requiere normalizacion manual si se reutiliza arrastre de incidencias.
+- Normalizar manualmente herencias de ciclos 1 a 20 si se reutiliza arrastre de incidencias.
+- Supuesto: ciclo 20 requiere normalizacion manual si se reutiliza arrastre de incidencias.
+- Normalizar manualmente herencias de ciclos 1 a 21 si se reutiliza arrastre de incidencias.
+- Supuesto: ciclo 21 requiere normalizacion manual si se reutiliza arrastre de incidencias.
+- Normalizar manualmente herencias de ciclos 1 a 22 si se reutiliza arrastre de incidencias.
+- Supuesto: ciclo 22 requiere normalizacion manual si se reutiliza arrastre de incidencias.
 
 ## latex_rules
 
@@ -122,6 +200,9 @@
 - Mantener plantilla base article en espanol.
 - Mantener formato letterpaper.
 - Mantener \universitydepartment con Derecho de la contratacion internacional cuando aplique.
+- Mantener formato letterpaper y opcion oneside cuando aplique.
+- Conservar opcion oneside cuando aplique.
+- Mantener clase article en espanol con formato letterpaper.
 
 ## bibliography_rules
 
@@ -140,6 +221,7 @@
 - Mantener la malla curricular local como respaldo de ubicacion curricular.
 - Conservar entrada local unadmMallaDerecho2024 como fuente curricular.
 - Conservar entrada local unadmSitioWeb solo si se usa como fuente institucional consultada.
+- Usar derecho-de-la-contratacion-internacional.bib como archivo canonico.
 
 ## propagation_hints
 
@@ -160,6 +242,42 @@
 - Propagar esta consolidacion arriba y laterales por tratarse de ciclo 2.
 - Normalizar manualmente la herencia de ciclo 1 si se reutiliza.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Propagar solo tras validacion JSON parseable.
+- Supuesto: ciclo 2 tambien requiere verificacion manual por arrastre de incidencias.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Etiquetar herencias institucionales como provisionales hasta normalizacion completa.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- No sobrescribir reglas locales de la materia con reglas genericas.
+- Ciclos 1 a 11 requieren normalizacion manual si se reutilizan.
+- Ciclos 1 a 8 requieren normalizacion manual si se reutilizan.
+- Ciclos 1 a 10 requieren normalizacion manual si se reutilizan.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 13 requieren normalizacion manual si se reutilizan.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 14 requieren normalizacion manual si se reutilizan.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 15 requieren normalizacion manual si se reutilizan.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 17 requieren normalizacion manual si se reutilizan.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 18 requieren normalizacion manual si se reutilizan.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 19 requieren normalizacion manual si se reutilizan.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 20 requieren normalizacion manual si se reutilizan.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 21 requieren normalizacion manual si se reutilizan.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 22 requieren normalizacion manual si se reutilizan.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -179,3 +297,11 @@
 - Falta confirmar checklist minimo por tipo de actividad: reporte, presentacion y visual.
 - Confirmar si el README debe corregir entradas corruptas de reporte, referencias y BibTeX.
 - Supuesto: debe corregirse el placeholder de slug BibTeX en README y programa.
+- Confirmar correccion definitiva de entradas corruptas en README de reporte y referencias.
+- Confirmar reemplazo definitivo del placeholder de slug BibTeX en README y programa.
+- Confirmar si la incidencia de JSON no parseable quedo resuelta en este ciclo.
+- Confirmar si la incidencia de JSON no parseable quedo resuelta en el ciclo 18.
+- Confirmar si la incidencia de JSON no parseable quedo resuelta en el ciclo 19.
+- Confirmar si la incidencia de JSON no parseable quedo resuelta en el ciclo 20.
+- Confirmar si la incidencia de JSON no parseable quedo resuelta en el ciclo 21.
+- Confirmar si la incidencia de JSON no parseable quedo resuelta en el ciclo 22.

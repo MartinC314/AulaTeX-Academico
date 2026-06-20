@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -34,6 +35,26 @@
 - Salida sin JSON parseable desde GPT-Pro para historia-del-derecho-en-mexico-lde.
 - Se conserva alerta historica: hubo salidas no JSON parseables en ciclos previos [supuesto: motor variable].
 - Plantilla declara coursecode local LDE-S1B1 y universidad UnADM en Roma Norte, Ciudad de Mexico.
+- Salida sin JSON parseable desde Auto (model-router) para historia-del-derecho-en-mexico-lde
+- Salida sin JSON parseable desde Claude Foundry para historia-del-derecho-en-mexico-lde
+- Origen declarado: Filosofia del Derecho actividad 1, sin contenido adicional verificable transferible en este ciclo.
+- README y programa muestran placeholders de Slug y errores de render de nombres de archivo [supuesto].
+- Materia destino con README, programa analitico, plantilla LaTeX y .bib local verificables.
+- Destino consolidado: Historia del Derecho en Mexico con README, programa analitico, plantilla LaTeX y .bib local verificables.
+- Origen declarado: Filosofia del Derecho actividad 1; sin reglas nuevas verificables transferibles en este ciclo.
+- Estructura editorial local definida por cinco ejes y pauta de integridad academica.
+- Se detectan placeholders de Slug y posibles errores de render en README/programa [supuesto].
+- Origen declarado: Filosofia del Derecho actividad 1; sin contenido adicional verificable transferible en este ciclo.
+- Coursecode local observado: LDE-S1B1 [supuesto: codigo no oficial].
+- README y programa contienen placeholders de Slug y posibles errores de render en nombres de archivo [supuesto].
+- Plantilla declara alumno Martin Jonathan de la Cruz, matricula ES2611202040 y figura docente por definir.
+- Se conserva alerta historica de salidas no JSON parseables en ciclos previos [supuesto: motor variable].
+- Ubicacion curricular local verificada: semestre 1, bloque 1, obligatoria, 8 creditos.
+- Destino consolidado con README, programa analitico, plantilla LaTeX y .bib local verificables.
+- Se mantiene alerta historica de salidas no JSON parseables en ciclos previos [supuesto: motor variable].
+- Origen declarado: Filosofia del Derecho actividad 1, sin reglas nuevas verificables transferibles en este ciclo.
+- Ubicacion curricular verificada: semestre 1, bloque 1, obligatoria, 8 creditos.
+- README y programa contienen placeholders de Slug y errores de render en nombres de archivo [supuesto].
 
 ## identity_rules
 
@@ -57,6 +78,13 @@
 - Mantener figura docente como Nombre por definir hasta confirmacion oficial.
 - Conservar antecedentes provisionales de fuente operativa: Codex y GPT-Pro [supuesto].
 - Usar nombre oficial local de materia: Historia del Derecho en Mexico.
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Conservar antecedentes provisionales de fuente operativa: Codex, GPT-Pro, Auto (model-router) y Claude Foundry [supuesto].
+- Mantener coursecode local LDE-S1B1 salvo confirmacion oficial contraria [supuesto].
+- Usar nombre oficial/local de materia: Historia del Derecho en Mexico.
+- Conservar fuente curricular local: UnADM/assets-unadm/malla-curricular-derecho-unadm.pdf.
 
 ## structure_rules
 
@@ -71,6 +99,7 @@
 - No mezclar contenido de Filosofia del Derecho sin evidencia local verificable.
 - Conservar subcarpeta referencias-historia-del-derecho-en-mexico para apoyo documental.
 - Corregir placeholders de Slug en README y programa antes de automatizar.
+- Alinear cada entrega a cinco ejes: problema, conceptos/fuentes, producto, analisis propio, conclusion transferible.
 
 ## activity_rules
 
@@ -84,6 +113,7 @@
 - Cerrar con conclusion juridica aplicable a la practica profesional.
 - Adaptar el formato al producto solicitado: reporte, presentacion o visual.
 - Mantener integridad academica y citas verificables en cada actividad.
+- Adaptar formato al producto solicitado: reporte, presentacion o visual.
 
 ## quality_gates
 
@@ -100,6 +130,7 @@
 - Revisar render de nombres de archivo en README antes de automatizar.
 - Revisar placeholders de Slug antes de compilar o citar.
 - No aplicar contenido heredado si no es verificable en el destino.
+- Normalizar manualmente salidas de ciclos con fallo parseable antes de reutilizacion automatica.
 
 ## latex_rules
 
@@ -151,6 +182,35 @@
 - No propagar datos curriculares especificos de esta materia a laterales.
 - Conservar alerta de ciclo 1 si se reutiliza memoria heredada.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Propagar a niveles superior y lateral solo reglas editoriales transversales verificables.
+- Conservar alerta de normalizacion manual para ciclos heredados con fallos parseables [supuesto].
+- Ciclo 12: mantener validacion de parseo y normalizacion manual si falla [supuesto].
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclo 14: mantener validacion de parseo y normalizacion manual si falla [supuesto].
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclo 15: mantener validacion de parseo y normalizacion manual si falla [supuesto].
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclo 19: mantener validacion de parseo y normalizacion manual si falla [supuesto].
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclo 20: mantener validacion de parseo y normalizacion manual si falla [supuesto].
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclo 21: mantener validacion de parseo y normalizacion manual si falla [supuesto].
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclo 22: mantener validacion de parseo y normalizacion manual si falla [supuesto].
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -169,3 +229,9 @@
 - Aportar contenido verificable de Filosofia del Derecho actividad 1 si se requiere fusion tematica.
 - Verificar y corregir posibles errores de render en README: eporte y eferencias [supuesto].
 - Corregir entrada README con placeholder $(@{Name=...}.Slug).bib.
+- Corregir entrada README y programa con placeholder $(@{Name=...}.Slug).bib.
+- Aportar memoria verificable de Filosofia del Derecho actividad 1 si se requiere fusion tematica.
+- Corregir placeholders de Slug en README y programa.
+- Corregir placeholder de Slug en README y programa: $(@{Name=...}.Slug).bib.
+- Corregir placeholders de Slug en README y programa, incluido $(@{Name=...}.Slug).bib.
+- Verificar y corregir errores de render en README: eporte y eferencias [supuesto].

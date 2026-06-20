@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/instrumentos-y-mecanismos-de-proteccion-de-los-derechos-humanos-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -20,6 +21,10 @@
 - Se exige integridad académica, citas verificables y conclusión jurídica propia.
 - Existe antecedente UnADM de salida no JSON parseable desde Codex; mantener normalización en ciclo 1.
 - La compresión editorial debe ser por unión y deduplicación sin pérdida.
+- Salida sin JSON parseable desde Codex para instrumentos-y-mecanismos-de-proteccion-de-los-derechos-humanos-lde
+- Salida sin JSON parseable desde Auto (model-router) para instrumentos-y-mecanismos-de-proteccion-de-los-derechos-humanos-lde
+- Existe antecedente de salida no JSON parseable; mantener control de normalización en ciclo 1.
+- Detectados nombres/rutas con caracteres anómalos en README que requieren normalización.
 
 ## identity_rules
 
@@ -31,6 +36,11 @@
 - Enfocar la asignatura en instrumentos y mecanismos de protección de los derechos humanos.
 - Usar tono académico-jurídico claro y profesional.
 - Registrar fuente provisional: Codex desde ingeniería-en-sistemas-computacionales. [supuesto]
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Codex desde ingeniería-en-sistemas-computacionales. [supuesto]
+- Fuente provisional: Codex desde Actividad 1. [supuesto]
+- Fuente provisional: Auto (model-router) desde Actividad 1. [supuesto]
 
 ## structure_rules
 
@@ -70,6 +80,7 @@
 - Aplicar deduplicación sin recorte semántico.
 - No incorporar fuentes no verificadas.
 - Validar rutas y nombres reales de archivos antes de compilar o referenciar.
+- Revisar respuesta no estructurada antes de aplicar aguas abajo.
 
 ## latex_rules
 
@@ -107,6 +118,8 @@
 - Mantener alerta de normalización en ciclo 1.
 - Propagar la regla de JSON parseable a memorias UnADM relacionadas.
 - Propagar la revisión de nombres anómalos solo donde existan archivos afectados.
+- Ciclo 1 necesita normalizacion manual si se reutiliza.
+- Ciclo 1 necesita normalización manual si se reutiliza.
 
 ## open_questions
 
@@ -120,3 +133,5 @@
 - Validar si existe guía oficial de citación jurídica preferente para esta asignatura: APA, Chicago jurídico u otra.
 - Confirmar la planeación semanal específica antes de crear actividades.
 - Verificar si existen fuentes oficiales adicionales para instrumentos y mecanismos de protección de derechos humanos.
+- Confirmar si la regla de fuente provisional desde ingeniería-en-sistemas-computacionales sigue vigente para Derecho. [supuesto]
+- Confirmar el nombre correcto de archivos con prefijos truncados en README (ej. 'eporte', 'eferencias').

@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/electiva-semestre-7-bloque-2-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -19,6 +20,24 @@
 - Memoria actual reporta salida sin JSON parseable desde GPT-Pro para electiva-semestre-7-bloque-2-lde.
 - Ciclo 2 consolida reglas para propagacion arriba y laterales.
 - Memoria reporta salida sin JSON parseable desde GPT-Pro para electiva-semestre-7-bloque-2-lde.
+- Salida sin JSON parseable desde Codex para electiva-semestre-7-bloque-2-lde
+- Salida sin JSON parseable desde Auto (model-router) para electiva-semestre-7-bloque-2-lde
+- Salida sin JSON parseable desde Claude Foundry para electiva-semestre-7-bloque-2-lde
+- Memoria de modelos previos reporta salidas sin JSON parseable y requiere normalizacion manual.
+- Ciclo 11 mantiene consolidacion recursiva con deduplicacion lossless.
+- Ciclo 12 mantiene consolidacion recursiva con deduplicacion lossless.
+- Memoria heredada institucional mantiene alerta por salidas no estructuradas.
+- Ciclo 13 mantiene consolidacion recursiva con deduplicacion lossless.
+- Ciclo 14 mantiene consolidacion recursiva con deduplicacion lossless.
+- Ciclo 15 mantiene consolidacion recursiva con deduplicacion lossless.
+- Ciclo 16 mantiene consolidacion recursiva con deduplicacion lossless.
+- Ciclo 17 mantiene consolidacion recursiva con deduplicacion lossless.
+- Ciclo 18 mantiene consolidacion recursiva con deduplicacion lossless.
+- Memoria de modelos previos reporta salidas no parseables y requiere normalizacion manual.
+- Ciclo 19 mantiene consolidacion recursiva con deduplicacion lossless.
+- Ciclo 20 mantiene consolidacion recursiva con deduplicacion lossless.
+- Ciclo 21 mantiene consolidacion recursiva con deduplicacion lossless.
+- Ciclo 22 mantiene consolidacion recursiva con deduplicacion lossless.
 
 ## identity_rules
 
@@ -32,6 +51,14 @@
 - Fuente provisional: Codex desde ingenieria-en-sistemas-computacionales.
 - Fuente provisional: GPT-Pro desde Actividad 1.
 - Tratar la fuente provisional GPT-Pro desde Actividad 1 solo como alerta si no hay JSON parseable.
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Tratar fuentes provisionales de modelos solo como alerta si no hay JSON parseable.
+- Fuente provisional: Codex desde Actividad 1.
+- Fuente provisional: Auto (model-router) desde Actividad 1.
+- Fuente provisional: Claude Foundry desde Actividad 1.
+- Supuesto: fuente provisional principal del origen es actividad-1 sin estructura parseable.
 
 ## structure_rules
 
@@ -63,6 +90,11 @@
 - Comprobar que las rutas citadas existan en el repositorio local.
 - Revisar respuesta no estructurada antes de aplicar aguas abajo.
 - Validar que el nombre oficial de la electiva coincida con la malla curricular antes de publicarlo.
+- Normalizar manualmente ciclo 1 cuando se reutilice memoria heredada.
+- Corregir placeholders y nombres rotos en README antes de usarlos como plantilla.
+- Normalizar manualmente ciclo 1 si se reutiliza memoria heredada.
+- Normalizar manualmente ciclo 1 a ciclo 12 si se reutiliza memoria heredada no parseable.
+- Normalizar manualmente ciclos heredados no parseables si se reutilizan.
 
 ## latex_rules
 
@@ -77,6 +109,7 @@
 - Usar opcion oneside en documentclass del reporte base.
 - Mantener macro universitydepartmentimage en departamentos/UnADM con height 1.57cm.
 - Mantener Tipo/Creditos como Electiva solo hasta confirmar creditos oficiales.
+- Usar documentclass article con spanish, letterpaper y oneside salvo instruccion distinta.
 
 ## bibliography_rules
 
@@ -89,6 +122,7 @@
 - Usar archivo local de malla curricular solo si permanece disponible en assets-unadm.
 - Conservar claves BibTeX unadmSitioWeb y unadmMallaDerecho2024 como entradas base.
 - No trasladar bibliografia de Filosofia del Derecho sin verificacion tematica y documental.
+- Conservar entradas locales unadmSitioWeb y unadmMallaDerecho2024 como base.
 
 ## propagation_hints
 
@@ -102,6 +136,39 @@
 - Conservar advertencia de que ciclo 1 necesita normalizacion manual si se reutiliza.
 - En propagacion lateral, separar reglas institucionales de reglas tematicas de asignatura.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Mantener bandera de normalizacion manual cuando el origen no tenga estructura parseable.
+- Conservar advertencia: ciclo 1 a ciclo 11 necesitan normalizacion manual si se reutilizan.
+- Conservar advertencia: ciclo 1 a ciclo 12 necesitan normalizacion manual si se reutilizan.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Conservar advertencia: ciclos 1 a 12 necesitan normalizacion manual si se reutilizan.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Conservar advertencia: ciclos 1 a 13 necesitan normalizacion manual si se reutilizan.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Conservar advertencia: ciclos 1 a 14 necesitan normalizacion manual si se reutilizan.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Conservar advertencia: ciclos 1 a 15 necesitan normalizacion manual si se reutilizan.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Conservar advertencia: ciclos 1 a 16 necesitan normalizacion manual si se reutilizan.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Conservar advertencia: ciclos 1 a 17 necesitan normalizacion manual si se reutilizan.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Conservar advertencia: ciclos 1 a 18 necesitan normalizacion manual si se reutilizan.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Conservar advertencia: ciclos 1 a 20 necesitan normalizacion manual si se reutilizan.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Conservar advertencia: ciclos 1 a 21 necesitan normalizacion manual si se reutilizan.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Conservar advertencia: ciclos 1 a 22 necesitan normalizacion manual si se reutilizan.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -112,3 +179,6 @@
 - Corregir en README los nombres de reporte, referencias y archivo .bib generados con placeholder.
 - Confirmar si la entrada del sitio institucional UnADM debe conservar year 2026 o usar fecha de consulta.
 - Confirmar si la actividad de Filosofia del Derecho aporta reglas reutilizables para esta electiva.
+- Corregir en README y programa analitico los nombres con placeholder del archivo .bib.
+- Confirmar si la entrada del sitio institucional UnADM debe conservar year 2026 o usar solo fecha de consulta.
+- Corregir en programa analitico el nombre de archivo .bib con placeholder.

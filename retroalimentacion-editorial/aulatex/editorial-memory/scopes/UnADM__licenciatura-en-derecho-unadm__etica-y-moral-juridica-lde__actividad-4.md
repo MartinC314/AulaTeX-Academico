@@ -1,0 +1,166 @@
+# Memoria editorial AulaTeX
+
+- Alcance: actividad
+- Etiqueta: Actividad 4
+- Ruta: UnADM/licenciatura-en-derecho-unadm/etica-y-moral-juridica-lde
+- Compresion: union-dedupe
+- Sin regresion: si
+- Secciones fijadas: ninguna
+
+## summary
+
+- Salida sin JSON parseable desde Codex para Actividad 4
+- Salida sin JSON parseable desde Auto (model-router) para Actividad 4
+- Salida sin JSON parseable desde Claude Foundry para Actividad 4
+- Salida sin JSON parseable desde GPT-Pro para Actividad 4
+- Se conserva memoria de fallas de parseo JSON en Actividad 4.
+- Se mantiene compresion por union-dedupe sin perdida.
+- No hay reglas editoriales transferidas desde origen por falta de JSON valido [supuesto].
+- Se agregan reglas minimas verificables desde el contexto local de la asignatura.
+- Se mantienen reglas minimas verificables del contexto local de la asignatura.
+- Se confirma encuadre institucional: UnADM Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Se conserva historial de fallas de parseo JSON en Actividad 4.
+- Se mantiene compresion union-dedupe sin perdida.
+- No hay reglas transferibles desde origen por falta de JSON valido [supuesto].
+- Se mantienen reglas minimas verificables del contexto local.
+- No hay reglas transferibles nuevas desde origen por falta de JSON valido [supuesto].
+- Se preservan reglas minimas verificables del contexto local.
+- Se confirma la carpeta de asignatura como punto de entrada canonico.
+- Se confirma estructura editorial de productos: reporte, presentacion y archivo BibTeX de la materia.
+- Se detecta posible truncamiento en .bib local y se mantiene como riesgo de calidad [supuesto].
+- Se preservan reglas verificables del contexto local de la asignatura.
+- Se mantiene riesgo de integridad en .bib por entrada truncada detectada [supuesto].
+- Se detectan duplicados bibliograficos equivalentes en el .bib local y se mantiene como tarea de depuracion.
+- Se preserva historial de fallas de parseo JSON en Actividad 4.
+- Se confirma estructura editorial de productos: reporte, presentacion y archivo BibTeX.
+- Se mantiene deteccion de duplicados bibliograficos equivalentes en el .bib local.
+- Se mantienen duplicados bibliograficos equivalentes detectados como tarea de depuracion.
+- Se mantiene compresion union-dedupe lossless.
+- No hay reglas nuevas transferibles desde origen por falta de JSON valido [supuesto].
+- Se confirma carpeta de asignatura como punto de entrada canonico.
+- Se confirma estructura editorial: reporte, presentacion y archivo BibTeX.
+- Se preservan reglas minimas verificables del contexto local de la asignatura.
+- Se confirma encuadre institucional UnADM Derecho: semestre 1, bloque 2, obligatoria, 8 creditos.
+- Se mantiene riesgo de integridad del .bib por entrada truncada detectada [supuesto].
+- Se mantiene deteccion de duplicados bibliograficos equivalentes como tarea de depuracion.
+- No hay transferencia util desde origen por falta de JSON valido [supuesto].
+
+## identity_rules
+
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Fuente provisional: GPT-Pro desde Actividad 1
+- Mantener identidad institucional UnADM en cada entrega.
+- Alinear contenido con Licenciatura en Derecho, semestre 1, bloque 2.
+- Conservar trazabilidad de fuente y ciclo en cada propagacion.
+- Etiquetar como provisional toda regla derivada de salidas no parseables.
+- Usar la carpeta de la asignatura como punto de entrada canonico.
+
+## structure_rules
+
+- Usar estructura base: problema, conceptos/fuentes, analisis propio, conclusion juridica.
+- Incluir cierre argumentativo transferible a la practica juridica.
+- Asegurar coherencia entre actividad, reporte y presentacion cuando coexistan.
+- Evitar secciones vacias en memoria persistente.
+- Alinear estructura con ejes del programa analitico de la materia.
+- Integrar el producto solicitado por la planeacion semanal dentro de la estructura base.
+
+## activity_rules
+
+- Adaptar la Actividad 4 al encuadre de Etica y Moral juridica.
+- Explicar diferencia operativa entre etica, moral y norma juridica cuando aplique [supuesto].
+- Sostener postura propia con fundamento academico verificable.
+- Vincular el producto con un problema juridico o social concreto.
+- Ajustar el producto al formato solicitado por la planeacion semanal [supuesto].
+- Adaptar Actividad 4 al encuadre de Etica y Moral juridica.
+
+## quality_gates
+
+- Revisar respuesta no estructurada antes de aplicar aguas abajo.
+- Rechazar salidas sin JSON parseable antes de fusionar memoria.
+- Validar deduplicacion exacta para evitar perdida de reglas utiles.
+- Marcar supuestos explicitamente cuando falten datos del origen.
+- Verificar que toda afirmacion academica tenga respaldo en fuente citada.
+- Verificar integridad sintactica del archivo .bib antes de citar [supuesto].
+- Registrar y corregir entradas BibTeX truncadas antes de compilacion final [supuesto].
+
+## latex_rules
+
+- Redactar entregables en LaTeX con estructura academica clara.
+- Mantener compatibilidad con archivos canonicos de la materia.
+- Usar citas y referencias con claves BibTeX existentes.
+- Evitar comandos no estandar que rompan compilacion [supuesto].
+- Sincronizar contenido entre reporte y presentacion cuando ambos existan.
+
+## bibliography_rules
+
+- Usar la bibliografia local de la asignatura como base inicial.
+- No inventar fuentes ni metadatos bibliograficos.
+- Depurar duplicados de entradas BibTeX equivalentes cuando se edite.
+- Agregar nuevas fuentes especificas de actividad en etica-y-moral-juridica.bib.
+- Preferir una clave canonica por obra y mantener alias solo si hay dependencia tecnica [supuesto].
+- Marcar entradas BibTeX truncadas o incompletas para correccion antes de citar [supuesto].
+- Agregar fuentes especificas de actividad en etica-y-moral-juridica.bib.
+
+## propagation_hints
+
+- Ciclo 1 necesita normalizacion manual si se reutiliza.
+- Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Mantener nota de normalizacion manual mientras persistan salidas no parseables.
+- Propagar recursivamente solo reglas validadas por JSON correcto.
+- Conservar historial de ciclos para auditoria editorial.
+- Priorizar reglas del contexto local cuando el origen sea incompleto [supuesto].
+- Aplicar union-dedupe lossless en cada ciclo.
+- Ciclo 8 requiere normalizacion manual si se reutiliza.
+- Ciclo 10 requiere normalizacion manual si se reutiliza.
+- Ciclo 1 requiere normalizacion manual si se reutiliza.
+- Ciclo 2 requiere normalizacion manual si se reutiliza.
+- Ciclo 3 requiere normalizacion manual si se reutiliza.
+- Ciclo 4 requiere normalizacion manual si se reutiliza.
+- Ciclo 5 requiere normalizacion manual si se reutiliza.
+- Ciclo 6 requiere normalizacion manual si se reutiliza.
+- Ciclo 7 requiere normalizacion manual si se reutiliza.
+- Ciclo 9 requiere normalizacion manual si se reutiliza.
+- Ciclo 11 requiere normalizacion manual si se reutiliza.
+- Ciclo 12 requiere normalizacion manual si se reutiliza [supuesto].
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13 requiere normalizacion manual si se reutiliza [supuesto].
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclo 14 requiere normalizacion manual si se reutiliza [supuesto].
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclo 15 requiere normalizacion manual si se reutiliza [supuesto].
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16 requiere normalizacion manual si se reutiliza [supuesto].
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclo 17 requiere normalizacion manual si se reutiliza [supuesto].
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclo 18 requiere normalizacion manual si se reutiliza [supuesto].
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclo 19 requiere normalizacion manual si se reutiliza [supuesto].
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclo 20 requiere normalizacion manual si se reutiliza [supuesto].
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclo 1 a 20 requiere normalizacion manual si se reutiliza.
+- Ciclo 21 requiere normalizacion manual si se reutiliza [supuesto].
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclo 1 a 22 requiere normalizacion manual si se reutiliza [supuesto].
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
+
+## open_questions
+
+- Falta JSON valido del origen Actividad 1 para transferencia completa.
+- Se requiere confirmar rubrica exacta de la Actividad 4 para afinar reglas.
+- Se requiere definir politica formal de deduplicacion BibTeX (clave canonica).
+- Se debe confirmar plantilla LaTeX oficial de actividad en esta materia.
+- Se debe completar y validar el archivo .bib local por posible truncamiento [supuesto].
+- Se requiere definir politica formal de deduplicacion BibTeX por clave canonica.

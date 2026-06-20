@@ -1,0 +1,50 @@
+{
+  "run_id": "20260620-090520",
+  "node_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+  "node_level": "materia",
+  "node_name": "Derecho a la Seguridad Social",
+  "node_label": "Derecho a la Seguridad Social",
+  "parent_scope_key": "UnADM/licenciatura-en-derecho-unadm",
+  "activity_number": 0,
+  "operation_mode": "reforzar",
+  "destination_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+  "ingestion": {
+    "has_text": false,
+    "has_document": false,
+    "document_path": ""
+  },
+  "engines": [
+    "Auto (model-router)"
+  ],
+  "iterations": 1,
+  "cancelled": false,
+  "ok": true,
+  "node_dir": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+  "artifacts": {
+    "memory": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/memoria-fundacional-derecho-a-la-seguridad-social.json",
+    "plan": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/plan.md",
+    "maqueta": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/maqueta-derecho-a-la-seguridad-social.tex"
+  },
+  "future_agent_contract": {
+    "status": "ready-for-agent",
+    "allowed_actions": [
+      "investigar",
+      "redactar",
+      "evaluar",
+      "compilar"
+    ],
+    "entrypoint": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/maqueta-derecho-a-la-seguridad-social.tex",
+    "notes": "El Agente debe consumir esta maqueta sin recrear el nodo ni reconstruir memoria fundacional."
+  },
+  "cycle_logs": [
+    {
+      "cycle": 1,
+      "engine": "Auto (model-router)",
+      "ok": true,
+      "elapsed_ms": 27934,
+      "chars": 0,
+      "memory_items": 170,
+      "sections_created": 27
+    }
+  ]
+}

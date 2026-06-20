@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/derechos-de-autor-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -21,6 +22,46 @@
 - Marcar herencia GPT-Pro como provisional hasta validacion local.
 - Marcar herencia previa (Codex, GPT-Pro) como provisional hasta validacion local.
 - Origen ciclo 2: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Salida sin JSON parseable desde Codex para derechos-de-autor-lde
+- Salida sin JSON parseable desde Auto (model-router) para derechos-de-autor-lde
+- Salida sin JSON parseable desde Claude Foundry para derechos-de-autor-lde
+- Marcar herencia previa (Codex, GPT-Pro, Auto, Claude) como provisional hasta validacion local.
+- Origen ciclo 1: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Marcar herencia previa no parseable como provisional hasta validacion local.
+- Origen ciclo 3: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Supuesto: la herencia de actividad origen sigue sin JSON parseable verificable.
+- Marcar herencia no parseable como provisional hasta validacion local.
+- Supuesto: la herencia desde filosofia-del-derecho-lde/actividad-1 sigue sin JSON parseable verificable.
+- Salida sin JSON parseable desde Codex para derechos-de-autor-lde.
+- Salida sin JSON parseable desde GPT-Pro para derechos-de-autor-lde.
+- Salida sin JSON parseable desde Auto (model-router) para derechos-de-autor-lde.
+- Salida sin JSON parseable desde Claude Foundry para derechos-de-autor-lde.
+- Origen ciclo 4: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Origen ciclo 5: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Origen ciclo 6: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Origen ciclo 7: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Conservar README como entrada canonica de la asignatura.
+- Origen ciclo 8: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Registrar incidencias de salida no JSON parseable de fuentes heredadas previas.
+- Origen ciclo 9: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Registrar incidencias de herencia no JSON parseable y tratarlas como provisionales hasta validacion local.
+- Origen ciclo 10: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Origen ciclo 11: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Registrar incidencias de herencia no JSON parseable como provisionales hasta validacion local.
+- Origen ciclo 12: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Origen ciclo 13: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Origen ciclo 14: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Origen ciclo 15: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Registrar herencia no JSON parseable como provisional hasta validacion local.
+- Origen ciclo 16: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Origen ciclo 17: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Origen ciclo 18: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Marcar herencia no JSON parseable como provisional hasta validacion local.
+- Registrar incidencias de herencia no JSON parseable de ciclos previos.
+- Origen ciclo 19: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Origen ciclo 20: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Origen ciclo 21: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Origen ciclo 22: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
 
 ## identity_rules
 
@@ -37,6 +78,12 @@
 - Fuente provisional: Codex desde ingenieria-en-sistemas-computacionales.
 - Fuente provisional: GPT-Pro desde Actividad 1.
 - Fuente provisional: filosofia-del-derecho-lde/actividad-1 (sin JSON parseable).
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1.
+- Fuente provisional: Claude Foundry desde Actividad 1.
+- Marcar fuentes heredadas no parseables como provisionales hasta validacion local.
 
 ## structure_rules
 
@@ -55,6 +102,9 @@
 - Sustituir expresiones literales $(@{...}.Slug) por derechos-de-autor.bib en README y programa analitico.
 - Sustituir $(@{...}.Slug) por derechos-de-autor.bib.
 - Sustituir expresiones literales $(@{...}.Slug) por derechos-de-autor.bib.
+- Sustituir marcadores literales $(@{...}.Slug) por derechos-de-autor.bib.
+- Sustituir marcadores $(@{...}.Slug) por derechos-de-autor.bib.
+- Sustituir marcadores literales $(@{...}.Slug) por derechos-de-autor.bib en README y programa analitico.
 
 ## activity_rules
 
@@ -86,6 +136,8 @@
 - No publicar con nombres corruptos de archivo.
 - Validar localmente contenido heredado de ciclo 1 antes de reutilizarlo.
 - Validar localmente contenido heredado de ciclos previos antes de reutilizarlo.
+- Auditar README por marcadores de plantilla y caracteres extranos.
+- Mantener auditoria manual para contenido heredado de ciclos previos si se reutiliza.
 
 ## latex_rules
 
@@ -103,6 +155,7 @@
 - Mover paquetes cargados despues de \input{template} al preambulo correcto si la plantilla lo exige.
 - Corregir \usepackage final sin argumento detectado en reporte.
 - Conservar tabla de autor con alumno, matricula y datos academicos completos en documentos locales.
+- Corregir \usepackage truncado detectado al final del preambulo en reporte.
 
 ## bibliography_rules
 
@@ -137,6 +190,27 @@
 - Propagar advertencia sobre herencia Codex y GPT-Pro solo como provisional.
 - Mantener auditoria manual para contenido heredado de ciclos previos si se reutiliza.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Propagar advertencias de herencia provisional solo como provisionales.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -157,3 +231,7 @@
 - Confirmar si la fuente heredada Codex sigue vigente o debe retirarse tras validacion local.
 - Revisar y corregir errores de nombres de archivo en README.
 - Confirmar si la fuente heredada GPT-Pro desde Actividad 1 sigue vigente o debe retirarse tras validacion local.
+- Confirmar si la herencia provisional (Codex, GPT-Pro, Auto, Claude) sigue vigente o debe retirarse tras validacion local.
+- Validar si la ubicacion Roma Norte, Ciudad de Mexico debe mantenerse fija.
+- Confirmar si la herencia provisional no parseable sigue vigente o debe retirarse tras validacion local.
+- Confirmar si la herencia provisional no parseable (Codex, GPT-Pro, Auto, Claude) sigue vigente o debe retirarse tras validacion local.

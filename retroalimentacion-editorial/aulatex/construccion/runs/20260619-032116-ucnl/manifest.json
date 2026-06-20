@@ -1,0 +1,80 @@
+{
+  "run_id": "20260619-032116",
+  "node_key": "UCNL",
+  "node_level": "institucion",
+  "node_name": "UCNL",
+  "node_label": "UCNL",
+  "parent_scope_key": "interinstitucional",
+  "activity_number": 0,
+  "operation_mode": "reforzar",
+  "destination_path": "UCNL",
+  "ingestion": {
+    "has_text": false,
+    "has_document": true,
+    "document_path": "D:\\Descargas\\Modelo Educativo UC.pdf"
+  },
+  "engines": [
+    "Codex",
+    "Auto (model-router)",
+    "Claude Foundry",
+    "GPT-Pro"
+  ],
+  "iterations": 1,
+  "cancelled": false,
+  "ok": true,
+  "node_dir": "UCNL",
+  "artifacts": {
+    "memory": "UCNL/memoria-fundacional.json",
+    "plan": "UCNL/plan.md",
+    "maqueta": "UCNL/maqueta.tex"
+  },
+  "future_agent_contract": {
+    "status": "ready-for-agent",
+    "allowed_actions": [
+      "investigar",
+      "redactar",
+      "evaluar",
+      "compilar"
+    ],
+    "entrypoint": "UCNL/maqueta.tex",
+    "notes": "El Agente debe consumir esta maqueta sin recrear el nodo ni reconstruir memoria fundacional."
+  },
+  "cycle_logs": [
+    {
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "elapsed_ms": 18599,
+      "chars": 7625,
+      "memory_items": 26,
+      "sections_created": 27
+    },
+    {
+      "cycle": 1,
+      "engine": "Auto (model-router)",
+      "ok": true,
+      "elapsed_ms": 13529,
+      "chars": 5271,
+      "memory_items": 51,
+      "sections_created": 27
+    },
+    {
+      "cycle": 1,
+      "engine": "Claude Foundry",
+      "ok": true,
+      "elapsed_ms": 22283,
+      "chars": 4448,
+      "memory_items": 51,
+      "sections_created": 27
+    },
+    {
+      "cycle": 1,
+      "engine": "GPT-Pro",
+      "ok": true,
+      "elapsed_ms": 42437,
+      "chars": 0,
+      "memory_items": 54,
+      "sections_created": 27
+    }
+  ]
+}

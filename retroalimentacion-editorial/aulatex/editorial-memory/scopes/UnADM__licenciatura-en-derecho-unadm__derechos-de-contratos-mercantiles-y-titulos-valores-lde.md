@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/derechos-de-contratos-mercantiles-y-titulos-valores-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -25,6 +26,19 @@
 - La plantilla .tex contiene una macro truncada verificable: \def\universitydepartmen.
 - Supuesto heredado: persiste alerta institucional por salida no JSON parseable desde Codex para UnADM.
 - Supuesto heredado: persiste alerta por salida no JSON parseable desde GPT-Pro para esta materia.
+- Salida sin JSON parseable desde Codex para derechos-de-contratos-mercantiles-y-titulos-valores-lde
+- Salida sin JSON parseable desde Auto (model-router) para derechos-de-contratos-mercantiles-y-titulos-valores-lde
+- Salida sin JSON parseable desde Claude Foundry para derechos-de-contratos-mercantiles-y-titulos-valores-lde
+- Salida sin JSON parseable desde Codex para UnADM.
+- Salida sin JSON parseable desde Codex para derechos-de-contratos-mercantiles-y-titulos-valores-lde.
+- Salida sin JSON parseable desde GPT-Pro para derechos-de-contratos-mercantiles-y-titulos-valores-lde.
+- Salida sin JSON parseable desde Auto (model-router) para derechos-de-contratos-mercantiles-y-titulos-valores-lde.
+- Salida sin JSON parseable desde Claude Foundry para derechos-de-contratos-mercantiles-y-titulos-valores-lde.
+- Supuesto: persiste alerta institucional por salida no JSON parseable hasta nueva evidencia.
+- Supuesto: fuente provisional heredada Codex desde ingenieria-en-sistemas-computacionales.
+- Supuesto: fuente provisional heredada GPT-Pro desde Actividad 1.
+- Supuesto: fuente provisional heredada Auto (model-router) desde Actividad 1.
+- Supuesto: fuente provisional heredada Claude Foundry desde Actividad 1.
 
 ## identity_rules
 
@@ -42,6 +56,17 @@
 - Etiquetar como provisionales las fuentes heredadas no confirmadas.
 - Registrar fuente provisional heredada: Codex desde ingenieria-en-sistemas-computacionales.
 - Registrar fuente provisional heredada: GPT-Pro desde Actividad 1.
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1.
+- Fuente provisional: Claude Foundry desde Actividad 1.
+- Alinear entregables a la Licenciatura en Derecho y a la asignatura Derechos de contratos mercantiles y titulos valores.
+- Fuente provisional: Codex desde ingenieria-en-sistemas-computacionales.
+- Fuente provisional: GPT-Pro desde Actividad 1.
+- Registrar fuente provisional heredada: Auto (model-router) desde Actividad 1.
+- Registrar fuente provisional heredada: Claude Foundry desde Actividad 1.
+- Conservar tono juridico-formal y cerrar con postura academica propia.
 
 ## structure_rules
 
@@ -80,6 +105,7 @@
 - Confirmar que README y programa apunten al .bib local real.
 - Revisar respuesta no estructurada antes de aplicar aguas abajo.
 - Validar compilacion despues de ajustar nombres de archivos y macros.
+- Revisar respuesta no estructurada antes de aplicarla aguas abajo.
 
 ## latex_rules
 
@@ -92,6 +118,7 @@
 - Corregir macros incompletas o truncadas antes de compilar.
 - Revisar macro truncada \def\universitydepartmen en la plantilla.
 - Validar compilacion despues de ajustar nombres de archivos.
+- Revisar y completar la macro truncada \def\universitydepartmen en la plantilla.
 
 ## bibliography_rules
 
@@ -112,6 +139,28 @@
 - Ciclo 1 necesita normalizacion manual si se reutiliza.
 - En ciclo 2, propagar lateralmente solo pautas academicas transversales.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente solo reglas normalizadas y sin duplicados.
+- Propagar arriba y laterales solo pautas academicas transversales.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 

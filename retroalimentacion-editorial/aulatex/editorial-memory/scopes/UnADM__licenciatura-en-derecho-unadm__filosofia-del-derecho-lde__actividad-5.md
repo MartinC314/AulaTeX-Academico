@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -26,6 +27,38 @@
 - Supuesto: la actividad 5 debe mantener continuidad editorial con los ejes del programa analítico.
 - Antecedente heredado: salidas no parseables en JSON desde Codex y GPT-Pro; aplicar control de estructura antes de propagar.
 - Ciclo 2: consolidación posterior a incidentes de parseo.
+- Supuesto: el README contiene marcadores PowerShell sin expandir y posibles anomalías de ruta/nombre de archivos.
+- Salida sin JSON parseable desde Auto (model-router) para Actividad 5
+- Salida sin JSON parseable desde Claude Foundry para Actividad 5
+- Ciclo 3: consolidación posterior a incidentes de parseo.
+- Ciclo 4: consolidación posterior a incidentes de parseo.
+- Antecedente de riesgo: hubo salidas no parseables en JSON en ciclos previos; validar estructura antes de guardar y propagar.
+- Ciclo 5: consolidación posterior a incidentes de parseo.
+- La carpeta de asignatura es el punto de entrada canónico y exige identidad UnADM, integridad académica, citas verificables y conclusión jurídica propia.
+- El programa analítico organiza productos con problema, conceptos, fuentes, análisis propio y cierre argumentativo transferible a la práctica jurídica.
+- Productos canónicos de la asignatura: reporte, presentación y recurso visual según planeación semanal.
+- Antecedente de riesgo persistente: hubo salidas no parseables en JSON en ciclos previos; validar estructura antes de guardar y propagar.
+- Ciclo 6: consolidación posterior a incidentes de parseo.
+- Ciclo 7: consolidación posterior a incidentes de parseo.
+- Ciclo 8: consolidación posterior a incidentes de parseo.
+- Supuesto: el README contiene marcadores PowerShell sin expandir y anomalías de nombre/ruta que deben validarse antes de automatizar.
+- Ciclo 9: consolidación posterior a incidentes de parseo.
+- Ciclo 10: consolidación posterior a incidentes de parseo.
+- Supuesto: existe bibliografía depurada para Semana 7 en filosofia-del-derecho-clean.bib; confirmar pertinencia para actividad 5.
+- Ciclo 11: consolidación posterior a incidentes de parseo.
+- Ciclo 1: consolidación inicial en actividad 5 con control estricto de parseo JSON.
+- Ciclo 12: consolidación posterior a incidentes de parseo.
+- Ciclo 13: consolidación posterior a incidentes de parseo.
+- Productos canónicos: reporte, presentación y recurso visual según planeación semanal.
+- Supuesto: README contiene marcadores PowerShell sin expandir y anomalías de nombre/ruta; validar antes de automatizar.
+- Supuesto: existe bibliografía depurada de Semana 7 en filosofia-del-derecho-clean.bib; confirmar pertinencia para actividad 5.
+- Ciclo 14: consolidación posterior a incidentes de parseo.
+- Ciclo 15: consolidación posterior a incidentes de parseo.
+- Salida sin JSON parseable desde Codex para Actividad 5
+- Ciclo 20: consolidación posterior a incidentes de parseo.
+- Supuesto: README contiene marcadores PowerShell sin expandir y posibles anomalías de nombre/ruta; validar antes de automatizar.
+- Ciclo 21: consolidación posterior a incidentes de parseo.
+- Ciclo 22: consolidación posterior a incidentes de parseo.
 
 ## identity_rules
 
@@ -39,6 +72,13 @@
 - Fuente provisional heredada: Codex desde ingeniería-en-sistemas-computacionales.
 - Tratar GPT-Pro desde Actividad 1 como fuente provisional de memoria.
 - Tratar Codex desde ingeniería-en-sistemas-computacionales como fuente provisional heredada.
+- Tratar fuentes de memoria de modelos previos como provisionales, no como fuentes académicas.
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Fuente provisional: GPT-Pro desde Actividad 1.
+- Fuente provisional: Auto (model-router) desde Actividad 1.
+- Fuente provisional: Claude Foundry desde Actividad 1.
+- Fuente provisional: Codex desde Actividad 1
 
 ## structure_rules
 
@@ -47,6 +87,7 @@
 - Separar afirmaciones, evidencia y conclusión en bloques claros.
 - Validar formato de salida parseable antes de guardar o propagar.
 - Alinear cada sección con el producto solicitado por la planeación.
+- Validar formato de salida JSON parseable antes de guardar o propagar.
 
 ## activity_rules
 
@@ -71,6 +112,7 @@
 - Aplicar revisión manual extra si la memoria proviene de ciclo 1.
 - Validar estructura JSON antes de guardar y propagar.
 - Revisar manualmente memoria heredada de ciclos previos.
+- Aplicar revisión manual extra en memoria afectada por incidentes de parseo previos.
 
 ## latex_rules
 
@@ -89,6 +131,8 @@
 - Supuesto: el .bib operativo puede ser filosofia-del-derecho-clean.bib mientras se confirma el nombre final.
 - Tratar marcadores PowerShell sin expandir en README como anomalía de ruta.
 - Supuesto: el .bib canónico puede ser filosofia-del-derecho.bib; el README muestra plantilla PowerShell sin expandir.
+- Supuesto: el .bib canónico final puede diferir entre plantilla y archivo operativo; confirmar antes de automatizar.
+- Supuesto: el .bib canónico puede ser filosofia-del-derecho.bib; confirmar en repositorio antes de automatizar.
 
 ## bibliography_rules
 
@@ -104,6 +148,7 @@
 - Confirmar pertinencia antes de reutilizar bibliografía limpia de Interpretación jurídica, Semana 7.
 - Tratar UNAM-IIJ y SCJN como fuentes jurídicas verificables cuando sus URL estén disponibles.
 - Confirmar pertinencia antes de reutilizar bibliografía limpia de 'Interpretación jurídica' (Semana 7) en actividad 5.
+- Confirmar pertinencia antes de reutilizar bibliografía limpia de Interpretación jurídica (Semana 7) en actividad 5.
 
 ## propagation_hints
 
@@ -122,6 +167,61 @@
 - Aplicar control de estructura antes de propagar a actividades laterales.
 - Registrar ciclo 2 como consolidación posterior a incidentes de parseo.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Propagar de forma recursiva preservando union-dedupe y sin regresión.
+- Aplicar normalización manual si se reutiliza memoria marcada por incidentes de parseo.
+- Registrar ciclo 3 como consolidación posterior a incidentes de parseo.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 4 como consolidación posterior a incidentes de parseo.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Propagar de forma recursiva preservando unión por deduplicación y sin regresión.
+- Registrar ciclo 5 como consolidación posterior a incidentes de parseo.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 6 como consolidación posterior a incidentes de parseo.
+- Ciclo 6 necesita normalización manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 7 como consolidación posterior a incidentes de parseo.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 8 como consolidación posterior a incidentes de parseo.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 9 como consolidación posterior a incidentes de parseo.
+- Ciclo 9 necesita normalización manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 10 como consolidación posterior a incidentes de parseo.
+- Ciclo 10 necesita normalización manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 11 como consolidación posterior a incidentes de parseo.
+- Ciclo 11 necesita normalización manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 1 como consolidación inicial con validación estricta de JSON parseable.
+- Ciclo 2 necesita normalización manual si se reutiliza.
+- Ciclo 3 necesita normalización manual si se reutiliza.
+- Ciclo 4 necesita normalización manual si se reutiliza.
+- Ciclo 7 necesita normalización manual si se reutiliza.
+- Ciclo 8 necesita normalización manual si se reutiliza.
+- Registrar ciclo 12 como consolidación posterior a incidentes de parseo.
+- Ciclo 12 necesita normalización manual si se reutiliza.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 13 como consolidación posterior a incidentes de parseo.
+- Ciclo 13 necesita normalización manual si se reutiliza.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 14 como consolidación posterior a incidentes de parseo.
+- Ciclo 14 necesita normalización manual si se reutiliza.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 15 como consolidación posterior a incidentes de parseo.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 20 como consolidación posterior a incidentes de parseo.
+- Ciclo 20 necesita normalización manual si se reutiliza.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 21 como consolidación posterior a incidentes de parseo.
+- Ciclo 21 necesita normalización manual si se reutiliza.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 22 como consolidación posterior a incidentes de parseo.
+- Ciclo 22 necesita normalización manual si se reutiliza.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -140,3 +240,5 @@
 - Validar nombres canónicos de archivos en README.
 - Confirmar si el .bib final es filosofia-del-derecho.bib o filosofia-del-derecho-clean.bib.
 - Corregir marcadores o caracteres anómalos del README antes de automatizar compilación.
+- Validar nombres canónicos de archivos en README por marcadores o caracteres anómalos.
+- Corregir marcadores PowerShell del README antes de automatizar compilación.

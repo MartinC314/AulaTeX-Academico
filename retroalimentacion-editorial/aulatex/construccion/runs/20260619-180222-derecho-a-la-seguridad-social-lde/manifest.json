@@ -1,0 +1,440 @@
+{
+  "run_id": "20260619-180222",
+  "node_key": "UnADM/derecho-a-la-seguridad-social-lde",
+  "node_level": "materia",
+  "node_name": "derecho-a-la-seguridad-social-lde",
+  "node_label": "derecho-a-la-seguridad-social-lde",
+  "parent_scope_key": "UnADM",
+  "activity_number": 0,
+  "operation_mode": "reforzar",
+  "destination_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+  "ingestion": {
+    "has_text": false,
+    "has_document": false,
+    "document_path": ""
+  },
+  "engines": [
+    "Codex",
+    "Auto (model-router)",
+    "Claude Foundry",
+    "GPT-Pro"
+  ],
+  "iterations": 11,
+  "cancelled": false,
+  "ok": false,
+  "node_dir": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+  "artifacts": {
+    "memory": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/memoria-fundacional.json",
+    "plan": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/plan.md",
+    "maqueta": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/maqueta.tex"
+  },
+  "future_agent_contract": {
+    "status": "ready-for-agent",
+    "allowed_actions": [
+      "investigar",
+      "redactar",
+      "evaluar",
+      "compilar"
+    ],
+    "entrypoint": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/maqueta.tex",
+    "notes": "El Agente debe consumir esta maqueta sin recrear el nodo ni reconstruir memoria fundacional."
+  },
+  "cycle_logs": [
+    {
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "elapsed_ms": 16216,
+      "chars": 7829,
+      "memory_items": 32,
+      "sections_created": 27
+    },
+    {
+      "cycle": 1,
+      "engine": "Auto (model-router)",
+      "ok": false,
+      "elapsed_ms": 4069,
+      "chars": 9,
+      "memory_items": 35,
+      "sections_created": 27
+    },
+    {
+      "cycle": 1,
+      "engine": "Claude Foundry",
+      "ok": false,
+      "elapsed_ms": 1533,
+      "chars": 9,
+      "memory_items": 36,
+      "sections_created": 27
+    },
+    {
+      "cycle": 1,
+      "engine": "GPT-Pro",
+      "ok": false,
+      "elapsed_ms": 45905,
+      "chars": 25,
+      "memory_items": 37,
+      "sections_created": 27
+    },
+    {
+      "cycle": 2,
+      "engine": "Codex",
+      "ok": true,
+      "elapsed_ms": 15324,
+      "chars": 8786,
+      "memory_items": 73,
+      "sections_created": 27
+    },
+    {
+      "cycle": 2,
+      "engine": "Auto (model-router)",
+      "ok": false,
+      "elapsed_ms": 1308,
+      "chars": 9,
+      "memory_items": 73,
+      "sections_created": 27
+    },
+    {
+      "cycle": 2,
+      "engine": "Claude Foundry",
+      "ok": false,
+      "elapsed_ms": 1613,
+      "chars": 9,
+      "memory_items": 73,
+      "sections_created": 27
+    },
+    {
+      "cycle": 2,
+      "engine": "GPT-Pro",
+      "ok": false,
+      "elapsed_ms": 46033,
+      "chars": 25,
+      "memory_items": 73,
+      "sections_created": 27
+    },
+    {
+      "cycle": 3,
+      "engine": "Codex",
+      "ok": true,
+      "elapsed_ms": 13372,
+      "chars": 8697,
+      "memory_items": 104,
+      "sections_created": 27
+    },
+    {
+      "cycle": 3,
+      "engine": "Auto (model-router)",
+      "ok": false,
+      "elapsed_ms": 2401,
+      "chars": 9,
+      "memory_items": 104,
+      "sections_created": 27
+    },
+    {
+      "cycle": 3,
+      "engine": "Claude Foundry",
+      "ok": false,
+      "elapsed_ms": 6179,
+      "chars": 9,
+      "memory_items": 104,
+      "sections_created": 27
+    },
+    {
+      "cycle": 3,
+      "engine": "GPT-Pro",
+      "ok": false,
+      "elapsed_ms": 45833,
+      "chars": 25,
+      "memory_items": 104,
+      "sections_created": 27
+    },
+    {
+      "cycle": 4,
+      "engine": "Codex",
+      "ok": true,
+      "elapsed_ms": 15034,
+      "chars": 8979,
+      "memory_items": 120,
+      "sections_created": 27
+    },
+    {
+      "cycle": 4,
+      "engine": "Auto (model-router)",
+      "ok": false,
+      "elapsed_ms": 1797,
+      "chars": 9,
+      "memory_items": 120,
+      "sections_created": 27
+    },
+    {
+      "cycle": 4,
+      "engine": "Claude Foundry",
+      "ok": false,
+      "elapsed_ms": 1421,
+      "chars": 9,
+      "memory_items": 120,
+      "sections_created": 27
+    },
+    {
+      "cycle": 4,
+      "engine": "GPT-Pro",
+      "ok": false,
+      "elapsed_ms": 48511,
+      "chars": 25,
+      "memory_items": 120,
+      "sections_created": 27
+    },
+    {
+      "cycle": 5,
+      "engine": "Codex",
+      "ok": true,
+      "elapsed_ms": 12550,
+      "chars": 8856,
+      "memory_items": 129,
+      "sections_created": 27
+    },
+    {
+      "cycle": 5,
+      "engine": "Auto (model-router)",
+      "ok": false,
+      "elapsed_ms": 1856,
+      "chars": 9,
+      "memory_items": 129,
+      "sections_created": 27
+    },
+    {
+      "cycle": 5,
+      "engine": "Claude Foundry",
+      "ok": false,
+      "elapsed_ms": 1622,
+      "chars": 9,
+      "memory_items": 129,
+      "sections_created": 27
+    },
+    {
+      "cycle": 5,
+      "engine": "GPT-Pro",
+      "ok": false,
+      "elapsed_ms": 45896,
+      "chars": 25,
+      "memory_items": 129,
+      "sections_created": 27
+    },
+    {
+      "cycle": 6,
+      "engine": "Codex",
+      "ok": true,
+      "elapsed_ms": 13762,
+      "chars": 9332,
+      "memory_items": 144,
+      "sections_created": 27
+    },
+    {
+      "cycle": 6,
+      "engine": "Auto (model-router)",
+      "ok": false,
+      "elapsed_ms": 2797,
+      "chars": 9,
+      "memory_items": 144,
+      "sections_created": 27
+    },
+    {
+      "cycle": 6,
+      "engine": "Claude Foundry",
+      "ok": false,
+      "elapsed_ms": 1505,
+      "chars": 9,
+      "memory_items": 144,
+      "sections_created": 27
+    },
+    {
+      "cycle": 6,
+      "engine": "GPT-Pro",
+      "ok": false,
+      "elapsed_ms": 45732,
+      "chars": 25,
+      "memory_items": 144,
+      "sections_created": 27
+    },
+    {
+      "cycle": 7,
+      "engine": "Codex",
+      "ok": true,
+      "elapsed_ms": 13808,
+      "chars": 9317,
+      "memory_items": 147,
+      "sections_created": 27
+    },
+    {
+      "cycle": 7,
+      "engine": "Auto (model-router)",
+      "ok": false,
+      "elapsed_ms": 2157,
+      "chars": 9,
+      "memory_items": 147,
+      "sections_created": 27
+    },
+    {
+      "cycle": 7,
+      "engine": "Claude Foundry",
+      "ok": false,
+      "elapsed_ms": 1825,
+      "chars": 9,
+      "memory_items": 147,
+      "sections_created": 27
+    },
+    {
+      "cycle": 7,
+      "engine": "GPT-Pro",
+      "ok": false,
+      "elapsed_ms": 45735,
+      "chars": 25,
+      "memory_items": 147,
+      "sections_created": 27
+    },
+    {
+      "cycle": 8,
+      "engine": "Codex",
+      "ok": true,
+      "elapsed_ms": 14183,
+      "chars": 9420,
+      "memory_items": 150,
+      "sections_created": 27
+    },
+    {
+      "cycle": 8,
+      "engine": "Auto (model-router)",
+      "ok": false,
+      "elapsed_ms": 1800,
+      "chars": 9,
+      "memory_items": 150,
+      "sections_created": 27
+    },
+    {
+      "cycle": 8,
+      "engine": "Claude Foundry",
+      "ok": false,
+      "elapsed_ms": 1905,
+      "chars": 9,
+      "memory_items": 150,
+      "sections_created": 27
+    },
+    {
+      "cycle": 8,
+      "engine": "GPT-Pro",
+      "ok": false,
+      "elapsed_ms": 45731,
+      "chars": 25,
+      "memory_items": 150,
+      "sections_created": 27
+    },
+    {
+      "cycle": 9,
+      "engine": "Codex",
+      "ok": true,
+      "elapsed_ms": 14796,
+      "chars": 9586,
+      "memory_items": 161,
+      "sections_created": 27
+    },
+    {
+      "cycle": 9,
+      "engine": "Auto (model-router)",
+      "ok": false,
+      "elapsed_ms": 2158,
+      "chars": 9,
+      "memory_items": 161,
+      "sections_created": 27
+    },
+    {
+      "cycle": 9,
+      "engine": "Claude Foundry",
+      "ok": false,
+      "elapsed_ms": 1539,
+      "chars": 9,
+      "memory_items": 161,
+      "sections_created": 27
+    },
+    {
+      "cycle": 9,
+      "engine": "GPT-Pro",
+      "ok": false,
+      "elapsed_ms": 45774,
+      "chars": 25,
+      "memory_items": 161,
+      "sections_created": 27
+    },
+    {
+      "cycle": 10,
+      "engine": "Codex",
+      "ok": true,
+      "elapsed_ms": 13459,
+      "chars": 9557,
+      "memory_items": 166,
+      "sections_created": 27
+    },
+    {
+      "cycle": 10,
+      "engine": "Auto (model-router)",
+      "ok": false,
+      "elapsed_ms": 2248,
+      "chars": 9,
+      "memory_items": 166,
+      "sections_created": 27
+    },
+    {
+      "cycle": 10,
+      "engine": "Claude Foundry",
+      "ok": false,
+      "elapsed_ms": 1930,
+      "chars": 9,
+      "memory_items": 166,
+      "sections_created": 27
+    },
+    {
+      "cycle": 10,
+      "engine": "GPT-Pro",
+      "ok": false,
+      "elapsed_ms": 45874,
+      "chars": 25,
+      "memory_items": 166,
+      "sections_created": 27
+    },
+    {
+      "cycle": 11,
+      "engine": "Codex",
+      "ok": true,
+      "elapsed_ms": 13764,
+      "chars": 9561,
+      "memory_items": 168,
+      "sections_created": 27
+    },
+    {
+      "cycle": 11,
+      "engine": "Auto (model-router)",
+      "ok": false,
+      "elapsed_ms": 2094,
+      "chars": 9,
+      "memory_items": 168,
+      "sections_created": 27
+    },
+    {
+      "cycle": 11,
+      "engine": "Claude Foundry",
+      "ok": false,
+      "elapsed_ms": 1469,
+      "chars": 9,
+      "memory_items": 168,
+      "sections_created": 27
+    },
+    {
+      "cycle": 11,
+      "engine": "GPT-Pro",
+      "ok": false,
+      "elapsed_ms": 45757,
+      "chars": 25,
+      "memory_items": 168,
+      "sections_created": 27
+    }
+  ]
+}

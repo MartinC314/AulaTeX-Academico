@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/derecho-de-la-responsabilidad-civil-y-danos-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -27,6 +28,32 @@
 - Antecedente institucional: salida sin JSON parseable desde Codex para UnADM.
 - Antecedente local: salida sin JSON parseable desde GPT-Pro para esta materia.
 - Ciclo de consolidacion: 2.
+- Salida sin JSON parseable desde Codex para derecho-de-la-responsabilidad-civil-y-danos-lde
+- Salida sin JSON parseable desde Auto (model-router) para derecho-de-la-responsabilidad-civil-y-danos-lde
+- Salida sin JSON parseable desde Claude Foundry para derecho-de-la-responsabilidad-civil-y-danos-lde
+- Materia con memoria local activa y consolidada sin regresion.
+- Persisten incidencias tecnicas locales: salida no estructurada previa, rutas truncadas, placeholders sin resolver y plantilla .tex truncada.
+- Ciclo de consolidacion: 3.
+- Se conserva alerta historica de salidas sin JSON parseable en ejecuciones previas.
+- Ciclo de consolidacion: 4.
+- Ciclo de consolidacion: 5.
+- Ciclo de consolidacion: 6.
+- Ciclo de consolidacion: 7.
+- Ciclo de consolidacion: 8.
+- Ciclo de consolidacion: 9.
+- Ciclo de consolidacion: 10.
+- Ciclo de consolidacion: 11.
+- Ciclo de consolidacion: 12.
+- Persisten incidencias tecnicas locales: salidas no estructuradas previas, rutas truncadas, placeholders sin resolver y plantilla .tex truncada.
+- Ciclo de consolidacion: 13.
+- Ciclo de consolidacion: 14.
+- Ciclo de consolidacion: 15.
+- Ciclo de consolidacion: 16.
+- Ciclo de consolidacion: 17.
+- Ciclo de consolidacion: 18.
+- Ciclo de consolidacion: 20.
+- Ciclo de consolidacion: 21.
+- Ciclo de consolidacion: 22.
 
 ## identity_rules
 
@@ -41,6 +68,13 @@
 - Fuente provisional: Codex desde ingenieria-en-sistemas-computacionales.
 - Fuente provisional: GPT-Pro desde Actividad 1.
 - No cambiar la convencion local danos/daños sin confirmacion documental.
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Tratar memorias heredadas de Codex, GPT-Pro, Auto (model-router) y Claude Foundry como fuentes provisionales.
+- Fuente provisional: Codex desde Actividad 1.
+- Fuente provisional: Auto (model-router) desde Actividad 1.
+- Fuente provisional: Claude Foundry desde Actividad 1.
 
 ## structure_rules
 
@@ -53,6 +87,7 @@
 - Corregir nombres truncados o plantillas interpoladas antes de usarlos como rutas finales.
 - Usar el programa analitico local para orientar productos semanales.
 - Respetar el producto solicitado por la planeacion de cada actividad.
+- Alinear cada producto a: problema, conceptos o fuentes, analisis propio y conclusion juridica.
 
 ## activity_rules
 
@@ -66,6 +101,7 @@
 - No arrastrar contenido tematico de origen si no aplica al dano o a la responsabilidad civil.
 - Separar fundamento juridico, evidencia y postura academica.
 - Cerrar con criterio propio y conclusion juridica.
+- Cerrar con criterio propio, conclusion juridica y transferencia a practica juridica.
 
 ## quality_gates
 
@@ -115,6 +151,27 @@
 - No propagar el codigo LDE-S6B1 como oficial hasta confirmacion.
 - Ciclo 2 conserva reglas utiles de ciclos previos sin regresion.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Propagar la alerta de plantilla .tex truncada como control tecnico general.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -129,3 +186,4 @@
 - Validar y corregir truncamientos en README: reporte y referencias.
 - Resolver placeholder interpolado del nombre de archivo .bib en README y programa analitico.
 - Completar la seccion authortable truncada en la plantilla .tex.
+- Validar plantilla .tex por truncamiento local y completar authortable.

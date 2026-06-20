@@ -1,0 +1,45 @@
+{
+  "run_id": "20260618-162950",
+  "node_key": "UAS",
+  "node_level": "institucion",
+  "node_name": "UAS",
+  "node_label": "UAS",
+  "parent_scope_key": "interinstitucional",
+  "activity_number": 0,
+  "operation_mode": "reforzar",
+  "destination_path": ".build/generation-smoke/UAS",
+  "engines": [
+    "Codex"
+  ],
+  "iterations": 1,
+  "cancelled": false,
+  "ok": true,
+  "node_dir": ".build/generation-smoke/UAS",
+  "artifacts": {
+    "memory": ".build/generation-smoke/UAS/memoria-fundacional.json",
+    "plan": ".build/generation-smoke/UAS/plan.md",
+    "maqueta": ".build/generation-smoke/UAS/maqueta.tex"
+  },
+  "future_agent_contract": {
+    "status": "ready-for-agent",
+    "allowed_actions": [
+      "investigar",
+      "redactar",
+      "evaluar",
+      "compilar"
+    ],
+    "entrypoint": ".build/generation-smoke/UAS/maqueta.tex",
+    "notes": "El Agente debe consumir esta maqueta sin recrear el nodo ni reconstruir memoria fundacional."
+  },
+  "cycle_logs": [
+    {
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "elapsed_ms": 0,
+      "chars": 1178,
+      "memory_items": 16,
+      "sections_created": 23
+    }
+  ]
+}

@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -28,6 +29,23 @@
 - Antecedente de salida sin JSON parseable desde Codex para UnADM.
 - Persiste alerta institucional de ciclo 1; requiere normalizacion manual al reutilizar.
 - La consolidacion aplica union-dedupe lossless sin regresion.
+- Asignatura: Derecho a la seguridad social, Licenciatura en Derecho UnADM.
+- Datos curriculares vigentes: semestre 2, bloque 1, obligatoria, 8 creditos.
+- Productos alineados a cinco ejes: problema, fundamento, producto, analisis y conclusion.
+- Persiste alerta institucional por salidas no parseables en ciclo 1; requiere normalizacion manual al reutilizar.
+- Compresion aplicada: union-dedupe lossless sin regresion.
+- Salida sin JSON parseable desde Auto (model-router) para derecho-a-la-seguridad-social-lde
+- Salida sin JSON parseable desde Claude Foundry para derecho-a-la-seguridad-social-lde
+- Se mantiene antecedente historico de salida sin JSON parseable desde Codex, GPT-Pro, Auto (model-router) y Claude Foundry.
+- Persisten antecedentes de salida no parseable en ciclos previos; requiere normalizacion manual al reutilizar.
+- Se detectaron marcadores y caracteres corruptos en README/programa; deben normalizarse antes de uso canonico.
+- Se detectaron marcadores y caracteres corruptos en README y programa analitico; deben normalizarse antes de uso canonico.
+- La consolidacion aplica compresion lossless por union-dedupe sin regresion.
+- Persisten antecedentes historicos de salida no parseable; requiere normalizacion manual al reutilizar ciclos previos.
+- Productos alineados a cinco ejes: problema, conceptos/norma, producto, analisis y conclusion.
+- Persisten antecedentes historicos de salida no parseable; requiere normalizacion manual al reutilizar.
+- Productos alineados a cinco ejes: problema, conceptos o norma, producto, analisis y conclusion.
+- Ciclo 22 hereda riesgo de parseo; validar JSON antes de propagar.
 
 ## identity_rules
 
@@ -50,6 +68,13 @@
 - Mantener adscripcion: Licenciatura en Derecho.
 - Registrar fuente provisional heredada: Codex desde ingenieria-en-sistemas-computacionales [supuesto].
 - Registrar fuente provisional heredada: GPT-Pro desde Actividad 1 [supuesto].
+- Usar nombre oficial de materia: Derecho a la seguridad social.
+- Usar coursecode LDE-S2B1 cuando aplique.
+- No sobrescribir reglas validas previas; aplicar union y deduplicacion.
+- Registrar fuentes provisionales heredadas como historicas: Codex/GPT-Pro [supuesto].
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Registrar fuentes provisionales heredadas como historicas: Codex, GPT-Pro, Auto (model-router) y Claude Foundry desde actividad previa [supuesto].
 
 ## structure_rules
 
@@ -69,6 +94,9 @@
 - Normalizar nombres de archivos con marcadores o caracteres corruptos antes de usarlos como canon.
 - Usar archivos canonicos tras normalizacion: reporte, presentacion, bib, programa analitico y carpeta de referencias.
 - Resolver marcadores de plantilla en nombres de archivo antes de compilar o citar rutas.
+- Transformar planeacion semanal en productos con claridad y fundamento juridico.
+- Resolver marcadores de plantilla en rutas y nombres antes de compilar o citar.
+- Normalizar nombres y rutas con marcadores o caracteres corruptos antes de usarlos como canon.
 
 ## activity_rules
 
@@ -83,6 +111,7 @@
 - Evitar afirmaciones no sustentadas o marcarlas como [supuesto].
 - Ajustar formato y alcance al producto solicitado por la planeacion semanal.
 - Integrar evidencia verificable cuando el producto lo requiera.
+- Definir al inicio el problema juridico o social.
 
 ## quality_gates
 
@@ -105,6 +134,7 @@
 - Confirmar que la compresion aplicada sea union-dedupe y no recorte.
 - Resolver marcadores corruptos en README y programa analitico antes de usarlos como canon.
 - Compilar archivos .tex despues de corregir rutas y nombres.
+- Normalizar manualmente salidas no parseables de ciclos previos cuando se reutilicen.
 
 ## latex_rules
 
@@ -125,6 +155,9 @@
 - Corregir rutas y nombres corruptos antes de compilar.
 - Usar coursecode LDE-S2B1 en la plantilla de esta materia.
 - Conservar imagen institucional departamentos/UnADM si la ruta compila.
+- Conservar campo de figura docente como pendiente si no existe dato oficial.
+- Usar structure minima: portada, desarrollo por ejes, conclusion y referencias.
+- Evitar cambios de formato que rompan compatibilidad sin justificacion tecnica.
 
 ## bibliography_rules
 
@@ -164,6 +197,39 @@
 - Normalizar ciclo 1 antes de cualquier reutilizacion aguas abajo.
 - Aplicar compresion union-dedupe lossless sin regresion.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Tratar origen Filosofia del Derecho Actividad 1 como lateral; no importar contenido disciplinar sin validacion [supuesto].
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Mantener bandera de riesgo por antecedentes de salida no parseable.
+- Normalizar ciclos previos antes de cualquier reutilizacion aguas abajo.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclo 14 hereda riesgo de parseo; validar JSON antes de propagar.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclo 15 hereda riesgo de parseo; validar JSON antes de propagar.
+- Ciclo 15 requiere normalizacion manual si reutiliza salidas no parseables heredadas [supuesto].
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16 hereda riesgo de parseo; validar JSON antes de propagar.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Validar JSON antes de propagar en cada ciclo.
+- Ciclo 17 hereda riesgo de parseo; validar JSON antes de propagar.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclo 18 hereda riesgo de parseo; validar JSON antes de propagar.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclo 19 hereda riesgo de parseo; validar JSON antes de propagar.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclo 20 hereda riesgo de parseo; validar JSON antes de propagar.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclo 21 hereda riesgo de parseo; validar JSON antes de propagar.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -182,3 +248,8 @@
 - Confirmar si el origen Filosofia del Derecho Actividad 1 aporta reglas especificas o solo reglas generales [supuesto].
 - Confirmar si los datos personales de plantilla deben permanecer solo en nodo local [supuesto].
 - Confirmar fuentes juridicas primarias requeridas para actividades especificas de seguridad social [supuesto].
+- Confirmar vigencia de fuentes provisionales heredadas desde ingenieria para contexto de Derecho [supuesto].
+- Definir nombre oficial de figura docente para plantilla.
+- Confirmar norma de citacion requerida: APA, ISO, institucional o juridica mexicana [supuesto].
+- Confirmar si el origen Filosofia del Derecho Actividad 1 aporta reglas especificas o solo generales [supuesto].
+- Confirmar si datos personales de plantilla deben permanecer solo en nodo local [supuesto].

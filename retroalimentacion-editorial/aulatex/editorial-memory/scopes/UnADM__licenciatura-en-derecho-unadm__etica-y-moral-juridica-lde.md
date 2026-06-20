@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/etica-y-moral-juridica-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -20,6 +21,15 @@
 - Mantener identidad UnADM, integridad académica, citas verificables y conclusión jurídica propia.
 - Usar compresión por unión-dedupe sin pérdida y sin regresión.
 - Existen herencias sin JSON parseable desde Codex y GPT-Pro; requieren normalización manual.
+- Salida sin JSON parseable desde Codex para etica-y-moral-juridica-lde
+- Salida sin JSON parseable desde Auto (model-router) para etica-y-moral-juridica-lde
+- Salida sin JSON parseable desde Claude Foundry para etica-y-moral-juridica-lde
+- Existen herencias sin JSON parseable desde Codex, GPT-Pro, Auto y Claude Foundry; requieren normalización manual en ciclo 1.
+- Se detectaron placeholders y nombres corruptos en README y programa analítico que deben corregirse antes de automatizar.
+- Existen herencias sin JSON parseable desde Codex, GPT-Pro, Auto y Claude Foundry; requieren normalización manual.
+- Materia objetivo: Ética y Moral jurídica en Derecho UnADM, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Aplicar compresión por unión-dedupe sin pérdida y sin regresión.
+- Se detectaron placeholders y nombres corruptos en README y programa analítico; corregir antes de automatizar.
 
 ## identity_rules
 
@@ -35,6 +45,14 @@
 - Aterrizar el análisis en contexto jurídico mexicano cuando aplique.
 - No trasladar reglas de Filosofía del Derecho sin adaptarlas al enfoque ético-moral jurídico.
 - Fuente provisional de herencia cruzada: Codex (ingenieria-en-sistemas-computacionales) y GPT-Pro (Actividad 1).
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Fuente provisional de herencia cruzada: Codex y GPT-Pro desde Actividad 1.
+- Fuente provisional de herencia cruzada: Codex (ingeniería en sistemas computacionales) y GPT-Pro (Actividad 1).
+- Fuente provisional: Auto (model-router) desde Actividad 1.
+- Fuente provisional: Claude Foundry desde Actividad 1.
+- Fuente provisional de herencia cruzada: Codex, GPT-Pro, Auto y Claude Foundry desde Actividad 1.
 
 ## structure_rules
 
@@ -62,6 +80,7 @@
 - Definir explícitamente el problema jurídico o social de la actividad.
 - Vincular conceptos éticos y morales con implicaciones jurídicas concretas.
 - Cerrar con conclusión transferible a la práctica profesional del derecho.
+- No trasladar reglas de Filosofía del Derecho sin adaptarlas al enfoque ético-moral jurídico.
 
 ## quality_gates
 
@@ -96,6 +115,10 @@
 - Resolver el placeholder PowerShell del slug en README y programa analítico hacia etica-y-moral-juridica.bib.
 - Corregir nombres de archivo con salto o carácter corrupto en README antes de automatizar validaciones.
 - Corregir nombres de archivo con salto o carácter corrupto en README (reporte/referencias) antes de automatizar validaciones.
+- Corregir placeholders del slug en README y programa analítico hacia etica-y-moral-juridica.bib.
+- Corregir nombres corruptos en README: eporte-etica-y-moral-juridica.tex y eferencias-etica-y-moral-juridica/.
+- Resolver placeholders del slug en README y programa analítico hacia etica-y-moral-juridica.bib.
+- Corregir placeholders o rutas corruptas detectadas antes de compilar.
 
 ## bibliography_rules
 
@@ -114,6 +137,8 @@
 - Unificar duplicado Ronquillo 2018: ronquilloarmasEticaGeneralProfesional2018 y ronquillo2018etica.
 - Unificar duplicado Singer 1995: singerCompendioEtica1995 y singer1995compendio.
 - Depurar entradas duplicadas por clave o contenido equivalente en la bibliografía.
+- Completar entrada truncada sierraUniversidadNacional1910 antes de citarla.
+- Confirmar y completar la entrada truncada sierraUniversidadNacional1910 antes de citarla.
 
 ## propagation_hints
 
@@ -127,6 +152,50 @@
 - Aplicar normalización manual en ciclo 1 cuando la herencia venga incompleta o no estructurada.
 - Propagar reglas generales de integridad, trazabilidad y bibliografía a materias laterales de Derecho.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Aplicar normalización manual cuando la herencia venga incompleta o no estructurada.
+- Ciclo 2 necesita normalización manual si se reutiliza.
+- Ciclo 1 necesita normalización manual si se reutiliza.
+- Ciclo 3 necesita normalización manual si se reutiliza.
+- Ciclo 4 necesita normalización manual si se reutiliza.
+- Ciclo 5 necesita normalización manual si se reutiliza.
+- Ciclo 6 necesita normalización manual si se reutiliza.
+- Ciclo 7 necesita normalización manual si se reutiliza.
+- Ciclo 8 necesita normalización manual si se reutiliza.
+- Ciclo 9 necesita normalización manual si se reutiliza.
+- Ciclo 10 necesita normalización manual si se reutiliza.
+- Ciclo 11 necesita normalización manual si se reutiliza.
+- Propagar en forma recursiva reglas generales de integridad, trazabilidad y bibliografía a materias laterales de Derecho.
+- Ciclo 12 necesita normalización manual si se reutiliza.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13 necesita normalización manual si se reutiliza.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclo 14 necesita normalización manual si se reutiliza.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclo 15 necesita normalización manual si se reutiliza.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16 necesita normalización manual si se reutiliza.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclo 17 necesita normalización manual si se reutiliza.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclo 18 necesita normalización manual si se reutiliza.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclo 19 necesita normalización manual si se reutiliza.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclo 20 necesita normalización manual si se reutiliza.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclo 21 necesita normalización manual si se reutiliza.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclo 22 necesita normalización manual si se reutiliza.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -147,3 +216,4 @@
 - Confirmar criterio final de deduplicación bibliográfica: clave, DOI o título más autor más año.
 - Confirmar si la planeación semanal local incluye consignas adicionales no reflejadas en esta memoria.
 - Confirmar si la bibliografía local debe normalizar claves BibTeX conservando alias históricos.
+- Confirmar criterio final de deduplicación bibliográfica: clave, DOI o título+autor+año.

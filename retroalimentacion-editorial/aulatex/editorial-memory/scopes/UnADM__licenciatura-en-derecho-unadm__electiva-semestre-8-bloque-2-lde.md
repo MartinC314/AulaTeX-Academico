@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/electiva-semestre-8-bloque-2-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -37,6 +38,45 @@
 - Usar compresion lossless por union-dedupe sin recortar reglas utiles.
 - Salidas no JSON parseables heredadas desde Codex y GPT-Pro para electiva-semestre-8-bloque-2-lde.
 - No trasladar contenido especifico de Filosofia del Derecho sin fuente verificable.
+- Salida sin JSON parseable desde Codex para electiva-semestre-8-bloque-2-lde
+- Salida sin JSON parseable desde Auto (model-router) para electiva-semestre-8-bloque-2-lde
+- Salida sin JSON parseable desde Claude Foundry para electiva-semestre-8-bloque-2-lde
+- Ciclo 1 mantiene normalizacion manual obligatoria antes de reutilizar herencias.
+- Compresion aplicable: union-dedupe lossless sin recortar reglas utiles.
+- Persisten hallazgos locales de placeholders y nombres truncados en README y programa analitico.
+- La materia exige integridad academica, citas verificables y conclusion juridica propia.
+- Consolidar identidad UnADM y enfoque juridico para Electiva Semestre 8 Bloque 2.
+- Mantener compresion lossless por union-dedupe sin recortar reglas utiles.
+- Mantener normalizacion manual obligatoria para herencias de ciclo 1 antes de reutilizar.
+- Registrar que existen antecedentes de salidas no JSON parseables en herencias historicas.
+- Preservar exigencia de integridad academica, citas verificables y conclusion juridica propia.
+- Conservar que el alumno confirmado es Martin Jonathan de la Cruz, matricula ES2611202040.
+- Corregir placeholders y nombres truncados detectados en README y programa analitico.
+- Consolidar identidad UnADM y enfoque juridico en Electiva Semestre 8 Bloque 2.
+- Registrar antecedentes de salidas no JSON parseables como riesgo historico.
+- Preservar integridad academica, citas verificables y conclusion juridica propia.
+- Conservar autor Martin Jonathan de la Cruz y matricula ES2611202040.
+- Mantener integridad academica, citas verificables y conclusion juridica propia.
+- Aplicar compresion lossless por union-dedupe sin recortar reglas utiles.
+- Registrar riesgo historico de salidas no JSON parseables en herencias previas.
+- Corregir placeholders y nombres truncados en README y programa analitico.
+- Conservar identidad UnADM y enfoque juridico de la materia destino.
+- Conservar identidad UnADM y enfoque juridico de Electiva Semestre 8 Bloque 2.
+- Mantener normalizacion manual obligatoria para herencias de ciclo 1 a ciclo 11 antes de reutilizar.
+- Conservar identidad UnADM y enfoque juridico en Electiva Semestre 8 Bloque 2.
+- Mantener normalizacion manual obligatoria para herencias desde ciclo 1 hasta ciclo 11 antes de reutilizar.
+- Mantener normalizacion manual obligatoria para herencias de ciclo 1 a ciclo 12 antes de reutilizar.
+- Mantener normalizacion manual obligatoria para herencias de ciclo 1 a ciclo 13 antes de reutilizar.
+- Mantener normalizacion manual obligatoria para herencias de ciclo 1 a ciclo 14 antes de reutilizar.
+- Mantener normalizacion manual obligatoria para herencias de ciclo 1 a ciclo 15 antes de reutilizar.
+- Mantener normalizacion manual obligatoria para herencias de ciclos 1 a 16 antes de reutilizar.
+- No trasladar contenido especifico de otra materia sin fuente verificable.
+- Mantener normalizacion manual obligatoria para herencias de ciclos 1 a 17 antes de reutilizar.
+- Mantener normalizacion manual obligatoria para herencias de ciclos 1 a 18 antes de reutilizar.
+- Mantener normalizacion manual obligatoria para herencias de ciclos 1 a 20 antes de reutilizar.
+- Conservar identidad UnADM y enfoque juridico para Electiva Semestre 8 Bloque 2.
+- Mantener normalizacion manual obligatoria para herencias de ciclos 1 a 21 antes de reutilizar.
+- Mantener normalizacion manual obligatoria para herencias de ciclos 1 a 22 antes de reutilizar.
 
 ## identity_rules
 
@@ -59,6 +99,17 @@
 - Conservar tono académico-jurídico con postura propia sustentada.
 - Registrar fuentes heredadas Codex y GPT-Pro como provisionales hasta validación manual.
 - Registrar fuentes heredadas Codex y GPT-Pro como provisionales hasta validacion manual.
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Usar codigo de curso LDE-S8B2 en metadatos.
+- Registrar fuentes heredadas como provisionales hasta validacion manual.
+- Fijar matricula ES2611202040 en front matter.
+- Fuente provisional: Codex desde Actividad 1.
+- Fuente provisional: GPT-Pro desde Actividad 1.
+- Fuente provisional: Auto (model-router) desde Actividad 1.
+- Fuente provisional: Claude Foundry desde Actividad 1.
+- Registrar fuentes heredadas Codex, GPT-Pro, Auto (model-router) y Claude Foundry como provisionales hasta validacion manual.
 
 ## structure_rules
 
@@ -85,6 +136,10 @@
 - Restaurar nombres truncados en estructura, como reporte y referencias.
 - Confirmar que los listados coincidan con archivos y carpetas reales.
 - Restaurar nombres truncados (reporte, referencias) en listados antes de entrega.
+- Corregir placeholders en rutas, nombres de archivo y referencias antes de entrega.
+- Restaurar nombres truncados en estructura, como reporte y referencias, antes de entrega.
+- Restaurar nombres truncados como reporte y referencias antes de entrega.
+- Corregir rutas y nombres con placeholders antes de entrega.
 
 ## activity_rules
 
@@ -129,6 +184,13 @@
 - Revisar respuestas no estructuradas antes de aplicarlas aguas abajo.
 - Reemplazar valores genericos como Actividad X antes de entrega.
 - Validar que figura docente y creditos no se completen sin confirmacion.
+- Confirmar coherencia de datos de portada con la materia destino.
+- Revisar manualmente artefactos heredados de ciclos 1 a 16 antes de reutilizar.
+- Revisar manualmente artefactos heredados de ciclos 1 a 17 antes de reutilizar.
+- Revisar manualmente artefactos heredados de ciclos 1 a 18 antes de reutilizar.
+- Revisar manualmente artefactos heredados de ciclos 1 a 20 antes de reutilizar.
+- Revisar manualmente artefactos heredados de ciclos 1 a 21 antes de reutilizar.
+- Revisar manualmente artefactos heredados de ciclos 1 a 22 antes de reutilizar.
 
 ## latex_rules
 
@@ -154,6 +216,7 @@
 - Reemplazar 'Actividad X' por el identificador real antes de compilar.
 - Completar figura docente solo cuando exista confirmacion.
 - Completar creditos en authortable solo con dato oficial confirmado.
+- Reemplazar Actividad X por el identificador real antes de compilar.
 
 ## bibliography_rules
 
@@ -177,6 +240,7 @@
 - No inventar referencias.
 - Marcar como [supuesto] cualquier dato bibliográfico no verificable.
 - [supuesto] Validar si el year 2026 en unadmSitioWeb corresponde a consulta y no a publicación.
+- Marcar como [supuesto] cualquier dato bibliografico no verificable.
 
 ## propagation_hints
 
@@ -206,6 +270,27 @@
 - Propagar la regla de corregir placeholders y nombres truncados como leccion transversal.
 - Propagar la regla de resolver plantillas PowerShell como leccion transversal de generacion.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Usar ciclos iniciales como etapa de normalizacion y no como evidencia definitiva.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -226,3 +311,5 @@
 - [supuesto] Confirmar política institucional para year y fecha de consulta en @misc del sitio UnADM.
 - [supuesto] Definir creditos oficiales de Electiva Semestre 8 Bloque 2 para completar metadatos.
 - [supuesto] Confirmar nombre oficial de figura docente para front matter y plantilla.
+- [supuesto] Confirmar si el year 2026 del sitio UnADM en .bib es correcto o placeholder.
+- [supuesto] Confirmar si la electiva tiene nombre oficial alterno.

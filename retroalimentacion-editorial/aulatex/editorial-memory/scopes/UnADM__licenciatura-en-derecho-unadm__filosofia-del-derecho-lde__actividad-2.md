@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -33,6 +34,64 @@
 - Se conserva antecedente de salidas sin JSON parseable desde Codex y GPT-Pro.
 - Se mantiene caracter provisional de herencias con origen no estructurado.
 - Se registra propagacion desde actividad-1 hacia actividad-2 en ciclo 2 con alcance arriba-y-laterales.
+- Se consolida memoria editorial de actividad-2 con deduplicacion lossless por union.
+- Se preservan reglas validas previas sin recorte ni regresion.
+- Se conserva trazabilidad de antecedentes de normalizacion manual y salidas no parseables como control historico.
+- Supuesto: la consigna especifica de actividad-2 aun no esta confirmada en esta entrada.
+- Salida sin JSON parseable desde Auto (model-router) para Actividad 2
+- Salida sin JSON parseable desde Claude Foundry para Actividad 2
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 2.
+- Se conserva trazabilidad historica de salidas no parseables como control de calidad.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 3.
+- Supuesto: la consigna especifica de actividad-2 sigue sin confirmacion local en esta entrada.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 4.
+- Se consolida memoria editorial de actividad-2 en ciclo 5 con deduplicacion lossless.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 5.
+- Se consolida memoria editorial de actividad-2 en ciclo 6 con deduplicacion lossless por union.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 6.
+- Se consolida memoria editorial de actividad-2 en ciclo 7 con deduplicacion lossless por union.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 7.
+- Se conserva trazabilidad de antecedentes no parseables como control historico de calidad.
+- Se consolida memoria editorial de actividad-2 en ciclo 8 con deduplicacion lossless por union.
+- Se preservan reglas utiles previas sin recorte ni regresion.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 8.
+- Se consolida memoria editorial de actividad-2 en ciclo 9 con deduplicacion lossless por union.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 9.
+- Se consolida memoria editorial de actividad-2 en ciclo 10 con deduplicacion lossless por union.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 10.
+- Se consolida memoria editorial de actividad-2 en ciclo 11 con deduplicacion lossless por union.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 11.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 1.
+- Supuesto: la consigna especifica de actividad-2 no esta confirmada localmente.
+- Se conserva trazabilidad de antecedentes de salidas no parseables como control historico.
+- Se conserva trazabilidad de salidas historicas no parseables como control de calidad.
+- Se consolida memoria editorial de actividad-2 en ciclo 11 con union-dedupe lossless.
+- Se consolida memoria editorial de actividad-2 en ciclo 12 con deduplicacion lossless por union.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 12.
+- Se consolida memoria editorial de actividad-2 en ciclo 13 con union-dedupe lossless.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 13.
+- Se consolida memoria editorial de actividad-2 en ciclo 14 con union-dedupe lossless.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 14.
+- Se consolida memoria editorial de actividad-2 en ciclo 15 con union-dedupe lossless.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 15.
+- Se consolida memoria editorial de actividad-2 en ciclo 16 con union-dedupe lossless.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 16.
+- Se mantiene alineacion con README y programa analitico local de Filosofia del Derecho.
+- Supuesto: la consigna especifica de actividad-2 sigue sin confirmacion local.
+- Se consolida memoria editorial de actividad-2 en ciclo 17 con union-dedupe lossless.
+- Se mantiene alineacion con README y programa analitico local de Filosofia del Derecho en UnADM.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 17.
+- Se consolida memoria editorial de actividad-2 en ciclo 18 con union-dedupe lossless.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 18.
+- Se consolida memoria editorial de actividad-2 en ciclo 19 con union-dedupe lossless.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 19.
+- Se consolida memoria editorial de actividad-2 en ciclo 20 con union-dedupe lossless.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 20.
+- Se consolida memoria editorial de actividad-2 en ciclo 21 con union-dedupe lossless.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 21.
+- Se consolida memoria editorial de actividad-2 en ciclo 22 con union-dedupe lossless.
+- Se registra propagacion recursiva desde actividad-1 hacia actividad-2 en ciclo 22.
+- Se mantiene trazabilidad de antecedentes de salidas no parseables como control historico de calidad.
 
 ## identity_rules
 
@@ -56,6 +115,12 @@
 - Incluir cierre con criterio juridico propio.
 - Marcar como supuesto todo dato no confirmado por fuente local.
 - Mantener la carpeta de asignatura como punto de entrada canonico para productos academicos.
+- Conservar antecedente historico de fuentes provisionales no canonicas sin tratarlas como definitivas.
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Conservar antecedentes historicos de fuentes provisionales no canonicas sin tratarlas como definitivas.
+- Mantener integridad academica en todo producto.
+- Diferenciar postura academica propia, cita y parafrasis.
 
 ## structure_rules
 
@@ -70,6 +135,8 @@
 - Alinear el contenido al producto solicitado por la planeacion semanal.
 - Diferenciar postura academica propia, cita y parafrasis.
 - Organizar cada actividad en: problema, conceptos y fuentes, desarrollo del producto, analisis propio y conclusion.
+- Mantener trazabilidad entre afirmaciones y fuentes citadas.
+- Integrar un problema juridico o social pertinente.
 
 ## activity_rules
 
@@ -87,6 +154,9 @@
 - Mantener integridad academica en todo producto.
 - Confirmar que el producto responda a la pauta editorial local.
 - Usar fuentes locales sobre hermeneutica, argumentacion e interpretacion juridica solo si la consigna lo requiere.
+- No asumir tema, semana o formato de actividad-2 sin evidencia local.
+- Transformar la planeacion semanal en reporte, presentacion o producto visual segun corresponda.
+- Integrar problema juridico o social pertinente.
 
 ## quality_gates
 
@@ -106,6 +176,7 @@
 - Agregar solo mejoras verificables.
 - No propagar reglas especulativas como definitivas.
 - Mantener sin regresion las reglas institucionales UnADM ya validadas.
+- Mantener sin regresion reglas institucionales UnADM ya validadas.
 
 ## latex_rules
 
@@ -121,6 +192,8 @@
 - Mantener secciones coherentes con la pauta editorial.
 - Confirmar nombres canonicos de archivos LaTeX por caracteres anomalos en README.
 - Usar LaTeX con estructura academica clara y secciones coherentes con la pauta editorial.
+- Confirmar nombres canonicos de archivos LaTeX por posibles caracteres anómalos en README.
+- Confirmar nombres canonicos de archivos LaTeX locales por posibles caracteres anomalos en README.
 
 ## bibliography_rules
 
@@ -158,6 +231,50 @@
 - No propagar supuestos como reglas confirmadas.
 - Mantener reglas institucionales UnADM ya validadas sin regresion.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Propagar en modo recursivo solo tras validacion JSON y deduplicacion.
+- Mantener normalizacion manual cuando reaparezcan entradas heredadas no estructuradas.
+- Registrar ciclo y alcance de propagacion en cada actualizacion.
+- Registrar ciclo 3 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 4 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 5 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 6 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 7 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 8 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 9 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 10 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 11 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Ciclo 1: mantener normalizacion manual si se reutiliza.
+- Registrar ciclo 12 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 13 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 14 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 15 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 16 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 17 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 18 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 19 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 20 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 21 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Registrar ciclo 22 con normalizacion manual si reaparecen entradas no estructuradas.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -179,3 +296,6 @@
 - Supuesto: el estilo de citacion obligatorio aun no esta confirmado.
 - Confirmar nombres canonicos de archivos LaTeX locales por caracteres anomalos en README.
 - Confirmar si filosofia-del-derecho-clean.bib complementa o sustituye el .bib canonico de la asignatura.
+- Confirmar consigna exacta de actividad-2: tema, semana y producto.
+- Confirmar nombres canonicos de archivos LaTeX locales por posibles caracteres anomalos en README.
+- Confirmar si las fuentes provisionales historicas pueden cerrarse como solo antecedente.

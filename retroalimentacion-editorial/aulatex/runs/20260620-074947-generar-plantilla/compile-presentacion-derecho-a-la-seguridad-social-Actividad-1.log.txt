@@ -1,0 +1,209 @@
+Initial Win CP for (console input, console output, system): (CP1252, CP65001, CP1252)
+I changed them all to CP1252
+Rc files read:
+  .latexmkrc
+Latexmk: This is Latexmk, John Collins, 15 June 2025. Version 4.87.
+Latexmk: Getting log file '.build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.log'
+Latexmk: Examining '.build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.log'
+Latexmk: Log file says output to '.build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.pdf'
+No existing .aux file, so I'll make a simple one, and require run of *latex.
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Category 'other':
+  Rerun of 'pdflatex' forced or previously required:
+    Reason or flag: 'Initial setup'
+
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex -halt-on-error -interaction=nonstopmode -file-line-error  -interaction=nonstopmode -file-line-error -recorder -output-directory=".build/latex/aux"  "D:/Documentos/LaTEX/Template-Informe/UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/presentacion-derecho-a-la-seguridad-social-Actividad-1.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+
+(D:/Documentos/LaTEX/Template-Informe/UnADM/licenciatura-en-derecho-unadm/derec
+ho-a-la-seguridad-social-lde/presentacion-derecho-a-la-seguridad-social-Activid
+ad-1.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-07-20>
+(C:\Program Files\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Program Files\MiKTeX\tex/latex/base\size10.clo))
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty))
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty)
+(C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty)
+(C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+(C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg)
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/babel-spanish\spanish.ld
+f (C:\Program Files\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex)))
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/psnfss\helvet.sty)
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def)
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/colortbl\colortbl.sty
+(C:\Program Files\MiKTeX\tex/latex/tools\array.sty))
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg)))
+(C:\Program Files\MiKTeX\tex/latex/ragged2e\ragged2e.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty)
+
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinek
+eys.sty)
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.st
+y (C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty)
+ (C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.st
+y))) (C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty
+) (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty)
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitl
+estring.sty
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty)
+)) (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty)
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/generic/stringenc\stringenc.st
+y) (C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def)
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty)
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.
+sty))) (C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfile
+check.sty
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniqueco
+unter.sty)))
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1phv.fd)
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def)
+(D:\Documentos\LaTEX\Template-Informe\.build\latex\aux\presentacion-derecho-a-l
+a-seguridad-social-Actividad-1.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg))
+
+pdfTeX warning: pdflatex (file D:/Documentos/LaTEX/Template-Informe/base/Planti
+lla-Informe/img/departamentos/UnADM.pdf): PDF inclusion: found PDF version <1.7
+>, but at most version <1.5> allowed
+
+[1{C:/Users/Asus TUF505/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Pr
+ogram Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <D:/Documentos/LaTEX/Template-I
+nforme/base/Plantilla-Informe/img/departamentos/UnADM.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+
+[6]
+(D:\Documentos\LaTEX\Template-Informe\.build\latex\aux\presentacion-derecho-a-l
+a-seguridad-social-Actividad-1.aux)
+
+Package rerunfilecheck Warning: File `presentacion-derecho-a-la-seguridad-socia
+l-Actividad-1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information) <C:\Users\Asus TUF505\AppD
+ata\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1440.pk><C:/Program Fil
+es/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/ty
+pe1/urw/helvetic/uhvr8a.pfb>
+Output written on D:\Documentos\LaTEX\Template-Informe\.build\latex\aux\present
+acion-derecho-a-la-seguridad-social-Actividad-1.pdf (6 pages, 59722 bytes).
+Transcript written on D:\Documentos\LaTEX\Template-Informe\.build\latex\aux\pre
+sentacion-derecho-a-la-seguridad-social-Actividad-1.log.
+Latexmk: Moving '.build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.pdf' to '.build/latex/presentacion-derecho-a-la-seguridad-social-Actividad-1.pdf'
+Latexmk: Getting log file '.build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.log'
+Latexmk: Examining '.build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.fls'
+Latexmk: Examining '.build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.log'
+Latexmk: References changed.
+Latexmk: Log file says output to '.build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.pdf'
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  .build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.aux
+  .build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.out
+
+------------
+Run number 2 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex -halt-on-error -interaction=nonstopmode -file-line-error  -interaction=nonstopmode -file-line-error -recorder -output-directory=".build/latex/aux"  "D:/Documentos/LaTEX/Template-Informe/UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/presentacion-derecho-a-la-seguridad-social-Actividad-1.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+
+(D:/Documentos/LaTEX/Template-Informe/UnADM/licenciatura-en-derecho-unadm/derec
+ho-a-la-seguridad-social-lde/presentacion-derecho-a-la-seguridad-social-Activid
+ad-1.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-07-20>
+(C:\Program Files\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Program Files\MiKTeX\tex/latex/base\size10.clo))
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty))
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty)
+(C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty)
+(C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+(C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg)
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/babel-spanish\spanish.ld
+f (C:\Program Files\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex)))
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/psnfss\helvet.sty)
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def)
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/colortbl\colortbl.sty
+(C:\Program Files\MiKTeX\tex/latex/tools\array.sty))
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg)))
+(C:\Program Files\MiKTeX\tex/latex/ragged2e\ragged2e.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty)
+
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinek
+eys.sty)
+(C:\Users\Asus TUF505\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.st
+y
+Latexmk: Using bibtex to make bibliography file(s).
+Latexmk: Using bibtex to make bibliography file(s).

@@ -1,0 +1,68 @@
+{
+  "summary": [
+    "Se consolida memoria editorial de Actividad 6 con deduplicacion semantica lossless en ciclo 19.",
+    "Se preserva trazabilidad de fallas historicas de parseo como contexto no operativo.",
+    "Se mantiene base editorial desde README y programa analitico locales.",
+    "Se incorporan mejoras verificables de control de calidad y curacion bibliografica.",
+    "Se confirma evidencia local de duplicados y truncamiento en etica-y-moral-juridica.bib."
+  ],
+  "identity_rules": [
+    "Mantener identidad institucional UnADM en toda entrega de Actividad 6.",
+    "Alinear contenido con Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.",
+    "Tomar la carpeta de Etica y Moral juridica como punto de entrada canonico.",
+    "Usar tono academico-juridico y cerrar con criterio propio.",
+    "[Supuesto] Actividad 6 pertenece formalmente a Etica y Moral juridica."
+  ],
+  "structure_rules": [
+    "Estructurar cada producto con problema, conceptos/fuentes, analisis propio y conclusion juridica transferible.",
+    "Ajustar estructura al producto solicitado por la planeacion semanal.",
+    "Verificar coherencia entre objetivo, desarrollo y cierre argumentativo.",
+    "Mantener secciones reutilizables para reporte y presentacion."
+  ],
+  "activity_rules": [
+    "Conservar integridad academica y trazabilidad de afirmaciones.",
+    "Incluir postura argumentada, no solo resumen descriptivo.",
+    "Sustentar afirmaciones con fuentes declaradas y verificables.",
+    "Traducir el contenido a aplicacion profesional juridica cuando proceda.",
+    "Evitar contenido sin sustento verificable."
+  ],
+  "quality_gates": [
+    "Validar JSON parseable antes de cualquier propagacion.",
+    "No propagar salidas no estructuradas sin normalizacion manual.",
+    "Confirmar que no se eliminen reglas utiles previas en cada fusion.",
+    "Verificar consistencia entre consigna de actividad, estructura y conclusion.",
+    "Marcar explicitamente supuestos cuando falte dato formal."
+  ],
+  "latex_rules": [
+    "Preparar contenido compatible con reporte-etica-y-moral-juridica.tex y presentacion-etica-y-moral-juridica.tex.",
+    "Usar secciones claras y estables para compilacion y reutilizacion.",
+    "Mantener consistencia terminologica entre .tex, programa analitico y actividad.",
+    "Evitar paquetes o comandos no justificados por la consigna."
+  ],
+  "bibliography_rules": [
+    "Registrar fuentes especificas de la actividad en etica-y-moral-juridica.bib.",
+    "Priorizar fuentes institucionales UnADM y bibliografia base de la asignatura.",
+    "No inventar fuentes ni completar datos bibliograficos sin respaldo.",
+    "Deduplicar entradas equivalentes por clave canonica sin perder trazabilidad.",
+    "Marcar entradas incompletas para curacion editorial antes de citar.",
+    "Bloquear cita operativa de entradas truncadas hasta completar campos minimos.",
+    "Resolver duplicados evidentes detectados en .bib local: huertaEticaConClasicos2000/huerta2000etica, ronquilloarmasEticaGeneralProfesional2018/ronquillo2018etica, singerCompendioEtica1995/singer1995compendio.",
+    "[Supuesto] La entrada sierraUniversidadNacional1910 esta truncada por campo final incompleto."
+  ],
+  "propagation_hints": [
+    "Propagar recursivamente solo reglas validadas y parseables.",
+    "Aplicar union-dedupe lossless en cada ciclo de fusion.",
+    "Si aparece conflicto, priorizar reglas locales verificadas del destino.",
+    "Reemplazar reglas provisionales por reglas verificadas cuando exista evidencia local.",
+    "Conservar banderas de falla historicas como trazabilidad, no como regla operativa central.",
+    "Mantener normalizacion manual si reaparecen salidas no estructuradas en ciclos siguientes.",
+    "Ciclo 19: mantener normalizacion manual si se reutiliza salida no estructurada."
+  ],
+  "open_questions": [
+    "Confirmar consigna exacta y formato de entrega de la Actividad 6.",
+    "Definir plantilla LaTeX objetivo para Actividad 6: reporte, presentacion u otro.",
+    "Establecer criterio formal de clave canonica para deduplicar .bib.",
+    "Completar y validar campos faltantes en entradas .bib locales.",
+    "[Supuesto] Confirmar cierre correcto del campo final en sierraUniversidadNacional1910."
+  ]
+}

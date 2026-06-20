@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -41,6 +42,61 @@
 - Supuesto: actividad 6 puede requerir enfoque de interpretacion juridica; confirmar rubrica.
 - Memoria heredada reporta salidas no JSON parseables en ciclos previos (Codex y GPT-Pro).
 - Supuesto: el README presenta nombres de archivo con artefactos de formato y requiere saneamiento.
+- Asignatura confirmada: Filosofia del Derecho, Licenciatura en Derecho UnADM.
+- Ubicacion curricular validada: semestre 1, bloque 2, obligatoria, 8 creditos.
+- La carpeta de la asignatura se mantiene como punto de entrada canonico.
+- Se conserva advertencia historica de salidas no JSON parseables en ciclos previos.
+- Fuentes heredadas Codex y GPT-Pro se mantienen como provisionales hasta validacion local.
+- Existe bibliografia local depurada en filosofia-del-derecho-clean.bib para interpretacion juridica.
+- Supuesto: la actividad 6 puede requerir enfoque de interpretacion juridica; confirmar rubrica.
+- Supuesto: README contiene artefactos de formato en nombres de archivo y requiere saneamiento.
+- Salida sin JSON parseable desde Auto (model-router) para Actividad 6
+- Salida sin JSON parseable desde Claude Foundry para Actividad 6
+- Fuente curricular validada: UnADM/assets-unadm/malla-curricular-derecho-unadm.pdf.
+- La carpeta de la asignatura es el punto de entrada canonico.
+- Fuentes heredadas Codex, GPT-Pro, Auto y Claude Foundry se mantienen como provisionales hasta validacion local.
+- Supuesto: scjnIncapacidadResistencia2019 esta truncada en el .bib local y requiere verificacion antes de citar.
+- Supuesto: la entrada scjnIncapacidadResistencia2019 del .bib local esta truncada y requiere verificacion antes de citar.
+- Consolidacion union-dedupe lossless aplicada de actividad 1 a actividad 6.
+- Existe bibliografia local depurada en filosofia-del-derecho-clean.bib orientada a interpretacion juridica.
+- Persisten advertencias historicas de salidas no JSON parseables en ciclos previos.
+- Consolidacion ciclo 8 aplicada con union-dedupe lossless desde actividad 1 hacia actividad 6.
+- Consolidacion ciclo 9 aplicada con union-dedupe lossless entre actividad 1 y actividad 6.
+- Asignatura confirmada: Filosofia del Derecho de la Licenciatura en Derecho UnADM.
+- Consolidacion ciclo 10 aplicada con union-dedupe lossless entre actividad 1 y actividad 6.
+- Consolidacion ciclo 11 aplicada con union-dedupe lossless entre actividad 1 y actividad 6.
+- Supuesto: el README contiene artefactos de formato en nombres de archivo y requiere saneamiento.
+- Consolidacion aplicada entre actividad 1 y actividad 6 con union-dedupe lossless.
+- Fuentes heredadas Codex, GPT-Pro, Auto y Claude Foundry se mantienen provisionales hasta validacion local.
+- Consolidacion ciclo 2 aplicada con union-dedupe lossless entre actividad 1 y actividad 6.
+- Consolidacion ciclo 3 aplicada con union-dedupe lossless entre actividad 1 y actividad 6.
+- Fuente curricular oficial: UnADM/assets-unadm/malla-curricular-derecho-unadm.pdf.
+- El programa analitico mantiene cinco ejes: problema, conceptos o normas, producto, analisis propio y conclusion transferible.
+- Supuesto: la actividad 6 puede requerir interpretacion juridica; confirmar rubrica.
+- Supuesto: la entrada scjnIncapacidadResistencia2019 del .bib local esta truncada y debe verificarse antes de citar.
+- Programa analitico con cinco ejes: problema, conceptos o normas, producto, analisis propio y conclusion transferible.
+- Consolidacion aplicada de actividad 1 a actividad 6 con union-dedupe lossless.
+- Supuesto: README contiene artefactos de formato y plantilla .bib sin resolver.
+- Supuesto: README contiene artefactos de formato en nombres de archivo y plantilla .bib sin resolver.
+- Programa analitico vigente con cinco ejes: problema, conceptos o normas, producto, analisis propio y conclusion transferible.
+- Supuesto: el README contiene artefactos de formato en nombres de archivo y plantilla .bib sin resolver.
+- Consolidacion ciclo 11 aplicada entre actividad 1 y actividad 6 con union-dedupe lossless.
+- Consolidacion ciclo 12 aplicada entre actividad 1 y actividad 6 con union-dedupe lossless.
+- Consolidacion ciclo 13 aplicada entre actividad 1 y actividad 6 con union-dedupe lossless.
+- Consolidacion ciclo 14 aplicada entre actividad 1 y actividad 6 con union-dedupe lossless.
+- Consolidacion ciclo 15 aplicada entre actividad 1 y actividad 6 con union-dedupe lossless.
+- Consolidacion ciclo 16 aplicada entre actividad 1 y actividad 6 con union-dedupe lossless.
+- Supuesto: el README contiene artefactos de formato y plantilla .bib variable sin resolver.
+- Consolidacion ciclo 17 aplicada con union-dedupe lossless entre actividad 1 y actividad 6.
+- La entrada scjnIncapacidadResistencia2019 aparece truncada en el .bib local y requiere verificacion antes de citar.
+- Persisten advertencias historicas de salidas no JSON parseables en ciclos previos y fuentes heredadas provisionales.
+- Supuesto: README contiene artefactos de formato y plantilla .bib variable sin resolver.
+- Consolidacion ciclo 18 aplicada con union-dedupe lossless entre actividad 1 y actividad 6.
+- Consolidacion ciclo 19 aplicada con union-dedupe lossless entre actividad 1 y actividad 6.
+- Supuesto: README contiene artefactos de formato en nombres de archivo y plantilla .bib variable sin resolver.
+- Consolidacion ciclo 20 aplicada con union-dedupe lossless entre actividad 1 y actividad 6.
+- Consolidacion ciclo 21 aplicada entre actividad 1 y actividad 6 con union-dedupe lossless.
+- Consolidacion ciclo 22 aplicada entre actividad 1 y actividad 6 con union-dedupe lossless.
 
 ## identity_rules
 
@@ -62,6 +118,11 @@
 - Etiquetar memoria Codex externa a Derecho como provisional hasta validacion local.
 - Etiquetar fuente GPT-Pro de actividad 1 como provisional hasta validacion local.
 - Aplicar no regresion editorial: no eliminar reglas utiles previas.
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Etiquetar fuente Auto (model-router) de actividad 1 como provisional hasta validacion local.
+- Etiquetar fuente Claude Foundry de actividad 1 como provisional hasta validacion local.
+- Etiquetar como provisionales Codex, GPT-Pro, Auto y Claude Foundry hasta validacion local.
 
 ## structure_rules
 
@@ -80,6 +141,7 @@
 - Usar exactamente el esquema requerido sin claves extra.
 - No omitir claves del esquema requerido.
 - Estructurar productos academicos con problema, marco conceptual-normativo, desarrollo, analisis propio y conclusion.
+- Entregar respuestas en JSON valido y parseable cuando se solicite consolidacion.
 
 ## activity_rules
 
@@ -98,6 +160,7 @@
 - Supuesto: si actividad 6 aborda interpretacion juridica, integrar hermeneutica, argumentacion y aplicacion normativa.
 - Verificar que la conclusion derive del desarrollo.
 - Agregar conclusion juridica argumentada que derive del desarrollo.
+- Supuesto: si la actividad 6 trata interpretacion juridica, integrar hermeneutica, argumentacion y aplicacion normativa.
 
 ## quality_gates
 
@@ -118,6 +181,7 @@
 - Verificar trazabilidad minima de afirmaciones relevantes a fuente o supuesto marcado.
 - Normalizar elementos heredados del ciclo 1 antes de reutilizarlos.
 - Verificar integridad de entradas bibliograficas antes de citarlas.
+- Normalizar elementos heredados de ciclos previos antes de reutilizarlos.
 
 ## latex_rules
 
@@ -156,6 +220,8 @@
 - Fuentes locales detectadas en clean.bib: hernandezManriquezHermeneutica2019, scjnMemoriaArgumentacion2008, scjnViolenciaFisica2022, scjnIncapacidadResistencia2019.
 - Verificar integridad de scjnIncapacidadResistencia2019 antes de citarla si el archivo local aparece truncado.
 - Verificar integridad de scjnIncapacidadResistencia2019 antes de citarla porque el archivo local aparece truncado.
+- Fuentes locales detectadas en filosofia-del-derecho-clean.bib: hernandezManriquezHermeneutica2019, scjnMemoriaArgumentacion2008, scjnViolenciaFisica2022, scjnIncapacidadResistencia2019.
+- Verificar integridad de scjnIncapacidadResistencia2019 antes de citarla.
 
 ## propagation_hints
 
@@ -174,6 +240,56 @@
 - Mantener etiquetas de provisionalidad hasta validacion local.
 - Conservar advertencias historicas de JSON no parseable para nodos con herencia Codex o GPT-Pro.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Conservar advertencias historicas de JSON no parseable para nodos con herencia Codex, GPT-Pro, Auto o Claude Foundry.
+- Ciclo 2 requiere normalizacion manual si se reutiliza.
+- Ciclo 1 y ciclo 2 requieren normalizacion manual si se reutilizan.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 6 antes de reutilizarlos.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 7 antes de reutilizarlos.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 8 antes de reutilizarlos.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 9 antes de reutilizarlos.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 10 antes de reutilizarlos.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 11 antes de reutilizarlos.
+- Ciclo 1 requiere normalizacion manual si se reutiliza.
+- Ciclo 3 requiere normalizacion manual si se reutiliza.
+- Propagar recursivamente con union-dedupe lossless.
+- Normalizar manualmente elementos heredados de ciclos 1 a 12 antes de reutilizarlos.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 13 antes de reutilizarlos.
+- Ciclo 14 requiere normalizacion manual si se reutiliza.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 14 antes de reutilizarlos.
+- Ciclo 15 requiere normalizacion manual si se reutiliza.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 15 antes de reutilizarlos.
+- Ciclo 16 requiere normalizacion manual si se reutiliza.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 16 antes de reutilizarlos.
+- Ciclo 17 requiere normalizacion manual si se reutiliza.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 17 antes de reutilizarlos.
+- Ciclo 18 requiere normalizacion manual si se reutiliza.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 18 antes de reutilizarlos.
+- Ciclo 19 requiere normalizacion manual si se reutiliza.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 19 antes de reutilizarlos.
+- Ciclo 20 requiere normalizacion manual si se reutiliza.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 20 antes de reutilizarlos.
+- Ciclo 21 requiere normalizacion manual si se reutiliza.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente elementos heredados de ciclos 1 a 21 antes de reutilizarlos.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -196,3 +312,10 @@
 - Confirmar si se exige formato de citacion juridica adicional a BibTeX institucional.
 - Confirmar nombre canonico del .bib de la asignatura porque el README usa plantilla variable sin resolver y coexiste filosofia-del-derecho-clean.bib.
 - Confirmar saneamiento del README por artefactos de formato en nombres de archivo.
+- Confirmar si actividad 6 corresponde formalmente a interpretacion juridica o a otro producto de la planeacion semanal.
+- Confirmar nombre canonico del .bib de la asignatura por plantilla variable en README y coexistencia con filosofia-del-derecho-clean.bib.
+- Confirmar integridad completa de la entrada scjnIncapacidadResistencia2019 en el archivo .bib local.
+- Confirmar si fuentes provisionales heredadas deben reemplazarse por fuentes locales validadas.
+- Confirmar si actividad 6 corresponde formalmente a interpretacion juridica o a otro producto semanal.
+- Confirmar si deben usarse de forma obligatoria las fuentes locales de hermeneutica, argumentacion y tesis SCJN en actividad 6.
+- Confirmar si deben usarse de forma obligatoria fuentes locales de hermeneutica, argumentacion y tesis SCJN en actividad 6.

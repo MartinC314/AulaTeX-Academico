@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/derecho-penal-especial-mexicano-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -37,6 +38,30 @@
 - Salida sin JSON parseable desde GPT-Pro para derecho-penal-especial-mexicano-lde.
 - Ciclo 2: expresiones PowerShell sin resolver confirmadas en README y programa analitico.
 - Plantilla TeX presenta authortable truncada en campo Tipo/Creditos (corta en Obligato).
+- Salida sin JSON parseable desde Codex para derecho-penal-especial-mexicano-lde
+- Salida sin JSON parseable desde Auto (model-router) para derecho-penal-especial-mexicano-lde
+- Salida sin JSON parseable desde Claude Foundry para derecho-penal-especial-mexicano-lde
+- Materia destino consolidada con identidad UnADM y control de normalizacion activo.
+- Persisten deudas tecnicas locales: placeholders de slug, expresiones PowerShell sin resolver, nombres corruptos y campo TeX truncado en Tipo/Creditos.
+- Se conserva pauta editorial local: citas verificables, analisis propio y cierre juridico aplicable.
+- Materia destino consolidada con identidad institucional UnADM y control de normalizacion activo.
+- Compresion aplicada por union-dedupe sin perdida y sin regresion.
+- Se mantiene pauta editorial local: citas verificables, analisis propio y cierre juridico aplicable.
+- Persisten deudas tecnicas locales verificadas: placeholders de slug, expresiones PowerShell sin resolver, nombres corruptos y campo TeX truncado en Tipo/Creditos.
+- Ubicacion curricular local verificada: semestre 2, bloque 2, obligatoria, 8 creditos.
+- Persisten deudas tecnicas locales verificadas: placeholders de slug, expresiones PowerShell sin resolver, nombres o rutas corruptas y campo TeX truncado en Tipo/Creditos.
+- No hay insumo tematico verificable desde la actividad origen para transferir contenido disciplinar.
+- Materia consolidada con identidad UnADM y control de normalizacion activo.
+- Materia consolidada con identidad institucional UnADM y control de normalizacion activo.
+- Compresion vigente por union-dedupe sin perdida y sin regresion.
+- Insumos heredados no parseables (Codex/GPT-Pro/Auto/Claude) requieren normalizacion manual previa.
+- Persisten deudas tecnicas verificadas: placeholders de slug, expresiones PowerShell sin resolver, nombres o rutas corruptas y campo TeX truncado en Tipo/Creditos.
+- Insumos heredados no parseables requieren normalizacion manual previa.
+- Supuesto: no hay contenido disciplinar verificable desde actividad origen para transferir.
+- Supuesto: no existe nuevo contenido disciplinar valido en el origen para propagar.
+- Pauta editorial local activa: citas verificables, analisis propio y cierre juridico aplicable.
+- Supuesto: no existe contenido disciplinar verificable desde actividad origen para transferencia tematica.
+- Ubicacion curricular verificada: semestre 2, bloque 2, obligatoria, 8 creditos.
 
 ## identity_rules
 
@@ -60,6 +85,19 @@
 - Autor local visible: Martin Jonathan de la Cruz; matricula ES2611202040; verificar correspondencia real.
 - Figura docente visible como placeholder: Nombre por definir; resolver antes de entrega.
 - Fuente provisional heredada: GPT-Pro desde Actividad 1.
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Conservar autoria real del estudiante y validar autor y matricula antes de entrega final.
+- Mantener figura docente como pendiente cuando solo exista placeholder y resolver antes de entrega.
+- Registrar fuentes provisionales heredadas como metadato de trazabilidad, no como fuente academica.
+- Figura docente visible [supuesto]: Nombre por definir.
+- Autor local visible [supuesto hasta validar]: Martin Jonathan de la Cruz; matricula ES2611202040.
+- Fuente provisional heredada: Auto (model-router) desde Actividad 1.
+- Fuente provisional heredada: Claude Foundry desde Actividad 1.
+- Mantener figura docente como pendiente solo si existe placeholder y resolver antes de entrega.
+- Registrar fuentes provisionales heredadas como trazabilidad tecnica, no como fuente academica.
+- Fuente provisional heredada: Codex desde Actividad 1.
 
 ## structure_rules
 
@@ -79,6 +117,13 @@
 - Corregir entradas corruptas de reporte y referencias en README.
 - Mantener estructura local: reporte, presentacion, bibliografia, programa analitico y carpeta de referencias.
 - Corregir expresiones de plantilla PowerShell sin resolver en README y programa analitico.
+- Usar la carpeta de materia como punto de entrada canonico.
+- Sincronizar README, programa analitico, plantillas TeX y .bib por actividad.
+- Corregir placeholders de slug a derecho-penal-especial-mexicano.bib.
+- Corregir nombres de archivo corruptos sin cambiar el slug canonico.
+- Corregir nombres de archivo y rutas corruptas sin cambiar el slug canonico.
+- Corregir expresiones PowerShell sin resolver en README y programa analitico.
+- Mantener nombres de archivo y slug canonico consistentes.
 
 ## activity_rules
 
@@ -91,6 +136,9 @@
 - No trasladar contenido tematico de filosofia del derecho sin insumo verificable.
 - Agregar fuentes especificas de la actividad al .bib local antes de version final.
 - No usar la actividad origen como base disciplinar si no aporta contenido verificable.
+- Agregar fuentes especificas de la actividad al .bib local antes de la version final.
+- No trasladar contenido tematico de filosofia del derecho sin evidencia verificable.
+- Incluir analisis y postura academica propia con fundamento juridico.
 
 ## quality_gates
 
@@ -109,6 +157,10 @@
 - Normalizar manualmente insumos desestructurados antes de aplicarlos.
 - Detectar expresiones PowerShell o plantillas sin resolver.
 - Detectar nombres de archivo corruptos antes de entrega final.
+- Bloquear propagacion de insumos no JSON parseable.
+- Normalizar manualmente toda respuesta desestructurada antes de aplicar aguas abajo.
+- Detectar placeholders, expresiones PowerShell y rutas corruptas antes de compilar.
+- Revisar coherencia entre README, programa analitico y plantillas TeX.
 
 ## latex_rules
 
@@ -127,6 +179,9 @@
 - Completar campo Tipo/Creditos en authortable como Obligatoria / 8.
 - Mantener Figura docente como dato pendiente solo si no ha sido validada.
 - Completar campo truncado Tipo/Creditos en authortable como Obligatoria / 8.
+- Mantener LDE-S2B2 como dato supuesto hasta confirmacion institucional.
+- Completar authortable en campo Tipo/Creditos como Obligatoria / 8.
+- Mantener figura docente como pendiente solo si no ha sido validada.
 
 ## bibliography_rules
 
@@ -139,6 +194,11 @@
 - No usar la actividad origen como fuente bibliografica si no aporta contenido verificable.
 - Conservar entradas unadmSitioWeb y unadmMallaDerecho2024 como base institucional.
 - Conservar entradas base: unadmSitioWeb y unadmMallaDerecho2024.
+- Usar el archivo .bib local como fuente unica de referencias del entregable.
+- Conservar entradas institucionales base: unadmSitioWeb y unadmMallaDerecho2024.
+- Agregar entradas BibTeX por actividad solo con datos verificables.
+- No inventar fuentes ni metadatos bibliograficos faltantes.
+- Registrar fecha de consulta en recursos web o variables.
 
 ## propagation_hints
 
@@ -156,6 +216,55 @@
 - Propagar correcciones de nombres corruptos si aparecen en materias laterales.
 - Ciclo 2 mantiene control activo de calidad estructural antes de nueva propagacion.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Propagar solo reglas validadas y no contradictorias.
+- Priorizar reglas institucionales UnADM en conflictos de nivel.
+- Propagar a laterales las correcciones de placeholders, campos truncados y nombres corruptos.
+- Propagar reglas de integridad bibliografica a materias de derecho.
+- Ciclo 1: mantener control activo de calidad estructural antes de nueva propagacion.
+- Supuesto: no existe nuevo contenido disciplinar valido en el origen para propagar.
+- Propagar a laterales las correcciones de placeholders, campos truncados, expresiones PowerShell y nombres o rutas corruptas.
+- Ciclo 3: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 4: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 5: mantener control activo de calidad estructural antes de nueva propagacion.
+- Propagar a laterales correcciones de placeholders, campos truncados, expresiones PowerShell y nombres o rutas corruptas.
+- Ciclo 6: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 7: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 8: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 9: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 10: mantener control activo de calidad estructural antes de nueva propagacion.
+- Aplicar deduplicacion semantica sin recorte de informacion util.
+- Ciclo 11: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 12: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclo 14: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclo 15: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclo 17: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclo 18: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclo 19: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclo 20: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclo 21: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclo 22: mantener control activo de calidad estructural antes de nueva propagacion.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -176,3 +285,9 @@
 - Cerrar correccion del placeholder de slug en README y programa analitico.
 - Cerrar correccion del campo Tipo/Creditos en plantilla TeX.
 - Cerrar correccion de expresiones PowerShell sin resolver en README y programa analitico.
+- Confirmar memoria tematica concreta de la actividad origen para herencia disciplinar.
+- Confirmar correspondencia real de autor y matricula visibles.
+- Definir nombre real de figura docente en plantillas.
+- Cerrar correccion de expresiones PowerShell sin resolver.
+- Cerrar correccion de nombres y rutas corruptas en README y estructura TeX.
+- Cerrar correccion del campo Tipo/Creditos truncado en plantilla TeX.

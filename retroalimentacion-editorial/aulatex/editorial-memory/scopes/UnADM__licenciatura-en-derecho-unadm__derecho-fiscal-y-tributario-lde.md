@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/derecho-fiscal-y-tributario-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -19,6 +20,44 @@
 - Salida heredada sin JSON parseable desde Codex para UnADM.
 - Salida sin JSON parseable desde GPT-Pro para derecho-fiscal-y-tributario-lde.
 - Ciclo 2: consolidar memoria sin regresion y sin recorte.
+- Salida sin JSON parseable desde Codex para derecho-fiscal-y-tributario-lde
+- Salida sin JSON parseable desde Auto (model-router) para derecho-fiscal-y-tributario-lde
+- Salida sin JSON parseable desde Claude Foundry para derecho-fiscal-y-tributario-lde
+- Salida sin JSON parseable desde Codex para UnADM.
+- Consolidacion ciclo 1 completada sin regresion y sin recorte.
+- Salida sin JSON parseable desde Codex para derecho-fiscal-y-tributario-lde.
+- Salida sin JSON parseable desde Auto (model-router) para derecho-fiscal-y-tributario-lde.
+- Salida sin JSON parseable desde Claude Foundry para derecho-fiscal-y-tributario-lde.
+- Ciclo 3: consolidar memoria sin regresion y sin recorte.
+- Detectada evidencia local de README y programa analitico con rutas o slugs rotos que requieren normalizacion.
+- Ciclo 4: consolidar memoria sin regresion y sin recorte.
+- Detectada evidencia local de bloque LaTeX authortable truncado en el reporte.
+- Ciclo 5: consolidar memoria sin regresion y con deduplicacion lossless.
+- Ciclo 6: consolidar memoria sin regresion y con deduplicacion lossless.
+- Detectada evidencia local de README y programa analitico con slugs .bib sin expandir que requieren normalizacion.
+- Detectada evidencia local de rutas de estructura con texto truncado en README.
+- Detectada evidencia local de bloque authortable truncado en el reporte LaTeX.
+- Consolidar memoria sin regresion y sin recorte en ciclo 7.
+- Detectada evidencia local de README con rutas truncadas en reporte y referencias.
+- Detectada evidencia local de slug .bib sin expandir en README y programa analitico.
+- Detectada evidencia local de bloque authortable truncado en reporte LaTeX.
+- Consolidar memoria sin regresion y sin recorte en ciclo 8.
+- Detectada evidencia local de README con rutas truncadas en estructura.
+- Registrar incidencias historicas de salida no parseable sin duplicados.
+- Consolidar ciclo 9 sin regresion y sin recorte.
+- Consolidar ciclo 10 sin regresion y sin recorte.
+- Consolidar ciclo 11 sin regresion y sin recorte.
+- Detectada evidencia local de rutas truncadas en README para reporte y referencias.
+- Consolidar ciclo 12 sin regresion y sin recorte.
+- Consolidar ciclo 13 sin regresion y sin recorte.
+- Consolidar ciclo 14 sin regresion y sin recorte.
+- Consolidar ciclo 15 sin regresion y sin recorte.
+- Consolidar ciclo 16 sin regresion y sin recorte.
+- Consolidar ciclo 17 sin regresion y sin recorte.
+- Consolidar ciclo 19 sin regresion y sin recorte.
+- Consolidar ciclo 20 sin regresion y sin recorte.
+- Detectada evidencia local de README y programa analitico con slug .bib sin expandir que requiere normalizacion.
+- Consolidar ciclo 22 sin regresion y sin recorte.
 
 ## identity_rules
 
@@ -32,6 +71,13 @@
 - Fuente provisional: GPT-Pro desde Actividad 1
 - Fuente provisional: GPT-Pro desde Actividad 1.
 - Autor base en plantilla: Martin Jonathan de la Cruz; matricula ES2611202040; verificar antes de compartir.
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Fuente provisional: Codex desde ingenieria-en-sistemas-computacionales.
+- Fuente provisional: Codex desde Actividad 1.
+- Fuente provisional: Auto (model-router) desde Actividad 1.
+- Fuente provisional: Claude Foundry desde Actividad 1.
 
 ## structure_rules
 
@@ -43,6 +89,9 @@
 - Corregir nombres rotos en README antes de publicar.
 - Corregir slug .bib dinamico sin expandir en README y programa analitico.
 - Alinear cada entrega con ejes: problema, conceptos o normas, producto, analisis propio y conclusion.
+- Corregir nombres de rutas truncadas en README antes de publicar.
+- Corregir rutas truncadas en README antes de publicar.
+- Corregir rutas truncadas o rotas en README antes de publicar.
 
 ## activity_rules
 
@@ -63,6 +112,7 @@
 - Comprobar que toda cita usada tenga entrada bibliografica verificable.
 - Verificar integridad de .tex para compilacion y cierre de entornos truncados.
 - Corregir rutas con caracteres anomalos antes de publicar.
+- Corregir rutas o slugs rotos antes de publicar.
 
 ## latex_rules
 
@@ -74,6 +124,8 @@
 - Sustituir placeholders generados por expresiones de plantilla.
 - Reemplazar titulo y subtitulo base por los de la actividad real.
 - Corregir captura incompleta del bloque authortable antes de compilar.
+- Corregir bloque authortable truncado antes de compilar.
+- Cerrar correctamente todos los entornos tabular y el documento.
 
 ## bibliography_rules
 
@@ -96,6 +148,30 @@
 - En ciclo 2, priorizar mejoras verificables del contexto local antes de lateralizar.
 - Aplicar normalizacion manual si la entrada heredada es ambigua.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- En ciclo 6, priorizar mejoras verificables del contexto local antes de lateralizar.
+- En ciclo 7, priorizar mejoras verificables del contexto local antes de lateralizar.
+- En ciclo 8, priorizar mejoras verificables del contexto local antes de lateralizar.
+- Priorizar mejoras verificables del contexto local antes de lateralizar.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -109,3 +185,8 @@
 - Resolver expresiones PowerShell sin expandir en README y programa analitico (.bib slug).
 - Supuesto: la entrada .bib local sera derecho-fiscal-y-tributario.bib en todas las actividades.
 - Resolver expresiones PowerShell sin expandir en README y programa analitico para el slug .bib.
+- Cerrar correctamente el bloque authortable y el documento LaTeX del reporte.
+- Corregir rutas truncadas en README para reporte y referencias.
+- Resolver expresiones PowerShell sin expandir para el slug .bib en README y programa analitico.
+- Cerrar completamente el bloque authortable y el documento LaTeX del reporte.
+- Resolver slug .bib sin expandir en README y programa analitico.

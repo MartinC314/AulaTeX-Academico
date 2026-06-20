@@ -1,0 +1,203 @@
+% AulaTeX - maqueta inicial de construcción descendente
+% Contrato futuro: el Agente puede investigar, redactar, evaluar y compilar a partir de este archivo.
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{longtable}
+
+\title{UAS}
+\author{AulaTeX}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Nodo editorial:} UAS\\
+\textbf{Padre editorial:} interinstitucional\\
+\textbf{Modo de generación:} reforzar\\
+\textbf{Destino:} UAS\\
+\textbf{Contrato futuro:} ready-for-agent
+
+\section*{Ingesta base}
+\begin{itemize}[leftmargin=*]
+  \item Texto libre proporcionado: sí
+  \item Documento de apoyo proporcionado: no
+\end{itemize}
+
+\subsection*{Resumen de la ingesta textual}
+\begin{quote}
+https://www.uas.edu.mx/
+\end{quote}
+
+\section*{Objetivo}
+\begin{itemize}[leftmargin=*]
+  \item Establecer una base institucional compilable y reutilizable para producción académica en LaTeX.
+  \item Estandarizar entradas de reporte, actividad y presentación para programas UAS.
+  \item Completar la maqueta inicial de UAS.
+  \item Disponer de una base institucional compilable para producción académica UAS.
+  \item Estandarizar estructura mínima de reporte, actividad y presentación.
+  \item Facilitar escalamiento por carrera/materia con trazabilidad editorial.
+\end{itemize}
+
+\section*{Competencias}
+\begin{itemize}[leftmargin=*]
+  \item Gestión editorial académica con estructura modular.
+  \item Uso de plantillas LaTeX institucionales con control bibliográfico.
+  \item Trazabilidad entre investigación, redacción y compilación.
+  \item Gestión de documentos académicos LaTeX bajo contrato institucional.
+  \item Aplicación de criterios de calidad editorial y citación verificable.
+  \item Organización modular de contenidos por carrera y materia.
+\end{itemize}
+
+\section*{Resultados esperados}
+\begin{itemize}[leftmargin=*]
+  \item Nodo UAS con artefactos canónicos listos para completar.
+  \item Rutas y convenciones estables para crecimiento por carrera/materia.
+  \item Checklist mínimo de calidad para compilación y citación.
+  \item Entradas .tex institucionales listas para completar por agente.
+  \item Estructura de carpetas estable y reutilizable.
+  \item Bibliografía base institucional preparada para crecimiento controlado.
+\end{itemize}
+
+\section*{Estructura sugerida}
+\begin{itemize}[leftmargin=*]
+  \item Portada institucional y metadatos de asignatura.
+  \item Objetivo y competencias de la actividad/reporte.
+  \item Desarrollo por secciones con evidencias y citas.
+  \item Criterios de evaluación/rúbrica resumida.
+  \item Conclusiones, referencias y anexos (si aplica).
+  \item Portada y metadatos institucionales/materia.
+  \item Objetivo, competencias y alcance de la entrega.
+  \item Desarrollo seccionado con evidencias y citas.
+  \item Criterios de evaluación o rúbrica breve.
+  \item Cierre, referencias y anexos opcionales.
+  \item Bloque de pendientes de investigación en comentarios.
+\end{itemize}
+
+\section*{Criterios de evaluación}
+\begin{itemize}[leftmargin=*]
+  \item Pertinencia académica respecto a programa/materia validada.
+  \item Claridad argumentativa y coherencia interna.
+  \item Uso correcto de citas y referencias verificables.
+  \item Compilación limpia y formato consistente.
+  \item Coherencia entre propósito, desarrollo y evaluación.
+  \item Cumplimiento de formato y compilación sin errores.
+  \item Uso correcto de fuentes verificables y citas trazables.
+  \item Consistencia terminológica en toda la entrega.
+\end{itemize}
+
+\section*{Bibliografía requerida}
+\begin{itemize}[leftmargin=*]
+  \item Archivo base: bibliografia-uas.bib.
+  \item Fuentes oficiales UAS y documentos académicos verificables.
+  \item Norma de citación definida por plantilla o lineamiento de curso.
+  \item bibliografia-uas.bib como base institucional.
+  \item Fuentes oficiales UAS y normativa académica pública.
+  \item Fuentes disciplinares validadas en fase de investigación.
+\end{itemize}
+
+\section*{Marcadores de investigación}
+\begin{itemize}[leftmargin=*]
+  \item [pendiente: catálogo oficial de carreras UAS]
+  \item [pendiente: lineamientos de evaluación por unidad académica]
+  \item [pendiente: programa analítico de materia objetivo]
+  \item [pendiente: fuentes troncales por disciplina]
+  \item Definir fuentes, citas y vacíos de contenido antes de redactar.
+  \item [pendiente] catálogo oficial de carreras UAS vigente
+  \item [pendiente] programas analíticos por materia prioritaria
+  \item [pendiente] lineamientos de evaluación institucionales o por unidad académica
+  \item [pendiente] corpus bibliográfico troncal por disciplina
+\end{itemize}
+
+\section*{Indicaciones editoriales por entregable}
+
+\subsection*{Plantilla}
+\begin{itemize}[leftmargin=*]
+  \item \\% Archivo: UAS/reporte-uas.tex
+  \item \\% Estructura mínima: \\textbackslash\\{\\}input\\{template\\} + metadatos + secciones base + \\textbackslash\\{\\}bibliography\\{bibliografia-uas\\}
+  \item \\% Mantener compatibilidad con TEXINPUTS/BIBINPUTS del repositorio.
+  \item Definir plantilla base con reglas editoriales, assets y referencias de estilo antes de redactar.
+  \item \\% UAS/reporte-uas.tex
+  \item \\% \\textbackslash\\{\\}input\\{template\\} desde base/ por TEXINPUTS
+  \item \\% Metadatos: institucion, carrera, materia, periodo, autor
+  \item \\% Secciones mínimas: objetivo, competencias, desarrollo, evaluacion, cierre
+  \item \\% \\textbackslash\\{\\}bibliography\\{bibliografia-uas\\}
+  \item Prepara una raíz institucional reutilizable con carpetas por carrera, carpeta assets y referencias claras a plantillas LaTeX compartidas.
+  \item Usar punto de entrada .tex por tipo de entrega: reporte, actividad, presentacion.
+  \item Resolver plantillas mediante TEXINPUTS configurado en .latexmkrc; no hardcodear rutas absolutas.
+  \item Resolver .bib mediante BIBINPUTS y nombre consistente por institución/materia.
+  \item Conservar raíz con archivos canónicos institucionales en UAS/.
+  \item Crear/normalizar carpeta assets/ para recursos gráficos y tablas reutilizables.
+  \item Organizar contenido académico por carrera/programa dentro de subcarpetas dedicadas.
+  \item Usa la ingesta proporcionada como restricción editorial inicial.
+\end{itemize}
+
+\subsection*{Actividad}
+\begin{itemize}[leftmargin=*]
+  \item \\% Archivo sugerido por materia: UAS/<carrera>/<materia>/actividad-<slug>.tex
+  \item \\% Secciones: contexto, instrucciones, desarrollo, evidencia, criterios de evaluación, referencias.
+  \item \\% Incluir marcador de investigación pendiente en comentarios.
+  \item Desarrollar la actividad respetando objetivo, criterios de evaluación y marcadores de investigación.
+  \item \\% UAS/<carrera>/<materia>/actividad-<slug>.tex
+  \item \\% Secciones: contexto, instrucciones, entregables, criterios, referencias
+  \item \\% Incluir bloque \\% [pendiente-investigacion] cuando aplique
+  \item \\% Mantener actividad como plantilla incompleta, no contenido final
+  \item Establecer una base institucional compilable y reutilizable para producción académica en LaTeX.
+  \item Estandarizar entradas de reporte, actividad y presentación para programas UAS.
+  \item Pertinencia académica respecto a programa/materia validada.
+  \item Claridad argumentativa y coherencia interna.
+  \item Uso correcto de citas y referencias verificables.
+  \item Validar oferta académica y denominaciones oficiales en https://www.uas.edu.mx/.
+  \item Confirmar estructura de carreras/facultades para crear subcarpetas reales.
+  \item Recuperar lineamientos de evaluación o formato institucional, si existen públicamente.
+  \item Usa la ingesta proporcionada como restricción editorial inicial.
+\end{itemize}
+
+\subsection*{Reporte}
+\begin{itemize}[leftmargin=*]
+  \item \\% Archivo sugerido por materia: UAS/<carrera>/<materia>/reporte-<slug>.tex
+  \item \\% Secciones: introducción, objetivos, marco conceptual, desarrollo, conclusiones, bibliografía.
+  \item \\% Usar bibliografía institucional o específica de materia según volumen.
+  \item Estructurar el reporte con bibliografía requerida y cierre verificable.
+  \item \\% UAS/<carrera>/<materia>/reporte-<slug>.tex
+  \item \\% Secciones: introduccion, objetivos, marco, desarrollo, conclusiones, referencias
+  \item \\% Reusar estructura institucional y ajustar a materia
+  \item \\% Citar solo entradas existentes en .bib verificado
+  \item UAS/reporte-uas.tex
+  \item UAS/presentacion-uas.tex
+  \item UAS/bibliografia-uas.bib
+  \item Redacción formal académica en español claro, sin tono promocional.
+  \item Bullets breves y accionables en guías editoriales.
+  \item Consistencia terminológica entre portada, objetivos, competencias y evaluación.
+  \item Priorizar archivo institucional bibliografia-uas.bib como contenedor maestro inicial.
+  \item Permitir .bib por materia cuando el volumen crezca, manteniendo trazabilidad.
+  \item Registrar solo fuentes verificables y citables; sin placeholders falsos.
+  \item Compila sin errores con scripts/latexmk-build.ps1 pasando solo el .tex objetivo.
+  \item Cada .tex declara bibliografía institucional o de materia existente.
+  \item No hay rutas rotas de assets ni includes de plantillas.
+\end{itemize}
+
+\subsection*{Presentación}
+\begin{itemize}[leftmargin=*]
+  \item \\% Archivo: UAS/presentacion-uas.tex o por materia.
+  \item \\% Estructura: portada, objetivo, puntos clave, cierre, referencias.
+  \item \\% Diseñar para síntesis visual; contenido extenso queda en reporte.
+  \item Preparar la presentación con síntesis visual, continuidad editorial y evidencias clave.
+  \item \\% UAS/presentacion-uas.tex o UAS/<carrera>/<materia>/presentacion-<slug>.tex
+  \item \\% Estructura: portada, objetivo, hallazgos clave, cierre, referencias
+  \item \\% Priorizar sintesis visual y consistencia con reporte asociado
+  \item \\% Sin duplicar desarrollo extenso del reporte
+  \item Nodo UAS con artefactos canónicos listos para completar.
+  \item Rutas y convenciones estables para crecimiento por carrera/materia.
+  \item Checklist mínimo de calidad para compilación y citación.
+  \item Redacción formal académica en español claro, sin tono promocional.
+  \item Bullets breves y accionables en guías editoriales.
+  \item Reforzamiento de memoria, estructura y convenciones de archivos.
+  \item Definición de maqueta inicial reusable para actividades y reportes.
+  \item Sintetiza visualmente la memoria editorial sin perder continuidad con plantilla, actividad y reporte.
+\end{itemize}
+
+\end{document}

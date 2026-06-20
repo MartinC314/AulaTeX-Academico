@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -27,6 +28,48 @@
 - Materia destino: Bases de derecho internacional publico (UnADM, Licenciatura en Derecho).
 - Ubicacion curricular: semestre 4, bloque 1, obligatoria, 8 creditos.
 - Supuesto: actividad origen (filosofia-del-derecho/actividad-1) no aporta reglas nuevas estructuradas en este ciclo.
+- Se conserva incidencia historica de salida no estructurada en ciclos previos.
+- Se detectan tokens sin expandir y caracteres anómalos en README y programa analitico.
+- Se detecta corte de entorno tabular en el reporte .tex.
+- Salida sin JSON parseable desde Auto (model-router) para bases-de-derecho-internacional-publico-lde
+- Salida sin JSON parseable desde Claude Foundry para bases-de-derecho-internacional-publico-lde
+- Materia destino con plantilla base, programa analitico y bibliografia local ya definidos.
+- Se conserva incidencia historica de salidas no estructuradas en ciclos previos.
+- Se detectan tokens sin expandir en README y programa analitico.
+- Se detectan caracteres anómalos en README.
+- Se detecta corte de entorno tabular en reporte-bases-de-derecho-internacional-publico.tex.
+- Se conservan incidencias historicas de salidas no estructuradas en ciclos previos.
+- Propagacion recursiva en ciclo 5 con compresion union-dedupe lossless.
+- Propagacion recursiva en ciclo 6 con compresion union-dedupe lossless.
+- Se detectan caracteres anomalos en README.
+- Propagacion recursiva en ciclo 7 con compresion union-dedupe lossless.
+- Propagacion recursiva en ciclo 8 con compresion union-dedupe lossless.
+- Propagacion recursiva en ciclo 9 con compresion union-dedupe lossless.
+- Propagacion recursiva en ciclo 10 con compresion union-dedupe lossless.
+- Supuesto: actividad origen no aporta reglas nuevas estructuradas verificables en este ciclo.
+- Propagacion recursiva en ciclo 11 con compresion union-dedupe lossless.
+- Propagacion recursiva en ciclo 1 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 2 con compresion union-dedupe lossless.
+- Supuesto: actividad origen (filosofia-del-derecho/actividad-1) no aporta reglas nuevas estructuradas verificables en este ciclo.
+- Salida sin JSON parseable desde Codex para bases-de-derecho-internacional-publico-lde
+- Propagacion recursiva activa en ciclo 4 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 5 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 6 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 7 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 9 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 10 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 11 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 12 con compresion union-dedupe lossless.
+- Asignatura UnADM de Licenciatura en Derecho: semestre 4, bloque 1, obligatoria, 8 creditos.
+- Propagacion recursiva activa en ciclo 13 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 14 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 15 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 16 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 17 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 18 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 19 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 20 con compresion union-dedupe lossless.
+- Propagacion recursiva activa en ciclo 22 con compresion union-dedupe lossless.
 
 ## identity_rules
 
@@ -41,6 +84,12 @@
 - Tratar fuentes provisionales de trazabilidad (Codex/GPT-Pro) como procedencia, no como identidad del entregable.
 - Tratar Codex y GPT-Pro como procedencia provisional, no como identidad del entregable.
 - Conservar al alumno registrado en plantilla si no hay instruccion local que lo sustituya.
+- Tratar fuentes provisionales (Codex/GPT-Pro) como procedencia, no como identidad del entregable.
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Tratar fuentes provisionales (Codex/GPT-Pro/Auto/Claude Foundry) como procedencia, no como identidad del entregable.
+- Fuente provisional: Codex desde Actividad 1
+- Tratar fuentes provisionales (Codex, GPT-Pro, Auto, Claude Foundry) como procedencia, no como identidad del entregable.
 
 ## structure_rules
 
@@ -77,6 +126,8 @@
 - Revisar respuestas no estructuradas antes de aplicarlas aguas abajo.
 - Revisar respuesta no estructurada antes de aplicar aguas abajo.
 - Verificar que README, programa analitico, .bib y plantillas locales coincidan.
+- Validar JSON parseable antes de propagar memoria.
+- Mantener auditoria de parseo JSON antes de nueva propagacion.
 
 ## latex_rules
 
@@ -119,6 +170,61 @@
 - Conservar incidencias historicas de salida no estructurada detectadas en ciclos previos.
 - Propagar correcciones locales solo despues de verificar archivos afectados.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Propagar solo reglas verificadas y no duplicadas.
+- Ciclo 2 requiere normalizacion manual si se reutiliza.
+- Propagar recursivamente solo reglas verificadas y no duplicadas.
+- Conservar incidencias historicas de salida no estructurada de ciclos previos.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5: mantener auditoria de parseo JSON antes de nueva propagacion.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7: mantener auditoria de parseo JSON antes de nueva propagacion.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8: mantener auditoria de parseo JSON antes de nueva propagacion.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9: mantener auditoria de parseo JSON antes de nueva propagacion.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10: mantener auditoria de parseo JSON antes de nueva propagacion.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11: mantener auditoria de parseo JSON antes de nueva propagacion.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Mantener auditoria de parseo JSON antes de nueva propagacion.
+- Ciclo 3 requiere normalizacion manual si se reutiliza.
+- Ciclo 4 requiere normalizacion manual si se reutiliza.
+- Ciclo 5 requiere normalizacion manual si se reutiliza.
+- Ciclo 6 requiere normalizacion manual si se reutiliza.
+- Ciclo 7 requiere normalizacion manual si se reutiliza.
+- Ciclo 8 requiere normalizacion manual si se reutiliza.
+- Ciclo 9 requiere normalizacion manual si se reutiliza.
+- Ciclo 10 requiere normalizacion manual si se reutiliza.
+- Ciclo 11 requiere normalizacion manual si se reutiliza.
+- Ciclo 12: mantener auditoria de parseo JSON antes de nueva propagacion.
+- Ciclo 12 requiere normalizacion manual si se reutiliza.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13: mantener auditoria de parseo JSON antes de nueva propagacion.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclo 13 requiere normalizacion manual si se reutiliza.
+- Ciclo 14: mantener auditoria de parseo JSON antes de nueva propagacion.
+- Ciclo 14 requiere normalizacion manual si se reutiliza.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclo 15: mantener auditoria de parseo JSON antes de nueva propagacion.
+- Ciclo 15 requiere normalizacion manual si se reutiliza.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16 requiere normalizacion manual si se reutiliza.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 16 requieren normalizacion manual si se reutilizan.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 17 requieren normalizacion manual si se reutilizan.
+- Ciclo 18 requiere normalizacion manual si se reutiliza.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 19 requieren normalizacion manual si se reutilizan.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 20 requieren normalizacion manual si se reutilizan.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclos 1 a 22 requieren normalizacion manual si se reutilizan.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -135,3 +241,10 @@
 - Revisar nombres en README con caracteres anomalos.
 - Corregir tokens sin expandir en README y programa analitico.
 - Corregir en README los nombres con caracteres anomalos y tokens sin expandir ($(@{...}.Slug)).
+- Confirmar criterio editorial sobre publico sin acento frente a público con acento.
+- Normalizar nombres con caracteres anómalos en README.
+- Corregir tokens sin expandir ($(@{...}.Slug)) en README y programa analitico.
+- Reparar corte de entorno tabular en reporte-bases-de-derecho-internacional-publico.tex.
+- Supuesto: confirmar si actividad-1 de filosofia-del-derecho aporta memoria estructurada adicional para fusion futura.
+- Normalizar nombres con caracteres anomalos en README.
+- Confirmar si actividad-1 de filosofia-del-derecho aporta memoria estructurada adicional para fusion futura.

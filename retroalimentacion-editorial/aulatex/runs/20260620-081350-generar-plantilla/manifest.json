@@ -1,0 +1,190 @@
+{
+  "run_id": "20260620-081350",
+  "target": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+  "display_target": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": true,
+      "error": "",
+      "chars": 4678
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-1.tex",
+      "ok": true,
+      "returncode": 0,
+      "stdout_tail": "plate-Informe\\.build\\latex\\aux\\reporte-derecho-a-la-seg\nuridad-social-Actividad-1.out)\n(D:\\Documentos\\LaTEX\\Template-Informe\\.build\\latex\\aux\\reporte-derecho-a-la-seg\nuridad-social-Actividad-1.out)\n\npdfTeX warning: pdflatex (file D:/Documentos/LaTEX/Template-Informe/base/Planti\nlla-Informe/img/departamentos/UnADM.pdf): PDF inclusion: found PDF version <1.7\n>, but at most version <1.5> allowed\n\n[1{C:/Users/Asus TUF505/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Pr\nogram Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <D:/Documentos/LaTEX/Template-I\nnforme/base/Plantilla-Informe/img/departamentos/UnADM.pdf>]\n(D:\\Documentos\\LaTEX\\Template-Informe\\.build\\latex\\aux\\reporte-derecho-a-la-seg\nuridad-social-Actividad-1.toc)\n\npdfTeX warning (ext4): destination with the same identifier (name{page.1}) has \nbeen already used, duplicate ignored\n<to be read again> \n                   \\relax \nl.63 \\clearpage\n                [1]\n[2]\n[3]\n[4]\n(D:\\Documentos\\LaTEX\\Template-Informe\\.build\\latex\\aux\\reporte-derecho-a-la-seg\nuridad-social-Actividad-1.bbl)\n[5]\n(D:\\Documentos\\LaTEX\\Template-Informe\\.build\\latex\\aux\\reporte-derecho-a-la-seg\nuridad-social-Actividad-1.aux) )\n(see the transcript file for additional information) <C:\\Users\\Asus TUF505\\AppD\nata\\Local\\MiKTeX\\fonts/pk/ljfour/jknappen/ec/dpi600\\ectt1200.pk><C:/Program Fil\nes/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/ty\npe1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/u\nhvro8a.pfb>\nOutput written on D:\\Documentos\\LaTEX\\Template-Informe\\.build\\latex\\aux\\reporte\n-derecho-a-la-seguridad-social-Actividad-1.pdf (6 pages, 84823 bytes).\nTranscript written on D:\\Documentos\\LaTEX\\Template-Informe\\.build\\latex\\aux\\rep\norte-derecho-a-la-seguridad-social-Actividad-1.log.\nLatexmk: Moving '.build/latex/aux/reporte-derecho-a-la-seguridad-social-Actividad-1.pdf' to '.build/latex/reporte-derecho-a-la-seguridad-social-Actividad-1.pdf'\nLatexmk: Getting log file '.build/latex/aux/reporte-derecho-a-la-seguridad-social-Actividad-1.log'\nLatexmk: Examining '.build/latex/aux/reporte-derecho-a-la-seguridad-social-Actividad-1.fls'\nLatexmk: Examining '.build/latex/aux/reporte-derecho-a-la-seguridad-social-Actividad-1.log'\nLatexmk: Found input bbl file '.build/latex/aux/reporte-derecho-a-la-seguridad-social-Actividad-1.bbl'\nLatexmk: Log file says output to '.build/latex/aux/reporte-derecho-a-la-seguridad-social-Actividad-1.pdf'\n  ===Source file '.build/latex/aux/reporte-derecho-a-la-seguridad-social-Actividad-1.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  D:/Documentos/LaTEX/Template-Informe/UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib\nLatexmk: All targets (.build/latex/reporte-derecho-a-la-seguridad-social-Actividad-1.pdf) are up-to-date\n\nPDF final: D:\\Documentos\\LaTEX\\Template-Informe\\UnADM\\licenciatura-en-derecho-unadm\\derecho-a-la-seguridad-social-lde\\reporte-derecho-a-la-seguridad-social-Actividad-1.pdf\n",
+      "stderr_tail": "Latexmk: Using bibtex to make bibliography file(s).\nLatexmk: Missing input file 'reporte-derecho-a-la-seguridad-social-Actividad-1.toc' message in .log file:\n  No file reporte-derecho-a-la-seguridad-social-Actividad-1.toc.\nLatexmk: Missing bbl file '.build/latex/aux/reporte-derecho-a-la-seguridad-social-Actividad-1.bbl' in following:\n No file reporte-derecho-a-la-seguridad-social-Actividad-1.bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nReverting Windows console CPs to (in,out) = (1252,65001)\n"
+    },
+    {
+      "tex": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/presentacion-derecho-a-la-seguridad-social-Actividad-1.tex",
+      "ok": true,
+      "returncode": 0,
+      "stdout_tail": "ackend\\l3backend-pdftex.def)\n(D:\\Documentos\\LaTEX\\Template-Informe\\.build\\latex\\aux\\presentacion-derecho-a-l\na-seguridad-social-Actividad-1.aux)\n*geometry* driver: auto-detecting\n*geometry* detected driver: pdftex\n(C:\\Program Files\\MiKTeX\\tex/context/base/mkii\\supp-pdf.mkii\n[Loading MPS to PDF converter (version 2006.09.02).]\n) (C:\\Program Files\\MiKTeX\\tex/latex/epstopdf-pkg\\epstopdf-base.sty\n(C:\\Program Files\\MiKTeX\\tex/latex/00miktex\\epstopdf-sys.cfg))\n(D:\\Documentos\\LaTEX\\Template-Informe\\.build\\latex\\aux\\presentacion-derecho-a-l\na-seguridad-social-Actividad-1.out)\n(D:\\Documentos\\LaTEX\\Template-Informe\\.build\\latex\\aux\\presentacion-derecho-a-l\na-seguridad-social-Actividad-1.out)\n\npdfTeX warning: pdflatex (file D:/Documentos/LaTEX/Template-Informe/base/Planti\nlla-Informe/img/departamentos/UnADM.pdf): PDF inclusion: found PDF version <1.7\n>, but at most version <1.5> allowed\n\n[1{C:/Users/Asus TUF505/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Pr\nogram Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <D:/Documentos/LaTEX/Template-I\nnforme/base/Plantilla-Informe/img/departamentos/UnADM.pdf>]\nUnderfull \\hbox (badness 10000) in paragraph at lines 90--91\n\n\n[2]\nUnderfull \\hbox (badness 10000) in paragraph at lines 99--100\n\n\n[3]\nUnderfull \\hbox (badness 10000) in paragraph at lines 109--110\n\n\n[4]\nUnderfull \\hbox (badness 10000) in paragraph at lines 118--119\n\n\n[5]\nUnderfull \\hbox (badness 10000) in paragraph at lines 124--125\n\n\n[6]\n(D:\\Documentos\\LaTEX\\Template-Informe\\.build\\latex\\aux\\presentacion-derecho-a-l\na-seguridad-social-Actividad-1.aux) )\n(see the transcript file for additional information) <C:\\Users\\Asus TUF505\\AppD\nata\\Local\\MiKTeX\\fonts/pk/ljfour/jknappen/ec/dpi600\\ectt1440.pk><C:/Program Fil\nes/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/ty\npe1/urw/helvetic/uhvr8a.pfb>\nOutput written on D:\\Documentos\\LaTEX\\Template-Informe\\.build\\latex\\aux\\present\nacion-derecho-a-la-seguridad-social-Actividad-1.pdf (6 pages, 59722 bytes).\nTranscript written on D:\\Documentos\\LaTEX\\Template-Informe\\.build\\latex\\aux\\pre\nsentacion-derecho-a-la-seguridad-social-Actividad-1.log.\nLatexmk: Moving '.build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.pdf' to '.build/latex/presentacion-derecho-a-la-seguridad-social-Actividad-1.pdf'\nLatexmk: Getting log file '.build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.log'\nLatexmk: Examining '.build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.fls'\nLatexmk: Examining '.build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.log'\nLatexmk: Log file says output to '.build/latex/aux/presentacion-derecho-a-la-seguridad-social-Actividad-1.pdf'\nLatexmk: All targets (.build/latex/presentacion-derecho-a-la-seguridad-social-Actividad-1.pdf) are up-to-date\n\nPDF final: D:\\Documentos\\LaTEX\\Template-Informe\\UnADM\\licenciatura-en-derecho-unadm\\derecho-a-la-seguridad-social-lde\\presentacion-derecho-a-la-seguridad-social-Actividad-1.pdf\n",
+      "stderr_tail": "Latexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nReverting Windows console CPs to (in,out) = (1252,65001)\n"
+    }
+  ],
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+    "artifacts": [
+      "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/referencias-derecho-a-la-seguridad-social",
+      "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/planeaciones-derecho-a-la-seguridad-social",
+      "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/assets-derecho-a-la-seguridad-social",
+      "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/README.md",
+      "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/COMPILACION-derecho-a-la-seguridad-social.md",
+      "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/programa-analitico-derecho-a-la-seguridad-social.md",
+      "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+      "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social.tex",
+      "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-1.tex",
+      "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/informe-derecho-a-la-seguridad-social.tex",
+      "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/presentacion-derecho-a-la-seguridad-social.tex",
+      "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/presentacion-derecho-a-la-seguridad-social-Actividad-1.tex",
+      "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/README.md",
+      "Materializado: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/COMPILACION-derecho-a-la-seguridad-social.md",
+      "Materializado: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/programa-analitico-derecho-a-la-seguridad-social.md",
+      "Materializado: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+      "Materializado: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social.tex",
+      "Materializado: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-1.tex",
+      "Materializado: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/informe-derecho-a-la-seguridad-social.tex",
+      "Materializado: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/presentacion-derecho-a-la-seguridad-social.tex",
+      "Materializado: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/presentacion-derecho-a-la-seguridad-social-Actividad-1.tex",
+      "Materializado: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 9.23,
+    "passed": true,
+    "criteria": {
+      "identidad_institucional": true,
+      "bibliografia": true,
+      "trazabilidad": true,
+      "compilacion": true,
+      "riesgos": true
+    },
+    "role_scores": {
+      "Planificador editorial": 8.6
+    },
+    "risks": [],
+    "recommendations": [
+      "Usar el reporte como retroalimentacion editorial aplicable al objetivo."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-06-20 08:13:50",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-06-20 08:13:51",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-06-20 08:14:02",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "ok",
+      "detail": "planificar: 4678 chars"
+    },
+    {
+      "timestamp": "2026-06-20 08:14:02",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-06-20 08:14:02",
+      "state": "planned",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-06-20 08:14:02",
+      "state": "planned",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "13 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-06-20 08:14:02",
+      "state": "planned",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-06-20 08:16:54",
+      "state": "planned",
+      "action": "tool-result",
+      "status": "ok",
+      "detail": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-1.tex rc=0"
+    },
+    {
+      "timestamp": "2026-06-20 08:18:08",
+      "state": "planned",
+      "action": "tool-result",
+      "status": "ok",
+      "detail": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/presentacion-derecho-a-la-seguridad-social-Actividad-1.tex rc=0"
+    },
+    {
+      "timestamp": "2026-06-20 08:18:08",
+      "state": "planned",
+      "action": "consensus",
+      "status": "ok",
+      "detail": "score=9.23"
+    },
+    {
+      "timestamp": "2026-06-20 08:18:08",
+      "state": "evaluated",
+      "action": "planned->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-06-20 08:18:08",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}

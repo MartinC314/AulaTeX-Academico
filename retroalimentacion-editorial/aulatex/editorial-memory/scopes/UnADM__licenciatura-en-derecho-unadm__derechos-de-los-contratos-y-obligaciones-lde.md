@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/derechos-de-los-contratos-y-obligaciones-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -25,6 +26,12 @@
 - Las salidas sin JSON parseable requieren normalizacion antes de propagar.
 - El contexto local confirma README, programa analitico, reporte base y archivo .bib local.
 - El contexto local contiene placeholders PowerShell y caracteres de control en rutas que deben corregirse.
+- Salida sin JSON parseable desde Codex para derechos-de-los-contratos-y-obligaciones-lde
+- Salida sin JSON parseable desde Auto (model-router) para derechos-de-los-contratos-y-obligaciones-lde
+- Salida sin JSON parseable desde Claude Foundry para derechos-de-los-contratos-y-obligaciones-lde
+- Base institucional UnADM reusable y activa en la materia.
+- Existe herencia institucional provisional desde Codex, GPT-Pro, Auto y Claude Foundry que requiere validacion.
+- Base institucional UnADM reutilizable y activa en la materia.
 
 ## identity_rules
 
@@ -40,6 +47,13 @@
 - Fuente provisional: GPT-Pro desde Actividad 1.
 - Fuente provisional: Codex desde ingenieria-en-sistemas-computacionales.
 - Tratar la herencia GPT-Pro desde Actividad 1 como provisional.
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Tratar herencias de Codex, GPT-Pro, Auto y Claude Foundry como provisionales.
+- Fuente provisional: Codex desde Actividad 1.
+- Fuente provisional: Auto (model-router) desde Actividad 1.
+- Fuente provisional: Claude Foundry desde Actividad 1.
 
 ## structure_rules
 
@@ -118,6 +132,47 @@
 - Excluir metadatos especificos de la materia cuando no coincidan con el destino lateral.
 - Reutilizar controles de placeholders en carpetas con rutas generadas por PowerShell.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Normalizar manualmente la herencia de ciclos previos si se reutiliza.
+- Propagar estas reglas a actividades hijas de la materia en ciclo 3.
+- Propagar estas reglas a actividades hijas de la materia en ciclo 4.
+- Propagar estas reglas a actividades hijas de la materia en ciclo 5.
+- Propagar estas reglas a actividades hijas de la materia en ciclo 6.
+- Propagar estas reglas a actividades hijas de la materia en ciclo 7.
+- Propagar estas reglas a actividades hijas de la materia en ciclo 8.
+- Propagar estas reglas a actividades hijas de la materia en ciclo 9.
+- Propagar estas reglas a actividades hijas de la materia en ciclo 10.
+- Propagar estas reglas a actividades hijas de la materia en ciclo 11.
+- Propagar estas reglas a actividades hijas de la materia en ciclo 12.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Propagar estas reglas a actividades hijas de la materia en ciclo 13.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente a actividades hijas de la materia en ciclo 14.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente estas reglas a actividades hijas de la materia en ciclo 15.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente estas reglas a actividades hijas de la materia en ciclo 16.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente estas reglas a actividades hijas de la materia en ciclo 17.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente estas reglas a actividades hijas de la materia en ciclo 18.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente estas reglas a actividades hijas de la materia en ciclo 19.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente estas reglas a actividades hijas de la materia en ciclo 20.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente estas reglas a actividades hijas de la materia en ciclo 21.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente estas reglas a actividades hijas de la materia en ciclo 22.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -128,3 +183,4 @@
 - Confirmar si se requiere formato APA, juridico mexicano u otro estilo institucional.
 - Confirmar si deben usarse leyes federales, codigos civiles locales o ambos segun actividad.
 - Confirmar la correccion canonica del nombre .bib en README y programa analitico.
+- Confirmar si la plantilla de presentacion comparte los mismos metadatos que el reporte.

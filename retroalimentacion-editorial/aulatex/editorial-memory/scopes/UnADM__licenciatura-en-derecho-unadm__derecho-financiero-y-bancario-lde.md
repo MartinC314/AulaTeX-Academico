@@ -5,6 +5,7 @@
 - Ruta: UnADM/licenciatura-en-derecho-unadm/derecho-financiero-y-bancario-lde
 - Compresion: union-dedupe
 - Sin regresion: si
+- Secciones fijadas: ninguna
 
 ## summary
 
@@ -28,6 +29,14 @@
 - El reporte .tex mantiene titulo, subtitulo y campos de plantilla pendientes de personalizar.
 - La bibliografia local contiene entradas base UnADM y malla curricular de Derecho.
 - Derecho financiero y bancario pertenece a Licenciatura en Derecho: semestre 3, bloque 2, obligatoria, 8 creditos.
+- Salida sin JSON parseable desde Codex para derecho-financiero-y-bancario-lde
+- Salida sin JSON parseable desde Auto (model-router) para derecho-financiero-y-bancario-lde
+- Salida sin JSON parseable desde Claude Foundry para derecho-financiero-y-bancario-lde
+- Base institucional UnADM consolidada con compresion union-dedupe lossless y sin regresion.
+- Se detectaron antecedentes de salida no parseable en JSON desde Codex, GPT-Pro, Auto (model-router) y Claude Foundry.
+- README y programa analitico contienen artefactos de plantilla en nombres de archivo.
+- La bibliografia local conserva entradas base institucionales verificables.
+- El token de plantilla del archivo .bib debe expandirse a derecho-financiero-y-bancario.bib.
 
 ## identity_rules
 
@@ -54,6 +63,14 @@
 - Marcar como supuesto cualquier dato no confirmado del grupo.
 - Tratar GPT-Pro desde Actividad 1 como fuente provisional heredada.
 - Tratar Codex desde ingenieria-en-sistemas-computacionales como fuente provisional heredada.
+- Fuente provisional: Codex desde Actividad 1
+- Fuente provisional: Auto (model-router) desde Actividad 1
+- Fuente provisional: Claude Foundry desde Actividad 1
+- Fuente provisional: Codex desde ingenieria-en-sistemas-computacionales.
+- Fuente provisional: GPT-Pro desde Actividad 1.
+- Fuente provisional: Auto (model-router) desde Actividad 1.
+- Fuente provisional: Claude Foundry desde Actividad 1.
+- Fuente provisional: Codex desde Actividad 1.
 
 ## structure_rules
 
@@ -74,6 +91,7 @@
 - No eliminar reglas previas validas.
 - Agregar solo mejoras verificables.
 - Corregir artefactos de plantilla y caracteres faltantes en nombres de archivo del README.
+- No eliminar reglas previas validas; agregar solo mejoras verificables.
 
 ## activity_rules
 
@@ -86,6 +104,7 @@
 - Separar descripcion conceptual, analisis propio y conclusion juridica.
 - Cerrar con postura juridica propia aplicable a la practica profesional.
 - Adaptar el producto a la planeacion semanal confirmada.
+- Adaptar el producto solicitado a la planeacion semanal confirmada.
 
 ## quality_gates
 
@@ -103,6 +122,7 @@
 - Comprobar que cada mejora agregada sea verificable.
 - Bloquear fuentes o metadatos bibliograficos inventados.
 - Normalizar manualmente si reaparece salida no estructurada.
+- Validar deduplicacion semantica antes de guardar memoria.
 
 ## latex_rules
 
@@ -134,6 +154,7 @@
 - Conservar entradas base unadmSitioWeb y unadmMallaDerecho2024.
 - Agregar entradas BibTeX solo con fuente verificable.
 - Incluir fecha de consulta en referencias web.
+- Mantener entradas base unadmSitioWeb y unadmMallaDerecho2024.
 
 ## propagation_hints
 
@@ -150,6 +171,30 @@
 - Aplicar normalizacion manual si se reutiliza memoria de ciclo 1 con salida no estructurada.
 - Propagar lateralmente solo reglas independientes de la asignatura o actividad especifica.
 - Ciclo 2 necesita normalizacion manual si se reutiliza.
+- Ciclo 3 necesita normalizacion manual si se reutiliza.
+- Ciclo 4 necesita normalizacion manual si se reutiliza.
+- Ciclo 5 necesita normalizacion manual si se reutiliza.
+- Ciclo 6 necesita normalizacion manual si se reutiliza.
+- Ciclo 7 necesita normalizacion manual si se reutiliza.
+- Ciclo 8 necesita normalizacion manual si se reutiliza.
+- Ciclo 9 necesita normalizacion manual si se reutiliza.
+- Ciclo 10 necesita normalizacion manual si se reutiliza.
+- Ciclo 11 necesita normalizacion manual si se reutiliza.
+- Propagar a nivel materia reglas generales de identidad, estructura y bibliografia.
+- Aplicar normalizacion manual si se reutiliza memoria de ciclos con salida no estructurada.
+- Ciclo 12 necesita normalizacion manual si se reutiliza.
+- Ciclo 13 necesita normalizacion manual si se reutiliza.
+- Ciclo 14 necesita normalizacion manual si se reutiliza.
+- Ciclo 15 necesita normalizacion manual si se reutiliza.
+- Ciclo 16 necesita normalizacion manual si se reutiliza.
+- Ciclo 17 necesita normalizacion manual si se reutiliza.
+- Ciclo 18 necesita normalizacion manual si se reutiliza.
+- Ciclo 19 necesita normalizacion manual si se reutiliza.
+- Ciclo 20 necesita normalizacion manual si se reutiliza.
+- Ciclo 21: mantener contingencia de normalizacion manual por historial de salidas no parseables.
+- Ciclo 21 necesita normalizacion manual si se reutiliza.
+- Ciclo 22: mantener contingencia de normalizacion manual por historial de salidas no parseables.
+- Ciclo 22 necesita normalizacion manual si se reutiliza.
 
 ## open_questions
 
@@ -171,3 +216,4 @@
 - Confirmar nombre real de la figura docente para completar plantilla.
 - Definir formato obligatorio de citacion para la materia (APA, IEEE u otro); supuesto: no definido aun.
 - Confirmar planeacion semanal vigente antes de generar actividades especificas.
+- Verificar si los nombres de archivo del README deben corregirse manualmente o regenerarse.
