@@ -1,0 +1,31 @@
+{
+  "node": "derecho-a-la-seguridad-social-lde",
+  "slug": "derecho-a-la-seguridad-social",
+  "title": "Derecho a la Seguridad Social",
+  "activity_number": 1,
+  "files": [
+    "derecho-a-la-seguridad-social.bib",
+    "reporte-derecho-a-la-seguridad-social.tex",
+    "reporte-derecho-a-la-seguridad-social-Actividad-1.tex",
+    "presentacion-derecho-a-la-seguridad-social.tex",
+    "presentacion-derecho-a-la-seguridad-social-Actividad-1.tex",
+    "programa-analitico-derecho-a-la-seguridad-social.md",
+    "COMPILACION-derecho-a-la-seguridad-social.md",
+    "README.md"
+  ],
+  "folders": [
+    "referencias-derecho-a-la-seguridad-social",
+    "planeaciones-derecho-a-la-seguridad-social",
+    "assets-derecho-a-la-seguridad-social"
+  ],
+  "memory_summary": [
+    "Nodo de materia reforzado para UnADM Derecho: enfoque en productos académicos jurídicos verificables.",
+    "Se preserva identidad institucional UnADM y estructura canónica de carpeta con reporte, presentación y .bib local.",
+    "Base inicial orientada a Derecho a la seguridad social (semestre 2, bloque 1, obligatoria, 8 créditos).",
+    "Salida no estructurada desde Auto (model-router) para derecho-a-la-seguridad-social-lde",
+    "Salida no estructurada desde Claude Foundry para derecho-a-la-seguridad-social-lde",
+    "Salida no estructurada desde GPT-Pro para derecho-a-la-seguridad-social-lde",
+    "Refuerzo editorial del nodo de materia para UnADM Derecho, ciclo 2, sin regresión.",
+    "Se conserva la identidad institucional y la estructura canónica de entregables en LaTeX."
+  ]
+}

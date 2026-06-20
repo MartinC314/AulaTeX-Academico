@@ -1,0 +1,11 @@
+{
+  "key": "derecho-a-la-seguridad-social-lde",
+  "level": "institucion",
+  "label": "derecho-a-la-seguridad-social-lde",
+  "name": "derecho-a-la-seguridad-social-lde",
+  "parent_scope_key": "interinstitucional",
+  "activity_number": 0,
+  "relative_path": "UnADM",
+  "operation_mode": "reforzar",
+  "entrypoint": "UnADM/maqueta.tex"
+}

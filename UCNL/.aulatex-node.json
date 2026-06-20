@@ -1,0 +1,11 @@
+{
+  "key": "UCNL",
+  "level": "institucion",
+  "label": "UCNL",
+  "name": "UCNL",
+  "parent_scope_key": "interinstitucional",
+  "activity_number": 0,
+  "relative_path": "UCNL",
+  "operation_mode": "reforzar",
+  "entrypoint": "UCNL/maqueta.tex"
+}

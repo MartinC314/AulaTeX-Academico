@@ -1,28 +1,23 @@
-# Programa analitico editorial - Derecho a la seguridad social
+# Programa analitico editorial - Derecho a la Seguridad Social
 
 ## Encuadre institucional
 
-Asignatura de la Licenciatura en Derecho de la UnADM ubicada en semestre
-2, bloque 1. Su funcion editorial es orientar
-productos academicos con claridad, fundamento juridico, evidencia y transferencia
-profesional.
+Asignatura de la Licenciatura en Derecho de la UnADM ubicada en semestre 2, bloque 1.
+Tipo: Obligatoria. Creditos: 8.
 
 ## Proposito de realizacion
 
-Transformar la planeacion semanal en reportes, presentaciones y productos
-visuales que integren problema, conceptos, fuentes, analisis propio y cierre
-argumentativo.
+Transformar cada consigna en un producto juridico verificable: problema, fundamento, analisis, evidencia, postura y cierre profesional.
 
 ## Ejes de trabajo
 
-1. Problema juridico o social que activa la asignatura.
-2. Conceptos, normas, doctrina o datos pertinentes.
-3. Producto solicitado por la planeacion.
-4. Analisis propio y postura academica.
-5. Conclusion transferible a la practica juridica.
+1. Marco constitucional del derecho a la seguridad social en México.
+2. Leyes e instituciones clave (IMSS, ISSSTE y régimen aplicable).
+3. Principios de universalidad, progresividad, igualdad y no discriminación.
+4. Jurisprudencia y criterios relevantes recientes.
+5. Problemas actuales de acceso, cobertura y justiciabilidad.
+6. Fundamento constitucional del derecho a la seguridad social en México.
 
 ## Bibliografia base
 
-La bibliografia local inicia con fuentes institucionales UnADM y la malla
-curricular de Derecho. Las fuentes especificas de cada actividad deben agregarse
-en $(@{Name=Derecho a la seguridad social; Block=1; Credits=8; Type=Obligatoria; Slug=derecho-a-la-seguridad-social; Semester=2}.Slug).bib.
+La bibliografia local se concentra en `derecho-a-la-seguridad-social.bib` y debe ampliarse solo con fuentes verificadas.

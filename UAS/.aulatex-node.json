@@ -1,0 +1,11 @@
+{
+  "key": "UAS",
+  "level": "institucion",
+  "label": "UAS",
+  "name": "UAS",
+  "parent_scope_key": "interinstitucional",
+  "activity_number": 0,
+  "relative_path": "UAS",
+  "operation_mode": "reforzar",
+  "entrypoint": "UAS/maqueta.tex"
+}

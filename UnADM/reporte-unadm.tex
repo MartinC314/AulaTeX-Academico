@@ -51,9 +51,9 @@
 % [ ] No se incluyeron instrucciones copiadas de la planeacion dentro del
 %     contenido entregado.
 % [ ] Ortografia y redaccion revisadas; la argumentacion es propia.
-% ==============================================================================
+% ============================================================================== 
 
-CREACIÓN DEL DOCUMENTO
+% CREACIÓN DEL DOCUMENTO
 \documentclass[
 	spanish, % Idioma: spanish, english, etc.
 	letterpaper, oneside
@@ -80,14 +80,14 @@ CREACIÓN DEL DOCUMENTO
 	\begin{tabular}{ll}
 		\textbf{Alumno:}
 		& \begin{tabular}[t]{l}
-		 \t Martín Jonathan de la Cruz \\
+			Martín Jonathan de la Cruz \\
 		\end{tabular} \\
 		Matrícula: &   ES2611202040 \\
 		
 		Profesor:
 		& \begin{tabular}[t]{l}
-		\tReyna Patricia \\
-		\tGonzález Rodríguez
+			Reyna Patricia \\
+			González Rodríguez
 		\end{tabular} \\
 		% Auxiliar:
 		% & \begin{tabular}[t]{l}
@@ -107,9 +107,9 @@ CREACIÓN DEL DOCUMENTO
 }
 
 % IMPORTACIÓN DEL TEMPLATE Y CONFIGURACIÓN
-% Cargar template_config.tex y template.tex desde la raíz del proyecto
-\input{../../../template_config}
-\input{../../../template}
+% Resolver template_config.tex y template.tex vía TEXINPUTS del proyecto
+\input{template_config}
+\input{template}
 
 % INICIO DE PÁGINAS
 \begin{document}
@@ -133,7 +133,7 @@ CREACIÓN DEL DOCUMENTO
 
 % ======================= INICIO DEL DOCUMENTO =======================
 
-\input{../../../src/etc/example} % Ejemplo, se puede borrar
+% \input{example} % Ejemplo opcional del template; desactivado para este reporte
 
 % FIN DEL DOCUMENTO
 \end{document}

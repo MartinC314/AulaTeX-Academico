@@ -1,0 +1,11 @@
+{
+  "key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+  "level": "materia",
+  "label": "Derecho a la Seguridad Social",
+  "name": "Derecho a la Seguridad Social",
+  "parent_scope_key": "UnADM/licenciatura-en-derecho-unadm",
+  "activity_number": 0,
+  "relative_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+  "operation_mode": "reforzar",
+  "entrypoint": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/maqueta-derecho-a-la-seguridad-social.tex"
+}

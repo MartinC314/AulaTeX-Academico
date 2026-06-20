@@ -12,6 +12,14 @@ presentaciones y bibliografias.
 - Automatizacion de compilacion y exportacion: `scripts/`.
 - Residuales de compilacion: `.build/`.
 
+Flujo editorial recomendado en AulaTeX:
+
+1. Memoria editorial.
+2. Investigación.
+3. Extractor.
+4. Generación y agente.
+5. Compilación.
+
 ## Comandos Utiles
 
 ```powershell
@@ -32,6 +40,10 @@ presentaciones y bibliografias.
 
 ```powershell
 .\scripts\aulatex.ps1
+```
+
+```powershell
+.\scripts\aulatex.ps1 investigation --target .\UnADM\licenciatura-en-derecho-unadm\historia-del-derecho-en-mexico-lde --query "historia del derecho en mexico unadm programa analitico"
 ```
 
 El PDF final se copia en la misma carpeta del archivo `.tex`.

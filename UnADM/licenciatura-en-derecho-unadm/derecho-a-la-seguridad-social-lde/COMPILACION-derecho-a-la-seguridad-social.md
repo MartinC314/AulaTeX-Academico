@@ -1,15 +1,16 @@
-# Compilacion - Derecho a la seguridad social
+# Compilacion - Derecho a la Seguridad Social
 
-Ejecutar desde la raiz del proyecto:
+Comandos desde la raiz del repositorio:
 
-`powershell
+```powershell
 .\scripts\latexmk-build.ps1 .\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\reporte-derecho-a-la-seguridad-social.tex
+.\scripts\latexmk-build.ps1 .\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\reporte-derecho-a-la-seguridad-social-Actividad-1.tex
 .\scripts\latexmk-build.ps1 .\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\presentacion-derecho-a-la-seguridad-social.tex
-`
+```
 
-## Contrato de compilacion
+Validaciones:
 
-- El PDF final queda en la misma carpeta del archivo fuente.
-- La bibliografia local vive en $(@{Name=Derecho a la seguridad social; Block=1; Credits=8; Type=Obligatoria; Slug=derecho-a-la-seguridad-social; Semester=2}.Slug).bib.
-- La identidad institucional usa img/departamentos/UnADM.pdf.
-- La malla curricular base esta en UnADM/assets-unadm/malla-curricular-derecho-unadm.pdf.
+- `\input{template}` debe resolver a la plantilla compartida.
+- El archivo `.bib` local debe contener toda fuente citada.
+- La salida final debe conservar portada institucional UnADM, desarrollo,
+  producto solicitado, conclusion y bibliografia.
