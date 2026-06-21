@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import re
 import sqlite3
+import hashlib
 from dataclasses import dataclass
 from pathlib import Path
 from threading import Event
@@ -26,6 +27,8 @@ ENGINE_PRIORITY = {
     "Claude Foundry": 30,
     "GPT-Pro": 40,
 }
+
+SCHEMA_VERSION = 3
 
 MEMORY_SECTIONS = (
     "summary",
@@ -59,7 +62,9 @@ MEMORY_DICT_FIELDS = (
     "node_metadata",
     "curricular_context",
     "artifact_templates",
+    "editorial_dna",
     "tex_blueprint",
+    "tex_content_memory",
 )
 
 
@@ -309,40 +314,46 @@ class EditorialMemoryStore:
         enriched["node_metadata"] = {**enriched.get("node_metadata", {}), **metadata}
 
         if scope.level not in {"actividad", "materia"}:
-            enriched["schema_version"] = 2
+            enriched["schema_version"] = SCHEMA_VERSION
             return enriched
 
         subject_dir = self.workspace.repo_root / scope.relative_path
         activity_number = "".join(ch for ch in scope.activity if ch.isdigit()) if scope.level == "actividad" else ""
 
         artifact_paths: dict[str, Path] = {}
-        report_template = subject_dir / f"reporte-{scope.subject}.tex"
-        presentation_template = subject_dir / f"presentacion-{scope.subject}.tex"
-        if report_template.exists():
-            artifact_paths["reporte_base"] = report_template
-        if presentation_template.exists():
-            artifact_paths["presentacion_base"] = presentation_template
+        for candidate in sorted(subject_dir.glob("reporte-*.tex")):
+            if re.search(r"-Actividad-\d+\.tex$", candidate.name, re.IGNORECASE):
+                continue
+            artifact_paths.setdefault("reporte_base", candidate)
+            break
+        for candidate in sorted(subject_dir.glob("presentacion-*.tex")):
+            if re.search(r"-Actividad-\d+\.tex$", candidate.name, re.IGNORECASE):
+                continue
+            artifact_paths.setdefault("presentacion_base", candidate)
+            break
         if scope.level == "actividad" and activity_number:
-            report_activity = subject_dir / f"reporte-{scope.subject}-Actividad-{activity_number}.tex"
-            presentation_activity = subject_dir / f"presentacion-{scope.subject}-Actividad-{activity_number}.tex"
-            if report_activity.exists():
-                artifact_paths["reporte"] = report_activity
-            if presentation_activity.exists():
-                artifact_paths["presentacion"] = presentation_activity
+            for candidate in sorted(subject_dir.glob(f"reporte-*-Actividad-{activity_number}.tex")):
+                artifact_paths.setdefault("reporte", candidate)
+                break
+            for candidate in sorted(subject_dir.glob(f"presentacion-*-Actividad-{activity_number}.tex")):
+                artifact_paths.setdefault("presentacion", candidate)
+                break
 
         artifact_types = [kind for kind in ("reporte", "presentacion") if kind in artifact_paths]
         supported_types = [kind for kind in ("reporte", "presentacion") if f"{kind}_base" in artifact_paths or kind in artifact_paths]
         if scope.level == "actividad":
             primary_type = artifact_types[0] if artifact_types else (supported_types[0] if supported_types else "reporte")
-            if activity_number:
+            if primary_type in artifact_paths:
+                enriched["artifact_name"] = artifact_paths[primary_type].stem
+            elif activity_number:
                 enriched["artifact_name"] = f"{primary_type}-{scope.subject}-Actividad-{activity_number}"
             enriched["artifact_types"] = _dedupe_lines(enriched.get("artifact_types", []) + artifact_types)
         else:
             templates: dict[str, str] = dict(enriched.get("artifact_templates", {}))
             if "reporte_base" in artifact_paths:
-                templates["reporte"] = f"reporte-{scope.subject}"
+                templates["reporte"] = artifact_paths["reporte_base"].stem
             if "presentacion_base" in artifact_paths:
-                templates["presentacion"] = f"presentacion-{scope.subject}"
+                templates["presentacion"] = artifact_paths["presentacion_base"].stem
             enriched["artifact_templates"] = templates
             enriched["supported_artifact_types"] = _dedupe_lines(enriched.get("supported_artifact_types", []) + supported_types)
 
@@ -353,6 +364,8 @@ class EditorialMemoryStore:
         citations = list(enriched.get("citations", []))
         bibliography_index = list(enriched.get("bibliography_index", []))
         tex_blueprint = dict(enriched.get("tex_blueprint", {}))
+        tex_content_memory = dict(enriched.get("tex_content_memory", {}))
+        bibliography_sources = dict(tex_content_memory.get("bibliography_sources", {}))
 
         readme_path = subject_dir / "README.md"
         if readme_path.exists():
@@ -371,15 +384,27 @@ class EditorialMemoryStore:
         bib_paths = [path for path in sorted(subject_dir.glob("*.bib")) if path.is_file()]
         for bib_path in bib_paths:
             source_documents.append(self.workspace.relative(bib_path))
-            bib_index = _extract_bibliography_index(self._safe_read_text(bib_path))
+            bib_text = self._safe_read_text(bib_path)
+            bib_entries = _extract_bibtex_entries(bib_text, self.workspace.relative(bib_path))
+            bibliography_sources.update(bib_entries)
+            bib_index = _bibliography_index_from_entries(bib_entries)
             bibliography_index.extend(bib_index)
             concepts.extend(_extract_bibliography_titles(bib_index))
 
         artifact_blueprints: dict[str, dict] = {}
+        artifact_content_memory: dict[str, dict] = {}
         for kind, tex_path in artifact_paths.items():
-            source_documents.append(self.workspace.relative(tex_path))
-            blueprint = _extract_tex_blueprint(self._safe_read_text(tex_path), self.workspace.relative(tex_path))
+            relative_tex_path = self.workspace.relative(tex_path)
+            source_documents.append(relative_tex_path)
+            tex_text = self._safe_read_text(tex_path)
+            inline_bibliography = _extract_thebibliography_entries(tex_text, relative_tex_path)
+            bibliography_sources.update(inline_bibliography)
+            bibliography_index.extend(_bibliography_index_from_entries(inline_bibliography))
+            blueprint = _extract_tex_blueprint(tex_text, relative_tex_path, bibliography_sources)
             artifact_blueprints[kind] = blueprint
+            content_memory = blueprint.get("content_memory", {})
+            if content_memory:
+                artifact_content_memory[kind] = content_memory
             section_titles.extend(blueprint.get("section_titles", []))
             citations.extend(blueprint.get("cited_keys", []))
             concepts.extend(blueprint.get("concepts", []))
@@ -393,9 +418,13 @@ class EditorialMemoryStore:
             tex_blueprint["artifacts"] = artifact_blueprints
             preferred_key = "reporte" if "reporte" in artifact_blueprints else next(iter(artifact_blueprints.keys()))
             tex_blueprint["primary"] = artifact_blueprints.get(preferred_key, {})
+            tex_content_memory["artifacts"] = artifact_content_memory
+            tex_content_memory["primary"] = artifact_content_memory.get(preferred_key, {})
+            tex_content_memory["bibliography_sources"] = bibliography_sources
 
         enriched["curricular_context"] = curricular_context
         enriched["tex_blueprint"] = tex_blueprint
+        enriched["tex_content_memory"] = tex_content_memory
         enriched["source_documents"] = _dedupe_lines(source_documents)
         enriched["source_fragments"] = _dedupe_lines(source_fragments)
         enriched["concepts"] = _dedupe_lines(concepts)
@@ -403,7 +432,8 @@ class EditorialMemoryStore:
         enriched["citations"] = _dedupe_lines(citations)
         enriched["bibliography_index"] = _dedupe_lines(bibliography_index)
         enriched["sources"] = _dedupe_lines(enriched.get("sources", []) + enriched["source_documents"])
-        enriched["schema_version"] = 2
+        enriched["editorial_dna"] = _synthesize_editorial_dna(enriched, enriched.get("editorial_dna", {}))
+        enriched["schema_version"] = SCHEMA_VERSION
         return enriched
 
     def _safe_read_text(self, path: Path) -> str:
@@ -432,6 +462,49 @@ class EditorialMemoryStore:
             lines.append(f"## {section}")
             lines.append("")
             lines.extend(f"- {item}" for item in items)
+            lines.append("")
+        editorial_dna = _normalize_editorial_dna(data.get("editorial_dna", {}))
+        if editorial_dna:
+            lines.append("## editorial_dna")
+            lines.append("")
+            essence = editorial_dna.get("essence", [])
+            if essence:
+                lines.append("### esencia")
+                lines.extend(f"- {item}" for item in essence[:12])
+                lines.append("")
+            reason = editorial_dna.get("reason_for_being", [])
+            if reason:
+                lines.append("### razon_de_ser")
+                lines.extend(f"- {item}" for item in reason[:12])
+                lines.append("")
+            styles = editorial_dna.get("style_markers", [])
+            if styles:
+                lines.append("### identidad_estilistica")
+                lines.extend(f"- {item}" for item in styles[:12])
+                lines.append("")
+            patterns = editorial_dna.get("argumentative_patterns", [])
+            if patterns:
+                lines.append("### patrones_argumentativos")
+                lines.extend(f"- {item}" for item in patterns[:12])
+                lines.append("")
+            graph = editorial_dna.get("knowledge_graph", {})
+            if graph:
+                lines.append("### grafo_de_conocimiento")
+                lines.append(f"- Conceptos: {len(graph.get('concepts', []))}")
+                lines.append(f"- Citas: {len(graph.get('citations', []))}")
+                lines.append(f"- Relaciones reforzadas: {len(graph.get('relations', []))}")
+                lines.append(f"- Evidencias: {len(graph.get('evidence', []))}")
+                lines.append("")
+        tex_primary = data.get("tex_content_memory", {}).get("primary", {})
+        if tex_primary:
+            lines.append("## adn_tex")
+            lines.append("")
+            lines.append(f"- Artefacto primario: `{tex_primary.get('relative_path', '')}`")
+            lines.append(f"- Caracteres LaTeX preservados: {tex_primary.get('raw_latex_chars', 0)}")
+            lines.append(f"- Bloques/parrafos indexados: {len(tex_primary.get('paragraph_map', []))}")
+            lines.append(f"- Claves citadas: {', '.join(tex_primary.get('all_cited_keys', [])) or 'ninguna'}")
+            missing = tex_primary.get("missing_bibliography_keys", [])
+            lines.append(f"- Claves sin referencia: {', '.join(missing) if missing else 'ninguna'}")
             lines.append("")
         return "\n".join(lines)
 
@@ -544,7 +617,7 @@ class EditorialMemoryStore:
             payload[field] = {}
         payload["locked_sections"] = []
         payload["compression"] = {"method": "union-dedupe", "lossless": True}
-        payload["schema_version"] = 2
+        payload["schema_version"] = SCHEMA_VERSION
         return payload
 
     def _normalize_memory(self, payload: dict) -> dict:
@@ -569,7 +642,7 @@ class EditorialMemoryStore:
         for field in MEMORY_DICT_FIELDS:
             value = payload.get(field, {})
             if isinstance(value, dict):
-                normalized[field] = value
+                normalized[field] = _normalize_editorial_dna(value) if field == "editorial_dna" else value
         locked_sections = payload.get("locked_sections", [])
         if isinstance(locked_sections, str):
             locked_sections = [locked_sections]
@@ -584,9 +657,9 @@ class EditorialMemoryStore:
                 "lossless": bool(compression.get("lossless", True)),
             }
         try:
-            normalized["schema_version"] = max(2, int(payload.get("schema_version", 2)))
+            normalized["schema_version"] = max(SCHEMA_VERSION, int(payload.get("schema_version", SCHEMA_VERSION)))
         except (TypeError, ValueError):
-            normalized["schema_version"] = 2
+            normalized["schema_version"] = SCHEMA_VERSION
         return normalized
 
 
@@ -810,10 +883,11 @@ class EditorialMemoryBuilder:
         if target_scope.parent_key and target_scope.parent_key in by_key:
             parent_memory = self.store.summarize_for_scope(target_scope.parent_key, include_ancestors=True, max_chars=2500)
         local_context = self.workspace.context_summary(target_scope.relative_path, max_chars=4000)
-        memory_json = json.dumps(current_memory, ensure_ascii=False, indent=2)
+        memory_json = json.dumps(_memory_prompt_view(current_memory), ensure_ascii=False, indent=2)
         return (
             "Eres AulaTeX y estas consolidando memoria editorial persistente para una suite academica en LaTeX. "
             "Debes preservar todo lo valido, agregar solo mejoras verificables y nunca eliminar reglas utiles previas. "
+            "Tu tarea no es solo resumir reglas: debes reforzar el ADN editorial del nodo como cerebro persistente. "
             "La compresion debe ser lossless por deduplicacion, no por recorte. Responde solo JSON valido.\n\n"
             f"Origen: {source_scope.level} | {source_scope.key}\n"
             f"Destino: {target_scope.level} | {target_scope.key}\n"
@@ -829,9 +903,23 @@ class EditorialMemoryBuilder:
             '  "latex_rules": ["..."],\n'
             '  "bibliography_rules": ["..."],\n'
             '  "propagation_hints": ["..."],\n'
-            '  "open_questions": ["..."]\n'
+            '  "open_questions": ["..."],\n'
+            '  "editorial_dna": {\n'
+            '    "identity": {"tone": ["..."], "institutional": ["..."], "curricular": ["..."]},\n'
+            '    "essence": ["..."],\n'
+            '    "reason_for_being": ["..."],\n'
+            '    "style_markers": ["..."],\n'
+            '    "argumentative_patterns": ["..."],\n'
+            '    "knowledge_graph": {\n'
+            '      "concepts": ["..."],\n'
+            '      "citations": ["..."],\n'
+            '      "relations": [{"source": "...", "target": "...", "kind": "supports|contrasts|depends_on|develops", "justification": "..."}],\n'
+            '      "evidence": ["..."]\n'
+            '    },\n'
+            '    "reinforcement_log": ["..."]\n'
+            '  }\n'
             "}\n\n"
-            "Reglas: usa frases cortas, accionables y sin duplicados; marca supuestos; no inventes fuentes.\n\n"
+            "Reglas: usa frases cortas, accionables y sin duplicados; marca supuestos; no inventes fuentes; no copies LaTeX completo; refuerza conexiones, ideas, conceptos, patrones argumentativos e identidad estilistica.\n\n"
             f"Memoria actual del destino:\n{memory_json}\n\n"
             f"Memoria heredada:\n{parent_memory or 'Sin memoria heredada aun.'}\n\n"
             f"Contexto local:\n{local_context}\n"
@@ -858,6 +946,10 @@ class EditorialMemoryBuilder:
                 "bibliography_rules": [],
                 "propagation_hints": [f"Ciclo {cycle_index} necesita normalizacion manual si se reutiliza."],
                 "open_questions": [],
+                "editorial_dna": {
+                    "essence": fallback_lines[:4],
+                    "reinforcement_log": [f"Retroalimentacion no estructurada recibida desde {engine} en ciclo {cycle_index}."] if fallback_lines else [],
+                },
             }
         return payload
 
@@ -876,6 +968,11 @@ class EditorialMemoryBuilder:
                 merged[section] = _dedupe_lines(merged.get(section, []))
                 continue
             merged[section] = _dedupe_lines(merged.get(section, []) + candidate_normalized.get(section, []))
+        merged["editorial_dna"] = _merge_editorial_dna(
+            merged.get("editorial_dna", {}),
+            candidate_normalized.get("editorial_dna", {}),
+        )
+        merged["editorial_dna"] = _apply_feedback_reinforcement(merged["editorial_dna"], candidate_normalized)
         merged["sources"] = _dedupe_lines(
             merged.get("sources", [])
             + candidate_normalized.get("sources", [])
@@ -883,7 +980,7 @@ class EditorialMemoryBuilder:
         )
         merged["locked_sections"] = sorted(locked_sections)
         merged["compression"] = {"method": "union-dedupe", "lossless": True}
-        merged["schema_version"] = max(2, int(candidate_normalized.get("schema_version", 2) or 2))
+        merged["schema_version"] = max(SCHEMA_VERSION, int(candidate_normalized.get("schema_version", SCHEMA_VERSION) or SCHEMA_VERSION))
         return merged
 
     def _emit(self, callback: Callable[[EditorialMemoryEvent], None] | None, event: EditorialMemoryEvent) -> None:
@@ -909,6 +1006,410 @@ def _dedupe_lines(items: list[str]) -> list[str]:
         seen.add(marker)
         normalized.append(value)
     return normalized
+
+
+def _dedupe_dict_items(items: list[dict]) -> list[dict]:
+    seen: set[str] = set()
+    normalized: list[dict] = []
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        marker = json.dumps(item, ensure_ascii=False, sort_keys=True)
+        if marker in seen:
+            continue
+        seen.add(marker)
+        normalized.append(item)
+    return normalized
+
+
+def _normalize_weight_map(value: object) -> dict[str, int]:
+    normalized: dict[str, int] = {}
+    if not isinstance(value, dict):
+        return normalized
+    for key, raw in value.items():
+        if not isinstance(key, str):
+            continue
+        label = re.sub(r"\s+", " ", key).strip()
+        if not label:
+            continue
+        try:
+            weight = max(1, int(raw))
+        except (TypeError, ValueError):
+            continue
+        normalized[label] = max(normalized.get(label, 0), weight)
+    return normalized
+
+
+def _normalize_relation_items(items: object) -> list[dict]:
+    normalized: list[dict] = []
+    if not isinstance(items, list):
+        return normalized
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        source = re.sub(r"\s+", " ", str(item.get("source", ""))).strip()
+        target = re.sub(r"\s+", " ", str(item.get("target", ""))).strip()
+        if not source or not target:
+            continue
+        relation = {
+            "source": source,
+            "target": target,
+            "kind": re.sub(r"\s+", " ", str(item.get("kind", "association"))).strip() or "association",
+            "weight": max(1, int(item.get("weight", 1) or 1)),
+        }
+        justification = re.sub(r"\s+", " ", str(item.get("justification", ""))).strip()
+        if justification:
+            relation["justification"] = justification
+        evidence = item.get("evidence", [])
+        if isinstance(evidence, str):
+            evidence = [evidence]
+        if isinstance(evidence, list):
+            relation["evidence"] = _dedupe_lines([str(part) for part in evidence])
+        normalized.append(relation)
+    return _dedupe_dict_items(normalized)
+
+
+def _deep_merge_dicts(base: dict, incoming: dict) -> dict:
+    merged = dict(base or {})
+    for key, value in (incoming or {}).items():
+        if isinstance(value, dict) and isinstance(merged.get(key), dict):
+            merged[key] = _deep_merge_dicts(merged[key], value)
+        elif isinstance(value, list) and isinstance(merged.get(key), list):
+            merged[key] = _dedupe_lines([str(item) for item in merged[key] + value])
+        elif value not in (None, "", [], {}):
+            merged[key] = value
+    return merged
+
+
+def _normalize_editorial_dna(payload: dict | None) -> dict:
+    if not isinstance(payload, dict):
+        return {}
+    knowledge_graph = payload.get("knowledge_graph", {}) if isinstance(payload.get("knowledge_graph", {}), dict) else {}
+    normalized = {
+        "identity": payload.get("identity", {}) if isinstance(payload.get("identity", {}), dict) else {},
+        "essence": _dedupe_lines(payload.get("essence", []) if isinstance(payload.get("essence", []), list) else [payload.get("essence", "")]),
+        "structure": payload.get("structure", {}) if isinstance(payload.get("structure", {}), dict) else {},
+        "reason_for_being": _dedupe_lines(payload.get("reason_for_being", []) if isinstance(payload.get("reason_for_being", []), list) else [payload.get("reason_for_being", "")]),
+        "style_markers": _dedupe_lines(payload.get("style_markers", []) if isinstance(payload.get("style_markers", []), list) else [payload.get("style_markers", "")]),
+        "argumentative_patterns": _dedupe_lines(payload.get("argumentative_patterns", []) if isinstance(payload.get("argumentative_patterns", []), list) else [payload.get("argumentative_patterns", "")]),
+        "reinforcement_log": _dedupe_lines(payload.get("reinforcement_log", []) if isinstance(payload.get("reinforcement_log", []), list) else [payload.get("reinforcement_log", "")]),
+        "knowledge_graph": {
+            "concepts": _dedupe_lines(knowledge_graph.get("concepts", []) if isinstance(knowledge_graph.get("concepts", []), list) else [knowledge_graph.get("concepts", "")]),
+            "citations": _dedupe_lines(knowledge_graph.get("citations", []) if isinstance(knowledge_graph.get("citations", []), list) else [knowledge_graph.get("citations", "")]),
+            "evidence": _dedupe_lines(knowledge_graph.get("evidence", []) if isinstance(knowledge_graph.get("evidence", []), list) else [knowledge_graph.get("evidence", "")]),
+            "relations": _normalize_relation_items(knowledge_graph.get("relations", [])),
+            "concept_weights": _normalize_weight_map(knowledge_graph.get("concept_weights", {})),
+            "citation_weights": _normalize_weight_map(knowledge_graph.get("citation_weights", {})),
+        },
+        "writing_memory": [item for item in payload.get("writing_memory", []) if isinstance(item, dict)],
+        "reconstructable_source": payload.get("reconstructable_source", "") if isinstance(payload.get("reconstructable_source", ""), str) else "",
+    }
+    return {key: value for key, value in normalized.items() if value not in ({}, [], "")}
+
+
+def _merge_weight_maps(base: dict[str, int], incoming: dict[str, int]) -> dict[str, int]:
+    merged = dict(base)
+    for key, value in incoming.items():
+        merged[key] = max(1, int(merged.get(key, 0))) + max(1, int(value)) if key in merged else max(1, int(value))
+    return merged
+
+
+def _merge_relation_lists(base: list[dict], incoming: list[dict]) -> list[dict]:
+    merged: dict[tuple[str, str, str], dict] = {}
+    for item in _normalize_relation_items(base) + _normalize_relation_items(incoming):
+        key = (item.get("source", ""), item.get("target", ""), item.get("kind", "association"))
+        existing = merged.get(key)
+        if existing is None:
+            merged[key] = dict(item)
+            continue
+        existing["weight"] = max(1, int(existing.get("weight", 1))) + max(1, int(item.get("weight", 1)))
+        existing["evidence"] = _dedupe_lines(existing.get("evidence", []) + item.get("evidence", []))
+        if item.get("justification") and not existing.get("justification"):
+            existing["justification"] = item["justification"]
+    return list(merged.values())
+
+
+def _overlay_relation_lists(base: list[dict], incoming: list[dict]) -> list[dict]:
+    merged: dict[tuple[str, str, str], dict] = {}
+    for item in _normalize_relation_items(base) + _normalize_relation_items(incoming):
+        key = (item.get("source", ""), item.get("target", ""), item.get("kind", "association"))
+        existing = merged.get(key)
+        if existing is None:
+            merged[key] = dict(item)
+            continue
+        existing["weight"] = max(max(1, int(existing.get("weight", 1))), max(1, int(item.get("weight", 1))))
+        existing["evidence"] = _dedupe_lines(existing.get("evidence", []) + item.get("evidence", []))
+        if item.get("justification") and not existing.get("justification"):
+            existing["justification"] = item["justification"]
+    return list(merged.values())
+
+
+def _merge_editorial_dna(current: dict | None, candidate: dict | None) -> dict:
+    base = _normalize_editorial_dna(current)
+    incoming = _normalize_editorial_dna(candidate)
+    graph_base = base.get("knowledge_graph", {})
+    graph_incoming = incoming.get("knowledge_graph", {})
+    merged = {
+        "identity": _deep_merge_dicts(base.get("identity", {}), incoming.get("identity", {})),
+        "essence": _dedupe_lines(base.get("essence", []) + incoming.get("essence", [])),
+        "structure": _deep_merge_dicts(base.get("structure", {}), incoming.get("structure", {})),
+        "reason_for_being": _dedupe_lines(base.get("reason_for_being", []) + incoming.get("reason_for_being", [])),
+        "style_markers": _dedupe_lines(base.get("style_markers", []) + incoming.get("style_markers", [])),
+        "argumentative_patterns": _dedupe_lines(base.get("argumentative_patterns", []) + incoming.get("argumentative_patterns", [])),
+        "reinforcement_log": _dedupe_lines(base.get("reinforcement_log", []) + incoming.get("reinforcement_log", [])),
+        "knowledge_graph": {
+            "concepts": _dedupe_lines(graph_base.get("concepts", []) + graph_incoming.get("concepts", [])),
+            "citations": _dedupe_lines(graph_base.get("citations", []) + graph_incoming.get("citations", [])),
+            "evidence": _dedupe_lines(graph_base.get("evidence", []) + graph_incoming.get("evidence", [])),
+            "relations": _merge_relation_lists(graph_base.get("relations", []), graph_incoming.get("relations", [])),
+            "concept_weights": _merge_weight_maps(graph_base.get("concept_weights", {}), graph_incoming.get("concept_weights", {})),
+            "citation_weights": _merge_weight_maps(graph_base.get("citation_weights", {}), graph_incoming.get("citation_weights", {})),
+        },
+        "writing_memory": incoming.get("writing_memory", []) or base.get("writing_memory", []),
+        "reconstructable_source": incoming.get("reconstructable_source", "") or base.get("reconstructable_source", ""),
+    }
+    return _normalize_editorial_dna(merged)
+
+
+def _feedback_signal_lines(memory: dict) -> list[str]:
+    lines: list[str] = []
+    for key in ("summary", "identity_rules", "structure_rules", "activity_rules", "quality_gates", "open_questions"):
+        value = memory.get(key, [])
+        if isinstance(value, list):
+            lines.extend(str(item) for item in value)
+    editorial_dna = _normalize_editorial_dna(memory.get("editorial_dna", {}))
+    lines.extend(editorial_dna.get("essence", []))
+    lines.extend(editorial_dna.get("reason_for_being", []))
+    lines.extend(editorial_dna.get("style_markers", []))
+    lines.extend(editorial_dna.get("argumentative_patterns", []))
+    graph = editorial_dna.get("knowledge_graph", {})
+    lines.extend(graph.get("concepts", []))
+    lines.extend(graph.get("citations", []))
+    lines.extend(graph.get("evidence", []))
+    return _dedupe_lines(lines)
+
+
+def _is_brain_concept(value: str) -> bool:
+    if not value or len(value) > 140:
+        return False
+    lowered = value.lower()
+    if ":: fuente=" in lowered:
+        return False
+    if lowered.startswith("supuesto:"):
+        return False
+    return bool(re.search(r"[A-Za-zÁÉÍÓÚáéíóúÑñ]", value))
+
+
+def _concept_seed_from_line(value: str) -> str:
+    text = re.sub(r"\s+", " ", value).strip(" -\t\r\n.;:")
+    return text
+
+
+def _candidate_concepts_from_feedback(memory: dict) -> list[str]:
+    concepts: list[str] = []
+    for line in _feedback_signal_lines(memory):
+        concept = _concept_seed_from_line(line)
+        if _is_brain_concept(concept):
+            concepts.append(concept)
+    return _dedupe_lines(concepts)
+
+
+def _relation_items_from_concepts(concepts: list[str]) -> list[dict]:
+    relations: list[dict] = []
+    seeds = concepts[:6]
+    for index, source in enumerate(seeds):
+        for target in seeds[index + 1:index + 3]:
+            relations.append(
+                {
+                    "source": source,
+                    "target": target,
+                    "kind": "cohesion",
+                    "weight": 1,
+                    "justification": "Coaparecen en la misma retroalimentación editorial.",
+                }
+            )
+    return relations
+
+
+def _apply_feedback_reinforcement(editorial_dna: dict, candidate_memory: dict) -> dict:
+    dna = _normalize_editorial_dna(editorial_dna)
+    graph = dna.setdefault("knowledge_graph", {})
+    graph.setdefault("concepts", [])
+    graph.setdefault("citations", [])
+    graph.setdefault("evidence", [])
+    graph.setdefault("relations", [])
+    graph.setdefault("concept_weights", {})
+    graph.setdefault("citation_weights", {})
+
+    concept_signals = _candidate_concepts_from_feedback(candidate_memory)
+    citation_signals = _dedupe_lines(candidate_memory.get("citations", [])) if isinstance(candidate_memory.get("citations", []), list) else []
+    evidence_signals = _dedupe_lines(candidate_memory.get("summary", []) + candidate_memory.get("quality_gates", []))
+
+    graph["concepts"] = _dedupe_lines(graph.get("concepts", []) + concept_signals)
+    graph["citations"] = _dedupe_lines(graph.get("citations", []) + citation_signals)
+    graph["evidence"] = _dedupe_lines(graph.get("evidence", []) + evidence_signals)
+    graph["concept_weights"] = _merge_weight_maps(graph.get("concept_weights", {}), {item: 1 for item in concept_signals})
+    graph["citation_weights"] = _merge_weight_maps(graph.get("citation_weights", {}), {item: 1 for item in citation_signals})
+    graph["relations"] = _merge_relation_lists(graph.get("relations", []), _relation_items_from_concepts(concept_signals))
+
+    dna["essence"] = _dedupe_lines(dna.get("essence", []) + concept_signals[:8])
+    dna["reason_for_being"] = _dedupe_lines(dna.get("reason_for_being", []) + candidate_memory.get("summary", [])[:4])
+    dna["style_markers"] = _dedupe_lines(dna.get("style_markers", []) + candidate_memory.get("identity_rules", [])[:6])
+    dna["argumentative_patterns"] = _dedupe_lines(dna.get("argumentative_patterns", []) + candidate_memory.get("structure_rules", [])[:6] + candidate_memory.get("activity_rules", [])[:6])
+    dna["reinforcement_log"] = _dedupe_lines(
+        dna.get("reinforcement_log", [])
+        + [f"Refuerzo editorial aplicado sobre {len(concept_signals)} conceptos y {len(citation_signals)} citas."]
+        + candidate_memory.get("summary", [])[:2]
+    )
+    return _normalize_editorial_dna(dna)
+
+
+def _memory_prompt_view(memory: dict) -> dict:
+    normalized = dict(memory or {})
+    editorial_dna = _normalize_editorial_dna(normalized.get("editorial_dna", {}))
+    tex_primary = normalized.get("tex_content_memory", {}).get("primary", {}) if isinstance(normalized.get("tex_content_memory", {}), dict) else {}
+    prompt_view = {
+        section: normalized.get(section, [])[:12] for section in MEMORY_SECTIONS if normalized.get(section)
+    }
+    for field in ("artifact_name", "artifact_types", "supported_artifact_types", "source_documents", "concepts", "section_titles", "citations"):
+        value = normalized.get(field)
+        if isinstance(value, list):
+            prompt_view[field] = value[:20]
+        elif value:
+            prompt_view[field] = value
+    if editorial_dna:
+        graph = editorial_dna.get("knowledge_graph", {})
+        prompt_view["editorial_dna"] = {
+            "identity": editorial_dna.get("identity", {}),
+            "essence": editorial_dna.get("essence", [])[:12],
+            "reason_for_being": editorial_dna.get("reason_for_being", [])[:12],
+            "style_markers": editorial_dna.get("style_markers", [])[:12],
+            "argumentative_patterns": editorial_dna.get("argumentative_patterns", [])[:12],
+            "knowledge_graph": {
+                "concepts": graph.get("concepts", [])[:20],
+                "citations": graph.get("citations", [])[:20],
+                "relations": graph.get("relations", [])[:12],
+                "evidence": graph.get("evidence", [])[:12],
+            },
+            "writing_memory_blocks": len(editorial_dna.get("writing_memory", [])),
+            "has_reconstructable_source": bool(editorial_dna.get("reconstructable_source", "")),
+        }
+    if tex_primary:
+        prompt_view["tex_primary"] = {
+            "relative_path": tex_primary.get("relative_path", ""),
+            "raw_latex_chars": tex_primary.get("raw_latex_chars", 0),
+            "content_blocks": len(tex_primary.get("content_blocks", [])),
+            "all_cited_keys": tex_primary.get("all_cited_keys", [])[:20],
+        }
+    return prompt_view
+
+
+def _brain_lines(items: list[str], max_items: int) -> list[str]:
+    return _dedupe_lines([item for item in items if isinstance(item, str) and item.strip()])[:max_items]
+
+
+def _brain_concepts(items: list[str], max_items: int) -> list[str]:
+    selected = [item for item in items if _is_brain_concept(item)]
+    return _dedupe_lines(selected)[:max_items]
+
+
+def _relations_from_content_blocks(blocks: list[dict], concepts: list[str]) -> list[dict]:
+    relations: list[dict] = []
+    candidates = _brain_concepts(concepts, 20)
+    if not candidates:
+        return relations
+    for block in blocks[:120]:
+        if not isinstance(block, dict):
+            continue
+        text = str(block.get("text", ""))
+        lowered = text.lower()
+        matched = [concept for concept in candidates if concept.lower() in lowered][:5]
+        section = str(block.get("section", "")).strip()
+        for concept in matched:
+            if section:
+                relations.append(
+                    {
+                        "source": section,
+                        "target": concept,
+                        "kind": "develops",
+                        "weight": 1,
+                        "evidence": [str(block.get("id", ""))],
+                    }
+                )
+        for index, source in enumerate(matched):
+            for target in matched[index + 1:index + 3]:
+                relations.append(
+                    {
+                        "source": source,
+                        "target": target,
+                        "kind": "cooccurrence",
+                        "weight": 1,
+                        "evidence": [str(block.get("id", ""))],
+                    }
+                )
+    return _merge_relation_lists([], relations)
+
+
+def _synthesize_editorial_dna(memory: dict, existing_dna: dict | None = None) -> dict:
+    dna = _normalize_editorial_dna(existing_dna or memory.get("editorial_dna", {}))
+    tex_primary = memory.get("tex_content_memory", {}).get("primary", {}) if isinstance(memory.get("tex_content_memory", {}), dict) else {}
+    graph = dna.get("knowledge_graph", {})
+    graph["concepts"] = _dedupe_lines(graph.get("concepts", []) + memory.get("concepts", []))
+    graph["citations"] = _dedupe_lines(graph.get("citations", []) + memory.get("citations", []))
+    graph["evidence"] = _dedupe_lines(graph.get("evidence", []) + memory.get("bibliography_index", []) + memory.get("source_documents", []))
+    graph["relations"] = _overlay_relation_lists(graph.get("relations", []), _relations_from_content_blocks(tex_primary.get("content_blocks", []), graph.get("concepts", [])))
+    dna["knowledge_graph"] = graph
+    dna["identity"] = _deep_merge_dicts(
+        dna.get("identity", {}),
+        {
+            "node_metadata": memory.get("node_metadata", {}),
+            "curricular_context": memory.get("curricular_context", {}),
+            "identity_rules": memory.get("identity_rules", [])[:12],
+        },
+    )
+    dna["structure"] = _deep_merge_dicts(
+        dna.get("structure", {}),
+        {
+            "section_titles": memory.get("section_titles", []),
+            "artifact_name": memory.get("artifact_name", ""),
+            "artifact_types": memory.get("artifact_types", []) or memory.get("supported_artifact_types", []),
+            "tex_functional_structure": tex_primary.get("functional_structure", {}),
+        },
+    )
+    dna["essence"] = _brain_lines(
+        dna.get("essence", [])
+        + memory.get("summary", [])
+        + _brain_concepts(memory.get("concepts", []), 20)
+        + memory.get("activity_rules", []),
+        24,
+    )
+    dna["reason_for_being"] = _brain_lines(
+        dna.get("reason_for_being", [])
+        + memory.get("summary", [])
+        + memory.get("structure_rules", [])
+        + memory.get("activity_rules", [])
+        + memory.get("section_titles", []),
+        24,
+    )
+    dna["style_markers"] = _brain_lines(
+        dna.get("style_markers", []) + memory.get("identity_rules", []) + memory.get("latex_rules", []),
+        20,
+    )
+    dna["argumentative_patterns"] = _brain_lines(
+        dna.get("argumentative_patterns", []) + memory.get("structure_rules", []) + memory.get("activity_rules", []) + memory.get("quality_gates", []),
+        20,
+    )
+    dna["writing_memory"] = tex_primary.get("content_blocks", []) or dna.get("writing_memory", [])
+    dna["reconstructable_source"] = tex_primary.get("raw_latex", "") or dna.get("reconstructable_source", "")
+    dna["reinforcement_log"] = _brain_lines(
+        dna.get("reinforcement_log", [])
+        + [
+            f"ADN sintetizado con {len(graph.get('concepts', []))} conceptos, {len(graph.get('citations', []))} citas y {len(graph.get('relations', []))} relaciones.",
+            f"Memoria de redacción preservada en {len(dna.get('writing_memory', []))} bloques.",
+        ],
+        40,
+    )
+    return _normalize_editorial_dna(dna)
 
 
 def _extract_first_json(text: str) -> dict | None:
@@ -958,9 +1459,11 @@ def _extract_bullets(text: str) -> list[str]:
 
 def _latex_to_plain(text: str) -> str:
     value = text or ""
+    value = re.sub(r"\\cite\w*(?:\[[^\]]*\]){0,2}\{([^{}]*)\}", "", value)
     value = re.sub(r"\\textbf\{([^{}]*)\}", r"\1", value)
     value = re.sub(r"\\textit\{([^{}]*)\}", r"\1", value)
     value = re.sub(r"\\emph\{([^{}]*)\}", r"\1", value)
+    value = value.replace(r"\&", "&")
     value = value.replace("\\\\", " ")
     value = value.replace("~", " ")
     value = re.sub(r"\\[a-zA-Z]+", " ", value)
@@ -1011,15 +1514,97 @@ def _extract_program_context(text: str) -> dict:
 
 
 def _extract_bibliography_index(text: str) -> list[str]:
-    entries: list[str] = []
-    entry_pattern = re.compile(r"@\w+\{\s*([^,]+),(.+?)(?=^@\w+\{|\Z)", re.DOTALL | re.MULTILINE)
+    return _bibliography_index_from_entries(_extract_bibtex_entries(text, "inline"))
+
+
+def _bibliography_index_from_entries(entries: dict[str, dict]) -> list[str]:
+    lines: list[str] = []
+    for key, entry in entries.items():
+        title = entry.get("title") or entry.get("entry_text") or ""
+        source = entry.get("source_path", "")
+        label = f"{key} :: {title}" if title else key
+        if source:
+            label = f"{label} :: fuente={source}"
+        lines.append(label)
+    return _dedupe_lines(lines)
+
+
+def _extract_bibtex_entries(text: str, relative_path: str) -> dict[str, dict]:
+    entries: dict[str, dict] = {}
+    entry_pattern = re.compile(r"@(\w+)\s*\{\s*([^,\s]+)\s*,(.*?)(?=^\s*@\w+\s*\{|\Z)", re.DOTALL | re.MULTILINE)
     for match in entry_pattern.finditer(text or ""):
+        entry_type = match.group(1).strip()
+        key = match.group(2).strip()
+        body = match.group(3).strip()
+        fields = _extract_bibtex_fields(body)
+        entry = {
+            "key": key,
+            "source_type": "bibtex",
+            "source_path": relative_path,
+            "entry_type": entry_type,
+            "title": _latex_to_plain(fields.get("title", "")),
+            "author": _latex_to_plain(fields.get("author", "")),
+            "year": _latex_to_plain(fields.get("year", "")),
+            "publisher": _latex_to_plain(fields.get("publisher", "")),
+            "journal": _latex_to_plain(fields.get("journal", "")),
+            "url": _latex_to_plain(fields.get("url", "") or fields.get("howpublished", "")),
+            "note": _latex_to_plain(fields.get("note", "")),
+            "raw_entry": match.group(0).strip(),
+        }
+        entries[key] = {k: v for k, v in entry.items() if v not in ("", None)}
+    return entries
+
+
+def _extract_bibtex_fields(body: str) -> dict[str, str]:
+    fields: dict[str, str] = {}
+    field_pattern = re.compile(
+        r"(\w+)\s*=\s*(\{(?:[^{}]|\{[^{}]*\})*\}|\"[^\"]*\"|[^,\n]+)\s*,?",
+        re.DOTALL,
+    )
+    for match in field_pattern.finditer(body or ""):
+        name = match.group(1).strip().lower()
+        value = match.group(2).strip()
+        if (value.startswith("{") and value.endswith("}")) or (value.startswith('"') and value.endswith('"')):
+            value = value[1:-1]
+        fields[name] = value.strip()
+    return fields
+
+
+def _extract_thebibliography_entries(text: str, relative_path: str) -> dict[str, dict]:
+    entries: dict[str, dict] = {}
+    env_match = re.search(r"\\begin\{thebibliography\}(.*?)\\end\{thebibliography\}", text or "", re.DOTALL)
+    if not env_match:
+        return entries
+    body = env_match.group(1)
+    matches = list(re.finditer(r"\\bibitem(?:\[[^\]]*\])?\{([^}]+)\}", body))
+    for index, match in enumerate(matches):
         key = match.group(1).strip()
-        body = match.group(2)
-        title_match = re.search(r"\btitle\s*=\s*[{"](.+?)[}"]\s*,?\n", body, re.DOTALL | re.IGNORECASE)
-        title = _latex_to_plain(title_match.group(1)) if title_match else ""
-        entries.append(f"{key} :: {title}" if title else key)
-    return _dedupe_lines(entries)
+        start = match.end()
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(body)
+        raw_entry = body[start:end].strip()
+        entry_text = _latex_to_plain(raw_entry)
+        entries[key] = {
+            "key": key,
+            "source_type": "thebibliography",
+            "source_path": f"{relative_path}#thebibliography",
+            "entry_text": entry_text,
+            "title": _guess_inline_bibliography_title(raw_entry),
+            "raw_entry": raw_entry,
+        }
+    return entries
+
+
+def _guess_inline_bibliography_title(entry_text: str) -> str:
+    if not entry_text:
+        return ""
+    italic_match = re.search(r"\\textit\{([^{}]+)\}", entry_text)
+    if italic_match:
+        return _latex_to_plain(italic_match.group(1))
+    plain_text = _latex_to_plain(entry_text)
+    pieces = [piece.strip() for piece in re.split(r"\.\s+", plain_text) if piece.strip()]
+    if len(pieces) >= 2:
+        return pieces[1][:180]
+    return entry_text[:180]
 
 
 def _extract_bibliography_titles(entries: list[str]) -> list[str]:
@@ -1032,7 +1617,7 @@ def _extract_bibliography_titles(entries: list[str]) -> list[str]:
     return _dedupe_lines(titles)
 
 
-def _extract_tex_blueprint(text: str, relative_path: str) -> dict:
+def _extract_tex_blueprint(text: str, relative_path: str, bibliography_lookup: dict[str, dict] | None = None) -> dict:
     macros: dict[str, str] = {}
     for name in ("documenttitle", "documentsubtitle", "documentsubject", "coursename", "coursecode", "documentauthor"):
         match = re.search(rf"\\def\\{name}\s*\{{(.*?)\}}", text, re.DOTALL)
@@ -1043,9 +1628,7 @@ def _extract_tex_blueprint(text: str, relative_path: str) -> dict:
     abstract_text = _latex_to_plain(abstract_match.group(1)) if abstract_match else ""
     section_titles = _dedupe_lines([_latex_to_plain(item) for item in re.findall(r"\\section\{([^}]*)\}", text)])
     subsection_titles = _dedupe_lines([_latex_to_plain(item) for item in re.findall(r"\\subsection\{([^}]*)\}", text)])
-    cited_keys: list[str] = []
-    for chunk in re.findall(r"\\cite\w*\{([^}]*)\}", text):
-        cited_keys.extend(part.strip() for part in chunk.split(",") if part.strip())
+    cited_keys = _extract_citation_keys(text)
     concept_nodes = _dedupe_lines(
         [_latex_to_plain(item) for item in re.findall(r"\\node\[[^\]]+\]\s*\([^)]+\)\s*at\s*\([^)]+\)\s*\{([^}]*)\};", text)]
     )
@@ -1057,6 +1640,7 @@ def _extract_tex_blueprint(text: str, relative_path: str) -> dict:
     if intro_text:
         source_fragments.extend(_extract_nonempty_lines(intro_text, limit=4, max_len=260))
     source_fragments.extend(concept_nodes[:8])
+    content_memory = _extract_tex_content_memory(text, relative_path, bibliography_lookup or {})
 
     return {
         "relative_path": relative_path,
@@ -1067,4 +1651,252 @@ def _extract_tex_blueprint(text: str, relative_path: str) -> dict:
         "cited_keys": _dedupe_lines(cited_keys),
         "concepts": concept_nodes,
         "source_fragments": _dedupe_lines(source_fragments),
+        "content_memory": content_memory,
+    }
+
+
+def _extract_tex_content_memory(text: str, relative_path: str, bibliography_lookup: dict[str, dict]) -> dict:
+    all_citations = _extract_citation_keys(text)
+    blocks = _extract_tex_content_blocks(text, relative_path, bibliography_lookup)
+    citation_map: dict[str, dict] = {}
+    for block in blocks:
+        for key in block.get("cited_keys", []):
+            item = citation_map.setdefault(
+                key,
+                {
+                    "key": key,
+                    "blocks": [],
+                    "bibliography": _bibliography_for_key(key, bibliography_lookup),
+                },
+            )
+            item["blocks"].append(block["id"])
+    missing = [key for key in _dedupe_lines(all_citations) if key not in bibliography_lookup]
+    return {
+        "relative_path": relative_path,
+        "raw_latex_sha256": hashlib.sha256((text or "").encode("utf-8", errors="replace")).hexdigest(),
+        "raw_latex_chars": len(text or ""),
+        "raw_latex": text or "",
+        "functional_structure": _extract_tex_functional_structure(text),
+        "paragraph_map": blocks,
+        "content_blocks": blocks,
+        "citation_map": citation_map,
+        "all_cited_keys": _dedupe_lines(all_citations),
+        "missing_bibliography_keys": missing,
+    }
+
+
+def _extract_tex_functional_structure(text: str) -> dict:
+    documentclass_match = re.search(r"\\documentclass(?:\[([^\]]*)\])?\{([^}]+)\}", text or "", re.DOTALL)
+    packages = []
+    for match in re.finditer(r"\\usepackage(?:\[[^\]]*\])?\{([^}]+)\}", text or ""):
+        packages.extend(part.strip() for part in match.group(1).split(",") if part.strip())
+    inputs = [item.strip() for item in re.findall(r"\\input\{([^}]+)\}", text or "")]
+    environments = _dedupe_lines(re.findall(r"\\begin\{([^}]+)\}", text or ""))
+    commands = _dedupe_lines(re.findall(r"\\(template\w+|insertcoverwatermark|bibliography|bibliographystyle|setcitestyle)", text or ""))
+    return {
+        "documentclass": {
+            "class": documentclass_match.group(2).strip() if documentclass_match else "",
+            "options": _latex_to_plain(documentclass_match.group(1) or "") if documentclass_match else "",
+        },
+        "packages": _dedupe_lines(packages),
+        "inputs": _dedupe_lines(inputs),
+        "environments": environments,
+        "template_commands": commands,
+    }
+
+
+def _extract_tex_content_blocks(text: str, relative_path: str, bibliography_lookup: dict[str, dict]) -> list[dict]:
+    blocks: list[dict] = []
+    current_section = ""
+    current_subsection = ""
+    current_paragraph = ""
+    order = 1
+    in_tikz_options = False
+
+    def add_block(kind: str, latex: str, *, section: str | None = None, subsection: str | None = None, paragraph: str | None = None) -> None:
+        nonlocal order
+        plain = _latex_to_plain(latex)
+        if not plain:
+            return
+        cited_keys = _extract_citation_keys(latex)
+        block = {
+            "id": f"b{order:04d}",
+            "order": order,
+            "kind": kind,
+            "section": section if section is not None else current_section,
+            "subsection": subsection if subsection is not None else current_subsection,
+            "paragraph_heading": paragraph if paragraph is not None else current_paragraph,
+            "text": plain,
+            "latex": latex.strip(),
+            "cited_keys": cited_keys,
+            "bibliography": [_bibliography_for_key(key, bibliography_lookup) for key in cited_keys],
+            "source_path": relative_path,
+        }
+        blocks.append(block)
+        order += 1
+
+    abstract_match = re.search(r"\\begin\{abstractd\}(.*?)\\end\{abstractd\}", text or "", re.DOTALL)
+    if abstract_match:
+        add_block("abstract", abstract_match.group(1), section="Resumen editorial", subsection="", paragraph="")
+
+    body = _document_body_without_bibliography(text or "")
+    buffer: list[str] = []
+
+    def flush_buffer() -> None:
+        if not buffer:
+            return
+        latex = "\n".join(buffer).strip()
+        buffer.clear()
+        if latex:
+            add_block("paragraph", latex)
+
+    for raw_line in body.splitlines():
+        line = raw_line.strip()
+        if not line:
+            flush_buffer()
+            continue
+        if line.startswith("%"):
+            continue
+        if line.startswith(r"\begin{tikzpicture}["):
+            flush_buffer()
+            in_tikz_options = True
+            continue
+        if in_tikz_options:
+            if line == "]" or line.endswith("]"):
+                in_tikz_options = False
+            continue
+
+        heading = _match_heading(line, "section")
+        if heading is not None:
+            flush_buffer()
+            current_section = heading
+            current_subsection = ""
+            current_paragraph = ""
+            add_block("section", line, section=current_section, subsection="", paragraph="")
+            continue
+
+        heading = _match_heading(line, "subsection")
+        if heading is not None:
+            flush_buffer()
+            current_subsection = heading
+            current_paragraph = ""
+            add_block("subsection", line, subsection=current_subsection, paragraph="")
+            continue
+
+        heading = _match_heading(line, "paragraph")
+        if heading is not None:
+            flush_buffer()
+            current_paragraph = heading
+            add_block("paragraph_heading", line, paragraph=current_paragraph)
+            continue
+
+        node_text = _extract_node_text(line)
+        if node_text:
+            flush_buffer()
+            add_block("concept_node", node_text)
+            continue
+
+        caption = _match_command_argument(line, "caption")
+        if caption is not None:
+            flush_buffer()
+            add_block("caption", line)
+            continue
+
+        item_match = re.match(r"\\item(?:\[[^\]]*\])?\s*(.+)$", line)
+        if item_match:
+            flush_buffer()
+            add_block("list_item", line)
+            continue
+
+        if _is_structural_latex_line(line):
+            flush_buffer()
+            continue
+
+        if _looks_like_content(line):
+            buffer.append(line)
+        else:
+            flush_buffer()
+
+    flush_buffer()
+    return blocks
+
+
+def _document_body_without_bibliography(text: str) -> str:
+    body_match = re.search(r"\\begin\{document\}(.*?)(?:\\end\{document\}|\Z)", text or "", re.DOTALL)
+    body = body_match.group(1) if body_match else text
+    body = re.sub(r"\\begin\{abstractd\}.*?\\end\{abstractd\}", "", body, flags=re.DOTALL)
+    body = re.split(r"\\begin\{thebibliography\}|\\bibliography\{", body, maxsplit=1)[0]
+    return body
+
+
+def _match_heading(line: str, command: str) -> str | None:
+    match = re.match(rf"\\{command}\*?\{{(.+?)\}}", line)
+    return _latex_to_plain(match.group(1)) if match else None
+
+
+def _match_command_argument(line: str, command: str) -> str | None:
+    match = re.match(rf"\\{command}\*?\{{(.+?)\}}", line)
+    return match.group(1) if match else None
+
+
+def _extract_node_text(line: str) -> str:
+    match = re.search(r"\\node(?:\[[^\]]+\])?(?:\s*\([^)]+\))?\s*(?:at\s*\([^)]+\))?\s*\{(.+?)\};", line)
+    return match.group(1) if match else ""
+
+
+def _is_structural_latex_line(line: str) -> bool:
+    if ".style" in line or re.match(r"^(draw|fill|align|text width|minimum height|inner sep|font)\s*=", line):
+        return True
+    if re.match(r"^[A-Za-z0-9_!\\.\s/-]+,\s*$", line) and "=" in line:
+        return True
+    structural_prefixes = (
+        r"\begin",
+        r"\end",
+        r"\newpage",
+        r"\clearpage",
+        r"\thispagestyle",
+        r"\template",
+        r"\insertcoverwatermark",
+        r"\centering",
+        r"\vspace",
+        r"\resizebox",
+        r"\draw",
+        r"\label",
+        r"\input",
+        r"\setcitestyle",
+        r"\usepackage",
+        r"\renewcommand",
+        r"\def",
+        r"\AddToShipoutPictureBG",
+        r"\ifthenelse",
+        r"\includegraphics",
+    )
+    return line.startswith(structural_prefixes) or line in {"{", "}", "};", "]"}
+
+
+def _looks_like_content(line: str) -> bool:
+    if not re.search(r"[A-Za-zÁÉÍÓÚáéíóúÑñ]", line):
+        return False
+    if re.match(r"^[\\{}\[\](),.;:%\s-]+$", line):
+        return False
+    return True
+
+
+def _extract_citation_keys(text: str) -> list[str]:
+    keys: list[str] = []
+    pattern = re.compile(r"\\cite\w*(?:\[[^\]]*\]){0,2}\{([^{}]+)\}")
+    for chunk in pattern.findall(text or ""):
+        keys.extend(part.strip() for part in chunk.split(",") if part.strip())
+    return _dedupe_lines(keys)
+
+
+def _bibliography_for_key(key: str, bibliography_lookup: dict[str, dict]) -> dict:
+    entry = bibliography_lookup.get(key)
+    if entry:
+        return entry
+    return {
+        "key": key,
+        "source_type": "missing",
+        "source_path": "",
+        "warning": "La clave aparece citada en el TEX pero no se encontro en .bib ni en thebibliography.",
     }

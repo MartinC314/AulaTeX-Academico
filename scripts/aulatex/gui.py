@@ -667,7 +667,7 @@ class AulaTeXApp(tk.Tk):
         self.feedback_engines_entry = ttk.Entry(control_frame, textvariable=self.feedback_engines)
         self.feedback_engines_entry.grid(row=1, column=1, columnspan=3, sticky="ew", padx=(6, 12), pady=(10, 0))
         ttk.Label(control_frame, text="Max tokens").grid(row=1, column=4, sticky="w", pady=(10, 0))
-        self.feedback_tokens_spin = ttk.Spinbox(control_frame, from_=128, to=16000, increment=128, textvariable=self.feedback_max_tokens, width=10)
+        self.feedback_tokens_spin = ttk.Spinbox(control_frame, from_=128, to=200000, increment=128, textvariable=self.feedback_max_tokens, width=10)
         self.feedback_tokens_spin.grid(row=1, column=5, sticky="w", padx=(6, 0), pady=(10, 0))
 
         action_frame = ttk.Frame(self.feedback_tab)
@@ -720,8 +720,8 @@ class AulaTeXApp(tk.Tk):
         self._attach_tooltip(self.feedback_career_combo, "Selecciona el programa educativo. Si dejas materia vacía, la propagación lateral puede abarcar otros programas de la institución.")
         self._attach_tooltip(self.feedback_subject_combo, "Selecciona la materia si quieres precisión local; desde aquí también se habilita la selección de actividades detectadas.")
         self._attach_tooltip(self.feedback_activity_combo, "La actividad afina el punto de arranque. La memoria puede propagarse desde ella hacia materia, carrera, institución e interinstitucional.")
-        self._attach_tooltip(self.feedback_build_combo, "Define hasta qué nivel debe llegar la construcción en esta corrida: desde el origen actual hacia materia, carrera, institución o interinstitucional.")
-        self._attach_tooltip(self.feedback_propagation_combo, "Ascendente: sube hasta el nivel destino. Ascendente exhaustivo: antes de consolidar cada nivel incorpora todos los elementos del nivel inferior. Recursivo completo: consolida el subárbol descendente completo de cada nivel antes de subir al siguiente ancestro.")
+        self._attach_tooltip(self.feedback_build_combo, "Define hasta qué nivel debe llegar la construcción en esta corrida. Si la propagación es local, este control se fija automáticamente al nivel del nodo origen.")
+        self._attach_tooltip(self.feedback_propagation_combo, "Local: consolida sólo el nodo origen usando sus fuentes locales (por ejemplo TEX, programa y BIB). Ascendente: sube hasta el nivel destino. Ascendente exhaustivo: antes de consolidar cada nivel incorpora todos los elementos del nivel inferior. Recursivo completo: consolida el subárbol descendente completo de cada nivel antes de subir al siguiente ancestro.")
         self._attach_tooltip(self.feedback_iterations_spin, "Número de pasadas completas del orquestador. Cada ciclo vuelve a consultar los motores en el orden configurado.")
         self._attach_tooltip(self.feedback_engines_entry, "Lista separada por comas. Se ejecutan del más rápido al más profundo; el orden por defecto ya sigue esa estrategia.")
         self._attach_tooltip(self.feedback_tokens_spin, "Límite de salida por llamada LLM. Útil para controlar profundidad y costo por ciclo.")
@@ -731,7 +731,7 @@ class AulaTeXApp(tk.Tk):
         self._attach_tooltip(self.feedback_unlock_button, "Libera las fijaciones manuales del scope actual para permitir nuevas fusiones en próximas corridas.")
         self._attach_tooltip(self.feedback_refresh_button, "Relee catálogo, plan, métricas y memoria persistida desde la base SQLite y los snapshots del scope actual.")
         self._attach_tooltip(self.feedback_help_button, "Abre una guía corta para operar la construcción de memoria editorial y entender las opciones de propagación.")
-        self._attach_tooltip(self.feedback_plan_text, "Vista previa del recorrido ascendente que seguirá el orquestador hasta el nivel destino seleccionado.")
+        self._attach_tooltip(self.feedback_plan_text, "Vista previa del recorrido de consolidación. En modo local la construcción queda restringida al nodo origen y sus fuentes editoriales directas.")
         self._attach_tooltip(self.feedback_metrics_text, "Resumen histórico por motor y por ciclo para los scopes actualmente incluidos en el plan visible.")
         self._attach_tooltip(self.feedback_memory_text, "Memoria editorial persistida del scope actual, incluyendo herencia útil y secciones fijadas manualmente.")
         self._attach_tooltip(self.feedback_output, "Bitácora en vivo del orquestador: inicio, progreso por motor, resultados, cancelación o cierre de corrida.")
@@ -978,7 +978,7 @@ class AulaTeXApp(tk.Tk):
         messagebox.showinfo(
             "AulaTeX - Memoria editorial",
             "1. Selecciona institución, carrera, materia y, si aplica, actividad.\n"
-            "2. Elige el nivel destino y el modo de propagación.\n"
+            "2. Elige el nivel destino y el modo de propagación. Si eliges 'local', AulaTeX fija automáticamente el destino al nivel del nodo origen y consolida sólo sus fuentes directas (por ejemplo TEX, programa y BIB).\n"
             "3. Ajusta iteraciones, motores y max tokens.\n"
             "4. Revisa el plan de propagación antes de ejecutar.\n"
             "5. Construye la memoria: el progreso avanza por scope, ciclo y motor.\n"
@@ -1853,6 +1853,14 @@ class AulaTeXApp(tk.Tk):
     def _on_feedback_plan_changed(self, _event=None) -> None:
         self._refresh_feedback_plan_and_memory()
 
+    def _effective_feedback_build_level(self, scope: EditorialScope | None) -> str:
+        if scope is None:
+            return self.feedback_build_level.get() or "interinstitucional"
+        if self.feedback_propagation.get() == "local":
+            return scope.level
+        selected = self.feedback_build_level.get() or scope.level
+        return selected if selected in EDITORIAL_LEVELS else scope.level
+
     def _resolve_feedback_scope(self) -> EditorialScope | None:
         institution = self._selected_feedback_value(self.feedback_institution)
         career = self._selected_feedback_value(self.feedback_career)
@@ -1889,7 +1897,7 @@ class AulaTeXApp(tk.Tk):
         self.feedback_scope_status.set(
             f"Origen resuelto: {scope.level} | {scope.key} | ruta {scope.relative_path or '.'}"
         )
-        build_level = self.feedback_build_level.get() or scope.level
+        build_level = self._effective_feedback_build_level(scope)
         try:
             plan = self.editorial_builder.plan_scopes(scope.key, build_level, self.feedback_propagation.get())
         except ValueError as exc:
@@ -1898,6 +1906,8 @@ class AulaTeXApp(tk.Tk):
 
         self.feedback_plan_text.insert("end", f"Propagacion: {PROPAGATION_LABELS.get(self.feedback_propagation.get(), self.feedback_propagation.get())}\n")
         self.feedback_plan_text.insert("end", f"Nivel destino: {build_level}\n\n")
+        if self.feedback_propagation.get() == "local":
+            self.feedback_plan_text.insert("end", "Modo local: la memoria editorial se construye sólo para el nodo origen usando sus fuentes editoriales directas.\n\n")
         if plan:
             for index, item in enumerate(plan, start=1):
                 self.feedback_plan_text.insert("end", f"{index}. {item.level} | {item.label} | {item.key}\n")
@@ -1926,8 +1936,13 @@ class AulaTeXApp(tk.Tk):
             if default_level not in options:
                 default_level = options[0]
         self.feedback_build_combo.configure(values=options)
-        if self.feedback_build_level.get() not in options:
-            self.feedback_build_level.set(default_level)
+        if self.feedback_propagation.get() == "local" and scope is not None:
+            self.feedback_build_level.set(scope.level)
+            self.feedback_build_combo.configure(state="disabled")
+        else:
+            self.feedback_build_combo.configure(state="readonly")
+            if self.feedback_build_level.get() not in options:
+                self.feedback_build_level.set(default_level)
 
     def _feedback_schema_preview(self, scope: EditorialScope | None = None) -> str:
         lines = ["# Estructura de memoria editorial", ""]
@@ -2013,7 +2028,7 @@ class AulaTeXApp(tk.Tk):
         engines = self._parse_feedback_engines()
         request = EditorialMemoryRequest(
             source_scope_key=scope.key,
-            build_level=self.feedback_build_level.get(),
+            build_level=self._effective_feedback_build_level(scope),
             propagation_mode=self.feedback_propagation.get(),
             iterations=max(1, int(self.feedback_iterations.get())),
             engines=engines,
@@ -2022,7 +2037,10 @@ class AulaTeXApp(tk.Tk):
 
         self.feedback_cancel_event = threading.Event()
         self.feedback_progress.set(0.0)
-        self.feedback_progress_status.set("Construyendo memoria editorial...")
+        if request.propagation_mode == "local":
+            self.feedback_progress_status.set("Construyendo memoria editorial local desde fuentes del nodo origen...")
+        else:
+            self.feedback_progress_status.set("Construyendo memoria editorial...")
         self._log(self.feedback_output, f"[MEMORIA] Inicio en {scope.key} con motores: {', '.join(engines)}")
         self._set_busy("feedback", True)
 
