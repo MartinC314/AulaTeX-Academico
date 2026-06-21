@@ -294,32 +294,32 @@
 ## editorial_dna
 
 ### esencia
-- Se crea memoria base de actividad para Filosofía del Derecho con identidad UnADM.
-- Se conserva regla institucional de no propagar salidas no estructuradas sin normalización.
-- Se fijan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
-- Memoria base de actividad para Filosofía del Derecho con identidad UnADM.
-- Conservar normalización estructurada antes de propagar reglas.
-- Ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
-- Aplicar compresión lossless por unión y deduplicación.
-- Salida sin JSON parseable heredada desde Codex para UnADM; requiere normalización.
-- Salida sin JSON parseable desde GPT-Pro para Actividad 1
-- Memoria de actividad consolidada para Filosofía del Derecho con identidad UnADM.
-- Se mantiene normalización estructurada obligatoria antes de propagar.
-- Ejes editoriales vigentes: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Nociones de hermen \'e utica e interpretaci \'o n jur \'i dica en el contexto mexicano
+- Memoria del segundo y tercer seminarios de argumentaci \'o n jur \'i dica
+- Constituci \'o n Pol \'i tica de los Estados Unidos Mexicanos (texto vigente)
+- Ley General de V \'i ctimas (texto vigente)
+- Introducci \'o n al estudio del derecho
+- Teor \'i a pura del derecho
+- Filosof \'i a del Derecho
 
 ### razon_de_ser
-- Se crea memoria base de actividad para Filosofía del Derecho con identidad UnADM.
-- Se conserva regla institucional de no propagar salidas no estructuradas sin normalización.
-- Se fijan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
-- Memoria base de actividad para Filosofía del Derecho con identidad UnADM.
-- Conservar normalización estructurada antes de propagar reglas.
-- Ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
-- Aplicar compresión lossless por unión y deduplicación.
-- Salida sin JSON parseable heredada desde Codex para UnADM; requiere normalización.
-- Salida sin JSON parseable desde GPT-Pro para Actividad 1
-- Memoria de actividad consolidada para Filosofía del Derecho con identidad UnADM.
-- Se mantiene normalización estructurada obligatoria antes de propagar.
-- Ejes editoriales vigentes: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Separar secciones: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Alinear la entrega al producto solicitado en la planeación semanal.
+- Separar secciones: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Transformar la planeación en reporte, presentación o producto visual según consigna.
 
 ### identidad_estilistica
 - Mantener identidad institucional UnADM en tono y formato.
@@ -331,9 +331,9 @@
 - Marcar como supuesto cualquier dato no visible en la consigna.
 - Tratar la fuente heredada Codex como provisional hasta verificarla.
 - Citar malla-curricular-derecho-unadm.pdf como fuente de ubicación curricular.
-- Fuente provisional: GPT-Pro desde Actividad 1
 - Marcar como supuesto cualquier dato no visible en la consigna de actividad.
 - Tratar fuentes heredadas no verificadas como provisionales hasta confirmación local.
+- Citar malla-curricular-derecho-unadm.pdf para ubicación curricular.
 
 ### patrones_argumentativos
 - Iniciar con encuadre breve del problema jurídico o social.
@@ -352,7 +352,7 @@
 ### grafo_de_conocimiento
 - Conceptos: 122
 - Citas: 14
-- Relaciones reforzadas: 0
+- Relaciones reforzadas: 30
 - Evidencias: 151
 
 ## adn_tex

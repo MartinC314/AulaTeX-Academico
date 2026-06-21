@@ -719,30 +719,30 @@
       ]
     },
     "essence": [
-      "Se crea memoria base de actividad para Filosofía del Derecho con identidad UnADM.",
-      "Se conserva regla institucional de no propagar salidas no estructuradas sin normalización.",
-      "Se fijan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
-      "Memoria base de actividad para Filosofía del Derecho con identidad UnADM.",
-      "Conservar normalización estructurada antes de propagar reglas.",
-      "Ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
-      "Aplicar compresión lossless por unión y deduplicación.",
-      "Salida sin JSON parseable heredada desde Codex para UnADM; requiere normalización.",
-      "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
-      "Memoria de actividad consolidada para Filosofía del Derecho con identidad UnADM.",
-      "Se mantiene normalización estructurada obligatoria antes de propagar.",
-      "Ejes editoriales vigentes: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
-      "Se confirma compresión lossless por unión y deduplicación.",
-      "Se conserva alerta histórica de salidas no JSON parseable como control de calidad.",
-      "Mantener normalización estructurada obligatoria antes de propagar.",
-      "Conservar alerta histórica de salidas no JSON parseable desde Codex para UnADM.",
-      "Conservar alerta histórica de salida no JSON parseable desde GPT-Pro para Actividad 1.",
-      "Memoria consolidada de actividad para Filosofía del Derecho con identidad UnADM.",
-      "Compresión aplicada por unión y deduplicación sin pérdida.",
-      "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
-      "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
-      "Se conserva alerta histórica de salidas no JSON parseable en ciclos previos como control de calidad.",
-      "Normalización estructurada obligatoria antes de propagar.",
-      "Compresión lossless aplicada por unión y deduplicación."
+      "Problema juridico o social que activa la asignatura.",
+      "Conceptos, normas, doctrina o datos pertinentes.",
+      "Producto solicitado por la planeacion.",
+      "Analisis propio y postura academica.",
+      "Conclusion transferible a la practica juridica.",
+      "Nociones de hermen \\'e utica e interpretaci \\'o n jur \\'i dica en el contexto mexicano",
+      "Memoria del segundo y tercer seminarios de argumentaci \\'o n jur \\'i dica",
+      "Constituci \\'o n Pol \\'i tica de los Estados Unidos Mexicanos (texto vigente)",
+      "Ley General de V \\'i ctimas (texto vigente)",
+      "Introducci \\'o n al estudio del derecho",
+      "Teor \\'i a pura del derecho",
+      "Filosof \\'i a del Derecho",
+      "Manual pr \\'a ctico de filosof \\'i a del derecho: Fundamentos del derecho y justicia",
+      "Conceptos Jur \\'i dicos Fundamentales",
+      "De los derechos y el estado de derecho: aportaciones a una teor \\'i a jur \\'i dica de los derechos",
+      "Estudios de teor \\'i a del derecho natural",
+      "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia: Importancia, evoluci \\'o n y dificultades",
+      "Derecho y moral",
+      "Ley de Amparo, Reglamentaria de los art \\'i culos 103 y 107 de la Constituci \\'o n Pol \\'i tica de los Estados Unidos Mexicanos",
+      "Ley General de V \\'i ctimas",
+      "Definir objetivo puntual de la actividad antes del desarrollo.",
+      "Sustentar afirmaciones con fuentes verificables y cita explícita.",
+      "Incluir postura argumentada del estudiante, no solo resumen descriptivo.",
+      "Verificar coherencia entre pregunta guía, desarrollo y conclusión."
     ],
     "structure": {
       "section_titles": [
@@ -798,30 +798,30 @@
       }
     },
     "reason_for_being": [
-      "Se crea memoria base de actividad para Filosofía del Derecho con identidad UnADM.",
-      "Se conserva regla institucional de no propagar salidas no estructuradas sin normalización.",
-      "Se fijan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
-      "Memoria base de actividad para Filosofía del Derecho con identidad UnADM.",
-      "Conservar normalización estructurada antes de propagar reglas.",
-      "Ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
-      "Aplicar compresión lossless por unión y deduplicación.",
-      "Salida sin JSON parseable heredada desde Codex para UnADM; requiere normalización.",
-      "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
-      "Memoria de actividad consolidada para Filosofía del Derecho con identidad UnADM.",
-      "Se mantiene normalización estructurada obligatoria antes de propagar.",
-      "Ejes editoriales vigentes: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
-      "Se confirma compresión lossless por unión y deduplicación.",
-      "Se conserva alerta histórica de salidas no JSON parseable como control de calidad.",
-      "Mantener normalización estructurada obligatoria antes de propagar.",
-      "Conservar alerta histórica de salidas no JSON parseable desde Codex para UnADM.",
-      "Conservar alerta histórica de salida no JSON parseable desde GPT-Pro para Actividad 1.",
-      "Memoria consolidada de actividad para Filosofía del Derecho con identidad UnADM.",
-      "Compresión aplicada por unión y deduplicación sin pérdida.",
-      "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
-      "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
-      "Se conserva alerta histórica de salidas no JSON parseable en ciclos previos como control de calidad.",
-      "Normalización estructurada obligatoria antes de propagar.",
-      "Compresión lossless aplicada por unión y deduplicación."
+      "Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.",
+      "Problema juridico o social que activa la asignatura.",
+      "Conceptos, normas, doctrina o datos pertinentes.",
+      "Producto solicitado por la planeacion.",
+      "Analisis propio y postura academica.",
+      "Conclusion transferible a la practica juridica.",
+      "Iniciar con encuadre breve del problema jurídico o social.",
+      "Separar secciones: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.",
+      "Cerrar con conclusión jurídica transferible a la práctica profesional.",
+      "Alinear la entrega al producto solicitado en la planeación semanal.",
+      "Separar secciones: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.",
+      "Transformar la planeación en reporte, presentación o producto visual según consigna.",
+      "Definir objetivo puntual antes del desarrollo.",
+      "Separar secciones en: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.",
+      "Separar secciones en conceptos clave, marco normativo o doctrinal, análisis propio y cierre.",
+      "Alinear la entrega al producto solicitado por la planeación semanal.",
+      "Definir objetivo puntual de la actividad antes del desarrollo.",
+      "Sustentar afirmaciones con fuentes verificables y cita explícita.",
+      "Incluir postura argumentada del estudiante, no solo resumen descriptivo.",
+      "Verificar coherencia entre pregunta guía, desarrollo y conclusión.",
+      "Incluir postura argumentada del estudiante.",
+      "Evitar entregas solo descriptivas o de resumen.",
+      "No asumir que fuentes de semanas posteriores corresponden a actividad 1.",
+      "No asumir que fuentes de semanas posteriores correspondan a actividad 1."
     ],
     "style_markers": [
       "Mantener identidad institucional UnADM en tono y formato.",
@@ -833,17 +833,17 @@
       "Marcar como supuesto cualquier dato no visible en la consigna.",
       "Tratar la fuente heredada Codex como provisional hasta verificarla.",
       "Citar malla-curricular-derecho-unadm.pdf como fuente de ubicación curricular.",
-      "Fuente provisional: GPT-Pro desde Actividad 1",
       "Marcar como supuesto cualquier dato no visible en la consigna de actividad.",
       "Tratar fuentes heredadas no verificadas como provisionales hasta confirmación local.",
-      "Fuente provisional: Codex desde ingeniería-en-sistemas-computacionales.",
-      "Fuente provisional: GPT-Pro desde Actividad 1.",
-      "Fuente provisional: Auto (model-router) desde Actividad 1",
-      "Fuente provisional: Claude Foundry desde Actividad 1",
-      "Fuente provisional: Auto (model-router) desde Actividad 1.",
-      "Fuente provisional: Claude Foundry desde Actividad 1.",
-      "Fuente provisional: Codex.",
-      "Fuente provisional: GPT-Pro."
+      "Citar malla-curricular-derecho-unadm.pdf para ubicación curricular.",
+      "Marcar como supuesto todo dato no visible en la consigna.",
+      "Ubicar curricularmente en semestre 1, bloque 2, obligatoria, 8 créditos.",
+      "Usar codificación y acentos correctos en español en .tex y .bib.",
+      "Mantener claves BibTeX estables para evitar recompilaciones rotas.",
+      "Evitar comandos no estándar sin justificación editorial.",
+      "Compilar sin errores críticos y sin referencias rotas.",
+      "Verificar nombres de archivos del README antes de referenciarlos.",
+      "Corregir caracteres anómalos en rutas o nombres antes de compilar."
     ],
     "argumentative_patterns": [
       "Iniciar con encuadre breve del problema jurídico o social.",
@@ -869,7 +869,8 @@
     ],
     "reinforcement_log": [
       "ADN sintetizado con 122 conceptos, 14 citas y 0 relaciones.",
-      "Memoria de redacción preservada en 79 bloques."
+      "Memoria de redacción preservada en 79 bloques.",
+      "ADN sintetizado con 122 conceptos, 14 citas y 30 relaciones."
     ],
     "knowledge_graph": {
       "concepts": [
@@ -1165,7 +1166,322 @@
         "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/presentacion-filosofia-del-derecho.tex",
         "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/reporte-filosofia-del-derecho-Actividad-1.tex"
       ],
-      "relations": [],
+      "relations": [
+        {
+          "source": "documento",
+          "target": "Filosofía del Derecho",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0002"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Objeto de estudio",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0003"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Principios y normas jurídicas",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0004"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Justicia",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0005"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Fundamentos del derecho",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0006"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Ubicación",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0007"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Ciencias Sociales y Humanas",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0008"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Análisis crítico del fenómeno jurídico",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0009"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Evolución",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0010"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Antigüedad",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0011"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Edad Media y Moderna",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0012"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Contemporaneidad",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0013"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Corrientes principales",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0014"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Iusnaturalismo",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0015"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Positivismo jurídico",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0016"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Teorías modernas de justicia",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0017"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Importancia",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0018"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Interpretación de leyes",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0019"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Protección de derechos",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0020"
+          ]
+        },
+        {
+          "source": "documento",
+          "target": "Desarrollo sistema legal",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0021"
+          ]
+        },
+        {
+          "source": "Conceptos Fundamentales de la Filosofía del Derecho",
+          "target": "Fundamentos Teóricos Identificados",
+          "kind": "organizes",
+          "weight": 13,
+          "evidence": [
+            "b0034",
+            "b0035",
+            "b0036",
+            "b0037",
+            "b0038",
+            "b0039",
+            "b0040",
+            "b0041",
+            "b0042",
+            "b0043",
+            "b0044",
+            "b0045",
+            "b0046"
+          ]
+        },
+        {
+          "source": "Fundamentos Teóricos Identificados",
+          "target": "Derecho Natural y Justicia",
+          "kind": "develops",
+          "weight": 2,
+          "evidence": [
+            "b0036",
+            "b0037"
+          ]
+        },
+        {
+          "source": "Fundamentos Teóricos Identificados",
+          "target": "Fundamentos Prácticos",
+          "kind": "develops",
+          "weight": 2,
+          "evidence": [
+            "b0038",
+            "b0039"
+          ]
+        },
+        {
+          "source": "Fundamentos Teóricos Identificados",
+          "target": "Principios Fundamentales",
+          "kind": "develops",
+          "weight": 7,
+          "evidence": [
+            "b0040",
+            "b0041",
+            "b0042",
+            "b0043",
+            "b0044",
+            "b0045",
+            "b0046"
+          ]
+        },
+        {
+          "source": "Estructura Conceptual: Análisis de Elementos Fundamentales",
+          "target": "Objeto de Estudio",
+          "kind": "organizes",
+          "weight": 6,
+          "evidence": [
+            "b0048",
+            "b0049",
+            "b0050",
+            "b0051",
+            "b0052",
+            "b0053"
+          ]
+        },
+        {
+          "source": "Estructura Conceptual: Análisis de Elementos Fundamentales",
+          "target": "Corrientes Principales",
+          "kind": "organizes",
+          "weight": 5,
+          "evidence": [
+            "b0054",
+            "b0055",
+            "b0056",
+            "b0057",
+            "b0058"
+          ]
+        },
+        {
+          "source": "Estructura Conceptual: Análisis de Elementos Fundamentales",
+          "target": "Elementos Fundamentales",
+          "kind": "organizes",
+          "weight": 6,
+          "evidence": [
+            "b0059",
+            "b0060",
+            "b0061",
+            "b0062",
+            "b0063",
+            "b0064"
+          ]
+        },
+        {
+          "source": "Estructura Conceptual: Análisis de Elementos Fundamentales",
+          "target": "Aplicaciones Prácticas",
+          "kind": "organizes",
+          "weight": 5,
+          "evidence": [
+            "b0065",
+            "b0066",
+            "b0067",
+            "b0068",
+            "b0069"
+          ]
+        },
+        {
+          "source": "Conclusión",
+          "target": "Hallazgos Principales:",
+          "kind": "develops",
+          "weight": 5,
+          "evidence": [
+            "b0072",
+            "b0073",
+            "b0074",
+            "b0075",
+            "b0076"
+          ]
+        },
+        {
+          "source": "Conclusión",
+          "target": "Relevancia Contemporánea:",
+          "kind": "develops",
+          "weight": 3,
+          "evidence": [
+            "b0077",
+            "b0078",
+            "b0079"
+          ]
+        }
+      ],
       "concept_weights": {},
       "citation_weights": {}
     },
