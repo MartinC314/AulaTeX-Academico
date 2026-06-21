@@ -1,0 +1,822 @@
+{
+  "run_id": "20260621-080646",
+  "source_scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+  "build_level": "interinstitucional",
+  "propagation_mode": "recursivo",
+  "iterations": 100,
+  "engines": [
+    "Codex"
+  ],
+  "timeout_seconds": 900,
+  "scope_offset": 7,
+  "scope_limit": 1,
+  "full_plan_scope_count": 461,
+  "batch_scope_count": 1,
+  "built_scopes": [
+    "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde"
+  ],
+  "cycles": [
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8173
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 2,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7815
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 3,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8383
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 4,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8334
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 5,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8043
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 6,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8717
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 7,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7940
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 8,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7603
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 9,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8158
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 10,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7828
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 11,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8167
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 12,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8827
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 13,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8260
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 14,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8975
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 15,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8399
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 16,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7854
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 17,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7819
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 18,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7795
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 19,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8575
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 20,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8436
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 21,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8435
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 22,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8047
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 23,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8116
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 24,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8452
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 25,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7910
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 26,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7816
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 27,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8278
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 28,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7894
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 29,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8321
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 30,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7782
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 31,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7719
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 32,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8392
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 33,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8481
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 34,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8847
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 35,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7229
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 36,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8262
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 37,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7949
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 38,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8394
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 39,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7664
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 40,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8611
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 41,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8448
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 42,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8064
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 43,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8137
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 44,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8174
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 45,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8169
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 46,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8390
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 47,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8509
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 48,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7643
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 49,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8570
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 50,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8658
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 51,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8127
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 52,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7994
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 53,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7978
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 54,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8706
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 55,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8247
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 56,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8610
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 57,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7982
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 58,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7797
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 59,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8067
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 60,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8090
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 61,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8038
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 62,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7764
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 63,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8393
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 64,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7887
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 65,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8373
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 66,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8044
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 67,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8395
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 68,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7813
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 69,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7802
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 70,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8179
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 71,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8297
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 72,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8627
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 73,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7814
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 74,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8239
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 75,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8358
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 76,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7685
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 77,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8253
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 78,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8172
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 79,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7317
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 80,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7934
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 81,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8597
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 82,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7852
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 83,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7572
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 84,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8247
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 85,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8149
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 86,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8288
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 87,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7698
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 88,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8208
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 89,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8058
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 90,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8113
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 91,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7866
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 92,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8125
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 93,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7805
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 94,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8083
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 95,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8008
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 96,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8594
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 97,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7851
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 98,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8354
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 99,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8420
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
+      "scope_level": "materia",
+      "cycle": 100,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7680
+    }
+  ],
+  "ok": true,
+  "cancelled": false
+}

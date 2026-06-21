@@ -46,6 +46,326 @@
 - Persisten antecedentes historicos de salida no parseable; requiere normalizacion manual al reutilizar.
 - Productos alineados a cinco ejes: problema, conceptos o norma, producto, analisis y conclusion.
 - Ciclo 22 hereda riesgo de parseo; validar JSON antes de propagar.
+- Se consolida sincronizacion transversal con reglas estables reutilizables entre materias no equivalentes.
+- Se preserva identidad UnADM, control JSON parseable y compresion lossless por union-dedupe.
+- Se refuerza patron editorial comun: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se mantienen reglas locales del destino para seguridad social sin mezclar contenido tematico de filosofia.
+- Se crea cerebro editorial minimo reconstruible en ADN con foco institucional, estructura y calidad.
+- Se consolida sincronización transversal entre nodos no equivalentes con transferencia de abstracciones estables.
+- Se preserva identidad UnADM y enfoque jurídico del destino sin mezclar contenido temático de Filosofía del Derecho.
+- Se refuerza patrón editorial común: problema, conceptos o norma, evidencia, análisis propio y conclusión jurídica.
+- Se mantiene control institucional: normalización previa y bloqueo de propagación sin JSON parseable.
+- Se aplica compresión lossless por unión y deduplicación sin regresión.
+- Se sincroniza memoria transversal con reglas estables y sin mezclar contenido tematico de Filosofia del Derecho.
+- Se conserva identidad UnADM y enfoque juridico de la materia destino.
+- Se refuerza patron comun: problema, fundamento, evidencia, analisis propio y conclusion juridica transferible.
+- Se mantiene compresion lossless por union-dedupe y politica de no regresion.
+- Se mantiene alerta por salidas no parseables heredadas y normalizacion manual obligatoria cuando aparezcan.
+- Se consolida sincronizacion transversal entre nodos no equivalentes con union-dedupe lossless.
+- Se preserva identidad UnADM, estructura por ejes y control de calidad sin regresion.
+- Se transfiere patron estable: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se mantiene prioridad del canon local del destino para contenido tematico de seguridad social.
+- Se conserva alerta institucional por salidas no parseables en ciclos previos y normalizacion manual obligatoria.
+- Se consolida sincronizacion transversal ciclo 5 con compresion lossless por union-dedupe.
+- Se preserva identidad UnADM y enfoque juridico del destino sin mezclar contenido tematico de Filosofia del Derecho.
+- Se refuerza patron editorial estable: problema, conceptos/norma, evidencia, analisis propio y conclusion juridica transferible.
+- Se mantiene alerta institucional por antecedentes de salidas no parseables; normalizacion estructurada sigue obligatoria.
+- Se sincroniza memoria transversal desde actividad de Filosofia del Derecho hacia materia de Seguridad Social sin mezclar contenido tematico.
+- Se preserva identidad UnADM, estructura por ejes y control de calidad institucional.
+- Se refuerza compresion lossless por union-dedupe y politica de no regresion.
+- Se mantiene alerta por salidas no parseables heredadas; normalizacion manual sigue obligatoria.
+- Se actualiza canon de estructura local con plantillas de actividad declaradas en README.
+- Se consolida sincronizacion transversal conservadora entre nodos no equivalentes.
+- Se refuerza patron editorial estable: problema, conceptos o norma, evidencia, analisis propio y conclusion juridica.
+- Se mantiene compresion lossless por union-dedupe y sin regresion.
+- Se conserva alerta de normalizacion manual para salidas no parseables de ciclos previos.
+- Se consolida sincronizacion transversal ciclo 8 con estrategia progresiva y conservadora.
+- Se refuerza patron estable reusable: problema, fundamento, evidencia, analisis propio y conclusion juridica transferible.
+- Se mantiene compresion lossless por union-dedupe y sin regresion de reglas utiles.
+- Se conserva alerta institucional: bloquear propagacion si salida no es JSON parseable y normalizar manualmente salidas no estructuradas.
+- Se refuerza sincronizacion transversal entre nodos no equivalentes con reglas estables y reutilizables.
+- Se preserva identidad UnADM del destino sin mezclar contenido tematico de Filosofia del Derecho.
+- Se consolida patron comun de entrega: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se mantiene alerta institucional por salidas no parseables historicas y normalizacion obligatoria.
+- Se consolida sincronizacion transversal entre nodos no equivalentes con reglas editoriales estables.
+- Se preserva identidad UnADM y contexto curricular local de Derecho a la Seguridad Social.
+- Se refuerza patron comun: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se mantiene compresion lossless por union-dedupe sin regresion.
+- Se conserva gate critico: bloquear propagacion si salida no es JSON parseable.
+- Se normaliza transferencia: abstraer reglas reutilizables y evitar arrastre tematico literal desde Filosofia del Derecho.
+- Se refuerza patron comun reusable: problema, conceptos/norma, evidencia, analisis propio y conclusion juridica transferible.
+- Se mantiene normalizacion estructurada obligatoria antes de propagacion recursiva.
+- Se conserva compresion lossless por union-dedupe sin regresion.
+- Se consolida sincronizacion transversal entre nodos no equivalentes con reglas estables.
+- Se preserva identidad UnADM y contexto curricular local del destino.
+- Se mantiene identidad UnADM y enfoque juridico del destino.
+- Se refuerza patron transversal estable: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se conserva normalizacion estructurada obligatoria antes de propagacion recursiva.
+- Se preserva compresion lossless por union-dedupe sin regresion.
+- Se prioriza estructura canonica local de la materia y no se transfiere redaccion literal entre nodos no equivalentes.
+- Sincronizacion transversal aplicada con union-dedupe sin perdida.
+- Se preserva identidad UnADM y enfoque juridico del destino.
+- Se refuerza patron estable: problema, fundamento, evidencia, analisis y conclusion.
+- Se mantiene bloqueo de propagacion para salidas no JSON parseable.
+- Se evita transferencia tematica literal desde Filosofia del Derecho.
+- Se consolida cerebro editorial minimo de materia con vacios locales abiertos.
+- Se consolida sincronizacion transversal entre nodos no equivalentes con reglas estables reutilizables.
+- Se refuerza patron comun: problema, fundamento normativo, evidencia, analisis propio y conclusion juridica.
+- Se conserva gate critico: no propagar si la salida no es JSON parseable.
+- Se consolida sincronizacion transversal entre actividad de Filosofia del Derecho y materia de Seguridad Social.
+- Se transfiere solo abstraccion estable: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se mantiene regla institucional de normalizar salidas no parseables antes de propagacion.
+- Se refuerza compresion lossless por union-dedupe.
+- Se mantiene memoria de materia con identidad UnADM y enfoque juridico verificable.
+- Se refuerza sincronizacion transversal con abstracciones estables sin mezclar contenido tematico de Filosofia del Derecho.
+- Se conserva regla critica: bloquear propagacion cuando la salida no sea JSON parseable.
+- Se consolida patron editorial comun: problema, marco normativo, evidencia, analisis propio y conclusion juridica.
+- Se confirma estructura canonica local desde README y programa analitico del destino.
+- Se aplica compresion lossless por union-dedupe y sin regresion.
+- Sincronizacion transversal aplicada con estrategia conservadora y sin regresion.
+- Se preservan reglas utiles del destino y se incorporan abstracciones estables del origen.
+- Se refuerza patron editorial comun: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se mantiene separacion entre reglas generales transferibles y contenido tematico local de seguridad social.
+- Se conserva control institucional: normalizacion obligatoria y bloqueo de propagacion sin JSON parseable.
+- Se refuerza patron comun reutilizable: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se conserva alerta de normalizacion manual para antecedentes no parseables.
+- Se sincronizan reglas transversales estables desde actividad de Filosofia del Derecho hacia la materia de Seguridad Social.
+- Se preserva identidad UnADM, estructura por ejes y control de calidad sin mezclar contenido tematico no equivalente.
+- Se mantiene alerta institucional: toda salida no parseable requiere normalizacion manual previa.
+- Se consolida sincronizacion transversal entre nodos no equivalentes con union-dedupe sin perdida.
+- Se refuerza patron estable: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se mantiene normalizacion estructurada obligatoria antes de propagar.
+- Se conserva alerta historica: ciclos con salida no parseable requieren normalizacion manual.
+- Se mantiene identidad UnADM y canon local de materia.
+- Se refuerza sincronizacion transversal con reglas estables no tematicas.
+- Se mantiene alerta por salidas no parseables heredadas y normalizacion manual.
+- Se preserva patron editorial comun: problema, fundamento, evidencia, analisis y conclusion juridica.
+- Se refuerza sincronizacion transversal con reglas estables entre nodos no equivalentes.
+- Se consolida compresion lossless por union-dedupe y sin regresion.
+- Se mantiene gate critico de JSON parseable antes de propagacion recursiva.
+- Se incorpora estructura reusable: problema, conceptos o norma, evidencia, analisis propio y conclusion juridica.
+- Se consolida sincronizacion transversal entre nodos no equivalentes con transferencia de abstracciones estables.
+- Se refuerza patron editorial comun: problema, conceptos o norma, evidencia, analisis propio y conclusion juridica transferible.
+- Se conserva control de riesgo por antecedentes de salidas no parseables y normalizacion obligatoria.
+- Se refuerza patron transversal estable: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se conserva control de normalizacion: no propagar si no hay JSON parseable.
+- Se aplica compresion lossless por union-dedupe sin recorte ni regresion.
+- Se preserva especificidad local de Seguridad Social sin importar contenido tematico de Filosofia del Derecho.
+- Se preservan reglas utiles del destino y se integran abstracciones estables del origen.
+- Se mantiene compresion lossless por union y deduplicacion sin regresion.
+- Se mantiene alerta institucional por antecedentes de salida no parseable y necesidad de normalizacion.
+- Se refuerza patron transversal: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se conserva regla critica: normalizar antes de propagar.
+- Se aplica compresion lossless por union-dedupe sin recorte.
+- Se evita transferir contenido tematico de Filosofia del Derecho al destino.
+- Se mantiene identidad UnADM y enfoque juridico del destino sin mezclar contenido tematico de Filosofia del Derecho.
+- Se refuerza patron transversal estable: problema, conceptos/norma, evidencia, analisis propio y conclusion juridica transferible.
+- Se conserva regla critica: bloquear propagacion si no hay JSON parseable y normalizar salidas no estructuradas.
+- Se consolida compresion lossless por union-dedupe y politica de no regresion.
+- Se alinea la memoria al canon local del destino: README, programa analitico y .bib de materia.
+- Se conserva normalizacion estructurada obligatoria antes de propagacion.
+- Se mantiene compresion lossless por union-dedupe sin recorte ni regresion.
+- Se preserva alerta institucional por salidas no parseables en ciclos previos.
+- Se sincronizan reglas transversales estables desde actividad origen hacia materia destino sin mezclar contenido tematico.
+- Se preserva identidad UnADM y enfoque juridico verificable del destino.
+- Se refuerza patron editorial comun: problema, conceptos o norma, evidencia, analisis propio y conclusion juridica.
+- Se conserva gate critico: bloquear propagacion cuando no haya JSON parseable.
+- Se preservan reglas utiles previas del destino sin regresion.
+- Se mantiene control estricto de JSON parseable y normalizacion previa a propagacion.
+- Se conserva separacion entre abstracciones editoriales transferibles y contenido tematico local.
+- Se consolida sincronizacion transversal conservadora entre Filosofia del Derecho y Derecho a la Seguridad Social.
+- Se preservan reglas estables reutilizables: identidad UnADM, estructura por ejes, evidencia verificable y cierre juridico.
+- Se refuerza bloqueo de propagacion para salidas no JSON parseable y normalizacion previa obligatoria.
+- No se transfiere contenido tematico especifico de Filosofia; solo abstracciones editoriales estables.
+- Se consolida sincronizacion transversal entre nodos no equivalentes con enfoque conservador.
+- Se preservan reglas validas del destino y se agregan abstracciones estables del origen.
+- Se refuerza patron comun: problema, conceptos o norma, evidencia, analisis propio y conclusion juridica.
+- Se evita transferencia de contenido tematico literal de Filosofia del Derecho hacia Seguridad Social.
+- Se preservan reglas estables: identidad UnADM, estructura por ejes y cierre juridico transferible.
+- Se refuerza control de calidad: JSON parseable y normalizacion previa a propagacion.
+- No se transfiere contenido tematico especifico de Filosofia; solo abstracciones editoriales reutilizables.
+- Se consolida sincronizacion transversal entre nodos no equivalentes con transferencia de reglas estables.
+- Se preserva identidad UnADM y contexto local de Derecho a la Seguridad Social sin mezclar contenido tematico de Filosofia del Derecho.
+- Se confirma control institucional: no propagar salidas no estructuradas sin normalizacion.
+- Se consolida sincronizacion transversal entre nodos no equivalentes con compresion lossless por union-dedupe.
+- Se preserva ADN UnADM del destino sin mezclar contenido tematico especifico de Filosofia del Derecho.
+- Se refuerza patron editorial estable: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se mantiene control estricto de parseo JSON y normalizacion previa a propagacion recursiva.
+- Se actualiza estructura canonica con artefactos de actividad en README del destino.
+- Se evita transferencia de contenido tematico especifico de Filosofia del Derecho al destino.
+- Se refuerza patron comun reusable: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se conserva alerta institucional: no propagar salidas no parseables sin normalizacion.
+- Se refuerza patron reusable: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se mantiene compresion lossless por union-dedupe sin recorte.
+- Se conserva gate critico: bloquear propagacion si no hay JSON parseable.
+- Se consolida sincronizacion transversal entre nodos no equivalentes con reglas estables y reutilizables.
+- Se preserva identidad UnADM y foco juridico del destino sin mezclar contenido tematico de Filosofia del Derecho.
+- Se refuerza patron editorial comun: problema, fundamento, evidencia, analisis propio y conclusion juridica transferible.
+- Se conserva compresion lossless por union-dedupe y politica de no regresion.
+- Se mantiene alerta por antecedentes de salidas no parseables y necesidad de normalizacion manual cuando aplique.
+- Se refuerza sincronizacion transversal con abstracciones estables y sin mezclar contenido tematico de Filosofia del Derecho.
+- Se conserva identidad UnADM y estructura por ejes para productos juridicos verificables.
+- Se confirma normalizacion obligatoria antes de propagacion recursiva.
+- Se consolida control de calidad: JSON parseable, soporte verificable y marca de [supuesto].
+- Se transfiere patron estable: problema, conceptos/norma, evidencia, analisis propio y conclusion juridica.
+- Se mantiene regla de normalizacion obligatoria ante salidas no parseables.
+- Se evita trasladar contenido tematico literal de Filosofia del Derecho al destino de Seguridad Social.
+- Se mantiene sincronizacion transversal sin mezclar contenido tematico de Filosofia del Derecho.
+- Se refuerza patron estable: problema, conceptos/norma, evidencia, analisis propio y conclusion juridica.
+- Se conserva identidad UnADM y estructura canonica del destino como fuente principal.
+- Se preserva compresion lossless por union-dedupe y regla de no regresion.
+- Se mantiene alerta por salidas no parseables historicas y normalizacion manual obligatoria.
+- Sincronizacion transversal aplicada con estrategia conservadora y union-dedupe sin perdida.
+- Se preserva ADN UnADM y estructura por ejes verificables.
+- Se refuerza gate critico: no propagar salidas no JSON parseable.
+- Se mantiene separacion entre reglas estables y contenido tematico local del destino.
+- Se consolida patron comun: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se mantiene identidad UnADM y foco juridico del destino.
+- Se consolida patron editorial comun: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se mantiene sincronizacion transversal conservadora entre nodos no equivalentes.
+- Se preserva identidad UnADM, estructura por ejes y control de calidad parseable.
+- Se evita transferir contenido tematico especifico de Filosofia del Derecho al destino.
+- Se refuerza compresion lossless por union-dedupe sin regresion.
+- Se preserva identidad UnADM y estructura canonica del destino.
+- Se conserva compresion lossless por union-dedupe y sin regresion.
+- Se mantiene alerta por salidas no parseables heredadas y normalizacion obligatoria.
+- Se consolida sincronizacion transversal conservadora entre actividad de Filosofia del Derecho y materia de Seguridad Social.
+- Se refuerza regla de normalizacion: no propagar salidas no parseables.
+- Se preservan reglas estables de identidad UnADM, estructura por ejes y control de calidad parseable.
+- Se mantiene compresion lossless por union-dedupe sin regresion ni recorte.
+- Se evita transferir contenido tematico especifico de Filosofia; solo se transfieren abstracciones editoriales reutilizables.
+- Se refuerza uso canonico de README, programa analitico y .bib local del destino.
+- Se sincroniza memoria transversal sin mezclar contenido tematico de Filosofia del Derecho.
+- Se preserva identidad UnADM y estructura canonica de la materia destino.
+- Se conserva alerta institucional por salidas no parseables en ciclos previos y normalizacion obligatoria.
+- Se consolida sincronizacion transversal entre nodos no equivalentes sin mezclar contenido tematico.
+- Se preserva identidad UnADM y estructura canonica local de Derecho a la Seguridad Social.
+- Se conserva gate critico: bloquear propagacion si la salida no es JSON parseable.
+- Se preserva identidad UnADM y contexto curricular del destino sin mezclar contenido tematico de Filosofia del Derecho.
+- Se refuerza patron comun de entrega juridica: problema, fundamento, evidencia, analisis propio y conclusion transferible.
+- Se conserva alerta institucional de salidas no parseables heredadas y normalizacion manual obligatoria cuando aplique.
+- Se sincroniza ADN editorial transversal sin mezclar contenido tematico de Filosofia del Derecho.
+- Se preserva identidad UnADM y estructura por ejes como regla estable reutilizable.
+- Se refuerza control de calidad: JSON parseable, normalizacion previa y compresion union-dedupe sin regresion.
+- Se mantiene enfoque local de Derecho a la Seguridad Social con fuentes y contexto propios.
+- Se preserva identidad UnADM y se refuerza estructura reusable sin transferir redaccion literal de Filosofia del Derecho.
+- Se mantiene control estricto: JSON parseable, normalizacion previa y trazabilidad de supuestos.
+- Se conserva enfoque del destino en Derecho a la Seguridad Social con ejes locales vigentes.
+- Se refuerza patron reusable: problema, fundamento, evidencia, analisis propio y conclusion juridica transferible.
+- Se mantiene compresion lossless por union-dedupe y politica sin regresion.
+- Se mantiene alerta institucional por salidas no parseables historicas y exigencia de normalizacion previa.
+- Se refuerza patron transversal estable: problema, conceptos o norma, evidencia, analisis propio y conclusion juridica transferible.
+- Se mantiene gate critico: bloquear propagacion si no hay JSON parseable.
+- Se actualiza estructura canonica con README y programa analitico locales como fuentes primarias del destino.
+- Se conserva alerta historica de salidas no parseables en ciclos previos y normalizacion manual obligatoria.
+- Se conserva alerta institucional por antecedentes de salidas no parseables y normalizacion manual obligatoria.
+- Se mantiene alerta por salidas no parseables historicas y normalizacion manual.
+- Se consolida patron comun: problema, fundamento, evidencia, analisis propio y conclusion.
+- Se preserva identidad UnADM y enfoque juridico del destino como prioridad local.
+- Se preserva identidad UnADM, estructura por ejes y control de calidad sin mezclar contenido tematico de Filosofia del Derecho.
+- Se refuerza requisito de JSON parseable antes de propagacion recursiva.
+- Se confirma canon local del destino: README, programa analitico y .bib de materia.
+- Se mantiene identidad UnADM y canon local de la materia destino.
+- Se mantiene alerta por salidas no parseables y normalizacion manual cuando aplique.
+- Se conserva regla critica: no propagar salidas no estructuradas sin normalizacion.
+- Se consolida compresion lossless por union-dedupe sin regresion.
+- Se preserva especificidad local de Seguridad Social sin transferir contenido tematico de Filosofia.
+- Se mantiene regla critica: no propagar salidas no estructuradas sin normalizacion.
+- Se refuerza compresion lossless por union-dedupe, nunca por recorte.
+- Se preservan reglas estables: identidad UnADM, estructura por ejes, evidencia verificable y cierre juridico transferible.
+- Se refuerza gate critico: bloquear propagacion si no hay JSON parseable.
+- Se evita transferir contenido tematico literal de Filosofia; solo abstracciones editoriales reutilizables.
+- Sincronizacion transversal aplicada con enfoque conservador y sin regresion.
+- Se mantiene regla critica: no propagar salidas no parseables sin normalizacion.
+- Se integra control de trazabilidad para reglas provisionales con etiqueta [supuesto].
+- Se consolida compresion lossless por union-dedupe, sin recorte semantico.
+- Se preservan reglas validas del destino y se integran abstracciones estables del origen.
+- Se mantiene separacion entre reglas editoriales transferibles y contenido tematico local de seguridad social.
+- Se evita transferencia tematica literal de Filosofia del Derecho hacia Seguridad Social.
+- Sincronizacion transversal consolidada entre nodos no equivalentes con transferencia de abstracciones estables.
+- Se mantiene control institucional de normalizacion: no propagar salidas no parseables.
+- Compresion aplicada como union-dedupe lossless, sin recorte y sin regresion de reglas utiles.
+- Se consolida sincronizacion transversal conservadora entre actividad de Filosofia del Derecho y materia Derecho a la Seguridad Social.
+- Se preservan reglas estables: identidad UnADM, estructura por ejes, evidencia verificable, analisis propio y conclusion juridica.
+- Se mantiene control institucional: no propagar salidas no parseables sin normalizacion.
+- Se confirma compresion lossless por union-dedupe y sin regresion.
+- Se evita transferir contenido tematico literal de Filosofia; solo se transfieren abstracciones editoriales reutilizables.
+- Sincronizacion transversal aplicada con estrategia conservadora y union-dedupe.
+- Se preservan reglas locales de Derecho a la Seguridad Social sin mezclar contenido tematico de Filosofia del Derecho.
+- Se refuerza patron estable reutilizable: problema, conceptos o norma, evidencia, analisis propio y conclusion juridica.
+- Se mantiene compuerta critica: no propagar si salida no es JSON parseable.
+- Se conserva trazabilidad de reglas provisionales con etiqueta [supuesto].
+- Se conserva alerta institucional: salidas no parseables requieren normalizacion manual previa a propagacion.
+- Se sincroniza memoria transversal con enfoque conservador y sin regresión.
+- Se preserva identidad UnADM y canon local de la materia destino.
+- Se refuerza patrón estable: problema, fundamento, evidencia, análisis propio y conclusión jurídica.
+- Se mantiene regla crítica: no propagar salidas no parseables sin normalización.
+- Se aplica compresión lossless por unión y deduplicación.
+- Se transfiere solo abstraccion estable: problema, conceptos/norma, evidencia, analisis propio y conclusion juridica.
+- Se confirma uso del canon local del destino: README, programa analitico y .bib propio.
+- Se consolida sincronizacion transversal sin mezclar contenido tematico entre materias.
+- Se integra la estructura canonica local del README y programa analitico del destino.
+- Se consolida sincronizacion transversal desde actividad de Filosofia del Derecho hacia materia de Seguridad Social sin mezclar contenido tematico.
+- Se preservan reglas utiles del destino y se refuerza patron comun: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se confirma normalizacion estructurada obligatoria antes de propagacion recursiva.
+- Se integra canon local del destino desde README y programa analitico como base operativa.
+- Se consolida sincronizacion transversal con union-dedupe sin regresion.
+- Se transfieren solo abstracciones estables desde actividad de Filosofia del Derecho.
+- Se evita mezclar contenido tematico especifico de Filosofia en Seguridad Social.
+- Se preserva identidad UnADM y estructura canonica local de la materia destino.
+- Se mantiene gate critico: no propagar si la salida no es JSON parseable.
+- Se evita transferir contenido tematico literal de Filosofia del Derecho al destino de Seguridad Social.
+- Se sincroniza memoria transversal desde actividad de Filosofia del Derecho hacia materia de Derecho a la Seguridad Social.
+- Se preservan reglas estables de identidad UnADM, estructura por ejes, control de calidad y normalizacion JSON.
+- Se mantiene estrategia conservadora: unir y deduplicar sin recorte ni regresion.
+- Se refuerza cerebro editorial minimo del destino con foco en trazabilidad, verificabilidad y compilacion LaTeX estable.
+- Se integra estructura canonica local desde README y programa analitico.
+- Se mantiene alerta por antecedentes de salida no parseable y necesidad de normalizacion manual.
+- Se refuerza patron comun reusable: problema, conceptos o norma, evidencia, analisis propio y conclusion juridica.
+- Se conserva gate critico: bloquear propagacion cuando no haya JSON parseable y normalizar antes de reutilizar.
+- Se evita migrar contenido tematico especifico de Filosofia del Derecho al destino de Seguridad Social.
+- Se mantiene alerta institucional por salidas no parseables heredadas y necesidad de normalizacion manual.
+- Sincronizacion transversal consolidada con union-dedupe sin perdida ni regresion.
+- Se prioriza estructura reusable sobre contenido tematico de Filosofia del Derecho.
+- Se consolida sincronizacion transversal con reglas estables entre nodos no equivalentes.
+- Se conserva alerta institucional por antecedentes de salidas no parseables y normalizacion manual.
+- Se refuerza compresion lossless por union-dedupe y no regresion de reglas utiles previas.
+- Se mantiene alerta institucional por salidas no parseables historicas y normalizacion manual obligatoria cuando aplique.
+- Se confirma que el destino ya tiene cerebro editorial minimo; se agregan solo abstracciones estables reutilizables.
+- Se conserva alerta por antecedentes de salida no parseable y necesidad de normalizacion.
+- Se mantiene sincronizacion transversal con compresion lossless por union-dedupe.
+- Se preserva identidad UnADM y enfoque juridico del nodo destino.
+- Se conserva regla critica: no propagar salidas no parseables sin normalizacion.
+- Se confirma estructura canonica local desde README y programa analitico.
+- Se consolida sincronizacion transversal desde actividad de Filosofia hacia materia de Seguridad Social sin mezclar contenido tematico.
+- Se preservan reglas utiles previas del destino y se refuerzan abstracciones estables: identidad, estructura, calidad y trazabilidad.
+- Se mantiene compresion lossless por union-dedupe y bloqueo de propagacion ante salida no parseable.
+- Se refuerza sincronizacion transversal con reglas estables de estructura y calidad.
+- Se preserva control de riesgo por salidas no parseables en ciclos previos.
+- Se integra patron comun reutilizable: problema, fundamento, evidencia, analisis propio y conclusion juridica.
+- Se mantiene regla dura: no propagar salidas no parseables sin normalizacion.
+- Compresion aplicada por union-dedupe lossless.
+- Se preservan reglas utiles del destino y se agregan abstracciones estables del origen.
+- Se refuerza patron comun: problema, conceptos/norma, evidencia, analisis propio y conclusion juridica.
+- Se conserva alerta institucional: bloquear propagacion si no hay JSON parseable.
+- Se consolida sincronizacion transversal entre nodos no equivalentes con reglas estables y sin mezclar contenido tematico.
+- Se conserva alerta institucional: bloquear y normalizar salidas no parseables antes de propagar.
+- Se preserva identidad UnADM y contexto local de Derecho a la Seguridad Social.
+- Se conserva alerta institucional por salidas no parseables heredadas y necesidad de normalizacion previa.
+- Se preservan reglas utiles del destino y se aplica union-dedupe lossless.
+- Se mantiene control estricto: JSON parseable y normalizacion previa a propagacion.
+- Se confirma README y programa analitico como canon local de la materia destino.
+- Se consolida sincronización transversal conservadora entre actividad de Filosofía del Derecho y materia de Seguridad Social.
+- Se preserva identidad UnADM, estructura por ejes y control de calidad sin mezclar contenido temático no equivalente.
+- Se refuerza compresión lossless por unión-deduplicación y política de no regresión.
+- Se mantiene alerta institucional por antecedentes de salidas no parseables y necesidad de normalización previa.
+- Se preserva identidad UnADM, estructura por ejes y cierre juridico transferible.
+- Se incorpora canon local confirmado por README: incluye plantillas de Actividad 1 en reporte y presentacion.
+- Se conserva alerta historica de normalizacion manual para salidas no estructuradas.
+- Salida sin JSON parseable desde Codex para derecho-a-la-seguridad-social-lde
+- Se conserva alerta historica de salidas no estructuradas y normalizacion manual cuando aplique.
+- Se preserva identidad UnADM y reglas locales de Derecho a la Seguridad Social sin mezclar contenido tematico de Filosofia del Derecho.
+- Se mantiene alerta institucional: no propagar salidas no parseables sin normalizacion manual.
 
 ## identity_rules
 
@@ -75,6 +395,77 @@
 - Fuente provisional: Auto (model-router) desde Actividad 1
 - Fuente provisional: Claude Foundry desde Actividad 1
 - Registrar fuentes provisionales heredadas como historicas: Codex, GPT-Pro, Auto (model-router) y Claude Foundry desde actividad previa [supuesto].
+- Mantener identidad institucional UnADM en tono, portada y metadatos.
+- Usar carpeta de materia como punto de entrada canonico.
+- Vincular entregas a Licenciatura en Derecho con datos curriculares oficiales del destino.
+- Marcar como [supuesto] todo dato no visible en consigna o fuente local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- No sobrescribir reglas validas previas; solo unir y deduplicar sin regresion.
+- Mantener identidad institucional UnADM en tono, portada, metadatos y redacción.
+- Usar datos curriculares oficiales del destino: semestre 2, bloque 1, obligatoria, 8 créditos.
+- Usar la carpeta de materia como punto de entrada canónico.
+- Tratar fuentes heredadas no verificadas como provisionales hasta validación local.
+- No sobrescribir reglas útiles previas; solo unir y deduplicar.
+- Mantener identidad institucional UnADM en tono, portada, metadatos y redaccion.
+- Usar datos curriculares oficiales del destino: semestre 2, bloque 1, obligatoria, 8 creditos.
+- Usar la carpeta de materia como entrada canonica.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local [supuesto].
+- Usar la carpeta de materia como punto de entrada canonico.
+- No sobrescribir reglas validas previas; aplicar union-dedupe sin recorte.
+- No sobrescribir reglas utiles previas; solo unir y deduplicar sin regresion.
+- Mantener identidad institucional UnADM en tono, portada, metadatos y trazabilidad.
+- Usar datos curriculares oficiales del destino: Licenciatura en Derecho, semestre 2, bloque 1, obligatoria, 8 creditos.
+- Usar carpeta de materia como entrada canonica editorial.
+- No sobrescribir reglas validas previas; aplicar solo union y deduplicacion.
+- No propagar datos personales de plantilla a nodos laterales salvo requerimiento explicito [supuesto].
+- Usar la carpeta de la materia como punto de entrada canonico.
+- No sobrescribir reglas utiles previas; solo unir y deduplicar.
+- Usar nombre local de materia: Derecho a la seguridad social.
+- Usar la carpeta de la materia destino como punto de entrada canonico.
+- Mantener identidad institucional UnADM en tono, metadatos y formato.
+- No propagar datos personales de plantilla a nodos laterales [supuesto].
+- Usar carpeta de materia destino como entrada canonica.
+- Vincular entregas a Licenciatura en Derecho y a Derecho a la Seguridad Social.
+- Mantener trazabilidad de reglas heredadas provisionales con etiqueta [supuesto].
+- No transferir contenido tematico literal de Filosofia del Derecho a Seguridad Social.
+- Usar carpeta de materia como entrada canonica.
+- Tratar fuentes heredadas no verificadas como provisionales hasta validacion local.
+- Marcar como [supuesto] cualquier dato no visible en consigna o fuente local.
+- No sobrescribir reglas validas previas; aplicar solo union-dedupe sin regresion.
+- No sobrescribir reglas validas previas; aplicar solo union-dedupe.
+- Conservar trazabilidad de reglas heredadas provisionales con etiqueta [supuesto].
+- No sobrescribir reglas validas previas; aplicar union-dedupe sin regresion.
+- Conservar trazabilidad de reglas heredadas y marcar provisionales como [supuesto].
+- Usar la carpeta de materia como entrada canonica editorial.
+- Mantener identidad institucional UnADM en tono, portada, metadatos y formato.
+- No sobrescribir reglas utiles previas; aplicar union-dedupe sin regresion.
+- Usar carpeta de materia como entrada canonica del destino.
+- Conservar trazabilidad de toda regla heredada provisional con etiqueta [supuesto].
+- No transferir datos personales entre nodos laterales salvo requerimiento explicito [supuesto].
+- Conservar trazabilidad del origen de cada regla provisional.
+- Mantener identidad institucional UnADM en tono, portada, metadatos y referencias.
+- Mantener trazabilidad del origen de cada regla transferida.
+- No transferir contenido tematico especifico de Filosofia del Derecho al destino.
+- Tratar fuentes heredadas no verificadas como provisionales hasta verificacion local.
+- No transferir contenido tematico de Filosofia del Derecho al destino.
+- Conservar trazabilidad del origen de reglas provisionales.
+- Usar la carpeta de materia destino como entrada canonica.
+- Mantener identidad institucional UnADM en tono, formato y metadatos.
+- No sobrescribir reglas válidas previas; unir y deduplicar.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmación local.
+- Mantener trazabilidad de reglas heredadas y su estado de verificación.
+- No sobrescribir reglas validas previas; aplicar union-dedupe sin perdida.
+- Tratar toda fuente heredada no verificada como provisional hasta confirmacion local.
+- Conservar trazabilidad de origen cuando una regla sea provisional.
+- Usar carpeta de materia destino como punto de entrada canonico.
+- Aplicar datos curriculares oficiales del destino: semestre 2, bloque 1, obligatoria, 8 creditos.
+- Tratar fuentes heredadas no verificadas como provisionales [supuesto].
+- Conservar trazabilidad de origen en reglas provisionales.
+- Usar carpeta de materia destino como punto de entrada canónico.
+- No sobrescribir reglas válidas previas; solo unir y deduplicar.
+- No transferir datos personales entre nodos salvo instruccion explicita [supuesto].
+- Fuente provisional: Codex desde Actividad 1
+- Mantener identidad institucional UnADM en tono, portada, metadatos y estructura.
 
 ## structure_rules
 
@@ -97,6 +488,134 @@
 - Transformar planeacion semanal en productos con claridad y fundamento juridico.
 - Resolver marcadores de plantilla en rutas y nombres antes de compilar o citar.
 - Normalizar nombres y rutas con marcadores o caracteres corruptos antes de usarlos como canon.
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Organizar desarrollo en: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear formato final al producto pedido en planeacion semanal.
+- Mantener consistencia editorial entre reporte, presentacion y programa analitico.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Tomar README y programa analítico del destino como canon estructural.
+- Delimitar objetivo puntual antes del desarrollo.
+- Organizar por secciones reutilizables: encuadre, conceptos o marco normativo, análisis propio, cierre y referencias.
+- Alinear el formato al producto solicitado en la planeación semanal.
+- Mantener consistencia entre reporte, presentación y bibliografía local.
+- Tomar README y programa analitico como canon estructural local.
+- Separar desarrollo en conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Mantener consistencia entre reporte, presentacion y referencias.
+- Tomar README y programa analitico del destino como canon estructural.
+- Alinear cada entrega a ejes: problema, fundamento, evidencia, analisis, conclusion.
+- Separar secciones en encuadre, marco normativo/doctrinal, analisis propio y cierre.
+- Mantener consistencia entre reporte, presentacion y actividad.
+- Tomar README y programa analitico de la materia como canon estructural.
+- Alinear formato final al producto solicitado por la planeacion semanal.
+- Mantener consistencia entre reporte, presentacion y bibliografia local.
+- Alinear cada entrega a ejes estables: problema, conceptos/norma, evidencia, analisis propio y conclusion juridica.
+- Separar secciones minimas: encuadre, desarrollo, postura propia, cierre y referencias.
+- Alinear formato final al producto solicitado en planeacion semanal.
+- Mantener consistencia entre reporte, presentacion y versiones por actividad.
+- Registrar en memoria solo reglas accionables, verificables y reutilizables.
+- Separar desarrollo en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Alinear formato al producto solicitado por la planeacion semanal.
+- Tomar README y programa analitico del destino como canon estructural local.
+- Alinear cada entrega a ejes reutilizables: problema, conceptos/norma, evidencia, analisis propio y conclusion.
+- Separar secciones en marco conceptual-normativo, analisis propio y cierre.
+- Alinear formato y alcance al producto pedido por la planeacion semanal.
+- Alinear formato y alcance al producto solicitado por la planeacion semanal.
+- Abrir con encuadre breve del problema juridico o social.
+- Mantener consistencia editorial entre reporte, presentacion y actividad.
+- Tomar README y programa analitico de la materia como canon estructural local.
+- Mantener consistencia editorial entre reporte y presentacion.
+- Tomar README de materia como canon estructural local.
+- Alinear entregas a ejes: problema, conceptos/norma, producto, analisis y conclusion.
+- Organizar desarrollo en conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear formato final al producto solicitado por planeacion semanal.
+- Organizar en bloques: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear formato final al producto solicitado en la planeacion semanal.
+- Organizar desarrollo en: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Mantener consistencia entre README, programa analitico y plantillas de entrega.
+- Alinear cada entrega a ejes: problema, conceptos/norma, producto, analisis y conclusion.
+- Normalizar nombres de archivos con marcadores corruptos antes de usarlos como canon.
+- Usar programa analitico como guia de proposito y ejes.
+- Separar desarrollo en marco conceptual-normativo, analisis y cierre.
+- Ajustar formato final al producto solicitado en planeacion semanal.
+- Alinear el formato final al producto solicitado por la planeacion semanal.
+- Organizar en: conceptos/marco normativo, analisis propio y cierre.
+- Mantener consistencia entre reporte, presentacion y bibliografia.
+- Organizar en secciones reutilizables: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Organizar en secciones: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Separar marco normativo/doctrinal de analisis propio.
+- Ajustar formato al producto solicitado en planeacion semanal.
+- Alinear cada entrega a ejes: problema, conceptos/norma, producto solicitado, analisis y conclusion.
+- Separar desarrollo en: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear cada entrega a ejes estables: problema, conceptos/norma, evidencia, analisis propio y conclusion.
+- Organizar en secciones: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Mantener consistencia entre reporte, presentacion y evidencias de apoyo.
+- Alinear formato final al producto pedido por planeacion semanal.
+- Organizar por ejes: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear formato al producto solicitado en planeacion semanal.
+- Alinear el formato al producto solicitado en la planeacion semanal.
+- Alinear formato y alcance al producto pedido en planeacion semanal.
+- Alinear formato y alcance al producto pedido en la planeacion semanal.
+- Alinear formato y alcance al producto solicitado por planeacion semanal.
+- Mantener consistencia entre README, programa analitico, reporte y presentacion.
+- Usar estructura minima verificable: portada, desarrollo, conclusion y referencias.
+- Organizar por secciones: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear el formato al producto solicitado por la planeacion semanal.
+- Alinear entregas a ejes: problema, fundamento/conceptos, evidencia, analisis propio y conclusion juridica.
+- Separar secciones en encuadre, desarrollo argumentativo, cierre y referencias.
+- Tomar README y programa analitico locales como canon estructural.
+- Alinear cada entrega a ejes: problema, conceptos/norma, evidencia, analisis, conclusion.
+- Normalizar nombres de archivo y rutas antes de tratarlos como canon.
+- Organizar entregas por ejes: problema, conceptos/norma, evidencia, analisis y conclusion.
+- Mantener consistencia editorial entre reporte, presentacion y bibliografia local.
+- Alinear formato y alcance al producto solicitado en planeacion semanal.
+- Normalizar nombres de archivo cuando existan marcadores corruptos o tokens sin expandir.
+- Alinear cada entrega al producto solicitado por la planeacion semanal.
+- Organizar en: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear formato al producto pedido por planeacion semanal.
+- Alinear cada entrega a ejes: problema, fundamento conceptual-normativo, evidencia, analisis propio y conclusion juridica.
+- Registrar solo reglas accionables y verificables.
+- Alinear cada entrega a ejes: problema, conceptos/norma, evidencia, analisis y conclusion.
+- Alinear el formato final al producto pedido por la planeacion semanal.
+- Alinear formato al producto solicitado por planeacion semanal.
+- Mantener consistencia editorial entre README, programa analitico, reporte y presentacion.
+- Organizar secciones en: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Organizar desarrollo en secciones: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el formato final al producto solicitado por planeacion semanal.
+- Mantener consistencia editorial entre reporte, presentacion y evidencias.
+- Separar secciones en conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Organizar en bloques: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear cada entrega a ejes reutilizables: problema, conceptos/norma, producto, analisis y conclusion.
+- Tomar README y programa analítico como canon estructural local.
+- Alinear cada entrega a ejes: problema, conceptos/norma, producto, análisis y conclusión.
+- Separar desarrollo en marco conceptual, marco normativo/doctrinal, análisis propio y cierre.
+- Alinear formato final al producto solicitado por la planeación semanal.
+- Mantener consistencia editorial entre reporte y presentación.
+- Tomar programa analitico como guia de proposito y ejes de trabajo.
+- Alinear cada entrega a ejes: problema, conceptos o norma, evidencia, analisis y conclusion.
+- Separar desarrollo en marco conceptual-normativo, analisis propio y cierre.
+- Alinear cada entrega a ejes: problema, conceptos o norma, producto, analisis y conclusion.
+- Usar estructura minima verificable: portada, desarrollo por ejes, conclusion y referencias.
+- Tomar README de materia como canon estructural.
+- Separar secciones en: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Usar estructura minima: portada, desarrollo, conclusion y referencias.
+- Organizar el desarrollo en: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear cada entrega a ejes: problema, marco conceptual-normativo, evidencia, analisis propio y cierre.
+- Ajustar formato al producto solicitado por la planeacion semanal.
+- Tomar README de materia y programa analitico como canon estructural local.
+- Separar secciones minimas: encuadre, desarrollo, cierre y referencias.
+- Ajustar formato al producto pedido en planeacion semanal.
+- Organizar en secciones reutilizables: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Tomar README y programa analítico de la materia como canon estructural local.
+- Alinear cada entrega a ejes estables: problema, conceptos/marco normativo, evidencia, análisis propio y conclusión.
+- Separar secciones con límites claros entre marco, análisis y cierre.
+- Ajustar formato final al producto solicitado por planeación semanal.
+- Mantener consistencia editorial entre reporte, presentación y actividad.
+- Alinear toda entrega a ejes: problema, fundamento, evidencia, analisis propio y conclusion.
+- Separar desarrollo en conceptos clave, marco normativo/doctrinal, analisis y cierre.
+- Cerrar con conclusion juridica aplicable a practica profesional.
+- Organizar por bloques: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
 
 ## activity_rules
 
@@ -112,6 +631,126 @@
 - Ajustar formato y alcance al producto solicitado por la planeacion semanal.
 - Integrar evidencia verificable cuando el producto lo requiera.
 - Definir al inicio el problema juridico o social.
+- Relacionar cada actividad con el campo de seguridad social cuando corresponda.
+- Distinguir hechos, normas, doctrina y postura propia.
+- Sustentar afirmaciones con evidencia verificable y cita explicita.
+- Evitar entregas solo descriptivas o de resumen.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- No asumir fuentes de otras semanas o materias sin validacion local [supuesto].
+- Iniciar con problema jurídico o social claramente delimitado.
+- Sustentar afirmaciones con norma, doctrina o evidencia verificable.
+- Distinguir hechos, conceptos, normas y postura personal.
+- Evitar entregas solo descriptivas; exigir argumentación propia.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- Cerrar con conclusión jurídica transferible a práctica profesional.
+- Delimitar problema y pregunta guia al inicio.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Distinguir hechos, normas, doctrina y opinion propia.
+- Incluir postura argumentada del estudiante; evitar entregas solo descriptivas.
+- Verificar coherencia entre objetivo, desarrollo y conclusion.
+- Cerrar con conclusion juridica aplicable a practica profesional.
+- Iniciar cada actividad con problema juridico o social delimitado.
+- Incluir postura argumentada del estudiante; evitar texto solo descriptivo.
+- Ajustar formato y alcance al producto solicitado en planeacion semanal.
+- Relacionar el contenido con seguridad social cuando corresponda.
+- Definir objetivo puntual y problema juridico al inicio.
+- Distinguir hechos, marco normativo, doctrina y opinion propia.
+- Evitar entregas solo descriptivas; exigir postura argumentada del estudiante.
+- Relacionar el analisis con seguridad social cuando la consigna lo pida.
+- Delimitar problema juridico desde el inicio.
+- Relacionar cada actividad con seguridad social cuando corresponda.
+- Iniciar con encuadre breve del problema juridico o social.
+- Distinguir hechos, conceptos, normas y postura propia.
+- Evitar entregas solo descriptivas.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Delimitar problema y alcance desde el inicio.
+- Distinguir hechos, norma, doctrina y postura propia.
+- Evitar entregas solo descriptivas; incluir argumentacion propia.
+- Incluir postura argumentada del estudiante; evitar entrega solo descriptiva.
+- Relacionar el contenido con seguridad social cuando corresponda al destino.
+- No asumir fuentes de semanas posteriores sin validacion local.
+- Delimitar problema juridico y pregunta guia al inicio.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Incluir postura argumentada del estudiante, no solo descripcion.
+- Delimitar al inicio el problema juridico o social.
+- Delimitar problema y pregunta guia desde el inicio.
+- Evitar entregas solo descriptivas; exigir argumentacion propia.
+- Delimitar el problema juridico o social al inicio.
+- Vincular afirmaciones con norma, doctrina o dato verificable.
+- Incluir postura argumentada del estudiante.
+- Ajustar formato al producto solicitado por la planeacion semanal.
+- Incluir postura argumentada del estudiante; evitar resumen solo descriptivo.
+- Delimitar problema juridico al inicio.
+- Distinguir hechos, normas, doctrina y postura personal.
+- Definir problema y objetivo de actividad desde el inicio.
+- Ajustar alcance y formato al producto solicitado por la consigna.
+- Distinguir hechos, normas, conceptos y opinion propia.
+- Marcar como [supuesto] cualquier dato no visible en consigna o fuente local.
+- Relacionar cada actividad con Derecho a la Seguridad Social cuando corresponda.
+- Delimitar problema juridico o social al inicio.
+- Relacionar contenido con seguridad social cuando corresponda.
+- Incluir postura argumentada del estudiante, no solo resumen descriptivo.
+- Vincular afirmaciones con normas, doctrina o datos verificables.
+- Relacionar actividad con seguridad social cuando corresponda al objetivo local.
+- No asumir fuentes de otras semanas sin validacion de consigna.
+- Delimitar problema juridico o social desde el inicio.
+- Incluir postura argumentada del estudiante; evitar resumen descriptivo puro.
+- Vincular cada actividad con el campo de seguridad social cuando corresponda.
+- Evitar entregas solo descriptivas; incluir postura argumentada del estudiante.
+- No asumir fuentes de semanas distintas sin validacion local.
+- Incluir postura argumentada del estudiante; evitar solo descripcion.
+- No asumir fuentes de otras semanas sin validacion local.
+- Relacionar cada actividad con seguridad social cuando aplique.
+- Delimitar problema juridico especifico de la actividad.
+- Distinguir hechos, normas, conceptos y postura propia.
+- Delimitar pregunta guia y problema desde el inicio.
+- Marcar como [supuesto] todo dato no visible en consigna o fuente local.
+- Distinguir hechos, norma, doctrina y opinion propia.
+- Incluir postura argumentada del estudiante, no solo resumen.
+- Evitar entregas solo descriptivas; exigir argumentacion del estudiante.
+- Delimitar problema y objetivo desde el inicio.
+- Verificar coherencia entre pregunta, desarrollo y conclusion.
+- Relacionar el contenido con seguridad social cuando aplique.
+- Relacionar cada producto con el campo de seguridad social cuando corresponda.
+- No asumir fuentes de semanas o materias distintas sin validacion local [supuesto].
+- Sustentar afirmaciones con evidencia verificable o marcar [supuesto].
+- Relacionar el analisis con seguridad social cuando aplique al producto.
+- Vincular desarrollo con normas, doctrina, datos o jurisprudencia pertinentes al tema.
+- No asumir fuentes de semanas distintas sin confirmacion local [supuesto].
+- Relacionar el analisis con seguridad social cuando la consigna lo exija.
+- No asumir fuentes de otras semanas o materias sin validacion local.
+- Relacionar el analisis con seguridad social cuando corresponda.
+- Relacionar actividad con seguridad social cuando corresponda.
+- Vincular desarrollo con normas, doctrina y datos pertinentes al tema.
+- Verificar coherencia entre consigna, desarrollo y conclusion.
+- Relacionar el contenido con seguridad social cuando aplique en el destino.
+- Marcar como [supuesto] todo dato no visible en la consigna.
+- Delimitar problema juridico al inicio de cada actividad.
+- Incluir postura argumentada del estudiante; evitar solo resumen.
+- Ajustar formato y alcance al producto solicitado por planeacion semanal.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Sustentar afirmaciones con evidencia verificable y cita explícita.
+- Distinguir hechos, normas, doctrina y opinión propia.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- No asumir fuentes de semanas distintas sin validación de consigna.
+- Evitar entregas solo descriptivas; exigir argumentacion.
+- Delimitar el problema juridico o social desde el inicio.
+- Incluir postura argumentada del estudiante; evitar solo resumen descriptivo.
+- Relacionar el desarrollo con seguridad social cuando corresponda al encargo.
+- Relacionar cada entrega con el campo de seguridad social cuando corresponda.
+- Delimitar pregunta guia y verificar coherencia con conclusion.
+- Relacionar contenido con derecho a la seguridad social cuando aplique.
+- Ajustar alcance y formato a la consigna semanal.
+- Definir al inicio problema y objetivo de cada actividad.
+- Evitar entregas solo descriptivas; incluir postura argumentada.
+- Vincular el desarrollo con normas, doctrina o datos verificables.
+- Incluir postura propia argumentada; evitar resumen solo descriptivo.
+- Vincular desarrollo con marco normativo y doctrinal pertinente a seguridad social.
+- No asumir fuentes de otras semanas o materias como obligatorias sin verificacion local.
+- Delimitar problema juridico al inicio de cada entrega.
+- Evitar entregas solo descriptivas; incluir argumentacion del estudiante.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- Relacionar el desarrollo con seguridad social cuando corresponda al destino.
 
 ## quality_gates
 
@@ -135,6 +774,117 @@
 - Resolver marcadores corruptos en README y programa analitico antes de usarlos como canon.
 - Compilar archivos .tex despues de corregir rutas y nombres.
 - Normalizar manualmente salidas no parseables de ciclos previos cuando se reutilicen.
+- Bloquear propagacion si salida no es JSON parseable.
+- Normalizar respuestas no estructuradas antes de reutilizar aguas abajo.
+- Validar estructura minima completa antes de propagar recursivamente.
+- Confirmar que toda afirmacion relevante tenga respaldo o marca [supuesto].
+- Validar consistencia entre citas en texto y archivo .bib local.
+- Verificar que compresion aplicada sea union-dedupe sin recorte.
+- Bloquear propagación si la salida no es JSON parseable.
+- Validar estructura mínima completa del esquema antes de propagar.
+- Confirmar que cada afirmación relevante tenga soporte o etiqueta [supuesto].
+- Validar correspondencia entre citas en texto y archivo .bib local.
+- Verificar compresión por unión-dedupe sin recorte semántico.
+- Validar estructura minima completa antes de propagacion recursiva.
+- Validar consistencia entre citas en texto y archivo .bib.
+- Verificar que la compresion aplicada sea union-dedupe sin recorte.
+- Bloquear propagacion si la salida no es JSON parseable.
+- Normalizar respuestas no estructuradas antes de reutilizar.
+- Confirmar respaldo verificable o marca [supuesto] en afirmaciones relevantes.
+- Revisar y normalizar respuestas no estructuradas antes de reutilizar.
+- Validar estructura minima completa antes de aplicar aguas abajo.
+- Verificar que la compresion aplicada sea union-dedupe y no recorte.
+- Normalizar manualmente toda respuesta no estructurada antes de reutilizar.
+- Comprobar consistencia entre citas en texto y entradas del .bib local.
+- Verificar que la compresion aplicada sea lossless por union-dedupe.
+- Verificar que no exista regresion de reglas utiles previas.
+- Normalizar manualmente respuestas no estructuradas antes de reutilizar.
+- Confirmar respaldo verificable o marca [supuesto] en toda afirmacion relevante.
+- Revisar y normalizar manualmente respuestas no estructuradas antes de reutilizar.
+- Confirmar compresion por union-dedupe sin recorte de reglas vigentes.
+- Confirmar compresion por union-dedupe y no por recorte.
+- Verificar que no haya regresion de reglas utiles previas.
+- Verificar correspondencia del producto con la consigna vigente.
+- Revisar y normalizar salidas no estructuradas antes de reutilizar.
+- Verificar correspondencia entre producto generado y consigna local.
+- Comprobar que la compresion sea union-dedupe y no recorte.
+- Confirmar compresion lossless por union-dedupe y sin regresion.
+- Verificar correspondencia del producto con la consigna local.
+- Verificar compresion lossless por union-dedupe sin recorte.
+- Validar estructura minima completa antes de reutilizar aguas abajo.
+- Normalizar manualmente respuestas no estructuradas de ciclos con incidencias.
+- Confirmar soporte verificable o marca [supuesto] en afirmaciones relevantes.
+- Verificar correspondencia entre consigna, desarrollo y producto final.
+- Confirmar que toda afirmacion tenga respaldo o marca [supuesto].
+- Confirmar que toda afirmacion relevante tenga respaldo o etiqueta [supuesto].
+- Validar consistencia entre citas en texto y entradas del .bib local.
+- Verificar que la compresion aplicada sea union-dedupe sin perdida.
+- Verificar que no se eliminen reglas utiles previas durante consolidacion.
+- Verificar no regresion de reglas utiles previas.
+- Revisar y normalizar respuestas no estructuradas antes de reutilizar aguas abajo.
+- Normalizar respuestas no estructuradas antes de reutilizarlas.
+- Revisar y normalizar manualmente toda salida no estructurada antes de reutilizar.
+- Normalizar manualmente cualquier salida no estructurada antes de reutilizar.
+- Verificar compresion lossless por union-dedupe, no por recorte.
+- Normalizar respuestas no estructuradas antes de reutilizacion aguas abajo.
+- Normalizar manualmente respuestas no estructuradas antes de propagar.
+- Verificar que no haya regresion ni eliminacion de reglas utiles previas.
+- Normalizar respuestas no estructuradas antes de reutilizacion.
+- Comprobar que la compresion aplicada sea union-dedupe sin recorte.
+- Normalizar manualmente toda salida no estructurada antes de reutilizar.
+- Evitar regresion: no eliminar reglas utiles previas.
+- Confirmar respaldo verificable o marca [supuesto] en afirmaciones clave.
+- Confirmar que cada afirmacion relevante tenga respaldo o marca [supuesto].
+- Comprobar correspondencia entre producto entregado y consigna vigente.
+- Confirmar respaldo verificable o marca [supuesto] en cada afirmacion relevante.
+- Revisar y normalizar respuestas no estructuradas antes de reutilizarlas.
+- Normalizar manualmente salidas no estructuradas antes de reutilizar.
+- Verificar estructura minima completa antes de propagacion recursiva.
+- Validar coherencia entre consigna, desarrollo y conclusion.
+- Verificar correspondencia entre citas en texto y entradas del .bib.
+- Confirmar compresion por union-dedupe sin recorte ni regresion.
+- Verificar correspondencia entre citas en texto y entradas del .bib local.
+- Validar correspondencia entre consigna y tipo de producto entregado.
+- Revisar y normalizar manualmente toda respuesta no estructurada antes de reutilizar.
+- Comprobar consistencia entre citas en texto y archivo .bib local.
+- Verificar correspondencia entre producto entregado y consigna vigente.
+- Verificar correspondencia entre producto entregado y consigna semanal.
+- Confirmar que la consolidacion preserve reglas utiles sin recorte.
+- Verificar correspondencia entre consigna, desarrollo y conclusion.
+- Confirmar que compresion aplicada sea union-dedupe y no recorte.
+- Verificar que la compresion aplicada sea union-dedupe, no recorte.
+- Normalizar manualmente respuestas no estructuradas antes de reutilizarlas.
+- Confirmar coherencia entre objetivo, desarrollo y conclusion.
+- Confirmar soporte verificable o marca [supuesto] en cada afirmacion relevante.
+- Verificar correspondencia entre producto entregable y consigna local.
+- Comprobar que la compresion aplicada sea union-dedupe y no recorte.
+- Verificar compresion lossless por union-dedupe y ausencia de regresion.
+- Confirmar compresion lossless por union-dedupe, sin recorte ni regresion.
+- Confirmar coherencia entre pregunta guia, desarrollo y conclusion.
+- Confirmar que la compresion sea lossless por union-dedupe, no por recorte.
+- Verificar no regresion: conservar reglas utiles previas del destino.
+- Verificar que la compresion sea lossless por union-dedupe y sin regresion.
+- Verificar que la consolidacion sea union-dedupe y sin recorte.
+- Validar estructura mínima completa antes de propagación recursiva.
+- Verificar que la compresión sea unión-dedupe y no recorte.
+- Verificar no regresión de reglas útiles previas.
+- Verificar que no se eliminen reglas utiles previas en cada ciclo.
+- Confirmar que la compresion sea lossless por union-dedupe.
+- Confirmar compresion lossless por union-dedupe, nunca por recorte.
+- Revisar estructura minima completa antes de aplicar aguas abajo.
+- Validar coherencia entre objetivo, estructura y conclusion.
+- Confirmar compresion lossless por union-dedupe y no por recorte.
+- Revisar y normalizar respuestas no estructuradas antes de aplicar aguas abajo.
+- Verificar que la compresion sea lossless por union-dedupe y no por recorte.
+- Confirmar compresion lossless por union-dedupe, no por recorte.
+- Validar correspondencia entre citas en texto y archivo .bib.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Comprobar consistencia entre citas en texto y archivo .bib.
+- Verificar que la compresion sea union-dedupe y no recorte.
+- Revisar y normalizar respuestas no estructuradas.
+- Comprobar compresión por unión-dedupe sin recorte ni regresión.
+- Verificar correspondencia entre producto final y consigna de actividad.
+- Comprobar que la compresion aplicada sea lossless por union-dedupe.
 
 ## latex_rules
 
@@ -158,6 +908,193 @@
 - Conservar campo de figura docente como pendiente si no existe dato oficial.
 - Usar structure minima: portada, desarrollo por ejes, conclusion y referencias.
 - Evitar cambios de formato que rompan compatibilidad sin justificacion tecnica.
+- Usar codificacion en español con acentos correctos en .tex y .bib.
+- Conservar plantilla base y personalizar solo campos variables de actividad.
+- Evitar comandos no estandar sin justificacion editorial o tecnica.
+- Compilar sin errores criticos, citas rotas ni referencias faltantes.
+- Normalizar rutas y nombres de archivo con marcadores corruptos antes de compilar.
+- Mantener claves BibTeX estables para evitar rupturas de compilacion.
+- Conservar plantilla base de la materia y personalizar solo campos variables.
+- Mantener codificación y acentos correctos en español en .tex y .bib.
+- Evitar comandos no estándar sin justificación técnica.
+- Compilar sin errores críticos, referencias rotas ni rutas corruptas.
+- Resolver tokens o marcadores sin expandir en nombres de archivo antes de compilar.
+- Usar estructura mínima estable: portada, desarrollo, conclusión y referencias.
+- Mantener compatibilidad de compilacion sin errores criticos ni referencias rotas.
+- Usar codificacion y acentos correctos en .tex y .bib.
+- Evitar comandos no estandar sin justificacion editorial.
+- Normalizar nombres de archivos y resolver tokens no expandidos antes de compilar.
+- Verificar rutas canonicas contra README antes de referenciar.
+- Mantener codificacion y acentos correctos en .tex y .bib.
+- Evitar comandos no estandar sin justificacion tecnica.
+- Compilar sin errores criticos ni referencias rotas.
+- Corregir rutas, nombres corruptos o tokens sin expandir antes de compilar.
+- Mantener codificacion y acentos correctos en espanol en .tex y .bib.
+- Compilar sin errores criticos y sin referencias rotas.
+- Mantener estructura minima: portada, desarrollo, conclusion y referencias.
+- Conservar plantillas base de materia y actividad; personalizar solo campos variables.
+- Mantener metadatos institucionales y curriculares consistentes en todos los .tex.
+- Usar codificacion y acentos en espanol de forma consistente en .tex y .bib.
+- Compilar sin errores criticos, sin referencias rotas y con rutas limpias.
+- Normalizar nombres de archivo cuando existan marcadores o caracteres corruptos.
+- Incluir y mantener plantillas de actividad listadas en README como parte del canon local.
+- Mantener consistencia de metadatos institucionales y de curso en todos los .tex.
+- Corregir nombres con marcadores o tokens no expandidos antes de compilar.
+- Compilar sin errores criticos, sin referencias rotas y con rutas validas.
+- Normalizar nombres de archivos si aparecen marcadores o tokens sin expandir.
+- Mantener metadatos institucionales y curriculares consistentes en archivos .tex.
+- Usar codificacion y acentos correctos en español en .tex y .bib.
+- Normalizar nombres de archivo y resolver tokens o marcadores corruptos antes de compilar.
+- Normalizar nombres de archivos y resolver tokens sin expandir antes de compilar.
+- Corregir rutas, marcadores o tokens sin expandir en nombres de archivo antes de compilar.
+- Conservar plantilla base local y personalizar solo campos variables.
+- Normalizar rutas y nombres de archivo antes de compilar.
+- Resolver tokens sin expandir en README o programa analitico antes de canonizarlos.
+- Mantener metadatos institucionales consistentes en todos los .tex.
+- Mantener metadatos institucionales y de curso consistentes en .tex.
+- Usar codificacion y acentos correctos en espanol en .tex y .bib.
+- Corregir rutas, marcadores o tokens sin expandir antes de compilar.
+- Compilar sin errores criticos, referencias rotas ni rutas corruptas.
+- Normalizar nombres de archivo si aparecen tokens o marcadores sin expandir [supuesto].
+- Mantener metadatos institucionales y de curso consistentes en todo .tex.
+- Corregir rutas, nombres y tokens sin expandir antes de compilar.
+- Verificar nombres canonicos de archivos contra README local.
+- Mantener metadatos institucionales y del curso consistentes en .tex.
+- Usar codificacion correcta para espanol en .tex y .bib.
+- Normalizar nombres de archivos con marcadores o tokens sin expandir antes de compilar.
+- Mantener metadatos institucionales consistentes en archivos .tex.
+- Corregir rutas y nombres con caracteres anomalos antes de compilar.
+- Resolver tokens sin expandir en README o programa analitico antes de referenciar.
+- Mantener acentos y codificacion correcta en .tex y .bib.
+- Resolver tokens no expandidos en README o programa analitico cuando aparezcan [supuesto].
+- Usar estructura minima: portada, desarrollo, conclusion y referencias.
+- Compilar sin errores criticos, citas rotas ni referencias rotas.
+- Normalizar rutas o nombres con marcadores corruptos antes de compilar.
+- No copiar redaccion literal entre materias; reutilizar solo estructura.
+- Mantener compatibilidad tecnica de compilacion sin cambios no justificados.
+- Usar espanol con acentos y codificacion consistente en .tex y .bib.
+- Normalizar rutas y nombres con tokens o caracteres corruptos antes de compilar.
+- Mantener consistencia de metadatos institucionales y curriculares en archivos .tex.
+- Mantener codificacion correcta de español en .tex y .bib.
+- Compilar sin errores criticos, sin referencias rotas y sin rutas corruptas.
+- Normalizar nombres de archivo cuando existan marcadores o tokens sin expandir.
+- Mantener codificacion correcta en espanol en .tex y .bib.
+- Normalizar nombres de archivo y resolver marcadores o tokens sin expandir antes de compilar.
+- Conservar plantilla base de materia y personalizar solo campos variables.
+- Normalizar nombres de archivo y resolver marcadores/tokens sin expandir.
+- Mantener consistencia de metadatos institucionales en archivos .tex.
+- Normalizar nombres de archivo y resolver tokens/marcadores corruptos antes de compilar.
+- Mantener codificacion correcta en español en .tex y .bib.
+- Normalizar nombres de archivos y rutas antes de compilar.
+- Resolver tokens sin expandir en README o programa analitico antes de usarlos como canon.
+- Resolver tokens o marcadores sin expandir en README y programa analitico antes de usarlos como canon.
+- Normalizar nombres de archivo y resolver marcadores corruptos o tokens sin expandir antes de compilar.
+- Mantener consistencia de metadatos institucionales entre reporte y presentacion.
+- Resolver marcadores o tokens sin expandir en nombres de archivo antes de compilar.
+- No introducir comandos no estandar sin justificacion editorial.
+- Normalizar nombres de archivo y resolver tokens sin expandir antes de compilar.
+- Normalizar nombres de archivo si aparecen marcadores o tokens sin expandir.
+- No copiar bloques LaTeX completos entre materias; transferir solo reglas.
+- Mantener claves BibTeX estables para evitar referencias rotas.
+- Compilar sin errores criticos ni referencias faltantes.
+- Corregir nombres/rutas con marcadores corruptos antes de compilar.
+- Conservar plantilla base y personalizar solo campos variables.
+- Mantener claves BibTeX estables.
+- Normalizar nombres o rutas con marcadores corruptos antes de compilar.
+- Normalizar nombres de archivo si aparecen tokens o caracteres corruptos.
+- Conservar plantilla base de la materia y editar solo campos variables.
+- Normalizar nombres/rutas de archivos y resolver tokens sin expandir antes de compilar [supuesto].
+- Compilar sin errores criticos, sin referencias rotas y con bibliografia enlazada.
+- Resolver tokens o marcadores sin expandir en README y programa analitico si aparecen.
+- Compilar sin errores criticos, citas rotas ni referencias indefinidas.
+- Normalizar nombres de archivo y resolver marcadores/tokens sin expandir antes de compilar.
+- Mantener metadatos institucionales consistentes en todos los artefactos.
+- Compilar sin errores criticos, sin referencias ni citas rotas.
+- Mantener compatibilidad tecnica; evitar comandos no estandar sin justificacion.
+- Usar espanol con acentos correctos en .tex y .bib.
+- Normalizar nombres de archivo si aparecen tokens o marcadores corruptos.
+- Normalizar nombres y rutas de archivo antes de compilar.
+- Resolver tokens sin expandir en README y programa analitico si aparecen.
+- Mantener compatibilidad tecnica; evitar cambios de clase sin justificacion.
+- Usar acentos y codificacion en espanol de forma consistente en .tex y .bib.
+- Normalizar nombres de archivo cuando existan marcadores corruptos o tokens sin expandir.
+- Mantener codificacion correcta para espanol en .tex y .bib.
+- Normalizar nombres de archivo con marcadores corruptos antes de usar como canon.
+- Mantener consistencia entre reporte y presentacion.
+- Conservar plantillas base de la materia y personalizar solo campos variables.
+- Mantener metadatos institucionales y curriculares consistentes en .tex.
+- Usar espanol consistente y acentos correctos en .tex y .bib.
+- Mantener compatibilidad tecnica de compilacion sin errores criticos ni referencias rotas.
+- Mantener claves BibTeX estables para evitar roturas.
+- Corregir rutas, nombres corruptos y tokens sin expandir antes de compilar.
+- Usar codificacion estable para espanol y evitar caracteres corruptos.
+- Compilar sin errores criticos, sin referencias rotas y sin claves faltantes.
+- Verificar rutas y nombres de archivo contra README antes de referenciar.
+- Resolver tokens sin expandir en nombres de archivo antes de compilar.
+- Mantener codificacion correcta de espanol en .tex y .bib.
+- No cambiar clase o formato global sin necesidad comprobable.
+- Mantener metadatos institucionales y de curso consistentes en archivos .tex.
+- Corregir nombres o rutas corruptas antes de compilar.
+- Normalizar nombres/rutas de archivo antes de compilar.
+- Resolver tokens sin expandir en README o programa analitico antes de canonizar rutas.
+- Mantener compatibilidad tecnica del proyecto; evitar comandos no estandar sin justificacion.
+- Mantener codificacion y acentos correctos en español en .tex y .bib.
+- Mantener metadatos institucionales y de curso consistentes.
+- Normalizar rutas y nombres de archivo corruptos antes de compilar.
+- Resolver tokens sin expandir en README o programa analitico antes de canonizar nombres.
+- Normalizar nombres de archivos y resolver marcadores/tokens corruptos antes de compilar.
+- Mantener consistencia de metadatos institucionales en todos los .tex.
+- Conservar claves BibTeX estables.
+- Verificar nombres de archivo canonicos del README antes de referenciarlos.
+- Corregir marcadores o tokens sin expandir en rutas y nombres antes de compilar.
+- Corregir rutas, nombres y marcadores corruptos antes de compilar.
+- Compilar sin errores criticos, sin referencias rotas y con citas resueltas.
+- Usar acentos y codificacion correcta en espanol en .tex y .bib.
+- Normalizar nombres de archivo con tokens sin expandir antes de usarlos como canon.
+- Normalizar nombres de archivo y resolver marcadores o tokens no expandidos antes de compilar.
+- No copiar bloques LaTeX completos en memoria editorial; guardar solo reglas reutilizables.
+- Normalizar nombres de archivo y resolver tokens o marcadores sin expandir antes de compilar.
+- Verificar rutas contra README y programa analitico antes de fijarlas como canon.
+- Resolver marcadores o tokens sin expandir en rutas y nombres antes de compilar.
+- Verificar nombres canonicos de archivos contra README y programa analitico.
+- Compilar sin errores críticos ni referencias rotas.
+- Evitar comandos no estándar sin justificación editorial.
+- Usar estructura mínima: portada, desarrollo por ejes, conclusión y referencias.
+- Normalizar nombres/rutas de archivo y resolver marcadores corruptos antes de compilar.
+- Normalizar nombres de archivo y resolver marcadores corruptos antes de compilar.
+- Corregir nombres de archivo o rutas corruptas antes de compilar.
+- Verificar nombres canonicos contra README antes de referenciar archivos.
+- Normalizar rutas, nombres y tokens sin expandir antes de compilar.
+- Normalizar rutas y nombres con marcadores corruptos antes de compilar.
+- Mantener plantilla base de la materia y personalizar solo campos variables.
+- Conservar codificacion y acentos correctos en .tex y .bib.
+- Normalizar nombres de archivos y rutas con caracteres corruptos o tokens sin expandir antes de compilar.
+- Mantener clase y opciones de documento por defecto salvo instruccion explicita.
+- Normalizar nombres de archivo con marcadores corruptos antes de compilar.
+- Normalizar nombres de archivo con marcadores corruptos o tokens sin expandir antes de compilar.
+- Mantener acentos y codificacion correcta en espanol en .tex y .bib.
+- Resolver tokens sin expandir en README y programa analitico antes de canonizar archivos.
+- Verificar nombres canonicos desde README antes de referenciar archivos.
+- Mantener metadatos institucionales y de curso consistentes en .tex y .bib.
+- Usar codificacion correcta para espanol y acentos.
+- Mantener compatibilidad de compilacion; evitar comandos no estandar sin justificacion.
+- Usar acentos y codificacion correcta en español en .tex y .bib.
+- Mantener codificacion en español y acentos correctos en .tex y .bib.
+- Usar espanol con acentos y codificacion correcta en .tex y .bib.
+- Corregir nombres o rutas con marcadores corruptos antes de compilar.
+- Mantener metadatos institucionales y curriculares consistentes.
+- Normalizar nombres de archivos cuando existan marcadores o tokens sin expandir.
+- No copiar bloques LaTeX completos entre nodos; transferir solo reglas.
+- Normalizar nombres de archivos y corregir marcadores corruptos antes de compilar.
+- Resolver tokens sin expandir en README y programa analitico cuando aparezcan.
+- Mantener metadatos institucionales y del curso consistentes.
+- Resolver marcadores o tokens sin expandir en README y programa analitico antes de usarlos como canon.
+- Compilar sin errores críticos, sin referencias rotas y con rutas limpias.
+- Normalizar nombres de archivos cuando existan marcadores o caracteres corruptos.
+- Corregir rutas o nombres de archivo corruptos antes de compilar.
+- Normalizar nombres de archivos y corregir tokens o marcadores corruptos antes de compilar.
+- Normalizar rutas y nombres de archivo con tokens o caracteres corruptos antes de compilar.
+- No copiar bloques LaTeX completos en memoria; guardar reglas reutilizables.
 
 ## bibliography_rules
 
@@ -176,6 +1113,164 @@
 - Verificar correspondencia entre citas en LaTeX y entradas BibTeX.
 - Usar la malla curricular local solo cuando se cite como fuente institucional.
 - Reemplazar marcadores de slug por derecho-a-la-seguridad-social.bib antes de citar el archivo.
+- Usar derecho-a-la-seguridad-social.bib como fuente bibliografica central.
+- Priorizar fuentes institucionales y normativas juridicas verificables.
+- Agregar solo referencias consultables con metadatos minimos completos.
+- No inventar referencias; marcar faltantes como pendientes o [supuesto].
+- Distinguir bibliografia base de materia y bibliografia especifica de actividad.
+- Conservar trazabilidad de origen cuando una referencia sea heredada.
+- Usar derecho-a-la-seguridad-social.bib como fuente bibliográfica central del destino.
+- Priorizar fuentes institucionales UnADM y normas jurídicas vigentes verificables.
+- Agregar solo referencias consultables y pertinentes a la consigna local.
+- No inventar fuentes; marcar faltantes como [supuesto] o pendiente.
+- Conservar metadatos mínimos: autor, título, año y fuente o URL.
+- Distinguir bibliografía base de materia y bibliografía específica de actividad.
+- Usar derecho-a-la-seguridad-social.bib como fuente bibliografica central local.
+- Priorizar fuentes institucionales UnADM y normativas juridicas verificables.
+- No inventar referencias; usar solo obras consultables.
+- Agregar solo fuentes especificas de actividad con metadatos minimos completos.
+- Distinguir bibliografia base de bibliografia especifica por actividad.
+- Mantener claves BibTeX estables para evitar rupturas.
+- Usar derecho-a-la-seguridad-social.bib como fuente central local.
+- Priorizar fuentes institucionales y juridicas verificables.
+- No inventar referencias; registrar solo obras consultables.
+- Conservar metadatos minimos: autor, titulo, año, fuente/editorial o URL.
+- Priorizar fuentes institucionales UnADM y normas juridicas vigentes verificables.
+- Conservar metadatos minimos: autor, titulo, ano, fuente/editorial o URL.
+- Registrar nuevas fuentes solo si son verificables y pertinentes a la consigna.
+- Usar derecho-a-la-seguridad-social.bib como repositorio bibliografico central.
+- Priorizar fuentes institucionales UnADM y normativa juridica vigente verificable.
+- Agregar solo referencias realmente consultables con metadatos minimos completos.
+- No inventar fuentes; marcar faltantes como pendientes o [supuesto].
+- Distinguir bibliografia base de materia y bibliografia especifica por actividad.
+- Mantener claves BibTeX estables para evitar rupturas de compilacion.
+- Priorizar fuentes institucionales UnADM y normativas juridicas vigentes verificables.
+- Conservar metadatos minimos: autor, titulo, anio y fuente o URL.
+- Verificar que toda clave citada exista en el .bib local.
+- Usar derecho-a-la-seguridad-social.bib como fuente bibliografica central del destino.
+- Priorizar fuentes institucionales UnADM y normas juridicas verificables.
+- Conservar trazabilidad de fuentes heredadas como provisionales cuando aplique [supuesto].
+- Conservar metadatos minimos: autor, titulo, año y fuente o URL.
+- Verificar que cada cita tenga entrada BibTeX correspondiente.
+- No inventar fuentes; registrar faltantes como pendientes [supuesto].
+- Verificar correspondencia uno-a-uno entre cita LaTeX y entrada BibTeX.
+- Conservar metadatos minimos: autor, titulo, año y fuente/editorial o URL.
+- Agregar nuevas referencias solo si son verificables y pertinentes al producto.
+- Conservar metadatos minimos: autor, titulo, anio, fuente/editorial o URL.
+- Agregar solo referencias nuevas verificadas y pertinentes al producto.
+- Conservar metadatos minimos: autor, titulo, año, fuente o URL.
+- Registrar en .bib solo fuentes especificas de actividad cuando esten verificadas.
+- Distinguir bibliografia base de materia frente a bibliografia puntual de actividad.
+- Agregar solo referencias realmente consultables y pertinentes a la actividad.
+- Usar derecho-a-la-seguridad-social.bib como base bibliografica central.
+- Agregar solo fuentes realmente consultables con metadatos minimos completos.
+- No inventar referencias; marcar faltantes como pendientes [supuesto].
+- Verificar que cada cita usada tenga entrada BibTeX correspondiente.
+- Conservar metadatos minimos: autor, titulo, ano, fuente o URL.
+- No inventar referencias.
+- Distinguir bibliografia base de bibliografia especifica de actividad.
+- Agregar solo referencias realmente consultables y verificables.
+- Verificar que cada cita LaTeX tenga entrada BibTeX correspondiente.
+- Conservar metadatos minimos: autor, titulo, ano y fuente o URL.
+- Verificar que toda cita en LaTeX tenga clave BibTeX existente.
+- Priorizar fuentes institucionales y normativas verificables.
+- Agregar nuevas fuentes solo con verificacion local y trazabilidad.
+- Verificar que cada clave citada exista en el .bib local.
+- No inventar referencias; registrar solo fuentes consultables.
+- Conservar metadatos minimos: autor, titulo, año y fuente/URL.
+- Verificar que toda cita LaTeX tenga su entrada BibTeX.
+- Agregar solo referencias consultables y con metadatos minimos completos.
+- Agregar nuevas fuentes solo si son verificables y pertinentes a la consigna.
+- Priorizar fuentes institucionales UnADM y normatividad vigente verificable.
+- Agregar nuevas fuentes solo cuando la consigna lo exija y se puedan verificar.
+- No inventar fuentes; registrar faltantes como pendientes o [supuesto].
+- Verificar correspondencia uno a uno entre claves citadas y entradas BibTeX.
+- Priorizar fuentes institucionales UnADM y marco juridico verificable.
+- Registrar metadatos minimos: autor, titulo, año, fuente/editorial o URL.
+- Verificar que cada cita LaTeX tenga clave BibTeX existente.
+- Priorizar fuentes institucionales UnADM y materiales juridicos verificables.
+- No inventar referencias; registrar faltantes como pendientes o [supuesto].
+- Agregar solo fuentes consultables y pertinentes a la actividad.
+- Verificar que cada cita del .tex tenga su entrada BibTeX correspondiente.
+- Conservar metadatos minimos: autor, titulo, anio, fuente editorial o URL.
+- Agregar nuevas fuentes solo si son pertinentes a la consigna local.
+- Conservar metadatos minimos: autor, titulo, ano y fuente/URL.
+- Verificar que cada cita en LaTeX tenga su entrada BibTeX correspondiente.
+- Conservar metadatos minimos: autor, titulo, anio, fuente o URL.
+- No asumir que bibliografia de otra materia aplica al destino sin verificacion [supuesto].
+- Priorizar fuentes institucionales UnADM y juridicas verificables.
+- Verificar que toda cita LaTeX tenga entrada BibTeX existente.
+- Verificar correspondencia entre cada cita LaTeX y una entrada BibTeX.
+- No inventar referencias; agregar solo obras consultables.
+- Distinguir bibliografia base de materia vs bibliografia especifica de actividad.
+- Conservar metadatos minimos: autor, titulo, anio y fuente/URL.
+- No inventar referencias; agregar solo fuentes consultables.
+- Conservar metadatos minimos: autor, titulo, anio, fuente/URL.
+- Agregar solo fuentes consultables con metadatos minimos completos.
+- Priorizar fuentes institucionales UnADM y juridicas oficiales verificables.
+- Agregar nuevas fuentes solo cuando sean verificables y pertinentes.
+- Validar correspondencia entre citas en texto y claves BibTeX.
+- No transferir citas de Filosofia salvo pertinencia expresa y verificada.
+- No inventar fuentes; agregar solo referencias verificables.
+- Mantener claves BibTeX estables para evitar roturas de citacion.
+- Agregar solo referencias realmente consultables.
+- No inventar fuentes; marcar faltantes como pendientes [supuesto].
+- Conservar metadatos minimos: autor, titulo, anio y fuente/editorial o URL.
+- Agregar solo referencias realmente consultables y pertinentes al producto.
+- No inventar fuentes; registrar faltantes como pendientes.
+- Priorizar fuentes institucionales UnADM y normatividad mexicana vigente verificable.
+- Marcar como pendiente cualquier fuente faltante antes de cierre final.
+- No inventar referencias; usar solo fuentes consultables.
+- Verificar que cada cita en texto exista en el .bib local.
+- Priorizar fuentes institucionales y normativas vigentes aplicables al destino.
+- Usar derecho-a-la-seguridad-social.bib como fuente central.
+- Priorizar fuentes institucionales UnADM y normativas verificables.
+- Verificar que toda cita LaTeX tenga entrada BibTeX correspondiente.
+- Priorizar fuentes institucionales UnADM y marcos juridicos verificables.
+- Agregar referencias nuevas solo si son verificables y pertinentes al producto.
+- Agregar nuevas fuentes solo si son pertinentes al tema del destino.
+- Priorizar fuentes institucionales UnADM y normativa juridica verificable.
+- Conservar metadatos minimos: autor, titulo, ano y fuente/editorial o URL.
+- Verificar que cada cita LaTeX tenga su entrada BibTeX correspondiente.
+- Priorizar fuentes institucionales UnADM y normativa vigente verificable.
+- Agregar solo referencias consultables y verificables.
+- Verificar que toda cita en LaTeX tenga entrada BibTeX correspondiente.
+- Agregar solo referencias comprobables; no inventar fuentes.
+- Marcar faltantes como pendientes o [supuesto], sin fabricacion.
+- Verificar correspondencia entre citas en texto y entradas BibTeX.
+- Verificar que toda cita LaTeX tenga su entrada BibTeX correspondiente.
+- Usar derecho-a-la-seguridad-social.bib como fuente bibliografica central de la materia.
+- Verificar correspondencia uno a uno entre clave citada y entrada BibTeX.
+- Conservar metadatos minimos: autor, titulo, ano, fuente editorial o URL.
+- Agregar nuevas referencias solo tras verificacion local.
+- No asumir reutilizacion automatica de .bib de otras materias.
+- Tratar bibliografia heredada de otras materias como no aplicable hasta validacion local [supuesto].
+- Usar derecho-a-la-seguridad-social.bib como fuente bibliográfica local central.
+- Conservar metadatos mínimos: autor, título, año, fuente/editorial o URL.
+- Distinguir bibliografía base de bibliografía específica por actividad.
+- Agregar nuevas fuentes solo si son pertinentes al tema y verificables.
+- Verificar que cada cita del .tex exista en el .bib local.
+- Priorizar fuentes institucionales UnADM y normatividad juridica vigente verificable.
+- Verificar que cada cita usada en LaTeX tenga entrada BibTeX correspondiente.
+- Marcar faltantes bibliograficos como pendientes o [supuesto] cuando aplique.
+- Agregar solo referencias especificas de actividad con metadatos minimos completos.
+- Conservar entradas institucionales cuando se citen.
+- Priorizar fuentes institucionales UnADM y fuentes juridicas oficiales verificables.
+- Agregar solo referencias consultables y pertinentes a la actividad.
+- Agregar solo referencias de actividad con metadatos minimos completos.
+- Conservar trazabilidad entre cita en LaTeX y entrada BibTeX.
+- No asumir que bibliografia de otra materia aplica automaticamente al destino [supuesto].
+- No inventar fuentes ni claves BibTeX.
+- Priorizar fuentes institucionales UnADM y fuentes juridicas verificables.
+- Conservar metadatos minimos: autor, titulo, año, fuente/URL.
+- Validar que toda cita en LaTeX tenga entrada BibTeX correspondiente.
+- Priorizar fuentes institucionales UnADM y normativas vigentes verificables.
+- Agregar solo referencias nuevas con verificacion previa.
+- Agregar al .bib solo fuentes especificas de actividad con metadatos minimos completos.
+- Conservar trazabilidad entre clave BibTeX y cita en texto.
+- Conservar metadatos mínimos: autor, título, año y fuente/editorial o URL.
+- Agregar nuevas entradas solo si son verificables y pertinentes al destino.
+- Agregar fuentes heredadas solo tras verificacion local [supuesto].
 
 ## propagation_hints
 
@@ -230,6 +1325,365 @@
 - Ciclo 21 hereda riesgo de parseo; validar JSON antes de propagar.
 - Ciclo 21 necesita normalizacion manual si se reutiliza.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar transversalmente solo abstracciones editoriales estables, no redaccion literal.
+- Priorizar identidad, estructura reusable, gates de calidad y grafo conceptual.
+- Mantener reglas curriculares especificas solo dentro de la materia destino.
+- Aplicar estrategia progresiva y conservadora: reforzar primero lo validado localmente.
+- Mantener alerta de riesgo por antecedentes de salida no parseable en ciclo 1.
+- Si falta contexto local de actividad, crear base minima y abrir preguntas.
+- Propagar transversalmente solo reglas generales de identidad, estructura y calidad.
+- No transferir redacción literal ni contenidos temáticos específicos del origen.
+- Mantener reglas locales del destino como prioridad operativa.
+- Aplicar propagación recursiva solo tras validación de parseo y esquema completo.
+- Conservar alertas históricas de no-parseable como bandera de riesgo institucional.
+- Propagar lateral y arriba solo reglas generales ya validadas.
+- No transferir redaccion literal ni contenido tematico propio de otra materia.
+- Priorizar identidad, estructura reusable, quality gates y grafo conceptual.
+- Aplicar normalizacion manual en nodos con historial de salida no parseable.
+- Mantener trazabilidad de reglas provisionales con etiqueta [supuesto].
+- Preservar reglas locales del destino como prioridad contextual.
+- Propagar transversalmente solo abstracciones editoriales estables.
+- No transferir redaccion literal ni contenido tematico exclusivo de Filosofia del Derecho.
+- Propagar reglas generales de identidad, calidad, JSON y trazabilidad.
+- Conservar bandera de riesgo por historial de salida no parseable en ciclo 1.
+- Propagar recursivamente solo reglas estables y abstractas entre nodos no equivalentes.
+- Evitar transferir redaccion literal o contenido tematico especifico de Filosofia del Derecho.
+- Mantener bandera de riesgo por historico de salida no parseable en ciclos previos.
+- Si falta contexto local, preservar cerebro editorial minimo y abrir vacios como preguntas.
+- Propagar a laterales compatibles reglas de identidad, calidad JSON y control bibliografico.
+- Restringir datos curriculares especificos al nodo de la misma materia.
+- Mantener bandera de riesgo para artefactos de ciclo 1 no parseables.
+- Aplicar estrategia progresiva y conservadora: agregar mejoras verificables sin recorte.
+- Propagar lateral y hacia arriba solo reglas generales estables y validadas.
+- No transferir redaccion literal ni contenido tematico especifico de Filosofia del Derecho.
+- Mantener reglas locales del destino como capa principal.
+- Conservar bandera de riesgo historica: ciclo 1 requiere normalizacion manual si se reutiliza.
+- Aplicar estrategia progresiva y conservadora: sumar mejoras verificables sin borrar reglas utiles.
+- Propagar recursivamente solo abstracciones editoriales estables en nodos no equivalentes.
+- Transferir identidad, estructura reusable, quality gates y grafo conceptual; no redaccion literal.
+- Mantener reglas curriculares especificas del destino sin exportarlas a materias distintas.
+- Propagar reglas generales de JSON, integridad academica y control bibliografico a laterales compatibles.
+- Evitar regresiones respecto de reglas utiles previas.
+- Si falta contexto local en nodos hijos, crear cerebro editorial minimo y abrir vacios como preguntas.
+- Propagar recursivamente solo reglas generales estables ya validadas.
+- No transferir redaccion literal ni contenido tematico especifico de otra materia.
+- Conservar reglas locales del destino como precedencia operativa.
+- Mantener bandera de riesgo por antecedentes de salida no parseable en ciclos tempranos.
+- Propagar solo abstracciones editoriales estables en saltos transversales.
+- Mantener reglas locales de Seguridad Social como capa dominante del destino.
+- Propagar recursivamente solo despues de validar JSON y estructura minima.
+- Mantener bandera historica: ciclo 1 requirio normalizacion manual.
+- Propagar a laterales solo abstracciones editoriales estables, no redaccion literal.
+- Propagar recursivamente solo tras validar JSON y estructura minima.
+- Transferir gates de calidad e integridad como nucleo comun transversal.
+- Mantener reglas curriculares especificas solo dentro de la misma materia.
+- Conservar bandera historica de riesgo por salidas no parseables en ciclos previos.
+- Propagar reglas generales de identidad, estructura, calidad y trazabilidad.
+- Mantener reglas locales de seguridad social como capa prioritaria del destino.
+- Conservar alerta historica: ciclos con salida no parseable requieren normalizacion manual.
+- No transferir contenido tematico especifico de Filosofia del Derecho al destino.
+- Reutilizar reglas de identidad, estructura, calidad y trazabilidad de supuestos.
+- Aplicar propagacion recursiva solo tras validar JSON y estructura.
+- Mantener bandera de riesgo historica por ciclos con salida no parseable.
+- Propagar a nodos laterales solo reglas editoriales estables y no tematicas.
+- Propagar recursivamente solo despues de validar JSON y estructura.
+- Mantener bandera de riesgo por antecedentes de salida no parseable en ciclos previos.
+- Evitar regresion de identidad UnADM, gates de calidad y control bibliografico.
+- Compartir reglas curriculares especificas solo dentro de la misma materia.
+- Si un nodo destino esta incompleto, inicializar cerebro minimo y dejar vacios explicitos.
+- Propagar lateral y recursivamente solo reglas abstractas y estables.
+- Mantener reglas locales del destino como autoridad primaria.
+- Aplicar union-dedupe en cada ciclo para evitar duplicados y perdida.
+- Conservar bandera historica de riesgo por salidas no parseables en ciclos tempranos.
+- Propagar recursivamente solo reglas validadas y parseables.
+- Compartir a laterales solo abstracciones estables, no contenido tematico local.
+- Aplicar union-dedupe sin recorte en cada ciclo.
+- Evitar mezclar contenido sustantivo de Filosofia con Seguridad Social.
+- Propagar recursivamente solo reglas generales validadas y estables.
+- Compartir a laterales no equivalentes solo abstracciones editoriales, no redaccion literal.
+- Mantener reglas locales de seguridad social sin importar contenido doctrinal de filosofia.
+- Conservar bandera de riesgo historico por salidas no parseables en ciclos previos.
+- Aplicar normalizacion manual cuando aparezca salida no estructurada.
+- Compartir a laterales solo abstracciones editoriales estables.
+- No transferir redaccion literal ni contenido tematico de filosofia al destino.
+- Propagar reglas curriculares especificas solo dentro de la misma materia.
+- Mantener bandera de riesgo por antecedentes de salidas no parseables en ciclos tempranos.
+- Aplicar normalizacion manual cuando reaparezcan respuestas no estructuradas.
+- Propagar a laterales y arriba solo reglas validadas y parseables.
+- Transferir solo abstracciones editoriales estables entre materias no equivalentes.
+- No transferir redaccion literal ni contenido tematico especifico de otra asignatura.
+- Reutilizar gates institucionales de calidad y trazabilidad.
+- Mantener bandera de riesgo para ciclos con salida no parseable.
+- Aplicar compresion lossless por union-dedupe en cada ciclo.
+- Propagar lateral y recursivo solo reglas generales estables entre nodos no equivalentes.
+- Priorizar identidad, estructura reusable, gates de calidad y grafo conceptual comun.
+- Conservar reglas locales del destino como autoridad primaria.
+- Mantener bandera de riesgo para ciclos con salidas no parseables.
+- Propagar recursivamente solo reglas generales estables y verificadas.
+- No transferir contenido tematico literal de Filosofia del Derecho al destino.
+- Priorizar identidad, gates de calidad, estructura reusable y grafo conceptual comun.
+- Mantener reglas locales del destino como capa superior de especificidad.
+- Conservar trazabilidad de reglas provisionales con etiqueta [supuesto].
+- No transferir contenido tematico especifico de Filosofia del Derecho.
+- Propagar reglas de identidad, estructura reusable y quality gates.
+- Aplicar estrategia progresiva y conservadora: agregar mejoras verificables sin eliminar reglas utiles.
+- Propagar a laterales solo abstracciones editoriales estables y validadas.
+- Conservar reglas locales del destino como prioridad en conflictos.
+- Aplicar siempre union-dedupe sin recorte.
+- Propagar lateral y recursivamente solo reglas generales validadas en este ciclo.
+- Transferir abstracciones editoriales estables; no transferir redaccion literal ni contenido tematico ajeno.
+- Mantener reglas locales del destino como prioridad sobre heredadas transversales.
+- Reforzar gates de JSON, trazabilidad de supuestos y control bibliografico en nodos compatibles.
+- Propagar a laterales solo abstracciones editoriales estables.
+- Mantener bandera historica: ciclo 1 con salida no parseable requiere cautela.
+- Aplicar estrategia progresiva y conservadora en cada ciclo recursivo.
+- Propagar transversalmente solo abstracciones estables, no redaccion literal.
+- Propagar reglas generales de identidad, calidad JSON y control bibliografico a laterales compatibles.
+- Mantener reglas curriculares especificas dentro de la materia destino.
+- Aplicar estrategia progresiva y conservadora: agregar mejoras verificables sin borrar legado util.
+- Si un nodo receptor esta vacio, crear cerebro editorial minimo con vacios abiertos.
+- Registrar en log cada refuerzo para auditoria de no regresion.
+- No propagar redaccion literal ni contenido tematico no equivalente.
+- Propagar recursivamente solo tras validar JSON y estructura.
+- Mantener alerta por antecedente de salida no parseable en ciclos tempranos.
+- Reforzar identidad, gates de calidad y grafo conceptual comun.
+- Propagar recursivamente solo reglas estables y abstractas en nodos no equivalentes.
+- Priorizar identidad, estructura reusable, quality gates y grafo conceptual comun.
+- Conservar reglas locales de seguridad social como capa primaria del destino.
+- Mantener bandera historica: ciclo 1 con salida no parseable requiere normalizacion manual si se reutiliza.
+- Propagar a nodos laterales solo abstracciones editoriales estables.
+- Mantener reglas curriculares especificas solo en nodos de la misma materia.
+- Aplicar estrategia conservadora: unir, deduplicar y evitar regresiones.
+- Si un nodo esta incompleto, crear cerebro editorial minimo y abrir vacios locales.
+- No transferir redaccion literal ni contenido tematico propio de Filosofia del Derecho.
+- Mantener reglas locales del destino como prioridad en conflictos.
+- Reforzar gates de calidad e identidad institucional en cada salto transversal.
+- Conservar alerta historica de ciclos con salida no parseable para control preventivo.
+- Propagar recursivamente solo reglas generales validadas y parseables.
+- Compartir a laterales no equivalentes solo abstracciones estables de identidad, estructura y calidad.
+- Mantener bandera de riesgo historico por ciclos con salida no parseable.
+- Aplicar estrategia progresiva y conservadora: reforzar sin sustituir.
+- Propagar lateral y arriba solo reglas generales validadas, no redaccion literal.
+- Transferir transversalmente patrones de calidad, estructura y trazabilidad.
+- Preservar alerta historica: ciclo 1 requiere normalizacion manual si reaparece.
+- Propagar lateral y hacia arriba solo reglas generales ya validadas.
+- Transferir entre materias solo abstracciones editoriales estables, no contenido disciplinar literal.
+- Mantener alertas historicas de no parseable de ciclo 1 como riesgo operativo.
+- Aplicar estrategia progresiva: primero identidad y quality gates, luego estructura y estilo.
+- Aplicar estrategia conservadora: preservar reglas locales del destino como prioridad.
+- Propagar recursivamente solo reglas validadas en JSON y estructura.
+- Compartir lateralmente solo abstracciones editoriales estables entre nodos no equivalentes.
+- Conservar reglas locales del destino y evitar mezclar contenido disciplinar de origen.
+- Aplicar normalizacion manual cuando reaparezcan salidas no estructuradas.
+- Evitar regresiones en identidad, calidad, trazabilidad y control bibliografico.
+- Transferir abstracciones estables de identidad, estructura, calidad y grafo conceptual.
+- No transferir citas ni conceptos tematicos propios de Filosofia del Derecho al destino.
+- Propagar recursivo solo tras pasar gates de JSON y estructura.
+- Transferir reglas generales de identidad, calidad, LaTeX y citas a nodos compatibles.
+- No transferir contenidos doctrinales especificos de Filosofia al destino de Seguridad Social.
+- Conservar bandera historica: ciclo 1 requirio normalizacion manual.
+- Compartir abstracciones editoriales; no transferir redaccion literal.
+- Reutilizar gates de JSON parseable y normalizacion en nodos laterales compatibles.
+- Mantener bandera de riesgo historica por salidas no parseables en ciclos previos.
+- Propagar recursivamente solo reglas generales y estables en nodos no equivalentes.
+- Priorizar transferencia de identidad, estructura reusable, gates de calidad y grafo conceptual.
+- Mantener reglas locales del destino como autoridad para decisiones curriculares.
+- Conservar bandera de riesgo historica por salidas no parseables de ciclos tempranos.
+- Propagar primero identidad, estructura reusable y gates de calidad.
+- Mantener bandera historica: ciclo 1 requiere normalizacion manual si se reutiliza.
+- Aplicar estrategia progresiva y conservadora: sumar, deduplicar, no recortar.
+- No transferir redaccion literal ni contenido tematico especifico del origen.
+- Reforzar gates de calidad, identidad y grafo conceptual en nodos laterales compatibles.
+- Preservar historial de riesgo por ciclos con salidas no parseables.
+- Propagar a nodos laterales solo reglas generales estables de identidad, estructura y calidad.
+- No transferir redaccion literal ni contenidos tematicos propios de Filosofia del Derecho.
+- Aplicar propagacion recursiva solo tras validar JSON y gates de calidad.
+- Preservar alertas historicas de normalizacion manual de ciclos con salida no parseable.
+- Transferir reglas generales de identidad, estructura, calidad y trazabilidad.
+- Preservar reglas locales tematicas del destino sin contaminacion disciplinar.
+- Aplicar estrategia progresiva y conservadora: agregar mejoras verificables y evitar cambios bruscos.
+- Mantener bandera de riesgo historico por salidas no parseables en ciclos iniciales.
+- Registrar refuerzos en ADN para facilitar reconstruccion futura del nodo.
+- No transferir redaccion literal ni conceptos tematicos exclusivos de Filosofia del Derecho.
+- Propagar reglas generales de integridad, estructura, calidad y trazabilidad.
+- Reforzar control JSON parseable en toda propagacion recursiva.
+- Propagar solo abstracciones estables a nodos no equivalentes.
+- Propagar transversalmente identidad, estructura reusable y gates de calidad.
+- Mantener bandera de riesgo historico por salidas no parseables en ciclos tempranos.
+- Aplicar estrategia progresiva y conservadora: sumar, validar, no recortar.
+- Mantener bitacora de refuerzos por ciclo para trazabilidad.
+- Propagar solo abstracciones estables a nodos laterales no equivalentes.
+- Compartir gates de calidad, identidad y estructura reusable; no redaccion literal.
+- Aplicar union-dedupe en cada ciclo para evitar regresion.
+- Conservar alerta historica: ciclo 1 requirio normalizacion manual por salida no parseable.
+- Si falta contexto local, preservar cerebro minimo y abrir vacios como preguntas.
+- Evitar transferencia de redaccion literal o contenido tematico no equivalente.
+- Aplicar validacion JSON y dedupe antes de propagar a nodos vecinos.
+- No transferir redaccion literal ni contenido tematico especifico de Filosofia al destino.
+- Propagar primero identidad, estructura reusable, quality gates y grafo conceptual.
+- Mantener bandera de riesgo historico por salidas no parseables en ciclos previos.
+- Aplicar estrategia progresiva y conservadora en cada ciclo.
+- Propagar recursivamente solo reglas generales ya validadas en JSON.
+- En saltos transversales, transferir solo abstracciones editoriales estables.
+- No propagar contenido doctrinal especifico de una materia a otra no equivalente.
+- Aplicar normalizacion manual cuando se detecte salida no estructurada.
+- Preservar reglas utiles previas del destino y reforzar solo conexiones compatibles.
+- Propagar lateral y arriba solo reglas estables y abstractas ya validadas.
+- No propagar contenido doctrinal especifico de Filosofia a Seguridad Social.
+- Priorizar identidad, gates de calidad y patrones argumentativos reutilizables.
+- Si falta contexto local, crear cerebro minimo y abrir preguntas sin inventar datos.
+- Propagar reglas generales de identidad, calidad, JSON y trazabilidad a nodos compatibles.
+- Aplicar estrategia progresiva y conservadora: reforzar sin reemplazar.
+- Conservar reglas locales del destino cuando exista conflicto semantico.
+- Mantener bandera de riesgo para ciclos con antecedente no parseable.
+- No transferir contenido tematico propio de Filosofia del Derecho al destino.
+- Conservar bandera historica: ciclo 1 con salida no parseable requiere normalizacion manual.
+- Propagar a nodos laterales solo abstracciones estables: identidad, gates, estructura reusable y grafo conceptual.
+- No propagar contenido tematico especifico de Filosofia del Derecho al destino.
+- Aplicar estrategia progresiva y conservadora: primero validar, luego expandir.
+- Mantener alerta historica: ciclo 1 con salida no parseable requiere revision manual si reaparece.
+- Propagar a laterales solo abstracciones estables: identidad, estructura reusable, gates y grafo conceptual.
+- Mantener reglas curriculares especificas del destino solo dentro de su materia.
+- Propagar reglas generales de JSON, integridad academica y control bibliografico a nodos compatibles.
+- Aplicar estrategia progresiva y conservadora: agregar mejoras verificables sin borrar reglas vigentes.
+- Conservar bandera historica de riesgo por ciclos con salida no parseable.
+- Propagar reglas generales de identidad, estructura, calidad y JSON a nodos compatibles.
+- No propagar contenido tematico propio de Filosofia del Derecho al destino de Seguridad Social.
+- Aplicar estrategia progresiva y conservadora: agregar mejoras verificables sin borrar reglas utiles.
+- Si un nodo destino esta incompleto, crear cerebro editorial minimo y abrir vacios locales.
+- Propagar a nodos laterales solo reglas generales de identidad, estructura y calidad.
+- Restringir reglas curriculares especificas al nodo de la misma materia.
+- Aplicar transferencia transversal por abstracciones editoriales, no por redaccion literal.
+- Mantener bandera de riesgo por ciclo 1 no parseable hasta cierre de verificacion.
+- Si un nodo destino esta vacio, crear cerebro minimo con identidad, estructura y gates.
+- Propagar lateral y arriba solo reglas validadas en este ciclo.
+- Compartir solo abstracciones editoriales estables entre nodos no equivalentes.
+- Priorizar identidad, estructura reusable, gates y grafo conceptual.
+- Evitar transferencia de redaccion literal o contenido tematico de origen.
+- Mantener bandera de riesgo historico por salidas no parseables de ciclos tempranos.
+- Propagar recursivamente solo reglas generales y estables entre materias no equivalentes.
+- No transferir redaccion literal ni contenido tematico de Filosofia del Derecho.
+- Propagar identidad, estructura reusable, gates de calidad y grafo conceptual.
+- Conservar alerta historica: ciclo 1 requiere normalizacion manual si se reutiliza.
+- Transferir a laterales solo abstracciones editoriales estables.
+- Preservar reglas locales de seguridad social como capa prioritaria del destino.
+- Mantener bandera historica de riesgo por salidas no parseables en ciclos previos.
+- Aplicar siempre compresion lossless por union-dedupe.
+- Propagar a laterales no equivalentes solo abstracciones editoriales estables.
+- Propagar recursivamente solo tras pasar gates de JSON y estructura.
+- Reforzar reglas globales: identidad, calidad, trazabilidad y control bibliografico.
+- Mantener reglas locales del destino como prioridad semantica.
+- Propagar lateral y recursivo solo reglas generales validadas.
+- Transferir solo abstracciones editoriales estables entre nodos no equivalentes.
+- No transferir redaccion literal ni contenido tematico especifico de Filosofia.
+- Mantener bandera historica: ciclo 1 con salida no parseable requiere normalizacion manual.
+- Evitar regresion de identidad, estructura por ejes y control bibliografico.
+- Propagar transversalmente solo reglas generales estables, no contenido tematico de Filosofia.
+- Mantener reglas locales de Seguridad Social como prioridad contextual.
+- Propagar solo despues de validar JSON y estructura.
+- Aplicar estrategia progresiva y conservadora: reforzar sin desplazar.
+- Evitar regresiones en identidad, calidad y trazabilidad.
+- Propagar recursivamente solo reglas validadas en este ciclo.
+- Compartir a laterales no equivalentes solo abstracciones editoriales estables.
+- No transferir redaccion literal ni contenido tematico local de otra materia.
+- Preservar alerta historica: ciclos con salida no parseable requieren normalizacion manual.
+- Priorizar identidad, gates de calidad, estructura reusable y grafo conceptual.
+- Propagar a nodos laterales solo abstracciones editoriales estables, no contenido tematico literal.
+- Aplicar sincronizacion progresiva y conservadora: agregar mejoras verificables sin borrar reglas utiles.
+- Transferir a nodos no equivalentes solo abstracciones editoriales estables.
+- Mantener bandera de riesgo por ciclos con salida no parseable.
+- Reforzar en laterales: identidad UnADM, calidad JSON, evidencia y trazabilidad.
+- Transferir abstracciones estables; no redaccion literal ni contenido tematico ajeno.
+- Preservar reglas locales de Seguridad Social al recibir reglas transversales.
+- Propagar transversalmente solo reglas generales estables, no redaccion literal ni contenido tematico local.
+- Propagar recursivamente solo despues de validar JSON, estructura y gates de calidad.
+- Priorizar identidad, estructura reusable y control de calidad sobre detalles de una actividad especifica.
+- Mantener trazabilidad de reglas provisionales heredadas con etiqueta [supuesto].
+- Si falta contexto local en subnodos, crear cerebro minimo con identidad, estructura y gates.
+- Aplicar estrategia conservadora: reforzar lo valido existente antes de agregar reglas nuevas.
+- En saltos transversales, transferir solo abstracciones estables y no redaccion literal.
+- Conservar reglas locales del destino cuando exista conflicto tematico.
+- Propagar recursivamente solo despues de validar JSON y gates de calidad.
+- Propagar solo abstracciones editoriales estables a nodos no equivalentes.
+- Evitar transferencia literal de redaccion o contenido tematico de Filosofia del Derecho.
+- Conservar bandera de riesgo por ciclos con salida no parseable.
+- No transferir redacción literal ni contenido temático específico de Filosofía del Derecho.
+- Propagar primero identidad, estructura reusable, gates de calidad y grafo conceptual.
+- Mantener reglas locales del destino cuando haya conflicto de especificidad.
+- Conservar alerta institucional histórica de salidas no parseables (ciclo 1).
+- Aplicar propagación recursiva solo tras validar JSON y estructura.
+- Transferir a laterales solo abstracciones editoriales estables, no contenido tematico literal.
+- Preservar reglas locales del destino sobre seguridad social.
+- Evitar regresion: identidad UnADM, control JSON, trazabilidad y control bibliografico.
+- Transferir solo abstracciones estables; no transferir redaccion literal.
+- No mover contenido tematico de Filosofia del Derecho a Seguridad Social.
+- Reutilizar gates institucionales de JSON, respaldo y normalizacion.
+- Si falta contexto local, crear cerebro minimo y abrir vacios en preguntas.
+- Reutilizar gates de calidad, identidad y estructura en nodos laterales compatibles.
+- Propagar recursivamente solo reglas validadas y estructuradas.
+- No transferir redaccion literal ni contenido tematico no equivalente.
+- Mantener alerta de normalizacion manual para antecedentes no parseables.
+- Priorizar gates de calidad, identidad y grafo conceptual en saltos transversales.
+- Evitar regresion de reglas utiles ya consolidadas.
+- No transferir redaccion literal ni contenido doctrinal especifico de otra materia.
+- Si falta contexto local en subnodos, crear cerebro minimo y abrir vacios como preguntas.
+- Aplicar sincronizacion progresiva y conservadora: reforzar sin desplazar reglas locales vigentes.
+- Reutilizar gates institucionales de calidad en nodos laterales compatibles.
+- Si falta contexto local, conservar cerebro editorial minimo y abrir vacios como preguntas.
+- Evitar transferir redaccion literal o contenido tematico especifico de otra materia.
+- Aplicar normalizacion manual en nodos vecinos con salida no estructurada.
+- Propagar solo abstracciones editoriales estables a nodos transversales.
+- Mantener reglas curriculares especificas dentro de la misma materia.
+- Aplicar compresion union-dedupe sin perdida en cada ciclo.
+- No propagar redaccion literal ni contenido doctrinal especifico de otra materia.
+- Mantener bandera de riesgo por antecedentes de salida no parseable en ciclos iniciales.
+- Aplicar propagacion recursiva solo tras validar JSON y estructura completa.
+- Mantener reglas locales de seguridad social como prioridad del destino.
+- Preservar bandera de riesgo historico por ciclos con salida no parseable.
+- Propagar a nodos no equivalentes solo reglas de identidad, estructura reusable y gates de calidad.
+- Conservar reglas locales del destino sobre seguridad social sin contaminar con contenido disciplinar de filosofia.
+- Mantener bandera de riesgo por historico de no-parseable en ciclos tempranos.
+- Aplicar estrategia progresiva y conservadora: agregar mejoras verificables, sin recorte.
+- Aplicar estrategia progresiva y conservadora: primero validar, despues propagar.
+- No transferir redaccion literal ni contenido tematico de nodos no equivalentes.
+- Reforzar en transversal: identidad, calidad, estructura reusable y grafo conceptual.
+- Propagar transversalmente solo abstracciones estables y no redaccion literal.
+- Propagar a laterales compatibles reglas generales de integridad, JSON y control bibliografico.
+- Mantener bandera de riesgo por antecedente de salida no parseable en ciclos tempranos.
+- Aplicar estrategia progresiva y conservadora: reforzar sin sustituir contexto local.
+- Propagar reglas curriculares solo dentro de la misma materia.
+- Propagar transversalmente reglas de calidad, JSON parseable y trazabilidad de supuestos.
+- Mantener bandera de riesgo de ciclos con salida no parseable hasta saneamiento completo.
+- Aplicar estrategia progresiva y conservadora: reforzar sin regresion.
+- Propagar recursivamente solo reglas generales ya validadas.
+- Transferir abstracciones estables, no redaccion literal ni contenido tematico de filosofia.
+- Conservar reglas locales de seguridad social como prioridad de destino.
+- Evitar regresiones sobre identidad, estructura y control bibliografico.
+- Propagar reglas curriculares del destino solo dentro de esta materia.
+- Propagar reglas generales de identidad, calidad, JSON y citas a nodos compatibles.
+- Propagar recursivamente solo reglas abstractas y estables para nodos transversales.
+- Propagar gates de calidad, identidad institucional y disciplina de citacion como nucleo comun.
+- Aplicar normalizacion manual cuando reaparezca salida no estructurada de ciclos previos.
+- Reforzar en laterales reglas de integridad, trazabilidad y control bibliografico.
+- Propagar recursivamente solo reglas generales y estables entre nodos no equivalentes.
+- Aplicar sincronizacion transversal de forma progresiva y conservadora.
+- Evitar regresiones: toda regla util previa debe permanecer.
+- Propagar lateral y recursivamente solo abstracciones editoriales estables.
+- Priorizar identidad, estructura reusable, quality gates y grafo conceptual común.
+- Aplicar normalización manual al reutilizar salidas históricas no parseables.
+- Propagar lateral y arriba solo reglas generales validadas.
+- No propagar contenido tematico especifico de Filosofia a Seguridad Social.
+- Propagar identidad, gates de calidad, patron argumentativo y control bibliografico.
+- Mantener bandera de riesgo por historial de salidas no parseables en ciclos tempranos.
+- Aplicar compresion union-dedupe en cada ciclo para evitar regresion.
+- Ciclo 96 necesita normalizacion manual si se reutiliza.
+- Ciclo 97 necesita normalizacion manual si se reutiliza.
+- Ciclo 98 necesita normalizacion manual si se reutiliza.
+- Mantener reglas locales de Seguridad Social como prioridad de contexto.
+- Reutilizar gates institucionales de calidad en nodos compatibles.
+- Si aparece salida no parseable, ejecutar normalizacion manual antes de propagar.
+- Preservar trazabilidad de reglas provisionales con etiqueta [supuesto].
+- Propagar solo abstracciones editoriales estables entre materias no equivalentes.
 
 ## open_questions
 
@@ -253,3 +1707,399 @@
 - Confirmar norma de citacion requerida: APA, ISO, institucional o juridica mexicana [supuesto].
 - Confirmar si el origen Filosofia del Derecho Actividad 1 aporta reglas especificas o solo generales [supuesto].
 - Confirmar si datos personales de plantilla deben permanecer solo en nodo local [supuesto].
+- Confirmar norma de citacion exigida por la materia (APA, ISO o institucional) [supuesto].
+- Confirmar rubricas de evaluacion por actividad para calibrar profundidad argumentativa.
+- Confirmar productos exactos por semana en planeaciones locales.
+- Confirmar si existe formato institucional obligatorio adicional para portada [supuesto].
+- Verificar vigencia de todas las URLs normativas del .bib antes de entrega final.
+- Confirmar si el código local de curso LDE-S2B1 es oficial o interno [supuesto].
+- Confirmar norma de citación exigida por la materia (APA, ISO, institucional o jurídica mexicana) [supuesto].
+- Confirmar si todas las plantillas de Actividad 1 del README están materializadas y vigentes.
+- Verificar si persiste alguna fuente provisional heredada ajena a Derecho y depurarla [supuesto].
+- Confirmar norma de citacion exigida en la materia (APA, ISO, institucional o juridica mexicana) [supuesto].
+- Confirmar si el codigo local LDE-S2B1 es oficial en todas las plantillas [supuesto].
+- Confirmar si la fuente provisional heredada desde ingenieria sigue vigente para este nodo [supuesto].
+- Confirmar rubrica de evaluacion por actividad para ajustar profundidad argumentativa.
+- Confirmar si Actividad 1 requiere reporte, presentacion o ambos en esta materia.
+- Confirmar norma de citacion exigida por la materia [supuesto].
+- Confirmar si codigo local LDE-S2B1 se usa en todas las portadas [supuesto].
+- Confirmar si fuente provisional heredada desde ingenieria sigue vigente para Derecho [supuesto].
+- Confirmar rubrica oficial por actividad para ajustar profundidad argumentativa [supuesto].
+- Confirmar vigencia periodica de URLs legales en .bib local [supuesto].
+- Confirmar norma de citacion obligatoria de la materia (APA, ISO, institucional o juridica mexicana) [supuesto].
+- Confirmar si LDE-S2B1 es codigo oficial o etiqueta interna [supuesto].
+- Confirmar si la traza heredada desde ingenieria sigue vigente o debe desactivarse en Derecho [supuesto].
+- Confirmar rubricas especificas por actividad en planeaciones locales.
+- Verificar si hay fuentes obligatorias adicionales para jurisprudencia reciente en seguridad social.
+- Confirmar si codigo local LDE-S2B1 es oficial en todos los entregables [supuesto].
+- Confirmar datos de figura docente para plantillas de actividad cuando exista fuente oficial.
+- Verificar integridad del archivo .bib local mostrado de forma truncada en contexto [supuesto].
+- Confirmar si el codigo local LDE-S2B1 es oficial o interno [supuesto].
+- Confirmar norma de citacion exigida por materia (APA, ISO, institucional o juridica mexicana) [supuesto].
+- Confirmar nombre de figura docente para portada cuando exista dato oficial.
+- Confirmar vigencia de cualquier fuente provisional heredada desde nodos no juridicos [supuesto].
+- Confirmar norma de citacion requerida en la materia destino (APA, ISO o institucional) [supuesto].
+- Confirmar si cada actividad requiere .bib propio o solo extension del .bib central.
+- Confirmar rubrica oficial para calibrar profundidad argumentativa por actividad.
+- Confirmar datos faltantes de portada (figura docente) cuando exista fuente oficial.
+- Verificar si persiste alguna fuente heredada externa no juridica y depurar su uso [supuesto].
+- Confirmar si la referencia provisional heredada desde ingenieria sigue vigente en este nodo [supuesto].
+- Confirmar norma de citacion requerida por la materia (APA, ISO, institucional o juridica mexicana) [supuesto].
+- Confirmar datos oficiales de figura docente para plantilla.
+- Confirmar si Actividad 1 del destino exige reporte, presentacion o ambos.
+- Confirmar norma de citacion obligatoria de la materia (APA, ISO o institucional) [supuesto].
+- Confirmar si codigo local LDE-S2B1 debe figurar en todas las portadas [supuesto].
+- Confirmar nombre oficial de figura docente para plantillas activas [supuesto].
+- Verificar si existen consignas de Actividad 1 para ajustar artefacto inicial del destino.
+- Confirmar vigencia de fuentes provisionales heredadas de nodos no juridicos [supuesto].
+- Confirmar norma de citacion requerida en la materia (APA, ISO, institucional o juridica mexicana) [supuesto].
+- Confirmar si sigue vigente alguna fuente provisional heredada externa al dominio Derecho [supuesto].
+- Confirmar rubricas de evaluacion por actividad para calibrar profundidad argumentativa [supuesto].
+- Verificar si cada actividad exige reporte, presentacion u otro formato principal [supuesto].
+- Confirmar norma formal de citacion exigida por la materia (APA, ISO o institucional) [supuesto].
+- Confirmar si LDE-S2B1 es codigo oficial vigente del curso [supuesto].
+- Confirmar si la fuente provisional heredada desde ingenieria sigue aplicando al dominio Derecho [supuesto].
+- Confirmar plantilla oficial para figura docente cuando exista dato institucional.
+- Confirmar si existe norma de citacion obligatoria especifica para la materia [supuesto].
+- Confirmar rubrica oficial de evaluacion por actividad en esta materia.
+- Confirmar si el codigo local de curso LDE-S2B1 es oficial en documentos de entrega [supuesto].
+- Verificar vigencia de reglas provisionales heredadas desde nodos ajenos a Derecho [supuesto].
+- Confirmar rubrica de evaluacion por actividad para ajustar profundidad argumentativa [supuesto].
+- Confirmar si codigo local LDE-S2B1 es oficial en todas las plantillas [supuesto].
+- Confirmar datos de figura docente para portada cuando exista fuente oficial.
+- Verificar si persiste alguna fuente provisional heredada no juridica y depurarla [supuesto].
+- Confirmar si el codigo local LDE-S2B1 es oficial o solo interno [supuesto].
+- Confirmar norma de citacion exigida por la materia (APA, ISO, institucional o juridica) [supuesto].
+- Confirmar si todas las plantillas de Actividad-1 listadas en README existen fisicamente.
+- Confirmar dato oficial de figura docente para metadatos de portada [supuesto].
+- Confirmar si persiste alguna fuente provisional heredada desde nodos no juridicos [supuesto].
+- Confirmar norma de citacion exigida en la materia (APA, ISO o institucional) [supuesto].
+- Confirmar si LDE-S2B1 es codigo oficial o etiqueta local [supuesto].
+- Confirmar si cada actividad exige reporte, presentacion o ambos formatos.
+- Confirmar vigencia periodica de URLs legales en .bib del destino.
+- Confirmar datos faltantes de figura docente en plantillas.
+- Verificar si Actividad 1 de la materia requiere reporte, presentacion o ambos.
+- Revisar README/programa para detectar y limpiar cualquier marcador corrupto residual.
+- Confirmar si codigo local LDE-S2B1 sigue vigente en todos los artefactos [supuesto].
+- Validar si se requiere plantilla diferenciada por tipo de actividad en semana 1 [supuesto].
+- Confirmar dato oficial de figura docente para portada cuando exista.
+- Revisar periodicamente vigencia de URLs normativas en el .bib local.
+- Confirmar norma de citacion requerida en la materia (APA, ISO o institucional) [supuesto].
+- Verificar si existen nuevos criterios jurisprudenciales obligatorios en planeaciones locales.
+- Confirmar datos faltantes de plantilla (figura docente) cuando haya fuente oficial.
+- Validar que los archivos de Actividad-1 del README existan fisicamente en el repositorio local.
+- Confirmar norma de citacion exigida en la materia destino (APA, ISO, institucional o juridica mexicana) [supuesto].
+- Confirmar si existe rubrica oficial por actividad para ajustar profundidad argumentativa [supuesto].
+- Confirmar si hay criterios locales de jurisprudencia obligatoria por unidad [supuesto].
+- Verificar si persiste alguna fuente provisional heredada desde nodos no juridicos [supuesto].
+- Confirmar si LDE-S2B1 es codigo oficial operativo en todas las plantillas [supuesto].
+- Confirmar datos faltantes de figura docente para portada cuando exista fuente oficial.
+- Verificar vigencia de reglas provisionales heredadas de nodos no juridicos [supuesto].
+- Confirmar si LDE-S2B1 es codigo oficial o interno [supuesto].
+- Confirmar si persiste vigencia de fuente provisional heredada desde ingenieria [supuesto].
+- Confirmar rubrica especifica por actividad para ajustar profundidad argumentativa.
+- Confirmar si codigo local LDE-S2B1 es oficial o solo operativo [supuesto].
+- Confirmar si la regla heredada desde ingenieria sigue vigente para este destino [supuesto].
+- Verificar vigencia periodica de URLs normativas del .bib local.
+- Confirmar si sigue vigente una fuente provisional heredada desde ingenieria para este destino [supuesto].
+- Verificar nombres canonicos de plantillas de Actividad 1 en README contra archivos reales.
+- Confirmar dato oficial de figura docente para completar portada cuando aplique.
+- Confirmar si hay rubrica especifica por actividad para ajustar profundidad argumentativa [supuesto].
+- Confirmar si el codigo local LDE-S2B1 es oficial o solo operativo [supuesto].
+- Confirmar figura docente oficial para completar portada cuando aplique.
+- Confirmar si persiste alguna fuente provisional heredada de nodos no juridicos [supuesto].
+- Confirmar rubricas oficiales por actividad para ajustar profundidad argumentativa [supuesto].
+- Verificar vigencia semestral de enlaces normativos en el .bib local.
+- Confirmar datos faltantes de plantilla (figura docente) antes de cierre final.
+- Validar si persiste o se descarta la fuente provisional heredada de otro programa academico [supuesto].
+- Confirmar campos obligatorios de portada por actividad en planeaciones locales.
+- Verificar vigencia de fuentes provisionales heredadas externas a Derecho [supuesto].
+- Confirmar norma de citacion obligatoria del curso (APA, ISO, institucional o juridica mexicana) [supuesto].
+- Confirmar si el codigo local LDE-S2B1 debe figurar siempre en portada [supuesto].
+- Confirmar nombre oficial de figura docente para plantillas de actividad [supuesto].
+- Verificar vigencia de cualquier fuente provisional heredada de nodos no juridicos [supuesto].
+- Confirmar norma de citacion requerida por la materia [supuesto].
+- Confirmar si codigo local LDE-S2B1 se usa oficialmente en entregas [supuesto].
+- Confirmar vigencia de reglas provisionales heredadas de otros dominios [supuesto].
+- Confirmar uso obligatorio de plantillas de Actividad-1 ya listadas en README.
+- [supuesto] Confirmar norma de citacion exigida por la materia: APA, ISO o institucional.
+- [supuesto] Confirmar si LDE-S2B1 es codigo oficial vigente o solo etiqueta interna.
+- Confirmar si todas las plantillas de Actividad-1 ya existen y son canonicas en README.
+- Confirmar vigencia anual de referencias legales del .bib antes de entrega final.
+- Confirmar rubrica oficial de evaluacion por actividad para ajustar profundidad argumentativa [supuesto].
+- Confirmar si el codigo local LDE-S2B1 es oficial en todos los entregables [supuesto].
+- Confirmar vigencia de cualquier fuente provisional heredada de nodos no juridicos [supuesto].
+- Confirmar norma de citacion exigida por la materia (APA, ISO, institucional o juridica mexicana) [supuesto].
+- Confirmar datos faltantes de plantilla (figura docente) cuando exista fuente oficial.
+- Confirmar norma formal de citacion exigida en la materia (APA, ISO, institucional o juridica mexicana) [supuesto].
+- Confirmar si todas las actividades iniciales requieren reporte y presentacion o solo uno de los dos formatos.
+- Confirmar dato oficial de figura docente para plantilla cuando exista.
+- Confirmar si codigo local LDE-S2B1 debe figurar siempre en portada [supuesto].
+- Confirmar si la plantilla de Actividad 1 del destino ya es canon operativo.
+- Confirmar si existe rubrica oficial para ponderar analisis propio y evidencia.
+- Confirmar vigencia de reglas heredadas desde fuentes externas no juridicas [supuesto].
+- Confirmar norma de citacion exigida en la materia destino (APA, ISO o institucional) [supuesto].
+- Confirmar si actividad-1 del destino exige reporte, presentacion o ambos.
+- Verificar si persiste alguna fuente provisional heredada de nodos no juridicos [supuesto].
+- Confirmar norma de citacion exigida en la materia (APA, ISO o juridica mexicana) [supuesto].
+- Confirmar vigencia de toda fuente provisional heredada de nodos ajenos a Derecho [supuesto].
+- Confirmar si cada actividad requiere .bib propio o solo el central de materia.
+- Confirmar datos faltantes de figura docente en plantillas de actividad [supuesto].
+- Confirmar vigencia de cualquier fuente provisional heredada externa al campo juridico [supuesto].
+- Confirmar si todas las actividades usan reporte, presentacion o ambos formatos.
+- Confirmar rubrica oficial de evaluacion para granularidad argumentativa.
+- Confirmar si LDE-S2B1 es codigo oficial del curso en fuentes institucionales [supuesto].
+- Confirmar si la plantilla de Actividad 1 del destino exige secciones adicionales de rubrica [supuesto].
+- Confirmar nombre oficial de figura docente para metadatos de portada [supuesto].
+- Confirmar si codigo local LDE-S2B1 sigue vigente oficialmente [supuesto].
+- Confirmar si todos los archivos de Actividad-1 del README ya existen y son canon operable.
+- Confirmar si hay rubrica oficial por actividad para ajustar profundidad argumentativa.
+- Confirmar si la regla heredada desde ingenieria sigue vigente para Derecho [supuesto].
+- Confirmar campos oficiales faltantes de portada, incluida figura docente [supuesto].
+- Confirmar consignas exactas por actividad para ajustar tipo de producto.
+- Verificar si existe rubrica formal de evaluacion para modular profundidad argumentativa.
+- Confirmar si existe rubrica oficial de evaluacion por actividad en esta materia.
+- Confirmar norma de citacion requerida por docente (APA, ISO o institucional) [supuesto].
+- Confirmar si el codigo local LDE-S2B1 debe mantenerse como canon en todos los entregables [supuesto].
+- Confirmar si persiste alguna fuente heredada de otra carrera que deba depurarse [supuesto].
+- Verificar vigencia de reglas heredadas desde nodos no juridicos antes de nueva propagacion [supuesto].
+- Confirmar si cada actividad de Seguridad Social requiere .tex propio o reutiliza plantilla base.
+- Validar si existe rubrica oficial por actividad para ajustar profundidad argumentativa.
+- Confirmar norma de citacion exigida en la materia (APA, ISO, juridica mexicana o institucional) [supuesto].
+- Confirmar si codigo local LDE-S2B1 se usa oficialmente en entregables [supuesto].
+- Confirmar datos faltantes de figura docente para portada [supuesto].
+- Confirmar norma de citacion obligatoria de la materia destino [supuesto].
+- Confirmar si la plantilla de Actividad 1 del destino ya es canon operativo local [supuesto].
+- Confirmar si persiste vigencia de reglas provisionales heredadas de nodos no juridicos [supuesto].
+- Confirmar norma de citacion requerida en la materia [supuesto].
+- Confirmar si codigo local LDE-S2B1 es oficial o solo interno [supuesto].
+- Verificar vigencia de fuentes provisionales heredadas desde otros dominios [supuesto].
+- Validar si todas las plantillas de actividad de README ya existen en repositorio local.
+- Confirmar si sigue vigente la fuente provisional heredada desde ingenieria [supuesto].
+- Confirmar datos de figura docente para plantillas de portada.
+- Verificar consignas reales de Actividad 1 en planeaciones locales.
+- Validar si existen nuevos criterios jurisprudenciales obligatorios para citar.
+- Confirmar norma de citacion obligatoria de la materia [supuesto].
+- Confirmar si la fuente provisional heredada desde ingenieria sigue vigente [supuesto].
+- Verificar vigencia de fechas DOF en entradas legales antes de entrega final.
+- Confirmar rubricas de evaluacion por actividad para ajustar profundidad.
+- [supuesto] Confirmar norma de citacion requerida por la materia (APA, ISO o institucional).
+- [supuesto] Confirmar uso operativo del codigo local LDE-S2B1 en entregables.
+- Confirmar rubricas de evaluacion por actividad para ajustar profundidad argumentativa.
+- Confirmar si todas plantillas Actividad-1 del destino ya existen y son canonicas.
+- Confirmar norma de citacion requerida por la materia (APA, ISO, juridica mexicana o institucional) [supuesto].
+- Confirmar si codigo local LDE-S2B1 debe aparecer en todas las plantillas [supuesto].
+- Confirmar nombre oficial de figura docente para portada [supuesto].
+- Confirmar si existe rubrica transversal institucional para actividades de la materia [supuesto].
+- Confirmar si la alerta de fuente provisional heredada desde ingenieria sigue vigente para Derecho [supuesto].
+- Confirmar si la materia exige norma de citacion especifica (APA, ISO o institucional) [supuesto].
+- Confirmar vigencia de reglas heredadas desde nodos no juridicos [supuesto].
+- Confirmar campos institucionales pendientes en portada segun consigna local [supuesto].
+- Confirmar si cada actividad requiere .tex y presentacion dedicados o solo reporte [supuesto].
+- Confirmar si LDE-S2B1 es codigo oficial o etiqueta operativa interna [supuesto].
+- Confirmar datos oficiales faltantes de figura docente para plantillas.
+- Validar vigencia de alertas heredadas de ciclo 1 en nodos laterales.
+- Verificar si cada actividad requiere .tex dedicado ademas de plantilla base.
+- Confirmar norma de citacion requerida por la materia (APA, ISO o institucional) [supuesto].
+- Confirmar si todas plantillas de Actividad-1 del README ya existen en repositorio local.
+- Confirmar rubrica oficial de evaluacion por actividad en esta materia [supuesto].
+- Confirmar norma de citacion requerida (APA, ISO o institucional juridica) [supuesto].
+- Confirmar si Actividad 1 requiere reporte, presentacion o ambos.
+- Confirmar datos faltantes de plantilla (figura docente) cuando existan.
+- Verificar vigencia de fuentes provisionales heredadas de nodos no equivalentes [supuesto].
+- Confirmar norma de citacion obligatoria del destino (APA, ISO o institucional) [supuesto].
+- Confirmar datos faltantes de figura docente para plantillas activas.
+- Verificar vigencia de reglas provisionales heredadas desde otros dominios [supuesto].
+- Confirmar si sigue vigente la fuente provisional heredada desde ingenieria para este destino [supuesto].
+- Confirmar norma de citacion exigida por la materia: APA, ISO, institucional o juridica mexicana [supuesto].
+- Confirmar datos oficiales de figura docente para completar portada.
+- Confirmar si todas las actividades requieren reporte, presentacion o ambos productos.
+- Confirmar si existen lineamientos locales adicionales de jurisprudencia obligatoria por actividad.
+- Confirmar datos de figura docente para plantillas de portada [supuesto].
+- Confirmar si existe norma de citacion obligatoria adicional para la materia [supuesto].
+- Confirmar si codigo local LDE-S2B1 debe mantenerse en todas las plantillas [supuesto].
+- Confirmar si la fuente provisional heredada desde ingenieria sigue vigente para Derecho [supuesto].
+- Validar periodicamente vigencia de enlaces normativos en .bib local.
+- Confirmar si codigo local LDE-S2B1 se usa oficialmente en portadas [supuesto].
+- Verificar si persiste alguna fuente provisional heredada de otros dominios [supuesto].
+- Confirmar si la fuente provisional heredada externa a Derecho sigue vigente [supuesto].
+- Confirmar consigna exacta por actividad antes de fijar tipo de producto.
+- Confirmar si hay rubrica especifica adicional para profundidad argumentativa [supuesto].
+- Confirmar norma de citacion exigida por la materia (APA, ISO o juridica institucional) [supuesto].
+- Validar si todas las actividades requieren reporte, presentacion o ambos segun planeacion.
+- Verificar vigencia periodica de URLs normativas en el .bib local.
+- Confirmar si existe rubrica oficial por actividad en esta materia [supuesto].
+- Verificar nombre oficial de figura docente para plantilla [supuesto].
+- Confirmar si la alerta de fuente provisional externa sigue vigente en Derecho [supuesto].
+- Confirmar norma de citacion exigida en la materia (APA, ISO, institucional o juridica) [supuesto].
+- Confirmar si existe rubrica oficial por actividad para calibrar profundidad argumentativa [supuesto].
+- Confirmar datos faltantes de figura docente en plantillas [supuesto].
+- Verificar vigencia de reglas heredadas desde nodos no juridicos antes de reutilizacion transversal [supuesto].
+- Confirmar norma de citacion exigida en la materia destino [supuesto].
+- Confirmar si codigo local LDE-S2B1 sigue vigente en documentos oficiales [supuesto].
+- Confirmar si la fuente provisional heredada de ingenieria debe retirarse del destino [supuesto].
+- Confirmar rubricas especificas por actividad para ajustar profundidad argumentativa.
+- Confirmar si todas las plantillas de Actividad 1 del README ya estan materializadas.
+- Confirmar si figura docente debe permanecer como pendiente en plantillas base [supuesto].
+- Confirmar vigencia de fuentes provisionales heredadas de otros dominios antes de reutilizar [supuesto].
+- Confirmar dato oficial de figura docente para plantilla base [supuesto].
+- Verificar si toda regla provisional heredada desde otros dominios sigue vigente en Derecho [supuesto].
+- Confirmar si codigo local LDE-S2B1 es obligatorio en todas las portadas [supuesto].
+- Confirmar si actividad por actividad requiere .bib complementario o basta el .bib central.
+- Verificar si persiste la referencia provisional heredada desde otro dominio y depurarla [supuesto].
+- Validar si existen fuentes obligatorias por actividad en planeaciones no cargadas [supuesto].
+- Confirmar datos pendientes de figura docente en plantillas [supuesto].
+- Confirmar si la materia exige norma de citacion juridica especifica adicional [supuesto].
+- Confirmar si el codigo local LDE-S2B1 es oficial en todos los artefactos [supuesto].
+- Confirmar criterio institucional para manejo de datos personales en portadas [supuesto].
+- Confirmar rubrica de evaluacion especifica de la materia para ajustar profundidad argumentativa.
+- Confirmar si existe norma de citacion obligatoria adicional (APA, ISO o juridica mexicana) [supuesto].
+- Verificar estado completo y vigencia de notas en .bib local (entrada LISSSTE parece truncada) [supuesto].
+- Confirmar norma de citacion requerida en la materia (APA, institucional o juridica mexicana) [supuesto].
+- Confirmar si todas las plantillas de Actividad 1 del destino ya existen y son canon.
+- Confirmar si codigo local de curso LDE-S2B1 sigue vigente [supuesto].
+- Confirmar si toda plantilla de actividad inicial ya existe y es canonica en README.
+- Confirmar si persiste alguna fuente provisional heredada ajena a Derecho [supuesto].
+- Confirmar rubrica oficial para ajustar profundidad argumentativa por actividad.
+- Confirmar norma de citación exigida en la materia (APA, ISO, institucional o jurídica mexicana) [supuesto].
+- Confirmar si el código local LDE-S2B1 es oficial en todos los entregables [supuesto].
+- Confirmar campos obligatorios de portada para figura docente en actividades [supuesto].
+- Confirmar si toda actividad inicial requiere archivo específico -Actividad-1 en reporte y presentación.
+- Verificar vigencia de cualquier fuente provisional heredada de nodos no jurídicos [supuesto].
+- Confirmar rubrica vigente por actividad para ajustar profundidad argumentativa.
+- Confirmar si persiste alguna fuente provisional heredada no juridica para depuracion [supuesto].
+- Confirmar si codigo local LDE-S2B1 es oficial en toda la documentacion [supuesto].
+- Confirmar campos obligatorios de portada para cada actividad especifica [supuesto].
+- Confirmar si LDE-S2B1 es codigo oficial institucional o etiqueta local [supuesto].
+- Confirmar datos oficiales de figura docente para portada cuando existan.
+- Verificar vigencia periodica de URLs normativas en .bib local.
+- Confirmar si la figura docente debe permanecer como pendiente en plantillas base.
+- Validar vigencia de toda fuente provisional heredada ajena al dominio juridico.
+- Confirmar consignas de Actividad 1 en esta materia para ajustar granularidad estructural.
+- Confirmar si la fuente provisional heredada desde ingenieria sigue vigente en este nodo [supuesto].
+- Confirmar datos faltantes de plantilla (figura docente) para metadatos finales.
+- Confirmar criterios de evaluacion/rubrica por actividad para calibrar profundidad argumentativa.
+- Confirmar norma de citacion requerida en la materia destino (APA, ISO, institucional o juridica mexicana) [supuesto].
+- Confirmar si LDE-S2B1 es codigo oficial o solo etiqueta operativa [supuesto].
+- Confirmar si todas las plantillas de actividad inicial existen y son canonicas en el destino.
+- Verificar vigencia de reglas heredadas desde fuentes no juridicas aun marcadas como provisionales [supuesto].
+- Confirmar norma de citacion exigida en la materia [supuesto].
+- Confirmar rubrica oficial por actividad para calibrar profundidad argumentativa [supuesto].
+- Confirmar si codigo local LDE-S2B1 es oficial o interno [supuesto].
+- Confirmar dato de figura docente cuando exista fuente oficial [supuesto].
+- Confirmar si toda actividad requiere reporte, presentacion o ambos.
+- Confirmar si la fuente provisional heredada desde ingenieria debe retirarse por no pertinencia disciplinar [supuesto].
+- Confirmar norma de citacion exigida por la materia destino (APA, ISO, institucional o juridica mexicana) [supuesto].
+- Confirmar si la regla provisional heredada desde ingenieria sigue vigente en este nodo [supuesto].
+- Confirmar rubrica oficial por actividad para calibrar profundidad argumentativa.
+- Confirmar si cada actividad requiere reporte, presentacion o ambos formatos.
+- Confirmar figura docente oficial para plantillas de actividad [supuesto].
+- Verificar si persiste alguna fuente provisional heredada ajena a Derecho [supuesto].
+- Confirmar si se mantiene vigente la referencia heredada desde ingenieria [supuesto].
+- Confirmar rubricas por actividad para ajustar profundidad argumentativa [supuesto].
+- Confirmar si el codigo local de curso LDE-S2B1 es oficial o solo operativo [supuesto].
+- Confirmar si persiste alguna fuente provisional heredada de ingenieria y depurarla si no aplica [supuesto].
+- Confirmar si existe rubrica oficial por actividad para modular profundidad argumentativa [supuesto].
+- Confirmar datos faltantes de plantilla (figura docente u otros) [supuesto].
+- Confirmar vigencia de cualquier fuente provisional heredada de otros dominios [supuesto].
+- Definir dato oficial de figura docente para plantillas.
+- Validar si persiste alguna dependencia de fuente provisional heredada de otro programa [supuesto].
+- Confirmar datos oficiales de figura docente para portada cuando existan [supuesto].
+- Confirmar si codigo local LDE-S2B1 sigue vigente en plantillas [supuesto].
+- Verificar si las plantillas Actividad-1 ya existen y son canonicas en todos los artefactos.
+- Confirmar campos pendientes de portada (figura docente) para cierre operativo.
+- Validar vigencia periodica de URLs normativas en .bib local.
+- Confirmar si Actividad 1 de la materia exige reporte, presentacion o ambos.
+- Confirmar si existe rubrica oficial por actividad para ajustar profundidad argumentativa.
+- Confirmar dato oficial de figura docente para completar plantilla [supuesto].
+- Confirmar si el codigo local de curso LDE-S2B1 es oficial en todos los entregables [supuesto].
+- Confirmar si cada actividad requiere .tex dedicado o reutiliza plantilla base [supuesto].
+- Confirmar datos de figura docente para plantillas de actividad [supuesto].
+- Confirmar si actividades iniciales requieren reporte, presentacion o ambos productos.
+- Confirmar si codigo local LDE-S2B1 es oficial o solo etiqueta operativa [supuesto].
+- Confirmar si hay rubrica especifica por actividad en planeaciones locales [supuesto].
+- Confirmar norma de citación exigida en la materia destino [supuesto].
+- Confirmar rúbrica oficial por actividad para ajustar profundidad argumentativa [supuesto].
+- Confirmar uso obligatorio de plantillas Actividad-1 en reporte y presentación del destino [supuesto].
+- Confirmar si la figura docente debe quedar como pendiente en plantillas de Actividad 1.
+- Verificar vigencia de toda fuente provisional heredada desde nodos no juridicos [supuesto].
+- Confirmar norma de citacion obligatoria del destino (APA, ISO, institucional o juridica mexicana) [supuesto].
+- Verificar si cada actividad exige reporte, presentacion u otro formato principal.
+- Validar periodicidad de actualizacion de referencias legales vigentes (CPEUM, LSS, LISSSTE).
+- Confirmar si existe norma de citacion juridica especifica para esta materia [supuesto].
+- Confirmar si las plantillas Actividad-1 del destino ya son canon operativo.
+- Confirmar vigencia de cualquier fuente provisional heredada de nodos ajenos [supuesto].
+- Confirmar si se exige rubrica formal por actividad para ajustar profundidad argumentativa.
+- Confirmar si el codigo local LDE-S2B1 debe permanecer como metadato obligatorio [supuesto].
+
+## editorial_dna
+
+### esencia
+- Marco constitucional del derecho a la seguridad social en México.
+- Leyes e instituciones clave (IMSS, ISSSTE y régimen aplicable).
+- Principios de universalidad, progresividad, igualdad y no discriminación.
+- Jurisprudencia y criterios relevantes recientes.
+- Problemas actuales de acceso, cobertura y justiciabilidad.
+- Fundamento constitucional del derecho a la seguridad social en México.
+- Identidad institucional UnADM
+- Problema juridico
+- Marco normativo
+- Evidencia verificable
+- Analisis propio
+- Conclusion juridica transferible
+
+### razon_de_ser
+- Transformar cada consigna en un producto juridico verificable: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Marco constitucional del derecho a la seguridad social en México.
+- Leyes e instituciones clave (IMSS, ISSSTE y régimen aplicable).
+- Principios de universalidad, progresividad, igualdad y no discriminación.
+- Jurisprudencia y criterios relevantes recientes.
+- Problemas actuales de acceso, cobertura y justiciabilidad.
+- Fundamento constitucional del derecho a la seguridad social en México.
+- Tomar README de materia como canon de estructura editorial local.
+- Alinear cada entrega a los cinco ejes: problema, conceptos/norma, producto, analisis, conclusion.
+- Mantener consistencia entre reporte, presentacion y programa analitico.
+- Registrar en memoria solo reglas accionables y verificables.
+- Tomar el README de materia como canon de estructura editorial local.
+
+### identidad_estilistica
+- Frases directas y accionables.
+- Etiquetado explicito de [supuesto].
+- Separacion visible entre marco, analisis y cierre.
+- Cierre con utilidad profesional.
+- Mantener identidad institucional UnADM en tono, portada y metadatos.
+- Usar carpeta de materia como punto de entrada canonico.
+- Vincular entregas a Licenciatura en Derecho con datos curriculares oficiales del destino.
+- Marcar como [supuesto] todo dato no visible en consigna o fuente local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- No sobrescribir reglas validas previas; solo unir y deduplicar sin regresion.
+- Mantener identidad institucional UnADM en portada, metadatos y redaccion.
+- Usar datos curriculares oficiales de la materia: semestre 2, bloque 1, obligatoria, 8 creditos.
+
+### patrones_argumentativos
+- Delimitar problema y objetivo.
+- Exponer marco normativo y doctrinal.
+- Contrastar evidencia relevante.
+- Fijar postura propia sustentada.
+- Concluir con implicacion juridica practica.
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Organizar desarrollo en: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear formato final al producto pedido en planeacion semanal.
+- Mantener consistencia editorial entre reporte, presentacion y programa analitico.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Relacionar cada actividad con el campo de seguridad social cuando corresponda.
+
+### grafo_de_conocimiento
+- Conceptos: 1515
+- Citas: 5
+- Relaciones reforzadas: 675
+- Evidencias: 662
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social.tex`
+- Caracteres LaTeX preservados: 4775
+- Bloques/parrafos indexados: 40
+- Claves citadas: unadmSitioWeb, unadmMallaDerecho2024, cpeum2026, lss2026, lissste2026
+- Claves sin referencia: ninguna

@@ -1,0 +1,41 @@
+{
+  "mode": "editorial-memory-batch",
+  "status": "completed",
+  "source_scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+  "build_level": "materia",
+  "propagation_mode": "recursivo",
+  "iterations": 1,
+  "engines": [
+    "Codex"
+  ],
+  "max_tokens": 2000,
+  "timeout_seconds": 300,
+  "plan_scope_count": 7,
+  "start_scope_offset": 0,
+  "end_scope_offset": 2,
+  "next_scope_offset": 2,
+  "batch_size": 1,
+  "checkpoint_path": "D:\\Documentos\\LaTEX\\Template-Informe\\retroalimentacion-editorial\\aulatex\\editorial-memory\\checkpoints\\temp-filosofia-resume.json",
+  "batches": [
+    {
+      "scope_offset": 0,
+      "scope_limit": 1,
+      "processed_scopes": 1,
+      "ok": true,
+      "cancelled": false,
+      "run_dir": "D:\\Documentos\\LaTEX\\Template-Informe\\retroalimentacion-editorial\\aulatex\\editorial-memory\\runs\\20260621-041432-editorial-memory",
+      "manifest": "D:\\Documentos\\LaTEX\\Template-Informe\\retroalimentacion-editorial\\aulatex\\editorial-memory\\runs\\20260621-041432-editorial-memory\\manifest.json"
+    },
+    {
+      "scope_offset": 1,
+      "scope_limit": 1,
+      "processed_scopes": 1,
+      "ok": true,
+      "cancelled": false,
+      "run_dir": "D:\\Documentos\\LaTEX\\Template-Informe\\retroalimentacion-editorial\\aulatex\\editorial-memory\\runs\\20260621-041914-editorial-memory",
+      "manifest": "D:\\Documentos\\LaTEX\\Template-Informe\\retroalimentacion-editorial\\aulatex\\editorial-memory\\runs\\20260621-041914-editorial-memory\\manifest.json"
+    }
+  ],
+  "last_run_dir": "D:\\Documentos\\LaTEX\\Template-Informe\\retroalimentacion-editorial\\aulatex\\editorial-memory\\runs\\20260621-041914-editorial-memory",
+  "last_manifest": "D:\\Documentos\\LaTEX\\Template-Informe\\retroalimentacion-editorial\\aulatex\\editorial-memory\\runs\\20260621-041914-editorial-memory\\manifest.json"
+}

@@ -1,0 +1,30 @@
+{
+  "run_id": "20260621-041914",
+  "source_scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+  "build_level": "materia",
+  "propagation_mode": "recursivo",
+  "iterations": 1,
+  "engines": [
+    "Codex"
+  ],
+  "timeout_seconds": 300,
+  "scope_offset": 1,
+  "scope_limit": 1,
+  "full_plan_scope_count": 7,
+  "batch_scope_count": 1,
+  "built_scopes": [
+    "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-2"
+  ],
+  "cycles": [
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-2",
+      "scope_level": "actividad",
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8065
+    }
+  ],
+  "ok": true,
+  "cancelled": false
+}

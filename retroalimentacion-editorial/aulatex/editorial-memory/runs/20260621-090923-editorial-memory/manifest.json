@@ -1,0 +1,822 @@
+{
+  "run_id": "20260621-090923",
+  "source_scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+  "build_level": "interinstitucional",
+  "propagation_mode": "recursivo",
+  "iterations": 100,
+  "engines": [
+    "Codex"
+  ],
+  "timeout_seconds": 900,
+  "scope_offset": 9,
+  "scope_limit": 1,
+  "full_plan_scope_count": 461,
+  "batch_scope_count": 1,
+  "built_scopes": [
+    "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1"
+  ],
+  "cycles": [
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8860
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 2,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8303
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 3,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7691
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 4,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8112
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 5,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8519
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 6,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8547
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 7,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8147
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 8,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8494
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 9,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8687
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 10,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8400
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 11,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8545
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 12,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8699
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 13,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8066
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 14,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8406
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 15,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8506
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 16,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8726
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 17,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8228
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 18,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7930
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 19,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7880
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 20,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8576
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 21,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8605
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 22,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8489
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 23,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8729
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 24,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8473
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 25,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8253
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 26,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8199
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 27,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8676
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 28,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7985
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 29,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8099
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 30,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8578
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 31,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8860
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 32,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8123
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 33,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8376
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 34,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8300
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 35,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8448
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 36,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8394
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 37,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8660
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 38,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8054
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 39,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7863
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 40,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8500
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 41,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8322
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 42,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8548
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 43,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8438
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 44,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8416
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 45,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7999
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 46,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8522
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 47,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8285
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 48,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7916
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 49,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8295
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 50,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8307
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 51,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8422
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 52,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8146
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 53,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8386
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 54,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8117
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 55,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8738
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 56,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8214
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 57,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8213
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 58,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8393
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 59,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8169
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 60,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8381
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 61,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8534
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 62,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8227
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 63,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8543
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 64,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8676
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 65,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8916
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 66,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8104
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 67,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8341
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 68,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8359
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 69,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7896
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 70,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8576
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 71,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8276
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 72,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8302
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 73,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8479
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 74,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7543
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 75,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8300
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 76,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8394
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 77,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8617
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 78,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8576
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 79,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8378
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 80,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8225
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 81,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8474
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 82,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8681
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 83,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8510
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 84,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8224
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 85,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8578
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 86,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8558
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 87,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8173
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 88,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8063
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 89,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8019
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 90,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8436
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 91,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8536
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 92,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8714
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 93,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8241
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 94,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8588
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 95,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8063
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 96,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8343
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 97,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7905
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 98,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8489
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 99,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8460
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 100,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8176
+    }
+  ],
+  "ok": true,
+  "cancelled": false
+}

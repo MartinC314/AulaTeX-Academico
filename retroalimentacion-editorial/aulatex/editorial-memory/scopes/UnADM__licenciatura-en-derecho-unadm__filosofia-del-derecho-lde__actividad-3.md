@@ -60,6 +60,334 @@
 - Ciclo 20: mantener deduplicación semántica lossless sin recortar reglas útiles.
 - Ciclo 21: mantener deduplicacion semantica lossless sin recortar reglas utiles.
 - Ciclo 22: mantener deduplicacion semantica lossless sin recortar reglas utiles.
+- Se consolida memoria lateral para actividad-3 con base reusable de actividad-1.
+- Se preserva identidad UnADM y contexto curricular verificado en README y programa analítico.
+- Se mantiene normalización estructurada obligatoria antes de propagación recursiva.
+- Se refuerzan ejes editoriales estables: problema, conceptos/fuentes, análisis propio y conclusión jurídica.
+- Se mantiene política de supuestos: no inventar consigna, formato ni bibliografía específica de actividad-3.
+- Se deduplican reglas sin pérdida y sin regresión.
+- Se consolida memoria lateral de Actividad 3 con transferencia reusable desde Actividad 1.
+- Se refuerza la estructura base: problema, conceptos y fuentes, análisis propio y conclusión jurídica.
+- Se mantiene la regla de normalización: no propagar sin JSON parseable.
+- Se conserva política de supuestos para datos no confirmados en la consigna local.
+- Se evita traslado de conclusiones o bibliografía exclusiva de un hermano sin validación local.
+- Se consolida memoria lateral de actividad-3 con transferencia reusable desde actividad-1.
+- Se mantiene identidad UnADM, contexto curricular y ejes editoriales sin regresión.
+- Se preserva regla crítica: no propagar sin JSON parseable y estructura mínima completa.
+- Se aplica compresión lossless por deduplicación y unión de reglas válidas.
+- Se evita copiar conclusiones o bibliografía exclusiva entre nodos hermano.
+- Se consolida transferencia lateral reusable de Actividad 1 a Actividad 3 sin copiar contenido especifico.
+- Se preserva ADN UnADM: identidad institucional, integridad academica, citas verificables y cierre juridico propio.
+- Se mantiene compresion lossless por union y deduplicacion de reglas validas.
+- Se refuerza bloqueo de propagacion sin JSON parseable ni normalizacion previa.
+- Se conserva politica de supuestos cuando falte consigna local de Actividad 3.
+- Se consolida refuerzo lateral para actividad-3 con reglas reutilizables de actividad-1.
+- Se preserva identidad UnADM, contexto curricular y ejes editoriales sin recorte.
+- Se mantiene normalizacion JSON obligatoria antes de propagacion recursiva.
+- Se deduplican reglas por union lossless y se eliminan repeticiones literales.
+- Se evita transferir conclusiones especificas o bibliografia exclusiva no verificada para actividad-3.
+- Se consolida refuerzo lateral desde actividad-1 hacia actividad-3 sin copiar contenido especifico.
+- Se preservan reglas utiles previas y se deduplican por union lossless.
+- Se mantiene identidad UnADM, estructura argumentativa y control de calidad parseable.
+- Se conserva politica de supuestos para datos no confirmados de la consigna local.
+- Se mantiene separacion entre memoria editorial y evidencia academica.
+- Se refuerza normalización JSON obligatoria antes de propagación recursiva.
+- Se aplica compresión lossless por unión y deduplicación de reglas.
+- Se preserva política de supuestos cuando falte consigna local verificable.
+- Se consolida memoria lateral para actividad-3 con transferencia lossless por deduplicación.
+- Se refuerzan ejes editoriales reutilizables: problema, conceptos-fuentes, análisis propio y conclusión jurídica.
+- Se mantiene bloqueo de propagación cuando no haya JSON parseable.
+- Se conserva política de supuestos para datos no visibles en la consigna local.
+- Se consolida memoria lateral de actividad-3 con deduplicación lossless y sin recortes.
+- Se preserva ADN UnADM: identidad institucional, integridad académica y cierre jurídico con criterio propio.
+- Se refuerza regla crítica: no propagar sin JSON parseable y estructura mínima completa.
+- Se mantienen ejes editoriales recurrentes: problema, conceptos y fuentes, análisis propio, conclusión jurídica.
+- Se conserva política de supuestos para datos no confirmados de la consigna local.
+- Se consolida memoria lateral reusable de actividad-1 hacia actividad-3 sin copiar contenido específico.
+- Se refuerzan ejes estables: problema, conceptos y fuentes, análisis propio, conclusión jurídica.
+- Se mantiene política de supuestos cuando falte consigna local de actividad-3.
+- Se aplica compresión lossless por deduplicación y unión sin regresión.
+- Se consolida refuerzo lateral desde actividad-1 hacia actividad-3 con deduplicación lossless.
+- Se refuerzan ejes estables: problema, conceptos y fuentes, análisis propio y conclusión jurídica.
+- Se conserva regla de marcar supuestos cuando falte consigna local de actividad-3.
+- Se evita transferir conclusiones específicas y bibliografía exclusiva del nodo hermano.
+- Se aplica compresión lossless por unión y deduplicación sin eliminar reglas útiles.
+- Se mantiene política de supuestos para datos no visibles en consigna local.
+- Se evita traslado de conclusiones o bibliografía exclusiva de actividad-1.
+- Se consolida transferencia lateral desde actividad-1 a actividad-3 con deduplicacion lossless.
+- Se preserva identidad UnADM y contexto curricular verificado en README y programa analitico.
+- Se refuerzan ejes editoriales estables: problema, conceptos/fuentes, analisis propio y conclusion juridica.
+- Se mantiene normalizacion estructurada obligatoria antes de propagacion recursiva.
+- Se conserva politica de supuestos cuando falte consigna local de actividad-3.
+- Se consolida refuerzo lateral desde actividad-1 a actividad-3 sin copiar contenido específico.
+- Se preservan reglas útiles previas y se deduplican variantes ortográficas.
+- Se mantiene identidad UnADM, estructura argumentativa base y control de supuestos.
+- Se mantiene uso condicionado de bibliografía clean de Semana 7 como supuesto hasta validar consigna local.
+- Se consolida memoria lateral de actividad-3 con transferencia reutilizable desde actividad-1.
+- Se preserva identidad UnADM y contexto curricular validado en README y programa analítico.
+- Se aplica deduplicación lossless sin eliminar reglas útiles previas.
+- Se corrigen supuestos de archivos canónicos por token Slug no expandido en README.
+- Se aplica compresión lossless por unión y deduplicación sin recorte de reglas útiles.
+- Supuesto: la consigna específica de actividad-3 no está visible en los insumos.
+- Se consolida refuerzo lateral para actividad-3 con deduplicación lossless y sin regresión.
+- Se mantienen ejes editoriales estables: problema, conceptos/fuentes, análisis propio y conclusión jurídica.
+- Se mantiene regla crítica: normalizar y validar JSON parseable antes de propagación recursiva.
+- Se conserva política de supuestos: no inventar consigna, formato ni bibliografía específica de actividad-3.
+- Se mantiene compresion lossless por union y deduplicacion.
+- Se preservan identidad UnADM, ejes editoriales y control de calidad sin regresion.
+- Se refuerza bloqueo de propagacion si no hay JSON parseable.
+- Se mantienen supuestos explicitos cuando falte consigna local.
+- Se mantienen ejes editoriales estables: problema, conceptos y fuentes, análisis propio y conclusión jurídica.
+- Se refuerza normalización estructurada obligatoria antes de propagación recursiva.
+- Se refuerzan ejes editoriales estables: problema, conceptos-fuentes, analisis propio y conclusion juridica.
+- Se mantiene regla de normalizacion estructurada previa a toda propagacion recursiva.
+- Se aplica compresion lossless por union y deduplicacion sin eliminar reglas utiles.
+- Se conserva condicion: bibliografia clean de Semana 7 solo aplica si coincide con consigna local [supuesto].
+- Se preserva identidad UnADM y contexto curricular confirmado en README y programa analitico.
+- Se refuerzan ejes editoriales reutilizables: problema, conceptos y fuentes, analisis propio, conclusion juridica.
+- Se mantiene regla critica: no propagar sin JSON parseable y estructura minima valida.
+- Se mantiene politica de supuestos para datos no visibles en consigna local de actividad-3.
+- Se evita copiar conclusiones o bibliografia exclusiva del nodo hermano sin verificacion local.
+- Memoria lateral de actividad-3 consolidada con deduplicación lossless y sin regresión.
+- Se consolida transferencia lateral desde actividad-1 a actividad-3 con deduplicación lossless.
+- Se refuerzan ejes editoriales reutilizables: problema, conceptos/fuentes, análisis propio y conclusión jurídica.
+- Se mantiene regla crítica: no propagar sin JSON parseable y sin normalización estructurada.
+- Se conserva política de supuestos para datos no visibles en la consigna local de actividad-3.
+- Se consolida memoria lateral de actividad-3 con transferencia reusable desde actividad-1 sin copiar contenido específico.
+- Se preserva identidad UnADM y contexto curricular verificado: semestre 1, bloque 2, obligatoria, 8 créditos.
+- Se mantiene normalización estructurada obligatoria y bloqueo por salida no JSON parseable.
+- Se refuerzan ejes estables: problema, conceptos y fuentes, análisis propio, conclusión jurídica transferible.
+- Se aplica compresión lossless por deduplicación y no regresión de reglas útiles.
+- Se mantiene identidad UnADM y contexto curricular verificado en README y programa analítico.
+- Se preservan ejes editoriales: problema, conceptos/fuentes, análisis propio y conclusión jurídica.
+- Se refuerza normalización estructurada y bloqueo de propagación sin JSON parseable.
+- Se evita trasladar conclusiones o bibliografía exclusiva de un hermano sin verificación local.
+- Se consolida memoria lateral reusable de actividad-1 hacia actividad-3 sin copiar redaccion literal.
+- Se preservan reglas institucionales UnADM, estructura argumentativa y compuertas de calidad.
+- Se refuerza normalizacion JSON obligatoria antes de propagacion recursiva.
+- Se mantiene deduplicacion lossless por union y sin regresion de reglas utiles.
+- Se marca como supuesto toda ausencia de consigna local de actividad-3.
+- Se consolida refuerzo lateral desde actividad-1 a actividad-3 con deduplicacion lossless.
+- Se preserva identidad UnADM, contexto curricular y ejes editoriales nucleares.
+- Se mantiene regla critica: no propagar sin JSON parseable y estructura minima validada.
+- Se transfieren solo patrones reutilizables; no se copian conclusiones ni bibliografia exclusiva.
+- Se refuerza politica de supuestos para datos no visibles en consigna local.
+- Se mantiene regla crítica: no propagar sin JSON parseable y estructura mínima completa.
+- Se deduplican reglas sin pérdida y sin recorte funcional.
+- Se preserva identidad UnADM, contexto curricular y ejes editoriales sin regresión.
+- Se aplica deduplicación lossless: unión de reglas válidas sin recorte semántico.
+- Se evita copiar conclusiones específicas o bibliografía exclusiva no confirmada para Actividad 3.
+- Se consolida refuerzo lateral desde actividad-1 a actividad-3 con deduplicación lossless.
+- Se preservan reglas útiles previas sin regresión ni copia literal de contenidos específicos.
+- Se mantiene núcleo editorial: problema, conceptos y fuentes, análisis propio y conclusión jurídica transferible.
+- Se refuerza normalización obligatoria: bloquear propagación si no hay JSON parseable.
+- Se mantiene política de supuestos para datos no confirmados en la consigna local.
+- Se consolida memoria lateral reusable de actividad-1 hacia actividad-3 con deduplicacion lossless.
+- Se preservan reglas nucleares: identidad UnADM, estructura editorial minima, calidad de evidencia y cierre juridico propio.
+- Se refuerza normalizacion obligatoria: no propagar sin JSON parseable y estructura completa.
+- Se mantiene politica de supuestos para datos no confirmados de actividad-3.
+- Se corrige alcance bibliografico: filosofia-del-derecho-clean.bib es contextual a interpretacion juridica (Semana 7) y su uso en actividad-3 queda condicionado.
+- Se consolida refuerzo lateral desde actividad-1 hacia actividad-3 con deduplicacion lossless.
+- Se preserva identidad UnADM, contexto curricular y ejes editoriales comunes de la asignatura.
+- Se mantiene regla critica: no propagar sin JSON parseable y sin normalizacion previa.
+- Se transfiere solo patron reusable, sin copiar conclusiones ni bibliografia exclusiva del hermano.
+- Se mantiene politica de supuestos para todo dato no confirmado en consigna local.
+- Se mantiene normalización JSON obligatoria antes de propagación recursiva.
+- Se aplica compresión lossless por unión y deduplicación sin recorte útil.
+- Se marcan como supuesto los datos locales no confirmados de la consigna de actividad-3.
+- Se consolida memoria lateral de actividad-3 con transferencia reusable desde actividad-1 sin copiar contenido especifico.
+- Se preserva identidad UnADM, contexto curricular y ejes editoriales nucleares de la asignatura.
+- Se mantiene regla de normalizacion estructurada y bloqueo de propagacion sin JSON parseable.
+- Se refuerza deduplicacion lossless por union de reglas equivalentes sin recorte semantico.
+- Se mantiene politica de supuestos para datos no visibles en consigna local.
+- Se refuerzan ejes editoriales estables: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Supuesto: la consigna específica de actividad-3 aún no está confirmada localmente.
+- Se mantiene compresión lossless por unión y deduplicación sin recorte de reglas útiles.
+- Se refuerza identidad UnADM, estructura argumentativa y control de supuestos.
+- Se preserva bloqueo de propagación ante salida no JSON parseable.
+- Se normaliza referencia canónica de bibliografía por Slug: filosofia-del-derecho.bib [supuesto verificado por README con token].
+- Se consolida refuerzo lateral de actividad-1 a actividad-3 con deduplicacion lossless.
+- Se mantiene regla critica: no propagar sin JSON parseable y estructura minima completa.
+- Se refuerzan ejes estables: problema, conceptos y fuentes, analisis propio, conclusion juridica transferible.
+- Se conserva distincion entre memoria editorial provisional y evidencia academica.
+- Se preservan reglas institucionales UnADM, estructura mínima y control de supuestos.
+- Se refuerza bloqueo por salida no JSON parseable antes de propagación recursiva.
+- Se mantiene que bibliografía de Semana 7 es de uso condicionado para actividad-3 [supuesto].
+- Se evita copiar conclusiones o redacción específica entre actividades hermanas.
+- Se mantiene uso de supuestos cuando falte consigna local.
+- Se consolida refuerzo lateral de actividad-1 hacia actividad-3 con deduplicacion lossless.
+- Se mantienen ejes editoriales estables: problema, conceptos/fuentes, analisis propio y conclusion juridica.
+- Se mantiene bloqueo de propagacion cuando no hay JSON parseable.
+- Se refuerza que datos no visibles en consigna se marcan como [supuesto].
+- Se evita transferir conclusiones especificas o bibliografia exclusiva entre actividades hermanas.
+- Se conserva política de supuestos para datos no visibles en la consigna.
+- Se aplica deduplicación lossless de reglas y patrones argumentativos.
+- Se consolida refuerzo lateral de Actividad 1 hacia Actividad 3 con deduplicación lossless.
+- Se preserva ADN UnADM: identidad institucional, integridad académica, citas verificables y cierre jurídico propio.
+- Se refuerzan ejes estables: problema, conceptos/fuentes, análisis propio y conclusión jurídica transferible.
+- Supuesto: falta consigna textual específica de actividad-3; no se fijan contenidos cerrados.
+- Se mantiene deduplicacion lossless y control de no regresion.
+- Se transfieren patrones, no redacciones ni conclusiones especificas entre hermanos.
+- Se mantienen supuestos explicitos donde falta consigna local de actividad-3.
+- Se consolida memoria lateral de Actividad 3 con transferencia reutilizable desde Actividad 1.
+- Se preserva identidad UnADM, contexto curricular y pauta editorial sin regresiones.
+- Se conserva política de supuestos para datos no confirmados en consigna local.
+- Se deduplican reglas por unión lossless, sin recorte de reglas útiles.
+- Se aplica compresión lossless por deduplicación, sin recorte de reglas útiles.
+- Se corrigen supuestos técnicos: token Slug sin expandir y posible ruta con caracteres anómalos en README.
+- Se mantiene regla crítica de normalización JSON parseable antes de propagación recursiva.
+- Se conserva política de supuestos para datos no visibles en consigna local.
+- Se preserva identidad UnADM y contexto curricular verificado: semestre 1, bloque 2, obligatoria, 8 creditos.
+- Se refuerza normalizacion estructurada obligatoria y bloqueo de propagacion sin JSON parseable.
+- Se mantienen ejes editoriales estables: problema, conceptos y fuentes, analisis propio, conclusion juridica transferible.
+- Se conserva politica de supuestos para datos no visibles en consigna local.
+- Se mantiene deduplicacion lossless y no regresion de reglas utiles.
+- Se preservan ejes editoriales estables: problema, conceptos y fuentes, analisis propio y conclusion juridica.
+- Se refuerza identidad UnADM y contexto curricular verificado en README y programa analitico.
+- Se aplica deduplicacion lossless sin eliminar reglas utiles previas.
+- Se mantiene uso condicionado de bibliografia depurada de Semana 7 como supuesto hasta confirmar consigna local.
+- Se consolida memoria lateral de actividad-3 con reglas reutilizables de actividad-1.
+- Se mantiene identidad UnADM y contexto curricular verificado en README y programa analitico.
+- Se preservan ejes editoriales estables: problema, conceptos/fuentes, analisis propio y conclusion juridica.
+- Se mantiene politica de supuestos para datos no visibles en la consigna local.
+- Se consolida memoria lateral para actividad-3 con transferencia reusable desde actividad-1, sin copiar contenido especifico.
+- Se refuerzan ejes editoriales estables: problema, conceptos/fuentes, analisis propio y conclusion juridica transferible.
+- Se mantiene normalizacion estructurada obligatoria y bloqueo de propagacion sin JSON parseable.
+- Se aplico deduplicacion lossless y no regresion de reglas utiles.
+- Se marca como supuesto toda inferencia no confirmada por consigna local de actividad-3.
+- Se refuerzan ejes editoriales estables: problema, conceptos y fuentes, análisis propio, conclusión jurídica transferible.
+- Se mantiene política de supuestos para toda ausencia de consigna local.
+- Se preservan reglas institucionales UnADM, estructura base y calidad sin regresión.
+- Se aplica deduplicación lossless y se mantienen supuestos cuando falta consigna local.
+- Se mantiene regla crítica: no propagar memorias sin JSON parseable y sin normalización previa.
+- Se evita traslado de conclusiones específicas o bibliografía exclusiva entre actividades hermanas.
+- Se refuerza transferencia por patrones reutilizables: estructura, calidad, trazabilidad y LaTeX/BibTeX.
+- Memoria lateral consolidada para actividad-3 con deduplicación lossless desde actividad-1.
+- Se evita transferencia de redacción literal, conclusiones específicas y bibliografía exclusiva de actividad-1.
+- Se refuerzan ejes editoriales estables: problema, conceptos y fuentes, análisis propio, conclusión jurídica.
+- Se aplica compresión lossless por unión y deduplicación sin recorte.
+- Se conservan supuestos explícitos cuando falta consigna local de actividad-3.
+- Supuesto: la consigna específica de actividad-3 no está visible en el contexto entregado.
+- Se consolida memoria lateral reutilizable de actividad-1 a actividad-3 sin copiar contenido específico.
+- Se refuerza núcleo editorial: problema, conceptos y fuentes, análisis propio y conclusión jurídica.
+- Supuesto: la consigna específica de actividad-3 no está visible; se mantiene plantilla base.
+- Se consolida memoria lateral de actividad-3 con patrones reutilizables de actividad-1.
+- Se aplica deduplicación lossless sin recorte de reglas útiles.
+- Supuesto: la consigna específica de actividad-3 sigue no visible localmente.
+- Se preservan ejes editoriales estables: problema, conceptos y fuentes, análisis propio y conclusión jurídica.
+- Se refuerza regla de normalización: no propagar si la salida no es JSON parseable.
+- Se mantiene compresión lossless por unión y deduplicación sin recorte.
+- Se marca como supuesto toda inferencia no confirmada por consigna local de Actividad 3.
+- Se preservan reglas institucionales UnADM, estructura base y control de calidad sin regresiones.
+- Se aplica deduplicacion lossless y se eliminan redundancias formales, no contenido util.
+- Se refuerza politica de supuestos para datos no visibles en la consigna local.
+- Se mantiene regla dura: no propagar sin JSON parseable y estructura mínima completa.
+- Se conserva política de supuestos: no inventar consigna, formato ni bibliografía específica.
+- Se preserva ADN UnADM: identidad institucional, integridad académica, citas verificables y conclusión jurídica propia.
+- Se mantiene compresión lossless por deduplicación y no regresión de reglas útiles.
+- Se refuerza la normalización estructurada obligatoria antes de propagación recursiva.
+- Se conserva regla critica: no propagar sin JSON parseable ni estructura minima valida.
+- Se evita transferencia de redaccion literal, conclusiones especificas y bibliografia exclusiva del hermano.
+- Se consolida memoria de actividad-3 con transferencia lateral reutilizable desde actividad-1.
+- Se preservan reglas institucionales UnADM, estructura base y control de calidad sin regresión.
+- Se deduplica de forma lossless y se mantiene normalización JSON obligatoria antes de propagar.
+- Se refuerza política de supuestos para datos no visibles en la consigna local.
+- Se evita copiar conclusiones específicas o bibliografía exclusiva de un hermano.
+- Se aplica deduplicación lossless sin recortar reglas útiles previas.
+- Se refuerza deduplicación lossless por unión de reglas equivalentes.
+- Se mantiene política de supuestos para datos no visibles en la consigna local.
+- Se consolida memoria de actividad-3 con transferencia lateral controlada desde actividad-1.
+- Se preservan reglas útiles previas y se elimina duplicidad por unión-deduplicación lossless.
+- Se refuerza identidad UnADM, estructura argumentativa y control de calidad parseable.
+- Se mantiene separación entre evidencia académica y antecedentes editoriales provisionales.
+- Supuesto: la consigna específica de actividad-3 no está visible y requiere confirmación local.
+- Se consolida refuerzo lateral para actividad-3 con transferencia de patrones reutilizables desde actividad-1.
+- Se preservan ejes editoriales estables: problema, conceptos/fuentes, análisis propio y conclusión jurídica.
+- Se refuerza política de supuestos para datos no visibles en consigna local.
+- Se conservan ejes editoriales estables: problema, conceptos/fuentes, análisis propio y conclusión jurídica.
+- Se mantiene política de supuestos para datos no confirmados de la consigna local.
+- Se refuerza memoria lateral de actividad-3 con patrones reutilizables de actividad-1.
+- Se conserva identidad UnADM, contexto curricular y ejes editoriales comunes.
+- Se mantiene compresion lossless por deduplicacion y sin regresion de reglas utiles.
+- Se bloquea propagacion si no hay JSON parseable o estructura minima valida.
+- Supuesto: falta consigna local completa de actividad-3; no se fijan contenidos especificos.
+- Se consolida refuerzo lateral para actividad-3 con deduplicacion lossless y sin regresion.
+- Se preservan reglas nucleares: identidad UnADM, estructura argumentativa y control de calidad JSON.
+- Se transfieren solo patrones reutilizables desde actividad-1, sin copiar conclusiones ni bibliografia exclusiva.
+- Se mantienen ejes editoriales estables: problema, conceptos y fuentes, analisis propio y conclusion juridica.
+- Se aplica compresion lossless por deduplicacion y sin regresion de reglas utiles.
+- Supuesto: la consigna especifica de actividad-3 no esta confirmada localmente.
+- Se mantiene identidad UnADM, contexto curricular y pauta editorial sin regresión.
+- Se deduplica memoria por unión lossless, sin recorte semántico.
+- Memoria de actividad-3 consolidada con transferencia lateral reutilizable desde actividad-1.
+- Se mantiene política de supuestos cuando falte consigna local o rúbrica específica.
+- Se mantiene uso condicionado de bibliografía depurada de Semana 7 como supuesto hasta confirmación local.
+- Se mantiene regla critica: no propagar sin JSON parseable y sin estructura minima completa.
+- Se mantiene deduplicacion lossless por union de reglas sin recorte de contenido util.
+- Se refuerzan ejes editoriales reutilizables: problema, conceptos y fuentes, análisis propio y conclusión jurídica.
+- Se evita transferencia de redacción literal, conclusiones específicas y bibliografía exclusiva de un hermano.
+- Se preservan reglas válidas previas sin regresión y con deduplicación lossless.
+- Se mantiene bloqueo de propagación para salidas no JSON parseables.
+- Se evita trasladar conclusiones o bibliografía exclusiva no verificada entre hermanos.
+- Se preservan reglas utiles previas y se deduplican variantes ortograficas.
+- Se mantiene prioridad de normalizacion JSON antes de propagacion recursiva.
+- Se refuerzan ejes estables: problema, conceptos y fuentes, analisis propio, conclusion juridica.
+- Se conserva politica de supuestos para datos no visibles en la consigna local.
+- Se mantiene política de supuestos cuando falte consigna local.
+- Se preservan reglas institucionales, estructurales y de calidad sin regresión.
+- Se aplica deduplicación lossless y se eliminan duplicados literales.
+- Se mantiene política de supuestos para datos no confirmados localmente.
+- Se refuerza bloqueo de propagación ante salida no JSON parseable.
+- Se mantiene foco editorial: problema, conceptos y fuentes, análisis propio, conclusión jurídica.
+- Se consolida refuerzo lateral para Actividad 3 con deduplicación lossless.
+- Se preservan reglas válidas de identidad UnADM, estructura argumentativa y calidad.
+- Se mantiene bloqueo de propagación cuando no hay JSON parseable.
+- Se refuerza uso de README y programa analítico como anclaje canónico.
+- Se mantiene cautela: bibliografía clean corresponde a Semana 7 y su uso en Actividad 3 queda como supuesto.
+- Se consolida refuerzo lateral desde actividad-1 hacia actividad-3 sin copiar contenido específico.
+- Se mantiene normalización estructurada obligatoria y bloqueo por JSON no parseable.
+- Se aplica compresión lossless por deduplicación y unión, sin regresión de reglas útiles.
+- Se consolida memoria lateral de Actividad 3 con deduplicación lossless y sin regresión.
+- Se preserva identidad UnADM y contexto curricular confirmado por README y programa analítico.
+- Se mantiene regla crítica: bloquear propagación sin JSON parseable.
+- Se corrige transferencia: no copiar conclusiones ni bibliografía exclusiva de nodo hermano.
+- Se preserva normalización obligatoria: sin JSON parseable no hay propagación.
+- Se restringe transferencia a patrones generales; sin copiar conclusiones ni bibliografía exclusiva del nodo hermano.
+- Memoria lateral consolidada para actividad-3 con deduplicación lossless.
+- Se consolida refuerzo lateral desde actividad-1 hacia actividad-3 sin copiar redacción específica.
+- Se mantiene compresión lossless por deduplicación y normalización JSON obligatoria.
+- Se mantiene separación entre memoria editorial y evidencia académica.
+- Se consolida refuerzo lateral desde actividad-1 hacia actividad-3 sin copiar conclusiones especificas.
+- Se mantiene regla critica: normalizar estructura y bloquear propagacion sin JSON parseable.
+- Se refuerzan ejes recurrentes: problema, conceptos y fuentes, analisis propio y conclusion juridica.
+- Se conserva deduplicacion lossless por union y sin regresion de reglas utiles.
+- Se consolida memoria lateral para actividad-3 con transferencia reusable desde actividad-1.
+- Se refuerzan ejes editoriales estables: problema, conceptos y fuentes, analisis propio y conclusion juridica.
+- Se consolida transferencia lateral desde actividad-1 a actividad-3 sin copiar contenidos específicos.
+- Se preservan reglas institucionales UnADM, estructura base y compresión lossless por deduplicación.
+- Se refuerza bloqueo por JSON no parseable y normalización obligatoria antes de propagación recursiva.
+- Se conserva separación entre evidencia académica y antecedentes editoriales provisionales.
+- Se refuerza política de supuestos para datos no confirmados de actividad-3.
+- Se corrige alcance: transferir patrones reutilizables, no conclusiones ni bibliografía exclusiva.
+- Se mantiene bloqueo de propagación ante salidas no JSON parseable y exigencia de normalización previa.
+- Se consolidan reglas reutilizables de actividad-1 hacia actividad-3 sin copiar conclusiones ni redaccion literal.
+- Se refuerzan ejes estables: problema, conceptos y fuentes, analisis propio y conclusion juridica transferible.
+- Supuesto: la consigna especifica de actividad-3 aun no esta confirmada.
+- Se conserva identidad UnADM y contexto curricular validado en README y programa analitico.
+- Se consolidan ejes estables: problema, conceptos/fuentes, analisis propio y conclusion juridica.
+- Se corrige lectura de rutas con tokens y caracteres anommalos del README como incidencia tecnica.
+- Se mantiene bloqueo de propagación sin JSON parseable y normalización previa obligatoria.
+- Se evita transferencia de conclusiones específicas o bibliografía exclusiva del nodo hermano.
+- Se agrega control de supuestos para datos no confirmados de actividad-3.
+- Se preservan reglas institucionales, estructurales, de calidad, LaTeX y bibliografía sin regresión.
+- Se mantiene la normalización obligatoria: no propagar ni guardar memoria si no hay JSON parseable.
+- Se mantiene política de supuestos para datos no visibles en la consigna de actividad-3.
+- Se refuerzan ejes editoriales estables: problema, conceptos y fuentes, análisis propio y conclusión jurídica.
+- Supuesto: la consigna específica de actividad-3 sigue no visible y requiere confirmación local.
+- Se consolida refuerzo lateral reusable de actividad-1 hacia actividad-3 sin copiar redacción específica.
+- Se refuerza regla crítica: normalizar y validar JSON antes de propagación recursiva.
+- Se mantiene compresión lossless por unión y deduplicación sin regresión de reglas útiles.
+- Supuesto: la consigna concreta de actividad-3 aún no está visible localmente.
 
 ## identity_rules
 
@@ -92,6 +420,103 @@
 - Fuente provisional: Codex desde Actividad 1
 - Fuente provisional de propagación: actividad-1.
 - Fuente provisional de propagacion: actividad-1.
+- Mantener identidad institucional UnADM en tono y formato.
+- Vincular actividad-3 a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Usar la carpeta de asignatura como punto de entrada canónico.
+- Marcar como supuesto cualquier dato no visible en la consigna local.
+- Tratar memorias Codex/GPT-Pro como antecedente editorial provisional, no como fuente académica.
+- Citar malla-curricular-derecho-unadm.pdf solo para ubicación curricular.
+- Mantener identidad institucional UnADM en tono, formato y criterios académicos.
+- Vincular la actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Usar la carpeta de asignatura como entrada canónica.
+- Marcar como supuesto todo dato no visible en la consigna de Actividad 3.
+- Tratar memorias editoriales Codex o GPT-Pro como antecedentes provisionales, no como fuentes académicas.
+- Usar malla-curricular-derecho-unadm.pdf solo para ubicación curricular.
+- Mantener identidad institucional UnADM en tono, formato y trazabilidad.
+- Alinear actividad con Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Usar carpeta de asignatura como punto de entrada canonico.
+- Marcar como supuesto todo dato no visible en la consigna local.
+- Tratar memorias editoriales heredadas como antecedente provisional, no como fuente academica.
+- Usar malla-curricular-derecho-unadm.pdf solo para ubicacion curricular.
+- Vincular la actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Usar la carpeta de asignatura como punto de entrada canonico.
+- Tratar memorias editoriales Codex/GPT-Pro como antecedente provisional, no como fuente academica.
+- Citar malla-curricular-derecho-unadm.pdf solo para ubicacion curricular.
+- Vincular actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Usar carpeta de asignatura como entrada canonica.
+- Tratar memorias heredadas no verificadas como antecedente provisional.
+- No usar antecedentes editoriales como fuente academica.
+- Vincular actividad con Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Tratar memorias editoriales heredadas como antecedente provisional, no como fuente académica.
+- Marcar como supuesto todo dato no confirmado en la consigna local.
+- Tratar memorias Codex o GPT-Pro como antecedente editorial provisional, no como fuente académica.
+- Marcar como [supuesto] todo dato no visible en la consigna local.
+- Usar carpeta de asignatura como entrada canónica.
+- Tratar memorias editoriales no verificadas como antecedentes provisionales, no como fuentes académicas.
+- Tratar memorias editoriales Codex/GPT-Pro como antecedentes provisionales, no como fuentes académicas.
+- Vincular actividad-3 a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Tratar memorias Codex/GPT-Pro como antecedente editorial provisional, no como fuente academica.
+- Registrar incidencias de parseo como trazabilidad técnica, no como evidencia disciplinar.
+- Marcar como [supuesto] todo dato no confirmado en consigna local.
+- Alinear la actividad con Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- No usar memoria editorial como fuente academica.
+- Tratar memorias editoriales Codex o GPT-Pro como antecedente provisional, no como fuente academica.
+- Usar carpeta de asignatura como punto de entrada canónico.
+- Marcar como [supuesto] cualquier dato no visible en la consigna local.
+- Tratar memorias editoriales Codex/GPT-Pro como antecedente provisional, no como fuente académica.
+- Alinear actividad-3 con Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Marcar como supuesto todo dato no confirmado por consigna local.
+- Vincular la actividad a Licenciatura en Derecho y asignatura Filosofía del Derecho.
+- Usar ubicación curricular verificada: semestre 1, bloque 2, obligatoria, 8 créditos.
+- Marcar como [supuesto] cualquier dato no confirmado en la consigna local.
+- Vincular actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Usar la carpeta de asignatura como entrada canonica.
+- Marcar como supuesto todo dato no confirmado en consigna local.
+- Tratar memoria editorial heredada como antecedente provisional, no como fuente academica.
+- Tratar memorias editoriales Codex/GPT-Pro como antecedentes provisionales, no como fuentes academicas.
+- Marcar como supuesto cualquier dato no confirmado localmente.
+- Alinear la actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Marcar como supuesto todo dato no visible en consigna local.
+- Vincular actividad con Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Tratar memorias Codex o GPT-Pro como antecedente editorial provisional, no como fuente academica.
+- Mantener tono institucional UnADM en toda entrega.
+- Tratar memorias Codex o GPT-Pro como antecedente editorial provisional, no fuente académica.
+- Registrar incidencias técnicas de parseo sin convertirlas en evidencia disciplinar.
+- Marcar como [supuesto] todo dato no confirmado por consigna local.
+- Tratar memorias editoriales heredadas como antecedentes provisionales, no como fuente academica.
+- Registrar incidencias de parseo como metadato técnico, no como evidencia disciplinar.
+- Registrar incidencias de parseo como metadato tecnico, no como evidencia disciplinar.
+- Alinear contenido con Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Alinear toda entrega con Licenciatura en Derecho y asignatura Filosofia del Derecho.
+- Respetar ubicacion curricular: semestre 1, bloque 2, obligatoria, 8 creditos.
+- Usar carpeta de asignatura como entrada canonica editorial.
+- Tratar memorias editoriales heredadas como antecedentes provisionales, no como fuentes academicas.
+- Registrar incidencias de parseo como metadato tecnico, nunca como evidencia disciplinar.
+- Mantener identidad institucional UnADM en tono, formato y criterios de integridad academica.
+- Vincular actividad-3 a Licenciatura en Derecho, asignatura Filosofia del Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Tratar memorias editoriales externas como antecedente provisional, no como fuente academica.
+- Mantener tono y formato institucional UnADM.
+- Tratar memorias editoriales heredadas como antecedentes provisionales, no como fuentes académicas.
+- Alinear actividad con Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmación local.
+- No usar memoria editorial como fuente académica.
+- Tratar memorias editoriales heredadas como antecedente técnico provisional, no como fuente académica.
+- Registrar incidencias de parseo como metadato tecnico, no como evidencia academica.
+- Tratar memoria editorial heredada como antecedente provisional, no como fuente académica.
+- Mantener identidad institucional UnADM en tono, formato y criterios de evaluacion.
+- Marcar como supuesto cualquier dato no visible en consigna local.
+- Marcar como supuesto todo dato no visible en la consigna local de Actividad 3.
+- Tratar memorias editoriales Codex o GPT-Pro como antecedente provisional, no como fuente académica.
+- Mantener tono institucional UnADM en formato y redacción.
+- Marcar como [supuesto] cualquier dato no confirmado en consigna local.
+- Mantener tono institucional UnADM en toda salida.
+- Marcar como supuesto cualquier dato no confirmado en la consigna local.
+- Tratar memorias heredadas de herramientas como antecedentes editoriales provisionales, no como fuentes académicas.
+- Mantener identidad institucional UnADM en tono, forma y propósito.
+- Registrar incidencias tecnicas de parseo sin convertirlas en evidencia disciplinar.
+- Registrar incidencias de parseo solo como metadato técnico.
+- Marcar como supuesto cualquier dato no confirmado por consigna o fuente local.
 
 ## structure_rules
 
@@ -106,6 +531,78 @@
 - Transformar la planeacion semanal en reporte, presentacion o producto visual segun corresponda.
 - Integrar claridad, fundamento juridico, evidencia y transferencia profesional.
 - Usar estructura minima: problema, conceptos y fuentes, analisis propio, conclusion juridica transferible.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Definir objetivo puntual de la actividad antes del desarrollo.
+- Separar secciones en: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear el documento al producto solicitado por la planeación semanal.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Si no hay consigna local, usar estructura base y marcar supuestos.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Si falta consigna local, usar estructura base y declarar supuestos.
+- Alinear la entrega al producto solicitado por la planeación semanal.
+- Transformar la planeación en reporte, presentación o producto visual según consigna.
+- Iniciar con encuadre breve del problema juridico o social.
+- Separar secciones: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear formato al producto pedido por la planeacion semanal.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Si falta consigna local, usar estructura base y marcar supuestos.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el producto al formato solicitado por la planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Alinear el producto al tipo solicitado por la planeacion semanal.
+- Alinear la entrega al producto solicitado en la planeación semanal.
+- Usar estructura base cuando no exista consigna local confirmada.
+- Alinear el producto al formato pedido por la planeación semanal.
+- Cerrar con conclusión jurídica transferible a práctica profesional.
+- Si falta consigna local, usar estructura base y marcar [supuesto].
+- Separar secciones en: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el documento al producto solicitado por la planeacion semanal.
+- Alinear el producto al formato solicitado por la planeación semanal.
+- Separar en: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
+- Alinear el entregable al producto solicitado por la planeación semanal.
+- Alinear la entrega al producto solicitado por la planeacion semanal.
+- Separar secciones: conceptos clave, marco normativo-doctrinal, analisis propio y cierre.
+- Separar secciones: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
+- Si no hay consigna local, usar estructura base y marcar [supuesto].
+- Organizar en secciones: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
+- Alinear el producto al tipo solicitado por la planeación semanal.
+- Separar secciones: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Organizar en secciones: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear el formato al producto solicitado por la planeación semanal.
+- Abrir con encuadre breve del problema juridico o social.
+- Separar secciones en: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear formato final al producto pedido por planeacion semanal.
+- Si falta consigna, usar estructura base y etiquetar [supuesto].
+- Separar en secciones: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear el producto al formato exigido por planeación semanal.
+- Alinear producto al tipo solicitado por planeacion semanal.
+- Separar en: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Separar secciones: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear estructura al producto solicitado por la planeacion semanal.
+- Separar en secciones: conceptos clave, marco normativo o doctrinal, analisis propio, cierre.
+- Alinear estructura al producto solicitado por planeacion semanal.
+- Alinear el tipo de producto a la planeacion semanal confirmada.
+- Organizar en: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
+- Alinear formato de entrega al producto solicitado por la planeación semanal.
+- Separar en: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear el producto al formato pedido en la planeacion semanal.
+- Alinear formato final al producto pedido en la planeación semanal.
+- Alinear formato al producto solicitado por la planeación semanal.
+- Alinear el producto al formato exigido por la planeacion semanal.
+- Alinear el producto al formato solicitado en planeación semanal.
+- Si falta consigna local, usar estructura base y etiquetar supuestos.
+- Alinear formato final al producto solicitado por la planeación semanal.
+- Verificar consistencia entre pregunta guía, desarrollo y conclusión.
+- Alinear el formato final al producto solicitado por la planeación semanal.
+- Abrir con encuadre breve del problema jurídico o social.
+- Separar en bloques: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear formato final al producto pedido en planeación semanal.
+- Alinear el entregable al producto solicitado por la planeacion semanal.
+- Alinear el producto al formato solicitado en la planeación semanal.
+- Separar en secciones: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Usar secuencia base: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
+- Usar secuencia base: problema, conceptos y fuentes, análisis propio, cierre jurídico.
 
 ## activity_rules
 
@@ -121,6 +618,173 @@
 - Si el tema es interpretación jurídica, usar solo fuentes citadas y verificables.
 - Registrar diferencias especificas de actividad-3 como supuestos hasta confirmar guia oficial.
 - Si el tema es interpretacion juridica, usar solo fuentes citadas y verificables.
+- Heredar reglas válidas de actividad-1 sin copiar redacción literal ni conclusiones específicas.
+- Incluir postura argumentada del estudiante; evitar entrega solo descriptiva.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- No asumir semana temática de actividad-3 sin evidencia local.
+- No reutilizar automáticamente bibliografía de Semana 7 en actividad-3.
+- Heredar reglas válidas de Actividad 1 sin copiar redacción literal.
+- No trasladar conclusiones específicas entre actividades hermanas.
+- No asumir semana, formato o tema de Actividad 3 sin evidencia local.
+- Heredar solo patrones reutilizables entre actividades hermanas.
+- No copiar redacción literal ni conclusiones específicas de actividad-1.
+- Incluir postura argumentada del estudiante, no solo resumen descriptivo.
+- No asumir tema, semana o formato de actividad-3 sin evidencia local.
+- Heredar solo patrones reutilizables de actividad hermana.
+- No copiar redaccion literal, conclusiones ni bibliografia exclusiva de otra actividad.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- No asumir semana, tema o formato de Actividad 3 sin evidencia local.
+- Heredar reglas validas de actividad-1 sin copiar redaccion literal.
+- No asumir semana, tema o formato de actividad-3 sin evidencia local.
+- Registrar diferencias especificas de actividad-3 como supuestos hasta confirmacion oficial.
+- No copiar redaccion literal ni conclusiones especificas de otra actividad.
+- Incluir postura argumentada del estudiante.
+- Evitar entregas solo descriptivas.
+- No asumir semana, formato o bibliografia especifica sin evidencia local.
+- Incluir postura argumentada del estudiante y evitar entrega solo descriptiva.
+- No asumir semana, formato ni bibliografía específica de actividad-3 sin evidencia local.
+- Registrar diferencias de actividad-3 como supuestos hasta confirmar guía oficial.
+- Heredar solo patrones reutilizables desde actividad-1.
+- No copiar redacción literal ni conclusiones específicas entre nodos hermanos.
+- No asumir semana, formato o bibliografía específica de actividad-3 sin evidencia local.
+- Heredar reglas válidas de actividad-1 sin eliminar reglas útiles previas.
+- No copiar redacción literal ni conclusiones específicas entre actividades hermanas.
+- No asumir semana, formato o tema específico de actividad-3 sin evidencia local.
+- Heredar reglas válidas del nodo hermano sin copiar redacción literal.
+- No asumir consigna, semana o formato de actividad-3 sin evidencia local.
+- Registrar diferencias específicas de actividad-3 como supuestos hasta confirmación.
+- Heredar reglas válidas de actividad-1 sin copiar redacción literal.
+- No copiar conclusiones específicas entre actividades hermanas.
+- Incluir postura argumentada del estudiante, no solo resumen.
+- Registrar diferencias locales de actividad-3 como supuestos hasta confirmación.
+- Heredar reglas validas de actividad-1 sin copiar redaccion literal ni conclusiones especificas.
+- No asumir semana, formato ni bibliografia obligatoria de actividad-3 sin evidencia local.
+- Registrar diferencias locales de actividad-3 como supuestos hasta confirmacion.
+- Heredar reglas válidas de actividad-1 sin eliminar ninguna útil.
+- No copiar redacción literal, conclusiones específicas ni bibliografía exclusiva del nodo hermano.
+- No asumir semana, formato o tema de actividad-3 sin evidencia local.
+- Heredar reglas válidas entre actividades hermanas sin copiar redacción literal.
+- No transferir conclusiones específicas ni bibliografía exclusiva sin verificación local.
+- No asumir semana temática ni formato de actividad-3 sin evidencia local.
+- No asumir semana, formato ni bibliografía obligatoria sin evidencia local.
+- Heredar solo patrones reutilizables de actividad-1, sin copiar redacción literal.
+- No asumir que bibliografía de otra semana aplica a actividad-3 sin confirmación.
+- Registrar diferencias de actividad-3 como [supuesto] hasta validar guía oficial.
+- No asumir semana, formato ni bibliografia especifica de actividad-3 sin evidencia local.
+- Registrar diferencias locales como supuestos hasta confirmacion oficial.
+- Heredar patrones válidos entre actividades hermanas sin copiar redacción literal.
+- No trasladar conclusiones específicas de actividad-1 a actividad-3.
+- No asumir semana, formato o bibliografía obligatoria sin evidencia local.
+- Heredar patrones validos de actividad-1 sin copiar redaccion literal ni conclusiones especificas.
+- No asumir semana, formato o bibliografia especifica de actividad-3 sin evidencia local.
+- Registrar diferencias locales de actividad-3 como supuestos hasta confirmacion oficial.
+- Heredar solo patrones reutilizables de actividad-1.
+- No copiar redaccion literal ni conclusiones especificas del hermano.
+- Registrar diferencias de actividad-3 como [supuesto] hasta confirmación oficial.
+- Heredar reglas válidas del nodo hermano sin eliminar reglas útiles previas.
+- Si falta consigna, usar estructura base y marcar [supuesto].
+- No asumir semana, formato ni bibliografia especifica sin evidencia local.
+- Heredar patrones validos entre actividades hermanas sin copiar conclusiones especificas.
+- Heredar reglas validas de actividad-1 sin eliminar reglas utiles previas.
+- No copiar redaccion literal, conclusiones especificas ni bibliografia exclusiva de un hermano.
+- Heredar patrones válidos de actividad-1 sin copiar redacción literal.
+- No asumir semana, formato o bibliografía específica sin evidencia local.
+- Heredar reglas válidas de Actividad 1 sin eliminar reglas útiles previas.
+- Heredar patrones reutilizables de actividad-1 sin copiar redacción literal.
+- No transferir conclusiones específicas de un nodo hermano.
+- Incluir postura argumentada del estudiante; evitar entregas solo descriptivas.
+- Heredar reglas validas del nodo hermano sin copiar redaccion literal ni conclusiones especificas.
+- Registrar diferencias de actividad-3 como supuestos hasta confirmacion oficial.
+- No copiar redaccion literal, conclusiones especificas ni bibliografia exclusiva del hermano.
+- No asumir semana, formato o tema especifico de actividad-3 sin evidencia local.
+- No transferir conclusiones específicas entre nodos hermanos.
+- Heredar reglas validas de actividad hermana sin eliminar reglas utiles previas.
+- No copiar redaccion literal, conclusiones concretas ni bibliografia exclusiva del hermano.
+- Heredar reglas válidas del nodo hermano sin copiar redacción literal ni conclusiones específicas.
+- No asumir semana, formato o bibliografía de actividad-3 sin evidencia local.
+- Registrar diferencias de actividad-3 como supuestos hasta confirmar guia oficial.
+- No copiar redacción literal ni conclusiones específicas del nodo hermano.
+- No asumir semana, formato o tema sin evidencia local.
+- Heredar reglas válidas de actividades hermanas sin copiar redacción literal ni conclusiones específicas.
+- Registrar diferencias de actividad-3 como supuestos hasta confirmación oficial.
+- Heredar patrones reutilizables de actividad-1 sin copiar redaccion literal.
+- No trasladar conclusiones especificas de actividad-1 a actividad-3.
+- No asumir semana, formato o consigna de actividad-3 sin evidencia local.
+- Heredar reglas válidas de actividades hermanas sin copiar redacción literal.
+- No transferir conclusiones específicas ni bibliografía exclusiva no verificada para actividad-3.
+- No asumir semana temática ni formato final sin evidencia local.
+- No transferir conclusiones específicas ni bibliografía exclusiva de otra actividad.
+- No asumir semana, formato ni tema de Actividad 3 sin evidencia local.
+- No copiar redaccion literal ni conclusiones especificas entre actividades hermanas.
+- No transferir conclusiones específicas ni bibliografía exclusiva no confirmada localmente.
+- Si faltan datos locales, usar estructura base y dejar supuestos marcados.
+- Heredar solo patrones reutilizables; no copiar redacción literal de actividad-1.
+- Registrar diferencias de actividad-3 como [supuesto] hasta confirmación.
+- Heredar solo patrones reutilizables desde actividad hermana.
+- Incluir postura argumentada del estudiante; evitar texto solo descriptivo.
+- Heredar solo patrones reutilizables de actividad-1, sin copiar redaccion literal.
+- No transferir conclusiones especificas ni bibliografia exclusiva del nodo hermano.
+- No asumir semana, formato ni tema especifico de actividad-3 sin evidencia local.
+- Heredar solo patrones reutilizables de actividad-1: identidad, estructura, calidad y metodo argumentativo.
+- No copiar redaccion literal, conclusiones especificas ni bibliografia exclusiva del nodo hermano.
+- Si falta consigna local, usar estructura base y registrar supuestos explicitos.
+- Heredar reglas válidas de actividad hermana sin eliminar reglas útiles previas.
+- No copiar redacción literal ni conclusiones específicas entre hermanos.
+- Incluir postura argumentada del estudiante, no solo descripción.
+- Heredar solo reglas reutilizables de actividades hermanas.
+- No copiar redacción literal, conclusiones específicas ni bibliografía exclusiva de otra actividad.
+- Incluir postura argumentada del estudiante; evitar resumen solo descriptivo.
+- Heredar reglas válidas reutilizables de actividad-1 sin copiar redacción literal.
+- No asumir semana, formato ni consigna específica de actividad-3 sin evidencia local.
+- Si faltan datos locales, usar estructura base y dejar supuestos explícitos.
+- No asumir semana, formato ni tema de actividad-3 sin evidencia local.
+- Si falta consigna local, usar estructura base y marcar supuestos.
+- No transferir conclusiones específicas ni bibliografía exclusiva de un hermano.
+- No transferir conclusiones específicas ni bibliografía exclusiva sin evidencia local.
+- No asumir semana, formato o tema de actividad-3 sin confirmación local.
+- Heredar reglas válidas de actividad hermana sin copiar redacción literal.
+- No asumir semana, formato o tema de Actividad 3 sin consigna confirmada.
+- No asumir semana, formato o bibliografia de actividad-3 sin evidencia local.
+- No trasladar conclusiones específicas ni bibliografía exclusiva de un hermano a otro.
+- No copiar redaccion literal ni conclusiones especificas entre hermanos.
+- Incluir postura argumentada del estudiante, no solo descripcion.
+- No asumir semana, consigna o formato de actividad-3 sin evidencia local.
+- Heredar patrones válidos de actividad hermana sin copiar redacción literal.
+- Heredar reglas válidas de actividad previa sin copiar redacción literal ni conclusiones específicas.
+- Registrar diferencias de Actividad 3 como [supuesto] hasta confirmar guía oficial.
+- No asumir semana, formato ni consigna de Actividad 3 sin evidencia local.
+- Heredar reglas válidas del hermano sin copiar redacción literal ni conclusiones específicas.
+- Evitar entregas solo descriptivas; incluir postura argumentada del estudiante.
+- No asumir semana, formato ni bibliografía específica sin evidencia local.
+- Heredar reglas validas de actividad hermana sin copiar redaccion literal.
+- No transferir conclusiones especificas ni bibliografia exclusiva de otra actividad.
+- Heredar reglas generales válidas de Actividad 1 sin copiar redacción literal.
+- No asumir consigna, semana o formato de Actividad 3 sin evidencia local.
+- Registrar diferencias de Actividad 3 como supuestos hasta confirmar guía oficial.
+- No trasladar bibliografía exclusiva de un hermano si no está citada localmente.
+- No asumir semana, consigna o formato de Actividad 3 sin evidencia local.
+- Usar solo patrones reutilizables entre nodos hermanos.
+- Heredar reglas reutilizables de Actividad 1 sin copiar redacción literal.
+- No trasladar conclusiones específicas de un hermano a otro.
+- Heredar solo patrones reutilizables del hermano: identidad, estructura, calidad y trazabilidad.
+- No copiar redacción literal, conclusiones específicas ni bibliografía exclusiva de actividad-1.
+- No asumir tema, semana ni formato de actividad-3 sin evidencia local.
+- No copiar redacción literal ni conclusiones específicas de Actividad 1.
+- No trasladar bibliografía exclusiva de otra actividad sin evidencia de pertinencia.
+- Incluir postura argumentada del estudiante; evitar resumen descriptivo puro.
+- Heredar patrones válidos de actividad-1 sin copiar redacción literal ni conclusiones específicas.
+- Heredar patrones reutilizables de actividad-1 sin copiar conclusiones específicas.
+- No copiar redaccion literal ni conclusiones especificas del nodo hermano.
+- Usar solo fuentes efectivamente citadas en el documento.
+- No copiar redacción literal ni conclusiones específicas entre nodos hermano.
+- Heredar reglas validas entre actividades hermanas solo como patrones reutilizables.
+- No copiar redaccion literal, conclusiones especificas ni bibliografia exclusiva de otro nodo hermano.
+- No transferir conclusiones específicas de actividad-1 a actividad-3.
+- Si faltan datos locales, usar estructura base y marcar supuestos.
+- Distinguir reglas generales transferibles de contenido específico no transferible.
+- No copiar conclusiones específicas ni redacción literal del nodo hermano.
 
 ## quality_gates
 
@@ -140,6 +804,100 @@
 - Distinguir fuentes academicas, normativas, jurisprudenciales y antecedentes editoriales.
 - Revisar respuesta no estructurada antes de aplicar propagacion aguas abajo.
 - Revisar respuesta no estructurada antes de aplicar propagación aguas abajo.
+- Bloquear guardado o propagación si la salida no es JSON parseable.
+- Revisar estructura mínima completa antes de aplicar aguas abajo.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca de supuesto.
+- Validar consistencia entre citas en texto y archivo .bib.
+- Distinguir evidencia académica de antecedentes editoriales.
+- Confirmar trazabilidad entre afirmaciones y fuentes citadas.
+- Confirmar marca de supuesto en todo dato no verificado.
+- Distinguir fuentes académicas de antecedentes editoriales.
+- Bloquear guardado y propagacion si salida no es JSON parseable.
+- Revisar estructura minima completa antes de aplicar aguas abajo.
+- Confirmar que toda afirmacion tenga respaldo o marca de supuesto.
+- Validar consistencia entre citas en texto y .bib.
+- Distinguir fuentes academicas de antecedentes editoriales.
+- Bloquear guardado y propagacion si la salida no es JSON parseable.
+- Validar estructura minima completa antes de aplicar aguas abajo.
+- Confirmar que cada afirmacion tenga respaldo o marca de supuesto.
+- Verificar trazabilidad entre citas en texto y archivo .bib.
+- Normalizar manualmente memorias con incidencias de parseo.
+- Bloquear guardado y propagación si la salida no es JSON parseable.
+- Confirmar que no haya afirmaciones sin respaldo o sin marca de supuesto.
+- Validar esquema completo antes de aplicar aguas abajo.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca [supuesto].
+- Distinguir fuentes académicas y normativas de antecedentes editoriales.
+- Confirmar trazabilidad entre afirmaciones y fuentes.
+- Normalizar manualmente respuestas no estructuradas antes de reutilizar.
+- Distinguir fuentes académicas/normativas/jurisprudenciales de antecedentes editoriales.
+- Bloquear guardado o propagacion si la salida no es JSON parseable.
+- Distinguir fuentes academicas/normativas/jurisprudenciales de antecedentes editoriales.
+- Normalizar manualmente respuestas no estructuradas antes de reutilizarlas.
+- Validar correspondencia entre producto entregable y consigna local.
+- Confirmar trazabilidad entre afirmaciones, citas en texto y .bib.
+- Validar correspondencia entre citas en texto y archivo .bib.
+- Confirmar respaldo o marca de supuesto en cada afirmacion sensible.
+- Verificar correspondencia entre consigna local y tipo de producto final.
+- Validar estructura mínima completa antes de aplicar aguas abajo.
+- Confirmar marca de supuesto en toda afirmación no verificada localmente.
+- Confirmar consistencia entre citas en texto y archivo .bib.
+- Normalizar manualmente cualquier memoria con incidencias de parseo.
+- Aplicar no regresion: no eliminar reglas utiles consolidadas.
+- Normalizar manualmente cualquier memoria no estructurada antes de reutilizar.
+- Validar esquema mínimo completo antes de reutilizar memoria.
+- Exigir marca de supuesto en todo dato no verificado localmente.
+- Bloquear guardado o propagacion si salida no es JSON parseable.
+- Validar esquema minimo completo antes de reutilizar memoria.
+- Confirmar respaldo de cada afirmacion o marca explicita de supuesto.
+- Distinguir fuentes academicas y normativas de antecedentes editoriales.
+- Aplicar no-regresion: no eliminar reglas utiles previas.
+- Bloquear guardado o propagación si salida no es JSON parseable.
+- Validar esquema mínimo completo antes de reutilización aguas abajo.
+- Confirmar respaldo o marca de supuesto en cada afirmación sensible.
+- Aplicar regla de no regresión: no eliminar reglas útiles previas.
+- Validar esquema minimo completo antes de aplicar aguas abajo.
+- Confirmar trazabilidad entre afirmaciones, citas y .bib.
+- Aplicar no-regresion: no borrar reglas utiles previas.
+- Revisar y normalizar respuestas no estructuradas antes de reutilizar.
+- Distinguir evidencia academica de antecedentes editoriales.
+- Bloquear guardado y propagación si salida no es JSON parseable.
+- Normalizar manualmente memorias con incidencias de parseo antes de reutilizar.
+- Normalizar respuestas no estructuradas antes de reutilizarlas.
+- Confirmar trazabilidad entre afirmaciones y evidencia citada.
+- Normalizar manualmente salidas no estructuradas antes de reutilizar.
+- Confirmar que cada afirmación sin respaldo quede marcada como [supuesto].
+- Validar trazabilidad entre afirmaciones y fuentes.
+- Confirmar respaldo o marca de supuesto en cada afirmacion relevante.
+- Aplicar regla de no regresion: no eliminar reglas utiles previas.
+- Validar trazabilidad entre citas en texto y archivo .bib.
+- Validar estructura minima completa antes de reutilizacion recursiva.
+- Aplicar no regresión: conservar reglas útiles previas.
+- Exigir marca de supuesto cuando no exista respaldo local.
+- Revisar y normalizar respuestas no estructuradas antes de reutilizarlas.
+- Distinguir fuentes académicas/normativas de antecedentes editoriales.
+- Validar estructura minima completa antes de reutilizar aguas abajo.
+- Exigir marca de supuesto en toda afirmacion no verificada localmente.
+- Validar esquema mínimo completo antes de aplicar aguas abajo.
+- Normalizar manualmente salidas no estructuradas antes de reutilización.
+- Confirmar trazabilidad entre afirmaciones, citas en texto y archivo .bib.
+- Normalizar manualmente salidas no estructuradas antes de reutilizarlas.
+- Validar que no haya afirmaciones sin respaldo o sin marca de supuesto.
+- Normalizar manualmente cualquier memoria no estructurada antes de reutilizarla.
+- Normalizar manualmente toda memoria con incidencias de parseo antes de reutilizar.
+- Validar trazabilidad entre afirmaciones, citas en texto y archivo .bib.
+- Confirmar que toda afirmación tenga respaldo o marca de supuesto.
+- Bloquear guardado y propagación si JSON no es parseable.
+- Exigir estructura mínima completa antes de reutilizar memoria.
+- Distinguir evidencia académica de metadatos editoriales.
+- Bloquear guardado si la salida no es JSON parseable.
+- Validar esquema completo antes de propagar recursivamente.
+- Marcar afirmaciones no verificadas como [supuesto].
+- Confirmar marca de supuesto en toda inferencia no verificada.
+- Aplicar no regresión: conservar reglas útiles existentes.
+- Confirmar respaldo de cada afirmación o marcarla como supuesto.
+- Verificar esquema completo antes de aplicar aguas abajo.
+- Exigir marca de supuesto en datos no verificados.
+- Confirmar correspondencia entre producto entregable y consigna vigente de actividad-3.
 
 ## latex_rules
 
@@ -162,6 +920,126 @@
 - Archivos canonicos (supuesto por README): reporte-filosofia-del-derecho.tex y presentacion-filosofia-del-derecho.tex.
 - Archivos canónicos (supuesto por README): reporte-filosofia-del-derecho.tex y presentacion-filosofia-del-derecho.tex.
 - Mantener las claves originales del .bib para evitar recompilaciones.
+- Usar codificación y acentos correctos en español en .tex y .bib.
+- Mantener claves BibTeX estables; no renombrar claves ya citadas.
+- Compilar sin errores críticos y sin referencias rotas.
+- Evitar comandos no estándar sin justificación editorial.
+- Corregir caracteres anómalos en rutas o nombres antes de compilar.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analítico.
+- Supuesto: archivo .bib canónico esperado es filosofia-del-derecho.bib.
+- Usar codificación correcta en español en .tex y .bib.
+- Mantener claves BibTeX estables y sin renombres innecesarios.
+- Compilar sin errores críticos ni referencias rotas.
+- Corregir rutas y nombres de archivo solo con verificación local.
+- Mantener claves BibTeX estables y no renombrarlas sin necesidad verificada.
+- Verificar rutas y nombres de archivo antes de referenciarlos.
+- Usar acentos y codificacion correcta en .tex y .bib.
+- Compilar sin errores criticos ni referencias rotas.
+- Evitar comandos no estandar sin justificacion editorial.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analitico.
+- Supuesto: archivo .bib canonico esperado es filosofia-del-derecho.bib por Slug del README.
+- Usar codificacion y acentos correctos en español en .tex y .bib.
+- Mantener claves BibTeX estables y compatibles con citas en .tex.
+- Compilar sin errores criticos y sin referencias rotas.
+- Mantener claves BibTeX estables y no renombrarlas sin necesidad.
+- Corregir caracteres anómalos y tokens sin expandir en rutas o nombres.
+- Supuesto: el .bib canonico esperado es filosofia-del-derecho.bib por Slug del README.
+- Mantener claves BibTeX estables y no renombrar claves ya citadas.
+- Verificar nombres de archivos en README antes de referenciarlos.
+- Supuesto: archivo .bib canónico esperado es filosofia-del-derecho.bib por Slug del README.
+- Mantener claves BibTeX estables; no renombrar claves ya usadas.
+- Supuesto: .bib canónico esperado es filosofia-del-derecho.bib por Slug del README.
+- Usar español con acentos correctos en .tex y .bib.
+- Tomar como [supuesto] el .bib canónico filosofia-del-derecho.bib hasta confirmación local.
+- Usar codificación y acentos correctos en .tex y .bib.
+- Corregir caracteres anómalos y rutas antes de compilar.
+- Mantener claves BibTeX estables para evitar recompilaciones rotas.
+- Mantener claves BibTeX estables y no renombrarlas sin verificación.
+- Verificar rutas y nombres de archivos antes de referenciarlos.
+- Usar acentos y codificacion correctos en .tex y .bib.
+- Mantener claves BibTeX estables y no renombrarlas si ya están citadas.
+- Usar acentos y codificación correcta en español en .tex y .bib.
+- No renombrar claves bibliográficas ya usadas sin justificación técnica.
+- Mantener claves BibTeX estables y no renombrarlas si ya se usan.
+- Corregir caracteres anomalos en rutas y nombres antes de compilar.
+- Usar acentos y codificación correcta en .tex y .bib.
+- Usar codificacion y acentos correctos en espanol en .tex y .bib.
+- Supuesto: archivo .bib canonico esperado es filosofia-del-derecho.bib por Slug.
+- Corregir tokens sin expandir en README o programa analitico antes de automatizar rutas.
+- Supuesto: archivo .bib canonico esperado por Slug es filosofia-del-derecho.bib.
+- Usar acentos y codificación correctos en .tex y .bib.
+- Usar plantilla de reporte o presentación según consigna confirmada.
+- Mantener claves BibTeX estables y consistentes con citas en .tex.
+- Corregir tokens sin expandir en README/programa antes de fijar nombres canónicos.
+- Supuesto: archivo .bib canónico esperado es filosofia-del-derecho.bib por Slug.
+- Usar archivos base de asignatura para plantilla de formato y adaptar al producto solicitado.
+- Mantener claves BibTeX estables; no renombrar claves usadas.
+- Usar acentos y codificacion correcta en espanol en .tex y .bib.
+- Compilar sin errores criticos, citas rotas ni referencias indefinidas.
+- Tomar como supuesto operativo el .bib canónico filosofia-del-derecho.bib hasta validación local final.
+- Tomar como supuesto canónico filosofia-del-derecho.bib hasta confirmación local.
+- Usar codificacion y acentos correctos en .tex y .bib.
+- Mantener claves BibTeX estables y compatibles con citas del .tex.
+- Corregir caracteres anomales en rutas y nombres antes de compilar.
+- Corregir rutas o nombres solo con verificación local.
+- Usar reporte o presentación según consigna confirmada.
+- Mantener codificacion y acentos correctos en .tex y .bib.
+- Corregir rutas o nombres solo con verificacion local.
+- Mantener claves BibTeX estables y no renombrar claves ya usadas.
+- Usar filosofia-del-derecho.bib como archivo canónico [supuesto fuerte por Slug en README].
+- Tomar como [supuesto] archivo .bib canónico: filosofia-del-derecho.bib hasta confirmación local.
+- Tomar como [supuesto] que el .bib canonico esperado es filosofia-del-derecho.bib por Slug.
+- Verificar rutas y nombres de archivo antes de referenciarlos en documentos.
+- Tomar como [supuesto] el .bib canónico filosofia-del-derecho.bib hasta validación final.
+- Verificar rutas y nombres de archivo contra README antes de referenciar.
+- Corregir rutas y nombres anomalo solo con verificacion local.
+- Supuesto: .bib canonico esperado es filosofia-del-derecho.bib por Slug del README.
+- Corregir tokens sin expandir tipo $(@{...}.Slug) antes de fijar nombres canonicos.
+- Usar reporte o presentacion segun consigna confirmada.
+- Mantener claves BibTeX estables; no renombrar claves citadas.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y referencias de archivos.
+- Corregir tokens sin expandir tipo $(@{...}.Slug) en README y programa analítico.
+- Tomar filosofia-del-derecho.bib como canónico [supuesto] hasta verificación local.
+- Mantener claves BibTeX estables y no renombrarlas si ya se citan en .tex.
+- Corregir tokens sin expandir tipo $(@{...}.Slug) en README y programa analítico antes de automatizar rutas.
+- Corregir rutas y nombres de archivo solo con verificacion local.
+- Mantener compatibilidad entre citas en .tex y claves BibTeX.
+- No renombrar claves bibliograficas ya usadas.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analitico antes de automatizar rutas.
+- Corregir rutas y nombres solo con verificación local.
+- Tomar como [supuesto] bib canónico filosofia-del-derecho.bib hasta confirmación local.
+- Compilar sin errores críticos, sin referencias rotas y sin comandos no estándar injustificados.
+- Verificar nombres de archivos canónicos desde README antes de referenciar.
+- Corregir caracteres anómalos en rutas y nombres antes de compilar.
+- Usar acentos y codificación española correctos en .tex y .bib.
+- Resolver tokens no expandidos tipo $(@{...}.Slug) en README y programa analítico.
+- Tomar como [supuesto] archivo .bib canónico: filosofia-del-derecho.bib por Slug del README.
+- Supuesto: archivo .bib canonico esperado es filosofia-del-derecho.bib.
+- Verificar nombres de archivos del README antes de referenciarlos.
+- Supuesto: el .bib canónico esperado es filosofia-del-derecho.bib por Slug del README.
+- Verificar nombres de archivo en README antes de referenciar.
+- Supuesto: bib canonico esperado es filosofia-del-derecho.bib por Slug del README.
+- Compilar sin errores críticos, sin referencias rotas y con rutas válidas.
+- Corregir caracteres anómalos en rutas y nombres de archivo antes de compilar.
+- Corregir tokens sin expandir tipo $(@{...}.Slug) en README y referencias de archivos.
+- Tratar como supuesto que el .bib canónico es filosofia-del-derecho.bib hasta validación local.
+- Compilar sin errores críticos, referencias rotas ni rutas inválidas.
+- Mantener acentos y codificación correctos en .tex y .bib.
+- Conservar claves BibTeX estables; no renombrar sin necesidad.
+- Usar archivo .tex según producto solicitado: reporte o presentación.
+- Tomar como [supuesto] que el .bib canónico es filosofia-del-derecho.bib por Slug.
+- Compilar sin errores criticos, sin referencias rotas y con rutas validas.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) antes de cerrar entrega.
+- Usar archivo .tex de reporte o presentacion segun consigna confirmada.
+- Mantener claves BibTeX estables; no renombrar claves ya usadas sin verificación.
+- Usar acentuacion y codificacion correcta en espanol en .tex y .bib.
+- Corregir tokens sin expandir en rutas o nombres antes de compilar.
+- Mantener claves BibTeX estables ya usadas en .tex.
+- Evitar renombrar claves bibliograficas sin migracion total.
+- Corregir nombres/rutas anommalas del README antes de automatizar referencias. [supuesto]
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README/programa y fijar nombre canónico.
+- Supuesto: .bib canónico esperado es filosofia-del-derecho.bib hasta confirmación local.
+- Supuesto: archivo .bib canónico esperado es filosofia-del-derecho.bib según Slug.
 
 ## bibliography_rules
 
@@ -180,6 +1058,177 @@
 - Conservar fuentes UNAM-IIJ y SCJN solo si estan efectivamente citadas.
 - No usar memoria editorial como bibliografia academica.
 - Priorizar fuentes institucionales UnADM y fuentes normativas, doctrinales o jurisprudenciales verificables.
+- No inventar referencias.
+- Priorizar fuentes institucionales UnADM y materiales jurídicos verificables.
+- Registrar en .bib solo obras realmente consultables y citadas por la actividad.
+- Conservar metadatos mínimos: autor, título, año, fuente/editorial o URL.
+- Distinguir bibliografía base de asignatura y bibliografía específica de actividad.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Interpretación jurídica (Semana 7) y requiere validación para actividad-3.
+- Usar solo obras realmente consultables y verificables.
+- Distinguir bibliografía base de bibliografía específica por actividad.
+- Agregar al .bib solo entradas efectivamente citadas en Actividad 3.
+- Mantener metadatos mínimos: autor, título, año y fuente editorial o URL.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7; confirmar aplicabilidad a Actividad 3.
+- Registrar en .bib solo fuentes efectivamente citadas por la actividad.
+- Conservar metadatos mínimos: autor, título, año y fuente editorial o URL.
+- Priorizar fuentes institucionales UnADM y juridicas verificables.
+- Registrar en .bib solo fuentes realmente citadas en Actividad 3.
+- Conservar metadatos minimos: autor, titulo, año y fuente/editorial o URL.
+- Distinguir bibliografia base de bibliografia especifica por actividad.
+- Supuesto: filosofia-del-derecho-clean.bib parece orientado a Semana 7; confirmar aplicabilidad a Actividad 3.
+- Priorizar fuentes institucionales UnADM y materiales juridicos verificables.
+- Conservar metadatos minimos: autor, titulo, año, fuente/editorial o URL.
+- Distinguir bibliografia base de asignatura y bibliografia especifica de actividad.
+- No asumir que filosofia-del-derecho-clean.bib aplica a actividad-3 sin confirmacion.
+- Priorizar fuentes institucionales UnADM, normativas, doctrinales y jurisprudenciales verificables.
+- Distinguir bibliografia base de bibliografia especifica de actividad.
+- Registrar en .bib solo entradas realmente citadas.
+- Conservar metadatos minimos: autor, titulo, año y fuente editorial o URL.
+- Usar solo obras realmente consultables.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 y su uso en actividad-3 debe confirmarse.
+- Usar filosofia-del-derecho-clean.bib solo si coincide con las citas reales de actividad-3 [supuesto de uso condicionado].
+- Registrar en .bib solo entradas efectivamente citadas por la actividad.
+- Conservar metadatos mínimos: autor, título, año y fuente/editorial o URL.
+- Distinguir bibliografía base de bibliografía específica de actividad.
+- Tratar filosofia-del-derecho-clean.bib como [supuesto] de uso condicionado por coincidencia temática.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a Semana 7; confirmar aplicabilidad a actividad-3.
+- No inventar referencias; usar solo obras realmente consultables.
+- Supuesto: filosofia-del-derecho-clean.bib aplica solo si la consigna de actividad-3 coincide con interpretación jurídica.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a Interpretación jurídica (Semana 7) y requiere validación de pertinencia para actividad-3.
+- Registrar en .bib solo fuentes realmente citadas por la actividad.
+- Conservar metadatos minimos: autor, titulo, anio, fuente/editorial o URL.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a Semana 7 y su uso en actividad-3 debe confirmarse.
+- Priorizar fuentes institucionales UnADM y fuentes jurídicas verificables.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 y su uso en actividad-3 es condicionado.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Interpretación jurídica (Semana 7) y requiere confirmación para actividad-3.
+- Registrar en .bib de asignatura solo fuentes citadas por la actividad.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a interpretación jurídica (Semana 7) y requiere validación de pertinencia para actividad-3.
+- Priorizar fuentes institucionales UnADM y jurídicas verificables.
+- Agregar al .bib solo entradas efectivamente citadas en la actividad.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a actividad de interpretacion juridica y su uso en actividad-3 requiere confirmacion.
+- Conservar metadatos mínimos: autor, título, año y fuente o URL.
+- Usar filosofia-del-derecho-clean.bib solo si coincide con la consigna de actividad-3 [supuesto].
+- Registrar en .bib solo entradas efectivamente citadas en la actividad.
+- Conservar metadatos minimos: autor, titulo, ano, fuente editorial o URL.
+- Tratar filosofia-del-derecho-clean.bib como uso condicionado a coincidencia tematica [supuesto].
+- Priorizar fuentes institucionales UnADM y fuentes juridicas verificables.
+- No trasladar bibliografia exclusiva de actividad-1 a actividad-3 sin evidencia de uso.
+- Supuesto: filosofia-del-derecho-clean.bib es tematico de interpretacion juridica y su uso en actividad-3 debe confirmarse.
+- Agregar al .bib solo fuentes efectivamente citadas por la actividad.
+- Usar solo fuentes realmente consultables y verificables.
+- Priorizar fuentes institucionales UnADM y fuentes jurídicas normativas/doctrinales/jurisprudenciales verificables.
+- Registrar en .bib de asignatura solo entradas citadas por la actividad.
+- Tratar filosofia-del-derecho-clean.bib como uso condicionado por coincidencia temática [supuesto].
+- Registrar en .bib solo fuentes citadas por la actividad.
+- Conservar metadatos mínimos: autor, título, año, editorial o URL.
+- Usar filosofia-del-derecho-clean.bib solo si coincide con la consigna de actividad-3 [supuesto de uso condicionado].
+- Usar filosofia-del-derecho-clean.bib solo si coincide con la consigna y citas de actividad-3 [supuesto condicionado].
+- Registrar en .bib solo entradas realmente citadas por la actividad.
+- Conservar metadatos minimos: autor, titulo, anio y fuente editorial o URL.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a interpretacion juridica Semana 7 y aplica solo si coincide la consigna.
+- Agregar al .bib solo entradas efectivamente citadas por la actividad.
+- Conservar metadatos minimos: autor, titulo, ano, fuente/editorial o URL.
+- Tratar filosofia-del-derecho-clean.bib como uso condicionado [supuesto] hasta confirmar aplicacion a actividad-3.
+- Priorizar fuentes institucionales UnADM, normativas y jurisprudenciales verificables.
+- Registrar en .bib solo fuentes efectivamente citadas en la actividad.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a Interpretación jurídica (Semana 7); confirmar aplicabilidad a Actividad 3.
+- No inventar fuentes ni metadatos.
+- Conservar metadatos minimos: autor, titulo, anio, fuente editorial o URL.
+- Usar filosofia-del-derecho-clean.bib solo si coincide con tema y citas reales de actividad-3 [supuesto condicionado].
+- Conservar metadatos minimos: autor, titulo, ano y fuente editorial o URL.
+- Usar filosofia-del-derecho-clean.bib solo si coincide con tema de actividad-3 [supuesto].
+- Priorizar fuentes institucionales UnADM, normativas, doctrinales y jurisprudenciales pertinentes.
+- Conservar metadatos minimos: autor, titulo, anio y fuente/editorial o URL.
+- Distinguir bibliografia base de asignatura y bibliografia especifica por actividad.
+- [supuesto] filosofia-del-derecho-clean.bib parece orientado a Semana 7; confirmar aplicabilidad en actividad-3.
+- No inventar referencias; usar solo obras consultables y verificables.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a Interpretación jurídica (Semana 7) y su uso en actividad-3 debe confirmarse.
+- Agregar al .bib solo entradas efectivamente citadas en actividad-3.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a actividad de Semana 7 y su uso en actividad-3 es condicionado.
+- Registrar en .bib de asignatura solo fuentes efectivamente citadas por la actividad.
+- Tratar filosofia-del-derecho-clean.bib como uso condicionado por actividad [supuesto: Semana 7].
+- Usar filosofia-del-derecho-clean.bib solo cuando la consigna coincida con Interpretación jurídica (supuesto condicionado).
+- No asumir que filosofia-del-derecho-clean.bib aplica a actividad-3; marcar como [supuesto] hasta confirmar.
+- Priorizar fuentes institucionales UnADM y materiales normativos, doctrinales o jurisprudenciales pertinentes.
+- Registrar en .bib solo fuentes realmente citadas en la actividad.
+- Tratar filosofia-del-derecho-clean.bib como [supuesto de uso condicionado] por estar orientado a Semana 7.
+- Tratar filosofia-del-derecho-clean.bib como uso condicionado por coincidencia temática y de citas [supuesto].
+- Conservar metadatos minimos: autor, titulo, año, fuente editorial o URL.
+- No asumir que filosofia-del-derecho-clean.bib aplica a actividad-3; marcar como supuesto hasta confirmar consigna.
+- Registrar en .bib solo fuentes citadas en la actividad.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a actividad temática distinta; aplicar solo si coincide la consigna.
+- Distinguir bibliografía base de asignatura y bibliografía específica por actividad.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7; confirmar aplicación a actividad-3.
+- [supuesto] filosofia-del-derecho-clean.bib puede no corresponder a actividad-3; confirmar aplicabilidad.
+- No inventar fuentes ni citas.
+- Agregar al .bib solo referencias realmente citadas por la actividad.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a interpretacion juridica; validar aplicacion en actividad-3.
+- No inventar fuentes ni completar datos sin verificacion.
+- Usar filosofia-del-derecho-clean.bib solo si coincide con la consigna local [supuesto].
+- No inventar fuentes ni referencias.
+- Agregar al .bib solo entradas realmente citadas por la actividad.
+- Supuesto: filosofia-del-derecho-clean.bib puede no corresponder a actividad-3; validar antes de usar.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a actividad de interpretación jurídica y aplica solo si coincide con consigna de actividad-3.
+- No inventar referencias; usar solo obras consultables.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7; confirmar aplicabilidad a actividad-3.
+- Usar solo obras consultables y verificables.
+- No trasladar automáticamente bibliografía de Semana 7 a Actividad 3 sin confirmar aplicabilidad.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a Interpretación jurídica (Semana 7) y su uso en actividad-3 depende de coincidencia temática.
+- Conservar metadatos mínimos: autor, título, año, fuente editorial o URL.
+- Registrar en el .bib de asignatura solo fuentes efectivamente citadas por la actividad.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a otra actividad temática; validar pertinencia para actividad-3.
+- Agregar al .bib solo fuentes realmente citadas por la actividad.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 y requiere validación para actividad-3.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a actividad de interpretación jurídica (Semana 7) y requiere confirmación para Actividad 3.
+- Agregar al .bib solo entradas realmente citadas en la actividad.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a interpretacion juridica (Semana 7) y su uso en actividad-3 debe confirmarse.
+- Registrar en .bib solo entradas realmente citadas en la actividad.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a actividad de Interpretación jurídica (Semana 7) y requiere validación para actividad-3.
+- Registrar en .bib solo fuentes citadas por la actividad actual.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a actividad de interpretación jurídica y su uso en Actividad 3 requiere confirmación.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a otra actividad temática y su uso en actividad-3 debe confirmarse.
+- Agregar al .bib solo entradas realmente citadas.
+- Tratar filosofia-del-derecho-clean.bib como [supuesto] de uso condicionado a coincidencia temática y de citas.
+- Agregar al .bib solo entradas realmente citadas en el producto.
+- Supuesto: filosofia-del-derecho-clean.bib puede corresponder a otra semana; validar aplicacion antes de reutilizar.
+- Usar filosofia-del-derecho-clean.bib solo si la consigna de actividad-3 coincide con su alcance [supuesto].
+- Registrar en .bib solo fuentes efectivamente citadas en actividad-3.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a interpretacion juridica (Semana 7) y su uso en actividad-3 depende de coincidencia tematica.
+- Priorizar fuentes institucionales UnADM y fuentes juridicas normativas, doctrinales o jurisprudenciales verificables.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a interpretacion juridica Semana 7 y su uso en actividad-3 debe confirmarse.
+- Registrar en .bib de asignatura solo fuentes efectivamente citadas.
+- No asumir que filosofia-del-derecho-clean.bib aplica a Actividad 3 sin confirmación local [supuesto].
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a Interpretación jurídica (Semana 7) y requiere validación para actividad-3.
+- Priorizar fuentes institucionales UnADM, normativas y jurisprudenciales pertinentes.
+- Usar filosofia-del-derecho-clean.bib solo si coincide con tema y citas de actividad-3 [supuesto de uso condicionado].
+- Agregar al .bib solo entradas realmente citadas en Actividad 3.
+- Supuesto: filosofia-del-derecho-clean.bib puede no aplicar a actividad-3 si corresponde a otra semana.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Interpretación jurídica (Semana 7) y requiere confirmación para Actividad 3.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Interpretación jurídica y requiere validación de aplicabilidad en actividad-3.
+- Registrar en .bib solo fuentes efectivamente usadas por la actividad.
+- Mantener como supuesto que filosofia-del-derecho-clean.bib corresponde a Semana 7 salvo confirmación para Actividad 3.
+- Agregar al .bib solo fuentes efectivamente citadas en la actividad.
+- Conservar metadatos mínimos: autor, título, año, fuente o URL.
+- Tratar filosofia-del-derecho-clean.bib como [supuesto de uso condicionado] por su enfoque Semana 7 hasta confirmar consigna de Actividad 3.
+- Agregar al .bib solo entradas citadas por la actividad.
+- No trasladar bibliografía exclusiva de una actividad hermana sin validación local.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a interpretación jurídica (Semana 7) y requiere validación antes de usarse en actividad-3.
+- Agregar al .bib solo fuentes realmente citadas en actividad-3.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a otra actividad y se usa solo si coincide con citas reales.
+- Supuesto: filosofia-del-derecho-clean.bib es tematico de Semana 7 y su uso en actividad-3 debe confirmarse.
+- Registrar en .bib solo fuentes realmente consultables y citadas.
+- Supuesto: filosofia-del-derecho-clean.bib esta orientado a Semana 7 y requiere confirmacion para actividad-3.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a actividad de interpretación jurídica; validar aplicabilidad a actividad-3.
+- Tratar filosofia-del-derecho-clean.bib como uso condicionado por tema y consigna [supuesto].
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7; confirmar aplicabilidad en actividad-3.
+- Supuesto: filosofia-del-derecho-clean.bib es tematico y su uso en actividad-3 debe confirmarse.
+- No asumir que filosofia-del-derecho-clean.bib aplica a actividad-3 sin confirmacion. [supuesto]
+- Agregar al .bib solo entradas realmente citadas en actividad-3.
+- No reutilizar automáticamente bibliografía depurada de otra semana sin confirmar aplicabilidad.
+- Conservar claves SCJN/UNAM solo si están efectivamente citadas.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a interpretación jurídica (Semana 7) y su uso en actividad-3 debe confirmarse.
+- Registrar en .bib solo obras realmente citadas en la actividad.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Interpretación jurídica y requiere validación de aplicabilidad a actividad-3.
 
 ## propagation_hints
 
@@ -279,6 +1328,274 @@
 - Ciclos 1 a 22 requieren normalizacion manual si se reutilizan.
 - En ciclo 22 mantener deduplicacion semantica lossless sin recortar reglas utiles.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente solo después de validar JSON y estructura.
+- Transferir a nodos hermanos solo patrones reutilizables de identidad, estructura y calidad.
+- No propagar conclusiones ni bibliografía exclusiva entre hermanos sin verificación local.
+- Conservar bandera de riesgo por antecedentes de salida no estructurada.
+- Aplicar compresión lossless por unión y deduplicación en ciclos siguientes.
+- Propagar recursivamente solo tras validar JSON y estructura.
+- Transferir a nodos hermanos solo patrones reutilizables, no contenido específico.
+- Conservar bandera de riesgo cuando existan antecedentes de parseo fallido.
+- Aplicar compresión lossless por unión y deduplicación.
+- Reforzar reglas institucionales comunes y mantener especificidad local.
+- Reutilizar reglas institucionales de calidad sin perder especificidad local.
+- Propagar a nodos hermano solo patrones generales de identidad, estructura y calidad.
+- Aplicar unión y deduplicación lossless en cada ciclo.
+- Mantener bandera de riesgo cuando existan incidencias previas de parseo.
+- Transferir reglas institucionales y de calidad a nodos hermanos compatibles.
+- Propagar reglas especificas de Filosofia del Derecho solo dentro de la misma asignatura.
+- Mantener union-dedupe lossless en cada ciclo.
+- Registrar incidencias de parseo como riesgo tecnico persistente.
+- Propagar recursivamente solo despues de validar JSON y estructura.
+- Transferir solo patrones reutilizables de identidad, estructura, calidad y relaciones conceptuales.
+- No propagar conclusiones especificas ni bibliografia exclusiva entre hermanos.
+- Conservar bandera de riesgo cuando haya antecedentes de salida no estructurada.
+- Aplicar compresion por union-dedupe lossless en cada ciclo.
+- Si faltan datos locales, propagar plantilla base y preguntas abiertas.
+- Transferir a nodos hermanos solo reglas generales reutilizables.
+- Mantener bandera de riesgo por antecedentes de parseo no estructurado.
+- Aplicar compresion lossless por union y deduplicacion en cada ciclo.
+- Escalar primero reglas institucionales y de calidad; luego reglas locales verificadas.
+- Transferir a hermanos solo patrones reutilizables de identidad, estructura, calidad y método.
+- No propagar conclusiones temáticas ni bibliografía exclusiva entre actividades hermanas.
+- Aplicar deduplicación lossless por unión de reglas equivalentes.
+- Conservar bandera de riesgo cuando existan antecedentes de salida no estructurada.
+- Si falta dato local, propagar plantilla base y preguntas abiertas.
+- No propagar conclusiones específicas ni bibliografía exclusiva de una actividad hermana.
+- Aplicar unión-deduplicación lossless en cada ciclo.
+- Mantener bandera de riesgo si hubo incidencias de parseo en ciclos previos.
+- Cuando falten datos locales, propagar preguntas abiertas en lugar de contenido inventado.
+- Transferir a nodos hermanos reglas de identidad, estructura, calidad y trazabilidad.
+- Aplicar compresión por unión y deduplicación lossless en cada ciclo.
+- Mantener bandera de riesgo en nodos con historial de salida no estructurada.
+- Si falta consigna textual, propagar plantilla base y preguntas abiertas.
+- Transferir solo patrones reutilizables: identidad, estructura, calidad, conceptos y relaciones recurrentes.
+- Evitar propagar conclusiones o bibliografía exclusiva de una actividad hermana.
+- Aplicar deduplicación lossless por unión semántica y textual.
+- Mantener bandera de riesgo si reaparece salida no estructurada.
+- Propagar a nodos hermanos solo patrones reutilizables de identidad, estructura y calidad.
+- Aplicar compresión por unión y deduplicación, sin recorte semántico.
+- Normalizar manualmente cualquier salida no estructurada antes de reutilizar.
+- Aplicar compresión lossless por unión-deduplicación en cada ciclo.
+- Evitar regresiones respecto de reglas útiles previas.
+- Si falta consigna local, propagar plantilla base y abrir preguntas.
+- No propagar conclusiones especificas ni bibliografia exclusiva de un hermano.
+- Aplicar union-dedupe lossless para consolidar sin perdida.
+- Mantener bandera de riesgo por antecedentes de parseo en ciclos previos.
+- Transferir solo patrones reutilizables: identidad, estructura, calidad y marco conceptual.
+- Mantener bandera de riesgo en ciclos con incidencias de parseo.
+- Propagar reglas específicas de Filosofía del Derecho solo a nodos de la misma asignatura.
+- Mantener bandera de riesgo cuando existan antecedentes de salida no estructurada.
+- Propagar a nodos hermanos solo patrones generales reutilizables.
+- Evitar transferir conclusiones temáticas específicas entre hermanos.
+- Aplicar no regresión: conservar reglas útiles previas.
+- Aplicar compresión por unión-deduplicación lossless en cada ciclo.
+- Propagar recursivamente solo tras validación de JSON y estructura.
+- Transferir a hermanos reglas institucionales, estructura, calidad y patrones argumentativos.
+- Mantener compresión por unión+dedeuplicación lossless, sin recorte semántico.
+- Preservar bandera de riesgo cuando existan antecedentes de parseo fallido.
+- Cuando falten datos locales, propagar plantilla base con preguntas abiertas.
+- Aplicar normalizacion manual cuando haya incidencias de parseo en nodos vecinos.
+- Evitar regresiones respecto de reglas utiles previas.
+- Transferir a nodos hermanos solo patrones generales reutilizables.
+- Conservar bandera de riesgo cuando exista antecedente de parseo defectuoso.
+- No propagar conclusiones, redacciones ni bibliografia exclusiva entre hermanos.
+- Propagar reglas institucionales y de calidad con alta prioridad.
+- Mantener bandera de riesgo cuando exista antecedente de salida no estructurada.
+- Usar union-dedupe lossless en cada ciclo para evitar regresiones.
+- Transferir a nodos hermanos solo reglas generales y patrones argumentativos.
+- Mantener compresion por union y deduplicacion sin recorte semantico.
+- Conservar bandera de riesgo cuando existan antecedentes de parseo defectuoso.
+- Priorizar refuerzo-lateral de identidad, calidad y estructura sobre contenido especifico.
+- Transferir solo patrones reutilizables: identidad, estructura, calidad, conceptos y relaciones.
+- No propagar conclusiones específicas ni bibliografía exclusiva de un hermano a otro.
+- Conservar bandera de riesgo por antecedentes de salidas no estructuradas.
+- Aplicar compresión por unión-deduplicación sin recorte semántico.
+- Transferir a nodos hermanos solo patrones reutilizables de identidad, estructura, calidad y método.
+- No transferir bibliografía exclusiva ni conclusiones específicas entre actividades hermanas.
+- Mantener bandera de riesgo cuando exista antecedente de parseo defectuoso.
+- Transferir a hermanos solo patrones reutilizables de identidad, estructura, calidad y trazabilidad.
+- No propagar conclusiones temáticas específicas de una actividad a otra.
+- Propagar supuestos como supuestos, nunca como hechos confirmados.
+- Mantener compresión por unión y deduplicación sin pérdida semántica.
+- Priorizar reglas institucionales comunes cuando falte consigna textual local.
+- Mantener compresión por unión y deduplicación lossless.
+- Preservar bandera de riesgo si hay antecedente de salida no estructurada.
+- Aplicar normalización manual cuando se detecten incidencias de parseo.
+- Transferir solo patrones reutilizables de identidad, estructura y calidad.
+- Mantener bandera de riesgo si existe antecedente de salida no estructurada.
+- Transferir a nodos hermanos solo patrones institucionales, estructurales y de calidad.
+- Reforzar conexiones problema -> evidencia -> analisis -> conclusion en saltos laterales.
+- Conservar bandera de riesgo cuando existan incidencias previas de parseo.
+- Priorizar refuerzo lateral por analogía controlada sin contaminar con contenido específico.
+- Conservar bandera de riesgo cuando exista antecedente de salida no estructurada.
+- Propagar recursivamente solo después de validación estructural y JSON parseable.
+- Aplicar unión más deduplicación lossless en cada ciclo.
+- Transferir solo patrones reutilizables: identidad, estructura, calidad y relaciones conceptuales.
+- No propagar conclusiones ni bibliografia exclusiva de un hermano a otro.
+- Aplicar compresion por union y deduplicacion sin perdida semantica.
+- Mantener bandera de riesgo cuando existan antecedentes de parseo fallido.
+- Si faltan datos locales, propagar plantilla base y abrir preguntas.
+- Propagar lateralmente reglas generales de identidad, estructura y calidad.
+- No propagar como hecho ningun supuesto no verificado localmente.
+- Reutilizar union-dedupe lossless para consolidar sin perdida.
+- Mantener bandera de riesgo cuando existan incidencias de parseo en ciclos previos.
+- Propagar recursivamente solo tras validación JSON y estructura.
+- Transferir a hermanos solo patrones reutilizables de identidad, estructura y calidad.
+- No propagar bibliografía exclusiva ni conclusiones particulares de otra actividad.
+- Propagar supuestos como supuestos, nunca como hechos.
+- Aplicar unión-dedupe lossless en cada ciclo.
+- Transferir a nodos hermanos solo patrones reutilizables institucionales, estructurales y de calidad.
+- Conservar bandera de riesgo cuando exista historial de parseo defectuoso.
+- Aplicar union+dedupe lossless en cada ciclo para evitar duplicados sin perder reglas.
+- Mantener bandera de riesgo si existen antecedentes de salida no estructurada.
+- Cuando falten datos locales, propagar plantilla base y preguntas abiertas.
+- No propagar conclusiones temáticas específicas entre actividades hermanas.
+- Mantener bandera de riesgo cuando exista historial de salida no estructurada.
+- Aplicar deduplicación semántica por equivalencia ortográfica y acentual.
+- Escalar primero reglas institucionales y de calidad; luego reglas locales condicionadas.
+- Mantener compresion por union y deduplicacion lossless.
+- Conservar bandera de riesgo si reaparece salida no estructurada.
+- Propagar recursivamente solo después de validar JSON y estructura mínima completa.
+- Transferir a nodos hermanos solo patrones reutilizables institucionales y de calidad.
+- No propagar bibliografía exclusiva de una actividad a otra sin verificación local.
+- Conservar bandera de riesgo cuando haya antecedente de salida no estructurada.
+- Evitar convertir supuestos en hechos confirmados durante la propagación.
+- Propagar recursivamente solo tras validacion JSON y estructura.
+- Conservar bandera de riesgo cuando existan incidencias de parseo previas.
+- Aplicar compresion por union y deduplicacion, sin recorte semantico.
+- Transferir solo patrones reutilizables de identidad, estructura, calidad y argumentación.
+- Priorizar refuerzo lateral entre actividades de la misma asignatura.
+- Aplicar unión + deduplicación sin pérdida en cada ciclo.
+- Transferir a nodos hermanos solo patrones reutilizables de identidad, estructura, calidad y trazabilidad.
+- No propagar conclusiones específicas ni bibliografía exclusiva entre hermanos.
+- Escalar preguntas abiertas cuando falte consigna local verificable.
+- Aplicar compresion por union y deduplicacion lossless en cada ciclo.
+- Conservar bandera de riesgo tecnico si hubo salida no estructurada en ciclos previos.
+- Mantener especificidad local del nodo destino sin contaminar con bibliografia exclusiva de otro hermano.
+- Propagar recursivamente solo después de validación JSON y estructura.
+- Transferir patrones reutilizables: identidad, estructura, calidad, conceptos y relaciones recurrentes.
+- Mantener compresión lossless por unión y deduplicación.
+- Aplicar normalización manual en nodos con incidencias de parseo.
+- No propagar conclusiones temáticas ni bibliografía exclusiva sin confirmación local.
+- Aplicar deduplicación por unión semántica para evitar variantes duplicadas.
+- Si hay vacíos locales, propagar preguntas abiertas en lugar de contenido inventado.
+- Transferir a nodos hermanos solo reglas generales e identidad institucional.
+- Aplicar compresión por unión y deduplicación sin pérdida semántica.
+- Mantener bandera de riesgo si hubo incidencias previas de parseo.
+- Transferir a nodos hermanos solo reglas generales y patrones estables.
+- Aplicar union-deduplicacion lossless en cada ciclo.
+- Mantener bandera de riesgo cuando haya antecedente de parseo fallido.
+- Reforzar conexiones entre identidad institucional, calidad y patron argumentativo.
+- No propagar conclusiones tematicas especificas entre actividades hermanas.
+- Si faltan datos locales, propagar plantilla base con preguntas abiertas.
+- Propagar lateralmente reglas institucionales y de calidad por defecto.
+- Aplicar compresion lossless por union y deduplicacion semantica.
+- Mantener bandera de riesgo en ciclos con antecedentes de parseo fallido.
+- Propagar recursivamente solo tras validacion de JSON y estructura.
+- Transferir a nodos hermanos solo reglas generales y patrones argumentativos estables.
+- Reutilizar patrones institucionales y de calidad en nodos laterales de la misma asignatura.
+- Propagar solo reglas generales cuando falte consigna textual local.
+- Aplicar compresión lossless por unión y deduplicación en cada ciclo.
+- Transferir a hermanos solo patrones generales reutilizables, no contenido específico.
+- Conservar bandera de riesgo cuando existan antecedentes de parseo no estructurado.
+- Transferir a nodos hermanos solo patrones generales de identidad, estructura y calidad.
+- Aplicar unión-dedupe lossless para evitar duplicados sin perder reglas.
+- Escalar dudas locales como preguntas abiertas en lugar de completar con invención.
+- Propagar recursivamente solo después de validación JSON y estructura mínima.
+- Conservar bandera de riesgo si hay antecedente de salida no estructurada.
+- Reforzar conexiones problema->análisis->conclusión en actividades de la misma asignatura.
+- Aplicar normalización manual cuando exista antecedente de salida no estructurada.
+- No propagar conclusiones específicas ni bibliografía exclusiva entre actividades hermanas.
+- Mantener bandera de riesgo cuando existan antecedentes de parseo no estructurado.
+- Propagar recursivamente solo después de validación de JSON y estructura.
+- Transferir solo patrones reutilizables: identidad, estructura, calidad y relaciones recurrentes.
+- Evitar propagar supuestos como hechos confirmados.
+- Aplicar normalización manual cuando haya incidencias de parseo en nodos vecinos.
+- Preservar banderas de riesgo por antecedentes de salida no estructurada.
+- Reforzar reglas institucionales sin perder especificidad local.
+- Reforzar reglas institucionales comunes en nodos hermanos de la misma asignatura.
+- Conservar trazabilidad de cambios en cada ciclo de refuerzo lateral.
+- Aplicar union-dedupe lossless en cada ciclo de consolidacion.
+- Aplicar unión + deduplicación lossless en cada ciclo.
+- Reforzar reglas institucionales en nodos hermanos de la misma asignatura.
+- Aplicar normalización manual cuando se detecte salida no estructurada.
+- Reutilizar reglas institucionales sin perder especificidad local del nodo destino.
+- Propagar a hermanos solo reglas generales y estables.
+- Aplicar union-dedupe lossless en cada ciclo.
+- Si falta consigna local, propagar plantilla estructural y preguntas abiertas.
+- Transferir solo patrones reutilizables: identidad, estructura, calidad, conceptos y relaciones estables.
+- Aplicar unión+deduplicación lossless en cada ciclo.
+- Propagar reglas específicas de Filosofía del Derecho solo dentro de la misma asignatura.
+- No propagar bibliografía exclusiva ni conclusiones específicas entre hermanos.
+- Aplicar unión+d eduplicación lossless en cada ciclo para evitar regresión.
+- Transferir solo patrones institucionales, estructurales y de calidad reutilizables.
+- Conservar bandera de riesgo cuando exista antecedente de parseo fallido.
+- Reforzar reglas institucionales y de calidad sin perder especificidad local.
+- Aplicar deduplicación semántica conservando cobertura total de reglas.
+- Priorizar identidad, estructura, calidad y relaciones conceptuales sobre contenido puntual.
+- Transferir solo patrones reutilizables: identidad, estructura, calidad, conceptos troncales y relaciones recurrentes.
+- Aplicar normalización manual cuando existan incidencias de parseo.
+- Mantener compresión lossless por unión-dedupe y registro de no regresión.
+- Propagar reglas generales cuando falte consigna textual local.
+- Propagar reglas institucionales de calidad sin perder especificidad local.
+- Mantener bandera de riesgo si existe antecedente de parseo fallido.
+- Conservar bandera de riesgo cuando existan incidencias históricas de parseo.
+- Escalar preguntas abiertas cuando falten datos locales verificables.
+- Propagar a nodos hermanos reglas generales de identidad, estructura y calidad.
+- Conservar trazabilidad de incidencias de parseo como control editorial, no como evidencia academica.
+- No propagar conclusiones concretas ni bibliografia exclusiva entre hermanos.
+- Mantener compresion por union y deduplicacion sin perdida.
+- No propagar conclusiones específicas ni bibliografía exclusiva de una actividad.
+- Si un nodo carece de consigna, propagar plantilla base y preguntas abiertas.
+- Conservar bandera de riesgo si existe antecedente de salida no estructurada.
+- Reforzar conexiones problema-evidencia-análisis-conclusión en nodos laterales.
+- Escalar preguntas abiertas cuando falte consigna textual local.
+- Evitar propagar contenido tematico puntual no confirmado en nodo destino.
+- Transferir a nodos hermanos reglas institucionales, de estructura y de calidad.
+- Mantener compresión por unión y deduplicación sin pérdida.
+- Priorizar refuerzo-lateral de patrones argumentativos sobre contenido temático específico.
+- Preservar ejes editoriales estables: problema, conceptos/fuentes, análisis propio, conclusión jurídica.
+- Aplicar compresión por unión y deduplicación sin recorte semántico.
+- Propagar a hermanos solo reglas generales y reutilizables.
+- Mantener compresion lossless por union y deduplicacion.
+- Conservar reglas institucionales y de calidad sin reducir especificidad local.
+- Mantener bandera de riesgo cuando haya antecedentes de parseo defectuoso.
+- Transferir solo identidad institucional, estructura, calidad, conceptos y relaciones recurrentes.
+- No propagar bibliografía exclusiva ni conclusiones específicas de un hermano a otro.
+- Conservar bandera de riesgo si hubo antecedente de salida no estructurada.
+- Mantener bandera de riesgo cuando haya antecedentes de parseo fallido.
+- Reutilizar reglas institucionales sin perder especificidad local.
+- Aplicar deduplicación por unión para compresión lossless.
+- Transferir reglas institucionales y de calidad a nodos hermanos de la misma asignatura.
+- Reforzar deduplicación por unión semántica, no por recorte.
+- Si hay salida no estructurada, normalizar manualmente antes de aguas abajo.
+- Mantener continuidad del ADN editorial en ciclos siguientes.
+- Transferir a nodos hermanos reglas institucionales y de calidad comunes.
+- Cuando falte dato local, propagar plantilla base y preguntas abiertas.
+- Registrar en bitácora cada refuerzo lateral aplicado en ciclo.
+- Aplicar compresión por unión y deduplicación sin pérdida.
+- Conservar bandera de riesgo si hubo incidencias previas de parseo.
+- Cuando falten datos locales, propagar preguntas abiertas y plantilla base.
+- Aplicar deduplicación por unión semántica y conservar granularidad útil.
+- Transferir a nodos hermanos reglas institucionales, de estructura, calidad y trazabilidad.
+- Aplicar compresion lossless por union y deduplicacion.
+- Mantener bandera de riesgo cuando haya historial de salida no estructurada.
+- Escalar preguntas abiertas cuando falte consigna local.
+- Aplicar union y deduplicacion lossless en cada ciclo.
+- Conservar bandera de riesgo si hubo incidencias de parseo en ciclos previos.
+- Cuando falten datos locales, transferir plantilla base y preguntas abiertas.
+- Propagar recursivamente solo después de normalización y validación JSON.
+- Transferir solo patrones estables: identidad, estructura, calidad, conceptos recurrentes.
+- Registrar incidencias de parseo como riesgo técnico, no como evidencia académica.
+- Reforzar reglas institucionales comunes y mantener especificidad local cuando exista evidencia.
+- Escalar incidencias tecnicas de tokens/rutas al nodo de asignatura.
+- Propagar a nodos hermanos solo reglas reutilizables de identidad, estructura y calidad.
+- Si falta evidencia local, transferir plantilla base y abrir preguntas.
+- No convertir supuestos en hechos durante propagación lateral.
+- Propagar laterales con analogía controlada y sin sobreajuste temático.
+- Reutilizar reglas institucionales y de calidad como núcleo estable.
+- Aplicar deduplicación semántica continua en cada ciclo.
 
 ## open_questions
 
@@ -296,3 +1613,273 @@
 - Falta confirmar si actividad-3 corresponde a interpretacion juridica o a otra semana.
 - Falta confirmar si la bibliografia depurada de Semana 7 aplica a actividad-3.
 - Falta confirmar formato de entrega requerido en actividad-3: reporte, presentacion u otro.
+- Confirmar consigna textual exacta de actividad-3.
+- Confirmar formato de entrega requerido en actividad-3: reporte, presentación u otro.
+- Confirmar rúbrica específica de evaluación para ajustar profundidad argumentativa.
+- Confirmar fuentes obligatorias de la semana correspondiente.
+- Confirmar si actividad-3 reutiliza bibliografía existente o requiere .bib propio.
+- Confirmar archivo .tex principal para actividad-3.
+- Confirmar consigna textual exacta de Actividad 3.
+- Confirmar formato de entrega requerido: reporte, presentación u otro.
+- Confirmar rúbrica de evaluación específica de Actividad 3.
+- Confirmar bibliografía obligatoria de la semana correspondiente.
+- Confirmar si aplica o no la bibliografía depurada de Semana 7.
+- Confirmar nombre canónico final del .bib de la asignatura.
+- Supuesto: falta consigna textual de actividad-3; confirmar producto exacto solicitado.
+- Confirmar si actividad-3 requiere reporte, presentación u otro formato.
+- Confirmar rúbrica de evaluación específica para ajustar profundidad argumentativa.
+- Confirmar fuentes obligatorias de la semana correspondiente a actividad-3.
+- Confirmar si la bibliografía depurada de Semana 7 aplica o no a actividad-3.
+- Confirmar nombre canónico final del .bib de la asignatura tras resolver token Slug.
+- Confirmar formato de entrega requerido: reporte, presentacion u otro.
+- Confirmar rubrica de evaluacion para ajustar profundidad argumentativa.
+- Confirmar archivo .tex principal de Actividad 3.
+- Confirmar si bibliografia depurada de Semana 7 aplica a Actividad 3.
+- Confirmar formato de entrega requerido para actividad-3.
+- Confirmar rubrica de evaluacion especifica de actividad-3.
+- Confirmar si actividad-3 usa bibliografia propia o reutiliza .bib existente.
+- Confirmar archivo .tex principal canonico para actividad-3.
+- Confirmar si actividad-3 requiere reporte, presentacion u otro formato.
+- Confirmar rubrica de evaluacion especifica para profundidad argumentativa.
+- Confirmar si bibliografia depurada de Semana 7 aplica o no a actividad-3.
+- Confirmar nombre canonico final del archivo .bib en uso efectivo.
+- Confirmar consigna exacta de actividad-3.
+- Confirmar formato de entrega requerido en actividad-3.
+- Confirmar rúbrica de evaluación específica de actividad-3.
+- Confirmar bibliografía obligatoria específica de actividad-3.
+- Confirmar si actividad-3 corresponde a interpretación jurídica u otro tema.
+- Confirmar archivo .tex principal de actividad-3.
+- Confirmar si actividad-3 usa bibliografía de interpretación jurídica (Semana 7) o requiere .bib propio.
+- Confirmar archivo .tex principal canónico para actividad-3.
+- Confirmar formato de entrega de actividad-3: reporte, presentación u otro.
+- Confirmar rúbrica específica de evaluación para actividad-3.
+- Confirmar si actividad-3 corresponde a interpretación jurídica o a otra unidad.
+- Confirmar nombre canónico final del archivo .bib de la asignatura.
+- Confirmar si actividad-3 usa bibliografía de interpretación jurídica o requiere .bib propio.
+- Confirmar si actividad-3 reutiliza bibliografía depurada o requiere .bib propio.
+- Confirmar tipo de producto requerido en actividad-3 (reporte, presentación u otro).
+- Confirmar fuentes obligatorias de la semana de actividad-3.
+- Confirmar si aplica bibliografía depurada de Semana 7 a actividad-3.
+- Confirmar nombre canónico final del .bib de asignatura.
+- Confirmar si actividad-3 reutiliza bibliografia existente o requiere .bib propio.
+- Confirmar si aplica bibliografía de interpretación jurídica (Semana 7) en actividad-3.
+- Confirmar nombre canónico final del .bib de asignatura tras resolver token Slug.
+- Confirmar rúbrica específica de evaluación para profundidad argumentativa.
+- Confirmar si actividad-3 reutiliza bibliografía depurada de Semana 7 o requiere .bib propio.
+- Confirmar rúbrica específica para ajustar profundidad argumentativa.
+- Confirmar si actividad-3 reutiliza bibliografía depurada de Semana 7 o requiere .bib específico.
+- Confirmar formato de entrega requerido (reporte, presentación u otro).
+- Confirmar si filosofia-del-derecho-clean.bib aplica a actividad-3 [supuesto actual: no confirmado].
+- Supuesto: falta consigna textual exacta de actividad-3; confirmar producto solicitado.
+- Confirmar si el formato requerido es reporte, presentacion u otro.
+- Confirmar rubrica de evaluacion especifica para calibrar profundidad argumentativa.
+- Confirmar si actividad-3 reutiliza bibliografia depurada de Semana 7 o requiere .bib propio.
+- Confirmar nombre canonico final del archivo .bib de la asignatura.
+- Confirmar si filosofia-del-derecho-clean.bib aplica a actividad-3 o solo a Semana 7 [supuesto].
+- Confirmar rubrica de evaluacion especifica para ajustar profundidad argumentativa.
+- Confirmar si aplica bibliografia depurada de Semana 7 o se requiere .bib propio.
+- Confirmar nombre canonico final del .bib de asignatura tras resolver token Slug.
+- Confirmar nombre canonico final de artefacto .tex para actividad-3.
+- Confirmar si la bibliografía depurada de Semana 7 aplica o no a actividad-3 [supuesto].
+- Confirmar si actividad-3 usa bibliografía propia o reutiliza parte de la existente.
+- Confirmar archivo .tex principal canónico de actividad-3.
+- Confirmar rúbrica de evaluación específica para profundidad argumentativa.
+- Confirmar si actividad-3 usa bibliografía de interpretación jurídica o una distinta [supuesto].
+- Confirmar si actividad-3 corresponde a interpretación jurídica u otra unidad.
+- Confirmar si actividad-3 usa bibliografia general o requiere .bib especifico.
+- Confirmar formato de entrega de actividad-3 (reporte, presentacion u otro).
+- Confirmar si filosofia-del-derecho-clean.bib aplica a actividad-3 [supuesto].
+- Supuesto: falta consigna textual exacta de actividad-3; confirmar objetivo formal.
+- Confirmar si actividad-3 usa bibliografía propia o reutiliza parte de la base existente.
+- Confirmar si bibliografía de interpretación jurídica (Semana 7) aplica o no a actividad-3.
+- Confirmar si Actividad 3 usa bibliografía propia o reutiliza .bib existente.
+- Confirmar archivo .tex principal canónico para Actividad 3.
+- Confirmar bibliografía obligatoria de la semana de actividad-3.
+- Confirmar bibliografia obligatoria de la semana correspondiente.
+- Confirmar si actividad-3 pertenece a interpretacion juridica o a otro bloque tematico.
+- Confirmar archivo .tex principal y nombre final del artefacto.
+- Confirmar rúbrica específica para profundidad argumentativa.
+- Confirmar si la bibliografía depurada de Semana 7 aplica o se requiere .bib propio.
+- Confirmar tipo de producto requerido: reporte, presentacion u otro.
+- Confirmar rubrica de evaluacion especifica.
+- Confirmar si la bibliografía depurada de Semana 7 aplica a actividad-3 [supuesto].
+- Confirmar archivo .tex principal real de actividad-3 en repositorio.
+- Confirmar fuentes obligatorias semanales no visibles en contexto local.
+- Confirmar rúbrica específica para calibrar profundidad argumentativa.
+- Confirmar bibliografía obligatoria propia de actividad-3.
+- Confirmar si aplica o no bibliografía depurada de Interpretación jurídica (Semana 7).
+- Confirmar nombre final canónico del .bib de asignatura.
+- Confirmar si la actividad-3 usa reporte, presentación u otro artefacto.
+- Confirmar fuentes obligatorias locales de la semana correspondiente.
+- Confirmar si filosofia-del-derecho-clean.bib aplica o si se requiere .bib específico.
+- Confirmar rubrica especifica de evaluacion para actividad-3.
+- Confirmar si la bibliografia depurada de Semana 7 aplica o no a actividad-3.
+- Confirmar nombre canonico final del archivo .bib de la asignatura tras resolver token Slug.
+- Confirmar formato de entrega requerido para actividad-3 (reporte, presentación u otro).
+- Confirmar rúbrica específica de evaluación de actividad-3.
+- Confirmar bibliografía obligatoria local de actividad-3.
+- Supuesto: la bibliografía depurada de Semana 7 puede no aplicar a actividad-3; validar.
+- Confirmar nombre canónico final del .bib operativo de la asignatura.
+- Confirmar consigna exacta de Actividad 3.
+- Confirmar formato de entrega de Actividad 3 (reporte, presentación u otro).
+- Confirmar formato de entrega requerido en actividad-3 (reporte, presentacion u otro).
+- Confirmar rubrica de evaluacion especifica para actividad-3.
+- Confirmar formato requerido: reporte, presentación u otro.
+- Confirmar rúbrica de evaluación específica.
+- Confirmar fuentes obligatorias de la semana de Actividad 3.
+- Confirmar si aplica bibliografía depurada de interpretación jurídica.
+- Confirmar bibliografia obligatoria de actividad-3.
+- Confirmar si aplica bibliografia depurada de Semana 7 a actividad-3.
+- Confirmar si actividad-3 usa bibliografia depurada de Semana 7 o requiere .bib propio.
+- Confirmar nombre canonico final del .bib de la asignatura tras resolver tokens Slug.
+- Confirmar si actividad-3 corresponde a interpretacion juridica u otro tema.
+- Confirmar si la bibliografia depurada de Semana 7 aplica en actividad-3 [supuesto].
+- Confirmar formato requerido de entrega: reporte, presentacion u otro.
+- Confirmar rubrica especifica de evaluacion para calibrar profundidad argumentativa.
+- Confirmar si aplica o no la bibliografia depurada de Semana 7.
+- Confirmar nombre canonico final del .bib operativo para actividad-3.
+- Confirmar si actividad-3 usa bibliografía propia o reutiliza .bib existente.
+- Confirmar si actividad-3 usa bibliografía base o requiere .bib específico.
+- Confirmar formato de entrega requerido en Actividad 3.
+- Confirmar si Actividad 3 usa reporte, presentación u otro artefacto principal.
+- Confirmar nombre canónico final del .bib de asignatura y su uso por actividad.
+- Confirmar si actividad-3 reutiliza bibliografía de Semana 7 o requiere .bib propio.
+- Confirmar rúbrica de evaluación específica para calibrar profundidad argumentativa.
+- Confirmar si actividad-3 corresponde a interpretación jurídica o a otro tema.
+- Confirmar archivo .tex principal y .bib operativo para actividad-3.
+- Confirmar si actividad-3 usa filosofia-del-derecho.bib, filosofia-del-derecho-clean.bib o un .bib propio.
+- Confirmar si aplica bibliografía de interpretación jurídica o se requiere .bib propio.
+- Confirmar nombre canónico final del archivo .bib en la asignatura.
+- Confirmar rúbrica específica de evaluación para calibrar profundidad argumentativa.
+- Confirmar si aplica bibliografía depurada de Semana 7 a Actividad 3.
+- Confirmar nombre final del .bib canónico si se corrigen tokens Slug.
+- Confirmar formato de entrega de actividad-3: reporte, presentacion u otro.
+- Confirmar si la bibliografia depurada de Semana 7 aplica a actividad-3 [supuesto].
+- Confirmar nombre canonico final del .bib de asignatura si persisten tokens sin expandir.
+- Confirmar bibliografia obligatoria de la semana de actividad-3.
+- Confirmar si actividad-3 trata interpretacion juridica o otro tema.
+- Confirmar formato requerido de entrega en actividad-3 (reporte, presentación u otro).
+- Confirmar rúbrica de evaluación específica para actividad-3.
+- Confirmar bibliografía obligatoria de actividad-3.
+- Confirmar archivo .tex principal y nombre canónico final del .bib.
+- Confirmar bibliografía obligatoria de la semana correspondiente a actividad-3.
+- Confirmar nombre final del archivo .bib canónico en esta asignatura.
+- Confirmar bibliografía obligatoria de la semana de Actividad 3.
+- Confirmar nombre final del .bib canónico de asignatura tras resolver tokens Slug.
+- Confirmar si la bibliografía depurada de interpretación jurídica aplica o no a actividad-3.
+- Confirmar si actividad-3 reutiliza bibliografía depurada de Semana 7 [supuesto].
+- Confirmar si aplica bibliografía depurada de Interpretación jurídica (Semana 7) a Actividad 3 [supuesto].
+- Confirmar nombre final del .bib canónico de asignatura.
+- Confirmar formato requerido: reporte, presentacion u otro.
+- Confirmar nombre canónico final del .bib operativo para actividad-3.
+- Confirmar formato de entrega requerido para actividad-3 (reporte, presentacion u otro).
+- Confirmar si la bibliografia depurada de Semana 7 aplica o se requiere .bib especifico.
+- Confirmar formato de entrega requerido en actividad-3: reporte, presentacion u otro.
+- Confirmar si actividad-3 reutiliza bibliografia depurada de Semana 7.
+- Confirmar si la bibliografía depurada de Semana 7 aplica a Actividad 3 [supuesto].
+- Confirmar si actividad-3 usa filosofia-del-derecho.bib, clean.bib o un .bib específico.
+- Confirmar rubrica de evaluacion especifica de Actividad 3.
+- Confirmar si bibliografia depurada de Semana 7 aplica o no a Actividad 3 [supuesto].
+- Confirmar archivo .tex principal canonico para Actividad 3.
+- Confirmar nombre final canónico del .bib tras resolver token Slug en documentos guía.
+- Confirmar fuentes obligatorias de la semana correspondiente a Actividad 3.
+- Confirmar si aplica bibliografía de Interpretación jurídica (Semana 7) [supuesto].
+- Confirmar si el formato requerido es reporte, presentación u otro.
+- Confirmar nombre canónico final del archivo .bib en el repositorio.
+- Confirmar título y subtítulo documentales correctos para actividad-3.
+- Confirmar rúbrica específica de evaluación para Actividad 3.
+- Confirmar si la bibliografía de Semana 7 aplica o si se requiere .bib propio.
+- Confirmar archivo .tex principal canónico de Actividad 3.
+- Supuesto: faltan lineamientos locales completos en la evidencia mostrada.
+- Confirmar si bibliografía depurada de Semana 7 aplica a actividad-3 [supuesto].
+- Confirmar tipo de entrega requerido: reporte, presentación u otro.
+- Confirmar si bibliografía de Semana 7 aplica o no a Actividad 3 [supuesto].
+- [supuesto] Falta consigna textual exacta de Actividad 3.
+- Confirmar bibliografía obligatoria propia de Actividad 3.
+- Confirmar si la bibliografía depurada de Semana 7 aplica o no a Actividad 3.
+- Confirmar archivo .tex principal canónico para esta actividad.
+- Confirmar tema real de actividad-3 y su semana correspondiente.
+- Confirmar bibliografia obligatoria especifica de actividad-3.
+- Confirmar si aplica o no la bibliografia depurada de interpretacion juridica.
+- Confirmar nombre canonico final del .bib de la asignatura tras resolver token Slug.
+- Confirmar si aplica bibliografía de interpretación jurídica de Semana 7 [supuesto].
+- Confirmar si actividad-3 reutiliza bibliografia depurada o requiere .bib propio.
+- Confirmar si actividad-3 usa filosofia-del-derecho.bib o requiere .bib dedicado.
+- Confirmar si bibliografia depurada de Semana 7 aplica o no en actividad-3.
+- Confirmar nombre canónico final del .bib tras resolver token Slug.
+- Confirmar si actividad-3 usa reporte-filosofia-del-derecho-Actividad-3.tex como archivo principal.
+- Confirmar si la bibliografía depurada de Semana 7 aplica a actividad-3.
+- Confirmar si actividad-3 reutiliza .bib general o requiere set específico.
+- Confirmar archivo .tex principal definitivo para actividad-3.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad UnADM
+- Integridad académica
+- Problema jurídico
+- Análisis propio
+- Conclusión jurídica transferible
+- Bibliografía verificable
+- Se consolida memoria lateral para actividad-3 con base reusable de actividad-1
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Usar estructura minima: problema, conceptos/fuentes, analisis propio, conclusion juridica transferible.
+- Ajustar el producto al tipo solicitado por la planeacion semanal.
+- Conservar consistencia con README y programa analitico de la asignatura.
+- Usar estructura mínima: problema, conceptos y fuentes, análisis propio, conclusión jurídica transferible.
+- Ajustar el producto al tipo solicitado por la planeación semanal.
+- Conservar consistencia con README y programa analítico de la asignatura.
+
+### identidad_estilistica
+- Encuadre breve al inicio.
+- Secciones explícitas y orden lógico.
+- Citas verificables en cada afirmación relevante.
+- Supuestos marcados cuando falte evidencia local.
+- Cierre jurídico aplicable a práctica profesional.
+- Mantener identidad institucional UnADM en tono y formato.
+- Vincular actividad-3 a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Usar la carpeta de asignatura como punto de entrada canónico.
+- Marcar como supuesto cualquier dato no visible en la consigna local.
+- Tratar memorias Codex/GPT-Pro como antecedente editorial provisional, no como fuente académica.
+- Citar malla-curricular-derecho-unadm.pdf solo para ubicación curricular.
+- Mantener identidad institucional UnADM en toda actividad.
+
+### patrones_argumentativos
+- Problema -> conceptos y marco -> análisis propio -> conclusión jurídica.
+- Afirmación -> evidencia -> interpretación -> postura.
+- Consistencia entre objetivo, desarrollo y cierre.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Definir objetivo puntual de la actividad antes del desarrollo.
+- Separar secciones en: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear el documento al producto solicitado por la planeación semanal.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Si no hay consigna local, usar estructura base y marcar supuestos.
+- Heredar reglas válidas de actividad-1 sin copiar redacción literal ni conclusiones específicas.
+- Incluir postura argumentada del estudiante; evitar entrega solo descriptiva.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+
+### grafo_de_conocimiento
+- Conceptos: 1463
+- Citas: 36
+- Relaciones reforzadas: 704
+- Evidencias: 640
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/reporte-filosofia-del-derecho-Actividad-3.tex`
+- Caracteres LaTeX preservados: 25242
+- Bloques/parrafos indexados: 74
+- Claves citadas: rodriguezFilosofiaDerecho2020, finnisEstudiosTeoriaDerecho2017, scjnMatrimonio2015, garciaMaynez2002, lastraConceptosJuridicosFundamentales, poderJudicialGto2007, launDerechoMoral2021, rojas-gonzalezFilosofiaDerecho2018
+- Claves sin referencia: ninguna

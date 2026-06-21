@@ -75,6 +75,256 @@
 - Compresión lossless por unión y deduplicación sin recorte.
 - Conservar control histórico de salidas no JSON parseable como puerta de calidad.
 - Memoria local consolidada de Actividad 1 de Filosofía del Derecho con identidad UnADM.
+- Memoria local canonizada con preservacion total y deduplicacion lossless.
+- Se mantiene identidad UnADM y contexto curricular verificable de Filosofia del Derecho.
+- Se mantiene regla de normalizacion estructurada obligatoria antes de propagar.
+- Se conserva ADN editorial: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se preserva TEX reconstruible del nodo con fuente primaria de Actividad 1.
+- Memoria local canonizada por unión y deduplicación sin pérdida.
+- Se preserva identidad UnADM y ubicación curricular verificable.
+- Se consolidan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se conserva TEX reconstruible del nodo con fuente principal de Actividad 1.
+- Se refuerza control de supuestos ante consigna no visible.
+- Memoria local canonizada para Actividad 1 de Filosofía del Derecho con identidad UnADM.
+- Se preserva normalización estructurada obligatoria antes de toda propagación.
+- Se consolidan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.
+- Se mantiene compresión lossless por unión y deduplicación semántica.
+- Se refuerza que existen tokens Slug sin expandir en README y programa analítico [supuesto verificado localmente].
+- Se conserva TEX reconstruible y ADN editorial completo del nodo.
+- Memoria local canonizada sin pérdida por unión y deduplicación.
+- Se mantiene identidad UnADM y encuadre curricular verificable.
+- Se preserva regla crítica: no propagar salidas no estructuradas sin normalización.
+- Se conserva trazabilidad LaTeX reconstruible del artefacto de Actividad 1.
+- Memoria local canonizada y deduplicada para Actividad 1 de Filosofía del Derecho en UnADM.
+- Se preserva normalización estructurada obligatoria antes de cualquier propagación recursiva.
+- Se mantienen ejes editoriales fijos: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.
+- Se conserva trazabilidad de fuentes locales y se marcan como supuesto los datos no visibles en la consigna.
+- Se refuerza compatibilidad LaTeX/BibTeX con TEX reconstruible y claves estables.
+- Memoria local consolidada en ciclo 3 con deduplicación lossless.
+- Se mantiene normalización JSON obligatoria antes de propagar.
+- Se refuerzan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se conserva TEX reconstruible y continuidad de claves de cita.
+- Memoria local canonizada sin pérdidas por unión y deduplicación.
+- Se mantiene normalización JSON obligatoria antes de cualquier propagación.
+- Se refuerza trazabilidad TEX reconstruible de Actividad 1.
+- Memoria local canonizada de Actividad 1 con identidad UnADM y deduplicación lossless.
+- Se conserva normalización estructurada obligatoria antes de propagar.
+- Se mantiene trazabilidad de fuentes heredadas no verificadas como provisionales.
+- Se preserva TEX reconstruible y consistencia con el nodo de asignatura.
+- Se preserva identidad UnADM y contexto curricular de Filosofía del Derecho.
+- Se mantiene normalización estructurada obligatoria antes de toda propagación.
+- Se conserva TEX reconstruible y trazabilidad de fuentes locales verificables.
+- Se refuerza control de supuestos cuando falte consigna textual de Actividad 1.
+- Se mantiene compresión lossless por unión y deduplicación.
+- Se preserva TEX reconstruible y ADN editorial completo del nodo.
+- Se mantiene identidad UnADM y contexto curricular verificable.
+- Se mantiene regla de normalización obligatoria antes de cualquier propagación.
+- Se conserva TEX reconstruible de Actividad 1 y trazabilidad de fuentes locales.
+- Memoria local consolidada de Actividad 1 en Filosofía del Derecho con identidad UnADM.
+- Se mantiene normalización estructurada obligatoria antes de cualquier propagación.
+- Se confirma compresión lossless por unión y deduplicación sin recorte semántico.
+- Se preserva TEX reconstruible y trazabilidad de fuentes locales.
+- Se mantiene normalización JSON obligatoria antes de propagación.
+- Se preserva TEX reconstruible de Actividad 1 como fuente principal.
+- Se mantiene normalización estructurada obligatoria antes de propagación.
+- Se conserva trazabilidad de fuentes provisionales no verificadas y su estado.
+- Se refuerza regla de resolver tokens Slug no expandidos en README y programa analítico.
+- Memoria local canonizada de Actividad 1 en Filosofía del Derecho con identidad UnADM.
+- Se refuerza que fuentes heredadas no verificadas quedan como provisionales.
+- Se mantiene bloqueo de salidas no parseables JSON.
+- Se conserva identidad UnADM y ubicación curricular verificable.
+- Se refuerza que Actividad 1 usa TEX reconstruible existente y control de fuentes verificables.
+- Memoria local consolidada sin pérdidas por unión y deduplicación.
+- Se mantiene identidad UnADM y foco en Actividad 1 de Filosofía del Derecho.
+- Se preserva normalización estructurada obligatoria antes de propagar.
+- Se preserva normalización estructurada obligatoria antes de cualquier propagación.
+- Se mantiene compresión lossless por unión y deduplicación sin recorte semántico.
+- Se refuerza trazabilidad de fuentes locales y marca de supuestos cuando falte consigna.
+- Memoria de Actividad 1 canonizada por unión y deduplicación lossless.
+- Se mantiene identidad institucional UnADM y ubicación curricular verificable.
+- Se conserva normalización estructurada obligatoria antes de propagación.
+- Se preserva TEX reconstruible del nodo y consistencia con .bib local.
+- Se mantiene distinción entre bibliografía base de actividad y bibliografía de Semana 7.
+- Se consolidan fuentes heredadas no verificadas como provisionales.
+- Se mantiene bloqueo de propagación ante salidas no JSON parseables.
+- Memoria local canonizada con preservación total y deduplicación lossless.
+- Se mantiene identidad UnADM y encuadre de Filosofía del Derecho para Actividad 1.
+- Se conserva normalización estructurada obligatoria antes de cualquier propagación.
+- Se preserva TEX reconstruible y trazabilidad de fuentes locales verificables.
+- Se confirma estado provisional de datos no visibles en consigna con marca de supuesto.
+- Memoria local canonizada para Actividad 1 de Filosofía del Derecho en UnADM.
+- Se mantienen ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se mantiene trazabilidad de salidas no parseables previas como incidencias históricas.
+- Se refuerza que existe TEX reconstruible y ADN editorial completo del nodo.
+- Se preserva identidad UnADM y contexto curricular verificable.
+- Se refuerza que el nodo tiene TEX reconstruible y fuente primaria definida.
+- Se conservan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se refuerza que la Actividad 1 usa artefacto base tipo reporte.
+- Se mantiene trazabilidad a README, programa analítico y .tex reconstruible.
+- Se preserva TEX reconstruible del nodo y reglas de compilación confiable.
+- Se refuerza control de supuestos cuando falta consigna textual verificable.
+- Se preserva identidad UnADM y encuadre curricular verificable.
+- Se conserva TEX reconstruible y trazabilidad de fuentes locales.
+- Canon editorial vigente: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.
+- Se preserva compresión lossless por unión y deduplicación sin recorte semántico.
+- Se confirma TEX reconstruible y nodo con fuente trazable.
+- Se mantiene control de supuestos para datos no visibles en consigna.
+- Memoria local canonizada con identidad UnADM para Actividad 1 de Filosofía del Derecho.
+- Se confirma existencia de TEX reconstruible y trazabilidad de fuentes locales.
+- Memoria de actividad consolidada y deduplicada para Filosofía del Derecho con identidad UnADM.
+- Se conserva compresión lossless por unión y deduplicación, sin recorte semántico.
+- Se refuerza que las salidas no parseables de ciclos previos son provisionales hasta normalización.
+- Se conserva trazabilidad de fuentes heredadas no verificadas como provisionales.
+- Se refuerza que existe TEX reconstruible y núcleo editorial persistente.
+- Se preserva TEX reconstruible y continuidad de reglas de calidad.
+- Se preserva TEX reconstruible y reglas de citas con claves estables.
+- Se sostienen ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se conserva TEX reconstruible del nodo y control de claves BibTeX estables.
+- Se refuerza que fuentes heredadas no verificadas se tratan como provisionales.
+- Memoria de Actividad 1 consolidada y estable con identidad UnADM.
+- Se confirma compresión lossless por unión y deduplicación sin recorte.
+- Se mantiene regla de bloqueo ante salidas no JSON parseables.
+- Memoria local canonizada por unión y deduplicación lossless.
+- Memoria local canonizada de Actividad 1 para Filosofía del Derecho con identidad UnADM.
+- Se mantiene compresión lossless por unión y deduplicación, sin recorte semántico.
+- Se mantiene identidad UnADM y ubicacion curricular verificable desde README.
+- Se mantiene regla de normalizacion estructurada previa a toda propagacion.
+- Se refuerzan ejes editoriales: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se conserva TEX reconstruible de Actividad 1 y control de claves BibTeX estables.
+- Supuesto: la consigna textual de Actividad 1 no esta visible y debe confirmarse.
+- Se aplica compresión lossless por unión y deduplicación sin recorte semántico.
+- Se confirma base curricular local: semestre 1, bloque 2, obligatoria, 8 créditos [verificado en README].
+- Se preserva TEX reconstruible del nodo y trazabilidad de citas.
+- Se refuerza que fuentes heredadas no verificadas son provisionales.
+- Se mantiene que la consigna de Actividad 1 sigue pendiente de confirmación explícita.
+- Se mantiene identidad UnADM y enfoque de Actividad 1 en Filosofia del Derecho.
+- Se conserva regla critica: no propagar salidas no estructuradas sin normalizacion JSON.
+- Se conserva TEX reconstruible del nodo y su traza bibliográfica.
+- Se refuerza distinción entre bibliografía base y bibliografía específica de Actividad 1.
+- Se mantiene manejo de fuentes heredadas no verificadas como provisionales.
+- Se mantiene identidad UnADM y normalizacion estructurada obligatoria antes de propagar.
+- Se consolidan ejes editoriales: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se conserva TEX reconstruible del nodo y trazabilidad de fuentes locales verificables.
+- Se refuerza regla de marcar como supuesto todo dato no visible en la consigna.
+- Se conserva trazabilidad de fuentes provisionales no verificadas como supuestos.
+- Se preserva TEX reconstruible y metadatos de compilación del nodo.
+- Se refuerza control de supuestos cuando falta consigna textual de Actividad 1.
+- Se preserva TEX reconstruible y trazabilidad de claves de cita.
+- Memoria local canonizada y deduplicada sin pérdida de reglas útiles.
+- Se mantiene identidad UnADM para Actividad 1 de Filosofía del Derecho.
+- Se preserva normalización JSON obligatoria antes de cualquier propagación.
+- Se conserva trazabilidad de fuentes provisionales y supuestos explícitos.
+- Se preserva TEX reconstruible y continuidad del artefacto reporte-filosofia-del-derecho-Actividad-1.
+- Se preserva TEX reconstruible de Actividad 1 y su traza bibliográfica.
+- Se refuerza regla de marcar supuestos cuando la consigna no sea visible.
+- Se conserva trazabilidad de salidas no parseables previas como riesgo controlado.
+- Se preserva identidad UnADM para Actividad 1 de Filosofía del Derecho.
+- Se conserva regla crítica: no propagar salidas no estructuradas sin normalización JSON.
+- Se refuerza trazabilidad a README y programa analítico como fuentes locales verificables.
+- Se mantiene TEX reconstruible y continuidad del artefacto reporte-filosofia-del-derecho-Actividad-1.
+- Se preserva compresión lossless por unión y deduplicación.
+- Se refuerza que el TEX fuente es reconstruible y no debe degradarse.
+- Memoria local consolidada y deduplicada para Actividad 1 de Filosofía del Derecho.
+- Se mantiene identidad UnADM y ubicación curricular verificable: semestre 1, bloque 2, obligatoria, 8 créditos.
+- Se conserva ADN editorial reconstructible desde TEX primario y fuentes locales.
+- Se mantiene identidad UnADM y contexto curricular de Filosofía del Derecho.
+- Se conserva normalización JSON obligatoria antes de toda propagación.
+- Memoria local canonizada y deduplicada sin pérdida semántica.
+- Se refuerza uso de supuestos explícitos cuando falte consigna textual.
+- Memoria local consolidada y deduplicada para Actividad 1 de Filosofía del Derecho con identidad UnADM.
+- Se mantiene la regla de normalización estructurada obligatoria antes de toda propagación.
+- Se preservan ejes editoriales canónicos: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se refuerza compresión lossless por unión y deduplicación sin recorte semántico.
+- Se mantiene estado provisional de fuentes heredadas no verificadas.
+- Se consolida control de calidad: JSON parseable, consistencia cita-.bib y alineación con consigna.
+- Memoria local canonizada con preservación total y deduplicación semántica.
+- Se mantiene identidad UnADM y contexto curricular verificable de Filosofía del Derecho.
+- Se mantiene bloqueo de propagación para salidas no parseables y obligación de normalización.
+- Se preserva identidad UnADM y normalización estructurada obligatoria.
+- Se refuerza validación de consigna específica antes de redactar Actividad 1.
+- Memoria de Actividad 1 consolidada y deduplicada sin pérdida.
+- Se conserva regla de normalización estructurada previa a toda propagación.
+- Se preserva TEX reconstruible del nodo y su trazabilidad local.
+- Se mantiene identidad UnADM y ubicación curricular verificable de Filosofía del Derecho.
+- Se conserva regla de normalización estructurada previa a cualquier propagación.
+- Se preserva TEX reconstruible del nodo y consistencia con artefacto de Actividad 1.
+- Se mantiene normalización obligatoria antes de cualquier propagación.
+- Se mantiene identidad UnADM y normalización estructurada obligatoria.
+- Se conserva TEX reconstruible del nodo con trazabilidad de fuentes locales.
+- Se refuerza control de calidad: JSON válido, supuestos marcados y citas verificables.
+- Memoria de Actividad 1 consolidada y estable para Filosofía del Derecho en UnADM.
+- Se mantiene bloqueo de propagación para salidas no JSON parseables.
+- Se refuerza uso del TEX reconstruible de Actividad 1 como ancla editorial.
+- Se preserva identidad UnADM y enfoque de Actividad 1 en Filosofía del Derecho.
+- Memoria de Actividad 1 consolidada y deduplicada con preservación total.
+- Se conserva normalización estructurada obligatoria antes de toda propagación.
+- Se fijan ejes editoriales permanentes: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se preserva TEX reconstruible del nodo y trazabilidad de citas locales.
+- Memoria local consolidada y deduplicada para Actividad 1 de Filosofía del Derecho en UnADM.
+- Se preserva la normalización estructurada obligatoria antes de toda propagación.
+- Se mantienen ejes editoriales canónicos: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se conserva reconstrucción TeX verificable del nodo con fuente primaria existente.
+- Se refuerza que la compresión es lossless por unión y deduplicación, sin recorte de reglas útiles.
+- Memoria local de Actividad 1 consolidada y deduplicada sin pérdida.
+- Se mantiene identidad UnADM y ubicación curricular verificable.
+- Se preserva normalización estructurada obligatoria antes de propagación.
+- Se conserva trazabilidad TEX reconstruible y control de citas.
+- Se preserva la normalización estructurada obligatoria antes de propagar.
+- Se confirma base curricular local: semestre 1, bloque 2, obligatoria, 8 créditos.
+- Se refuerza que fuentes heredadas no verificadas permanecen como provisionales.
+- Se conserva trazabilidad de incidencias previas de salidas no JSON parseables como control de calidad.
+- Memoria local canonizada de Actividad 1 con identidad UnADM y compresión lossless por deduplicación.
+- Se refuerza que fuentes heredadas no verificadas permanecen provisionales.
+- Memoria de Actividad 1 consolidada y deduplicada sin perdida semantica.
+- Se mantiene identidad UnADM y canon local de Filosofia del Derecho.
+- Se preserva normalizacion estructurada obligatoria antes de propagacion.
+- Se sostienen ejes editoriales: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se mantiene regla de compresion lossless por union y deduplicacion.
+- Se conserva trazabilidad a README, programa analítico y TEX reconstruible del nodo.
+- Se aplica compresión lossless por unión y deduplicación sin recorte de reglas útiles.
+- Se mantiene control de fuentes provisionales con marca de supuesto.
+- Supuesto: la consigna textual completa de Actividad 1 no está visible.
+- Memoria local canonizada y deduplicada sin pérdida.
+- Se conserva TEX reconstruible y reglas de trazabilidad bibliográfica.
+- Se refuerza manejo de fuentes provisionales con marca explícita de supuesto.
+- Se canonizan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se preserva compresión lossless por unión y deduplicación semántica.
+- Se confirma que existe TEX reconstruible del nodo y debe preservarse sin recorte.
+- Se conserva TEX reconstruible y continuidad de claves bibliográficas.
+- Se confirma fuente curricular local: README + malla-curricular-derecho-unadm.pdf.
+- Se conserva TEX reconstruible y trazabilidad de claves de cita.
+- Se preserva normalización estructurada obligatoria antes de propagación recursiva.
+- Memoria de actividad canonizada para Filosofía del Derecho con identidad UnADM.
+- Ejes editoriales vigentes y obligatorios: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se refuerza correspondencia entre producto solicitado y consigna específica de Actividad 1.
+- Se mantiene control de fuentes provisionales y marcación explícita de supuestos.
+- Memoria local canonizada con compresión lossless por unión y deduplicación.
+- Se conserva TEX reconstruible y continuidad del nodo actividad-1.
+- Se refuerza compatibilidad con TEX reconstruible y claves BibTeX estables.
+- Se mantiene estado de fuentes heredadas no verificadas como provisionales.
+- Se refuerza que el nodo tiene TEX reconstruible y trazabilidad de citas.
+- Memoria de Actividad 1 canonizada con compresión lossless por unión y deduplicación.
+- Memoria local canonizada con deduplicación lossless y preservación total de reglas útiles.
+- Se conserva normalización estructurada obligatoria antes de cualquier propagación recursiva.
+- Persisten ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se refuerza control de fuentes provisionales y marcado explícito de supuestos cuando falte consigna.
+- Memoria local canonizada por union y deduplicacion sin perdida.
+- Se preserva identidad UnADM y ubicacion curricular verificable.
+- Se mantiene normalizacion JSON obligatoria antes de propagar.
+- Se preserva TEX reconstruible y reglas de compilacion estables.
+- Se mantiene distincion entre bibliografia base y bibliografia especifica por actividad.
+- Se refuerza control de supuestos cuando falte consigna textual.
+- Se mantiene identidad UnADM y marco curricular verificable de Filosofía del Derecho.
+- Se refuerza normalización obligatoria: no propagar salidas no estructuradas.
+- Se preserva TEX reconstruible y control de consistencia entre .tex y .bib.
+- Se mantiene identidad institucional UnADM y marco curricular verificado.
+- Se conserva normalizacion estructurada obligatoria antes de cualquier propagacion.
+- Se preservan ejes editoriales canonicos: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se refuerza que la compresion es por union y deduplicacion, no por recorte.
+- Se conserva la normalización estructurada obligatoria antes de cualquier propagación.
+- Se mantiene estado provisional de salidas heredadas no parseables hasta validación local.
+- Se conserva TEX reconstruible del nodo y su trazabilidad bibliográfica.
+- Se refuerza regla de compresión lossless por unión y deduplicación sin recorte semántico.
 
 ## identity_rules
 
@@ -103,6 +353,32 @@
 - Citar malla-curricular-derecho-unadm.pdf para ubicación curricular.
 - Marcar como supuesto todo dato no visible en la consigna.
 - Ubicar curricularmente en semestre 1, bloque 2, obligatoria, 8 créditos.
+- Vincular la actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Usar la carpeta de asignatura como punto de entrada canonico.
+- Citar malla-curricular-derecho-unadm.pdf como fuente de ubicacion curricular.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- Vincular Actividad 1 a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Citar malla-curricular-derecho-unadm.pdf como respaldo de ubicación curricular.
+- Fuente provisional registrada: Codex.
+- Fuente provisional registrada: GPT-Pro desde Actividad 1.
+- Citar malla-curricular-derecho-unadm.pdf como base de ubicación curricular.
+- Registrar explícitamente cuando una inferencia provenga de README o programa analítico.
+- Mantener integridad académica con citas verificables.
+- Citar malla-curricular-derecho-unadm.pdf como soporte de ubicación curricular.
+- Citar malla-curricular-derecho-unadm.pdf como fuente curricular.
+- Registrar fuente provisional Codex y GPT-Pro solo como antecedente no canónico.
+- Fuente provisional registrada: GPT-Pro en ciclos previos.
+- Vincular actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Usar carpeta de asignatura como punto de entrada canónico.
+- Vincular explícitamente la actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Citar malla-curricular-derecho-unadm.pdf como sustento de ubicación curricular.
+- Registrar fuente provisional GPT-Pro y Codex solo como antecedentes no canónicos.
+- Usar la carpeta de asignatura como entrada canónica.
+- Tratar fuentes heredadas no verificadas como provisionales hasta validación local.
+- Respaldar ubicación curricular con malla-curricular-derecho-unadm.pdf.
+- Tratar salidas históricas de Codex y GPT-Pro sin JSON parseable como insumo provisional.
+- Fuente provisional detectada: GPT-Pro en ciclo previo.
+- Citar malla-curricular-derecho-unadm.pdf como base de ubicacion curricular.
 
 ## structure_rules
 
@@ -116,6 +392,21 @@
 - Separar secciones en: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
 - Separar secciones en conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
 - Alinear la entrega al producto solicitado por la planeación semanal.
+- Iniciar con encuadre breve del problema juridico o social.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear la entrega al producto solicitado por la planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Convertir formato final a reporte, presentación o producto visual según consigna.
+- Adaptar el formato final según consigna: reporte, presentación o producto visual.
+- Definir objetivo puntual de la actividad antes del desarrollo.
+- Usar títulos de sección coherentes con el producto de Actividad 1.
+- Transformar la planeacion en reporte, presentacion o producto visual segun consigna.
+- Separar en: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear entrega al producto solicitado por la planeación semanal.
+- Transformar planeación en reporte, presentación o producto visual según consigna.
+- Adaptar salida a reporte, presentación o producto visual solo según consigna.
+- Alinear el entregable al producto solicitado en la planeación semanal.
+- Permitir adaptación a reporte, presentación o producto visual según consigna.
 
 ## activity_rules
 
@@ -130,6 +421,27 @@
 - Incluir postura argumentada del estudiante, no solo resumen.
 - Evitar entregas solo descriptivas.
 - Verificar que el producto corresponda a la consigna de Actividad 1.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Incluir postura argumentada del estudiante; evitar entrega solo descriptiva.
+- Incluir postura argumentada del estudiante y evitar entregas solo descriptivas.
+- Incluir postura argumentada del estudiante y evitar resumen solo descriptivo.
+- Incluir postura argumentada del estudiante y evitar resumen meramente descriptivo.
+- Verificar que el producto final corresponda a la consigna específica de Actividad 1.
+- No asumir que fuentes de semanas posteriores aplican automáticamente a Actividad 1.
+- Incluir postura argumentada del estudiante y evitar resumen descriptivo puro.
+- Incluir postura argumentada del estudiante y evitar solo resumen descriptivo.
+- No asumir fuentes de semanas posteriores como validas para Actividad 1 sin confirmacion.
+- Verificar que el producto final corresponda a la consigna de Actividad 1.
+- Definir objetivo puntual de la Actividad 1.
+- No asumir que fuentes de semanas posteriores aplican a Actividad 1.
+- Incluir postura argumentada del estudiante y evitar entrega solo descriptiva.
+- No asumir fuentes de semanas posteriores como válidas para Actividad 1 sin confirmación.
+- Definir objetivo puntual de la Actividad 1 antes del desarrollo.
+- Incluir postura argumentada del estudiante y evitar texto solo descriptivo.
+- Validar que el producto final corresponda exactamente a la consigna de Actividad 1.
+- No asumir fuentes de semanas posteriores como obligatorias para Actividad 1.
+- No asumir fuentes de semanas posteriores como válidas para Actividad 1 sin evidencia.
 
 ## quality_gates
 
@@ -142,6 +454,12 @@
 - Revisar respuesta no estructurada antes de aplicar aguas abajo.
 - Revisar y normalizar respuestas no estructuradas antes de reutilizarlas.
 - Verificar correspondencia del producto con la consigna de Actividad 1.
+- Bloquear propagacion si la salida no es JSON parseable.
+- Revisar estructura minima completa antes de aplicar aguas abajo.
+- Validar correspondencia del producto con la consigna de Actividad 1.
+- Revisar y normalizar toda respuesta no estructurada antes de reutilizarla.
+- Validar correspondencia entre tipo de producto y consigna vigente.
+- Normalizar toda salida no estructurada antes de reutilizarla.
 
 ## latex_rules
 
@@ -163,6 +481,36 @@
 - Supuesto: archivo .bib canónico esperado por Slug es filosofia-del-derecho.bib.
 - Mantener claves BibTeX estables y originales.
 - Conservar claves BibTeX del .bib tal como aparecen en el .tex.
+- Usar codificacion y acentos correctos en espanol en .tex y .bib.
+- Evitar comandos no estandar sin justificacion editorial.
+- Compilar sin errores criticos y sin referencias rotas.
+- Corregir caracteres anomalos en rutas o nombres antes de compilar.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analitico.
+- Supuesto: archivo .bib canonico esperado es filosofia-del-derecho.bib por Slug del README.
+- Verificar nombres de archivos en README y programa analítico antes de referenciarlos.
+- Verificar nombres de archivo en README y programa analítico antes de referenciarlos.
+- Supuesto: el .bib canónico esperado es filosofia-del-derecho.bib por Slug local.
+- Verificar nombres de archivo del README antes de referenciarlos.
+- Verificar nombres de archivo contra README antes de referenciarlos.
+- Supuesto: archivo .bib canónico esperado es filosofia-del-derecho.bib según Slug del README.
+- Verificar nombres de archivos definidos en README antes de referenciarlos.
+- Supuesto: archivo .bib canónico esperado es filosofia-del-derecho.bib por Slug local.
+- Compilar sin errores criticos ni referencias rotas.
+- Verificar nombres de archivo contra README antes de referenciar.
+- Supuesto: archivo .bib canonico esperado es filosofia-del-derecho.bib por Slug.
+- Verificar nombres de archivo contra README y programa analítico.
+- Supuesto: el .bib canónico esperado es filosofia-del-derecho.bib por Slug del README.
+- Verificar nombres de archivo contra README y programa analítico antes de referenciar.
+- Supuesto: el archivo .bib canónico esperado es filosofia-del-derecho.bib según Slug del README.
+- Supuesto: el .bib canónico esperado es filosofia-del-derecho.bib por Slug declarado.
+- Verificar nombres de archivos en README antes de referenciarlos.
+- Compilar sin errores críticos ni referencias rotas.
+- Verificar nombres de archivos desde README antes de referenciarlos.
+- Mantener claves BibTeX estables para evitar rupturas de compilación.
+- Corregir caracteres anómalos en rutas y nombres.
+- Supuesto: archivo .bib canónico es filosofia-del-derecho.bib según Slug del README.
+- Supuesto: archivo .bib canonico esperado es filosofia-del-derecho.bib segun Slug del README.
+- Supuesto: el .bib canonico esperado es filosofia-del-derecho.bib por Slug del README.
 
 ## bibliography_rules
 
@@ -183,6 +531,28 @@
 - Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 sobre interpretación jurídica y no a Actividad 1.
 - Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 (interpretación jurídica) y no a Actividad 1.
 - Conservar claves BibTeX del .bib tal como aparecen en el .tex.
+- Priorizar fuentes institucionales UnADM y materiales juridicos verificables.
+- Registrar fuentes especificas de la actividad en el .bib de la asignatura.
+- Distinguir bibliografia base de bibliografia especifica de actividad.
+- Conservar metadatos minimos: autor, titulo, ano, fuente editorial o URL.
+- Supuesto: filosofia-del-derecho-clean.bib esta orientado a Semana 7 (interpretacion juridica).
+- Distinguir bibliografía base de bibliografía específica por actividad.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 y no a Actividad 1.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 y no define por sí solo Actividad 1.
+- No inventar referencias y usar solo obras consultables.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a Semana 7 y no define por sí solo Actividad 1.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 y no sustituye automáticamente Actividad 1.
+- Registrar fuentes especificas de actividad en el .bib de la asignatura.
+- Distinguir bibliografia base de bibliografia especifica por actividad.
+- Supuesto: filosofia-del-derecho-clean.bib esta orientado a Semana 7.
+- Supuesto: filosofia-del-derecho-clean.bib esta orientado a Semana 7 y no define por si solo Actividad 1.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 y no define por sí mismo Actividad 1.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 (interpretación jurídica), no Actividad 1.
+- No inventar referencias; usar solo obras consultables.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a Semana 7 y no a Actividad 1.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 y no sustituye automáticamente la bibliografía de Actividad 1.
+- Registrar fuentes específicas de la actividad en el .bib canónico de la asignatura.
+- No asumir que filosofia-del-derecho-clean.bib corresponda a Actividad 1.
 
 ## propagation_hints
 
@@ -271,6 +641,47 @@
 - Ciclos 1 a 30 requieren normalización manual si se reutilizan.
 - Propagar reglas generales cuando falte consigna textual.
 - Mantener validación estricta de parseo JSON antes de cualquier propagación recursiva.
+- Propagar recursivamente solo despues de validar JSON y estructura.
+- Aplicar normalizacion manual si se detecta salida no estructurada en nodos vecinos.
+- Evitar regresiones respecto de reglas utiles previas.
+- Ciclo 1 y ciclo 2 requieren normalización manual previa si se reutilizan salidas heredadas.
+- Aplicar normalización manual al reutilizar salidas no estructuradas de ciclos previos.
+- Aplicar normalización manual en nodos con salidas no estructuradas heredadas.
+- Ciclos 1 y 2 requieren normalización manual si se reutilizan salidas heredadas.
+- Ciclo 2 requiere normalización manual si se reutiliza.
+- Aplicar normalización manual en nodos con salidas no estructuradas de ciclos previos.
+- Aplicar normalización manual en nodos con salidas no estructuradas.
+- Mantener estado de ciclos con necesidad de normalización manual cuando aplique.
+- Propagar reglas generales cuando falte consigna textual local.
+- Ciclos 1 y 2 requieren normalización manual si se reutilizan trazas antiguas.
+- Ciclo 1 y ciclo 2 requieren normalización manual si se reutilizan salidas antiguas.
+- Ciclo 1 y ciclo 2 requieren normalización manual si se reutilizan.
+- Aplicar normalización manual a salidas históricas no estructuradas de ciclos 1 y 2.
+- Propagar arriba y laterales solo con memoria normalizada.
+- Si falta consigna textual, propagar solo reglas generales y marcar supuestos.
+- Reutilizar reglas institucionales de calidad sin perder especificidad local.
+- Aplicar normalización manual cuando se detecte salida no estructurada en nodos vecinos.
+- Propagar solo reglas generales cuando falte consigna textual verificable.
+- Propagar arriba y laterales solo con reglas generales si falta consigna textual.
+- Ciclos 1 y 2 requieren normalización manual si se reutilizan.
+- Aplicar normalización manual en salidas no estructuradas detectadas en nodos vecinos.
+- Aplicar normalizacion manual en nodos con salida no estructurada.
+- Propagar arriba y laterales solo tras validación formal.
+- Ciclo 1 y ciclo 2 requieren normalización manual si se reutilizan salidas no estructuradas.
+- Ciclos previos 1 y 2 requieren normalización manual si se reutilizan.
+- Mantener compresión lossless por unión y deduplicación.
+- Aplicar normalización manual en nodos vecinos con salidas no estructuradas.
+- Propagar arriba y laterales solo con contenido normalizado.
+- Aplicar normalización manual al reutilizar salidas históricas de ciclos 1 y 2.
+- Aplicar normalización manual en salidas heredadas no estructuradas.
+- Evitar regresiones respecto de reglas útiles ya consolidadas.
+- Aplicar normalización manual cuando aparezca salida no estructurada en nodos vecinos.
+- Ciclos 1 y 2 requieren normalización manual si se reutilizan artefactos heredados.
+- Mantener marcados como provisionales los datos heredados no verificados.
+- Aplicar normalización manual en nodos vecinos con salida no estructurada.
+- Evitar regresiones de reglas útiles ya consolidadas.
+- Cuando falte consigna textual, propagar solo reglas generales verificables.
+- Mantener trazabilidad de supuestos en cada salto.
 
 ## open_questions
 
@@ -290,6 +701,28 @@
 - Confirmar si la actividad exige reporte, presentación o mapa conceptual como formato principal.
 - Confirmar consigna textual completa de Actividad 1.
 - Confirmar si el formato exigido final es reporte, presentación o mapa conceptual.
+- Confirmar si la actividad requiere reporte, presentacion u otro formato principal.
+- Confirmar rubrica de evaluacion especifica.
+- Confirmar nombre canonico final del archivo .bib de la asignatura.
+- Confirmar si Actividad 1 reutiliza bibliografia existente o requiere .bib propio.
+- Confirmar si el formato principal es reporte, presentación u otro.
+- Confirmar rúbrica de evaluación específica para calibrar profundidad argumentativa.
+- Confirmar si el formato principal es reporte, presentación u otro entregable.
+- Confirmar fuentes obligatorias de la semana correspondiente a Actividad 1.
+- Confirmar nombre canónico final del .bib de asignatura y si Actividad 1 requiere bibliografía propia.
+- Confirmar rubrica de evaluacion especifica para ajustar profundidad argumentativa.
+- Confirmar si el formato principal es reporte, presentación o mapa conceptual.
+- Confirmar nombre canónico final del .bib de la asignatura para cierre de ambigüedad.
+- Supuesto: falta consigna textual de Actividad 1; confirmar producto exacto.
+- Confirmar si el formato final es reporte, presentacion u otro.
+- Confirmar fuentes obligatorias de la semana de Actividad 1.
+- Confirmar nombre canonico final del .bib de la asignatura.
+- Supuesto: falta consigna textual completa de Actividad 1; confirmar producto exacto.
+- Confirmar nombre canónico final del archivo .bib.
+- Confirmar rúbrica específica para calibrar profundidad argumentativa.
+- Confirmar fuentes obligatorias de la semana aplicable a Actividad 1.
+- Confirmar rúbrica específica para ajustar profundidad argumentativa.
+- Confirmar nombre canónico final del .bib de la asignatura.
 
 ## editorial_dna
 
@@ -350,10 +783,10 @@
 - Sustentar afirmaciones con fuentes verificables y cita explícita.
 
 ### grafo_de_conocimiento
-- Conceptos: 122
-- Citas: 14
-- Relaciones reforzadas: 30
-- Evidencias: 151
+- Conceptos: 1451
+- Citas: 18
+- Relaciones reforzadas: 733
+- Evidencias: 648
 
 ## adn_tex
 

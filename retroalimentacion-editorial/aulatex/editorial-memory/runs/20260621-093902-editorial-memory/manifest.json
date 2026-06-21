@@ -1,0 +1,822 @@
+{
+  "run_id": "20260621-093902",
+  "source_scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+  "build_level": "interinstitucional",
+  "propagation_mode": "recursivo",
+  "iterations": 100,
+  "engines": [
+    "Codex"
+  ],
+  "timeout_seconds": 900,
+  "scope_offset": 10,
+  "scope_limit": 1,
+  "full_plan_scope_count": 461,
+  "batch_scope_count": 1,
+  "built_scopes": [
+    "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde"
+  ],
+  "cycles": [
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8474
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 2,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8175
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 3,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8012
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 4,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7715
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 5,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8159
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 6,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8914
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 7,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8082
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 8,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8717
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 9,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7722
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 10,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8429
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 11,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8160
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 12,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8505
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 13,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7909
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 14,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8043
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 15,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8457
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 16,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7793
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 17,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 9026
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 18,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8851
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 19,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8269
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 20,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8210
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 21,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8284
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 22,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7475
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 23,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7620
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 24,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8695
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 25,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7846
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 26,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8392
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 27,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7489
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 28,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8702
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 29,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7740
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 30,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8419
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 31,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8544
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 32,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8147
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 33,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7885
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 34,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8051
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 35,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8040
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 36,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7928
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 37,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7824
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 38,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8320
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 39,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7793
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 40,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8454
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 41,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7932
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 42,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8400
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 43,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7553
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 44,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7623
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 45,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7964
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 46,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8017
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 47,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7829
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 48,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7470
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 49,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8959
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 50,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7626
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 51,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7496
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 52,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8127
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 53,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7935
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 54,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8388
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 55,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 9549
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 56,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 9108
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 57,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7948
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 58,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8324
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 59,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8094
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 60,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8286
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 61,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7918
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 62,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8226
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 63,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7892
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 64,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8206
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 65,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8064
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 66,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8089
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 67,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8122
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 68,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8521
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 69,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8432
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 70,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8373
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 71,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8222
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 72,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8335
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 73,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7970
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 74,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8680
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 75,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8378
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 76,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7848
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 77,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8397
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 78,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 9174
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 79,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8988
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 80,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8029
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 81,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8278
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 82,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8565
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 83,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7727
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 84,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8714
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 85,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8426
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 86,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8298
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 87,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8068
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 88,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8111
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 89,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7633
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 90,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8363
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 91,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8216
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 92,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 7981
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 93,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8071
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 94,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8452
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 95,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8010
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 96,
+      "engine": "Codex",
+      "ok": false,
+      "chars": 30
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 97,
+      "engine": "Codex",
+      "ok": false,
+      "chars": 25
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 98,
+      "engine": "Codex",
+      "ok": false,
+      "chars": 9
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 99,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8115
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+      "scope_level": "materia",
+      "cycle": 100,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 8781
+    }
+  ],
+  "ok": false,
+  "cancelled": false
+}

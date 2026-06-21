@@ -1,0 +1,769 @@
+# Memoria editorial AulaTeX
+
+- Alcance: actividad
+- Etiqueta: Actividad 1
+- Ruta: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde
+- Compresion: union-dedupe
+- Sin regresion: si
+- Secciones fijadas: ninguna
+
+## summary
+
+- Se transfiere memoria editorial base desde un nodo lateral con enfoque reusable y sin copiar contenido tematico exclusivo.
+- Se conserva identidad UnADM y se adapta el contexto curricular local: Derecho a la Seguridad Social, semestre 2, bloque 1, obligatoria, 8 creditos.
+- Se fijan ejes persistentes de actividad: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Se mantiene regla de normalizacion: no propagar salidas no estructuradas ni JSON invalido.
+- Se prioriza compresion lossless por deduplicacion y union de reglas utiles.
+- Se consolida refuerzo lateral sin copiar contenido tematico exclusivo del nodo hermano.
+- Se preserva identidad UnADM y contexto curricular local verificado en README y programa analitico.
+- Se mantiene compresion lossless por deduplicacion y union de reglas utiles sin recorte.
+- Se refuerza secuencia editorial estable: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Se conserva regla de bloqueo para salidas no estructuradas o JSON invalido antes de propagacion.
+- Se consolida refuerzo lateral desde Filosofía del Derecho con transferencia solo de patrones reutilizables.
+- Se preserva identidad UnADM y contexto local de Derecho a la Seguridad Social.
+- Se mantiene secuencia editorial estable: problema, fundamento, análisis, evidencia, postura y cierre.
+- Se conserva regla de normalización estricta: bloquear salidas no estructuradas o JSON inválido.
+- Se aplica compresión lossless por deduplicación sin recorte de reglas útiles.
+- Se consolida refuerzo lateral ciclo 4 con transferencia solo de patrones reutilizables.
+- Se preserva identidad UnADM y contexto local verificado en README y programa analitico.
+- Se mantiene secuencia editorial estable: problema, fundamento, analisis, evidencia, postura y cierre.
+- Se mantiene compresion lossless por union y deduplicacion sin recorte de reglas utiles.
+- Se mantiene bloqueo de propagacion para salidas no estructuradas o JSON invalido.
+- Se consolida memoria lateral con transferencia de patrones reutilizables y sin copiar contenido exclusivo del nodo origen.
+- Se preserva identidad UnADM y contexto local verificado: Licenciatura en Derecho, semestre 2, bloque 1, obligatoria, 8 creditos.
+- Se refuerza secuencia editorial persistente: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Se mantiene normalizacion estricta: bloquear propagacion con JSON invalido o salida no estructurada.
+- Se aplica compresion lossless por deduplicacion y union de reglas sin recorte.
+- Se consolida refuerzo lateral desde Filosofia del Derecho hacia Derecho a la Seguridad Social sin copiar contenido tematico exclusivo.
+- Se preserva identidad UnADM y contexto curricular local verificado: semestre 2, bloque 1, obligatoria, 8 creditos.
+- Se mantiene secuencia editorial persistente: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Se conserva normalizacion obligatoria: no propagar salidas no estructuradas ni JSON invalido.
+- Se aplica compresion lossless por deduplicacion y union de reglas utiles.
+- Se consolida refuerzo lateral desde Filosofia del Derecho con transferencia solo de patrones reutilizables.
+- Se mantiene secuencia editorial estable: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Se mantiene normalizacion obligatoria: no propagar salidas no estructuradas ni JSON invalido.
+- Se aplica compresion lossless por deduplicacion y union, sin recorte de reglas utiles.
+- Se consolida refuerzo lateral desde Filosofía del Derecho hacia Derecho a la Seguridad Social con transferencia solo de patrones reutilizables.
+- Se preserva identidad UnADM y contexto curricular local verificado: semestre 2, bloque 1, obligatoria, 8 créditos.
+- Se mantiene secuencia editorial estable: problema, fundamento, análisis, evidencia, postura y cierre profesional.
+- Se conserva bloqueo de propagación ante JSON inválido o salida no estructurada.
+- Se aplica compresión lossless por deduplicación, sin recorte de reglas útiles.
+- Se consolida memoria lateral con transferencia solo de patrones reutilizables.
+- Se preserva identidad UnADM con contexto local verificado en README y programa analitico.
+- Se refuerza control de calidad: bloquear JSON invalido y normalizar salidas no estructuradas.
+- Se aplica compresion lossless por deduplicacion sin recorte de reglas utiles previas.
+- Se evita copiar contenido tematico exclusivo, redaccion literal o conclusiones del nodo hermano.
+- Se consolida refuerzo lateral desde Filosofia del Derecho con transferencia de patrones reutilizables.
+- Se mantiene compresion lossless por union y deduplicacion sin recorte util.
+- Se fija secuencia editorial estable: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Se conserva bloqueo de propagacion para salidas no estructuradas o JSON invalido.
+- Se evita copiar contenido tematico exclusivo, redaccion literal o bibliografia exclusiva del nodo hermano.
+- Se mantiene compresion lossless por deduplicacion sin recorte de reglas utiles.
+- Se fija secuencia editorial estable: problema, fundamento, analisis, evidencia, postura y cierre.
+- Se conserva bloqueo de propagacion ante JSON invalido o salida no estructurada.
+- Se evita copia de contenido tematico exclusivo, conclusiones o bibliografia del nodo hermano.
+- Se consolida refuerzo lateral ciclo 12 con transferencia de patrones reutilizables desde Filosofía del Derecho.
+- Se preserva identidad UnADM y contexto curricular local verificado: Derecho a la Seguridad Social, semestre 2, bloque 1, obligatoria, 8 créditos.
+- Se mantiene compresión lossless por unión y deduplicación, sin recorte de reglas útiles previas.
+- Se refuerza secuencia editorial persistente: problema, fundamento, análisis, evidencia, postura y cierre profesional.
+- Se mantiene bloqueo de propagación para salidas no estructuradas o JSON inválido.
+- Se consolida refuerzo lateral desde Filosofia del Derecho sin copiar contenido tematico exclusivo.
+- Se mantienen ejes editoriales estables: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Se mantiene compresion lossless por union y deduplicacion de reglas utiles.
+- Se consolida memoria lateral con transferencia de patrones reutilizables y sin copiar contenido tematico exclusivo.
+- Se preserva identidad UnADM con contexto local verificado: Derecho a la Seguridad Social, semestre 2, bloque 1, obligatoria, 8 creditos.
+- Se mantiene normalizacion obligatoria: bloquear salidas no estructuradas o JSON invalido.
+- Se aplica compresion lossless por union y deduplicacion, sin recorte de reglas utiles.
+- Se consolida memoria lateral reusable sin copiar contenido tematico exclusivo del nodo hermano.
+- Se consolida refuerzo lateral desde Filosofia del Derecho hacia Derecho a la Seguridad Social con transferencia solo de patrones reutilizables.
+- Se preserva identidad institucional UnADM y contexto curricular local verificado en README y programa analitico.
+- Se mantiene compresion lossless por deduplicacion y union, sin recorte de reglas utiles.
+- Se fija secuencia editorial estable para Actividad 1: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Se mantiene regla de marcar supuestos cuando falte consigna local.
+- Se mantiene compresion lossless por deduplicacion y union sin recorte util.
+- Se evita copiar contenido tematico exclusivo, conclusiones o bibliografia de nodo hermano.
+- Se preserva identidad UnADM y contexto local verificado: Derecho a la Seguridad Social, semestre 2, bloque 1, obligatoria, 8 creditos.
+- Se consolida refuerzo lateral desde Filosofia del Derecho hacia Seguridad Social con transferencia de patrones reutilizables.
+- Se preserva identidad UnADM y contexto local verificado: semestre 2, bloque 1, obligatoria, 8 creditos.
+- Se consolida memoria lateral reusable sin copiar contenido tematico exclusivo de Filosofia del Derecho.
+- Se mantiene secuencia editorial nuclear: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Se refuerza normalizacion obligatoria: bloquear propagacion con JSON invalido o salida no estructurada.
+- Se aplica compresion lossless por deduplicacion y union de reglas utiles sin recorte.
+- Se consolida memoria lateral sin copiar contenido exclusivo de Filosofia del Derecho.
+- Se mantiene compresion lossless por deduplicacion y union de reglas sin recorte util.
+- Se normaliza transferencia recursiva: primero identidad y calidad, luego estructura y argumentacion.
+- Se consolida refuerzo lateral desde Filosofía del Derecho con transferencia de patrones reutilizables.
+- Se preserva identidad UnADM con contexto local verificado: Derecho a la Seguridad Social, semestre 2, bloque 1, obligatoria, 8 créditos.
+- Se mantiene compresión lossless por unión y deduplicación, sin recorte de reglas útiles.
+- Se fija secuencia editorial persistente: problema, fundamento, análisis, evidencia, postura y cierre profesional.
+- Se conserva bloqueo de propagación para salidas no estructuradas o JSON inválido.
+- Se preserva identidad UnADM y contexto local verificado: Derecho a la Seguridad Social, semestre 2, bloque 1, obligatoria, 8 créditos.
+- Se mantiene normalización estricta: bloquear propagación con JSON inválido o salida no estructurada.
+- Se mantiene normalizacion estructurada obligatoria antes de propagacion recursiva.
+- Se aplica compresion lossless por deduplicacion y union sin recorte util.
+- Se evita copia literal, conclusiones especificas y bibliografia exclusiva del nodo origen.
+- Se preserva identidad UnADM y contexto local verificado de Derecho a la Seguridad Social.
+- Se mantiene compresion lossless por deduplicacion, sin recorte de reglas utiles.
+- Se preserva identidad UnADM y contexto local verificado para Derecho a la Seguridad Social.
+- Se mantiene compresión lossless por deduplicación y unión sin recorte útil.
+- Se fija secuencia editorial estable: problema, fundamento, análisis, evidencia, postura y cierre.
+- Se mantiene bloqueo de propagación ante salida no estructurada o JSON inválido.
+- Se aplica compresion lossless por union y deduplicacion sin recorte de reglas utiles.
+- Se conserva compresión lossless por deduplicación, sin recorte de reglas útiles.
+- Se mantiene bloqueo de propagación ante salidas no estructuradas o JSON inválido.
+- Se evita copiar contenido temático exclusivo, conclusiones o bibliografía privativa del nodo hermano.
+- Se consolida refuerzo lateral entre actividades sin copiar contenido tematico exclusivo.
+- Se consolida memoria lateral-transversal con deduplicacion lossless y sin recorte de reglas utiles.
+- Se preserva identidad UnADM y contexto curricular local verificado para Derecho a la Seguridad Social.
+- Se refuerza la secuencia editorial estable: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Se mantiene bloqueo de propagacion ante JSON invalido o salida no estructurada.
+- Se transfieren solo patrones reutilizables; no se copia contenido tematico exclusivo del nodo origen.
+- Se mantiene normalizacion estricta: no propagar salidas no estructuradas ni JSON invalido.
+- Se aplica compresion lossless por deduplicacion sin recorte semantico.
+- Se conserva normalizacion obligatoria: bloquear salidas no estructuradas o JSON invalido.
+- Se aplica compresion lossless por deduplicacion, sin recorte de reglas utiles previas.
+- Se evita copiar contenido tematico exclusivo, conclusiones o bibliografia propia del nodo hermano.
+- Se refuerza secuencia editorial estable: problema, fundamento, analisis, evidencia, postura y cierre.
+- Se aplica compresion lossless por deduplicacion sin recorte de reglas utiles.
+- No se transfiere contenido tematico exclusivo ni bibliografia exclusiva del nodo hermano.
+- Se mantiene normalizacion obligatoria antes de cualquier propagacion recursiva.
+- Se evita copiar contenido tematico exclusivo del nodo de Filosofia del Derecho.
+- Se mantiene normalización obligatoria: no propagar salidas no estructuradas o JSON inválido.
+- Se fija secuencia editorial estable: problema, fundamento, análisis, evidencia, postura y cierre profesional.
+- Se consolida memoria lateral reusable sin copiar contenido tematico exclusivo del nodo de origen.
+- Se refuerza secuencia editorial estable: problema, fundamento, análisis, evidencia, postura y cierre profesional.
+- Se consolida transferencia lateral con deduplicacion lossless y sin copiar contenido exclusivo del nodo hermano.
+- Se preserva identidad UnADM con anclaje local verificado en README y programa analitico.
+- Se refuerza regla critica: no propagar salidas no estructuradas ni JSON invalido.
+- Se conserva transferencia por patrones reutilizables: identidad, estructura, calidad, conceptos y relaciones recurrentes.
+- Se marca como supuesto todo dato no visible en la consigna local de Actividad 1.
+- Se refuerza transferencia lateral con deduplicacion estricta y sin recorte util.
+- Se mantiene identidad UnADM con contexto local verificado de Derecho a la Seguridad Social.
+- Se conserva secuencia editorial troncal: problema, fundamento, analisis, evidencia, postura y cierre.
+- Se preserva bloqueo de propagacion para salidas no estructuradas o JSON invalido.
+- Se integra analogia controlada: transferir metodo y no contenido tematico exclusivo del nodo origen.
+- Supuesto: la consigna textual completa de Actividad 1 aun no esta confirmada localmente.
+- Se consolida refuerzo lateral transversal desde Filosofía del Derecho con transferencia solo de patrones reutilizables.
+- Se aplica compresión lossless por unión y deduplicación sin recorte útil.
+- Se consolida transferencia lateral reusable sin copiar contenido tematico exclusivo del nodo origen.
+- Se mantiene compresion lossless por deduplicacion y union de reglas validas.
+- Se mantiene secuencia editorial persistente: problema, fundamento, análisis, evidencia, postura y cierre profesional.
+- Se conserva normalización estricta: bloquear salidas no estructuradas o JSON inválido.
+- Se aplica compresión lossless por unión y deduplicación sin recorte de reglas útiles.
+- Se consolida transferencia lateral reusable desde Filosofía del Derecho sin copiar contenido temático exclusivo.
+- Se refuerza compresión lossless por deduplicación y unión, sin recorte de reglas útiles.
+- Se mantiene secuencia editorial núcleo: problema, fundamento, análisis, evidencia, postura y cierre profesional.
+- Se conserva regla dura: no propagar salidas no estructuradas ni JSON inválido.
+- Se consolida memoria lateral sin copiar contenido tematico exclusivo del nodo hermano.
+- Se mantiene compresion lossless por union y deduplicacion, sin recorte de reglas utiles.
+- Memoria lateral consolidada con transferencia de patrones reutilizables y sin copiar contenido tematico exclusivo del origen.
+- Se preserva identidad UnADM y contexto curricular local verificado: Licenciatura en Derecho, semestre 2, bloque 1, obligatoria, 8 creditos.
+- Se preserva identidad UnADM y contexto curricular local verificado.
+- Se consolida refuerzo lateral con transferencia de patrones reutilizables y sin copiar contenido exclusivo del nodo origen.
+- Se conserva normalización estricta: no propagar salidas no estructuradas ni JSON inválido.
+- Se aplica compresión lossless por deduplicación y unión sin recorte de reglas útiles.
+- Se conserva normalizacion obligatoria: bloquear salida no estructurada o JSON invalido.
+- No se transfiere redaccion literal, conclusiones especificas ni bibliografia exclusiva del nodo hermano.
+- Se preserva identidad UnADM y contexto curricular local de Derecho a la Seguridad Social.
+- Se mantiene normalización obligatoria: bloquear salidas no estructuradas o JSON inválido.
+- Se evita copiar contenido temático exclusivo, redacción literal o conclusiones del nodo hermano.
+- Se conserva compresion lossless por deduplicacion y union de reglas utiles.
+- Se refuerza memoria lateral con transferencia solo de patrones reutilizables.
+- Se consolida secuencia editorial estable: problema, fundamento, analisis, evidencia, postura y cierre.
+- No se copian conclusiones tematicas ni bibliografia exclusiva del nodo hermano.
+- Se refuerza secuencia editorial fija: problema, fundamento, analisis, evidencia, postura y cierre.
+- Se consolida refuerzo lateral desde Filosofía del Derecho hacia Seguridad Social con transferencia solo de patrones reutilizables.
+- Se preserva identidad UnADM y contexto local verificado: Licenciatura en Derecho, semestre 2, bloque 1, obligatoria, 8 créditos.
+- Se mantiene secuencia editorial estable de actividad: problema, fundamento, análisis, evidencia, postura y cierre profesional.
+- Se mantiene normalización obligatoria: bloquear propagación si no hay JSON válido y estructura mínima completa.
+- Se consolida transferencia lateral con deduplicacion lossless y sin recorte util.
+- Se mantiene bloqueo de propagacion para salidas sin JSON parseable.
+- Se confirma uso de README, programa analitico y .bib local como base verificable.
+- Se fija secuencia editorial persistente: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Se aplica compresion lossless por deduplicacion sin recortar reglas utiles.
+- Se consolida refuerzo lateral con transferencia de patrones reutilizables desde Filosofia del Derecho.
+- Se conserva regla de normalizacion estricta: no propagar salidas no estructuradas ni JSON invalido.
+- Se aplica compresion lossless por deduplicacion y union sin recorte de reglas utiles.
+- Se mantiene bloqueo de propagacion ante salida no estructurada o JSON invalido.
+- Se mantiene compresión lossless por unión y deduplicación sin recorte útil.
+- Se consolida refuerzo lateral con transferencia solo de patrones reutilizables.
+- Se consolida memoria lateral con transferencia de patrones reutilizables y sin arrastre tematico exclusivo del nodo origen.
+- Se mantiene identidad UnADM y contexto curricular local verificado: Licenciatura en Derecho, semestre 2, bloque 1, obligatoria, 8 creditos.
+- Se preserva normalizacion estricta: bloquear propagacion con JSON invalido o salida no estructurada.
+- Se preserva identidad UnADM y contexto curricular local verificado en README y programa analítico.
+- Se evita copiar contenido temático exclusivo, redacción literal y conclusiones del nodo hermano.
+- Se consolida refuerzo lateral desde Filosofia del Derecho hacia Seguridad Social con transferencia solo de patrones reutilizables.
+- Se consolida transferencia lateral sin copiar contenido exclusivo de Filosofía del Derecho.
+- Se fija secuencia editorial reusable: problema, fundamento, análisis, evidencia, postura y cierre profesional.
+- Se mantiene normalización obligatoria: no propagar salidas no estructuradas ni JSON inválido.
+- Se aplica compresión lossless por deduplicación y unión de reglas útiles.
+- Se mantiene la secuencia editorial estable: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Se conserva la regla de bloqueo para salidas no estructuradas o JSON invalido antes de propagacion.
+- Se aplica compresion lossless por deduplicacion, sin recorte de reglas utiles.
+- Se fija compresión lossless por unión y deduplicación sin recorte semántico.
+- Se consolida refuerzo lateral reusable desde nodo hermano sin copiar contenido tematico exclusivo.
+- Se mantiene normalizacion estricta: bloquear salida no estructurada o JSON invalido.
+- Se aplica compresion lossless por deduplicacion, union y limpieza de redundancias.
+- Se consolida memoria lateral sin copiar contenido tematico exclusivo de Filosofia del Derecho.
+- Se consolida memoria lateral con transferencia de patrones reutilizables y sin copiar contenido exclusivo del nodo hermano.
+- Se mantiene identidad UnADM y contexto local verificado: Derecho a la Seguridad Social, semestre 2, bloque 1, obligatoria, 8 creditos.
+- Se preserva normalizacion estricta: no propagar salidas no estructuradas ni JSON invalido.
+- Se consolida refuerzo lateral desde Filosofia del Derecho hacia Seguridad Social sin copiar contenido exclusivo.
+- Se mantiene compresion lossless por deduplicacion, union y normalizacion estructurada.
+- Se fija secuencia editorial reusable: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Se mantiene compresion lossless por union y deduplicacion sin recorte.
+- Se refuerza secuencia editorial: problema, fundamento, analisis, evidencia, postura y cierre.
+- Se evita copiar redaccion, conclusiones o bibliografia exclusiva del nodo origen.
+- Se consolida refuerzo lateral entre actividades sin copiar contenido exclusivo del nodo origen.
+- Se mantiene compresion lossless por deduplicacion y union de reglas reutilizables.
+- Se aplica compresión lossless por deduplicación y unión sin recorte útil.
+- Se mantiene compresión lossless por deduplicación, sin recorte de reglas útiles.
+- Se consolida memoria lateral para Actividad 1 de Derecho a la Seguridad Social sin copiar contenido exclusivo del nodo origen.
+- Se mantiene identidad UnADM y contexto local verificado de Derecho a la Seguridad Social.
+- Se preserva secuencia editorial estable: problema, fundamento, analisis, evidencia, postura y cierre.
+- Se conserva bloqueo de propagacion para JSON invalido o salida no estructurada.
+- Se mantiene normalizacion obligatoria: no propagar salidas sin JSON parseable.
+- Se aplica compresion lossless por deduplicacion sin eliminar reglas utiles previas.
+- Se preserva identidad UnADM y contexto local verificado: semestre 2, bloque 1, obligatoria, 8 créditos.
+- Se mantiene normalización estricta: no propagar salida no estructurada ni JSON inválido.
+- Se aplica compresión lossless por deduplicación y unión sin recorte.
+- Se consolida memoria lateral reusable sin copiar contenido exclusivo del nodo origen.
+- Se aplica compresion lossless por union y deduplicacion de reglas utiles.
+- Se consolida memoria lateral reusable sin copiar contenido exclusivo de Filosofia del Derecho.
+- Se preserva secuencia editorial estable: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Se refuerza compresion lossless por deduplicacion y union, sin recorte de reglas utiles.
+- Se consolida memoria lateral-transversal con refuerzo reusable y sin copiar contenido exclusivo de Filosofia del Derecho.
+- Se conserva compresion lossless por deduplicacion y union de reglas sin recorte util.
+- Se refuerza bloqueo de propagacion para salidas no estructuradas o JSON invalido.
+- Se preserva identidad UnADM y contexto local verificado del programa analitico.
+- Se evita copiar contenido tematico exclusivo del nodo origen.
+- Se conserva bloqueo de propagación ante salida no estructurada o JSON inválido.
+- Se refuerza normalizacion obligatoria: bloquear propagacion sin JSON parseable y estructura minima completa.
+- Se aplica compresion lossless por deduplicacion y union de reglas reutilizables.
+
+## identity_rules
+
+- Mantener identidad institucional UnADM en tono y formato.
+- Vincular la actividad a Licenciatura en Derecho y a la asignatura Derecho a la Seguridad Social.
+- Usar la carpeta de asignatura como punto de entrada canonico.
+- Basar ubicacion curricular en semestre 2, bloque 1, obligatoria, 8 creditos.
+- Marcar como supuesto cualquier dato no visible en la consigna de Actividad 1.
+- Tratar toda fuente heredada no verificada como provisional hasta confirmacion local.
+- Usar README y programa analitico locales como fuentes primarias de identidad.
+- Vincular la actividad a Licenciatura en Derecho y a Derecho a la Seguridad Social.
+- Usar carpeta de asignatura como entrada canonica.
+- Marcar como supuesto todo dato no visible en la consigna local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- Mantener tono institucional UnADM, formal y jurídico.
+- Usar la carpeta de asignatura como entrada canónica.
+- Basar ubicación curricular en semestre 2, bloque 1, obligatoria, 8 créditos.
+- Usar README y programa analítico locales como fuente primaria.
+- Tratar fuentes heredadas no verificadas como provisionales.
+- Usar README y programa analitico locales como fuentes primarias.
+- Mantener tono institucional UnADM, formal y juridicamente preciso.
+- Vincular toda actividad a Licenciatura en Derecho y a Derecho a la Seguridad Social.
+- Usar la carpeta de asignatura como entrada canonica.
+- Usar README y programa analitico locales como fuente primaria de identidad.
+- Mantener tono institucional UnADM, formal, claro y jurídicamente preciso.
+- Vincular toda entrega a Licenciatura en Derecho y a la asignatura Derecho a la Seguridad Social.
+- Usar la carpeta de asignatura como entrada canónica de archivos y decisiones editoriales.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmación local.
+- Usar README y programa analítico locales como fuentes primarias de identidad.
+- Usar la carpeta de asignatura como entrada canonica editorial.
+- Usar carpeta de asignatura como entrada canónica.
+- Vincular toda entrega a Licenciatura en Derecho y a Derecho a la Seguridad Social.
+- Vincular siempre la actividad a Licenciatura en Derecho y a Derecho a la Seguridad Social.
+- Mantener tono institucional UnADM, formal y juridico.
+- Vincular la actividad a Licenciatura en Derecho y Derecho a la Seguridad Social.
+- Basar contexto curricular en README y programa analitico locales.
+- Marcar como supuesto todo dato no visible en la consigna.
+- Vincular cada entrega a Licenciatura en Derecho y a Derecho a la Seguridad Social.
+- Tratar toda fuente heredada no verificada como provisional hasta confirmación local.
+- Usar README y programa analítico locales como fuentes primarias.
+- Mantener tono institucional UnADM, formal, claro y juridicamente preciso.
+- Usar README y programa analitico locales como fuente primaria.
+- Marcar como supuesto cualquier dato no visible en la consigna local.
+- Vincular Actividad 1 a Licenciatura en Derecho y a Derecho a la Seguridad Social.
+- Usar la carpeta de asignatura como punto de entrada canónico.
+- Vincular toda pieza a Licenciatura en Derecho y a Derecho a la Seguridad Social.
+- Basar contexto curricular en semestre 2, bloque 1, obligatoria, 8 creditos.
+- Vincular toda salida a Licenciatura en Derecho y asignatura Derecho a la Seguridad Social.
+- Usar la carpeta de asignatura como entrada canonica operativa.
+- Mantener tono institucional UnADM, formal y jurídicamente preciso.
+- Vincular toda actividad a Licenciatura en Derecho y asignatura Derecho a la Seguridad Social.
+- Usar la carpeta de asignatura como entrada canonica de trabajo.
+- Usar la carpeta de asignatura como entrada canónica operativa.
+- Mantener identidad institucional UnADM en tono, formato y trazabilidad.
+- Usar carpeta de asignatura como entrada canonica operativa.
+- Marcar como supuesto todo dato no visible en la consigna de Actividad 1.
+- Vincular toda actividad a Licenciatura en Derecho y Derecho a la Seguridad Social.
+- Vincular toda entrega a Licenciatura en Derecho y asignatura Derecho a la Seguridad Social.
+- Basar encuadre curricular en semestre 2, bloque 1, obligatoria, 8 creditos.
+- Usar carpeta de asignatura como entrada canonica de trabajo.
+- Tomar README y programa analitico locales como fuentes primarias de identidad.
+- Tratar fuentes heredadas no verificadas como provisionales hasta validacion local.
+- Basar datos curriculares en README y programa analítico locales.
+- Basar datos curriculares en fuentes locales: README y programa analitico.
+- Fijar ubicacion curricular local: semestre 2, bloque 1, obligatoria, 8 creditos.
+- Basar ubicación curricular en README y programa analítico locales.
+- Fijar contexto curricular: semestre 2, bloque 1, obligatoria, 8 créditos.
+- Vincular Actividad 1 a Licenciatura en Derecho y Derecho a la Seguridad Social.
+
+## structure_rules
+
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear la entrega al producto solicitado por la planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Adaptar el formato final a la consigna: reporte, presentacion u otro producto permitido.
+- Abrir con encuadre breve del problema juridico o social.
+- Separar en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear formato final al producto pedido en la consigna semanal.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Permitir reporte o presentacion segun instruccion local.
+- Abrir con encuadre breve del problema jurídico o social.
+- Organizar en conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
+- Alinear formato al producto exacto pedido en la planeación.
+- Cerrar con conclusión jurídica transferible a práctica profesional.
+- Adaptar salida a reporte, presentacion u otro formato solo si la consigna lo permite.
+- Alinear formato y alcance al producto pedido en la planeacion semanal.
+- Permitir reporte o presentacion solo si la consigna local lo autoriza.
+- Alinear el formato final al producto pedido en la consigna semanal.
+- Separar en secciones: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear formato y alcance al producto solicitado en la planeación semanal.
+- Adaptar salida a reporte, presentación u otro formato permitido por consigna.
+- Alinear formato y alcance al producto pedido en la consigna semanal.
+- Adaptar salida a reporte, presentacion o formato mixto solo si la consigna lo permite.
+- Adaptar salida a reporte, presentacion o formato mixto solo si la consigna lo permite [supuesto].
+- Separar en conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Permitir reporte o presentación según instrucción local.
+- Adaptar el entregable a reporte, presentacion o formato mixto solo si la consigna lo permite.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Adaptar formato final a la consigna: reporte, presentacion o mixto.
+- Alinear estructura y formato al producto pedido en la consigna semanal.
+- Permitir reporte, presentacion o formato mixto solo si la consigna lo autoriza.
+- Alinear formato al producto pedido en la consigna semanal.
+- Alinear el formato al producto solicitado por la consigna semanal.
+- Permitir reporte, presentacion u otro formato solo si la consigna lo autoriza.
+- Alinear formato y contenido al producto pedido en la planeacion semanal.
+- Permitir reporte o presentacion solo si la consigna lo autoriza.
+- Alinear formato y contenido al producto pedido en la consigna semanal.
+- Adaptar salida a reporte, presentacion u otro formato permitido por consigna.
+- Alinear el formato al producto solicitado en la consigna semanal.
+- Permitir reporte o presentación solo si la consigna local lo autoriza.
+- Alinear formato y contenido al producto solicitado en la consigna semanal.
+- Adaptar salida a reporte, presentacion o formato permitido por la actividad.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Adaptar entrega a reporte, presentación o formato mixto solo si la consigna lo permite.
+- Alinear formato y contenido al producto pedido por la consigna semanal.
+- Permitir reporte o presentacion solo si la consigna local lo habilita.
+- Alinear formato y alcance al producto solicitado en la consigna semanal.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Alinear la entrega al producto solicitado por la planeación semanal.
+- Adaptar formato final a la consigna: reporte, presentación u otro permitido.
+- Alinear el entregable al producto solicitado por la planeación semanal.
+- Adaptar formato final según consigna: reporte, presentación o mixto.
+- Alinear formato y extension al producto pedido en la consigna semanal.
+- Organizar en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Permitir reporte o presentacion solo si la consigna lo habilita.
+- Alinear el entregable al producto solicitado en la planeación semanal.
+- Adaptar formato final a consigna local: reporte, presentación u otro permitido.
+- Adaptar salida a reporte, presentación u otro formato solo si la consigna lo permite.
+- Separar en: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Separar secciones en conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
+- Alinear el formato al producto pedido por la consigna semanal.
+- Alinear el formato al producto exigido por la consigna semanal.
+- Adaptar entrega a reporte, presentacion o formato mixto solo si la consigna lo permite.
+- Alinear forma y extensión al producto pedido en la consigna semanal.
+- Permitir reporte o presentación solo si la consigna local lo permite.
+- Alinear formato y producto a la consigna semanal de Actividad 1.
+- Alinear el entregable con la consigna de Actividad 1.
+- Adaptar formato final a reporte, presentacion o mixto solo si la consigna lo permite.
+- Alinear formato al producto exigido por la consigna semanal.
+- Adaptar salida a reporte, presentación o formato permitido por consigna.
+- Separar desarrollo en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear formato final al producto pedido en consigna semanal.
+- Alinear formato al entregable pedido en la consigna semanal.
+- Alinear el entregable al producto pedido en la planeación semanal.
+- Adaptar formato final a consigna: reporte, presentación u otro permitido.
+- Alinear formato al producto solicitado en la consigna semanal.
+- Alinear formato y tipo de entrega al producto pedido en la consigna semanal.
+- Declarar objetivo puntual antes del desarrollo.
+- Separar secciones: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear estructura y formato al producto exigido por la consigna semanal.
+- Alinear formato y extensión al producto pedido en la consigna semanal.
+- Adaptar salida a reporte, presentación o formato mixto solo si la consigna lo permite.
+- Alinear formato y profundidad al producto pedido en la consigna semanal.
+- Alinear el entregable al producto solicitado en la consigna semanal.
+- Adaptar formato final a reporte, presentacion u otro formato permitido por consigna.
+- Alinear formato al producto pedido por la consigna semanal.
+- Alinear formato y contenido al producto exacto pedido en la consigna semanal.
+- Alinear la entrega al producto solicitado en la planeación semanal.
+- Adaptar formato final a la consigna: reporte, presentación o formato mixto permitido.
+
+## activity_rules
+
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Incluir postura argumentada del estudiante, no solo resumen.
+- Evitar entregas solo descriptivas.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Verificar correspondencia exacta del producto con la consigna de Actividad 1.
+- No asumir fuentes de otras semanas sin validacion de pertinencia local.
+- Sustentar cada afirmacion con fuente verificable y cita explicita.
+- Incluir postura argumentada del estudiante.
+- Confirmar correspondencia exacta con consigna de Actividad 1.
+- No asumir fuentes de otras semanas sin validacion local.
+- Sustentar cada afirmación con fuente verificable y cita explícita.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- Validar que el producto coincide con la consigna de Actividad 1.
+- No asumir fuentes de otras semanas sin confirmar pertinencia local.
+- Validar correspondencia exacta con la consigna de Actividad 1.
+- No asumir fuentes de otras semanas sin validar pertinencia local.
+- Verificar correspondencia exacta con la consigna de Actividad 1.
+- Verificar correspondencia exacta con consigna de Actividad 1.
+- Incluir postura argumentada del estudiante, no solo descripción.
+- Evitar entregas de resumen sin análisis propio.
+- Incluir postura argumentada del estudiante, no solo descripcion.
+- Evitar entregas de resumen sin analisis juridico propio.
+- Confirmar correspondencia exacta del entregable con Actividad 1 local.
+- Confirmar correspondencia exacta del producto con consigna de Actividad 1.
+- No asumir fuentes de otras semanas sin validación local.
+- Validar correspondencia exacta del producto con Actividad 1 local.
+- No asumir fuentes de otras semanas sin validacion de pertinencia.
+- Incluir postura argumentada del estudiante; evitar texto solo descriptivo.
+- Verificar correspondencia exacta del entregable con Actividad 1 local.
+- No transferir conclusiones tematicas del nodo hermano.
+- Evitar conclusiones genericas sin implicacion juridica practica.
+- Evitar entregas meramente descriptivas.
+- Verificar correspondencia exacta del entregable con la consigna de Actividad 1.
+- No asumir fuentes de otras semanas sin pertinencia comprobada.
+- No asumir fuentes de otras semanas sin validación de pertinencia local.
+- Verificar correspondencia exacta del producto con Actividad 1 local.
+- Incluir postura argumentada del estudiante; no limitarse a resumen.
+- Validar correspondencia exacta del entregable con Actividad 1 local.
+- Confirmar correspondencia exacta con la consigna de Actividad 1.
+- Evitar entregas solo de resumen.
+- No asumir fuentes de otras semanas sin validacion local de pertinencia.
+- Incluir postura argumentada del estudiante; evitar solo descripcion.
+- Priorizar trazabilidad entre objetivo, argumentos, evidencia y cierre.
+- Verificar correspondencia exacta entre entregable y consigna de Actividad 1.
+- Verificar correspondencia exacta del entregable con Actividad 1.
+- Verificar correspondencia exacta del producto con Actividad 1.
+- Evitar entregas de resumen sin analisis.
+- Validar correspondencia exacta con consigna de Actividad 1.
+- Verificar correspondencia exacta del producto con la consigna local.
+- Evitar desarrollo solo descriptivo.
+- Validar correspondencia exacta del entregable con Actividad 1.
+- No asumir fuentes de otras semanas sin pertinencia demostrada.
+- Incluir postura argumentada del estudiante; evitar solo resumen.
+- Incluir postura argumentada del estudiante y evitar resumen puro.
+- Priorizar analisis aplicado sobre descripcion general.
+- Verificar correspondencia exacta del producto con consigna de Actividad 1.
+- Evitar redaccion de relleno sin valor juridico.
+- Incluir postura argumentada del estudiante y evitar texto solo descriptivo.
+- Evitar productos meramente descriptivos.
+- Evitar entregas de resumen sin análisis.
+- Confirmar correspondencia exacta del producto con la consigna de Actividad 1.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- Incluir postura argumentada del estudiante; evitar resumen meramente descriptivo.
+- Confirmar correspondencia exacta entre entregable y consigna de Actividad 1.
+- Incluir postura argumentada del estudiante y no solo resumen.
+- Incluir postura argumentada del estudiante y evitar resumen meramente descriptivo.
+- Sustentar afirmaciones con fuente verificable y cita explicita.
+
+## quality_gates
+
+- Bloquear propagacion si la salida no es JSON parseable.
+- Revisar estructura minima completa antes de aplicar aguas abajo.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca de supuesto.
+- Validar consistencia entre citas en texto y archivo .bib.
+- Normalizar respuestas no estructuradas antes de reutilizarlas.
+- Validar correspondencia del producto con la consigna local de Actividad 1.
+- Bloquear propagacion si salida no es JSON parseable.
+- Validar estructura minima completa antes de aplicar aguas abajo.
+- Rechazar afirmaciones sin respaldo o sin marca de supuesto.
+- Normalizar respuestas no estructuradas antes de reutilizar.
+- Verificar ajuste del producto a consigna local de Actividad 1.
+- Bloquear propagación si no hay JSON parseable.
+- Validar estructura mínima completa antes de reutilizar.
+- Validar consistencia entre citas en texto y .bib.
+- Normalizar respuestas no estructuradas antes de propagar.
+- Bloquear propagacion si no hay JSON parseable.
+- Validar estructura minima completa antes de reutilizar.
+- Normalizar respuestas no estructuradas antes de aplicar aguas abajo.
+- Verificar ajuste del producto a la consigna local de Actividad 1.
+- Validar ajuste del producto a la consigna local de Actividad 1.
+- Validar estructura mínima completa antes de aplicar aguas abajo.
+- Normalizar toda respuesta no estructurada antes de reutilizar.
+- Confirmar ajuste del producto a la consigna local de Actividad 1.
+- Verificar ajuste final del producto a consigna local.
+- Validar ajuste del producto a consigna local de Actividad 1.
+- Exigir estructura minima completa antes de aplicar aguas abajo.
+- Bloquear propagación si la salida no es JSON parseable.
+- Verificar ajuste final del producto a la consigna local de Actividad 1.
+- Verificar ajuste final del producto a la consigna de Actividad 1.
+- Normalizar toda salida no estructurada antes de aplicar aguas abajo.
+- Confirmar ajuste del producto a consigna local de Actividad 1.
+- Verificar ajuste final del producto a consigna local de Actividad 1.
+- Validar esquema minimo completo antes de aplicar aguas abajo.
+- Validar estructura minima completa antes de reutilizar aguas abajo.
+- Normalizar salidas no estructuradas antes de su reutilizacion.
+- Verificar ajuste del producto a la consigna local.
+- Validar estructura minima completa antes de reutilizar o propagar.
+- Validar ajuste del entregable a la consigna local de Actividad 1.
+- Revisar estructura mínima completa antes de aplicar aguas abajo.
+
+## latex_rules
+
+- Usar codificacion y acentos correctos en espanol en .tex y .bib.
+- Mantener claves BibTeX estables para evitar referencias rotas.
+- Evitar comandos no estandar sin justificacion editorial.
+- Compilar sin errores criticos y sin referencias rotas.
+- Verificar nombres canonicos de archivos segun README local.
+- Usar como .bib canonico derecho-a-la-seguridad-social.bib.
+- Corregir rutas o caracteres anommalos antes de compilar.
+- Mantener claves BibTeX estables.
+- Compilar sin errores criticos ni referencias rotas.
+- Verificar nombres canonicos de archivo segun README local.
+- Usar derecho-a-la-seguridad-social.bib como base canonica local.
+- Corregir rutas o caracteres anomalos antes de compilar.
+- Usar codificación y acentos correctos en español en .tex y .bib.
+- Evitar comandos no estándar sin justificación editorial.
+- Compilar sin errores críticos ni referencias rotas.
+- Verificar nombres canónicos de archivos según README local.
+- Usar derecho-a-la-seguridad-social.bib como base canónica local.
+- Corregir rutas o caracteres anómalos antes de compilar.
+- Resolver tokens sin expandir en nombres de archivo si aparecen [supuesto preventivo].
+- Usar codificación y acentos correctos en español para .tex y .bib.
+- Compilar sin errores críticos, citas rotas ni referencias colgantes.
+- Verificar nombres canónicos de archivos contra README local.
+- No copiar bloques LaTeX completos entre nodos; transferir solo patrones.
+- Verificar nombres canónicos de archivo según README local.
+- Resolver tokens sin expandir en nombres de archivo si aparecen.
+- Resolver tokens sin expandir en rutas o nombres antes de compilar.
+- Resolver tokens sin expandir en README, programa o rutas si aparecen.
+- Usar derecho-a-la-seguridad-social.bib como archivo canonico local.
+- Resolver tokens sin expandir en nombres de archivo si aparecieran [supuesto].
+- Corregir rutas y caracteres anomalos antes de compilar.
+- Usar codificacion y acentos correctos en .tex y .bib.
+- Resolver tokens sin expandir si aparecen en README o programa analítico. [supuesto preventivo]
+- No dejar tokens sin expandir en nombres de archivo o rutas [supuesto preventivo heredado].
+- Verificar nombres canonicos segun README local.
+- Verificar nombres canonicos de archivos contra README local.
+- Verificar nombres canonicos de archivo contra README local.
+- Corregir rutas, tokens sin expandir y caracteres anómalos antes de compilar.
+- Resolver cualquier token sin expandir en nombres de archivo si aparece.
+- Usar codificacion y acentos correctos en espanol para .tex y .bib.
+- Usar derecho-a-la-seguridad-social.bib como base bibliografica canonica.
+
+## bibliography_rules
+
+- Priorizar fuentes institucionales UnADM y normatividad vigente verificable.
+- Registrar fuentes especificas de la actividad en el .bib local de la asignatura.
+- No inventar referencias; usar solo obras consultables.
+- Conservar metadatos minimos: autor, titulo, anio y fuente editorial o URL.
+- Distinguir bibliografia base de bibliografia especifica de actividad.
+- Usar como base local cpeum2026, lss2026 y lissste2026 cuando aplique a la consigna.
+- Registrar fuentes especificas de actividad en el .bib local.
+- No inventar referencias.
+- Usar solo obras realmente consultables.
+- Conservar metadatos minimos: autor, titulo, anio y fuente o URL.
+- Distinguir bibliografia base de bibliografia especifica por actividad.
+- Registrar fuentes específicas de actividad en el .bib local.
+- Conservar metadatos mínimos: autor, título, año y fuente o URL.
+- Distinguir bibliografía base de bibliografía específica por actividad.
+- Usar cpeum2026, lss2026 y lissste2026 solo cuando la consigna lo requiera.
+- Usar cpeum2026, lss2026 y lissste2026 cuando la consigna lo requiera.
+- Tomar como base local cpeum2026, lss2026 y lissste2026 cuando la consigna lo requiera.
+- Conservar metadatos mínimos: autor, título, año y fuente editorial o URL.
+- Distinguir bibliografia base y bibliografia especifica de actividad.
+- No inventar referencias; usar solo obras realmente consultables.
+- Usar cpeum2026, lss2026 y lissste2026 solo cuando la consigna los requiera.
+- Usar cpeum2026, lss2026 y lissste2026 cuando la consigna lo exija.
+- Priorizar fuentes institucionales UnADM, normatividad vigente y materiales verificables.
+- Registrar fuentes especificas de la actividad en el .bib local.
+- Conservar metadatos minimos: autor, titulo, anio y fuente/editorial o URL.
+- Distinguir bibliografia base y bibliografia especifica por actividad.
+- Usar cpeum2026, lss2026 y lissste2026 cuando la consigna lo requiera de forma pertinente.
+- Usar cpeum2026, lss2026 y lissste2026 como base solo cuando la consigna lo requiera.
+- Usar cpeum2026, lss2026 y lissste2026 cuando aplique a la consigna.
+- Usar cpeum2026, lss2026 y lissste2026 solo cuando la consigna lo exija.
+- Registrar fuentes específicas de la actividad en el .bib local de la asignatura.
+- Usar como base cpeum2026, lss2026 y lissste2026 solo cuando la consigna lo requiera.
+- Usar cpeum2026, lss2026 y lissste2026 como base cuando la consigna lo requiera.
+- Usar cpeum2026, lss2026 y lissste2026 como base solo cuando la consigna lo exija.
+- Conservar metadatos minimos: autor, titulo, anio, fuente/editorial o URL.
+- Usar cpeum2026, lss2026 y lissste2026 cuando sean pertinentes a la consigna.
+- Priorizar fuentes institucionales UnADM, normatividad vigente y materiales juridicos verificables.
+- Tomar como base local cpeum2026, lss2026 y lissste2026 cuando aplique a la consigna.
+- Usar cpeum2026, lss2026 y lissste2026 cuando aplique y la consigna lo permita.
+- Usar cpeum2026, lss2026 y lissste2026 solo cuando aplique a la consigna.
+
+## propagation_hints
+
+- Propagar recursivamente solo despues de validar JSON y estructura.
+- Transferir a nodos laterales solo patrones generales reutilizables.
+- Evitar copiar conclusiones, redaccion literal o bibliografia exclusiva entre hermanos.
+- Aplicar estrategia progresiva por analogia controlada: primero identidad y calidad, luego estructura y conceptos.
+- Preservar reglas utiles previas y agregar mejoras verificables sin regresion.
+- Propagar recursivamente solo tras validar JSON y estructura.
+- Transferir lateralmente solo patrones reutilizables de identidad, estructura y calidad.
+- No copiar redaccion literal, conclusiones ni bibliografia exclusiva entre hermanos.
+- Aplicar analogia controlada: primero reglas institucionales y calidad, luego estructura y conceptos.
+- Preservar reglas utiles previas y sumar solo mejoras verificables.
+- Transferir lateralmente solo identidad, estructura, calidad y patrones argumentativos.
+- No copiar redacción literal, conclusiones ni bibliografía exclusiva entre nodos hermanos.
+- Aplicar analogía controlada: primero calidad e identidad, luego estructura y conceptos.
+- Preservar reglas previas útiles y agregar solo mejoras verificables.
+- No copiar redaccion literal, conclusiones ni bibliografia exclusiva entre nodos hermanos.
+- Aplicar analogia controlada en orden: identidad y calidad, luego estructura y conceptos.
+- Preservar reglas utiles previas y sumar solo mejoras verificables sin regresion.
+- Transferir lateralmente solo patrones reutilizables de identidad, estructura, calidad y argumentacion.
+- Aplicar analogia controlada: primero identidad y calidad, luego estructura y conceptos.
+- Transferir lateralmente solo identidad, estructura, calidad y patrones argumentativos reutilizables.
+- No copiar redacción literal, conclusiones específicas ni bibliografía exclusiva entre nodos hermanos.
+- Aplicar analogía controlada: primero reglas institucionales y de calidad; después estructura y conceptos.
+- Preservar reglas útiles previas y agregar solo mejoras verificables sin regresión.
+- Aplicar analogia controlada: primero identidad y calidad; luego estructura y conceptos.
+- Preservar reglas utiles previas y agregar solo mejoras verificables sin regresion.
+- Si faltan datos locales, propagar plantilla base y abrir preguntas, sin inventar contenido.
+- Si faltan datos locales, mantener plantilla base y abrir preguntas, no inventar contenido.
+- Aplicar analogía controlada: primero reglas institucionales y calidad, luego estructura y conceptos.
+- Preservar reglas útiles previas y sumar solo mejoras verificables.
+- Aplicar analogia controlada: primero reglas institucionales y calidad; luego estructura y conceptos.
+- Transferir lateralmente solo identidad, estructura, calidad, conceptos y patrones argumentativos reutilizables.
+- Aplicar analogia controlada: primero reglas institucionales y calidad; despues estructura y conceptos.
+- Aplicar analogia controlada: primero calidad e identidad; luego estructura y conceptos.
+- Aplicar analogia controlada en dos pasos: primero calidad e identidad; luego estructura y conceptos.
+- Aplicar analogía controlada: primero reglas institucionales y calidad; después estructura y conceptos.
+- Transferir lateralmente solo identidad, estructura, calidad, conceptos y patrones argumentativos.
+- Transferir lateralmente solo identidad, estructura, calidad, conceptos recurrentes y patrones argumentativos.
+- Si faltan datos locales, propagar plantilla base y dejar preguntas abiertas.
+- Aplicar analogia controlada en dos pasos: primero identidad/calidad, luego estructura/conceptos.
+- Preservar reglas utiles previas y agregar solo mejoras verificables.
+- Si faltan datos locales, mantener estructura base y abrir preguntas en lugar de inventar.
+- Transferir lateralmente solo patrones reutilizables de identidad, estructura, calidad y argumentación.
+- Aplicar analogia controlada en orden: identidad/calidad, luego estructura/conceptos.
+- Aplicar analogia controlada en secuencia: identidad y calidad, luego estructura y conceptos.
+- Aplicar analogía controlada: primero reglas institucionales y calidad; luego estructura y conceptos.
+- Transferir lateralmente solo patrones reutilizables, no contenido tematico exclusivo.
+- Si falta consigna textual, propagar estructura base y preguntas abiertas.
+- Aplicar analogía controlada: primero identidad/calidad, luego estructura/conceptos.
+- Preservar reglas útiles previas y sumar solo mejoras verificables sin regresión.
+- Si falta consigna local, propagar plantilla base y abrir preguntas.
+- No copiar redacción literal, conclusiones ni bibliografía exclusiva entre hermanos.
+- Aplicar analogia controlada progresiva: primero identidad y calidad; luego estructura y conceptos.
+- Aplicar analogia controlada en fases: identidad y calidad, luego estructura y conceptos.
+- Aplicar analogia controlada en dos pasos: primero calidad e identidad, luego estructura y conceptos.
+- Transferir lateralmente solo identidad, estructura, calidad, conceptos marco y patrones argumentativos.
+- Aplicar analogia controlada en fases: identidad/calidad, luego estructura/conceptos.
+- No copiar redaccion literal, conclusiones especificas ni bibliografia exclusiva entre hermanos.
+- Aplicar analogía controlada: primero identidad y calidad; después estructura y conceptos.
+- Preservar reglas útiles previas y agregar solo mejoras verificables.
+- Aplicar analogia controlada: primero reglas institucionales y calidad, despues estructura y conceptos.
+- Aplicar analogia controlada: primero identidad y calidad; despues estructura y conceptos.
+- Aplicar analogia controlada en dos pasos: primero identidad y calidad, luego estructura y conceptos.
+- Si faltan datos locales, propagar plantilla de decision y preguntas abiertas.
+
+## open_questions
+
+- Supuesto: falta consigna textual completa de Actividad 1 en la materia destino; confirmar producto exacto solicitado.
+- Confirmar si Actividad 1 requiere reporte, presentacion o formato mixto.
+- Confirmar rubrica de evaluacion especifica para profundidad argumentativa.
+- Confirmar fuentes obligatorias de la semana para no sobregeneralizar bibliografia base.
+- Confirmar si hay criterios jurisprudenciales obligatorios ya definidos en planeacion local.
+- Supuesto: falta consigna textual completa de Actividad 1; confirmar producto exacto.
+- Confirmar si el entregable principal es reporte, presentacion o mixto.
+- Confirmar rubrica especifica de evaluacion para calibrar profundidad.
+- Confirmar fuentes obligatorias de la semana en planeacion local.
+- Confirmar si se exige jurisprudencia especifica en esta actividad.
+- Supuesto: falta consigna textual completa de Actividad 1; confirmar entregable exacto.
+- Confirmar si el formato requerido es reporte, presentación o mixto.
+- Confirmar rúbrica específica para calibrar profundidad argumentativa.
+- Confirmar fuentes obligatorias de la semana.
+- Confirmar si se exige jurisprudencia específica en esta actividad.
+- Confirmar si el formato requerido es reporte, presentacion o mixto.
+- Confirmar rubrica especifica de evaluacion para calibrar profundidad argumentativa.
+- Confirmar rubrica especifica para calibrar profundidad argumentativa.
+- Confirmar fuentes obligatorias de la semana en planeación local.
+- Confirmar si la actividad exige jurisprudencia especifica.
+- Confirmar consigna textual completa de Actividad 1 en la materia destino.
+- Confirmar rúbrica específica de evaluación para calibrar profundidad.
+- Confirmar rúbrica específica de evaluación para calibrar profundidad argumentativa.
+- Confirmar si formato requerido es reporte, presentacion o mixto.
+- Confirmar si se exige jurisprudencia especifica para esta actividad.
+- [Supuesto] Falta consigna textual completa de Actividad 1; confirmar entregable exacto.
+
+## editorial_dna
+
+### esencia
+- Marco constitucional del derecho a la seguridad social en México.
+- Leyes e instituciones clave (IMSS, ISSSTE y régimen aplicable).
+- Principios de universalidad, progresividad, igualdad y no discriminación.
+- Jurisprudencia y criterios relevantes recientes.
+- Problemas actuales de acceso, cobertura y justiciabilidad.
+- Fundamento constitucional del derecho a la seguridad social en México.
+- Derecho a la seguridad social
+- Marco constitucional en Mexico
+- Ley del Seguro Social
+- Ley del ISSSTE
+- Universalidad
+- Progresividad
+
+### razon_de_ser
+- Transformar cada consigna en un producto juridico verificable: problema, fundamento, analisis, evidencia, postura y cierre profesional.
+- Marco constitucional del derecho a la seguridad social en México.
+- Leyes e instituciones clave (IMSS, ISSSTE y régimen aplicable).
+- Principios de universalidad, progresividad, igualdad y no discriminación.
+- Jurisprudencia y criterios relevantes recientes.
+- Problemas actuales de acceso, cobertura y justiciabilidad.
+- Fundamento constitucional del derecho a la seguridad social en México.
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear la entrega al producto solicitado por la planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+
+### identidad_estilistica
+- Objetivo puntual al inicio.
+- Secciones claras y trazables.
+- Postura personal sustentada.
+- Marcado explicito de supuestos.
+- Cierre profesional no meramente descriptivo.
+- Mantener identidad institucional UnADM en tono y formato.
+- Vincular la actividad a Licenciatura en Derecho y a la asignatura Derecho a la Seguridad Social.
+- Usar la carpeta de asignatura como punto de entrada canonico.
+- Basar ubicacion curricular en semestre 2, bloque 1, obligatoria, 8 creditos.
+- Marcar como supuesto cualquier dato no visible en la consigna de Actividad 1.
+- Tratar toda fuente heredada no verificada como provisional hasta confirmacion local.
+- Usar README y programa analitico locales como fuentes primarias de identidad.
+
+### patrones_argumentativos
+- Problema -> fundamento normativo -> analisis -> evidencia -> conclusion.
+- Regla general -> contraste con contexto -> toma de postura -> implicacion practica.
+- Hecho o pregunta guia -> criterios juridicos -> inferencia razonada.
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear la entrega al producto solicitado por la planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Adaptar el formato final a la consigna: reporte, presentacion u otro producto permitido.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Incluir postura argumentada del estudiante, no solo resumen.
+- Evitar entregas solo descriptivas.
+
+### grafo_de_conocimiento
+- Conceptos: 977
+- Citas: 5
+- Relaciones reforzadas: 570
+- Evidencias: 370
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-1.tex`
+- Caracteres LaTeX preservados: 4806
+- Bloques/parrafos indexados: 41
+- Claves citadas: unadmSitioWeb, unadmMallaDerecho2024, cpeum2026, lss2026, lissste2026
+- Claves sin referencia: ninguna
