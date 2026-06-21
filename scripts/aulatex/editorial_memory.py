@@ -1193,11 +1193,34 @@ def _is_brain_concept(value: str) -> bool:
     if not value or len(value) > 140:
         return False
     lowered = value.lower()
+    if _is_operational_noise(value):
+        return False
     if ":: fuente=" in lowered:
         return False
     if lowered.startswith("supuesto:"):
         return False
     return bool(re.search(r"[A-Za-zÁÉÍÓÚáéíóúÑñ]", value))
+
+
+def _is_operational_noise(value: str) -> bool:
+    lowered = value.lower()
+    markers = (
+        "json parseable",
+        "salida sin",
+        "compresión",
+        "compresion",
+        "normalización",
+        "normalizacion",
+        "ciclo ",
+        "control de calidad",
+        "fuente provisional",
+        "propagación",
+        "propagacion",
+        "deduplicación",
+        "deduplicacion",
+        "schema_version",
+    )
+    return any(marker in lowered for marker in markers)
 
 
 def _concept_seed_from_line(value: str) -> str:
@@ -1252,14 +1275,19 @@ def _apply_feedback_reinforcement(editorial_dna: dict, candidate_memory: dict) -
     graph["citation_weights"] = _merge_weight_maps(graph.get("citation_weights", {}), {item: 1 for item in citation_signals})
     graph["relations"] = _merge_relation_lists(graph.get("relations", []), _relation_items_from_concepts(concept_signals))
 
-    dna["essence"] = _dedupe_lines(dna.get("essence", []) + concept_signals[:8])
-    dna["reason_for_being"] = _dedupe_lines(dna.get("reason_for_being", []) + candidate_memory.get("summary", [])[:4])
-    dna["style_markers"] = _dedupe_lines(dna.get("style_markers", []) + candidate_memory.get("identity_rules", [])[:6])
-    dna["argumentative_patterns"] = _dedupe_lines(dna.get("argumentative_patterns", []) + candidate_memory.get("structure_rules", [])[:6] + candidate_memory.get("activity_rules", [])[:6])
-    dna["reinforcement_log"] = _dedupe_lines(
+    dna["essence"] = _brain_lines(dna.get("essence", []) + concept_signals[:8], 24)
+    dna["reason_for_being"] = _brain_lines(dna.get("reason_for_being", []) + candidate_memory.get("summary", [])[:4], 24)
+    dna["style_markers"] = _brain_lines(dna.get("style_markers", []) + candidate_memory.get("identity_rules", [])[:6], 20)
+    dna["argumentative_patterns"] = _brain_lines(
+        dna.get("argumentative_patterns", []) + candidate_memory.get("structure_rules", [])[:6] + candidate_memory.get("activity_rules", [])[:6],
+        20,
+    )
+    dna["reinforcement_log"] = _brain_lines(
         dna.get("reinforcement_log", [])
         + [f"Refuerzo editorial aplicado sobre {len(concept_signals)} conceptos y {len(citation_signals)} citas."]
-        + candidate_memory.get("summary", [])[:2]
+        + candidate_memory.get("summary", [])[:2],
+        30,
+        allow_operational=True,
     )
     return _normalize_editorial_dna(dna)
 
@@ -1304,8 +1332,11 @@ def _memory_prompt_view(memory: dict) -> dict:
     return prompt_view
 
 
-def _brain_lines(items: list[str], max_items: int) -> list[str]:
-    return _dedupe_lines([item for item in items if isinstance(item, str) and item.strip()])[:max_items]
+def _brain_lines(items: list[str], max_items: int, *, allow_operational: bool = False) -> list[str]:
+    normalized = [item for item in items if isinstance(item, str) and item.strip()]
+    if not allow_operational:
+        normalized = [item for item in normalized if not _is_operational_noise(item)]
+    return _dedupe_lines(normalized)[:max_items]
 
 
 def _brain_concepts(items: list[str], max_items: int) -> list[str]:
@@ -1317,14 +1348,52 @@ def _relations_from_content_blocks(blocks: list[dict], concepts: list[str]) -> l
     relations: list[dict] = []
     candidates = _brain_concepts(concepts, 20)
     if not candidates:
-        return relations
+        candidates = []
     for block in blocks[:120]:
         if not isinstance(block, dict):
             continue
         text = str(block.get("text", ""))
         lowered = text.lower()
-        matched = [concept for concept in candidates if concept.lower() in lowered][:5]
+        kind = str(block.get("kind", "")).strip()
         section = str(block.get("section", "")).strip()
+        subsection = str(block.get("subsection", "")).strip()
+        paragraph_heading = str(block.get("paragraph_heading", "")).strip()
+        evidence = [str(block.get("id", ""))] if block.get("id") else []
+
+        if section and subsection:
+            relations.append(
+                {
+                    "source": section,
+                    "target": subsection,
+                    "kind": "organizes",
+                    "weight": 1,
+                    "evidence": evidence,
+                }
+            )
+        if (subsection or section) and paragraph_heading:
+            relations.append(
+                {
+                    "source": subsection or section,
+                    "target": paragraph_heading,
+                    "kind": "develops",
+                    "weight": 1,
+                    "evidence": evidence,
+                }
+            )
+        if kind == "concept_node":
+            concept_text = _concept_seed_from_line(text)
+            if _is_brain_concept(concept_text):
+                relations.append(
+                    {
+                        "source": subsection or section or "documento",
+                        "target": concept_text,
+                        "kind": "develops",
+                        "weight": 1,
+                        "evidence": evidence,
+                    }
+                )
+
+        matched = [concept for concept in candidates if concept.lower() in lowered][:5]
         for concept in matched:
             if section:
                 relations.append(
@@ -1333,7 +1402,7 @@ def _relations_from_content_blocks(blocks: list[dict], concepts: list[str]) -> l
                         "target": concept,
                         "kind": "develops",
                         "weight": 1,
-                        "evidence": [str(block.get("id", ""))],
+                        "evidence": evidence,
                     }
                 )
         for index, source in enumerate(matched):
@@ -1344,7 +1413,7 @@ def _relations_from_content_blocks(blocks: list[dict], concepts: list[str]) -> l
                         "target": target,
                         "kind": "cooccurrence",
                         "weight": 1,
-                        "evidence": [str(block.get("id", ""))],
+                        "evidence": evidence,
                     }
                 )
     return _merge_relation_lists([], relations)
@@ -1353,6 +1422,9 @@ def _relations_from_content_blocks(blocks: list[dict], concepts: list[str]) -> l
 def _synthesize_editorial_dna(memory: dict, existing_dna: dict | None = None) -> dict:
     dna = _normalize_editorial_dna(existing_dna or memory.get("editorial_dna", {}))
     tex_primary = memory.get("tex_content_memory", {}).get("primary", {}) if isinstance(memory.get("tex_content_memory", {}), dict) else {}
+    curricular_context = memory.get("curricular_context", {}) if isinstance(memory.get("curricular_context", {}), dict) else {}
+    work_axes = curricular_context.get("work_axes", []) if isinstance(curricular_context.get("work_axes", []), list) else []
+    purpose = curricular_context.get("purpose", "") if isinstance(curricular_context.get("purpose", ""), str) else ""
     graph = dna.get("knowledge_graph", {})
     graph["concepts"] = _dedupe_lines(graph.get("concepts", []) + memory.get("concepts", []))
     graph["citations"] = _dedupe_lines(graph.get("citations", []) + memory.get("citations", []))
@@ -1377,15 +1449,15 @@ def _synthesize_editorial_dna(memory: dict, existing_dna: dict | None = None) ->
         },
     )
     dna["essence"] = _brain_lines(
-        dna.get("essence", [])
-        + memory.get("summary", [])
+        work_axes
         + _brain_concepts(memory.get("concepts", []), 20)
+        + _brain_concepts(graph.get("concepts", []), 20)
         + memory.get("activity_rules", []),
         24,
     )
     dna["reason_for_being"] = _brain_lines(
-        dna.get("reason_for_being", [])
-        + memory.get("summary", [])
+        ([purpose] if purpose else [])
+        + work_axes
         + memory.get("structure_rules", [])
         + memory.get("activity_rules", [])
         + memory.get("section_titles", []),
@@ -1408,6 +1480,7 @@ def _synthesize_editorial_dna(memory: dict, existing_dna: dict | None = None) ->
             f"Memoria de redacción preservada en {len(dna.get('writing_memory', []))} bloques.",
         ],
         40,
+        allow_operational=True,
     )
     return _normalize_editorial_dna(dna)
 
