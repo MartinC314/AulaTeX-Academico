@@ -350,6 +350,8 @@
 - Se consolidan ejes: problema, conceptos, evidencia, analisis propio y conclusion juridica.
 - Se preserva TEX reconstruible de Actividad 1 y sus claves de cita.
 - Se refuerza regla de marcar supuestos cuando falte consigna textual.
+- Se conserva normalización JSON obligatoria antes de propagar.
+- Se mantiene TEX reconstruible y trazabilidad de fuentes locales.
 
 ## identity_rules
 
@@ -828,10 +830,10 @@
 - Sustentar afirmaciones con fuentes verificables y cita explícita.
 
 ### grafo_de_conocimiento
-- Conceptos: 1596
+- Conceptos: 1605
 - Citas: 18
-- Relaciones reforzadas: 810
-- Evidencias: 702
+- Relaciones reforzadas: 819
+- Evidencias: 705
 
 ## adn_tex
 
