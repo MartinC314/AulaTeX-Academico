@@ -352,6 +352,14 @@
 - Se refuerza regla de marcar supuestos cuando falte consigna textual.
 - Se conserva normalización JSON obligatoria antes de propagar.
 - Se mantiene TEX reconstruible y trazabilidad de fuentes locales.
+- Memoria de Actividad 1 canonizada con preservación total y deduplicación lossless.
+- Se mantiene regla crítica: no propagar salidas no estructuradas sin normalización previa.
+- Se mantiene control de salidas no parseables como bloqueo de calidad.
+- Se mantiene identidad UnADM y contexto curricular de Filosofia del Derecho.
+- Se conservan ejes editoriales: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se refuerza regla de normalizacion: no propagar salidas no estructuradas.
+- Se mantiene trazabilidad de fuentes provisionales y supuestos pendientes.
+- Se preserva TEX reconstruible del artefacto de Actividad 1.
 
 ## identity_rules
 
@@ -830,10 +838,10 @@
 - Sustentar afirmaciones con fuentes verificables y cita explícita.
 
 ### grafo_de_conocimiento
-- Conceptos: 1605
+- Conceptos: 1633
 - Citas: 18
-- Relaciones reforzadas: 819
-- Evidencias: 705
+- Relaciones reforzadas: 839
+- Evidencias: 717
 
 ## adn_tex
 
