@@ -17,6 +17,7 @@ except ModuleNotFoundError:
     requests = None
 
 from .editorial_memory import ENGINE_PRIORITY, EditorialMemoryStore
+from .llm_bridge import DEFAULT_MAX_TOKENS
 from .llm_bridge import LLM_ENGINES, AulaTeXLLMClient
 from .workspace import AulaTeXWorkspace, EditorialScope
 
@@ -40,7 +41,7 @@ class InvestigationRequest:
     scope_key: str
     iterations: int = 2
     engines: list[str] | tuple[str, ...] = ("Codex", "Auto (model-router)", "Claude Foundry", "GPT-Pro")
-    max_tokens: int = 1800
+    max_tokens: int = DEFAULT_MAX_TOKENS
     search_terms: tuple[str, ...] = ()
     seed_urls: tuple[str, ...] = ()
 

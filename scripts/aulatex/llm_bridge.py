@@ -16,6 +16,9 @@ from .config import ENGINE_ENV_PREFIX, LLM_ENGINES, load_aulatex_env
 
 
 _FALSE_VALUES = {"0", "false", "no", "off"}
+DEFAULT_MAX_TOKENS = 200_000
+DEFAULT_TIMEOUT_SECONDS = 300
+_MIN_MAX_TOKENS = 16
 
 
 @dataclass(frozen=True)
@@ -33,8 +36,8 @@ class AulaTeXLLMConfig:
     api_key: str
     deployment: str
     api_version: str = "2023-06-01"
-    timeout_seconds: int = 45
-    max_tokens: int = 1200
+    timeout_seconds: int = 900
+    max_tokens: int = DEFAULT_MAX_TOKENS
     temperature: float = 0.0
 
     @classmethod
@@ -54,8 +57,8 @@ class AulaTeXLLMConfig:
         api_key = _env(f"{prefix}_API_KEY")
         deployment = _env(f"{prefix}_CHAT_DEPLOYMENT")
         api_version = _env(f"{prefix}_API_VERSION", "2023-06-01")
-        timeout_seconds = _env_int("AULATEX_LLM_VALIDATION_TIMEOUT", _env_int("TB_BOOKS_LLM_VALIDATION_TIMEOUT", 45))
-        max_tokens = _env_int("AULATEX_LLM_VALIDATION_MAX_TOKENS", _env_int("TB_BOOKS_LLM_VALIDATION_MAX_TOKENS", 1200))
+        timeout_seconds = _env_int("AULATEX_LLM_VALIDATION_TIMEOUT", _env_int("TB_BOOKS_LLM_VALIDATION_TIMEOUT", DEFAULT_TIMEOUT_SECONDS))
+        max_tokens = _env_int("AULATEX_LLM_VALIDATION_MAX_TOKENS", _env_int("TB_BOOKS_LLM_VALIDATION_MAX_TOKENS", DEFAULT_MAX_TOKENS))
         temperature = _env_float(
             "AULATEX_LLM_VALIDATION_TEMPERATURE",
             _env_float("TB_BOOKS_LLM_VALIDATION_TEMPERATURE", 0.0),
@@ -71,7 +74,7 @@ class AulaTeXLLMConfig:
             deployment=deployment,
             api_version=api_version,
             timeout_seconds=max(5, timeout_seconds),
-            max_tokens=max(16, max_tokens),
+            max_tokens=_normalize_requested_max_tokens(max_tokens),
             temperature=max(0.0, temperature),
         )
 
@@ -96,12 +99,18 @@ class AulaTeXLLMClient:
     def check(self, engine: str, timeout_seconds: int = 10) -> LLMCallResult:
         return check_llm_connection(engine, timeout_seconds=timeout_seconds)
 
-    def call(self, engine: str, prompt: str, *, max_tokens: int = 1400, timeout_seconds: int = 60) -> LLMCallResult:
-        try:
-            text = call_llm_text(engine, prompt, max_tokens=max_tokens, timeout_seconds=timeout_seconds)
-            return LLMCallResult(normalize_llm_engine_label(engine), True, text)
-        except Exception as exc:
-            return LLMCallResult(normalize_llm_engine_label(engine), False, "", _friendly_error(exc))
+    def call(self, engine: str, prompt: str, *, max_tokens: int = DEFAULT_MAX_TOKENS, timeout_seconds: int = DEFAULT_TIMEOUT_SECONDS) -> LLMCallResult:
+        selected = normalize_llm_engine_label(engine)
+        last_exc: Exception | None = None
+        for candidate_max_tokens in _max_token_attempts(max_tokens):
+            try:
+                text = call_llm_text(selected, prompt, max_tokens=candidate_max_tokens, timeout_seconds=timeout_seconds)
+                return LLMCallResult(selected, True, text)
+            except Exception as exc:
+                last_exc = exc
+                if not _should_retry_with_lower_max_tokens(exc):
+                    break
+        return LLMCallResult(selected, False, "", _friendly_error(last_exc or RuntimeError("Fallo desconocido.")))
 
     def call_image(
         self,
@@ -110,29 +119,35 @@ class AulaTeXLLMClient:
         *,
         image_bytes: bytes,
         media_type: str,
-        max_tokens: int = 1400,
-        timeout_seconds: int = 60,
+        max_tokens: int = DEFAULT_MAX_TOKENS,
+        timeout_seconds: int = DEFAULT_TIMEOUT_SECONDS,
     ) -> LLMCallResult:
-        try:
-            text = call_llm_multimodal(
-                engine,
-                prompt,
-                image_bytes=image_bytes,
-                media_type=media_type,
-                max_tokens=max_tokens,
-                timeout_seconds=timeout_seconds,
-            )
-            return LLMCallResult(normalize_llm_engine_label(engine), True, text)
-        except Exception as exc:
-            return LLMCallResult(normalize_llm_engine_label(engine), False, "", _friendly_error(exc))
+        selected = normalize_llm_engine_label(engine)
+        last_exc: Exception | None = None
+        for candidate_max_tokens in _max_token_attempts(max_tokens):
+            try:
+                text = call_llm_multimodal(
+                    selected,
+                    prompt,
+                    image_bytes=image_bytes,
+                    media_type=media_type,
+                    max_tokens=candidate_max_tokens,
+                    timeout_seconds=timeout_seconds,
+                )
+                return LLMCallResult(selected, True, text)
+            except Exception as exc:
+                last_exc = exc
+                if not _should_retry_with_lower_max_tokens(exc):
+                    break
+        return LLMCallResult(selected, False, "", _friendly_error(last_exc or RuntimeError("Fallo desconocido.")))
 
     def cycle(
         self,
         prompts: list[str],
         engines: list[str] | tuple[str, ...] | None = None,
         *,
-        max_tokens: int = 1400,
-        timeout_seconds: int = 60,
+        max_tokens: int = DEFAULT_MAX_TOKENS,
+        timeout_seconds: int = DEFAULT_TIMEOUT_SECONDS,
     ) -> list[LLMCallResult]:
         engine_list = [engine for engine in list(engines or self.engines()) if engine in LLM_ENGINES]
         if not engine_list:
@@ -204,8 +219,8 @@ def call_llm_text(
     engine_label: str,
     prompt: str,
     *,
-    max_tokens: int = 1200,
-    timeout_seconds: int = 60,
+    max_tokens: int = DEFAULT_MAX_TOKENS,
+    timeout_seconds: int = DEFAULT_TIMEOUT_SECONDS,
 ) -> str:
     selected = normalize_llm_engine_label(engine_label)
     config = AulaTeXLLMConfig.from_env(selected)
@@ -213,8 +228,8 @@ def call_llm_text(
         raise RuntimeError(f"Configuracion LLM incompleta para {selected}")
     requests_mod = _require_requests()
 
-    timeout = max(5, min(timeout_seconds, config.timeout_seconds))
-    max_output = max(16, max_tokens)
+    max_output = _normalize_requested_max_tokens(max_tokens)
+    timeout = _normalize_timeout(timeout_seconds, max_output, config.timeout_seconds)
     if config.is_anthropic():
         response = requests_mod.post(
             _anthropic_messages_endpoint(config),
@@ -240,8 +255,8 @@ def call_llm_multimodal(
     *,
     image_bytes: bytes,
     media_type: str,
-    max_tokens: int = 1200,
-    timeout_seconds: int = 60,
+    max_tokens: int = DEFAULT_MAX_TOKENS,
+    timeout_seconds: int = DEFAULT_TIMEOUT_SECONDS,
 ) -> str:
     if not image_bytes:
         raise ValueError("image_bytes no puede estar vacio")
@@ -252,8 +267,8 @@ def call_llm_multimodal(
         raise RuntimeError(f"Configuracion LLM incompleta para {selected}")
     requests_mod = _require_requests()
 
-    timeout = max(5, min(timeout_seconds, config.timeout_seconds))
-    max_output = max(16, max_tokens)
+    max_output = _normalize_requested_max_tokens(max_tokens)
+    timeout = _normalize_timeout(timeout_seconds, max_output, config.timeout_seconds)
     encoded = base64.b64encode(image_bytes).decode("ascii")
 
     if config.is_anthropic():
@@ -477,6 +492,50 @@ def _friendly_error(exc: Exception) -> str:
     if _requests is not None and isinstance(exc, _requests.RequestException):
         return f"Error de red: {type(exc).__name__}."
     return f"{type(exc).__name__}: {exc}"
+
+
+def _normalize_requested_max_tokens(max_tokens: int) -> int:
+    return max(_MIN_MAX_TOKENS, min(DEFAULT_MAX_TOKENS, int(max_tokens)))
+
+
+def _normalize_timeout(requested_timeout_seconds: int, max_tokens: int, config_timeout_seconds: int) -> int:
+    suggested_timeout = min(900, max(60, 60 + max_tokens // 500))
+    return max(5, min(max(int(requested_timeout_seconds), suggested_timeout), int(config_timeout_seconds)))
+
+
+def _max_token_attempts(max_tokens: int) -> list[int]:
+    requested = _normalize_requested_max_tokens(max_tokens)
+    attempts: list[int] = []
+    candidate = requested
+    while candidate >= 2048:
+        if candidate not in attempts:
+            attempts.append(candidate)
+        candidate //= 2
+    if 2048 not in attempts:
+        attempts.append(2048)
+    return attempts
+
+
+def _should_retry_with_lower_max_tokens(exc: Exception) -> bool:
+    if _requests is None or not isinstance(exc, _requests.HTTPError):
+        return False
+    response = exc.response
+    if response is None or response.status_code != 400:
+        return False
+    text = ""
+    try:
+        text = response.text.lower()
+    except Exception:
+        text = ""
+    retry_markers = (
+        "max_tokens",
+        "max_output_tokens",
+        "maximum context length",
+        "token",
+        "too many",
+        "invalid_request_error",
+    )
+    return any(marker in text for marker in retry_markers) or not text
 
 
 def _require_requests() -> Any:

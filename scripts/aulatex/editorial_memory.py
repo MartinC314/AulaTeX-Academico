@@ -9,7 +9,7 @@ from pathlib import Path
 from threading import Event
 from typing import Callable
 
-from .llm_bridge import LLM_ENGINES, AulaTeXLLMClient
+from .llm_bridge import DEFAULT_MAX_TOKENS, DEFAULT_TIMEOUT_SECONDS, LLM_ENGINES, AulaTeXLLMClient
 from .workspace import AulaTeXWorkspace, EditorialScope
 
 
@@ -19,6 +19,16 @@ EDITORIAL_LEVELS = (
     "carrera",
     "institucion",
     "interinstitucional",
+)
+
+PROPAGATION_MODES = (
+    "local",
+    "lateral",
+    "ascendente",
+    "ascendente-exhaustivo",
+    "descendente",
+    "recursivo",
+    "bidireccional",
 )
 
 ENGINE_PRIORITY = {
@@ -75,7 +85,10 @@ class EditorialMemoryRequest:
     propagation_mode: str = "ascendente"
     iterations: int = 2
     engines: list[str] | tuple[str, ...] = ("Codex", "Claude Foundry", "GPT-Pro")
-    max_tokens: int = 1400
+    max_tokens: int = DEFAULT_MAX_TOKENS
+    timeout_seconds: int = DEFAULT_TIMEOUT_SECONDS
+    scope_offset: int = 0
+    scope_limit: int = 0
 
 
 @dataclass(frozen=True)
@@ -696,7 +709,18 @@ class EditorialMemoryBuilder:
         for scope in by_key.values():
             self.store.upsert_scope(scope)
 
-        plan = self._plan_scopes(source_scope, request.build_level, request.propagation_mode, by_key, children)
+        full_plan = self._plan_scopes(source_scope, request.build_level, request.propagation_mode, by_key, children)
+        scope_offset = max(0, int(request.scope_offset))
+        scope_limit = max(0, int(request.scope_limit))
+        if scope_offset >= len(full_plan):
+            raise ValueError(
+                f"El desplazamiento del lote ({scope_offset}) rebasa el plan calculado ({len(full_plan)} scopes)"
+            )
+        plan = full_plan[scope_offset:]
+        if scope_limit:
+            plan = plan[:scope_limit]
+        if not plan:
+            raise ValueError("El lote seleccionado no contiene scopes para construir memoria editorial")
         total = max(1, len(plan) * max(1, int(request.iterations)) * len(engines))
         current = 0
         cycle_logs: list[dict] = []
@@ -731,7 +755,12 @@ class EditorialMemoryBuilder:
                             cycle_index,
                         ),
                     )
-                    result = self.llm.call(engine, prompt, max_tokens=request.max_tokens)
+                    result = self.llm.call(
+                        engine,
+                        prompt,
+                        max_tokens=request.max_tokens,
+                        timeout_seconds=max(5, int(request.timeout_seconds)),
+                    )
                     response_text = result.text if result.ok else result.error
                     self.store.record_cycle(
                         run_id=run_id,
@@ -783,6 +812,11 @@ class EditorialMemoryBuilder:
             "propagation_mode": request.propagation_mode,
             "iterations": int(request.iterations),
             "engines": engines,
+            "timeout_seconds": max(5, int(request.timeout_seconds)),
+            "scope_offset": scope_offset,
+            "scope_limit": scope_limit,
+            "full_plan_scope_count": len(full_plan),
+            "batch_scope_count": len(plan),
             "built_scopes": [scope.key for scope in plan],
             "cycles": cycle_logs,
             "ok": overall_ok and not cancelled,
@@ -824,17 +858,46 @@ class EditorialMemoryBuilder:
         by_key: dict[str, EditorialScope],
         children: dict[str, list[EditorialScope]],
     ) -> list[EditorialScope]:
-        allowed = {"local", "ascendente", "ascendente-exhaustivo", "recursivo"}
+        allowed = set(PROPAGATION_MODES)
         mode = propagation_mode if propagation_mode in allowed else "ascendente"
         order = {level: index for index, level in enumerate(EDITORIAL_LEVELS)}
-        if order[build_level] < order[source_scope.level]:
-            raise ValueError("El nivel de construccion no puede ser mas profundo que el origen seleccionado")
+
+        if mode in {"local", "lateral"}:
+            build_level = source_scope.level
+        elif mode in {"ascendente", "ascendente-exhaustivo", "recursivo"} and order[build_level] < order[source_scope.level]:
+            raise ValueError("El nivel de construccion no puede ser mas profundo que el origen seleccionado en propagacion ascendente")
+        elif mode == "descendente" and order[build_level] > order[source_scope.level]:
+            raise ValueError("El nivel de construccion no puede ser mas alto que el origen seleccionado en propagacion descendente")
 
         plan: list[EditorialScope] = []
         seen: set[str] = set()
+
+        if mode == "local":
+            self._append_scope(plan, seen, source_scope)
+            return plan
+
+        if mode == "lateral":
+            self._append_scope(plan, seen, source_scope)
+            parent = by_key.get(source_scope.parent_key)
+            if parent is not None:
+                for sibling in children.get(parent.key, []):
+                    if sibling.level == source_scope.level:
+                        self._append_scope(plan, seen, sibling)
+            return plan
+
+        if mode == "descendente":
+            self._append_descendants_preorder(plan, seen, source_scope, children, order, order[build_level])
+            return plan
+
+        if mode == "bidireccional" and order[build_level] < order[source_scope.level]:
+            self._append_descendants_preorder(plan, seen, source_scope, children, order, order[build_level])
+            return plan
+
         current = source_scope
         while current is not None:
             if mode == "recursivo":
+                self._append_subtree_postorder(plan, seen, current, children)
+            elif mode == "bidireccional":
                 self._append_subtree_postorder(plan, seen, current, children)
             else:
                 self._append_scope(plan, seen, current)
@@ -870,6 +933,37 @@ class EditorialMemoryBuilder:
             self._append_subtree_postorder(plan, seen, child, children)
         self._append_scope(plan, seen, scope)
 
+    def _append_descendants_preorder(
+        self,
+        plan: list[EditorialScope],
+        seen: set[str],
+        scope: EditorialScope,
+        children: dict[str, list[EditorialScope]],
+        order: dict[str, int],
+        build_order: int,
+    ) -> None:
+        self._append_scope(plan, seen, scope)
+        if order[scope.level] == build_order:
+            return
+        for child in children.get(scope.key, []):
+            if order[child.level] < build_order:
+                continue
+            self._append_descendants_preorder(plan, seen, child, children, order, build_order)
+
+    def describe_scope_transfer(
+        self,
+        source_scope_key: str,
+        target_scope_key: str,
+        propagation_mode: str,
+    ) -> dict:
+        by_key, _children = self.workspace.editorial_scope_index()
+        source_scope = by_key.get(source_scope_key)
+        target_scope = by_key.get(target_scope_key)
+        if source_scope is None or target_scope is None:
+            return {"relation": "desconocida", "objective": "indeterminado", "strategy": "indeterminada"}
+        current_memory = self.store.get_memory(target_scope.key)
+        return _transfer_profile(source_scope, target_scope, propagation_mode, current_memory, by_key)
+
     def _build_prompt(
         self,
         source_scope: EditorialScope,
@@ -879,11 +973,15 @@ class EditorialMemoryBuilder:
         by_key: dict[str, EditorialScope],
     ) -> str:
         current_memory = self.store.get_memory(target_scope.key)
+        source_memory = self.store.get_memory(source_scope.key)
         parent_memory = ""
         if target_scope.parent_key and target_scope.parent_key in by_key:
             parent_memory = self.store.summarize_for_scope(target_scope.parent_key, include_ancestors=True, max_chars=2500)
         local_context = self.workspace.context_summary(target_scope.relative_path, max_chars=4000)
         memory_json = json.dumps(_memory_prompt_view(current_memory), ensure_ascii=False, indent=2)
+        source_memory_json = json.dumps(_memory_prompt_view(source_memory), ensure_ascii=False, indent=2)
+        transfer = _transfer_profile(source_scope, target_scope, request.propagation_mode, current_memory, by_key)
+        transfer_rules = "\n".join(f"- {item}" for item in transfer.get("rules", [])) or "- Preserva solo mejoras verificables."
         return (
             "Eres AulaTeX y estas consolidando memoria editorial persistente para una suite academica en LaTeX. "
             "Debes preservar todo lo valido, agregar solo mejoras verificables y nunca eliminar reglas utiles previas. "
@@ -892,6 +990,9 @@ class EditorialMemoryBuilder:
             f"Origen: {source_scope.level} | {source_scope.key}\n"
             f"Destino: {target_scope.level} | {target_scope.key}\n"
             f"Propagacion: {request.propagation_mode}\n"
+            f"Relacion entre nodos: {transfer.get('relation', 'desconocida')}\n"
+            f"Objetivo editorial: {transfer.get('objective', 'refuerzo')}\n"
+            f"Estrategia: {transfer.get('strategy', 'progresiva')}\n"
             f"Ciclo: {cycle_index}\n\n"
             "Esquema requerido:\n"
             "{\n"
@@ -920,6 +1021,8 @@ class EditorialMemoryBuilder:
             '  }\n'
             "}\n\n"
             "Reglas: usa frases cortas, accionables y sin duplicados; marca supuestos; no inventes fuentes; no copies LaTeX completo; refuerza conexiones, ideas, conceptos, patrones argumentativos e identidad estilistica.\n\n"
+            f"Reglas de transferencia para este salto:\n{transfer_rules}\n\n"
+            f"Memoria del origen:\n{source_memory_json}\n\n"
             f"Memoria actual del destino:\n{memory_json}\n\n"
             f"Memoria heredada:\n{parent_memory or 'Sin memoria heredada aun.'}\n\n"
             f"Contexto local:\n{local_context}\n"
@@ -989,6 +1092,110 @@ class EditorialMemoryBuilder:
 
     def _is_cancelled(self, cancel_event: Event | None) -> bool:
         return bool(cancel_event is not None and cancel_event.is_set())
+
+
+def _ancestor_keys(scope: EditorialScope, by_key: dict[str, EditorialScope]) -> list[str]:
+    keys: list[str] = []
+    current = by_key.get(scope.parent_key)
+    while current is not None:
+        keys.append(current.key)
+        current = by_key.get(current.parent_key)
+    return keys
+
+
+def _scope_relation(source_scope: EditorialScope, target_scope: EditorialScope, by_key: dict[str, EditorialScope]) -> str:
+    if source_scope.key == target_scope.key:
+        return "mismo-nodo"
+    source_ancestors = set(_ancestor_keys(source_scope, by_key))
+    target_ancestors = set(_ancestor_keys(target_scope, by_key))
+    if target_scope.key in source_ancestors:
+        return "ancestro"
+    if source_scope.key in target_ancestors:
+        return "descendiente"
+    if source_scope.parent_key and source_scope.parent_key == target_scope.parent_key and source_scope.level == target_scope.level:
+        return "hermano"
+    if source_scope.level == target_scope.level:
+        return "lateral-transversal"
+    return "transversal"
+
+
+def _has_substantive_memory(memory: dict) -> bool:
+    if any(memory.get(section) for section in MEMORY_SECTIONS):
+        return True
+    editorial_dna = memory.get("editorial_dna", {}) if isinstance(memory.get("editorial_dna", {}), dict) else {}
+    if editorial_dna.get("essence") or editorial_dna.get("knowledge_graph") or editorial_dna.get("writing_memory"):
+        return True
+    return False
+
+
+def _transfer_profile(
+    source_scope: EditorialScope,
+    target_scope: EditorialScope,
+    propagation_mode: str,
+    target_memory: dict,
+    by_key: dict[str, EditorialScope],
+) -> dict:
+    relation = _scope_relation(source_scope, target_scope, by_key)
+    target_has_memory = _has_substantive_memory(target_memory)
+
+    if relation == "mismo-nodo":
+        return {
+            "relation": relation,
+            "objective": "canonizacion-local",
+            "strategy": "constructiva y de preservacion total",
+            "rules": [
+                "Preserva la redacción, el TEX reconstruible y el ADN editorial completo del nodo.",
+                "Refuerza conceptos, relaciones, estilo y patrones argumentativos usando solo fuentes locales verificables.",
+                "No elimines memoria útil previa; compacta por unión y deduplicación.",
+            ],
+        }
+
+    if relation == "ancestro":
+        return {
+            "relation": relation,
+            "objective": "abstraccion-ascendente",
+            "strategy": "progresiva y sintetica",
+            "rules": [
+                "Eleva patrones, identidad, conceptos y relaciones reutilizables desde el hijo hacia el ancestro.",
+                "No copies redacción literal completa de un hijo dentro del ancestro; sintetiza patrones editoriales y señales de conocimiento.",
+                "Conserva trazabilidad conceptual, citas recurrentes y reglas de calidad transferibles.",
+            ],
+        }
+
+    if relation == "descendiente":
+        return {
+            "relation": relation,
+            "objective": "refuerzo-descendente" if target_has_memory else "construccion-descendente",
+            "strategy": "constructiva" if not target_has_memory else "progresiva con refuerzo local",
+            "rules": [
+                "Transfiere identidad, estilo, gates de calidad, estructura reusable y conceptos marco del padre al hijo.",
+                "Si el hijo no tiene memoria suficiente, construye un andamiaje editorial inicial sin inventar fuentes ni citas específicas.",
+                "Si el hijo ya tiene memoria, refuérzalo sin sobrescribir su redacción local ni su evidencia propia.",
+            ],
+        }
+
+    if relation in {"hermano", "lateral-transversal"}:
+        return {
+            "relation": relation,
+            "objective": "refuerzo-lateral" if target_has_memory else "transferencia-lateral-constructiva",
+            "strategy": "progresiva por analogia controlada",
+            "rules": [
+                "Transfiere solo patrones reutilizables: identidad institucional, estructura, calidad, conceptos y relaciones recurrentes.",
+                "No copies redacción literal, conclusiones específicas ni bibliografía exclusiva de un hermano hacia otro.",
+                "Cuando falten datos locales, deja preguntas abiertas o estructura base en vez de inventar contenido concreto.",
+            ],
+        }
+
+    return {
+        "relation": relation,
+        "objective": "sincronizacion-transversal",
+        "strategy": "progresiva y conservadora",
+        "rules": [
+            "Comparte solo abstracciones editoriales estables entre nodos no equivalentes.",
+            "Prioriza identidad, estructura reusable, gates de calidad y grafo conceptual; evita transferir redacción literal.",
+            "Si el destino está vacío, crea un cerebro editorial mínimo y deja abiertos los vacíos de contexto local.",
+        ],
+    }
 
 
 def _dedupe_lines(items: list[str]) -> list[str]:

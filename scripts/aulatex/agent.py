@@ -14,7 +14,7 @@ from .agentic_patterns import (
     safe_invoke,
 )
 from .editorial_memory import EditorialMemoryStore
-from .llm_bridge import LLM_ENGINES, AulaTeXLLMClient, LLMCallResult
+from .llm_bridge import DEFAULT_MAX_TOKENS, LLM_ENGINES, AulaTeXLLMClient, LLMCallResult
 from .template_materializer import MaterializationResult, TemplateMaterializer
 from .workspace import AulaTeXWorkspace
 
@@ -32,7 +32,7 @@ class AgentRequest:
     engines: list[str] = field(default_factory=lambda: ["Codex", "Claude Foundry", "GPT-Pro", "Auto (model-router)"])
     iterations: int = 5
     compile_tex: bool = True
-    max_tokens: int = 1600
+    max_tokens: int = DEFAULT_MAX_TOKENS
     apply_feedback: bool = False
 
 

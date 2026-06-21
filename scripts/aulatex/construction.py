@@ -12,7 +12,7 @@ from threading import Event
 from typing import Callable
 
 from .editorial_memory import ENGINE_PRIORITY, EditorialMemoryStore
-from .llm_bridge import LLM_ENGINES, AulaTeXLLMClient
+from .llm_bridge import DEFAULT_MAX_TOKENS, LLM_ENGINES, AulaTeXLLMClient
 from .workspace import AulaTeXWorkspace, EditorialScope, GENERATION_MARKER_FILENAME
 
 
@@ -74,7 +74,7 @@ class ConstructionRequest:
     ingest_document_path: str = ""
     engines: list[str] | tuple[str, ...] = ("Codex", "Auto (model-router)", "Claude Foundry", "GPT-Pro")
     iterations: int = 2
-    max_tokens: int = 1800
+    max_tokens: int = DEFAULT_MAX_TOKENS
 
 
 @dataclass(frozen=True)
