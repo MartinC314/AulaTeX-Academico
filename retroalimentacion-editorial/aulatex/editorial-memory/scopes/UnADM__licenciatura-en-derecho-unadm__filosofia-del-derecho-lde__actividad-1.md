@@ -325,6 +325,31 @@
 - Se mantiene estado provisional de salidas heredadas no parseables hasta validación local.
 - Se conserva TEX reconstruible del nodo y su trazabilidad bibliográfica.
 - Se refuerza regla de compresión lossless por unión y deduplicación sin recorte semántico.
+- Se conserva normalizacion estructurada obligatoria antes de propagar.
+- Se preservan ejes editoriales: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se refuerza control de fuentes provisionales y marcado explicito de supuestos.
+- Se mantiene TEX reconstruible y continuidad de claves BibTeX.
+- Se mantiene alerta: salidas no JSON parseable heredadas deben normalizarse antes de reutilizar.
+- Se preserva trazabilidad de salidas no parseables previas como antecedente de control de calidad.
+- Se mantiene identidad UnADM y encuadre curricular verificable desde README.
+- Se conserva normalizacion estructurada obligatoria antes de toda propagacion.
+- Se preserva TEX reconstruible del nodo y trazabilidad de fuentes locales.
+- Memoria de Actividad 1 consolidada con canon local UnADM y compresión lossless por deduplicación.
+- Se conserva TEX reconstruible del nodo y trazabilidad de fuentes locales.
+- Se refuerza control de supuestos ante falta de consigna textual completa.
+- Se mantiene identidad UnADM y enfoque de Filosofía del Derecho en Actividad 1.
+- Se preserva identidad institucional UnADM y contexto curricular verificable.
+- Se refuerza manejo de supuestos ante consigna incompleta de Actividad 1.
+- Se preserva identidad UnADM y contexto curricular verificado en README.
+- Se preserva TEX reconstruible de Actividad 1 y su ruta canónica.
+- Se preserva identidad UnADM y ubicación curricular verificable: semestre 1, bloque 2, obligatoria, 8 créditos.
+- Se sostienen ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.
+- Se conserva TEX reconstruible del nodo con fuente primaria de Actividad 1.
+- Memoria local canonizada por union y deduplicacion lossless.
+- Se mantiene normalizacion JSON obligatoria antes de propagacion.
+- Se consolidan ejes: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se preserva TEX reconstruible de Actividad 1 y sus claves de cita.
+- Se refuerza regla de marcar supuestos cuando falte consigna textual.
 
 ## identity_rules
 
@@ -379,6 +404,10 @@
 - Tratar salidas históricas de Codex y GPT-Pro sin JSON parseable como insumo provisional.
 - Fuente provisional detectada: GPT-Pro en ciclo previo.
 - Citar malla-curricular-derecho-unadm.pdf como base de ubicacion curricular.
+- Vincular Actividad 1 a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Citar malla-curricular-derecho-unadm.pdf para ubicacion curricular.
+- Usar carpeta de asignatura como punto de entrada canonico.
+- Marcar como supuesto todo dato no visible en consigna.
 
 ## structure_rules
 
@@ -442,6 +471,7 @@
 - Validar que el producto final corresponda exactamente a la consigna de Actividad 1.
 - No asumir fuentes de semanas posteriores como obligatorias para Actividad 1.
 - No asumir fuentes de semanas posteriores como válidas para Actividad 1 sin evidencia.
+- Distinguir bibliografía base de bibliografía específica de la actividad.
 
 ## quality_gates
 
@@ -460,6 +490,9 @@
 - Revisar y normalizar toda respuesta no estructurada antes de reutilizarla.
 - Validar correspondencia entre tipo de producto y consigna vigente.
 - Normalizar toda salida no estructurada antes de reutilizarla.
+- Normalizar respuestas no estructuradas antes de reutilizarlas.
+- Validar correspondencia entre producto entregable y consigna de Actividad 1.
+- Revisar y normalizar respuestas no estructuradas antes de reutilizar.
 
 ## latex_rules
 
@@ -511,6 +544,9 @@
 - Supuesto: archivo .bib canónico es filosofia-del-derecho.bib según Slug del README.
 - Supuesto: archivo .bib canonico esperado es filosofia-del-derecho.bib segun Slug del README.
 - Supuesto: el .bib canonico esperado es filosofia-del-derecho.bib por Slug del README.
+- Verificar y corregir nombres de archivo con caracteres anómalos en README.
+- Verificar nombres de archivo contra README y programa analitico.
+- Supuesto: .bib canonico esperado es filosofia-del-derecho.bib por Slug local.
 
 ## bibliography_rules
 
@@ -553,6 +589,10 @@
 - Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 y no sustituye automáticamente la bibliografía de Actividad 1.
 - Registrar fuentes específicas de la actividad en el .bib canónico de la asignatura.
 - No asumir que filosofia-del-derecho-clean.bib corresponda a Actividad 1.
+- Conservar metadatos minimos: autor, titulo, ano y fuente editorial o URL.
+- Registrar en .bib de asignatura las fuentes específicas de Actividad 1.
+- Conservar metadatos mínimos: autor, título, año y fuente/editorial o URL.
+- Conservar metadatos minimos: autor, titulo, anio, fuente editorial o URL.
 
 ## propagation_hints
 
@@ -682,6 +722,7 @@
 - Evitar regresiones de reglas útiles ya consolidadas.
 - Cuando falte consigna textual, propagar solo reglas generales verificables.
 - Mantener trazabilidad de supuestos en cada salto.
+- Evitar regresiones: no eliminar reglas utiles previas.
 
 ## open_questions
 
@@ -723,6 +764,10 @@
 - Confirmar fuentes obligatorias de la semana aplicable a Actividad 1.
 - Confirmar rúbrica específica para ajustar profundidad argumentativa.
 - Confirmar nombre canónico final del .bib de la asignatura.
+- Supuesto: falta consigna textual completa de Actividad 1; confirmar entregable exacto.
+- Confirmar si el formato principal requerido es reporte, presentación u otro.
+- Confirmar nombre canónico final del .bib de la asignatura para esta actividad.
+- Confirmar si el formato principal es reporte, presentacion u otro.
 
 ## editorial_dna
 
@@ -783,10 +828,10 @@
 - Sustentar afirmaciones con fuentes verificables y cita explícita.
 
 ### grafo_de_conocimiento
-- Conceptos: 1451
+- Conceptos: 1596
 - Citas: 18
-- Relaciones reforzadas: 733
-- Evidencias: 648
+- Relaciones reforzadas: 810
+- Evidencias: 702
 
 ## adn_tex
 
