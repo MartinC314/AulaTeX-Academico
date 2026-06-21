@@ -1,0 +1,817 @@
+{
+  "run_id": "20260620-110328",
+  "source_scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+  "build_level": "actividad",
+  "propagation_mode": "local",
+  "iterations": 100,
+  "engines": [
+    "Codex"
+  ],
+  "built_scopes": [
+    "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1"
+  ],
+  "cycles": [
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 1,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5294
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 2,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5052
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 3,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5000
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 4,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5046
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 5,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5394
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 6,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5011
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 7,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5048
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 8,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 4893
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 9,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 4961
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 10,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 4785
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 11,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5368
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 12,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5376
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 13,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 4974
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 14,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5185
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 15,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5193
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 16,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5153
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 17,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5504
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 18,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5398
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 19,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5201
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 20,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5271
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 21,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5280
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 22,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5249
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 23,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5160
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 24,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5167
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 25,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5347
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 26,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5191
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 27,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5407
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 28,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5213
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 29,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5278
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 30,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5424
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 31,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5239
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 32,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5251
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 33,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5111
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 34,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5290
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 35,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5147
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 36,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5382
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 37,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5311
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 38,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5365
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 39,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5190
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 40,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5297
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 41,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5411
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 42,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5310
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 43,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5462
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 44,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5330
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 45,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5416
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 46,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5186
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 47,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5331
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 48,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5378
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 49,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5337
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 50,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5463
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 51,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5331
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 52,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5439
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 53,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5326
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 54,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5237
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 55,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5252
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 56,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5397
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 57,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5350
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 58,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5327
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 59,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5328
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 60,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5395
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 61,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5376
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 62,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5323
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 63,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5198
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 64,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5369
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 65,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5266
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 66,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5331
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 67,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5336
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 68,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5373
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 69,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5255
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 70,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5317
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 71,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5407
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 72,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5341
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 73,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5331
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 74,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5405
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 75,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5378
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 76,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5479
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 77,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5246
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 78,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5272
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 79,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5344
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 80,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5329
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 81,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5291
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 82,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5340
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 83,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5426
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 84,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5121
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 85,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5326
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 86,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5143
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 87,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5429
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 88,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5343
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 89,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5338
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 90,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5375
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 91,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5344
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 92,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5353
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 93,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5356
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 94,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5414
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 95,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5389
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 96,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5370
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 97,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5512
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 98,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5393
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 99,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5397
+    },
+    {
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/actividad-1",
+      "scope_level": "actividad",
+      "cycle": 100,
+      "engine": "Codex",
+      "ok": true,
+      "chars": 5369
+    }
+  ],
+  "ok": true,
+  "cancelled": false
+}

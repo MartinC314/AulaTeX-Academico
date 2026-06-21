@@ -53,6 +53,28 @@
 - Compresión aplicada por unión y deduplicación sin pérdida y sin recorte.
 - Supuesto: el archivo .bib canónico esperado por Slug es filosofia-del-derecho.bib.
 - Supuesto: filosofia-del-derecho-clean.bib corresponde a Semana 7 (interpretación jurídica) y no a Actividad 1.
+- Compresión aplicada por unión y deduplicación sin pérdida ni recorte.
+- Memoria local consolidada para Actividad 1 de Filosofía del Derecho con identidad UnADM.
+- Se mantiene compresión lossless por unión y deduplicación sin recorte.
+- Se mantiene normalización estructurada en JSON antes de cualquier propagación.
+- Se mantiene control histórico de salidas no JSON parseable como puerta de calidad.
+- Se confirma presencia de tokens Slug sin expandir en README y programa analítico; deben resolverse.
+- Se conserva control histórico de salidas no JSON parseable como puerta de calidad.
+- Mantener normalización estructurada en JSON antes de cualquier propagación.
+- Aplicar compresión lossless por unión y deduplicación sin recorte.
+- Conservar alertas históricas de salidas no JSON parseable como control de calidad.
+- Preservar ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Resolver tokens Slug sin expandir en README y programa analítico.
+- Memoria local consolidada de Actividad 1 para Filosofía del Derecho con identidad UnADM.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a Semana 7 (interpretación jurídica), no a Actividad 1.
+- Se confirma artefacto principal local: reporte-filosofia-del-derecho-Actividad-1.tex.
+- Se confirma contexto de Actividad Semana 2 con enfoque de mapa conceptual.
+- Normalización estructurada en JSON es obligatoria antes de cualquier propagación.
+- Supuesto: filosofia-del-derecho.bib es el archivo canónico esperado por Slug.
+- Normalización estructurada en JSON obligatoria antes de cualquier propagación.
+- Compresión lossless por unión y deduplicación sin recorte.
+- Conservar control histórico de salidas no JSON parseable como puerta de calidad.
+- Memoria local consolidada de Actividad 1 de Filosofía del Derecho con identidad UnADM.
 
 ## identity_rules
 
@@ -78,6 +100,9 @@
 - Fuente provisional: GPT-Pro.
 - Fuente provisional: Auto (model-router).
 - Fuente provisional: Claude Foundry.
+- Citar malla-curricular-derecho-unadm.pdf para ubicación curricular.
+- Marcar como supuesto todo dato no visible en la consigna.
+- Ubicar curricularmente en semestre 1, bloque 2, obligatoria, 8 créditos.
 
 ## structure_rules
 
@@ -87,6 +112,10 @@
 - Alinear la entrega al producto solicitado en la planeación semanal.
 - Separar secciones: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
 - Transformar la planeación en reporte, presentación o producto visual según consigna.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear la entrega al producto solicitado por la planeación semanal.
 
 ## activity_rules
 
@@ -112,6 +141,7 @@
 - Verificar que el producto corresponda a la consigna de actividad 1.
 - Revisar respuesta no estructurada antes de aplicar aguas abajo.
 - Revisar y normalizar respuestas no estructuradas antes de reutilizarlas.
+- Verificar correspondencia del producto con la consigna de Actividad 1.
 
 ## latex_rules
 
@@ -131,6 +161,8 @@
 - Conservar claves BibTeX originales del .bib tal como aparecen en el .tex.
 - Mantener claves BibTeX estables.
 - Supuesto: archivo .bib canónico esperado por Slug es filosofia-del-derecho.bib.
+- Mantener claves BibTeX estables y originales.
+- Conservar claves BibTeX del .bib tal como aparecen en el .tex.
 
 ## bibliography_rules
 
@@ -149,6 +181,8 @@
 - Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 sobre interpretación jurídica.
 - Conservar claves BibTeX originales del .bib tal como aparecen en el .tex.
 - Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 sobre interpretación jurídica y no a Actividad 1.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 (interpretación jurídica) y no a Actividad 1.
+- Conservar claves BibTeX del .bib tal como aparecen en el .tex.
 
 ## propagation_hints
 
@@ -220,6 +254,23 @@
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
 - Propagar arriba y laterales solo tras validación de JSON y estructura.
 - Ciclos 1 a 22 requieren normalización manual si se reutilizan.
+- Propagación local: aplicar cambios solo en actividad actual.
+- Ciclo 1 requiere normalización manual si se reutiliza.
+- Mantener validación estricta de parseo JSON antes de cualquier propagación.
+- Propagar solo después de validar JSON y estructura.
+- Ciclos previos con salidas no estructuradas requieren normalización manual si se reutilizan.
+- Propagación local: aplicar cambios solo en la actividad actual.
+- Ciclo 13 necesita normalización manual si se reutiliza.
+- Ciclo 15 requiere normalización manual si se reutiliza.
+- Ciclo 17 requiere normalización manual si se reutiliza.
+- Ciclo 23 requiere normalización manual si se reutiliza.
+- Ciclo 25 requiere normalización manual si se reutiliza.
+- Ciclo 26 requiere normalización manual si se reutiliza.
+- Ciclos 1 a 26 requieren normalización manual si se reutilizan.
+- Ciclo 30: mantener validación estricta de parseo JSON antes de cualquier propagación recursiva.
+- Ciclos 1 a 30 requieren normalización manual si se reutilizan.
+- Propagar reglas generales cuando falte consigna textual.
+- Mantener validación estricta de parseo JSON antes de cualquier propagación recursiva.
 
 ## open_questions
 
@@ -235,3 +286,79 @@
 - Supuesto: falta consigna textual de actividad 1; confirmar producto exacto solicitado.
 - Confirmar si actividad 1 reutiliza bibliografía existente o requiere .bib propio.
 - Confirmar nombre canónico final del archivo .bib de la asignatura.
+- Supuesto: falta consigna textual completa de Actividad 1; confirmar producto exacto solicitado.
+- Confirmar si la actividad exige reporte, presentación o mapa conceptual como formato principal.
+- Confirmar consigna textual completa de Actividad 1.
+- Confirmar si el formato exigido final es reporte, presentación o mapa conceptual.
+
+## editorial_dna
+
+### esencia
+- Se crea memoria base de actividad para Filosofía del Derecho con identidad UnADM.
+- Se conserva regla institucional de no propagar salidas no estructuradas sin normalización.
+- Se fijan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Memoria base de actividad para Filosofía del Derecho con identidad UnADM.
+- Conservar normalización estructurada antes de propagar reglas.
+- Ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Aplicar compresión lossless por unión y deduplicación.
+- Salida sin JSON parseable heredada desde Codex para UnADM; requiere normalización.
+- Salida sin JSON parseable desde GPT-Pro para Actividad 1
+- Memoria de actividad consolidada para Filosofía del Derecho con identidad UnADM.
+- Se mantiene normalización estructurada obligatoria antes de propagar.
+- Ejes editoriales vigentes: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+
+### razon_de_ser
+- Se crea memoria base de actividad para Filosofía del Derecho con identidad UnADM.
+- Se conserva regla institucional de no propagar salidas no estructuradas sin normalización.
+- Se fijan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Memoria base de actividad para Filosofía del Derecho con identidad UnADM.
+- Conservar normalización estructurada antes de propagar reglas.
+- Ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Aplicar compresión lossless por unión y deduplicación.
+- Salida sin JSON parseable heredada desde Codex para UnADM; requiere normalización.
+- Salida sin JSON parseable desde GPT-Pro para Actividad 1
+- Memoria de actividad consolidada para Filosofía del Derecho con identidad UnADM.
+- Se mantiene normalización estructurada obligatoria antes de propagar.
+- Ejes editoriales vigentes: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+
+### identidad_estilistica
+- Mantener identidad institucional UnADM en tono y formato.
+- Vincular la actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Usar la carpeta de asignatura como punto de entrada canónico.
+- Marcar como supuesto cualquier dato no visible en la consigna de la actividad.
+- Vincular la actividad a Licenciatura en Derecho.
+- Basar ubicación curricular en semestre 1, bloque 2, obligatoria, 8 créditos.
+- Marcar como supuesto cualquier dato no visible en la consigna.
+- Tratar la fuente heredada Codex como provisional hasta verificarla.
+- Citar malla-curricular-derecho-unadm.pdf como fuente de ubicación curricular.
+- Fuente provisional: GPT-Pro desde Actividad 1
+- Marcar como supuesto cualquier dato no visible en la consigna de actividad.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmación local.
+
+### patrones_argumentativos
+- Iniciar con encuadre breve del problema jurídico o social.
+- Separar secciones: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Alinear la entrega al producto solicitado en la planeación semanal.
+- Separar secciones: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Transformar la planeación en reporte, presentación o producto visual según consigna.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear la entrega al producto solicitado por la planeación semanal.
+- Definir objetivo puntual de la actividad antes del desarrollo.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+
+### grafo_de_conocimiento
+- Conceptos: 122
+- Citas: 14
+- Relaciones reforzadas: 0
+- Evidencias: 151
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/reporte-filosofia-del-derecho-Actividad-1.tex`
+- Caracteres LaTeX preservados: 18801
+- Bloques/parrafos indexados: 79
+- Claves citadas: finnis_estudios_2017, lovon_manual_2020, ruiz_rodriguez_filosofia_derecho_2009, noauthor_constitucion_nodate, generales_ley_2021, de_victimas_ley_2013, franzoni_acevedo_ley_2017, rojas_gonzalez_filosofia_derecho_2018, gandara_ley_2015
+- Claves sin referencia: ninguna
