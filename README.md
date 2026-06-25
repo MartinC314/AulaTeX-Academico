@@ -242,3 +242,107 @@ CODEX_API_KEY=<your-codex-key>
 CODEX_CHAT_DEPLOYMENT=gpt-5.3-codex
 CODEX_API_VERSION=2026-02-24
 ```
+
+## Endpoints
+
+´´´json
+[
+	{
+		"name": "Copilot",
+		"vendor": "copilot",
+		"settings": {
+			"gpt-5.2-codex": {
+				"reasoningEffort": "xhigh"
+			},
+			"gpt-5-mini": {
+				"reasoningEffort": "low"
+			}
+		}
+	},
+	{
+		"name": "chatVsc",
+		"vendor": "azure",
+		"apiKey": "${input:chat.lm.secret.2ba0532c}",
+		"models": [
+			
+		]
+	},
+	{
+		"name": "upap",
+		"vendor": "azure",
+		"apiKey": "${input:chat.lm.secret.490d3260}",
+		"models": [
+			{
+				"id": "gpt-5.4-pro",
+				"name": "gpt-5.4-pro",
+				"url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 922000,
+				"maxOutputTokens": 128000,
+				"reasoning": {
+					"effort": "xhigh"
+				}
+			},
+			{
+				"id": "model-router",
+				"name": "model-router",
+				"url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 1015808,
+				"maxOutputTokens": 32768
+			},
+			{
+				"id": "Mistral-Large-3",
+				"name": "Mistral-Large-3",
+				"url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 126976,
+				"maxOutputTokens": 4096
+			},
+			{
+				"id": "gpt-chat-latest",
+				"name": "gpt-chat-latest",
+				"url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 72000,
+				"maxOutputTokens": 128000,
+				"reasoning": {
+					"effort": "xhigh"
+				}
+			}
+		]
+	},
+	{
+		"name": "upapeastus",
+		"vendor": "azure",
+		"apiKey": "${input:chat.lm.secret.3b0f7701}",
+		"models": [
+			{
+				"id": "DeepSeek-V4-Pro",
+				"name": "DeepSeek-V4-Pro",
+				"url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/chat/completions",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 872000,
+				"maxOutputTokens": 128000
+			},
+			{
+				"id": "gpt-5.3-codex",
+				"name": "gpt-5.3-codex",
+				"url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/responses",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 272000,
+				"maxOutputTokens": 128000,
+				"reasoning": {
+					"effort": "xhigh"
+				}
+			}
+		]
+	}
+]
+´´´
