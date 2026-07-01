@@ -729,7 +729,7 @@ con fuentes institucionales, normativas y academicas verificables \\citep{{{cita
   \\end{{enumerate}}
 }}
 
-\ContentSlide{{Indicaciones editoriales}}{{
+\\ContentSlide{{Indicaciones editoriales}}{{
 {_beamer_items(guidance or ["Sintetizar la memoria editorial de la materia sin perder continuidad con reporte y actividad."])}
 }}
 

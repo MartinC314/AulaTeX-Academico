@@ -16,6 +16,7 @@ try:
 except ModuleNotFoundError:
     requests = None
 
+from .config import diagnostic_metrics_enabled
 from .editorial_memory import ENGINE_PRIORITY, EditorialMemoryStore
 from .llm_bridge import DEFAULT_MAX_TOKENS
 from .llm_bridge import LLM_ENGINES, AulaTeXLLMClient
@@ -78,8 +79,9 @@ class WebSource:
 
 
 class InvestigationStore:
-    def __init__(self, workspace: AulaTeXWorkspace | None = None) -> None:
+    def __init__(self, workspace: AulaTeXWorkspace | None = None, *, diagnostics_enabled: bool | None = None) -> None:
         self.workspace = workspace or AulaTeXWorkspace()
+        self.diagnostics_enabled = diagnostic_metrics_enabled() if diagnostics_enabled is None else diagnostics_enabled
         self.root = self.workspace.feedback_root / "investigacion"
         self.root.mkdir(parents=True, exist_ok=True)
         self.db_path = self.root / "investigacion.db"
@@ -200,6 +202,8 @@ class InvestigationStore:
             )
 
     def record_cycle(self, *, run_id: str, scope_key: str, cycle_index: int, engine: str, ok: bool, response_text: str) -> None:
+        if not self.diagnostics_enabled:
+            return
         with self._connect() as conn:
             conn.execute(
                 """
@@ -275,6 +279,8 @@ class InvestigationStore:
         return "\n".join(lines)
 
     def render_metrics_markdown(self, scope_key: str) -> str:
+        if not self.diagnostics_enabled:
+            return "# Diagnóstico desactivado\n\n- Ejecuta AulaTeX con --diagnostics o define AULATEX_ENABLE_DIAGNOSTIC_METRICS=1 para medir desempeño.\n"
         with self._connect() as conn:
             by_engine = conn.execute(
                 """

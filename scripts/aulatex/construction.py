@@ -9,8 +9,9 @@ import zipfile
 from dataclasses import dataclass
 from pathlib import Path
 from threading import Event
-from typing import Callable
+from typing import Callable, Iterable
 
+from .config import diagnostic_metrics_enabled
 from .editorial_memory import ENGINE_PRIORITY, EditorialMemoryStore
 from .llm_bridge import DEFAULT_MAX_TOKENS, LLM_ENGINES, AulaTeXLLMClient
 from .workspace import AulaTeXWorkspace, EditorialScope, GENERATION_MARKER_FILENAME
@@ -118,8 +119,9 @@ class ConstructionNodeSpec:
 
 
 class ConstructionStore:
-    def __init__(self, workspace: AulaTeXWorkspace | None = None) -> None:
+    def __init__(self, workspace: AulaTeXWorkspace | None = None, *, diagnostics_enabled: bool | None = None) -> None:
         self.workspace = workspace or AulaTeXWorkspace()
+        self.diagnostics_enabled = diagnostic_metrics_enabled() if diagnostics_enabled is None else diagnostics_enabled
         self.root = self.workspace.feedback_root / "construccion"
         self.root.mkdir(parents=True, exist_ok=True)
         self.db_path = self.root / "construccion.db"
@@ -198,6 +200,16 @@ class ConstructionStore:
         with self._connect() as conn:
             row = conn.execute("SELECT 1 FROM nodes WHERE node_key=?", (node_key,)).fetchone()
         return row is not None
+
+    def node_exists_many(self, node_keys: Iterable[str]) -> set[str]:
+        keys = [key for key in dict.fromkeys(node_keys) if key]
+        if not keys:
+            return set()
+        placeholders = ",".join("?" for _ in keys)
+        query = f"SELECT node_key FROM nodes WHERE node_key IN ({placeholders})"
+        with self._connect() as conn:
+            rows = conn.execute(query, keys).fetchall()
+        return {str(row["node_key"]) for row in rows}
 
     def upsert_node(self, node: ConstructionNodeSpec, status: str) -> None:
         with self._connect() as conn:
@@ -279,6 +291,8 @@ class ConstructionStore:
         sections_created: int,
         progress_percent: float,
     ) -> None:
+        if not self.diagnostics_enabled:
+            return
         with self._connect() as conn:
             conn.execute(
                 """
@@ -363,6 +377,8 @@ class ConstructionStore:
         return list(rows)
 
     def list_recent_cycles(self, node_key: str, limit: int = 12) -> list[sqlite3.Row]:
+        if not self.diagnostics_enabled:
+            return []
         with self._connect() as conn:
             rows = conn.execute(
                 """
@@ -378,6 +394,8 @@ class ConstructionStore:
         return list(rows)
 
     def render_metrics_markdown(self, node_key: str) -> str:
+        if not self.diagnostics_enabled:
+            return "# Diagnóstico desactivado\n\n- Ejecuta AulaTeX con --diagnostics o define AULATEX_ENABLE_DIAGNOSTIC_METRICS=1 para medir desempeño.\n"
         if not node_key:
             return "# Metricas de construccion\n\n- Sin nodo seleccionado.\n"
         with self._connect() as conn:

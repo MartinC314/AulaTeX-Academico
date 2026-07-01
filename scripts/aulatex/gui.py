@@ -13,7 +13,7 @@ from tkinter import filedialog, messagebox, ttk
 from .agent import AgentRequest, AulaTeXAgent
 from .agentic_patterns import pattern_catalog_markdown
 from .chat_sessions import AulaTeXChatStore, MULTIMOTOR_SEVERITY_LABELS, multimotor_severity_label
-from .config import credential_status
+from .config import credential_status, diagnostic_metrics_enabled
 from .construction import ConstructionBuilder, ConstructionEvent, ConstructionRequest, ConstructionStore
 from .editorial_memory import (
     EDITORIAL_LEVELS,
@@ -87,27 +87,31 @@ class ToolTip:
 
 
 class AulaTeXApp(tk.Tk):
-    def __init__(self) -> None:
+    def __init__(self, *, diagnostics_enabled: bool | None = None) -> None:
         super().__init__()
         self.title("AulaTeX - suite editorial e investigacion")
         self.geometry("1180x760")
         self.minsize(980, 640)
 
+        self.diagnostics_enabled = diagnostic_metrics_enabled() if diagnostics_enabled is None else diagnostics_enabled
         self.workspace = AulaTeXWorkspace()
         self.llm = AulaTeXLLMClient()
         self.chat_store = AulaTeXChatStore(self.workspace, self.llm)
         self.agent = AulaTeXAgent(self.workspace, self.llm)
-        self.editorial_store = EditorialMemoryStore(self.workspace)
+        self.editorial_store = EditorialMemoryStore(self.workspace, diagnostics_enabled=self.diagnostics_enabled)
         self.editorial_builder = EditorialMemoryBuilder(self.workspace, self.llm, self.editorial_store)
-        self.investigation_store = InvestigationStore(self.workspace)
+        self.investigation_store = InvestigationStore(self.workspace, diagnostics_enabled=self.diagnostics_enabled)
         self.investigation_builder = InvestigationBuilder(self.workspace, self.llm, self.investigation_store, self.editorial_store)
-        self.construction_store = ConstructionStore(self.workspace)
+        self.construction_store = ConstructionStore(self.workspace, diagnostics_enabled=self.diagnostics_enabled)
         self.construction_builder = ConstructionBuilder(self.workspace, self.llm, self.construction_store, self.editorial_store)
         self.editorial_scopes, self.editorial_children = self.workspace.editorial_scope_index()
         self.events: queue.Queue[tuple[str, object]] = queue.Queue()
         self._tooltips: list[ToolTip] = []
         self._busy_groups: dict[str, list[tuple[object, str]]] = {}
         self.llm_session_nodes: dict[str, str] = {}
+        self.template_node_values: dict[str, tuple[str, str, str]] = {}
+        self._tree_refresh_pending = False
+        self._tree_refresh_queued = False
         self.llm_multi_severity = tk.StringVar(value="normal")
         self.feedback_cancel_event = threading.Event()
         self.feedback_resume_checkpoint = tk.StringVar(value="")
@@ -181,7 +185,11 @@ class AulaTeXApp(tk.Tk):
         self.template_tree.bind("<Return>", self._show_template_node_details)
         self.template_tree.bind("<KP_Enter>", self._show_template_node_details)
         self.template_tree.bind("<Double-1>", self._toggle_template_node)
-        self._refresh_tree()
+        self._set_text(
+            self.template_details,
+            "Cargando arbol editorial. La ventana ya esta lista y el indice se completara en segundo plano.\n",
+        )
+        self.after(50, self._refresh_tree)
 
     def _build_llm_tab(self) -> None:
         self.llm_tab.columnconfigure(0, weight=1)
@@ -371,7 +379,8 @@ class AulaTeXApp(tk.Tk):
     def _build_builder_tab(self) -> None:
         self.builder_tab.columnconfigure(0, weight=1)
         self.builder_tab.rowconfigure(4, weight=1)
-        self.builder_tab.rowconfigure(6, weight=1)
+        output_row = 6 if self.diagnostics_enabled else 5
+        self.builder_tab.rowconfigure(output_row, weight=1)
 
         self.generation_institution = tk.StringVar(value=UNSELECTED_OPTION)
         self.generation_career = tk.StringVar(value=UNSELECTED_OPTION)
@@ -508,15 +517,17 @@ class AulaTeXApp(tk.Tk):
         self.generation_preview_text = tk.Text(preview_frame, height=12, wrap="word")
         self.generation_preview_text.grid(row=0, column=0, sticky="nsew")
 
-        metrics_frame = ttk.LabelFrame(self.builder_tab, text="Metricas historicas del nodo", padding=10)
-        metrics_frame.grid(row=5, column=0, sticky="nsew", pady=(10, 0))
-        metrics_frame.columnconfigure(0, weight=1)
-        metrics_frame.rowconfigure(0, weight=1)
-        self.generation_metrics_text = tk.Text(metrics_frame, height=7, wrap="word")
-        self.generation_metrics_text.grid(row=0, column=0, sticky="nsew")
+        self.generation_metrics_text = None
+        if self.diagnostics_enabled:
+            metrics_frame = ttk.LabelFrame(self.builder_tab, text="Metricas historicas del nodo", padding=10)
+            metrics_frame.grid(row=5, column=0, sticky="nsew", pady=(10, 0))
+            metrics_frame.columnconfigure(0, weight=1)
+            metrics_frame.rowconfigure(0, weight=1)
+            self.generation_metrics_text = tk.Text(metrics_frame, height=7, wrap="word")
+            self.generation_metrics_text.grid(row=0, column=0, sticky="nsew")
 
         output_frame = ttk.LabelFrame(self.builder_tab, text="Salida del orquestador", padding=10)
-        output_frame.grid(row=6, column=0, sticky="nsew", pady=(10, 0))
+        output_frame.grid(row=output_row, column=0, sticky="nsew", pady=(10, 0))
         output_frame.columnconfigure(0, weight=1)
         output_frame.rowconfigure(0, weight=1)
         self.generation_output = tk.Text(output_frame, height=14, wrap="word")
@@ -538,12 +549,13 @@ class AulaTeXApp(tk.Tk):
         self._attach_tooltip(self.generation_ingest_document_button, "Selecciona un documento de apoyo para usarlo como ingesta. Se intentará leer si es texto o DOCX; otros tipos se conservarán como referencia contextual.")
         self._attach_tooltip(self.generation_engines_entry, "Lista separada por comas. Se ejecutan secuencialmente para proponer y fusionar memoria fundacional, plan y maqueta.")
         self._attach_tooltip(self.generation_tokens_spin, "Límite de salida por llamada LLM para cada motor y ciclo.")
-        self._attach_tooltip(self.generation_run_button, "Inicia la generación editorial descendente del nodo configurado y persiste memoria, plan, maqueta y métricas.")
+        self._attach_tooltip(self.generation_run_button, "Inicia la generación editorial descendente del nodo configurado y persiste memoria, plan y maqueta.")
         self._attach_tooltip(self.generation_cancel_button, "Solicita cancelación cooperativa. La corrida se cierra cuando termina la llamada LLM que esté en curso.")
         self._attach_tooltip(self.generation_refresh_button, "Reinicia la pestaña Generación a su estado inicial, recarga el catálogo editorial y deja la vista lista para otra corrida.")
         self._attach_tooltip(self.generation_help_inline_button, "Abre la ayuda operativa de la pestaña Generación.")
         self._attach_tooltip(self.generation_preview_text, "Muestra el padre resuelto, la clave del nodo, el destino final, el modo crear/reforzar y el contrato editorial del destino.")
-        self._attach_tooltip(self.generation_metrics_text, "Resume llamadas, caracteres, tiempos y errores por motor, además del avance por ciclo del nodo actualmente previsualizado.")
+        if self.generation_metrics_text is not None:
+            self._attach_tooltip(self.generation_metrics_text, "Resume llamadas, caracteres, tiempos y errores por motor, además del avance por ciclo del nodo actualmente previsualizado.")
         self._attach_tooltip(self.generation_output, "Bitácora en vivo del orquestador de generación: inicio, progreso por motor, resultados y cierre de la corrida.")
         self._register_busy_widgets(
             "generation",
@@ -601,8 +613,10 @@ class AulaTeXApp(tk.Tk):
 
     def _build_feedback_tab(self) -> None:
         self.feedback_tab.columnconfigure(0, weight=1)
-        self.feedback_tab.rowconfigure(5, weight=1)
-        self.feedback_tab.rowconfigure(6, weight=1)
+        memory_row = 5 if self.diagnostics_enabled else 4
+        output_row = 6 if self.diagnostics_enabled else 5
+        self.feedback_tab.rowconfigure(memory_row, weight=1)
+        self.feedback_tab.rowconfigure(output_row, weight=1)
 
         self.feedback_institution = tk.StringVar(value=UNSELECTED_OPTION)
         self.feedback_career = tk.StringVar(value=UNSELECTED_OPTION)
@@ -702,22 +716,24 @@ class AulaTeXApp(tk.Tk):
         self.feedback_plan_text = tk.Text(plan_frame, height=8, wrap="word")
         self.feedback_plan_text.grid(row=0, column=0, sticky="nsew")
 
-        metrics_frame = ttk.LabelFrame(self.feedback_tab, text="Metricas por motor y ciclo", padding=10)
-        metrics_frame.grid(row=4, column=0, sticky="nsew", pady=(10, 0))
-        metrics_frame.columnconfigure(0, weight=1)
-        metrics_frame.rowconfigure(0, weight=1)
-        self.feedback_metrics_text = tk.Text(metrics_frame, height=7, wrap="word")
-        self.feedback_metrics_text.grid(row=0, column=0, sticky="nsew")
+        self.feedback_metrics_text = None
+        if self.diagnostics_enabled:
+            metrics_frame = ttk.LabelFrame(self.feedback_tab, text="Metricas por motor y ciclo", padding=10)
+            metrics_frame.grid(row=4, column=0, sticky="nsew", pady=(10, 0))
+            metrics_frame.columnconfigure(0, weight=1)
+            metrics_frame.rowconfigure(0, weight=1)
+            self.feedback_metrics_text = tk.Text(metrics_frame, height=7, wrap="word")
+            self.feedback_metrics_text.grid(row=0, column=0, sticky="nsew")
 
         memory_frame = ttk.LabelFrame(self.feedback_tab, text="Memoria editorial actual", padding=10)
-        memory_frame.grid(row=5, column=0, sticky="nsew", pady=(10, 0))
+        memory_frame.grid(row=memory_row, column=0, sticky="nsew", pady=(10, 0))
         memory_frame.columnconfigure(0, weight=1)
         memory_frame.rowconfigure(0, weight=1)
         self.feedback_memory_text = tk.Text(memory_frame, height=14, wrap="word")
         self.feedback_memory_text.grid(row=0, column=0, sticky="nsew")
 
         output_frame = ttk.LabelFrame(self.feedback_tab, text="Salida del orquestador", padding=10)
-        output_frame.grid(row=6, column=0, sticky="nsew", pady=(10, 0))
+        output_frame.grid(row=output_row, column=0, sticky="nsew", pady=(10, 0))
         output_frame.columnconfigure(0, weight=1)
         output_frame.rowconfigure(0, weight=1)
         self.feedback_output = tk.Text(output_frame, height=12, wrap="word")
@@ -736,10 +752,11 @@ class AulaTeXApp(tk.Tk):
         self._attach_tooltip(self.feedback_cancel_button, "Solicita cancelación cooperativa. La corrida termina al cerrar la llamada LLM en curso y conserva lo ya consolidado.")
         self._attach_tooltip(self.feedback_lock_button, "Fija las secciones actuales del scope para que siguientes corridas no las modifiquen. Se mantiene el principio de no regresión.")
         self._attach_tooltip(self.feedback_unlock_button, "Libera las fijaciones manuales del scope actual para permitir nuevas fusiones en próximas corridas.")
-        self._attach_tooltip(self.feedback_refresh_button, "Relee catálogo, plan, métricas y memoria persistida desde la base SQLite y los snapshots del scope actual.")
+        self._attach_tooltip(self.feedback_refresh_button, "Relee catálogo, plan y memoria persistida desde la base SQLite y los snapshots del scope actual.")
         self._attach_tooltip(self.feedback_help_button, "Abre una guía corta para operar la construcción de memoria editorial y entender las opciones de propagación.")
         self._attach_tooltip(self.feedback_plan_text, "Vista previa del recorrido de consolidación. Muestra el orden de scopes y la estrategia editorial esperada: construcción, refuerzo, abstracción ascendente o transferencia lateral.")
-        self._attach_tooltip(self.feedback_metrics_text, "Resumen histórico por motor y por ciclo para los scopes actualmente incluidos en el plan visible.")
+        if self.feedback_metrics_text is not None:
+            self._attach_tooltip(self.feedback_metrics_text, "Resumen histórico por motor y por ciclo para los scopes actualmente incluidos en el plan visible.")
         self._attach_tooltip(self.feedback_memory_text, "Memoria editorial persistida del scope actual, incluyendo herencia útil y secciones fijadas manualmente.")
         self._attach_tooltip(self.feedback_output, "Bitácora en vivo del orquestador: inicio, progreso por motor, resultados, cancelación o cierre de corrida.")
         self._register_busy_widgets(
@@ -766,8 +783,10 @@ class AulaTeXApp(tk.Tk):
         self.investigation_tab.columnconfigure(0, weight=1)
         self.investigation_tab.rowconfigure(4, weight=1)
         self.investigation_tab.rowconfigure(5, weight=1)
-        self.investigation_tab.rowconfigure(6, weight=1)
-        self.investigation_tab.rowconfigure(7, weight=1)
+        output_row = 7 if self.diagnostics_enabled else 6
+        if self.diagnostics_enabled:
+            self.investigation_tab.rowconfigure(6, weight=1)
+        self.investigation_tab.rowconfigure(output_row, weight=1)
 
         self.investigation_institution = tk.StringVar(value=UNSELECTED_OPTION)
         self.investigation_career = tk.StringVar(value=UNSELECTED_OPTION)
@@ -873,15 +892,17 @@ class AulaTeXApp(tk.Tk):
         self.investigation_knowledge_text = tk.Text(knowledge_frame, height=12, wrap="word")
         self.investigation_knowledge_text.grid(row=0, column=0, sticky="nsew")
 
-        metrics_frame = ttk.LabelFrame(self.investigation_tab, text="Metricas del orquestador", padding=10)
-        metrics_frame.grid(row=6, column=0, sticky="nsew", pady=(10, 0))
-        metrics_frame.columnconfigure(0, weight=1)
-        metrics_frame.rowconfigure(0, weight=1)
-        self.investigation_metrics_text = tk.Text(metrics_frame, height=7, wrap="word")
-        self.investigation_metrics_text.grid(row=0, column=0, sticky="nsew")
+        self.investigation_metrics_text = None
+        if self.diagnostics_enabled:
+            metrics_frame = ttk.LabelFrame(self.investigation_tab, text="Metricas del orquestador", padding=10)
+            metrics_frame.grid(row=6, column=0, sticky="nsew", pady=(10, 0))
+            metrics_frame.columnconfigure(0, weight=1)
+            metrics_frame.rowconfigure(0, weight=1)
+            self.investigation_metrics_text = tk.Text(metrics_frame, height=7, wrap="word")
+            self.investigation_metrics_text.grid(row=0, column=0, sticky="nsew")
 
         output_frame = ttk.LabelFrame(self.investigation_tab, text="Salida del orquestador", padding=10)
-        output_frame.grid(row=7, column=0, sticky="nsew", pady=(10, 0))
+        output_frame.grid(row=output_row, column=0, sticky="nsew", pady=(10, 0))
         output_frame.columnconfigure(0, weight=1)
         output_frame.rowconfigure(0, weight=1)
         self.investigation_output = tk.Text(output_frame, height=10, wrap="word")
@@ -899,12 +920,13 @@ class AulaTeXApp(tk.Tk):
         self._attach_tooltip(self.investigation_urls_text, "Una URL por línea. Útil para sembrar sitios institucionales, PDF curriculares o fuentes recomendadas antes de lanzar la corrida.")
         self._attach_tooltip(self.investigation_run_button, "Inicia la consolidación de base de conocimiento y materializa artefactos como base-conocimiento, BibTeX, referencias, assets y programa analítico cuando aplique.")
         self._attach_tooltip(self.investigation_cancel_button, "Solicita cancelación cooperativa. La corrida se detiene al terminar la llamada LLM en curso.")
-        self._attach_tooltip(self.investigation_refresh_button, "Relee el scope, la vista previa, las métricas y el conocimiento persistido para la selección actual.")
+        self._attach_tooltip(self.investigation_refresh_button, "Relee el scope, la vista previa y el conocimiento persistido para la selección actual.")
         self._attach_tooltip(self.investigation_defaults_button, "Rellena de nuevo las consultas sugeridas para el scope actual, respetando la estructura editorial del repositorio.")
         self._attach_tooltip(self.investigation_help_inline_button, "Abre la ayuda operativa de la pestaña Investigación.")
         self._attach_tooltip(self.investigation_preview_text, "Muestra los archivos y carpetas que AulaTeX planea consolidar para el scope seleccionado antes de invocar el extractor.")
         self._attach_tooltip(self.investigation_knowledge_text, "Renderiza la base de conocimiento persistida actualmente para el scope: hallazgos locales, web, bibliografía, vacíos y acciones siguientes.")
-        self._attach_tooltip(self.investigation_metrics_text, "Resume el historial de llamadas por motor y por ciclo en la fase Investigación para este scope.")
+        if self.investigation_metrics_text is not None:
+            self._attach_tooltip(self.investigation_metrics_text, "Resume el historial de llamadas por motor y por ciclo en la fase Investigación para este scope.")
         self._attach_tooltip(self.investigation_output, "Bitácora en vivo de la corrida de Investigación: inicio, progreso, resultados, cancelación y cierre.")
         self._register_busy_widgets(
             "investigation",
@@ -993,7 +1015,7 @@ class AulaTeXApp(tk.Tk):
             "7. Usa lateral para aprendizaje entre hermanos: transfiere patrones reutilizables sin copiar redacción literal.\n"
             "8. Usa recursivo completo cuando necesites una construcción editorial integral: consolida el subárbol completo de cada ancestro antes de seguir subiendo.\n"
             "9. Usa 'Fijar reglas actuales' para congelar secciones validadas y evitar que futuras corridas las alteren.\n"
-            "10. Consulta métricas por motor y ciclo para comparar profundidad, estabilidad y volumen de salida.\n"
+            "10. Si necesitas medir desempeño por motor y por ciclo, activa el modo diagnóstico con --diagnostics o AULATEX_ENABLE_DIAGNOSTIC_METRICS=1.\n"
             "11. Si cancelas, se conserva lo ya consolidado y el manifiesto queda marcado como cancelado.",
         )
 
@@ -1005,8 +1027,9 @@ class AulaTeXApp(tk.Tk):
             "3. Escribe consultas web y URLs semilla si ya conoces fuentes clave.\n"
             "4. Revisa la vista previa: AulaTeX mostrará la bibliografía, referencias, programa analítico y assets que piensa consolidar.\n"
             "5. Ejecuta la corrida para reunir base de conocimiento previa al extractor.\n"
-            "6. La salida persiste base-conocimiento, fuentes-web y métricas del scope; además refuerza el archivo .bib canonico y crea carpetas de referencias o assets cuando corresponda.\n"
-            "7. Para materias se intenta preparar programa-analitico-*.md si aún no existe; para actividades se crea una carpeta de referencias específica.",
+            "6. La salida persiste base-conocimiento y fuentes-web del scope; además refuerza el archivo .bib canonico y crea carpetas de referencias o assets cuando corresponda.\n"
+            "7. Si necesitas medir desempeño por motor y por ciclo, activa el modo diagnóstico con --diagnostics o AULATEX_ENABLE_DIAGNOSTIC_METRICS=1.\n"
+            "8. Para materias se intenta preparar programa-analitico-*.md si aún no existe; para actividades se crea una carpeta de referencias específica.",
         )
 
     def _show_generation_help(self) -> None:
@@ -1167,7 +1190,8 @@ class AulaTeXApp(tk.Tk):
 
     def _refresh_generation_preview(self) -> None:
         self.generation_preview_text.delete("1.0", "end")
-        self.generation_metrics_text.delete("1.0", "end")
+        if self.generation_metrics_text is not None:
+            self.generation_metrics_text.delete("1.0", "end")
         parent_scope = self._resolve_generation_parent_scope()
         if parent_scope is None:
             self.generation_scope_status.set("Padre editorial: pendiente")
@@ -1179,7 +1203,8 @@ class AulaTeXApp(tk.Tk):
                 "- Materia: requiere institución y opcionalmente carrera.\n"
                 "- Actividad: requiere materia.\n",
             )
-            self.generation_metrics_text.insert("end", "# Metricas de generación\n\n- Sin nodo previsualizado.\n")
+            if self.generation_metrics_text is not None:
+                self.generation_metrics_text.insert("end", "# Metricas de generación\n\n- Sin nodo previsualizado.\n")
             return
 
         self.generation_scope_status.set(
@@ -1190,7 +1215,8 @@ class AulaTeXApp(tk.Tk):
             node = self.construction_builder.preview_node(request)
         except ValueError as exc:
             self.generation_preview_text.insert("end", f"Vista previa incompleta: {exc}\n")
-            self.generation_metrics_text.insert("end", "# Metricas de generación\n\n- El nodo todavía no puede resolverse.\n")
+            if self.generation_metrics_text is not None:
+                self.generation_metrics_text.insert("end", "# Metricas de generación\n\n- El nodo todavía no puede resolverse.\n")
             return
 
         destination_exists = node.output_dir.exists()
@@ -1211,7 +1237,8 @@ class AulaTeXApp(tk.Tk):
             f"Contrato del destino:\n{self.construction_builder._destination_contract(node)}\n\n"
             f"Contexto disponible:\n{destination_context}\n",
         )
-        self.generation_metrics_text.insert("end", self.construction_store.render_metrics_markdown(node.key))
+        if self.generation_metrics_text is not None:
+            self.generation_metrics_text.insert("end", self.construction_store.render_metrics_markdown(node.key))
 
     def _browse_generation_destination(self) -> None:
         path = filedialog.askdirectory(initialdir=str(self.workspace.repo_root))
@@ -1435,10 +1462,56 @@ class AulaTeXApp(tk.Tk):
         if selected:
             current_scope = self.template_nodes.get(selected[0]) if hasattr(self, "template_nodes") else None
             selected_key = current_scope.key if current_scope is not None else ""
+        if self._tree_refresh_pending:
+            self._tree_refresh_queued = True
+            return
+
+        self._tree_refresh_pending = True
+        self._tree_refresh_queued = False
+        self._set_text(
+            self.template_details,
+            "Cargando arbol editorial. El inventario, las memorias y los artefactos se estan resolviendo.\n",
+        )
+
+        def work() -> None:
+            try:
+                editorial_scopes, editorial_children = self.workspace.editorial_scope_index()
+                scope_keys = list(editorial_scopes)
+                memories = self.editorial_store.get_memories(scope_keys)
+                existing_nodes = self.construction_store.node_exists_many(scope_keys)
+                node_values: dict[str, tuple[str, str, str]] = {}
+                for scope in editorial_scopes.values():
+                    memory = memories.get(scope.key, {})
+                    has_memory = any(memory.get(section) for section in MEMORY_SECTIONS)
+                    generation_ready = self._scope_has_generation_artifacts(scope, existing_nodes=existing_nodes)
+                    node_values[scope.key] = (
+                        "[x]" if has_memory else "[ ]",
+                        str(len(memory.get("locked_sections", []))) if has_memory else "0",
+                        "[x]" if generation_ready else "[ ]",
+                    )
+                self.events.put(
+                    (
+                        "tree-refresh",
+                        {
+                            "selected_key": selected_key,
+                            "editorial_scopes": editorial_scopes,
+                            "editorial_children": editorial_children,
+                            "node_values": node_values,
+                        },
+                    )
+                )
+            except Exception as exc:
+                self.events.put(("tree-refresh-error", f"[ARBOL] ERROR {type(exc).__name__}: {exc}"))
+
+        self._thread(work)
+
+    def _apply_tree_refresh(self, payload: dict) -> None:
         for item in self.template_tree.get_children():
             self.template_tree.delete(item)
 
-        self.editorial_scopes, self.editorial_children = self.workspace.editorial_scope_index()
+        self.editorial_scopes = payload.get("editorial_scopes", {})
+        self.editorial_children = payload.get("editorial_children", {})
+        self.template_node_values = payload.get("node_values", {})
         self._set_text(
             self.template_details,
             "Selecciona un nodo editorial para ver el resumen. Presiona Enter para abrir el visor del nodo. "
@@ -1450,6 +1523,7 @@ class AulaTeXApp(tk.Tk):
         if root_scope is not None:
             self._insert_template_node("", root_scope)
 
+        selected_key = str(payload.get("selected_key") or "")
         if selected_key:
             for item, scope in self.template_nodes.items():
                 if scope.key == selected_key:
@@ -1465,14 +1539,16 @@ class AulaTeXApp(tk.Tk):
             self._on_template_selected()
 
     def _insert_template_node(self, parent: str, scope: EditorialScope) -> None:
-        memory = self.editorial_store.get_memory(scope.key)
-        has_memory = any(memory.get(section) for section in MEMORY_SECTIONS)
-        generation_ready = self._scope_has_generation_artifacts(scope)
-        values = (
-            "[x]" if has_memory else "[ ]",
-            str(len(memory.get("locked_sections", []))) if has_memory else "0",
-            "[x]" if generation_ready else "[ ]",
-        )
+        values = self.template_node_values.get(scope.key)
+        if values is None:
+            memory = self.editorial_store.get_memory(scope.key)
+            has_memory = any(memory.get(section) for section in MEMORY_SECTIONS)
+            generation_ready = self._scope_has_generation_artifacts(scope)
+            values = (
+                "[x]" if has_memory else "[ ]",
+                str(len(memory.get("locked_sections", []))) if has_memory else "0",
+                "[x]" if generation_ready else "[ ]",
+            )
         item = self.template_tree.insert(
             parent,
             "end",
@@ -1484,8 +1560,11 @@ class AulaTeXApp(tk.Tk):
         for child in self.editorial_children.get(scope.key, []):
             self._insert_template_node(item, child)
 
-    def _scope_has_generation_artifacts(self, scope: EditorialScope) -> bool:
-        if self.construction_store.node_exists(scope.key):
+    def _scope_has_generation_artifacts(self, scope: EditorialScope, *, existing_nodes: set[str] | None = None) -> bool:
+        if existing_nodes is not None:
+            if scope.key in existing_nodes:
+                return True
+        elif self.construction_store.node_exists(scope.key):
             return True
         if not scope.relative_path or scope.relative_path == ".":
             return False
@@ -1503,7 +1582,6 @@ class AulaTeXApp(tk.Tk):
     def _render_template_scope_summary(self, scope: EditorialScope) -> str:
         memory = self.editorial_store.get_memory(scope.key)
         local_sections = [section for section in MEMORY_SECTIONS if memory.get(section)]
-        metrics = self.editorial_store.render_metrics_markdown([scope.key]).strip()
         generation_state = "sí" if self._scope_has_generation_artifacts(scope) else "no"
         lines = [
             f"Nivel: {scope.level}",
@@ -1520,9 +1598,9 @@ class AulaTeXApp(tk.Tk):
             "- Enter: visualizar nodo",
             "- Doble clic: expandir o contraer",
             "- Flechas: navegar el árbol",
-            "",
-            metrics,
         ]
+        if self.diagnostics_enabled:
+            lines.extend(["", self.editorial_store.render_metrics_markdown([scope.key]).strip()])
         return "\n".join(lines).strip()
 
     def _on_template_selected(self, _event=None) -> None:
@@ -1597,18 +1675,19 @@ class AulaTeXApp(tk.Tk):
 
     def _build_template_scope_dialog_summary(self, scope: EditorialScope) -> str:
         chain = [f"{item.level}: {item.label}" for item in reversed(self.workspace.scope_chain(scope.key))]
-        editorial_metrics = self.editorial_store.render_metrics_markdown([scope.key]).strip()
-        construction_metrics = self.construction_store.render_metrics_markdown(scope.key).strip()
-        return (
+        body = (
             f"Nivel: {scope.level}\n"
             f"Etiqueta: {scope.label}\n"
             f"Clave: {scope.key}\n"
             f"Ruta: {scope.relative_path or '.'}\n"
             f"Padre: {scope.parent_key or 'raíz'}\n"
-            f"Cadena editorial: {' > '.join(chain)}\n\n"
-            f"{editorial_metrics}\n\n"
-            f"{construction_metrics}"
+            f"Cadena editorial: {' > '.join(chain)}\n"
         )
+        if self.diagnostics_enabled:
+            editorial_metrics = self.editorial_store.render_metrics_markdown([scope.key]).strip()
+            construction_metrics = self.construction_store.render_metrics_markdown(scope.key).strip()
+            body += f"\n\n{editorial_metrics}\n\n{construction_metrics}"
+        return body
 
     def _build_template_scope_memory(self, scope: EditorialScope) -> str:
         memory = self.editorial_store.get_memory(scope.key)
@@ -1629,7 +1708,7 @@ class AulaTeXApp(tk.Tk):
     def _build_template_scope_generation(self, scope: EditorialScope) -> str:
         latest_run = self.construction_store.get_latest_run(scope.key)
         snapshots = self.construction_store.list_memory_snapshots(scope.key, limit=12)
-        cycles = self.construction_store.list_recent_cycles(scope.key, limit=12)
+        cycles = self.construction_store.list_recent_cycles(scope.key, limit=12) if self.diagnostics_enabled else []
         lines = ["# Generación editorial", ""]
         if latest_run is not None:
             status = "OK" if int(latest_run["ok"] or 0) else "ERROR"
@@ -1651,7 +1730,8 @@ class AulaTeXApp(tk.Tk):
         else:
             lines.extend(["## Última corrida", "", "- No hay corridas de generación registradas para este nodo.", ""])
 
-        lines.extend([self.construction_store.render_metrics_markdown(scope.key).strip(), ""])
+        if self.diagnostics_enabled:
+            lines.extend([self.construction_store.render_metrics_markdown(scope.key).strip(), ""])
 
         if snapshots:
             lines.extend(["## Snapshots de memoria", ""])
@@ -1893,13 +1973,15 @@ class AulaTeXApp(tk.Tk):
         self._refresh_feedback_build_levels(scope)
 
         self.feedback_plan_text.delete("1.0", "end")
-        self.feedback_metrics_text.delete("1.0", "end")
+        if self.feedback_metrics_text is not None:
+            self.feedback_metrics_text.delete("1.0", "end")
         self.feedback_memory_text.delete("1.0", "end")
 
         if scope is None:
             self.feedback_scope_status.set("Origen resuelto: no encontrado")
             self.feedback_plan_text.insert("end", "Selecciona una institucion, carrera, materia o actividad valida.\n")
-            self.feedback_metrics_text.insert("end", "# Metricas\n\n- Sin plan activo.\n")
+            if self.feedback_metrics_text is not None:
+                self.feedback_metrics_text.insert("end", "# Metricas\n\n- Sin plan activo.\n")
             self.feedback_memory_text.insert("end", self._feedback_schema_preview())
             return
 
@@ -1932,7 +2014,8 @@ class AulaTeXApp(tk.Tk):
                 )
         else:
             self.feedback_plan_text.insert("end", "No hay scopes programados para esta combinacion.\n")
-        self.feedback_metrics_text.insert("end", self.editorial_store.render_metrics_markdown([item.key for item in plan] or [scope.key]))
+        if self.feedback_metrics_text is not None:
+            self.feedback_metrics_text.insert("end", self.editorial_store.render_metrics_markdown([item.key for item in plan] or [scope.key]))
 
         memory = self.editorial_store.get_memory(scope.key)
         if any(memory.get(section) for section in MEMORY_SECTIONS):
@@ -2174,12 +2257,14 @@ class AulaTeXApp(tk.Tk):
         self._refresh_investigation_catalog()
         scope = self._resolve_investigation_scope()
         self.investigation_preview_text.delete("1.0", "end")
-        self.investigation_metrics_text.delete("1.0", "end")
+        if self.investigation_metrics_text is not None:
+            self.investigation_metrics_text.delete("1.0", "end")
         self.investigation_knowledge_text.delete("1.0", "end")
         if scope is None:
             self.investigation_scope_status.set("Scope de investigación: no encontrado")
             self.investigation_preview_text.insert("end", "Selecciona un scope válido para consolidar la base de conocimiento.\n")
-            self.investigation_metrics_text.insert("end", "# Metricas de investigación\n\n- Sin scope seleccionado.\n")
+            if self.investigation_metrics_text is not None:
+                self.investigation_metrics_text.insert("end", "# Metricas de investigación\n\n- Sin scope seleccionado.\n")
             self.investigation_knowledge_text.insert("end", self._investigation_schema_preview())
             return
 
@@ -2190,7 +2275,8 @@ class AulaTeXApp(tk.Tk):
             self._set_text(self.investigation_queries_text, "\n".join(queries))
         seed_urls = self._parse_lines_from_widget(self.investigation_urls_text)
         self.investigation_preview_text.insert("end", self.investigation_builder.preview_markdown(scope, queries, seed_urls))
-        self.investigation_metrics_text.insert("end", self.investigation_store.render_metrics_markdown(scope.key))
+        if self.investigation_metrics_text is not None:
+            self.investigation_metrics_text.insert("end", self.investigation_store.render_metrics_markdown(scope.key))
         payload = self.investigation_store.get_knowledge(scope.key)
         if any(payload.get(section) for section in KNOWLEDGE_SECTIONS) or payload.get("bib_entries"):
             self.investigation_knowledge_text.insert("end", self.investigation_store.render_knowledge_markdown(scope, payload))
@@ -2350,6 +2436,18 @@ class AulaTeXApp(tk.Tk):
                 self.llm_status.set("Error en el chat LLM")
                 self._refresh_llm_sessions()
                 self._refresh_llm_view(self._selected_llm_session(), status=str(event))
+            elif category == "tree-refresh":
+                self._tree_refresh_pending = False
+                self._apply_tree_refresh(event if isinstance(event, dict) else {})
+                if self._tree_refresh_queued:
+                    self._tree_refresh_queued = False
+                    self.after(10, self._refresh_tree)
+            elif category == "tree-refresh-error":
+                self._tree_refresh_pending = False
+                self._set_text(self.template_details, str(event))
+                if self._tree_refresh_queued:
+                    self._tree_refresh_queued = False
+                    self.after(10, self._refresh_tree)
             elif category == "compile":
                 self._set_busy("compile", False)
                 self._log(self.compile_output, event)
@@ -2449,6 +2547,6 @@ class AulaTeXApp(tk.Tk):
             self._refresh_feedback_plan_and_memory()
 
 
-def main() -> None:
-    app = AulaTeXApp()
+def main(*, diagnostics_enabled: bool | None = None) -> None:
+    app = AulaTeXApp(diagnostics_enabled=diagnostics_enabled)
     app.mainloop()

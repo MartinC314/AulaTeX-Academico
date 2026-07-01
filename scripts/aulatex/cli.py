@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
 from .agent import AgentRequest, AulaTeXAgent
@@ -57,7 +58,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="aulatex", description="AulaTeX GUI and agentic editorial workflow.")
     sub = parser.add_subparsers(dest="command")
 
-    sub.add_parser("gui", help="Open the AulaTeX GUI.")
+    gui = sub.add_parser("gui", help="Open the AulaTeX GUI.")
+    gui.add_argument("--diagnostics", action="store_true", help="Enable diagnostic metrics and performance views.")
     sub.add_parser("agent-patterns", help="List the agentic patterns integrated in AulaTeX.")
 
     env_cmd = sub.add_parser("llm-env", help="Show AulaTeX LLM credential status without secrets.")
@@ -132,8 +134,11 @@ def main(argv: list[str] | None = None) -> None:
     parser = build_parser()
     args = parser.parse_args(argv)
 
+    if bool(getattr(args, "diagnostics", False)):
+        os.environ["AULATEX_ENABLE_DIAGNOSTIC_METRICS"] = "1"
+
     if args.command in (None, "gui"):
-        gui_main()
+        gui_main(diagnostics_enabled=bool(getattr(args, "diagnostics", False)))
         return
 
     if args.command == "agent-patterns":

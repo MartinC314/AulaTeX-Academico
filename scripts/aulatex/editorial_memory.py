@@ -7,8 +7,9 @@ import hashlib
 from dataclasses import dataclass
 from pathlib import Path
 from threading import Event
-from typing import Callable
+from typing import Callable, Iterable
 
+from .config import diagnostic_metrics_enabled
 from .llm_bridge import DEFAULT_MAX_TOKENS, DEFAULT_TIMEOUT_SECONDS, LLM_ENGINES, AulaTeXLLMClient
 from .workspace import AulaTeXWorkspace, EditorialScope
 
@@ -113,8 +114,9 @@ class EditorialMemoryBuildResult:
 
 
 class EditorialMemoryStore:
-    def __init__(self, workspace: AulaTeXWorkspace | None = None) -> None:
+    def __init__(self, workspace: AulaTeXWorkspace | None = None, *, diagnostics_enabled: bool | None = None) -> None:
         self.workspace = workspace or AulaTeXWorkspace()
+        self.diagnostics_enabled = diagnostic_metrics_enabled() if diagnostics_enabled is None else diagnostics_enabled
         self.root = self.workspace.feedback_root / "editorial-memory"
         self.root.mkdir(parents=True, exist_ok=True)
         self.db_path = self.root / "editorial-memory.db"
@@ -243,6 +245,8 @@ class EditorialMemoryStore:
         ok: bool,
         response_text: str,
     ) -> None:
+        if not self.diagnostics_enabled:
+            return
         with self._connect() as conn:
             conn.execute(
                 """
@@ -259,6 +263,20 @@ class EditorialMemoryStore:
             return self._empty_memory()
         payload = json.loads(row["memory_json"])
         return self._normalize_memory(payload)
+
+    def get_memories(self, scope_keys: Iterable[str]) -> dict[str, dict]:
+        keys = [key for key in dict.fromkeys(scope_keys) if key]
+        if not keys:
+            return {}
+        placeholders = ",".join("?" for _ in keys)
+        query = f"SELECT scope_key, memory_json FROM memories WHERE scope_key IN ({placeholders})"
+        with self._connect() as conn:
+            rows = conn.execute(query, keys).fetchall()
+        memories: dict[str, dict] = {}
+        for row in rows:
+            payload = json.loads(row["memory_json"])
+            memories[str(row["scope_key"])] = self._normalize_memory(payload)
+        return memories
 
     def save_memory(self, scope: EditorialScope, payload: dict, source_scope_key: str) -> None:
         normalized = self._normalize_memory(payload)
@@ -574,6 +592,8 @@ class EditorialMemoryStore:
         return payload
 
     def render_metrics_markdown(self, scope_keys: list[str] | tuple[str, ...]) -> str:
+        if not self.diagnostics_enabled:
+            return "# Diagnóstico desactivado\n\n- Ejecuta AulaTeX con --diagnostics o define AULATEX_ENABLE_DIAGNOSTIC_METRICS=1 para medir desempeño.\n"
         keys = [key for key in scope_keys if key]
         if not keys:
             return "# Metricas\n\n- Sin scopes seleccionados.\n"

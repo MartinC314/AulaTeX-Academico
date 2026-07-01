@@ -43,10 +43,28 @@ Flujo editorial recomendado en AulaTeX:
 ```
 
 ```powershell
+.\scripts\aulatex.ps1 gui --diagnostics
+```
+
+```powershell
 .\scripts\aulatex.ps1 investigation --target .\UnADM\licenciatura-en-derecho-unadm\historia-del-derecho-en-mexico-lde --query "historia del derecho en mexico unadm programa analitico"
 ```
 
 El PDF final se copia en la misma carpeta del archivo `.tex`.
+
+La ejecución normal de AulaTeX no muestra ni persiste métricas por motor y por ciclo. Ese registro queda reservado para diagnóstico de desarrollo y pruebas.
+
+Para medir desempeño de forma explícita:
+
+```powershell
+.\scripts\aulatex.ps1 gui --diagnostics
+```
+
+```powershell
+$env:AULATEX_ENABLE_DIAGNOSTIC_METRICS=1
+.\scripts\aulatex.ps1 investigation --target .\UnADM\licenciatura-en-derecho-unadm\historia-del-derecho-en-mexico-lde --query "historia del derecho en mexico unadm programa analitico"
+Remove-Item Env:AULATEX_ENABLE_DIAGNOSTIC_METRICS
+```
 
 Cada carpeta de materia tiene un `COMPILACION.md` con el comando exacto, el
 `.bib` esperado y el contrato de compilacion. Regla central: al script solo se

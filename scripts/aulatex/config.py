@@ -20,6 +20,7 @@ ENGINE_ENV_PREFIX = {
 }
 
 REQUIRED_LLM_SUFFIXES = ("BASE_URL", "API_KEY", "CHAT_DEPLOYMENT")
+_TRUE_VALUES = {"1", "true", "yes", "on", "si", "sí"}
 
 
 @dataclass(frozen=True)
@@ -102,3 +103,9 @@ def credential_status() -> list[CredentialStatus]:
             )
         )
     return statuses
+
+
+def diagnostic_metrics_enabled() -> bool:
+    load_aulatex_env(override=False)
+    value = os.getenv("AULATEX_ENABLE_DIAGNOSTIC_METRICS", "").strip().lower()
+    return value in _TRUE_VALUES
