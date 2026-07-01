@@ -419,6 +419,17 @@
 - Supuesto: falta consigna y rúbrica local de Actividad 5; se mantiene plantilla base con preguntas abiertas.
 - Se conserva identidad UnADM, marco curricular y ejes editoriales sin copiar contenido específico.
 - Se deduplica en modo lossless y se preservan reglas útiles previas.
+- Se transfieren patrones reutilizables de estructura, calidad y argumentación.
+- No se transfieren conclusiones específicas ni bibliografía exclusiva de Actividad 1.
+- Se mantiene control estricto de JSON parseable antes de propagacion recursiva.
+- Se transfieren solo patrones reutilizables; no se copian conclusiones ni bibliografia exclusiva entre hermanos.
+- Se normaliza el uso de supuestos cuando falte consigna local.
+- Se preserva ADN UnADM: identidad institucional, estructura argumentativa juridica y control de calidad formal.
+- Se transfiere solo patron reutilizable desde Actividad 1: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se mantiene control estricto de salida JSON parseable antes de propagacion recursiva.
+- Se consolida refuerzo lateral entre actividades hermanas con deduplicación lossless.
+- Se transfieren solo patrones reutilizables de estructura, calidad y argumentación.
+- Se evita copiar conclusiones específicas o bibliografía exclusiva de otra actividad.
 
 ## identity_rules
 
@@ -589,6 +600,7 @@
 - Citar malla-curricular-derecho-unadm.pdf para ubicacion curricular.
 - Alinear la actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
 - Conservar enfoque jurídico-académico con claridad, evidencia y transferencia profesional.
+- No tratar memoria de modelos como fuente académica citables.
 
 ## structure_rules
 
@@ -826,6 +838,10 @@
 - No arrastrar bibliografía de otra semana sin confirmar pertinencia temática.
 - Si falta detalle operativo, registrar supuesto y continuar con consistencia.
 - Adaptar contenido al enunciado real de Actividad 5 sin romper reglas troncales.
+- Si falta detalle de consigna, registrar supuesto operativo y continuar con consistencia.
+- Adaptar el producto al enunciado real de Actividad 5 sin romper reglas troncales de asignatura.
+- No reutilizar bibliografia exclusiva de otra semana sin confirmar pertinencia.
+- Registrar supuesto operativo si falta alcance o rúbrica y continuar con consistencia.
 
 ## quality_gates
 
@@ -981,6 +997,8 @@
 - Rechazar salidas no estructuradas antes de reutilizar.
 - Rechazar salidas no estructuradas antes de reutilizacion.
 - Aplicar revisión manual extra en nodos con historial de incidentes de parseo.
+- Aplicar revision manual extra en memoria con historial de incidentes de parseo.
+- Rechazar relaciones de grafo con tipos fuera de: supports, contrasts, depends_on, develops.
 
 ## latex_rules
 
@@ -1161,6 +1179,9 @@
 - Validar nombre canonico del .bib antes de compilar.
 - Supuesto: .bib canonico esperado filosofia-del-derecho.bib por Slug visible.
 - Supuesto: nombre canónico esperado del .bib es filosofia-del-derecho.bib, por Slug visible.
+- Validar nombres reales de archivos del README antes de referenciar.
+- Corregir tokens sin expandir tipo $(@{...}.Slug) en README y programa analitico antes de automatizar rutas.
+- Supuesto: archivo .bib canonico esperado es filosofia-del-derecho.bib; verificar localmente antes de compilar.
 
 ## bibliography_rules
 
@@ -1306,6 +1327,10 @@
 - Supuesto: filosofia-del-derecho-clean.bib está orientado a otra actividad; validar pertinencia antes de reutilizar.
 - Supuesto: filosofia-del-derecho-clean.bib corresponde a Semana 7 y requiere validacion antes de reutilizar en Actividad 5.
 - Tratar filosofia-del-derecho-clean.bib como potencialmente temático de otra semana hasta confirmación.
+- Supuesto: filosofia-del-derecho-clean.bib pertenece a Semana 7 y requiere validación de pertinencia para Actividad 5.
+- Tratar filosofia-del-derecho-clean.bib como potencialmente tematico de otra semana hasta validar pertinencia para Actividad 5.
+- Tratar filosofia-del-derecho-clean.bib como orientado a Semana 7 hasta confirmacion para Actividad 5.
+- Confirmar pertinencia de filosofia-del-derecho-clean.bib antes de reutilizar en Actividad 5.
 
 ## propagation_hints
 
@@ -1672,6 +1697,16 @@
 - Aplicar unión y deduplicación semántica para compresión lossless.
 - No propagar como académica ninguna fuente marcada como provisional de memoria.
 - Aplicar deduplicación por unión semántica, no por recorte de contenido válido.
+- Reutilizar reglas institucionales de calidad sin reducir especificidad local.
+- Propagar solo reglas generales cuando falte consigna textual.
+- Mantener bandera de riesgo histórico por salidas no parseables.
+- No propagar como academicas las fuentes marcadas como provisionales de memoria.
+- Propagar recursivamente solo tras validar JSON y estructura completa.
+- Aplicar union y deduplicacion semantica sin eliminar reglas validas previas.
+- Transferir solo patrones reutilizables; no copiar redaccion literal ni conclusiones de nodos hermanos.
+- Cuando falte consigna local, propagar plantilla base y preguntas abiertas en lugar de contenido inventado.
+- Propagar recursivamente solo reglas generales validadas y deduplicadas.
+- No transferir redacción literal, conclusiones ni bibliografía exclusiva entre hermanos.
 
 ## open_questions
 
@@ -1877,6 +1912,9 @@
 - Confirmar si se reutiliza bibliografia de Semana 7 o se construye .bib especifico.
 - Confirmar si Actividad 5 requiere reporte, presentacion o recurso visual.
 - Confirmar si Actividad 5 usa bibliografía propia o reutiliza base existente.
+- Confirmar rubrica de evaluacion especifica para ajustar profundidad argumentativa.
+- Confirmar si se reutiliza bibliografia existente o se requiere .bib especifico para Actividad 5.
+- Confirmar nombre canonico final del .bib operativo de la asignatura.
 
 ## editorial_dna
 
@@ -1937,10 +1975,10 @@
 - Incluir postura argumentada del estudiante; evitar entrega solo descriptiva.
 
 ### grafo_de_conocimiento
-- Conceptos: 1582
+- Conceptos: 1615
 - Citas: 16
-- Relaciones reforzadas: 772
-- Evidencias: 770
+- Relaciones reforzadas: 795
+- Evidencias: 793
 
 ## adn_tex
 

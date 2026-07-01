@@ -31,6 +31,35 @@
 - Pauta editorial activa: identidad UnADM, integridad academica, citas verificables y cierre juridico propio.
 - Se detectan tokens corruptos en README para nombres de archivos; usar slug canonico para resolver rutas.
 - Antecedentes con salidas no JSON parseables; requieren normalizacion antes de reutilizarse.
+- Sincronizacion transversal aplicada con estrategia conservadora.
+- Se preserva identidad UnADM y estructura editorial comun.
+- Se transfieren solo abstracciones estables desde actividad origen.
+- Se mantiene regla de normalizacion previa para salidas no JSON.
+- Destino consolida cerebro editorial minimo con vacios locales abiertos.
+- Se sincroniza transversalmente un nucleo editorial estable entre actividad y materia.
+- Se preserva identidad UnADM, estructura problema-analisis-conclusion y control de supuestos.
+- Se refuerza normalizacion obligatoria de salidas no JSON antes de propagacion recursiva.
+- Se mantiene estrategia conservadora: sin redaccion literal ni fuentes nuevas inventadas.
+- Materia destino consolidada con identidad UnADM verificada.
+- Sincronización transversal aplicada de forma progresiva y conservadora.
+- Se preservan reglas locales de Derecho de la propiedad y registro.
+- Se transfieren solo abstracciones editoriales estables desde Filosofía del Derecho.
+- Se refuerzan ejes comunes: problema, conceptos, fuentes, análisis propio y cierre jurídico.
+- Se mantiene normalización obligatoria antes de propagar salidas no estructuradas.
+- Ubicación curricular local verificada: semestre 7, bloque 1, obligatoria, 8 créditos.
+- La carpeta de la materia funciona como punto de entrada canónico.
+- Bibliografía local inicial: sitio institucional UnADM y malla curricular de Derecho.
+- Persisten vacíos locales sobre rúbrica, figura docente y productos por actividad.
+- Se consolida sincronizacion transversal conservadora entre actividad de origen y materia destino.
+- Se preservan reglas institucionales UnADM, normalizacion previa y trazabilidad de evidencia.
+- Se transfieren solo abstracciones estables: identidad, estructura reusable, calidad y argumentacion.
+- Se evita migrar contenido tematico especifico de Filosofia del Derecho al campo de Propiedad y Registro.
+- Se mantiene compresion lossless por union y deduplicacion sin regresion.
+- Sincronizacion transversal aplicada entre nodos no equivalentes con estrategia conservadora.
+- Se preserva identidad UnADM y estructura editorial reusable sin transferir redaccion literal.
+- Se refuerza normalizacion obligatoria de salidas antes de propagacion recursiva.
+- Se mantiene eje comun: problema, fundamentos, analisis propio y conclusion juridica transferible.
+- Se consolida cerebro editorial minimo de materia con vacios locales explicitados como supuestos.
 
 ## identity_rules
 
@@ -54,6 +83,31 @@
 - Fuente provisional: Codex desde Actividad 1.
 - Fuente provisional: Auto (model-router) desde Actividad 1.
 - Fuente provisional: Claude Foundry desde Actividad 1.
+- Mantener identidad institucional UnADM en tono y metadatos.
+- Usar nombre exacto de materia: Derecho de la propiedad y registro.
+- Conservar programa: Licenciatura en Derecho.
+- Registrar ubicacion curricular verificada: semestre 7, bloque 1, obligatoria, 8 creditos.
+- Usar carpeta de asignatura como entrada canonica.
+- Marcar como supuesto todo dato no visible en consigna local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- Mantener identidad explicita UnADM en tono, portada y metadatos.
+- Usar nombre exacto de la materia destino en todos los artefactos.
+- Conservar programa y ubicacion curricular verificada del destino.
+- Mantener identidad explícita UnADM en portada y metadatos.
+- Registrar ubicación curricular: semestre 7, bloque 1, obligatoria, 8 créditos.
+- Usar código local cuando aplique: LDE-S7B1.
+- Conservar a la UnADM como Universidad Abierta y a Distancia de México.
+- Usar la carpeta de asignatura como entrada canónica.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmación local.
+- Marcar como provisional toda regla heredada desde otro programa académico.
+- Conservar ubicación institucional local si la plantilla la exige: Roma Norte, Ciudad de México.
+- Citar malla-curricular-derecho-unadm.pdf para ubicación curricular.
+- Conservar nombre exacto de materia: Derecho de la propiedad y registro.
+- Usar la carpeta de asignatura como entrada canonica.
+- Marcar como supuesto todo dato no visible en la consigna local.
+- Tratar toda fuente heredada no verificada como provisional hasta confirmacion local.
+- Usar nombre canonico de materia: Derecho de la propiedad y registro.
+- Mantener ubicacion curricular verificada: semestre 7, bloque 1, obligatoria, 8 creditos.
 
 ## structure_rules
 
@@ -70,6 +124,30 @@
 - Verificar nombres de archivos listados en README antes de automatizar rutas.
 - Supuesto: nombres de archivo en README tienen tokens corruptos; usar slug derecho-de-la-propiedad-y-registro al resolver rutas.
 - Supuesto: README contiene tokens corruptos; usar slug derecho-de-la-propiedad-y-registro para resolver rutas.
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar en: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el entregable al producto solicitado por la planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Separar en conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear cada entrega al producto solicitado por planeacion semanal.
+- Alinear entregables con reporte, presentación, bibliografía y referencias locales.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Separar conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Incluir problema, fundamento, análisis y conclusión jurídica transferible.
+- Transformar la planeación semanal en el producto solicitado por la consigna.
+- Vincular el desarrollo con propiedad y registro cuando corresponda.
+- Cerrar con conclusión aplicable a la práctica profesional.
+- Verificar nombres de archivos del README antes de automatizar rutas.
+- Resolver tokens corruptos del README con el slug local verificado.
+- Usar derecho-de-la-propiedad-y-registro.bib como bibliografía local canónica.
+- Abrir con encuadre breve del problema juridico o social.
+- Separar secciones en: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Adaptar la misma arquitectura a reporte o presentacion sin cambiar el ADN argumentativo.
+- Separar desarrollo en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el producto al entregable solicitado por la planeacion semanal.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Adaptar la forma final a reporte o presentacion segun consigna.
 
 ## activity_rules
 
@@ -79,6 +157,27 @@
 - Vincular cada actividad con el producto solicitado por la planeacion.
 - Distinguir problema, fundamento, analisis y cierre argumentativo.
 - Evitar afirmaciones juridicas sin fuente o razonamiento propio.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Incluir postura argumentada del estudiante, no solo descripcion.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Evitar extrapolar fuentes de otras semanas sin validacion.
+- Vincular cada actividad con propiedad y registro cuando corresponda.
+- Vincular el analisis al campo de propiedad y registro cuando corresponda.
+- Declarar objetivo puntual de cada actividad.
+- Relacionar el contenido con propiedad, registro o derechos reales cuando aplique.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- Incluir postura argumentada del estudiante.
+- Evitar entregas solo descriptivas o de resumen.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- Vincular cada actividad con el producto solicitado por la planeación.
+- Evitar extrapolar fuentes de otras semanas sin validación.
+- No transferir fuentes específicas de Filosofía del Derecho al destino sin pertinencia local.
+- Marcar supuestos cuando falte consigna, rúbrica o fuente obligatoria.
+- Cerrar cada actividad con criterio jurídico propio y sustentado.
+- Declarar objetivo y pregunta guia de cada actividad.
+- Anclar el analisis al campo de propiedad y registro cuando corresponda.
+- Exigir postura argumentada del estudiante; evitar entrega solo descriptiva.
+- No extrapolar fuentes de otras semanas sin validacion contextual.
 
 ## quality_gates
 
@@ -94,6 +193,29 @@
 - Revisar toda respuesta no estructurada heredada antes de aplicarla aguas abajo.
 - Revisar sintaxis LaTeX de authortable antes de compilar.
 - Aplicar normalizacion manual a salidas no JSON antes de reutilizarlas.
+- Bloquear propagacion si la salida no es JSON parseable.
+- Revisar estructura minima completa antes de reutilizar.
+- Normalizar respuestas no estructuradas antes de aplicar aguas abajo.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca de supuesto.
+- Validar consistencia entre citas en texto y archivo .bib.
+- Confirmar que placeholders y tokens de ruta esten resueltos.
+- Confirmar que no existan placeholders sin resolver en artefactos LaTeX.
+- Bloquear propagación si la salida no es JSON parseable.
+- Revisar estructura mínima completa antes de reutilizar memoria.
+- Normalizar respuestas no estructuradas antes de aplicarlas aguas abajo.
+- Validar consistencia entre citas en texto y archivo BibTeX.
+- Confirmar que cada fuente citada exista en BibTeX o repositorio local.
+- Confirmar que la conclusión responda al problema planteado.
+- Confirmar correspondencia entre consigna, producto y estructura editorial.
+- Revisar que no existan placeholders sin resolver.
+- Revisar sintaxis LaTeX de la tabla de autor antes de compilar.
+- Compilar sin errores críticos y sin referencias rotas.
+- Exigir estructura minima completa antes de reutilizar memoria.
+- Confirmar que el producto final corresponde a la consigna de la actividad.
+- Validar estructura minima completa antes de reutilizar memoria.
+- Normalizar manualmente respuestas no estructuradas heredadas.
+- Validar trazabilidad entre citas en texto y archivo .bib.
+- Confirmar que el producto final coincide con la consigna de la actividad.
 
 ## latex_rules
 
@@ -110,6 +232,39 @@
 - Conservar matricula del alumno ES2611202040 en tabla de autor.
 - Mantener autor por defecto Martin Jonathan de la Cruz salvo instruccion distinta.
 - Mantener universitydepartmentimage departamentos/UnADM con height 1.57cm.
+- Usar codificacion y acentos correctos en español en .tex y .bib.
+- Mantener clase y opciones base locales salvo instruccion docente distinta.
+- Evitar comandos no estandar sin justificacion editorial.
+- Compilar sin errores criticos, referencias rotas ni placeholders.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analitico.
+- Mantener claves BibTeX estables para evitar rupturas.
+- Usar codificacion y acentos correctos en espanol en .tex y .bib.
+- Mantener claves BibTeX estables.
+- Compilar sin errores criticos y sin referencias rotas.
+- Verificar nombres de archivos en README antes de referenciarlos.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en rutas y nombres.
+- Actualizar metadatos de actividad en portada antes de entrega.
+- Usar clase article con opciones spanish, letterpaper y oneside salvo instrucción distinta.
+- Completar metadatos académicos antes de compilar.
+- Evitar placeholders en portada y tabla de autor.
+- Corregir Figura docente antes de entrega.
+- Conservar matrícula ES2611202040 en tabla de autor salvo instrucción distinta.
+- Mantener autor por defecto Martin Jonathan de la Cruz salvo instrucción distinta.
+- Usar codificación y acentos correctos en español.
+- Evitar comandos no estándar sin justificación editorial.
+- Verificar compilación después de modificar portada, bibliografía o rutas.
+- Corregir caracteres anómalos en rutas o nombres antes de compilar.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analítico.
+- Mantener clase y metadatos base de la materia salvo instruccion docente distinta.
+- Evitar placeholders sin resolver en portada, authortable y rutas.
+- Mantener claves BibTeX estables para evitar referencias rotas.
+- Compilar sin errores criticos ni referencias rotas antes de entrega.
+- Mantener plantilla base .tex de la materia como punto de partida.
+- Usar clase article con spanish, letterpaper y oneside salvo instruccion distinta.
+- Evitar placeholders sin resolver en portada y tabla de autor.
+- Corregir tokens sin expandir en rutas y nombres de archivo del README o programa.
+- Compilar sin errores criticos ni referencias rotas.
+- Usar acentos y codificacion correctos en espanol en .tex y .bib.
 
 ## bibliography_rules
 
@@ -124,6 +279,32 @@
 - Incluir datos minimos de consulta o archivo local cuando aplique.
 - Usar clave unadmSitioWeb para el sitio institucional consultado.
 - Usar clave unadmMallaDerecho2024 para la malla curricular local.
+- Priorizar fuentes institucionales UnADM y materiales juridicos verificables.
+- Usar el .bib local de la materia para fuentes especificas.
+- No inventar referencias; usar solo obras consultables o archivos locales.
+- Conservar metadatos minimos: autor, titulo, año y fuente/editorial o URL.
+- Distinguir bibliografia base de bibliografia especifica por actividad.
+- Registrar fuentes especificas de actividad en el .bib local de la materia.
+- No inventar referencias; usar solo obras consultables.
+- Conservar metadatos minimos: autor, titulo, ano, fuente/editorial o URL.
+- Usar derecho-de-la-propiedad-y-registro.bib para fuentes específicas.
+- Priorizar fuentes institucionales UnADM y documentos jurídicos verificables.
+- Conservar metadatos mínimos: autor, título, año, fuente o URL.
+- Agregar fuentes específicas de cada actividad en el BibTeX local.
+- Distinguir bibliografía base de bibliografía específica de actividad.
+- Conservar unadmSitioWeb para el sitio institucional consultado.
+- Conservar unadmMallaDerecho2024 para la malla curricular local.
+- Incluir datos de consulta o archivo local cuando aplique.
+- Validar que las claves citadas existan antes de compilar.
+- No asumir bibliografía de Filosofía del Derecho como pertinente para propiedad y registro.
+- No inventar referencias; registrar solo obras consultables.
+- Agregar fuentes especificas de actividad en derecho-de-la-propiedad-y-registro.bib.
+- Conservar metadatos minimos: autor, titulo, año y fuente o URL.
+- Mantener trazabilidad entre cita en texto y entrada BibTeX.
+- Usar derecho-de-la-propiedad-y-registro.bib como archivo canonico local.
+- Priorizar fuentes institucionales UnADM y fuentes juridicas verificables.
+- Conservar metadatos minimos: autor, titulo, anio y fuente o URL.
+- Agregar nuevas fuentes de actividad en el .bib local con claves estables.
 
 ## propagation_hints
 
@@ -172,6 +353,37 @@
 - Ciclo 21 necesita normalizacion manual si se reutiliza.
 - Ciclo 22: mantener misma politica de normalizacion manual para antecedentes no JSON.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente solo reglas validadas y no ambiguas.
+- Compartir solo abstracciones estables entre nodos no equivalentes.
+- Evitar transferir redaccion literal o contenidos tematicos de otra materia.
+- Preservar reglas utiles previas sin regresion por ciclos.
+- Aplicar compresion lossless por union y deduplicacion.
+- Propagar solo abstracciones editoriales estables entre nodos no equivalentes.
+- Priorizar identidad, estructura reusable, gates de calidad y grafo conceptual.
+- Evitar transferir redaccion literal o datos hiperlocales del origen.
+- Aplicar union-dedupe sin regresion en cada ciclo.
+- Mantener vacios locales abiertos cuando falte evidencia del destino.
+- Propagar recursivamente solo después de validar JSON y estructura.
+- Propagar identidad UnADM solo a nodos que compartan institución.
+- Propagar reglas curriculares locales solo dentro de esta materia.
+- Compartir solo abstracciones editoriales estables entre materias no equivalentes.
+- Evitar transferir redacción literal desde actividades de otra asignatura.
+- Mantener compresión union-dedupe sin eliminar reglas útiles previas.
+- Aplicar normalización manual a salidas no JSON antes de reutilizarlas.
+- Marcar como supuesto cualquier regla no confirmada por evidencia local.
+- Reutilizar gates institucionales de calidad sin reducir especificidad local.
+- Evitar regresiones respecto de reglas útiles previas.
+- Revisar antecedentes no estructurados de Codex y GPT-Pro antes de nuevos ciclos.
+- Compartir entre nodos no equivalentes solo abstracciones editoriales estables.
+- No propagar redaccion literal ni contenido tematico local del origen.
+- Preservar reglas utiles previas y evitar regresiones en cada ciclo.
+- Aplicar estrategia progresiva: reforzar primero identidad y gates, luego detalle local.
+- Mantener abiertos vacios de contexto local hasta evidencia verificable.
+- Propagar recursivamente solo abstracciones editoriales estables.
+- Priorizar transferencia de identidad, estructura reusable, gates y grafo conceptual.
+- Evitar transferir datos hiperlocales de una actividad de otra materia.
+- Mantener compresion lossless por union y deduplicacion.
+- Evitar regresiones: no eliminar reglas utiles ya vigentes en destino.
 
 ## open_questions
 
@@ -186,3 +398,100 @@
 - Confirmar si existe rubrica formal de evaluacion para esta materia.
 - Confirmar estilo de citacion juridica requerido por la figura docente.
 - Confirmar si cada actividad requiere reporte, presentacion u otro producto.
+- Supuesto: falta rubrica docente especifica de la materia destino.
+- Confirmar formato exigido por actividad: reporte, presentacion u otro.
+- Confirmar estilo de citacion juridica requerido por figura docente.
+- Confirmar dato local pendiente: nombre de figura docente en plantilla.
+- Confirmar si existe guia de evaluacion por semana para propiedad y registro.
+- Confirmar rubrica docente especifica de la materia destino.
+- Confirmar producto exacto por actividad (reporte, presentacion u otro).
+- Confirmar correccion final de placeholders en plantilla (supuesto: aun hay campos por definir).
+- Confirmar rúbrica formal de evaluación de la materia.
+- Confirmar estilo de citación jurídica requerido por la figura docente.
+- Confirmar figura docente para sustituir placeholder local.
+- Confirmar si cada actividad requiere reporte, presentación u otro producto.
+- Confirmar fuentes jurídicas específicas de propiedad y registro para actividades futuras.
+- Confirmar nombres reales de archivos del README ante tokens corruptos.
+- Confirmar si existen actividades con bibliografía obligatoria distinta del BibTeX local.
+- Supuesto: falta consigna textual de actividades específicas del destino.
+- Supuesto: falta rúbrica docente específica del destino.
+- Confirmar rubrica docente especifica para Derecho de la propiedad y registro.
+- Confirmar estilo de citacion juridica exigido por la figura docente.
+- Confirmar producto por actividad: reporte, presentacion u otro.
+- Confirmar si hay fuentes obligatorias por semana en esta materia.
+- Supuesto: persisten tokens corruptos en README y programa; validar rutas canonicas finales.
+- Confirmar formato exigido por actividad concreta: reporte, presentacion u otro.
+- Confirmar sustitucion del placeholder de figura docente en plantilla.
+- Confirmar si existen fuentes obligatorias de propiedad y registro por semana.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad institucional UnADM
+- Integridad academica
+- Citas verificables
+- Problema juridico
+- Analisis propio
+- Conclusion transferible
+- Propiedad y registro
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Alinear entregables con la estructura local: reporte, presentacion, bibliografia y referencias.
+- Incluir problema, conceptos o normas, analisis propio y conclusion juridica transferible.
+- Mantener consistencia con semestre 7, bloque 1, obligatoria, 8 creditos.
+- Usar la carpeta de la materia como punto de entrada canonico.
+- Transformar la planeacion semanal en productos academicos claros.
+- Incluir problema juridico o social que activa la asignatura.
+
+### identidad_estilistica
+- Supuestos explicitos cuando falte evidencia local.
+- Razonamiento juridico con trazabilidad de fuentes.
+- Estructura reusable centrada en problema-analisis-conclusion.
+- Mantener identidad institucional UnADM en tono y metadatos.
+- Usar nombre exacto de materia: Derecho de la propiedad y registro.
+- Conservar programa: Licenciatura en Derecho.
+- Registrar ubicacion curricular verificada: semestre 7, bloque 1, obligatoria, 8 creditos.
+- Usar carpeta de asignatura como entrada canonica.
+- Marcar como supuesto todo dato no visible en consigna local.
+- Mantener identidad explicita UnADM en portada y metadatos.
+- Usar nombre de materia exacto: Derecho de la propiedad y registro.
+- Conservar nivel y programa: Licenciatura en Derecho.
+
+### patrones_argumentativos
+- Plantear problema y objetivo al inicio.
+- Construir marco conceptual y normativo minimo.
+- Desarrollar analisis propio con contraste de fuentes.
+- Cerrar con conclusion que responda al problema inicial.
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar en: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el entregable al producto solicitado por la planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Incluir postura argumentada del estudiante, no solo descripcion.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+
+### grafo_de_conocimiento
+- Conceptos: 318
+- Citas: 2
+- Relaciones reforzadas: 79
+- Evidencias: 94
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/derecho-de-la-propiedad-y-registro-lde/reporte-derecho-de-la-propiedad-y-registro.tex`
+- Caracteres LaTeX preservados: 4227
+- Bloques/parrafos indexados: 20
+- Claves citadas: ninguna
+- Claves sin referencia: ninguna

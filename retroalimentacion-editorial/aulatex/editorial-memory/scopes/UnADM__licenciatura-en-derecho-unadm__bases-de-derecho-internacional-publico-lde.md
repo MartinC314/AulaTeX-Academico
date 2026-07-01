@@ -402,6 +402,51 @@
 - Se mantiene politica de normalizacion estructurada obligatoria antes de propagacion recursiva.
 - Se transfiere patron editorial reusable: problema, conceptos, evidencia, analisis propio y conclusion juridica.
 - Se detectan tokens sin expandir y caracteres anómalos en README/programa; se marcan como pendientes tecnicos.
+- Se sincroniza memoria transversal desde actividad de Filosofía del Derecho hacia materia destino sin mezclar contenido temático específico.
+- Se preservan reglas útiles previas del destino y se deduplican en formato accionable.
+- Se refuerza ADN editorial estable: identidad UnADM, estructura argumentativa jurídica, evidencia verificable y cierre transferible.
+- Se mantiene estrategia conservadora: transferir abstracciones editoriales, no redacción literal ni bibliografía ajena.
+- Se mantiene bloqueo de propagación ante salidas no parseables y obligación de normalización estructurada.
+- Se consolida sincronización transversal desde actividad origen hacia materia destino.
+- Se preservan ejes editoriales estables reutilizables sin transferir contenido temático.
+- Se refuerza ADN editorial UnADM con enfoque conservador y progresivo.
+- La compresión se realiza por unión y deduplicación sin pérdida.
+- Se mantiene cerebro editorial mínimo funcional para la materia destino.
+- Se sincroniza memoria transversal desde actividad de origen con estrategia conservadora.
+- Se consolidan ejes estables reutilizables: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se evita traslado de contenido temático específico de Filosofía del Derecho.
+- Se detectan tokens sin expandir y cortes de texto en README y .tex del destino.
+- Materia destino consolidada con memoria editorial local.
+- Sincronización transversal desde Filosofía del Derecho aplicada solo como abstracción estable.
+- Identidad UnADM preservada para Licenciatura en Derecho.
+- Contexto curricular local verificado: semestre 4, bloque 1, obligatoria, 8 créditos.
+- Ejes editoriales reforzados: problema, conceptos, fuentes, análisis propio y conclusión jurídica.
+- No se trasladan contenidos temáticos ni fuentes específicas de Filosofía del Derecho.
+- Se mantiene normalización estructurada obligatoria antes de propagación recursiva.
+- Se conserva incidencia histórica de salidas no parseables desde Codex y GPT-Pro.
+- Plantilla base, programa analítico y bibliografía local ya definidos.
+- Se detectan tokens sin expandir y nombres anómalos en README y programa analítico.
+- Se preservan reglas utiles vigentes del destino y se deduplican sin recorte semantico.
+- Se transfieren solo abstracciones estables: identidad UnADM, estructura argumentativa, control de supuestos y gates de calidad.
+- Supuesto: la consigna local por actividad aun no esta anexada en esta memoria de materia.
+- Se refuerza la sincronización transversal entre actividad origen y materia destino.
+- Se transfieren abstracciones editoriales estables sin contenido temático.
+- Se consolida ADN editorial conservador para Derecho Internacional Público.
+- Se preserva identidad UnADM y contexto curricular local verificado.
+- Se mantiene compresión lossless por unión y deduplicación.
+- Se consolida sincronizacion transversal conservadora entre Filosofia del Derecho (actividad) y Bases de derecho internacional publico (materia).
+- Se preservan reglas utiles previas del destino y se agregan solo abstracciones estables verificables.
+- Se refuerzan ejes editoriales comunes: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se mantiene bloqueo de propagacion para salidas no JSON parseable y normalizacion obligatoria.
+- Supuesto: no se transfiere contenido tematico especifico de Filosofia del Derecho por no equivalencia de nodos.
+- Materia destino consolidada con identidad UnADM y contexto curricular local.
+- Destino verificado: Licenciatura en Derecho, semestre 4, bloque 1, obligatoria, 8 créditos.
+- Se preservan plantilla base, programa analítico y bibliografía local.
+- Se refuerzan ejes transversales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se conserva normalización estructurada obligatoria antes de propagación.
+- Se mantiene estrategia conservadora entre materias no equivalentes.
+- No se trasladan contenidos temáticos específicos de Filosofía del Derecho.
+- Se conserva incidencia histórica de salidas no JSON parseables.
 
 ## identity_rules
 
@@ -505,6 +550,20 @@
 - No mezclar metadatos curriculares de Filosofía del Derecho con la materia destino.
 - Usar carpeta de materia como punto de entrada canónico.
 - No mezclar metadatos curriculares entre materias no equivalentes.
+- Usar solo el contexto curricular verificado del destino.
+- Tratar fuentes provisionales como procedencia, no como identidad.
+- No mezclar metadatos curriculares entre origen y destino.
+- Usar la carpeta de materia como punto de entrada canónico.
+- Conservar al alumno registrado en plantilla si no hay instrucción local que lo sustituya.
+- No mezclar metadatos curriculares de materias origen.
+- Citar malla-curricular-derecho-unadm.pdf como fuente de ubicación curricular.
+- Usar codigo local de curso LDE-S4B1 en metadatos.
+- Mantener identidad institucional UnADM en todo entregable.
+- Usar solo contexto curricular verificado del nodo destino.
+- Usar contexto curricular verificado del destino y no mezclar con el origen.
+- Tratar Codex y GPT-Pro como trazabilidad provisional, no como identidad del entregable.
+- Conservar al alumno registrado en plantilla salvo instrucción local contraria.
+- Citar la malla curricular de Derecho solo como fuente de ubicación curricular local.
 
 ## structure_rules
 
@@ -598,6 +657,25 @@
 - Alinear la entrega al producto solicitado por la planeación semanal.
 - Mantener separación entre README, programa analítico, .bib y plantillas .tex.
 - Alinear cada entrega al producto solicitado en planeacion semanal.
+- Conservar separación entre README, programa analítico, .tex y .bib.
+- Usar la carpeta de materia como punto de entrada canónico.
+- Organizar entregas con problema, conceptos, análisis propio y conclusión jurídica.
+- Alinear siempre la estructura al producto solicitado en la planeación.
+- Separar claramente reporte, presentación y otros productos.
+- Usar la carpeta de materia como entrada canónica.
+- Alinear cada entrega al producto solicitado por la planeación semanal.
+- Transformar la planeación semanal en el producto académico solicitado.
+- Mantener el programa analítico como guía editorial de actividades.
+- Conservar separación entre reporte, presentación, programa analítico y bibliografía.
+- Organizar cada entrega con problema, conceptos, fuentes, análisis propio y conclusión jurídica.
+- Conservar separacion documental entre README, programa analitico, .bib y plantillas .tex.
+- Separar secciones: conceptos, norma/doctrina, análisis propio y cierre.
+- Alinear siempre al producto solicitado por la planeación.
+- Cerrar con conclusión jurídica transferible a la práctica.
+- Alinear el producto final con la planeacion semanal.
+- Separar conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Integrar fuentes verificables dentro del desarrollo.
+- Conservar la carpeta de referencias local como repositorio de apoyo.
 
 ## activity_rules
 
@@ -660,6 +738,22 @@
 - Incluir postura argumentada del estudiante; evitar entregas solo descriptivas.
 - Adaptar cada actividad al entregable exacto solicitado.
 - No transferir contenido tematico especifico de Filosofia del Derecho al destino transversal sin consigna.
+- Definir objetivo puntual antes del desarrollo.
+- Incluir postura argumentada del estudiante.
+- Sustentar afirmaciones con fuentes verificables.
+- Evitar entregas solo descriptivas.
+- Verificar coherencia entre consigna, desarrollo y conclusión.
+- Adaptar cada actividad al producto solicitado por la planeación semanal.
+- Verificar correspondencia entre consigna, producto y programa analítico.
+- Distinguir hechos, argumentos, normas, doctrina, datos y criterio propio.
+- No asumir fuentes específicas sin confirmación local.
+- Adaptar cada actividad al producto solicitado.
+- Verificar correspondencia entre consigna, producto y rúbrica disponible.
+- Incluir postura académica propia sustentada en fuentes verificables.
+- Evitar entregas solo descriptivas o de resumen.
+- Distinguir hechos, argumentos, normas, doctrina y criterio propio.
+- Sustentar afirmaciones con cita explícita.
+- No trasladar citas temáticas de otra materia sin pertinencia local verificada.
 
 ## quality_gates
 
@@ -756,6 +850,22 @@
 - Validar estructura mínima completa antes de reutilizar memoria.
 - Verificar correspondencia entre consigna, programa analítico y producto entregable.
 - Verificar correspondencia entre producto entregado y consigna activa.
+- Revisar estructura mínima completa antes de reutilizar.
+- Marcar faltantes como pendientes sin inventar contenido.
+- Validar consistencia cita-bibliografía.
+- Revisar respuestas no estructuradas antes de aplicar aguas abajo.
+- Verificar correspondencia del producto con la consigna vigente de actividad.
+- Revisar consistencia entre instrucciones de actividad y programa analítico.
+- Verificar que README, programa analítico, .bib y plantillas locales coincidan.
+- Confirmar que todo supuesto esté marcado.
+- Validar estructura mínima completa antes de reutilizar.
+- Normalizar respuestas no estructuradas antes de aplicar aguas abajo.
+- Verificar correspondencia entre consigna, programa analitico y producto.
+- Revisar respuestas no estructuradas antes de reutilizarlas.
+- Bloquear afirmaciones sin respaldo documental o marca de supuesto.
+- Validar citas en texto contra el archivo .bib local.
+- Validar referencias antes de cerrar entregables.
+- Mantener auditoría de normalización antes de propagación recursiva.
 
 ## latex_rules
 
@@ -923,6 +1033,24 @@
 - Corregir corte de entorno tabular en reporte-bases-de-derecho-internacional-publico.tex [supuesto: persiste el corte visto en contexto local].
 - Reparar cierre de entorno tabular en reporte-bases-de-derecho-internacional-publico.tex.
 - Corregir caracteres anomalos en nombres de archivo o rutas antes de compilar.
+- Corregir caracteres anómalos en README y rutas de archivos antes de compilar.
+- No cambiar estructura base de portada sin instrucción editorial.
+- Reutilizar la plantilla .tex local sin romper identidad institucional.
+- No introducir comandos no estándar sin justificación editorial.
+- Revisar y cerrar correctamente entornos tabular del reporte base.
+- Usar presentacion-bases-de-derecho-internacional-publico.tex solo para presentaciones.
+- Definir título, subtítulo y subject coherentes con la actividad en curso.
+- Conservar nombres de archivo locales salvo normalización acordada.
+- Reparar el entorno tabular truncado en la plantilla de reporte antes de compilar.
+- No cambiar la estructura base de portada sin instrucción editorial.
+- Reutilizar plantillas .tex locales sin alterar identidad.
+- Usar codificación correcta en español en .tex y .bib.
+- Mantener nombres de archivo locales verificados.
+- No introducir comandos no estándar sin justificación.
+- Reutilizar la plantilla .tex local como base de nuevas actividades.
+- Usar reporte-bases-de-derecho-internacional-publico.tex para reportes.
+- Definir título, subtítulo y subject coherentes con la actividad.
+- Resolver tokens sin expandir tipo Slug en README y programa analítico.
 
 ## bibliography_rules
 
@@ -987,6 +1115,23 @@
 - Conservar entradas base institucionales mientras no haya instruccion local en contra.
 - Registrar fuentes específicas de actividad en bases-de-derecho-internacional-publico.bib.
 - Mantener claves BibTeX estables para evitar roturas de compilación.
+- Registrar fuentes específicas de actividad en el .bib local.
+- Priorizar fuentes institucionales UnADM y documentos jurídicos verificables.
+- Conservar metadatos mínimos completos.
+- Validar que toda cita exista en el archivo .bib.
+- Conservar metadatos mínimos: autor, título, año y fuente o URL.
+- Agregar entradas BibTeX específicas solo cuando la fuente exista y sea verificable.
+- Usar solo obras realmente consultables.
+- Conservar metadatos mínimos: autor, título, año, fuente editorial o URL.
+- Distinguir bibliografía base de bibliografía específica de actividad.
+- No importar bibliografía temática de Filosofía del Derecho sin uso local confirmado.
+- Registrar fuentes de actividad en el .bib local.
+- No inventar referencias; usar solo fuentes consultables.
+- Priorizar fuentes institucionales UnADM.
+- Validar que toda cita exista en el .bib.
+- Conservar metadatos minimos: autor, titulo, anio y fuente/editorial o URL.
+- Agregar entradas BibTeX específicas solo si la fuente existe.
+- No asumir bibliografía temática de otra materia como fuente local.
 
 ## propagation_hints
 
@@ -1317,6 +1462,32 @@
 - Propagar correcciones tecnicas locales solo tras verificar archivos afectados.
 - Compartir solo abstracciones editoriales estables en saltos transversales.
 - Ejecutar propagacion recursiva solo tras validacion JSON y estructura.
+- Si falta consigna local, transferir solo abstracciones editoriales estables.
+- Mantener compresión lossless por unión y deduplicación.
+- Propagar solo abstracciones editoriales estables.
+- Evitar trasladar redacción literal o contenido temático específico.
+- Propagar recursivamente solo después de validar JSON y estructura.
+- No propagar redacción literal ni contenido temático específico del origen.
+- Mantener trazabilidad de incidencias de parseo en ciclos previos.
+- Compartir solo abstracciones editoriales entre materias no equivalentes.
+- Preservar reglas útiles previas aunque se reubiquen por categoría.
+- Mantener compresión union-dedupe con criterio lossless.
+- No trasladar contenido temático específico del origen al destino.
+- Reutilizar reglas institucionales de calidad sin reducir especificidad local.
+- Normalizar manualmente memorias heredadas de ciclos previos si se reutilizan.
+- Conservar incidencias históricas de salida no estructurada detectadas en ciclos previos.
+- Propagar correcciones locales solo después de verificar archivos afectados.
+- Propagar transversalmente abstracciones estables, no redaccion literal.
+- Mantener trazabilidad de incidencias historicas de parseo en cada ciclo.
+- Ciclo 1 requiere normalizacion manual si se reutilizan salidas no estructuradas.
+- Evitar traslado de contenido temático entre materias.
+- Normalizar manualmente memorias del ciclo 1 si se reutilizan.
+- Propagar recursivamente solo tras validación.
+- Transferir identidad, estructura reusable, gates y grafo conceptual; no redaccion literal.
+- Compartir solo abstracciones editoriales estables entre materias no equivalentes.
+- Mantener compresión por unión y deduplicación lossless.
+- Conservar incidencias históricas de salida no estructurada.
+- Evitar regresiones respecto de reglas útiles previas.
 
 ## open_questions
 
@@ -1708,6 +1879,45 @@
 - Confirmar reparacion del corte de entorno tabular en plantilla de reporte .tex.
 - Confirmar si existe rubrica especifica por actividad para ajustar profundidad argumentativa. [supuesto]
 - Confirmar si la materia requiere reglas adicionales por tipo de evidencia internacional publica. [supuesto]
+- Confirmar criterio editorial final sobre 'publico' vs 'público' en nombres visibles. [supuesto]
+- Confirmar reparación completa de tokens $(@{...}.Slug) en README y programa analítico. [supuesto]
+- Confirmar reparación del entorno tabular truncado en reporte .tex.
+- Confirmar formato mínimo de conclusión jurídica por tipo de evidencia en esta materia.
+- Confirmar si existen reglas editoriales locales adicionales no documentadas.
+- Definir formato estándar de conclusión jurídica para la materia.
+- Confirmar criterios editoriales sobre uso de acentos en nombres de archivo.
+- Revisar y corregir tokens sin expandir en README y programa analítico.
+- Confirmar criterio editorial final de público/publico en nombre visible de la materia.
+- Confirmar reparación completa del corte de entorno tabular en reporte .tex.
+- Supuesto: la consigna local de cada actividad seguirá definiendo el tipo de entregable.
+- Supuesto: bases-de-derecho-internacional-publico.bib es el archivo canónico definitivo.
+- Confirmar consignas específicas de actividades de la materia destino.
+- Confirmar rúbricas de evaluación por actividad.
+- Confirmar fuentes obligatorias de cada semana.
+- Confirmar si el nombre editorial debe conservar publico sin acento o usar público con acento.
+- Corregir nombres anómalos en README: reporte y referencias.
+- Corregir tokens sin expandir en README y programa analítico.
+- Confirmar nombre canónico final del archivo .bib local.
+- Revisar y reparar corte de entorno tabular en reporte-bases-de-derecho-internacional-publico.tex.
+- Definir formato mínimo de conclusión jurídica por tipo de evidencia.
+- Confirmar criterio editorial definitivo sobre uso de publico sin acento frente a publico con acento.
+- Confirmar y corregir en README los nombres con caracteres anomalos observados.
+- Supuesto: faltan consignas especificas por actividad para afinar reglas locales de producto.
+- Confirmar rúbricas específicas de actividades del destino.
+- Definir formato mínimo de conclusión jurídica por actividad.
+- Confirmar normalización final de nombres de archivo con acentos.
+- Verificar tokens sin expandir en README y programa analítico.
+- Confirmar criterio editorial definitivo de publico con o sin acento en nombres visibles.
+- Confirmar correccion de nombres con caracteres anomalos en README.
+- Supuesto: la materia destino aun no define rubrica detallada por tipo de actividad.
+- Confirmar consigna textual de cada actividad local.
+- Confirmar producto exacto solicitado por actividad.
+- Confirmar rúbrica de evaluación específica.
+- Confirmar formato mínimo de conclusión jurídica por tipo de evidencia.
+- Confirmar si el nombre editorial debe usar publico sin acento o público con acento.
+- Revisar nombres en README con caracteres anómalos.
+- Revisar y reparar corte de entorno tabular en el reporte .tex.
+- Confirmar si existen fuentes locales de derecho internacional público pendientes de integrar.
 
 ## editorial_dna
 
@@ -1768,10 +1978,10 @@
 - Verificar coherencia entre pregunta guia, desarrollo y conclusion.
 
 ### grafo_de_conocimiento
-- Conceptos: 1361
+- Conceptos: 1615
 - Citas: 2
-- Relaciones reforzadas: 771
-- Evidencias: 625
+- Relaciones reforzadas: 863
+- Evidencias: 731
 
 ## adn_tex
 

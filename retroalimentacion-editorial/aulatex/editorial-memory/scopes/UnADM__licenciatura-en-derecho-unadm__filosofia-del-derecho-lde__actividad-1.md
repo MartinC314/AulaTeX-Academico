@@ -360,6 +360,13 @@
 - Se refuerza regla de normalizacion: no propagar salidas no estructuradas.
 - Se mantiene trazabilidad de fuentes provisionales y supuestos pendientes.
 - Se preserva TEX reconstruible del artefacto de Actividad 1.
+- Se mantiene normalización obligatoria antes de propagación recursiva.
+- Se mantiene trazabilidad de fuentes provisionales hasta verificación local.
+- Se preserva TEX reconstruible y continuidad de reglas útiles previas.
+- Se confirma TEX reconstruible y continuidad del ADN editorial del nodo.
+- Se consolida compresión lossless por unión y deduplicación, sin recorte de reglas útiles.
+- Se preserva el TEX reconstruible del nodo y su trazabilidad bibliográfica.
+- Se mantiene trazabilidad de fuentes locales y marca explícita de supuestos no verificables.
 
 ## identity_rules
 
@@ -418,6 +425,7 @@
 - Citar malla-curricular-derecho-unadm.pdf para ubicacion curricular.
 - Usar carpeta de asignatura como punto de entrada canonico.
 - Marcar como supuesto todo dato no visible en consigna.
+- Marcar como supuesto cualquier dato no visible en la consigna de Actividad 1.
 
 ## structure_rules
 
@@ -838,10 +846,10 @@
 - Sustentar afirmaciones con fuentes verificables y cita explícita.
 
 ### grafo_de_conocimiento
-- Conceptos: 1633
+- Conceptos: 1691
 - Citas: 18
-- Relaciones reforzadas: 839
-- Evidencias: 717
+- Relaciones reforzadas: 866
+- Evidencias: 735
 
 ## adn_tex
 

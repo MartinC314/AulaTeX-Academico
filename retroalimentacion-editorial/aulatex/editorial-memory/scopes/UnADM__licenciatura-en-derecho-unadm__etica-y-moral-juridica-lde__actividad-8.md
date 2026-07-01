@@ -78,6 +78,19 @@
 - Ciclo 22: no hay insumo JSON parseable nuevo desde Actividad 1.
 - Se aplica compresion lossless por union-dedupe en todas las secciones.
 - Se confirma alineacion con la pauta editorial local de Etica y Moral juridica.
+- Se transfiere ADN editorial reutilizable desde Filosofia del Derecho a Etica y Moral juridica por analogia controlada.
+- Se preserva identidad UnADM, estructura canonica y control de calidad sin copiar contenido especifico del hermano.
+- Se mantiene regla de normalizacion obligatoria: no propagar salidas no estructuradas.
+- Se refuerzan los cinco ejes editoriales comunes del programa analitico local.
+- Se agrega mejora verificable: resolver tokens Slug sin expandir en README y programa analitico del destino.
+- Se agrega mejora verificable: corregir artefactos de ruta con caracteres truncados en README del destino.
+- Se mantiene compresion lossless por union y deduplicacion semantica.
+- Se refuerza transferencia lateral desde Filosofia del Derecho hacia Etica y Moral juridica con solo patrones reutilizables.
+- Se preserva normalizacion obligatoria: no propagar contenido no parseable.
+- Se consolidan ejes comunes: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se agrega mejora verificable local: resolver tokens Slug sin expandir en README y programa analitico.
+- Se agrega mejora verificable local: corregir nombres de archivo truncados en README.
+- Se mantiene compresion lossless por union y deduplicacion semantica sin recorte.
 
 ## identity_rules
 
@@ -94,6 +107,17 @@
 - Fuente provisional: Claude Foundry desde Actividad 1.
 - Fuente provisional: GPT-Pro desde Actividad 1.
 - Conservar etiqueta de fuente provisional cuando no exista evidencia estructurada valida.
+- Mantener identidad institucional UnADM en tono, formato y cierre juridico.
+- Vincular toda actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Usar la carpeta de asignatura como punto de entrada canonico.
+- Marcar como supuesto cualquier dato no visible en la consigna local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- Registrar trazabilidad de fusion con origen, destino, ciclo y tipo de relacion lateral-transversal.
+- Vincular la actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Usar carpeta de asignatura como punto de entrada canonico.
+- Mantener referencia explicita a Etica y Moral juridica en cada producto.
+- Marcar como supuesto todo dato no visible en la consigna local.
+- Registrar ruta origen-destino y ciclo en cada fusion.
 
 ## structure_rules
 
@@ -102,6 +126,16 @@
 - Aplicar compresion por union-dedupe sin recortar reglas utiles.
 - Marcar explicitamente supuestos cuando falte evidencia.
 - Conservar trazabilidad de cambios por ciclo en frases breves y verificables.
+- Responder siempre en JSON valido y parseable para memoria.
+- Usar esquema canonico completo sin omitir secciones.
+- Iniciar producto con encuadre breve del problema juridico o social.
+- Separar desarrollo en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Definir objetivo puntual antes del desarrollo.
+- Alinear formato final al producto solicitado por la planeacion semanal.
+- Responder en JSON valido y parseable.
+- Usar esquema canonico completo sin omisiones.
+- Iniciar con encuadre breve del problema juridico o social.
+- Mantener trazabilidad de cambios por ciclo en frases breves.
 
 ## activity_rules
 
@@ -111,6 +145,13 @@
 - Cerrar con conclusion transferible a la practica juridica.
 - Ajustar el producto al formato solicitado en la planeacion semanal.
 - Seguir los cinco ejes del programa analitico local como lista de verificacion.
+- Seguir los cinco ejes de trabajo como lista de verificacion.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Incluir postura argumentada del estudiante, no solo descripcion.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- No asumir fuentes de otras semanas o materias sin validacion en consigna.
+- Alinear la entrega al problema juridico o social de la actividad.
 
 ## quality_gates
 
@@ -121,6 +162,13 @@
 - Revisar consistencia entre pauta editorial local y reglas de actividad.
 - Aceptar solo mejoras verificables contra archivos locales o memoria previa.
 - Validar esquema requerido antes de guardar memoria.
+- Revisar estructura minima completa antes de reutilizar aguas abajo.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca de supuesto.
+- Validar consistencia entre citas en texto y archivo .bib.
+- No eliminar reglas utiles previas durante fusion.
+- Aceptar solo mejoras verificables contra archivos locales o memoria valida.
+- Validar estructura minima completa antes de reutilizar aguas abajo.
+- Validar deduplicacion semantica antes de guardar memoria.
 
 ## latex_rules
 
@@ -128,6 +176,14 @@
 - Evitar comandos no estandar sin justificacion academica.
 - Asegurar que citas y referencias compilen sin errores.
 - Mantener consistencia de nombres de archivos .tex y .bib segun slug de la materia.
+- Usar codificacion y acentos correctos en espanol en .tex y .bib.
+- Mantener claves BibTeX estables y evitar colisiones por duplicado.
+- Evitar comandos no estandar sin justificacion editorial.
+- Compilar sin errores criticos y sin referencias rotas.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analitico.
+- Corregir nombres de archivo truncados en README antes de referenciar rutas de compilacion.
+- Mantener claves BibTeX estables y evitar colisiones.
+- Corregir nombres de archivo truncados en README antes de referenciar rutas.
 
 ## bibliography_rules
 
@@ -138,6 +194,14 @@
 - Marcar como pendiente la depuracion de duplicados historicos sin borrar trazabilidad.
 - Supuesto: existe una entrada .bib truncada y debe validarse antes de editar o compilar.
 - Registrar en bitacora local las parejas duplicadas detectadas antes de normalizar claves.
+- Priorizar fuentes institucionales UnADM y materiales juridicos verificables.
+- Registrar fuentes especificas de actividad en etica-y-moral-juridica.bib.
+- No inventar referencias; usar solo obras consultables.
+- Conservar metadatos minimos: autor, titulo, anio, editorial o URL.
+- Distinguir bibliografia base de bibliografia especifica de actividad.
+- Detectar y documentar duplicados historicos de claves antes de normalizar.
+- Marcar duplicados historicos como pendientes de normalizacion sin perder trazabilidad.
+- Supuesto: la entrada sierraUniversidadNacional1910 esta truncada y requiere correccion previa a compilacion.
 
 ## propagation_hints
 
@@ -186,6 +250,14 @@
 - Ciclo 21: sin insumo estructurado nuevo desde origen; mantener estado y esperar evidencia parseable.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
 - Ciclo 22: sin insumo estructurado nuevo desde origen; mantener estado y esperar evidencia parseable.
+- Propagar recursivamente solo despues de validar JSON y estructura.
+- Reutilizar reglas institucionales comunes sin copiar conclusiones especificas.
+- Aplicar analogia controlada: transferir patrones, no redaccion literal.
+- Si falta consigna local, mantener estructura base y abrir preguntas.
+- Mantener bandera de normalizacion manual mientras existan salidas no estructuradas en nodos vecinos.
+- Transferir solo patrones generales reutilizables entre materias hermanas.
+- No copiar redaccion literal ni conclusiones especificas del nodo origen.
+- Aplicar analogia controlada: conservar identidad, estructura, calidad y relaciones nucleares.
 
 ## open_questions
 
@@ -199,3 +271,84 @@
 - Supuesto: la entrada final sierraUniversidadNacional1910 esta truncada en el campo note.
 - Supuesto: la entrada final sierraUniversidadNacional1910 esta truncada en el campo final y requiere correccion previa a compilacion.
 - Supuesto: la entrada final sierraUniversidadNacional1910 esta truncada en el campo note o campo final.
+- Confirmar consigna textual exacta de Actividad 8 para fijar tipo de producto.
+- Confirmar rubrica de evaluacion local para ajustar profundidad argumentativa.
+- Confirmar lista canonica de claves BibTeX para resolver duplicados por obra.
+- Supuesto: la entrada sierraUniversidadNacional1910 esta truncada en etica-y-moral-juridica.bib; validar y corregir.
+- Confirmar si la actividad exige reporte, presentacion o producto visual.
+- Confirmar consigna textual exacta de Actividad 8 para fijar tipo de producto final.
+- Confirmar criterio canonico para resolver claves BibTeX duplicadas con alias trazables.
+- Confirmar correccion completa de la entrada truncada sierraUniversidadNacional1910.
+- Supuesto: la Actividad 8 mantiene formato reporte; validar si tambien admite presentacion o producto visual.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad institucional UnADM
+- Cinco ejes editoriales
+- Integridad academica
+- Conclusion juridica transferible
+- Se transfiere ADN editorial reutilizable desde Filosofia del Derecho a Etica y Moral juridica por analogia controlada
+- Se refuerzan los cinco ejes editoriales comunes del programa analitico local
+- Se agrega mejora verificable: resolver tokens Slug sin expandir en README y programa analitico del destino
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Responder siempre en JSON valido y parseable.
+- Usar el esquema canonico requerido sin omitir secciones.
+- Marcar explicitamente supuestos cuando falte evidencia.
+- Responder siempre en JSON valido y parseable para memoria.
+- Usar esquema canonico completo sin omitir secciones.
+- Iniciar producto con encuadre breve del problema juridico o social.
+
+### identidad_estilistica
+- Frases breves y accionables.
+- Supuestos marcados de forma explicita.
+- Citas verificables y cierre con criterio juridico propio.
+- Estructura por secciones funcionales.
+- Mantener identidad institucional UnADM en tono, formato y cierre juridico.
+- Vincular toda actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Usar la carpeta de asignatura como punto de entrada canonico.
+- Marcar como supuesto cualquier dato no visible en la consigna local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- Mantener identidad UnADM en redaccion, enfoque academico y cierre juridico.
+- Registrar la fuente de cada fusion con ruta origen y destino.
+- Mantener referencia explicita a la asignatura Etica y Moral juridica en productos editoriales.
+
+### patrones_argumentativos
+- Problema inicial breve.
+- Marco conceptual y normativo pertinente.
+- Analisis propio sustentado.
+- Conclusion juridica aplicable.
+- Responder siempre en JSON valido y parseable para memoria.
+- Usar esquema canonico completo sin omitir secciones.
+- Iniciar producto con encuadre breve del problema juridico o social.
+- Separar desarrollo en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Definir objetivo puntual antes del desarrollo.
+- Alinear formato final al producto solicitado por la planeacion semanal.
+- Seguir los cinco ejes de trabajo como lista de verificacion.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+
+### grafo_de_conocimiento
+- Conceptos: 114
+- Citas: 11
+- Relaciones reforzadas: 28
+- Evidencias: 67
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/etica-y-moral-juridica-lde/reporte-etica-y-moral-juridica-Actividad-8.tex`
+- Caracteres LaTeX preservados: 28957
+- Bloques/parrafos indexados: 39
+- Claves citadas: clave, clave1, clave2, constitucionCPEUM2026, scjnJur37_2016, ronquilloarmasEticaGeneralProfesional2018, garciaMaynezEtica, huertaEticaConClasicos2000, scjnTesis2007731
+- Claves sin referencia: clave, clave1, clave2

@@ -605,6 +605,19 @@
 - Se incorpora como supuesto operativo que la consigna local de actividad-2 puede diferir y debe confirmarse.
 - Se preservan reglas validas de identidad, estructura, calidad y trazabilidad.
 - Se refuerza que solo se transfieren patrones reutilizables, no contenido especifico de actividad-1.
+- Se preservan reglas válidas por unión y deduplicación sin recorte.
+- Se evita copiar contenidos exclusivos del hermano; solo patrones reutilizables.
+- Se preserva identidad UnADM, estructura argumentativa y control de calidad.
+- Se consolida transferencia lateral desde actividad-1 hacia actividad-2 sin copiar contenido exclusivo.
+- Se corrigen supuestos de bibliografia: clean.bib es tematico y no reemplaza automaticamente al .bib canonico.
+- Se mantiene identidad UnADM y ejes troncales sin copiar contenido exclusivo de actividad-1.
+- Se consolida compresion lossless por union-dedupe y normalizacion estructurada obligatoria.
+- Se mantiene regla de bloqueo de propagacion cuando no hay JSON parseable.
+- Se consolida actividad-2 con refuerzo lateral desde actividad-1 por patrones reutilizables.
+- Se preserva identidad UnADM, ejes editoriales y control de calidad sin recorte.
+- Se mantiene normalizacion obligatoria de salidas no estructuradas antes de propagacion.
+- Se evita traslado de conclusiones o bibliografia exclusiva de actividad-1.
+- Se refuerza compresion lossless por union y deduplicacion.
 
 ## identity_rules
 
@@ -723,6 +736,9 @@
 - Anclar contexto curricular: Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
 - Mantener integridad academica con citas verificables y criterio juridico propio.
 - Mantener identidad institucional UnADM en tono, formato y proposito academico.
+- Marcar como [supuesto] todo dato no visible en la consigna local.
+- Tratar fuentes heredadas no verificadas como provisionales.
+- Conservar trazabilidad de origen provisional Codex y GPT-Pro como antecedente historico.
 
 ## structure_rules
 
@@ -829,6 +845,8 @@
 - Alinear el formato al producto solicitado por la planeación semanal.
 - Alinear el formato final al producto pedido en planeacion semanal.
 - Alinear el formato al producto exigido por la planeacion semanal.
+- Alinear formato al producto pedido por la planeacion semanal.
+- Organizar en: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
 
 ## activity_rules
 
@@ -963,6 +981,9 @@
 - Mantener postura argumentada del estudiante en todo el producto.
 - Evitar reutilizar conclusiones especificas de actividad-1.
 - Ajustar el entregable a la instruccion docente vigente.
+- Ajustar actividad-2 solo a instrucción docente disponible.
+- Mantener integridad académica en todo el producto.
+- Incluir postura argumentada del estudiante y evitar texto solo descriptivo.
 
 ## quality_gates
 
@@ -1050,6 +1071,9 @@
 - Confirmar correspondencia entre producto entregable y consigna local.
 - Aplicar solo union-dedupe lossless; prohibido recorte destructivo.
 - Confirmar estructura minima completa antes de aplicar aguas abajo.
+- Confirmar que cada afirmación sustantiva tenga respaldo o marca de [supuesto].
+- Confirmar respaldo o marca de [supuesto] en cada afirmacion sustantiva.
+- Normalizar respuestas heredadas no estructuradas antes de reutilizarlas.
 
 ## latex_rules
 
@@ -1255,6 +1279,13 @@
 - Confirmar nombres canonicos de archivos por caracteres anomalos detectados en README.
 - Corregir caracteres anomalos en rutas o nombres de archivo antes de compilar.
 - No renombrar claves BibTeX ya usadas sin necesidad justificada.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y nombres de archivo.
+- Verificar nombres canónicos de archivos por caracteres anómalos en rutas.
+- Usar codificacion correcta en espanol en .tex y .bib.
+- [supuesto] .bib canonico esperado: filosofia-del-derecho.bib.
+- No renombrar claves ya citadas sin justificacion editorial.
+- Evitar comandos no estandar sin necesidad documentada.
+- Usar acentos y codificacion espanola correctos en .tex y .bib.
 
 ## bibliography_rules
 
@@ -1439,6 +1470,9 @@
 - Tratar filosofia-del-derecho-clean.bib como complemento tematico [supuesto] hasta confirmar consigna.
 - Tratar filosofia-del-derecho-clean.bib como complemento tematico de Semana 7, no como reemplazo automatico [supuesto].
 - Tratar filosofia-del-derecho-clean.bib como complemento tematico de Semana 7 [supuesto], no reemplazo automatico.
+- Mantener metadatos minimos: autor, titulo, año y fuente/editorial o URL.
+- [supuesto] filosofia-del-derecho-clean.bib es temático y no sustituye automáticamente al .bib canónico.
+- [supuesto] filosofia-del-derecho-clean.bib corresponde a tema puntual y funciona como complemento, no reemplazo automatico.
 
 ## propagation_hints
 
@@ -1976,6 +2010,16 @@
 - Aplicar analogia controlada: conservar esqueleto editorial y adaptar contenido a consigna local.
 - Mantener traza historica de fuentes provisionales sin convertirlas en canonicas.
 - Aplicar estrategia progresiva por analogia controlada sin introducir especulacion.
+- Evitar copiar redaccion literal, conclusiones o bibliografia exclusiva del hermano.
+- Evitar traspasar conclusiones o bibliografía exclusiva de una actividad a otra.
+- Registrar herencias provisionales como antecedente histórico, no como verdad final.
+- Propagar en recursion solo tras validar JSON y estructura.
+- Aplicar analogia controlada: reforzar forma y controles, no contenido local no confirmado.
+- Aplicar normalizacion manual si reaparecen salidas no estructuradas en ciclo 2.
+- Registrar en cada ciclo refuerzos sin regresion.
+- Transferir a nodos hermanos solo patrones institucionales y argumentativos.
+- Registrar ciclo 2 con normalizacion manual si reaparecen salidas no estructuradas.
+- Mantener reglas validadas sin regresion.
 
 ## open_questions
 
@@ -2298,6 +2342,10 @@
 - Confirmar si actividad-2 reutiliza bibliografia existente o requiere seleccion propia.
 - Supuesto: datos de Actividad 1 en documentsubtitle no deben heredarse como metadato de Actividad 2.
 - Confirmar si referencias de interpretacion juridica aplican a actividad-2 o solo a Semana 7.
+- Confirmar estilo de citacion obligatorio institucional. [supuesto: no definido]
+- Confirmar nombre canonico final del archivo .bib en entorno local.
+- Confirmar nombre canonico final del .bib de asignatura ante tokens sin expandir.
+- Confirmar fuentes obligatorias locales de la semana correspondiente.
 
 ## editorial_dna
 
@@ -2358,10 +2406,10 @@
 - Sustentar afirmaciones con fuentes verificables y cita explicita.
 
 ### grafo_de_conocimiento
-- Conceptos: 1684
+- Conceptos: 1729
 - Citas: 17
-- Relaciones reforzadas: 1207
-- Evidencias: 803
+- Relaciones reforzadas: 1235
+- Evidencias: 829
 
 ## adn_tex
 

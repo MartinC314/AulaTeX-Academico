@@ -379,6 +379,16 @@
 - Se consolida refuerzo lateral desde actividad 1 hacia actividad 6 con deduplicacion sin perdida.
 - Se conserva regla critica: no propagar contenido no estructurado sin normalizacion previa.
 - Se mantiene trazabilidad de supuestos cuando falte consigna local de actividad 6.
+- Se consolida refuerzo lateral de Actividad 1 a Actividad 6 con union-dedupe sin perdida.
+- Se refuerza uso de supuestos marcados cuando falte consigna local.
+- Se mantiene regla critica: normalizar salidas no estructuradas antes de propagar.
+- Se evita traslado de conclusiones o bibliografia exclusiva de un hermano a otro sin confirmacion local.
+- Se consolida refuerzo lateral desde Actividad 1 a Actividad 6 con union-dedupe sin perdida.
+- Se transfieren solo patrones reutilizables y no contenido conclusivo especifico de un hermano.
+- Supuesto: falta consigna textual de Actividad 6; se conserva estructura base verificable.
+- Se mantienen ejes editoriales estables: problema, conceptos o normas, producto, analisis propio, conclusion juridica.
+- Se conserva compresion lossless por union y deduplicacion de reglas vigentes.
+- Supuesto: falta consigna textual de Actividad 6; se transfiere estructura base reusable.
 
 ## identity_rules
 
@@ -496,6 +506,11 @@
 - Reconocer ubicacion curricular al contextualizar la actividad: semestre 1, bloque 2, obligatoria, 8 creditos.
 - Mantener regla de no regresion: no eliminar reglas utiles previas.
 - Citar ubicacion curricular solo con fuente institucional verificada.
+- Alinear toda entrega a Licenciatura en Derecho, Filosofia del Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Citar contexto curricular: semestre 1, bloque 2, obligatoria, 8 creditos cuando aplique.
+- Alinear cada producto a Licenciatura en Derecho y asignatura Filosofia del Derecho.
+- Citar contexto curricular cuando aplique: semestre 1, bloque 2, obligatoria, 8 creditos.
+- Conservar regla de no regresion editorial en cada ciclo de consolidacion.
 
 ## structure_rules
 
@@ -613,6 +628,9 @@
 - Alinear el producto final a la consigna semanal de Actividad 6.
 - Estructurar producto academico en: problema, marco conceptual-normativo, analisis propio y cierre.
 - Alinear formato final al producto exigido por planeacion semanal.
+- Estructurar actividades con: problema, conceptos o marco normativo, desarrollo del producto, analisis propio y conclusion.
+- Cerrar con conclusion juridica derivada del desarrollo y transferible a practica.
+- Entregar JSON parseable en tareas de memoria editorial.
 
 ## activity_rules
 
@@ -772,6 +790,8 @@
 - Distinguir de forma explicita sintesis de fuente y postura propia.
 - Explicitar el problema juridico que activa la respuesta.
 - Incluir conclusion juridica argumentada y transferible.
+- Evitar entregas solo descriptivas o sin anclaje juridico.
+- Evitar entregas solo descriptivas sin criterio juridico.
 
 ## quality_gates
 
@@ -914,6 +934,11 @@
 - No propagar bibliografia exclusiva de un hermano sin evidencia de uso local.
 - Aplicar deduplicacion lossless por union.
 - Validar correspondencia entre producto y consigna local de actividad 6.
+- Revisar y normalizar toda respuesta no estructurada antes de propagar.
+- No eliminar reglas vigentes durante consolidacion; solo agregar mejoras verificables.
+- Validar que conclusion derive del desarrollo.
+- Revisar que la conclusion no sea decorativa y derive del analisis.
+- Comprobar consistencia entre citas en texto y archivo .bib activo.
 
 ## latex_rules
 
@@ -1080,6 +1105,8 @@
 - Supuesto: el .bib canonico esperado es filosofia-del-derecho.bib hasta confirmacion final.
 - Usar codificacion y acentos correctos en español.
 - Resolver tokens sin expandir tipo $(@{...}.Slug) en README y referencias internas.
+- Corregir nombres/rutas con caracteres anomalos antes de compilar.
+- Compilar sin errores criticos, citas rotas ni referencias rotas.
 
 ## bibliography_rules
 
@@ -1241,6 +1268,13 @@
 - Conservar metadatos minimos: autor, titulo, ano, fuente editorial o nota, y URL cuando exista.
 - No asumir automaticamente que un .bib depurado de otra semana aplica a Actividad 6 sin confirmacion de consigna.
 - Supuesto: clean.bib esta orientado a actividad de interpretacion juridica (Semana 7).
+- Priorizar fuentes institucionales UnADM y juridicas oficiales/academicas.
+- Supuesto: filosofia-del-derecho-clean.bib puede corresponder a una actividad tematica y no sustituye automaticamente el .bib canonico.
+- Conservar metadatos minimos: autor, titulo, año, editor o nota, URL si existe.
+- No asumir que filosofia-del-derecho-clean.bib aplica a todas las actividades.
+- Supuesto: clean.bib esta orientado a interpretacion juridica (Semana 7) salvo confirmacion distinta.
+- No transferir bibliografia exclusiva de una actividad hermana como obligatoria en otra.
+- Supuesto: filosofia-del-derecho-clean.bib puede ser corpus tematico puntual y no canon general.
 
 ## propagation_hints
 
@@ -1641,6 +1675,20 @@
 - Conservar alertas historicas de salidas no estructuradas para nodos con herencia riesgosa.
 - Conservar advertencias historicas de salidas no estructuradas en nodos con herencia provisional.
 - Cuando falte dato local, propagar estructura base y pregunta abierta.
+- Transferir solo patrones reutilizables; no copiar redaccion ni conclusiones especificas.
+- Mantener union-dedupe lossless en saltos laterales.
+- Transferir solo patrones reutilizables, no redaccion literal entre hermanos.
+- Aplicar union-dedupe lossless sin recorte de reglas utiles.
+- Cuando falte dato local, propagar estructura base y abrir pregunta.
+- Transferir a nodos hermanos solo identidad, estructura, calidad y patrones argumentativos reutilizables.
+- No propagar redaccion literal, conclusiones especificas ni bibliografia exclusiva de otra actividad.
+- Mantener advertencia historica sobre salidas no estructuradas heredadas.
+- Aplicar normalizacion manual cuando aparezcan respuestas no parseables.
+- Agregar mejoras solo si son verificables en README, programa analitico o artefactos locales.
+- Propagar recursivamente solo reglas reutilizables de identidad, estructura y calidad.
+- Aplicar union-dedupe lossless en cada salto lateral.
+- No copiar conclusiones ni redaccion literal entre actividades hermanas.
+- Elevar a verificado solo lo confirmado por documentos locales.
 
 ## open_questions
 
@@ -1874,6 +1922,11 @@
 - Confirmar tipo de producto principal requerido en Actividad 6: reporte, presentacion u otro.
 - Confirmar si se exige formato juridico adicional de citacion ademas de BibTeX.
 - Confirmar si tema local de actividad 6 corresponde a interpretacion juridica o a otro eje.
+- Confirmar si Actividad 6 exige corpus de interpretacion juridica de Semana 7.
+- Confirmar si existe formato juridico de citacion adicional a BibTeX.
+- Confirmar nombre canonico final del .bib por token Slug no resuelto en documentos base.
+- Confirmar producto principal exigido: reporte, presentacion u otro.
+- Confirmar si el corpus de interpretacion juridica aplica formalmente a Actividad 6.
 
 ## editorial_dna
 
@@ -1934,10 +1987,10 @@
 - Adaptar redaccion al objetivo especifico de Actividad 6 sin romper ejes base.
 
 ### grafo_de_conocimiento
-- Conceptos: 1628
-- Citas: 37
-- Relaciones reforzadas: 745
-- Evidencias: 681
+- Conceptos: 1675
+- Citas: 38
+- Relaciones reforzadas: 776
+- Evidencias: 709
 
 ## adn_tex
 

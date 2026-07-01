@@ -55,6 +55,16 @@
 - Origen declarado: Filosofia del Derecho actividad 1, sin reglas nuevas verificables transferibles en este ciclo.
 - Ubicacion curricular verificada: semestre 1, bloque 1, obligatoria, 8 creditos.
 - README y programa contienen placeholders de Slug y errores de render en nombres de archivo [supuesto].
+- Se consolida memoria transversal minima para Historia del Derecho en Mexico desde reglas estables de Actividad 1 de Filosofia del Derecho.
+- Se preserva identidad UnADM y ubicacion curricular local verificable: semestre 1, bloque 1, obligatoria, 8 creditos.
+- Se refuerza estructura reusable de cinco ejes: problema, conceptos/fuentes, producto, analisis propio y conclusion juridica.
+- Se mantiene gate critico: bloquear propagacion de salidas no JSON parseables y normalizar antes de reutilizar.
+- Se conserva estrategia conservadora: no transferir contenido tematico especifico de Filosofia sin evidencia local.
+- Se consolida sincronizacion transversal conservadora desde Actividad 1 de Filosofia del Derecho hacia la materia Historia del Derecho en Mexico.
+- Se preservan reglas estables: identidad UnADM, cinco ejes editoriales, normalizacion estructurada y trazabilidad bibliografica.
+- Se mantiene bloqueo de propagacion ante salidas no JSON parseables y normalizacion previa obligatoria.
+- Se evita transferencia de contenido tematico especifico entre materias no equivalentes sin evidencia local.
+- Se refuerza base minima del destino con reglas reutilizables y vacios locales abiertos.
 
 ## identity_rules
 
@@ -85,6 +95,16 @@
 - Mantener coursecode local LDE-S1B1 salvo confirmacion oficial contraria [supuesto].
 - Usar nombre oficial/local de materia: Historia del Derecho en Mexico.
 - Conservar fuente curricular local: UnADM/assets-unadm/malla-curricular-derecho-unadm.pdf.
+- Mantener tono institucional UnADM en portada, metadatos y redaccion.
+- Usar nombre oficial local de la materia: Historia del Derecho en Mexico.
+- Conservar contexto curricular local verificado desde README y programa analitico.
+- Tratar fuentes heredadas no verificadas como provisionales.
+- Marcar como [supuesto] todo dato no visible en la consigna local.
+- Mantener identidad institucional UnADM en tono, portada, metadatos y redaccion.
+- Conservar contexto curricular local: semestre 1, bloque 1, obligatoria, 8 creditos.
+- Usar carpeta de materia como punto de entrada canonico.
+- Marcar como [supuesto] cualquier dato no visible en consigna o fuente local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
 
 ## structure_rules
 
@@ -100,6 +120,16 @@
 - Conservar subcarpeta referencias-historia-del-derecho-en-mexico para apoyo documental.
 - Corregir placeholders de Slug en README y programa antes de automatizar.
 - Alinear cada entrega a cinco ejes: problema, conceptos/fuentes, producto, analisis propio, conclusion transferible.
+- Usar la carpeta de materia como entrada canonica.
+- Iniciar cada entrega con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear formato final al producto solicitado en planeacion semanal.
+- Iniciar con encuadre breve del problema juridico o social.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el formato al producto solicitado en planeacion semanal.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Aplicar compresion por union-dedupe sin recortar reglas utiles previas.
 
 ## activity_rules
 
@@ -114,6 +144,15 @@
 - Adaptar el formato al producto solicitado: reporte, presentacion o visual.
 - Mantener integridad academica y citas verificables en cada actividad.
 - Adaptar formato al producto solicitado: reporte, presentacion o visual.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Incluir postura argumentada del estudiante; evitar resumen solo descriptivo.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- No asumir fuentes o consignas de semanas distintas sin confirmacion.
+- Adaptar salida a reporte, presentacion o producto visual segun consigna.
+- Usar conceptos, normas, doctrina o datos pertinentes al problema tratado.
+- No asumir fuentes de semanas posteriores sin validacion de consigna local.
+- No mezclar contenido de Filosofia del Derecho sin evidencia local verificable.
 
 ## quality_gates
 
@@ -131,6 +170,14 @@
 - Revisar placeholders de Slug antes de compilar o citar.
 - No aplicar contenido heredado si no es verificable en el destino.
 - Normalizar manualmente salidas de ciclos con fallo parseable antes de reutilizacion automatica.
+- Bloquear propagacion si la salida no es JSON parseable.
+- Validar estructura minima completa antes de aplicar aguas abajo.
+- Confirmar que cada afirmacion sustantiva tenga respaldo o marca [supuesto].
+- Validar consistencia entre citas en texto y archivo .bib.
+- Aplicar compresion lossless por union-dedupe sin eliminar reglas utiles previas.
+- Revisar y normalizar respuestas no estructuradas antes de reutilizarlas.
+- Verificar correspondencia del producto con la consigna de la actividad.
+- Revisar placeholders de Slug y errores de render en nombres de archivo antes de automatizar.
 
 ## latex_rules
 
@@ -149,6 +196,12 @@
 - Conservar metadatos: documenttitle, documentsubtitle, documentsubject, coursename y coursecode.
 - Mantener campos institucionales; solo actualizar valores concretos por actividad.
 - Mantener coursecode local LDE-S1B1 salvo confirmacion oficial contraria [supuesto].
+- Usar plantillas locales de reporte o presentacion segun consigna.
+- Conservar metadatos institucionales y curriculares; actualizar solo campos variables de actividad.
+- Usar codificacion y acentos correctos en espanol en .tex y .bib.
+- Resolver placeholders de Slug sin expandir antes de compilar o citar.
+- Compilar sin errores criticos ni referencias rotas.
+- Usar reporte-historia-del-derecho-en-mexico.tex como base de reportes.
 
 ## bibliography_rules
 
@@ -165,6 +218,13 @@
 - No propagar bibliografia de Filosofia del Derecho sin consulta efectiva.
 - Agregar solo fuentes realmente consultadas.
 - No inventar referencias.
+- Usar historia-del-derecho-en-mexico.bib como repositorio local canonico.
+- Priorizar fuentes institucionales UnADM y fuentes juridicas verificables.
+- Registrar en .bib solo fuentes realmente consultadas.
+- Conservar metadatos minimos: autor, titulo, ano, fuente/editorial o URL.
+- Conservar entradas institucionales UnADM y malla curricular.
+- Distinguir bibliografia base de bibliografia especifica por actividad.
+- No propagar bibliografia de Filosofia del Derecho sin consulta efectiva local.
 
 ## propagation_hints
 
@@ -211,6 +271,18 @@
 - Ciclo 21 necesita normalizacion manual si se reutiliza.
 - Ciclo 22: mantener validacion de parseo y normalizacion manual si falla [supuesto].
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente solo reglas transversales estables, no redaccion literal.
+- Priorizar identidad, gates de calidad y patron argumentativo de cinco ejes.
+- No propagar datos curriculares especificos a nodos laterales no equivalentes.
+- Si un nodo destino esta incompleto, crear memoria minima y abrir vacios locales.
+- Mantener alerta historica de salidas no parseables en ciclos tempranos.
+- Propagar recursivamente solo reglas transversales estables y verificables.
+- Priorizar identidad, estructura reusable, quality gates y grafo conceptual.
+- Evitar transferir redaccion literal o contenido tematico de otra materia.
+- Mantener estrategia progresiva y conservadora: agregar mejoras verificables sin regresion.
+- Reutilizar alerta historica de no-JSON parseable en nodos superiores y laterales.
+- No propagar datos curriculares especificos de esta materia a materias hermanas.
+- Si un nodo destino esta vacio, instalar cerebro minimo con gates y vacios abiertos.
 
 ## open_questions
 
@@ -235,3 +307,85 @@
 - Corregir placeholder de Slug en README y programa: $(@{Name=...}.Slug).bib.
 - Corregir placeholders de Slug en README y programa, incluido $(@{Name=...}.Slug).bib.
 - Verificar y corregir errores de render en README: eporte y eferencias [supuesto].
+- Confirmar acentuacion oficial institucional de Mexico/México en nombres visibles.
+- Confirmar si LDE-S1B1 es codigo oficial o solo de plantilla [supuesto].
+- Corregir artefactos de render en README (eporte/eferencias) [supuesto].
+- Confirmar consignas y rubricas por actividad para granularidad local.
+- Confirmar acentuacion oficial institucional: Mexico o Mexico/México en nombre de materia.
+- Confirmar si LDE-S1B1 es codigo oficial o etiqueta local de plantilla.
+- Definir nombre oficial de figura docente para plantillas.
+- Corregir render anomalo en README: eporte y eferencias [supuesto].
+- Confirmar fuente operativa definitiva para reemplazar referencias provisionales a motores.
+- Confirmar consignas y rubricas por actividad para ajustar profundidad argumentativa.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad institucional UnADM
+- Cinco ejes editoriales
+- Integridad academica
+- Trazabilidad bibliografica
+- Conclusion juridica transferible
+- Se consolida memoria transversal minima para Historia del Derecho en Mexico desde reglas estables de Actividad 1 de Filosofia del Derecho
+- Se preserva identidad UnADM y ubicacion curricular local verificable: semestre 1, bloque 1, obligatoria, 8 creditos
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Tratar la carpeta de materia como punto de entrada canonico.
+- Alinear cada entrega a los 5 ejes: problema, conceptos/fuentes, producto, analisis propio, conclusion transferible.
+- Mantener coherencia entre README, programa analitico, .tex y .bib.
+- Registrar fuentes especificas de actividad en historia-del-derecho-en-mexico.bib.
+- Alinear cada entrega a cinco ejes: problema, conceptos y fuentes, producto, analisis propio, conclusion transferible.
+- Transformar planeacion semanal en reportes, presentaciones o productos visuales segun se solicite.
+
+### identidad_estilistica
+- Frases directas y verificables.
+- Separacion explicita entre hechos y supuestos.
+- Citas trazables y consistentes con .bib.
+- Mantener tono institucional UnADM en portada, metadatos y redaccion.
+- Usar nombre oficial local de la materia: Historia del Derecho en Mexico.
+- Conservar contexto curricular local verificado desde README y programa analitico.
+- Tratar fuentes heredadas no verificadas como provisionales.
+- Marcar como [supuesto] todo dato no visible en la consigna local.
+- Mantener identidad institucional UnADM en portada, metadatos y redaccion.
+- Usar nombre oficial de materia: Historia del Derecho en Mexico.
+- Conservar datos curriculares: semestre 1, bloque 1, obligatoria, 8 creditos.
+- Usar nombre local de materia: Historia del Derecho en Mexico.
+
+### patrones_argumentativos
+- Problema inicial breve.
+- Marco conceptual y normativo pertinente.
+- Analisis propio con postura explicita.
+- Contraste entre fuentes cuando aplique.
+- Cierre con implicacion juridica concreta.
+- Usar la carpeta de materia como entrada canonica.
+- Iniciar cada entrega con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear formato final al producto solicitado en planeacion semanal.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Incluir postura argumentada del estudiante; evitar resumen solo descriptivo.
+
+### grafo_de_conocimiento
+- Conceptos: 101
+- Citas: 2
+- Relaciones reforzadas: 23
+- Evidencias: 36
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde/reporte-historia-del-derecho-en-mexico.tex`
+- Caracteres LaTeX preservados: 4203
+- Bloques/parrafos indexados: 20
+- Claves citadas: ninguna
+- Claves sin referencia: ninguna

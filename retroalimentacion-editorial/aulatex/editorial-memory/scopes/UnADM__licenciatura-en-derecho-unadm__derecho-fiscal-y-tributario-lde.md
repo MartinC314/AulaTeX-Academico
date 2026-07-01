@@ -58,6 +58,41 @@
 - Consolidar ciclo 20 sin regresion y sin recorte.
 - Detectada evidencia local de README y programa analitico con slug .bib sin expandir que requiere normalizacion.
 - Consolidar ciclo 22 sin regresion y sin recorte.
+- Se sincroniza memoria transversal desde actividad de Filosofía del Derecho hacia materia de Derecho fiscal y tributario.
+- Se preservan reglas estables de identidad UnADM, estructura argumentativa y control de calidad.
+- Se refuerza compresión lossless por unión-deduplicación y política de no regresión.
+- Se mantiene obligación de normalizar salidas no estructuradas antes de propagar.
+- Se agregan mejoras verificables del contexto local: semestre 6, bloque 1, obligatoria, 8 créditos, y .bib local.
+- Se consolida memoria editorial de materia para Derecho fiscal y tributario.
+- Se sincronizan abstracciones transversales desde Filosofía del Derecho sin transferir contenido específico.
+- Se conserva identidad UnADM, Licenciatura en Derecho y estructura argumentativa jurídica.
+- Se mantiene compresión lossless por unión y deduplicación.
+- Se refuerza normalización JSON antes de cualquier propagación recursiva.
+- Se preservan mejoras locales verificables: semestre 6, bloque 1, obligatoria, 8 créditos y .bib local.
+- Se identifican errores locales de rutas, slug dinámico y LaTeX truncado.
+- Se bloquea la invención de fuentes y se exige trazabilidad cita-.bib.
+- Se consolida sincronización transversal sin regresión entre Filosofía del Derecho y Derecho fiscal y tributario.
+- Se preservan reglas estables: identidad UnADM, normalización JSON, estructura argumentativa y trazabilidad bibliográfica.
+- Se aplica compresión lossless por unión y deduplicación.
+- Se mantiene política de marcar supuestos cuando falte consigna local verificable.
+- Se refuerza corrección de rutas y tokens sin expandir en README y programa analítico.
+- Se preserva identidad UnADM y Licenciatura en Derecho.
+- Se confirma contexto local: semestre 6, bloque 1, obligatoria, 8 créditos.
+- Se mantiene compresión por unión y deduplicación sin regresión.
+- Se normalizan reglas heredadas no JSON antes de propagar.
+- Se conserva enfoque: problema, conceptos, normas, evidencia, análisis propio y conclusión jurídica.
+- Se refuerza trazabilidad entre README, programa analítico, .tex y .bib local.
+- Se consolida sincronizacion transversal con estrategia conservadora y sin regresion.
+- Se mantiene compresion lossless por union y deduplicacion.
+- Se prioriza normalizacion JSON antes de cualquier propagacion recursiva.
+- Se refuerza el nucleo reusable: problema, conceptos o normas, evidencia, analisis propio y conclusion juridica.
+- Se evita transferencia literal de contenido de Filosofia del Derecho hacia Derecho fiscal y tributario.
+- Se conservan mejoras locales verificables del destino: semestre 6, bloque 1, obligatoria, 8 creditos y .bib local.
+- Se consolida sincronización transversal desde actividad de Filosofía del Derecho hacia materia de Derecho fiscal y tributario.
+- Se preservan reglas estables UnADM y se deduplican sin pérdida.
+- Se mantiene normalización obligatoria de salidas no estructuradas antes de propagación.
+- Se refuerzan ejes editoriales reutilizables: problema, conceptos/normas, evidencia, análisis propio y conclusión jurídica.
+- Se incorporan solo ajustes verificables del contexto local: semestre 6, bloque 1, obligatoria, 8 créditos y .bib local.
 
 ## identity_rules
 
@@ -78,6 +113,39 @@
 - Fuente provisional: Codex desde Actividad 1.
 - Fuente provisional: Auto (model-router) desde Actividad 1.
 - Fuente provisional: Claude Foundry desde Actividad 1.
+- Conservar identidad institucional UnADM en tono, portada y formato.
+- Vincular la materia a Licenciatura en Derecho, semestre 6, bloque 1, obligatoria, 8 créditos.
+- Usar la carpeta de asignatura como punto de entrada canónico.
+- Marcar como supuesto cualquier dato no visible en consigna o rúbrica.
+- Tratar fuentes heredadas no verificadas como provisionales hasta validación local.
+- Citar malla-curricular-derecho-unadm.pdf solo para ubicación curricular.
+- Vincular la materia a Licenciatura en Derecho.
+- Usar datos locales: Derecho fiscal y tributario, semestre 6, bloque 1, obligatoria, 8 créditos.
+- Usar README de la materia como punto de entrada canónico.
+- Usar programa analítico local como guía editorial.
+- Marcar como supuesto cualquier dato no visible en consigna, rúbrica o fuente local.
+- Tratar fuentes heredadas no específicas como provisionales hasta validación local.
+- Verificar datos personales antes de entrega final.
+- Verificar figura docente antes de entrega final.
+- Supuesto: autor y matrícula provienen de plantilla local y requieren confirmación antes de compartir.
+- Conservar identidad institucional UnADM en tono, formato y portada.
+- Usar contexto curricular local verificado: Derecho fiscal y tributario, semestre 6, bloque 1, obligatoria, 8 créditos.
+- Usar la carpeta de asignatura como entrada canónica.
+- Marcar como supuesto todo dato no visible en consigna o rúbrica.
+- Tratar como provisionales las fuentes heredadas no verificadas localmente.
+- Verificar datos personales y figura docente antes de entrega.
+- Vincular la materia a la Licenciatura en Derecho.
+- Citar la malla curricular solo para ubicación curricular.
+- Supuesto: autor base en plantilla: Martin Jonathan de la Cruz; matrícula ES2611202040.
+- Fuente provisional heredada: Codex desde ingeniería en sistemas computacionales.
+- Fuente provisional heredada: GPT-Pro desde Actividad 1.
+- Fuente provisional heredada: Auto model-router desde Actividad 1.
+- Mantener identidad institucional UnADM en tono, portada y formato.
+- Vincular la materia destino a Licenciatura en Derecho, semestre 6, bloque 1, obligatoria, 8 creditos.
+- Usar la carpeta de asignatura como entrada canonica editorial.
+- Marcar como supuesto todo dato no visible en consigna o rubrica.
+- Tratar fuentes heredadas no verificadas como provisionales hasta validacion local.
+- Vincular la materia a Licenciatura en Derecho: semestre 6, bloque 1, obligatoria, 8 créditos.
 
 ## structure_rules
 
@@ -92,6 +160,37 @@
 - Corregir nombres de rutas truncadas en README antes de publicar.
 - Corregir rutas truncadas en README antes de publicar.
 - Corregir rutas truncadas o rotas en README antes de publicar.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear el producto al formato solicitado por planeación semanal.
+- Cerrar con conclusión jurídica transferible a práctica profesional.
+- Mantener separación entre reporte .tex, presentación .tex y bibliografía .bib local.
+- Separar conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear cada entrega con el producto solicitado por la planeación semanal.
+- Usar estructura local: README, programa analítico, reporte, presentación, .bib y referencias.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Adaptar el formato a reporte, presentación o producto visual según consigna.
+- Resolver slug dinámico sin expandir antes de referenciar archivos.
+- Abrir con encuadre breve del problema jurídico o social.
+- Separar en secciones: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear el producto al formato pedido por planeación semanal.
+- Mantener separación entre reporte .tex, presentación .tex y .bib local.
+- Usar README de la materia como entrada canónica.
+- Usar programa analítico como guía editorial de la materia.
+- Integrar conceptos, normas, doctrina o datos pertinentes.
+- Mantener estructura local: reporte, presentación, bibliografía, programa analítico y carpeta de referencias.
+- Transformar la planeación en reporte, presentación o producto visual según consigna.
+- Corregir slug dinámico sin expandir en README y programa analítico.
+- Iniciar con encuadre breve del problema juridico o social.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Alinear el producto al formato solicitado por planeacion semanal.
+- Mantener separacion entre reporte .tex, presentacion .tex y bibliografia .bib local.
+- Usar README y programa analitico como guias de consistencia editorial.
+- Separar secciones en: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
+- Alinear el producto al formato pedido por la planeación semanal.
+- Corregir rutas o nombres truncados en README y programa analítico antes de publicar.
 
 ## activity_rules
 
@@ -101,6 +200,29 @@
 - Incluir conceptos, normas, doctrina o datos pertinentes.
 - Desarrollar el producto solicitado por la planeacion.
 - Vincular argumentos fiscales y tributarios con aplicacion profesional.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- Incluir postura argumentada del estudiante; evitar texto solo descriptivo.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- No asumir fuentes de otras semanas sin confirmación de consigna.
+- Vincular argumentos fiscales y tributarios con aplicación profesional concreta.
+- Incluir problema jurídico o social explícito al inicio.
+- Incluir postura argumentada del estudiante.
+- Evitar entregas solo descriptivas.
+- Distinguir marco conceptual, marco normativo y análisis propio.
+- Ajustar profundidad argumentativa a la rúbrica específica cuando exista.
+- No asumir fuentes de semanas distintas sin confirmación en consigna.
+- Vincular el análisis fiscal-tributario con aplicación profesional concreta.
+- Evitar entregas solo descriptivas o de resumen.
+- Verificar que el producto corresponda a la consigna de la actividad.
+- Distinguir análisis normativo, doctrinal y aplicado.
+- Marcar como supuesto cualquier vacío de consigna.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Incluir postura argumentada del estudiante; evitar entrega solo descriptiva.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- No asumir fuentes de otras semanas sin confirmacion de consigna.
+- Vincular argumentos fiscales y tributarios con aplicacion profesional concreta.
+- Confirmar que el producto final corresponde a la consigna activa.
+- Incluir problema explícito al inicio.
 
 ## quality_gates
 
@@ -113,6 +235,32 @@
 - Verificar integridad de .tex para compilacion y cierre de entornos truncados.
 - Corregir rutas con caracteres anomalos antes de publicar.
 - Corregir rutas o slugs rotos antes de publicar.
+- Bloquear propagación si la salida no es JSON parseable.
+- Revisar estructura mínima completa antes de aplicar aguas abajo.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca de supuesto.
+- Validar consistencia entre citas en texto y archivo .bib.
+- Verificar correspondencia del producto con la consigna de la actividad local.
+- Corregir placeholders, rutas truncadas y tokens sin expandir en README y programa analítico.
+- Revisar respuestas no estructuradas antes de reutilizarlas.
+- Verificar consistencia entre metadatos de portada y programa analítico.
+- Confirmar semestre, bloque, tipo y créditos contra malla curricular local.
+- Comprobar que toda cita usada tenga entrada bibliográfica verificable.
+- Corregir rutas, caracteres anómalos y slugs rotos antes de publicar.
+- Verificar integridad de .tex para compilación y cierre de entornos.
+- Bloquear entrega final si el producto no corresponde a la consigna.
+- Revisar y normalizar respuestas no estructuradas antes de reutilizarlas.
+- Verificar que no existan placeholders o tokens sin resolver en README, .tex o .bib.
+- Revisar estructura mínima completa antes de reutilizar reglas.
+- Confirmar semestre, bloque, tipo y créditos contra la malla curricular local.
+- Corregir rutas, slugs y caracteres anómalos antes de publicar.
+- Evitar regresiones respecto de reglas útiles previas.
+- Bloquear propagacion si la salida no es JSON parseable.
+- Revisar estructura minima completa antes de aplicar aguas abajo.
+- Corregir placeholders, rutas truncadas o slugs sin expandir antes de publicar.
+- Validar integridad de compilacion .tex sin entornos rotos ni referencias quebradas.
+- Normalizar respuestas no estructuradas antes de reutilizarlas.
+- Verificar correspondencia del producto con la consigna local de la actividad.
+- Revisar placeholders o tokens sin resolver en README, .tex y .bib.
 
 ## latex_rules
 
@@ -126,6 +274,36 @@
 - Corregir captura incompleta del bloque authortable antes de compilar.
 - Corregir bloque authortable truncado antes de compilar.
 - Cerrar correctamente todos los entornos tabular y el documento.
+- Usar codificación y acentos correctos en español en .tex y .bib.
+- Mantener claves BibTeX estables para evitar roturas de compilación.
+- Compilar sin errores críticos y sin referencias rotas.
+- Evitar comandos no estándar sin justificación editorial.
+- Completar metadatos de portada y bloque authortable antes de compilar.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analítico.
+- Mantener variables institucionales y de curso consistentes en el preámbulo.
+- Actualizar título, subtítulo y actividad antes de cada entrega.
+- Corregir nombres de archivos truncados antes de referenciarlos.
+- Cerrar correctamente entornos tabular y documento.
+- Mantener claves BibTeX estables para evitar referencias rotas.
+- Usar español y formato carta según plantilla base local.
+- Mantener claves BibTeX estables para evitar roturas.
+- Compilar sin errores críticos ni referencias rotas.
+- Actualizar título, subtítulo y actividad real antes de entregar.
+- Cerrar todos los entornos LaTeX truncados antes de compilar.
+- Corregir rutas truncadas en README antes de publicar.
+- Usar español y formato carta según plantilla base.
+- Reemplazar título y subtítulo base por los de la actividad real.
+- Verificar nombres de archivos del README antes de referenciarlos.
+- Supuesto: archivo .bib canónico local es derecho-fiscal-y-tributario.bib.
+- Usar codificacion y acentos correctos en espanol en .tex y .bib.
+- Mantener claves BibTeX estables para evitar roturas de compilacion.
+- Actualizar titulo, subtitulo y actividad real en cada entrega.
+- Conservar portada institucional UnADM y datos curriculares correctos.
+- Corregir bloque authortable truncado y cerrar entornos tabular.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analitico.
+- Actualizar título, subtítulo y actividad real en cada entrega.
+- Corregir tokens sin expandir tipo $(@{...}.Slug) en README y programa analítico.
+- Cerrar correctamente entornos truncados en tablas y documento.
 
 ## bibliography_rules
 
@@ -135,6 +313,33 @@
 - Usar como base unadmSitioWeb y unadmMallaDerecho2024 cuando sean pertinentes.
 - Citar la malla curricular local solo para datos curriculares.
 - Agregar doctrina, legislacion o jurisprudencia solo si la actividad lo exige y la fuente es verificable.
+- Priorizar fuentes institucionales UnADM y materiales jurídicos verificables.
+- Registrar fuentes específicas por actividad en derecho-fiscal-y-tributario.bib.
+- No inventar referencias; usar solo obras realmente consultables.
+- Conservar metadatos mínimos: autor, título, año y fuente editorial o URL.
+- Distinguir bibliografía base de bibliografía específica de actividad.
+- Registrar fuentes específicas de actividad en derecho-fiscal-y-tributario.bib.
+- Usar unadmSitioWeb y unadmMallaDerecho2024 cuando sean pertinentes.
+- Agregar doctrina, legislación o jurisprudencia solo si la actividad lo exige.
+- No inventar referencias.
+- Usar solo obras realmente consultables.
+- Marcar fuente pendiente cuando falte dato verificable.
+- Verificar correspondencia entre citas en texto y entradas .bib.
+- Priorizar fuentes institucionales UnADM y normativa verificable.
+- Conservar metadatos mínimos: autor, título, año y fuente/editorial o URL.
+- Priorizar materiales jurídicos verificables cuando la actividad lo requiera.
+- Conservar metadatos mínimos: autor, título, año, fuente editorial o URL.
+- Agregar doctrina, legislación o jurisprudencia solo si la actividad lo exige y la fuente es verificable.
+- No asumir bibliografía de Filosofía del Derecho como fuente fiscal.
+- Priorizar fuentes institucionales UnADM y materiales juridicos verificables.
+- Registrar fuentes especificas por actividad en derecho-fiscal-y-tributario.bib.
+- No inventar referencias; usar solo obras consultables.
+- Conservar metadatos minimos: autor, titulo, ano y fuente editorial o URL.
+- Distinguir bibliografia base de bibliografia especifica de actividad.
+- Usar malla curricular solo para datos curriculares.
+- Marcar [supuesto] cuando falte confirmacion de fuente obligatoria.
+- Priorizar fuentes institucionales UnADM y normativa jurídica verificable.
+- Usar la malla curricular solo para datos curriculares.
 
 ## propagation_hints
 
@@ -172,6 +377,44 @@
 - Ciclo 20 necesita normalizacion manual si se reutiliza.
 - Ciclo 21 necesita normalizacion manual si se reutiliza.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente solo después de validar JSON y estructura.
+- Compartir solo abstracciones editoriales estables entre nodos no equivalentes.
+- Evitar transferir redacción literal o datos ultralocales de actividades ajenas.
+- Reutilizar gates institucionales sin reducir especificidad local del destino.
+- Aplicar normalización manual si la entrada heredada llega ambigua o no estructurada.
+- Propagar recursivamente solo tras validar JSON y estructura.
+- Compartir solo abstracciones editoriales estables con nodos no equivalentes.
+- No propagar datos específicos de Derecho fiscal y tributario a materias no equivalentes.
+- Propagar identidad UnADM, gates de calidad y estructura argumentativa jurídica.
+- Evitar transferir redacción literal entre materias.
+- Mantener unión-dedupe como método de compresión.
+- Aplicar estrategia progresiva y conservadora en ciclos siguientes.
+- Conservar regla de no regresión.
+- Aplicar normalización manual si la entrada heredada es ambigua.
+- Marcar fuentes heredadas como provisionales hasta validación local.
+- Ciclo 1 consolidado para sincronización transversal.
+- Ciclo siguiente debe priorizar consigna local y bibliografía fiscal verificable.
+- Compartir solo abstracciones editoriales estables en nodos no equivalentes.
+- Evitar transferir redacción literal o contenido temático específico de Filosofía del Derecho.
+- Priorizar identidad, estructura reusable, quality gates y grafo conceptual.
+- Mantener estrategia progresiva y conservadora con política de no regresión.
+- Propagar hacia arriba y laterales solo reglas generales de identidad, estructura y calidad.
+- No propagar contenidos específicos de Filosofía del Derecho al destino fiscal.
+- Conservar regla de no regresión en ciclos siguientes.
+- Mantener unión-deduplicación como método de compresión.
+- Reutilizar reglas institucionales de calidad sin reducir especificidad local.
+- Ciclo 1 requiere normalización manual si se reutiliza.
+- Ciclo 2 requiere normalización manual si se reutiliza.
+- Ciclo 3 requiere normalización manual si se reutiliza.
+- Ciclo 4 requiere normalización manual si se reutiliza.
+- Propagar recursivamente solo despues de validar JSON y estructura.
+- Priorizar identidad, estructura reusable, gates de calidad y grafo conceptual.
+- Evitar transferir redaccion literal o referencias tematicas no transversales.
+- Mantener politica de no regresion en cada ciclo.
+- Aplicar union-dedupe para compresion lossless.
+- Si aparece salida no estructurada, normalizar manualmente antes de reutilizar.
+- Mantener compresión lossless por unión-deduplicación y política sin regresión.
+- Aplicar normalización manual cuando la herencia llegue ambigua o no estructurada.
 
 ## open_questions
 
@@ -190,3 +433,111 @@
 - Resolver expresiones PowerShell sin expandir para el slug .bib en README y programa analitico.
 - Cerrar completamente el bloque authortable y el documento LaTeX del reporte.
 - Resolver slug .bib sin expandir en README y programa analitico.
+- Supuesto: falta consigna textual de la primera actividad de Derecho fiscal y tributario.
+- Confirmar producto exacto solicitado por la planeación semanal vigente.
+- Confirmar rúbrica de evaluación para calibrar profundidad argumentativa.
+- Confirmar formato de citación requerido por la asignatura.
+- Confirmar si autor y matrícula deben permanecer en plantillas compartidas.
+- Confirmar consigna concreta de cada actividad de Derecho fiscal y tributario.
+- Confirmar rúbrica de evaluación específica.
+- Confirmar si se requiere bibliografía fiscal base adicional.
+- Confirmar nombre de figura docente en plantilla.
+- Resolver expresiones PowerShell sin expandir en README y programa analítico.
+- Cerrar correctamente authortable y documento LaTeX del reporte.
+- Supuesto: el archivo .bib canónico local es derecho-fiscal-y-tributario.bib.
+- Confirmar si las fuentes heredadas desde nodos no equivalentes siguen vigentes.
+- Confirmar fuentes obligatorias de cada semana antes de redactar.
+- Confirmar rúbrica específica de actividades de Derecho fiscal y tributario.
+- Confirmar formato de citación exigido por la materia.
+- Confirmar si el autor y matrícula deben permanecer en plantillas compartidas.
+- Resolver de forma definitiva la figura docente en portada.
+- Validar si existe bibliografía fiscal base adicional obligatoria por semana.
+- Confirmar si la fuente provisional de ingeniería sigue vigente para Derecho.
+- Confirmar fuentes normativas fiscales obligatorias por actividad.
+- Confirmar rúbrica de evaluación específica para ajustar profundidad argumentativa.
+- Resolver expresiones PowerShell sin expandir en README y programa analítico para el slug .bib.
+- Supuesto: derecho-fiscal-y-tributario.bib será la entrada .bib local para todas las actividades.
+- Supuesto: falta consigna puntual de la actividad activa en Derecho fiscal y tributario.
+- Confirmar formato de citacion exigido por la materia.
+- Confirmar si autor y matricula deben permanecer en plantillas compartidas.
+- Confirmar nombre final de figura docente en portada.
+- Confirmar si se requiere bibliografia fiscal base adicional obligatoria.
+- Confirmar resolucion definitiva de rutas truncadas en README.
+- Confirmar que el slug .bib quede fijo como derecho-fiscal-y-tributario.bib.
+- Supuesto: falta consigna textual de actividades específicas en la materia destino.
+- Confirmar nombre definitivo de figura docente en plantillas.
+- Confirmar si autor y matrícula deben mantenerse en plantillas compartidas.
+- Resolver definitivamente rutas truncadas en README (reporte y referencias).
+- Confirmar si se requiere bibliografía fiscal base adicional por unidad.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad institucional UnADM.
+- Estructura argumentativa jurídica.
+- Trazabilidad bibliográfica.
+- Aplicación profesional en contexto fiscal y tributario.
+- Se sincroniza memoria transversal desde actividad de Filosofía del Derecho hacia materia de Derecho fiscal y tributario
+- Se mantiene obligación de normalizar salidas no estructuradas antes de propagar
+- Se agregan mejoras verificables del contexto local: semestre 6, bloque 1, obligatoria, 8 créditos, y .bib local
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Usar README de la materia como punto de entrada canonico.
+- Alinear cada entrega con ejes: problema, conceptos/normas, producto, analisis propio, conclusion.
+- Mantener separacion entre reporte .tex, presentacion .tex y .bib local.
+- Usar programa analitico como guia editorial de la materia.
+- Mantener estructura local: reporte, presentacion, bibliografia, programa analitico y carpeta de referencias.
+- Corregir nombres rotos en README antes de publicar.
+
+### identidad_estilistica
+- Objetivo explícito al inicio.
+- Secciones nítidas y trazables.
+- Conclusión operativa para práctica jurídica.
+- Supuestos marcados de forma visible.
+- Conservar identidad institucional UnADM en tono, portada y formato.
+- Vincular la materia a Licenciatura en Derecho, semestre 6, bloque 1, obligatoria, 8 créditos.
+- Usar la carpeta de asignatura como punto de entrada canónico.
+- Marcar como supuesto cualquier dato no visible en consigna o rúbrica.
+- Tratar fuentes heredadas no verificadas como provisionales hasta validación local.
+- Citar malla-curricular-derecho-unadm.pdf solo para ubicación curricular.
+- Conservar identidad UnADM en portada, tono y contexto.
+- Usar datos de materia: Derecho fiscal y tributario, semestre 6, bloque 1, obligatoria, 8 creditos.
+
+### patrones_argumentativos
+- Del problema al marco conceptual y normativo.
+- De la evidencia verificable al análisis propio.
+- Del análisis a una conclusión aplicable.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear el producto al formato solicitado por planeación semanal.
+- Cerrar con conclusión jurídica transferible a práctica profesional.
+- Mantener separación entre reporte .tex, presentación .tex y bibliografía .bib local.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- Incluir postura argumentada del estudiante; evitar texto solo descriptivo.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+
+### grafo_de_conocimiento
+- Conceptos: 368
+- Citas: 2
+- Relaciones reforzadas: 89
+- Evidencias: 117
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/derecho-fiscal-y-tributario-lde/reporte-derecho-fiscal-y-tributario.tex`
+- Caracteres LaTeX preservados: 4185
+- Bloques/parrafos indexados: 20
+- Claves citadas: ninguna
+- Claves sin referencia: ninguna

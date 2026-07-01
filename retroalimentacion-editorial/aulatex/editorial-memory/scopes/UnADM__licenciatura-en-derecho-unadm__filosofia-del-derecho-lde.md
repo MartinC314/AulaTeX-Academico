@@ -358,6 +358,34 @@
 - Se mantiene control de riesgo por salidas no JSON parseable sin perder contenido util recuperable.
 - Conservar identidad UnADM y trazabilidad curricular verificable.
 - Fijar ejes editoriales transferibles: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se preservan reglas utiles previas sin regresion y se refuerza trazabilidad curricular UnADM.
+- Se elevan ejes editoriales reutilizables: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Memoria de materia consolidada desde Actividad 1 por abstracción ascendente.
+- Se aplica unión-dedupe lossless y se preservan reglas útiles previas.
+- Se fija identidad UnADM y trazabilidad curricular verificada.
+- Se elevan ejes editoriales: problema, conceptos, evidencia, análisis y conclusión jurídica.
+- Se normalizan insumos no JSON parseable antes de propagar.
+- Se refuerza coherencia entre .tex y .bib de la materia.
+- Se consolida la memoria de materia con abstracción ascendente desde actividad-1.
+- Se mantiene trazabilidad entre README, programa analítico, .tex y .bib.
+- Se consolida memoria editorial de la materia elevando patrones verificados desde Actividad 1.
+- Se aplica compresión union-dedupe lossless sin eliminar reglas útiles.
+- Se fija identidad UnADM y trazabilidad curricular (semestre 1, bloque 2, obligatoria, 8 créditos).
+- Se integra pauta estable: problema, conceptos y marco, evidencia, análisis propio, conclusión transferible.
+- Se refuerzan puertas de calidad, bibliografía verificable y compatibilidad LaTeX-BibTeX.
+- Se documenta grafo de conocimiento con citas recurrentes y relaciones reutilizables.
+- Propagación recursiva controlada por validaciones en ciclo 2.
+- Se mantienen ejes editoriales transferibles: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Materia consolidada con identidad UnADM y cinco ejes editoriales transferidos desde Actividad 1.
+- Compresión union-dedupe lossless; sin eliminación de reglas útiles previas.
+- Trazabilidad entre actividad, archivos .tex y .bib de la materia asegurada.
+- Normalización obligatoria de insumos no JSON parseable antes de propagar.
+- Puertas de calidad activas: citas verificables, estructura mínima y compilación limpia.
+- Se refuerzan patrones argumentativos: problema, conceptos, evidencia, análisis y conclusión jurídica.
+- Se preservan fuentes provisionales marcadas como supuestos hasta verificación local.
+- Propagación recursiva solo tras validar JSON, estructura y bibliografía.
+- Mantener normalización estructurada obligatoria antes de propagar.
+- Sostener identidad UnADM y trazabilidad curricular verificable.
 
 ## identity_rules
 
@@ -543,6 +571,19 @@
 - Usar malla-curricular-derecho-unadm.pdf como referencia curricular verificada.
 - Mantener identidad institucional UnADM en tono, formato y criterio academico.
 - Usar la malla curricular UnADM como respaldo curricular verificado.
+- Mantener identidad institucional UnADM en redaccion, formato y tono juridico-academico.
+- Usar la carpeta de materia como entrada canonica para actividades y entregables.
+- Vincular la materia a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Citar malla-curricular-derecho-unadm.pdf como fuente curricular verificada.
+- Tratar fuentes heredadas Codex y GPT-Pro como provisionales hasta verificación local. [supuesto]
+- Marcar como supuesto todo dato no visible en consignas o README.
+- Alinear con Licenciatura en Derecho: semestre 1, bloque 2, obligatoria, 8 créditos.
+- Marcar como [supuesto] todo dato no visible en consignas o documentos locales.
+- Alinear con Licenciatura en Derecho: semestre 1, bloque 2, obligatoria, 8 créditos (malla-curricular-derecho-unadm.pdf).
+- Usar la carpeta de la materia como punto de entrada canónico para actividades y entregables.
+- Marcar como supuesto cualquier dato no visible en consignas o documentos verificados.
+- Tratar fuentes heredadas Codex y GPT-Pro como provisionales hasta confirmación local. [supuesto]
+- Conservar trazabilidad curricular y documental entre README, programa analítico y productos .tex.
 
 ## structure_rules
 
@@ -703,6 +744,23 @@
 - Estructurar productos con: encuadre del problema, conceptos o marco normativo, analisis propio y cierre.
 - Separar entregables por tipo en archivos dedicados: reporte y presentacion.
 - Alinear el tipo de entrega a la planeacion semanal.
+- Alinear el entregable al tipo solicitado por la planeacion semanal.
+- Alinear cada producto al tipo solicitado en la planeación semanal.
+- Transformar la planeación en reporte, presentación o producto visual según consigna.
+- Estructurar cada producto con: problema, conceptos/marco, evidencia, análisis propio y cierre jurídico.
+- Separar secciones mínimas: introducción, desarrollo, postura personal y conclusión.
+- Alinear cada entrega al tipo de producto solicitado por la planeación semanal.
+- No adoptar nombres anómalos de archivos como canónicos hasta corregir README/programa analítico. [supuesto]
+- Separar secciones: conceptos clave, marco normativo/doctrinal, análisis propio, cierre.
+- Alinear el producto al tipo solicitado por la planeación.
+- Cerrar con conclusión jurídica transferible a la práctica.
+- Separar en conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear el formato al producto pedido por planeacion semanal.
+- Abrir con encuadre breve y delimitado del problema jurídico o social.
+- Definir un objetivo puntual del producto antes del desarrollo.
+- Seccionar en: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
+- Alinear el formato final al producto indicado por la planeación (reporte o presentación).
+- Mantener correspondencia entre secciones, preguntas guía y conclusiones.
 
 ## activity_rules
 
@@ -925,6 +983,26 @@
 - Confirmar que el producto final corresponda a la consigna especifica de la actividad.
 - Verificar coherencia entre consigna, desarrollo y conclusion.
 - Agregar fuentes específicas de actividad solo si son consultables.
+- Agregar fuentes especificas de actividad en el .bib de materia solo si son consultables.
+- Delimitar el problema de la actividad antes de citar fuentes.
+- Confirmar que el producto corresponde a la consigna de la semana.
+- No arrastrar fuentes de semanas posteriores sin validación. [supuesto]
+- Definir objetivo puntual al inicio de cada actividad.
+- Delimitar problema jurídico o social antes del desarrollo.
+- No asumir fuentes de semanas posteriores como válidas para actividad-1 sin verificación.
+- Delimitar el problema y el alcance de la actividad.
+- Integrar normas, doctrina y datos pertinentes con citas verificables.
+- No asumir fuentes de otras semanas sin confirmación local.
+- Asegurar que el producto corresponde a la consigna específica de la semana.
+- Delimitar problema y pregunta guia al inicio.
+- Verificar coherencia entre pregunta, desarrollo y conclusion.
+- Confirmar que el producto final corresponde a la consigna de la actividad.
+- Verificar que el producto corresponda a la consigna específica de cada actividad.
+- Incluir postura argumentada; evitar entregas solo descriptivas.
+- No asumir fuentes de semanas posteriores para actividades iniciales. [supuesto]
+- Integrar normas, doctrina, datos y casos relevantes al problema planteado.
+- Registrar en el .bib de la materia las fuentes específicas usadas en cada actividad.
+- Confirmar correspondencia del producto con la consigna específica.
 
 ## quality_gates
 
@@ -1059,6 +1137,18 @@
 - Verificar correspondencia entre producto entregado y consigna de la actividad.
 - Validar que toda afirmacion sustantiva tenga respaldo o marca de supuesto.
 - Evitar regresion: no eliminar reglas utiles previas.
+- Exigir estructura mínima completa antes de aplicar aguas abajo.
+- Marcar como supuesto cualquier afirmación sin respaldo inmediato.
+- Revisar y normalizar insumos no estructurados antes de reutilizarlos.
+- Compilar o revisar referencias para evitar claves rotas.
+- Validar correspondencia entre consigna y producto entregable.
+- Exigir respaldo o marcar [supuesto] en toda afirmación sustantiva.
+- Validar correspondencia entre citas en texto y entradas en el .bib.
+- Confirmar integridad de claves placeholder (p. ej., clave, clave1) antes de cierre. [supuesto]
+- Exigir marca [supuesto] cuando falte evidencia local.
+- Validar consistencia entre citas en texto y entradas en el .bib.
+- Compilar sin errores críticos ni referencias rotas antes de cierre.
+- Registrar y normalizar insumos no estructurados previos a su reutilización.
 
 ## latex_rules
 
@@ -1233,6 +1323,19 @@
 - Corregir nombres de archivo anómalos antes de consolidarlos como canónicos.
 - Corregir nombres de archivo con caracteres anomalos del README antes de compilar. [supuesto]
 - Corregir nombres/rutas anomalas antes de fijarlas como canon. [supuesto]
+- Mantener claves BibTeX estables; no renombrar claves citadas sin migracion completa.
+- Corregir nombres de archivo anomalo antes de fijarlos como canon. [supuesto]
+- Separar entregables por tipo en archivos .tex dedicados: reporte y presentacion.
+- Compilar sin errores ni referencias rotas.
+- Corregir tokens no expandidos del README y programa analítico antes de referenciar. [supuesto]
+- Usar filosofia-del-derecho-clean.bib como base depurada hasta confirmar .bib canónico. [supuesto]
+- Usar codificación española correcta en .tex y .bib.
+- Confirmar nombre canónico del .bib de materia; usar filosofia-del-derecho.bib como esperado por Slug. [supuesto]
+- Verificar nombres en README antes de referenciarlos en .tex.
+- Resolver tokens $(@{...}.Slug) en README y programa analítico antes de compilar. [supuesto]
+- Corregir rutas o nombres anómalos del README antes de compilar. [supuesto]
+- Verificar rutas y nombres canónicos de archivos antes de compilar.
+- Compilar sin warnings bloqueantes y sin citas pendientes (?); corregir referencias rotas.
 
 ## bibliography_rules
 
@@ -1424,6 +1527,25 @@
 - Registrar metadatos mínimos: autor, título, año y fuente/editorial o URL.
 - Distinguir bibliografía base de materia vs bibliografía específica de actividad.
 - Conservar y deduplicar entradas existentes sin perdida semantica.
+- Registrar fuentes de cada actividad en el .bib de la asignatura.
+- No completar entradas BibTeX truncadas sin verificacion local. [supuesto]
+- Priorizar fuentes institucionales UnADM, SCJN y editoriales académicas verificables.
+- Registrar fuentes específicas de cada actividad en el .bib de la materia.
+- No inventar referencias; incluir solo obras consultables con URL o datos editoriales.
+- Conservar metadatos mínimos: autor, título, año, editorial o URL.
+- Revisar que scjnIncapacidadResistencia2019 tenga campos completos antes de publicar. [supuesto]
+- Preservar claves recurrentes verificables de UNAM/SCJN ya incorporadas.
+- No completar entradas truncadas del .bib sin verificación local.
+- Priorizar fuentes institucionales UnADM, SCJN e IIJ-UNAM verificables.
+- Tratar filosofia-del-derecho-clean.bib como depurado provisional hasta confirmar .bib canónico. [supuesto]
+- Registrar bibliografia especifica de actividad en el .bib de materia.
+- Distinguir bibliografia base de bibliografia puntual por actividad.
+- Priorizar fuentes institucionales UnADM, IIJ-UNAM y SCJN cuando aplique.
+- Distinguir bibliografía base de la materia y bibliografía específica por actividad.
+- No inventar referencias; usar solo obras consultables con metadatos mínimos (autor, título, año, editorial/URL).
+- Mantener claves ya citadas en .tex; deduplicar entradas sin pérdida de información.
+- No asumir que filosofia-del-derecho-clean.bib corresponde a Actividad 1; documenta su orientación a Semana 7. [supuesto]
+- Completar entradas truncadas solo tras verificación local (p. ej., scjnIncapacidadResistencia2019). [supuesto]
 
 ## propagation_hints
 
@@ -1852,6 +1974,33 @@
 - Transferir citas recurrentes y puertas de calidad como nucleo comun.
 - Propagar recursivamente solo reglas generales verificadas en fuentes locales.
 - Mantener etiqueta de compresión union-dedupe en cada salto.
+- Reusar puertas de calidad institucional en nodos laterales sin perder especificidad local.
+- Mantener trazabilidad de citas recurrentes y conceptos nucleares al propagar.
+- Propagar reglas a nivel licenciatura y materias afines tras validar JSON y estructura.
+- Aplicar normalización manual en ciclo 1 cuando haya insumos no estructurados.
+- Reusar puertas de calidad en nuevas actividades de la materia.
+- Evitar regresiones al deduplicar reglas y claves.
+- No propagar nombres de archivo con tokens sin expandir hasta corregirlos localmente. [supuesto]
+- Registrar trazabilidad entre nodos al elevar patrones desde actividades.
+- Elevar al ancestro patrones editoriales reutilizables, no redacción literal de actividad.
+- Mantener compresión por unión-deduplicación lossless en cada salto.
+- Reforzar conexiones entre identidad institucional, estructura argumentativa y control bibliográfico.
+- Propagar reglas arriba y lateralmente solo tras validar JSON y estructura.
+- Reusar puertas de calidad institucionales como filtro previo.
+- Aplicar normalización manual cuando se detecten salidas no estructuradas.
+- Propagar reglas generales cuando falte consigna textual local.
+- En ciclo 2, propagar solo reglas verificadas por README, programa analítico y .bib local.
+- Mantener compresión union-dedupe en cada salto recursivo.
+- Elevar al ancestro reglas generales, no redaccion literal de actividad.
+- Conservar trazabilidad de conceptos y citas recurrentes al subir nivel.
+- Aplicar union-dedupe lossless para evitar duplicados sin perder informacion.
+- Mantener bandera de normalizacion manual en ciclos con insumos no estructurados.
+- Propagar reglas a nivel licenciatura y a materias afines solo tras validar JSON, estructura y .bib.
+- Aplicar normalización manual en ciclo 1 cuando existan insumos no estructurados.
+- Reusar puertas de calidad institucional como filtro previo en nuevas actividades.
+- Conservar trazabilidad entre actividad, .tex y .bib en todos los nodos descendentes.
+- Propagación recursiva progresiva: primero materia, luego actividades y artefactos derivados.
+- Elevar al ancestro patrones reutilizables, no redacción literal de actividad.
 
 ## open_questions
 
@@ -2190,6 +2339,31 @@
 - Confirmar consigna textual exacta de actividad-1 para cierre de supuestos.
 - Confirmar si filosofia-del-derecho-clean.bib es solo Semana 7 o base transversal. [supuesto]
 - Definir sustitución de fuentes provisionales heredadas (Codex/GPT-Pro). [supuesto]
+- Confirmar consigna textual exacta de Actividad 1 para fijar producto requerido. [supuesto]
+- Verificar si filosofia-del-derecho-clean.bib es solo Semana 7 o base parcial reutilizable. [supuesto]
+- Resolver definitivamente placeholders y rutas anomalias en README/programa.
+- Confirmar nombre canónico del archivo .bib de la materia.
+- Definir plantilla mínima obligatoria para reporte y presentación.
+- Verificar si filosofia-del-derecho-clean.bib reemplaza al placeholder del README. [supuesto]
+- Confirmar rúbrica de evaluación por semana para ajustar profundidad.
+- Aclarar si las fuentes de Semana 7 aplican a Actividad 1 o requieren otras.
+- Validar integridad de claves duplicadas: ruizrodriguezFilosofiaDerecho2009 vs ruiz_rodriguez_filosofia_derecho_2009.
+- Corregir placeholders/tokens de nombre de archivo en README y programa analítico. [supuesto]
+- Confirmar consigna y tipo de producto de Actividad 1 (reporte, presentación u otro).
+- Verificar rúbrica de evaluación para ajustar profundidad argumentativa.
+- Definir nombre canónico del archivo .bib de la materia.
+- Determinar si filosofia-del-derecho-clean.bib sustituye al placeholder del README. [supuesto]
+- Confirmar fuentes obligatorias por semana y su reutilización entre actividades.
+- Completar y verificar campos de scjnIncapacidadResistencia2019 en el .bib. [supuesto]
+- Confirmar formato exigido: reporte, presentacion u otro.
+- Confirmar nombre canónico del archivo .bib de la materia (¿filosofia-del-derecho.bib?).
+- Confirmar producto exacto solicitado por Actividad 1 y su rúbrica.
+- Verificar integridad completa de scjnIncapacidadResistencia2019 en el .bib local. [supuesto]
+- Aclarar si las fuentes de Semana 7 aplican a otras semanas o son acotadas. [supuesto]
+- Definir plantilla mínima obligatoria para reporte vs presentación en esta materia.
+- Confirmar si actividad-1 reutiliza o no bibliografía depurada de Semana 7. [supuesto]
+- Completar verificación de entrada scjnIncapacidadResistencia2019 en .bib. [supuesto]
+- Resolver placeholders/tokens en README y programa analítico. [supuesto]
 
 ## editorial_dna
 
@@ -2250,10 +2424,10 @@
 - Incluir postura argumentada del estudiante; evitar texto solo descriptivo.
 
 ### grafo_de_conocimiento
-- Conceptos: 2022
-- Citas: 13
-- Relaciones reforzadas: 811
-- Evidencias: 688
+- Conceptos: 2240
+- Citas: 19
+- Relaciones reforzadas: 876
+- Evidencias: 761
 
 ## adn_tex
 

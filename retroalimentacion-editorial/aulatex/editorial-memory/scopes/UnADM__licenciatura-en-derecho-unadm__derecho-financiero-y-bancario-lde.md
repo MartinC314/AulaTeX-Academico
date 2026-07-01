@@ -37,6 +37,41 @@
 - README y programa analitico contienen artefactos de plantilla en nombres de archivo.
 - La bibliografia local conserva entradas base institucionales verificables.
 - El token de plantilla del archivo .bib debe expandirse a derecho-financiero-y-bancario.bib.
+- Se consolida cerebro editorial minimo para Derecho financiero y bancario con enfoque transversal UnADM.
+- Se preservan reglas estables de identidad, estructura, calidad y trazabilidad sin copiar redaccion literal del origen.
+- Se mantiene compresion lossless por union-dedupe y control de no regresion.
+- Se refuerza el flujo reusable: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se consolida memoria de materia para Derecho financiero y bancario con identidad UnADM.
+- Se preserva la ubicación local: semestre 3, bloque 2, obligatoria, 8 créditos.
+- Se refuerza el flujo editorial reusable: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se conserva compresión union-dedupe sin regresión.
+- Se mantienen reglas de normalización antes de propagar memoria.
+- Se detectan artefactos de plantilla en README, programa analítico y portada .tex.
+- Se tratan salidas heredadas no parseables como provisionales y auditables.
+- Se consolida sincronizacion transversal conservadora entre actividad de origen y materia destino.
+- Se preserva identidad UnADM, integridad academica, trazabilidad y compresion lossless por union-dedupe.
+- Se refuerza flujo editorial reusable: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se mantiene regla critica: no propagar salidas no estructuradas sin normalizacion.
+- Se conserva contexto local del destino: semestre 3, bloque 2, obligatoria, 8 creditos.
+- Se consolida sincronización transversal desde actividad de Filosofía del Derecho hacia materia de Derecho financiero y bancario sin recorte de reglas útiles.
+- Se mantiene compresión lossless por unión y deduplicación semántica.
+- Se refuerza el flujo editorial estable: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se preserva la identidad institucional UnADM y la trazabilidad de reglas heredadas.
+- Se confirma necesidad de normalización estructurada previa a toda propagación recursiva.
+- Se conserva que existen antecedentes de salidas no parseables y que deben tratarse como contingencia de calidad.
+- Se consolida sincronizacion transversal para Derecho financiero y bancario con enfoque UnADM.
+- Se preserva compresion lossless por union-dedupe sin regresion.
+- Se transfieren solo abstracciones estables de identidad, estructura, calidad y trazabilidad.
+- Se mantiene regla critica: bloquear propagacion de salidas no JSON parseable.
+- Se confirma contexto local del destino: semestre 3, bloque 2, obligatoria, 8 creditos.
+- Se mantiene estado provisional de fuentes heredadas de motor hasta verificacion local.
+- Se consolida memoria editorial de materia para Derecho financiero y bancario.
+- Se preserva identidad UnADM con compresión union-dedupe sin regresión.
+- La materia está ubicada en semestre 3, bloque 2, obligatoria, 8 créditos.
+- El cerebro editorial prioriza problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se conservan reglas de normalización estructurada antes de propagar.
+- Se detectan artefactos de plantilla en README y programa analítico.
+- El .tex local conserva título y subtítulo de plantilla pendientes de actividad real.
 
 ## identity_rules
 
@@ -71,6 +106,43 @@
 - Fuente provisional: Auto (model-router) desde Actividad 1.
 - Fuente provisional: Claude Foundry desde Actividad 1.
 - Fuente provisional: Codex desde Actividad 1.
+- Mantener identidad institucional UnADM en tono, portada y metadatos.
+- Usar contexto curricular local verificado: Licenciatura en Derecho, semestre 3, bloque 2, obligatoria, 8 creditos.
+- Usar la carpeta de materia como entrada canonica.
+- Marcar como supuesto todo dato no confirmado en consigna o documentos locales.
+- Tratar salidas heredadas no verificadas de motor como provisionales y auditables.
+- Mantener identidad institucional UnADM en portada, metadatos y tono.
+- Usar datos locales de materia: Derecho financiero y bancario, clave LDE-S3B2, semestre 3, bloque 2.
+- Usar Licenciatura en Derecho como programa académico.
+- Conservar autor Martin Jonathan de la Cruz y matrícula ES2611202040 según .tex local.
+- Conservar Roma Norte, Ciudad de México salvo lineamiento contrario.
+- Marcar como supuesto cualquier dato no confirmado en consigna o documentos locales.
+- Completar figura docente con dato real o etiqueta explícita de supuesto.
+- Tratar fuentes heredadas de motor como provisionales hasta verificación local.
+- Usar la carpeta de materia como punto de entrada canónico.
+- Usar contexto curricular local verificado del destino.
+- Mantener Licenciatura en Derecho como programa academico.
+- Tratar fuentes heredadas de motor como provisionales hasta verificacion local.
+- Usar carpeta de materia como entrada canonica.
+- Usar contexto curricular local verificado: Licenciatura en Derecho, semestre 3, bloque 2, obligatoria, 8 créditos.
+- Usar la carpeta de materia como entrada canónica.
+- Conservar autoría y matrícula locales verificadas en .tex.
+- Tratar fuentes heredadas de motor como provisionales y auditables hasta confirmación local.
+- No transferir metadatos específicos de Filosofía del Derecho al destino no equivalente.
+- Usar contexto curricular verificado del destino: semestre 3, bloque 2, obligatoria, 8 creditos.
+- Conservar autoria y matricula locales del .tex mientras no exista correccion oficial.
+- Tratar fuentes heredadas no verificadas como provisionales y auditables.
+- Usar carpeta de materia como entrada canonica para toda actividad.
+- Mantener identidad institucional UnADM en portada, tono y metadatos.
+- Usar el programa académico Licenciatura en Derecho.
+- Usar materia Derecho financiero y bancario.
+- Usar clave local LDE-S3B2.
+- Usar semestre 3, bloque 2, obligatoria, 8 créditos.
+- Conservar autor Martin Jonathan de la Cruz según .tex local.
+- Conservar matrícula ES2611202040 según .tex local.
+- Marcar como supuesto todo dato no confirmado por consigna o archivo local.
+- Marcar figura docente y grupo como supuesto si no están verificados.
+- Tratar fuentes heredadas de motor como provisionales hasta verificación.
 
 ## structure_rules
 
@@ -92,6 +164,31 @@
 - Agregar solo mejoras verificables.
 - Corregir artefactos de plantilla y caracteres faltantes en nombres de archivo del README.
 - No eliminar reglas previas validas; agregar solo mejoras verificables.
+- Abrir con encuadre breve del problema juridico o social.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Definir objetivo puntual antes del desarrollo.
+- Alinear el producto al tipo solicitado por planeacion semanal.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Alinear cada entrega al producto solicitado por la planeación semanal.
+- Abrir con encuadre breve del problema jurídico o social.
+- Separar conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Distinguir descripción conceptual de postura argumentada.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Mantener coherencia entre README, programa analítico, .tex y .bib.
+- Corregir nombres de archivo con caracteres faltantes en README.
+- Expandir el token de plantilla del .bib al slug derecho-financiero-y-bancario.bib.
+- No eliminar reglas válidas previas; agregar solo mejoras verificables.
+- Alinear producto al tipo solicitado por planeacion semanal.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear el producto al tipo solicitado en la planeación semanal.
+- Corregir artefactos de plantilla en nombres de archivo antes de reutilización.
+- Corregir artefactos de plantilla en nombres de archivo antes de publicar memoria.
+- Usar la carpeta de materia como punto de entrada canónico.
+- Abrir cada entrega con problema jurídico o social delimitado.
+- Alinear el producto al tipo solicitado por planeación semanal.
+- Transformar la planeación en reporte, presentación o producto visual según consigna.
+- Cerrar con conclusión jurídica transferible a práctica profesional.
+- Expandir tokens de plantilla al slug derecho-financiero-y-bancario.
 
 ## activity_rules
 
@@ -105,6 +202,35 @@
 - Cerrar con postura juridica propia aplicable a la practica profesional.
 - Adaptar el producto a la planeacion semanal confirmada.
 - Adaptar el producto solicitado a la planeacion semanal confirmada.
+- Exigir postura argumentada del estudiante, no solo descripcion.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Evitar asumir fuentes de otras semanas sin confirmacion local.
+- Adaptar profundidad y formato a la consigna real de cada actividad.
+- Delimitar el problema jurídico o social de cada actividad.
+- Sustentar afirmaciones con norma, doctrina, datos o fuentes verificables.
+- Incluir cita explícita cuando se use evidencia.
+- Exigir postura argumentada del estudiante, no solo resumen.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- Adaptar reporte, presentación o producto visual a la consigna confirmada.
+- No asumir fuentes de otra semana como obligatorias de una actividad específica.
+- Marcar como supuesto cualquier elemento no visible en la consigna.
+- Evitar afirmaciones sin respaldo o sin marca de supuesto.
+- Separar descripcion conceptual de analisis propio.
+- Exigir postura argumentada del estudiante y evitar entregas solo descriptivas.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- No asumir fuentes de semanas distintas sin validación de consigna.
+- Adaptar formato de entrega a reporte o presentación según instrucción vigente.
+- Mantener separación entre descripción conceptual y análisis propio.
+- No asumir fuentes de semanas distintas sin confirmacion en consigna.
+- Verificar consigna antes de crear una actividad específica.
+- Sustentar afirmaciones con norma, doctrina o datos verificables.
+- Usar citas explícitas cuando se emplee evidencia externa.
+- Separar descripción conceptual de análisis jurídico propio.
+- Exigir postura argumentada del estudiante.
+- Evitar entregas solo descriptivas o de resumen.
+- Adaptar profundidad a la rúbrica confirmada.
+- No asumir fuentes de otra semana o asignatura como obligatorias.
 
 ## quality_gates
 
@@ -123,6 +249,32 @@
 - Bloquear fuentes o metadatos bibliograficos inventados.
 - Normalizar manualmente si reaparece salida no estructurada.
 - Validar deduplicacion semantica antes de guardar memoria.
+- Bloquear propagacion si la salida no es JSON parseable.
+- Validar estructura minima completa antes de reutilizar.
+- Confirmar trazabilidad de reglas a contexto local o memoria heredada.
+- Bloquear campos obligatorios vacios sin marca de supuesto.
+- Validar consistencia entre citas en texto y archivo .bib.
+- Aplicar deduplicacion semantica antes de guardar memoria.
+- Bloquear propagación si la salida no es JSON parseable.
+- Revisar salida no estructurada antes de reutilizarla.
+- Validar estructura mínima completa antes de guardar memoria.
+- Bloquear campos obligatorios vacíos sin marca de supuesto.
+- Comprobar que toda mejora agregada sea verificable.
+- Validar deduplicación semántica antes de guardar.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca de supuesto.
+- Verificar correspondencia del producto con la consigna de actividad.
+- Validar estructura minima completa antes de reutilizar memoria.
+- Revisar y normalizar respuesta no estructurada antes de aplicar aguas abajo.
+- Validar estructura mínima completa antes de aplicar aguas abajo.
+- Validar deduplicación semántica antes de guardar memoria.
+- Comprobar consistencia entre citas en texto y archivo .bib.
+- No aceptar mejoras sin respaldo verificable.
+- Validar estructura minima completa antes de aplicar aguas abajo.
+- Bloquear campos obligatorios vacios sin marca explicita de supuesto.
+- Comprobar que cada mejora sea verificable.
+- Confirmar que no existan afirmaciones sin respaldo o supuesto.
+- Verificar correspondencia entre producto final y consigna.
+- Evitar fuentes inventadas o metadatos bibliográficos no confirmados.
 
 ## latex_rules
 
@@ -140,6 +292,46 @@
 - Evitar romper comandos y rutas en portada, tablas y referencias.
 - Reemplazar titulo de plantilla por el titulo de la actividad real antes de entregar.
 - Reemplazar subtitulo de plantilla por el subtitulo de la actividad real antes de entregar.
+- Mantener espanol con acentos correctos en .tex y .bib.
+- Mantener claves BibTeX estables.
+- Evitar comandos no estandar sin justificacion editorial.
+- Compilar sin errores criticos ni referencias rotas.
+- Resolver tokens de plantilla sin expandir en README y programa analitico.
+- Sincronizar titulo, subtitulo y materia con la actividad real antes de entrega.
+- Mantener documentclass article en español, letterpaper y oneside salvo instrucción contraria.
+- Conservar macros de identidad académica en el encabezado del .tex.
+- Sincronizar título, subtítulo, materia y actividad entre portada y contenido.
+- Reemplazar Actividad X por número real de actividad antes de entregar.
+- Completar Figura docente con dato real o supuesto explícito.
+- Revisar que la tabla de identificación compile sin comandos incompletos.
+- Usar codificación y acentos correctos en español en .tex y .bib.
+- Corregir caracteres anómalos en rutas o nombres de archivo.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analítico.
+- Evitar comandos no estándar sin justificación editorial.
+- Compilar sin errores críticos ni referencias rotas.
+- Mantener codificacion y acentos correctos en español en .tex y .bib.
+- Mantener documentclass y macros institucionales salvo instruccion contraria.
+- Reemplazar titulos de plantilla por datos reales de actividad antes de entrega.
+- Completar campos incompletos como Figura docente con dato real o etiqueta de supuesto.
+- Resolver tokens sin expandir en README y programa analitico.
+- Usar derecho-financiero-y-bancario.bib como nombre canonico del .bib local.
+- Mantener macros de identidad académica y sincronía entre título, subtítulo y materia.
+- Reemplazar títulos de plantilla por actividad real antes de entrega.
+- Completar figura docente con dato real o etiqueta de supuesto.
+- Usar codificación y acentos correctos en .tex y .bib.
+- Mantener macros de identidad academica estables en portada.
+- Reemplazar titulo y subtitulo de plantilla por actividad real antes de entrega.
+- Completar Figura docente con dato real o etiqueta [Supuesto].
+- Corregir tokens sin expandir tipo $(@{...}.Slug) en README y programa analitico.
+- Usar slug literal derecho-financiero-y-bancario.bib en referencias internas.
+- Mantener documentclass article en español, letterpaper, oneside salvo instrucción contraria.
+- Conservar macros de identidad académica en encabezado del .tex.
+- Sincronizar título, subtítulo, materia y actividad real.
+- Reemplazar Actividad X antes de entregar.
+- Revisar que la tabla de identificación compile correctamente.
+- Evitar romper rutas en portada, tablas y referencias.
+- Usar codificación y acentos correctos en español.
+- Resolver tokens sin expandir en README, programa analítico y nombres de archivo.
 
 ## bibliography_rules
 
@@ -155,6 +347,32 @@
 - Agregar entradas BibTeX solo con fuente verificable.
 - Incluir fecha de consulta en referencias web.
 - Mantener entradas base unadmSitioWeb y unadmMallaDerecho2024.
+- Usar derecho-financiero-y-bancario.bib como archivo canonico local.
+- Priorizar fuentes institucionales UnADM y juridicas verificables.
+- Registrar en .bib solo fuentes realmente consultables.
+- No inventar referencias ni metadatos.
+- Conservar metadatos minimos: autor, titulo, año, fuente/editorial o URL.
+- Incluir fecha de consulta en fuentes web.
+- Usar derecho-financiero-y-bancario.bib como archivo bibliográfico canónico.
+- Registrar fuentes específicas de actividad en el .bib de la materia.
+- Conservar unadmSitioWeb y unadmMallaDerecho2024.
+- No inventar fuentes ni metadatos bibliográficos.
+- Conservar metadatos mínimos: autor, título, año, fuente editorial o URL.
+- Distinguir bibliografía base de bibliografía específica de actividad.
+- Validar citas en texto contra entradas reales del .bib.
+- Priorizar fuentes institucionales UnADM y materiales juridicos verificables.
+- Registrar fuentes especificas de actividad en el .bib de la materia.
+- Conservar metadatos minimos: autor, titulo, año, fuente o URL.
+- Distinguir bibliografia base de bibliografia especifica por actividad.
+- Usar derecho-financiero-y-bancario.bib como archivo canónico de la materia.
+- Priorizar fuentes institucionales UnADM y normas jurídicas verificables.
+- Agregar entradas BibTeX solo con fuente realmente consultable.
+- Conservar metadatos mínimos: autor, título, año y fuente o URL.
+- Distinguir bibliografía base de bibliografía específica por actividad.
+- Usar derecho-financiero-y-bancario.bib como archivo canonico de la materia.
+- Conservar metadatos minimos: autor, titulo, anio y fuente o URL.
+- Usar la malla curricular local como fuente de ubicación curricular.
+- No inventar fuentes ni metadatos.
 
 ## propagation_hints
 
@@ -195,6 +413,42 @@
 - Ciclo 21 necesita normalizacion manual si se reutiliza.
 - Ciclo 22: mantener contingencia de normalizacion manual por historial de salidas no parseables.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar transversalmente solo abstracciones estables, no contenido tematico especifico de Filosofia del Derecho.
+- Priorizar identidad, estructura reusable, gates de calidad y grafo conceptual base.
+- Aplicar estrategia progresiva: agregar mejoras verificables sin borrar reglas utiles previas.
+- Mantener etiqueta de supuestos para huecos de contexto local.
+- Si reaparece salida no estructurada, normalizar manualmente antes de nuevo ciclo.
+- Propagar recursivamente solo después de validar JSON y estructura.
+- Propagar lateralmente solo abstracciones editoriales estables.
+- No transferir contenido doctrinal específico de Filosofía del Derecho al destino.
+- Reutilizar reglas institucionales de identidad, estructura, calidad y bibliografía.
+- Mantener union-dedupe con pérdida cero.
+- Aplicar normalización manual si reaparece salida no estructurada.
+- Etiquetar reglas heredadas para auditoría de no regresión.
+- Conservar especificidad local de Derecho financiero y bancario.
+- No reducir reglas locales verificadas al consolidar memoria transversal.
+- Propagar recursivamente solo reglas estables e independientes de actividad puntual.
+- Priorizar identidad, estructura reusable, quality gates y grafo conceptual.
+- Evitar transferencia de redaccion literal entre nodos no equivalentes.
+- Aplicar estrategia progresiva y conservadora: agregar solo mejoras verificables.
+- Mantener no regresion de reglas utiles previas.
+- Propagar recursivamente solo reglas abstractas y estables entre nodos no equivalentes.
+- Priorizar identidad, estructura reusable, gates de calidad y grafo conceptual.
+- Evitar transferencia de redacción literal o contenidos temáticos exclusivos de Filosofía del Derecho.
+- Mantener estrategia progresiva y conservadora: agregar mejoras verificables sin regresión.
+- Etiquetar supuestos y origen de reglas para auditoría.
+- Aplicar normalización manual si reaparece salida no estructurada en ciclos siguientes.
+- Propagar recursivamente solo reglas generales y estables entre nodos no equivalentes.
+- Evitar transferir redaccion literal o contenido tematico propio de otra asignatura.
+- Aplicar normalizacion manual si reaparece salida no estructurada.
+- Mantener etiqueta de ciclo y origen para auditoria de no regresion.
+- Si falta contexto local, crear cerebro minimo y abrir vacios como preguntas.
+- Propagar recursivamente solo reglas validadas y deduplicadas.
+- Propagar lateralmente solo abstracciones independientes de actividad específica.
+- Mantener compresión lossless por union-dedupe.
+- Reutilizar gates institucionales sin reducir especificidad local.
+- No transferir fuentes específicas de Filosofía del Derecho al destino.
+- Crear memorias de actividad solo después de confirmar consigna local.
 
 ## open_questions
 
@@ -217,3 +471,105 @@
 - Definir formato obligatorio de citacion para la materia (APA, IEEE u otro); supuesto: no definido aun.
 - Confirmar planeacion semanal vigente antes de generar actividades especificas.
 - Verificar si los nombres de archivo del README deben corregirse manualmente o regenerarse.
+- Confirmar formato de citacion obligatorio de la materia (supuesto: no definido).
+- Confirmar figura docente y grupo para completar portada (supuesto: pendiente).
+- Confirmar planeacion semanal vigente para tipificar productos por actividad.
+- Confirmar si la localizacion de portada debe mantenerse por lineamiento institucional.
+- Confirmar si el grupo debe aparecer en la tabla de identificación.
+- Definir formato obligatorio de citación para la materia.
+- Validar si la localización de portada debe mantenerse o actualizarse.
+- Confirmar planeación semanal vigente antes de generar actividades.
+- Confirmar número real de actividad para sustituir Actividad X.
+- Confirmar rúbricas específicas de actividades futuras.
+- Confirmar fuentes obligatorias por semana.
+- Confirmar figura docente y grupo para portada (supuesto).
+- Confirmar si localizacion institucional en portada debe mantenerse.
+- Confirmar planeacion semanal vigente antes de instanciar actividades.
+- Confirmar si correccion de tokens en README/programa sera manual o automatica.
+- Confirmar nombre real de figura docente en portada.
+- Confirmar formato obligatorio de citación para la materia. [Supuesto: no definido]
+- Confirmar si grupo debe mostrarse en tabla de identificación.
+- Confirmar planeación semanal vigente antes de crear actividades derivadas.
+- Confirmar si la localización de portada debe mantenerse por lineamiento oficial.
+- Confirmar corrección final de artefactos de plantilla en README y programa analítico.
+- Confirmar nombre real de la figura docente del destino.
+- Confirmar formato obligatorio de citacion para la materia. [Supuesto: no definido]
+- Confirmar si grupo debe figurar en tabla de identificacion.
+- Confirmar si localizacion de portada sigue vigente por lineamiento institucional.
+- Confirmar planeacion semanal vigente antes de generar actividad especifica.
+- Supuesto: el formato de citación no está definido aún.
+- Validar si la localización de portada debe mantenerse.
+- Verificar si README debe corregirse manualmente o regenerarse.
+- Confirmar rúbrica de evaluación específica.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad institucional UnADM
+- Integridad academica
+- Evidencia verificable
+- Analisis juridico propio
+- Conclusion transferible
+- Se consolida cerebro editorial minimo para Derecho financiero y bancario con enfoque transversal UnADM
+- Se preservan reglas estables de identidad, estructura, calidad y trazabilidad sin copiar redaccion literal del origen
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Alinear cada entrega al flujo: problema, conceptos/normas, producto, analisis propio, conclusion transferible.
+- Usar la carpeta de materia como punto de entrada canonico antes de crear actividades.
+- Mantener coherencia entre README, programa analitico, .tex y .bib de la materia.
+- No eliminar reglas previas validas; solo agregar reglas nuevas verificables.
+- Alinear cada entrega al flujo: problema, conceptos o normas, producto, analisis propio y conclusion transferible.
+- Corregir en README nombres de archivos con caracteres faltantes o plantillas sin expandir.
+
+### identidad_estilistica
+- Frases precisas y orientadas a accion.
+- Separacion explicita entre descripcion y analisis.
+- Uso explicito de supuestos cuando falta dato.
+- Cierre con criterio juridico propio.
+- Mantener identidad institucional UnADM en tono, portada y metadatos.
+- Usar contexto curricular local verificado: Licenciatura en Derecho, semestre 3, bloque 2, obligatoria, 8 creditos.
+- Usar la carpeta de materia como entrada canonica.
+- Marcar como supuesto todo dato no confirmado en consigna o documentos locales.
+- Tratar salidas heredadas no verificadas de motor como provisionales y auditables.
+- Mantener identidad institucional UnADM en portada y metadatos.
+- Usar datos de la materia: Derecho financiero y bancario, clave LDE-S3B2, semestre 3, bloque 2.
+- Conservar autoria real del alumno y matricula en la tabla de identificacion.
+
+### patrones_argumentativos
+- Delimitacion del problema.
+- Marco conceptual y normativo.
+- Evaluacion critica de evidencia.
+- Toma de postura argumentada.
+- Conclusion transferible a practica.
+- Abrir con encuadre breve del problema juridico o social.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Definir objetivo puntual antes del desarrollo.
+- Alinear el producto al tipo solicitado por planeacion semanal.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Exigir postura argumentada del estudiante, no solo descripcion.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+
+### grafo_de_conocimiento
+- Conceptos: 326
+- Citas: 2
+- Relaciones reforzadas: 80
+- Evidencias: 108
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/derecho-financiero-y-bancario-lde/reporte-derecho-financiero-y-bancario.tex`
+- Caracteres LaTeX preservados: 4197
+- Bloques/parrafos indexados: 20
+- Claves citadas: ninguna
+- Claves sin referencia: ninguna

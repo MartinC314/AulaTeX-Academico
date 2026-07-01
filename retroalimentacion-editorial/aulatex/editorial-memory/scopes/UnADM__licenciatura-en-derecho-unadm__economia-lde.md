@@ -71,6 +71,44 @@
 - Normalizacion manual pendiente para ciclos y salidas afectados por alertas de parseo.
 - README local define cinco archivos canonicos y presenta placeholders o artefactos de plantilla por resolver.
 - Supuesto: alertas de parseo pertenecen a control de calidad editorial y no a contenido disciplinar.
+- Se sincroniza memoria transversal hacia Economia LDE sin trasladar redaccion literal de Filosofia del Derecho.
+- Se conserva identidad UnADM, estructura por ejes y control de calidad de parseo y trazabilidad.
+- Se deduplican reglas repetidas y se refuerza compresion lossless por union-dedupe sin regresion.
+- Se crea cerebro editorial minimo del destino con vacios locales abiertos y marcados como supuesto.
+- Memoria de materia consolidada para Economía LDE con identidad UnADM.
+- Sincronización transversal aplicada desde Filosofía del Derecho solo como abstracción editorial estable.
+- Se conserva enfoque de problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Contexto local verificado: semestre 3, bloque 2, obligatoria, 8 créditos.
+- La carpeta de Economía LDE funciona como punto de entrada canónico.
+- Bibliografía local activa: economia.bib.
+- Se mantiene alerta por salidas heredadas no parseables.
+- Compresión aplicada por unión y deduplicación sin regresión.
+- Sincronizacion transversal aplicada de forma conservadora y sin regresion.
+- Se preserva ADN UnADM y estructura de cinco ejes como abstraccion estable.
+- Se mantiene regla critica: no propagar salidas no parseables sin normalizacion.
+- Se refuerza compresion lossless por union-dedupe con deduplicacion semantica.
+- Destino Economia LDE conserva contexto local verificado: semestre 3, bloque 2, obligatoria, 8 creditos.
+- Se consolida memoria editorial de materia para Economía LDE.
+- Se sincronizan abstracciones transversales desde Filosofía del Derecho sin copiar redacción literal.
+- Se preserva identidad UnADM, enfoque jurídico aplicado y trazabilidad de fuentes.
+- Se confirma contexto local: semestre 3, bloque 2, obligatoria, 8 créditos.
+- Se conserva estrategia de compresión por unión y deduplicación sin regresión.
+- Se mantiene alerta por salidas previas no parseables de Codex y GPT-Pro.
+- Se refuerza ciclo 2 con normalización estructurada obligatoria antes de propagar.
+- Se sincroniza memoria transversal desde actividad de Filosofia del Derecho hacia materia Economia LDE sin copiar redaccion literal.
+- Se conserva compresion lossless por union-dedupe y sin regresion.
+- Se refuerzan reglas estables: identidad UnADM, estructura por ejes, trazabilidad de fuentes y cierre juridico.
+- Se mantiene alerta persistente por antecedentes de salidas no parseables y normalizacion obligatoria.
+- Se consolida cerebro editorial de Economía LDE con identidad UnADM.
+- Se conserva sincronización transversal desde Filosofía del Derecho solo como abstracción editorial estable.
+- Se mantiene enfoque jurídico con evidencia, análisis propio y conclusión transferible.
+- Se conserva alerta heredada de salida no parseable hasta cierre editorial.
+- Se aplica compresión por unión y deduplicación sin regresión.
+- Se consolida sincronización transversal desde actividad de Filosofía del Derecho hacia materia Economía LDE con estrategia conservadora.
+- Se preservan reglas estables: identidad UnADM, estructura por ejes, trazabilidad de fuentes y conclusión jurídica transferible.
+- Se refuerza compresión lossless por unión-deduplicación sin recorte ni regresión.
+- Se mantiene alerta persistente: bloquear propagación ante salidas no JSON parseables y normalizar respuestas no estructuradas.
+- Se corrigen artefactos de plantilla en README como mejora verificable de higiene editorial.
 
 ## identity_rules
 
@@ -103,6 +141,37 @@
 - Tratar salidas de modelos (GPT-Pro, Codex, Auto, Claude Foundry) como fuentes provisionales de control editorial, no academicas.
 - Supuesto: las alertas de parseo pertenecen a control de calidad y no a contenido disciplinar.
 - Supuesto: las alertas de parseo pertenecen a control de calidad editorial y no a contenido disciplinar.
+- Mantener identidad institucional UnADM en tono, formato y metadatos.
+- Usar contexto curricular verificado de Economia LDE: semestre 3, bloque 2, obligatoria, 8 creditos.
+- Conservar voz academica formal, clara y juridicamente precisa.
+- Marcar como supuesto todo dato no confirmado por consigna o planeacion oficial.
+- Tratar salidas heredadas no verificadas de modelos como provisionales, no como fuente academica.
+- Usar la carpeta de materia como entrada canonica.
+- Usar contexto de Licenciatura en Derecho para Economía LDE.
+- Ubicar Economía LDE en semestre 3, bloque 2, obligatoria, 8 créditos.
+- Citar la malla curricular de Derecho como fuente de ubicación curricular.
+- Conservar voz académica formal, clara y jurídicamente precisa.
+- Aplicar enfoque jurídico a conceptos y datos económicos.
+- Usar la carpeta de materia como entrada canónica.
+- Marcar como supuesto todo dato no confirmado por consigna o planeación oficial.
+- Tratar salidas heredadas de modelos como provisionales y no como fuente académica.
+- Registrar fuente Codex heredada solo como alerta de calidad.
+- Registrar fuente GPT-Pro heredada solo como alerta de calidad.
+- Usar contexto curricular local verificado de Economia LDE.
+- Conservar voz formal, clara y juridicamente precisa.
+- Marcar como supuesto todo dato no confirmado por consigna o planeacion.
+- Tratar salidas heredadas de modelos como provisionales hasta verificacion local.
+- Usar carpeta de materia como punto de entrada canonico.
+- Usar ubicación curricular verificada: semestre 3, bloque 2, obligatoria, 8 créditos.
+- Tratar fuentes heredadas no verificadas como provisionales hasta validación local.
+- No tratar salidas de modelos como fuente académica.
+- Usar la carpeta de materia como punto de entrada canónico.
+- Usar carpeta de materia como entrada canonica.
+- Aplicar enfoque jurídico a problemas económicos y sociales.
+- Tratar salidas heredadas de modelos como provisionales, no como fuente académica.
+- Usar contexto curricular verificado de Economía LDE: semestre 3, bloque 2, obligatoria, 8 créditos.
+- Tratar salidas heredadas de modelos no verificadas como provisionales, nunca como fuente académica.
+- Usar la carpeta de la materia como entrada canónica.
 
 ## structure_rules
 
@@ -133,6 +202,40 @@
 - Supuesto: los saltos rotos en README (eporte/eferencias) provienen de plantilla y deben corregirse.
 - Supuesto: saltos rotos en README (eporte o eferencias) provienen de plantilla y deben corregirse.
 - Supuesto: los saltos rotos en README (eporte o eferencias) provienen de plantilla y deben corregirse.
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar en bloques: conceptos o datos pertinentes, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear el producto a la planeacion semanal y al tipo solicitado.
+- Cerrar con conclusion juridica transferible a practica profesional o impacto social.
+- Iniciar con encuadre breve del problema jurídico, social o económico relevante.
+- Organizar cada producto con problema, conceptos o datos, evidencia, análisis propio y cierre.
+- Separar descripción, análisis y conclusión.
+- Distinguir conceptos económicos, datos empíricos, normas y argumentos jurídicos.
+- Alinear la entrega al producto solicitado por la planeación semanal.
+- Usar reporte, presentación o producto visual según consigna.
+- Cerrar con conclusión jurídica transferible a la práctica profesional o impacto social.
+- Mantener carpeta de materia como punto de entrada canónico.
+- Resolver tokens sin expandir antes de referenciar archivos.
+- Organizar cada entrega en problema, conceptos o datos, analisis propio y cierre.
+- Separar marco normativo o doctrinal cuando aplique.
+- Alinear formato final a la planeacion semanal.
+- Cerrar con conclusion juridica transferible a practica o impacto social.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Separar conceptos económicos, datos empíricos, marco normativo o doctrinal y postura propia.
+- Cerrar con conclusión jurídica transferible a práctica profesional o impacto social.
+- Abrir con encuadre breve de problema juridico o social.
+- Separar bloques: conceptos o datos, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el tipo de entrega con planeacion semanal.
+- Corregir tokens o artefactos de plantilla en README y documentos de apoyo.
+- Iniciar con encuadre breve del problema jurídico, económico o social.
+- Separar conceptos económicos, datos pertinentes y argumentos jurídicos.
+- Incluir marco normativo, doctrinal o institucional cuando la consigna lo requiera.
+- Desarrollar análisis propio con evidencia verificable.
+- Alinear cada producto a los cinco ejes del programa analítico de Economía.
+- Adaptar formato a la planeación: reporte, presentación o producto visual.
+- Separar en bloques: conceptos o datos, marco normativo/doctrinal, análisis propio y cierre.
+- Alinear cada entrega al producto solicitado en la planeación semanal.
+- Mantener secciones editoriales mínimas reutilizables en reporte y presentación.
 
 ## activity_rules
 
@@ -148,6 +251,33 @@
 - Distinguir conceptos economicos, datos y argumentos juridicos.
 - Conectar la conclusion con practica juridica o impacto social.
 - Adaptar cada actividad al producto solicitado (reporte, presentación o visual).
+- Adaptar cada entrega al formato pedido: reporte, presentacion o producto visual.
+- Incluir postura argumentada del estudiante; evitar texto solo descriptivo.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Distinguir conceptos economicos, datos empiricos y argumentos juridicos.
+- Verificar que el planteamiento responda a un problema concreto.
+- Incluir postura argumentada del estudiante.
+- Evitar entregas solo descriptivas o de resumen.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- No inventar hechos, normas, datos ni referencias.
+- Diferenciar evidencia económica de interpretación jurídica.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- Agregar fuentes específicas solo cuando la actividad las use.
+- No asumir fuentes de otras materias como bibliografía de Economía.
+- No asumir fuentes de semanas posteriores sin confirmación local.
+- Adaptar cada actividad al tipo solicitado: reporte, presentacion o visual.
+- Evitar entregas solo descriptivas.
+- Sustentar afirmaciones con fuente verificable y cita explicita.
+- Distinguir conceptos economicos, datos empiricos y argumento juridico.
+- Confirmar fuentes obligatorias de la semana antes de usarlas.
+- Adaptar cada actividad al producto solicitado: reporte, presentacion o visual.
+- Verificar que cada actividad responda a la consigna local.
+- No asumir fuentes de otra materia como obligatorias para Economía.
+- No trasladar redacción literal de Filosofía del Derecho.
+- Distinguir hechos, datos, conceptos económicos, normas y criterios propios.
+- Adaptar cada actividad al formato solicitado: reporte, presentación o producto visual.
+- Distinguir conceptos económicos, datos empíricos y argumentos jurídicos.
 
 ## quality_gates
 
@@ -162,6 +292,37 @@
 - Verificar que las fuentes citadas existan en economia.bib o assets locales.
 - Mantener alerta de parseo hasta cierre editorial documentado.
 - Verificar que fuentes citadas existan en economia.bib o assets locales.
+- Bloquear propagacion si la salida no es JSON parseable.
+- Revisar y normalizar respuestas no estructuradas antes de reutilizar.
+- Confirmar estructura minima completa antes de aplicar aguas abajo.
+- Exigir trazabilidad entre afirmaciones, citas en texto y archivo .bib.
+- Bloquear si hay campos criticos vacios sin marca de supuesto.
+- Verificar correspondencia del producto con la consigna vigente.
+- Bloquear propagación si la salida no es JSON parseable.
+- Revisar y normalizar respuestas no estructuradas antes de reutilizarlas.
+- Confirmar estructura mínima completa antes de aplicar aguas abajo.
+- Bloquear si hay campos críticos vacíos sin marca de supuesto.
+- Confirmar trazabilidad entre afirmaciones, citas en texto y archivo .bib.
+- Validar que las fuentes citadas existan en economia.bib o assets locales.
+- Validar consistencia entre metadatos de portada, README y plantilla base.
+- Verificar que el producto corresponda a la consigna de actividad.
+- Revisar que no haya afirmaciones sin respaldo o sin marca de supuesto.
+- Evitar regresiones respecto de reglas útiles previas.
+- Bloquear propagacion si salida no es JSON parseable.
+- Normalizar respuestas no estructuradas antes de reutilizar.
+- Validar estructura minima completa antes de aplicar aguas abajo.
+- Exigir trazabilidad entre afirmaciones, citas y .bib.
+- Verificar correspondencia entre producto y consigna.
+- Validar consistencia entre citas en texto y economia.bib.
+- Verificar correspondencia del producto con la consigna de actividad.
+- Confirmar trazabilidad entre afirmaciones, citas en texto y .bib.
+- Verificar correspondencia entre producto entregado y consigna vigente.
+- Validar estructura mínima completa antes de aplicar aguas abajo.
+- Bloquear campos críticos vacíos si no están marcados como supuesto.
+- Confirmar trazabilidad entre afirmaciones, citas y fuentes disponibles.
+- Validar consistencia entre citas en texto y archivo .bib.
+- Mantener alerta de parseo heredada hasta cierre editorial documentado.
+- Bloquear si existen campos críticos vacíos sin marca de supuesto.
 
 ## latex_rules
 
@@ -188,6 +349,48 @@
 - Usar estilo de citacion authoryear consistente con setcitestyle.
 - Evitar cambios de clase o paquetes sin justificacion tecnica verificable.
 - Mantener español y papel carta salvo instruccion oficial distinta.
+- Conservar plantilla base de reporte-economia.tex como referencia.
+- Usar espanol y letterpaper salvo instruccion oficial distinta.
+- Mantener estilo de citacion consistente con setcitestyle definido.
+- Evitar paquetes o comandos no estandar sin justificacion verificable.
+- Compilar sin errores criticos, sin referencias rotas y con rutas limpias.
+- Resolver tokens sin expandir en README o programa analitico antes de publicar.
+- Conservar reporte-economia.tex como plantilla base de reporte.
+- Conservar presentacion-economia.tex como plantilla base de presentación.
+- Usar acentos correctos en español en .tex y .bib.
+- Usar estilo de citación authoryear consistente con setcitestyle.
+- Compilar sin errores críticos y sin referencias rotas.
+- Mantener claves BibTeX estables.
+- Verificar nombres de archivos del README antes de referenciarlos.
+- Corregir caracteres anómalos en rutas o nombres antes de compilar.
+- Resolver tokens tipo $(@{...}.Slug) en README y programa analítico.
+- Usar economia.bib como nombre canónico local salvo confirmación distinta.
+- Mantener plantilla base local como referencia de formato.
+- Conservar metadatos academicos completos en portada.
+- Mantener estilo de citacion consistente con configuracion del documento.
+- Corregir tokens sin expandir en README o rutas antes de compilar.
+- Compilar sin errores criticos ni referencias rotas.
+- Conservar reporte-economia.tex como referencia base de formato.
+- Conservar presentacion-economia.tex como tipo soportado.
+- Usar codificación y acentos correctos en .tex y .bib.
+- Evitar paquetes, clases o comandos no estándar sin justificación técnica verificable.
+- Corregir artefactos visibles de plantilla en README y archivos de apoyo.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analítico.
+- Corregir rutas anómalas como eporte-economia.tex y eferencias-economia si existen.
+- Mantener plantilla base de la materia como referencia de formato.
+- Usar estilo de citacion consistente con configuracion del documento.
+- Mantener espanol y letterpaper salvo instruccion oficial distinta.
+- Evitar paquetes o comandos no estandar sin justificacion tecnica verificable.
+- Resolver tokens sin expandir en nombres de archivo y rutas antes de compilar.
+- Conservar reporte-economia.tex como referencia de formato base.
+- Mantener claves BibTeX estables para evitar referencias rotas.
+- Resolver tokens sin expandir en README y programa analítico.
+- Mantener plantilla base de reporte-economia.tex como referencia de formato.
+- Conservar metadatos académicos completos en portada.
+- Usar español y letterpaper salvo instrucción oficial distinta.
+- Mantener estilo de citación consistente con setcitestyle definido.
+- Evitar paquetes o comandos no estándar sin justificación verificable.
+- Corregir tokens sin expandir en README y programa analítico antes de referenciar archivos.
 
 ## bibliography_rules
 
@@ -204,6 +407,33 @@
 - Conservar unadmMallaDerecho2024 como referencia institucional local.
 - No tratar salidas de modelos como bibliografía académica.
 - No tratar salidas de modelos como bibliografia academica.
+- Usar economia.bib como repositorio local canonico de la materia.
+- Priorizar fuentes institucionales UnADM y documentos oficiales verificables.
+- Agregar al .bib solo referencias realmente usadas en el producto.
+- No inventar referencias ni usar salidas de modelos como bibliografia.
+- Conservar metadatos minimos: autor, titulo, anio, fuente/editorial o URL.
+- Registrar fecha de consulta en recursos web cuando aplique.
+- Conservar unadmSitioWeb si su fecha de consulta es verificable.
+- Registrar fuentes específicas de actividad en economia.bib.
+- No inventar referencias.
+- Conservar metadatos mínimos: autor, título, año, fuente o URL.
+- Distinguir bibliografía base de bibliografía específica de actividad.
+- Usar economia.bib como repositorio canonico de la materia.
+- Priorizar fuentes institucionales y normativas verificables.
+- No inventar referencias ni usar salidas de modelos como fuente academica.
+- Agregar solo fuentes realmente usadas en el producto.
+- Conservar metadatos minimos: autor, titulo, anio y fuente/URL.
+- Registrar fuentes específicas solo cuando se usen en el producto.
+- Conservar metadatos mínimos: autor, título, año, fuente editorial o URL.
+- No trasladar bibliografía específica de Filosofía del Derecho a Economía sin uso local verificado.
+- Agregar solo referencias realmente usadas en el producto.
+- No inventar referencias ni usar salidas de modelo como bibliografia academica.
+- Conservar metadatos minimos: autor, titulo, anio y fuente o URL.
+- Conservar metadatos mínimos: autor, título, año y fuente editorial o URL.
+- Usar economia.bib como repositorio canónico de la materia.
+- Agregar fuentes específicas solo cuando se usen en el producto.
+- No inventar referencias; usar solo fuentes consultables y verificables.
+- Conservar metadatos mínimos: autor, título, año, fuente o URL y nota de consulta cuando aplique.
 
 ## propagation_hints
 
@@ -260,6 +490,41 @@
 - Mantener bandera de normalizacion manual en ciclos con salida no parseable reutilizada.
 - Ciclo 22: mantener bandera de normalizacion manual si se reutiliza salida afectada por parseo.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar transversalmente solo abstracciones editoriales estables.
+- No propagar datos tematicos especificos de Filosofia del Derecho a Economia.
+- Mantener estrategia progresiva y conservadora: anexar mejoras verificables sin borrar reglas utiles previas.
+- Aplicar union-dedupe en cada ciclo para compresion lossless.
+- Mantener alerta de normalizacion manual mientras existan antecedentes de salida no parseable.
+- Propagar recursivamente solo tras validar JSON y estructura.
+- No trasladar redacción literal de Filosofía del Derecho a Economía.
+- Compartir solo patrones estables entre materias no equivalentes.
+- Priorizar identidad, estructura reusable, calidad y grafo conceptual.
+- Mantener incidencias de parseo como alerta persistente hasta cierre.
+- Ciclo 1 requiere normalización manual si se reutiliza.
+- Propagar solo abstracciones editoriales estables entre nodos no equivalentes.
+- No transferir redaccion literal ni contenidos tematicos especificos de Filosofia del Derecho.
+- Priorizar identidad, estructura reusable, gates de calidad y grafo conceptual.
+- Mantener estrategia progresiva y conservadora con no regresion.
+- Si falta contexto local, mantener cerebro minimo y abrir vacios como supuestos.
+- Propagar recursivamente solo después de validar JSON y estructura.
+- Propagar arriba y laterales solo tras normalización manual de alertas previas.
+- Aplicar unión y deduplicación para evitar duplicados sin recorte.
+- No propagar contenido temático de Filosofía del Derecho como contenido de Economía.
+- Propagar abstracciones estables: identidad, estructura, calidad, trazabilidad y argumentación.
+- Ciclo 1 y ciclo 2 requieren normalización manual si se reutilizan.
+- Propagar solo abstracciones editoriales estables en saltos transversales.
+- No propagar contenido tematico especifico de Filosofia del Derecho como regla de Economia.
+- Priorizar identidad, estructura reusable, quality gates y grafo conceptual.
+- Mantener estrategia progresiva y conservadora: anexar mejoras verificables sin borrar reglas utiles.
+- Mantener alerta de ciclo 1: normalizacion manual requerida si aparece salida no estructurada.
+- Compartir solo reglas generales entre materias no equivalentes.
+- Usar normalización manual si se reutiliza memoria de ciclo 1.
+- Evitar trasladar fuentes o conceptos locales de Filosofía del Derecho a Economía.
+- Propagar transversal y recursivamente solo reglas abstractas estables, no redacción literal.
+- Conservar reglas útiles previas y añadir solo mejoras verificables.
+- Evitar transferir contenidos temáticos específicos de Filosofía del Derecho como si fueran propios de Economía.
+- Mantener registro de incidencias de parseo como alerta persistente hasta cierre.
+- Aplicar unión-deduplicación en cada ciclo para compresión lossless.
 
 ## open_questions
 
@@ -284,3 +549,109 @@
 - Validar si unadmSitioWeb requiere actualizacion anual de year y fecha de consulta.
 - Confirmar resolucion y regeneracion de placeholders en README y programa analitico.
 - Cerrar validacion editorial de alertas de parseo heredadas.
+- Confirmar nombre oficial de figura docente para portada.
+- Confirmar si existe rubrica especifica por actividad en Economia LDE.
+- Confirmar periodicidad de actualizacion de year y fecha de consulta de unadmSitioWeb.
+- Supuesto: economia.bib es el nombre canonico final y unico del archivo bibliografico local.
+- Confirmar si el README debe corregir artefactos de tokens y saltos de linea rotos.
+- Confirmar nombre de figura docente para metadatos de portada.
+- Confirmar si existe guía formal de formato adicional para Economía LDE.
+- Validar actualización anual de year y fecha de consulta en unadmSitioWeb.
+- Confirmar rúbricas específicas de actividades de Economía.
+- Confirmar fuentes obligatorias por semana.
+- Supuesto: los artefactos anómalos del README son errores de plantilla.
+- Supuesto: economia.bib es el archivo .bib canónico local.
+- Supuesto: la referencia heredada de Codex aplica solo como alerta de calidad.
+- Supuesto: la referencia heredada de GPT-Pro aplica solo como alerta de calidad.
+- Confirmar guia formal adicional de formato para Economia LDE.
+- Confirmar figura docente en metadatos de portada.
+- Confirmar si hay rubrica especifica por actividad.
+- Confirmar actualizacion anual de year y consulta en unadmSitioWeb.
+- Supuesto: economia.bib es el nombre canonico final del .bib local.
+- Confirmar producto exacto de cada actividad: reporte, presentación o visual.
+- Confirmar rúbrica de evaluación específica.
+- Confirmar corrección local de artefactos de plantilla en README.
+- Supuesto: Codex y GPT-Pro aplican solo como alertas de calidad, no como fuentes académicas.
+- Confirmar consignas reales de actividades de Economia para ajustar artefactos por semana.
+- Confirmar rubrica formal de evaluacion de Economia LDE.
+- Confirmar nombre definitivo de figura docente en portada.
+- Confirmar si README debe mostrar solo economia.bib como nombre canonico [supuesto por token detectado].
+- Confirmar si las actividades requieren reporte, presentación u otro formato principal.
+- Confirmar rúbricas específicas de evaluación.
+- Confirmar rúbrica oficial específica de Economía LDE para ajustar profundidad argumentativa.
+- Confirmar si existe guía formal adicional de formato para la materia.
+- Confirmar si README debe mostrar solo economia.bib como nombre canónico sin tokens.
+- Supuesto: no se dispone aún de consignas textuales de actividades concretas de Economía.
+- Confirmar política de actualización anual para year y fecha de consulta en unadmSitioWeb.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad UnADM
+- Integridad academica
+- Trazabilidad de fuentes
+- Problema juridico-social
+- Analisis propio
+- Conclusion transferible
+- Economia LDE
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Organizar cada producto con problema, conceptos o datos, analisis propio y cierre argumentativo.
+- Alinear contenido a los cinco ejes del programa analitico de Economia.
+- Mantener la carpeta de materia como punto de entrada canonico.
+- Agregar fuentes especificas de actividad en economia.bib.
+- Organizar cada producto con problema, conceptos o datos, análisis propio y cierre argumentativo.
+- Alinear contenido a los cinco ejes del programa analítico de Economía.
+
+### identidad_estilistica
+- Enunciados breves y verificables.
+- Supuestos explicitados cuando falte contexto.
+- Separacion clara entre descripcion, analisis y conclusion.
+- Mantener identidad institucional UnADM en tono, formato y metadatos.
+- Usar contexto curricular verificado de Economia LDE: semestre 3, bloque 2, obligatoria, 8 creditos.
+- Conservar voz academica formal, clara y juridicamente precisa.
+- Marcar como supuesto todo dato no confirmado por consigna o planeacion oficial.
+- Tratar salidas heredadas no verificadas de modelos como provisionales, no como fuente academica.
+- Usar la carpeta de materia como entrada canonica.
+- Mantener identidad institucional UnADM en todo entregable.
+- Usar contexto de Licenciatura en Derecho para Economia (semestre 3, bloque 2, obligatoria, 8 creditos).
+- Conservar voz academica formal y enfoque juridico aplicado.
+
+### patrones_argumentativos
+- Del problema al concepto, del concepto a la evidencia, de la evidencia al analisis propio, del analisis al cierre juridico.
+- Afirmacion respaldada por fuente verificable y cita trazable.
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar en bloques: conceptos o datos pertinentes, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear el producto a la planeacion semanal y al tipo solicitado.
+- Cerrar con conclusion juridica transferible a practica profesional o impacto social.
+- Adaptar cada entrega al formato pedido: reporte, presentacion o producto visual.
+- Incluir postura argumentada del estudiante; evitar texto solo descriptivo.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Distinguir conceptos economicos, datos empiricos y argumentos juridicos.
+
+### grafo_de_conocimiento
+- Conceptos: 397
+- Citas: 2
+- Relaciones reforzadas: 96
+- Evidencias: 138
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/economia-lde/reporte-economia.tex`
+- Caracteres LaTeX preservados: 4071
+- Bloques/parrafos indexados: 20
+- Claves citadas: ninguna
+- Claves sin referencia: ninguna

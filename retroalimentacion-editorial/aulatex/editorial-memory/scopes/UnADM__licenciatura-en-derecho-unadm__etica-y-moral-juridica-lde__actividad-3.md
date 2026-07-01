@@ -43,6 +43,50 @@
 - Preservar historial de fallas de parseo JSON en ciclos previos.
 - Mantener normalizacion manual previa cuando existan antecedentes de fallo.
 - Registrar ciclo 22 con validacion de parseo y control manual previo.
+- Se consolida memoria lateral desde Filosofía del Derecho hacia Ética y Moral Jurídica con transferencia de patrones reutilizables.
+- Se preservan reglas institucionales UnADM, estructura canónica y compresión lossless por deduplicación.
+- Se refuerza control de calidad: JSON parseable, normalización previa y bloqueo de propagación con ambigüedad crítica.
+- Se integra el ADN editorial común: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.
+- Se mantiene separación entre reglas transferibles y contenido específico no transferible del nodo origen.
+- Se consolida memoria editorial de Actividad 3 en Ética y Moral Jurídica.
+- Se preserva identidad institucional UnADM y ubicación curricular local.
+- Se refuerza transferencia lateral desde Filosofía del Derecho solo como patrón reutilizable.
+- Se conserva historial de fallas previas de parseo JSON.
+- Se mantiene normalización manual antes de propagación cuando aplique.
+- Se aplica compresión lossless por unión y deduplicación semántica.
+- Se separan reglas transferibles de contenido específico del nodo origen.
+- Se refuerzan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.
+- Se consolida refuerzo lateral desde Filosofía del Derecho hacia Ética y Moral Jurídica con transferencia solo de patrones reutilizables.
+- Se preserva el ADN UnADM: identidad institucional, estructura canónica, evidencia verificable y cierre jurídico transferible.
+- Se mantiene compresión lossless por deduplicación y unión semántica, sin recorte de reglas útiles.
+- Se elimina el supuesto inválido de falta de JSON en origen; el origen actual sí es parseable y verificable.
+- Se refuerza la normalización previa a propagación recursiva por historial de fallas parseables en el destino.
+- Memoria consolidada para Actividad 3 de Ética y Moral Jurídica.
+- Transferencia lateral desde Filosofía del Derecho limitada a patrones reutilizables.
+- Se preserva identidad UnADM y ubicación curricular verificada por README local.
+- Se refuerza ADN editorial común: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.
+- Se mantiene normalización estructurada antes de propagación recursiva.
+- Se conserva historial de fallas de parseo JSON como alerta operativa.
+- Se aplica compresión lossless por deduplicación semántica.
+- No se transfiere redacción literal ni bibliografía exclusiva del nodo origen.
+- Se refuerza transferencia lateral desde Filosofía del Derecho hacia Ética y Moral Jurídica con solo patrones reutilizables.
+- Se conserva normalización estructurada obligatoria y bloqueo por JSON no parseable.
+- Se preserva ADN editorial común: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.
+- Se mantiene compresión lossless por deduplicación semántica sin recorte.
+- Se integra validación local con README, programa analítico y .bib del nodo destino.
+- Se refuerza identidad UnADM y Licenciatura en Derecho.
+- Se preserva historial de fallas de JSON parseable en Actividad 3.
+- Se mantiene normalización manual antes de propagación.
+- Se transfiere lateralmente solo el patrón reutilizable de Filosofía del Derecho.
+- Se conserva el eje común: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.
+- Se integra el marco local verificable del README y programa analítico destino.
+- Se evita copiar contenido específico, conclusiones o bibliografía exclusiva del nodo origen.
+- Se refuerza memoria lateral con patrones reutilizables entre asignaturas sin copiar contenido específico.
+- Se conserva identidad UnADM, ubicación curricular y pauta editorial canónica del nodo destino.
+- Se consolida compresión lossless por deduplicación semántica y textual sin recorte de reglas útiles.
+- Se mantiene bloqueo de propagación ante salidas no JSON parseables y normalización previa obligatoria.
+- Se preservan ejes editoriales comunes: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.
+- Se añade control explícito de fuentes provisionales y marcado de [Supuesto] cuando falte consigna local.
 
 ## identity_rules
 
@@ -61,6 +105,45 @@
 - Fuente provisional: Claude Foundry desde Actividad 1.
 - Fuente provisional: GPT-Pro desde Actividad 1.
 - [Supuesto] No hay reglas validas transferibles desde origen por falta de JSON parseable en ciclos previos.
+- Mantener identidad institucional UnADM en tono, formato y trazabilidad.
+- Vincular la actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Usar la carpeta de asignatura destino como punto de entrada canónico.
+- Marcar como [Supuesto] todo dato no visible en la consigna local de Actividad 3.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmación local.
+- Conservar referencia explícita de origen, destino, ciclo y tipo de relación en metadatos de consolidación.
+- Alinear contenido a Licenciatura en Derecho.
+- Usar ubicación curricular local: semestre 1, bloque 2, obligatoria, 8 créditos.
+- Usar tono académico formal con criterio jurídico propio.
+- Marcar como [Supuesto] todo dato no visible en la consigna local.
+- Tratar salidas previas de Codex, Auto, Claude Foundry y GPT-Pro como provisionales hasta verificación local.
+- Citar la malla curricular de Derecho para ubicación curricular cuando se use ese dato.
+- Conservar referencia de origen y destino en metadatos de consolidación.
+- No trasladar conclusiones ni bibliografía exclusiva de Filosofía del Derecho.
+- Mantener identidad institucional UnADM en tono y formato del entregable.
+- Vincular toda actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Usar la carpeta de la asignatura destino como punto de entrada canónico.
+- Conservar trazabilidad de origen y destino en metadatos de consolidación.
+- Mantener identidad institucional UnADM en todo entregable.
+- Alinear la actividad con Licenciatura en Derecho.
+- Usar ubicación curricular verificada: semestre 1, bloque 2, obligatoria, 8 créditos.
+- Usar la carpeta destino como punto de entrada canónico.
+- Citar la malla curricular UnADM para ubicación curricular cuando aplique.
+- Mantener enfoque ético-jurídico sin moralizar sin evidencia.
+- Tratar fuentes provisionales de Codex, Auto, Claude Foundry y GPT-Pro como no verificadas hasta confirmación local.
+- Conservar trazabilidad entre origen, destino y ciclo de consolidación.
+- Mantener identidad institucional UnADM en tono y formato.
+- Vincular actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Usar carpeta de asignatura destino como entrada canónica.
+- Conservar trazabilidad de origen, destino, ciclo y tipo de relación lateral-transversal.
+- Ubicar la asignatura en semestre 1, bloque 2, obligatoria, 8 créditos.
+- Distinguir ética jurídica y moral jurídica con precisión conceptual.
+- Evitar tono moralizante sin evidencia.
+- Tratar fuentes heredadas no verificadas como provisionales.
+- Conservar trazabilidad editorial entre ciclos.
+- Fuentes provisionales registradas: Codex, Auto, Claude Foundry y GPT-Pro desde Actividad 1.
+- Usar carpeta de la asignatura destino como entrada canónica.
+- Tratar fuentes heredadas no verificadas como provisionales hasta validación local.
+- Conservar referencia explícita de origen-destino y ciclo en metadatos editoriales.
 
 ## structure_rules
 
@@ -71,6 +154,34 @@
 - Separar planteamiento, fundamentos, analisis y cierre.
 - Incluir problema juridico o social, analisis propio y conclusion transferible.
 - Mantener compatibilidad con estructura canonica de la asignatura.
+- Definir objetivo puntual de la actividad antes del desarrollo.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Separar secciones en: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear el producto final a la consigna semanal real de Actividad 3.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Mantener estructura base cuando falte consigna textual y evitar inventar formato final.
+- Entregar JSON parseable cuando el flujo lo exija.
+- Definir objetivo puntual antes del desarrollo.
+- Separar planteamiento, conceptos clave, fundamentos, análisis propio y cierre.
+- Usar marco normativo o doctrinal solo cuando la consigna lo requiera.
+- Transformar la planeación en reporte, presentación o producto visual según consigna.
+- Mantener compatibilidad con la estructura canónica de la asignatura.
+- Aplicar deduplicación semántica al consolidar memoria.
+- Separar secciones en planteamiento, fundamentos, análisis propio y cierre.
+- Usar conceptos clave antes de emitir valoración ética o jurídica.
+- Incluir marco normativo, doctrinal o conceptual según consigna.
+- Transformar la planeación en reporte, presentación o producto visual según instrucción local.
+- Mantener estructura base cuando falte consigna textual.
+- Evitar inventar formato final si la consigna no está confirmada.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Separar planteamiento, fundamentos, análisis y cierre.
+- Usar secciones de conceptos clave, marco normativo o doctrinal, análisis propio y conclusión.
+- Adaptar el formato a reporte, presentación o producto visual según consigna.
+- Incluir conclusión jurídica transferible a la práctica profesional.
+- Mantener estructura base si falta la consigna textual.
+- Abrir con encuadre breve del problema jurídico o social.
+- Alinear el producto final a la consigna real de Actividad 3.
+- Si falta consigna textual, usar estructura base y evitar inventar formato final.
 
 ## activity_rules
 
@@ -80,6 +191,28 @@
 - Conservar trazabilidad de cambios entre ciclos.
 - Integrar los cinco ejes del programa analitico en el desarrollo de actividad.
 - Integrar los cinco ejes del programa analitico en el desarrollo.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- Incluir postura argumentada del estudiante; evitar entrega solo descriptiva.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- Integrar los cinco ejes del programa analítico en el desarrollo.
+- No reutilizar conclusiones específicas de materias hermanas.
+- Transferir solo patrones editoriales y no redacción literal entre nodos laterales.
+- Adaptar Actividad 3 a la pauta editorial de Ética y Moral Jurídica.
+- Integrar los cinco ejes del programa analítico local.
+- Sostener postura propia con fundamento jurídico y ético.
+- Evitar entregas solo descriptivas.
+- Distinguir ética jurídica, moral jurídica y Derecho con precisión conceptual.
+- Comparar posturas éticas solo con criterio de pertinencia para la actividad.
+- No reutilizar redacción literal de materias hermanas.
+- Transferir solo patrones editoriales entre nodos laterales.
+- Incluir postura argumentada del estudiante y evitar entrega solo descriptiva.
+- Evitar entregas solo descriptivas o de resumen.
+- Distinguir ética jurídica, moral jurídica y derecho positivo cuando proceda.
+- Comparar posturas éticas solo si la consigna lo solicita o lo justifica.
+- No reutilizar conclusiones específicas de Filosofía del Derecho.
+- No asumir fuentes obligatorias no visibles en la consigna.
+- Transferir solo patrones editoriales entre nodos laterales, no redacción literal ni conclusiones hermanas.
+- Mantener trazabilidad de cambios entre ciclos de consolidación.
 
 ## quality_gates
 
@@ -90,6 +223,24 @@
 - Revisar salida no estructurada antes de aplicar aguas abajo.
 - Escalar a revision humana si persiste salida no parseable.
 - Si falla parseo en un ciclo, registrar incidente y pausar autopropagacion.
+- Bloquear propagación si la salida no es JSON parseable.
+- Revisar estructura mínima completa antes de aplicar aguas abajo.
+- Normalizar respuestas no estructuradas antes de reutilizarlas.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca de [Supuesto].
+- Validar consistencia entre citas en texto y archivo .bib.
+- Escalar a revisión humana si persisten fallas de parseo en ciclos consecutivos.
+- Confirmar consistencia con README y programa analítico local.
+- Validar correspondencia del producto con la consigna de Actividad 3.
+- Bloquear propagación automática si hay ambigüedad crítica.
+- Escalar a revisión humana si persiste salida no parseable.
+- Registrar incidente y pausar autopropagación cuando falle el parseo.
+- Registrar incidente si falla el parseo en un ciclo.
+- Evitar regresiones respecto de reglas útiles previas.
+- Pausar autopropagación si persiste salida no parseable.
+- Escalar a revisión humana si hay ambigüedad crítica.
+- Confirmar que toda afirmación tenga respaldo o marca de [Supuesto].
+- Verificar correspondencia del producto con la consigna de Actividad 3.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca [Supuesto].
 
 ## latex_rules
 
@@ -98,6 +249,36 @@
 - Asegurar que citas en LaTeX correspondan a claves BibTeX existentes.
 - Mantener compatibilidad con reporte-etica-y-moral-juridica.tex y presentacion-etica-y-moral-juridica.tex.
 - Evitar comandos o paquetes no justificados por el producto solicitado.
+- Usar codificación y acentos correctos en español en .tex y .bib.
+- Mantener claves BibTeX estables; deduplicar por equivalencia verificable sin romper citas existentes.
+- Evitar comandos o paquetes no estándar sin justificación editorial.
+- Compilar sin errores críticos y sin referencias rotas.
+- Verificar nombres de archivos definidos en README antes de referenciarlos.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analítico.
+- Mantener compatibilidad con reporte-etica-y-moral-juridica.tex.
+- Mantener compatibilidad con presentacion-etica-y-moral-juridica.tex.
+- Evitar paquetes o comandos no estándar sin justificación editorial.
+- Asegurar que las citas en LaTeX correspondan a claves BibTeX existentes.
+- Mantener claves BibTeX estables.
+- Deduplicar claves solo por equivalencia verificable sin romper citas existentes.
+- Corregir rutas anómalas visibles como eporte y eferencias antes de compilar.
+- Mantener claves BibTeX estables y deduplicar por equivalencia verificable sin romper citas.
+- Mantener compatibilidad con presentacion-etica-y-moral-juridica.tex si la consigna pide presentación.
+- Evitar paquetes no estándar sin justificación editorial.
+- Asegurar que las citas LaTeX correspondan a claves BibTeX existentes.
+- Deduplicar claves solo por equivalencia verificable.
+- Corregir entradas malformadas del README antes de usarlas como rutas.
+- No copiar LaTeX completo entre actividades hermanas.
+- Mantener claves BibTeX estables; deduplicar solo por equivalencia verificable.
+- Mantener compatibilidad con presentacion-etica-y-moral-juridica.tex cuando aplique.
+- Usar codificación y acentos correctos en español.
+- Asegurar que toda cita LaTeX tenga clave BibTeX existente.
+- Compilar sin errores críticos.
+- Compilar sin referencias rotas.
+- Corregir caracteres anómalos en rutas antes de compilar.
+- [Supuesto] El .bib canónico local es etica-y-moral-juridica.bib por Slug y archivo existente.
+- Mantener claves BibTeX estables y deduplicar por equivalencia verificable.
+- [Supuesto] Corregir líneas con caracteres truncados en README antes de automatizar rutas.
 
 ## bibliography_rules
 
@@ -107,6 +288,31 @@
 - Preferir fuentes institucionales UnADM cuando apliquen.
 - Mantener trazabilidad de fusion de claves BibTeX duplicadas.
 - Marcar y corregir entradas BibTeX incompletas antes de citarlas.
+- Priorizar fuentes institucionales UnADM y materiales jurídicos verificables.
+- Registrar fuentes específicas de la actividad en etica-y-moral-juridica.bib.
+- No inventar referencias ni completar metadatos sin evidencia documental.
+- Conservar metadatos mínimos: autor, título, año y fuente editorial o URL.
+- Distinguir bibliografía base de bibliografía específica de actividad.
+- Marcar entradas incompletas y corregirlas antes de citarlas.
+- Registrar fuentes específicas de actividad en etica-y-moral-juridica.bib.
+- No inventar referencias.
+- No completar metadatos sin evidencia documental.
+- Usar solo obras realmente consultables.
+- Mantener trazabilidad de fusión de claves BibTeX duplicadas.
+- Marcar entradas BibTeX incompletas antes de citarlas.
+- Corregir entradas incompletas antes de usarlas como soporte.
+- No asumir bibliografía del nodo origen como aplicable a Actividad 3.
+- Marcar y corregir entradas incompletas antes de citarlas.
+- Priorizar fuentes institucionales UnADM cuando apliquen.
+- Usar materiales jurídicos y éticos verificables.
+- Marcar entradas incompletas antes de citarlas.
+- Corregir entradas incompletas antes de incorporarlas al texto.
+- No importar bibliografía exclusiva de Filosofía del Derecho salvo consulta local verificable.
+- Conservar metadatos mínimos: autor o editor, título, año y fuente editorial o URL.
+- Corregir entradas incompletas antes de citarlas.
+- No importar bibliografía exclusiva de Filosofía del Derecho al nodo destino.
+- Distinguir bibliografía base de bibliografía específica por actividad.
+- Mantener trazabilidad de fusión cuando existan claves duplicadas de la misma obra.
 
 ## propagation_hints
 
@@ -184,6 +390,46 @@
 - Ciclo 22: ejecutar validacion de parseo JSON antes de confirmar propagacion.
 - Ciclo 22: mantener normalizacion manual previa si se reutiliza salida.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente solo después de validar JSON y estructura.
+- Aplicar estrategia progresiva por analogía controlada: transferir patrones, no contenidos cerrados.
+- Reutilizar reglas institucionales de calidad sin perder especificidad local del destino.
+- Evitar regresiones: no eliminar reglas útiles previas ya verificadas.
+- Cuando falte consigna local, propagar plantilla base y abrir preguntas en vez de inferir contenido.
+- Mantener bitácora de refuerzo lateral por ciclo para auditoría editorial.
+- Reutilizar reglas institucionales de calidad sin reducir especificidad local.
+- Aplicar analogía controlada entre Filosofía del Derecho y Ética y Moral Jurídica.
+- Propagar solo patrones generales cuando falte consigna textual.
+- Evitar regresiones respecto de reglas útiles previas.
+- Mantener separación entre reglas transferibles y contenido específico del origen.
+- Ciclos 1 a 11 requieren normalización manual si se reutilizan.
+- Mantener control por ciclo en propagación recursiva.
+- Pausar autopropagación ante ambigüedad crítica o salida no parseable.
+- Aplicar estrategia progresiva por analogía controlada: transferir patrón, no contenido temático específico.
+- Evitar regresiones: nunca borrar reglas útiles previas ya validadas.
+- Cuando falte consigna local, propagar solo reglas generales y abrir preguntas.
+- Mantener bitácora por ciclo con incidentes de parseo y acciones de normalización.
+- Reutilizar reglas institucionales sin reducir especificidad local.
+- Aplicar analogía controlada entre materias de primer semestre.
+- Transferir identidad, estructura, calidad y patrones argumentativos generales.
+- No transferir redacción literal ni conclusiones específicas entre nodos laterales.
+- Propagar solo reglas generales cuando falte consigna textual.
+- Ciclos previos con fallas de parseo requieren normalización manual si se reutilizan.
+- Conservar separación entre reglas transferibles y contenido local.
+- Usar destino como autoridad para bibliografía y formato final.
+- Aplicar refuerzo-lateral por analogía controlada: identidad, estructura, calidad y patrones argumentativos.
+- No propagar contenido temático específico del origen cuando no sea transversal.
+- Conservar reglas útiles previas y agregar solo mejoras verificables.
+- Registrar en bitácora cada ciclo con cambios, supuestos y validaciones.
+- Aplicar analogía controlada entre asignaturas laterales.
+- Propagar patrones comunes, no redacción literal.
+- Propagar conceptos transversales solo si son pertinentes a Ética y Moral Jurídica.
+- Mantener control por ciclo.
+- Registrar origen y destino en metadatos de consolidación.
+- Bloquear propagación automática ante ambigüedad crítica.
+- Reusar reglas institucionales de calidad sin perder especificidad local del destino.
+- Aplicar analogía controlada: transferir marco argumentativo, no contenidos temáticos cerrados.
+- Preservar historial de incidentes de parseo para prevenir regresiones.
+- Si falta dato local, propagar plantilla base y abrir pregunta en lugar de inferir contenido.
 
 ## open_questions
 
@@ -192,3 +438,113 @@
 - Precisar umbral de bloqueo automatico tras multiples fallas de parseo.
 - Definir formato minimo de metadatos de trazabilidad por ciclo.
 - Verificar y corregir entrada BibTeX truncada de sierraUniversidadNacional1910.
+- Confirmar consigna textual exacta de Actividad 3 en Ética y Moral Jurídica.
+- Confirmar tipo de producto requerido: reporte, presentación u otro formato.
+- Confirmar rúbrica de evaluación específica para ajustar profundidad argumentativa.
+- Definir política operativa de fusión para claves BibTeX duplicadas en la materia destino.
+- Corregir y completar la entrada truncada sierraUniversidadNacional1910 en el .bib local.
+- [Supuesto] Confirmar si la actividad exige fuentes obligatorias adicionales a la bibliografía base.
+- Confirmar consigna textual exacta de Actividad 3.
+- Confirmar rúbrica de evaluación específica.
+- Confirmar fuentes obligatorias de la semana correspondiente.
+- Definir plantilla exacta de secciones para Actividad 3.
+- Definir formato mínimo de metadatos de trazabilidad por ciclo.
+- Precisar umbral de bloqueo automático tras múltiples fallas de parseo.
+- Definir política operativa de fusión para claves BibTeX duplicadas.
+- Verificar y completar la entrada BibTeX truncada sierraUniversidadNacional1910.
+- [Supuesto] Confirmar si la actividad exige fuentes adicionales a la bibliografía base.
+- Confirmar tipo de producto requerido en Actividad 3: reporte, presentación u otro.
+- Confirmar rúbrica de evaluación específica para calibrar profundidad argumentativa.
+- Confirmar política operativa de fusión de claves BibTeX duplicadas en la materia destino.
+- Corregir entrada truncada sierraUniversidadNacional1910 en etica-y-moral-juridica.bib.
+- [Supuesto] Verificar si existen fuentes obligatorias adicionales a la bibliografía base.
+- Confirmar si la actividad exige línea de tiempo, cuadro comparativo o análisis escrito.
+- Confirmar criterio operativo para fusionar claves BibTeX duplicadas.
+- Corregir y completar entrada truncada sierraUniversidadNacional1910 en el .bib local.
+- Verificar rutas malformadas en README: reporte y referencias.
+- Confirmar nombre canónico final del archivo .bib local.
+- [Supuesto] etica-y-moral-juridica.bib es el .bib canónico por Slug del README.
+- [Supuesto] pueden requerirse fuentes adicionales a la bibliografía base.
+- Confirmar consigna textual exacta de Actividad 3 en la materia destino.
+- Definir política operativa final para fusionar claves BibTeX duplicadas.
+- Corregir entrada truncada sierraUniversidadNacional1910 en el .bib local.
+- [Supuesto] Confirmar si existen fuentes obligatorias adicionales a la bibliografía base.
+- Corregir y completar entrada truncada sierraUniversidadNacional1910.
+- Confirmar umbral de bloqueo automático tras múltiples fallas de parseo.
+- Verificar rutas anómalas del README: eporte y eferencias.
+- [Supuesto] Confirmar si Actividad 3 exige fuentes adicionales a la bibliografía base.
+- Confirmar tipo de producto requerido en la semana: reporte, presentación u otro.
+- Definir criterio operativo final para fusionar claves BibTeX duplicadas.
+- Confirmar si existen fuentes obligatorias adicionales a la bibliografía base. [Supuesto]
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad institucional UnADM
+- Ejes editoriales de actividad
+- Integridad académica
+- Ética jurídica
+- Moral jurídica
+- Conclusión jurídica transferible
+- Se consolida memoria lateral desde Filosofía del Derecho hacia Ética y Moral Jurídica con transferencia de patrones reutilizables
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Incluir problema juridico o social, analisis y conclusion transferible.
+- Separar claramente planteamiento, fundamentos, analisis y cierre.
+- Separar planteamiento, fundamentos, analisis y cierre.
+- Incluir problema juridico o social, analisis propio y conclusion transferible.
+- Mantener compatibilidad con estructura canonica de la asignatura.
+- Definir objetivo puntual de la actividad antes del desarrollo.
+
+### identidad_estilistica
+- Apertura con objetivo y problema.
+- Desarrollo por secciones funcionales y verificables.
+- Cierre con criterio jurídico propio y aplicabilidad.
+- Marcado explícito de supuestos y límites de evidencia.
+- Mantener identidad institucional UnADM en tono, formato y trazabilidad.
+- Vincular la actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Usar la carpeta de asignatura destino como punto de entrada canónico.
+- Marcar como [Supuesto] todo dato no visible en la consigna local de Actividad 3.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmación local.
+- Mantener identidad UnADM en todo entregable.
+- Alinear contenido a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Usar tono academico formal con criterio juridico propio.
+
+### patrones_argumentativos
+- Problema inicial -> marco conceptual/normativo -> análisis propio -> conclusión aplicada.
+- Afirmación -> evidencia verificable -> interpretación jurídica -> postura personal.
+- Comparación ética/moral/jurídica con criterio de pertinencia para el caso.
+- Definir objetivo puntual de la actividad antes del desarrollo.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Separar secciones en: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear el producto final a la consigna semanal real de Actividad 3.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Mantener estructura base cuando falte consigna textual y evitar inventar formato final.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- Incluir postura argumentada del estudiante; evitar entrega solo descriptiva.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+
+### grafo_de_conocimiento
+- Conceptos: 386
+- Citas: 27
+- Relaciones reforzadas: 91
+- Evidencias: 146
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/etica-y-moral-juridica-lde/reporte-etica-y-moral-juridica-Actividad-3.tex`
+- Caracteres LaTeX preservados: 15804
+- Bloques/parrafos indexados: 44
+- Claves citadas: huertaEticaConClasicos2000, ronquilloarmasEticaGeneralProfesional2018, lopezmartinezTecnicasDidacticas2023, barredaOracionCivica1867, sierraUniversidadNacional1910, casoExistencia1916, vasconcelosRazaCosmica1925, ramosPerfil1934, sanchezVazquezEtica1969, gonzalezEthosDestino1996, villoroPoderValor1997, singerCompendioEtica1995
+- Claves sin referencia: ninguna

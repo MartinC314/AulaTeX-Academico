@@ -362,6 +362,16 @@
 - Se refuerza regla troncal: normalizacion estructurada y JSON parseable antes de toda propagacion.
 - Se mantienen ejes editoriales estables: problema, conceptos, evidencia, analisis propio y conclusion juridica.
 - Se evita transferir conclusiones o bibliografia exclusiva de Actividad 1 hacia Actividad 4.
+- Se preserva identidad UnADM y marco curricular: semestre 1, bloque 2, obligatoria, 8 creditos.
+- Se refuerzan ejes editoriales estables: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Supuesto: la consigna especifica de Actividad 4 no esta visible; no fijar producto final sin confirmacion.
+- Se refuerza normalización estructurada y validación JSON estricta por antecedentes de salidas no parseables.
+- Se transfieren patrones reutilizables; no se copian conclusiones ni bibliografía exclusiva del nodo hermano.
+- Supuesto: la consigna específica de Actividad 4 no está visible y requiere confirmación local.
+- Se preserva identidad institucional UnADM y contexto curricular verificable.
+- Se refuerza validación JSON estricta y normalización estructurada antes de propagar.
+- Se transfieren solo patrones reutilizables desde Actividad 1: estructura, calidad, trazabilidad y argumentacion.
+- Se evita copiar conclusiones, redaccion literal y bibliografia exclusiva del nodo hermano.
 
 ## identity_rules
 
@@ -529,6 +539,10 @@
 - Alinear actividad con Licenciatura en Derecho y asignatura Filosofia del Derecho.
 - Alinear cada entrega a Licenciatura en Derecho y asignatura Filosofia del Derecho.
 - Tratar memoria de fuentes no verificadas como provisional hasta confirmacion local.
+- Alinear toda entrega a UnADM, Licenciatura en Derecho y Filosofia del Derecho.
+- Mantener tono institucional UnADM, formal y jurídico.
+- Alinear la actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.
+- Alinear cada entrega con UnADM y Licenciatura en Derecho.
 
 ## structure_rules
 
@@ -626,6 +640,7 @@
 - Alinear el producto final a la consigna semanal vigente.
 - Cerrar con conclusion juridica aplicable a la practica profesional.
 - Alinear el producto final a la planeacion semanal y consigna de Actividad 4.
+- Alinear el formato al producto pedido por planeacion semanal.
 
 ## activity_rules
 
@@ -854,6 +869,12 @@
 - No asumir bibliografia de otras semanas sin validar pertinencia local.
 - No asumir que bibliografia de otras semanas aplica automaticamente a Actividad 4.
 - Confirmar producto exacto de Actividad 4 antes de fijar plantilla final.
+- Aplicar los cinco ejes del programa analitico a Actividad 4.
+- Supuesto: confirmar si el producto es reporte, presentacion u otro formato.
+- Adaptar la redacción al tipo de producto requerido en Actividad 4.
+- No asumir fuentes de otras semanas sin confirmación.
+- Confirmar que el producto final coincida con la consigna de Actividad 4.
+- Sustentar afirmaciones con citas verificables y explicitas.
 
 ## quality_gates
 
@@ -991,6 +1012,12 @@
 - Verificar estructura minima completa antes de aplicar aguas abajo.
 - Confirmar correspondencia del producto con la consigna de Actividad 4.
 - Validar correspondencia entre consigna local y tipo de artefacto entregado.
+- Verificar estructura minima completa antes de reutilizar.
+- Validar correspondencia entre consigna de Actividad 4 y producto generado.
+- Verificar esquema mínimo completo antes de reutilizar aguas abajo.
+- Comprobar correspondencia entre producto entregado y consigna local de Actividad 4.
+- Confirmar consistencia entre citas en texto y archivo .bib.
+- Validar correspondencia del producto con la consigna especifica de Actividad 4.
 
 ## latex_rules
 
@@ -1208,6 +1235,12 @@
 - Verificar nombres reales de archivos cuando existan tokens sin resolver en README.
 - Supuesto: el .bib canonico esperado es filosofia-del-derecho.bib por Slug del README.
 - Verificar nombres reales de archivos cuando README tenga tokens sin resolver o caracteres danados.
+- No renombrar claves BibTeX activas sin migracion controlada.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en rutas y nombres.
+- Supuesto: archivo .bib canonico esperado: filosofia-del-derecho.bib.
+- Compilar sin errores críticos, sin referencias rotas y sin archivos faltantes.
+- Resolver plantillas sin expandir tipo $(@{...}.Slug) antes de referenciar rutas.
+- No introducir comandos no estandar sin justificacion editorial.
 
 ## bibliography_rules
 
@@ -1411,6 +1444,10 @@
 - Supuesto: filosofia-del-derecho-clean.bib esta orientado a interpretacion juridica de Semana 7.
 - Supuesto: filosofia-del-derecho-clean.bib esta orientado a Semana 7; validar aplicacion a Actividad 4.
 - Usar filosofia-del-derecho-clean.bib solo si su tema coincide con la consigna local.
+- Distinguir bibliografía base de bibliografía específica de la actividad.
+- Supuesto: filosofia-del-derecho-clean.bib parece orientado a otra semana; confirmar aplicabilidad a Actividad 4.
+- Supuesto: filosofia-del-derecho-clean.bib corresponde a interpretación jurídica (Semana 7) y puede no aplicar a Actividad 4.
+- Marcar como supuesto cualquier asignacion bibliografica no confirmada.
 
 ## propagation_hints
 
@@ -1794,6 +1831,15 @@
 - Cuando falte consigna textual, propagar estructura base y preguntas abiertas.
 - Evitar copiar redaccion literal, conclusiones y bibliografia exclusiva entre hermanos.
 - Aplicar union-dedupe para compresion lossless sin perdida de reglas funcionales.
+- Reutilizar patrones generales institucionales y de calidad.
+- Mantener mejoras verificables y evitar regresiones de reglas utiles previas.
+- Cuando falte dato local, propagar plantilla base y preguntas abiertas.
+- Aplicar unión y deduplicación; evitar regresiones de reglas útiles previas.
+- Mantener bandera de normalización manual en ciclos con salidas heredadas no estructuradas.
+- Transferir solo patrones reutilizables, no redacción literal ni conclusiones específicas.
+- Aplicar normalización manual en ciclo 1 y ciclo 2 si reaparecen salidas no estructuradas.
+- Reforzar patrones institucionales comunes y no contenido puntual de un hermano.
+- Si falta consigna local, propagar plantilla estructural y preguntas abiertas.
 
 ## open_questions
 
@@ -2088,6 +2134,9 @@
 - Confirmar nombre canonico final del .bib cuando el token Slug quede resuelto.
 - Confirmar si Actividad 4 reutiliza bibliografia existente o requiere .bib propio.
 - Confirmar nombre canonico final del .bib cuando el README usa token sin resolver.
+- Confirmar si se reutiliza .bib existente o se crea uno incremental para Actividad 4.
+- Confirmar si Actividad 4 exige reporte, presentación u otro formato.
+- Confirmar nombre canonico final del .bib de asignatura por plantilla Slug no resuelta.
 
 ## editorial_dna
 
@@ -2148,10 +2197,10 @@
 - Adaptar Actividad 4 a los ejes del programa analítico.
 
 ### grafo_de_conocimiento
-- Conceptos: 1830
+- Conceptos: 1875
 - Citas: 29
-- Relaciones reforzadas: 846
-- Evidencias: 738
+- Relaciones reforzadas: 879
+- Evidencias: 765
 
 ## adn_tex
 

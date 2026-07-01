@@ -388,6 +388,29 @@
 - Se refuerza regla crítica: normalizar y validar JSON antes de propagación recursiva.
 - Se mantiene compresión lossless por unión y deduplicación sin regresión de reglas útiles.
 - Supuesto: la consigna concreta de actividad-3 aún no está visible localmente.
+- Se preservan reglas institucionales UnADM, estructura argumentativa y controles de calidad sin regresión.
+- Se deduplican reglas por unión lossless y se corrigen variantes repetidas de acentuación.
+- Se mantiene bloqueo de propagación ante salidas no JSON parseables.
+- Se conserva política de supuestos para toda falta de consigna local verificable.
+- Se mantiene regla dura de normalizacion: sin JSON parseable no hay propagacion recursiva.
+- Se transfieren solo patrones reutilizables de estructura, calidad y argumentacion; no redaccion ni conclusiones especificas.
+- Se conserva politica de supuestos para toda falta de consigna local en actividad-3.
+- Se consolida memoria lateral de Actividad 3 con base reusable de Actividad 1.
+- Se preservan reglas institucionales UnADM, estructura mínima y control de calidad.
+- Se aplica deduplicación lossless sin recorte de reglas útiles previas.
+- Se mantiene normalización obligatoria de salidas antes de propagación recursiva.
+- Se refuerza política de supuestos cuando falte consigna local verificable.
+- Se preservan reglas útiles previas y se deduplican en formato accionable.
+- Se mantiene identidad UnADM, estructura editorial base y control de supuestos.
+- Se refuerza la política de normalización JSON antes de propagación recursiva.
+- Se conserva la separación entre evidencia académica y memoria editorial provisional.
+- Se refuerza regla crítica: normalizar y validar JSON parseable antes de propagación recursiva.
+- Se mantienen ejes editoriales estables: problema, conceptos y fuentes, análisis propio y conclusión jurídica transferible.
+- Se aplica compresión lossless por deduplicación sin eliminar reglas útiles previas.
+- Se consolida memoria lateral de actividad-3 con deduplicacion lossless desde actividad-1.
+- Se preservan reglas institucionales UnADM y contexto curricular verificado en README y programa analitico.
+- Se corrige y mantiene regla sobre tokens Slug sin expandir en README y programa analitico.
+- Se conserva no regresion: no eliminar reglas utiles previas, solo unificar y precisar.
 
 ## identity_rules
 
@@ -517,6 +540,7 @@
 - Registrar incidencias tecnicas de parseo sin convertirlas en evidencia disciplinar.
 - Registrar incidencias de parseo solo como metadato técnico.
 - Marcar como supuesto cualquier dato no confirmado por consigna o fuente local.
+- Marcar como supuesto cualquier dato no visible o no confirmado en la consigna.
 
 ## structure_rules
 
@@ -603,6 +627,9 @@
 - Separar en secciones: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
 - Usar secuencia base: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
 - Usar secuencia base: problema, conceptos y fuentes, análisis propio, cierre jurídico.
+- Usar secuencia minima: problema, conceptos y fuentes, analisis propio, cierre.
+- Separar marco normativo o doctrinal cuando aplique.
+- Alinear el producto al tipo solicitado en la planeación semanal.
 
 ## activity_rules
 
@@ -785,6 +812,14 @@
 - Si faltan datos locales, usar estructura base y marcar supuestos.
 - Distinguir reglas generales transferibles de contenido específico no transferible.
 - No copiar conclusiones específicas ni redacción literal del nodo hermano.
+- No copiar redaccion literal, conclusiones especificas ni bibliografia exclusiva de actividad-1.
+- No transferir conclusiones específicas ni bibliografía exclusiva del hermano.
+- Incluir postura argumentada del estudiante, evitar entrega solo descriptiva.
+- Registrar diferencias específicas de Actividad 3 como supuestos hasta confirmación oficial.
+- Heredar reglas válidas de Actividad 1 sin copiar redacción literal ni conclusiones específicas.
+- No asumir semana, formato o tema específico de Actividad 3 sin evidencia local.
+- Heredar solo patrones reutilizables desde actividad-1; no copiar redaccion literal.
+- No trasladar conclusiones especificas ni bibliografia exclusiva del nodo hermano.
 
 ## quality_gates
 
@@ -898,6 +933,9 @@
 - Verificar esquema completo antes de aplicar aguas abajo.
 - Exigir marca de supuesto en datos no verificados.
 - Confirmar correspondencia entre producto entregable y consigna vigente de actividad-3.
+- Confirmar correspondencia entre citas en texto y archivo .bib.
+- Marcar o retirar afirmaciones sin respaldo verificable.
+- Aplicar no regresion: conservar reglas utiles previas.
 
 ## latex_rules
 
@@ -1040,6 +1078,11 @@
 - Resolver tokens sin expandir tipo $(@{...}.Slug) en README/programa y fijar nombre canónico.
 - Supuesto: .bib canónico esperado es filosofia-del-derecho.bib hasta confirmación local.
 - Supuesto: archivo .bib canónico esperado es filosofia-del-derecho.bib según Slug.
+- Verificar nombres de archivo canonicos desde README antes de referenciar.
+- Mantener claves BibTeX estables y no renombrarlas sin justificación verificable.
+- Verificar nombres de archivo del README antes de referenciarlos.
+- Mantener claves BibTeX estables y no renombrarlas sin migración completa.
+- Tomar como supuesto operativo que el .bib canónico esperado es filosofia-del-derecho.bib hasta confirmación local.
 
 ## bibliography_rules
 
@@ -1229,6 +1272,10 @@
 - Supuesto: filosofia-del-derecho-clean.bib está orientado a interpretación jurídica (Semana 7) y su uso en actividad-3 debe confirmarse.
 - Registrar en .bib solo obras realmente citadas en la actividad.
 - Supuesto: filosofia-del-derecho-clean.bib está orientado a Interpretación jurídica y requiere validación de aplicabilidad a actividad-3.
+- Registrar en .bib solo entradas realmente citadas en actividad-3.
+- No asumir que filosofia-del-derecho-clean.bib aplica a Actividad 3 sin confirmación.
+- Supuesto: filosofia-del-derecho-clean.bib está orientado a Interpretación jurídica (Semana 7).
+- Tratar filosofia-del-derecho-clean.bib como archivo tematico de Semana 7 hasta confirmacion de aplicacion a actividad-3 [supuesto].
 
 ## propagation_hints
 
@@ -1596,6 +1643,19 @@
 - Propagar laterales con analogía controlada y sin sobreajuste temático.
 - Reutilizar reglas institucionales y de calidad como núcleo estable.
 - Aplicar deduplicación semántica continua en cada ciclo.
+- No propagar conclusiones temáticas ni bibliografía exclusiva de una actividad a otra.
+- Mantener compresión por unión-deduplicación lossless.
+- Aplicar normalización manual en ciclo con antecedentes no estructurados.
+- Propagar a nodos hermanos solo reglas generales y patrones reutilizables.
+- Evitar propagar contenido específico no confirmado localmente.
+- Conservar bandera de riesgo cuando exista historial de salida no estructurada.
+- Propagar reglas de Filosofía del Derecho solo a nodos de la misma asignatura.
+- Propagar recursivamente solo después de validación JSON y normalización estructurada.
+- Propagar a nodos hermanos solo reglas generales e identidad institucional.
+- Reforzar conexiones problema -> evidencia -> análisis -> conclusión en actividades laterales.
+- No propagar conclusiones específicas ni bibliografía exclusiva de nodos hermanos.
+- Si faltan datos locales, propagar plantilla base más preguntas abiertas.
+- Reforzar identidad institucional y controles de calidad antes que contenido tematico no confirmado.
 
 ## open_questions
 
@@ -1811,6 +1871,10 @@
 - Confirmar si la bibliografía depurada de Semana 7 aplica a actividad-3.
 - Confirmar si actividad-3 reutiliza .bib general o requiere set específico.
 - Confirmar archivo .tex principal definitivo para actividad-3.
+- Confirmar si Actividad 3 corresponde a interpretación jurídica o a otro tema.
+- Confirmar si la bibliografía depurada de Semana 7 aplica a Actividad 3.
+- Confirmar nombre final canónico del .bib de la asignatura tras resolver token Slug.
+- Confirmar si aplica filosofia-del-derecho-clean.bib o se requiere seleccion bibliografica propia.
 
 ## editorial_dna
 
@@ -1871,10 +1935,10 @@
 - Sustentar afirmaciones con fuentes verificables y cita explícita.
 
 ### grafo_de_conocimiento
-- Conceptos: 1463
-- Citas: 36
-- Relaciones reforzadas: 704
-- Evidencias: 640
+- Conceptos: 1518
+- Citas: 37
+- Relaciones reforzadas: 746
+- Evidencias: 681
 
 ## adn_tex
 

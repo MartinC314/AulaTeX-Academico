@@ -62,6 +62,39 @@
 - Origen ciclo 20: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
 - Origen ciclo 21: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
 - Origen ciclo 22: actividad-1 de filosofia-del-derecho-lde sin JSON parseable confirmado.
+- Se consolida cerebro editorial minimo para Derechos de autor con identidad UnADM.
+- Se preserva compresion lossless por union y deduplicacion sin regresion.
+- Se transfiere solo abstraccion estable transversal desde actividad origen.
+- Se mantiene regla de normalizacion: no propagar salidas no JSON parseable.
+- Se integra contexto local verificable de README, programa analitico y .bib.
+- Se consolida sincronizacion transversal conservadora para Derechos de autor.
+- Se preservan reglas validas previas sin regresion y con deduplicacion lossless.
+- Se transfieren solo abstracciones estables desde Filosofia del Derecho.
+- Se refuerza normalizacion obligatoria antes de propagacion recursiva.
+- Se mantiene herencia Codex y GPT-Pro como provisional [supuesto].
+- Consolidar cerebro editorial de Derechos de autor con identidad UnADM.
+- Aplicar sincronización transversal conservadora desde Filosofía del Derecho.
+- Transferir solo abstracciones estables entre materias no equivalentes.
+- Preservar reglas útiles locales sin regresión.
+- Usar compresión por unión y deduplicación.
+- Mantener normalización estructurada antes de propagar memoria.
+- Tratar herencias Codex y GPT-Pro como provisionales hasta validación local.
+- Usar README y programa analítico como fuentes locales de encuadre.
+- Usar derechos-de-autor.bib como bibliografía local canónica.
+- Corregir marcadores de plantilla y nombres corruptos antes de publicar.
+- Se consolida sincronizacion transversal conservadora para Derechos de autor con identidad UnADM.
+- Se preservan reglas validas previas y se aplica deduplicacion sin perdida.
+- Se refuerza normalizacion estructurada: no propagar salidas no JSON parseable.
+- Se transfieren solo abstracciones estables desde actividad origen hacia materia destino.
+- Se mantiene pauta editorial comun: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se integra contexto local verificable de README, programa analitico y derechos-de-autor.bib.
+- Se marca como provisional toda herencia de fuentes no verificadas localmente [supuesto].
+- Se sincroniza memoria transversal hacia Derechos de autor con estrategia conservadora.
+- Se preservan reglas utiles previas sin regresion y con deduplicacion lossless.
+- Se refuerza normalizacion estructurada antes de toda propagacion recursiva.
+- Se mantiene ADN editorial UnADM: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se prioriza abstraccion estable; no se transfiere redaccion literal de Filosofia del Derecho.
+- Se mantiene estado provisional de herencias no verificadas (Codex y GPT-Pro) hasta confirmacion local.
 
 ## identity_rules
 
@@ -84,6 +117,28 @@
 - Fuente provisional: Auto (model-router) desde Actividad 1.
 - Fuente provisional: Claude Foundry desde Actividad 1.
 - Marcar fuentes heredadas no parseables como provisionales hasta validacion local.
+- Mantener identidad institucional UnADM en tono, portada y metadatos.
+- Alinear entregables a Licenciatura en Derecho, semestre 5, bloque 1, obligatoria, 8 creditos.
+- Usar carpeta de asignatura como entrada canonica.
+- Marcar como supuesto todo dato no visible en consigna local.
+- Tratar herencias Codex y GPT-Pro como provisionales hasta verificacion local.
+- Usar README de la materia como entrada canonica.
+- Mantener integridad academica con citas verificables.
+- Conservar enfoque juridico con criterio propio en la conclusion.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- Mantener identidad institucional UnADM en portada, tono y metadatos.
+- Usar datos curriculares locales: semestre 5, bloque 1, obligatoria, 8 créditos.
+- Citar malla-curricular-derecho-unadm.pdf para ubicación curricular.
+- Supuesto: la clave local LDE-S5B1 se mantiene hasta confirmación oficial.
+- Mantener enfoque jurídico con criterio propio en la conclusión.
+- No transferir datos personales del alumno a otros nodos.
+- Tratar fuentes heredadas no verificadas como provisionales.
+- Usar la carpeta de asignatura como entrada canónica.
+- Usar la carpeta de asignatura como punto de entrada canonico.
+- Marcar como supuesto cualquier dato no visible en consigna local.
+- Tratar herencias Codex y GPT-Pro como provisionales hasta validacion local.
+- Usar la carpeta de asignatura y README como entrada canonica.
+- Tratar fuentes heredadas no verificadas como provisionales hasta validacion local.
 
 ## structure_rules
 
@@ -105,6 +160,27 @@
 - Sustituir marcadores literales $(@{...}.Slug) por derechos-de-autor.bib.
 - Sustituir marcadores $(@{...}.Slug) por derechos-de-autor.bib.
 - Sustituir marcadores literales $(@{...}.Slug) por derechos-de-autor.bib en README y programa analitico.
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el producto al formato pedido por la planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Corregir nombres de archivo corruptos en README antes de publicar.
+- Alinear producto al formato pedido por la planeacion semanal.
+- Mantener separacion entre reporte, presentacion y bibliografia local.
+- Normalizar nombres de archivo con slug canonico derechos-de-autor.
+- Conservar README como punto de entrada canónico de la asignatura.
+- Usar programa analítico como marco editorial local.
+- Organizar cada producto por problema, conceptos, marco normativo o doctrinal, análisis y cierre.
+- Alinear la entrega al producto solicitado por la planeación semanal.
+- Mantener separación entre reporte, presentación y referencias.
+- Guardar bibliografía específica en derechos-de-autor.bib.
+- Resolver tokens sin expandir tipo $(@{...}.Slug).
+- Transformar la planeación en reporte, presentación o producto visual según consigna.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Alinear cada entrega al producto solicitado por la planeacion semanal.
+- Mantener separacion entre reporte, presentacion y bibliografia de materia.
+- Alinear el producto al formato solicitado por la planeacion semanal.
 
 ## activity_rules
 
@@ -117,6 +193,29 @@
 - Evitar entregar solo resumen de fuentes.
 - Cerrar con conclusion aplicable a la practica juridica.
 - Agregar fuentes especificas por actividad al archivo BibTeX local.
+- Incluir postura argumentada del estudiante, no solo resumen.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Distinguir bibliografia base de bibliografia especifica por actividad.
+- No asumir fuentes de otras semanas o materias sin confirmacion local.
+- Evitar extrapolar fuentes de otras semanas sin validacion.
+- Agregar fuentes especificas por actividad al .bib local.
+- Verificar correspondencia exacta entre consigna y tipo de entregable.
+- Iniciar cada actividad con problema jurídico o social delimitado.
+- Cumplir el formato solicitado por la planeación semanal.
+- Incluir postura argumentada del estudiante.
+- Evitar entregas solo descriptivas o de resumen.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- Agregar fuentes específicas por actividad al BibTeX local.
+- No asumir fuentes de otra materia como fuentes de Derechos de autor.
+- No asumir que fuentes de semanas posteriores corresponden a una actividad previa.
+- Confirmar producto exacto cuando falte consigna textual.
+- Cerrar con aplicación jurídica práctica.
+- Evitar entregas meramente descriptivas.
+- No asumir fuentes de semanas o materias distintas sin confirmacion local.
+- Incluir postura argumentada del estudiante; evitar entregas solo descriptivas.
+- Agregar fuentes especificas por actividad al .bib local de la materia.
 
 ## quality_gates
 
@@ -138,6 +237,28 @@
 - Validar localmente contenido heredado de ciclos previos antes de reutilizarlo.
 - Auditar README por marcadores de plantilla y caracteres extranos.
 - Mantener auditoria manual para contenido heredado de ciclos previos si se reutiliza.
+- Bloquear propagacion si la salida no es JSON parseable.
+- Revisar estructura minima completa antes de reutilizar aguas abajo.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca de supuesto.
+- Validar consistencia entre citas en texto y archivo .bib.
+- Auditar y resolver tokens de plantilla sin expandir en README y programa analitico.
+- Revisar estructura minima completa antes de aplicar aguas abajo.
+- Auditar README y programa para tokens sin expandir y nombres corruptos.
+- Corregir campos pendientes de plantilla antes de publicar.
+- Mantener normalizacion manual para herencia de ciclos previos.
+- Bloquear propagación si la salida no es JSON parseable.
+- Revisar estructura mínima completa antes de aplicar aguas abajo.
+- Revisar respuestas no estructuradas antes de reutilizarlas.
+- Confirmar que toda afirmación tenga respaldo o marca de supuesto.
+- Auditar README por caracteres extraños y marcadores de plantilla.
+- Verificar que el producto corresponda a la consigna local.
+- Compilar sin errores críticos ni referencias rotas.
+- Mantener normalización manual para contenido heredado de ciclos previos.
+- Evitar regresiones respecto de reglas útiles previas.
+- Verificar correspondencia del producto con la consigna vigente.
+- Auditar README y programa analitico para detectar tokens sin expandir y nombres corruptos.
+- Corregir marcadores de plantilla y nombres de archivo corruptos antes de publicar.
+- Mantener normalizacion manual para contenido heredado de ciclos previos.
 
 ## latex_rules
 
@@ -156,6 +277,42 @@
 - Corregir \usepackage final sin argumento detectado en reporte.
 - Conservar tabla de autor con alumno, matricula y datos academicos completos en documentos locales.
 - Corregir \usepackage truncado detectado al final del preambulo en reporte.
+- Usar codificacion y acentos correctos en español en .tex y .bib.
+- Declarar metadatos antes de cargar plantilla si la plantilla lo exige.
+- Mover paquetes al preambulo valido y evitar cargas incompletas.
+- Nunca dejar comandos truncados como usepackage sin argumento.
+- Compilar sin errores criticos, sin referencias rotas y sin rutas invalidas.
+- Mantener documentclass article en espanol y letterpaper salvo consigna contraria.
+- Declarar metadatos antes de \input{template}.
+- No dejar comandos truncados ni \usepackage sin argumento.
+- Mover paquetes al preambulo efectivo si la plantilla lo exige.
+- Compilar sin errores criticos ni referencias rotas.
+- Usar acentos y codificacion consistentes en .tex y .bib.
+- No propagar datos personales del alumno a otros nodos.
+- Mantener documentclass article en español y letterpaper salvo instrucción contraria.
+- Declarar metadatos con macros antes de input de plantilla.
+- Validar orden correcto entre paquetes LaTeX e input de plantilla.
+- No dejar usepackage sin argumento.
+- Evitar paquetes truncados o líneas incompletas en preámbulo.
+- Usar codificación y acentos correctos en .tex y .bib.
+- Mantener claves BibTeX estables.
+- Evitar comandos no estándar sin justificación editorial.
+- Validar que los paquetes queden en preámbulo efectivo.
+- Usar tipografía sans serif de forma consistente si la plantilla la requiere.
+- Conservar tabla de autor con datos académicos completos solo en nodo local.
+- Verificar nombres de archivos del README antes de referenciarlos.
+- Corregir caracteres anómalos en rutas o nombres antes de compilar.
+- No copiar LaTeX completo en memoria editorial.
+- Usar codificacion y acentos correctos en espanol en .tex y .bib.
+- Declarar metadatos de documento antes de cargar plantilla.
+- Evitar comandos incompletos o paquetes sin argumento.
+- Mover paquetes al preambulo efectivo cuando la plantilla lo exija.
+- Compilar sin errores criticos, sin referencias rotas y sin tokens sin expandir.
+- Normalizar nombres de archivo segun slug canonico de la asignatura.
+- Declarar metadatos del documento antes de cargar plantilla.
+- Evitar paquetes incompletos o comandos truncados en el preambulo.
+- Compilar sin errores criticos, referencias rotas ni tokens sin expandir.
+- Mantener claves BibTeX estables para evitar quiebres de compilacion.
 
 ## bibliography_rules
 
@@ -173,6 +330,23 @@
 - Incluir fecha de consulta en fuentes web.
 - Asegurar que toda cita en texto tenga entrada en .bib.
 - Asegurar que toda entrada .bib usada corresponda con una cita o bibliografia requerida.
+- No inventar referencias; usar solo obras consultables y verificables.
+- Priorizar fuentes institucionales UnADM y marco juridico aplicable.
+- Conservar metadatos minimos: autor, titulo, año, fuente o URL.
+- Registrar fuentes especificas de actividad en derechos-de-autor.bib.
+- No inventar fuentes; usar solo materiales verificables.
+- Priorizar fuentes institucionales UnADM y normativas aplicables.
+- Conservar metadatos minimos: autor, titulo, ano, fuente o URL.
+- Distinguir bibliografia base de bibliografia especifica por actividad.
+- Mantener claves BibTeX estables para evitar rupturas de compilacion.
+- Priorizar fuentes institucionales UnADM y materiales jurídicos consultables.
+- Conservar metadatos mínimos: autor, título, año, fuente editorial o URL.
+- Distinguir bibliografía base de bibliografía específica de actividad.
+- No reutilizar bibliografía de Filosofía del Derecho sin pertinencia local verificada.
+- Conservar metadatos minimos: autor, titulo, ano y fuente/editorial o URL.
+- Mantener claves BibTeX estables y trazables.
+- Registrar nuevas entradas en derechos-de-autor.bib.
+- Conservar metadatos minimos: autor, titulo, anio y fuente/URL.
 
 ## propagation_hints
 
@@ -211,6 +385,36 @@
 - Ciclo 20 necesita normalizacion manual si se reutiliza.
 - Ciclo 21 necesita normalizacion manual si se reutiliza.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar transversalmente solo reglas estables de identidad, estructura y calidad.
+- Evitar transferir redaccion literal de actividades no equivalentes.
+- Mantener normalizacion manual activa en ciclo 1 para herencia provisional.
+- No propagar datos personales del alumno fuera del nodo local.
+- Escalar solo cuando JSON y gates de calidad esten validados.
+- Propagar recursivamente solo tras validar JSON y estructura.
+- Compartir lateralmente solo reglas generales estables, no redaccion literal.
+- Preservar especificidad local de Derechos de autor al recibir reglas transversales.
+- Evitar regresiones de gates de calidad ya consolidados.
+- Mantener bandera provisional para herencia Codex y GPT-Pro hasta cierre de validacion.
+- Propagar recursivamente solo después de validar JSON y estructura.
+- Propagar lateralmente solo reglas genéricas de calidad, estructura y bibliografía.
+- No propagar redacción literal entre materias no equivalentes.
+- Propagar advertencias sobre herencias Codex y GPT-Pro solo como provisionales.
+- Mantener auditoría manual para contenido heredado de ciclos previos.
+- Reutilizar patrón problema-conceptos-evidencia-análisis-cierre.
+- Evitar transferir conceptos específicos de Filosofía del Derecho como contenido de Derechos de autor.
+- Preservar reglas locales más específicas sobre reglas transversales.
+- Aplicar sincronización progresiva y conservadora.
+- Propagar recursivamente solo despues de validar JSON y estructura.
+- Compartir lateralmente solo reglas generales de identidad, estructura y calidad.
+- Evitar transferir redaccion literal entre nodos no equivalentes.
+- Mantener estrategia progresiva y conservadora sin regresion de reglas utiles.
+- Conservar bandera de normalizacion manual para ciclo 1 cuando haya herencia provisional.
+- Propagar advertencias de fuentes provisionales solo como estado transitorio.
+- Propagar recursivamente solo reglas generales estables entre nodos no equivalentes.
+- Priorizar identidad, estructura reusable, gates de calidad y grafo conceptual.
+- No propagar datos personales ni redaccion literal entre materias.
+- Mantener advertencias sobre herencia provisional como estado de riesgo controlado.
+- Aplicar union-dedupe en cada ciclo para compresion lossless sin recorte.
 
 ## open_questions
 
@@ -235,3 +439,106 @@
 - Validar si la ubicacion Roma Norte, Ciudad de Mexico debe mantenerse fija.
 - Confirmar si la herencia provisional no parseable sigue vigente o debe retirarse tras validacion local.
 - Confirmar si la herencia provisional no parseable (Codex, GPT-Pro, Auto, Claude) sigue vigente o debe retirarse tras validacion local.
+- Supuesto: LDE-S5B1 es clave oficial; confirmar contra fuente institucional.
+- Confirmar nombre de figura docente para reemplazar marcador pendiente.
+- Confirmar si la ubicacion geografia debe permanecer fija en portada.
+- Confirmar orden correcto entre template y paquetes en la plantilla local.
+- Confirmar sustitucion definitiva de tokens Slug por derechos-de-autor.bib.
+- Confirmar si LDE-S5B1 es clave oficial definitiva [supuesto].
+- Confirmar nombre de figura docente para eliminar marcador pendiente.
+- Confirmar si Roma Norte, Ciudad de Mexico debe mantenerse fija [supuesto].
+- Confirmar reemplazo total de tokens $(@{...}.Slug) en README y programa.
+- Confirmar si la materia requiere artefactos adicionales a reporte y presentacion.
+- Validar si Roma Norte, Ciudad de México debe mantenerse fija.
+- Confirmar sustitución definitiva del token de plantilla por derechos-de-autor.bib.
+- Revisar y corregir nombres de archivo corruptos en README.
+- Validar orden correcto entre paquetes LaTeX e input de template.
+- Confirmar si la herencia Codex desde ingeniería sigue vigente.
+- Confirmar si la herencia GPT-Pro debe conservarse tras validación local.
+- Confirmar fuentes jurídicas obligatorias específicas de Derechos de autor.
+- Confirmar rúbricas y consignas por actividad.
+- Confirmar si habrá archivo de referencias separado por actividad.
+- Confirmar si las actividades requieren reporte, presentación o producto visual.
+- Confirmar si LDE-S5B1 es clave oficial estable en toda la suite [supuesto].
+- Definir nombre de figura docente para retirar marcador pendiente.
+- Confirmar si Roma Norte, Ciudad de Mexico debe permanecer fija en portada [supuesto].
+- Corregir tokens $(@{...}.Slug) en README y programa analitico.
+- Corregir nombres de archivo corruptos en README: eporte y eferencias.
+- Validar orden definitivo entre \input{template} y carga de paquetes en la plantilla local.
+- Confirmar si LDE-S5B1 es clave oficial o solo etiqueta local. [supuesto]
+- Definir nombre de figura docente en plantilla de reporte.
+- Validar ubicacion institucional fija en portada (Roma Norte, Ciudad de Mexico). [supuesto]
+- Confirmar orden correcto de paquetes respecto a la plantilla en LaTeX local.
+- Verificar si se mantiene o se retira definitivamente la herencia provisional Codex/GPT-Pro.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad institucional UnADM
+- Integridad academica
+- Problema juridico
+- Marco normativo o doctrinal
+- Analisis propio
+- Conclusion transferible
+- Calidad bibliografica
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Conservar README como punto de entrada canonico de la asignatura.
+- Usar programa-analitico como marco para problema, conceptos, producto, analisis y cierre.
+- Guardar bibliografia especifica en derechos-de-autor.bib.
+- Mantener separacion entre reporte, presentacion y referencias de la materia.
+- Normalizar nombres de archivo con slug de la asignatura cuando aplique.
+- Conservar README como punto de entrada canonico.
+
+### identidad_estilistica
+- Frases directas y trazables.
+- Supuestos explicitamente marcados.
+- Sin afirmaciones sin fuente.
+- Cierre con criterio juridico propio.
+- Mantener identidad institucional UnADM en tono, portada y metadatos.
+- Alinear entregables a Licenciatura en Derecho, semestre 5, bloque 1, obligatoria, 8 creditos.
+- Usar carpeta de asignatura como entrada canonica.
+- Marcar como supuesto todo dato no visible en consigna local.
+- Tratar herencias Codex y GPT-Pro como provisionales hasta verificacion local.
+- Usar identidad institucional UnADM en portada y metadatos.
+- Alinear entregables con Licenciatura en Derecho, semestre 5, bloque 1, obligatoria, 8 creditos.
+- Mantener enfoque juridico con criterio propio en la conclusion.
+
+### patrones_argumentativos
+- Problema -> conceptos -> norma/doctrina -> analisis -> conclusion.
+- Afirmacion -> evidencia -> interpretacion -> postura.
+- Consigna -> desarrollo alineado -> verificacion de producto.
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el producto al formato pedido por la planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Corregir nombres de archivo corruptos en README antes de publicar.
+- Incluir postura argumentada del estudiante, no solo resumen.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+
+### grafo_de_conocimiento
+- Conceptos: 270
+- Citas: 2
+- Relaciones reforzadas: 72
+- Evidencias: 100
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/derechos-de-autor-lde/reporte-derechos-de-autor.tex`
+- Caracteres LaTeX preservados: 4125
+- Bloques/parrafos indexados: 20
+- Claves citadas: ninguna
+- Claves sin referencia: ninguna

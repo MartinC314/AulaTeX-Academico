@@ -66,6 +66,38 @@
 - Consolidacion ciclo 20 completada con compresion union-dedupe sin perdida y sin regresion.
 - Consolidacion ciclo 21 completada con compresion union-dedupe sin perdida y sin regresion.
 - Consolidacion ciclo 22 completada con compresion union-dedupe sin perdida y sin regresion.
+- Se consolida un cerebro editorial minimo para materia destino con identidad UnADM.
+- Se preservan reglas estables transversales: normalizacion, estructura juridica y calidad verificable.
+- Se mantiene estrategia conservadora: no transferir contenido tematico propio de Filosofia del Derecho sin validar pertinencia.
+- Se refuerza sincronizacion transversal por abstracciones: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se conserva alerta institucional por salidas no JSON parseable y se exige normalizacion previa.
+- Materia destino con identidad UnADM y enfoque jurídico aplicado.
+- Materia obligatoria seriada de 8 créditos según malla curricular local.
+- La carpeta local es punto de entrada canónico de la asignatura.
+- Se consolida sincronización transversal por abstracciones editoriales estables.
+- Se preservan ejes comunes: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se evita trasladar contenido temático de Filosofía del Derecho sin validación local.
+- Se conserva alerta por salidas heredadas no JSON parseable.
+- Se exige normalización manual antes de propagación automática.
+- README local contiene nombres de archivo corruptos que requieren corrección.
+- Plantilla local registra alumno Martin Jonathan de la Cruz y matrícula ES2611202040. [supuesto verificar vigencia]
+- Se consolida sincronizacion transversal conservadora entre actividad de origen y materia destino.
+- Se preservan reglas estables: identidad UnADM, estructura juridica reusable, calidad verificable y normalizacion JSON.
+- Se evita transferencia tematica de Filosofia del Derecho por no equivalencia de nodos.
+- Se refuerza compresion lossless por deduplicacion y sin regresion.
+- Se mantiene alerta institucional por salidas no estructuradas y se exige normalizacion previa.
+- Sincronizacion transversal aplicada por abstracciones estables entre nodos no equivalentes.
+- Se preservan reglas institucionales UnADM, normalizacion estructurada y control de supuestos.
+- Se refuerza estructura reusable: problema, marco conceptual-normativo, analisis propio y conclusion juridica.
+- Se mantiene estrategia conservadora: no transferir contenido tematico especifico de Filosofia del Derecho.
+- Se consolida gate critico: bloquear propagacion si no hay JSON parseable.
+- Se confirma contexto local destino: semestre 3, bloque 1, obligatoria seriada, 8 creditos.
+- Se detectan placeholders y rutas corruptas en README/programa; corregir antes de reutilizar.
+- Sincronizacion transversal consolidada con estrategia conservadora y sin regresion.
+- Se preservan reglas estables de identidad UnADM, estructura juridica y control de calidad.
+- Se transfiere solo abstraccion reusable; no se transfiere contenido tematico especifico de Filosofia del Derecho.
+- Se refuerza normalizacion obligatoria ante salidas no estructuradas o no JSON parseable.
+- Se mantiene cerebro editorial minimo de materia con vacios locales en preguntas abiertas.
 
 ## identity_rules
 
@@ -105,6 +137,28 @@
 - Usar codigo local LDE-S3B1 cuando aplique.
 - Tratar fuentes heredadas de otros programas/modelos como provisionales si reaparecen. [supuesto]
 - No modificar datos de alumno o matricula sin verificacion local. [supuesto]
+- Mantener identidad institucional UnADM en tono, metadatos y formato.
+- Usar nombre canonico de asignatura: Derechos de la persona y familia.
+- Alinear contexto curricular local: Licenciatura en Derecho, semestre 3, bloque 1, obligatoria seriada, 8 creditos.
+- Usar carpeta de materia como punto de entrada canonico.
+- Marcar como [supuesto] todo dato no confirmado por consigna o documento local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- Mantener identidad UnADM en portada, redacción y metadatos.
+- Conservar créditos: 8.
+- Usar código de curso local LDE-S3B1 cuando aplique.
+- Usar ubicación institucional Roma Norte, Ciudad de México en metadatos.
+- Usar carpeta de materia como punto de entrada canónico.
+- Mantener figura docente como dato no confirmado hasta validación. [supuesto]
+- No modificar datos de alumno o matrícula sin verificación local.
+- Tratar memorias Codex y GPT-Pro heredadas como provisionales hasta confirmación local.
+- Citar malla-curricular-derecho-unadm.pdf como fuente de ubicación curricular.
+- Mantener identidad UnADM en tono, metadatos y formato.
+- Usar carpeta de materia como entrada canonica.
+- Marcar como [supuesto] todo dato no confirmado en consigna o documentos locales.
+- Alinear productos al contexto curricular local: Licenciatura en Derecho, semestre 3, bloque 1, obligatoria seriada, 8 creditos.
+- No modificar datos de alumno, matricula o figura docente sin verificacion local.
+- Mantener identidad institucional UnADM en tono, formato y metadatos.
+- No modificar datos de alumno, matricula o figura docente sin verificacion local. [supuesto]
 
 ## structure_rules
 
@@ -132,6 +186,26 @@
 - Conservar coherencia con programa analitico local.
 - Corregir en README/programa nombres de archivo corruptos de reporte y carpeta de referencias.
 - Corregir en README/programa el placeholder dinamico del archivo .bib.
+- Abrir con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar en secciones: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear el formato final al producto solicitado por planeacion o consigna.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Mantener trazabilidad entre consigna, desarrollo y conclusion.
+- Estructurar cada entrega en problema, marco conceptual-normativo, análisis propio y conclusión jurídica.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Separar conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear la entrega al producto solicitado por planeación, consigna o rúbrica.
+- Transformar planeación semanal en reporte, presentación o producto visual según consigna.
+- Conservar coherencia con programa analítico local de la materia.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Corregir rutas corruptas del README antes de reutilizar plantilla.
+- Corregir nombres corruptos de reporte, referencias y carpeta de referencias.
+- Organizar en secciones: problema, marco conceptual-normativo, analisis propio y conclusion juridica.
+- Mantener trazabilidad entre consigna, desarrollo y cierre.
+- Alinear formato final al producto solicitado por planeacion o rubrica.
+- Separar en secciones: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Cerrar con conclusion juridica transferible a la practica profesional.
 
 ## activity_rules
 
@@ -149,6 +223,30 @@
 - Evitar texto generico y vincular argumentos al problema juridico.
 - No trasladar contenido de Filosofia del Derecho sin validar pertinencia. [supuesto]
 - Registrar pendientes cuando falte consigna.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Incluir postura argumentada del estudiante; evitar entrega solo descriptiva.
+- Vincular argumentos al problema juridico planteado.
+- Registrar vacios de contexto en preguntas abiertas en lugar de suponer.
+- No trasladar contenido disciplinar especifico del origen sin prueba de pertinencia local. [supuesto]
+- Identificar consigna, rúbrica y producto solicitado antes de redactar.
+- No trasladar contenido de Filosofía del Derecho sin validación de pertinencia. [supuesto]
+- Vincular cada actividad con planeación o rúbrica vigente cuando exista.
+- Integrar fundamento jurídico, evidencia y transferencia profesional.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- Incluir postura argumentada del estudiante.
+- Evitar entregas solo descriptivas o de resumen.
+- Evitar texto genérico; vincular argumentos al problema jurídico planteado.
+- Mantener conclusión con criterio jurídico propio en cada actividad.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- Incluir postura argumentada del estudiante y evitar entrega solo descriptiva.
+- Mantener conclusion con criterio juridico propio y transferible.
+- No trasladar contenido tematico del origen sin validar pertinencia local. [supuesto]
+- Verificar coherencia entre pregunta guia, desarrollo y cierre.
+- Registrar vacios de informacion en preguntas abiertas con marca [supuesto].
+- No asumir pertinencia automatica de fuentes de otras semanas o materias.
+- No asumir fuentes de otras semanas o materias como obligatorias para la actividad actual.
+- Registrar faltantes de contexto local en preguntas abiertas.
+- Adaptar reglas heredadas solo cuando sean compatibles con la materia destino. [supuesto]
 
 ## quality_gates
 
@@ -171,6 +269,27 @@
 - Comprobar respaldo verificable para afirmaciones juridicas relevantes.
 - Corregir placeholders y nombres corruptos en README/programa antes de reutilizar plantilla.
 - Verificar que el .tex use el .bib local canonico y no placeholders.
+- Bloquear propagacion si la salida no es JSON parseable.
+- Revisar estructura minima completa antes de aplicar aguas abajo.
+- Revisar y normalizar cualquier salida no estructurada antes de reutilizar.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca [supuesto].
+- Validar consistencia entre citas en texto y archivo .bib.
+- Verificar correspondencia entre producto entregado y consigna vigente.
+- Bloquear propagación si la salida no es JSON parseable.
+- Revisar y normalizar cualquier salida no estructurada antes de reutilizarla.
+- Revisar estructura mínima completa antes de aplicar aguas abajo.
+- Detener propagación si faltan datos mínimos de actividad.
+- Verificar que consigna, rúbrica y producto solicitado estén identificados.
+- Confirmar integridad académica sin afirmaciones sin sustento.
+- Confirmar que los supuestos estén marcados como [supuesto].
+- Comprobar que cada afirmación jurídica relevante tenga respaldo verificable.
+- Revisar nombres corruptos en README local.
+- Corregir placeholders de slug .bib en README y programa analítico antes de reutilizar plantilla.
+- Compilar sin errores críticos y sin referencias rotas.
+- Normalizar respuestas no estructuradas antes de reutilizar.
+- Verificar correspondencia entre consigna y producto entregable.
+- Corregir placeholders de slug y nombres corruptos de archivos antes de compilar.
+- Verificar correspondencia real entre consigna y producto entregable.
 
 ## latex_rules
 
@@ -194,6 +313,42 @@
 - Completar metadatos institucionales y academicos antes de redactar.
 - Mantener espanol academico y terminologia juridica consistente.
 - No modificar datos de alumno o matricula sin verificacion local. [supuesto]
+- Mantener compilacion sin errores criticos ni referencias rotas.
+- Usar espanol academico con acentos y codificacion consistentes.
+- Conservar claves BibTeX estables para evitar roturas.
+- Evitar comandos no estandar sin justificacion editorial.
+- Resolver placeholders de slug sin expandir en README y programa analitico.
+- Corregir nombres de archivo corruptos en README antes de referenciar en .tex.
+- Completar metadatos institucionales y académicos antes de redactar contenido.
+- Mantener español académico y consistencia terminológica jurídica.
+- Conservar documentclass article en español, letterpaper y oneside salvo consigna distinta.
+- Usar título, subtítulo, asignatura y código local coherentes con la actividad.
+- Actualizar documentsubtitle de Actividad X al número real.
+- Mantener figura docente como Nombre por definir hasta confirmación.
+- No modificar datos de alumno o matrícula sin verificación local.
+- Usar codificación y acentos correctos en .tex y .bib.
+- Mantener claves BibTeX estables para evitar referencias rotas.
+- Evitar comandos no estándar sin justificación editorial.
+- Verificar nombres de archivos del README antes de referenciarlos.
+- Corregir caracteres anómalos en rutas o nombres antes de compilar.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analítico.
+- Conservar plantilla base local como punto de partida.
+- Compilar sin errores criticos ni referencias rotas.
+- Mantener espanol academico y acentos correctos en .tex y .bib.
+- Corregir tokens sin expandir en README y programa analitico para nombre .bib.
+- Verificar consistencia entre slug, nombres de archivo y rutas antes de compilar.
+- Usar plantilla local de reporte o presentacion como base.
+- Mantener documentclass article en espanol, letterpaper y oneside salvo consigna distinta.
+- Completar metadatos academicos e institucionales antes de redactar contenido.
+- Usar espanol academico con terminologia juridica consistente.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analitico.
+- Corregir rutas con texto corrupto en README (reporte y referencias).
+- Mantener espanol academico con acentos correctos en .tex y .bib.
+- Compilar sin errores criticos y sin referencias rotas.
+- Conservar documentclass article, letterpaper y oneside salvo consigna distinta.
+- Verificar coherencia de titulo, subtitulo, asignatura y codigo local en portada.
+- Corregir placeholders o tokens sin expandir en README y programa analitico antes de reutilizar.
+- Mantener nombres de archivo consistentes con slug canonico de la materia.
 
 ## bibliography_rules
 
@@ -208,6 +363,27 @@
 - Reemplazar placeholders dinamicos de nombre .bib por slug canonico fijo.
 - Usar derechos-de-la-persona-y-familia.bib como fuente canonica local.
 - Agregar solo fuentes verificables y pertinentes a cada actividad.
+- Usar derechos-de-la-persona-y-familia.bib como archivo canonico local.
+- Priorizar fuentes institucionales UnADM y normas juridicas verificables.
+- Agregar solo fuentes realmente consultables y pertinentes a cada actividad.
+- No inventar referencias bibliograficas.
+- Conservar metadatos minimos: autor, titulo, anio y fuente/editorial o URL.
+- Distinguir bibliografia base de materia y bibliografia especifica por actividad.
+- Usar derechos-de-la-persona-y-familia.bib como archivo canónico local.
+- Priorizar fuentes institucionales UnADM y materiales jurídicos verificables.
+- Registrar fuentes específicas de cada actividad en el .bib local.
+- Distinguir bibliografía base de bibliografía específica de actividad.
+- Usar solo obras realmente consultables.
+- Conservar metadatos mínimos: autor, título, año y fuente editorial o URL.
+- Reemplazar placeholders dinámicos de nombre .bib por slug canónico fijo.
+- Corregir placeholder de nombre .bib en programa analítico si se reutiliza.
+- Priorizar fuentes institucionales UnADM y materiales juridicos verificables.
+- Agregar solo fuentes consultables y pertinentes a cada actividad.
+- No inventar referencias.
+- Distinguir bibliografia base de bibliografia especifica por actividad.
+- Conservar metadatos minimos: autor, titulo, anio y fuente o URL.
+- Agregar solo fuentes pertinentes a la actividad y realmente consultables.
+- Conservar metadatos minimos: autor, titulo, anio y fuente editorial o URL.
 
 ## propagation_hints
 
@@ -260,6 +436,33 @@
 - Ciclo 21 necesita normalizacion manual si se reutiliza.
 - Ciclo 22: mantener normalizacion manual previa si se reutiliza.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente solo despues de validar JSON y estructura.
+- Compartir solo reglas estables y reutilizables entre nodos transversales.
+- Priorizar identidad, gates de calidad, estructura y grafo conceptual general.
+- Evitar propagar redaccion literal o contenidos tematicos no homologos.
+- Aplicar compresion lossless por union-deduplicacion sin regresion.
+- Si destino carece de contexto de actividad, mantener cerebro minimo y abrir vacios.
+- Propagar arriba y laterales solo tras validación de calidad.
+- Propagar recursivamente solo después de validar JSON y estructura.
+- En ciclo 1, aplicar normalización manual previa a reutilización.
+- Aplicar compresión union-dedupe sin pérdida y sin regresión.
+- Mantener reglas institucionales estables como base común.
+- Etiquetar reglas heredadas provisionales hasta confirmación en Derecho.
+- Propagar solo abstracciones generales cuando falte consigna textual.
+- Priorizar identidad, estructura reusable, calidad y grafo conceptual.
+- Evitar transferir redacción literal entre materias no equivalentes.
+- Si reaparece salida no JSON parseable, forzar normalización manual antes de propagar.
+- Transferir solo abstracciones editoriales estables entre nodos no equivalentes.
+- Priorizar identidad, estructura reusable, quality gates y grafo conceptual.
+- Evitar redaccion literal y contenido tematico no validado.
+- Si reaparece salida no parseable, forzar normalizacion manual previa.
+- Transferir solo abstracciones editoriales estables en saltos transversales.
+- Evitar traslado literal de redaccion o contenido tematico de la materia origen.
+- Mantener compresion lossless por union y deduplicacion sin regresion.
+- Si reaparece salida no estructurada, forzar normalizacion manual en ciclo siguiente.
+- Compartir entre nodos no equivalentes solo reglas abstractas y estables.
+- Evitar transferencia literal de redaccion o contenido tematico de otra asignatura.
+- Si reaparece salida no estructurada, forzar normalizacion manual previa.
 
 ## open_questions
 
@@ -282,3 +485,103 @@
 - Validar sustitucion definitiva del placeholder .bib en README y programa analitico.
 - Confirmar datos vigentes de figura docente y criterios de evaluacion. [supuesto]
 - Confirmar si el slug del .bib debe resolverse desde plantilla generadora o quedar fijo. [supuesto]
+- Confirmar consignas y rubricas reales de actividades de la materia destino.
+- Confirmar vigencia de datos de alumno, matricula y figura docente. [supuesto]
+- Confirmar correccion definitiva de nombres corruptos en README.
+- Confirmar sustitucion definitiva del placeholder de slug .bib en README y programa analitico.
+- Confirmar si coursecode LDE-S3B1 debe figurar en todos los productos.
+- Confirmar consigna específica de la actividad destino en Derechos de la persona y familia.
+- Confirmar si existe plantilla formal de presentación obligatoria para esta materia.
+- Confirmar datos de figura docente y criterios de evaluación vigentes.
+- Confirmar si el código LDE-S3B1 es requerido en todos los productos.
+- Confirmar si los datos de alumno y matrícula de la plantilla local siguen vigentes.
+- Validar corrección definitiva de rutas y slugs corruptos en README local.
+- Validar sustitución definitiva del placeholder de .bib en README y programa analítico.
+- Confirmar si el slug del .bib debe resolverse desde plantilla generadora. [supuesto]
+- Confirmar fuentes obligatorias de cada semana o unidad.
+- Confirmar si cada actividad requiere reporte, presentación u otro formato principal.
+- Confirmar consigna y rubrica vigentes de la primera actividad local.
+- Confirmar si coursecode LDE-S3B1 debe mostrarse en todos los artefactos.
+- Confirmar correccion definitiva de rutas corruptas en README.
+- Confirmar sustitucion final del placeholder dinamico del .bib en README y programa analitico.
+- Confirmar consigna y rubrica de la actividad destino vigente.
+- Confirmar sustitucion definitiva de placeholders de slug .bib en README y programa.
+- Confirmar si el codigo LDE-S3B1 es obligatorio en todos los productos.
+- Confirmar plantilla institucional obligatoria de presentacion para esta materia.
+- Confirmar consigna y rubrica vigentes de la actividad destino.
+- Confirmar si el codigo LDE-S3B1 es obligatorio en todos los entregables.
+- Confirmar vigencia de datos de alumno, matricula y figura docente de plantilla. [supuesto]
+- Confirmar sustitucion definitiva de tokens de slug .bib en README y programa analitico.
+- Confirmar si existe formato institucional obligatorio adicional para presentaciones.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad institucional UnADM
+- Integridad academica
+- Problema juridico
+- Marco normativo/doctrinal
+- Analisis propio
+- Conclusion juridica transferible
+- Trazabilidad consigna-producto
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Estructurar cada entrega en: problema, marco conceptual-normativo, analisis propio, conclusion juridica.
+- Conservar coherencia con programa analitico local de la materia.
+- Incluir trazabilidad entre consigna, desarrollo y cierre.
+- Verificar que nombres de archivo y slug sean consistentes antes de compilar.
+- Usar ejes locales: problema juridico o social, conceptos y normas, producto solicitado, analisis propio, conclusion transferible.
+- Transformar planeacion semanal en reportes, presentaciones o productos visuales segun consigna.
+
+### identidad_estilistica
+- Inicio con problema concreto.
+- Desarrollo por secciones funcionales.
+- Citas verificables y postura propia.
+- Cierre con criterio juridico.
+- Mantener identidad institucional UnADM en tono, metadatos y formato.
+- Usar nombre canonico de asignatura: Derechos de la persona y familia.
+- Alinear contexto curricular local: Licenciatura en Derecho, semestre 3, bloque 1, obligatoria seriada, 8 creditos.
+- Usar carpeta de materia como punto de entrada canonico.
+- Marcar como [supuesto] todo dato no confirmado por consigna o documento local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- Mantener identidad UnADM en portada, redaccion y metadatos.
+- Usar nombre de asignatura exacto: Derechos de la persona y familia.
+
+### patrones_argumentativos
+- Problema -> marco conceptual/normativo -> analisis -> conclusion.
+- Afirmacion juridica -> evidencia -> interpretacion propia.
+- Consigna explicita -> cumplimiento verificable del producto.
+- Abrir con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar en secciones: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear el formato final al producto solicitado por planeacion o consigna.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Mantener trazabilidad entre consigna, desarrollo y conclusion.
+- Identificar consigna, rubrica y producto solicitado antes de redactar.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Incluir postura argumentada del estudiante; evitar entrega solo descriptiva.
+
+### grafo_de_conocimiento
+- Conceptos: 271
+- Citas: 2
+- Relaciones reforzadas: 69
+- Evidencias: 89
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/derechos-de-la-persona-y-familia-lde/reporte-derechos-de-la-persona-y-familia.tex`
+- Caracteres LaTeX preservados: 4223
+- Bloques/parrafos indexados: 20
+- Claves citadas: ninguna
+- Claves sin referencia: ninguna

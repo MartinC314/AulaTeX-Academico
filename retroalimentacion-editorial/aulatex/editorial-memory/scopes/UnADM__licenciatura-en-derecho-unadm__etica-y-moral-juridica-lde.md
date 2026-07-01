@@ -30,6 +30,19 @@
 - Materia objetivo: Ética y Moral jurídica en Derecho UnADM, semestre 1, bloque 2, obligatoria, 8 créditos.
 - Aplicar compresión por unión-dedupe sin pérdida y sin regresión.
 - Se detectaron placeholders y nombres corruptos en README y programa analítico; corregir antes de automatizar.
+- Sincronizacion transversal aplicada desde actividad de Filosofia del Derecho hacia materia de Etica y Moral Juridica.
+- Se preserva identidad UnADM y contexto curricular local: Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Se refuerza normalizacion estructurada obligatoria antes de propagacion recursiva.
+- Se consolida patron editorial estable: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se mantienen alertas tecnicas locales: placeholders de slug sin expandir y nombres de archivo corruptos en README.
+- Se mantiene criterio de compresion lossless por union y deduplicacion semantica sin recorte.
+- Sincronizacion transversal ciclo 2 aplicada con estrategia progresiva y conservadora.
+- Se preserva identidad UnADM y contexto curricular local de Etica y Moral Juridica.
+- Se refuerza patron reusable: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se mantiene normalizacion estructurada obligatoria antes de propagacion recursiva.
+- Se conserva compresion lossless por union y deduplicacion semantica sin recorte.
+- Se integran alertas tecnicas verificables: placeholders de slug y nombres de archivo corruptos en README.
+- Se mantienen fuentes heredadas no verificadas como provisionales con marca explicita.
 
 ## identity_rules
 
@@ -53,6 +66,19 @@
 - Fuente provisional: Auto (model-router) desde Actividad 1.
 - Fuente provisional: Claude Foundry desde Actividad 1.
 - Fuente provisional de herencia cruzada: Codex, GPT-Pro, Auto y Claude Foundry desde Actividad 1.
+- Mantener voz academica formal y juridicamente precisa alineada a UnADM.
+- Usar carpeta de asignatura como entrada canonica.
+- Anclar toda entrega al contexto de Licenciatura en Derecho.
+- Marcar como supuesto todo dato no visible en consigna o fuentes locales.
+- Tratar herencias no verificadas como provisionales hasta confirmacion local.
+- No transferir literalidad de Filosofia del Derecho; transferir solo abstracciones estables.
+- Mantener voz academica formal alineada a UnADM.
+- Anclar cada entrega a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.
+- Usar carpeta de materia como entrada canonica editorial.
+- Aterrizar analisis en contexto juridico mexicano cuando aplique.
+- Marcar como supuesto todo dato no visible en consigna o fuente local.
+- Tratar herencias de Codex y GPT-Pro como provisionales hasta verificacion local.
+- No transferir literalidad entre materias; transferir abstracciones estables.
 
 ## structure_rules
 
@@ -68,6 +94,15 @@
 - Usar la carpeta de materia como entrada canónica de consistencia editorial.
 - Mantener trazabilidad entre actividad, reporte y presentación.
 - Integrar ejes locales: problema, conceptos, producto solicitado, análisis propio y conclusión profesional.
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el producto al formato pedido en planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Mantener trazabilidad entre consigna, desarrollo, evidencia y conclusion.
+- Abrir con encuadre breve del problema juridico o social.
+- Alinear formato final al producto pedido en planeacion semanal.
+- Cerrar con conclusion juridica transferible a practica profesional.
 
 ## activity_rules
 
@@ -81,6 +116,15 @@
 - Vincular conceptos éticos y morales con implicaciones jurídicas concretas.
 - Cerrar con conclusión transferible a la práctica profesional del derecho.
 - No trasladar reglas de Filosofía del Derecho sin adaptarlas al enfoque ético-moral jurídico.
+- Explicitar problema, pregunta guia y alcance de la actividad.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Evitar entregas solo descriptivas; exigir argumentacion propia.
+- Vincular etica y moral con implicaciones juridicas concretas en Mexico cuando aplique.
+- Verificar correspondencia exacta entre producto entregado y consigna.
+- Explicitar problema, pregunta guia y alcance en cada actividad.
+- Evitar entregas solo descriptivas o de resumen.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Verificar correspondencia exacta entre producto entregado y consigna local.
 
 ## quality_gates
 
@@ -94,6 +138,17 @@
 - Confirmar que no se eliminen reglas útiles previas durante consolidación.
 - Comprobar deduplicación semántica sin recorte de contenido válido.
 - Verificar que toda fuente citada exista en la bibliografía local o se agregue con metadatos confirmados.
+- Bloquear propagacion si salida no es JSON parseable.
+- Validar estructura minima completa antes de reutilizar aguas abajo.
+- Normalizar respuestas no estructuradas antes de consolidar memoria.
+- Confirmar que no se eliminen reglas utiles previas.
+- Comprobar deduplicacion semantica sin perdida de contenido valido.
+- Validar consistencia entre citas en texto y archivo .bib.
+- Exigir marca de supuesto en toda afirmacion no respaldada.
+- Normalizar respuestas no estructuradas antes de consolidar.
+- Confirmar que no se eliminen reglas utiles previas en cada ciclo.
+- Exigir respaldo o marca de supuesto en cada afirmacion sensible.
+- Verificar compilacion o parseo de .tex y .bib sin errores criticos.
 
 ## latex_rules
 
@@ -119,6 +174,18 @@
 - Corregir nombres corruptos en README: eporte-etica-y-moral-juridica.tex y eferencias-etica-y-moral-juridica/.
 - Resolver placeholders del slug en README y programa analítico hacia etica-y-moral-juridica.bib.
 - Corregir placeholders o rutas corruptas detectadas antes de compilar.
+- Usar acentos y codificacion correcta en .tex y .bib.
+- Mantener claves BibTeX estables para evitar rupturas de compilacion.
+- Evitar comandos no estandar sin justificacion editorial.
+- Compilar sin errores criticos, referencias rotas ni rutas corruptas.
+- Corregir nombres de archivo danados en README antes de automatizar validacion.
+- Resolver placeholder de slug a etica-y-moral-juridica.bib en README y programa analitico. [supuesto]
+- Usar codificacion y acentos correctos en espanol en .tex y .bib.
+- Mantener consistencia de titulos, etiquetas y nombres de archivo.
+- Resolver placeholders de slug sin expandir en README y programa analitico.
+- Corregir rutas o nombres corruptos antes de automatizar validaciones.
+- Mantener claves BibTeX estables para evitar roturas en citas.
+- Compilar sin referencias rotas ni warnings criticos.
 
 ## bibliography_rules
 
@@ -139,6 +206,17 @@
 - Depurar entradas duplicadas por clave o contenido equivalente en la bibliografía.
 - Completar entrada truncada sierraUniversidadNacional1910 antes de citarla.
 - Confirmar y completar la entrada truncada sierraUniversidadNacional1910 antes de citarla.
+- Priorizar fuentes institucionales UnADM y materiales juridicos verificables.
+- No inventar referencias ni metadatos faltantes.
+- Conservar metadatos minimos: autor o editor, titulo, anio, fuente editorial o URL.
+- Registrar en .bib local solo fuentes realmente consultables.
+- Distinguir bibliografia base de bibliografia especifica por actividad.
+- Depurar duplicados por clave y por equivalencia de contenido.
+- Completar entradas truncadas antes de citar.
+- Registrar fuentes especificas de actividad en etica-y-moral-juridica.bib.
+- Depurar duplicados por clave o equivalencia autor-titulo-anio.
+- Unificar duplicados detectados: Huerta 2000, Ronquillo 2018, Singer 1995.
+- Completar entradas truncadas antes de citarlas.
 
 ## propagation_hints
 
@@ -196,6 +274,18 @@
 - Ciclo 21 necesita normalizacion manual si se reutiliza.
 - Ciclo 22 necesita normalización manual si se reutiliza.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar recursivo solo tras validar JSON y estructura.
+- Compartir a nodos laterales solo reglas editoriales estables y no contenido literal.
+- Priorizar identidad, estructura reusable, quality gates y grafo conceptual.
+- No propagar detalles coyunturales de una actividad como regla global.
+- Aplicar estrategia progresiva y conservadora: reforzar primero integridad y trazabilidad.
+- Mantener registro de supuestos abiertos para cierre en ciclos siguientes.
+- Propagar recursivamente solo tras validar JSON y estructura.
+- Compartir entre nodos no equivalentes solo reglas editoriales estables.
+- Priorizar identidad, estructura reusable, gates y grafo conceptual.
+- Evitar transferir redaccion literal o contenidos tematicos hiperlocales.
+- Mantener alerta: ciclos previos con salida no estructurada requieren normalizacion manual.
+- Evitar regresiones frente a reglas utiles ya consolidadas.
 
 ## open_questions
 
@@ -217,3 +307,86 @@
 - Confirmar si la planeación semanal local incluye consignas adicionales no reflejadas en esta memoria.
 - Confirmar si la bibliografía local debe normalizar claves BibTeX conservando alias históricos.
 - Confirmar criterio final de deduplicación bibliográfica: clave, DOI o título+autor+año.
+- Confirmar plantilla LaTeX obligatoria de Etica y Moral Juridica.
+- Confirmar si se conservaran alias BibTeX historicos tras unificacion de duplicados.
+- Confirmar correccion definitiva de rutas con caracteres corruptos en README.
+- Confirmar si existe rubrica local que exija secciones adicionales.
+- Supuesto: el placeholder de slug debe sustituirse permanentemente por etica-y-moral-juridica.bib.
+- Supuesto: falta consigna puntual de actividades locales futuras; confirmar formato exigido por semana.
+- Confirmar criterio final de deduplicacion bibliografica operativo.
+- Confirmar politica de alias BibTeX al unificar claves historicas.
+- Supuesto: placeholder de slug debe sustituirse de forma permanente por etica-y-moral-juridica.bib.
+- Confirmar correccion definitiva de nombres corruptos en README.
+- Confirmar completado de la entrada truncada sierraUniversidadNacional1910.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad UnADM
+- Integridad academica
+- Problema juridico-social
+- Analisis propio
+- Conclusion juridica
+- Etica juridica
+- Moral juridica
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Organizar cada entrega con problema, conceptos/fundamento, analisis y cierre.
+- Alinear productos a la planeacion semanal y al programa analitico local.
+- Usar la carpeta de materia como entrada canonica de consistencia editorial.
+- Mantener trazabilidad entre actividad, reporte y presentacion.
+- Organizar cada entrega con problema, conceptos o fundamento, analisis y cierre.
+- Integrar los ejes locales: problema, conceptos, producto solicitado, analisis propio y conclusion profesional.
+
+### identidad_estilistica
+- Inicio con encuadre breve.
+- Objetivo explicito antes del desarrollo.
+- Secciones funcionales y trazables.
+- Cierre con postura juridica propia.
+- Supuestos marcados de forma visible.
+- Mantener voz academica formal y juridicamente precisa alineada a UnADM.
+- Usar carpeta de asignatura como entrada canonica.
+- Anclar toda entrega al contexto de Licenciatura en Derecho.
+- Marcar como supuesto todo dato no visible en consigna o fuentes locales.
+- Tratar herencias no verificadas como provisionales hasta confirmacion local.
+- No transferir literalidad de Filosofia del Derecho; transferir solo abstracciones estables.
+- Conservar voz academica formal alineada a UnADM.
+
+### patrones_argumentativos
+- Plantear problema y pregunta guia.
+- Definir conceptos y marco aplicable.
+- Contrastar fuentes y evidencia.
+- Desarrollar postura propia razonada.
+- Concluir con implicacion practica juridica.
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el producto al formato pedido en planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Mantener trazabilidad entre consigna, desarrollo, evidencia y conclusion.
+- Explicitar problema, pregunta guia y alcance de la actividad.
+
+### grafo_de_conocimiento
+- Conceptos: 130
+- Citas: 6
+- Relaciones reforzadas: 29
+- Evidencias: 68
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/etica-y-moral-juridica-lde/reporte-etica-y-moral-juridica.tex`
+- Caracteres LaTeX preservados: 17119
+- Bloques/parrafos indexados: 23
+- Claves citadas: clave, clave1, clave2, ronquilloarmasEticaGeneralProfesional2018
+- Claves sin referencia: clave, clave1, clave2

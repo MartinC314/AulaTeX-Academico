@@ -54,6 +54,34 @@
 - Conservar identidad UnADM, enfoque juridico-laboral e integridad academica en toda actividad.
 - Mantener identidad UnADM, enfoque juridico-laboral e integridad academica en toda actividad.
 - Consolidar memoria con union-dedupe lossless sin recorte de reglas utiles.
+- Sincronizacion transversal aplicada con estrategia conservadora y union-dedupe lossless.
+- Se preservan reglas institucionales UnADM y ejes editoriales transferibles entre materias.
+- Se refuerza normalizacion obligatoria de salidas no parseables antes de propagacion.
+- Se mantiene enfoque juridico-laboral del destino sin copiar redaccion literal del origen.
+- Se crea ADN editorial minimo reconstructible para la materia destino.
+- Memoria de materia consolidada para Derecho laboral y relaciones laborales.
+- Se conserva identidad UnADM y enfoque juridico-laboral del destino.
+- Sincronizacion transversal aplicada con estrategia progresiva y conservadora.
+- Se aplico union-dedupe lossless sobre reglas utiles previas.
+- Se preservan ejes editoriales transferibles: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Ubicacion curricular local verificada: semestre 7, bloque 1, obligatoria, 8 creditos.
+- Existe antecedente de salida no parseable desde Codex y GPT-Pro.
+- No transferir contenido doctrinal especifico de Filosofia del Derecho sin pertinencia laboral verificada.
+- Sincronizacion transversal ciclo 2 aplicada con estrategia conservadora.
+- Se preservan reglas utiles previas y se deduplican sin recorte.
+- Se refuerza ADN UnADM con enfoque juridico-laboral del destino.
+- Se mantiene normalizacion obligatoria antes de propagacion recursiva.
+- Se consolidan ejes estables: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Sincronizacion transversal conservadora aplicada desde actividad de otra materia hacia materia destino.
+- Se preservan reglas institucionales estables y se evita arrastre de contenido tematico no laboral.
+- Se mantiene normalizacion obligatoria de salidas no parseables antes de propagacion.
+- Se refuerza esquema reusable: problema, conceptos/normas, evidencia, analisis propio y conclusion juridica.
+- Se consolida union-dedupe lossless sin eliminar reglas utiles previas.
+- Sincronizacion transversal ciclo 2 aplicada con union-dedupe lossless.
+- Se preservan reglas institucionales estables y se evita copia literal entre materias no equivalentes.
+- Se refuerza normalizacion obligatoria para salidas no parseables antes de propagacion recursiva.
+- Se mantiene enfoque local de Derecho laboral con ejes editoriales transferibles.
+- Se corrigen abstracciones reutilizables: problema, conceptos, evidencia, analisis propio, conclusion juridica.
 
 ## identity_rules
 
@@ -88,6 +116,21 @@
 - Supuesto: el autor de plantilla actual es Martin Jonathan de la Cruz; requiere confirmacion.
 - Fuente provisional heredada: Auto (model-router) desde Actividad 1.
 - Fuente provisional heredada: Claude Foundry desde Actividad 1.
+- Mantener identidad institucional UnADM en tono, portada y metadatos.
+- Usar contexto curricular del destino: Licenciatura en Derecho, semestre 7, bloque 1, obligatoria, 8 creditos.
+- Tomar la carpeta de asignatura como punto de entrada canonico.
+- Marcar como supuesto todo dato no visible en la consigna local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- Usar datos locales: Derecho laboral y relaciones laborales, LDE-S7B1, semestre 7, bloque 1.
+- Vincular toda entrega a la Licenciatura en Derecho.
+- Usar la carpeta de asignatura como punto de entrada canonico.
+- Citar la malla curricular de Derecho para ubicacion curricular cuando aplique.
+- Marcar memoria heredada desde Codex o GPT-Pro como provisional si se reutiliza.
+- Usar la carpeta de asignatura como entrada canonica.
+- Marcar como supuesto todo dato no visible en consigna local.
+- No transferir etiquetas curriculares del origen cuando no correspondan al destino.
+- Usar contexto curricular local verificado: Licenciatura en Derecho, semestre 7, bloque 1, obligatoria, 8 creditos.
+- No transferir metadatos curriculares de Filosofia del Derecho al destino laboral.
 
 ## structure_rules
 
@@ -114,6 +157,22 @@
 - Usar como nombres canonicos: reporte-derecho-laboral-y-relaciones-laborales.tex, presentacion-derecho-laboral-y-relaciones-laborales.tex, derecho-laboral-y-relaciones-laborales.bib, programa-analitico-derecho-laboral-y-relaciones-laborales.md, referencias-derecho-laboral-y-relaciones-laborales/.
 - Usar nombres canonicos: reporte-derecho-laboral-y-relaciones-laborales.tex, presentacion-derecho-laboral-y-relaciones-laborales.tex, derecho-laboral-y-relaciones-laborales.bib, programa-analitico-derecho-laboral-y-relaciones-laborales.md, referencias-derecho-laboral-y-relaciones-laborales/.
 - Corregir en README las entradas rotas "eporte" a "reporte" y "eferencias" a "referencias".
+- Abrir con encuadre breve del problema juridico o social laboral.
+- Separar en secciones: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Definir objetivo puntual antes del desarrollo.
+- Alinear el formato final al producto pedido en la planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Iniciar con encuadre breve del problema juridico o social laboral.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear cada entrega al producto solicitado por la planeacion semanal.
+- Transformar la planeacion en reporte, presentacion o producto visual segun consigna.
+- Corregir rutas o nombres de archivo mal renderizados antes de canonizarlos.
+- Alinear el formato final al producto pedido en planeacion semanal.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Alinear formato final al producto solicitado por la planeacion semanal.
+- Mantener estructura minima completa antes de reutilizar o propagar.
+- Separar secciones: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Mantener estructura reusable sin arrastrar titulos literales de otra materia.
 
 ## activity_rules
 
@@ -128,6 +187,25 @@
 - Vincular conceptos laborales con aplicacion profesional comprobable.
 - No trasladar contenido de otra materia sin validar pertinencia laboral.
 - Sustentar postura academica propia con norma, doctrina o datos verificables.
+- Contextualizar cada actividad en una pregunta guia verificable.
+- Sustentar afirmaciones con fuentes trazables y cita explicita.
+- Incluir postura argumentada del estudiante, no solo resumen.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Evitar traslado automatico de contenido de otras materias sin validacion de pertinencia laboral.
+- Formular una pregunta guia verificable.
+- Incluir postura academica propia, no solo resumen descriptivo.
+- Sustentar afirmaciones con norma, doctrina o datos verificables.
+- Confirmar que el producto corresponda a la consigna de la actividad.
+- No asumir fuentes de semanas posteriores como fuentes de la actividad actual.
+- Marcar como supuesto cualquier inferencia necesaria no confirmada por la consigna.
+- Contextualizar cada actividad en pregunta guia verificable.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Incluir postura argumentada del estudiante; evitar resumen descriptivo puro.
+- Incluir postura argumentada del estudiante, no solo resumen descriptivo.
+- No asumir fuentes de semanas o materias distintas sin validacion de pertinencia.
+- Incluir postura argumentada del estudiante; evitar entrega solo descriptiva.
+- No asumir que fuentes de semanas posteriores aplican a la actividad actual.
+- Validar pertinencia laboral de todo contenido transversal importado.
 
 ## quality_gates
 
@@ -155,6 +233,22 @@
 - Validar existencia de archivos y carpetas, o marcarlos como supuestos.
 - Verificar que metadatos coincidan con README, programa analitico, plantilla LaTeX y materia destino.
 - Verificar consistencia entre actividad, programa analitico y plantilla LaTeX.
+- Bloquear propagacion si la salida no es JSON parseable.
+- Validar estructura minima completa antes de aplicar aguas abajo.
+- Confirmar respaldo de afirmaciones o marca explicita de supuesto.
+- Validar consistencia entre citas en texto y archivo .bib.
+- Normalizar respuestas no estructuradas antes de reutilizacion.
+- Revisar y normalizar respuestas no estructuradas antes de reutilizarlas.
+- Revisar estructura minima completa antes de aplicar aguas abajo.
+- Verificar que metadatos coincidan con fuentes locales.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca de supuesto.
+- Verificar correspondencia del producto con la consigna local.
+- Preservar reglas utiles previas aunque provengan de memoria institucional.
+- Bloquear propagacion si salida no es JSON parseable.
+- Revisar y normalizar respuestas no estructuradas antes de reutilizar.
+- Verificar correspondencia del producto con la consigna de la actividad local.
+- Normalizar manualmente heredados no estructurados antes de reutilizacion.
+- Verificar correspondencia entre consigna, producto y rubrica local [supuesto: rubrica pendiente].
 
 ## latex_rules
 
@@ -173,6 +267,34 @@
 - Completar el entorno authortable truncado antes de compilar.
 - No fijar autor personal sin confirmacion del alumno.
 - Mantener compilacion en espanol y formato letterpaper.
+- Usar plantilla .tex local de la materia como base por actividad.
+- Mantener codificacion y acentos correctos en espanol en .tex y .bib.
+- Resolver marcadores sin expandir en rutas y nombres de archivo.
+- Completar metadatos reales de actividad y autor antes de compilar.
+- Compilar sin errores criticos, referencias rotas ni entornos truncados.
+- Mantener compatibilidad con compilacion en espanol y letterpaper.
+- Usar codificacion y acentos correctos en espanol en .tex y .bib.
+- Mantener claves BibTeX estables para evitar referencias rotas.
+- Evitar comandos no estandar sin justificacion editorial.
+- Compilar sin errores criticos y sin referencias rotas.
+- Verificar nombres de archivos del README antes de referenciarlos.
+- Corregir caracteres anomalos en rutas o nombres antes de compilar.
+- Resolver marcadores PowerShell sin expandir en README, programa analitico y bibliografia.
+- Mantener claves BibTeX estables.
+- Compilar sin errores criticos ni referencias rotas.
+- Resolver marcadores sin expandir tipo $(@{...}.Slug) en README, programa y nombres de archivo.
+- Completar entornos truncados de plantilla antes de compilar.
+- Verificar nombres canonicos reales de archivos antes de referenciarlos.
+- Usar codificacion y acentos correctos en español en .tex y .bib.
+- Mantener claves BibTeX estables para evitar roturas de compilacion.
+- Corregir rutas o nombres mal renderizados antes de canonizarlos.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analitico.
+- Usar plantilla .tex local de la materia como base.
+- Completar metadatos con datos reales y confirmados del alumno [supuesto: autor de plantilla no confirmado].
+- Conservar macros institucionales de universidad, curso y licenciatura.
+- Resolver marcadores de plantilla sin expandir en rutas y nombres de archivo.
+- Cerrar entornos truncados antes de compilar y evitar referencias rotas.
+- Mantener claves BibTeX estables para evitar roturas en recompilacion.
 
 ## bibliography_rules
 
@@ -189,6 +311,29 @@
 - Marcar como supuesto metadatos faltantes como fecha de consulta.
 - Corregir referencias al marcador PowerShell de bibliografia antes de citar.
 - Marcar como supuesto metadatos faltantes, como fecha de consulta.
+- Centralizar bibliografia de la materia en derecho-laboral-y-relaciones-laborales.bib.
+- Priorizar fuentes institucionales UnADM y fuentes juridicas verificables.
+- Agregar solo referencias realmente consultables y pertinentes a la actividad.
+- No inventar doctrina, normas, jurisprudencia ni URL.
+- Conservar metadatos minimos: autor, titulo, ano y fuente o URL; marcar faltantes como supuesto.
+- Priorizar fuentes institucionales UnADM y materiales juridicos verificables.
+- Registrar fuentes especificas de cada actividad en el .bib de la asignatura.
+- Usar solo obras realmente consultables.
+- Conservar metadatos minimos: autor, titulo, ano y fuente editorial o URL.
+- Distinguir bibliografia base de bibliografia especifica de actividad.
+- No asumir bibliografia de Filosofia del Derecho como bibliografia laboral sin verificacion local.
+- Centralizar fuentes de materia en derecho-laboral-y-relaciones-laborales.bib.
+- Agregar solo entradas BibTeX consultables y pertinentes a actividad.
+- No inventar referencias, normas, jurisprudencia ni URLs.
+- Conservar metadatos minimos: autor, titulo, anio y fuente/editorial o URL.
+- Distinguir bibliografia base de bibliografia especifica por actividad.
+- Centralizar bibliografia de materia en derecho-laboral-y-relaciones-laborales.bib.
+- Registrar fuentes especificas de cada actividad en el .bib local.
+- No inventar referencias; usar solo obras consultables.
+- Conservar metadatos minimos: autor, titulo, año y fuente editorial o URL.
+- Agregar solo referencias consultables y pertinentes a la actividad.
+- No inventar doctrina, jurisprudencia, normas ni URL.
+- Conservar metadatos minimos: autor, titulo, anio, fuente/editorial o URL.
 
 ## propagation_hints
 
@@ -258,6 +403,25 @@
 - Ciclo 1 a 21 requieren normalizacion manual si se reutiliza memoria heredada no parseable.
 - Ciclo 22: mantener la precondicion de normalizacion manual para cualquier heredado no parseable.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente solo despues de validar JSON y estructura.
+- Compartir entre nodos no equivalentes solo abstracciones editoriales estables.
+- Priorizar identidad, estructura reusable, gates de calidad y grafo conceptual.
+- Preservar reglas utiles previas y evitar regresiones.
+- Aplicar normalizacion manual si se detecta salida no estructurada en nodos vecinos.
+- Evitar regresiones respecto de reglas utiles previas.
+- Propagar solo abstracciones editoriales estables entre materias no equivalentes.
+- Propagar identidad, estructura reusable, gates de calidad y grafo conceptual.
+- Evitar transferir redaccion literal o contenido doctrinal especifico del origen.
+- Mantener especificidad local del destino al recibir reglas transversales.
+- Priorizar correccion de artefactos de plantilla en el ciclo actual.
+- Compartir solo abstracciones editoriales estables entre nodos no equivalentes.
+- Priorizar identidad, estructura reusable, quality gates y grafo conceptual.
+- Evitar transferencia de redaccion literal entre materias.
+- Preservar reglas utiles previas y agregar solo mejoras verificables.
+- Evitar transferencia de redaccion literal o contenido tematico no transversal.
+- Priorizar identidad, gates de calidad, estructura reusable y grafo conceptual.
+- Evitar regresiones: no eliminar reglas utiles previas.
+- Si falta contexto local, crear cerebro minimo y dejar vacios explicitos.
 
 ## open_questions
 
@@ -277,3 +441,101 @@
 - Confirmar nombres canonicos finales de reporte, presentacion y carpeta de referencias en README.
 - Confirmar si LDE-S7B1 basta como codigo unico en todas las actividades.
 - Definir formato de cita juridica exigido por docente: APA, ISO 690 u otro.
+- Confirmar rubrica oficial por actividad en Derecho laboral y relaciones laborales.
+- Confirmar formato de citacion exigido por docente (supuesto: no especificado).
+- Confirmar si el autor de plantilla es fijo o variable por alumno.
+- Confirmar nombres canonicos finales de artefactos en README tras corregir marcadores.
+- Confirmar fuentes obligatorias por unidad para poblar el .bib local.
+- Confirmar consigna textual de cada actividad laboral.
+- Confirmar producto exacto solicitado por actividad.
+- Confirmar rubrica oficial para convertirla en checklist.
+- Confirmar fuentes obligatorias de la semana correspondiente.
+- Confirmar si Martin Jonathan de la Cruz es el autor correcto.
+- Confirmar si el codigo LDE-S7B1 basta como codigo unico para todas las actividades.
+- Confirmar fuentes laborales base de la materia antes de ampliar bibliografia.
+- Confirmar si existen criterios locales sobre legislacion vigente, jurisprudencia y doctrina laboral.
+- Confirmar formato de cita juridica exigido por docente (supuesto: no definido).
+- Confirmar si autor de plantilla es fijo o variable por alumno (supuesto: variable).
+- Confirmar rubrica oficial por actividad para convertirla en checklist.
+- Confirmar nombres canonicos finales de artefactos y carpeta de referencias.
+- Confirmar si cada actividad requiere .bib propio o uso exclusivo del .bib de materia.
+- Supuesto: falta consigna textual de actividades concretas de la materia destino; confirmar producto exacto por semana.
+- Confirmar rubrica oficial para convertir criterios en checklist operativo.
+- Confirmar formato de cita juridica exigido por docente (APA, ISO 690 u otro).
+- Confirmar si el autor de plantilla es fijo institucional o variable por alumno.
+- Confirmar normalizacion final de nombres con artefactos de plantilla en README.
+- Confirmar formato de cita exigido por docente (APA, ISO 690 u otro).
+- Confirmar rubrica oficial por actividad para convertirla en checklist operativo.
+- Confirmar si existe guia local de jurisprudencia laboral obligatoria.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad institucional UnADM
+- Problema juridico laboral
+- Marco normativo y doctrinal
+- Analisis propio
+- Conclusion transferible
+- Trazabilidad de citas
+- Sincronizacion transversal aplicada con estrategia conservadora y union-dedupe lossless
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Alinear cada entrega al esquema: problema, conceptos/normas, producto, analisis propio, conclusion transferible.
+- Conservar README de materia como punto de entrada canonico.
+- Registrar nuevas reglas por union-dedupe sin eliminar reglas vigentes utiles.
+- Alinear cada entrega al esquema: problema, conceptos o normas, producto, analisis propio y conclusion transferible.
+- Organizar productos como reporte, presentacion, bibliografia local, programa analitico y carpeta de referencias.
+- Corregir rutas o nombres de archivo mal renderizados antes de usarlos como canon.
+
+### identidad_estilistica
+- Frases cortas y accionables.
+- Supuestos explicitos cuando falte evidencia local.
+- Sin redaccion literal heredada entre materias.
+- Sin fuentes inventadas.
+- Mantener identidad institucional UnADM en tono, portada y metadatos.
+- Usar contexto curricular del destino: Licenciatura en Derecho, semestre 7, bloque 1, obligatoria, 8 creditos.
+- Tomar la carpeta de asignatura como punto de entrada canonico.
+- Marcar como supuesto todo dato no visible en la consigna local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- Mantener identidad institucional UnADM en portada y metadatos.
+- Usar datos de asignatura: Derecho laboral y relaciones laborales, LDE-S7B1, semestre 7, bloque 1.
+- Marcar como supuesto cualquier dato personal no confirmado del autor.
+
+### patrones_argumentativos
+- Problema inicial breve.
+- Marco conceptual y normativo pertinente.
+- Analisis propio con contraste de fuentes.
+- Cierre con criterio juridico aplicable.
+- Abrir con encuadre breve del problema juridico o social laboral.
+- Separar en secciones: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Definir objetivo puntual antes del desarrollo.
+- Alinear el formato final al producto pedido en la planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Contextualizar cada actividad en una pregunta guia verificable.
+- Sustentar afirmaciones con fuentes trazables y cita explicita.
+- Incluir postura argumentada del estudiante, no solo resumen.
+
+### grafo_de_conocimiento
+- Conceptos: 261
+- Citas: 2
+- Relaciones reforzadas: 71
+- Evidencias: 93
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/derecho-laboral-y-relaciones-laborales-lde/reporte-derecho-laboral-y-relaciones-laborales.tex`
+- Caracteres LaTeX preservados: 4251
+- Bloques/parrafos indexados: 20
+- Claves citadas: ninguna
+- Claves sin referencia: ninguna

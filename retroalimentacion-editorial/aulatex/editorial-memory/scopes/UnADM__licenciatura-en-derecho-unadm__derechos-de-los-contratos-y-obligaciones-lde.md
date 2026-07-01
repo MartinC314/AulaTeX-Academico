@@ -32,6 +32,41 @@
 - Base institucional UnADM reusable y activa en la materia.
 - Existe herencia institucional provisional desde Codex, GPT-Pro, Auto y Claude Foundry que requiere validacion.
 - Base institucional UnADM reutilizable y activa en la materia.
+- Se consolida memoria transversal minima para la materia con identidad UnADM y enfoque juridico.
+- Se preservan reglas estables de normalizacion estructurada y compresion por union-dedupe sin regresion.
+- Se refuerzan ejes editoriales reutilizables: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se sincroniza ADN editorial transversal UnADM desde actividad hacia materia no equivalente.
+- Se preservan reglas estables: identidad, estructura reusable, gates de calidad y grafo conceptual.
+- La transferencia es abstracta, conservadora y sin redaccion literal.
+- Se refuerza compresion lossless por union-dedupe sin regresion.
+- Se consolida sincronizacion transversal conservadora entre actividad de origen y materia destino.
+- Se preservan reglas institucionales estables de UnADM sin traslado literal de contenido tematico de Filosofia del Derecho.
+- Se refuerza normalizacion estructurada obligatoria antes de cualquier propagacion recursiva.
+- Se mantiene eje reusable de cinco pasos: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se confirma cerebro editorial minimo funcional para la materia destino con vacios locales abiertos.
+- Se refuerza cerebro editorial transversal UnADM para la materia.
+- Se integran abstracciones estables heredadas desde actividad no equivalente.
+- Se preservan ejes editoriales comunes sin trasladar redacción literal.
+- Se consolida normalización estructurada y control de calidad transversal.
+- Se fortalece grafo conceptual aplicable a contratos y obligaciones.
+- Sincronizacion transversal aplicada con estrategia conservadora y sin regresion.
+- Se preservan reglas estables institucionales, estructurales y de calidad de UnADM.
+- Se refuerza normalizacion obligatoria de salidas no estructuradas antes de propagar.
+- Se mantiene compresion lossless por union-dedupe sin recorte de reglas utiles.
+- Se agregan mejoras verificables del contexto local: resolucion de tokens Slug y rutas con caracteres anómalos.
+- Se sincroniza ADN editorial transversal UnADM desde actividad de Filosofía del Derecho hacia materia de Contratos y Obligaciones.
+- Se preservan ejes editoriales estables y controles de calidad reutilizables.
+- La transferencia es abstracta, conservadora y sin redacción literal.
+- Se refuerza el cerebro editorial mínimo del destino para propagación recursiva.
+- Se preservan reglas estables: identidad UnADM, normalizacion estructurada y cierre juridico con criterio propio.
+- Se transfieren solo abstracciones reutilizables y no redaccion literal de Filosofia del Derecho.
+- Se mantiene control de herencias no verificadas como provisionales.
+- Se prioriza grafo conceptual comun: problema, conceptos, evidencia, analisis propio y conclusion juridica.
+- Se consolida memoria transversal estable desde actividad filosófica hacia materia contractual.
+- Se preservan ejes editoriales UnADM reutilizables sin transferencia literal.
+- Se refuerza sincronización transversal con enfoque jurídico aplicado.
+- Compresión lossless por unión y deduplicación verificada.
+- Destino mantiene cerebro editorial mínimo con vacíos locales explícitos.
 
 ## identity_rules
 
@@ -54,6 +89,34 @@
 - Fuente provisional: Codex desde Actividad 1.
 - Fuente provisional: Auto (model-router) desde Actividad 1.
 - Fuente provisional: Claude Foundry desde Actividad 1.
+- Mantener identidad institucional UnADM en tono, portada y metadatos.
+- Usar datos curriculares verificados: Licenciatura en Derecho, semestre 4, bloque 1, obligatoria, 8 creditos.
+- Conservar enfoque disciplinar en contratos y obligaciones.
+- Usar la carpeta de materia como entrada canonica.
+- Marcar como [supuesto] todo dato no visible en consigna local.
+- Tratar herencias no verificadas como provisionales hasta confirmacion local.
+- Mantener identidad institucional UnADM en todo producto.
+- Marcar como [supuesto] cualquier dato no confirmado localmente.
+- Tratar herencias Codex o GPT-Pro como provisionales hasta verificacion.
+- Usar carpeta de materia como punto de entrada canonico.
+- No mezclar identidad de materias distintas sin adaptacion disciplinar.
+- Usar datos curriculares verificados de la materia destino: semestre 4, bloque 1, obligatoria, 8 creditos.
+- Usar carpeta de materia como entrada canonica.
+- Usar datos curriculares verificados de la materia.
+- Tratar herencias externas o laterales como provisionales hasta validación.
+- Usar datos curriculares verificados de la materia: semestre 4, bloque 1, obligatoria, 8 creditos.
+- Usar codigo de curso LDE-S4B1 cuando la plantilla lo requiera.
+- Marcar como [supuesto] todo dato no visible en la consigna local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- Tratar herencias no verificadas como provisionales hasta validación.
+- Usar carpeta de materia como punto de entrada canónico.
+- Mantener identidad institucional UnADM en tono, formato y metadatos.
+- Usar datos curriculares verificados del destino: Licenciatura en Derecho, semestre 4, bloque 1, obligatoria, 8 creditos.
+- Usar LDE-S4B1 cuando la plantilla lo requiera.
+- Marcar como [supuesto] todo dato no confirmado por consigna local.
+- Tratar herencias externas no verificadas como provisionales.
+- Usar carpeta de materia como entrada canónica.
+- Alinear siempre a Licenciatura en Derecho.
 
 ## structure_rules
 
@@ -65,6 +128,31 @@
 - Transformar la planeacion semanal en reportes, presentaciones o productos visuales segun corresponda.
 - Conservar trazabilidad entre objetivo, evidencia, argumento y cierre.
 - Distinguir bibliografia base y fuentes especificas de actividad.
+- Abrir con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el producto al tipo solicitado en la planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Mantener trazabilidad entre objetivo, evidencia, argumento y conclusion.
+- Abrir con encuadre breve del problema juridico.
+- Separar secciones: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Separar en secciones: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el producto al tipo solicitado en planeacion semanal.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Mantener trazabilidad entre objetivo, evidencia, argumento y cierre.
+- Usar la carpeta de materia como entrada canónica.
+- Alinear cada entrega a los cinco ejes del programa analítico.
+- Abrir con encuadre breve del problema jurídico.
+- Separar secciones: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Cerrar con conclusión jurídica transferible a la práctica.
+- Alinear el producto al tipo solicitado por la planeacion semanal.
+- Distinguir bibliografia base de fuentes especificas de actividad.
+- Abrir con encuadre breve del problema jurídico o social.
+- Separar secciones: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Alinear siempre el producto al tipo solicitado en la planeación.
+- Distinguir bibliografia base de fuentes especificas por actividad.
+- Alinear estructura al producto solicitado por planeación.
 
 ## activity_rules
 
@@ -75,6 +163,36 @@
 - Cerrar con conclusion juridica util para la practica profesional.
 - Distinguir problema, norma o doctrina, analisis y criterio propio.
 - Evitar trasladar contenido de Filosofia del Derecho sin adecuacion contractual.
+- Adaptar cada entrega al producto requerido por la actividad.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Incluir postura argumentada del estudiante, no solo descripcion.
+- Verificar coherencia entre pregunta guia, desarrollo y cierre.
+- Evitar traslado literal desde otras materias sin adecuacion contractual.
+- Evitar entregas solo descriptivas o traslados literales entre materias.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Marcar supuestos cuando falte consigna especifica.
+- Incluir postura argumentada del estudiante; evitar texto solo descriptivo.
+- No asumir fuentes de semanas no confirmadas para la actividad actual.
+- Definir objetivo puntual antes del desarrollo.
+- Adaptar el producto al tipo solicitado por la planeación semanal.
+- Incluir postura argumentada del estudiante con fundamento jurídico.
+- Evitar entregas solo descriptivas.
+- Evitar traslado literal desde otras materias sin adecuación contractual.
+- Adaptar cada actividad al producto solicitado por la consigna.
+- Incluir postura argumentada del estudiante; evitar entrega solo descriptiva.
+- Evitar traslado literal desde otras materias sin adecuacion disciplinar.
+- No asumir fuentes de semanas posteriores sin validacion local.
+- Incluir postura argumentada propia; evitar solo descripción.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- Adaptar contenidos heredados al enfoque contractual y obligacional.
+- No asumir fuentes de semanas o materias distintas sin verificacion local.
+- Marcar [supuesto] cuando falte instruccion especifica.
+- Incluir postura argumentada propia, no solo descripción.
+- Sustentar afirmaciones con fuentes verificables.
+- Verificar coherencia entre problema, análisis y conclusión.
+- Evitar traslado literal entre materias no equivalentes.
+- Adaptar el enfoque al núcleo disciplinar contractual.
 
 ## quality_gates
 
@@ -91,6 +209,33 @@
 - Revisar respuesta no estructurada antes de aplicar aguas abajo.
 - Revisar toda respuesta no estructurada antes de aplicarla aguas abajo.
 - Normalizar herencia proveniente de salidas no estructuradas.
+- Bloquear propagacion si la salida no es JSON parseable.
+- Normalizar respuestas no estructuradas antes de reutilizarlas.
+- Validar estructura minima completa antes de aplicar aguas abajo.
+- Confirmar que no haya afirmaciones sin respaldo o sin marca [supuesto].
+- Validar consistencia entre citas en texto y archivo .bib.
+- No eliminar reglas utiles previas durante fusion por deduplicacion.
+- Normalizar respuestas no estructuradas antes de reutilizar.
+- Confirmar trazabilidad entre citas en texto y archivo .bib.
+- No eliminar reglas utiles previas durante union-dedupe.
+- Bloquear persistencia si salida no es JSON parseable.
+- Revisar estructura minima completa antes de aplicar aguas abajo.
+- Normalizar toda herencia no estructurada antes de reutilizar.
+- Bloquear propagación si la salida no es JSON parseable.
+- Normalizar herencia no estructurada antes de reutilizar.
+- Validar coherencia entre objetivo, evidencia, análisis y conclusión.
+- Confirmar trazabilidad entre citas en texto y .bib local.
+- No degradar reglas útiles previas durante unión-dedupe.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca [supuesto].
+- Validar compatibilidad disciplinar en propagacion lateral.
+- No degradar reglas utiles previas durante fusion por deduplicacion.
+- Normalizar herencias no estructuradas antes de reutilizar.
+- Confirmar trazabilidad entre objetivo, evidencia, argumento y cierre.
+- No eliminar reglas útiles previas durante unión-dedupe.
+- Revisar y normalizar toda herencia no estructurada antes de reutilizar.
+- Verificar compatibilidad disciplinar antes de propagacion lateral.
+- Validar trazabilidad entre citas y .bib local.
+- Confirmar que no haya afirmaciones sin respaldo o sin [supuesto].
 
 ## latex_rules
 
@@ -104,6 +249,38 @@
 - Verificar que el archivo .bib referenciado sea derechos-de-los-contratos-y-obligaciones.bib.
 - Actualizar documentsubtitle por numero de actividad antes de compilar.
 - Ajustar documenttitle al producto final cuando deje de ser plantilla base.
+- Conservar plantilla base de la materia y metadatos institucionales completos.
+- Usar espanol academico con acentos correctos en .tex y .bib.
+- Mantener claves BibTeX estables.
+- Compilar sin errores criticos, referencias rotas ni placeholders.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analitico.
+- Usar como .bib canonico derechos-de-los-contratos-y-obligaciones.bib [verificado].
+- Usar español academico con acentos correctos en .tex y .bib.
+- Mantener metadatos institucionales completos antes de compilar.
+- Evitar comandos no estandar sin justificacion editorial.
+- Resolver placeholders tipo $(@{...}.Slug) antes de compilar.
+- Compilar sin errores criticos ni referencias rotas.
+- Usar espanol con acentos correctos en .tex y .bib.
+- Resolver placeholders tipo $(@{...}.Slug) en README y programa analitico.
+- Usar derechos-de-los-contratos-y-obligaciones.bib como nombre canonico [supuesto verificado por contexto local].
+- Conservar plantilla LaTeX base de la materia.
+- Verificar metadatos institucionales antes de compilar.
+- Usar español académico con acentos correctos.
+- Evitar comandos no estándar sin justificación editorial.
+- Resolver placeholders de rutas y Slug antes de compilar.
+- Conservar plantilla LaTeX base de la materia y metadatos institucionales completos.
+- Mantener claves BibTeX estables para evitar roturas de compilacion.
+- Resolver placeholders tipo $(@{...}.Slug) en README y programa analitico antes de compilar.
+- Corregir caracteres anomalos en rutas o nombres de archivo antes de compilar.
+- Actualizar documentsubtitle y documenttitle segun actividad real antes de entrega.
+- Conservar plantilla LaTeX base de la materia y metadatos completos.
+- Usar español académico con acentos correctos en .tex y .bib.
+- Mantener claves BibTeX estables y referencias sin romper.
+- Mantener claves BibTeX estables para evitar rupturas de compilacion.
+- Compilar sin errores criticos y sin referencias rotas.
+- Corregir caracteres anomalos en rutas o nombres antes de compilar.
+- Actualizar documentsubtitle por numero real de actividad.
+- Resolver placeholders de Slug antes de compilar.
 
 ## bibliography_rules
 
@@ -117,6 +294,36 @@
 - Agregar doctrina, normas o jurisprudencia solo cuando sean verificables.
 - Separar bibliografia base de fuentes especificas de actividad.
 - Conservar entradas base unadmSitioWeb y unadmMallaDerecho2024.
+- Priorizar fuentes institucionales UnADM y normas o doctrina verificables.
+- Registrar fuentes especificas por actividad en el .bib local de la materia.
+- No inventar referencias.
+- Conservar metadatos minimos: autor, titulo, anio y fuente editorial o URL.
+- Distinguir bibliografia base de bibliografia especifica de actividad.
+- No inventar referencias; usar solo fuentes consultables.
+- Priorizar fuentes institucionales UnADM y normas verificables.
+- Separar bibliografia base de fuentes especificas por actividad.
+- Conservar metadatos minimos: autor, titulo, año y fuente o URL.
+- Priorizar fuentes institucionales UnADM y fuentes juridicas verificables.
+- Mantener trazabilidad entre cada afirmacion juridica y su fuente.
+- Registrar fuentes específicas por actividad en el .bib local.
+- Declarar [supuesto] si una fuente no está disponible.
+- Separar bibliografía base de bibliografía específica.
+- Registrar fuentes especificas por actividad en derechos-de-los-contratos-y-obligaciones.bib.
+- Priorizar fuentes institucionales UnADM, normas, doctrina y jurisprudencia verificables.
+- Conservar metadatos minimos: autor, titulo, año y fuente/editorial o URL.
+- Declarar [supuesto] cuando una referencia requerida no este disponible.
+- No inventar referencias; declarar [supuesto] si falta fuente.
+- Separar bibliografía base de fuentes específicas por actividad.
+- Registrar fuentes de actividad en el .bib local de la materia.
+- Priorizar fuentes institucionales UnADM, normas y doctrina verificables.
+- No inventar referencias; usar solo obras consultables.
+- Conservar metadatos minimos: autor, titulo, anio y fuente/editorial o URL.
+- Mantener unadmSitioWeb y unadmMallaDerecho2024 como base institucional.
+- Declarar [supuesto] si una referencia requerida no esta disponible localmente.
+- Separar bibliografia base de bibliografia especifica de actividad.
+- Priorizar fuentes institucionales y normativas verificables.
+- Distinguir bibliografía base de fuentes de actividad.
+- Conservar metadatos mínimos completos.
 
 ## propagation_hints
 
@@ -173,6 +380,45 @@
 - Ciclo 21 necesita normalizacion manual si se reutiliza.
 - Propagar recursivamente estas reglas a actividades hijas de la materia en ciclo 22.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente solo reglas editoriales estables y transversales.
+- Excluir redaccion literal y metadatos no compatibles en saltos laterales.
+- Aplicar estrategia progresiva y conservadora: primero identidad y quality gates.
+- Reforzar primero grafo conceptual reusable antes de detalles locales.
+- Mantener control de ciclo con normalizacion manual cuando haya herencia ambigua.
+- Propagar recursivamente solo abstracciones editoriales estables.
+- Aplicar lateralmente tras validar compatibilidad disciplinar.
+- Evitar transferir redaccion literal o ejemplos casuisticos.
+- Ciclo 1 requiere normalizacion manual si se reutiliza.
+- Propagar hacia arriba solo reglas institucionales y de calidad.
+- Priorizar identidad, estructura reusable, quality gates y grafo conceptual.
+- Excluir detalles tematicos propios de Filosofia del Derecho en saltos transversales.
+- Aplicar union-dedupe sin regresion en cada ciclo.
+- Si nodo hijo esta vacio, inyectar cerebro minimo y abrir preguntas locales.
+- Mantener bandera de normalizacion manual para herencias de ciclos previos no estructurados.
+- Aplicar lateralmente solo tras validar compatibilidad disciplinar.
+- Excluir metadatos específicos al propagar transversalmente.
+- Reforzar controles de calidad como reglas compartidas.
+- Requerir normalización manual en ciclos heredados.
+- Propagar recursivamente solo reglas transversales estables entre nodos no equivalentes.
+- Excluir metadatos especificos de materia al propagar lateralmente a otras asignaturas.
+- Reutilizar gates de calidad institucional como control transversal.
+- Aplicar normalizacion manual en ciclos tempranos cuando haya herencia no estructurada.
+- Mantener estrategia progresiva y conservadora: sumar, deduplicar, no recortar.
+- Propagar solo abstracciones editoriales estables entre nodos transversales.
+- Evitar transferir redacción literal o ejemplos contextuales.
+- Propagar recursivamente tras validar estructura y JSON.
+- Aplicar normalización manual en ciclo 1 si se reutiliza.
+- Propagar recursivamente solo reglas transversales estables.
+- Excluir detalles tematicos propios de Filosofia del Derecho en saltos no equivalentes.
+- Priorizar identidad, estructura reusable, gates de calidad y grafo conceptual comun.
+- Aplicar union-dedupe sin eliminar reglas utiles previas.
+- Mantener etiqueta provisional en herencias de Codex o GPT-Pro no verificadas.
+- Ejecutar normalizacion manual si se reutiliza memoria de ciclos previos con ruido.
+- Propagar solo abstracciones editoriales estables.
+- Evitar transferir redacción literal entre nodos transversales.
+- Propagar recursivamente tras validación de estructura y JSON.
+- Excluir metadatos específicos cuando no coincidan.
+- Mantener estrategia progresiva y conservadora.
 
 ## open_questions
 
@@ -184,3 +430,106 @@
 - Confirmar si deben usarse leyes federales, codigos civiles locales o ambos segun actividad.
 - Confirmar la correccion canonica del nombre .bib en README y programa analitico.
 - Confirmar si la plantilla de presentacion comparte los mismos metadatos que el reporte.
+- Confirmar guia formal de citacion juridica obligatoria para la materia.
+- Confirmar rubrica por actividad para calibrar profundidad argumentativa.
+- Confirmar si presentacion y reporte comparten metadatos obligatorios exactos.
+- Confirmar uso esperado de legislacion federal, local o mixta segun actividad.
+- Confirmar guia formal de citacion juridica obligatoria en la materia.
+- Definir formato minimo de conclusion juridica por actividad.
+- Confirmar rubrica especifica para calibrar profundidad argumentativa.
+- Precisar uso esperado de legislacion federal o local segun actividad.
+- Confirmar nombre canonico final del archivo .bib.
+- Confirmar guia formal de citacion juridica obligatoria en la materia destino.
+- Confirmar si reporte y presentacion comparten metadatos obligatorios exactos.
+- Confirmar criterio de uso de legislacion federal, local o mixta por actividad.
+- Confirmar si autor y ubicacion institucional deben mantenerse fijos o parametrizables.
+- Confirmar rúbrica específica por actividad.
+- Confirmar estilo de citación jurídica obligatorio.
+- Confirmar uso esperado de legislación federal o local.
+- Confirmar nombre canónico final del archivo .bib.
+- Confirmar formatos exigidos por actividad.
+- [supuesto] Falta consigna textual de actividades destino; confirmar producto exacto por semana.
+- Confirmar rubrica de evaluacion por actividad para calibrar profundidad argumentativa.
+- Confirmar guia formal de citacion juridica obligatoria de la materia.
+- Confirmar guía institucional de citación jurídica para la materia.
+- Definir formato mínimo esperado de la conclusión jurídica.
+- Confirmar planeación semanal específica de cada actividad.
+- Confirmar uso requerido de legislación federal, local o mixta.
+- [supuesto] Falta consigna textual de actividades concretas del destino; confirmar producto exacto por semana.
+- Confirmar rúbrica específica de la materia para calibrar profundidad.
+- Confirmar formato de citación jurídica obligatorio.
+- Precisar alcance entre legislación federal y local por actividad.
+- Confirmar productos esperados en planeación semanal.
+- Confirmar si presentaciones y reportes comparten metadatos idénticos.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad institucional UnADM
+- Problema juridico
+- Marco normativo y doctrinal
+- Analisis argumentativo propio
+- Conclusion transferible
+- Contratos
+- Obligaciones
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Usar la carpeta de materia como punto de entrada canonico.
+- Alinear cada entrega a los cinco ejes del programa analitico.
+- Incluir problema, desarrollo, analisis propio y conclusion transferible.
+- Mantener consistencia entre reporte, presentacion y bibliografia local.
+- Incluir problema juridico o social, conceptos pertinentes, producto solicitado, analisis propio y conclusion transferible.
+- Transformar la planeacion semanal en reportes, presentaciones o productos visuales segun corresponda.
+
+### identidad_estilistica
+- Frases claras y verificables.
+- Supuestos explicitados cuando falte contexto.
+- Cierre con utilidad profesional juridica.
+- Mantener identidad institucional UnADM en tono, portada y metadatos.
+- Usar datos curriculares verificados: Licenciatura en Derecho, semestre 4, bloque 1, obligatoria, 8 creditos.
+- Conservar enfoque disciplinar en contratos y obligaciones.
+- Usar la carpeta de materia como entrada canonica.
+- Marcar como [supuesto] todo dato no visible en consigna local.
+- Tratar herencias no verificadas como provisionales hasta confirmacion local.
+- Mantener identidad institucional UnADM en portada y redaccion.
+- Usar datos de la materia: Derechos de los contratos y obligaciones, semestre 4, bloque 1, obligatoria, 8 creditos.
+- Conservar enfoque juridico aplicado a contratos y obligaciones.
+
+### patrones_argumentativos
+- Problema inicial breve.
+- Marco conceptual y normativo.
+- Analisis propio sustentado.
+- Conclusion juridica aplicable.
+- Abrir con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear el producto al tipo solicitado en la planeacion semanal.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Mantener trazabilidad entre objetivo, evidencia, argumento y conclusion.
+- Adaptar cada entrega al producto requerido por la actividad.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+
+### grafo_de_conocimiento
+- Conceptos: 288
+- Citas: 2
+- Relaciones reforzadas: 94
+- Evidencias: 97
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/derechos-de-los-contratos-y-obligaciones-lde/reporte-derechos-de-los-contratos-y-obligaciones.tex`
+- Caracteres LaTeX preservados: 4263
+- Bloques/parrafos indexados: 20
+- Claves citadas: ninguna
+- Claves sin referencia: ninguna

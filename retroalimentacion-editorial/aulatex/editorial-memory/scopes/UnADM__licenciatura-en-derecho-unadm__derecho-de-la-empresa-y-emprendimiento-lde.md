@@ -56,6 +56,46 @@
 - Ciclo 19: mantener requisito de normalizacion manual antes de reutilizar o propagar.
 - Persisten antecedentes de salidas no JSON parseables; mantener normalizacion manual previa.
 - Supuesto: el origen actividad-1 no aporta reglas nuevas verificables por falta de JSON parseable en este ciclo.
+- Se sincroniza ADN editorial transversal desde actividad de origen hacia materia destino con estrategia conservadora.
+- Se preservan reglas institucionales UnADM, normalización estructurada y compresión por unión-dedupe sin recorte.
+- Se consolidan ejes estables reutilizables: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- Se mantiene alerta crítica: no propagar salidas no estructuradas ni datos no verificados.
+- Se crea cerebro editorial mínimo del destino con vacíos locales explícitos como supuestos.
+- Sincronización transversal conservadora desde actividad teórica hacia materia aplicada.
+- Se preservan ejes editoriales estables UnADM reutilizables entre nodos no equivalentes.
+- Compresión lossless aplicada por unión y deduplicación; sin recortes.
+- Se refuerza normalización estructurada previa a cualquier propagación.
+- Se consolida cerebro editorial mínimo del destino con vacíos locales explícitos.
+- Se consolida sincronización transversal conservadora desde actividad de Filosofía del Derecho hacia materia destino.
+- Se preservan reglas estables: identidad UnADM, estructura por ejes, evidencia verificable y conclusión jurídica transferible.
+- Se mantiene gate crítico: no propagar salidas no estructuradas sin normalización.
+- Se refuerza deduplicación lossless por unión sin recorte ni regresión.
+- Se confirma contexto local destino: semestre 6, bloque 2, obligatoria, 8 créditos.
+- Se mantiene alerta por tokens Slug sin expandir y artefactos de salto en README/programa.
+- Se sincroniza ADN editorial estable desde actividad teórica hacia materia aplicada.
+- Se preservan ejes reutilizables: problema, conceptos, evidencia, análisis propio y conclusión.
+- Se refuerza normalización estructurada como prerequisito de propagación.
+- Se consolida cerebro editorial mínimo del destino sin importar redacción literal.
+- La transferencia es transversal, conservadora y sin regresión institucional.
+- Se preservan reglas estables: identidad UnADM, estructura por ejes y control de calidad por normalización.
+- Se mantiene deduplicación lossless sin recorte de reglas útiles previas.
+- Se refuerza que la carpeta de materia es entrada canónica y que toda inferencia no visible se marca como supuesto.
+- Se prioriza transferencia de abstracciones editoriales, no redacción literal ni contenidos temáticos específicos de otra asignatura.
+- Se sincroniza ADN editorial estable desde una actividad teórica hacia una materia aplicada.
+- Se preservan reglas institucionales UnADM y ejes editoriales comunes.
+- La transferencia es transversal, conservadora y sin redacción literal.
+- Se refuerza normalización estructurada y control de calidad.
+- Se consolida un cerebro editorial mínimo para la materia destino.
+- Se consolida sincronización transversal conservadora desde actividad de Filosofía del Derecho hacia materia de Derecho de la empresa y emprendimiento.
+- Se preservan reglas útiles previas y se aplica compresión lossless por unión y deduplicación.
+- Se refuerzan ejes editoriales estables: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.
+- Se mantiene bloqueo de propagación para salidas no JSON parseables y obligación de normalización estructurada.
+- Se mantiene alerta local por tokens Slug sin expandir y artefactos de nombres de archivo en README y programa analítico.
+- Se consolida ADN editorial transversal desde actividad de Filosofía del Derecho hacia la materia Derecho de la empresa y emprendimiento.
+- Se preservan ejes editoriales estables: problema, conceptos, evidencia, análisis propio y conclusión jurídica.
+- La transferencia es conservadora y abstracta; no se propaga redacción ni contenido temático específico.
+- Se refuerza la normalización estructurada como condición previa a cualquier propagación.
+- Se establece un cerebro editorial mínimo del destino con vacíos locales explícitos como supuestos.
 
 ## identity_rules
 
@@ -85,6 +125,38 @@
 - Usar autor visible de plantilla solo con marca de supuesto hasta confirmacion por actividad.
 - Conservar traza de fuente provisional heredada sin elevarla a hecho institucional.
 - Usar codigo de curso LDE-S6B2 cuando la plantilla lo requiera.
+- Mantener identidad institucional UnADM en tono, metadatos y formato.
+- Usar la carpeta de asignatura como punto de entrada canónico.
+- Vincular toda entrega a Licenciatura en Derecho.
+- Respetar contexto curricular local confirmado: semestre 6, bloque 2, obligatoria, 8 créditos.
+- Marcar como supuesto todo dato no visible en consigna o archivo local verificable.
+- Tratar toda fuente heredada no verificada como provisional hasta confirmación local.
+- Mantener identidad institucional UnADM en tono, formato y metadatos.
+- Vincular todo producto a Licenciatura en Derecho.
+- Usar carpeta de asignatura como punto de entrada canónico.
+- Tratar fuentes heredadas no verificadas como provisionales.
+- No propagar identidad curricular específica fuera del nodo sin confirmación.
+- Mantener identidad institucional UnADM en tono, portada y metadatos.
+- Usar nombre oficial: Derecho de la empresa y emprendimiento.
+- Usar la carpeta de materia como entrada canónica.
+- Marcar como supuesto todo dato no visible en consigna o archivo local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmación local.
+- Mantener identidad institucional UnADM en todo artefacto.
+- Usar siempre nombre oficial de la materia destino.
+- Marcar como supuesto cualquier dato no confirmado localmente.
+- Vincular cada entrega a la Licenciatura en Derecho.
+- Vincular entregables a Licenciatura en Derecho.
+- Marcar como supuesto todo dato no visible en consigna o archivos locales.
+- Mantener identidad institucional UnADM en todo entregable.
+- Usar nombre oficial y contexto curricular local confirmado.
+- Marcar como supuesto cualquier dato no visible en archivos locales.
+- No propagar datos curriculares específicos fuera del nodo destino.
+- Vincular entregables a Licenciatura en Derecho y contexto local semestre 6, bloque 2, obligatoria, 8 créditos.
+- Usar carpeta de materia como punto de entrada canónico.
+- Marcar como supuesto todo dato no visible en consigna o no verificable en archivo local.
+- Usar siempre el nombre oficial de la materia destino.
+- Vincular toda entrega a la Licenciatura en Derecho.
+- Marcar como supuesto cualquier dato no confirmado por archivos locales.
 
 ## structure_rules
 
@@ -103,6 +175,41 @@
 - Usar programa analitico local para orientar productos.
 - Corregir artefactos de nombres de archivo en README.
 - Alinear entregables al flujo: problema, conceptos, producto, analisis propio y conclusion.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear cada entrega al producto solicitado por la planeación semanal.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Transformar planeación en reporte, presentación o producto visual según consigna.
+- Alinear entregables al esquema reusable: problema, conceptos, evidencia, análisis propio, conclusión.
+- Separar marco conceptual/normativo del análisis propio.
+- Alinear formato final al producto solicitado por la planeación.
+- Usar README y programa analítico locales para validar estructura.
+- Separar en bloques: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.
+- Alinear el desarrollo al producto solicitado por la planeación semanal.
+- Cerrar con conclusión jurídica transferible a práctica profesional.
+- Conservar correspondencia entre README, .tex, presentación y .bib.
+- Usar README de la materia como punto de entrada canónico.
+- Alinear toda actividad al flujo: problema, conceptos, evidencia, análisis propio, conclusión.
+- Separar claramente marco conceptual/normativo y análisis del estudiante.
+- Cerrar siempre con conclusión transferible a la práctica jurídica.
+- Resolver tokens y placeholders antes de reutilizar estructura.
+- Abrir con encuadre breve del problema jurídico o social.
+- Desarrollar en secuencia: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear el formato final al producto solicitado por la planeación semanal.
+- Conservar coherencia entre README, programa analítico, .tex y .bib.
+- Usar README de materia como punto de entrada canónico.
+- Alinear entregables al eje: problema, conceptos, evidencia, análisis, conclusión.
+- Separar secciones de forma explícita y reutilizable.
+- Cerrar con conclusión jurídica transferible a la práctica.
+- Conservar correspondencia entre .tex, presentación y .bib.
+- Usar secuencia reusable: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Cerrar con conclusión jurídica aplicable a práctica profesional.
+- Mantener correspondencia entre README, .tex de reporte, .tex de presentación y .bib local.
+- Usar la carpeta de la materia como punto de entrada canónico.
+- Alinear toda actividad al flujo: problema, conceptos, producto, análisis propio y conclusión.
+- Separar claramente marco conceptual o normativo del análisis propio.
+- Alinear el formato final al producto solicitado en la planeación semanal.
 
 ## activity_rules
 
@@ -124,6 +231,36 @@
 - Incluir citas verificables trazables al .bib local.
 - Agregar al .bib solo fuentes especificas realmente usadas.
 - Incluir conceptos, normas, doctrina o datos pertinentes.
+- Incluir postura argumentada del estudiante; evitar texto solo descriptivo.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- Incluir evidencia normativa, doctrinal o empírica pertinente.
+- No asumir fuentes de otras semanas o materias como obligatorias de la actividad actual.
+- Registrar en .bib local solo fuentes realmente usadas en la actividad.
+- Definir objetivo puntual antes del desarrollo.
+- Verificar coherencia entre consigna, desarrollo y conclusión.
+- Conectar la conclusión con aplicación práctica.
+- No asumir fuentes o consignas de otros bloques o semanas.
+- Incluir postura argumentada del estudiante; evitar entrega solo descriptiva.
+- Agregar fuentes específicas de actividad al .bib local.
+- No asumir fuentes de semanas distintas sin validación de consigna.
+- Conectar conclusión con aplicación práctica en empresa y emprendimiento.
+- Identificar el problema jurídico o social activador.
+- Incluir postura argumentada; evitar texto solo descriptivo.
+- Sustentar afirmaciones con fuentes verificables.
+- Alinear el producto final a la consigna semanal.
+- Incluir el producto solicitado en la consigna de la actividad.
+- Conectar conclusión con aplicación práctica jurídica.
+- No asumir fuentes de semanas distintas sin validación local.
+- Identificar problema jurídico o social relevante.
+- Incluir análisis propio; evitar texto solo descriptivo.
+- Conectar conclusión con aplicación profesional.
+- Incluir producto solicitado por la actividad sin extrapolar semanas no confirmadas.
+- Agregar fuentes específicas de actividad al .bib de la materia.
+- Conectar la conclusión con transferencia práctica en contexto empresarial y de emprendimiento.
+- Definir objetivo puntual de cada actividad antes del desarrollo.
+- Identificar explícitamente el problema jurídico o social.
+- Sustentar afirmaciones con fuentes verificables y citas explícitas.
 
 ## quality_gates
 
@@ -146,6 +283,34 @@
 - Verificar que README liste archivos reales y rutas existentes.
 - Verificar integridad sintactica de .tex y cierre de entornos antes de compilar.
 - Aplicar normalizacion manual en este destino antes de reutilizacion.
+- Bloquear propagación si la salida no es JSON parseable.
+- Revisar estructura mínima completa antes de reutilizar memoria.
+- Normalizar manualmente respuestas no estructuradas antes de propagar.
+- No eliminar reglas útiles previas durante fusión por deduplicación.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca de supuesto.
+- Validar consistencia entre citas en texto y archivo .bib.
+- Normalizar manualmente salidas no estructuradas en ciclo 1.
+- Normalizar manualmente cualquier salida no estructurada antes de reutilizar.
+- No eliminar reglas útiles previas durante fusión por unión-dedupe.
+- Validar estructura mínima completa antes de propagar recursivamente.
+- Confirmar que cada afirmación tenga respaldo o marca de supuesto.
+- Verificar que el entregable corresponda a la consigna local.
+- Normalizar manualmente respuestas no estructuradas antes de reutilizar.
+- Validar coherencia entre pregunta guía, desarrollo y conclusión.
+- Verificar correspondencia entre citas en texto y archivo .bib.
+- Normalizar respuestas no estructuradas antes de propagación lateral, ascendente o descendente.
+- Verificar correspondencia del producto con la consigna local.
+- Verificar coherencia entre consigna, desarrollo y conclusión.
+- Confirmar trazabilidad entre citas en texto y .bib.
+- No eliminar reglas útiles previas durante fusión.
+- Exigir estructura mínima completa antes de reutilizar memoria.
+- Revisar y normalizar manualmente respuestas no estructuradas antes de propagar.
+- Validar que no existan afirmaciones sin respaldo o sin marca de supuesto.
+- Verificar consistencia entre citas en texto y claves del archivo .bib.
+- Verificar que README liste rutas y archivos reales.
+- Corregir placeholders y tokens sin expandir antes de generar entregables.
+- Validar correspondencia entre citas en texto y archivo .bib.
+- No propagar datos curriculares locales sin confirmación documental.
 
 ## latex_rules
 
@@ -176,6 +341,45 @@
 - Reparar truncamiento en \authortable.
 - Cerrar correctamente \end{tabular} y entornos pendientes.
 - Compilar y validar sin errores tras cambios.
+- Usar codificación correcta para español en .tex y .bib.
+- Mantener claves BibTeX estables para evitar rupturas de compilación.
+- Evitar comandos no estándar sin justificación editorial.
+- Compilar sin errores críticos ni referencias rotas.
+- Corregir tokens sin expandir en README y programa analítico.
+- Verificar que nombres de archivo listados existan y no contengan artefactos de salto.
+- Mantener compilación sin errores críticos ni referencias rotas.
+- Usar codificación y acentos correctos en español.
+- Mantener claves BibTeX estables y únicas.
+- Resolver tokens de plantilla sin expandir antes de compilar.
+- Verificar rutas e imágenes institucionales antes de generar PDF.
+- Usar codificación y acentos correctos en español en .tex y .bib.
+- Mantener macros institucionales y curriculares consistentes.
+- Actualizar documenttitle/documentsubtitle por actividad.
+- Compilar sin errores críticos, referencias rotas ni entornos truncados.
+- Corregir artefactos de plantilla y tokens sin expandir en nombres de archivo.
+- Verificar rutas reales de imágenes institucionales antes de compilar.
+- Mantener consistencia de metadatos institucionales en macros.
+- Usar codificación correcta en español.
+- Resolver rutas, tokens y nombres de archivo antes de compilar.
+- Actualizar títulos y subtítulos por actividad.
+- Usar español con acentos correctos en .tex y .bib.
+- Mantener claves BibTeX estables para evitar roturas.
+- Corregir tokens sin expandir tipo $(@{...}.Slug) en README y programa analítico.
+- Corregir nombres de archivo con artefactos visibles de salto o truncamiento.
+- Actualizar documenttitle y documentsubtitle por actividad concreta.
+- Verificar cierre completo de entornos antes de compilar.
+- Mantener codificación correcta en español.
+- Usar plantillas institucionales sin comandos no estándar.
+- Verificar compilación sin errores ni referencias rotas.
+- Actualizar títulos y metadatos por actividad.
+- Usar español con codificación y acentos consistentes en .tex y .bib.
+- Mantener claves y macros estables para evitar roturas de compilación.
+- Compilar sin errores críticos, sin referencias rotas y con entornos cerrados.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analítico.
+- Corregir artefactos de nombre truncado en estructura de archivos (supuesto: error de generación).
+- Confirmar rutas de imagen institucional antes de compilar.
+- Mantener consistencia de macros institucionales y de curso.
+- Usar codificación correcta en español en .tex y .bib.
 
 ## bibliography_rules
 
@@ -195,6 +399,36 @@
 - Registrar fuentes de actividad en derecho-de-la-empresa-y-emprendimiento.bib.
 - No citar fuentes ausentes en el .bib local.
 - Conservar claves BibTeX estables y sin duplicados.
+- No inventar referencias.
+- Usar solo obras consultables y verificables.
+- Priorizar fuentes institucionales UnADM y fuentes jurídicas confiables.
+- Conservar metadatos mínimos: autor, título, año y fuente o URL.
+- Distinguir bibliografía base de materia y bibliografía específica de actividad.
+- No citar en texto claves ausentes en el .bib local.
+- No inventar referencias; usar solo fuentes consultables.
+- Priorizar fuentes institucionales UnADM y normativa aplicable.
+- Registrar fuentes específicas de actividad en el .bib local de la materia.
+- Conservar metadatos mínimos completos en cada entrada.
+- Distinguir bibliografía base de bibliografía específica.
+- Priorizar fuentes institucionales UnADM y material jurídico verificable.
+- Conservar metadatos mínimos: autor, título, año, fuente/editorial o URL.
+- Registrar fuentes específicas por actividad en derecho-de-la-empresa-y-emprendimiento.bib.
+- Distinguir bibliografía base de bibliografía específica de actividad.
+- Priorizar fuentes institucionales UnADM y normativas vigentes.
+- Registrar fuentes de cada actividad en el .bib local.
+- Usar solo fuentes realmente consultables y verificables.
+- Priorizar fuentes institucionales UnADM y normatividad aplicable.
+- Distinguir bibliografía base de bibliografía específica por actividad.
+- Registrar fuentes específicas en derecho-de-la-empresa-y-emprendimiento.bib.
+- No citar claves ausentes del .bib local.
+- Registrar solo fuentes realmente consultables.
+- Priorizar fuentes institucionales UnADM.
+- Mantener claves BibTeX estables y únicas.
+- Priorizar fuentes institucionales UnADM y materiales jurídicos verificables.
+- No citar fuentes no incluidas en el .bib local.
+- Conservar unadmSitioWeb y unadmMallaDerecho2024 como base mientras no haya conflicto local.
+- Priorizar fuentes institucionales UnADM y documentos jurídicos verificables.
+- Registrar fuentes específicas de cada actividad en el .bib local.
 
 ## propagation_hints
 
@@ -235,6 +469,44 @@
 - Ciclo 20 necesita normalizacion manual si se reutiliza.
 - Ciclo 21 necesita normalizacion manual si se reutiliza.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar transversalmente solo abstracciones estables, no redacción literal.
+- Priorizar identidad, estructura reusable, quality gates y grafo conceptual.
+- Evitar transferir contenidos temáticos exclusivos de Filosofía del Derecho al destino.
+- Mantener estrategia progresiva: reforzar primero reglas comunes de calidad editorial.
+- Mantener estrategia conservadora: abrir preguntas cuando falte contexto local.
+- Propagar solo abstracciones editoriales estables entre nodos no equivalentes.
+- Evitar transferencia de redacción literal o ejemplos doctrinales específicos.
+- Priorizar identidad, estructura reusable y gates de calidad.
+- Propagar recursivamente solo tras validación de JSON y estructura.
+- Alertar a nodos hermanos sobre placeholders y salidas no estructuradas.
+- Mantener estrategia progresiva y conservadora en ciclo 1.
+- Propagar solo abstracciones editoriales estables en nodos no equivalentes.
+- Evitar transferir redacción literal o detalles temáticos exclusivos de Filosofía del Derecho.
+- Mantener estrategia progresiva y conservadora en ciclo 2.
+- Propagar recursivamente solo tras validación JSON y estructura completa.
+- Escalar alerta de tokens Slug sin expandir a materias con plantillas similares.
+- Evitar transferir redacción literal o ejemplos contextuales.
+- Exigir normalización manual en ciclos con antecedentes de ruido.
+- Propagar lateralmente solo si no hay conflicto curricular local.
+- Documentar vacíos de contexto como supuestos explícitos.
+- Propagar recursivamente solo reglas editoriales estables y transversales.
+- Mantener estrategia progresiva y conservadora: primero calidad e identidad, luego ajustes finos.
+- Reforzar en nodos vecinos la regla de normalización previa por historial de salidas no estructuradas.
+- No propagar datos curriculares específicos sin confirmación local.
+- Si falta consigna local, usar cerebro editorial mínimo y dejar vacíos explícitos.
+- Propagar solo abstracciones editoriales estables.
+- Evitar transferencia de redacción literal.
+- Exigir validación estructural antes de propagar recursivamente.
+- Propagar alertas de calidad a nodos con plantillas similares.
+- Mantener estrategia progresiva y conservadora.
+- Propagar transversalmente solo abstracciones editoriales estables, no redacción literal.
+- Priorizar en propagación: identidad, estructura reusable, gates de calidad y grafo conceptual.
+- No propagar datos curriculares locales de esta materia a nodos no equivalentes sin confirmación.
+- Propagar alertas de JSON no parseable y tokens sin expandir a nodos con plantillas similares.
+- Evitar transferencia de redacción literal o ejemplos temáticos.
+- Propagar transversalmente solo después de validar estructura y JSON.
+- Mantener estrategia progresiva y conservadora en ciclos posteriores.
+- Reforzar alertas sobre salidas no estructuradas en nodos vecinos.
 
 ## open_questions
 
@@ -256,3 +528,113 @@
 - Confirmar si el truncamiento del reporte proviene del archivo fuente completo o de captura parcial.
 - Confirmar guia de citacion juridica especifica de la materia si existe.
 - Confirmar si el README debe corregir saltos o caracteres perdidos en nombres de archivo.
+- Supuesto: falta consigna específica de actividades de la materia destino.
+- Confirmar rúbrica local de evaluación argumentativa y de citación.
+- Confirmar si el autor de plantilla debe parametrizarse por actividad.
+- Confirmar cierre íntegro del archivo de reporte local y entornos LaTeX truncados.
+- Confirmar resolución final del token Slug en README y programa analítico.
+- Confirmar consignas y productos específicos de cada actividad en la materia destino.
+- Confirmar rúbrica de evaluación local para ajustar profundidad argumentativa.
+- Confirmar nombre canónico final del archivo .bib tras expansión de tokens.
+- Confirmar parametrización de autor por actividad.
+- Confirmar guías de citación jurídica específicas de la materia.
+- Supuesto: falta consigna puntual de actividades del destino; confirmar tipo de producto por semana.
+- Confirmar si el autor de portada debe parametrizarse por actividad.
+- Confirmar expansión final del token Slug en README y programa analítico.
+- Confirmar si year=2026 en unadmSitioWeb queda como año bibliográfico o solo fecha de consulta.
+- Confirmar cierre completo del reporte .tex local para evitar truncamiento.
+- Confirmar rúbrica específica de evaluación de la materia destino.
+- Confirmar si existe guía de citación distinta a la institucional.
+- Confirmar productos obligatorios por semana en la materia.
+- Confirmar autoría real requerida en portada por actividad.
+- Supuesto: falta consigna puntual de la próxima actividad en materia destino.
+- Confirmar si documentauthor debe parametrizarse por actividad o mantenerse fijo.
+- Confirmar corrección final de tokens Slug sin expandir en README y programa analítico.
+- Confirmar si el archivo de reporte local está truncado o solo incompleto en captura.
+- Confirmar criterio institucional para year en unadmSitioWeb frente a fecha de consulta.
+- Confirmar consignas específicas de actividades de la materia destino.
+- Confirmar rúbricas locales de evaluación.
+- Confirmar fuentes obligatorias por semana.
+- Confirmar parametrización definitiva de autor por actividad.
+- Confirmar rúbrica específica de actividades de la materia para calibrar profundidad argumentativa.
+- Confirmar si autor de plantilla debe parametrizarse por actividad. [supuesto]
+- Confirmar valor final de Slug en README y programa analítico tras expansión.
+- Confirmar corrección de nombres truncados en README (eporte/eferencias). [supuesto]
+- Confirmar política local para year=2026 en unadmSitioWeb (año bibliográfico vs consulta).
+- Confirmar consignas específicas de las actividades de la materia destino.
+- Confirmar rúbricas de evaluación locales.
+- Confirmar fuentes obligatorias por semana en la materia destino.
+- Confirmar nombre canónico final del archivo .bib de la materia.
+- Confirmar si el autor en plantilla se parametriza por actividad.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad institucional UnADM
+- Problema jurídico
+- Evidencia verificable
+- Análisis propio
+- Conclusión jurídica transferible
+- Se sincroniza ADN editorial transversal desde actividad de origen hacia materia destino con estrategia conservadora
+- Se consolidan ejes estables reutilizables: problema, conceptos, evidencia, análisis propio y conclusión jurídica
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Usar README de materia como punto de entrada canonico.
+- Alinear cada entrega al esquema: problema, conceptos, producto, analisis propio, conclusion.
+- Conservar correspondencia entre .tex, presentacion y .bib de la materia.
+- Usar el programa analitico local para orientar productos academicos.
+- Integrar evidencia, fundamento juridico y transferencia profesional.
+- Verificar que nombres de archivos no conserven artefactos de generacion automatica.
+
+### identidad_estilistica
+- Frases directas y trazables a evidencia.
+- Uso explícito de supuestos cuando falta dato.
+- Cierre con transferencia a práctica profesional.
+- Mantener identidad institucional UnADM en tono, metadatos y formato.
+- Usar la carpeta de asignatura como punto de entrada canónico.
+- Vincular toda entrega a Licenciatura en Derecho.
+- Respetar contexto curricular local confirmado: semestre 6, bloque 2, obligatoria, 8 créditos.
+- Marcar como supuesto todo dato no visible en consigna o archivo local verificable.
+- Tratar toda fuente heredada no verificada como provisional hasta confirmación local.
+- Mantener identidad institucional UnADM en portada y metadatos.
+- Usar nombre oficial de la materia: Derecho de la empresa y emprendimiento.
+- Marcar como supuesto cualquier dato no confirmado por archivo local.
+
+### patrones_argumentativos
+- Problema -> marco conceptual/normativo -> análisis propio -> conclusión.
+- Afirmación -> evidencia -> interpretación -> postura.
+- Consigna local -> desarrollo focalizado -> verificación de cumplimiento.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear cada entrega al producto solicitado por la planeación semanal.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Transformar planeación en reporte, presentación o producto visual según consigna.
+- Incluir postura argumentada del estudiante; evitar texto solo descriptivo.
+- Sustentar afirmaciones con fuentes verificables y cita explícita.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+
+### grafo_de_conocimiento
+- Conceptos: 301
+- Citas: 2
+- Relaciones reforzadas: 80
+- Evidencias: 104
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/derecho-de-la-empresa-y-emprendimiento-lde/reporte-derecho-de-la-empresa-y-emprendimiento.tex`
+- Caracteres LaTeX preservados: 4251
+- Bloques/parrafos indexados: 20
+- Claves citadas: ninguna
+- Claves sin referencia: ninguna

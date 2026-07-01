@@ -54,6 +54,42 @@
 - Ciclo de consolidacion: 20.
 - Ciclo de consolidacion: 21.
 - Ciclo de consolidacion: 22.
+- Se consolida sincronización transversal conservadora entre actividad de origen y materia destino.
+- Se preserva identidad institucional UnADM y contexto local del destino: Licenciatura en Derecho, semestre 6, bloque 1, obligatoria, 8 créditos.
+- Se refuerza patrón editorial estable: problema, conceptos/fuentes, análisis propio y conclusión jurídica transferible.
+- Se mantiene control técnico: normalización previa, JSON parseable, detección de truncamientos y placeholders sin resolver.
+- Se evita transferir contenido temático específico de Filosofía del Derecho no aplicable a responsabilidad civil y daños.
+- Se consolida sincronización transversal conservadora desde actividad de Filosofía del Derecho hacia materia de Responsabilidad Civil y Daños.
+- Se preservan reglas institucionales UnADM y patrón editorial estable reusable.
+- Se refuerza normalización estructurada, control de calidad y ADN argumentativo.
+- El destino mantiene cerebro editorial mínimo con contexto local confirmado.
+- No se transfiere contenido temático específico no equivalente.
+- Sincronización transversal ciclo 2 aplicada con estrategia conservadora.
+- Se preservan reglas institucionales UnADM y estructura reusable sin regresión.
+- Se transfiere solo abstracción estable desde actividad de origen.
+- Se mantiene prioridad del contexto local: semestre 6, bloque 1, obligatoria, 8 créditos.
+- Se refuerza control técnico: JSON parseable, normalización y detección de placeholders.
+- Se consolida sincronización transversal entre actividad de Filosofía del Derecho y materia de Responsabilidad Civil y Daños.
+- Se preservan reglas institucionales UnADM y patrón editorial reusable.
+- Se refuerza normalización estructurada y control de calidad previo a propagación.
+- Se evita transferencia temática no equivalente; solo abstracciones estables.
+- Sincronizacion transversal aplicada con estrategia conservadora y sin regresion.
+- Se preservan reglas institucionales UnADM, normalizacion estructurada y control JSON parseable.
+- Se refuerza patron reusable: problema, conceptos/fuentes, analisis propio y conclusion juridica transferible.
+- Se mantiene separacion entre abstracciones editoriales estables y contenido tematico no equivalente.
+- Se conserva alerta tecnica local: truncamientos y placeholders deben resolverse antes de compilar o propagar.
+- Sincronización transversal conservadora aplicada desde actividad de Filosofía del Derecho hacia materia de Responsabilidad Civil y Daños.
+- Se preservan reglas institucionales UnADM, estructura reusable y gates de calidad.
+- Se transfiere patrón editorial estable sin contenido temático no equivalente.
+- Se refuerza normalización estructurada y control técnico en ciclo 1.
+- Se consolida sincronizacion transversal entre actividad de origen y materia destino con estrategia conservadora.
+- Se preservan reglas institucionales UnADM, normalizacion estructurada y no regresion.
+- Se mantiene filtro transversal: transferir abstracciones estables y excluir contenido tematico especifico de Filosofia del Derecho.
+- Se conservan incidencias tecnicas locales como controles activos: JSON no parseable previo, rutas truncadas y placeholders sin resolver.
+- Se consolida un cerebro editorial mínimo para la materia Derecho de la responsabilidad civil y daños.
+- Se sincronizan abstracciones editoriales estables desde Filosofía del Derecho sin transferir contenido temático.
+- Se refuerza identidad institucional UnADM y patrón argumentativo reusable.
+- Se preserva estrategia conservadora con normalización obligatoria y control de no regresión.
 
 ## identity_rules
 
@@ -75,6 +111,37 @@
 - Fuente provisional: Codex desde Actividad 1.
 - Fuente provisional: Auto (model-router) desde Actividad 1.
 - Fuente provisional: Claude Foundry desde Actividad 1.
+- Mantener tono formal académico UnADM en toda entrega.
+- Usar la carpeta de materia como entrada canónica editorial.
+- Aplicar contexto local del destino antes que metadatos heredados de otros nodos.
+- Marcar como supuesto todo dato no confirmado en consigna o documento oficial.
+- Tratar memorias heredadas no verificadas como provisionales hasta validación local.
+- No declarar oficial el código de curso LDE-S6B1 sin confirmación documental.
+- Mantener identidad institucional UnADM en tono, formato y metadatos.
+- Aplicar primero el contexto local del destino antes de reglas heredadas.
+- Marcar como supuesto todo dato no confirmado por documentos oficiales.
+- Tratar memorias heredadas no verificadas como provisionales.
+- No declarar oficiales códigos o convenciones sin fuente institucional.
+- Mantener identidad institucional UnADM en tono y formato.
+- Usar contexto local de Licenciatura en Derecho y materia de responsabilidad civil y daños.
+- No declarar oficial el código LDE-S6B1 sin confirmación documental.
+- No cambiar convención danos/daños sin confirmación documental.
+- Aplicar primero el contexto curricular local del destino.
+- Marcar como supuesto todo dato no confirmado por documento oficial.
+- Mantener identidad institucional UnADM en tono, formato e integridad academica.
+- Usar contexto local del destino: Licenciatura en Derecho, materia de responsabilidad civil y danos.
+- Priorizar metadatos curriculares locales sobre metadatos heredados de otros nodos.
+- Marcar como supuesto todo dato no confirmado por consigna o documento oficial.
+- Tratar memorias heredadas no verificadas como provisionales hasta validacion local.
+- No declarar oficial el codigo de curso LDE-S6B1 sin confirmacion documental.
+- Aplicar contexto local del destino antes que metadatos heredados.
+- No declarar códigos o convenciones como oficiales sin confirmación documental.
+- Usar contexto local confirmado: Licenciatura en Derecho, semestre 6, bloque 1, obligatoria, 8 creditos.
+- Usar la carpeta de materia como punto de entrada canonico.
+- Marcar como supuesto todo dato no confirmado por consigna o fuente oficial.
+- Usar contexto de Licenciatura en Derecho y materia de responsabilidad civil y daños.
+- Aplicar ubicación curricular local: semestre 6, bloque 1, obligatoria, 8 créditos.
+- Marcar como supuesto cualquier dato no confirmado por guía o documento oficial.
 
 ## structure_rules
 
@@ -88,6 +155,29 @@
 - Usar el programa analitico local para orientar productos semanales.
 - Respetar el producto solicitado por la planeacion de cada actividad.
 - Alinear cada producto a: problema, conceptos o fuentes, analisis propio y conclusion juridica.
+- Abrir con encuadre breve del problema jurídico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, fundamento normativo/doctrinal, análisis propio y cierre.
+- Alinear formato final al producto solicitado por la planeación semanal.
+- Cerrar con conclusión jurídica aplicable a práctica profesional.
+- Mantener separación explícita entre reporte, presentación, programa analítico y bibliografía.
+- Usar la carpeta de materia como punto de entrada canónico.
+- Alinear todo producto a: problema, conceptos/fuentes, análisis propio y conclusión jurídica.
+- Mantener separación explícita entre reporte, presentación, programa analítico y .bib.
+- Usar la carpeta de materia como entrada canónica.
+- Alinear el formato final al producto solicitado por la planeación semanal.
+- Mantener separación entre reporte, presentación, programa analítico y .bib.
+- Separar secciones: conceptos/fuentes, fundamento normativo-doctrinal, análisis propio y cierre.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Usar la carpeta de materia como entrada canonica editorial.
+- Abrir con encuadre breve del problema juridico o social.
+- Separar secciones en conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Alinear el formato final al producto solicitado por la planeacion semanal.
+- Mantener separacion explicita entre reporte, presentacion, programa analitico y bibliografia local.
+- Separar secciones en: conceptos clave, marco normativo/doctrinal, analisis propio y cierre.
+- Mantener separacion explicita entre reporte, presentacion, programa analitico y .bib.
+- Cerrar con conclusion juridica transferible a la practica profesional.
+- Usar la carpeta de la materia como punto de entrada canónico.
 
 ## activity_rules
 
@@ -102,6 +192,42 @@
 - Separar fundamento juridico, evidencia y postura academica.
 - Cerrar con criterio propio y conclusion juridica.
 - Cerrar con criterio propio, conclusion juridica y transferencia a practica juridica.
+- Exigir postura argumentada del estudiante, no solo descripción.
+- Sustentar afirmaciones con fuentes verificables o marcar análisis propio.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- Adaptar reglas heredadas solo si son compatibles con responsabilidad civil y daños.
+- Evitar arrastre literal de ejemplos o casos del nodo origen sin pertinencia temática.
+- Incluir transferencia práctica en el cierre de cada actividad.
+- Exigir postura argumentada del estudiante; evitar entregas solo descriptivas.
+- Formular un problema jurídico pertinente a responsabilidad civil y daños.
+- Separar fundamento normativo/doctrinal, evidencia y análisis propio.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Adaptar reglas heredadas solo si son compatibles con la materia destino.
+- Formular problema jurídico pertinente a responsabilidad civil y daños.
+- Cerrar con conclusión jurídica transferible a práctica profesional.
+- No arrastrar contenido temático de Filosofía del Derecho si no aplica al destino.
+- Adaptar solo patrones metodológicos reutilizables entre nodos.
+- Definir objetivo puntual antes del desarrollo.
+- Formular problema jurídico activador de responsabilidad civil y daños.
+- Exigir postura argumentada; evitar entregas descriptivas.
+- No arrastrar contenido temático del origen que no aplique al daño.
+- Exigir postura argumentada del estudiante, no solo descripcion.
+- Sustentar afirmaciones con fuentes verificables o marcar analisis propio.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Adaptar reglas heredadas solo como abstracciones compatibles con responsabilidad civil y danos.
+- Evitar arrastre de contenido tematico de Filosofia del Derecho cuando no sea aplicable.
+- Sustentar afirmaciones con fuentes verificables o marcarlas como análisis propio.
+- Evitar arrastrar contenido temático no aplicable.
+- Formular problema juridico vinculado a responsabilidad civil y danos.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Separar fundamento juridico, evidencia y analisis propio.
+- No arrastrar contenido tematico de origen si no aplica a responsabilidad civil y danos.
+- Formular un problema jurídico que active la responsabilidad civil y el daño.
+- Integrar normas, doctrina y datos pertinentes a la materia.
+- Exigir postura argumentada del estudiante; evitar descripciones puras.
+- Cerrar con conclusión jurídica y transferencia a la práctica profesional.
+- No arrastrar contenido temático de otras materias si no es compatible.
 
 ## quality_gates
 
@@ -116,6 +242,31 @@
 - Revisar respuesta no estructurada antes de aplicar aguas abajo.
 - Revisar respuestas no estructuradas antes de aplicar aguas abajo.
 - Validar compilacion LaTeX despues de completar la plantilla local.
+- Bloquear propagación si la salida no es JSON parseable.
+- Validar estructura mínima completa antes de reutilizar memoria.
+- Revisar no regresión de reglas útiles previas.
+- Detectar y corregir rutas truncadas y placeholders sin resolver antes de compilar.
+- Validar consistencia entre citas en texto y archivo .bib.
+- Confirmar que cada afirmación jurídica tenga respaldo o etiqueta de supuesto.
+- Verificar que toda afirmación jurídica tenga fuente o marca de análisis propio.
+- Aplicar control de no regresión sobre reglas útiles previas.
+- Detectar y corregir rutas truncadas y placeholders sin resolver.
+- Validar estructura mínima completa antes de reutilización recursiva.
+- Revisar no regresión de reglas útiles heredadas.
+- Verificar que toda afirmación jurídica tenga respaldo o marca de supuesto.
+- Verificar respaldo o marca de análisis propio en cada afirmación.
+- Bloquear propagacion si la salida no es JSON parseable.
+- Validar estructura minima completa antes de reutilizar memoria.
+- Revisar no regresion de reglas utiles previas.
+- Confirmar que no haya afirmaciones sin respaldo o sin marca de supuesto.
+- Detectar y corregir rutas truncadas y placeholders sin resolver antes de propagar.
+- Verificar correspondencia con la consigna o planeación semanal.
+- Control de no regresión sobre reglas útiles previas.
+- Detectar y corregir truncamientos, rutas rotas y placeholders.
+- Aplicar control de no regresion sobre reglas utiles previas.
+- Confirmar que toda afirmacion juridica tenga fuente o marca de supuesto/analisis propio.
+- Validar estructura mínima completa antes de reutilizar.
+- Verificar que toda afirmación jurídica tenga fuente o se marque como análisis propio.
 
 ## latex_rules
 
@@ -128,6 +279,31 @@
 - Supuesto: la plantilla .tex local termina truncada en authortable y debe completarse antes de compilar.
 - Supuesto: el codigo de curso LDE-S6B1 no es oficial hasta confirmacion documental.
 - Supuesto: la plantilla .tex local esta truncada en authortable y debe completarse antes de compilar.
+- Usar codificación y acentos correctos en español en .tex y .bib.
+- Mantener claves BibTeX estables.
+- Evitar comandos no estándar sin justificación editorial.
+- Compilar sin errores críticos ni referencias rotas.
+- Resolver tokens tipo $(@{...}.Slug) en README y programa analítico.
+- Corregir truncamientos locales en nombres de archivos y bloques LaTeX.
+- Supuesto: la plantilla de reporte está truncada en authortable y debe completarse antes de compilar.
+- Usar codificación correcta y acentos en español en .tex y .bib.
+- Completar plantillas truncadas antes de compilar.
+- Verificar nombres de archivos y resolver tokens interpolados.
+- Corregir nombres truncados de archivos antes de compilar.
+- Supuesto: plantilla .tex local está truncada en authortable y requiere cierre.
+- Usar codificación correcta en español en .tex y .bib.
+- Detectar y corregir rutas truncadas y placeholders antes de compilar.
+- No usar comandos no estándar sin justificación editorial.
+- Usar codificacion y acentos correctos en espanol en .tex y .bib.
+- Mantener claves BibTeX estables para evitar rupturas de compilacion.
+- Evitar comandos no estandar sin justificacion editorial.
+- Compilar sin errores criticos ni referencias rotas.
+- Corregir tokens sin expandir tipo $(@{...}.Slug) en README y programa analitico.
+- Verificar compilación sin errores críticos.
+- Completar plantilla local truncada antes de compilar [supuesto].
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analitico.
+- Completar y validar plantillas antes de compilar.
+- Verificar nombres reales de archivos antes de referenciarlos.
 
 ## bibliography_rules
 
@@ -137,6 +313,28 @@
 - Conservar la malla curricular de Derecho como fuente curricular local.
 - Separar fuentes verificables de analisis propio.
 - Entradas locales confirmadas: unadmSitioWeb y unadmMallaDerecho2024.
+- Priorizar fuentes institucionales UnADM y material jurídico verificable.
+- No inventar referencias.
+- Registrar fuentes específicas por actividad en el .bib local de la materia.
+- Conservar metadatos mínimos: autor, título, año y fuente/editorial o URL.
+- Distinguir bibliografía base de bibliografía específica de actividad.
+- Mantener como base confirmada: unadmSitioWeb y unadmMallaDerecho2024.
+- No inventar referencias; registrar vacíos como preguntas abiertas.
+- Conservar metadatos mínimos: autor, título, año y fuente o URL.
+- Validar consistencia entre citas en texto y archivo .bib.
+- Registrar fuentes específicas por actividad en el .bib local.
+- No inventar referencias; usar solo obras consultables.
+- No inventar referencias; registrar dudas como preguntas abiertas.
+- Distinguir bibliografía base de bibliografía específica por actividad.
+- Conservar metadatos mínimos completos.
+- Priorizar fuentes institucionales UnADM y material juridico verificable.
+- Registrar fuentes especificas por actividad en el .bib local de la materia.
+- Conservar metadatos minimos: autor, titulo, ano y fuente/editorial o URL.
+- Distinguir bibliografia base de bibliografia especifica de actividad.
+- Conservar metadatos mínimos verificables.
+- Conservar metadatos minimos: autor, titulo, ano, fuente/editorial o URL.
+- Agregar fuentes específicas de cada actividad al .bib local de la materia.
+- No inventar referencias; registrar preguntas abiertas si falta una fuente.
 
 ## propagation_hints
 
@@ -172,6 +370,38 @@
 - Ciclo 20 necesita normalizacion manual si se reutiliza.
 - Ciclo 21 necesita normalizacion manual si se reutiliza.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar transversalmente solo abstracciones editoriales estables.
+- No propagar redacción literal ni contenido temático puntual del origen.
+- Priorizar identidad, estructura reusable, quality gates y grafo conceptual.
+- Aplicar estrategia progresiva: consolidar primero reglas comunes, luego ampliar con evidencia local.
+- Mantener estrategia conservadora: no eliminar reglas útiles previas.
+- Ciclo 1: mantener normalización manual por antecedentes de salidas no estructuradas.
+- Propagar solo abstracciones editoriales estables entre nodos no equivalentes.
+- Evitar transferir redacción literal o contenido temático específico.
+- Aplicar compresión lossless por unión y deduplicación.
+- En ciclo 1, exigir normalización manual antes de reutilizar.
+- Propagar recursivamente solo después de pasar quality gates.
+- Propagar recursivamente solo reglas estables, no contenido temático puntual.
+- Priorizar identidad, estructura reusable, gates de calidad y grafo conceptual.
+- Mantener alerta de normalización manual por antecedentes de salida no estructurada.
+- Propagar control de placeholders y truncamientos como regla técnica general.
+- Reutilizar reglas institucionales sin reducir especificidad local.
+- Aplicar compresión por unión y deduplicación, sin recorte semántico.
+- Requerir normalización manual si hubo antecedentes de salida no estructurada.
+- Propagar recursivamente solo reglas estables y transversales, no redaccion literal.
+- Aplicar compresion lossless por union y deduplicacion, sin recorte semantico.
+- Mantener normalizacion manual mientras existan antecedentes de salida no estructurada.
+- Propagar control tecnico de truncamientos/placeholders como gate general de calidad.
+- Conservar prioridad del contexto local del destino en saltos entre nodos no equivalentes.
+- En ciclo 1, aplicar normalización manual por antecedentes técnicos.
+- Propagar recursivamente solo despues de validar JSON y estructura.
+- Transferir solo abstracciones editoriales estables entre nodos no equivalentes.
+- Evitar propagar redaccion literal o contenido tematico puntual del origen.
+- Mantener alerta de normalizacion manual por antecedentes de salidas no estructuradas.
+- Conservar compresion lossless por union-dedupe sin recorte semantico.
+- Propagar recursivamente solo tras validación de JSON y estructura.
+- Mantener alerta de normalización manual por antecedentes técnicos.
+- Preservar estrategia progresiva y conservadora.
 
 ## open_questions
 
@@ -187,3 +417,109 @@
 - Resolver placeholder interpolado del nombre de archivo .bib en README y programa analitico.
 - Completar la seccion authortable truncada en la plantilla .tex.
 - Validar plantilla .tex por truncamiento local y completar authortable.
+- Confirmar guía oficial de formato de actividades para esta materia.
+- Confirmar convención final de nombres con danos/daños en todo el árbol.
+- Confirmar si LDE-S6B1 es código oficial.
+- Corregir y validar truncamientos en README (eporte/eferencias).
+- Resolver placeholder de .bib en README y programa analítico.
+- Validar y completar bloque authortable de la plantilla .tex.
+- Confirmar guía oficial de formato para actividades de la materia.
+- Confirmar convención final de nombres con 'danos' versus 'daños'.
+- Confirmar código oficial del curso si aplica.
+- Validar y completar plantilla LaTeX local truncada.
+- Confirmar fuentes obligatorias por semana.
+- Confirmar convención final de nombres con danos versus daños en todo el árbol.
+- Resolver placeholder del .bib en README y programa analítico.
+- Completar sección authortable truncada en plantilla .tex.
+- Confirmar convención definitiva danos/daños en nombres de archivo.
+- Confirmar si el código de curso LDE-S6B1 es oficial.
+- Validar y completar plantilla .tex truncada.
+- Confirmar guia oficial de formato para actividades de la materia destino.
+- Confirmar convencion canonica de nombres danos versus daños en todo el arbol.
+- Confirmar si LDE-S6B1 es codigo oficial o solo etiqueta local. [supuesto activo]
+- Resolver placeholders de .bib en README y programa analitico.
+- Completar bloque authortable truncado en la plantilla .tex.
+- Confirmar guías oficiales de formato por actividad en la materia destino.
+- Confirmar convención final de nombres con 'danos/daños'.
+- Validar código de curso y plantillas locales antes de declararlos oficiales.
+- Confirmar guia oficial de formato por actividad para esta materia.
+- Confirmar convencion final de nombres con danos versus daños en todo el arbol.
+- Confirmar si el codigo de curso LDE-S6B1 es oficial [supuesto actual: no confirmado].
+- Corregir en README nombres truncados de reporte y referencias.
+- Validar y completar seccion authortable truncada en la plantilla .tex.
+- Confirmar si cada actividad requiere .bib propio o solo crecimiento del .bib de materia.
+- Confirmar convención final de nombres de archivos: danos vs daños.
+- Verificar si el código de curso LDE-S6B1 es oficial.
+- Completar y validar la plantilla .tex truncada antes de uso extensivo.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad institucional UnADM
+- Problema jurídico
+- Fundamento normativo/doctrinal
+- Análisis propio
+- Conclusión jurídica transferible
+- Responsabilidad civil y daños
+- Integridad de citación
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Usar la carpeta de materia como punto de entrada canonico.
+- Alinear cada producto a: problema, conceptos/fuentes, analisis propio y conclusion juridica.
+- Mantener separacion entre reporte, presentacion, programa analitico y bibliografia .bib.
+- Mantener separacion entre reporte, presentacion, programa analitico y bibliografia local.
+- Alinear cada producto a problema, conceptos o fuentes, analisis propio y conclusion juridica.
+- Incluir ejes de trabajo del programa analitico cuando aplique.
+
+### identidad_estilistica
+- Frases directas y secciones explícitas.
+- Supuestos siempre marcados.
+- Citas verificables y trazables al .bib local.
+- Mantener tono formal académico UnADM en toda entrega.
+- Usar la carpeta de materia como entrada canónica editorial.
+- Aplicar contexto local del destino antes que metadatos heredados de otros nodos.
+- Marcar como supuesto todo dato no confirmado en consigna o documento oficial.
+- Tratar memorias heredadas no verificadas como provisionales hasta validación local.
+- No declarar oficial el código de curso LDE-S6B1 sin confirmación documental.
+- Mantener identidad institucional UnADM en toda entrega.
+- Usar contexto de Licenciatura en Derecho y materia de responsabilidad civil y danos.
+- Marcar como supuesto cualquier dato no confirmado por guia oficial.
+
+### patrones_argumentativos
+- Planteamiento del problema.
+- Marco conceptual y normativo.
+- Análisis crítico con postura propia.
+- Cierre con criterio jurídico aplicable.
+- Abrir con encuadre breve del problema jurídico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, fundamento normativo/doctrinal, análisis propio y cierre.
+- Alinear formato final al producto solicitado por la planeación semanal.
+- Cerrar con conclusión jurídica aplicable a práctica profesional.
+- Mantener separación explícita entre reporte, presentación, programa analítico y bibliografía.
+- Exigir postura argumentada del estudiante, no solo descripción.
+- Sustentar afirmaciones con fuentes verificables o marcar análisis propio.
+
+### grafo_de_conocimiento
+- Conceptos: 303
+- Citas: 2
+- Relaciones reforzadas: 92
+- Evidencias: 96
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/derecho-de-la-responsabilidad-civil-y-danos-lde/reporte-derecho-de-la-responsabilidad-civil-y-danos.tex`
+- Caracteres LaTeX preservados: 4281
+- Bloques/parrafos indexados: 20
+- Claves citadas: ninguna
+- Claves sin referencia: ninguna

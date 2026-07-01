@@ -51,6 +51,24 @@
 - Origen ciclo 1 al 20 sin memoria de actividad parseable adicional; se mantiene base validada.
 - Origen ciclo 1 al 21 sin memoria de actividad parseable adicional; se mantiene base validada.
 - Origen ciclo 1 al 22 sin memoria de actividad parseable adicional; se mantiene base validada.
+- Se sincroniza memoria transversal con reglas editoriales estables y verificadas para Garantias constitucionales.
+- Se preserva identidad UnADM y contexto curricular local del destino.
+- Se refuerza normalizacion estructurada y compresion lossless por union-dedupe sin regresion.
+- Se mantiene separacion entre control editorial transferible y contenido disciplinar no equivalente.
+- Se crea cerebro editorial minimo en ADN con foco en estructura, calidad y trazabilidad.
+- Materia destino con plantilla LaTeX, programa analítico y bibliografía local activos.
+- Contexto local verificado: Garantías constitucionales, Licenciatura en Derecho, UnADM.
+- Ubicación curricular verificada: semestre 2, bloque 1, obligatoria, 8 créditos.
+- Se sincronizan solo abstracciones editoriales estables entre materias no equivalentes.
+- Se conserva alerta institucional sobre salidas heredadas no JSON parseables.
+- Las reglas heredadas operan como control editorial, no como contenido disciplinar.
+- Se refuerza compresión lossless por unión y deduplicación.
+- Se preserva separación entre estructura reusable y contenido temático local.
+- Se sincroniza memoria transversal con reglas editoriales estables entre actividad y materia no equivalente.
+- Se preserva identidad local de Garantias constitucionales y se evita traslado de contenido disciplinar de Filosofia del Derecho.
+- Se refuerza compresion lossless por union-dedupe sin recorte de reglas utiles.
+- Se mantiene alerta institucional sobre entradas no parseables y normalizacion previa obligatoria.
+- Se consolida cerebro editorial minimo y operativo para propagacion recursiva conservadora.
 
 ## identity_rules
 
@@ -75,6 +93,21 @@
 - Fuente provisional: Auto (model-router) desde Actividad 1.
 - Fuente provisional: Claude Foundry desde Actividad 1.
 - Tratar fuentes heredadas desde Codex, GPT-Pro, Auto y Claude como provisionales.
+- Mantener identidad institucional UnADM en tono, portada y metadatos.
+- Usar contexto curricular del destino: Licenciatura en Derecho, semestre 2, bloque 1, obligatoria, 8 creditos.
+- Usar la carpeta de la asignatura como punto de entrada canonico.
+- Marcar como supuesto todo dato no visible en la consigna local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- No trasladar contenido disciplinar de Filosofia del Derecho sin validacion expresa en Garantias constitucionales.
+- Usar datos locales: Garantías constitucionales, LDE-S2B1, semestre 2, bloque 1.
+- Registrar tipo Obligatoria y 8 créditos cuando aparezcan datos curriculares.
+- Usar la carpeta de materia como punto de entrada canónico.
+- No trasladar contenido disciplinar de Filosofía del Derecho sin validación local.
+- Citar la malla curricular institucional solo para ubicación curricular verificada.
+- Mantener identidad UnADM en tono, portada y metadatos.
+- Usar contexto curricular local verificado del destino: Licenciatura en Derecho, semestre 2, bloque 1, obligatoria, 8 creditos.
+- Usar la carpeta de materia como entrada canonica.
+- No transferir contenido tematico de Filosofia del Derecho a Garantias constitucionales sin validacion expresa.
 
 ## structure_rules
 
@@ -88,6 +121,26 @@
 - Preservar el programa analitico como guia editorial de la asignatura.
 - Mantener carpeta referencias-garantias-constitucionales como deposito de fuentes locales.
 - Corregir nombres truncados en README antes de usarlo como indice operativo.
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Alinear el producto a la planeacion semanal y a la consigna de actividad.
+- Mantener separacion entre reporte, presentacion, programa analitico y bibliografia.
+- Iniciar con encuadre breve del problema jurídico o social.
+- Separar conceptos clave, marco normativo o doctrinal, análisis propio y cierre.
+- Alinear cada entrega al producto solicitado por la planeación o consigna.
+- Mantener separación entre reporte, presentación, programa analítico y bibliografía.
+- Cerrar con conclusión jurídica transferible a la práctica profesional.
+- Preservar el programa analítico como guía editorial de la asignatura.
+- Mantener la carpeta referencias-garantias-constitucionales como depósito local.
+- Evitar cambios de nombres de archivo base salvo requerimiento explícito.
+- Corregir nombres truncados en README antes de usarlo como índice operativo.
+- Corregir placeholders generados antes de referenciar archivos.
+- Abrir con encuadre breve del problema juridico o social.
+- Mantener secuencia reusable: conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Alinear cada producto a la consigna y planeacion semanal local.
+- Corregir placeholders y nombres truncados en README y programa antes de reutilizar rutas.
 
 ## activity_rules
 
@@ -99,6 +152,22 @@
 - Cerrar con conclusion juridica aplicable a la practica profesional.
 - Distinguir entre conceptos, normas, doctrina, datos y postura personal.
 - Evitar afirmaciones constitucionales sin fundamento normativo o bibliografico.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Incluir postura argumentada del estudiante; evitar texto solo descriptivo.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+- Distinguir conceptos, normas, doctrina, datos y postura personal.
+- Incluir problema jurídico o social claro desde la introducción.
+- Sustentar afirmaciones relevantes con fuente verificable o norma identificable.
+- Incluir postura argumentada del estudiante.
+- Evitar entregas solo descriptivas o de resumen.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- Confirmar que el producto corresponda a la consigna local.
+- No asumir fuentes de otra semana o materia como aplicables.
+- Cerrar con conclusión jurídica aplicable a la práctica profesional.
+- Incluir postura argumentada del estudiante; evitar resumen descriptivo puro.
+- Sustentar afirmaciones con fuente verificable y cita explicita.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- No asumir fuentes de otras semanas o materias sin validacion de consigna.
 
 ## quality_gates
 
@@ -114,6 +183,20 @@
 - Confirmar que las fuentes institucionales correspondan a archivos o enlaces disponibles.
 - Aplicar union-dedupe sin eliminar reglas utiles previas.
 - Revisar respuesta no estructurada antes de aplicar aguas abajo.
+- Bloquear propagacion si la salida no es JSON parseable.
+- Validar estructura minima completa antes de aplicar aguas abajo.
+- Revisar y normalizar respuestas no estructuradas antes de reutilizarlas.
+- Confirmar que no existan afirmaciones sin respaldo o sin marca de supuesto.
+- Validar consistencia entre citas en texto y archivo .bib.
+- Verificar congruencia entre metadatos de portada y datos curriculares locales.
+- Bloquear propagación automática si la entrada no es JSON parseable.
+- Validar estructura mínima completa antes de aplicar aguas abajo.
+- Validar consistencia entre citas en texto y archivo .bib local.
+- Confirmar que toda cita usada tenga entrada bibliográfica local.
+- Verificar que no queden placeholders literales en rutas, nombres o bibliografía.
+- Aplicar unión-dedupe sin eliminar reglas útiles previas.
+- Revisar y normalizar respuestas no estructuradas antes de reutilizar.
+- Verificar correspondencia del producto con la consigna local vigente.
 
 ## latex_rules
 
@@ -129,6 +212,30 @@
 - No introducir paquetes nuevos sin necesidad editorial o tecnica verificable.
 - Verificar cierre completo de la macro authortable y de \universityname en portada.
 - Reparar truncamiento detectado cerca de la macro de portada antes de compilar.
+- Usar codificacion correcta para espanol en .tex y .bib.
+- Compilar sin errores criticos ni referencias rotas.
+- Mantener claves BibTeX estables para evitar roturas.
+- Evitar comandos no estandar sin justificacion editorial o tecnica.
+- Completar campos de plantilla antes de entrega: actividad, figura docente y fecha.
+- Corregir truncamientos y placeholders en README, programa analitico y portada LaTeX.
+- Verificar cierre completo de macros de portada antes de compilar.
+- Conservar clase article en español, letterpaper y oneside según plantilla.
+- Completar actividad, figura docente y fecha antes de entregar.
+- Mantener tabla de autor con matrícula, semestre, bloque, tipo y créditos correctos.
+- Preservar coursecode como LDE-S2B1 salvo indicación institucional distinta.
+- Verificar cierre completo de \authortable y \universityname.
+- Usar codificación y acentos correctos en español en .tex y .bib.
+- No introducir paquetes nuevos sin necesidad editorial o técnica verificable.
+- Evitar comandos no estándar sin justificación editorial.
+- Compilar sin errores críticos y sin referencias rotas.
+- Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analítico.
+- Mantener nombres sin acentos solo si la plantilla lo requiere técnicamente.
+- Usar espanol con acentos y codificacion consistente en .tex y .bib.
+- Compilar sin errores criticos, sin referencias rotas y sin tokens sin expandir.
+- Mantener claves BibTeX estables para evitar roturas de compilacion.
+- No introducir comandos o paquetes no estandar sin justificacion verificable.
+- Corregir truncamientos de macros de portada antes de entrega.
+- Usar nombres de archivo locales verificados del destino.
 
 ## bibliography_rules
 
@@ -140,6 +247,24 @@
 - Usar claves BibTeX estables y descriptivas.
 - Agregar normas juridicas con identificador, emisor y fecha cuando sean usadas.
 - Conservar entradas base unadmSitioWeb y unadmMallaDerecho2024.
+- Priorizar fuentes institucionales UnADM y fuentes juridicas verificables.
+- Registrar fuentes especificas de cada actividad en garantias-constitucionales.bib.
+- No inventar referencias; usar solo obras consultables.
+- Conservar metadatos minimos: autor, titulo, anio y fuente/editorial o URL.
+- Distinguir bibliografia base de bibliografia especifica de actividad.
+- Conservar entradas base locales: unadmSitioWeb y unadmMallaDerecho2024.
+- Registrar fuentes específicas de actividad en garantias-constitucionales.bib.
+- Priorizar fuentes institucionales UnADM y fuentes jurídicas verificables.
+- No inventar referencias.
+- Usar solo fuentes consultadas y verificables.
+- Conservar metadatos mínimos: autor, título, año y fuente editorial o URL.
+- Agregar normas jurídicas con identificador, emisor y fecha cuando sean usadas.
+- Corregir menciones bibliográficas que usen placeholders generados.
+- Distinguir bibliografía base de bibliografía específica de actividad.
+- Priorizar fuentes institucionales UnADM y normas juridicas verificables.
+- Registrar fuentes especificas por actividad en garantias-constitucionales.bib.
+- Distinguir bibliografia base de materia frente a bibliografia especifica de actividad.
+- Marcar como supuesto cualquier inferencia bibliografica no confirmada por consigna.
 
 ## propagation_hints
 
@@ -190,6 +315,27 @@
 - Propagar solo reglas editoriales generales validadas.
 - Ciclo 1 al 22 requieren normalizacion manual si la fuente llega no estructurada.
 - Ciclo 22 necesita normalizacion manual si se reutiliza.
+- Propagar recursivamente solo reglas editoriales generales validadas.
+- Priorizar identidad, estructura reusable, quality gates y grafo conceptual.
+- Evitar propagar redaccion literal o contenido tematico de nodos no equivalentes.
+- Mantener alerta institucional de riesgo cuando exista herencia no estructurada.
+- Si falta contexto local en nodos hijos, inicializar cerebro editorial minimo y abrir vacios.
+- Propagar recursivamente solo después de validar JSON y estructura.
+- Propagar a nodos laterales solo reglas editoriales generales ya validadas.
+- No propagar datos curriculares específicos fuera de Garantías constitucionales.
+- No trasladar contenidos temáticos entre materias sin validación local.
+- Mantener alerta de JSON no parseable como control institucional.
+- Priorizar identidad, estructura, calidad, LaTeX, bibliografía y grafo conceptual.
+- Aplicar normalización manual si se detecta salida no estructurada.
+- Ciclo 1 requiere normalización manual si se reutiliza herencia incompleta.
+- Evitar regresiones respecto de reglas útiles previas.
+- Usar unión-dedupe como estrategia de compresión conservadora.
+- Propagar recursivamente solo reglas editoriales generales ya validadas.
+- Priorizar identidad, estructura reusable, gates de calidad y grafo conceptual.
+- Evitar transferencia literal o disciplinar entre nodos transversales no equivalentes.
+- Aplicar union-dedupe y conservar historial de refuerzo sin regresion.
+- Mantener etiquetas de riesgo para herencias no estructuradas de ciclos previos.
+- Si falta contexto local de actividad, mantener cerebro minimo y abrir vacios como preguntas.
 
 ## open_questions
 
@@ -204,3 +350,94 @@
 - Falta confirmar memoria especifica parseable de la actividad origen para reglas disciplinares.
 - Falta reemplazar placeholder bibliografico en README.md y programa analitico.
 - Supuesto: la herencia institucional sin JSON parseable se conserva solo como control de riesgo.
+- Supuesto: falta consigna textual de actividades locales de Garantias constitucionales.
+- Confirmar rubrica de evaluacion local para ajustar profundidad argumentativa.
+- Confirmar formato de citacion exigido en la materia destino.
+- Confirmar y reparar truncamiento detectado en reporte-garantias-constitucionales.tex.
+- Confirmar reemplazo de tokens $(@{...}.Slug) en README y programa analitico.
+- Falta consigna textual de actividades locales de Garantías constitucionales.
+- Falta confirmar producto exacto de cada actividad local.
+- Falta confirmar rúbrica de evaluación específica.
+- Falta reemplazar placeholder bibliográfico en README.md y programa analítico.
+- Falta confirmar si la fecha debe ser automática con \today o fija por entrega.
+- Falta validar estilo de citación requerido: APA, jurídico mexicano u otro.
+- Supuesto: la herencia institucional no parseable se conserva solo como control de riesgo.
+- Supuesto: las reglas de Filosofía del Derecho se transfieren solo como abstracciones editoriales.
+- Confirmar consignas locales de actividades de Garantias constitucionales para ajustar granularidad.
+- Confirmar figura docente y politica de fecha fija vs \today en plantilla.
+- Confirmar correccion final de truncamientos en reporte-garantias-constitucionales.tex. [supuesto]
+- Confirmar reemplazo completo de placeholders de Slug en README y programa analitico. [supuesto]
+- Confirmar estilo de citacion requerido por evaluacion (APA, juridico mexicano u otro).
+- Confirmar si se requieren tipos de artefacto adicionales a reporte y presentacion.
+
+## editorial_dna
+
+### esencia
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Identidad institucional UnADM
+- Integridad academica
+- Problema juridico o social
+- Marco normativo y doctrinal
+- Analisis propio
+- Conclusion juridica transferible
+- Bibliografia verificable
+
+### razon_de_ser
+- Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.
+- Problema juridico o social que activa la asignatura.
+- Conceptos, normas, doctrina o datos pertinentes.
+- Producto solicitado por la planeacion.
+- Analisis propio y postura academica.
+- Conclusion transferible a la practica juridica.
+- Usar la carpeta de materia como punto de entrada canonico.
+- Alinear cada entrega al esquema: problema, conceptos/fuentes, producto, analisis propio, conclusion transferible.
+- Mantener separacion entre reporte, presentacion, programa analitico y referencias.
+- Evitar cambios de nombres de archivo base salvo requerimiento explicito.
+- Alinear cada entrega al esquema: problema, conceptos y fuentes, producto, analisis propio, conclusion transferible.
+- Usar nombres locales verificados: reporte-garantias-constitucionales.tex, presentacion-garantias-constitucionales.tex y garantias-constitucionales.bib.
+
+### identidad_estilistica
+- Explicitar objetivo al inicio.
+- Mantener secciones funcionales y consistentes.
+- Marcar supuestos de forma visible.
+- Evitar afirmaciones sin respaldo.
+- Mantener identidad institucional UnADM en tono, portada y metadatos.
+- Usar contexto curricular del destino: Licenciatura en Derecho, semestre 2, bloque 1, obligatoria, 8 creditos.
+- Usar la carpeta de la asignatura como punto de entrada canonico.
+- Marcar como supuesto todo dato no visible en la consigna local.
+- Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.
+- No trasladar contenido disciplinar de Filosofia del Derecho sin validacion expresa en Garantias constitucionales.
+- Mantener identidad UnADM en portada, encabezados y referencias institucionales.
+- Usar datos de materia destino: Garantias constitucionales, LDE-S2B1, semestre 2, bloque 1.
+
+### patrones_argumentativos
+- Problema -> conceptos -> marco normativo -> analisis -> conclusion.
+- Afirmacion -> evidencia/cita -> interpretacion -> implicacion juridica.
+- Consigna -> desarrollo alineado -> verificacion de cierre.
+- Iniciar con encuadre breve del problema juridico o social.
+- Definir objetivo puntual antes del desarrollo.
+- Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.
+- Cerrar con conclusion juridica transferible a practica profesional.
+- Alinear el producto a la planeacion semanal y a la consigna de actividad.
+- Mantener separacion entre reporte, presentacion, programa analitico y bibliografia.
+- Sustentar afirmaciones con fuentes verificables y cita explicita.
+- Incluir postura argumentada del estudiante; evitar texto solo descriptivo.
+- Verificar coherencia entre pregunta guia, desarrollo y conclusion.
+
+### grafo_de_conocimiento
+- Conceptos: 206
+- Citas: 2
+- Relaciones reforzadas: 50
+- Evidencias: 68
+
+## adn_tex
+
+- Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/reporte-garantias-constitucionales.tex`
+- Caracteres LaTeX preservados: 4179
+- Bloques/parrafos indexados: 20
+- Claves citadas: ninguna
+- Claves sin referencia: ninguna

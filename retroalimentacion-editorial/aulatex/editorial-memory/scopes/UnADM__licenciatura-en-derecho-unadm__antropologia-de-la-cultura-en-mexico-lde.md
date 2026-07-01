@@ -482,6 +482,35 @@
 - Se transfieren solo abstracciones estables: objetivo, evidencia, analisis propio, coherencia y cierre transferible.
 - Se refuerza correccion de placeholders en README y programa analitico.
 - Se mantiene alerta: no propagar salidas no JSON parseable.
+- Se transfieren solo abstracciones editoriales estables: objetivo, estructura argumentativa, evidencia verificable y cierre transferible.
+- Se preserva identidad UnADM y contexto curricular local del destino sin mezclar metadatos de la materia origen.
+- Se refuerza regla de normalizacion: no propagar memoria no parseable o no estructurada.
+- Se mantiene compresion lossless por union-dedupe sin eliminar reglas utiles previas.
+- Consolidación transversal ciclo 1 aplicada al nodo materia.
+- Destino local: Antropología de la cultura en México, Licenciatura en Derecho, UnADM.
+- Se preserva ubicación curricular local: semestre 4, bloque 2, obligatoria, 8 créditos.
+- Se integran solo abstracciones editoriales estables del origen.
+- Se evita transferir contenido temático exclusivo de Filosofía del Derecho.
+- Se refuerza identidad UnADM, integridad académica, citas verificables y conclusión jurídica.
+- Se mantiene alerta por salidas heredadas no JSON parseables.
+- Se aplica unión-dedupe conservadora sin regresión.
+- Sincronizacion transversal ciclo 2 aplicada con estrategia progresiva y conservadora.
+- Se preservan reglas utiles previas del destino y del origen sin regresion.
+- Se incorporan solo abstracciones estables: objetivo, evidencia, analisis propio, coherencia y cierre transferible.
+- Se refuerza normalizacion estructurada y validacion JSON antes de propagacion recursiva.
+- Se consolida cerebro editorial mínimo para materia destino con sincronización transversal.
+- Se preservan reglas institucionales UnADM y ejes editoriales comunes.
+- Se transfieren solo abstracciones estables desde actividad origen.
+- Se evita transferencia de contenido temático específico de Filosofía del Derecho.
+- Se refuerza normalización estructurada y validación JSON como prerrequisito.
+- La compresión se realiza por unión y deduplicación sin regresión.
+- Se incorporan abstractions estables del origen: objetivo, evidencia, analisis propio y cierre transferible.
+- Se mantiene regla critica: bloquear propagacion si no hay JSON parseable.
+- Se refuerza normalizacion de placeholders y rutas corruptas en README, programa y archivos LaTeX/BibTeX.
+- Se preservan reglas institucionales UnADM, ejes editoriales y gates de calidad ya validados.
+- Se incorporan solo abstracciones estables del origen: objetivo puntual, evidencia verificable, postura propia y coherencia argumentativa.
+- No se transfieren contenidos tematicos exclusivos de Filosofia del Derecho al nodo de Antropologia.
+- Se refuerza normalizacion estructurada obligatoria antes de toda propagacion recursiva.
 
 ## identity_rules
 
@@ -594,6 +623,26 @@
 - No transferir metadatos especificos de Filosofia del Derecho al destino.
 - Mantener adscripcion a Licenciatura en Derecho.
 - No trasladar metadatos curriculares del origen al destino.
+- Conservar adscripcion local: Licenciatura en Derecho.
+- No trasladar datos curriculares especificos de Filosofia del Derecho al destino.
+- Mantener identidad institucional UnADM en portada, metadatos y tono.
+- Usar nombre de materia: Antropología de la cultura en México.
+- Conservar adscripción: Licenciatura en Derecho.
+- Conservar ubicación curricular local: semestre 4, bloque 2, obligatoria, 8 créditos.
+- Usar clave local LDE-S4B2 salvo indicación institucional distinta.
+- Usar la carpeta de materia como punto de entrada canónico.
+- No trasladar metadatos curriculares de Filosofía del Derecho al destino.
+- Mantener autor y matrícula solo si coinciden con la actividad real.
+- Marcar como [Supuesto] todo dato no visible en la consigna local.
+- No trasladar metadatos curriculares de la materia origen al destino.
+- Mantener identidad institucional UnADM en todo artefacto.
+- Conservar adscripción a Licenciatura en Derecho.
+- Usar nombre oficial de la materia destino.
+- Respetar ubicación curricular local confirmada.
+- Marcar como supuesto todo dato heredado no visible en consigna.
+- No transferir metadatos curriculares de otra asignatura.
+- No mover metadatos curriculares de otra asignatura al destino.
+- No trasladar metadatos curriculares de materias no equivalentes.
 
 ## structure_rules
 
@@ -779,6 +828,29 @@
 - Alinear el producto al entregable pedido en planeacion semanal.
 - Usar README y programa analitico como guias estructurales.
 - Resolver nombres dinamicos a archivos literales antes de citar rutas.
+- Usar carpeta de materia como entrada canonica.
+- Ordenar desarrollo en: conceptos clave, marco teorico o normativo, analisis propio y cierre.
+- Usar README de materia como entrada canónica.
+- Usar programa analítico local como guía editorial.
+- Iniciar con encuadre breve del problema jurídico, social o cultural.
+- Separar secciones en conceptos clave, marco teórico o normativo, análisis propio y cierre.
+- Alinear la entrega al producto solicitado por la planeación semanal.
+- Distinguir reporte, presentación, referencias e insumos documentales.
+- Guardar fuentes específicas en antropologia-de-la-cultura-en-mexico.bib.
+- Conservar carpeta referencias-antropologia-de-la-cultura-en-mexico para insumos locales.
+- Corregir rutas truncadas antes de compilar.
+- Resolver placeholders tipo $(@{...}.Slug) antes de citar o compilar.
+- Cerrar con conclusión transferible a la práctica jurídica.
+- Organizar en secciones reutilizables: conceptos clave, marco teorico/normativo, analisis propio y cierre.
+- Resolver placeholders dinamicos en README/programa/.tex/.bib antes de uso.
+- Corregir rutas truncadas o caracteres anomales antes de compilar.
+- Usar README de la materia como entrada canónica.
+- Alinear todo producto a ejes: problema, conceptos, evidencia, análisis, conclusión.
+- Separar claramente reporte, presentación y bibliografía.
+- Usar programa analítico como guía editorial.
+- Cerrar siempre con conclusión transferible a la práctica jurídica.
+- Separar secciones en conceptos, marco teorico-normativo, analisis propio y cierre.
+- Usar README y programa analitico como guias operativas de estructura.
 
 ## activity_rules
 
@@ -921,6 +993,24 @@
 - Comprobar que el producto final corresponde a la consigna real de la actividad.
 - Cerrar con conclusion juridica transferible a practica profesional cuando la consigna lo pida.
 - No asumir fuentes de otras semanas sin validacion local.
+- Definir objetivo puntual antes del desarrollo.
+- Definir problema jurídico, social o cultural al inicio.
+- Integrar conceptos antropológicos, culturales, jurídicos y sociales pertinentes.
+- Distinguir evidencia, interpretación y opinión personal.
+- Sustentar afirmaciones relevantes con fuentes verificables.
+- Evitar entregas solo descriptivas o de resumen.
+- Evitar reducir el análisis cultural a afirmaciones jurídicas sin puente argumentativo.
+- Verificar coherencia entre pregunta guía, desarrollo y conclusión.
+- Relacionar el producto con la planeación semanal.
+- Confirmar que el producto corresponda a la consigna específica.
+- Iniciar cada actividad con encuadre del problema jurídico o social.
+- Integrar conceptos culturales y jurídicos pertinentes con puente argumentativo.
+- Distinguir evidencia, interpretación y postura personal.
+- Evitar entregas meramente descriptivas.
+- Verificar coherencia entre pregunta guía, desarrollo y cierre.
+- Incluir postura argumentada del estudiante; evitar resumen descriptivo.
+- En Antropologia, conectar lo cultural con lo juridico mediante puente argumentativo explicito.
+- Evitar extrapolar automaticamente fuentes o consignas de semanas o materias distintas.
 
 ## quality_gates
 
@@ -1098,6 +1188,25 @@
 - Normalizar manualmente respuestas no estructuradas antes de uso aguas abajo.
 - Comprobar correspondencia entre metadatos del documento y contexto curricular local.
 - Confirmar consistencia entre metadatos del documento y la materia destino.
+- Normalizar manualmente respuestas no estructuradas en ciclo 1.
+- Bloquear propagación si la salida no es JSON parseable.
+- Normalizar manualmente respuestas no estructuradas antes de reutilizarlas.
+- No aceptar contenido sin estructura mínima del esquema requerido.
+- Revisar estructura mínima completa antes de aplicar aguas abajo.
+- Confirmar que toda afirmación relevante tenga respaldo o marca de supuesto.
+- Validar semestre, bloque, tipo y créditos contra la malla curricular local.
+- Verificar correspondencia del producto con la consigna de actividad.
+- Revisar que portada, encabezados y bibliografía compilen sin errores.
+- Verificar que no queden placeholders en README, programa ni .tex.
+- No propagar reglas provisionales como definitivas sin validación disciplinar.
+- Verificar que no queden tokens sin resolver tipo $(@{...}.Slug).
+- Validar estructura mínima completa antes de reutilizar.
+- Confirmar consistencia entre metadatos y malla curricular local.
+- Verificar existencia y uso correcto del .bib local.
+- Normalizar manualmente salidas no estructuradas en ciclos tempranos.
+- Comprobar que rutas y nombres no contengan placeholders sin resolver.
+- No elevar reglas provisionales a definitivas sin validacion disciplinar.
+- Normalizar manualmente toda respuesta no estructurada antes de aplicar aguas abajo.
 
 ## latex_rules
 
@@ -1415,6 +1524,29 @@
 - Mantener coursename y coursecode locales del destino salvo instruccion oficial.
 - Resolver tokens sin expandir tipo $(@{...}.Slug) en README, programa y nombres de archivo.
 - Conservar configuracion de espanol y acentos correctos.
+- Mantener plantilla LaTeX local de la materia como base.
+- Corregir nombres de archivo truncados o con caracteres anómalos antes de referenciar.
+- Mantener clase article salvo necesidad académica justificada.
+- Usar letterpaper y oneside si no hay instrucción distinta.
+- Mantener universityname como Universidad Abierta y a Distancia de México.
+- Mantener coursename como Antropología de la cultura en México.
+- Mantener coursecode LDE-S4B2 salvo indicación institucional distinta.
+- Usar codificación y acentos correctos en español en .tex y .bib.
+- Evitar comandos no estándar sin justificación editorial.
+- Compilar sin errores críticos y sin referencias rotas.
+- Verificar nombres de archivos del README antes de referenciarlos.
+- Corregir caracteres anómalos en rutas o nombres antes de compilar.
+- Verificar nombres reales de archivos antes de referenciarlos.
+- Usar plantilla base .tex de la materia destino.
+- Mantener configuración en español y codificación correcta.
+- No cambiar clase o formato sin justificación académica.
+- Actualizar títulos y subtítulos por actividad.
+- Resolver tokens dinámicos antes de compilar.
+- Compilar sin errores críticos ni referencias rotas.
+- Conservar configuracion en espanol y metadatos institucionales completos.
+- Corregir caracteres truncados o anomalias en rutas y nombres de archivo.
+- Resolver placeholders y tokens dinamicos en README, programa y rutas antes de compilar.
+- Corregir rutas con caracteres truncados o anomalias de nombre de archivo.
 
 ## bibliography_rules
 
@@ -1568,6 +1700,23 @@
 - Marcar como supuesto cualquier asignacion de fuente no confirmada por consigna.
 - Mantener trazabilidad de procedencia cuando se use archivo local o asset institucional.
 - Priorizar fuentes institucionales UnADM y oficiales aplicables.
+- Validar correspondencia entre citas en texto y entradas del .bib.
+- Usar la malla curricular de Derecho como fuente de ubicación curricular.
+- Agregar entradas BibTeX específicas por actividad en el .bib local.
+- Distinguir fuentes institucionales, doctrinales, normativas y datos empíricos.
+- Distinguir bibliografía base de bibliografía específica de actividad.
+- No citar fuentes ausentes del .bib o de referencias locales.
+- Conservar metadatos mínimos: autor, título, año, fuente editorial o URL.
+- Supuesto: antropologia-de-la-cultura-en-mexico.bib es el .bib canónico local.
+- Conservar metadatos minimos: autor, titulo, ano, fuente/editorial o URL.
+- Usar solo fuentes verificables y consultables.
+- Registrar fuentes específicas por actividad en el .bib local.
+- Conservar metadatos mínimos completos.
+- Distinguir bibliografía base de bibliografía específica.
+- Mantener trazabilidad de activos locales cuando se cite material de assets-unadm.
+- Priorizar fuentes institucionales UnADM y documentos verificables.
+- Registrar fuentes especificas de cada actividad en el .bib local de la materia destino.
+- Conservar metadatos minimos: autor, titulo, anio y fuente editorial o URL.
 
 ## propagation_hints
 
@@ -1921,6 +2070,29 @@
 - Priorizar identidad, estructura reusable y gates de calidad.
 - Evitar transferencia literal entre nodos no equivalentes.
 - Aplicar union-dedupe lossless en cada ciclo sin eliminar reglas utiles.
+- Evitar transferir contenido tematico literal de Filosofia del Derecho a Antropologia.
+- Mantener estrategia progresiva y conservadora: agregar mejoras verificables sin regresion.
+- Propagar recursivamente solo después de validar JSON y estructura.
+- Compartir solo reglas generales entre materias no equivalentes.
+- Propagar identidad UnADM e integridad académica a nodos laterales.
+- No propagar metadatos específicos de esta materia a materias distintas.
+- Etiquetar como supuesto todo elemento heredado no confirmado localmente.
+- Marcar como provisional cualquier regla heredada desde otra disciplina.
+- Mantener unión-dedupe lossless sin eliminar reglas útiles previas.
+- Reutilizar reglas institucionales de calidad sin reducir especificidad local.
+- Ciclo 1 requiere normalización manual si se reutiliza memoria no estructurada.
+- Evitar propagar redaccion literal o contenido tematico de materia origen.
+- Mantener etiquetas [Supuesto] en vacios de contexto local.
+- Propagar recursivamente solo reglas validadas.
+- Compartir solo abstracciones editoriales estables entre nodos transversales.
+- Etiquetar como provisional toda regla heredada de otra disciplina.
+- Registrar alertas de parseo como memoria reutilizable.
+- Evitar regresiones respecto a reglas útiles previas.
+- Preservar union-dedupe lossless sin borrar reglas utiles previas.
+- Mantener enfoque progresivo y conservador: reforzar primero identidad, estructura y gates.
+- Evitar transferencia literal de redaccion o contenido tematico de la materia origen.
+- Conservar alertas historicas de parseo como control transversal reutilizable.
+- Estrategia progresiva y conservadora: agregar mejoras verificables sin borrar reglas utiles.
 
 ## open_questions
 
@@ -2265,6 +2437,31 @@
 - Confirmar politica institucional para placeholders dinamicos en artefactos fuente.
 - Confirmar si la clave LDE-S4B2 es definitiva institucional o local.
 - Confirmar resolucion final de placeholders en README y programa analitico.
+- Confirmar si la conclusion juridica es obligatoria en todas las actividades de Antropologia o depende de la consigna.
+- Confirmar que todos los placeholders de Slug fueron resueltos en archivos de control.
+- Confirmar rubricas locales para calibrar profundidad argumentativa por actividad.
+- Confirmar estándar único de citas para la licenciatura.
+- Confirmar si la conclusión jurídica debe aparecer en todas las actividades antropológicas.
+- Confirmar producto exacto de cada actividad: reporte, presentación u otro formato.
+- Confirmar rúbrica específica antes de fijar profundidad argumentativa.
+- Confirmar fuentes obligatorias de cada semana.
+- Confirmar si el .bib usa nombre literal o plantilla dinámica como nombre definitivo.
+- Supuesto: reglas heredadas desde ingeniería aplican solo como alerta técnica.
+- Supuesto: abstracciones de Filosofía del Derecho aplican como estructura, no como contenido temático.
+- [Supuesto] Confirmar rubrica oficial de evaluacion de la materia destino.
+- [Supuesto] Confirmar estandar de citacion institucional unico (APA u otro).
+- [Supuesto] Confirmar vigencia oficial de la clave local LDE-S4B2.
+- [Supuesto] Confirmar si existe guia local adicional para productos visuales.
+- Confirmar rúbrica específica de evaluación de la materia destino.
+- Confirmar si todas las actividades requieren conclusión jurídica explícita.
+- Confirmar fuentes base oficiales adicionales de la asignatura.
+- Confirmar nombre canónico definitivo del archivo .bib.
+- Supuesto: falta consigna especifica de actividades locales de Antropologia; confirmar formatos exactos por semana.
+- Confirmar si la clave LDE-S4B2 es oficial institucional o local.
+- Confirmar politica sobre mantener autor y matricula prellenados en plantillas.
+- Supuesto: falta consigna local concreta por actividad en el destino; confirmar productos exigidos por semana.
+- Confirmar si la clave LDE-S4B2 es oficial institucional o solo operacional local.
+- Confirmar cierre definitivo de placeholders dinamicos en README y programa analitico.
 
 ## editorial_dna
 
@@ -2325,10 +2522,10 @@
 - Verificar coherencia entre pregunta guia, desarrollo y conclusion.
 
 ### grafo_de_conocimiento
-- Conceptos: 1607
+- Conceptos: 1818
 - Citas: 2
-- Relaciones reforzadas: 763
-- Evidencias: 812
+- Relaciones reforzadas: 819
+- Evidencias: 891
 
 ## adn_tex
 
