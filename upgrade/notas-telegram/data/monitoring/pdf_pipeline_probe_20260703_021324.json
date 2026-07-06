@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-07-03T02:07:29.136823",
+  "pdf_path": "C:\\Users\\delaCruz\\Documents\\notas-telegram\\data\\monitoring\\notas_pdf_probe_9_sxq2a1\\probe.pdf",
+  "pdf_size_bytes": 2878,
+  "endpoint_type": "responses_v1",
+  "model": "gpt-5.4-pro",
+  "extract_seconds": 0.114,
+  "extracted_chars": 2104,
+  "extracted_preview": "?1. Roma no cae del todo en 476\nLa fecha de 476 marca la caída del Imperio Romano de Occidente, pero el Imperio Romano de Oriente ?lo que lueg\nEntonces, primera base de la teoría: **Roma ya se había movido antes**. Primero de Roma a Constantinopla. Ahí \n2. Roma se convierte en una idea, no solo en una ciudad\nDespués de la caída occidental, Roma sobrevive en tres cosas:\n**Derecho:** el derecho romano se volvió base de gran parte de la tradición jurídica continental europea y de \n**Iglesia:** la I",
+  "direct_pdf_seconds": 140.207,
+  "direct_pdf_raw_preview": "{\"corrected_text\":\"La idea central es que Roma no desaparece por completo en 476, sino que deja de existir como centro único de poder en Occidente y pasa a sobrevivir como una forma política, jurídica y simbólica que distintos imperios intentan heredar. La caída del Imperio Romano de Occidente marca una ruptura, pero no el fin de Roma en sentido amplio: el Imperio Romano de Oriente continuó durante siglos desde Constantinopla, lo que ya muestra que Roma podía desplazarse geográficamente sin perder del todo su identidad imperial.\\n\\nA partir de ahí, Roma deja de ser solo una ciudad y se convierte en una idea de civilización. Esa continuidad se conserva, sobre todo, en tres planos. Primero, el derecho romano, que siguió influyendo en gran parte de la tradición jurídica europea continental. Segundo, la Iglesia latina, que mantuvo en Roma una estructura universal, jerárquica y administrativa con vocación de continuidad histórica. Tercero, un repertorio de símbolos de poder —emperador, senado, águila, ciudadanía, misión civilizadora y promesa de paz imperial— que siguieron siendo reutilizados por poderes posteriores. En ese sentido, Roma pasa de ser un territorio concreto a ser un model",
+  "direct_pdf_json_valid": true,
+  "analysis_seconds": 215.482,
+  "analysis_title": "Roma como modelo imperial transferible",
+  "analysis_corrected_chars": 2798,
+  "analysis_concepts_count": 10,
+  "analysis_related_terms_count": 0,
+  "analysis_preview": "La nota sostiene que Roma no desaparece por completo en 476, sino que deja de existir como centro único de poder en Occidente y pasa a sobrevivir como estructura, símbolo y modelo político. La primera idea es que Roma ya se había desplazado antes: el poder imperial se había movido a Constantinopla, de modo que la fecha de 476 marca una ruptura occidental, pero no la extinción total de lo romano.\n\nA partir de ahí, Roma deja de ser solo una ciudad o un territorio y se convierte en una idea de civilización. Esa continuidad aparece en tres planos. Primero, en el derecho: la tradición jurídica romana sigue funcionando como base de buena parte de la cultura legal europea continental. Segundo, en la Iglesia latina, que conserva su sede en Roma y mantiene una estructura universal, jerárquica y adm"
+}

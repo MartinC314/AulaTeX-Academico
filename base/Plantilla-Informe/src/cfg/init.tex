@@ -61,6 +61,11 @@
 \ifthenelse{\equal{\cfgpdfsecnumbookmarks}{true}}{
 	\bookmarksetup{numbered}}{
 }
+\ifthenelse{\equal{\cfgpdfbookmarkopen}{true}}{
+	\bookmarksetup{open=true,openlevel=\cfgbookmarksopenlevel}
+}{
+	\bookmarksetup{open=false,openlevel=\cfgbookmarksopenlevel}
+}
 
 % -----------------------------------------------------------------------------
 % Se define metadata del pdf
@@ -95,8 +100,6 @@
 }
 \hypersetup{
 	keeppdfinfo,
-	bookmarksopen={\cfgpdfbookmarkopen},
-	bookmarksopenlevel={\cfgbookmarksopenlevel},
 	bookmarkstype={toc},
 	pdfauthor={\pdfmetainfoauthor},
 	pdfcenterwindow={\cfgpdfcenterwindow},

@@ -5,6 +5,82 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
+% ==============================================================================
+% TEMA VISUAL UCNL / AULATEX
+% Inspirado en el estándar visual de IIIEPE y UnADM: portada institucional,
+% navegación limpia, bloques didácticos, pie de página y paleta propia.
+% ==============================================================================
+\usepackage{booktabs}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usetikzlibrary{calc,positioning,fit,shadows.blur}
+
+\definecolor{ucnlNavy}{HTML}{143A5A}
+\definecolor{ucnlBlue}{HTML}{1E6F9F}
+\definecolor{ucnlGold}{HTML}{C6922E}
+\definecolor{ucnlAqua}{HTML}{20A99A}
+\definecolor{ucnlPaper}{HTML}{F6F8F7}
+\definecolor{ucnlInk}{HTML}{1E2A32}
+
+\mode<presentation>{
+  \usetheme{default}
+  \usefonttheme{professionalfonts}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{blocks}[rounded][shadow=false]
+}
+\setbeamersize{text margin left=0.62cm,text margin right=0.62cm}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=ucnlInk,bg=white}
+\setbeamercolor{structure}{fg=ucnlBlue}
+\setbeamercolor{frametitle}{fg=white,bg=ucnlNavy}
+\setbeamercolor{block title}{fg=white,bg=ucnlBlue}
+\setbeamercolor{block body}{fg=ucnlInk,bg=ucnlPaper}
+\setbeamercolor{alerted text}{fg=ucnlGold}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{itemize item}{\textcolor{ucnlAqua}{\large$\blacktriangleright$}}
+\setbeamertemplate{itemize subitem}{\textcolor{ucnlGold}{\scriptsize$\blacksquare$}}
+
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\textwidth,ht=1.02cm,dp=0.22cm,leftskip=0.35cm,rightskip=0.25cm]{frametitle}
+    \insertframetitle\hfill\includegraphics[height=0.58cm]{\UCNLlogodir/logo-ucnl.png}
+  \end{beamercolorbox}
+  {\color{ucnlGold}\rule{\textwidth}{1.3pt}}
+}
+
+\setbeamertemplate{footline}{%
+  \leavevmode
+  \hbox{%
+    \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}\color{white}\insertshortauthor\end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.40\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}\color{white}\insertshorttitle\end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.26\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}\color{white}UCNL\hfill\insertframenumber/\inserttotalframenumber\end{beamercolorbox}%
+  }
+}
+\setbeamercolor{author in head/foot}{bg=ucnlNavy}
+\setbeamercolor{title in head/foot}{bg=ucnlBlue}
+\setbeamercolor{date in head/foot}{bg=ucnlNavy}
+
+\AtBeginSection[]{%
+  \begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay]
+      \fill[ucnlNavy] (current page.south west) rectangle (current page.north east);
+      \node[opacity=0.10,anchor=east] at ([xshift=0.8cm]current page.east) {\includegraphics[height=7.2cm]{\UCNLlogodir/logo-nuevo-leon.png}};
+      \fill[ucnlGold] ([xshift=0.85cm,yshift=1.8cm]current page.south west) rectangle ([xshift=1.05cm,yshift=5.6cm]current page.south west);
+    \end{tikzpicture}
+    \vspace{1.8cm}
+    \hspace{1.25cm}{\color{white}\Huge\bfseries\insertsectionhead}
+  \end{frame}
+}
+\newcommand{\UCNLlogodir}{assets-ucnl/logos}
+\IfFileExists{\UCNLlogodir/logo-ucnl.png}{}{%
+  \renewcommand{\UCNLlogodir}{../../assets-ucnl/logos}%
+}
+\titlegraphic{%
+  \includegraphics[height=1.35cm]{\UCNLlogodir/logo-nuevo-leon.png}\hspace{0.8cm}%
+  \includegraphics[height=1.35cm]{\UCNLlogodir/logo-ucnl.png}%
+}
+
 \title{Presentacion - Evaluacion de proyectos y modelos de negocios}
 \subtitle{Plantilla de exposicion academica}
 \author{Martin Jonathan de la Cruz}
@@ -25,5 +101,43 @@
   \end{itemize}
 \end{frame}
 
-\end{document}
 
+\section{Ruta editorial UCNL}
+
+\begin{frame}{Objetivo y alcance}
+  \begin{block}{Propósito académico}
+    Presentar el tema de la actividad con identidad institucional UCNL, orden visual y una ruta de comprensión clara.
+  \end{block}
+  \begin{itemize}
+    \item Delimitar el problema o concepto central.
+    \item Identificar el producto solicitado y sus criterios de cumplimiento.
+    \item Conectar desarrollo, evidencia y postura personal.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Ejes de desarrollo}
+  \begin{columns}[T,totalwidth=\textwidth]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Contenido}
+        Conceptos clave, categorías de análisis y relaciones principales.
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Producto}
+        Cuadro, esquema, cuestionario, matriz o síntesis solicitada por la actividad.
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Cierre académico}
+  \begin{block}{Postura y aprendizaje}
+    La conclusión debe explicar qué se comprendió, por qué importa y cómo se vincula con la formación profesional.
+  \end{block}
+  \begin{itemize}
+    \item Hallazgo central.
+    \item Interpretación propia.
+    \item Consecuencia o aplicación.
+  \end{itemize}
+\end{frame}
+\end{document}

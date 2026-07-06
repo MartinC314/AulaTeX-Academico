@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-07-03T02:00:59.680075",
+  "pdf_path": "C:\\Users\\delaCruz\\Documents\\notas-telegram\\data\\monitoring\\notas_pdf_probe_gizbo8fh\\probe.pdf",
+  "pdf_size_bytes": 4666,
+  "endpoint_type": "responses_v1",
+  "model": "gpt-5.4-pro",
+  "extract_seconds": 0.117,
+  "extracted_chars": 3489,
+  "extracted_preview": "1. Roma no cae del todo en 476\nLa fecha de 476 marca la caída del Imperio Romano de Occidente, pero el Imperio Romano de Oriente ?lo que lueg\nEntonces, primera base de la teoría: **Roma ya se había movido antes**. Primero de Roma a Constantinopla. Ahí \n2. Roma se convierte en una idea, no solo en una ciudad\nDespués de la caída occidental, Roma sobrevive en tres cosas:\n**Derecho:** el derecho romano se volvió base de gran parte de la tradición jurídica continental europea y de \n**Iglesia:** la Ig",
+  "direct_pdf_seconds": 128.193,
+  "direct_pdf_raw_preview": "{\"corrected_text\":\"La idea central es que Roma no desapareció por completo en 476, sino que dejó de existir como centro político único en Occidente y sobrevivió como modelo de poder, legitimidad y civilización. La caída del Imperio romano de Occidente no significó el fin de Roma en sentido amplio, porque el Imperio romano de Oriente siguió existiendo durante siglos desde Constantinopla. En ese sentido, Roma ya se había desplazado antes de caer en Occidente: primero dejó de ser solo la ciudad de Roma y pasó a ser una estructura imperial más amplia.\\n\\nDespués de 476, la herencia romana continuó en al menos tres planos. Primero, en el derecho, ya que la tradición jurídica romana se convirtió en una de las bases del derecho continental europeo. Segundo, en la Iglesia latina, que conservó en Roma una organización universal, jerárquica y administrativa con vocación de continuidad. Tercero, en los símbolos del poder: el emperador, el senado, el águila, la ciudadanía, la idea de orden y la misión civilizadora. Por eso puede decirse que Roma dejó de ser solamente un territorio y se convirtió en una idea política y cultural.\\n\\nEsa idea reapareció en el Sacro Imperio Romano Germánico. Con l",
+  "direct_pdf_json_valid": true,
+  "analysis_seconds": 199.084,
+  "analysis_title": "Roma como plantilla imperial occidental",
+  "analysis_corrected_chars": 2946,
+  "analysis_concepts_count": 9,
+  "analysis_related_terms_count": 0,
+  "analysis_preview": "La nota plantea que Roma no \"cayó\" por completo en 476, sino que dejó de existir como centro político único en Occidente mientras parte de su continuidad sobrevivía en Oriente. La primera idea clave es que Roma ya se había desplazado antes de desaparecer como capital exclusiva: el poder romano no dependía solo de la ciudad de Roma, sino también de su capacidad de reorganizarse.\n\nA partir de ahí, la tesis central es que Roma se convirtió en una idea de civilización más que en un territorio concreto. Esa continuidad habría sobrevivido en tres planos. Primero, en el derecho romano, que siguió influyendo en la tradición jurídica continental. Segundo, en la Iglesia latina, que conservó una estructura universal, jerárquica y administrativa con sede en Roma. Tercero, en un repertorio de símbolos "
+}

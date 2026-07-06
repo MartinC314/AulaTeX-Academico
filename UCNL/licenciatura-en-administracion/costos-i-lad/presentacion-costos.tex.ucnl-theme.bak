@@ -1,0 +1,40 @@
+﻿\documentclass[spanish,aspectratio=169]{beamer}
+
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\newcommand{\UCNLlogodir}{assets-ucnl/logos}
+\IfFileExists{\UCNLlogodir/logo-ucnl.png}{}{%
+  \renewcommand{\UCNLlogodir}{../../assets-ucnl/logos}%
+}
+\titlegraphic{%
+  \includegraphics[height=1.35cm]{\UCNLlogodir/logo-nuevo-leon.png}\hspace{0.8cm}%
+  \includegraphics[height=1.35cm]{\UCNLlogodir/logo-ucnl.png}%
+}
+
+\title{Presentacion - Costos I}
+\subtitle{Plantilla de exposicion academica}
+\author{Martin Jonathan de la Cruz}
+\institute{Universidad Ciudadana de Nuevo Leon}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Estructura academica}
+  \begin{itemize}
+    \item Bibliografia: \texttt{costos-I.bib}
+    \item Curso: Costos I
+    \item Actividades: \texttt{reporte-costos-I-Actividad-N.tex}
+  \end{itemize}
+\end{frame}
+
+\end{document}
+
+
+
+

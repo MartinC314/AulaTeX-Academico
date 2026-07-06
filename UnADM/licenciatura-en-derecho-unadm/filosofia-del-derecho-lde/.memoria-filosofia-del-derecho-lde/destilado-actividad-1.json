@@ -1,0 +1,3212 @@
+{
+  "editorial_dna": [
+    {
+      "text": "Separar secciones: conceptos clave, marco normativo/doctrinal, análisis propio y cierre.",
+      "frequency": 10,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Alinear la entrega al producto solicitado en la planeación semanal.",
+      "frequency": 6,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Marcar como supuesto cualquier dato no visible en la consigna de la actividad.",
+      "frequency": 5,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Conservar metadatos mínimos: autor, título, año, fuente/editorial o URL.",
+      "frequency": 4,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Definir objetivo puntual de la actividad antes del desarrollo.",
+      "frequency": 4,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Transformar la planeación en reporte, presentación o producto visual según consigna.",
+      "frequency": 4,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Distinguir bibliografía base de bibliografía específica de la actividad.",
+      "frequency": 3,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Usar la carpeta de asignatura como punto de entrada canónico.",
+      "frequency": 3,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Analisis propio y postura academica.",
+      "frequency": 2,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Basar ubicación curricular en semestre 1, bloque 2, obligatoria, 8 créditos.",
+      "frequency": 2,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Conceptos, normas, doctrina o datos pertinentes.",
+      "frequency": 2,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Conclusion transferible a la practica juridica.",
+      "frequency": 2,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Conservar claves BibTeX del .bib tal como aparecen en el .tex.",
+      "frequency": 2,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Conservar claves BibTeX originales del .bib tal como aparecen en el .tex.",
+      "frequency": 2,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Conservar metadatos minimos: autor, titulo, ano, fuente editorial o URL.",
+      "frequency": 2,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Definir objetivo puntual antes del desarrollo.",
+      "frequency": 2,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Distinguir bibliografia base de bibliografia especifica de actividad.",
+      "frequency": 2,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Fuente provisional: Auto (model-router) desde Actividad 1",
+      "frequency": 2,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Incluir postura argumentada del estudiante y evitar resumen solo descriptivo.",
+      "frequency": 2,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Incluir postura argumentada del estudiante; evitar entrega solo descriptiva.",
+      "frequency": 2,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Mantener identidad institucional UnADM en tono y formato.",
+      "frequency": 2,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Marcar como supuesto cualquier dato no visible en la consigna.",
+      "frequency": 2,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Marcar como supuesto todo dato no visible en la consigna.",
+      "frequency": 2,
+      "section": "identity_rules"
+    },
+    {
+      "text": "No inventar referencias y usar solo obras consultables.",
+      "frequency": 2,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Problema juridico o social que activa la asignatura.",
+      "frequency": 2,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Producto solicitado por la planeacion.",
+      "frequency": 2,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Propagación local: aplicar cambios solo en actividad actual.",
+      "frequency": 2,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "README y programa analítico contienen tokens Slug sin expandir; deben resolverse.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Registrar fuentes especificas de la actividad en el .bib de la asignatura.",
+      "frequency": 2,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Registrar fuentes específicas de la actividad en el .bib de la asignatura.",
+      "frequency": 2,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Se conserva TEX reconstruible del nodo con trazabilidad de fuentes locales.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Supuesto: falta consigna textual de 'actividad-1'; confirmar producto exacto solicitado.",
+      "frequency": 2,
+      "section": "open_questions"
+    },
+    {
+      "text": "Sustentar afirmaciones con fuentes verificables y cita explícita.",
+      "frequency": 2,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Tratar fuentes heredadas no verificadas como provisionales hasta confirmación local.",
+      "frequency": 2,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Usar la carpeta de asignatura como punto de entrada canonico.",
+      "frequency": 2,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Verificar nombres de archivos del README antes de referenciarlos.",
+      "frequency": 2,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Verificar que el producto corresponda a la consigna de Actividad 1.",
+      "frequency": 2,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Adaptar el formato final según consigna: reporte, presentación o producto visual.",
+      "frequency": 1,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Adaptar salida a reporte, presentación o producto visual solo según consigna.",
+      "frequency": 1,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Alcance: actividad",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Alinear el entregable al producto solicitado en la planeación semanal.",
+      "frequency": 1,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Alinear la entrega al producto solicitado por la planeacion semanal.",
+      "frequency": 1,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Bloques/parrafos indexados: 79",
+      "frequency": 1,
+      "section": "adn_tex"
+    },
+    {
+      "text": "Caracteres LaTeX preservados: 18801",
+      "frequency": 1,
+      "section": "adn_tex"
+    },
+    {
+      "text": "Cerrar con conclusion juridica transferible a la practica profesional.",
+      "frequency": 1,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Claves sin referencia: ninguna",
+      "frequency": 1,
+      "section": "adn_tex"
+    },
+    {
+      "text": "Compresion: union-dedupe",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Conceptos: 1691",
+      "frequency": 1,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Confirmar consigna textual completa de Actividad 1.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar fuentes obligatorias de la semana aplicable a Actividad 1.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar fuentes obligatorias de la semana correspondiente a Actividad 1.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar fuentes obligatorias de la semana correspondiente.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar fuentes obligatorias de la semana de Actividad 1.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar nombre canonico final del .bib de la asignatura.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar nombre canonico final del archivo .bib de la asignatura.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar nombre canónico del archivo .bib de la asignatura.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar nombre canónico final del .bib de asignatura y si Actividad 1 requiere bibliografía propia.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar nombre canónico final del .bib de la asignatura para cierre de ambigüedad.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar nombre canónico final del .bib de la asignatura para esta actividad.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar nombre canónico final del .bib de la asignatura.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar nombre canónico final del archivo .bib de la asignatura.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar nombre canónico final del archivo .bib.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar producto exacto solicitado para actividad 1.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar que no existan afirmaciones sin respaldo o sin marca de supuesto.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Confirmar rubrica de evaluacion especifica para ajustar profundidad argumentativa.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar rubrica de evaluacion especifica.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar rúbrica de evaluación específica para ajustar profundidad argumentativa.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar rúbrica de evaluación específica para calibrar profundidad argumentativa.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar rúbrica de evaluación específica.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar rúbrica específica para ajustar profundidad argumentativa.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar rúbrica específica para calibrar profundidad argumentativa.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar si Actividad 1 reutiliza bibliografia existente o requiere .bib propio.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar si actividad 1 reutiliza bibliografía existente o requiere .bib propio.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar si el formato exigido final es reporte, presentación o mapa conceptual.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar si el formato final es reporte, presentacion u otro.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar si el formato principal es reporte, presentacion u otro.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar si el formato principal es reporte, presentación o mapa conceptual.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar si el formato principal es reporte, presentación u otro entregable.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar si el formato principal es reporte, presentación u otro.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar si el formato principal requerido es reporte, presentación u otro.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar si la actividad exige reporte, presentación o mapa conceptual como formato principal.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar si la actividad requiere reporte, presentacion u otro formato principal.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Confirmar si la actividad requiere reporte, presentación u otro formato principal.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Conservar metadatos minimos: autor, titulo, anio, fuente editorial o URL.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Constituci \\'o n Pol \\'i tica de los Estados Unidos Mexicanos (texto vigente)",
+      "frequency": 1,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Convertir formato final a reporte, presentación o producto visual según consigna.",
+      "frequency": 1,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Corregir caracteres anómalos en rutas y nombres.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Definir objetivo puntual de la Actividad 1.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Etiqueta: Actividad 1",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Evidencias: 735",
+      "frequency": 1,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Evitar comandos no estandar sin justificacion editorial.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Evitar comandos no estándar sin justificación editorial.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Evitar entregas solo descriptivas o de resumen.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Evitar entregas solo descriptivas.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Evitar regresiones de reglas útiles ya consolidadas.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Evitar regresiones respecto de reglas utiles previas.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Evitar regresiones respecto de reglas útiles previas.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Evitar regresiones respecto de reglas útiles ya consolidadas.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Evitar regresiones: no eliminar reglas utiles previas.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Fuente provisional: Auto (model-router).",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Incluir postura argumentada del estudiante y evitar entregas solo descriptivas.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Incluir postura argumentada del estudiante y evitar resumen descriptivo puro.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Incluir postura argumentada del estudiante y evitar resumen meramente descriptivo.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Incluir postura argumentada del estudiante y evitar texto solo descriptivo.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Incluir postura argumentada del estudiante, no solo resumen descriptivo.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Incluir postura argumentada del estudiante, no solo resumen.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Incluir postura argumentada del estudiante.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Iniciar con encuadre breve del problema juridico o social.",
+      "frequency": 1,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Ley General de V \\'i ctimas (texto vigente)",
+      "frequency": 1,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Mantener claves BibTeX estables para evitar recompilaciones rotas.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Mantener claves BibTeX estables para evitar rupturas de compilación.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Mantener claves BibTeX estables y originales.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Mantener claves BibTeX estables.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Mantener marcados como provisionales los datos heredados no verificados.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Mantener trazabilidad de supuestos en cada salto.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Mantener validación estricta de parseo JSON antes de cualquier propagación recursiva.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Mantener validación estricta de parseo JSON antes de cualquier propagación.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Memoria de Actividad 1 consolidada y estable con identidad UnADM.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria del segundo y tercer seminarios de argumentaci \\'o n jur \\'i dica",
+      "frequency": 1,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "No asumir fuentes de semanas posteriores como obligatorias para Actividad 1.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "No asumir fuentes de semanas posteriores como validas para Actividad 1 sin confirmacion.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "No asumir fuentes de semanas posteriores como válidas para Actividad 1 sin confirmación.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "No asumir fuentes de semanas posteriores como válidas para Actividad 1 sin evidencia.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "No asumir que fuentes de semanas posteriores aplican a Actividad 1.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "No asumir que fuentes de semanas posteriores aplican automáticamente a Actividad 1.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "No asumir que fuentes de semanas posteriores correspondan a actividad 1.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "No asumir que fuentes de semanas posteriores corresponden a actividad 1.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "No inventar referencias.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "No inventar referencias; usar solo obras realmente consultables.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Nociones de hermen \\'e utica e interpretaci \\'o n jur \\'i dica en el contexto mexicano",
+      "frequency": 1,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Normalizar respuestas no estructuradas antes de reutilizarlas.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Normalizar toda salida no estructurada antes de reutilizarla.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Permitir adaptación a reporte, presentación o producto visual según consigna.",
+      "frequency": 1,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Priorizar fuentes institucionales UnADM y materiales juridicos verificables.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Registrar explícitamente cuando una inferencia provenga de README o programa analítico.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Registrar fuentes específicas de la actividad en el .bib canónico de la asignatura.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Relaciones reforzadas: 866",
+      "frequency": 1,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Resolver tokens Slug sin expandir en README y programa analítico.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analitico.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Resolver tokens sin expandir tipo $(@{...}.Slug) en README y programa analítico.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Resolver tokens sin expandir tipo $(@{...}.Slug) en nombres de archivo del README y programa analítico.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Resolver tokens sin expandir tipo $(@{...}.Slug) en nombres de archivo del README.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Resolver tokens sin expandir tipo $(@{...}.Slug) en nombres de archivo.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Revisar estructura minima completa antes de aplicar aguas abajo.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Revisar estructura mínima completa antes de aplicar aguas abajo.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Revisar respuesta no estructurada antes de reutilizarla.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Revisar y normalizar respuestas no estructuradas antes de reutilizar.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Revisar y normalizar respuestas no estructuradas antes de reutilizarlas.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Revisar y normalizar toda respuesta no estructurada antes de reutilizarla.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Se confirma TEX reconstruible y continuidad del ADN editorial del nodo.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma TEX reconstruible y nodo con fuente trazable.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma base curricular local: semestre 1, bloque 2, obligatoria, 8 créditos [verificado en README].",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma base curricular local: semestre 1, bloque 2, obligatoria, 8 créditos.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma contexto de Actividad Semana 2 con enfoque de mapa conceptual.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma estado provisional de datos no visibles en consigna con marca de supuesto.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma existencia de TEX reconstruible y trazabilidad de fuentes locales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma presencia de tokens Slug sin expandir en README y programa analítico; deben resolverse.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma que README y programa analítico contienen tokens Slug sin expandir que deben resolverse.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma que el README y el programa analítico incluyen tokens Slug sin expandir que deben resolverse.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma que existe TEX reconstruible del nodo y debe preservarse sin recorte.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva ADN editorial reconstructible desde TEX primario y fuentes locales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva ADN editorial: problema, conceptos, evidencia, analisis propio y conclusion juridica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible de Actividad 1 y control de claves BibTeX estables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible de Actividad 1 y trazabilidad de fuentes locales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible del nodo con fuente primaria de Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible del nodo con fuente principal de Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible del nodo y control de claves BibTeX estables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible del nodo y su traza bibliográfica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible del nodo y su trazabilidad bibliográfica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible del nodo y trazabilidad de fuentes locales verificables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible y ADN editorial completo del nodo.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible y continuidad de claves bibliográficas.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible y continuidad de claves de cita.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible y continuidad del nodo actividad-1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible y reglas de trazabilidad bibliográfica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible y trazabilidad de claves de cita.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible y trazabilidad de fuentes locales verificables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva TEX reconstruible y trazabilidad de fuentes locales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva identidad UnADM y ubicación curricular verificable.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva reconstrucción TeX verificable del nodo con fuente primaria existente.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva trazabilidad LaTeX reconstruible del artefacto de Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva trazabilidad a README, programa analítico y TEX reconstruible del nodo.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva trazabilidad de fuentes heredadas no verificadas como provisionales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva trazabilidad de fuentes locales y se marcan como supuesto los datos no visibles en la consigna.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva trazabilidad de fuentes provisionales no verificadas como supuestos.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva trazabilidad de fuentes provisionales no verificadas y su estado.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva trazabilidad de fuentes provisionales y supuestos explícitos.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva trazabilidad de salidas no parseables previas como riesgo controlado.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conservan ejes editoriales: problema, conceptos, evidencia, analisis propio y conclusion juridica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se consolidan ejes editoriales: problema, conceptos, evidencia, analisis propio y conclusion juridica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se consolidan ejes: problema, conceptos, evidencia, analisis propio y conclusion juridica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se consolidan fuentes heredadas no verificadas como provisionales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene TEX reconstruible y continuidad de claves BibTeX.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene TEX reconstruible y trazabilidad de fuentes locales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene bloqueo de salidas no parseables JSON.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene control de fuentes provisionales con marca de supuesto.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene control de fuentes provisionales y marcación explícita de supuestos.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene control de supuestos para datos no visibles en consigna.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene distincion entre bibliografia base y bibliografia especifica por actividad.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene distinción entre bibliografía base de actividad y bibliografía de Semana 7.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene estado de fuentes heredadas no verificadas como provisionales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene estado provisional de fuentes heredadas no verificadas.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene estado provisional de salidas heredadas no parseables hasta validación local.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y contexto curricular verificable.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y encuadre curricular verificable desde README.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y encuadre curricular verificable.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y ubicacion curricular verificable desde README.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y ubicación curricular verificable.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y ubicación curricular verificable: semestre 1, bloque 2, obligatoria, 8 créditos.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad institucional UnADM y marco curricular verificado.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad institucional UnADM y ubicación curricular verificable.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene manejo de fuentes heredadas no verificadas como provisionales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene que la consigna de Actividad 1 sigue pendiente de confirmación explícita.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene trazabilidad a README, programa analítico y .tex reconstruible.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene trazabilidad de fuentes heredadas no verificadas como provisionales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene trazabilidad de fuentes locales y marca explícita de supuestos no verificables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene trazabilidad de fuentes provisionales hasta verificación local.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene trazabilidad de fuentes provisionales y supuestos pendientes.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene trazabilidad de salidas no parseables previas como incidencias históricas.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible de Actividad 1 como fuente principal.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible de Actividad 1 y su ruta canónica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible de Actividad 1 y su traza bibliográfica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible de Actividad 1 y sus claves de cita.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible del artefacto de Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible del nodo con fuente primaria de Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible del nodo y consistencia con .bib local.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible del nodo y consistencia con artefacto de Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible del nodo y reglas de compilación confiable.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible del nodo y su trazabilidad local.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible del nodo y trazabilidad de fuentes locales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible y ADN editorial completo del nodo.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible y consistencia con el nodo de asignatura.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible y continuidad de reglas útiles previas.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible y control de consistencia entre .tex y .bib.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible y metadatos de compilación del nodo.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible y reglas de compilacion estables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible y trazabilidad de claves de cita.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible y trazabilidad de fuentes locales verificables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible y trazabilidad de fuentes locales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva el TEX reconstruible del nodo y su trazabilidad bibliográfica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva identidad UnADM y contexto curricular verificable.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva identidad UnADM y contexto curricular verificado en README.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva identidad UnADM y encuadre curricular verificable.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva identidad UnADM y ubicacion curricular verificable.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva identidad UnADM y ubicación curricular verificable.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva identidad UnADM y ubicación curricular verificable: semestre 1, bloque 2, obligatoria, 8 créditos.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva identidad institucional UnADM y contexto curricular verificable.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preservan ejes editoriales canonicos: problema, conceptos, evidencia, analisis propio y conclusion juridica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preservan ejes editoriales: problema, conceptos, evidencia, analisis propio y conclusion juridica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza compatibilidad LaTeX/BibTeX con TEX reconstruible y claves estables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza compatibilidad con TEX reconstruible y claves BibTeX estables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza control de fuentes provisionales y marcado explicito de supuestos.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza control de fuentes provisionales y marcado explícito de supuestos cuando falte consigna.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza control de supuestos ante consigna no visible.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza control de supuestos ante falta de consigna textual completa.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza control de supuestos cuando falta consigna textual de Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza control de supuestos cuando falta consigna textual verificable.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza control de supuestos cuando falte consigna textual de Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza control de supuestos cuando falte consigna textual.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza correspondencia entre producto solicitado y consigna específica de Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza distinción entre bibliografía base y bibliografía específica de Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza manejo de fuentes provisionales con marca explícita de supuesto.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza manejo de supuestos ante consigna incompleta de Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que Actividad 1 usa TEX reconstruible existente y control de fuentes verificables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que el TEX fuente es reconstruible y no debe degradarse.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que el nodo tiene TEX reconstruible y fuente primaria definida.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que existe TEX reconstruible y ADN editorial completo del nodo.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que existe TEX reconstruible y núcleo editorial persistente.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que existen tokens Slug sin expandir en README y programa analítico [supuesto verificado localmente].",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que fuentes heredadas no verificadas permanecen como provisionales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que fuentes heredadas no verificadas permanecen provisionales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que fuentes heredadas no verificadas quedan como provisionales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que fuentes heredadas no verificadas se tratan como provisionales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que fuentes heredadas no verificadas son provisionales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que la Actividad 1 usa artefacto base tipo reporte.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza regla de marcar como supuesto todo dato no visible en la consigna.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza regla de marcar supuestos cuando falte consigna textual.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza regla de marcar supuestos cuando la consigna no sea visible.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza regla de resolver tokens Slug no expandidos en README y programa analítico.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza trazabilidad TEX reconstruible de Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza trazabilidad a README y programa analítico como fuentes locales verificables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza trazabilidad de fuentes locales y marca de supuestos cuando falte consigna.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza uso de supuestos explícitos cuando falte consigna textual.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza uso del TEX reconstruible de Actividad 1 como ancla editorial.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza validación de consigna específica antes de redactar Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerzan ejes editoriales: problema, conceptos, evidencia, analisis propio y conclusion juridica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se sostienen ejes editoriales: problema, conceptos, evidencia, analisis propio y conclusion juridica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Secciones fijadas: ninguna",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Separar en: conceptos clave, marco normativo o doctrinal, análisis propio y cierre.",
+      "frequency": 1,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Separar secciones en conceptos clave, marco normativo o doctrinal, analisis propio y cierre.",
+      "frequency": 1,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Sin regresion: si",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Supuesto: falta consigna textual completa de Actividad 1; confirmar entregable exacto.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Supuesto: falta consigna textual completa de Actividad 1; confirmar producto exacto solicitado.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Supuesto: falta consigna textual completa de Actividad 1; confirmar producto exacto.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Supuesto: falta consigna textual de Actividad 1; confirmar producto exacto.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Supuesto: falta consigna textual de actividad 1.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Supuesto: la consigna textual completa de Actividad 1 no está visible.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Supuesto: la consigna textual de Actividad 1 no esta visible y debe confirmarse.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Sustentar afirmaciones con fuentes verificables y cita explicita.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Transformar la planeacion en reporte, presentacion o producto visual segun consigna.",
+      "frequency": 1,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Transformar la planeacion semanal en reportes, presentaciones y productos visuales que integren problema, conceptos, fuentes, analisis propio y cierre argumentativo.",
+      "frequency": 1,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Tratar fuentes heredadas no verificadas como provisionales hasta confirmacion local.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Tratar fuentes heredadas no verificadas como provisionales hasta validación local.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Ubicar curricularmente en semestre 1, bloque 2, obligatoria, 8 créditos.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Usar codificacion y acentos correctos en espanol en .tex y .bib.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Usar codificación y acentos correctos en español en .tex y .bib.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Usar la carpeta de asignatura como entrada canónica.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Usar solo obras realmente consultables.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Usar títulos de sección coherentes con el producto de Actividad 1.",
+      "frequency": 1,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Validar correspondencia del producto con la consigna de Actividad 1.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Validar correspondencia entre producto entregable y consigna de Actividad 1.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Validar correspondencia entre tipo de producto y consigna vigente.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Validar que el producto final corresponda exactamente a la consigna de Actividad 1.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Verificar coherencia entre pregunta guia, desarrollo y conclusion.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Verificar coherencia entre pregunta guía, desarrollo y conclusión.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Verificar correspondencia del producto con la consigna de Actividad 1.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Verificar nombres de archivo contra README antes de referenciar.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Verificar nombres de archivo contra README antes de referenciarlos.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Verificar nombres de archivo contra README y programa analitico.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Verificar nombres de archivo contra README y programa analítico antes de referenciar.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Verificar nombres de archivo contra README y programa analítico.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Verificar nombres de archivo del README antes de referenciarlos.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Verificar nombres de archivo en README y programa analítico antes de referenciarlos.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Verificar nombres de archivos definidos en README antes de referenciarlos.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Verificar nombres de archivos desde README antes de referenciarlos.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Verificar nombres de archivos en README y programa analítico antes de referenciarlos.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Verificar que el producto final corresponda a la consigna de Actividad 1.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Verificar que el producto final corresponda a la consigna específica de Actividad 1.",
+      "frequency": 1,
+      "section": "activity_rules"
+    },
+    {
+      "text": "Verificar y corregir nombres de archivo con caracteres anómalos en README.",
+      "frequency": 1,
+      "section": "latex_rules"
+    }
+  ],
+  "quality_gates": [
+    {
+      "text": "Compilar sin errores criticos y sin referencias rotas.",
+      "frequency": 2,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Compilar sin errores críticos y sin referencias rotas.",
+      "frequency": 2,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Citas: 18",
+      "frequency": 1,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Corregir caracteres anomalos en rutas o nombres antes de compilar.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Corregir caracteres anómalos en rutas o nombres antes de compilar.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Mantener integridad académica con citas verificables.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Reutilizar reglas institucionales de calidad sin perder especificidad local.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Reutilizar reglas institucionales de calidad sin reducir especificidad local.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Se conserva trazabilidad TEX reconstruible y control de citas.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene control de salidas no parseables como bloqueo de calidad.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible del nodo y trazabilidad de citas locales.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible del nodo y trazabilidad de citas.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible y continuidad de reglas de calidad.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible y reglas de citas con claves estables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva trazabilidad de salidas no parseables previas como antecedente de control de calidad.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza control de calidad: JSON válido, supuestos marcados y citas verificables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que el nodo tiene TEX reconstruible y trazabilidad de citas.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Validar consistencia entre citas en texto y archivo .bib.",
+      "frequency": 1,
+      "section": "quality_gates"
+    }
+  ],
+  "operational_rules": [
+    {
+      "text": "Se mantiene normalización estructurada obligatoria antes de propagar.",
+      "frequency": 4,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva normalización estructurada obligatoria antes de propagar.",
+      "frequency": 3,
+      "section": "summary"
+    },
+    {
+      "text": "Aplicar normalización manual si se detecta salida no estructurada en nodos vecinos.",
+      "frequency": 2,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Compresión aplicada por unión y deduplicación sin pérdida y sin recorte.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada por unión y deduplicación sin pérdida.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Normalización estructurada en JSON es obligatoria antes de cualquier propagación.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Normalización estructurada obligatoria antes de propagar.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva normalización JSON obligatoria antes de toda propagación.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva normalización estructurada obligatoria antes de cualquier propagación.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene compresión lossless por unión y deduplicación sin recorte semántico.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene normalización JSON obligatoria antes de cualquier propagación.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene normalización JSON obligatoria antes de propagación.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva normalización estructurada obligatoria antes de cualquier propagación.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva normalización estructurada obligatoria antes de propagar.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva normalización estructurada obligatoria antes de toda propagación.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Aplicar compresión lossless por unión y deduplicación sin recorte.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Aplicar compresión lossless por unión y deduplicación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Aplicar normalizacion manual en nodos con salida no estructurada.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Aplicar normalización manual cuando aparezca salida no estructurada en nodos vecinos.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Aplicar normalización manual cuando se detecte salida no estructurada en nodos vecinos.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Aplicar normalización manual en nodos con salidas no estructuradas heredadas.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Aplicar normalización manual en nodos con salidas no estructuradas.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Aplicar normalización manual en nodos vecinos con salida no estructurada.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Aplicar normalización manual en nodos vecinos con salidas no estructuradas.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Aplicar normalización manual en salidas heredadas no estructuradas.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Aplicar normalización manual en salidas no estructuradas detectadas en nodos vecinos.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Compresión aplicada por unión y deduplicación sin pérdida.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Compresión lossless aplicada por unión y deduplicación sin recorte.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Compresión lossless aplicada por unión y deduplicación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Compresión lossless por unión y deduplicación sin recorte.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Conservar normalización estructurada antes de propagar reglas.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Cuando falte consigna textual, propagar solo reglas generales verificables.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Mantener compresión lossless por unión y deduplicación.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Mantener normalización estructurada en JSON antes de cualquier propagación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Mantener normalización estructurada obligatoria antes de propagar.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria de Actividad 1 canonizada con compresión lossless por unión y deduplicación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria de Actividad 1 canonizada con preservación total y deduplicación lossless.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria de Actividad 1 canonizada por unión y deduplicación lossless.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria de Actividad 1 consolidada con canon local UnADM y compresión lossless por deduplicación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria de Actividad 1 consolidada y deduplicada con preservación total.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria de Actividad 1 consolidada y deduplicada sin perdida semantica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria de Actividad 1 consolidada y deduplicada sin pérdida.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria de actividad consolidada y deduplicada para Filosofía del Derecho con identidad UnADM.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada con compresión lossless por unión y deduplicación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada con deduplicación lossless y preservación total de reglas útiles.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada con preservacion total y deduplicacion lossless.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada con preservación total y deduplicación lossless.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada con preservación total y deduplicación semántica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada de Actividad 1 con identidad UnADM y compresión lossless por deduplicación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada de Actividad 1 con identidad UnADM y deduplicación lossless.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada por union y deduplicacion lossless.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada por union y deduplicacion sin perdida.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada por unión y deduplicación lossless.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada sin pérdidas por unión y deduplicación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada y deduplicada para Actividad 1 de Filosofía del Derecho en UnADM.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada y deduplicada sin pérdida de reglas útiles.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada y deduplicada sin pérdida semántica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada y deduplicada sin pérdida.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local consolidada sin pérdidas por unión y deduplicación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local consolidada y deduplicada para Actividad 1 de Filosofía del Derecho con identidad UnADM.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local consolidada y deduplicada para Actividad 1 de Filosofía del Derecho en UnADM.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local consolidada y deduplicada para Actividad 1 de Filosofía del Derecho.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local de Actividad 1 consolidada y deduplicada sin pérdida.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Propagar arriba y laterales solo con contenido normalizado.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Propagar arriba y laterales solo con memoria normalizada.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Propagar arriba y laterales solo con reglas generales si falta consigna textual.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Propagar arriba y laterales solo después de validación de JSON y estructura.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Propagar arriba y laterales solo después de validar JSON y estructura.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Propagar arriba y laterales solo tras normalización estructurada.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Propagar arriba y laterales solo tras validación de JSON y estructura.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Propagar arriba y laterales solo tras validación formal.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Propagar recursivamente solo despues de validar JSON y estructura.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Propagar recursivamente solo después de validar JSON y estructura.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Propagar reglas generales cuando falte consigna textual local.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Propagar reglas generales cuando falte consigna textual.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Propagar solo después de validar JSON y estructura.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Propagar solo reglas generales cuando falte consigna textual verificable.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Propagar solo reglas generales cuando falte consigna textual.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Se aplica compresión lossless por unión y deduplicación sin recorte de reglas útiles.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se aplica compresión lossless por unión y deduplicación sin recorte semántico.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma compresión lossless por unión y deduplicación sin recorte semántico.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma compresión lossless por unión y deduplicación sin recorte.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma compresión lossless por unión y deduplicación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva compresión lossless por unión y deduplicación, sin recorte semántico.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva compresión lossless por unión y deduplicación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva normalizacion estructurada obligatoria antes de cualquier propagacion.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva normalizacion estructurada obligatoria antes de toda propagacion.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva normalización estructurada obligatoria antes de cualquier propagación recursiva.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva normalización estructurada obligatoria antes de propagación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva regla critica: no propagar salidas no estructuradas sin normalizacion JSON.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva regla crítica: no propagar salidas no estructuradas sin normalización JSON.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva regla de normalización estructurada previa a cualquier propagación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva regla de normalización estructurada previa a toda propagación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva regla institucional de no propagar salidas no estructuradas sin normalización.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se consolida compresión lossless por unión y deduplicación, sin recorte de reglas útiles.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene bloqueo de propagación para salidas no parseables y obligación de normalización.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene compresión lossless por unión y deduplicación semántica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene compresión lossless por unión y deduplicación sin recorte.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene compresión lossless por unión y deduplicación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y normalizacion estructurada obligatoria antes de propagar.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y normalización estructurada obligatoria.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene la regla de normalización estructurada obligatoria antes de toda propagación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene normalizacion JSON obligatoria antes de propagacion.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene normalización estructurada en JSON antes de cualquier propagación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene normalización estructurada obligatoria antes de toda propagación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene normalización obligatoria antes de cualquier propagación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene normalización obligatoria antes de propagación recursiva.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene regla crítica: no propagar salidas no estructuradas sin normalización previa.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene regla de compresion lossless por union y deduplicacion.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene regla de normalizacion estructurada obligatoria antes de propagar.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene regla de normalizacion estructurada previa a toda propagacion.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene regla de normalización obligatoria antes de cualquier propagación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva compresión lossless por unión y deduplicación semántica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva compresión lossless por unión y deduplicación sin recorte semántico.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva compresión lossless por unión y deduplicación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva identidad UnADM y normalización estructurada obligatoria.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva normalizacion estructurada obligatoria antes de propagacion.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva normalización estructurada obligatoria antes de cualquier propagación recursiva.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva normalización estructurada obligatoria antes de propagación recursiva.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva normalización estructurada obligatoria antes de propagación.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva regla crítica: no propagar salidas no estructuradas sin normalización.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza compresión lossless por unión y deduplicación sin recorte semántico.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza normalización obligatoria: no propagar salidas no estructuradas.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que la compresion es por union y deduplicacion, no por recorte.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que la compresión es lossless por unión y deduplicación, sin recorte de reglas útiles.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza regla de compresión lossless por unión y deduplicación sin recorte semántico.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza regla de normalizacion: no propagar salidas no estructuradas.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Si falta consigna textual, propagar solo reglas generales y marcar supuestos.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    }
+  ],
+  "telemetry": [
+    {
+      "text": "Ciclo 1 necesita normalizacion manual si se reutiliza.",
+      "frequency": 34,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Ciclos 1 a 6 requieren normalización manual si se reutilizan.",
+      "frequency": 20,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Ciclo 14: mantener validación estricta de parseo JSON antes de cualquier propagación recursiva.",
+      "frequency": 9,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Ciclo 1 requiere normalización manual si se reutiliza.",
+      "frequency": 7,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Fuente provisional: Claude Foundry desde Actividad 1",
+      "frequency": 2,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Fuente provisional: GPT-Pro desde Actividad 1",
+      "frequency": 2,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Tratar la fuente heredada Codex como provisional hasta verificarla.",
+      "frequency": 2,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Aplicar normalización manual a salidas históricas no estructuradas de ciclos 1 y 2.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Aplicar normalización manual al reutilizar salidas históricas de ciclos 1 y 2.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Aplicar normalización manual al reutilizar salidas no estructuradas de ciclos previos.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Aplicar normalización manual en nodos con salidas no estructuradas de ciclos previos.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Bloquear propagacion si la salida no es JSON parseable.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Bloquear propagación si la salida no es JSON parseable.",
+      "frequency": 1,
+      "section": "quality_gates"
+    },
+    {
+      "text": "Ciclo 1 y ciclo 2 requieren normalización manual previa si se reutilizan salidas heredadas.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Ciclo 1 y ciclo 2 requieren normalización manual si se reutilizan salidas antiguas.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Ciclo 1 y ciclo 2 requieren normalización manual si se reutilizan salidas no estructuradas.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Ciclo 1 y ciclo 2 requieren normalización manual si se reutilizan.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Ciclos 1 y 2 requieren normalización manual si se reutilizan artefactos heredados.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Ciclos 1 y 2 requieren normalización manual si se reutilizan salidas heredadas.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Ciclos 1 y 2 requieren normalización manual si se reutilizan trazas antiguas.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Ciclos previos 1 y 2 requieren normalización manual si se reutilizan.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Ciclos previos con salidas no estructuradas requieren normalización manual si se reutilizan.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Conservar alerta histórica de salida no JSON parseable desde GPT-Pro para Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Conservar alerta histórica de salidas no JSON parseable desde Codex para UnADM.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Conservar alertas históricas de salidas no JSON parseable como control de calidad.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Conservar control histórico de salidas no JSON parseable como puerta de calidad.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Fuente provisional detectada: GPT-Pro en ciclo previo.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Fuente provisional registrada: Codex.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Fuente provisional registrada: GPT-Pro desde Actividad 1.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Fuente provisional registrada: GPT-Pro en ciclos previos.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Fuente provisional: Claude Foundry.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Fuente provisional: Codex desde ingeniería-en-sistemas-computacionales.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Fuente provisional: Codex.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Fuente provisional: GPT-Pro.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Mantener estado de ciclos con necesidad de normalización manual cuando aplique.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Memoria local consolidada en ciclo 3 con deduplicación lossless.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Registrar fuente provisional Codex y GPT-Pro solo como antecedente no canónico.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Registrar fuente provisional GPT-Pro y Codex solo como antecedentes no canónicos.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Reutilizar reglas de calidad institucional heredadas en ciclo 1.",
+      "frequency": 1,
+      "section": "propagation_hints"
+    },
+    {
+      "text": "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Salida sin JSON parseable heredada desde Codex para UnADM; requiere normalización.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva alerta histórica de salidas no JSON parseable como control de calidad.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva alerta histórica de salidas no JSON parseable en ciclos previos como control de calidad.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva control de calidad por historial de salidas no JSON parseable en ciclos previos.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva control histórico de salidas no JSON parseable como puerta de calidad.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conserva trazabilidad de incidencias previas de salidas no JSON parseables como control de calidad.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conservan alertas históricas de salidas no JSON parseable como control de calidad.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se consolida control de calidad: JSON parseable, consistencia cita-.bib y alineación con consigna.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene alerta: salidas no JSON parseable heredadas deben normalizarse antes de reutilizar.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene bloqueo de propagación ante salidas no JSON parseables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene bloqueo de propagación para salidas no JSON parseables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene control histórico de salidas no JSON parseable como puerta de calidad.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene regla de bloqueo ante salidas no JSON parseables.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerza que las salidas no parseables de ciclos previos son provisionales hasta normalización.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Tratar salidas históricas de Codex y GPT-Pro sin JSON parseable como insumo provisional.",
+      "frequency": 1,
+      "section": "identity_rules"
+    }
+  ],
+  "disciplinary_knowledge": [
+    {
+      "text": "Vincular la actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.",
+      "frequency": 4,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Cerrar con conclusión jurídica transferible a la práctica profesional.",
+      "frequency": 3,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Iniciar con encuadre breve del problema jurídico o social.",
+      "frequency": 3,
+      "section": "structure_rules"
+    },
+    {
+      "text": "Memoria de actividad consolidada para Filosofía del Derecho con identidad UnADM.",
+      "frequency": 3,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada para Actividad 1 de Filosofía del Derecho con identidad UnADM.",
+      "frequency": 3,
+      "section": "summary"
+    },
+    {
+      "text": "Supuesto: el archivo .bib canónico esperado por Slug es filosofia-del-derecho.bib.",
+      "frequency": 3,
+      "section": "summary"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 (interpretación jurídica) y no a Actividad 1.",
+      "frequency": 3,
+      "section": "summary"
+    },
+    {
+      "text": "Citar malla-curricular-derecho-unadm.pdf como fuente de ubicación curricular.",
+      "frequency": 2,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Citar malla-curricular-derecho-unadm.pdf para ubicación curricular.",
+      "frequency": 2,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Memoria local consolidada de Actividad 1 de Filosofía del Derecho con identidad UnADM.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local consolidada para Actividad 1 de Filosofía del Derecho con identidad UnADM.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Supuesto: archivo .bib canónico esperado es filosofia-del-derecho.bib según Slug del README.",
+      "frequency": 2,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Supuesto: el .bib canónico esperado por Slug es filosofia-del-derecho.bib.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib corresponde a Semana 7 (interpretación jurídica) y no a Actividad 1.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib corresponde a Semana 7 y no a Actividad 1.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 sobre interpretación jurídica y no a Actividad 1.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 y no a Actividad 1.",
+      "frequency": 2,
+      "section": "summary"
+    },
+    {
+      "text": "Vincular la actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 creditos.",
+      "frequency": 2,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Vincular la actividad a Licenciatura en Derecho.",
+      "frequency": 2,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Artefacto primario: `UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/reporte-filosofia-del-derecho-Actividad-1.tex`",
+      "frequency": 1,
+      "section": "adn_tex"
+    },
+    {
+      "text": "Canon editorial vigente: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Citar malla-curricular-derecho-unadm.pdf como base de ubicacion curricular.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Citar malla-curricular-derecho-unadm.pdf como base de ubicación curricular.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Citar malla-curricular-derecho-unadm.pdf como fuente curricular.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Citar malla-curricular-derecho-unadm.pdf como fuente de ubicacion curricular.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Citar malla-curricular-derecho-unadm.pdf como respaldo de ubicación curricular.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Citar malla-curricular-derecho-unadm.pdf como soporte de ubicación curricular.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Citar malla-curricular-derecho-unadm.pdf como sustento de ubicación curricular.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Citar malla-curricular-derecho-unadm.pdf para ubicacion curricular.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Claves citadas: finnis_estudios_2017, lovon_manual_2020, ruiz_rodriguez_filosofia_derecho_2009, noauthor_constitucion_nodate, generales_ley_2021, de_victimas_ley_2013, franzoni_acevedo_ley_2017, rojas_gonzalez_filosofia_derecho_2018, gandara_ley_2015",
+      "frequency": 1,
+      "section": "adn_tex"
+    },
+    {
+      "text": "Confirmar si actividad 1 reutiliza el .bib de interpretación jurídica o requiere uno propio.",
+      "frequency": 1,
+      "section": "open_questions"
+    },
+    {
+      "text": "Ejes editoriales vigentes y obligatorios: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Ejes editoriales vigentes: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Filosof \\'i a del Derecho",
+      "frequency": 1,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Introducci \\'o n al estudio del derecho",
+      "frequency": 1,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Memoria base de actividad para Filosofía del Derecho con identidad UnADM.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria de Actividad 1 consolidada y estable para Filosofía del Derecho en UnADM.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria de actividad canonizada para Filosofía del Derecho con identidad UnADM.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada de Actividad 1 en Filosofía del Derecho con identidad UnADM.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Memoria local canonizada para Actividad 1 de Filosofía del Derecho en UnADM.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "No asumir que filosofia-del-derecho-clean.bib corresponda a Actividad 1.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "No asumir que filosofia-del-derecho-clean.bib corresponde a actividad 1.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Persisten ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Preservar ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Priorizar fuentes institucionales UnADM y materiales jurídicos verificables.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Respaldar ubicación curricular con malla-curricular-derecho-unadm.pdf.",
+      "frequency": 1,
+      "section": "identity_rules"
+    },
+    {
+      "text": "Ruta: UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se canonizan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma artefacto principal local: reporte-filosofia-del-derecho-Actividad-1.tex.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se confirma fuente curricular local: README + malla-curricular-derecho-unadm.pdf.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se conservan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se consolidan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se consolidan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se crea memoria base de actividad para Filosofía del Derecho con identidad UnADM.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se fijan ejes editoriales permanentes: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se fijan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene TEX reconstruible y continuidad del artefacto reporte-filosofia-del-derecho-Actividad-1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM para Actividad 1 de Filosofía del Derecho.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y canon local de Filosofia del Derecho.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y contexto curricular de Filosofia del Derecho.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y contexto curricular de Filosofía del Derecho.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y contexto curricular verificable de Filosofia del Derecho.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y contexto curricular verificable de Filosofía del Derecho.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y encuadre de Filosofía del Derecho para Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y enfoque de Actividad 1 en Filosofia del Derecho.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y enfoque de Filosofía del Derecho en Actividad 1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y foco en Actividad 1 de Filosofía del Derecho.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y marco curricular verificable de Filosofía del Derecho.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantiene identidad UnADM y ubicación curricular verificable de Filosofía del Derecho.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantienen ejes editoriales canónicos: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantienen ejes editoriales fijos: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se mantienen ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva TEX reconstruible y continuidad del artefacto reporte-filosofia-del-derecho-Actividad-1.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva identidad UnADM para Actividad 1 de Filosofía del Derecho.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva identidad UnADM y contexto curricular de Filosofía del Derecho.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preserva identidad UnADM y enfoque de Actividad 1 en Filosofía del Derecho.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preservan ejes editoriales canónicos: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se preservan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se refuerzan ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se sostienen ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica transferible.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Se sostienen ejes editoriales: problema, conceptos, evidencia, análisis propio y conclusión jurídica.",
+      "frequency": 1,
+      "section": "summary"
+    },
+    {
+      "text": "Supuesto: .bib canonico esperado es filosofia-del-derecho.bib por Slug local.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Supuesto: archivo .bib canonico esperado es filosofia-del-derecho.bib por Slug del README.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Supuesto: archivo .bib canonico esperado es filosofia-del-derecho.bib por Slug.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Supuesto: archivo .bib canonico esperado es filosofia-del-derecho.bib segun Slug del README.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Supuesto: archivo .bib canónico es filosofia-del-derecho.bib según Slug del README.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Supuesto: archivo .bib canónico es filosofia-del-derecho.bib según token Slug del README.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Supuesto: archivo .bib canónico esperado es filosofia-del-derecho.bib por Slug del README.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Supuesto: archivo .bib canónico esperado es filosofia-del-derecho.bib por Slug local.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Supuesto: el .bib canonico esperado es filosofia-del-derecho.bib por Slug del README.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Supuesto: el .bib canónico esperado es filosofia-del-derecho.bib por Slug declarado.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Supuesto: el .bib canónico esperado es filosofia-del-derecho.bib por Slug del README.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Supuesto: el .bib canónico esperado es filosofia-del-derecho.bib por Slug local.",
+      "frequency": 1,
+      "section": "latex_rules"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib corresponde a Semana 7 y no define por sí solo Actividad 1.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib esta orientado a Semana 7 (interpretacion juridica).",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib esta orientado a Semana 7 y no define por si solo Actividad 1.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib esta orientado a Semana 7.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 (interpretación jurídica).",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 sobre interpretación jurídica.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 y no define por sí mismo Actividad 1.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 y no define por sí solo Actividad 1.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 y no sustituye automáticamente Actividad 1.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib está orientado a Semana 7 y no sustituye automáticamente la bibliografía de Actividad 1.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Supuesto: filosofia-del-derecho-clean.bib referencia Semana 7 (interpretación jurídica), no actividad 1.",
+      "frequency": 1,
+      "section": "bibliography_rules"
+    },
+    {
+      "text": "Teor \\'i a pura del derecho",
+      "frequency": 1,
+      "section": "editorial_dna"
+    },
+    {
+      "text": "Vincular explícitamente la actividad a Licenciatura en Derecho, semestre 1, bloque 2, obligatoria, 8 créditos.",
+      "frequency": 1,
+      "section": "identity_rules"
+    }
+  ]
+}

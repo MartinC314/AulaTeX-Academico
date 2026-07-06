@@ -1,0 +1,40 @@
+﻿\documentclass[spanish,aspectratio=169]{beamer}
+
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\newcommand{\UCNLlogodir}{assets-ucnl/logos}
+\IfFileExists{\UCNLlogodir/logo-ucnl.png}{}{%
+  \renewcommand{\UCNLlogodir}{../../assets-ucnl/logos}%
+}
+\titlegraphic{%
+  \includegraphics[height=1.35cm]{\UCNLlogodir/logo-nuevo-leon.png}\hspace{0.8cm}%
+  \includegraphics[height=1.35cm]{\UCNLlogodir/logo-ucnl.png}%
+}
+
+\title{Presentacion - Planeacion y control de la produccion}
+\subtitle{Plantilla de exposicion academica}
+\author{Martin Jonathan de la Cruz}
+\institute{Universidad Ciudadana de Nuevo Leon}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Estructura academica}
+  \begin{itemize}
+    \item Bibliografia: \texttt{planeacion-y-control-de-la-produccion.bib}
+    \item Curso: Planeacion y control de la produccion
+    \item Actividades: \texttt{reporte-planeacion-y-control-de-la-produccion-Actividad-N.tex}
+  \end{itemize}
+\end{frame}
+
+\end{document}
+
+
+
+

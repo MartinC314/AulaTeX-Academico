@@ -72,3 +72,4 @@ scripts/aulatex.env
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
+upgrade/notas-telegram/*.env

@@ -1,0 +1,151 @@
+{
+  "run_id": "20260630_225024",
+  "settings": {
+    "deployment": "gpt-5.4-pro",
+    "endpoint": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
+    "transcription_provider": "realtime",
+    "realtime_deployment": "gpt-realtime"
+  },
+  "checks": [
+    {
+      "case": "texto",
+      "source_preview": "Organizar una clase de ingenieria sobre control automatico, retroalimentacion negativa, estabilidad y error estacionario usando un horno industrial.",
+      "analysis": {
+        "ok": true,
+        "elapsed_seconds": 38.88
+      },
+      "analysis_summary": {
+        "title": "Clase de control automático con horno industrial",
+        "corrected_preview": "Organizar una clase de ingeniería sobre control automático, usando un horno industrial como ejemplo para explicar la retroalimentación negativa, la estabilidad y el error estacionario.",
+        "concepts": [
+          "control automático",
+          "retroalimentación negativa",
+          "estabilidad",
+          "error estacionario",
+          "horno industrial"
+        ],
+        "related_terms": [
+          "ingeniería",
+          "clase",
+          "control automático",
+          "retroalimentación negativa",
+          "estabilidad",
+          "error estacionario",
+          "horno industrial"
+        ],
+        "issues": []
+      },
+      "actions": {
+        "explain": {
+          "ok": true,
+          "elapsed_seconds": 64.39,
+          "preview": "Explicación central La idea consiste en enseñar los fundamentos del control automático a partir de un caso concreto y fácil de imaginar: un horno industrial. Es una muy buena elección porque permite mostrar, de forma visible y práctica, cóm...",
+          "length": 3834,
+          "nonempty": true
+        },
+        "suggest": {
+          "ok": true,
+          "elapsed_seconds": 57.67,
+          "preview": "Aquí tienes 5 sugerencias accionables para hacer más efectiva la clase de control automático usando un horno industrial como caso central: 1. Arrancar con un modelo físico simple del horno Acción: Define desde el inicio un modelo térmico bá...",
+          "length": 3423,
+          "nonempty": true
+        },
+        "research": {
+          "ok": true,
+          "elapsed_seconds": 29.35,
+          "preview": "Resumen ejecutivo El tema central es cómo estructurar una clase de ingeniería en control automático usando un horno industrial como caso de referencia. La elección es pedagógicamente sólida porque un horno permite visualizar con claridad la...",
+          "length": 1734,
+          "nonempty": true
+        },
+        "dialectic": {
+          "ok": true,
+          "elapsed_seconds": 124.73,
+          "preview": "Tesis La propuesta es pedagógicamente sólida: organizar una clase de control automático usando un horno industrial como caso central permite traducir conceptos abstractos a una situación técnica reconocible, físicamente intuitiva y cercana ...",
+          "length": 2889,
+          "nonempty": true
+        }
+      }
+    },
+    {
+      "case": "audio",
+      "synthesis": {
+        "ok": "True",
+        "elapsed_seconds": "2.7"
+      },
+      "audio_path": "C:\\Users\\delaCruz\\Documents\\notas-telegram\\data\\audio\\tts\\monitor_audio_probe_edb48efaeb2e4e4380f0cbfe9405c022_merged.mp3",
+      "audio_size": 69452,
+      "transcription": {
+        "ok": true,
+        "elapsed_seconds": 12.44
+      },
+      "transcript_preview": "Prueba de audio para notas. La idea central es: \"Haré una matriz de evaluación de proyectos de ingeniería con claridad, medición y mejora continua\". La palabra clave es \"mariposa azul\".",
+      "transcript_contains": {
+        "mariposa": true,
+        "azul": true,
+        "ingenieria": true
+      }
+    },
+    {
+      "case": "audio_transcrito",
+      "source_preview": "Prueba de audio para notas. La idea central es: \"Haré una matriz de evaluación de proyectos de ingeniería con claridad, medición y mejora continua\". La palabra clave es \"mariposa azul\".",
+      "analysis": {
+        "ok": true,
+        "elapsed_seconds": 64.54
+      },
+      "analysis_summary": {
+        "title": "matriz-evaluacion-proyectos-ingenieria",
+        "corrected_preview": "Idea central: crear una matriz de evaluación de proyectos de ingeniería basada en claridad, medición y mejora continua. Palabra clave asociada: \"mariposa azul\".",
+        "concepts": [
+          "matriz de evaluación de proyectos de ingeniería",
+          "claridad",
+          "medición",
+          "mejora continua",
+          "mariposa azul"
+        ],
+        "related_terms": [
+          "evaluación de proyectos",
+          "ingeniería",
+          "matriz",
+          "claridad",
+          "medición",
+          "mejora continua",
+          "mariposa azul",
+          "notas de audio"
+        ],
+        "issues": []
+      },
+      "actions": {
+        "explain": {
+          "ok": true,
+          "elapsed_seconds": 94.49,
+          "preview": "Explicación central La idea propone construir una matriz de evaluación para proyectos de ingeniería que no se limite a decir si un proyecto “va bien o mal”, sino que permita evaluarlo de forma ordenada, comparable y mejorable en el tiempo. ...",
+          "length": 3196,
+          "nonempty": true
+        },
+        "suggest": {
+          "ok": true,
+          "elapsed_seconds": 34.89,
+          "preview": "Aquí tienes 5 sugerencias accionables para convertir esa matriz de evaluación de proyectos de ingeniería en una herramienta útil, medible y mejorable: 1. Define 3 capas de evaluación: proyecto, ejecución y resultado Acción: Divide la matriz...",
+          "length": 2685,
+          "nonempty": true
+        },
+        "research": {
+          "ok": true,
+          "elapsed_seconds": 30.53,
+          "preview": "Resumen ejecutivo El tema central es el diseño de una matriz para evaluar proyectos de ingeniería con tres pilares: claridad, medición y mejora continua. La propuesta apunta, en esencia, a pasar de evaluaciones intuitivas o dispersas a un e...",
+          "length": 1189,
+          "nonempty": true
+        },
+        "dialectic": {
+          "ok": true,
+          "elapsed_seconds": 62.22,
+          "preview": "Tesis La idea sostiene que una matriz de evaluación de proyectos de ingeniería, construida sobre claridad, medición y mejora continua, puede convertir la evaluación en un proceso más objetivo, comparable y útil para la toma de decisiones. L...",
+          "length": 2814,
+          "nonempty": true
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "ok": true
+}
