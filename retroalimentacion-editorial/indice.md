@@ -29,6 +29,10 @@ proyecto.
 - [Referencias y bibliografias](referencias-y-bibliografias.md)
 - [Compilacion, salidas y TikZ](compilacion-y-tikz.md)
 - [Propuestas de evolucion](propuestas-de-evolucion.md)
+- [AulaTeX: contrato operativo del verdadero agente](aulatex/agente-verdadero-contrato-operativo.md)
+- [AulaTeX: ingeniería inversa agentica](aulatex/ingenieria-inversa-agentica.md)
+- [AulaTeX: prototipo Actividad 1 agentica](aulatex/prototipo-actividad-1-agentica.md)
+- [AulaTeX: flujo agentico para Filosofia del Derecho](aulatex/filosofia-del-derecho-flujo-agentico.md)
 
 ## Fuentes integradas
 

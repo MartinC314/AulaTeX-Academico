@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "run_id": "20260703-124437-activity-01-observer",
+  "agent_mode": "activity-observer",
+  "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+  "activity_number": 1,
+  "target_root": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+  "target_tex": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/presentacion-derecho-a-la-seguridad-social-Actividad-1.tex",
+  "target_pdf": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/presentacion-derecho-a-la-seguridad-social-Actividad-1.pdf",
+  "bib_ref": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+  "clean_bib_ref": "",
+  "observed_state": {
+    "memory_ready": true,
+    "planeacion_ready": "unknown",
+    "extractor_ready": false,
+    "bibliography_ready": true,
+    "draft_ready": true,
+    "compile_ready": "unknown",
+    "evaluation_ready": true
+  },
+  "signals": {
+    "sections": [],
+    "sections_count": 0,
+    "cited_keys": [],
+    "cited_keys_count": 0,
+    "missing_bib_keys": [],
+    "placeholder_hits": [],
+    "extractor": {
+      "ready": false,
+      "output_dir": "",
+      "artifacts": {},
+      "missing_artifacts": [
+        "fichas_json",
+        "conceptos",
+        "ideas",
+        "trazabilidad",
+        "planeacion"
+      ],
+      "preview": "# Preview del adaptador del extractor\n\n- Scope: actividad | UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1\n- Ruta objetivo: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde\n- Fuentes: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/referencias-derecho-a-la-seguridad-social\n- Planeacion: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/presentacion-derecho-a-la-seguridad-social-Actividad-1.pdf\n- Conceptos: pendiente\n- Salida: UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/extractor-aulatex\n- Motor: anthropicfoundry\n- Modo: ejecucion\n\n## Comando previsto\n\n```text\nC:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\scripts\\extractor-conceptos-ideas\\.venv\\Scripts\\python.exe run.py --fuentes C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\UnADM\\licenciatura-en-derecho-unadm\\derecho-a-la-seguridad-social-lde\\referencias-derecho-a-la-seguridad-social --planeacion C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\UnADM\\licenciatura-en-derecho-unadm\\derecho-a-la-seguridad-social-lde\\presentacion-derecho-a-la-seguridad-social-Actividad-1.pdf --salida C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\UnADM\\licenciatura-en-derecho-unadm\\derecho-a-la-seguridad-social-lde\\extractor-aulatex --motor anthropicfoundry --top-k 12 --max-citas 8 --recursivo\n```\n\n## Artefactos nucleares esperados\n\n- UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/extractor-aulatex/fichas_conceptos.json\n- UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/extractor-aulatex/conceptos_detectados.json\n- UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/extractor-aulatex/ideas_detectadas.json\n- UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/extractor-aulatex/trazabilidad_fuentes.json\n- UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/extractor-aulatex/resumen_planeacion.json"
+    },
+    "compile": {
+      "enabled": false,
+      "ok": null,
+      "returncode": null
+    }
+  },
+  "next_action": "run-extractor"
+}

@@ -1,0 +1,1888 @@
+{
+  "summary": [
+    "Canonizacion local aplicada con union-dedupe y preservacion total.",
+    "Se consolida memoria util previa del nodo IMTC sin recortes.",
+    "Se normaliza el estado vacio inicial con reglas accionables verificables.",
+    "Se mantiene alerta historica: hubo evento de salida no parseable en ciclo previo institucional.",
+    "Supuesto: no hay nuevas fuentes externas adicionales al contexto local provisto.",
+    "Salida sin JSON parseable desde Claude Foundry para modelado-sim-sist-mecatronicos-imtc",
+    "Salida sin JSON parseable desde GPT-Pro para modelado-sim-sist-mecatronicos-imtc",
+    "Se confirma plantilla local de Actividad 1 con seccion Consigna tecnica, Desarrollo y Cierre.",
+    "Se confirma reporte integral local truncado en abstract; mantener pendiente de cierre.",
+    "Salida sin JSON parseable desde Auto (model-router) para modelado-sim-sist-mecatronicos-imtc",
+    "Se preserva TEX reconstruible del nodo con metadatos UANL/FIME y curso IMTC."
+  ],
+  "identity_rules": [
+    "Mantener asignatura y codigo: Modelado Sim Sist Mecatronicos (IMTC).",
+    "Mantener programa: Ingenieria en Mecatronica.",
+    "Conservar tono academico-tecnico, formal y verificable.",
+    "Declarar supuestos cuando falte informacion docente o de consigna.",
+    "Usar identidad institucional UANL y FIME de forma consistente en metadatos.",
+    "Fuente provisional: Claude Foundry desde modelado-sim-sist-mecatronicos-imtc",
+    "Fuente provisional: GPT-Pro desde modelado-sim-sist-mecatronicos-imtc",
+    "Mantener autor y afiliacion declarados en la plantilla local, salvo instruccion oficial en contrario.",
+    "Fuente provisional: Auto (model-router) desde modelado-sim-sist-mecatronicos-imtc",
+    "Mantener consistencia de nombre institucional: Universidad Autonoma de Nuevo Leon."
+  ],
+  "structure_rules": [
+    "Estructura minima de actividad: Consigna tecnica, Desarrollo, Cierre, Referencias.",
+    "Alinear objetivo de actividad con programa analitico del curso.",
+    "Incluir evidencias tecnicas y academicas en Desarrollo.",
+    "Cerrar con resultados, limitaciones y mejoras accionables.",
+    "Mantener compilacion compatible con plantilla institucional existente.",
+    "Conservar seccion principal de actividad y subsecciones operativas sin sobrefragmentar.",
+    "Mantener en reporte integral: Introduccion, Desarrollo, Conclusiones y bibliografia trazable."
+  ],
+  "activity_rules": [
+    "Definir objetivo puntual de la semana antes del desarrollo.",
+    "Explicitar criterios de evaluacion tecnica usados en el analisis.",
+    "Incluir al menos una evidencia tecnica verificable por actividad.",
+    "Documentar riesgos, errores y acciones de correccion en el cierre.",
+    "Vincular cada actividad con avance academico y tecnico de la materia.",
+    "Marcar como supuesto cualquier dato no confirmado de consigna semanal.",
+    "Registrar procedimiento de modelado o simulacion de forma trazable."
+  ],
+  "quality_gates": [
+    "No inventar fuentes; citar solo entradas existentes en .bib local.",
+    "Verificar salida JSON parseable antes de propagar cambios.",
+    "Revisar consistencia entre metadatos del reporte y tabla de autor.",
+    "Confirmar que cada conclusion derive de evidencia reportada.",
+    "Marcar explicitamente campos pendientes como supuestos o datos por definir.",
+    "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+    "Validar que el abstract del reporte integral no quede truncado.",
+    "Validar alineacion con checklist del programa analitico local."
+  ],
+  "latex_rules": [
+    "No copiar bloques LaTeX completos en memoria editorial; guardar reglas reconstruibles.",
+    "No duplicar definiciones de metadatos si ya existen en el archivo base.",
+    "Mantener secciones cortas y semanticamente claras para evaluacion.",
+    "Conservar compatibilidad con class article y plantilla institucional cargada por input.",
+    "Mantener bloque bibliografico con estilo y archivo .bib del nodo.",
+    "Preservar uso de \\input{template} y metadatos institucionales existentes.",
+    "Mantener \\bibliographystyle{natnumurl} cuando aplique en plantillas locales."
+  ],
+  "bibliography_rules": [
+    "Cita base permitida: programa-modelado-sim-sist-mecatronicos-imtc.",
+    "Evitar referencias externas no verificadas en el repositorio local.",
+    "Marcar pendiente la actualizacion de referencia oficial del curso.",
+    "Usar evidencia academica desde modelado-sim-sist-mecatronicos-imtc.bib.",
+    "Si no hay citas en el cuerpo, registrar pendiente de citacion tecnica minima."
+  ],
+  "propagation_hints": [
+    "Mantener estrategia union-dedupe para evitar perdida de memoria util.",
+    "Preservar ADN editorial y TEX reconstruible del nodo en cada ciclo.",
+    "Aplicar refuerzo por conexiones entre objetivo, evidencia, cierre y cita base.",
+    "No degradar reglas locales por herencia institucional generica.",
+    "Ciclo 1 necesita normalizacion manual si se reutiliza.",
+    "Priorizar fuentes locales del nodo: programa analitico, .bib y plantillas .tex.",
+    "Ciclo 2 necesita normalizacion manual si se reutiliza."
+  ],
+  "open_questions": [
+    "Falta consigna tecnica especifica de la semana en detalle.",
+    "Falta matricula final valida para reemplazar marcador UANL-IMTC.",
+    "Falta nombre de figura docente oficial.",
+    "Pendiente completar y cerrar contenido del reporte integral truncado en abstract."
+  ],
+  "artifact_name": "",
+  "sources": [
+    "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc",
+    "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/programa-analitico-modelado-sim-sist-mecatronicos-imtc.md",
+    "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/modelado-sim-sist-mecatronicos-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+  ],
+  "artifact_types": [],
+  "supported_artifact_types": [
+    "reporte"
+  ],
+  "source_documents": [
+    "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/programa-analitico-modelado-sim-sist-mecatronicos-imtc.md",
+    "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/modelado-sim-sist-mecatronicos-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+  ],
+  "source_fragments": [
+    "Objetivo: Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+    "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+  ],
+  "concepts": [
+    "Programa analitico de modelado-sim-sist-mecatronicos-imtc :: fuente=UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/modelado-sim-sist-mecatronicos-imtc.bib"
+  ],
+  "section_titles": [
+    "Introduccion",
+    "Desarrollo",
+    "Conclusiones"
+  ],
+  "citations": [],
+  "bibliography_index": [
+    "programa-modelado-sim-sist-mecatronicos-imtc :: Programa analitico de modelado-sim-sist-mecatronicos-imtc :: fuente=UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/modelado-sim-sist-mecatronicos-imtc.bib"
+  ],
+  "node_metadata": {
+    "scope_key": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc",
+    "level": "materia",
+    "label": "modelado-sim-sist-mecatronicos-imtc",
+    "relative_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc",
+    "institution": "UANL",
+    "career": "ingenieria-en-mecatronica",
+    "subject": "modelado-sim-sist-mecatronicos-imtc",
+    "activity": "",
+    "parent_key": "UANL/ingenieria-en-mecatronica"
+  },
+  "curricular_context": {
+    "institutional_frame": "",
+    "purpose": "",
+    "work_axes": [],
+    "source_fragments": [],
+    "coursename": "Modelado Sim Sist Mecatronicos",
+    "coursecode": "IMTC",
+    "documentsubject": "Ingenieria en Mecatronica",
+    "documenttitle": "Modelado Sim Sist Mecatronicos",
+    "documentsubtitle": "Reporte integral - modelado-sim-sist-mecatronicos-imtc"
+  },
+  "artifact_templates": {
+    "reporte": "reporte-modelado-sim-sist-mecatronicos-imtc"
+  },
+  "editorial_dna": {
+    "identity": {
+      "tone": [
+        "Formal",
+        "Tecnico",
+        "Verificable",
+        "Conciso"
+      ],
+      "institutional": [
+        "UANL",
+        "Facultad de Ingenieria Mecanica y Electrica",
+        "Formato academico institucional con portada y metadatos"
+      ],
+      "curricular": [
+        "Ingenieria en Mecatronica",
+        "Materia: Modelado Sim Sist Mecatronicos",
+        "Codigo: IMTC",
+        "Alineacion al programa analitico local"
+      ],
+      "node_metadata": {
+        "scope_key": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc",
+        "level": "materia",
+        "label": "modelado-sim-sist-mecatronicos-imtc",
+        "relative_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc",
+        "institution": "UANL",
+        "career": "ingenieria-en-mecatronica",
+        "subject": "modelado-sim-sist-mecatronicos-imtc",
+        "activity": "",
+        "parent_key": "UANL/ingenieria-en-mecatronica"
+      },
+      "curricular_context": {
+        "institutional_frame": "",
+        "purpose": "",
+        "work_axes": [],
+        "source_fragments": [],
+        "coursename": "Modelado Sim Sist Mecatronicos",
+        "coursecode": "IMTC",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "documenttitle": "Modelado Sim Sist Mecatronicos",
+        "documentsubtitle": "Reporte integral - modelado-sim-sist-mecatronicos-imtc"
+      },
+      "identity_rules": [
+        "Mantener asignatura y codigo: Modelado Sim Sist Mecatronicos (IMTC).",
+        "Mantener programa: Ingenieria en Mecatronica.",
+        "Conservar tono academico-tecnico, formal y verificable.",
+        "Declarar supuestos cuando falte informacion docente o de consigna.",
+        "Usar identidad institucional UANL y FIME de forma consistente en metadatos.",
+        "Fuente provisional: Claude Foundry desde modelado-sim-sist-mecatronicos-imtc",
+        "Fuente provisional: GPT-Pro desde modelado-sim-sist-mecatronicos-imtc",
+        "Mantener autor y afiliacion declarados en la plantilla local, salvo instruccion oficial en contrario.",
+        "Fuente provisional: Auto (model-router) desde modelado-sim-sist-mecatronicos-imtc",
+        "Mantener consistencia de nombre institucional: Universidad Autonoma de Nuevo Leon."
+      ]
+    },
+    "essence": [
+      "Programa analitico",
+      "Actividad semanal",
+      "Consigna tecnica",
+      "Evidencia tecnica",
+      "Cierre con mejoras",
+      "Plantilla LaTeX institucional",
+      "Bibliografia local .bib",
+      "Trazabilidad academica",
+      "Canonizacion local aplicada con union-dedupe y preservacion total",
+      "Se consolida memoria util previa del nodo IMTC sin recortes",
+      "Se normaliza el estado vacio inicial con reglas accionables verificables",
+      "Mantener asignatura y codigo: Modelado Sim Sist Mecatronicos (IMTC)",
+      "Mantener programa: Ingenieria en Mecatronica",
+      "Conservar tono academico-tecnico, formal y verificable",
+      "Declarar supuestos cuando falte informacion docente o de consigna",
+      "Usar identidad institucional UANL y FIME de forma consistente en metadatos",
+      "Estructura minima de actividad: Consigna tecnica, Desarrollo, Cierre, Referencias",
+      "Alinear objetivo de actividad con programa analitico del curso",
+      "Incluir evidencias tecnicas y academicas en Desarrollo",
+      "Cerrar con resultados, limitaciones y mejoras accionables",
+      "Definir objetivo puntual de la semana antes del desarrollo.",
+      "Explicitar criterios de evaluacion tecnica usados en el analisis.",
+      "Incluir al menos una evidencia tecnica verificable por actividad.",
+      "Documentar riesgos, errores y acciones de correccion en el cierre."
+    ],
+    "structure": {
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones"
+      ],
+      "artifact_types": [
+        "reporte"
+      ],
+      "tex_functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document",
+          "abstractd"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "templateIndex",
+          "templateFinalcfg",
+          "bibliography"
+        ]
+      }
+    },
+    "reason_for_being": [
+      "Estructura minima de actividad: Consigna tecnica, Desarrollo, Cierre, Referencias.",
+      "Alinear objetivo de actividad con programa analitico del curso.",
+      "Incluir evidencias tecnicas y academicas en Desarrollo.",
+      "Cerrar con resultados, limitaciones y mejoras accionables.",
+      "Mantener compilacion compatible con plantilla institucional existente.",
+      "Conservar seccion principal de actividad y subsecciones operativas sin sobrefragmentar.",
+      "Mantener en reporte integral: Introduccion, Desarrollo, Conclusiones y bibliografia trazable.",
+      "Definir objetivo puntual de la semana antes del desarrollo.",
+      "Explicitar criterios de evaluacion tecnica usados en el analisis.",
+      "Incluir al menos una evidencia tecnica verificable por actividad.",
+      "Documentar riesgos, errores y acciones de correccion en el cierre.",
+      "Vincular cada actividad con avance academico y tecnico de la materia.",
+      "Marcar como supuesto cualquier dato no confirmado de consigna semanal.",
+      "Registrar procedimiento de modelado o simulacion de forma trazable.",
+      "Introduccion",
+      "Desarrollo",
+      "Conclusiones"
+    ],
+    "style_markers": [
+      "Secciones breves y directas.",
+      "Consigna tecnica explicita al inicio.",
+      "Cierre con resultados, limites y mejoras.",
+      "Referencias locales y trazables.",
+      "Mantener asignatura y codigo: Modelado Sim Sist Mecatronicos (IMTC).",
+      "Mantener programa: Ingenieria en Mecatronica.",
+      "Conservar tono academico-tecnico, formal y verificable.",
+      "Declarar supuestos cuando falte informacion docente o de consigna.",
+      "Usar identidad institucional UANL y FIME de forma consistente en metadatos.",
+      "No copiar bloques LaTeX completos en memoria editorial; guardar reglas reconstruibles.",
+      "No duplicar definiciones de metadatos si ya existen en el archivo base.",
+      "Mantener secciones cortas y semanticamente claras para evaluacion.",
+      "Conservar compatibilidad con class article y plantilla institucional cargada por input.",
+      "Mantener bloque bibliografico con estilo y archivo .bib del nodo.",
+      "Mantener autor y afiliacion declarados en la plantilla local, salvo instruccion oficial en contrario.",
+      "Preservar uso de \\input{template} y metadatos institucionales existentes.",
+      "Mantener consistencia de nombre institucional: Universidad Autonoma de Nuevo Leon.",
+      "Mantener \\bibliographystyle{natnumurl} cuando aplique en plantillas locales."
+    ],
+    "argumentative_patterns": [
+      "Objetivo -> Desarrollo con evidencia -> Cierre con decision tecnica.",
+      "Afirmacion tecnica -> criterio de evaluacion -> resultado observado.",
+      "Problema detectado -> accion correctiva -> mejora propuesta.",
+      "Estructura minima de actividad: Consigna tecnica, Desarrollo, Cierre, Referencias.",
+      "Alinear objetivo de actividad con programa analitico del curso.",
+      "Incluir evidencias tecnicas y academicas en Desarrollo.",
+      "Cerrar con resultados, limitaciones y mejoras accionables.",
+      "Mantener compilacion compatible con plantilla institucional existente.",
+      "Definir objetivo puntual de la semana antes del desarrollo.",
+      "Explicitar criterios de evaluacion tecnica usados en el analisis.",
+      "Incluir al menos una evidencia tecnica verificable por actividad.",
+      "Documentar riesgos, errores y acciones de correccion en el cierre.",
+      "Vincular cada actividad con avance academico y tecnico de la materia.",
+      "No inventar fuentes; citar solo entradas existentes en .bib local.",
+      "Revisar consistencia entre metadatos del reporte y tabla de autor.",
+      "Confirmar que cada conclusion derive de evidencia reportada.",
+      "Marcar explicitamente campos pendientes como supuestos o datos por definir.",
+      "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+      "Conservar seccion principal de actividad y subsecciones operativas sin sobrefragmentar.",
+      "Marcar como supuesto cualquier dato no confirmado de consigna semanal."
+    ],
+    "reinforcement_log": [
+      "Se preservaron reglas historicas utiles del nodo y se deduplicaron.",
+      "Se reforzo alineacion entre programa analitico, actividades y evidencia.",
+      "Se mantuvo restriccion de fuentes a repositorio local verificable.",
+      "Se registraron pendientes operativos de metadatos personales y docentes.",
+      "Se conservo politica de no insertar bloques LaTeX completos en memoria.",
+      "Refuerzo editorial aplicado sobre 52 conceptos y 0 citas.",
+      "Canonizacion local aplicada con union-dedupe y preservacion total.",
+      "Se consolida memoria util previa del nodo IMTC sin recortes.",
+      "ADN sintetizado con 53 conceptos, 1 citas y 14 relaciones.",
+      "Memoria de redacción preservada en 8 bloques.",
+      "Refuerzo editorial aplicado sobre 1 conceptos y 0 citas.",
+      "Salida sin JSON parseable desde Claude Foundry para modelado-sim-sist-mecatronicos-imtc",
+      "ADN sintetizado con 54 conceptos, 1 citas y 14 relaciones.",
+      "Salida sin JSON parseable desde GPT-Pro para modelado-sim-sist-mecatronicos-imtc",
+      "Se preservan todas las reglas previas del nodo sin eliminacion.",
+      "Se agrega validacion explicita de abstract truncado por evidencia local.",
+      "Se refuerza trazabilidad del procedimiento de modelado/simulacion.",
+      "Se mantiene estrategia lossless por union-dedupe.",
+      "Refuerzo editorial aplicado sobre 61 conceptos y 0 citas.",
+      "ADN sintetizado con 72 conceptos, 1 citas y 20 relaciones.",
+      "Salida sin JSON parseable desde Auto (model-router) para modelado-sim-sist-mecatronicos-imtc",
+      "Refuerzo editorial aplicado sobre 0 conceptos y 0 citas.",
+      "Ciclo 2: sin regresion, union-dedupe estable entre origen y destino.",
+      "Ciclo 2: se refuerza gate de abstract no truncado por evidencia local.",
+      "Ciclo 2: se mantiene canon de cita base unica verificable del nodo.",
+      "Ciclo 2: se preserva ADN estilistico y patron argumentativo completo.",
+      "Refuerzo editorial aplicado sobre 63 conceptos y 0 citas.",
+      "ADN sintetizado con 81 conceptos, 1 citas y 23 relaciones."
+    ],
+    "knowledge_graph": {
+      "concepts": [
+        "Programa analitico",
+        "Actividad semanal",
+        "Consigna tecnica",
+        "Evidencia tecnica",
+        "Cierre con mejoras",
+        "Plantilla LaTeX institucional",
+        "Bibliografia local .bib",
+        "Trazabilidad academica",
+        "Canonizacion local aplicada con union-dedupe y preservacion total",
+        "Se consolida memoria util previa del nodo IMTC sin recortes",
+        "Se normaliza el estado vacio inicial con reglas accionables verificables",
+        "Mantener asignatura y codigo: Modelado Sim Sist Mecatronicos (IMTC)",
+        "Mantener programa: Ingenieria en Mecatronica",
+        "Conservar tono academico-tecnico, formal y verificable",
+        "Declarar supuestos cuando falte informacion docente o de consigna",
+        "Usar identidad institucional UANL y FIME de forma consistente en metadatos",
+        "Estructura minima de actividad: Consigna tecnica, Desarrollo, Cierre, Referencias",
+        "Alinear objetivo de actividad con programa analitico del curso",
+        "Incluir evidencias tecnicas y academicas en Desarrollo",
+        "Cerrar con resultados, limitaciones y mejoras accionables",
+        "Mantener compilacion compatible con plantilla institucional existente",
+        "Definir objetivo puntual de la semana antes del desarrollo",
+        "Explicitar criterios de evaluacion tecnica usados en el analisis",
+        "Incluir al menos una evidencia tecnica verificable por actividad",
+        "Documentar riesgos, errores y acciones de correccion en el cierre",
+        "Vincular cada actividad con avance academico y tecnico de la materia",
+        "No inventar fuentes; citar solo entradas existentes en .bib local",
+        "Revisar consistencia entre metadatos del reporte y tabla de autor",
+        "Confirmar que cada conclusion derive de evidencia reportada",
+        "Marcar explicitamente campos pendientes como supuestos o datos por definir",
+        "Falta consigna tecnica especifica de la semana en detalle",
+        "Falta matricula final valida para reemplazar marcador UANL-IMTC",
+        "Falta nombre de figura docente oficial",
+        "Pendiente completar y cerrar contenido del reporte integral truncado en abstract",
+        "Documentar avance tecnico-academico con trazabilidad",
+        "Convertir actividades semanales en evidencia evaluable",
+        "Sostener consistencia entre objetivos, analisis y conclusiones",
+        "Servir como memoria editorial persistente del nodo IMTC",
+        "Garantizar continuidad de calidad y formato entre reportes",
+        "Reducir ambiguedad mediante reglas accionables y verificables",
+        "Secciones breves y directas",
+        "Consigna tecnica explicita al inicio",
+        "Cierre con resultados, limites y mejoras",
+        "Referencias locales y trazables",
+        "Objetivo -> Desarrollo con evidencia -> Cierre con decision tecnica",
+        "Afirmacion tecnica -> criterio de evaluacion -> resultado observado",
+        "Problema detectado -> accion correctiva -> mejora propuesta",
+        "programa-modelado-sim-sist-mecatronicos-imtc",
+        "Archivo local programa-analitico-modelado-sim-sist-mecatronicos-imtc.md con checklist editorial",
+        "Entrada bib local programa-modelado-sim-sist-mecatronicos-imtc en modelado-sim-sist-mecatronicos-imtc.bib",
+        "Plantilla de actividad con secciones Consigna tecnica, Desarrollo, Cierre y bibliografia",
+        "Plantilla integral IMTC con metadatos institucionales UANL/FIME",
+        "Programa analitico de modelado-sim-sist-mecatronicos-imtc :: fuente=UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/modelado-sim-sist-mecatronicos-imtc.bib",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo",
+        "Objetivo de actividad",
+        "Desarrollo",
+        "Evidencia academica",
+        "Consistencia editorial",
+        "Se confirma plantilla local de Actividad 1 con seccion Consigna tecnica, Desarrollo y Cierre",
+        "Se confirma reporte integral local truncado en abstract; mantener pendiente de cierre",
+        "Mantener autor y afiliacion declarados en la plantilla local, salvo instruccion oficial en contrario",
+        "Conservar seccion principal de actividad y subsecciones operativas sin sobrefragmentar",
+        "Marcar como supuesto cualquier dato no confirmado de consigna semanal",
+        "Registrar procedimiento de modelado o simulacion de forma trazable",
+        "Validar que el abstract del reporte integral no quede truncado",
+        "Estandarizar reportes IMTC con evidencia verificable",
+        "Asegurar coherencia entre objetivo, desarrollo, cierre y referencias",
+        "Preservar continuidad editorial sin perdida de memoria util",
+        "programa-analitico-modelado-sim-sist-mecatronicos-imtc.md",
+        "modelado-sim-sist-mecatronicos-imtc.bib",
+        "reporte-modelado-sim-sist-mecatronicos-imtc-Actividad-1.tex",
+        "reporte-modelado-sim-sist-mecatronicos-imtc.tex",
+        "Checklist de cobertura editorial IMTC",
+        "Reporte integral con abstract pendiente",
+        "Se preserva TEX reconstruible del nodo con metadatos UANL/FIME y curso IMTC",
+        "Mantener consistencia de nombre institucional: Universidad Autonoma de Nuevo Leon",
+        "Mantener en reporte integral: Introduccion, Desarrollo, Conclusiones y bibliografia trazable",
+        "Validar alineacion con checklist del programa analitico local",
+        "Estandarizar entregables IMTC con evidencia verificable",
+        "Mantener coherencia entre objetivo, desarrollo, cierre y referencias",
+        "Asegurar continuidad editorial sin perdida de memoria util"
+      ],
+      "citations": [
+        "programa-modelado-sim-sist-mecatronicos-imtc"
+      ],
+      "evidence": [
+        "Archivo local programa-analitico-modelado-sim-sist-mecatronicos-imtc.md con checklist editorial.",
+        "Entrada bib local programa-modelado-sim-sist-mecatronicos-imtc en modelado-sim-sist-mecatronicos-imtc.bib.",
+        "Plantilla de actividad con secciones Consigna tecnica, Desarrollo, Cierre y bibliografia.",
+        "Plantilla integral IMTC con metadatos institucionales UANL/FIME.",
+        "Canonizacion local aplicada con union-dedupe y preservacion total.",
+        "Se consolida memoria util previa del nodo IMTC sin recortes.",
+        "Se normaliza el estado vacio inicial con reglas accionables verificables.",
+        "Se mantiene alerta historica: hubo evento de salida no parseable en ciclo previo institucional.",
+        "Supuesto: no hay nuevas fuentes externas adicionales al contexto local provisto.",
+        "No inventar fuentes; citar solo entradas existentes en .bib local.",
+        "Verificar salida JSON parseable antes de propagar cambios.",
+        "Revisar consistencia entre metadatos del reporte y tabla de autor.",
+        "Confirmar que cada conclusion derive de evidencia reportada.",
+        "Marcar explicitamente campos pendientes como supuestos o datos por definir.",
+        "programa-modelado-sim-sist-mecatronicos-imtc :: Programa analitico de modelado-sim-sist-mecatronicos-imtc :: fuente=UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/modelado-sim-sist-mecatronicos-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/programa-analitico-modelado-sim-sist-mecatronicos-imtc.md",
+        "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/modelado-sim-sist-mecatronicos-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex",
+        "Salida sin JSON parseable desde Claude Foundry para modelado-sim-sist-mecatronicos-imtc",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+        "Salida sin JSON parseable desde GPT-Pro para modelado-sim-sist-mecatronicos-imtc",
+        "programa-analitico-modelado-sim-sist-mecatronicos-imtc.md",
+        "modelado-sim-sist-mecatronicos-imtc.bib",
+        "reporte-modelado-sim-sist-mecatronicos-imtc-Actividad-1.tex",
+        "reporte-modelado-sim-sist-mecatronicos-imtc.tex",
+        "Se confirma plantilla local de Actividad 1 con seccion Consigna tecnica, Desarrollo y Cierre.",
+        "Se confirma reporte integral local truncado en abstract; mantener pendiente de cierre.",
+        "Validar que el abstract del reporte integral no quede truncado.",
+        "Salida sin JSON parseable desde Auto (model-router) para modelado-sim-sist-mecatronicos-imtc",
+        "Se preserva TEX reconstruible del nodo con metadatos UANL/FIME y curso IMTC.",
+        "Validar alineacion con checklist del programa analitico local."
+      ],
+      "relations": [
+        {
+          "source": "Programa analitico",
+          "target": "Objetivo de actividad",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "El checklist local exige alineacion del objetivo con el programa.",
+          "evidence": []
+        },
+        {
+          "source": "Consigna tecnica",
+          "target": "Desarrollo",
+          "kind": "depends_on",
+          "weight": 3,
+          "justification": "La estructura minima define que el desarrollo responde a la consigna.",
+          "evidence": []
+        },
+        {
+          "source": "Desarrollo",
+          "target": "Cierre con mejoras",
+          "kind": "develops",
+          "weight": 3,
+          "justification": "Los resultados y limitaciones del cierre se derivan del analisis previo.",
+          "evidence": []
+        },
+        {
+          "source": "Bibliografia local .bib",
+          "target": "Evidencia academica",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "Las reglas de calidad restringen citas a fuentes locales verificables.",
+          "evidence": []
+        },
+        {
+          "source": "Plantilla LaTeX institucional",
+          "target": "Consistencia editorial",
+          "kind": "supports",
+          "weight": 2,
+          "justification": "El nodo usa metadatos y estructura comun para reportes de actividad e integral.",
+          "evidence": []
+        },
+        {
+          "source": "Canonizacion local aplicada con union-dedupe y preservacion total",
+          "target": "Se consolida memoria util previa del nodo IMTC sin recortes",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Canonizacion local aplicada con union-dedupe y preservacion total",
+          "target": "Se normaliza el estado vacio inicial con reglas accionables verificables",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se consolida memoria util previa del nodo IMTC sin recortes",
+          "target": "Se normaliza el estado vacio inicial con reglas accionables verificables",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se consolida memoria util previa del nodo IMTC sin recortes",
+          "target": "Mantener asignatura y codigo: Modelado Sim Sist Mecatronicos (IMTC)",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se normaliza el estado vacio inicial con reglas accionables verificables",
+          "target": "Mantener asignatura y codigo: Modelado Sim Sist Mecatronicos (IMTC)",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se normaliza el estado vacio inicial con reglas accionables verificables",
+          "target": "Mantener programa: Ingenieria en Mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener asignatura y codigo: Modelado Sim Sist Mecatronicos (IMTC)",
+          "target": "Mantener programa: Ingenieria en Mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener asignatura y codigo: Modelado Sim Sist Mecatronicos (IMTC)",
+          "target": "Conservar tono academico-tecnico, formal y verificable",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener programa: Ingenieria en Mecatronica",
+          "target": "Conservar tono academico-tecnico, formal y verificable",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se consolida memoria util previa del nodo IMTC sin recortes",
+          "target": "Se confirma plantilla local de Actividad 1 con seccion Consigna tecnica, Desarrollo y Cierre",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se normaliza el estado vacio inicial con reglas accionables verificables",
+          "target": "Se confirma plantilla local de Actividad 1 con seccion Consigna tecnica, Desarrollo y Cierre",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se normaliza el estado vacio inicial con reglas accionables verificables",
+          "target": "Se confirma reporte integral local truncado en abstract; mantener pendiente de cierre",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma plantilla local de Actividad 1 con seccion Consigna tecnica, Desarrollo y Cierre",
+          "target": "Se confirma reporte integral local truncado en abstract; mantener pendiente de cierre",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma plantilla local de Actividad 1 con seccion Consigna tecnica, Desarrollo y Cierre",
+          "target": "Mantener asignatura y codigo: Modelado Sim Sist Mecatronicos (IMTC)",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma reporte integral local truncado en abstract; mantener pendiente de cierre",
+          "target": "Mantener asignatura y codigo: Modelado Sim Sist Mecatronicos (IMTC)",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Checklist de cobertura editorial IMTC",
+          "target": "Conclusiones",
+          "kind": "supports",
+          "weight": 1,
+          "justification": "El contexto local exige conclusiones con enfoque de ingenieria en mecatronica.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma plantilla local de Actividad 1 con seccion Consigna tecnica, Desarrollo y Cierre",
+          "target": "Se preserva TEX reconstruible del nodo con metadatos UANL/FIME y curso IMTC",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma reporte integral local truncado en abstract; mantener pendiente de cierre",
+          "target": "Se preserva TEX reconstruible del nodo con metadatos UANL/FIME y curso IMTC",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        }
+      ],
+      "concept_weights": {
+        "Canonizacion local aplicada con union-dedupe y preservacion total": 3,
+        "Se consolida memoria util previa del nodo IMTC sin recortes": 3,
+        "Se normaliza el estado vacio inicial con reglas accionables verificables": 3,
+        "Mantener asignatura y codigo: Modelado Sim Sist Mecatronicos (IMTC)": 3,
+        "Mantener programa: Ingenieria en Mecatronica": 3,
+        "Conservar tono academico-tecnico, formal y verificable": 3,
+        "Declarar supuestos cuando falte informacion docente o de consigna": 3,
+        "Usar identidad institucional UANL y FIME de forma consistente en metadatos": 3,
+        "Estructura minima de actividad: Consigna tecnica, Desarrollo, Cierre, Referencias": 3,
+        "Alinear objetivo de actividad con programa analitico del curso": 3,
+        "Incluir evidencias tecnicas y academicas en Desarrollo": 3,
+        "Cerrar con resultados, limitaciones y mejoras accionables": 3,
+        "Mantener compilacion compatible con plantilla institucional existente": 3,
+        "Definir objetivo puntual de la semana antes del desarrollo": 3,
+        "Explicitar criterios de evaluacion tecnica usados en el analisis": 3,
+        "Incluir al menos una evidencia tecnica verificable por actividad": 3,
+        "Documentar riesgos, errores y acciones de correccion en el cierre": 3,
+        "Vincular cada actividad con avance academico y tecnico de la materia": 3,
+        "No inventar fuentes; citar solo entradas existentes en .bib local": 3,
+        "Revisar consistencia entre metadatos del reporte y tabla de autor": 3,
+        "Confirmar que cada conclusion derive de evidencia reportada": 3,
+        "Marcar explicitamente campos pendientes como supuestos o datos por definir": 3,
+        "Falta consigna tecnica especifica de la semana en detalle": 3,
+        "Falta matricula final valida para reemplazar marcador UANL-IMTC": 3,
+        "Falta nombre de figura docente oficial": 3,
+        "Pendiente completar y cerrar contenido del reporte integral truncado en abstract": 3,
+        "Documentar avance tecnico-academico con trazabilidad": 1,
+        "Convertir actividades semanales en evidencia evaluable": 1,
+        "Sostener consistencia entre objetivos, analisis y conclusiones": 1,
+        "Servir como memoria editorial persistente del nodo IMTC": 1,
+        "Garantizar continuidad de calidad y formato entre reportes": 1,
+        "Reducir ambiguedad mediante reglas accionables y verificables": 1,
+        "Secciones breves y directas": 3,
+        "Consigna tecnica explicita al inicio": 3,
+        "Cierre con resultados, limites y mejoras": 3,
+        "Referencias locales y trazables": 3,
+        "Objetivo -> Desarrollo con evidencia -> Cierre con decision tecnica": 3,
+        "Afirmacion tecnica -> criterio de evaluacion -> resultado observado": 3,
+        "Problema detectado -> accion correctiva -> mejora propuesta": 3,
+        "Programa analitico": 3,
+        "Actividad semanal": 3,
+        "Consigna tecnica": 3,
+        "Evidencia tecnica": 3,
+        "Cierre con mejoras": 3,
+        "Plantilla LaTeX institucional": 3,
+        "Bibliografia local .bib": 3,
+        "Trazabilidad academica": 3,
+        "programa-modelado-sim-sist-mecatronicos-imtc": 3,
+        "Archivo local programa-analitico-modelado-sim-sist-mecatronicos-imtc.md con checklist editorial": 2,
+        "Entrada bib local programa-modelado-sim-sist-mecatronicos-imtc en modelado-sim-sist-mecatronicos-imtc.bib": 2,
+        "Plantilla de actividad con secciones Consigna tecnica, Desarrollo, Cierre y bibliografia": 2,
+        "Plantilla integral IMTC con metadatos institucionales UANL/FIME": 2,
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo": 6,
+        "Se confirma plantilla local de Actividad 1 con seccion Consigna tecnica, Desarrollo y Cierre": 2,
+        "Se confirma reporte integral local truncado en abstract; mantener pendiente de cierre": 2,
+        "Mantener autor y afiliacion declarados en la plantilla local, salvo instruccion oficial en contrario": 2,
+        "Conservar seccion principal de actividad y subsecciones operativas sin sobrefragmentar": 2,
+        "Marcar como supuesto cualquier dato no confirmado de consigna semanal": 2,
+        "Registrar procedimiento de modelado o simulacion de forma trazable": 2,
+        "Validar que el abstract del reporte integral no quede truncado": 2,
+        "Estandarizar reportes IMTC con evidencia verificable": 1,
+        "Asegurar coherencia entre objetivo, desarrollo, cierre y referencias": 1,
+        "Preservar continuidad editorial sin perdida de memoria util": 1,
+        "Objetivo de actividad": 1,
+        "Desarrollo": 1,
+        "Evidencia academica": 1,
+        "Consistencia editorial": 1,
+        "programa-analitico-modelado-sim-sist-mecatronicos-imtc.md": 1,
+        "modelado-sim-sist-mecatronicos-imtc.bib": 1,
+        "reporte-modelado-sim-sist-mecatronicos-imtc-Actividad-1.tex": 1,
+        "reporte-modelado-sim-sist-mecatronicos-imtc.tex": 1,
+        "Se preserva TEX reconstruible del nodo con metadatos UANL/FIME y curso IMTC": 1,
+        "Mantener consistencia de nombre institucional: Universidad Autonoma de Nuevo Leon": 1,
+        "Mantener en reporte integral: Introduccion, Desarrollo, Conclusiones y bibliografia trazable": 1,
+        "Validar alineacion con checklist del programa analitico local": 1,
+        "Estandarizar entregables IMTC con evidencia verificable": 1,
+        "Mantener coherencia entre objetivo, desarrollo, cierre y referencias": 1,
+        "Asegurar continuidad editorial sin perdida de memoria util": 1,
+        "Checklist de cobertura editorial IMTC": 1,
+        "Reporte integral con abstract pendiente": 1
+      },
+      "citation_weights": {}
+    },
+    "writing_memory": [
+      {
+        "id": "b0001",
+        "order": 1,
+        "kind": "abstract",
+        "section": "Resumen editorial",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Objetivo: Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+        "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+      },
+      {
+        "id": "b0002",
+        "order": 2,
+        "kind": "section",
+        "section": "Introduccion",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Introduccion",
+        "latex": "\\section{Introduccion}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+      },
+      {
+        "id": "b0003",
+        "order": 3,
+        "kind": "paragraph",
+        "section": "Introduccion",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+        "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+      },
+      {
+        "id": "b0004",
+        "order": 4,
+        "kind": "section",
+        "section": "Desarrollo",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Desarrollo",
+        "latex": "\\section{Desarrollo}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+      },
+      {
+        "id": "b0005",
+        "order": 5,
+        "kind": "paragraph",
+        "section": "Desarrollo",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+        "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+      },
+      {
+        "id": "b0006",
+        "order": 6,
+        "kind": "section",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Conclusiones",
+        "latex": "\\section{Conclusiones}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+      },
+      {
+        "id": "b0007",
+        "order": 7,
+        "kind": "paragraph",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+        "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+      },
+      {
+        "id": "b0008",
+        "order": 8,
+        "kind": "paragraph",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "natnumurl",
+        "latex": "\\bibliographystyle{natnumurl}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+      }
+    ],
+    "reconstructable_source": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Modelado Sim Sist Mecatronicos}\n\\def\\documentsubtitle {Reporte integral - modelado-sim-sist-mecatronicos-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Modelado Sim Sist Mecatronicos}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{modelado-sim-sist-mecatronicos-imtc}\n\n\\end{document}\n"
+  },
+  "tex_blueprint": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex",
+        "documenttitle": "Modelado Sim Sist Mecatronicos",
+        "documentsubtitle": "Reporte integral - modelado-sim-sist-mecatronicos-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Modelado Sim Sist Mecatronicos",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+        "section_titles": [
+          "Introduccion",
+          "Desarrollo",
+          "Conclusiones"
+        ],
+        "subsection_titles": [],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [
+          "Objetivo: Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+          "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+        ],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex",
+          "raw_latex_sha256": "d387ba37a3a2259d9dcfcdf231cc0035ce327d8a274e86880a0ae35ea5962ab3",
+          "raw_latex_chars": 1761,
+          "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Modelado Sim Sist Mecatronicos}\n\\def\\documentsubtitle {Reporte integral - modelado-sim-sist-mecatronicos-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Modelado Sim Sist Mecatronicos}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{modelado-sim-sist-mecatronicos-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document",
+              "abstractd"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "templateIndex",
+              "templateFinalcfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex",
+      "documenttitle": "Modelado Sim Sist Mecatronicos",
+      "documentsubtitle": "Reporte integral - modelado-sim-sist-mecatronicos-imtc",
+      "documentsubject": "Ingenieria en Mecatronica",
+      "coursename": "Modelado Sim Sist Mecatronicos",
+      "coursecode": "IMTC",
+      "documentauthor": "Martin Jonathan de la Cruz",
+      "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones"
+      ],
+      "subsection_titles": [],
+      "cited_keys": [],
+      "concepts": [],
+      "source_fragments": [
+        "Objetivo: Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+        "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+      ],
+      "content_memory": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex",
+        "raw_latex_sha256": "d387ba37a3a2259d9dcfcdf231cc0035ce327d8a274e86880a0ae35ea5962ab3",
+        "raw_latex_chars": 1761,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Modelado Sim Sist Mecatronicos}\n\\def\\documentsubtitle {Reporte integral - modelado-sim-sist-mecatronicos-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Modelado Sim Sist Mecatronicos}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{modelado-sim-sist-mecatronicos-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    }
+  },
+  "tex_content_memory": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex",
+        "raw_latex_sha256": "d387ba37a3a2259d9dcfcdf231cc0035ce327d8a274e86880a0ae35ea5962ab3",
+        "raw_latex_chars": 1761,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Modelado Sim Sist Mecatronicos}\n\\def\\documentsubtitle {Reporte integral - modelado-sim-sist-mecatronicos-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Modelado Sim Sist Mecatronicos}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{modelado-sim-sist-mecatronicos-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex",
+      "raw_latex_sha256": "d387ba37a3a2259d9dcfcdf231cc0035ce327d8a274e86880a0ae35ea5962ab3",
+      "raw_latex_chars": 1761,
+      "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Modelado Sim Sist Mecatronicos}\n\\def\\documentsubtitle {Reporte integral - modelado-sim-sist-mecatronicos-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Modelado Sim Sist Mecatronicos}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{modelado-sim-sist-mecatronicos-imtc}\n\n\\end{document}\n",
+      "functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document",
+          "abstractd"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "templateIndex",
+          "templateFinalcfg",
+          "bibliography"
+        ]
+      },
+      "paragraph_map": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "abstract",
+          "section": "Resumen editorial",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Objetivo: Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+          "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "section",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Introduccion",
+          "latex": "\\section{Introduccion}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "paragraph",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "section",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\section{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "paragraph",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "section",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Conclusiones",
+          "latex": "\\section{Conclusiones}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        },
+        {
+          "id": "b0008",
+          "order": 8,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        }
+      ],
+      "content_blocks": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "abstract",
+          "section": "Resumen editorial",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Objetivo: Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+          "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia modelado sim sist mecatronicos.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "section",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Introduccion",
+          "latex": "\\section{Introduccion}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "paragraph",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "section",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\section{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "paragraph",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "section",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Conclusiones",
+          "latex": "\\section{Conclusiones}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        },
+        {
+          "id": "b0008",
+          "order": 8,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/reporte-modelado-sim-sist-mecatronicos-imtc.tex"
+        }
+      ],
+      "citation_map": {},
+      "all_cited_keys": [],
+      "missing_bibliography_keys": []
+    },
+    "bibliography_sources": {
+      "programa-modelado-sim-sist-mecatronicos-imtc": {
+        "key": "programa-modelado-sim-sist-mecatronicos-imtc",
+        "source_type": "bibtex",
+        "source_path": "UANL/ingenieria-en-mecatronica/modelado-sim-sist-mecatronicos-imtc/modelado-sim-sist-mecatronicos-imtc.bib",
+        "entry_type": "misc",
+        "title": "Programa analitico de modelado-sim-sist-mecatronicos-imtc",
+        "author": "UANL",
+        "year": "2026",
+        "url": "https://www.uanl.mx/",
+        "note": "Actualizar con la referencia oficial del curso",
+        "raw_entry": "@misc{programa-modelado-sim-sist-mecatronicos-imtc,\n  author = {UANL},\n  title = {Programa analitico de modelado-sim-sist-mecatronicos-imtc},\n  year = {2026},\n  note = {Actualizar con la referencia oficial del curso},\n  url = {https://www.uanl.mx/}\n}"
+      }
+    }
+  },
+  "locked_sections": [],
+  "compression": {
+    "method": "union-dedupe",
+    "lossless": true
+  },
+  "schema_version": 3
+}

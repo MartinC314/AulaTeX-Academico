@@ -1,0 +1,2606 @@
+{
+  "summary": [
+    "Nodo inicial canonizado con memoria local verificable.",
+    "Se preserva plantilla LaTeX de actividad 1 como base reconstruible.",
+    "Se integra alineacion obligatoria al programa analitico del laboratorio.",
+    "Se registra una cita local disponible en archivo .bib.",
+    "Se mantiene alerta institucional: en ciclo previo hubo salida no parseable.",
+    "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+    "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+    "Nodo local consolidado sin cambios estructurales y con deduplicacion completa.",
+    "Se preserva la plantilla LaTeX reconstruible de Actividad 1 y su contrato editorial.",
+    "Se mantiene la alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica.",
+    "Se conserva la unica cita local verificable en el .bib del curso.",
+    "Se mantiene alerta operativa por antecedentes de salida no parseable en ciclo previo.",
+    "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+    "Nodo local canonizado y consolidado sin regresion.",
+    "Se preserva la plantilla LaTeX reconstruible de Actividad 1.",
+    "Se mantiene alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica.",
+    "Se conserva la cita local verificable en el .bib del curso.",
+    "Se mantiene alerta operativa por salidas no parseables en ciclos previos.",
+    "Se verifica en .tex el autor: Martin Jonathan de la Cruz.",
+    "Se mantiene [supuesto] en matricula y figura docente hasta validacion oficial."
+  ],
+  "identity_rules": [
+    "Usar identidad institucional UANL y FIME en portada y metadatos.",
+    "Mantener programa curricular: Ingenieria en Mecatronica.",
+    "Mantener asignatura y codigo: Laboratorio De Ondas Y Calor, IMTC.",
+    "Conservar tono tecnico-academico, formal y directo.",
+    "Declarar supuestos cuando falte dato docente o de matricula.",
+    "Fuente provisional: Claude Foundry desde Actividad 1",
+    "Fuente provisional: GPT-Pro desde Actividad 1",
+    "Marcar como provisional toda huella de motor si no aporta fuente academica verificable. [supuesto]",
+    "Fuente provisional: Auto (model-router) desde Actividad 1",
+    "Fuente provisional: Claude Foundry desde Actividad 1.",
+    "Fuente provisional: GPT-Pro desde Actividad 1.",
+    "Fuente provisional: Auto (model-router) desde Actividad 1.",
+    "Mantener autor canonico: Martin Jonathan de la Cruz. [verificado en .tex]",
+    "Marcar como provisional toda huella de motor sin fuente academica verificable. [supuesto]",
+    "Registrar como verificado solo lo presente en fuentes locales (.tex, .md, .bib).",
+    "Mantener autor verificado en .tex: Martin Jonathan de la Cruz. [verificado en .tex]"
+  ],
+  "structure_rules": [
+    "Estructura minima de actividad: Actividad, Desarrollo, Cierre.",
+    "Incluir consigna tecnica explicita al inicio de la actividad.",
+    "En Desarrollo incluir evidencias, analisis y referencias.",
+    "En Cierre incluir resultados, limitaciones y mejoras.",
+    "Alinear objetivo de actividad con programa analitico del curso.",
+    "Mantener estructura minima: Actividad, Desarrollo, Cierre.",
+    "Incluir consigna tecnica explicita al inicio.",
+    "Incluir en Desarrollo: evidencias, analisis y referencias.",
+    "Incluir en Cierre: resultados, limitaciones y mejoras.",
+    "Alinear el objetivo con el programa analitico del curso."
+  ],
+  "activity_rules": [
+    "Cada actividad debe declarar objetivo verificable y medible.",
+    "Relacionar el objetivo con competencias de laboratorio de ondas y calor.",
+    "Documentar procedimiento tecnico de forma replicable.",
+    "Registrar evidencia experimental o academica con trazabilidad.",
+    "Cerrar con aprendizaje aplicado a ingenieria en mecatronica.",
+    "Declarar objetivo verificable y medible en cada actividad.",
+    "Vincular objetivo con competencias de laboratorio de ondas y calor."
+  ],
+  "quality_gates": [
+    "Validar JSON parseable en toda salida de consolidacion.",
+    "No inventar fuentes; citar solo entradas existentes en .bib.",
+    "Verificar congruencia entre titulo, subtitulo, materia y codigo.",
+    "Comprobar que la bibliografia compila con estilo natnumurl.",
+    "Marcar campos pendientes como supuestos explicitamente.",
+    "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+    "No inventar fuentes; usar solo entradas existentes en .bib local.",
+    "Comprobar compilacion bibliografica con estilo natnumurl.",
+    "Marcar pendientes como [supuesto] de forma explicita.",
+    "Revisar salidas no estructuradas antes de propagacion aguas abajo."
+  ],
+  "latex_rules": [
+    "Conservar macros institucionales y de curso definidas al inicio.",
+    "Mantener \\input{template} y bloques de portada institucional.",
+    "Usar \\onehalfspacing en el cuerpo del reporte.",
+    "No eliminar secciones base de actividad ya establecidas.",
+    "Mantener bibliographystyle natnumurl y archivo bib del curso.",
+    "Conservar macros institucionales y de curso al inicio del .tex.",
+    "Mantener \\bibliographystyle{natnumurl} y bib del curso.",
+    "Preservar TEX reconstruible sin copiar ni expandir plantilla completa."
+  ],
+  "bibliography_rules": [
+    "Usar archivo local: laboratorio-de-ondas-y-calor-imtc.bib.",
+    "Cita canonica disponible: programa-laboratorio-de-ondas-y-calor-imtc.",
+    "Tratar la nota de la entrada bib como pendiente de actualizacion oficial.",
+    "Evitar referencias externas no verificadas en el nodo.",
+    "Asegurar correspondencia entre citas en texto y bibliografia final.",
+    "Usar clave canonica disponible: programa-laboratorio-de-ondas-y-calor-imtc.",
+    "Tratar la nota de la entrada bib como pendiente oficial. [supuesto]"
+  ],
+  "propagation_hints": [
+    "Propagacion local: reutilizar estas reglas en futuras actividades IMTC del mismo nodo.",
+    "Priorizar union-dedupe sin eliminar memoria util previa.",
+    "Si aparecen nuevas secciones, agregarlas sin romper estructura minima.",
+    "Revisar parseo estructurado antes de saltos aguas abajo.",
+    "Marcar este ciclo como base canonica inicial del nodo.",
+    "Ciclo 1 necesita normalizacion manual si se reutiliza.",
+    "Mantener este ciclo como base canonica inicial del nodo.",
+    "Aplicar normalizacion manual en ciclo 1 antes de automatizar saltos.",
+    "Propagacion local: reutilizar reglas en actividades IMTC del mismo nodo.",
+    "Aplicar union-dedupe sin eliminar memoria util previa.",
+    "Agregar nuevas secciones sin romper estructura minima.",
+    "Mantener este ciclo como base canonica operativa del nodo.",
+    "Normalizar manualmente rastros de ciclo 1 antes de automatizar saltos.",
+    "Ciclo 2 necesita normalizacion manual si se reutiliza."
+  ],
+  "open_questions": [
+    "Definir nombre oficial de figura docente. [supuesto detectado]",
+    "Confirmar matricula real del alumno en lugar de UANL-IMTC. [supuesto detectado]",
+    "Actualizar referencia oficial completa del programa analitico 2026. [supuesto detectado]",
+    "Verificar si actividad 1 requiere secciones adicionales por rubrica institucional. [supuesto detectado]",
+    "Confirmar nombre oficial de figura docente. [supuesto]",
+    "Confirmar matricula real del alumno en lugar de UANL-IMTC. [supuesto]",
+    "Actualizar referencia oficial completa del programa analitico 2026. [supuesto]",
+    "Confirmar si Actividad 1 requiere secciones extra por rubrica institucional. [supuesto]"
+  ],
+  "artifact_name": "reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1",
+  "sources": [
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/actividad-1",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/programa-analitico-laboratorio-de-ondas-y-calor-imtc.md",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/laboratorio-de-ondas-y-calor-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+  ],
+  "artifact_types": [
+    "reporte"
+  ],
+  "supported_artifact_types": [],
+  "source_documents": [
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/programa-analitico-laboratorio-de-ondas-y-calor-imtc.md",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/laboratorio-de-ondas-y-calor-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+  ],
+  "source_fragments": [
+    "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de ondas y calor.",
+    "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+  ],
+  "concepts": [
+    "Programa analitico de laboratorio-de-ondas-y-calor-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/laboratorio-de-ondas-y-calor-imtc.bib"
+  ],
+  "section_titles": [
+    "Introduccion",
+    "Desarrollo",
+    "Conclusiones",
+    "Actividad 1"
+  ],
+  "citations": [],
+  "bibliography_index": [
+    "programa-laboratorio-de-ondas-y-calor-imtc :: Programa analitico de laboratorio-de-ondas-y-calor-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/laboratorio-de-ondas-y-calor-imtc.bib"
+  ],
+  "node_metadata": {
+    "scope_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/actividad-1",
+    "level": "actividad",
+    "label": "Actividad 1",
+    "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc",
+    "institution": "UANL",
+    "career": "ingenieria-en-mecatronica",
+    "subject": "laboratorio-de-ondas-y-calor-imtc",
+    "activity": "Actividad 1",
+    "parent_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc"
+  },
+  "curricular_context": {
+    "institutional_frame": "",
+    "purpose": "",
+    "work_axes": [],
+    "source_fragments": [],
+    "coursename": "Laboratorio De Ondas Y Calor",
+    "coursecode": "IMTC",
+    "documentsubject": "Ingenieria en Mecatronica",
+    "documenttitle": "Laboratorio De Ondas Y Calor",
+    "documentsubtitle": "Reporte integral - laboratorio-de-ondas-y-calor-imtc"
+  },
+  "artifact_templates": {},
+  "editorial_dna": {
+    "identity": {
+      "tone": [
+        "Formal",
+        "Tecnico",
+        "Directo",
+        "Orientado a evidencia"
+      ],
+      "institutional": [
+        "Universidad Autonoma de Nuevo Leon",
+        "Facultad de Ingenieria Mecanica y Electrica",
+        "Sede: San Nicolas de los Garza, Nuevo Leon",
+        "San Nicolas de los Garza, Nuevo Leon"
+      ],
+      "curricular": [
+        "Ingenieria en Mecatronica",
+        "Laboratorio De Ondas Y Calor",
+        "Codigo IMTC"
+      ],
+      "node_metadata": {
+        "scope_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/actividad-1",
+        "level": "actividad",
+        "label": "Actividad 1",
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc",
+        "institution": "UANL",
+        "career": "ingenieria-en-mecatronica",
+        "subject": "laboratorio-de-ondas-y-calor-imtc",
+        "activity": "Actividad 1",
+        "parent_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc"
+      },
+      "curricular_context": {
+        "institutional_frame": "",
+        "purpose": "",
+        "work_axes": [],
+        "source_fragments": [],
+        "coursename": "Laboratorio De Ondas Y Calor",
+        "coursecode": "IMTC",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "documenttitle": "Laboratorio De Ondas Y Calor",
+        "documentsubtitle": "Reporte integral - laboratorio-de-ondas-y-calor-imtc"
+      },
+      "identity_rules": [
+        "Usar identidad institucional UANL y FIME en portada y metadatos.",
+        "Mantener programa curricular: Ingenieria en Mecatronica.",
+        "Mantener asignatura y codigo: Laboratorio De Ondas Y Calor, IMTC.",
+        "Conservar tono tecnico-academico, formal y directo.",
+        "Declarar supuestos cuando falte dato docente o de matricula.",
+        "Fuente provisional: Claude Foundry desde Actividad 1",
+        "Fuente provisional: GPT-Pro desde Actividad 1",
+        "Marcar como provisional toda huella de motor si no aporta fuente academica verificable. [supuesto]",
+        "Fuente provisional: Auto (model-router) desde Actividad 1",
+        "Fuente provisional: Claude Foundry desde Actividad 1.",
+        "Fuente provisional: GPT-Pro desde Actividad 1.",
+        "Fuente provisional: Auto (model-router) desde Actividad 1."
+      ]
+    },
+    "essence": [
+      "Actividad 1",
+      "Consigna tecnica",
+      "Evidencia",
+      "Analisis",
+      "Resultados",
+      "Limitaciones",
+      "Mejoras",
+      "Programa analitico",
+      "Ingenieria en mecatronica",
+      "IMTC",
+      "Nodo inicial canonizado con memoria local verificable",
+      "Se preserva plantilla LaTeX de actividad 1 como base reconstruible",
+      "Se integra alineacion obligatoria al programa analitico del laboratorio",
+      "Se registra una cita local disponible en archivo .bib",
+      "Usar identidad institucional UANL y FIME en portada y metadatos",
+      "Mantener programa curricular: Ingenieria en Mecatronica",
+      "Mantener asignatura y codigo: Laboratorio De Ondas Y Calor, IMTC",
+      "Conservar tono tecnico-academico, formal y directo",
+      "Declarar supuestos cuando falte dato docente o de matricula",
+      "Estructura minima de actividad: Actividad, Desarrollo, Cierre",
+      "Cada actividad debe declarar objetivo verificable y medible.",
+      "Relacionar el objetivo con competencias de laboratorio de ondas y calor.",
+      "Documentar procedimiento tecnico de forma replicable.",
+      "Registrar evidencia experimental o academica con trazabilidad."
+    ],
+    "structure": {
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones",
+        "Actividad 1"
+      ],
+      "artifact_name": "reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1",
+      "artifact_types": [
+        "reporte"
+      ],
+      "tex_functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "bibliography"
+        ]
+      }
+    },
+    "reason_for_being": [
+      "Estructura minima de actividad: Actividad, Desarrollo, Cierre.",
+      "Incluir consigna tecnica explicita al inicio de la actividad.",
+      "En Desarrollo incluir evidencias, analisis y referencias.",
+      "En Cierre incluir resultados, limitaciones y mejoras.",
+      "Alinear objetivo de actividad con programa analitico del curso.",
+      "Mantener estructura minima: Actividad, Desarrollo, Cierre.",
+      "Incluir consigna tecnica explicita al inicio.",
+      "Incluir en Desarrollo: evidencias, analisis y referencias.",
+      "Incluir en Cierre: resultados, limitaciones y mejoras.",
+      "Alinear el objetivo con el programa analitico del curso.",
+      "Cada actividad debe declarar objetivo verificable y medible.",
+      "Relacionar el objetivo con competencias de laboratorio de ondas y calor.",
+      "Documentar procedimiento tecnico de forma replicable.",
+      "Registrar evidencia experimental o academica con trazabilidad.",
+      "Cerrar con aprendizaje aplicado a ingenieria en mecatronica.",
+      "Declarar objetivo verificable y medible en cada actividad.",
+      "Vincular objetivo con competencias de laboratorio de ondas y calor.",
+      "Introduccion",
+      "Desarrollo",
+      "Conclusiones",
+      "Actividad 1"
+    ],
+    "style_markers": [
+      "Metadatos institucionales en macros LaTeX.",
+      "Secciones breves con instrucciones accionables.",
+      "Cierre con resultados, limitaciones y mejoras.",
+      "Usar identidad institucional UANL y FIME en portada y metadatos.",
+      "Mantener programa curricular: Ingenieria en Mecatronica.",
+      "Mantener asignatura y codigo: Laboratorio De Ondas Y Calor, IMTC.",
+      "Conservar tono tecnico-academico, formal y directo.",
+      "Declarar supuestos cuando falte dato docente o de matricula.",
+      "Conservar macros institucionales y de curso definidas al inicio.",
+      "Mantener \\input{template} y bloques de portada institucional.",
+      "Usar \\onehalfspacing en el cuerpo del reporte.",
+      "No eliminar secciones base de actividad ya establecidas.",
+      "Mantener bibliographystyle natnumurl y archivo bib del curso.",
+      "Cadena argumentativa objetivo->evidencia->analisis->cierre.",
+      "Uso explicito de supuestos cuando falten datos.",
+      "Marcar como provisional toda huella de motor si no aporta fuente academica verificable. [supuesto]",
+      "Mantener autor canonico: Martin Jonathan de la Cruz. [verificado en .tex]",
+      "Secciones breves y accionables.",
+      "Cadena argumental objetivo -> evidencia -> analisis -> cierre.",
+      "Supuestos explicitados cuando falte dato oficial."
+    ],
+    "argumentative_patterns": [
+      "Objetivo tecnico -> procedimiento/evidencia -> analisis -> conclusion aplicada.",
+      "Afirmaciones respaldadas por evidencia local y cita bibliografica.",
+      "Identificacion de limites del trabajo y propuesta de mejora.",
+      "Estructura minima de actividad: Actividad, Desarrollo, Cierre.",
+      "Incluir consigna tecnica explicita al inicio de la actividad.",
+      "En Desarrollo incluir evidencias, analisis y referencias.",
+      "En Cierre incluir resultados, limitaciones y mejoras.",
+      "Alinear objetivo de actividad con programa analitico del curso.",
+      "Cada actividad debe declarar objetivo verificable y medible.",
+      "Relacionar el objetivo con competencias de laboratorio de ondas y calor.",
+      "Documentar procedimiento tecnico de forma replicable.",
+      "Registrar evidencia experimental o academica con trazabilidad.",
+      "Cerrar con aprendizaje aplicado a ingenieria en mecatronica.",
+      "No inventar fuentes; citar solo entradas existentes en .bib.",
+      "Verificar congruencia entre titulo, subtitulo, materia y codigo.",
+      "Comprobar que la bibliografia compila con estilo natnumurl.",
+      "Marcar campos pendientes como supuestos explicitamente.",
+      "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+      "Afirmacion relevante -> respaldo en fuente local -> cierre operativo.",
+      "Limite identificado -> mejora propuesta -> aplicacion a mecatronica."
+    ],
+    "reinforcement_log": [
+      "Se consolida estructura minima de actividad desde fuente .tex local.",
+      "Se ancla alineacion curricular al checklist del programa analitico.",
+      "Se registra cita disponible sin inventar nuevas fuentes.",
+      "Se preserva regla institucional de control de parseo por antecedente de fallo.",
+      "Se mantiene compresion por union-dedupe sin perdida de reglas utiles.",
+      "Refuerzo editorial aplicado sobre 53 conceptos y 0 citas.",
+      "Nodo inicial canonizado con memoria local verificable.",
+      "Se preserva plantilla LaTeX de actividad 1 como base reconstruible.",
+      "ADN sintetizado con 54 conceptos, 1 citas y 26 relaciones.",
+      "Memoria de redacción preservada en 7 bloques.",
+      "Refuerzo editorial aplicado sobre 1 conceptos y 0 citas.",
+      "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+      "ADN sintetizado con 55 conceptos, 1 citas y 26 relaciones.",
+      "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+      "Se preservo toda la memoria valida del mismo nodo sin recortes.",
+      "Se aplico union y deduplicacion semantica en reglas repetidas.",
+      "Se reforzo la cadena de trazabilidad objetivo-programa-evidencia-cierre.",
+      "No se agregaron fuentes nuevas ni citas no verificables.",
+      "Se mantuvo control de supuestos institucionales pendientes.",
+      "Refuerzo editorial aplicado sobre 60 conceptos y 0 citas.",
+      "Nodo local consolidado sin cambios estructurales y con deduplicacion completa.",
+      "Se preserva la plantilla LaTeX reconstruible de Actividad 1 y su contrato editorial.",
+      "ADN sintetizado con 74 conceptos, 1 citas y 34 relaciones.",
+      "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+      "Refuerzo editorial aplicado sobre 7 conceptos y 0 citas.",
+      "ADN sintetizado con 75 conceptos, 1 citas y 40 relaciones.",
+      "Ciclo 2: union y deduplicacion completadas sin eliminar reglas utiles.",
+      "Ciclo 2: se reforzo verificacion local de identidad y citas.",
+      "Ciclo 2: se preservo contrato LaTeX reconstruible del nodo.",
+      "Ciclo 2: se mantuvo alerta por riesgo historico de salida no parseable.",
+      "ADN sintetizado con 114 conceptos, 1 citas y 49 relaciones."
+    ],
+    "knowledge_graph": {
+      "concepts": [
+        "Actividad 1",
+        "Consigna tecnica",
+        "Evidencia",
+        "Analisis",
+        "Resultados",
+        "Limitaciones",
+        "Mejoras",
+        "Programa analitico",
+        "Ingenieria en mecatronica",
+        "IMTC",
+        "Nodo inicial canonizado con memoria local verificable",
+        "Se preserva plantilla LaTeX de actividad 1 como base reconstruible",
+        "Se integra alineacion obligatoria al programa analitico del laboratorio",
+        "Se registra una cita local disponible en archivo .bib",
+        "Usar identidad institucional UANL y FIME en portada y metadatos",
+        "Mantener programa curricular: Ingenieria en Mecatronica",
+        "Mantener asignatura y codigo: Laboratorio De Ondas Y Calor, IMTC",
+        "Conservar tono tecnico-academico, formal y directo",
+        "Declarar supuestos cuando falte dato docente o de matricula",
+        "Estructura minima de actividad: Actividad, Desarrollo, Cierre",
+        "Incluir consigna tecnica explicita al inicio de la actividad",
+        "En Desarrollo incluir evidencias, analisis y referencias",
+        "En Cierre incluir resultados, limitaciones y mejoras",
+        "Alinear objetivo de actividad con programa analitico del curso",
+        "Cada actividad debe declarar objetivo verificable y medible",
+        "Relacionar el objetivo con competencias de laboratorio de ondas y calor",
+        "Documentar procedimiento tecnico de forma replicable",
+        "Registrar evidencia experimental o academica con trazabilidad",
+        "Cerrar con aprendizaje aplicado a ingenieria en mecatronica",
+        "No inventar fuentes; citar solo entradas existentes en .bib",
+        "Verificar congruencia entre titulo, subtitulo, materia y codigo",
+        "Comprobar que la bibliografia compila con estilo natnumurl",
+        "Marcar campos pendientes como supuestos explicitamente",
+        "Definir nombre oficial de figura docente. [supuesto detectado]",
+        "Confirmar matricula real del alumno en lugar de UANL-IMTC. [supuesto detectado]",
+        "Actualizar referencia oficial completa del programa analitico 2026. [supuesto detectado]",
+        "Verificar si actividad 1 requiere secciones adicionales por rubrica institucional. [supuesto detectado]",
+        "Plantilla academica reproducible para actividades de laboratorio",
+        "Trazabilidad entre consigna, desarrollo, cierre y evidencia",
+        "Alineacion explicita con programa analitico del curso",
+        "Estandarizar reportes de actividad con calidad tecnica y academica",
+        "Facilitar evaluacion docente con estructura estable y verificable",
+        "Conectar resultados de laboratorio con formacion mecatronica aplicada",
+        "Metadatos institucionales en macros LaTeX",
+        "Secciones breves con instrucciones accionables",
+        "Cierre con resultados, limitaciones y mejoras",
+        "Objetivo tecnico -> procedimiento/evidencia -> analisis -> conclusion aplicada",
+        "Afirmaciones respaldadas por evidencia local y cita bibliografica",
+        "Identificacion de limites del trabajo y propuesta de mejora",
+        "programa-laboratorio-de-ondas-y-calor-imtc",
+        "programa-analitico-laboratorio-de-ondas-y-calor-imtc.md",
+        "reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex",
+        "laboratorio-de-ondas-y-calor-imtc.bib",
+        "Programa analitico de laboratorio-de-ondas-y-calor-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/laboratorio-de-ondas-y-calor-imtc.bib",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo",
+        "Plantilla LaTeX reconstruible",
+        "Se preserva la plantilla LaTeX reconstruible de Actividad 1 y su contrato editorial",
+        "Se mantiene la alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica",
+        "Se conserva la unica cita local verificable en el .bib del curso",
+        "Marcar como provisional toda huella de motor si no aporta fuente academica verificable. [supuesto]",
+        "Actividad 1 con consigna tecnica explicita",
+        "Desarrollo con evidencia y analisis trazable",
+        "Alineacion obligatoria al programa analitico",
+        "Aplicacion a contexto de ingenieria en mecatronica",
+        "Plantilla LaTeX reconstruible como base canonica",
+        "Garantizar entregables tecnicos consistentes, verificables y compilables",
+        "Evitar deriva editorial y mantener trazabilidad fuente-argumento-conclusion",
+        "Convertir la plantilla en memoria operativa reusable por actividad",
+        "Cadena argumentativa objetivo->evidencia->analisis->cierre",
+        "Uso explicito de supuestos cuando falten datos",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/programa-analitico-laboratorio-de-ondas-y-calor-imtc.md",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/laboratorio-de-ondas-y-calor-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex",
+        "Mantener autor canonico: Martin Jonathan de la Cruz. [verificado en .tex]",
+        "Objetivo verificable",
+        "Nodo local canonizado y consolidado sin regresion",
+        "Se preserva la plantilla LaTeX reconstruible de Actividad 1",
+        "Se mantiene alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica",
+        "Se conserva la cita local verificable en el .bib del curso",
+        "Se mantiene alerta operativa por salidas no parseables en ciclos previos",
+        "Se verifica en .tex el autor: Martin Jonathan de la Cruz",
+        "Se mantiene [supuesto] en matricula y figura docente hasta validacion oficial",
+        "Marcar como provisional toda huella de motor sin fuente academica verificable. [supuesto]",
+        "Registrar como verificado solo lo presente en fuentes locales (.tex, .md, .bib)",
+        "Mantener estructura minima: Actividad, Desarrollo, Cierre",
+        "Incluir consigna tecnica explicita al inicio",
+        "Incluir en Desarrollo: evidencias, analisis y referencias",
+        "Incluir en Cierre: resultados, limitaciones y mejoras",
+        "Alinear el objetivo con el programa analitico del curso",
+        "Declarar objetivo verificable y medible en cada actividad",
+        "Vincular objetivo con competencias de laboratorio de ondas y calor",
+        "No inventar fuentes; usar solo entradas existentes en .bib local",
+        "Comprobar compilacion bibliografica con estilo natnumurl",
+        "Marcar pendientes como [supuesto] de forma explicita",
+        "Confirmar nombre oficial de figura docente. [supuesto]",
+        "Confirmar matricula real del alumno en lugar de UANL-IMTC. [supuesto]",
+        "Actualizar referencia oficial completa del programa analitico 2026. [supuesto]",
+        "Confirmar si Actividad 1 requiere secciones extra por rubrica institucional. [supuesto]",
+        "Consigna tecnica clara",
+        "Evidencia verificable",
+        "Analisis tecnico",
+        "Cierre con mejora",
+        "Alineacion curricular",
+        "Estandarizar Actividad 1 con trazabilidad editorial",
+        "Garantizar coherencia entre objetivo, evidencia y cierre",
+        "Preservar identidad institucional y contrato de compilacion",
+        "Evitar invenciones y sostener verificabilidad local",
+        "Secciones breves y accionables",
+        "Cadena argumental objetivo -> evidencia -> analisis -> cierre",
+        "Supuestos explicitados cuando falte dato oficial",
+        "Afirmacion relevante -> respaldo en fuente local -> cierre operativo",
+        "Limite identificado -> mejora propuesta -> aplicacion a mecatronica",
+        "Mantener autor verificado en .tex: Martin Jonathan de la Cruz. [verificado en .tex]"
+      ],
+      "citations": [
+        "programa-laboratorio-de-ondas-y-calor-imtc"
+      ],
+      "evidence": [
+        "programa-analitico-laboratorio-de-ondas-y-calor-imtc.md",
+        "reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex",
+        "laboratorio-de-ondas-y-calor-imtc.bib",
+        "Nodo inicial canonizado con memoria local verificable.",
+        "Se preserva plantilla LaTeX de actividad 1 como base reconstruible.",
+        "Se integra alineacion obligatoria al programa analitico del laboratorio.",
+        "Se registra una cita local disponible en archivo .bib.",
+        "Se mantiene alerta institucional: en ciclo previo hubo salida no parseable.",
+        "Validar JSON parseable en toda salida de consolidacion.",
+        "No inventar fuentes; citar solo entradas existentes en .bib.",
+        "Verificar congruencia entre titulo, subtitulo, materia y codigo.",
+        "Comprobar que la bibliografia compila con estilo natnumurl.",
+        "Marcar campos pendientes como supuestos explicitamente.",
+        "programa-laboratorio-de-ondas-y-calor-imtc :: Programa analitico de laboratorio-de-ondas-y-calor-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/laboratorio-de-ondas-y-calor-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/programa-analitico-laboratorio-de-ondas-y-calor-imtc.md",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/laboratorio-de-ondas-y-calor-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex",
+        "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+        "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+        "Nodo local consolidado sin cambios estructurales y con deduplicacion completa.",
+        "Se preserva la plantilla LaTeX reconstruible de Actividad 1 y su contrato editorial.",
+        "Se mantiene la alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica.",
+        "Se conserva la unica cita local verificable en el .bib del curso.",
+        "Se mantiene alerta operativa por antecedentes de salida no parseable en ciclo previo.",
+        "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+        "Nodo local canonizado y consolidado sin regresion.",
+        "Se preserva la plantilla LaTeX reconstruible de Actividad 1.",
+        "Se mantiene alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica.",
+        "Se conserva la cita local verificable en el .bib del curso.",
+        "Se mantiene alerta operativa por salidas no parseables en ciclos previos.",
+        "Se verifica en .tex el autor: Martin Jonathan de la Cruz.",
+        "Se mantiene [supuesto] en matricula y figura docente hasta validacion oficial.",
+        "No inventar fuentes; usar solo entradas existentes en .bib local.",
+        "Comprobar compilacion bibliografica con estilo natnumurl.",
+        "Marcar pendientes como [supuesto] de forma explicita.",
+        "Revisar salidas no estructuradas antes de propagacion aguas abajo."
+      ],
+      "relations": [
+        {
+          "source": "Objetivo de actividad",
+          "target": "Programa analitico",
+          "kind": "depends_on",
+          "weight": 3,
+          "justification": "Checklist local exige alineacion del objetivo con el programa analitico.",
+          "evidence": []
+        },
+        {
+          "source": "Desarrollo",
+          "target": "Evidencia",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "La plantilla indica incluir evidencias y analisis en esta seccion.",
+          "evidence": []
+        },
+        {
+          "source": "Cierre",
+          "target": "Resultados",
+          "kind": "develops",
+          "weight": 3,
+          "justification": "La plantilla exige registrar resultados, limitaciones y mejoras.",
+          "evidence": []
+        },
+        {
+          "source": "Conclusiones",
+          "target": "Ingenieria en mecatronica",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "Checklist editorial pide enfoque de ingenieria en mecatronica.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo inicial canonizado con memoria local verificable",
+          "target": "Se preserva plantilla LaTeX de actividad 1 como base reconstruible",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo inicial canonizado con memoria local verificable",
+          "target": "Se integra alineacion obligatoria al programa analitico del laboratorio",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva plantilla LaTeX de actividad 1 como base reconstruible",
+          "target": "Se integra alineacion obligatoria al programa analitico del laboratorio",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva plantilla LaTeX de actividad 1 como base reconstruible",
+          "target": "Se registra una cita local disponible en archivo .bib",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se integra alineacion obligatoria al programa analitico del laboratorio",
+          "target": "Se registra una cita local disponible en archivo .bib",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se integra alineacion obligatoria al programa analitico del laboratorio",
+          "target": "Usar identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se registra una cita local disponible en archivo .bib",
+          "target": "Usar identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se registra una cita local disponible en archivo .bib",
+          "target": "Mantener programa curricular: Ingenieria en Mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar identidad institucional UANL y FIME en portada y metadatos",
+          "target": "Mantener programa curricular: Ingenieria en Mecatronica",
+          "kind": "cohesion",
+          "weight": 4,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Actividad 1",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0001"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Consigna tecnica",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0002"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Desarrollo",
+          "kind": "organizes",
+          "weight": 2,
+          "evidence": [
+            "b0003",
+            "b0004"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Evidencia",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0004"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Analisis",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0004"
+          ]
+        },
+        {
+          "source": "Evidencia",
+          "target": "Analisis",
+          "kind": "cooccurrence",
+          "weight": 1,
+          "evidence": [
+            "b0004"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Cierre",
+          "kind": "organizes",
+          "weight": 3,
+          "evidence": [
+            "b0005",
+            "b0006",
+            "b0007"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Resultados",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0006"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Limitaciones",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0006"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Mejoras",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0006"
+          ]
+        },
+        {
+          "source": "Resultados",
+          "target": "Limitaciones",
+          "kind": "cooccurrence",
+          "weight": 1,
+          "evidence": [
+            "b0006"
+          ]
+        },
+        {
+          "source": "Resultados",
+          "target": "Mejoras",
+          "kind": "cooccurrence",
+          "weight": 1,
+          "evidence": [
+            "b0006"
+          ]
+        },
+        {
+          "source": "Limitaciones",
+          "target": "Mejoras",
+          "kind": "cooccurrence",
+          "weight": 1,
+          "evidence": [
+            "b0006"
+          ]
+        },
+        {
+          "source": "Se preserva la plantilla LaTeX reconstruible de Actividad 1 y su contrato editorial",
+          "target": "Se mantiene la alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva la plantilla LaTeX reconstruible de Actividad 1 y su contrato editorial",
+          "target": "Se conserva la unica cita local verificable en el .bib del curso",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene la alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica",
+          "target": "Se conserva la unica cita local verificable en el .bib del curso",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene la alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica",
+          "target": "Usar identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva la unica cita local verificable en el .bib del curso",
+          "target": "Usar identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva la unica cita local verificable en el .bib del curso",
+          "target": "Mantener programa curricular: Ingenieria en Mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar identidad institucional UANL y FIME en portada y metadatos",
+          "target": "Mantener asignatura y codigo: Laboratorio De Ondas Y Calor, IMTC",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener programa curricular: Ingenieria en Mecatronica",
+          "target": "Mantener asignatura y codigo: Laboratorio De Ondas Y Calor, IMTC",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener programa curricular: Ingenieria en Mecatronica",
+          "target": "Conservar tono tecnico-academico, formal y directo",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener asignatura y codigo: Laboratorio De Ondas Y Calor, IMTC",
+          "target": "Conservar tono tecnico-academico, formal y directo",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener asignatura y codigo: Laboratorio De Ondas Y Calor, IMTC",
+          "target": "Declarar supuestos cuando falte dato docente o de matricula",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Conservar tono tecnico-academico, formal y directo",
+          "target": "Declarar supuestos cuando falte dato docente o de matricula",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Conservar tono tecnico-academico, formal y directo",
+          "target": "Marcar como provisional toda huella de motor si no aporta fuente academica verificable. [supuesto]",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Declarar supuestos cuando falte dato docente o de matricula",
+          "target": "Marcar como provisional toda huella de motor si no aporta fuente academica verificable. [supuesto]",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo local canonizado y consolidado sin regresion",
+          "target": "Se preserva la plantilla LaTeX reconstruible de Actividad 1",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo local canonizado y consolidado sin regresion",
+          "target": "Se mantiene alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva la plantilla LaTeX reconstruible de Actividad 1",
+          "target": "Se mantiene alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva la plantilla LaTeX reconstruible de Actividad 1",
+          "target": "Se conserva la cita local verificable en el .bib del curso",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica",
+          "target": "Se conserva la cita local verificable en el .bib del curso",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica",
+          "target": "Se mantiene alerta operativa por salidas no parseables en ciclos previos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva la cita local verificable en el .bib del curso",
+          "target": "Se mantiene alerta operativa por salidas no parseables en ciclos previos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva la cita local verificable en el .bib del curso",
+          "target": "Se verifica en .tex el autor: Martin Jonathan de la Cruz",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene alerta operativa por salidas no parseables en ciclos previos",
+          "target": "Se verifica en .tex el autor: Martin Jonathan de la Cruz",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        }
+      ],
+      "concept_weights": {
+        "Nodo inicial canonizado con memoria local verificable": 1,
+        "Se preserva plantilla LaTeX de actividad 1 como base reconstruible": 1,
+        "Se integra alineacion obligatoria al programa analitico del laboratorio": 1,
+        "Se registra una cita local disponible en archivo .bib": 1,
+        "Usar identidad institucional UANL y FIME en portada y metadatos": 5,
+        "Mantener programa curricular: Ingenieria en Mecatronica": 5,
+        "Mantener asignatura y codigo: Laboratorio De Ondas Y Calor, IMTC": 5,
+        "Conservar tono tecnico-academico, formal y directo": 5,
+        "Declarar supuestos cuando falte dato docente o de matricula": 5,
+        "Estructura minima de actividad: Actividad, Desarrollo, Cierre": 2,
+        "Incluir consigna tecnica explicita al inicio de la actividad": 2,
+        "En Desarrollo incluir evidencias, analisis y referencias": 2,
+        "En Cierre incluir resultados, limitaciones y mejoras": 2,
+        "Alinear objetivo de actividad con programa analitico del curso": 2,
+        "Cada actividad debe declarar objetivo verificable y medible": 2,
+        "Relacionar el objetivo con competencias de laboratorio de ondas y calor": 2,
+        "Documentar procedimiento tecnico de forma replicable": 3,
+        "Registrar evidencia experimental o academica con trazabilidad": 3,
+        "Cerrar con aprendizaje aplicado a ingenieria en mecatronica": 3,
+        "No inventar fuentes; citar solo entradas existentes en .bib": 2,
+        "Verificar congruencia entre titulo, subtitulo, materia y codigo": 3,
+        "Comprobar que la bibliografia compila con estilo natnumurl": 2,
+        "Marcar campos pendientes como supuestos explicitamente": 2,
+        "Definir nombre oficial de figura docente. [supuesto detectado]": 2,
+        "Confirmar matricula real del alumno en lugar de UANL-IMTC. [supuesto detectado]": 2,
+        "Actualizar referencia oficial completa del programa analitico 2026. [supuesto detectado]": 2,
+        "Verificar si actividad 1 requiere secciones adicionales por rubrica institucional. [supuesto detectado]": 1,
+        "Plantilla academica reproducible para actividades de laboratorio": 1,
+        "Trazabilidad entre consigna, desarrollo, cierre y evidencia": 1,
+        "Alineacion explicita con programa analitico del curso": 1,
+        "Estandarizar reportes de actividad con calidad tecnica y academica": 1,
+        "Facilitar evaluacion docente con estructura estable y verificable": 1,
+        "Conectar resultados de laboratorio con formacion mecatronica aplicada": 1,
+        "Metadatos institucionales en macros LaTeX": 3,
+        "Secciones breves con instrucciones accionables": 2,
+        "Cierre con resultados, limitaciones y mejoras": 2,
+        "Objetivo tecnico -> procedimiento/evidencia -> analisis -> conclusion aplicada": 3,
+        "Afirmaciones respaldadas por evidencia local y cita bibliografica": 2,
+        "Identificacion de limites del trabajo y propuesta de mejora": 2,
+        "Actividad 1": 3,
+        "Consigna tecnica": 2,
+        "Evidencia": 3,
+        "Analisis": 3,
+        "Resultados": 3,
+        "Limitaciones": 3,
+        "Mejoras": 3,
+        "Programa analitico": 3,
+        "Ingenieria en mecatronica": 3,
+        "IMTC": 3,
+        "programa-laboratorio-de-ondas-y-calor-imtc": 3,
+        "programa-analitico-laboratorio-de-ondas-y-calor-imtc.md": 1,
+        "reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex": 1,
+        "laboratorio-de-ondas-y-calor-imtc.bib": 1,
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo": 5,
+        "Se preserva la plantilla LaTeX reconstruible de Actividad 1 y su contrato editorial": 1,
+        "Se mantiene la alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica": 1,
+        "Se conserva la unica cita local verificable en el .bib del curso": 1,
+        "Marcar como provisional toda huella de motor si no aporta fuente academica verificable. [supuesto]": 3,
+        "Verificar si Actividad 1 requiere secciones adicionales por rubrica institucional. [supuesto detectado]": 1,
+        "Actividad 1 con consigna tecnica explicita": 1,
+        "Desarrollo con evidencia y analisis trazable": 1,
+        "Alineacion obligatoria al programa analitico": 1,
+        "Aplicacion a contexto de ingenieria en mecatronica": 1,
+        "Plantilla LaTeX reconstruible como base canonica": 1,
+        "Garantizar entregables tecnicos consistentes, verificables y compilables": 1,
+        "Evitar deriva editorial y mantener trazabilidad fuente-argumento-conclusion": 1,
+        "Convertir la plantilla en memoria operativa reusable por actividad": 1,
+        "Cadena argumentativa objetivo->evidencia->analisis->cierre": 1,
+        "Uso explicito de supuestos cuando falten datos": 1,
+        "Plantilla LaTeX reconstruible": 2,
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/programa-analitico-laboratorio-de-ondas-y-calor-imtc.md": 2,
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/laboratorio-de-ondas-y-calor-imtc.bib": 2,
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex": 1,
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex": 2,
+        "Mantener autor canonico: Martin Jonathan de la Cruz. [verificado en .tex]": 1,
+        "Nodo local canonizado y consolidado sin regresion": 1,
+        "Se preserva la plantilla LaTeX reconstruible de Actividad 1": 1,
+        "Se mantiene alineacion obligatoria entre objetivo, programa analitico y cierre aplicado a mecatronica": 1,
+        "Se conserva la cita local verificable en el .bib del curso": 1,
+        "Se mantiene alerta operativa por salidas no parseables en ciclos previos": 1,
+        "Se verifica en .tex el autor: Martin Jonathan de la Cruz": 1,
+        "Se mantiene [supuesto] en matricula y figura docente hasta validacion oficial": 1,
+        "Marcar como provisional toda huella de motor sin fuente academica verificable. [supuesto]": 1,
+        "Registrar como verificado solo lo presente en fuentes locales (.tex, .md, .bib)": 1,
+        "Mantener estructura minima: Actividad, Desarrollo, Cierre": 1,
+        "Incluir consigna tecnica explicita al inicio": 1,
+        "Incluir en Desarrollo: evidencias, analisis y referencias": 1,
+        "Incluir en Cierre: resultados, limitaciones y mejoras": 1,
+        "Alinear el objetivo con el programa analitico del curso": 1,
+        "Declarar objetivo verificable y medible en cada actividad": 1,
+        "Vincular objetivo con competencias de laboratorio de ondas y calor": 1,
+        "No inventar fuentes; usar solo entradas existentes en .bib local": 1,
+        "Comprobar compilacion bibliografica con estilo natnumurl": 1,
+        "Marcar pendientes como [supuesto] de forma explicita": 1,
+        "Confirmar nombre oficial de figura docente. [supuesto]": 1,
+        "Confirmar matricula real del alumno en lugar de UANL-IMTC. [supuesto]": 1,
+        "Actualizar referencia oficial completa del programa analitico 2026. [supuesto]": 1,
+        "Confirmar si Actividad 1 requiere secciones extra por rubrica institucional. [supuesto]": 1,
+        "Consigna tecnica clara": 1,
+        "Evidencia verificable": 1,
+        "Analisis tecnico": 1,
+        "Cierre con mejora": 1,
+        "Alineacion curricular": 1,
+        "Estandarizar Actividad 1 con trazabilidad editorial": 1,
+        "Garantizar coherencia entre objetivo, evidencia y cierre": 1,
+        "Preservar identidad institucional y contrato de compilacion": 1,
+        "Evitar invenciones y sostener verificabilidad local": 1,
+        "Secciones breves y accionables": 1,
+        "Cadena argumental objetivo -> evidencia -> analisis -> cierre": 1,
+        "Supuestos explicitados cuando falte dato oficial": 1,
+        "Afirmacion relevante -> respaldo en fuente local -> cierre operativo": 1,
+        "Limite identificado -> mejora propuesta -> aplicacion a mecatronica": 1,
+        "Objetivo verificable": 1,
+        "Mantener autor verificado en .tex: Martin Jonathan de la Cruz. [verificado en .tex]": 1
+      },
+      "citation_weights": {}
+    },
+    "writing_memory": [
+      {
+        "id": "b0001",
+        "order": 1,
+        "kind": "section",
+        "section": "Actividad 1",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Actividad 1",
+        "latex": "\\section{Actividad 1}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0002",
+        "order": 2,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+        "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0003",
+        "order": 3,
+        "kind": "subsection",
+        "section": "Actividad 1",
+        "subsection": "Desarrollo",
+        "paragraph_heading": "",
+        "text": "Desarrollo",
+        "latex": "\\subsection{Desarrollo}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0004",
+        "order": 4,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Desarrollo",
+        "paragraph_heading": "",
+        "text": "Incluir evidencias, analisis y referencias.",
+        "latex": "Incluir evidencias, analisis y referencias.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0005",
+        "order": 5,
+        "kind": "subsection",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "Cierre",
+        "latex": "\\subsection{Cierre}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0006",
+        "order": 6,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "Registrar resultados, limitaciones y mejoras.",
+        "latex": "Registrar resultados, limitaciones y mejoras.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0007",
+        "order": 7,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "natnumurl",
+        "latex": "\\bibliographystyle{natnumurl}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+      }
+    ],
+    "reconstructable_source": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Ondas Y Calor}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-ondas-y-calor-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Ondas Y Calor}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-ondas-y-calor-imtc}\n\n\\end{document}\n"
+  },
+  "tex_blueprint": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex",
+        "documenttitle": "Laboratorio De Ondas Y Calor",
+        "documentsubtitle": "Reporte integral - laboratorio-de-ondas-y-calor-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Laboratorio De Ondas Y Calor",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de ondas y calor.",
+        "section_titles": [
+          "Introduccion",
+          "Desarrollo",
+          "Conclusiones"
+        ],
+        "subsection_titles": [],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [
+          "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de ondas y calor.",
+          "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+        ],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex",
+          "raw_latex_sha256": "93c769037c55016a3cca0faeb511415151bff17891a10938902d108efed82523",
+          "raw_latex_chars": 1751,
+          "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Ondas Y Calor}\n\\def\\documentsubtitle {Reporte integral - laboratorio-de-ondas-y-calor-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Ondas Y Calor}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de ondas y calor.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-ondas-y-calor-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document",
+              "abstractd"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "templateIndex",
+              "templateFinalcfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de ondas y calor.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de ondas y calor.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de ondas y calor.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de ondas y calor.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      },
+      "reporte": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex",
+        "documenttitle": "Laboratorio De Ondas Y Calor",
+        "documentsubtitle": "Actividad 1 - laboratorio-de-ondas-y-calor-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Laboratorio De Ondas Y Calor",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "",
+        "section_titles": [
+          "Actividad 1"
+        ],
+        "subsection_titles": [
+          "Desarrollo",
+          "Cierre"
+        ],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex",
+          "raw_latex_sha256": "815b52ddb9922e761df9fe0147a8eeee3c4235591870479e7c2c7ce2dda0a9bc",
+          "raw_latex_chars": 1540,
+          "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Ondas Y Calor}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-ondas-y-calor-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Ondas Y Calor}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-ondas-y-calor-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "section",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Actividad 1",
+              "latex": "\\section{Actividad 1}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+              "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\subsection{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Incluir evidencias, analisis y referencias.",
+              "latex": "Incluir evidencias, analisis y referencias.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Cierre",
+              "latex": "\\subsection{Cierre}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Registrar resultados, limitaciones y mejoras.",
+              "latex": "Registrar resultados, limitaciones y mejoras.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "section",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Actividad 1",
+              "latex": "\\section{Actividad 1}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+              "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\subsection{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Incluir evidencias, analisis y referencias.",
+              "latex": "Incluir evidencias, analisis y referencias.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Cierre",
+              "latex": "\\subsection{Cierre}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Registrar resultados, limitaciones y mejoras.",
+              "latex": "Registrar resultados, limitaciones y mejoras.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex",
+      "documenttitle": "Laboratorio De Ondas Y Calor",
+      "documentsubtitle": "Actividad 1 - laboratorio-de-ondas-y-calor-imtc",
+      "documentsubject": "Ingenieria en Mecatronica",
+      "coursename": "Laboratorio De Ondas Y Calor",
+      "coursecode": "IMTC",
+      "documentauthor": "Martin Jonathan de la Cruz",
+      "abstract": "",
+      "section_titles": [
+        "Actividad 1"
+      ],
+      "subsection_titles": [
+        "Desarrollo",
+        "Cierre"
+      ],
+      "cited_keys": [],
+      "concepts": [],
+      "source_fragments": [],
+      "content_memory": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex",
+        "raw_latex_sha256": "815b52ddb9922e761df9fe0147a8eeee3c4235591870479e7c2c7ce2dda0a9bc",
+        "raw_latex_chars": 1540,
+        "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Ondas Y Calor}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-ondas-y-calor-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Ondas Y Calor}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-ondas-y-calor-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    }
+  },
+  "tex_content_memory": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex",
+        "raw_latex_sha256": "93c769037c55016a3cca0faeb511415151bff17891a10938902d108efed82523",
+        "raw_latex_chars": 1751,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Ondas Y Calor}\n\\def\\documentsubtitle {Reporte integral - laboratorio-de-ondas-y-calor-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Ondas Y Calor}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de ondas y calor.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-ondas-y-calor-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de ondas y calor.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de ondas y calor.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de ondas y calor.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de ondas y calor.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      },
+      "reporte": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex",
+        "raw_latex_sha256": "815b52ddb9922e761df9fe0147a8eeee3c4235591870479e7c2c7ce2dda0a9bc",
+        "raw_latex_chars": 1540,
+        "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Ondas Y Calor}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-ondas-y-calor-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Ondas Y Calor}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-ondas-y-calor-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex",
+      "raw_latex_sha256": "815b52ddb9922e761df9fe0147a8eeee3c4235591870479e7c2c7ce2dda0a9bc",
+      "raw_latex_chars": 1540,
+      "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Ondas Y Calor}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-ondas-y-calor-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Ondas Y Calor}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-ondas-y-calor-imtc}\n\n\\end{document}\n",
+      "functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "bibliography"
+        ]
+      },
+      "paragraph_map": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "section",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Actividad 1",
+          "latex": "\\section{Actividad 1}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+          "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\subsection{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Incluir evidencias, analisis y referencias.",
+          "latex": "Incluir evidencias, analisis y referencias.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Cierre",
+          "latex": "\\subsection{Cierre}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Registrar resultados, limitaciones y mejoras.",
+          "latex": "Registrar resultados, limitaciones y mejoras.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+        }
+      ],
+      "content_blocks": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "section",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Actividad 1",
+          "latex": "\\section{Actividad 1}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+          "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\subsection{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Incluir evidencias, analisis y referencias.",
+          "latex": "Incluir evidencias, analisis y referencias.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Cierre",
+          "latex": "\\subsection{Cierre}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Registrar resultados, limitaciones y mejoras.",
+          "latex": "Registrar resultados, limitaciones y mejoras.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/reporte-laboratorio-de-ondas-y-calor-imtc-Actividad-1.tex"
+        }
+      ],
+      "citation_map": {},
+      "all_cited_keys": [],
+      "missing_bibliography_keys": []
+    },
+    "bibliography_sources": {
+      "programa-laboratorio-de-ondas-y-calor-imtc": {
+        "key": "programa-laboratorio-de-ondas-y-calor-imtc",
+        "source_type": "bibtex",
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-ondas-y-calor-imtc/laboratorio-de-ondas-y-calor-imtc.bib",
+        "entry_type": "misc",
+        "title": "Programa analitico de laboratorio-de-ondas-y-calor-imtc",
+        "author": "UANL",
+        "year": "2026",
+        "url": "https://www.uanl.mx/",
+        "note": "Actualizar con la referencia oficial del curso",
+        "raw_entry": "@misc{programa-laboratorio-de-ondas-y-calor-imtc,\n  author = {UANL},\n  title = {Programa analitico de laboratorio-de-ondas-y-calor-imtc},\n  year = {2026},\n  note = {Actualizar con la referencia oficial del curso},\n  url = {https://www.uanl.mx/}\n}"
+      }
+    }
+  },
+  "locked_sections": [],
+  "compression": {
+    "method": "union-dedupe",
+    "lossless": true
+  },
+  "schema_version": 3
+}

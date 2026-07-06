@@ -1,0 +1,86 @@
+{
+  "passed": false,
+  "score": 0.0,
+  "basic_score": 0.0,
+  "checks": {
+    "tex_exists": false,
+    "pdf_exists": false,
+    "bibliography_ready": false,
+    "extractor_ready": false,
+    "draft_without_placeholders": false,
+    "sections_minimum": false,
+    "compile_ready": false
+  },
+  "critical_findings": [
+    "No se encontró TEX de actividad.",
+    "Hay claves bibliográficas faltantes o no hay .bib canónico.",
+    "No existe salida verificable del extractor para esta actividad.",
+    "Hay placeholders o pendientes activos.",
+    "La compilación falló.",
+    "El ciclo aún no puede cerrarse: siguiente acción requerida `repair-bibliography`."
+  ],
+  "warnings": [],
+  "next_action": "repair-bibliography",
+  "contract": {
+    "score": 0.0,
+    "passed": false,
+    "required_hits": 0,
+    "required_total": 8,
+    "checks": {
+      "objective": false,
+      "instruction_source": false,
+      "didactic_technique": false,
+      "output_format": false,
+      "bibliography": false,
+      "traceability": false,
+      "evaluation_criteria": false,
+      "final_reflection": false,
+      "sections_range": false,
+      "concepts_min": false
+    },
+    "required_checks": {
+      "objective": false,
+      "instruction_source": false,
+      "didactic_technique": false,
+      "output_format": false,
+      "bibliography": false,
+      "traceability": false,
+      "evaluation_criteria": false,
+      "final_reflection": false
+    },
+    "range_checks": {
+      "sections_range": false,
+      "concepts_min": false
+    },
+    "findings": [
+      "Falta objetivo pedagógico verificable en TEX o planeación.",
+      "No hay evidencia suficiente de consigna o propósito instruccional.",
+      "No se detecta con claridad la técnica didáctica o el producto esperado.",
+      "No se detecta un formato de salida consistente para la actividad.",
+      "La bibliografía no cumple el mínimo contractual.",
+      "La trazabilidad entre actividad, citas y extractor es insuficiente.",
+      "No se detectan criterios de evaluación o entrega suficientemente explícitos.",
+      "No se detecta cierre argumentativo o conclusión final.",
+      "La estructura de secciones queda fuera del rango contractual.",
+      "La cobertura conceptual extraída está por debajo del mínimo contractual."
+    ],
+    "contract": {
+      "required": {
+        "objective": true,
+        "instruction_source": true,
+        "didactic_technique": true,
+        "output_format": true,
+        "bibliography": true,
+        "traceability": true,
+        "evaluation_criteria": true,
+        "final_reflection": true
+      },
+      "acceptable_ranges": {
+        "sections_min": 3,
+        "sections_max": 8,
+        "bibliography_entries_min": 3,
+        "concepts_min": 5
+      }
+    }
+  }
+}

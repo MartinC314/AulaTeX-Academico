@@ -1,0 +1,2397 @@
+{
+  "summary": [
+    "Salida sin JSON parseable desde Codex para Actividad 1",
+    "Nodo actividad-1 de Laboratorio de Arquitectura de Robots (IMTC, UANL) con TEX reconstruible.",
+    "Reporte de actividad con estructura Actividad 1 -> Desarrollo -> Cierre.",
+    "Fuente inicial provino de Codex sin JSON parseable; requirio normalizacion manual en ciclo 1.",
+    "Bibliografia base con entrada provisional del programa analitico pendiente de referencia oficial.",
+    "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+    "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+    "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+    "Nodo actividad-1 de IMTC-UANL consolidado con TEX reconstruible.",
+    "Estructura canonica activa: Actividad 1 -> Desarrollo -> Cierre.",
+    "Se preserva historial de salidas no parseables y normalizacion manual en ciclo 1.",
+    "Bibliografia base provisional del programa analitico vigente y pendiente de fuente oficial.",
+    "Canonizacion local sin cambios destructivos; deduplicacion aplicada por union."
+  ],
+  "identity_rules": [
+    "Fuente provisional: Codex desde Actividad 1",
+    "Autor: Martin Jonathan de la Cruz; Matricula UANL-IMTC.",
+    "Institucion: UANL, Facultad de Ingenieria Mecanica y Electrica.",
+    "Asignatura: Laboratorio De Arquitectura De Robots (codigo IMTC).",
+    "Programa: Ingenieria en Mecatronica; ubicacion San Nicolas de los Garza, Nuevo Leon.",
+    "Documenttitle: Laboratorio De Arquitectura De Robots; subtitulo por actividad.",
+    "Figura docente pendiente de definir (marcar supuesto).",
+    "Fuente provisional: Codex desde Actividad 1 (heredada, conservar hasta canonizacion).",
+    "Fuente provisional: GPT-Pro desde Actividad 1",
+    "Fuente provisional: Claude Foundry desde Actividad 1",
+    "Fuente provisional: Auto (model-router) desde Actividad 1",
+    "Asignatura: Laboratorio De Arquitectura De Robots (IMTC).",
+    "Programa: Ingenieria en Mecatronica; San Nicolas de los Garza, Nuevo Leon.",
+    "Figura docente pendiente de definir [supuesto].",
+    "Fuentes provisionales de reconstruccion: Codex, GPT-Pro, Claude Foundry, Auto(model-router).",
+    "Conservar traza de origen provisional hasta canonizacion formal.",
+    "Universidad: Universidad Autonoma de Nuevo Leon.",
+    "Fuente provisional heredada: Codex/GPT-Pro/Claude Foundry/Auto (conservar hasta canonizacion)."
+  ],
+  "structure_rules": [
+    "Seccion unica: \\section{Actividad 1} con subsecciones Desarrollo y Cierre.",
+    "Desarrollo: incluir evidencias, analisis y referencias.",
+    "Cierre: registrar resultados, limitaciones y mejoras.",
+    "Portada via \\templatePortrait y configuracion \\templatePagecfg.",
+    "Interlineado \\onehalfspacing.",
+    "Mantener \\section{Actividad 1}.",
+    "Mantener subsecciones: Desarrollo y Cierre.",
+    "En Desarrollo incluir evidencias, analisis y referencias.",
+    "En Cierre registrar resultados, limitaciones y mejoras.",
+    "Portada con \\templatePortrait y \\templatePagecfg.",
+    "Aplicar \\onehalfspacing."
+  ],
+  "activity_rules": [
+    "Consigna tecnica: documentar y resolver el reto academico de la semana.",
+    "Objetivo de cada actividad alineado con el programa analitico.",
+    "Conclusiones con enfoque de ingenieria en mecatronica.",
+    "Documentar y resolver el reto academico semanal.",
+    "Alinear objetivo de actividad con programa analitico.",
+    "Sostener conclusiones con enfoque de ingenieria en mecatronica.",
+    "Explicitar consigna tecnica al inicio de la actividad."
+  ],
+  "quality_gates": [
+    "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+    "Evidencias tecnicas y academicas citadas desde laboratorio-de-arquitectura-de-robots-imtc.bib.",
+    "Verificar alineacion objetivo-actividad con el programa analitico.",
+    "Validar JSON parseable antes de propagar aguas abajo.",
+    "Validar JSON parseable antes de cualquier propagacion.",
+    "Revisar y normalizar salidas no estructuradas.",
+    "Verificar coherencia entre consigna, desarrollo y cierre.",
+    "Comprobar trazabilidad de evidencias al .bib local.",
+    "Confirmar alineacion con checklist del programa analitico."
+  ],
+  "latex_rules": [
+    "documentclass[spanish,letterpaper,oneside]{article}.",
+    "Usar \\input{template} para maquetacion compartida.",
+    "Definir metadatos via \\def (documenttitle, coursename, coursecode, etc.).",
+    "Logo institucional: UANL/assets-uanl/logo-uanl.png (width=3.2cm).",
+    "bibliographystyle{natnumurl} con \\bibliography{laboratorio-de-arquitectura-de-robots-imtc}.",
+    "No copiar TEX completo; mantener reconstruible por bloques.",
+    "Usar documentclass[spanish,letterpaper,oneside]{article}.",
+    "Usar \\input{template} para maquetacion comun.",
+    "Declarar metadatos por \\def (titulo, curso, codigo, autor, institucion).",
+    "Conservar logo UANL/assets-uanl/logo-uanl.png con width=3.2cm.",
+    "Cerrar con bibliographystyle{natnumurl} y bibliography{laboratorio-de-arquitectura-de-robots-imtc}.",
+    "No duplicar TEX completo; preservar reconstruccion por bloques."
+  ],
+  "bibliography_rules": [
+    "Archivo .bib: laboratorio-de-arquitectura-de-robots-imtc.bib.",
+    "Entrada @misc programa-laboratorio-de-arquitectura-de-robots-imtc (autor UANL, 2026).",
+    "Nota: actualizar con la referencia oficial del curso (pendiente).",
+    "URL provisional https://www.uanl.mx/ hasta referencia definitiva.",
+    "Archivo bibliografico: laboratorio-de-arquitectura-de-robots-imtc.bib.",
+    "Clave activa: programa-laboratorio-de-arquitectura-de-robots-imtc.",
+    "Tipo y datos actuales: @misc, autor UANL, year 2026, URL provisional uanl.mx.",
+    "Mantener nota de actualizacion a referencia oficial [pendiente].",
+    "No inventar nuevas fuentes fuera del contexto local."
+  ],
+  "propagation_hints": [
+    "Ciclo 1 necesita normalizacion manual si se reutiliza.",
+    "Propagacion local: mismo-nodo, canonizacion-local.",
+    "Preservar metadatos de portada y estructura Desarrollo/Cierre al reutilizar.",
+    "Salto actual: mismo-nodo, propagacion local.",
+    "Estrategia: preservacion total con union y deduplicacion.",
+    "No eliminar reglas utiles heredadas.",
+    "Priorizar consistencia de portada, metadatos y secciones canonicas.",
+    "Registrar toda incertidumbre como supuesto explicito.",
+    "Ciclo 2 necesita normalizacion manual si se reutiliza."
+  ],
+  "open_questions": [
+    "Definir nombre de la figura docente (actualmente por definir).",
+    "Obtener referencia oficial del programa analitico para el .bib.",
+    "Confirmar consigna especifica de la semana para Actividad 1.",
+    "Definir nombre de la figura docente.",
+    "Sustituir referencia provisional por fuente oficial del curso.",
+    "Confirmar redaccion final de la consigna especifica de la semana.",
+    "Determinar si se cita explicitamente la clave bib dentro de Actividad 1."
+  ],
+  "artifact_name": "reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1",
+  "sources": [
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/actividad-1",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/programa-analitico-laboratorio-de-arquitectura-de-robots-imtc.md",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/laboratorio-de-arquitectura-de-robots-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+  ],
+  "artifact_types": [
+    "reporte"
+  ],
+  "supported_artifact_types": [],
+  "source_documents": [
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/programa-analitico-laboratorio-de-arquitectura-de-robots-imtc.md",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/laboratorio-de-arquitectura-de-robots-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+  ],
+  "source_fragments": [
+    "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de arquitectura de robots.",
+    "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+  ],
+  "concepts": [
+    "Programa analitico de laboratorio-de-arquitectura-de-robots-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/laboratorio-de-arquitectura-de-robots-imtc.bib"
+  ],
+  "section_titles": [
+    "Introduccion",
+    "Desarrollo",
+    "Conclusiones",
+    "Actividad 1"
+  ],
+  "citations": [],
+  "bibliography_index": [
+    "programa-laboratorio-de-arquitectura-de-robots-imtc :: Programa analitico de laboratorio-de-arquitectura-de-robots-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/laboratorio-de-arquitectura-de-robots-imtc.bib"
+  ],
+  "node_metadata": {
+    "scope_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/actividad-1",
+    "level": "actividad",
+    "label": "Actividad 1",
+    "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc",
+    "institution": "UANL",
+    "career": "ingenieria-en-mecatronica",
+    "subject": "laboratorio-de-arquitectura-de-robots-imtc",
+    "activity": "Actividad 1",
+    "parent_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc"
+  },
+  "curricular_context": {
+    "institutional_frame": "",
+    "purpose": "",
+    "work_axes": [],
+    "source_fragments": [],
+    "coursename": "Laboratorio De Arquitectura De Robots",
+    "coursecode": "IMTC",
+    "documentsubject": "Ingenieria en Mecatronica",
+    "documenttitle": "Laboratorio De Arquitectura De Robots",
+    "documentsubtitle": "Reporte integral - laboratorio-de-arquitectura-de-robots-imtc"
+  },
+  "artifact_templates": {},
+  "editorial_dna": {
+    "identity": {
+      "node_metadata": {
+        "scope_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/actividad-1",
+        "level": "actividad",
+        "label": "Actividad 1",
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc",
+        "institution": "UANL",
+        "career": "ingenieria-en-mecatronica",
+        "subject": "laboratorio-de-arquitectura-de-robots-imtc",
+        "activity": "Actividad 1",
+        "parent_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc"
+      },
+      "curricular_context": {
+        "institutional_frame": "",
+        "purpose": "",
+        "work_axes": [],
+        "source_fragments": [],
+        "coursename": "Laboratorio De Arquitectura De Robots",
+        "coursecode": "IMTC",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "documenttitle": "Laboratorio De Arquitectura De Robots",
+        "documentsubtitle": "Reporte integral - laboratorio-de-arquitectura-de-robots-imtc"
+      },
+      "identity_rules": [
+        "Fuente provisional: Codex desde Actividad 1",
+        "Autor: Martin Jonathan de la Cruz; Matricula UANL-IMTC.",
+        "Institucion: UANL, Facultad de Ingenieria Mecanica y Electrica.",
+        "Asignatura: Laboratorio De Arquitectura De Robots (codigo IMTC).",
+        "Programa: Ingenieria en Mecatronica; ubicacion San Nicolas de los Garza, Nuevo Leon.",
+        "Documenttitle: Laboratorio De Arquitectura De Robots; subtitulo por actividad.",
+        "Figura docente pendiente de definir (marcar supuesto).",
+        "Fuente provisional: Codex desde Actividad 1 (heredada, conservar hasta canonizacion).",
+        "Fuente provisional: GPT-Pro desde Actividad 1",
+        "Fuente provisional: Claude Foundry desde Actividad 1",
+        "Fuente provisional: Auto (model-router) desde Actividad 1",
+        "Asignatura: Laboratorio De Arquitectura De Robots (IMTC)."
+      ],
+      "tone": [
+        "Tecnico-academico",
+        "Formal y conciso",
+        "Tecnico-academico.",
+        "Formal y conciso."
+      ],
+      "institutional": [
+        "UANL - Facultad de Ingenieria Mecanica y Electrica",
+        "San Nicolas de los Garza, Nuevo Leon",
+        "UANL - FIME.",
+        "Contexto local de Ingenieria en Mecatronica."
+      ],
+      "curricular": [
+        "Ingenieria en Mecatronica",
+        "Laboratorio De Arquitectura De Robots (IMTC)",
+        "Laboratorio De Arquitectura De Robots (IMTC).",
+        "Actividad 1 como unidad evaluable."
+      ]
+    },
+    "essence": [
+      "Revisar respuesta no estructurada antes de aplicar aguas abajo",
+      "Reto academico semanal documentado con evidencias",
+      "Estructura Desarrollo/Cierre del reporte de actividad",
+      "Nodo actividad-1 de Laboratorio de Arquitectura de Robots (IMTC, UANL) con TEX reconstruible",
+      "Reporte de actividad con estructura Actividad 1 -> Desarrollo -> Cierre",
+      "Bibliografia base con entrada provisional del programa analitico pendiente de referencia oficial",
+      "Autor: Martin Jonathan de la Cruz; Matricula UANL-IMTC",
+      "Institucion: UANL, Facultad de Ingenieria Mecanica y Electrica",
+      "Asignatura: Laboratorio De Arquitectura De Robots (codigo IMTC)",
+      "Programa: Ingenieria en Mecatronica; ubicacion San Nicolas de los Garza, Nuevo Leon",
+      "Documenttitle: Laboratorio De Arquitectura De Robots; subtitulo por actividad",
+      "Figura docente pendiente de definir (marcar supuesto)",
+      "Seccion unica: \\section{Actividad 1} con subsecciones Desarrollo y Cierre",
+      "Desarrollo: incluir evidencias, analisis y referencias",
+      "Cierre: registrar resultados, limitaciones y mejoras",
+      "Portada via \\templatePortrait y configuracion \\templatePagecfg",
+      "Interlineado \\onehalfspacing",
+      "Consigna tecnica: documentar y resolver el reto academico de la semana",
+      "Objetivo de cada actividad alineado con el programa analitico",
+      "Conclusiones con enfoque de ingenieria en mecatronica",
+      "Consigna tecnica: documentar y resolver el reto academico de la semana.",
+      "Objetivo de cada actividad alineado con el programa analitico.",
+      "Conclusiones con enfoque de ingenieria en mecatronica.",
+      "Documentar y resolver el reto academico semanal."
+    ],
+    "structure": {
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones",
+        "Actividad 1"
+      ],
+      "artifact_name": "reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1",
+      "artifact_types": [
+        "reporte"
+      ],
+      "tex_functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "bibliography"
+        ]
+      }
+    },
+    "reason_for_being": [
+      "Seccion unica: \\section{Actividad 1} con subsecciones Desarrollo y Cierre.",
+      "Desarrollo: incluir evidencias, analisis y referencias.",
+      "Cierre: registrar resultados, limitaciones y mejoras.",
+      "Portada via \\templatePortrait y configuracion \\templatePagecfg.",
+      "Interlineado \\onehalfspacing.",
+      "Mantener \\section{Actividad 1}.",
+      "Mantener subsecciones: Desarrollo y Cierre.",
+      "En Desarrollo incluir evidencias, analisis y referencias.",
+      "En Cierre registrar resultados, limitaciones y mejoras.",
+      "Portada con \\templatePortrait y \\templatePagecfg.",
+      "Aplicar \\onehalfspacing.",
+      "Consigna tecnica: documentar y resolver el reto academico de la semana.",
+      "Objetivo de cada actividad alineado con el programa analitico.",
+      "Conclusiones con enfoque de ingenieria en mecatronica.",
+      "Documentar y resolver el reto academico semanal.",
+      "Alinear objetivo de actividad con programa analitico.",
+      "Sostener conclusiones con enfoque de ingenieria en mecatronica.",
+      "Explicitar consigna tecnica al inicio de la actividad.",
+      "Introduccion",
+      "Desarrollo",
+      "Conclusiones",
+      "Actividad 1"
+    ],
+    "style_markers": [
+      "Encabezados con negrita para consigna tecnica.",
+      "Subsecciones Desarrollo y Cierre.",
+      "Interlineado onehalfspacing.",
+      "Autor: Martin Jonathan de la Cruz; Matricula UANL-IMTC.",
+      "Institucion: UANL, Facultad de Ingenieria Mecanica y Electrica.",
+      "Asignatura: Laboratorio De Arquitectura De Robots (codigo IMTC).",
+      "Programa: Ingenieria en Mecatronica; ubicacion San Nicolas de los Garza, Nuevo Leon.",
+      "Documenttitle: Laboratorio De Arquitectura De Robots; subtitulo por actividad.",
+      "Figura docente pendiente de definir (marcar supuesto).",
+      "documentclass[spanish,letterpaper,oneside]{article}.",
+      "Usar \\input{template} para maquetacion compartida.",
+      "Definir metadatos via \\def (documenttitle, coursename, coursecode, etc.).",
+      "Logo institucional: UANL/assets-uanl/logo-uanl.png (width=3.2cm).",
+      "bibliographystyle{natnumurl} con \\bibliography{laboratorio-de-arquitectura-de-robots-imtc}.",
+      "No copiar TEX completo; mantener reconstruible por bloques.",
+      "Inicio con consigna tecnica en negritas.",
+      "Subsecciones fijas: Desarrollo y Cierre.",
+      "Metadatos institucionales completos en portada.",
+      "Lenguaje directo con acciones verificables.",
+      "Asignatura: Laboratorio De Arquitectura De Robots (IMTC)."
+    ],
+    "argumentative_patterns": [
+      "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+      "Consigna -> Desarrollo con evidencias -> Cierre con resultados y mejoras.",
+      "Seccion unica: \\section{Actividad 1} con subsecciones Desarrollo y Cierre.",
+      "Desarrollo: incluir evidencias, analisis y referencias.",
+      "Cierre: registrar resultados, limitaciones y mejoras.",
+      "Portada via \\templatePortrait y configuracion \\templatePagecfg.",
+      "Interlineado \\onehalfspacing.",
+      "Consigna tecnica: documentar y resolver el reto academico de la semana.",
+      "Objetivo de cada actividad alineado con el programa analitico.",
+      "Conclusiones con enfoque de ingenieria en mecatronica.",
+      "Evidencias tecnicas y academicas citadas desde laboratorio-de-arquitectura-de-robots-imtc.bib.",
+      "Verificar alineacion objetivo-actividad con el programa analitico.",
+      "Consigna -> Evidencia/analisis -> Resultados/limitaciones/mejoras.",
+      "Objetivo curricular -> Ejecucion tecnica -> Cierre de aprendizaje.",
+      "Mantener \\section{Actividad 1}.",
+      "Mantener subsecciones: Desarrollo y Cierre.",
+      "En Desarrollo incluir evidencias, analisis y referencias.",
+      "En Cierre registrar resultados, limitaciones y mejoras.",
+      "Portada con \\templatePortrait y \\templatePagecfg.",
+      "Aplicar \\onehalfspacing."
+    ],
+    "reinforcement_log": [
+      "Refuerzo editorial aplicado sobre 1 conceptos y 0 citas.",
+      "Salida sin JSON parseable desde Codex para Actividad 1",
+      "ADN sintetizado con 2 conceptos, 0 citas y 2 relaciones.",
+      "Memoria de redacción preservada en 7 bloques.",
+      "Ciclo 1: canonizacion-local en mismo-nodo; union-dedupe sin regresion.",
+      "Preservadas identity_rules y quality_gates heredadas.",
+      "Añadidas structure_rules, activity_rules, latex_rules y bibliography_rules verificables desde contexto local.",
+      "Reforzadas relaciones Actividad 1 -> Desarrollo/Cierre como develops.",
+      "Marcados supuestos: figura docente por definir y referencia bib pendiente.",
+      "Refuerzo editorial aplicado sobre 38 conceptos y 0 citas.",
+      "Nodo actividad-1 de Laboratorio de Arquitectura de Robots (IMTC, UANL) con TEX reconstruible.",
+      "Reporte de actividad con estructura Actividad 1 -> Desarrollo -> Cierre.",
+      "ADN sintetizado con 39 conceptos, 1 citas y 15 relaciones.",
+      "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+      "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+      "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+      "Se preservaron todas las reglas utiles previas sin eliminacion.",
+      "Se deduplicaron formulaciones redundantes por union semantica.",
+      "Se reforzo la cadena Consigna-Desarrollo-Cierre como patron canonico.",
+      "Se mantuvo estado provisional de bibliografia y figura docente con marca de supuesto.",
+      "Se reafirmo control de calidad: parseo JSON y normalizacion antes de propagar.",
+      "Refuerzo editorial aplicado sobre 53 conceptos y 0 citas.",
+      "Nodo actividad-1 de IMTC-UANL consolidado con TEX reconstruible.",
+      "Estructura canonica activa: Actividad 1 -> Desarrollo -> Cierre.",
+      "ADN sintetizado con 89 conceptos, 1 citas y 26 relaciones.",
+      "Refuerzo editorial aplicado sobre 0 conceptos y 0 citas.",
+      "Refuerzo editorial aplicado sobre 7 conceptos y 0 citas.",
+      "ADN sintetizado con 90 conceptos, 1 citas y 32 relaciones."
+    ],
+    "knowledge_graph": {
+      "concepts": [
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo",
+        "Programa analitico de laboratorio-de-arquitectura-de-robots-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/laboratorio-de-arquitectura-de-robots-imtc.bib",
+        "Reto academico semanal documentado con evidencias",
+        "Estructura Desarrollo/Cierre del reporte de actividad",
+        "Nodo actividad-1 de Laboratorio de Arquitectura de Robots (IMTC, UANL) con TEX reconstruible",
+        "Reporte de actividad con estructura Actividad 1 -> Desarrollo -> Cierre",
+        "Bibliografia base con entrada provisional del programa analitico pendiente de referencia oficial",
+        "Autor: Martin Jonathan de la Cruz; Matricula UANL-IMTC",
+        "Institucion: UANL, Facultad de Ingenieria Mecanica y Electrica",
+        "Asignatura: Laboratorio De Arquitectura De Robots (codigo IMTC)",
+        "Programa: Ingenieria en Mecatronica; ubicacion San Nicolas de los Garza, Nuevo Leon",
+        "Documenttitle: Laboratorio De Arquitectura De Robots; subtitulo por actividad",
+        "Figura docente pendiente de definir (marcar supuesto)",
+        "Seccion unica: \\section{Actividad 1} con subsecciones Desarrollo y Cierre",
+        "Desarrollo: incluir evidencias, analisis y referencias",
+        "Cierre: registrar resultados, limitaciones y mejoras",
+        "Portada via \\templatePortrait y configuracion \\templatePagecfg",
+        "Interlineado \\onehalfspacing",
+        "Consigna tecnica: documentar y resolver el reto academico de la semana",
+        "Objetivo de cada actividad alineado con el programa analitico",
+        "Conclusiones con enfoque de ingenieria en mecatronica",
+        "Evidencias tecnicas y academicas citadas desde laboratorio-de-arquitectura-de-robots-imtc.bib",
+        "Verificar alineacion objetivo-actividad con el programa analitico",
+        "Definir nombre de la figura docente (actualmente por definir)",
+        "Obtener referencia oficial del programa analitico para el .bib",
+        "Confirmar consigna especifica de la semana para Actividad 1",
+        "Documentar y resolver el reto academico semanal con evidencias",
+        "Reportar actividad de laboratorio con enfoque de mecatronica",
+        "Estructura fija: Actividad 1, Desarrollo, Cierre",
+        "Introduccion, Desarrollo, Conclusiones como ejes del reporte integral",
+        "Encabezados con negrita para consigna tecnica",
+        "Subsecciones Desarrollo y Cierre",
+        "Interlineado onehalfspacing",
+        "Consigna -> Desarrollo con evidencias -> Cierre con resultados y mejoras",
+        "programa-laboratorio-de-arquitectura-de-robots-imtc (@misc, UANL, 2026, provisional)",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/programa-analitico-laboratorio-de-arquitectura-de-robots-imtc.md",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/laboratorio-de-arquitectura-de-robots-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex",
+        "Actividad 1",
+        "Desarrollo",
+        "Cierre",
+        "Programa analitico IMTC",
+        "Evidencias tecnicas y academicas",
+        "TEX reconstruible",
+        "Normalizacion de salidas no parseables",
+        "Bibliografia provisional",
+        "Nodo actividad-1 de IMTC-UANL consolidado con TEX reconstruible",
+        "Estructura canonica activa: Actividad 1 -> Desarrollo -> Cierre",
+        "Bibliografia base provisional del programa analitico vigente y pendiente de fuente oficial",
+        "Asignatura: Laboratorio De Arquitectura De Robots (IMTC)",
+        "Programa: Ingenieria en Mecatronica; San Nicolas de los Garza, Nuevo Leon",
+        "Figura docente pendiente de definir [supuesto]",
+        "Fuentes provisionales de reconstruccion: Codex, GPT-Pro, Claude Foundry, Auto(model-router)",
+        "Conservar traza de origen provisional hasta canonizacion formal",
+        "Mantener \\section{Actividad 1}",
+        "Mantener subsecciones: Desarrollo y Cierre",
+        "En Desarrollo incluir evidencias, analisis y referencias",
+        "En Cierre registrar resultados, limitaciones y mejoras",
+        "Portada con \\templatePortrait y \\templatePagecfg",
+        "Aplicar \\onehalfspacing",
+        "Documentar y resolver el reto academico semanal",
+        "Alinear objetivo de actividad con programa analitico",
+        "Sostener conclusiones con enfoque de ingenieria en mecatronica",
+        "Explicitar consigna tecnica al inicio de la actividad",
+        "Revisar y normalizar salidas no estructuradas",
+        "Verificar coherencia entre consigna, desarrollo y cierre",
+        "Comprobar trazabilidad de evidencias al .bib local",
+        "Confirmar alineacion con checklist del programa analitico",
+        "Definir nombre de la figura docente",
+        "Sustituir referencia provisional por fuente oficial del curso",
+        "Confirmar redaccion final de la consigna especifica de la semana",
+        "Determinar si se cita explicitamente la clave bib dentro de Actividad 1",
+        "Consigna clara, desarrollo verificable y cierre reflexivo",
+        "Reconstruibilidad TEX como requisito de continuidad editorial",
+        "Trazabilidad bibliografica minima y honesta",
+        "Canonizacion local sin perdida de memoria util",
+        "Garantizar entregables consistentes por actividad",
+        "Asegurar alineacion curricular con programa analitico",
+        "Convertir salidas de modelos en memoria editorial estable",
+        "Inicio con consigna tecnica en negritas",
+        "Subsecciones fijas: Desarrollo y Cierre",
+        "Metadatos institucionales completos en portada",
+        "Lenguaje directo con acciones verificables",
+        "Consigna -> Evidencia/analisis -> Resultados/limitaciones/mejoras",
+        "Objetivo curricular -> Ejecucion tecnica -> Cierre de aprendizaje",
+        "reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex",
+        "laboratorio-de-arquitectura-de-robots-imtc.bib",
+        "programa-analitico-laboratorio-de-arquitectura-de-robots-imtc.md",
+        "Universidad: Universidad Autonoma de Nuevo Leon"
+      ],
+      "citations": [
+        "programa-laboratorio-de-arquitectura-de-robots-imtc (@misc, UANL, 2026, provisional)"
+      ],
+      "evidence": [
+        "Salida sin JSON parseable desde Codex para Actividad 1",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+        "programa-laboratorio-de-arquitectura-de-robots-imtc :: Programa analitico de laboratorio-de-arquitectura-de-robots-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/laboratorio-de-arquitectura-de-robots-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/programa-analitico-laboratorio-de-arquitectura-de-robots-imtc.md",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/laboratorio-de-arquitectura-de-robots-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex",
+        "Nodo actividad-1 de Laboratorio de Arquitectura de Robots (IMTC, UANL) con TEX reconstruible.",
+        "Reporte de actividad con estructura Actividad 1 -> Desarrollo -> Cierre.",
+        "Fuente inicial provino de Codex sin JSON parseable; requirio normalizacion manual en ciclo 1.",
+        "Bibliografia base con entrada provisional del programa analitico pendiente de referencia oficial.",
+        "Evidencias tecnicas y academicas citadas desde laboratorio-de-arquitectura-de-robots-imtc.bib.",
+        "Verificar alineacion objetivo-actividad con el programa analitico.",
+        "Validar JSON parseable antes de propagar aguas abajo.",
+        "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+        "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+        "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+        "reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex",
+        "laboratorio-de-arquitectura-de-robots-imtc.bib",
+        "programa-analitico-laboratorio-de-arquitectura-de-robots-imtc.md",
+        "Historial local de salidas sin JSON parseable y normalizacion manual.",
+        "Nodo actividad-1 de IMTC-UANL consolidado con TEX reconstruible.",
+        "Estructura canonica activa: Actividad 1 -> Desarrollo -> Cierre.",
+        "Se preserva historial de salidas no parseables y normalizacion manual en ciclo 1.",
+        "Bibliografia base provisional del programa analitico vigente y pendiente de fuente oficial.",
+        "Canonizacion local sin cambios destructivos; deduplicacion aplicada por union.",
+        "Validar JSON parseable antes de cualquier propagacion.",
+        "Revisar y normalizar salidas no estructuradas.",
+        "Verificar coherencia entre consigna, desarrollo y cierre.",
+        "Comprobar trazabilidad de evidencias al .bib local.",
+        "Confirmar alineacion con checklist del programa analitico."
+      ],
+      "relations": [
+        {
+          "source": "Actividad 1",
+          "target": "Desarrollo",
+          "kind": "organizes",
+          "weight": 2,
+          "evidence": [
+            "b0003",
+            "b0004"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Cierre",
+          "kind": "organizes",
+          "weight": 3,
+          "evidence": [
+            "b0005",
+            "b0006",
+            "b0007"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Desarrollo",
+          "kind": "develops",
+          "weight": 2,
+          "justification": "La subseccion Desarrollo expande la consigna con evidencias y analisis.",
+          "evidence": []
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Cierre",
+          "kind": "develops",
+          "weight": 2,
+          "justification": "El Cierre concluye registrando resultados, limitaciones y mejoras.",
+          "evidence": []
+        },
+        {
+          "source": "Desarrollo",
+          "target": "programa-laboratorio-de-arquitectura-de-robots-imtc",
+          "kind": "depends_on",
+          "weight": 1,
+          "justification": "Las evidencias se citan desde el .bib alineadas al programa analitico.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo actividad-1 de Laboratorio de Arquitectura de Robots (IMTC, UANL) con TEX reconstruible",
+          "target": "Reporte de actividad con estructura Actividad 1 -> Desarrollo -> Cierre",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo actividad-1 de Laboratorio de Arquitectura de Robots (IMTC, UANL) con TEX reconstruible",
+          "target": "Bibliografia base con entrada provisional del programa analitico pendiente de referencia oficial",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Reporte de actividad con estructura Actividad 1 -> Desarrollo -> Cierre",
+          "target": "Bibliografia base con entrada provisional del programa analitico pendiente de referencia oficial",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Reporte de actividad con estructura Actividad 1 -> Desarrollo -> Cierre",
+          "target": "Autor: Martin Jonathan de la Cruz; Matricula UANL-IMTC",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Bibliografia base con entrada provisional del programa analitico pendiente de referencia oficial",
+          "target": "Autor: Martin Jonathan de la Cruz; Matricula UANL-IMTC",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Bibliografia base con entrada provisional del programa analitico pendiente de referencia oficial",
+          "target": "Institucion: UANL, Facultad de Ingenieria Mecanica y Electrica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Autor: Martin Jonathan de la Cruz; Matricula UANL-IMTC",
+          "target": "Institucion: UANL, Facultad de Ingenieria Mecanica y Electrica",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Autor: Martin Jonathan de la Cruz; Matricula UANL-IMTC",
+          "target": "Asignatura: Laboratorio De Arquitectura De Robots (codigo IMTC)",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Institucion: UANL, Facultad de Ingenieria Mecanica y Electrica",
+          "target": "Asignatura: Laboratorio De Arquitectura De Robots (codigo IMTC)",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Consigna tecnica: documentar y resolver el reto academico de la semana",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0002"
+          ]
+        },
+        {
+          "source": "Desarrollo",
+          "target": "Programa analitico IMTC",
+          "kind": "depends_on",
+          "weight": 1,
+          "justification": "La actividad debe alinearse al checklist curricular del programa.",
+          "evidence": []
+        },
+        {
+          "source": "Evidencias tecnicas y academicas",
+          "target": "Bibliografia provisional",
+          "kind": "supports",
+          "weight": 1,
+          "justification": "La traza de evidencias se respalda en el .bib local.",
+          "evidence": []
+        },
+        {
+          "source": "Normalizacion de salidas no parseables",
+          "target": "TEX reconstruible",
+          "kind": "supports",
+          "weight": 1,
+          "justification": "La normalizacion evita perdida de estructura y conserva continuidad editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo actividad-1 de IMTC-UANL consolidado con TEX reconstruible",
+          "target": "Estructura canonica activa: Actividad 1 -> Desarrollo -> Cierre",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo actividad-1 de IMTC-UANL consolidado con TEX reconstruible",
+          "target": "Bibliografia base provisional del programa analitico vigente y pendiente de fuente oficial",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Estructura canonica activa: Actividad 1 -> Desarrollo -> Cierre",
+          "target": "Bibliografia base provisional del programa analitico vigente y pendiente de fuente oficial",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Estructura canonica activa: Actividad 1 -> Desarrollo -> Cierre",
+          "target": "Autor: Martin Jonathan de la Cruz; Matricula UANL-IMTC",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Bibliografia base provisional del programa analitico vigente y pendiente de fuente oficial",
+          "target": "Autor: Martin Jonathan de la Cruz; Matricula UANL-IMTC",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Bibliografia base provisional del programa analitico vigente y pendiente de fuente oficial",
+          "target": "Institucion: UANL, Facultad de Ingenieria Mecanica y Electrica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Autor: Martin Jonathan de la Cruz; Matricula UANL-IMTC",
+          "target": "Asignatura: Laboratorio De Arquitectura De Robots (IMTC)",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Institucion: UANL, Facultad de Ingenieria Mecanica y Electrica",
+          "target": "Asignatura: Laboratorio De Arquitectura De Robots (IMTC)",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Institucion: UANL, Facultad de Ingenieria Mecanica y Electrica",
+          "target": "Programa: Ingenieria en Mecatronica; ubicacion San Nicolas de los Garza, Nuevo Leon",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Asignatura: Laboratorio De Arquitectura De Robots (codigo IMTC)",
+          "target": "Programa: Ingenieria en Mecatronica; ubicacion San Nicolas de los Garza, Nuevo Leon",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Asignatura: Laboratorio De Arquitectura De Robots (codigo IMTC)",
+          "target": "Universidad: Universidad Autonoma de Nuevo Leon",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Programa: Ingenieria en Mecatronica; ubicacion San Nicolas de los Garza, Nuevo Leon",
+          "target": "Universidad: Universidad Autonoma de Nuevo Leon",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Programa: Ingenieria en Mecatronica; ubicacion San Nicolas de los Garza, Nuevo Leon",
+          "target": "Documenttitle: Laboratorio De Arquitectura De Robots; subtitulo por actividad",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Universidad: Universidad Autonoma de Nuevo Leon",
+          "target": "Documenttitle: Laboratorio De Arquitectura De Robots; subtitulo por actividad",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        }
+      ],
+      "concept_weights": {
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo": 36,
+        "Nodo actividad-1 de Laboratorio de Arquitectura de Robots (IMTC, UANL) con TEX reconstruible": 1,
+        "Reporte de actividad con estructura Actividad 1 -> Desarrollo -> Cierre": 1,
+        "Bibliografia base con entrada provisional del programa analitico pendiente de referencia oficial": 1,
+        "Autor: Martin Jonathan de la Cruz; Matricula UANL-IMTC": 3,
+        "Institucion: UANL, Facultad de Ingenieria Mecanica y Electrica": 3,
+        "Asignatura: Laboratorio De Arquitectura De Robots (codigo IMTC)": 2,
+        "Programa: Ingenieria en Mecatronica; ubicacion San Nicolas de los Garza, Nuevo Leon": 2,
+        "Documenttitle: Laboratorio De Arquitectura De Robots; subtitulo por actividad": 3,
+        "Figura docente pendiente de definir (marcar supuesto)": 2,
+        "Seccion unica: \\section{Actividad 1} con subsecciones Desarrollo y Cierre": 1,
+        "Desarrollo: incluir evidencias, analisis y referencias": 1,
+        "Cierre: registrar resultados, limitaciones y mejoras": 1,
+        "Portada via \\templatePortrait y configuracion \\templatePagecfg": 1,
+        "Interlineado \\onehalfspacing": 1,
+        "Consigna tecnica: documentar y resolver el reto academico de la semana": 1,
+        "Objetivo de cada actividad alineado con el programa analitico": 1,
+        "Conclusiones con enfoque de ingenieria en mecatronica": 1,
+        "Evidencias tecnicas y academicas citadas desde laboratorio-de-arquitectura-de-robots-imtc.bib": 1,
+        "Verificar alineacion objetivo-actividad con el programa analitico": 1,
+        "Definir nombre de la figura docente (actualmente por definir)": 1,
+        "Obtener referencia oficial del programa analitico para el .bib": 1,
+        "Confirmar consigna especifica de la semana para Actividad 1": 1,
+        "Documentar y resolver el reto academico semanal con evidencias": 1,
+        "Reportar actividad de laboratorio con enfoque de mecatronica": 1,
+        "Estructura fija: Actividad 1, Desarrollo, Cierre": 1,
+        "Introduccion, Desarrollo, Conclusiones como ejes del reporte integral": 1,
+        "Encabezados con negrita para consigna tecnica": 1,
+        "Subsecciones Desarrollo y Cierre": 1,
+        "Interlineado onehalfspacing": 1,
+        "Consigna -> Desarrollo con evidencias -> Cierre con resultados y mejoras": 1,
+        "Reto academico semanal documentado con evidencias": 1,
+        "Estructura Desarrollo/Cierre del reporte de actividad": 1,
+        "programa-laboratorio-de-arquitectura-de-robots-imtc (@misc, UANL, 2026, provisional)": 2,
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/programa-analitico-laboratorio-de-arquitectura-de-robots-imtc.md": 1,
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/laboratorio-de-arquitectura-de-robots-imtc.bib": 1,
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex": 1,
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex": 1,
+        "Nodo actividad-1 de IMTC-UANL consolidado con TEX reconstruible": 1,
+        "Estructura canonica activa: Actividad 1 -> Desarrollo -> Cierre": 1,
+        "Bibliografia base provisional del programa analitico vigente y pendiente de fuente oficial": 1,
+        "Asignatura: Laboratorio De Arquitectura De Robots (IMTC)": 1,
+        "Programa: Ingenieria en Mecatronica; San Nicolas de los Garza, Nuevo Leon": 1,
+        "Figura docente pendiente de definir [supuesto]": 1,
+        "Fuentes provisionales de reconstruccion: Codex, GPT-Pro, Claude Foundry, Auto(model-router)": 1,
+        "Conservar traza de origen provisional hasta canonizacion formal": 1,
+        "Mantener \\section{Actividad 1}": 1,
+        "Mantener subsecciones: Desarrollo y Cierre": 1,
+        "En Desarrollo incluir evidencias, analisis y referencias": 1,
+        "En Cierre registrar resultados, limitaciones y mejoras": 1,
+        "Portada con \\templatePortrait y \\templatePagecfg": 1,
+        "Aplicar \\onehalfspacing": 1,
+        "Documentar y resolver el reto academico semanal": 1,
+        "Alinear objetivo de actividad con programa analitico": 1,
+        "Sostener conclusiones con enfoque de ingenieria en mecatronica": 1,
+        "Explicitar consigna tecnica al inicio de la actividad": 1,
+        "Revisar y normalizar salidas no estructuradas": 1,
+        "Verificar coherencia entre consigna, desarrollo y cierre": 1,
+        "Comprobar trazabilidad de evidencias al .bib local": 1,
+        "Confirmar alineacion con checklist del programa analitico": 1,
+        "Definir nombre de la figura docente": 1,
+        "Sustituir referencia provisional por fuente oficial del curso": 1,
+        "Confirmar redaccion final de la consigna especifica de la semana": 1,
+        "Determinar si se cita explicitamente la clave bib dentro de Actividad 1": 1,
+        "Consigna clara, desarrollo verificable y cierre reflexivo": 1,
+        "Reconstruibilidad TEX como requisito de continuidad editorial": 1,
+        "Trazabilidad bibliografica minima y honesta": 1,
+        "Canonizacion local sin perdida de memoria util": 1,
+        "Garantizar entregables consistentes por actividad": 1,
+        "Asegurar alineacion curricular con programa analitico": 1,
+        "Convertir salidas de modelos en memoria editorial estable": 1,
+        "Inicio con consigna tecnica en negritas": 1,
+        "Subsecciones fijas: Desarrollo y Cierre": 1,
+        "Metadatos institucionales completos en portada": 1,
+        "Lenguaje directo con acciones verificables": 1,
+        "Consigna -> Evidencia/analisis -> Resultados/limitaciones/mejoras": 1,
+        "Objetivo curricular -> Ejecucion tecnica -> Cierre de aprendizaje": 1,
+        "Actividad 1": 1,
+        "Desarrollo": 1,
+        "Cierre": 1,
+        "Programa analitico IMTC": 1,
+        "Evidencias tecnicas y academicas": 1,
+        "TEX reconstruible": 1,
+        "Bibliografia provisional": 1,
+        "reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex": 1,
+        "laboratorio-de-arquitectura-de-robots-imtc.bib": 1,
+        "programa-analitico-laboratorio-de-arquitectura-de-robots-imtc.md": 1,
+        "Universidad: Universidad Autonoma de Nuevo Leon": 1
+      },
+      "citation_weights": {}
+    },
+    "writing_memory": [
+      {
+        "id": "b0001",
+        "order": 1,
+        "kind": "section",
+        "section": "Actividad 1",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Actividad 1",
+        "latex": "\\section{Actividad 1}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0002",
+        "order": 2,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+        "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0003",
+        "order": 3,
+        "kind": "subsection",
+        "section": "Actividad 1",
+        "subsection": "Desarrollo",
+        "paragraph_heading": "",
+        "text": "Desarrollo",
+        "latex": "\\subsection{Desarrollo}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0004",
+        "order": 4,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Desarrollo",
+        "paragraph_heading": "",
+        "text": "Incluir evidencias, analisis y referencias.",
+        "latex": "Incluir evidencias, analisis y referencias.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0005",
+        "order": 5,
+        "kind": "subsection",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "Cierre",
+        "latex": "\\subsection{Cierre}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0006",
+        "order": 6,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "Registrar resultados, limitaciones y mejoras.",
+        "latex": "Registrar resultados, limitaciones y mejoras.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0007",
+        "order": 7,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "natnumurl",
+        "latex": "\\bibliographystyle{natnumurl}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+      }
+    ],
+    "reconstructable_source": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Arquitectura De Robots}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-arquitectura-de-robots-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Arquitectura De Robots}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-arquitectura-de-robots-imtc}\n\n\\end{document}\n"
+  },
+  "tex_blueprint": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex",
+        "documenttitle": "Laboratorio De Arquitectura De Robots",
+        "documentsubtitle": "Reporte integral - laboratorio-de-arquitectura-de-robots-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Laboratorio De Arquitectura De Robots",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de arquitectura de robots.",
+        "section_titles": [
+          "Introduccion",
+          "Desarrollo",
+          "Conclusiones"
+        ],
+        "subsection_titles": [],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [
+          "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de arquitectura de robots.",
+          "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+        ],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex",
+          "raw_latex_sha256": "240f2ce758cf3b2994535f8fd0668e00fbfc726d491807e6f5bfb92fcef4ccb2",
+          "raw_latex_chars": 1796,
+          "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Arquitectura De Robots}\n\\def\\documentsubtitle {Reporte integral - laboratorio-de-arquitectura-de-robots-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Arquitectura De Robots}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de arquitectura de robots.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-arquitectura-de-robots-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document",
+              "abstractd"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "templateIndex",
+              "templateFinalcfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de arquitectura de robots.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de arquitectura de robots.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de arquitectura de robots.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de arquitectura de robots.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      },
+      "reporte": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex",
+        "documenttitle": "Laboratorio De Arquitectura De Robots",
+        "documentsubtitle": "Actividad 1 - laboratorio-de-arquitectura-de-robots-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Laboratorio De Arquitectura De Robots",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "",
+        "section_titles": [
+          "Actividad 1"
+        ],
+        "subsection_titles": [
+          "Desarrollo",
+          "Cierre"
+        ],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex",
+          "raw_latex_sha256": "e00ae91b625b19725bdafbdcc5a4a336b3cc88e50e53a9dd64ff52dd9b51092f",
+          "raw_latex_chars": 1576,
+          "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Arquitectura De Robots}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-arquitectura-de-robots-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Arquitectura De Robots}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-arquitectura-de-robots-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "section",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Actividad 1",
+              "latex": "\\section{Actividad 1}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+              "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\subsection{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Incluir evidencias, analisis y referencias.",
+              "latex": "Incluir evidencias, analisis y referencias.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Cierre",
+              "latex": "\\subsection{Cierre}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Registrar resultados, limitaciones y mejoras.",
+              "latex": "Registrar resultados, limitaciones y mejoras.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "section",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Actividad 1",
+              "latex": "\\section{Actividad 1}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+              "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\subsection{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Incluir evidencias, analisis y referencias.",
+              "latex": "Incluir evidencias, analisis y referencias.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Cierre",
+              "latex": "\\subsection{Cierre}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Registrar resultados, limitaciones y mejoras.",
+              "latex": "Registrar resultados, limitaciones y mejoras.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex",
+      "documenttitle": "Laboratorio De Arquitectura De Robots",
+      "documentsubtitle": "Actividad 1 - laboratorio-de-arquitectura-de-robots-imtc",
+      "documentsubject": "Ingenieria en Mecatronica",
+      "coursename": "Laboratorio De Arquitectura De Robots",
+      "coursecode": "IMTC",
+      "documentauthor": "Martin Jonathan de la Cruz",
+      "abstract": "",
+      "section_titles": [
+        "Actividad 1"
+      ],
+      "subsection_titles": [
+        "Desarrollo",
+        "Cierre"
+      ],
+      "cited_keys": [],
+      "concepts": [],
+      "source_fragments": [],
+      "content_memory": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex",
+        "raw_latex_sha256": "e00ae91b625b19725bdafbdcc5a4a336b3cc88e50e53a9dd64ff52dd9b51092f",
+        "raw_latex_chars": 1576,
+        "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Arquitectura De Robots}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-arquitectura-de-robots-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Arquitectura De Robots}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-arquitectura-de-robots-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    }
+  },
+  "tex_content_memory": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex",
+        "raw_latex_sha256": "240f2ce758cf3b2994535f8fd0668e00fbfc726d491807e6f5bfb92fcef4ccb2",
+        "raw_latex_chars": 1796,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Arquitectura De Robots}\n\\def\\documentsubtitle {Reporte integral - laboratorio-de-arquitectura-de-robots-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Arquitectura De Robots}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de arquitectura de robots.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-arquitectura-de-robots-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de arquitectura de robots.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de arquitectura de robots.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de arquitectura de robots.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de arquitectura de robots.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      },
+      "reporte": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex",
+        "raw_latex_sha256": "e00ae91b625b19725bdafbdcc5a4a336b3cc88e50e53a9dd64ff52dd9b51092f",
+        "raw_latex_chars": 1576,
+        "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Arquitectura De Robots}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-arquitectura-de-robots-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Arquitectura De Robots}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-arquitectura-de-robots-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex",
+      "raw_latex_sha256": "e00ae91b625b19725bdafbdcc5a4a336b3cc88e50e53a9dd64ff52dd9b51092f",
+      "raw_latex_chars": 1576,
+      "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Arquitectura De Robots}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-arquitectura-de-robots-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Arquitectura De Robots}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-arquitectura-de-robots-imtc}\n\n\\end{document}\n",
+      "functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "bibliography"
+        ]
+      },
+      "paragraph_map": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "section",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Actividad 1",
+          "latex": "\\section{Actividad 1}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+          "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\subsection{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Incluir evidencias, analisis y referencias.",
+          "latex": "Incluir evidencias, analisis y referencias.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Cierre",
+          "latex": "\\subsection{Cierre}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Registrar resultados, limitaciones y mejoras.",
+          "latex": "Registrar resultados, limitaciones y mejoras.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+        }
+      ],
+      "content_blocks": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "section",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Actividad 1",
+          "latex": "\\section{Actividad 1}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+          "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\subsection{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Incluir evidencias, analisis y referencias.",
+          "latex": "Incluir evidencias, analisis y referencias.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Cierre",
+          "latex": "\\subsection{Cierre}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Registrar resultados, limitaciones y mejoras.",
+          "latex": "Registrar resultados, limitaciones y mejoras.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/reporte-laboratorio-de-arquitectura-de-robots-imtc-Actividad-1.tex"
+        }
+      ],
+      "citation_map": {},
+      "all_cited_keys": [],
+      "missing_bibliography_keys": []
+    },
+    "bibliography_sources": {
+      "programa-laboratorio-de-arquitectura-de-robots-imtc": {
+        "key": "programa-laboratorio-de-arquitectura-de-robots-imtc",
+        "source_type": "bibtex",
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-arquitectura-de-robots-imtc/laboratorio-de-arquitectura-de-robots-imtc.bib",
+        "entry_type": "misc",
+        "title": "Programa analitico de laboratorio-de-arquitectura-de-robots-imtc",
+        "author": "UANL",
+        "year": "2026",
+        "url": "https://www.uanl.mx/",
+        "note": "Actualizar con la referencia oficial del curso",
+        "raw_entry": "@misc{programa-laboratorio-de-arquitectura-de-robots-imtc,\n  author = {UANL},\n  title = {Programa analitico de laboratorio-de-arquitectura-de-robots-imtc},\n  year = {2026},\n  note = {Actualizar con la referencia oficial del curso},\n  url = {https://www.uanl.mx/}\n}"
+      }
+    }
+  },
+  "locked_sections": [],
+  "compression": {
+    "method": "union-dedupe",
+    "lossless": true
+  },
+  "schema_version": 3
+}

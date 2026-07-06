@@ -1,0 +1,104 @@
+Traceback (most recent call last):
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\anthropic\_base_client.py", line 1295, in _attempt_request
+    response = self._client.send(
+        request,
+        stream=stream or self._should_stream_response_body(request=request),
+        **kwargs,
+    )
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\run.py", line 17, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\src\fichador\cli.py", line 286, in main
+    concepts, planeacion_analysis, planeacion_remote, planeacion_final, subject_slug, concept_curation = _load_concepts(args, fragments)
+                                                                                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\src\fichador\cli.py", line 129, in _load_concepts
+    remote_planeacion = extract_planeacion_with_anthropic(args.planeacion, _build_api_config(args, "anthropicfoundry"))
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\src\fichador\planeacion_anthropic.py", line 77, in extract_planeacion_with_anthropic
+    response = client.messages.create(
+        model=config.chat_model,
+    ...<2 lines>...
+        max_tokens=4096,
+    )
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\anthropic\resources\messages\messages.py", line 1050, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\anthropic\_base_client.py", line 1536, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\anthropic\_base_client.py", line 1137, in request
+    response, prepared = self._attempt_request(
+                         ~~~~~~~~~~~~~~~~~~~~~^
+        model_copy(input_options), stream=stream, retries_taken=retries_taken
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\.venv\Lib\site-packages\anthropic\_base_client.py", line 1309, in _attempt_request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.

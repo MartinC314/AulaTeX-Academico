@@ -1,0 +1,9 @@
+[1/5] Leyendo fuente(s): C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\referencias-filosofia-del-derecho
+      Fuentes cargadas: 24 | Páginas/bloques: 3880
+      Tipos: docx=1, md=2, pdf=21
+      Omitidos/no legibles: 9
+[2/5] Dividiendo corpus en fragmentos citables
+      Fragmentos: 6717
+      Interpretación de planeación: campos=objetivo, bibliografía | verbos=comprender, desarrollar, identificar, reconocer, analizar, resolver
+      Confianza parser local de planeación: 0.33
+      Refinando estructura de planeación con Anthropic Foundry

@@ -1,0 +1,1948 @@
+{
+  "summary": [
+    "Canonizacion local completada con preservacion total y deduplicacion.",
+    "Se consolida base editorial para IMTC con foco en Actividad 1 y reporte integral.",
+    "Se mantiene traza institucional UANL-FIME y curricular de Ingenieria en Mecatronica.",
+    "Se conserva configuracion LaTeX y bibliografia local verificable.",
+    "Se hereda alerta historica de normalizacion JSON como control preventivo.",
+    "Salida sin JSON parseable desde Claude Foundry para procesos-de-manufactura-imtc",
+    "Salida sin JSON parseable desde GPT-Pro para procesos-de-manufactura-imtc",
+    "Se confirma coexistencia de plantilla de actividad y reporte integral como corpus canonico local.",
+    "Se preserva TEX reconstruible con macros institucionales y estructura minima verificable.",
+    "Salida sin JSON parseable desde Auto (model-router) para procesos-de-manufactura-imtc",
+    "Salida sin JSON parseable desde Claude Foundry para procesos-de-manufactura-imtc.",
+    "Salida sin JSON parseable desde GPT-Pro para procesos-de-manufactura-imtc.",
+    "Salida sin JSON parseable desde Auto (model-router) para procesos-de-manufactura-imtc.",
+    "Se valida fuente local explicita del programa analitico y su checklist de cobertura editorial."
+  ],
+  "identity_rules": [
+    "Mantener identidad institucional: UANL, FIME, San Nicolas de los Garza, Nuevo Leon.",
+    "Mantener identidad curricular: Ingenieria en Mecatronica, asignatura IMTC.",
+    "Conservar autoria declarada en plantilla hasta recibir actualizacion oficial.",
+    "Usar denominaciones consistentes: Procesos De Manufactura e IMTC.",
+    "[Supuesto] No cambiar matricula ni figura docente sin fuente oficial del curso.",
+    "Fuente provisional: Claude Foundry desde procesos-de-manufactura-imtc",
+    "Fuente provisional: GPT-Pro desde procesos-de-manufactura-imtc",
+    "Mantener consistencia entre portada, metadatos y enfoque disciplinar.",
+    "Marcar campos no definidos como [pendiente] verificable.",
+    "Fuente provisional: Auto (model-router) desde procesos-de-manufactura-imtc",
+    "Autor declarado: Martin Jonathan de la Cruz; matricula provisional UANL-IMTC.",
+    "Fuente provisional: Claude Foundry desde procesos-de-manufactura-imtc.",
+    "Fuente provisional: GPT-Pro desde procesos-de-manufactura-imtc.",
+    "Fuente provisional: Auto (model-router) desde procesos-de-manufactura-imtc.",
+    "Figura docente pendiente: mantener 'Nombre por definir' hasta fuente oficial."
+  ],
+  "structure_rules": [
+    "Estructura minima de Actividad 1: Actividad, Desarrollo, Cierre.",
+    "Incluir consigna tecnica explicita al inicio de la actividad.",
+    "En Desarrollo incluir evidencias, analisis y referencias.",
+    "En Cierre incluir resultados, limitaciones y mejoras.",
+    "Asegurar coherencia entre subtitulo del documento y nombre de actividad.",
+    "En reporte integral, incluir objetivo en abstract y secciones de desarrollo trazable.",
+    "Conservar secciones canonicas del reporte: Introduccion, Desarrollo, Conclusiones."
+  ],
+  "activity_rules": [
+    "Alinear objetivo de la actividad con el programa analitico del curso.",
+    "Documentar el reto academico semanal con trazabilidad tecnica.",
+    "Justificar decisiones tecnicas con evidencia academica o de practica.",
+    "Evitar afirmaciones sin respaldo en desarrollo o bibliografia.",
+    "Cerrar con aprendizaje aplicable a contexto de mecatronica."
+  ],
+  "quality_gates": [
+    "Comprobar consistencia entre metadatos del encabezado y contenido.",
+    "Confirmar que conclusiones reflejen enfoque de ingenieria en mecatronica.",
+    "Validar correspondencia entre objetivo declarado y evidencia presentada.",
+    "Revisar salida JSON parseable antes de propagacion adicional.",
+    "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+    "Verificar correspondencia entre documentsubtitle y archivo .tex objetivo.",
+    "Verificar que toda cita usada exista en procesos-de-manufactura-imtc.bib."
+  ],
+  "latex_rules": [
+    "Conservar clase article con opciones spanish, letterpaper, oneside.",
+    "Conservar bloque de metadatos institucionales y academicos en macros \\def.",
+    "Mantener uso de template con \\templatePortrait y \\templatePagecfg.",
+    "Mantener \\onehalfspacing para legibilidad academica.",
+    "Conservar estilo bibliografico natnumurl y archivo bib del curso.",
+    "No eliminar secciones canonicas ya presentes en plantillas activas.",
+    "Preservar \\input{template} para compatibilidad con contrato de compilacion."
+  ],
+  "bibliography_rules": [
+    "Fuente base obligatoria: programa-procesos-de-manufactura-imtc.",
+    "Citar evidencias tecnicas y academicas desde el bib del curso.",
+    "Mantener correspondencia entre citas en texto y entradas bibliograficas.",
+    "No inventar fuentes fuera del contexto local verificable.",
+    "Mantener archivo procesos-de-manufactura-imtc.bib como repositorio canonico local.",
+    "Mantener nota de actualizacion pendiente en referencia del programa analitico hasta fuente oficial."
+  ],
+  "propagation_hints": [
+    "Cuando exista contenido desarrollado, reforzar grafo con relaciones evidencia->conclusion.",
+    "Propagar primero a nodos hermanos de IMTC con misma plantilla editorial.",
+    "Preservar TEX reconstruible: macros, estructura minima y estilo de citas.",
+    "Ciclo 1: mantener vigilancia de normalizacion manual si falla serializacion.",
+    "Ciclo 1 necesita normalizacion manual si se reutiliza.",
+    "En mismo-nodo aplicar solo union y deduplicacion sin regresion.",
+    "Ciclo 2 necesita normalizacion manual si se reutiliza."
+  ],
+  "open_questions": [
+    "Definir nombre oficial de figura docente.",
+    "Completar referencia oficial del programa analitico en .bib.",
+    "Confirmar alcance exacto del reto academico de la semana para Actividad 1.",
+    "Completar secciones truncadas del reporte integral para cerrar trazabilidad."
+  ],
+  "artifact_name": "",
+  "sources": [
+    "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc",
+    "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/programa-analitico-procesos-de-manufactura-imtc.md",
+    "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/procesos-de-manufactura-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+  ],
+  "artifact_types": [],
+  "supported_artifact_types": [
+    "reporte"
+  ],
+  "source_documents": [
+    "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/programa-analitico-procesos-de-manufactura-imtc.md",
+    "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/procesos-de-manufactura-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+  ],
+  "source_fragments": [
+    "Objetivo: Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+    "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+  ],
+  "concepts": [
+    "Programa analitico de procesos-de-manufactura-imtc :: fuente=UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/procesos-de-manufactura-imtc.bib"
+  ],
+  "section_titles": [
+    "Introduccion",
+    "Desarrollo",
+    "Conclusiones"
+  ],
+  "citations": [],
+  "bibliography_index": [
+    "programa-procesos-de-manufactura-imtc :: Programa analitico de procesos-de-manufactura-imtc :: fuente=UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/procesos-de-manufactura-imtc.bib"
+  ],
+  "node_metadata": {
+    "scope_key": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc",
+    "level": "materia",
+    "label": "procesos-de-manufactura-imtc",
+    "relative_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc",
+    "institution": "UANL",
+    "career": "ingenieria-en-mecatronica",
+    "subject": "procesos-de-manufactura-imtc",
+    "activity": "",
+    "parent_key": "UANL/ingenieria-en-mecatronica"
+  },
+  "curricular_context": {
+    "institutional_frame": "",
+    "purpose": "",
+    "work_axes": [],
+    "source_fragments": [],
+    "coursename": "Procesos De Manufactura",
+    "coursecode": "IMTC",
+    "documentsubject": "Ingenieria en Mecatronica",
+    "documenttitle": "Procesos De Manufactura",
+    "documentsubtitle": "Reporte integral - procesos-de-manufactura-imtc"
+  },
+  "artifact_templates": {
+    "reporte": "reporte-procesos-de-manufactura-imtc"
+  },
+  "editorial_dna": {
+    "identity": {
+      "tone": [
+        "Tecnico-academico",
+        "Directo y verificable",
+        "Orientado a evidencia"
+      ],
+      "institutional": [
+        "Universidad Autonoma de Nuevo Leon",
+        "Facultad de Ingenieria Mecanica y Electrica",
+        "San Nicolas de los Garza, Nuevo Leon"
+      ],
+      "curricular": [
+        "Ingenieria en Mecatronica",
+        "Procesos De Manufactura",
+        "Clave IMTC"
+      ],
+      "node_metadata": {
+        "scope_key": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc",
+        "level": "materia",
+        "label": "procesos-de-manufactura-imtc",
+        "relative_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc",
+        "institution": "UANL",
+        "career": "ingenieria-en-mecatronica",
+        "subject": "procesos-de-manufactura-imtc",
+        "activity": "",
+        "parent_key": "UANL/ingenieria-en-mecatronica"
+      },
+      "curricular_context": {
+        "institutional_frame": "",
+        "purpose": "",
+        "work_axes": [],
+        "source_fragments": [],
+        "coursename": "Procesos De Manufactura",
+        "coursecode": "IMTC",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "documenttitle": "Procesos De Manufactura",
+        "documentsubtitle": "Reporte integral - procesos-de-manufactura-imtc"
+      },
+      "identity_rules": [
+        "Mantener identidad institucional: UANL, FIME, San Nicolas de los Garza, Nuevo Leon.",
+        "Mantener identidad curricular: Ingenieria en Mecatronica, asignatura IMTC.",
+        "Conservar autoria declarada en plantilla hasta recibir actualizacion oficial.",
+        "Usar denominaciones consistentes: Procesos De Manufactura e IMTC.",
+        "[Supuesto] No cambiar matricula ni figura docente sin fuente oficial del curso.",
+        "Fuente provisional: Claude Foundry desde procesos-de-manufactura-imtc",
+        "Fuente provisional: GPT-Pro desde procesos-de-manufactura-imtc",
+        "Mantener consistencia entre portada, metadatos y enfoque disciplinar.",
+        "Marcar campos no definidos como [pendiente] verificable.",
+        "Fuente provisional: Auto (model-router) desde procesos-de-manufactura-imtc",
+        "Autor declarado: Martin Jonathan de la Cruz; matricula provisional UANL-IMTC.",
+        "Fuente provisional: Claude Foundry desde procesos-de-manufactura-imtc."
+      ]
+    },
+    "essence": [
+      "Programa analitico IMTC",
+      "Actividad 1",
+      "Reto academico semanal",
+      "Evidencia tecnica",
+      "Analisis",
+      "Cierre",
+      "Mecatronica",
+      "Plantilla LaTeX",
+      "Bibliografia del curso",
+      "Se consolida base editorial para IMTC con foco en Actividad 1 y reporte integral",
+      "Se mantiene traza institucional UANL-FIME y curricular de Ingenieria en Mecatronica",
+      "Se conserva configuracion LaTeX y bibliografia local verificable",
+      "Mantener identidad institucional: UANL, FIME, San Nicolas de los Garza, Nuevo Leon",
+      "Mantener identidad curricular: Ingenieria en Mecatronica, asignatura IMTC",
+      "Conservar autoria declarada en plantilla hasta recibir actualizacion oficial",
+      "Usar denominaciones consistentes: Procesos De Manufactura e IMTC",
+      "[Supuesto] No cambiar matricula ni figura docente sin fuente oficial del curso",
+      "Estructura minima de Actividad 1: Actividad, Desarrollo, Cierre",
+      "Incluir consigna tecnica explicita al inicio de la actividad",
+      "En Desarrollo incluir evidencias, analisis y referencias",
+      "Alinear objetivo de la actividad con el programa analitico del curso.",
+      "Documentar el reto academico semanal con trazabilidad tecnica.",
+      "Justificar decisiones tecnicas con evidencia academica o de practica.",
+      "Evitar afirmaciones sin respaldo en desarrollo o bibliografia."
+    ],
+    "structure": {
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones"
+      ],
+      "artifact_types": [
+        "reporte"
+      ],
+      "tex_functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document",
+          "abstractd"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "templateIndex",
+          "templateFinalcfg",
+          "bibliography"
+        ]
+      }
+    },
+    "reason_for_being": [
+      "Estructura minima de Actividad 1: Actividad, Desarrollo, Cierre.",
+      "Incluir consigna tecnica explicita al inicio de la actividad.",
+      "En Desarrollo incluir evidencias, analisis y referencias.",
+      "En Cierre incluir resultados, limitaciones y mejoras.",
+      "Asegurar coherencia entre subtitulo del documento y nombre de actividad.",
+      "En reporte integral, incluir objetivo en abstract y secciones de desarrollo trazable.",
+      "Conservar secciones canonicas del reporte: Introduccion, Desarrollo, Conclusiones.",
+      "Alinear objetivo de la actividad con el programa analitico del curso.",
+      "Documentar el reto academico semanal con trazabilidad tecnica.",
+      "Justificar decisiones tecnicas con evidencia academica o de practica.",
+      "Evitar afirmaciones sin respaldo en desarrollo o bibliografia.",
+      "Cerrar con aprendizaje aplicable a contexto de mecatronica.",
+      "Introduccion",
+      "Desarrollo",
+      "Conclusiones"
+    ],
+    "style_markers": [
+      "Consigna tecnica explicita.",
+      "Secciones cortas y accionables.",
+      "Cierre con resultados, limitaciones y mejoras.",
+      "Citas integradas al analisis.",
+      "Mantener identidad institucional: UANL, FIME, San Nicolas de los Garza, Nuevo Leon.",
+      "Mantener identidad curricular: Ingenieria en Mecatronica, asignatura IMTC.",
+      "Conservar autoria declarada en plantilla hasta recibir actualizacion oficial.",
+      "Usar denominaciones consistentes: Procesos De Manufactura e IMTC.",
+      "[Supuesto] No cambiar matricula ni figura docente sin fuente oficial del curso.",
+      "Conservar clase article con opciones spanish, letterpaper, oneside.",
+      "Conservar bloque de metadatos institucionales y academicos en macros \\def.",
+      "Mantener uso de template con \\templatePortrait y \\templatePagecfg.",
+      "Mantener \\onehalfspacing para legibilidad academica.",
+      "Conservar estilo bibliografico natnumurl y archivo bib del curso.",
+      "No eliminar secciones canonicas ya presentes en plantillas activas.",
+      "Mantener consistencia entre portada, metadatos y enfoque disciplinar.",
+      "Marcar campos no definidos como [pendiente] verificable.",
+      "Preservar \\input{template} para compatibilidad con contrato de compilacion.",
+      "Autor declarado: Martin Jonathan de la Cruz; matricula provisional UANL-IMTC.",
+      "Figura docente pendiente: mantener 'Nombre por definir' hasta fuente oficial."
+    ],
+    "argumentative_patterns": [
+      "Objetivo -> Desarrollo con evidencia -> Cierre con aprendizaje aplicado.",
+      "Afirmacion tecnica -> Sustento bibliografico -> Implicacion en mecatronica.",
+      "Reto semanal -> Decision tecnica -> Resultado y mejora.",
+      "Estructura minima de Actividad 1: Actividad, Desarrollo, Cierre.",
+      "Incluir consigna tecnica explicita al inicio de la actividad.",
+      "En Desarrollo incluir evidencias, analisis y referencias.",
+      "En Cierre incluir resultados, limitaciones y mejoras.",
+      "Asegurar coherencia entre subtitulo del documento y nombre de actividad.",
+      "En reporte integral, incluir objetivo en abstract y secciones de desarrollo trazable.",
+      "Alinear objetivo de la actividad con el programa analitico del curso.",
+      "Documentar el reto academico semanal con trazabilidad tecnica.",
+      "Justificar decisiones tecnicas con evidencia academica o de practica.",
+      "Evitar afirmaciones sin respaldo en desarrollo o bibliografia.",
+      "Cerrar con aprendizaje aplicable a contexto de mecatronica.",
+      "Comprobar consistencia entre metadatos del encabezado y contenido.",
+      "Confirmar que conclusiones reflejen enfoque de ingenieria en mecatronica.",
+      "Validar correspondencia entre objetivo declarado y evidencia presentada.",
+      "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+      "Conservar secciones canonicas del reporte: Introduccion, Desarrollo, Conclusiones.",
+      "Verificar correspondencia entre documentsubtitle y archivo .tex objetivo."
+    ],
+    "reinforcement_log": [
+      "Se preservaron reglas historicas utiles sin eliminacion.",
+      "Se deduplicaron lineamientos equivalentes en estructura, actividad y calidad.",
+      "Se reforzo el patron argumento-evidencia-conclusion con foco IMTC.",
+      "Se incorporaron supuestos marcados para campos no oficiales pendientes.",
+      "Se mantuvo compatibilidad con reconstruccion LaTeX y control bibliografico local.",
+      "Refuerzo editorial aplicado sobre 53 conceptos y 0 citas.",
+      "Canonizacion local completada con preservacion total y deduplicacion.",
+      "Se consolida base editorial para IMTC con foco en Actividad 1 y reporte integral.",
+      "ADN sintetizado con 54 conceptos, 1 citas y 16 relaciones.",
+      "Memoria de redacción preservada en 8 bloques.",
+      "Refuerzo editorial aplicado sobre 1 conceptos y 0 citas.",
+      "Salida sin JSON parseable desde Claude Foundry para procesos-de-manufactura-imtc",
+      "Salida sin JSON parseable desde GPT-Pro para procesos-de-manufactura-imtc",
+      "Se preservaron todas las reglas utiles previas sin eliminacion.",
+      "Se agregaron refuerzos verificables de consistencia portada-metadatos-disciplina.",
+      "Se reforzo control preventivo de JSON parseable por antecedente de fallas.",
+      "Se mantuvo compresion lossless por union y deduplicacion en mismo nodo.",
+      "Refuerzo editorial aplicado sobre 63 conceptos y 0 citas.",
+      "ADN sintetizado con 73 conceptos, 1 citas y 22 relaciones.",
+      "Salida sin JSON parseable desde Auto (model-router) para procesos-de-manufactura-imtc",
+      "Refuerzo editorial aplicado sobre 8 conceptos y 0 citas.",
+      "ADN sintetizado con 74 conceptos, 1 citas y 28 relaciones.",
+      "Ciclo 2 en mismo nodo aplicado con union y deduplicacion sin recorte.",
+      "Se preservaron reglas, estructura, trazabilidad y controles JSON existentes.",
+      "Se reforzo la conexion programa analitico -> objetivo -> evidencia -> conclusiones con evidencia local.",
+      "Refuerzo editorial aplicado sobre 66 conceptos y 0 citas.",
+      "ADN sintetizado con 78 conceptos, 1 citas y 30 relaciones.",
+      "Refuerzo editorial aplicado sobre 9 conceptos y 0 citas.",
+      "ADN sintetizado con 79 conceptos, 1 citas y 30 relaciones."
+    ],
+    "knowledge_graph": {
+      "concepts": [
+        "Programa analitico IMTC",
+        "Actividad 1",
+        "Reto academico semanal",
+        "Evidencia tecnica",
+        "Analisis",
+        "Cierre",
+        "Mecatronica",
+        "Plantilla LaTeX",
+        "Bibliografia del curso",
+        "Se consolida base editorial para IMTC con foco en Actividad 1 y reporte integral",
+        "Se mantiene traza institucional UANL-FIME y curricular de Ingenieria en Mecatronica",
+        "Se conserva configuracion LaTeX y bibliografia local verificable",
+        "Mantener identidad institucional: UANL, FIME, San Nicolas de los Garza, Nuevo Leon",
+        "Mantener identidad curricular: Ingenieria en Mecatronica, asignatura IMTC",
+        "Conservar autoria declarada en plantilla hasta recibir actualizacion oficial",
+        "Usar denominaciones consistentes: Procesos De Manufactura e IMTC",
+        "[Supuesto] No cambiar matricula ni figura docente sin fuente oficial del curso",
+        "Estructura minima de Actividad 1: Actividad, Desarrollo, Cierre",
+        "Incluir consigna tecnica explicita al inicio de la actividad",
+        "En Desarrollo incluir evidencias, analisis y referencias",
+        "En Cierre incluir resultados, limitaciones y mejoras",
+        "Asegurar coherencia entre subtitulo del documento y nombre de actividad",
+        "En reporte integral, incluir objetivo en abstract y secciones de desarrollo trazable",
+        "Alinear objetivo de la actividad con el programa analitico del curso",
+        "Documentar el reto academico semanal con trazabilidad tecnica",
+        "Justificar decisiones tecnicas con evidencia academica o de practica",
+        "Evitar afirmaciones sin respaldo en desarrollo o bibliografia",
+        "Cerrar con aprendizaje aplicable a contexto de mecatronica",
+        "Comprobar consistencia entre metadatos del encabezado y contenido",
+        "Confirmar que conclusiones reflejen enfoque de ingenieria en mecatronica",
+        "Validar correspondencia entre objetivo declarado y evidencia presentada",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo",
+        "Definir nombre oficial de figura docente",
+        "Completar referencia oficial del programa analitico en .bib",
+        "Confirmar alcance exacto del reto academico de la semana para Actividad 1",
+        "Completar secciones truncadas del reporte integral para cerrar trazabilidad",
+        "Documentar actividades con trazabilidad tecnica y respaldo bibliografico",
+        "Conectar objetivos, evidencia y cierre aplicable a mecatronica",
+        "Sostener consistencia formal entre plantilla, contenido y referencias",
+        "Estandarizar entregables academicos IMTC sin perder reconstruibilidad LaTeX",
+        "Asegurar calidad editorial reproducible en actividades y reportes",
+        "Consigna tecnica explicita",
+        "Secciones cortas y accionables",
+        "Cierre con resultados, limitaciones y mejoras",
+        "Citas integradas al analisis",
+        "Objetivo -> Desarrollo con evidencia -> Cierre con aprendizaje aplicado",
+        "Afirmacion tecnica -> Sustento bibliografico -> Implicacion en mecatronica",
+        "Reto semanal -> Decision tecnica -> Resultado y mejora",
+        "programa-procesos-de-manufactura-imtc",
+        "programa-analitico-procesos-de-manufactura-imtc.md",
+        "procesos-de-manufactura-imtc.bib",
+        "reporte-procesos-de-manufactura-imtc-Actividad-1.tex",
+        "reporte-procesos-de-manufactura-imtc.tex",
+        "Programa analitico de procesos-de-manufactura-imtc :: fuente=UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/procesos-de-manufactura-imtc.bib",
+        "Objetivo de actividad",
+        "Consigna tecnica",
+        "Desarrollo",
+        "Conclusiones",
+        "Validez academica",
+        "Aplicacion en mecatronica",
+        "Se confirma coexistencia de plantilla de actividad y reporte integral como corpus canonico local",
+        "Se preserva TEX reconstruible con macros institucionales y estructura minima verificable",
+        "Mantener consistencia entre portada, metadatos y enfoque disciplinar",
+        "Marcar campos no definidos como [pendiente] verificable",
+        "Conservar secciones canonicas del reporte: Introduccion, Desarrollo, Conclusiones",
+        "Verificar correspondencia entre documentsubtitle y archivo .tex objetivo",
+        "Estandarizar entregables IMTC con trazabilidad tecnica y academica",
+        "Asegurar coherencia entre objetivo, evidencia y conclusion",
+        "Conservar identidad UANL-FIME en toda salida editorial",
+        "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/programa-analitico-procesos-de-manufactura-imtc.md",
+        "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/procesos-de-manufactura-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc-Actividad-1.tex",
+        "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex",
+        "Autor declarado: Martin Jonathan de la Cruz; matricula provisional UANL-IMTC",
+        "Se valida fuente local explicita del programa analitico y su checklist de cobertura editorial",
+        "Verificar que toda cita usada exista en procesos-de-manufactura-imtc.bib",
+        "Estandarizar entregables IMTC con trazabilidad academica verificable",
+        "Preservar compatibilidad de compilacion y citacion local",
+        "Figura docente pendiente: mantener 'Nombre por definir' hasta fuente oficial"
+      ],
+      "citations": [
+        "programa-procesos-de-manufactura-imtc"
+      ],
+      "evidence": [
+        "programa-analitico-procesos-de-manufactura-imtc.md",
+        "procesos-de-manufactura-imtc.bib",
+        "reporte-procesos-de-manufactura-imtc-Actividad-1.tex",
+        "reporte-procesos-de-manufactura-imtc.tex",
+        "Canonizacion local completada con preservacion total y deduplicacion.",
+        "Se consolida base editorial para IMTC con foco en Actividad 1 y reporte integral.",
+        "Se mantiene traza institucional UANL-FIME y curricular de Ingenieria en Mecatronica.",
+        "Se conserva configuracion LaTeX y bibliografia local verificable.",
+        "Se hereda alerta historica de normalizacion JSON como control preventivo.",
+        "Comprobar consistencia entre metadatos del encabezado y contenido.",
+        "Confirmar que conclusiones reflejen enfoque de ingenieria en mecatronica.",
+        "Validar correspondencia entre objetivo declarado y evidencia presentada.",
+        "Revisar salida JSON parseable antes de propagacion adicional.",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+        "programa-procesos-de-manufactura-imtc :: Programa analitico de procesos-de-manufactura-imtc :: fuente=UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/procesos-de-manufactura-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/programa-analitico-procesos-de-manufactura-imtc.md",
+        "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/procesos-de-manufactura-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex",
+        "Salida sin JSON parseable desde Claude Foundry para procesos-de-manufactura-imtc",
+        "Salida sin JSON parseable desde GPT-Pro para procesos-de-manufactura-imtc",
+        "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc-Actividad-1.tex",
+        "Se confirma coexistencia de plantilla de actividad y reporte integral como corpus canonico local.",
+        "Se preserva TEX reconstruible con macros institucionales y estructura minima verificable.",
+        "Verificar correspondencia entre documentsubtitle y archivo .tex objetivo.",
+        "Salida sin JSON parseable desde Auto (model-router) para procesos-de-manufactura-imtc",
+        "Salida sin JSON parseable desde Claude Foundry para procesos-de-manufactura-imtc.",
+        "Salida sin JSON parseable desde GPT-Pro para procesos-de-manufactura-imtc.",
+        "Salida sin JSON parseable desde Auto (model-router) para procesos-de-manufactura-imtc.",
+        "Se valida fuente local explicita del programa analitico y su checklist de cobertura editorial.",
+        "Verificar que toda cita usada exista en procesos-de-manufactura-imtc.bib."
+      ],
+      "relations": [
+        {
+          "source": "Programa analitico IMTC",
+          "target": "Objetivo de actividad",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "El checklist local exige alineacion explicita.",
+          "evidence": []
+        },
+        {
+          "source": "Consigna tecnica",
+          "target": "Desarrollo",
+          "kind": "depends_on",
+          "weight": 3,
+          "justification": "Define el alcance del reto a documentar y resolver.",
+          "evidence": []
+        },
+        {
+          "source": "Evidencia tecnica",
+          "target": "Conclusiones",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "Las conclusiones deben evitar afirmaciones sin respaldo.",
+          "evidence": []
+        },
+        {
+          "source": "Bibliografia del curso",
+          "target": "Validez academica",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "Se exige trazabilidad de citas al .bib local.",
+          "evidence": []
+        },
+        {
+          "source": "Cierre",
+          "target": "Aplicacion en mecatronica",
+          "kind": "develops",
+          "weight": 3,
+          "justification": "El cierre debe traducir aprendizaje al contexto disciplinar.",
+          "evidence": []
+        },
+        {
+          "source": "Se consolida base editorial para IMTC con foco en Actividad 1 y reporte integral",
+          "target": "Se mantiene traza institucional UANL-FIME y curricular de Ingenieria en Mecatronica",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se consolida base editorial para IMTC con foco en Actividad 1 y reporte integral",
+          "target": "Se conserva configuracion LaTeX y bibliografia local verificable",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene traza institucional UANL-FIME y curricular de Ingenieria en Mecatronica",
+          "target": "Se conserva configuracion LaTeX y bibliografia local verificable",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene traza institucional UANL-FIME y curricular de Ingenieria en Mecatronica",
+          "target": "Mantener identidad institucional: UANL, FIME, San Nicolas de los Garza, Nuevo Leon",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva configuracion LaTeX y bibliografia local verificable",
+          "target": "Mantener identidad institucional: UANL, FIME, San Nicolas de los Garza, Nuevo Leon",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva configuracion LaTeX y bibliografia local verificable",
+          "target": "Mantener identidad curricular: Ingenieria en Mecatronica, asignatura IMTC",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener identidad institucional: UANL, FIME, San Nicolas de los Garza, Nuevo Leon",
+          "target": "Mantener identidad curricular: Ingenieria en Mecatronica, asignatura IMTC",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener identidad institucional: UANL, FIME, San Nicolas de los Garza, Nuevo Leon",
+          "target": "Conservar autoria declarada en plantilla hasta recibir actualizacion oficial",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener identidad curricular: Ingenieria en Mecatronica, asignatura IMTC",
+          "target": "Conservar autoria declarada en plantilla hasta recibir actualizacion oficial",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Introduccion",
+          "target": "Mecatronica",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0003"
+          ]
+        },
+        {
+          "source": "Desarrollo",
+          "target": "Analisis",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0005"
+          ]
+        },
+        {
+          "source": "Se mantiene traza institucional UANL-FIME y curricular de Ingenieria en Mecatronica",
+          "target": "Se confirma coexistencia de plantilla de actividad y reporte integral como corpus canonico local",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva configuracion LaTeX y bibliografia local verificable",
+          "target": "Se confirma coexistencia de plantilla de actividad y reporte integral como corpus canonico local",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva configuracion LaTeX y bibliografia local verificable",
+          "target": "Se preserva TEX reconstruible con macros institucionales y estructura minima verificable",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma coexistencia de plantilla de actividad y reporte integral como corpus canonico local",
+          "target": "Se preserva TEX reconstruible con macros institucionales y estructura minima verificable",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma coexistencia de plantilla de actividad y reporte integral como corpus canonico local",
+          "target": "Mantener identidad institucional: UANL, FIME, San Nicolas de los Garza, Nuevo Leon",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva TEX reconstruible con macros institucionales y estructura minima verificable",
+          "target": "Mantener identidad institucional: UANL, FIME, San Nicolas de los Garza, Nuevo Leon",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener identidad curricular: Ingenieria en Mecatronica, asignatura IMTC",
+          "target": "Usar denominaciones consistentes: Procesos De Manufactura e IMTC",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Conservar autoria declarada en plantilla hasta recibir actualizacion oficial",
+          "target": "Usar denominaciones consistentes: Procesos De Manufactura e IMTC",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Conservar autoria declarada en plantilla hasta recibir actualizacion oficial",
+          "target": "[Supuesto] No cambiar matricula ni figura docente sin fuente oficial del curso",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar denominaciones consistentes: Procesos De Manufactura e IMTC",
+          "target": "[Supuesto] No cambiar matricula ni figura docente sin fuente oficial del curso",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar denominaciones consistentes: Procesos De Manufactura e IMTC",
+          "target": "Mantener consistencia entre portada, metadatos y enfoque disciplinar",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "[Supuesto] No cambiar matricula ni figura docente sin fuente oficial del curso",
+          "target": "Mantener consistencia entre portada, metadatos y enfoque disciplinar",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma coexistencia de plantilla de actividad y reporte integral como corpus canonico local",
+          "target": "Se valida fuente local explicita del programa analitico y su checklist de cobertura editorial",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva TEX reconstruible con macros institucionales y estructura minima verificable",
+          "target": "Se valida fuente local explicita del programa analitico y su checklist de cobertura editorial",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        }
+      ],
+      "concept_weights": {
+        "Se consolida base editorial para IMTC con foco en Actividad 1 y reporte integral": 3,
+        "Se mantiene traza institucional UANL-FIME y curricular de Ingenieria en Mecatronica": 3,
+        "Se conserva configuracion LaTeX y bibliografia local verificable": 3,
+        "Mantener identidad institucional: UANL, FIME, San Nicolas de los Garza, Nuevo Leon": 5,
+        "Mantener identidad curricular: Ingenieria en Mecatronica, asignatura IMTC": 5,
+        "Conservar autoria declarada en plantilla hasta recibir actualizacion oficial": 5,
+        "Usar denominaciones consistentes: Procesos De Manufactura e IMTC": 5,
+        "[Supuesto] No cambiar matricula ni figura docente sin fuente oficial del curso": 5,
+        "Estructura minima de Actividad 1: Actividad, Desarrollo, Cierre": 3,
+        "Incluir consigna tecnica explicita al inicio de la actividad": 3,
+        "En Desarrollo incluir evidencias, analisis y referencias": 3,
+        "En Cierre incluir resultados, limitaciones y mejoras": 3,
+        "Asegurar coherencia entre subtitulo del documento y nombre de actividad": 3,
+        "En reporte integral, incluir objetivo en abstract y secciones de desarrollo trazable": 3,
+        "Alinear objetivo de la actividad con el programa analitico del curso": 3,
+        "Documentar el reto academico semanal con trazabilidad tecnica": 3,
+        "Justificar decisiones tecnicas con evidencia academica o de practica": 3,
+        "Evitar afirmaciones sin respaldo en desarrollo o bibliografia": 3,
+        "Cerrar con aprendizaje aplicable a contexto de mecatronica": 3,
+        "Comprobar consistencia entre metadatos del encabezado y contenido": 3,
+        "Confirmar que conclusiones reflejen enfoque de ingenieria en mecatronica": 3,
+        "Validar correspondencia entre objetivo declarado y evidencia presentada": 3,
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo": 7,
+        "Definir nombre oficial de figura docente": 3,
+        "Completar referencia oficial del programa analitico en .bib": 3,
+        "Confirmar alcance exacto del reto academico de la semana para Actividad 1": 3,
+        "Completar secciones truncadas del reporte integral para cerrar trazabilidad": 3,
+        "Documentar actividades con trazabilidad tecnica y respaldo bibliografico": 1,
+        "Conectar objetivos, evidencia y cierre aplicable a mecatronica": 1,
+        "Sostener consistencia formal entre plantilla, contenido y referencias": 1,
+        "Estandarizar entregables academicos IMTC sin perder reconstruibilidad LaTeX": 1,
+        "Asegurar calidad editorial reproducible en actividades y reportes": 1,
+        "Consigna tecnica explicita": 3,
+        "Secciones cortas y accionables": 3,
+        "Cierre con resultados, limitaciones y mejoras": 3,
+        "Citas integradas al analisis": 3,
+        "Objetivo -> Desarrollo con evidencia -> Cierre con aprendizaje aplicado": 3,
+        "Afirmacion tecnica -> Sustento bibliografico -> Implicacion en mecatronica": 3,
+        "Reto semanal -> Decision tecnica -> Resultado y mejora": 3,
+        "Programa analitico IMTC": 3,
+        "Actividad 1": 3,
+        "Reto academico semanal": 3,
+        "Evidencia tecnica": 3,
+        "Analisis": 3,
+        "Cierre": 3,
+        "Mecatronica": 3,
+        "Plantilla LaTeX": 3,
+        "Bibliografia del curso": 3,
+        "programa-procesos-de-manufactura-imtc": 3,
+        "programa-analitico-procesos-de-manufactura-imtc.md": 1,
+        "procesos-de-manufactura-imtc.bib": 1,
+        "reporte-procesos-de-manufactura-imtc-Actividad-1.tex": 1,
+        "reporte-procesos-de-manufactura-imtc.tex": 1,
+        "Se confirma coexistencia de plantilla de actividad y reporte integral como corpus canonico local": 2,
+        "Se preserva TEX reconstruible con macros institucionales y estructura minima verificable": 2,
+        "Mantener consistencia entre portada, metadatos y enfoque disciplinar": 4,
+        "Marcar campos no definidos como [pendiente] verificable": 4,
+        "Conservar secciones canonicas del reporte: Introduccion, Desarrollo, Conclusiones": 2,
+        "Verificar correspondencia entre documentsubtitle y archivo .tex objetivo": 2,
+        "Estandarizar entregables IMTC con trazabilidad tecnica y academica": 1,
+        "Asegurar coherencia entre objetivo, evidencia y conclusion": 2,
+        "Conservar identidad UANL-FIME en toda salida editorial": 1,
+        "Objetivo de actividad": 2,
+        "Consigna tecnica": 2,
+        "Desarrollo": 2,
+        "Conclusiones": 2,
+        "Validez academica": 2,
+        "Aplicacion en mecatronica": 2,
+        "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/programa-analitico-procesos-de-manufactura-imtc.md": 2,
+        "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/procesos-de-manufactura-imtc.bib": 2,
+        "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc-Actividad-1.tex": 2,
+        "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex": 2,
+        "Autor declarado: Martin Jonathan de la Cruz; matricula provisional UANL-IMTC": 3,
+        "Se valida fuente local explicita del programa analitico y su checklist de cobertura editorial": 1,
+        "Verificar que toda cita usada exista en procesos-de-manufactura-imtc.bib": 1,
+        "Estandarizar entregables IMTC con trazabilidad academica verificable": 1,
+        "Preservar compatibilidad de compilacion y citacion local": 1,
+        "Figura docente pendiente: mantener 'Nombre por definir' hasta fuente oficial": 1
+      },
+      "citation_weights": {}
+    },
+    "writing_memory": [
+      {
+        "id": "b0001",
+        "order": 1,
+        "kind": "abstract",
+        "section": "Resumen editorial",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Objetivo: Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+        "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+      },
+      {
+        "id": "b0002",
+        "order": 2,
+        "kind": "section",
+        "section": "Introduccion",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Introduccion",
+        "latex": "\\section{Introduccion}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+      },
+      {
+        "id": "b0003",
+        "order": 3,
+        "kind": "paragraph",
+        "section": "Introduccion",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+        "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+      },
+      {
+        "id": "b0004",
+        "order": 4,
+        "kind": "section",
+        "section": "Desarrollo",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Desarrollo",
+        "latex": "\\section{Desarrollo}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+      },
+      {
+        "id": "b0005",
+        "order": 5,
+        "kind": "paragraph",
+        "section": "Desarrollo",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+        "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+      },
+      {
+        "id": "b0006",
+        "order": 6,
+        "kind": "section",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Conclusiones",
+        "latex": "\\section{Conclusiones}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+      },
+      {
+        "id": "b0007",
+        "order": 7,
+        "kind": "paragraph",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+        "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+      },
+      {
+        "id": "b0008",
+        "order": 8,
+        "kind": "paragraph",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "natnumurl",
+        "latex": "\\bibliographystyle{natnumurl}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+      }
+    ],
+    "reconstructable_source": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Procesos De Manufactura}\n\\def\\documentsubtitle {Reporte integral - procesos-de-manufactura-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Procesos De Manufactura}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia procesos de manufactura.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{procesos-de-manufactura-imtc}\n\n\\end{document}\n"
+  },
+  "tex_blueprint": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex",
+        "documenttitle": "Procesos De Manufactura",
+        "documentsubtitle": "Reporte integral - procesos-de-manufactura-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Procesos De Manufactura",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+        "section_titles": [
+          "Introduccion",
+          "Desarrollo",
+          "Conclusiones"
+        ],
+        "subsection_titles": [],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [
+          "Objetivo: Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+          "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+        ],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex",
+          "raw_latex_sha256": "e34b72b72095708def9df8c392b094878d2e35f6c4f73661163b5e39994e9311",
+          "raw_latex_chars": 1726,
+          "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Procesos De Manufactura}\n\\def\\documentsubtitle {Reporte integral - procesos-de-manufactura-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Procesos De Manufactura}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia procesos de manufactura.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{procesos-de-manufactura-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document",
+              "abstractd"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "templateIndex",
+              "templateFinalcfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex",
+      "documenttitle": "Procesos De Manufactura",
+      "documentsubtitle": "Reporte integral - procesos-de-manufactura-imtc",
+      "documentsubject": "Ingenieria en Mecatronica",
+      "coursename": "Procesos De Manufactura",
+      "coursecode": "IMTC",
+      "documentauthor": "Martin Jonathan de la Cruz",
+      "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones"
+      ],
+      "subsection_titles": [],
+      "cited_keys": [],
+      "concepts": [],
+      "source_fragments": [
+        "Objetivo: Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+        "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+      ],
+      "content_memory": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex",
+        "raw_latex_sha256": "e34b72b72095708def9df8c392b094878d2e35f6c4f73661163b5e39994e9311",
+        "raw_latex_chars": 1726,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Procesos De Manufactura}\n\\def\\documentsubtitle {Reporte integral - procesos-de-manufactura-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Procesos De Manufactura}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia procesos de manufactura.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{procesos-de-manufactura-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    }
+  },
+  "tex_content_memory": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex",
+        "raw_latex_sha256": "e34b72b72095708def9df8c392b094878d2e35f6c4f73661163b5e39994e9311",
+        "raw_latex_chars": 1726,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Procesos De Manufactura}\n\\def\\documentsubtitle {Reporte integral - procesos-de-manufactura-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Procesos De Manufactura}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia procesos de manufactura.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{procesos-de-manufactura-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex",
+      "raw_latex_sha256": "e34b72b72095708def9df8c392b094878d2e35f6c4f73661163b5e39994e9311",
+      "raw_latex_chars": 1726,
+      "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Procesos De Manufactura}\n\\def\\documentsubtitle {Reporte integral - procesos-de-manufactura-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Procesos De Manufactura}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia procesos de manufactura.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{procesos-de-manufactura-imtc}\n\n\\end{document}\n",
+      "functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document",
+          "abstractd"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "templateIndex",
+          "templateFinalcfg",
+          "bibliography"
+        ]
+      },
+      "paragraph_map": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "abstract",
+          "section": "Resumen editorial",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Objetivo: Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+          "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "section",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Introduccion",
+          "latex": "\\section{Introduccion}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "paragraph",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "section",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\section{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "paragraph",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "section",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Conclusiones",
+          "latex": "\\section{Conclusiones}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        },
+        {
+          "id": "b0008",
+          "order": 8,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        }
+      ],
+      "content_blocks": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "abstract",
+          "section": "Resumen editorial",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Objetivo: Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+          "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia procesos de manufactura.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "section",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Introduccion",
+          "latex": "\\section{Introduccion}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "paragraph",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "section",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\section{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "paragraph",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "section",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Conclusiones",
+          "latex": "\\section{Conclusiones}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        },
+        {
+          "id": "b0008",
+          "order": 8,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/reporte-procesos-de-manufactura-imtc.tex"
+        }
+      ],
+      "citation_map": {},
+      "all_cited_keys": [],
+      "missing_bibliography_keys": []
+    },
+    "bibliography_sources": {
+      "programa-procesos-de-manufactura-imtc": {
+        "key": "programa-procesos-de-manufactura-imtc",
+        "source_type": "bibtex",
+        "source_path": "UANL/ingenieria-en-mecatronica/procesos-de-manufactura-imtc/procesos-de-manufactura-imtc.bib",
+        "entry_type": "misc",
+        "title": "Programa analitico de procesos-de-manufactura-imtc",
+        "author": "UANL",
+        "year": "2026",
+        "url": "https://www.uanl.mx/",
+        "note": "Actualizar con la referencia oficial del curso",
+        "raw_entry": "@misc{programa-procesos-de-manufactura-imtc,\n  author = {UANL},\n  title = {Programa analitico de procesos-de-manufactura-imtc},\n  year = {2026},\n  note = {Actualizar con la referencia oficial del curso},\n  url = {https://www.uanl.mx/}\n}"
+      }
+    }
+  },
+  "locked_sections": [],
+  "compression": {
+    "method": "union-dedupe",
+    "lossless": true
+  },
+  "schema_version": 3
+}

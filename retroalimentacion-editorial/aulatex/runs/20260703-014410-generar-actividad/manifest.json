@@ -1,0 +1,143 @@
+{
+  "run_id": "20260703-014410",
+  "target": "UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde",
+  "display_target": "UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde",
+  "level": "materia",
+  "action": "generar-actividad",
+  "activity_number": 1,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "Dependencia faltante: instala requests en .venv para habilitar llamadas LLM.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [],
+  "extractor": {
+    "enabled": true,
+    "ok": true,
+    "run_dir": "retroalimentacion-editorial/aulatex/extractor/runs/20260703-014410-extractor",
+    "manifest": "retroalimentacion-editorial/aulatex/extractor/runs/20260703-014410-extractor/manifest.json",
+    "output_dir": "UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde/extractor-aulatex",
+    "stdout": "retroalimentacion-editorial/aulatex/extractor/runs/20260703-014410-extractor/stdout.txt",
+    "stderr": "retroalimentacion-editorial/aulatex/extractor/runs/20260703-014410-extractor/stderr.txt"
+  },
+  "materialization": {
+    "enabled": false
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-03 01:44:10",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-03 01:44:10",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-03 01:44:10",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar: Dependencia faltante: instala requests en .venv para habilitar llamadas LLM."
+    },
+    {
+      "timestamp": "2026-07-03 01:44:10",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-03 01:44:10",
+      "state": "planned",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "ExtractorAdapter seleccionado para run-extractor"
+    },
+    {
+      "timestamp": "2026-07-03 01:44:13",
+      "state": "planned",
+      "action": "tool-result",
+      "status": "ok",
+      "detail": "extractor ok=True salida=UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde/extractor-aulatex"
+    },
+    {
+      "timestamp": "2026-07-03 01:44:13",
+      "state": "planned",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-03 01:44:13",
+      "state": "evaluated",
+      "action": "planned->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-03 01:44:13",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}

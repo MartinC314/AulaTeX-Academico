@@ -1,0 +1,2379 @@
+{
+  "summary": [
+    "Nodo inicial canonizado sin regresion y con preservacion total de memoria util.",
+    "Se consolida base editorial para Actividad 1 de Laboratorio de Quimica General IMTC.",
+    "Se incorpora contexto local verificable: programa analitico, plantilla TeX de actividad y archivo .bib.",
+    "Se mantiene alerta heredada: en ciclo previo hubo salida no JSON parseable en nivel institucional.",
+    "Se agregan reglas accionables para trazabilidad, estructura minima y citacion obligatoria con fuente local.",
+    "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+    "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+    "Nodo local estable y canonizado sin cambios regresivos.",
+    "Se preserva memoria editorial completa de Actividad 1 por union y deduplicacion.",
+    "Se confirma base verificable local: programa analitico, plantilla TeX y .bib del curso.",
+    "Se mantiene alerta por antecedentes de salida no JSON parseable en motores previos.",
+    "Se refuerza control de trazabilidad: objetivo, evidencia, cierre y cita local obligatoria.",
+    "Se detecta brecha actual: archivo TeX de Actividad 1 no contiene \\cite activo.",
+    "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+    "Nodo local canonizado en ciclo 2 sin regresion.",
+    "Se preserva memoria editorial completa por union y deduplicacion.",
+    "Se confirma base local verificable: programa analitico, plantilla TeX de actividad y archivo .bib.",
+    "Se refuerza trazabilidad obligatoria entre objetivo, evidencia, cierre y cita efectiva en cuerpo."
+  ],
+  "identity_rules": [
+    "Usar voz academica tecnica, clara y directa.",
+    "Mantener identidad institucional UANL y FIME en portada y metadatos.",
+    "Mantener adscripcion curricular: Ingenieria en Mecatronica, curso IMTC.",
+    "Conservar enfoque de laboratorio: evidencia, analisis, cierre y mejora.",
+    "Marcar campos pendientes como '[SUPUESTO]' cuando no haya dato oficial.",
+    "Fuente provisional: Claude Foundry desde Actividad 1",
+    "Fuente provisional: GPT-Pro desde Actividad 1",
+    "Conservar fuente provisional de trazabilidad de motores previos sin elevarla a fuente academica.",
+    "Fuente provisional: Auto (model-router) desde Actividad 1",
+    "Fuente provisional: Claude Foundry desde Actividad 1.",
+    "Fuente provisional: GPT-Pro desde Actividad 1.",
+    "Fuente provisional: Auto (model-router) desde Actividad 1."
+  ],
+  "structure_rules": [
+    "Incluir seccion principal 'Actividad 1'.",
+    "Incluir subseccion 'Desarrollo' con evidencias y analisis.",
+    "Incluir subseccion 'Cierre' con resultados, limitaciones y mejoras.",
+    "Alinear el objetivo de la actividad con el programa analitico del curso.",
+    "Cerrar con bibliografia enlazada al archivo local del curso.",
+    "Mantener consistencia nominal entre 'Cierre' y 'Conclusiones' si ambos aparecen."
+  ],
+  "activity_rules": [
+    "Definir una consigna tecnica concreta y verificable al inicio de la actividad.",
+    "Documentar procedimiento y resultados con lenguaje tecnico reproducible.",
+    "Relacionar hallazgos con decisiones de ingenieria en mecatronica.",
+    "Registrar limitaciones experimentales y propuesta de mejora inmediata.",
+    "Evitar afirmaciones sin evidencia o sin respaldo bibliografico local.",
+    "Incluir al menos un indicador observable por evidencia reportada.",
+    "Definir una consigna tecnica concreta y verificable al inicio."
+  ],
+  "quality_gates": [
+    "Validar salida JSON parseable antes de propagar.",
+    "Verificar coherencia entre objetivo, desarrollo y cierre.",
+    "Comprobar que exista al menos una cita desde 'laboratorio-de-quimica-general-imtc.bib'.",
+    "Revisar que la actividad mantenga enfoque tecnico-academico y no solo descriptivo.",
+    "Confirmar que no se eliminen reglas utiles heredadas.",
+    "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+    "Bloquear canonizacion final si no hay clave citada en texto aunque exista bibliografia declarada.",
+    "Comprobar al menos una cita desde 'laboratorio-de-quimica-general-imtc.bib'."
+  ],
+  "latex_rules": [
+    "Preservar macros de identidad del documento ya definidas en la plantilla IMTC.",
+    "Mantener '\\input{template}' y configuracion de portada institucional.",
+    "Mantener estilo de interlineado y flujo de secciones de la plantilla base.",
+    "No duplicar bloques de preambulo si ya existen en el archivo de actividad.",
+    "No reescribir plantilla completa; aplicar cambios minimos y trazables.",
+    "Mantener '\\\\input{template}' y configuracion de portada institucional.",
+    "Mantener solo ajustes incrementales sobre 'reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex'.",
+    "Preservar macros de identidad del documento definidas en la plantilla IMTC.",
+    "No duplicar bloques de preambulo si ya existen."
+  ],
+  "bibliography_rules": [
+    "Usar archivo local 'laboratorio-de-quimica-general-imtc.bib' como fuente primaria.",
+    "Mantener '\\bibliographystyle{natnumurl}' y '\\bibliography{laboratorio-de-quimica-general-imtc}'.",
+    "Citar 'programa-laboratorio-de-quimica-general-imtc' cuando se justifique alineacion curricular.",
+    "No inventar nuevas fuentes sin registro previo verificable.",
+    "Marcar como '[SUPUESTO]' cualquier dato bibliografico incompleto.",
+    "Mantener '\\\\bibliographystyle{natnumurl}' y '\\\\bibliography{laboratorio-de-quimica-general-imtc}'.",
+    "Diferenciar entre tener bibliografia declarada y tener citas efectivas en el cuerpo.",
+    "Diferenciar entre bibliografia declarada y citas efectivas en cuerpo."
+  ],
+  "propagation_hints": [
+    "Propagacion local: reutilizar este canon en futuras actividades del mismo laboratorio.",
+    "Aplicar union-dedupe en cada ciclo para evitar perdida de reglas.",
+    "Mantener bandera de control por antecedente de salida no estructurada en nivel superior.",
+    "Priorizar evidencia local del nodo antes de incorporar memoria externa.",
+    "Si aparece nueva version del programa, actualizar relaciones sin borrar historial.",
+    "Ciclo 1 necesita normalizacion manual si se reutiliza.",
+    "Registrar en cada ciclo si la cita obligatoria ya fue satisfecha en TeX.",
+    "Propagacion local: reutilizar este canon en actividades del mismo laboratorio.",
+    "Aplicar union-dedupe en cada ciclo.",
+    "Priorizar evidencia local del nodo antes de memoria externa.",
+    "Mantener bandera de control por antecedente de salida no estructurada.",
+    "Ciclo 2 necesita normalizacion manual si se reutiliza."
+  ],
+  "open_questions": [
+    "Confirmar nombre oficial de la figura docente. [SUPUESTO]",
+    "Confirmar matricula real del alumno en lugar de marcador 'UANL-IMTC'. [SUPUESTO]",
+    "Completar referencia oficial del programa analitico en la entrada .bib.",
+    "Definir criterios cuantitativos minimos de evidencia para cada actividad.",
+    "Verificar si la Actividad 1 requiere formato adicional de seguridad de laboratorio. [SUPUESTO]",
+    "Confirmar matricula real del alumno en lugar de 'UANL-IMTC'. [SUPUESTO]",
+    "Definir criterios cuantitativos minimos de evidencia por actividad.",
+    "Verificar si Actividad 1 requiere formato adicional de seguridad de laboratorio. [SUPUESTO]"
+  ],
+  "artifact_name": "reporte-laboratorio-de-quimica-general-imtc-Actividad-1",
+  "sources": [
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/actividad-1",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/programa-analitico-laboratorio-de-quimica-general-imtc.md",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/laboratorio-de-quimica-general-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+  ],
+  "artifact_types": [
+    "reporte"
+  ],
+  "supported_artifact_types": [],
+  "source_documents": [
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/programa-analitico-laboratorio-de-quimica-general-imtc.md",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/laboratorio-de-quimica-general-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+  ],
+  "source_fragments": [
+    "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de quimica general.",
+    "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+  ],
+  "concepts": [
+    "Programa analitico de laboratorio-de-quimica-general-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/laboratorio-de-quimica-general-imtc.bib"
+  ],
+  "section_titles": [
+    "Introduccion",
+    "Desarrollo",
+    "Conclusiones",
+    "Actividad 1"
+  ],
+  "citations": [],
+  "bibliography_index": [
+    "programa-laboratorio-de-quimica-general-imtc :: Programa analitico de laboratorio-de-quimica-general-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/laboratorio-de-quimica-general-imtc.bib"
+  ],
+  "node_metadata": {
+    "scope_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/actividad-1",
+    "level": "actividad",
+    "label": "Actividad 1",
+    "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc",
+    "institution": "UANL",
+    "career": "ingenieria-en-mecatronica",
+    "subject": "laboratorio-de-quimica-general-imtc",
+    "activity": "Actividad 1",
+    "parent_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc"
+  },
+  "curricular_context": {
+    "institutional_frame": "",
+    "purpose": "",
+    "work_axes": [],
+    "source_fragments": [],
+    "coursename": "Laboratorio De Quimica General",
+    "coursecode": "IMTC",
+    "documentsubject": "Ingenieria en Mecatronica",
+    "documenttitle": "Laboratorio De Quimica General",
+    "documentsubtitle": "Reporte integral - laboratorio-de-quimica-general-imtc"
+  },
+  "artifact_templates": {},
+  "editorial_dna": {
+    "identity": {
+      "tone": [
+        "Formal tecnico",
+        "Claro y accionable",
+        "Orientado a evidencia"
+      ],
+      "institutional": [
+        "Universidad Autonoma de Nuevo Leon",
+        "Facultad de Ingenieria Mecanica y Electrica",
+        "Curso IMTC en Ingenieria en Mecatronica"
+      ],
+      "curricular": [
+        "Actividad alineada al programa analitico",
+        "Cierre con conclusiones aplicadas a mecatronica",
+        "Uso de evidencia academica y tecnica"
+      ],
+      "node_metadata": {
+        "scope_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/actividad-1",
+        "level": "actividad",
+        "label": "Actividad 1",
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc",
+        "institution": "UANL",
+        "career": "ingenieria-en-mecatronica",
+        "subject": "laboratorio-de-quimica-general-imtc",
+        "activity": "Actividad 1",
+        "parent_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc"
+      },
+      "curricular_context": {
+        "institutional_frame": "",
+        "purpose": "",
+        "work_axes": [],
+        "source_fragments": [],
+        "coursename": "Laboratorio De Quimica General",
+        "coursecode": "IMTC",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "documenttitle": "Laboratorio De Quimica General",
+        "documentsubtitle": "Reporte integral - laboratorio-de-quimica-general-imtc"
+      },
+      "identity_rules": [
+        "Usar voz academica tecnica, clara y directa.",
+        "Mantener identidad institucional UANL y FIME en portada y metadatos.",
+        "Mantener adscripcion curricular: Ingenieria en Mecatronica, curso IMTC.",
+        "Conservar enfoque de laboratorio: evidencia, analisis, cierre y mejora.",
+        "Marcar campos pendientes como '[SUPUESTO]' cuando no haya dato oficial.",
+        "Fuente provisional: Claude Foundry desde Actividad 1",
+        "Fuente provisional: GPT-Pro desde Actividad 1",
+        "Conservar fuente provisional de trazabilidad de motores previos sin elevarla a fuente academica.",
+        "Fuente provisional: Auto (model-router) desde Actividad 1",
+        "Fuente provisional: Claude Foundry desde Actividad 1.",
+        "Fuente provisional: GPT-Pro desde Actividad 1.",
+        "Fuente provisional: Auto (model-router) desde Actividad 1."
+      ]
+    },
+    "essence": [
+      "Actividad 1",
+      "Programa analitico",
+      "Evidencia tecnica",
+      "Analisis academico",
+      "Cierre con mejoras",
+      "Ingenieria en Mecatronica",
+      "Bibliografia local .bib",
+      "Nodo inicial canonizado sin regresion y con preservacion total de memoria util",
+      "Se consolida base editorial para Actividad 1 de Laboratorio de Quimica General IMTC",
+      "Se incorpora contexto local verificable: programa analitico, plantilla TeX de actividad y archivo .bib",
+      "Se agregan reglas accionables para trazabilidad, estructura minima y citacion obligatoria con fuente local",
+      "Usar voz academica tecnica, clara y directa",
+      "Mantener identidad institucional UANL y FIME en portada y metadatos",
+      "Mantener adscripcion curricular: Ingenieria en Mecatronica, curso IMTC",
+      "Conservar enfoque de laboratorio: evidencia, analisis, cierre y mejora",
+      "Marcar campos pendientes como '[SUPUESTO]' cuando no haya dato oficial",
+      "Incluir seccion principal 'Actividad 1'",
+      "Incluir subseccion 'Desarrollo' con evidencias y analisis",
+      "Incluir subseccion 'Cierre' con resultados, limitaciones y mejoras",
+      "Alinear el objetivo de la actividad con el programa analitico del curso",
+      "Definir una consigna tecnica concreta y verificable al inicio de la actividad.",
+      "Documentar procedimiento y resultados con lenguaje tecnico reproducible.",
+      "Relacionar hallazgos con decisiones de ingenieria en mecatronica.",
+      "Registrar limitaciones experimentales y propuesta de mejora inmediata."
+    ],
+    "structure": {
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones",
+        "Actividad 1"
+      ],
+      "artifact_name": "reporte-laboratorio-de-quimica-general-imtc-Actividad-1",
+      "artifact_types": [
+        "reporte"
+      ],
+      "tex_functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "bibliography"
+        ]
+      }
+    },
+    "reason_for_being": [
+      "Incluir seccion principal 'Actividad 1'.",
+      "Incluir subseccion 'Desarrollo' con evidencias y analisis.",
+      "Incluir subseccion 'Cierre' con resultados, limitaciones y mejoras.",
+      "Alinear el objetivo de la actividad con el programa analitico del curso.",
+      "Cerrar con bibliografia enlazada al archivo local del curso.",
+      "Mantener consistencia nominal entre 'Cierre' y 'Conclusiones' si ambos aparecen.",
+      "Definir una consigna tecnica concreta y verificable al inicio de la actividad.",
+      "Documentar procedimiento y resultados con lenguaje tecnico reproducible.",
+      "Relacionar hallazgos con decisiones de ingenieria en mecatronica.",
+      "Registrar limitaciones experimentales y propuesta de mejora inmediata.",
+      "Evitar afirmaciones sin evidencia o sin respaldo bibliografico local.",
+      "Incluir al menos un indicador observable por evidencia reportada.",
+      "Definir una consigna tecnica concreta y verificable al inicio.",
+      "Introduccion",
+      "Desarrollo",
+      "Conclusiones",
+      "Actividad 1"
+    ],
+    "style_markers": [
+      "Secciones breves y funcionales.",
+      "Consigna tecnica explicita.",
+      "Cierre con limitaciones y mejoras.",
+      "Bibliografia obligatoria al final.",
+      "Usar voz academica tecnica, clara y directa.",
+      "Mantener identidad institucional UANL y FIME en portada y metadatos.",
+      "Mantener adscripcion curricular: Ingenieria en Mecatronica, curso IMTC.",
+      "Conservar enfoque de laboratorio: evidencia, analisis, cierre y mejora.",
+      "Marcar campos pendientes como '[SUPUESTO]' cuando no haya dato oficial.",
+      "Preservar macros de identidad del documento ya definidas en la plantilla IMTC.",
+      "Mantener '\\input{template}' y configuracion de portada institucional.",
+      "Mantener estilo de interlineado y flujo de secciones de la plantilla base.",
+      "No duplicar bloques de preambulo si ya existen en el archivo de actividad.",
+      "No reescribir plantilla completa; aplicar cambios minimos y trazables.",
+      "Campos faltantes marcados como [SUPUESTO].",
+      "Mantener '\\\\input{template}' y configuracion de portada institucional.",
+      "Mantener solo ajustes incrementales sobre 'reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex'.",
+      "Desarrollo con evidencia observable.",
+      "Cierre con limitaciones y mejora inmediata.",
+      "Bibliografia al final con claves citadas en texto."
+    ],
+    "argumentative_patterns": [
+      "Objetivo alineado -> desarrollo con evidencia -> cierre con decision tecnica.",
+      "Dato observado -> interpretacion -> implicacion para mecatronica.",
+      "Limitacion detectada -> accion de mejora propuesta.",
+      "Incluir seccion principal 'Actividad 1'.",
+      "Incluir subseccion 'Desarrollo' con evidencias y analisis.",
+      "Incluir subseccion 'Cierre' con resultados, limitaciones y mejoras.",
+      "Alinear el objetivo de la actividad con el programa analitico del curso.",
+      "Cerrar con bibliografia enlazada al archivo local del curso.",
+      "Definir una consigna tecnica concreta y verificable al inicio de la actividad.",
+      "Documentar procedimiento y resultados con lenguaje tecnico reproducible.",
+      "Relacionar hallazgos con decisiones de ingenieria en mecatronica.",
+      "Registrar limitaciones experimentales y propuesta de mejora inmediata.",
+      "Evitar afirmaciones sin evidencia o sin respaldo bibliografico local.",
+      "Verificar coherencia entre objetivo, desarrollo y cierre.",
+      "Comprobar que exista al menos una cita desde 'laboratorio-de-quimica-general-imtc.bib'.",
+      "Revisar que la actividad mantenga enfoque tecnico-academico y no solo descriptivo.",
+      "Confirmar que no se eliminen reglas utiles heredadas.",
+      "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+      "Mantener consistencia nominal entre 'Cierre' y 'Conclusiones' si ambos aparecen.",
+      "Incluir al menos un indicador observable por evidencia reportada."
+    ],
+    "reinforcement_log": [
+      "Se preserva memoria heredada institucional sobre riesgo de salida no parseable.",
+      "Se pasa de memoria vacia local a canon minimo verificable del nodo.",
+      "Se fijan patrones argumentativos y estructura de actividad sin eliminar reglas previas.",
+      "Se refuerza dependencia de fuente local y prohibicion de invencion bibliografica.",
+      "Refuerzo editorial aplicado sobre 52 conceptos y 0 citas.",
+      "Nodo inicial canonizado sin regresion y con preservacion total de memoria util.",
+      "Se consolida base editorial para Actividad 1 de Laboratorio de Quimica General IMTC.",
+      "ADN sintetizado con 53 conceptos, 1 citas y 16 relaciones.",
+      "Memoria de redacción preservada en 7 bloques.",
+      "Refuerzo editorial aplicado sobre 1 conceptos y 0 citas.",
+      "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+      "ADN sintetizado con 54 conceptos, 1 citas y 16 relaciones.",
+      "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+      "Se preservo todo el canon previo sin eliminaciones.",
+      "Se agrego compuerta explicita para exigir cita efectiva en el texto.",
+      "Se mantuvo deduplicacion semantica sin recorte de reglas utiles.",
+      "Se reforzo distincion entre bibliografia declarada y trazabilidad real de citas.",
+      "Refuerzo editorial aplicado sobre 56 conceptos y 0 citas.",
+      "Nodo local estable y canonizado sin cambios regresivos.",
+      "Se preserva memoria editorial completa de Actividad 1 por union y deduplicacion.",
+      "ADN sintetizado con 68 conceptos, 1 citas y 24 relaciones.",
+      "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+      "Refuerzo editorial aplicado sobre 0 conceptos y 0 citas.",
+      "Ciclo 2: preservacion total aplicada sin eliminacion de reglas utiles.",
+      "Ciclo 2: deduplicacion de reglas LaTeX y bibliografia con barras invertidas redundantes.",
+      "Ciclo 2: se mantiene alerta por salidas no JSON parseables historicas.",
+      "Ciclo 2: se conserva ADN editorial y se refuerza gate de cita efectiva en cuerpo.",
+      "Nodo local canonizado en ciclo 2 sin regresion.",
+      "Se preserva memoria editorial completa por union y deduplicacion.",
+      "ADN sintetizado con 85 conceptos, 1 citas y 32 relaciones."
+    ],
+    "knowledge_graph": {
+      "concepts": [
+        "Actividad 1",
+        "Programa analitico",
+        "Evidencia tecnica",
+        "Analisis academico",
+        "Cierre con mejoras",
+        "Ingenieria en Mecatronica",
+        "Bibliografia local .bib",
+        "Nodo inicial canonizado sin regresion y con preservacion total de memoria util",
+        "Se consolida base editorial para Actividad 1 de Laboratorio de Quimica General IMTC",
+        "Se incorpora contexto local verificable: programa analitico, plantilla TeX de actividad y archivo .bib",
+        "Se agregan reglas accionables para trazabilidad, estructura minima y citacion obligatoria con fuente local",
+        "Usar voz academica tecnica, clara y directa",
+        "Mantener identidad institucional UANL y FIME en portada y metadatos",
+        "Mantener adscripcion curricular: Ingenieria en Mecatronica, curso IMTC",
+        "Conservar enfoque de laboratorio: evidencia, analisis, cierre y mejora",
+        "Marcar campos pendientes como '[SUPUESTO]' cuando no haya dato oficial",
+        "Incluir seccion principal 'Actividad 1'",
+        "Incluir subseccion 'Desarrollo' con evidencias y analisis",
+        "Incluir subseccion 'Cierre' con resultados, limitaciones y mejoras",
+        "Alinear el objetivo de la actividad con el programa analitico del curso",
+        "Cerrar con bibliografia enlazada al archivo local del curso",
+        "Definir una consigna tecnica concreta y verificable al inicio de la actividad",
+        "Documentar procedimiento y resultados con lenguaje tecnico reproducible",
+        "Relacionar hallazgos con decisiones de ingenieria en mecatronica",
+        "Registrar limitaciones experimentales y propuesta de mejora inmediata",
+        "Evitar afirmaciones sin evidencia o sin respaldo bibliografico local",
+        "Verificar coherencia entre objetivo, desarrollo y cierre",
+        "Comprobar que exista al menos una cita desde 'laboratorio-de-quimica-general-imtc.bib'",
+        "Revisar que la actividad mantenga enfoque tecnico-academico y no solo descriptivo",
+        "Confirmar que no se eliminen reglas utiles heredadas",
+        "Confirmar nombre oficial de la figura docente. [SUPUESTO]",
+        "Confirmar matricula real del alumno en lugar de marcador 'UANL-IMTC'. [SUPUESTO]",
+        "Completar referencia oficial del programa analitico en la entrada .bib",
+        "Definir criterios cuantitativos minimos de evidencia para cada actividad",
+        "Verificar si la Actividad 1 requiere formato adicional de seguridad de laboratorio. [SUPUESTO]",
+        "Documentar practica academica con trazabilidad tecnica",
+        "Conectar resultados de quimica con criterio ingenieril de mecatronica",
+        "Sostener cada afirmacion con evidencia y referencia local",
+        "Estandarizar reportes de actividad con identidad UANL",
+        "Garantizar calidad reproducible en cada entrega de laboratorio",
+        "Preservar memoria editorial sin perdida entre ciclos",
+        "Secciones breves y funcionales",
+        "Consigna tecnica explicita",
+        "Cierre con limitaciones y mejoras",
+        "Bibliografia obligatoria al final",
+        "Objetivo alineado -> desarrollo con evidencia -> cierre con decision tecnica",
+        "Dato observado -> interpretacion -> implicacion para mecatronica",
+        "Limitacion detectada -> accion de mejora propuesta",
+        "programa-laboratorio-de-quimica-general-imtc",
+        "programa-analitico-laboratorio-de-quimica-general-imtc.md",
+        "reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex",
+        "laboratorio-de-quimica-general-imtc.bib",
+        "Programa analitico de laboratorio-de-quimica-general-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/laboratorio-de-quimica-general-imtc.bib",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo",
+        "Desarrollo",
+        "Nodo local estable y canonizado sin cambios regresivos",
+        "Se confirma base verificable local: programa analitico, plantilla TeX y .bib del curso",
+        "Se refuerza control de trazabilidad: objetivo, evidencia, cierre y cita local obligatoria",
+        "Se detecta brecha actual: archivo TeX de Actividad 1 no contiene \\cite activo",
+        "Mantener consistencia nominal entre 'Cierre' y 'Conclusiones' si ambos aparecen",
+        "Incluir al menos un indicador observable por evidencia reportada",
+        "Bloquear canonizacion final si no hay clave citada en texto aunque exista bibliografia declarada",
+        "Bibliografia local verificable",
+        "Asegurar trazabilidad tecnica y academica de la Actividad 1",
+        "Estandarizar una estructura reproducible de laboratorio IMTC",
+        "Conectar observacion experimental con decisiones de ingenieria",
+        "Campos faltantes marcados como [SUPUESTO]",
+        "Checklist local: objetivo alineado, evidencias citadas, conclusiones para mecatronica",
+        "Se confirma base local verificable: programa analitico, plantilla TeX de actividad y archivo .bib",
+        "Se refuerza trazabilidad obligatoria entre objetivo, evidencia, cierre y cita efectiva en cuerpo",
+        "Definir una consigna tecnica concreta y verificable al inicio",
+        "Comprobar al menos una cita desde 'laboratorio-de-quimica-general-imtc.bib'",
+        "Confirmar matricula real del alumno en lugar de 'UANL-IMTC'. [SUPUESTO]",
+        "Definir criterios cuantitativos minimos de evidencia por actividad",
+        "Verificar si Actividad 1 requiere formato adicional de seguridad de laboratorio. [SUPUESTO]",
+        "Actividad 1 con trazabilidad completa",
+        "Alineacion estricta a programa analitico local",
+        "Evidencia tecnica con cierre de mejora",
+        "Bibliografia local obligatoria con cita efectiva",
+        "Estandarizar entregables de laboratorio con calidad verificable",
+        "Evitar deriva narrativa sin evidencia tecnica",
+        "Sostener coherencia entre identidad institucional, estructura y citas",
+        "Desarrollo con evidencia observable",
+        "Cierre con limitaciones y mejora inmediata",
+        "Bibliografia al final con claves citadas en texto"
+      ],
+      "citations": [
+        "programa-laboratorio-de-quimica-general-imtc"
+      ],
+      "evidence": [
+        "programa-analitico-laboratorio-de-quimica-general-imtc.md",
+        "reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex",
+        "laboratorio-de-quimica-general-imtc.bib",
+        "Nodo inicial canonizado sin regresion y con preservacion total de memoria util.",
+        "Se consolida base editorial para Actividad 1 de Laboratorio de Quimica General IMTC.",
+        "Se incorpora contexto local verificable: programa analitico, plantilla TeX de actividad y archivo .bib.",
+        "Se mantiene alerta heredada: en ciclo previo hubo salida no JSON parseable en nivel institucional.",
+        "Se agregan reglas accionables para trazabilidad, estructura minima y citacion obligatoria con fuente local.",
+        "Validar salida JSON parseable antes de propagar.",
+        "Verificar coherencia entre objetivo, desarrollo y cierre.",
+        "Comprobar que exista al menos una cita desde 'laboratorio-de-quimica-general-imtc.bib'.",
+        "Revisar que la actividad mantenga enfoque tecnico-academico y no solo descriptivo.",
+        "Confirmar que no se eliminen reglas utiles heredadas.",
+        "programa-laboratorio-de-quimica-general-imtc :: Programa analitico de laboratorio-de-quimica-general-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/laboratorio-de-quimica-general-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/programa-analitico-laboratorio-de-quimica-general-imtc.md",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/laboratorio-de-quimica-general-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex",
+        "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+        "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+        "Checklist local: objetivo alineado, evidencias citadas, conclusiones para mecatronica.",
+        "Nodo local estable y canonizado sin cambios regresivos.",
+        "Se preserva memoria editorial completa de Actividad 1 por union y deduplicacion.",
+        "Se confirma base verificable local: programa analitico, plantilla TeX y .bib del curso.",
+        "Se mantiene alerta por antecedentes de salida no JSON parseable en motores previos.",
+        "Se refuerza control de trazabilidad: objetivo, evidencia, cierre y cita local obligatoria.",
+        "Se detecta brecha actual: archivo TeX de Actividad 1 no contiene \\cite activo.",
+        "Bloquear canonizacion final si no hay clave citada en texto aunque exista bibliografia declarada.",
+        "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+        "Nodo local canonizado en ciclo 2 sin regresion.",
+        "Se preserva memoria editorial completa por union y deduplicacion.",
+        "Se confirma base local verificable: programa analitico, plantilla TeX de actividad y archivo .bib.",
+        "Se refuerza trazabilidad obligatoria entre objetivo, evidencia, cierre y cita efectiva en cuerpo.",
+        "Comprobar al menos una cita desde 'laboratorio-de-quimica-general-imtc.bib'."
+      ],
+      "relations": [
+        {
+          "source": "Actividad 1",
+          "target": "Programa analitico",
+          "kind": "depends_on",
+          "weight": 3,
+          "justification": "El checklist exige alineacion del objetivo con el programa.",
+          "evidence": []
+        },
+        {
+          "source": "Desarrollo",
+          "target": "Evidencia tecnica",
+          "kind": "depends_on",
+          "weight": 3,
+          "justification": "La plantilla pide incluir evidencias y analisis.",
+          "evidence": []
+        },
+        {
+          "source": "Cierre con mejoras",
+          "target": "Ingenieria en Mecatronica",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "Las conclusiones deben tener enfoque de aplicacion ingenieril.",
+          "evidence": []
+        },
+        {
+          "source": "Bibliografia local .bib",
+          "target": "Analisis academico",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "El curso requiere evidencias citadas desde el .bib local.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo inicial canonizado sin regresion y con preservacion total de memoria util",
+          "target": "Se consolida base editorial para Actividad 1 de Laboratorio de Quimica General IMTC",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo inicial canonizado sin regresion y con preservacion total de memoria util",
+          "target": "Se incorpora contexto local verificable: programa analitico, plantilla TeX de actividad y archivo .bib",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se consolida base editorial para Actividad 1 de Laboratorio de Quimica General IMTC",
+          "target": "Se incorpora contexto local verificable: programa analitico, plantilla TeX de actividad y archivo .bib",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se consolida base editorial para Actividad 1 de Laboratorio de Quimica General IMTC",
+          "target": "Se agregan reglas accionables para trazabilidad, estructura minima y citacion obligatoria con fuente local",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se incorpora contexto local verificable: programa analitico, plantilla TeX de actividad y archivo .bib",
+          "target": "Se agregan reglas accionables para trazabilidad, estructura minima y citacion obligatoria con fuente local",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se incorpora contexto local verificable: programa analitico, plantilla TeX de actividad y archivo .bib",
+          "target": "Usar voz academica tecnica, clara y directa",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se agregan reglas accionables para trazabilidad, estructura minima y citacion obligatoria con fuente local",
+          "target": "Usar voz academica tecnica, clara y directa",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se agregan reglas accionables para trazabilidad, estructura minima y citacion obligatoria con fuente local",
+          "target": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar voz academica tecnica, clara y directa",
+          "target": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Actividad 1",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0001"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Desarrollo",
+          "kind": "organizes",
+          "weight": 2,
+          "evidence": [
+            "b0003",
+            "b0004"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Cierre",
+          "kind": "organizes",
+          "weight": 3,
+          "evidence": [
+            "b0005",
+            "b0006",
+            "b0007"
+          ]
+        },
+        {
+          "source": "Nodo local estable y canonizado sin cambios regresivos",
+          "target": "Se confirma base verificable local: programa analitico, plantilla TeX y .bib del curso",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo local estable y canonizado sin cambios regresivos",
+          "target": "Se refuerza control de trazabilidad: objetivo, evidencia, cierre y cita local obligatoria",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma base verificable local: programa analitico, plantilla TeX y .bib del curso",
+          "target": "Se refuerza control de trazabilidad: objetivo, evidencia, cierre y cita local obligatoria",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma base verificable local: programa analitico, plantilla TeX y .bib del curso",
+          "target": "Se detecta brecha actual: archivo TeX de Actividad 1 no contiene \\cite activo",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se refuerza control de trazabilidad: objetivo, evidencia, cierre y cita local obligatoria",
+          "target": "Se detecta brecha actual: archivo TeX de Actividad 1 no contiene \\cite activo",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se refuerza control de trazabilidad: objetivo, evidencia, cierre y cita local obligatoria",
+          "target": "Usar voz academica tecnica, clara y directa",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se detecta brecha actual: archivo TeX de Actividad 1 no contiene \\cite activo",
+          "target": "Usar voz academica tecnica, clara y directa",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se detecta brecha actual: archivo TeX de Actividad 1 no contiene \\cite activo",
+          "target": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma base local verificable: programa analitico, plantilla TeX de actividad y archivo .bib",
+          "target": "Se refuerza trazabilidad obligatoria entre objetivo, evidencia, cierre y cita efectiva en cuerpo",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma base local verificable: programa analitico, plantilla TeX de actividad y archivo .bib",
+          "target": "Usar voz academica tecnica, clara y directa",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se refuerza trazabilidad obligatoria entre objetivo, evidencia, cierre y cita efectiva en cuerpo",
+          "target": "Usar voz academica tecnica, clara y directa",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se refuerza trazabilidad obligatoria entre objetivo, evidencia, cierre y cita efectiva en cuerpo",
+          "target": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar voz academica tecnica, clara y directa",
+          "target": "Mantener adscripcion curricular: Ingenieria en Mecatronica, curso IMTC",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "target": "Mantener adscripcion curricular: Ingenieria en Mecatronica, curso IMTC",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "target": "Conservar enfoque de laboratorio: evidencia, analisis, cierre y mejora",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener adscripcion curricular: Ingenieria en Mecatronica, curso IMTC",
+          "target": "Conservar enfoque de laboratorio: evidencia, analisis, cierre y mejora",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        }
+      ],
+      "concept_weights": {
+        "Nodo inicial canonizado sin regresion y con preservacion total de memoria util": 1,
+        "Se consolida base editorial para Actividad 1 de Laboratorio de Quimica General IMTC": 1,
+        "Se incorpora contexto local verificable: programa analitico, plantilla TeX de actividad y archivo .bib": 1,
+        "Se agregan reglas accionables para trazabilidad, estructura minima y citacion obligatoria con fuente local": 1,
+        "Usar voz academica tecnica, clara y directa": 3,
+        "Mantener identidad institucional UANL y FIME en portada y metadatos": 3,
+        "Mantener adscripcion curricular: Ingenieria en Mecatronica, curso IMTC": 3,
+        "Conservar enfoque de laboratorio: evidencia, analisis, cierre y mejora": 3,
+        "Marcar campos pendientes como '[SUPUESTO]' cuando no haya dato oficial": 3,
+        "Incluir seccion principal 'Actividad 1'": 3,
+        "Incluir subseccion 'Desarrollo' con evidencias y analisis": 3,
+        "Incluir subseccion 'Cierre' con resultados, limitaciones y mejoras": 3,
+        "Alinear el objetivo de la actividad con el programa analitico del curso": 3,
+        "Cerrar con bibliografia enlazada al archivo local del curso": 3,
+        "Definir una consigna tecnica concreta y verificable al inicio de la actividad": 2,
+        "Documentar procedimiento y resultados con lenguaje tecnico reproducible": 3,
+        "Relacionar hallazgos con decisiones de ingenieria en mecatronica": 3,
+        "Registrar limitaciones experimentales y propuesta de mejora inmediata": 3,
+        "Evitar afirmaciones sin evidencia o sin respaldo bibliografico local": 3,
+        "Verificar coherencia entre objetivo, desarrollo y cierre": 3,
+        "Comprobar que exista al menos una cita desde 'laboratorio-de-quimica-general-imtc.bib'": 2,
+        "Revisar que la actividad mantenga enfoque tecnico-academico y no solo descriptivo": 3,
+        "Confirmar que no se eliminen reglas utiles heredadas": 3,
+        "Confirmar nombre oficial de la figura docente. [SUPUESTO]": 3,
+        "Confirmar matricula real del alumno en lugar de marcador 'UANL-IMTC'. [SUPUESTO]": 2,
+        "Completar referencia oficial del programa analitico en la entrada .bib": 3,
+        "Definir criterios cuantitativos minimos de evidencia para cada actividad": 2,
+        "Verificar si la Actividad 1 requiere formato adicional de seguridad de laboratorio. [SUPUESTO]": 2,
+        "Documentar practica academica con trazabilidad tecnica": 1,
+        "Conectar resultados de quimica con criterio ingenieril de mecatronica": 1,
+        "Sostener cada afirmacion con evidencia y referencia local": 1,
+        "Estandarizar reportes de actividad con identidad UANL": 1,
+        "Garantizar calidad reproducible en cada entrega de laboratorio": 1,
+        "Preservar memoria editorial sin perdida entre ciclos": 1,
+        "Secciones breves y funcionales": 3,
+        "Consigna tecnica explicita": 3,
+        "Cierre con limitaciones y mejoras": 2,
+        "Bibliografia obligatoria al final": 2,
+        "Objetivo alineado -> desarrollo con evidencia -> cierre con decision tecnica": 3,
+        "Dato observado -> interpretacion -> implicacion para mecatronica": 3,
+        "Limitacion detectada -> accion de mejora propuesta": 3,
+        "Actividad 1": 3,
+        "Programa analitico": 3,
+        "Evidencia tecnica": 3,
+        "Analisis academico": 3,
+        "Cierre con mejoras": 3,
+        "Ingenieria en Mecatronica": 2,
+        "Bibliografia local .bib": 3,
+        "programa-laboratorio-de-quimica-general-imtc": 3,
+        "programa-analitico-laboratorio-de-quimica-general-imtc.md": 3,
+        "reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex": 3,
+        "laboratorio-de-quimica-general-imtc.bib": 3,
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo": 6,
+        "Nodo local estable y canonizado sin cambios regresivos": 1,
+        "Se confirma base verificable local: programa analitico, plantilla TeX y .bib del curso": 1,
+        "Se refuerza control de trazabilidad: objetivo, evidencia, cierre y cita local obligatoria": 1,
+        "Se detecta brecha actual: archivo TeX de Actividad 1 no contiene \\cite activo": 1,
+        "Mantener consistencia nominal entre 'Cierre' y 'Conclusiones' si ambos aparecen": 2,
+        "Incluir al menos un indicador observable por evidencia reportada": 2,
+        "Bloquear canonizacion final si no hay clave citada en texto aunque exista bibliografia declarada": 2,
+        "Bibliografia local verificable": 1,
+        "Asegurar trazabilidad tecnica y academica de la Actividad 1": 1,
+        "Estandarizar una estructura reproducible de laboratorio IMTC": 1,
+        "Conectar observacion experimental con decisiones de ingenieria": 1,
+        "Campos faltantes marcados como [SUPUESTO]": 1,
+        "Desarrollo": 1,
+        "Checklist local: objetivo alineado, evidencias citadas, conclusiones para mecatronica": 1,
+        "Se confirma base local verificable: programa analitico, plantilla TeX de actividad y archivo .bib": 1,
+        "Se refuerza trazabilidad obligatoria entre objetivo, evidencia, cierre y cita efectiva en cuerpo": 1,
+        "Definir una consigna tecnica concreta y verificable al inicio": 1,
+        "Comprobar al menos una cita desde 'laboratorio-de-quimica-general-imtc.bib'": 1,
+        "Confirmar matricula real del alumno en lugar de 'UANL-IMTC'. [SUPUESTO]": 1,
+        "Definir criterios cuantitativos minimos de evidencia por actividad": 1,
+        "Verificar si Actividad 1 requiere formato adicional de seguridad de laboratorio. [SUPUESTO]": 1,
+        "Actividad 1 con trazabilidad completa": 1,
+        "Alineacion estricta a programa analitico local": 1,
+        "Evidencia tecnica con cierre de mejora": 1,
+        "Bibliografia local obligatoria con cita efectiva": 1,
+        "Estandarizar entregables de laboratorio con calidad verificable": 1,
+        "Evitar deriva narrativa sin evidencia tecnica": 1,
+        "Sostener coherencia entre identidad institucional, estructura y citas": 1,
+        "Desarrollo con evidencia observable": 1,
+        "Cierre con limitaciones y mejora inmediata": 1,
+        "Bibliografia al final con claves citadas en texto": 1
+      },
+      "citation_weights": {}
+    },
+    "writing_memory": [
+      {
+        "id": "b0001",
+        "order": 1,
+        "kind": "section",
+        "section": "Actividad 1",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Actividad 1",
+        "latex": "\\section{Actividad 1}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0002",
+        "order": 2,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+        "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0003",
+        "order": 3,
+        "kind": "subsection",
+        "section": "Actividad 1",
+        "subsection": "Desarrollo",
+        "paragraph_heading": "",
+        "text": "Desarrollo",
+        "latex": "\\subsection{Desarrollo}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0004",
+        "order": 4,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Desarrollo",
+        "paragraph_heading": "",
+        "text": "Incluir evidencias, analisis y referencias.",
+        "latex": "Incluir evidencias, analisis y referencias.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0005",
+        "order": 5,
+        "kind": "subsection",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "Cierre",
+        "latex": "\\subsection{Cierre}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0006",
+        "order": 6,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "Registrar resultados, limitaciones y mejoras.",
+        "latex": "Registrar resultados, limitaciones y mejoras.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0007",
+        "order": 7,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "natnumurl",
+        "latex": "\\bibliographystyle{natnumurl}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+      }
+    ],
+    "reconstructable_source": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Quimica General}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-quimica-general-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Quimica General}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-quimica-general-imtc}\n\n\\end{document}\n"
+  },
+  "tex_blueprint": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex",
+        "documenttitle": "Laboratorio De Quimica General",
+        "documentsubtitle": "Reporte integral - laboratorio-de-quimica-general-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Laboratorio De Quimica General",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de quimica general.",
+        "section_titles": [
+          "Introduccion",
+          "Desarrollo",
+          "Conclusiones"
+        ],
+        "subsection_titles": [],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [
+          "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de quimica general.",
+          "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+        ],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex",
+          "raw_latex_sha256": "a0567eaad16672076c63bd9d7071362e83b0744601f70e88dc15177d66ba4bdd",
+          "raw_latex_chars": 1761,
+          "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Quimica General}\n\\def\\documentsubtitle {Reporte integral - laboratorio-de-quimica-general-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Quimica General}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de quimica general.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-quimica-general-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document",
+              "abstractd"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "templateIndex",
+              "templateFinalcfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de quimica general.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de quimica general.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de quimica general.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de quimica general.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      },
+      "reporte": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex",
+        "documenttitle": "Laboratorio De Quimica General",
+        "documentsubtitle": "Actividad 1 - laboratorio-de-quimica-general-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Laboratorio De Quimica General",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "",
+        "section_titles": [
+          "Actividad 1"
+        ],
+        "subsection_titles": [
+          "Desarrollo",
+          "Cierre"
+        ],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex",
+          "raw_latex_sha256": "b2b83508403a8e17d16f8fc9e06f024f8b055ef88e058b3e27743d0804c3ede5",
+          "raw_latex_chars": 1548,
+          "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Quimica General}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-quimica-general-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Quimica General}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-quimica-general-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "section",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Actividad 1",
+              "latex": "\\section{Actividad 1}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+              "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\subsection{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Incluir evidencias, analisis y referencias.",
+              "latex": "Incluir evidencias, analisis y referencias.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Cierre",
+              "latex": "\\subsection{Cierre}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Registrar resultados, limitaciones y mejoras.",
+              "latex": "Registrar resultados, limitaciones y mejoras.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "section",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Actividad 1",
+              "latex": "\\section{Actividad 1}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+              "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\subsection{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Incluir evidencias, analisis y referencias.",
+              "latex": "Incluir evidencias, analisis y referencias.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Cierre",
+              "latex": "\\subsection{Cierre}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Registrar resultados, limitaciones y mejoras.",
+              "latex": "Registrar resultados, limitaciones y mejoras.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex",
+      "documenttitle": "Laboratorio De Quimica General",
+      "documentsubtitle": "Actividad 1 - laboratorio-de-quimica-general-imtc",
+      "documentsubject": "Ingenieria en Mecatronica",
+      "coursename": "Laboratorio De Quimica General",
+      "coursecode": "IMTC",
+      "documentauthor": "Martin Jonathan de la Cruz",
+      "abstract": "",
+      "section_titles": [
+        "Actividad 1"
+      ],
+      "subsection_titles": [
+        "Desarrollo",
+        "Cierre"
+      ],
+      "cited_keys": [],
+      "concepts": [],
+      "source_fragments": [],
+      "content_memory": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex",
+        "raw_latex_sha256": "b2b83508403a8e17d16f8fc9e06f024f8b055ef88e058b3e27743d0804c3ede5",
+        "raw_latex_chars": 1548,
+        "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Quimica General}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-quimica-general-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Quimica General}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-quimica-general-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    }
+  },
+  "tex_content_memory": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex",
+        "raw_latex_sha256": "a0567eaad16672076c63bd9d7071362e83b0744601f70e88dc15177d66ba4bdd",
+        "raw_latex_chars": 1761,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Quimica General}\n\\def\\documentsubtitle {Reporte integral - laboratorio-de-quimica-general-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Quimica General}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de quimica general.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-quimica-general-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de quimica general.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de quimica general.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de quimica general.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de quimica general.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      },
+      "reporte": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex",
+        "raw_latex_sha256": "b2b83508403a8e17d16f8fc9e06f024f8b055ef88e058b3e27743d0804c3ede5",
+        "raw_latex_chars": 1548,
+        "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Quimica General}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-quimica-general-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Quimica General}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-quimica-general-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex",
+      "raw_latex_sha256": "b2b83508403a8e17d16f8fc9e06f024f8b055ef88e058b3e27743d0804c3ede5",
+      "raw_latex_chars": 1548,
+      "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Quimica General}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-quimica-general-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Quimica General}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-quimica-general-imtc}\n\n\\end{document}\n",
+      "functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "bibliography"
+        ]
+      },
+      "paragraph_map": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "section",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Actividad 1",
+          "latex": "\\section{Actividad 1}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+          "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\subsection{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Incluir evidencias, analisis y referencias.",
+          "latex": "Incluir evidencias, analisis y referencias.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Cierre",
+          "latex": "\\subsection{Cierre}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Registrar resultados, limitaciones y mejoras.",
+          "latex": "Registrar resultados, limitaciones y mejoras.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+        }
+      ],
+      "content_blocks": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "section",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Actividad 1",
+          "latex": "\\section{Actividad 1}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+          "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\subsection{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Incluir evidencias, analisis y referencias.",
+          "latex": "Incluir evidencias, analisis y referencias.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Cierre",
+          "latex": "\\subsection{Cierre}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Registrar resultados, limitaciones y mejoras.",
+          "latex": "Registrar resultados, limitaciones y mejoras.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/reporte-laboratorio-de-quimica-general-imtc-Actividad-1.tex"
+        }
+      ],
+      "citation_map": {},
+      "all_cited_keys": [],
+      "missing_bibliography_keys": []
+    },
+    "bibliography_sources": {
+      "programa-laboratorio-de-quimica-general-imtc": {
+        "key": "programa-laboratorio-de-quimica-general-imtc",
+        "source_type": "bibtex",
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-quimica-general-imtc/laboratorio-de-quimica-general-imtc.bib",
+        "entry_type": "misc",
+        "title": "Programa analitico de laboratorio-de-quimica-general-imtc",
+        "author": "UANL",
+        "year": "2026",
+        "url": "https://www.uanl.mx/",
+        "note": "Actualizar con la referencia oficial del curso",
+        "raw_entry": "@misc{programa-laboratorio-de-quimica-general-imtc,\n  author = {UANL},\n  title = {Programa analitico de laboratorio-de-quimica-general-imtc},\n  year = {2026},\n  note = {Actualizar con la referencia oficial del curso},\n  url = {https://www.uanl.mx/}\n}"
+      }
+    }
+  },
+  "locked_sections": [],
+  "compression": {
+    "method": "union-dedupe",
+    "lossless": true
+  },
+  "schema_version": 3
+}

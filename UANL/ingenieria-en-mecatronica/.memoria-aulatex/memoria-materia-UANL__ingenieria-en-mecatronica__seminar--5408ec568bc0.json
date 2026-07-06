@@ -1,0 +1,2003 @@
+{
+  "summary": [
+    "Nodo canonizado con memoria local verificable del curso IMTC.",
+    "Se preservan plantillas LaTeX, checklist editorial y archivo .bib local.",
+    "Se agrega ADN editorial inicial sin inventar fuentes externas.",
+    "Se mantiene regla institucional heredada: salida JSON parseable obligatoria.",
+    "Salida sin JSON parseable desde Claude Foundry para seminario-para-el-desempeno-profesional-imtc",
+    "Salida sin JSON parseable desde GPT-Pro para seminario-para-el-desempeno-profesional-imtc",
+    "Se confirma plantilla de actividad con secciones Actividad, Desarrollo y Cierre.",
+    "Se confirma uso de cita bibliografica local con natnumurl y archivo .bib del curso.",
+    "Salida sin JSON parseable desde Auto (model-router) para seminario-para-el-desempeno-profesional-imtc",
+    "Nodo canonizado y estable para IMTC en ciclo 2.",
+    "Se preserva memoria local completa con union y deduplicacion.",
+    "Se mantiene plantilla LaTeX reconstruible para reporte integral y actividad.",
+    "Se confirma estructura minima Actividad, Desarrollo y Cierre.",
+    "Se conserva uso obligatorio de bib local con estilo natnumurl.",
+    "Se mantiene regla critica de salida JSON parseable obligatoria."
+  ],
+  "identity_rules": [
+    "Usar identidad institucional UANL y facultad FIME en portada y metadatos.",
+    "Mantener asignatura como Seminario Para El Desempeno Profesional.",
+    "Mantener programa como Ingenieria en Mecatronica.",
+    "Conservar codigo de curso IMTC en todos los artefactos.",
+    "Declarar supuestos cuando falten datos docentes u oficiales.",
+    "Fuente provisional: Claude Foundry desde seminario-para-el-desempeno-profesional-imtc",
+    "Fuente provisional: GPT-Pro desde seminario-para-el-desempeno-profesional-imtc",
+    "Fuente provisional: Auto (model-router) desde seminario-para-el-desempeno-profesional-imtc",
+    "Mantener autor Martin Jonathan de la Cruz en documentauthor y authortable.",
+    "Conservar sede San Nicolas de los Garza, Nuevo Leon en metadatos.",
+    "Fuente provisional: Claude Foundry desde seminario-para-el-desempeno-profesional-imtc.",
+    "Fuente provisional: GPT-Pro desde seminario-para-el-desempeno-profesional-imtc.",
+    "Fuente provisional: Auto (model-router) desde seminario-para-el-desempeno-profesional-imtc."
+  ],
+  "structure_rules": [
+    "Alinear cada actividad con el programa analitico del curso.",
+    "Incluir secciones minimas: Actividad, Desarrollo, Cierre.",
+    "Cerrar con resultados, limitaciones y mejoras accionables.",
+    "Mantener coherencia entre reporte integral y reportes por actividad.",
+    "Ubicar el programa analitico en la ruta de planeaciones definida."
+  ],
+  "activity_rules": [
+    "Definir consigna tecnica explicita por actividad.",
+    "Documentar evidencias tecnicas y academicas en el Desarrollo.",
+    "Incluir analisis con enfoque de ingenieria en mecatronica.",
+    "Citar fuentes desde el .bib local del curso.",
+    "Registrar fecha y contexto academico en tabla de autor."
+  ],
+  "quality_gates": [
+    "Respuesta final siempre en JSON parseable.",
+    "No propagar contenido no estructurado.",
+    "No inventar referencias bibliograficas no verificadas.",
+    "Verificar que toda cita usada exista en seminario-para-el-desempeno-profesional-imtc.bib.",
+    "Validar consistencia de nombres de curso, programa y codigo IMTC.",
+    "Marcar campos pendientes como supuestos explicitos.",
+    "Revisar respuesta no estructurada antes de aplicar aguas abajo."
+  ],
+  "latex_rules": [
+    "Conservar esquema de metadatos con macros def para portada.",
+    "Mantener \\documentclass article con spanish, letterpaper, oneside.",
+    "Mantener \\input de plantilla institucional existente.",
+    "Usar \\onehalfspacing en cuerpo del documento.",
+    "Conservar bloque \\authortable con alumno, matricula, programa y curso.",
+    "No eliminar \\bibliographystyle{natnumurl} ni \\bibliography del curso.",
+    "No duplicar plantilla completa en memoria; guardar reglas reconstruibles.",
+    "Mantener documentclass article con spanish, letterpaper, oneside.",
+    "Mantener input de plantilla institucional existente.",
+    "Usar onehalfspacing en cuerpo del documento.",
+    "Conservar bloque authortable con alumno, matricula, programa y curso.",
+    "No eliminar bibliographystyle natnumurl ni bibliography del curso.",
+    "Preservar TEX reconstruible sin copiar bloques completos en memoria."
+  ],
+  "bibliography_rules": [
+    "Usar archivo local seminario-para-el-desempeno-profesional-imtc.bib como fuente unica actual.",
+    "Conservar entrada programa-seminario-para-el-desempeno-profesional-imtc.",
+    "Mantener nota de actualizacion a referencia oficial como pendiente explicito.",
+    "No agregar DOI, ISBN o autores no confirmados.",
+    "Relacionar conclusiones con citas efectivamente usadas."
+  ],
+  "propagation_hints": [
+    "Propagacion local: reutilizar esta canonizacion en actividades futuras del mismo nodo.",
+    "Aplicar union-dedupe sin borrar reglas utiles previas.",
+    "Si aparece nueva fuente oficial, anexar sin reemplazar trazabilidad previa.",
+    "Mantener compatibilidad con memoria institucional UANL.",
+    "Ciclo 1 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 2 necesita normalizacion manual si se reutiliza."
+  ],
+  "open_questions": [
+    "Confirmar nombre oficial de la figura docente. [supuesto]",
+    "Confirmar matricula real del alumno en lugar de UANL-IMTC. [supuesto]",
+    "Completar referencia oficial del programa analitico con URL especifica. [supuesto]",
+    "Verificar nombre final del archivo de plantilla input truncado en reporte integral. [supuesto]"
+  ],
+  "artifact_name": "",
+  "sources": [
+    "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc",
+    "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/programa-analitico-seminario-para-el-desempeno-profesional-imtc.md",
+    "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/seminario-para-el-desempeno-profesional-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+  ],
+  "artifact_types": [],
+  "supported_artifact_types": [
+    "reporte"
+  ],
+  "source_documents": [
+    "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/programa-analitico-seminario-para-el-desempeno-profesional-imtc.md",
+    "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/seminario-para-el-desempeno-profesional-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+  ],
+  "source_fragments": [
+    "Objetivo: Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+    "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+  ],
+  "concepts": [
+    "Programa analitico de seminario-para-el-desempeno-profesional-imtc :: fuente=UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/seminario-para-el-desempeno-profesional-imtc.bib"
+  ],
+  "section_titles": [
+    "Introduccion",
+    "Desarrollo",
+    "Conclusiones"
+  ],
+  "citations": [],
+  "bibliography_index": [
+    "programa-seminario-para-el-desempeno-profesional-imtc :: Programa analitico de seminario-para-el-desempeno-profesional-imtc :: fuente=UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/seminario-para-el-desempeno-profesional-imtc.bib"
+  ],
+  "node_metadata": {
+    "scope_key": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc",
+    "level": "materia",
+    "label": "seminario-para-el-desempeno-profesional-imtc",
+    "relative_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc",
+    "institution": "UANL",
+    "career": "ingenieria-en-mecatronica",
+    "subject": "seminario-para-el-desempeno-profesional-imtc",
+    "activity": "",
+    "parent_key": "UANL/ingenieria-en-mecatronica"
+  },
+  "curricular_context": {
+    "institutional_frame": "",
+    "purpose": "",
+    "work_axes": [],
+    "source_fragments": [],
+    "coursename": "Seminario Para El Desempeno Profesional",
+    "coursecode": "IMTC",
+    "documentsubject": "Ingenieria en Mecatronica",
+    "documenttitle": "Seminario Para El Desempeno Profesional",
+    "documentsubtitle": "Reporte integral - seminario-para-el-desempeno-profesional-imtc"
+  },
+  "artifact_templates": {
+    "reporte": "reporte-seminario-para-el-desempeno-profesional-imtc"
+  },
+  "editorial_dna": {
+    "identity": {
+      "tone": [
+        "Formal academico",
+        "Tecnico aplicado",
+        "Claro y verificable",
+        "Formal academico.",
+        "Tecnico aplicado.",
+        "Claro y verificable."
+      ],
+      "institutional": [
+        "Universidad Autonoma de Nuevo Leon",
+        "Facultad de Ingenieria Mecanica y Electrica",
+        "Sede San Nicolas de los Garza, Nuevo Leon",
+        "Universidad Autonoma de Nuevo Leon.",
+        "Facultad de Ingenieria Mecanica y Electrica.",
+        "Sede San Nicolas de los Garza, Nuevo Leon."
+      ],
+      "curricular": [
+        "Ingenieria en Mecatronica",
+        "Seminario Para El Desempeno Profesional",
+        "Codigo IMTC",
+        "Ingenieria en Mecatronica.",
+        "Seminario Para El Desempeno Profesional.",
+        "Codigo IMTC."
+      ],
+      "node_metadata": {
+        "scope_key": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc",
+        "level": "materia",
+        "label": "seminario-para-el-desempeno-profesional-imtc",
+        "relative_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc",
+        "institution": "UANL",
+        "career": "ingenieria-en-mecatronica",
+        "subject": "seminario-para-el-desempeno-profesional-imtc",
+        "activity": "",
+        "parent_key": "UANL/ingenieria-en-mecatronica"
+      },
+      "curricular_context": {
+        "institutional_frame": "",
+        "purpose": "",
+        "work_axes": [],
+        "source_fragments": [],
+        "coursename": "Seminario Para El Desempeno Profesional",
+        "coursecode": "IMTC",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "documenttitle": "Seminario Para El Desempeno Profesional",
+        "documentsubtitle": "Reporte integral - seminario-para-el-desempeno-profesional-imtc"
+      },
+      "identity_rules": [
+        "Usar identidad institucional UANL y facultad FIME en portada y metadatos.",
+        "Mantener asignatura como Seminario Para El Desempeno Profesional.",
+        "Mantener programa como Ingenieria en Mecatronica.",
+        "Conservar codigo de curso IMTC en todos los artefactos.",
+        "Declarar supuestos cuando falten datos docentes u oficiales.",
+        "Fuente provisional: Claude Foundry desde seminario-para-el-desempeno-profesional-imtc",
+        "Fuente provisional: GPT-Pro desde seminario-para-el-desempeno-profesional-imtc",
+        "Fuente provisional: Auto (model-router) desde seminario-para-el-desempeno-profesional-imtc",
+        "Mantener autor Martin Jonathan de la Cruz en documentauthor y authortable.",
+        "Conservar sede San Nicolas de los Garza, Nuevo Leon en metadatos.",
+        "Fuente provisional: Claude Foundry desde seminario-para-el-desempeno-profesional-imtc.",
+        "Fuente provisional: GPT-Pro desde seminario-para-el-desempeno-profesional-imtc."
+      ]
+    },
+    "essence": [
+      "programa analitico",
+      "actividad academica",
+      "evidencia tecnica",
+      "analisis",
+      "conclusiones",
+      "mejora continua",
+      "IMTC",
+      "Ingenieria en Mecatronica",
+      "UANL",
+      "FIME",
+      "Nodo canonizado con memoria local verificable del curso IMTC",
+      "Se preservan plantillas LaTeX, checklist editorial y archivo .bib local",
+      "Se agrega ADN editorial inicial sin inventar fuentes externas",
+      "Usar identidad institucional UANL y facultad FIME en portada y metadatos",
+      "Mantener asignatura como Seminario Para El Desempeno Profesional",
+      "Mantener programa como Ingenieria en Mecatronica",
+      "Conservar codigo de curso IMTC en todos los artefactos",
+      "Declarar supuestos cuando falten datos docentes u oficiales",
+      "Alinear cada actividad con el programa analitico del curso",
+      "Incluir secciones minimas: Actividad, Desarrollo, Cierre",
+      "Definir consigna tecnica explicita por actividad.",
+      "Documentar evidencias tecnicas y academicas en el Desarrollo.",
+      "Incluir analisis con enfoque de ingenieria en mecatronica.",
+      "Citar fuentes desde el .bib local del curso."
+    ],
+    "structure": {
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones"
+      ],
+      "artifact_types": [
+        "reporte"
+      ],
+      "tex_functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document",
+          "abstractd"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "templateIndex",
+          "templateFinalcfg",
+          "bibliography"
+        ]
+      }
+    },
+    "reason_for_being": [
+      "Alinear cada actividad con el programa analitico del curso.",
+      "Incluir secciones minimas: Actividad, Desarrollo, Cierre.",
+      "Cerrar con resultados, limitaciones y mejoras accionables.",
+      "Mantener coherencia entre reporte integral y reportes por actividad.",
+      "Ubicar el programa analitico en la ruta de planeaciones definida.",
+      "Definir consigna tecnica explicita por actividad.",
+      "Documentar evidencias tecnicas y academicas en el Desarrollo.",
+      "Incluir analisis con enfoque de ingenieria en mecatronica.",
+      "Citar fuentes desde el .bib local del curso.",
+      "Registrar fecha y contexto academico en tabla de autor.",
+      "Introduccion",
+      "Desarrollo",
+      "Conclusiones"
+    ],
+    "style_markers": [
+      "Portada institucional parametrizada por macros.",
+      "Secciones breves y orientadas a accion.",
+      "Consigna tecnica explicita al inicio de cada actividad.",
+      "Cierre con resultados, limitaciones y mejoras.",
+      "Usar identidad institucional UANL y facultad FIME en portada y metadatos.",
+      "Mantener asignatura como Seminario Para El Desempeno Profesional.",
+      "Mantener programa como Ingenieria en Mecatronica.",
+      "Conservar codigo de curso IMTC en todos los artefactos.",
+      "Declarar supuestos cuando falten datos docentes u oficiales.",
+      "Conservar esquema de metadatos con macros def para portada.",
+      "Mantener \\documentclass article con spanish, letterpaper, oneside.",
+      "Mantener \\input de plantilla institucional existente.",
+      "Usar \\onehalfspacing en cuerpo del documento.",
+      "Conservar bloque \\authortable con alumno, matricula, programa y curso.",
+      "No eliminar \\bibliographystyle{natnumurl} ni \\bibliography del curso.",
+      "No duplicar plantilla completa en memoria; guardar reglas reconstruibles.",
+      "Mantener autor Martin Jonathan de la Cruz en documentauthor y authortable.",
+      "Conservar sede San Nicolas de los Garza, Nuevo Leon en metadatos.",
+      "Consigna tecnica explicita al inicio de actividad.",
+      "Secciones breves orientadas a accion."
+    ],
+    "argumentative_patterns": [
+      "Objetivo del programa analitico -> actividad concreta -> evidencia -> conclusion.",
+      "Problema academico -> analisis tecnico -> decision -> mejora propuesta.",
+      "Referencia curricular -> aplicacion mecatronica -> reflexion profesional.",
+      "Alinear cada actividad con el programa analitico del curso.",
+      "Incluir secciones minimas: Actividad, Desarrollo, Cierre.",
+      "Cerrar con resultados, limitaciones y mejoras accionables.",
+      "Mantener coherencia entre reporte integral y reportes por actividad.",
+      "Ubicar el programa analitico en la ruta de planeaciones definida.",
+      "Definir consigna tecnica explicita por actividad.",
+      "Documentar evidencias tecnicas y academicas en el Desarrollo.",
+      "Incluir analisis con enfoque de ingenieria en mecatronica.",
+      "Citar fuentes desde el .bib local del curso.",
+      "Registrar fecha y contexto academico en tabla de autor.",
+      "No propagar contenido no estructurado.",
+      "No inventar referencias bibliograficas no verificadas.",
+      "Verificar que toda cita usada exista en seminario-para-el-desempeno-profesional-imtc.bib.",
+      "Validar consistencia de nombres de curso, programa y codigo IMTC.",
+      "Marcar campos pendientes como supuestos explicitos.",
+      "Revisar respuesta no estructurada antes de aplicar aguas abajo."
+    ],
+    "reinforcement_log": [
+      "Se preservo memoria institucional heredada sobre JSON parseable.",
+      "Se consolidaron reglas locales desde archivos verificables del nodo.",
+      "Se inicializo ADN editorial del curso sin fuentes inventadas.",
+      "Se mantuvo estrategia de preservacion total con deduplicacion semantica.",
+      "Refuerzo editorial aplicado sobre 55 conceptos y 0 citas.",
+      "Nodo canonizado con memoria local verificable del curso IMTC.",
+      "Se preservan plantillas LaTeX, checklist editorial y archivo .bib local.",
+      "ADN sintetizado con 56 conceptos, 1 citas y 16 relaciones.",
+      "Memoria de redacción preservada en 8 bloques.",
+      "Refuerzo editorial aplicado sobre 1 conceptos y 0 citas.",
+      "Salida sin JSON parseable desde Claude Foundry para seminario-para-el-desempeno-profesional-imtc",
+      "ADN sintetizado con 57 conceptos, 1 citas y 16 relaciones.",
+      "Salida sin JSON parseable desde GPT-Pro para seminario-para-el-desempeno-profesional-imtc",
+      "Union local sin regresion aplicada sobre el mismo nodo.",
+      "Sin nuevas fuentes externas; solo evidencia local verificable.",
+      "Se preservan reglas previas y se refuerza trazabilidad entre checklist, .bib y plantilla.",
+      "Se mantiene compresion por deduplicacion sin recorte util.",
+      "Refuerzo editorial aplicado sobre 50 conceptos y 0 citas.",
+      "ADN sintetizado con 61 conceptos, 1 citas y 24 relaciones.",
+      "Salida sin JSON parseable desde Auto (model-router) para seminario-para-el-desempeno-profesional-imtc",
+      "Refuerzo editorial aplicado sobre 7 conceptos y 0 citas.",
+      "ADN sintetizado con 63 conceptos, 1 citas y 30 relaciones.",
+      "Ciclo 2: consolidacion sin regresion aplicada.",
+      "Se preservo ADN editorial completo del mismo nodo.",
+      "Se reforzo regla de JSON parseable por historial de fallos previos.",
+      "Se mantuvo trazabilidad local sin introducir fuentes externas.",
+      "Refuerzo editorial aplicado sobre 62 conceptos y 0 citas.",
+      "Nodo canonizado y estable para IMTC en ciclo 2.",
+      "Se preserva memoria local completa con union y deduplicacion.",
+      "ADN sintetizado con 78 conceptos, 1 citas y 36 relaciones."
+    ],
+    "knowledge_graph": {
+      "concepts": [
+        "programa analitico",
+        "actividad academica",
+        "evidencia tecnica",
+        "analisis",
+        "conclusiones",
+        "mejora continua",
+        "IMTC",
+        "Ingenieria en Mecatronica",
+        "UANL",
+        "FIME",
+        "Nodo canonizado con memoria local verificable del curso IMTC",
+        "Se preservan plantillas LaTeX, checklist editorial y archivo .bib local",
+        "Se agrega ADN editorial inicial sin inventar fuentes externas",
+        "Usar identidad institucional UANL y facultad FIME en portada y metadatos",
+        "Mantener asignatura como Seminario Para El Desempeno Profesional",
+        "Mantener programa como Ingenieria en Mecatronica",
+        "Conservar codigo de curso IMTC en todos los artefactos",
+        "Declarar supuestos cuando falten datos docentes u oficiales",
+        "Alinear cada actividad con el programa analitico del curso",
+        "Incluir secciones minimas: Actividad, Desarrollo, Cierre",
+        "Cerrar con resultados, limitaciones y mejoras accionables",
+        "Mantener coherencia entre reporte integral y reportes por actividad",
+        "Ubicar el programa analitico en la ruta de planeaciones definida",
+        "Definir consigna tecnica explicita por actividad",
+        "Documentar evidencias tecnicas y academicas en el Desarrollo",
+        "Incluir analisis con enfoque de ingenieria en mecatronica",
+        "Citar fuentes desde el .bib local del curso",
+        "Registrar fecha y contexto academico en tabla de autor",
+        "No propagar contenido no estructurado",
+        "No inventar referencias bibliograficas no verificadas",
+        "Verificar que toda cita usada exista en seminario-para-el-desempeno-profesional-imtc.bib",
+        "Validar consistencia de nombres de curso, programa y codigo IMTC",
+        "Marcar campos pendientes como supuestos explicitos",
+        "Confirmar nombre oficial de la figura docente. [supuesto]",
+        "Confirmar matricula real del alumno en lugar de UANL-IMTC. [supuesto]",
+        "Completar referencia oficial del programa analitico con URL especifica. [supuesto]",
+        "Verificar nombre final del archivo de plantilla input truncado en reporte integral. [supuesto]",
+        "Documentar desempeno profesional con evidencia tecnica",
+        "Vincular actividad semanal con objetivos del programa analitico",
+        "Cerrar cada entrega con mejora continua",
+        "Estandarizar reportes academicos del curso IMTC en formato LaTeX",
+        "Asegurar trazabilidad entre consigna, desarrollo, evidencia y cierre",
+        "Sostener calidad editorial y citacion reproducible",
+        "Portada institucional parametrizada por macros",
+        "Secciones breves y orientadas a accion",
+        "Consigna tecnica explicita al inicio de cada actividad",
+        "Cierre con resultados, limitaciones y mejoras",
+        "Objetivo del programa analitico -> actividad concreta -> evidencia -> conclusion",
+        "Problema academico -> analisis tecnico -> decision -> mejora propuesta",
+        "Referencia curricular -> aplicacion mecatronica -> reflexion profesional",
+        "programa-seminario-para-el-desempeno-profesional-imtc",
+        "programa-analitico-seminario-para-el-desempeno-profesional-imtc.md",
+        "reporte-seminario-para-el-desempeno-profesional-imtc-Actividad-1.tex",
+        "reporte-seminario-para-el-desempeno-profesional-imtc.tex",
+        "seminario-para-el-desempeno-profesional-imtc.bib",
+        "Programa analitico de seminario-para-el-desempeno-profesional-imtc :: fuente=UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/seminario-para-el-desempeno-profesional-imtc.bib",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo",
+        "Se confirma plantilla de actividad con secciones Actividad, Desarrollo y Cierre",
+        "Se confirma uso de cita bibliografica local con natnumurl y archivo .bib del curso",
+        "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/seminario-para-el-desempeno-profesional-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex",
+        "Mantener autor Martin Jonathan de la Cruz en documentauthor y authortable",
+        "Conservar sede San Nicolas de los Garza, Nuevo Leon en metadatos",
+        "Se mantiene plantilla LaTeX reconstruible para reporte integral y actividad",
+        "Se confirma estructura minima Actividad, Desarrollo y Cierre",
+        "Se conserva uso obligatorio de bib local con estilo natnumurl",
+        "Programa analitico como ancla",
+        "Actividad academica con evidencia tecnica",
+        "Analisis aplicado a mecatronica",
+        "Cierre con mejora continua",
+        "Trazabilidad bibliografica local verificable",
+        "Asegurar coherencia entre programa, actividad y evidencia",
+        "Estandarizar entregables IMTC con estructura minima estable",
+        "Preservar identidad UANL-FIME en cada artefacto",
+        "Evitar perdida de memoria editorial entre ciclos",
+        "Consigna tecnica explicita al inicio de actividad",
+        "Secciones breves orientadas a accion",
+        "Supuestos marcados cuando falte dato oficial"
+      ],
+      "citations": [
+        "programa-seminario-para-el-desempeno-profesional-imtc"
+      ],
+      "evidence": [
+        "programa-analitico-seminario-para-el-desempeno-profesional-imtc.md",
+        "reporte-seminario-para-el-desempeno-profesional-imtc-Actividad-1.tex",
+        "reporte-seminario-para-el-desempeno-profesional-imtc.tex",
+        "seminario-para-el-desempeno-profesional-imtc.bib",
+        "Nodo canonizado con memoria local verificable del curso IMTC.",
+        "Se preservan plantillas LaTeX, checklist editorial y archivo .bib local.",
+        "Se agrega ADN editorial inicial sin inventar fuentes externas.",
+        "Se mantiene regla institucional heredada: salida JSON parseable obligatoria.",
+        "Respuesta final siempre en JSON parseable.",
+        "No propagar contenido no estructurado.",
+        "No inventar referencias bibliograficas no verificadas.",
+        "Verificar que toda cita usada exista en seminario-para-el-desempeno-profesional-imtc.bib.",
+        "Validar consistencia de nombres de curso, programa y codigo IMTC.",
+        "Marcar campos pendientes como supuestos explicitos.",
+        "programa-seminario-para-el-desempeno-profesional-imtc :: Programa analitico de seminario-para-el-desempeno-profesional-imtc :: fuente=UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/seminario-para-el-desempeno-profesional-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/programa-analitico-seminario-para-el-desempeno-profesional-imtc.md",
+        "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/seminario-para-el-desempeno-profesional-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex",
+        "Salida sin JSON parseable desde Claude Foundry para seminario-para-el-desempeno-profesional-imtc",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+        "Salida sin JSON parseable desde GPT-Pro para seminario-para-el-desempeno-profesional-imtc",
+        "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc-Actividad-1.tex",
+        "Se confirma plantilla de actividad con secciones Actividad, Desarrollo y Cierre.",
+        "Se confirma uso de cita bibliografica local con natnumurl y archivo .bib del curso.",
+        "Salida sin JSON parseable desde Auto (model-router) para seminario-para-el-desempeno-profesional-imtc",
+        "Nodo canonizado y estable para IMTC en ciclo 2.",
+        "Se preserva memoria local completa con union y deduplicacion.",
+        "Se mantiene plantilla LaTeX reconstruible para reporte integral y actividad.",
+        "Se confirma estructura minima Actividad, Desarrollo y Cierre.",
+        "Se conserva uso obligatorio de bib local con estilo natnumurl.",
+        "Se mantiene regla critica de salida JSON parseable obligatoria."
+      ],
+      "relations": [
+        {
+          "source": "programa analitico",
+          "target": "actividad academica",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "La checklist exige alinear objetivo de cada actividad con el programa analitico.",
+          "evidence": []
+        },
+        {
+          "source": "actividad academica",
+          "target": "evidencia tecnica",
+          "kind": "depends_on",
+          "weight": 3,
+          "justification": "El desarrollo pide incluir evidencias, analisis y referencias.",
+          "evidence": []
+        },
+        {
+          "source": "evidencia tecnica",
+          "target": "conclusiones",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "El cierre debe registrar resultados y limitaciones derivados del desarrollo.",
+          "evidence": []
+        },
+        {
+          "source": "Ingenieria en Mecatronica",
+          "target": "conclusiones",
+          "kind": "develops",
+          "weight": 2,
+          "justification": "La checklist pide conclusiones con enfoque de ingenieria en mecatronica.",
+          "evidence": []
+        },
+        {
+          "source": "IMTC",
+          "target": "reporte integral",
+          "kind": "develops",
+          "weight": 1,
+          "justification": "El template editorial define curso y codigo como metadatos centrales.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo canonizado con memoria local verificable del curso IMTC",
+          "target": "Se preservan plantillas LaTeX, checklist editorial y archivo .bib local",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo canonizado con memoria local verificable del curso IMTC",
+          "target": "Se agrega ADN editorial inicial sin inventar fuentes externas",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preservan plantillas LaTeX, checklist editorial y archivo .bib local",
+          "target": "Se agrega ADN editorial inicial sin inventar fuentes externas",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preservan plantillas LaTeX, checklist editorial y archivo .bib local",
+          "target": "Usar identidad institucional UANL y facultad FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se agrega ADN editorial inicial sin inventar fuentes externas",
+          "target": "Usar identidad institucional UANL y facultad FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se agrega ADN editorial inicial sin inventar fuentes externas",
+          "target": "Mantener asignatura como Seminario Para El Desempeno Profesional",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar identidad institucional UANL y facultad FIME en portada y metadatos",
+          "target": "Mantener asignatura como Seminario Para El Desempeno Profesional",
+          "kind": "cohesion",
+          "weight": 4,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar identidad institucional UANL y facultad FIME en portada y metadatos",
+          "target": "Mantener programa como Ingenieria en Mecatronica",
+          "kind": "cohesion",
+          "weight": 4,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener asignatura como Seminario Para El Desempeno Profesional",
+          "target": "Mantener programa como Ingenieria en Mecatronica",
+          "kind": "cohesion",
+          "weight": 4,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Desarrollo",
+          "target": "analisis",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0005"
+          ]
+        },
+        {
+          "source": "Conclusiones",
+          "target": "conclusiones",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0006"
+          ]
+        },
+        {
+          "source": "Ingenieria en Mecatronica",
+          "target": "analisis",
+          "kind": "develops",
+          "weight": 1,
+          "justification": "La actividad pide analisis con enfoque disciplinar de mecatronica.",
+          "evidence": []
+        },
+        {
+          "source": "IMTC",
+          "target": "reporte integral",
+          "kind": "depends_on",
+          "weight": 1,
+          "justification": "El codigo IMTC se fija como metadato central en plantilla.",
+          "evidence": []
+        },
+        {
+          "source": "Se preservan plantillas LaTeX, checklist editorial y archivo .bib local",
+          "target": "Se confirma plantilla de actividad con secciones Actividad, Desarrollo y Cierre",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se agrega ADN editorial inicial sin inventar fuentes externas",
+          "target": "Se confirma plantilla de actividad con secciones Actividad, Desarrollo y Cierre",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se agrega ADN editorial inicial sin inventar fuentes externas",
+          "target": "Se confirma uso de cita bibliografica local con natnumurl y archivo .bib del curso",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma plantilla de actividad con secciones Actividad, Desarrollo y Cierre",
+          "target": "Se confirma uso de cita bibliografica local con natnumurl y archivo .bib del curso",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma plantilla de actividad con secciones Actividad, Desarrollo y Cierre",
+          "target": "Usar identidad institucional UANL y facultad FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma uso de cita bibliografica local con natnumurl y archivo .bib del curso",
+          "target": "Usar identidad institucional UANL y facultad FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener asignatura como Seminario Para El Desempeno Profesional",
+          "target": "Conservar codigo de curso IMTC en todos los artefactos",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener programa como Ingenieria en Mecatronica",
+          "target": "Conservar codigo de curso IMTC en todos los artefactos",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener programa como Ingenieria en Mecatronica",
+          "target": "Declarar supuestos cuando falten datos docentes u oficiales",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Conservar codigo de curso IMTC en todos los artefactos",
+          "target": "Declarar supuestos cuando falten datos docentes u oficiales",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Conservar codigo de curso IMTC en todos los artefactos",
+          "target": "Mantener autor Martin Jonathan de la Cruz en documentauthor y authortable",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Declarar supuestos cuando falten datos docentes u oficiales",
+          "target": "Mantener autor Martin Jonathan de la Cruz en documentauthor y authortable",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene plantilla LaTeX reconstruible para reporte integral y actividad",
+          "target": "Se confirma estructura minima Actividad, Desarrollo y Cierre",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene plantilla LaTeX reconstruible para reporte integral y actividad",
+          "target": "Se conserva uso obligatorio de bib local con estilo natnumurl",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma estructura minima Actividad, Desarrollo y Cierre",
+          "target": "Se conserva uso obligatorio de bib local con estilo natnumurl",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma estructura minima Actividad, Desarrollo y Cierre",
+          "target": "Usar identidad institucional UANL y facultad FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva uso obligatorio de bib local con estilo natnumurl",
+          "target": "Usar identidad institucional UANL y facultad FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva uso obligatorio de bib local con estilo natnumurl",
+          "target": "Mantener asignatura como Seminario Para El Desempeno Profesional",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        }
+      ],
+      "concept_weights": {
+        "Nodo canonizado con memoria local verificable del curso IMTC": 2,
+        "Se preservan plantillas LaTeX, checklist editorial y archivo .bib local": 2,
+        "Se agrega ADN editorial inicial sin inventar fuentes externas": 2,
+        "Usar identidad institucional UANL y facultad FIME en portada y metadatos": 5,
+        "Mantener asignatura como Seminario Para El Desempeno Profesional": 5,
+        "Mantener programa como Ingenieria en Mecatronica": 5,
+        "Conservar codigo de curso IMTC en todos los artefactos": 5,
+        "Declarar supuestos cuando falten datos docentes u oficiales": 5,
+        "Alinear cada actividad con el programa analitico del curso": 3,
+        "Incluir secciones minimas: Actividad, Desarrollo, Cierre": 3,
+        "Cerrar con resultados, limitaciones y mejoras accionables": 3,
+        "Mantener coherencia entre reporte integral y reportes por actividad": 3,
+        "Ubicar el programa analitico en la ruta de planeaciones definida": 3,
+        "Definir consigna tecnica explicita por actividad": 3,
+        "Documentar evidencias tecnicas y academicas en el Desarrollo": 3,
+        "Incluir analisis con enfoque de ingenieria en mecatronica": 3,
+        "Citar fuentes desde el .bib local del curso": 3,
+        "Registrar fecha y contexto academico en tabla de autor": 3,
+        "No propagar contenido no estructurado": 3,
+        "No inventar referencias bibliograficas no verificadas": 3,
+        "Verificar que toda cita usada exista en seminario-para-el-desempeno-profesional-imtc.bib": 3,
+        "Validar consistencia de nombres de curso, programa y codigo IMTC": 3,
+        "Marcar campos pendientes como supuestos explicitos": 3,
+        "Confirmar nombre oficial de la figura docente. [supuesto]": 3,
+        "Confirmar matricula real del alumno en lugar de UANL-IMTC. [supuesto]": 3,
+        "Completar referencia oficial del programa analitico con URL especifica. [supuesto]": 3,
+        "Verificar nombre final del archivo de plantilla input truncado en reporte integral. [supuesto]": 3,
+        "Documentar desempeno profesional con evidencia tecnica": 1,
+        "Vincular actividad semanal con objetivos del programa analitico": 1,
+        "Cerrar cada entrega con mejora continua": 1,
+        "Estandarizar reportes academicos del curso IMTC en formato LaTeX": 1,
+        "Asegurar trazabilidad entre consigna, desarrollo, evidencia y cierre": 1,
+        "Sostener calidad editorial y citacion reproducible": 1,
+        "Portada institucional parametrizada por macros": 3,
+        "Secciones breves y orientadas a accion": 2,
+        "Consigna tecnica explicita al inicio de cada actividad": 2,
+        "Cierre con resultados, limitaciones y mejoras": 3,
+        "Objetivo del programa analitico -> actividad concreta -> evidencia -> conclusion": 3,
+        "Problema academico -> analisis tecnico -> decision -> mejora propuesta": 3,
+        "Referencia curricular -> aplicacion mecatronica -> reflexion profesional": 3,
+        "programa analitico": 3,
+        "actividad academica": 3,
+        "evidencia tecnica": 3,
+        "analisis": 3,
+        "conclusiones": 3,
+        "mejora continua": 3,
+        "IMTC": 3,
+        "Ingenieria en Mecatronica": 3,
+        "UANL": 3,
+        "FIME": 3,
+        "programa-seminario-para-el-desempeno-profesional-imtc": 3,
+        "programa-analitico-seminario-para-el-desempeno-profesional-imtc.md": 2,
+        "reporte-seminario-para-el-desempeno-profesional-imtc-Actividad-1.tex": 2,
+        "reporte-seminario-para-el-desempeno-profesional-imtc.tex": 2,
+        "seminario-para-el-desempeno-profesional-imtc.bib": 2,
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo": 6,
+        "Se confirma plantilla de actividad con secciones Actividad, Desarrollo y Cierre": 1,
+        "Se confirma uso de cita bibliografica local con natnumurl y archivo .bib del curso": 1,
+        "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/seminario-para-el-desempeno-profesional-imtc.bib": 1,
+        "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex": 1,
+        "Mantener autor Martin Jonathan de la Cruz en documentauthor y authortable": 3,
+        "Conservar sede San Nicolas de los Garza, Nuevo Leon en metadatos": 3,
+        "Se mantiene plantilla LaTeX reconstruible para reporte integral y actividad": 1,
+        "Se confirma estructura minima Actividad, Desarrollo y Cierre": 1,
+        "Se conserva uso obligatorio de bib local con estilo natnumurl": 1,
+        "Programa analitico como ancla": 1,
+        "Actividad academica con evidencia tecnica": 1,
+        "Analisis aplicado a mecatronica": 1,
+        "Cierre con mejora continua": 1,
+        "Trazabilidad bibliografica local verificable": 1,
+        "Asegurar coherencia entre programa, actividad y evidencia": 1,
+        "Estandarizar entregables IMTC con estructura minima estable": 1,
+        "Preservar identidad UANL-FIME en cada artefacto": 1,
+        "Evitar perdida de memoria editorial entre ciclos": 1,
+        "Consigna tecnica explicita al inicio de actividad": 1,
+        "Secciones breves orientadas a accion": 1,
+        "Supuestos marcados cuando falte dato oficial": 1
+      },
+      "citation_weights": {}
+    },
+    "writing_memory": [
+      {
+        "id": "b0001",
+        "order": 1,
+        "kind": "abstract",
+        "section": "Resumen editorial",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Objetivo: Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+        "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+      },
+      {
+        "id": "b0002",
+        "order": 2,
+        "kind": "section",
+        "section": "Introduccion",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Introduccion",
+        "latex": "\\section{Introduccion}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+      },
+      {
+        "id": "b0003",
+        "order": 3,
+        "kind": "paragraph",
+        "section": "Introduccion",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+        "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+      },
+      {
+        "id": "b0004",
+        "order": 4,
+        "kind": "section",
+        "section": "Desarrollo",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Desarrollo",
+        "latex": "\\section{Desarrollo}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+      },
+      {
+        "id": "b0005",
+        "order": 5,
+        "kind": "paragraph",
+        "section": "Desarrollo",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+        "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+      },
+      {
+        "id": "b0006",
+        "order": 6,
+        "kind": "section",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Conclusiones",
+        "latex": "\\section{Conclusiones}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+      },
+      {
+        "id": "b0007",
+        "order": 7,
+        "kind": "paragraph",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+        "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+      },
+      {
+        "id": "b0008",
+        "order": 8,
+        "kind": "paragraph",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "natnumurl",
+        "latex": "\\bibliographystyle{natnumurl}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+      }
+    ],
+    "reconstructable_source": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Seminario Para El Desempeno Profesional}\n\\def\\documentsubtitle {Reporte integral - seminario-para-el-desempeno-profesional-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Seminario Para El Desempeno Profesional}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{seminario-para-el-desempeno-profesional-imtc}\n\n\\end{document}\n"
+  },
+  "tex_blueprint": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex",
+        "documenttitle": "Seminario Para El Desempeno Profesional",
+        "documentsubtitle": "Reporte integral - seminario-para-el-desempeno-profesional-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Seminario Para El Desempeno Profesional",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+        "section_titles": [
+          "Introduccion",
+          "Desarrollo",
+          "Conclusiones"
+        ],
+        "subsection_titles": [],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [
+          "Objetivo: Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+          "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+        ],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex",
+          "raw_latex_sha256": "a61300ec4bb6d1f95663d8e262b4bec3e20587bb5e05c6db9b1a23f2b5507ccf",
+          "raw_latex_chars": 1806,
+          "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Seminario Para El Desempeno Profesional}\n\\def\\documentsubtitle {Reporte integral - seminario-para-el-desempeno-profesional-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Seminario Para El Desempeno Profesional}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{seminario-para-el-desempeno-profesional-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document",
+              "abstractd"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "templateIndex",
+              "templateFinalcfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex",
+      "documenttitle": "Seminario Para El Desempeno Profesional",
+      "documentsubtitle": "Reporte integral - seminario-para-el-desempeno-profesional-imtc",
+      "documentsubject": "Ingenieria en Mecatronica",
+      "coursename": "Seminario Para El Desempeno Profesional",
+      "coursecode": "IMTC",
+      "documentauthor": "Martin Jonathan de la Cruz",
+      "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones"
+      ],
+      "subsection_titles": [],
+      "cited_keys": [],
+      "concepts": [],
+      "source_fragments": [
+        "Objetivo: Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+        "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+      ],
+      "content_memory": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex",
+        "raw_latex_sha256": "a61300ec4bb6d1f95663d8e262b4bec3e20587bb5e05c6db9b1a23f2b5507ccf",
+        "raw_latex_chars": 1806,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Seminario Para El Desempeno Profesional}\n\\def\\documentsubtitle {Reporte integral - seminario-para-el-desempeno-profesional-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Seminario Para El Desempeno Profesional}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{seminario-para-el-desempeno-profesional-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    }
+  },
+  "tex_content_memory": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex",
+        "raw_latex_sha256": "a61300ec4bb6d1f95663d8e262b4bec3e20587bb5e05c6db9b1a23f2b5507ccf",
+        "raw_latex_chars": 1806,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Seminario Para El Desempeno Profesional}\n\\def\\documentsubtitle {Reporte integral - seminario-para-el-desempeno-profesional-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Seminario Para El Desempeno Profesional}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{seminario-para-el-desempeno-profesional-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex",
+      "raw_latex_sha256": "a61300ec4bb6d1f95663d8e262b4bec3e20587bb5e05c6db9b1a23f2b5507ccf",
+      "raw_latex_chars": 1806,
+      "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Seminario Para El Desempeno Profesional}\n\\def\\documentsubtitle {Reporte integral - seminario-para-el-desempeno-profesional-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Seminario Para El Desempeno Profesional}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{seminario-para-el-desempeno-profesional-imtc}\n\n\\end{document}\n",
+      "functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document",
+          "abstractd"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "templateIndex",
+          "templateFinalcfg",
+          "bibliography"
+        ]
+      },
+      "paragraph_map": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "abstract",
+          "section": "Resumen editorial",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Objetivo: Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+          "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "section",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Introduccion",
+          "latex": "\\section{Introduccion}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "paragraph",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "section",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\section{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "paragraph",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "section",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Conclusiones",
+          "latex": "\\section{Conclusiones}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        },
+        {
+          "id": "b0008",
+          "order": 8,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        }
+      ],
+      "content_blocks": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "abstract",
+          "section": "Resumen editorial",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Objetivo: Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+          "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia seminario para el desempeno profesional.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "section",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Introduccion",
+          "latex": "\\section{Introduccion}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "paragraph",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "section",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\section{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "paragraph",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "section",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Conclusiones",
+          "latex": "\\section{Conclusiones}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        },
+        {
+          "id": "b0008",
+          "order": 8,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/reporte-seminario-para-el-desempeno-profesional-imtc.tex"
+        }
+      ],
+      "citation_map": {},
+      "all_cited_keys": [],
+      "missing_bibliography_keys": []
+    },
+    "bibliography_sources": {
+      "programa-seminario-para-el-desempeno-profesional-imtc": {
+        "key": "programa-seminario-para-el-desempeno-profesional-imtc",
+        "source_type": "bibtex",
+        "source_path": "UANL/ingenieria-en-mecatronica/seminario-para-el-desempeno-profesional-imtc/seminario-para-el-desempeno-profesional-imtc.bib",
+        "entry_type": "misc",
+        "title": "Programa analitico de seminario-para-el-desempeno-profesional-imtc",
+        "author": "UANL",
+        "year": "2026",
+        "url": "https://www.uanl.mx/",
+        "note": "Actualizar con la referencia oficial del curso",
+        "raw_entry": "@misc{programa-seminario-para-el-desempeno-profesional-imtc,\n  author = {UANL},\n  title = {Programa analitico de seminario-para-el-desempeno-profesional-imtc},\n  year = {2026},\n  note = {Actualizar con la referencia oficial del curso},\n  url = {https://www.uanl.mx/}\n}"
+      }
+    }
+  },
+  "locked_sections": [],
+  "compression": {
+    "method": "union-dedupe",
+    "lossless": true
+  },
+  "schema_version": 3
+}

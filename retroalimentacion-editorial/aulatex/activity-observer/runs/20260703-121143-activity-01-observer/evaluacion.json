@@ -1,0 +1,17 @@
+{
+  "passed": false,
+  "score": 71.43,
+  "checks": {
+    "tex_exists": true,
+    "pdf_exists": true,
+    "bibliography_ready": true,
+    "extractor_ready": false,
+    "draft_without_placeholders": true,
+    "sections_minimum": true,
+    "compile_ready": false
+  },
+  "critical_findings": [
+    "La compilación falló."
+  ],
+  "next_action": "repair-compilation"
+}

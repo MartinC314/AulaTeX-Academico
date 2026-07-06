@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "run_id": "20260703-145410-activity-01-observer",
+  "agent_mode": "activity-observer",
+  "scope_key": "UAS",
+  "activity_number": 1,
+  "target_root": "UAS",
+  "target_tex": "",
+  "target_pdf": "",
+  "bib_ref": "",
+  "clean_bib_ref": "",
+  "observed_state": {
+    "memory_ready": true,
+    "planeacion_ready": "unknown",
+    "extractor_ready": false,
+    "bibliography_ready": false,
+    "draft_ready": false,
+    "compile_ready": false,
+    "evaluation_ready": true
+  },
+  "signals": {
+    "sections": [],
+    "sections_count": 0,
+    "cited_keys": [],
+    "cited_keys_count": 0,
+    "missing_bib_keys": [],
+    "placeholder_hits": [],
+    "objective_present": false,
+    "purpose_present": false,
+    "conclusion_present": false,
+    "product_visual_detected": false,
+    "evaluation_criteria_present": false,
+    "didactic_technique_present": false,
+    "extractor_planeacion_present": false,
+    "extractor_objective_present": false,
+    "extractor_criteria_count": 0,
+    "extractor_verbs_count": 0,
+    "extractor_concepts_count": 0,
+    "extractor": {
+      "ready": false,
+      "output_dir": "",
+      "artifacts": {},
+      "missing_artifacts": [
+        "fichas_json",
+        "conceptos",
+        "ideas",
+        "trazabilidad",
+        "planeacion"
+      ],
+      "preview": "# Preview del adaptador del extractor\n\n- Scope: institucion | UAS\n- Ruta objetivo: UAS\n- Fuentes: pendiente\n- Planeacion: UAS/plan.md\n- Conceptos: pendiente\n- Salida: UAS/extractor-aulatex\n- Motor: anthropicfoundry\n- Modo: ejecucion\n\n## Faltantes\n\n- fuentes\n\n## Comando previsto\n\n```text\nC:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\scripts\\extractor-conceptos-ideas\\.venv\\Scripts\\python.exe run.py --planeacion C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\UAS\\plan.md --salida C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\UAS\\extractor-aulatex --motor anthropicfoundry --top-k 12 --max-citas 8 --recursivo\n```\n\n## Artefactos nucleares esperados\n\n- UAS/extractor-aulatex/fichas_conceptos.json\n- UAS/extractor-aulatex/conceptos_detectados.json\n- UAS/extractor-aulatex/ideas_detectadas.json\n- UAS/extractor-aulatex/trazabilidad_fuentes.json\n- UAS/extractor-aulatex/resumen_planeacion.json"
+    },
+    "compile": {
+      "enabled": true,
+      "ok": false,
+      "returncode": null,
+      "error": "No se encontró TEX de actividad.",
+      "category": "missing-tex"
+    }
+  },
+  "next_action": "repair-bibliography"
+}

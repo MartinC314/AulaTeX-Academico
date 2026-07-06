@@ -1,0 +1,90 @@
+{
+  "run_id": "20260703-121010-activity-01-bib-repair",
+  "target_tex": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/reporte-filosofia-del-derecho-Actividad-1.tex",
+  "bib_ref": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/filosofia-del-derecho.bib",
+  "apply": false,
+  "backup": true,
+  "changed": true,
+  "missing_keys": [
+    "de_victimas_ley_2013",
+    "finnis_estudios_2017",
+    "franzoni_acevedo_ley_2017",
+    "gandara_ley_2015",
+    "generales_ley_2021",
+    "lovon_manual_2020",
+    "noauthor_constitucion_nodate",
+    "rojas_gonzalez_filosofia_derecho_2018",
+    "ruiz_rodriguez_filosofia_derecho_2009"
+  ],
+  "replacements": [
+    {
+      "old_key": "de_victimas_ley_2013",
+      "new_key": "LeyGeneralVictimas",
+      "confidence": 1.0,
+      "method": "known-alias",
+      "status": "mapped"
+    },
+    {
+      "old_key": "finnis_estudios_2017",
+      "new_key": "finnisEstudiosTeoriaDerecho2017",
+      "confidence": 1.0,
+      "method": "known-alias",
+      "status": "mapped"
+    },
+    {
+      "old_key": "franzoni_acevedo_ley_2017",
+      "new_key": "franzoniacevedoLeyGeneralAcceso2017",
+      "confidence": 1.0,
+      "method": "known-alias",
+      "status": "mapped"
+    },
+    {
+      "old_key": "gandara_ley_2015",
+      "new_key": "lastraConceptosJuridicosFundamentales",
+      "confidence": 1.0,
+      "method": "known-alias",
+      "status": "mapped"
+    },
+    {
+      "old_key": "generales_ley_2021",
+      "new_key": "LeyAmparoReglamentaria",
+      "confidence": 1.0,
+      "method": "known-alias",
+      "status": "mapped"
+    },
+    {
+      "old_key": "lovon_manual_2020",
+      "new_key": "lovonManualPracticoFilosofia2020",
+      "confidence": 1.0,
+      "method": "known-alias",
+      "status": "mapped"
+    },
+    {
+      "old_key": "noauthor_constitucion_nodate",
+      "new_key": "cpeum2026",
+      "confidence": 1.0,
+      "method": "known-alias",
+      "status": "mapped"
+    },
+    {
+      "old_key": "rojas_gonzalez_filosofia_derecho_2018",
+      "new_key": "rojas-gonzalezFilosofiaDerecho2018",
+      "confidence": 1.0,
+      "method": "known-alias",
+      "status": "mapped"
+    },
+    {
+      "old_key": "ruiz_rodriguez_filosofia_derecho_2009",
+      "new_key": "ruizrodriguezFilosofiaDerecho2009",
+      "confidence": 1.0,
+      "method": "known-alias",
+      "status": "mapped"
+    }
+  ],
+  "actionable_count": 9,
+  "unresolved_count": 0,
+  "observation": "retroalimentacion-editorial/aulatex/bibliography-repair/runs/20260703-121010-activity-01-bib-repair/observer/20260703-121010-activity-01-observer/estado-agente.json",
+  "patched_preview": "retroalimentacion-editorial/aulatex/bibliography-repair/runs/20260703-121010-activity-01-bib-repair/reporte-filosofia-del-derecho-Actividad-1.tex",
+  "ok": true,
+  "report": "retroalimentacion-editorial/aulatex/bibliography-repair/runs/20260703-121010-activity-01-bib-repair/reporte-reparacion-bibliografia.md"
+}

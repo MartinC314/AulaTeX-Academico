@@ -1,0 +1,2539 @@
+{
+  "summary": [
+    "Canonizacion local inicial creada para Actividad 1 de IMTC con base en contexto verificable.",
+    "Se preserva memoria heredada institucional y se corrige su falta de estructura operativa.",
+    "Se consolida plantilla LaTeX activa, checklist editorial y fuente bib local sin inventar referencias.",
+    "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+    "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+    "Salida sin JSON parseable desde Claude Foundry para Actividad 1.",
+    "Salida sin JSON parseable desde GPT-Pro para Actividad 1.",
+    "Se confirma consistencia entre memoria y fuentes locales del nodo en ciclo 1.",
+    "Se mantiene compresion lossless por union y deduplicacion sin recorte.",
+    "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+    "Canonizacion local consolidada para Actividad 1 de IMTC con fuentes locales verificables.",
+    "Se preserva memoria previa completa con union y deduplicacion sin recorte semantico.",
+    "Se mantiene plantilla LaTeX reconstruible, checklist editorial y bibliografia local activa.",
+    "Se confirma consistencia entre reglas, TEX base y programa analitico del nodo.",
+    "Se registran fallas historicas de salida no parseable como bitacora, no como regla operativa."
+  ],
+  "identity_rules": [
+    "Mantener identidad institucional UANL y facultad FIME en portada y metadatos.",
+    "Mantener programa academico: Ingenieria en Mecatronica.",
+    "Mantener asignatura y codigo: Laboratorio de Electronica Digital, IMTC.",
+    "Usar tono tecnico-academico, claro y verificable.",
+    "Marcar campos no definidos como pendientes explicitos.",
+    "Fuente provisional: Claude Foundry desde Actividad 1",
+    "Fuente provisional: GPT-Pro desde Actividad 1",
+    "Conservar localidad institucional: San Nicolas de los Garza, Nuevo Leon.",
+    "Conservar autoria y metadatos de alumno segun plantilla local.",
+    "Fuente provisional: Claude Foundry desde Actividad 1.",
+    "Fuente provisional: GPT-Pro desde Actividad 1.",
+    "Fuente provisional: Auto (model-router) desde Actividad 1",
+    "Conservar autoria y metadatos de alumno segun plantilla local (Martin Jonathan de la Cruz).",
+    "Conservar matricula provisional UANL-IMTC hasta confirmar formato oficial.",
+    "Fuentes provisionales solo como marca de proceso: Claude Foundry, GPT-Pro, Auto (model-router) desde Actividad 1.",
+    "Conservar autoria y metadatos del alumno segun plantilla local.",
+    "Usar tono tecnico-academico, claro, directo y verificable.",
+    "Etiquetar matricula provisional como [supuesto] hasta confirmacion institucional."
+  ],
+  "structure_rules": [
+    "Estructura minima de actividad: Actividad, Desarrollo, Cierre.",
+    "Incluir consigna tecnica explicita al inicio de la actividad.",
+    "Incluir evidencias, analisis y referencias en Desarrollo.",
+    "Incluir resultados, limitaciones y mejoras en Cierre.",
+    "Alinear cada actividad con el programa analitico del curso.",
+    "Mantener coherencia entre subtitulos de actividad y reporte integral.",
+    "Usar estructura minima: Actividad, Desarrollo, Cierre.",
+    "Incluir consigna tecnica explicita al inicio.",
+    "Incluir en Desarrollo: evidencias, analisis y referencias.",
+    "Incluir en Cierre: resultados, limitaciones y mejoras."
+  ],
+  "activity_rules": [
+    "Definir objetivo de la actividad en terminos medibles.",
+    "Relacionar desarrollo con reto academico de la semana.",
+    "Documentar evidencia tecnica suficiente para trazabilidad.",
+    "Cerrar con conclusiones orientadas a ingenieria en mecatronica.",
+    "Mantener consistencia entre actividad individual y reporte integral.",
+    "Etiquetar como [supuesto] cualquier dato no confirmado en consigna oficial.",
+    "Definir objetivo en terminos medibles.",
+    "Relacionar el desarrollo con el reto academico semanal.",
+    "Etiquetar como [supuesto] todo dato no confirmado por consigna oficial."
+  ],
+  "quality_gates": [
+    "Validar JSON parseable en cada ciclo de memoria.",
+    "Verificar alineacion con checklist del programa analitico.",
+    "Verificar presencia de bibliografia local del curso.",
+    "Verificar que no se eliminen reglas utiles previas.",
+    "Verificar que supuestos queden etiquetados como supuestos.",
+    "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+    "Verificar que reglas sean accionables, cortas y sin duplicados.",
+    "Validar JSON parseable en cada ciclo.",
+    "Verificar reglas accionables, cortas y sin duplicados.",
+    "Verificar trazabilidad entre afirmaciones y evidencia local.",
+    "Verificar etiquetado explicito de supuestos.",
+    "Revisar y bloquear salidas no estructuradas antes de propagar."
+  ],
+  "latex_rules": [
+    "Conservar clase article en spanish, letterpaper, oneside.",
+    "Conservar bloque de metadatos institucionales por macros.",
+    "Conservar uso de template con templatePortrait y templatePagecfg.",
+    "Mantener onehalfspacing en cuerpo del documento.",
+    "No duplicar ni reescribir plantilla completa en memoria; guardar reglas reconstruibles.",
+    "Conservar bibliographystyle natnumurl segun plantilla local activa.",
+    "Conservar clase article con opciones spanish, letterpaper, oneside.",
+    "Mantener onehalfspacing en el cuerpo del documento.",
+    "Conservar \\bibliographystyle{natnumurl} segun plantilla activa.",
+    "No duplicar ni reescribir la plantilla completa en memoria; guardar reglas reconstruibles."
+  ],
+  "bibliography_rules": [
+    "Usar archivo local laboratorio-de-electronica-digital-imtc.bib.",
+    "Usar bibliographystyle natnumurl segun plantilla actual.",
+    "Citar programa-laboratorio-de-electronica-digital-imtc cuando se declare alineacion curricular.",
+    "No inventar fuentes externas no presentes en el nodo.",
+    "Marcar como pendiente la actualizacion de referencia oficial del curso.",
+    "Mantener trazabilidad entre afirmaciones curriculares y clave bib existente.",
+    "Usar estilo natnumurl segun plantilla vigente.",
+    "Citar programa-laboratorio-de-electronica-digital-imtc al declarar alineacion curricular.",
+    "Marcar como pendiente la actualizacion oficial de year, url y note de la referencia del programa."
+  ],
+  "propagation_hints": [
+    "Propagar estas reglas a futuras actividades del mismo laboratorio.",
+    "Mantener estrategia union-dedupe sin regresion en ciclos siguientes.",
+    "Usar este nodo como base canonica para Actividad 1.",
+    "Si aparece nueva evidencia local, integrar por refuerzo y no sustitucion.",
+    "Ciclo 1 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 1 requiere normalizacion manual antes de reutilizacion extendida.",
+    "No transferir ruido historico global no verificable en este nodo local.",
+    "Propagacion local: usar este nodo como base canonica de Actividad 1.",
+    "Aplicar estrategia union-dedupe sin regresion en ciclos siguientes.",
+    "Integrar nueva evidencia local por refuerzo, no por sustitucion.",
+    "No transferir ruido historico global no verificable al nodo local.",
+    "Preservar ADN editorial y TEX reconstruible en cada salto.",
+    "Ciclo 2 necesita normalizacion manual si se reutiliza."
+  ],
+  "open_questions": [
+    "Definir nombre oficial de la figura docente.",
+    "Confirmar matricula final del alumno en formato institucional.",
+    "Actualizar year/url/note de la referencia oficial del programa cuando exista fuente final.",
+    "Completar contenido tecnico real de Desarrollo y Cierre para esta actividad.",
+    "[supuesto] Confirmar si existe consigna oficial detallada de Actividad 1 fuera de la plantilla.",
+    "Actualizar referencia oficial del programa cuando exista fuente final.",
+    "Completar contenido tecnico real de Desarrollo y Cierre para Actividad 1.",
+    "[supuesto] Confirmar si existe consigna oficial detallada fuera de la plantilla."
+  ],
+  "artifact_name": "reporte-laboratorio-de-electronica-digital-imtc-Actividad-1",
+  "sources": [
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/actividad-1",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/programa-analitico-laboratorio-de-electronica-digital-imtc.md",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/laboratorio-de-electronica-digital-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+  ],
+  "artifact_types": [
+    "reporte"
+  ],
+  "supported_artifact_types": [],
+  "source_documents": [
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/programa-analitico-laboratorio-de-electronica-digital-imtc.md",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/laboratorio-de-electronica-digital-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex",
+    "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+  ],
+  "source_fragments": [
+    "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de electronica digital.",
+    "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+  ],
+  "concepts": [
+    "Programa analitico de laboratorio-de-electronica-digital-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/laboratorio-de-electronica-digital-imtc.bib"
+  ],
+  "section_titles": [
+    "Introduccion",
+    "Desarrollo",
+    "Conclusiones",
+    "Actividad 1"
+  ],
+  "citations": [],
+  "bibliography_index": [
+    "programa-laboratorio-de-electronica-digital-imtc :: Programa analitico de laboratorio-de-electronica-digital-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/laboratorio-de-electronica-digital-imtc.bib"
+  ],
+  "node_metadata": {
+    "scope_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/actividad-1",
+    "level": "actividad",
+    "label": "Actividad 1",
+    "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc",
+    "institution": "UANL",
+    "career": "ingenieria-en-mecatronica",
+    "subject": "laboratorio-de-electronica-digital-imtc",
+    "activity": "Actividad 1",
+    "parent_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc"
+  },
+  "curricular_context": {
+    "institutional_frame": "",
+    "purpose": "",
+    "work_axes": [],
+    "source_fragments": [],
+    "coursename": "Laboratorio De Electronica Digital",
+    "coursecode": "IMTC",
+    "documentsubject": "Ingenieria en Mecatronica",
+    "documenttitle": "Laboratorio De Electronica Digital",
+    "documentsubtitle": "Reporte integral - laboratorio-de-electronica-digital-imtc"
+  },
+  "artifact_templates": {},
+  "editorial_dna": {
+    "identity": {
+      "tone": [
+        "Tecnico",
+        "Academico",
+        "Directo",
+        "Verificable"
+      ],
+      "institutional": [
+        "Universidad Autonoma de Nuevo Leon",
+        "Facultad de Ingenieria Mecanica y Electrica",
+        "San Nicolas de los Garza, Nuevo Leon"
+      ],
+      "curricular": [
+        "Ingenieria en Mecatronica",
+        "Laboratorio de Electronica Digital",
+        "Codigo IMTC"
+      ],
+      "node_metadata": {
+        "scope_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/actividad-1",
+        "level": "actividad",
+        "label": "Actividad 1",
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc",
+        "institution": "UANL",
+        "career": "ingenieria-en-mecatronica",
+        "subject": "laboratorio-de-electronica-digital-imtc",
+        "activity": "Actividad 1",
+        "parent_key": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc"
+      },
+      "curricular_context": {
+        "institutional_frame": "",
+        "purpose": "",
+        "work_axes": [],
+        "source_fragments": [],
+        "coursename": "Laboratorio De Electronica Digital",
+        "coursecode": "IMTC",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "documenttitle": "Laboratorio De Electronica Digital",
+        "documentsubtitle": "Reporte integral - laboratorio-de-electronica-digital-imtc"
+      },
+      "identity_rules": [
+        "Mantener identidad institucional UANL y facultad FIME en portada y metadatos.",
+        "Mantener programa academico: Ingenieria en Mecatronica.",
+        "Mantener asignatura y codigo: Laboratorio de Electronica Digital, IMTC.",
+        "Usar tono tecnico-academico, claro y verificable.",
+        "Marcar campos no definidos como pendientes explicitos.",
+        "Fuente provisional: Claude Foundry desde Actividad 1",
+        "Fuente provisional: GPT-Pro desde Actividad 1",
+        "Conservar localidad institucional: San Nicolas de los Garza, Nuevo Leon.",
+        "Conservar autoria y metadatos de alumno segun plantilla local.",
+        "Fuente provisional: Claude Foundry desde Actividad 1.",
+        "Fuente provisional: GPT-Pro desde Actividad 1.",
+        "Fuente provisional: Auto (model-router) desde Actividad 1"
+      ]
+    },
+    "essence": [
+      "Actividad 1",
+      "Consigna tecnica",
+      "Evidencia tecnica",
+      "Analisis",
+      "Resultados",
+      "Limitaciones",
+      "Mejoras",
+      "Programa analitico",
+      "Ingenieria en Mecatronica",
+      "IMTC",
+      "Canonizacion local inicial creada para Actividad 1 de IMTC con base en contexto verificable",
+      "Se preserva memoria heredada institucional y se corrige su falta de estructura operativa",
+      "Se consolida plantilla LaTeX activa, checklist editorial y fuente bib local sin inventar referencias",
+      "Mantener identidad institucional UANL y facultad FIME en portada y metadatos",
+      "Mantener programa academico: Ingenieria en Mecatronica",
+      "Mantener asignatura y codigo: Laboratorio de Electronica Digital, IMTC",
+      "Usar tono tecnico-academico, claro y verificable",
+      "Marcar campos no definidos como pendientes explicitos",
+      "Estructura minima de actividad: Actividad, Desarrollo, Cierre",
+      "Incluir consigna tecnica explicita al inicio de la actividad",
+      "Definir objetivo de la actividad en terminos medibles.",
+      "Relacionar desarrollo con reto academico de la semana.",
+      "Documentar evidencia tecnica suficiente para trazabilidad.",
+      "Cerrar con conclusiones orientadas a ingenieria en mecatronica."
+    ],
+    "structure": {
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones",
+        "Actividad 1"
+      ],
+      "artifact_name": "reporte-laboratorio-de-electronica-digital-imtc-Actividad-1",
+      "artifact_types": [
+        "reporte"
+      ],
+      "tex_functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "bibliography"
+        ]
+      }
+    },
+    "reason_for_being": [
+      "Estructura minima de actividad: Actividad, Desarrollo, Cierre.",
+      "Incluir consigna tecnica explicita al inicio de la actividad.",
+      "Incluir evidencias, analisis y referencias en Desarrollo.",
+      "Incluir resultados, limitaciones y mejoras en Cierre.",
+      "Alinear cada actividad con el programa analitico del curso.",
+      "Mantener coherencia entre subtitulos de actividad y reporte integral.",
+      "Usar estructura minima: Actividad, Desarrollo, Cierre.",
+      "Incluir consigna tecnica explicita al inicio.",
+      "Incluir en Desarrollo: evidencias, analisis y referencias.",
+      "Incluir en Cierre: resultados, limitaciones y mejoras.",
+      "Definir objetivo de la actividad en terminos medibles.",
+      "Relacionar desarrollo con reto academico de la semana.",
+      "Documentar evidencia tecnica suficiente para trazabilidad.",
+      "Cerrar con conclusiones orientadas a ingenieria en mecatronica.",
+      "Mantener consistencia entre actividad individual y reporte integral.",
+      "Etiquetar como [supuesto] cualquier dato no confirmado en consigna oficial.",
+      "Definir objetivo en terminos medibles.",
+      "Relacionar el desarrollo con el reto academico semanal.",
+      "Etiquetar como [supuesto] todo dato no confirmado por consigna oficial.",
+      "Introduccion",
+      "Desarrollo",
+      "Conclusiones",
+      "Actividad 1"
+    ],
+    "style_markers": [
+      "Secciones breves y funcionales.",
+      "Consigna tecnica visible al inicio.",
+      "Cierre con resultados, limitaciones y mejoras.",
+      "Metadatos completos en portada mediante macros.",
+      "Mantener identidad institucional UANL y facultad FIME en portada y metadatos.",
+      "Mantener programa academico: Ingenieria en Mecatronica.",
+      "Mantener asignatura y codigo: Laboratorio de Electronica Digital, IMTC.",
+      "Usar tono tecnico-academico, claro y verificable.",
+      "Marcar campos no definidos como pendientes explicitos.",
+      "Conservar clase article en spanish, letterpaper, oneside.",
+      "Conservar bloque de metadatos institucionales por macros.",
+      "Conservar uso de template con templatePortrait y templatePagecfg.",
+      "Mantener onehalfspacing en cuerpo del documento.",
+      "No duplicar ni reescribir plantilla completa en memoria; guardar reglas reconstruibles.",
+      "Consigna tecnica al inicio.",
+      "Metadatos institucionales por macros.",
+      "Lenguaje preciso y verificable.",
+      "Pendientes explicitados.",
+      "Conservar localidad institucional: San Nicolas de los Garza, Nuevo Leon.",
+      "Conservar autoria y metadatos de alumno segun plantilla local."
+    ],
+    "argumentative_patterns": [
+      "Consigna -> Desarrollo con evidencia -> Cierre con mejora.",
+      "Alineacion curricular -> Sustento bibliografico local -> Conclusion aplicada.",
+      "Estructura minima de actividad: Actividad, Desarrollo, Cierre.",
+      "Incluir consigna tecnica explicita al inicio de la actividad.",
+      "Incluir evidencias, analisis y referencias en Desarrollo.",
+      "Incluir resultados, limitaciones y mejoras en Cierre.",
+      "Alinear cada actividad con el programa analitico del curso.",
+      "Definir objetivo de la actividad en terminos medibles.",
+      "Relacionar desarrollo con reto academico de la semana.",
+      "Documentar evidencia tecnica suficiente para trazabilidad.",
+      "Cerrar con conclusiones orientadas a ingenieria en mecatronica.",
+      "Mantener consistencia entre actividad individual y reporte integral.",
+      "Verificar alineacion con checklist del programa analitico.",
+      "Verificar presencia de bibliografia local del curso.",
+      "Verificar que no se eliminen reglas utiles previas.",
+      "Verificar que supuestos queden etiquetados como supuestos.",
+      "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+      "Consigna -> Evidencia tecnica -> Analisis -> Cierre con mejora.",
+      "Objetivo medible -> Desarrollo trazable -> Conclusion aplicada a mecatronica.",
+      "Alineacion curricular -> Cita local -> Validacion editorial."
+    ],
+    "reinforcement_log": [
+      "Se preserva memoria institucional heredada y se transforma en reglas accionables locales.",
+      "Se agrega ADN editorial minimo reconstruible desde plantilla y checklist reales del nodo.",
+      "Se evita inventar fuentes; solo se usa la cita bib existente.",
+      "Supuesto: no hay DNA historico previo del mismo nodo; se inicializa canon local base.",
+      "Refuerzo editorial aplicado sobre 51 conceptos y 0 citas.",
+      "Canonizacion local inicial creada para Actividad 1 de IMTC con base en contexto verificable.",
+      "Se preserva memoria heredada institucional y se corrige su falta de estructura operativa.",
+      "ADN sintetizado con 52 conceptos, 1 citas y 25 relaciones.",
+      "Memoria de redacción preservada en 7 bloques.",
+      "Refuerzo editorial aplicado sobre 1 conceptos y 0 citas.",
+      "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+      "ADN sintetizado con 53 conceptos, 1 citas y 25 relaciones.",
+      "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+      "Se preservaron todas las reglas utiles previas sin eliminaciones.",
+      "Se deduplicaron enunciados equivalentes y se mantuvo reconstruibilidad.",
+      "Se reforzo la etiqueta de [supuesto] para campos no confirmados.",
+      "Se reforzo trazabilidad entre checklist curricular y clave bib local.",
+      "Se mantuvo ADN editorial local sin incorporar fuentes externas no verificables.",
+      "Refuerzo editorial aplicado sobre 67 conceptos y 0 citas.",
+      "ADN sintetizado con 80 conceptos, 1 citas y 26 relaciones.",
+      "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+      "Refuerzo editorial aplicado sobre 9 conceptos y 0 citas.",
+      "ADN sintetizado con 83 conceptos, 1 citas y 32 relaciones.",
+      "Ciclo 2: deduplicadas variantes con puntuacion distinta en reglas y resumen.",
+      "Ciclo 2: se preservan reglas operativas previas y se refuerza control de supuestos.",
+      "Ciclo 2: se mantiene referencia a fallas no parseables como historial de calidad, sin contaminar reglas nucleares.",
+      "Ciclo 2: se refuerza union lossless local con foco en identidad, estructura y trazabilidad.",
+      "Refuerzo editorial aplicado sobre 66 conceptos y 0 citas.",
+      "Canonizacion local consolidada para Actividad 1 de IMTC con fuentes locales verificables.",
+      "Se preserva memoria previa completa con union y deduplicacion sin recorte semantico.",
+      "ADN sintetizado con 117 conceptos, 1 citas y 40 relaciones."
+    ],
+    "knowledge_graph": {
+      "concepts": [
+        "Actividad 1",
+        "Consigna tecnica",
+        "Evidencia tecnica",
+        "Analisis",
+        "Resultados",
+        "Limitaciones",
+        "Mejoras",
+        "Programa analitico",
+        "Ingenieria en Mecatronica",
+        "IMTC",
+        "Canonizacion local inicial creada para Actividad 1 de IMTC con base en contexto verificable",
+        "Se preserva memoria heredada institucional y se corrige su falta de estructura operativa",
+        "Se consolida plantilla LaTeX activa, checklist editorial y fuente bib local sin inventar referencias",
+        "Mantener identidad institucional UANL y facultad FIME en portada y metadatos",
+        "Mantener programa academico: Ingenieria en Mecatronica",
+        "Mantener asignatura y codigo: Laboratorio de Electronica Digital, IMTC",
+        "Usar tono tecnico-academico, claro y verificable",
+        "Marcar campos no definidos como pendientes explicitos",
+        "Estructura minima de actividad: Actividad, Desarrollo, Cierre",
+        "Incluir consigna tecnica explicita al inicio de la actividad",
+        "Incluir evidencias, analisis y referencias en Desarrollo",
+        "Incluir resultados, limitaciones y mejoras en Cierre",
+        "Alinear cada actividad con el programa analitico del curso",
+        "Definir objetivo de la actividad en terminos medibles",
+        "Relacionar desarrollo con reto academico de la semana",
+        "Documentar evidencia tecnica suficiente para trazabilidad",
+        "Cerrar con conclusiones orientadas a ingenieria en mecatronica",
+        "Mantener consistencia entre actividad individual y reporte integral",
+        "Verificar alineacion con checklist del programa analitico",
+        "Verificar presencia de bibliografia local del curso",
+        "Verificar que no se eliminen reglas utiles previas",
+        "Verificar que supuestos queden etiquetados como supuestos",
+        "Definir nombre oficial de la figura docente",
+        "Confirmar matricula final del alumno en formato institucional",
+        "Actualizar year/url/note de la referencia oficial del programa cuando exista fuente final",
+        "Completar contenido tecnico real de Desarrollo y Cierre para esta actividad",
+        "Documentar actividades de laboratorio con trazabilidad tecnica y academica",
+        "Conectar ejecucion semanal con programa analitico del curso",
+        "Cerrar cada entrega con aprendizaje aplicable a mecatronica",
+        "Estandarizar reportes de actividad IMTC con formato institucional consistente",
+        "Asegurar evidencia reproducible y evaluable en cada entrega",
+        "Secciones breves y funcionales",
+        "Consigna tecnica visible al inicio",
+        "Cierre con resultados, limitaciones y mejoras",
+        "Metadatos completos en portada mediante macros",
+        "Consigna -> Desarrollo con evidencia -> Cierre con mejora",
+        "Alineacion curricular -> Sustento bibliografico local -> Conclusion aplicada",
+        "programa-laboratorio-de-electronica-digital-imtc",
+        "reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex",
+        "programa-analitico-laboratorio-de-electronica-digital-imtc.md",
+        "laboratorio-de-electronica-digital-imtc.bib",
+        "Programa analitico de laboratorio-de-electronica-digital-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/laboratorio-de-electronica-digital-imtc.bib",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo",
+        "Desarrollo",
+        "Cierre",
+        "Plantilla LaTeX local",
+        "Conservar localidad institucional: San Nicolas de los Garza, Nuevo Leon",
+        "Conservar autoria y metadatos de alumno segun plantilla local",
+        "Mantener coherencia entre subtitulos de actividad y reporte integral",
+        "Etiquetar como [supuesto] cualquier dato no confirmado en consigna oficial",
+        "Verificar que reglas sean accionables, cortas y sin duplicados",
+        "[supuesto] Confirmar si existe consigna oficial detallada de Actividad 1 fuera de la plantilla",
+        "Actividad 1 con consigna tecnica visible",
+        "Desarrollo sustentado en evidencia tecnica",
+        "Alineacion explicita al programa analitico",
+        "Trazabilidad editorial y bibliografica local",
+        "Estandarizar entregables de Actividad 1 con estructura verificable",
+        "Preservar identidad institucional y curricular sin ambiguedad",
+        "Garantizar continuidad entre actividad individual y reporte integral",
+        "Consigna tecnica al inicio",
+        "Metadatos institucionales por macros",
+        "Lenguaje preciso y verificable",
+        "Pendientes explicitados",
+        "Consigna -> Evidencia tecnica -> Analisis -> Cierre con mejora",
+        "Objetivo medible -> Desarrollo trazable -> Conclusion aplicada a mecatronica",
+        "Alineacion curricular -> Cita local -> Validacion editorial",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/programa-analitico-laboratorio-de-electronica-digital-imtc.md",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/laboratorio-de-electronica-digital-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex",
+        "Conservar autoria y metadatos de alumno segun plantilla local (Martin Jonathan de la Cruz)",
+        "Conservar matricula provisional UANL-IMTC hasta confirmar formato oficial",
+        "Fuentes provisionales solo como marca de proceso: Claude Foundry, GPT-Pro, Auto (model-router) desde Actividad 1",
+        "Trazabilidad bibliografica local",
+        "Canonizacion local consolidada para Actividad 1 de IMTC con fuentes locales verificables",
+        "Se mantiene plantilla LaTeX reconstruible, checklist editorial y bibliografia local activa",
+        "Se confirma consistencia entre reglas, TEX base y programa analitico del nodo",
+        "Se registran fallas historicas de salida no parseable como bitacora, no como regla operativa",
+        "Conservar autoria y metadatos del alumno segun plantilla local",
+        "Usar tono tecnico-academico, claro, directo y verificable",
+        "Etiquetar matricula provisional como [supuesto] hasta confirmacion institucional",
+        "Usar estructura minima: Actividad, Desarrollo, Cierre",
+        "Incluir consigna tecnica explicita al inicio",
+        "Incluir en Desarrollo: evidencias, analisis y referencias",
+        "Incluir en Cierre: resultados, limitaciones y mejoras",
+        "Definir objetivo en terminos medibles",
+        "Relacionar el desarrollo con el reto academico semanal",
+        "Etiquetar como [supuesto] todo dato no confirmado por consigna oficial",
+        "Verificar reglas accionables, cortas y sin duplicados",
+        "Verificar trazabilidad entre afirmaciones y evidencia local",
+        "Verificar etiquetado explicito de supuestos",
+        "Revisar y bloquear salidas no estructuradas antes de propagar",
+        "Actualizar referencia oficial del programa cuando exista fuente final",
+        "Completar contenido tecnico real de Desarrollo y Cierre para Actividad 1",
+        "[supuesto] Confirmar si existe consigna oficial detallada fuera de la plantilla",
+        "Actividad 1 orientada a evidencia tecnica",
+        "Consigna clara al inicio y cierre con mejora",
+        "Alineacion curricular verificable con programa analitico",
+        "Trazabilidad documental y bibliografica local",
+        "Estandarizar entregables de actividad con estructura minima valida",
+        "Garantizar coherencia entre consigna, desarrollo y cierre",
+        "Sostener decisiones editoriales con evidencia local verificable",
+        "Evitar invenciones y conservar identidad institucional",
+        "Metadatos completos por macros institucionales",
+        "Uso estricto de plantilla local reconstruible",
+        "Alineacion curricular -> Cita bib local -> Conclusion aplicada",
+        "Dato pendiente -> etiqueta [supuesto] -> accion de verificacion"
+      ],
+      "citations": [
+        "programa-laboratorio-de-electronica-digital-imtc"
+      ],
+      "evidence": [
+        "reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex",
+        "programa-analitico-laboratorio-de-electronica-digital-imtc.md",
+        "laboratorio-de-electronica-digital-imtc.bib",
+        "Canonizacion local inicial creada para Actividad 1 de IMTC con base en contexto verificable.",
+        "Se preserva memoria heredada institucional y se corrige su falta de estructura operativa.",
+        "Se consolida plantilla LaTeX activa, checklist editorial y fuente bib local sin inventar referencias.",
+        "Validar JSON parseable en cada ciclo de memoria.",
+        "Verificar alineacion con checklist del programa analitico.",
+        "Verificar presencia de bibliografia local del curso.",
+        "Verificar que no se eliminen reglas utiles previas.",
+        "Verificar que supuestos queden etiquetados como supuestos.",
+        "programa-laboratorio-de-electronica-digital-imtc :: Programa analitico de laboratorio-de-electronica-digital-imtc :: fuente=UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/laboratorio-de-electronica-digital-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/programa-analitico-laboratorio-de-electronica-digital-imtc.md",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/laboratorio-de-electronica-digital-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex",
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex",
+        "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+        "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+        "Salida sin JSON parseable desde Claude Foundry para Actividad 1.",
+        "Salida sin JSON parseable desde GPT-Pro para Actividad 1.",
+        "Se confirma consistencia entre memoria y fuentes locales del nodo en ciclo 1.",
+        "Se mantiene compresion lossless por union y deduplicacion sin recorte.",
+        "Verificar que reglas sean accionables, cortas y sin duplicados.",
+        "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+        "Canonizacion local consolidada para Actividad 1 de IMTC con fuentes locales verificables.",
+        "Se preserva memoria previa completa con union y deduplicacion sin recorte semantico.",
+        "Se mantiene plantilla LaTeX reconstruible, checklist editorial y bibliografia local activa.",
+        "Se confirma consistencia entre reglas, TEX base y programa analitico del nodo.",
+        "Se registran fallas historicas de salida no parseable como bitacora, no como regla operativa.",
+        "Validar JSON parseable en cada ciclo.",
+        "Verificar reglas accionables, cortas y sin duplicados.",
+        "Verificar trazabilidad entre afirmaciones y evidencia local.",
+        "Verificar etiquetado explicito de supuestos.",
+        "Revisar y bloquear salidas no estructuradas antes de propagar."
+      ],
+      "relations": [
+        {
+          "source": "Actividad 1",
+          "target": "Consigna tecnica",
+          "kind": "depends_on",
+          "weight": 3,
+          "justification": "La plantilla define consigna tecnica explicita.",
+          "evidence": []
+        },
+        {
+          "source": "Desarrollo",
+          "target": "Evidencia tecnica",
+          "kind": "depends_on",
+          "weight": 3,
+          "justification": "El apartado exige evidencias, analisis y referencias.",
+          "evidence": []
+        },
+        {
+          "source": "Cierre",
+          "target": "Mejoras",
+          "kind": "develops",
+          "weight": 3,
+          "justification": "El cierre pide registrar mejoras despues de resultados y limitaciones.",
+          "evidence": []
+        },
+        {
+          "source": "Actividad",
+          "target": "Programa analitico",
+          "kind": "depends_on",
+          "weight": 1,
+          "justification": "Checklist local exige alineacion de objetivos con programa analitico.",
+          "evidence": []
+        },
+        {
+          "source": "programa-laboratorio-de-electronica-digital-imtc",
+          "target": "Programa analitico",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "Entrada .bib identifica el programa analitico del curso.",
+          "evidence": []
+        },
+        {
+          "source": "Canonizacion local inicial creada para Actividad 1 de IMTC con base en contexto verificable",
+          "target": "Se preserva memoria heredada institucional y se corrige su falta de estructura operativa",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Canonizacion local inicial creada para Actividad 1 de IMTC con base en contexto verificable",
+          "target": "Se consolida plantilla LaTeX activa, checklist editorial y fuente bib local sin inventar referencias",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva memoria heredada institucional y se corrige su falta de estructura operativa",
+          "target": "Se consolida plantilla LaTeX activa, checklist editorial y fuente bib local sin inventar referencias",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva memoria heredada institucional y se corrige su falta de estructura operativa",
+          "target": "Mantener identidad institucional UANL y facultad FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se consolida plantilla LaTeX activa, checklist editorial y fuente bib local sin inventar referencias",
+          "target": "Mantener identidad institucional UANL y facultad FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se consolida plantilla LaTeX activa, checklist editorial y fuente bib local sin inventar referencias",
+          "target": "Mantener programa academico: Ingenieria en Mecatronica",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener identidad institucional UANL y facultad FIME en portada y metadatos",
+          "target": "Mantener programa academico: Ingenieria en Mecatronica",
+          "kind": "cohesion",
+          "weight": 5,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener identidad institucional UANL y facultad FIME en portada y metadatos",
+          "target": "Mantener asignatura y codigo: Laboratorio de Electronica Digital, IMTC",
+          "kind": "cohesion",
+          "weight": 4,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener programa academico: Ingenieria en Mecatronica",
+          "target": "Mantener asignatura y codigo: Laboratorio de Electronica Digital, IMTC",
+          "kind": "cohesion",
+          "weight": 4,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Actividad 1",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0001"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Consigna tecnica",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0002"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Desarrollo",
+          "kind": "organizes",
+          "weight": 2,
+          "evidence": [
+            "b0003",
+            "b0004"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Analisis",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0004"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Cierre",
+          "kind": "organizes",
+          "weight": 3,
+          "evidence": [
+            "b0005",
+            "b0006",
+            "b0007"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Resultados",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0006"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Limitaciones",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0006"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Mejoras",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0006"
+          ]
+        },
+        {
+          "source": "Resultados",
+          "target": "Limitaciones",
+          "kind": "cooccurrence",
+          "weight": 1,
+          "evidence": [
+            "b0006"
+          ]
+        },
+        {
+          "source": "Resultados",
+          "target": "Mejoras",
+          "kind": "cooccurrence",
+          "weight": 1,
+          "evidence": [
+            "b0006"
+          ]
+        },
+        {
+          "source": "Limitaciones",
+          "target": "Mejoras",
+          "kind": "cooccurrence",
+          "weight": 1,
+          "evidence": [
+            "b0006"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Programa analitico",
+          "kind": "depends_on",
+          "weight": 2,
+          "justification": "El checklist local exige alineacion curricular.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener programa academico: Ingenieria en Mecatronica",
+          "target": "Usar tono tecnico-academico, claro y verificable",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener asignatura y codigo: Laboratorio de Electronica Digital, IMTC",
+          "target": "Usar tono tecnico-academico, claro y verificable",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener asignatura y codigo: Laboratorio de Electronica Digital, IMTC",
+          "target": "Marcar campos no definidos como pendientes explicitos",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar tono tecnico-academico, claro y verificable",
+          "target": "Marcar campos no definidos como pendientes explicitos",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar tono tecnico-academico, claro y verificable",
+          "target": "Conservar localidad institucional: San Nicolas de los Garza, Nuevo Leon",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Marcar campos no definidos como pendientes explicitos",
+          "target": "Conservar localidad institucional: San Nicolas de los Garza, Nuevo Leon",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Canonizacion local consolidada para Actividad 1 de IMTC con fuentes locales verificables",
+          "target": "Se mantiene plantilla LaTeX reconstruible, checklist editorial y bibliografia local activa",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Canonizacion local consolidada para Actividad 1 de IMTC con fuentes locales verificables",
+          "target": "Se confirma consistencia entre reglas, TEX base y programa analitico del nodo",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene plantilla LaTeX reconstruible, checklist editorial y bibliografia local activa",
+          "target": "Se confirma consistencia entre reglas, TEX base y programa analitico del nodo",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene plantilla LaTeX reconstruible, checklist editorial y bibliografia local activa",
+          "target": "Se registran fallas historicas de salida no parseable como bitacora, no como regla operativa",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma consistencia entre reglas, TEX base y programa analitico del nodo",
+          "target": "Se registran fallas historicas de salida no parseable como bitacora, no como regla operativa",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma consistencia entre reglas, TEX base y programa analitico del nodo",
+          "target": "Mantener identidad institucional UANL y facultad FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se registran fallas historicas de salida no parseable como bitacora, no como regla operativa",
+          "target": "Mantener identidad institucional UANL y facultad FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se registran fallas historicas de salida no parseable como bitacora, no como regla operativa",
+          "target": "Mantener programa academico: Ingenieria en Mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        }
+      ],
+      "concept_weights": {
+        "Canonizacion local inicial creada para Actividad 1 de IMTC con base en contexto verificable": 2,
+        "Se preserva memoria heredada institucional y se corrige su falta de estructura operativa": 2,
+        "Se consolida plantilla LaTeX activa, checklist editorial y fuente bib local sin inventar referencias": 2,
+        "Mantener identidad institucional UANL y facultad FIME en portada y metadatos": 5,
+        "Mantener programa academico: Ingenieria en Mecatronica": 5,
+        "Mantener asignatura y codigo: Laboratorio de Electronica Digital, IMTC": 5,
+        "Usar tono tecnico-academico, claro y verificable": 4,
+        "Marcar campos no definidos como pendientes explicitos": 5,
+        "Estructura minima de actividad: Actividad, Desarrollo, Cierre": 2,
+        "Incluir consigna tecnica explicita al inicio de la actividad": 2,
+        "Incluir evidencias, analisis y referencias en Desarrollo": 2,
+        "Incluir resultados, limitaciones y mejoras en Cierre": 2,
+        "Alinear cada actividad con el programa analitico del curso": 3,
+        "Definir objetivo de la actividad en terminos medibles": 2,
+        "Relacionar desarrollo con reto academico de la semana": 2,
+        "Documentar evidencia tecnica suficiente para trazabilidad": 3,
+        "Cerrar con conclusiones orientadas a ingenieria en mecatronica": 3,
+        "Mantener consistencia entre actividad individual y reporte integral": 3,
+        "Verificar alineacion con checklist del programa analitico": 3,
+        "Verificar presencia de bibliografia local del curso": 3,
+        "Verificar que no se eliminen reglas utiles previas": 3,
+        "Verificar que supuestos queden etiquetados como supuestos": 2,
+        "Definir nombre oficial de la figura docente": 3,
+        "Confirmar matricula final del alumno en formato institucional": 3,
+        "Actualizar year/url/note de la referencia oficial del programa cuando exista fuente final": 2,
+        "Completar contenido tecnico real de Desarrollo y Cierre para esta actividad": 2,
+        "Documentar actividades de laboratorio con trazabilidad tecnica y academica": 1,
+        "Conectar ejecucion semanal con programa analitico del curso": 1,
+        "Cerrar cada entrega con aprendizaje aplicable a mecatronica": 1,
+        "Estandarizar reportes de actividad IMTC con formato institucional consistente": 1,
+        "Asegurar evidencia reproducible y evaluable en cada entrega": 1,
+        "Secciones breves y funcionales": 3,
+        "Consigna tecnica visible al inicio": 2,
+        "Cierre con resultados, limitaciones y mejoras": 3,
+        "Metadatos completos en portada mediante macros": 1,
+        "Consigna -> Desarrollo con evidencia -> Cierre con mejora": 1,
+        "Alineacion curricular -> Sustento bibliografico local -> Conclusion aplicada": 1,
+        "Actividad 1": 3,
+        "Consigna tecnica": 3,
+        "Evidencia tecnica": 3,
+        "Analisis": 2,
+        "Resultados": 2,
+        "Limitaciones": 2,
+        "Mejoras": 2,
+        "Programa analitico": 3,
+        "Ingenieria en Mecatronica": 3,
+        "IMTC": 3,
+        "programa-laboratorio-de-electronica-digital-imtc": 3,
+        "reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex": 1,
+        "programa-analitico-laboratorio-de-electronica-digital-imtc.md": 1,
+        "laboratorio-de-electronica-digital-imtc.bib": 1,
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo": 5,
+        "Conservar localidad institucional: San Nicolas de los Garza, Nuevo Leon": 4,
+        "Conservar autoria y metadatos de alumno segun plantilla local": 1,
+        "Mantener coherencia entre subtitulos de actividad y reporte integral": 2,
+        "Etiquetar como [supuesto] cualquier dato no confirmado en consigna oficial": 1,
+        "Verificar que reglas sean accionables, cortas y sin duplicados": 1,
+        "[supuesto] Confirmar si existe consigna oficial detallada de Actividad 1 fuera de la plantilla": 1,
+        "Actividad 1 con consigna tecnica visible": 1,
+        "Desarrollo sustentado en evidencia tecnica": 1,
+        "Alineacion explicita al programa analitico": 1,
+        "Trazabilidad editorial y bibliografica local": 1,
+        "Estandarizar entregables de Actividad 1 con estructura verificable": 1,
+        "Preservar identidad institucional y curricular sin ambiguedad": 1,
+        "Garantizar continuidad entre actividad individual y reporte integral": 1,
+        "Consigna tecnica al inicio": 1,
+        "Metadatos institucionales por macros": 1,
+        "Lenguaje preciso y verificable": 1,
+        "Pendientes explicitados": 1,
+        "Consigna -> Evidencia tecnica -> Analisis -> Cierre con mejora": 2,
+        "Objetivo medible -> Desarrollo trazable -> Conclusion aplicada a mecatronica": 1,
+        "Alineacion curricular -> Cita local -> Validacion editorial": 1,
+        "Desarrollo": 2,
+        "Cierre": 2,
+        "Plantilla LaTeX local": 1,
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/programa-analitico-laboratorio-de-electronica-digital-imtc.md": 2,
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/laboratorio-de-electronica-digital-imtc.bib": 2,
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex": 2,
+        "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex": 2,
+        "Conservar autoria y metadatos de alumno segun plantilla local (Martin Jonathan de la Cruz)": 2,
+        "Conservar matricula provisional UANL-IMTC hasta confirmar formato oficial": 2,
+        "Fuentes provisionales solo como marca de proceso: Claude Foundry, GPT-Pro, Auto (model-router) desde Actividad 1": 1,
+        "Canonizacion local consolidada para Actividad 1 de IMTC con fuentes locales verificables": 1,
+        "Se mantiene plantilla LaTeX reconstruible, checklist editorial y bibliografia local activa": 1,
+        "Se confirma consistencia entre reglas, TEX base y programa analitico del nodo": 1,
+        "Se registran fallas historicas de salida no parseable como bitacora, no como regla operativa": 1,
+        "Conservar autoria y metadatos del alumno segun plantilla local": 1,
+        "Usar tono tecnico-academico, claro, directo y verificable": 1,
+        "Etiquetar matricula provisional como [supuesto] hasta confirmacion institucional": 1,
+        "Usar estructura minima: Actividad, Desarrollo, Cierre": 1,
+        "Incluir consigna tecnica explicita al inicio": 1,
+        "Incluir en Desarrollo: evidencias, analisis y referencias": 1,
+        "Incluir en Cierre: resultados, limitaciones y mejoras": 1,
+        "Definir objetivo en terminos medibles": 1,
+        "Relacionar el desarrollo con el reto academico semanal": 1,
+        "Etiquetar como [supuesto] todo dato no confirmado por consigna oficial": 1,
+        "Verificar reglas accionables, cortas y sin duplicados": 1,
+        "Verificar trazabilidad entre afirmaciones y evidencia local": 1,
+        "Verificar etiquetado explicito de supuestos": 1,
+        "Revisar y bloquear salidas no estructuradas antes de propagar": 1,
+        "Actualizar referencia oficial del programa cuando exista fuente final": 1,
+        "Completar contenido tecnico real de Desarrollo y Cierre para Actividad 1": 1,
+        "[supuesto] Confirmar si existe consigna oficial detallada fuera de la plantilla": 1,
+        "Actividad 1 orientada a evidencia tecnica": 1,
+        "Consigna clara al inicio y cierre con mejora": 1,
+        "Alineacion curricular verificable con programa analitico": 1,
+        "Trazabilidad documental y bibliografica local": 1,
+        "Estandarizar entregables de actividad con estructura minima valida": 1,
+        "Garantizar coherencia entre consigna, desarrollo y cierre": 1,
+        "Sostener decisiones editoriales con evidencia local verificable": 1,
+        "Evitar invenciones y conservar identidad institucional": 1,
+        "Metadatos completos por macros institucionales": 1,
+        "Uso estricto de plantilla local reconstruible": 1,
+        "Alineacion curricular -> Cita bib local -> Conclusion aplicada": 1,
+        "Dato pendiente -> etiqueta [supuesto] -> accion de verificacion": 1,
+        "Trazabilidad bibliografica local": 1
+      },
+      "citation_weights": {}
+    },
+    "writing_memory": [
+      {
+        "id": "b0001",
+        "order": 1,
+        "kind": "section",
+        "section": "Actividad 1",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Actividad 1",
+        "latex": "\\section{Actividad 1}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0002",
+        "order": 2,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+        "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0003",
+        "order": 3,
+        "kind": "subsection",
+        "section": "Actividad 1",
+        "subsection": "Desarrollo",
+        "paragraph_heading": "",
+        "text": "Desarrollo",
+        "latex": "\\subsection{Desarrollo}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0004",
+        "order": 4,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Desarrollo",
+        "paragraph_heading": "",
+        "text": "Incluir evidencias, analisis y referencias.",
+        "latex": "Incluir evidencias, analisis y referencias.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0005",
+        "order": 5,
+        "kind": "subsection",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "Cierre",
+        "latex": "\\subsection{Cierre}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0006",
+        "order": 6,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "Registrar resultados, limitaciones y mejoras.",
+        "latex": "Registrar resultados, limitaciones y mejoras.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0007",
+        "order": 7,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "natnumurl",
+        "latex": "\\bibliographystyle{natnumurl}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+      }
+    ],
+    "reconstructable_source": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Electronica Digital}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-electronica-digital-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Electronica Digital}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-electronica-digital-imtc}\n\n\\end{document}\n"
+  },
+  "tex_blueprint": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex",
+        "documenttitle": "Laboratorio De Electronica Digital",
+        "documentsubtitle": "Reporte integral - laboratorio-de-electronica-digital-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Laboratorio De Electronica Digital",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de electronica digital.",
+        "section_titles": [
+          "Introduccion",
+          "Desarrollo",
+          "Conclusiones"
+        ],
+        "subsection_titles": [],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [
+          "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de electronica digital.",
+          "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+        ],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex",
+          "raw_latex_sha256": "9fb95435492db3944529f23d98900da5148940c1cedf0b869c2b6867d5252343",
+          "raw_latex_chars": 1781,
+          "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Electronica Digital}\n\\def\\documentsubtitle {Reporte integral - laboratorio-de-electronica-digital-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Electronica Digital}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de electronica digital.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-electronica-digital-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document",
+              "abstractd"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "templateIndex",
+              "templateFinalcfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de electronica digital.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de electronica digital.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de electronica digital.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de electronica digital.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      },
+      "reporte": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex",
+        "documenttitle": "Laboratorio De Electronica Digital",
+        "documentsubtitle": "Actividad 1 - laboratorio-de-electronica-digital-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Laboratorio De Electronica Digital",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "",
+        "section_titles": [
+          "Actividad 1"
+        ],
+        "subsection_titles": [
+          "Desarrollo",
+          "Cierre"
+        ],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex",
+          "raw_latex_sha256": "00f372dcd241e83b72ec3f45a16d797c05bb914cf193db75d4a30145461dd3bd",
+          "raw_latex_chars": 1564,
+          "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Electronica Digital}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-electronica-digital-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Electronica Digital}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-electronica-digital-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "section",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Actividad 1",
+              "latex": "\\section{Actividad 1}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+              "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\subsection{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Incluir evidencias, analisis y referencias.",
+              "latex": "Incluir evidencias, analisis y referencias.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Cierre",
+              "latex": "\\subsection{Cierre}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Registrar resultados, limitaciones y mejoras.",
+              "latex": "Registrar resultados, limitaciones y mejoras.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "section",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Actividad 1",
+              "latex": "\\section{Actividad 1}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+              "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\subsection{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Incluir evidencias, analisis y referencias.",
+              "latex": "Incluir evidencias, analisis y referencias.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Cierre",
+              "latex": "\\subsection{Cierre}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Registrar resultados, limitaciones y mejoras.",
+              "latex": "Registrar resultados, limitaciones y mejoras.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex",
+      "documenttitle": "Laboratorio De Electronica Digital",
+      "documentsubtitle": "Actividad 1 - laboratorio-de-electronica-digital-imtc",
+      "documentsubject": "Ingenieria en Mecatronica",
+      "coursename": "Laboratorio De Electronica Digital",
+      "coursecode": "IMTC",
+      "documentauthor": "Martin Jonathan de la Cruz",
+      "abstract": "",
+      "section_titles": [
+        "Actividad 1"
+      ],
+      "subsection_titles": [
+        "Desarrollo",
+        "Cierre"
+      ],
+      "cited_keys": [],
+      "concepts": [],
+      "source_fragments": [],
+      "content_memory": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex",
+        "raw_latex_sha256": "00f372dcd241e83b72ec3f45a16d797c05bb914cf193db75d4a30145461dd3bd",
+        "raw_latex_chars": 1564,
+        "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Electronica Digital}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-electronica-digital-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Electronica Digital}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-electronica-digital-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    }
+  },
+  "tex_content_memory": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex",
+        "raw_latex_sha256": "9fb95435492db3944529f23d98900da5148940c1cedf0b869c2b6867d5252343",
+        "raw_latex_chars": 1781,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Electronica Digital}\n\\def\\documentsubtitle {Reporte integral - laboratorio-de-electronica-digital-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Electronica Digital}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de electronica digital.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-electronica-digital-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de electronica digital.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de electronica digital.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia laboratorio de electronica digital.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia laboratorio de electronica digital.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      },
+      "reporte": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex",
+        "raw_latex_sha256": "00f372dcd241e83b72ec3f45a16d797c05bb914cf193db75d4a30145461dd3bd",
+        "raw_latex_chars": 1564,
+        "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Electronica Digital}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-electronica-digital-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Electronica Digital}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-electronica-digital-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex",
+      "raw_latex_sha256": "00f372dcd241e83b72ec3f45a16d797c05bb914cf193db75d4a30145461dd3bd",
+      "raw_latex_chars": 1564,
+      "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Laboratorio De Electronica Digital}\n\\def\\documentsubtitle {Actividad 1 - laboratorio-de-electronica-digital-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Laboratorio De Electronica Digital}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{laboratorio-de-electronica-digital-imtc}\n\n\\end{document}\n",
+      "functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "bibliography"
+        ]
+      },
+      "paragraph_map": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "section",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Actividad 1",
+          "latex": "\\section{Actividad 1}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+          "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\subsection{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Incluir evidencias, analisis y referencias.",
+          "latex": "Incluir evidencias, analisis y referencias.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Cierre",
+          "latex": "\\subsection{Cierre}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Registrar resultados, limitaciones y mejoras.",
+          "latex": "Registrar resultados, limitaciones y mejoras.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+        }
+      ],
+      "content_blocks": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "section",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Actividad 1",
+          "latex": "\\section{Actividad 1}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+          "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\subsection{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Incluir evidencias, analisis y referencias.",
+          "latex": "Incluir evidencias, analisis y referencias.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Cierre",
+          "latex": "\\subsection{Cierre}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Registrar resultados, limitaciones y mejoras.",
+          "latex": "Registrar resultados, limitaciones y mejoras.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/reporte-laboratorio-de-electronica-digital-imtc-Actividad-1.tex"
+        }
+      ],
+      "citation_map": {},
+      "all_cited_keys": [],
+      "missing_bibliography_keys": []
+    },
+    "bibliography_sources": {
+      "programa-laboratorio-de-electronica-digital-imtc": {
+        "key": "programa-laboratorio-de-electronica-digital-imtc",
+        "source_type": "bibtex",
+        "source_path": "UANL/ingenieria-en-mecatronica/laboratorio-de-electronica-digital-imtc/laboratorio-de-electronica-digital-imtc.bib",
+        "entry_type": "misc",
+        "title": "Programa analitico de laboratorio-de-electronica-digital-imtc",
+        "author": "UANL",
+        "year": "2026",
+        "url": "https://www.uanl.mx/",
+        "note": "Actualizar con la referencia oficial del curso",
+        "raw_entry": "@misc{programa-laboratorio-de-electronica-digital-imtc,\n  author = {UANL},\n  title = {Programa analitico de laboratorio-de-electronica-digital-imtc},\n  year = {2026},\n  note = {Actualizar con la referencia oficial del curso},\n  url = {https://www.uanl.mx/}\n}"
+      }
+    }
+  },
+  "locked_sections": [],
+  "compression": {
+    "method": "union-dedupe",
+    "lossless": true
+  },
+  "schema_version": 3
+}

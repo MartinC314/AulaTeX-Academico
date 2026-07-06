@@ -1,0 +1,2226 @@
+{
+  "summary": [
+    "Nodo inicializado con canon local para Actividad 1 de IMTC.",
+    "Se conserva todo lo verificable del contexto local sin recortes.",
+    "Se agrega estructura editorial minima reconstruible desde plantilla LaTeX y programa analitico.",
+    "Se mantiene alerta heredada: en ciclo previo hubo salida no parseable.",
+    "No hay fuentes externas nuevas; solo activos locales del curso.",
+    "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+    "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+    "Salida sin JSON parseable desde Codex para Actividad 1",
+    "Salida sin JSON parseable desde Auto (model-router) para Actividad 1"
+  ],
+  "identity_rules": [
+    "Usar identidad institucional UANL en portada y metadatos.",
+    "Mantener adscripcion a Ingenieria en Mecatronica y FIME.",
+    "Nombrar asignatura como Liderazgo Emprendimiento E Innovacion.",
+    "Conservar codigo de curso IMTC en campos academicos.",
+    "Redactar con tono academico tecnico y foco formativo.",
+    "Marcar supuestos cuando falte dato docente u oficial.",
+    "Fuente provisional: Claude Foundry desde Actividad 1",
+    "Fuente provisional: GPT-Pro desde Actividad 1",
+    "Fuente provisional: Codex desde Actividad 1",
+    "Fuente provisional: Auto (model-router) desde Actividad 1",
+    "Conservar autor canonico Martin Jonathan de la Cruz."
+  ],
+  "structure_rules": [
+    "Conservar secciones base: Actividad 1, Desarrollo y Cierre.",
+    "Alinear objetivo de actividad con programa analitico del curso.",
+    "Incluir consigna tecnica explicita al inicio de la actividad.",
+    "Cerrar con resultados, limitaciones y mejoras accionables.",
+    "Mantener portada con tabla de autor y datos institucionales.",
+    "Evitar eliminar bloques plantilla reutilizables del nodo."
+  ],
+  "activity_rules": [
+    "Documentar y resolver el reto academico semanal.",
+    "Incluir evidencias tecnicas en el Desarrollo.",
+    "Agregar analisis con criterio de ingenieria en mecatronica.",
+    "Sustentar afirmaciones con bibliografia local disponible.",
+    "Registrar brechas detectadas y plan de mejora en Cierre.",
+    "Si falta evidencia, declararlo como supuesto pendiente."
+  ],
+  "quality_gates": [
+    "Validar JSON parseable en cada ciclo de memoria.",
+    "Verificar coherencia entre actividad y programa analitico.",
+    "Comprobar existencia de citas en archivo .bib local.",
+    "Revisar que conclusiones tengan enfoque de mecatronica.",
+    "No propagar contenido no estructurado sin normalizacion previa.",
+    "Confirmar que no se inventen fuentes ni datos docentes.",
+    "Revisar respuesta no estructurada antes de aplicar aguas abajo."
+  ],
+  "latex_rules": [
+    "Mantener clase article con opciones spanish, letterpaper y oneside.",
+    "Preservar definiciones \\def de metadatos institucionales del curso.",
+    "Usar \\input{template} como dependencia editorial comun.",
+    "Mantener secuencia \\templatePortrait y \\templatePagecfg.",
+    "Conservar \\onehalfspacing para legibilidad academica.",
+    "Usar \\bibliographystyle{natnumurl} y bibliografia del curso.",
+    "No duplicar bloques TeX identicos; deduplicar por union."
+  ],
+  "bibliography_rules": [
+    "Usar archivo liderazgo-emprendimiento-e-innovacion-imtc.bib como fuente primaria.",
+    "Citar programa-liderazgo-emprendimiento-e-innovacion-imtc cuando aplique alineacion curricular.",
+    "No agregar referencias no verificadas localmente.",
+    "Marcar como pendiente la actualizacion de referencia oficial del curso.",
+    "Mantener consistencia entre citas en texto y entradas .bib."
+  ],
+  "propagation_hints": [
+    "Propagacion local: reutilizar este canon en futuras actividades IMTC del mismo nodo.",
+    "Priorizar union-dedupe para evitar perdida de memoria util.",
+    "Conservar advertencia historica de normalizacion JSON como control preventivo.",
+    "Extender grafo solo con evidencia documental local verificable.",
+    "Cuando aparezca nueva actividad, heredar estructura y ajustar solo contenido tematico.",
+    "Ciclo 1 necesita normalizacion manual si se reutiliza.",
+    "Ciclo 2 necesita normalizacion manual si se reutiliza."
+  ],
+  "open_questions": [
+    "Definir nombre oficial de la figura docente.",
+    "Actualizar referencia oficial del programa analitico en .bib.",
+    "Confirmar matricula final del alumno en formato institucional.",
+    "Verificar si Actividad 1 requiere rubrica especifica adicional.",
+    "Confirmar si hay formato obligatorio de evidencias tecnicas."
+  ],
+  "artifact_name": "reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1",
+  "sources": [
+    "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/actividad-1",
+    "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/programa-analitico-liderazgo-emprendimiento-e-innovacion-imtc.md",
+    "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/liderazgo-emprendimiento-e-innovacion-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex",
+    "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+  ],
+  "artifact_types": [
+    "reporte"
+  ],
+  "supported_artifact_types": [],
+  "source_documents": [
+    "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/programa-analitico-liderazgo-emprendimiento-e-innovacion-imtc.md",
+    "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/liderazgo-emprendimiento-e-innovacion-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex",
+    "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+  ],
+  "source_fragments": [
+    "Objetivo: Documentar el avance academico y tecnico de la materia liderazgo emprendimiento e innovacion.",
+    "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+  ],
+  "concepts": [
+    "Programa analitico de liderazgo-emprendimiento-e-innovacion-imtc :: fuente=UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/liderazgo-emprendimiento-e-innovacion-imtc.bib"
+  ],
+  "section_titles": [
+    "Introduccion",
+    "Desarrollo",
+    "Conclusiones",
+    "Actividad 1"
+  ],
+  "citations": [],
+  "bibliography_index": [
+    "programa-liderazgo-emprendimiento-e-innovacion-imtc :: Programa analitico de liderazgo-emprendimiento-e-innovacion-imtc :: fuente=UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/liderazgo-emprendimiento-e-innovacion-imtc.bib"
+  ],
+  "node_metadata": {
+    "scope_key": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/actividad-1",
+    "level": "actividad",
+    "label": "Actividad 1",
+    "relative_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc",
+    "institution": "UANL",
+    "career": "ingenieria-en-mecatronica",
+    "subject": "liderazgo-emprendimiento-e-innovacion-imtc",
+    "activity": "Actividad 1",
+    "parent_key": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc"
+  },
+  "curricular_context": {
+    "institutional_frame": "",
+    "purpose": "",
+    "work_axes": [],
+    "source_fragments": [],
+    "coursename": "Liderazgo Emprendimiento E Innovacion",
+    "coursecode": "IMTC",
+    "documentsubject": "Ingenieria en Mecatronica",
+    "documenttitle": "Liderazgo Emprendimiento E Innovacion",
+    "documentsubtitle": "Reporte integral - liderazgo-emprendimiento-e-innovacion-imtc"
+  },
+  "artifact_templates": {},
+  "editorial_dna": {
+    "identity": {
+      "tone": [
+        "Academico",
+        "Tecnico",
+        "Claro",
+        "Accionable"
+      ],
+      "institutional": [
+        "Universidad Autonoma de Nuevo Leon",
+        "Facultad de Ingenieria Mecanica y Electrica",
+        "Programa de Ingenieria en Mecatronica"
+      ],
+      "curricular": [
+        "Curso IMTC",
+        "Alineacion a programa analitico",
+        "Actividad semanal con evidencia"
+      ],
+      "node_metadata": {
+        "scope_key": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/actividad-1",
+        "level": "actividad",
+        "label": "Actividad 1",
+        "relative_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc",
+        "institution": "UANL",
+        "career": "ingenieria-en-mecatronica",
+        "subject": "liderazgo-emprendimiento-e-innovacion-imtc",
+        "activity": "Actividad 1",
+        "parent_key": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc"
+      },
+      "curricular_context": {
+        "institutional_frame": "",
+        "purpose": "",
+        "work_axes": [],
+        "source_fragments": [],
+        "coursename": "Liderazgo Emprendimiento E Innovacion",
+        "coursecode": "IMTC",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "documenttitle": "Liderazgo Emprendimiento E Innovacion",
+        "documentsubtitle": "Reporte integral - liderazgo-emprendimiento-e-innovacion-imtc"
+      },
+      "identity_rules": [
+        "Usar identidad institucional UANL en portada y metadatos.",
+        "Mantener adscripcion a Ingenieria en Mecatronica y FIME.",
+        "Nombrar asignatura como Liderazgo Emprendimiento E Innovacion.",
+        "Conservar codigo de curso IMTC en campos academicos.",
+        "Redactar con tono academico tecnico y foco formativo.",
+        "Marcar supuestos cuando falte dato docente u oficial.",
+        "Fuente provisional: Claude Foundry desde Actividad 1",
+        "Fuente provisional: GPT-Pro desde Actividad 1",
+        "Fuente provisional: Codex desde Actividad 1",
+        "Fuente provisional: Auto (model-router) desde Actividad 1",
+        "Conservar autor canonico Martin Jonathan de la Cruz."
+      ]
+    },
+    "essence": [
+      "Actividad 1",
+      "Consigna tecnica",
+      "Evidencias tecnicas",
+      "Analisis academico",
+      "Cierre y mejora",
+      "Programa analitico IMTC",
+      "UANL",
+      "Ingenieria en Mecatronica",
+      "Nodo inicializado con canon local para Actividad 1 de IMTC",
+      "Se conserva todo lo verificable del contexto local sin recortes",
+      "Se agrega estructura editorial minima reconstruible desde plantilla LaTeX y programa analitico",
+      "No hay fuentes externas nuevas; solo activos locales del curso",
+      "Usar identidad institucional UANL en portada y metadatos",
+      "Mantener adscripcion a Ingenieria en Mecatronica y FIME",
+      "Nombrar asignatura como Liderazgo Emprendimiento E Innovacion",
+      "Conservar codigo de curso IMTC en campos academicos",
+      "Redactar con tono academico tecnico y foco formativo",
+      "Marcar supuestos cuando falte dato docente u oficial",
+      "Conservar secciones base: Actividad 1, Desarrollo y Cierre",
+      "Alinear objetivo de actividad con programa analitico del curso",
+      "Documentar y resolver el reto academico semanal.",
+      "Incluir evidencias tecnicas en el Desarrollo.",
+      "Agregar analisis con criterio de ingenieria en mecatronica.",
+      "Sustentar afirmaciones con bibliografia local disponible."
+    ],
+    "structure": {
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones",
+        "Actividad 1"
+      ],
+      "artifact_name": "reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1",
+      "artifact_types": [
+        "reporte"
+      ],
+      "tex_functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "bibliography"
+        ]
+      }
+    },
+    "reason_for_being": [
+      "Conservar secciones base: Actividad 1, Desarrollo y Cierre.",
+      "Alinear objetivo de actividad con programa analitico del curso.",
+      "Incluir consigna tecnica explicita al inicio de la actividad.",
+      "Cerrar con resultados, limitaciones y mejoras accionables.",
+      "Mantener portada con tabla de autor y datos institucionales.",
+      "Evitar eliminar bloques plantilla reutilizables del nodo.",
+      "Documentar y resolver el reto academico semanal.",
+      "Incluir evidencias tecnicas en el Desarrollo.",
+      "Agregar analisis con criterio de ingenieria en mecatronica.",
+      "Sustentar afirmaciones con bibliografia local disponible.",
+      "Registrar brechas detectadas y plan de mejora en Cierre.",
+      "Si falta evidencia, declararlo como supuesto pendiente.",
+      "Introduccion",
+      "Desarrollo",
+      "Conclusiones",
+      "Actividad 1"
+    ],
+    "style_markers": [
+      "Titulos directos por actividad.",
+      "Consigna tecnica explicita.",
+      "Desarrollo con evidencias y analisis.",
+      "Cierre con resultados, limites y mejoras.",
+      "Metadatos institucionales completos en portada.",
+      "Usar identidad institucional UANL en portada y metadatos.",
+      "Mantener adscripcion a Ingenieria en Mecatronica y FIME.",
+      "Nombrar asignatura como Liderazgo Emprendimiento E Innovacion.",
+      "Conservar codigo de curso IMTC en campos academicos.",
+      "Redactar con tono academico tecnico y foco formativo.",
+      "Marcar supuestos cuando falte dato docente u oficial.",
+      "Mantener clase article con opciones spanish, letterpaper y oneside.",
+      "Preservar definiciones \\def de metadatos institucionales del curso.",
+      "Usar \\input{template} como dependencia editorial comun.",
+      "Mantener secuencia \\templatePortrait y \\templatePagecfg.",
+      "Conservar \\onehalfspacing para legibilidad academica.",
+      "Usar \\bibliographystyle{natnumurl} y bibliografia del curso.",
+      "No duplicar bloques TeX identicos; deduplicar por union.",
+      "Conservar autor canonico Martin Jonathan de la Cruz."
+    ],
+    "argumentative_patterns": [
+      "Plantear reto academico y objetivo.",
+      "Presentar evidencia tecnica observada.",
+      "Analizar implicaciones para mecatronica.",
+      "Concluir con mejora continua y siguientes pasos.",
+      "Conservar secciones base: Actividad 1, Desarrollo y Cierre.",
+      "Alinear objetivo de actividad con programa analitico del curso.",
+      "Incluir consigna tecnica explicita al inicio de la actividad.",
+      "Cerrar con resultados, limitaciones y mejoras accionables.",
+      "Mantener portada con tabla de autor y datos institucionales.",
+      "Evitar eliminar bloques plantilla reutilizables del nodo.",
+      "Documentar y resolver el reto academico semanal.",
+      "Incluir evidencias tecnicas en el Desarrollo.",
+      "Agregar analisis con criterio de ingenieria en mecatronica.",
+      "Sustentar afirmaciones con bibliografia local disponible.",
+      "Registrar brechas detectadas y plan de mejora en Cierre.",
+      "Si falta evidencia, declararlo como supuesto pendiente.",
+      "Verificar coherencia entre actividad y programa analitico.",
+      "Comprobar existencia de citas en archivo .bib local.",
+      "Revisar que conclusiones tengan enfoque de mecatronica.",
+      "Confirmar que no se inventen fuentes ni datos docentes."
+    ],
+    "reinforcement_log": [
+      "Se consolido canon local desde archivos verificables del curso.",
+      "Se preservo memoria heredada y control de calidad JSON.",
+      "Se reforzo patron argumentativo actividad-desarrollo-cierre.",
+      "Se incorporo grafo minimo con relaciones justificadas por evidencia local.",
+      "Supuesto marcado: datos docentes y referencia oficial aun pendientes.",
+      "Refuerzo editorial aplicado sobre 58 conceptos y 0 citas.",
+      "Nodo inicializado con canon local para Actividad 1 de IMTC.",
+      "Se conserva todo lo verificable del contexto local sin recortes.",
+      "ADN sintetizado con 59 conceptos, 1 citas y 17 relaciones.",
+      "Memoria de redacción preservada en 7 bloques.",
+      "Refuerzo editorial aplicado sobre 1 conceptos y 0 citas.",
+      "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+      "ADN sintetizado con 60 conceptos, 1 citas y 17 relaciones.",
+      "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+      "Salida sin JSON parseable desde Codex para Actividad 1",
+      "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+      "Refuerzo editorial aplicado sobre 7 conceptos y 0 citas.",
+      "ADN sintetizado con 61 conceptos, 1 citas y 25 relaciones."
+    ],
+    "knowledge_graph": {
+      "concepts": [
+        "Actividad 1",
+        "Consigna tecnica",
+        "Evidencias tecnicas",
+        "Analisis academico",
+        "Cierre y mejora",
+        "Programa analitico IMTC",
+        "UANL",
+        "Ingenieria en Mecatronica",
+        "Nodo inicializado con canon local para Actividad 1 de IMTC",
+        "Se conserva todo lo verificable del contexto local sin recortes",
+        "Se agrega estructura editorial minima reconstruible desde plantilla LaTeX y programa analitico",
+        "No hay fuentes externas nuevas; solo activos locales del curso",
+        "Usar identidad institucional UANL en portada y metadatos",
+        "Mantener adscripcion a Ingenieria en Mecatronica y FIME",
+        "Nombrar asignatura como Liderazgo Emprendimiento E Innovacion",
+        "Conservar codigo de curso IMTC en campos academicos",
+        "Redactar con tono academico tecnico y foco formativo",
+        "Marcar supuestos cuando falte dato docente u oficial",
+        "Conservar secciones base: Actividad 1, Desarrollo y Cierre",
+        "Alinear objetivo de actividad con programa analitico del curso",
+        "Incluir consigna tecnica explicita al inicio de la actividad",
+        "Cerrar con resultados, limitaciones y mejoras accionables",
+        "Mantener portada con tabla de autor y datos institucionales",
+        "Evitar eliminar bloques plantilla reutilizables del nodo",
+        "Documentar y resolver el reto academico semanal",
+        "Incluir evidencias tecnicas en el Desarrollo",
+        "Agregar analisis con criterio de ingenieria en mecatronica",
+        "Sustentar afirmaciones con bibliografia local disponible",
+        "Registrar brechas detectadas y plan de mejora en Cierre",
+        "Si falta evidencia, declararlo como supuesto pendiente",
+        "Verificar coherencia entre actividad y programa analitico",
+        "Comprobar existencia de citas en archivo .bib local",
+        "Revisar que conclusiones tengan enfoque de mecatronica",
+        "Confirmar que no se inventen fuentes ni datos docentes",
+        "Definir nombre oficial de la figura docente",
+        "Actualizar referencia oficial del programa analitico en .bib",
+        "Confirmar matricula final del alumno en formato institucional",
+        "Verificar si Actividad 1 requiere rubrica especifica adicional",
+        "Confirmar si hay formato obligatorio de evidencias tecnicas",
+        "Resolver actividades con trazabilidad academica e institucional",
+        "Integrar liderazgo, emprendimiento e innovacion con criterio ingenieril",
+        "Sostener cada entrega en estructura reproducible y citable",
+        "Estandarizar reportes de actividad IMTC en LaTeX",
+        "Preservar memoria editorial sin regresion entre ciclos",
+        "Garantizar calidad formal y coherencia curricular",
+        "Titulos directos por actividad",
+        "Consigna tecnica explicita",
+        "Desarrollo con evidencias y analisis",
+        "Cierre con resultados, limites y mejoras",
+        "Metadatos institucionales completos en portada",
+        "Plantear reto academico y objetivo",
+        "Presentar evidencia tecnica observada",
+        "Analizar implicaciones para mecatronica",
+        "Concluir con mejora continua y siguientes pasos",
+        "programa-liderazgo-emprendimiento-e-innovacion-imtc",
+        "programa-analitico-liderazgo-emprendimiento-e-innovacion-imtc.md",
+        "reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex",
+        "liderazgo-emprendimiento-e-innovacion-imtc.bib",
+        "Programa analitico de liderazgo-emprendimiento-e-innovacion-imtc :: fuente=UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/liderazgo-emprendimiento-e-innovacion-imtc.bib",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo",
+        "Conservar autor canonico Martin Jonathan de la Cruz"
+      ],
+      "citations": [
+        "programa-liderazgo-emprendimiento-e-innovacion-imtc"
+      ],
+      "evidence": [
+        "programa-analitico-liderazgo-emprendimiento-e-innovacion-imtc.md",
+        "reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex",
+        "liderazgo-emprendimiento-e-innovacion-imtc.bib",
+        "Nodo inicializado con canon local para Actividad 1 de IMTC.",
+        "Se conserva todo lo verificable del contexto local sin recortes.",
+        "Se agrega estructura editorial minima reconstruible desde plantilla LaTeX y programa analitico.",
+        "Se mantiene alerta heredada: en ciclo previo hubo salida no parseable.",
+        "No hay fuentes externas nuevas; solo activos locales del curso.",
+        "Validar JSON parseable en cada ciclo de memoria.",
+        "Verificar coherencia entre actividad y programa analitico.",
+        "Comprobar existencia de citas en archivo .bib local.",
+        "Revisar que conclusiones tengan enfoque de mecatronica.",
+        "No propagar contenido no estructurado sin normalizacion previa.",
+        "Confirmar que no se inventen fuentes ni datos docentes.",
+        "programa-liderazgo-emprendimiento-e-innovacion-imtc :: Programa analitico de liderazgo-emprendimiento-e-innovacion-imtc :: fuente=UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/liderazgo-emprendimiento-e-innovacion-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/programa-analitico-liderazgo-emprendimiento-e-innovacion-imtc.md",
+        "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/liderazgo-emprendimiento-e-innovacion-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex",
+        "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex",
+        "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+        "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+        "Salida sin JSON parseable desde Codex para Actividad 1",
+        "Salida sin JSON parseable desde Auto (model-router) para Actividad 1"
+      ],
+      "relations": [
+        {
+          "source": "Actividad 1",
+          "target": "Programa analitico IMTC",
+          "kind": "depends_on",
+          "weight": 1,
+          "justification": "El checklist exige alineacion de objetivos por actividad.",
+          "evidence": []
+        },
+        {
+          "source": "Desarrollo",
+          "target": "Evidencias tecnicas",
+          "kind": "depends_on",
+          "weight": 1,
+          "justification": "La plantilla solicita incluir evidencias y analisis.",
+          "evidence": []
+        },
+        {
+          "source": "Cierre y mejora",
+          "target": "Analisis academico",
+          "kind": "develops",
+          "weight": 1,
+          "justification": "El cierre registra resultados, limitaciones y mejoras.",
+          "evidence": []
+        },
+        {
+          "source": "Ingenieria en Mecatronica",
+          "target": "Conclusiones",
+          "kind": "supports",
+          "weight": 1,
+          "justification": "El programa pide enfoque de mecatronica en conclusiones.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo inicializado con canon local para Actividad 1 de IMTC",
+          "target": "Se conserva todo lo verificable del contexto local sin recortes",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo inicializado con canon local para Actividad 1 de IMTC",
+          "target": "Se agrega estructura editorial minima reconstruible desde plantilla LaTeX y programa analitico",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva todo lo verificable del contexto local sin recortes",
+          "target": "Se agrega estructura editorial minima reconstruible desde plantilla LaTeX y programa analitico",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva todo lo verificable del contexto local sin recortes",
+          "target": "No hay fuentes externas nuevas; solo activos locales del curso",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se agrega estructura editorial minima reconstruible desde plantilla LaTeX y programa analitico",
+          "target": "No hay fuentes externas nuevas; solo activos locales del curso",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se agrega estructura editorial minima reconstruible desde plantilla LaTeX y programa analitico",
+          "target": "Usar identidad institucional UANL en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "No hay fuentes externas nuevas; solo activos locales del curso",
+          "target": "Usar identidad institucional UANL en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "No hay fuentes externas nuevas; solo activos locales del curso",
+          "target": "Mantener adscripcion a Ingenieria en Mecatronica y FIME",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar identidad institucional UANL en portada y metadatos",
+          "target": "Mantener adscripcion a Ingenieria en Mecatronica y FIME",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Actividad 1",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0001"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Consigna tecnica",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0002"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Desarrollo",
+          "kind": "organizes",
+          "weight": 2,
+          "evidence": [
+            "b0003",
+            "b0004"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Cierre",
+          "kind": "organizes",
+          "weight": 3,
+          "evidence": [
+            "b0005",
+            "b0006",
+            "b0007"
+          ]
+        },
+        {
+          "source": "Usar identidad institucional UANL en portada y metadatos",
+          "target": "Nombrar asignatura como Liderazgo Emprendimiento E Innovacion",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener adscripcion a Ingenieria en Mecatronica y FIME",
+          "target": "Nombrar asignatura como Liderazgo Emprendimiento E Innovacion",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener adscripcion a Ingenieria en Mecatronica y FIME",
+          "target": "Conservar codigo de curso IMTC en campos academicos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nombrar asignatura como Liderazgo Emprendimiento E Innovacion",
+          "target": "Conservar codigo de curso IMTC en campos academicos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nombrar asignatura como Liderazgo Emprendimiento E Innovacion",
+          "target": "Redactar con tono academico tecnico y foco formativo",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Conservar codigo de curso IMTC en campos academicos",
+          "target": "Redactar con tono academico tecnico y foco formativo",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Conservar codigo de curso IMTC en campos academicos",
+          "target": "Marcar supuestos cuando falte dato docente u oficial",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Redactar con tono academico tecnico y foco formativo",
+          "target": "Marcar supuestos cuando falte dato docente u oficial",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        }
+      ],
+      "concept_weights": {
+        "Nodo inicializado con canon local para Actividad 1 de IMTC": 1,
+        "Se conserva todo lo verificable del contexto local sin recortes": 1,
+        "Se agrega estructura editorial minima reconstruible desde plantilla LaTeX y programa analitico": 1,
+        "No hay fuentes externas nuevas; solo activos locales del curso": 1,
+        "Usar identidad institucional UANL en portada y metadatos": 2,
+        "Mantener adscripcion a Ingenieria en Mecatronica y FIME": 2,
+        "Nombrar asignatura como Liderazgo Emprendimiento E Innovacion": 2,
+        "Conservar codigo de curso IMTC en campos academicos": 2,
+        "Redactar con tono academico tecnico y foco formativo": 2,
+        "Marcar supuestos cuando falte dato docente u oficial": 2,
+        "Conservar secciones base: Actividad 1, Desarrollo y Cierre": 1,
+        "Alinear objetivo de actividad con programa analitico del curso": 1,
+        "Incluir consigna tecnica explicita al inicio de la actividad": 1,
+        "Cerrar con resultados, limitaciones y mejoras accionables": 1,
+        "Mantener portada con tabla de autor y datos institucionales": 1,
+        "Evitar eliminar bloques plantilla reutilizables del nodo": 1,
+        "Documentar y resolver el reto academico semanal": 1,
+        "Incluir evidencias tecnicas en el Desarrollo": 1,
+        "Agregar analisis con criterio de ingenieria en mecatronica": 1,
+        "Sustentar afirmaciones con bibliografia local disponible": 1,
+        "Registrar brechas detectadas y plan de mejora en Cierre": 1,
+        "Si falta evidencia, declararlo como supuesto pendiente": 1,
+        "Verificar coherencia entre actividad y programa analitico": 1,
+        "Comprobar existencia de citas en archivo .bib local": 1,
+        "Revisar que conclusiones tengan enfoque de mecatronica": 1,
+        "Confirmar que no se inventen fuentes ni datos docentes": 1,
+        "Definir nombre oficial de la figura docente": 1,
+        "Actualizar referencia oficial del programa analitico en .bib": 1,
+        "Confirmar matricula final del alumno en formato institucional": 1,
+        "Verificar si Actividad 1 requiere rubrica especifica adicional": 1,
+        "Confirmar si hay formato obligatorio de evidencias tecnicas": 1,
+        "Resolver actividades con trazabilidad academica e institucional": 1,
+        "Integrar liderazgo, emprendimiento e innovacion con criterio ingenieril": 1,
+        "Sostener cada entrega en estructura reproducible y citable": 1,
+        "Estandarizar reportes de actividad IMTC en LaTeX": 1,
+        "Preservar memoria editorial sin regresion entre ciclos": 1,
+        "Garantizar calidad formal y coherencia curricular": 1,
+        "Titulos directos por actividad": 1,
+        "Consigna tecnica explicita": 1,
+        "Desarrollo con evidencias y analisis": 1,
+        "Cierre con resultados, limites y mejoras": 1,
+        "Metadatos institucionales completos en portada": 1,
+        "Plantear reto academico y objetivo": 1,
+        "Presentar evidencia tecnica observada": 1,
+        "Analizar implicaciones para mecatronica": 1,
+        "Concluir con mejora continua y siguientes pasos": 1,
+        "Actividad 1": 1,
+        "Consigna tecnica": 1,
+        "Evidencias tecnicas": 1,
+        "Analisis academico": 1,
+        "Cierre y mejora": 1,
+        "Programa analitico IMTC": 1,
+        "UANL": 1,
+        "Ingenieria en Mecatronica": 1,
+        "programa-liderazgo-emprendimiento-e-innovacion-imtc": 1,
+        "programa-analitico-liderazgo-emprendimiento-e-innovacion-imtc.md": 1,
+        "reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex": 1,
+        "liderazgo-emprendimiento-e-innovacion-imtc.bib": 1,
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo": 7,
+        "Conservar autor canonico Martin Jonathan de la Cruz": 1
+      },
+      "citation_weights": {}
+    },
+    "writing_memory": [
+      {
+        "id": "b0001",
+        "order": 1,
+        "kind": "section",
+        "section": "Actividad 1",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Actividad 1",
+        "latex": "\\section{Actividad 1}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0002",
+        "order": 2,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+        "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0003",
+        "order": 3,
+        "kind": "subsection",
+        "section": "Actividad 1",
+        "subsection": "Desarrollo",
+        "paragraph_heading": "",
+        "text": "Desarrollo",
+        "latex": "\\subsection{Desarrollo}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0004",
+        "order": 4,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Desarrollo",
+        "paragraph_heading": "",
+        "text": "Incluir evidencias, analisis y referencias.",
+        "latex": "Incluir evidencias, analisis y referencias.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0005",
+        "order": 5,
+        "kind": "subsection",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "Cierre",
+        "latex": "\\subsection{Cierre}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0006",
+        "order": 6,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "Registrar resultados, limitaciones y mejoras.",
+        "latex": "Registrar resultados, limitaciones y mejoras.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0007",
+        "order": 7,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "natnumurl",
+        "latex": "\\bibliographystyle{natnumurl}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+      }
+    ],
+    "reconstructable_source": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Liderazgo Emprendimiento E Innovacion}\n\\def\\documentsubtitle {Actividad 1 - liderazgo-emprendimiento-e-innovacion-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Liderazgo Emprendimiento E Innovacion}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{liderazgo-emprendimiento-e-innovacion-imtc}\n\n\\end{document}\n"
+  },
+  "tex_blueprint": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex",
+        "documenttitle": "Liderazgo Emprendimiento E Innovacion",
+        "documentsubtitle": "Reporte integral - liderazgo-emprendimiento-e-innovacion-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Liderazgo Emprendimiento E Innovacion",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia liderazgo emprendimiento e innovacion.",
+        "section_titles": [
+          "Introduccion",
+          "Desarrollo",
+          "Conclusiones"
+        ],
+        "subsection_titles": [],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [
+          "Objetivo: Documentar el avance academico y tecnico de la materia liderazgo emprendimiento e innovacion.",
+          "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+        ],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex",
+          "raw_latex_sha256": "74a642199f71e66337cc7676181dc63d0394be01752962963e54cacc4814135b",
+          "raw_latex_chars": 1796,
+          "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Liderazgo Emprendimiento E Innovacion}\n\\def\\documentsubtitle {Reporte integral - liderazgo-emprendimiento-e-innovacion-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Liderazgo Emprendimiento E Innovacion}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia liderazgo emprendimiento e innovacion.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{liderazgo-emprendimiento-e-innovacion-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document",
+              "abstractd"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "templateIndex",
+              "templateFinalcfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia liderazgo emprendimiento e innovacion.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia liderazgo emprendimiento e innovacion.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia liderazgo emprendimiento e innovacion.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia liderazgo emprendimiento e innovacion.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      },
+      "reporte": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex",
+        "documenttitle": "Liderazgo Emprendimiento E Innovacion",
+        "documentsubtitle": "Actividad 1 - liderazgo-emprendimiento-e-innovacion-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Liderazgo Emprendimiento E Innovacion",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "",
+        "section_titles": [
+          "Actividad 1"
+        ],
+        "subsection_titles": [
+          "Desarrollo",
+          "Cierre"
+        ],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex",
+          "raw_latex_sha256": "66674291895e459b1e8f24518ef18d52d0627db9ad245e12daae44cc17b930ba",
+          "raw_latex_chars": 1576,
+          "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Liderazgo Emprendimiento E Innovacion}\n\\def\\documentsubtitle {Actividad 1 - liderazgo-emprendimiento-e-innovacion-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Liderazgo Emprendimiento E Innovacion}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{liderazgo-emprendimiento-e-innovacion-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "section",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Actividad 1",
+              "latex": "\\section{Actividad 1}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+              "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\subsection{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Incluir evidencias, analisis y referencias.",
+              "latex": "Incluir evidencias, analisis y referencias.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Cierre",
+              "latex": "\\subsection{Cierre}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Registrar resultados, limitaciones y mejoras.",
+              "latex": "Registrar resultados, limitaciones y mejoras.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "section",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Actividad 1",
+              "latex": "\\section{Actividad 1}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+              "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\subsection{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Incluir evidencias, analisis y referencias.",
+              "latex": "Incluir evidencias, analisis y referencias.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Cierre",
+              "latex": "\\subsection{Cierre}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Registrar resultados, limitaciones y mejoras.",
+              "latex": "Registrar resultados, limitaciones y mejoras.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex",
+      "documenttitle": "Liderazgo Emprendimiento E Innovacion",
+      "documentsubtitle": "Actividad 1 - liderazgo-emprendimiento-e-innovacion-imtc",
+      "documentsubject": "Ingenieria en Mecatronica",
+      "coursename": "Liderazgo Emprendimiento E Innovacion",
+      "coursecode": "IMTC",
+      "documentauthor": "Martin Jonathan de la Cruz",
+      "abstract": "",
+      "section_titles": [
+        "Actividad 1"
+      ],
+      "subsection_titles": [
+        "Desarrollo",
+        "Cierre"
+      ],
+      "cited_keys": [],
+      "concepts": [],
+      "source_fragments": [],
+      "content_memory": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex",
+        "raw_latex_sha256": "66674291895e459b1e8f24518ef18d52d0627db9ad245e12daae44cc17b930ba",
+        "raw_latex_chars": 1576,
+        "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Liderazgo Emprendimiento E Innovacion}\n\\def\\documentsubtitle {Actividad 1 - liderazgo-emprendimiento-e-innovacion-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Liderazgo Emprendimiento E Innovacion}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{liderazgo-emprendimiento-e-innovacion-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    }
+  },
+  "tex_content_memory": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex",
+        "raw_latex_sha256": "74a642199f71e66337cc7676181dc63d0394be01752962963e54cacc4814135b",
+        "raw_latex_chars": 1796,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Liderazgo Emprendimiento E Innovacion}\n\\def\\documentsubtitle {Reporte integral - liderazgo-emprendimiento-e-innovacion-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Liderazgo Emprendimiento E Innovacion}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia liderazgo emprendimiento e innovacion.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{liderazgo-emprendimiento-e-innovacion-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia liderazgo emprendimiento e innovacion.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia liderazgo emprendimiento e innovacion.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia liderazgo emprendimiento e innovacion.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia liderazgo emprendimiento e innovacion.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      },
+      "reporte": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex",
+        "raw_latex_sha256": "66674291895e459b1e8f24518ef18d52d0627db9ad245e12daae44cc17b930ba",
+        "raw_latex_chars": 1576,
+        "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Liderazgo Emprendimiento E Innovacion}\n\\def\\documentsubtitle {Actividad 1 - liderazgo-emprendimiento-e-innovacion-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Liderazgo Emprendimiento E Innovacion}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{liderazgo-emprendimiento-e-innovacion-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex",
+      "raw_latex_sha256": "66674291895e459b1e8f24518ef18d52d0627db9ad245e12daae44cc17b930ba",
+      "raw_latex_chars": 1576,
+      "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Liderazgo Emprendimiento E Innovacion}\n\\def\\documentsubtitle {Actividad 1 - liderazgo-emprendimiento-e-innovacion-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Liderazgo Emprendimiento E Innovacion}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{liderazgo-emprendimiento-e-innovacion-imtc}\n\n\\end{document}\n",
+      "functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "bibliography"
+        ]
+      },
+      "paragraph_map": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "section",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Actividad 1",
+          "latex": "\\section{Actividad 1}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+          "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\subsection{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Incluir evidencias, analisis y referencias.",
+          "latex": "Incluir evidencias, analisis y referencias.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Cierre",
+          "latex": "\\subsection{Cierre}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Registrar resultados, limitaciones y mejoras.",
+          "latex": "Registrar resultados, limitaciones y mejoras.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+        }
+      ],
+      "content_blocks": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "section",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Actividad 1",
+          "latex": "\\section{Actividad 1}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+          "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\subsection{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Incluir evidencias, analisis y referencias.",
+          "latex": "Incluir evidencias, analisis y referencias.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Cierre",
+          "latex": "\\subsection{Cierre}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Registrar resultados, limitaciones y mejoras.",
+          "latex": "Registrar resultados, limitaciones y mejoras.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/reporte-liderazgo-emprendimiento-e-innovacion-imtc-Actividad-1.tex"
+        }
+      ],
+      "citation_map": {},
+      "all_cited_keys": [],
+      "missing_bibliography_keys": []
+    },
+    "bibliography_sources": {
+      "programa-liderazgo-emprendimiento-e-innovacion-imtc": {
+        "key": "programa-liderazgo-emprendimiento-e-innovacion-imtc",
+        "source_type": "bibtex",
+        "source_path": "UANL/ingenieria-en-mecatronica/liderazgo-emprendimiento-e-innovacion-imtc/liderazgo-emprendimiento-e-innovacion-imtc.bib",
+        "entry_type": "misc",
+        "title": "Programa analitico de liderazgo-emprendimiento-e-innovacion-imtc",
+        "author": "UANL",
+        "year": "2026",
+        "url": "https://www.uanl.mx/",
+        "note": "Actualizar con la referencia oficial del curso",
+        "raw_entry": "@misc{programa-liderazgo-emprendimiento-e-innovacion-imtc,\n  author = {UANL},\n  title = {Programa analitico de liderazgo-emprendimiento-e-innovacion-imtc},\n  year = {2026},\n  note = {Actualizar con la referencia oficial del curso},\n  url = {https://www.uanl.mx/}\n}"
+      }
+    }
+  },
+  "locked_sections": [],
+  "compression": {
+    "method": "union-dedupe",
+    "lossless": true
+  },
+  "schema_version": 3
+}

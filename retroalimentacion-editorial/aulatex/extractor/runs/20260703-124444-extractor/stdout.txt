@@ -1,0 +1,48 @@
+[1/5] Leyendo fuente(s): C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\referencias-derecho-a-la-seguridad-social
+      Fuentes cargadas: 1 | Páginas/bloques: 1
+      Tipos: md=1
+[2/5] Dividiendo corpus en fragmentos citables
+      Fragmentos: 1
+      Interpretación de planeación: verbos=desarrollar
+      Confianza parser local de planeación: 0.00
+      Conceptos extraídos desde planeación: 20
+      Perfil editorial detectado para materia: derecho-a-la-seguridad-social
+      Conceptos tras filtro heurístico por materia: 20
+      Total de conceptos a buscar: 20
+[4/5] Buscando citas con motor: tfidf
+      constitucional derecho: 1 cita(s) en 1 fuente(s)
+      control editorial: 0 cita(s) en 0 fuente(s)
+      derecho seguridad: 1 cita(s) en 1 fuente(s)
+      derecho seguridad social: 1 cita(s) en 1 fuente(s)
+      derecho unadm: 1 cita(s) en 1 fuente(s)
+      editorial verificable: 0 cita(s) en 0 fuente(s)
+      junio 2026: 0 cita(s) en 0 fuente(s)
+      licenciatura derecho: 1 cita(s) en 1 fuente(s)
+      licenciatura derecho unadm: 1 cita(s) en 1 fuente(s)
+      plantilla editorial: 0 cita(s) en 0 fuente(s)
+      plantilla editorial verificable: 0 cita(s) en 0 fuente(s)
+      relevantes recientes: 0 cita(s) en 0 fuente(s)
+      seguridad social: 1 cita(s) en 1 fuente(s)
+      seguridad social unadm: 1 cita(s) en 1 fuente(s)
+      social unadm: 1 cita(s) en 1 fuente(s)
+      social unadm junio: 1 cita(s) en 1 fuente(s)
+      trazabilidad control: 0 cita(s) en 0 fuente(s)
+      trazabilidad control editorial: 0 cita(s) en 0 fuente(s)
+      unadm junio: 0 cita(s) en 0 fuente(s)
+      unadm junio 2026: 0 cita(s) en 0 fuente(s)
+[5/5] Exportando fichas
+
+Listo. Archivos generados:
+- markdown: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\extractor-aulatex\fichas_conceptos.md
+- excel: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\extractor-aulatex\fichas_conceptos.xlsx
+- csv: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\extractor-aulatex\fichas_conceptos.csv
+- json: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\extractor-aulatex\fichas_conceptos.json
+- word: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\extractor-aulatex\fichas_conceptos.docx
+- planeacion: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\extractor-aulatex\resumen_planeacion.json
+- planeacion_local: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\extractor-aulatex\resumen_planeacion_local.json
+- planeacion_anthropic: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\extractor-aulatex\resumen_planeacion_anthropic.json
+- depuracion: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\extractor-aulatex\depuracion_conceptos.json
+- refinamiento: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\extractor-aulatex\refinamiento_fichas.json
+- conceptos: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\extractor-aulatex\conceptos_detectados.json
+- ideas: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\extractor-aulatex\ideas_detectadas.json
+- trazabilidad: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\extractor-aulatex\trazabilidad_fuentes.json

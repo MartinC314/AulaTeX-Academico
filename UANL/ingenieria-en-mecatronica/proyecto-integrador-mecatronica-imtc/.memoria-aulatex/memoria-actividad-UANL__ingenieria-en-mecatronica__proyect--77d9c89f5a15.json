@@ -1,0 +1,2458 @@
+{
+  "summary": [
+    "Nodo inicializado sin memoria tecnica previa de actividad.",
+    "Se conserva plantilla LaTeX local de Actividad 1 como base reconstruible.",
+    "Se fija alineacion obligatoria al programa analitico del curso IMTC.",
+    "Se registra dependencia bibliografica local en archivo .bib del curso.",
+    "Se hereda alerta institucional: en ciclo previo hubo salida no parseable; mantener JSON estricto.",
+    "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+    "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+    "Nodo consolidado sin cambios estructurales; se preserva memoria previa completa por ser mismo-nodo.",
+    "Se mantiene plantilla LaTeX reconstruible de Actividad 1 como base canonica local.",
+    "Se mantiene alineacion obligatoria al programa analitico IMTC con trazabilidad local.",
+    "Se mantiene dependencia bibliografica unica en proyecto-integrador-mecatronica-imtc.bib.",
+    "Se refuerza gate critico de salida JSON estricto por historial de salidas no parseables.",
+    "Supuesto vigente: faltan datos oficiales de figura docente y matricula final.",
+    "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+    "Nodo consolidado en ciclo 2 sin perdida de memoria.",
+    "Se preserva plantilla LaTeX reconstruible de Actividad 1 como base canonica local.",
+    "Se mantiene alerta critica por historial de salidas no parseables; salida JSON estricto obligatoria.",
+    "Se conserva registro de fuentes provisionales de generacion como metadato de trazabilidad [supuesto: no son fuentes academicas]."
+  ],
+  "identity_rules": [
+    "Escribir en espanol tecnico, claro y formal.",
+    "Mantener identidad institucional UANL y FIME en portada y metadatos.",
+    "Mantener enfoque disciplinar de Ingenieria en Mecatronica.",
+    "Conservar nombre de asignatura y codigo IMTC consistentes en todo el documento.",
+    "Declarar supuestos cuando falte dato docente u oficial.",
+    "Fuente provisional: Claude Foundry desde Actividad 1",
+    "Fuente provisional: GPT-Pro desde Actividad 1",
+    "Fuente provisional: Auto (model-router) desde Actividad 1",
+    "Distinguir fuentes academicas de fuentes operativas del sistema [supuesto].",
+    "Fuente operativa registrada: Claude Foundry en actividad 1.",
+    "Fuente operativa registrada: GPT-Pro en actividad 1.",
+    "Fuente operativa registrada: Auto (model-router) en actividad 1."
+  ],
+  "structure_rules": [
+    "Conservar estructura minima de actividad: Actividad, Desarrollo y Cierre.",
+    "Incluir consigna tecnica explicita al inicio de la actividad.",
+    "Asegurar cierre con resultados, limitaciones y mejoras.",
+    "Mantener portada academica con datos de alumno, programa y ubicacion.",
+    "Usar una narrativa de avance semanal verificable con evidencia.",
+    "Usar narrativa de avance semanal verificable con evidencia."
+  ],
+  "activity_rules": [
+    "Alinear objetivo de la actividad con el programa analitico IMTC.",
+    "Documentar evidencias tecnicas y academicas en el desarrollo.",
+    "Relacionar cada evidencia con analisis y decision de ingenieria.",
+    "Cerrar con acciones de mejora para la siguiente iteracion.",
+    "Evitar texto generico sin trazabilidad al reto de la semana."
+  ],
+  "quality_gates": [
+    "Salida debe ser JSON parseable y valido.",
+    "No inventar fuentes ni citas fuera del repositorio local.",
+    "Verificar consistencia entre portada, curso, codigo y programa.",
+    "Confirmar que toda afirmacion tecnica tenga evidencia o se marque como supuesto.",
+    "Revisar que conclusiones mantengan enfoque de mecatronica aplicada.",
+    "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+    "Validar que claves de citacion usadas existan en el .bib local."
+  ],
+  "latex_rules": [
+    "Mantener clase article con opciones spanish, letterpaper y oneside.",
+    "Conservar macros de metadatos para titulo, curso e institucion.",
+    "Mantener uso de template institucional mediante input local.",
+    "Usar secciones jerarquicas simples y estables para actividad.",
+    "No duplicar bloques de portada; reutilizar definiciones existentes.",
+    "Preservar bibliographystyle natnumurl y bibliography local del curso."
+  ],
+  "bibliography_rules": [
+    "Usar archivo proyecto-integrador-mecatronica-imtc.bib como fuente local unica inicial.",
+    "Mantener estilo bibliografico natnumurl salvo cambio institucional explicito.",
+    "Citar el programa analitico cuando se justifique alineacion de objetivos.",
+    "Marcar pendiente la actualizacion de referencia oficial del curso en la entrada bib.",
+    "No agregar referencias externas sin evidencia documental local."
+  ],
+  "propagation_hints": [
+    "Propagacion local en mismo nodo: aplicar union y deduplicacion sin perdida.",
+    "Priorizar preservacion de ADN editorial sobre compresion por recorte.",
+    "Cuando aparezcan nuevas actividades, reutilizar mismas reglas de identidad y calidad.",
+    "Si se corrige la referencia oficial, propagar cambio a todas las actividades del curso.",
+    "Mantener registro de supuestos resueltos en ciclos siguientes.",
+    "Ciclo 1 necesita normalizacion manual si se reutiliza.",
+    "Mantener TEX reconstruible y reglas canonicas en cada ciclo.",
+    "Ciclo 2 necesita normalizacion manual si se reutiliza."
+  ],
+  "open_questions": [
+    "Definir nombre oficial de la figura docente.",
+    "Confirmar matricula institucional final para portada.",
+    "Actualizar la referencia bib con fuente oficial del programa analitico.",
+    "Validar alcance exacto del reto tecnico de la semana en Actividad 1.",
+    "Confirmar si el reporte integral exige secciones adicionales obligatorias."
+  ],
+  "artifact_name": "reporte-proyecto-integrador-mecatronica-imtc-Actividad-1",
+  "sources": [
+    "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/actividad-1",
+    "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/programa-analitico-proyecto-integrador-mecatronica-imtc.md",
+    "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/proyecto-integrador-mecatronica-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex",
+    "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+  ],
+  "artifact_types": [
+    "reporte"
+  ],
+  "supported_artifact_types": [],
+  "source_documents": [
+    "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/programa-analitico-proyecto-integrador-mecatronica-imtc.md",
+    "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/proyecto-integrador-mecatronica-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex",
+    "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+  ],
+  "source_fragments": [
+    "Objetivo: Documentar el avance academico y tecnico de la materia proyecto integrador mecatronica.",
+    "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+  ],
+  "concepts": [
+    "Programa analitico de proyecto-integrador-mecatronica-imtc :: fuente=UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/proyecto-integrador-mecatronica-imtc.bib"
+  ],
+  "section_titles": [
+    "Introduccion",
+    "Desarrollo",
+    "Conclusiones",
+    "Actividad 1"
+  ],
+  "citations": [],
+  "bibliography_index": [
+    "programa-proyecto-integrador-mecatronica-imtc :: Programa analitico de proyecto-integrador-mecatronica-imtc :: fuente=UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/proyecto-integrador-mecatronica-imtc.bib"
+  ],
+  "node_metadata": {
+    "scope_key": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/actividad-1",
+    "level": "actividad",
+    "label": "Actividad 1",
+    "relative_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc",
+    "institution": "UANL",
+    "career": "ingenieria-en-mecatronica",
+    "subject": "proyecto-integrador-mecatronica-imtc",
+    "activity": "Actividad 1",
+    "parent_key": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc"
+  },
+  "curricular_context": {
+    "institutional_frame": "",
+    "purpose": "",
+    "work_axes": [],
+    "source_fragments": [],
+    "coursename": "Proyecto Integrador Mecatronica",
+    "coursecode": "IMTC",
+    "documentsubject": "Ingenieria en Mecatronica",
+    "documenttitle": "Proyecto Integrador Mecatronica",
+    "documentsubtitle": "Reporte integral - proyecto-integrador-mecatronica-imtc"
+  },
+  "artifact_templates": {},
+  "editorial_dna": {
+    "identity": {
+      "tone": [
+        "Tecnico-formal",
+        "Academico",
+        "Accionable"
+      ],
+      "institutional": [
+        "Universidad Autonoma de Nuevo Leon",
+        "Facultad de Ingenieria Mecanica y Electrica",
+        "Curso IMTC"
+      ],
+      "curricular": [
+        "Alineacion explicita al programa analitico",
+        "Evidencia de competencias en mecatronica",
+        "Cierre orientado a mejora continua"
+      ],
+      "node_metadata": {
+        "scope_key": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/actividad-1",
+        "level": "actividad",
+        "label": "Actividad 1",
+        "relative_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc",
+        "institution": "UANL",
+        "career": "ingenieria-en-mecatronica",
+        "subject": "proyecto-integrador-mecatronica-imtc",
+        "activity": "Actividad 1",
+        "parent_key": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc"
+      },
+      "curricular_context": {
+        "institutional_frame": "",
+        "purpose": "",
+        "work_axes": [],
+        "source_fragments": [],
+        "coursename": "Proyecto Integrador Mecatronica",
+        "coursecode": "IMTC",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "documenttitle": "Proyecto Integrador Mecatronica",
+        "documentsubtitle": "Reporte integral - proyecto-integrador-mecatronica-imtc"
+      },
+      "identity_rules": [
+        "Escribir en espanol tecnico, claro y formal.",
+        "Mantener identidad institucional UANL y FIME en portada y metadatos.",
+        "Mantener enfoque disciplinar de Ingenieria en Mecatronica.",
+        "Conservar nombre de asignatura y codigo IMTC consistentes en todo el documento.",
+        "Declarar supuestos cuando falte dato docente u oficial.",
+        "Fuente provisional: Claude Foundry desde Actividad 1",
+        "Fuente provisional: GPT-Pro desde Actividad 1",
+        "Fuente provisional: Auto (model-router) desde Actividad 1",
+        "Distinguir fuentes academicas de fuentes operativas del sistema [supuesto].",
+        "Fuente operativa registrada: Claude Foundry en actividad 1.",
+        "Fuente operativa registrada: GPT-Pro en actividad 1.",
+        "Fuente operativa registrada: Auto (model-router) en actividad 1."
+      ]
+    },
+    "essence": [
+      "Proyecto Integrador Mecatronica",
+      "Actividad 1",
+      "Programa analitico",
+      "Evidencia tecnica",
+      "Mejora continua",
+      "Identidad institucional UANL",
+      "Nodo inicializado sin memoria tecnica previa de actividad",
+      "Se conserva plantilla LaTeX local de Actividad 1 como base reconstruible",
+      "Se fija alineacion obligatoria al programa analitico del curso IMTC",
+      "Se registra dependencia bibliografica local en archivo .bib del curso",
+      "Escribir en espanol tecnico, claro y formal",
+      "Mantener identidad institucional UANL y FIME en portada y metadatos",
+      "Mantener enfoque disciplinar de Ingenieria en Mecatronica",
+      "Conservar nombre de asignatura y codigo IMTC consistentes en todo el documento",
+      "Declarar supuestos cuando falte dato docente u oficial",
+      "Conservar estructura minima de actividad: Actividad, Desarrollo y Cierre",
+      "Incluir consigna tecnica explicita al inicio de la actividad",
+      "Asegurar cierre con resultados, limitaciones y mejoras",
+      "Mantener portada academica con datos de alumno, programa y ubicacion",
+      "Usar una narrativa de avance semanal verificable con evidencia",
+      "Alinear objetivo de la actividad con el programa analitico IMTC.",
+      "Documentar evidencias tecnicas y academicas en el desarrollo.",
+      "Relacionar cada evidencia con analisis y decision de ingenieria.",
+      "Cerrar con acciones de mejora para la siguiente iteracion."
+    ],
+    "structure": {
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones",
+        "Actividad 1"
+      ],
+      "artifact_name": "reporte-proyecto-integrador-mecatronica-imtc-Actividad-1",
+      "artifact_types": [
+        "reporte"
+      ],
+      "tex_functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "bibliography"
+        ]
+      }
+    },
+    "reason_for_being": [
+      "Conservar estructura minima de actividad: Actividad, Desarrollo y Cierre.",
+      "Incluir consigna tecnica explicita al inicio de la actividad.",
+      "Asegurar cierre con resultados, limitaciones y mejoras.",
+      "Mantener portada academica con datos de alumno, programa y ubicacion.",
+      "Usar una narrativa de avance semanal verificable con evidencia.",
+      "Usar narrativa de avance semanal verificable con evidencia.",
+      "Alinear objetivo de la actividad con el programa analitico IMTC.",
+      "Documentar evidencias tecnicas y academicas en el desarrollo.",
+      "Relacionar cada evidencia con analisis y decision de ingenieria.",
+      "Cerrar con acciones de mejora para la siguiente iteracion.",
+      "Evitar texto generico sin trazabilidad al reto de la semana.",
+      "Introduccion",
+      "Desarrollo",
+      "Conclusiones",
+      "Actividad 1"
+    ],
+    "style_markers": [
+      "Metadatos institucionales en macros.",
+      "Consigna tecnica en negritas al inicio.",
+      "Subsecciones funcionales Desarrollo y Cierre.",
+      "Lenguaje directo y verificable.",
+      "Escribir en espanol tecnico, claro y formal.",
+      "Mantener identidad institucional UANL y FIME en portada y metadatos.",
+      "Mantener enfoque disciplinar de Ingenieria en Mecatronica.",
+      "Conservar nombre de asignatura y codigo IMTC consistentes en todo el documento.",
+      "Declarar supuestos cuando falte dato docente u oficial.",
+      "Mantener clase article con opciones spanish, letterpaper y oneside.",
+      "Conservar macros de metadatos para titulo, curso e institucion.",
+      "Mantener uso de template institucional mediante input local.",
+      "Usar secciones jerarquicas simples y estables para actividad.",
+      "No duplicar bloques de portada; reutilizar definiciones existentes.",
+      "Consigna tecnica al inicio de Actividad 1.",
+      "Desarrollo con evidencia verificable.",
+      "Cierre con resultados, limitaciones y mejora.",
+      "Consigna tecnica visible al inicio.",
+      "Metadatos institucionales completos en portada.",
+      "Parrafos cortos, verificables y con trazabilidad."
+    ],
+    "argumentative_patterns": [
+      "Objetivo alineado al programa -> evidencia observada -> analisis tecnico -> resultado -> mejora.",
+      "Problema semanal -> acciones ejecutadas -> limitaciones -> plan de ajuste.",
+      "Afirmacion tecnica -> soporte en evidencia o cita local.",
+      "Conservar estructura minima de actividad: Actividad, Desarrollo y Cierre.",
+      "Incluir consigna tecnica explicita al inicio de la actividad.",
+      "Asegurar cierre con resultados, limitaciones y mejoras.",
+      "Mantener portada academica con datos de alumno, programa y ubicacion.",
+      "Usar una narrativa de avance semanal verificable con evidencia.",
+      "Alinear objetivo de la actividad con el programa analitico IMTC.",
+      "Documentar evidencias tecnicas y academicas en el desarrollo.",
+      "Relacionar cada evidencia con analisis y decision de ingenieria.",
+      "Cerrar con acciones de mejora para la siguiente iteracion.",
+      "Evitar texto generico sin trazabilidad al reto de la semana.",
+      "No inventar fuentes ni citas fuera del repositorio local.",
+      "Verificar consistencia entre portada, curso, codigo y programa.",
+      "Confirmar que toda afirmacion tecnica tenga evidencia o se marque como supuesto.",
+      "Revisar que conclusiones mantengan enfoque de mecatronica aplicada.",
+      "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+      "Afirmacion tecnica -> soporte en evidencia local o supuesto marcado.",
+      "Objetivo del programa -> evidencia observada -> analisis tecnico -> resultado -> mejora."
+    ],
+    "reinforcement_log": [
+      "Se consolido base editorial desde cero sin eliminar informacion util.",
+      "Se incorporo ADN institucional y curricular verificable en contexto local.",
+      "Se fijaron compuertas de calidad para evitar regresion de formato no parseable.",
+      "Se mantuvo estrategia de preservacion total con deduplicacion semantica.",
+      "Refuerzo editorial aplicado sobre 51 conceptos y 0 citas.",
+      "Nodo inicializado sin memoria tecnica previa de actividad.",
+      "Se conserva plantilla LaTeX local de Actividad 1 como base reconstruible.",
+      "ADN sintetizado con 52 conceptos, 1 citas y 15 relaciones.",
+      "Memoria de redacción preservada en 7 bloques.",
+      "Refuerzo editorial aplicado sobre 1 conceptos y 0 citas.",
+      "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+      "ADN sintetizado con 53 conceptos, 1 citas y 15 relaciones.",
+      "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+      "Ciclo 1: union exacta origen-destino aplicada sin recorte.",
+      "Ciclo 1: se mantiene ADN editorial y TEX reconstruible.",
+      "Ciclo 1: se refuerza control de JSON estricto por incidente historico.",
+      "Ciclo 1: no se agregan fuentes externas; se conserva trazabilidad local.",
+      "Refuerzo editorial aplicado sobre 57 conceptos y 0 citas.",
+      "Nodo consolidado sin cambios estructurales; se preserva memoria previa completa por ser mismo-nodo.",
+      "Se mantiene plantilla LaTeX reconstruible de Actividad 1 como base canonica local.",
+      "ADN sintetizado con 75 conceptos, 1 citas y 29 relaciones.",
+      "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+      "Refuerzo editorial aplicado sobre 0 conceptos y 0 citas.",
+      "Ciclo 2: union y deduplicacion aplicada sin eliminar reglas utiles.",
+      "Ciclo 2: se reforzo separacion entre fuente academica y fuente operativa [supuesto].",
+      "Ciclo 2: se mantuvo ADN editorial completo y TEX reconstruible del nodo.",
+      "Refuerzo editorial aplicado sobre 59 conceptos y 0 citas.",
+      "Nodo consolidado en ciclo 2 sin perdida de memoria.",
+      "Se preserva plantilla LaTeX reconstruible de Actividad 1 como base canonica local.",
+      "ADN sintetizado con 100 conceptos, 1 citas y 40 relaciones."
+    ],
+    "knowledge_graph": {
+      "concepts": [
+        "Proyecto Integrador Mecatronica",
+        "Actividad 1",
+        "Programa analitico",
+        "Evidencia tecnica",
+        "Mejora continua",
+        "Identidad institucional UANL",
+        "Nodo inicializado sin memoria tecnica previa de actividad",
+        "Se conserva plantilla LaTeX local de Actividad 1 como base reconstruible",
+        "Se fija alineacion obligatoria al programa analitico del curso IMTC",
+        "Se registra dependencia bibliografica local en archivo .bib del curso",
+        "Escribir en espanol tecnico, claro y formal",
+        "Mantener identidad institucional UANL y FIME en portada y metadatos",
+        "Mantener enfoque disciplinar de Ingenieria en Mecatronica",
+        "Conservar nombre de asignatura y codigo IMTC consistentes en todo el documento",
+        "Declarar supuestos cuando falte dato docente u oficial",
+        "Conservar estructura minima de actividad: Actividad, Desarrollo y Cierre",
+        "Incluir consigna tecnica explicita al inicio de la actividad",
+        "Asegurar cierre con resultados, limitaciones y mejoras",
+        "Mantener portada academica con datos de alumno, programa y ubicacion",
+        "Usar una narrativa de avance semanal verificable con evidencia",
+        "Alinear objetivo de la actividad con el programa analitico IMTC",
+        "Documentar evidencias tecnicas y academicas en el desarrollo",
+        "Relacionar cada evidencia con analisis y decision de ingenieria",
+        "Cerrar con acciones de mejora para la siguiente iteracion",
+        "Evitar texto generico sin trazabilidad al reto de la semana",
+        "No inventar fuentes ni citas fuera del repositorio local",
+        "Verificar consistencia entre portada, curso, codigo y programa",
+        "Confirmar que toda afirmacion tecnica tenga evidencia o se marque como supuesto",
+        "Revisar que conclusiones mantengan enfoque de mecatronica aplicada",
+        "Definir nombre oficial de la figura docente",
+        "Confirmar matricula institucional final para portada",
+        "Actualizar la referencia bib con fuente oficial del programa analitico",
+        "Validar alcance exacto del reto tecnico de la semana en Actividad 1",
+        "Confirmar si el reporte integral exige secciones adicionales obligatorias",
+        "Actividad breve pero trazable",
+        "Evidencia tecnica con interpretacion academica",
+        "Conclusiones utiles para iteracion siguiente",
+        "Estandarizar reportes de actividad IMTC con identidad UANL",
+        "Garantizar coherencia entre consigna, desarrollo, evidencia y cierre",
+        "Facilitar reconstruccion editorial y auditoria academica",
+        "Metadatos institucionales en macros",
+        "Consigna tecnica en negritas al inicio",
+        "Subsecciones funcionales Desarrollo y Cierre",
+        "Lenguaje directo y verificable",
+        "Objetivo alineado al programa -> evidencia observada -> analisis tecnico -> resultado -> mejora",
+        "Problema semanal -> acciones ejecutadas -> limitaciones -> plan de ajuste",
+        "Afirmacion tecnica -> soporte en evidencia o cita local",
+        "programa-proyecto-integrador-mecatronica-imtc",
+        "Plantilla local de Actividad 1 con secciones Actividad, Desarrollo y Cierre",
+        "Checklist local que exige alineacion al programa y evidencias citadas",
+        "Archivo .bib local con entrada del programa analitico",
+        "Programa analitico de proyecto-integrador-mecatronica-imtc :: fuente=UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/proyecto-integrador-mecatronica-imtc.bib",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo",
+        "Programa analitico IMTC",
+        "Analisis de ingenieria",
+        "Cierre con mejora continua",
+        "Plantilla LaTeX institucional",
+        "Bibliografia local .bib",
+        "Nodo consolidado sin cambios estructurales; se preserva memoria previa completa por ser mismo-nodo",
+        "Se mantiene plantilla LaTeX reconstruible de Actividad 1 como base canonica local",
+        "Se mantiene alineacion obligatoria al programa analitico IMTC con trazabilidad local",
+        "Se mantiene dependencia bibliografica unica en proyecto-integrador-mecatronica-imtc.bib",
+        "Se refuerza gate critico de salida JSON estricto por historial de salidas no parseables",
+        "Supuesto vigente: faltan datos oficiales de figura docente y matricula final",
+        "Asegurar trazabilidad entre objetivo, evidencia y decisiones de ingenieria",
+        "Preservar una plantilla compilable y reutilizable para actividades IMTC",
+        "Garantizar cierres tecnicos con resultados, limites y mejoras iterativas",
+        "Consigna tecnica al inicio de Actividad 1",
+        "Desarrollo con evidencia verificable",
+        "Cierre con resultados, limitaciones y mejora",
+        "Afirmacion tecnica -> soporte en evidencia local o supuesto marcado",
+        "programa-analitico-proyecto-integrador-mecatronica-imtc.md",
+        "proyecto-integrador-mecatronica-imtc.bib",
+        "reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex",
+        "Checklist local: objetivo alineado, evidencias citadas, conclusiones en mecatronica aplicada",
+        "Plantilla LaTeX canonica",
+        "JSON estricto",
+        "Se preserva plantilla LaTeX reconstruible de Actividad 1 como base canonica local",
+        "Se mantiene alerta critica por historial de salidas no parseables; salida JSON estricto obligatoria",
+        "Se conserva registro de fuentes provisionales de generacion como metadato de trazabilidad [supuesto: no son fuentes academicas]",
+        "Distinguir fuentes academicas de fuentes operativas del sistema [supuesto]",
+        "Fuente operativa registrada: Claude Foundry en actividad 1",
+        "Fuente operativa registrada: GPT-Pro en actividad 1",
+        "Fuente operativa registrada: Auto (model-router) en actividad 1",
+        "Usar narrativa de avance semanal verificable con evidencia",
+        "Validar que claves de citacion usadas existan en el .bib local",
+        "Actividad 1 como unidad trazable de aprendizaje aplicado",
+        "Plantilla LaTeX institucional como contrato tecnico estable",
+        "Programa analitico como eje de legitimidad curricular",
+        "Evidencia tecnica como base de conclusion y mejora",
+        "Producir entregables consistentes, verificables y compilables",
+        "Conectar objetivos, evidencias, analisis y decisiones de ingenieria",
+        "Sostener continuidad editorial entre ciclos sin regresion",
+        "Consigna tecnica visible al inicio",
+        "Metadatos institucionales completos en portada",
+        "Parrafos cortos, verificables y con trazabilidad",
+        "Cierre con resultados, limites y siguiente accion",
+        "Objetivo del programa -> evidencia observada -> analisis tecnico -> resultado -> mejora",
+        "Reto semanal -> acciones ejecutadas -> limitaciones -> ajuste de siguiente ciclo",
+        "Afirmacion tecnica -> evidencia local o supuesto declarado"
+      ],
+      "citations": [
+        "programa-proyecto-integrador-mecatronica-imtc"
+      ],
+      "evidence": [
+        "Plantilla local de Actividad 1 con secciones Actividad, Desarrollo y Cierre.",
+        "Checklist local que exige alineacion al programa y evidencias citadas.",
+        "Archivo .bib local con entrada del programa analitico.",
+        "Nodo inicializado sin memoria tecnica previa de actividad.",
+        "Se conserva plantilla LaTeX local de Actividad 1 como base reconstruible.",
+        "Se fija alineacion obligatoria al programa analitico del curso IMTC.",
+        "Se registra dependencia bibliografica local en archivo .bib del curso.",
+        "Se hereda alerta institucional: en ciclo previo hubo salida no parseable; mantener JSON estricto.",
+        "Salida debe ser JSON parseable y valido.",
+        "No inventar fuentes ni citas fuera del repositorio local.",
+        "Verificar consistencia entre portada, curso, codigo y programa.",
+        "Confirmar que toda afirmacion tecnica tenga evidencia o se marque como supuesto.",
+        "Revisar que conclusiones mantengan enfoque de mecatronica aplicada.",
+        "programa-proyecto-integrador-mecatronica-imtc :: Programa analitico de proyecto-integrador-mecatronica-imtc :: fuente=UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/proyecto-integrador-mecatronica-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/programa-analitico-proyecto-integrador-mecatronica-imtc.md",
+        "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/proyecto-integrador-mecatronica-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex",
+        "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex",
+        "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+        "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+        "programa-analitico-proyecto-integrador-mecatronica-imtc.md",
+        "proyecto-integrador-mecatronica-imtc.bib",
+        "reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex",
+        "Checklist local: objetivo alineado, evidencias citadas, conclusiones en mecatronica aplicada.",
+        "Nodo consolidado sin cambios estructurales; se preserva memoria previa completa por ser mismo-nodo.",
+        "Se mantiene plantilla LaTeX reconstruible de Actividad 1 como base canonica local.",
+        "Se mantiene alineacion obligatoria al programa analitico IMTC con trazabilidad local.",
+        "Se mantiene dependencia bibliografica unica en proyecto-integrador-mecatronica-imtc.bib.",
+        "Se refuerza gate critico de salida JSON estricto por historial de salidas no parseables.",
+        "Supuesto vigente: faltan datos oficiales de figura docente y matricula final.",
+        "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+        "Historial local de salidas no parseables en ciclo previo.",
+        "Nodo consolidado en ciclo 2 sin perdida de memoria.",
+        "Se preserva plantilla LaTeX reconstruible de Actividad 1 como base canonica local.",
+        "Se mantiene alerta critica por historial de salidas no parseables; salida JSON estricto obligatoria.",
+        "Se conserva registro de fuentes provisionales de generacion como metadato de trazabilidad [supuesto: no son fuentes academicas].",
+        "Validar que claves de citacion usadas existan en el .bib local."
+      ],
+      "relations": [
+        {
+          "source": "Actividad 1",
+          "target": "Programa analitico",
+          "kind": "depends_on",
+          "weight": 1,
+          "justification": "El checklist exige objetivo alineado al programa.",
+          "evidence": []
+        },
+        {
+          "source": "Evidencia tecnica",
+          "target": "Cierre con resultados y mejoras",
+          "kind": "supports",
+          "weight": 1,
+          "justification": "Las conclusiones deben derivar del desarrollo documentado.",
+          "evidence": []
+        },
+        {
+          "source": "Proyecto Integrador Mecatronica",
+          "target": "Identidad institucional UANL",
+          "kind": "develops",
+          "weight": 1,
+          "justification": "La plantilla fija metadatos de universidad y facultad.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo inicializado sin memoria tecnica previa de actividad",
+          "target": "Se conserva plantilla LaTeX local de Actividad 1 como base reconstruible",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo inicializado sin memoria tecnica previa de actividad",
+          "target": "Se fija alineacion obligatoria al programa analitico del curso IMTC",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva plantilla LaTeX local de Actividad 1 como base reconstruible",
+          "target": "Se fija alineacion obligatoria al programa analitico del curso IMTC",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva plantilla LaTeX local de Actividad 1 como base reconstruible",
+          "target": "Se registra dependencia bibliografica local en archivo .bib del curso",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se fija alineacion obligatoria al programa analitico del curso IMTC",
+          "target": "Se registra dependencia bibliografica local en archivo .bib del curso",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se fija alineacion obligatoria al programa analitico del curso IMTC",
+          "target": "Escribir en espanol tecnico, claro y formal",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se registra dependencia bibliografica local en archivo .bib del curso",
+          "target": "Escribir en espanol tecnico, claro y formal",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se registra dependencia bibliografica local en archivo .bib del curso",
+          "target": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Escribir en espanol tecnico, claro y formal",
+          "target": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Actividad 1",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0001"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Desarrollo",
+          "kind": "organizes",
+          "weight": 2,
+          "evidence": [
+            "b0003",
+            "b0004"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Cierre",
+          "kind": "organizes",
+          "weight": 3,
+          "evidence": [
+            "b0005",
+            "b0006",
+            "b0007"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Programa analitico IMTC",
+          "kind": "depends_on",
+          "weight": 2,
+          "justification": "El objetivo de actividad debe alinearse al programa analitico.",
+          "evidence": []
+        },
+        {
+          "source": "Evidencia tecnica",
+          "target": "Analisis de ingenieria",
+          "kind": "supports",
+          "weight": 2,
+          "justification": "Las decisiones tecnicas deben fundamentarse con evidencia documentada.",
+          "evidence": []
+        },
+        {
+          "source": "Analisis de ingenieria",
+          "target": "Cierre con mejora continua",
+          "kind": "develops",
+          "weight": 1,
+          "justification": "El cierre deriva del analisis y define ajustes para la siguiente iteracion.",
+          "evidence": []
+        },
+        {
+          "source": "Plantilla LaTeX institucional",
+          "target": "Actividad 1",
+          "kind": "supports",
+          "weight": 1,
+          "justification": "La plantilla fija estructura estable y metadatos institucionales.",
+          "evidence": []
+        },
+        {
+          "source": "Bibliografia local .bib",
+          "target": "Programa analitico IMTC",
+          "kind": "supports",
+          "weight": 1,
+          "justification": "La entrada bib local respalda la cita de alineacion curricular.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo consolidado sin cambios estructurales; se preserva memoria previa completa por ser mismo-nodo",
+          "target": "Se mantiene plantilla LaTeX reconstruible de Actividad 1 como base canonica local",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo consolidado sin cambios estructurales; se preserva memoria previa completa por ser mismo-nodo",
+          "target": "Se mantiene alineacion obligatoria al programa analitico IMTC con trazabilidad local",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene plantilla LaTeX reconstruible de Actividad 1 como base canonica local",
+          "target": "Se mantiene alineacion obligatoria al programa analitico IMTC con trazabilidad local",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene plantilla LaTeX reconstruible de Actividad 1 como base canonica local",
+          "target": "Se mantiene dependencia bibliografica unica en proyecto-integrador-mecatronica-imtc.bib",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene alineacion obligatoria al programa analitico IMTC con trazabilidad local",
+          "target": "Se mantiene dependencia bibliografica unica en proyecto-integrador-mecatronica-imtc.bib",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene alineacion obligatoria al programa analitico IMTC con trazabilidad local",
+          "target": "Se refuerza gate critico de salida JSON estricto por historial de salidas no parseables",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene dependencia bibliografica unica en proyecto-integrador-mecatronica-imtc.bib",
+          "target": "Se refuerza gate critico de salida JSON estricto por historial de salidas no parseables",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene dependencia bibliografica unica en proyecto-integrador-mecatronica-imtc.bib",
+          "target": "Supuesto vigente: faltan datos oficiales de figura docente y matricula final",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se refuerza gate critico de salida JSON estricto por historial de salidas no parseables",
+          "target": "Supuesto vigente: faltan datos oficiales de figura docente y matricula final",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Analisis de ingenieria",
+          "target": "Mejora continua",
+          "kind": "develops",
+          "weight": 1,
+          "justification": "El cierre define ajustes para la siguiente iteracion.",
+          "evidence": []
+        },
+        {
+          "source": "Plantilla LaTeX canonica",
+          "target": "Actividad 1",
+          "kind": "supports",
+          "weight": 1,
+          "justification": "Asegura estructura estable y reconstruible.",
+          "evidence": []
+        },
+        {
+          "source": "JSON estricto",
+          "target": "Calidad editorial",
+          "kind": "supports",
+          "weight": 1,
+          "justification": "Evita fallas aguas abajo por salida no parseable.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva plantilla LaTeX reconstruible de Actividad 1 como base canonica local",
+          "target": "Se mantiene alineacion obligatoria al programa analitico IMTC con trazabilidad local",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva plantilla LaTeX reconstruible de Actividad 1 como base canonica local",
+          "target": "Se mantiene dependencia bibliografica unica en proyecto-integrador-mecatronica-imtc.bib",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene alineacion obligatoria al programa analitico IMTC con trazabilidad local",
+          "target": "Se mantiene alerta critica por historial de salidas no parseables; salida JSON estricto obligatoria",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene dependencia bibliografica unica en proyecto-integrador-mecatronica-imtc.bib",
+          "target": "Se mantiene alerta critica por historial de salidas no parseables; salida JSON estricto obligatoria",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene dependencia bibliografica unica en proyecto-integrador-mecatronica-imtc.bib",
+          "target": "Se conserva registro de fuentes provisionales de generacion como metadato de trazabilidad [supuesto: no son fuentes academicas]",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene alerta critica por historial de salidas no parseables; salida JSON estricto obligatoria",
+          "target": "Se conserva registro de fuentes provisionales de generacion como metadato de trazabilidad [supuesto: no son fuentes academicas]",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene alerta critica por historial de salidas no parseables; salida JSON estricto obligatoria",
+          "target": "Escribir en espanol tecnico, claro y formal",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva registro de fuentes provisionales de generacion como metadato de trazabilidad [supuesto: no son fuentes academicas]",
+          "target": "Escribir en espanol tecnico, claro y formal",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        }
+      ],
+      "concept_weights": {
+        "Nodo inicializado sin memoria tecnica previa de actividad": 1,
+        "Se conserva plantilla LaTeX local de Actividad 1 como base reconstruible": 1,
+        "Se fija alineacion obligatoria al programa analitico del curso IMTC": 1,
+        "Se registra dependencia bibliografica local en archivo .bib del curso": 1,
+        "Escribir en espanol tecnico, claro y formal": 3,
+        "Mantener identidad institucional UANL y FIME en portada y metadatos": 3,
+        "Mantener enfoque disciplinar de Ingenieria en Mecatronica": 3,
+        "Conservar nombre de asignatura y codigo IMTC consistentes en todo el documento": 3,
+        "Declarar supuestos cuando falte dato docente u oficial": 3,
+        "Conservar estructura minima de actividad: Actividad, Desarrollo y Cierre": 3,
+        "Incluir consigna tecnica explicita al inicio de la actividad": 3,
+        "Asegurar cierre con resultados, limitaciones y mejoras": 3,
+        "Mantener portada academica con datos de alumno, programa y ubicacion": 3,
+        "Usar una narrativa de avance semanal verificable con evidencia": 2,
+        "Alinear objetivo de la actividad con el programa analitico IMTC": 3,
+        "Documentar evidencias tecnicas y academicas en el desarrollo": 3,
+        "Relacionar cada evidencia con analisis y decision de ingenieria": 3,
+        "Cerrar con acciones de mejora para la siguiente iteracion": 3,
+        "Evitar texto generico sin trazabilidad al reto de la semana": 3,
+        "No inventar fuentes ni citas fuera del repositorio local": 3,
+        "Verificar consistencia entre portada, curso, codigo y programa": 3,
+        "Confirmar que toda afirmacion tecnica tenga evidencia o se marque como supuesto": 3,
+        "Revisar que conclusiones mantengan enfoque de mecatronica aplicada": 3,
+        "Definir nombre oficial de la figura docente": 3,
+        "Confirmar matricula institucional final para portada": 3,
+        "Actualizar la referencia bib con fuente oficial del programa analitico": 3,
+        "Validar alcance exacto del reto tecnico de la semana en Actividad 1": 3,
+        "Confirmar si el reporte integral exige secciones adicionales obligatorias": 3,
+        "Actividad breve pero trazable": 1,
+        "Evidencia tecnica con interpretacion academica": 1,
+        "Conclusiones utiles para iteracion siguiente": 1,
+        "Estandarizar reportes de actividad IMTC con identidad UANL": 1,
+        "Garantizar coherencia entre consigna, desarrollo, evidencia y cierre": 1,
+        "Facilitar reconstruccion editorial y auditoria academica": 1,
+        "Metadatos institucionales en macros": 2,
+        "Consigna tecnica en negritas al inicio": 1,
+        "Subsecciones funcionales Desarrollo y Cierre": 1,
+        "Lenguaje directo y verificable": 1,
+        "Objetivo alineado al programa -> evidencia observada -> analisis tecnico -> resultado -> mejora": 2,
+        "Problema semanal -> acciones ejecutadas -> limitaciones -> plan de ajuste": 2,
+        "Afirmacion tecnica -> soporte en evidencia o cita local": 1,
+        "Proyecto Integrador Mecatronica": 2,
+        "Actividad 1": 3,
+        "Programa analitico": 2,
+        "Evidencia tecnica": 3,
+        "Mejora continua": 3,
+        "Identidad institucional UANL": 2,
+        "programa-proyecto-integrador-mecatronica-imtc": 3,
+        "Plantilla local de Actividad 1 con secciones Actividad, Desarrollo y Cierre": 1,
+        "Checklist local que exige alineacion al programa y evidencias citadas": 1,
+        "Archivo .bib local con entrada del programa analitico": 1,
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo": 5,
+        "Nodo consolidado sin cambios estructurales; se preserva memoria previa completa por ser mismo-nodo": 1,
+        "Se mantiene plantilla LaTeX reconstruible de Actividad 1 como base canonica local": 1,
+        "Se mantiene alineacion obligatoria al programa analitico IMTC con trazabilidad local": 2,
+        "Se mantiene dependencia bibliografica unica en proyecto-integrador-mecatronica-imtc.bib": 2,
+        "Se refuerza gate critico de salida JSON estricto por historial de salidas no parseables": 1,
+        "Supuesto vigente: faltan datos oficiales de figura docente y matricula final": 1,
+        "Asegurar trazabilidad entre objetivo, evidencia y decisiones de ingenieria": 1,
+        "Preservar una plantilla compilable y reutilizable para actividades IMTC": 1,
+        "Garantizar cierres tecnicos con resultados, limites y mejoras iterativas": 1,
+        "Consigna tecnica al inicio de Actividad 1": 1,
+        "Desarrollo con evidencia verificable": 1,
+        "Cierre con resultados, limitaciones y mejora": 1,
+        "Afirmacion tecnica -> soporte en evidencia local o supuesto marcado": 1,
+        "Programa analitico IMTC": 2,
+        "Analisis de ingenieria": 2,
+        "Cierre con mejora continua": 1,
+        "Plantilla LaTeX institucional": 1,
+        "Bibliografia local .bib": 1,
+        "programa-analitico-proyecto-integrador-mecatronica-imtc.md": 2,
+        "proyecto-integrador-mecatronica-imtc.bib": 2,
+        "reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex": 2,
+        "Checklist local: objetivo alineado, evidencias citadas, conclusiones en mecatronica aplicada": 1,
+        "Se preserva plantilla LaTeX reconstruible de Actividad 1 como base canonica local": 1,
+        "Se mantiene alerta critica por historial de salidas no parseables; salida JSON estricto obligatoria": 1,
+        "Se conserva registro de fuentes provisionales de generacion como metadato de trazabilidad [supuesto: no son fuentes academicas]": 1,
+        "Distinguir fuentes academicas de fuentes operativas del sistema [supuesto]": 1,
+        "Fuente operativa registrada: Claude Foundry en actividad 1": 1,
+        "Fuente operativa registrada: GPT-Pro en actividad 1": 1,
+        "Fuente operativa registrada: Auto (model-router) en actividad 1": 1,
+        "Usar narrativa de avance semanal verificable con evidencia": 1,
+        "Validar que claves de citacion usadas existan en el .bib local": 1,
+        "Actividad 1 como unidad trazable de aprendizaje aplicado": 1,
+        "Plantilla LaTeX institucional como contrato tecnico estable": 1,
+        "Programa analitico como eje de legitimidad curricular": 1,
+        "Evidencia tecnica como base de conclusion y mejora": 1,
+        "Producir entregables consistentes, verificables y compilables": 1,
+        "Conectar objetivos, evidencias, analisis y decisiones de ingenieria": 1,
+        "Sostener continuidad editorial entre ciclos sin regresion": 1,
+        "Consigna tecnica visible al inicio": 1,
+        "Metadatos institucionales completos en portada": 1,
+        "Parrafos cortos, verificables y con trazabilidad": 1,
+        "Cierre con resultados, limites y siguiente accion": 1,
+        "Objetivo del programa -> evidencia observada -> analisis tecnico -> resultado -> mejora": 1,
+        "Reto semanal -> acciones ejecutadas -> limitaciones -> ajuste de siguiente ciclo": 1,
+        "Afirmacion tecnica -> evidencia local o supuesto declarado": 1,
+        "Plantilla LaTeX canonica": 1,
+        "JSON estricto": 1
+      },
+      "citation_weights": {}
+    },
+    "writing_memory": [
+      {
+        "id": "b0001",
+        "order": 1,
+        "kind": "section",
+        "section": "Actividad 1",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Actividad 1",
+        "latex": "\\section{Actividad 1}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0002",
+        "order": 2,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+        "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0003",
+        "order": 3,
+        "kind": "subsection",
+        "section": "Actividad 1",
+        "subsection": "Desarrollo",
+        "paragraph_heading": "",
+        "text": "Desarrollo",
+        "latex": "\\subsection{Desarrollo}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0004",
+        "order": 4,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Desarrollo",
+        "paragraph_heading": "",
+        "text": "Incluir evidencias, analisis y referencias.",
+        "latex": "Incluir evidencias, analisis y referencias.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0005",
+        "order": 5,
+        "kind": "subsection",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "Cierre",
+        "latex": "\\subsection{Cierre}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0006",
+        "order": 6,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "Registrar resultados, limitaciones y mejoras.",
+        "latex": "Registrar resultados, limitaciones y mejoras.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0007",
+        "order": 7,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "natnumurl",
+        "latex": "\\bibliographystyle{natnumurl}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+      }
+    ],
+    "reconstructable_source": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Proyecto Integrador Mecatronica}\n\\def\\documentsubtitle {Actividad 1 - proyecto-integrador-mecatronica-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Proyecto Integrador Mecatronica}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{proyecto-integrador-mecatronica-imtc}\n\n\\end{document}\n"
+  },
+  "tex_blueprint": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex",
+        "documenttitle": "Proyecto Integrador Mecatronica",
+        "documentsubtitle": "Reporte integral - proyecto-integrador-mecatronica-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Proyecto Integrador Mecatronica",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia proyecto integrador mecatronica.",
+        "section_titles": [
+          "Introduccion",
+          "Desarrollo",
+          "Conclusiones"
+        ],
+        "subsection_titles": [],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [
+          "Objetivo: Documentar el avance academico y tecnico de la materia proyecto integrador mecatronica.",
+          "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+        ],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex",
+          "raw_latex_sha256": "bf7fa38f5c7ee3899b6c498f7a1bef799c124fbaa97237802d51693694d95711",
+          "raw_latex_chars": 1766,
+          "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Proyecto Integrador Mecatronica}\n\\def\\documentsubtitle {Reporte integral - proyecto-integrador-mecatronica-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Proyecto Integrador Mecatronica}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia proyecto integrador mecatronica.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{proyecto-integrador-mecatronica-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document",
+              "abstractd"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "templateIndex",
+              "templateFinalcfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia proyecto integrador mecatronica.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia proyecto integrador mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia proyecto integrador mecatronica.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia proyecto integrador mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      },
+      "reporte": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex",
+        "documenttitle": "Proyecto Integrador Mecatronica",
+        "documentsubtitle": "Actividad 1 - proyecto-integrador-mecatronica-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Proyecto Integrador Mecatronica",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "",
+        "section_titles": [
+          "Actividad 1"
+        ],
+        "subsection_titles": [
+          "Desarrollo",
+          "Cierre"
+        ],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex",
+          "raw_latex_sha256": "003051757e3cfd8ddcd2973616126407b1a67d0416dfc42121f3af3771b4071c",
+          "raw_latex_chars": 1552,
+          "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Proyecto Integrador Mecatronica}\n\\def\\documentsubtitle {Actividad 1 - proyecto-integrador-mecatronica-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Proyecto Integrador Mecatronica}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{proyecto-integrador-mecatronica-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "section",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Actividad 1",
+              "latex": "\\section{Actividad 1}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+              "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\subsection{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Incluir evidencias, analisis y referencias.",
+              "latex": "Incluir evidencias, analisis y referencias.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Cierre",
+              "latex": "\\subsection{Cierre}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Registrar resultados, limitaciones y mejoras.",
+              "latex": "Registrar resultados, limitaciones y mejoras.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "section",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Actividad 1",
+              "latex": "\\section{Actividad 1}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+              "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\subsection{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Incluir evidencias, analisis y referencias.",
+              "latex": "Incluir evidencias, analisis y referencias.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Cierre",
+              "latex": "\\subsection{Cierre}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Registrar resultados, limitaciones y mejoras.",
+              "latex": "Registrar resultados, limitaciones y mejoras.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex",
+      "documenttitle": "Proyecto Integrador Mecatronica",
+      "documentsubtitle": "Actividad 1 - proyecto-integrador-mecatronica-imtc",
+      "documentsubject": "Ingenieria en Mecatronica",
+      "coursename": "Proyecto Integrador Mecatronica",
+      "coursecode": "IMTC",
+      "documentauthor": "Martin Jonathan de la Cruz",
+      "abstract": "",
+      "section_titles": [
+        "Actividad 1"
+      ],
+      "subsection_titles": [
+        "Desarrollo",
+        "Cierre"
+      ],
+      "cited_keys": [],
+      "concepts": [],
+      "source_fragments": [],
+      "content_memory": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex",
+        "raw_latex_sha256": "003051757e3cfd8ddcd2973616126407b1a67d0416dfc42121f3af3771b4071c",
+        "raw_latex_chars": 1552,
+        "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Proyecto Integrador Mecatronica}\n\\def\\documentsubtitle {Actividad 1 - proyecto-integrador-mecatronica-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Proyecto Integrador Mecatronica}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{proyecto-integrador-mecatronica-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    }
+  },
+  "tex_content_memory": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex",
+        "raw_latex_sha256": "bf7fa38f5c7ee3899b6c498f7a1bef799c124fbaa97237802d51693694d95711",
+        "raw_latex_chars": 1766,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Proyecto Integrador Mecatronica}\n\\def\\documentsubtitle {Reporte integral - proyecto-integrador-mecatronica-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Proyecto Integrador Mecatronica}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia proyecto integrador mecatronica.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{proyecto-integrador-mecatronica-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia proyecto integrador mecatronica.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia proyecto integrador mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia proyecto integrador mecatronica.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia proyecto integrador mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      },
+      "reporte": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex",
+        "raw_latex_sha256": "003051757e3cfd8ddcd2973616126407b1a67d0416dfc42121f3af3771b4071c",
+        "raw_latex_chars": 1552,
+        "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Proyecto Integrador Mecatronica}\n\\def\\documentsubtitle {Actividad 1 - proyecto-integrador-mecatronica-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Proyecto Integrador Mecatronica}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{proyecto-integrador-mecatronica-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex",
+      "raw_latex_sha256": "003051757e3cfd8ddcd2973616126407b1a67d0416dfc42121f3af3771b4071c",
+      "raw_latex_chars": 1552,
+      "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Proyecto Integrador Mecatronica}\n\\def\\documentsubtitle {Actividad 1 - proyecto-integrador-mecatronica-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Proyecto Integrador Mecatronica}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{proyecto-integrador-mecatronica-imtc}\n\n\\end{document}\n",
+      "functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "bibliography"
+        ]
+      },
+      "paragraph_map": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "section",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Actividad 1",
+          "latex": "\\section{Actividad 1}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+          "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\subsection{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Incluir evidencias, analisis y referencias.",
+          "latex": "Incluir evidencias, analisis y referencias.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Cierre",
+          "latex": "\\subsection{Cierre}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Registrar resultados, limitaciones y mejoras.",
+          "latex": "Registrar resultados, limitaciones y mejoras.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+        }
+      ],
+      "content_blocks": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "section",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Actividad 1",
+          "latex": "\\section{Actividad 1}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+          "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\subsection{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Incluir evidencias, analisis y referencias.",
+          "latex": "Incluir evidencias, analisis y referencias.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Cierre",
+          "latex": "\\subsection{Cierre}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Registrar resultados, limitaciones y mejoras.",
+          "latex": "Registrar resultados, limitaciones y mejoras.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/reporte-proyecto-integrador-mecatronica-imtc-Actividad-1.tex"
+        }
+      ],
+      "citation_map": {},
+      "all_cited_keys": [],
+      "missing_bibliography_keys": []
+    },
+    "bibliography_sources": {
+      "programa-proyecto-integrador-mecatronica-imtc": {
+        "key": "programa-proyecto-integrador-mecatronica-imtc",
+        "source_type": "bibtex",
+        "source_path": "UANL/ingenieria-en-mecatronica/proyecto-integrador-mecatronica-imtc/proyecto-integrador-mecatronica-imtc.bib",
+        "entry_type": "misc",
+        "title": "Programa analitico de proyecto-integrador-mecatronica-imtc",
+        "author": "UANL",
+        "year": "2026",
+        "url": "https://www.uanl.mx/",
+        "note": "Actualizar con la referencia oficial del curso",
+        "raw_entry": "@misc{programa-proyecto-integrador-mecatronica-imtc,\n  author = {UANL},\n  title = {Programa analitico de proyecto-integrador-mecatronica-imtc},\n  year = {2026},\n  note = {Actualizar con la referencia oficial del curso},\n  url = {https://www.uanl.mx/}\n}"
+      }
+    }
+  },
+  "locked_sections": [],
+  "compression": {
+    "method": "union-dedupe",
+    "lossless": true
+  },
+  "schema_version": 3
+}

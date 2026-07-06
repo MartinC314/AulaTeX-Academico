@@ -1,0 +1,1960 @@
+{
+  "summary": [
+    "Canonizacion local aplicada con union y deduplicacion sin recorte.",
+    "Se preserva memoria util previa y se integra evidencia verificable del contexto local.",
+    "Se corrige riesgo historico de salida no estructurada con formato JSON parseable obligatorio.",
+    "Se mantiene trazabilidad a programa analitico, plantilla de actividad y .bib del curso.",
+    "Tiempo de espera agotado.",
+    "Salida sin JSON parseable desde Claude Foundry para optativa-iv-fundamental-imtc",
+    "Salida sin JSON parseable desde GPT-Pro para optativa-iv-fundamental-imtc",
+    "Se confirma coexistencia de plantilla de actividad y reporte integral en el nodo local.",
+    "Se detecta texto truncado en reporte integral base y se mantiene como riesgo abierto [supuesto detectado].",
+    "Salida sin JSON parseable desde Auto (model-router) para optativa-iv-fundamental-imtc",
+    "Se registran fallos previos de salida no parseable en motores Claude Foundry, GPT-Pro y Auto (model-router).",
+    "Se refuerza que el checklist local exige objetivo alineado, evidencias citadas y cierre de ingenieria en mecatronica."
+  ],
+  "identity_rules": [
+    "Mantener institucion UANL y facultad FIME en todos los artefactos.",
+    "Mantener programa curricular Ingenieria en Mecatronica.",
+    "Mantener asignatura como Optativa Iv Fundamental y codigo IMTC.",
+    "Usar ubicacion institucional San Nicolas de los Garza, Nuevo Leon.",
+    "Marcar campos pendientes como supuestos cuando no exista dato oficial.",
+    "Fuente provisional: Claude Foundry desde optativa-iv-fundamental-imtc",
+    "Fuente provisional: GPT-Pro desde optativa-iv-fundamental-imtc",
+    "Fuente provisional: Auto (model-router) desde optativa-iv-fundamental-imtc",
+    "Mantener autor Martin Jonathan de la Cruz salvo indicacion oficial contraria.",
+    "Conservar trazabilidad de fuente provisional de motor cuando aplique."
+  ],
+  "structure_rules": [
+    "Incluir seccion principal Actividad 1 en reportes de actividad.",
+    "Incluir subsecciones minimas Desarrollo y Cierre.",
+    "Alinear objetivo de actividad con programa analitico del curso.",
+    "Incluir introduccion y cierre tecnico en reporte integral cuando aplique.",
+    "Evitar texto truncado en secciones criticas del reporte.",
+    "Registrar evidencias, analisis y referencias en Desarrollo.",
+    "Registrar resultados, limitaciones y mejoras en Cierre."
+  ],
+  "activity_rules": [
+    "Documentar y resolver el reto academico semanal como consigna tecnica base.",
+    "Incluir evidencia tecnica verificable en formato textual, tabular o grafico.",
+    "Explicitar decisiones de ingenieria y criterios de evaluacion aplicados.",
+    "Cerrar con acciones de mejora para la siguiente iteracion.",
+    "Concluir con enfoque de ingenieria en mecatronica.",
+    "Vincular cada entrega a competencias y objetivo del programa analitico."
+  ],
+  "quality_gates": [
+    "Confirmar salida estructurada JSON parseable para memoria futura.",
+    "Comprobar que la bibliografia cite el .bib local del curso.",
+    "Verificar consistencia entre portada, metadatos y codigo de curso IMTC.",
+    "Validar que objetivos y evidencias esten alineados al programa analitico.",
+    "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+    "Validar que supuestos queden etiquetados como supuestos.",
+    "Revisar completitud de metadatos institucionales y academicos."
+  ],
+  "latex_rules": [
+    "Conservar clase article en spanish, letterpaper y oneside.",
+    "Mantener \\onehalfspacing para consistencia editorial.",
+    "Mantener bloque de macros institucionales y academicas reutilizables.",
+    "Conservar estilo bibliografico natnumurl y archivo bib del curso.",
+    "No duplicar plantilla completa en memoria; guardar solo reglas reconstruibles.",
+    "Mantener \\bibliography{optativa-iv-fundamental-imtc} en entregables IMTC."
+  ],
+  "bibliography_rules": [
+    "Usar archivo optativa-iv-fundamental-imtc.bib como fuente bibliografica local.",
+    "Citar programa-optativa-iv-fundamental-imtc cuando se hable de alineacion curricular.",
+    "Conservar nota de mantenimiento: actualizar con referencia oficial del curso.",
+    "No inventar fuentes fuera de las disponibles en el nodo.",
+    "Mantener citas y narrativa tecnicas coherentes con evidencias del documento."
+  ],
+  "propagation_hints": [
+    "Mantener deduplicacion por union en siguientes ciclos.",
+    "Preservar ADN editorial completo del nodo en saltos mismo-nodo.",
+    "Priorizar fuentes locales verificables antes de herencia global.",
+    "Aplicar normalizacion manual si reaparece salida no estructurada.",
+    "No eliminar memoria util previa; solo consolidar y reforzar relaciones.",
+    "Ciclo 1 necesita normalizacion manual si se reutiliza.",
+    "Mantener control de parseabilidad JSON en cada ciclo.",
+    "Reutilizar patron Desarrollo y Cierre con mejora continua.",
+    "Ciclo 2 necesita normalizacion manual si se reutiliza."
+  ],
+  "open_questions": [
+    "Confirmar matricula institucional final en formato oficial. [supuesto detectado]",
+    "Definir nombre oficial de figura docente. [supuesto detectado]",
+    "Agregar criterios de evaluacion explicitos si el programa analitico los publica. [supuesto detectado]",
+    "Completar texto truncado en reporte integral base para evitar perdida contextual. [supuesto detectado]"
+  ],
+  "artifact_name": "",
+  "sources": [
+    "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc",
+    "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/programa-analitico-optativa-iv-fundamental-imtc.md",
+    "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/optativa-iv-fundamental-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+  ],
+  "artifact_types": [],
+  "supported_artifact_types": [
+    "reporte"
+  ],
+  "source_documents": [
+    "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/programa-analitico-optativa-iv-fundamental-imtc.md",
+    "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/optativa-iv-fundamental-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+  ],
+  "source_fragments": [
+    "Objetivo: Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+    "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+  ],
+  "concepts": [
+    "Programa analitico de optativa-iv-fundamental-imtc :: fuente=UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/optativa-iv-fundamental-imtc.bib"
+  ],
+  "section_titles": [
+    "Introduccion",
+    "Desarrollo",
+    "Conclusiones"
+  ],
+  "citations": [],
+  "bibliography_index": [
+    "programa-optativa-iv-fundamental-imtc :: Programa analitico de optativa-iv-fundamental-imtc :: fuente=UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/optativa-iv-fundamental-imtc.bib"
+  ],
+  "node_metadata": {
+    "scope_key": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc",
+    "level": "materia",
+    "label": "optativa-iv-fundamental-imtc",
+    "relative_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc",
+    "institution": "UANL",
+    "career": "ingenieria-en-mecatronica",
+    "subject": "optativa-iv-fundamental-imtc",
+    "activity": "",
+    "parent_key": "UANL/ingenieria-en-mecatronica"
+  },
+  "curricular_context": {
+    "institutional_frame": "",
+    "purpose": "",
+    "work_axes": [],
+    "source_fragments": [],
+    "coursename": "Optativa Iv Fundamental",
+    "coursecode": "IMTC",
+    "documentsubject": "Ingenieria en Mecatronica",
+    "documenttitle": "Optativa Iv Fundamental",
+    "documentsubtitle": "Reporte integral - optativa-iv-fundamental-imtc"
+  },
+  "artifact_templates": {
+    "reporte": "reporte-optativa-iv-fundamental-imtc"
+  },
+  "editorial_dna": {
+    "identity": {
+      "tone": [
+        "Tecnico-academico",
+        "Formal y verificable",
+        "Accionable y conciso"
+      ],
+      "institutional": [
+        "Universidad Autonoma de Nuevo Leon",
+        "Facultad de Ingenieria Mecanica y Electrica",
+        "Contexto local del curso IMTC"
+      ],
+      "curricular": [
+        "Alineacion explicita al programa analitico de Optativa Iv Fundamental",
+        "Evidencia de aprendizaje por actividad",
+        "Cierre con mejora continua"
+      ],
+      "node_metadata": {
+        "scope_key": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc",
+        "level": "materia",
+        "label": "optativa-iv-fundamental-imtc",
+        "relative_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc",
+        "institution": "UANL",
+        "career": "ingenieria-en-mecatronica",
+        "subject": "optativa-iv-fundamental-imtc",
+        "activity": "",
+        "parent_key": "UANL/ingenieria-en-mecatronica"
+      },
+      "curricular_context": {
+        "institutional_frame": "",
+        "purpose": "",
+        "work_axes": [],
+        "source_fragments": [],
+        "coursename": "Optativa Iv Fundamental",
+        "coursecode": "IMTC",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "documenttitle": "Optativa Iv Fundamental",
+        "documentsubtitle": "Reporte integral - optativa-iv-fundamental-imtc"
+      },
+      "identity_rules": [
+        "Mantener institucion UANL y facultad FIME en todos los artefactos.",
+        "Mantener programa curricular Ingenieria en Mecatronica.",
+        "Mantener asignatura como Optativa Iv Fundamental y codigo IMTC.",
+        "Usar ubicacion institucional San Nicolas de los Garza, Nuevo Leon.",
+        "Marcar campos pendientes como supuestos cuando no exista dato oficial.",
+        "Fuente provisional: Claude Foundry desde optativa-iv-fundamental-imtc",
+        "Fuente provisional: GPT-Pro desde optativa-iv-fundamental-imtc",
+        "Fuente provisional: Auto (model-router) desde optativa-iv-fundamental-imtc",
+        "Mantener autor Martin Jonathan de la Cruz salvo indicacion oficial contraria.",
+        "Conservar trazabilidad de fuente provisional de motor cuando aplique."
+      ]
+    },
+    "essence": [
+      "Optativa Iv Fundamental",
+      "IMTC",
+      "Ingenieria en Mecatronica",
+      "Actividad 1",
+      "Programa analitico",
+      "Evidencia tecnica",
+      "Mejora continua",
+      "Plantilla LaTeX institucional",
+      "Se preserva memoria util previa y se integra evidencia verificable del contexto local",
+      "Se mantiene trazabilidad a programa analitico, plantilla de actividad y .bib del curso",
+      "Tiempo de espera agotado",
+      "Mantener institucion UANL y facultad FIME en todos los artefactos",
+      "Mantener programa curricular Ingenieria en Mecatronica",
+      "Mantener asignatura como Optativa Iv Fundamental y codigo IMTC",
+      "Usar ubicacion institucional San Nicolas de los Garza, Nuevo Leon",
+      "Marcar campos pendientes como supuestos cuando no exista dato oficial",
+      "Incluir seccion principal Actividad 1 en reportes de actividad",
+      "Incluir subsecciones minimas Desarrollo y Cierre",
+      "Alinear objetivo de actividad con programa analitico del curso",
+      "Incluir introduccion y cierre tecnico en reporte integral cuando aplique",
+      "Documentar y resolver el reto academico semanal como consigna tecnica base.",
+      "Incluir evidencia tecnica verificable en formato textual, tabular o grafico.",
+      "Explicitar decisiones de ingenieria y criterios de evaluacion aplicados.",
+      "Cerrar con acciones de mejora para la siguiente iteracion."
+    ],
+    "structure": {
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones"
+      ],
+      "artifact_types": [
+        "reporte"
+      ],
+      "tex_functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document",
+          "abstractd"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "templateIndex",
+          "templateFinalcfg",
+          "bibliography"
+        ]
+      }
+    },
+    "reason_for_being": [
+      "Incluir seccion principal Actividad 1 en reportes de actividad.",
+      "Incluir subsecciones minimas Desarrollo y Cierre.",
+      "Alinear objetivo de actividad con programa analitico del curso.",
+      "Incluir introduccion y cierre tecnico en reporte integral cuando aplique.",
+      "Evitar texto truncado en secciones criticas del reporte.",
+      "Registrar evidencias, analisis y referencias en Desarrollo.",
+      "Registrar resultados, limitaciones y mejoras en Cierre.",
+      "Documentar y resolver el reto academico semanal como consigna tecnica base.",
+      "Incluir evidencia tecnica verificable en formato textual, tabular o grafico.",
+      "Explicitar decisiones de ingenieria y criterios de evaluacion aplicados.",
+      "Cerrar con acciones de mejora para la siguiente iteracion.",
+      "Concluir con enfoque de ingenieria en mecatronica.",
+      "Vincular cada entrega a competencias y objetivo del programa analitico.",
+      "Introduccion",
+      "Desarrollo",
+      "Conclusiones"
+    ],
+    "style_markers": [
+      "Secciones minimas fijas en actividades.",
+      "Metadatos institucionales declarados por macros.",
+      "Conclusiones con resultados, limitaciones y mejoras.",
+      "Uso de supuestos etiquetados cuando falta dato oficial.",
+      "Mantener institucion UANL y facultad FIME en todos los artefactos.",
+      "Mantener programa curricular Ingenieria en Mecatronica.",
+      "Mantener asignatura como Optativa Iv Fundamental y codigo IMTC.",
+      "Usar ubicacion institucional San Nicolas de los Garza, Nuevo Leon.",
+      "Marcar campos pendientes como supuestos cuando no exista dato oficial.",
+      "Conservar clase article en spanish, letterpaper y oneside.",
+      "Mantener \\onehalfspacing para consistencia editorial.",
+      "Mantener bloque de macros institucionales y academicas reutilizables.",
+      "Conservar estilo bibliografico natnumurl y archivo bib del curso.",
+      "No duplicar plantilla completa en memoria; guardar solo reglas reconstruibles.",
+      "Mantener \\bibliography{optativa-iv-fundamental-imtc} en entregables IMTC.",
+      "Mantener autor Martin Jonathan de la Cruz salvo indicacion oficial contraria."
+    ],
+    "argumentative_patterns": [
+      "Objetivo alineado -> desarrollo con evidencia -> cierre con mejora.",
+      "Consigna tecnica -> decisiones de ingenieria -> justificacion con referencia local.",
+      "Hallazgo -> limitacion -> accion correctiva siguiente iteracion.",
+      "Incluir seccion principal Actividad 1 en reportes de actividad.",
+      "Incluir subsecciones minimas Desarrollo y Cierre.",
+      "Alinear objetivo de actividad con programa analitico del curso.",
+      "Incluir introduccion y cierre tecnico en reporte integral cuando aplique.",
+      "Evitar texto truncado en secciones criticas del reporte.",
+      "Documentar y resolver el reto academico semanal como consigna tecnica base.",
+      "Incluir evidencia tecnica verificable en formato textual, tabular o grafico.",
+      "Explicitar decisiones de ingenieria y criterios de evaluacion aplicados.",
+      "Cerrar con acciones de mejora para la siguiente iteracion.",
+      "Concluir con enfoque de ingenieria en mecatronica.",
+      "Comprobar que la bibliografia cite el .bib local del curso.",
+      "Verificar consistencia entre portada, metadatos y codigo de curso IMTC.",
+      "Validar que objetivos y evidencias esten alineados al programa analitico.",
+      "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+      "Registrar evidencias, analisis y referencias en Desarrollo.",
+      "Vincular cada entrega a competencias y objetivo del programa analitico.",
+      "Registrar resultados, limitaciones y mejoras en Cierre."
+    ],
+    "reinforcement_log": [
+      "Se preservaron reglas historicas utiles sin eliminacion.",
+      "Se reforzo parseabilidad JSON como compuerta de calidad.",
+      "Se consolidaron reglas LaTeX reconstruibles sin copiar plantillas completas.",
+      "Se anclo la bibliografia al .bib local y cita canonica del programa.",
+      "Se mantuvieron pendientes como supuestos etiquetados.",
+      "Refuerzo editorial aplicado sobre 52 conceptos y 0 citas.",
+      "Canonizacion local aplicada con union y deduplicacion sin recorte.",
+      "Se preserva memoria util previa y se integra evidencia verificable del contexto local.",
+      "ADN sintetizado con 53 conceptos, 1 citas y 15 relaciones.",
+      "Memoria de redacción preservada en 8 bloques.",
+      "Refuerzo editorial aplicado sobre 1 conceptos y 0 citas.",
+      "Salida sin JSON parseable desde Claude Foundry para optativa-iv-fundamental-imtc",
+      "Salida sin JSON parseable desde GPT-Pro para optativa-iv-fundamental-imtc",
+      "Se preservan reglas previas sin eliminacion.",
+      "Se consolidan reglas repetidas por union y deduplicacion.",
+      "Se refuerza relacion Actividad 1 -> Programa analitico -> Evidencia tecnica -> Cierre con mejora.",
+      "Se mantiene riesgo de truncamiento del reporte integral como pendiente explicito [supuesto detectado].",
+      "Se mantiene obligatoriedad de JSON parseable por historial de fallas de estructura.",
+      "Refuerzo editorial aplicado sobre 58 conceptos y 0 citas.",
+      "ADN sintetizado con 69 conceptos, 1 citas y 22 relaciones.",
+      "Salida sin JSON parseable desde Auto (model-router) para optativa-iv-fundamental-imtc",
+      "Refuerzo editorial aplicado sobre 6 conceptos y 0 citas.",
+      "ADN sintetizado con 70 conceptos, 1 citas y 28 relaciones.",
+      "Ciclo 2: se preserva memoria previa completa por union y deduplicacion local.",
+      "Ciclo 2: se refuerza control de JSON parseable por riesgo historico confirmado.",
+      "Ciclo 2: se mantiene riesgo de texto truncado como abierto y etiquetado [supuesto detectado].",
+      "Ciclo 2: se refuerzan relaciones objetivo-evidencia-cierre con fuente local verificable.",
+      "Refuerzo editorial aplicado sobre 59 conceptos y 0 citas.",
+      "ADN sintetizado con 76 conceptos, 1 citas y 34 relaciones."
+    ],
+    "knowledge_graph": {
+      "concepts": [
+        "Optativa Iv Fundamental",
+        "IMTC",
+        "Ingenieria en Mecatronica",
+        "Actividad 1",
+        "Programa analitico",
+        "Evidencia tecnica",
+        "Mejora continua",
+        "Plantilla LaTeX institucional",
+        "Se preserva memoria util previa y se integra evidencia verificable del contexto local",
+        "Se mantiene trazabilidad a programa analitico, plantilla de actividad y .bib del curso",
+        "Tiempo de espera agotado",
+        "Mantener institucion UANL y facultad FIME en todos los artefactos",
+        "Mantener programa curricular Ingenieria en Mecatronica",
+        "Mantener asignatura como Optativa Iv Fundamental y codigo IMTC",
+        "Usar ubicacion institucional San Nicolas de los Garza, Nuevo Leon",
+        "Marcar campos pendientes como supuestos cuando no exista dato oficial",
+        "Incluir seccion principal Actividad 1 en reportes de actividad",
+        "Incluir subsecciones minimas Desarrollo y Cierre",
+        "Alinear objetivo de actividad con programa analitico del curso",
+        "Incluir introduccion y cierre tecnico en reporte integral cuando aplique",
+        "Evitar texto truncado en secciones criticas del reporte",
+        "Documentar y resolver el reto academico semanal como consigna tecnica base",
+        "Incluir evidencia tecnica verificable en formato textual, tabular o grafico",
+        "Explicitar decisiones de ingenieria y criterios de evaluacion aplicados",
+        "Cerrar con acciones de mejora para la siguiente iteracion",
+        "Concluir con enfoque de ingenieria en mecatronica",
+        "Comprobar que la bibliografia cite el .bib local del curso",
+        "Verificar consistencia entre portada, metadatos y codigo de curso IMTC",
+        "Validar que objetivos y evidencias esten alineados al programa analitico",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo",
+        "Confirmar matricula institucional final en formato oficial. [supuesto detectado]",
+        "Definir nombre oficial de figura docente. [supuesto detectado]",
+        "Agregar criterios de evaluacion explicitos si el programa analitico los publica. [supuesto detectado]",
+        "Completar texto truncado en reporte integral base para evitar perdida contextual. [supuesto detectado]",
+        "Documentar avance tecnico con trazabilidad curricular",
+        "Estandarizar entregables LaTeX reutilizables sin perder identidad institucional",
+        "Sostener evidencia verificable y decisiones de ingenieria",
+        "Servir como memoria editorial persistente y reconstruible del curso",
+        "Reducir deriva de formato y contenido entre ciclos",
+        "Garantizar coherencia entre actividad, evaluacion y bibliografia local",
+        "Secciones minimas fijas en actividades",
+        "Metadatos institucionales declarados por macros",
+        "Conclusiones con resultados, limitaciones y mejoras",
+        "Uso de supuestos etiquetados cuando falta dato oficial",
+        "Objetivo alineado -> desarrollo con evidencia -> cierre con mejora",
+        "Consigna tecnica -> decisiones de ingenieria -> justificacion con referencia local",
+        "Hallazgo -> limitacion -> accion correctiva siguiente iteracion",
+        "programa-optativa-iv-fundamental-imtc",
+        "programa-analitico-optativa-iv-fundamental-imtc.md",
+        "reporte-optativa-iv-fundamental-imtc-Actividad-1.tex",
+        "reporte-optativa-iv-fundamental-imtc.tex",
+        "optativa-iv-fundamental-imtc.bib",
+        "Programa analitico de optativa-iv-fundamental-imtc :: fuente=UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/optativa-iv-fundamental-imtc.bib",
+        "Consistencia editorial",
+        "Conclusiones de ingenieria",
+        "Se confirma coexistencia de plantilla de actividad y reporte integral en el nodo local",
+        "Se detecta texto truncado en reporte integral base y se mantiene como riesgo abierto [supuesto detectado]",
+        "Registrar evidencias, analisis y referencias en Desarrollo",
+        "Registrar resultados, limitaciones y mejoras en Cierre",
+        "Vincular cada entrega a competencias y objetivo del programa analitico",
+        "Validar que supuestos queden etiquetados como supuestos",
+        "Revisar completitud de metadatos institucionales y academicos",
+        "Asegurar entregables tecnicos alineados al programa analitico del nodo",
+        "Mantener trazabilidad entre objetivo, evidencia y cierre de ingenieria",
+        "Preservar reconstruibilidad editorial en LaTeX sin perdida de identidad institucional",
+        "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/programa-analitico-optativa-iv-fundamental-imtc.md",
+        "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/optativa-iv-fundamental-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc-Actividad-1.tex",
+        "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex",
+        "Mantener autor Martin Jonathan de la Cruz salvo indicacion oficial contraria",
+        "Parseabilidad JSON",
+        "Se registran fallos previos de salida no parseable en motores Claude Foundry, GPT-Pro y Auto (model-router)",
+        "Se refuerza que el checklist local exige objetivo alineado, evidencias citadas y cierre de ingenieria en mecatronica",
+        "Asegurar coherencia entre identidad institucional, estructura tecnica y trazabilidad academica",
+        "Producir entregables reconstruibles, verificables y alineados al programa analitico",
+        "Sostener mejora continua mediante cierres tecnicos con acciones siguientes"
+      ],
+      "citations": [
+        "programa-optativa-iv-fundamental-imtc"
+      ],
+      "evidence": [
+        "programa-analitico-optativa-iv-fundamental-imtc.md",
+        "reporte-optativa-iv-fundamental-imtc-Actividad-1.tex",
+        "reporte-optativa-iv-fundamental-imtc.tex",
+        "optativa-iv-fundamental-imtc.bib",
+        "Canonizacion local aplicada con union y deduplicacion sin recorte.",
+        "Se preserva memoria util previa y se integra evidencia verificable del contexto local.",
+        "Se corrige riesgo historico de salida no estructurada con formato JSON parseable obligatorio.",
+        "Se mantiene trazabilidad a programa analitico, plantilla de actividad y .bib del curso.",
+        "Tiempo de espera agotado.",
+        "Confirmar salida estructurada JSON parseable para memoria futura.",
+        "Comprobar que la bibliografia cite el .bib local del curso.",
+        "Verificar consistencia entre portada, metadatos y codigo de curso IMTC.",
+        "Validar que objetivos y evidencias esten alineados al programa analitico.",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+        "programa-optativa-iv-fundamental-imtc :: Programa analitico de optativa-iv-fundamental-imtc :: fuente=UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/optativa-iv-fundamental-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/programa-analitico-optativa-iv-fundamental-imtc.md",
+        "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/optativa-iv-fundamental-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex",
+        "Salida sin JSON parseable desde Claude Foundry para optativa-iv-fundamental-imtc",
+        "Salida sin JSON parseable desde GPT-Pro para optativa-iv-fundamental-imtc",
+        "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc-Actividad-1.tex",
+        "Se confirma coexistencia de plantilla de actividad y reporte integral en el nodo local.",
+        "Se detecta texto truncado en reporte integral base y se mantiene como riesgo abierto [supuesto detectado].",
+        "Validar que supuestos queden etiquetados como supuestos.",
+        "Revisar completitud de metadatos institucionales y academicos.",
+        "Salida sin JSON parseable desde Auto (model-router) para optativa-iv-fundamental-imtc",
+        "Se registran fallos previos de salida no parseable en motores Claude Foundry, GPT-Pro y Auto (model-router).",
+        "Se refuerza que el checklist local exige objetivo alineado, evidencias citadas y cierre de ingenieria en mecatronica."
+      ],
+      "relations": [
+        {
+          "source": "Actividad 1",
+          "target": "Programa analitico",
+          "kind": "depends_on",
+          "weight": 3,
+          "justification": "El checklist local exige objetivo de actividad alineado al programa analitico.",
+          "evidence": []
+        },
+        {
+          "source": "Evidencia tecnica",
+          "target": "Conclusiones de ingenieria",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "Las conclusiones deben sostenerse con evidencia textual, tabular o grafica.",
+          "evidence": []
+        },
+        {
+          "source": "Plantilla LaTeX institucional",
+          "target": "Consistencia editorial",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "Macros y formato fijo preservan identidad y reconstruibilidad.",
+          "evidence": []
+        },
+        {
+          "source": "programa-optativa-iv-fundamental-imtc",
+          "target": "Alineacion curricular",
+          "kind": "supports",
+          "weight": 2,
+          "justification": "Es la cita local definida para justificar alineacion del curso.",
+          "evidence": []
+        },
+        {
+          "source": "Cierre con mejoras",
+          "target": "Mejora continua",
+          "kind": "develops",
+          "weight": 3,
+          "justification": "La regla de actividad exige acciones para la siguiente iteracion.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva memoria util previa y se integra evidencia verificable del contexto local",
+          "target": "Se mantiene trazabilidad a programa analitico, plantilla de actividad y .bib del curso",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva memoria util previa y se integra evidencia verificable del contexto local",
+          "target": "Tiempo de espera agotado",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene trazabilidad a programa analitico, plantilla de actividad y .bib del curso",
+          "target": "Tiempo de espera agotado",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene trazabilidad a programa analitico, plantilla de actividad y .bib del curso",
+          "target": "Mantener institucion UANL y facultad FIME en todos los artefactos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Tiempo de espera agotado",
+          "target": "Mantener institucion UANL y facultad FIME en todos los artefactos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Tiempo de espera agotado",
+          "target": "Mantener programa curricular Ingenieria en Mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener institucion UANL y facultad FIME en todos los artefactos",
+          "target": "Mantener programa curricular Ingenieria en Mecatronica",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener institucion UANL y facultad FIME en todos los artefactos",
+          "target": "Mantener asignatura como Optativa Iv Fundamental y codigo IMTC",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener programa curricular Ingenieria en Mecatronica",
+          "target": "Mantener asignatura como Optativa Iv Fundamental y codigo IMTC",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Resumen editorial",
+          "target": "Optativa Iv Fundamental",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0001"
+          ]
+        },
+        {
+          "source": "programa-optativa-iv-fundamental-imtc",
+          "target": "Programa analitico",
+          "kind": "supports",
+          "weight": 1,
+          "justification": "Es la cita local definida para justificar alineacion curricular.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene trazabilidad a programa analitico, plantilla de actividad y .bib del curso",
+          "target": "Se confirma coexistencia de plantilla de actividad y reporte integral en el nodo local",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Tiempo de espera agotado",
+          "target": "Se confirma coexistencia de plantilla de actividad y reporte integral en el nodo local",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Tiempo de espera agotado",
+          "target": "Se detecta texto truncado en reporte integral base y se mantiene como riesgo abierto [supuesto detectado]",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma coexistencia de plantilla de actividad y reporte integral en el nodo local",
+          "target": "Se detecta texto truncado en reporte integral base y se mantiene como riesgo abierto [supuesto detectado]",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma coexistencia de plantilla de actividad y reporte integral en el nodo local",
+          "target": "Mantener institucion UANL y facultad FIME en todos los artefactos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se detecta texto truncado en reporte integral base y se mantiene como riesgo abierto [supuesto detectado]",
+          "target": "Mantener institucion UANL y facultad FIME en todos los artefactos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener programa curricular Ingenieria en Mecatronica",
+          "target": "Usar ubicacion institucional San Nicolas de los Garza, Nuevo Leon",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener asignatura como Optativa Iv Fundamental y codigo IMTC",
+          "target": "Usar ubicacion institucional San Nicolas de los Garza, Nuevo Leon",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener asignatura como Optativa Iv Fundamental y codigo IMTC",
+          "target": "Marcar campos pendientes como supuestos cuando no exista dato oficial",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar ubicacion institucional San Nicolas de los Garza, Nuevo Leon",
+          "target": "Marcar campos pendientes como supuestos cuando no exista dato oficial",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar ubicacion institucional San Nicolas de los Garza, Nuevo Leon",
+          "target": "Mantener autor Martin Jonathan de la Cruz salvo indicacion oficial contraria",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Marcar campos pendientes como supuestos cuando no exista dato oficial",
+          "target": "Mantener autor Martin Jonathan de la Cruz salvo indicacion oficial contraria",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva memoria util previa y se integra evidencia verificable del contexto local",
+          "target": "Se confirma coexistencia de plantilla de actividad y reporte integral en el nodo local",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene trazabilidad a programa analitico, plantilla de actividad y .bib del curso",
+          "target": "Se detecta texto truncado en reporte integral base y se mantiene como riesgo abierto [supuesto detectado]",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma coexistencia de plantilla de actividad y reporte integral en el nodo local",
+          "target": "Se registran fallos previos de salida no parseable en motores Claude Foundry, GPT-Pro y Auto (model-router)",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se detecta texto truncado en reporte integral base y se mantiene como riesgo abierto [supuesto detectado]",
+          "target": "Se registran fallos previos de salida no parseable en motores Claude Foundry, GPT-Pro y Auto (model-router)",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se detecta texto truncado en reporte integral base y se mantiene como riesgo abierto [supuesto detectado]",
+          "target": "Se refuerza que el checklist local exige objetivo alineado, evidencias citadas y cierre de ingenieria en mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se registran fallos previos de salida no parseable en motores Claude Foundry, GPT-Pro y Auto (model-router)",
+          "target": "Se refuerza que el checklist local exige objetivo alineado, evidencias citadas y cierre de ingenieria en mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        }
+      ],
+      "concept_weights": {
+        "Se preserva memoria util previa y se integra evidencia verificable del contexto local": 3,
+        "Se mantiene trazabilidad a programa analitico, plantilla de actividad y .bib del curso": 3,
+        "Tiempo de espera agotado": 2,
+        "Mantener institucion UANL y facultad FIME en todos los artefactos": 5,
+        "Mantener programa curricular Ingenieria en Mecatronica": 5,
+        "Mantener asignatura como Optativa Iv Fundamental y codigo IMTC": 5,
+        "Usar ubicacion institucional San Nicolas de los Garza, Nuevo Leon": 5,
+        "Marcar campos pendientes como supuestos cuando no exista dato oficial": 5,
+        "Incluir seccion principal Actividad 1 en reportes de actividad": 3,
+        "Incluir subsecciones minimas Desarrollo y Cierre": 3,
+        "Alinear objetivo de actividad con programa analitico del curso": 3,
+        "Incluir introduccion y cierre tecnico en reporte integral cuando aplique": 3,
+        "Evitar texto truncado en secciones criticas del reporte": 3,
+        "Documentar y resolver el reto academico semanal como consigna tecnica base": 3,
+        "Incluir evidencia tecnica verificable en formato textual, tabular o grafico": 3,
+        "Explicitar decisiones de ingenieria y criterios de evaluacion aplicados": 3,
+        "Cerrar con acciones de mejora para la siguiente iteracion": 3,
+        "Concluir con enfoque de ingenieria en mecatronica": 3,
+        "Comprobar que la bibliografia cite el .bib local del curso": 3,
+        "Verificar consistencia entre portada, metadatos y codigo de curso IMTC": 3,
+        "Validar que objetivos y evidencias esten alineados al programa analitico": 3,
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo": 7,
+        "Confirmar matricula institucional final en formato oficial. [supuesto detectado]": 3,
+        "Definir nombre oficial de figura docente. [supuesto detectado]": 3,
+        "Agregar criterios de evaluacion explicitos si el programa analitico los publica. [supuesto detectado]": 3,
+        "Completar texto truncado en reporte integral base para evitar perdida contextual. [supuesto detectado]": 3,
+        "Documentar avance tecnico con trazabilidad curricular": 1,
+        "Estandarizar entregables LaTeX reutilizables sin perder identidad institucional": 1,
+        "Sostener evidencia verificable y decisiones de ingenieria": 1,
+        "Servir como memoria editorial persistente y reconstruible del curso": 1,
+        "Reducir deriva de formato y contenido entre ciclos": 1,
+        "Garantizar coherencia entre actividad, evaluacion y bibliografia local": 1,
+        "Secciones minimas fijas en actividades": 3,
+        "Metadatos institucionales declarados por macros": 3,
+        "Conclusiones con resultados, limitaciones y mejoras": 3,
+        "Uso de supuestos etiquetados cuando falta dato oficial": 3,
+        "Objetivo alineado -> desarrollo con evidencia -> cierre con mejora": 3,
+        "Consigna tecnica -> decisiones de ingenieria -> justificacion con referencia local": 3,
+        "Hallazgo -> limitacion -> accion correctiva siguiente iteracion": 3,
+        "Optativa Iv Fundamental": 3,
+        "IMTC": 3,
+        "Ingenieria en Mecatronica": 3,
+        "Actividad 1": 3,
+        "Programa analitico": 3,
+        "Evidencia tecnica": 3,
+        "Mejora continua": 3,
+        "Plantilla LaTeX institucional": 3,
+        "programa-optativa-iv-fundamental-imtc": 3,
+        "programa-analitico-optativa-iv-fundamental-imtc.md": 1,
+        "reporte-optativa-iv-fundamental-imtc-Actividad-1.tex": 1,
+        "reporte-optativa-iv-fundamental-imtc.tex": 1,
+        "optativa-iv-fundamental-imtc.bib": 1,
+        "Se confirma coexistencia de plantilla de actividad y reporte integral en el nodo local": 2,
+        "Se detecta texto truncado en reporte integral base y se mantiene como riesgo abierto [supuesto detectado]": 2,
+        "Registrar evidencias, analisis y referencias en Desarrollo": 2,
+        "Registrar resultados, limitaciones y mejoras en Cierre": 2,
+        "Vincular cada entrega a competencias y objetivo del programa analitico": 2,
+        "Validar que supuestos queden etiquetados como supuestos": 2,
+        "Revisar completitud de metadatos institucionales y academicos": 2,
+        "Asegurar entregables tecnicos alineados al programa analitico del nodo": 1,
+        "Mantener trazabilidad entre objetivo, evidencia y cierre de ingenieria": 1,
+        "Preservar reconstruibilidad editorial en LaTeX sin perdida de identidad institucional": 1,
+        "Consistencia editorial": 1,
+        "Conclusiones de ingenieria": 1,
+        "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/programa-analitico-optativa-iv-fundamental-imtc.md": 2,
+        "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/optativa-iv-fundamental-imtc.bib": 2,
+        "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc-Actividad-1.tex": 2,
+        "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex": 2,
+        "Mantener autor Martin Jonathan de la Cruz salvo indicacion oficial contraria": 3,
+        "Se registran fallos previos de salida no parseable en motores Claude Foundry, GPT-Pro y Auto (model-router)": 1,
+        "Se refuerza que el checklist local exige objetivo alineado, evidencias citadas y cierre de ingenieria en mecatronica": 1,
+        "Asegurar coherencia entre identidad institucional, estructura tecnica y trazabilidad academica": 1,
+        "Producir entregables reconstruibles, verificables y alineados al programa analitico": 1,
+        "Sostener mejora continua mediante cierres tecnicos con acciones siguientes": 1,
+        "Parseabilidad JSON": 1
+      },
+      "citation_weights": {}
+    },
+    "writing_memory": [
+      {
+        "id": "b0001",
+        "order": 1,
+        "kind": "abstract",
+        "section": "Resumen editorial",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Objetivo: Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+        "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+      },
+      {
+        "id": "b0002",
+        "order": 2,
+        "kind": "section",
+        "section": "Introduccion",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Introduccion",
+        "latex": "\\section{Introduccion}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+      },
+      {
+        "id": "b0003",
+        "order": 3,
+        "kind": "paragraph",
+        "section": "Introduccion",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+        "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+      },
+      {
+        "id": "b0004",
+        "order": 4,
+        "kind": "section",
+        "section": "Desarrollo",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Desarrollo",
+        "latex": "\\section{Desarrollo}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+      },
+      {
+        "id": "b0005",
+        "order": 5,
+        "kind": "paragraph",
+        "section": "Desarrollo",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+        "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+      },
+      {
+        "id": "b0006",
+        "order": 6,
+        "kind": "section",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Conclusiones",
+        "latex": "\\section{Conclusiones}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+      },
+      {
+        "id": "b0007",
+        "order": 7,
+        "kind": "paragraph",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+        "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+      },
+      {
+        "id": "b0008",
+        "order": 8,
+        "kind": "paragraph",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "natnumurl",
+        "latex": "\\bibliographystyle{natnumurl}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+      }
+    ],
+    "reconstructable_source": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Optativa Iv Fundamental}\n\\def\\documentsubtitle {Reporte integral - optativa-iv-fundamental-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Optativa Iv Fundamental}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia optativa iv fundamental.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{optativa-iv-fundamental-imtc}\n\n\\end{document}\n"
+  },
+  "tex_blueprint": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex",
+        "documenttitle": "Optativa Iv Fundamental",
+        "documentsubtitle": "Reporte integral - optativa-iv-fundamental-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Optativa Iv Fundamental",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+        "section_titles": [
+          "Introduccion",
+          "Desarrollo",
+          "Conclusiones"
+        ],
+        "subsection_titles": [],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [
+          "Objetivo: Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+          "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+        ],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex",
+          "raw_latex_sha256": "70bc159502a308b0d83804ecd103bbb342ba87309803e4093a38826dac5cf4ea",
+          "raw_latex_chars": 1726,
+          "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Optativa Iv Fundamental}\n\\def\\documentsubtitle {Reporte integral - optativa-iv-fundamental-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Optativa Iv Fundamental}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia optativa iv fundamental.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{optativa-iv-fundamental-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document",
+              "abstractd"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "templateIndex",
+              "templateFinalcfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex",
+      "documenttitle": "Optativa Iv Fundamental",
+      "documentsubtitle": "Reporte integral - optativa-iv-fundamental-imtc",
+      "documentsubject": "Ingenieria en Mecatronica",
+      "coursename": "Optativa Iv Fundamental",
+      "coursecode": "IMTC",
+      "documentauthor": "Martin Jonathan de la Cruz",
+      "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones"
+      ],
+      "subsection_titles": [],
+      "cited_keys": [],
+      "concepts": [],
+      "source_fragments": [
+        "Objetivo: Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+        "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+      ],
+      "content_memory": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex",
+        "raw_latex_sha256": "70bc159502a308b0d83804ecd103bbb342ba87309803e4093a38826dac5cf4ea",
+        "raw_latex_chars": 1726,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Optativa Iv Fundamental}\n\\def\\documentsubtitle {Reporte integral - optativa-iv-fundamental-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Optativa Iv Fundamental}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia optativa iv fundamental.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{optativa-iv-fundamental-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    }
+  },
+  "tex_content_memory": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex",
+        "raw_latex_sha256": "70bc159502a308b0d83804ecd103bbb342ba87309803e4093a38826dac5cf4ea",
+        "raw_latex_chars": 1726,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Optativa Iv Fundamental}\n\\def\\documentsubtitle {Reporte integral - optativa-iv-fundamental-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Optativa Iv Fundamental}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia optativa iv fundamental.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{optativa-iv-fundamental-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex",
+      "raw_latex_sha256": "70bc159502a308b0d83804ecd103bbb342ba87309803e4093a38826dac5cf4ea",
+      "raw_latex_chars": 1726,
+      "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Optativa Iv Fundamental}\n\\def\\documentsubtitle {Reporte integral - optativa-iv-fundamental-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Optativa Iv Fundamental}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia optativa iv fundamental.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{optativa-iv-fundamental-imtc}\n\n\\end{document}\n",
+      "functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document",
+          "abstractd"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "templateIndex",
+          "templateFinalcfg",
+          "bibliography"
+        ]
+      },
+      "paragraph_map": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "abstract",
+          "section": "Resumen editorial",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Objetivo: Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+          "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "section",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Introduccion",
+          "latex": "\\section{Introduccion}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "paragraph",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "section",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\section{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "paragraph",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "section",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Conclusiones",
+          "latex": "\\section{Conclusiones}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        },
+        {
+          "id": "b0008",
+          "order": 8,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        }
+      ],
+      "content_blocks": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "abstract",
+          "section": "Resumen editorial",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Objetivo: Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+          "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia optativa iv fundamental.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "section",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Introduccion",
+          "latex": "\\section{Introduccion}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "paragraph",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "section",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\section{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "paragraph",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "section",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Conclusiones",
+          "latex": "\\section{Conclusiones}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        },
+        {
+          "id": "b0008",
+          "order": 8,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/reporte-optativa-iv-fundamental-imtc.tex"
+        }
+      ],
+      "citation_map": {},
+      "all_cited_keys": [],
+      "missing_bibliography_keys": []
+    },
+    "bibliography_sources": {
+      "programa-optativa-iv-fundamental-imtc": {
+        "key": "programa-optativa-iv-fundamental-imtc",
+        "source_type": "bibtex",
+        "source_path": "UANL/ingenieria-en-mecatronica/optativa-iv-fundamental-imtc/optativa-iv-fundamental-imtc.bib",
+        "entry_type": "misc",
+        "title": "Programa analitico de optativa-iv-fundamental-imtc",
+        "author": "UANL",
+        "year": "2026",
+        "url": "https://www.uanl.mx/",
+        "note": "Actualizar con la referencia oficial del curso",
+        "raw_entry": "@misc{programa-optativa-iv-fundamental-imtc,\n  author = {UANL},\n  title = {Programa analitico de optativa-iv-fundamental-imtc},\n  year = {2026},\n  note = {Actualizar con la referencia oficial del curso},\n  url = {https://www.uanl.mx/}\n}"
+      }
+    }
+  },
+  "locked_sections": [],
+  "compression": {
+    "method": "union-dedupe",
+    "lossless": true
+  },
+  "schema_version": 3
+}

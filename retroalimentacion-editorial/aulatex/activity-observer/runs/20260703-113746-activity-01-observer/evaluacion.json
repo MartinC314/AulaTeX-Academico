@@ -1,0 +1,17 @@
+{
+  "passed": false,
+  "score": 71.43,
+  "checks": {
+    "tex_exists": true,
+    "pdf_exists": true,
+    "bibliography_ready": false,
+    "extractor_ready": false,
+    "draft_without_placeholders": true,
+    "sections_minimum": true,
+    "compile_ready": true
+  },
+  "critical_findings": [
+    "Hay claves bibliográficas faltantes o no hay .bib canónico."
+  ],
+  "next_action": "repair-bibliography"
+}

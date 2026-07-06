@@ -1,0 +1,2507 @@
+{
+  "summary": [
+    "Se canoniza memoria local de Actividad 1 para IMTC con base en plantilla .tex, .bib y programa analitico local.",
+    "No hay ADN historico previo del nodo; se inicializa sin regresion y con preservacion total de evidencia disponible.",
+    "Se fija enfoque: actividad alineada al programa analitico, con evidencias tecnicas y cierre orientado a mecatronica.",
+    "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+    "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+    "Se preserva canon local de Actividad 1 IMTC sin cambios regresivos.",
+    "La memoria sigue alineada a plantilla .tex, .bib local y programa analitico.",
+    "Se mantiene enfoque en evidencia tecnica y cierre aplicado a mecatronica.",
+    "Se conserva registro de fallas historicas de salidas no parseables como riesgo de calidad.",
+    "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+    "Se preserva canon local de Actividad 1 IMTC sin regresion.",
+    "La memoria permanece alineada a plantilla .tex, .bib local y programa analitico.",
+    "Se conserva riesgo historico: salidas no JSON parseable de Claude Foundry, GPT-Pro y Auto (model-router).",
+    "Se confirma fuente reconstruible local en reporte-mecanica-de-materiales-imtc-Actividad-1.tex.",
+    "Se confirma metadato verificable de autor en plantilla: Martin Jonathan de la Cruz [verificado en .tex]."
+  ],
+  "identity_rules": [
+    "Mantener identidad institucional UANL y FIME en portada y metadatos.",
+    "Usar asignatura Mecanica De Materiales y codigo IMTC de forma consistente.",
+    "Conservar programa Ingenieria en Mecatronica en tabla de autor.",
+    "Respetar tono academico-tecnico, claro y verificable.",
+    "Marcar supuestos explicitamente cuando falte dato docente o referencia oficial.",
+    "Fuente provisional: Claude Foundry desde Actividad 1",
+    "Fuente provisional: GPT-Pro desde Actividad 1",
+    "Mantener ubicacion institucional San Nicolas de los Garza, Nuevo Leon.",
+    "Fuente provisional: Claude Foundry desde Actividad 1.",
+    "Fuente provisional: GPT-Pro desde Actividad 1.",
+    "Fuente provisional: Auto (model-router) desde Actividad 1",
+    "Conservar autor Martin Jonathan de la Cruz en metadatos mientras no exista instruccion oficial distinta [supuesto].",
+    "Fuente provisional canonica: Auto (model-router), Claude Foundry y GPT-Pro desde Actividad 1 [supuesto]."
+  ],
+  "structure_rules": [
+    "Conservar estructura minima de Actividad 1: seccion principal, Desarrollo y Cierre.",
+    "Incluir consigna tecnica al inicio de la actividad.",
+    "Mantener portada via template institucional ya referenciado.",
+    "Usar interlineado onehalfspacing en el cuerpo.",
+    "Cerrar con bibliografia enlazada al archivo mecanica-de-materiales-imtc.bib.",
+    "Mantener correspondencia entre titulos editoriales y secciones reales del .tex.",
+    "Conservar estructura minima: seccion principal, Desarrollo y Cierre.",
+    "Cerrar con bibliografia enlazada a mecanica-de-materiales-imtc.bib."
+  ],
+  "activity_rules": [
+    "Alinear objetivo de la actividad con el programa analitico del curso.",
+    "Documentar evidencias tecnicas y academicas en Desarrollo.",
+    "Incluir analisis de resultados y no solo descripcion.",
+    "Reportar limitaciones y mejoras en Cierre.",
+    "Expresar impacto en formacion de ingenieria en mecatronica.",
+    "Mantener consigna resoluble y medible para la semana."
+  ],
+  "quality_gates": [
+    "Validar que la salida sea JSON parseable antes de propagacion.",
+    "Verificar consistencia entre metadatos: curso, codigo, programa e institucion.",
+    "Comprobar que toda afirmacion tecnica tenga evidencia o cita local.",
+    "No inventar fuentes; usar solo .bib local o marcar pendiente.",
+    "Revisar que la actividad conserve secciones requeridas y bibliografia activa.",
+    "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+    "Verificar que \\input{template} permanezca activo como dependencia.",
+    "Confirmar que la clave bibliografica curricular exista en el .bib local.",
+    "Verificar que autor, matricula y figura docente en tabla se mantengan trazables y con supuestos marcados cuando aplique."
+  ],
+  "latex_rules": [
+    "Preservar macros de identidad documental definidas en la plantilla local.",
+    "No eliminar \\input{template}; es dependencia estructural.",
+    "Mantener \\bibliographystyle{natnumurl} y \\bibliography{mecanica-de-materiales-imtc}.",
+    "Evitar copiar bloques LaTeX completos en memoria editorial; guardar reglas reconstruibles.",
+    "Conservar convencion de nombres de archivo reporte-mecanica-de-materiales-imtc-Actividad-1.tex.",
+    "Mantener macros curriculares: \\coursename, \\coursecode, \\documentsubject.",
+    "Conservar convencion de archivo reporte-mecanica-de-materiales-imtc-Actividad-1.tex."
+  ],
+  "bibliography_rules": [
+    "Usar mecanica-de-materiales-imtc.bib como fuente bibliografica del nodo.",
+    "Citar entrada local programa-mecanica-de-materiales-imtc cuando se hable de alineacion curricular.",
+    "Marcar como supuesto la nota de .bib que indica referencia oficial pendiente de actualizar.",
+    "No agregar citas externas no verificadas en el contexto local.",
+    "Mantener trazabilidad entre afirmaciones curriculares y la entrada .bib local.",
+    "Citar programa-mecanica-de-materiales-imtc al hablar de alineacion curricular.",
+    "Marcar como supuesto la nota del .bib sobre referencia oficial pendiente de actualizar."
+  ],
+  "propagation_hints": [
+    "Propagacion local: reutilizar estas reglas en futuras actividades IMTC del mismo nodo.",
+    "Mantener estrategia union-dedupe para evitar perdida de memoria util.",
+    "Si aparece nueva evidencia local, anexar sin reemplazar reglas vigentes compatibles.",
+    "Priorizar continuidad de estilo entre reporte integral y actividades parciales.",
+    "Ciclo 1 necesita normalizacion manual si se reutiliza.",
+    "Marcar supuestos pendientes como tareas de cierre de ciclo.",
+    "Propagacion local: reutilizar estas reglas en futuras iteraciones del mismo nodo.",
+    "Mantener estrategia union-dedupe sin eliminar memoria util.",
+    "Si aparece nueva evidencia local, anexar sin reemplazar reglas compatibles.",
+    "Normalizar duplicados de etiqueta 'Fuente provisional' conservando solo variante canonica.",
+    "Ciclo 2 necesita normalizacion manual si se reutiliza."
+  ],
+  "open_questions": [
+    "Definir nombre oficial de la figura docente.",
+    "Actualizar matricula generica UANL-IMTC con dato real si aplica.",
+    "Sustituir nota provisional de referencia oficial del programa por ficha completa.",
+    "Confirmar si la consigna tecnica semanal requiere formato de evaluacion adicional."
+  ],
+  "artifact_name": "reporte-mecanica-de-materiales-imtc-Actividad-1",
+  "sources": [
+    "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/actividad-1",
+    "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/programa-analitico-mecanica-de-materiales-imtc.md",
+    "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/mecanica-de-materiales-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex",
+    "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+  ],
+  "artifact_types": [
+    "reporte"
+  ],
+  "supported_artifact_types": [],
+  "source_documents": [
+    "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/programa-analitico-mecanica-de-materiales-imtc.md",
+    "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/mecanica-de-materiales-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex",
+    "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+  ],
+  "source_fragments": [
+    "Objetivo: Documentar el avance academico y tecnico de la materia mecanica de materiales.",
+    "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+  ],
+  "concepts": [
+    "Programa analitico de mecanica-de-materiales-imtc :: fuente=UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/mecanica-de-materiales-imtc.bib"
+  ],
+  "section_titles": [
+    "Introduccion",
+    "Desarrollo",
+    "Conclusiones",
+    "Actividad 1"
+  ],
+  "citations": [],
+  "bibliography_index": [
+    "programa-mecanica-de-materiales-imtc :: Programa analitico de mecanica-de-materiales-imtc :: fuente=UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/mecanica-de-materiales-imtc.bib"
+  ],
+  "node_metadata": {
+    "scope_key": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/actividad-1",
+    "level": "actividad",
+    "label": "Actividad 1",
+    "relative_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc",
+    "institution": "UANL",
+    "career": "ingenieria-en-mecatronica",
+    "subject": "mecanica-de-materiales-imtc",
+    "activity": "Actividad 1",
+    "parent_key": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc"
+  },
+  "curricular_context": {
+    "institutional_frame": "",
+    "purpose": "",
+    "work_axes": [],
+    "source_fragments": [],
+    "coursename": "Mecanica De Materiales",
+    "coursecode": "IMTC",
+    "documentsubject": "Ingenieria en Mecatronica",
+    "documenttitle": "Mecanica De Materiales",
+    "documentsubtitle": "Reporte integral - mecanica-de-materiales-imtc"
+  },
+  "artifact_templates": {},
+  "editorial_dna": {
+    "identity": {
+      "tone": [
+        "Academico",
+        "Tecnico",
+        "Directo",
+        "Orientado a evidencia"
+      ],
+      "institutional": [
+        "Universidad Autonoma de Nuevo Leon",
+        "Facultad de Ingenieria Mecanica y Electrica",
+        "San Nicolas de los Garza, Nuevo Leon"
+      ],
+      "curricular": [
+        "Ingenieria en Mecatronica",
+        "Mecanica De Materiales",
+        "Codigo IMTC",
+        "Alineacion al programa analitico"
+      ],
+      "node_metadata": {
+        "scope_key": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/actividad-1",
+        "level": "actividad",
+        "label": "Actividad 1",
+        "relative_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc",
+        "institution": "UANL",
+        "career": "ingenieria-en-mecatronica",
+        "subject": "mecanica-de-materiales-imtc",
+        "activity": "Actividad 1",
+        "parent_key": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc"
+      },
+      "curricular_context": {
+        "institutional_frame": "",
+        "purpose": "",
+        "work_axes": [],
+        "source_fragments": [],
+        "coursename": "Mecanica De Materiales",
+        "coursecode": "IMTC",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "documenttitle": "Mecanica De Materiales",
+        "documentsubtitle": "Reporte integral - mecanica-de-materiales-imtc"
+      },
+      "identity_rules": [
+        "Mantener identidad institucional UANL y FIME en portada y metadatos.",
+        "Usar asignatura Mecanica De Materiales y codigo IMTC de forma consistente.",
+        "Conservar programa Ingenieria en Mecatronica en tabla de autor.",
+        "Respetar tono academico-tecnico, claro y verificable.",
+        "Marcar supuestos explicitamente cuando falte dato docente o referencia oficial.",
+        "Fuente provisional: Claude Foundry desde Actividad 1",
+        "Fuente provisional: GPT-Pro desde Actividad 1",
+        "Mantener ubicacion institucional San Nicolas de los Garza, Nuevo Leon.",
+        "Fuente provisional: Claude Foundry desde Actividad 1.",
+        "Fuente provisional: GPT-Pro desde Actividad 1.",
+        "Fuente provisional: Auto (model-router) desde Actividad 1",
+        "Conservar autor Martin Jonathan de la Cruz en metadatos mientras no exista instruccion oficial distinta [supuesto]."
+      ]
+    },
+    "essence": [
+      "Actividad 1",
+      "Mecanica De Materiales",
+      "Ingenieria en Mecatronica",
+      "Programa analitico",
+      "Evidencia tecnica",
+      "Cierre con mejoras",
+      "Plantilla institucional LaTeX",
+      "Bibliografia local .bib",
+      "Se canoniza memoria local de Actividad 1 para IMTC con base en plantilla .tex, .bib y programa analitico local",
+      "No hay ADN historico previo del nodo; se inicializa sin regresion y con preservacion total de evidencia disponible",
+      "Se fija enfoque: actividad alineada al programa analitico, con evidencias tecnicas y cierre orientado a mecatronica",
+      "Mantener identidad institucional UANL y FIME en portada y metadatos",
+      "Usar asignatura Mecanica De Materiales y codigo IMTC de forma consistente",
+      "Conservar programa Ingenieria en Mecatronica en tabla de autor",
+      "Respetar tono academico-tecnico, claro y verificable",
+      "Marcar supuestos explicitamente cuando falte dato docente o referencia oficial",
+      "Conservar estructura minima de Actividad 1: seccion principal, Desarrollo y Cierre",
+      "Incluir consigna tecnica al inicio de la actividad",
+      "Mantener portada via template institucional ya referenciado",
+      "Usar interlineado onehalfspacing en el cuerpo",
+      "Alinear objetivo de la actividad con el programa analitico del curso.",
+      "Documentar evidencias tecnicas y academicas en Desarrollo.",
+      "Incluir analisis de resultados y no solo descripcion.",
+      "Reportar limitaciones y mejoras en Cierre."
+    ],
+    "structure": {
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones",
+        "Actividad 1"
+      ],
+      "artifact_name": "reporte-mecanica-de-materiales-imtc-Actividad-1",
+      "artifact_types": [
+        "reporte"
+      ],
+      "tex_functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "bibliography"
+        ]
+      }
+    },
+    "reason_for_being": [
+      "Conservar estructura minima de Actividad 1: seccion principal, Desarrollo y Cierre.",
+      "Incluir consigna tecnica al inicio de la actividad.",
+      "Mantener portada via template institucional ya referenciado.",
+      "Usar interlineado onehalfspacing en el cuerpo.",
+      "Cerrar con bibliografia enlazada al archivo mecanica-de-materiales-imtc.bib.",
+      "Mantener correspondencia entre titulos editoriales y secciones reales del .tex.",
+      "Conservar estructura minima: seccion principal, Desarrollo y Cierre.",
+      "Cerrar con bibliografia enlazada a mecanica-de-materiales-imtc.bib.",
+      "Alinear objetivo de la actividad con el programa analitico del curso.",
+      "Documentar evidencias tecnicas y academicas en Desarrollo.",
+      "Incluir analisis de resultados y no solo descripcion.",
+      "Reportar limitaciones y mejoras en Cierre.",
+      "Expresar impacto en formacion de ingenieria en mecatronica.",
+      "Mantener consigna resoluble y medible para la semana.",
+      "Introduccion",
+      "Desarrollo",
+      "Conclusiones",
+      "Actividad 1"
+    ],
+    "style_markers": [
+      "Secciones cortas y funcionales: Consigna, Desarrollo, Cierre.",
+      "Metadatos institucionales visibles en portada.",
+      "Lenguaje formal sin afirmaciones sin respaldo.",
+      "Conclusiones con enfoque aplicado a mecatronica.",
+      "Mantener identidad institucional UANL y FIME en portada y metadatos.",
+      "Usar asignatura Mecanica De Materiales y codigo IMTC de forma consistente.",
+      "Conservar programa Ingenieria en Mecatronica en tabla de autor.",
+      "Respetar tono academico-tecnico, claro y verificable.",
+      "Marcar supuestos explicitamente cuando falte dato docente o referencia oficial.",
+      "Preservar macros de identidad documental definidas en la plantilla local.",
+      "No eliminar \\input{template}; es dependencia estructural.",
+      "Mantener \\bibliographystyle{natnumurl} y \\bibliography{mecanica-de-materiales-imtc}.",
+      "Evitar copiar bloques LaTeX completos en memoria editorial; guardar reglas reconstruibles.",
+      "Conservar convencion de nombres de archivo reporte-mecanica-de-materiales-imtc-Actividad-1.tex.",
+      "Secciones cortas y funcionales.",
+      "Lenguaje formal con afirmaciones verificables.",
+      "Supuestos explicitados cuando falta dato oficial.",
+      "Mantener ubicacion institucional San Nicolas de los Garza, Nuevo Leon.",
+      "Mantener macros curriculares: \\coursename, \\coursecode, \\documentsubject.",
+      "Secciones funcionales: Consigna, Desarrollo, Cierre."
+    ],
+    "argumentative_patterns": [
+      "Plantear objetivo alineado al programa.",
+      "Presentar evidencia tecnica.",
+      "Analizar hallazgos y su implicacion.",
+      "Concluir con limitaciones y mejoras accionables.",
+      "Conservar estructura minima de Actividad 1: seccion principal, Desarrollo y Cierre.",
+      "Incluir consigna tecnica al inicio de la actividad.",
+      "Mantener portada via template institucional ya referenciado.",
+      "Usar interlineado onehalfspacing en el cuerpo.",
+      "Cerrar con bibliografia enlazada al archivo mecanica-de-materiales-imtc.bib.",
+      "Alinear objetivo de la actividad con el programa analitico del curso.",
+      "Documentar evidencias tecnicas y academicas en Desarrollo.",
+      "Incluir analisis de resultados y no solo descripcion.",
+      "Reportar limitaciones y mejoras en Cierre.",
+      "Expresar impacto en formacion de ingenieria en mecatronica.",
+      "Verificar consistencia entre metadatos: curso, codigo, programa e institucion.",
+      "Comprobar que toda afirmacion tecnica tenga evidencia o cita local.",
+      "No inventar fuentes; usar solo .bib local o marcar pendiente.",
+      "Revisar que la actividad conserve secciones requeridas y bibliografia activa.",
+      "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+      "Objetivo alineado al programa analitico."
+    ],
+    "reinforcement_log": [
+      "Se inicializo ADN local desde fuentes verificables del nodo.",
+      "Se preservo memoria heredada de control de calidad JSON parseable.",
+      "Se agregaron reglas accionables de estructura, citas y cierre sin eliminar reglas utiles previas.",
+      "Se marcaron supuestos pendientes de datos docentes y referencia oficial.",
+      "Refuerzo editorial aplicado sobre 53 conceptos y 0 citas.",
+      "Se canoniza memoria local de Actividad 1 para IMTC con base en plantilla .tex, .bib y programa analitico local.",
+      "No hay ADN historico previo del nodo; se inicializa sin regresion y con preservacion total de evidencia disponible.",
+      "ADN sintetizado con 54 conceptos, 1 citas y 17 relaciones.",
+      "Memoria de redacción preservada en 7 bloques.",
+      "Refuerzo editorial aplicado sobre 1 conceptos y 0 citas.",
+      "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+      "ADN sintetizado con 55 conceptos, 1 citas y 17 relaciones.",
+      "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+      "Sincronizacion mismo-nodo aplicada sin eliminaciones.",
+      "Reglas preservadas por union y deduplicacion.",
+      "Se reforzo control de compilabilidad y trazabilidad bibliografica con evidencia local.",
+      "Supuesto explicitado: figura docente y referencia oficial siguen pendientes.",
+      "Refuerzo editorial aplicado sobre 60 conceptos y 0 citas.",
+      "Se preserva canon local de Actividad 1 IMTC sin cambios regresivos.",
+      "La memoria sigue alineada a plantilla .tex, .bib local y programa analitico.",
+      "ADN sintetizado con 84 conceptos, 1 citas y 28 relaciones.",
+      "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+      "Refuerzo editorial aplicado sobre 0 conceptos y 0 citas.",
+      "Ciclo 2: union y deduplicacion aplicada sin eliminar reglas utiles.",
+      "Se consolidaron duplicados de fuentes provisionales en identidad.",
+      "Se reforzo trazabilidad de autor y supuestos desde evidencia local.",
+      "Se mantuvo ADN editorial y TEX reconstruible del mismo nodo.",
+      "Refuerzo editorial aplicado sobre 64 conceptos y 0 citas.",
+      "Se preserva canon local de Actividad 1 IMTC sin regresion.",
+      "La memoria permanece alineada a plantilla .tex, .bib local y programa analitico.",
+      "ADN sintetizado con 108 conceptos, 1 citas y 43 relaciones."
+    ],
+    "knowledge_graph": {
+      "concepts": [
+        "Actividad 1",
+        "Mecanica De Materiales",
+        "Ingenieria en Mecatronica",
+        "Programa analitico",
+        "Evidencia tecnica",
+        "Cierre con mejoras",
+        "Plantilla institucional LaTeX",
+        "Bibliografia local .bib",
+        "Se canoniza memoria local de Actividad 1 para IMTC con base en plantilla .tex, .bib y programa analitico local",
+        "No hay ADN historico previo del nodo; se inicializa sin regresion y con preservacion total de evidencia disponible",
+        "Se fija enfoque: actividad alineada al programa analitico, con evidencias tecnicas y cierre orientado a mecatronica",
+        "Mantener identidad institucional UANL y FIME en portada y metadatos",
+        "Usar asignatura Mecanica De Materiales y codigo IMTC de forma consistente",
+        "Conservar programa Ingenieria en Mecatronica en tabla de autor",
+        "Respetar tono academico-tecnico, claro y verificable",
+        "Marcar supuestos explicitamente cuando falte dato docente o referencia oficial",
+        "Conservar estructura minima de Actividad 1: seccion principal, Desarrollo y Cierre",
+        "Incluir consigna tecnica al inicio de la actividad",
+        "Mantener portada via template institucional ya referenciado",
+        "Usar interlineado onehalfspacing en el cuerpo",
+        "Cerrar con bibliografia enlazada al archivo mecanica-de-materiales-imtc.bib",
+        "Alinear objetivo de la actividad con el programa analitico del curso",
+        "Documentar evidencias tecnicas y academicas en Desarrollo",
+        "Incluir analisis de resultados y no solo descripcion",
+        "Reportar limitaciones y mejoras en Cierre",
+        "Expresar impacto en formacion de ingenieria en mecatronica",
+        "Verificar consistencia entre metadatos: curso, codigo, programa e institucion",
+        "Comprobar que toda afirmacion tecnica tenga evidencia o cita local",
+        "No inventar fuentes; usar solo .bib local o marcar pendiente",
+        "Revisar que la actividad conserve secciones requeridas y bibliografia activa",
+        "Definir nombre oficial de la figura docente",
+        "Actualizar matricula generica UANL-IMTC con dato real si aplica",
+        "Sustituir nota provisional de referencia oficial del programa por ficha completa",
+        "Confirmar si la consigna tecnica semanal requiere formato de evaluacion adicional",
+        "Documentar trabajo tecnico semanal con trazabilidad academica",
+        "Conectar teoria de mecanica de materiales con aplicacion mecatronica",
+        "Cerrar cada actividad con resultados, limites y mejora continua",
+        "Estandarizar reportes de actividad con formato institucional reproducible",
+        "Asegurar evidencia y citas minimas verificables en cada entrega",
+        "Construir continuidad entre actividad puntual y reporte integral del curso",
+        "Secciones cortas y funcionales: Consigna, Desarrollo, Cierre",
+        "Metadatos institucionales visibles en portada",
+        "Lenguaje formal sin afirmaciones sin respaldo",
+        "Conclusiones con enfoque aplicado a mecatronica",
+        "Plantear objetivo alineado al programa",
+        "Presentar evidencia tecnica",
+        "Analizar hallazgos y su implicacion",
+        "Concluir con limitaciones y mejoras accionables",
+        "programa-mecanica-de-materiales-imtc",
+        "reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+        "reporte-mecanica-de-materiales-imtc.tex",
+        "programa-analitico-mecanica-de-materiales-imtc.md",
+        "mecanica-de-materiales-imtc.bib",
+        "Programa analitico de mecanica-de-materiales-imtc :: fuente=UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/mecanica-de-materiales-imtc.bib",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo",
+        "Programa analitico IMTC",
+        "Formacion en ingenieria mecatronica",
+        "Se preserva canon local de Actividad 1 IMTC sin cambios regresivos",
+        "La memoria sigue alineada a plantilla .tex, .bib local y programa analitico",
+        "Se mantiene enfoque en evidencia tecnica y cierre aplicado a mecatronica",
+        "Se conserva registro de fallas historicas de salidas no parseables como riesgo de calidad",
+        "Mantener ubicacion institucional San Nicolas de los Garza, Nuevo Leon",
+        "Mantener correspondencia entre titulos editoriales y secciones reales del .tex",
+        "Mantener consigna resoluble y medible para la semana",
+        "Verificar que \\input{template} permanezca activo como dependencia",
+        "Confirmar que la clave bibliografica curricular exista en el .bib local",
+        "Actividad 1 con trazabilidad academica local",
+        "Estructura breve: Consigna, Desarrollo, Cierre",
+        "Dependencia fuerte de plantilla institucional y bibliografia local",
+        "Cierre con mejoras y transferencia a practica mecatronica",
+        "Estandarizar entregables de Actividad 1 sin perder identidad UANL-FIME",
+        "Asegurar coherencia entre objetivo, evidencia y conclusion tecnica",
+        "Conservar compilabilidad y reconstruccion del TEX base del nodo",
+        "Secciones cortas y funcionales",
+        "Lenguaje formal con afirmaciones verificables",
+        "Supuestos explicitados cuando falta dato oficial",
+        "Objetivo alineado al programa analitico",
+        "Evidencia tecnica en Desarrollo",
+        "Analisis de hallazgos con implicacion formativa",
+        "Cierre con limitaciones y mejora accionable",
+        "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+        "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex",
+        "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/programa-analitico-mecanica-de-materiales-imtc.md",
+        "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/mecanica-de-materiales-imtc.bib",
+        "Identidad UANL-FIME",
+        "Mecanica De Materiales IMTC",
+        "Se preserva canon local de Actividad 1 IMTC sin regresion",
+        "La memoria permanece alineada a plantilla .tex, .bib local y programa analitico",
+        "Se confirma fuente reconstruible local en reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+        "Se confirma metadato verificable de autor en plantilla: Martin Jonathan de la Cruz [verificado en .tex]",
+        "Conservar autor Martin Jonathan de la Cruz en metadatos mientras no exista instruccion oficial distinta [supuesto]",
+        "Conservar estructura minima: seccion principal, Desarrollo y Cierre",
+        "Cerrar con bibliografia enlazada a mecanica-de-materiales-imtc.bib",
+        "Verificar que autor, matricula y figura docente en tabla se mantengan trazables y con supuestos marcados cuando aplique",
+        "Actividad 1 IMTC como entrega tecnica trazable",
+        "Plantilla institucional LaTeX como base de consistencia",
+        "Evidencia tecnica en Desarrollo y cierre con mejoras",
+        "Vinculo explicito con programa analitico local",
+        "Asegurar coherencia entre consigna, desarrollo, cierre y bibliografia",
+        "Sostener identidad institucional y curricular en cada salida",
+        "Permitir reconstruccion fiel del TEX sin almacenar bloques completos",
+        "Secciones funcionales: Consigna, Desarrollo, Cierre",
+        "Metadatos institucionales visibles y consistentes",
+        "Lenguaje formal, tecnico y verificable",
+        "Supuestos declarados en campos incompletos",
+        "Presentar evidencia tecnica verificable",
+        "Analizar hallazgos y su implicacion formativa",
+        "Cerrar con limitaciones y mejoras accionables"
+      ],
+      "citations": [
+        "programa-mecanica-de-materiales-imtc"
+      ],
+      "evidence": [
+        "reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+        "reporte-mecanica-de-materiales-imtc.tex",
+        "programa-analitico-mecanica-de-materiales-imtc.md",
+        "mecanica-de-materiales-imtc.bib",
+        "Se canoniza memoria local de Actividad 1 para IMTC con base en plantilla .tex, .bib y programa analitico local.",
+        "No hay ADN historico previo del nodo; se inicializa sin regresion y con preservacion total de evidencia disponible.",
+        "Se fija enfoque: actividad alineada al programa analitico, con evidencias tecnicas y cierre orientado a mecatronica.",
+        "Validar que la salida sea JSON parseable antes de propagacion.",
+        "Verificar consistencia entre metadatos: curso, codigo, programa e institucion.",
+        "Comprobar que toda afirmacion tecnica tenga evidencia o cita local.",
+        "No inventar fuentes; usar solo .bib local o marcar pendiente.",
+        "Revisar que la actividad conserve secciones requeridas y bibliografia activa.",
+        "programa-mecanica-de-materiales-imtc :: Programa analitico de mecanica-de-materiales-imtc :: fuente=UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/mecanica-de-materiales-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/programa-analitico-mecanica-de-materiales-imtc.md",
+        "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/mecanica-de-materiales-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex",
+        "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+        "Salida sin JSON parseable desde Claude Foundry para Actividad 1",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+        "Salida sin JSON parseable desde GPT-Pro para Actividad 1",
+        "Se preserva canon local de Actividad 1 IMTC sin cambios regresivos.",
+        "La memoria sigue alineada a plantilla .tex, .bib local y programa analitico.",
+        "Se mantiene enfoque en evidencia tecnica y cierre aplicado a mecatronica.",
+        "Se conserva registro de fallas historicas de salidas no parseables como riesgo de calidad.",
+        "Verificar que \\input{template} permanezca activo como dependencia.",
+        "Confirmar que la clave bibliografica curricular exista en el .bib local.",
+        "Salida sin JSON parseable desde Auto (model-router) para Actividad 1",
+        "Se preserva canon local de Actividad 1 IMTC sin regresion.",
+        "La memoria permanece alineada a plantilla .tex, .bib local y programa analitico.",
+        "Se conserva riesgo historico: salidas no JSON parseable de Claude Foundry, GPT-Pro y Auto (model-router).",
+        "Se confirma fuente reconstruible local en reporte-mecanica-de-materiales-imtc-Actividad-1.tex.",
+        "Se confirma metadato verificable de autor en plantilla: Martin Jonathan de la Cruz [verificado en .tex].",
+        "Verificar que autor, matricula y figura docente en tabla se mantengan trazables y con supuestos marcados cuando aplique."
+      ],
+      "relations": [
+        {
+          "source": "Actividad 1",
+          "target": "Programa analitico",
+          "kind": "depends_on",
+          "weight": 2,
+          "justification": "El checklist local exige alineacion del objetivo de actividad al programa.",
+          "evidence": []
+        },
+        {
+          "source": "Desarrollo",
+          "target": "Evidencia tecnica",
+          "kind": "depends_on",
+          "weight": 3,
+          "justification": "La plantilla indica incluir evidencias, analisis y referencias.",
+          "evidence": []
+        },
+        {
+          "source": "Cierre con mejoras",
+          "target": "Ingenieria en Mecatronica",
+          "kind": "supports",
+          "weight": 2,
+          "justification": "El contexto editorial pide conclusiones con enfoque mecatronico.",
+          "evidence": []
+        },
+        {
+          "source": "Bibliografia local .bib",
+          "target": "Programa analitico",
+          "kind": "supports",
+          "weight": 2,
+          "justification": "Existe entrada bibliografica local del programa analitico del curso.",
+          "evidence": []
+        },
+        {
+          "source": "Plantilla institucional LaTeX",
+          "target": "Actividad 1",
+          "kind": "develops",
+          "weight": 3,
+          "justification": "El archivo de actividad usa macros institucionales y estructura base reproducible.",
+          "evidence": []
+        },
+        {
+          "source": "Se canoniza memoria local de Actividad 1 para IMTC con base en plantilla .tex, .bib y programa analitico local",
+          "target": "No hay ADN historico previo del nodo; se inicializa sin regresion y con preservacion total de evidencia disponible",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se canoniza memoria local de Actividad 1 para IMTC con base en plantilla .tex, .bib y programa analitico local",
+          "target": "Se fija enfoque: actividad alineada al programa analitico, con evidencias tecnicas y cierre orientado a mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "No hay ADN historico previo del nodo; se inicializa sin regresion y con preservacion total de evidencia disponible",
+          "target": "Se fija enfoque: actividad alineada al programa analitico, con evidencias tecnicas y cierre orientado a mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "No hay ADN historico previo del nodo; se inicializa sin regresion y con preservacion total de evidencia disponible",
+          "target": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se fija enfoque: actividad alineada al programa analitico, con evidencias tecnicas y cierre orientado a mecatronica",
+          "target": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se fija enfoque: actividad alineada al programa analitico, con evidencias tecnicas y cierre orientado a mecatronica",
+          "target": "Usar asignatura Mecanica De Materiales y codigo IMTC de forma consistente",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "target": "Usar asignatura Mecanica De Materiales y codigo IMTC de forma consistente",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "target": "Conservar programa Ingenieria en Mecatronica en tabla de autor",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar asignatura Mecanica De Materiales y codigo IMTC de forma consistente",
+          "target": "Conservar programa Ingenieria en Mecatronica en tabla de autor",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Actividad 1",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0001"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Desarrollo",
+          "kind": "organizes",
+          "weight": 2,
+          "evidence": [
+            "b0003",
+            "b0004"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Cierre",
+          "kind": "organizes",
+          "weight": 3,
+          "evidence": [
+            "b0005",
+            "b0006",
+            "b0007"
+          ]
+        },
+        {
+          "source": "Actividad 1",
+          "target": "Programa analitico IMTC",
+          "kind": "depends_on",
+          "weight": 1,
+          "justification": "El checklist local exige alineacion del objetivo con el programa.",
+          "evidence": []
+        },
+        {
+          "source": "Bibliografia local .bib",
+          "target": "Programa analitico IMTC",
+          "kind": "supports",
+          "weight": 1,
+          "justification": "Existe entrada local del programa en mecanica-de-materiales-imtc.bib.",
+          "evidence": []
+        },
+        {
+          "source": "Cierre con mejoras",
+          "target": "Formacion en ingenieria mecatronica",
+          "kind": "supports",
+          "weight": 1,
+          "justification": "El objetivo editorial requiere impacto aplicado a mecatronica.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva canon local de Actividad 1 IMTC sin cambios regresivos",
+          "target": "La memoria sigue alineada a plantilla .tex, .bib local y programa analitico",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva canon local de Actividad 1 IMTC sin cambios regresivos",
+          "target": "Se mantiene enfoque en evidencia tecnica y cierre aplicado a mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "La memoria sigue alineada a plantilla .tex, .bib local y programa analitico",
+          "target": "Se mantiene enfoque en evidencia tecnica y cierre aplicado a mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "La memoria sigue alineada a plantilla .tex, .bib local y programa analitico",
+          "target": "Se conserva registro de fallas historicas de salidas no parseables como riesgo de calidad",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene enfoque en evidencia tecnica y cierre aplicado a mecatronica",
+          "target": "Se conserva registro de fallas historicas de salidas no parseables como riesgo de calidad",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene enfoque en evidencia tecnica y cierre aplicado a mecatronica",
+          "target": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva registro de fallas historicas de salidas no parseables como riesgo de calidad",
+          "target": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se conserva registro de fallas historicas de salidas no parseables como riesgo de calidad",
+          "target": "Usar asignatura Mecanica De Materiales y codigo IMTC de forma consistente",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva canon local de Actividad 1 IMTC sin regresion",
+          "target": "La memoria permanece alineada a plantilla .tex, .bib local y programa analitico",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva canon local de Actividad 1 IMTC sin regresion",
+          "target": "Se mantiene enfoque en evidencia tecnica y cierre aplicado a mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "La memoria permanece alineada a plantilla .tex, .bib local y programa analitico",
+          "target": "Se mantiene enfoque en evidencia tecnica y cierre aplicado a mecatronica",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "La memoria permanece alineada a plantilla .tex, .bib local y programa analitico",
+          "target": "Se confirma fuente reconstruible local en reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene enfoque en evidencia tecnica y cierre aplicado a mecatronica",
+          "target": "Se confirma fuente reconstruible local en reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se mantiene enfoque en evidencia tecnica y cierre aplicado a mecatronica",
+          "target": "Se confirma metadato verificable de autor en plantilla: Martin Jonathan de la Cruz [verificado en .tex]",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma fuente reconstruible local en reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+          "target": "Se confirma metadato verificable de autor en plantilla: Martin Jonathan de la Cruz [verificado en .tex]",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma fuente reconstruible local en reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+          "target": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma metadato verificable de autor en plantilla: Martin Jonathan de la Cruz [verificado en .tex]",
+          "target": "Mantener identidad institucional UANL y FIME en portada y metadatos",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar asignatura Mecanica De Materiales y codigo IMTC de forma consistente",
+          "target": "Respetar tono academico-tecnico, claro y verificable",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Conservar programa Ingenieria en Mecatronica en tabla de autor",
+          "target": "Respetar tono academico-tecnico, claro y verificable",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Conservar programa Ingenieria en Mecatronica en tabla de autor",
+          "target": "Marcar supuestos explicitamente cuando falte dato docente o referencia oficial",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Respetar tono academico-tecnico, claro y verificable",
+          "target": "Marcar supuestos explicitamente cuando falte dato docente o referencia oficial",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Respetar tono academico-tecnico, claro y verificable",
+          "target": "Mantener ubicacion institucional San Nicolas de los Garza, Nuevo Leon",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Marcar supuestos explicitamente cuando falte dato docente o referencia oficial",
+          "target": "Mantener ubicacion institucional San Nicolas de los Garza, Nuevo Leon",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        }
+      ],
+      "concept_weights": {
+        "Se canoniza memoria local de Actividad 1 para IMTC con base en plantilla .tex, .bib y programa analitico local": 1,
+        "No hay ADN historico previo del nodo; se inicializa sin regresion y con preservacion total de evidencia disponible": 1,
+        "Se fija enfoque: actividad alineada al programa analitico, con evidencias tecnicas y cierre orientado a mecatronica": 1,
+        "Mantener identidad institucional UANL y FIME en portada y metadatos": 4,
+        "Usar asignatura Mecanica De Materiales y codigo IMTC de forma consistente": 4,
+        "Conservar programa Ingenieria en Mecatronica en tabla de autor": 4,
+        "Respetar tono academico-tecnico, claro y verificable": 4,
+        "Marcar supuestos explicitamente cuando falte dato docente o referencia oficial": 4,
+        "Conservar estructura minima de Actividad 1: seccion principal, Desarrollo y Cierre": 2,
+        "Incluir consigna tecnica al inicio de la actividad": 3,
+        "Mantener portada via template institucional ya referenciado": 3,
+        "Usar interlineado onehalfspacing en el cuerpo": 3,
+        "Cerrar con bibliografia enlazada al archivo mecanica-de-materiales-imtc.bib": 2,
+        "Alinear objetivo de la actividad con el programa analitico del curso": 3,
+        "Documentar evidencias tecnicas y academicas en Desarrollo": 3,
+        "Incluir analisis de resultados y no solo descripcion": 3,
+        "Reportar limitaciones y mejoras en Cierre": 3,
+        "Expresar impacto en formacion de ingenieria en mecatronica": 3,
+        "Verificar consistencia entre metadatos: curso, codigo, programa e institucion": 3,
+        "Comprobar que toda afirmacion tecnica tenga evidencia o cita local": 3,
+        "No inventar fuentes; usar solo .bib local o marcar pendiente": 3,
+        "Revisar que la actividad conserve secciones requeridas y bibliografia activa": 3,
+        "Definir nombre oficial de la figura docente": 3,
+        "Actualizar matricula generica UANL-IMTC con dato real si aplica": 3,
+        "Sustituir nota provisional de referencia oficial del programa por ficha completa": 3,
+        "Confirmar si la consigna tecnica semanal requiere formato de evaluacion adicional": 3,
+        "Documentar trabajo tecnico semanal con trazabilidad academica": 1,
+        "Conectar teoria de mecanica de materiales con aplicacion mecatronica": 1,
+        "Cerrar cada actividad con resultados, limites y mejora continua": 1,
+        "Estandarizar reportes de actividad con formato institucional reproducible": 1,
+        "Asegurar evidencia y citas minimas verificables en cada entrega": 1,
+        "Construir continuidad entre actividad puntual y reporte integral del curso": 1,
+        "Secciones cortas y funcionales: Consigna, Desarrollo, Cierre": 1,
+        "Metadatos institucionales visibles en portada": 2,
+        "Lenguaje formal sin afirmaciones sin respaldo": 1,
+        "Conclusiones con enfoque aplicado a mecatronica": 1,
+        "Plantear objetivo alineado al programa": 2,
+        "Presentar evidencia tecnica": 1,
+        "Analizar hallazgos y su implicacion": 1,
+        "Concluir con limitaciones y mejoras accionables": 1,
+        "Actividad 1": 3,
+        "Mecanica De Materiales": 1,
+        "Ingenieria en Mecatronica": 1,
+        "Programa analitico": 2,
+        "Evidencia tecnica": 3,
+        "Cierre con mejoras": 3,
+        "Plantilla institucional LaTeX": 3,
+        "Bibliografia local .bib": 3,
+        "programa-mecanica-de-materiales-imtc": 3,
+        "reporte-mecanica-de-materiales-imtc-Actividad-1.tex": 1,
+        "reporte-mecanica-de-materiales-imtc.tex": 1,
+        "programa-analitico-mecanica-de-materiales-imtc.md": 1,
+        "mecanica-de-materiales-imtc.bib": 1,
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo": 6,
+        "Se preserva canon local de Actividad 1 IMTC sin cambios regresivos": 1,
+        "La memoria sigue alineada a plantilla .tex, .bib local y programa analitico": 1,
+        "Se mantiene enfoque en evidencia tecnica y cierre aplicado a mecatronica": 2,
+        "Se conserva registro de fallas historicas de salidas no parseables como riesgo de calidad": 1,
+        "Mantener ubicacion institucional San Nicolas de los Garza, Nuevo Leon": 3,
+        "Mantener correspondencia entre titulos editoriales y secciones reales del .tex": 2,
+        "Mantener consigna resoluble y medible para la semana": 2,
+        "Verificar que \\input{template} permanezca activo como dependencia": 2,
+        "Confirmar que la clave bibliografica curricular exista en el .bib local": 2,
+        "Actividad 1 con trazabilidad academica local": 1,
+        "Estructura breve: Consigna, Desarrollo, Cierre": 1,
+        "Dependencia fuerte de plantilla institucional y bibliografia local": 1,
+        "Cierre con mejoras y transferencia a practica mecatronica": 1,
+        "Estandarizar entregables de Actividad 1 sin perder identidad UANL-FIME": 1,
+        "Asegurar coherencia entre objetivo, evidencia y conclusion tecnica": 1,
+        "Conservar compilabilidad y reconstruccion del TEX base del nodo": 1,
+        "Secciones cortas y funcionales": 1,
+        "Lenguaje formal con afirmaciones verificables": 1,
+        "Supuestos explicitados cuando falta dato oficial": 1,
+        "Objetivo alineado al programa analitico": 1,
+        "Evidencia tecnica en Desarrollo": 1,
+        "Analisis de hallazgos con implicacion formativa": 1,
+        "Cierre con limitaciones y mejora accionable": 1,
+        "Programa analitico IMTC": 1,
+        "Formacion en ingenieria mecatronica": 1,
+        "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex": 2,
+        "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex": 2,
+        "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/programa-analitico-mecanica-de-materiales-imtc.md": 2,
+        "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/mecanica-de-materiales-imtc.bib": 2,
+        "Se preserva canon local de Actividad 1 IMTC sin regresion": 1,
+        "La memoria permanece alineada a plantilla .tex, .bib local y programa analitico": 1,
+        "Se confirma fuente reconstruible local en reporte-mecanica-de-materiales-imtc-Actividad-1.tex": 1,
+        "Se confirma metadato verificable de autor en plantilla: Martin Jonathan de la Cruz [verificado en .tex]": 1,
+        "Conservar autor Martin Jonathan de la Cruz en metadatos mientras no exista instruccion oficial distinta [supuesto]": 2,
+        "Conservar estructura minima: seccion principal, Desarrollo y Cierre": 1,
+        "Cerrar con bibliografia enlazada a mecanica-de-materiales-imtc.bib": 1,
+        "Verificar que autor, matricula y figura docente en tabla se mantengan trazables y con supuestos marcados cuando aplique": 1,
+        "Actividad 1 IMTC como entrega tecnica trazable": 1,
+        "Plantilla institucional LaTeX como base de consistencia": 1,
+        "Evidencia tecnica en Desarrollo y cierre con mejoras": 1,
+        "Vinculo explicito con programa analitico local": 1,
+        "Asegurar coherencia entre consigna, desarrollo, cierre y bibliografia": 1,
+        "Sostener identidad institucional y curricular en cada salida": 1,
+        "Permitir reconstruccion fiel del TEX sin almacenar bloques completos": 1,
+        "Secciones funcionales: Consigna, Desarrollo, Cierre": 1,
+        "Metadatos institucionales visibles y consistentes": 1,
+        "Lenguaje formal, tecnico y verificable": 1,
+        "Supuestos declarados en campos incompletos": 1,
+        "Presentar evidencia tecnica verificable": 1,
+        "Analizar hallazgos y su implicacion formativa": 1,
+        "Cerrar con limitaciones y mejoras accionables": 1,
+        "Identidad UANL-FIME": 1,
+        "Mecanica De Materiales IMTC": 1
+      },
+      "citation_weights": {}
+    },
+    "writing_memory": [
+      {
+        "id": "b0001",
+        "order": 1,
+        "kind": "section",
+        "section": "Actividad 1",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Actividad 1",
+        "latex": "\\section{Actividad 1}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0002",
+        "order": 2,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+        "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0003",
+        "order": 3,
+        "kind": "subsection",
+        "section": "Actividad 1",
+        "subsection": "Desarrollo",
+        "paragraph_heading": "",
+        "text": "Desarrollo",
+        "latex": "\\subsection{Desarrollo}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0004",
+        "order": 4,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Desarrollo",
+        "paragraph_heading": "",
+        "text": "Incluir evidencias, analisis y referencias.",
+        "latex": "Incluir evidencias, analisis y referencias.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0005",
+        "order": 5,
+        "kind": "subsection",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "Cierre",
+        "latex": "\\subsection{Cierre}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0006",
+        "order": 6,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "Registrar resultados, limitaciones y mejoras.",
+        "latex": "Registrar resultados, limitaciones y mejoras.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+      },
+      {
+        "id": "b0007",
+        "order": 7,
+        "kind": "paragraph",
+        "section": "Actividad 1",
+        "subsection": "Cierre",
+        "paragraph_heading": "",
+        "text": "natnumurl",
+        "latex": "\\bibliographystyle{natnumurl}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+      }
+    ],
+    "reconstructable_source": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Mecanica De Materiales}\n\\def\\documentsubtitle {Actividad 1 - mecanica-de-materiales-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Mecanica De Materiales}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{mecanica-de-materiales-imtc}\n\n\\end{document}\n"
+  },
+  "tex_blueprint": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex",
+        "documenttitle": "Mecanica De Materiales",
+        "documentsubtitle": "Reporte integral - mecanica-de-materiales-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Mecanica De Materiales",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia mecanica de materiales.",
+        "section_titles": [
+          "Introduccion",
+          "Desarrollo",
+          "Conclusiones"
+        ],
+        "subsection_titles": [],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [
+          "Objetivo: Documentar el avance academico y tecnico de la materia mecanica de materiales.",
+          "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+        ],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex",
+          "raw_latex_sha256": "e5b26a650e5c93518e02ce6ffc97e63765158b53cc3644137847092f6b00a19d",
+          "raw_latex_chars": 1721,
+          "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Mecanica De Materiales}\n\\def\\documentsubtitle {Reporte integral - mecanica-de-materiales-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Mecanica De Materiales}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia mecanica de materiales.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{mecanica-de-materiales-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document",
+              "abstractd"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "templateIndex",
+              "templateFinalcfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia mecanica de materiales.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia mecanica de materiales.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia mecanica de materiales.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia mecanica de materiales.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      },
+      "reporte": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+        "documenttitle": "Mecanica De Materiales",
+        "documentsubtitle": "Actividad 1 - mecanica-de-materiales-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Mecanica De Materiales",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "",
+        "section_titles": [
+          "Actividad 1"
+        ],
+        "subsection_titles": [
+          "Desarrollo",
+          "Cierre"
+        ],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+          "raw_latex_sha256": "d4e483963fd9f28d0405bed22a78d996f7931788308899d4f0e738da987df51d",
+          "raw_latex_chars": 1516,
+          "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Mecanica De Materiales}\n\\def\\documentsubtitle {Actividad 1 - mecanica-de-materiales-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Mecanica De Materiales}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{mecanica-de-materiales-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "section",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Actividad 1",
+              "latex": "\\section{Actividad 1}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+              "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\subsection{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Incluir evidencias, analisis y referencias.",
+              "latex": "Incluir evidencias, analisis y referencias.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Cierre",
+              "latex": "\\subsection{Cierre}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Registrar resultados, limitaciones y mejoras.",
+              "latex": "Registrar resultados, limitaciones y mejoras.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "section",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Actividad 1",
+              "latex": "\\section{Actividad 1}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+              "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\subsection{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Desarrollo",
+              "paragraph_heading": "",
+              "text": "Incluir evidencias, analisis y referencias.",
+              "latex": "Incluir evidencias, analisis y referencias.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "subsection",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Cierre",
+              "latex": "\\subsection{Cierre}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "Registrar resultados, limitaciones y mejoras.",
+              "latex": "Registrar resultados, limitaciones y mejoras.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Actividad 1",
+              "subsection": "Cierre",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+      "documenttitle": "Mecanica De Materiales",
+      "documentsubtitle": "Actividad 1 - mecanica-de-materiales-imtc",
+      "documentsubject": "Ingenieria en Mecatronica",
+      "coursename": "Mecanica De Materiales",
+      "coursecode": "IMTC",
+      "documentauthor": "Martin Jonathan de la Cruz",
+      "abstract": "",
+      "section_titles": [
+        "Actividad 1"
+      ],
+      "subsection_titles": [
+        "Desarrollo",
+        "Cierre"
+      ],
+      "cited_keys": [],
+      "concepts": [],
+      "source_fragments": [],
+      "content_memory": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+        "raw_latex_sha256": "d4e483963fd9f28d0405bed22a78d996f7931788308899d4f0e738da987df51d",
+        "raw_latex_chars": 1516,
+        "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Mecanica De Materiales}\n\\def\\documentsubtitle {Actividad 1 - mecanica-de-materiales-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Mecanica De Materiales}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{mecanica-de-materiales-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    }
+  },
+  "tex_content_memory": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex",
+        "raw_latex_sha256": "e5b26a650e5c93518e02ce6ffc97e63765158b53cc3644137847092f6b00a19d",
+        "raw_latex_chars": 1721,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Mecanica De Materiales}\n\\def\\documentsubtitle {Reporte integral - mecanica-de-materiales-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Mecanica De Materiales}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia mecanica de materiales.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{mecanica-de-materiales-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia mecanica de materiales.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia mecanica de materiales.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia mecanica de materiales.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia mecanica de materiales.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      },
+      "reporte": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+        "raw_latex_sha256": "d4e483963fd9f28d0405bed22a78d996f7931788308899d4f0e738da987df51d",
+        "raw_latex_chars": 1516,
+        "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Mecanica De Materiales}\n\\def\\documentsubtitle {Actividad 1 - mecanica-de-materiales-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Mecanica De Materiales}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{mecanica-de-materiales-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "section",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Actividad 1",
+            "latex": "\\section{Actividad 1}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+            "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\subsection{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Desarrollo",
+            "paragraph_heading": "",
+            "text": "Incluir evidencias, analisis y referencias.",
+            "latex": "Incluir evidencias, analisis y referencias.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "subsection",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Cierre",
+            "latex": "\\subsection{Cierre}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "Registrar resultados, limitaciones y mejoras.",
+            "latex": "Registrar resultados, limitaciones y mejoras.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Actividad 1",
+            "subsection": "Cierre",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex",
+      "raw_latex_sha256": "d4e483963fd9f28d0405bed22a78d996f7931788308899d4f0e738da987df51d",
+      "raw_latex_chars": 1516,
+      "raw_latex": "% Plantilla de actividad IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Mecanica De Materiales}\n\\def\\documentsubtitle {Actividad 1 - mecanica-de-materiales-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Mecanica De Materiales}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\section{Actividad 1}\n\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.\n\n\\subsection{Desarrollo}\nIncluir evidencias, analisis y referencias.\n\n\\subsection{Cierre}\nRegistrar resultados, limitaciones y mejoras.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{mecanica-de-materiales-imtc}\n\n\\end{document}\n",
+      "functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "bibliography"
+        ]
+      },
+      "paragraph_map": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "section",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Actividad 1",
+          "latex": "\\section{Actividad 1}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+          "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\subsection{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Incluir evidencias, analisis y referencias.",
+          "latex": "Incluir evidencias, analisis y referencias.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Cierre",
+          "latex": "\\subsection{Cierre}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Registrar resultados, limitaciones y mejoras.",
+          "latex": "Registrar resultados, limitaciones y mejoras.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+        }
+      ],
+      "content_blocks": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "section",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Actividad 1",
+          "latex": "\\section{Actividad 1}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Consigna tecnica: Documentar y resolver el reto academico de la semana.",
+          "latex": "\\textbf{Consigna tecnica:} Documentar y resolver el reto academico de la semana.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\subsection{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Desarrollo",
+          "paragraph_heading": "",
+          "text": "Incluir evidencias, analisis y referencias.",
+          "latex": "Incluir evidencias, analisis y referencias.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "subsection",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Cierre",
+          "latex": "\\subsection{Cierre}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "Registrar resultados, limitaciones y mejoras.",
+          "latex": "Registrar resultados, limitaciones y mejoras.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Actividad 1",
+          "subsection": "Cierre",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/reporte-mecanica-de-materiales-imtc-Actividad-1.tex"
+        }
+      ],
+      "citation_map": {},
+      "all_cited_keys": [],
+      "missing_bibliography_keys": []
+    },
+    "bibliography_sources": {
+      "programa-mecanica-de-materiales-imtc": {
+        "key": "programa-mecanica-de-materiales-imtc",
+        "source_type": "bibtex",
+        "source_path": "UANL/ingenieria-en-mecatronica/mecanica-de-materiales-imtc/mecanica-de-materiales-imtc.bib",
+        "entry_type": "misc",
+        "title": "Programa analitico de mecanica-de-materiales-imtc",
+        "author": "UANL",
+        "year": "2026",
+        "url": "https://www.uanl.mx/",
+        "note": "Actualizar con la referencia oficial del curso",
+        "raw_entry": "@misc{programa-mecanica-de-materiales-imtc,\n  author = {UANL},\n  title = {Programa analitico de mecanica-de-materiales-imtc},\n  year = {2026},\n  note = {Actualizar con la referencia oficial del curso},\n  url = {https://www.uanl.mx/}\n}"
+      }
+    }
+  },
+  "locked_sections": [],
+  "compression": {
+    "method": "union-dedupe",
+    "lossless": true
+  },
+  "schema_version": 3
+}

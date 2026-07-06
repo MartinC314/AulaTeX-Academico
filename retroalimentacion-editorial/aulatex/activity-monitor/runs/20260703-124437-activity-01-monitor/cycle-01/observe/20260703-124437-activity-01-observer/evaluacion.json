@@ -1,0 +1,18 @@
+{
+  "passed": false,
+  "score": 71.43,
+  "checks": {
+    "tex_exists": true,
+    "pdf_exists": true,
+    "bibliography_ready": true,
+    "extractor_ready": false,
+    "draft_without_placeholders": true,
+    "sections_minimum": false,
+    "compile_ready": true
+  },
+  "critical_findings": [
+    "No existe salida verificable del extractor para esta actividad.",
+    "El ciclo aún no puede cerrarse: siguiente acción requerida `run-extractor`."
+  ],
+  "next_action": "run-extractor"
+}

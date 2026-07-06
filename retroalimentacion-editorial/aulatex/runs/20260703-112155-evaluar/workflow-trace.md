@@ -1,0 +1,32 @@
+# Auditoria agentica AulaTeX
+
+- 2026-07-03 11:21:55 [ok] `initialized` init: AulaTeX workflow initialized
+- 2026-07-03 11:21:55 [ok] `initialized` llm-start: planificar-ciclo-001: Planificador editorial via Codex
+- 2026-07-03 11:21:55 [error] `initialized` llm-end: planificar-ciclo-001: Dependencia faltante: instala requests en .venv para habilitar llamadas LLM.
+- 2026-07-03 11:21:55 [ok] `planned` initialized->planned: plan editorial producido
+- 2026-07-03 11:21:55 [ok] `planned` llm-start: investigar-ciclo-001: Investigador documental via Codex
+- 2026-07-03 11:21:55 [error] `planned` llm-end: investigar-ciclo-001: Dependencia faltante: instala requests en .venv para habilitar llamadas LLM.
+- 2026-07-03 11:21:55 [ok] `researched` planned->researched: diagnostico documental producido
+- 2026-07-03 11:21:55 [ok] `researched` llm-start: generar-ciclo-001: Arquitecto de plantillas via Codex
+- 2026-07-03 11:21:55 [error] `researched` llm-end: generar-ciclo-001: Dependencia faltante: instala requests en .venv para habilitar llamadas LLM.
+- 2026-07-03 11:21:55 [ok] `generated` researched->generated: propuesta editorial producida
+- 2026-07-03 11:21:55 [ok] `generated` llm-start: validar-ciclo-001: Verificador y validador via Codex
+- 2026-07-03 11:21:55 [error] `generated` llm-end: validar-ciclo-001: Dependencia faltante: instala requests en .venv para habilitar llamadas LLM.
+- 2026-07-03 11:21:55 [ok] `generated` llm-start: criticar-ciclo-001: Critico adversarial via Codex
+- 2026-07-03 11:21:55 [error] `generated` llm-end: criticar-ciclo-001: Dependencia faltante: instala requests en .venv para habilitar llamadas LLM.
+- 2026-07-03 11:21:55 [ok] `generated` llm-start: planificar-ciclo-002: Planificador editorial via Codex
+- 2026-07-03 11:21:55 [error] `generated` llm-end: planificar-ciclo-002: Dependencia faltante: instala requests en .venv para habilitar llamadas LLM.
+- 2026-07-03 11:21:55 [ok] `generated` cycle-stage: plan editorial reforzado en ciclo posterior
+- 2026-07-03 11:21:55 [ok] `generated` llm-start: investigar-ciclo-002: Investigador documental via Codex
+- 2026-07-03 11:21:55 [error] `generated` llm-end: investigar-ciclo-002: Dependencia faltante: instala requests en .venv para habilitar llamadas LLM.
+- 2026-07-03 11:21:55 [ok] `generated` cycle-stage: diagnostico documental reforzado en ciclo posterior
+- 2026-07-03 11:21:55 [ok] `generated` llm-start: generar-ciclo-002: Arquitecto de plantillas via Codex
+- 2026-07-03 11:21:55 [error] `generated` llm-end: generar-ciclo-002: Dependencia faltante: instala requests en .venv para habilitar llamadas LLM.
+- 2026-07-03 11:21:55 [ok] `generated` cycle-stage: propuesta editorial reforzada en ciclo posterior
+- 2026-07-03 11:21:55 [ok] `generated` llm-start: validar-ciclo-002: Verificador y validador via Codex
+- 2026-07-03 11:21:55 [error] `generated` llm-end: validar-ciclo-002: Dependencia faltante: instala requests en .venv para habilitar llamadas LLM.
+- 2026-07-03 11:21:55 [ok] `generated` llm-start: criticar-ciclo-002: Critico adversarial via Codex
+- 2026-07-03 11:21:55 [error] `generated` llm-end: criticar-ciclo-002: Dependencia faltante: instala requests en .venv para habilitar llamadas LLM.
+- 2026-07-03 11:21:55 [warn] `generated` consensus: score=0.00
+- 2026-07-03 11:21:55 [ok] `evaluated` generated->evaluated: validacion y consenso completados
+- 2026-07-03 11:21:55 [ok] `finalized` evaluated->finalized: ciclo agentico cerrado

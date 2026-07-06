@@ -1,0 +1,134 @@
+{
+  "run_id": "20260703-013855",
+  "target": "UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde",
+  "display_target": "UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde",
+  "level": "materia",
+  "action": "generar-actividad",
+  "activity_number": 1,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": true,
+      "error": "",
+      "chars": 4453
+    }
+  ],
+  "compile_results": [],
+  "extractor": {
+    "enabled": true,
+    "ok": false,
+    "run_dir": "retroalimentacion-editorial/aulatex/extractor/runs/20260703-013906-extractor",
+    "manifest": "retroalimentacion-editorial/aulatex/extractor/runs/20260703-013906-extractor/manifest.json",
+    "output_dir": "UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde/extractor-aulatex",
+    "stdout": "retroalimentacion-editorial/aulatex/extractor/runs/20260703-013906-extractor/stdout.txt",
+    "stderr": "retroalimentacion-editorial/aulatex/extractor/runs/20260703-013906-extractor/stderr.txt"
+  },
+  "materialization": {
+    "enabled": false
+  },
+  "consensus": {
+    "consensus_score": 9.23,
+    "passed": true,
+    "criteria": {
+      "identidad_institucional": true,
+      "bibliografia": true,
+      "trazabilidad": true,
+      "compilacion": true,
+      "riesgos": true
+    },
+    "role_scores": {
+      "Planificador editorial": 8.6
+    },
+    "risks": [],
+    "recommendations": [
+      "Usar el reporte como retroalimentacion editorial aplicable al objetivo."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-03 01:38:55",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-03 01:38:56",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-03 01:39:06",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "ok",
+      "detail": "planificar: 4453 chars"
+    },
+    {
+      "timestamp": "2026-07-03 01:39:06",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-03 01:39:06",
+      "state": "planned",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "ExtractorAdapter seleccionado para run-extractor"
+    },
+    {
+      "timestamp": "2026-07-03 01:39:06",
+      "state": "planned",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "extractor ok=False salida=UnADM/licenciatura-en-derecho-unadm/historia-del-derecho-en-mexico-lde/extractor-aulatex"
+    },
+    {
+      "timestamp": "2026-07-03 01:39:06",
+      "state": "planned",
+      "action": "consensus",
+      "status": "ok",
+      "detail": "score=9.23"
+    },
+    {
+      "timestamp": "2026-07-03 01:39:06",
+      "state": "evaluated",
+      "action": "planned->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-03 01:39:06",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}

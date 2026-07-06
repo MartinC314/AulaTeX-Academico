@@ -1,0 +1,1944 @@
+{
+  "summary": [
+    "Nodo canonizado con base en programa analitico, plantilla de actividad y plantilla de reporte IMTC.",
+    "Se preserva enfoque institucional UANL y programa Ingenieria en Mecatronica.",
+    "Se agrega control de calidad por JSON parseable y por cobertura editorial local verificable.",
+    "No hay fuentes externas nuevas; solo evidencia local del nodo y memoria heredada.",
+    "Salida sin JSON parseable desde Claude Foundry para diseno-e-ingenieria-por-computadora-imtc",
+    "Salida sin JSON parseable desde GPT-Pro para diseno-e-ingenieria-por-computadora-imtc",
+    "Salida sin JSON parseable desde Claude Foundry para diseno-e-ingenieria-por-computadora-imtc.",
+    "Salida sin JSON parseable desde GPT-Pro para diseno-e-ingenieria-por-computadora-imtc.",
+    "Se confirma evidencia local de plantilla de actividad en reporte-diseno-e-ingenieria-por-computadora-imtc-Actividad-1.tex.",
+    "Se confirma riesgo local por reporte integral truncado en reporte-diseno-e-ingenieria-por-computadora-imtc.tex. [supuesto: archivo incompleto]",
+    "Salida sin JSON parseable desde Auto (model-router) para diseno-e-ingenieria-por-computadora-imtc",
+    "Se agrega control de calidad por JSON parseable y cobertura editorial local verificable.",
+    "Se registra historial de salidas no parseables de motores previos como riesgo operativo de formato."
+  ],
+  "identity_rules": [
+    "Mantener identidad UANL en portada, afiliacion y contexto academico.",
+    "Declarar asignatura como Diseno E Ingenieria Por Computadora y clave IMTC.",
+    "Conservar programa Ingenieria en Mecatronica en metadatos del documento.",
+    "Usar tono tecnico-academico, formal y trazable a evidencias.",
+    "Marcar campos pendientes como supuestos explicitos cuando aplique.",
+    "Fuente provisional: Claude Foundry desde diseno-e-ingenieria-por-computadora-imtc",
+    "Fuente provisional: GPT-Pro desde diseno-e-ingenieria-por-computadora-imtc",
+    "Fuente provisional: Claude Foundry desde diseno-e-ingenieria-por-computadora-imtc.",
+    "Fuente provisional: GPT-Pro desde diseno-e-ingenieria-por-computadora-imtc.",
+    "Fuente provisional: Auto (model-router) desde diseno-e-ingenieria-por-computadora-imtc",
+    "Conservar autor actual y metadatos de authortable mientras no exista correccion oficial. [supuesto]",
+    "Conservar autor actual (Martin Jonathan de la Cruz) y metadatos de authortable mientras no exista correccion oficial. [supuesto]",
+    "Fijar afiliacion: Facultad de Ingenieria Mecanica y Electrica, San Nicolas de los Garza, Nuevo Leon."
+  ],
+  "structure_rules": [
+    "Usar estructura minima: Actividad, Desarrollo y Cierre para entregas por actividad.",
+    "Alinear cada actividad al programa analitico del curso.",
+    "Incluir evidencias, analisis y referencias en Desarrollo.",
+    "Incluir resultados, limitaciones y mejoras en Cierre.",
+    "Mantener separacion entre plantilla de actividad y reporte integral.",
+    "En reporte integral usar secciones base reconstruibles: Introduccion, Desarrollo, Conclusiones."
+  ],
+  "activity_rules": [
+    "Definir consigna tecnica semanal de forma verificable.",
+    "Relacionar objetivo de actividad con cobertura del programa analitico.",
+    "Adjuntar evidencia tecnica y academica con cita bibliografica.",
+    "Registrar decisiones de ingenieria y justificaciones en lenguaje conciso.",
+    "Cerrar con mejoras accionables para la siguiente iteracion."
+  ],
+  "quality_gates": [
+    "Validar salida en JSON parseable antes de propagacion.",
+    "Verificar que toda afirmacion tecnica tenga evidencia local o cita.",
+    "Comprobar uso de archivo .bib del nodo en cada reporte.",
+    "Revisar consistencia de metadatos institucionales en portada.",
+    "Bloquear propagacion si la respuesta viene no estructurada.",
+    "Aplicar normalizacion manual cuando exista riesgo heredado de formato.",
+    "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+    "Bloquear uso del reporte integral hasta reparar truncamiento del .tex principal. [supuesto: truncado real]"
+  ],
+  "latex_rules": [
+    "Conservar macros de identidad academica definidas al inicio del .tex.",
+    "Mantener \\input{template} como punto unico de estilo compartido.",
+    "Usar \\onehalfspacing para legibilidad uniforme.",
+    "No duplicar bloques de portada; reutilizar macros existentes.",
+    "Evitar copiar plantillas completas en memoria; guardar reglas reconstruibles.",
+    "Verificar cierre correcto de entornos y documento antes de compilar.",
+    "Mantener bibliographystyle natnumurl en ausencia de instruccion institucional distinta."
+  ],
+  "bibliography_rules": [
+    "Usar bibliografia local diseno-e-ingenieria-por-computadora-imtc.bib.",
+    "Mantener clave programa-diseno-e-ingenieria-por-computadora-imtc como referencia base.",
+    "No inventar fuentes; solo registrar fuentes verificables.",
+    "Conservar estilo bibliografico natnumurl salvo instruccion institucional distinta.",
+    "Actualizar nota de referencia oficial cuando exista fuente formal del curso."
+  ],
+  "propagation_hints": [
+    "Propagacion local: priorizar este nodo como canon operativo IMTC.",
+    "Reutilizar reglas en actividades futuras sin eliminar memoria previa.",
+    "Si hay nuevos artefactos, fusionar por union-dedupe sin regresion.",
+    "Mantener traza de supuestos y campos por definir.",
+    "Escalar a nivel carrera solo cuando exista evidencia consistente multi-nodo.",
+    "Ciclo 1 necesita normalizacion manual si se reutiliza.",
+    "Priorizar reparacion del reporte integral antes de nuevas expansiones editoriales.",
+    "Ciclo 2 necesita normalizacion manual si se reutiliza."
+  ],
+  "open_questions": [
+    "Confirmar nombre oficial de figura docente. [supuesto: pendiente]",
+    "Confirmar matricula institucional final del alumno en portada. [supuesto: UANL-IMTC temporal]",
+    "Corregir y completar plantilla de reporte integral que aparece truncada. [supuesto: archivo incompleto]",
+    "Incorporar referencia oficial especifica del programa analitico en .bib. [supuesto: aun no disponible]"
+  ],
+  "artifact_name": "",
+  "sources": [
+    "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc",
+    "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/programa-analitico-diseno-e-ingenieria-por-computadora-imtc.md",
+    "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/diseno-e-ingenieria-por-computadora-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+  ],
+  "artifact_types": [],
+  "supported_artifact_types": [
+    "reporte"
+  ],
+  "source_documents": [
+    "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/programa-analitico-diseno-e-ingenieria-por-computadora-imtc.md",
+    "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/diseno-e-ingenieria-por-computadora-imtc.bib",
+    "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+  ],
+  "source_fragments": [
+    "Objetivo: Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+    "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+  ],
+  "concepts": [
+    "Programa analitico de diseno-e-ingenieria-por-computadora-imtc :: fuente=UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/diseno-e-ingenieria-por-computadora-imtc.bib"
+  ],
+  "section_titles": [
+    "Introduccion",
+    "Desarrollo",
+    "Conclusiones"
+  ],
+  "citations": [],
+  "bibliography_index": [
+    "programa-diseno-e-ingenieria-por-computadora-imtc :: Programa analitico de diseno-e-ingenieria-por-computadora-imtc :: fuente=UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/diseno-e-ingenieria-por-computadora-imtc.bib"
+  ],
+  "node_metadata": {
+    "scope_key": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc",
+    "level": "materia",
+    "label": "diseno-e-ingenieria-por-computadora-imtc",
+    "relative_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc",
+    "institution": "UANL",
+    "career": "ingenieria-en-mecatronica",
+    "subject": "diseno-e-ingenieria-por-computadora-imtc",
+    "activity": "",
+    "parent_key": "UANL/ingenieria-en-mecatronica"
+  },
+  "curricular_context": {
+    "institutional_frame": "",
+    "purpose": "",
+    "work_axes": [],
+    "source_fragments": [],
+    "coursename": "Diseno E Ingenieria Por Computadora",
+    "coursecode": "IMTC",
+    "documentsubject": "Ingenieria en Mecatronica",
+    "documenttitle": "Diseno E Ingenieria Por Computadora",
+    "documentsubtitle": "Reporte integral - diseno-e-ingenieria-por-computadora-imtc"
+  },
+  "artifact_templates": {
+    "reporte": "reporte-diseno-e-ingenieria-por-computadora-imtc"
+  },
+  "editorial_dna": {
+    "identity": {
+      "tone": [
+        "Tecnico",
+        "Formal",
+        "Accionable",
+        "Orientado a evidencia"
+      ],
+      "institutional": [
+        "Universidad Autonoma de Nuevo Leon",
+        "Facultad de Ingenieria Mecanica y Electrica",
+        "San Nicolas de los Garza, Nuevo Leon"
+      ],
+      "curricular": [
+        "Ingenieria en Mecatronica",
+        "Diseno E Ingenieria Por Computadora",
+        "Clave IMTC",
+        "Alineacion al programa analitico"
+      ],
+      "node_metadata": {
+        "scope_key": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc",
+        "level": "materia",
+        "label": "diseno-e-ingenieria-por-computadora-imtc",
+        "relative_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc",
+        "institution": "UANL",
+        "career": "ingenieria-en-mecatronica",
+        "subject": "diseno-e-ingenieria-por-computadora-imtc",
+        "activity": "",
+        "parent_key": "UANL/ingenieria-en-mecatronica"
+      },
+      "curricular_context": {
+        "institutional_frame": "",
+        "purpose": "",
+        "work_axes": [],
+        "source_fragments": [],
+        "coursename": "Diseno E Ingenieria Por Computadora",
+        "coursecode": "IMTC",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "documenttitle": "Diseno E Ingenieria Por Computadora",
+        "documentsubtitle": "Reporte integral - diseno-e-ingenieria-por-computadora-imtc"
+      },
+      "identity_rules": [
+        "Mantener identidad UANL en portada, afiliacion y contexto academico.",
+        "Declarar asignatura como Diseno E Ingenieria Por Computadora y clave IMTC.",
+        "Conservar programa Ingenieria en Mecatronica en metadatos del documento.",
+        "Usar tono tecnico-academico, formal y trazable a evidencias.",
+        "Marcar campos pendientes como supuestos explicitos cuando aplique.",
+        "Fuente provisional: Claude Foundry desde diseno-e-ingenieria-por-computadora-imtc",
+        "Fuente provisional: GPT-Pro desde diseno-e-ingenieria-por-computadora-imtc",
+        "Fuente provisional: Claude Foundry desde diseno-e-ingenieria-por-computadora-imtc.",
+        "Fuente provisional: GPT-Pro desde diseno-e-ingenieria-por-computadora-imtc.",
+        "Fuente provisional: Auto (model-router) desde diseno-e-ingenieria-por-computadora-imtc",
+        "Conservar autor actual y metadatos de authortable mientras no exista correccion oficial. [supuesto]",
+        "Conservar autor actual (Martin Jonathan de la Cruz) y metadatos de authortable mientras no exista correccion oficial. [supuesto]"
+      ]
+    },
+    "essence": [
+      "Programa analitico IMTC",
+      "Actividad semanal",
+      "Evidencia tecnica",
+      "Analisis academico",
+      "Cierre con mejora",
+      "Plantilla LaTeX institucional",
+      "Bibliografia local .bib",
+      "Nodo canonizado con base en programa analitico, plantilla de actividad y plantilla de reporte IMTC",
+      "Se preserva enfoque institucional UANL y programa Ingenieria en Mecatronica",
+      "No hay fuentes externas nuevas; solo evidencia local del nodo y memoria heredada",
+      "Mantener identidad UANL en portada, afiliacion y contexto academico",
+      "Declarar asignatura como Diseno E Ingenieria Por Computadora y clave IMTC",
+      "Conservar programa Ingenieria en Mecatronica en metadatos del documento",
+      "Usar tono tecnico-academico, formal y trazable a evidencias",
+      "Marcar campos pendientes como supuestos explicitos cuando aplique",
+      "Usar estructura minima: Actividad, Desarrollo y Cierre para entregas por actividad",
+      "Alinear cada actividad al programa analitico del curso",
+      "Incluir evidencias, analisis y referencias en Desarrollo",
+      "Incluir resultados, limitaciones y mejoras en Cierre",
+      "Mantener separacion entre plantilla de actividad y reporte integral",
+      "Definir consigna tecnica semanal de forma verificable.",
+      "Relacionar objetivo de actividad con cobertura del programa analitico.",
+      "Adjuntar evidencia tecnica y academica con cita bibliografica.",
+      "Registrar decisiones de ingenieria y justificaciones en lenguaje conciso."
+    ],
+    "structure": {
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones"
+      ],
+      "artifact_types": [
+        "reporte"
+      ],
+      "tex_functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document",
+          "abstractd"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "templateIndex",
+          "templateFinalcfg",
+          "bibliography"
+        ]
+      }
+    },
+    "reason_for_being": [
+      "Usar estructura minima: Actividad, Desarrollo y Cierre para entregas por actividad.",
+      "Alinear cada actividad al programa analitico del curso.",
+      "Incluir evidencias, analisis y referencias en Desarrollo.",
+      "Incluir resultados, limitaciones y mejoras en Cierre.",
+      "Mantener separacion entre plantilla de actividad y reporte integral.",
+      "En reporte integral usar secciones base reconstruibles: Introduccion, Desarrollo, Conclusiones.",
+      "Definir consigna tecnica semanal de forma verificable.",
+      "Relacionar objetivo de actividad con cobertura del programa analitico.",
+      "Adjuntar evidencia tecnica y academica con cita bibliografica.",
+      "Registrar decisiones de ingenieria y justificaciones en lenguaje conciso.",
+      "Cerrar con mejoras accionables para la siguiente iteracion.",
+      "Introduccion",
+      "Desarrollo",
+      "Conclusiones"
+    ],
+    "style_markers": [
+      "Portada con metadatos institucionales completos.",
+      "Secciones cortas y funcionales: consigna, desarrollo, cierre.",
+      "Citas y bibliografia obligatorias al final.",
+      "Lenguaje directo con foco en resultados y mejoras.",
+      "Mantener identidad UANL en portada, afiliacion y contexto academico.",
+      "Declarar asignatura como Diseno E Ingenieria Por Computadora y clave IMTC.",
+      "Conservar programa Ingenieria en Mecatronica en metadatos del documento.",
+      "Usar tono tecnico-academico, formal y trazable a evidencias.",
+      "Marcar campos pendientes como supuestos explicitos cuando aplique.",
+      "Conservar macros de identidad academica definidas al inicio del .tex.",
+      "Mantener \\input{template} como punto unico de estilo compartido.",
+      "Usar \\onehalfspacing para legibilidad uniforme.",
+      "No duplicar bloques de portada; reutilizar macros existentes.",
+      "Evitar copiar plantillas completas en memoria; guardar reglas reconstruibles.",
+      "Verificar cierre correcto de entornos y documento antes de compilar.",
+      "Secciones cortas y funcionales: actividad, desarrollo, cierre.",
+      "Mantener bibliographystyle natnumurl en ausencia de instruccion institucional distinta.",
+      "Portada completa con macros institucionales.",
+      "Secciones cortas y funcionales.",
+      "Cierre con limitaciones y mejora siguiente."
+    ],
+    "argumentative_patterns": [
+      "Objetivo alineado al programa -> desarrollo con evidencia -> cierre con mejora.",
+      "Afirmacion tecnica -> soporte en evidencia o referencia -> limite declarado.",
+      "Resultado obtenido -> interpretacion ingenieril -> accion siguiente.",
+      "Usar estructura minima: Actividad, Desarrollo y Cierre para entregas por actividad.",
+      "Alinear cada actividad al programa analitico del curso.",
+      "Incluir evidencias, analisis y referencias en Desarrollo.",
+      "Incluir resultados, limitaciones y mejoras en Cierre.",
+      "Mantener separacion entre plantilla de actividad y reporte integral.",
+      "Definir consigna tecnica semanal de forma verificable.",
+      "Relacionar objetivo de actividad con cobertura del programa analitico.",
+      "Adjuntar evidencia tecnica y academica con cita bibliografica.",
+      "Registrar decisiones de ingenieria y justificaciones en lenguaje conciso.",
+      "Cerrar con mejoras accionables para la siguiente iteracion.",
+      "Verificar que toda afirmacion tecnica tenga evidencia local o cita.",
+      "Comprobar uso de archivo .bib del nodo en cada reporte.",
+      "Revisar consistencia de metadatos institucionales en portada.",
+      "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+      "En reporte integral usar secciones base reconstruibles: Introduccion, Desarrollo, Conclusiones.",
+      "Bloquear uso del reporte integral hasta reparar truncamiento del .tex principal. [supuesto: truncado real]",
+      "Afirmacion tecnica -> soporte en cita o evidencia local -> limite declarado."
+    ],
+    "reinforcement_log": [
+      "Se conserva regla heredada de control JSON parseable como puerta de calidad.",
+      "Se consolidan metadatos institucionales y curriculares desde plantillas locales.",
+      "Se refuerza patron argumentativo objetivo-evidencia-cierre sin eliminar memoria previa.",
+      "Se agrega manejo explicito de supuestos por campos pendientes.",
+      "Se mantiene estrategia de compresion por union-dedupe y sin regresion.",
+      "Refuerzo editorial aplicado sobre 50 conceptos y 0 citas.",
+      "Nodo canonizado con base en programa analitico, plantilla de actividad y plantilla de reporte IMTC.",
+      "Se preserva enfoque institucional UANL y programa Ingenieria en Mecatronica.",
+      "ADN sintetizado con 51 conceptos, 1 citas y 14 relaciones.",
+      "Memoria de redacción preservada en 8 bloques.",
+      "Refuerzo editorial aplicado sobre 1 conceptos y 0 citas.",
+      "Salida sin JSON parseable desde Claude Foundry para diseno-e-ingenieria-por-computadora-imtc",
+      "ADN sintetizado con 52 conceptos, 1 citas y 14 relaciones.",
+      "Salida sin JSON parseable desde GPT-Pro para diseno-e-ingenieria-por-computadora-imtc",
+      "Se preservo memoria previa sin recorte.",
+      "Se aplico union y deduplicacion semantica sin perdida funcional.",
+      "Se reforzo puerta de calidad para JSON parseable.",
+      "Se reforzo riesgo critico por reporte integral truncado con marca de supuesto.",
+      "Se mantuvo politica de no inventar fuentes y uso exclusivo de evidencia local.",
+      "Refuerzo editorial aplicado sobre 56 conceptos y 0 citas.",
+      "ADN sintetizado con 64 conceptos, 1 citas y 19 relaciones.",
+      "Salida sin JSON parseable desde Auto (model-router) para diseno-e-ingenieria-por-computadora-imtc",
+      "Refuerzo editorial aplicado sobre 0 conceptos y 0 citas.",
+      "Ciclo 2 canonizacion-local aplicado sin eliminacion de reglas utiles.",
+      "Se deduplicaron variantes textuales repetidas de incidencias no parseables.",
+      "Se reforzo bloqueo operativo por truncamiento del reporte integral. [supuesto]",
+      "Se mantuvo ADN institucional, curricular, argumentativo y de trazabilidad.",
+      "Refuerzo editorial aplicado sobre 57 conceptos y 0 citas.",
+      "ADN sintetizado con 80 conceptos, 1 citas y 23 relaciones.",
+      "Refuerzo editorial aplicado sobre 7 conceptos y 0 citas.",
+      "ADN sintetizado con 82 conceptos, 1 citas y 29 relaciones."
+    ],
+    "knowledge_graph": {
+      "concepts": [
+        "Programa analitico IMTC",
+        "Actividad semanal",
+        "Evidencia tecnica",
+        "Analisis academico",
+        "Cierre con mejora",
+        "Plantilla LaTeX institucional",
+        "Bibliografia local .bib",
+        "Nodo canonizado con base en programa analitico, plantilla de actividad y plantilla de reporte IMTC",
+        "Se preserva enfoque institucional UANL y programa Ingenieria en Mecatronica",
+        "No hay fuentes externas nuevas; solo evidencia local del nodo y memoria heredada",
+        "Mantener identidad UANL en portada, afiliacion y contexto academico",
+        "Declarar asignatura como Diseno E Ingenieria Por Computadora y clave IMTC",
+        "Conservar programa Ingenieria en Mecatronica en metadatos del documento",
+        "Usar tono tecnico-academico, formal y trazable a evidencias",
+        "Marcar campos pendientes como supuestos explicitos cuando aplique",
+        "Usar estructura minima: Actividad, Desarrollo y Cierre para entregas por actividad",
+        "Alinear cada actividad al programa analitico del curso",
+        "Incluir evidencias, analisis y referencias en Desarrollo",
+        "Incluir resultados, limitaciones y mejoras en Cierre",
+        "Mantener separacion entre plantilla de actividad y reporte integral",
+        "Definir consigna tecnica semanal de forma verificable",
+        "Relacionar objetivo de actividad con cobertura del programa analitico",
+        "Adjuntar evidencia tecnica y academica con cita bibliografica",
+        "Registrar decisiones de ingenieria y justificaciones en lenguaje conciso",
+        "Cerrar con mejoras accionables para la siguiente iteracion",
+        "Verificar que toda afirmacion tecnica tenga evidencia local o cita",
+        "Comprobar uso de archivo .bib del nodo en cada reporte",
+        "Revisar consistencia de metadatos institucionales en portada",
+        "Confirmar nombre oficial de figura docente. [supuesto: pendiente]",
+        "Confirmar matricula institucional final del alumno en portada. [supuesto: UANL-IMTC temporal]",
+        "Corregir y completar plantilla de reporte integral que aparece truncada. [supuesto: archivo incompleto]",
+        "Incorporar referencia oficial especifica del programa analitico en .bib. [supuesto: aun no disponible]",
+        "Documentar actividades tecnicas con trazabilidad academica",
+        "Convertir cada entrega en evidencia de aprendizaje ingenieril",
+        "Mantener consistencia editorial institucional en LaTeX",
+        "Servir como memoria editorial persistente del curso IMTC",
+        "Estandarizar reportes para evaluacion tecnica y academica verificable",
+        "Reducir ambiguedad mediante reglas locales reconstruibles",
+        "Portada con metadatos institucionales completos",
+        "Secciones cortas y funcionales: consigna, desarrollo, cierre",
+        "Citas y bibliografia obligatorias al final",
+        "Lenguaje directo con foco en resultados y mejoras",
+        "Objetivo alineado al programa -> desarrollo con evidencia -> cierre con mejora",
+        "Afirmacion tecnica -> soporte en evidencia o referencia -> limite declarado",
+        "Resultado obtenido -> interpretacion ingenieril -> accion siguiente",
+        "programa-diseno-e-ingenieria-por-computadora-imtc",
+        "programa-analitico-diseno-e-ingenieria-por-computadora-imtc.md",
+        "diseno-e-ingenieria-por-computadora-imtc.bib",
+        "reporte-diseno-e-ingenieria-por-computadora-imtc-Actividad-1.tex",
+        "reporte-diseno-e-ingenieria-por-computadora-imtc.tex",
+        "Programa analitico de diseno-e-ingenieria-por-computadora-imtc :: fuente=UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/diseno-e-ingenieria-por-computadora-imtc.bib",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo",
+        "Identidad UANL",
+        "Trazabilidad academica",
+        "Reporte integral truncado",
+        "Se confirma evidencia local de plantilla de actividad en reporte-diseno-e-ingenieria-por-computadora-imtc-Actividad-1.tex",
+        "En reporte integral usar secciones base reconstruibles: Introduccion, Desarrollo, Conclusiones",
+        "Bloquear uso del reporte integral hasta reparar truncamiento del .tex principal. [supuesto: truncado real]",
+        "Alinear cada actividad al programa analitico",
+        "Transformar evidencia tecnica en aprendizaje trazable",
+        "Sostener identidad institucional UANL en cada entregable",
+        "Garantizar continuidad editorial por reglas reconstruibles",
+        "Secciones cortas y funcionales: actividad, desarrollo, cierre",
+        "Checklist local: objetivo alineado, evidencias citadas, conclusiones de mecatronica",
+        "Control de calidad JSON parseable",
+        "Riesgo de truncamiento del reporte integral",
+        "Se registra historial de salidas no parseables de motores previos como riesgo operativo de formato",
+        "Conservar autor actual y metadatos de authortable mientras no exista correccion oficial. [supuesto]",
+        "Plantilla institucional reutilizable",
+        "Actividad semanal con evidencia",
+        "Trazabilidad entre objetivo, desarrollo y cierre",
+        "Rigor de formato JSON y LaTeX reconstruible",
+        "Estandarizar entregables IMTC con consistencia institucional",
+        "Asegurar evidencia verificable en cada afirmacion tecnica",
+        "Sostener continuidad editorial sin perder memoria util",
+        "Portada completa con macros institucionales",
+        "Secciones cortas y funcionales",
+        "Cierre con limitaciones y mejora siguiente",
+        "Supuestos marcados de forma explicita",
+        "Afirmacion tecnica -> soporte en cita o evidencia local -> limite declarado",
+        "Conservar autor actual (Martin Jonathan de la Cruz) y metadatos de authortable mientras no exista correccion oficial. [supuesto]",
+        "Fijar afiliacion: Facultad de Ingenieria Mecanica y Electrica, San Nicolas de los Garza, Nuevo Leon"
+      ],
+      "citations": [
+        "programa-diseno-e-ingenieria-por-computadora-imtc"
+      ],
+      "evidence": [
+        "programa-analitico-diseno-e-ingenieria-por-computadora-imtc.md",
+        "diseno-e-ingenieria-por-computadora-imtc.bib",
+        "reporte-diseno-e-ingenieria-por-computadora-imtc-Actividad-1.tex",
+        "reporte-diseno-e-ingenieria-por-computadora-imtc.tex",
+        "Memoria heredada UANL: alerta de salida no parseable y necesidad de normalizacion",
+        "Nodo canonizado con base en programa analitico, plantilla de actividad y plantilla de reporte IMTC.",
+        "Se preserva enfoque institucional UANL y programa Ingenieria en Mecatronica.",
+        "Se agrega control de calidad por JSON parseable y por cobertura editorial local verificable.",
+        "No hay fuentes externas nuevas; solo evidencia local del nodo y memoria heredada.",
+        "Validar salida en JSON parseable antes de propagacion.",
+        "Verificar que toda afirmacion tecnica tenga evidencia local o cita.",
+        "Comprobar uso de archivo .bib del nodo en cada reporte.",
+        "Revisar consistencia de metadatos institucionales en portada.",
+        "Bloquear propagacion si la respuesta viene no estructurada.",
+        "Aplicar normalizacion manual cuando exista riesgo heredado de formato.",
+        "programa-diseno-e-ingenieria-por-computadora-imtc :: Programa analitico de diseno-e-ingenieria-por-computadora-imtc :: fuente=UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/diseno-e-ingenieria-por-computadora-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/programa-analitico-diseno-e-ingenieria-por-computadora-imtc.md",
+        "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/diseno-e-ingenieria-por-computadora-imtc.bib",
+        "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex",
+        "Salida sin JSON parseable desde Claude Foundry para diseno-e-ingenieria-por-computadora-imtc",
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo.",
+        "Salida sin JSON parseable desde GPT-Pro para diseno-e-ingenieria-por-computadora-imtc",
+        "Checklist local: objetivo alineado, evidencias citadas, conclusiones de mecatronica.",
+        "Salida sin JSON parseable desde Claude Foundry para diseno-e-ingenieria-por-computadora-imtc.",
+        "Salida sin JSON parseable desde GPT-Pro para diseno-e-ingenieria-por-computadora-imtc.",
+        "Se confirma evidencia local de plantilla de actividad en reporte-diseno-e-ingenieria-por-computadora-imtc-Actividad-1.tex.",
+        "Se confirma riesgo local por reporte integral truncado en reporte-diseno-e-ingenieria-por-computadora-imtc.tex. [supuesto: archivo incompleto]",
+        "Bloquear uso del reporte integral hasta reparar truncamiento del .tex principal. [supuesto: truncado real]",
+        "Salida sin JSON parseable desde Auto (model-router) para diseno-e-ingenieria-por-computadora-imtc",
+        "Se agrega control de calidad por JSON parseable y cobertura editorial local verificable.",
+        "Se registra historial de salidas no parseables de motores previos como riesgo operativo de formato."
+      ],
+      "relations": [
+        {
+          "source": "Actividad semanal",
+          "target": "Programa analitico IMTC",
+          "kind": "depends_on",
+          "weight": 3,
+          "justification": "El checklist exige alineacion del objetivo con el programa analitico.",
+          "evidence": []
+        },
+        {
+          "source": "Desarrollo",
+          "target": "Evidencia tecnica",
+          "kind": "depends_on",
+          "weight": 3,
+          "justification": "La plantilla indica incluir evidencias, analisis y referencias.",
+          "evidence": []
+        },
+        {
+          "source": "Cierre con mejora",
+          "target": "Analisis academico",
+          "kind": "develops",
+          "weight": 3,
+          "justification": "Se piden resultados, limitaciones y mejoras como salida de aprendizaje.",
+          "evidence": []
+        },
+        {
+          "source": "Plantilla LaTeX institucional",
+          "target": "Identidad UANL",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "Macros de universidad, facultad y ubicacion fijan consistencia editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Bibliografia local .bib",
+          "target": "Trazabilidad academica",
+          "kind": "supports",
+          "weight": 3,
+          "justification": "El checklist exige citas desde el archivo bib del nodo.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo canonizado con base en programa analitico, plantilla de actividad y plantilla de reporte IMTC",
+          "target": "Se preserva enfoque institucional UANL y programa Ingenieria en Mecatronica",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Nodo canonizado con base en programa analitico, plantilla de actividad y plantilla de reporte IMTC",
+          "target": "No hay fuentes externas nuevas; solo evidencia local del nodo y memoria heredada",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva enfoque institucional UANL y programa Ingenieria en Mecatronica",
+          "target": "No hay fuentes externas nuevas; solo evidencia local del nodo y memoria heredada",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva enfoque institucional UANL y programa Ingenieria en Mecatronica",
+          "target": "Mantener identidad UANL en portada, afiliacion y contexto academico",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "No hay fuentes externas nuevas; solo evidencia local del nodo y memoria heredada",
+          "target": "Mantener identidad UANL en portada, afiliacion y contexto academico",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "No hay fuentes externas nuevas; solo evidencia local del nodo y memoria heredada",
+          "target": "Declarar asignatura como Diseno E Ingenieria Por Computadora y clave IMTC",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener identidad UANL en portada, afiliacion y contexto academico",
+          "target": "Declarar asignatura como Diseno E Ingenieria Por Computadora y clave IMTC",
+          "kind": "cohesion",
+          "weight": 3,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Mantener identidad UANL en portada, afiliacion y contexto academico",
+          "target": "Conservar programa Ingenieria en Mecatronica en metadatos del documento",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Declarar asignatura como Diseno E Ingenieria Por Computadora y clave IMTC",
+          "target": "Conservar programa Ingenieria en Mecatronica en metadatos del documento",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Reporte integral truncado",
+          "target": "Compilacion reproducible",
+          "kind": "contrasts",
+          "weight": 1,
+          "justification": "Un .tex incompleto rompe el contrato de compilacion. [supuesto: truncado real]",
+          "evidence": []
+        },
+        {
+          "source": "Se preserva enfoque institucional UANL y programa Ingenieria en Mecatronica",
+          "target": "Se confirma evidencia local de plantilla de actividad en reporte-diseno-e-ingenieria-por-computadora-imtc-Actividad-1.tex",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "No hay fuentes externas nuevas; solo evidencia local del nodo y memoria heredada",
+          "target": "Se confirma evidencia local de plantilla de actividad en reporte-diseno-e-ingenieria-por-computadora-imtc-Actividad-1.tex",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma evidencia local de plantilla de actividad en reporte-diseno-e-ingenieria-por-computadora-imtc-Actividad-1.tex",
+          "target": "Mantener identidad UANL en portada, afiliacion y contexto academico",
+          "kind": "cohesion",
+          "weight": 2,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma evidencia local de plantilla de actividad en reporte-diseno-e-ingenieria-por-computadora-imtc-Actividad-1.tex",
+          "target": "Declarar asignatura como Diseno E Ingenieria Por Computadora y clave IMTC",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Riesgo de truncamiento del reporte integral",
+          "target": "Uso del reporte integral",
+          "kind": "contrasts",
+          "weight": 1,
+          "justification": "El uso queda bloqueado hasta reparar archivo incompleto. [supuesto]",
+          "evidence": []
+        },
+        {
+          "source": "No hay fuentes externas nuevas; solo evidencia local del nodo y memoria heredada",
+          "target": "Se registra historial de salidas no parseables de motores previos como riesgo operativo de formato",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se confirma evidencia local de plantilla de actividad en reporte-diseno-e-ingenieria-por-computadora-imtc-Actividad-1.tex",
+          "target": "Se registra historial de salidas no parseables de motores previos como riesgo operativo de formato",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Se registra historial de salidas no parseables de motores previos como riesgo operativo de formato",
+          "target": "Mantener identidad UANL en portada, afiliacion y contexto academico",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Declarar asignatura como Diseno E Ingenieria Por Computadora y clave IMTC",
+          "target": "Usar tono tecnico-academico, formal y trazable a evidencias",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Conservar programa Ingenieria en Mecatronica en metadatos del documento",
+          "target": "Usar tono tecnico-academico, formal y trazable a evidencias",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Conservar programa Ingenieria en Mecatronica en metadatos del documento",
+          "target": "Marcar campos pendientes como supuestos explicitos cuando aplique",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar tono tecnico-academico, formal y trazable a evidencias",
+          "target": "Marcar campos pendientes como supuestos explicitos cuando aplique",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Usar tono tecnico-academico, formal y trazable a evidencias",
+          "target": "Conservar autor actual (Martin Jonathan de la Cruz) y metadatos de authortable mientras no exista correccion oficial. [supuesto]",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        },
+        {
+          "source": "Marcar campos pendientes como supuestos explicitos cuando aplique",
+          "target": "Conservar autor actual (Martin Jonathan de la Cruz) y metadatos de authortable mientras no exista correccion oficial. [supuesto]",
+          "kind": "cohesion",
+          "weight": 1,
+          "justification": "Coaparecen en la misma retroalimentación editorial.",
+          "evidence": []
+        }
+      ],
+      "concept_weights": {
+        "Nodo canonizado con base en programa analitico, plantilla de actividad y plantilla de reporte IMTC": 3,
+        "Se preserva enfoque institucional UANL y programa Ingenieria en Mecatronica": 3,
+        "No hay fuentes externas nuevas; solo evidencia local del nodo y memoria heredada": 3,
+        "Mantener identidad UANL en portada, afiliacion y contexto academico": 4,
+        "Declarar asignatura como Diseno E Ingenieria Por Computadora y clave IMTC": 4,
+        "Conservar programa Ingenieria en Mecatronica en metadatos del documento": 4,
+        "Usar tono tecnico-academico, formal y trazable a evidencias": 4,
+        "Marcar campos pendientes como supuestos explicitos cuando aplique": 4,
+        "Usar estructura minima: Actividad, Desarrollo y Cierre para entregas por actividad": 3,
+        "Alinear cada actividad al programa analitico del curso": 3,
+        "Incluir evidencias, analisis y referencias en Desarrollo": 3,
+        "Incluir resultados, limitaciones y mejoras en Cierre": 3,
+        "Mantener separacion entre plantilla de actividad y reporte integral": 3,
+        "Definir consigna tecnica semanal de forma verificable": 3,
+        "Relacionar objetivo de actividad con cobertura del programa analitico": 3,
+        "Adjuntar evidencia tecnica y academica con cita bibliografica": 3,
+        "Registrar decisiones de ingenieria y justificaciones en lenguaje conciso": 3,
+        "Cerrar con mejoras accionables para la siguiente iteracion": 3,
+        "Verificar que toda afirmacion tecnica tenga evidencia local o cita": 3,
+        "Comprobar uso de archivo .bib del nodo en cada reporte": 3,
+        "Revisar consistencia de metadatos institucionales en portada": 3,
+        "Confirmar nombre oficial de figura docente. [supuesto: pendiente]": 3,
+        "Confirmar matricula institucional final del alumno en portada. [supuesto: UANL-IMTC temporal]": 3,
+        "Corregir y completar plantilla de reporte integral que aparece truncada. [supuesto: archivo incompleto]": 3,
+        "Incorporar referencia oficial especifica del programa analitico en .bib. [supuesto: aun no disponible]": 3,
+        "Documentar actividades tecnicas con trazabilidad academica": 1,
+        "Convertir cada entrega en evidencia de aprendizaje ingenieril": 1,
+        "Mantener consistencia editorial institucional en LaTeX": 1,
+        "Servir como memoria editorial persistente del curso IMTC": 1,
+        "Estandarizar reportes para evaluacion tecnica y academica verificable": 1,
+        "Reducir ambiguedad mediante reglas locales reconstruibles": 1,
+        "Portada con metadatos institucionales completos": 2,
+        "Secciones cortas y funcionales: consigna, desarrollo, cierre": 1,
+        "Citas y bibliografia obligatorias al final": 2,
+        "Lenguaje directo con foco en resultados y mejoras": 2,
+        "Objetivo alineado al programa -> desarrollo con evidencia -> cierre con mejora": 3,
+        "Afirmacion tecnica -> soporte en evidencia o referencia -> limite declarado": 2,
+        "Resultado obtenido -> interpretacion ingenieril -> accion siguiente": 3,
+        "Programa analitico IMTC": 3,
+        "Actividad semanal": 3,
+        "Evidencia tecnica": 3,
+        "Analisis academico": 3,
+        "Cierre con mejora": 3,
+        "Plantilla LaTeX institucional": 3,
+        "Bibliografia local .bib": 3,
+        "programa-diseno-e-ingenieria-por-computadora-imtc": 3,
+        "programa-analitico-diseno-e-ingenieria-por-computadora-imtc.md": 3,
+        "diseno-e-ingenieria-por-computadora-imtc.bib": 3,
+        "reporte-diseno-e-ingenieria-por-computadora-imtc-Actividad-1.tex": 3,
+        "reporte-diseno-e-ingenieria-por-computadora-imtc.tex": 3,
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo": 5,
+        "Se confirma evidencia local de plantilla de actividad en reporte-diseno-e-ingenieria-por-computadora-imtc-Actividad-1.tex": 2,
+        "En reporte integral usar secciones base reconstruibles: Introduccion, Desarrollo, Conclusiones": 2,
+        "Bloquear uso del reporte integral hasta reparar truncamiento del .tex principal. [supuesto: truncado real]": 2,
+        "Alinear cada actividad al programa analitico": 1,
+        "Transformar evidencia tecnica en aprendizaje trazable": 1,
+        "Sostener identidad institucional UANL en cada entregable": 1,
+        "Garantizar continuidad editorial por reglas reconstruibles": 1,
+        "Secciones cortas y funcionales: actividad, desarrollo, cierre": 1,
+        "Identidad UANL": 1,
+        "Trazabilidad academica": 1,
+        "Reporte integral truncado": 1,
+        "Checklist local: objetivo alineado, evidencias citadas, conclusiones de mecatronica": 1,
+        "Se registra historial de salidas no parseables de motores previos como riesgo operativo de formato": 1,
+        "Conservar autor actual y metadatos de authortable mientras no exista correccion oficial. [supuesto]": 1,
+        "Plantilla institucional reutilizable": 1,
+        "Actividad semanal con evidencia": 1,
+        "Trazabilidad entre objetivo, desarrollo y cierre": 1,
+        "Rigor de formato JSON y LaTeX reconstruible": 1,
+        "Estandarizar entregables IMTC con consistencia institucional": 1,
+        "Asegurar evidencia verificable en cada afirmacion tecnica": 1,
+        "Sostener continuidad editorial sin perder memoria util": 1,
+        "Portada completa con macros institucionales": 1,
+        "Secciones cortas y funcionales": 1,
+        "Cierre con limitaciones y mejora siguiente": 1,
+        "Supuestos marcados de forma explicita": 1,
+        "Afirmacion tecnica -> soporte en cita o evidencia local -> limite declarado": 1,
+        "Riesgo de truncamiento del reporte integral": 1,
+        "Conservar autor actual (Martin Jonathan de la Cruz) y metadatos de authortable mientras no exista correccion oficial. [supuesto]": 1,
+        "Fijar afiliacion: Facultad de Ingenieria Mecanica y Electrica, San Nicolas de los Garza, Nuevo Leon": 1
+      },
+      "citation_weights": {}
+    },
+    "writing_memory": [
+      {
+        "id": "b0001",
+        "order": 1,
+        "kind": "abstract",
+        "section": "Resumen editorial",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Objetivo: Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+        "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+      },
+      {
+        "id": "b0002",
+        "order": 2,
+        "kind": "section",
+        "section": "Introduccion",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Introduccion",
+        "latex": "\\section{Introduccion}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+      },
+      {
+        "id": "b0003",
+        "order": 3,
+        "kind": "paragraph",
+        "section": "Introduccion",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+        "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+      },
+      {
+        "id": "b0004",
+        "order": 4,
+        "kind": "section",
+        "section": "Desarrollo",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Desarrollo",
+        "latex": "\\section{Desarrollo}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+      },
+      {
+        "id": "b0005",
+        "order": 5,
+        "kind": "paragraph",
+        "section": "Desarrollo",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+        "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+      },
+      {
+        "id": "b0006",
+        "order": 6,
+        "kind": "section",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Conclusiones",
+        "latex": "\\section{Conclusiones}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+      },
+      {
+        "id": "b0007",
+        "order": 7,
+        "kind": "paragraph",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+        "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+      },
+      {
+        "id": "b0008",
+        "order": 8,
+        "kind": "paragraph",
+        "section": "Conclusiones",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "natnumurl",
+        "latex": "\\bibliographystyle{natnumurl}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+      }
+    ],
+    "reconstructable_source": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Diseno E Ingenieria Por Computadora}\n\\def\\documentsubtitle {Reporte integral - diseno-e-ingenieria-por-computadora-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Diseno E Ingenieria Por Computadora}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{diseno-e-ingenieria-por-computadora-imtc}\n\n\\end{document}\n"
+  },
+  "tex_blueprint": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex",
+        "documenttitle": "Diseno E Ingenieria Por Computadora",
+        "documentsubtitle": "Reporte integral - diseno-e-ingenieria-por-computadora-imtc",
+        "documentsubject": "Ingenieria en Mecatronica",
+        "coursename": "Diseno E Ingenieria Por Computadora",
+        "coursecode": "IMTC",
+        "documentauthor": "Martin Jonathan de la Cruz",
+        "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+        "section_titles": [
+          "Introduccion",
+          "Desarrollo",
+          "Conclusiones"
+        ],
+        "subsection_titles": [],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [
+          "Objetivo: Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+          "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+        ],
+        "content_memory": {
+          "relative_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex",
+          "raw_latex_sha256": "f0feeca7711f83ddb3c13d4ef68c2927f5bd673ce2f1607c4853b112939870e1",
+          "raw_latex_chars": 1786,
+          "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Diseno E Ingenieria Por Computadora}\n\\def\\documentsubtitle {Reporte integral - diseno-e-ingenieria-por-computadora-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Diseno E Ingenieria Por Computadora}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{diseno-e-ingenieria-por-computadora-imtc}\n\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "article",
+              "options": "spanish,letterpaper,oneside"
+            },
+            "packages": [],
+            "inputs": [
+              "template"
+            ],
+            "environments": [
+              "tabular",
+              "document",
+              "abstractd"
+            ],
+            "template_commands": [
+              "templatePortrait",
+              "templatePagecfg",
+              "templateIndex",
+              "templateFinalcfg",
+              "bibliography"
+            ]
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "abstract",
+              "section": "Resumen editorial",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Objetivo: Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+              "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            },
+            {
+              "id": "b0002",
+              "order": 2,
+              "kind": "section",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Introduccion",
+              "latex": "\\section{Introduccion}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            },
+            {
+              "id": "b0003",
+              "order": 3,
+              "kind": "paragraph",
+              "section": "Introduccion",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Desarrollo",
+              "latex": "\\section{Desarrollo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Desarrollo",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "section",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conclusiones",
+              "latex": "\\section{Conclusiones}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "paragraph",
+              "section": "Conclusiones",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "natnumurl",
+              "latex": "\\bibliographystyle{natnumurl}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex",
+      "documenttitle": "Diseno E Ingenieria Por Computadora",
+      "documentsubtitle": "Reporte integral - diseno-e-ingenieria-por-computadora-imtc",
+      "documentsubject": "Ingenieria en Mecatronica",
+      "coursename": "Diseno E Ingenieria Por Computadora",
+      "coursecode": "IMTC",
+      "documentauthor": "Martin Jonathan de la Cruz",
+      "abstract": "Objetivo: Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+      "section_titles": [
+        "Introduccion",
+        "Desarrollo",
+        "Conclusiones"
+      ],
+      "subsection_titles": [],
+      "cited_keys": [],
+      "concepts": [],
+      "source_fragments": [
+        "Objetivo: Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+        "Describir el contexto de la actividad y su impacto en la formacion mecatronica."
+      ],
+      "content_memory": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex",
+        "raw_latex_sha256": "f0feeca7711f83ddb3c13d4ef68c2927f5bd673ce2f1607c4853b112939870e1",
+        "raw_latex_chars": 1786,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Diseno E Ingenieria Por Computadora}\n\\def\\documentsubtitle {Reporte integral - diseno-e-ingenieria-por-computadora-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Diseno E Ingenieria Por Computadora}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{diseno-e-ingenieria-por-computadora-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    }
+  },
+  "tex_content_memory": {
+    "artifacts": {
+      "reporte_base": {
+        "relative_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex",
+        "raw_latex_sha256": "f0feeca7711f83ddb3c13d4ef68c2927f5bd673ce2f1607c4853b112939870e1",
+        "raw_latex_chars": 1786,
+        "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Diseno E Ingenieria Por Computadora}\n\\def\\documentsubtitle {Reporte integral - diseno-e-ingenieria-por-computadora-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Diseno E Ingenieria Por Computadora}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{diseno-e-ingenieria-por-computadora-imtc}\n\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "article",
+            "options": "spanish,letterpaper,oneside"
+          },
+          "packages": [],
+          "inputs": [
+            "template"
+          ],
+          "environments": [
+            "tabular",
+            "document",
+            "abstractd"
+          ],
+          "template_commands": [
+            "templatePortrait",
+            "templatePagecfg",
+            "templateIndex",
+            "templateFinalcfg",
+            "bibliography"
+          ]
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "abstract",
+            "section": "Resumen editorial",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Objetivo: Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+            "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0002",
+            "order": 2,
+            "kind": "section",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Introduccion",
+            "latex": "\\section{Introduccion}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0003",
+            "order": 3,
+            "kind": "paragraph",
+            "section": "Introduccion",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Desarrollo",
+            "latex": "\\section{Desarrollo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Desarrollo",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "section",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conclusiones",
+            "latex": "\\section{Conclusiones}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "paragraph",
+            "section": "Conclusiones",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "natnumurl",
+            "latex": "\\bibliographystyle{natnumurl}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
+      }
+    },
+    "primary": {
+      "relative_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex",
+      "raw_latex_sha256": "f0feeca7711f83ddb3c13d4ef68c2927f5bd673ce2f1607c4853b112939870e1",
+      "raw_latex_chars": 1786,
+      "raw_latex": "% Plantilla editorial IMTC\n\\documentclass[spanish,letterpaper,oneside]{article}\n\n\\def\\documenttitle {Diseno E Ingenieria Por Computadora}\n\\def\\documentsubtitle {Reporte integral - diseno-e-ingenieria-por-computadora-imtc}\n\\def\\documentsubject {Ingenieria en Mecatronica}\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Diseno E Ingenieria Por Computadora}\n\\def\\coursecode {IMTC}\n\\def\\universityname {Universidad Autonoma de Nuevo Leon}\n\\def\\universityfaculty {Facultad de Ingenieria Mecanica y Electrica}\n\\def\\universitydepartment {\\coursename}\n\\def\\universitydepartmentimage {UANL/assets-uanl/logo-uanl.png}\n\\def\\universitydepartmentimagecfg {width=3.2cm}\n\\def\\universitylocation {San Nicolas de los Garza, Nuevo Leon}\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:} & Martin Jonathan de la Cruz \\\\\n    Matricula: & UANL-IMTC \\\\\n    Programa: & Ingenieria en Mecatronica \\\\\n    Asignatura: & \\coursename \\\\\n    Codigo: & \\coursecode \\\\\n    Figura docente: & Nombre por definir \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\n\\begin{document}\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Introduccion}\nDescribir el contexto de la actividad y su impacto en la formacion mecatronica.\n\n\\section{Desarrollo}\nAgregar analisis, resultados, figuras y tablas segun la actividad.\n\n\\section{Conclusiones}\nSintetizar hallazgos y siguientes acciones de aprendizaje.\n\n\\bibliographystyle{natnumurl}\n\\bibliography{diseno-e-ingenieria-por-computadora-imtc}\n\n\\end{document}\n",
+      "functional_structure": {
+        "documentclass": {
+          "class": "article",
+          "options": "spanish,letterpaper,oneside"
+        },
+        "packages": [],
+        "inputs": [
+          "template"
+        ],
+        "environments": [
+          "tabular",
+          "document",
+          "abstractd"
+        ],
+        "template_commands": [
+          "templatePortrait",
+          "templatePagecfg",
+          "templateIndex",
+          "templateFinalcfg",
+          "bibliography"
+        ]
+      },
+      "paragraph_map": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "abstract",
+          "section": "Resumen editorial",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Objetivo: Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+          "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "section",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Introduccion",
+          "latex": "\\section{Introduccion}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "paragraph",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "section",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\section{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "paragraph",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "section",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Conclusiones",
+          "latex": "\\section{Conclusiones}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        },
+        {
+          "id": "b0008",
+          "order": 8,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        }
+      ],
+      "content_blocks": [
+        {
+          "id": "b0001",
+          "order": 1,
+          "kind": "abstract",
+          "section": "Resumen editorial",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Objetivo: Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+          "latex": "\\textbf{Objetivo:} Documentar el avance academico y tecnico de la materia diseno e ingenieria por computadora.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        },
+        {
+          "id": "b0002",
+          "order": 2,
+          "kind": "section",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Introduccion",
+          "latex": "\\section{Introduccion}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        },
+        {
+          "id": "b0003",
+          "order": 3,
+          "kind": "paragraph",
+          "section": "Introduccion",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "latex": "Describir el contexto de la actividad y su impacto en la formacion mecatronica.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        },
+        {
+          "id": "b0004",
+          "order": 4,
+          "kind": "section",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Desarrollo",
+          "latex": "\\section{Desarrollo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        },
+        {
+          "id": "b0005",
+          "order": 5,
+          "kind": "paragraph",
+          "section": "Desarrollo",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "latex": "Agregar analisis, resultados, figuras y tablas segun la actividad.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        },
+        {
+          "id": "b0006",
+          "order": 6,
+          "kind": "section",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Conclusiones",
+          "latex": "\\section{Conclusiones}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        },
+        {
+          "id": "b0007",
+          "order": 7,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "latex": "Sintetizar hallazgos y siguientes acciones de aprendizaje.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        },
+        {
+          "id": "b0008",
+          "order": 8,
+          "kind": "paragraph",
+          "section": "Conclusiones",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "natnumurl",
+          "latex": "\\bibliographystyle{natnumurl}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/reporte-diseno-e-ingenieria-por-computadora-imtc.tex"
+        }
+      ],
+      "citation_map": {},
+      "all_cited_keys": [],
+      "missing_bibliography_keys": []
+    },
+    "bibliography_sources": {
+      "programa-diseno-e-ingenieria-por-computadora-imtc": {
+        "key": "programa-diseno-e-ingenieria-por-computadora-imtc",
+        "source_type": "bibtex",
+        "source_path": "UANL/ingenieria-en-mecatronica/diseno-e-ingenieria-por-computadora-imtc/diseno-e-ingenieria-por-computadora-imtc.bib",
+        "entry_type": "misc",
+        "title": "Programa analitico de diseno-e-ingenieria-por-computadora-imtc",
+        "author": "UANL",
+        "year": "2026",
+        "url": "https://www.uanl.mx/",
+        "note": "Actualizar con la referencia oficial del curso",
+        "raw_entry": "@misc{programa-diseno-e-ingenieria-por-computadora-imtc,\n  author = {UANL},\n  title = {Programa analitico de diseno-e-ingenieria-por-computadora-imtc},\n  year = {2026},\n  note = {Actualizar con la referencia oficial del curso},\n  url = {https://www.uanl.mx/}\n}"
+      }
+    }
+  },
+  "locked_sections": [],
+  "compression": {
+    "method": "union-dedupe",
+    "lossless": true
+  },
+  "schema_version": 3
+}

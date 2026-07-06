@@ -1,0 +1,49 @@
+[1/5] Leyendo fuente(s): C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\referencias-filosofia-del-derecho
+      Fuentes cargadas: 24 | Páginas/bloques: 3880
+      Tipos: docx=1, md=2, pdf=21
+      Omitidos/no legibles: 9
+[2/5] Dividiendo corpus en fragmentos citables
+      Fragmentos: 6717
+      Interpretación de planeación: campos=objetivo, bibliografía | verbos=comprender, desarrollar, identificar, reconocer, analizar, resolver
+      Confianza parser local de planeación: 0.33
+      Conceptos extraídos desde planeación: 20
+      Perfil editorial detectado para materia: filosofia-del-derecho
+      Conceptos tras filtro heurístico por materia: 20
+      Total de conceptos a buscar: 20
+[4/5] Buscando citas con motor: tfidf
+      sistema jurídico: 8 cita(s) en 2 fuente(s)
+      filosofía derecho: 8 cita(s) en 2 fuente(s)
+      fundamentales filosofía: 8 cita(s) en 4 fuente(s)
+      análisis elementos: 8 cita(s) en 4 fuente(s)
+      análisis elementos fundamentales: 8 cita(s) en 3 fuente(s)
+      aplicación: 8 cita(s) en 2 fuente(s)
+      aplicación normas: 8 cita(s) en 2 fuente(s)
+      aplicación normas legales: 8 cita(s) en 3 fuente(s)
+      bibliografía: 8 cita(s) en 2 fuente(s)
+      corrientes: 8 cita(s) en 5 fuente(s)
+      derechos fundamentales: 8 cita(s) en 2 fuente(s)
+      disciplina: 8 cita(s) en 3 fuente(s)
+      elementos fundamentales: 8 cita(s) en 2 fuente(s)
+      fundamentales: 8 cita(s) en 3 fuente(s)
+      fundamentos: 8 cita(s) en 2 fuente(s)
+      importancia: 8 cita(s) en 5 fuente(s)
+      normas legales: 8 cita(s) en 4 fuente(s)
+      principios: 8 cita(s) en 6 fuente(s)
+      protección derechos: 8 cita(s) en 3 fuente(s)
+      protección derechos fundamentales: 8 cita(s) en 2 fuente(s)
+[5/5] Exportando fichas
+
+Listo. Archivos generados:
+- markdown: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\extractor-aulatex\fichas_conceptos.md
+- excel: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\extractor-aulatex\fichas_conceptos.xlsx
+- csv: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\extractor-aulatex\fichas_conceptos.csv
+- json: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\extractor-aulatex\fichas_conceptos.json
+- word: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\extractor-aulatex\fichas_conceptos.docx
+- planeacion: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\extractor-aulatex\resumen_planeacion.json
+- planeacion_local: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\extractor-aulatex\resumen_planeacion_local.json
+- planeacion_anthropic: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\extractor-aulatex\resumen_planeacion_anthropic.json
+- depuracion: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\extractor-aulatex\depuracion_conceptos.json
+- refinamiento: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\extractor-aulatex\refinamiento_fichas.json
+- conceptos: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\extractor-aulatex\conceptos_detectados.json
+- ideas: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\extractor-aulatex\ideas_detectadas.json
+- trazabilidad: C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\filosofia-del-derecho-lde\extractor-aulatex\trazabilidad_fuentes.json

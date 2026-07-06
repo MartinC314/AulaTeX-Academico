@@ -15,6 +15,7 @@
 | AE-009 | En revision | Integrar proyectos Slidev | Decidir si viven en `trabajos`, `plantillas` o una familia propia. |
 | AE-010 | Propuesto | Definir perfiles institucionales | UnADM, IIIEPE y futuras instituciones podrian tener parametros propios. |
 | AE-011 | Implementado | Integrar `template-latex.github.io` como fuente editorial | Usar el sitio de Pizarro como base de catalogacion y mejora. |
+| AE-012 | En revision | Definir contrato operativo del verdadero agente AulaTeX | Convertir la orquestacion actual en un bucle con estado observable, decision explicita, herramientas y criterio de parada. |
 
 ## Criterio para nuevas propuestas
 
