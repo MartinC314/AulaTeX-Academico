@@ -5,11 +5,17 @@ import json
 import os
 from pathlib import Path
 
+from .activity_monitor import ActivityMonitor, ActivityMonitorRequest
+from .activity_observer import ActivityObservationRequest, ActivityObserver
+from .activity_revision import ActivityRevisionRequest, ActivityReviser
 from .agent import AgentRequest, AulaTeXAgent
 from .agentic_patterns import pattern_catalog_markdown
+from .bibliography_repair import BibliographyRepairer, BibliographyRepairRequest
+from .compilation_repair import CompilationRepairRequest, CompilationRepairer
 from .config import credential_status, load_aulatex_env
 from .construction import ConstructionBuilder, ConstructionRequest
 from .editorial_memory import EDITORIAL_LEVELS, EditorialMemoryBuilder, EditorialMemoryRequest
+from .extractor_adapter import EXTRACTOR_MOTORS, ExtractorAdapter, ExtractorRequest
 from .gui import main as gui_main
 from .investigation import InvestigationBuilder, InvestigationRequest
 from .llm_bridge import DEFAULT_MAX_TOKENS, DEFAULT_TIMEOUT_SECONDS, LLM_ENGINES, AulaTeXLLMClient
@@ -17,7 +23,7 @@ from .workspace import AulaTeXWorkspace
 
 
 def _editorial_checkpoint_root(workspace: AulaTeXWorkspace) -> Path:
-    root = workspace.feedback_root / "editorial-memory" / "checkpoints"
+    root = workspace.temp_root / "editorial-memory" / "checkpoints"
     root.mkdir(parents=True, exist_ok=True)
     return root
 
@@ -83,8 +89,17 @@ def build_parser() -> argparse.ArgumentParser:
     agent.add_argument("--child-name", default="")
     agent.add_argument("--engine", action="append", choices=LLM_ENGINES)
     agent.add_argument("--iterations", type=int, default=5)
+    agent.add_argument("--cycle-mode", default="stages", choices=("stages", "full"), help="stages=1..5 etapas; full=N ciclos completos de todos los roles.")
     agent.add_argument("--no-compile", action="store_true")
     agent.add_argument("--apply-feedback", action="store_true")
+    agent.add_argument("--run-extractor", action="store_true", help="Force run-extractor inside the agent cycle.")
+    agent.add_argument("--no-extractor", action="store_true", help="Disable automatic extractor for generar/realizar actividad.")
+    agent.add_argument("--extractor-probe", action="store_true", help="Run extractor adapter in probe/configuration mode.")
+    agent.add_argument("--extractor-fuentes", default="")
+    agent.add_argument("--extractor-planeacion", default="")
+    agent.add_argument("--extractor-conceptos", default="")
+    agent.add_argument("--extractor-salida", default="")
+    agent.add_argument("--extractor-motor", default="anthropicfoundry", choices=EXTRACTOR_MOTORS)
 
     editorial = sub.add_parser("editorial-memory", help="Build persistent editorial memory from a selected scope.")
     editorial.add_argument("--target", default=".")
@@ -110,6 +125,61 @@ def build_parser() -> argparse.ArgumentParser:
     investigation.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
     investigation.add_argument("--query", action="append", default=[])
     investigation.add_argument("--url", action="append", default=[])
+
+    extractor = sub.add_parser("extractor", help="Run the concept extractor through the structured AulaTeX adapter.")
+    extractor.add_argument("--target", default=".")
+    extractor.add_argument("--activity", type=int, default=0)
+    extractor.add_argument("--fuentes", default="")
+    extractor.add_argument("--planeacion", default="")
+    extractor.add_argument("--conceptos", default="")
+    extractor.add_argument("--salida", default="")
+    extractor.add_argument("--motor", default="anthropicfoundry", choices=EXTRACTOR_MOTORS)
+    extractor.add_argument("--top-k", type=int, default=12)
+    extractor.add_argument("--max-citas", type=int, default=8)
+    extractor.add_argument("--recursivo", action=argparse.BooleanOptionalAction, default=True)
+    extractor.add_argument("--probe", action="store_true")
+    extractor.add_argument("--preview", action="store_true")
+    extractor.add_argument("--timeout-seconds", type=int, default=3600)
+
+    activity_observe = sub.add_parser("activity-observe", help="Observe and evaluate an activity without modifying source files.")
+    activity_observe.add_argument("--target", required=True)
+    activity_observe.add_argument("--activity", type=int, default=1)
+    activity_observe.add_argument("--output", default="")
+    activity_observe.add_argument("--compile-check", action="store_true")
+
+    activity_monitor = sub.add_parser("activity-monitor", help="Run a monitored recursive activity loop with bounded retries.")
+    activity_monitor.add_argument("--target", required=True)
+    activity_monitor.add_argument("--activity", type=int, default=1)
+    activity_monitor.add_argument("--output", default="")
+    activity_monitor.add_argument("--max-cycles", type=int, default=2)
+    activity_monitor.add_argument("--compile-check", action="store_true")
+    activity_monitor.add_argument("--run-extractor", action="store_true")
+    activity_monitor.add_argument("--extractor-motor", action="append", choices=EXTRACTOR_MOTORS)
+    activity_monitor.add_argument("--apply-bibliography-repair", action="store_true")
+    activity_monitor.add_argument("--no-apply-revision-patches", action="store_true")
+    activity_monitor.add_argument("--no-bibliography-backup", action="store_true")
+    activity_monitor.add_argument("--no-revision-backup", action="store_true")
+    activity_monitor.add_argument("--keep-going", action="store_true")
+
+    activity_revise = sub.add_parser("activity-revise", help="Build a structured revision plan for an activity.")
+    activity_revise.add_argument("--target", required=True)
+    activity_revise.add_argument("--activity", type=int, default=1)
+    activity_revise.add_argument("--output", default="")
+    activity_revise.add_argument("--apply", action="store_true")
+    activity_revise.add_argument("--no-backup", action="store_true")
+
+    compilation_repair = sub.add_parser("compilation-repair", help="Attempt bounded compilation repair for an activity TEX.")
+    compilation_repair.add_argument("--target", required=True)
+    compilation_repair.add_argument("--activity", type=int, default=1)
+    compilation_repair.add_argument("--output", default="")
+
+    bib_repair = sub.add_parser("bibliography-repair", help="Plan or apply bibliography key repairs for an activity.")
+    bib_repair.add_argument("--target", required=True)
+    bib_repair.add_argument("--activity", type=int, default=1)
+    bib_repair.add_argument("--output", default="")
+    bib_repair.add_argument("--apply", action="store_true")
+    bib_repair.add_argument("--no-backup", action="store_true")
+    bib_repair.add_argument("--min-confidence", type=float, default=0.72)
 
     generation = sub.add_parser("generation", help="Create or reinforce an editorial node with foundational memory, plan and maqueta.")
     generation.add_argument("--parent-scope-key", default="interinstitucional")
@@ -181,8 +251,17 @@ def main(argv: list[str] | None = None) -> None:
             child_name=args.child_name,
             engines=args.engine or ["Codex", "Claude Foundry", "GPT-Pro", "Auto (model-router)"],
             iterations=args.iterations,
+            cycle_mode=args.cycle_mode,
             compile_tex=not args.no_compile,
             apply_feedback=args.apply_feedback,
+            run_extractor=bool(args.run_extractor),
+            skip_extractor=bool(args.no_extractor),
+            extractor_probe_only=bool(args.extractor_probe),
+            extractor_fuentes=args.extractor_fuentes,
+            extractor_planeacion=args.extractor_planeacion,
+            extractor_conceptos=args.extractor_conceptos,
+            extractor_salida=args.extractor_salida,
+            extractor_motor=args.extractor_motor,
         )
         result = AulaTeXAgent().run(request)
         print(json.dumps({"ok": result.ok, "run_dir": str(result.run_dir), "report": str(result.report_path)}, indent=2))
@@ -348,6 +427,170 @@ def main(argv: list[str] | None = None) -> None:
                     "run_dir": str(result.run_dir),
                     "manifest": str(result.manifest_path),
                     "built_scopes": list(result.built_scopes),
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    if args.command == "extractor":
+        adapter = ExtractorAdapter(AulaTeXWorkspace())
+        request = ExtractorRequest(
+            target=args.target,
+            activity_number=args.activity,
+            fuentes=args.fuentes,
+            planeacion=args.planeacion,
+            conceptos=args.conceptos,
+            salida=args.salida,
+            motor=args.motor,
+            recursive=bool(args.recursivo),
+            top_k=args.top_k,
+            max_citas=args.max_citas,
+            probe_only=bool(args.probe),
+            timeout_seconds=args.timeout_seconds,
+        )
+        if args.preview:
+            print(adapter.preview_markdown(request))
+            return
+        result = adapter.run(request)
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "run_dir": str(result.run_dir),
+                    "manifest": str(result.manifest_path),
+                    "output_dir": str(result.output_dir),
+                    "stdout": str(result.stdout_path),
+                    "stderr": str(result.stderr_path),
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    if args.command == "activity-observe":
+        result = ActivityObserver(AulaTeXWorkspace()).observe(
+            ActivityObservationRequest(
+                target=args.target,
+                activity_number=args.activity,
+                output=args.output,
+                compile_check=bool(args.compile_check),
+            )
+        )
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "run_dir": str(result.run_dir),
+                    "state": str(result.state_path),
+                    "evaluation": str(result.evaluation_path),
+                    "actions": str(result.actions_path),
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    if args.command == "activity-monitor":
+        result = ActivityMonitor(AulaTeXWorkspace()).run(
+            ActivityMonitorRequest(
+                target=args.target,
+                activity_number=args.activity,
+                output=args.output,
+                max_cycles=args.max_cycles,
+                compile_check=bool(args.compile_check),
+                run_extractor=bool(args.run_extractor),
+                extractor_motors=tuple(args.extractor_motor or ["anthropicfoundry", "tfidf"]),
+                apply_bibliography_repair=bool(args.apply_bibliography_repair),
+                apply_revision_patches=not bool(args.no_apply_revision_patches),
+                backup_bibliography=not bool(args.no_bibliography_backup),
+                backup_revision=not bool(args.no_revision_backup),
+                stop_on_blocker=not bool(args.keep_going),
+            )
+        )
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "run_dir": str(result.run_dir),
+                    "manifest": str(result.manifest_path),
+                    "report": str(result.report_path),
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    if args.command == "activity-revise":
+        result = ActivityReviser(AulaTeXWorkspace()).revise(
+            ActivityRevisionRequest(
+                target=args.target,
+                activity_number=args.activity,
+                output=args.output,
+                apply=bool(args.apply),
+                backup=not bool(args.no_backup),
+            )
+        )
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "run_dir": str(result.run_dir),
+                    "plan": str(result.plan_path),
+                    "report": str(result.report_path),
+                    "patched_tex": str(result.patched_tex_path) if result.patched_tex_path else "",
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    if args.command == "compilation-repair":
+        result = CompilationRepairer(AulaTeXWorkspace()).repair(
+            CompilationRepairRequest(
+                target=args.target,
+                activity_number=args.activity,
+                output=args.output,
+            )
+        )
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "run_dir": str(result.run_dir),
+                    "plan": str(result.plan_path),
+                    "report": str(result.report_path),
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    if args.command == "bibliography-repair":
+        result = BibliographyRepairer(AulaTeXWorkspace()).repair(
+            BibliographyRepairRequest(
+                target=args.target,
+                activity_number=args.activity,
+                output=args.output,
+                apply=bool(args.apply),
+                backup=not bool(args.no_backup),
+                min_confidence=args.min_confidence,
+            )
+        )
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "run_dir": str(result.run_dir),
+                    "plan": str(result.plan_path),
+                    "report": str(result.report_path),
+                    "patched_tex": str(result.patched_tex_path) if result.patched_tex_path else "",
                 },
                 ensure_ascii=False,
                 indent=2,

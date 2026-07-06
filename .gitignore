@@ -57,6 +57,7 @@ base/Plantilla-Informe/dist/template_config.tex
 
 # Archivos temporales
 .build/
+.aulatex-temp/
 salidas/
 .venv/
 logs-compilacion-tex/

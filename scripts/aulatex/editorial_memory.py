@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import sqlite3
 import hashlib
@@ -9,8 +10,10 @@ from pathlib import Path
 from threading import Event
 from typing import Callable, Iterable
 
-from .config import diagnostic_metrics_enabled
+from .config import ENGINE_ENV_PREFIX, diagnostic_metrics_enabled
 from .llm_bridge import DEFAULT_MAX_TOKENS, DEFAULT_TIMEOUT_SECONDS, LLM_ENGINES, AulaTeXLLMClient
+from .memory_fusion_engine import MemoryFusionEngine
+from .memory_unifier import unify_markdown_memories
 from .workspace import AulaTeXWorkspace, EditorialScope
 
 
@@ -119,8 +122,10 @@ class EditorialMemoryStore:
         self.diagnostics_enabled = diagnostic_metrics_enabled() if diagnostics_enabled is None else diagnostics_enabled
         self.root = self.workspace.feedback_root / "editorial-memory"
         self.root.mkdir(parents=True, exist_ok=True)
-        self.db_path = self.root / "editorial-memory.db"
-        self.scopes_dir = self.root / "scopes"
+        self.temp_root = self.workspace.temp_root / "editorial-memory"
+        self.temp_root.mkdir(parents=True, exist_ok=True)
+        self.db_path = self.temp_root / "editorial-memory.db"
+        self.scopes_dir = self.temp_root / "scope-cache"
         self.scopes_dir.mkdir(parents=True, exist_ok=True)
         self._init_schema()
 
@@ -128,6 +133,29 @@ class EditorialMemoryStore:
         conn = sqlite3.connect(self.db_path)
         conn.row_factory = sqlite3.Row
         return conn
+
+    def _safe_scope_slug(self, scope_key: str, *, max_prefix: int = 72) -> str:
+        normalized = scope_key.replace('/', '__')
+        safe = re.sub(r"[^A-Za-z0-9_.-]+", "_", normalized).strip("._")
+        digest = hashlib.sha1(scope_key.encode("utf-8", errors="replace")).hexdigest()[:12]
+        if len(safe) > max_prefix:
+            safe = safe[:max_prefix].rstrip("._-")
+        return f"{safe}--{digest}"
+
+    def _local_scope_memory_path(self, scope: EditorialScope) -> Path | None:
+        rel = Path(scope.relative_path)
+        if scope.level == "actividad":
+            base_dir = self.workspace.repo_root / rel
+        elif scope.level == "materia":
+            base_dir = (self.workspace.repo_root / rel).parent
+        elif scope.level == "carrera":
+            base_dir = (self.workspace.repo_root / rel).parent
+        elif scope.level == "institucion":
+            base_dir = self.workspace.repo_root
+        else:
+            return None
+        filename = f"memoria-{scope.level}-{self._safe_scope_slug(scope.key, max_prefix=40)}.json"
+        return base_dir / ".memoria-aulatex" / filename
 
     def _init_schema(self) -> None:
         with self._connect() as conn:
@@ -259,10 +287,17 @@ class EditorialMemoryStore:
     def get_memory(self, scope_key: str) -> dict:
         with self._connect() as conn:
             row = conn.execute("SELECT memory_json FROM memories WHERE scope_key=?", (scope_key,)).fetchone()
-        if row is None:
-            return self._empty_memory()
-        payload = json.loads(row["memory_json"])
-        return self._normalize_memory(payload)
+        if row is not None:
+            payload = json.loads(row["memory_json"])
+            return self._normalize_memory(payload)
+
+        by_key, _children = self.workspace.editorial_scope_index()
+        scope = by_key.get(scope_key)
+        if scope is not None:
+            local_path = self._local_scope_memory_path(scope)
+            if local_path and local_path.exists():
+                return self._normalize_memory(json.loads(local_path.read_text(encoding="utf-8")))
+        return self._empty_memory()
 
     def get_memories(self, scope_keys: Iterable[str]) -> dict[str, dict]:
         keys = [key for key in dict.fromkeys(scope_keys) if key]
@@ -276,6 +311,11 @@ class EditorialMemoryStore:
         for row in rows:
             payload = json.loads(row["memory_json"])
             memories[str(row["scope_key"])] = self._normalize_memory(payload)
+        for key in keys:
+            if key not in memories:
+                memory = self.get_memory(key)
+                if any(memory.get(section) for section in MEMORY_SECTIONS):
+                    memories[key] = memory
         return memories
 
     def save_memory(self, scope: EditorialScope, payload: dict, source_scope_key: str) -> None:
@@ -298,33 +338,23 @@ class EditorialMemoryStore:
         json_path = self.scopes_dir / f"{scope.key.replace('/', '__')}.json"
         json_path.write_text(json.dumps(normalized, ensure_ascii=False, indent=2), encoding="utf-8")
         markdown_path = self.scopes_dir / f"{scope.key.replace('/', '__')}.md"
-        markdown_path.write_text(self.render_memory_markdown(scope, normalized), encoding="utf-8")
+        markdown_content = self.render_memory_markdown(scope, normalized)
+        markdown_path.write_text(markdown_content, encoding="utf-8")
+
+        snapshots_dir = self.temp_root / "scope-snapshots" / self._safe_scope_slug(scope.key)
+        snapshots_dir.mkdir(parents=True, exist_ok=True)
+        snapshot_path = snapshots_dir / f"snapshot-{self.workspace.timestamp()}.md"
+        snapshot_path.write_text(markdown_content, encoding="utf-8")
+        unify_markdown_memories(snapshots_dir, snapshots_dir / "unified-memory.json")
+
         self._write_local_scope_memory(scope, normalized)
 
     def _write_local_scope_memory(self, scope: EditorialScope, payload: dict) -> None:
-        from pathlib import Path
-
-        rel = Path(scope.relative_path)
-        if scope.level == "actividad":
-            subject_dir = self.workspace.repo_root / rel
-            memory_dir = subject_dir / f".memoria-{scope.subject}"
-            filename = f"memoria-{scope.subject}-{scope.activity.lower().replace(' ', '-')}.json"
-        elif scope.level == "materia":
-            career_dir = (self.workspace.repo_root / rel).parent
-            memory_dir = career_dir / f".memoria-{scope.career or career_dir.name}"
-            filename = f"memoria-{scope.subject}.json"
-        elif scope.level == "carrera":
-            institution_dir = (self.workspace.repo_root / rel).parent
-            memory_dir = institution_dir / f".memoria-{scope.institution}"
-            filename = f"memoria-{scope.career}.json"
-        elif scope.level == "institucion":
-            memory_dir = self.workspace.repo_root / ".memoria-global"
-            filename = f"memoria-{scope.institution}.json"
-        else:
+        local_path = self._local_scope_memory_path(scope)
+        if local_path is None:
             return
-
-        memory_dir.mkdir(parents=True, exist_ok=True)
-        (memory_dir / filename).write_text(
+        local_path.parent.mkdir(parents=True, exist_ok=True)
+        local_path.write_text(
             json.dumps(payload, ensure_ascii=False, indent=2),
             encoding="utf-8",
         )
@@ -706,6 +736,7 @@ class EditorialMemoryBuilder:
         self.workspace = workspace or AulaTeXWorkspace()
         self.llm = llm_bridge or AulaTeXLLMClient()
         self.store = store or EditorialMemoryStore(self.workspace)
+        self.memory_fusion = MemoryFusionEngine()
 
     def build(
         self,
@@ -714,7 +745,7 @@ class EditorialMemoryBuilder:
         cancel_event: Event | None = None,
     ) -> EditorialMemoryBuildResult:
         run_id = self.workspace.timestamp()
-        run_dir = self.store.root / "runs" / f"{run_id}-editorial-memory"
+        run_dir = self.store.temp_root / "runs" / f"{run_id}-editorial-memory"
         run_dir.mkdir(parents=True, exist_ok=True)
 
         by_key, children = self.workspace.editorial_scope_index()
@@ -754,6 +785,7 @@ class EditorialMemoryBuilder:
                 cancelled = True
                 break
             for cycle_index in range(1, max(1, int(request.iterations)) + 1):
+                cycle_markdowns: list[Path] = []
                 if self._is_cancelled(cancel_event):
                     cancelled = True
                     break
@@ -762,7 +794,7 @@ class EditorialMemoryBuilder:
                         cancelled = True
                         break
                     current += 1
-                    prompt = self._build_prompt(source_scope, scope, cycle_index, request, by_key)
+                    prompt = self._build_prompt(source_scope, scope, cycle_index, request, by_key, engine)
                     self._emit(
                         progress,
                         EditorialMemoryEvent(
@@ -775,10 +807,13 @@ class EditorialMemoryBuilder:
                             cycle_index,
                         ),
                     )
+                    engine_prefix = ENGINE_ENV_PREFIX.get(engine, "")
+                    engine_token_cap_name = f"AULATEX_MAX_OUTPUT_TOKENS_{engine_prefix}" if engine_prefix else ""
+                    engine_max_tokens = int(os.environ.get(engine_token_cap_name, request.max_tokens))
                     result = self.llm.call(
                         engine,
                         prompt,
-                        max_tokens=request.max_tokens,
+                        max_tokens=min(int(request.max_tokens), engine_max_tokens),
                         timeout_seconds=max(5, int(request.timeout_seconds)),
                     )
                     response_text = result.text if result.ok else result.error
@@ -804,8 +839,11 @@ class EditorialMemoryBuilder:
                             "chars": len(response_text),
                         }
                     )
-                    scope_file = run_dir / f"{current:04d}-{scope.key.replace('/', '__')}-{result.engine.replace(' ', '_')}.md"
+                    safe_scope_slug = self.store._safe_scope_slug(scope.key)
+                    safe_engine = re.sub(r"[^A-Za-z0-9_.-]+", "_", result.engine).strip("._")
+                    scope_file = run_dir / f"{current:04d}-{safe_scope_slug}-{safe_engine}.md"
                     scope_file.write_text(response_text, encoding="utf-8")
+                    cycle_markdowns.append(scope_file)
                     if not result.ok:
                         overall_ok = False
                     self._emit(
@@ -820,6 +858,13 @@ class EditorialMemoryBuilder:
                             cycle_index,
                         ),
                     )
+
+                if cycle_markdowns:
+                    fused_dir = run_dir / "fused-memory"
+                    fused_dir.mkdir(parents=True, exist_ok=True)
+                    safe_scope_slug = self.store._safe_scope_slug(scope.key)
+                    fused_output = fused_dir / f"{safe_scope_slug}--cycle-{cycle_index:03d}.json"
+                    self.memory_fusion.fuse_markdown_files(cycle_markdowns, fused_output)
                 if cancelled:
                     break
             if cancelled:
@@ -991,12 +1036,14 @@ class EditorialMemoryBuilder:
         cycle_index: int,
         request: EditorialMemoryRequest,
         by_key: dict[str, EditorialScope],
+        engine: str,
     ) -> str:
         current_memory = self.store.get_memory(target_scope.key)
         source_memory = self.store.get_memory(source_scope.key)
         parent_memory = ""
         if target_scope.parent_key and target_scope.parent_key in by_key:
             parent_memory = self.store.summarize_for_scope(target_scope.parent_key, include_ancestors=True, max_chars=2500)
+        historical_dna = self._load_historical_dna(target_scope, engine=engine)
         local_context = self.workspace.context_summary(target_scope.relative_path, max_chars=4000)
         memory_json = json.dumps(_memory_prompt_view(current_memory), ensure_ascii=False, indent=2)
         source_memory_json = json.dumps(_memory_prompt_view(source_memory), ensure_ascii=False, indent=2)
@@ -1044,8 +1091,59 @@ class EditorialMemoryBuilder:
             f"Reglas de transferencia para este salto:\n{transfer_rules}\n\n"
             f"Memoria del origen:\n{source_memory_json}\n\n"
             f"Memoria actual del destino:\n{memory_json}\n\n"
+            f"DNA historico fusionado del nodo:\n{historical_dna}\n\n"
             f"Memoria heredada:\n{parent_memory or 'Sin memoria heredada aun.'}\n\n"
             f"Contexto local:\n{local_context}\n"
+        )
+
+    def _load_historical_dna(self, scope: EditorialScope, *, engine: str = "") -> str:
+        runs_roots = [self.store.root / "runs", self.store.temp_root / "runs"]
+        legacy_pattern = f"*{scope.key.replace('/', '__')}*.md"
+        safe_scope_slug = self.store._safe_scope_slug(scope.key)
+        safe_pattern = f"*{safe_scope_slug}*.md"
+        files = sorted({
+            path
+            for runs_root in runs_roots
+            if runs_root.exists()
+            for path in (*runs_root.rglob(legacy_pattern), *runs_root.rglob(safe_pattern))
+        })
+        if not files:
+            return "Sin DNA historico fusionado aun."
+
+        dna_dir = self.workspace.repo_root / ".build" / "editorial-dna"
+        dna_dir.mkdir(parents=True, exist_ok=True)
+        dna_path = dna_dir / f"{safe_scope_slug}--historical-dna.json"
+        try:
+            fused = self.memory_fusion.fuse_markdown_files(files, dna_path)
+        except Exception:
+            return "DNA historico no disponible por error de fusion."
+
+        prefix = ENGINE_ENV_PREFIX.get(engine, "")
+        engine_env_name = f"AULATEX_HISTORICAL_DNA_PROMPT_CHARS_{prefix}" if prefix else ""
+        max_chars = int(os.environ.get(engine_env_name, os.environ.get("AULATEX_HISTORICAL_DNA_PROMPT_CHARS", "120000")))
+        compact = []
+        used_chars = 0
+        for cluster in fused.get("clusters", []):
+            item = {
+                "canonical": cluster.get("canonical", ""),
+                "frequency": cluster.get("frequency", 0),
+                "section": cluster.get("section", ""),
+            }
+            item_size = len(json.dumps(item, ensure_ascii=False)) + 4
+            if compact and used_chars + item_size > max_chars:
+                break
+            compact.append(item)
+            used_chars += item_size
+        return json.dumps(
+            {
+                "cluster_count": fused.get("cluster_count", 0),
+                "included_cluster_count": len(compact),
+                "prompt_char_budget": max_chars,
+                "truncated_for_prompt": len(compact) < int(fused.get("cluster_count", 0) or 0),
+                "top_clusters": compact,
+            },
+            ensure_ascii=False,
+            indent=2,
         )
 
     def _parse_response(

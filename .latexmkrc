@@ -18,9 +18,11 @@ sub aulatex_path {
 sub prepend_env_paths {
     my ($name, @paths) = @_;
     my $prefix = join($path_sep, @paths);
+    # A trailing separator preserves TeX's built-in search path (TEXMF trees)
+    # while still preferring the repository-specific directories first.
     $ENV{$name} = defined $ENV{$name} && length $ENV{$name}
-        ? "$prefix$path_sep$ENV{$name}"
-        : $prefix;
+        ? "$prefix$path_sep$ENV{$name}$path_sep"
+        : "$prefix$path_sep";
 }
 
 $pdf_mode = 1;

@@ -100,6 +100,8 @@ class AulaTeXWorkspace:
         self.scripts_dir = self.repo_root / "scripts"
         self.feedback_root = self.repo_root / "retroalimentacion-editorial" / "aulatex"
         self.feedback_root.mkdir(parents=True, exist_ok=True)
+        self.temp_root = self.repo_root / ".aulatex-temp"
+        self.temp_root.mkdir(parents=True, exist_ok=True)
 
     def timestamp(self) -> str:
         return time.strftime("%Y%m%d-%H%M%S")
@@ -373,6 +375,14 @@ class AulaTeXWorkspace:
 
         if not candidates:
             return None
+
+        exact_matches = [scope for scope in candidates if scope.relative_path == relative]
+        if exact_matches and not activity_label:
+            exact_matches.sort(key=lambda scope: scope.depth)
+            non_activity = [scope for scope in exact_matches if scope.level != "actividad"]
+            if non_activity:
+                return non_activity[-1]
+
         candidates.sort(key=lambda scope: (scope.depth, len(scope.relative_path)), reverse=True)
         return candidates[0]
 

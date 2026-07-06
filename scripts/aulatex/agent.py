@@ -14,6 +14,7 @@ from .agentic_patterns import (
     safe_invoke,
 )
 from .editorial_memory import EditorialMemoryStore
+from .extractor_adapter import ExtractorAdapter, ExtractorRequest, ExtractorRunResult
 from .llm_bridge import DEFAULT_MAX_TOKENS, LLM_ENGINES, AulaTeXLLMClient, LLMCallResult
 from .template_materializer import MaterializationResult, TemplateMaterializer
 from .workspace import AulaTeXWorkspace
@@ -31,9 +32,18 @@ class AgentRequest:
     child_name: str = ""
     engines: list[str] = field(default_factory=lambda: ["Codex", "Claude Foundry", "GPT-Pro", "Auto (model-router)"])
     iterations: int = 5
+    cycle_mode: str = "stages"
     compile_tex: bool = True
     max_tokens: int = DEFAULT_MAX_TOKENS
     apply_feedback: bool = False
+    run_extractor: bool = False
+    skip_extractor: bool = False
+    extractor_probe_only: bool = False
+    extractor_fuentes: str = ""
+    extractor_planeacion: str = ""
+    extractor_conceptos: str = ""
+    extractor_salida: str = ""
+    extractor_motor: str = "anthropicfoundry"
 
 
 @dataclass
@@ -68,6 +78,7 @@ class AulaTeXAgent:
         self.llm = llm_bridge or AulaTeXLLMClient()
         self.editorial_memory = EditorialMemoryStore(self.workspace)
         self.template_materializer = TemplateMaterializer(self.workspace)
+        self.extractor_adapter = ExtractorAdapter(self.workspace)
 
     def run(self, request: AgentRequest) -> AgentRunResult:
         target_ctx = self._resolve_target_context(request)
@@ -94,12 +105,13 @@ class AulaTeXAgent:
             if memory_context.strip():
                 context += "\n\n## Memoria editorial persistente\n" + memory_context
         base_tasks = build_editorial_tasks(request, context, memory)
-        selected_tasks = base_tasks[: max(1, min(request.iterations, len(base_tasks)))]
+        cycle_mode = self._normalize_cycle_mode(request.cycle_mode)
+        selected_tasks = self._expand_tasks(base_tasks, request.iterations, cycle_mode)
         engines = self._normalize_engines(request.engines)
         stage_results: list[LLMCallResult] = []
+        extractor_result: ExtractorRunResult | None = None
 
-        for index, _task in enumerate(selected_tasks, start=1):
-            task = build_editorial_tasks(request, context, memory)[index - 1]
+        for index, task in enumerate(selected_tasks, start=1):
             engine = engines[(index - 1) % len(engines)]
             workflow.record("llm-start", "ok", f"{task.stage}: {task.role} via {engine}")
             result = self.llm.call(engine, task.prompt, max_tokens=request.max_tokens)
@@ -110,12 +122,13 @@ class AulaTeXAgent:
             else:
                 memory.remember("risk", f"{task.stage} fallo con {result.engine}: {result.error}")
                 workflow.record("llm-end", "error", f"{task.stage}: {result.error}")
-            if task.stage == "planificar":
-                workflow.transition("planned", "plan editorial producido")
-            elif task.stage == "investigar":
-                workflow.transition("researched", "diagnostico documental producido")
-            elif task.stage == "generar":
-                workflow.transition("generated", "propuesta editorial producida")
+            base_stage = self._base_stage(task.stage)
+            self._record_stage_transition(workflow, base_stage)
+            if base_stage == "investigar" and extractor_result is None and self._should_run_extractor(request, target_ctx):
+                extractor_result = self._run_extractor_tool(request, target_ctx, workflow, memory)
+
+        if extractor_result is None and self._should_run_extractor(request, target_ctx):
+            extractor_result = self._run_extractor_tool(request, target_ctx, workflow, memory)
 
         for index, (task, result) in enumerate(zip(selected_tasks, stage_results), start=1):
             stage_path = run_dir / f"stage-{index:02d}-{task.stage}.md"
@@ -186,6 +199,9 @@ class AulaTeXAgent:
             "level": request.level,
             "action": request.action,
             "activity_number": request.activity_number,
+            "cycle_mode": cycle_mode,
+            "requested_iterations": int(request.iterations),
+            "expanded_task_count": len(selected_tasks),
             "generation_mode": request.generation_mode,
             "parent_scope_key": request.parent_scope_key,
             "child_level": request.child_level,
@@ -212,6 +228,7 @@ class AulaTeXAgent:
                 for r in stage_results
             ],
             "compile_results": compile_results,
+            "extractor": self._extractor_manifest(extractor_result),
             "materialization": self._materialization_manifest(materialization_result),
             "consensus": consensus.as_dict(),
             "workflow_events": workflow.as_dicts(),
@@ -221,7 +238,7 @@ class AulaTeXAgent:
 
         report_path = run_dir / "reporte-aulatex.md"
         report_path.write_text(
-            self._build_report(request, target_ctx, selected_tasks, stage_results, compile_results, consensus),
+            self._build_report(request, target_ctx, selected_tasks, stage_results, compile_results, consensus, extractor_result),
             encoding="utf-8",
         )
         if materialization_result is not None:
@@ -238,6 +255,8 @@ class AulaTeXAgent:
 
         ok = all(r.ok for r in stage_results) and all(item.get("ok") for item in compile_results or [{"ok": True}])
         ok = ok and consensus.passed
+        if extractor_result is not None:
+            ok = ok and extractor_result.ok
         if materialization_result is not None:
             ok = ok and materialization_result.ok
         return AgentRunResult(run_id, run_dir, ok, report_path, manifest_path)
@@ -276,6 +295,54 @@ class AulaTeXAgent:
         allowed = set(self.llm.engines() or LLM_ENGINES)
         out = [engine for engine in engines if engine in allowed]
         return out or ["Codex", "Claude Foundry"]
+
+    def _record_stage_transition(self, workflow: AgenticStateMachine, base_stage: str) -> None:
+        if base_stage == "planificar":
+            if workflow.state == "initialized":
+                workflow.transition("planned", "plan editorial producido")
+            else:
+                workflow.record("cycle-stage", "ok", "plan editorial reforzado en ciclo posterior")
+        elif base_stage == "investigar":
+            if workflow.state == "planned":
+                workflow.transition("researched", "diagnostico documental producido")
+            else:
+                workflow.record("cycle-stage", "ok", "diagnostico documental reforzado en ciclo posterior")
+        elif base_stage == "generar":
+            if workflow.state == "researched":
+                workflow.transition("generated", "propuesta editorial producida")
+            else:
+                workflow.record("cycle-stage", "ok", "propuesta editorial reforzada en ciclo posterior")
+
+    def _normalize_cycle_mode(self, mode: str) -> str:
+        value = (mode or "stages").strip().lower()
+        return value if value in {"stages", "full"} else "stages"
+
+    def _expand_tasks(self, base_tasks: list[AgentTask], iterations: int, cycle_mode: str) -> list[AgentTask]:
+        count = max(1, int(iterations))
+        if cycle_mode == "full":
+            tasks: list[AgentTask] = []
+            for cycle_index in range(1, count + 1):
+                for task in base_tasks:
+                    tasks.append(
+                        AgentTask(
+                            stage=f"{task.stage}-ciclo-{cycle_index:03d}",
+                            role=task.role,
+                            mission=f"{task.mission} | ciclo intensivo {cycle_index}/{count}",
+                            prompt=(
+                                task.prompt
+                                + "\n\nCICLO INTENSIVO AULATEX:\n"
+                                + f"- Ciclo actual: {cycle_index} de {count}.\n"
+                                + "- No repitas sin mejora: usa memoria compartida, hallazgos previos y riesgos acumulados.\n"
+                                + "- Devuelve avances incrementales, huecos restantes, decisiones aceptables y siguiente accion verificable.\n"
+                            ),
+                            weight=task.weight,
+                        )
+                    )
+            return tasks
+        return base_tasks[: max(1, min(count, len(base_tasks)))]
+
+    def _base_stage(self, stage: str) -> str:
+        return stage.split("-ciclo-", 1)[0]
 
     def _resolve_target_context(self, request: AgentRequest) -> AgentTargetContext:
         target = self.workspace.resolve_target(request.target)
@@ -332,6 +399,61 @@ class AulaTeXAgent:
             and request.level in {"materia", "actividad"}
         )
 
+    def _should_run_extractor(self, request: AgentRequest, target_ctx: AgentTargetContext) -> bool:
+        if request.skip_extractor or target_ctx.generation_mode == "downward":
+            return False
+        action = request.action.strip().lower()
+        if request.run_extractor:
+            return True
+        return action in {"realizar-actividad", "generar-actividad"} and request.level in {"materia", "actividad"}
+
+    def _run_extractor_tool(
+        self,
+        request: AgentRequest,
+        target_ctx: AgentTargetContext,
+        workflow: AgenticStateMachine,
+        memory: SharedMemory,
+    ) -> ExtractorRunResult | None:
+        workflow.record("tool-select", "ok", "ExtractorAdapter seleccionado para run-extractor")
+        invocation = safe_invoke(self.extractor_adapter.run, self._build_extractor_request(request, target_ctx))
+        if invocation.ok:
+            result = invocation.result
+            workflow.record(
+                "tool-result",
+                "ok" if result.ok else "error",
+                f"extractor ok={result.ok} salida={self.workspace.relative(result.output_dir)}",
+            )
+            memory.remember("note", f"Extractor ejecutado: {self.workspace.relative(result.manifest_path)}")
+            return result
+        workflow.record("tool-result", "error", f"extractor fallo: {invocation.error}")
+        memory.remember("risk", f"Extractor no ejecutado: {invocation.error}")
+        return None
+
+    def _build_extractor_request(self, request: AgentRequest, target_ctx: AgentTargetContext) -> ExtractorRequest:
+        return ExtractorRequest(
+            target=str(target_ctx.target_path),
+            activity_number=request.activity_number,
+            fuentes=request.extractor_fuentes,
+            planeacion=request.extractor_planeacion,
+            conceptos=request.extractor_conceptos,
+            salida=request.extractor_salida,
+            motor=request.extractor_motor,
+            probe_only=request.extractor_probe_only,
+        )
+
+    def _extractor_manifest(self, result: ExtractorRunResult | None) -> dict:
+        if result is None:
+            return {"enabled": False}
+        return {
+            "enabled": True,
+            "ok": result.ok,
+            "run_dir": self.workspace.relative(result.run_dir),
+            "manifest": self.workspace.relative(result.manifest_path),
+            "output_dir": self.workspace.relative(result.output_dir),
+            "stdout": self.workspace.relative(result.stdout_path),
+            "stderr": self.workspace.relative(result.stderr_path),
+        }
+
     def _materialization_manifest(self, result: MaterializationResult | None) -> dict:
         if result is None:
             return {"enabled": False}
@@ -377,6 +499,7 @@ class AulaTeXAgent:
         stage_results: list[LLMCallResult],
         compile_results: list[dict],
         consensus,
+        extractor_result: ExtractorRunResult | None = None,
     ) -> str:
         lines = [
             "# Reporte AulaTeX",
@@ -411,6 +534,14 @@ class AulaTeXAgent:
             lines.append(result.text if result.ok else f"ERROR: {result.error}")
             lines.append("")
         lines.append(consensus.to_markdown())
+        lines.extend(["## Extractor", ""])
+        if extractor_result is not None:
+            lines.append(f"- Estado: {'OK' if extractor_result.ok else 'ERROR'}")
+            lines.append(f"- Manifest: `{self.workspace.relative(extractor_result.manifest_path)}`")
+            lines.append(f"- Salida: `{self.workspace.relative(extractor_result.output_dir)}`")
+        else:
+            lines.append("- No se ejecuto extractor en este ciclo.")
+        lines.append("")
         lines.extend(["## Compilacion", ""])
         if compile_results:
             for item in compile_results:

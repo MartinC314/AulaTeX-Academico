@@ -10,6 +10,7 @@ import json
 from pathlib import Path
 from tkinter import filedialog, messagebox, ttk
 
+from .activity_monitor import ActivityMonitor, ActivityMonitorRequest
 from .agent import AgentRequest, AulaTeXAgent
 from .agentic_patterns import pattern_catalog_markdown
 from .chat_sessions import AulaTeXChatStore, MULTIMOTOR_SEVERITY_LABELS, multimotor_severity_label
@@ -139,7 +140,7 @@ class AulaTeXApp(tk.Tk):
 
         notebook.add(self.panel_tab, text="Panel")
         notebook.add(self.llm_tab, text="LLM")
-        notebook.add(self.agent_tab, text="Agente")
+        notebook.add(self.agent_tab, text="Flujo Agéntico")
         notebook.add(self.arch_tab, text="Arquitectura")
         notebook.add(self.builder_tab, text="Generación")
         notebook.add(self.feedback_tab, text="Retroalimentacion")
@@ -338,35 +339,54 @@ class AulaTeXApp(tk.Tk):
         self.agent_engines = tk.StringVar(value="Codex, Claude Foundry, GPT-Pro, Auto (model-router)")
         self.agent_compile = tk.BooleanVar(value=True)
         self.agent_apply = tk.BooleanVar(value=False)
+        self.agent_monitor_mode = tk.BooleanVar(value=True)
+        self.agent_run_extractor = tk.BooleanVar(value=True)
+        self.agent_max_cycles = tk.IntVar(value=2)
 
-        ttk.Label(self.agent_tab, text="Objetivo").grid(row=0, column=0, sticky="w")
-        ttk.Entry(self.agent_tab, textvariable=self.agent_target).grid(row=0, column=1, sticky="ew")
+        overview = ttk.LabelFrame(self.agent_tab, text="Enfoque actual", padding=8)
+        overview.grid(row=0, column=0, columnspan=3, sticky="ew", pady=(0, 8))
+        ttk.Label(
+            overview,
+            text=(
+                "Este panel ejecuta el flujo monitorizado de AulaTeX: observar → extractor → revisión → evaluación → memoria. "
+                "La pestaña Retroalimentación sigue administrando memoria editorial persistente; aquí se ejecutan corridas agénticas verificables."
+            ),
+            wraplength=900,
+            justify="left",
+        ).grid(row=0, column=0, sticky="w")
+
+        ttk.Label(self.agent_tab, text="Objetivo").grid(row=1, column=0, sticky="w")
+        ttk.Entry(self.agent_tab, textvariable=self.agent_target).grid(row=1, column=1, sticky="ew")
         self.agent_browse_button = ttk.Button(self.agent_tab, text="Buscar", command=self._browse_agent_target)
-        self.agent_browse_button.grid(row=0, column=2, padx=(8, 0))
-        ttk.Label(self.agent_tab, text="Nivel").grid(row=1, column=0, sticky="w", pady=(8, 0))
-        ttk.Combobox(self.agent_tab, textvariable=self.agent_level, values=("institucion", "carrera", "materia"), state="readonly").grid(row=1, column=1, sticky="ew", pady=(8, 0))
-        ttk.Label(self.agent_tab, text="Accion").grid(row=2, column=0, sticky="w", pady=(8, 0))
+        self.agent_browse_button.grid(row=1, column=2, padx=(8, 0))
+        ttk.Label(self.agent_tab, text="Nivel").grid(row=2, column=0, sticky="w", pady=(8, 0))
+        ttk.Combobox(self.agent_tab, textvariable=self.agent_level, values=("institucion", "carrera", "materia"), state="readonly").grid(row=2, column=1, sticky="ew", pady=(8, 0))
+        ttk.Label(self.agent_tab, text="Accion").grid(row=3, column=0, sticky="w", pady=(8, 0))
         ttk.Combobox(
             self.agent_tab,
             textvariable=self.agent_action,
             values=("generar-plantilla", "generar-actividad", "realizar-actividad", "evaluar"),
             state="readonly",
-        ).grid(row=2, column=1, sticky="ew", pady=(8, 0))
-        ttk.Label(self.agent_tab, text="Actividad").grid(row=3, column=0, sticky="w", pady=(8, 0))
-        ttk.Spinbox(self.agent_tab, from_=1, to=99, textvariable=self.agent_activity, width=8).grid(row=3, column=1, sticky="w", pady=(8, 0))
-        ttk.Label(self.agent_tab, text="Motores").grid(row=4, column=0, sticky="w", pady=(8, 0))
-        ttk.Entry(self.agent_tab, textvariable=self.agent_engines).grid(row=4, column=1, sticky="ew", pady=(8, 0))
-        ttk.Label(self.agent_tab, text="Iteraciones").grid(row=5, column=0, sticky="w", pady=(8, 0))
-        ttk.Spinbox(self.agent_tab, from_=1, to=5, textvariable=self.agent_iterations, width=8).grid(row=5, column=1, sticky="w", pady=(8, 0))
-        ttk.Checkbutton(self.agent_tab, text="Compilar objetivo", variable=self.agent_compile).grid(row=6, column=1, sticky="w", pady=(8, 0))
-        ttk.Checkbutton(self.agent_tab, text="Copiar reporte al objetivo", variable=self.agent_apply).grid(row=7, column=1, sticky="w")
-        self.agent_run_button = ttk.Button(self.agent_tab, text="Ejecutar ciclo investigar-compilar-evaluar", command=self._run_agent)
-        self.agent_run_button.grid(row=8, column=1, sticky="w", pady=10)
+        ).grid(row=3, column=1, sticky="ew", pady=(8, 0))
+        ttk.Label(self.agent_tab, text="Actividad").grid(row=4, column=0, sticky="w", pady=(8, 0))
+        ttk.Spinbox(self.agent_tab, from_=1, to=99, textvariable=self.agent_activity, width=8).grid(row=4, column=1, sticky="w", pady=(8, 0))
+        ttk.Label(self.agent_tab, text="Motores").grid(row=5, column=0, sticky="w", pady=(8, 0))
+        ttk.Entry(self.agent_tab, textvariable=self.agent_engines).grid(row=5, column=1, sticky="ew", pady=(8, 0))
+        ttk.Label(self.agent_tab, text="Iteraciones").grid(row=6, column=0, sticky="w", pady=(8, 0))
+        ttk.Spinbox(self.agent_tab, from_=1, to=500, textvariable=self.agent_iterations, width=8).grid(row=6, column=1, sticky="w", pady=(8, 0))
+        ttk.Label(self.agent_tab, text="Ciclos monitor").grid(row=7, column=0, sticky="w", pady=(8, 0))
+        ttk.Spinbox(self.agent_tab, from_=1, to=20, textvariable=self.agent_max_cycles, width=8).grid(row=7, column=1, sticky="w", pady=(8, 0))
+        ttk.Checkbutton(self.agent_tab, text="Modo monitorizado (ingeniería inversa)", variable=self.agent_monitor_mode).grid(row=8, column=1, sticky="w")
+        ttk.Checkbutton(self.agent_tab, text="Ejecutar extractor automáticamente", variable=self.agent_run_extractor).grid(row=9, column=1, sticky="w")
+        ttk.Checkbutton(self.agent_tab, text="Compilar y diagnosticar entorno TeX", variable=self.agent_compile).grid(row=10, column=1, sticky="w", pady=(8, 0))
+        ttk.Checkbutton(self.agent_tab, text="Copiar reporte al objetivo", variable=self.agent_apply).grid(row=11, column=1, sticky="w")
+        self.agent_run_button = ttk.Button(self.agent_tab, text="Ejecutar flujo agéntico monitorizado", command=self._run_agent)
+        self.agent_run_button.grid(row=12, column=1, sticky="w", pady=10)
         self.agent_output = tk.Text(self.agent_tab, height=18)
-        self.agent_output.grid(row=9, column=0, columnspan=3, sticky="nsew")
-        self.agent_tab.rowconfigure(9, weight=1)
+        self.agent_output.grid(row=13, column=0, columnspan=3, sticky="nsew")
+        self.agent_tab.rowconfigure(13, weight=1)
         self._attach_tooltip(self.agent_browse_button, "Selecciona la carpeta objetivo desde donde el agente leerá contexto y aplicará la memoria editorial heredada.")
-        self._attach_tooltip(self.agent_run_button, "Ejecuta el ciclo agentico usando la memoria editorial persistente del scope resuelto y sus ancestros.")
+        self._attach_tooltip(self.agent_run_button, "Ejecuta el flujo monitorizado observar→extraer→revisar→evaluar→memoria con compuertas contractuales.")
         self._register_busy_widgets("agent", self.agent_run_button, self.agent_browse_button)
 
     def _build_arch_tab(self) -> None:
@@ -461,7 +481,7 @@ class AulaTeXApp(tk.Tk):
         self.generation_activity_spin.grid(row=0, column=5, sticky="w", padx=(6, 12))
 
         ttk.Label(control_frame, text="Iteraciones").grid(row=0, column=6, sticky="w")
-        self.generation_iterations_spin = ttk.Spinbox(control_frame, from_=1, to=12, textvariable=self.generation_iterations, width=8)
+        self.generation_iterations_spin = ttk.Spinbox(control_frame, from_=1, to=500, textvariable=self.generation_iterations, width=8)
         self.generation_iterations_spin.grid(row=0, column=7, sticky="w", padx=(6, 0))
 
         ttk.Label(control_frame, text="Nombre del nodo").grid(row=1, column=0, sticky="w", pady=(10, 0))
@@ -618,6 +638,20 @@ class AulaTeXApp(tk.Tk):
         self.feedback_tab.rowconfigure(memory_row, weight=1)
         self.feedback_tab.rowconfigure(output_row, weight=1)
 
+        overview = ttk.LabelFrame(self.feedback_tab, text="Rol dentro del enfoque agéntico", padding=8)
+        overview.grid(row=0, column=0, sticky="ew", pady=(0, 8))
+        ttk.Label(
+            overview,
+            text=(
+                "Esta pestaña administra memoria editorial, fusión histórica y DNA reutilizable por nodo. "
+                "El flujo observar→extractor→revisión→evaluación→memoria se ejecuta desde 'Flujo Agéntico'; "
+                "aquí se consolidan Markdown/JSON históricos, reglas, quality gates, errores recurrentes y patrones aprendidos. "
+                "El enfoque recomendado es bottom-up: actividades → materia → carrera → institución, con motor de fusión antes de cada nueva construcción."
+            ),
+            wraplength=950,
+            justify="left",
+        ).grid(row=0, column=0, sticky="w")
+
         self.feedback_institution = tk.StringVar(value=UNSELECTED_OPTION)
         self.feedback_career = tk.StringVar(value=UNSELECTED_OPTION)
         self.feedback_subject = tk.StringVar(value=UNSELECTED_OPTION)
@@ -632,7 +666,7 @@ class AulaTeXApp(tk.Tk):
         self.feedback_progress = tk.DoubleVar(value=0.0)
 
         source_frame = ttk.LabelFrame(self.feedback_tab, text="Origen editorial", padding=10)
-        source_frame.grid(row=0, column=0, sticky="ew")
+        source_frame.grid(row=1, column=0, sticky="ew")
         for index in range(8):
             source_frame.columnconfigure(index, weight=1 if index % 2 else 0)
 
@@ -658,8 +692,8 @@ class AulaTeXApp(tk.Tk):
 
         ttk.Label(source_frame, textvariable=self.feedback_scope_status).grid(row=1, column=0, columnspan=8, sticky="w", pady=(10, 0))
 
-        control_frame = ttk.LabelFrame(self.feedback_tab, text="Construccion de memoria", padding=10)
-        control_frame.grid(row=1, column=0, sticky="ew", pady=(10, 0))
+        control_frame = ttk.LabelFrame(self.feedback_tab, text="Construcción, fusión histórica y retroalimentación", padding=10)
+        control_frame.grid(row=2, column=0, sticky="ew", pady=(10, 0))
         for index in range(6):
             control_frame.columnconfigure(index, weight=1 if index in {1, 3, 5} else 0)
 
@@ -679,7 +713,7 @@ class AulaTeXApp(tk.Tk):
         self.feedback_propagation_combo.bind("<<ComboboxSelected>>", self._on_feedback_plan_changed)
 
         ttk.Label(control_frame, text="Iteraciones").grid(row=0, column=4, sticky="w")
-        self.feedback_iterations_spin = ttk.Spinbox(control_frame, from_=1, to=12, textvariable=self.feedback_iterations, width=8)
+        self.feedback_iterations_spin = ttk.Spinbox(control_frame, from_=1, to=500, textvariable=self.feedback_iterations, width=8)
         self.feedback_iterations_spin.grid(row=0, column=5, sticky="w", padx=(6, 0))
 
         ttk.Label(control_frame, text="Motores en orden").grid(row=1, column=0, sticky="w", pady=(10, 0))
@@ -692,7 +726,7 @@ class AulaTeXApp(tk.Tk):
         action_frame = ttk.Frame(self.feedback_tab)
         action_frame.grid(row=2, column=0, sticky="ew", pady=(10, 0))
         action_frame.columnconfigure(6, weight=1)
-        self.feedback_run_button = ttk.Button(action_frame, text="Construir memoria editorial", command=self._run_feedback_memory)
+        self.feedback_run_button = ttk.Button(action_frame, text="Fusionar y construir memoria del nodo", command=self._run_feedback_memory)
         self.feedback_run_button.grid(row=0, column=0, sticky="w")
         self.feedback_cancel_button = ttk.Button(action_frame, text="Cancelar", command=self._cancel_feedback_memory, state="disabled")
         self.feedback_cancel_button.grid(row=0, column=1, sticky="w", padx=(8, 0))
@@ -709,7 +743,7 @@ class AulaTeXApp(tk.Tk):
         ttk.Progressbar(action_frame, variable=self.feedback_progress, maximum=100).grid(row=0, column=6, sticky="ew", padx=(12, 0))
         ttk.Label(action_frame, textvariable=self.feedback_progress_status).grid(row=1, column=0, columnspan=7, sticky="w", pady=(8, 0))
 
-        plan_frame = ttk.LabelFrame(self.feedback_tab, text="Plan de propagacion", padding=10)
+        plan_frame = ttk.LabelFrame(self.feedback_tab, text="Plan de propagacion y absorcion de memoria", padding=10)
         plan_frame.grid(row=3, column=0, sticky="nsew", pady=(10, 0))
         plan_frame.columnconfigure(0, weight=1)
         plan_frame.rowconfigure(0, weight=1)
@@ -725,7 +759,7 @@ class AulaTeXApp(tk.Tk):
             self.feedback_metrics_text = tk.Text(metrics_frame, height=7, wrap="word")
             self.feedback_metrics_text.grid(row=0, column=0, sticky="nsew")
 
-        memory_frame = ttk.LabelFrame(self.feedback_tab, text="Memoria editorial actual", padding=10)
+        memory_frame = ttk.LabelFrame(self.feedback_tab, text="Memoria editorial actual y herencia util", padding=10)
         memory_frame.grid(row=memory_row, column=0, sticky="nsew", pady=(10, 0))
         memory_frame.columnconfigure(0, weight=1)
         memory_frame.rowconfigure(0, weight=1)
@@ -748,17 +782,17 @@ class AulaTeXApp(tk.Tk):
         self._attach_tooltip(self.feedback_iterations_spin, "Número de pasadas completas del orquestador. Cada ciclo vuelve a consultar los motores en el orden configurado.")
         self._attach_tooltip(self.feedback_engines_entry, "Lista separada por comas. Se ejecutan del más rápido al más profundo; el orden por defecto ya sigue esa estrategia.")
         self._attach_tooltip(self.feedback_tokens_spin, "Límite de salida por llamada LLM. Útil para controlar profundidad y costo por ciclo.")
-        self._attach_tooltip(self.feedback_run_button, "Inicia la construcción de memoria editorial del scope seleccionado siguiendo el plan visible arriba.")
+        self._attach_tooltip(self.feedback_run_button, "Inicia la fusión de Markdown/JSON históricos del nodo y construye memoria editorial usando el DNA histórico disponible.")
         self._attach_tooltip(self.feedback_cancel_button, "Solicita cancelación cooperativa. La corrida termina al cerrar la llamada LLM en curso y conserva lo ya consolidado.")
         self._attach_tooltip(self.feedback_lock_button, "Fija las secciones actuales del scope para que siguientes corridas no las modifiquen. Se mantiene el principio de no regresión.")
         self._attach_tooltip(self.feedback_unlock_button, "Libera las fijaciones manuales del scope actual para permitir nuevas fusiones en próximas corridas.")
         self._attach_tooltip(self.feedback_refresh_button, "Relee catálogo, plan y memoria persistida desde la base SQLite y los snapshots del scope actual.")
         self._attach_tooltip(self.feedback_help_button, "Abre una guía corta para operar la construcción de memoria editorial y entender las opciones de propagación.")
-        self._attach_tooltip(self.feedback_plan_text, "Vista previa del recorrido de consolidación. Muestra el orden de scopes y la estrategia editorial esperada: construcción, refuerzo, abstracción ascendente o transferencia lateral.")
+        self._attach_tooltip(self.feedback_plan_text, "Vista previa del recorrido de consolidación. Muestra orden de scopes, estrategia editorial y absorción histórica esperada antes de construir memoria nueva.")
         if self.feedback_metrics_text is not None:
             self._attach_tooltip(self.feedback_metrics_text, "Resumen histórico por motor y por ciclo para los scopes actualmente incluidos en el plan visible.")
-        self._attach_tooltip(self.feedback_memory_text, "Memoria editorial persistida del scope actual, incluyendo herencia útil y secciones fijadas manualmente.")
-        self._attach_tooltip(self.feedback_output, "Bitácora en vivo del orquestador: inicio, progreso por motor, resultados, cancelación o cierre de corrida.")
+        self._attach_tooltip(self.feedback_memory_text, "Memoria editorial persistida del scope actual, herencia útil, reglas fijadas y aprendizaje reutilizable que alimenta el DNA histórico.")
+        self._attach_tooltip(self.feedback_output, "Bitácora en vivo del orquestador: inicio, fusión histórica, progreso por motor, resultados, cancelación o cierre de corrida.")
         self._register_busy_widgets(
             "feedback",
             self.feedback_run_button,
@@ -843,7 +877,7 @@ class AulaTeXApp(tk.Tk):
             control_frame.columnconfigure(index, weight=1 if index in {1, 3, 5} else 0)
 
         ttk.Label(control_frame, text="Iteraciones").grid(row=0, column=0, sticky="w")
-        self.investigation_iterations_spin = ttk.Spinbox(control_frame, from_=1, to=12, textvariable=self.investigation_iterations, width=8)
+        self.investigation_iterations_spin = ttk.Spinbox(control_frame, from_=1, to=500, textvariable=self.investigation_iterations, width=8)
         self.investigation_iterations_spin.grid(row=0, column=1, sticky="w", padx=(6, 12))
 
         ttk.Label(control_frame, text="Motores en orden").grid(row=0, column=2, sticky="w")
@@ -1014,9 +1048,11 @@ class AulaTeXApp(tk.Tk):
             "6. Usa descendente cuando quieras construir o reforzar cerebros hijos a partir del padre; AulaTeX intentará construir cuando falte memoria y reforzar cuando ya exista.\n"
             "7. Usa lateral para aprendizaje entre hermanos: transfiere patrones reutilizables sin copiar redacción literal.\n"
             "8. Usa recursivo completo cuando necesites una construcción editorial integral: consolida el subárbol completo de cada ancestro antes de seguir subiendo.\n"
-            "9. Usa 'Fijar reglas actuales' para congelar secciones validadas y evitar que futuras corridas las alteren.\n"
-            "10. Si necesitas medir desempeño por motor y por ciclo, activa el modo diagnóstico con --diagnostics o AULATEX_ENABLE_DIAGNOSTIC_METRICS=1.\n"
-            "11. Si cancelas, se conserva lo ya consolidado y el manifiesto queda marcado como cancelado.",
+            "9. El ciclo actual absorbe Markdown/JSON históricos, fusiona sin pérdida y genera DNA histórico del nodo antes de llamar al motor.\n"
+            "10. Para todos los nodos del workspace usa scripts/prueeba-lote-ejecucion.ps1: primero sin -Execute para planear y después con -Execute para correr por lotes.\n"
+            "11. Usa 'Fijar reglas actuales' para congelar secciones validadas y evitar que futuras corridas las alteren.\n"
+            "12. Si necesitas medir desempeño por motor y por ciclo, activa el modo diagnóstico con --diagnostics o AULATEX_ENABLE_DIAGNOSTIC_METRICS=1.\n"
+            "13. Si cancelas, se conserva lo ya consolidado y el manifiesto queda marcado como cancelado.",
         )
 
     def _show_investigation_help(self) -> None:
@@ -1813,6 +1849,10 @@ class AulaTeXApp(tk.Tk):
             self.agent_target.set(self.workspace.relative(path))
 
     def _run_agent(self) -> None:
+        if self.agent_monitor_mode.get():
+            self._run_activity_monitor()
+            return
+
         engines = [item.strip() for item in self.agent_engines.get().split(",") if item.strip()]
         request = AgentRequest(
             target=self.agent_target.get(),
@@ -1832,6 +1872,31 @@ class AulaTeXApp(tk.Tk):
                 self.events.put(("agent", f"[AGENTE] {'OK' if result.ok else 'CON OBSERVACIONES'}\nReporte: {result.report_path}"))
             except Exception as exc:
                 self.events.put(("agent-error", f"[AGENTE] ERROR {type(exc).__name__}: {exc}"))
+
+        self._thread(work)
+
+    def _run_activity_monitor(self) -> None:
+        monitor = ActivityMonitor(self.workspace)
+        request = ActivityMonitorRequest(
+            target=self.agent_target.get(),
+            activity_number=int(self.agent_activity.get()),
+            max_cycles=int(self.agent_max_cycles.get()),
+            compile_check=bool(self.agent_compile.get()),
+            run_extractor=bool(self.agent_run_extractor.get()),
+        )
+        self._set_busy("agent", True)
+
+        def work() -> None:
+            try:
+                result = monitor.run(request)
+                self.events.put(
+                    (
+                        "agent",
+                        f"[MONITOR] {'PASS' if result.ok else 'PENDIENTE'}\nManifest: {result.manifest_path}\nReporte: {result.report_path}",
+                    )
+                )
+            except Exception as exc:
+                self.events.put(("agent-error", f"[MONITOR] ERROR {type(exc).__name__}: {exc}"))
 
         self._thread(work)
 
@@ -1996,9 +2061,11 @@ class AulaTeXApp(tk.Tk):
             self.feedback_plan_text.insert("end", f"Plan invalido: {exc}\n")
 
         self.feedback_plan_text.insert("end", f"Propagacion: {PROPAGATION_LABELS.get(self.feedback_propagation.get(), self.feedback_propagation.get())}\n")
-        self.feedback_plan_text.insert("end", f"Nivel destino: {build_level}\n\n")
+        self.feedback_plan_text.insert("end", f"Nivel destino: {build_level}\n")
+        self.feedback_plan_text.insert("end", "Fusion previa: activa. AulaTeX absorbe Markdown/JSON historicos del scope, genera DNA historico y lo inyecta en el prompt del ciclo.\n")
+        self.feedback_plan_text.insert("end", "Ejecucion lote recomendada: scripts/prueeba-lote-ejecucion.ps1 primero en modo plan y despues con -Execute.\n\n")
         if self.feedback_propagation.get() == "local":
-            self.feedback_plan_text.insert("end", "Modo local: la memoria editorial se construye sólo para el nodo origen usando sus fuentes editoriales directas.\n\n")
+            self.feedback_plan_text.insert("end", "Modo local: la memoria editorial se construye sólo para el nodo origen usando sus fuentes editoriales directas y su DNA historico fusionado.\n\n")
         elif self.feedback_propagation.get() == "lateral":
             self.feedback_plan_text.insert("end", "Modo lateral: AulaTeX sincroniza aprendizaje reutilizable entre nodos hermanos del mismo nivel sin copiar redacción literal.\n\n")
         elif self.feedback_propagation.get() == "descendente":
@@ -2472,12 +2539,12 @@ class AulaTeXApp(tk.Tk):
                     self.feedback_progress_status.set(f"Memoria editorial cerrada: {'OK' if event.ok else 'CON OBSERVACIONES'}")
                     self._log(self.feedback_output, f"[MEMORIA] {'OK' if event.ok else 'CON OBSERVACIONES'}\nManifest: {event.manifest_path}")
                     if not event.ok:
-                        checkpoint_dir = self.workspace.feedback_root / "editorial-memory" / "checkpoints"
+                        checkpoint_dir = self.workspace.temp_root / "editorial-memory" / "checkpoints"
                         checkpoints = sorted(checkpoint_dir.glob("*.json"), key=lambda p: p.stat().st_mtime, reverse=True)
                         if checkpoints:
                             self.feedback_resume_checkpoint.set(str(checkpoints[0]))
                             self.feedback_resume_button.configure(state="normal")
-                            self._log(self.feedback_output, f"[MEMORIA] Checkpoint detectado para reanudar: {checkpoints[0]}")
+                            self._log(self.feedback_output, f"[MEMORIA] Checkpoint temporal detectado para reanudar: {checkpoints[0]}")
                 self._refresh_feedback()
             elif category == "feedback-error":
                 self._set_busy("feedback", False)
