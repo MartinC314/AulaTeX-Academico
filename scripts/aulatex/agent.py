@@ -13,6 +13,7 @@ from .agentic_patterns import (
     pattern_catalog_markdown,
     safe_invoke,
 )
+from .editorial_context import EditorialContextProvider
 from .editorial_memory import EditorialMemoryStore
 from .extractor_adapter import ExtractorAdapter, ExtractorRequest, ExtractorRunResult
 from .llm_bridge import DEFAULT_MAX_TOKENS, LLM_ENGINES, AulaTeXLLMClient, LLMCallResult
@@ -77,6 +78,7 @@ class AulaTeXAgent:
         self.workspace = workspace or AulaTeXWorkspace()
         self.llm = llm_bridge or AulaTeXLLMClient()
         self.editorial_memory = EditorialMemoryStore(self.workspace)
+        self.editorial_context = EditorialContextProvider(self.workspace, self.editorial_memory)
         self.template_materializer = TemplateMaterializer(self.workspace)
         self.extractor_adapter = ExtractorAdapter(self.workspace)
 
@@ -101,9 +103,9 @@ class AulaTeXAgent:
                 "- Regla: reutiliza memoria editorial ascendente del padre y genera hacia abajo sin asumir que el hijo exista ya.\n"
             )
         if target_ctx.scope_key:
-            memory_context = self.editorial_memory.summarize_for_scope(target_ctx.scope_key, include_ancestors=True, max_chars=6000)
-            if memory_context.strip():
-                context += "\n\n## Memoria editorial persistente\n" + memory_context
+            editorial_bundle = self.editorial_context.build_for_scope(target_ctx.scope_key, include_ancestors=True, max_chars=22000)
+            if editorial_bundle.markdown.strip():
+                context += "\n\n" + editorial_bundle.markdown
         base_tasks = build_editorial_tasks(request, context, memory)
         cycle_mode = self._normalize_cycle_mode(request.cycle_mode)
         selected_tasks = self._expand_tasks(base_tasks, request.iterations, cycle_mode)

@@ -288,8 +288,9 @@ class EditorialMemoryStore:
         with self._connect() as conn:
             row = conn.execute("SELECT memory_json FROM memories WHERE scope_key=?", (scope_key,)).fetchone()
         if row is not None:
-            payload = json.loads(row["memory_json"])
-            return self._normalize_memory(payload)
+            payload = self._normalize_memory(json.loads(row["memory_json"]))
+            if any(payload.get(section) for section in MEMORY_SECTIONS):
+                return payload
 
         by_key, _children = self.workspace.editorial_scope_index()
         scope = by_key.get(scope_key)
@@ -309,8 +310,9 @@ class EditorialMemoryStore:
             rows = conn.execute(query, keys).fetchall()
         memories: dict[str, dict] = {}
         for row in rows:
-            payload = json.loads(row["memory_json"])
-            memories[str(row["scope_key"])] = self._normalize_memory(payload)
+            payload = self._normalize_memory(json.loads(row["memory_json"]))
+            if any(payload.get(section) for section in MEMORY_SECTIONS):
+                memories[str(row["scope_key"])] = payload
         for key in keys:
             if key not in memories:
                 memory = self.get_memory(key)
@@ -584,10 +586,13 @@ class EditorialMemoryStore:
             if current is None:
                 continue
             memory = self.get_memory(key)
-            if all(not memory.get(section) for section in MEMORY_SECTIONS):
+            if all(not value for value in memory.values() if isinstance(value, list)):
                 continue
             chunk = self.render_memory_markdown(current, memory)
-            if sum(len(item) for item in chunks) + len(chunk) > max_chars:
+            current_size = sum(len(item) for item in chunks)
+            if current_size + len(chunk) > max_chars:
+                if not chunks:
+                    chunks.append(chunk[:max_chars])
                 break
             chunks.append(chunk)
         return "\n\n".join(chunks)

@@ -9,6 +9,7 @@ from .agentic_patterns import AgenticStateMachine, EditorialConsensusEngine
 from .bibliography_repair import BibliographyRepairer, BibliographyRepairRequest
 from .compilation_diagnostics import ENVIRONMENT_CATEGORIES, classify_compile_failure, is_environment_issue
 from .compilation_repair import CompilationRepairRequest, CompilationRepairer
+from .editorial_context import EditorialContextProvider
 from .extractor_adapter import ExtractorAdapter, ExtractorRequest
 from .llm_bridge import LLM_ENGINES, AulaTeXLLMClient
 from .workspace import AulaTeXWorkspace
@@ -31,6 +32,7 @@ __all__ = [
     "AgentRequest",
     "AulaTeXAgent",
     "AulaTeXWorkspace",
+    "EditorialContextProvider",
     "ExtractorAdapter",
     "ExtractorRequest",
     "AgenticStateMachine",

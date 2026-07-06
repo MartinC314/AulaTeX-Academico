@@ -12,6 +12,7 @@ from threading import Event
 from typing import Callable, Iterable
 
 from .config import diagnostic_metrics_enabled
+from .editorial_context import EditorialContextProvider
 from .editorial_memory import ENGINE_PRIORITY, EditorialMemoryStore
 from .llm_bridge import DEFAULT_MAX_TOKENS, LLM_ENGINES, AulaTeXLLMClient
 from .workspace import AulaTeXWorkspace, EditorialScope, GENERATION_MARKER_FILENAME
@@ -459,6 +460,7 @@ class ConstructionBuilder:
         self.llm = llm_bridge or AulaTeXLLMClient()
         self.store = store or ConstructionStore(self.workspace)
         self.editorial_store = editorial_store or EditorialMemoryStore(self.workspace)
+        self.editorial_context = EditorialContextProvider(self.workspace, self.editorial_store)
 
     def preview_node(self, request: ConstructionRequest) -> ConstructionNodeSpec:
         by_key, children = self.workspace.editorial_scope_index()
@@ -874,6 +876,7 @@ class ConstructionBuilder:
             "context": destination_context,
             "layout_contract": self._destination_contract(node),
         }
+        unified_parent_context = self.editorial_context.build_for_scope(parent_scope.key, include_ancestors=True, max_chars=18000)
         return {
             "ancestors_payload": ancestors_payload,
             "ancestors_text": "\n\n".join(ancestor_parts) or "Sin ancestros disponibles.",
@@ -901,6 +904,7 @@ class ConstructionBuilder:
                 f"Contrato de layout:\n{destination_payload['layout_contract']}\n\n"
                 f"Contexto del destino:\n{destination_context}"
             ),
+            "unified_editorial_context": unified_parent_context.markdown,
         }
 
     def _synthesize_siblings(self, node_level: str, siblings_payload: list[dict]) -> str:
@@ -1019,6 +1023,7 @@ class ConstructionBuilder:
             f"Sintesis de hermanos:\n{inputs['siblings_synthesis']}\n\n"
             f"Ingesta adicional:\n{inputs['ingestion_text']}\n\n"
             f"Contexto del destino:\n{inputs['destination_text']}\n\n"
+            f"Contexto editorial unificado del padre/nodo:\n{inputs.get('unified_editorial_context') or 'Sin contexto editorial unificado.'}\n\n"
             f"Reglas interinstitucionales:\n{inputs['interinstitutional_text']}\n"
         )
 
