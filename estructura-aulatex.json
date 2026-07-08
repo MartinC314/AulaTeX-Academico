@@ -1,0 +1,22 @@
+{
+  "node": "AulaTeX-Academico",
+  "slug": "AulaTeX-Academico",
+  "title": "Aulatex Academico",
+  "activity_number": 1,
+  "files": [
+    "AulaTeX-Academico.bib",
+    "reporte-AulaTeX-Academico.tex",
+    "reporte-AulaTeX-Academico-Actividad-1.tex",
+    "presentacion-AulaTeX-Academico.tex",
+    "presentacion-AulaTeX-Academico-Actividad-1.tex",
+    "programa-analitico-AulaTeX-Academico.md",
+    "COMPILACION-AulaTeX-Academico.md",
+    "README.md"
+  ],
+  "folders": [
+    "referencias-AulaTeX-Academico",
+    "planeaciones-AulaTeX-Academico",
+    "assets-AulaTeX-Academico"
+  ],
+  "memory_summary": []
+}

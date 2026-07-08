@@ -5,54 +5,112 @@ plantillas Pizarror y puntos de entrada canonicos para reportes, actividades,
 presentaciones y bibliografias.
 
 ## Flujo Principal
-
-- Plantillas maestras y motor LaTeX: `base/`.
-- Trabajos canonicos por institucion: `UnADM/`, `UCNL/`, `IIIEPE/`, `ITESCA/`.
-- Material editorial y criterios de revision: `retroalimentacion-editorial/`.
 - Automatizacion de compilacion y exportacion: `scripts/`.
-- Residuales de compilacion: `.build/`.
+## Endpoints
 
-Flujo editorial recomendado en AulaTeX:
-
-1. Memoria editorial.
-2. Investigación.
-3. Extractor.
-4. Generación y agente.
-5. Compilación.
-
-## Comandos Utiles
-
-```powershell
-.\scripts\latexmk-build.ps1 .\UnADM\reporte-unadm.tex
+```json
+[
+  {
+    "name": "Copilot",
+    "vendor": "copilot",
+    "settings": {
+      "gpt-5.2-codex": {
+        "reasoningEffort": "xhigh"
+      },
+      "gpt-5-mini": {
+        "reasoningEffort": "low"
+      }
+    }
+  },
+  {
+    "name": "chatVsc",
+    "vendor": "azure",
+    "apiKey": "${input:chat.lm.secret.2ba0532c}",
+    "models": []
+  },
+  {
+    "name": "upap",
+    "vendor": "azure",
+    "apiKey": "${input:chat.lm.secret.490d3260}",
+    "models": [
+      {
+        "id": "gpt-5.4-pro",
+        "name": "gpt-5.4-pro",
+        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 922000,
+        "maxOutputTokens": 128000,
+        "reasoning": {
+          "effort": "xhigh"
+        }
+      },
+      {
+        "id": "model-router",
+        "name": "model-router",
+        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 1015808,
+        "maxOutputTokens": 32768
+      },
+      {
+        "id": "Mistral-Large-3",
+        "name": "Mistral-Large-3",
+        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 126976,
+        "maxOutputTokens": 4096
+      },
+      {
+        "id": "gpt-chat-latest",
+        "name": "gpt-chat-latest",
+        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 72000,
+        "maxOutputTokens": 128000,
+        "reasoning": {
+          "effort": "xhigh"
+        }
+      }
+    ]
+  },
+  {
+    "name": "upapeastus",
+    "vendor": "azure",
+    "apiKey": "${input:chat.lm.secret.3b0f7701}",
+    "models": [
+      {
+        "id": "DeepSeek-V4-Pro",
+        "name": "DeepSeek-V4-Pro",
+        "url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/chat/completions",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 872000,
+        "maxOutputTokens": 128000
+      },
+      {
+        "id": "gpt-5.3-codex",
+        "name": "gpt-5.3-codex",
+        "url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/responses",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 272000,
+        "maxOutputTokens": 128000,
+        "reasoning": {
+          "effort": "xhigh"
+        }
+      }
+    ]
+  }
+]
 ```
 
 ```powershell
-.\scripts\latexmk-build.ps1 .\IIIEPE\temas-selectos-de-matematicas-I\reporte-temas-selectos-de-matematicas-I.tex
+.\scripts\install-aulatex-deepagents.ps1
 ```
-
-```powershell
-.\scripts\latexmk-build.ps1 .\ITESCA\ingenieria-en-sistemas-computacionales\primer-ingreso\reporte-primer-ingreso.tex
-```
-
-```powershell
-.\scripts\latexmk-build.ps1 .\base\Templates-Informe\main.tex
-```
-
-```powershell
-.\scripts\aulatex.ps1
-```
-
-```powershell
-.\scripts\aulatex.ps1 gui --diagnostics
-```
-
-```powershell
-.\scripts\aulatex.ps1 investigation --target .\UnADM\licenciatura-en-derecho-unadm\historia-del-derecho-en-mexico-lde --query "historia del derecho en mexico unadm programa analitico"
-```
-
-El PDF final se copia en la misma carpeta del archivo `.tex`.
-
-La ejecución normal de AulaTeX no muestra ni persiste métricas por motor y por ciclo. Ese registro queda reservado para diagnóstico de desarrollo y pruebas.
 
 Para medir desempeño de forma explícita:
 
@@ -263,104 +321,124 @@ CODEX_API_VERSION=2026-02-24
 
 ## Endpoints
 
-´´´json
+```json
 [
-	{
-		"name": "Copilot",
-		"vendor": "copilot",
-		"settings": {
-			"gpt-5.2-codex": {
-				"reasoningEffort": "xhigh"
-			},
-			"gpt-5-mini": {
-				"reasoningEffort": "low"
-			}
-		}
-	},
-	{
-		"name": "chatVsc",
-		"vendor": "azure",
-		"apiKey": "${input:chat.lm.secret.2ba0532c}",
-		"models": [
-			
-		]
-	},
-	{
-		"name": "upap",
-		"vendor": "azure",
-		"apiKey": "${input:chat.lm.secret.490d3260}",
-		"models": [
-			{
-				"id": "gpt-5.4-pro",
-				"name": "gpt-5.4-pro",
-				"url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
-				"toolCalling": true,
-				"vision": true,
-				"maxInputTokens": 922000,
-				"maxOutputTokens": 128000,
-				"reasoning": {
-					"effort": "xhigh"
-				}
-			},
-			{
-				"id": "model-router",
-				"name": "model-router",
-				"url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
-				"toolCalling": true,
-				"vision": true,
-				"maxInputTokens": 1015808,
-				"maxOutputTokens": 32768
-			},
-			{
-				"id": "Mistral-Large-3",
-				"name": "Mistral-Large-3",
-				"url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
-				"toolCalling": true,
-				"vision": true,
-				"maxInputTokens": 126976,
-				"maxOutputTokens": 4096
-			},
-			{
-				"id": "gpt-chat-latest",
-				"name": "gpt-chat-latest",
-				"url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
-				"toolCalling": true,
-				"vision": true,
-				"maxInputTokens": 72000,
-				"maxOutputTokens": 128000,
-				"reasoning": {
-					"effort": "xhigh"
-				}
-			}
-		]
-	},
-	{
-		"name": "upapeastus",
-		"vendor": "azure",
-		"apiKey": "${input:chat.lm.secret.3b0f7701}",
-		"models": [
-			{
-				"id": "DeepSeek-V4-Pro",
-				"name": "DeepSeek-V4-Pro",
-				"url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/chat/completions",
-				"toolCalling": true,
-				"vision": true,
-				"maxInputTokens": 872000,
-				"maxOutputTokens": 128000
-			},
-			{
-				"id": "gpt-5.3-codex",
-				"name": "gpt-5.3-codex",
-				"url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/responses",
-				"toolCalling": true,
-				"vision": true,
-				"maxInputTokens": 272000,
-				"maxOutputTokens": 128000,
-				"reasoning": {
-					"effort": "xhigh"
-				}
-			}
-		]
-	}
+  {
+    "name": "Copilot",
+    "vendor": "copilot",
+    "settings": {
+      "gpt-5.2-codex": {
+        "reasoningEffort": "xhigh"
+      },
+      "gpt-5-mini": {
+        "reasoningEffort": "low"
+      }
+    }
+  },
+  {
+    "name": "chatVsc",
+    "vendor": "azure",
+    "apiKey": "${input:chat.lm.secret.2ba0532c}",
+    "models": []
+  },
+  {
+    "name": "upap",
+    "vendor": "azure",
+    "apiKey": "${input:chat.lm.secret.490d3260}",
+    "models": [
+      {
+        "id": "gpt-5.4-pro",
+        "name": "gpt-5.4-pro",
+        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 922000,
+        "maxOutputTokens": 128000,
+        "reasoning": {
+          "effort": "xhigh"
+        }
+      },
+      {
+        "id": "model-router",
+        "name": "model-router",
+        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 1015808,
+        "maxOutputTokens": 32768
+      },
+      {
+        "id": "Mistral-Large-3",
+        "name": "Mistral-Large-3",
+        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 126976,
+        "maxOutputTokens": 4096
+      },
+      {
+        "id": "gpt-chat-latest",
+        "name": "gpt-chat-latest",
+        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 72000,
+        "maxOutputTokens": 128000,
+        "reasoning": {
+          "effort": "xhigh"
+        }
+      }
+    ]
+  },
+  {
+    "name": "upapeastus",
+    "vendor": "azure",
+    "apiKey": "${input:chat.lm.secret.3b0f7701}",
+    "models": [
+      {
+        "id": "DeepSeek-V4-Pro",
+        "name": "DeepSeek-V4-Pro",
+        "url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/chat/completions",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 872000,
+        "maxOutputTokens": 128000
+      },
+      {
+        "id": "gpt-5.3-codex",
+        "name": "gpt-5.3-codex",
+        "url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/responses",
+        "toolCalling": true,
+        "vision": true,
+        "maxInputTokens": 272000,
+        "maxOutputTokens": 128000,
+        "reasoning": {
+          "effort": "xhigh"
+        }
+      }
+    ]
+  }
 ]
-´´´
+```
+
+## Límites de tokens y tiempo de espera
+
+Los límites siguientes corresponden a los deployments configurados para AulaTeX y a la documentación oficial revisada el 2026-07-07. Estos valores describen la capacidad máxima por solicitud; no sustituyen las cuotas de uso de la suscripción, como TPM, RPM o rate limits regionales.
+
+| Motor AulaTeX | Deployment | Entrada/contexto oficial | Salida oficial | Observación operativa |
+| --- | --- | ---: | ---: | --- |
+| `Codex` | `gpt-5.3-codex` | `400,000` de contexto; desglose `272,000` entrada + `128,000` salida | `128,000` | El tope local anterior de `200,000` tokens de salida no corresponde al límite oficial del modelo. |
+| `Auto (model-router)` | `model-router` | `200,000` de contexto | Variable según el modelo enrutado: `16,384`, `32,768`, `100,000` o `128,000` | La ruta elegida por el router puede cambiar el límite efectivo de salida y provocar rechazos en prompts cercanos al máximo. |
+| `GPT-Pro` | `gpt-5.4-pro` | `1,050,000` de contexto | `128,000` | El valor de `~150k` usado antes era un margen conservador, no un límite oficial. |
+| `Claude Foundry` | `claude-opus-4-8` | `1,000,000` de contexto | `128,000` | Puede verse limitado por rate limits de la suscripción, región o proveedor. |
+
+Los parámetros internos de AulaTeX, como `MaxTokens` y `AULATEX_MAX_OUTPUT_TOKENS_*`, son topes operativos del pipeline. Sirven para estabilizar la ejecución local, pero no modifican los límites reales del proveedor.
+
+Configuración segura recomendada para salidas largas:
+
+- `AULATEX_MAX_OUTPUT_TOKENS_CODEX=128000`
+- `AULATEX_MAX_OUTPUT_TOKENS_MODEL_ROUTER=128000` si se acepta variabilidad; `16384` si se requiere compatibilidad transversal.
+- `AULATEX_MAX_OUTPUT_TOKENS_GPT_PRO=128000`
+- `AULATEX_MAX_OUTPUT_TOKENS_ANTHROPIC_FOUNDRY=128000`
+
+Para prompts largos con `model-router`, mantener `ModelRouterDnaPromptChars` por debajo del contexto oficial de `200,000` tokens. No debe tratarse como un backend de `500k+` tokens.
