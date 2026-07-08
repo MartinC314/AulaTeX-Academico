@@ -20,6 +20,7 @@ from .gui import main as gui_main
 from .intelligent_engine import IntelligentEngine, IntelligentEngineRequest
 from .investigation import InvestigationBuilder, InvestigationRequest
 from .llm_bridge import DEFAULT_MAX_TOKENS, DEFAULT_TIMEOUT_SECONDS, LLM_ENGINES, AulaTeXLLMClient
+from .token_counter import count_text_tokens
 from .workspace import AulaTeXWorkspace
 
 
@@ -61,6 +62,15 @@ def _read_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _resolve_prompt_text(prompt_value: str | None, prompt_file: str) -> str:
+    prompt_text = prompt_value or ""
+    if prompt_file:
+        prompt_text = Path(prompt_file).read_text(encoding="utf-8")
+    if not prompt_text.strip():
+        raise SystemExit("Se requiere un prompt literal o --prompt-file.")
+    return prompt_text
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="aulatex", description="AulaTeX GUI and agentic editorial workflow.")
     sub = parser.add_subparsers(dest="command")
@@ -74,8 +84,14 @@ def build_parser() -> argparse.ArgumentParser:
     check = sub.add_parser("llm-check", help="Check configured AulaTeX LLM engines.")
     check.add_argument("--engine", action="append", choices=LLM_ENGINES)
 
+    tokenize = sub.add_parser("llm-tokenize", help="Count prompt tokens with a local Python tokenizer.")
+    tokenize.add_argument("prompt", nargs="?")
+    tokenize.add_argument("--prompt-file", default="")
+    tokenize.add_argument("--engine", default="Codex", choices=LLM_ENGINES)
+
     prompt = sub.add_parser("llm-prompt", help="Run one prompt through one LLM engine.")
-    prompt.add_argument("prompt")
+    prompt.add_argument("prompt", nargs="?")
+    prompt.add_argument("--prompt-file", default="")
     prompt.add_argument("--engine", default="Codex", choices=LLM_ENGINES)
     prompt.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
     prompt.add_argument("--timeout-seconds", type=int, default=DEFAULT_TIMEOUT_SECONDS)
@@ -248,10 +264,31 @@ def main(argv: list[str] | None = None) -> None:
             print(f"{result.engine}: {'OK' if result.ok else 'ERROR'} {result.text or result.error}")
         return
 
+    if args.command == "llm-tokenize":
+        prompt_text = _resolve_prompt_text(args.prompt, args.prompt_file)
+        result = count_text_tokens(args.engine, prompt_text)
+        print(
+            json.dumps(
+                {
+                    "engine": result.engine,
+                    "deployment": result.deployment,
+                    "token_count": result.token_count,
+                    "tokenizer_source": result.tokenizer_source,
+                    "tokenizer_name": result.tokenizer_name,
+                    "approximate": result.approximate,
+                    "note": result.note,
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
     if args.command == "llm-prompt":
+        prompt_text = _resolve_prompt_text(args.prompt, args.prompt_file)
         result = AulaTeXLLMClient().call(
             args.engine,
-            args.prompt,
+            prompt_text,
             max_tokens=args.max_tokens,
             timeout_seconds=args.timeout_seconds,
         )

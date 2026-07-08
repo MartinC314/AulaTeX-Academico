@@ -38,6 +38,13 @@ class TemplateMaterializer:
 
     def materialize_subject(self, target: str | Path, *, activity_number: int = 1, force: bool = True) -> MaterializationResult:
         target_dir = self.workspace.resolve_target(target)
+        if target_dir == self.workspace.repo_root:
+            return MaterializationResult(
+                False,
+                target_dir,
+                (),
+                ("No se materializa sobre la raiz del repositorio para evitar sobrescribir README.md.",),
+            )
         target_dir.mkdir(parents=True, exist_ok=True)
         profile = self._profile(target_dir, activity_number)
         memory = self._load_memory(target_dir)

@@ -174,9 +174,10 @@ Acciones:
 
         python -m scripts.aulatex.cli agent `
             --target $Target `
-            --action generar-plantilla `
+            --action evaluar `
             --iterations 1 `
             --cycle-mode full `
+            --no-compile `
             --engine $Engine[0] | Out-Null
 
         $fusionReport = @{
