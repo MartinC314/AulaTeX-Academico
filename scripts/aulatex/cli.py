@@ -17,6 +17,7 @@ from .construction import ConstructionBuilder, ConstructionRequest
 from .editorial_memory import EDITORIAL_LEVELS, EditorialMemoryBuilder, EditorialMemoryRequest
 from .extractor_adapter import EXTRACTOR_MOTORS, ExtractorAdapter, ExtractorRequest
 from .gui import main as gui_main
+from .intelligent_engine import IntelligentEngine, IntelligentEngineRequest
 from .investigation import InvestigationBuilder, InvestigationRequest
 from .llm_bridge import DEFAULT_MAX_TOKENS, DEFAULT_TIMEOUT_SECONDS, LLM_ENGINES, AulaTeXLLMClient
 from .workspace import AulaTeXWorkspace
@@ -77,6 +78,7 @@ def build_parser() -> argparse.ArgumentParser:
     prompt.add_argument("prompt")
     prompt.add_argument("--engine", default="Codex", choices=LLM_ENGINES)
     prompt.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
+    prompt.add_argument("--timeout-seconds", type=int, default=DEFAULT_TIMEOUT_SECONDS)
 
     agent = sub.add_parser("agent", help="Run an incremental AulaTeX agent cycle.")
     agent.add_argument("--target", default=".")
@@ -160,6 +162,7 @@ def build_parser() -> argparse.ArgumentParser:
     activity_monitor.add_argument("--no-bibliography-backup", action="store_true")
     activity_monitor.add_argument("--no-revision-backup", action="store_true")
     activity_monitor.add_argument("--keep-going", action="store_true")
+    activity_monitor.add_argument("--workflow-backend", default="langgraph", choices=("langgraph", "classic"))
 
     activity_revise = sub.add_parser("activity-revise", help="Build a structured revision plan for an activity.")
     activity_revise.add_argument("--target", required=True)
@@ -167,6 +170,7 @@ def build_parser() -> argparse.ArgumentParser:
     activity_revise.add_argument("--output", default="")
     activity_revise.add_argument("--apply", action="store_true")
     activity_revise.add_argument("--no-backup", action="store_true")
+    activity_revise.add_argument("--workflow-backend", default="langgraph", choices=("langgraph", "classic"))
 
     compilation_repair = sub.add_parser("compilation-repair", help="Attempt bounded compilation repair for an activity TEX.")
     compilation_repair.add_argument("--target", required=True)
@@ -180,6 +184,7 @@ def build_parser() -> argparse.ArgumentParser:
     bib_repair.add_argument("--apply", action="store_true")
     bib_repair.add_argument("--no-backup", action="store_true")
     bib_repair.add_argument("--min-confidence", type=float, default=0.72)
+    bib_repair.add_argument("--workflow-backend", default="langgraph", choices=("langgraph", "classic"))
 
     generation = sub.add_parser("generation", help="Create or reinforce an editorial node with foundational memory, plan and maqueta.")
     generation.add_argument("--parent-scope-key", default="interinstitucional")
@@ -193,6 +198,17 @@ def build_parser() -> argparse.ArgumentParser:
     generation.add_argument("--engine", action="append", choices=LLM_ENGINES)
     generation.add_argument("--iterations", type=int, default=2)
     generation.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
+
+    intelligent_engine = sub.add_parser("intelligent-engine", help="Plan a resumable bulk editorial campaign over the current workspace.")
+    intelligent_engine.add_argument("--target", default=".")
+    intelligent_engine.add_argument("--activity", type=int, default=0)
+    intelligent_engine.add_argument("--output", default="")
+    intelligent_engine.add_argument("--backend", default="langgraph", choices=("langgraph", "classic"))
+    intelligent_engine.add_argument("--max-targets", type=int, default=12)
+    intelligent_engine.add_argument("--audit", default="")
+    intelligent_engine.add_argument("--no-reports", action="store_true")
+    intelligent_engine.add_argument("--no-presentations", action="store_true")
+    intelligent_engine.add_argument("--engine", action="append", choices=LLM_ENGINES)
 
     compile_cmd = sub.add_parser("compile", help="Compile a TeX file with the shared latexmk wrapper.")
     compile_cmd.add_argument("tex")
@@ -233,7 +249,12 @@ def main(argv: list[str] | None = None) -> None:
         return
 
     if args.command == "llm-prompt":
-        result = AulaTeXLLMClient().call(args.engine, args.prompt, max_tokens=args.max_tokens)
+        result = AulaTeXLLMClient().call(
+            args.engine,
+            args.prompt,
+            max_tokens=args.max_tokens,
+            timeout_seconds=args.timeout_seconds,
+        )
         if not result.ok:
             raise SystemExit(f"{result.engine}: {result.error}")
         print(result.text)
@@ -509,6 +530,7 @@ def main(argv: list[str] | None = None) -> None:
                 backup_bibliography=not bool(args.no_bibliography_backup),
                 backup_revision=not bool(args.no_revision_backup),
                 stop_on_blocker=not bool(args.keep_going),
+                workflow_backend=args.workflow_backend,
             )
         )
         print(
@@ -533,6 +555,7 @@ def main(argv: list[str] | None = None) -> None:
                 output=args.output,
                 apply=bool(args.apply),
                 backup=not bool(args.no_backup),
+                workflow_backend=args.workflow_backend,
             )
         )
         print(
@@ -581,6 +604,7 @@ def main(argv: list[str] | None = None) -> None:
                 apply=bool(args.apply),
                 backup=not bool(args.no_backup),
                 min_confidence=args.min_confidence,
+                workflow_backend=args.workflow_backend,
             )
         )
         print(
@@ -658,6 +682,35 @@ def main(argv: list[str] | None = None) -> None:
                     "memory": str(result.memory_path),
                     "plan": str(result.plan_path),
                     "maqueta": str(result.maqueta_path),
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    if args.command == "intelligent-engine":
+        result = IntelligentEngine(AulaTeXWorkspace()).run(
+            IntelligentEngineRequest(
+                target=args.target,
+                activity_number=args.activity,
+                output=args.output,
+                backend=args.backend,
+                max_targets=args.max_targets,
+                audit_path=args.audit,
+                include_reports=not bool(args.no_reports),
+                include_presentations=not bool(args.no_presentations),
+                engines=tuple(args.engine or ["Codex", "Auto (model-router)", "GPT-Pro", "Claude Foundry"]),
+            )
+        )
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "run_id": result.run_id,
+                    "run_dir": str(result.run_dir),
+                    "manifest": str(result.manifest_path),
+                    "report": str(result.report_path),
                 },
                 ensure_ascii=False,
                 indent=2,

@@ -16,6 +16,7 @@ from .agentic_patterns import (
 from .editorial_context import EditorialContextProvider
 from .editorial_memory import EditorialMemoryStore
 from .extractor_adapter import ExtractorAdapter, ExtractorRequest, ExtractorRunResult
+from .langchain_adapter import AulaTeXLLMInterface, AulaTeXLangChainAdapter
 from .llm_bridge import DEFAULT_MAX_TOKENS, LLM_ENGINES, AulaTeXLLMClient, LLMCallResult
 from .template_materializer import MaterializationResult, TemplateMaterializer
 from .workspace import AulaTeXWorkspace
@@ -73,10 +74,10 @@ class AulaTeXAgent:
     def __init__(
         self,
         workspace: AulaTeXWorkspace | None = None,
-        llm_bridge: AulaTeXLLMClient | None = None,
+        llm_bridge: AulaTeXLLMInterface | None = None,
     ) -> None:
         self.workspace = workspace or AulaTeXWorkspace()
-        self.llm = llm_bridge or AulaTeXLLMClient()
+        self.llm = llm_bridge or AulaTeXLangChainAdapter(AulaTeXLLMClient())
         self.editorial_memory = EditorialMemoryStore(self.workspace)
         self.editorial_context = EditorialContextProvider(self.workspace, self.editorial_memory)
         self.template_materializer = TemplateMaterializer(self.workspace)

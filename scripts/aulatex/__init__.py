@@ -11,6 +11,8 @@ from .compilation_diagnostics import ENVIRONMENT_CATEGORIES, classify_compile_fa
 from .compilation_repair import CompilationRepairRequest, CompilationRepairer
 from .editorial_context import EditorialContextProvider
 from .extractor_adapter import ExtractorAdapter, ExtractorRequest
+from .intelligent_engine import IntelligentEngine, IntelligentEngineRequest, IntelligentEngineResult
+from .langchain_adapter import AulaTeXLLMInterface, AulaTeXLangChainAdapter
 from .llm_bridge import LLM_ENGINES, AulaTeXLLMClient
 from .workspace import AulaTeXWorkspace
 
@@ -37,6 +39,11 @@ __all__ = [
     "ExtractorRequest",
     "AgenticStateMachine",
     "EditorialConsensusEngine",
+    "IntelligentEngine",
+    "IntelligentEngineRequest",
+    "IntelligentEngineResult",
     "LLM_ENGINES",
     "AulaTeXLLMClient",
+    "AulaTeXLLMInterface",
+    "AulaTeXLangChainAdapter",
 ]

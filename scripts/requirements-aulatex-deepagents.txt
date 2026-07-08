@@ -1,0 +1,3 @@
+# Dependencia experimental opcional para pruebas agenticas de alto nivel.
+# No se requiere para el backend canonico de AulaTeX basado en LangGraph.
+deepagents

@@ -3,7 +3,14 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal, TypedDict
+
+try:
+    from langgraph.graph import END, START, StateGraph
+except ImportError:  # pragma: no cover - defensive fallback for environments without langgraph
+    END = "__end__"
+    START = "__start__"
+    StateGraph = None
 
 from .activity_revision import ActivityRevisionRequest, ActivityReviser
 from .activity_observer import ActivityObservationRequest, ActivityObserver
@@ -27,6 +34,7 @@ class ActivityMonitorRequest:
     backup_bibliography: bool = True
     backup_revision: bool = True
     stop_on_blocker: bool = True
+    workflow_backend: Literal["langgraph", "classic"] = "langgraph"
 
 
 @dataclass(frozen=True)
@@ -36,6 +44,15 @@ class ActivityMonitorResult:
     ok: bool
     manifest_path: Path
     report_path: Path
+
+
+class MonitorGraphState(TypedDict):
+    cycle_index: int
+    cycles: list[dict[str, Any]]
+    final_ok: bool
+    stop: bool
+    last_next_action: str
+    continue_after_action: bool
 
 
 class ActivityMonitor:
@@ -54,40 +71,21 @@ class ActivityMonitor:
         run_dir = self._resolve_run_dir(request, run_id)
         run_dir.mkdir(parents=True, exist_ok=True)
 
+        if request.workflow_backend == "langgraph" and StateGraph is not None:
+            cycles, final_ok = self._run_langgraph(request, run_dir)
+        else:
+            cycles, final_ok = self._run_classic(request, run_dir)
+
+        return self._finalize_result(request, run_id, run_dir, cycles, final_ok)
+
+    def _run_classic(self, request: ActivityMonitorRequest, run_dir: Path) -> tuple[list[dict[str, Any]], bool]:
         cycles: list[dict[str, Any]] = []
         final_ok = False
 
         for cycle_index in range(1, max(1, int(request.max_cycles)) + 1):
             cycle_dir = run_dir / f"cycle-{cycle_index:02d}"
             cycle_dir.mkdir(parents=True, exist_ok=True)
-            observation = self.observer.observe(
-                ActivityObservationRequest(
-                    target=request.target,
-                    activity_number=request.activity_number,
-                    output=str(cycle_dir / "observe"),
-                    compile_check=bool(request.compile_check),
-                )
-            )
-            state = json.loads(observation.state_path.read_text(encoding="utf-8"))
-            evaluation = json.loads(observation.evaluation_path.read_text(encoding="utf-8"))
-            next_action = str(evaluation.get("next_action") or "")
-            cycle_record: dict[str, Any] = {
-                "cycle": cycle_index,
-                "observation": {
-                    "ok": observation.ok,
-                    "state": self.workspace.relative(observation.state_path),
-                    "evaluation": self.workspace.relative(observation.evaluation_path),
-                    "actions": self.workspace.relative(observation.actions_path),
-                },
-                "score": evaluation.get("score"),
-                "basic_score": evaluation.get("basic_score"),
-                "passed": bool(evaluation.get("passed")),
-                "next_action": next_action,
-                "critical_findings": list(evaluation.get("critical_findings") or []),
-                "contract": evaluation.get("contract", {}),
-                "executed_action": "",
-                "action_result": {},
-            }
+            cycle_record, evaluation = self._observe_cycle(request, cycle_dir, cycle_index)
             cycles.append(cycle_record)
 
             if evaluation.get("passed"):
@@ -102,6 +100,7 @@ class ActivityMonitor:
                         output=str(cycle_dir / "bibliography-repair"),
                         apply=bool(request.apply_bibliography_repair),
                         backup=bool(request.backup_bibliography),
+                        workflow_backend=request.workflow_backend,
                     )
                 )
                 cycle_record["executed_action"] = "bibliography-repair"
@@ -121,6 +120,7 @@ class ActivityMonitor:
                         output=str(cycle_dir / "activity-revision"),
                         apply=bool(request.apply_revision_patches),
                         backup=bool(request.backup_revision),
+                        workflow_backend=request.workflow_backend,
                     )
                 )
                 cycle_record["executed_action"] = "revise-activity"
@@ -187,9 +187,249 @@ class ActivityMonitor:
             if request.stop_on_blocker:
                 break
 
+        return cycles, final_ok
+
+    def _run_langgraph(self, request: ActivityMonitorRequest, run_dir: Path) -> tuple[list[dict[str, Any]], bool]:
+        if StateGraph is None:
+            return self._run_classic(request, run_dir)
+
+        def observe(state: MonitorGraphState) -> dict[str, Any]:
+            cycle_index = int(state["cycle_index"])
+            cycle_dir = run_dir / f"cycle-{cycle_index:02d}"
+            cycle_dir.mkdir(parents=True, exist_ok=True)
+            cycle_record, evaluation = self._observe_cycle(request, cycle_dir, cycle_index)
+            cycles = [*state["cycles"], cycle_record]
+            return {
+                "cycles": cycles,
+                "final_ok": bool(evaluation.get("passed")),
+                "last_next_action": str(evaluation.get("next_action") or ""),
+                "continue_after_action": False,
+                "stop": False,
+            }
+
+        def route_after_observe(state: MonitorGraphState) -> str:
+            if state["final_ok"]:
+                return "end"
+            action = state["last_next_action"]
+            if action == "repair-bibliography":
+                return "repair_bibliography"
+            if action == "revise-activity":
+                return "revise_activity"
+            if action == "run-extractor":
+                return "run_extractor" if request.run_extractor else ("advance" if not request.stop_on_blocker else "stop")
+            if action == "repair-compilation":
+                return "repair_compilation"
+            return "advance" if not request.stop_on_blocker else "stop"
+
+        def repair_bibliography(state: MonitorGraphState) -> dict[str, Any]:
+            cycle_dir = run_dir / f"cycle-{int(state['cycle_index']):02d}"
+            cycle_record = dict(state["cycles"][-1])
+            repair_result = self.repairer.repair(
+                BibliographyRepairRequest(
+                    target=request.target,
+                    activity_number=request.activity_number,
+                    output=str(cycle_dir / "bibliography-repair"),
+                    apply=bool(request.apply_bibliography_repair),
+                    backup=bool(request.backup_bibliography),
+                    workflow_backend=request.workflow_backend,
+                )
+            )
+            cycle_record["executed_action"] = "bibliography-repair"
+            cycle_record["action_result"] = {
+                "ok": repair_result.ok,
+                "plan": self.workspace.relative(repair_result.plan_path),
+                "report": self.workspace.relative(repair_result.report_path),
+                "patched_tex": self.workspace.relative(repair_result.patched_tex_path) if repair_result.patched_tex_path else "",
+            }
+            return {
+                "cycles": self._replace_last_cycle(state["cycles"], cycle_record),
+                "continue_after_action": True,
+            }
+
+        def revise_activity(state: MonitorGraphState) -> dict[str, Any]:
+            cycle_dir = run_dir / f"cycle-{int(state['cycle_index']):02d}"
+            cycle_record = dict(state["cycles"][-1])
+            revision_result = self.reviser.revise(
+                ActivityRevisionRequest(
+                    target=request.target,
+                    activity_number=request.activity_number,
+                    output=str(cycle_dir / "activity-revision"),
+                    apply=bool(request.apply_revision_patches),
+                    backup=bool(request.backup_revision),
+                    workflow_backend=request.workflow_backend,
+                )
+            )
+            cycle_record["executed_action"] = "revise-activity"
+            cycle_record["action_result"] = {
+                "ok": revision_result.ok,
+                "plan": self.workspace.relative(revision_result.plan_path),
+                "report": self.workspace.relative(revision_result.report_path),
+                "patched_tex": self.workspace.relative(revision_result.patched_tex_path) if revision_result.patched_tex_path else "",
+            }
+            can_continue = (revision_result.patched_tex_path is not None) or (not request.stop_on_blocker)
+            return {
+                "cycles": self._replace_last_cycle(state["cycles"], cycle_record),
+                "continue_after_action": can_continue,
+            }
+
+        def run_extractor(state: MonitorGraphState) -> dict[str, Any]:
+            cycle_record = dict(state["cycles"][-1])
+            extractor_result = None
+            extractor_attempts: list[dict[str, Any]] = []
+            for motor in self._extractor_motors(request):
+                attempt = self.extractor.run(
+                    ExtractorRequest(
+                        target=request.target,
+                        activity_number=request.activity_number,
+                        motor=motor,
+                    )
+                )
+                extractor_attempts.append(self._extractor_result_payload(attempt, motor))
+                if attempt.ok:
+                    extractor_result = attempt
+                    break
+            cycle_record["executed_action"] = "run-extractor"
+            cycle_record["action_result"] = {
+                "ok": bool(extractor_result.ok) if extractor_result is not None else False,
+                "selected_motor": extractor_result_payload.get("motor", "") if (extractor_result_payload := (extractor_attempts[-1] if extractor_attempts else {})) else "",
+                "attempts": extractor_attempts,
+            }
+            can_continue = (extractor_result is not None and extractor_result.ok) or (not request.stop_on_blocker)
+            return {
+                "cycles": self._replace_last_cycle(state["cycles"], cycle_record),
+                "continue_after_action": can_continue,
+            }
+
+        def repair_compilation(state: MonitorGraphState) -> dict[str, Any]:
+            cycle_dir = run_dir / f"cycle-{int(state['cycle_index']):02d}"
+            cycle_record = dict(state["cycles"][-1])
+            compilation_result = self.compilation_repairer.repair(
+                CompilationRepairRequest(
+                    target=request.target,
+                    activity_number=request.activity_number,
+                    output=str(cycle_dir / "compilation-repair"),
+                )
+            )
+            classification = json.loads(compilation_result.plan_path.read_text(encoding="utf-8")).get("classification", "")
+            cycle_record["executed_action"] = "repair-compilation"
+            cycle_record["action_result"] = {
+                "ok": compilation_result.ok,
+                "classification": classification,
+                "plan": self.workspace.relative(compilation_result.plan_path),
+                "report": self.workspace.relative(compilation_result.report_path),
+            }
+            can_continue = bool(compilation_result.ok or classification == "environment" or not request.stop_on_blocker)
+            return {
+                "cycles": self._replace_last_cycle(state["cycles"], cycle_record),
+                "continue_after_action": can_continue,
+            }
+
+        def stop(state: MonitorGraphState) -> dict[str, Any]:
+            return {"stop": True, "continue_after_action": False}
+
+        def advance(state: MonitorGraphState) -> dict[str, Any]:
+            if not state["continue_after_action"]:
+                return {"stop": True}
+            if int(state["cycle_index"]) >= max(1, int(request.max_cycles)):
+                return {"stop": True}
+            return {"cycle_index": int(state["cycle_index"]) + 1, "stop": False}
+
+        def route_after_advance(state: MonitorGraphState) -> str:
+            return "end" if state["stop"] else "observe"
+
+        graph = StateGraph(MonitorGraphState)
+        graph.add_node("observe", observe)
+        graph.add_node("repair_bibliography", repair_bibliography)
+        graph.add_node("revise_activity", revise_activity)
+        graph.add_node("run_extractor", run_extractor)
+        graph.add_node("repair_compilation", repair_compilation)
+        graph.add_node("stop", stop)
+        graph.add_node("advance", advance)
+        graph.add_edge(START, "observe")
+        graph.add_conditional_edges(
+            "observe",
+            route_after_observe,
+            {
+                "repair_bibliography": "repair_bibliography",
+                "revise_activity": "revise_activity",
+                "run_extractor": "run_extractor",
+                "repair_compilation": "repair_compilation",
+                "advance": "advance",
+                "stop": "stop",
+                "end": END,
+            },
+        )
+        graph.add_edge("repair_bibliography", "advance")
+        graph.add_edge("revise_activity", "advance")
+        graph.add_edge("run_extractor", "advance")
+        graph.add_edge("repair_compilation", "advance")
+        graph.add_edge("stop", END)
+        graph.add_conditional_edges("advance", route_after_advance, {"observe": "observe", "end": END})
+
+        app = graph.compile()
+        result = app.invoke(
+            {
+                "cycle_index": 1,
+                "cycles": [],
+                "final_ok": False,
+                "stop": False,
+                "last_next_action": "",
+                "continue_after_action": False,
+            }
+        )
+        return list(result["cycles"]), bool(result["final_ok"])
+
+    def _observe_cycle(
+        self,
+        request: ActivityMonitorRequest,
+        cycle_dir: Path,
+        cycle_index: int,
+    ) -> tuple[dict[str, Any], dict[str, Any]]:
+        observation = self.observer.observe(
+            ActivityObservationRequest(
+                target=request.target,
+                activity_number=request.activity_number,
+                output=str(cycle_dir / "observe"),
+                compile_check=bool(request.compile_check),
+            )
+        )
+        evaluation = json.loads(observation.evaluation_path.read_text(encoding="utf-8"))
+        cycle_record: dict[str, Any] = {
+            "cycle": cycle_index,
+            "observation": {
+                "ok": observation.ok,
+                "state": self.workspace.relative(observation.state_path),
+                "evaluation": self.workspace.relative(observation.evaluation_path),
+                "actions": self.workspace.relative(observation.actions_path),
+            },
+            "score": evaluation.get("score"),
+            "basic_score": evaluation.get("basic_score"),
+            "passed": bool(evaluation.get("passed")),
+            "next_action": str(evaluation.get("next_action") or ""),
+            "critical_findings": list(evaluation.get("critical_findings") or []),
+            "contract": evaluation.get("contract", {}),
+            "executed_action": "",
+            "action_result": {},
+        }
+        return cycle_record, evaluation
+
+    def _replace_last_cycle(self, cycles: list[dict[str, Any]], cycle_record: dict[str, Any]) -> list[dict[str, Any]]:
+        if not cycles:
+            return [cycle_record]
+        return [*cycles[:-1], cycle_record]
+
+    def _finalize_result(
+        self,
+        request: ActivityMonitorRequest,
+        run_id: str,
+        run_dir: Path,
+        cycles: list[dict[str, Any]],
+        final_ok: bool,
+    ) -> ActivityMonitorResult:
         manifest = {
             "run_id": run_id,
             "kind": "activity-monitor",
+            "workflow_backend": request.workflow_backend if StateGraph is not None else "classic",
             "target": self.workspace.relative(self.workspace.resolve_target(request.target)),
             "activity_number": int(request.activity_number),
             "max_cycles": int(request.max_cycles),
@@ -235,6 +475,7 @@ class ActivityMonitor:
             f"- Objetivo: {manifest['target']}",
             f"- Actividad: {manifest['activity_number']}",
             f"- Ciclos máximos: {manifest['max_cycles']}",
+            f"- Backend: {manifest.get('workflow_backend', 'classic')}",
             f"- Estado final: {'PASS' if manifest['ok'] else 'PENDIENTE'}",
             "",
             "## Ciclos",

@@ -57,8 +57,14 @@ class AulaTeXLLMConfig:
         api_key = _env(f"{prefix}_API_KEY")
         deployment = _env(f"{prefix}_CHAT_DEPLOYMENT")
         api_version = _env(f"{prefix}_API_VERSION", "2023-06-01")
-        timeout_seconds = _env_int("AULATEX_LLM_VALIDATION_TIMEOUT", _env_int("TB_BOOKS_LLM_VALIDATION_TIMEOUT", DEFAULT_TIMEOUT_SECONDS))
-        max_tokens = _env_int("AULATEX_LLM_VALIDATION_MAX_TOKENS", _env_int("TB_BOOKS_LLM_VALIDATION_MAX_TOKENS", DEFAULT_MAX_TOKENS))
+        timeout_seconds = _env_int(
+            "AULATEX_LLM_TIMEOUT_SECONDS",
+            _env_int("AULATEX_LLM_VALIDATION_TIMEOUT", _env_int("TB_BOOKS_LLM_VALIDATION_TIMEOUT", DEFAULT_TIMEOUT_SECONDS)),
+        )
+        max_tokens = _env_int(
+            "AULATEX_LLM_MAX_TOKENS",
+            _env_int("AULATEX_LLM_VALIDATION_MAX_TOKENS", _env_int("TB_BOOKS_LLM_VALIDATION_MAX_TOKENS", DEFAULT_MAX_TOKENS)),
+        )
         temperature = _env_float(
             "AULATEX_LLM_VALIDATION_TEMPERATURE",
             _env_float("TB_BOOKS_LLM_VALIDATION_TEMPERATURE", 0.0),
@@ -517,6 +523,8 @@ def _max_token_attempts(max_tokens: int) -> list[int]:
 
 
 def _should_retry_with_lower_max_tokens(exc: Exception) -> bool:
+    if _requests is not None and isinstance(exc, _requests.Timeout):
+        return True
     if _requests is None or not isinstance(exc, _requests.HTTPError):
         return False
     response = exc.response

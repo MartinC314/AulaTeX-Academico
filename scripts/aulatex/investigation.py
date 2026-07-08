@@ -18,6 +18,7 @@ except ModuleNotFoundError:
 
 from .config import diagnostic_metrics_enabled
 from .editorial_memory import ENGINE_PRIORITY, EditorialMemoryStore
+from .langchain_adapter import AulaTeXLLMInterface, AulaTeXLangChainAdapter
 from .llm_bridge import DEFAULT_MAX_TOKENS
 from .llm_bridge import LLM_ENGINES, AulaTeXLLMClient
 from .workspace import AulaTeXWorkspace, EditorialScope
@@ -339,12 +340,12 @@ class InvestigationBuilder:
     def __init__(
         self,
         workspace: AulaTeXWorkspace | None = None,
-        llm_bridge: AulaTeXLLMClient | None = None,
+        llm_bridge: AulaTeXLLMInterface | None = None,
         store: InvestigationStore | None = None,
         editorial_store: EditorialMemoryStore | None = None,
     ) -> None:
         self.workspace = workspace or AulaTeXWorkspace()
-        self.llm = llm_bridge or AulaTeXLLMClient()
+        self.llm = llm_bridge or AulaTeXLangChainAdapter(AulaTeXLLMClient())
         self.store = store or InvestigationStore(self.workspace)
         self.editorial_store = editorial_store or EditorialMemoryStore(self.workspace)
 
