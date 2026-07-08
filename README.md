@@ -322,48 +322,17 @@ CODEX_API_VERSION=2026-02-24
 ## Endpoints
 
 ```json
-[
-  {
-    "name": "Copilot",
-    "vendor": "copilot",
-    "settings": {
-      "gpt-5.2-codex": {
-        "reasoningEffort": "xhigh"
-      },
-      "gpt-5-mini": {
-        "reasoningEffort": "low"
-      }
-    }
-  },
-  {
-    "name": "chatVsc",
-    "vendor": "azure",
-    "apiKey": "${input:chat.lm.secret.2ba0532c}",
-    "models": []
-  },
-  {
-    "name": "upap",
-    "vendor": "azure",
-    "apiKey": "${input:chat.lm.secret.490d3260}",
-    "models": [
       {
         "id": "gpt-5.4-pro",
         "name": "gpt-5.4-pro",
         "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
-        "toolCalling": true,
-        "vision": true,
         "maxInputTokens": 922000,
         "maxOutputTokens": 128000,
-        "reasoning": {
-          "effort": "xhigh"
-        }
       },
       {
         "id": "model-router",
         "name": "model-router",
         "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
-        "toolCalling": true,
-        "vision": true,
         "maxInputTokens": 1015808,
         "maxOutputTokens": 32768
       },
@@ -371,8 +340,6 @@ CODEX_API_VERSION=2026-02-24
         "id": "Mistral-Large-3",
         "name": "Mistral-Large-3",
         "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
-        "toolCalling": true,
-        "vision": true,
         "maxInputTokens": 126976,
         "maxOutputTokens": 4096
       },
@@ -380,27 +347,13 @@ CODEX_API_VERSION=2026-02-24
         "id": "gpt-chat-latest",
         "name": "gpt-chat-latest",
         "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
-        "toolCalling": true,
-        "vision": true,
         "maxInputTokens": 72000,
         "maxOutputTokens": 128000,
-        "reasoning": {
-          "effort": "xhigh"
-        }
-      }
-    ]
-  },
-  {
-    "name": "upapeastus",
-    "vendor": "azure",
-    "apiKey": "${input:chat.lm.secret.3b0f7701}",
-    "models": [
+      },
       {
         "id": "DeepSeek-V4-Pro",
         "name": "DeepSeek-V4-Pro",
         "url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/chat/completions",
-        "toolCalling": true,
-        "vision": true,
         "maxInputTokens": 872000,
         "maxOutputTokens": 128000
       },
@@ -408,37 +361,33 @@ CODEX_API_VERSION=2026-02-24
         "id": "gpt-5.3-codex",
         "name": "gpt-5.3-codex",
         "url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/responses",
-        "toolCalling": true,
-        "vision": true,
         "maxInputTokens": 272000,
         "maxOutputTokens": 128000,
-        "reasoning": {
-          "effort": "xhigh"
-        }
       }
-    ]
-  }
-]
 ```
 
 ## Límites de tokens y tiempo de espera
 
-Los límites siguientes corresponden a los deployments configurados para AulaTeX y a la documentación oficial revisada el 2026-07-07. Estos valores describen la capacidad máxima por solicitud; no sustituyen las cuotas de uso de la suscripción, como TPM, RPM o rate limits regionales.
+Los valores siguientes consolidan la configuración actual de AulaTeX con la documentación oficial revisada el 2026-07-08. Describen la capacidad máxima por solicitud; no sustituyen cuotas de suscripción como TPM, RPM o rate limits regionales.
 
-| Motor AulaTeX | Deployment | Entrada/contexto oficial | Salida oficial | Observación operativa |
-| --- | --- | ---: | ---: | --- |
-| `Codex` | `gpt-5.3-codex` | `400,000` de contexto; desglose `272,000` entrada + `128,000` salida | `128,000` | El tope local anterior de `200,000` tokens de salida no corresponde al límite oficial del modelo. |
-| `Auto (model-router)` | `model-router` | `200,000` de contexto | Variable según el modelo enrutado: `16,384`, `32,768`, `100,000` o `128,000` | La ruta elegida por el router puede cambiar el límite efectivo de salida y provocar rechazos en prompts cercanos al máximo. |
-| `GPT-Pro` | `gpt-5.4-pro` | `1,050,000` de contexto | `128,000` | El valor de `~150k` usado antes era un margen conservador, no un límite oficial. |
-| `Claude Foundry` | `claude-opus-4-8` | `1,000,000` de contexto | `128,000` | Puede verse limitado por rate limits de la suscripción, región o proveedor. |
+Validación contra configuración local y documentación oficial:
 
-Los parámetros internos de AulaTeX, como `MaxTokens` y `AULATEX_MAX_OUTPUT_TOKENS_*`, son topes operativos del pipeline. Sirven para estabilizar la ejecución local, pero no modifican los límites reales del proveedor.
+| Motor AulaTeX | Deployment real | Límite oficial de entrada/contexto | Límite oficial de salida | Veredicto sobre tus datos |
+|---|---:|---:|---:|---|
+| `Codex` | `gpt-5.3-codex` | Contexto `400,000`; desglose oficial: `Input: 272,000`, `Output: 128,000` | `128,000` | Tu `salida 200k / entrada ~500k` no queda validado oficialmente. En el repo hay cap operativo de salida `200k`, pero el modelo oficial marca `128k`. |
+| `Auto (model-router)` | `model-router` | Contexto oficial `200,000` | Variable según modelo enrutado: ejemplos oficiales `16,384`, `32,768`, `100,000`, `128,000` | Tu `salida 128k / entrada ~500k` no es exacto. Lo exacto es contexto `200k`; salida no es fija. |
+| `GPT-Pro` | `gpt-5.4-pro` | Contexto oficial `1,050,000` | `128,000` | Tu `salida 200k / entrada ~150k` está desactualizado: salida oficial es `128k`; entrada/contexto oficial es mucho mayor que `150k`. |
+| `Claude Foundry` | `claude-opus-4-8` | Context window `1,000,000` | `128,000 max tokens` | Ya queda confirmado: entrada `1M`, salida `128k`. |
 
-Configuración segura recomendada para salidas largas:
+Notas clave:
 
-- `AULATEX_MAX_OUTPUT_TOKENS_CODEX=128000`
-- `AULATEX_MAX_OUTPUT_TOKENS_MODEL_ROUTER=128000` si se acepta variabilidad; `16384` si se requiere compatibilidad transversal.
-- `AULATEX_MAX_OUTPUT_TOKENS_GPT_PRO=128000`
-- `AULATEX_MAX_OUTPUT_TOKENS_ANTHROPIC_FOUNDRY=128000`
+- Los valores en prueeba-lote-ejecucion-1.ps1 son **topes operativos de AulaTeX**, no límites exactos del proveedor.
+- El bridge en llm_bridge.py además normaliza a máximo `200,000` y reintenta con valores menores si recibe error HTTP 400 por tokens.
+- Conviene ajustar la configuración operativa a estos valores seguros:
+  - `CodexMaxOutputTokens = 128000`
+  - `ModelRouterMaxOutputTokens = 128000` solo si aceptas que puede fallar/rutear distinto; seguro transversal: `16384`
+  - `GptProMaxOutputTokens = 128000`
+  - `ClaudeMaxOutputTokens = 128000`
+  - `ModelRouterDnaPromptChars` debe bajarse: su contexto oficial es `200k tokens`, no `500k+`.
 
-Para prompts largos con `model-router`, mantener `ModelRouterDnaPromptChars` por debajo del contexto oficial de `200,000` tokens. No debe tratarse como un backend de `500k+` tokens.
+Resumen: validé los deployments reales configurados y los límites oficiales. Los únicos valores confirmados exactos son: `Codex/gpt-5.3-codex = 272k entrada + 128k salida`, `model-router = 200k contexto y salida variable`, `GPT-Pro/gpt-5.4-pro = 1.05M contexto + 128k salida`, `Claude Opus 4.8 = 1M contexto + 128k salida`.
