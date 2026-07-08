@@ -83790,3 +83790,4706 @@
   "cancelled": false
 }
 ```
+
+## 20260707-185938-activity-01-observer - activity-observer
+
+```json
+{
+  "run_id": "20260707-185938-activity-01-observer",
+  "kind": "activity-observer",
+  "target": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde",
+  "activity_number": 1,
+  "ok": true,
+  "state": "retroalimentacion-editorial/aulatex/activity-monitor/runs/20260707-185937-activity-01-monitor/cycle-01/observe/20260707-185938-activity-01-observer/estado-agente.json",
+  "evaluation": "retroalimentacion-editorial/aulatex/activity-monitor/runs/20260707-185937-activity-01-monitor/cycle-01/observe/20260707-185938-activity-01-observer/evaluacion.json",
+  "actions": "retroalimentacion-editorial/aulatex/activity-monitor/runs/20260707-185937-activity-01-monitor/cycle-01/observe/20260707-185938-activity-01-observer/acciones-recomendadas.md"
+}
+```
+
+## 20260707-185937-activity-01-monitor - activity-monitor
+
+```json
+{
+  "run_id": "20260707-185937-activity-01-monitor",
+  "kind": "activity-monitor",
+  "workflow_backend": "langgraph",
+  "target": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde",
+  "activity_number": 1,
+  "max_cycles": 1,
+  "compile_check": false,
+  "run_extractor": false,
+  "extractor_motors": [
+    "anthropicfoundry",
+    "tfidf"
+  ],
+  "apply_bibliography_repair": false,
+  "apply_revision_patches": true,
+  "ok": true,
+  "cycles": [
+    {
+      "cycle": 1,
+      "observation": {
+        "ok": true,
+        "state": "retroalimentacion-editorial/aulatex/activity-monitor/runs/20260707-185937-activity-01-monitor/cycle-01/observe/20260707-185938-activity-01-observer/estado-agente.json",
+        "evaluation": "retroalimentacion-editorial/aulatex/activity-monitor/runs/20260707-185937-activity-01-monitor/cycle-01/observe/20260707-185938-activity-01-observer/evaluacion.json",
+        "actions": "retroalimentacion-editorial/aulatex/activity-monitor/runs/20260707-185937-activity-01-monitor/cycle-01/observe/20260707-185938-activity-01-observer/acciones-recomendadas.md"
+      },
+      "score": 100.0,
+      "basic_score": 100.0,
+      "passed": true,
+      "next_action": "finalize",
+      "critical_findings": [],
+      "contract": {
+        "score": 100.0,
+        "passed": true,
+        "required_hits": 8,
+        "required_total": 8,
+        "checks": {
+          "objective": true,
+          "instruction_source": true,
+          "didactic_technique": true,
+          "output_format": true,
+          "bibliography": true,
+          "traceability": true,
+          "evaluation_criteria": true,
+          "final_reflection": true,
+          "sections_range": true,
+          "concepts_min": true
+        },
+        "required_checks": {
+          "objective": true,
+          "instruction_source": true,
+          "didactic_technique": true,
+          "output_format": true,
+          "bibliography": true,
+          "traceability": true,
+          "evaluation_criteria": true,
+          "final_reflection": true
+        },
+        "range_checks": {
+          "sections_range": true,
+          "concepts_min": true
+        },
+        "findings": [],
+        "contract": {
+          "required": {
+            "objective": true,
+            "instruction_source": true,
+            "didactic_technique": true,
+            "output_format": true,
+            "bibliography": true,
+            "traceability": true,
+            "evaluation_criteria": true,
+            "final_reflection": true
+          },
+          "acceptable_ranges": {
+            "sections_min": 3,
+            "sections_max": 8,
+            "bibliography_entries_min": 3,
+            "concepts_min": 5
+          }
+        }
+      },
+      "executed_action": "",
+      "action_result": {}
+    }
+  ]
+}
+```
+
+## 20260707-200957-activity-01-observer - activity-observer
+
+```json
+{
+  "run_id": "20260707-200957-activity-01-observer",
+  "kind": "activity-observer",
+  "target": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde",
+  "activity_number": 1,
+  "ok": true,
+  "state": "retroalimentacion-editorial/aulatex/activity-revision/runs/20260707-200957-activity-01-revision/obs/20260707-200957-activity-01-observer/estado-agente.json",
+  "evaluation": "retroalimentacion-editorial/aulatex/activity-revision/runs/20260707-200957-activity-01-revision/obs/20260707-200957-activity-01-observer/evaluacion.json",
+  "actions": "retroalimentacion-editorial/aulatex/activity-revision/runs/20260707-200957-activity-01-revision/obs/20260707-200957-activity-01-observer/acciones-recomendadas.md"
+}
+```
+
+## 20260707-200957-activity-01-revision - activity-revision
+
+```json
+{
+  "run_id": "20260707-200957-activity-01-revision",
+  "workflow_backend": "langgraph",
+  "target": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/reporte-filosofia-del-derecho-Actividad-1.tex",
+  "activity_number": 1,
+  "next_action": "finalize",
+  "revision_targets": [
+    {
+      "action": "revision-manual",
+      "reason": "La actividad requiere revisión editorial fina, no una corrección determinística segura."
+    }
+  ],
+  "applied_actions": [],
+  "apply": false,
+  "findings": [],
+  "observation": "retroalimentacion-editorial/aulatex/activity-revision/runs/20260707-200957-activity-01-revision/obs/20260707-200957-activity-01-observer/estado-agente.json",
+  "evaluation": "retroalimentacion-editorial/aulatex/activity-revision/runs/20260707-200957-activity-01-revision/obs/20260707-200957-activity-01-observer/evaluacion.json",
+  "patched_tex": ""
+}
+```
+
+## 20260707-201003-activity-01-observer - activity-observer
+
+```json
+{
+  "run_id": "20260707-201003-activity-01-observer",
+  "kind": "activity-observer",
+  "target": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde",
+  "activity_number": 1,
+  "ok": true,
+  "state": "retroalimentacion-editorial/aulatex/bibliography-repair/runs/20260707-201003-activity-01-bib-repair/observer/20260707-201003-activity-01-observer/estado-agente.json",
+  "evaluation": "retroalimentacion-editorial/aulatex/bibliography-repair/runs/20260707-201003-activity-01-bib-repair/observer/20260707-201003-activity-01-observer/evaluacion.json",
+  "actions": "retroalimentacion-editorial/aulatex/bibliography-repair/runs/20260707-201003-activity-01-bib-repair/observer/20260707-201003-activity-01-observer/acciones-recomendadas.md"
+}
+```
+
+## 20260707-201003-activity-01-bib-repair - bibliography-repair
+
+```json
+{
+  "run_id": "20260707-201003-activity-01-bib-repair",
+  "workflow_backend": "langgraph",
+  "target_tex": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/reporte-filosofia-del-derecho-Actividad-1.tex",
+  "bib_ref": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/filosofia-del-derecho.bib",
+  "apply": false,
+  "backup": true,
+  "changed": false,
+  "missing_keys": [],
+  "replacements": [],
+  "actionable_count": 0,
+  "unresolved_count": 0,
+  "observation": "retroalimentacion-editorial/aulatex/bibliography-repair/runs/20260707-201003-activity-01-bib-repair/observer/20260707-201003-activity-01-observer/estado-agente.json",
+  "patched_preview": "retroalimentacion-editorial/aulatex/bibliography-repair/runs/20260707-201003-activity-01-bib-repair/reporte-filosofia-del-derecho-Actividad-1.tex",
+  "ok": false
+}
+```
+
+## 20260707-205617 - generar-plantilla
+
+```json
+{
+  "run_id": "20260707-205617",
+  "target": ".",
+  "display_target": ".",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "cycle_mode": "full",
+  "requested_iterations": 1,
+  "expanded_task_count": 5,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar-ciclo-001",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "investigar-ciclo-001",
+      "role": "Investigador documental",
+      "mission": "detectar fuentes, contexto curricular y faltantes editoriales | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "generar-ciclo-001",
+      "role": "Arquitecto de plantillas",
+      "mission": "proponer estructura de reporte/presentacion y actividad | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "validar-ciclo-001",
+      "role": "Verificador y validador",
+      "mission": "verificar consistencia, compilacion y evidencias | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "criticar-ciclo-001",
+      "role": "Critico adversarial",
+      "mission": "encontrar fallas antes de aplicar cambios | ciclo intensivo 1/1",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "base/entradas/main - copia.tex",
+      "ok": false,
+      "returncode": 12,
+      "stdout_tail": "/tex/latex/lm/ts1lmr.fd) [1.1{c:/texlive/2026/texmf-\nvar/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dv\nips/lm/lm-ec.enc} <c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla\n-Informe/img/departamentos/fcfm.pdf>] [1.2] (.build/latex/aux/main - copia.toc)\n[2.3]\n(c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/e\nxample.tex [1.4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:\n/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-di\nst/fonts/enc/dvips/lm/lm-mathsy.enc} <c:/Users/delaCruz/Documents/AulaTeX-Acade\nmico/base/Plantilla-Informe/img/ejemplos/test-image.png>] [2.5{c:/texlive/2026/\ntexmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <c:/Users/delaCruz/Documents/AulaT\neX-Academico/base/Plantilla-Informe/img/ejemplos/test-image-wrap.jpg>] [3.6]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty) [4.7]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty) [5.8] [6.9]\n(.build/latex/aux/main - copia.bbl) [7.10]\n\nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311: LaTeX Error: Key 'BKM/numbered' accepts boolean values only.\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.311 \\end{appendixd}\n                     \nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on \".build/latex/aux/main - copia.log\".\nLatexmk: Getting log file '.build/latex/aux/main - copia.log'\nLatexmk: Examining '.build/latex/aux/main - copia.fls'\nLatexmk: Examining '.build/latex/aux/main - copia.log'\nLatexmk: Found input bbl file '.build/latex/aux/main - copia.bbl'\n  ===Source file '.build/latex/aux/main - copia.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/library.bib\nLatexmk: Errors, in force_mode: so I tried finishing targets\nCollected error summary (may duplicate other messages):\n  pdflatex: Command for 'pdflatex' gave return code 1\n      Refer to '.build/latex/aux/main - copia.log' and/or above output for details\n\n",
+      "stderr_tail": "Latexmk: Missing input file 'main - copia.toc' message in .log file:\n  No file \"main - copia\".toc.\nLatexmk: Missing bbl file '.build/latex/aux/main - copia.bbl' in following:\n No file \"main - copia\".bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nFailure to make '.build/latex/main - copia.pdf'\nC:\\texlive\\2026\\bin\\windows\\runscript.tlu:933: command failed with exit code 12:\nperl.exe c:\\texlive\\2026\\texmf-dist\\scripts\\latexmk\\latexmk.pl -f -pdf -interaction=nonstopmode -file-line-error  \"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\base\\entradas\\main - copia.tex\"\n"
+    }
+  ],
+  "extractor": {
+    "enabled": false
+  },
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": ".",
+    "artifacts": [
+      "referencias-AulaTeX-Academico",
+      "planeaciones-AulaTeX-Academico",
+      "assets-AulaTeX-Academico",
+      "README.md",
+      "COMPILACION-AulaTeX-Academico.md",
+      "programa-analitico-AulaTeX-Academico.md",
+      "AulaTeX-Academico.bib",
+      "reporte-AulaTeX-Academico.tex",
+      "reporte-AulaTeX-Academico-Actividad-1.tex",
+      "presentacion-AulaTeX-Academico.tex",
+      "presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: README.md",
+      "Materializado: COMPILACION-AulaTeX-Academico.md",
+      "Materializado: programa-analitico-AulaTeX-Academico.md",
+      "Materializado: AulaTeX-Academico.bib",
+      "Materializado: reporte-AulaTeX-Academico.tex",
+      "Materializado: reporte-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: presentacion-AulaTeX-Academico.tex",
+      "Materializado: presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0,
+      "Investigador documental": 0.0,
+      "Arquitecto de plantillas": 0.0,
+      "Verificador y validador": 0.0,
+      "Critico adversarial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex, Codex, Codex, Codex, Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-07 20:56:17",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-07 20:56:19",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar-ciclo-001: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 20:56:59",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 20:56:59",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-07 20:56:59",
+      "state": "planned",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "investigar-ciclo-001: Investigador documental via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 20:57:33",
+      "state": "planned",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "investigar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 20:57:33",
+      "state": "researched",
+      "action": "planned->researched",
+      "status": "ok",
+      "detail": "diagnostico documental producido"
+    },
+    {
+      "timestamp": "2026-07-07 20:57:33",
+      "state": "researched",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "generar-ciclo-001: Arquitecto de plantillas via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 20:58:09",
+      "state": "researched",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "generar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 20:58:09",
+      "state": "generated",
+      "action": "researched->generated",
+      "status": "ok",
+      "detail": "propuesta editorial producida"
+    },
+    {
+      "timestamp": "2026-07-07 20:58:09",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "validar-ciclo-001: Verificador y validador via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 20:58:46",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "validar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 20:58:46",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "criticar-ciclo-001: Critico adversarial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 20:59:21",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "criticar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 20:59:21",
+      "state": "generated",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-07-07 20:59:21",
+      "state": "generated",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "12 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-07-07 20:59:21",
+      "state": "generated",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-07-07 21:01:16",
+      "state": "generated",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "base/entradas/main - copia.tex rc=12"
+    },
+    {
+      "timestamp": "2026-07-07 21:01:16",
+      "state": "compiled",
+      "action": "generated->compiled",
+      "status": "ok",
+      "detail": "compilacion latexmk ejecutada"
+    },
+    {
+      "timestamp": "2026-07-07 21:01:16",
+      "state": "compiled",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-07 21:01:16",
+      "state": "evaluated",
+      "action": "compiled->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-07 21:01:16",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}
+```
+
+## 20260707-211005 - generar-plantilla
+
+```json
+{
+  "run_id": "20260707-211005",
+  "target": ".",
+  "display_target": ".",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "cycle_mode": "full",
+  "requested_iterations": 1,
+  "expanded_task_count": 5,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar-ciclo-001",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "investigar-ciclo-001",
+      "role": "Investigador documental",
+      "mission": "detectar fuentes, contexto curricular y faltantes editoriales | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "generar-ciclo-001",
+      "role": "Arquitecto de plantillas",
+      "mission": "proponer estructura de reporte/presentacion y actividad | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "validar-ciclo-001",
+      "role": "Verificador y validador",
+      "mission": "verificar consistencia, compilacion y evidencias | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "criticar-ciclo-001",
+      "role": "Critico adversarial",
+      "mission": "encontrar fallas antes de aplicar cambios | ciclo intensivo 1/1",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "base/entradas/main - copia.tex",
+      "ok": false,
+      "returncode": 12,
+      "stdout_tail": "/tex/latex/lm/ts1lmr.fd) [1.1{c:/texlive/2026/texmf-\nvar/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dv\nips/lm/lm-ec.enc} <c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla\n-Informe/img/departamentos/fcfm.pdf>] [1.2] (.build/latex/aux/main - copia.toc)\n[2.3]\n(c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/e\nxample.tex [1.4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:\n/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-di\nst/fonts/enc/dvips/lm/lm-mathsy.enc} <c:/Users/delaCruz/Documents/AulaTeX-Acade\nmico/base/Plantilla-Informe/img/ejemplos/test-image.png>] [2.5{c:/texlive/2026/\ntexmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <c:/Users/delaCruz/Documents/AulaT\neX-Academico/base/Plantilla-Informe/img/ejemplos/test-image-wrap.jpg>] [3.6]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty) [4.7]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty) [5.8] [6.9]\n(.build/latex/aux/main - copia.bbl) [7.10]\n\nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311: LaTeX Error: Key 'BKM/numbered' accepts boolean values only.\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.311 \\end{appendixd}\n                     \nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on \".build/latex/aux/main - copia.log\".\nLatexmk: Getting log file '.build/latex/aux/main - copia.log'\nLatexmk: Examining '.build/latex/aux/main - copia.fls'\nLatexmk: Examining '.build/latex/aux/main - copia.log'\nLatexmk: Found input bbl file '.build/latex/aux/main - copia.bbl'\n  ===Source file '.build/latex/aux/main - copia.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/library.bib\nLatexmk: Errors, in force_mode: so I tried finishing targets\nCollected error summary (may duplicate other messages):\n  pdflatex: Command for 'pdflatex' gave return code 1\n      Refer to '.build/latex/aux/main - copia.log' and/or above output for details\n\n",
+      "stderr_tail": "Latexmk: Missing input file 'main - copia.toc' message in .log file:\n  No file \"main - copia\".toc.\nLatexmk: Missing bbl file '.build/latex/aux/main - copia.bbl' in following:\n No file \"main - copia\".bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nFailure to make '.build/latex/main - copia.pdf'\nC:\\texlive\\2026\\bin\\windows\\runscript.tlu:933: command failed with exit code 12:\nperl.exe c:\\texlive\\2026\\texmf-dist\\scripts\\latexmk\\latexmk.pl -f -pdf -interaction=nonstopmode -file-line-error  \"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\base\\entradas\\main - copia.tex\"\n"
+    }
+  ],
+  "extractor": {
+    "enabled": false
+  },
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": ".",
+    "artifacts": [
+      "referencias-AulaTeX-Academico",
+      "planeaciones-AulaTeX-Academico",
+      "assets-AulaTeX-Academico",
+      "README.md",
+      "COMPILACION-AulaTeX-Academico.md",
+      "programa-analitico-AulaTeX-Academico.md",
+      "AulaTeX-Academico.bib",
+      "reporte-AulaTeX-Academico.tex",
+      "reporte-AulaTeX-Academico-Actividad-1.tex",
+      "presentacion-AulaTeX-Academico.tex",
+      "presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: README.md",
+      "Materializado: COMPILACION-AulaTeX-Academico.md",
+      "Materializado: programa-analitico-AulaTeX-Academico.md",
+      "Materializado: AulaTeX-Academico.bib",
+      "Materializado: reporte-AulaTeX-Academico.tex",
+      "Materializado: reporte-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: presentacion-AulaTeX-Academico.tex",
+      "Materializado: presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0,
+      "Investigador documental": 0.0,
+      "Arquitecto de plantillas": 0.0,
+      "Verificador y validador": 0.0,
+      "Critico adversarial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex, Codex, Codex, Codex, Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-07 21:10:05",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-07 21:10:07",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar-ciclo-001: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:10:42",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:10:42",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:10:42",
+      "state": "planned",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "investigar-ciclo-001: Investigador documental via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:11:18",
+      "state": "planned",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "investigar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:11:18",
+      "state": "researched",
+      "action": "planned->researched",
+      "status": "ok",
+      "detail": "diagnostico documental producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:11:18",
+      "state": "researched",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "generar-ciclo-001: Arquitecto de plantillas via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:11:54",
+      "state": "researched",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "generar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:11:54",
+      "state": "generated",
+      "action": "researched->generated",
+      "status": "ok",
+      "detail": "propuesta editorial producida"
+    },
+    {
+      "timestamp": "2026-07-07 21:11:54",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "validar-ciclo-001: Verificador y validador via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:12:31",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "validar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:12:31",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "criticar-ciclo-001: Critico adversarial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:13:05",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "criticar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:13:05",
+      "state": "generated",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-07-07 21:13:05",
+      "state": "generated",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "12 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-07-07 21:13:05",
+      "state": "generated",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-07-07 21:14:21",
+      "state": "generated",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "base/entradas/main - copia.tex rc=12"
+    },
+    {
+      "timestamp": "2026-07-07 21:14:21",
+      "state": "compiled",
+      "action": "generated->compiled",
+      "status": "ok",
+      "detail": "compilacion latexmk ejecutada"
+    },
+    {
+      "timestamp": "2026-07-07 21:14:21",
+      "state": "compiled",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-07 21:14:21",
+      "state": "evaluated",
+      "action": "compiled->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-07 21:14:21",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}
+```
+
+## 20260707-211630 - generar-plantilla
+
+```json
+{
+  "run_id": "20260707-211630",
+  "target": ".",
+  "display_target": ".",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "cycle_mode": "full",
+  "requested_iterations": 1,
+  "expanded_task_count": 5,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar-ciclo-001",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "investigar-ciclo-001",
+      "role": "Investigador documental",
+      "mission": "detectar fuentes, contexto curricular y faltantes editoriales | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "generar-ciclo-001",
+      "role": "Arquitecto de plantillas",
+      "mission": "proponer estructura de reporte/presentacion y actividad | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "validar-ciclo-001",
+      "role": "Verificador y validador",
+      "mission": "verificar consistencia, compilacion y evidencias | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "criticar-ciclo-001",
+      "role": "Critico adversarial",
+      "mission": "encontrar fallas antes de aplicar cambios | ciclo intensivo 1/1",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "base/entradas/main - copia.tex",
+      "ok": false,
+      "returncode": 12,
+      "stdout_tail": "/tex/latex/lm/ts1lmr.fd) [1.1{c:/texlive/2026/texmf-\nvar/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dv\nips/lm/lm-ec.enc} <c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla\n-Informe/img/departamentos/fcfm.pdf>] [1.2] (.build/latex/aux/main - copia.toc)\n[2.3]\n(c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/e\nxample.tex [1.4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:\n/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-di\nst/fonts/enc/dvips/lm/lm-mathsy.enc} <c:/Users/delaCruz/Documents/AulaTeX-Acade\nmico/base/Plantilla-Informe/img/ejemplos/test-image.png>] [2.5{c:/texlive/2026/\ntexmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <c:/Users/delaCruz/Documents/AulaT\neX-Academico/base/Plantilla-Informe/img/ejemplos/test-image-wrap.jpg>] [3.6]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty) [4.7]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty) [5.8] [6.9]\n(.build/latex/aux/main - copia.bbl) [7.10]\n\nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311: LaTeX Error: Key 'BKM/numbered' accepts boolean values only.\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.311 \\end{appendixd}\n                     \nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on \".build/latex/aux/main - copia.log\".\nLatexmk: Getting log file '.build/latex/aux/main - copia.log'\nLatexmk: Examining '.build/latex/aux/main - copia.fls'\nLatexmk: Examining '.build/latex/aux/main - copia.log'\nLatexmk: Found input bbl file '.build/latex/aux/main - copia.bbl'\n  ===Source file '.build/latex/aux/main - copia.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/library.bib\nLatexmk: Errors, in force_mode: so I tried finishing targets\nCollected error summary (may duplicate other messages):\n  pdflatex: Command for 'pdflatex' gave return code 1\n      Refer to '.build/latex/aux/main - copia.log' and/or above output for details\n\n",
+      "stderr_tail": "Latexmk: Missing input file 'main - copia.toc' message in .log file:\n  No file \"main - copia\".toc.\nLatexmk: Missing bbl file '.build/latex/aux/main - copia.bbl' in following:\n No file \"main - copia\".bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nFailure to make '.build/latex/main - copia.pdf'\nC:\\texlive\\2026\\bin\\windows\\runscript.tlu:933: command failed with exit code 12:\nperl.exe c:\\texlive\\2026\\texmf-dist\\scripts\\latexmk\\latexmk.pl -f -pdf -interaction=nonstopmode -file-line-error  \"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\base\\entradas\\main - copia.tex\"\n"
+    }
+  ],
+  "extractor": {
+    "enabled": false
+  },
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": ".",
+    "artifacts": [
+      "referencias-AulaTeX-Academico",
+      "planeaciones-AulaTeX-Academico",
+      "assets-AulaTeX-Academico",
+      "README.md",
+      "COMPILACION-AulaTeX-Academico.md",
+      "programa-analitico-AulaTeX-Academico.md",
+      "AulaTeX-Academico.bib",
+      "reporte-AulaTeX-Academico.tex",
+      "reporte-AulaTeX-Academico-Actividad-1.tex",
+      "presentacion-AulaTeX-Academico.tex",
+      "presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: README.md",
+      "Materializado: COMPILACION-AulaTeX-Academico.md",
+      "Materializado: programa-analitico-AulaTeX-Academico.md",
+      "Materializado: AulaTeX-Academico.bib",
+      "Materializado: reporte-AulaTeX-Academico.tex",
+      "Materializado: reporte-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: presentacion-AulaTeX-Academico.tex",
+      "Materializado: presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0,
+      "Investigador documental": 0.0,
+      "Arquitecto de plantillas": 0.0,
+      "Verificador y validador": 0.0,
+      "Critico adversarial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex, Codex, Codex, Codex, Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-07 21:16:30",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-07 21:16:32",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar-ciclo-001: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:17:09",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:17:09",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:17:09",
+      "state": "planned",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "investigar-ciclo-001: Investigador documental via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:17:43",
+      "state": "planned",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "investigar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:17:43",
+      "state": "researched",
+      "action": "planned->researched",
+      "status": "ok",
+      "detail": "diagnostico documental producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:17:43",
+      "state": "researched",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "generar-ciclo-001: Arquitecto de plantillas via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:18:20",
+      "state": "researched",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "generar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:18:20",
+      "state": "generated",
+      "action": "researched->generated",
+      "status": "ok",
+      "detail": "propuesta editorial producida"
+    },
+    {
+      "timestamp": "2026-07-07 21:18:20",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "validar-ciclo-001: Verificador y validador via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:18:57",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "validar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:18:57",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "criticar-ciclo-001: Critico adversarial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:19:31",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "criticar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:19:31",
+      "state": "generated",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-07-07 21:19:31",
+      "state": "generated",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "12 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-07-07 21:19:31",
+      "state": "generated",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-07-07 21:20:44",
+      "state": "generated",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "base/entradas/main - copia.tex rc=12"
+    },
+    {
+      "timestamp": "2026-07-07 21:20:44",
+      "state": "compiled",
+      "action": "generated->compiled",
+      "status": "ok",
+      "detail": "compilacion latexmk ejecutada"
+    },
+    {
+      "timestamp": "2026-07-07 21:20:44",
+      "state": "compiled",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-07 21:20:44",
+      "state": "evaluated",
+      "action": "compiled->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-07 21:20:44",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}
+```
+
+## 20260707-212309 - generar-plantilla
+
+```json
+{
+  "run_id": "20260707-212309",
+  "target": ".",
+  "display_target": ".",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "cycle_mode": "full",
+  "requested_iterations": 1,
+  "expanded_task_count": 5,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar-ciclo-001",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "investigar-ciclo-001",
+      "role": "Investigador documental",
+      "mission": "detectar fuentes, contexto curricular y faltantes editoriales | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "generar-ciclo-001",
+      "role": "Arquitecto de plantillas",
+      "mission": "proponer estructura de reporte/presentacion y actividad | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "validar-ciclo-001",
+      "role": "Verificador y validador",
+      "mission": "verificar consistencia, compilacion y evidencias | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "criticar-ciclo-001",
+      "role": "Critico adversarial",
+      "mission": "encontrar fallas antes de aplicar cambios | ciclo intensivo 1/1",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "base/entradas/main - copia.tex",
+      "ok": false,
+      "returncode": 12,
+      "stdout_tail": "/tex/latex/lm/ts1lmr.fd) [1.1{c:/texlive/2026/texmf-\nvar/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dv\nips/lm/lm-ec.enc} <c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla\n-Informe/img/departamentos/fcfm.pdf>] [1.2] (.build/latex/aux/main - copia.toc)\n[2.3]\n(c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/e\nxample.tex [1.4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:\n/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-di\nst/fonts/enc/dvips/lm/lm-mathsy.enc} <c:/Users/delaCruz/Documents/AulaTeX-Acade\nmico/base/Plantilla-Informe/img/ejemplos/test-image.png>] [2.5{c:/texlive/2026/\ntexmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <c:/Users/delaCruz/Documents/AulaT\neX-Academico/base/Plantilla-Informe/img/ejemplos/test-image-wrap.jpg>] [3.6]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty) [4.7]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty) [5.8] [6.9]\n(.build/latex/aux/main - copia.bbl) [7.10]\n\nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311: LaTeX Error: Key 'BKM/numbered' accepts boolean values only.\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.311 \\end{appendixd}\n                     \nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on \".build/latex/aux/main - copia.log\".\nLatexmk: Getting log file '.build/latex/aux/main - copia.log'\nLatexmk: Examining '.build/latex/aux/main - copia.fls'\nLatexmk: Examining '.build/latex/aux/main - copia.log'\nLatexmk: Found input bbl file '.build/latex/aux/main - copia.bbl'\n  ===Source file '.build/latex/aux/main - copia.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/library.bib\nLatexmk: Errors, in force_mode: so I tried finishing targets\nCollected error summary (may duplicate other messages):\n  pdflatex: Command for 'pdflatex' gave return code 1\n      Refer to '.build/latex/aux/main - copia.log' and/or above output for details\n\n",
+      "stderr_tail": "Latexmk: Missing input file 'main - copia.toc' message in .log file:\n  No file \"main - copia\".toc.\nLatexmk: Missing bbl file '.build/latex/aux/main - copia.bbl' in following:\n No file \"main - copia\".bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nFailure to make '.build/latex/main - copia.pdf'\nC:\\texlive\\2026\\bin\\windows\\runscript.tlu:933: command failed with exit code 12:\nperl.exe c:\\texlive\\2026\\texmf-dist\\scripts\\latexmk\\latexmk.pl -f -pdf -interaction=nonstopmode -file-line-error  \"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\base\\entradas\\main - copia.tex\"\n"
+    }
+  ],
+  "extractor": {
+    "enabled": false
+  },
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": ".",
+    "artifacts": [
+      "referencias-AulaTeX-Academico",
+      "planeaciones-AulaTeX-Academico",
+      "assets-AulaTeX-Academico",
+      "README.md",
+      "COMPILACION-AulaTeX-Academico.md",
+      "programa-analitico-AulaTeX-Academico.md",
+      "AulaTeX-Academico.bib",
+      "reporte-AulaTeX-Academico.tex",
+      "reporte-AulaTeX-Academico-Actividad-1.tex",
+      "presentacion-AulaTeX-Academico.tex",
+      "presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: README.md",
+      "Materializado: COMPILACION-AulaTeX-Academico.md",
+      "Materializado: programa-analitico-AulaTeX-Academico.md",
+      "Materializado: AulaTeX-Academico.bib",
+      "Materializado: reporte-AulaTeX-Academico.tex",
+      "Materializado: reporte-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: presentacion-AulaTeX-Academico.tex",
+      "Materializado: presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0,
+      "Investigador documental": 0.0,
+      "Arquitecto de plantillas": 0.0,
+      "Verificador y validador": 0.0,
+      "Critico adversarial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex, Codex, Codex, Codex, Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-07 21:23:09",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-07 21:23:10",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar-ciclo-001: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:23:46",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:23:46",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:23:46",
+      "state": "planned",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "investigar-ciclo-001: Investigador documental via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:24:23",
+      "state": "planned",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "investigar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:24:23",
+      "state": "researched",
+      "action": "planned->researched",
+      "status": "ok",
+      "detail": "diagnostico documental producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:24:23",
+      "state": "researched",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "generar-ciclo-001: Arquitecto de plantillas via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:24:58",
+      "state": "researched",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "generar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:24:58",
+      "state": "generated",
+      "action": "researched->generated",
+      "status": "ok",
+      "detail": "propuesta editorial producida"
+    },
+    {
+      "timestamp": "2026-07-07 21:24:58",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "validar-ciclo-001: Verificador y validador via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:25:34",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "validar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:25:34",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "criticar-ciclo-001: Critico adversarial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:26:08",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "criticar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:26:08",
+      "state": "generated",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-07-07 21:26:08",
+      "state": "generated",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "12 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-07-07 21:26:08",
+      "state": "generated",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-07-07 21:27:27",
+      "state": "generated",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "base/entradas/main - copia.tex rc=12"
+    },
+    {
+      "timestamp": "2026-07-07 21:27:27",
+      "state": "compiled",
+      "action": "generated->compiled",
+      "status": "ok",
+      "detail": "compilacion latexmk ejecutada"
+    },
+    {
+      "timestamp": "2026-07-07 21:27:27",
+      "state": "compiled",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-07 21:27:27",
+      "state": "evaluated",
+      "action": "compiled->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-07 21:27:27",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}
+```
+
+## 20260707-212952 - generar-plantilla
+
+```json
+{
+  "run_id": "20260707-212952",
+  "target": ".",
+  "display_target": ".",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "cycle_mode": "full",
+  "requested_iterations": 1,
+  "expanded_task_count": 5,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar-ciclo-001",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "investigar-ciclo-001",
+      "role": "Investigador documental",
+      "mission": "detectar fuentes, contexto curricular y faltantes editoriales | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "generar-ciclo-001",
+      "role": "Arquitecto de plantillas",
+      "mission": "proponer estructura de reporte/presentacion y actividad | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "validar-ciclo-001",
+      "role": "Verificador y validador",
+      "mission": "verificar consistencia, compilacion y evidencias | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "criticar-ciclo-001",
+      "role": "Critico adversarial",
+      "mission": "encontrar fallas antes de aplicar cambios | ciclo intensivo 1/1",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "base/entradas/main - copia.tex",
+      "ok": false,
+      "returncode": 12,
+      "stdout_tail": "/tex/latex/lm/ts1lmr.fd) [1.1{c:/texlive/2026/texmf-\nvar/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dv\nips/lm/lm-ec.enc} <c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla\n-Informe/img/departamentos/fcfm.pdf>] [1.2] (.build/latex/aux/main - copia.toc)\n[2.3]\n(c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/e\nxample.tex [1.4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:\n/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-di\nst/fonts/enc/dvips/lm/lm-mathsy.enc} <c:/Users/delaCruz/Documents/AulaTeX-Acade\nmico/base/Plantilla-Informe/img/ejemplos/test-image.png>] [2.5{c:/texlive/2026/\ntexmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <c:/Users/delaCruz/Documents/AulaT\neX-Academico/base/Plantilla-Informe/img/ejemplos/test-image-wrap.jpg>] [3.6]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty) [4.7]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty) [5.8] [6.9]\n(.build/latex/aux/main - copia.bbl) [7.10]\n\nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311: LaTeX Error: Key 'BKM/numbered' accepts boolean values only.\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.311 \\end{appendixd}\n                     \nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on \".build/latex/aux/main - copia.log\".\nLatexmk: Getting log file '.build/latex/aux/main - copia.log'\nLatexmk: Examining '.build/latex/aux/main - copia.fls'\nLatexmk: Examining '.build/latex/aux/main - copia.log'\nLatexmk: Found input bbl file '.build/latex/aux/main - copia.bbl'\n  ===Source file '.build/latex/aux/main - copia.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/library.bib\nLatexmk: Errors, in force_mode: so I tried finishing targets\nCollected error summary (may duplicate other messages):\n  pdflatex: Command for 'pdflatex' gave return code 1\n      Refer to '.build/latex/aux/main - copia.log' and/or above output for details\n\n",
+      "stderr_tail": "Latexmk: Missing input file 'main - copia.toc' message in .log file:\n  No file \"main - copia\".toc.\nLatexmk: Missing bbl file '.build/latex/aux/main - copia.bbl' in following:\n No file \"main - copia\".bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nFailure to make '.build/latex/main - copia.pdf'\nC:\\texlive\\2026\\bin\\windows\\runscript.tlu:933: command failed with exit code 12:\nperl.exe c:\\texlive\\2026\\texmf-dist\\scripts\\latexmk\\latexmk.pl -f -pdf -interaction=nonstopmode -file-line-error  \"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\base\\entradas\\main - copia.tex\"\n"
+    }
+  ],
+  "extractor": {
+    "enabled": false
+  },
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": ".",
+    "artifacts": [
+      "referencias-AulaTeX-Academico",
+      "planeaciones-AulaTeX-Academico",
+      "assets-AulaTeX-Academico",
+      "README.md",
+      "COMPILACION-AulaTeX-Academico.md",
+      "programa-analitico-AulaTeX-Academico.md",
+      "AulaTeX-Academico.bib",
+      "reporte-AulaTeX-Academico.tex",
+      "reporte-AulaTeX-Academico-Actividad-1.tex",
+      "presentacion-AulaTeX-Academico.tex",
+      "presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: README.md",
+      "Materializado: COMPILACION-AulaTeX-Academico.md",
+      "Materializado: programa-analitico-AulaTeX-Academico.md",
+      "Materializado: AulaTeX-Academico.bib",
+      "Materializado: reporte-AulaTeX-Academico.tex",
+      "Materializado: reporte-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: presentacion-AulaTeX-Academico.tex",
+      "Materializado: presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0,
+      "Investigador documental": 0.0,
+      "Arquitecto de plantillas": 0.0,
+      "Verificador y validador": 0.0,
+      "Critico adversarial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex, Codex, Codex, Codex, Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-07 21:29:52",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-07 21:29:54",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar-ciclo-001: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:30:32",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:30:32",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:30:32",
+      "state": "planned",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "investigar-ciclo-001: Investigador documental via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:31:22",
+      "state": "planned",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "investigar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:31:22",
+      "state": "researched",
+      "action": "planned->researched",
+      "status": "ok",
+      "detail": "diagnostico documental producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:31:22",
+      "state": "researched",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "generar-ciclo-001: Arquitecto de plantillas via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:31:57",
+      "state": "researched",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "generar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:31:57",
+      "state": "generated",
+      "action": "researched->generated",
+      "status": "ok",
+      "detail": "propuesta editorial producida"
+    },
+    {
+      "timestamp": "2026-07-07 21:31:57",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "validar-ciclo-001: Verificador y validador via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:32:31",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "validar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:32:31",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "criticar-ciclo-001: Critico adversarial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:33:06",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "criticar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:33:06",
+      "state": "generated",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-07-07 21:33:06",
+      "state": "generated",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "12 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-07-07 21:33:06",
+      "state": "generated",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-07-07 21:34:21",
+      "state": "generated",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "base/entradas/main - copia.tex rc=12"
+    },
+    {
+      "timestamp": "2026-07-07 21:34:21",
+      "state": "compiled",
+      "action": "generated->compiled",
+      "status": "ok",
+      "detail": "compilacion latexmk ejecutada"
+    },
+    {
+      "timestamp": "2026-07-07 21:34:21",
+      "state": "compiled",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-07 21:34:21",
+      "state": "evaluated",
+      "action": "compiled->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-07 21:34:21",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}
+```
+
+## 20260707-213647 - generar-plantilla
+
+```json
+{
+  "run_id": "20260707-213647",
+  "target": ".",
+  "display_target": ".",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "cycle_mode": "full",
+  "requested_iterations": 1,
+  "expanded_task_count": 5,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar-ciclo-001",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "investigar-ciclo-001",
+      "role": "Investigador documental",
+      "mission": "detectar fuentes, contexto curricular y faltantes editoriales | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "generar-ciclo-001",
+      "role": "Arquitecto de plantillas",
+      "mission": "proponer estructura de reporte/presentacion y actividad | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "validar-ciclo-001",
+      "role": "Verificador y validador",
+      "mission": "verificar consistencia, compilacion y evidencias | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "criticar-ciclo-001",
+      "role": "Critico adversarial",
+      "mission": "encontrar fallas antes de aplicar cambios | ciclo intensivo 1/1",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "base/entradas/main - copia.tex",
+      "ok": false,
+      "returncode": 12,
+      "stdout_tail": "/tex/latex/lm/ts1lmr.fd) [1.1{c:/texlive/2026/texmf-\nvar/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dv\nips/lm/lm-ec.enc} <c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla\n-Informe/img/departamentos/fcfm.pdf>] [1.2] (.build/latex/aux/main - copia.toc)\n[2.3]\n(c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/e\nxample.tex [1.4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:\n/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-di\nst/fonts/enc/dvips/lm/lm-mathsy.enc} <c:/Users/delaCruz/Documents/AulaTeX-Acade\nmico/base/Plantilla-Informe/img/ejemplos/test-image.png>] [2.5{c:/texlive/2026/\ntexmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <c:/Users/delaCruz/Documents/AulaT\neX-Academico/base/Plantilla-Informe/img/ejemplos/test-image-wrap.jpg>] [3.6]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty) [4.7]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty) [5.8] [6.9]\n(.build/latex/aux/main - copia.bbl) [7.10]\n\nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311: LaTeX Error: Key 'BKM/numbered' accepts boolean values only.\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.311 \\end{appendixd}\n                     \nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on \".build/latex/aux/main - copia.log\".\nLatexmk: Getting log file '.build/latex/aux/main - copia.log'\nLatexmk: Examining '.build/latex/aux/main - copia.fls'\nLatexmk: Examining '.build/latex/aux/main - copia.log'\nLatexmk: Found input bbl file '.build/latex/aux/main - copia.bbl'\n  ===Source file '.build/latex/aux/main - copia.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/library.bib\nLatexmk: Errors, in force_mode: so I tried finishing targets\nCollected error summary (may duplicate other messages):\n  pdflatex: Command for 'pdflatex' gave return code 1\n      Refer to '.build/latex/aux/main - copia.log' and/or above output for details\n\n",
+      "stderr_tail": "Latexmk: Missing input file 'main - copia.toc' message in .log file:\n  No file \"main - copia\".toc.\nLatexmk: Missing bbl file '.build/latex/aux/main - copia.bbl' in following:\n No file \"main - copia\".bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nFailure to make '.build/latex/main - copia.pdf'\nC:\\texlive\\2026\\bin\\windows\\runscript.tlu:933: command failed with exit code 12:\nperl.exe c:\\texlive\\2026\\texmf-dist\\scripts\\latexmk\\latexmk.pl -f -pdf -interaction=nonstopmode -file-line-error  \"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\base\\entradas\\main - copia.tex\"\n"
+    }
+  ],
+  "extractor": {
+    "enabled": false
+  },
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": ".",
+    "artifacts": [
+      "referencias-AulaTeX-Academico",
+      "planeaciones-AulaTeX-Academico",
+      "assets-AulaTeX-Academico",
+      "README.md",
+      "COMPILACION-AulaTeX-Academico.md",
+      "programa-analitico-AulaTeX-Academico.md",
+      "AulaTeX-Academico.bib",
+      "reporte-AulaTeX-Academico.tex",
+      "reporte-AulaTeX-Academico-Actividad-1.tex",
+      "presentacion-AulaTeX-Academico.tex",
+      "presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: README.md",
+      "Materializado: COMPILACION-AulaTeX-Academico.md",
+      "Materializado: programa-analitico-AulaTeX-Academico.md",
+      "Materializado: AulaTeX-Academico.bib",
+      "Materializado: reporte-AulaTeX-Academico.tex",
+      "Materializado: reporte-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: presentacion-AulaTeX-Academico.tex",
+      "Materializado: presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0,
+      "Investigador documental": 0.0,
+      "Arquitecto de plantillas": 0.0,
+      "Verificador y validador": 0.0,
+      "Critico adversarial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex, Codex, Codex, Codex, Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-07 21:36:47",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-07 21:36:49",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar-ciclo-001: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:37:26",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:37:26",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:37:26",
+      "state": "planned",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "investigar-ciclo-001: Investigador documental via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:38:01",
+      "state": "planned",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "investigar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:38:01",
+      "state": "researched",
+      "action": "planned->researched",
+      "status": "ok",
+      "detail": "diagnostico documental producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:38:01",
+      "state": "researched",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "generar-ciclo-001: Arquitecto de plantillas via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:38:37",
+      "state": "researched",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "generar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:38:37",
+      "state": "generated",
+      "action": "researched->generated",
+      "status": "ok",
+      "detail": "propuesta editorial producida"
+    },
+    {
+      "timestamp": "2026-07-07 21:38:37",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "validar-ciclo-001: Verificador y validador via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:39:12",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "validar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:39:12",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "criticar-ciclo-001: Critico adversarial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:39:50",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "criticar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:39:50",
+      "state": "generated",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-07-07 21:39:50",
+      "state": "generated",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "12 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-07-07 21:39:50",
+      "state": "generated",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-07-07 21:41:03",
+      "state": "generated",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "base/entradas/main - copia.tex rc=12"
+    },
+    {
+      "timestamp": "2026-07-07 21:41:03",
+      "state": "compiled",
+      "action": "generated->compiled",
+      "status": "ok",
+      "detail": "compilacion latexmk ejecutada"
+    },
+    {
+      "timestamp": "2026-07-07 21:41:03",
+      "state": "compiled",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-07 21:41:03",
+      "state": "evaluated",
+      "action": "compiled->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-07 21:41:03",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}
+```
+
+## 20260707-214325 - generar-plantilla
+
+```json
+{
+  "run_id": "20260707-214325",
+  "target": ".",
+  "display_target": ".",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "cycle_mode": "full",
+  "requested_iterations": 1,
+  "expanded_task_count": 5,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar-ciclo-001",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "investigar-ciclo-001",
+      "role": "Investigador documental",
+      "mission": "detectar fuentes, contexto curricular y faltantes editoriales | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "generar-ciclo-001",
+      "role": "Arquitecto de plantillas",
+      "mission": "proponer estructura de reporte/presentacion y actividad | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "validar-ciclo-001",
+      "role": "Verificador y validador",
+      "mission": "verificar consistencia, compilacion y evidencias | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "criticar-ciclo-001",
+      "role": "Critico adversarial",
+      "mission": "encontrar fallas antes de aplicar cambios | ciclo intensivo 1/1",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "base/entradas/main - copia.tex",
+      "ok": false,
+      "returncode": 12,
+      "stdout_tail": "/tex/latex/lm/ts1lmr.fd) [1.1{c:/texlive/2026/texmf-\nvar/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dv\nips/lm/lm-ec.enc} <c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla\n-Informe/img/departamentos/fcfm.pdf>] [1.2] (.build/latex/aux/main - copia.toc)\n[2.3]\n(c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/e\nxample.tex [1.4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:\n/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-di\nst/fonts/enc/dvips/lm/lm-mathsy.enc} <c:/Users/delaCruz/Documents/AulaTeX-Acade\nmico/base/Plantilla-Informe/img/ejemplos/test-image.png>] [2.5{c:/texlive/2026/\ntexmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <c:/Users/delaCruz/Documents/AulaT\neX-Academico/base/Plantilla-Informe/img/ejemplos/test-image-wrap.jpg>] [3.6]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty) [4.7]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty) [5.8] [6.9]\n(.build/latex/aux/main - copia.bbl) [7.10]\n\nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311: LaTeX Error: Key 'BKM/numbered' accepts boolean values only.\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.311 \\end{appendixd}\n                     \nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on \".build/latex/aux/main - copia.log\".\nLatexmk: Getting log file '.build/latex/aux/main - copia.log'\nLatexmk: Examining '.build/latex/aux/main - copia.fls'\nLatexmk: Examining '.build/latex/aux/main - copia.log'\nLatexmk: Found input bbl file '.build/latex/aux/main - copia.bbl'\n  ===Source file '.build/latex/aux/main - copia.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/library.bib\nLatexmk: Errors, in force_mode: so I tried finishing targets\nCollected error summary (may duplicate other messages):\n  pdflatex: Command for 'pdflatex' gave return code 1\n      Refer to '.build/latex/aux/main - copia.log' and/or above output for details\n\n",
+      "stderr_tail": "Latexmk: Missing input file 'main - copia.toc' message in .log file:\n  No file \"main - copia\".toc.\nLatexmk: Missing bbl file '.build/latex/aux/main - copia.bbl' in following:\n No file \"main - copia\".bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nFailure to make '.build/latex/main - copia.pdf'\nC:\\texlive\\2026\\bin\\windows\\runscript.tlu:933: command failed with exit code 12:\nperl.exe c:\\texlive\\2026\\texmf-dist\\scripts\\latexmk\\latexmk.pl -f -pdf -interaction=nonstopmode -file-line-error  \"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\base\\entradas\\main - copia.tex\"\n"
+    }
+  ],
+  "extractor": {
+    "enabled": false
+  },
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": ".",
+    "artifacts": [
+      "referencias-AulaTeX-Academico",
+      "planeaciones-AulaTeX-Academico",
+      "assets-AulaTeX-Academico",
+      "README.md",
+      "COMPILACION-AulaTeX-Academico.md",
+      "programa-analitico-AulaTeX-Academico.md",
+      "AulaTeX-Academico.bib",
+      "reporte-AulaTeX-Academico.tex",
+      "reporte-AulaTeX-Academico-Actividad-1.tex",
+      "presentacion-AulaTeX-Academico.tex",
+      "presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: README.md",
+      "Materializado: COMPILACION-AulaTeX-Academico.md",
+      "Materializado: programa-analitico-AulaTeX-Academico.md",
+      "Materializado: AulaTeX-Academico.bib",
+      "Materializado: reporte-AulaTeX-Academico.tex",
+      "Materializado: reporte-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: presentacion-AulaTeX-Academico.tex",
+      "Materializado: presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0,
+      "Investigador documental": 0.0,
+      "Arquitecto de plantillas": 0.0,
+      "Verificador y validador": 0.0,
+      "Critico adversarial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex, Codex, Codex, Codex, Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-07 21:43:25",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-07 21:43:27",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar-ciclo-001: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:44:02",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:44:02",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:44:02",
+      "state": "planned",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "investigar-ciclo-001: Investigador documental via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:44:36",
+      "state": "planned",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "investigar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:44:36",
+      "state": "researched",
+      "action": "planned->researched",
+      "status": "ok",
+      "detail": "diagnostico documental producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:44:36",
+      "state": "researched",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "generar-ciclo-001: Arquitecto de plantillas via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:45:11",
+      "state": "researched",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "generar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:45:11",
+      "state": "generated",
+      "action": "researched->generated",
+      "status": "ok",
+      "detail": "propuesta editorial producida"
+    },
+    {
+      "timestamp": "2026-07-07 21:45:11",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "validar-ciclo-001: Verificador y validador via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:45:45",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "validar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:45:45",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "criticar-ciclo-001: Critico adversarial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:46:20",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "criticar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:46:20",
+      "state": "generated",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-07-07 21:46:20",
+      "state": "generated",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "12 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-07-07 21:46:20",
+      "state": "generated",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-07-07 21:47:34",
+      "state": "generated",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "base/entradas/main - copia.tex rc=12"
+    },
+    {
+      "timestamp": "2026-07-07 21:47:34",
+      "state": "compiled",
+      "action": "generated->compiled",
+      "status": "ok",
+      "detail": "compilacion latexmk ejecutada"
+    },
+    {
+      "timestamp": "2026-07-07 21:47:34",
+      "state": "compiled",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-07 21:47:34",
+      "state": "evaluated",
+      "action": "compiled->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-07 21:47:34",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}
+```
+
+## 20260707-214956 - generar-plantilla
+
+```json
+{
+  "run_id": "20260707-214956",
+  "target": ".",
+  "display_target": ".",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "cycle_mode": "full",
+  "requested_iterations": 1,
+  "expanded_task_count": 5,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar-ciclo-001",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "investigar-ciclo-001",
+      "role": "Investigador documental",
+      "mission": "detectar fuentes, contexto curricular y faltantes editoriales | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "generar-ciclo-001",
+      "role": "Arquitecto de plantillas",
+      "mission": "proponer estructura de reporte/presentacion y actividad | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "validar-ciclo-001",
+      "role": "Verificador y validador",
+      "mission": "verificar consistencia, compilacion y evidencias | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "criticar-ciclo-001",
+      "role": "Critico adversarial",
+      "mission": "encontrar fallas antes de aplicar cambios | ciclo intensivo 1/1",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "base/entradas/main - copia.tex",
+      "ok": false,
+      "returncode": 12,
+      "stdout_tail": "/tex/latex/lm/ts1lmr.fd) [1.1{c:/texlive/2026/texmf-\nvar/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dv\nips/lm/lm-ec.enc} <c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla\n-Informe/img/departamentos/fcfm.pdf>] [1.2] (.build/latex/aux/main - copia.toc)\n[2.3]\n(c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/e\nxample.tex [1.4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:\n/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-di\nst/fonts/enc/dvips/lm/lm-mathsy.enc} <c:/Users/delaCruz/Documents/AulaTeX-Acade\nmico/base/Plantilla-Informe/img/ejemplos/test-image.png>] [2.5{c:/texlive/2026/\ntexmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <c:/Users/delaCruz/Documents/AulaT\neX-Academico/base/Plantilla-Informe/img/ejemplos/test-image-wrap.jpg>] [3.6]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty) [4.7]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty) [5.8] [6.9]\n(.build/latex/aux/main - copia.bbl) [7.10]\n\nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311: LaTeX Error: Key 'BKM/numbered' accepts boolean values only.\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.311 \\end{appendixd}\n                     \nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on \".build/latex/aux/main - copia.log\".\nLatexmk: Getting log file '.build/latex/aux/main - copia.log'\nLatexmk: Examining '.build/latex/aux/main - copia.fls'\nLatexmk: Examining '.build/latex/aux/main - copia.log'\nLatexmk: Found input bbl file '.build/latex/aux/main - copia.bbl'\n  ===Source file '.build/latex/aux/main - copia.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/library.bib\nLatexmk: Errors, in force_mode: so I tried finishing targets\nCollected error summary (may duplicate other messages):\n  pdflatex: Command for 'pdflatex' gave return code 1\n      Refer to '.build/latex/aux/main - copia.log' and/or above output for details\n\n",
+      "stderr_tail": "Latexmk: Missing input file 'main - copia.toc' message in .log file:\n  No file \"main - copia\".toc.\nLatexmk: Missing bbl file '.build/latex/aux/main - copia.bbl' in following:\n No file \"main - copia\".bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nFailure to make '.build/latex/main - copia.pdf'\nC:\\texlive\\2026\\bin\\windows\\runscript.tlu:933: command failed with exit code 12:\nperl.exe c:\\texlive\\2026\\texmf-dist\\scripts\\latexmk\\latexmk.pl -f -pdf -interaction=nonstopmode -file-line-error  \"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\base\\entradas\\main - copia.tex\"\n"
+    }
+  ],
+  "extractor": {
+    "enabled": false
+  },
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": ".",
+    "artifacts": [
+      "referencias-AulaTeX-Academico",
+      "planeaciones-AulaTeX-Academico",
+      "assets-AulaTeX-Academico",
+      "README.md",
+      "COMPILACION-AulaTeX-Academico.md",
+      "programa-analitico-AulaTeX-Academico.md",
+      "AulaTeX-Academico.bib",
+      "reporte-AulaTeX-Academico.tex",
+      "reporte-AulaTeX-Academico-Actividad-1.tex",
+      "presentacion-AulaTeX-Academico.tex",
+      "presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: README.md",
+      "Materializado: COMPILACION-AulaTeX-Academico.md",
+      "Materializado: programa-analitico-AulaTeX-Academico.md",
+      "Materializado: AulaTeX-Academico.bib",
+      "Materializado: reporte-AulaTeX-Academico.tex",
+      "Materializado: reporte-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: presentacion-AulaTeX-Academico.tex",
+      "Materializado: presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0,
+      "Investigador documental": 0.0,
+      "Arquitecto de plantillas": 0.0,
+      "Verificador y validador": 0.0,
+      "Critico adversarial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex, Codex, Codex, Codex, Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-07 21:49:56",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-07 21:49:57",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar-ciclo-001: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:50:34",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:50:34",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:50:34",
+      "state": "planned",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "investigar-ciclo-001: Investigador documental via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:51:08",
+      "state": "planned",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "investigar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:51:08",
+      "state": "researched",
+      "action": "planned->researched",
+      "status": "ok",
+      "detail": "diagnostico documental producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:51:08",
+      "state": "researched",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "generar-ciclo-001: Arquitecto de plantillas via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:51:45",
+      "state": "researched",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "generar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:51:45",
+      "state": "generated",
+      "action": "researched->generated",
+      "status": "ok",
+      "detail": "propuesta editorial producida"
+    },
+    {
+      "timestamp": "2026-07-07 21:51:45",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "validar-ciclo-001: Verificador y validador via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:52:22",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "validar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:52:22",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "criticar-ciclo-001: Critico adversarial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:53:00",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "criticar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:53:00",
+      "state": "generated",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-07-07 21:53:00",
+      "state": "generated",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "12 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-07-07 21:53:00",
+      "state": "generated",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-07-07 21:54:12",
+      "state": "generated",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "base/entradas/main - copia.tex rc=12"
+    },
+    {
+      "timestamp": "2026-07-07 21:54:12",
+      "state": "compiled",
+      "action": "generated->compiled",
+      "status": "ok",
+      "detail": "compilacion latexmk ejecutada"
+    },
+    {
+      "timestamp": "2026-07-07 21:54:12",
+      "state": "compiled",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-07 21:54:12",
+      "state": "evaluated",
+      "action": "compiled->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-07 21:54:12",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}
+```
+
+## 20260707-215631 - generar-plantilla
+
+```json
+{
+  "run_id": "20260707-215631",
+  "target": ".",
+  "display_target": ".",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "cycle_mode": "full",
+  "requested_iterations": 1,
+  "expanded_task_count": 5,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar-ciclo-001",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "investigar-ciclo-001",
+      "role": "Investigador documental",
+      "mission": "detectar fuentes, contexto curricular y faltantes editoriales | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "generar-ciclo-001",
+      "role": "Arquitecto de plantillas",
+      "mission": "proponer estructura de reporte/presentacion y actividad | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "validar-ciclo-001",
+      "role": "Verificador y validador",
+      "mission": "verificar consistencia, compilacion y evidencias | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "criticar-ciclo-001",
+      "role": "Critico adversarial",
+      "mission": "encontrar fallas antes de aplicar cambios | ciclo intensivo 1/1",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "base/entradas/main - copia.tex",
+      "ok": false,
+      "returncode": 12,
+      "stdout_tail": "/tex/latex/lm/ts1lmr.fd) [1.1{c:/texlive/2026/texmf-\nvar/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dv\nips/lm/lm-ec.enc} <c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla\n-Informe/img/departamentos/fcfm.pdf>] [1.2] (.build/latex/aux/main - copia.toc)\n[2.3]\n(c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/e\nxample.tex [1.4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:\n/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-di\nst/fonts/enc/dvips/lm/lm-mathsy.enc} <c:/Users/delaCruz/Documents/AulaTeX-Acade\nmico/base/Plantilla-Informe/img/ejemplos/test-image.png>] [2.5{c:/texlive/2026/\ntexmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <c:/Users/delaCruz/Documents/AulaT\neX-Academico/base/Plantilla-Informe/img/ejemplos/test-image-wrap.jpg>] [3.6]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty) [4.7]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty) [5.8] [6.9]\n(.build/latex/aux/main - copia.bbl) [7.10]\n\nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311: LaTeX Error: Key 'BKM/numbered' accepts boolean values only.\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.311 \\end{appendixd}\n                     \nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on \".build/latex/aux/main - copia.log\".\nLatexmk: Getting log file '.build/latex/aux/main - copia.log'\nLatexmk: Examining '.build/latex/aux/main - copia.fls'\nLatexmk: Examining '.build/latex/aux/main - copia.log'\nLatexmk: Found input bbl file '.build/latex/aux/main - copia.bbl'\n  ===Source file '.build/latex/aux/main - copia.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/library.bib\nLatexmk: Errors, in force_mode: so I tried finishing targets\nCollected error summary (may duplicate other messages):\n  pdflatex: Command for 'pdflatex' gave return code 1\n      Refer to '.build/latex/aux/main - copia.log' and/or above output for details\n\n",
+      "stderr_tail": "Latexmk: Missing input file 'main - copia.toc' message in .log file:\n  No file \"main - copia\".toc.\nLatexmk: Missing bbl file '.build/latex/aux/main - copia.bbl' in following:\n No file \"main - copia\".bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nFailure to make '.build/latex/main - copia.pdf'\nC:\\texlive\\2026\\bin\\windows\\runscript.tlu:933: command failed with exit code 12:\nperl.exe c:\\texlive\\2026\\texmf-dist\\scripts\\latexmk\\latexmk.pl -f -pdf -interaction=nonstopmode -file-line-error  \"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\base\\entradas\\main - copia.tex\"\n"
+    }
+  ],
+  "extractor": {
+    "enabled": false
+  },
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": ".",
+    "artifacts": [
+      "referencias-AulaTeX-Academico",
+      "planeaciones-AulaTeX-Academico",
+      "assets-AulaTeX-Academico",
+      "README.md",
+      "COMPILACION-AulaTeX-Academico.md",
+      "programa-analitico-AulaTeX-Academico.md",
+      "AulaTeX-Academico.bib",
+      "reporte-AulaTeX-Academico.tex",
+      "reporte-AulaTeX-Academico-Actividad-1.tex",
+      "presentacion-AulaTeX-Academico.tex",
+      "presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: README.md",
+      "Materializado: COMPILACION-AulaTeX-Academico.md",
+      "Materializado: programa-analitico-AulaTeX-Academico.md",
+      "Materializado: AulaTeX-Academico.bib",
+      "Materializado: reporte-AulaTeX-Academico.tex",
+      "Materializado: reporte-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: presentacion-AulaTeX-Academico.tex",
+      "Materializado: presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0,
+      "Investigador documental": 0.0,
+      "Arquitecto de plantillas": 0.0,
+      "Verificador y validador": 0.0,
+      "Critico adversarial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex, Codex, Codex, Codex, Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-07 21:56:31",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-07 21:56:33",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar-ciclo-001: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:57:10",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:57:10",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:57:10",
+      "state": "planned",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "investigar-ciclo-001: Investigador documental via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:57:44",
+      "state": "planned",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "investigar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:57:44",
+      "state": "researched",
+      "action": "planned->researched",
+      "status": "ok",
+      "detail": "diagnostico documental producido"
+    },
+    {
+      "timestamp": "2026-07-07 21:57:44",
+      "state": "researched",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "generar-ciclo-001: Arquitecto de plantillas via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:58:18",
+      "state": "researched",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "generar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:58:18",
+      "state": "generated",
+      "action": "researched->generated",
+      "status": "ok",
+      "detail": "propuesta editorial producida"
+    },
+    {
+      "timestamp": "2026-07-07 21:58:18",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "validar-ciclo-001: Verificador y validador via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:58:52",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "validar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:58:52",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "criticar-ciclo-001: Critico adversarial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 21:59:33",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "criticar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 21:59:33",
+      "state": "generated",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-07-07 21:59:33",
+      "state": "generated",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "12 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-07-07 21:59:33",
+      "state": "generated",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-07-07 22:00:48",
+      "state": "generated",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "base/entradas/main - copia.tex rc=12"
+    },
+    {
+      "timestamp": "2026-07-07 22:00:48",
+      "state": "compiled",
+      "action": "generated->compiled",
+      "status": "ok",
+      "detail": "compilacion latexmk ejecutada"
+    },
+    {
+      "timestamp": "2026-07-07 22:00:48",
+      "state": "compiled",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-07 22:00:48",
+      "state": "evaluated",
+      "action": "compiled->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-07 22:00:48",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}
+```
+
+## 20260707-220259 - generar-plantilla
+
+```json
+{
+  "run_id": "20260707-220259",
+  "target": ".",
+  "display_target": ".",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "cycle_mode": "full",
+  "requested_iterations": 1,
+  "expanded_task_count": 5,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar-ciclo-001",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "investigar-ciclo-001",
+      "role": "Investigador documental",
+      "mission": "detectar fuentes, contexto curricular y faltantes editoriales | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "generar-ciclo-001",
+      "role": "Arquitecto de plantillas",
+      "mission": "proponer estructura de reporte/presentacion y actividad | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "validar-ciclo-001",
+      "role": "Verificador y validador",
+      "mission": "verificar consistencia, compilacion y evidencias | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "criticar-ciclo-001",
+      "role": "Critico adversarial",
+      "mission": "encontrar fallas antes de aplicar cambios | ciclo intensivo 1/1",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "base/entradas/main - copia.tex",
+      "ok": false,
+      "returncode": 12,
+      "stdout_tail": "/tex/latex/lm/ts1lmr.fd) [1.1{c:/texlive/2026/texmf-\nvar/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dv\nips/lm/lm-ec.enc} <c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla\n-Informe/img/departamentos/fcfm.pdf>] [1.2] (.build/latex/aux/main - copia.toc)\n[2.3]\n(c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/e\nxample.tex [1.4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:\n/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-di\nst/fonts/enc/dvips/lm/lm-mathsy.enc} <c:/Users/delaCruz/Documents/AulaTeX-Acade\nmico/base/Plantilla-Informe/img/ejemplos/test-image.png>] [2.5{c:/texlive/2026/\ntexmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <c:/Users/delaCruz/Documents/AulaT\neX-Academico/base/Plantilla-Informe/img/ejemplos/test-image-wrap.jpg>] [3.6]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty) [4.7]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty) [5.8] [6.9]\n(.build/latex/aux/main - copia.bbl) [7.10]\n\nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311: LaTeX Error: Key 'BKM/numbered' accepts boolean values only.\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.311 \\end{appendixd}\n                     \nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on \".build/latex/aux/main - copia.log\".\nLatexmk: Getting log file '.build/latex/aux/main - copia.log'\nLatexmk: Examining '.build/latex/aux/main - copia.fls'\nLatexmk: Examining '.build/latex/aux/main - copia.log'\nLatexmk: Found input bbl file '.build/latex/aux/main - copia.bbl'\n  ===Source file '.build/latex/aux/main - copia.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/library.bib\nLatexmk: Errors, in force_mode: so I tried finishing targets\nCollected error summary (may duplicate other messages):\n  pdflatex: Command for 'pdflatex' gave return code 1\n      Refer to '.build/latex/aux/main - copia.log' and/or above output for details\n\n",
+      "stderr_tail": "Latexmk: Missing input file 'main - copia.toc' message in .log file:\n  No file \"main - copia\".toc.\nLatexmk: Missing bbl file '.build/latex/aux/main - copia.bbl' in following:\n No file \"main - copia\".bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nFailure to make '.build/latex/main - copia.pdf'\nC:\\texlive\\2026\\bin\\windows\\runscript.tlu:933: command failed with exit code 12:\nperl.exe c:\\texlive\\2026\\texmf-dist\\scripts\\latexmk\\latexmk.pl -f -pdf -interaction=nonstopmode -file-line-error  \"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\base\\entradas\\main - copia.tex\"\n"
+    }
+  ],
+  "extractor": {
+    "enabled": false
+  },
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": ".",
+    "artifacts": [
+      "referencias-AulaTeX-Academico",
+      "planeaciones-AulaTeX-Academico",
+      "assets-AulaTeX-Academico",
+      "README.md",
+      "COMPILACION-AulaTeX-Academico.md",
+      "programa-analitico-AulaTeX-Academico.md",
+      "AulaTeX-Academico.bib",
+      "reporte-AulaTeX-Academico.tex",
+      "reporte-AulaTeX-Academico-Actividad-1.tex",
+      "presentacion-AulaTeX-Academico.tex",
+      "presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: README.md",
+      "Materializado: COMPILACION-AulaTeX-Academico.md",
+      "Materializado: programa-analitico-AulaTeX-Academico.md",
+      "Materializado: AulaTeX-Academico.bib",
+      "Materializado: reporte-AulaTeX-Academico.tex",
+      "Materializado: reporte-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: presentacion-AulaTeX-Academico.tex",
+      "Materializado: presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0,
+      "Investigador documental": 0.0,
+      "Arquitecto de plantillas": 0.0,
+      "Verificador y validador": 0.0,
+      "Critico adversarial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex, Codex, Codex, Codex, Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-07 22:02:59",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-07 22:03:00",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar-ciclo-001: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:03:36",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:03:36",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-07 22:03:36",
+      "state": "planned",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "investigar-ciclo-001: Investigador documental via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:04:13",
+      "state": "planned",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "investigar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:04:13",
+      "state": "researched",
+      "action": "planned->researched",
+      "status": "ok",
+      "detail": "diagnostico documental producido"
+    },
+    {
+      "timestamp": "2026-07-07 22:04:13",
+      "state": "researched",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "generar-ciclo-001: Arquitecto de plantillas via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:04:50",
+      "state": "researched",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "generar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:04:50",
+      "state": "generated",
+      "action": "researched->generated",
+      "status": "ok",
+      "detail": "propuesta editorial producida"
+    },
+    {
+      "timestamp": "2026-07-07 22:04:50",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "validar-ciclo-001: Verificador y validador via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:05:24",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "validar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:05:24",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "criticar-ciclo-001: Critico adversarial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:06:01",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "criticar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:06:01",
+      "state": "generated",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-07-07 22:06:01",
+      "state": "generated",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "12 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-07-07 22:06:01",
+      "state": "generated",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-07-07 22:07:27",
+      "state": "generated",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "base/entradas/main - copia.tex rc=12"
+    },
+    {
+      "timestamp": "2026-07-07 22:07:27",
+      "state": "compiled",
+      "action": "generated->compiled",
+      "status": "ok",
+      "detail": "compilacion latexmk ejecutada"
+    },
+    {
+      "timestamp": "2026-07-07 22:07:27",
+      "state": "compiled",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-07 22:07:27",
+      "state": "evaluated",
+      "action": "compiled->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-07 22:07:27",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}
+```
+
+## 20260707-221001 - generar-plantilla
+
+```json
+{
+  "run_id": "20260707-221001",
+  "target": ".",
+  "display_target": ".",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "cycle_mode": "full",
+  "requested_iterations": 1,
+  "expanded_task_count": 5,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar-ciclo-001",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "investigar-ciclo-001",
+      "role": "Investigador documental",
+      "mission": "detectar fuentes, contexto curricular y faltantes editoriales | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "generar-ciclo-001",
+      "role": "Arquitecto de plantillas",
+      "mission": "proponer estructura de reporte/presentacion y actividad | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "validar-ciclo-001",
+      "role": "Verificador y validador",
+      "mission": "verificar consistencia, compilacion y evidencias | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "criticar-ciclo-001",
+      "role": "Critico adversarial",
+      "mission": "encontrar fallas antes de aplicar cambios | ciclo intensivo 1/1",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "base/entradas/main - copia.tex",
+      "ok": false,
+      "returncode": 12,
+      "stdout_tail": "/tex/latex/lm/ts1lmr.fd) [1.1{c:/texlive/2026/texmf-\nvar/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dv\nips/lm/lm-ec.enc} <c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla\n-Informe/img/departamentos/fcfm.pdf>] [1.2] (.build/latex/aux/main - copia.toc)\n[2.3]\n(c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/e\nxample.tex [1.4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:\n/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-di\nst/fonts/enc/dvips/lm/lm-mathsy.enc} <c:/Users/delaCruz/Documents/AulaTeX-Acade\nmico/base/Plantilla-Informe/img/ejemplos/test-image.png>] [2.5{c:/texlive/2026/\ntexmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <c:/Users/delaCruz/Documents/AulaT\neX-Academico/base/Plantilla-Informe/img/ejemplos/test-image-wrap.jpg>] [3.6]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty) [4.7]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty) [5.8] [6.9]\n(.build/latex/aux/main - copia.bbl) [7.10]\n\nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311: LaTeX Error: Key 'BKM/numbered' accepts boolean values only.\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.311 \\end{appendixd}\n                     \nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on \".build/latex/aux/main - copia.log\".\nLatexmk: Getting log file '.build/latex/aux/main - copia.log'\nLatexmk: Examining '.build/latex/aux/main - copia.fls'\nLatexmk: Examining '.build/latex/aux/main - copia.log'\nLatexmk: Found input bbl file '.build/latex/aux/main - copia.bbl'\n  ===Source file '.build/latex/aux/main - copia.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/library.bib\nLatexmk: Errors, in force_mode: so I tried finishing targets\nCollected error summary (may duplicate other messages):\n  pdflatex: Command for 'pdflatex' gave return code 1\n      Refer to '.build/latex/aux/main - copia.log' and/or above output for details\n\n",
+      "stderr_tail": "Latexmk: Missing input file 'main - copia.toc' message in .log file:\n  No file \"main - copia\".toc.\nLatexmk: Missing bbl file '.build/latex/aux/main - copia.bbl' in following:\n No file \"main - copia\".bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nFailure to make '.build/latex/main - copia.pdf'\nC:\\texlive\\2026\\bin\\windows\\runscript.tlu:933: command failed with exit code 12:\nperl.exe c:\\texlive\\2026\\texmf-dist\\scripts\\latexmk\\latexmk.pl -f -pdf -interaction=nonstopmode -file-line-error  \"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\base\\entradas\\main - copia.tex\"\n"
+    }
+  ],
+  "extractor": {
+    "enabled": false
+  },
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": ".",
+    "artifacts": [
+      "referencias-AulaTeX-Academico",
+      "planeaciones-AulaTeX-Academico",
+      "assets-AulaTeX-Academico",
+      "README.md",
+      "COMPILACION-AulaTeX-Academico.md",
+      "programa-analitico-AulaTeX-Academico.md",
+      "AulaTeX-Academico.bib",
+      "reporte-AulaTeX-Academico.tex",
+      "reporte-AulaTeX-Academico-Actividad-1.tex",
+      "presentacion-AulaTeX-Academico.tex",
+      "presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: README.md",
+      "Materializado: COMPILACION-AulaTeX-Academico.md",
+      "Materializado: programa-analitico-AulaTeX-Academico.md",
+      "Materializado: AulaTeX-Academico.bib",
+      "Materializado: reporte-AulaTeX-Academico.tex",
+      "Materializado: reporte-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: presentacion-AulaTeX-Academico.tex",
+      "Materializado: presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0,
+      "Investigador documental": 0.0,
+      "Arquitecto de plantillas": 0.0,
+      "Verificador y validador": 0.0,
+      "Critico adversarial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex, Codex, Codex, Codex, Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-07 22:10:01",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-07 22:10:03",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar-ciclo-001: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:10:39",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:10:39",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-07 22:10:39",
+      "state": "planned",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "investigar-ciclo-001: Investigador documental via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:11:13",
+      "state": "planned",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "investigar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:11:13",
+      "state": "researched",
+      "action": "planned->researched",
+      "status": "ok",
+      "detail": "diagnostico documental producido"
+    },
+    {
+      "timestamp": "2026-07-07 22:11:13",
+      "state": "researched",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "generar-ciclo-001: Arquitecto de plantillas via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:11:47",
+      "state": "researched",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "generar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:11:47",
+      "state": "generated",
+      "action": "researched->generated",
+      "status": "ok",
+      "detail": "propuesta editorial producida"
+    },
+    {
+      "timestamp": "2026-07-07 22:11:47",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "validar-ciclo-001: Verificador y validador via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:12:23",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "validar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:12:23",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "criticar-ciclo-001: Critico adversarial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:13:00",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "criticar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:13:00",
+      "state": "generated",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-07-07 22:13:00",
+      "state": "generated",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "12 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-07-07 22:13:00",
+      "state": "generated",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-07-07 22:14:14",
+      "state": "generated",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "base/entradas/main - copia.tex rc=12"
+    },
+    {
+      "timestamp": "2026-07-07 22:14:14",
+      "state": "compiled",
+      "action": "generated->compiled",
+      "status": "ok",
+      "detail": "compilacion latexmk ejecutada"
+    },
+    {
+      "timestamp": "2026-07-07 22:14:14",
+      "state": "compiled",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-07 22:14:14",
+      "state": "evaluated",
+      "action": "compiled->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-07 22:14:14",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}
+```
+
+## 20260707-221633 - generar-plantilla
+
+```json
+{
+  "run_id": "20260707-221633",
+  "target": ".",
+  "display_target": ".",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "cycle_mode": "full",
+  "requested_iterations": 1,
+  "expanded_task_count": 5,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar-ciclo-001",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "investigar-ciclo-001",
+      "role": "Investigador documental",
+      "mission": "detectar fuentes, contexto curricular y faltantes editoriales | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "generar-ciclo-001",
+      "role": "Arquitecto de plantillas",
+      "mission": "proponer estructura de reporte/presentacion y actividad | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "validar-ciclo-001",
+      "role": "Verificador y validador",
+      "mission": "verificar consistencia, compilacion y evidencias | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "criticar-ciclo-001",
+      "role": "Critico adversarial",
+      "mission": "encontrar fallas antes de aplicar cambios | ciclo intensivo 1/1",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "base/entradas/main - copia.tex",
+      "ok": false,
+      "returncode": 12,
+      "stdout_tail": "/tex/latex/lm/ts1lmr.fd) [1.1{c:/texlive/2026/texmf-\nvar/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dv\nips/lm/lm-ec.enc} <c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla\n-Informe/img/departamentos/fcfm.pdf>] [1.2] (.build/latex/aux/main - copia.toc)\n[2.3]\n(c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/e\nxample.tex [1.4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:\n/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-di\nst/fonts/enc/dvips/lm/lm-mathsy.enc} <c:/Users/delaCruz/Documents/AulaTeX-Acade\nmico/base/Plantilla-Informe/img/ejemplos/test-image.png>] [2.5{c:/texlive/2026/\ntexmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <c:/Users/delaCruz/Documents/AulaT\neX-Academico/base/Plantilla-Informe/img/ejemplos/test-image-wrap.jpg>] [3.6]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty) [4.7]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty) [5.8] [6.9]\n(.build/latex/aux/main - copia.bbl) [7.10]\n\nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311: LaTeX Error: Key 'BKM/numbered' accepts boolean values only.\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.311 \\end{appendixd}\n                     \nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on \".build/latex/aux/main - copia.log\".\nLatexmk: Getting log file '.build/latex/aux/main - copia.log'\nLatexmk: Examining '.build/latex/aux/main - copia.fls'\nLatexmk: Examining '.build/latex/aux/main - copia.log'\nLatexmk: Found input bbl file '.build/latex/aux/main - copia.bbl'\n  ===Source file '.build/latex/aux/main - copia.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/library.bib\nLatexmk: Errors, in force_mode: so I tried finishing targets\nCollected error summary (may duplicate other messages):\n  pdflatex: Command for 'pdflatex' gave return code 1\n      Refer to '.build/latex/aux/main - copia.log' and/or above output for details\n\n",
+      "stderr_tail": "Latexmk: Missing input file 'main - copia.toc' message in .log file:\n  No file \"main - copia\".toc.\nLatexmk: Missing bbl file '.build/latex/aux/main - copia.bbl' in following:\n No file \"main - copia\".bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nFailure to make '.build/latex/main - copia.pdf'\nC:\\texlive\\2026\\bin\\windows\\runscript.tlu:933: command failed with exit code 12:\nperl.exe c:\\texlive\\2026\\texmf-dist\\scripts\\latexmk\\latexmk.pl -f -pdf -interaction=nonstopmode -file-line-error  \"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\base\\entradas\\main - copia.tex\"\n"
+    }
+  ],
+  "extractor": {
+    "enabled": false
+  },
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": ".",
+    "artifacts": [
+      "referencias-AulaTeX-Academico",
+      "planeaciones-AulaTeX-Academico",
+      "assets-AulaTeX-Academico",
+      "README.md",
+      "COMPILACION-AulaTeX-Academico.md",
+      "programa-analitico-AulaTeX-Academico.md",
+      "AulaTeX-Academico.bib",
+      "reporte-AulaTeX-Academico.tex",
+      "reporte-AulaTeX-Academico-Actividad-1.tex",
+      "presentacion-AulaTeX-Academico.tex",
+      "presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: README.md",
+      "Materializado: COMPILACION-AulaTeX-Academico.md",
+      "Materializado: programa-analitico-AulaTeX-Academico.md",
+      "Materializado: AulaTeX-Academico.bib",
+      "Materializado: reporte-AulaTeX-Academico.tex",
+      "Materializado: reporte-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: presentacion-AulaTeX-Academico.tex",
+      "Materializado: presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0,
+      "Investigador documental": 0.0,
+      "Arquitecto de plantillas": 0.0,
+      "Verificador y validador": 0.0,
+      "Critico adversarial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex, Codex, Codex, Codex, Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-07 22:16:33",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-07 22:16:35",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar-ciclo-001: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:17:09",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:17:09",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-07 22:17:09",
+      "state": "planned",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "investigar-ciclo-001: Investigador documental via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:17:43",
+      "state": "planned",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "investigar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:17:43",
+      "state": "researched",
+      "action": "planned->researched",
+      "status": "ok",
+      "detail": "diagnostico documental producido"
+    },
+    {
+      "timestamp": "2026-07-07 22:17:43",
+      "state": "researched",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "generar-ciclo-001: Arquitecto de plantillas via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:18:17",
+      "state": "researched",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "generar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:18:17",
+      "state": "generated",
+      "action": "researched->generated",
+      "status": "ok",
+      "detail": "propuesta editorial producida"
+    },
+    {
+      "timestamp": "2026-07-07 22:18:17",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "validar-ciclo-001: Verificador y validador via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:18:51",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "validar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:18:51",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "criticar-ciclo-001: Critico adversarial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:19:26",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "criticar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:19:26",
+      "state": "generated",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-07-07 22:19:26",
+      "state": "generated",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "12 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-07-07 22:19:26",
+      "state": "generated",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-07-07 22:20:38",
+      "state": "generated",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "base/entradas/main - copia.tex rc=12"
+    },
+    {
+      "timestamp": "2026-07-07 22:20:38",
+      "state": "compiled",
+      "action": "generated->compiled",
+      "status": "ok",
+      "detail": "compilacion latexmk ejecutada"
+    },
+    {
+      "timestamp": "2026-07-07 22:20:38",
+      "state": "compiled",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-07 22:20:38",
+      "state": "evaluated",
+      "action": "compiled->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-07 22:20:38",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}
+```
+
+## 20260707-225112 - generar-plantilla
+
+```json
+{
+  "run_id": "20260707-225112",
+  "target": ".",
+  "display_target": ".",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "cycle_mode": "full",
+  "requested_iterations": 1,
+  "expanded_task_count": 5,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar-ciclo-001",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "investigar-ciclo-001",
+      "role": "Investigador documental",
+      "mission": "detectar fuentes, contexto curricular y faltantes editoriales | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "generar-ciclo-001",
+      "role": "Arquitecto de plantillas",
+      "mission": "proponer estructura de reporte/presentacion y actividad | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "validar-ciclo-001",
+      "role": "Verificador y validador",
+      "mission": "verificar consistencia, compilacion y evidencias | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "criticar-ciclo-001",
+      "role": "Critico adversarial",
+      "mission": "encontrar fallas antes de aplicar cambios | ciclo intensivo 1/1",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "base/entradas/main - copia.tex",
+      "ok": false,
+      "returncode": 12,
+      "stdout_tail": "/tex/latex/lm/ts1lmr.fd) [1.1{c:/texlive/2026/texmf-\nvar/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dv\nips/lm/lm-ec.enc} <c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla\n-Informe/img/departamentos/fcfm.pdf>] [1.2] (.build/latex/aux/main - copia.toc)\n[2.3]\n(c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/e\nxample.tex [1.4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:\n/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-di\nst/fonts/enc/dvips/lm/lm-mathsy.enc} <c:/Users/delaCruz/Documents/AulaTeX-Acade\nmico/base/Plantilla-Informe/img/ejemplos/test-image.png>] [2.5{c:/texlive/2026/\ntexmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <c:/Users/delaCruz/Documents/AulaT\neX-Academico/base/Plantilla-Informe/img/ejemplos/test-image-wrap.jpg>] [3.6]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty) [4.7]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty) [5.8] [6.9]\n(.build/latex/aux/main - copia.bbl) [7.10]\n\nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311: LaTeX Error: Key 'BKM/numbered' accepts boolean values only.\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.311 \\end{appendixd}\n                     \nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on \".build/latex/aux/main - copia.log\".\nLatexmk: Getting log file '.build/latex/aux/main - copia.log'\nLatexmk: Examining '.build/latex/aux/main - copia.fls'\nLatexmk: Examining '.build/latex/aux/main - copia.log'\nLatexmk: Found input bbl file '.build/latex/aux/main - copia.bbl'\n  ===Source file '.build/latex/aux/main - copia.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/library.bib\nLatexmk: Errors, in force_mode: so I tried finishing targets\nCollected error summary (may duplicate other messages):\n  pdflatex: Command for 'pdflatex' gave return code 1\n      Refer to '.build/latex/aux/main - copia.log' and/or above output for details\n\n",
+      "stderr_tail": "Latexmk: Missing input file 'main - copia.toc' message in .log file:\n  No file \"main - copia\".toc.\nLatexmk: Missing bbl file '.build/latex/aux/main - copia.bbl' in following:\n No file \"main - copia\".bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nFailure to make '.build/latex/main - copia.pdf'\nC:\\texlive\\2026\\bin\\windows\\runscript.tlu:933: command failed with exit code 12:\nperl.exe c:\\texlive\\2026\\texmf-dist\\scripts\\latexmk\\latexmk.pl -f -pdf -interaction=nonstopmode -file-line-error  \"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\base\\entradas\\main - copia.tex\"\n"
+    }
+  ],
+  "extractor": {
+    "enabled": false
+  },
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": ".",
+    "artifacts": [
+      "referencias-AulaTeX-Academico",
+      "planeaciones-AulaTeX-Academico",
+      "assets-AulaTeX-Academico",
+      "README.md",
+      "COMPILACION-AulaTeX-Academico.md",
+      "programa-analitico-AulaTeX-Academico.md",
+      "AulaTeX-Academico.bib",
+      "reporte-AulaTeX-Academico.tex",
+      "reporte-AulaTeX-Academico-Actividad-1.tex",
+      "presentacion-AulaTeX-Academico.tex",
+      "presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: README.md",
+      "Materializado: COMPILACION-AulaTeX-Academico.md",
+      "Materializado: programa-analitico-AulaTeX-Academico.md",
+      "Materializado: AulaTeX-Academico.bib",
+      "Materializado: reporte-AulaTeX-Academico.tex",
+      "Materializado: reporte-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: presentacion-AulaTeX-Academico.tex",
+      "Materializado: presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0,
+      "Investigador documental": 0.0,
+      "Arquitecto de plantillas": 0.0,
+      "Verificador y validador": 0.0,
+      "Critico adversarial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex, Codex, Codex, Codex, Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-07 22:51:13",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-07 22:51:14",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar-ciclo-001: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:51:53",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:51:53",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-07 22:51:53",
+      "state": "planned",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "investigar-ciclo-001: Investigador documental via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:52:31",
+      "state": "planned",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "investigar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:52:31",
+      "state": "researched",
+      "action": "planned->researched",
+      "status": "ok",
+      "detail": "diagnostico documental producido"
+    },
+    {
+      "timestamp": "2026-07-07 22:52:31",
+      "state": "researched",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "generar-ciclo-001: Arquitecto de plantillas via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:53:07",
+      "state": "researched",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "generar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:53:07",
+      "state": "generated",
+      "action": "researched->generated",
+      "status": "ok",
+      "detail": "propuesta editorial producida"
+    },
+    {
+      "timestamp": "2026-07-07 22:53:07",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "validar-ciclo-001: Verificador y validador via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:53:43",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "validar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:53:43",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "criticar-ciclo-001: Critico adversarial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 22:54:24",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "criticar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 22:54:24",
+      "state": "generated",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-07-07 22:54:24",
+      "state": "generated",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "12 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-07-07 22:54:24",
+      "state": "generated",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-07-07 22:55:38",
+      "state": "generated",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "base/entradas/main - copia.tex rc=12"
+    },
+    {
+      "timestamp": "2026-07-07 22:55:38",
+      "state": "compiled",
+      "action": "generated->compiled",
+      "status": "ok",
+      "detail": "compilacion latexmk ejecutada"
+    },
+    {
+      "timestamp": "2026-07-07 22:55:38",
+      "state": "compiled",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-07 22:55:38",
+      "state": "evaluated",
+      "action": "compiled->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-07 22:55:38",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}
+```
+
+## 20260707-230249 - generar-plantilla
+
+```json
+{
+  "run_id": "20260707-230249",
+  "target": ".",
+  "display_target": ".",
+  "level": "materia",
+  "action": "generar-plantilla",
+  "activity_number": 1,
+  "cycle_mode": "full",
+  "requested_iterations": 1,
+  "expanded_task_count": 5,
+  "generation_mode": "direct",
+  "parent_scope_key": "",
+  "child_level": "",
+  "child_name": "",
+  "child_preview": "",
+  "engines": [
+    "Codex"
+  ],
+  "agentic_patterns": [
+    "planning-memory",
+    "tool-using-workflow",
+    "verification-validation",
+    "collective-consensus"
+  ],
+  "tasks": [
+    {
+      "stage": "planificar-ciclo-001",
+      "role": "Planificador editorial",
+      "mission": "descomponer el objetivo en plan ejecutable y criterios de aceptacion | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "investigar-ciclo-001",
+      "role": "Investigador documental",
+      "mission": "detectar fuentes, contexto curricular y faltantes editoriales | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "generar-ciclo-001",
+      "role": "Arquitecto de plantillas",
+      "mission": "proponer estructura de reporte/presentacion y actividad | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "validar-ciclo-001",
+      "role": "Verificador y validador",
+      "mission": "verificar consistencia, compilacion y evidencias | ciclo intensivo 1/1",
+      "engine": "Codex"
+    },
+    {
+      "stage": "criticar-ciclo-001",
+      "role": "Critico adversarial",
+      "mission": "encontrar fallas antes de aplicar cambios | ciclo intensivo 1/1",
+      "engine": "Codex"
+    }
+  ],
+  "llm_results": [
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    },
+    {
+      "engine": "Codex",
+      "ok": false,
+      "error": "HTTP 503.",
+      "chars": 0
+    }
+  ],
+  "compile_results": [
+    {
+      "tex": "base/entradas/main - copia.tex",
+      "ok": false,
+      "returncode": 12,
+      "stdout_tail": "/tex/latex/lm/ts1lmr.fd) [1.1{c:/texlive/2026/texmf-\nvar/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dv\nips/lm/lm-ec.enc} <c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla\n-Informe/img/departamentos/fcfm.pdf>] [1.2] (.build/latex/aux/main - copia.toc)\n[2.3]\n(c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/e\nxample.tex [1.4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:\n/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2026/texmf-di\nst/fonts/enc/dvips/lm/lm-mathsy.enc} <c:/Users/delaCruz/Documents/AulaTeX-Acade\nmico/base/Plantilla-Informe/img/ejemplos/test-image.png>] [2.5{c:/texlive/2026/\ntexmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <c:/Users/delaCruz/Documents/AulaT\neX-Academico/base/Plantilla-Informe/img/ejemplos/test-image-wrap.jpg>] [3.6]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty) [4.7]\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang2.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty)\n(c:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty) [5.8] [6.9]\n(.build/latex/aux/main - copia.bbl) [7.10]\n\nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311: LaTeX Error: Key 'BKM/numbered' accepts boolean values only.\n\nFor immediate help type H <return>.\n ...                                              \n                                                  \nl.311 \\end{appendixd}\n                     \nc:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/src/etc/ex\nample.tex:311:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on \".build/latex/aux/main - copia.log\".\nLatexmk: Getting log file '.build/latex/aux/main - copia.log'\nLatexmk: Examining '.build/latex/aux/main - copia.fls'\nLatexmk: Examining '.build/latex/aux/main - copia.log'\nLatexmk: Found input bbl file '.build/latex/aux/main - copia.bbl'\n  ===Source file '.build/latex/aux/main - copia.bbl' for 'pdflatex'\nLatexmk: Found bibliography file(s):\n  c:/Users/delaCruz/Documents/AulaTeX-Academico/base/Plantilla-Informe/library.bib\nLatexmk: Errors, in force_mode: so I tried finishing targets\nCollected error summary (may duplicate other messages):\n  pdflatex: Command for 'pdflatex' gave return code 1\n      Refer to '.build/latex/aux/main - copia.log' and/or above output for details\n\n",
+      "stderr_tail": "Latexmk: Missing input file 'main - copia.toc' message in .log file:\n  No file \"main - copia\".toc.\nLatexmk: Missing bbl file '.build/latex/aux/main - copia.bbl' in following:\n No file \"main - copia\".bbl.\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nLatexmk: Using bibtex to make bibliography file(s).\nFailure to make '.build/latex/main - copia.pdf'\nC:\\texlive\\2026\\bin\\windows\\runscript.tlu:933: command failed with exit code 12:\nperl.exe c:\\texlive\\2026\\texmf-dist\\scripts\\latexmk\\latexmk.pl -f -pdf -interaction=nonstopmode -file-line-error  \"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\base\\entradas\\main - copia.tex\"\n"
+    }
+  ],
+  "extractor": {
+    "enabled": false
+  },
+  "materialization": {
+    "enabled": true,
+    "ok": true,
+    "target_dir": ".",
+    "artifacts": [
+      "referencias-AulaTeX-Academico",
+      "planeaciones-AulaTeX-Academico",
+      "assets-AulaTeX-Academico",
+      "README.md",
+      "COMPILACION-AulaTeX-Academico.md",
+      "programa-analitico-AulaTeX-Academico.md",
+      "AulaTeX-Academico.bib",
+      "reporte-AulaTeX-Academico.tex",
+      "reporte-AulaTeX-Academico-Actividad-1.tex",
+      "presentacion-AulaTeX-Academico.tex",
+      "presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "estructura-aulatex.json"
+    ],
+    "notes": [
+      "Materializado: README.md",
+      "Materializado: COMPILACION-AulaTeX-Academico.md",
+      "Materializado: programa-analitico-AulaTeX-Academico.md",
+      "Materializado: AulaTeX-Academico.bib",
+      "Materializado: reporte-AulaTeX-Academico.tex",
+      "Materializado: reporte-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: presentacion-AulaTeX-Academico.tex",
+      "Materializado: presentacion-AulaTeX-Academico-Actividad-1.tex",
+      "Materializado: estructura-aulatex.json"
+    ]
+  },
+  "consensus": {
+    "consensus_score": 0.0,
+    "passed": false,
+    "criteria": {
+      "identidad_institucional": false,
+      "bibliografia": false,
+      "trazabilidad": false,
+      "compilacion": false,
+      "riesgos": false
+    },
+    "role_scores": {
+      "Planificador editorial": 0.0,
+      "Investigador documental": 0.0,
+      "Arquitecto de plantillas": 0.0,
+      "Verificador y validador": 0.0,
+      "Critico adversarial": 0.0
+    },
+    "risks": [
+      "Criterio sin cobertura: identidad_institucional",
+      "Criterio sin cobertura: bibliografia",
+      "Criterio sin cobertura: trazabilidad",
+      "Criterio sin cobertura: compilacion",
+      "Criterio sin cobertura: riesgos",
+      "LLM sin respuesta util: Codex, Codex, Codex, Codex, Codex"
+    ],
+    "recommendations": [
+      "Ejecutar un ciclo de recuperacion documental antes de generar actividad final.",
+      "Activar compilacion y anexar logs latexmk al siguiente ciclo.",
+      "Repetir con al menos tres roles: investigador, arquitecto y critico."
+    ]
+  },
+  "workflow_events": [
+    {
+      "timestamp": "2026-07-07 23:02:49",
+      "state": "initialized",
+      "action": "init",
+      "status": "ok",
+      "detail": "AulaTeX workflow initialized"
+    },
+    {
+      "timestamp": "2026-07-07 23:02:51",
+      "state": "initialized",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "planificar-ciclo-001: Planificador editorial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 23:03:31",
+      "state": "initialized",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "planificar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 23:03:31",
+      "state": "planned",
+      "action": "initialized->planned",
+      "status": "ok",
+      "detail": "plan editorial producido"
+    },
+    {
+      "timestamp": "2026-07-07 23:03:31",
+      "state": "planned",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "investigar-ciclo-001: Investigador documental via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 23:04:06",
+      "state": "planned",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "investigar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 23:04:06",
+      "state": "researched",
+      "action": "planned->researched",
+      "status": "ok",
+      "detail": "diagnostico documental producido"
+    },
+    {
+      "timestamp": "2026-07-07 23:04:06",
+      "state": "researched",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "generar-ciclo-001: Arquitecto de plantillas via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 23:04:40",
+      "state": "researched",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "generar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 23:04:40",
+      "state": "generated",
+      "action": "researched->generated",
+      "status": "ok",
+      "detail": "propuesta editorial producida"
+    },
+    {
+      "timestamp": "2026-07-07 23:04:40",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "validar-ciclo-001: Verificador y validador via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 23:05:18",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "validar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 23:05:18",
+      "state": "generated",
+      "action": "llm-start",
+      "status": "ok",
+      "detail": "criticar-ciclo-001: Critico adversarial via Codex"
+    },
+    {
+      "timestamp": "2026-07-07 23:05:59",
+      "state": "generated",
+      "action": "llm-end",
+      "status": "error",
+      "detail": "criticar-ciclo-001: HTTP 503."
+    },
+    {
+      "timestamp": "2026-07-07 23:05:59",
+      "state": "generated",
+      "action": "materialize-start",
+      "status": "ok",
+      "detail": "generar-plantilla materializara estructura canonica de archivos"
+    },
+    {
+      "timestamp": "2026-07-07 23:05:59",
+      "state": "generated",
+      "action": "materialize-end",
+      "status": "ok",
+      "detail": "12 artefactos procesados"
+    },
+    {
+      "timestamp": "2026-07-07 23:05:59",
+      "state": "generated",
+      "action": "tool-select",
+      "status": "ok",
+      "detail": "latexmk-build.ps1 seleccionado para compilar objetivos canonicos"
+    },
+    {
+      "timestamp": "2026-07-07 23:07:07",
+      "state": "generated",
+      "action": "tool-result",
+      "status": "error",
+      "detail": "base/entradas/main - copia.tex rc=12"
+    },
+    {
+      "timestamp": "2026-07-07 23:07:07",
+      "state": "compiled",
+      "action": "generated->compiled",
+      "status": "ok",
+      "detail": "compilacion latexmk ejecutada"
+    },
+    {
+      "timestamp": "2026-07-07 23:07:07",
+      "state": "compiled",
+      "action": "consensus",
+      "status": "warn",
+      "detail": "score=0.00"
+    },
+    {
+      "timestamp": "2026-07-07 23:07:07",
+      "state": "evaluated",
+      "action": "compiled->evaluated",
+      "status": "ok",
+      "detail": "validacion y consenso completados"
+    },
+    {
+      "timestamp": "2026-07-07 23:07:07",
+      "state": "finalized",
+      "action": "evaluated->finalized",
+      "status": "ok",
+      "detail": "ciclo agentico cerrado"
+    }
+  ]
+}
+```

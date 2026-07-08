@@ -1,0 +1,15 @@
+{
+  "run_id": "20260707-201003-activity-01-bib-repair",
+  "workflow_backend": "langgraph",
+  "target_tex": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/reporte-filosofia-del-derecho-Actividad-1.tex",
+  "bib_ref": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/filosofia-del-derecho.bib",
+  "apply": false,
+  "backup": true,
+  "changed": false,
+  "missing_keys": [],
+  "replacements": [],
+  "actionable_count": 0,
+  "unresolved_count": 0,
+  "observation": "retroalimentacion-editorial/aulatex/bibliography-repair/runs/20260707-201003-activity-01-bib-repair/observer/20260707-201003-activity-01-observer/estado-agente.json",
+  "patched_preview": "retroalimentacion-editorial/aulatex/bibliography-repair/runs/20260707-201003-activity-01-bib-repair/reporte-filosofia-del-derecho-Actividad-1.tex"
+}

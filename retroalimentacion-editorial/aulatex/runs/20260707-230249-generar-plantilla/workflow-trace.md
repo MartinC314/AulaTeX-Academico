@@ -1,0 +1,24 @@
+# Auditoria agentica AulaTeX
+
+- 2026-07-07 23:02:49 [ok] `initialized` init: AulaTeX workflow initialized
+- 2026-07-07 23:02:51 [ok] `initialized` llm-start: planificar-ciclo-001: Planificador editorial via Codex
+- 2026-07-07 23:03:31 [error] `initialized` llm-end: planificar-ciclo-001: HTTP 503.
+- 2026-07-07 23:03:31 [ok] `planned` initialized->planned: plan editorial producido
+- 2026-07-07 23:03:31 [ok] `planned` llm-start: investigar-ciclo-001: Investigador documental via Codex
+- 2026-07-07 23:04:06 [error] `planned` llm-end: investigar-ciclo-001: HTTP 503.
+- 2026-07-07 23:04:06 [ok] `researched` planned->researched: diagnostico documental producido
+- 2026-07-07 23:04:06 [ok] `researched` llm-start: generar-ciclo-001: Arquitecto de plantillas via Codex
+- 2026-07-07 23:04:40 [error] `researched` llm-end: generar-ciclo-001: HTTP 503.
+- 2026-07-07 23:04:40 [ok] `generated` researched->generated: propuesta editorial producida
+- 2026-07-07 23:04:40 [ok] `generated` llm-start: validar-ciclo-001: Verificador y validador via Codex
+- 2026-07-07 23:05:18 [error] `generated` llm-end: validar-ciclo-001: HTTP 503.
+- 2026-07-07 23:05:18 [ok] `generated` llm-start: criticar-ciclo-001: Critico adversarial via Codex
+- 2026-07-07 23:05:59 [error] `generated` llm-end: criticar-ciclo-001: HTTP 503.
+- 2026-07-07 23:05:59 [ok] `generated` materialize-start: generar-plantilla materializara estructura canonica de archivos
+- 2026-07-07 23:05:59 [ok] `generated` materialize-end: 12 artefactos procesados
+- 2026-07-07 23:05:59 [ok] `generated` tool-select: latexmk-build.ps1 seleccionado para compilar objetivos canonicos
+- 2026-07-07 23:07:07 [error] `generated` tool-result: base/entradas/main - copia.tex rc=12
+- 2026-07-07 23:07:07 [ok] `compiled` generated->compiled: compilacion latexmk ejecutada
+- 2026-07-07 23:07:07 [warn] `compiled` consensus: score=0.00
+- 2026-07-07 23:07:07 [ok] `evaluated` compiled->evaluated: validacion y consenso completados
+- 2026-07-07 23:07:07 [ok] `finalized` evaluated->finalized: ciclo agentico cerrado
