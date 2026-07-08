@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\run.py", line 9, in <module>
-    from fichador.cli import main as cli_main
-  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\src\fichador\cli.py", line 10, in <module>
-    from .document_reader import extract_pages_from_sources, parse_extensions, SUPPORTED_EXTENSIONS, read_any_text_file
-  File "C:\Users\delaCruz\Documents\AulaTeX-Academico\scripts\extractor-conceptos-ideas\src\fichador\document_reader.py", line 7, in <module>
-    from docx import Document
-ModuleNotFoundError: No module named 'docx'

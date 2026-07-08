@@ -1,8 +1,0 @@
-[1/5] Leyendo fuente(s): C:\Users\delaCruz\Documents\AulaTeX-Academico\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\referencias-derecho-a-la-seguridad-social
-      Fuentes cargadas: 1 | Páginas/bloques: 1
-      Tipos: md=1
-[2/5] Dividiendo corpus en fragmentos citables
-      Fragmentos: 1
-      Interpretación de planeación: verbos=desarrollar
-      Confianza parser local de planeación: 0.00
-      Refinando estructura de planeación con Anthropic Foundry
