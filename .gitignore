@@ -24,7 +24,6 @@
 
 # Releases
 *.zip
-!retroalimentacion-editorial/fuentes/template-latex-web/**/*.zip
 
 # Windows
 desktop.ini
@@ -58,6 +57,7 @@ base/Plantilla-Informe/dist/template_config.tex
 # Archivos temporales
 .build/
 .aulatex-temp/
+retroalimentacion-editorial/
 salidas/
 .venv/
 logs-compilacion-tex/
