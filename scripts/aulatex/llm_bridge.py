@@ -16,9 +16,16 @@ from .config import ENGINE_ENV_PREFIX, LLM_ENGINES, load_aulatex_env
 
 
 _FALSE_VALUES = {"0", "false", "no", "off"}
+_TRUE_VALUES = {"1", "true", "yes", "on", "si", "sí"}
 DEFAULT_MAX_TOKENS = 200_000
 DEFAULT_TIMEOUT_SECONDS = 300
 _MIN_MAX_TOKENS = 16
+_THEORETICAL_LIMITS = {
+    "gpt-5.4-pro": {"input": 922_000, "output": 128_000},
+    "model-router": {"input": 1_015_808, "output": 32_768},
+    "gpt-5.3-codex": {"input": 272_000, "output": 128_000},
+    "claude-opus-4-8": {"input": 1_000_000, "output": 128_000},
+}
 
 
 @dataclass(frozen=True)
@@ -234,7 +241,10 @@ def call_llm_text(
         raise RuntimeError(f"Configuracion LLM incompleta para {selected}")
     requests_mod = _require_requests()
 
+    theoretical = _theoretical_limits_for(config)
+    _raise_if_prompt_exceeds_theoretical_limit(prompt, theoretical)
     max_output = _normalize_requested_max_tokens(max_tokens)
+    max_output = _cap_output_to_theoretical_limit(max_output, theoretical)
     timeout = _normalize_timeout(timeout_seconds, max_output, config.timeout_seconds)
     if config.is_anthropic():
         response = requests_mod.post(
@@ -273,7 +283,10 @@ def call_llm_multimodal(
         raise RuntimeError(f"Configuracion LLM incompleta para {selected}")
     requests_mod = _require_requests()
 
+    theoretical = _theoretical_limits_for(config)
+    _raise_if_prompt_exceeds_theoretical_limit(prompt, theoretical)
     max_output = _normalize_requested_max_tokens(max_tokens)
+    max_output = _cap_output_to_theoretical_limit(max_output, theoretical)
     timeout = _normalize_timeout(timeout_seconds, max_output, config.timeout_seconds)
     encoded = base64.b64encode(image_bytes).decode("ascii")
 
@@ -502,6 +515,34 @@ def _friendly_error(exc: Exception) -> str:
 
 def _normalize_requested_max_tokens(max_tokens: int) -> int:
     return max(_MIN_MAX_TOKENS, min(DEFAULT_MAX_TOKENS, int(max_tokens)))
+
+
+def _theoretical_limits_enabled() -> bool:
+    return _env("AULATEX_ENFORCE_THEORETICAL_LIMITS", "1").lower() in _TRUE_VALUES
+
+
+def _theoretical_limits_for(config: AulaTeXLLMConfig) -> dict[str, int]:
+    deployment = config.deployment.strip()
+    return _THEORETICAL_LIMITS.get(deployment, {}) if _theoretical_limits_enabled() else {}
+
+
+def _cap_output_to_theoretical_limit(max_output: int, limits: dict[str, int]) -> int:
+    output_limit = int(limits.get("output", 0) or 0)
+    if output_limit <= 0:
+        return max_output
+    return max(_MIN_MAX_TOKENS, min(max_output, output_limit))
+
+
+def _raise_if_prompt_exceeds_theoretical_limit(prompt: str, limits: dict[str, int]) -> None:
+    input_limit = int(limits.get("input", 0) or 0)
+    if input_limit <= 0:
+        return
+    estimated_tokens = max(1, (len(prompt) + 3) // 4)
+    if estimated_tokens > input_limit:
+        raise RuntimeError(
+            f"El prompt excede el limite teorico de entrada del deployment ({estimated_tokens} estimados > {input_limit}). "
+            "Divide el contexto o usa un deployment con mayor ventana."
+        )
 
 
 def _normalize_timeout(requested_timeout_seconds: int, max_tokens: int, config_timeout_seconds: int) -> int:

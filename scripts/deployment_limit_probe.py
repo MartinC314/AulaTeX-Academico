@@ -364,7 +364,7 @@ def run_attempt(
         usage = extract_usage(payload)
         text = extract_text(payload)
         finish_reason = extract_finish_reason(payload)
-        ok = usage["output_tokens"] > 0 or len(text) > 0
+        ok = True if phase == "input" else (usage["output_tokens"] > 0 or len(text) > 0)
         return ProbeAttempt(
             phase=phase,
             requested_input_tokens=input_target_tokens,
