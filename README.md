@@ -360,13 +360,6 @@ CODEX_API_VERSION=2026-02-24
         "maxOutputTokens": 128000
       },
       {
-        "id": "claude-opus-4-8",
-        "name": "claude-opus-4-8",
-        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/anthropic/v1/messages",
-        "maxInputTokens": 1000000,
-        "maxOutputTokens": 128000
-      },
-      {
         "id": "gpt-5.3-codex",
         "name": "gpt-5.3-codex",
         "url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/responses",
@@ -377,11 +370,9 @@ CODEX_API_VERSION=2026-02-24
 
 ## Límites de tokens y tiempo de espera
 
-Los valores siguientes son referencias teóricas/configuradas y resultados de prueba; no se usan como topes operativos rígidos. AulaTeX sólo añade manejadores para casos que intenten superar los límites teóricos conocidos: recorta `max_output_tokens` al máximo teórico del deployment y falla temprano con un mensaje claro si el prompt estimado excede la ventana de entrada teórica.
+Los valores siguientes distinguen tres capas: límites teóricos declarados/configurados, límites probados por llamadas reales y límites operativos que usa AulaTeX para estabilizar la ejecución local. Las pruebas se ejecutaron el 2026-07-08 con `scripts/validar-limites-deployments.ps1`. Los artefactos principales están en `.aulatex-temp/deployment-limit-probe/runs/20260708-133615/`, con refinamientos en `20260708-163927`, `20260708-164136` y `20260708-164637`.
 
-Las pruebas se ejecutaron el 2026-07-08 con `scripts/validar-limites-deployments.ps1`. Los artefactos principales están en `.aulatex-temp/deployment-limit-probe/runs/20260708-133615/`, con refinamientos en `20260708-163927`, `20260708-164136` y `20260708-164637`.
-
-### Límites teóricos/configurados
+### Deployments validados
 
 | Deployment | Endpoint | Entrada teórica/configurada | Salida teórica/configurada |
 | --- | --- | ---: | ---: |
@@ -390,24 +381,23 @@ Las pruebas se ejecutaron el 2026-07-08 con `scripts/validar-limites-deployments
 | `Mistral-Large-3` | `chat/completions` | `126,976` | `4,096` |
 | `gpt-chat-latest` | `responses` | `72,000` | `128,000` |
 | `DeepSeek-V4-Pro` | `chat/completions` | `872,000` | `128,000` |
-| `claude-opus-4-8` | `anthropic/messages` | `1,000,000` | `128,000` |
 | `gpt-5.3-codex` | `responses` | `272,000` | `128,000` |
 
-### Resultados probados
+### Resultados probados y límites operativos
 
-| Deployment | Entrada probada | Latencia entrada | Salida solicitada aceptada | Salida observada | Latencia salida | Observación |
+| Deployment | Entrada probada | Latencia entrada | Salida probada solicitada | Salida observada | Latencia salida | Límite operativo establecido |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| `gpt-5.4-pro` | `138,300` | `41,378 ms` | no validada por `rate_limit` | `0` | `0 ms` | El bloqueo fue cuota/rate limit, no un cap local. |
-| `model-router` | `253,951` | `13,258 ms` | `29,491` | `1,161` | `58,515 ms` | La salida aceptada no garantiza salida larga real. |
-| `Mistral-Large-3` | no validada por alta demanda | `0 ms` | `4,096` | `607` | `49,334 ms` | Alta demanda impidió validar entrada. |
-| `gpt-chat-latest` | `72,000` | `6,006 ms` | `128,000` | `443` | `3,987 ms` | El valor configurado de entrada fue aceptado. |
-| `DeepSeek-V4-Pro` | no validada por alta demanda | `0 ms` | `128,000` | `8,815` | `114,011 ms` | Alta demanda impidió validar entrada. |
-| `gpt-5.3-codex` | `265,200` | `2,660 ms` | `128,000` | `341` | `3,430 ms` | El siguiente escalón falló por ventana de contexto. |
+| `gpt-5.4-pro` | `138,300` | `41,378 ms` | no validada por `rate_limit` | `0` | `0 ms` | entrada `138,300`; salida `8,192` conservadora. |
+| `model-router` | `253,951` | `13,258 ms` | `29,491` | `1,161` | `58,515 ms` | entrada `253,951`; salida `29,491`. |
+| `Mistral-Large-3` | no validada por alta demanda | `0 ms` | `4,096` | `607` | `49,334 ms` | entrada deshabilitada para lotes largos; salida `4,096`. |
+| `gpt-chat-latest` | `72,000` | `6,006 ms` | `128,000` | `443` | `3,987 ms` | entrada `72,000`; salida `128,000`. |
+| `DeepSeek-V4-Pro` | no validada por alta demanda | `0 ms` | `128,000` | `8,815` | `114,011 ms` | entrada deshabilitada para lotes largos; salida `128,000`, con latencia alta. |
+| `gpt-5.3-codex` | `265,200` | `2,660 ms` | `128,000` | `341` | `3,430 ms` | entrada `265,200`; salida `128,000`. |
 
-### Manejo en el workspace
+### Configuración operativa del workspace
 
-- `scripts/aulatex.env` sólo activa `AULATEX_ENFORCE_THEORETICAL_LIMITS=1`; no fija límites operativos por deployment.
-- `scripts/aulatex/llm_bridge.py` contiene manejadores de excedentes teóricos para los deployments conocidos de AulaTeX.
-- Si una solicitud pide más salida que el límite teórico, AulaTeX recorta la salida solicitada al máximo teórico.
-- Si el prompt de entrada estimado supera el límite teórico, AulaTeX falla antes de llamar al proveedor y recomienda dividir el contexto o usar un deployment con mayor ventana.
-- Los fallos por `rate_limit`, alta demanda o cuota no se convierten en límites locales: se tratan como condiciones operativas transitorias.
+- `scripts/aulatex.env` fija `AULATEX_OPERATIVE_INPUT_TOKENS_*` y `AULATEX_MAX_OUTPUT_TOKENS_*` con los valores anteriores.
+- `scripts/aulatex/llm_bridge.py` aplica `AULATEX_MAX_OUTPUT_TOKENS_<PREFIJO>` por motor antes de invocar el proveedor.
+- `scripts/prueeba-lote-ejecucion-1.ps1` usa defaults actualizados para presupuestos DNA y salida de los motores principales.
+- `0` o “no validada” en entrada probada significa que no se alcanzó éxito estable: la API falló por `rate_limit`, alta demanda o tamaño máximo permitido bajo carga antes de demostrar el límite duro del modelo.
+- La salida probada indica que la API aceptó el valor de `max_output_tokens`; no implica que el modelo haya producido esa cantidad completa de tokens.
