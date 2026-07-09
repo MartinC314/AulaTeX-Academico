@@ -31,11 +31,16 @@ class IntelligentEngineResult:
 
 
 class IntelligentEngine:
-    """Planificador v1 del motor inteligente editorial."""
+    """Planificador v1 del motor inteligente editorial.
+
+    Las corridas operativas se guardan en .aulatex-temp para evitar versionar
+    manifests, reportes y colas intermedias. La documentación estable debe vivir
+    fuera de esta carpeta si se quiere conservar.
+    """
 
     def __init__(self, workspace: AulaTeXWorkspace | None = None) -> None:
         self.workspace = workspace or AulaTeXWorkspace()
-        self.root = self.workspace.feedback_root / "intelligent-engine" / "runs"
+        self.root = self.workspace.temp_root / "intelligent-engine" / "runs"
         self.root.mkdir(parents=True, exist_ok=True)
 
     def run(self, request: IntelligentEngineRequest) -> IntelligentEngineResult:
@@ -369,16 +374,56 @@ class IntelligentEngine:
                 {"name": "scope_inventory", "status": "available", "purpose": "inventario de scopes y TEX"},
                 {"name": "audit_ingestor", "status": "available", "purpose": "consumo de audit.json y manifest previos"},
                 {"name": "priority_router", "status": "scaffolded", "purpose": "ranking de targets y mapeo de acciones"},
+                {"name": "source_note_ingestor", "status": "policy", "purpose": "usar notas como trazabilidad y memoria, no como autoridad bibliográfica final"},
+                {"name": "web_source_validator", "status": "planned", "purpose": "contrastar afirmaciones de notas con fuentes en línea o primarias verificables"},
+                {"name": "bibliography_gate", "status": "policy", "purpose": "materializar en .bib fuentes verificadas, no notas internas como fuente final"},
                 {"name": "execution_runner", "status": "planned", "purpose": "ejecución de acciones con checkpointing"},
                 {"name": "validation_gate", "status": "planned", "purpose": "validación de diffs, compilación y score editorial"},
                 {"name": "memory_retrieval", "status": "planned", "purpose": "ADN editorial relevante por target"},
                 {"name": "telemetry_store", "status": "planned", "purpose": "costos, throughput, éxitos y fallos"},
             ],
+            "source_handling_policy": self._build_source_handling_policy(),
             "contracts": {
                 "manifest": "run manifest persistido por campaña",
                 "target_plan": "lista priorizada de acciones por TEX",
                 "graph_state": "estado serializable para reanudación",
+                "source_note": "nota local usada como provenance, memoria o consigna, no como fuente académica final",
+                "bibliography_entry": "fuente primaria, institucional, normativa, doctrinal o web verificada antes de citarse en el .bib",
             },
+        }
+
+    def _build_source_handling_policy(self) -> dict[str, Any]:
+        return {
+            "principle": "Las notas internas pueden iniciar investigación y memoria, pero no sustituyen fuentes bibliográficas verificables.",
+            "allowed_note_uses": [
+                "consigna",
+                "trazabilidad/provenance",
+                "memoria local",
+                "síntesis operativa",
+                "lista de hipótesis o conceptos a verificar",
+            ],
+            "forbidden_note_uses": [
+                "citar la nota como autoridad académica final cuando hay afirmaciones normativas, doctrinales, estadísticas o históricas",
+                "usar la nota como única entrada BibTeX de respaldo",
+                "convertir inferencias de la nota en hechos sin validación externa",
+            ],
+            "bibliography_rule": "El .bib final debe contener fuentes primarias o verificadas: normas oficiales, sitios institucionales, doctrina, artículos, jurisprudencia, estadísticas o fuentes web consultables.",
+            "validation_required_for": [
+                "datos estadísticos",
+                "requisitos legales",
+                "afirmaciones normativas",
+                "jurisprudencia o criterios recientes",
+                "hechos históricos",
+                "definiciones doctrinales",
+                "atribuciones institucionales",
+            ],
+            "recommended_workflow": [
+                "extraer de la nota afirmaciones y términos clave",
+                "buscar o aportar fuentes primarias/en línea para cada afirmación sustantiva",
+                "registrar la nota en memoria/provenance",
+                "registrar en .bib solo las fuentes validadas",
+                "usar comentarios o memoria para enlazar nota -> fuente verificada",
+            ],
         }
 
     def _build_graph_contract(self, request: IntelligentEngineRequest) -> dict[str, Any]:
@@ -404,6 +449,9 @@ class IntelligentEngine:
             "nodes": [
                 "discover",
                 "ingest_audit",
+                "ingest_source_notes",
+                "validate_online_sources",
+                "bibliography_gate",
                 "prioritize",
                 "route_action",
                 "execute_memory",
@@ -416,7 +464,10 @@ class IntelligentEngine:
             ],
             "transitions": [
                 "discover -> ingest_audit",
-                "ingest_audit -> prioritize",
+                "ingest_audit -> ingest_source_notes",
+                "ingest_source_notes -> validate_online_sources",
+                "validate_online_sources -> bibliography_gate",
+                "bibliography_gate -> prioritize",
                 "prioritize -> route_action",
                 "route_action -> execute_memory|execute_report|execute_presentation|compile",
                 "execute_* -> validate",
@@ -433,6 +484,8 @@ class IntelligentEngine:
         lines = [
             "# Motor inteligente AulaTeX v1",
             "",
+            "Artefacto temporal generado en `.aulatex-temp/intelligent-engine/runs/`; puede eliminarse sin afectar fuentes, memorias ni PDFs finales.",
+            "",
             f"- Run: {manifest['run_id']}",
             f"- Backend de flujo: {manifest['graph_contract']['backend']}",
             f"- Scope: {manifest['scope']['scope_key'] or manifest['scope']['target_root']}",
@@ -443,6 +496,15 @@ class IntelligentEngine:
         ]
         for module in manifest["architecture"]["modules"]:
             lines.append(f"- {module['name']}: {module['status']} | {module['purpose']}")
+        policy = manifest["architecture"].get("source_handling_policy", {})
+        lines.extend([
+            "",
+            "## Política de notas como fuentes",
+            f"- Principio: {policy.get('principle', '')}",
+            f"- Regla bibliográfica: {policy.get('bibliography_rule', '')}",
+            "- Uso permitido de notas: " + ", ".join(policy.get("allowed_note_uses", [])),
+            "- Requiere validación externa: " + ", ".join(policy.get("validation_required_for", [])),
+        ])
         lines.extend(["", "## Targets priorizados"])
         for target in manifest["targets"]:
             issue_kinds = ", ".join(issue["kind"] for issue in target["issues"][:6]) or "sin issues de auditoría"
