@@ -1,0 +1,70 @@
+{
+  "kind": "aulatex-local-memory",
+  "version": 1,
+  "scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde",
+  "scope_level": "materia",
+  "label": "Introducción y objetivo de Garantías Constitucionales",
+  "updated_at": "2026-07-09",
+  "source_documents": [
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-08/20260708_223402_introducción_y_objetivo_de_garantías_constitucionales.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-08/20260708_223402_introducción_y_objetivo_de_garantías_constitucionales.explain.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-08/20260708_223402_introducción_y_objetivo_de_garantías_constitucionales.dialectic.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-08/20260708_223402_introducción_y_objetivo_de_garantías_constitucionales.research.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-08/20260708_223402_introducción_y_objetivo_de_garantías_constitucionales.suggest.md",
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/nota-bienvenida-garantias-constitucionales.md"
+  ],
+  "facts": [
+    "La asignatura de Garantías Constitucionales es fundamental para la comprensión y el ejercicio de la abogacía.",
+    "La asignatura abarca los derechos de las personas y su defensa y protección con fundamento en la Constitución mexicana.",
+    "El objetivo es conocer y analizar derechos humanos, garantías para su protección y medios de control constitucional previstos en la Constitución Política de los Estados Unidos Mexicanos.",
+    "La finalidad profesional es abordar problemáticas relacionadas con la defensa de los derechos humanos y promover la justicia y el desarrollo social.",
+    "El diagnóstico de conocimientos previos permite organizar retroalimentación o nivelación del pensamiento jurídico."
+  ],
+  "concepts": [
+    {
+      "term": "Garantías Constitucionales",
+      "definition": "Asignatura orientada al estudio de los derechos de las personas y de los mecanismos para su defensa y protección con base en la Constitución mexicana."
+    },
+    {
+      "term": "Derechos humanos",
+      "definition": "Derechos cuyo análisis y defensa forman parte central del objetivo de la asignatura."
+    },
+    {
+      "term": "Medios de control constitucional",
+      "definition": "Mecanismos previstos en la Constitución Política de los Estados Unidos Mexicanos para la protección y defensa de derechos."
+    },
+    {
+      "term": "Diagnóstico de conocimientos previos",
+      "definition": "Evaluación inicial que permite realizar retroalimentación o nivelación del pensamiento jurídico."
+    },
+    {
+      "term": "Pensamiento jurídico",
+      "definition": "Base de comprensión que permite pasar de hechos a problemas jurídicos, normas aplicables, argumentos y vías de protección."
+    }
+  ],
+  "didactic_rules": [
+    "Iniciar la materia con diagnóstico breve de conocimientos previos mediante microcasos o preguntas no sancionadoras.",
+    "Separar conceptualmente derecho humano, garantía de protección y medio de control constitucional.",
+    "Trabajar desde casos o problemas verosímiles para conectar hechos, derecho afectado, autoridad o acto, parámetro constitucional y remedio posible.",
+    "Usar una matriz de análisis estable: derecho afectado, acto u omisión, norma constitucional aplicable y vía de defensa procedente.",
+    "Validar soluciones con texto constitucional, legislación procesal aplicable y jurisprudencia vigente cuando corresponda.",
+    "Conservar el marco de respeto como condición para el debate y el desacuerdo fundado."
+  ],
+  "related_terms": [
+    "abogacía",
+    "Constitución mexicana",
+    "defensa de los derechos humanos",
+    "protección de derechos",
+    "justicia",
+    "desarrollo social",
+    "retroalimentación",
+    "nivelación"
+  ],
+  "editorial_rules": [
+    "No afirmar temario completo, bibliografía, criterios de evaluación ni calendario si no están en las fuentes.",
+    "Puede mencionarse el juicio de amparo u otros controles solo como ejemplos inferidos, no como contenido confirmado del programa, salvo fuente adicional.",
+    "El objetivo central sí debe quedar explícito en reporte y presentación.",
+    "El reporte debe distinguir hechos textuales de inferencias pedagógicas.",
+    "La presentación debe transformar el objetivo en una ruta visual de aprendizaje."
+  ]
+}

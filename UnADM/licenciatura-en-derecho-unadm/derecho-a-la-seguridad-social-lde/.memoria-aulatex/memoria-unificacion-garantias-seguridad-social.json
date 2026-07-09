@@ -1,0 +1,59 @@
+{
+  "kind": "aulatex-cross-subject-editorial-memory",
+  "version": 1,
+  "updated_at": "2026-07-09",
+  "engine": "intelligent-engine",
+  "motor_cycles": 100,
+  "cycle_distribution": {
+    "derecho-a-la-seguridad-social-lde": 50,
+    "garantias-constitucionales-lde": 50
+  },
+  "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+  "reference_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde",
+  "source_policy": {
+    "notes_are_provenance_not_bibliography": true,
+    "bibliography_requires_verified_sources": true,
+    "temporary_engine_runs": ".aulatex-temp/intelligent-engine/runs/"
+  },
+  "purpose": "Unificar criterios editoriales y didácticos entre Derecho a la Seguridad Social y Garantías Constitucionales sin copiar contenido temático exclusivo entre materias.",
+  "shared_editorial_rules": [
+    "Mantener identidad UnADM y Licenciatura en Derecho en portada, metadatos y tono.",
+    "Usar portada híbrida: estructura compartida con template, metadatos claros y sobriedad visual; conservar la fuerza visual de las portadas previas cuando aporte identidad.",
+    "No mostrar Tipo/Creditos ni Tipo/Créditos en portadas; esos datos quedan en README, programa o memoria, no en la carátula final.",
+    "Iniciar cada actividad con problema, objetivo, conceptos clave y ruta de análisis.",
+    "Distinguir consigna local, memoria editorial y fuentes bibliográficas verificadas.",
+    "Usar notas internas como trazabilidad y memoria, no como autoridad bibliográfica final.",
+    "Validar afirmaciones normativas con normas oficiales, fuentes institucionales, doctrina, jurisprudencia o fuentes web recuperables.",
+    "Cerrar cada reporte con postura propia y consecuencia profesional aplicable.",
+    "Separar contenido temático de cada materia: garantías constitucionales no reemplaza seguridad social y seguridad social no reemplaza garantías constitucionales.",
+    "Usar matrices diagnósticas solo cuando aporten claridad a la consigna; no inflar productos si el foro pide respuestas directas."
+  ],
+  "shared_didactic_pattern": [
+    "Diagnóstico inicial de conocimientos previos.",
+    "Separación conceptual de nociones cercanas.",
+    "Microcaso o ejemplo para verificar aplicación.",
+    "Matriz breve de riesgos de confusión cuando la consigna lo permita.",
+    "Retroalimentación o nivelación posterior basada en errores detectados."
+  ],
+  "security_social_local_rules": [
+    "El eje sustantivo dominante es seguridad social: contingencias, derechohabientes, IMSS, ISSSTE, ahorro para el retiro, cobertura efectiva, sostenibilidad y vías de defensa.",
+    "La ruta operativa inicia por contingencia, régimen, institución competente, prueba mínima, vía de defensa y urgencia.",
+    "No importar contenido de garantías constitucionales salvo como metodología de diagnóstico, fundamentación y trazabilidad.",
+    "Citar fuentes oficiales verificadas: CPEUM, LSS, LISSSTE, IMSS, ISSSTE, CONSAR y guías recuperables cuando correspondan.",
+    "Mantener los productos de Actividad 1 como diagnóstico no calificable y basado en conocimiento propio."
+  ],
+  "constitutional_guarantees_reference_rules": [
+    "Sirve como modelo editorial para distinguir derecho reconocido, garantía o medio de protección y vía de defensa.",
+    "Sirve como referencia de estructura diagnóstica: preguntas, respuestas, matriz de confusión y cierre de aprendizaje.",
+    "No debe transferirse su contenido temático sobre amparo o control constitucional como si fuera temario de seguridad social, salvo cuando sea necesario para explicar vías de defensa."
+  ],
+  "quality_gates": [
+    "No placeholders visibles en productos finales.",
+    "Portadas sin campo Tipo/Creditos o Tipo/Créditos.",
+    "PDF fresco después de cada edición TEX.",
+    "Citas en TEX deben existir en .bib.",
+    ".bib no debe contener notas internas como autoridad final.",
+    "Las notas internas deben permanecer en referencias o memoria como provenance.",
+    "Los artefactos del motor deben permanecer en .aulatex-temp y ser limpiables."
+  ]
+}

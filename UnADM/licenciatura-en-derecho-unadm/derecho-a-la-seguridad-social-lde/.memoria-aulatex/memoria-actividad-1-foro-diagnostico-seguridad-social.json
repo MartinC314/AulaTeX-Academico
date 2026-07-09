@@ -1,0 +1,46 @@
+{
+  "kind": "aulatex-local-memory",
+  "version": 1,
+  "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
+  "scope_level": "actividad",
+  "label": "Actividad 1: Foro diagnóstico de conocimientos previos",
+  "updated_at": "2026-07-09",
+  "motor_cycles": 22,
+  "source_documents": [
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_140126_foro_diagnóstico_de_conocimientos_previos_del_curso_de_derecho_de_la_seguridad_s.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_140126_foro_diagnóstico_de_conocimientos_previos_del_curso_de_derecho_de_la_seguridad_s.suggest.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_140126_foro_diagnóstico_de_conocimientos_previos_del_curso_de_derecho_de_la_seguridad_s.dialectic.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_140126_foro_diagnóstico_de_conocimientos_previos_del_curso_de_derecho_de_la_seguridad_s.explain.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_140126_foro_diagnóstico_de_conocimientos_previos_del_curso_de_derecho_de_la_seguridad_s.research.md",
+    "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/referencias-derecho-a-la-seguridad-social/actividad-1-foro-diagnostico/corpus-actividad-1-foro-diagnostico.md"
+  ],
+  "facts": [
+    "La actividad es un foro diagnóstico de conocimientos previos del curso de Derecho de la Seguridad Social.",
+    "La actividad no tiene peso en la calificación.",
+    "La consigna recomienda no consultar fuentes externas y responder con conocimiento propio.",
+    "La participación debe realizarse en una conversación nueva y sin réplica a colegas.",
+    "Las preguntas abordan rama del Derecho, definición de Derecho de la Seguridad Social, sistemas de seguros públicos en México, sistema de ahorro para el retiro y ejemplo de cita APA 7.ª edición.",
+    "La fecha esperada indicada es lunes 6 de julio de 2026 a las 00:00."
+  ],
+  "questions": [
+    "¿A qué rama del Derecho pertenece el Derecho de la Seguridad Social?",
+    "¿Qué es el Derecho de la Seguridad Social?",
+    "¿Qué sistemas de seguros públicos existen en México?",
+    "¿Qué es un sistema de ahorro para el retiro?",
+    "Coloque un ejemplo de una cita en formato APA, 7.ª edición."
+  ],
+  "answer_rules": [
+    "Responder de memoria y reconocer límites de conocimiento sin inventar certeza.",
+    "Ubicar la materia dentro del Derecho Social.",
+    "Definir seguridad social como normas, instituciones y mecanismos de protección frente a contingencias.",
+    "Mencionar IMSS e ISSSTE como sistemas públicos básicos, sin cerrar la lista si el programa admite otros regímenes.",
+    "Explicar el ahorro para el retiro como mecanismo previsional vinculado con pensión, cuentas individuales y retiro digno.",
+    "Usar una referencia APA 7 simple, clara y verificable."
+  ],
+  "editorial_rules": [
+    "El reporte debe mostrarse como participación diagnóstica, no como investigación exhaustiva posterior.",
+    "Puede incluir una sección de valor pedagógico del foro, pero debe distinguirse de las respuestas directas.",
+    "No debe presentarse como calificación ni como réplica a colegas.",
+    "La presentación debe resumir propósito, preguntas y línea base de aprendizaje."
+  ]
+}

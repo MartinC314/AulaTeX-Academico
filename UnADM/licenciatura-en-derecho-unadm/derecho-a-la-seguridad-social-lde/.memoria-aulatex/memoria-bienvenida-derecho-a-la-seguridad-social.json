@@ -1,0 +1,96 @@
+{
+  "kind": "aulatex-local-memory",
+  "version": 1,
+  "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
+  "scope_level": "materia",
+  "label": "Bienvenida, introducción y objetivo de Derecho a la Seguridad Social",
+  "updated_at": "2026-07-09",
+  "motor_cycles": 11,
+  "source_documents": [
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_131405_bienvenida_a_derecho_a_la_seguridad_social.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_131405_bienvenida_a_derecho_a_la_seguridad_social.suggest.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_131405_bienvenida_a_derecho_a_la_seguridad_social.dialectic.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_131405_bienvenida_a_derecho_a_la_seguridad_social.explain.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_131405_bienvenida_a_derecho_a_la_seguridad_social.research.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_132341_derecho_a_la_seguridad_social.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_132341_derecho_a_la_seguridad_social.suggest.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_132341_derecho_a_la_seguridad_social.dialectic.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_132341_derecho_a_la_seguridad_social.explain.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-09/20260709_132341_derecho_a_la_seguridad_social.research.md",
+    "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/referencias-derecho-a-la-seguridad-social/nota-bienvenida-derecho-a-la-seguridad-social.md"
+  ],
+  "facts": [
+    "La materia se denomina Derecho a la Seguridad Social.",
+    "La seguridad social protege frente a enfermedades, accidentes, vejez, cesantía, desempleo, invalidez y otras contingencias que reducen recursos o capacidad de desarrollo.",
+    "La materia pertenece al Derecho Social junto con Derecho Laboral y Derecho Agrario.",
+    "El Derecho Social busca enfrentar vulnerabilidad y desigualdad, especialmente en la distribución de la riqueza.",
+    "La materia aborda historia de la seguridad social, marco jurídico, IMSS, ISSSTE, criterios recientes y sistemas de ahorro para el retiro.",
+    "El docente se presenta como Cristian Ortega Barrera, Maestro y Licenciado en Derecho por la UNAM, con aproximadamente 23 años de experiencia profesional.",
+    "El derecho a la seguridad social se plantea como derecho humano y como obligación para ciertos sujetos, especialmente patrones.",
+    "La seguridad social debe estudiarse como derecho, política pública y sistema operativo de protección."
+  ],
+  "concepts": [
+    {
+      "term": "Derecho a la Seguridad Social",
+      "definition": "Derecho humano y disciplina jurídica orientada a proteger a las personas frente a contingencias que afectan salud, ingreso, subsistencia o retiro."
+    },
+    {
+      "term": "Derecho Social",
+      "definition": "Rama del Derecho que atiende relaciones asimétricas y busca proteger a personas o grupos en situación de vulnerabilidad."
+    },
+    {
+      "term": "Personas derechohabientes",
+      "definition": "Personas que pueden acceder a servicios o recursos derivados de los sistemas de seguridad social."
+    },
+    {
+      "term": "Contingencia",
+      "definition": "Evento como enfermedad, accidente, vejez, desempleo o invalidez que activa necesidades de protección."
+    },
+    {
+      "term": "Sistemas de ahorro para el retiro",
+      "definition": "Mecanismos vinculados con la protección de la vejez y el retiro digno."
+    }
+  ],
+  "didactic_rules": [
+    "Iniciar cada análisis por la contingencia específica y el régimen de aseguramiento de la persona.",
+    "Distinguir protección del sistema, obligaciones patronales o estatales y mecanismo de reclamación.",
+    "Priorizar salud, subsistencia y plazos breves antes que ajustes accesorios.",
+    "Verificar prueba mínima: afiliación, salario, semanas cotizadas, dictámenes, beneficiarios y constancias institucionales.",
+    "Comparar modelos asistencialista, contributivo-laboral y universal emergente sin presentarlos como progresión lineal cerrada.",
+    "Evaluar cobertura real, sostenibilidad, calidad institucional y acceso efectivo, no solo reconocimiento normativo."
+  ],
+  "related_terms": [
+    "Derecho Social",
+    "Derecho Laboral",
+    "Derecho Agrario",
+    "IMSS",
+    "ISSSTE",
+    "ahorro para el retiro",
+    "derechohabientes",
+    "cesantía",
+    "personas trabajadoras",
+    "marco jurídico",
+    "desigualdad",
+    "distribución de la riqueza",
+    "Revolución Mexicana",
+    "derechos humanos",
+    "patrones",
+    "accidentes de trabajo",
+    "enfermedades",
+    "vejez",
+    "desempleo",
+    "invalidez",
+    "COVID-19",
+    "empleo formal",
+    "retiro digno",
+    "población económicamente activa",
+    "herramientas jurídicas"
+  ],
+  "editorial_rules": [
+    "No afirmar datos de cobertura, requisitos o jurisprudencia como definitivos sin validación externa vigente.",
+    "Distinguir derecho reconocido, cobertura efectiva, prestación, trámite, institución competente y vía de defensa.",
+    "Usar la bienvenida como encuadre institucional y la introducción como eje sustantivo de la materia.",
+    "Mantener identidad UnADM y Licenciatura en Derecho.",
+    "Relacionar cada producto con defensa de personas derechohabientes y problemas actuales de acceso a seguridad social."
+  ]
+}

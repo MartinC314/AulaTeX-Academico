@@ -1,0 +1,31 @@
+{
+  "kind": "aulatex-editorial-criterion",
+  "version": 1,
+  "scope_key": "UnADM/licenciatura-en-derecho-unadm",
+  "scope_level": "carrera",
+  "label": "Criterio de encabezados para actividades UnADM",
+  "updated_at": "2026-07-09",
+  "rule": {
+    "title": "El título del documento o presentación no debe incluir el número de actividad.",
+    "subtitle": "El subtítulo debe compactar el tema, producto o eje conceptual de la entrega.",
+    "subject": "El subject o equivalente debe contener 'Actividad # - Nombre de la materia'.",
+    "examples": [
+      {
+        "documenttitle": "Foro diagnóstico sobre nociones básicas de derecho",
+        "documentsubtitle": "Constitución y derechos humanos",
+        "documentsubject": "Actividad 1 - Garantías Constitucionales"
+      },
+      {
+        "documenttitle": "Foro diagnóstico de conocimientos previos",
+        "documentsubtitle": "Seguridad social y sistemas públicos",
+        "documentsubject": "Actividad 1 - Derecho a la Seguridad Social"
+      }
+    ]
+  },
+  "application": [
+    "Aplicar en reportes LaTeX con \\documenttitle, \\documentsubtitle y \\documentsubject.",
+    "Aplicar en presentaciones o plantillas simples con macros equivalentes, por ejemplo \\activitytitle, \\activitysubtitle y \\documentsubject.",
+    "Evitar duplicar 'Actividad #' en título y subject.",
+    "Mantener el nombre de la materia en subject para trazabilidad curricular."
+  ]
+}

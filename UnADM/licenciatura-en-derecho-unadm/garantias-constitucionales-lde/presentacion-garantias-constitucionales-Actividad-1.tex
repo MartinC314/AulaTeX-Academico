@@ -1,0 +1,201 @@
+\documentclass[
+  spanish,
+  aspectratio=169,
+  xcolor={dvipsnames,table}
+]{beamer}
+
+\geometry{paperwidth=19.2cm,paperheight=10.8cm}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usetikzlibrary{calc,positioning,fit,shadows.blur}
+
+\newcommand{\studentname}{Martin Jonathan de la Cruz}
+\newcommand{\studentshort}{M. J. de la Cruz}
+\newcommand{\studentid}{ES2611202040}
+\newcommand{\universityname}{Universidad Abierta y a Distancia de México}
+\newcommand{\facultyname}{Licenciatura en Derecho}
+\newcommand{\coursename}{Garantías Constitucionales}
+\newcommand{\coursecode}{LDE-S2B1}
+\newcommand{\activitytitle}{Foro diagnóstico}
+\newcommand{\activitysubtitle}{Nociones básicas de derecho constitucional}
+\newcommand{\documentsubject}{Actividad 1 - Garantías Constitucionales}
+\newcommand{\activityweek}{Semana 1}
+\newcommand{\teachingfigure}{Aarón López Pérez}
+\newcommand{\deliverydate}{\today}
+\newcommand{\locationname}{Roma Norte, Ciudad de México}
+\newcommand{\departmentlogo}{img/departamentos/UnADM.pdf}
+
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+
+\mode<presentation>{
+  \usetheme{default}
+  \usefonttheme{professionalfonts}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{blocks}[rounded][shadow=false]
+}
+\setbeamersize{text margin left=0.60cm,text margin right=0.60cm}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=unadmInk,bg=white}
+\setbeamercolor{structure}{fg=unadmGreenDark}
+\setbeamercolor{frametitle}{fg=white,bg=unadmGreenDark}
+\setbeamercolor{block title}{fg=white,bg=unadmGreen}
+\setbeamercolor{block body}{fg=unadmInk,bg=unadmPaper}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{itemize item}{\textcolor{unadmGreen}{\large$\blacktriangleright$}}
+
+\setbeamertemplate{frametitle}{
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\textwidth,ht=1.02cm,dp=0.22cm,leftskip=0.35cm,rightskip=0.25cm]{frametitle}
+    \insertframetitle\hfill\includegraphics[height=0.60cm]{\departmentlogo}
+  \end{beamercolorbox}
+  {\color{unadmGold}\rule{\textwidth}{1.3pt}}
+}
+
+\setbeamertemplate{footline}{
+  \leavevmode
+  \hbox{
+    \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}\color{white}\studentshort\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.40\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}\color{white}\coursename\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.26\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}\color{white}\coursecode\hfill\insertframenumber/\inserttotalframenumber\end{beamercolorbox}
+  }
+}
+\setbeamercolor{author in head/foot}{bg=unadmGreenDark}
+\setbeamercolor{title in head/foot}{bg=unadmGreen}
+\setbeamercolor{date in head/foot}{bg=unadmGreenDark}
+
+\title[\coursecode]{\activitytitle}
+\subtitle{\activitysubtitle}
+\author[\studentshort]{\studentname\\\footnotesize Matrícula: \studentid}
+\institute[UnADM]{\universityname\\\facultyname}
+\date[\activityweek]{\locationname\\\activityweek\\\deliverydate}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[unadmGreenDark] (current page.south west) rectangle ([xshift=0.58\paperwidth]current page.north west);
+    \fill[unadmGreen] ([xshift=0.58\paperwidth]current page.south west) rectangle (current page.north east);
+    \node[anchor=center,opacity=0.10] at (current page.center) {\includegraphics[width=0.72\paperwidth]{\departmentlogo}};
+    \node[anchor=north west] at ([xshift=0.58cm,yshift=-0.46cm]current page.north west) {\includegraphics[width=2.55cm]{\departmentlogo}};
+  \end{tikzpicture}
+  \vspace*{1.62cm}
+  {\color{white}\fontsize{24}{29}\selectfont\bfseries \activitytitle\par}
+  \vspace{0.28cm}
+  {\color{white!86}\large \activitysubtitle}\\[0.16cm]
+  {\color{white!82}\normalsize \documentsubject}\\[0.35cm]
+  {\color{unadmGold}\rule{0.58\linewidth}{1.3pt}}\\[0.35cm]
+  {\color{white}\studentname}\\
+  {\color{white!82}\footnotesize \facultyname}
+\end{frame}
+
+\begin{frame}{Propósito del foro}
+  \begin{block}{Diagnóstico inicial}
+    Identificar conocimientos previos, experiencias, expectativas y necesidades de aprendizaje sobre nociones jurídicas básicas.
+  \end{block}
+  \begin{itemize}
+    \item No sustituye la enseñanza: orienta la planeación.
+    \item Permite detectar confusiones conceptuales tempranas.
+    \item Vincula participación activa con nivelación jurídica.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Constitución}
+  \begin{block}{Respuesta propia}
+    Es la norma fundamental que organiza el poder público, reconoce derechos y limita la actuación de las autoridades.
+  \end{block}
+  \begin{itemize}
+    \item Da validez al resto del sistema jurídico.
+    \item Protege derechos frente a actos contrarios a la Constitución.
+    \item Es el punto de partida de las garantías constitucionales.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Derecho objetivo y subjetivo}
+  \begin{columns}[T]
+    \begin{column}{0.48\linewidth}
+      \begin{block}{Derecho objetivo}
+        Conjunto de normas jurídicas vigentes.
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\linewidth}
+      \begin{block}{Derecho subjetivo}
+        Facultad o pretensión concreta de una persona.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vspace{0.25cm}
+  La regla pertenece al plano objetivo; la posibilidad de exigir algo pertenece al plano subjetivo.
+\end{frame}
+
+\begin{frame}{Derecho sustantivo y adjetivo}
+  \begin{itemize}
+    \item \textbf{Sustantivo}: define derechos, obligaciones, prohibiciones e instituciones de fondo.
+    \item \textbf{Adjetivo o procesal}: establece las vías y formas para hacer valer esos derechos.
+  \end{itemize}
+  \begin{block}{Diferencia central}
+    El primero responde qué derecho existe; el segundo responde cómo se reclama o protege.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Proceso y procedimiento}
+  \begin{block}{Proceso}
+    Estructura jurídica completa orientada a resolver una controversia ante autoridad competente.
+  \end{block}
+  \begin{block}{Procedimiento}
+    Secuencia concreta de actos, etapas, plazos y formalidades dentro del proceso.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Derecho humano y garantía}
+  \begin{columns}[T]
+    \begin{column}{0.48\linewidth}
+      \begin{block}{Derecho humano}
+        Prerrogativa vinculada con la dignidad de la persona.
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\linewidth}
+      \begin{block}{Garantía}
+        Mecanismo jurídico que protege o hace exigible ese derecho.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vspace{0.25cm}
+  Sin garantías eficaces, los derechos corren el riesgo de quedar solo como declaraciones formales.
+\end{frame}
+
+\begin{frame}{Microcaso de aplicación}
+  \begin{block}{Detención arbitraria}
+    Si una persona es detenida sin información, sin defensa y sin presentación oportuna ante autoridad, pueden afectarse libertad personal, seguridad jurídica y debido proceso.
+  \end{block}
+  \begin{itemize}
+    \item El derecho sustantivo identifica derechos afectados.
+    \item El derecho adjetivo indica la vía para reclamarlos.
+    \item La garantía funciona como mecanismo de protección.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Cierre}
+  \begin{block}{Aprendizaje principal}
+    El foro diagnóstico permite iniciar la asignatura con evidencia sobre qué conceptos domina o confunde el grupo.
+  \end{block}
+  \begin{itemize}
+    \item Ayuda a planificar actividades de nivelación.
+    \item Fortalece el pensamiento jurídico inicial.
+    \item Prepara el estudio de garantías constitucionales y derechos humanos.
+  \end{itemize}
+\end{frame}
+
+\end{document}

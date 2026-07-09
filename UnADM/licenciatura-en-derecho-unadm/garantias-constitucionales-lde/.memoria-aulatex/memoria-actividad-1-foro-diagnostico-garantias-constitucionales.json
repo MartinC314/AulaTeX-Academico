@@ -1,0 +1,91 @@
+{
+  "kind": "aulatex-local-memory",
+  "version": 1,
+  "scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-1",
+  "scope_level": "actividad",
+  "label": "Actividad 1: Foro diagnóstico sobre nociones básicas de derecho",
+  "updated_at": "2026-07-09",
+  "motor_inteligente": {
+    "agent_run_id": "20260709-125215",
+    "agent_iterations": 11,
+    "agent_expanded_task_count": 55,
+    "agent_engine": "Auto (model-router)",
+    "consensus_score": 9.26,
+    "intelligent_engine_runs": [
+      "20260709-141554-intelligent-engine",
+      "20260709-141601-intelligent-engine",
+      "20260709-141606-intelligent-engine"
+    ]
+  },
+  "source_documents": [
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/act1/104014-source.md",
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/act1/104014-explain.md",
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/act1/104014-suggest.md",
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/act1/110022-source.md",
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/act1/110022-explain.md",
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/act1/110022-suggest.md",
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/act1/110022-research.md",
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/act1/110022-dialectic.md",
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/act1/corpus-actividad-1-foro-diagnostico.md",
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/reporte-garantias-constitucionales-Actividad-1.tex",
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/presentacion-garantias-constitucionales-Actividad-1.tex"
+  ],
+  "formal_sources": [
+    {
+      "key": "cpeum2026",
+      "title": "Constitución Política de los Estados Unidos Mexicanos",
+      "authority": "Cámara de Diputados del H. Congreso de la Unión",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+      "use": "fundamento de supremacía constitucional, derechos humanos, obligaciones de autoridad y parámetro de validez"
+    },
+    {
+      "key": "leyAmparo2026",
+      "title": "Ley de Amparo, Reglamentaria de los artículos 103 y 107 de la Constitución Política de los Estados Unidos Mexicanos",
+      "authority": "Cámara de Diputados del H. Congreso de la Unión",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf",
+      "use": "fuente formal para explicar medio procesal de protección frente a actos u omisiones de autoridad"
+    }
+  ],
+  "facts": [
+    "La Actividad 1 es un foro diagnóstico sobre nociones básicas de derecho para iniciar Garantías Constitucionales.",
+    "La consigna solicita responder con conocimiento propio cinco preguntas guía sobre Constitución, derecho subjetivo y objetivo, derecho sustantivo y adjetivo, proceso y procedimiento, garantía y derecho humano.",
+    "La actividad busca identificar conocimientos previos, experiencias, expectativas y necesidades de aprendizaje para orientar la planeación del curso.",
+    "El producto final quedó materializado como reporte LaTeX y presentación Beamer institucional UnADM.",
+    "Las referencias normativas formales incorporadas son CPEUM 2026 y Ley de Amparo 2026."
+  ],
+  "questions": [
+    "¿Qué es y cuál es la importancia de la Constitución?",
+    "¿Qué entiende por derecho subjetivo y derecho objetivo?",
+    "¿Qué entiende por derecho sustantivo y derecho adjetivo?",
+    "¿Conoce la diferencia entre proceso y procedimiento?",
+    "¿Qué entiende por garantía y por derecho humano?"
+  ],
+  "answer_rules": [
+    "Responder con lenguaje propio, sin convertir el foro diagnóstico en investigación exhaustiva.",
+    "Distinguir notas locales de consigna y fuentes formales normativas.",
+    "Citar la CPEUM cuando se afirme supremacía constitucional, obligaciones de autoridad o derechos humanos.",
+    "Citar la Ley de Amparo solo al explicar vías procesales de protección y sin sobregeneralizar procedencia.",
+    "Separar derecho humano, garantía de protección y medio de control constitucional.",
+    "Mantener tono claro, respetuoso, jurídico y adecuado para foro UnADM."
+  ],
+  "editorial_rules": [
+    "El reporte debe distinguir respuestas directas del valor pedagógico del foro.",
+    "Evitar afirmaciones categóricas sin fuente formal o sin marca de supuesto.",
+    "Preservar la matriz diagnóstica para futuras actividades de nivelación.",
+    "Usar microcasos breves para transferir conceptos a práctica jurídica.",
+    "No inventar rúbrica, extensión o criterios de calificación no visibles en la consigna."
+  ],
+  "artifacts": {
+    "report_tex": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/reporte-garantias-constitucionales-Actividad-1.tex",
+    "report_pdf": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/reporte-garantias-constitucionales-Actividad-1.pdf",
+    "presentation_tex": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/presentacion-garantias-constitucionales-Actividad-1.tex",
+    "presentation_pdf": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/presentacion-garantias-constitucionales-Actividad-1.pdf",
+    "bibliography": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib"
+  },
+  "quality_gates": [
+    "Compilar reporte y presentación después de modificar BibTeX.",
+    "Verificar que no existan citas indefinidas en el log.",
+    "Confirmar que los PDF sean posteriores a los TEX.",
+    "Revisar que el nodo de actividad se propague hacia materia, carrera e institución mediante memoria editorial ascendente."
+  ]
+}

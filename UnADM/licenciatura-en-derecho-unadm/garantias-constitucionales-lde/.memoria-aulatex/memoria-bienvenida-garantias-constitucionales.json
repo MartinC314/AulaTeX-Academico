@@ -1,0 +1,62 @@
+{
+  "kind": "aulatex-local-memory",
+  "version": 1,
+  "scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde",
+  "scope_level": "materia",
+  "label": "Bienvenida a Garantías Constitucionales",
+  "updated_at": "2026-07-09",
+  "source_documents": [
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-08/20260708_215313_bienvenida_a_la_asignatura_de_garantías_constitucionales.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-08/20260708_215313_bienvenida_a_la_asignatura_de_garantías_constitucionales.explain.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-08/20260708_215313_bienvenida_a_la_asignatura_de_garantías_constitucionales.dialectic.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-08/20260708_215313_bienvenida_a_la_asignatura_de_garantías_constitucionales.research.md",
+    "c:/Users/delaCruz/Documents/notas-telegram/data/notes/2026-07-08/20260708_215313_bienvenida_a_la_asignatura_de_garantías_constitucionales.suggest.md",
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/nota-bienvenida-garantias-constitucionales.md"
+  ],
+  "facts": [
+    "La asignatura inicia con una bienvenida dirigida a estimadas y estimados estudiantes.",
+    "La asignatura se denomina Garantías Constitucionales.",
+    "La interacción inicial se orienta a una sesión sincrónica para conocerse e intercambiar comentarios e inquietudes.",
+    "El ambiente de trabajo debe sostenerse en un marco de respeto.",
+    "El docente se presenta como Aarón López Pérez.",
+    "El docente es abogado.",
+    "El docente cuenta con estudios de Especialidad y Maestría realizados en la Facultad de Derecho de la Universidad Nacional Autónoma de México.",
+    "El docente propone aprender conjuntamente a partir de las opiniones del grupo."
+  ],
+  "concepts": [
+    {
+      "term": "Garantías Constitucionales",
+      "definition": "Asignatura que inicia y en la que participarán las y los estudiantes."
+    },
+    {
+      "term": "Sesión sincrónica",
+      "definition": "Espacio previsto para interactuar y conocerse entre docente y estudiantes."
+    },
+    {
+      "term": "Marco de respeto",
+      "definition": "Ambiente en el que se recibirán y escucharán comentarios e inquietudes."
+    },
+    {
+      "term": "Posgrados",
+      "definition": "Estudios de Especialidad y Maestría con los que cuenta el docente."
+    }
+  ],
+  "related_terms": [
+    "bienvenida",
+    "presentación del docente",
+    "estudiantes",
+    "abogado",
+    "Facultad de Derecho",
+    "UNAM",
+    "comentarios",
+    "inquietudes",
+    "respeto"
+  ],
+  "editorial_rules": [
+    "No inventar datos adicionales sobre el docente, trayectoria, institución o dinámica de clase.",
+    "Usar tono institucional, cercano y respetuoso.",
+    "Mantener identidad UnADM y Licenciatura en Derecho.",
+    "Distinguir claramente bienvenida, presentación del docente, conceptos clave y términos relacionados.",
+    "Usar esta nota como fuente local para reporte, presentación y futuras actividades de inicio de asignatura."
+  ]
+}
