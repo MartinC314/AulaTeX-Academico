@@ -1,6 +1,7 @@
-# Optativa Semestre 2 Bloque 1
+# Interaprendizajes en ambientes virtuales
 
-Materia de la Licenciatura en Derecho de la UnADM.
+Materia materializada dentro del slot curricular optativo de segundo semestre,
+bloque 1, para la Licenciatura en Derecho de la UnADM.
 
 ## Ubicacion curricular
 
@@ -8,18 +9,31 @@ Materia de la Licenciatura en Derecho de la UnADM.
 - Bloque: 1
 - Tipo: Optativa
 - Creditos: 6
-- Fuente: UnADM/assets-unadm/malla-curricular-derecho-unadm.pdf
+- Nombre editorial de la materia: Interaprendizajes en ambientes virtuales
+- Figura docente de referencia: Janeth Santana Ramirez
+- Fuente base: UnADM/assets-unadm/malla-curricular-derecho-unadm.pdf
+- Insumos de materializacion: notas de bienvenida e introduccion recibidas el 2026-07-09
 
 ## Estructura
 
-- eporte-optativa-semestre-2-bloque-1.tex
+- reporte-optativa-semestre-2-bloque-1.tex
 - presentacion-optativa-semestre-2-bloque-1.tex
-- $(@{Name=Optativa Semestre 2 Bloque 1; Block=1; Credits=6; Type=Optativa; Slug=optativa-semestre-2-bloque-1; Semester=2}.Slug).bib
+- optativa-semestre-2-bloque-1.bib
 - programa-analitico-optativa-semestre-2-bloque-1.md
-- eferencias-optativa-semestre-2-bloque-1/
+- referencias-optativa-semestre-2-bloque-1/
 
 ## Pauta editorial
 
-La carpeta funciona como punto de entrada canonico de la asignatura. Cada
-actividad debe conservar identidad UnADM, integridad academica, citas
-verificables y una conclusion juridica con criterio propio.
+La carpeta funciona como punto de entrada canonico de una asignatura orientada a
+aprender con otras personas en entornos virtuales y a traducir ese proceso en
+evidencia profesional juridica. Cada actividad debe conservar identidad UnADM,
+integridad academica, citas verificables, acuerdos de colaboracion visibles y un
+cierre que convierta el aprendizaje digital en criterio profesional transferible.
+
+## Ejes de trabajo
+
+- Interaprendizaje y participacion sustantiva.
+- Diversidad cultural y linguistica como condicion del dialogo academico.
+- TICCAD seleccionadas por funcion, accesibilidad y trazabilidad.
+- Despacho juridico digital como proyecto integrador.
+- Bitacora, autoevaluacion y coevaluacion con evidencia concreta.

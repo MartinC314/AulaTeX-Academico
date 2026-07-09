@@ -1,0 +1,42 @@
+{
+  "kind": "aulatex-local-memory",
+  "version": 1,
+  "scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde",
+  "scope_level": "materia",
+  "label": "Programa de asignatura - Garantías constitucionales",
+  "updated_at": "2026-07-09",
+  "motor_inteligente": {
+    "cycles": 100,
+    "summary": ".aulatex-temp/intelligent-engine/garantias-programa-asignatura-100-cycles-summary.json",
+    "first_run": "20260709-154829-intelligent-engine",
+    "last_run": "20260709-155714-intelligent-engine",
+    "editorial_memory_manifest": ".aulatex-temp/editorial-memory/runs/20260709-160248-editorial-memory/manifest.json"
+  },
+  "source_documents": [
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/Programa de asignatura - Garantías constitucionales.pdf",
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/programa-asignatura-garantias-constitucionales.extract.txt",
+    "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/programa-asignatura-garantias-constitucionales.md"
+  ],
+  "bibliography_key": "programaAsignaturaGarantiasConstitucionales2026",
+  "facts": [
+    "El documento incorporado es el Programa de asignatura/materia de Garantías constitucionales.",
+    "La Dirección divisional indicada es División de Ciencias Sociales y Administrativas.",
+    "El Programa educativo indicado es Derecho.",
+    "La asignatura/materia se ubica en segundo semestre y primer bloque.",
+    "La fuente describe a la UnADM como institución pública desconcentrada de la Secretaría de Educación Pública que opera mediante tecnologías de información y comunicación y plataformas educativas.",
+    "El programa incorpora objetivos de aprendizaje y habilidades transversales para una educación para la vida, incluyendo pensamiento crítico, pertenencia, inclusión social, innovación, responsabilidad ciudadana, respeto a derechos humanos, igualdad sustantiva, no discriminación, cuidado ambiental, habilidades digitales y habilidades socioemocionales."
+  ],
+  "editorial_rules": [
+    "Usar este programa como fuente formal local de encuadre curricular de la materia.",
+    "No sustituir consignas semanales por el programa general; usarlo para identidad, ubicación, objetivos transversales y coherencia curricular.",
+    "Citar `programaAsignaturaGarantiasConstitucionales2026` cuando se afirme ubicación institucional, divisional, programa educativo, semestre, bloque o fuente curricular oficial de la materia.",
+    "Mantener la distinción entre hechos extraídos del programa y desarrollos editoriales inferidos por AulaTeX.",
+    "Propagar hacia carrera e institución solo criterios generales reutilizables: trazabilidad, enfoque jurídico, derechos humanos, inclusión, habilidades digitales y aprendizaje a lo largo de la vida."
+  ],
+  "quality_gates": [
+    "Verificar que el PDF fuente y el Markdown extraído existan antes de generar nuevas actividades.",
+    "Conservar la ruta del PDF original para auditoría.",
+    "Actualizar README, programa analítico y BibTeX cuando se cambie la fuente oficial.",
+    "Ejecutar motor inteligente y memoria editorial ascendente después de incorporar programas oficiales."
+  ]
+}
