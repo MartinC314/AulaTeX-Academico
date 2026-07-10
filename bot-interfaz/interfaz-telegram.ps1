@@ -7,7 +7,7 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $PSNativeCommandUseErrorActionPreference = $false
 
-$repoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$repoRoot = (Resolve-Path (Split-Path -Parent $PSCommandPath)).Path
 $pythonExe = Join-Path $repoRoot '.venv\Scripts\python.exe'
 $requirementsFile = Join-Path $repoRoot 'requirements.txt'
 $pidFile = Join-Path $repoRoot 'data\notas-bot.pid'
