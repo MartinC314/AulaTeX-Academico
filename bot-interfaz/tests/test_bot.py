@@ -843,8 +843,10 @@ def test_realize_action_uses_persisted_proposal_instruction(tmp_path: Path, monk
         result = DummyDispatchResult()
 
     DummyDispatchResult.report_path.write_text("# Reporte\n", encoding="utf-8")
-    def fake_dispatch(instruction, settings_arg):
+
+    def fake_dispatch(instruction, settings_arg, **kwargs):
         captured["instruction"] = instruction
+        captured["execution_mode"] = kwargs.get("execution_mode")
         return DummyDispatch()
 
     monkeypatch.setattr(bot, "run_intelligent_dispatch", fake_dispatch)

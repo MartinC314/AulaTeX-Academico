@@ -3,8 +3,18 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import pytest
+
 from src.config import Settings
-from src.intelligent_dispatch import extract_intelligent_instruction, format_dispatch_summary, plan_intelligent_dispatch, run_intelligent_dispatch
+from src.intelligent_dispatch import (
+    execute_intelligent_dispatch_plan,
+    extract_intelligent_instruction,
+    format_dispatch_summary,
+    format_motor_capabilities_markdown,
+    motor_capabilities,
+    plan_intelligent_dispatch,
+    run_intelligent_dispatch,
+)
 
 
 def make_settings(tmp_path: Path) -> Settings:
@@ -27,6 +37,34 @@ def make_settings(tmp_path: Path) -> Settings:
 def test_extract_intelligent_instruction_accepts_prefix() -> None:
     assert extract_intelligent_instruction("motor: planifica UCNL actividad 1") == "planifica UCNL actividad 1"
     assert extract_intelligent_instruction("texto normal") is None
+
+
+def test_motor_capabilities_describe_full_delegate_layer() -> None:
+    capabilities = motor_capabilities("plan-only")
+    rendered = format_motor_capabilities_markdown(capabilities)
+
+    assert capabilities.execution_mode == "plan-only"
+    assert capabilities.supported_kinds == ("intelligent-engine", "agent", "activity-monitor")
+    assert capabilities.workflow_backends == ("langgraph", "classic")
+    assert "delegate-to-aulatex" in capabilities.planes["execution"]
+    assert "plan-only" in capabilities.planes["execution"]
+    assert "bot-interfaz contiene la capa de control" in rendered
+    assert "scripts.aulatex" in rendered
+
+
+def test_plan_only_blocks_real_execution_after_planning(tmp_path: Path, monkeypatch) -> None:
+    settings = make_settings(tmp_path)
+    monkeypatch.setattr(
+        "src.intelligent_dispatch.invoke_chat",
+        lambda *args, **kwargs: json.dumps(
+            {"kind": "intelligent-engine", "request": {"target": ".", "max_targets": 1}},
+            ensure_ascii=False,
+        ),
+    )
+    plan = plan_intelligent_dispatch("planifica sin ejecutar", settings)
+
+    with pytest.raises(RuntimeError, match="plan-only"):
+        execute_intelligent_dispatch_plan(plan, execution_mode="plan-only")
 
 
 def test_run_intelligent_dispatch_executes_engine(tmp_path: Path, monkeypatch) -> None:

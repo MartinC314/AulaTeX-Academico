@@ -28,7 +28,9 @@ from .intelligent_dispatch import (
     extract_intelligent_instruction,
     format_dispatch_plan_markdown,
     format_dispatch_summary,
+    format_motor_capabilities_markdown,
     instruction_help_text,
+    motor_capabilities,
     plan_intelligent_dispatch,
     run_intelligent_dispatch,
 )
@@ -1448,7 +1450,12 @@ async def _run_realize_action(message, note_id: str) -> None:
         "Realizar: ejecutando propuesta sobre el repositorio con el motor inteligente actual...",
         "realize_start",
     )
-    dispatch = await asyncio.to_thread(run_intelligent_dispatch, instruction, SETTINGS)
+    dispatch = await asyncio.to_thread(
+        run_intelligent_dispatch,
+        instruction,
+        SETTINGS,
+        execution_mode=SETTINGS.aulatex_motor_execution_mode,
+    )
     note_context["last_dispatch_instruction"] = instruction
     note_context["last_dispatch_report"] = str(dispatch.result.report_path)
     note_context["last_dispatch_manifest"] = str(dispatch.result.manifest_path)
@@ -1770,6 +1777,13 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await _send_text_with_optional_audio(update.message, greeting, "start")
 
 
+async def handle_motor_capabilities(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    if not update.message:
+        return
+    capabilities = motor_capabilities(SETTINGS.aulatex_motor_execution_mode)
+    await _reply_text_chunks(update.message, format_motor_capabilities_markdown(capabilities))
+
+
 def _build_motor_confirmation_keyboard(token: str) -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
         [
@@ -2002,7 +2016,11 @@ async def handle_motor_action(update: Update, context: ContextTypes.DEFAULT_TYPE
         await query.message.edit_reply_markup(reply_markup=None)
         await _send_text_with_optional_audio(query.message, "Validación recibida. Ejecutando motor inteligente...", "processing_motor")
     try:
-        dispatch = await asyncio.to_thread(execute_intelligent_dispatch_plan, plan)
+        dispatch = await asyncio.to_thread(
+            execute_intelligent_dispatch_plan,
+            plan,
+            execution_mode=SETTINGS.aulatex_motor_execution_mode,
+        )
         if query.message:
             await _reply_text_chunks(query.message, format_dispatch_summary(dispatch))
             await _reply_markdown_file(query.message, dispatch.result.report_path, dispatch.result.report_path.name)
@@ -2157,6 +2175,7 @@ def build_application():
     app = ApplicationBuilder().token(SETTINGS.telegram_bot_token).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("motor", handle_intelligent_command))
+    app.add_handler(CommandHandler("motor_capacidades", handle_motor_capabilities))
     app.add_handler(CallbackQueryHandler(handle_motor_action, pattern=f"^{MOTOR_ACTION_PREFIX}:"))
     app.add_handler(CallbackQueryHandler(handle_note_action, pattern=f"^{NOTE_ACTION_PREFIX}:"))
     app.add_handler(MessageHandler(filters.VOICE | filters.AUDIO, handle_audio))
