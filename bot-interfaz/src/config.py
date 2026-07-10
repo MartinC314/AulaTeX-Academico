@@ -92,6 +92,7 @@ class Settings:
     azure_openai_realtime_deployment_name: str = ""
     azure_openai_realtime_api_key: str = ""
     azure_openai_realtime_transcription_model: str = "gpt-4o-mini-transcribe"
+    aulatex_motor_execution_mode: str = "delegate"
 
 
 def _normalize_azure_endpoint(value: str) -> str:
@@ -358,6 +359,7 @@ def load_settings() -> Settings:
             "AZURE_OPENAI_REALTIME_TRANSCRIPTION_MODEL",
             "gpt-4o-mini-transcribe",
         ).strip() or "gpt-4o-mini-transcribe",
+        aulatex_motor_execution_mode=os.getenv("AULATEX_MOTOR_EXECUTION_MODE", "delegate").strip().lower() or "delegate",
     )
 
 

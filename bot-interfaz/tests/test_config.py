@@ -129,6 +129,21 @@ def test_load_settings_reads_azure_speech_values(monkeypatch) -> None:
     assert settings.azure_openai_realtime_deployment_name == "gpt-realtime"
     assert settings.azure_openai_realtime_api_key == "realtime-key"
     assert settings.azure_openai_realtime_transcription_model == "gpt-4o-transcribe"
+    assert settings.aulatex_motor_execution_mode == "delegate"
+
+
+def test_load_settings_reads_aulatex_motor_execution_mode(monkeypatch) -> None:
+    monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "token")
+    monkeypatch.setenv("AZURE_SPEECH_KEY", "speech-key")
+    monkeypatch.setenv("AZURE_SPEECH_REGION", "eastus")
+    monkeypatch.setenv("AZURE_OPENAI_ENDPOINT", "https://example.openai.azure.com/openai/")
+    monkeypatch.setenv("AZURE_OPENAI_API_KEY", "openai-key")
+    monkeypatch.setenv("AZURE_OPENAI_CHAT_DEPLOYMENT", "gpt-test")
+    monkeypatch.setenv("AULATEX_MOTOR_EXECUTION_MODE", "plan-only")
+
+    settings = load_settings()
+
+    assert settings.aulatex_motor_execution_mode == "plan-only"
 
 
 def test_load_settings_reads_azure_openai_aliases(monkeypatch) -> None:

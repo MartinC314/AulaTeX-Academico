@@ -87,22 +87,18 @@ function Test-BotDependencies {
         return $false
     }
 
-    $imports = 'import telegram, dotenv, openai, requests, pypdf, docx'
-    $stdoutProbe = [System.IO.Path]::GetTempFileName()
-    $stderrProbe = [System.IO.Path]::GetTempFileName()
-    try {
-        $probe = Start-Process `
-            -FilePath $PythonPath `
-            -ArgumentList '-c', $imports `
-            -NoNewWindow `
-            -Wait `
-            -PassThru `
-            -RedirectStandardOutput $stdoutProbe `
-            -RedirectStandardError $stderrProbe
-        return ($probe.ExitCode -eq 0)
-    } finally {
-        Remove-Item $stdoutProbe, $stderrProbe -Force -ErrorAction SilentlyContinue
-    }
+    $imports = 'import telegram, dotenv, openai, requests, pypdf, docx, langchain, langgraph, langchain_openai, langchain_anthropic'
+    $escapedImports = $imports.Replace('"', '\"')
+    $startInfo = [System.Diagnostics.ProcessStartInfo]::new()
+    $startInfo.FileName = $PythonPath
+    $startInfo.Arguments = "-c `"$escapedImports`""
+    $startInfo.UseShellExecute = $false
+    $startInfo.RedirectStandardOutput = $true
+    $startInfo.RedirectStandardError = $true
+
+    $process = [System.Diagnostics.Process]::Start($startInfo)
+    $process.WaitForExit()
+    return ($process.ExitCode -eq 0)
 }
 
 function Initialize-BotEnvironment {
