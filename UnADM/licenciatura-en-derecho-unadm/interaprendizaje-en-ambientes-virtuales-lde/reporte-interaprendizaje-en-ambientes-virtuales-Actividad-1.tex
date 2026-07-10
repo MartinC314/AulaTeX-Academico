@@ -1,152 +1,272 @@
-% AulaTeX - Actividad 1 materializada desde notas editoriales y cuestionario diagnostico
-\documentclass[12pt,letterpaper,oneside]{article}
-\usepackage[margin=2.35cm]{geometry}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[spanish,es-tabla]{babel}
-\usepackage[scaled=.96]{helvet}
+\documentclass[
+  spanish,
+  letterpaper, oneside
+]{article}
+
+\def\documenttitle {Cuestionario diagnóstico sobre interaprendizaje y colaboración digital}
+\def\documentsubtitle {Diagnóstico inicial}
+\def\documentsubject {Actividad 1 - Interaprendizaje en ambientes virtuales}
+
+\def\documentauthor {Martin Jonathan de la Cruz}
+\def\coursename {Interaprendizaje en ambientes virtuales}
+\def\coursecode {004}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Interaprendizaje en ambientes virtuales}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de México}
+
+\def\authortable {
+  \begin{tabular}{ll}
+    \textbf{Alumno:}
+    & \begin{tabular}[t]{l}
+      Martin Jonathan de la Cruz \\
+    \end{tabular} \\
+    Matrícula: & ES2611202040 \\
+    Figura docente: & Janeth Santana Ramírez \\
+    Semestre/Bloque: & 2 / 1 \\
+    Tipo/Créditos: & Optativa / 6 \\
+    & \\
+    \multicolumn{2}{l}{Fecha de realización: \today} \\
+    \multicolumn{2}{l}{\universitylocation}
+  \end{tabular}
+}
+
+\input{template}
+\usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
-\usepackage{setspace}
-\usepackage{graphicx}
-\usepackage[table]{xcolor}
-\usepackage{booktabs}
 \usepackage{array}
 \usepackage{longtable}
-\usepackage{hyperref}
-\usepackage[authoryear,round]{natbib}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}
+\setcitestyle{authoryear,open={(},close={)}}
 
-\definecolor{unadmGreenDark}{HTML}{174A3A}
-\definecolor{unadmGreen}{HTML}{5F8F3A}
-\definecolor{unadmGold}{HTML}{B88A2A}
-\definecolor{unadmPaper}{HTML}{F6F7F2}
-\definecolor{unadmInk}{HTML}{1F2A24}
-\hypersetup{colorlinks=true,linkcolor=unadmGreenDark,citecolor=unadmGreenDark,urlcolor=unadmGreenDark}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.72em}
-\onehalfspacing
-\bibliographystyle{plainnat}
-\newcommand{\documenttitle}{Cuestionario diagnostico sobre interaprendizaje y colaboracion digital}
-\newcommand{\documentsubtitle}{Linea base de participacion, herramientas y enfoque intercultural}
-\newcommand{\documentsubject}{Actividad 1 - Interaprendizaje en ambientes virtuales}
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+  \ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+    \AddToShipoutPictureBG*{%
+      \begin{tikzpicture}[remember picture,overlay]
+        \node[
+          opacity=\coverwatermarkopacity,
+          inner sep=0pt,
+          xshift=\coverwatermarkxshift,
+          yshift=\coverwatermarkyshift
+        ] at (current page.center) {%
+          \includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+        };
+      \end{tikzpicture}%
+    }%
+  }{}%
+}
 
 \begin{document}
 
-\begin{titlepage}
-  \pagecolor{unadmPaper}
-  \color{unadmInk}
-  \begin{center}
-    \vspace*{0.8cm}
-    \includegraphics[height=2.05cm]{img/departamentos/UnADM.pdf}\\[0.7cm]
-    {\Large Universidad Abierta y a Distancia de Mexico}\\[0.2cm]
-    {\large Licenciatura en Derecho}\\[1.2cm]
-    {\color{unadmGreenDark}\rule{0.82\linewidth}{1.4pt}}\\[0.55cm]
-    {\Huge\bfseries \documenttitle\par}
-    \vspace{0.35cm}
-    {\Large \documentsubtitle\par}
-    \vspace{0.15cm}
-    {\large \documentsubject\par}
-    \vspace{0.45cm}
-    {\color{unadmGold}\rule{0.62\linewidth}{1.1pt}}\\[1.1cm]
-    \begin{tabular}{rl}
-      \textbf{Alumno:} & Martin Jonathan de la Cruz \\
-      \textbf{Matricula:} & ES2611202040 \\
-      \textbf{Figura docente:} & Janeth Santana Ramirez \\
-      \textbf{Materia:} & Interaprendizaje en ambientes virtuales \\
-      \textbf{Semestre/Bloque:} & 2 / 1 \\
-      \textbf{Fecha:} & \today
-    \end{tabular}
-    \vfill
-    {\small Roma Norte, Ciudad de Mexico}
-  \end{center}
-  \nopagecolor
-\end{titlepage}
+\insertcoverwatermark
+\templatePortrait
+\templatePagecfg
+\onehalfspacing
 
-\tableofcontents
-\clearpage
+\begin{abstractd}
+  El documento responde un cuestionario diagnóstico sobre interaprendizaje,
+  colaboración digital y diversidad cultural y lingüística. Las notas de clase se
+  emplean como pivote para delimitar preguntas y enfoque; las referencias
+  académicas y normativas se sostienen en fuentes sólidas sobre aprendizaje
+  colaborativo, competencias digitales, interculturalidad, derechos lingüísticos,
+  acceso a la justicia y uso responsable de inteligencia artificial en educación.
+\end{abstractd}
 
-\section*{Resumen editorial}
-\addcontentsline{toc}{section}{Resumen editorial}
-Esta actividad materializa un cuestionario diagnostico sobre interaprendizaje y colaboracion digital para fijar la linea base del curso. La consigna de trabajo se apoya en una nota principal con respuestas orientativas y en tres derivados que traducen esas respuestas en criterios operativos, preguntas de investigacion y tension dialectica entre colaboracion digital y rigor individual \citep{cuestionarioInteraprendizajeColaboracion2026,cuestionarioInteraprendizajeColaboracionSuggest2026,cuestionarioInteraprendizajeColaboracionResearch2026,cuestionarioInteraprendizajeColaboracionDialectic2026}. El resultado no se limita a contestar un formulario: organiza una lectura juridico-pedagogica del punto de partida del grupo.
+\templateIndex
+\templateFinalcfg
 
-\section{Introduccion}
+\section{Introducción}
 
-La primera actividad del curso tiene funcion diagnostica. Su valor no consiste en medir conocimientos cerrados, sino en reconocer como se entiende hoy el interaprendizaje, que tan funcional es la colaboracion a distancia y de que manera se relacionan la diversidad cultural, las herramientas digitales y la evaluacion entre pares con la formacion juridica.
+El cuestionario diagnóstico permite fijar una línea base: qué se entiende por
+interaprendizaje, cómo se percibe la capacidad para colaborar a distancia, qué
+herramientas digitales se usan y de qué modo la diversidad cultural y lingüística
+se conecta con la formación jurídica. En lugar de citar las notas internas como
+fuente final, se usan como guía de organización, mientras las ideas se contrastan
+con literatura académica, fuentes institucionales y marco jurídico vigente.
 
-El cuestionario ofrece una base util: hay disposicion favorable hacia el trabajo con otras personas, uso funcional de herramientas digitales y una expectativa clara de fortalecer comunicacion, organizacion y enfoque intercultural. Al mismo tiempo, varias respuestas son de autopercepcion y por eso necesitan traducirse en decisiones observables dentro de las futuras actividades del curso \citep{cuestionarioInteraprendizajeColaboracion2026,cuestionarioInteraprendizajeColaboracionResearch2026}.
+El interaprendizaje se relaciona con una tradición pedagógica que entiende el
+aprendizaje como proceso social: las personas construyen conocimiento al dialogar,
+contrastar perspectivas y resolver tareas con otras personas. Esta idea es
+compatible con el enfoque sociocultural de \citet{vygotsky1978mind} y con la
+literatura de aprendizaje colaborativo que subraya interdependencia positiva,
+responsabilidad individual, interacción promotora y evaluación del proceso grupal
+\citep{johnsonJohnson1999learning}. En la formación jurídica, esto importa porque
+el Derecho se aprende y se ejerce mediante argumentación, escucha, revisión de
+supuestos y deliberación razonada.
 
-Mi lectura es que esta Actividad 1 debe servir para fijar un criterio de trabajo. Si el curso va a formar un despacho juridico digital, entonces desde el arranque hay que distinguir entre participar y colaborar, entre usar tecnologia y justificarla, y entre hablar de diversidad y aplicarla a la comprension juridica de los problemas.
+\section{Desarrollo del cuestionario diagnóstico}
 
-\section{Desarrollo del cuestionario diagnostico}
+\subsection{Pregunta 1. Interaprendizaje}
 
-\subsection{Interaprendizaje como intercambio real}
+Ante la pregunta ``Cuando escuchas la palabra interaprendizaje, ¿con qué idea la
+relacionas más en este momento?'', la respuesta seleccionada es: aprender a
+partir del intercambio de ideas, experiencias y perspectivas con otras personas.
+Esta opción es la más adecuada porque evita reducir el concepto a una simple
+distribución de tareas o al uso de recursos digitales. No se trata solo de dividir
+actividades, sino de permitir que el aporte ajeno modifique la comprensión propia.
 
-La respuesta central del cuestionario vincula el interaprendizaje con aprender a partir del intercambio de ideas, experiencias y perspectivas con otras personas. Esa definicion es correcta y conviene conservarla como eje del curso porque impide reducir la asignatura a coordinacion mecanica de tareas. Interaprender no equivale a dividir trabajo: significa que lo que otra persona aporta modifica mi comprension y me obliga a replantear lo que creia saber.
+Esta respuesta coincide con el principio de que el aprendizaje se fortalece en la
+interacción social. En un entorno jurídico, escuchar otras perspectivas ayuda a
+detectar sesgos, lagunas argumentativas y posibles impactos diferenciados de una
+solución. Por eso, el interaprendizaje es útil no solo como técnica escolar, sino
+como preparación para una práctica profesional que exige deliberar, negociar y
+redactar con otras personas.
 
-Desde la formacion juridica, esto importa porque el Derecho no se trabaja solo con informacion. Tambien exige contraste de argumentos, revision de supuestos, atencion a contextos y capacidad de escuchar perspectivas distintas antes de cerrar una postura. En ese sentido, la actividad diagnostica funciona como primer filtro para identificar si el grupo entiende la colaboracion como construccion conjunta o solo como reparto instrumental de obligaciones \citep{cuestionarioInteraprendizajeColaboracionDialectic2026}.
+\subsection{Pregunta 2. Condiciones para trabajar en equipo a distancia}
 
-\subsection{Condiciones para que el trabajo remoto funcione}
+Ante la pregunta abierta sobre qué condiciones ayudan a que un trabajo en equipo
+a distancia funcione adecuadamente, la respuesta es: comunicación clara y
+constante, roles definidos, acuerdos y plazos claros, uso de herramientas
+digitales adecuadas, responsabilidad, respeto y seguimiento continuo de las
+tareas. La coordinación remota suele fallar menos por falta de voluntad que por
+ambigüedad: nadie sabe quién integra el documento, cuál es la versión final,
+cuánto tiempo se espera una respuesta o cómo se resuelve un bloqueo.
 
-La nota diagnostica resume con claridad las condiciones que suelen sostener un equipo a distancia: comunicacion constante, roles definidos, acuerdos, plazos claros, herramientas adecuadas, responsabilidad y seguimiento continuo. Lo relevante es que estas condiciones no deben quedar como lista abstracta; deben convertirse en protocolo operativo para las actividades siguientes.
+En términos operativos, un equipo jurídico virtual necesita un protocolo mínimo:
+canal oficial de comunicación, responsable de integración, responsable de
+verificación de fuentes, responsable de revisión final y regla para documentar
+acuerdos. Esta estructura evita dispersión y permite trazabilidad, algo esencial
+cuando se trabaja con argumentos, fuentes normativas o información que debe poder
+revisarse después.
 
-Mi posicion es que el principal riesgo del trabajo remoto no es la falta de voluntad, sino la ambiguedad. Cuando nadie define quien integra, quien revisa, cuanto tarda una respuesta valida o donde queda la version final de un documento, la colaboracion pierde trazabilidad. En una materia con horizonte juridico, ese defecto no es menor: produce entregables inconsistentes, fuentes mal controladas y argumentos que no pueden auditarse despues \citep{cuestionarioInteraprendizajeColaboracionSuggest2026}.
+\subsection{Pregunta 3. Habilidad para colaborar a distancia}
 
-\subsection{Autoevaluacion inicial de habilidades colaborativas y digitales}
+Ante la pregunta ``¿Cómo valorarías tu habilidad actual para trabajar en equipo a
+distancia?'', la respuesta es: media. Se puede colaborar, comunicar y cumplir
+acuerdos, aunque todavía conviene mejorar organización, comunicación y
+seguimiento. Esta autopercepción debe tratarse como punto de partida y no como
+prueba definitiva de competencia. La competencia real se verifica con evidencias:
+cumplimiento de plazos, calidad de aportes, participación en revisiones y
+capacidad para integrar retroalimentación.
 
-Las respuestas orientativas ubican la habilidad para colaborar a distancia en un nivel medio y la seguridad en el uso de herramientas digitales en un nivel seguro, aunque no completamente autonomo. Esa combinacion sugiere una base suficiente para iniciar trabajo colaborativo, pero todavia no garantiza desempeno robusto ante tareas complejas, conflictos de coordinacion o decisiones juridicas con varias fuentes y plazos compartidos.
+La evaluación formativa ayuda precisamente a pasar de una impresión general a un
+diagnóstico observable. La UNESCO ha insistido en que las competencias digitales
+no se limitan a operar herramientas, sino que incluyen uso crítico, seguro,
+creativo y responsable de tecnologías para aprender, colaborar y resolver
+problemas \citep{unescoDigitalLiteracy2018}. Por eso, el diagnóstico inicial
+sirve para identificar fortalezas y áreas de mejora antes de tareas colaborativas
+más exigentes.
 
-Por eso, la interpretacion mas util del diagnostico no es complaciente. No basta con afirmar que se puede colaborar; hay que probarlo mediante entregables reales, registros de avance, acuerdos escritos y evaluaciones entre pares. El cuestionario debe leerse como punto de partida y no como acreditacion automatica de competencia digital avanzada \citep{cuestionarioInteraprendizajeColaboracionResearch2026}.
+\subsection{Pregunta 4. Diversidad cultural y lingüística}
 
-\subsection{Diversidad cultural y linguistica en clave juridica}
+Ante la pregunta ``¿Qué entiendes por diversidad cultural y lingüística?'', la
+respuesta es: coexistencia de distintas culturas, lenguas, costumbres y formas de
+ver el mundo dentro de una sociedad. No es un dato decorativo, sino una condición
+real que puede afectar cómo una persona comprende una consigna, participa en un
+equipo, accede a información jurídica o expresa una necesidad ante una autoridad.
 
-El cuestionario define la diversidad cultural y linguistica como coexistencia de distintas culturas, lenguas, costumbres y formas de ver el mundo. Ademas, la vincula con acceso a la justicia, respeto de derechos, enfoque intercultural y prevencion de la discriminacion. Este es uno de los pasajes mas importantes de la actividad porque conecta la dimension pedagogica del curso con un problema real del Derecho.
+En México, esta diversidad tiene reconocimiento jurídico. La Constitución prohíbe
+la discriminación y reconoce la composición pluricultural de la Nación; además,
+la Ley General de Derechos Lingüísticos de los Pueblos Indígenas protege el uso
+de lenguas indígenas y obliga a considerar la dimensión lingüística en servicios
+públicos y acceso a derechos \citep{cpeum2026,leyDerechosLinguisticos2024}. Por
+ello, la diversidad cultural y lingüística debe tratarse como criterio de justicia
+y no solo como tema de convivencia.
 
-Reconocer la diversidad no debe agotarse en un gesto discursivo. En la practica juridica, implica detectar barreras de comprension, sesgos institucionales, asimetrias de participacion y efectos diferenciados de una decision juridica sobre personas o grupos con contextos distintos. Si el curso quiere formar trabajo juridico virtual con sentido profesional, entonces esta variable debe aparecer desde la primera actividad como criterio de lectura y no como adorno tematico \citep{cuestionarioInteraprendizajeColaboracion2026,cuestionarioInteraprendizajeColaboracionDialectic2026}.
+\subsection{Pregunta 5. Utilidad de la diversidad en la formación jurídica}
 
-\subsection{Herramientas digitales, IA y trazabilidad}
+Ante la pregunta sobre para qué puede servir reconocer la diversidad cultural y
+lingüística en la formación jurídica, la respuesta es: para garantizar el acceso
+a la justicia, respetar derechos de todos los grupos, aplicar el Derecho con
+enfoque intercultural y evitar la discriminación. En un caso real, una solución
+jurídicamente correcta puede ser insuficiente si no considera lengua, contexto
+comunitario, asimetría de información o condiciones de acceso tecnológico.
 
-La nota registra uso previo de mensajeria, videollamadas, documentos compartidos, plataformas educativas, herramientas de inteligencia artificial y repositorios academicos. Esto muestra familiaridad operativa con un ecosistema digital amplio, pero tambien obliga a tomar una decision de calidad: cada herramienta debe cumplir una funcion exclusiva.
+La formación intercultural permite analizar si las instituciones escuchan de
+manera efectiva a las personas y si los procedimientos son comprensibles para
+quienes tienen trayectorias distintas. La UNESCO entiende las competencias
+interculturales como habilidades para interactuar con respeto, interpretar
+contextos diversos y construir entendimiento entre diferencias \citep{unescoInterculturalCompetences2013}.
+En Derecho, esas competencias se vinculan con igualdad, acceso a la justicia y
+debido proceso.
 
-Mi criterio es que la materia no debe promover acumulacion de plataformas. El chat sirve para alertas y coordinacion rapida; la videollamada, para resolver bloqueos o cerrar decisiones; el documento compartido, para producir; la plataforma, para entregar; el repositorio, para verificar fuentes; y la IA, solo como apoyo preliminar sujeto a contraste humano y academico. Si ese orden no se cuida desde la Actividad 1, el curso corre el riesgo de confundir productividad con ruido tecnologico \citep{cuestionarioInteraprendizajeColaboracionSuggest2026,cuestionarioInteraprendizajeColaboracionResearch2026}.
+\subsection{Pregunta 6. Herramientas digitales utilizadas}
 
-\subsection{Autoevaluacion, coevaluacion y expectativa de aprendizaje}
+Ante la pregunta de opción múltiple sobre herramientas digitales utilizadas para
+estudiar, comunicarse o trabajar en equipo, la selección es: chats o grupos de
+mensajería, videollamadas, documentos compartidos, plataformas educativas,
+herramientas de inteligencia artificial y bibliotecas digitales, bases de datos o
+repositorios académicos. Cada herramienta debe tener una función concreta. El
+chat sirve para coordinación rápida; la videollamada, para decisiones complejas;
+el documento compartido, para redactar; la plataforma educativa, para entregar;
+los repositorios, para verificar fuentes; y la inteligencia artificial, para apoyo
+preliminar que siempre debe revisarse críticamente.
 
-El diagnostico sugiere mayor familiaridad con autoevaluacion que con coevaluacion. Esa asimetria es comprensible y, al mismo tiempo, pedagogicamente valiosa. Autoevaluarse suele ser mas comun; coevaluar exige criterios compartidos, disposicion a argumentar juicios y responsabilidad para retroalimentar sin arbitrariedad.
+El uso de inteligencia artificial requiere una regla adicional: no sustituye el
+razonamiento jurídico ni la verificación de fuentes. La UNESCO recomienda que la
+IA generativa en educación se use con protección de datos, transparencia,
+supervisión humana y alfabetización crítica sobre sus límites \citep{unescoGenerativeAI2023}.
+En una actividad jurídica, eso implica no ingresar información sensible y no
+aceptar respuestas sin contrastarlas con normas, doctrina o fuentes institucionales.
 
-La expectativa final de fortalecer trabajo colaborativo, uso de herramientas digitales, enfoque intercultural y habilidades de comunicacion aplicadas al ambito juridico resume con precision el sentido del curso. Mi interpretacion es que esa expectativa solo podra cumplirse si cada actividad posterior combina dos capas: una capa individual de responsabilidad y una capa colaborativa con evidencia verificable. Sin ese equilibrio, la colaboracion puede volverse superficial o el rigor individual puede diluirse \citep{cuestionarioInteraprendizajeColaboracionDialectic2026}.
+\subsection{Preguntas 7 a 10. Seguridad digital, evaluación y expectativas}
 
-\section{Matriz diagnostica de partida}
+Ante la pregunta sobre seguridad en el uso de herramientas digitales para aprender
+y colaborar, la respuesta es: seguro, con uso frecuente y apoyo ocasional. Esa
+seguridad inicial es útil, pero debe acompañarse de criterios de calidad: elegir
+la herramienta correcta, mantener versiones ordenadas, proteger información y
+justificar fuentes. La competencia digital no se mide por usar muchas plataformas,
+sino por usarlas con sentido, trazabilidad y responsabilidad.
 
-\begin{longtable}{>{\bfseries}p{0.25\textwidth}p{0.28\textwidth}p{0.39\textwidth}}
-\toprule
-Aspecto & Estado inicial observado & Decision operativa para siguientes actividades \\
-\midrule
-Interaprendizaje & Comprension correcta del concepto como aprendizaje entre personas. & Exigir contraste de ideas y revision entre pares antes de cerrar conclusiones. \\
-Trabajo remoto & Se reconocen roles, acuerdos y seguimiento como condiciones clave. & Formalizar protocolo minimo de coordinacion por equipo y por entregable. \\
-Competencia digital & Uso funcional de varias herramientas y seguridad operativa media-alta. & Asignar una funcion exclusiva a cada herramienta y evitar duplicidades. \\
-Diversidad cultural y linguistica & Se identifica su valor para acceso a la justicia y no discriminacion. & Incorporar preguntas de enfoque intercultural en cada analisis juridico colaborativo. \\
-Autoevaluacion y coevaluacion & Mayor experiencia en autoevaluacion que en coevaluacion. & Implementar rubricas breves con evidencia observable para moderar valoraciones entre pares. \\
-\bottomrule
-\end{longtable}
+Respecto de la autoevaluación, la respuesta es que ha existido participación en
+varias ocasiones. Respecto de la coevaluación, la experiencia ha sido menor. La
+diferencia es importante: autoevaluar permite revisar el propio desempeño, pero
+coevaluar exige criterios compartidos y retroalimentación justa. Finalmente, ante
+la pregunta sobre qué se espera aprender o fortalecer en la asignatura, la
+respuesta integra cuatro dimensiones: trabajo colaborativo a distancia, uso de
+herramientas digitales, enfoque intercultural y habilidades de comunicación
+aplicadas al ámbito jurídico.
+
+% \section{Matriz diagnóstica de partida}
+%
+% \begin{longtable}{>{\bfseries}p{0.25\textwidth}p{0.29\textwidth}p{0.38\textwidth}}
+% \toprule
+% Aspecto & Estado inicial & Criterio para siguientes actividades \\
+% \midrule
+% Interaprendizaje & Se comprende como intercambio de ideas y experiencias. & Exigir contraste de perspectivas antes de cerrar conclusiones. \\
+% Trabajo remoto & Requiere comunicación, roles, acuerdos y seguimiento. & Formalizar protocolo de equipo y evidencia de acuerdos. \\
+% Competencia digital & Hay uso funcional de varias herramientas. & Asignar una función clara a cada recurso y evitar duplicidades. \\
+% Diversidad cultural y lingüística & Se vincula con convivencia, derechos y no discriminación. & Incorporar preguntas de enfoque intercultural en el análisis jurídico. \\
+% Autoevaluación y coevaluación & Hay más experiencia individual que entre pares. & Usar rúbricas breves con evidencia observable. \\
+% \bottomrule
+% \end{longtable}
 
 % ============================================================================
 % TRAZABILIDAD EDITORIAL PARA MOTOR INTELIGENTE
-% - La Actividad 1 debe permanecer como diagnostico de entrada y no como ensayo
-%   teorico abstracto sobre tecnologia educativa.
-% - Mantener el anclaje juridico en acceso a la justicia, enfoque intercultural,
-%   trazabilidad de fuentes y responsabilidad individual dentro del trabajo
-%   colaborativo.
-% - Si el motor inteligente refuerza este archivo, debe priorizar claridad,
-%   criterios operativos y evidencia observables antes que expansion retorica.
+% Las notas internas funcionan como pivote de consigna y memoria de aula, no como
+% referencias bibliográficas finales. Las citas visibles deben sostenerse en
+% fuentes académicas, normativas, institucionales o en línea verificables.
 % ============================================================================
 
-\section{Conclusion}
+\section{Conclusión}
 
-La Actividad 1 confirma que el grupo cuenta con una base inicial favorable para trabajar el interaprendizaje en ambientes virtuales, pero tambien muestra que esa base debe ordenarse con reglas claras. Mi postura es que el verdadero aprendizaje de esta materia no ocurrira por la sola existencia de plataformas ni por la buena disposicion a colaborar, sino por la capacidad de convertir intercambio, diversidad y tecnologia en decisiones verificables de trabajo juridico.
+El cuestionario confirma que el interaprendizaje en ambientes virtuales debe
+entenderse como una práctica organizada, no como simple participación en línea.
+El curso puede lograr su propósito si convierte la disposición a colaborar en
+reglas verificables: roles, acuerdos, herramientas con función, respeto a la
+diversidad y evaluación basada en evidencia.
 
-El cuestionario cumple entonces una funcion estrategica: establece la linea de salida del curso. A partir de aqui, cada actividad debera demostrar si el grupo pasa de la autopercepcion a la evidencia, de la colaboracion declarada a la colaboracion trazable y del discurso sobre interculturalidad a una lectura juridica realmente sensible a la diversidad.
+En la formación jurídica, esta línea base es especialmente importante. El trabajo
+profesional exige argumentar con otras personas, reconocer contextos culturales y
+lingüísticos, usar tecnologías con responsabilidad y mantener rigor individual.
+Por eso, el cuestionario inicial no es un trámite: es el punto de partida para
+pasar de la autopercepción a la evidencia y de la colaboración declarada a un
+interaprendizaje jurídicamente útil.
 
 \clearpage
-\nocite{unadmSitioWeb,unadmMallaDerecho2024,santanaBienvenidaInteraprendizaje2026,introduccionInteraprendizajeVirtualDerecho2026,cuestionarioInteraprendizajeColaboracion2026,cuestionarioInteraprendizajeColaboracionSuggest2026,cuestionarioInteraprendizajeColaboracionResearch2026,cuestionarioInteraprendizajeColaboracionDialectic2026}
+\nocite{unadmSitioWeb,unadmMallaDerecho2024,vygotsky1978mind,johnsonJohnson1999learning,unescoDigitalLiteracy2018,unescoInterculturalCompetences2013,unescoGenerativeAI2023,cpeum2026,leyDerechosLinguisticos2024}
 \bibliography{interaprendizaje-en-ambientes-virtuales}
 
 \end{document}
