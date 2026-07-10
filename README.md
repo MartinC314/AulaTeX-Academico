@@ -6,110 +6,106 @@ presentaciones y bibliografias.
 
 ## Flujo Principal
 
-- Automatizacion de compilacion y exportacion: `scripts/`.
+- Automatizacion de compilacion y exportacion: `scripts/`.- Entrada recomendada para trabajo editorial: `scripts/aulatex.ps1`.
 
-## Endpoints
+## Arquitectura y compatibilidad de flujos agénticos AulaTeX
 
-```json
-[
-  {
-    "name": "Copilot",
-    "vendor": "copilot",
-    "settings": {
-      "gpt-5.2-codex": {
-        "reasoningEffort": "xhigh"
-      },
-      "gpt-5-mini": {
-        "reasoningEffort": "low"
-      }
-    }
-  },
-  {
-    "name": "chatVsc",
-    "vendor": "azure",
-    "apiKey": "${input:chat.lm.secret.2ba0532c}",
-    "models": []
-  },
-  {
-    "name": "upap",
-    "vendor": "azure",
-    "apiKey": "${input:chat.lm.secret.490d3260}",
-    "models": [
-      {
-        "id": "gpt-5.4-pro",
-        "name": "gpt-5.4-pro",
-        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
-        "toolCalling": true,
-        "vision": true,
-        "maxInputTokens": 922000,
-        "maxOutputTokens": 128000,
-        "reasoning": {
-          "effort": "xhigh"
-        }
-      },
-      {
-        "id": "model-router",
-        "name": "model-router",
-        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
-        "toolCalling": true,
-        "vision": true,
-        "maxInputTokens": 1015808,
-        "maxOutputTokens": 32768
-      },
-      {
-        "id": "Mistral-Large-3",
-        "name": "Mistral-Large-3",
-        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
-        "toolCalling": true,
-        "vision": true,
-        "maxInputTokens": 126976,
-        "maxOutputTokens": 4096
-      },
-      {
-        "id": "gpt-chat-latest",
-        "name": "gpt-chat-latest",
-        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
-        "toolCalling": true,
-        "vision": true,
-        "maxInputTokens": 72000,
-        "maxOutputTokens": 128000,
-        "reasoning": {
-          "effort": "xhigh"
-        }
-      }
-    ]
-  },
-  {
-    "name": "upapeastus",
-    "vendor": "azure",
-    "apiKey": "${input:chat.lm.secret.3b0f7701}",
-    "models": [
-      {
-        "id": "DeepSeek-V4-Pro",
-        "name": "DeepSeek-V4-Pro",
-        "url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/chat/completions",
-        "toolCalling": true,
-        "vision": true,
-        "maxInputTokens": 872000,
-        "maxOutputTokens": 128000
-      },
-      {
-        "id": "gpt-5.3-codex",
-        "name": "gpt-5.3-codex",
-        "url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/responses",
-        "toolCalling": true,
-        "vision": true,
-        "maxInputTokens": 272000,
-        "maxOutputTokens": 128000,
-        "reasoning": {
-          "effort": "xhigh"
-        }
-      }
-    ]
-  }
-]
+AulaTeX combina flujos especializados que pueden cooperar si intercambian productos duraderos del workspace. La regla general es no depender de logs temporales como fuente de verdad: los resultados reutilizables deben materializarse en TEX, BIB, referencias, `extractor-aulatex/` o `.memoria-aulatex/`.
+
+```text
+Intencion del usuario
+  -> AulaTeX CLI/GUI
+  -> Motor inteligente / Agente AulaTeX
+  -> LangGraph cuando hay ruteo y ciclos
+  -> LangChain adapter para llamadas LLM
+  -> Herramientas locales: extractor, memoria, revision, bibliografia, compilacion
+  -> Productos duraderos: TEX, BIB, referencias, extractor-aulatex, .memoria-aulatex
 ```
 
+### Como elegir el flujo
+
+| Necesidad | Comando recomendado | Internamente usa |
+|---|---|---|
+| Realizar o evaluar una actividad | `aulatex.ps1 agent --action realizar-actividad --activity N` | `AulaTeXAgent`, `EditorialContextProvider`, extractor opcional, LLMs |
+| Bucle verificable de actividad | `aulatex.ps1 activity-monitor --activity N --workflow-backend langgraph` | `ActivityMonitor`, LangGraph, observer, revision, reparacion |
+| Crear o reforzar nodos | `aulatex.ps1 generation ...` | `ConstructionBuilder`, memoria fundacional, contexto editorial |
+| Reforzar memoria editorial | `aulatex.ps1 editorial-memory ...` | `EditorialMemoryBuilder`, `MemoryFusionEngine`, `.memoria-aulatex` |
+| Campañas o lotes sobre el repo | `aulatex.ps1 intelligent-engine ...` | `IntelligentEngine`, contratos, ejecucion resumible |
+| Extraer conceptos/referencias | `aulatex.ps1 extractor ...` | `ExtractorAdapter` |
+| Comunicacion por bot | `bot-interfaz` con `/motor ...` | Planifica instruccion, muestra resumen, pide validacion y ejecuta `IntelligentEngine` solo tras confirmacion |
+
+### Compatibilidad entre flujos
+
+| Flujo | Productos duraderos que genera | Flujos que lo consumen |
+|---|---|---|
+| `extractor` | `extractor-aulatex/*.json`, conceptos, ideas, trazabilidad, planeacion | `agent`, `activity-monitor`, `editorial-memory`, `EditorialContextProvider` |
+| `editorial-memory` | `.memoria-aulatex/*.json`, reglas, ADN editorial, conceptos reforzados | `agent`, `generation`, `intelligent-engine`, `activity-monitor` |
+| `generation` | memoria fundacional, `plan.md`, `maqueta.tex`, estructura de nodo | `agent`, `editorial-memory`, `extractor`, `activity-monitor` |
+| `agent` | TEX generado o revisado, reportes de ejecucion, compilacion opcional | `activity-monitor`, `editorial-memory`, compilacion, revision posterior |
+| `activity-monitor` | observacion, evaluacion, parches, planes de reparacion | `agent`, `editorial-memory`, `intelligent-engine` |
+| `intelligent-engine` | campañas, contratos, parches, reportes y ejecuciones por lote | todos, si materializa cambios en archivos o `.memoria-aulatex` |
+| `bot-interfaz` | instrucciones validadas por el usuario hacia `IntelligentEngine` | `intelligent-engine`, auditoria humana previa a ejecucion |
+
+Regla practica:
+
+```text
+Si un flujo produce algo util, debe materializarlo en TEX/BIB/referencias/extractor-aulatex/.memoria-aulatex.
+Entonces los demas flujos pueden reutilizarlo.
+```
+
+Los logs en `.aulatex-temp/` son auditoria y depuracion; no son la memoria final.
+
+### Mapa de integracion recomendado
+
+```text
+generation
+  -> crea estructura base, memoria fundacional, plan y maqueta
+  -> editorial-memory
+      -> consolida .memoria-aulatex
+      -> extractor
+          -> produce conceptos, ideas, trazabilidad y planeacion
+          -> agent
+              -> realiza actividad o genera TEX con contexto editorial
+              -> activity-monitor
+                  -> observa, evalua, repara y reevalua
+                  -> editorial-memory
+                      -> absorbe lo aprendido en memoria distribuida
+                      -> intelligent-engine
+                          -> orquesta campañas o lotes sobre muchos nodos
+                          -> bot-interfaz
+                              -> recibe instrucciones, muestra plan y pide validacion humana
+```
+
+Este orden no es obligatorio, pero evita perdida de aprendizaje: primero se crean productos duraderos, luego se refuerza memoria, despues se ejecutan actividades y finalmente se reabsorbe lo aprendido.
+
+### Pieza comun: `EditorialContextProvider`
+
+La clase `scripts/aulatex/editorial_context.py` reune para cada nodo:
+
+- memoria distribuida y heredada;
+- artefactos del extractor (`conceptos`, `ideas`, `trazabilidad`, `planeacion`);
+- bibliografia `.bib` local;
+- referencias y planeaciones locales;
+- señales TEX (`\\section`, `\\subsection`, `\\frametitle`);
+- rutas de `.memoria-aulatex` disponibles.
+
+El agente y la generacion descendente consumen este contexto antes de llamar a los LLMs. La prioridad operativa es:
+
+```text
+instrucciones locales > extractor > memoria distribuida > herencia > LLM
+```
+
+### Backends y responsabilidades
+
+- `classic`: flujo Python directo con condicionales explicitos.
+- `langgraph`: ruteo por grafo para ciclos de observacion, revision, reparacion y evaluacion.
+- `langchain`: adaptador de llamada LLM; no sustituye al grafo ni al agente.
+- `AulaTeXAgent`: ejecuta tareas concretas sobre un nodo.
+- `IntelligentEngine`: orquesta campañas y lotes.
+- `EditorialMemoryBuilder`: convierte productos duraderos en memoria distribuida.
+- `bot-interfaz`: interfaz de comunicacion que pide confirmacion antes de ejecutar el motor inteligente.
+
+Los artefactos temporales viven en `.aulatex-temp/`. La memoria persistente por nodo vive en carpetas `.memoria-aulatex/` distribuidas en el workspace.
 ```powershell
 .\scripts\install-aulatex-deepagents.ps1
 ```

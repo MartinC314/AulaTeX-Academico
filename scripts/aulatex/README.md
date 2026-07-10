@@ -38,6 +38,60 @@ Los motores disponibles son:
 `llm-env` muestra variables presentes/faltantes sin revelar secretos.
 `llm-check` realiza una llamada HTTP real de verificacion por motor.
 
+## Arquitectura agéntica unificada
+
+AulaTeX conserva comandos especializados, pero el modelo mental recomendado es una fachada única:
+
+```text
+Motor inteligente
+  -> decide campaña/lote y contratos
+  -> usa LangGraph cuando hay ruteo por estado
+  -> invoca agente, memoria, extractor, generación, revisión y compilación
+  -> persiste memoria en `.memoria-aulatex`
+```
+
+Componentes principales:
+
+- `AulaTeXAgent`: ejecuta tareas concretas sobre un nodo (`realizar-actividad`, `evaluar`, `generar-plantilla`).
+- `IntelligentEngine`: orquesta campañas o lotes del repositorio.
+- `ActivityMonitor`: cierra bucles de observación, reparación y reevaluación por actividad.
+- `EditorialMemoryBuilder`: refuerza memoria editorial distribuida.
+- `ConstructionBuilder`: crea/refuerza nodos con memoria fundacional, plan y maqueta.
+- `AulaTeXLangChainAdapter`: adapta llamadas LLM cuando LangChain está disponible.
+- `LangGraph`: backend opcional para nodos con ruteo y ciclos (`activity-monitor`, revisión y bibliografía).
+- `EditorialContextProvider`: punto común de contexto para agente y generación.
+
+`EditorialContextProvider` se encuentra en `scripts/aulatex/editorial_context.py` y combina:
+
+- memoria distribuida y heredada;
+- extractor y planeación;
+- conceptos, ideas y trazabilidad;
+- bibliografía local;
+- referencias y planeaciones;
+- señales TEX del nodo.
+
+Prioridad de contexto:
+
+```text
+instrucciones locales > extractor > memoria distribuida > herencia > LLM
+```
+
+Guía de uso:
+
+```powershell
+# Actividad puntual con contexto editorial enriquecido
+.\scripts\aulatex.ps1 agent --target <materia> --action realizar-actividad --activity 1 --run-extractor
+
+# Bucle verificable con LangGraph
+.\scripts\aulatex.ps1 activity-monitor --target <materia> --activity 1 --workflow-backend langgraph --run-extractor
+
+# Campaña/lote del repositorio
+.\scripts\aulatex.ps1 intelligent-engine --target . --backend langgraph
+
+# Refuerzo de memoria distribuida
+.\scripts\aulatex.ps1 editorial-memory --target <nodo> --build-level materia --propagation-mode local
+```
+
 ## Fase Investigación
 
 La pestaña Investigación y el comando `investigation` consolidan la base de

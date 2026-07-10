@@ -5,7 +5,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Literal
 
-from .activity_contract import DIDACTIC_TECHNIQUE_CONTRACTS
+from .activity_contract import DIDACTIC_TECHNIQUE_CONTRACTS, REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT
 from .workspace import AulaTeXWorkspace
 
 
@@ -78,6 +78,7 @@ class IntelligentEngine:
             },
             "architecture": self._build_architecture_contract(request),
             "graph_contract": self._build_graph_contract(request),
+            "realizar_actividad_contract": self._build_realizar_actividad_contract(),
             "audit_status": audit_status,
             "inventory_summary": {
                 "tex_total": len(inventory),
@@ -111,7 +112,14 @@ class IntelligentEngine:
 
     def _collect_tex_inventory(self, request: IntelligentEngineRequest, target_root: Path) -> list[dict[str, Any]]:
         items: list[dict[str, Any]] = []
-        for tex in sorted(target_root.rglob("*.tex")):
+        if target_root.is_file() and target_root.suffix.lower() == ".tex":
+            tex_candidates = [target_root]
+        elif target_root.exists() and target_root.is_dir():
+            tex_candidates = sorted(target_root.rglob("*.tex"))
+        else:
+            tex_candidates = []
+
+        for tex in tex_candidates:
             tex_kind = self._detect_tex_kind(tex)
             if tex_kind == "report" and not request.include_reports:
                 continue
@@ -249,6 +257,50 @@ class IntelligentEngine:
         issue_kinds = {issue.get("kind", "") for issue in issues}
         actions: list[dict[str, Any]] = []
 
+        if activity_number > 0 and tex_kind in {"report", "presentation"}:
+            actions.append(
+                self._action(
+                    "investigate-and-expand-references",
+                    "Buscar/validar fuentes locales y en línea antes de redactar: memoria editorial, bibliografía recomendada, fuentes institucionales/académicas y materialización en .bib con citas visibles.",
+                    [
+                        ".\\scripts\\aulatex.ps1",
+                        "investigation",
+                        "--target",
+                        directory,
+                        "--activity",
+                        str(activity_number),
+                        "--query",
+                        f"{Path(directory).name} Contabilidad I bibliografia ciclo contable NIF control interno cuestionario respuestas",
+                        "--query",
+                        "fuentes contabilidad financiera ciclo contable partida doble estados financieros control interno NIF",
+                        "--iterations",
+                        "2",
+                    ],
+                    blocking=False,
+                )
+            )
+            actions.append(
+                self._action(
+                    "realizar-actividad-pipeline",
+                    "Ejecutar contrato integral: memoria editorial, validación de referencias locales/en línea, expansión de citas visibles, redacción o reparación, evaluación, compilación y repetición hasta aprobar gates.",
+                    [
+                        ".\\scripts\\aulatex.ps1",
+                        "activity-monitor",
+                        "--target",
+                        target,
+                        "--activity",
+                        str(activity_number),
+                        "--workflow-backend",
+                        request.backend,
+                        "--run-extractor",
+                        "--apply-bibliography-repair",
+                        "--compile-check",
+                        "--keep-going",
+                    ],
+                    blocking=True,
+                )
+            )
+
         if "tex-sin-memoria-directa" in issue_kinds or any(kind.startswith("memoria-") for kind in issue_kinds):
             actions.append(
                 self._action(
@@ -376,8 +428,11 @@ class IntelligentEngine:
                 {"name": "audit_ingestor", "status": "available", "purpose": "consumo de audit.json y manifest previos"},
                 {"name": "priority_router", "status": "scaffolded", "purpose": "ranking de targets y mapeo de acciones"},
                 {"name": "source_note_ingestor", "status": "policy", "purpose": "usar notas como trazabilidad y memoria, no como autoridad bibliográfica final"},
+                {"name": "editorial_memory_retriever", "status": "contracted", "purpose": "consultar memoria editorial local, ascendente y nodos relacionados antes de redactar o corregir"},
                 {"name": "didactic_technique_router", "status": "policy", "purpose": "detectar la técnica didáctica del insumo y preservar su forma visible: cuestionario, caso, foro, mapa u otra técnica"},
-                {"name": "web_source_validator", "status": "planned", "purpose": "contrastar afirmaciones de notas con fuentes en línea o primarias verificables"},
+                {"name": "questionnaire_answer_validator", "status": "contracted", "purpose": "validar reactivos, respuestas y justificaciones contra fuentes locales sólidas o fuentes en línea verificables"},
+                {"name": "realizar_actividad_pipeline", "status": "contracted", "purpose": "contrato integral probado: memoria editorial, fuentes locales/en línea, validación de cuestionarios, redacción, evaluación, reparación, compilación y repetición"},
+                {"name": "web_source_validator", "status": "contracted", "purpose": "contrastar afirmaciones y respuestas no sustentadas por corpus local con fuentes en línea o primarias verificables"},
                 {"name": "bibliography_gate", "status": "policy", "purpose": "materializar en .bib fuentes verificadas, no notas internas como fuente final"},
                 {"name": "execution_runner", "status": "planned", "purpose": "ejecución de acciones con checkpointing"},
                 {"name": "validation_gate", "status": "planned", "purpose": "validación de diffs, compilación y score editorial"},
@@ -386,15 +441,21 @@ class IntelligentEngine:
             ],
             "source_handling_policy": self._build_source_handling_policy(),
             "didactic_technique_policy": self._build_didactic_technique_policy(),
+            "realizar_actividad_pipeline": self._build_realizar_actividad_contract(),
             "contracts": {
                 "manifest": "run manifest persistido por campaña",
                 "target_plan": "lista priorizada de acciones por TEX",
                 "graph_state": "estado serializable para reanudación",
                 "source_note": "nota local usada como provenance, memoria o consigna, no como fuente académica final",
                 "didactic_technique": "forma didáctica del insumo preservada en desarrollo visible; cuestionario conserva pregunta-respuesta-justificación",
+                "questionnaire_validation": "cada respuesta de cuestionario debe tener soporte en memoria/fuente local sólida o fuente en línea verificable; respuestas dudosas se corrigen o se marcan",
+                "editorial_memory": "memoria local, ascendente y relacionada usada antes de redactar para heredar reglas, tono, fuentes y decisiones previas",
                 "bibliography_entry": "fuente primaria, institucional, normativa, doctrinal o web verificada antes de citarse en el .bib",
             },
         }
+
+    def _build_realizar_actividad_contract(self) -> dict[str, Any]:
+        return REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT
 
     def _build_source_handling_policy(self) -> dict[str, Any]:
         return {
@@ -477,10 +538,16 @@ class IntelligentEngine:
                 "discover",
                 "ingest_audit",
                 "ingest_source_notes",
+                "build_editorial_memory",
+                "extract_concepts_and_sources",
                 "detect_didactic_technique",
                 "preserve_didactic_format",
                 "validate_online_sources",
                 "bibliography_gate",
+                "draft_or_repair_content",
+                "evaluate_quality",
+                "compile_and_repair",
+                "repeat_until_pass",
                 "prioritize",
                 "route_action",
                 "execute_memory",
@@ -494,11 +561,18 @@ class IntelligentEngine:
             "transitions": [
                 "discover -> ingest_audit",
                 "ingest_audit -> ingest_source_notes",
-                "ingest_source_notes -> detect_didactic_technique",
+                "ingest_source_notes -> build_editorial_memory",
+                "build_editorial_memory -> extract_concepts_and_sources",
+                "extract_concepts_and_sources -> detect_didactic_technique",
                 "detect_didactic_technique -> preserve_didactic_format",
                 "preserve_didactic_format -> validate_online_sources",
                 "validate_online_sources -> bibliography_gate",
-                "bibliography_gate -> prioritize",
+                "bibliography_gate -> draft_or_repair_content",
+                "draft_or_repair_content -> evaluate_quality",
+                "evaluate_quality -> compile_and_repair|repeat_until_pass",
+                "compile_and_repair -> repeat_until_pass|promote",
+                "repeat_until_pass -> build_editorial_memory|stop",
+                "promote -> prioritize",
                 "prioritize -> route_action",
                 "route_action -> execute_memory|execute_report|execute_presentation|compile",
                 "execute_* -> validate",
@@ -545,6 +619,15 @@ class IntelligentEngine:
             f"- Regla de tablas: {didactic_policy.get('table_rule', '')}",
             f"- Regla de estilo: {didactic_policy.get('style_rule', '')}",
             f"- Alcance de reutilización: {didactic_policy.get('reuse_scope', '')}",
+        ])
+        realizar = manifest.get("realizar_actividad_contract", {})
+        lines.extend([
+            "",
+            "## Contrato operativo: realizar actividad",
+            f"- Propósito: {realizar.get('purpose', '')}",
+            f"- Ciclo recomendado: {realizar.get('recommended_cycle', '')}",
+            "- Fases: " + " -> ".join(phase.get("id", "") for phase in realizar.get("phases", [])),
+            "- Gates: " + "; ".join(f"{k}={v}" for k, v in realizar.get("quality_gates", {}).items()),
         ])
         lines.extend(["", "## Targets priorizados"])
         for target in manifest["targets"]:
