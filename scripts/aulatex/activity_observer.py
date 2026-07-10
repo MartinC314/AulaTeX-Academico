@@ -256,7 +256,20 @@ class ActivityObserver:
                 "conclusion_present": bool(sections and any("conclus" in section.lower() for section in sections)) or bool(re.search(r"en conclusi[óo]n", active_tex, re.IGNORECASE)),
                 "product_visual_detected": bool(re.search(r"tikzpicture|\\begin\{figure\}|mapa conceptual|cuadro|tabla|diagrama", active_tex, re.IGNORECASE)),
                 "evaluation_criteria_present": bool(re.search(r"criterios|r[úu]brica|evaluaci[óo]n", active_tex, re.IGNORECASE)),
-                "didactic_technique_present": bool(re.search(r"mapa conceptual|estudio de caso|cuadro comparativo|diagrama|tabla", active_tex, re.IGNORECASE)),
+                "questionnaire_detected": bool(re.search(r"cuestionario|reactivo|pregunta\s*\d+", active_tex, re.IGNORECASE)),
+                "questionnaire_contract_satisfied": bool(
+                    re.search(r"cuestionario", active_tex, re.IGNORECASE)
+                    and re.search(r"pregunta", active_tex, re.IGNORECASE)
+                    and re.search(r"respuesta", active_tex, re.IGNORECASE)
+                    and re.search(r"justificaci[óo]n", active_tex, re.IGNORECASE)
+                ),
+                "table_contract_satisfied": bool(
+                    re.search(r"\\begin\{longtable\}|\\begin\{tabular\}", active_tex, re.IGNORECASE)
+                    and re.search(r"\\toprule|\\midrule|\\hline", active_tex, re.IGNORECASE)
+                    and re.search(r"\\caption\{|\\textbf\{.*?\}", active_tex, re.IGNORECASE)
+                ),
+                "case_study_detected": bool(re.search(r"estudio de caso|an[áa]lisis del caso|hechos", active_tex, re.IGNORECASE)),
+                "didactic_technique_present": bool(re.search(r"mapa conceptual|estudio de caso|cuadro comparativo|diagrama|tabla|cuestionario|foro diagn[óo]stico|longtable|tabular", active_tex, re.IGNORECASE)),
                 "extractor_planeacion_present": bool(isinstance(extractor_summary, dict) and extractor_summary),
                 "extractor_objective_present": bool(isinstance(extractor_summary, dict) and str(extractor_summary.get("objetivo", "")).strip()),
                 "extractor_criteria_count": len(extractor_summary.get("criterios_entrega", [])) if isinstance(extractor_summary, dict) and isinstance(extractor_summary.get("criterios_entrega", []), list) else 0,

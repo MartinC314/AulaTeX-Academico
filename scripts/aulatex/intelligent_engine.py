@@ -5,6 +5,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Literal
 
+from .activity_contract import DIDACTIC_TECHNIQUE_CONTRACTS
 from .workspace import AulaTeXWorkspace
 
 
@@ -375,6 +376,7 @@ class IntelligentEngine:
                 {"name": "audit_ingestor", "status": "available", "purpose": "consumo de audit.json y manifest previos"},
                 {"name": "priority_router", "status": "scaffolded", "purpose": "ranking de targets y mapeo de acciones"},
                 {"name": "source_note_ingestor", "status": "policy", "purpose": "usar notas como trazabilidad y memoria, no como autoridad bibliográfica final"},
+                {"name": "didactic_technique_router", "status": "policy", "purpose": "detectar la técnica didáctica del insumo y preservar su forma visible: cuestionario, caso, foro, mapa u otra técnica"},
                 {"name": "web_source_validator", "status": "planned", "purpose": "contrastar afirmaciones de notas con fuentes en línea o primarias verificables"},
                 {"name": "bibliography_gate", "status": "policy", "purpose": "materializar en .bib fuentes verificadas, no notas internas como fuente final"},
                 {"name": "execution_runner", "status": "planned", "purpose": "ejecución de acciones con checkpointing"},
@@ -383,11 +385,13 @@ class IntelligentEngine:
                 {"name": "telemetry_store", "status": "planned", "purpose": "costos, throughput, éxitos y fallos"},
             ],
             "source_handling_policy": self._build_source_handling_policy(),
+            "didactic_technique_policy": self._build_didactic_technique_policy(),
             "contracts": {
                 "manifest": "run manifest persistido por campaña",
                 "target_plan": "lista priorizada de acciones por TEX",
                 "graph_state": "estado serializable para reanudación",
                 "source_note": "nota local usada como provenance, memoria o consigna, no como fuente académica final",
+                "didactic_technique": "forma didáctica del insumo preservada en desarrollo visible; cuestionario conserva pregunta-respuesta-justificación",
                 "bibliography_entry": "fuente primaria, institucional, normativa, doctrinal o web verificada antes de citarse en el .bib",
             },
         }
@@ -426,6 +430,29 @@ class IntelligentEngine:
             ],
         }
 
+    def _build_didactic_technique_policy(self) -> dict[str, Any]:
+        return {
+            "principle": "La técnica didáctica del insumo se conserva como contrato de forma: el motor mejora rigor, citas y claridad sin cambiar cuestionario por ensayo, caso por resumen ni mapa por texto plano.",
+            "contracts": DIDACTIC_TECHNIQUE_CONTRACTS,
+            "questionnaire_rule": "Si la nota o consigna contiene cuestionario, reactivos o respuestas, el desarrollo visible debe incluir el título dado por la nota cuando exista y conservar cada pregunta con respuesta y justificación, en tabla compacta o lista estructurada.",
+            "table_rule": "Si la técnica didáctica usa tabla/cuadro, aplicar manejo robusto como en Filosofía del Derecho, Redacción en contextos virtuales y Ética y Moral jurídica: encabezados claros, caption/label cuando sea producto visible, longtable para varias filas, landscape o scriptsize cuando el ancho lo requiera, tabcolsep/arraystretch ajustados y lectura breve posterior.",
+            "style_rule": "En el desarrollo no explicar la técnica didáctica desde fuera ni romper la cuarta pared; entrar al tema con tono formal y presentar el contenido solicitado.",
+            "reuse_scope": "Contrato aplicable a materias de la misma carrera, otras carreras, la misma institución u otras instituciones; solo cambian identidad institucional, bibliografía verificable y datos de portada.",
+            "allowed_transformations": [
+                "compactar redacción sin omitir reactivos",
+                "agrupar preguntas solo si se conserva pregunta-respuesta-justificación",
+                "agregar contexto académico con fuentes verificadas",
+                "usar longtable/tabular/landscape cuando la técnica requiera tabla amplia",
+                "comentar matrices auxiliares si no son producto solicitado",
+            ],
+            "forbidden_transformations": [
+                "convertir un cuestionario en ensayo general",
+                "eliminar preguntas del insumo",
+                "sustituir respuestas por paráfrasis sin conservar el sentido original",
+                "citar notas internas como bibliografía final",
+            ],
+        }
+
     def _build_graph_contract(self, request: IntelligentEngineRequest) -> dict[str, Any]:
         return {
             "backend": request.backend,
@@ -450,6 +477,8 @@ class IntelligentEngine:
                 "discover",
                 "ingest_audit",
                 "ingest_source_notes",
+                "detect_didactic_technique",
+                "preserve_didactic_format",
                 "validate_online_sources",
                 "bibliography_gate",
                 "prioritize",
@@ -465,7 +494,9 @@ class IntelligentEngine:
             "transitions": [
                 "discover -> ingest_audit",
                 "ingest_audit -> ingest_source_notes",
-                "ingest_source_notes -> validate_online_sources",
+                "ingest_source_notes -> detect_didactic_technique",
+                "detect_didactic_technique -> preserve_didactic_format",
+                "preserve_didactic_format -> validate_online_sources",
                 "validate_online_sources -> bibliography_gate",
                 "bibliography_gate -> prioritize",
                 "prioritize -> route_action",
@@ -504,6 +535,16 @@ class IntelligentEngine:
             f"- Regla bibliográfica: {policy.get('bibliography_rule', '')}",
             "- Uso permitido de notas: " + ", ".join(policy.get("allowed_note_uses", [])),
             "- Requiere validación externa: " + ", ".join(policy.get("validation_required_for", [])),
+        ])
+        didactic_policy = manifest["architecture"].get("didactic_technique_policy", {})
+        lines.extend([
+            "",
+            "## Contrato de técnicas didácticas",
+            f"- Principio: {didactic_policy.get('principle', '')}",
+            f"- Regla de cuestionario: {didactic_policy.get('questionnaire_rule', '')}",
+            f"- Regla de tablas: {didactic_policy.get('table_rule', '')}",
+            f"- Regla de estilo: {didactic_policy.get('style_rule', '')}",
+            f"- Alcance de reutilización: {didactic_policy.get('reuse_scope', '')}",
         ])
         lines.extend(["", "## Targets priorizados"])
         for target in manifest["targets"]:
