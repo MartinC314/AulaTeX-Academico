@@ -1073,6 +1073,1149 @@
         "Play",
         "formato literal"
       ]
+    },
+    {
+      "date": "2026-07-05",
+      "time": "12:01:47",
+      "title": "12:01 - Integrar notas en el gestor de aplicaciones",
+      "key": "integrar_notas_en_el_gestor_de_aplicaciones",
+      "text_type": "nota_libre",
+      "path": "2026-07-05\\20260705_120147_integrar_notas_en_el_gestor_de_aplicaciones.md",
+      "tags": [
+        "iniciar-notas",
+        "detener-notas",
+        "GUI de notas",
+        "gestor de aplicaciones",
+        "panel de notificaciones"
+      ],
+      "related_terms": [
+        "menú de aplicaciones",
+        "lanzador",
+        "icono en segundo plano",
+        "bandeja del sistema",
+        "integración de interfaz"
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "time": "13:00:27",
+      "title": "13:00 - Definir una aplicación con bot de telegram",
+      "key": "definir_una_aplicación_con_bot_de_telegram",
+      "text_type": "nota_libre",
+      "path": "2026-07-05\\20260705_130027_definir_una_aplicación_con_bot_de_telegram.md",
+      "tags": [
+        "Aplicación con bot",
+        "Bot de Telegram",
+        "Respuestas como nota",
+        "Definición concreta del sistema"
+      ],
+      "related_terms": [
+        "Telegram",
+        "bot",
+        "aplicación",
+        "conexión",
+        "respuestas",
+        "nota",
+        "integración"
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "time": "13:53:56",
+      "title": "13:53 - Interferencia entre play y sugerencias en el bot de notas",
+      "key": "interferencia_entre_play_y_sugerencias_en_el_bot_de_notas",
+      "text_type": "nota_libre",
+      "path": "2026-07-05\\20260705_135356_interferencia_entre_play_y_sugerencias_en_el_bot_de_notas.md",
+      "tags": [
+        "botón Play",
+        "botón Sugerencias",
+        "reloj de Play",
+        "separación de flujos"
+      ],
+      "related_terms": [
+        "bot de notas",
+        "interrupción de flujo",
+        "estado de reproducción",
+        "error de interfaz",
+        "botones de acción",
+        "respuesta nula"
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "time": "16:40:55",
+      "title": "16:40 - Cambio, permanencia y memoria histórica",
+      "key": "cambio_permanencia_y_memoria_histórica",
+      "text_type": "nota_libre",
+      "path": "2026-07-05\\20260705_164055_cambio_permanencia_y_memoria_histórica.md",
+      "tags": [
+        "Cambio",
+        "Permanencia",
+        "Eternidad",
+        "Continuidad",
+        "Perpetuidad",
+        "Memoria histórica"
+      ],
+      "related_terms": [
+        "tiempo",
+        "transformación",
+        "persistencia",
+        "historia",
+        "duración",
+        "prevalecer"
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "time": "16:58:01",
+      "title": "16:58 - Cambio, permanencia y memoria histórica",
+      "key": "cambio_permanencia_y_memoria_histórica",
+      "text_type": "informativo",
+      "path": "2026-07-05\\20260705_165801_cambio_permanencia_y_memoria_histórica.md",
+      "tags": [
+        "Cambio",
+        "Permanencia",
+        "Eternidad",
+        "Continuidad",
+        "Perpetuidad",
+        "Memoria histórica"
+      ],
+      "related_terms": [
+        "tiempo",
+        "transformación",
+        "persistencia",
+        "historia",
+        "duración"
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "time": "18:56:45",
+      "title": "18:56 - Categorías y notas en el gestor de recursos",
+      "key": "categorías_y_notas_en_el_gestor_de_recursos",
+      "text_type": "nota_libre",
+      "path": "2026-07-05\\20260705_185645_categorías_y_notas_en_el_gestor_de_recursos.md",
+      "tags": [
+        "Campo de categoría",
+        "Campo de notas",
+        "Vista previa",
+        "Categorías sugeridas",
+        "Submenús por categoría"
+      ],
+      "related_terms": [
+        "gestor de recursos",
+        "categorías",
+        "notas",
+        "tabla",
+        "vista previa",
+        "desplegable",
+        "editar",
+        "agregar",
+        "menú",
+        "submenús"
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "time": "21:06:07",
+      "title": "21:06 - Mejoras de la gui de t-book",
+      "key": "mejoras_de_la_gui_de_t-book",
+      "text_type": "nota_libre",
+      "path": "2026-07-05\\20260705_210607_mejoras_de_la_gui_de_t-book.md",
+      "tags": [
+        "GUI de T-Book",
+        "Rutas seleccionadas",
+        "ComboBox y botón \"Examinar\"",
+        "t-book.ini",
+        "Persistencia de configuración"
+      ],
+      "related_terms": [
+        "GUI",
+        "T-Book",
+        "rutas",
+        "ComboBox",
+        "Examinar",
+        "pestaña Traducción",
+        "Salida de traducción",
+        "archivo INI",
+        "persistencia",
+        "repositorio",
+        "clonar repositorio",
+        "configuración local"
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "time": "03:50:05",
+      "title": "03:50 - Envío automático a telegram de respuestas en markdown",
+      "key": "envío_automático_a_telegram_de_respuestas_en_markdown",
+      "text_type": "nota_libre",
+      "path": "2026-07-06\\20260706_035005_envío_automático_a_telegram_de_respuestas_en_markdown.md",
+      "tags": [
+        "envío automático a Telegram",
+        "respuesta en Markdown",
+        "derivados Explicar, Sugerencias, Investigar y Dialéctica",
+        "automatización"
+      ],
+      "related_terms": [
+        "Telegram",
+        "Markdown",
+        "automatización",
+        "envío automático",
+        "Explicar",
+        "Sugerencias",
+        "Investigar",
+        "Dialéctica"
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "time": "04:03:56",
+      "title": "04:03 - Copiar al portapapeles sin cambiar el flujo actual",
+      "key": "copiar_al_portapapeles_sin_cambiar_el_flujo_actual",
+      "text_type": "procedimental",
+      "path": "2026-07-06\\20260706_040356_copiar_al_portapapeles_sin_cambiar_el_flujo_actual.md",
+      "tags": [
+        "Flujo actual",
+        "Derivados",
+        "Play",
+        "Botones de acción",
+        "Relojes y palomita verde"
+      ],
+      "related_terms": [
+        "portapapeles local",
+        "nota principal",
+        "Markdown principal",
+        "audio principal",
+        "procesamiento en segundo plano",
+        "reproducción automática",
+        "indicadores de estado"
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "time": "04:26:53",
+      "title": "04:26 - Sufijos correctos para archivos duplicados en telegram",
+      "key": "sufijos_correctos_para_archivos_duplicados_en_telegram",
+      "text_type": "nota_libre",
+      "path": "2026-07-06\\20260706_042653_sufijos_correctos_para_archivos_duplicados_en_telegram.md",
+      "tags": [
+        "Archivos duplicados en Telegram",
+        "Manejador de nombres",
+        "Sufijo numérico",
+        "Nombre base del archivo"
+      ],
+      "related_terms": [
+        "Telegram",
+        "archivos duplicados",
+        "renombrado automático",
+        "sufijos numéricos",
+        "nombre de archivo",
+        "manejo de nombres"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "time": "09:16:30",
+      "title": "09:16 - Bienvenida a derecho a la seguridad social y presentación del docente",
+      "key": "bienvenida_a_derecho_a_la_seguridad_social_y_presentación_del_docente",
+      "text_type": "formal",
+      "path": "2026-07-07\\20260707_091630_bienvenida_a_derecho_a_la_seguridad_social_y_presentación_del_docente.md",
+      "tags": [
+        "Derecho a la Seguridad Social",
+        "Derecho Social",
+        "Sistemas de seguridad social mexicanos",
+        "Personas derechohabientes"
+      ],
+      "related_terms": [
+        "IMSS",
+        "ISSSTE",
+        "marco jurídico",
+        "historia de la seguridad social",
+        "criterios recientes",
+        "sistemas de ahorro para el retiro",
+        "derecho laboral",
+        "derecho agrario",
+        "personas en situación de vulnerabilidad",
+        "distribución de la riqueza",
+        "docencia jurídica",
+        "servicio público"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "time": "09:19:38",
+      "title": "09:19 - Introducción al derecho de la seguridad social",
+      "key": "introducción_al_derecho_de_la_seguridad_social",
+      "text_type": "informativo",
+      "path": "2026-07-07\\20260707_091938_introducción_al_derecho_de_la_seguridad_social.md",
+      "tags": [
+        "Derecho de la Seguridad Social",
+        "Seguridad social",
+        "Situación de vulnerabilidad",
+        "Población económicamente activa",
+        "Herramientas jurídicas"
+      ],
+      "related_terms": [
+        "Derecho del Trabajo",
+        "Revolución Mexicana de 1910",
+        "derechos humanos",
+        "patrones",
+        "personas trabajadoras",
+        "accidentes de trabajo",
+        "salud",
+        "retiro digno",
+        "desempleo",
+        "invalidez",
+        "igualdad",
+        "justicia",
+        "adultas mayores",
+        "condiciones dignas de vida"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "time": "09:22:20",
+      "title": "09:22 - Seguridad social como derecho humano e instrumento de igualdad",
+      "key": "seguridad_social_como_derecho_humano_e_instrumento_de_igualdad",
+      "text_type": "informativo",
+      "path": "2026-07-07\\20260707_092220_seguridad_social_como_derecho_humano_e_instrumento_de_igualdad.md",
+      "tags": [
+        "Derecho a la seguridad social",
+        "Eventualidades",
+        "Sistemas de seguridad social",
+        "Situación de vulnerabilidad",
+        "Población económicamente activa",
+        "Herramientas jurídicas"
+      ],
+      "related_terms": [
+        "seguridad social",
+        "derecho humano",
+        "personas trabajadoras",
+        "patrones",
+        "protección social",
+        "accidentes de trabajo",
+        "enfermedad",
+        "vejez",
+        "desempleo",
+        "invalidez",
+        "retiro digno",
+        "población económicamente activa",
+        "vulnerabilidad",
+        "igualdad",
+        "justicia",
+        "COVID-19",
+        "servicios básicos",
+        "Derecho"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "time": "19:30:20",
+      "title": "19:30 - Cuestionario sobre libros contables y estados financieros",
+      "key": "cuestionario_sobre_libros_contables_y_estados_financieros",
+      "text_type": "cuestionario",
+      "path": "2026-07-07\\20260707_193020_cuestionario_sobre_libros_contables_y_estados_financieros.md",
+      "tags": [
+        "Libro diario",
+        "Libro mayor",
+        "Balanza de comprobación",
+        "Estados financieros",
+        "Balance general",
+        "Estado de resultados",
+        "Estado de flujo de efectivo"
+      ],
+      "related_terms": [
+        "contabilidad",
+        "libros contables",
+        "libro diario",
+        "libro mayor",
+        "balanza de comprobación",
+        "estados financieros",
+        "balance general",
+        "estado de resultados",
+        "estado de flujo de efectivo",
+        "débitos",
+        "créditos",
+        "cierre contable"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "time": "19:42:39",
+      "title": "19:42 - Términos básicos del ciclo contable y postulados",
+      "key": "términos_básicos_del_ciclo_contable_y_postulados",
+      "text_type": "cuestionario",
+      "path": "2026-07-07\\20260707_194239_términos_básicos_del_ciclo_contable_y_postulados.md",
+      "tags": [
+        "Negocio en marcha",
+        "Mayorización",
+        "Consistencia",
+        "Identificación",
+        "Registro",
+        "Devengación",
+        "Estados financieros",
+        "Ajustes",
+        "Entidad económica",
+        "Sustancia económica"
+      ],
+      "related_terms": [
+        "ciclo contable",
+        "postulados contables",
+        "libro diario",
+        "libro mayor",
+        "identificación de operaciones",
+        "registro contable",
+        "mayorización",
+        "devengación",
+        "ajustes contables",
+        "estados financieros",
+        "negocio en marcha",
+        "entidad económica",
+        "sustancia económica",
+        "consistencia"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "time": "19:45:10",
+      "title": "19:45 - Ejercicio resuelto de conceptos de administración",
+      "key": "ejercicio_resuelto_de_conceptos_de_administración",
+      "text_type": "cuestionario",
+      "path": "2026-07-07\\20260707_194510_ejercicio_resuelto_de_conceptos_de_administración.md",
+      "tags": [
+        "liderazgo",
+        "delegación",
+        "estándares",
+        "equipo",
+        "organización",
+        "comunicación",
+        "conflicto",
+        "motivación",
+        "medición",
+        "corrección"
+      ],
+      "related_terms": [
+        "administración",
+        "autoridad",
+        "responsabilidad",
+        "metas comunes",
+        "desempeño",
+        "roles complementarios",
+        "recursos",
+        "relaciones formales",
+        "objetivos definidos",
+        "control"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "time": "19:51:14",
+      "title": "19:51 - Cuestionario sobre present perfect continuous y reporting",
+      "key": "cuestionario_sobre_present_perfect_continuous_y_reporting",
+      "text_type": "cuestionario",
+      "path": "2026-07-07\\20260707_195114_cuestionario_sobre_present_perfect_continuous_y_reporting.md",
+      "tags": [
+        "Present Perfect Continuous",
+        "has / have + been + verb-ing",
+        "Since",
+        "For",
+        "Reporting",
+        "Backshift"
+      ],
+      "related_terms": [
+        "Present Perfect Continuous",
+        "has",
+        "have",
+        "been",
+        "verb-ing",
+        "since",
+        "for",
+        "reporting",
+        "backshift",
+        "time markers",
+        "pronouns",
+        "reference time"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "time": "19:59:59",
+      "title": "19:59 - Cuestionario de ambiente, sociología e inglés",
+      "key": "cuestionario_de_ambiente_sociología_e_inglés",
+      "text_type": "cuestionario",
+      "path": "2026-07-07\\20260707_195959_cuestionario_de_ambiente_sociología_e_inglés.md",
+      "tags": [
+        "Población vulnerable",
+        "Residuos sólidos municipales",
+        "Contaminación del agua",
+        "Instituciones ambientales",
+        "Ecología profunda",
+        "Modales en inglés",
+        "Present perfect"
+      ],
+      "related_terms": [
+        "sustentabilidad",
+        "desarrollo sustentable",
+        "residuos sólidos",
+        "contaminación del agua",
+        "política ambiental",
+        "instituciones mexicanas",
+        "PROFEPA",
+        "IMTA",
+        "sociología",
+        "Weber",
+        "Durkheim",
+        "economía del bienestar",
+        "externalidades",
+        "modales en inglés",
+        "phrasal verbs"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "time": "20:04:47",
+      "title": "20:04 - Cuestionario de ambiente, sociología e inglés",
+      "key": "cuestionario_de_ambiente_sociología_e_inglés",
+      "text_type": "cuestionario",
+      "path": "2026-07-07\\20260707_200447_cuestionario_de_ambiente_sociología_e_inglés.md",
+      "tags": [
+        "Bienes ambientales",
+        "Orientaciones educativas",
+        "Problemas ambientales globales",
+        "Modales en inglés",
+        "Marcadores del present perfect",
+        "Phrasal verbs"
+      ],
+      "related_terms": [
+        "CONANP",
+        "PROFEPA",
+        "bienes ambientales",
+        "orientación educativa",
+        "orientaciones radicales",
+        "ecología profunda",
+        "Protocolo de Montreal",
+        "contaminantes primarios del aire",
+        "marginación",
+        "sociología",
+        "recursos renovables",
+        "present perfect",
+        "past perfect",
+        "phrasal verbs"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "time": "20:33:16",
+      "title": "20:33 - Cuestionario de sociología ambiental y sustentabilidad",
+      "key": "cuestionario_de_sociología_ambiental_y_sustentabilidad",
+      "text_type": "cuestionario",
+      "path": "2026-07-07\\20260707_203316_cuestionario_de_sociología_ambiental_y_sustentabilidad.md",
+      "tags": [
+        "Población indígena",
+        "Residuos sólidos municipales",
+        "Ecología profunda",
+        "Instituciones de fomento",
+        "PROFEPA",
+        "Instituciones jurídicas",
+        "Política tecnocrática-productivista",
+        "CONANP",
+        "Contaminantes primarios del aire",
+        "Protocolo de Montreal"
+      ],
+      "related_terms": [
+        "medio ambiente",
+        "sustentabilidad",
+        "sociología ambiental",
+        "desarrollo sustentable",
+        "instituciones ambientales",
+        "contaminación del agua",
+        "contaminación del aire",
+        "residuos sólidos municipales",
+        "ecología profunda",
+        "orientaciones críticas",
+        "orientaciones radicales",
+        "orientaciones reformistas",
+        "PROFEPA",
+        "IMTA",
+        "CONANP",
+        "Protocolo de Montreal",
+        "CFC",
+        "población indígena"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "time": "20:35:13",
+      "title": "20:35 - Preguntas 22 a 30 sobre ambiente, sociedad y recursos",
+      "key": "preguntas_22_a_30_sobre_ambiente_sociedad_y_recursos",
+      "text_type": "cuestionario",
+      "path": "2026-07-07\\20260707_203513_preguntas_22_a_30_sobre_ambiente_sociedad_y_recursos.md",
+      "tags": [
+        "Residuos orgánicos",
+        "Marginación social",
+        "Instituciones de planificación, gestión y coordinación",
+        "Sociología",
+        "Orientación marxista elemental",
+        "Ecología profunda",
+        "Problemas macroecológicos",
+        "Ecofeminismo",
+        "Recursos renovables"
+      ],
+      "related_terms": [
+        "residuos biodegradables",
+        "origen biológico",
+        "México en los noventa",
+        "Chiapas",
+        "Oaxaca",
+        "bienes ambientales protegidos",
+        "sociedad moderna",
+        "capital y trabajo",
+        "lucha de clases",
+        "orientación educativa",
+        "cambio climático",
+        "efecto invernadero",
+        "capa de ozono",
+        "biodiversidad",
+        "energía solar",
+        "energía eólica",
+        "energía hidráulica"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "time": "20:38:08",
+      "title": "20:38 - Pistas resueltas sobre elasticidad, impuestos y bienestar",
+      "key": "pistas_resueltas_sobre_elasticidad_impuestos_y_bienestar",
+      "text_type": "cuestionario",
+      "path": "2026-07-07\\20260707_203808_pistas_resueltas_sobre_elasticidad_impuestos_y_bienestar.md",
+      "tags": [
+        "Elasticidad cruzada",
+        "Elasticidad ingreso",
+        "Impuesto",
+        "Elasticidad",
+        "Ineficiencia",
+        "Bienestar",
+        "Eficiencia",
+        "Productor",
+        "Consumidor",
+        "Inelástica"
+      ],
+      "related_terms": [
+        "microeconomía",
+        "demanda",
+        "elasticidad cruzada",
+        "elasticidad ingreso",
+        "impuesto",
+        "bienestar",
+        "eficiencia",
+        "productor",
+        "consumidor",
+        "inelástica"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "time": "22:11:04",
+      "title": "22:11 - Cuestionario de ambiente, sustentabilidad y sociología",
+      "key": "cuestionario_de_ambiente_sustentabilidad_y_sociología",
+      "text_type": "cuestionario",
+      "path": "2026-07-07\\20260707_221104_cuestionario_de_ambiente_sustentabilidad_y_sociología.md",
+      "tags": [
+        "Residuos orgánicos",
+        "Instituciones de fomento",
+        "Instituciones jurídicas",
+        "Políticas tecnocráticas-productivistas",
+        "Problemas macroecológicos",
+        "Orientación marxista elemental"
+      ],
+      "related_terms": [
+        "indígenas",
+        "residuos sólidos municipales",
+        "contaminación del agua",
+        "Small is Beautiful",
+        "Schumacher",
+        "IMTA",
+        "ecología profunda",
+        "PROFEPA",
+        "CONANP",
+        "orientación educativa",
+        "monóxido de carbono",
+        "Protocolo de Montreal",
+        "clorofluorocarbonos",
+        "afecciones respiratorias",
+        "Chiapas",
+        "Oaxaca",
+        "ecofeminismo",
+        "recursos renovables"
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "time": "21:53:13",
+      "title": "21:53 - Bienvenida a la asignatura de garantías constitucionales",
+      "key": "bienvenida_a_la_asignatura_de_garantías_constitucionales",
+      "text_type": "formal",
+      "path": "2026-07-08\\20260708_215313_bienvenida_a_la_asignatura_de_garantías_constitucionales.md",
+      "tags": [
+        "Garantías Constitucionales",
+        "Sesión sincrónica",
+        "Marco de respeto",
+        "Posgrados"
+      ],
+      "related_terms": [
+        "bienvenida",
+        "presentación del docente",
+        "estudiantes",
+        "abogado",
+        "Facultad de Derecho",
+        "UNAM",
+        "comentarios",
+        "inquietudes",
+        "respeto"
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "time": "22:34:02",
+      "title": "22:34 - Introducción y objetivo de garantías constitucionales",
+      "key": "introducción_y_objetivo_de_garantías_constitucionales",
+      "text_type": "informativo",
+      "path": "2026-07-08\\20260708_223402_introducción_y_objetivo_de_garantías_constitucionales.md",
+      "tags": [
+        "Garantías Constitucionales",
+        "Derechos humanos",
+        "Medios de control constitucional",
+        "Diagnóstico de conocimientos previos",
+        "Pensamiento jurídico"
+      ],
+      "related_terms": [
+        "abogacía",
+        "Constitución mexicana",
+        "defensa de los derechos humanos",
+        "protección de derechos",
+        "justicia",
+        "desarrollo social",
+        "retroalimentación",
+        "nivelación"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "07:06:43",
+      "title": "07:06 - Cuestionario sobre estados financieros y ciclo contable",
+      "key": "cuestionario_sobre_estados_financieros_y_ciclo_contable",
+      "text_type": "cuestionario",
+      "path": "2026-07-09\\20260709_070643_cuestionario_sobre_estados_financieros_y_ciclo_contable.md",
+      "tags": [
+        "Estado de cambios en el capital contable",
+        "Ciclo contable",
+        "Estado de resultados",
+        "Estados financieros",
+        "Partida doble",
+        "Balanza de comprobación",
+        "Balance general",
+        "Libro diario",
+        "Registro de operaciones"
+      ],
+      "related_terms": [
+        "contabilidad",
+        "capital contable",
+        "ciclo contable",
+        "libro mayor",
+        "libro diario",
+        "balance general",
+        "estado de resultados",
+        "balanza de comprobación",
+        "partida doble",
+        "estados financieros"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "07:17:30",
+      "title": "07:17 - Robustecer envíos a telegram antes de activar play",
+      "key": "robustecer_envíos_a_telegram_antes_de_activar_play",
+      "text_type": "nota_libre",
+      "path": "2026-07-09\\20260709_071730_robustecer_envíos_a_telegram_antes_de_activar_play.md",
+      "tags": [
+        "Pipeline",
+        "Flujos paralelos",
+        "Flujo secuencial",
+        "Markdown derivados",
+        "Botón Play"
+      ],
+      "related_terms": [
+        "Telegram",
+        "backend",
+        "LLM",
+        "envíos secuenciales",
+        "procesamiento paralelo",
+        "sincronización",
+        "estado del botón",
+        "robustez del flujo"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "10:40:14",
+      "title": "10:40 - Foro diagnóstico sobre constitución y derechos",
+      "key": "foro_diagnóstico_sobre_constitución_y_derechos",
+      "text_type": "cuestionario",
+      "path": "2026-07-09\\20260709_104014_foro_diagnóstico_sobre_constitución_y_derechos.md",
+      "tags": [
+        "Foro diagnóstico",
+        "Objetivo específico",
+        "Constitución",
+        "Derechos subjetivo y objetivo",
+        "Derechos sustantivo y adjetivo",
+        "Proceso y procedimiento",
+        "Garantía y derecho humano"
+      ],
+      "related_terms": [
+        "comunidad estudiantil",
+        "curso",
+        "participación activa",
+        "reflexión",
+        "intercambio de ideas",
+        "planificación educativa",
+        "actividades de aprendizaje",
+        "derecho constitucional",
+        "diagnóstico inicial"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "11:00:22",
+      "title": "11:00 - Foro diagnóstico sobre nociones básicas de derecho",
+      "key": "foro_diagnóstico_sobre_nociones_básicas_de_derecho",
+      "text_type": "procedimental",
+      "path": "2026-07-09\\20260709_110022_foro_diagnóstico_sobre_nociones_básicas_de_derecho.md",
+      "tags": [
+        "Foro diagnóstico",
+        "Conocimientos previos",
+        "Expectativas",
+        "Necesidades de aprendizaje",
+        "Intercambio de ideas",
+        "Participación activa",
+        "Planificación de actividades de aprendizaje",
+        "Preguntas guía",
+        "Constitución",
+        "Derecho subjetivo y derecho objetivo",
+        "Derecho sustantivo y derecho adjetivo",
+        "Proceso y procedimiento"
+      ],
+      "related_terms": [
+        "foro diagnóstico",
+        "saberes previos",
+        "expectativas",
+        "necesidades",
+        "reflexión",
+        "intercambio de ideas",
+        "participación activa",
+        "planificación",
+        "actividades de aprendizaje",
+        "preguntas guía",
+        "Constitución",
+        "derecho",
+        "proceso",
+        "procedimiento",
+        "garantía",
+        "derechos humanos"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "13:05:47",
+      "title": "13:05 - Foro diagnóstico sobre constitución y garantías",
+      "key": "foro_diagnóstico_sobre_constitución_y_garantías",
+      "text_type": "cuestionario",
+      "path": "2026-07-09\\20260709_130547_foro_diagnóstico_sobre_constitución_y_garantías.md",
+      "tags": [
+        "Constitución",
+        "Garantías constitucionales",
+        "Derecho objetivo",
+        "Derecho subjetivo",
+        "Derecho sustantivo",
+        "Derecho adjetivo",
+        "Proceso",
+        "Procedimiento",
+        "Derecho humano",
+        "Garantía"
+      ],
+      "related_terms": [
+        "derecho constitucional",
+        "garantías constitucionales",
+        "derechos humanos",
+        "derecho procesal",
+        "debido proceso",
+        "legalidad",
+        "acceso a la justicia",
+        "autoridad competente",
+        "normas jurídicas",
+        "Estado"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "13:14:05",
+      "title": "13:14 - Bienvenida a derecho a la seguridad social",
+      "key": "bienvenida_a_derecho_a_la_seguridad_social",
+      "text_type": "formal",
+      "path": "2026-07-09\\20260709_131405_bienvenida_a_derecho_a_la_seguridad_social.md",
+      "tags": [
+        "Derecho a la Seguridad Social",
+        "Derecho Social",
+        "Seguridad social",
+        "Personas derechohabientes",
+        "Sistemas de seguridad social mexicanos",
+        "Sistemas de ahorro para el retiro"
+      ],
+      "related_terms": [
+        "Derecho Social",
+        "Derecho Laboral",
+        "Derecho Agrario",
+        "IMSS",
+        "ISSSTE",
+        "ahorro para el retiro",
+        "derechohabientes",
+        "cesantía",
+        "personas trabajadoras",
+        "marco jurídico",
+        "desigualdad",
+        "distribución de la riqueza"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "13:23:41",
+      "title": "13:23 - Derecho a la seguridad social",
+      "key": "derecho_a_la_seguridad_social",
+      "text_type": "informativo",
+      "path": "2026-07-09\\20260709_132341_derecho_a_la_seguridad_social.md",
+      "tags": [
+        "Derecho a la seguridad social",
+        "Derecho del Trabajo",
+        "Luchas sociales",
+        "Personas trabajadoras",
+        "Personas en situación de vulnerabilidad",
+        "Sistema de seguridad social",
+        "Igualdad"
+      ],
+      "related_terms": [
+        "Derecho Laboral",
+        "Derecho Agrario",
+        "Revolución Mexicana",
+        "derechos humanos",
+        "patrones",
+        "accidentes de trabajo",
+        "enfermedades",
+        "vejez",
+        "desempleo",
+        "invalidez",
+        "COVID-19",
+        "empleo formal",
+        "retiro digno",
+        "población económicamente activa",
+        "herramientas jurídicas"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "14:01:26",
+      "title": "14:01 - Foro diagnóstico de conocimientos previos del curso de derecho de la seguridad social",
+      "key": "foro_diagnóstico_de_conocimientos_previos_del_curso_de_derecho_de_la_seguridad_s",
+      "text_type": "formal",
+      "path": "2026-07-09\\20260709_140126_foro_diagnóstico_de_conocimientos_previos_del_curso_de_derecho_de_la_seguridad_s.md",
+      "tags": [
+        "Foro diagnóstico",
+        "Conocimientos previos",
+        "Sin peso en la calificación",
+        "Instrucciones de participación",
+        "Formato APA, 7.ª edición",
+        "Fecha esperada"
+      ],
+      "related_terms": [
+        "Derecho de la Seguridad Social",
+        "conocimientos previos",
+        "foro diagnóstico",
+        "sistemas de seguros públicos en México",
+        "sistema de ahorro para el retiro",
+        "formato APA 7.ª edición",
+        "evaluación diagnóstica"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "14:24:51",
+      "title": "14:24 - Fundamentos del derecho de la seguridad social en méxico",
+      "key": "fundamentos_del_derecho_de_la_seguridad_social_en_méxico",
+      "text_type": "informativo",
+      "path": "2026-07-09\\20260709_142451_fundamentos_del_derecho_de_la_seguridad_social_en_méxico.md",
+      "tags": [
+        "Derecho de la Seguridad Social",
+        "Derecho Social",
+        "Contingencias",
+        "IMSS",
+        "ISSSTE",
+        "Sistema de ahorro para el retiro",
+        "Seguridad social vs. asistencia",
+        "Beneficiarios",
+        "Riesgos de trabajo",
+        "APA 7.ª edición"
+      ],
+      "related_terms": [
+        "derecho laboral",
+        "derecho agrario",
+        "pensiones",
+        "servicios de salud",
+        "invalidez",
+        "vejez",
+        "retiro",
+        "cesantía",
+        "desempleo",
+        "maternidad",
+        "asistencia social",
+        "cuentas individuales",
+        "aportaciones tripartitas",
+        "instituciones públicas mexicanas",
+        "referencia bibliográfica"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "15:25:22",
+      "title": "15:25 - Bienvenida a interaprendizajes en ambientes virtuales",
+      "key": "bienvenida_a_interaprendizajes_en_ambientes_virtuales",
+      "text_type": "formal",
+      "path": "2026-07-09\\20260709_152522_bienvenida_a_interaprendizajes_en_ambientes_virtuales.md",
+      "tags": [
+        "Interaprendizaje",
+        "Ambientes virtuales",
+        "TICCAD",
+        "Aprendizaje autónomo",
+        "Participación colaborativa"
+      ],
+      "related_terms": [
+        "educación en línea",
+        "docencia virtual",
+        "colaboración",
+        "diálogo",
+        "reflexión",
+        "diversidad cultural",
+        "diversidad lingüística",
+        "acompañamiento formativo",
+        "diseño educativo",
+        "pedagogía"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "15:31:29",
+      "title": "15:31 - Introducción al interaprendizaje virtual en derecho",
+      "key": "introducción_al_interaprendizaje_virtual_en_derecho",
+      "text_type": "informativo",
+      "path": "2026-07-09\\20260709_153129_introducción_al_interaprendizaje_virtual_en_derecho.md",
+      "tags": [
+        "Interaprendizaje en ambientes virtuales",
+        "Diversidad cultural y lingüística",
+        "TICCAD",
+        "Despacho jurídico digital",
+        "Bitácora de interaprendizaje",
+        "Autoevaluación y coevaluación"
+      ],
+      "related_terms": [
+        "educación virtual",
+        "aula virtual",
+        "formación profesional en Derecho",
+        "trabajo colaborativo",
+        "evaluación reflexiva",
+        "participación en línea",
+        "recursos digitales",
+        "diálogo",
+        "autogestión",
+        "proyecto colaborativo"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "15:47:22",
+      "title": "15:47 - Instrucciones para transformar transcripciones en notas",
+      "key": "instrucciones_para_transformar_transcripciones_en_notas",
+      "text_type": "procedimental",
+      "path": "2026-07-09\\20260709_154722_instrucciones_para_transformar_transcripciones_en_notas.md",
+      "tags": [
+        "Transcripción cruda",
+        "Nota de conocimiento",
+        "Tipo de texto",
+        "Cuestionario",
+        "Texto procedimental"
+      ],
+      "related_terms": [
+        "edición de notas",
+        "base de conocimiento",
+        "corrección de estilo",
+        "clasificación textual",
+        "estructura JSON",
+        "síntesis",
+        "redacción limpia"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "15:53:15",
+      "title": "15:53 - Cuestionario sobre interaprendizaje y colaboración digital",
+      "key": "cuestionario_sobre_interaprendizaje_y_colaboración_digital",
+      "text_type": "cuestionario",
+      "path": "2026-07-09\\20260709_155315_cuestionario_sobre_interaprendizaje_y_colaboración_digital.md",
+      "tags": [
+        "Interaprendizaje",
+        "Trabajo en equipo a distancia",
+        "Diversidad cultural y lingüística",
+        "Enfoque intercultural en la formación jurídica",
+        "Herramientas digitales",
+        "Autoevaluación",
+        "Coevaluación"
+      ],
+      "related_terms": [
+        "aprendizaje colaborativo",
+        "educación a distancia",
+        "comunicación digital",
+        "competencias digitales",
+        "formación jurídica",
+        "interculturalidad",
+        "acceso a la justicia",
+        "trabajo colaborativo",
+        "plataformas educativas",
+        "evaluación formativa"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "time": "17:48:49",
+      "title": "17:48 - Ejercicios sobre present perfect continuous y reporting",
+      "key": "ejercicios_sobre_present_perfect_continuous_y_reporting",
+      "text_type": "cuestionario",
+      "path": "2026-07-09\\20260709_174849_ejercicios_sobre_present_perfect_continuous_y_reporting.md",
+      "tags": [
+        "Present Perfect Continuous",
+        "Has/Have + been + verb-ing",
+        "Since",
+        "For",
+        "Reporting",
+        "Backshift"
+      ],
+      "related_terms": [
+        "gramática inglesa",
+        "tiempos verbales",
+        "present perfect continuous",
+        "reported speech",
+        "marcadores temporales",
+        "since",
+        "for",
+        "backshift",
+        "verb-ing"
+      ]
     }
   ]
 }

@@ -62,8 +62,9 @@ class DummyUpdate:
 
 
 class DummyContext:
-    def __init__(self):
+    def __init__(self, args=None):
         self.user_data = {}
+        self.args = args or []
 
 
 class DummyCallbackQuery:
@@ -416,6 +417,51 @@ def test_handle_text_reports_reply_delivery_errors(tmp_path: Path, monkeypatch) 
     ]
 
 
+def test_handle_text_routes_motor_prefix(tmp_path: Path, monkeypatch) -> None:
+    settings = make_settings(tmp_path)
+    monkeypatch.setattr(bot, "SETTINGS", settings)
+    captured = {}
+
+    async def fake_handle(message, instruction, context):
+        captured["instruction"] = instruction
+        captured["context"] = context
+        await message.reply_text("Motor OK")
+
+    monkeypatch.setattr(bot, "_handle_intelligent_instruction", fake_handle)
+
+    message = DummyMessage()
+    message.text = "motor: planifica UCNL actividad 1"
+    context = DummyContext()
+
+    asyncio.run(bot.handle_text(DummyUpdate(message), context))
+
+    assert captured["instruction"] == "planifica UCNL actividad 1"
+    assert captured["context"] is context
+    assert message.replies == ["Motor OK"]
+
+
+def test_handle_intelligent_command_uses_context_args(tmp_path: Path, monkeypatch) -> None:
+    settings = make_settings(tmp_path)
+    monkeypatch.setattr(bot, "SETTINGS", settings)
+    captured = {}
+
+    async def fake_handle(message, instruction, context):
+        captured["instruction"] = instruction
+        captured["context"] = context
+        await message.reply_text("Motor OK")
+
+    monkeypatch.setattr(bot, "_handle_intelligent_instruction", fake_handle)
+
+    message = DummyMessage()
+    context = DummyContext(args=["planifica", "UCNL", "actividad", "1"])
+
+    asyncio.run(bot.handle_intelligent_command(DummyUpdate(message), context))
+
+    assert captured["instruction"] == "planifica UCNL actividad 1"
+    assert captured["context"] is context
+    assert message.replies == ["Motor OK"]
+
+
 def test_note_clean_outputs_are_sent_before_derivatives(tmp_path: Path, monkeypatch) -> None:
     reset_bot_runtime()
     settings = make_settings(tmp_path)
@@ -457,7 +503,7 @@ def test_note_clean_outputs_are_sent_before_derivatives(tmp_path: Path, monkeypa
     async def tracked_enqueue_default_derivatives(note_id):
         note_context = bot._get_note_context(note_id)
         assert note_context is not None
-        assert note_context.get("auto_play_after_derivatives") is True
+        assert note_context.get("auto_play_after_derivatives") is None
         order.append("derivatives")
 
     monkeypatch.setattr(DummyMessage, "reply_text", tracked_reply_text)
@@ -517,7 +563,7 @@ def test_long_questionnaire_note_is_sent_as_text_chunks_before_markdown(tmp_path
     assert message.document_replies[0]["kwargs"]["filename"].endswith("cuestionario_extenso.md")
 
 
-def test_auto_play_is_enqueued_after_derivatives_finish(tmp_path: Path, monkeypatch) -> None:
+def test_derivatives_finish_without_auto_play_and_enable_proposal(tmp_path: Path, monkeypatch) -> None:
     reset_bot_runtime()
     settings = make_settings(tmp_path)
     monkeypatch.setattr(bot, "SETTINGS", settings)
@@ -539,7 +585,6 @@ def test_auto_play_is_enqueued_after_derivatives_finish(tmp_path: Path, monkeypa
         "concepts": [],
         "related_terms": [],
         "status_message": message,
-        "auto_play_after_derivatives": True,
         "derivative_statuses": {},
         "derivative_texts": {},
         "play_active": False,
@@ -552,6 +597,7 @@ def test_auto_play_is_enqueued_after_derivatives_finish(tmp_path: Path, monkeypa
         derivative_batches.append([action for _, _, action, _ in payloads])
         for _, payload_note_id, action, _ in payloads:
             enqueued.append(("derive", payload_note_id, action))
+            bot._NOTE_CONTEXT_REGISTRY[payload_note_id].setdefault("derivative_statuses", {})[action] = "completed"
         return True
 
     async def fake_run_derivative_job(job_kind, note_id_arg, action, message_arg):
@@ -567,50 +613,10 @@ def test_auto_play_is_enqueued_after_derivatives_finish(tmp_path: Path, monkeypa
     asyncio.run(scenario())
 
     assert derivative_batches == [bot.PLAY_SEQUENCE]
-    assert [item[0] for item in enqueued] == ["derive", "derive", "derive", "derive", "play", "play", "play", "play"]
-    assert bot._NOTE_CONTEXT_REGISTRY[note_id].get("auto_play_after_derivatives") is None
-    assert bot._NOTE_CONTEXT_REGISTRY[note_id].get("derivative_markdown_delivery_completed") is None
-
-
-def test_auto_play_waits_for_successful_derivative_markdown_delivery(tmp_path: Path, monkeypatch) -> None:
-    reset_bot_runtime()
-    settings = make_settings(tmp_path)
-    monkeypatch.setattr(bot, "SETTINGS", settings)
-    saved = bot.save_note(settings.notes_dir, {"title": "Nota", "corrected_text": "x", "concepts": [], "related_terms": []})
-    note_id = bot._note_id_from_saved(saved)
-    message = DummyMessage()
-    bot._NOTE_CONTEXT_REGISTRY[note_id] = {
-        "title": saved.title,
-        "note_path": str(saved.note_path),
-        "status_message": message,
-        "auto_play_after_derivatives": True,
-        "derivative_statuses": {},
-        "derivative_texts": {},
-        "play_active": False,
-        "play_jobs_pending": 0,
-    }
-    enqueued: list[tuple[str, str, str]] = []
-
-    async def failed_delivery(note_id_arg, payloads):
-        return False
-
-    async def fake_run_derivative_job(job_kind, note_id_arg, action, message_arg):
-        enqueued.append((job_kind, note_id_arg, action))
-
-    monkeypatch.setattr(bot, "_run_derive_jobs_for_note_ordered", failed_delivery)
-    monkeypatch.setattr(bot, "_run_derivative_job", fake_run_derivative_job)
-
-    async def scenario():
-        await bot._enqueue_default_derivatives(note_id)
-        await bot._wait_for_background_jobs()
-
-    asyncio.run(scenario())
-
-    assert enqueued == []
+    assert [item[0] for item in enqueued] == ["derive", "derive", "derive", "derive"]
     assert bot._NOTE_CONTEXT_REGISTRY[note_id]["play_active"] is False
     assert bot._NOTE_CONTEXT_REGISTRY[note_id]["play_jobs_pending"] == 0
-    assert bot._NOTE_CONTEXT_REGISTRY[note_id].get("auto_play_after_derivatives") is None
-    assert bot._NOTE_CONTEXT_REGISTRY[note_id].get("derivative_markdown_delivery_completed") is None
+    assert bot._base_editorial_actions_completed(bot._NOTE_CONTEXT_REGISTRY[note_id]) is True
 
 
 
@@ -724,6 +730,133 @@ def test_handle_note_action_persists_markdown_derivative(tmp_path: Path, monkeyp
     assert derivative_path.exists()
     assert "Respuesta guardada." in derivative_path.read_text(encoding="utf-8")
     assert derivative_path.name in saved.note_path.read_text(encoding="utf-8")
+
+
+def test_proposal_action_is_locked_until_base_derivatives_complete(tmp_path: Path, monkeypatch) -> None:
+    reset_bot_runtime()
+    settings = make_settings(tmp_path)
+    monkeypatch.setattr(bot, "SETTINGS", settings)
+    saved = bot.save_note(settings.notes_dir, {"title": "Nota", "corrected_text": "x", "concepts": [], "related_terms": []})
+    note_id = bot._note_id_from_saved(saved)
+    message = DummyMessage()
+    context = DummyContext()
+    context.user_data["notes"] = {
+        note_id: {
+            "title": saved.title,
+            "note_path": str(saved.note_path),
+            "corrected_text": "x",
+            "concepts": [],
+            "related_terms": [],
+            "derivative_statuses": {"explain": "completed"},
+            "derivative_texts": {},
+        }
+    }
+
+    asyncio.run(bot.handle_note_action(DummyUpdate(callback_query=DummyCallbackQuery(f"note_action:proposal:{note_id}", message)), context))
+
+    assert message.replies == ["Propuesta: disponible cuando terminen Explicar, Sugerencias, Investigar y Dialectica."]
+    assert not saved.note_path.with_name(f"{saved.note_path.stem}.proposal.md").exists()
+
+
+def test_proposal_action_persists_editorial_instruction(tmp_path: Path, monkeypatch) -> None:
+    reset_bot_runtime()
+    settings = make_settings(tmp_path)
+    monkeypatch.setattr(bot, "SETTINGS", settings)
+    saved = bot.save_note(settings.notes_dir, {"title": "Nota", "corrected_text": "x", "concepts": [], "related_terms": []})
+    note_id = bot._note_id_from_saved(saved)
+    message = DummyMessage()
+    context = DummyContext()
+    context.user_data["notes"] = {
+        note_id: {
+            "title": saved.title,
+            "note_path": str(saved.note_path),
+            "corrected_text": "x",
+            "concepts": [],
+            "related_terms": [],
+            "derivative_statuses": {action: "completed" for action in bot.PLAY_SEQUENCE},
+            "derivative_texts": {},
+        }
+    }
+
+    class DummyProposal:
+        instruction = "planifica . con backend langgraph maximo 1 objetivo"
+        backend = "langgraph"
+        target_hint = "."
+        sections = {
+            "Nucleo": "Objetivo editorial.",
+            "Desarrollo": "Campaña sobre repositorio.",
+            "Accionables": "Ejecutar propuesta.",
+            "Evidencias y supuestos": "Depende del inventario.",
+            "Sintesis breve": "Realizar lote inicial.",
+        }
+
+    monkeypatch.setattr(bot, "build_editorial_proposal", lambda *args, **kwargs: DummyProposal())
+    monkeypatch.setattr(bot, "polly_audio_enabled", lambda settings: False)
+
+    async def scenario():
+        await bot.handle_note_action(DummyUpdate(callback_query=DummyCallbackQuery(f"note_action:proposal:{note_id}", message)), context)
+        await bot._wait_for_background_jobs()
+
+    asyncio.run(scenario())
+
+    proposal_file = saved.note_path.with_name(f"{saved.note_path.stem}.proposal.md")
+    assert proposal_file.exists()
+    proposal_payload = bot._parse_derivative_markdown(proposal_file.read_text(encoding="utf-8"))
+    assert proposal_payload["metadata"]["editorial_instruction"] == "planifica . con backend langgraph maximo 1 objetivo"
+    assert bot._proposal_ready(note_id, context.user_data["notes"][note_id]) is True
+
+
+def test_realize_action_uses_persisted_proposal_instruction(tmp_path: Path, monkeypatch) -> None:
+    reset_bot_runtime()
+    settings = make_settings(tmp_path)
+    monkeypatch.setattr(bot, "SETTINGS", settings)
+    saved = bot.save_note(settings.notes_dir, {"title": "Nota", "corrected_text": "x", "concepts": [], "related_terms": []})
+    note_id = bot._note_id_from_saved(saved)
+    bot.save_note_derivative(
+        saved.note_path,
+        "proposal",
+        "## Nucleo\n\nPropuesta.",
+        saved.title,
+        extra_metadata={"editorial_instruction": "planifica UCNL actividad 1"},
+    )
+    message = DummyMessage()
+    context = DummyContext()
+    context.user_data["notes"] = {
+        note_id: {
+            "title": saved.title,
+            "note_path": str(saved.note_path),
+            "corrected_text": "x",
+            "concepts": [],
+            "related_terms": [],
+            "derivative_statuses": {**{action: "completed" for action in bot.PLAY_SEQUENCE}, "proposal": "completed"},
+            "derivative_texts": {},
+        }
+    }
+    captured = {}
+
+    class DummyDispatchResult:
+        run_dir = tmp_path
+        manifest_path = tmp_path / "manifest.json"
+        report_path = tmp_path / "report.md"
+
+    class DummyDispatch:
+        result = DummyDispatchResult()
+
+    DummyDispatchResult.report_path.write_text("# Reporte\n", encoding="utf-8")
+    def fake_dispatch(instruction, settings_arg):
+        captured["instruction"] = instruction
+        return DummyDispatch()
+
+    monkeypatch.setattr(bot, "run_intelligent_dispatch", fake_dispatch)
+    monkeypatch.setattr(bot, "format_dispatch_summary", lambda dispatch: "Motor inteligente ejecutado.")
+    monkeypatch.setattr(bot, "polly_audio_enabled", lambda settings: False)
+
+    asyncio.run(bot.handle_note_action(DummyUpdate(callback_query=DummyCallbackQuery(f"note_action:realize:{note_id}", message)), context))
+
+    assert captured["instruction"] == "planifica UCNL actividad 1"
+    assert "Realizar: ejecutando propuesta" in message.replies[0]
+    assert "Motor inteligente ejecutado." in message.replies[1]
+    assert message.document_replies
 
 
 def test_build_channel_text_keeps_derivative_complete_for_telegram() -> None:

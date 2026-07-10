@@ -7,9 +7,15 @@ from urllib.parse import urlsplit
 
 from dotenv import load_dotenv
 
-load_dotenv(override=True)
-load_dotenv("notas.env", override=True)
-load_dotenv("credenciales.env", override=True)
+
+def _load_env_files() -> None:
+    load_dotenv(override=True)
+    load_dotenv("interfaz.env", override=True)
+    load_dotenv("notas.env", override=True)
+    load_dotenv("credenciales.env", override=True)
+
+
+_load_env_files()
 
 
 @dataclass(frozen=True)

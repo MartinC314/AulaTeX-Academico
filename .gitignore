@@ -68,8 +68,16 @@ scripts/preview/
 scripts/tikz-preview/
 scripts/aulatex.env
 
+# Incubadora local: conservar carpeta, ignorar contenido
+upgrade/*
+!upgrade/.gitkeep
+
 # VS Code: compartir recetas del proyecto, no estado local del editor
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
-upgrade/notas-telegram/*.env
+bot-interfaz/.venv/
+bot-interfaz/.pytest_cache/
+bot-interfaz/**/__pycache__/
+bot-interfaz/**/*.pyc
+bot-interfaz/interfaz.env

@@ -1,12 +1,15 @@
 param(
-    [switch]$Gui
+    [switch]$Gui,
+    [switch]$BootstrapOnly
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+$PSNativeCommandUseErrorActionPreference = $false
 
 $repoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $pythonExe = Join-Path $repoRoot '.venv\Scripts\python.exe'
+$requirementsFile = Join-Path $repoRoot 'requirements.txt'
 $pidFile = Join-Path $repoRoot 'data\notas-bot.pid'
 $logDir = Join-Path $repoRoot 'data\logs'
 $stdoutLog = Join-Path $logDir 'notas-bot.out.log'
@@ -52,8 +55,88 @@ function Get-PreferredBotPid {
     return $null
 }
 
-if (-not (Test-Path $pythonExe)) {
-    throw "No se encontro el interprete virtual en: $pythonExe"
+function Get-BotBootstrapPython {
+    $launchers = @(
+        @{ Command = 'py'; Arguments = @('-3.14', '-c', 'import sys; print(sys.executable)') },
+        @{ Command = 'py'; Arguments = @('-3', '-c', 'import sys; print(sys.executable)') },
+        @{ Command = 'python'; Arguments = @('-c', 'import sys; print(sys.executable)') }
+    )
+
+    foreach ($launcher in $launchers) {
+        $command = Get-Command $launcher.Command -ErrorAction SilentlyContinue
+        if (-not $command) {
+            continue
+        }
+        try {
+            $output = & $command.Source @($launcher.Arguments) 2>$null
+            if ($LASTEXITCODE -eq 0 -and $output) {
+                return [string]($output | Select-Object -First 1)
+            }
+        } catch {
+            continue
+        }
+    }
+
+    throw 'No se encontro un interprete base para crear la .venv local del bot. Instala Python 3 y vuelve a intentar.'
+}
+
+function Test-BotDependencies {
+    param([string]$PythonPath)
+
+    if (-not (Test-Path $PythonPath)) {
+        return $false
+    }
+
+    $imports = 'import telegram, dotenv, openai, requests, pypdf, docx'
+    $stdoutProbe = [System.IO.Path]::GetTempFileName()
+    $stderrProbe = [System.IO.Path]::GetTempFileName()
+    try {
+        $probe = Start-Process `
+            -FilePath $PythonPath `
+            -ArgumentList '-c', $imports `
+            -NoNewWindow `
+            -Wait `
+            -PassThru `
+            -RedirectStandardOutput $stdoutProbe `
+            -RedirectStandardError $stderrProbe
+        return ($probe.ExitCode -eq 0)
+    } finally {
+        Remove-Item $stdoutProbe, $stderrProbe -Force -ErrorAction SilentlyContinue
+    }
+}
+
+function Initialize-BotEnvironment {
+    if (-not (Test-Path $pythonExe)) {
+        $bootstrapPython = Get-BotBootstrapPython
+        Write-Host "Creando .venv local para bot-interfaz con: $bootstrapPython"
+        & $bootstrapPython -m venv (Join-Path $repoRoot '.venv')
+        if ($LASTEXITCODE -ne 0) {
+            throw 'No se pudo crear la .venv local de bot-interfaz.'
+        }
+    }
+
+    if (-not (Test-BotDependencies -PythonPath $pythonExe)) {
+        Write-Host 'Instalando dependencias locales del bot...'
+        & $pythonExe -m pip install --upgrade pip
+        if ($LASTEXITCODE -ne 0) {
+            throw 'No se pudo actualizar pip en la .venv local del bot.'
+        }
+        & $pythonExe -m pip install -r $requirementsFile
+        if ($LASTEXITCODE -ne 0) {
+            throw 'No se pudieron instalar las dependencias de bot-interfaz.'
+        }
+    }
+
+    if (-not (Test-BotDependencies -PythonPath $pythonExe)) {
+        throw 'La .venv local del bot existe, pero las dependencias requeridas siguen incompletas.'
+    }
+}
+
+Initialize-BotEnvironment
+
+if ($BootstrapOnly) {
+    Write-Host "Entorno local listo: $pythonExe"
+    exit 0
 }
 
 if ($Gui -or $env:NOTAS_GUI_MODE -eq '1') {

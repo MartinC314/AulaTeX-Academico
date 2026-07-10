@@ -11,6 +11,7 @@ from shutil import copy2
 import socket
 import subprocess
 import tempfile
+import uuid
 from itertools import count
 from pathlib import Path
 
@@ -21,6 +22,16 @@ from .analyze import analyze_text
 from .azure_openai_client import invoke_chat
 from .config import load_settings, settings_for_llm_provider, validate_settings
 from .document_reader import SUPPORTED_DOCUMENT_SUFFIXES, read_document_text
+from .intelligent_dispatch import (
+    build_editorial_proposal,
+    execute_intelligent_dispatch_plan,
+    extract_intelligent_instruction,
+    format_dispatch_plan_markdown,
+    format_dispatch_summary,
+    instruction_help_text,
+    plan_intelligent_dispatch,
+    run_intelligent_dispatch,
+)
 from .notes import (
     DERIVATIVE_STATUS_COMPLETED,
     DERIVATIVE_STATUS_ERROR,
@@ -42,12 +53,15 @@ from .transcribe import transcribe_audio
 SETTINGS = load_settings()
 _INSTANCE_LOCK_SOCKET: socket.socket | None = None
 NOTE_ACTION_PREFIX = "note_action"
+MOTOR_ACTION_PREFIX = "motor_action"
 NOTE_ACTIONS = {
     "play": "Play",
     "explain": "Explicar",
     "suggest": "Sugerencias",
     "research": "Investigar",
     "dialectic": "Dialectica",
+    "proposal": "Propuesta",
+    "realize": "Realizar",
 }
 PLAY_SEQUENCE = ["explain", "suggest", "research", "dialectic"]
 DERIVATIVE_ACTION_PROVIDERS = {
@@ -55,6 +69,7 @@ DERIVATIVE_ACTION_PROVIDERS = {
     "suggest": "gpt-pro",
     "research": "codex",
     "dialectic": "model-router",
+    "proposal": "model-router",
 }
 DERIVATIVE_STATUS_ICONS = {
     DERIVATIVE_STATUS_PENDING: "⌛",
@@ -68,6 +83,7 @@ DERIVATIVE_JOB_PRIORITIES = {
     "suggest": 4,
     "research": 5,
     "dialectic": 6,
+    "proposal": 7,
 }
 _NOTE_CONTEXT_REGISTRY: dict[str, dict] = {}
 _DERIVATIVE_JOB_QUEUE: asyncio.PriorityQueue[tuple[int, int, tuple[str, str, object | None]]] | None = None
@@ -344,7 +360,7 @@ def _load_note_delivery_payload(saved: SavedNote, analysis: dict | None = None) 
 
 def _find_saved_note_path(note_id: str) -> Path | None:
     def _is_base_note(path: Path) -> bool:
-        return not any(path.name.endswith(f".{suffix}.md") for suffix in ("explain", "suggest", "research", "dialectic"))
+        return not any(path.name.endswith(f".{suffix}.md") for suffix in ("explain", "suggest", "research", "dialectic", "proposal"))
 
     date_part = note_id.split("_", 1)[0]
     if len(date_part) == 8 and date_part.isdigit():
@@ -406,12 +422,42 @@ def _get_note_context(note_id: str) -> dict | None:
 
 def _default_note_statuses(note_path: Path | None = None) -> dict[str, str]:
     statuses: dict[str, str] = {}
-    for action in ["explain", "suggest", "research", "dialectic"]:
+    for action in [*PLAY_SEQUENCE, "proposal"]:
         if note_path and derivative_path(note_path, action).exists():
             statuses[action] = DERIVATIVE_STATUS_COMPLETED
         else:
             statuses[action] = DERIVATIVE_STATUS_PENDING
     return statuses
+
+
+def _base_editorial_actions_completed(note_context: dict | None) -> bool:
+    if not isinstance(note_context, dict):
+        return False
+    statuses = note_context.get("derivative_statuses")
+    if not isinstance(statuses, dict):
+        return False
+    return all(statuses.get(action) == DERIVATIVE_STATUS_COMPLETED for action in PLAY_SEQUENCE)
+
+
+def _proposal_instruction(note_id: str, note_context: dict | None) -> str:
+    note_path = _resolve_note_path(note_id, note_context or {})
+    if note_path is None:
+        return ""
+    proposal_path = derivative_path(note_path, "proposal")
+    if not proposal_path.exists():
+        return ""
+    try:
+        payload = _parse_derivative_markdown(proposal_path.read_text(encoding="utf-8"))
+    except Exception:
+        return ""
+    metadata = payload.get("metadata") if isinstance(payload.get("metadata"), dict) else {}
+    return str(metadata.get("editorial_instruction") or "").strip()
+
+
+def _proposal_ready(note_id: str, note_context: dict | None) -> bool:
+    if not _base_editorial_actions_completed(note_context):
+        return False
+    return bool(_proposal_instruction(note_id, note_context))
 
 
 def _register_note_context(note_id: str, note_context: dict) -> dict:
@@ -693,6 +739,8 @@ def _action_button_label(action: str, active_action: str | None = None, statuses
         return f"⏳ {label}..."
     if action == "play":
         return "⏳ Play..." if play_active else label
+    if action == "realize":
+        return label
     if statuses:
         icon = DERIVATIVE_STATUS_ICONS.get(statuses.get(action, DERIVATIVE_STATUS_PENDING), "")
         if icon:
@@ -704,6 +752,8 @@ def _build_note_action_keyboard(note_id: str, active_action: str | None = None) 
     note_context = _get_note_context(note_id) or {}
     statuses = note_context.get("derivative_statuses", {}) if isinstance(note_context, dict) else {}
     play_active = bool(note_context.get("play_active")) if isinstance(note_context, dict) else False
+    proposal_enabled = _base_editorial_actions_completed(note_context)
+    realize_enabled = _proposal_ready(note_id, note_context)
     return InlineKeyboardMarkup(
         [
             [
@@ -730,6 +780,16 @@ def _build_note_action_keyboard(note_id: str, active_action: str | None = None) 
                 InlineKeyboardButton(
                     _action_button_label("dialectic", active_action, statuses, play_active),
                     callback_data=f"{NOTE_ACTION_PREFIX}:dialectic:{note_id}",
+                ),
+            ],
+            [
+                InlineKeyboardButton(
+                    _action_button_label("proposal", active_action, statuses, play_active) if proposal_enabled or active_action == "proposal" else "🔒 Propuesta",
+                    callback_data=f"{NOTE_ACTION_PREFIX}:proposal:{note_id}",
+                ),
+                InlineKeyboardButton(
+                    _action_button_label("realize", active_action, statuses, play_active) if realize_enabled or active_action == "realize" else "🔒 Realizar",
+                    callback_data=f"{NOTE_ACTION_PREFIX}:realize:{note_id}",
                 ),
             ],
         ]
@@ -1061,6 +1121,9 @@ def _build_channel_text(payload: dict[str, object], channel: str) -> str:
 
 
 async def _ensure_derivative_markdown(note_id: str, action: str) -> tuple[Path | None, str | None]:
+    if action == "proposal":
+        return await _ensure_proposal_markdown(note_id)
+
     note_context = _get_note_context(note_id)
     if not note_context:
         return None, None
@@ -1305,6 +1368,95 @@ def _format_concepts_for_prompt(concepts: object) -> str:
     return "\n".join(lines) or "Sin conceptos detectados."
 
 
+def _render_sections_text(sections: dict[str, str]) -> str:
+    blocks: list[str] = []
+    for heading in ["Nucleo", "Desarrollo", "Accionables", "Evidencias y supuestos", "Sintesis breve"]:
+        text = str(sections.get(heading, "")).strip()
+        if text:
+            blocks.append(f"## {heading}\n\n{text}")
+    return "\n\n".join(blocks).strip()
+
+
+def _proposal_metadata(note_context: dict, proposal) -> dict[str, object]:
+    return {
+        "editorial_instruction": proposal.instruction,
+        "editorial_backend": proposal.backend,
+        "target_hint": proposal.target_hint,
+        "source_mode": "editorial-proposal",
+        "note_text_type": str(note_context.get("text_type", "nota_libre")).strip() or "nota_libre",
+    }
+
+
+async def _ensure_proposal_markdown(note_id: str) -> tuple[Path | None, str | None]:
+    note_context = _get_note_context(note_id)
+    if not note_context:
+        return None, None
+
+    note_path = _resolve_note_path(note_id, note_context)
+    if note_path is None:
+        await _update_derivative_status(note_id, "proposal", DERIVATIVE_STATUS_ERROR)
+        return None, None
+
+    proposal_path = derivative_path(note_path, "proposal")
+    if proposal_path.exists():
+        await _update_derivative_status(note_id, "proposal", DERIVATIVE_STATUS_COMPLETED)
+        text = note_context.setdefault("derivative_texts", {}).get("proposal")
+        if not text:
+            text = await asyncio.to_thread(_read_derivative_text, proposal_path)
+            note_context["derivative_texts"]["proposal"] = text
+        return proposal_path, text
+
+    await _update_derivative_status(note_id, "proposal", DERIVATIVE_STATUS_PROCESSING)
+    try:
+        proposal = await asyncio.to_thread(
+            build_editorial_proposal,
+            str(note_context.get("title", "Idea")).strip() or "Idea",
+            str(note_context.get("corrected_text", "")).strip(),
+            _format_concepts_for_prompt(note_context.get("concepts")),
+            settings_for_llm_provider(SETTINGS, DERIVATIVE_ACTION_PROVIDERS.get("proposal", SETTINGS.llm_provider)),
+        )
+        content = _render_sections_text(proposal.sections)
+        async with _ensure_derivative_save_lock():
+            proposal_path = await asyncio.to_thread(
+                save_note_derivative,
+                note_path,
+                "proposal",
+                content,
+                note_context.get("title"),
+                extra_metadata=_proposal_metadata(note_context, proposal),
+            )
+        rendered = await asyncio.to_thread(_read_derivative_text, proposal_path)
+        note_context.setdefault("derivative_texts", {})["proposal"] = rendered
+    except Exception:
+        await _update_derivative_status(note_id, "proposal", DERIVATIVE_STATUS_ERROR)
+        return None, None
+
+    await _update_derivative_status(note_id, "proposal", DERIVATIVE_STATUS_COMPLETED)
+    return proposal_path, note_context.get("derivative_texts", {}).get("proposal")
+
+
+async def _run_realize_action(message, note_id: str) -> None:
+    note_context = _get_note_context(note_id)
+    if not note_context:
+        return
+    instruction = _proposal_instruction(note_id, note_context)
+    if not instruction:
+        await _send_text_with_optional_audio(message, "Realizar: primero genera la propuesta integral.", "realize_missing_instruction")
+        return
+    await _send_text_with_optional_audio(
+        message,
+        "Realizar: ejecutando propuesta sobre el repositorio con el motor inteligente actual...",
+        "realize_start",
+    )
+    dispatch = await asyncio.to_thread(run_intelligent_dispatch, instruction, SETTINGS)
+    note_context["last_dispatch_instruction"] = instruction
+    note_context["last_dispatch_report"] = str(dispatch.result.report_path)
+    note_context["last_dispatch_manifest"] = str(dispatch.result.manifest_path)
+    note_context["last_dispatch_run_dir"] = str(dispatch.result.run_dir)
+    await _reply_text_chunks(message, format_dispatch_summary(dispatch))
+    await _reply_markdown_file(message, dispatch.result.report_path, dispatch.result.report_path.name)
+
+
 def _build_note_action_messages(action: str, note_context: dict) -> list[dict[str, str]]:
     title = str(note_context.get("title", "Idea")).strip() or "Idea"
     corrected_text = str(note_context.get("corrected_text", "")).strip()
@@ -1317,13 +1469,15 @@ def _build_note_action_messages(action: str, note_context: dict) -> list[dict[st
         "Redacta cada seccion para que conserve sentido incluso si luego se eliminan metadata y titulos de seccion. "
         "Evita frases como 'en esta seccion', 'como dije arriba', 'a continuacion' o cierres redundantes. "
         "Prioriza causalidad, decisiones y acciones verificables. "
-        "Cuando uses listas, cada punto debe entenderse por si mismo."
+        "Cuando uses listas, cada punto debe entenderse por si mismo. "
+        "Todo el resultado debe quedar orientado como instruccion o criterio de trabajo sobre un proyecto editorial en repositorio."
     )
 
     if action == "explain":
         task = (
             "Explica la idea contenida en el texto de manera clara, didactica y directa. "
             "Desarrolla su sentido, sus supuestos, sus implicaciones y los conceptos involucrados. "
+            "Traducela a criterios de lectura, diagnostico y direccion editorial sobre un repositorio. "
             "No hables de notas, transcripciones ni del proceso de guardado."
         )
         expected = (
@@ -1335,6 +1489,7 @@ def _build_note_action_messages(action: str, note_context: dict) -> list[dict[st
         task = (
             "Genera sugerencias practicas sobre como hacer, resolver, aplicar o mejorar lo que plantea el contenido. "
             "Prioriza acciones concretas, criterios de decision, pasos posibles y riesgos a cuidar. "
+            "Formula las sugerencias como maniobras operativas sobre un proyecto editorial y sus lotes de trabajo. "
             "No des sugerencias sobre escribir o administrar notas."
         )
         expected = (
@@ -1347,6 +1502,7 @@ def _build_note_action_messages(action: str, note_context: dict) -> list[dict[st
         task = (
             "Investiga y sintetiza el tema central contenido en el texto para ampliar la comprension del usuario. "
             "Distingue entre hechos relativamente estables, inferencias plausibles y puntos que requieren verificacion externa. "
+            "Conecta los hallazgos con rutas de intervencion editorial sobre el repositorio. "
             "No inventes fuentes, datos actuales ni citas. No hables del proceso de guardado de notas."
         )
         expected = (
@@ -1358,7 +1514,8 @@ def _build_note_action_messages(action: str, note_context: dict) -> list[dict[st
         task = (
             "Analiza la idea con metodo dialectico. "
             "Formula primero la tesis que sostiene el contenido; luego plantea una idea contraria fuerte como antitesis, "
-            "con argumentos rigurosos y sin ridiculizar; finalmente propone una sintesis que conserve lo valioso de ambas posiciones."
+            "con argumentos rigurosos y sin ridiculizar; finalmente propone una sintesis que conserve lo valioso de ambas posiciones. "
+            "Enfoca la tension en decisiones editoriales, priorizacion de repo y forma de intervenir por lotes o ciclos."
         )
         expected = (
             "Incluye explicitamente la expresion 'Idea contraria' en el desarrollo dialectico. "
@@ -1373,8 +1530,8 @@ def _build_note_action_messages(action: str, note_context: dict) -> list[dict[st
         {
             "role": "system",
             "content": (
-                "Eres un asistente de analisis conceptual e investigacion en espanol. "
-                "Responde como si el usuario te hubiera enviado directamente una idea para trabajarla. "
+                "Eres un asistente de analisis conceptual e investigacion editorial en espanol. "
+                "Responde como si el usuario te hubiera enviado directamente una instruccion para trabajar un proyecto editorial. "
                 "No menciones que el contenido viene de una nota. Usa estructura limpia, concreta y sin Markdown excesivo. "
                 "Cumple estrictamente el contrato de secciones y redacta para filtrado organico entre canales."
             ),
@@ -1513,12 +1670,12 @@ def _telegram_markdown_view(markdown: str) -> str:
 async def _reply_markdown_file(message, source_path: Path, filename: str):
     send_lock, _ = _ensure_telegram_send_primitives()
     raw = source_path.read_text(encoding="utf-8")
-    if any(source_path.name.endswith(f".{suffix}.md") for suffix in ("explain", "suggest", "research", "dialectic")):
+    if any(source_path.name.endswith(f".{suffix}.md") for suffix in ("explain", "suggest", "research", "dialectic", "proposal")):
         payload = _parse_derivative_markdown(raw)
         filtered = _build_channel_text(payload, "telegram")
     else:
         filtered = _telegram_markdown_view(raw)
-    if any(source_path.name.endswith(f".{suffix}.md") for suffix in ("explain", "suggest", "research", "dialectic")):
+    if any(source_path.name.endswith(f".{suffix}.md") for suffix in ("explain", "suggest", "research", "dialectic", "proposal")):
         stem = source_path.stem
         note_id, action = stem.rsplit(".", 1)
         safe_filename = _safe_output_filename(_telegram_compact_name(source_path, "md"))
@@ -1603,17 +1760,60 @@ async def _reply_with_note_actions(update: Update, context: ContextTypes.DEFAULT
         await _reply_markdown_file(update.message, saved.note_path, saved.note_path.name)
         if _should_send_audio(note_prefix):
             await _reply_audio_copy(update.message, audio_text, note_prefix)
-    note_context = _get_note_context(note_id)
-    if note_context is not None:
-        note_context["auto_play_after_derivatives"] = True
     await _enqueue_default_derivatives(note_id)
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     if not update.message:
         return
-    greeting = "Hola. Enviame texto, audio o documento; lo convierto en una nota limpia con conceptos clave."
+    greeting = "Hola. Enviame texto, audio o documento; lo convierto en una nota limpia con conceptos clave. Usa /motor para enviar una instruccion al motor inteligente de AulaTeX."
     await _send_text_with_optional_audio(update.message, greeting, "start")
+
+
+def _build_motor_confirmation_keyboard(token: str) -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("✅ Ejecutar motor", callback_data=f"{MOTOR_ACTION_PREFIX}:run:{token}"),
+                InlineKeyboardButton("❌ Cancelar", callback_data=f"{MOTOR_ACTION_PREFIX}:cancel:{token}"),
+            ]
+        ]
+    )
+
+
+async def _handle_intelligent_instruction(message, instruction: str, context: ContextTypes.DEFAULT_TYPE) -> None:
+    if message is None:
+        return
+    clean_instruction = instruction.strip()
+    if not clean_instruction:
+        await _send_text_with_optional_audio(message, instruction_help_text(), "motor_help")
+        return
+
+    await _send_text_with_optional_audio(
+        message,
+        "Instruccion recibida. Preparando plan para validacion...",
+        "planning_motor",
+    )
+
+    try:
+        plan = await asyncio.to_thread(plan_intelligent_dispatch, clean_instruction, SETTINGS)
+        token = uuid.uuid4().hex[:12]
+        pending = context.user_data.setdefault("pending_motor_dispatches", {})
+        pending[token] = plan
+        await _reply_text_chunks(
+            message,
+            format_dispatch_plan_markdown(plan),
+            reply_markup=_build_motor_confirmation_keyboard(token),
+        )
+    except Exception as exc:
+        await _send_text_with_optional_audio(message, f"No pude preparar el plan del motor inteligente: {exc}", "error_motor")
+
+
+async def handle_intelligent_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    if not update.message:
+        return
+    args = getattr(context, "args", None) or []
+    await _handle_intelligent_instruction(update.message, " ".join(args).strip(), context)
 
 
 async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -1623,6 +1823,11 @@ async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
     raw_text = update.message.text.strip()
     if not raw_text:
         await _send_text_with_optional_audio(update.message, "Envía un texto no vacío.", "empty_text")
+        return
+
+    intelligent_instruction = extract_intelligent_instruction(raw_text)
+    if intelligent_instruction is not None:
+        await _handle_intelligent_instruction(update.message, intelligent_instruction, context)
         return
 
     await _send_text_with_optional_audio(update.message, "Texto recibido. Analizando y guardando nota...", "processing_text")
@@ -1766,6 +1971,46 @@ async def handle_document(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
         document_path.unlink(missing_ok=True)
 
 
+async def handle_motor_action(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    query = update.callback_query
+    if not query or not query.data:
+        return
+    try:
+        await query.answer("Procesando...")
+    except Exception:
+        pass
+    parts = query.data.split(":", 2)
+    if len(parts) != 3 or parts[0] != MOTOR_ACTION_PREFIX:
+        return
+    _, action, token = parts
+    pending = context.user_data.setdefault("pending_motor_dispatches", {})
+    plan = pending.pop(token, None)
+    if plan is None:
+        if query.message:
+            await _send_text_with_optional_audio(query.message, "La solicitud del motor ya no está disponible o ya fue procesada.", "motor_missing")
+        return
+    if action == "cancel":
+        if query.message:
+            await query.message.edit_reply_markup(reply_markup=None)
+            await _send_text_with_optional_audio(query.message, "Solicitud cancelada. No se ejecutó el motor inteligente.", "motor_cancelled")
+        return
+    if action != "run":
+        if query.message:
+            await _send_text_with_optional_audio(query.message, "Acción de motor no reconocida.", "motor_invalid")
+        return
+    if query.message:
+        await query.message.edit_reply_markup(reply_markup=None)
+        await _send_text_with_optional_audio(query.message, "Validación recibida. Ejecutando motor inteligente...", "processing_motor")
+    try:
+        dispatch = await asyncio.to_thread(execute_intelligent_dispatch_plan, plan)
+        if query.message:
+            await _reply_text_chunks(query.message, format_dispatch_summary(dispatch))
+            await _reply_markdown_file(query.message, dispatch.result.report_path, dispatch.result.report_path.name)
+    except Exception as exc:
+        if query.message:
+            await _send_text_with_optional_audio(query.message, f"No pude ejecutar el motor inteligente: {exc}", "error_motor")
+
+
 async def handle_note_action(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     query = update.callback_query
     if not query or not query.data:
@@ -1800,6 +2045,14 @@ async def handle_note_action(update: Update, context: ContextTypes.DEFAULT_TYPE)
         note_context["status_message"] = query.message
 
     if action != "play" and note_context.get("play_active"):
+        if action == "realize":
+            if query.message:
+                await _send_text_with_optional_audio(
+                    query.message,
+                    "Realizar: espera a que termine Play y vuelve a presionar el boton.",
+                    "queued_realize_blocked",
+                )
+            return
         queued = _queue_action_after_play(note_context, action)
         if query.message:
             if queued:
@@ -1834,6 +2087,45 @@ async def handle_note_action(update: Update, context: ContextTypes.DEFAULT_TYPE)
         await _set_note_action_keyboard_state(query, note_id, None)
         return
 
+    if action == "proposal" and not _base_editorial_actions_completed(note_context):
+        await _send_text_with_optional_audio(
+            query.message,
+            "Propuesta: disponible cuando terminen Explicar, Sugerencias, Investigar y Dialectica.",
+            "proposal_locked",
+        )
+        await _set_note_action_keyboard_state(query, note_id, None)
+        return
+
+    if action == "proposal":
+        current_path, _ = await _ensure_proposal_markdown(note_id)
+        if current_path is not None:
+            await _reply_markdown_file(query.message, current_path, current_path.name)
+        else:
+            await _send_text_with_optional_audio(query.message, "Propuesta: no se pudo generar la propuesta integral.", "proposal_error")
+        await _set_note_action_keyboard_state(query, note_id, None)
+        return
+
+    if action == "realize":
+        if not _proposal_ready(note_id, note_context):
+            await _send_text_with_optional_audio(
+                query.message,
+                "Realizar: primero genera la propuesta integral.",
+                "realize_locked",
+            )
+            await _set_note_action_keyboard_state(query, note_id, None)
+            return
+        try:
+            await _run_realize_action(query.message, note_id)
+        except Exception as exc:
+            await _send_text_with_optional_audio(query.message, f"No pude ejecutar la propuesta integral: {exc}", "realize_error")
+        await _set_note_action_keyboard_state(query, note_id, None)
+        return
+
+    if action not in PLAY_SEQUENCE and action != "proposal":
+        await _send_text_with_optional_audio(query.message, "No reconozco esa accion.", "invalid_action")
+        await _set_note_action_keyboard_state(query, note_id, None)
+        return
+
     note_path = _resolve_note_path(note_id, note_context)
     current_derivative_path = derivative_path(note_path, action) if note_path else None
     status = note_context.setdefault("derivative_statuses", {}).get(action, DERIVATIVE_STATUS_PENDING)
@@ -1864,6 +2156,8 @@ async def handle_note_action(update: Update, context: ContextTypes.DEFAULT_TYPE)
 def build_application():
     app = ApplicationBuilder().token(SETTINGS.telegram_bot_token).build()
     app.add_handler(CommandHandler("start", start))
+    app.add_handler(CommandHandler("motor", handle_intelligent_command))
+    app.add_handler(CallbackQueryHandler(handle_motor_action, pattern=f"^{MOTOR_ACTION_PREFIX}:"))
     app.add_handler(CallbackQueryHandler(handle_note_action, pattern=f"^{NOTE_ACTION_PREFIX}:"))
     app.add_handler(MessageHandler(filters.VOICE | filters.AUDIO, handle_audio))
     app.add_handler(MessageHandler(filters.Document.ALL, handle_document))

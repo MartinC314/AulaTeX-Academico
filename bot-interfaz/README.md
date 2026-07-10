@@ -269,7 +269,31 @@ Reportes anteriores, utiles solo para comparar el efecto del tope artificial de 
 ## Instalacion
 
 ```powershell
-pip install -r requirements.txt
+./interfaz-telegram.ps1 -BootstrapOnly
+```
+
+Ese comando crea o reutiliza la .venv local de bot-interfaz en `bot-interfaz/.venv` e instala `requirements.txt` sin depender de la `.venv` raiz del repositorio.
+
+Tambien puedes instalar manualmente dentro de esa venv local:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+```
+
+## Motor editorial
+
+El comando `/motor` y el prefijo `motor:` ahora soportan tres modos de ejecucion sobre AulaTeX:
+
+- `intelligent-engine`: planificacion e inventario de campanas o lotes.
+- `agent`: ejecucion puntual de `generar-plantilla`, `generar-actividad` o `realizar-actividad`.
+- `activity-monitor`: ciclos repetidos de observacion, revision, extractor y compilacion.
+
+Ejemplos:
+
+```text
+/motor planifica UCNL/licenciatura-en-administracion/administracion-i-lad actividad 1
+/motor realiza la actividad 1 de UCNL/licenciatura-en-administracion/administracion-i-lad con extractor y 4 iteraciones
+/motor monitorea UCNL/licenciatura-en-administracion/administracion-i-lad actividad 1 hasta pasar con backend classic
 ```
 
 Tambien necesitas `ffmpeg` disponible en el `PATH` para convertir los audios de Telegram antes de transcribirlos.

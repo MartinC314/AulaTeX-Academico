@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 from pathlib import Path
+import importlib
 
+import src.config as config_module
 from src.config import _normalize_anthropic_endpoint, _normalize_azure_endpoint, load_settings, settings_for_llm_provider, validate_settings
 
 
@@ -26,6 +28,39 @@ def test_normalize_anthropic_endpoint_trims_messages_suffixes() -> None:
     assert _normalize_anthropic_endpoint("https://x.services.ai.azure.com") == (
         "https://x.services.ai.azure.com/anthropic"
     )
+
+
+def test_config_loads_interfaz_env_file(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.chdir(tmp_path)
+    monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
+    monkeypatch.delenv("AZURE_SPEECH_KEY", raising=False)
+    monkeypatch.delenv("AZURE_SPEECH_REGION", raising=False)
+    monkeypatch.delenv("LLM_PROVIDER", raising=False)
+    monkeypatch.delenv("MODEL_ROUTER_BASE_URL", raising=False)
+    monkeypatch.delenv("MODEL_ROUTER_API_KEY", raising=False)
+    monkeypatch.delenv("MODEL_ROUTER_CHAT_DEPLOYMENT", raising=False)
+
+    (tmp_path / "interfaz.env").write_text(
+        "\n".join(
+            [
+                "TELEGRAM_BOT_TOKEN=desde-interfaz",
+                "AZURE_SPEECH_KEY=speech-key",
+                "AZURE_SPEECH_REGION=eastus",
+                "LLM_PROVIDER=model-router",
+                "MODEL_ROUTER_BASE_URL=https://example.services.ai.azure.com/openai/v1/chat/completions",
+                "MODEL_ROUTER_API_KEY=router-key",
+                "MODEL_ROUTER_CHAT_DEPLOYMENT=model-router",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    reloaded = importlib.reload(config_module)
+    settings = reloaded.load_settings()
+
+    assert settings.telegram_bot_token == "desde-interfaz"
+    assert settings.llm_provider == "model-router"
+    assert settings.azure_openai_api_key == "router-key"
 
 
 def test_load_settings_reads_azure_speech_values(monkeypatch) -> None:
