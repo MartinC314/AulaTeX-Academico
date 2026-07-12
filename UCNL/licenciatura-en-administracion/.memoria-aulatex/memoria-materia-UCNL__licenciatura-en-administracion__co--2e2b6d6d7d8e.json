@@ -113,7 +113,8 @@
     "Introduccion",
     "Desarrollo",
     "Postura personal",
-    "Conclusion"
+    "Conclusion",
+    "Ruta editorial UCNL"
   ],
   "citations": [
     "clave",
@@ -133,7 +134,141 @@
     "career": "licenciatura-en-administracion",
     "subject": "contabilidad-iii-lad",
     "activity": "",
-    "parent_key": "UCNL/licenciatura-en-administracion"
+    "parent_key": "UCNL/licenciatura-en-administracion",
+    "editing_details": {
+      "heading_contract": {
+        "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
+        "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
+        "subject_rule": "Actividad 1 - contabilidad-iii-lad",
+        "scope_label": "contabilidad-iii-lad"
+      },
+      "didactic_contract": {
+        "detected_id": "mapa_conceptual",
+        "aliases": [
+          "mapa conceptual",
+          "conceptos",
+          "diagrama"
+        ],
+        "required_visible_elements": [
+          "conceptos",
+          "relaciones",
+          "lectura explicativa"
+        ],
+        "preservation_rule": "Si el producto es mapa conceptual, conservar jerarquía, relaciones y explicación breve de lectura."
+      },
+      "bibliography_contract": {
+        "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
+        "reference_growth_rule": "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
+        "local_first_rule": "Priorizar bibliografía, programa, notas y memorias editoriales locales; si no alcanzan para validar, buscar fuentes en línea sólidas y registrarlas en .bib con citas visibles en TEX."
+      },
+      "institutional_identity": {
+        "institution": "UCNL",
+        "career": "licenciatura-en-administracion",
+        "subject": "contabilidad-iii-lad",
+        "activity": "Actividad 1",
+        "seed_scope_key": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/actividad-1"
+      },
+      "compilation_fixes": [],
+      "quality_rules": [
+        "título sin Actividad #; subtítulo compacto; subject/equivalente = Actividad # - Materia",
+        "la forma visible del producto respeta cuestionario, foro, caso, mapa, tabla u otro contrato",
+        "todas las citas visibles tienen entrada .bib, no hay entradas inventadas y el número de referencias aumenta cuando el corpus previo no sostiene todas las respuestas",
+        "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
+        "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
+        "sin placeholders, con contexto/problema integrado en introducción, análisis propio integrado en conclusión, postura personal integrada en conclusión y transferencia profesional",
+        "sin metadiscurso de ejecución: no hablar de 'esta actividad', 'producto solicitado', 'se presenta' o 'la técnica usada' como narrador externo; hablar del tema, problema, concepto, cuestionario, caso o tabla según corresponda",
+        "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
+        "si el producto es cuestionario, la sección Desarrollo debe estar ocupada por el cuestionario con su título; el marco conceptual va dentro de esa misma sección, no como sección/subsección independiente salvo consigna expresa",
+        "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa",
+        "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
+        "En el cuerpo final no narrar el proceso de elaboración ni mencionar la palabra 'Actividad' como sujeto del análisis; en su lugar hablar del tema, problema, concepto, cuestionario, caso, tabla o fenómeno estudiado.",
+        "El contexto y el problema se integran en la introducción; no crear una subsección visible 'Contexto y problema' salvo instrucción expresa de la consigna.",
+        "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa."
+      ],
+      "exceptions": [],
+      "learned_from": [
+        {
+          "scope_key": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad",
+          "has_memory": true
+        },
+        {
+          "scope_key": "UCNL/licenciatura-en-administracion",
+          "has_memory": true
+        },
+        {
+          "scope_key": "UCNL",
+          "has_memory": true
+        },
+        {
+          "scope_key": "interinstitucional",
+          "has_memory": true
+        },
+        {
+          "scope_key": "UCNL/licenciatura-en-administracion/administracion-de-calidad-lad",
+          "has_memory": true
+        },
+        {
+          "scope_key": "UCNL/licenciatura-en-administracion/administracion-de-emprendedores-lad",
+          "has_memory": true
+        },
+        {
+          "scope_key": "UCNL/licenciatura-en-administracion/administracion-de-operaciones-lad",
+          "has_memory": true
+        },
+        {
+          "scope_key": "UCNL/licenciatura-en-administracion/administracion-de-operaciones-t8-lad",
+          "has_memory": true
+        }
+      ],
+      "novelty_signals": [
+        "heading_contract",
+        "institutional_identity"
+      ],
+      "derived_from": {
+        "local_memory": true,
+        "ancestor_memory": true,
+        "related_nodes": [
+          "UCNL/licenciatura-en-administracion/contabilidad-iii-lad",
+          "UCNL/licenciatura-en-administracion",
+          "UCNL",
+          "interinstitucional",
+          "UCNL/licenciatura-en-administracion/administracion-de-calidad-lad",
+          "UCNL/licenciatura-en-administracion/administracion-de-emprendedores-lad",
+          "UCNL/licenciatura-en-administracion/administracion-de-operaciones-lad",
+          "UCNL/licenciatura-en-administracion/administracion-de-operaciones-t8-lad"
+        ],
+        "source_artifacts": [
+          "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/COMPILACION.md",
+          "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/contabilidad-III.bib",
+          "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/reporte-contabilidad-III-Actividad-1.tex",
+          "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/reporte-contabilidad-III.tex",
+          "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+        ]
+      },
+      "confidence": {
+        "global": 1.0,
+        "by_section": {
+          "heading_contract": 0.6,
+          "didactic_contract": 0.5,
+          "bibliography_contract": 0.9
+        }
+      }
+    },
+    "detail_planner": {
+      "run_id": "20260710-191547",
+      "scope_key": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad",
+      "related_scope_keys": [
+        "UCNL/licenciatura-en-administracion/contabilidad-iii-lad",
+        "UCNL/licenciatura-en-administracion",
+        "UCNL",
+        "interinstitucional",
+        "UCNL/licenciatura-en-administracion/administracion-de-calidad-lad",
+        "UCNL/licenciatura-en-administracion/administracion-de-emprendedores-lad",
+        "UCNL/licenciatura-en-administracion/administracion-de-operaciones-lad",
+        "UCNL/licenciatura-en-administracion/administracion-de-operaciones-t8-lad"
+      ],
+      "novelty_count": 2
+    }
   },
   "curricular_context": {
     "coursename": "Contabilidad III",
@@ -182,7 +317,118 @@
         "career": "licenciatura-en-administracion",
         "subject": "contabilidad-iii-lad",
         "activity": "",
-        "parent_key": "UCNL/licenciatura-en-administracion"
+        "parent_key": "UCNL/licenciatura-en-administracion",
+        "editing_details": {
+          "heading_contract": {
+            "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
+            "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
+            "subject_rule": "Actividad 1 - contabilidad-iii-lad",
+            "scope_label": "contabilidad-iii-lad"
+          },
+          "didactic_contract": {
+            "detected_id": "mapa_conceptual",
+            "aliases": [
+              "mapa conceptual",
+              "conceptos",
+              "diagrama"
+            ],
+            "required_visible_elements": [
+              "conceptos",
+              "relaciones",
+              "lectura explicativa"
+            ],
+            "preservation_rule": "Si el producto es mapa conceptual, conservar jerarquía, relaciones y explicación breve de lectura."
+          },
+          "bibliography_contract": {
+            "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
+            "reference_growth_rule": "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
+            "local_first_rule": "Priorizar bibliografía, programa, notas y memorias editoriales locales; si no alcanzan para validar, buscar fuentes en línea sólidas y registrarlas en .bib con citas visibles en TEX."
+          },
+          "institutional_identity": {
+            "institution": "UCNL",
+            "career": "licenciatura-en-administracion",
+            "subject": "contabilidad-iii-lad",
+            "activity": "Actividad 1",
+            "seed_scope_key": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/actividad-1"
+          },
+          "compilation_fixes": [],
+          "quality_rules": [
+            "título sin Actividad #; subtítulo compacto; subject/equivalente = Actividad # - Materia",
+            "la forma visible del producto respeta cuestionario, foro, caso, mapa, tabla u otro contrato",
+            "todas las citas visibles tienen entrada .bib, no hay entradas inventadas y el número de referencias aumenta cuando el corpus previo no sostiene todas las respuestas",
+            "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
+            "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
+            "sin placeholders, con contexto/problema integrado en introducción, análisis propio integrado en conclusión, postura personal integrada en conclusión y transferencia profesional",
+            "sin metadiscurso de ejecución: no hablar de 'esta actividad', 'producto solicitado', 'se presenta' o 'la técnica usada' como narrador externo; hablar del tema, problema, concepto, cuestionario, caso o tabla según corresponda",
+            "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
+            "si el producto es cuestionario, la sección Desarrollo debe estar ocupada por el cuestionario con su título; el marco conceptual va dentro de esa misma sección, no como sección/subsección independiente salvo consigna expresa",
+            "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa",
+            "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
+            "En el cuerpo final no narrar el proceso de elaboración ni mencionar la palabra 'Actividad' como sujeto del análisis; en su lugar hablar del tema, problema, concepto, cuestionario, caso, tabla o fenómeno estudiado.",
+            "El contexto y el problema se integran en la introducción; no crear una subsección visible 'Contexto y problema' salvo instrucción expresa de la consigna.",
+            "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa."
+          ],
+          "exceptions": [],
+          "learned_from": [
+            "{'scope_key': 'UCNL/licenciatura-en-administracion/contabilidad-iii-lad', 'has_memory': True}",
+            "{'scope_key': 'UCNL/licenciatura-en-administracion', 'has_memory': True}",
+            "{'scope_key': 'UCNL', 'has_memory': True}",
+            "{'scope_key': 'interinstitucional', 'has_memory': True}",
+            "{'scope_key': 'UCNL/licenciatura-en-administracion/administracion-de-calidad-lad', 'has_memory': True}",
+            "{'scope_key': 'UCNL/licenciatura-en-administracion/administracion-de-emprendedores-lad', 'has_memory': True}",
+            "{'scope_key': 'UCNL/licenciatura-en-administracion/administracion-de-operaciones-lad', 'has_memory': True}",
+            "{'scope_key': 'UCNL/licenciatura-en-administracion/administracion-de-operaciones-t8-lad', 'has_memory': True}"
+          ],
+          "novelty_signals": [
+            "bootstrap",
+            "heading_contract",
+            "institutional_identity"
+          ],
+          "derived_from": {
+            "local_memory": true,
+            "ancestor_memory": true,
+            "related_nodes": [
+              "UCNL/licenciatura-en-administracion/contabilidad-iii-lad",
+              "UCNL/licenciatura-en-administracion",
+              "UCNL",
+              "interinstitucional",
+              "UCNL/licenciatura-en-administracion/administracion-de-calidad-lad",
+              "UCNL/licenciatura-en-administracion/administracion-de-emprendedores-lad",
+              "UCNL/licenciatura-en-administracion/administracion-de-operaciones-lad",
+              "UCNL/licenciatura-en-administracion/administracion-de-operaciones-t8-lad"
+            ],
+            "source_artifacts": [
+              "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/COMPILACION.md",
+              "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/contabilidad-III.bib",
+              "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/reporte-contabilidad-III-Actividad-1.tex",
+              "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/reporte-contabilidad-III.tex",
+              "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            ]
+          },
+          "confidence": {
+            "global": 1.0,
+            "by_section": {
+              "heading_contract": 0.6,
+              "didactic_contract": 0.5,
+              "bibliography_contract": 0.9
+            }
+          }
+        },
+        "detail_planner": {
+          "run_id": "20260710-191547",
+          "scope_key": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad",
+          "related_scope_keys": [
+            "UCNL/licenciatura-en-administracion/contabilidad-iii-lad",
+            "UCNL/licenciatura-en-administracion",
+            "UCNL",
+            "interinstitucional",
+            "UCNL/licenciatura-en-administracion/administracion-de-calidad-lad",
+            "UCNL/licenciatura-en-administracion/administracion-de-emprendedores-lad",
+            "UCNL/licenciatura-en-administracion/administracion-de-operaciones-lad",
+            "UCNL/licenciatura-en-administracion/administracion-de-operaciones-t8-lad"
+          ],
+          "novelty_count": 2
+        }
       },
       "curricular_context": {
         "coursename": "Contabilidad III",
@@ -237,7 +483,8 @@
         "Introduccion",
         "Desarrollo",
         "Postura personal",
-        "Conclusion"
+        "Conclusion",
+        "Ruta editorial UCNL"
       ],
       "artifact_types": [
         "reporte",
@@ -292,7 +539,8 @@
       "Introduccion",
       "Desarrollo",
       "Postura personal",
-      "Conclusion"
+      "Conclusion",
+      "Ruta editorial UCNL"
     ],
     "style_markers": [
       "Checklist operativo previo a entrega",
@@ -1905,16 +2153,18 @@
       "presentacion_base": {
         "relative_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex",
         "abstract": "",
-        "section_titles": [],
+        "section_titles": [
+          "Ruta editorial UCNL"
+        ],
         "subsection_titles": [],
         "cited_keys": [],
         "concepts": [],
         "source_fragments": [],
         "content_memory": {
           "relative_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex",
-          "raw_latex_sha256": "12840f487b26b02523ccc7800e1c52a25ed10ba4ef07b8a8887f5648658c6f14",
-          "raw_latex_chars": 979,
-          "raw_latex": "﻿\\documentclass[spanish,aspectratio=169]{beamer}\n\n\\usepackage[spanish,es-tabla]{babel}\n\\usepackage[utf8]{inputenc}\n\\usepackage[T1]{fontenc}\n\\usepackage{lmodern}\n\\newcommand{\\UCNLlogodir}{assets-ucnl/logos}\n\\IfFileExists{\\UCNLlogodir/logo-ucnl.png}{}{%\n  \\renewcommand{\\UCNLlogodir}{../../assets-ucnl/logos}%\n}\n\\titlegraphic{%\n  \\includegraphics[height=1.35cm]{\\UCNLlogodir/logo-nuevo-leon.png}\\hspace{0.8cm}%\n  \\includegraphics[height=1.35cm]{\\UCNLlogodir/logo-ucnl.png}%\n}\n\n\\title{Presentacion - Contabilidad III}\n\\subtitle{Plantilla de exposicion academica}\n\\author{Martin Jonathan de la Cruz}\n\\institute{Universidad Ciudadana de Nuevo Leon}\n\\date{\\today}\n\n\\begin{document}\n\n\\begin{frame}\n  \\titlepage\n\\end{frame}\n\n\\begin{frame}{Estructura academica}\n  \\begin{itemize}\n    \\item Bibliografia: \\texttt{contabilidad-III.bib}\n    \\item Curso: Contabilidad III\n    \\item Actividades: \\texttt{reporte-contabilidad-III-Actividad-N.tex}\n  \\end{itemize}\n\\end{frame}\n\n\\end{document}\n\n\n\n",
+          "raw_latex_sha256": "04f79d81adb5b36a26a6b0339660265f2265508312d5942805d49de5ade90be5",
+          "raw_latex_chars": 5376,
+          "raw_latex": "﻿\\documentclass[spanish,aspectratio=169]{beamer}\n\n\\usepackage[spanish,es-tabla]{babel}\n\\usepackage[utf8]{inputenc}\n\\usepackage[T1]{fontenc}\n\\usepackage{lmodern}\n\n% ==============================================================================\n% TEMA VISUAL UCNL / AULATEX\n% Inspirado en el estándar visual de IIIEPE y UnADM: portada institucional,\n% navegación limpia, bloques didácticos, pie de página y paleta propia.\n% ==============================================================================\n\\usepackage{booktabs}\n\\usepackage{ragged2e}\n\\usepackage{tikz}\n\\usetikzlibrary{calc,positioning,fit,shadows.blur}\n\n\\definecolor{ucnlNavy}{HTML}{143A5A}\n\\definecolor{ucnlBlue}{HTML}{1E6F9F}\n\\definecolor{ucnlGold}{HTML}{C6922E}\n\\definecolor{ucnlAqua}{HTML}{20A99A}\n\\definecolor{ucnlPaper}{HTML}{F6F8F7}\n\\definecolor{ucnlInk}{HTML}{1E2A32}\n\n\\mode<presentation>{\n  \\usetheme{default}\n  \\usefonttheme{professionalfonts}\n  \\setbeamertemplate{navigation symbols}{}\n  \\setbeamertemplate{blocks}[rounded][shadow=false]\n}\n\\setbeamersize{text margin left=0.62cm,text margin right=0.62cm}\n\\setbeamercolor{background canvas}{bg=white}\n\\setbeamercolor{normal text}{fg=ucnlInk,bg=white}\n\\setbeamercolor{structure}{fg=ucnlBlue}\n\\setbeamercolor{frametitle}{fg=white,bg=ucnlNavy}\n\\setbeamercolor{block title}{fg=white,bg=ucnlBlue}\n\\setbeamercolor{block body}{fg=ucnlInk,bg=ucnlPaper}\n\\setbeamercolor{alerted text}{fg=ucnlGold}\n\\setbeamerfont{title}{size=\\LARGE,series=\\bfseries}\n\\setbeamerfont{frametitle}{size=\\large,series=\\bfseries}\n\\setbeamertemplate{itemize item}{\\textcolor{ucnlAqua}{\\large$\\blacktriangleright$}}\n\\setbeamertemplate{itemize subitem}{\\textcolor{ucnlGold}{\\scriptsize$\\blacksquare$}}\n\n\\setbeamertemplate{frametitle}{%\n  \\nointerlineskip\n  \\begin{beamercolorbox}[wd=\\textwidth,ht=1.02cm,dp=0.22cm,leftskip=0.35cm,rightskip=0.25cm]{frametitle}\n    \\insertframetitle\\hfill\\includegraphics[height=0.58cm]{\\UCNLlogodir/logo-ucnl.png}\n  \\end{beamercolorbox}\n  {\\color{ucnlGold}\\rule{\\textwidth}{1.3pt}}\n}\n\n\\setbeamertemplate{footline}{%\n  \\leavevmode\n  \\hbox{%\n    \\begin{beamercolorbox}[wd=.34\\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}\\color{white}\\insertshortauthor\\end{beamercolorbox}%\n    \\begin{beamercolorbox}[wd=.40\\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}\\color{white}\\insertshorttitle\\end{beamercolorbox}%\n    \\begin{beamercolorbox}[wd=.26\\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}\\color{white}UCNL\\hfill\\insertframenumber/\\inserttotalframenumber\\end{beamercolorbox}%\n  }\n}\n\\setbeamercolor{author in head/foot}{bg=ucnlNavy}\n\\setbeamercolor{title in head/foot}{bg=ucnlBlue}\n\\setbeamercolor{date in head/foot}{bg=ucnlNavy}\n\n\\AtBeginSection[]{%\n  \\begin{frame}[plain]\n    \\begin{tikzpicture}[remember picture,overlay]\n      \\fill[ucnlNavy] (current page.south west) rectangle (current page.north east);\n      \\node[opacity=0.10,anchor=east] at ([xshift=0.8cm]current page.east) {\\includegraphics[height=7.2cm]{\\UCNLlogodir/logo-nuevo-leon.png}};\n      \\fill[ucnlGold] ([xshift=0.85cm,yshift=1.8cm]current page.south west) rectangle ([xshift=1.05cm,yshift=5.6cm]current page.south west);\n    \\end{tikzpicture}\n    \\vspace{1.8cm}\n    \\hspace{1.25cm}{\\color{white}\\Huge\\bfseries\\insertsectionhead}\n  \\end{frame}\n}\n\\newcommand{\\UCNLlogodir}{assets-ucnl/logos}\n\\IfFileExists{\\UCNLlogodir/logo-ucnl.png}{}{%\n  \\renewcommand{\\UCNLlogodir}{../../assets-ucnl/logos}%\n}\n\\titlegraphic{%\n  \\includegraphics[height=1.35cm]{\\UCNLlogodir/logo-nuevo-leon.png}\\hspace{0.8cm}%\n  \\includegraphics[height=1.35cm]{\\UCNLlogodir/logo-ucnl.png}%\n}\n\n\\title{Presentacion - Contabilidad III}\n\\subtitle{Plantilla de exposicion academica}\n\\author{Martin Jonathan de la Cruz}\n\\institute{Universidad Ciudadana de Nuevo Leon}\n\\date{\\today}\n\n\\begin{document}\n\n\\begin{frame}\n  \\titlepage\n\\end{frame}\n\n\\begin{frame}{Estructura academica}\n  \\begin{itemize}\n    \\item Bibliografia: \\texttt{contabilidad-III.bib}\n    \\item Curso: Contabilidad III\n    \\item Actividades: \\texttt{reporte-contabilidad-III-Actividad-N.tex}\n  \\end{itemize}\n\\end{frame}\n\n\n\\section{Ruta editorial UCNL}\n\n\\begin{frame}{Objetivo y alcance}\n  \\begin{block}{Propósito académico}\n    Presentar el tema de la actividad con identidad institucional UCNL, orden visual y una ruta de comprensión clara.\n  \\end{block}\n  \\begin{itemize}\n    \\item Delimitar el problema o concepto central.\n    \\item Identificar el producto solicitado y sus criterios de cumplimiento.\n    \\item Conectar desarrollo, evidencia y postura personal.\n  \\end{itemize}\n\\end{frame}\n\n\\begin{frame}{Ejes de desarrollo}\n  \\begin{columns}[T,totalwidth=\\textwidth]\n    \\begin{column}{0.48\\textwidth}\n      \\begin{block}{Contenido}\n        Conceptos clave, categorías de análisis y relaciones principales.\n      \\end{block}\n    \\end{column}\n    \\begin{column}{0.48\\textwidth}\n      \\begin{block}{Producto}\n        Cuadro, esquema, cuestionario, matriz o síntesis solicitada por la actividad.\n      \\end{block}\n    \\end{column}\n  \\end{columns}\n\\end{frame}\n\n\\begin{frame}{Cierre académico}\n  \\begin{block}{Postura y aprendizaje}\n    La conclusión debe explicar qué se comprendió, por qué importa y cómo se vincula con la formación profesional.\n  \\end{block}\n  \\begin{itemize}\n    \\item Hallazgo central.\n    \\item Interpretación propia.\n    \\item Consecuencia o aplicación.\n  \\end{itemize}\n\\end{frame}\n\\end{document}\n",
           "functional_structure": {
             "documentclass": {
               "class": "beamer",
@@ -1924,13 +2174,21 @@
               "babel",
               "inputenc",
               "fontenc",
-              "lmodern"
+              "lmodern",
+              "booktabs",
+              "ragged2e",
+              "tikz"
             ],
             "inputs": [],
             "environments": [
-              "document",
+              "beamercolorbox",
               "frame",
-              "itemize"
+              "tikzpicture",
+              "document",
+              "itemize",
+              "block",
+              "columns",
+              "column"
             ],
             "template_commands": []
           },
@@ -1973,6 +2231,149 @@
               "cited_keys": [],
               "bibliography": [],
               "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Ruta editorial UCNL",
+              "latex": "\\section{Ruta editorial UCNL}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Presentar el tema de la actividad con identidad institucional UCNL, orden visual y una ruta de comprensión clara.",
+              "latex": "Presentar el tema de la actividad con identidad institucional UCNL, orden visual y una ruta de comprensión clara.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "list_item",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Delimitar el problema o concepto central.",
+              "latex": "\\item Delimitar el problema o concepto central.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "list_item",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Identificar el producto solicitado y sus criterios de cumplimiento.",
+              "latex": "\\item Identificar el producto solicitado y sus criterios de cumplimiento.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "list_item",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conectar desarrollo, evidencia y postura personal.",
+              "latex": "\\item Conectar desarrollo, evidencia y postura personal.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0009",
+              "order": 9,
+              "kind": "paragraph",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conceptos clave, categorías de análisis y relaciones principales.",
+              "latex": "Conceptos clave, categorías de análisis y relaciones principales.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0010",
+              "order": 10,
+              "kind": "paragraph",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Cuadro, esquema, cuestionario, matriz o síntesis solicitada por la actividad.",
+              "latex": "Cuadro, esquema, cuestionario, matriz o síntesis solicitada por la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0011",
+              "order": 11,
+              "kind": "paragraph",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "La conclusión debe explicar qué se comprendió, por qué importa y cómo se vincula con la formación profesional.",
+              "latex": "La conclusión debe explicar qué se comprendió, por qué importa y cómo se vincula con la formación profesional.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0012",
+              "order": 12,
+              "kind": "list_item",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Hallazgo central.",
+              "latex": "\\item Hallazgo central.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0013",
+              "order": 13,
+              "kind": "list_item",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Interpretación propia.",
+              "latex": "\\item Interpretación propia.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0014",
+              "order": 14,
+              "kind": "list_item",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consecuencia o aplicación.",
+              "latex": "\\item Consecuencia o aplicación.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
             }
           ],
           "content_blocks": [
@@ -2011,6 +2412,149 @@
               "paragraph_heading": "",
               "text": "Actividades: reporte-contabilidad-III-Actividad-N.tex",
               "latex": "\\item Actividades: \\texttt{reporte-contabilidad-III-Actividad-N.tex}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0004",
+              "order": 4,
+              "kind": "section",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Ruta editorial UCNL",
+              "latex": "\\section{Ruta editorial UCNL}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0005",
+              "order": 5,
+              "kind": "paragraph",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Presentar el tema de la actividad con identidad institucional UCNL, orden visual y una ruta de comprensión clara.",
+              "latex": "Presentar el tema de la actividad con identidad institucional UCNL, orden visual y una ruta de comprensión clara.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0006",
+              "order": 6,
+              "kind": "list_item",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Delimitar el problema o concepto central.",
+              "latex": "\\item Delimitar el problema o concepto central.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0007",
+              "order": 7,
+              "kind": "list_item",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Identificar el producto solicitado y sus criterios de cumplimiento.",
+              "latex": "\\item Identificar el producto solicitado y sus criterios de cumplimiento.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0008",
+              "order": 8,
+              "kind": "list_item",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conectar desarrollo, evidencia y postura personal.",
+              "latex": "\\item Conectar desarrollo, evidencia y postura personal.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0009",
+              "order": 9,
+              "kind": "paragraph",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Conceptos clave, categorías de análisis y relaciones principales.",
+              "latex": "Conceptos clave, categorías de análisis y relaciones principales.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0010",
+              "order": 10,
+              "kind": "paragraph",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Cuadro, esquema, cuestionario, matriz o síntesis solicitada por la actividad.",
+              "latex": "Cuadro, esquema, cuestionario, matriz o síntesis solicitada por la actividad.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0011",
+              "order": 11,
+              "kind": "paragraph",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "La conclusión debe explicar qué se comprendió, por qué importa y cómo se vincula con la formación profesional.",
+              "latex": "La conclusión debe explicar qué se comprendió, por qué importa y cómo se vincula con la formación profesional.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0012",
+              "order": 12,
+              "kind": "list_item",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Hallazgo central.",
+              "latex": "\\item Hallazgo central.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0013",
+              "order": 13,
+              "kind": "list_item",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Interpretación propia.",
+              "latex": "\\item Interpretación propia.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+            },
+            {
+              "id": "b0014",
+              "order": 14,
+              "kind": "list_item",
+              "section": "Ruta editorial UCNL",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Consecuencia o aplicación.",
+              "latex": "\\item Consecuencia o aplicación.",
               "cited_keys": [],
               "bibliography": [],
               "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
@@ -3410,9 +3954,9 @@
       },
       "presentacion_base": {
         "relative_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex",
-        "raw_latex_sha256": "12840f487b26b02523ccc7800e1c52a25ed10ba4ef07b8a8887f5648658c6f14",
-        "raw_latex_chars": 979,
-        "raw_latex": "﻿\\documentclass[spanish,aspectratio=169]{beamer}\n\n\\usepackage[spanish,es-tabla]{babel}\n\\usepackage[utf8]{inputenc}\n\\usepackage[T1]{fontenc}\n\\usepackage{lmodern}\n\\newcommand{\\UCNLlogodir}{assets-ucnl/logos}\n\\IfFileExists{\\UCNLlogodir/logo-ucnl.png}{}{%\n  \\renewcommand{\\UCNLlogodir}{../../assets-ucnl/logos}%\n}\n\\titlegraphic{%\n  \\includegraphics[height=1.35cm]{\\UCNLlogodir/logo-nuevo-leon.png}\\hspace{0.8cm}%\n  \\includegraphics[height=1.35cm]{\\UCNLlogodir/logo-ucnl.png}%\n}\n\n\\title{Presentacion - Contabilidad III}\n\\subtitle{Plantilla de exposicion academica}\n\\author{Martin Jonathan de la Cruz}\n\\institute{Universidad Ciudadana de Nuevo Leon}\n\\date{\\today}\n\n\\begin{document}\n\n\\begin{frame}\n  \\titlepage\n\\end{frame}\n\n\\begin{frame}{Estructura academica}\n  \\begin{itemize}\n    \\item Bibliografia: \\texttt{contabilidad-III.bib}\n    \\item Curso: Contabilidad III\n    \\item Actividades: \\texttt{reporte-contabilidad-III-Actividad-N.tex}\n  \\end{itemize}\n\\end{frame}\n\n\\end{document}\n\n\n\n",
+        "raw_latex_sha256": "04f79d81adb5b36a26a6b0339660265f2265508312d5942805d49de5ade90be5",
+        "raw_latex_chars": 5376,
+        "raw_latex": "﻿\\documentclass[spanish,aspectratio=169]{beamer}\n\n\\usepackage[spanish,es-tabla]{babel}\n\\usepackage[utf8]{inputenc}\n\\usepackage[T1]{fontenc}\n\\usepackage{lmodern}\n\n% ==============================================================================\n% TEMA VISUAL UCNL / AULATEX\n% Inspirado en el estándar visual de IIIEPE y UnADM: portada institucional,\n% navegación limpia, bloques didácticos, pie de página y paleta propia.\n% ==============================================================================\n\\usepackage{booktabs}\n\\usepackage{ragged2e}\n\\usepackage{tikz}\n\\usetikzlibrary{calc,positioning,fit,shadows.blur}\n\n\\definecolor{ucnlNavy}{HTML}{143A5A}\n\\definecolor{ucnlBlue}{HTML}{1E6F9F}\n\\definecolor{ucnlGold}{HTML}{C6922E}\n\\definecolor{ucnlAqua}{HTML}{20A99A}\n\\definecolor{ucnlPaper}{HTML}{F6F8F7}\n\\definecolor{ucnlInk}{HTML}{1E2A32}\n\n\\mode<presentation>{\n  \\usetheme{default}\n  \\usefonttheme{professionalfonts}\n  \\setbeamertemplate{navigation symbols}{}\n  \\setbeamertemplate{blocks}[rounded][shadow=false]\n}\n\\setbeamersize{text margin left=0.62cm,text margin right=0.62cm}\n\\setbeamercolor{background canvas}{bg=white}\n\\setbeamercolor{normal text}{fg=ucnlInk,bg=white}\n\\setbeamercolor{structure}{fg=ucnlBlue}\n\\setbeamercolor{frametitle}{fg=white,bg=ucnlNavy}\n\\setbeamercolor{block title}{fg=white,bg=ucnlBlue}\n\\setbeamercolor{block body}{fg=ucnlInk,bg=ucnlPaper}\n\\setbeamercolor{alerted text}{fg=ucnlGold}\n\\setbeamerfont{title}{size=\\LARGE,series=\\bfseries}\n\\setbeamerfont{frametitle}{size=\\large,series=\\bfseries}\n\\setbeamertemplate{itemize item}{\\textcolor{ucnlAqua}{\\large$\\blacktriangleright$}}\n\\setbeamertemplate{itemize subitem}{\\textcolor{ucnlGold}{\\scriptsize$\\blacksquare$}}\n\n\\setbeamertemplate{frametitle}{%\n  \\nointerlineskip\n  \\begin{beamercolorbox}[wd=\\textwidth,ht=1.02cm,dp=0.22cm,leftskip=0.35cm,rightskip=0.25cm]{frametitle}\n    \\insertframetitle\\hfill\\includegraphics[height=0.58cm]{\\UCNLlogodir/logo-ucnl.png}\n  \\end{beamercolorbox}\n  {\\color{ucnlGold}\\rule{\\textwidth}{1.3pt}}\n}\n\n\\setbeamertemplate{footline}{%\n  \\leavevmode\n  \\hbox{%\n    \\begin{beamercolorbox}[wd=.34\\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}\\color{white}\\insertshortauthor\\end{beamercolorbox}%\n    \\begin{beamercolorbox}[wd=.40\\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}\\color{white}\\insertshorttitle\\end{beamercolorbox}%\n    \\begin{beamercolorbox}[wd=.26\\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}\\color{white}UCNL\\hfill\\insertframenumber/\\inserttotalframenumber\\end{beamercolorbox}%\n  }\n}\n\\setbeamercolor{author in head/foot}{bg=ucnlNavy}\n\\setbeamercolor{title in head/foot}{bg=ucnlBlue}\n\\setbeamercolor{date in head/foot}{bg=ucnlNavy}\n\n\\AtBeginSection[]{%\n  \\begin{frame}[plain]\n    \\begin{tikzpicture}[remember picture,overlay]\n      \\fill[ucnlNavy] (current page.south west) rectangle (current page.north east);\n      \\node[opacity=0.10,anchor=east] at ([xshift=0.8cm]current page.east) {\\includegraphics[height=7.2cm]{\\UCNLlogodir/logo-nuevo-leon.png}};\n      \\fill[ucnlGold] ([xshift=0.85cm,yshift=1.8cm]current page.south west) rectangle ([xshift=1.05cm,yshift=5.6cm]current page.south west);\n    \\end{tikzpicture}\n    \\vspace{1.8cm}\n    \\hspace{1.25cm}{\\color{white}\\Huge\\bfseries\\insertsectionhead}\n  \\end{frame}\n}\n\\newcommand{\\UCNLlogodir}{assets-ucnl/logos}\n\\IfFileExists{\\UCNLlogodir/logo-ucnl.png}{}{%\n  \\renewcommand{\\UCNLlogodir}{../../assets-ucnl/logos}%\n}\n\\titlegraphic{%\n  \\includegraphics[height=1.35cm]{\\UCNLlogodir/logo-nuevo-leon.png}\\hspace{0.8cm}%\n  \\includegraphics[height=1.35cm]{\\UCNLlogodir/logo-ucnl.png}%\n}\n\n\\title{Presentacion - Contabilidad III}\n\\subtitle{Plantilla de exposicion academica}\n\\author{Martin Jonathan de la Cruz}\n\\institute{Universidad Ciudadana de Nuevo Leon}\n\\date{\\today}\n\n\\begin{document}\n\n\\begin{frame}\n  \\titlepage\n\\end{frame}\n\n\\begin{frame}{Estructura academica}\n  \\begin{itemize}\n    \\item Bibliografia: \\texttt{contabilidad-III.bib}\n    \\item Curso: Contabilidad III\n    \\item Actividades: \\texttt{reporte-contabilidad-III-Actividad-N.tex}\n  \\end{itemize}\n\\end{frame}\n\n\n\\section{Ruta editorial UCNL}\n\n\\begin{frame}{Objetivo y alcance}\n  \\begin{block}{Propósito académico}\n    Presentar el tema de la actividad con identidad institucional UCNL, orden visual y una ruta de comprensión clara.\n  \\end{block}\n  \\begin{itemize}\n    \\item Delimitar el problema o concepto central.\n    \\item Identificar el producto solicitado y sus criterios de cumplimiento.\n    \\item Conectar desarrollo, evidencia y postura personal.\n  \\end{itemize}\n\\end{frame}\n\n\\begin{frame}{Ejes de desarrollo}\n  \\begin{columns}[T,totalwidth=\\textwidth]\n    \\begin{column}{0.48\\textwidth}\n      \\begin{block}{Contenido}\n        Conceptos clave, categorías de análisis y relaciones principales.\n      \\end{block}\n    \\end{column}\n    \\begin{column}{0.48\\textwidth}\n      \\begin{block}{Producto}\n        Cuadro, esquema, cuestionario, matriz o síntesis solicitada por la actividad.\n      \\end{block}\n    \\end{column}\n  \\end{columns}\n\\end{frame}\n\n\\begin{frame}{Cierre académico}\n  \\begin{block}{Postura y aprendizaje}\n    La conclusión debe explicar qué se comprendió, por qué importa y cómo se vincula con la formación profesional.\n  \\end{block}\n  \\begin{itemize}\n    \\item Hallazgo central.\n    \\item Interpretación propia.\n    \\item Consecuencia o aplicación.\n  \\end{itemize}\n\\end{frame}\n\\end{document}\n",
         "functional_structure": {
           "documentclass": {
             "class": "beamer",
@@ -3422,13 +3966,21 @@
             "babel",
             "inputenc",
             "fontenc",
-            "lmodern"
+            "lmodern",
+            "booktabs",
+            "ragged2e",
+            "tikz"
           ],
           "inputs": [],
           "environments": [
-            "document",
+            "beamercolorbox",
             "frame",
-            "itemize"
+            "tikzpicture",
+            "document",
+            "itemize",
+            "block",
+            "columns",
+            "column"
           ],
           "template_commands": []
         },
@@ -3471,6 +4023,149 @@
             "cited_keys": [],
             "bibliography": [],
             "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Ruta editorial UCNL",
+            "latex": "\\section{Ruta editorial UCNL}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Presentar el tema de la actividad con identidad institucional UCNL, orden visual y una ruta de comprensión clara.",
+            "latex": "Presentar el tema de la actividad con identidad institucional UCNL, orden visual y una ruta de comprensión clara.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "list_item",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Delimitar el problema o concepto central.",
+            "latex": "\\item Delimitar el problema o concepto central.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "list_item",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Identificar el producto solicitado y sus criterios de cumplimiento.",
+            "latex": "\\item Identificar el producto solicitado y sus criterios de cumplimiento.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "list_item",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conectar desarrollo, evidencia y postura personal.",
+            "latex": "\\item Conectar desarrollo, evidencia y postura personal.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0009",
+            "order": 9,
+            "kind": "paragraph",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conceptos clave, categorías de análisis y relaciones principales.",
+            "latex": "Conceptos clave, categorías de análisis y relaciones principales.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0010",
+            "order": 10,
+            "kind": "paragraph",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Cuadro, esquema, cuestionario, matriz o síntesis solicitada por la actividad.",
+            "latex": "Cuadro, esquema, cuestionario, matriz o síntesis solicitada por la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0011",
+            "order": 11,
+            "kind": "paragraph",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "La conclusión debe explicar qué se comprendió, por qué importa y cómo se vincula con la formación profesional.",
+            "latex": "La conclusión debe explicar qué se comprendió, por qué importa y cómo se vincula con la formación profesional.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0012",
+            "order": 12,
+            "kind": "list_item",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Hallazgo central.",
+            "latex": "\\item Hallazgo central.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0013",
+            "order": 13,
+            "kind": "list_item",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Interpretación propia.",
+            "latex": "\\item Interpretación propia.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0014",
+            "order": 14,
+            "kind": "list_item",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consecuencia o aplicación.",
+            "latex": "\\item Consecuencia o aplicación.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
           }
         ],
         "content_blocks": [
@@ -3509,6 +4204,149 @@
             "paragraph_heading": "",
             "text": "Actividades: reporte-contabilidad-III-Actividad-N.tex",
             "latex": "\\item Actividades: \\texttt{reporte-contabilidad-III-Actividad-N.tex}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0004",
+            "order": 4,
+            "kind": "section",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Ruta editorial UCNL",
+            "latex": "\\section{Ruta editorial UCNL}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0005",
+            "order": 5,
+            "kind": "paragraph",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Presentar el tema de la actividad con identidad institucional UCNL, orden visual y una ruta de comprensión clara.",
+            "latex": "Presentar el tema de la actividad con identidad institucional UCNL, orden visual y una ruta de comprensión clara.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0006",
+            "order": 6,
+            "kind": "list_item",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Delimitar el problema o concepto central.",
+            "latex": "\\item Delimitar el problema o concepto central.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0007",
+            "order": 7,
+            "kind": "list_item",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Identificar el producto solicitado y sus criterios de cumplimiento.",
+            "latex": "\\item Identificar el producto solicitado y sus criterios de cumplimiento.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0008",
+            "order": 8,
+            "kind": "list_item",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conectar desarrollo, evidencia y postura personal.",
+            "latex": "\\item Conectar desarrollo, evidencia y postura personal.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0009",
+            "order": 9,
+            "kind": "paragraph",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Conceptos clave, categorías de análisis y relaciones principales.",
+            "latex": "Conceptos clave, categorías de análisis y relaciones principales.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0010",
+            "order": 10,
+            "kind": "paragraph",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Cuadro, esquema, cuestionario, matriz o síntesis solicitada por la actividad.",
+            "latex": "Cuadro, esquema, cuestionario, matriz o síntesis solicitada por la actividad.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0011",
+            "order": 11,
+            "kind": "paragraph",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "La conclusión debe explicar qué se comprendió, por qué importa y cómo se vincula con la formación profesional.",
+            "latex": "La conclusión debe explicar qué se comprendió, por qué importa y cómo se vincula con la formación profesional.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0012",
+            "order": 12,
+            "kind": "list_item",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Hallazgo central.",
+            "latex": "\\item Hallazgo central.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0013",
+            "order": 13,
+            "kind": "list_item",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Interpretación propia.",
+            "latex": "\\item Interpretación propia.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
+          },
+          {
+            "id": "b0014",
+            "order": 14,
+            "kind": "list_item",
+            "section": "Ruta editorial UCNL",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Consecuencia o aplicación.",
+            "latex": "\\item Consecuencia o aplicación.",
             "cited_keys": [],
             "bibliography": [],
             "source_path": "UCNL/licenciatura-en-administracion/contabilidad-iii-lad/presentacion-contabilidad.tex"
