@@ -116,15 +116,15 @@ https://www.uas.edu.mx/
 
 \subsection*{Plantilla}
 \begin{itemize}[leftmargin=*]
-  \item \\% Archivo: UAS/reporte-uas.tex
-  \item \\% Estructura mínima: \\textbackslash\\{\\}input\\{template\\} + metadatos + secciones base + \\textbackslash\\{\\}bibliography\\{bibliografia-uas\\}
-  \item \\% Mantener compatibilidad con TEXINPUTS/BIBINPUTS del repositorio.
+  \item \texttt{\% Archivo: UAS/reporte-uas.tex}
+  \item \texttt{\% Estructura mínima: input\{template\} + metadatos + secciones base + bibliography\{bibliografia-uas\}}
+  \item \texttt{\% Mantener compatibilidad con TEXINPUTS/BIBINPUTS del repositorio.}
   \item Definir plantilla base con reglas editoriales, assets y referencias de estilo antes de redactar.
-  \item \\% UAS/reporte-uas.tex
-  \item \\% \\textbackslash\\{\\}input\\{template\\} desde base/ por TEXINPUTS
-  \item \\% Metadatos: institucion, carrera, materia, periodo, autor
-  \item \\% Secciones mínimas: objetivo, competencias, desarrollo, evaluacion, cierre
-  \item \\% \\textbackslash\\{\\}bibliography\\{bibliografia-uas\\}
+  \item \texttt{\% UAS/reporte-uas.tex}
+  \item \texttt{\% input\{template\} desde base/ por TEXINPUTS}
+  \item \texttt{\% Metadatos: institucion, carrera, materia, periodo, autor}
+  \item \texttt{\% Secciones mínimas: objetivo, competencias, desarrollo, evaluacion, cierre}
+  \item \texttt{\% bibliography\{bibliografia-uas\}}
   \item Prepara una raíz institucional reutilizable con carpetas por carrera, carpeta assets y referencias claras a plantillas LaTeX compartidas.
   \item Usar punto de entrada .tex por tipo de entrega: reporte, actividad, presentacion.
   \item Resolver plantillas mediante TEXINPUTS configurado en .latexmkrc; no hardcodear rutas absolutas.
@@ -137,14 +137,14 @@ https://www.uas.edu.mx/
 
 \subsection*{Actividad}
 \begin{itemize}[leftmargin=*]
-  \item \\% Archivo sugerido por materia: UAS/<carrera>/<materia>/actividad-<slug>.tex
-  \item \\% Secciones: contexto, instrucciones, desarrollo, evidencia, criterios de evaluación, referencias.
-  \item \\% Incluir marcador de investigación pendiente en comentarios.
+  \item \texttt{\% Archivo sugerido por materia: UAS/<carrera>/<materia>/actividad-<slug>.tex}
+  \item \texttt{\% Secciones: contexto, instrucciones, desarrollo, evidencia, criterios de evaluación, referencias.}
+  \item \texttt{\% Incluir marcador de investigación pendiente en comentarios.}
   \item Desarrollar la actividad respetando objetivo, criterios de evaluación y marcadores de investigación.
-  \item \\% UAS/<carrera>/<materia>/actividad-<slug>.tex
-  \item \\% Secciones: contexto, instrucciones, entregables, criterios, referencias
-  \item \\% Incluir bloque \\% Refuerzo Ciclo A materializado cuando aplique
-  \item \\% Mantener actividad como plantilla incompleta, no contenido final
+  \item \texttt{\% UAS/<carrera>/<materia>/actividad-<slug>.tex}
+  \item \texttt{\% Secciones: contexto, instrucciones, entregables, criterios, referencias}
+  \item \texttt{\% Incluir bloque Refuerzo Ciclo A materializado cuando aplique}
+  \item \texttt{\% Mantener actividad como plantilla incompleta, no contenido final}
   \item Establecer una base institucional compilable y reutilizable para producción académica en LaTeX.
   \item Estandarizar entradas de reporte, actividad y presentación para programas UAS.
   \item Pertinencia académica respecto a programa/materia validada.
@@ -158,14 +158,14 @@ https://www.uas.edu.mx/
 
 \subsection*{Reporte}
 \begin{itemize}[leftmargin=*]
-  \item \\% Archivo sugerido por materia: UAS/<carrera>/<materia>/reporte-<slug>.tex
-  \item \\% Secciones: introducción, objetivos, marco conceptual, desarrollo, conclusiones, bibliografía.
-  \item \\% Usar bibliografía institucional o específica de materia según volumen.
+  \item \texttt{\% Archivo sugerido por materia: UAS/<carrera>/<materia>/reporte-<slug>.tex}
+  \item \texttt{\% Secciones: introducción, objetivos, marco conceptual, desarrollo, conclusiones, bibliografía.}
+  \item \texttt{\% Usar bibliografía institucional o específica de materia según volumen.}
   \item Estructurar el reporte con bibliografía requerida y cierre verificable.
-  \item \\% UAS/<carrera>/<materia>/reporte-<slug>.tex
-  \item \\% Secciones: introduccion, objetivos, marco, desarrollo, conclusiones, referencias
-  \item \\% Reusar estructura institucional y ajustar a materia
-  \item \\% Citar solo entradas existentes en .bib verificado
+  \item \texttt{\% UAS/<carrera>/<materia>/reporte-<slug>.tex}
+  \item \texttt{\% Secciones: introduccion, objetivos, marco, desarrollo, conclusiones, referencias}
+  \item \texttt{\% Reusar estructura institucional y ajustar a materia}
+  \item \texttt{\% Citar solo entradas existentes en .bib verificado}
   \item UAS/reporte-uas.tex
   \item UAS/presentacion-uas.tex
   \item UAS/bibliografia-uas.bib
@@ -182,14 +182,14 @@ https://www.uas.edu.mx/
 
 \subsection*{Presentación}
 \begin{itemize}[leftmargin=*]
-  \item \\% Archivo: UAS/presentacion-uas.tex o por materia.
-  \item \\% Estructura: portada, objetivo, puntos clave, cierre, referencias.
-  \item \\% Diseñar para síntesis visual; contenido extenso queda en reporte.
+  \item \texttt{\% Archivo: UAS/presentacion-uas.tex o por materia.}
+  \item \texttt{\% Estructura: portada, objetivo, puntos clave, cierre, referencias.}
+  \item \texttt{\% Diseñar para síntesis visual; contenido extenso queda en reporte.}
   \item Preparar la presentación con síntesis visual, continuidad editorial y evidencias clave.
-  \item \\% UAS/presentacion-uas.tex o UAS/<carrera>/<materia>/presentacion-<slug>.tex
-  \item \\% Estructura: portada, objetivo, hallazgos clave, cierre, referencias
-  \item \\% Priorizar sintesis visual y consistencia con reporte asociado
-  \item \\% Sin duplicar desarrollo extenso del reporte
+  \item \texttt{\% UAS/presentacion-uas.tex o UAS/<carrera>/<materia>/presentacion-<slug>.tex}
+  \item \texttt{\% Estructura: portada, objetivo, hallazgos clave, cierre, referencias}
+  \item \texttt{\% Priorizar sintesis visual y consistencia con reporte asociado}
+  \item \texttt{\% Sin duplicar desarrollo extenso del reporte}
   \item Nodo UAS con artefactos canónicos listos para completar.
   \item Rutas y convenciones estables para crecimiento por carrera/materia.
   \item Checklist mínimo de calidad para compilación y citación.
@@ -226,6 +226,6 @@ En consecuencia, la calidad de la actividad depende de que el producto visible, 
 
 
 \subsection*{Citas de refuerzo Ciclo A}
-La mejora editorial se vincula con la memoria documental disponible mediante las referencias \citep{cicloARefuerzo01,cicloARefuerzo02,cicloARefuerzo03,cicloARefuerzo04,cicloARefuerzo05,cicloARefuerzo06}. Estas citas deben revisarse en una etapa disciplinar fina para sustituir o complementar fuentes genéricas por literatura específica del tema.
+La mejora editorial se vincula con la memoria documental disponible mediante las referencias \cite{cicloARefuerzo01,cicloARefuerzo02,cicloARefuerzo03,cicloARefuerzo04,cicloARefuerzo05,cicloARefuerzo06}. Estas citas deben revisarse en una etapa disciplinar fina para sustituir o complementar fuentes genéricas por literatura específica del tema.
 
 \end{document}
