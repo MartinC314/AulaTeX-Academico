@@ -134,7 +134,140 @@
     "career": "ingenieria-en-sistemas-computacionales",
     "subject": "calculo-vectorial-isc",
     "activity": "",
-    "parent_key": "ITESCA/ingenieria-en-sistemas-computacionales"
+    "parent_key": "ITESCA/ingenieria-en-sistemas-computacionales",
+    "editing_details": {
+      "heading_contract": {
+        "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
+        "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
+        "subject_rule": "calculo-vectorial-isc",
+        "scope_label": "calculo-vectorial-isc"
+      },
+      "didactic_contract": {
+        "detected_id": "estudio_de_caso",
+        "aliases": [
+          "caso",
+          "estudio de caso",
+          "situación",
+          "situacion"
+        ],
+        "required_visible_elements": [
+          "hechos",
+          "análisis",
+          "conclusión"
+        ],
+        "preservation_rule": "Si el insumo es caso, conservar hechos relevantes, actores, problema y resolución argumentada."
+      },
+      "bibliography_contract": {
+        "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
+        "reference_growth_rule": "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
+        "local_first_rule": "Priorizar bibliografía, programa, notas y memorias editoriales locales; si no alcanzan para validar, buscar fuentes en línea sólidas y registrarlas en .bib con citas visibles en TEX."
+      },
+      "institutional_identity": {
+        "institution": "ITESCA",
+        "career": "ingenieria-en-sistemas-computacionales",
+        "subject": "calculo-vectorial-isc",
+        "activity": "",
+        "seed_scope_key": "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc"
+      },
+      "compilation_fixes": [],
+      "quality_rules": [
+        "título sin Actividad #; subtítulo compacto; subject/equivalente = Actividad # - Materia",
+        "la forma visible del producto respeta cuestionario, foro, caso, mapa, tabla u otro contrato",
+        "todas las citas visibles tienen entrada .bib, no hay entradas inventadas y el número de referencias aumenta cuando el corpus previo no sostiene todas las respuestas",
+        "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
+        "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
+        "sin placeholders, con contexto/problema integrado en introducción, análisis propio integrado en conclusión, postura personal integrada en conclusión y transferencia profesional",
+        "sin metadiscurso de ejecución: no hablar de 'esta actividad', 'producto solicitado', 'se presenta' o 'la técnica usada' como narrador externo; hablar del tema, problema, concepto, cuestionario, caso o tabla según corresponda",
+        "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
+        "si el producto es cuestionario, la sección Desarrollo debe estar ocupada por el cuestionario con su título; el marco conceptual va dentro de esa misma sección, no como sección/subsección independiente salvo consigna expresa",
+        "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa",
+        "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
+        "En el cuerpo final no narrar el proceso de elaboración ni mencionar la palabra 'Actividad' como sujeto del análisis; en su lugar hablar del tema, problema, concepto, cuestionario, caso, tabla o fenómeno estudiado.",
+        "El contexto y el problema se integran en la introducción; no crear una subsección visible 'Contexto y problema' salvo instrucción expresa de la consigna.",
+        "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa."
+      ],
+      "exceptions": [],
+      "learned_from": [
+        {
+          "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc",
+          "has_memory": true
+        },
+        {
+          "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales",
+          "has_memory": true
+        },
+        {
+          "scope_key": "ITESCA",
+          "has_memory": true
+        },
+        {
+          "scope_key": "interinstitucional",
+          "has_memory": true
+        },
+        {
+          "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales/actividades-complementarias-isc",
+          "has_memory": true
+        },
+        {
+          "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales/administracion-de-base-de-datos-isc",
+          "has_memory": true
+        },
+        {
+          "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales/administracion-de-redes-isc",
+          "has_memory": true
+        },
+        {
+          "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales/algebra-lineal-isc",
+          "has_memory": true
+        }
+      ],
+      "novelty_signals": [
+        "bootstrap"
+      ],
+      "derived_from": {
+        "local_memory": true,
+        "ancestor_memory": true,
+        "related_nodes": [
+          "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc",
+          "ITESCA/ingenieria-en-sistemas-computacionales",
+          "ITESCA",
+          "interinstitucional",
+          "ITESCA/ingenieria-en-sistemas-computacionales/actividades-complementarias-isc",
+          "ITESCA/ingenieria-en-sistemas-computacionales/administracion-de-base-de-datos-isc",
+          "ITESCA/ingenieria-en-sistemas-computacionales/administracion-de-redes-isc",
+          "ITESCA/ingenieria-en-sistemas-computacionales/algebra-lineal-isc"
+        ],
+        "source_artifacts": [
+          "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc/COMPILACION.md",
+          "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc/calculo-vectorial.bib",
+          "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc/reporte-calculo-vectorial-isc.tex",
+          "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc/presentacion-calculo-vectorial-isc.tex"
+        ]
+      },
+      "confidence": {
+        "global": 1.0,
+        "by_section": {
+          "heading_contract": 0.6,
+          "didactic_contract": 0.5,
+          "bibliography_contract": 0.9
+        }
+      }
+    },
+    "detail_planner": {
+      "run_id": "20260710-194809",
+      "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc",
+      "related_scope_keys": [
+        "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc",
+        "ITESCA/ingenieria-en-sistemas-computacionales",
+        "ITESCA",
+        "interinstitucional",
+        "ITESCA/ingenieria-en-sistemas-computacionales/actividades-complementarias-isc",
+        "ITESCA/ingenieria-en-sistemas-computacionales/administracion-de-base-de-datos-isc",
+        "ITESCA/ingenieria-en-sistemas-computacionales/administracion-de-redes-isc",
+        "ITESCA/ingenieria-en-sistemas-computacionales/algebra-lineal-isc"
+      ],
+      "novelty_count": 1
+    }
   },
   "curricular_context": {},
   "artifact_templates": {
@@ -166,7 +299,140 @@
         "career": "ingenieria-en-sistemas-computacionales",
         "subject": "calculo-vectorial-isc",
         "activity": "",
-        "parent_key": "ITESCA/ingenieria-en-sistemas-computacionales"
+        "parent_key": "ITESCA/ingenieria-en-sistemas-computacionales",
+        "editing_details": {
+          "heading_contract": {
+            "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
+            "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
+            "subject_rule": "calculo-vectorial-isc",
+            "scope_label": "calculo-vectorial-isc"
+          },
+          "didactic_contract": {
+            "detected_id": "estudio_de_caso",
+            "aliases": [
+              "caso",
+              "estudio de caso",
+              "situación",
+              "situacion"
+            ],
+            "required_visible_elements": [
+              "hechos",
+              "análisis",
+              "conclusión"
+            ],
+            "preservation_rule": "Si el insumo es caso, conservar hechos relevantes, actores, problema y resolución argumentada."
+          },
+          "bibliography_contract": {
+            "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
+            "reference_growth_rule": "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
+            "local_first_rule": "Priorizar bibliografía, programa, notas y memorias editoriales locales; si no alcanzan para validar, buscar fuentes en línea sólidas y registrarlas en .bib con citas visibles en TEX."
+          },
+          "institutional_identity": {
+            "institution": "ITESCA",
+            "career": "ingenieria-en-sistemas-computacionales",
+            "subject": "calculo-vectorial-isc",
+            "activity": "",
+            "seed_scope_key": "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc"
+          },
+          "compilation_fixes": [],
+          "quality_rules": [
+            "título sin Actividad #; subtítulo compacto; subject/equivalente = Actividad # - Materia",
+            "la forma visible del producto respeta cuestionario, foro, caso, mapa, tabla u otro contrato",
+            "todas las citas visibles tienen entrada .bib, no hay entradas inventadas y el número de referencias aumenta cuando el corpus previo no sostiene todas las respuestas",
+            "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
+            "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
+            "sin placeholders, con contexto/problema integrado en introducción, análisis propio integrado en conclusión, postura personal integrada en conclusión y transferencia profesional",
+            "sin metadiscurso de ejecución: no hablar de 'esta actividad', 'producto solicitado', 'se presenta' o 'la técnica usada' como narrador externo; hablar del tema, problema, concepto, cuestionario, caso o tabla según corresponda",
+            "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
+            "si el producto es cuestionario, la sección Desarrollo debe estar ocupada por el cuestionario con su título; el marco conceptual va dentro de esa misma sección, no como sección/subsección independiente salvo consigna expresa",
+            "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa",
+            "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
+            "En el cuerpo final no narrar el proceso de elaboración ni mencionar la palabra 'Actividad' como sujeto del análisis; en su lugar hablar del tema, problema, concepto, cuestionario, caso, tabla o fenómeno estudiado.",
+            "El contexto y el problema se integran en la introducción; no crear una subsección visible 'Contexto y problema' salvo instrucción expresa de la consigna.",
+            "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa."
+          ],
+          "exceptions": [],
+          "learned_from": [
+            {
+              "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc",
+              "has_memory": true
+            },
+            {
+              "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales",
+              "has_memory": true
+            },
+            {
+              "scope_key": "ITESCA",
+              "has_memory": true
+            },
+            {
+              "scope_key": "interinstitucional",
+              "has_memory": true
+            },
+            {
+              "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales/actividades-complementarias-isc",
+              "has_memory": true
+            },
+            {
+              "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales/administracion-de-base-de-datos-isc",
+              "has_memory": true
+            },
+            {
+              "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales/administracion-de-redes-isc",
+              "has_memory": true
+            },
+            {
+              "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales/algebra-lineal-isc",
+              "has_memory": true
+            }
+          ],
+          "novelty_signals": [
+            "bootstrap"
+          ],
+          "derived_from": {
+            "local_memory": true,
+            "ancestor_memory": true,
+            "related_nodes": [
+              "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc",
+              "ITESCA/ingenieria-en-sistemas-computacionales",
+              "ITESCA",
+              "interinstitucional",
+              "ITESCA/ingenieria-en-sistemas-computacionales/actividades-complementarias-isc",
+              "ITESCA/ingenieria-en-sistemas-computacionales/administracion-de-base-de-datos-isc",
+              "ITESCA/ingenieria-en-sistemas-computacionales/administracion-de-redes-isc",
+              "ITESCA/ingenieria-en-sistemas-computacionales/algebra-lineal-isc"
+            ],
+            "source_artifacts": [
+              "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc/COMPILACION.md",
+              "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc/calculo-vectorial.bib",
+              "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc/reporte-calculo-vectorial-isc.tex",
+              "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc/presentacion-calculo-vectorial-isc.tex"
+            ]
+          },
+          "confidence": {
+            "global": 1.0,
+            "by_section": {
+              "heading_contract": 0.6,
+              "didactic_contract": 0.5,
+              "bibliography_contract": 0.9
+            }
+          }
+        },
+        "detail_planner": {
+          "run_id": "20260710-194809",
+          "scope_key": "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc",
+          "related_scope_keys": [
+            "ITESCA/ingenieria-en-sistemas-computacionales/calculo-vectorial-isc",
+            "ITESCA/ingenieria-en-sistemas-computacionales",
+            "ITESCA",
+            "interinstitucional",
+            "ITESCA/ingenieria-en-sistemas-computacionales/actividades-complementarias-isc",
+            "ITESCA/ingenieria-en-sistemas-computacionales/administracion-de-base-de-datos-isc",
+            "ITESCA/ingenieria-en-sistemas-computacionales/administracion-de-redes-isc",
+            "ITESCA/ingenieria-en-sistemas-computacionales/algebra-lineal-isc"
+          ],
+          "novelty_count": 1
+        }
       },
       "identity_rules": [
         "Mantener identidad institucional ITESCA heredada desde _shared y assets oficiales.",

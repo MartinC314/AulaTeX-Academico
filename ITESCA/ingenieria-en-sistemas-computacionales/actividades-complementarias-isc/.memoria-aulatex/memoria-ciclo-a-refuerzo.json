@@ -1,0 +1,60 @@
+{
+  "schema": "aulatex.editorial-reinforcement-contract.propagated.v1",
+  "run_id": "20260711-011141",
+  "subject_path": "ITESCA/ingenieria-en-sistemas-computacionales/actividades-complementarias-isc",
+  "activity_file": "reporte-actividades-complementarias-isc.tex",
+  "current_ems": 47.5,
+  "target_ems": 84.17,
+  "editorial_distance": 36.67,
+  "priority": "media",
+  "maturity_band": "desarrollado",
+  "gaps": [
+    "bibliografia_insuficiente",
+    "citas_insuficientes",
+    "pendientes_editoriales"
+  ],
+  "product_types_detected": [
+    "mapa_conceptual",
+    "cuadro_comparativo",
+    "matriz",
+    "procedimiento"
+  ],
+  "operations": [
+    "Ampliar bibliografía disciplinar antes de materializar la actividad.",
+    "Aumentar integración de citas dentro del desarrollo, no solo en bibliografía.",
+    "Eliminar pendientes editoriales mediante materialización directa del producto solicitado."
+  ],
+  "acceptance_criteria": [
+    "EMS posterior mayor al EMS actual",
+    "sin pendientes editoriales nuevos",
+    "producto solicitado visible y explicado",
+    "análisis propio explícito",
+    "transferencia profesional o disciplinar",
+    "conclusión argumentada"
+  ],
+  "risk_controls": [
+    "no copiar contenido de casos maestros",
+    "no inventar fuentes bibliográficas",
+    "crear respaldo antes de aplicar materialización",
+    "recalcular EMS después de cualquier edición"
+  ],
+  "learning_synthesis_applied": true,
+  "global_reinforcement_rules": [
+    "Priorizar cierre de brecha recurrente: bibliografia_insuficiente (427 nodos).",
+    "Priorizar cierre de brecha recurrente: citas_insuficientes (328 nodos).",
+    "Priorizar cierre de brecha recurrente: pendientes_editoriales (215 nodos).",
+    "Priorizar cierre de brecha recurrente: tesis (15 nodos).",
+    "Priorizar cierre de brecha recurrente: analisis_propio (8 nodos).",
+    "Priorizar cierre de brecha recurrente: producto_visible (6 nodos).",
+    "Priorizar cierre de brecha recurrente: transferencia (6 nodos).",
+    "Priorizar cierre de brecha recurrente: conclusion_argumentada (6 nodos).",
+    "La primera operación de refuerzo debe eliminar pendientes editoriales antes de agregar complejidad.",
+    "La memoria editorial debe exigir bibliografía disciplinar mínima antes de materialización intensiva.",
+    "Toda actividad reforzada debe contener análisis propio explícito: hallazgo, interpretación, consecuencia y postura."
+  ],
+  "propagation_hints": [
+    "Comparar brechas locales contra brechas globales recurrentes: bibliografia_insuficiente, citas_insuficientes, pendientes_editoriales, tesis, analisis_propio.",
+    "Aplicar primero operaciones con impacto en pendientes, bibliografía y análisis propio.",
+    "Recalcular EMS después de la materialización para medir reducción real de distancia editorial."
+  ]
+}
