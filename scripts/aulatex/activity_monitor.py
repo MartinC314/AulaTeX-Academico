@@ -17,6 +17,7 @@ from .activity_observer import ActivityObservationRequest, ActivityObserver
 from .bibliography_repair import BibliographyRepairRequest, BibliographyRepairer
 from .compilation_repair import CompilationRepairRequest, CompilationRepairer
 from .extractor_adapter import ExtractorAdapter, ExtractorRequest, ExtractorRunResult
+from .incremental_detail_planner import DetailPlannerRequest, DetailPlannerResult, IncrementalDetailPlanner
 from .workspace import AulaTeXWorkspace
 
 
@@ -35,6 +36,8 @@ class ActivityMonitorRequest:
     backup_revision: bool = True
     stop_on_blocker: bool = True
     workflow_backend: Literal["langgraph", "classic"] = "langgraph"
+    run_detail_planner: bool = True
+    detail_planner_max_scopes: int = 6
 
 
 @dataclass(frozen=True)
@@ -63,6 +66,7 @@ class ActivityMonitor:
         self.reviser = ActivityReviser(self.workspace)
         self.compilation_repairer = CompilationRepairer(self.workspace)
         self.extractor = ExtractorAdapter(self.workspace)
+        self.detail_planner = IncrementalDetailPlanner(self.workspace)
         self.root = self.workspace.feedback_root / "activity-monitor" / "runs"
         self.root.mkdir(parents=True, exist_ok=True)
 
@@ -71,12 +75,24 @@ class ActivityMonitor:
         run_dir = self._resolve_run_dir(request, run_id)
         run_dir.mkdir(parents=True, exist_ok=True)
 
+        detail_plan_result: DetailPlannerResult | None = None
+        if bool(request.run_detail_planner):
+            detail_plan_result = self.detail_planner.run(
+                DetailPlannerRequest(
+                    target=request.target,
+                    activity_number=request.activity_number,
+                    output=str(run_dir / "detail-planner"),
+                    max_scopes=request.detail_planner_max_scopes,
+                    persist_memory=True,
+                )
+            )
+
         if request.workflow_backend == "langgraph" and StateGraph is not None:
             cycles, final_ok = self._run_langgraph(request, run_dir)
         else:
             cycles, final_ok = self._run_classic(request, run_dir)
 
-        return self._finalize_result(request, run_id, run_dir, cycles, final_ok)
+        return self._finalize_result(request, run_id, run_dir, cycles, final_ok, detail_plan_result)
 
     def _run_classic(self, request: ActivityMonitorRequest, run_dir: Path) -> tuple[list[dict[str, Any]], bool]:
         cycles: list[dict[str, Any]] = []
@@ -425,6 +441,7 @@ class ActivityMonitor:
         run_dir: Path,
         cycles: list[dict[str, Any]],
         final_ok: bool,
+        detail_plan_result: DetailPlannerResult | None,
     ) -> ActivityMonitorResult:
         manifest = {
             "run_id": run_id,
@@ -435,10 +452,12 @@ class ActivityMonitor:
             "max_cycles": int(request.max_cycles),
             "compile_check": bool(request.compile_check),
             "run_extractor": bool(request.run_extractor),
+            "run_detail_planner": bool(request.run_detail_planner),
             "extractor_motors": list(self._extractor_motors(request)),
             "apply_bibliography_repair": bool(request.apply_bibliography_repair),
             "apply_revision_patches": bool(request.apply_revision_patches),
             "ok": final_ok,
+            "detail_planner": self._detail_planner_manifest(detail_plan_result),
             "cycles": cycles,
         }
         manifest_path = run_dir / "manifest.json"
@@ -468,6 +487,19 @@ class ActivityMonitor:
             "stderr": self.workspace.relative(result.stderr_path),
         }
 
+    def _detail_planner_manifest(self, result: DetailPlannerResult | None) -> dict[str, Any]:
+        if result is None:
+            return {"enabled": False}
+        return {
+            "enabled": True,
+            "ok": result.ok,
+            "run_dir": self.workspace.relative(result.run_dir),
+            "manifest": self.workspace.relative(result.manifest_path),
+            "report": self.workspace.relative(result.report_path),
+            "processed_scopes": list(result.processed_scopes),
+            "updated_scopes": list(result.updated_scopes),
+        }
+
     def _render_report(self, manifest: dict[str, Any]) -> str:
         lines = [
             "# Monitor de actividad AulaTeX",
@@ -478,9 +510,26 @@ class ActivityMonitor:
             f"- Backend: {manifest.get('workflow_backend', 'classic')}",
             f"- Estado final: {'PASS' if manifest['ok'] else 'PENDIENTE'}",
             "",
-            "## Ciclos",
+            "## Detail planner",
             "",
         ]
+        detail_planner = manifest.get("detail_planner") or {}
+        if detail_planner.get("enabled"):
+            lines.extend(
+                [
+                    f"- Estado: {'OK' if detail_planner.get('ok') else 'ERROR'}",
+                    f"- Reporte: {detail_planner.get('report', '')}",
+                    f"- Scopes procesados: {len(detail_planner.get('processed_scopes', []))}",
+                    f"- Scopes actualizados: {len(detail_planner.get('updated_scopes', []))}",
+                    "",
+                ]
+            )
+        else:
+            lines.extend(["- No se ejecuto detail planner en este ciclo.", ""])
+        lines.extend([
+            "## Ciclos",
+            "",
+        ])
         for cycle in manifest.get("cycles", []):
             lines.extend(
                 [

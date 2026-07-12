@@ -35,6 +35,8 @@ class EditorialContextProvider:
             return EditorialContextBundle(scope_key, "", {"scope_key": scope_key, "found": False})
 
         target = self.workspace.repo_root / scope.relative_path if scope.relative_path else self.workspace.repo_root
+        scope_memory = self.store.get_memory(scope.key)
+        editing_details = dict((scope_memory.get("node_metadata") or {}).get("editing_details") or {})
         memory = self.store.summarize_for_scope(scope.key, include_ancestors=include_ancestors, max_chars=max_chars // 3)
         extractor = self._extractor_payload(target, max_items=18)
         bibliography = self._bibliography_payload(target, max_items=18)
@@ -48,6 +50,7 @@ class EditorialContextProvider:
             "level": scope.level,
             "label": scope.label,
             "relative_path": scope.relative_path,
+            "editing_details": editing_details,
             "memory_markdown": memory,
             "extractor": extractor,
             "bibliography": bibliography,
@@ -162,8 +165,22 @@ class EditorialContextProvider:
             "### Memoria editorial distribuida/heredada",
             data.get("memory_markdown") or "Sin memoria disponible.",
             "",
-            "### Extractor y planeación disponible",
+            "### Detail planner",
         ]
+        editing = data.get("editing_details") or {}
+        if editing:
+            heading = editing.get("heading_contract") or {}
+            didactic = editing.get("didactic_contract") or {}
+            lines.append(f"- Subject canonico: {heading.get('subject_rule','')}")
+            lines.append(f"- Tecnica detectada: {didactic.get('detected_id','general')}")
+            for rule in list(editing.get("quality_rules") or [])[:5]:
+                lines.append(f"- Regla: {rule}")
+        else:
+            lines.append("- Sin editing_details persistidos.")
+        lines.extend([
+            "",
+            "### Extractor y planeación disponible",
+        ])
         extractor = data.get("extractor", {})
         if extractor.get("artifacts"):
             for name, values in extractor["artifacts"].items():

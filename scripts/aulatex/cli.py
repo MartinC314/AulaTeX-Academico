@@ -17,9 +17,11 @@ from .construction import ConstructionBuilder, ConstructionRequest
 from .editorial_memory import EDITORIAL_LEVELS, EditorialMemoryBuilder, EditorialMemoryRequest
 from .extractor_adapter import EXTRACTOR_MOTORS, ExtractorAdapter, ExtractorRequest
 from .gui import main as gui_main
+from .incremental_detail_planner import DetailPlannerRequest, IncrementalDetailPlanner
 from .intelligent_engine import IntelligentEngine, IntelligentEngineRequest
 from .investigation import InvestigationBuilder, InvestigationRequest
 from .llm_bridge import DEFAULT_MAX_TOKENS, DEFAULT_TIMEOUT_SECONDS, LLM_ENGINES, AulaTeXLLMClient
+from .mass_editorial_runner import MassEditorialRunner, MassEditorialRunnerRequest
 from .token_counter import count_text_tokens
 from .workspace import AulaTeXWorkspace
 
@@ -118,6 +120,8 @@ def build_parser() -> argparse.ArgumentParser:
     agent.add_argument("--extractor-conceptos", default="")
     agent.add_argument("--extractor-salida", default="")
     agent.add_argument("--extractor-motor", default="anthropicfoundry", choices=EXTRACTOR_MOTORS)
+    agent.add_argument("--no-detail-planner", action="store_true", help="Disable the prerequisite detail planner before realizar-actividad.")
+    agent.add_argument("--detail-max-scopes", type=int, default=6)
 
     editorial = sub.add_parser("editorial-memory", help="Build persistent editorial memory from a selected scope.")
     editorial.add_argument("--target", default=".")
@@ -134,6 +138,26 @@ def build_parser() -> argparse.ArgumentParser:
     editorial.add_argument("--max-batches", type=int, default=0)
     editorial.add_argument("--checkpoint", default="")
     editorial.add_argument("--resume-checkpoint", default="")
+
+    detail_planner = sub.add_parser("detail-planner", help="Build incremental editorial details and recursive backtrack hints for a scope.")
+    detail_planner.add_argument("--target", default=".")
+    detail_planner.add_argument("--activity", type=int, default=0)
+    detail_planner.add_argument("--output", default="")
+    detail_planner.add_argument("--max-scopes", type=int, default=6)
+    detail_planner.add_argument("--max-fixed-point-passes", type=int, default=4)
+    detail_planner.add_argument("--no-persist-memory", action="store_true")
+
+    mass_runner = sub.add_parser("mass-editorial-runner", help="Run proposal-only recursive detail planning over many editorial scopes.")
+    mass_runner.add_argument("--target", default=".")
+    mass_runner.add_argument("--output", default="")
+    mass_runner.add_argument("--cycles-per-node", type=int, default=11)
+    mass_runner.add_argument("--detail-max-scopes", type=int, default=6)
+    mass_runner.add_argument("--max-scopes", type=int, default=0)
+    mass_runner.add_argument("--scope-offset", type=int, default=0)
+    mass_runner.add_argument("--scope-level", default="", choices=("", "interinstitucional", "institucion", "carrera", "materia", "actividad"))
+    mass_runner.add_argument("--no-persist-memory", action="store_true")
+    mass_runner.add_argument("--append-contract-index", action="store_true")
+    mass_runner.add_argument("--monitor", action="store_true", help="Print one progress JSON line per processed scope.")
 
     investigation = sub.add_parser("investigation", help="Consolidate the knowledge base before extractor: local context, web sources and bibliography.")
     investigation.add_argument("--target", default=".")
@@ -179,6 +203,8 @@ def build_parser() -> argparse.ArgumentParser:
     activity_monitor.add_argument("--no-revision-backup", action="store_true")
     activity_monitor.add_argument("--keep-going", action="store_true")
     activity_monitor.add_argument("--workflow-backend", default="langgraph", choices=("langgraph", "classic"))
+    activity_monitor.add_argument("--no-detail-planner", action="store_true")
+    activity_monitor.add_argument("--detail-max-scopes", type=int, default=6)
 
     activity_revise = sub.add_parser("activity-revise", help="Build a structured revision plan for an activity.")
     activity_revise.add_argument("--target", required=True)
@@ -320,9 +346,79 @@ def main(argv: list[str] | None = None) -> None:
             extractor_conceptos=args.extractor_conceptos,
             extractor_salida=args.extractor_salida,
             extractor_motor=args.extractor_motor,
+            run_detail_planner=not bool(args.no_detail_planner),
+            detail_planner_max_scopes=args.detail_max_scopes,
         )
         result = AulaTeXAgent().run(request)
         print(json.dumps({"ok": result.ok, "run_dir": str(result.run_dir), "report": str(result.report_path)}, indent=2))
+        return
+
+    if args.command == "detail-planner":
+        result = IncrementalDetailPlanner(AulaTeXWorkspace()).run(
+            DetailPlannerRequest(
+                target=args.target,
+                activity_number=args.activity,
+                output=args.output,
+                max_scopes=args.max_scopes,
+                max_fixed_point_passes=args.max_fixed_point_passes,
+                persist_memory=not bool(args.no_persist_memory),
+            )
+        )
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "run_id": result.run_id,
+                    "run_dir": str(result.run_dir),
+                    "manifest": str(result.manifest_path),
+                    "report": str(result.report_path),
+                    "processed_scopes": list(result.processed_scopes),
+                    "updated_scopes": list(result.updated_scopes),
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    if args.command == "mass-editorial-runner":
+        def emit_progress(event: dict) -> None:
+            if bool(args.monitor):
+                print(json.dumps(event, ensure_ascii=False), flush=True)
+
+        result = MassEditorialRunner(AulaTeXWorkspace()).run(
+            MassEditorialRunnerRequest(
+                target=args.target,
+                output=args.output,
+                cycles_per_node=args.cycles_per_node,
+                detail_max_scopes=args.detail_max_scopes,
+                max_scopes=args.max_scopes,
+                scope_offset=args.scope_offset,
+                scope_level=args.scope_level,
+                persist_memory=not bool(args.no_persist_memory),
+                append_contract_index=bool(args.append_contract_index),
+            ),
+            progress_callback=emit_progress,
+        )
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "run_id": result.run_id,
+                    "run_dir": str(result.run_dir),
+                    "progress": str(result.progress_path),
+                    "proposals": str(result.proposals_path),
+                    "proposals_jsonl": str(result.proposals_jsonl_path),
+                    "contract_proposals": str(result.contract_proposals_path),
+                    "report": str(result.report_path),
+                    "processed_scopes": result.processed_scopes,
+                    "failed_scopes": result.failed_scopes,
+                    "scope_total": result.scope_total,
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
         return
 
     if args.command == "editorial-memory":
@@ -568,6 +664,8 @@ def main(argv: list[str] | None = None) -> None:
                 backup_revision=not bool(args.no_revision_backup),
                 stop_on_blocker=not bool(args.keep_going),
                 workflow_backend=args.workflow_backend,
+                run_detail_planner=not bool(args.no_detail_planner),
+                detail_planner_max_scopes=args.detail_max_scopes,
             )
         )
         print(

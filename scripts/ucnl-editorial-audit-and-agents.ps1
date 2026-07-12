@@ -30,6 +30,7 @@ param(
     [int]$MaxReportNodes = 8,
     [int]$MaxPresentationNodes = 8,
     [int]$MaxCompileNodes = 80,
+    [double]$MinimumImprovementPercent = 5.0,
     [switch]$AllTex,
     [switch]$SkipLlmPresentationPatch,
     [switch]$SkipActivityMonitor,
@@ -938,6 +939,17 @@ function Invoke-CompileCycle {
     return @($results.ToArray())
 }
 
+function Get-ImprovementScore {
+    param(
+        [Parameter(Mandatory)]$AuditBefore,
+        [Parameter(Mandatory)]$AuditAfter
+    )
+    $before = [double]($AuditBefore.Summary.issue_total)
+    $after = [double]($AuditAfter.Summary.issue_total)
+    if ($before -le 0) { return 100.0 }
+    return [Math]::Round((($before - $after) / $before) * 100.0, 2)
+}
+
 $cycleRecords = New-Object System.Collections.Generic.List[object]
 Write-Host "AulaTeX UCNL ciclo editorial" -ForegroundColor Cyan
 Write-Host "Repositorio: $RepoRoot"
@@ -955,22 +967,31 @@ for ($cycle = 1; $cycle -le [Math]::Max(1, $Cycles); $cycle++) {
         foreach ($item in @(Invoke-MemoryCycle -CycleDir $cycleDir)) { $runs.Add($item) }
         foreach ($item in @(Invoke-ReportCycle -Audit $auditBefore -CycleDir $cycleDir)) { $runs.Add($item) }
         foreach ($item in @(Invoke-PresentationCycle -Audit $auditBefore -CycleDir $cycleDir)) { $runs.Add($item) }
-        foreach ($item in @(Invoke-CompileCycle -Audit $auditBefore -CycleDir $cycleDir)) { $runs.Add($item) }
     }
 
     $auditAfter = if ($Execute) { Invoke-UcnlAudit -CycleDir (Join-Path $cycleDir 'after') } else { $null }
+    $improvementScore = if ($null -ne $auditAfter) { Get-ImprovementScore -AuditBefore $auditBefore -AuditAfter $auditAfter } else { 0.0 }
+
+    if ($Execute -and $Compile -and $null -ne $auditAfter -and $improvementScore -ge $MinimumImprovementPercent) {
+        foreach ($item in @(Invoke-CompileCycle -Audit $auditAfter -CycleDir $cycleDir)) { $runs.Add($item) }
+    }
+
     $cycleRecords.Add([pscustomobject]@{
         cycle = $cycle
         audit_before = $auditBefore.Json
         audit_after = if ($null -ne $auditAfter) { $auditAfter.Json } else { '' }
         issue_total_before = $auditBefore.Summary.issue_total
         issue_total_after = if ($null -ne $auditAfter) { $auditAfter.Summary.issue_total } else { $null }
+        improvement_percent = $improvementScore
+        compile_gate_threshold = $MinimumImprovementPercent
+        compile_gate_passed = ($improvementScore -ge $MinimumImprovementPercent)
         runs = @($runs.ToArray())
     })
 }
 
 $manifestPath = Join-Path $CycleRoot 'manifest.json'
 $reportPath = Join-Path $CycleRoot 'reporte-ciclo-ucnl.md'
+$baselinePath = Join-Path $OutputPath 'quality-baseline.json'
 $engineLimitManifest = @{}
 foreach ($engineName in $Engine) {
     $engineLimitManifest[$engineName] = Get-EngineLimit $engineName
@@ -985,6 +1006,17 @@ $manifest = [pscustomobject]@{
     engine_limits = $engineLimitManifest
     max_tokens_requested = $MaxTokens
     cycles = @($cycleRecords.ToArray())
+}
+
+if ($cycleRecords.Count -gt 0) {
+    $last = $cycleRecords[$cycleRecords.Count - 1]
+    $baseline = [pscustomobject]@{
+        timestamp = (Get-Date).ToString('s')
+        issue_total_before = $last.issue_total_before
+        issue_total_after = $last.issue_total_after
+        improvement_percent = $last.improvement_percent
+    }
+    $baseline | ConvertTo-Json -Depth 4 | Set-Content -Path $baselinePath -Encoding UTF8
 }
 $manifest | ConvertTo-Json -Depth 10 | Set-Content -Path $manifestPath -Encoding UTF8
 
@@ -1012,6 +1044,8 @@ foreach ($record in $cycleRecords) {
     if ($record.audit_after) { $md.Add("- Auditoria posterior: $($record.audit_after)") }
     $md.Add("- Issues antes: $($record.issue_total_before)")
     if ($null -ne $record.issue_total_after) { $md.Add("- Issues despues: $($record.issue_total_after)") }
+    $md.Add("- Mejora porcentual: $($record.improvement_percent)%")
+    $md.Add("- Compile gate: $($record.compile_gate_passed) (umbral=$($record.compile_gate_threshold)%)")
     foreach ($run in @($record.runs)) {
         $md.Add("- $($run.Name): exit=$($run.ExitCode), stdout=$($run.Stdout), stderr=$($run.Stderr)")
     }

@@ -8,6 +8,7 @@ from typing import Any
 
 from .activity_contract import evaluate_activity_contract
 from .compilation_diagnostics import classify_compile_failure, is_environment_issue
+from .editorial_memory import EditorialMemoryStore
 from .extractor_adapter import CORE_EXTRACTOR_ARTIFACTS, ExtractorAdapter, ExtractorRequest
 from .workspace import AulaTeXWorkspace, EditorialScope
 
@@ -33,6 +34,7 @@ class ActivityObservationResult:
 class ActivityObserver:
     def __init__(self, workspace: AulaTeXWorkspace | None = None) -> None:
         self.workspace = workspace or AulaTeXWorkspace()
+        self.memory_store = EditorialMemoryStore(self.workspace)
         self.extractor = ExtractorAdapter(self.workspace)
         self.root = self.workspace.feedback_root / "activity-observer" / "runs"
         self.root.mkdir(parents=True, exist_ok=True)
@@ -63,6 +65,7 @@ class ActivityObserver:
         compile_result = self._compile_if_requested(tex_path, request.compile_check)
         extractor_summary = self._load_json(target_root / "extractor-aulatex" / CORE_EXTRACTOR_ARTIFACTS["planeacion"])
         extractor_concepts = self._load_json(target_root / "extractor-aulatex" / CORE_EXTRACTOR_ARTIFACTS["conceptos"])
+        editing_details = self._load_editing_details(scope)
 
         state = self._build_state(
             run_id=run_id,
@@ -237,6 +240,7 @@ class ActivityObserver:
             "clean_bib_ref": self.workspace.relative(clean_bib_path) if clean_bib_path else "",
             "observed_state": {
                 "memory_ready": bool(scope),
+                "detail_planner_ready": bool(editing_details),
                 "planeacion_ready": "unknown",
                 "extractor_ready": bool(extractor_state.get("ready")),
                 "bibliography_ready": bibliography_ready,
@@ -244,6 +248,7 @@ class ActivityObserver:
                 "compile_ready": compile_ready,
                 "evaluation_ready": True,
             },
+            "editing_details": editing_details,
             "signals": {
                 "sections": sections,
                 "sections_count": len(sections),
@@ -287,6 +292,7 @@ class ActivityObserver:
         checks = {
             "tex_exists": bool(state.get("target_tex")),
             "pdf_exists": bool(state.get("target_pdf")),
+            "detail_planner_ready": bool(observed.get("detail_planner_ready")),
             "bibliography_ready": bool(observed.get("bibliography_ready")),
             "extractor_ready": bool(observed.get("extractor_ready")),
             "draft_without_placeholders": bool(observed.get("draft_ready")),
@@ -297,6 +303,8 @@ class ActivityObserver:
         warnings = []
         if not checks["tex_exists"]:
             critical.append("No se encontró TEX de actividad.")
+        if not checks["detail_planner_ready"]:
+            warnings.append("No existen editing_details persistidos para el nodo.")
         if not checks["bibliography_ready"]:
             critical.append("Hay claves bibliográficas faltantes o no hay .bib canónico.")
         if not checks["extractor_ready"]:
@@ -326,6 +334,12 @@ class ActivityObserver:
             "next_action": next_action,
             "contract": contract,
         }
+
+    def _load_editing_details(self, scope: EditorialScope | None) -> dict[str, Any]:
+        if scope is None:
+            return {}
+        memory = self.memory_store.get_memory(scope.key)
+        return dict((memory.get("node_metadata") or {}).get("editing_details") or {})
 
     def _build_actions_markdown(self, state: dict[str, Any], evaluation: dict[str, Any]) -> str:
         lines = [

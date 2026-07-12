@@ -16,6 +16,7 @@ from .agentic_patterns import (
 from .editorial_context import EditorialContextProvider
 from .editorial_memory import EditorialMemoryStore
 from .extractor_adapter import ExtractorAdapter, ExtractorRequest, ExtractorRunResult
+from .incremental_detail_planner import DetailPlannerRequest, DetailPlannerResult, IncrementalDetailPlanner
 from .langchain_adapter import AulaTeXLLMInterface, AulaTeXLangChainAdapter
 from .llm_bridge import DEFAULT_MAX_TOKENS, LLM_ENGINES, AulaTeXLLMClient, LLMCallResult
 from .template_materializer import MaterializationResult, TemplateMaterializer
@@ -46,6 +47,8 @@ class AgentRequest:
     extractor_conceptos: str = ""
     extractor_salida: str = ""
     extractor_motor: str = "anthropicfoundry"
+    run_detail_planner: bool = True
+    detail_planner_max_scopes: int = 6
 
 
 @dataclass
@@ -82,6 +85,7 @@ class AulaTeXAgent:
         self.editorial_context = EditorialContextProvider(self.workspace, self.editorial_memory)
         self.template_materializer = TemplateMaterializer(self.workspace)
         self.extractor_adapter = ExtractorAdapter(self.workspace)
+        self.detail_planner = IncrementalDetailPlanner(self.workspace, self.editorial_memory)
 
     def run(self, request: AgentRequest) -> AgentRunResult:
         target_ctx = self._resolve_target_context(request)
@@ -91,9 +95,23 @@ class AulaTeXAgent:
         run_dir = self.workspace.feedback_root / "runs" / f"{run_id}-{safe_action}"
         run_dir.mkdir(parents=True, exist_ok=True)
 
+        detail_plan_result: DetailPlannerResult | None = None
+        if self._should_run_detail_planner(request, target_ctx):
+            detail_plan_result = self.detail_planner.run(
+                DetailPlannerRequest(
+                    target=str(target_ctx.target_path),
+                    activity_number=request.activity_number,
+                    output=str(run_dir / "detail-planner"),
+                    max_scopes=request.detail_planner_max_scopes,
+                    persist_memory=True,
+                )
+            )
+
         workflow = AgenticStateMachine()
         memory = SharedMemory()
         context = self.workspace.context_summary(target_ctx.context_path)
+        if detail_plan_result is not None:
+            context += "\n\n" + self._detail_planner_context(detail_plan_result)
         if target_ctx.generation_mode == "downward":
             context += (
                 "\n\n## Generacion descendente\n"
@@ -231,6 +249,7 @@ class AulaTeXAgent:
                 for r in stage_results
             ],
             "compile_results": compile_results,
+            "detail_planner": self._detail_planner_manifest(detail_plan_result),
             "extractor": self._extractor_manifest(extractor_result),
             "materialization": self._materialization_manifest(materialization_result),
             "consensus": consensus.as_dict(),
@@ -241,7 +260,7 @@ class AulaTeXAgent:
 
         report_path = run_dir / "reporte-aulatex.md"
         report_path.write_text(
-            self._build_report(request, target_ctx, selected_tasks, stage_results, compile_results, consensus, extractor_result),
+            self._build_report(request, target_ctx, selected_tasks, stage_results, compile_results, consensus, extractor_result, detail_plan_result),
             encoding="utf-8",
         )
         if materialization_result is not None:
@@ -410,6 +429,28 @@ class AulaTeXAgent:
             return True
         return action in {"realizar-actividad", "generar-actividad"} and request.level in {"materia", "actividad"}
 
+    def _should_run_detail_planner(self, request: AgentRequest, target_ctx: AgentTargetContext) -> bool:
+        if not request.run_detail_planner or target_ctx.generation_mode == "downward":
+            return False
+        return request.action.strip().lower() == "realizar-actividad" and request.level in {"materia", "actividad"}
+
+    def _detail_planner_context(self, result: DetailPlannerResult) -> str:
+        report = result.report_path.read_text(encoding="utf-8")
+        return "## Detail planner previo\n\n" + report[:6000]
+
+    def _detail_planner_manifest(self, result: DetailPlannerResult | None) -> dict:
+        if result is None:
+            return {"enabled": False}
+        return {
+            "enabled": True,
+            "ok": result.ok,
+            "run_dir": self.workspace.relative(result.run_dir),
+            "manifest": self.workspace.relative(result.manifest_path),
+            "report": self.workspace.relative(result.report_path),
+            "processed_scopes": list(result.processed_scopes),
+            "updated_scopes": list(result.updated_scopes),
+        }
+
     def _run_extractor_tool(
         self,
         request: AgentRequest,
@@ -503,6 +544,7 @@ class AulaTeXAgent:
         compile_results: list[dict],
         consensus,
         extractor_result: ExtractorRunResult | None = None,
+        detail_plan_result: DetailPlannerResult | None = None,
     ) -> str:
         lines = [
             "# Reporte AulaTeX",
@@ -528,9 +570,27 @@ class AulaTeXAgent:
             f"- Hijo solicitado: {target_ctx.child_name or 'N/A'}",
             f"- Vista previa: {target_ctx.child_preview or 'N/A'}",
             "",
-            "## Ciclo LLM",
+            "## Detail planner",
             "",
         ]
+        if detail_plan_result is not None:
+            lines.extend(
+                [
+                    f"- Estado: {'OK' if detail_plan_result.ok else 'ERROR'}",
+                    f"- Reporte: `{self.workspace.relative(detail_plan_result.report_path)}`",
+                    f"- Scopes procesados: {len(detail_plan_result.processed_scopes)}",
+                    f"- Scopes actualizados: {len(detail_plan_result.updated_scopes)}",
+                    "",
+                ]
+            )
+        else:
+            lines.extend(["- No se ejecuto detail planner en este ciclo.", ""])
+        lines.extend(
+            [
+            "## Ciclo LLM",
+            "",
+            ]
+        )
         for index, (task, result) in enumerate(zip(tasks, stage_results), start=1):
             lines.append(f"### {index}. {task.stage} - {task.role} - {result.engine}")
             lines.append("")
