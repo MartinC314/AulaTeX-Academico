@@ -141,7 +141,142 @@
     "career": "ingenieria-en-mecatronica",
     "subject": "lab-sist-control-logico-imtc",
     "activity": "",
-    "parent_key": "UANL/ingenieria-en-mecatronica"
+    "parent_key": "UANL/ingenieria-en-mecatronica",
+    "editing_details": {
+      "heading_contract": {
+        "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
+        "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
+        "subject_rule": "Actividad 1 - lab-sist-control-logico-imtc",
+        "scope_label": "lab-sist-control-logico-imtc"
+      },
+      "didactic_contract": {
+        "detected_id": "tabla_didactica",
+        "aliases": [
+          "tabla",
+          "cuadro",
+          "cuadro comparativo",
+          "longtable",
+          "tabular"
+        ],
+        "required_visible_elements": [
+          "título",
+          "encabezados",
+          "filas",
+          "criterio de lectura"
+        ],
+        "preservation_rule": "Si la técnica usa tabla o cuadro, conservar estructura tabular visible con título/caption, encabezados claros, filas completas y una lectura breve; usar longtable, landscape, scriptsize, tabcolsep y arraystretch cuando el contenido sea amplio."
+      },
+      "bibliography_contract": {
+        "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
+        "reference_growth_rule": "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
+        "local_first_rule": "Priorizar bibliografía, programa, notas y memorias editoriales locales; si no alcanzan para validar, buscar fuentes en línea sólidas y registrarlas en .bib con citas visibles en TEX."
+      },
+      "institutional_identity": {
+        "institution": "UANL",
+        "career": "ingenieria-en-mecatronica",
+        "subject": "lab-sist-control-logico-imtc",
+        "activity": "Actividad 1",
+        "seed_scope_key": "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc/actividad-1"
+      },
+      "compilation_fixes": [],
+      "quality_rules": [
+        "título sin Actividad #; subtítulo compacto; subject/equivalente = Actividad # - Materia",
+        "la forma visible del producto respeta cuestionario, foro, caso, mapa, tabla u otro contrato",
+        "todas las citas visibles tienen entrada .bib, no hay entradas inventadas y el número de referencias aumenta cuando el corpus previo no sostiene todas las respuestas",
+        "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
+        "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
+        "sin placeholders, con contexto/problema integrado en introducción, análisis propio integrado en conclusión, postura personal integrada en conclusión y transferencia profesional",
+        "sin metadiscurso de ejecución: no hablar de 'esta actividad', 'producto solicitado', 'se presenta' o 'la técnica usada' como narrador externo; hablar del tema, problema, concepto, cuestionario, caso o tabla según corresponda",
+        "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
+        "si el producto es cuestionario, la sección Desarrollo debe estar ocupada por el cuestionario con su título; el marco conceptual va dentro de esa misma sección, no como sección/subsección independiente salvo consigna expresa",
+        "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa",
+        "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
+        "En el cuerpo final no narrar el proceso de elaboración ni mencionar la palabra 'Actividad' como sujeto del análisis; en su lugar hablar del tema, problema, concepto, cuestionario, caso, tabla o fenómeno estudiado.",
+        "El contexto y el problema se integran en la introducción; no crear una subsección visible 'Contexto y problema' salvo instrucción expresa de la consigna.",
+        "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa."
+      ],
+      "exceptions": [],
+      "learned_from": [
+        {
+          "scope_key": "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc",
+          "has_memory": true
+        },
+        {
+          "scope_key": "UANL/ingenieria-en-mecatronica",
+          "has_memory": true
+        },
+        {
+          "scope_key": "UANL",
+          "has_memory": true
+        },
+        {
+          "scope_key": "interinstitucional",
+          "has_memory": true
+        },
+        {
+          "scope_key": "UANL/ingenieria-en-mecatronica/adq-datos-sist-embebidos-imtc",
+          "has_memory": true
+        },
+        {
+          "scope_key": "UANL/ingenieria-en-mecatronica/algebra-lineal-imtc",
+          "has_memory": true
+        },
+        {
+          "scope_key": "UANL/ingenieria-en-mecatronica/algebra-para-ingenieria-imtc",
+          "has_memory": true
+        },
+        {
+          "scope_key": "UANL/ingenieria-en-mecatronica/amplificadores-operacionales-imtc",
+          "has_memory": true
+        }
+      ],
+      "novelty_signals": [
+        "heading_contract",
+        "institutional_identity"
+      ],
+      "derived_from": {
+        "local_memory": true,
+        "ancestor_memory": true,
+        "related_nodes": [
+          "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc",
+          "UANL/ingenieria-en-mecatronica",
+          "UANL",
+          "interinstitucional",
+          "UANL/ingenieria-en-mecatronica/adq-datos-sist-embebidos-imtc",
+          "UANL/ingenieria-en-mecatronica/algebra-lineal-imtc",
+          "UANL/ingenieria-en-mecatronica/algebra-para-ingenieria-imtc",
+          "UANL/ingenieria-en-mecatronica/amplificadores-operacionales-imtc"
+        ],
+        "source_artifacts": [
+          "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc/lab-sist-control-logico-imtc.bib",
+          "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc/reporte-lab-sist-control-logico-imtc-Actividad-1.tex",
+          "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc/reporte-lab-sist-control-logico-imtc.tex"
+        ]
+      },
+      "confidence": {
+        "global": 1.0,
+        "by_section": {
+          "heading_contract": 0.6,
+          "didactic_contract": 0.5,
+          "bibliography_contract": 0.9
+        }
+      }
+    },
+    "detail_planner": {
+      "run_id": "20260710-193406",
+      "scope_key": "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc",
+      "related_scope_keys": [
+        "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc",
+        "UANL/ingenieria-en-mecatronica",
+        "UANL",
+        "interinstitucional",
+        "UANL/ingenieria-en-mecatronica/adq-datos-sist-embebidos-imtc",
+        "UANL/ingenieria-en-mecatronica/algebra-lineal-imtc",
+        "UANL/ingenieria-en-mecatronica/algebra-para-ingenieria-imtc",
+        "UANL/ingenieria-en-mecatronica/amplificadores-operacionales-imtc"
+      ],
+      "novelty_count": 2
+    }
   },
   "curricular_context": {
     "institutional_frame": "",
@@ -184,7 +319,119 @@
         "career": "ingenieria-en-mecatronica",
         "subject": "lab-sist-control-logico-imtc",
         "activity": "",
-        "parent_key": "UANL/ingenieria-en-mecatronica"
+        "parent_key": "UANL/ingenieria-en-mecatronica",
+        "editing_details": {
+          "heading_contract": {
+            "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
+            "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
+            "subject_rule": "Actividad 1 - lab-sist-control-logico-imtc",
+            "scope_label": "lab-sist-control-logico-imtc"
+          },
+          "didactic_contract": {
+            "detected_id": "tabla_didactica",
+            "aliases": [
+              "tabla",
+              "cuadro",
+              "cuadro comparativo",
+              "longtable",
+              "tabular"
+            ],
+            "required_visible_elements": [
+              "título",
+              "encabezados",
+              "filas",
+              "criterio de lectura"
+            ],
+            "preservation_rule": "Si la técnica usa tabla o cuadro, conservar estructura tabular visible con título/caption, encabezados claros, filas completas y una lectura breve; usar longtable, landscape, scriptsize, tabcolsep y arraystretch cuando el contenido sea amplio."
+          },
+          "bibliography_contract": {
+            "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
+            "reference_growth_rule": "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
+            "local_first_rule": "Priorizar bibliografía, programa, notas y memorias editoriales locales; si no alcanzan para validar, buscar fuentes en línea sólidas y registrarlas en .bib con citas visibles en TEX."
+          },
+          "institutional_identity": {
+            "institution": "UANL",
+            "career": "ingenieria-en-mecatronica",
+            "subject": "lab-sist-control-logico-imtc",
+            "activity": "Actividad 1",
+            "seed_scope_key": "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc/actividad-1"
+          },
+          "compilation_fixes": [],
+          "quality_rules": [
+            "título sin Actividad #; subtítulo compacto; subject/equivalente = Actividad # - Materia",
+            "la forma visible del producto respeta cuestionario, foro, caso, mapa, tabla u otro contrato",
+            "todas las citas visibles tienen entrada .bib, no hay entradas inventadas y el número de referencias aumenta cuando el corpus previo no sostiene todas las respuestas",
+            "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
+            "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
+            "sin placeholders, con contexto/problema integrado en introducción, análisis propio integrado en conclusión, postura personal integrada en conclusión y transferencia profesional",
+            "sin metadiscurso de ejecución: no hablar de 'esta actividad', 'producto solicitado', 'se presenta' o 'la técnica usada' como narrador externo; hablar del tema, problema, concepto, cuestionario, caso o tabla según corresponda",
+            "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
+            "si el producto es cuestionario, la sección Desarrollo debe estar ocupada por el cuestionario con su título; el marco conceptual va dentro de esa misma sección, no como sección/subsección independiente salvo consigna expresa",
+            "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa",
+            "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
+            "En el cuerpo final no narrar el proceso de elaboración ni mencionar la palabra 'Actividad' como sujeto del análisis; en su lugar hablar del tema, problema, concepto, cuestionario, caso, tabla o fenómeno estudiado.",
+            "El contexto y el problema se integran en la introducción; no crear una subsección visible 'Contexto y problema' salvo instrucción expresa de la consigna.",
+            "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa."
+          ],
+          "exceptions": [],
+          "learned_from": [
+            "{'scope_key': 'UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc', 'has_memory': True}",
+            "{'scope_key': 'UANL/ingenieria-en-mecatronica', 'has_memory': True}",
+            "{'scope_key': 'UANL', 'has_memory': True}",
+            "{'scope_key': 'interinstitucional', 'has_memory': True}",
+            "{'scope_key': 'UANL/ingenieria-en-mecatronica/adq-datos-sist-embebidos-imtc', 'has_memory': True}",
+            "{'scope_key': 'UANL/ingenieria-en-mecatronica/algebra-lineal-imtc', 'has_memory': True}",
+            "{'scope_key': 'UANL/ingenieria-en-mecatronica/algebra-para-ingenieria-imtc', 'has_memory': True}",
+            "{'scope_key': 'UANL/ingenieria-en-mecatronica/amplificadores-operacionales-imtc', 'has_memory': True}"
+          ],
+          "novelty_signals": [
+            "bootstrap",
+            "heading_contract",
+            "institutional_identity"
+          ],
+          "derived_from": {
+            "local_memory": true,
+            "ancestor_memory": true,
+            "related_nodes": [
+              "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc",
+              "UANL/ingenieria-en-mecatronica",
+              "UANL",
+              "interinstitucional",
+              "UANL/ingenieria-en-mecatronica/adq-datos-sist-embebidos-imtc",
+              "UANL/ingenieria-en-mecatronica/algebra-lineal-imtc",
+              "UANL/ingenieria-en-mecatronica/algebra-para-ingenieria-imtc",
+              "UANL/ingenieria-en-mecatronica/amplificadores-operacionales-imtc"
+            ],
+            "source_artifacts": [
+              "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc/lab-sist-control-logico-imtc.bib",
+              "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc/reporte-lab-sist-control-logico-imtc-Actividad-1.tex",
+              "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc/reporte-lab-sist-control-logico-imtc.tex"
+            ]
+          },
+          "confidence": {
+            "global": 1.0,
+            "by_section": {
+              "heading_contract": 0.6,
+              "didactic_contract": 0.5,
+              "bibliography_contract": 0.9
+            }
+          }
+        },
+        "detail_planner": {
+          "run_id": "20260710-193406",
+          "scope_key": "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc",
+          "related_scope_keys": [
+            "UANL/ingenieria-en-mecatronica/lab-sist-control-logico-imtc",
+            "UANL/ingenieria-en-mecatronica",
+            "UANL",
+            "interinstitucional",
+            "UANL/ingenieria-en-mecatronica/adq-datos-sist-embebidos-imtc",
+            "UANL/ingenieria-en-mecatronica/algebra-lineal-imtc",
+            "UANL/ingenieria-en-mecatronica/algebra-para-ingenieria-imtc",
+            "UANL/ingenieria-en-mecatronica/amplificadores-operacionales-imtc"
+          ],
+          "novelty_count": 2
+        }
       },
       "curricular_context": {
         "institutional_frame": "",
