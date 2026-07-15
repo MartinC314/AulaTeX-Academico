@@ -1,3 +1,11 @@
+﻿# Programa de asignatura - Garantías Constitucionales
+
+Fuente PDF: Programa de asignatura - Garantías constitucionales.pdf  
+Extracción: pdftotext -layout -enc UTF-8  
+Fecha de incorporación AulaTeX: 2026-07-09
+
+## Texto extraído
+
                                    Coordinación Académica y de Investigación
 
 
