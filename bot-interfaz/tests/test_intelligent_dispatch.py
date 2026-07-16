@@ -126,6 +126,27 @@ def test_run_intelligent_dispatch_executes_engine(tmp_path: Path, monkeypatch) -
     assert "Objetivos planificados: 3" in summary
 
 
+def test_plan_intelligent_dispatch_normalizes_gpt_5_6_engine_aliases(tmp_path: Path, monkeypatch) -> None:
+    settings = make_settings(tmp_path)
+    monkeypatch.setattr(
+        "src.intelligent_dispatch.invoke_chat",
+        lambda *args, **kwargs: json.dumps(
+            {
+                "kind": "intelligent-engine",
+                "request": {
+                    "target": ".",
+                    "engines": ["sol", "GPT-5.6-Luna", "terra"],
+                },
+            },
+            ensure_ascii=False,
+        ),
+    )
+
+    plan = plan_intelligent_dispatch("planifica con sol, luna y terra", settings)
+
+    assert plan.request.engines == ("GPT-5.6-SOL", "GPT-5.6-Luna", "GPT-5.6-Terra")
+
+
 def test_plan_intelligent_dispatch_builds_agent_request(tmp_path: Path, monkeypatch) -> None:
     settings = make_settings(tmp_path)
 

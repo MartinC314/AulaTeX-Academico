@@ -39,6 +39,12 @@ ENGINE_LABEL_BY_PROVIDER = {
     "claude-foundry": "Claude Foundry",
 }
 ENGINE_NAME_ALIASES = {
+    "sol": "GPT-5.6-SOL",
+    "gpt-5.6-sol": "GPT-5.6-SOL",
+    "luna": "GPT-5.6-Luna",
+    "gpt-5.6-luna": "GPT-5.6-Luna",
+    "terra": "GPT-5.6-Terra",
+    "gpt-5.6-terra": "GPT-5.6-Terra",
     "codex": "Codex",
     "gpt-pro": "GPT-Pro",
     "gpt pro": "GPT-Pro",
@@ -78,7 +84,7 @@ Reglas:
 - max_cycles debe ser entero entre 1 y 12.
 - include_reports=false si el usuario pide solo presentaciones.
 - include_presentations=false si el usuario pide solo reportes.
-- engines debe contener solo estos nombres exactos cuando el usuario los pida: Codex, Auto (model-router), GPT-Pro, Claude Foundry.
+- engines debe contener solo estos nombres exactos cuando el usuario los pida: GPT-5.6-SOL, GPT-5.6-Luna, GPT-5.6-Terra, Codex, Auto (model-router), GPT-Pro, Claude Foundry.
 - Si el usuario no pide motores concretos, deja engines como lista vacia.
 - No inventes rutas inexistentes si la instruccion no alcanza para resolverlas.
 - Responde exclusivamente con JSON valido, sin Markdown ni explicaciones.
