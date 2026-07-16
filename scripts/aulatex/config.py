@@ -8,6 +8,9 @@ from pathlib import Path
 LLM_ENGINES = (
     "Auto (model-router)",
     "Claude Foundry",
+    "GPT-5.6-SOL",
+    "GPT-5.6-Luna",
+    "GPT-5.6-Terra",
     "GPT-Pro",
     "Codex",
 )
@@ -15,6 +18,9 @@ LLM_ENGINES = (
 ENGINE_ENV_PREFIX = {
     "Auto (model-router)": "MODEL_ROUTER",
     "Claude Foundry": "ANTHROPIC_FOUNDRY",
+    "GPT-5.6-SOL": "AZURE_OPENAI_GPT_5_6_SOL",
+    "GPT-5.6-Luna": "AZURE_OPENAI_GPT_5_6_LUNA",
+    "GPT-5.6-Terra": "AZURE_OPENAI_GPT_5_6_TERRA",
     "GPT-Pro": "GPT_PRO",
     "Codex": "CODEX",
 }

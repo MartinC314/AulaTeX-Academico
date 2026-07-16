@@ -19,7 +19,15 @@ class IntelligentEngineRequest:
     audit_path: str = ""
     include_reports: bool = True
     include_presentations: bool = True
-    engines: tuple[str, ...] = ("Codex", "Auto (model-router)", "GPT-Pro", "Claude Foundry")
+    engines: tuple[str, ...] = (
+        "GPT-5.6-SOL",
+        "GPT-5.6-Luna",
+        "GPT-5.6-Terra",
+        "Codex",
+        "Auto (model-router)",
+        "GPT-Pro",
+        "Claude Foundry",
+    )
 
 
 @dataclass(frozen=True)
@@ -275,6 +283,7 @@ class IntelligentEngine:
                         "fuentes contabilidad financiera ciclo contable partida doble estados financieros control interno NIF",
                         "--iterations",
                         "2",
+                        *self._engine_cli_args(request),
                     ],
                     blocking=False,
                 )
@@ -315,6 +324,7 @@ class IntelligentEngine:
                         "materia",
                         "--propagation-mode",
                         "local",
+                        *self._engine_cli_args(request),
                     ],
                     blocking=False,
                 )
@@ -357,6 +367,7 @@ class IntelligentEngine:
                         "--no-reports",
                         "--max-targets",
                         "1",
+                        *self._engine_cli_args(request),
                     ],
                     blocking=False,
                 )
@@ -390,6 +401,9 @@ class IntelligentEngine:
             "rationale": rationale,
             "command": command,
         }
+
+    def _engine_cli_args(self, request: IntelligentEngineRequest) -> list[str]:
+        return [argument for engine in request.engines for argument in ("--engine", engine)]
 
     def _build_architecture_contract(self, request: IntelligentEngineRequest) -> dict[str, Any]:
         return {

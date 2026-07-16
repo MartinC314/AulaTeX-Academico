@@ -835,7 +835,7 @@ def main(argv: list[str] | None = None) -> None:
                 audit_path=args.audit,
                 include_reports=not bool(args.no_reports),
                 include_presentations=not bool(args.no_presentations),
-                engines=tuple(args.engine or ["Codex", "Auto (model-router)", "GPT-Pro", "Claude Foundry"]),
+                engines=tuple(args.engine or IntelligentEngineRequest().engines),
             )
         )
         print(
