@@ -1,12 +1,14 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import subprocess
 import sys
 from dataclasses import dataclass
 from pathlib import Path
 
+from .config import load_aulatex_env
 from .workspace import AulaTeXWorkspace, EditorialScope
 
 
@@ -112,6 +114,7 @@ class ExtractorAdapter:
         return "\n".join(lines)
 
     def run(self, request: ExtractorRequest) -> ExtractorRunResult:
+        load_aulatex_env(override=False)
         resolved = self._resolve_request(request)
         if resolved.missing_inputs and not request.probe_only:
             missing = ", ".join(resolved.missing_inputs)
@@ -125,6 +128,7 @@ class ExtractorAdapter:
         proc = subprocess.run(
             command,
             cwd=str(self.extractor_root),
+            env={**os.environ, "PYTHONIOENCODING": "utf-8", "PYTHONUTF8": "1"},
             capture_output=True,
             text=True,
             encoding="utf-8",

@@ -83,6 +83,7 @@ class ActivityObserver:
             extractor_state=extractor_state,
             extractor_summary=extractor_summary,
             extractor_concepts=extractor_concepts,
+            editing_details=editing_details,
             active_tex=active_tex,
             compile_result=compile_result,
         )
@@ -128,7 +129,10 @@ class ActivityObserver:
             f"*actividad_{int(activity_number)}.tex",
         ]
         for pattern in patterns:
-            matches = sorted(path for path in target_root.glob(pattern) if path.is_file())
+            matches = sorted(
+                (path for path in target_root.glob(pattern) if path.is_file()),
+                key=lambda path: (not path.name.lower().startswith("reporte-"), path.name.lower()),
+            )
             if matches:
                 return matches[0]
         activity_re = re.compile(rf"actividad[-_\s]*0?{int(activity_number)}", re.IGNORECASE)
@@ -213,6 +217,7 @@ class ActivityObserver:
         extractor_state: dict[str, Any],
         extractor_summary: dict[str, Any] | list[Any] | None,
         extractor_concepts: dict[str, Any] | list[Any] | None,
+        editing_details: dict[str, Any],
         active_tex: str,
         compile_result: dict[str, Any],
     ) -> dict[str, Any]:

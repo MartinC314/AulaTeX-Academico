@@ -290,7 +290,7 @@ def main(argv: list[str] | None = None) -> None:
     if args.motor in {"azure", "openai"}:
         print("      Nota: este motor envía fragmentos del corpus al proveedor para calcular embeddings.")
     if args.motor == "anthropicfoundry":
-        print("      Nota: Anthropiс Foundry se usará para tareas de chat/normalización; la recuperación de citas se mantiene en motor local TF-IDF.")
+        print("      Nota: Anthropic Foundry se usará para tareas de chat/normalización; la recuperación de citas se mantiene en motor local TF-IDF.")
     engine, threshold, effective_motor = _build_engine_with_fallback(args, fragments)
     if effective_motor != args.motor:
         print(f"      Motor efectivo: {effective_motor}")

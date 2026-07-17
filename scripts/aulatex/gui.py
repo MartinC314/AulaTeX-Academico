@@ -14,7 +14,13 @@ from .activity_monitor import ActivityMonitor, ActivityMonitorRequest
 from .agent import AgentRequest, AulaTeXAgent
 from .agentic_patterns import pattern_catalog_markdown
 from .chat_sessions import AulaTeXChatStore, MULTIMOTOR_SEVERITY_LABELS, multimotor_severity_label
-from .config import credential_status, diagnostic_metrics_enabled
+from .config import (
+    credential_catalog,
+    credential_status,
+    diagnostic_metrics_enabled,
+    read_env_values,
+    write_env_values,
+)
 from .construction import ConstructionBuilder, ConstructionEvent, ConstructionRequest, ConstructionStore
 from .editorial_memory import (
     EDITORIAL_LEVELS,
@@ -137,6 +143,7 @@ class AulaTeXApp(tk.Tk):
         self.investigation_tab = ttk.Frame(notebook, padding=12)
         self.extractor_tab = ttk.Frame(notebook, padding=12)
         self.compile_tab = ttk.Frame(notebook, padding=12)
+        self.credentials_tab = ttk.Frame(notebook, padding=12)
 
         notebook.add(self.panel_tab, text="Panel")
         notebook.add(self.llm_tab, text="LLM")
@@ -147,6 +154,7 @@ class AulaTeXApp(tk.Tk):
         notebook.add(self.investigation_tab, text="Investigación")
         notebook.add(self.extractor_tab, text="Extractor")
         notebook.add(self.compile_tab, text="Compilar")
+        notebook.add(self.credentials_tab, text="Credenciales")
 
         self._build_panel_tab()
         self._build_llm_tab()
@@ -157,6 +165,7 @@ class AulaTeXApp(tk.Tk):
         self._build_investigation_tab()
         self._build_extractor_tab()
         self._build_compile_tab()
+        self._build_credentials_tab()
 
     def _build_panel_tab(self) -> None:
         self.panel_tab.columnconfigure(1, weight=1)
@@ -191,6 +200,166 @@ class AulaTeXApp(tk.Tk):
             "Cargando arbol editorial. La ventana ya esta lista y el indice se completara en segundo plano.\n",
         )
         self.after(50, self._refresh_tree)
+
+    def _build_credentials_tab(self) -> None:
+        self.credentials_tab.columnconfigure(0, weight=1)
+        self.credentials_tab.rowconfigure(2, weight=1)
+
+        header = ttk.Frame(self.credentials_tab)
+        header.grid(row=0, column=0, sticky="ew")
+        header.columnconfigure(0, weight=1)
+        ttk.Label(
+            header,
+            text="Configura y embebe las credenciales del entorno directamente en el archivo .env del workspace.",
+            wraplength=760,
+            justify="left",
+        ).grid(row=0, column=0, sticky="w")
+        ttk.Button(header, text="Como funciona", command=self._show_credentials_help).grid(row=0, column=1, sticky="e")
+
+        path_row = ttk.Frame(self.credentials_tab)
+        path_row.grid(row=1, column=0, sticky="ew", pady=(6, 8))
+        path_row.columnconfigure(1, weight=1)
+        ttk.Label(path_row, text="Archivo .env").grid(row=0, column=0, sticky="w")
+        ttk.Label(path_row, text=str(self.llm.env_path)).grid(row=0, column=1, sticky="w", padx=(8, 0))
+
+        canvas = tk.Canvas(self.credentials_tab, highlightthickness=0)
+        canvas.grid(row=2, column=0, sticky="nsew")
+        scrollbar = ttk.Scrollbar(self.credentials_tab, orient="vertical", command=canvas.yview)
+        scrollbar.grid(row=2, column=1, sticky="ns")
+        canvas.configure(yscrollcommand=scrollbar.set)
+
+        inner = ttk.Frame(canvas)
+        inner_window = canvas.create_window((0, 0), window=inner, anchor="nw")
+        inner.columnconfigure(0, weight=1)
+
+        def _on_inner_configure(_event=None) -> None:
+            canvas.configure(scrollregion=canvas.bbox("all"))
+
+        def _on_canvas_configure(event) -> None:
+            canvas.itemconfigure(inner_window, width=event.width)
+
+        inner.bind("<Configure>", _on_inner_configure)
+        canvas.bind("<Configure>", _on_canvas_configure)
+
+        self._credential_vars: dict[str, tk.StringVar] = {}
+        self._credential_show_vars: dict[str, tk.BooleanVar] = {}
+        self._credential_status_labels: dict[str, ttk.Label] = {}
+
+        catalog = credential_catalog()
+        stored = read_env_values(
+            [field.key for group in catalog for field in group.fields],
+            self.llm.env_path,
+        )
+
+        for row_index, group in enumerate(catalog):
+            frame = ttk.LabelFrame(inner, text=group.title, padding=10)
+            frame.grid(row=row_index, column=0, sticky="ew", pady=(0, 10), padx=(0, 4))
+            frame.columnconfigure(1, weight=1)
+
+            status_label = ttk.Label(frame, text="", foreground="#616161")
+            status_label.grid(row=0, column=0, columnspan=3, sticky="w", pady=(0, 4))
+            self._credential_status_labels[group.group_id] = status_label
+            if group.description:
+                ttk.Label(frame, text=group.description, foreground="#616161").grid(
+                    row=1, column=0, columnspan=3, sticky="w", pady=(0, 6)
+                )
+
+            for field_index, field in enumerate(group.fields):
+                grid_row = field_index + 2
+                label_text = field.label + ("" if field.required else "  (opcional)")
+                ttk.Label(frame, text=label_text).grid(row=grid_row, column=0, sticky="w", pady=2)
+                var = tk.StringVar(value=stored.get(field.key, ""))
+                self._credential_vars[field.key] = var
+                show_char = "" if not field.secret else "*"
+                entry = ttk.Entry(frame, textvariable=var, show=show_char)
+                entry.grid(row=grid_row, column=1, sticky="ew", padx=(8, 8), pady=2)
+                if field.help:
+                    self._attach_tooltip(entry, field.help)
+                if field.secret:
+                    show_var = tk.BooleanVar(value=False)
+                    self._credential_show_vars[field.key] = show_var
+                    ttk.Checkbutton(
+                        frame,
+                        text="Ver",
+                        variable=show_var,
+                        command=lambda e=entry, v=show_var: e.configure(show="" if v.get() else "*"),
+                    ).grid(row=grid_row, column=2, sticky="w", pady=2)
+
+        actions = ttk.Frame(self.credentials_tab)
+        actions.grid(row=3, column=0, sticky="ew", pady=(8, 0))
+        self.credentials_save_button = ttk.Button(actions, text="Guardar credenciales", command=self._save_credentials)
+        self.credentials_save_button.grid(row=0, column=0, sticky="w")
+        ttk.Button(actions, text="Recargar desde .env", command=self._reload_credentials).grid(row=0, column=1, sticky="w", padx=(8, 0))
+        ttk.Button(actions, text="Verificar estado", command=self._refresh_credential_status).grid(row=0, column=2, sticky="w", padx=(8, 0))
+
+        self.credentials_status_text = ttk.Label(self.credentials_tab, text="", foreground="#2e7d32")
+        self.credentials_status_text.grid(row=4, column=0, sticky="w", pady=(6, 0))
+
+        self._refresh_credential_status()
+
+    def _show_credentials_help(self) -> None:
+        messagebox.showinfo(
+            "AulaTeX - Credenciales",
+            "1. Cada tarjeta agrupa las claves de un motor LLM o servicio (voz, traducción, video).\n"
+            "2. Los campos secretos aparecen enmascarados; usa 'Ver' para revisarlos.\n"
+            "3. 'Guardar credenciales' escribe los valores en el archivo .env del workspace,\n"
+            "   preservando comentarios y el orden existente; los campos vacíos no borran claves.\n"
+            "4. 'Recargar desde .env' descarta los cambios sin guardar y vuelve a leer el archivo.\n"
+            "5. 'Verificar estado' recalcula qué motores tienen sus tres claves obligatorias completas.\n"
+            "6. Las credenciales quedan embebidas localmente; no se envían a ningún servicio al guardarlas.",
+        )
+
+    def _refresh_credential_status(self) -> None:
+        statuses = {status.prefix: status for status in credential_status()}
+        prefix_by_group = {
+            "model_router": "MODEL_ROUTER",
+            "claude_foundry": "ANTHROPIC_FOUNDRY",
+            "gpt_5_6_sol": "AZURE_OPENAI_GPT_5_6_SOL",
+            "gpt_5_6_luna": "AZURE_OPENAI_GPT_5_6_LUNA",
+            "gpt_5_6_terra": "AZURE_OPENAI_GPT_5_6_TERRA",
+            "gpt_pro": "GPT_PRO",
+            "codex": "CODEX",
+        }
+        for group_id, label in self._credential_status_labels.items():
+            prefix = prefix_by_group.get(group_id)
+            if prefix and prefix in statuses:
+                status = statuses[prefix]
+                if status.ok:
+                    label.configure(text="Completo", foreground="#2e7d32")
+                else:
+                    missing = ", ".join(s.rsplit("_", 1)[-1] for s in status.missing)
+                    label.configure(text=f"Faltan: {missing}", foreground="#c62828")
+            else:
+                filled = any(
+                    self._credential_vars[field.key].get().strip()
+                    for group in credential_catalog()
+                    if group.group_id == group_id
+                    for field in group.fields
+                )
+                label.configure(
+                    text="Configurado" if filled else "Sin configurar",
+                    foreground="#2e7d32" if filled else "#616161",
+                )
+
+    def _reload_credentials(self) -> None:
+        stored = read_env_values(list(self._credential_vars.keys()), self.llm.env_path)
+        for key, var in self._credential_vars.items():
+            var.set(stored.get(key, ""))
+        self.credentials_status_text.configure(text="Valores recargados desde el archivo .env.", foreground="#616161")
+        self._refresh_credential_status()
+
+    def _save_credentials(self) -> None:
+        values = {key: var.get() for key, var in self._credential_vars.items()}
+        try:
+            written_path = write_env_values(values, self.llm.env_path)
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror("AulaTeX", f"No se pudieron guardar las credenciales: {exc}")
+            return
+        self.credentials_status_text.configure(
+            text=f"Credenciales guardadas en {written_path}",
+            foreground="#2e7d32",
+        )
+        self._refresh_credential_status()
 
     def _build_llm_tab(self) -> None:
         self.llm_tab.columnconfigure(0, weight=1)
