@@ -40,7 +40,8 @@
     "Nodo canónico local: Garantías Constitucionales, Actividad 3.",
     "Estado técnico actual registrado: 19837 caracteres y 15 bloques.",
     "El corpus local integra README, programa analítico, bibliografía, reporte y presentación.",
-    "La memoria se canoniza por unión y deduplicación, sin eliminar reglas útiles."
+    "La memoria se canoniza por unión y deduplicación, sin eliminar reglas útiles.",
+    "Salida sin JSON parseable desde GPT-5.6-Terra para Actividad 3"
   ],
   "identity_rules": [
     "Conservar la identidad institucional de la UnADM.",
@@ -69,7 +70,8 @@
     "Mostrar un título visible sin la expresión Actividad 3.",
     "Marcar como supuesto cualquier dato no confirmado en fuentes locales.",
     "Orientar el texto a la práctica jurídica y la defensa de derechos.",
-    "Orientar el texto a la defensa de derechos, la justicia y el desarrollo social."
+    "Orientar el texto a la defensa de derechos, la justicia y el desarrollo social.",
+    "Fuente provisional: GPT-5.6-Terra desde Actividad 3"
   ],
   "structure_rules": [
     "Integrar contexto y problema en la introducción.",
@@ -1521,7 +1523,8 @@
         "alvarezIcazaDerechosMexico: derechos humanos en México.",
         "lopezMapaConceptual2022: forma y función del mapa conceptual.",
         "cpeum2026: fundamento constitucional potencial.",
-        "normasApaReferencias2020: consistencia de referencias APA."
+        "normasApaReferencias2020: consistencia de referencias APA.",
+        "Salida sin JSON parseable desde GPT-5.6-Terra para Actividad 3"
       ],
       "relations": [
         {
@@ -2189,7 +2192,7 @@
         "El TEX primario cita marcanoSalazarDerechosHumanos": 1,
         "El TEX primario cita lopezMapaConceptual2022": 1,
         "La memoria local fija el contrato de encabezados, didáctica, bibliografía y calidad": 1,
-        "Revisar respuesta no estructurada antes de aplicar aguas abajo": 3,
+        "Revisar respuesta no estructurada antes de aplicar aguas abajo": 4,
         "Nodo canónico local de Garantías Constitucionales: Actividad 3": 2,
         "Producto principal: mapa conceptual del marco teórico de los derechos humanos": 4,
         "TEX primario reconstruible: reporte-garantias-constitucionales-Actividad-3.tex": 4,
