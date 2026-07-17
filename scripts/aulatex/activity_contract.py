@@ -63,6 +63,12 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
             "stop_conditions": ("activity_contract.passed", "pdf_fresh", "sin citas indefinidas", "sin placeholders", "consensus_score suficiente"),
         },
         {
+            "id": "align_report_and_presentation",
+            "goal": "Cuando existan reporte y presentación de la misma actividad, alinear la presentación con el reporte: reflejar conceptos, profundidad, fuentes y conclusión, conservando el estilo Beamer institucional y añadiendo una diapositiva de referencias APA y declaración de IA si aplica.",
+            "actions": ("comparar reporte vs presentación", "actualizar diapositivas desfasadas", "espejar estructura y fuentes", "compilar presentación", "verificar visualmente"),
+            "outputs": ("presentacion_alineada", "presentacion_pdf"),
+        },
+        {
             "id": "promote_artifacts",
             "goal": "Persistir TEX, PDF, .bib, extractor, memoria, manifiestos, reportes y bitácora de decisión.",
             "outputs": ("tex_final", "pdf_final", "memory", "manifest", "quality_report"),
@@ -85,6 +91,7 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
         "development_section": "si el producto es cuestionario, la sección Desarrollo debe estar ocupada por el cuestionario con su título; el marco conceptual va dentro de esa misma sección, no como sección/subsección independiente salvo consigna expresa",
         "conclusion": "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa",
         "compile": "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
+        "report_presentation_alignment": "cuando existan reporte y presentación de la misma actividad, la presentación debe reflejar el contenido, la profundidad, los conceptos, las fuentes y la conclusión del reporte, con estilo Beamer institucional y una diapositiva final de referencias APA y declaración de IA si el reporte la incluye",
     },
     "source_validation_rules": {
         "questionnaire_answers": (
@@ -131,6 +138,83 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
         ),
         "prefer_theme_language": "Usar 'el tema', 'el problema', 'el cuestionario', 'la tabla', 'el caso' o el nombre del concepto antes que 'la actividad'.",
     },
+    "compilation_rules": {
+        "orphan_bbl": (
+            "Si las citas salen como [?] o no aparece la lista de referencias, revisar si existe un .bbl HUÉRFANO y VACÍO junto al .tex "
+            "(latexmk lo marca como 'Foreign .bbl' y no lo regenera). Solución: borrar el .bbl y .aux huérfanos y recompilar con "
+            "latexmk -bibtex, asegurando TEXINPUTS y BIBINPUTS con la carpeta de la materia."
+        ),
+        "extractor_deps": (
+            "El extractor scripts/extractor-conceptos-ideas requiere en el .venv: scikit-learn, pandas, pymupdf, python-docx, openpyxl, "
+            "numpy, python-dotenv y anthropic. Ante ModuleNotFoundError, instalar la dependencia faltante."
+        ),
+        "extractor_env": (
+            "El adaptador del extractor debe cargar scripts/aulatex.env y exportar PYTHONUTF8=1 al subproceso para heredar credenciales "
+            "Foundry y evitar UnicodeEncodeError en Windows (cp1252)."
+        ),
+        "encoding_safety": (
+            "NUNCA editar archivos .tex con PowerShell (Set-Content / -replace): corrompe la codificación UTF-8 (mojibake doble). "
+            "Usar siempre herramientas de edición que preserven UTF-8. Si ocurre mojibake, reparar con reemplazos dirigidos "
+            "(Ã¡->á, Âº->º, â€\"->—) por Python, no re-decodificando todo el archivo."
+        ),
+        "build_command": (
+            "Para builds con bibliografía y múltiples pasadas estables: cmd /c \"latexmk -f -pdf -bibtex -interaction=nonstopmode "
+            "-output-directory=.build\\latex\\aux <src>\" con TEXINPUTS='.;<repo>\\base\\Plantilla-Informe;<carpeta-materia>;' y "
+            "BIBINPUTS='<carpeta-materia>;'; luego copiar el PDF de .build\\latex\\aux al destino."
+        ),
+        "page_control": (
+            "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre "
+            "abre página nueva: compactar el contenido previo para evitar huecos."
+        ),
+        "verify_visually": (
+            "Verificar el resultado renderizando páginas a PNG (pdftoppm) e inspeccionando el diagrama, no solo el returncode de compilación."
+        ),
+    },
+    "iterative_improvement_rules": {
+        "avoid_full_cycle_agent": (
+            "Para MEJORAR incrementalmente contenido (agregar conceptos/relaciones) NO usar 'agent --cycle-mode full' con muchos ciclos: "
+            "no es observable (guarda todo al final) y es vulnerable a cuelgues de red sin timeout (puede colgarse horas)."
+        ),
+        "prefer_observable_monitor": (
+            "Preferir un bucle observable: activity-monitor (escribe por ciclo, aplica parches verificables, compila y cierra temprano si "
+            "pasa el contrato) o un orquestador dedicado que en cada ciclo llame al LLM con timeout, integre el aporte, compile y revierta si rompe."
+        ),
+        "monitor_note": (
+            "activity-monitor NO agrega conceptos nuevos (sus parches son deterministas: placeholders, criterios, bibliografía). Para "
+            "enriquecer con razonamiento LLM se requiere un orquestador que pida subconceptos nuevos en JSON, deduplique contra lo existente "
+            "y apile con tope por rama para no saturar el layout."
+        ),
+        "tex_target_priority": (
+            "Al observar una actividad con reporte y presentación, priorizar el TEX de reporte (reporte-*) sobre la presentación al resolver "
+            "el objetivo, porque el orden alfabético pondría 'presentacion-' primero."
+        ),
+    },
+    "report_presentation_alignment_rules": {
+        "principle": (
+            "El reporte (reporte-*.tex) es la fuente de verdad; la presentación (presentacion-*.tex) debe reflejar su contenido y nivel de "
+            "profundidad. Cuando el reporte se enriquece (más conceptos, principios, fuentes), la presentación debe actualizarse para no quedar desfasada."
+        ),
+        "content_parity": (
+            "Cada eje/tema desarrollado en el reporte debe tener al menos una diapositiva que lo cubra con el mismo nivel de detalle esencial: "
+            "conceptos clave, subconceptos relevantes, fundamentos normativos y ejemplos jurídicos verificables."
+        ),
+        "structure_mirror": (
+            "La presentación debe reflejar la estructura del reporte: propósito/objetivo, metodología (si aplica), desarrollo por ejes, conclusión "
+            "y una diapositiva final de Referencias (APA 7) más la declaración de uso de IA cuando el reporte la incluya."
+        ),
+        "style_rule": (
+            "Conservar el estilo Beamer institucional (paleta UnADM, frametitle, footline). Usar bloques y columnas para condensar; una idea "
+            "central por diapositiva; negritas para conceptos clave; sin saturar de texto."
+        ),
+        "consistency_checks": (
+            "Verificar que fuentes citadas, principios (universalidad, interdependencia, indivisibilidad, progresividad, no regresión) y "
+            "conceptos jurídicos (pro persona, interpretación conforme, control de convencionalidad, amparo, etc.) coincidan entre reporte y presentación."
+        ),
+        "compile_note": (
+            "La presentación Beamer se compila con el mismo flujo latexmk (TEXINPUTS con la plantilla); verificar el número de diapositivas y "
+            "revisar visualmente que no haya desbordes."
+        ),
+    },
     "recommended_cycle": (
         "editorial-memory local/ascendente/relacionada -> investigation con queries bibliográficas -> extractor/investigation local -> "
         "validación de cuestionario -> investigation online si falta sustento -> expansión .bib + citas visibles -> "
@@ -157,6 +241,35 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
         "aliases": ("mapa conceptual", "conceptos", "diagrama"),
         "required_visible_elements": ("conceptos", "relaciones", "lectura explicativa"),
         "preservation_rule": "Si el producto es mapa conceptual, conservar jerarquía, relaciones y explicación breve de lectura.",
+        "depth_rule": (
+            "Un mapa conceptual sólido no puede ser esquelético: exige raíz + ramas del contenido temático + varios niveles de "
+            "profundidad (subconceptos, subtipos, ejemplos jurídicos, fundamentos normativos y consecuencias). Cada rama debe tener "
+            "al menos 3-4 conceptos; cubrir explícitamente todos los subtemas de la planeación (p. ej. antecedentes, generaciones, "
+            "concepto, principios y garantías) sin omitir ninguno."
+        ),
+        "relations_rule": (
+            "Las flechas deben llevar proposiciones de enlace explícitas (conectores como 'se rige por', 'se hace efectivo con', "
+            "'se clasifica en') y deben existir relaciones cruzadas entre ramas que evidencien interdependencia e indivisibilidad."
+        ),
+        "graphic_rule": (
+            "Construir el diagrama con TikZ jerárquico. Apilar subconceptos DEBAJO de la cola de cada rama (below= del último nodo), "
+            "nunca encimarlos a la derecha ni con posiciones absolutas que desborden. Escalar el diagrama con \\resizebox{!}{0.80\\textheight} "
+            "dentro de un entorno landscape para llenar la página sin desbordar; NO usar \\resizebox{\\linewidth}{!} porque desborda en alto."
+        ),
+        "structure_rule": (
+            "Orden recomendado dentro de la sección Mapa conceptual: (2.1) Metodología de construcción (texto justificado con los pasos), "
+            "(2.2) Representación gráfica con el diagrama en su propia página landscape, (2.3) Desarrollo de las ramas. La metodología va ANTES "
+            "del diagrama; compactar la lista para que quepa en una página y el mapa entre limpio en la siguiente sin hueco visible."
+        ),
+        "apa_ia_rule": (
+            "Rúbrica de mapa conceptual exige citación APA 7 y, si se usó IA, declaración de uso de IA conforme a lineamientos UnADM. "
+            "Las referencias APA y la declaración de IA NO deben amontonarse al pie del diagrama: van en la sección de Referencias del final "
+            "(la declaración de IA como sección propia antes de \\bibliography)."
+        ),
+        "closure_rule": (
+            "La conclusión puede llevar \\clearpage para iniciar en su propia página cuando el documento lo amerite; integra síntesis, "
+            "análisis propio y postura personal."
+        ),
     },
     "tabla_didactica": {
         "aliases": ("tabla", "cuadro", "cuadro comparativo", "longtable", "tabular"),
