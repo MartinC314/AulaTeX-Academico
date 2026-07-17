@@ -390,7 +390,7 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "UnADM",
+        "subject_rule": "Actividad 3 - UnADM",
         "scope_label": "UnADM"
       },
       "didactic_contract": {
@@ -408,8 +408,8 @@
         "institution": "UnADM",
         "career": "",
         "subject": "",
-        "activity": "",
-        "seed_scope_key": "UAS"
+        "activity": "Actividad 3",
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-3"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -436,7 +436,7 @@
         },
         {
           "scope_key": "interinstitucional",
-          "has_memory": true
+          "has_memory": false
         },
         {
           "scope_key": "IIIEPE",
@@ -463,9 +463,7 @@
           "has_memory": true
         }
       ],
-      "novelty_signals": [
-        "institutional_identity"
-      ],
+      "novelty_signals": [],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -495,7 +493,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260710-200154",
+      "run_id": "20260717-155455",
       "scope_key": "UnADM",
       "related_scope_keys": [
         "UnADM",
@@ -507,7 +505,7 @@
         "UCNL",
         "UnADM/licenciatura-en-derecho-unadm"
       ],
-      "novelty_count": 1
+      "novelty_count": 0
     }
   },
   "curricular_context": {},

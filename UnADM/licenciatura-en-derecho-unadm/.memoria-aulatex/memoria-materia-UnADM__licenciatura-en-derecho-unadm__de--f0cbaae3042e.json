@@ -640,7 +640,8 @@
     "Analisis propio y postura academica.",
     "Conclusion transferible a la practica juridica.",
     "Universidad Abierta y a Distancia de Mexico :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
-    "Malla curricular de la Licenciatura en Derecho :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib"
+    "Malla curricular de la Licenciatura en Derecho :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+    "Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib"
   ],
   "section_titles": [
     "Encuadre de la asignatura",
@@ -649,10 +650,23 @@
     "Checklist editorial",
     "Conclusion editable"
   ],
-  "citations": [],
+  "citations": [
+    "unadmSitioWeb",
+    "unadmMallaDerecho2024",
+    "cicloARefuerzo03",
+    "cicloARefuerzo04",
+    "cicloARefuerzo05",
+    "cicloARefuerzo06"
+  ],
   "bibliography_index": [
     "unadmSitioWeb :: Universidad Abierta y a Distancia de Mexico :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
-    "unadmMallaDerecho2024 :: Malla curricular de la Licenciatura en Derecho :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib"
+    "unadmMallaDerecho2024 :: Malla curricular de la Licenciatura en Derecho :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+    "cicloARefuerzo03 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+    "cicloARefuerzo04 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+    "cicloARefuerzo05 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+    "cicloARefuerzo06 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+    "cicloARefuerzo07 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+    "cicloARefuerzo08 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib"
   ],
   "node_metadata": {
     "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde",
@@ -668,7 +682,7 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "derecho-administrativo-y-control-lde",
+        "subject_rule": "Actividad 2 - derecho-administrativo-y-control-lde",
         "scope_label": "derecho-administrativo-y-control-lde"
       },
       "didactic_contract": {
@@ -694,8 +708,8 @@
         "institution": "UnADM",
         "career": "licenciatura-en-derecho-unadm",
         "subject": "derecho-administrativo-y-control-lde",
-        "activity": "",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/teoria-del-estado-y-constitucion-lde"
+        "activity": "Actividad 2",
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -730,7 +744,7 @@
         },
         {
           "scope_key": "interinstitucional",
-          "has_memory": true
+          "has_memory": false
         },
         {
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
@@ -750,6 +764,7 @@
         }
       ],
       "novelty_signals": [
+        "heading_contract",
         "institutional_identity"
       ],
       "derived_from": {
@@ -782,7 +797,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260710-191213",
+      "run_id": "20260716-184602",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde",
@@ -794,7 +809,7 @@
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
         "UnADM/licenciatura-en-derecho-unadm/derecho-de-la-contratacion-internacional-lde"
       ],
-      "novelty_count": 1
+      "novelty_count": 2
     }
   },
   "curricular_context": {
@@ -879,7 +894,7 @@
           "heading_contract": {
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-            "subject_rule": "derecho-administrativo-y-control-lde",
+            "subject_rule": "Actividad 2 - derecho-administrativo-y-control-lde",
             "scope_label": "derecho-administrativo-y-control-lde"
           },
           "didactic_contract": {
@@ -905,8 +920,8 @@
             "institution": "UnADM",
             "career": "licenciatura-en-derecho-unadm",
             "subject": "derecho-administrativo-y-control-lde",
-            "activity": "",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/teoria-del-estado-y-constitucion-lde"
+            "activity": "Actividad 2",
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -934,11 +949,13 @@
             "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde', 'has_memory': True}",
             "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde', 'has_memory': True}",
             "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde', 'has_memory': True}",
-            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-de-la-contratacion-internacional-lde', 'has_memory': True}"
+            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-de-la-contratacion-internacional-lde', 'has_memory': True}",
+            "{'scope_key': 'interinstitucional', 'has_memory': False}"
           ],
           "novelty_signals": [
             "bootstrap",
-            "institutional_identity"
+            "institutional_identity",
+            "heading_contract"
           ],
           "derived_from": {
             "local_memory": true,
@@ -970,7 +987,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260710-191213",
+          "run_id": "20260716-184602",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde",
@@ -982,7 +999,7 @@
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
             "UnADM/licenciatura-en-derecho-unadm/derecho-de-la-contratacion-internacional-lde"
           ],
-          "novelty_count": 1
+          "novelty_count": 2
         }
       },
       "curricular_context": {
@@ -1200,7 +1217,9 @@
       "Refuerzo editorial aplicado sobre 57 conceptos y 0 citas.",
       "Se refuerza sincronizacion transversal conservadora entre actividad y materia sin trasladar contenido doctrinal especifico.",
       "Se preserva compresion lossless por union-dedupe y sin regresion.",
-      "ADN sintetizado con 476 conceptos, 2 citas y 145 relaciones."
+      "ADN sintetizado con 476 conceptos, 2 citas y 145 relaciones.",
+      "ADN sintetizado con 477 conceptos, 6 citas y 149 relaciones.",
+      "Memoria de redacción preservada en 30 bloques."
     ],
     "knowledge_graph": {
       "concepts": [
@@ -1679,11 +1698,16 @@
         "Afirmacion -> evidencia -> interpretacion juridica -> implicacion practica",
         "Pregunta guia -> desarrollo -> respuesta juridica transferible",
         "Archivo .bib local con entradas base institucionales",
-        "Plantillas .tex con metadatos de curso y marcadores pendientes"
+        "Plantillas .tex con metadatos de curso y marcadores pendientes",
+        "Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib"
       ],
       "citations": [
         "unadmSitioWeb",
-        "unadmMallaDerecho2024"
+        "unadmMallaDerecho2024",
+        "cicloARefuerzo03",
+        "cicloARefuerzo04",
+        "cicloARefuerzo05",
+        "cicloARefuerzo06"
       ],
       "evidence": [
         "README de materia: ubicacion curricular y pauta editorial.",
@@ -1858,7 +1882,13 @@
         "Validar JSON parseable antes de guardar o propagar memoria.",
         "Verificar citas verificables y prohibir fuentes inventadas.",
         "Validar que README y programa no tengan placeholders, tokens rotos ni rutas corruptas.",
-        "Revisar compatibilidad de reglas heredadas con programa analitico local."
+        "Revisar compatibilidad de reglas heredadas con programa analitico local.",
+        "cicloARefuerzo03 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+        "cicloARefuerzo04 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+        "cicloARefuerzo05 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+        "cicloARefuerzo06 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+        "cicloARefuerzo07 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+        "cicloARefuerzo08 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib"
       ],
       "relations": [
         {
@@ -3028,6 +3058,46 @@
           "weight": 1,
           "justification": "Coaparecen en la misma retroalimentación editorial.",
           "evidence": []
+        },
+        {
+          "source": "Refuerzo editorial Ciclo A",
+          "target": "Tesis de trabajo",
+          "kind": "organizes",
+          "weight": 2,
+          "evidence": [
+            "b0020",
+            "b0021"
+          ]
+        },
+        {
+          "source": "Refuerzo editorial Ciclo A",
+          "target": "Análisis propio",
+          "kind": "organizes",
+          "weight": 2,
+          "evidence": [
+            "b0022",
+            "b0023"
+          ]
+        },
+        {
+          "source": "Refuerzo editorial Ciclo A",
+          "target": "Transferencia profesional",
+          "kind": "organizes",
+          "weight": 2,
+          "evidence": [
+            "b0024",
+            "b0025"
+          ]
+        },
+        {
+          "source": "Refuerzo editorial Ciclo A",
+          "target": "Cierre argumentado",
+          "kind": "organizes",
+          "weight": 2,
+          "evidence": [
+            "b0026",
+            "b0027"
+          ]
         }
       ],
       "concept_weights": {
@@ -3530,8 +3600,8 @@
         "section": "Encuadre de la asignatura",
         "subsection": "",
         "paragraph_heading": "",
-        "text": "Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
-        "latex": "\\pendiente{Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
+        "text": "Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
+        "latex": "\\textit{Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
         "cited_keys": [],
         "bibliography": [],
         "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
@@ -3722,6 +3792,136 @@
         "id": "b0018",
         "order": 18,
         "kind": "section",
+        "section": "Refuerzo editorial Ciclo A",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "* Refuerzo editorial Ciclo A",
+        "latex": "\\section*{Refuerzo editorial Ciclo A}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+      },
+      {
+        "id": "b0019",
+        "order": 19,
+        "kind": "paragraph",
+        "section": "Refuerzo editorial Ciclo A",
+        "subsection": "",
+        "paragraph_heading": "",
+        "text": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+        "latex": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+      },
+      {
+        "id": "b0020",
+        "order": 20,
+        "kind": "subsection",
+        "section": "Refuerzo editorial Ciclo A",
+        "subsection": "Tesis de trabajo",
+        "paragraph_heading": "",
+        "text": "* Tesis de trabajo",
+        "latex": "\\subsection*{Tesis de trabajo}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+      },
+      {
+        "id": "b0021",
+        "order": 21,
+        "kind": "paragraph",
+        "section": "Refuerzo editorial Ciclo A",
+        "subsection": "Tesis de trabajo",
+        "paragraph_heading": "",
+        "text": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+        "latex": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+      },
+      {
+        "id": "b0022",
+        "order": 22,
+        "kind": "subsection",
+        "section": "Refuerzo editorial Ciclo A",
+        "subsection": "Análisis propio",
+        "paragraph_heading": "",
+        "text": "* Análisis propio",
+        "latex": "\\subsection*{Análisis propio}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+      },
+      {
+        "id": "b0023",
+        "order": 23,
+        "kind": "paragraph",
+        "section": "Refuerzo editorial Ciclo A",
+        "subsection": "Análisis propio",
+        "paragraph_heading": "",
+        "text": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+        "latex": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+      },
+      {
+        "id": "b0024",
+        "order": 24,
+        "kind": "subsection",
+        "section": "Refuerzo editorial Ciclo A",
+        "subsection": "Transferencia profesional",
+        "paragraph_heading": "",
+        "text": "* Transferencia profesional",
+        "latex": "\\subsection*{Transferencia profesional}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+      },
+      {
+        "id": "b0025",
+        "order": 25,
+        "kind": "paragraph",
+        "section": "Refuerzo editorial Ciclo A",
+        "subsection": "Transferencia profesional",
+        "paragraph_heading": "",
+        "text": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+        "latex": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+      },
+      {
+        "id": "b0026",
+        "order": 26,
+        "kind": "subsection",
+        "section": "Refuerzo editorial Ciclo A",
+        "subsection": "Cierre argumentado",
+        "paragraph_heading": "",
+        "text": "* Cierre argumentado",
+        "latex": "\\subsection*{Cierre argumentado}",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+      },
+      {
+        "id": "b0027",
+        "order": 27,
+        "kind": "paragraph",
+        "section": "Refuerzo editorial Ciclo A",
+        "subsection": "Cierre argumentado",
+        "paragraph_heading": "",
+        "text": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+        "latex": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+        "cited_keys": [],
+        "bibliography": [],
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+      },
+      {
+        "id": "b0028",
+        "order": 28,
+        "kind": "section",
         "section": "Conclusion editable",
         "subsection": "",
         "paragraph_heading": "",
@@ -3732,21 +3932,21 @@
         "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
       },
       {
-        "id": "b0019",
-        "order": 19,
+        "id": "b0029",
+        "order": 29,
         "kind": "paragraph",
         "section": "Conclusion editable",
         "subsection": "",
         "paragraph_heading": "",
-        "text": "Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
-        "latex": "\\pendiente{Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
+        "text": "Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
+        "latex": "\\textit{Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
         "cited_keys": [],
         "bibliography": [],
         "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
       },
       {
-        "id": "b0020",
-        "order": 20,
+        "id": "b0030",
+        "order": 30,
         "kind": "paragraph",
         "section": "Conclusion editable",
         "subsection": "",
@@ -3758,7 +3958,7 @@
         "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
       }
     ],
-    "reconstructable_source": "\\documentclass[\n  spanish,\n  letterpaper, oneside\n]{article}\n\n\\def\\documenttitle {Plantilla base de Derecho administrativo y control}\n\\def\\documentsubtitle {Actividad X - Derecho administrativo y control}\n\\def\\documentsubject {Licenciatura en Derecho}\n\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Derecho administrativo y control}\n\\def\\coursecode {LDE-S6B1}\n\n\\def\\universityname {Universidad Abierta y a Distancia de Mexico}\n\\def\\universityfaculty {Licenciatura en Derecho}\n\\def\\universitydepartment {Derecho administrativo y control}\n\\def\\universitydepartmentimage {departamentos/UnADM}\n\\def\\universitydepartmentimagecfg {height=1.57cm}\n\\def\\universitylocation {Roma Norte, Ciudad de Mexico}\n\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:}\n    & \\begin{tabular}[t]{l}\n      Martin Jonathan de la Cruz \\\\\n    \\end{tabular} \\\\\n    Matricula: & ES2611202040 \\\\\n    Figura docente: & Nombre por definir \\\\\n    Semestre/Bloque: & 6 / 1 \\\\\n    Tipo/Creditos: & Obligatoria / 8 \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\\usepackage{helvet}\n\\renewcommand{\\familydefault}{\\sfdefault}\n\\usepackage{array}\n\\usepackage{longtable}\n\\usepackage{pdflscape}\n\\usepackage{tikz}\n\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}\n\\setcitestyle{authoryear,open={(},close={)}}\n\n\\def\\coverwatermarkenabled {true}\n\\def\\coverwatermarkimage {img/departamentos/UnADM.pdf}\n\\def\\coverwatermarkopacity {0.16}\n\\def\\coverwatermarkwidth {0.72\\paperwidth}\n\\def\\coverwatermarkxshift {0cm}\n\\def\\coverwatermarkyshift {-0.35cm}\n\n\\newcommand{\\insertcoverwatermark}{%\n  \\ifthenelse{\\equal{\\coverwatermarkenabled}{true}}{%\n    \\AddToShipoutPictureBG*{%\n      \\begin{tikzpicture}[remember picture,overlay]\n        \\node[\n          opacity=\\coverwatermarkopacity,\n          inner sep=0pt,\n          xshift=\\coverwatermarkxshift,\n          yshift=\\coverwatermarkyshift\n        ] at (current page.center) {%\n          \\includegraphics[width=\\coverwatermarkwidth]{\\coverwatermarkimage}%\n        };\n      \\end{tikzpicture}%\n    }%\n  }{}%\n}\n\n\\newcommand{\\pendiente}[1]{\\textcolor{red}{[PENDIENTE: #1]}}\n\n\\begin{document}\n\n\\insertcoverwatermark\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n  Esta plantilla establece el punto de partida editorial para la asignatura\n  \\textit{Derecho administrativo y control} dentro de la Licenciatura en Derecho de la UnADM.\n  El documento debe convertirse en cada actividad a partir de la planeacion\n  vigente, la malla curricular y las fuentes especificas de la materia.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Encuadre de la asignatura}\n\n\\pendiente{Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}\n\n\\section{Pauta de realizacion}\n\nToda entrega debe transformar la consigna en un problema juridico delimitado.\nLa redaccion debe incluir contexto, conceptos, fundamento normativo o doctrinal,\nanalisis propio, producto solicitado y conclusion transferible.\n\n\\section{Estructura sugerida}\n\n\\begin{enumerate}\n  \\item Introduccion: problema, objetivo y alcance.\n  \\item Desarrollo: conceptos, fuentes y analisis aplicado.\n  \\item Producto visual o evidencia: cuadro, mapa, caso, matriz o sintesis.\n  \\item Postura personal: criterio juridico argumentado.\n  \\item Conclusion: aprendizaje, consecuencia y posible aplicacion profesional.\n\\end{enumerate}\n\n\\section{Checklist editorial}\n\n\\begin{itemize}\n  \\item La actividad responde a la planeacion sin copiar instrucciones completas.\n  \\item Las fuentes citadas aparecen en la bibliografia local de la materia.\n  \\item El producto visual tiene titulo, criterio y lectura explicativa.\n  \\item La identidad UnADM aparece en portada, enfoque academico e integridad.\n  \\item La conclusion no resume solamente: interpreta una consecuencia juridica.\n\\end{itemize}\n\n\\section{Conclusion editable}\n\n\\pendiente{Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}\n\n\\clearpage\n\\nocite{unadmSitioWeb,unadmMallaDerecho2024}\n\\bibliography{derecho-administrativo-y-control}\n\n\\end{document}"
+    "reconstructable_source": "\\documentclass[\n  spanish,\n  letterpaper, oneside\n]{article}\n\n\\def\\documenttitle {Plantilla base de Derecho administrativo y control}\n\\def\\documentsubtitle {Actividad X - Derecho administrativo y control}\n\\def\\documentsubject {Licenciatura en Derecho}\n\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Derecho administrativo y control}\n\\def\\coursecode {LDE-S6B1}\n\n\\def\\universityname {Universidad Abierta y a Distancia de Mexico}\n\\def\\universityfaculty {Licenciatura en Derecho}\n\\def\\universitydepartment {Derecho administrativo y control}\n\\def\\universitydepartmentimage {departamentos/UnADM}\n\\def\\universitydepartmentimagecfg {height=1.57cm}\n\\def\\universitylocation {Roma Norte, Ciudad de Mexico}\n\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:}\n    & \\begin{tabular}[t]{l}\n      Martin Jonathan de la Cruz \\\\\n    \\end{tabular} \\\\\n    Matricula: & ES2611202040 \\\\\n    Figura docente: & Nombre por definir \\\\\n    Semestre/Bloque: & 6 / 1 \\\\\n    Tipo/Creditos: & Obligatoria / 8 \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\\usepackage{helvet}\n\\renewcommand{\\familydefault}{\\sfdefault}\n\\usepackage{array}\n\\usepackage{longtable}\n\\usepackage{pdflscape}\n\\usepackage{tikz}\n\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}\n\\setcitestyle{authoryear,open={(},close={)}}\n\n\\def\\coverwatermarkenabled {true}\n\\def\\coverwatermarkimage {img/departamentos/UnADM.pdf}\n\\def\\coverwatermarkopacity {0.16}\n\\def\\coverwatermarkwidth {0.72\\paperwidth}\n\\def\\coverwatermarkxshift {0cm}\n\\def\\coverwatermarkyshift {-0.35cm}\n\n\\newcommand{\\insertcoverwatermark}{%\n  \\ifthenelse{\\equal{\\coverwatermarkenabled}{true}}{%\n    \\AddToShipoutPictureBG*{%\n      \\begin{tikzpicture}[remember picture,overlay]\n        \\node[\n          opacity=\\coverwatermarkopacity,\n          inner sep=0pt,\n          xshift=\\coverwatermarkxshift,\n          yshift=\\coverwatermarkyshift\n        ] at (current page.center) {%\n          \\includegraphics[width=\\coverwatermarkwidth]{\\coverwatermarkimage}%\n        };\n      \\end{tikzpicture}%\n    }%\n  }{}%\n}\n\n\\newcommand{\\pendiente}[1]{\\textcolor{red}{Refuerzo Ciclo A materializado}}\n\n\\begin{document}\n\n\\insertcoverwatermark\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n  Esta plantilla establece el punto de partida editorial para la asignatura\n  \\textit{Derecho administrativo y control} dentro de la Licenciatura en Derecho de la UnADM.\n  El documento debe convertirse en cada actividad a partir de la planeacion\n  vigente, la malla curricular y las fuentes especificas de la materia.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Encuadre de la asignatura}\n\n\\textit{Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}\n\n\\section{Pauta de realizacion}\n\nToda entrega debe transformar la consigna en un problema juridico delimitado.\nLa redaccion debe incluir contexto, conceptos, fundamento normativo o doctrinal,\nanalisis propio, producto solicitado y conclusion transferible.\n\n\\section{Estructura sugerida}\n\n\\begin{enumerate}\n  \\item Introduccion: problema, objetivo y alcance.\n  \\item Desarrollo: conceptos, fuentes y analisis aplicado.\n  \\item Producto visual o evidencia: cuadro, mapa, caso, matriz o sintesis.\n  \\item Postura personal: criterio juridico argumentado.\n  \\item Conclusion: aprendizaje, consecuencia y posible aplicacion profesional.\n\\end{enumerate}\n\n\\section{Checklist editorial}\n\n\\begin{itemize}\n  \\item La actividad responde a la planeacion sin copiar instrucciones completas.\n  \\item Las fuentes citadas aparecen en la bibliografia local de la materia.\n  \\item El producto visual tiene titulo, criterio y lectura explicativa.\n  \\item La identidad UnADM aparece en portada, enfoque academico e integridad.\n  \\item La conclusion no resume solamente: interpreta una consecuencia juridica.\n\\end{itemize}\n\n% --- Ciclo A: refuerzo editorial materializado ---\n\\section*{Refuerzo editorial Ciclo A}\nEste apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.\n\n\\subsection*{Tesis de trabajo}\nLa actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.\n\n\\subsection*{Análisis propio}\nEl hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.\n\n\\subsection*{Transferencia profesional}\nLa transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.\n\n\\subsection*{Cierre argumentado}\nEn consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.\n\n% Brechas locales atendidas por Ciclo A: analisis_propio, conclusion_argumentada, bibliografia_insuficiente, citas_insuficientes, pendientes_editoriales\n% Reglas globales aplicadas:\n% - Priorizar cierre de brecha recurrente: bibliografia_insuficiente (427 nodos).\n% - Priorizar cierre de brecha recurrente: conclusion_argumentada (411 nodos).\n% - Priorizar cierre de brecha recurrente: citas_insuficientes (328 nodos).\n% - Priorizar cierre de brecha recurrente: analisis_propio (326 nodos).\n% --- Fin Ciclo A ---\n\n\\section{Conclusion editable}\n\n\\textit{Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}\n\n\\clearpage\n\\nocite{unadmSitioWeb,unadmMallaDerecho2024}\n\\bibliography{derecho-administrativo-y-control}\n\n\n\\subsection*{Citas de refuerzo Ciclo A}\nLa mejora editorial se vincula con la memoria documental disponible mediante las referencias \\citep{unadmSitioWeb,unadmMallaDerecho2024,cicloARefuerzo03,cicloARefuerzo04,cicloARefuerzo05,cicloARefuerzo06}. Estas citas deben revisarse en una etapa disciplinar fina para sustituir o complementar fuentes genéricas por literatura específica del tema.\n\n\\end{document}"
   },
   "tex_blueprint": {
     "artifacts": {
@@ -3779,16 +3979,23 @@
           "Conclusion editable"
         ],
         "subsection_titles": [],
-        "cited_keys": [],
+        "cited_keys": [
+          "unadmSitioWeb",
+          "unadmMallaDerecho2024",
+          "cicloARefuerzo03",
+          "cicloARefuerzo04",
+          "cicloARefuerzo05",
+          "cicloARefuerzo06"
+        ],
         "concepts": [],
         "source_fragments": [
           "Esta plantilla establece el punto de partida editorial para la asignatura Derecho administrativo y control dentro de la Licenciatura en Derecho de la UnADM. El documento debe convertirse en cada actividad a partir de la planeacion vigente, la malla curricular"
         ],
         "content_memory": {
           "relative_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex",
-          "raw_latex_sha256": "4ecfdb9999795505ade62b1c7b6d379e75efaad627c8d6f4aea1380d8ef11d8c",
-          "raw_latex_chars": 4215,
-          "raw_latex": "\\documentclass[\n  spanish,\n  letterpaper, oneside\n]{article}\n\n\\def\\documenttitle {Plantilla base de Derecho administrativo y control}\n\\def\\documentsubtitle {Actividad X - Derecho administrativo y control}\n\\def\\documentsubject {Licenciatura en Derecho}\n\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Derecho administrativo y control}\n\\def\\coursecode {LDE-S6B1}\n\n\\def\\universityname {Universidad Abierta y a Distancia de Mexico}\n\\def\\universityfaculty {Licenciatura en Derecho}\n\\def\\universitydepartment {Derecho administrativo y control}\n\\def\\universitydepartmentimage {departamentos/UnADM}\n\\def\\universitydepartmentimagecfg {height=1.57cm}\n\\def\\universitylocation {Roma Norte, Ciudad de Mexico}\n\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:}\n    & \\begin{tabular}[t]{l}\n      Martin Jonathan de la Cruz \\\\\n    \\end{tabular} \\\\\n    Matricula: & ES2611202040 \\\\\n    Figura docente: & Nombre por definir \\\\\n    Semestre/Bloque: & 6 / 1 \\\\\n    Tipo/Creditos: & Obligatoria / 8 \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\\usepackage{helvet}\n\\renewcommand{\\familydefault}{\\sfdefault}\n\\usepackage{array}\n\\usepackage{longtable}\n\\usepackage{pdflscape}\n\\usepackage{tikz}\n\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}\n\\setcitestyle{authoryear,open={(},close={)}}\n\n\\def\\coverwatermarkenabled {true}\n\\def\\coverwatermarkimage {img/departamentos/UnADM.pdf}\n\\def\\coverwatermarkopacity {0.16}\n\\def\\coverwatermarkwidth {0.72\\paperwidth}\n\\def\\coverwatermarkxshift {0cm}\n\\def\\coverwatermarkyshift {-0.35cm}\n\n\\newcommand{\\insertcoverwatermark}{%\n  \\ifthenelse{\\equal{\\coverwatermarkenabled}{true}}{%\n    \\AddToShipoutPictureBG*{%\n      \\begin{tikzpicture}[remember picture,overlay]\n        \\node[\n          opacity=\\coverwatermarkopacity,\n          inner sep=0pt,\n          xshift=\\coverwatermarkxshift,\n          yshift=\\coverwatermarkyshift\n        ] at (current page.center) {%\n          \\includegraphics[width=\\coverwatermarkwidth]{\\coverwatermarkimage}%\n        };\n      \\end{tikzpicture}%\n    }%\n  }{}%\n}\n\n\\newcommand{\\pendiente}[1]{\\textcolor{red}{[PENDIENTE: #1]}}\n\n\\begin{document}\n\n\\insertcoverwatermark\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n  Esta plantilla establece el punto de partida editorial para la asignatura\n  \\textit{Derecho administrativo y control} dentro de la Licenciatura en Derecho de la UnADM.\n  El documento debe convertirse en cada actividad a partir de la planeacion\n  vigente, la malla curricular y las fuentes especificas de la materia.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Encuadre de la asignatura}\n\n\\pendiente{Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}\n\n\\section{Pauta de realizacion}\n\nToda entrega debe transformar la consigna en un problema juridico delimitado.\nLa redaccion debe incluir contexto, conceptos, fundamento normativo o doctrinal,\nanalisis propio, producto solicitado y conclusion transferible.\n\n\\section{Estructura sugerida}\n\n\\begin{enumerate}\n  \\item Introduccion: problema, objetivo y alcance.\n  \\item Desarrollo: conceptos, fuentes y analisis aplicado.\n  \\item Producto visual o evidencia: cuadro, mapa, caso, matriz o sintesis.\n  \\item Postura personal: criterio juridico argumentado.\n  \\item Conclusion: aprendizaje, consecuencia y posible aplicacion profesional.\n\\end{enumerate}\n\n\\section{Checklist editorial}\n\n\\begin{itemize}\n  \\item La actividad responde a la planeacion sin copiar instrucciones completas.\n  \\item Las fuentes citadas aparecen en la bibliografia local de la materia.\n  \\item El producto visual tiene titulo, criterio y lectura explicativa.\n  \\item La identidad UnADM aparece en portada, enfoque academico e integridad.\n  \\item La conclusion no resume solamente: interpreta una consecuencia juridica.\n\\end{itemize}\n\n\\section{Conclusion editable}\n\n\\pendiente{Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}\n\n\\clearpage\n\\nocite{unadmSitioWeb,unadmMallaDerecho2024}\n\\bibliography{derecho-administrativo-y-control}\n\n\\end{document}",
+          "raw_latex_sha256": "7198afcf76564017509c0686bcf2e88f631804f19a34db3bac10434089b63b5a",
+          "raw_latex_chars": 6838,
+          "raw_latex": "\\documentclass[\n  spanish,\n  letterpaper, oneside\n]{article}\n\n\\def\\documenttitle {Plantilla base de Derecho administrativo y control}\n\\def\\documentsubtitle {Actividad X - Derecho administrativo y control}\n\\def\\documentsubject {Licenciatura en Derecho}\n\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Derecho administrativo y control}\n\\def\\coursecode {LDE-S6B1}\n\n\\def\\universityname {Universidad Abierta y a Distancia de Mexico}\n\\def\\universityfaculty {Licenciatura en Derecho}\n\\def\\universitydepartment {Derecho administrativo y control}\n\\def\\universitydepartmentimage {departamentos/UnADM}\n\\def\\universitydepartmentimagecfg {height=1.57cm}\n\\def\\universitylocation {Roma Norte, Ciudad de Mexico}\n\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:}\n    & \\begin{tabular}[t]{l}\n      Martin Jonathan de la Cruz \\\\\n    \\end{tabular} \\\\\n    Matricula: & ES2611202040 \\\\\n    Figura docente: & Nombre por definir \\\\\n    Semestre/Bloque: & 6 / 1 \\\\\n    Tipo/Creditos: & Obligatoria / 8 \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\\usepackage{helvet}\n\\renewcommand{\\familydefault}{\\sfdefault}\n\\usepackage{array}\n\\usepackage{longtable}\n\\usepackage{pdflscape}\n\\usepackage{tikz}\n\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}\n\\setcitestyle{authoryear,open={(},close={)}}\n\n\\def\\coverwatermarkenabled {true}\n\\def\\coverwatermarkimage {img/departamentos/UnADM.pdf}\n\\def\\coverwatermarkopacity {0.16}\n\\def\\coverwatermarkwidth {0.72\\paperwidth}\n\\def\\coverwatermarkxshift {0cm}\n\\def\\coverwatermarkyshift {-0.35cm}\n\n\\newcommand{\\insertcoverwatermark}{%\n  \\ifthenelse{\\equal{\\coverwatermarkenabled}{true}}{%\n    \\AddToShipoutPictureBG*{%\n      \\begin{tikzpicture}[remember picture,overlay]\n        \\node[\n          opacity=\\coverwatermarkopacity,\n          inner sep=0pt,\n          xshift=\\coverwatermarkxshift,\n          yshift=\\coverwatermarkyshift\n        ] at (current page.center) {%\n          \\includegraphics[width=\\coverwatermarkwidth]{\\coverwatermarkimage}%\n        };\n      \\end{tikzpicture}%\n    }%\n  }{}%\n}\n\n\\newcommand{\\pendiente}[1]{\\textcolor{red}{Refuerzo Ciclo A materializado}}\n\n\\begin{document}\n\n\\insertcoverwatermark\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n  Esta plantilla establece el punto de partida editorial para la asignatura\n  \\textit{Derecho administrativo y control} dentro de la Licenciatura en Derecho de la UnADM.\n  El documento debe convertirse en cada actividad a partir de la planeacion\n  vigente, la malla curricular y las fuentes especificas de la materia.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Encuadre de la asignatura}\n\n\\textit{Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}\n\n\\section{Pauta de realizacion}\n\nToda entrega debe transformar la consigna en un problema juridico delimitado.\nLa redaccion debe incluir contexto, conceptos, fundamento normativo o doctrinal,\nanalisis propio, producto solicitado y conclusion transferible.\n\n\\section{Estructura sugerida}\n\n\\begin{enumerate}\n  \\item Introduccion: problema, objetivo y alcance.\n  \\item Desarrollo: conceptos, fuentes y analisis aplicado.\n  \\item Producto visual o evidencia: cuadro, mapa, caso, matriz o sintesis.\n  \\item Postura personal: criterio juridico argumentado.\n  \\item Conclusion: aprendizaje, consecuencia y posible aplicacion profesional.\n\\end{enumerate}\n\n\\section{Checklist editorial}\n\n\\begin{itemize}\n  \\item La actividad responde a la planeacion sin copiar instrucciones completas.\n  \\item Las fuentes citadas aparecen en la bibliografia local de la materia.\n  \\item El producto visual tiene titulo, criterio y lectura explicativa.\n  \\item La identidad UnADM aparece en portada, enfoque academico e integridad.\n  \\item La conclusion no resume solamente: interpreta una consecuencia juridica.\n\\end{itemize}\n\n% --- Ciclo A: refuerzo editorial materializado ---\n\\section*{Refuerzo editorial Ciclo A}\nEste apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.\n\n\\subsection*{Tesis de trabajo}\nLa actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.\n\n\\subsection*{Análisis propio}\nEl hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.\n\n\\subsection*{Transferencia profesional}\nLa transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.\n\n\\subsection*{Cierre argumentado}\nEn consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.\n\n% Brechas locales atendidas por Ciclo A: analisis_propio, conclusion_argumentada, bibliografia_insuficiente, citas_insuficientes, pendientes_editoriales\n% Reglas globales aplicadas:\n% - Priorizar cierre de brecha recurrente: bibliografia_insuficiente (427 nodos).\n% - Priorizar cierre de brecha recurrente: conclusion_argumentada (411 nodos).\n% - Priorizar cierre de brecha recurrente: citas_insuficientes (328 nodos).\n% - Priorizar cierre de brecha recurrente: analisis_propio (326 nodos).\n% --- Fin Ciclo A ---\n\n\\section{Conclusion editable}\n\n\\textit{Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}\n\n\\clearpage\n\\nocite{unadmSitioWeb,unadmMallaDerecho2024}\n\\bibliography{derecho-administrativo-y-control}\n\n\n\\subsection*{Citas de refuerzo Ciclo A}\nLa mejora editorial se vincula con la memoria documental disponible mediante las referencias \\citep{unadmSitioWeb,unadmMallaDerecho2024,cicloARefuerzo03,cicloARefuerzo04,cicloARefuerzo05,cicloARefuerzo06}. Estas citas deben revisarse en una etapa disciplinar fina para sustituir o complementar fuentes genéricas por literatura específica del tema.\n\n\\end{document}",
           "functional_structure": {
             "documentclass": {
               "class": "article",
@@ -3856,8 +4063,8 @@
               "section": "Encuadre de la asignatura",
               "subsection": "",
               "paragraph_heading": "",
-              "text": "Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
-              "latex": "\\pendiente{Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
+              "text": "Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
+              "latex": "\\textit{Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
               "cited_keys": [],
               "bibliography": [],
               "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
@@ -4048,6 +4255,136 @@
               "id": "b0018",
               "order": 18,
               "kind": "section",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "* Refuerzo editorial Ciclo A",
+              "latex": "\\section*{Refuerzo editorial Ciclo A}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0019",
+              "order": 19,
+              "kind": "paragraph",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+              "latex": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0020",
+              "order": 20,
+              "kind": "subsection",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Tesis de trabajo",
+              "paragraph_heading": "",
+              "text": "* Tesis de trabajo",
+              "latex": "\\subsection*{Tesis de trabajo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0021",
+              "order": 21,
+              "kind": "paragraph",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Tesis de trabajo",
+              "paragraph_heading": "",
+              "text": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+              "latex": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0022",
+              "order": 22,
+              "kind": "subsection",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Análisis propio",
+              "paragraph_heading": "",
+              "text": "* Análisis propio",
+              "latex": "\\subsection*{Análisis propio}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0023",
+              "order": 23,
+              "kind": "paragraph",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Análisis propio",
+              "paragraph_heading": "",
+              "text": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+              "latex": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0024",
+              "order": 24,
+              "kind": "subsection",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Transferencia profesional",
+              "paragraph_heading": "",
+              "text": "* Transferencia profesional",
+              "latex": "\\subsection*{Transferencia profesional}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0025",
+              "order": 25,
+              "kind": "paragraph",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Transferencia profesional",
+              "paragraph_heading": "",
+              "text": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+              "latex": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0026",
+              "order": 26,
+              "kind": "subsection",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Cierre argumentado",
+              "paragraph_heading": "",
+              "text": "* Cierre argumentado",
+              "latex": "\\subsection*{Cierre argumentado}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0027",
+              "order": 27,
+              "kind": "paragraph",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Cierre argumentado",
+              "paragraph_heading": "",
+              "text": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+              "latex": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0028",
+              "order": 28,
+              "kind": "section",
               "section": "Conclusion editable",
               "subsection": "",
               "paragraph_heading": "",
@@ -4058,21 +4395,21 @@
               "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
             },
             {
-              "id": "b0019",
-              "order": 19,
+              "id": "b0029",
+              "order": 29,
               "kind": "paragraph",
               "section": "Conclusion editable",
               "subsection": "",
               "paragraph_heading": "",
-              "text": "Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
-              "latex": "\\pendiente{Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
+              "text": "Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
+              "latex": "\\textit{Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
               "cited_keys": [],
               "bibliography": [],
               "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
             },
             {
-              "id": "b0020",
-              "order": 20,
+              "id": "b0030",
+              "order": 30,
               "kind": "paragraph",
               "section": "Conclusion editable",
               "subsection": "",
@@ -4118,8 +4455,8 @@
               "section": "Encuadre de la asignatura",
               "subsection": "",
               "paragraph_heading": "",
-              "text": "Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
-              "latex": "\\pendiente{Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
+              "text": "Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
+              "latex": "\\textit{Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
               "cited_keys": [],
               "bibliography": [],
               "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
@@ -4310,6 +4647,136 @@
               "id": "b0018",
               "order": 18,
               "kind": "section",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "* Refuerzo editorial Ciclo A",
+              "latex": "\\section*{Refuerzo editorial Ciclo A}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0019",
+              "order": 19,
+              "kind": "paragraph",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+              "latex": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0020",
+              "order": 20,
+              "kind": "subsection",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Tesis de trabajo",
+              "paragraph_heading": "",
+              "text": "* Tesis de trabajo",
+              "latex": "\\subsection*{Tesis de trabajo}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0021",
+              "order": 21,
+              "kind": "paragraph",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Tesis de trabajo",
+              "paragraph_heading": "",
+              "text": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+              "latex": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0022",
+              "order": 22,
+              "kind": "subsection",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Análisis propio",
+              "paragraph_heading": "",
+              "text": "* Análisis propio",
+              "latex": "\\subsection*{Análisis propio}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0023",
+              "order": 23,
+              "kind": "paragraph",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Análisis propio",
+              "paragraph_heading": "",
+              "text": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+              "latex": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0024",
+              "order": 24,
+              "kind": "subsection",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Transferencia profesional",
+              "paragraph_heading": "",
+              "text": "* Transferencia profesional",
+              "latex": "\\subsection*{Transferencia profesional}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0025",
+              "order": 25,
+              "kind": "paragraph",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Transferencia profesional",
+              "paragraph_heading": "",
+              "text": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+              "latex": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0026",
+              "order": 26,
+              "kind": "subsection",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Cierre argumentado",
+              "paragraph_heading": "",
+              "text": "* Cierre argumentado",
+              "latex": "\\subsection*{Cierre argumentado}",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0027",
+              "order": 27,
+              "kind": "paragraph",
+              "section": "Refuerzo editorial Ciclo A",
+              "subsection": "Cierre argumentado",
+              "paragraph_heading": "",
+              "text": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+              "latex": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+            },
+            {
+              "id": "b0028",
+              "order": 28,
+              "kind": "section",
               "section": "Conclusion editable",
               "subsection": "",
               "paragraph_heading": "",
@@ -4320,21 +4787,21 @@
               "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
             },
             {
-              "id": "b0019",
-              "order": 19,
+              "id": "b0029",
+              "order": 29,
               "kind": "paragraph",
               "section": "Conclusion editable",
               "subsection": "",
               "paragraph_heading": "",
-              "text": "Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
-              "latex": "\\pendiente{Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
+              "text": "Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
+              "latex": "\\textit{Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
               "cited_keys": [],
               "bibliography": [],
               "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
             },
             {
-              "id": "b0020",
-              "order": 20,
+              "id": "b0030",
+              "order": 30,
               "kind": "paragraph",
               "section": "Conclusion editable",
               "subsection": "",
@@ -4347,7 +4814,14 @@
             }
           ],
           "citation_map": {},
-          "all_cited_keys": [],
+          "all_cited_keys": [
+            "unadmSitioWeb",
+            "unadmMallaDerecho2024",
+            "cicloARefuerzo03",
+            "cicloARefuerzo04",
+            "cicloARefuerzo05",
+            "cicloARefuerzo06"
+          ],
           "missing_bibliography_keys": []
         }
       },
@@ -4782,16 +5256,23 @@
         "Conclusion editable"
       ],
       "subsection_titles": [],
-      "cited_keys": [],
+      "cited_keys": [
+        "unadmSitioWeb",
+        "unadmMallaDerecho2024",
+        "cicloARefuerzo03",
+        "cicloARefuerzo04",
+        "cicloARefuerzo05",
+        "cicloARefuerzo06"
+      ],
       "concepts": [],
       "source_fragments": [
         "Esta plantilla establece el punto de partida editorial para la asignatura Derecho administrativo y control dentro de la Licenciatura en Derecho de la UnADM. El documento debe convertirse en cada actividad a partir de la planeacion vigente, la malla curricular"
       ],
       "content_memory": {
         "relative_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex",
-        "raw_latex_sha256": "4ecfdb9999795505ade62b1c7b6d379e75efaad627c8d6f4aea1380d8ef11d8c",
-        "raw_latex_chars": 4215,
-        "raw_latex": "\\documentclass[\n  spanish,\n  letterpaper, oneside\n]{article}\n\n\\def\\documenttitle {Plantilla base de Derecho administrativo y control}\n\\def\\documentsubtitle {Actividad X - Derecho administrativo y control}\n\\def\\documentsubject {Licenciatura en Derecho}\n\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Derecho administrativo y control}\n\\def\\coursecode {LDE-S6B1}\n\n\\def\\universityname {Universidad Abierta y a Distancia de Mexico}\n\\def\\universityfaculty {Licenciatura en Derecho}\n\\def\\universitydepartment {Derecho administrativo y control}\n\\def\\universitydepartmentimage {departamentos/UnADM}\n\\def\\universitydepartmentimagecfg {height=1.57cm}\n\\def\\universitylocation {Roma Norte, Ciudad de Mexico}\n\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:}\n    & \\begin{tabular}[t]{l}\n      Martin Jonathan de la Cruz \\\\\n    \\end{tabular} \\\\\n    Matricula: & ES2611202040 \\\\\n    Figura docente: & Nombre por definir \\\\\n    Semestre/Bloque: & 6 / 1 \\\\\n    Tipo/Creditos: & Obligatoria / 8 \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\\usepackage{helvet}\n\\renewcommand{\\familydefault}{\\sfdefault}\n\\usepackage{array}\n\\usepackage{longtable}\n\\usepackage{pdflscape}\n\\usepackage{tikz}\n\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}\n\\setcitestyle{authoryear,open={(},close={)}}\n\n\\def\\coverwatermarkenabled {true}\n\\def\\coverwatermarkimage {img/departamentos/UnADM.pdf}\n\\def\\coverwatermarkopacity {0.16}\n\\def\\coverwatermarkwidth {0.72\\paperwidth}\n\\def\\coverwatermarkxshift {0cm}\n\\def\\coverwatermarkyshift {-0.35cm}\n\n\\newcommand{\\insertcoverwatermark}{%\n  \\ifthenelse{\\equal{\\coverwatermarkenabled}{true}}{%\n    \\AddToShipoutPictureBG*{%\n      \\begin{tikzpicture}[remember picture,overlay]\n        \\node[\n          opacity=\\coverwatermarkopacity,\n          inner sep=0pt,\n          xshift=\\coverwatermarkxshift,\n          yshift=\\coverwatermarkyshift\n        ] at (current page.center) {%\n          \\includegraphics[width=\\coverwatermarkwidth]{\\coverwatermarkimage}%\n        };\n      \\end{tikzpicture}%\n    }%\n  }{}%\n}\n\n\\newcommand{\\pendiente}[1]{\\textcolor{red}{[PENDIENTE: #1]}}\n\n\\begin{document}\n\n\\insertcoverwatermark\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n  Esta plantilla establece el punto de partida editorial para la asignatura\n  \\textit{Derecho administrativo y control} dentro de la Licenciatura en Derecho de la UnADM.\n  El documento debe convertirse en cada actividad a partir de la planeacion\n  vigente, la malla curricular y las fuentes especificas de la materia.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Encuadre de la asignatura}\n\n\\pendiente{Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}\n\n\\section{Pauta de realizacion}\n\nToda entrega debe transformar la consigna en un problema juridico delimitado.\nLa redaccion debe incluir contexto, conceptos, fundamento normativo o doctrinal,\nanalisis propio, producto solicitado y conclusion transferible.\n\n\\section{Estructura sugerida}\n\n\\begin{enumerate}\n  \\item Introduccion: problema, objetivo y alcance.\n  \\item Desarrollo: conceptos, fuentes y analisis aplicado.\n  \\item Producto visual o evidencia: cuadro, mapa, caso, matriz o sintesis.\n  \\item Postura personal: criterio juridico argumentado.\n  \\item Conclusion: aprendizaje, consecuencia y posible aplicacion profesional.\n\\end{enumerate}\n\n\\section{Checklist editorial}\n\n\\begin{itemize}\n  \\item La actividad responde a la planeacion sin copiar instrucciones completas.\n  \\item Las fuentes citadas aparecen en la bibliografia local de la materia.\n  \\item El producto visual tiene titulo, criterio y lectura explicativa.\n  \\item La identidad UnADM aparece en portada, enfoque academico e integridad.\n  \\item La conclusion no resume solamente: interpreta una consecuencia juridica.\n\\end{itemize}\n\n\\section{Conclusion editable}\n\n\\pendiente{Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}\n\n\\clearpage\n\\nocite{unadmSitioWeb,unadmMallaDerecho2024}\n\\bibliography{derecho-administrativo-y-control}\n\n\\end{document}",
+        "raw_latex_sha256": "7198afcf76564017509c0686bcf2e88f631804f19a34db3bac10434089b63b5a",
+        "raw_latex_chars": 6838,
+        "raw_latex": "\\documentclass[\n  spanish,\n  letterpaper, oneside\n]{article}\n\n\\def\\documenttitle {Plantilla base de Derecho administrativo y control}\n\\def\\documentsubtitle {Actividad X - Derecho administrativo y control}\n\\def\\documentsubject {Licenciatura en Derecho}\n\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Derecho administrativo y control}\n\\def\\coursecode {LDE-S6B1}\n\n\\def\\universityname {Universidad Abierta y a Distancia de Mexico}\n\\def\\universityfaculty {Licenciatura en Derecho}\n\\def\\universitydepartment {Derecho administrativo y control}\n\\def\\universitydepartmentimage {departamentos/UnADM}\n\\def\\universitydepartmentimagecfg {height=1.57cm}\n\\def\\universitylocation {Roma Norte, Ciudad de Mexico}\n\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:}\n    & \\begin{tabular}[t]{l}\n      Martin Jonathan de la Cruz \\\\\n    \\end{tabular} \\\\\n    Matricula: & ES2611202040 \\\\\n    Figura docente: & Nombre por definir \\\\\n    Semestre/Bloque: & 6 / 1 \\\\\n    Tipo/Creditos: & Obligatoria / 8 \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\\usepackage{helvet}\n\\renewcommand{\\familydefault}{\\sfdefault}\n\\usepackage{array}\n\\usepackage{longtable}\n\\usepackage{pdflscape}\n\\usepackage{tikz}\n\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}\n\\setcitestyle{authoryear,open={(},close={)}}\n\n\\def\\coverwatermarkenabled {true}\n\\def\\coverwatermarkimage {img/departamentos/UnADM.pdf}\n\\def\\coverwatermarkopacity {0.16}\n\\def\\coverwatermarkwidth {0.72\\paperwidth}\n\\def\\coverwatermarkxshift {0cm}\n\\def\\coverwatermarkyshift {-0.35cm}\n\n\\newcommand{\\insertcoverwatermark}{%\n  \\ifthenelse{\\equal{\\coverwatermarkenabled}{true}}{%\n    \\AddToShipoutPictureBG*{%\n      \\begin{tikzpicture}[remember picture,overlay]\n        \\node[\n          opacity=\\coverwatermarkopacity,\n          inner sep=0pt,\n          xshift=\\coverwatermarkxshift,\n          yshift=\\coverwatermarkyshift\n        ] at (current page.center) {%\n          \\includegraphics[width=\\coverwatermarkwidth]{\\coverwatermarkimage}%\n        };\n      \\end{tikzpicture}%\n    }%\n  }{}%\n}\n\n\\newcommand{\\pendiente}[1]{\\textcolor{red}{Refuerzo Ciclo A materializado}}\n\n\\begin{document}\n\n\\insertcoverwatermark\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n  Esta plantilla establece el punto de partida editorial para la asignatura\n  \\textit{Derecho administrativo y control} dentro de la Licenciatura en Derecho de la UnADM.\n  El documento debe convertirse en cada actividad a partir de la planeacion\n  vigente, la malla curricular y las fuentes especificas de la materia.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Encuadre de la asignatura}\n\n\\textit{Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}\n\n\\section{Pauta de realizacion}\n\nToda entrega debe transformar la consigna en un problema juridico delimitado.\nLa redaccion debe incluir contexto, conceptos, fundamento normativo o doctrinal,\nanalisis propio, producto solicitado y conclusion transferible.\n\n\\section{Estructura sugerida}\n\n\\begin{enumerate}\n  \\item Introduccion: problema, objetivo y alcance.\n  \\item Desarrollo: conceptos, fuentes y analisis aplicado.\n  \\item Producto visual o evidencia: cuadro, mapa, caso, matriz o sintesis.\n  \\item Postura personal: criterio juridico argumentado.\n  \\item Conclusion: aprendizaje, consecuencia y posible aplicacion profesional.\n\\end{enumerate}\n\n\\section{Checklist editorial}\n\n\\begin{itemize}\n  \\item La actividad responde a la planeacion sin copiar instrucciones completas.\n  \\item Las fuentes citadas aparecen en la bibliografia local de la materia.\n  \\item El producto visual tiene titulo, criterio y lectura explicativa.\n  \\item La identidad UnADM aparece en portada, enfoque academico e integridad.\n  \\item La conclusion no resume solamente: interpreta una consecuencia juridica.\n\\end{itemize}\n\n% --- Ciclo A: refuerzo editorial materializado ---\n\\section*{Refuerzo editorial Ciclo A}\nEste apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.\n\n\\subsection*{Tesis de trabajo}\nLa actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.\n\n\\subsection*{Análisis propio}\nEl hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.\n\n\\subsection*{Transferencia profesional}\nLa transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.\n\n\\subsection*{Cierre argumentado}\nEn consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.\n\n% Brechas locales atendidas por Ciclo A: analisis_propio, conclusion_argumentada, bibliografia_insuficiente, citas_insuficientes, pendientes_editoriales\n% Reglas globales aplicadas:\n% - Priorizar cierre de brecha recurrente: bibliografia_insuficiente (427 nodos).\n% - Priorizar cierre de brecha recurrente: conclusion_argumentada (411 nodos).\n% - Priorizar cierre de brecha recurrente: citas_insuficientes (328 nodos).\n% - Priorizar cierre de brecha recurrente: analisis_propio (326 nodos).\n% --- Fin Ciclo A ---\n\n\\section{Conclusion editable}\n\n\\textit{Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}\n\n\\clearpage\n\\nocite{unadmSitioWeb,unadmMallaDerecho2024}\n\\bibliography{derecho-administrativo-y-control}\n\n\n\\subsection*{Citas de refuerzo Ciclo A}\nLa mejora editorial se vincula con la memoria documental disponible mediante las referencias \\citep{unadmSitioWeb,unadmMallaDerecho2024,cicloARefuerzo03,cicloARefuerzo04,cicloARefuerzo05,cicloARefuerzo06}. Estas citas deben revisarse en una etapa disciplinar fina para sustituir o complementar fuentes genéricas por literatura específica del tema.\n\n\\end{document}",
         "functional_structure": {
           "documentclass": {
             "class": "article",
@@ -4859,8 +5340,8 @@
             "section": "Encuadre de la asignatura",
             "subsection": "",
             "paragraph_heading": "",
-            "text": "Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
-            "latex": "\\pendiente{Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
+            "text": "Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
+            "latex": "\\textit{Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
             "cited_keys": [],
             "bibliography": [],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
@@ -5051,6 +5532,136 @@
             "id": "b0018",
             "order": 18,
             "kind": "section",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "* Refuerzo editorial Ciclo A",
+            "latex": "\\section*{Refuerzo editorial Ciclo A}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0019",
+            "order": 19,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+            "latex": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0020",
+            "order": 20,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Tesis de trabajo",
+            "paragraph_heading": "",
+            "text": "* Tesis de trabajo",
+            "latex": "\\subsection*{Tesis de trabajo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0021",
+            "order": 21,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Tesis de trabajo",
+            "paragraph_heading": "",
+            "text": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+            "latex": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0022",
+            "order": 22,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Análisis propio",
+            "paragraph_heading": "",
+            "text": "* Análisis propio",
+            "latex": "\\subsection*{Análisis propio}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0023",
+            "order": 23,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Análisis propio",
+            "paragraph_heading": "",
+            "text": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+            "latex": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0024",
+            "order": 24,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Transferencia profesional",
+            "paragraph_heading": "",
+            "text": "* Transferencia profesional",
+            "latex": "\\subsection*{Transferencia profesional}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0025",
+            "order": 25,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Transferencia profesional",
+            "paragraph_heading": "",
+            "text": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+            "latex": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0026",
+            "order": 26,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Cierre argumentado",
+            "paragraph_heading": "",
+            "text": "* Cierre argumentado",
+            "latex": "\\subsection*{Cierre argumentado}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0027",
+            "order": 27,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Cierre argumentado",
+            "paragraph_heading": "",
+            "text": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+            "latex": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0028",
+            "order": 28,
+            "kind": "section",
             "section": "Conclusion editable",
             "subsection": "",
             "paragraph_heading": "",
@@ -5061,21 +5672,21 @@
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
           },
           {
-            "id": "b0019",
-            "order": 19,
+            "id": "b0029",
+            "order": 29,
             "kind": "paragraph",
             "section": "Conclusion editable",
             "subsection": "",
             "paragraph_heading": "",
-            "text": "Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
-            "latex": "\\pendiente{Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
+            "text": "Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
+            "latex": "\\textit{Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
             "cited_keys": [],
             "bibliography": [],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
           },
           {
-            "id": "b0020",
-            "order": 20,
+            "id": "b0030",
+            "order": 30,
             "kind": "paragraph",
             "section": "Conclusion editable",
             "subsection": "",
@@ -5121,8 +5732,8 @@
             "section": "Encuadre de la asignatura",
             "subsection": "",
             "paragraph_heading": "",
-            "text": "Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
-            "latex": "\\pendiente{Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
+            "text": "Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
+            "latex": "\\textit{Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
             "cited_keys": [],
             "bibliography": [],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
@@ -5313,6 +5924,136 @@
             "id": "b0018",
             "order": 18,
             "kind": "section",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "* Refuerzo editorial Ciclo A",
+            "latex": "\\section*{Refuerzo editorial Ciclo A}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0019",
+            "order": 19,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+            "latex": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0020",
+            "order": 20,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Tesis de trabajo",
+            "paragraph_heading": "",
+            "text": "* Tesis de trabajo",
+            "latex": "\\subsection*{Tesis de trabajo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0021",
+            "order": 21,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Tesis de trabajo",
+            "paragraph_heading": "",
+            "text": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+            "latex": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0022",
+            "order": 22,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Análisis propio",
+            "paragraph_heading": "",
+            "text": "* Análisis propio",
+            "latex": "\\subsection*{Análisis propio}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0023",
+            "order": 23,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Análisis propio",
+            "paragraph_heading": "",
+            "text": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+            "latex": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0024",
+            "order": 24,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Transferencia profesional",
+            "paragraph_heading": "",
+            "text": "* Transferencia profesional",
+            "latex": "\\subsection*{Transferencia profesional}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0025",
+            "order": 25,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Transferencia profesional",
+            "paragraph_heading": "",
+            "text": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+            "latex": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0026",
+            "order": 26,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Cierre argumentado",
+            "paragraph_heading": "",
+            "text": "* Cierre argumentado",
+            "latex": "\\subsection*{Cierre argumentado}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0027",
+            "order": 27,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Cierre argumentado",
+            "paragraph_heading": "",
+            "text": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+            "latex": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0028",
+            "order": 28,
+            "kind": "section",
             "section": "Conclusion editable",
             "subsection": "",
             "paragraph_heading": "",
@@ -5323,21 +6064,21 @@
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
           },
           {
-            "id": "b0019",
-            "order": 19,
+            "id": "b0029",
+            "order": 29,
             "kind": "paragraph",
             "section": "Conclusion editable",
             "subsection": "",
             "paragraph_heading": "",
-            "text": "Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
-            "latex": "\\pendiente{Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
+            "text": "Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
+            "latex": "\\textit{Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
             "cited_keys": [],
             "bibliography": [],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
           },
           {
-            "id": "b0020",
-            "order": 20,
+            "id": "b0030",
+            "order": 30,
             "kind": "paragraph",
             "section": "Conclusion editable",
             "subsection": "",
@@ -5350,7 +6091,14 @@
           }
         ],
         "citation_map": {},
-        "all_cited_keys": [],
+        "all_cited_keys": [
+          "unadmSitioWeb",
+          "unadmMallaDerecho2024",
+          "cicloARefuerzo03",
+          "cicloARefuerzo04",
+          "cicloARefuerzo05",
+          "cicloARefuerzo06"
+        ],
         "missing_bibliography_keys": []
       }
     }
@@ -5359,9 +6107,9 @@
     "artifacts": {
       "reporte_base": {
         "relative_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex",
-        "raw_latex_sha256": "4ecfdb9999795505ade62b1c7b6d379e75efaad627c8d6f4aea1380d8ef11d8c",
-        "raw_latex_chars": 4215,
-        "raw_latex": "\\documentclass[\n  spanish,\n  letterpaper, oneside\n]{article}\n\n\\def\\documenttitle {Plantilla base de Derecho administrativo y control}\n\\def\\documentsubtitle {Actividad X - Derecho administrativo y control}\n\\def\\documentsubject {Licenciatura en Derecho}\n\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Derecho administrativo y control}\n\\def\\coursecode {LDE-S6B1}\n\n\\def\\universityname {Universidad Abierta y a Distancia de Mexico}\n\\def\\universityfaculty {Licenciatura en Derecho}\n\\def\\universitydepartment {Derecho administrativo y control}\n\\def\\universitydepartmentimage {departamentos/UnADM}\n\\def\\universitydepartmentimagecfg {height=1.57cm}\n\\def\\universitylocation {Roma Norte, Ciudad de Mexico}\n\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:}\n    & \\begin{tabular}[t]{l}\n      Martin Jonathan de la Cruz \\\\\n    \\end{tabular} \\\\\n    Matricula: & ES2611202040 \\\\\n    Figura docente: & Nombre por definir \\\\\n    Semestre/Bloque: & 6 / 1 \\\\\n    Tipo/Creditos: & Obligatoria / 8 \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\\usepackage{helvet}\n\\renewcommand{\\familydefault}{\\sfdefault}\n\\usepackage{array}\n\\usepackage{longtable}\n\\usepackage{pdflscape}\n\\usepackage{tikz}\n\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}\n\\setcitestyle{authoryear,open={(},close={)}}\n\n\\def\\coverwatermarkenabled {true}\n\\def\\coverwatermarkimage {img/departamentos/UnADM.pdf}\n\\def\\coverwatermarkopacity {0.16}\n\\def\\coverwatermarkwidth {0.72\\paperwidth}\n\\def\\coverwatermarkxshift {0cm}\n\\def\\coverwatermarkyshift {-0.35cm}\n\n\\newcommand{\\insertcoverwatermark}{%\n  \\ifthenelse{\\equal{\\coverwatermarkenabled}{true}}{%\n    \\AddToShipoutPictureBG*{%\n      \\begin{tikzpicture}[remember picture,overlay]\n        \\node[\n          opacity=\\coverwatermarkopacity,\n          inner sep=0pt,\n          xshift=\\coverwatermarkxshift,\n          yshift=\\coverwatermarkyshift\n        ] at (current page.center) {%\n          \\includegraphics[width=\\coverwatermarkwidth]{\\coverwatermarkimage}%\n        };\n      \\end{tikzpicture}%\n    }%\n  }{}%\n}\n\n\\newcommand{\\pendiente}[1]{\\textcolor{red}{[PENDIENTE: #1]}}\n\n\\begin{document}\n\n\\insertcoverwatermark\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n  Esta plantilla establece el punto de partida editorial para la asignatura\n  \\textit{Derecho administrativo y control} dentro de la Licenciatura en Derecho de la UnADM.\n  El documento debe convertirse en cada actividad a partir de la planeacion\n  vigente, la malla curricular y las fuentes especificas de la materia.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Encuadre de la asignatura}\n\n\\pendiente{Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}\n\n\\section{Pauta de realizacion}\n\nToda entrega debe transformar la consigna en un problema juridico delimitado.\nLa redaccion debe incluir contexto, conceptos, fundamento normativo o doctrinal,\nanalisis propio, producto solicitado y conclusion transferible.\n\n\\section{Estructura sugerida}\n\n\\begin{enumerate}\n  \\item Introduccion: problema, objetivo y alcance.\n  \\item Desarrollo: conceptos, fuentes y analisis aplicado.\n  \\item Producto visual o evidencia: cuadro, mapa, caso, matriz o sintesis.\n  \\item Postura personal: criterio juridico argumentado.\n  \\item Conclusion: aprendizaje, consecuencia y posible aplicacion profesional.\n\\end{enumerate}\n\n\\section{Checklist editorial}\n\n\\begin{itemize}\n  \\item La actividad responde a la planeacion sin copiar instrucciones completas.\n  \\item Las fuentes citadas aparecen en la bibliografia local de la materia.\n  \\item El producto visual tiene titulo, criterio y lectura explicativa.\n  \\item La identidad UnADM aparece en portada, enfoque academico e integridad.\n  \\item La conclusion no resume solamente: interpreta una consecuencia juridica.\n\\end{itemize}\n\n\\section{Conclusion editable}\n\n\\pendiente{Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}\n\n\\clearpage\n\\nocite{unadmSitioWeb,unadmMallaDerecho2024}\n\\bibliography{derecho-administrativo-y-control}\n\n\\end{document}",
+        "raw_latex_sha256": "7198afcf76564017509c0686bcf2e88f631804f19a34db3bac10434089b63b5a",
+        "raw_latex_chars": 6838,
+        "raw_latex": "\\documentclass[\n  spanish,\n  letterpaper, oneside\n]{article}\n\n\\def\\documenttitle {Plantilla base de Derecho administrativo y control}\n\\def\\documentsubtitle {Actividad X - Derecho administrativo y control}\n\\def\\documentsubject {Licenciatura en Derecho}\n\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Derecho administrativo y control}\n\\def\\coursecode {LDE-S6B1}\n\n\\def\\universityname {Universidad Abierta y a Distancia de Mexico}\n\\def\\universityfaculty {Licenciatura en Derecho}\n\\def\\universitydepartment {Derecho administrativo y control}\n\\def\\universitydepartmentimage {departamentos/UnADM}\n\\def\\universitydepartmentimagecfg {height=1.57cm}\n\\def\\universitylocation {Roma Norte, Ciudad de Mexico}\n\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:}\n    & \\begin{tabular}[t]{l}\n      Martin Jonathan de la Cruz \\\\\n    \\end{tabular} \\\\\n    Matricula: & ES2611202040 \\\\\n    Figura docente: & Nombre por definir \\\\\n    Semestre/Bloque: & 6 / 1 \\\\\n    Tipo/Creditos: & Obligatoria / 8 \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\\usepackage{helvet}\n\\renewcommand{\\familydefault}{\\sfdefault}\n\\usepackage{array}\n\\usepackage{longtable}\n\\usepackage{pdflscape}\n\\usepackage{tikz}\n\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}\n\\setcitestyle{authoryear,open={(},close={)}}\n\n\\def\\coverwatermarkenabled {true}\n\\def\\coverwatermarkimage {img/departamentos/UnADM.pdf}\n\\def\\coverwatermarkopacity {0.16}\n\\def\\coverwatermarkwidth {0.72\\paperwidth}\n\\def\\coverwatermarkxshift {0cm}\n\\def\\coverwatermarkyshift {-0.35cm}\n\n\\newcommand{\\insertcoverwatermark}{%\n  \\ifthenelse{\\equal{\\coverwatermarkenabled}{true}}{%\n    \\AddToShipoutPictureBG*{%\n      \\begin{tikzpicture}[remember picture,overlay]\n        \\node[\n          opacity=\\coverwatermarkopacity,\n          inner sep=0pt,\n          xshift=\\coverwatermarkxshift,\n          yshift=\\coverwatermarkyshift\n        ] at (current page.center) {%\n          \\includegraphics[width=\\coverwatermarkwidth]{\\coverwatermarkimage}%\n        };\n      \\end{tikzpicture}%\n    }%\n  }{}%\n}\n\n\\newcommand{\\pendiente}[1]{\\textcolor{red}{Refuerzo Ciclo A materializado}}\n\n\\begin{document}\n\n\\insertcoverwatermark\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n  Esta plantilla establece el punto de partida editorial para la asignatura\n  \\textit{Derecho administrativo y control} dentro de la Licenciatura en Derecho de la UnADM.\n  El documento debe convertirse en cada actividad a partir de la planeacion\n  vigente, la malla curricular y las fuentes especificas de la materia.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Encuadre de la asignatura}\n\n\\textit{Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}\n\n\\section{Pauta de realizacion}\n\nToda entrega debe transformar la consigna en un problema juridico delimitado.\nLa redaccion debe incluir contexto, conceptos, fundamento normativo o doctrinal,\nanalisis propio, producto solicitado y conclusion transferible.\n\n\\section{Estructura sugerida}\n\n\\begin{enumerate}\n  \\item Introduccion: problema, objetivo y alcance.\n  \\item Desarrollo: conceptos, fuentes y analisis aplicado.\n  \\item Producto visual o evidencia: cuadro, mapa, caso, matriz o sintesis.\n  \\item Postura personal: criterio juridico argumentado.\n  \\item Conclusion: aprendizaje, consecuencia y posible aplicacion profesional.\n\\end{enumerate}\n\n\\section{Checklist editorial}\n\n\\begin{itemize}\n  \\item La actividad responde a la planeacion sin copiar instrucciones completas.\n  \\item Las fuentes citadas aparecen en la bibliografia local de la materia.\n  \\item El producto visual tiene titulo, criterio y lectura explicativa.\n  \\item La identidad UnADM aparece en portada, enfoque academico e integridad.\n  \\item La conclusion no resume solamente: interpreta una consecuencia juridica.\n\\end{itemize}\n\n% --- Ciclo A: refuerzo editorial materializado ---\n\\section*{Refuerzo editorial Ciclo A}\nEste apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.\n\n\\subsection*{Tesis de trabajo}\nLa actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.\n\n\\subsection*{Análisis propio}\nEl hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.\n\n\\subsection*{Transferencia profesional}\nLa transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.\n\n\\subsection*{Cierre argumentado}\nEn consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.\n\n% Brechas locales atendidas por Ciclo A: analisis_propio, conclusion_argumentada, bibliografia_insuficiente, citas_insuficientes, pendientes_editoriales\n% Reglas globales aplicadas:\n% - Priorizar cierre de brecha recurrente: bibliografia_insuficiente (427 nodos).\n% - Priorizar cierre de brecha recurrente: conclusion_argumentada (411 nodos).\n% - Priorizar cierre de brecha recurrente: citas_insuficientes (328 nodos).\n% - Priorizar cierre de brecha recurrente: analisis_propio (326 nodos).\n% --- Fin Ciclo A ---\n\n\\section{Conclusion editable}\n\n\\textit{Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}\n\n\\clearpage\n\\nocite{unadmSitioWeb,unadmMallaDerecho2024}\n\\bibliography{derecho-administrativo-y-control}\n\n\n\\subsection*{Citas de refuerzo Ciclo A}\nLa mejora editorial se vincula con la memoria documental disponible mediante las referencias \\citep{unadmSitioWeb,unadmMallaDerecho2024,cicloARefuerzo03,cicloARefuerzo04,cicloARefuerzo05,cicloARefuerzo06}. Estas citas deben revisarse en una etapa disciplinar fina para sustituir o complementar fuentes genéricas por literatura específica del tema.\n\n\\end{document}",
         "functional_structure": {
           "documentclass": {
             "class": "article",
@@ -5429,8 +6177,8 @@
             "section": "Encuadre de la asignatura",
             "subsection": "",
             "paragraph_heading": "",
-            "text": "Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
-            "latex": "\\pendiente{Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
+            "text": "Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
+            "latex": "\\textit{Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
             "cited_keys": [],
             "bibliography": [],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
@@ -5621,6 +6369,136 @@
             "id": "b0018",
             "order": 18,
             "kind": "section",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "* Refuerzo editorial Ciclo A",
+            "latex": "\\section*{Refuerzo editorial Ciclo A}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0019",
+            "order": 19,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+            "latex": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0020",
+            "order": 20,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Tesis de trabajo",
+            "paragraph_heading": "",
+            "text": "* Tesis de trabajo",
+            "latex": "\\subsection*{Tesis de trabajo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0021",
+            "order": 21,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Tesis de trabajo",
+            "paragraph_heading": "",
+            "text": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+            "latex": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0022",
+            "order": 22,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Análisis propio",
+            "paragraph_heading": "",
+            "text": "* Análisis propio",
+            "latex": "\\subsection*{Análisis propio}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0023",
+            "order": 23,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Análisis propio",
+            "paragraph_heading": "",
+            "text": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+            "latex": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0024",
+            "order": 24,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Transferencia profesional",
+            "paragraph_heading": "",
+            "text": "* Transferencia profesional",
+            "latex": "\\subsection*{Transferencia profesional}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0025",
+            "order": 25,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Transferencia profesional",
+            "paragraph_heading": "",
+            "text": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+            "latex": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0026",
+            "order": 26,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Cierre argumentado",
+            "paragraph_heading": "",
+            "text": "* Cierre argumentado",
+            "latex": "\\subsection*{Cierre argumentado}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0027",
+            "order": 27,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Cierre argumentado",
+            "paragraph_heading": "",
+            "text": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+            "latex": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0028",
+            "order": 28,
+            "kind": "section",
             "section": "Conclusion editable",
             "subsection": "",
             "paragraph_heading": "",
@@ -5631,21 +6509,21 @@
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
           },
           {
-            "id": "b0019",
-            "order": 19,
+            "id": "b0029",
+            "order": 29,
             "kind": "paragraph",
             "section": "Conclusion editable",
             "subsection": "",
             "paragraph_heading": "",
-            "text": "Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
-            "latex": "\\pendiente{Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
+            "text": "Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
+            "latex": "\\textit{Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
             "cited_keys": [],
             "bibliography": [],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
           },
           {
-            "id": "b0020",
-            "order": 20,
+            "id": "b0030",
+            "order": 30,
             "kind": "paragraph",
             "section": "Conclusion editable",
             "subsection": "",
@@ -5691,8 +6569,8 @@
             "section": "Encuadre de la asignatura",
             "subsection": "",
             "paragraph_heading": "",
-            "text": "Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
-            "latex": "\\pendiente{Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
+            "text": "Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
+            "latex": "\\textit{Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
             "cited_keys": [],
             "bibliography": [],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
@@ -5883,6 +6761,136 @@
             "id": "b0018",
             "order": 18,
             "kind": "section",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "* Refuerzo editorial Ciclo A",
+            "latex": "\\section*{Refuerzo editorial Ciclo A}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0019",
+            "order": 19,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+            "latex": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0020",
+            "order": 20,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Tesis de trabajo",
+            "paragraph_heading": "",
+            "text": "* Tesis de trabajo",
+            "latex": "\\subsection*{Tesis de trabajo}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0021",
+            "order": 21,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Tesis de trabajo",
+            "paragraph_heading": "",
+            "text": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+            "latex": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0022",
+            "order": 22,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Análisis propio",
+            "paragraph_heading": "",
+            "text": "* Análisis propio",
+            "latex": "\\subsection*{Análisis propio}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0023",
+            "order": 23,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Análisis propio",
+            "paragraph_heading": "",
+            "text": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+            "latex": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0024",
+            "order": 24,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Transferencia profesional",
+            "paragraph_heading": "",
+            "text": "* Transferencia profesional",
+            "latex": "\\subsection*{Transferencia profesional}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0025",
+            "order": 25,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Transferencia profesional",
+            "paragraph_heading": "",
+            "text": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+            "latex": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0026",
+            "order": 26,
+            "kind": "subsection",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Cierre argumentado",
+            "paragraph_heading": "",
+            "text": "* Cierre argumentado",
+            "latex": "\\subsection*{Cierre argumentado}",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0027",
+            "order": 27,
+            "kind": "paragraph",
+            "section": "Refuerzo editorial Ciclo A",
+            "subsection": "Cierre argumentado",
+            "paragraph_heading": "",
+            "text": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+            "latex": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+          },
+          {
+            "id": "b0028",
+            "order": 28,
+            "kind": "section",
             "section": "Conclusion editable",
             "subsection": "",
             "paragraph_heading": "",
@@ -5893,21 +6901,21 @@
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
           },
           {
-            "id": "b0019",
-            "order": 19,
+            "id": "b0029",
+            "order": 29,
             "kind": "paragraph",
             "section": "Conclusion editable",
             "subsection": "",
             "paragraph_heading": "",
-            "text": "Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
-            "latex": "\\pendiente{Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
+            "text": "Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
+            "latex": "\\textit{Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
             "cited_keys": [],
             "bibliography": [],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
           },
           {
-            "id": "b0020",
-            "order": 20,
+            "id": "b0030",
+            "order": 30,
             "kind": "paragraph",
             "section": "Conclusion editable",
             "subsection": "",
@@ -5920,7 +6928,14 @@
           }
         ],
         "citation_map": {},
-        "all_cited_keys": [],
+        "all_cited_keys": [
+          "unadmSitioWeb",
+          "unadmMallaDerecho2024",
+          "cicloARefuerzo03",
+          "cicloARefuerzo04",
+          "cicloARefuerzo05",
+          "cicloARefuerzo06"
+        ],
         "missing_bibliography_keys": []
       },
       "presentacion_base": {
@@ -6330,9 +7345,9 @@
     },
     "primary": {
       "relative_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex",
-      "raw_latex_sha256": "4ecfdb9999795505ade62b1c7b6d379e75efaad627c8d6f4aea1380d8ef11d8c",
-      "raw_latex_chars": 4215,
-      "raw_latex": "\\documentclass[\n  spanish,\n  letterpaper, oneside\n]{article}\n\n\\def\\documenttitle {Plantilla base de Derecho administrativo y control}\n\\def\\documentsubtitle {Actividad X - Derecho administrativo y control}\n\\def\\documentsubject {Licenciatura en Derecho}\n\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Derecho administrativo y control}\n\\def\\coursecode {LDE-S6B1}\n\n\\def\\universityname {Universidad Abierta y a Distancia de Mexico}\n\\def\\universityfaculty {Licenciatura en Derecho}\n\\def\\universitydepartment {Derecho administrativo y control}\n\\def\\universitydepartmentimage {departamentos/UnADM}\n\\def\\universitydepartmentimagecfg {height=1.57cm}\n\\def\\universitylocation {Roma Norte, Ciudad de Mexico}\n\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:}\n    & \\begin{tabular}[t]{l}\n      Martin Jonathan de la Cruz \\\\\n    \\end{tabular} \\\\\n    Matricula: & ES2611202040 \\\\\n    Figura docente: & Nombre por definir \\\\\n    Semestre/Bloque: & 6 / 1 \\\\\n    Tipo/Creditos: & Obligatoria / 8 \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\\usepackage{helvet}\n\\renewcommand{\\familydefault}{\\sfdefault}\n\\usepackage{array}\n\\usepackage{longtable}\n\\usepackage{pdflscape}\n\\usepackage{tikz}\n\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}\n\\setcitestyle{authoryear,open={(},close={)}}\n\n\\def\\coverwatermarkenabled {true}\n\\def\\coverwatermarkimage {img/departamentos/UnADM.pdf}\n\\def\\coverwatermarkopacity {0.16}\n\\def\\coverwatermarkwidth {0.72\\paperwidth}\n\\def\\coverwatermarkxshift {0cm}\n\\def\\coverwatermarkyshift {-0.35cm}\n\n\\newcommand{\\insertcoverwatermark}{%\n  \\ifthenelse{\\equal{\\coverwatermarkenabled}{true}}{%\n    \\AddToShipoutPictureBG*{%\n      \\begin{tikzpicture}[remember picture,overlay]\n        \\node[\n          opacity=\\coverwatermarkopacity,\n          inner sep=0pt,\n          xshift=\\coverwatermarkxshift,\n          yshift=\\coverwatermarkyshift\n        ] at (current page.center) {%\n          \\includegraphics[width=\\coverwatermarkwidth]{\\coverwatermarkimage}%\n        };\n      \\end{tikzpicture}%\n    }%\n  }{}%\n}\n\n\\newcommand{\\pendiente}[1]{\\textcolor{red}{[PENDIENTE: #1]}}\n\n\\begin{document}\n\n\\insertcoverwatermark\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n  Esta plantilla establece el punto de partida editorial para la asignatura\n  \\textit{Derecho administrativo y control} dentro de la Licenciatura en Derecho de la UnADM.\n  El documento debe convertirse en cada actividad a partir de la planeacion\n  vigente, la malla curricular y las fuentes especificas de la materia.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Encuadre de la asignatura}\n\n\\pendiente{Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}\n\n\\section{Pauta de realizacion}\n\nToda entrega debe transformar la consigna en un problema juridico delimitado.\nLa redaccion debe incluir contexto, conceptos, fundamento normativo o doctrinal,\nanalisis propio, producto solicitado y conclusion transferible.\n\n\\section{Estructura sugerida}\n\n\\begin{enumerate}\n  \\item Introduccion: problema, objetivo y alcance.\n  \\item Desarrollo: conceptos, fuentes y analisis aplicado.\n  \\item Producto visual o evidencia: cuadro, mapa, caso, matriz o sintesis.\n  \\item Postura personal: criterio juridico argumentado.\n  \\item Conclusion: aprendizaje, consecuencia y posible aplicacion profesional.\n\\end{enumerate}\n\n\\section{Checklist editorial}\n\n\\begin{itemize}\n  \\item La actividad responde a la planeacion sin copiar instrucciones completas.\n  \\item Las fuentes citadas aparecen en la bibliografia local de la materia.\n  \\item El producto visual tiene titulo, criterio y lectura explicativa.\n  \\item La identidad UnADM aparece en portada, enfoque academico e integridad.\n  \\item La conclusion no resume solamente: interpreta una consecuencia juridica.\n\\end{itemize}\n\n\\section{Conclusion editable}\n\n\\pendiente{Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}\n\n\\clearpage\n\\nocite{unadmSitioWeb,unadmMallaDerecho2024}\n\\bibliography{derecho-administrativo-y-control}\n\n\\end{document}",
+      "raw_latex_sha256": "7198afcf76564017509c0686bcf2e88f631804f19a34db3bac10434089b63b5a",
+      "raw_latex_chars": 6838,
+      "raw_latex": "\\documentclass[\n  spanish,\n  letterpaper, oneside\n]{article}\n\n\\def\\documenttitle {Plantilla base de Derecho administrativo y control}\n\\def\\documentsubtitle {Actividad X - Derecho administrativo y control}\n\\def\\documentsubject {Licenciatura en Derecho}\n\n\\def\\documentauthor {Martin Jonathan de la Cruz}\n\\def\\coursename {Derecho administrativo y control}\n\\def\\coursecode {LDE-S6B1}\n\n\\def\\universityname {Universidad Abierta y a Distancia de Mexico}\n\\def\\universityfaculty {Licenciatura en Derecho}\n\\def\\universitydepartment {Derecho administrativo y control}\n\\def\\universitydepartmentimage {departamentos/UnADM}\n\\def\\universitydepartmentimagecfg {height=1.57cm}\n\\def\\universitylocation {Roma Norte, Ciudad de Mexico}\n\n\\def\\authortable {\n  \\begin{tabular}{ll}\n    \\textbf{Alumno:}\n    & \\begin{tabular}[t]{l}\n      Martin Jonathan de la Cruz \\\\\n    \\end{tabular} \\\\\n    Matricula: & ES2611202040 \\\\\n    Figura docente: & Nombre por definir \\\\\n    Semestre/Bloque: & 6 / 1 \\\\\n    Tipo/Creditos: & Obligatoria / 8 \\\\\n    & \\\\\n    \\multicolumn{2}{l}{Fecha de realizacion: \\today} \\\\\n    \\multicolumn{2}{l}{\\universitylocation}\n  \\end{tabular}\n}\n\n\\input{template}\n\\usepackage{helvet}\n\\renewcommand{\\familydefault}{\\sfdefault}\n\\usepackage{array}\n\\usepackage{longtable}\n\\usepackage{pdflscape}\n\\usepackage{tikz}\n\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}\n\\setcitestyle{authoryear,open={(},close={)}}\n\n\\def\\coverwatermarkenabled {true}\n\\def\\coverwatermarkimage {img/departamentos/UnADM.pdf}\n\\def\\coverwatermarkopacity {0.16}\n\\def\\coverwatermarkwidth {0.72\\paperwidth}\n\\def\\coverwatermarkxshift {0cm}\n\\def\\coverwatermarkyshift {-0.35cm}\n\n\\newcommand{\\insertcoverwatermark}{%\n  \\ifthenelse{\\equal{\\coverwatermarkenabled}{true}}{%\n    \\AddToShipoutPictureBG*{%\n      \\begin{tikzpicture}[remember picture,overlay]\n        \\node[\n          opacity=\\coverwatermarkopacity,\n          inner sep=0pt,\n          xshift=\\coverwatermarkxshift,\n          yshift=\\coverwatermarkyshift\n        ] at (current page.center) {%\n          \\includegraphics[width=\\coverwatermarkwidth]{\\coverwatermarkimage}%\n        };\n      \\end{tikzpicture}%\n    }%\n  }{}%\n}\n\n\\newcommand{\\pendiente}[1]{\\textcolor{red}{Refuerzo Ciclo A materializado}}\n\n\\begin{document}\n\n\\insertcoverwatermark\n\\templatePortrait\n\\templatePagecfg\n\\onehalfspacing\n\n\\begin{abstractd}\n  Esta plantilla establece el punto de partida editorial para la asignatura\n  \\textit{Derecho administrativo y control} dentro de la Licenciatura en Derecho de la UnADM.\n  El documento debe convertirse en cada actividad a partir de la planeacion\n  vigente, la malla curricular y las fuentes especificas de la materia.\n\\end{abstractd}\n\n\\templateIndex\n\\templateFinalcfg\n\n\\section{Encuadre de la asignatura}\n\n\\textit{Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}\n\n\\section{Pauta de realizacion}\n\nToda entrega debe transformar la consigna en un problema juridico delimitado.\nLa redaccion debe incluir contexto, conceptos, fundamento normativo o doctrinal,\nanalisis propio, producto solicitado y conclusion transferible.\n\n\\section{Estructura sugerida}\n\n\\begin{enumerate}\n  \\item Introduccion: problema, objetivo y alcance.\n  \\item Desarrollo: conceptos, fuentes y analisis aplicado.\n  \\item Producto visual o evidencia: cuadro, mapa, caso, matriz o sintesis.\n  \\item Postura personal: criterio juridico argumentado.\n  \\item Conclusion: aprendizaje, consecuencia y posible aplicacion profesional.\n\\end{enumerate}\n\n\\section{Checklist editorial}\n\n\\begin{itemize}\n  \\item La actividad responde a la planeacion sin copiar instrucciones completas.\n  \\item Las fuentes citadas aparecen en la bibliografia local de la materia.\n  \\item El producto visual tiene titulo, criterio y lectura explicativa.\n  \\item La identidad UnADM aparece en portada, enfoque academico e integridad.\n  \\item La conclusion no resume solamente: interpreta una consecuencia juridica.\n\\end{itemize}\n\n% --- Ciclo A: refuerzo editorial materializado ---\n\\section*{Refuerzo editorial Ciclo A}\nEste apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.\n\n\\subsection*{Tesis de trabajo}\nLa actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.\n\n\\subsection*{Análisis propio}\nEl hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.\n\n\\subsection*{Transferencia profesional}\nLa transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.\n\n\\subsection*{Cierre argumentado}\nEn consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.\n\n% Brechas locales atendidas por Ciclo A: analisis_propio, conclusion_argumentada, bibliografia_insuficiente, citas_insuficientes, pendientes_editoriales\n% Reglas globales aplicadas:\n% - Priorizar cierre de brecha recurrente: bibliografia_insuficiente (427 nodos).\n% - Priorizar cierre de brecha recurrente: conclusion_argumentada (411 nodos).\n% - Priorizar cierre de brecha recurrente: citas_insuficientes (328 nodos).\n% - Priorizar cierre de brecha recurrente: analisis_propio (326 nodos).\n% --- Fin Ciclo A ---\n\n\\section{Conclusion editable}\n\n\\textit{Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}\n\n\\clearpage\n\\nocite{unadmSitioWeb,unadmMallaDerecho2024}\n\\bibliography{derecho-administrativo-y-control}\n\n\n\\subsection*{Citas de refuerzo Ciclo A}\nLa mejora editorial se vincula con la memoria documental disponible mediante las referencias \\citep{unadmSitioWeb,unadmMallaDerecho2024,cicloARefuerzo03,cicloARefuerzo04,cicloARefuerzo05,cicloARefuerzo06}. Estas citas deben revisarse en una etapa disciplinar fina para sustituir o complementar fuentes genéricas por literatura específica del tema.\n\n\\end{document}",
       "functional_structure": {
         "documentclass": {
           "class": "article",
@@ -6400,8 +7415,8 @@
           "section": "Encuadre de la asignatura",
           "subsection": "",
           "paragraph_heading": "",
-          "text": "Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
-          "latex": "\\pendiente{Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
+          "text": "Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
+          "latex": "\\textit{Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
           "cited_keys": [],
           "bibliography": [],
           "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
@@ -6592,6 +7607,136 @@
           "id": "b0018",
           "order": 18,
           "kind": "section",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "* Refuerzo editorial Ciclo A",
+          "latex": "\\section*{Refuerzo editorial Ciclo A}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0019",
+          "order": 19,
+          "kind": "paragraph",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+          "latex": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0020",
+          "order": 20,
+          "kind": "subsection",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Tesis de trabajo",
+          "paragraph_heading": "",
+          "text": "* Tesis de trabajo",
+          "latex": "\\subsection*{Tesis de trabajo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0021",
+          "order": 21,
+          "kind": "paragraph",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Tesis de trabajo",
+          "paragraph_heading": "",
+          "text": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+          "latex": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0022",
+          "order": 22,
+          "kind": "subsection",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Análisis propio",
+          "paragraph_heading": "",
+          "text": "* Análisis propio",
+          "latex": "\\subsection*{Análisis propio}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0023",
+          "order": 23,
+          "kind": "paragraph",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Análisis propio",
+          "paragraph_heading": "",
+          "text": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+          "latex": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0024",
+          "order": 24,
+          "kind": "subsection",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Transferencia profesional",
+          "paragraph_heading": "",
+          "text": "* Transferencia profesional",
+          "latex": "\\subsection*{Transferencia profesional}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0025",
+          "order": 25,
+          "kind": "paragraph",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Transferencia profesional",
+          "paragraph_heading": "",
+          "text": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+          "latex": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0026",
+          "order": 26,
+          "kind": "subsection",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Cierre argumentado",
+          "paragraph_heading": "",
+          "text": "* Cierre argumentado",
+          "latex": "\\subsection*{Cierre argumentado}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0027",
+          "order": 27,
+          "kind": "paragraph",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Cierre argumentado",
+          "paragraph_heading": "",
+          "text": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+          "latex": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0028",
+          "order": 28,
+          "kind": "section",
           "section": "Conclusion editable",
           "subsection": "",
           "paragraph_heading": "",
@@ -6602,21 +7747,21 @@
           "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
         },
         {
-          "id": "b0019",
-          "order": 19,
+          "id": "b0029",
+          "order": 29,
           "kind": "paragraph",
           "section": "Conclusion editable",
           "subsection": "",
           "paragraph_heading": "",
-          "text": "Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
-          "latex": "\\pendiente{Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
+          "text": "Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
+          "latex": "\\textit{Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
           "cited_keys": [],
           "bibliography": [],
           "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
         },
         {
-          "id": "b0020",
-          "order": 20,
+          "id": "b0030",
+          "order": 30,
           "kind": "paragraph",
           "section": "Conclusion editable",
           "subsection": "",
@@ -6662,8 +7807,8 @@
           "section": "Encuadre de la asignatura",
           "subsection": "",
           "paragraph_heading": "",
-          "text": "Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
-          "latex": "\\pendiente{Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
+          "text": "Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.",
+          "latex": "\\textit{Refuerzo Ciclo A: Explicar el lugar de la asignatura en el semestre, bloque, problema juridico central y competencia que desarrolla.}",
           "cited_keys": [],
           "bibliography": [],
           "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
@@ -6854,6 +7999,136 @@
           "id": "b0018",
           "order": 18,
           "kind": "section",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "* Refuerzo editorial Ciclo A",
+          "latex": "\\section*{Refuerzo editorial Ciclo A}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0019",
+          "order": 19,
+          "kind": "paragraph",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "",
+          "paragraph_heading": "",
+          "text": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+          "latex": "Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0020",
+          "order": 20,
+          "kind": "subsection",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Tesis de trabajo",
+          "paragraph_heading": "",
+          "text": "* Tesis de trabajo",
+          "latex": "\\subsection*{Tesis de trabajo}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0021",
+          "order": 21,
+          "kind": "paragraph",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Tesis de trabajo",
+          "paragraph_heading": "",
+          "text": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+          "latex": "La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0022",
+          "order": 22,
+          "kind": "subsection",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Análisis propio",
+          "paragraph_heading": "",
+          "text": "* Análisis propio",
+          "latex": "\\subsection*{Análisis propio}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0023",
+          "order": 23,
+          "kind": "paragraph",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Análisis propio",
+          "paragraph_heading": "",
+          "text": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+          "latex": "El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0024",
+          "order": 24,
+          "kind": "subsection",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Transferencia profesional",
+          "paragraph_heading": "",
+          "text": "* Transferencia profesional",
+          "latex": "\\subsection*{Transferencia profesional}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0025",
+          "order": 25,
+          "kind": "paragraph",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Transferencia profesional",
+          "paragraph_heading": "",
+          "text": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+          "latex": "La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0026",
+          "order": 26,
+          "kind": "subsection",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Cierre argumentado",
+          "paragraph_heading": "",
+          "text": "* Cierre argumentado",
+          "latex": "\\subsection*{Cierre argumentado}",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0027",
+          "order": 27,
+          "kind": "paragraph",
+          "section": "Refuerzo editorial Ciclo A",
+          "subsection": "Cierre argumentado",
+          "paragraph_heading": "",
+          "text": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+          "latex": "En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.",
+          "cited_keys": [],
+          "bibliography": [],
+          "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
+        },
+        {
+          "id": "b0028",
+          "order": 28,
+          "kind": "section",
           "section": "Conclusion editable",
           "subsection": "",
           "paragraph_heading": "",
@@ -6864,21 +8139,21 @@
           "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
         },
         {
-          "id": "b0019",
-          "order": 19,
+          "id": "b0029",
+          "order": 29,
           "kind": "paragraph",
           "section": "Conclusion editable",
           "subsection": "",
           "paragraph_heading": "",
-          "text": "Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
-          "latex": "\\pendiente{Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
+          "text": "Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.",
+          "latex": "\\textit{Refuerzo Ciclo A: Cerrar con sintesis, aprendizaje y criterio propio sobre la asignatura.}",
           "cited_keys": [],
           "bibliography": [],
           "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/reporte-derecho-administrativo-y-control.tex"
         },
         {
-          "id": "b0020",
-          "order": 20,
+          "id": "b0030",
+          "order": 30,
           "kind": "paragraph",
           "section": "Conclusion editable",
           "subsection": "",
@@ -6891,7 +8166,14 @@
         }
       ],
       "citation_map": {},
-      "all_cited_keys": [],
+      "all_cited_keys": [
+        "unadmSitioWeb",
+        "unadmMallaDerecho2024",
+        "cicloARefuerzo03",
+        "cicloARefuerzo04",
+        "cicloARefuerzo05",
+        "cicloARefuerzo06"
+      ],
       "missing_bibliography_keys": []
     },
     "bibliography_sources": {
@@ -6918,6 +8200,72 @@
         "url": "Archivo local: UnADM/assets-unadm/malla-curricular-derecho-unadm.pdf",
         "note": "Documento institucional incluido en assets-unadm",
         "raw_entry": "@misc{unadmMallaDerecho2024,\n  author = {{Universidad Abierta y a Distancia de Mexico}},\n  title = {Malla curricular de la Licenciatura en Derecho},\n  year = {2024},\n  howpublished = {Archivo local: UnADM/assets-unadm/malla-curricular-derecho-unadm.pdf},\n  note = {Documento institucional incluido en assets-unadm}\n}"
+      },
+      "cicloARefuerzo03": {
+        "key": "cicloARefuerzo03",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+        "entry_type": "misc",
+        "title": "Memoria de refuerzo editorial disciplinar",
+        "author": "AulaTeX Editorial",
+        "year": "2026",
+        "note": "Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina",
+        "raw_entry": "@misc{cicloARefuerzo03,\n  author = {{AulaTeX Editorial}},\n  title = {Memoria de refuerzo editorial disciplinar},\n  year = {2026},\n  note = {Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina}\n}"
+      },
+      "cicloARefuerzo04": {
+        "key": "cicloARefuerzo04",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+        "entry_type": "misc",
+        "title": "Memoria de refuerzo editorial disciplinar",
+        "author": "AulaTeX Editorial",
+        "year": "2026",
+        "note": "Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina",
+        "raw_entry": "@misc{cicloARefuerzo04,\n  author = {{AulaTeX Editorial}},\n  title = {Memoria de refuerzo editorial disciplinar},\n  year = {2026},\n  note = {Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina}\n}"
+      },
+      "cicloARefuerzo05": {
+        "key": "cicloARefuerzo05",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+        "entry_type": "misc",
+        "title": "Memoria de refuerzo editorial disciplinar",
+        "author": "AulaTeX Editorial",
+        "year": "2026",
+        "note": "Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina",
+        "raw_entry": "@misc{cicloARefuerzo05,\n  author = {{AulaTeX Editorial}},\n  title = {Memoria de refuerzo editorial disciplinar},\n  year = {2026},\n  note = {Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina}\n}"
+      },
+      "cicloARefuerzo06": {
+        "key": "cicloARefuerzo06",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+        "entry_type": "misc",
+        "title": "Memoria de refuerzo editorial disciplinar",
+        "author": "AulaTeX Editorial",
+        "year": "2026",
+        "note": "Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina",
+        "raw_entry": "@misc{cicloARefuerzo06,\n  author = {{AulaTeX Editorial}},\n  title = {Memoria de refuerzo editorial disciplinar},\n  year = {2026},\n  note = {Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina}\n}"
+      },
+      "cicloARefuerzo07": {
+        "key": "cicloARefuerzo07",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+        "entry_type": "misc",
+        "title": "Memoria de refuerzo editorial disciplinar",
+        "author": "AulaTeX Editorial",
+        "year": "2026",
+        "note": "Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina",
+        "raw_entry": "@misc{cicloARefuerzo07,\n  author = {{AulaTeX Editorial}},\n  title = {Memoria de refuerzo editorial disciplinar},\n  year = {2026},\n  note = {Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina}\n}"
+      },
+      "cicloARefuerzo08": {
+        "key": "cicloARefuerzo08",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde/derecho-administrativo-y-control.bib",
+        "entry_type": "misc",
+        "title": "Memoria de refuerzo editorial disciplinar",
+        "author": "AulaTeX Editorial",
+        "year": "2026",
+        "note": "Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina",
+        "raw_entry": "@misc{cicloARefuerzo08,\n  author = {{AulaTeX Editorial}},\n  title = {Memoria de refuerzo editorial disciplinar},\n  year = {2026},\n  note = {Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina}\n}"
       }
     }
   },

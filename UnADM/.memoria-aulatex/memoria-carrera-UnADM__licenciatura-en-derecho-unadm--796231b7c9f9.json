@@ -441,14 +441,23 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "licenciatura-en-derecho-unadm",
+        "subject_rule": "Actividad 3 - licenciatura-en-derecho-unadm",
         "scope_label": "licenciatura-en-derecho-unadm"
       },
       "didactic_contract": {
-        "detected_id": "general",
-        "aliases": [],
-        "required_visible_elements": [],
-        "preservation_rule": "Conservar la forma visible solicitada por la consigna."
+        "detected_id": "cuestionario_diagnostico",
+        "aliases": [
+          "cuestionario",
+          "diagnóstico",
+          "diagnostico",
+          "reactivo"
+        ],
+        "required_visible_elements": [
+          "pregunta",
+          "respuesta",
+          "justificación"
+        ],
+        "preservation_rule": "Si el insumo es cuestionario, el desarrollo visible debe conservar reactivos, respuestas y justificaciones en tabla compacta o lista estructurada; no debe transformarse en ensayo salvo que la consigna lo pida."
       },
       "bibliography_contract": {
         "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
@@ -459,8 +468,8 @@
         "institution": "UnADM",
         "career": "licenciatura-en-derecho-unadm",
         "subject": "",
-        "activity": "",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/teoria-del-estado-y-constitucion-lde"
+        "activity": "Actividad 3",
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-3"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -491,7 +500,7 @@
         },
         {
           "scope_key": "interinstitucional",
-          "has_memory": true
+          "has_memory": false
         },
         {
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
@@ -528,19 +537,22 @@
           "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde",
           "UnADM/licenciatura-en-derecho-unadm/derecho-de-la-contratacion-internacional-lde"
         ],
-        "source_artifacts": []
+        "source_artifacts": [
+          "UnADM/licenciatura-en-derecho-unadm/referencias-ciclo-a.bib",
+          "UnADM/licenciatura-en-derecho-unadm/reporte-licenciatura-en-derecho-unadm-Actividad-1.tex"
+        ]
       },
       "confidence": {
-        "global": 0.8,
+        "global": 1.0,
         "by_section": {
-          "heading_contract": 0.4,
+          "heading_contract": 0.6,
           "didactic_contract": 0.5,
-          "bibliography_contract": 0.7
+          "bibliography_contract": 0.9
         }
       }
     },
     "detail_planner": {
-      "run_id": "20260710-191207",
+      "run_id": "20260717-155454",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm",

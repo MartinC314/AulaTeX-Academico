@@ -748,7 +748,19 @@
     "Análisis propio y postura académica.",
     "Conclusión transferible a la práctica jurídica.",
     "Este documento integra las notas limpias de bienvenida, introducción y objetivo de la asignatura de Garantías Constitucionales. Su propósito es conservar, en formato académico y verificable, el mensaje inicial dirigido al grupo, la presentación del docente, lo",
-    "La fuente formal local `Programa de asignatura - Garantías constitucionales.pdf` confirma el encuadre: Dirección divisional de Ciencias Sociales y Administrativas, programa educativo Derecho, segundo semestre, primer bloque y asignatura/mat"
+    "La fuente formal local `Programa de asignatura - Garantías constitucionales.pdf` confirma el encuadre: Dirección divisional de Ciencias Sociales y Administrativas, programa educativo Derecho, segundo semestre, primer bloque y asignatura/mat",
+    "Materia de la Licenciatura en Derecho de la UnADM preparada por AulaTeX.",
+    "## Estructura canonica",
+    "`reporte-garantias-constitucionales.tex`: plantilla base de reporte/informe academico.",
+    "`reporte-garantias-constitucionales-Actividad-3.tex`: plantilla inicial de actividad.",
+    "`presentacion-garantias-constitucionales.tex`: presentacion base.",
+    "Asignatura de la Licenciatura en Derecho de la UnADM ubicada en semestre 2, bloque 1.",
+    "Tipo: Obligatoria. Creditos: 8.",
+    "Transformar cada consigna en un producto juridico verificable: problema, fundamento, analisis, evidencia, postura y cierre profesional.",
+    "Marco constitucional y normativo de la materia.",
+    "Instituciones, sujetos y problemas juridicos relevantes.",
+    "Aplicacion practica en contexto mexicano.",
+    "Abrir con una afirmacion fuerte que traduzca la consigna a problema juridico."
   ],
   "concepts": [
     "Problema juridico o social que activa la asignatura.",
@@ -770,7 +782,18 @@
     "Foro diagnostico sobre constitucion y derechos :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
     "Corpus consolidado para la Actividad 1 de Garantias Constitucionales :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
     "Referencias APA :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
-    "Programa de asignatura: Garantias constitucionales :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib"
+    "Programa de asignatura: Garantias constitucionales :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "Marco constitucional y normativo de la materia.",
+    "Instituciones, sujetos y problemas juridicos relevantes.",
+    "Aplicacion practica en contexto mexicano.",
+    "El Estado a traves de la historia :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "¿Cómo se hicieron los derechos humanos? Vol. I: un viaje por la historia de los principales derechos de las personas :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "Derechos humanos: teorías y doctrinas :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "Los derechos humanos en México :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "Mapa conceptual :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "Publication Manual of the American Psychological Association (7.ª ed.) :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib"
   ],
   "section_titles": [
     "Encuadre de la asignatura",
@@ -786,9 +809,19 @@
     "Ruta inicial de aprendizaje",
     "Términos relacionados",
     "Lectura editorial",
-    "Conclusión"
+    "Conclusión",
+    "Introduccion",
+    "Encuadre institucional y juridico",
+    "Memoria editorial aplicada",
+    "Marcadores de investigacion",
+    "Desarrollo del producto",
+    "Checklist de calidad",
+    "Conclusion"
   ],
-  "citations": [],
+  "citations": [
+    "unadmSitioWeb",
+    "unadmMallaDerecho2024"
+  ],
   "bibliography_index": [
     "unadmSitioWeb :: Universidad Abierta y a Distancia de Mexico :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
     "unadmMallaDerecho2024 :: Malla curricular de la Licenciatura en Derecho :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
@@ -800,7 +833,16 @@
     "notaForoDiagnosticoConstitucion2026 :: Foro diagnostico sobre constitucion y derechos :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
     "corpusForoDiagnosticoGarantias2026 :: Corpus consolidado para la Actividad 1 de Garantias Constitucionales :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
     "normasApaReferencias2020 :: Referencias APA :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
-    "programaAsignaturaGarantiasConstitucionales2026 :: Programa de asignatura: Garantias constitucionales :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib"
+    "programaAsignaturaGarantiasConstitucionales2026 :: Programa de asignatura: Garantias constitucionales :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "cicloARefuerzo07 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "cicloARefuerzo08 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "notaEstadoHistoria2026 :: El Estado a traves de la historia :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "rabinovichBerkmanDerechosHumanos :: ¿Cómo se hicieron los derechos humanos? Vol. I: un viaje por la historia de los principales derechos de las personas :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "marcanoSalazarDerechosHumanos :: Derechos humanos: teorías y doctrinas :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "alvarezIcazaDerechosMexico :: Los derechos humanos en México :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "lopezMapaConceptual2022 :: Mapa conceptual :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "cpeum2026 :: Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+    "normasApaReferencias2020 :: Publication Manual of the American Psychological Association (7.ª ed.) :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib"
   ],
   "node_metadata": {
     "scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde",
@@ -816,7 +858,7 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 1 - garantias-constitucionales-lde",
+        "subject_rule": "Actividad 3 - garantias-constitucionales-lde",
         "scope_label": "garantias-constitucionales-lde"
       },
       "didactic_contract": {
@@ -843,8 +885,8 @@
         "institution": "UnADM",
         "career": "licenciatura-en-derecho-unadm",
         "subject": "garantias-constitucionales-lde",
-        "activity": "Actividad 1",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-1"
+        "activity": "Actividad 3",
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-3"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -879,7 +921,7 @@
         },
         {
           "scope_key": "interinstitucional",
-          "has_memory": true
+          "has_memory": false
         },
         {
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
@@ -898,10 +940,7 @@
           "has_memory": true
         }
       ],
-      "novelty_signals": [
-        "heading_contract",
-        "institutional_identity"
-      ],
+      "novelty_signals": [],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -919,7 +958,7 @@
           "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/README.md",
           "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
           "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/reporte-garantias-constitucionales-Actividad-1.tex",
-          "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/reporte-garantias-constitucionales.tex",
+          "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/reporte-garantias-constitucionales-Actividad-2.tex",
           "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/presentacion-garantias-constitucionales-Actividad-1.tex"
         ]
       },
@@ -933,7 +972,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260710-190533",
+      "run_id": "20260717-155914",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde",
@@ -945,7 +984,7 @@
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
         "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde"
       ],
-      "novelty_count": 2
+      "novelty_count": 0
     }
   },
   "curricular_context": {
@@ -1063,7 +1102,7 @@
           "heading_contract": {
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-            "subject_rule": "Actividad 1 - garantias-constitucionales-lde",
+            "subject_rule": "Actividad 3 - garantias-constitucionales-lde",
             "scope_label": "garantias-constitucionales-lde"
           },
           "didactic_contract": {
@@ -1072,12 +1111,18 @@
               "cuestionario",
               "diagnóstico",
               "diagnostico",
-              "reactivo"
+              "reactivo",
+              "mapa conceptual",
+              "conceptos",
+              "diagrama"
             ],
             "required_visible_elements": [
               "pregunta",
               "respuesta",
-              "justificación"
+              "justificación",
+              "conceptos",
+              "relaciones",
+              "lectura explicativa"
             ],
             "preservation_rule": "Si el insumo es cuestionario, el desarrollo visible debe conservar reactivos, respuestas y justificaciones en tabla compacta o lista estructurada; no debe transformarse en ensayo salvo que la consigna lo pida."
           },
@@ -1090,8 +1135,8 @@
             "institution": "UnADM",
             "career": "licenciatura-en-derecho-unadm",
             "subject": "garantias-constitucionales-lde",
-            "activity": "Actividad 1",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-1"
+            "activity": "Actividad 3",
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-3"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -1119,12 +1164,14 @@
             "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde', 'has_memory': True}",
             "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde', 'has_memory': True}",
             "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde', 'has_memory': True}",
-            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde', 'has_memory': True}"
+            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde', 'has_memory': True}",
+            "{'scope_key': 'interinstitucional', 'has_memory': False}"
           ],
           "novelty_signals": [
             "bootstrap",
             "heading_contract",
-            "institutional_identity"
+            "institutional_identity",
+            "didactic_contract"
           ],
           "derived_from": {
             "local_memory": true,
@@ -1144,7 +1191,8 @@
               "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
               "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/reporte-garantias-constitucionales-Actividad-1.tex",
               "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/reporte-garantias-constitucionales.tex",
-              "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/presentacion-garantias-constitucionales-Actividad-1.tex"
+              "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/presentacion-garantias-constitucionales-Actividad-1.tex",
+              "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/reporte-garantias-constitucionales-Actividad-2.tex"
             ]
           },
           "confidence": {
@@ -1157,7 +1205,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260710-190533",
+          "run_id": "20260717-155914",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde",
@@ -1169,7 +1217,7 @@
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
             "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde"
           ],
-          "novelty_count": 2
+          "novelty_count": 0
         }
       },
       "curricular_context": {
@@ -1224,6 +1272,9 @@
       "Producto solicitado por la planeación.",
       "Análisis propio y postura académica.",
       "Conclusión transferible a la práctica jurídica.",
+      "Marco constitucional y normativo de la materia.",
+      "Instituciones, sujetos y problemas juridicos relevantes.",
+      "Aplicacion practica en contexto mexicano.",
       "Identidad institucional UnADM",
       "Integridad academica",
       "Problema juridico o social",
@@ -1235,10 +1286,7 @@
       "Se preserva identidad UnADM y contexto curricular local del destino",
       "Se mantiene separacion entre control editorial transferible y contenido disciplinar no equivalente",
       "Se crea cerebro editorial minimo en ADN con foco en estructura, calidad y trazabilidad",
-      "Mantener identidad institucional UnADM en tono, portada y metadatos",
-      "Usar contexto curricular del destino: Licenciatura en Derecho, semestre 2, bloque 1, obligatoria, 8 creditos",
-      "Usar la carpeta de la asignatura como punto de entrada canonico",
-      "Marcar como supuesto todo dato no visible en la consigna local"
+      "Mantener identidad institucional UnADM en tono, portada y metadatos"
     ],
     "structure": {
       "section_titles": [
@@ -1255,7 +1303,14 @@
         "Ruta inicial de aprendizaje",
         "Términos relacionados",
         "Lectura editorial",
-        "Conclusión"
+        "Conclusión",
+        "Introduccion",
+        "Encuadre institucional y juridico",
+        "Memoria editorial aplicada",
+        "Marcadores de investigacion",
+        "Desarrollo del producto",
+        "Checklist de calidad",
+        "Conclusion"
       ],
       "artifact_types": [
         "reporte",
@@ -1271,7 +1326,17 @@
           "array",
           "longtable",
           "pdflscape",
-          "tikz"
+          "tikz",
+          "geometry",
+          "inputenc",
+          "fontenc",
+          "babel",
+          "setspace",
+          "graphicx",
+          "xcolor",
+          "booktabs",
+          "hyperref",
+          "natbib"
         ],
         "inputs": [
           "template"
@@ -1283,7 +1348,9 @@
           "abstractd",
           "enumerate",
           "itemize",
-          "longtable"
+          "longtable",
+          "titlepage",
+          "center"
         ],
         "template_commands": [
           "setcitestyle",
@@ -1398,7 +1465,10 @@
       "Ciclo 2: se refuerza transferencia transversal solo de abstracciones estables.",
       "Ciclo 2: se mantiene separacion entre control editorial y contenido disciplinar.",
       "ADN sintetizado con 638 conceptos, 15 citas y 139 relaciones.",
-      "Memoria de redacción preservada en 36 bloques."
+      "Memoria de redacción preservada en 36 bloques.",
+      "ADN sintetizado con 639 conceptos, 15 citas y 139 relaciones.",
+      "ADN sintetizado con 649 conceptos, 15 citas y 142 relaciones.",
+      "Memoria de redacción preservada en 25 bloques."
     ],
     "knowledge_graph": {
       "concepts": [
@@ -2039,7 +2109,18 @@
         "Plantilla de presentación local: presentacion-garantias-constitucionales.tex",
         "Regla heredada útil: no inventar fuentes ni entradas BibTeX",
         "Regla local útil: distinguir derechos humanos, garantías de protección y medios de control constitucional",
-        "Programa de asignatura: Garantias constitucionales :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib"
+        "Programa de asignatura: Garantias constitucionales :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "Marco constitucional y normativo de la materia.",
+        "Instituciones, sujetos y problemas juridicos relevantes.",
+        "Aplicacion practica en contexto mexicano.",
+        "El Estado a traves de la historia :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "¿Cómo se hicieron los derechos humanos? Vol. I: un viaje por la historia de los principales derechos de las personas :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "Derechos humanos: teorías y doctrinas :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "Los derechos humanos en México :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "Mapa conceptual :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "Publication Manual of the American Psychological Association (7.ª ed.) :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib"
       ],
       "citations": [
         "unadmSitioWeb",
@@ -2264,7 +2345,16 @@
         "No añadir datos curriculares distintos a semestre 2, bloque 1, obligatoria y 8 créditos.",
         "Confirmar que el tono sea respetuoso y formativo.",
         "Verificar que no queden placeholders literales en rutas, nombres de archivo o bibliografía.",
-        "programaAsignaturaGarantiasConstitucionales2026 :: Programa de asignatura: Garantias constitucionales :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib"
+        "programaAsignaturaGarantiasConstitucionales2026 :: Programa de asignatura: Garantias constitucionales :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "cicloARefuerzo07 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "cicloARefuerzo08 :: Memoria de refuerzo editorial disciplinar :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "notaEstadoHistoria2026 :: El Estado a traves de la historia :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "rabinovichBerkmanDerechosHumanos :: ¿Cómo se hicieron los derechos humanos? Vol. I: un viaje por la historia de los principales derechos de las personas :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "marcanoSalazarDerechosHumanos :: Derechos humanos: teorías y doctrinas :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "alvarezIcazaDerechosMexico :: Los derechos humanos en México :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "lopezMapaConceptual2022 :: Mapa conceptual :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "cpeum2026 :: Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "normasApaReferencias2020 :: Publication Manual of the American Psychological Association (7.ª ed.) :: fuente=UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib"
       ],
       "relations": [
         {
@@ -3379,6 +3469,34 @@
           "weight": 1,
           "justification": "Coaparecen en la misma retroalimentación editorial.",
           "evidence": []
+        },
+        {
+          "source": "Resumen editorial",
+          "target": "Analisis propio",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0008"
+          ]
+        },
+        {
+          "source": "Desarrollo del producto",
+          "target": "Analisis propio",
+          "kind": "organizes",
+          "weight": 2,
+          "evidence": [
+            "b0019",
+            "b0020"
+          ]
+        },
+        {
+          "source": "Desarrollo del producto",
+          "target": "Analisis propio",
+          "kind": "develops",
+          "weight": 1,
+          "evidence": [
+            "b0019"
+          ]
         }
       ],
       "concept_weights": {
@@ -10123,6 +10241,89 @@
         "url": "Archivo local: UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/Programa de asignatura - Garantias constitucionales.pdf",
         "note": "Programa de asignatura/materia; Division de Ciencias Sociales y Administrativas; programa educativo Derecho; segundo semestre, primer bloque; incorporado a memoria editorial AulaTeX el 2026-07-09",
         "raw_entry": "@misc{programaAsignaturaGarantiasConstitucionales2026,\n  author = {{Universidad Abierta y a Distancia de Mexico}},\n  title = {Programa de asignatura: Garantias constitucionales},\n  year = {2026},\n  howpublished = {Archivo local: UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/referencias-garantias-constitucionales/Programa de asignatura - Garantias constitucionales.pdf},\n  note = {Programa de asignatura/materia; Division de Ciencias Sociales y Administrativas; programa educativo Derecho; segundo semestre, primer bloque; incorporado a memoria editorial AulaTeX el 2026-07-09}\n}"
+      },
+      "cicloARefuerzo07": {
+        "key": "cicloARefuerzo07",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "entry_type": "misc",
+        "title": "Memoria de refuerzo editorial disciplinar",
+        "author": "AulaTeX Editorial",
+        "year": "2026",
+        "note": "Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina",
+        "raw_entry": "@misc{cicloARefuerzo07,\n  author = {{AulaTeX Editorial}},\n  title = {Memoria de refuerzo editorial disciplinar},\n  year = {2026},\n  note = {Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina}\n}"
+      },
+      "cicloARefuerzo08": {
+        "key": "cicloARefuerzo08",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "entry_type": "misc",
+        "title": "Memoria de refuerzo editorial disciplinar",
+        "author": "AulaTeX Editorial",
+        "year": "2026",
+        "note": "Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina",
+        "raw_entry": "@misc{cicloARefuerzo08,\n  author = {{AulaTeX Editorial}},\n  title = {Memoria de refuerzo editorial disciplinar},\n  year = {2026},\n  note = {Entrada generada para documentar el ciclo de mejora incremental; debe sustituirse por fuente disciplinar verificada en revisión fina}\n}"
+      },
+      "notaEstadoHistoria2026": {
+        "key": "notaEstadoHistoria2026",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "entry_type": "misc",
+        "title": "El Estado a traves de la historia",
+        "author": "Universidad Abierta y a Distancia de Mexico",
+        "year": "2026",
+        "url": "Nota local de la asignatura Garantias Constitucionales",
+        "note": "Corpus local consultado el 16 de julio de 2026",
+        "raw_entry": "@misc{notaEstadoHistoria2026,\n  author = {{Universidad Abierta y a Distancia de Mexico}},\n  title = {El Estado a traves de la historia},\n  year = {2026},\n  howpublished = {Nota local de la asignatura Garantias Constitucionales},\n  note = {Corpus local consultado el 16 de julio de 2026}\n}"
+      },
+      "rabinovichBerkmanDerechosHumanos": {
+        "key": "rabinovichBerkmanDerechosHumanos",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "entry_type": "book",
+        "title": "¿Cómo se hicieron los derechos humanos? Vol. I: un viaje por la historia de los principales derechos de las personas",
+        "author": "Rabinovich Berkman, Ricardo David",
+        "year": "2023",
+        "publisher": "Ediciones Didot",
+        "note": "Capítulo 1. Consultado en la Biblioteca Digital de la UnADM",
+        "raw_entry": "@book{rabinovichBerkmanDerechosHumanos,\n  author = {Rabinovich Berkman, Ricardo David},\n  title = {¿Cómo se hicieron los derechos humanos? Vol. I: un viaje por la historia de los principales derechos de las personas},\n  year = {2023},\n  publisher = {Ediciones Didot},\n  address = {Buenos Aires},\n  note = {Capítulo 1. Consultado en la Biblioteca Digital de la UnADM}\n}"
+      },
+      "marcanoSalazarDerechosHumanos": {
+        "key": "marcanoSalazarDerechosHumanos",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "entry_type": "book",
+        "title": "Derechos humanos: teorías y doctrinas",
+        "author": "Marcano Salazar, Luis Manuel",
+        "year": "2018",
+        "publisher": "Ediciones Olejnik",
+        "note": "Capítulo 2. Consultado en la Biblioteca Digital de la UnADM",
+        "raw_entry": "@book{marcanoSalazarDerechosHumanos,\n  author = {Marcano Salazar, Luis Manuel},\n  title = {Derechos humanos: teorías y doctrinas},\n  year = {2018},\n  publisher = {Ediciones Olejnik},\n  address = {Santiago de Chile},\n  note = {Capítulo 2. Consultado en la Biblioteca Digital de la UnADM}\n}"
+      },
+      "alvarezIcazaDerechosMexico": {
+        "key": "alvarezIcazaDerechosMexico",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "entry_type": "book",
+        "title": "Los derechos humanos en México",
+        "author": "Álvarez Icaza Longoria, Emilio",
+        "year": "2009",
+        "publisher": "Nostra Ediciones",
+        "note": "Capítulos 2 y 3. Consultado en la Biblioteca Digital de la UnADM",
+        "raw_entry": "@book{alvarezIcazaDerechosMexico,\n  author = {Álvarez Icaza Longoria, Emilio},\n  title = {Los derechos humanos en México},\n  year = {2009},\n  publisher = {Nostra Ediciones},\n  address = {Ciudad de México},\n  note = {Capítulos 2 y 3. Consultado en la Biblioteca Digital de la UnADM}\n}"
+      },
+      "lopezMapaConceptual2022": {
+        "key": "lopezMapaConceptual2022",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/garantias-constitucionales.bib",
+        "entry_type": "incollection",
+        "title": "Mapa conceptual",
+        "author": "López, Aarón",
+        "year": "2022",
+        "publisher": "Universidad Abierta y a Distancia de México",
+        "url": "https://100tecnicasdidacticas.unadmexico.mx/index.html",
+        "note": "Sección Sintetizar. Consulta: 2026-07-16",
+        "raw_entry": "@incollection{lopezMapaConceptual2022,\n  author = {López, Aarón},\n  title = {Mapa conceptual},\n  booktitle = {100 Técnicas Didácticas de Enseñanza y Aprendizaje},\n  year = {2022},\n  publisher = {Universidad Abierta y a Distancia de México},\n  address = {Ciudad de México},\n  howpublished = {\\url{https://100tecnicasdidacticas.unadmexico.mx/index.html}},\n  note = {Sección Sintetizar. Consulta: 2026-07-16}\n}"
       }
     }
   },
