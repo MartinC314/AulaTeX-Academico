@@ -1,4 +1,4 @@
-\documentclass[
+﻿\documentclass[
   spanish,
   letterpaper, oneside
 ]{article}
@@ -74,25 +74,33 @@
 \definecolor{mcAccent}{HTML}{B88A2A}
 \definecolor{mcInk}{HTML}{1F2A24}
 
+\definecolor{mcSub}{HTML}{D9E4CC}
 \tikzset{
   mcroot/.style={
     rectangle, rounded corners=4pt, draw=mcRoot, line width=1pt,
-    fill=mcRoot, text=white, font=\bfseries\small,
-    align=center, inner sep=6pt, text width=3.7cm
+    fill=mcRoot, text=white, font=\bfseries\footnotesize,
+    align=center, inner sep=5pt, text width=3.3cm
   },
   mcbranch/.style={
     rectangle, rounded corners=3pt, draw=mcNode, line width=0.9pt,
-    fill=mcNode, text=white, font=\bfseries\footnotesize,
-    align=center, inner sep=5pt, text width=3.1cm
+    fill=mcNode, text=white, font=\bfseries\scriptsize,
+    align=center, inner sep=4pt, text width=2.5cm
   },
   mcleaf/.style={
-    rectangle, rounded corners=3pt, draw=mcNode!70, line width=0.6pt,
+    rectangle, rounded corners=3pt, draw=mcNode!70, line width=0.5pt,
     fill=mcLeaf, text=mcInk, font=\scriptsize,
-    align=center, inner sep=4pt, text width=3.0cm
+    align=center, inner sep=3pt, text width=2.7cm
   },
-  mclink/.style={-{Latex[length=2mm]}, draw=mcRoot!70, line width=0.7pt},
-  mclabel/.style={font=\scriptsize\itshape, text=mcAccent, fill=white, inner sep=1pt}
+  mcsub/.style={
+    rectangle, rounded corners=2pt, draw=mcGold!80, line width=0.4pt,
+    fill=mcSub, text=mcInk, font=\tiny,
+    align=center, inner sep=2.5pt, text width=2.5cm
+  },
+  mclink/.style={-{Latex[length=1.6mm]}, draw=mcRoot!70, line width=0.55pt},
+  mclabel/.style={font=\tiny\itshape, text=mcAccent, fill=white, inner sep=1pt}
 }
+\providecommand{\mcGold}{}
+\colorlet{mcGold}{mcAccent}
 
 \begin{document}
 
@@ -112,13 +120,15 @@
 
 El marco teórico de los derechos humanos constituye la base conceptual de toda la asignatura de \textit{Garantías Constitucionales}, porque antes de estudiar los mecanismos de protección conviene comprender qué se protege, de dónde proviene esa protección y bajo qué principios opera. El presente mapa conceptual organiza el Tema 1 en una estructura jerárquica que va del concepto raíz —los derechos humanos y sus principios— hacia sus componentes: los antecedentes históricos, las generaciones, el concepto, los principios rectores del artículo 1.º constitucional y la noción de garantía \citep{alvarezIcazaDerechosMexico}.
 
-Un mapa conceptual es una técnica de síntesis que representa el conocimiento mediante nodos jerarquizados y relaciones significativas expresadas con conectores \citep{lopezMapaConceptual2022}. Su valor no radica solo en enumerar conceptos, sino en mostrar cómo se articulan: cómo la historia explica el surgimiento de los derechos, cómo las generaciones ordenan su desarrollo, cómo el concepto se sostiene en la dignidad humana y cómo los principios constitucionales dan operatividad a esa protección. Por ello, este documento acompaña la representación gráfica con un desarrollo argumentado que justifica cada rama y una conclusión que recupera la utilidad del ejercicio.
+Un mapa conceptual es una técnica de síntesis que representa el conocimiento mediante nodos jerarquizados y relaciones significativas expresadas con conectores \citep{lopezMapaConceptual2022}. Su valor no radica en enumerar conceptos, sino en mostrar cómo se articulan y, por ello, este documento acompaña la representación gráfica con un desarrollo argumentado que justifica cada rama.
 
-\section{Metodología de construcción del mapa}
+\section{Mapa conceptual: marco teórico de los derechos humanos}
+
+\subsection{Metodología de construcción del mapa}
 
 La elaboración siguió los seis pasos sugeridos por la asignatura \citep{lopezMapaConceptual2022}:
 
-\begin{enumerate}
+\begin{enumerate}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
   \item \textbf{Conceptualizar el mapa:} se definió como concepto raíz el marco teórico de los derechos humanos y sus principios, tomado del contenido temático de la planeación.
   \item \textbf{Seleccionar y agrupar conceptos:} se identificaron cinco ejes —antecedentes históricos, generaciones, concepto, principios y garantías— a partir de las lecturas de Álvarez Icaza, Rabinovich Berkman y Marcano Salazar.
   \item \textbf{Jerarquizar los conceptos:} se ubicó el concepto raíz en el nivel superior, los cinco ejes en el nivel intermedio y sus componentes en el nivel inferior.
@@ -128,79 +138,140 @@ La elaboración siguió los seis pasos sugeridos por la asignatura \citep{lopezM
 \end{enumerate}
 
 \begin{landscape}
-\section{Mapa conceptual: marco teórico de los derechos humanos}
 \thispagestyle{empty}
+\subsection{Representación gráfica del mapa}
+
+El siguiente diagrama presenta el mapa conceptual completo del Tema 1, con sus cinco ejes, la jerarquía de conceptos y las relaciones significativas entre ellos.
+
 \begin{center}
+\vspace*{-0.25cm}
+\resizebox{!}{0.80\textheight}{%
 \begin{tikzpicture}[node distance=0.55cm and 0.9cm]
 
 % Nodo raíz
 \node[mcroot] (root) {Marco teórico de los derechos humanos y sus principios};
 
 % Ramas de primer nivel
-\node[mcbranch, below left=1.7cm and 5.2cm of root] (hist) {1.1 Antecedentes históricos};
-\node[mcbranch, below left=1.7cm and 1.4cm of root] (gen) {1.2 Generaciones de derechos};
-\node[mcbranch, below=1.9cm of root] (concepto) {1.3 Concepto de derecho humano};
-\node[mcbranch, below right=1.7cm and 1.4cm of root] (princ) {1.4 Principios (art. 1.º constitucional)};
-\node[mcbranch, below right=1.7cm and 5.2cm of root] (gar) {1.5 Concepto de garantía};
+\node[mcbranch, below left=1.55cm and 6.4cm of root] (hist) {1.1 Antecedentes históricos};
+\node[mcbranch, below left=1.55cm and 2.2cm of root] (gen) {1.2 Generaciones de los derechos};
+\node[mcbranch, below=1.7cm of root] (concepto) {1.3 Concepto de derecho humano};
+\node[mcbranch, below right=1.55cm and 2.2cm of root] (princ) {1.4 Principios (art. 1.º constitucional)};
+\node[mcbranch, below right=1.55cm and 6.4cm of root] (gar) {1.5 Concepto de garantía};
 
-% Enlaces raíz -> ramas
-\draw[mclink] (root) -- node[mclabel]{se explica por} (hist);
-\draw[mclink] (root) -- node[mclabel]{se ordena en} (gen);
-\draw[mclink] (root) -- node[mclabel]{se define como} (concepto);
-\draw[mclink] (root) -- node[mclabel]{se rige por} (princ);
-\draw[mclink] (root) -- node[mclabel]{se protege con} (gar);
+% Enlaces raíz -> ramas (proposiciones)
+\draw[mclink] (root) -- node[mclabel]{tienen origen en}   (hist);
+\draw[mclink] (root) -- node[mclabel]{se clasifican en}   (gen);
+\draw[mclink] (root) -- node[mclabel]{se definen como}    (concepto);
+\draw[mclink] (root) -- node[mclabel]{se rigen por}       (princ);
+\draw[mclink] (root) -- node[mclabel]{se hacen efectivos con} (gar);
 
-% Hojas: antecedentes
-\node[mcleaf, below=0.75cm of hist] (hist1) {Luchas y documentos históricos que reconocen la dignidad};
-\node[mcleaf, below=0.4cm of hist1] (hist2) {De la tradición a la positivación jurídica};
+% ---- Hojas: 1.1 Antecedentes históricos ----
+\node[mcleaf, below=0.6cm of hist] (hist1) {Iusnaturalismo: derechos innatos y anteriores al Estado};
+\node[mcleaf, below=0.35cm of hist1] (hist2) {Hitos: Carta Magna, Declaraciones de 1776 y 1789};
+\node[mcleaf, below=0.35cm of hist2] (hist3) {Positivación: DUDH (ONU, 1948) e instrumentos internacionales};
+\node[mcsub,  below=0.3cm of hist3] (hist4) {México: reforma constitucional de 2011};
 
-% Hojas: generaciones
-\node[mcleaf, below=0.75cm of gen] (gen1) {1.ª civiles y políticos};
-\node[mcleaf, below=0.4cm of gen1] (gen2) {2.ª económicos, sociales y culturales};
-\node[mcleaf, below=0.4cm of gen2] (gen3) {3.ª colectivos y de solidaridad};
+% ---- Hojas: 1.2 Generaciones ----
+\node[mcleaf, below=0.6cm of gen] (gen1) {1.ª Civiles y políticos (libertad)};
+\node[mcleaf, below=0.35cm of gen1] (gen2) {2.ª Económicos, sociales y culturales (igualdad)};
+\node[mcleaf, below=0.35cm of gen2] (gen3) {3.ª Colectivos o de solidaridad (fraternidad)};
+\node[mcsub,  below=0.3cm of gen3] (gen4) {Antes: operativos vs. programáticos (superado)};
 
-% Hojas: concepto
-\node[mcleaf, below=0.75cm of concepto] (con1) {Prerrogativas ligadas a la dignidad humana};
-\node[mcleaf, below=0.4cm of con1] (con2) {Obligan al Estado a respetar, proteger, promover y garantizar};
+% ---- Hojas: 1.3 Concepto ----
+\node[mcleaf, below=0.6cm of concepto] (con1) {Prerrogativas inherentes a la dignidad humana};
+\node[mcleaf, below=0.35cm of con1] (con2) {Sujeto: toda persona; obligado: el Estado};
+\node[mcleaf, below=0.35cm of con2] (con3) {Deberes estatales: respetar, proteger, promover y garantizar};
+\node[mcsub,  below=0.3cm of con3] (con4) {Base: art. 1.º y art. 133 constitucionales};
 
-% Hojas: principios
-\node[mcleaf, below=0.75cm of princ] (pr1) {Universalidad};
-\node[mcleaf, below=0.4cm of pr1] (pr2) {Interdependencia e indivisibilidad};
-\node[mcleaf, below=0.4cm of pr2] (pr3) {Progresividad y no regresión};
+% ---- Hojas: 1.4 Principios (art. 1.º) ----
+\node[mcleaf, below=0.55cm of princ] (pr1) {Universalidad: a toda persona por su condición humana};
+\node[mcleaf, below=0.3cm of pr1] (pr2) {Interdependencia: unos derechos dependen de otros};
+\node[mcleaf, below=0.3cm of pr2] (pr3) {Indivisibilidad: forman una unidad inseparable};
+\node[mcleaf, below=0.3cm of pr3] (pr4) {Progresividad: avance constante en la protección};
+\node[mcleaf, below=0.3cm of pr4] (pr5) {No regresión: prohíbe reducir el nivel ya alcanzado};
 
-% Hojas: garantías
-\node[mcleaf, below=0.75cm of gar] (ga1) {Mecanismo jurídico que hace exigible el derecho};
-\node[mcleaf, below=0.4cm of ga1] (ga2) {Distinta del derecho: es la vía de protección};
+% ---- Hojas: 1.5 Garantías ----
+\node[mcleaf, below=0.6cm of gar] (ga1) {Mecanismo jurídico que hace exigible el derecho};
+\node[mcleaf, below=0.35cm of ga1] (ga2) {Derecho $\neq$ garantía: bien protegido vs. vía de defensa};
+\node[mcleaf, below=0.35cm of ga2] (ga3) {Formaliza y da efectividad al derecho};
+\node[mcsub,  below=0.3cm of ga3] (ga4) {Suspensión: legalidad, proporcionalidad y temporalidad};
 
 % Enlaces rama -> hojas
-\draw[mclink] (hist) -- (hist1);   \draw[mclink] (hist1) -- (hist2);
-\draw[mclink] (gen) -- (gen1);     \draw[mclink] (gen1) -- (gen2);  \draw[mclink] (gen2) -- (gen3);
-\draw[mclink] (concepto) -- (con1);\draw[mclink] (con1) -- (con2);
-\draw[mclink] (princ) -- (pr1);    \draw[mclink] (pr1) -- (pr2);    \draw[mclink] (pr2) -- (pr3);
-\draw[mclink] (gar) -- (ga1);      \draw[mclink] (ga1) -- (ga2);
+\draw[mclink] (hist) -- (hist1); \draw[mclink] (hist1) -- (hist2); \draw[mclink] (hist2) -- (hist3); \draw[mclink] (hist3) -- (hist4);
+\draw[mclink] (gen) -- (gen1);   \draw[mclink] (gen1) -- (gen2);   \draw[mclink] (gen2) -- (gen3);   \draw[mclink] (gen3) -- (gen4);
+\draw[mclink] (concepto) -- (con1); \draw[mclink] (con1) -- (con2); \draw[mclink] (con2) -- (con3); \draw[mclink] (con3) -- (con4);
+\draw[mclink] (princ) -- (pr1);  \draw[mclink] (pr1) -- (pr2); \draw[mclink] (pr2) -- (pr3); \draw[mclink] (pr3) -- (pr4); \draw[mclink] (pr4) -- (pr5);
+\draw[mclink] (gar) -- (ga1);    \draw[mclink] (ga1) -- (ga2); \draw[mclink] (ga2) -- (ga3); \draw[mclink] (ga3) -- (ga4);
 
-\end{tikzpicture}
+% Relaciones cruzadas (transversalidad de los derechos humanos)
+\draw[mclink, dashed, draw=mcAccent] (gen3) to[bend right=12] node[mclabel]{unidad por} (pr3);
+\draw[mclink, dashed, draw=mcAccent] (con3) to[bend left=10] node[mclabel]{operan con} (ga1);
 
-\vspace{0.4cm}
-{\footnotesize \textit{Figura 1.} Mapa conceptual del Tema 1. Elaboración propia con base en \citet{alvarezIcazaDerechosMexico}, \citet{rabinovichBerkmanDerechosHumanos} y \citet{marcanoSalazarDerechosHumanos}.}
+% >>> MC-ENRIQUECIMIENTO-INICIO
+\node[mcsub, below=0.3cm of hist4] (mx1) {1951: la ONU decidió dividir en dos instrumentos los derechos de la DUDH};
+\draw[mclink] (hist4) -- (mx1);
+\node[mcsub, below=0.3cm of mx1] (mx2) {1945: Carta de la ONU impulsa la internacionalización de los derechos humanos};
+\draw[mclink] (mx1) -- (mx2);
+\node[mcsub, below=0.3cm of mx2] (mx3) {1993: Declaración de Viena reafirma universalidad e indivisibilidad};
+\draw[mclink] (mx2) -- (mx3);
+\node[mcsub, below=0.3cm of mx3] (mx4) {1689: Bill of Rights limita el poder monárquico inglés};
+\draw[mclink] (mx3) -- (mx4);
+\node[mcsub, below=0.3cm of gen4] (mx5) {Crítica al modelo generacional: coexistencia y ausencia de jerarquía};
+\draw[mclink] (gen4) -- (mx5);
+\node[mcsub, below=0.3cm of mx5] (mx6) {Todas las generaciones imponen obligaciones positivas y negativas};
+\draw[mclink] (mx5) -- (mx6);
+\node[mcsub, below=0.3cm of mx6] (mx7) {Tercera generación: desarrollo, paz y medio ambiente sano};
+\draw[mclink] (mx6) -- (mx7);
+\node[mcsub, below=0.3cm of mx7] (mx8) {PIDCP y PIDESC comparten la libre determinación (art. 1 común)};
+\draw[mclink] (mx7) -- (mx8);
+\node[mcsub, below=0.3cm of con4] (mx9) {Derechos fundamentales: derechos humanos reconocidos constitucionalmente};
+\draw[mclink] (con4) -- (mx9);
+\node[mcsub, below=0.3cm of mx9] (mx10) {Irrenunciabilidad: la titularidad no puede abandonarse válidamente};
+\draw[mclink] (mx9) -- (mx10);
+\node[mcsub, below=0.3cm of mx10] (mx11) {Imprescriptibilidad: el transcurso del tiempo no extingue los derechos humanos};
+\draw[mclink] (mx10) -- (mx11);
+\node[mcsub, below=0.3cm of mx11] (mx12) {Dimensión objetiva: orientan legislación, políticas públicas e interpretación};
+\draw[mclink] (mx11) -- (mx12);
+\node[mcsub, below=0.3cm of pr5] (mx13) {Deber de garantía: prevenir, investigar, sancionar y reparar violaciones};
+\draw[mclink] (pr5) -- (mx13);
+\node[mcsub, below=0.3cm of mx13] (mx14) {Jueces: control de convencionalidad ex officio según su competencia};
+\draw[mclink] (mx13) -- (mx14);
+\node[mcsub, below=0.3cm of mx14] (mx15) {Progresividad: máximo de recursos disponibles (art. 2.1 PIDESC)};
+\draw[mclink] (mx14) -- (mx15);
+\node[mcsub, below=0.3cm of mx15] (mx16) {Aplicación directa: los derechos obligan aun sin ley reglamentaria};
+\draw[mclink] (mx15) -- (mx16);
+\node[mcsub, below=0.3cm of ga4] (mx17) {Vías no jurisdiccionales: queja ante la CNDH y organismos locales};
+\draw[mclink] (ga4) -- (mx17);
+\node[mcsub, below=0.3cm of mx17] (mx18) {Art. 29: ciertos derechos no pueden restringirse ni suspenderse};
+\draw[mclink] (mx17) -- (mx18);
+\node[mcsub, below=0.3cm of mx18] (mx19) {Garantías de seguridad jurídica: exigen fundamentación y motivación (art. 16)};
+\draw[mclink] (mx18) -- (mx19);
+\node[mcsub, below=0.3cm of mx19] (mx20) {Garantías de libertad: protegen religión, conciencia, expresión y asociación};
+\draw[mclink] (mx19) -- (mx20);
+% >>> MC-ENRIQUECIMIENTO-FIN
+
+\end{tikzpicture}}
+
+\vspace{0.12cm}
+{\footnotesize \textit{Figura 1.} Mapa conceptual del Tema 1: marco teórico de los derechos humanos y sus principios. Elaboración propia con base en las fuentes citadas.}
 \end{center}
 \end{landscape}
 
-\section{Desarrollo de las ramas del mapa}
+\subsection{Desarrollo de las ramas del mapa}
 
-\subsection{Antecedentes históricos}
+\subsubsection{Antecedentes históricos}
 
 Los derechos humanos no surgen de manera espontánea, sino que son el resultado de un largo proceso histórico de reconocimiento de la dignidad de la persona frente al poder. Rabinovich Berkman muestra que su construcción responde a luchas, conflictos y documentos que, en distintas épocas, fueron ampliando el círculo de personas reconocidas como titulares de derechos y limitando el ejercicio arbitrario del poder \citep{rabinovichBerkmanDerechosHumanos}. Comprender esta dimensión histórica evita una lectura estática: los derechos humanos son una conquista cultural y jurídica que se transforma con el tiempo, y su positivación en constituciones y tratados es una etapa avanzada de ese recorrido.
 
-\subsection{Generaciones de los derechos humanos}
+\subsubsection{Generaciones de los derechos humanos}
 
 La clasificación por generaciones es una herramienta pedagógica que ordena el desarrollo histórico de los derechos. La primera generación agrupa los derechos civiles y políticos, vinculados con la libertad y la participación; la segunda comprende los derechos económicos, sociales y culturales, orientados a la igualdad material; la tercera reúne los derechos colectivos o de solidaridad, como el medio ambiente sano y la paz \citep{marcanoSalazarDerechosHumanos}. Esta ordenación no implica jerarquía entre generaciones, sino etapas de reconocimiento; de hecho, el principio de indivisibilidad advierte que todos los derechos forman una unidad.
 
-\subsection{Concepto de derecho humano}
+\subsubsection{Concepto de derecho humano}
 
 El derecho humano es una prerrogativa inherente a la dignidad de la persona, reconocida por el orden jurídico nacional e internacional \citep{alvarezIcazaDerechosMexico}. En el sistema mexicano, el artículo 1.º constitucional establece que todas las autoridades tienen la obligación de promover, respetar, proteger y garantizar los derechos humanos. Esta definición conecta el plano teórico con el plano práctico: no basta con enunciar el derecho, sino que existe un deber estatal correlativo que da sentido a las garantías estudiadas en la asignatura.
 
-\subsection{Principios de los derechos humanos (artículo 1.º constitucional)}
+\subsubsection{Principios de los derechos humanos (artículo 1.º constitucional)}
 
 El artículo 1.º constitucional incorpora principios que orientan la interpretación y aplicación de los derechos humanos:
 
@@ -214,17 +285,14 @@ El artículo 1.º constitucional incorpora principios que orientan la interpreta
 
 Estos principios convierten a los derechos humanos en un marco dinámico y exigible, y son la base para valorar la actuación de las autoridades \citep{alvarezIcazaDerechosMexico}.
 
-\subsection{Concepto de garantía}
+\subsubsection{Concepto de garantía}
 
 La garantía es el mecanismo jurídico que permite hacer efectivo un derecho humano. Conviene distinguir el derecho —el bien o facultad protegida— de la garantía —la vía institucional para exigirlo—. Sin garantías eficaces, los derechos podrían quedar como declaraciones formales sin protección real \citep{marcanoSalazarDerechosHumanos}. Esta distinción es el puente entre el marco teórico del Tema 1 y los medios de control constitucional que se estudiarán posteriormente en la asignatura.
 
-\section{Análisis propio}
-
-La construcción del mapa permite advertir que los cinco ejes del Tema 1 no son bloques aislados, sino una secuencia lógica: la historia explica el origen de los derechos, las generaciones ordenan su desarrollo, el concepto los define, los principios los operativizan y las garantías los hacen exigibles. Mi lectura es que el eje articulador es la distinción entre \textit{derecho} y \textit{garantía}: comprenderla evita el error frecuente de confundir la prerrogativa con el mecanismo que la protege, y prepara el estudio posterior de los medios de control constitucional. En términos de la rúbrica, la síntesis buscó ser jerárquica y concisa sin sacrificar precisión conceptual, priorizando relaciones significativas sobre la mera acumulación de nodos.
-
+\clearpage
 \section{Conclusión}
 
-El mapa conceptual del Tema 1 sintetiza el marco teórico de los derechos humanos mostrando cómo sus componentes se articulan en una estructura coherente. Los antecedentes históricos fundamentan su origen; las generaciones ordenan su desarrollo; el concepto los vincula con la dignidad humana; los principios del artículo 1.º constitucional los hacen dinámicos y exigibles, y la noción de garantía introduce la protección efectiva. Mi postura es que este ejercicio de jerarquización no solo cumple una función de estudio, sino que ofrece un mapa mental estable para abordar con mayor claridad los medios de control constitucional, verdadero núcleo de la asignatura de \textit{Garantías Constitucionales}.
+El mapa conceptual del Tema 1 sintetiza el marco teórico de los derechos humanos mostrando cómo sus componentes se articulan en una estructura coherente. Los antecedentes históricos fundamentan su origen; las generaciones ordenan su desarrollo; el concepto los vincula con la dignidad humana; los principios del artículo 1.º constitucional los hacen dinámicos y exigibles, y la noción de garantía introduce la protección efectiva. La construcción del mapa permite advertir que estos cinco ejes no son bloques aislados, sino una secuencia lógica: la historia explica el origen de los derechos, las generaciones ordenan su desarrollo, el concepto los define, los principios los operativizan y las garantías los hacen exigibles. En mi lectura, el eje articulador es la distinción entre \textit{derecho} y \textit{garantía}: comprenderla evita el error frecuente de confundir la prerrogativa con el mecanismo que la protege, y prepara el estudio posterior de los medios de control constitucional. En términos de la rúbrica, la síntesis buscó ser jerárquica y concisa sin sacrificar precisión conceptual, priorizando relaciones significativas sobre la mera acumulación de nodos. Mi postura es que este ejercicio de jerarquización\footnote{Conforme a los Lineamientos para el uso ético y responsable de la inteligencia artificial en el ámbito académico de la UnADM, se declara que se utilizó asistencia de inteligencia artificial para la organización y la edición gráfica del mapa conceptual. El contenido conceptual y jurídico se verificó y sostuvo con las fuentes bibliográficas citadas en este documento.} no solo cumple una función de estudio, sino que ofrece un mapa mental estable para abordar con mayor claridad los medios de control constitucional, verdadero núcleo de la asignatura de \textit{Garantías Constitucionales}.
 
 \clearpage
 \nocite{unadmSitioWeb,cpeum2026,normasApaReferencias2020}
