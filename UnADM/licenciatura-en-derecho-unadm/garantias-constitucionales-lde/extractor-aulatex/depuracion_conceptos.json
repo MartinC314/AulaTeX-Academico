@@ -1,0 +1,26 @@
+{
+  "subject_slug": "garantias-constitucionales",
+  "kept": [
+    "Antecedentes históricos",
+    "Artículo 1 Constitucional",
+    "Derechos humanos",
+    "Garantías",
+    "Generaciones de los derechos humanos",
+    "Indivisibilidad",
+    "Interdependencia",
+    "No regresión",
+    "Principios de los derechos humanos",
+    "Progresividad",
+    "Universalidad"
+  ],
+  "discarded": [
+    "dogmáticos rigen",
+    "humanos",
+    "los derechos",
+    "los principios dogmáticos que los rigen",
+    "principios dogmáticos",
+    "principios dogmáticos rigen",
+    "1"
+  ],
+  "notes": "Se conservaron los conceptos completos y con valor académico para la materia. Se descartaron fragmentos incompletos ('dogmáticos rigen', 'humanos', 'los derechos'), duplicados parciales y ruido ('1'). El concepto integral 'Principios de los derechos humanos' subsume las variantes fragmentadas sobre principios dogmáticos, cuyo contenido queda cubierto por Universalidad, Interdependencia, Indivisibilidad y Progresividad."
+}

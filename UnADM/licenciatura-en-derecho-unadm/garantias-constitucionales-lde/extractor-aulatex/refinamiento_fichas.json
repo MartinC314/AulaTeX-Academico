@@ -1,0 +1,965 @@
+{
+  "Antecedentes históricos": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de qué se entiende por 'antecedentes históricos' de los derechos humanos como categoría conceptual",
+            "Una periodización clara y ordenada (antigüedad, edad media, edad moderna, siglo XX)",
+            "Crítica o límite: debate sobre si los derechos humanos son un fenómeno exclusivamente moderno o tienen raíces anteriores",
+            "Hitos documentales fundacionales concretos (Carta Magna 1215, Bill of Rights 1689, Declaración de 1789, Declaración Universal 1948)"
+          ],
+          "consultas": [
+            "definición y concepto de antecedentes históricos de los derechos humanos evolución cronológica",
+            "hitos documentales derechos humanos Carta Magna Bill of Rights Declaración Universal 1948",
+            "debate crítico origen moderno versus antiguo de los derechos humanos límites de la periodización histórica"
+          ],
+          "nota": "Las citas aportan fragmentos dispersos sobre etapas históricas (siglo XIX, Edad Moderna, Derecho romano, Revolución francesa) que sirven como ejemplos y fundamento, pero no ofrecen una definición conceptual unificada del término ni una crítica sobre la construcción histórica del concepto. La similitud es muy baja (máx. 0.093), lo que indica cobertura fragmentaria. Se requiere una nueva ronda de búsqueda más precisa."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y concepto de antecedentes históricos de los derechos humanos evolución cronológica",
+            "hits": 4
+          },
+          {
+            "consulta": "hitos documentales derechos humanos Carta Magna Bill of Rights Declaración Universal 1948",
+            "hits": 4
+          },
+          {
+            "consulta": "debate crítico origen moderno versus antiguo de los derechos humanos límites de la periodización histórica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Crítica o límites del enfoque histórico de los derechos humanos (por ejemplo, eurocentrismo o discontinuidades)",
+            "Antecedentes históricos anteriores a la modernidad (mundo antiguo, medieval, aportes no occidentales)",
+            "Hilo narrativo cronológico claro (Carta Magna, Ilustración, revoluciones liberales)"
+          ],
+          "consultas": [
+            "críticas al relato histórico eurocéntrico de los derechos humanos",
+            "antecedentes históricos derechos humanos Carta Magna Bill of Rights Declaración francesa 1789",
+            "orígenes remotos derechos humanos edad antigua y medieval iusnaturalismo"
+          ],
+          "nota": "Las citas cubren definición, fundamento (historicidad y dignidad humana), autores (Marcano, Rabinovich) y ejemplos concretos (Bill of Rights de 1791, Declaración Universal de 1948). Sin embargo, la similitud es baja (<0.17) y falta un tratamiento crítico o de límites sobre la construcción histórica de estos derechos, así como un recorrido cronológico ordenado que incluya antecedentes premodernos. Se recomienda una tercera ronda enfocada en la crítica y en los orígenes remotos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "críticas al relato histórico eurocéntrico de los derechos humanos",
+            "hits": 4
+          },
+          {
+            "consulta": "antecedentes históricos derechos humanos Carta Magna Bill of Rights Declaración francesa 1789",
+            "hits": 4
+          },
+          {
+            "consulta": "orígenes remotos derechos humanos edad antigua y medieval iusnaturalismo",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 22
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 22
+  },
+  "Artículo 1 Constitucional": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "Artículo 1 Constitución Política Mexicana texto derechos humanos reforma 2011",
+            "principio pro persona interpretación conforme artículo 1 constitucional cláusula de igualdad no discriminación",
+            "crítica y límites del control de convencionalidad artículo 1 constitucional jurisprudencia SCJN"
+          ],
+          "nota": "Ninguna de las citas recuperadas se refiere al Artículo 1 Constitucional del ordenamiento buscado (probablemente la Constitución mexicana). Las citas aluden a la Carta Africana de Derechos Humanos, la Constitución colombiana y la Convención Americana, sin abordar la definición, fundamento, autoría doctrinal, ejemplos de aplicación ni críticas del concepto solicitado. La ficha carece de todos los elementos evaluados. Se requiere una nueva búsqueda enfocada específicamente en el Artículo 1 constitucional (bloque de constitucionalidad, principio pro persona, obligaciones del Estado, prohibición de discriminación)."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Artículo 1 Constitución Política Mexicana texto derechos humanos reforma 2011",
+            "hits": 4
+          },
+          {
+            "consulta": "principio pro persona interpretación conforme artículo 1 constitucional cláusula de igualdad no discriminación",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica y límites del control de convencionalidad artículo 1 constitucional jurisprudencia SCJN",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 15
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 15,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "Artículo 1 Constitución Política de los Estados Unidos Mexicanos texto y reforma 2011",
+            "principio pro persona y bloque de constitucionalidad artículo 1 constitucional interpretación conforme",
+            "cláusula de no discriminación y obligaciones del Estado artículo 1 constitucional aplicación jurisprudencial SCJN"
+          ],
+          "nota": "Las citas recuperadas no abordan el Artículo 1 de la Constitución mexicana. Se refieren mayoritariamente a la Carta Africana de Derechos Humanos y a un artículo 102 apartado B, sin relación directa con el concepto solicitado. No hay definición, fundamento, autor, ejemplo ni crítica pertinentes. Se requiere nueva búsqueda enfocada en la reforma constitucional de derechos humanos de 2011, el principio pro persona, la interpretación conforme y la cláusula antidiscriminatoria del artículo 1 constitucional mexicano."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Artículo 1 Constitución Política de los Estados Unidos Mexicanos texto y reforma 2011",
+            "hits": 4
+          },
+          {
+            "consulta": "principio pro persona y bloque de constitucionalidad artículo 1 constitucional interpretación conforme",
+            "hits": 4
+          },
+          {
+            "consulta": "cláusula de no discriminación y obligaciones del Estado artículo 1 constitucional aplicación jurisprudencial SCJN",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 18
+  },
+  "Derechos humanos": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "critica"
+          ],
+          "consultas": [
+            "definición concepto de derechos humanos características universalidad inalienabilidad",
+            "fundamento filosófico de los derechos humanos dignidad humana iusnaturalismo positivismo",
+            "críticas y límites al discurso de los derechos humanos relativismo cultural"
+          ],
+          "nota": "Las citas recuperadas son en su mayoría títulos de obra sin contenido sustantivo (similitud baja ~0.37) y no aportan definición, fundamento teórico ni autor identificable. Solo la cita de Álvarez Icaza sobre la Conferencia de Viena 1993 y la OACDH funciona como ejemplo de aplicación institucional. Falta recuperar pasajes con desarrollo conceptual, base doctrinal (autores como Bobbio, Nino, Ferrajoli) y perspectiva crítica. Se recomienda una nueva ronda con las consultas propuestas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición concepto de derechos humanos características universalidad inalienabilidad",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento filosófico de los derechos humanos dignidad humana iusnaturalismo positivismo",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites al discurso de los derechos humanos relativismo cultural",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 17,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición precisa de derechos humanos",
+            "Fundamento filosófico y jurídico (dignidad humana, iusnaturalismo, positivismo)",
+            "Autor o doctrina de referencia que teorice el concepto",
+            "Crítica o límites del concepto (universalismo vs relativismo cultural, exigibilidad)"
+          ],
+          "consultas": [
+            "definición y características de los derechos humanos universalidad inalienabilidad",
+            "fundamento filosófico de los derechos humanos dignidad humana iusnaturalismo Marcano Salazar",
+            "críticas al universalismo de los derechos humanos relativismo cultural límites"
+          ],
+          "nota": "Las citas recuperadas son mayoritariamente títulos genéricos sin contenido sustantivo (repetición de 'Derechos humanos. Teorías y doctrinas') y una sola aporta un ejemplo aplicable (creación de la OACDH tras la Conferencia de Viena 1993). Falta extraer texto real que defina el concepto, exponga su fundamento y autor doctrinal, así como críticas. La similitud es baja (<0.38), lo que sugiere que las consultas deben afinarse hacia elementos conceptuales específicos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y características de los derechos humanos universalidad inalienabilidad",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento filosófico de los derechos humanos dignidad humana iusnaturalismo Marcano Salazar",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al universalismo de los derechos humanos relativismo cultural límites",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  },
+  "Garantías": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición precisa del concepto de garantías (diferencia entre derechos y garantías)",
+            "Autor o doctrina que teorice el concepto de garantías (p. ej. Ferrajoli, garantismo)",
+            "Crítica o límites del concepto de garantías",
+            "Clasificación de las garantías (constitucionales, procesales, jurisdiccionales)"
+          ],
+          "consultas": [
+            "definición de garantías como medios de protección de los derechos diferencia entre derecho y garantía",
+            "garantismo Ferrajoli teoría de las garantías primarias y secundarias",
+            "garantías constitucionales jurisdiccionales amparo habeas corpus clasificación y límites"
+          ],
+          "nota": "Las citas actuales solo abordan aspectos periféricos: suspensión de garantías en estados de emergencia (proporcionalidad, temporalidad), ubicación constitucional y ejemplos comparativos. Falta una definición conceptual clara que distinga garantías de derechos, una atribución doctrinal (autor de referencia como Ferrajoli o similar) y un tratamiento crítico o de límites. La similitud de las citas es baja (máx. 0.29), lo que sugiere que la ficha requiere una nueva ronda de búsqueda enfocada en el núcleo teórico del concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de garantías como medios de protección de los derechos diferencia entre derecho y garantía",
+            "hits": 4
+          },
+          {
+            "consulta": "garantismo Ferrajoli teoría de las garantías primarias y secundarias",
+            "hits": 4
+          },
+          {
+            "consulta": "garantías constitucionales jurisdiccionales amparo habeas corpus clasificación y límites",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 15
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 15,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual precisa de 'garantías' como institución jurídica (distinción entre derechos y garantías)",
+            "Fundamento teórico-doctrinal de las garantías como mecanismos de protección de derechos",
+            "Crítica o límite: debate sobre la eficacia o insuficiencia de las garantías, o sus condiciones de suspensión analizadas críticamente"
+          ],
+          "consultas": [
+            "definición de garantías constitucionales distinción entre derechos y garantías",
+            "garantías como mecanismos de protección de derechos fundamentales fundamento doctrinal",
+            "crítica límites de las garantías jurídicas eficacia insuficiencia protección de derechos"
+          ],
+          "nota": "Las citas recuperadas ofrecen ejemplos concretos (Habeas Corpus, garantías constitucionales en Argentina, principios de proporcionalidad y temporalidad para su suspensión) y mencionan autores identificables (Marcano Salazar, Rabinovich Berkman), pero adolecen de una definición conceptual explícita del término 'garantías' y de su fundamento doctrinal. Falta también un tratamiento crítico o de límites del concepto. Las citas tienen baja similitud (máx. 0.29), lo que sugiere cobertura tangencial. Se requiere una segunda ronda con consultas orientadas a la definición y la teoría de las garantías."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de garantías constitucionales distinción entre derechos y garantías",
+            "hits": 4
+          },
+          {
+            "consulta": "garantías como mecanismos de protección de derechos fundamentales fundamento doctrinal",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica límites de las garantías jurídicas eficacia insuficiencia protección de derechos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 21
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 21
+  },
+  "Generaciones de los derechos humanos": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición clara del concepto de generaciones de derechos humanos",
+            "Fundamento teórico e histórico (Revolución Francesa: libertad, igualdad, fraternidad)",
+            "Autor que acuñó el término (Karel Vasak, 1979)",
+            "Ejemplos concretos de cada generación (civiles y políticos; económicos, sociales y culturales; solidaridad/colectivos)",
+            "Aplicación práctica o clasificación detallada de cada generación"
+          ],
+          "consultas": [
+            "Karel Vasak clasificación tres generaciones de derechos humanos definición",
+            "primera segunda tercera generación derechos civiles políticos sociales económicos culturales solidaridad ejemplos",
+            "críticas a la teoría de las generaciones de derechos humanos indivisibilidad"
+          ],
+          "nota": "Las citas recuperadas tienen baja similitud (máx. 0.1479) y no aportan contenido sustantivo. Solo una cita menciona explícitamente el término 'Generaciones de derechos humanos' pero como interrogante crítica (Rabinovich Berkman), sin desarrollar definición, fundamento ni autor. Las demás citas son títulos vacíos o tangenciales (Carta Africana). Se requiere una nueva ronda de búsqueda dirigida a Karel Vasak, la clasificación tripartita y ejemplos concretos de cada generación."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Karel Vasak clasificación tres generaciones de derechos humanos definición",
+            "hits": 4
+          },
+          {
+            "consulta": "primera segunda tercera generación derechos civiles políticos sociales económicos culturales solidaridad ejemplos",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas a la teoría de las generaciones de derechos humanos indivisibilidad",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 14
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 14,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición explícita y sistemática de la clasificación en tres generaciones (primera, segunda y tercera)",
+            "Atribución autoral del concepto (Karel Vasak, 1979) y su origen en la inspiración de la Revolución Francesa (libertad, igualdad, fraternidad)",
+            "Caracterización clara de la tercera generación (derechos de solidaridad: paz, medio ambiente, desarrollo)",
+            "Desarrollo profundo de la crítica al modelo generacional (indivisibilidad e interdependencia de los derechos)"
+          ],
+          "consultas": [
+            "Karel Vasak tres generaciones de derechos humanos libertad igualdad fraternidad definición",
+            "derechos de tercera generación solidaridad paz medio ambiente desarrollo autodeterminación",
+            "crítica clasificación generacional derechos humanos indivisibilidad interdependencia"
+          ],
+          "nota": "Las citas recuperadas aportan fundamento histórico (Pactos de 1966, distinción operativos/programáticos) y ejemplos parciales (derechos civiles y políticos vs. económicos, sociales y culturales), además de un atisbo de crítica en Rabinovich sobre lo inapropiado del término 'generaciones'. Sin embargo, falta una definición estructurada de las tres generaciones, la atribución autoral a Karel Vasak y la caracterización de la tercera generación. La cobertura es insuficiente para una ficha completa."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Karel Vasak tres generaciones de derechos humanos libertad igualdad fraternidad definición",
+            "hits": 4
+          },
+          {
+            "consulta": "derechos de tercera generación solidaridad paz medio ambiente desarrollo autodeterminación",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica clasificación generacional derechos humanos indivisibilidad interdependencia",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 22
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 22
+  },
+  "Indivisibilidad": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 3,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita del principio de indivisibilidad de los derechos humanos",
+            "Autor o fuente doctrinal que formule y desarrolle el concepto",
+            "Crítica, límites o debates sobre la indivisibilidad (por ejemplo, tensiones con la jerarquización o exigibilidad diferenciada de derechos)"
+          ],
+          "consultas": [
+            "definición principio de indivisibilidad de los derechos humanos Declaración de Viena 1993",
+            "indivisibilidad derechos civiles políticos económicos sociales culturales doctrina autor",
+            "críticas y límites al principio de indivisibilidad exigibilidad justiciabilidad derechos sociales"
+          ],
+          "nota": "Las citas actuales tienen baja similitud (<0.16) y solo ilustran aplicaciones (derechos transgeneracionales, ambiente, Cumbre de Johannesburgo) sin ofrecer una definición precisa ni fundamento doctrinal atribuido a un autor. Se recomienda una nueva ronda para capturar la formulación conceptual (idealmente vinculada a la Declaración de Viena y Teherán) y una perspectiva crítica sobre las tensiones prácticas del principio."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición principio de indivisibilidad de los derechos humanos Declaración de Viena 1993",
+            "hits": 4
+          },
+          {
+            "consulta": "indivisibilidad derechos civiles políticos económicos sociales culturales doctrina autor",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites al principio de indivisibilidad exigibilidad justiciabilidad derechos sociales",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 13
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 13,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición doctrinal explícita y formal del principio de indivisibilidad de los derechos humanos",
+            "Autor o teórico específico que desarrolle conceptualmente la indivisibilidad",
+            "Fundamento normativo directo (más allá de la mención en la Declaración de Viena) que explique el alcance del principio"
+          ],
+          "consultas": [
+            "definición principio indivisibilidad derechos humanos doctrina autor",
+            "indivisibilidad interdependencia derechos humanos Declaración de Viena 1993 alcance jurídico",
+            "críticas limites principio indivisibilidad derechos humanos exigibilidad DESC"
+          ],
+          "nota": "Las citas ofrecen elementos parciales: la mención de la Declaración de Viena (p.112) da el fundamento y una definición implícita ('universales, indivisibles e interdependientes'), y las referencias a la distinción operativos/programáticos (p.66) y a la exigibilidad de los DESC (p.23) aportan ejemplo/aplicación y límites. Sin embargo, no hay una definición doctrinal formal ni un autor que teorice específicamente el concepto de indivisibilidad; la mayoría de las citas tienen baja similitud (<0.30) y abordan el tema de forma tangencial. Se requiere una segunda ronda para consolidar definición autoral y crítica directa."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición principio indivisibilidad derechos humanos doctrina autor",
+            "hits": 4
+          },
+          {
+            "consulta": "indivisibilidad interdependencia derechos humanos Declaración de Viena 1993 alcance jurídico",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas limites principio indivisibilidad derechos humanos exigibilidad DESC",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 18
+  },
+  "Interdependencia": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 2,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición precisa del principio de interdependencia de los derechos humanos",
+            "Autor o fuente doctrinal que formule el concepto",
+            "Ejemplo o aplicación jurisprudencial/práctica concreta",
+            "Crítica o límites del principio de interdependencia"
+          ],
+          "consultas": [
+            "definición principio de interdependencia de los derechos humanos doctrina",
+            "interdependencia derechos humanos ejemplo aplicación jurisprudencia caso concreto",
+            "críticas y límites al principio de interdependencia e indivisibilidad de los derechos humanos"
+          ],
+          "nota": "Las citas actuales solo mencionan la interdependencia junto a indivisibilidad y universalidad como fundamento general, con baja similitud (~0.13). No hay una definición autónoma del concepto, ni autor identificado, ejemplo aplicado o crítica. Se requieren búsquedas más específicas para construir una ficha completa."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición principio de interdependencia de los derechos humanos doctrina",
+            "hits": 4
+          },
+          {
+            "consulta": "interdependencia derechos humanos ejemplo aplicación jurisprudencia caso concreto",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites al principio de interdependencia e indivisibilidad de los derechos humanos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 11
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 11,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "autor",
+            "critica"
+          ],
+          "consultas": [
+            "definición de interdependencia de los derechos humanos concepto principio",
+            "interdependencia derechos humanos Conferencia Viena 1993 Declaración Programa de Acción autor doctrina",
+            "críticas y límites al principio de interdependencia e indivisibilidad de los derechos humanos"
+          ],
+          "nota": "Las citas ilustran la interdependencia solo de forma tangencial, ligada a indivisibilidad y universalidad, con un ejemplo (derecho a la vida y ambiente sano) y un fundamento implícito. Falta una definición explícita del concepto, la atribución a un autor o instrumento normativo (p. ej. Declaración de Viena, Vasak, doctrina de DIDH) y toda referencia crítica o a los límites del principio. La similitud de las citas es baja (<0.15), por lo que conviene ampliar la búsqueda con términos más precisos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de interdependencia de los derechos humanos concepto principio",
+            "hits": 4
+          },
+          {
+            "consulta": "interdependencia derechos humanos Conferencia Viena 1993 Declaración Programa de Acción autor doctrina",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites al principio de interdependencia e indivisibilidad de los derechos humanos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 16
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 16
+  },
+  "No regresión": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 0,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "principio de no regresión ambiental definición y contenido jurídico",
+            "fundamento constitucional y convencional del principio de no regresión derechos sociales",
+            "críticas y límites del principio de no regresión doctrina jurisprudencia"
+          ],
+          "nota": "No se recuperó ninguna cita, por lo que la ficha carece de todo respaldo documental. Es necesario buscar fuentes que aporten la definición del principio de no regresión (aplicado tanto en derecho ambiental como en derechos económicos, sociales y culturales), su fundamento normativo (p. ej. Pacto Internacional de DESC, jurisprudencia interamericana), autores de referencia (Michel Prieur en materia ambiental, entre otros), ejemplos de aplicación jurisprudencial y las principales críticas o límites doctrinales."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "principio de no regresión ambiental definición y contenido jurídico",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento constitucional y convencional del principio de no regresión derechos sociales",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del principio de no regresión doctrina jurisprudencia",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 11
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 11,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "principio de no regresividad derechos sociales prohibición de retroceso",
+            "cláusula de progresividad y no regresión Pacto Internacional DESC artículo 2.1",
+            "principio de no regresión ambiental jurisprudencia y críticas límites"
+          ],
+          "nota": "Ninguna de las citas recuperadas aborda el concepto de 'no regresión' (o no regresividad). Los textos tratan temas generales de historia y teoría de los derechos humanos, con similitudes muy bajas (<0.10). No se cubre definición, fundamento normativo (art. 2.1 PIDESC, progresividad), autores clave, ejemplos jurisprudenciales ni críticas. Se requieren búsquedas específicas dirigidas al principio de no regresividad en derechos sociales y ambientales."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "principio de no regresividad derechos sociales prohibición de retroceso",
+            "hits": 4
+          },
+          {
+            "consulta": "cláusula de progresividad y no regresión Pacto Internacional DESC artículo 2.1",
+            "hits": 4
+          },
+          {
+            "consulta": "principio de no regresión ambiental jurisprudencia y críticas límites",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 18
+  },
+  "Principios de los derechos humanos": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de los principios de los derechos humanos (universalidad, indivisibilidad, interdependencia, progresividad)",
+            "Enumeración y explicación de cada principio",
+            "Crítica o límites en la aplicación de estos principios"
+          ],
+          "consultas": [
+            "principios de universalidad indivisibilidad interdependencia y progresividad de los derechos humanos definición",
+            "fundamento y enumeración de los principios de los derechos humanos según Marcano Salazar",
+            "críticas y límites a la universalidad de los derechos humanos relativismo cultural"
+          ],
+          "nota": "Las citas recuperadas presentan baja similitud (0.18-0.21) y son en su mayoría referencias genéricas al título del libro sin contenido sustantivo. Solo dos citas (p. 34 y p. 94) aportan contenido: la p. 34 introduce definición/fundamento de derechos humanos en general y la p. 94 ofrece un ejemplo aplicado (Constitución de Brasil con el principio de prevalencia de los derechos humanos). Sin embargo, falta una definición precisa de los 'principios' como categoría (universalidad, indivisibilidad, interdependencia, progresividad), su desarrollo conceptual y cualquier crítica o límite. Se requiere una nueva ronda de búsqueda más específica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "principios de universalidad indivisibilidad interdependencia y progresividad de los derechos humanos definición",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento y enumeración de los principios de los derechos humanos según Marcano Salazar",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites a la universalidad de los derechos humanos relativismo cultural",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 17,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de los principios de los derechos humanos",
+            "Fundamento teórico o normativo de dichos principios",
+            "Ejemplo o aplicación concreta (universalidad, indivisibilidad, interdependencia, progresividad)",
+            "Crítica o límites en la aplicación de los principios"
+          ],
+          "consultas": [
+            "definición y características de universalidad indivisibilidad e interdependencia de los derechos humanos",
+            "principio de progresividad y no regresividad de los derechos humanos fundamento normativo",
+            "críticas al carácter universal de los derechos humanos relativismo cultural límites"
+          ],
+          "nota": "Las citas recuperadas solo identifican al autor (Marcano Salazar) y la obra, sin extraer contenido sustantivo. Las similitudes son bajas (0.21-0.31) y no aportan definición, fundamento, ejemplos ni crítica. Se requiere una nueva ronda con consultas más específicas sobre los principios (universalidad, indivisibilidad, interdependencia, progresividad) y sus debates."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y características de universalidad indivisibilidad e interdependencia de los derechos humanos",
+            "hits": 4
+          },
+          {
+            "consulta": "principio de progresividad y no regresividad de los derechos humanos fundamento normativo",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al carácter universal de los derechos humanos relativismo cultural límites",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  },
+  "Progresividad": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 6,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Crítica o límites del principio de progresividad (por ejemplo, la prohibición de regresividad y sus excepciones)",
+            "Definición técnica precisa vinculada al PIDESC (obligación de lograr progresivamente la plena efectividad)",
+            "Distinción entre progresividad de DESC y su aplicación a derechos civiles y políticos"
+          ],
+          "consultas": [
+            "prohibición de regresividad principio de progresividad derechos sociales límites críticas",
+            "progresividad artículo 2 PIDESC obligación adopción de medidas hasta máximo de recursos disponibles",
+            "críticas al principio de progresividad justiciabilidad DESC doctrina"
+          ],
+          "nota": "La ficha cubre bien definición, fundamento constitucional (Venezuela), autoría (Marcano Salazar) y ejemplos de aplicación (Corte IDH, sentencia TSJ, caso Vargas). Falta el elemento crítico/límite: no aparece la contracara de la progresividad (no regresividad), sus excepciones ni debates sobre justiciabilidad. Además convendría una definición más técnica anclada en el PIDESC para reforzar el fundamento normativo internacional."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "prohibición de regresividad principio de progresividad derechos sociales límites críticas",
+            "hits": 4
+          },
+          {
+            "consulta": "progresividad artículo 2 PIDESC obligación adopción de medidas hasta máximo de recursos disponibles",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al principio de progresividad justiciabilidad DESC doctrina",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 14
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 14,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Crítica o límite del principio de progresividad (por ejemplo, la prohibición de regresividad y sus tensiones)",
+            "Distinción conceptual entre progresividad y no regresividad",
+            "Fundamento normativo internacional más preciso (art. 2.1 del PIDESC y su interpretación por el Comité DESC)"
+          ],
+          "consultas": [
+            "principio de no regresividad límites y críticas derechos sociales",
+            "progresividad y máximo de recursos disponibles artículo 2.1 PIDESC Comité DESC",
+            "prohibición de regresividad medidas deliberadamente regresivas jurisprudencia"
+          ],
+          "nota": "La ficha cubre bien la definición (progresividad como carácter inconcluso y expansivo de los DDHH), el fundamento (Constitución venezolana, Protocolo de San Salvador), un autor identificable (Marcano Salazar) y ejemplos de aplicación jurisprudencial y normativa. Falta el elemento crítico/límite: no se aborda la cara negativa del principio (prohibición de regresividad), las tensiones con la disponibilidad de recursos, ni objeciones doctrinales. Las similitudes son bajas (máx. 0.21), lo que sugiere conveniente reforzar con fuentes más específicas sobre DESC y no regresividad."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "principio de no regresividad límites y críticas derechos sociales",
+            "hits": 4
+          },
+          {
+            "consulta": "progresividad y máximo de recursos disponibles artículo 2.1 PIDESC Comité DESC",
+            "hits": 4
+          },
+          {
+            "consulta": "prohibición de regresividad medidas deliberadamente regresivas jurisprudencia",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 21
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 21
+  },
+  "Universalidad": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Autor o teórico específico que formule o desarrolle el principio de universalidad de los derechos humanos",
+            "Ejemplo concreto de aplicación normativa (instrumentos internacionales como la Declaración Universal de 1948)",
+            "Desarrollo más profundo de la crítica al universalismo desde el relativismo cultural"
+          ],
+          "consultas": [
+            "críticas al universalismo de los derechos humanos relativismo cultural multiculturalismo",
+            "Declaración Universal de Derechos Humanos 1948 principio de universalidad aplicación",
+            "autores teoría universalidad derechos humanos dignidad humana fundamento filosófico"
+          ],
+          "nota": "La ficha cubre bien la definición (p.61 Marcano Salazar), el fundamento en la dignidad intrínseca y menciona críticas implícitas (p.113 Rabinovich sobre el golpe a la base objetiva). Sin embargo, falta un autor claramente atribuido que teorice el concepto, un ejemplo de aplicación en instrumentos jurídicos concretos, y un desarrollo explícito de la tensión universalismo/relativismo. Las similitudes son bajas (máx. 0.196), lo que sugiere recuperar fuentes más pertinentes en una segunda ronda."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "críticas al universalismo de los derechos humanos relativismo cultural multiculturalismo",
+            "hits": 4
+          },
+          {
+            "consulta": "Declaración Universal de Derechos Humanos 1948 principio de universalidad aplicación",
+            "hits": 4
+          },
+          {
+            "consulta": "autores teoría universalidad derechos humanos dignidad humana fundamento filosófico",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Autor doctrinal específico que teorice la universalidad (más allá de mención tangencial a Nikken)",
+            "Crítica o límite: debate universalismo vs. relativismo cultural",
+            "Discusión sobre tensiones de la universalidad en contextos culturales diversos"
+          ],
+          "consultas": [
+            "crítica universalismo derechos humanos relativismo cultural debate",
+            "fundamento filosófico universalidad derechos humanos dignidad humana autor",
+            "límites y objeciones a la universalidad de los derechos humanos multiculturalismo"
+          ],
+          "nota": "La ficha cubre bien la definición (Marcano Salazar: titularidad de todas las personas sin distinción), el fundamento (dignidad intrínseca) y un ejemplo/aplicación (Declaración Universal de 1948). Sin embargo, falta un autor doctrinal que desarrolle sistemáticamente el concepto y, sobre todo, la dimensión crítica: no hay ninguna cita que aborde el debate universalismo-relativismo cultural, principal límite del concepto. Se recomienda una tercera ronda enfocada en fundamento filosófico atribuido a un autor y en las objeciones desde el relativismo cultural."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "crítica universalismo derechos humanos relativismo cultural debate",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento filosófico universalidad derechos humanos dignidad humana autor",
+            "hits": 4
+          },
+          {
+            "consulta": "límites y objeciones a la universalidad de los derechos humanos multiculturalismo",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  }
+}
