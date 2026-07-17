@@ -1,0 +1,199 @@
+\documentclass[
+  spanish,
+  aspectratio=169,
+  xcolor={dvipsnames,table}
+]{beamer}
+
+\geometry{paperwidth=19.2cm,paperheight=10.8cm}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usetikzlibrary{calc,positioning,fit,arrows.meta,shadows.blur}
+
+\newcommand{\studentname}{Martin Jonathan de la Cruz}
+\newcommand{\studentshort}{M. J. de la Cruz}
+\newcommand{\studentid}{ES2611202040}
+\newcommand{\universityname}{Universidad Abierta y a Distancia de México}
+\newcommand{\facultyname}{Licenciatura en Derecho}
+\newcommand{\coursename}{Garantías Constitucionales}
+\newcommand{\coursecode}{LDE-S2B1}
+\newcommand{\activitytitle}{Mapa conceptual}
+\newcommand{\activitysubtitle}{Marco teórico de los derechos humanos y sus principios}
+\newcommand{\documentsubject}{Actividad 3 - Garantías Constitucionales}
+\newcommand{\activityweek}{Semanas 2 y 3}
+\newcommand{\teachingfigure}{Aarón López Pérez}
+\newcommand{\deliverydate}{\today}
+\newcommand{\locationname}{Roma Norte, Ciudad de México}
+\newcommand{\departmentlogo}{img/departamentos/UnADM.pdf}
+
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+\definecolor{mcLeaf}{HTML}{EAF1E2}
+
+\mode<presentation>{
+  \usetheme{default}
+  \usefonttheme{professionalfonts}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{blocks}[rounded][shadow=false]
+}
+\setbeamersize{text margin left=0.60cm,text margin right=0.60cm}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=unadmInk,bg=white}
+\setbeamercolor{structure}{fg=unadmGreenDark}
+\setbeamercolor{frametitle}{fg=white,bg=unadmGreenDark}
+\setbeamercolor{block title}{fg=white,bg=unadmGreen}
+\setbeamercolor{block body}{fg=unadmInk,bg=unadmPaper}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{itemize item}{\textcolor{unadmGreen}{\large$\blacktriangleright$}}
+
+\setbeamertemplate{frametitle}{
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\textwidth,ht=1.02cm,dp=0.22cm,leftskip=0.35cm,rightskip=0.25cm]{frametitle}
+    \insertframetitle\hfill\includegraphics[height=0.60cm]{\departmentlogo}
+  \end{beamercolorbox}
+  {\color{unadmGold}\rule{\textwidth}{1.3pt}}
+}
+
+\setbeamertemplate{footline}{
+  \leavevmode
+  \hbox{
+    \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}\color{white}\studentshort\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.40\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}\color{white}\coursename\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.26\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}\color{white}\coursecode\hfill\insertframenumber/\inserttotalframenumber\end{beamercolorbox}
+  }
+}
+\setbeamercolor{author in head/foot}{bg=unadmGreenDark}
+\setbeamercolor{title in head/foot}{bg=unadmGreen}
+\setbeamercolor{date in head/foot}{bg=unadmGreenDark}
+
+\title[\coursecode]{\activitytitle}
+\subtitle{\activitysubtitle}
+\author[\studentshort]{\studentname\\\footnotesize Matrícula: \studentid}
+\institute[UnADM]{\universityname\\\facultyname}
+\date[\activityweek]{\locationname\\\activityweek\\\deliverydate}
+
+\tikzset{
+  pcroot/.style={rectangle, rounded corners=3pt, fill=unadmGreenDark, text=white,
+    font=\bfseries\scriptsize, align=center, inner sep=4pt, text width=2.9cm},
+  pcbranch/.style={rectangle, rounded corners=2pt, fill=unadmGreen, text=white,
+    font=\bfseries\tiny, align=center, inner sep=3pt, text width=2.2cm},
+  pclink/.style={-{Latex[length=1.4mm]}, draw=unadmGreenDark!70, line width=0.6pt}
+}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[unadmGreenDark] (current page.south west) rectangle ([xshift=0.58\paperwidth]current page.north west);
+    \fill[unadmGreen] ([xshift=0.58\paperwidth]current page.south west) rectangle (current page.north east);
+    \node[anchor=center,opacity=0.10] at (current page.center) {\includegraphics[width=0.72\paperwidth]{\departmentlogo}};
+    \node[anchor=north west] at ([xshift=0.58cm,yshift=-0.46cm]current page.north west) {\includegraphics[width=2.55cm]{\departmentlogo}};
+  \end{tikzpicture}
+  \vspace*{1.62cm}
+  {\color{white}\fontsize{24}{29}\selectfont\bfseries \activitytitle\par}
+  \vspace{0.28cm}
+  {\color{white!86}\large \activitysubtitle}\\[0.16cm]
+  {\color{white!82}\normalsize \documentsubject}\\[0.35cm]
+  {\color{unadmGold}\rule{0.58\linewidth}{1.3pt}}\\[0.35cm]
+  {\color{white}\studentname}\\
+  {\color{white!82}\footnotesize \facultyname}
+\end{frame}
+
+\begin{frame}{Propósito de la actividad}
+  \begin{block}{Mapa conceptual del Tema 1}
+    Ubicar los antecedentes históricos y reconocer el concepto de derechos humanos y los principios dogmáticos que los rigen.
+  \end{block}
+  \begin{itemize}
+    \item Actividad sumativa del bloque (semanas 2 y 3).
+    \item Síntesis jerárquica del marco teórico de los derechos humanos.
+    \item Base conceptual para el estudio de los medios de control constitucional.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Estructura del mapa conceptual}
+  \begin{center}
+  \begin{tikzpicture}[node distance=0.35cm and 0.35cm]
+    \node[pcroot] (r) {Derechos humanos y sus principios};
+    \node[pcbranch, below left=1.1cm and 2.7cm of r] (h) {1.1 Antecedentes históricos};
+    \node[pcbranch, below left=1.1cm and 0.5cm of r] (g) {1.2 Generaciones};
+    \node[pcbranch, below=1.2cm of r] (c) {1.3 Concepto};
+    \node[pcbranch, below right=1.1cm and 0.5cm of r] (p) {1.4 Principios (art. 1.º)};
+    \node[pcbranch, below right=1.1cm and 2.7cm of r] (ga) {1.5 Garantía};
+    \draw[pclink] (r) -- (h);
+    \draw[pclink] (r) -- (g);
+    \draw[pclink] (r) -- (c);
+    \draw[pclink] (r) -- (p);
+    \draw[pclink] (r) -- (ga);
+  \end{tikzpicture}
+  \end{center}
+  {\footnotesize Cinco ejes jerarquizados desde un concepto raíz común.}
+\end{frame}
+
+\begin{frame}{Antecedentes y generaciones}
+  \begin{columns}[T]
+    \begin{column}{0.48\linewidth}
+      \begin{block}{Antecedentes históricos}
+        Proceso de luchas y documentos que reconocen la dignidad y limitan el poder.
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\linewidth}
+      \begin{block}{Generaciones}
+        1.ª civiles y políticos; 2.ª económicos, sociales y culturales; 3.ª colectivos.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vspace{0.2cm}
+  Las generaciones ordenan su desarrollo, sin jerarquía entre ellas.
+\end{frame}
+
+\begin{frame}{Concepto y principios}
+  \begin{block}{Derecho humano}
+    Prerrogativa ligada a la dignidad; obliga al Estado a respetar, proteger, promover y garantizar (art. 1.º constitucional).
+  \end{block}
+  \begin{itemize}
+    \item \textbf{Universalidad} e \textbf{interdependencia}.
+    \item \textbf{Indivisibilidad}.
+    \item \textbf{Progresividad} y \textbf{no regresión}.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Concepto de garantía}
+  \begin{columns}[T]
+    \begin{column}{0.48\linewidth}
+      \begin{block}{Derecho}
+        El bien o facultad protegida.
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\linewidth}
+      \begin{block}{Garantía}
+        Mecanismo jurídico que lo hace exigible.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vspace{0.25cm}
+  Sin garantías eficaces, los derechos quedan como declaraciones formales.
+\end{frame}
+
+\begin{frame}{Cierre}
+  \begin{block}{Aprendizaje principal}
+    El mapa articula historia, generaciones, concepto, principios y garantías como una secuencia lógica y jerarquizada.
+  \end{block}
+  \begin{itemize}
+    \item El eje articulador es la distinción entre derecho y garantía.
+    \item Prepara el estudio de los medios de control constitucional.
+    \item Fuentes: Álvarez Icaza, Rabinovich Berkman y Marcano Salazar.
+  \end{itemize}
+\end{frame}
+
+\end{document}

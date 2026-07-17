@@ -1,0 +1,236 @@
+\documentclass[
+  spanish,
+  aspectratio=169,
+  xcolor={dvipsnames,table}
+]{beamer}
+
+\geometry{paperwidth=19.2cm,paperheight=10.8cm}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usetikzlibrary{calc,positioning,fit,shadows.blur}
+
+\newcommand{\studentname}{Martin Jonathan de la Cruz}
+\newcommand{\studentshort}{M. J. de la Cruz}
+\newcommand{\studentid}{ES2611202040}
+\newcommand{\universityname}{Universidad Abierta y a Distancia de México}
+\newcommand{\facultyname}{Licenciatura en Derecho}
+\newcommand{\coursename}{Garantías Constitucionales}
+\newcommand{\coursecode}{LDE-S2B1}
+\newcommand{\activitytitle}{El Estado a través de la historia}
+\newcommand{\activitysubtitle}{Foro: poder, derecho y garantías}
+\newcommand{\documentsubject}{Actividad 2 - Garantías Constitucionales}
+\newcommand{\activityweek}{Semana 2}
+\newcommand{\teachingfigure}{Aarón López Pérez}
+\newcommand{\deliverydate}{\today}
+\newcommand{\locationname}{Roma Norte, Ciudad de México}
+\newcommand{\departmentlogo}{img/departamentos/UnADM.pdf}
+
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+
+\mode<presentation>{
+  \usetheme{default}
+  \usefonttheme{professionalfonts}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{blocks}[rounded][shadow=false]
+}
+\setbeamersize{text margin left=0.60cm,text margin right=0.60cm}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=unadmInk,bg=white}
+\setbeamercolor{structure}{fg=unadmGreenDark}
+\setbeamercolor{frametitle}{fg=white,bg=unadmGreenDark}
+\setbeamercolor{block title}{fg=white,bg=unadmGreen}
+\setbeamercolor{block body}{fg=unadmInk,bg=unadmPaper}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{itemize item}{\textcolor{unadmGreen}{\large$\blacktriangleright$}}
+
+\setbeamertemplate{frametitle}{
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\textwidth,ht=1.02cm,dp=0.22cm,leftskip=0.35cm,rightskip=0.25cm]{frametitle}
+    \insertframetitle\hfill\includegraphics[height=0.60cm]{\departmentlogo}
+  \end{beamercolorbox}
+  {\color{unadmGold}\rule{\textwidth}{1.3pt}}
+}
+
+\setbeamertemplate{footline}{
+  \leavevmode
+  \hbox{
+    \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}\color{white}\studentshort\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.40\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}\color{white}\coursename\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.26\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}\color{white}\coursecode\hfill\insertframenumber/\inserttotalframenumber\end{beamercolorbox}
+  }
+}
+\setbeamercolor{author in head/foot}{bg=unadmGreenDark}
+\setbeamercolor{title in head/foot}{bg=unadmGreen}
+\setbeamercolor{date in head/foot}{bg=unadmGreenDark}
+
+\title[\coursecode]{\activitytitle}
+\subtitle{\activitysubtitle}
+\author[\studentshort]{\studentname\\\footnotesize Matrícula: \studentid}
+\institute[UnADM]{\universityname\\\facultyname}
+\date[\activityweek]{\locationname\\\activityweek\\\deliverydate}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[unadmGreenDark] (current page.south west) rectangle ([xshift=0.58\paperwidth]current page.north west);
+    \fill[unadmGreen] ([xshift=0.58\paperwidth]current page.south west) rectangle (current page.north east);
+    \node[anchor=center,opacity=0.10] at (current page.center) {\includegraphics[width=0.72\paperwidth]{\departmentlogo}};
+    \node[anchor=north west] at ([xshift=0.58cm,yshift=-0.46cm]current page.north west) {\includegraphics[width=2.55cm]{\departmentlogo}};
+  \end{tikzpicture}
+  \vspace*{1.62cm}
+  {\color{white}\fontsize{24}{29}\selectfont\bfseries \activitytitle\par}
+  \vspace{0.28cm}
+  {\color{white!86}\large \activitysubtitle}\\[0.16cm]
+  {\color{white!82}\normalsize \documentsubject}\\[0.35cm]
+  {\color{unadmGold}\rule{0.58\linewidth}{1.3pt}}\\[0.35cm]
+  {\color{white}\studentname}\\
+  {\color{white!82}\footnotesize \facultyname}
+\end{frame}
+
+\begin{frame}{Objetivo del foro}
+  \begin{block}{Propósito analítico}
+    Analizar la evolución histórica del Estado para explicar cómo la limitación jurídica del poder favoreció el reconocimiento y la protección de los derechos humanos.
+  \end{block}
+  \begin{itemize}
+    \item Recorrer las etapas del Estado desde la Antigüedad hasta el modelo constitucional.
+    \item Relacionar cada etapa con el avance o retroceso de los derechos.
+    \item Sostener una postura personal fundamentada en fuentes académicas.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{El Estado en la Antigüedad}
+  \begin{columns}[T]
+    \begin{column}{0.48\linewidth}
+      \begin{block}{Ciudad-Estado griega}
+        Ciudadanía restringida; esclavitud naturalizada. Los derechos dependían de la pertenencia a la polis.
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\linewidth}
+      \begin{block}{Imperio romano}
+        Ius civile para ciudadanos; ius gentium como puente hacia un derecho más universal.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vspace{0.25cm}
+  \begin{block}{Rasgo común}
+    El poder no reconocía límites jurídicos formales: la protección dependía del estatus social.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Estado medieval y absolutismo}
+  \begin{itemize}
+    \item \textbf{Feudalismo}: el poder se fragmenta en señoríos; el campesino carece de derechos efectivos.
+    \item \textbf{Monarquía absoluta}: el rey concentra toda autoridad, sin contrapesos institucionales.
+    \item \textbf{Iglesia}: actúa como freno moral al poder secular, pero no garantía jurídica.
+  \end{itemize}
+  \begin{block}{Magna Carta 1215}
+    Primera limitación escrita del poder real: protege derechos de los barones, semilla del constitucionalismo.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Iusnaturalismo y contractualismo}
+  \begin{columns}[T]
+    \begin{column}{0.48\linewidth}
+      \begin{block}{Iusnaturalismo}
+        Derechos anteriores al Estado, derivados de la razón o de la dignidad humana (Locke, Rousseau).
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\linewidth}
+      \begin{block}{Contrato social}
+        El Estado surge para proteger derechos previos; si los viola, pierde legitimidad.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vspace{0.25cm}
+  Esta transformación conceptual hizo posible las declaraciones de derechos del siglo XVIII.
+\end{frame}
+
+\begin{frame}{Revoluciones y declaraciones de derechos}
+  \begin{itemize}
+    \item \textbf{Revolución Gloriosa (1688)}: Bill of Rights limita al monarca y afirma prerrogativas parlamentarias.
+    \item \textbf{Declaración de Independencia (1776)}: vida, libertad y búsqueda de la felicidad como derechos inalienables.
+    \item \textbf{Declaración de Derechos del Hombre (1789)}: libertad, igualdad, soberanía nacional, separación de poderes.
+  \end{itemize}
+  \begin{block}{Tesis central}
+    Cada revolución redujo el margen del poder arbitrario y amplió el reconocimiento de derechos.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Estado liberal y Estado social}
+  \begin{columns}[T]
+    \begin{column}{0.48\linewidth}
+      \begin{block}{Estado liberal (siglo XIX)}
+        Derechos civiles y políticos. El Estado no interviene; garantiza la esfera privada.
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\linewidth}
+      \begin{block}{Estado social (siglo XX)}
+        Derechos económicos, sociales y culturales. El Estado actúa para reducir desigualdad.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vspace{0.25cm}
+  La Constitución mexicana de 1917 es pionera en reconocer derechos sociales con rango constitucional.
+\end{frame}
+
+\begin{frame}{Estado constitucional y garantías}
+  \begin{block}{Postura personal}
+    El Estado constitucional representa la forma más elaborada de limitación del poder: los derechos se protegen mediante garantías exigibles y mecanismos de control como el juicio de amparo.
+  \end{block}
+  \begin{itemize}
+    \item Constitución como norma suprema vinculante.
+    \item Garantías como instrumentos que hacen efectivos los derechos.
+    \item Control de constitucionalidad como freno al poder arbitrario.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Fuentes consultadas}
+  \begin{itemize}
+    \item Rabinovich-Berkman, R. --- \textit{¿Cómo se hicieron los Derechos Humanos?}
+    \item Marcano Salazar, L. M. --- \textit{Derechos humanos: teorías y doctrina}
+    \item Álvarez Icaza Longoria, E. --- \textit{Los derechos humanos en México}
+    \item Nota de estudio: \textit{El Estado a través de la historia} (corpus local)
+  \end{itemize}
+  \begin{block}{Perspectiva de cierre}
+    Cada etapa histórica confirmó que solo al limitar el poder con normas exigibles emergieron derechos humanos reales, no meramente declarados.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Pregunta para el intercambio}
+  \begin{block}{Invitación al debate}
+    ¿Puede el Estado constitucional contemporáneo retroceder hacia formas de poder menos limitadas, o los mecanismos de garantía y el derecho internacional hacen ese retroceso estructuralmente imposible?
+  \end{block}
+  \vspace{0.35cm}
+  \begin{itemize}
+    \item Reflexiona sobre la solidez de las garantías actuales.
+    \item Contrasta con los retrocesos históricos ya estudiados.
+    \item ¿Qué diferencia hay entre un derecho reconocido y uno garantizado?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Cierre}
+  \begin{block}{Aprendizaje principal}
+    La evolución del Estado no es lineal ni automática: cada conquista jurídica fue resultado de luchas sociales y transformaciones institucionales que redujeron el poder arbitrario.
+  \end{block}
+  \begin{itemize}
+    \item Las garantías constitucionales son el resultado histórico de siglos de limitación del poder.
+    \item Entender el Estado es condición para defender los derechos que lo vinculan.
+    \item El foro permite contrastar estas perspectivas con otras visiones del grupo.
+  \end{itemize}
+\end{frame}
+
+\end{document}
