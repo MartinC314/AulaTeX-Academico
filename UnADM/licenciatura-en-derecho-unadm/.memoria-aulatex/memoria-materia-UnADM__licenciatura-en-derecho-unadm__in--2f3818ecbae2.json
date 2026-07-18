@@ -60,7 +60,12 @@
     "Intercultural Competences: Conceptual and Operational Framework :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "Guidance for Generative AI in Education and Research :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-    "Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
+    "Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Interaprendizajes entre indígenas: De cómo las y los educadores pescan conocimientos y significados comunitarios en contextos interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Manual de comunicación intercultural: Una introducción a sus conceptos, teorías y aplicaciones :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Protocolo para juzgar con perspectiva intercultural: Personas, pueblos y comunidades indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Construcción de espacios interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
   ],
   "section_titles": [
     "Encuadre de la asignatura",
@@ -87,14 +92,19 @@
     "unescoInterculturalCompetences2013 :: Intercultural Competences: Conceptual and Operational Framework :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "unescoGenerativeAI2023 :: Guidance for Generative AI in Education and Research :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "cpeum2026 :: Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-    "leyDerechosLinguisticos2024 :: Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
+    "leyDerechosLinguisticos2024 :: Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "bertely2011interaprendizajes :: Interaprendizajes entre indígenas: De cómo las y los educadores pescan conocimientos y significados comunitarios en contextos interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "pech2016manual :: Manual de comunicación intercultural: Una introducción a sus conceptos, teorías y aplicaciones :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "scjn2022protocolo :: Protocolo para juzgar con perspectiva intercultural: Personas, pueblos y comunidades indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "diazAlonso2011construccion :: Construcción de espacios interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "oit1691989 :: Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
   ],
   "node_metadata": {
     "editing_details": {
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 1 - interaprendizaje-en-ambientes-virtuales-lde",
+        "subject_rule": "Actividad 2 - interaprendizaje-en-ambientes-virtuales-lde",
         "scope_label": "interaprendizaje-en-ambientes-virtuales-lde"
       },
       "didactic_contract": {
@@ -120,8 +130,8 @@
         "institution": "UnADM",
         "career": "licenciatura-en-derecho-unadm",
         "subject": "interaprendizaje-en-ambientes-virtuales-lde",
-        "activity": "Actividad 1",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-1"
+        "activity": "Actividad 2",
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-2"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -156,7 +166,7 @@
         },
         {
           "scope_key": "interinstitucional",
-          "has_memory": true
+          "has_memory": false
         },
         {
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
@@ -175,10 +185,7 @@
           "has_memory": true
         }
       ],
-      "novelty_signals": [
-        "heading_contract",
-        "institutional_identity"
-      ],
+      "novelty_signals": [],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -196,7 +203,7 @@
           "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/README.md",
           "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
           "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-1.tex",
-          "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales.tex",
+          "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-2.tex",
           "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex"
         ]
       },
@@ -210,7 +217,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260710-190643",
+      "run_id": "20260717-201537",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
@@ -222,7 +229,7 @@
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
         "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde"
       ],
-      "novelty_count": 2
+      "novelty_count": 0
     },
     "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
     "level": "materia",
@@ -272,7 +279,7 @@
           "heading_contract": {
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-            "subject_rule": "Actividad 1 - interaprendizaje-en-ambientes-virtuales-lde",
+            "subject_rule": "Actividad 2 - interaprendizaje-en-ambientes-virtuales-lde",
             "scope_label": "interaprendizaje-en-ambientes-virtuales-lde"
           },
           "didactic_contract": {
@@ -298,8 +305,8 @@
             "institution": "UnADM",
             "career": "licenciatura-en-derecho-unadm",
             "subject": "interaprendizaje-en-ambientes-virtuales-lde",
-            "activity": "Actividad 1",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-1"
+            "activity": "Actividad 2",
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-2"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -327,7 +334,8 @@
             "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde', 'has_memory': True}",
             "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde', 'has_memory': True}",
             "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde', 'has_memory': True}",
-            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde', 'has_memory': True}"
+            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde', 'has_memory': True}",
+            "{'scope_key': 'interinstitucional', 'has_memory': False}"
           ],
           "novelty_signals": [
             "bootstrap",
@@ -352,7 +360,8 @@
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-1.tex",
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales.tex",
-              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex"
+              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex",
+              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-2.tex"
             ]
           },
           "confidence": {
@@ -365,7 +374,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260710-190643",
+          "run_id": "20260717-201537",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
@@ -377,7 +386,7 @@
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
             "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde"
           ],
-          "novelty_count": 2
+          "novelty_count": 0
         },
         "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
         "level": "materia",
@@ -492,7 +501,8 @@
     ],
     "reinforcement_log": [
       "ADN sintetizado con 14 conceptos, 4 citas y 0 relaciones.",
-      "Memoria de redacción preservada en 33 bloques."
+      "Memoria de redacción preservada en 33 bloques.",
+      "ADN sintetizado con 19 conceptos, 4 citas y 0 relaciones."
     ],
     "knowledge_graph": {
       "concepts": [
@@ -509,7 +519,12 @@
         "Intercultural Competences: Conceptual and Operational Framework :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "Guidance for Generative AI in Education and Research :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-        "Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
+        "Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Interaprendizajes entre indígenas: De cómo las y los educadores pescan conocimientos y significados comunitarios en contextos interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Manual de comunicación intercultural: Una introducción a sus conceptos, teorías y aplicaciones :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Protocolo para juzgar con perspectiva intercultural: Personas, pueblos y comunidades indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Construcción de espacios interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
       ],
       "citations": [
         "vygotsky1978mind",
@@ -531,7 +546,12 @@
         "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/programa-analitico-interaprendizaje-en-ambientes-virtuales.md",
         "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales.tex",
-        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex"
+        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex",
+        "bertely2011interaprendizajes :: Interaprendizajes entre indígenas: De cómo las y los educadores pescan conocimientos y significados comunitarios en contextos interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "pech2016manual :: Manual de comunicación intercultural: Una introducción a sus conceptos, teorías y aplicaciones :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "scjn2022protocolo :: Protocolo para juzgar con perspectiva intercultural: Personas, pueblos y comunidades indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "diazAlonso2011construccion :: Construcción de espacios interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "oit1691989 :: Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
       ],
       "relations": [],
       "concept_weights": {},
@@ -6905,7 +6925,67 @@
         "year": "2024",
         "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDLPI.pdf",
         "note": "Texto vigente consultado en línea",
-        "raw_entry": "@misc{leyDerechosLinguisticos2024,\n  author = {{Cámara de Diputados del H. Congreso de la Unión}},\n  title = {Ley General de Derechos Lingüísticos de los Pueblos Indígenas},\n  year = {2024},\n  howpublished = {\\url{https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDLPI.pdf}},\n  note = {Texto vigente consultado en línea}\n}"
+        "raw_entry": "@misc{leyDerechosLinguisticos2024,\n  author = {{Cámara de Diputados del H. Congreso de la Unión}},\n  title = {Ley General de Derechos Lingüísticos de los Pueblos Indígenas},\n  year = {2024},\n  howpublished = {\\url{https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDLPI.pdf}},\n  note = {Texto vigente consultado en línea}\n}\n\n% --- Materiales básicos de la Semana 2 (Actividad 2: Foro) ---"
+      },
+      "bertely2011interaprendizajes": {
+        "key": "bertely2011interaprendizajes",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "book",
+        "title": "Interaprendizajes entre indígenas: De cómo las y los educadores pescan conocimientos y significados comunitarios en contextos interculturales",
+        "author": "Bertely Busquets, María",
+        "year": "2011",
+        "publisher": "CIESAS-UPN",
+        "note": "Bertely Busquets, M. (Coord.). Material básico de la semana 2",
+        "raw_entry": "@book{bertely2011interaprendizajes,\n  author = {Bertely Busquets, María},\n  title = {Interaprendizajes entre indígenas: De cómo las y los educadores pescan conocimientos y significados comunitarios en contextos interculturales},\n  year = {2011},\n  publisher = {CIESAS-UPN},\n  address = {México},\n  note = {Bertely Busquets, M. (Coord.). Material básico de la semana 2}\n}"
+      },
+      "pech2016manual": {
+        "key": "pech2016manual",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "book",
+        "title": "Manual de comunicación intercultural: Una introducción a sus conceptos, teorías y aplicaciones",
+        "author": "Pech Salvador, Cynthia E. and Rizo García, Marta and Romeu Aldaya, Vivian",
+        "year": "2016",
+        "publisher": "Universidad Autónoma de la Ciudad de México",
+        "note": "Material básico de la semana 2",
+        "raw_entry": "@book{pech2016manual,\n  author = {Pech Salvador, Cynthia E. and Rizo García, Marta and Romeu Aldaya, Vivian},\n  title = {Manual de comunicación intercultural: Una introducción a sus conceptos, teorías y aplicaciones},\n  edition = {2},\n  year = {2016},\n  publisher = {Universidad Autónoma de la Ciudad de México},\n  address = {Ciudad de México},\n  note = {Material básico de la semana 2}\n}"
+      },
+      "scjn2022protocolo": {
+        "key": "scjn2022protocolo",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "book",
+        "title": "Protocolo para juzgar con perspectiva intercultural: Personas, pueblos y comunidades indígenas",
+        "author": "Suprema Corte de Justicia de la Nación",
+        "year": "2022",
+        "publisher": "Suprema Corte de Justicia de la Nación",
+        "note": "Material básico de la semana 2",
+        "raw_entry": "@book{scjn2022protocolo,\n  author = {{Suprema Corte de Justicia de la Nación}},\n  title = {Protocolo para juzgar con perspectiva intercultural: Personas, pueblos y comunidades indígenas},\n  year = {2022},\n  publisher = {Suprema Corte de Justicia de la Nación},\n  address = {Ciudad de México},\n  note = {Material básico de la semana 2}\n}"
+      },
+      "diazAlonso2011construccion": {
+        "key": "diazAlonso2011construccion",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "book",
+        "title": "Construcción de espacios interculturales",
+        "author": "Díaz, Raúl and Alonso, Graciela",
+        "year": "2011",
+        "publisher": "Miño y Dávila",
+        "note": "Bibliografía complementaria de la semana 2",
+        "raw_entry": "@book{diazAlonso2011construccion,\n  author = {Díaz, Raúl and Alonso, Graciela},\n  title = {Construcción de espacios interculturales},\n  edition = {2},\n  year = {2011},\n  publisher = {Miño y Dávila},\n  address = {Buenos Aires},\n  note = {Bibliografía complementaria de la semana 2}\n}"
+      },
+      "oit1691989": {
+        "key": "oit1691989",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "misc",
+        "title": "Convenio 169 sobre pueblos indígenas y tribales en países independientes",
+        "author": "Organización Internacional del Trabajo",
+        "year": "1989",
+        "url": "https://www.gob.mx/cms/uploads/attachment/file/30118/Convenio169.pdf",
+        "note": "Normatividad gubernamental relacionada con la asignatura",
+        "raw_entry": "@misc{oit1691989,\n  author = {{Organización Internacional del Trabajo}},\n  title = {Convenio 169 sobre pueblos indígenas y tribales en países independientes},\n  year = {1989},\n  howpublished = {\\url{https://www.gob.mx/cms/uploads/attachment/file/30118/Convenio169.pdf}},\n  note = {Normatividad gubernamental relacionada con la asignatura}\n}"
       }
     }
   },
