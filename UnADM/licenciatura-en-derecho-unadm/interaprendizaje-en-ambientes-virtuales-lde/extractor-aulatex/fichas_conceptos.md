@@ -26,21 +26,17 @@ No se localizaron citas textuales por encima del umbral configurado.
 
 **Observación automática:** No se localizaron fragmentos por encima del umbral configurado. Conviene revisar el concepto o ampliar el corpus.
 
-## Ficha 03. Perspectiva intercultural
+## Ficha 03. Diversidad lingüística
 
-**Calidad estimada:** baja
-**Mejor similitud:** 0.0977
-**Similitud promedio:** 0.0977
-**Fuentes:** README.md
-**Ubicaciones:** README.md, bloque 1
+**Calidad estimada:** sin hallazgos
+**Mejor similitud:** 0.0000
+**Similitud promedio:** 0.0000
+**Fuentes:** Sin fuentes detectadas
+**Ubicaciones:** Sin ubicaciones detectadas
 
-### README.md — bloque 1 — similitud 0.0977
+No se localizaron citas textuales por encima del umbral configurado.
 
-**Detalle de puntaje:** tfidf=0.0877; bonus=0.0100
-
-> Referencias - Interaprendizaje en ambientes virtuales Carpeta para planeaciones, lecturas, notas, jurisprudencia, normas, casos, datos y evidencia auxiliar de la asignatura. Convenciones Registrar toda fuente final en ../interaprendizaje-en-ambientes-virtuales.bib.
-
-**Observación automática:** La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas.
+**Observación automática:** No se localizaron fragmentos por encima del umbral configurado. Conviene revisar el concepto o ampliar el corpus.
 
 ## Ficha 04. Narración situada / comunitaria
 
@@ -54,23 +50,7 @@ No se localizaron citas textuales por encima del umbral configurado.
 
 **Observación automática:** No se localizaron fragmentos por encima del umbral configurado. Conviene revisar el concepto o ampliar el corpus.
 
-## Ficha 05. Diversidad lingüística
-
-**Calidad estimada:** baja
-**Mejor similitud:** 0.0977
-**Similitud promedio:** 0.0977
-**Fuentes:** README.md
-**Ubicaciones:** README.md, bloque 1
-
-### README.md — bloque 1 — similitud 0.0977
-
-**Detalle de puntaje:** tfidf=0.0877; bonus=0.0100
-
-> Referencias - Interaprendizaje en ambientes virtuales Carpeta para planeaciones, lecturas, notas, jurisprudencia, normas, casos, datos y evidencia auxiliar de la asignatura. Convenciones Registrar toda fuente final en ../interaprendizaje-en-ambientes-virtuales.bib.
-
-**Observación automática:** La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas.
-
-## Ficha 06. Derechos lingüísticos
+## Ficha 05. Perspectiva intercultural
 
 **Calidad estimada:** sin hallazgos
 **Mejor similitud:** 0.0000

@@ -21,23 +21,23 @@
             "critica"
           ],
           "consultas": [
-            "definición de comunicación intercultural Edward T. Hall teoría del contexto",
-            "modelo de competencia comunicativa intercultural Byram ejemplo aplicación educativa",
-            "críticas y límites de la comunicación intercultural enfoque esencialista culturas"
+            "definición comunicación intercultural Edward Hall teoría",
+            "comunicación intercultural competencias aplicación educación migración ejemplo",
+            "críticas y límites del enfoque de comunicación intercultural etnocentrismo"
           ],
-          "nota": "No se recuperó ninguna cita, por lo que la ficha carece por completo de sustento. Es imprescindible buscar fuentes que aporten definición conceptual (p. ej. Hall, Hofstede), fundamento teórico, autores de referencia, casos de aplicación (contextos educativos, empresariales o migratorios) y críticas (riesgo de esencialismo cultural, relaciones de poder). Las consultas propuestas priorizan cubrir todos los ejes ausentes."
+          "nota": "No se recuperó ninguna cita, por lo que la ficha carece por completo de evidencia. Se requieren fuentes que aporten definición conceptual, fundamento teórico, autores de referencia (p. ej. Hall, Hofstede, Kim), casos de aplicación y perspectivas críticas."
         },
         "consultas_ejecutadas": [
           {
-            "consulta": "definición de comunicación intercultural Edward T. Hall teoría del contexto",
+            "consulta": "definición comunicación intercultural Edward Hall teoría",
             "hits": 0
           },
           {
-            "consulta": "modelo de competencia comunicativa intercultural Byram ejemplo aplicación educativa",
+            "consulta": "comunicación intercultural competencias aplicación educación migración ejemplo",
             "hits": 0
           },
           {
-            "consulta": "críticas y límites de la comunicación intercultural enfoque esencialista culturas",
+            "consulta": "críticas y límites del enfoque de comunicación intercultural etnocentrismo",
             "hits": 0
           }
         ],
@@ -69,161 +69,23 @@
             "critica"
           ],
           "consultas": [
-            "definición de diversidad cultural UNESCO Declaración Universal 2001",
-            "fundamento jurídico diversidad cultural derechos humanos multiculturalismo Kymlicka Taylor",
-            "críticas límites diversidad cultural relativismo cultural ejemplos aplicación políticas públicas"
+            "definición de diversidad cultural Declaración Universal UNESCO 2001",
+            "fundamento jurídico diversidad cultural Convención UNESCO 2005 protección expresiones culturales",
+            "críticas al multiculturalismo y diversidad cultural Sartori Kymlicka límites"
           ],
-          "nota": "No se recuperó ninguna cita. La ficha carece por completo de evidencia para todos los elementos evaluados (definición, fundamento, autor, ejemplo y crítica). Es necesario ejecutar las consultas propuestas para obtener fuentes normativas (UNESCO), doctrinales (teóricos del multiculturalismo) y críticas antes de poder valorar la cobertura."
+          "nota": "No se recuperó ninguna cita, por lo que la ficha carece por completo de respaldo documental. Es necesario obtener fuentes que aporten una definición normativa (por ejemplo, instrumentos de la UNESCO), su fundamento jurídico-filosófico, autores de referencia (Kymlicka, Taylor, Sartori), ejemplos de aplicación (políticas multiculturales, pluralismo jurídico) y las principales críticas o límites del concepto."
         },
         "consultas_ejecutadas": [
           {
-            "consulta": "definición de diversidad cultural UNESCO Declaración Universal 2001",
+            "consulta": "definición de diversidad cultural Declaración Universal UNESCO 2001",
             "hits": 0
           },
           {
-            "consulta": "fundamento jurídico diversidad cultural derechos humanos multiculturalismo Kymlicka Taylor",
+            "consulta": "fundamento jurídico diversidad cultural Convención UNESCO 2005 protección expresiones culturales",
             "hits": 0
           },
           {
-            "consulta": "críticas límites diversidad cultural relativismo cultural ejemplos aplicación políticas públicas",
-            "hits": 0
-          }
-        ],
-        "hits_finales": 0
-      }
-    ],
-    "suficiente_final": false,
-    "hits_finales": 0
-  },
-  "Perspectiva intercultural": {
-    "rondas": [
-      {
-        "ronda": 1,
-        "hits_iniciales": 0,
-        "evaluacion": {
-          "suficiente": false,
-          "cobertura": {
-            "definicion": false,
-            "fundamento": false,
-            "autor": false,
-            "ejemplo": false,
-            "critica": false
-          },
-          "faltantes": [
-            "definicion",
-            "fundamento",
-            "autor",
-            "ejemplo",
-            "critica"
-          ],
-          "consultas": [
-            "definición de perspectiva intercultural en el derecho y sus fundamentos teóricos",
-            "perspectiva intercultural aplicación en jurisprudencia y derechos de pueblos indígenas ejemplo",
-            "críticas y límites del enfoque intercultural interculturalidad crítica Catherine Walsh"
-          ],
-          "nota": "No se recuperó ninguna cita, por lo que la ficha carece de todo respaldo documental. Se requiere localizar fuentes que definan el concepto (idealmente distinguiendo interculturalidad funcional vs. crítica), su fundamento normativo (Convenio 169 OIT, bloque de constitucionalidad), autores de referencia (Catherine Walsh, Boaventura de Sousa Santos, Raúl Fornet-Betancourt), ejemplos de aplicación jurisprudencial (juzgar con perspectiva intercultural, peritajes culturales) y las críticas al enfoque (riesgo de folclorización, esencialismo cultural)."
-        },
-        "consultas_ejecutadas": [
-          {
-            "consulta": "definición de perspectiva intercultural en el derecho y sus fundamentos teóricos",
-            "hits": 0
-          },
-          {
-            "consulta": "perspectiva intercultural aplicación en jurisprudencia y derechos de pueblos indígenas ejemplo",
-            "hits": 1
-          },
-          {
-            "consulta": "críticas y límites del enfoque intercultural interculturalidad crítica Catherine Walsh",
-            "hits": 0
-          }
-        ],
-        "hits_finales": 1
-      },
-      {
-        "ronda": 2,
-        "hits_iniciales": 1,
-        "evaluacion": {
-          "suficiente": false,
-          "cobertura": {
-            "definicion": false,
-            "fundamento": false,
-            "autor": false,
-            "ejemplo": false,
-            "critica": false
-          },
-          "faltantes": [
-            "definicion",
-            "fundamento",
-            "autor",
-            "ejemplo",
-            "critica"
-          ],
-          "consultas": [
-            "definición de perspectiva intercultural en derecho y educación",
-            "fundamento normativo perspectiva intercultural pueblos indígenas Convenio 169 OIT",
-            "críticas y límites del enfoque intercultural multiculturalismo Catherine Walsh"
-          ],
-          "nota": "La única cita recuperada (README.md) es meramente organizativa y no aporta contenido conceptual sobre la perspectiva intercultural. No cubre ninguno de los cinco elementos evaluables. Es indispensable recuperar fuentes sustantivas: definiciones autorales (p. ej. Walsh, Tubino, Fornet-Betancourt), fundamento jurídico (Convenio 169 OIT, jurisprudencia constitucional sobre interculturalidad), ejemplos de aplicación (peritaje cultural, justicia indígena, educación intercultural bilingüe) y crítica (interculturalidad funcional vs. crítica, riesgo de folclorización)."
-        },
-        "consultas_ejecutadas": [
-          {
-            "consulta": "definición de perspectiva intercultural en derecho y educación",
-            "hits": 0
-          },
-          {
-            "consulta": "fundamento normativo perspectiva intercultural pueblos indígenas Convenio 169 OIT",
-            "hits": 0
-          },
-          {
-            "consulta": "críticas y límites del enfoque intercultural multiculturalismo Catherine Walsh",
-            "hits": 0
-          }
-        ],
-        "hits_finales": 1
-      }
-    ],
-    "suficiente_final": false,
-    "hits_finales": 1
-  },
-  "Narración situada / comunitaria": {
-    "rondas": [
-      {
-        "ronda": 1,
-        "hits_iniciales": 0,
-        "evaluacion": {
-          "suficiente": false,
-          "cobertura": {
-            "definicion": false,
-            "fundamento": false,
-            "autor": false,
-            "ejemplo": false,
-            "critica": false
-          },
-          "faltantes": [
-            "definicion",
-            "fundamento",
-            "autor",
-            "ejemplo",
-            "critica"
-          ],
-          "consultas": [
-            "definición de narración situada storytelling comunitario epistemología situada Haraway",
-            "narrativa comunitaria metodología investigación participativa ejemplos aplicación",
-            "críticas y límites del conocimiento situado y narrativas comunitarias en ciencias sociales"
-          ],
-          "nota": "No se recuperó ninguna cita, por lo que la ficha carece por completo de sustento. Ningún elemento (definición, fundamento, autor, ejemplo o crítica) está cubierto. Se recomienda una nueva ronda de búsqueda con las consultas propuestas, orientadas a los conceptos de conocimiento situado (Donna Haraway), narrativas comunitarias en metodologías participativas y sus críticas."
-        },
-        "consultas_ejecutadas": [
-          {
-            "consulta": "definición de narración situada storytelling comunitario epistemología situada Haraway",
-            "hits": 0
-          },
-          {
-            "consulta": "narrativa comunitaria metodología investigación participativa ejemplos aplicación",
-            "hits": 0
-          },
-          {
-            "consulta": "críticas y límites del conocimiento situado y narrativas comunitarias en ciencias sociales",
+            "consulta": "críticas al multiculturalismo y diversidad cultural Sartori Kymlicka límites",
             "hits": 0
           }
         ],
@@ -256,10 +118,10 @@
           ],
           "consultas": [
             "definición de diversidad lingüística UNESCO derechos lingüísticos",
-            "fundamento jurídico protección diversidad lingüística Declaración Universal Derechos Lingüísticos 1996",
-            "ejemplo políticas lingüísticas plurilingüismo casos España o América Latina críticas"
+            "diversidad lingüística ejemplos lenguas indígenas política multilingüe constitucional",
+            "críticas y límites protección diversidad lingüística ecología de las lenguas Skutnabb-Kangas"
           ],
-          "nota": "No se recuperó ninguna cita; la ficha está vacía y no cubre ningún elemento. Se requiere una búsqueda completa. Las consultas propuestas apuntan a fuentes normativas (UNESCO, Declaración Universal de Derechos Lingüísticos de Barcelona 1996), fundamentos jurídicos y casos aplicados con sus críticas."
+          "nota": "No se recuperó ninguna cita, por lo que la ficha carece por completo de sustento documental. Es necesario obtener fuentes que aporten una definición precisa (p. ej. instrumentos de la UNESCO o la Declaración Universal de Derechos Lingüísticos), el fundamento jurídico o teórico (derechos humanos, pluralismo cultural), autores de referencia (Skutnabb-Kangas, Fishman, Hale), ejemplos concretos de aplicación (reconocimiento constitucional de lenguas, políticas de revitalización) y las críticas o límites (tensión entre unidad estatal y diversidad, viabilidad de la preservación de lenguas minoritarias). Se recomienda una segunda ronda de búsqueda."
         },
         "consultas_ejecutadas": [
           {
@@ -267,63 +129,21 @@
             "hits": 0
           },
           {
-            "consulta": "fundamento jurídico protección diversidad lingüística Declaración Universal Derechos Lingüísticos 1996",
+            "consulta": "diversidad lingüística ejemplos lenguas indígenas política multilingüe constitucional",
             "hits": 0
           },
           {
-            "consulta": "ejemplo políticas lingüísticas plurilingüismo casos España o América Latina críticas",
-            "hits": 1
-          }
-        ],
-        "hits_finales": 1
-      },
-      {
-        "ronda": 2,
-        "hits_iniciales": 1,
-        "evaluacion": {
-          "suficiente": false,
-          "cobertura": {
-            "definicion": false,
-            "fundamento": false,
-            "autor": false,
-            "ejemplo": false,
-            "critica": false
-          },
-          "faltantes": [
-            "definicion",
-            "fundamento",
-            "autor",
-            "ejemplo",
-            "critica"
-          ],
-          "consultas": [
-            "definición de diversidad lingüística sociolingüística lenguas",
-            "derecho a la lengua y protección de lenguas minoritarias marco jurídico UNESCO",
-            "críticas al concepto de diversidad lingüística políticas de multilingüismo"
-          ],
-          "nota": "La única cita recuperada es un archivo README de organización de carpetas sin ningún contenido temático sobre diversidad lingüística. Ninguno de los cinco elementos está cubierto. Es necesario recuperar fuentes que definan el concepto, expongan su fundamento (por ejemplo declaraciones de la UNESCO o autores de sociolingüística como Fishman o Hamel), presenten aplicaciones (políticas educativas plurilingües, derechos lingüísticos) y ofrezcan límites o críticas."
-        },
-        "consultas_ejecutadas": [
-          {
-            "consulta": "definición de diversidad lingüística sociolingüística lenguas",
-            "hits": 0
-          },
-          {
-            "consulta": "derecho a la lengua y protección de lenguas minoritarias marco jurídico UNESCO",
-            "hits": 0
-          },
-          {
-            "consulta": "críticas al concepto de diversidad lingüística políticas de multilingüismo",
+            "consulta": "críticas y límites protección diversidad lingüística ecología de las lenguas Skutnabb-Kangas",
             "hits": 0
           }
         ],
-        "hits_finales": 1
+        "hits_finales": 0
       }
     ],
     "suficiente_final": false,
-    "hits_finales": 1
+    "hits_finales": 0
   },
-  "Derechos lingüísticos": {
+  "Narración situada / comunitaria": {
     "rondas": [
       {
         "ronda": 1,
@@ -345,23 +165,71 @@
             "critica"
           ],
           "consultas": [
-            "definición de derechos lingüísticos y fundamento jurídico en el derecho internacional de los derechos humanos",
-            "Declaración Universal de Derechos Lingüísticos 1996 y aplicación en legislación de lenguas indígenas",
-            "críticas y límites al reconocimiento de derechos lingüísticos de minorías (Kymlicka, De Varennes)"
+            "definición de narrativa situada y conocimiento situado Donna Haraway situated knowledges",
+            "narración comunitaria y memoria colectiva metodología storytelling comunidades marginadas",
+            "críticas y límites de las narrativas situadas subjetividad representación epistemología"
           ],
-          "nota": "No se recuperó ninguna cita, por lo que la ficha carece de todo respaldo documental. Es necesario obtener fuentes que cubran la definición conceptual, su fundamento normativo (instrumentos internacionales como el Pacto de Derechos Civiles y Políticos art. 27, la Declaración Universal de Derechos Lingüísticos), autores de referencia (Kymlicka, Fernand de Varennes, Skutnabb-Kangas), ejemplos de aplicación (legislación sobre lenguas cooficiales o indígenas, educación bilingüe) y debates críticos sobre su alcance y tensiones con la unidad estatal."
+          "nota": "No se recuperó ninguna cita, por lo que la ficha carece de todo respaldo documental. Es necesario obtener fuentes que aborden la definición del concepto (posiblemente vinculado al 'conocimiento situado' de Haraway y a las tradiciones de narrativa comunitaria en ciencias sociales y estudios decoloniales), su fundamento epistemológico, autores de referencia, ejemplos de aplicación en investigación participativa o justicia comunitaria, y las críticas metodológicas sobre validez y representación."
         },
         "consultas_ejecutadas": [
           {
-            "consulta": "definición de derechos lingüísticos y fundamento jurídico en el derecho internacional de los derechos humanos",
+            "consulta": "definición de narrativa situada y conocimiento situado Donna Haraway situated knowledges",
             "hits": 0
           },
           {
-            "consulta": "Declaración Universal de Derechos Lingüísticos 1996 y aplicación en legislación de lenguas indígenas",
+            "consulta": "narración comunitaria y memoria colectiva metodología storytelling comunidades marginadas",
             "hits": 0
           },
           {
-            "consulta": "críticas y límites al reconocimiento de derechos lingüísticos de minorías (Kymlicka, De Varennes)",
+            "consulta": "críticas y límites de las narrativas situadas subjetividad representación epistemología",
+            "hits": 0
+          }
+        ],
+        "hits_finales": 0
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 0
+  },
+  "Perspectiva intercultural": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 0,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición perspectiva intercultural derecho pluralismo jurídico concepto",
+            "perspectiva intercultural interpretación judicial pueblos indígenas Corte IDH aplicación",
+            "críticas límites enfoque intercultural relativismo cultural derechos humanos"
+          ],
+          "nota": "No se recuperó ninguna cita. La ficha está vacía y no cubre ningún elemento. Se requieren búsquedas para todos los componentes: definición conceptual, fundamento normativo (por ejemplo Convenio 169 OIT, jurisprudencia constitucional), autores de referencia (Boaventura de Sousa Santos, Raquel Yrigoyen, León Olivé), ejemplos de aplicación judicial y las críticas sobre relativismo y tensiones con derechos fundamentales."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición perspectiva intercultural derecho pluralismo jurídico concepto",
+            "hits": 0
+          },
+          {
+            "consulta": "perspectiva intercultural interpretación judicial pueblos indígenas Corte IDH aplicación",
+            "hits": 0
+          },
+          {
+            "consulta": "críticas límites enfoque intercultural relativismo cultural derechos humanos",
             "hits": 0
           }
         ],
