@@ -13,6 +13,8 @@ from .agentic_patterns import (
     pattern_catalog_markdown,
     safe_invoke,
 )
+from .activity_monitor import ActivityMonitor, ActivityMonitorRequest
+from .activity_optimizer import ActivityOptimizeRequest, ActivityOptimizer
 from .editorial_context import EditorialContextProvider
 from .editorial_memory import EditorialMemoryStore
 from .extractor_adapter import ExtractorAdapter, ExtractorRequest, ExtractorRunResult
@@ -49,6 +51,10 @@ class AgentRequest:
     extractor_motor: str = "anthropicfoundry"
     run_detail_planner: bool = True
     detail_planner_max_scopes: int = 6
+    run_monitor: bool = True
+    run_optimize: bool = True
+    monitor_max_cycles: int = 100
+    optimize_cycles: int = 3
 
 
 @dataclass
@@ -58,6 +64,10 @@ class AgentRunResult:
     ok: bool
     report_path: Path
     manifest_path: Path
+    monitor_ok: bool | None = None
+    optimize_ok: bool | None = None
+    quality_before: float | None = None
+    quality_after: float | None = None
 
 
 @dataclass(frozen=True)
@@ -86,6 +96,8 @@ class AulaTeXAgent:
         self.template_materializer = TemplateMaterializer(self.workspace)
         self.extractor_adapter = ExtractorAdapter(self.workspace)
         self.detail_planner = IncrementalDetailPlanner(self.workspace, self.editorial_memory)
+        self.activity_monitor = ActivityMonitor(self.workspace)
+        self.activity_optimizer = ActivityOptimizer(self.workspace)
 
     def run(self, request: AgentRequest) -> AgentRunResult:
         target_ctx = self._resolve_target_context(request)
@@ -281,7 +293,107 @@ class AulaTeXAgent:
             ok = ok and extractor_result.ok
         if materialization_result is not None:
             ok = ok and materialization_result.ok
-        return AgentRunResult(run_id, run_dir, ok, report_path, manifest_path)
+
+        # Post-procesamiento automático para realizar-actividad:
+        # 1) monitor -> converger el contrato editorial del .tex (aplica parches reales).
+        # 2) optimize -> elevar la calidad del .tex de forma verificada.
+        monitor_ok, optimize_ok, quality_before, quality_after = self._postprocess_activity(
+            request, target_ctx, run_dir, report_path
+        )
+
+        return AgentRunResult(
+            run_id, run_dir, ok, report_path, manifest_path,
+            monitor_ok=monitor_ok, optimize_ok=optimize_ok,
+            quality_before=quality_before, quality_after=quality_after,
+        )
+
+    def _postprocess_activity(
+        self,
+        request: AgentRequest,
+        target_ctx: AgentTargetContext,
+        run_dir: Path,
+        report_path: Path,
+    ) -> tuple[bool | None, bool | None, float | None, float | None]:
+        """Encadena monitor + optimize por defecto tras realizar-actividad.
+
+        - Solo aplica a la acción realizar-actividad en nivel materia/actividad y
+          modo de generación directo (no descendente).
+        - El monitor converge el contrato editorial aplicando parches reales.
+        - El optimizador eleva la calidad del .tex de forma verificada.
+        Cualquiera de los dos puede desactivarse con run_monitor / run_optimize.
+        """
+        action = request.action.strip().lower()
+        if action != "realizar-actividad" or request.level not in {"materia", "actividad"}:
+            return None, None, None, None
+        if target_ctx.generation_mode == "downward":
+            return None, None, None, None
+
+        monitor_ok: bool | None = None
+        optimize_ok: bool | None = None
+        quality_before: float | None = None
+        quality_after: float | None = None
+        report_lines: list[str] = []
+
+        if request.run_monitor:
+            monitor_invocation = safe_invoke(
+                self.activity_monitor.run,
+                ActivityMonitorRequest(
+                    target=str(target_ctx.target_path),
+                    activity_number=request.activity_number,
+                    output=str(run_dir / "post-monitor"),
+                    max_cycles=max(1, int(request.monitor_max_cycles)),
+                    compile_check=True,
+                    apply_bibliography_repair=True,
+                    apply_revision_patches=True,
+                    run_detail_planner=False,
+                ),
+            )
+            if monitor_invocation.ok:
+                monitor_ok = bool(monitor_invocation.result.ok)
+                report_lines.append(
+                    f"- Monitor: {'PASS' if monitor_ok else 'PENDIENTE'} "
+                    f"(`{self.workspace.relative(monitor_invocation.result.manifest_path)}`)"
+                )
+            else:
+                monitor_ok = False
+                report_lines.append(f"- Monitor: ERROR ({monitor_invocation.error})")
+
+        if request.run_optimize:
+            optimize_invocation = safe_invoke(
+                self.activity_optimizer.optimize,
+                ActivityOptimizeRequest(
+                    target=str(target_ctx.target_path),
+                    activity_number=request.activity_number,
+                    output=str(run_dir / "post-optimize"),
+                    cycles=max(1, int(request.optimize_cycles)),
+                    engines=self._optimize_engines(request.engines),
+                    require_contract_100=True,
+                ),
+            )
+            if optimize_invocation.ok:
+                result = optimize_invocation.result
+                optimize_ok = bool(result.ok)
+                quality_before = result.quality_before
+                quality_after = result.quality_after
+                report_lines.append(
+                    f"- Optimización: {result.applied_cycles} ciclo(s) aplicados, "
+                    f"calidad {result.quality_before}→{result.quality_after} "
+                    f"(`{self.workspace.relative(result.manifest_path)}`)"
+                )
+            else:
+                optimize_ok = False
+                report_lines.append(f"- Optimización: ERROR ({optimize_invocation.error})")
+
+        if report_lines:
+            report_path.write_text(
+                report_path.read_text(encoding="utf-8")
+                + "\n\n## Post-procesamiento automático (monitor + optimización)\n\n"
+                + "\n".join(report_lines)
+                + "\n",
+                encoding="utf-8",
+            )
+
+        return monitor_ok, optimize_ok, quality_before, quality_after
 
     def _build_prompts(self, request: AgentRequest, context: str) -> list[str]:
         base = (
@@ -317,6 +429,19 @@ class AulaTeXAgent:
         allowed = set(self.llm.engines() or LLM_ENGINES)
         out = [engine for engine in engines if engine in allowed]
         return out or ["Codex", "Claude Foundry"]
+
+    def _optimize_engines(self, engines: list[str]) -> tuple[str, ...]:
+        """Motores para la optimización de calidad.
+
+        Prefiere los GPT-5.6 (Luna/Terra) por su fiabilidad con prompts largos.
+        Usa los del request solo si el usuario pidió explícitamente motores GPT-5.6.
+        """
+        allowed = set(self.llm.engines() or LLM_ENGINES)
+        requested_gpt56 = [e for e in engines if e in allowed and e.startswith("GPT-5.6")]
+        if requested_gpt56:
+            return tuple(requested_gpt56)
+        preferred = [e for e in ("GPT-5.6-Luna", "GPT-5.6-Terra") if e in allowed]
+        return tuple(preferred) or tuple(self._normalize_engines(engines))
 
     def _record_stage_transition(self, workflow: AgenticStateMachine, base_stage: str) -> None:
         if base_stage == "planificar":
