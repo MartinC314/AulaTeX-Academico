@@ -1,0 +1,254 @@
+\documentclass[
+  spanish,
+  letterpaper, oneside
+]{article}
+
+\def\documenttitle {Foro: Diversidad cultural y lingüística en el derecho}
+\def\documentsubtitle {Participación y retroalimentación en foro académico}
+\def\documentsubject {Actividad 2 - Interaprendizaje en ambientes virtuales}
+
+\def\documentauthor {Martin Jonathan de la Cruz}
+\def\coursename {Interaprendizaje en ambientes virtuales}
+\def\coursecode {004}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Interaprendizaje en ambientes virtuales}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de México}
+
+\def\authortable {
+  \begin{tabular}{ll}
+    \textbf{Alumno:}
+    & \begin{tabular}[t]{l}
+      Martin Jonathan de la Cruz \\
+    \end{tabular} \\
+    Matrícula: & ES2611202040 \\
+    Figura docente: & Janeth Santana Ramírez \\
+    Semestre/Bloque: & 2 / 1 \\
+    & \\
+    \multicolumn{2}{l}{Fecha de realización: \today} \\
+    \multicolumn{2}{l}{\universitylocation}
+  \end{tabular}
+}
+
+\input{template}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}
+\setcitestyle{authoryear,open={(},close={)}}
+
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+  \ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+    \AddToShipoutPictureBG*{%
+      \begin{tikzpicture}[remember picture,overlay]
+        \node[
+          opacity=\coverwatermarkopacity,
+          inner sep=0pt,
+          xshift=\coverwatermarkxshift,
+          yshift=\coverwatermarkyshift
+        ] at (current page.center) {%
+          \includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+        };
+      \end{tikzpicture}%
+    }%
+  }{}%
+}
+
+\begin{document}
+
+\insertcoverwatermark
+\templatePortrait
+\templatePagecfg
+\onehalfspacing
+
+\begin{abstractd}
+  El documento resuelve el foro sumativo de la semana 2, ``Diversidad cultural y
+  lingüística en el derecho''. A partir del caso detonador de una estudiante de
+  Derecho que descarta un relato comunitario por no ajustarse al formato
+  documental, se analiza cómo los criterios de lo ``válido'', lo ``confiable'' y
+  lo ``bien explicado'' están culturalmente situados y pueden hacer que otra
+  forma de narrar un conflicto parezca insuficiente. La participación integra una
+  cita en formato APA 7 tomada de los materiales básicos de la semana, una
+  reflexión propia vinculada con la formación profesional en Derecho y una
+  retroalimentación respetuosa y constructiva a una compañera, seguida de la
+  declaración de uso de inteligencia artificial.
+\end{abstractd}
+
+\templateIndex
+\templateFinalcfg
+
+\section{Introducción}
+
+Este foro reflexiona sobre la relación entre cultura, diversidad cultural,
+diversidad lingüística y formación profesional en Derecho. Su punto de partida es
+que todas las personas interpretamos la realidad desde referentes culturales y
+lingüísticos; por ello, las formas de hablar, comprender, explicar y valorar una
+situación influyen en cómo se interpreta un problema jurídico. El propósito no es
+sustituir el rigor por sensibilidad genérica, sino reconocer que la comprensión de
+los hechos también es una operación cultural que la persona profesional del
+Derecho debe examinar de manera crítica.
+
+El caso detonador presenta a una estudiante que atiende a una persona con un
+conflicto por un terreno familiar. El acuerdo se hizo de palabra ante la
+comunidad, con participación de la familia y con expresiones propias de la región.
+La estudiante, centrada en escrituras, contratos y recibos, concluye que el relato
+es confuso y que la persona ``no sabe explicar bien'' su problema. La pregunta a
+responder es cómo una forma de entender lo válido, lo confiable y lo bien
+explicado puede hacer que otra manera de narrar un conflicto parezca insuficiente
+en una situación jurídica.
+
+\section{Participación en el foro}
+
+El problema del caso no es que la persona explique mal su conflicto, sino desde
+qué marco se juzga su relato. Cuando la estudiante solo reconoce como confiable lo
+escrito, lo individual y lo expresado en lenguaje jurídico estándar, corre el
+riesgo de confundir la diferencia cultural con la falta de credibilidad. Ese sesgo
+opera en tres supuestos implícitos: que únicamente lo documentado vale como
+prueba, que una narración lineal es más confiable que una narración colectiva y
+que el uso de expresiones regionales reduce la claridad. Cada supuesto tiene una
+consecuencia profesional concreta: mala comprensión de los hechos, trato
+potencialmente discriminatorio y exclusión anticipada de indicios relevantes.
+Como advierte la comunicación intercultural, en toda interacción las personas no
+solo transmiten datos, sino que narran desde sus marcos de autoridad, memoria y
+pertenencia \citep{pech2016manual}; por eso, lo que la estudiante interpreta como
+``confusión'' puede ser en realidad una narración situada, comunitaria y no lineal.
+
+Reconocer esta mediación cultural no significa idealizar la oralidad ni suponer que
+toda práctica comunitaria sustituye los requisitos jurídicos aplicables. Un acuerdo
+de palabra, la presencia de testigos comunitarios o la intervención familiar no
+vuelven verdadero un reclamo por sí mismos, pero sí obligan a investigar mejor
+antes de descartarlo. El criterio profesional adecuado consiste en distinguir entre
+prueba insuficiente y formas distintas de producir, transmitir o recordar acuerdos.
+La perspectiva intercultural aporta aquí una corrección metodológica: interpretar
+los hechos considerando la cosmovisión, la lengua y las instituciones comunitarias
+de las personas involucradas, en lugar de imponer un único estándar de validez
+\citep{scjn2022protocolo}. Así, la diversidad lingüística deja de ser un obstáculo
+para convertirse en información jurídicamente relevante sobre cómo se constituyó el
+acuerdo y quiénes lo respaldan.
+
+En consecuencia, la respuesta profesional no es descalificar el relato, sino
+reconstruir el conflicto como lo haría una entrevista jurídica intercultural, sin
+invalidar el relato de inicio. Esa reconstrucción puede ordenarse en cuatro
+momentos de actuación verificable:
+
+\begin{enumerate}
+  \item \textbf{Escuchar sin descalificar:} recibir el relato y registrar, cuando
+  sea posible de forma literal, sus elementos principales, en lugar de traducirlo
+  de inmediato al formato documental esperado.
+  \item \textbf{Contextualizar:} identificar la lengua o variante en que se
+  expresó el acuerdo, las prácticas comunitarias, las personas participantes y las
+  circunstancias en que se produjo la narración.
+  \item \textbf{Contrastar:} buscar otros elementos de corroboración —testigos,
+  indicios, documentos complementarios— sin imponer de antemano un único modelo de
+  memoria o de prueba.
+  \item \textbf{Argumentar la decisión:} explicar por qué la información resulta
+  suficiente, insuficiente o requiere diligencias adicionales, distinguiendo con
+  claridad entre una \textit{prueba insuficiente} y una \textit{falta de
+  traducción cultural}.
+\end{enumerate}
+
+Esta ruta traduce la sensibilidad cultural en una regla de actuación: preguntar
+antes de descartar, contextualizar antes de calificar y buscar medios de
+corroboración adecuados al contexto. De ese modo, el criterio de lo ``bien
+explicado'' se ajusta al problema real y no al formato preferido por quien escucha.
+
+\section{Relación con la formación en Derecho}
+
+La diversidad cultural y lingüística es relevante para interpretar una situación
+jurídica porque el Derecho no opera sobre hechos neutros, sino sobre hechos
+narrados y comprendidos. Si la escucha profesional no reconoce la mediación
+cultural y lingüística, puede confundir una diferencia de marco con una deficiencia
+del relato y, con ello, afectar la valoración de los hechos, la estrategia del caso
+y la calidad del acompañamiento legal. En un país cuya Constitución reconoce la
+composición pluricultural de la nación y protege el derecho de las personas
+indígenas a ser asistidas por intérpretes y defensores que conozcan su lengua y
+cultura, ignorar esa diversidad no es solo una falla comunicativa: puede traducirse
+en una barrera de acceso a la justicia \citep{cpeum2026,leyDerechosLinguisticos2024}.
+
+Para la formación profesional, esto implica adoptar la siguiente regla de actuación:
+antes de concluir que un relato no es confiable, verificar si la dificultad proviene
+ de diferencias lingüísticas, de marcos comunitarios de validación o de una ausencia
+real de sustento. Esta regla puede traducirse en acciones observables:
+
+\begin{enumerate}
+  \item pedir aclaraciones sin descalificar el relato;
+  \item recurrir a interpretación lingüística cuando sea necesario, conforme a los
+  derechos lingüísticos reconocidos por la normatividad aplicable
+  \citep{leyDerechosLinguisticos2024};
+  \item identificar las normas pertinentes sobre no discriminación y diversidad
+  cultural; y
+  \item distinguir entre falta de prueba y falta de traducción cultural antes de
+  cerrar la valoración del caso.
+\end{enumerate}
+
+Estas acciones muestran comprensión real del problema y no un mero acuerdo abstracto
+con la diversidad.
+
+\section{Retroalimentación a una participación de otra persona}
+
+Por razones de privacidad académica se omite el nombre de la persona participante
+y se recupera únicamente la idea pertinente para el diálogo. La participación
+revisada sostiene, en síntesis, que la estudiante del caso actúa correctamente al
+exigir documentos, pues el Derecho necesita pruebas y no puede confiar solo en lo
+que se dice; y que, al no haber papeles, la estudiante carecía de una vía para
+avanzar el caso.
+
+Coincido en que la prueba documental es fundamental y en que sin sustento el caso
+no puede avanzar con seguridad; ese punto es correcto y conviene conservarlo. Me
+gustaría, sin embargo, problematizar una idea para fortalecer la reflexión:
+¿pedir documentos y descartar el relato son la misma operación? Creo que conviene
+separarlas. Exigir prueba es legítimo, pero concluir que la persona ``no sabe
+explicar'' desplaza el problema hacia ella y no hacia el marco desde el que se le
+escucha. Un acuerdo de palabra ante la comunidad, con testigos y participación
+familiar, no es todavía prueba plena, pero sí es una pista de indagación que
+obliga a preguntar más antes de cerrar el caso. Para enriquecer el argumento,
+propongo un ejemplo hipotético: si la persona hablara una lengua indígena, la
+solución no sería descartarla por ``confusa'', sino garantizar interpretación, tal
+como lo prevé la normatividad sobre derechos lingüísticos. ¿Cómo cambiaría la
+conclusión si, en lugar de ver la ausencia de papeles como un límite de la persona
+usuaria, se viera como una tarea de investigación aún no resuelta que corresponde
+a la persona abogada? Con ese giro la postura gana fuerza sin renunciar al rigor
+probatorio planteado.
+
+\section{Conclusión}
+
+La forma más sólida de resolver el caso es tratarlo como un problema de sesgo
+jurídico y no de ``mala explicación''. Los criterios de lo válido, lo confiable y
+lo bien explicado están culturalmente situados; cuando se aplican como estándar
+único, pueden descalificar narrativas orales, comunitarias y regionales que son
+jurídicamente relevantes. El aprendizaje central es que la competencia
+intercultural no debilita el rigor, sino que lo mejora: obliga a investigar antes
+de concluir, a traducir sentidos antes de exigir tecnicismos y a distinguir la
+falta de prueba de la falta de traducción cultural. Para la práctica del Derecho,
+esa distinción es una condición de acceso efectivo a la justicia y no un añadido
+opcional.
+
+\section*{Declaración de uso de inteligencia artificial}
+
+Para esta actividad se utilizó una herramienta de inteligencia artificial
+(asistente de tipo modelo de lenguaje) únicamente como apoyo para organizar ideas,
+revisar la redacción y verificar la coherencia argumentativa del texto. El
+análisis del caso, la selección y aplicación de las fuentes, la reflexión propia
+vinculada con la formación en Derecho y la retroalimentación a la participación de
+otra persona son de elaboración personal. La herramienta no sustituyó el análisis
+ni la reflexión propia, conforme a los lineamientos de integridad académica de la
+asignatura.
+
+\clearpage
+\nocite{bertely2011interaprendizajes,pech2016manual,scjn2022protocolo,diazAlonso2011construccion,cpeum2026,leyDerechosLinguisticos2024,oit1691989,unescoInterculturalCompetences2013}
+\bibliography{interaprendizaje-en-ambientes-virtuales}
+
+\end{document}
