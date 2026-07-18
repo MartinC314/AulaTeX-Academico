@@ -166,6 +166,26 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
             "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre "
             "abre página nueva: compactar el contenido previo para evitar huecos."
         ),
+        "no_gap_before_visual_deliverable": (
+            "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape "
+            "(tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede "
+            "no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo "
+            "—p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la "
+            "sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre "
+            "el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar "
+            "SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra."
+        ),
+        "landscape_single_page": (
+            "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la "
+            "leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption "
+            "en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. "
+            "No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía."
+        ),
+        "conclusion_single_page": (
+            "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra "
+            "casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado "
+            "ni amontonada al pie de una tabla)."
+        ),
         "verify_visually": (
             "Verificar el resultado renderizando páginas a PNG (pdftoppm) e inspeccionando el diagrama, no solo el returncode de compilación."
         ),
@@ -261,14 +281,19 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
             "(2.2) Representación gráfica con el diagrama en su propia página landscape, (2.3) Desarrollo de las ramas. La metodología va ANTES "
             "del diagrama; compactar la lista para que quepa en una página y el mapa entre limpio en la siguiente sin hueco visible."
         ),
+        "no_gap_rule": (
+            "PROHIBIDO dejar media página o más en blanco justo antes del diagrama landscape. Si la metodología o el texto previo no llena "
+            "la página, ampliarlo con la explicación de la lectura del mapa o iniciar la sección con \\clearpage; en caso extremo, ajustar "
+            "la redacción colindante. Verificar con pdftoppm que no quede una página semivacía antes del mapa ni una página landscape vacía extra."
+        ),
         "apa_ia_rule": (
             "Rúbrica de mapa conceptual exige citación APA 7 y, si se usó IA, declaración de uso de IA conforme a lineamientos UnADM. "
             "Las referencias APA y la declaración de IA NO deben amontonarse al pie del diagrama: van en la sección de Referencias del final "
-            "(la declaración de IA como sección propia antes de \\bibliography)."
+            "(la declaración de IA como sección propia antes de \\bibliography, o como \\footnote ligada a una frase oportuna de la conclusión)."
         ),
         "closure_rule": (
-            "La conclusión puede llevar \\clearpage para iniciar en su propia página cuando el documento lo amerite; integra síntesis, "
-            "análisis propio y postura personal."
+            "La conclusión inicia con \\clearpage en su propia página y ocupa preferentemente una sola página; integra síntesis, análisis propio "
+            "y postura personal. La declaración de uso de IA puede ligarse como \\footnote a una frase oportuna de la conclusión."
         ),
     },
     "tabla_didactica": {
@@ -277,7 +302,18 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
         "preservation_rule": "Si la técnica usa tabla o cuadro, conservar estructura tabular visible con título/caption, encabezados claros, filas completas y una lectura breve; usar longtable, landscape, scriptsize, tabcolsep y arraystretch cuando el contenido sea amplio.",
         "visible_style_rule": "El criterio de organización de la tabla y la herramienta didáctica deben quedar comentados si son guía editorial; el texto visible debe entrar directo al tema sin metadiscurso.",
         "structure_rule": "Integrar contexto y problema en la introducción; si la tabla corresponde a cuestionario, Desarrollo debe contener directamente el cuestionario con su título y cualquier marco conceptual debe ir dentro de la misma sección; nivel cognitivo aplicado va comentado salvo consigna expresa.",
-        "closure_rule": "El análisis derivado de la tabla y la postura personal se cierran en la conclusión, no en secciones visibles separadas salvo consigna expresa.",
+        "layout_rule": (
+            "El cuadro/tabla va en orientación horizontal (landscape) en su PROPIA página, con la tabla y su caption juntos en una sola "
+            "página landscape. La sección que introduce la tabla NO debe quedar a media página dejando un hueco antes del salto a landscape: "
+            "llenar ese bloque con una guía de lectura de las columnas (qué informa cada una y cómo contrastarlas) o iniciar la sección con "
+            "\\clearpage; en caso extremo, ajustar la redacción del texto colindante. No anteponer \\clearpage al \\begin{landscape}. "
+            "Compactar con \\arraystretch<=1.2 y caption en \\footnotesize para que quepan tabla y caption en una sola página."
+        ),
+        "no_gap_rule": (
+            "PROHIBIDO dejar media página o más en blanco justo antes del cuadro. Verificar visualmente con pdftoppm el flujo de páginas: "
+            "la página previa al landscape debe estar razonablemente llena y no debe existir una página landscape vacía extra."
+        ),
+        "closure_rule": "El análisis derivado de la tabla y la postura personal se cierran en la conclusión, no en secciones visibles separadas salvo consigna expresa. La conclusión inicia con \\clearpage y ocupa preferentemente una sola página; la declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión.",
     },
     "foro_diagnostico": {
         "aliases": ("foro", "foro diagnóstico", "foro diagnostico"),

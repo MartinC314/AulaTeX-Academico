@@ -7,6 +7,7 @@ from pathlib import Path
 
 from .activity_monitor import ActivityMonitor, ActivityMonitorRequest
 from .activity_observer import ActivityObservationRequest, ActivityObserver
+from .activity_optimizer import ActivityOptimizeRequest, ActivityOptimizer
 from .activity_revision import ActivityRevisionRequest, ActivityReviser
 from .agent import AgentRequest, AulaTeXAgent
 from .agentic_patterns import pattern_catalog_markdown
@@ -205,6 +206,16 @@ def build_parser() -> argparse.ArgumentParser:
     activity_monitor.add_argument("--workflow-backend", default="langgraph", choices=("langgraph", "classic"))
     activity_monitor.add_argument("--no-detail-planner", action="store_true")
     activity_monitor.add_argument("--detail-max-scopes", type=int, default=6)
+
+    activity_optimize = sub.add_parser("activity-optimize", help="Run LLM quality-optimization cycles that actually improve the activity TEX after the contract is satisfied.")
+    activity_optimize.add_argument("--target", required=True)
+    activity_optimize.add_argument("--activity", type=int, default=1)
+    activity_optimize.add_argument("--output", default="")
+    activity_optimize.add_argument("--cycles", type=int, default=3)
+    activity_optimize.add_argument("--engine", action="append", choices=LLM_ENGINES)
+    activity_optimize.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
+    activity_optimize.add_argument("--no-backup", action="store_true")
+    activity_optimize.add_argument("--allow-incomplete-contract", action="store_true", help="Optimize even if the editorial contract is below 100.")
 
     activity_revise = sub.add_parser("activity-revise", help="Build a structured revision plan for an activity.")
     activity_revise.add_argument("--target", required=True)
@@ -675,6 +686,36 @@ def main(argv: list[str] | None = None) -> None:
                     "run_dir": str(result.run_dir),
                     "manifest": str(result.manifest_path),
                     "report": str(result.report_path),
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    if args.command == "activity-optimize":
+        result = ActivityOptimizer(AulaTeXWorkspace()).optimize(
+            ActivityOptimizeRequest(
+                target=args.target,
+                activity_number=args.activity,
+                output=args.output,
+                cycles=args.cycles,
+                engines=tuple(args.engine or ["GPT-5.6-Luna", "GPT-5.6-Terra"]),
+                max_tokens=args.max_tokens,
+                backup=not bool(args.no_backup),
+                require_contract_100=not bool(args.allow_incomplete_contract),
+            )
+        )
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "run_dir": str(result.run_dir),
+                    "manifest": str(result.manifest_path),
+                    "report": str(result.report_path),
+                    "applied_cycles": result.applied_cycles,
+                    "quality_before": result.quality_before,
+                    "quality_after": result.quality_after,
                 },
                 ensure_ascii=False,
                 indent=2,

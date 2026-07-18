@@ -238,6 +238,16 @@ class IncrementalDetailPlanner:
                 "aliases": list(technique_contract.get("aliases", ())),
                 "required_visible_elements": list(technique_contract.get("required_visible_elements", ())),
                 "preservation_rule": technique_contract.get("preservation_rule", "Conservar la forma visible solicitada por la consigna."),
+                "structure_rule": technique_contract.get("structure_rule", ""),
+                "layout_rule": technique_contract.get("layout_rule", ""),
+                "no_gap_rule": technique_contract.get("no_gap_rule", ""),
+                "closure_rule": technique_contract.get("closure_rule", ""),
+            },
+            "layout_contract": {
+                "no_gap_before_visual_deliverable": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["no_gap_before_visual_deliverable"],
+                "landscape_single_page": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["landscape_single_page"],
+                "conclusion_single_page": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["conclusion_single_page"],
+                "page_control": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["page_control"],
             },
             "bibliography_contract": {
                 "visible_citations_rule": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["quality_gates"]["visible_citations"],
@@ -320,6 +330,7 @@ class IncrementalDetailPlanner:
     def _quality_rules(self) -> list[str]:
         quality_gates = REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT.get("quality_gates", {})
         visible_rules = REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT.get("visible_text_rules", {})
+        compilation_rules = REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT.get("compilation_rules", {})
         ordered_keys = (
             "headings",
             "didactic_format",
@@ -337,6 +348,9 @@ class IncrementalDetailPlanner:
         for key in ("avoid_metadiscourse", "fold_context_into_introduction", "fold_analysis_into_conclusion"):
             if key in visible_rules:
                 lines.append(str(visible_rules[key]))
+        for key in ("no_gap_before_visual_deliverable", "landscape_single_page", "conclusion_single_page"):
+            if key in compilation_rules:
+                lines.append(str(compilation_rules[key]))
         return lines
 
     def _confidence_payload(
