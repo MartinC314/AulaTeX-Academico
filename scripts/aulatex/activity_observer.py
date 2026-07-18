@@ -264,6 +264,21 @@ class ActivityObserver:
                 "objective_present": bool(re.search(r"\\textbf\{Objetivo:\}|\\section\{Objetivo", active_tex, re.IGNORECASE)),
                 "purpose_present": bool(re.search(r"\\textbf\{Prop[óo]sito:\}|prop[óo]sito", active_tex, re.IGNORECASE)),
                 "conclusion_present": bool(sections and any("conclus" in section.lower() for section in sections)) or bool(re.search(r"en conclusi[óo]n", active_tex, re.IGNORECASE)),
+                "ai_declaration_present": bool(re.search(r"inteligencia artificial|uso de\s+ia\b|herramienta[s]?\s+de\s+ia\b", active_tex, re.IGNORECASE)),
+                "ai_declaration_as_footnote": bool(
+                    re.search(
+                        r"\\footnote\{[^}]*(inteligencia artificial|uso de\s+ia\b|herramienta[s]?\s+de\s+ia\b)",
+                        active_tex,
+                        re.IGNORECASE | re.DOTALL,
+                    )
+                ),
+                "ai_declaration_as_section": bool(
+                    re.search(
+                        r"\\section\*?\{[^}]*(declaraci[óo]n[^}]*inteligencia artificial|uso[^}]*inteligencia artificial|declaraci[óo]n[^}]*\bia\b)",
+                        active_tex,
+                        re.IGNORECASE,
+                    )
+                ),
                 "product_visual_detected": bool(re.search(r"tikzpicture|\\begin\{figure\}|mapa conceptual|cuadro|tabla|diagrama", active_tex, re.IGNORECASE)),
                 "evaluation_criteria_present": bool(re.search(r"criterios|r[úu]brica|evaluaci[óo]n", active_tex, re.IGNORECASE)),
                 "questionnaire_detected": bool(re.search(r"cuestionario|reactivo|pregunta\s*\d+", active_tex, re.IGNORECASE)),

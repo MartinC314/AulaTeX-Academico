@@ -90,6 +90,7 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
         "introduction": "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
         "development_section": "si el producto es cuestionario, la sección Desarrollo debe estar ocupada por el cuestionario con su título; el marco conceptual va dentro de esa misma sección, no como sección/subsección independiente salvo consigna expresa",
         "conclusion": "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa",
+        "ai_declaration": "la declaración de uso de inteligencia artificial, cuando exista, se materializa como \\footnote ligada a una frase oportuna del documento (por defecto de la conclusión), NUNCA como \\section/\\section* ni como bloque separado; debe indicar herramienta y propósito (organizar ideas, revisar redacción) y afirmar que no sustituyó el análisis propio",
         "compile": "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
         "report_presentation_alignment": "cuando existan reporte y presentación de la misma actividad, la presentación debe reflejar el contenido, la profundidad, los conceptos, las fuentes y la conclusión del reporte, con estilo Beamer institucional y una diapositiva final de referencias APA y declaración de IA si el reporte la incluye",
     },
@@ -333,6 +334,7 @@ ACTIVITY_1_CONTRACT = {
         "traceability": True,
         "evaluation_criteria": True,
         "final_reflection": True,
+        "ai_declaration_footnote": True,
     },
     "acceptable_ranges": {
         "sections_min": 3,
@@ -372,6 +374,16 @@ def evaluate_activity_contract(state: dict[str, Any]) -> dict[str, Any]:
         "traceability": bool(observed.get("extractor_ready")) and int(signals.get("cited_keys_count", 0)) >= 3,
         "evaluation_criteria": bool(signals.get("evaluation_criteria_present") or signals.get("extractor_criteria_count", 0) > 0),
         "final_reflection": bool(signals.get("conclusion_present")),
+        # La declaración de uso de IA, cuando exista, debe ir como \footnote ligada a
+        # una frase oportuna (por defecto de la conclusión), NO como sección/bloque
+        # separado. Si no hay declaración de IA, el check no penaliza.
+        "ai_declaration_footnote": (
+            (not bool(signals.get("ai_declaration_present")))
+            or (
+                bool(signals.get("ai_declaration_as_footnote"))
+                and not bool(signals.get("ai_declaration_as_section"))
+            )
+        ),
     }
     range_checks = {
         "sections_range": ACTIVITY_1_CONTRACT["acceptable_ranges"]["sections_min"]
@@ -414,6 +426,7 @@ def _contract_finding(name: str) -> str:
         "traceability": "La trazabilidad entre actividad, citas y extractor es insuficiente.",
         "evaluation_criteria": "No se detectan criterios de evaluación o entrega suficientemente explícitos.",
         "final_reflection": "No se detecta cierre argumentativo o conclusión final.",
+        "ai_declaration_footnote": "La declaración de uso de IA debe ir como \\footnote ligada a una frase oportuna (por ejemplo de la conclusión), no como sección o bloque separado.",
         "sections_range": "La estructura de secciones queda fuera del rango contractual.",
         "concepts_min": "La cobertura conceptual extraída está por debajo del mínimo contractual.",
     }

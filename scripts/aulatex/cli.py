@@ -123,6 +123,10 @@ def build_parser() -> argparse.ArgumentParser:
     agent.add_argument("--extractor-motor", default="anthropicfoundry", choices=EXTRACTOR_MOTORS)
     agent.add_argument("--no-detail-planner", action="store_true", help="Disable the prerequisite detail planner before realizar-actividad.")
     agent.add_argument("--detail-max-scopes", type=int, default=6)
+    agent.add_argument("--no-monitor", action="store_true", help="Disable the automatic post-processing monitor loop after realizar-actividad.")
+    agent.add_argument("--no-optimize", action="store_true", help="Disable the automatic post-processing quality optimization after realizar-actividad.")
+    agent.add_argument("--monitor-max-cycles", type=int, default=100, help="Max cycles for the automatic post-processing monitor loop.")
+    agent.add_argument("--optimize-cycles", type=int, default=3, help="Number of quality optimization cycles after realizar-actividad.")
 
     editorial = sub.add_parser("editorial-memory", help="Build persistent editorial memory from a selected scope.")
     editorial.add_argument("--target", default=".")
@@ -359,9 +363,21 @@ def main(argv: list[str] | None = None) -> None:
             extractor_motor=args.extractor_motor,
             run_detail_planner=not bool(args.no_detail_planner),
             detail_planner_max_scopes=args.detail_max_scopes,
+            run_monitor=not bool(args.no_monitor),
+            run_optimize=not bool(args.no_optimize),
+            monitor_max_cycles=args.monitor_max_cycles,
+            optimize_cycles=args.optimize_cycles,
         )
         result = AulaTeXAgent().run(request)
-        print(json.dumps({"ok": result.ok, "run_dir": str(result.run_dir), "report": str(result.report_path)}, indent=2))
+        print(json.dumps({
+            "ok": result.ok,
+            "run_dir": str(result.run_dir),
+            "report": str(result.report_path),
+            "monitor_ok": result.monitor_ok,
+            "optimize_ok": result.optimize_ok,
+            "quality_before": result.quality_before,
+            "quality_after": result.quality_after,
+        }, ensure_ascii=False, indent=2))
         return
 
     if args.command == "detail-planner":
