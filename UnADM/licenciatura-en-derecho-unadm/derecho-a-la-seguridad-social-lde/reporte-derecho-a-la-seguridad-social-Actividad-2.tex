@@ -1,0 +1,166 @@
+% AulaTeX - Actividad 2 materializada desde memoria editorial y motor inteligente
+% Consigna S2: Cuadro comparativo de la clasificación de los tipos de seguro
+% (obligatorio, voluntario, facultativo) con características, semejanzas y
+% diferencias, clasificación germano/latino y sustento legal. APA 7. Ponderación 10/100.
+\documentclass[12pt,letterpaper,oneside]{article}
+\usepackage[margin=2.35cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{hyperref}
+\usepackage[authoryear,round]{natbib}
+
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+\definecolor{unadmRowAlt}{HTML}{EDF1E7}
+\hypersetup{colorlinks=true,linkcolor=unadmGreenDark,citecolor=unadmGreenDark,urlcolor=unadmGreenDark}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.72em}
+\onehalfspacing
+\bibliographystyle{plainnat}
+\newcommand{\documenttitle}{Clasificación de los tipos de seguro}
+\newcommand{\documentsubtitle}{Cuadro comparativo: modalidades y tipologías germano-latina}
+\newcommand{\documentsubject}{Actividad 2 - Derecho a la Seguridad Social}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+
+\begin{titlepage}
+  \pagecolor{unadmPaper}
+  \color{unadmInk}
+  \begin{center}
+    \vspace*{0.8cm}
+    \includegraphics[height=2.05cm]{img/departamentos/UnADM.pdf}\\[0.7cm]
+    {\Large Universidad Abierta y a Distancia de México}\\[0.2cm]
+    {\large Licenciatura en Derecho}\\[1.2cm]
+    {\color{unadmGreenDark}\rule{0.82\linewidth}{1.4pt}}\\[0.55cm]
+    {\Huge\bfseries \documenttitle\par}
+    \vspace{0.35cm}
+    {\Large \documentsubtitle\par}
+    \vspace{0.15cm}
+    {\large \documentsubject\par}
+    \vspace{0.45cm}
+    {\color{unadmGold}\rule{0.62\linewidth}{1.1pt}}\\[1.1cm]
+    \begin{tabular}{rl}
+      \textbf{Alumno:} & Martin Jonathan de la Cruz \\
+      \textbf{Matrícula:} & ES2611202040 \\
+      \textbf{Figura docente:} & Cristian Ortega Barrera \\
+      \textbf{Materia:} & Derecho a la Seguridad Social \\
+      \textbf{Semestre/Bloque:} & 2 / 1 \\
+      \textbf{Unidad temática:} & 1. Aspectos históricos de la seguridad social \\
+      \textbf{Fecha:} & \today
+    \end{tabular}
+    \vfill
+    {\small Roma Norte, Ciudad de México}
+  \end{center}
+  \nopagecolor
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+\section*{Resumen editorial}
+\addcontentsline{toc}{section}{Resumen editorial}
+Esta actividad desarrolla un cuadro comparativo de la clasificación de los tipos de seguro en la seguridad social mexicana. Conforme a la consigna de la Semana~2, se leen las modalidades de seguro existentes en la bibliografía y en la legislación (obligatorio, voluntario y facultativo), se plasman sus características y sustento legal, se establecen sus semejanzas y diferencias, y se ubica cada modalidad dentro de las tipologías de origen germano y latino. El producto principal es la tabla comparativa; el texto que la acompaña justifica los criterios de clasificación y precisa el fundamento normativo en la Ley del Seguro Social \citep{lss2026}, la Ley del ISSSTE \citep{lissste2026} y la Constitución \citep{cpeum2026}, con apoyo doctrinal de \citet{bricenoRuiz2011}.
+
+\section{Introducción}
+
+La palabra \emph{seguro} designa, en su sentido más amplio, un mecanismo de protección frente a un riesgo o contingencia futura e incierta. En el ámbito de la seguridad social, ese mecanismo adquiere un carácter público, solidario y tutelar: no busca lucro, sino garantizar prestaciones ante enfermedad, maternidad, riesgos de trabajo, invalidez, vejez, cesantía o muerte \citep{bricenoRuiz2011}. Comprender cómo se clasifican los tipos de seguro es un paso necesario para operar el sistema, porque de la modalidad de aseguramiento dependen los sujetos protegidos, las fuentes de financiamiento y las obligaciones exigibles.
+
+La legislación mexicana, principalmente la Ley del Seguro Social (LSS), distingue varios regímenes o modalidades de aseguramiento: el \textbf{régimen obligatorio}, el \textbf{régimen voluntario} y el \textbf{seguro facultativo}, además de esquemas adicionales \citep{lss2026,bricenoRuiz2011}. A la par, la doctrina de la seguridad social clasifica los sistemas según su origen histórico e ideológico en dos grandes tipologías: la de raíz \textbf{germana} —asociada al modelo bismarckiano de seguros sociales contributivos— y la de raíz \textbf{latina} —vinculada a la tradición asistencial y solidaria de cobertura amplia \citep{bricenoRuiz2011,cotonietoMartinez2021}. Este trabajo articula ambas clasificaciones en un solo cuadro comparativo.
+
+\section{Marco conceptual y normativo}
+
+\subsection{Las modalidades de seguro en la Ley del Seguro Social}
+
+El régimen \textbf{obligatorio} es la columna vertebral del sistema del IMSS. Comprende a las personas que, por una relación de trabajo subordinado, quedan sujetas a aseguramiento de manera imperativa: la afiliación no depende de su voluntad, sino del hecho de prestar un servicio personal remunerado \citep{lss2026}. Cubre cinco seguros: riesgos de trabajo; enfermedades y maternidad; invalidez y vida; retiro, cesantía en edad avanzada y vejez; y guarderías y prestaciones sociales.
+
+El régimen \textbf{voluntario} permite incorporar a personas que no están comprendidas de forma imperativa, mediante convenio y con cobertura acotada. Se dirige, por ejemplo, a trabajadores en industrias familiares, independientes, patrones personas físicas o trabajadores del hogar, quienes deciden acceder a determinadas prestaciones asumiendo el pago correspondiente \citep{lss2026,bricenoRuiz2011}.
+
+El \textbf{seguro facultativo} es una modalidad de aseguramiento en salud que el IMSS ofrece a colectivos específicos —de manera destacada, estudiantes de instituciones públicas— cuando no cuentan con protección de esa naturaleza por otra vía. Es facultativo porque su otorgamiento y su alcance dependen de las condiciones y convenios que la propia ley y la institución determinan \citep{lss2026,bricenoRuiz2011}. En el ISSSTE existen figuras análogas de continuación o incorporación voluntaria para servidores públicos y sus familiares \citep{lissste2026}.
+
+\subsection{La tipología germana y latina}
+
+La clasificación germano-latina no atiende a la ley positiva mexicana, sino al origen y a la lógica de los sistemas de seguridad social. El modelo \textbf{germano} o bismarckiano nació en Alemania a finales del siglo~XIX con las leyes de seguros sociales de Otto von Bismarck; su lógica es contributiva y profesional: la protección se construye sobre la relación de trabajo, se financia con cuotas de trabajadores y patrones y se organiza como un seguro obligatorio ligado al salario \citep{bricenoRuiz2011,cotonietoMartinez2021}. El modelo \textbf{latino}, por su parte, se asocia a la tradición asistencial y solidaria —influida también por el universalismo del Plan Beveridge—, donde predomina la voluntad de extender la cobertura más allá del vínculo laboral estricto, con un componente de solidaridad social y protección de grupos que no cotizan de forma regular \citep{bricenoRuiz2011,moralesFajardo2021}.
+
+Aplicando este criterio a las modalidades mexicanas: el \textbf{seguro obligatorio} responde con nitidez al tipo \textbf{germano}, pues es contributivo, imperativo y depende de la relación laboral. En cambio, el \textbf{seguro voluntario} y el \textbf{facultativo} se aproximan al tipo \textbf{latino}, porque amplían la cobertura hacia personas no vinculadas por una relación de trabajo subordinado y descansan en una lógica de incorporación solidaria más que en la obligatoriedad contributiva \citep{bricenoRuiz2011,gonzalezCarvallo2024}.
+
+\section{Cuadro comparativo}
+
+El siguiente cuadro sintetiza las tres modalidades de seguro reconocidas en la Ley del Seguro Social y las ordena conforme a la tipología germano-latina, cumpliendo el propósito de la actividad: clasificar los tipos de seguro a partir del análisis de sus características. Para facilitar su lectura, la tabla se presenta en la página siguiente con orientación horizontal, de modo que cada modalidad pueda contrastarse en paralelo sin fragmentar la información.
+
+El cuadro se organiza en cuatro columnas de lectura complementaria. La primera, \emph{Modalidad}, nombra el tipo de seguro (obligatorio, voluntario o facultativo). La segunda, \emph{Características}, describe su naturaleza, los sujetos protegidos, la amplitud de la cobertura y el esquema de financiamiento. La tercera, \emph{Sustento legal}, precisa los preceptos constitucionales y legales que dan fundamento a cada modalidad, con el propósito de que la clasificación no quede en el plano doctrinal, sino anclada al derecho positivo vigente. La cuarta, \emph{Tipo (germano/latino)}, ubica cada modalidad dentro de la tradición histórica correspondiente y justifica brevemente esa adscripción. Leído de esta forma, el cuadro permite advertir que una misma finalidad tutelar se realiza mediante mecanismos jurídicos distintos, según el grado de obligatoriedad, el vínculo con la relación de trabajo y la fuente de las cuotas.
+
+\begin{landscape}
+\thispagestyle{empty}
+\begin{center}
+{\small
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{L{0.13\linewidth} L{0.30\linewidth} L{0.30\linewidth} L{0.17\linewidth}}
+\rowcolor{unadmGreenDark}
+\textbf{\color{white}Modalidad} & \textbf{\color{white}Características} & \textbf{\color{white}Sustento legal} & \textbf{\color{white}Tipo (germano/latino)} \\
+\midrule
+\textbf{Obligatorio} &
+Aseguramiento imperativo derivado de una relación de trabajo subordinado y remunerado; la afiliación no depende de la voluntad de la persona. Financiado de forma tripartita (trabajador, patrón y Estado). Cubre los cinco seguros del IMSS: riesgos de trabajo; enfermedades y maternidad; invalidez y vida; retiro, cesantía y vejez; guarderías y prestaciones sociales. &
+Constitución, art.~123, apartado~A, fracción~XXIX \citep{cpeum2026}; Ley del Seguro Social, régimen obligatorio (arts.~11 y~12) \citep{lss2026}; para servidores públicos, Ley del ISSSTE \citep{lissste2026}. &
+\textbf{Germano} (bismarckiano): contributivo, obligatorio y ligado al salario. \\
+\rowcolor{unadmRowAlt}
+\textbf{Voluntario} &
+Incorporación mediante convenio de personas no comprendidas de forma imperativa (trabajadores independientes, en industrias familiares, del hogar, patrones personas físicas). Cobertura acotada según el convenio; el interesado asume el pago de las cuotas correspondientes. &
+Ley del Seguro Social, régimen voluntario / continuación voluntaria (art.~13 y concordantes) \citep{lss2026}; figuras de incorporación voluntaria en la Ley del ISSSTE \citep{lissste2026}. &
+\textbf{Latino}: lógica solidaria que amplía la cobertura más allá de la relación laboral. \\
+\textbf{Facultativo} &
+Aseguramiento en salud que el IMSS otorga a colectivos específicos —de forma señalada, estudiantes de instituciones públicas— que carecen de protección por otra vía. Su otorgamiento y alcance dependen de las condiciones y convenios que fija la institución. &
+Ley del Seguro Social, seguro facultativo (arts.~240 a~245) \citep{lss2026}; sustento doctrinal en \citet{bricenoRuiz2011}. &
+\textbf{Latino}: extensión asistencial de cobertura a grupos no cotizantes. \\
+\bottomrule
+\end{tabular}\\[0.3cm]
+{\footnotesize\textit{Tabla 1. Clasificación comparada de los tipos de seguro en la seguridad social mexicana.}}
+}
+\end{center}
+\end{landscape}
+
+\section{Semejanzas y diferencias}
+
+\subsection{Semejanzas}
+\begin{itemize}
+  \item Las tres modalidades persiguen la misma finalidad tutelar: proteger a la persona frente a contingencias que afectan su salud, su ingreso o su subsistencia \citep{bricenoRuiz2011}.
+  \item Todas se sustentan en el mismo marco superior: el artículo~123 constitucional y su desarrollo en las leyes de seguridad social \citep{cpeum2026,lss2026}.
+  \item En los tres casos existe una relación de aseguramiento con derechos y obligaciones (pago de cuotas y acceso a prestaciones), aunque con distinto grado de obligatoriedad.
+  \item Comparten instituciones administradoras (principalmente el IMSS y, en su ámbito, el ISSSTE) y responden a principios de solidaridad y previsión social.
+\end{itemize}
+
+\subsection{Diferencias}
+\begin{itemize}
+  \item \textbf{Origen de la obligación:} el obligatorio surge por imperio de la ley al existir relación laboral; el voluntario y el facultativo requieren un acto de incorporación o convenio.
+  \item \textbf{Sujetos protegidos:} el obligatorio ampara a trabajadores subordinados; el voluntario, a personas sin vínculo laboral imperativo; el facultativo, a colectivos determinados como estudiantes.
+  \item \textbf{Amplitud de la cobertura:} el obligatorio comprende los cinco seguros; el voluntario y el facultativo ofrecen coberturas acotadas según convenio o naturaleza del esquema.
+  \item \textbf{Financiamiento:} el obligatorio es de aportación tripartita; en el voluntario y el facultativo el peso de la cuota recae principalmente en el asegurado \citep{lss2026,bricenoRuiz2011}.
+  \item \textbf{Tipología:} el obligatorio es de raíz germana (contributivo-profesional); el voluntario y el facultativo se acercan al tipo latino (asistencial-solidario) \citep{bricenoRuiz2011,gonzalezCarvallo2024}.
+\end{itemize}
+
+\clearpage
+\section{Conclusión}
+
+El análisis confirma que la clasificación de los tipos de seguro opera en dos planos complementarios. En el plano del derecho positivo mexicano, la Ley del Seguro Social distingue las modalidades \emph{obligatoria}, \emph{voluntaria} y \emph{facultativa}, cada una con sujetos, coberturas y sustento legal propios \citep{lss2026}. En el plano doctrinal e histórico, esas modalidades se ordenan según la tipología \emph{germano-latina}: el seguro obligatorio expresa el modelo germano o bismarckiano —contributivo y ligado al empleo—, mientras que el voluntario y el facultativo se aproximan al modelo latino —solidario y de vocación expansiva \citep{bricenoRuiz2011,cotonietoMartinez2021}.
+
+Mi postura es que ambas clasificaciones deben leerse juntas: la tipología germano-latina no sustituye a la ley, pero permite entender por qué el sistema combina obligatoriedad contributiva con mecanismos de incorporación voluntaria. Reconocer esa combinación es útil en la práctica jurídica\footnote{Conforme a los \textit{Lineamientos para el uso ético y responsable de la inteligencia artificial} en el ámbito académico de la UnADM, se declara que se utilizó asistencia de inteligencia artificial para la organización, la redacción y la edición del cuadro comparativo. La selección de fuentes, el análisis jurídico y la postura se verificaron y sostuvieron con la bibliografía citada en este documento y son responsabilidad del autor.}, pues orienta la determinación de quién está protegido, con qué prestaciones y bajo qué fundamento normativo, y anticipa la tensión —presente en la agenda contemporánea de la seguridad social— entre el aseguramiento profesional y la aspiración de cobertura universal \citep{gonzalezCarvallo2024,moralesFajardo2021}.
+
+\clearpage
+\nocite{cpeum2026,lss2026,lissste2026,lissfam2026,bricenoRuiz2011,gonzalezCarvallo2024,ibarraOlguin2022,cotonietoMartinez2021,moralesFajardo2021,acnudhSeguridadSocial2026,normasApaReferencias2020}
+\bibliography{derecho-a-la-seguridad-social}
+
+\end{document}
