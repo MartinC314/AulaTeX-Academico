@@ -40,6 +40,43 @@
 \usetikzlibrary{calc}
 \setcitestyle{authoryear,open={(},close={)}}
 
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+
+% -----------------------------------------------------------------------------
+% AulaTeX:foro-producto v1 -- bloque de participación del foro (producto)
+% Caja institucional con texto JUSTIFICADO, numeración a la izquierda (enumitem),
+% contenido copiable y un botón "Copiar participación" que adjunta un .txt.
+% -----------------------------------------------------------------------------
+\usepackage[most]{tcolorbox}
+\usepackage{attachfile}
+\usepackage{enumitem}
+
+% attachfile: el 'color' debe darse como TRIPLE RGB numérico (0..1).
+\attachfilesetup{color={0.373 0.561 0.227},print=false}
+
+% Botón de copia: appearance={} oculta el PushPin y muestra el 2.o argumento.
+\newcommand{\foroCopyButton}[1]{%
+  \textattachfile[appearance={},description={Participacion del foro (texto copiable)},mimetype=text/plain]{#1}{%
+    \colorbox{unadmGreen}{\small\textcolor{white}{\,Copiar participación\,}}%
+  }%
+}
+
+% Entorno visual del foro (banda verde, fondo claro, texto justificado)
+\newtcolorbox{forobox}[1][]{%
+  enhanced, breakable,
+  colback=unadmPaper, colframe=unadmGreen,
+  boxrule=0pt, leftrule=3pt, arc=1.2mm,
+  left=4mm, right=4mm, top=3mm, bottom=3mm,
+  fonttitle=\bfseries\color{white}, coltitle=white, colbacktitle=unadmGreenDark,
+  attach boxed title to top left={xshift=4mm,yshift=-2mm},
+  boxed title style={colframe=unadmGreenDark,arc=0.6mm},
+  #1
+}
+
 \def\coverwatermarkenabled {true}
 \def\coverwatermarkimage {img/departamentos/UnADM.pdf}
 \def\coverwatermarkopacity {0.16}
@@ -82,15 +119,13 @@
 
 El Estado no es una institución inmóvil. Sus características actuales son resultado de procesos históricos en los que las comunidades organizaron el poder, delimitaron territorios, establecieron autoridades y construyeron reglas para resolver conflictos. La nota local de la asignatura identifica una secuencia que va de las agrupaciones humanas prehistóricas y la ciudad-Estado al feudalismo, el absolutismo, el Estado moderno, el liberalismo y el Estado social y democrático de derecho \citep{notaEstadoHistoria2026}.
 
-\textbf{Objetivo:} analizar la evolución histórica del Estado para explicar cómo la limitación jurídica del poder favoreció el reconocimiento y la protección de los derechos humanos.
+El problema que guía la reflexión es cómo la limitación jurídica del poder favoreció el reconocimiento y la protección de los derechos humanos. Mi postura es que esta evolución puede leerse como una tensión constante entre concentración y limitación del poder: las formas antiguas y medievales permitieron organizar la vida colectiva, pero también mostraron que una autoridad sin límites suficientes puede convertir a las personas en súbditos sin medios efectivos de defensa. La construcción histórica de los derechos humanos responde precisamente a la necesidad de reconocer la dignidad y establecer límites jurídicos frente al poder \citep{rabinovichBerkmanDerechosHumanos,marcanoSalazarDerechosHumanos}.
 
-\textbf{Propósito de la participación:} sostener una postura personal fundamentada, relacionar las etapas históricas con las garantías constitucionales y abrir el intercambio con una pregunta que permita contrastar argumentos.
-
-\textbf{Criterios de evaluación:} claridad del recorrido histórico, uso pertinente de fuentes locales, relación entre poder y derechos humanos, argumentación propia y formulación de una pregunta relevante para el diálogo.
-
-Mi postura es que esta evolución puede leerse como una tensión constante entre concentración y limitación del poder. Las formas antiguas y medievales permitieron organizar la vida colectiva, pero también mostraron que una autoridad sin límites suficientes puede convertir a las personas en súbditos sin medios efectivos de defensa. La construcción histórica de los derechos humanos responde precisamente a la necesidad de reconocer la dignidad y establecer límites jurídicos frente al poder \citep{rabinovichBerkmanDerechosHumanos,marcanoSalazarDerechosHumanos}.
-
-\section{Participación en el foro}
+% Técnica didáctica: foro académico (100 técnicas didácticas UnADM: apertura ->
+% participación -> intercambio -> cierre). Trazabilidad metodológica en comentario
+% para no introducir metadiscurso en el texto visible. El producto (participación
+% publicada) es el núcleo: el desarrollo lo prepara antes y lo interpreta después.
+\section{El poder y su limitación jurídica a través de la historia del Estado}
 
 \subsection{De las agrupaciones humanas a la ciudad-Estado}
 
@@ -118,19 +153,50 @@ En México, el reto no consiste únicamente en reconocer derechos en el orden ju
 
 \subsection{Relación con las garantías constitucionales}
 
-El recorrido histórico demuestra que los derechos necesitan instrumentos de protección. Una declaración puede formular libertades e igualdad, pero pierde eficacia si la autoridad no está obligada a respetarla o si las personas carecen de vías para reclamar. Las garantías constitucionales convierten los límites del poder en procedimientos e instituciones exigibles.
+El recorrido histórico demuestra que los derechos necesitan instrumentos de protección. Una declaración puede formular libertades e igualdad, pero pierde eficacia si la autoridad no está obligada a respetarla o si las personas carecen de vías para reclamar. Las garantías constitucionales convierten los límites del poder en procedimientos e instituciones exigibles. El principal aprendizaje es distinguir entre la existencia del Estado y su legitimidad: un Estado puede disponer de territorio, población, gobierno y soberanía, pero solo se aproxima a un Estado constitucional cuando el ejercicio del poder se encuentra jurídicamente limitado, existe participación democrática y las personas cuentan con medios efectivos para defender su dignidad \citep{alvarezIcazaDerechosMexico}.
 
-Considero que el principal aprendizaje es distinguir entre la existencia del Estado y su legitimidad. Un Estado puede disponer de territorio, población, gobierno y soberanía, pero solo se aproxima a un Estado constitucional cuando el ejercicio del poder se encuentra jurídicamente limitado, existe participación democrática y las personas cuentan con medios efectivos para defender su dignidad y sus derechos.
+\subsection{Participación argumentada sobre la evolución del Estado}
 
-\section{Pregunta para el intercambio}
+Sobre esa base histórica, la participación publicada en el foro sostiene una postura personal y abre el intercambio con una pregunta que permite contrastar argumentos con el grupo.
 
-¿Puede considerarse democrático un Estado que reconoce una amplia lista de derechos en su Constitución, pero no ofrece garantías accesibles y eficaces para hacerlos valer? En mi opinión, no es suficiente el reconocimiento formal: la calidad constitucional del Estado también debe evaluarse por la posibilidad real de prevenir abusos, obtener protección y reparar violaciones.
+\begin{forobox}[title={Participación publicada en el foro}]
+\hfill\foroCopyButton{foro-participacion-garantias-Actividad-2.txt}\\[-0.5em]
+\phantomsection\label{foro-participacion}
 
+\textbf{Asunto:} El Estado a través de la historia y la protección de los derechos\par
+\medskip
+Hola a todas y todos: comparto mi participación a partir del recorrido histórico del Estado, de las agrupaciones humanas al Estado social y democrático de derecho.
+\medskip
+
+\begin{enumerate}[leftmargin=1.6em,labelsep=0.6em,itemsep=0.5em,label=\textbf{\arabic*)}]
+  \item \textbf{La historia del Estado es una tensión entre concentrar y limitar el poder.} De la \textit{polis} y la \textit{civitas} al feudalismo y el absolutismo, la organización política avanzó, pero la autoridad sin límites suficientes convirtió a las personas en súbditos. El absolutismo hizo visible un problema decisivo: separar la existencia del Estado de la voluntad de quien gobierna \citep{rabinovichBerkmanDerechosHumanos}.
+
+  \item \textbf{El Estado moderno y liberal aportó un principio clave: la autoridad debe estar sometida al derecho.} Soberanía popular, división de poderes e igualdad jurídica transformaron la legitimidad del poder. No basta con que exista un gobierno organizado; también se requieren competencias delimitadas y mecanismos para cuestionar los actos que vulneren libertades \citep{marcanoSalazarDerechosHumanos}.
+
+  \item \textbf{Lo vinculo con las garantías constitucionales.} El Estado social y democrático de derecho no es una condición automática: su legitimidad depende de que la Constitución limite efectivamente a las autoridades y de que existan garantías para convertir los derechos en protección concreta. En México, el reto no es solo reconocer derechos, sino lograr que las instituciones los hagan efectivos para todas las personas \citep{alvarezIcazaDerechosMexico}.
+\end{enumerate}
+\medskip
+
+\textbf{Pregunta para el grupo:} ¿puede considerarse democrático un Estado que reconoce una amplia lista de derechos en su Constitución, pero no ofrece garantías accesibles y eficaces para hacerlos valer?\par
+\medskip
+Saludos y quedo atento a sus comentarios.
+\medskip
+\par\noindent\textbf{Referencias}\par
+{\setlength{\parskip}{0.35em}%
+\par\noindent\hangindent=1.6em\hangafter=1 Álvarez Icaza Longoria, E. (2009). \textit{Los derechos humanos en México}. Nostra Ediciones.
+\par\noindent\hangindent=1.6em\hangafter=1 Marcano Salazar, L. M. (2018). \textit{Derechos humanos: teorías y doctrinas}. Ediciones Olejnik.
+\par\noindent\hangindent=1.6em\hangafter=1 Rabinovich Berkman, R. D. (2023). \textit{¿Cómo se hicieron los derechos humanos? (Vol. I)}. Ediciones Didot.
+\par}
+\end{forobox}
+
+Leída en conjunto, la intervención muestra que el valor de una Constitución no se agota en su catálogo de derechos, sino en la existencia de vías reales para exigirlos. La pregunta final apunta al punto que más suele fallar en la práctica —la distancia entre el reconocimiento formal y la protección efectiva—, porque de ahí depende que la evolución histórica del Estado se traduzca en dignidad exigible y no solo en una declaración.
+
+\clearpage
 \section{Conclusión}
 
 La historia del Estado muestra un tránsito desde organizaciones basadas en parentesco, estamento o concentración personal del poder hacia modelos que buscan fundamentarse en ciudadanía, legalidad, democracia y derechos humanos. Este tránsito no fue lineal ni definitivo; cada avance coexistió con exclusiones y conflictos que obligaron a ampliar el significado de libertad, igualdad y dignidad.
 
-Mi postura final es que el Estado social y democrático de derecho representa un ideal exigente, no una condición automática. Su legitimidad depende de que la Constitución limite efectivamente a las autoridades y de que las garantías permitan convertir los derechos en protección concreta. La consecuencia práctica es clara: estudiar garantías constitucionales implica analizar no solo qué derechos se reconocen, sino también quién puede ejercerlos, frente a quién y mediante qué mecanismos.
+Mi postura final es que el Estado social y democrático de derecho representa un ideal exigente, no una condición automática. Su legitimidad depende de que la Constitución limite efectivamente a las autoridades y de que las garantías permitan convertir los derechos en protección concreta. La consecuencia práctica es clara: estudiar garantías constitucionales implica analizar no solo qué derechos se reconocen, sino también quién puede ejercerlos, frente a quién y mediante qué mecanismos.\footnote{Para redactar y organizar este documento se utilizó una herramienta de inteligencia artificial con el propósito de ordenar ideas y revisar la redacción; su uso no sustituyó el análisis histórico, la selección y aplicación de las fuentes ni la postura personal, que corresponden al autor.}
 
 \clearpage
 \nocite{notaEstadoHistoria2026,rabinovichBerkmanDerechosHumanos,marcanoSalazarDerechosHumanos,alvarezIcazaDerechosMexico}
