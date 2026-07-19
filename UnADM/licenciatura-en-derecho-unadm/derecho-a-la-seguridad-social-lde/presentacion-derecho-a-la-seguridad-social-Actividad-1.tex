@@ -9,6 +9,7 @@
 \usepackage[table]{xcolor}
 \usepackage{graphicx}
 \usepackage{ragged2e}
+\usepackage{listings}
 \usepackage{hyperref}
 
 \definecolor{unadmGreenDark}{HTML}{174A3A}
@@ -16,6 +17,25 @@
 \definecolor{unadmGold}{HTML}{B88A2A}
 \definecolor{unadmPaper}{HTML}{F6F7F2}
 \definecolor{unadmInk}{HTML}{1F2A24}
+
+% Estilo de bloque de código para reproducir la participación textual del foro
+\lstdefinestyle{foroplano}{
+  basicstyle=\ttfamily\scriptsize\color{unadmInk},
+  backgroundcolor=\color{unadmPaper},
+  breaklines=true,
+  columns=fullflexible,
+  keepspaces=true,
+  frame=leftline,
+  framerule=1.4pt,
+  rulecolor=\color{unadmGreen},
+  xleftmargin=0.6em,
+  extendedchars=true,
+  inputencoding=utf8,
+  literate=
+    {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+    {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+    {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1 {¡}{{!`}}1
+}
 
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
@@ -119,6 +139,47 @@
     \item APA 7 exige datos verificables y orden formal.
   \end{itemize}
 }
+
+% META (interno): evidencia del producto FORO (100 Técnicas Didácticas, UnADM).
+% Slide dedicado con la participación textual publicada en el foro.
+\clearpage
+\thispagestyle{empty}
+\noindent\begin{minipage}[t][10.55cm][t]{\paperwidth}
+  \noindent\colorbox{unadmGreenDark}{%
+    \begin{minipage}[c][1.18cm][c]{\paperwidth}
+      \hspace*{0.65cm}{\color{white}\Large\bfseries Participación publicada en el foro}
+    \end{minipage}%
+  }
+  \vspace{0.35cm}
+
+  \hspace*{0.8cm}\begin{minipage}{17.55cm}
+    \begin{lstlisting}[style=foroplano]
+Asunto: Foro diagnóstico - Conocimientos previos de seguridad social
+
+Hola a todas y todos: comparto mi participación.
+
+1) Rama: Derecho Social (protege a personas en situación de
+   vulnerabilidad; se relaciona con lo laboral y agrario).
+2) Definición: normas e instituciones que protegen frente a
+   contingencias (enfermedad, invalidez, vejez, desempleo).
+3) Sistemas públicos: IMSS (sector privado) e ISSSTE (Estado),
+   más regímenes especiales; distintos de los programas asistenciales.
+4) Ahorro para el retiro: mecanismo previsional (cuentas individuales);
+   es un componente, no toda la seguridad social.
+5) Cita APA 7: Carbonell, M. (2021). Los derechos fundamentales en
+   México. Porrúa.
+
+Pregunta para el grupo: ¿han visto que se confunda un programa
+asistencial con un verdadero sistema de seguro social?
+    \end{lstlisting}
+  \end{minipage}
+  \vfill
+  \noindent\colorbox{unadmGreen}{%
+    \begin{minipage}[c][0.56cm][c]{\paperwidth}
+      \hspace*{0.65cm}{\color{white}\small Derecho a la Seguridad Social - UnADM - \today}
+    \end{minipage}%
+  }
+\end{minipage}
 
 \ContentSlide{Cierre}{
   \centering\vspace*{1.35cm}
