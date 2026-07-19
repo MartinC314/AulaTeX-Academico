@@ -87,8 +87,10 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
         "content": "sin placeholders, con contexto/problema integrado en introducción, análisis propio integrado en conclusión, postura personal integrada en conclusión y transferencia profesional",
         "visible_style": "sin metadiscurso de ejecución: no hablar de 'esta actividad', 'producto solicitado', 'se presenta' o 'la técnica usada' como narrador externo; hablar del tema, problema, concepto, cuestionario, caso o tabla según corresponda",
         "organization_notes": "el criterio de organización, técnica didáctica, herramienta didáctica, nivel cognitivo aplicado o trazabilidad metodológica debe quedar comentado en TEX cuando no sea parte solicitada del producto visible",
+        "three_part_structure": "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
         "introduction": "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
-        "development_section": "si el producto es cuestionario, la sección Desarrollo debe estar ocupada por el cuestionario con su título; el marco conceptual va dentro de esa misma sección, no como sección/subsección independiente salvo consigna expresa",
+        "development_section": "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
+        "product_centric_gravity": "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
         "conclusion": "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa",
         "ai_declaration": "la declaración de uso de inteligencia artificial, cuando exista, se materializa como \\footnote ligada a una frase oportuna del documento (por defecto de la conclusión), NUNCA como \\section/\\section* ni como bloque separado; debe indicar herramienta y propósito (organizar ideas, revisar redacción) y afirmar que no sustituyó el análisis propio",
         "compile": "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
@@ -132,6 +134,19 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
         "questionnaire_as_development": (
             "Si el producto es cuestionario, la sección Desarrollo debe titular y contener directamente el cuestionario. "
             "El marco conceptual se integra dentro de esa sección como apoyo breve o comentario, no como bloque visible separado."
+        ),
+        "three_part_body": (
+            "Estructurar el cuerpo visible en tres actos: Introducción, Desarrollo y Conclusiones. El desarrollo es UNA sola sección "
+            "(no varias \\section de primer nivel); marco conceptual, producto solicitado y análisis van como subsecciones dentro de ella."
+        ),
+        "development_title_cosmetic": (
+            "El título del acto de desarrollo debe ser descriptivo del tema, no la palabra 'Desarrollo'. Ejemplos válidos: "
+            "'Clasificación de los tipos de seguro', 'Marco y clasificación de los derechos humanos'. El nombre nombra el fenómeno, no la etiqueta didáctica."
+        ),
+        "product_centric_development": (
+            "Dar protagonismo imperativo al producto solicitado (mapa conceptual, cuadro, tabla, esquema) dentro del desarrollo. "
+            "El desarrollo gravita a su alrededor: ANTES lo prepara (marco conceptual-teórico que conduce al producto) y DESPUÉS lo interpreta "
+            "(lectura del producto, semejanzas y diferencias, implicaciones). El énfasis recae en el tema y en el producto, no en la etiqueta ni en el metadiscurso."
         ),
         "fold_analysis_into_conclusion": (
             "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; "
@@ -278,9 +293,14 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
             "dentro de un entorno landscape para llenar la página sin desbordar; NO usar \\resizebox{\\linewidth}{!} porque desborda en alto."
         ),
         "structure_rule": (
-            "Orden recomendado dentro de la sección Mapa conceptual: (2.1) Metodología de construcción (texto justificado con los pasos), "
-            "(2.2) Representación gráfica con el diagrama en su propia página landscape, (2.3) Desarrollo de las ramas. La metodología va ANTES "
-            "del diagrama; compactar la lista para que quepa en una página y el mapa entre limpio en la siguiente sin hueco visible."
+            "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. El mapa conceptual es el "
+            "NÚCLEO del acto de desarrollo y todo gravita a su alrededor. Orden dentro del desarrollo: (a) preparación conceptual-teórica que conduce "
+            "al mapa (marco/metodología breve), (b) el diagrama en su propia página landscape como pieza protagónica, (c) lectura y desarrollo de las ramas "
+            "tras el diagrama. La preparación va ANTES del mapa; el análisis va DESPUÉS. El énfasis es del tema y del mapa, no de la etiqueta 'desarrollo'."
+        ),
+        "three_act_gravity_rule": (
+            "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, mapa y análisis son subsecciones de una sola sección de desarrollo "
+            "cuyo título nombra el tema. El producto (mapa conceptual) manda: el texto lo prepara antes y lo interpreta después, dándole protagonismo imperativo."
         ),
         "no_gap_rule": (
             "PROHIBIDO dejar media página o más en blanco justo antes del diagrama landscape. Si la metodología o el texto previo no llena "
@@ -302,7 +322,16 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
         "required_visible_elements": ("título", "encabezados", "filas", "criterio de lectura"),
         "preservation_rule": "Si la técnica usa tabla o cuadro, conservar estructura tabular visible con título/caption, encabezados claros, filas completas y una lectura breve; usar longtable, landscape, scriptsize, tabcolsep y arraystretch cuando el contenido sea amplio.",
         "visible_style_rule": "El criterio de organización de la tabla y la herramienta didáctica deben quedar comentados si son guía editorial; el texto visible debe entrar directo al tema sin metadiscurso.",
-        "structure_rule": "Integrar contexto y problema en la introducción; si la tabla corresponde a cuestionario, Desarrollo debe contener directamente el cuestionario con su título y cualquier marco conceptual debe ir dentro de la misma sección; nivel cognitivo aplicado va comentado salvo consigna expresa.",
+        "structure_rule": (
+            "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. La tabla/cuadro es el NÚCLEO del "
+            "acto de desarrollo. Orden dentro del desarrollo: (a) marco conceptual-teórico breve que prepara y da sentido a la tabla, (b) la tabla en su "
+            "página landscape como pieza protagónica, (c) semejanzas y diferencias u otro análisis derivado DESPUÉS de la tabla. Contexto y problema van en "
+            "la introducción; nivel cognitivo aplicado va comentado salvo consigna expresa."
+        ),
+        "three_act_gravity_rule": (
+            "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, tabla y análisis (semejanzas/diferencias) son subsecciones de una "
+            "sola sección de desarrollo cuyo título nombra el tema. El producto (cuadro/tabla) manda: el texto lo prepara antes y lo interpreta después."
+        ),
         "layout_rule": (
             "El cuadro/tabla va en orientación horizontal (landscape) en su PROPIA página, con la tabla y su caption juntos en una sola "
             "página landscape. La sección que introduce la tabla NO debe quedar a media página dejando un hueco antes del salto a landscape: "

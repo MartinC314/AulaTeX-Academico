@@ -16,8 +16,9 @@
 #>
 param(
     [int]$TotalCycles = 100,
-    [int]$BatchSize = 10,
+    [int]$BatchSize = 5,
     [int]$LlmTimeoutSeconds = 120,
+    [int]$LlmMaxTokens = 6000,
     [int]$BatchWatchdogSeconds = 1500,
     [string]$Target = '.\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\reporte-derecho-a-la-seguridad-social-Actividad-1.tex'
 )
@@ -41,7 +42,7 @@ function Write-Progress-Line([string]$msg) {
     Add-Content -Path $progressLog -Value $line -Encoding UTF8
 }
 
-Write-Progress-Line "INICIO: $TotalCycles ciclos en $batches lotes de $BatchSize (LLM timeout=$LlmTimeoutSeconds s, watchdog=$BatchWatchdogSeconds s)"
+Write-Progress-Line "INICIO: $TotalCycles ciclos en $batches lotes de $BatchSize (LLM timeout=$LlmTimeoutSeconds s, max_tokens=$LlmMaxTokens, watchdog=$BatchWatchdogSeconds s)"
 
 for ($b = 1; $b -le $batches; $b++) {
     $remaining = $TotalCycles - $completedCycles
@@ -51,9 +52,10 @@ for ($b = 1; $b -le $batches; $b++) {
     Write-Progress-Line "LOTE $b/$batches -> ejecutando $thisBatch ciclos (acumulado previo: $completedCycles)"
 
     $job = Start-Job -ScriptBlock {
-        param($r, $tgt, $iters, $llmTo, $eng)
+        param($r, $tgt, $iters, $llmTo, $llmMax, $eng)
         Set-Location $r
         $env:AULATEX_LLM_TIMEOUT_SECONDS = "$llmTo"
+        $env:AULATEX_LLM_MAX_TOKENS = "$llmMax"
         $env:PYTHONUTF8 = '1'
         $engineArgs = @()
         foreach ($e in $eng) { $engineArgs += '--engine'; $engineArgs += $e }
@@ -61,7 +63,7 @@ for ($b = 1; $b -le $batches; $b++) {
             --action realizar-actividad --target $tgt --activity 2 `
             --iterations $iters --cycle-mode full --no-compile --no-detail-planner `
             @engineArgs 2>&1
-    } -ArgumentList $root, $Target, $thisBatch, $LlmTimeoutSeconds, $engines
+    } -ArgumentList $root, $Target, $thisBatch, $LlmTimeoutSeconds, $LlmMaxTokens, $engines
 
     $done = Wait-Job $job -Timeout $BatchWatchdogSeconds
     if ($done) {
