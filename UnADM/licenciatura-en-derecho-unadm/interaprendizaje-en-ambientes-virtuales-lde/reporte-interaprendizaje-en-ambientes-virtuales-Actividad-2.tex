@@ -43,6 +43,31 @@
 \usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}
 \setcitestyle{authoryear,open={(},close={)}}
 
+% Estilo del bloque de participación publicada en el foro. Sin literate para que
+% el texto sea seleccionable y copiable en el PDF; breaklines sin numerar las
+% líneas de continuación del ajuste.
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{foroframe}{RGB}{120,120,120}
+\definecolor{forobg}{RGB}{246,246,246}
+\lstdefinestyle{foropublicacion}{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  breakindent=0pt,
+  columns=fullflexible,
+  keepspaces=true,
+  frame=single,
+  rulecolor=\color{foroframe},
+  backgroundcolor=\color{forobg},
+  framesep=6pt,
+  xleftmargin=8pt,
+  xrightmargin=8pt,
+  aboveskip=1em,
+  belowskip=1em,
+  numbers=none,
+  extendedchars=true
+}
+
 \def\coverwatermarkenabled {true}
 \def\coverwatermarkimage {img/departamentos/UnADM.pdf}
 \def\coverwatermarkopacity {0.16}
@@ -67,6 +92,45 @@
   }{}%
 }
 
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+
+% -----------------------------------------------------------------------------
+% AulaTeX:foro-producto v1 -- bloque de participación del foro (producto)
+% Caja institucional con texto JUSTIFICADO, numeración a la izquierda (enumitem),
+% contenido copiable y un botón "Copiar participación" que adjunta un .txt.
+% -----------------------------------------------------------------------------
+\usepackage[most]{tcolorbox}
+\usepackage{attachfile}
+\usepackage{enumitem}
+
+% attachfile: el 'color' debe darse como TRIPLE RGB numérico (0..1); un nombre
+% \definecolor[HTML] provoca 'Argument of \atfi@textcolor has an extra }'.
+\attachfilesetup{color={0.373 0.561 0.227},print=false}
+
+% Botón de copia: appearance={} oculta el PushPin y muestra el 2.o argumento como
+% botón visible. Se evita fontawesome (ps2pk/gsftopk no disponibles en pdflatex).
+\newcommand{\foroCopyButton}[1]{%
+  \textattachfile[appearance={},description={Participacion del foro (texto copiable)},mimetype=text/plain]{#1}{%
+    \colorbox{unadmGreen}{\small\textcolor{white}{\,Copiar participación\,}}%
+  }%
+}
+
+% Entorno visual del foro (banda verde, fondo claro, texto justificado)
+\newtcolorbox{forobox}[1][]{%
+  enhanced, breakable,
+  colback=unadmPaper, colframe=unadmGreen,
+  boxrule=0pt, leftrule=3pt, arc=1.2mm,
+  left=4mm, right=4mm, top=3mm, bottom=3mm,
+  fonttitle=\bfseries\color{white}, coltitle=white, colbacktitle=unadmGreenDark,
+  attach boxed title to top left={xshift=4mm,yshift=-2mm},
+  boxed title style={colframe=unadmGreenDark,arc=0.6mm},
+  #1
+}
+
 \begin{document}
 
 \insertcoverwatermark
@@ -75,16 +139,17 @@
 \onehalfspacing
 
 \begin{abstractd}
-  El documento resuelve el foro sumativo de la semana 2, ``Diversidad cultural y
-  lingüística en el derecho''. A partir del caso detonador de una estudiante de
-  Derecho que descarta un relato comunitario por no ajustarse al formato
-  documental, se analiza cómo los criterios de lo ``válido'', lo ``confiable'' y
-  lo ``bien explicado'' están culturalmente situados y pueden hacer que otra
-  forma de narrar un conflicto parezca insuficiente. La participación integra una
-  cita en formato APA 7 tomada de los materiales básicos de la semana, una
-  reflexión propia vinculada con la formación profesional en Derecho y una
-  retroalimentación respetuosa y constructiva a una compañera, seguida de la
-  declaración de uso de inteligencia artificial.
+  La diversidad cultural y lingüística funciona como criterio de interpretación
+  jurídica: los estándares de lo ``válido'', lo ``confiable'' y lo ``bien
+  explicado'' están culturalmente situados y pueden hacer que una narración
+  comunitaria u oral parezca insuficiente. A partir de un caso en que una
+  estudiante de Derecho descarta un relato por no ajustarse al formato documental,
+  se argumenta que la competencia intercultural no debilita el rigor probatorio,
+  sino que exige investigar, contextualizar y traducir antes de concluir. El
+  análisis se sostiene en la comunicación intercultural, el protocolo de
+  perspectiva intercultural y el marco constitucional y de derechos lingüísticos, y
+  se materializa en una participación argumentada y una retroalimentación entre
+  pares.
 \end{abstractd}
 
 \templateIndex
@@ -92,139 +157,136 @@
 
 \section{Introducción}
 
-Este foro reflexiona sobre la relación entre cultura, diversidad cultural,
-diversidad lingüística y formación profesional en Derecho. Su punto de partida es
-que todas las personas interpretamos la realidad desde referentes culturales y
-lingüísticos; por ello, las formas de hablar, comprender, explicar y valorar una
-situación influyen en cómo se interpreta un problema jurídico. El propósito no es
-sustituir el rigor por sensibilidad genérica, sino reconocer que la comprensión de
-los hechos también es una operación cultural que la persona profesional del
-Derecho debe examinar de manera crítica.
+La relación entre cultura, diversidad cultural, diversidad lingüística y formación
+profesional en Derecho parte de una premisa: todas las personas interpretamos la
+realidad desde referentes culturales y lingüísticos. Por ello, las formas de
+hablar, comprender, explicar y valorar una situación influyen en cómo se interpreta
+un problema jurídico. El propósito no es sustituir el rigor por sensibilidad
+genérica, sino reconocer que la comprensión de los hechos también es una operación
+cultural que la persona profesional del Derecho debe examinar de manera crítica.
 
-El caso detonador presenta a una estudiante que atiende a una persona con un
-conflicto por un terreno familiar. El acuerdo se hizo de palabra ante la
-comunidad, con participación de la familia y con expresiones propias de la región.
-La estudiante, centrada en escrituras, contratos y recibos, concluye que el relato
-es confuso y que la persona ``no sabe explicar bien'' su problema. La pregunta a
-responder es cómo una forma de entender lo válido, lo confiable y lo bien
+El caso detonante presenta a una estudiante que atiende a una persona con un
+conflicto por un terreno familiar. El acuerdo se hizo de palabra ante la comunidad,
+con participación de la familia y con expresiones propias de la región. La
+estudiante, centrada en escrituras, contratos y recibos, concluye que el relato es
+confuso y que la persona ``no sabe explicar bien'' su problema. La pregunta que
+guía la reflexión es cómo una forma de entender lo válido, lo confiable y lo bien
 explicado puede hacer que otra manera de narrar un conflicto parezca insuficiente
 en una situación jurídica.
 
-\section{Participación en el foro}
+% Técnica didáctica: foro académico (100 técnicas didácticas UnADM). Trazabilidad
+% metodológica en comentario para no introducir metadiscurso en el texto visible.
+\section{Diversidad cultural y lingüística como criterio de interpretación jurídica}
 
-El problema del caso no es que la persona explique mal su conflicto, sino desde
-qué marco se juzga su relato. Cuando la estudiante solo reconoce como confiable lo
-escrito, lo individual y lo expresado en lenguaje jurídico estándar, corre el
-riesgo de confundir la diferencia cultural con la falta de credibilidad. Ese sesgo
-opera en tres supuestos implícitos: que únicamente lo documentado vale como
-prueba, que una narración lineal es más confiable que una narración colectiva y
-que el uso de expresiones regionales reduce la claridad. Cada supuesto tiene una
-consecuencia profesional concreta: mala comprensión de los hechos, trato
+El desarrollo se organiza en tres momentos: un encuadre que conduce a las preguntas
+guía, las respuestas a esas preguntas y, como núcleo, la participación publicada en
+el foro, seguida de su lectura.
+
+\subsection{Encuadre y preguntas guía}
+
+El punto decisivo del caso no es que la persona explique mal su conflicto, sino
+desde qué marco se juzga su relato. Cuando solo se reconoce como confiable lo
+escrito, lo individual y lo expresado en lenguaje jurídico estándar, se corre el
+riesgo de confundir la diferencia cultural con la falta de credibilidad. Como
+advierte la comunicación intercultural, en toda interacción las personas no solo
+transmiten datos, sino que narran desde sus marcos de autoridad, memoria y
+pertenencia \citep{pech2016manual}. Para ordenar el análisis, tres preguntas guía
+resultan pertinentes: ¿qué supuestos hacen que una narración comunitaria parezca
+``confusa''?; ¿cómo distinguir entre una prueba insuficiente y una diferencia en la
+forma de narrar?; y ¿qué debe hacer la persona profesional del Derecho para no
+convertir la diversidad en desventaja jurídica?
+
+\subsection{Respuestas a las preguntas guía}
+
+Respecto de los supuestos, el sesgo opera en tres ideas implícitas: que únicamente
+lo documentado vale como prueba, que una narración lineal es más confiable que una
+narración colectiva y que el uso de expresiones regionales reduce la claridad. Cada
+supuesto tiene una consecuencia profesional: mala comprensión de los hechos, trato
 potencialmente discriminatorio y exclusión anticipada de indicios relevantes.
-Como advierte la comunicación intercultural, en toda interacción las personas no
-solo transmiten datos, sino que narran desde sus marcos de autoridad, memoria y
-pertenencia \citep{pech2016manual}; por eso, lo que la estudiante interpreta como
-``confusión'' puede ser en realidad una narración situada, comunitaria y no lineal.
 
-Reconocer esta mediación cultural no significa idealizar la oralidad ni suponer que
-toda práctica comunitaria sustituye los requisitos jurídicos aplicables. Un acuerdo
-de palabra, la presencia de testigos comunitarios o la intervención familiar no
-vuelven verdadero un reclamo por sí mismos, pero sí obligan a investigar mejor
-antes de descartarlo. El criterio profesional adecuado consiste en distinguir entre
-prueba insuficiente y formas distintas de producir, transmitir o recordar acuerdos.
-La perspectiva intercultural aporta aquí una corrección metodológica: interpretar
-los hechos considerando la cosmovisión, la lengua y las instituciones comunitarias
-de las personas involucradas, en lugar de imponer un único estándar de validez
-\citep{scjn2022protocolo}. Así, la diversidad lingüística deja de ser un obstáculo
-para convertirse en información jurídicamente relevante sobre cómo se constituyó el
-acuerdo y quiénes lo respaldan.
+Sobre la distinción entre prueba insuficiente y diferencia cultural, reconocer la
+mediación cultural no significa idealizar la oralidad ni suponer que toda práctica
+comunitaria sustituye los requisitos jurídicos. Un acuerdo de palabra, la presencia
+de testigos comunitarios o la intervención familiar no vuelven verdadero un reclamo
+por sí mismos, pero sí obligan a investigar antes de descartarlo. La perspectiva
+intercultural aporta una corrección metodológica: interpretar los hechos
+considerando la cosmovisión, la lengua y las instituciones comunitarias, en lugar
+de imponer un único estándar de validez \citep{scjn2022protocolo}.
 
-En consecuencia, la respuesta profesional no es descalificar el relato, sino
-reconstruir el conflicto como lo haría una entrevista jurídica intercultural, sin
-invalidar el relato de inicio. Esa reconstrucción puede ordenarse en cuatro
-momentos de actuación verificable:
-
-\begin{enumerate}
-  \item \textbf{Escuchar sin descalificar:} recibir el relato y registrar, cuando
-  sea posible de forma literal, sus elementos principales, en lugar de traducirlo
-  de inmediato al formato documental esperado.
-  \item \textbf{Contextualizar:} identificar la lengua o variante en que se
-  expresó el acuerdo, las prácticas comunitarias, las personas participantes y las
-  circunstancias en que se produjo la narración.
-  \item \textbf{Contrastar:} buscar otros elementos de corroboración —testigos,
-  indicios, documentos complementarios— sin imponer de antemano un único modelo de
-  memoria o de prueba.
-  \item \textbf{Argumentar la decisión:} explicar por qué la información resulta
-  suficiente, insuficiente o requiere diligencias adicionales, distinguiendo con
-  claridad entre una \textit{prueba insuficiente} y una \textit{falta de
-  traducción cultural}.
+En cuanto a la actuación profesional, la respuesta no es descalificar el relato,
+sino reconstruir el conflicto mediante una entrevista jurídica intercultural que
+ordene el análisis en cuatro operaciones:
+\begin{enumerate}[label=\alph*)]
+  \item escuchar sin descalificar y permitir que la persona explique el conflicto desde sus propios referentes;
+  \item contextualizar la lengua, las prácticas comunitarias y las formas locales de autoridad;
+  \item contrastar el relato con testigos y otros elementos de corroboración pertinentes;
+  \item argumentar la decisión distinguiendo entre una prueba insuficiente y una falta de traducción cultural.
 \end{enumerate}
-
-Esta ruta traduce la sensibilidad cultural en una regla de actuación: preguntar
-antes de descartar, contextualizar antes de calificar y buscar medios de
-corroboración adecuados al contexto. De ese modo, el criterio de lo ``bien
-explicado'' se ajusta al problema real y no al formato preferido por quien escucha.
-
-\section{Relación con la formación en Derecho}
-
-La diversidad cultural y lingüística es relevante para interpretar una situación
-jurídica porque el Derecho no opera sobre hechos neutros, sino sobre hechos
-narrados y comprendidos. Si la escucha profesional no reconoce la mediación
-cultural y lingüística, puede confundir una diferencia de marco con una deficiencia
-del relato y, con ello, afectar la valoración de los hechos, la estrategia del caso
-y la calidad del acompañamiento legal. En un país cuya Constitución reconoce la
-composición pluricultural de la nación y protege el derecho de las personas
-indígenas a ser asistidas por intérpretes y defensores que conozcan su lengua y
-cultura, ignorar esa diversidad no es solo una falla comunicativa: puede traducirse
+Por tanto, en un país cuya Constitución reconoce la composición pluricultural de la
+nación y protege el derecho de las personas indígenas a ser asistidas por
+intérpretes que conozcan su lengua y cultura, ignorar esa diversidad puede traducirse
 en una barrera de acceso a la justicia \citep{cpeum2026,leyDerechosLinguisticos2024}.
 
-Para la formación profesional, esto implica adoptar la siguiente regla de actuación:
-antes de concluir que un relato no es confiable, verificar si la dificultad proviene
-de diferencias lingüísticas, de marcos comunitarios de validación o de una ausencia
-real de sustento. Esta regla, fundada en una valoración intercultural que no confunda
-diferencia cultural con falta de credibilidad, puede traducirse en acciones observables
-\citep{scjn2022protocolo}:
+\subsection{Participación publicada en el foro}
 
-\begin{enumerate}
-  \item pedir aclaraciones sin descalificar el relato;
-  \item recurrir a interpretación lingüística cuando sea necesario, conforme a los
-  derechos lingüísticos reconocidos por la normatividad aplicable
-  \citep{leyDerechosLinguisticos2024};
-  \item identificar las normas pertinentes sobre no discriminación y diversidad
-  cultural; y
-  \item distinguir entre falta de prueba y falta de traducción cultural antes de
-  cerrar la valoración del caso.
+A partir del análisis anterior, la participación aportada al foro es la siguiente:
+
+\begin{lstlisting}[style=foropublicacion]
+Diversidad cultural y linguistica en el derecho
+
+Considero que el problema del caso no es que la persona "explique mal" su
+conflicto, sino desde que marco se juzga su relato. Cuando solo se acepta como
+confiable lo escrito, lo individual y lo dicho en lenguaje juridico estandar, se
+confunde la diferencia cultural con la falta de credibilidad. La comunicacion
+intercultural recuerda que las personas no solo transmiten datos: narran desde sus
+marcos de autoridad, memoria y pertenencia (Pech Salvador, Rizo Garcia y Romeu
+Aldaya, 2016). Por eso, lo que la estudiante lee como "confusion" puede ser una
+narracion situada, comunitaria y no lineal.
+
+Esto no significa idealizar la oralidad ni suponer que un acuerdo de palabra basta
+como prueba plena. Significa investigar antes de descartar: identificar la lengua y
+las practicas comunitarias, ubicar a las personas testigos y buscar corroboracion
+adecuada al contexto, distinguiendo entre una prueba insuficiente y una falta de
+traduccion cultural. El Protocolo para juzgar con perspectiva intercultural ofrece
+criterios para incorporar el contexto de personas, pueblos y comunidades indigenas
+en el analisis juridico (Suprema Corte de Justicia de la Nacion, 2022).
+
+Vinculo esto con mi formacion en Derecho: una entrevista o una valoracion de hechos
+que no reconoce la mediacion cultural y linguistica puede reproducir exclusion y
+vulnerar derechos linguisticos reconocidos por la ley (Camara de Diputados, 2024).
+Mi regla de actuacion es preguntar antes de concluir, contextualizar antes de
+calificar y garantizar interpretacion cuando haga falta.
+
+Para dialogar con el grupo: cuando ustedes atienden un relato que no encaja en el
+formato documental esperado, ¿que hacen primero para no confundir diferencia
+cultural con falta de pruebas?
+\end{lstlisting}
+
+La participación sigue la estructura de la técnica: apertura con la tesis, respuesta
+argumentada a la pregunta detonante, vínculo explícito con la formación jurídica y
+un cierre que invita al diálogo entre pares con una pregunta al grupo. El bloque
+reproduce literalmente lo publicado y mantiene una cita con su referencia en formato
+APA 7.
+
+\subsection{Retroalimentación a una participación de otra persona}
+
+Por privacidad académica se omite el nombre de la persona participante y se recupera
+solo la idea pertinente. Esa participación sostiene, en síntesis, que la estudiante
+del caso actúa bien al exigir documentos, pues el Derecho necesita pruebas, y que sin
+papeles no había forma de avanzar.
+
+Coincido en que la prueba documental es fundamental y conviene conservar ese punto.
+Sin embargo, conviene distinguir dos operaciones jurídicas:
+\begin{enumerate}[label=\alph*)]
+  \item exigir prueba es legítimo para corroborar los hechos;
+  \item concluir que la persona ``no sabe explicar'' desplaza el problema hacia ella y no hacia el marco desde el que se le escucha.
 \end{enumerate}
-
-Estas acciones muestran comprensión real del problema y no un mero acuerdo abstracto
-con la diversidad.
-
-\section{Retroalimentación a una participación de otra persona}
-
-Por razones de privacidad académica se omite el nombre de la persona participante
-y se recupera únicamente la idea pertinente para el diálogo. La participación
-revisada sostiene, en síntesis, que la estudiante del caso actúa correctamente al
-exigir documentos, pues el Derecho necesita pruebas y no puede confiar solo en lo
-que se dice; y que, al no haber papeles, la estudiante carecía de una vía para
-avanzar el caso.
-
-Coincido en que la prueba documental es fundamental y en que sin sustento el caso
-no puede avanzar con seguridad; ese punto es correcto y conviene conservarlo. Me
-gustaría, sin embargo, problematizar una idea para fortalecer la reflexión:
-¿pedir documentos y descartar el relato son la misma operación? Creo que conviene
-separarlas. Exigir prueba es legítimo, pero concluir que la persona ``no sabe
-explicar'' desplaza el problema hacia ella y no hacia el marco desde el que se le
-escucha. Un acuerdo de palabra ante la comunidad, con testigos y participación
-familiar, no es todavía prueba plena, pero sí es una pista de indagación que
-obliga a preguntar más antes de cerrar el caso. Para enriquecer el argumento,
-propongo un ejemplo hipotético: si la persona hablara una lengua indígena, la
-solución no sería descartarla por ``confusa'', sino garantizar interpretación,
-conforme a los derechos lingüísticos reconocidos por la normatividad aplicable
-\citep{leyDerechosLinguisticos2024}. ¿Cómo cambiaría la conclusión si, en lugar
-de ver la ausencia de papeles como un límite de la persona
-usuaria, se viera como una tarea de investigación aún no resuelta que corresponde
-a la persona abogada? Con ese giro la postura gana fuerza sin renunciar al rigor
-probatorio planteado.
+Un acuerdo de palabra ante la comunidad, con testigos y participación familiar, no es prueba plena, pero sí una pista de indagación que obliga a preguntar más antes de cerrar el caso. Como ejemplo,
+si la persona hablara una lengua indígena, la salida no sería descartarla por
+``confusa'', sino garantizar interpretación conforme a los derechos lingüísticos
+\citep{leyDerechosLinguisticos2024}. ¿Cómo cambiaría tu conclusión si vieras la
+ausencia de papeles no como un límite de la persona usuaria, sino como una tarea de
+investigación que corresponde a quien ejerce la abogacía?
 
 \section{Conclusión}
 
