@@ -1,0 +1,20 @@
+{
+  "subject_slug": "derecho-a-la-seguridad-social",
+  "kept": [
+    "Artículo 123 constitucional",
+    "Cobertura contributiva",
+    "Financiamiento tripartito",
+    "Ley del ISSSTE",
+    "Ley del Seguro Social",
+    "Régimen obligatorio",
+    "Régimen voluntario",
+    "Seguro facultativo",
+    "Solidaridad social",
+    "Tipología germana (bismarckiana)",
+    "Tipología latina"
+  ],
+  "discarded": [
+    "Seguro"
+  ],
+  "notes": "Se conservan los conceptos con carga jurídica y doctrinal específica de la seguridad social: fundamento constitucional (Art. 123), leyes clave (IMSS, ISSSTE), regímenes (obligatorio, voluntario, facultativo), principios rectores (solidaridad social, financiamiento tripartito, cobertura contributiva) y tipologías comparadas (bismarckiana y latina), útiles para redactar actividades sobre estructura y modelos del sistema. Se descartó 'Seguro' por ser demasiado genérico y ambiguo frente a los conceptos ya específicos como 'Seguro facultativo' o 'Ley del Seguro Social'."
+}

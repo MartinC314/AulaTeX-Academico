@@ -1,0 +1,961 @@
+{
+  "Artículo 123 constitucional": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Autor o antecedente histórico del artículo 123 (origen en la Constitución de 1917, Congreso Constituyente de Querétaro)",
+            "Definición doctrinal más precisa del artículo como base del derecho social del trabajo",
+            "Contexto histórico y significado del artículo 123 como primer constitucionalismo social del mundo"
+          ],
+          "consultas": [
+            "origen histórico artículo 123 constitucional Constitución 1917 Congreso Constituyente Querétaro derecho social",
+            "diferencia apartado A y apartado B artículo 123 constitucional trabajadores del Estado",
+            "artículo 123 constitucional primer derecho laboral constitucional del mundo doctrina significado"
+          ],
+          "nota": "La ficha cubre razonablemente la definición (catálogo de derechos laborales, apartados A y B), el fundamento (base normativa del derecho laboral y de seguridad social) y ejemplos de aplicación jurisprudencial (Convenio 87 OIT, Ley del Seguro Social, contratos colectivos). Sin embargo, falta identificar la autoría intelectual y el origen histórico del precepto (Constitución de 1917), así como una definición doctrinal atribuida a un autor específico. La crítica está apenas insinuada en la cita sobre la interpretación de la Corte respecto al Convenio 87, pero conviene profundizar. Las similitudes son bajas (máx. 0.21), por lo que se recomienda una segunda ronda de búsqueda enfocada en el aspecto histórico-doctrinal."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "origen histórico artículo 123 constitucional Constitución 1917 Congreso Constituyente Querétaro derecho social",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia apartado A y apartado B artículo 123 constitucional trabajadores del Estado",
+            "hits": 4
+          },
+          {
+            "consulta": "artículo 123 constitucional primer derecho laboral constitucional del mundo doctrina significado",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 12
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 12,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Autor doctrinal o antecedente histórico que explique el origen del artículo 123 (Constituyente de 1917)",
+            "Definición integral del artículo 123 más allá del catálogo laboral (falta contextualizar apartados A y B con precisión conceptual)",
+            "Crítica doctrinal más explícita sobre límites o tensiones del modelo laboral constitucional (la existente es tangencial sobre jerarquía normativa)"
+          ],
+          "consultas": [
+            "origen histórico artículo 123 constitucional Constituyente de Querétaro 1917 derechos sociales",
+            "diferencias apartado A y apartado B artículo 123 constitucional trabajadores al servicio del Estado",
+            "críticas y límites del modelo laboral del artículo 123 reforma justicia laboral 2019"
+          ],
+          "nota": "La ficha cubre bien la definición del catálogo de derechos laborales, su fundamento constitucional y ejemplos de aplicación (Convenio 87 OIT, Ley del Seguro Social, contratos colectivos). Sin embargo, carece de una atribución autoral o histórica clara sobre el origen del precepto, y la crítica presente es incidental (jerarquía normativa) más que sustantiva sobre el propio artículo. Se recomienda una ronda adicional con las consultas propuestas para completar la dimensión histórico-doctrinal y crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "origen histórico artículo 123 constitucional Constituyente de Querétaro 1917 derechos sociales",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencias apartado A y apartado B artículo 123 constitucional trabajadores al servicio del Estado",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del modelo laboral del artículo 123 reforma justicia laboral 2019",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 15
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 15
+  },
+  "Cobertura contributiva": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición precisa de 'cobertura contributiva' como concepto técnico de seguridad social",
+            "Autor o doctrina que conceptualice el régimen contributivo frente al no contributivo",
+            "Fundamento jurídico-normativo específico (marco legal LSS, principios de financiamiento contributivo)"
+          ],
+          "consultas": [
+            "definición de régimen contributivo y cotización en seguridad social",
+            "financiamiento contributivo modelo bismarckiano seguridad social doctrina",
+            "diferencia cobertura contributiva y no contributiva marco jurídico Ley del Seguro Social"
+          ],
+          "nota": "Las citas tienen similitud muy baja (<0.11) y abordan tangencialmente el concepto: mencionan la distinción contributiva/no contributiva, ejemplos de programas (guarderías, IMSS-Coplamar, Seguro Popular) y una crítica sobre el estatus de derecho de la cobertura. Sin embargo, falta una definición formal del concepto 'cobertura contributiva', su fundamento normativo preciso y un autor que lo teorice explícitamente. Se recomienda una segunda ronda enfocada en la definición técnica y doctrinal."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de régimen contributivo y cotización en seguridad social",
+            "hits": 4
+          },
+          {
+            "consulta": "financiamiento contributivo modelo bismarckiano seguridad social doctrina",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia cobertura contributiva y no contributiva marco jurídico Ley del Seguro Social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 15
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 15,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición precisa de 'cobertura contributiva' o del modelo contributivo de aseguramiento social",
+            "Explicación del mecanismo de financiamiento (aportaciones de trabajadores, patrones y Estado)",
+            "Distinción operativa clara frente a la cobertura no contributiva"
+          ],
+          "consultas": [
+            "definición modelo contributivo de aseguramiento social financiamiento cotizaciones IMSS ISSSTE",
+            "cobertura contributiva vs no contributiva seguridad social México características",
+            "personas afiliadas esquema contributivo requisitos cotización pensión seguridad social"
+          ],
+          "nota": "Las citas ubican el concepto dentro del derecho a la seguridad social y aportan fundamento normativo, autor (González Carvallo), ejemplo (litigios ante la SCJN, pensión universal) y crítica (tensión con la universalidad), pero ninguna ofrece una definición explícita de 'cobertura contributiva' ni describe su mecanismo de financiamiento. La similitud de las citas es baja (<0.23), por lo que conviene una segunda ronda enfocada en la definición operativa y el modelo de financiamiento."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición modelo contributivo de aseguramiento social financiamiento cotizaciones IMSS ISSSTE",
+            "hits": 4
+          },
+          {
+            "consulta": "cobertura contributiva vs no contributiva seguridad social México características",
+            "hits": 4
+          },
+          {
+            "consulta": "personas afiliadas esquema contributivo requisitos cotización pensión seguridad social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  },
+  "Financiamiento tripartito": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definición precisa de financiamiento tripartito",
+            "fundamento legal (contribución de trabajadores, patrones y Estado)",
+            "autor o doctrina que lo desarrolle",
+            "ejemplo o aplicación concreta en seguridad social",
+            "crítica o límites del modelo"
+          ],
+          "consultas": [
+            "financiamiento tripartito seguridad social aportaciones Estado patrón trabajador",
+            "cuota obrero patronal contribución estatal IMSS fundamento legal",
+            "críticas sostenibilidad financiera régimen tripartito pensiones seguridad social"
+          ],
+          "nota": "Las citas recuperadas tienen baja similitud (<0.10) y no abordan directamente el concepto de financiamiento tripartito. Mencionan financiamiento compartido, cuotas y test tripartito, pero ninguna define ni fundamenta el esquema tripartito clásico (trabajadores, patrones y Estado). Se requiere nueva búsqueda enfocada en el derecho de la seguridad social para cubrir todos los elementos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "financiamiento tripartito seguridad social aportaciones Estado patrón trabajador",
+            "hits": 4
+          },
+          {
+            "consulta": "cuota obrero patronal contribución estatal IMSS fundamento legal",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas sostenibilidad financiera régimen tripartito pensiones seguridad social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definición explícita de financiamiento tripartito",
+            "fundamento jurídico o normativo del esquema tripartito",
+            "autor o doctrina que teorice el concepto",
+            "ejemplo concreto de aportaciones Estado-patrón-trabajador",
+            "crítica o límites del modelo tripartito de financiamiento"
+          ],
+          "consultas": [
+            "financiamiento tripartito seguridad social aportaciones Estado patrón trabajador definición",
+            "cuota tripartita IMSS obrero patronal contribución del Estado fundamento legal",
+            "críticas y sostenibilidad del financiamiento tripartito de la seguridad social"
+          ],
+          "nota": "Las citas recuperadas tienen baja similitud (todas por debajo de 0.17) y no abordan directamente el concepto de financiamiento tripartito. Solo tangencialmente se menciona la cuota obrero-patronal (p. 250) y aportaciones a cuentas individuales, pero ninguna cita define el esquema tripartito ni identifica las tres fuentes (Estado, patrón, trabajador), su fundamento normativo, autor, ejemplo o crítica. Se requiere una nueva ronda de búsqueda con consultas más específicas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "financiamiento tripartito seguridad social aportaciones Estado patrón trabajador definición",
+            "hits": 4
+          },
+          {
+            "consulta": "cuota tripartita IMSS obrero patronal contribución del Estado fundamento legal",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y sostenibilidad del financiamiento tripartito de la seguridad social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 24
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 24
+  },
+  "Ley del ISSSTE": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición formal y precisa del objeto y ámbito de aplicación de la Ley del ISSSTE de 2007",
+            "Autor o iniciativa legislativa que promovió la ley (poder ejecutivo/legislador que la impulsó)",
+            "Estructura y seguros que regula la ley (retiro, invalidez, salud, servicios sociales) de forma sistematizada",
+            "Crítica jurídica y doctrinal más explícita sobre la transición del sistema de reparto a cuentas individuales"
+          ],
+          "consultas": [
+            "Ley del ISSSTE 2007 objeto ámbito de aplicación seguros y prestaciones que regula",
+            "Reforma 2007 ISSSTE iniciativa presidencial Felipe Calderón transición cuentas individuales",
+            "Críticas doctrinales a la Ley del ISSSTE 2007 eliminación de solidaridad reparto derechos adquiridos"
+          ],
+          "nota": "Las citas ofrecen definición contextual (ley en vigor desde 2007, creación del PENSIONISSSTE), fundamento histórico (evolución de la seguridad social), ejemplo/aplicación (cuentas individuales, Afore) y esbozo de crítica (eliminación de principios de solidaridad y reparto). Sin embargo, falta identificación del autor/iniciativa legislativa y una definición formal del objeto y estructura de la ley. La crítica está presente pero de forma tangencial y merece profundizarse con fuentes específicas. Similitudes muy bajas (<0.12) sugieren cobertura periférica; conviene una segunda ronda con consultas más dirigidas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Ley del ISSSTE 2007 objeto ámbito de aplicación seguros y prestaciones que regula",
+            "hits": 4
+          },
+          {
+            "consulta": "Reforma 2007 ISSSTE iniciativa presidencial Felipe Calderón transición cuentas individuales",
+            "hits": 4
+          },
+          {
+            "consulta": "Críticas doctrinales a la Ley del ISSSTE 2007 eliminación de solidaridad reparto derechos adquiridos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 17,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición formal de la Ley del ISSSTE y su objeto normativo",
+            "Fundamento constitucional (artículo 123 apartado B) y contexto de expedición",
+            "Autor doctrinal que analice la naturaleza jurídica de la Ley del ISSSTE",
+            "Crítica o límites de la reforma de 2007 (transición al sistema de cuentas individuales, cuestionamientos constitucionales)"
+          ],
+          "consultas": [
+            "Ley del ISSSTE 2007 objeto definición seguridad social trabajadores al servicio del Estado",
+            "fundamento constitucional artículo 123 apartado B ISSSTE seguridad social burocrática",
+            "críticas reforma Ley ISSSTE 2007 cuentas individuales régimen pensiones transición amparo"
+          ],
+          "nota": "Las citas recuperadas son tangenciales: describen principalmente el funcionamiento de PENSIONISSSTE y las Afore en relación con cuentas individuales, con baja similitud (máx. 0.13). Aportan un ejemplo/aplicación (creación del PENSIONISSSTE en 2007) pero no ofrecen una definición formal de la Ley, su fundamento constitucional, una postura doctrinal atribuible a un autor sobre el concepto, ni crítica/límites. Se requiere una nueva ronda de búsqueda dirigida a esos elementos faltantes."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Ley del ISSSTE 2007 objeto definición seguridad social trabajadores al servicio del Estado",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento constitucional artículo 123 apartado B ISSSTE seguridad social burocrática",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas reforma Ley ISSSTE 2007 cuentas individuales régimen pensiones transición amparo",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  },
+  "Ley del Seguro Social": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición formal y objeto de la Ley del Seguro Social",
+            "Autor doctrinal que conceptualice o comente la ley (más allá de citas dispersas)",
+            "Crítica, límites o debate sobre la reforma (por ejemplo, la privatización del sistema de pensiones de 1997)"
+          ],
+          "consultas": [
+            "definición y objeto de la Ley del Seguro Social 1997 régimen obligatorio",
+            "Ley del Seguro Social reforma 1997 crítica sistema de pensiones cuentas individuales Afore",
+            "concepto doctrinal Ley del Seguro Social Briceño Ruiz naturaleza jurídica seguridad social"
+          ],
+          "nota": "Las citas aportan fundamento constitucional (art. 123 fracc. XXIX apartado A) y ejemplos históricos de aplicación (seguro de retiro 1992, seguro de accidentes 1943), pero carecen de una definición explícita del concepto, de atribución doctrinal clara y de crítica o análisis de límites. La similitud de las citas es baja (<0.28), lo que sugiere recuperar fragmentos más centrados en la definición y en el debate sobre las reformas de 1995-1997."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y objeto de la Ley del Seguro Social 1997 régimen obligatorio",
+            "hits": 4
+          },
+          {
+            "consulta": "Ley del Seguro Social reforma 1997 crítica sistema de pensiones cuentas individuales Afore",
+            "hits": 4
+          },
+          {
+            "consulta": "concepto doctrinal Ley del Seguro Social Briceño Ruiz naturaleza jurídica seguridad social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "autor",
+            "critica"
+          ],
+          "consultas": [
+            "definición y objeto de la Ley del Seguro Social concepto seguridad social obligatoria",
+            "Ley del Seguro Social 1943 origen antecedentes históricos autor promulgación",
+            "críticas y límites Ley del Seguro Social reforma 1997 privatización pensiones deficiencias"
+          ],
+          "nota": "Las citas aportan fundamento constitucional (art. 123 fracción XXIX) y ejemplos de aplicación (seguro de retiro 1992, seguro de accidentes 1943, facultades del IMSS), pero no ofrecen una definición formal de la Ley del Seguro Social, ni identifican doctrina o autor que la conceptualice, ni presentan crítica o discusión sobre sus límites. Se recomienda una tercera ronda enfocada en definición, historia doctrinal y análisis crítico."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y objeto de la Ley del Seguro Social concepto seguridad social obligatoria",
+            "hits": 4
+          },
+          {
+            "consulta": "Ley del Seguro Social 1943 origen antecedentes históricos autor promulgación",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites Ley del Seguro Social reforma 1997 privatización pensiones deficiencias",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  },
+  "Régimen obligatorio": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición clara y directa de 'régimen obligatorio' (qué es y en qué consiste)",
+            "Fundamento normativo explícito con el listado de sujetos de aseguramiento (art. 12 LSS)",
+            "Enumeración de los seguros que integran el régimen obligatorio (riesgos de trabajo, enfermedades y maternidad, invalidez y vida, retiro, cesantía y vejez, guarderías)",
+            "Diferenciación conceptual sistemática entre régimen obligatorio y régimen voluntario"
+          ],
+          "consultas": [
+            "definición de régimen obligatorio seguridad social artículo 11 LSS ramos de aseguramiento",
+            "sujetos de aseguramiento régimen obligatorio artículo 12 Ley del Seguro Social trabajadores",
+            "diferencia entre régimen obligatorio y régimen voluntario seguridad social características"
+          ],
+          "nota": "Las citas recuperadas giran en torno a la crítica de Briceño Ruiz sobre la incorporación voluntaria de ciertos sujetos al régimen obligatorio (aportando fundamento normativo, autor, ejemplo y crítica), pero no ofrecen una definición conceptual directa del régimen obligatorio ni enumeran los seguros o ramos que lo integran. La ficha requiere una cita que defina qué es el régimen obligatorio y su composición para tener cobertura completa."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de régimen obligatorio seguridad social artículo 11 LSS ramos de aseguramiento",
+            "hits": 4
+          },
+          {
+            "consulta": "sujetos de aseguramiento régimen obligatorio artículo 12 Ley del Seguro Social trabajadores",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia entre régimen obligatorio y régimen voluntario seguridad social características",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 13
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 13,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición precisa y directa de 'régimen obligatorio' en la seguridad social",
+            "Enumeración clara de los sujetos y ramas de seguro que comprende (arts. 11 y 12 LSS)",
+            "Fundamento normativo explícito (base constitucional y legal del carácter obligatorio)"
+          ],
+          "consultas": [
+            "definición régimen obligatorio seguro social sujetos artículo 12 LSS trabajadores",
+            "ramas de aseguramiento comprendidas en el régimen obligatorio del IMSS artículo 11",
+            "carácter obligatorio de la afiliación seguridad social fundamento constitucional artículo 123"
+          ],
+          "nota": "Las citas actuales giran en torno a una crítica doctrinal (Briceño Ruiz) sobre la contradicción entre lo obligatorio y lo voluntario en el art. 13, lo que aporta buena crítica/límite, fundamento normativo y algunos ejemplos de sujetos. Sin embargo, falta una definición formal y directa del concepto, así como la enumeración estructurada de los seguros que integran el régimen obligatorio y su base constitucional. Se recomienda una ronda adicional enfocada en los artículos 11 y 12 LSS y el fundamento constitucional del carácter obligatorio."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición régimen obligatorio seguro social sujetos artículo 12 LSS trabajadores",
+            "hits": 4
+          },
+          {
+            "consulta": "ramas de aseguramiento comprendidas en el régimen obligatorio del IMSS artículo 11",
+            "hits": 4
+          },
+          {
+            "consulta": "carácter obligatorio de la afiliación seguridad social fundamento constitucional artículo 123",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 20
+  },
+  "Régimen voluntario": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición doctrinal más precisa del régimen voluntario que distinga claramente sus características frente al régimen obligatorio",
+            "Fundamento legal explícito (artículo 13 de la Ley del Seguro Social) desarrollado con su alcance normativo",
+            "Crítica o límite conceptual más profundo (la cita p.212 es más operativa/actuarial que crítica doctrinal)"
+          ],
+          "consultas": [
+            "artículo 13 Ley del Seguro Social sujetos de aseguramiento régimen voluntario características",
+            "diferencia régimen voluntario y obligatorio seguridad social incorporación por convenio",
+            "críticas límites régimen voluntario continuación voluntaria seguro obligatorio doctrina"
+          ],
+          "nota": "La ficha cubre nominalmente los cinco elementos con base en una sola fuente (Briceño Ruiz), pero con baja profundidad y similitud (máx. 0.27). La definición es enumerativa (incisos a-c) sin una conceptualización teórica robusta; el fundamento se apoya en el art. 13 pero sin desarrollo normativo completo; la crítica es marginal y centrada en aspectos actuariales. Se recomienda una segunda ronda para robustecer definición, fundamento legal y crítica doctrinal, idealmente con fuentes adicionales que contrasten al autor único."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "artículo 13 Ley del Seguro Social sujetos de aseguramiento régimen voluntario características",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia régimen voluntario y obligatorio seguridad social incorporación por convenio",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas límites régimen voluntario continuación voluntaria seguro obligatorio doctrina",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 14
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 14,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Identificación de un autor doctrinal específico que defina o teorice el régimen voluntario (más allá de la exposición legal de Briceño Ruiz)",
+            "Fundamento normativo explícito completo (artículos de la Ley del Seguro Social que regulan el régimen voluntario y su distinción del obligatorio)",
+            "Desarrollo de los tipos de aseguramiento voluntario (seguro de salud para la familia, continuación voluntaria, incorporación voluntaria al régimen obligatorio)"
+          ],
+          "consultas": [
+            "continuación voluntaria del régimen obligatorio Ley del Seguro Social artículos",
+            "seguro de salud para la familia incorporación voluntaria requisitos y prestaciones",
+            "diferencia doctrinal régimen voluntario y régimen obligatorio seguridad social autores"
+          ],
+          "nota": "Las citas cubren adecuadamente la definición operativa (seguro de salud familiar, seguridad social en el campo, grupos de aseguramiento), el fundamento (art. 13 LSS y convenios) y ejemplos concretos, además de una crítica interesante sobre la ambigüedad terminológica entre 'voluntariamente' y 'régimen obligatorio'. Sin embargo, la ficha depende exclusivamente de una sola fuente (Briceño Ruiz) sin distinguir aportación doctrinal atribuida a un autor concreto, y falta precisar los fundamentos normativos de las modalidades del régimen voluntario. La similitud de todas las citas es baja (<0.27), lo que sugiere buscar pasajes más centrales sobre el concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "continuación voluntaria del régimen obligatorio Ley del Seguro Social artículos",
+            "hits": 4
+          },
+          {
+            "consulta": "seguro de salud para la familia incorporación voluntaria requisitos y prestaciones",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia doctrinal régimen voluntario y régimen obligatorio seguridad social autores",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  },
+  "Seguro facultativo": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Crítica, límites o desventajas del seguro facultativo",
+            "Fundamento legal preciso (artículos de la Ley del Seguro Social aplicables al régimen facultativo)",
+            "Distinción doctrinal clara entre seguro facultativo y continuación voluntaria del régimen obligatorio"
+          ],
+          "consultas": [
+            "límites y desventajas del seguro facultativo en la seguridad social mexicana",
+            "artículos Ley del Seguro Social régimen voluntario y seguro facultativo fundamento legal",
+            "diferencia entre seguro facultativo y continuación voluntaria del régimen obligatorio doctrina"
+          ],
+          "nota": "La ficha cuenta con definición sólida (p. 39), fundamento normativo básico (art. 240), autor identificado (Briceño Ruiz) y ejemplo/aplicación (contratación con familias y baja sin trámite). Falta desarrollar la dimensión crítica: límites, cargas económicas, cobertura restringida o riesgos de selección adversa. También conviene precisar el marco legal exacto y diferenciarlo de figuras afines. Se recomienda una segunda ronda para robustecer la crítica y el fundamento."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "límites y desventajas del seguro facultativo en la seguridad social mexicana",
+            "hits": 4
+          },
+          {
+            "consulta": "artículos Ley del Seguro Social régimen voluntario y seguro facultativo fundamento legal",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia entre seguro facultativo y continuación voluntaria del régimen obligatorio doctrina",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 15
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 15,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Crítica, límite o desventaja del seguro facultativo",
+            "Comparación clara con la continuación voluntaria y el seguro de salud para la familia",
+            "Requisitos y condiciones de contratación (prestaciones incluidas, cuotas, exclusiones)"
+          ],
+          "consultas": [
+            "límites y exclusiones del seguro facultativo IMSS prestaciones no cubiertas",
+            "diferencia entre seguro facultativo y continuación voluntaria régimen obligatorio",
+            "requisitos cuotas y financiamiento del seguro facultativo Ley del Seguro Social"
+          ],
+          "nota": "La ficha cubre bien definición, fundamento legal (arts. 240, 220), autor (Briceño Ruiz) y ejemplo (inscripción de familiares no beneficiarios). Falta desarrollar la crítica o límites del concepto y precisar las condiciones y exclusiones de aseguramiento. Se recomienda una ronda adicional enfocada en desventajas y en la delimitación frente a figuras afines (continuación voluntaria, seguro de salud familiar)."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "límites y exclusiones del seguro facultativo IMSS prestaciones no cubiertas",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia entre seguro facultativo y continuación voluntaria régimen obligatorio",
+            "hits": 4
+          },
+          {
+            "consulta": "requisitos cuotas y financiamiento del seguro facultativo Ley del Seguro Social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 19
+  },
+  "Solidaridad social": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Crítica o límites del principio de solidaridad social (tensiones, deficiencias, cobertura reducida solo a marginados)",
+            "Definición conceptual autónoma robusta de solidaridad social como principio (las citas la definen de forma tangencial o instrumental)",
+            "Fundamento doctrinal o filosófico del principio (más allá de la mención de Cordini) y su relación con la justicia social y la redistribución"
+          ],
+          "consultas": [
+            "solidaridad social principio fundamento doctrinal justicia redistribución seguridad social",
+            "críticas límites solidaridad social cobertura núcleos marginados prestaciones reducidas",
+            "concepto solidaridad social definición autores derecho seguridad social contraprestación"
+          ],
+          "nota": "La ficha cubre razonablemente definición instrumental, fundamento (Cordini), autor y ejemplos (IMSS-Coplamar, ISSFAM/PEMEX), pero las citas presentan baja similitud (todas por debajo de 0.23) y abordan la solidaridad social de manera operativa/histórica más que conceptual. Falta por completo el elemento de crítica o límites, y conviene reforzar una definición conceptual autónoma y su fundamento filosófico. Se recomienda una segunda ronda."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "solidaridad social principio fundamento doctrinal justicia redistribución seguridad social",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas límites solidaridad social cobertura núcleos marginados prestaciones reducidas",
+            "hits": 4
+          },
+          {
+            "consulta": "concepto solidaridad social definición autores derecho seguridad social contraprestación",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 14
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 14,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Fundamento teórico o filosófico del principio de solidaridad social (base doctrinal, no solo operativa)",
+            "Autor o corriente que teorice el concepto (p. ej. Duguit, doctrina solidarista, seguridad social como redistribución)",
+            "Crítica o límites del principio (tensiones con individualismo, sostenibilidad financiera, cobertura limitada a marginados)"
+          ],
+          "consultas": [
+            "fundamento filosófico y doctrinal del principio de solidaridad en la seguridad social Duguit solidarismo",
+            "solidaridad social como principio redistributivo y de justicia social en el derecho de la seguridad social",
+            "críticas y límites del principio de solidaridad social financiamiento cobertura tensiones individualismo"
+          ],
+          "nota": "Las citas actuales solo describen la solidaridad social en su dimensión operativa dentro de la LSS (prestaciones médicas a núcleos marginados, contraprestación reducida) y aportan un ejemplo institucional (ISSFAM/PEMEX, convenio de 1979). Falta el fundamento teórico-doctrinal, la atribución a autores o corrientes solidaristas y una discusión crítica sobre sus límites. Las citas de derechos humanos son tangenciales (baja similitud) y no desarrollan el concepto. Se requiere una ronda adicional dirigida a la base doctrinal y a las críticas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "fundamento filosófico y doctrinal del principio de solidaridad en la seguridad social Duguit solidarismo",
+            "hits": 4
+          },
+          {
+            "consulta": "solidaridad social como principio redistributivo y de justicia social en el derecho de la seguridad social",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del principio de solidaridad social financiamiento cobertura tensiones individualismo",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 19
+  },
+  "Tipología germana (bismarckiana)": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 2,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "modelo bismarckiano seguridad social definición características cotizaciones contributivo",
+            "Otto von Bismarck seguros sociales 1883 origen histórico seguro enfermedad accidentes",
+            "diferencias modelo Bismarck vs Beveridge crítica límites sistema contributivo"
+          ],
+          "nota": "Las citas recuperadas son irrelevantes o marginales para el concepto. La primera aborda obligaciones positivas/negativas de los DESC sin relación con la tipología germana. La segunda solo menciona tangencialmente la 'política bismarckiana' de unificación alemana, no el modelo de seguridad social bismarckiano. No se cubre ningún elemento estructural del concepto (definición del modelo contributivo, fundamento en el trabajo asalariado, autoría de Bismarck, ejemplo de aplicación en los seguros sociales alemanes de 1880, ni crítica/límite). Se requiere una nueva ronda de búsqueda dirigida al modelo bismarckiano de seguridad social."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "modelo bismarckiano seguridad social definición características cotizaciones contributivo",
+            "hits": 4
+          },
+          {
+            "consulta": "Otto von Bismarck seguros sociales 1883 origen histórico seguro enfermedad accidentes",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencias modelo Bismarck vs Beveridge crítica límites sistema contributivo",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 13
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 13,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición precisa del modelo bismarckiano de seguridad social (sistema contributivo basado en cotizaciones vinculadas al empleo)",
+            "Características estructurales del modelo germano frente a otros modelos (Beveridge)",
+            "Crítica o límites del modelo bismarckiano (exclusión de trabajadores informales, dependencia del empleo formal, sostenibilidad)"
+          ],
+          "consultas": [
+            "modelo bismarckiano seguridad social características contributivo cotizaciones definición",
+            "diferencia modelo Bismarck Beveridge seguridad social tipología sistemas",
+            "críticas límites modelo bismarckiano seguridad social exclusión trabajo informal"
+          ],
+          "nota": "Las citas aportan buen contexto histórico sobre el origen bismarckiano (Bismarck, Alemania 1878-1911, leyes de seguro social) que cubre fundamento, autor y ejemplo/aplicación. Sin embargo, falta una definición conceptual explícita de la 'tipología germana' como modelo contributivo, así como su contraste con el modelo Beveridge y la crítica/límites. Las citas de Ibarra Olguín solo tangencialmente tocan el modelo contributivo sin definirlo como bismarckiano. Se recomienda una tercera ronda de búsqueda enfocada en la caracterización conceptual y la evaluación crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "modelo bismarckiano seguridad social características contributivo cotizaciones definición",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia modelo Bismarck Beveridge seguridad social tipología sistemas",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas límites modelo bismarckiano seguridad social exclusión trabajo informal",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 18
+  },
+  "Tipología latina": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "tipología latina notariado función notario latino definición",
+            "sistema notarial latino características fe pública documento autentico",
+            "diferencia notariado latino y notariado anglosajón crítica ventajas"
+          ],
+          "nota": "Ninguna cita recuperada aborda el concepto de 'tipología latina'. Los fragmentos tratan sobre derechos humanos, DESC y constitucionalismo latinoamericano, que no guardan relación con el concepto buscado (probablemente referido al notariado de tipo latino o a una tipología jurídica de tradición romano-germánica). Las similitudes son muy bajas (<0.08), lo que confirma la ausencia de material pertinente. Se requiere nueva búsqueda dirigida al ámbito notarial o de sistemas jurídicos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "tipología latina notariado función notario latino definición",
+            "hits": 4
+          },
+          {
+            "consulta": "sistema notarial latino características fe pública documento autentico",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia notariado latino y notariado anglosajón crítica ventajas",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 16
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 16,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "tipología latina del notariado características definición",
+            "notariado latino función pública fe pública fundamento",
+            "diferencias notariado latino y notariado anglosajón sistemas jurídicos"
+          ],
+          "nota": "Ninguna de las citas recuperadas aborda el concepto de 'tipología latina' (probablemente referido al notariado de tipo latino o a la clasificación de sistemas jurídicos de tradición romano-germánica). Las citas tratan temas inconexos: principio de legalidad, seguridad social, DESC y discapacidad. Las similitudes son muy bajas (<0.09), lo que confirma la ausencia de cobertura. Se requiere reorientar la búsqueda hacia el notariado latino o la familia jurídica romano-germánica según el sentido preciso del concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "tipología latina del notariado características definición",
+            "hits": 4
+          },
+          {
+            "consulta": "notariado latino función pública fe pública fundamento",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencias notariado latino y notariado anglosajón sistemas jurídicos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 26
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 26
+  }
+}
