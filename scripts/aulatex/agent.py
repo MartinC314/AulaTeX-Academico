@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import time
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -53,8 +54,13 @@ class AgentRequest:
     detail_planner_max_scopes: int = 6
     run_monitor: bool = True
     run_optimize: bool = True
+    run_foro_producto: bool = True
+    # Compilacion final con latexmk tras monitor/optimize (garantiza que el .tex
+    # en su estado definitivo produce un PDF actualizado). Activada por defecto.
+    run_final_compile: bool = True
     monitor_max_cycles: int = 100
-    optimize_cycles: int = 3
+    # 0 = modo convergencia (optimiza hasta calidad objetivo, ciclos necesarios).
+    optimize_cycles: int = 0
 
 
 @dataclass
@@ -68,6 +74,7 @@ class AgentRunResult:
     optimize_ok: bool | None = None
     quality_before: float | None = None
     quality_after: float | None = None
+    final_compile_ok: bool | None = None
 
 
 @dataclass(frozen=True)
@@ -297,14 +304,18 @@ class AulaTeXAgent:
         # Post-procesamiento automático para realizar-actividad:
         # 1) monitor -> converger el contrato editorial del .tex (aplica parches reales).
         # 2) optimize -> elevar la calidad del .tex de forma verificada.
-        monitor_ok, optimize_ok, quality_before, quality_after = self._postprocess_activity(
+        monitor_ok, optimize_ok, quality_before, quality_after, final_compile_ok = self._postprocess_activity(
             request, target_ctx, run_dir, report_path
         )
+        # Si la compilación final falló, el resultado global no puede reportar éxito.
+        if final_compile_ok is False:
+            ok = False
 
         return AgentRunResult(
             run_id, run_dir, ok, report_path, manifest_path,
             monitor_ok=monitor_ok, optimize_ok=optimize_ok,
             quality_before=quality_before, quality_after=quality_after,
+            final_compile_ok=final_compile_ok,
         )
 
     def _postprocess_activity(
@@ -313,26 +324,53 @@ class AulaTeXAgent:
         target_ctx: AgentTargetContext,
         run_dir: Path,
         report_path: Path,
-    ) -> tuple[bool | None, bool | None, float | None, float | None]:
-        """Encadena monitor + optimize por defecto tras realizar-actividad.
+    ) -> tuple[bool | None, bool | None, float | None, float | None, bool | None]:
+        """Encadena monitor + optimize + compilación final tras realizar-actividad.
 
         - Solo aplica a la acción realizar-actividad en nivel materia/actividad y
           modo de generación directo (no descendente).
         - El monitor converge el contrato editorial aplicando parches reales.
         - El optimizador eleva la calidad del .tex de forma verificada.
-        Cualquiera de los dos puede desactivarse con run_monitor / run_optimize.
+        - La compilación final con latexmk regenera el PDF sobre el .tex ya
+          modificado por monitor/optimize (paso final por defecto).
+        Cualquiera puede desactivarse con run_monitor / run_optimize /
+        run_final_compile.
         """
         action = request.action.strip().lower()
         if action != "realizar-actividad" or request.level not in {"materia", "actividad"}:
-            return None, None, None, None
+            return None, None, None, None, None
         if target_ctx.generation_mode == "downward":
-            return None, None, None, None
+            return None, None, None, None, None
 
         monitor_ok: bool | None = None
         optimize_ok: bool | None = None
         quality_before: float | None = None
         quality_after: float | None = None
+        final_compile_ok: bool | None = None
         report_lines: list[str] = []
+
+        # 0) Producto FORO: si la actividad es un foro, aplicar el patrón editorial
+        #    maduro (tcolorbox + botón de copia + 3 actos + footnote IA, sin
+        #    metadiscurso) de forma determinista ANTES de monitor/optimize.
+        if request.run_foro_producto:
+            from .foro_producto import ForoProductoRequest, ForoProductoTransformer
+
+            foro_invocation = safe_invoke(
+                ForoProductoTransformer(self.workspace).run,
+                ForoProductoRequest(
+                    target=str(target_ctx.target_path),
+                    activity_number=request.activity_number,
+                    apply=True,
+                ),
+            )
+            if foro_invocation.ok and foro_invocation.result.is_foro:
+                res = foro_invocation.result
+                report_lines.append(
+                    f"- Producto foro: {'APLICADO' if res.applied else 'SIN CAMBIOS'} "
+                    f"({len(res.changes)} cambios)"
+                )
+            elif not foro_invocation.ok:
+                report_lines.append(f"- Producto foro: ERROR ({foro_invocation.error})")
 
         if request.run_monitor:
             monitor_invocation = safe_invoke(
@@ -359,13 +397,15 @@ class AulaTeXAgent:
                 report_lines.append(f"- Monitor: ERROR ({monitor_invocation.error})")
 
         if request.run_optimize:
+            # Por DEFECTO se optimiza hasta CONVERGER a calidad objetivo (cycles=0),
+            # no un número fijo. Si el usuario fija optimize_cycles>0, se respeta.
             optimize_invocation = safe_invoke(
                 self.activity_optimizer.optimize,
                 ActivityOptimizeRequest(
                     target=str(target_ctx.target_path),
                     activity_number=request.activity_number,
                     output=str(run_dir / "post-optimize"),
-                    cycles=max(1, int(request.optimize_cycles)),
+                    cycles=max(0, int(request.optimize_cycles)),
                     engines=self._optimize_engines(request.engines),
                     require_contract_100=True,
                 ),
@@ -384,16 +424,52 @@ class AulaTeXAgent:
                 optimize_ok = False
                 report_lines.append(f"- Optimización: ERROR ({optimize_invocation.error})")
 
+        # 3) Compilación FINAL con latexmk: el monitor y el optimizador modifican
+        #    el .tex; recompilamos su estado definitivo para dejar el PDF al día.
+        #    latexmk-build.ps1 puede devolver rc=1 por advertencias NO fatales
+        #    (p. ej. .toc ausente) aunque el PDF sí se genere; por eso el éxito se
+        #    determina como "rc==0" O "el PDF existe y quedó actualizado".
+        if request.run_final_compile:
+            final_targets = self._select_compile_targets(target_ctx)
+            compiled_any = False
+            all_ok = True
+            for tex in final_targets:
+                started_at = time.time()
+                invocation = safe_invoke(self.workspace.compile_tex, tex, clean_mode="safe")
+                compiled_any = True
+                pdf_path = tex.with_suffix(".pdf")
+                pdf_fresh = pdf_path.exists() and pdf_path.stat().st_mtime >= started_at - 1
+                if invocation.ok:
+                    build = invocation.result
+                    ok = bool(build.ok) or pdf_fresh
+                    log_path = run_dir / f"final-compile-{tex.stem}.log.txt"
+                    log_path.write_text(
+                        (build.stdout or "") + "\n" + (build.stderr or ""), encoding="utf-8"
+                    )
+                else:
+                    ok = pdf_fresh
+                    (run_dir / f"final-compile-{tex.stem}.log.txt").write_text(
+                        invocation.error or "", encoding="utf-8"
+                    )
+                all_ok = all_ok and ok
+                report_lines.append(
+                    f"- Compilación final (latexmk): {self.workspace.relative(tex)} "
+                    f"{'OK' if ok else 'ERROR'}"
+                    + ("" if ok else " (revisar log final-compile-*.log.txt)")
+                )
+            if compiled_any:
+                final_compile_ok = all_ok
+
         if report_lines:
             report_path.write_text(
                 report_path.read_text(encoding="utf-8")
-                + "\n\n## Post-procesamiento automático (monitor + optimización)\n\n"
+                + "\n\n## Post-procesamiento automático (monitor + optimización + compilación final)\n\n"
                 + "\n".join(report_lines)
                 + "\n",
                 encoding="utf-8",
             )
 
-        return monitor_ok, optimize_ok, quality_before, quality_after
+        return monitor_ok, optimize_ok, quality_before, quality_after, final_compile_ok
 
     def _build_prompts(self, request: AgentRequest, context: str) -> list[str]:
         base = (

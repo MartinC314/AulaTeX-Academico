@@ -21,6 +21,7 @@ from .gui import main as gui_main
 from .incremental_detail_planner import DetailPlannerRequest, IncrementalDetailPlanner
 from .intelligent_engine import IntelligentEngine, IntelligentEngineRequest
 from .investigation import InvestigationBuilder, InvestigationRequest
+from .progress import resolve_reporter
 from .llm_bridge import DEFAULT_MAX_TOKENS, DEFAULT_TIMEOUT_SECONDS, LLM_ENGINES, AulaTeXLLMClient
 from .mass_editorial_runner import MassEditorialRunner, MassEditorialRunnerRequest
 from .token_counter import count_text_tokens
@@ -125,8 +126,10 @@ def build_parser() -> argparse.ArgumentParser:
     agent.add_argument("--detail-max-scopes", type=int, default=6)
     agent.add_argument("--no-monitor", action="store_true", help="Disable the automatic post-processing monitor loop after realizar-actividad.")
     agent.add_argument("--no-optimize", action="store_true", help="Disable the automatic post-processing quality optimization after realizar-actividad.")
+    agent.add_argument("--no-foro-producto", action="store_true", help="Disable the automatic FORO product pattern (tcolorbox + copy button + 3-act structure) after realizar-actividad.")
+    agent.add_argument("--no-final-compile", action="store_true", help="Disable the automatic final latexmk compilation after monitor/optimize in realizar-actividad.")
     agent.add_argument("--monitor-max-cycles", type=int, default=100, help="Max cycles for the automatic post-processing monitor loop.")
-    agent.add_argument("--optimize-cycles", type=int, default=3, help="Number of quality optimization cycles after realizar-actividad.")
+    agent.add_argument("--optimize-cycles", type=int, default=0, help="Fixed number of quality optimization cycles after realizar-actividad. Default 0 = converge-to-quality (run until target quality is reached).")
 
     editorial = sub.add_parser("editorial-memory", help="Build persistent editorial memory from a selected scope.")
     editorial.add_argument("--target", default=".")
@@ -211,11 +214,14 @@ def build_parser() -> argparse.ArgumentParser:
     activity_monitor.add_argument("--no-detail-planner", action="store_true")
     activity_monitor.add_argument("--detail-max-scopes", type=int, default=6)
 
-    activity_optimize = sub.add_parser("activity-optimize", help="Run LLM quality-optimization cycles that actually improve the activity TEX after the contract is satisfied.")
+    activity_optimize = sub.add_parser("activity-optimize", help="Run LLM quality-optimization cycles that actually improve the activity TEX. By default it CONVERGES to target quality (100) running as many cycles as needed.")
     activity_optimize.add_argument("--target", required=True)
     activity_optimize.add_argument("--activity", type=int, default=1)
     activity_optimize.add_argument("--output", default="")
-    activity_optimize.add_argument("--cycles", type=int, default=3)
+    activity_optimize.add_argument("--cycles", type=int, default=0, help="Fixed number of cycles. Default 0 = converge-to-quality mode (run until target quality, stall or max-cycles).")
+    activity_optimize.add_argument("--target-quality", type=float, default=100.0, help="Quality score to converge to (default 100).")
+    activity_optimize.add_argument("--max-cycles", type=int, default=40, help="Safety cap on cycles in converge mode (default 40).")
+    activity_optimize.add_argument("--stall-limit", type=int, default=6, help="Stop after this many consecutive cycles without accepted improvement (default 6).")
     activity_optimize.add_argument("--engine", action="append", choices=LLM_ENGINES)
     activity_optimize.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
     activity_optimize.add_argument("--no-backup", action="store_true")
@@ -228,6 +234,12 @@ def build_parser() -> argparse.ArgumentParser:
     activity_revise.add_argument("--apply", action="store_true")
     activity_revise.add_argument("--no-backup", action="store_true")
     activity_revise.add_argument("--workflow-backend", default="langgraph", choices=("langgraph", "classic"))
+
+    foro_producto = sub.add_parser("foro-producto", help="Apply the mature FORO product pattern (tcolorbox + copy button + 3-act structure, no metadiscourse, AI footnote) to a foro activity TEX.")
+    foro_producto.add_argument("--target", required=True)
+    foro_producto.add_argument("--activity", type=int, default=1)
+    foro_producto.add_argument("--output", default="")
+    foro_producto.add_argument("--apply", action="store_true", help="Write changes (default is a dry-run simulation).")
 
     compilation_repair = sub.add_parser("compilation-repair", help="Attempt bounded compilation repair for an activity TEX.")
     compilation_repair.add_argument("--target", required=True)
@@ -266,6 +278,24 @@ def build_parser() -> argparse.ArgumentParser:
     intelligent_engine.add_argument("--no-reports", action="store_true")
     intelligent_engine.add_argument("--no-presentations", action="store_true")
     intelligent_engine.add_argument("--engine", action="append", choices=LLM_ENGINES)
+    intelligent_engine.add_argument(
+        "--execute",
+        action="store_true",
+        help="Ejecutar las acciones recomendadas (no solo planificar), emitiendo progreso observable.",
+    )
+    intelligent_engine.add_argument(
+        "--action",
+        action="append",
+        choices=("realizar-actividad", "construir-memoria-editorial"),
+        help="Acciones a ejecutar por objetivo cuando se usa --execute (repetible). Por defecto: memoria + actividad.",
+    )
+    intelligent_engine.add_argument("--monitor-max-cycles", type=int, default=100)
+    intelligent_engine.add_argument("--optimize-cycles", type=int, default=3)
+    intelligent_engine.add_argument(
+        "--progress",
+        action="store_true",
+        help="Emitir marcadores ::progress::/::notice::/::result:: a stderr para el monitor visual.",
+    )
 
     compile_cmd = sub.add_parser("compile", help="Compile a TeX file with the shared latexmk wrapper.")
     compile_cmd.add_argument("tex")
@@ -365,6 +395,8 @@ def main(argv: list[str] | None = None) -> None:
             detail_planner_max_scopes=args.detail_max_scopes,
             run_monitor=not bool(args.no_monitor),
             run_optimize=not bool(args.no_optimize),
+            run_foro_producto=not bool(args.no_foro_producto),
+            run_final_compile=not bool(args.no_final_compile),
             monitor_max_cycles=args.monitor_max_cycles,
             optimize_cycles=args.optimize_cycles,
         )
@@ -377,6 +409,7 @@ def main(argv: list[str] | None = None) -> None:
             "optimize_ok": result.optimize_ok,
             "quality_before": result.quality_before,
             "quality_after": result.quality_after,
+            "final_compile_ok": result.final_compile_ok,
         }, ensure_ascii=False, indent=2))
         return
 
@@ -716,6 +749,9 @@ def main(argv: list[str] | None = None) -> None:
                 activity_number=args.activity,
                 output=args.output,
                 cycles=args.cycles,
+                target_quality=args.target_quality,
+                max_cycles=args.max_cycles,
+                stall_limit=args.stall_limit,
                 engines=tuple(args.engine or ["GPT-5.6-Luna", "GPT-5.6-Terra"]),
                 max_tokens=args.max_tokens,
                 backup=not bool(args.no_backup),
@@ -729,9 +765,41 @@ def main(argv: list[str] | None = None) -> None:
                     "run_dir": str(result.run_dir),
                     "manifest": str(result.manifest_path),
                     "report": str(result.report_path),
+                    "stop_mode": ("fixed-cycles" if int(args.cycles) > 0 else "converge-to-quality"),
+                    "target_quality": args.target_quality,
                     "applied_cycles": result.applied_cycles,
                     "quality_before": result.quality_before,
                     "quality_after": result.quality_after,
+                    "converged": result.quality_after >= args.target_quality,
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    if args.command == "foro-producto":
+        from .foro_producto import ForoProductoRequest, ForoProductoTransformer
+
+        result = ForoProductoTransformer(AulaTeXWorkspace()).run(
+            ForoProductoRequest(
+                target=args.target,
+                activity_number=args.activity,
+                apply=bool(args.apply),
+                output=args.output,
+            )
+        )
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "applied": result.applied,
+                    "is_foro": result.is_foro,
+                    "tex": str(result.tex_path) if result.tex_path else "",
+                    "txt": str(result.txt_path) if result.txt_path else "",
+                    "reason": result.reason,
+                    "changes": result.changes,
+                    "warnings": result.warnings,
                 },
                 ensure_ascii=False,
                 indent=2,
@@ -882,6 +950,8 @@ def main(argv: list[str] | None = None) -> None:
         return
 
     if args.command == "intelligent-engine":
+        reporter = resolve_reporter(bool(getattr(args, "progress", False)))
+        default_actions = IntelligentEngineRequest().actions
         result = IntelligentEngine(AulaTeXWorkspace()).run(
             IntelligentEngineRequest(
                 target=args.target,
@@ -893,7 +963,12 @@ def main(argv: list[str] | None = None) -> None:
                 include_reports=not bool(args.no_reports),
                 include_presentations=not bool(args.no_presentations),
                 engines=tuple(args.engine or IntelligentEngineRequest().engines),
-            )
+                execute=bool(getattr(args, "execute", False)),
+                actions=tuple(args.action) if getattr(args, "action", None) else default_actions,
+                monitor_max_cycles=int(getattr(args, "monitor_max_cycles", 100)),
+                optimize_cycles=int(getattr(args, "optimize_cycles", 3)),
+            ),
+            reporter=reporter,
         )
         print(
             json.dumps(
@@ -903,6 +978,9 @@ def main(argv: list[str] | None = None) -> None:
                     "run_dir": str(result.run_dir),
                     "manifest": str(result.manifest_path),
                     "report": str(result.report_path),
+                    "executed": result.executed,
+                    "execution_ok": result.execution_ok,
+                    "execution_summary": result.execution_summary,
                 },
                 ensure_ascii=False,
                 indent=2,

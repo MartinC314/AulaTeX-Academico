@@ -1,12 +1,17 @@
 from __future__ import annotations
 
 import json
-from dataclasses import asdict, dataclass
+import time
+from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any, Literal
 
 from .activity_contract import DIDACTIC_TECHNIQUE_CONTRACTS, REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT
+from .progress import NullProgressReporter, ProgressReporter
 from .workspace import AulaTeXWorkspace
+
+# Acciones que el ejecutor del motor inteligente sabe correr en proceso.
+_SUPPORTED_EXEC_ACTIONS = ("construir-memoria-editorial", "realizar-actividad")
 
 
 @dataclass(frozen=True)
@@ -28,6 +33,13 @@ class IntelligentEngineRequest:
         "GPT-Pro",
         "Claude Foundry",
     )
+    # Ejecución observable: si es True el motor no solo planifica, sino que
+    # ejecuta las acciones recomendadas (realizar-actividad, memoria editorial)
+    # emitiendo progreso. Ver IntelligentEngine.execute().
+    execute: bool = False
+    actions: tuple[str, ...] = ("realizar-actividad", "construir-memoria-editorial")
+    monitor_max_cycles: int = 100
+    optimize_cycles: int = 3
 
 
 @dataclass(frozen=True)
@@ -37,6 +49,9 @@ class IntelligentEngineResult:
     run_dir: Path
     manifest_path: Path
     report_path: Path
+    executed: bool = False
+    execution_ok: bool | None = None
+    execution_summary: dict[str, Any] = field(default_factory=dict)
 
 
 class IntelligentEngine:
@@ -52,7 +67,13 @@ class IntelligentEngine:
         self.root = self.workspace.temp_root / "intelligent-engine" / "runs"
         self.root.mkdir(parents=True, exist_ok=True)
 
-    def run(self, request: IntelligentEngineRequest) -> IntelligentEngineResult:
+    def run(
+        self,
+        request: IntelligentEngineRequest,
+        reporter: ProgressReporter | None = None,
+    ) -> IntelligentEngineResult:
+        reporter = reporter or NullProgressReporter()
+        reporter.progress(2, "Resolviendo alcance del motor inteligente...")
         run_id = f"{self.workspace.timestamp()}-intelligent-engine"
         run_dir = self._resolve_run_dir(request, run_id)
         run_dir.mkdir(parents=True, exist_ok=True)
@@ -63,10 +84,12 @@ class IntelligentEngine:
         )
         target_root = self.workspace.resolve_target(request.target)
         target_root_relative = self.workspace.relative(target_root)
+        reporter.progress(6, "Inventariando documentos LaTeX...")
         inventory = self._collect_tex_inventory(request, target_root)
         audit_payload = self._load_audit_payload(request.audit_path)
         issues_by_target = self._group_audit_issues(audit_payload, target_root_relative)
         audit_status = self._audit_status(request.audit_path, audit_payload, issues_by_target)
+        reporter.progress(10, f"Priorizando objetivos ({len(inventory)} .tex detectados)...")
         plans = self._build_target_plans(request, inventory, issues_by_target)
 
         manifest = {
@@ -101,14 +124,274 @@ class IntelligentEngine:
         report_path = run_dir / "report.md"
         manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
         report_path.write_text(self._build_markdown_report(manifest), encoding="utf-8")
+        reporter.progress(15, f"Plan listo: {len(plans)} objetivo(s) priorizado(s).")
+
+        executed = False
+        execution_ok: bool | None = None
+        execution_summary: dict[str, Any] = {}
+        if request.execute:
+            executed = True
+            execution_ok, execution_summary = self._execute_plan(
+                request, plans, run_dir, reporter
+            )
+            manifest["execution"] = execution_summary
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+            reporter.result(
+                "success" if execution_ok else "error",
+                "Ejecución del motor inteligente completada."
+                if execution_ok
+                else "Ejecución del motor inteligente con incidencias.",
+            )
+        else:
+            reporter.result("success", "Plan del motor inteligente generado (sin ejecutar).")
 
         return IntelligentEngineResult(
-            ok=True,
+            ok=True if not executed else bool(execution_ok),
             run_id=run_id,
             run_dir=run_dir,
             manifest_path=manifest_path,
             report_path=report_path,
+            executed=executed,
+            execution_ok=execution_ok,
+            execution_summary=execution_summary,
         )
+
+    # ------------------------------------------------------------------
+    # Ejecución observable del plan (no solo planificación)
+    # ------------------------------------------------------------------
+    def _execute_plan(
+        self,
+        request: IntelligentEngineRequest,
+        plans: list[dict[str, Any]],
+        run_dir: Path,
+        reporter: ProgressReporter,
+    ) -> tuple[bool, dict[str, Any]]:
+        """Ejecuta las acciones seleccionadas sobre cada objetivo priorizado.
+
+        Acciones soportadas (``request.actions``):
+        * ``realizar-actividad`` → AulaTeXAgent con post-proceso monitor+optimize.
+        * ``construir-memoria-editorial`` → EditorialMemoryBuilder sobre el scope.
+
+        Cada objetivo consume una fracción homogénea del rango 15→100 % para que
+        el lanzador pinte una barra global coherente. Se emiten ``::stage::`` por
+        objetivo y ``::notice::``/``::result::`` por acción.
+        """
+
+        actionable = [
+            plan
+            for plan in plans
+            if int(plan.get("activity_number") or 0) > 0
+            and str(plan.get("tex_kind")) in {"report", "presentation"}
+        ]
+        summary: dict[str, Any] = {
+            "requested_actions": list(request.actions),
+            "planned_targets": len(plans),
+            "actionable_targets": len(actionable),
+            "targets": [],
+            "ok": True,
+        }
+
+        if not actionable:
+            reporter.notice("No hay objetivos con actividad ejecutable en el plan.")
+            summary["ok"] = True
+            return True, summary
+
+        base, span = 15.0, 85.0
+        total = len(actionable)
+        overall_ok = True
+
+        for index, plan in enumerate(actionable):
+            target = str(plan["target"])
+            directory = str(plan["directory"])
+            activity = int(plan.get("activity_number") or 0)
+            stage_id = f"target-{index + 1:02d}"
+            reporter.stage(stage_id, f"{Path(directory).name} · Actividad {activity}")
+            reporter.progress(
+                base + span * (index / total),
+                f"[{index + 1}/{total}] {Path(directory).name} · Actividad {activity}",
+            )
+
+            target_record: dict[str, Any] = {
+                "target": target,
+                "directory": directory,
+                "activity_number": activity,
+                "actions": [],
+                "ok": True,
+            }
+
+            action_slots = [a for a in request.actions if a in _SUPPORTED_EXEC_ACTIONS]
+            action_span = span / total / max(1, len(action_slots))
+
+            for action_pos, action_id in enumerate(action_slots):
+                sub_base = base + span * (index / total) + action_span * action_pos
+                action_ok, action_detail = self._run_single_action(
+                    action_id,
+                    request,
+                    target=target,
+                    directory=directory,
+                    activity=activity,
+                    run_dir=run_dir / stage_id,
+                    reporter=reporter,
+                    progress_base=sub_base,
+                    progress_span=action_span,
+                )
+                target_record["actions"].append(action_detail)
+                if not action_ok:
+                    target_record["ok"] = False
+                    overall_ok = False
+
+            summary["targets"].append(target_record)
+            reporter.result(
+                "success" if target_record["ok"] else "warning",
+                f"{Path(directory).name} · Actividad {activity} "
+                f"({'OK' if target_record['ok'] else 'con incidencias'})",
+            )
+
+        reporter.progress(100, "Motor inteligente: ejecución de objetivos finalizada.")
+        summary["ok"] = overall_ok
+        return overall_ok, summary
+
+    def _run_single_action(
+        self,
+        action_id: str,
+        request: IntelligentEngineRequest,
+        *,
+        target: str,
+        directory: str,
+        activity: int,
+        run_dir: Path,
+        reporter: ProgressReporter,
+        progress_base: float,
+        progress_span: float,
+    ) -> tuple[bool, dict[str, Any]]:
+        run_dir.mkdir(parents=True, exist_ok=True)
+        started = time.time()
+        reporter.progress(progress_base, f"→ {action_id}: {Path(directory).name} A{activity}")
+
+        try:
+            if action_id == "construir-memoria-editorial":
+                ok, extra = self._exec_editorial_memory(
+                    request, directory, activity, run_dir, reporter, progress_base, progress_span
+                )
+            elif action_id == "realizar-actividad":
+                ok, extra = self._exec_realizar_actividad(
+                    request, target, directory, activity, run_dir, reporter, progress_base, progress_span
+                )
+            else:
+                reporter.notice(f"Acción no soportada por el ejecutor: {action_id}")
+                return True, {"action": action_id, "ok": True, "skipped": True}
+        except Exception as error:  # noqa: BLE001 - reportar sin abortar la campaña
+            reporter.result("error", f"{action_id} falló: {error}")
+            return False, {
+                "action": action_id,
+                "ok": False,
+                "error": str(error),
+                "elapsed_s": round(time.time() - started, 1),
+            }
+
+        elapsed = round(time.time() - started, 1)
+        reporter.result(
+            "success" if ok else "warning",
+            f"{action_id} {'OK' if ok else 'con incidencias'} ({elapsed}s)",
+        )
+        return ok, {"action": action_id, "ok": ok, "elapsed_s": elapsed, **extra}
+
+    def _exec_editorial_memory(
+        self,
+        request: IntelligentEngineRequest,
+        directory: str,
+        activity: int,
+        run_dir: Path,
+        reporter: ProgressReporter,
+        progress_base: float,
+        progress_span: float,
+    ) -> tuple[bool, dict[str, Any]]:
+        from .editorial_memory import (
+            EditorialMemoryBuilder,
+            EditorialMemoryEvent,
+            EditorialMemoryRequest,
+        )
+
+        scope = self.workspace.find_scope_for_target(directory, activity_number=activity or None)
+        if scope is None:
+            reporter.notice(f"Sin scope editorial resoluble para {Path(directory).name}; se omite memoria.")
+            return True, {"skipped": True, "reason": "scope-no-resuelto"}
+
+        reporter.notice(f"Construyendo memoria editorial (materia) para {scope.label}...")
+        builder = EditorialMemoryBuilder(self.workspace)
+
+        def _on_event(event: EditorialMemoryEvent) -> None:
+            if event.total:
+                frac = min(1.0, event.current / max(1, event.total))
+                reporter.progress(
+                    progress_base + progress_span * frac,
+                    f"Memoria editorial: {event.message}",
+                )
+            if event.kind in {"scope", "error", "start"}:
+                reporter.notice(event.message)
+
+        result = builder.build(
+            EditorialMemoryRequest(
+                source_scope_key=scope.key,
+                build_level="materia",
+                propagation_mode="local",
+                engines=tuple(request.engines),
+            ),
+            progress=_on_event,
+        )
+        reporter.progress(progress_base + progress_span * 0.95, "Memoria editorial persistida.")
+        return bool(getattr(result, "ok", False)), {
+            "scope_key": scope.key,
+            "built_scopes": list(getattr(result, "built_scopes", ())),
+            "run_dir": self.workspace.relative(getattr(result, "run_dir", run_dir)),
+        }
+
+    def _exec_realizar_actividad(
+        self,
+        request: IntelligentEngineRequest,
+        target: str,
+        directory: str,
+        activity: int,
+        run_dir: Path,
+        reporter: ProgressReporter,
+        progress_base: float,
+        progress_span: float,
+    ) -> tuple[bool, dict[str, Any]]:
+        from .agent import AgentRequest, AulaTeXAgent
+
+        reporter.notice(
+            f"realizar-actividad A{activity} (incluye detail-planner + monitor + optimize)..."
+        )
+        reporter.progress(progress_base + progress_span * 0.15, "Redactando y evaluando actividad...")
+        agent = AulaTeXAgent(self.workspace)
+        result = agent.run(
+            AgentRequest(
+                target=directory,
+                level="actividad",
+                action="realizar-actividad",
+                activity_number=activity,
+                engines=list(request.engines),
+                run_monitor=True,
+                run_optimize=True,
+                monitor_max_cycles=int(request.monitor_max_cycles),
+                optimize_cycles=int(request.optimize_cycles),
+            )
+        )
+        reporter.progress(
+            progress_base + progress_span * 0.9,
+            f"Actividad terminada (monitor={result.monitor_ok}, optimize={result.optimize_ok}, "
+            f"compile={getattr(result, 'final_compile_ok', None)}).",
+        )
+        return bool(getattr(result, "ok", False)), {
+            "run_dir": self.workspace.relative(getattr(result, "run_dir", run_dir)),
+            "monitor_ok": getattr(result, "monitor_ok", None),
+            "optimize_ok": getattr(result, "optimize_ok", None),
+            "quality_before": getattr(result, "quality_before", None),
+            "quality_after": getattr(result, "quality_after", None),
+            "final_compile_ok": getattr(result, "final_compile_ok", None),
+        }
 
     def _resolve_run_dir(self, request: IntelligentEngineRequest, run_id: str) -> Path:
         if request.output:

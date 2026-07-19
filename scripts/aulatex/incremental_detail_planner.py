@@ -239,9 +239,17 @@ class IncrementalDetailPlanner:
                 "required_visible_elements": list(technique_contract.get("required_visible_elements", ())),
                 "preservation_rule": technique_contract.get("preservation_rule", "Conservar la forma visible solicitada por la consigna."),
                 "structure_rule": technique_contract.get("structure_rule", ""),
+                "three_act_gravity_rule": technique_contract.get("three_act_gravity_rule", ""),
                 "layout_rule": technique_contract.get("layout_rule", ""),
                 "no_gap_rule": technique_contract.get("no_gap_rule", ""),
                 "closure_rule": technique_contract.get("closure_rule", ""),
+            },
+            "structure_contract": {
+                "three_part_structure": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["quality_gates"]["three_part_structure"],
+                "development_section": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["quality_gates"]["development_section"],
+                "product_centric_gravity": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["quality_gates"]["product_centric_gravity"],
+                "introduction": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["quality_gates"]["introduction"],
+                "conclusion": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["quality_gates"]["conclusion"],
             },
             "layout_contract": {
                 "no_gap_before_visual_deliverable": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["no_gap_before_visual_deliverable"],
@@ -339,13 +347,22 @@ class IncrementalDetailPlanner:
             "reference_growth",
             "content",
             "visible_style",
+            "three_part_structure",
             "introduction",
             "development_section",
+            "product_centric_gravity",
             "conclusion",
             "compile",
         )
         lines = [str(quality_gates[key]) for key in ordered_keys if key in quality_gates]
-        for key in ("avoid_metadiscourse", "fold_context_into_introduction", "fold_analysis_into_conclusion"):
+        for key in (
+            "avoid_metadiscourse",
+            "fold_context_into_introduction",
+            "three_part_body",
+            "development_title_cosmetic",
+            "product_centric_development",
+            "fold_analysis_into_conclusion",
+        ):
             if key in visible_rules:
                 lines.append(str(visible_rules[key]))
         for key in ("no_gap_before_visual_deliverable", "landscape_single_page", "conclusion_single_page"):

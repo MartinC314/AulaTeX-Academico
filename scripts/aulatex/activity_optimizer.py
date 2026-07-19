@@ -34,7 +34,14 @@ class ActivityOptimizeRequest:
     target: str
     activity_number: int = 1
     output: str = ""
-    cycles: int = 3
+    # Modo de parada. Por DEFECTO se optimiza hasta CONVERGER a target_quality
+    # (no un número fijo de ciclos): se ejecutan los ciclos que sean necesarios
+    # hasta alcanzar la calidad objetivo, estancarse o llegar al tope de seguridad.
+    # Si el usuario fija cycles>0 explícitamente, se respeta ese número exacto.
+    cycles: int = 0
+    target_quality: float = 100.0
+    max_cycles: int = 40
+    stall_limit: int = 6
     engines: tuple[str, ...] = ("GPT-5.6-Luna", "GPT-5.6-Terra")
     max_tokens: int = DEFAULT_MAX_TOKENS
     backup: bool = True
@@ -109,7 +116,26 @@ class ActivityOptimizer:
         cycles: list[CycleRecord] = []
         engines = request.engines or ("GPT-5.6-Luna", "GPT-5.6-Terra")
 
-        for index in range(1, max(1, int(request.cycles)) + 1):
+        # Modo de parada:
+        #  - fixed_cycles (cycles>0): número exacto de ciclos solicitado.
+        #  - convergencia (cycles<=0, por DEFECTO): iterar hasta que la calidad
+        #    alcance target_quality, se estanque (stall_limit ciclos consecutivos
+        #    sin mejora aceptada) o se llegue al tope de seguridad max_cycles.
+        fixed_cycles = int(request.cycles) if int(request.cycles) > 0 else 0
+        target_quality = float(request.target_quality)
+        hard_cap = fixed_cycles if fixed_cycles > 0 else max(1, int(request.max_cycles))
+        stall_limit = max(1, int(request.stall_limit))
+        stall = 0
+
+        index = 0
+        while index < hard_cap:
+            # Parada por convergencia (solo en modo convergencia).
+            if fixed_cycles == 0:
+                if self._quality_score(current_text) >= target_quality:
+                    break
+                if stall >= stall_limit:
+                    break
+            index += 1
             engine = engines[(index - 1) % len(engines)]
             cycle_dir = run_dir / f"cycle-{index:02d}"
             cycle_dir.mkdir(parents=True, exist_ok=True)
@@ -118,12 +144,14 @@ class ActivityOptimizer:
             proposal = self._request_improvement(engine, current_text, rubric, request, cycle_dir)
 
             if proposal is None:
+                stall += 1
                 cycles.append(CycleRecord(index, engine, False, "El motor no devolvió una propuesta aplicable.",
                                           quality_before, quality_before, contract_current, contract_current))
                 continue
 
             candidate_text, kind = self._apply_proposal(current_text, proposal)
             if candidate_text is None:
+                stall += 1
                 cycles.append(CycleRecord(index, engine, False,
                                           "El bloque original propuesto no se encontró textualmente en el TEX.",
                                           quality_before, quality_before, contract_current, contract_current,
@@ -148,12 +176,14 @@ class ActivityOptimizer:
                 diff = abs(len(candidate_text) - len(current_text))
                 current_text = candidate_text
                 contract_current = contract_after
+                stall = 0  # hubo mejora aceptada: se reinicia el contador de estancamiento
                 cycles.append(CycleRecord(index, engine, True, "Mejora aplicada y verificada.",
                                           quality_before, quality_after, contract_current, contract_after,
                                           improvement_kind=kind, diff_chars=diff))
             else:
                 # Revertir el candidato.
                 tex_path.write_text(current_text, encoding="utf-8")
+                stall += 1  # ciclo sin mejora: acerca la parada por estancamiento
                 reason = self._reject_reason(compile_ok, contract_after, contract_current, quality_after, quality_before, request)
                 cycles.append(CycleRecord(index, engine, False, reason,
                                           quality_before, quality_after, contract_current, contract_after,
@@ -402,7 +432,11 @@ class ActivityOptimizer:
             "kind": "activity-optimize",
             "target": self.workspace.relative(self.workspace.resolve_target(request.target)),
             "activity_number": int(request.activity_number),
+            "stop_mode": ("fixed-cycles" if int(request.cycles) > 0 else "converge-to-quality"),
             "requested_cycles": int(request.cycles),
+            "target_quality": float(request.target_quality),
+            "max_cycles": int(request.max_cycles),
+            "converged": bool(quality_after >= float(request.target_quality)),
             "engines": list(request.engines),
             "ok": bool(ok),
             "note": note,
