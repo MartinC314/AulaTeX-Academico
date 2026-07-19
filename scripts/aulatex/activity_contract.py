@@ -373,8 +373,26 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
             "no las envueltas). El contenido del bloque debe ser SELECCIONABLE Y COPIABLE en el PDF (evitar literate/mapeos de caracteres que rompan el copiado; preferir fuente con "
             "soporte de copia como \\ttfamily estándar o inputenc utf8 con extendedchars)."
         ),
+        "apa_citation_rule": (
+            "REGLA HOMOGÉNEA PARA TODO FORO: la participación publicada DEBE integrar al menos UNA cita TEXTUAL (entrecomillada) de una fuente formal, con su "
+            "referencia APA 7 dentro del propio bloque del foro. La cita textual va incrustada de forma orgánica en la respuesta que corresponda —no como 'ejemplo de cita' ni "
+            "como metadiscurso— con el formato (Apellido, Año, p.~N) inmediatamente después de las comillas de cierre. Al final del bloque del foro, tras el cierre y la firma, se "
+            "reproduce un apartado titulado 'Referencia' (o 'Referencias' si son varias) con sangría francesa (\\hangindent), tal como se publicaría en el foro. "
+            "COBERTURA COMPLETA: el apartado de referencias del forobox debe listar TODAS las fuentes citadas dentro de ESE forobox (cada \\citep{...} y cada cita textual), no solo la "
+            "que aparece en formato textual; una sola cita textual es suficiente para el requisito de 'cita textual', pero toda fuente mencionada debe tener su entrada APA 7 en el "
+            "apartado de referencias, ordenada alfabéticamente. Cada forobox (participación y, si existe, retroalimentación) lleva su PROPIO apartado de referencias con las fuentes que "
+            "cita ese bloque. Esta cita+referencias forma parte de la reproducción literal de lo publicado y es independiente de la bibliografía general del documento; puede o no tener "
+            "entrada .bib. PROHIBIDO usar un ítem del tipo 'Ejemplo de cita en formato APA' como reactivo de la lista: la cita se usa, no se enuncia."
+        ),
+        "feedback_block_rule": (
+            "Cuando el foro pida además retroalimentación a la participación de otra persona, esa retroalimentación publicada también se materializa en su PROPIO forobox "
+            "(caja del foro), separado del forobox de la participación propia, para reflejar que es contenido publicado en el hilo. Antes del forobox de retroalimentación, un breve "
+            "párrafo en prosa presenta —sin nombre, por privacidad académica— la idea a la que se responde. Dentro del forobox de retroalimentación se cierra con una pregunta dirigida "
+            "a quien participó."
+        ),
         "closure_rule": (
             "La conclusión integra síntesis, análisis propio y postura personal (posición, razón y consecuencia); no crear secciones visibles separadas de análisis o postura. "
+            "La conclusión inicia SIEMPRE con \\clearpage inmediatamente antes de la \\section, de modo que arranque en una PÁGINA NUEVA por sí sola y ocupe preferentemente una sola página, sin quedar pegada al bloque de participación del foro. "
             "La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión, nunca como \\section."
         ),
     },

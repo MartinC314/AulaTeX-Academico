@@ -97,6 +97,11 @@ class ActivityOptimizer:
             return self._finalize(request, run_id, run_dir, [], 0.0, 0.0, None, ok=False,
                                   note="No se encontró el TEX de la actividad.")
 
+        # Base conceptual: cargar conceptos del extractor (si existen) para puntuar
+        # su cobertura. Si faltan y la base conceptual del .tex es escasa, se intenta
+        # correr el extractor en modo local para materializar conceptos.
+        self._current_concepts = self._load_or_build_concepts(request, tex_path)
+
         contract_before = float((evaluation.get("contract") or {}).get("score", 0.0))
         if request.require_contract_100 and contract_before < 100.0:
             return self._finalize(request, run_id, run_dir, [], 0.0, 0.0, tex_path, ok=False,
@@ -224,45 +229,284 @@ class ActivityOptimizer:
     # ---------------------------------------------------------------- calidad
 
     def _quality_score(self, text: str) -> float:
-        """Score de calidad editorial verificable (0-100), independiente del LLM.
+        """Score de calidad editorial verificable (0-100), independiente del LLM."""
+        concepts = getattr(self, "_current_concepts", None)
+        return round(sum(self._quality_breakdown(text, concepts).values()), 2)
 
-        Mide señales objetivas de rigor y densidad argumentativa del .tex real.
+    def _quality_breakdown(self, text: str, concepts: list[str] | None = None) -> dict[str, float]:
+        """Desglose por componente del score de calidad (cada uno con su tope).
+
+        Filosofía editorial: PREMIAR prosa bien estructurada en subsecciones
+        TEMÁTICAS del desarrollo y una BASE CONCEPTUAL suficiente que justifique el
+        producto; PENALIZAR el exceso de listas y los títulos-etiqueta ('Marco
+        conceptual', 'Desarrollo'). Topes (suman 100): citas 20, estructura 20,
+        base_conceptual 15, listas 8, conectores 12, extension 10, integridad 15.
         """
         body = self._strip_comments(text)
-        score = 0.0
 
-        # Citas visibles (densidad): hasta 25 pts.
+        # Citas visibles (densidad): 20 pts con 5 citas.
         cites = len(re.findall(r"\\cite[tp]?\*?(?:\[[^\]]*\])*\{", body))
-        score += min(25.0, cites * 5.0)
+        c_cites = min(20.0, cites * 4.0)
 
-        # Estructura: secciones y subsecciones (hasta 15 pts).
+        # Estructura: secciones (10) + subsecciones TEMÁTICAS del desarrollo (10) = 20 pts.
+        # SOLO cuentan subsecciones del acto de Desarrollo (intro/conclusión en prosa).
+        # Se PENALIZA usar títulos-etiqueta ('Marco conceptual', 'Desarrollo',
+        # 'Metodología', 'Participación publicada'): restan porque no nombran el tema.
         sections = len(re.findall(r"\\section\{", body))
-        subsections = len(re.findall(r"\\subsection\*?\{", body))
-        score += min(10.0, sections * 2.0) + min(5.0, subsections * 1.5)
+        dev_subsections = self._count_development_subsections(body)
+        c_structure = min(10.0, sections * 3.4) + min(10.0, dev_subsections * 5.0)
+        label_titles = re.findall(
+            r"\\(?:sub)?section\*?\{\s*(marco conceptual|desarrollo|metodolog[íi]a[^}]*|"
+            r"participaci[óo]n publicada[^}]*|lectura e interpretaci[óo]n)\s*\}",
+            body, re.IGNORECASE)
+        c_structure = max(0.0, c_structure - len(label_titles) * 3.0)
 
-        # Estructuras enumeradas/listas que ordenan el argumento (hasta 15 pts).
+        # BASE CONCEPTUAL (15 pts): suficiencia de conceptos que justifican el producto.
+        c_concept = self._concept_base_score(body, concepts)
+
+        # Balance prosa/listas: 8 pts. PREMIA 1 lista (foro), PENALIZA exceso.
         enums = len(re.findall(r"\\begin\{(enumerate|itemize)\}", body))
-        score += min(15.0, enums * 5.0)
+        if enums == 0:
+            c_enums = 6.0
+        elif enums == 1:
+            c_enums = 8.0
+        elif enums == 2:
+            c_enums = 6.0
+        else:
+            c_enums = max(0.0, 6.0 - (enums - 2) * 3.0)
 
-        # Densidad argumentativa: conectores de razonamiento (hasta 15 pts).
+        # Densidad argumentativa: conectores de razonamiento: 12 pts (~5 conectores).
         connectors = len(re.findall(
             r"\b(por tanto|por ello|en consecuencia|sin embargo|no obstante|es decir|"
-            r"en cambio|por el contrario|de ese modo|así)\b",
+            r"en cambio|por el contrario|de ese modo|as[íi]|adem[áa]s|dado que|puesto que|"
+            r"en efecto|por consiguiente)\b",
             body, re.IGNORECASE))
-        score += min(15.0, connectors * 2.0)
+        c_connectors = min(12.0, connectors * 2.4)
 
-        # Extensión sustantiva del cuerpo (hasta 15 pts): palabras fuera de preámbulo.
+        # Extensión sustantiva del cuerpo: 10 pts con ~1000 palabras.
         words = len(re.findall(r"\b\w+\b", body))
-        score += min(15.0, words / 120.0)
+        c_extension = min(10.0, words / 100.0)
 
-        # Marcado de integridad / postura propia (hasta 15 pts).
+        # Integridad / postura propia: 15 pts (~4 marcadores).
         integrity = len(re.findall(
-            r"\b(desde mi perspectiva|considero|sostengo|reflexión propia|"
-            r"declaración de uso|inteligencia artificial|no invent|supuesto)\b",
+            r"\b(desde mi perspectiva|considero|sostengo|mi postura|a mi juicio|"
+            r"reflexi[óo]n propia|declaraci[óo]n de uso|inteligencia artificial|"
+            r"no invent|supuesto)\b",
             body, re.IGNORECASE))
-        score += min(15.0, integrity * 3.0)
+        c_integrity = min(15.0, integrity * 4.0)
 
-        return round(min(100.0, score), 2)
+        return {
+            "citas": round(c_cites, 2),
+            "estructura": round(c_structure, 2),
+            "base_conceptual": round(c_concept, 2),
+            "listas": round(c_enums, 2),
+            "conectores": round(c_connectors, 2),
+            "extension": round(c_extension, 2),
+            "integridad": round(c_integrity, 2),
+        }
+
+    def _concept_base_score(self, body: str, concepts: list[str] | None) -> float:
+        """Puntúa (0-15) la SUFICIENCIA de la base conceptual del desarrollo.
+
+        Combina dos señales:
+          (a) conceptos DEFINIDOS/destacados en el cuerpo (términos en \\textbf o
+              \\textit dentro del desarrollo, que evidencian delimitación conceptual);
+          (b) COBERTURA de los conceptos del extractor (si se proveen): proporción de
+              conceptos clave del extractor mencionados en el cuerpo.
+        Cada señal aporta hasta ~7.5 pts. Si no hay conceptos del extractor, la
+        señal (a) puede alcanzar el tope por sí sola (documento autosuficiente).
+        """
+        # Región del desarrollo (donde debe vivir la base conceptual).
+        dev = self._development_region(body)
+        emphasised = set(
+            m.group(1).strip().lower()
+            for m in re.finditer(r"\\text(?:bf|it)\{([^}]{3,60})\}", dev)
+        )
+        # Señal (a): número de términos destacados (hasta 8 -> 7.5 pts).
+        a = min(7.5, len(emphasised) * 1.25)
+
+        # Señal (b): cobertura de conceptos del extractor.
+        if concepts:
+            low_body = body.lower()
+            key = [c for c in (str(x).strip().lower() for x in concepts) if len(c) >= 4]
+            if key:
+                covered = sum(1 for c in key if c in low_body)
+                ratio = covered / len(key)
+                b = 7.5 * ratio
+            else:
+                b = 7.5
+        else:
+            # Sin conceptos del extractor: la señal (a) puede cubrir hasta el tope.
+            b = min(7.5, a)
+        return min(15.0, a + b)
+
+    def _load_or_build_concepts(self, request: ActivityOptimizeRequest, tex_path: Path) -> list[str]:
+        """Carga conceptos del extractor; si faltan y la base conceptual es escasa,
+        intenta correr el extractor local (tfidf) para materializarlos.
+
+        Nunca hace fallar la optimización: ante cualquier error, devuelve [].
+        """
+        target_root = tex_path.parent
+        concepts = self._read_extractor_concepts(target_root)
+        if concepts:
+            return concepts
+        # ¿Vale la pena correr el extractor? Solo si la base conceptual del .tex es
+        # escasa (pocos términos destacados en el desarrollo).
+        try:
+            body = self._strip_comments(tex_path.read_text(encoding="utf-8", errors="replace"))
+        except Exception:
+            return []
+        dev = self._development_region(body)
+        emphasised = set(re.findall(r"\\text(?:bf|it)\{([^}]{3,60})\}", dev))
+        if len(emphasised) >= 6:
+            return []  # base conceptual suficiente; no hace falta el extractor
+        # Intento de ejecución local del extractor (motor tfidf, sin API).
+        try:
+            from .extractor_adapter import ExtractorAdapter, ExtractorRequest
+
+            adapter = ExtractorAdapter(self.workspace)
+            adapter.run(ExtractorRequest(
+                target=str(target_root),
+                activity_number=int(request.activity_number),
+                motor="tfidf",
+            ))
+            return self._read_extractor_concepts(target_root)
+        except Exception:
+            return []
+
+    def _read_extractor_concepts(self, target_root: Path) -> list[str]:
+        """Lee conceptos_detectados.json del extractor (varias ubicaciones posibles)."""
+        candidates = [
+            target_root / "extractor-aulatex" / "conceptos_detectados.json",
+            target_root / "extractor-aulatex" / "conceptos.json",
+        ]
+        for path in candidates:
+            data = self._safe_load_json(path)
+            if data is None:
+                continue
+            return self._extract_concept_names(data)
+        return []
+
+    def _safe_load_json(self, path: Path) -> Any:
+        try:
+            if path.exists():
+                return json.loads(path.read_text(encoding="utf-8", errors="replace"))
+        except Exception:
+            return None
+        return None
+
+    def _extract_concept_names(self, data: Any) -> list[str]:
+        """Normaliza distintas formas del JSON de conceptos a una lista de strings."""
+        names: list[str] = []
+        if isinstance(data, list):
+            for item in data:
+                if isinstance(item, str):
+                    names.append(item)
+                elif isinstance(item, dict):
+                    for k in ("concepto", "termino", "nombre", "label", "text"):
+                        if item.get(k):
+                            names.append(str(item[k]))
+                            break
+        elif isinstance(data, dict):
+            for k in ("conceptos", "terminos", "items", "concepts"):
+                if isinstance(data.get(k), list):
+                    names.extend(self._extract_concept_names(data[k]))
+        return [n.strip() for n in names if isinstance(n, str) and n.strip()]
+
+    def _development_region(self, body: str) -> str:
+        """Devuelve el texto del acto de Desarrollo (entre Introducción y Conclusión)."""
+        sec_iter = list(re.finditer(r"\\section\*?\{([^}]*)\}", body))
+        if not sec_iter:
+            return body
+        dev_start = None
+        concl_start = None
+        for m in sec_iter:
+            title = m.group(1).lower()
+            if dev_start is None and not re.search(r"introducci[óo]n", title) and not re.search(r"conclusi[óo]n", title):
+                dev_start = m.end()
+            if re.search(r"conclusi[óo]n", title):
+                concl_start = m.start()
+                break
+        if dev_start is None:
+            return body
+        return body[dev_start: concl_start if concl_start is not None else len(body)]
+
+    def _count_development_subsections(self, body: str) -> int:
+        """Cuenta \\subsection SOLO dentro del acto de Desarrollo.
+
+        El Desarrollo es la(s) sección(es) entre la Introducción y la Conclusión.
+        Las subsecciones en Introducción o Conclusión NO cuentan: esos actos deben
+        ser prosa continua. Si no puede delimitarse, cuenta todas (fallback).
+        """
+        # Localiza el inicio del desarrollo (fin de la Introducción) y el inicio de
+        # la Conclusión.
+        sec_iter = list(re.finditer(r"\\section\*?\{([^}]*)\}", body))
+        if not sec_iter:
+            return len(re.findall(r"\\subsection\*?\{", body))
+        dev_start = None
+        concl_start = None
+        for m in sec_iter:
+            title = m.group(1).lower()
+            if dev_start is None and not re.search(r"introducci[óo]n", title):
+                # primera sección que no es la introducción = inicio del desarrollo
+                if not re.search(r"conclusi[óo]n", title):
+                    dev_start = m.end()
+            if re.search(r"conclusi[óo]n", title):
+                concl_start = m.start()
+                break
+        if dev_start is None:
+            return 0
+        region = body[dev_start: concl_start if concl_start is not None else len(body)]
+        return len(re.findall(r"\\subsection\*?\{", region))
+
+    def _quality_gap_hint(self, text: str) -> str:
+        """Frase que indica al LLM qué componentes están por debajo de su tope."""
+        caps = {"citas": 20.0, "estructura": 20.0, "base_conceptual": 15.0, "listas": 8.0,
+                "conectores": 12.0, "extension": 10.0, "integridad": 15.0}
+        bd = self._quality_breakdown(text, getattr(self, "_current_concepts", None))
+        body = self._strip_comments(text)
+        enums = len(re.findall(r"\\begin\{(enumerate|itemize)\}", body))
+        concepts = getattr(self, "_current_concepts", None)
+        concept_hint = ""
+        if concepts:
+            low_body = body.lower()
+            missing = [c for c in concepts if len(str(c)) >= 4 and str(c).lower() not in low_body][:6]
+            if missing:
+                concept_hint = " Conceptos clave aún no abordados: " + ", ".join(missing) + "."
+        gaps = []
+        labels = {
+            "citas": "más citas visibles (\\citep con claves existentes)",
+            "estructura": (
+                "organizar el DESARROLLO en más subsecciones TEMÁTICAS cuyo TÍTULO NOMBRE EL "
+                "CONCEPTO o el tema (NUNCA 'Marco conceptual', 'Desarrollo', 'Metodología' ni "
+                "'Participación publicada'). La Introducción y la Conclusión van en PROSA "
+                "CONTINUA, sin subsecciones"
+            ),
+            "base_conceptual": (
+                "reforzar la BASE CONCEPTUAL que justifica el producto: definir y destacar "
+                "(con \\textbf) los conceptos pertinentes y suficientes que gravitan alrededor "
+                "del foro, en párrafos o subsecciones temáticas del desarrollo." + concept_hint
+            ),
+            "listas": (
+                "reducir el número de listas/enumeraciones convirtiéndolas en PROSA argumentada "
+                "(deja a lo sumo la lista estrictamente necesaria, p. ej. la del foro)"
+                if enums >= 3 else
+                "mantener a lo sumo 1 lista justificada (el resto en prosa)"
+            ),
+            "conectores": "más conectores lógicos (por tanto, sin embargo, en consecuencia...)",
+            "extension": "desarrollar más el análisis (mayor extensión sustantiva)",
+            "integridad": "reforzar la postura propia y la reflexión fundamentada",
+        }
+        for k, cap in caps.items():
+            if bd.get(k, 0.0) < cap - 0.5:
+                gaps.append(f"- {labels[k]} (actual {bd.get(k,0.0)}/{cap})")
+        if not gaps:
+            return "El documento está cerca del máximo; refina precisión y cohesión en PROSA (evita añadir listas)."
+        return (
+            "Para acercar la calidad a 100, prioriza mejorar (PREFIERE prosa sobre listas, "
+            "títulos que NOMBREN el concepto/tema):\n"
+            + "\n".join(gaps)
+        )
 
     # ---------------------------------------------------------------- LLM
 
@@ -311,6 +555,7 @@ class ActivityOptimizer:
             '  "improved_block": "<bloque mejorado>"\n'
             '}\n\n'
             f"Guía de calidad:\n{rubric}\n\n"
+            f"{self._quality_gap_hint(current_text)}\n\n"
             "DOCUMENTO .tex ACTUAL:\n"
             "-----8<-----\n"
             f"{current_text}\n"

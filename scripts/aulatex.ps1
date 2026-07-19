@@ -26,7 +26,7 @@ elseif ($CommandArgs[0] -in @('monitor-inteligente', 'motor-inteligente-monitor'
     # todo como posicional), así que convertimos "-Nombre valor" y "-Switch" en
     # un hashtable de splatting, que sí respeta los nombres del script destino.
     $monitor = Join-Path $PSScriptRoot 'motor-inteligente-monitor.ps1'
-    $switchParams = @('Plan', 'Gui')
+    $switchParams = @('Plan', 'Gui', 'Console')
     $params = @{}
     $i = 1
     while ($i -lt $CommandArgs.Count) {

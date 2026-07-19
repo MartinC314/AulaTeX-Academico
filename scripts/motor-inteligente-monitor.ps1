@@ -36,13 +36,29 @@
     Solo planificar (no ejecutar). Útil para inspeccionar la cola antes de correr.
 
 .PARAMETER Gui
-    Mostrar el monitor en una ventana gráfica en lugar de la consola.
+    Fuerza el monitor en una ventana gráfica en lugar de la consola.
+
+.PARAMETER Console
+    Fuerza el monitor en consola aunque la variable AULATEX_MONITOR_GUI o la
+    autodetección pidieran ventana. Gana sobre -Gui y sobre el entorno.
+
+.NOTES
+    Forzado por entorno: si la variable AULATEX_MONITOR_GUI está en 1/true/on,
+    el monitor arranca en ventana aunque quien lo invoque (otra herramienta o un
+    LLM) no pueda pasar -Gui. Además, si el proceso se lanzó SIN una ventana de
+    consola visible (modo oculto), el monitor abre la ventana automáticamente
+    para no quedar sin retroalimentación. Usa -Console para forzar consola.
 
 .EXAMPLE
     .\scripts\motor-inteligente-monitor.ps1 -Target '.\UnADM\...\garantias-constitucionales-lde' -Activity 3
 
 .EXAMPLE
     .\scripts\motor-inteligente-monitor.ps1 -Target '.\ITESCA' -MaxTargets 5 -Gui
+
+.EXAMPLE
+    # Forzar GUI para invocaciones automáticas (LLM / otra herramienta):
+    $env:AULATEX_MONITOR_GUI = '1'
+    .\scripts\aulatex.ps1 monitor-inteligente -Target '.\ITESCA'
 #>
 [CmdletBinding()]
 param(
@@ -57,7 +73,8 @@ param(
     [string]$Backend = 'langgraph',
     [string]$Output = '',
     [switch]$Plan,
-    [switch]$Gui
+    [switch]$Gui,
+    [switch]$Console
 )
 
 $ErrorActionPreference = 'Stop'
@@ -256,6 +273,10 @@ function Invoke-GuiMonitor {
 
     Add-Type -AssemblyName System.Windows.Forms
     Add-Type -AssemblyName System.Drawing
+    # Estilos visuales + DPI para que la ventana se pinte bien aun cuando el
+    # proceso padre se lanzó oculto (-WindowStyle Hidden) o desde otra herramienta.
+    try { [System.Windows.Forms.Application]::EnableVisualStyles() } catch {}
+    try { [System.Windows.Forms.Application]::SetCompatibleTextRenderingDefault($false) } catch {}
 
     $form = New-Object System.Windows.Forms.Form
     $form.Text = 'Motor Inteligente AulaTeX · Progreso'
@@ -265,6 +286,8 @@ function Invoke-GuiMonitor {
     $form.FormBorderStyle = 'Sizable'
     $form.BackColor = [System.Drawing.Color]::FromArgb(30, 30, 30)
     $form.KeyPreview = $true
+    $form.ShowInTaskbar = $true
+    $form.WindowState = 'Normal'
 
     $lblStatus = New-Object System.Windows.Forms.Label
     $lblStatus.Text = 'Preparando motor inteligente...'
@@ -496,7 +519,16 @@ function Invoke-GuiMonitor {
         }
     })
 
-    $form.Add_Shown({ $timer.Start() })
+    $form.Add_Shown({
+        # Asegurar visibilidad y foco aun si el proceso padre está oculto o el
+        # monitor fue invocado por otra herramienta / LLM sin desktop en primer plano.
+        $form.WindowState = 'Normal'
+        $form.ShowInTaskbar = $true
+        $form.TopMost = $true
+        [void]$form.Activate(); $form.BringToFront()
+        $form.TopMost = $false
+        $timer.Start()
+    })
     $form.Add_FormClosing({
         if (-not $sync.Done) {
             # Permitir cerrar aunque siga corriendo; el proceso hijo terminará solo.
@@ -507,8 +539,122 @@ function Invoke-GuiMonitor {
     return 0
 }
 
+# ------------------------------------------------ decisión de modo de UI ------
+# Determina si conviene arrancar en modo gráfico. Prioridad:
+#   1. -Console explícito  -> consola (gana sobre todo lo demás).
+#   2. -Gui explícito       -> ventana.
+#   3. AULATEX_MONITOR_GUI env (1/true/on) -> ventana forzada (útil cuando el
+#      motor es invocado por otra herramienta o un LLM y no puede pasar -Gui).
+#   4. Auto: si NO hay una ventana de consola visible (proceso lanzado oculto),
+#      preferir la ventana para no quedar "en consola oculta" sin feedback.
+function Test-EnvFlagEnabled {
+    param([string]$Name)
+    $value = [Environment]::GetEnvironmentVariable($Name)
+    if ([string]::IsNullOrWhiteSpace($value)) { return $false }
+    return @('1', 'true', 'on', 'yes', 'si', 'sí') -contains $value.Trim().ToLowerInvariant()
+}
+
+function Test-ConsoleWindowVisible {
+    # Devuelve $true si el proceso tiene una ventana de consola visible.
+    try {
+        if (-not ([System.Management.Automation.PSTypeName]'AulaTeX.NativeConsole').Type) {
+            Add-Type -Namespace 'AulaTeX' -Name 'NativeConsole' -MemberDefinition @'
+[System.Runtime.InteropServices.DllImport("kernel32.dll")]
+public static extern System.IntPtr GetConsoleWindow();
+[System.Runtime.InteropServices.DllImport("user32.dll")]
+public static extern bool IsWindowVisible(System.IntPtr hWnd);
+'@ -ErrorAction Stop
+        }
+        $handle = [AulaTeX.NativeConsole]::GetConsoleWindow()
+        if ($handle -eq [System.IntPtr]::Zero) { return $false }
+        return [AulaTeX.NativeConsole]::IsWindowVisible($handle)
+    } catch {
+        # Si no se puede determinar, asumir que sí hay consola (comportamiento previo).
+        return $true
+    }
+}
+
+function Resolve-UseGui {
+    if ($Console) { return $false }
+    if ($Gui) { return $true }
+    if (Test-EnvFlagEnabled -Name 'AULATEX_MONITOR_GUI') { return $true }
+    if (-not (Test-ConsoleWindowVisible)) { return $true }
+    return $false
+}
+
+# Cita un valor como literal de cadena de PowerShell (comillas simples).
+function ConvertTo-PsLiteral {
+    param([string]$Value)
+    return "'" + ($Value -replace "'", "''") + "'"
+}
+
+# Construye una expresión `-Command` que re-invoca ESTE script con los mismos
+# parámetros usando splatting de un hashtable. Así los arreglos ([string[]]) se
+# pasan como arreglos reales (respetando ValidateSet), sin los problemas de
+# `-File` (que no divide comas) ni de repetir switches.
+function Get-RelaunchCommand {
+    param([string]$SelfPath)
+
+    $sb = New-Object System.Text.StringBuilder
+    [void]$sb.Append('$p = @{ ')
+    [void]$sb.Append("Target = $(ConvertTo-PsLiteral $Target); ")
+    if ($Activity -gt 0) { [void]$sb.Append("Activity = $Activity; ") }
+    if ($Actions -and $Actions.Count -gt 0) {
+        $items = ($Actions | ForEach-Object { ConvertTo-PsLiteral $_ }) -join ', '
+        [void]$sb.Append("Actions = @($items); ")
+    }
+    [void]$sb.Append("MaxTargets = $MaxTargets; ")
+    if ($Engines -and $Engines.Count -gt 0) {
+        $items = ($Engines | ForEach-Object { ConvertTo-PsLiteral $_ }) -join ', '
+        [void]$sb.Append("Engines = @($items); ")
+    }
+    [void]$sb.Append("MonitorMaxCycles = $MonitorMaxCycles; ")
+    [void]$sb.Append("OptimizeCycles = $OptimizeCycles; ")
+    [void]$sb.Append("Backend = $(ConvertTo-PsLiteral $Backend); ")
+    if ($Output) { [void]$sb.Append("Output = $(ConvertTo-PsLiteral $Output); ") }
+    if ($Plan) { [void]$sb.Append('Plan = $true; ') }
+    if ($Gui) { [void]$sb.Append('Gui = $true; ') }
+    if ($Console) { [void]$sb.Append('Console = $true; ') }
+    [void]$sb.Append('}; ')
+    [void]$sb.Append("& $(ConvertTo-PsLiteral $SelfPath) @p")
+    return $sb.ToString()
+}
+
 # ==================================================================== MAIN ====
-if ($Gui) {
+$useGui = Resolve-UseGui
+if (Test-EnvFlagEnabled -Name 'AULATEX_MONITOR_DEBUG') {
+    $dbg = Join-Path $repoRoot '.aulatex-temp\monitor-mode-debug.log'
+    "[$(Get-Date -Format o)] useGui=$useGui apt=$([System.Threading.Thread]::CurrentThread.GetApartmentState()) gui=$Gui console=$Console guiEnv=$([Environment]::GetEnvironmentVariable('AULATEX_MONITOR_GUI')) staEnv=$([Environment]::GetEnvironmentVariable('AULATEX_MONITOR_STA_RELAUNCH')) psCmdPath=$PSCommandPath" |
+        Out-File -FilePath $dbg -Append -Encoding utf8
+}
+
+# WinForms requiere un hilo STA para mostrar la ventana. Si el monitor fue
+# invocado por otra herramienta o un LLM y el host quedó en MTA, la ventana no
+# aparece; en ese caso nos re-lanzamos a nosotros mismos en STA una sola vez.
+$currentApartment = [System.Threading.Thread]::CurrentThread.GetApartmentState()
+if ($useGui -and
+    $currentApartment -ne 'STA' -and
+    -not (Test-EnvFlagEnabled -Name 'AULATEX_MONITOR_STA_RELAUNCH')) {
+
+    try {
+        $env:AULATEX_MONITOR_STA_RELAUNCH = '1'
+        $env:AULATEX_MONITOR_GUI = '1'  # asegurar GUI en el proceso hijo
+        $psExe = (Get-Command powershell.exe).Source
+        $selfPath = if ($PSCommandPath) { $PSCommandPath } else { $MyInvocation.MyCommand.Definition }
+        $relaunchCommand = Get-RelaunchCommand -SelfPath $selfPath
+        $relaunchArgs = @('-NoProfile', '-STA', '-ExecutionPolicy', 'Bypass', '-Command', $relaunchCommand)
+        $child = Start-Process -FilePath $psExe -ArgumentList $relaunchArgs -PassThru -WindowStyle Hidden
+        $child.WaitForExit()
+        exit $child.ExitCode
+    }
+    catch {
+        # Si el re-lanzamiento falla, degradar a consola en vez de abortar.
+        Write-Warning "No se pudo re-lanzar en STA para la GUI: $($_.Exception.Message). Se usa consola."
+        $useGui = $false
+    }
+}
+
+if ($useGui) {
     $code = Invoke-GuiMonitor -PythonExe $pythonExe -CliArgs $cliArgs -RepoRoot $repoRoot
 } else {
     $code = Invoke-ConsoleMonitor -PythonExe $pythonExe -CliArgs $cliArgs -RepoRoot $repoRoot

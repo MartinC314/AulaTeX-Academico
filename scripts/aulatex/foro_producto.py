@@ -192,6 +192,15 @@ class ForoProductoTransformer:
         if ia_change:
             changes.append(ia_change)
 
+        # 6) La conclusión inicia en página nueva sola (\clearpage antes de la
+        #    \section{Conclusión}), conforme al closure_rule del contrato foro.
+        out, clear_change = self._ensure_conclusion_pagebreak(out)
+        if clear_change:
+            changes.append(clear_change)
+
+        # 7) Verificar cita textual + apartado "Referencia" en el foro (apa_citation_rule).
+        warnings.extend(self._check_forum_apa_citation(out))
+
         if already and not changes:
             changes.append("Sin cambios: el .tex ya seguía el patrón de producto foro.")
         return out, changes, warnings, participation
@@ -334,8 +343,16 @@ class ForoProductoTransformer:
 
         txt_filename = "foro-participacion-Actividad-1.txt"  # ajustado por run() al escribir
 
+        # Título del forobox TEMÁTICO (sin la palabra 'participación', que es
+        # metadiscursiva): p. ej. "Intervención en el foro sobre <tema>".
+        tema_titulo = self._infer_tema(out)
+        foro_title = (
+            f"Intervención en el foro sobre {tema_titulo}" if tema_titulo
+            else "Intervención en el foro"
+        )
+
         forobox_block = (
-            "\\begin{forobox}[title={Participación publicada en el foro}]\n"
+            "\\begin{forobox}[title={" + foro_title + "}]\n"
             "\\hfill\\foroCopyButton{" + txt_filename + "}\\\\[-0.5em]\n"
             "\\phantomsection\\label{foro-participacion}\n\n"
             f"\\textbf{{Asunto:}} {asunto}\\par\n\\medskip\n"
@@ -379,6 +396,75 @@ class ForoProductoTransformer:
             return tex, ""
         new_tex = tex[: m.end(1)] + footnote + tex[m.end(1):]
         return new_tex, "Añadida declaración de uso de IA como \\footnote en la conclusión."
+
+    def _ensure_conclusion_pagebreak(self, tex: str) -> tuple[str, str]:
+        """Garantiza un \\clearpage justo antes de \\section{Conclusión}.
+
+        La conclusión debe iniciar en una página nueva por sí sola (closure_rule).
+        Idempotente: si ya hay un \\clearpage (o \\newpage) inmediatamente antes de
+        la sección, no duplica.
+        """
+        m = re.search(r"\\section\{Conclusi[óo]n\}", tex)
+        if not m:
+            return tex, ""
+        start = m.start()
+        # Mira el texto no vacío inmediatamente anterior a la sección.
+        prefix = tex[:start].rstrip()
+        if prefix.endswith("\\clearpage") or prefix.endswith("\\newpage"):
+            return tex, ""
+        new_tex = tex[:start] + "\\clearpage\n" + tex[start:]
+        return new_tex, "Añadido \\clearpage: la conclusión inicia en página nueva."
+
+    def _check_forum_apa_citation(self, tex: str) -> list[str]:
+        """Verifica la cita textual + apartado 'Referencias' en CADA forobox (apa_citation_rule).
+
+        No modifica el texto (las entradas APA exigen datos de fuente que solo el
+        LLM/autor puede aportar); solo emite avisos accionables si faltan los
+        elementos que la planeación de todo foro pide, incluida la COBERTURA COMPLETA
+        (todas las fuentes \\citep de un forobox listadas en su apartado de referencias).
+        """
+        warnings: list[str] = []
+        blocks = list(re.finditer(r"\\begin\{forobox\}.*?\\end\{forobox\}", tex, re.DOTALL))
+        if not blocks:
+            return warnings
+        # Solo el PRIMER forobox (participación) exige cita textual; todos exigen
+        # cobertura de referencias.
+        for idx, m in enumerate(blocks):
+            block = m.group(0)
+            has_reference = bool(re.search(r"\\textbf\{Referencias?\}", block))
+            if idx == 0:
+                has_textual = bool(re.search(r"\([^)]*\d{4}[^)]*p\.?~?\s*\d+", block))
+                if not has_textual:
+                    warnings.append(
+                        "AVISO (apa_citation_rule): el forobox de participación no incluye una cita "
+                        "TEXTUAL con formato (Apellido, Año, p.~N). Todo foro exige al menos una cita "
+                        "textual con su referencia APA 7 dentro del bloque."
+                    )
+            if not has_reference:
+                warnings.append(
+                    f"AVISO (apa_citation_rule): el forobox #{idx + 1} no cierra con un apartado "
+                    "'Referencia(s)' (entradas APA 7 con sangría francesa)."
+                )
+                continue
+            # Cobertura: cada \citep{key} del bloque debe reflejarse en el apartado
+            # de referencias. Aproximación: nº de keys distintas vs nº de entradas
+            # (líneas con \hangindent) en el apartado.
+            keys = set()
+            for cm in re.finditer(r"\\cite[tp]?\{([^}]*)\}", block):
+                for k in cm.group(1).split(","):
+                    k = k.strip()
+                    if k:
+                        keys.add(k)
+            ref_start = block.find("\\textbf{Referencia")
+            ref_region = block[ref_start:] if ref_start != -1 else ""
+            entries = len(re.findall(r"\\hangindent", ref_region))
+            if keys and entries < len(keys):
+                warnings.append(
+                    f"AVISO (apa_citation_rule): el forobox #{idx + 1} cita {len(keys)} fuentes "
+                    f"(\\citep) pero su apartado de referencias tiene {entries} entrada(s). Toda fuente "
+                    "citada en el forobox debe aparecer en su apartado de referencias APA 7."
+                )
+        return warnings
 
     # -- Utilidades -----------------------------------------------------------
 
@@ -477,38 +563,49 @@ class ForoProductoTransformer:
             return tex, False
         head = dev.group(1)
         tema = self._infer_tema(tex) or "el campo de estudio"
-        # Marco teórico y metodológico que GRAVITA alrededor del producto (foro):
-        # antes del producto se prepara conceptual y metodológicamente; después se
-        # interpreta. Se apoya en fuentes normativas/institucionales del .bib.
+        # Marco conceptual EN PROSA (no lista pautada) que prepara el producto foro,
+        # seguido de un ÚNICO párrafo puente (no una subsección 'Metodología'
+        # metadiscursiva). El análisis interpretativo NO va como subsección aparte:
+        # se integra orgánicamente en la conclusión (_fold_interpretation_into_conclusion).
         marco = (
-            f"\\subsection{{Marco conceptual y preparación}}\n"
-            f"Antes de intervenir en el foro conviene delimitar el objeto de {tema}: el conjunto "
-            f"de normas, instituciones y procedimientos que protegen a las personas frente a "
-            f"contingencias sociales y que se sostiene en el marco constitucional y en la "
-            f"legislación vigente \\citep{{cpeum2026}}. Este encuadre permite distinguir las "
-            f"categorías centrales del tema y evitar confusiones frecuentes (por ejemplo, entre "
-            f"seguro social y asistencia social).\n\n"
-            f"\\subsection{{Metodología de la participación}}\n"
-            f"La intervención se preparó en cuatro pasos coherentes con la técnica de foro: "
-            f"(1) delimitar el tema y las preguntas guía; (2) recuperar nociones previas y "
-            f"contrastarlas con fuentes institucionales y normativas verificables; "
-            f"(3) redactar respuestas breves y argumentadas; y (4) cerrar con una pregunta "
-            f"detonante que abra la discusión entre pares. El producto de esa preparación es la "
-            f"participación que se publica a continuación.\n\n"
-            f"\\subsection{{Participación publicada}}\n"
+            f"\\subsection{{Marco conceptual}}\n"
+            f"El objeto de {tema} comprende el conjunto de normas, instituciones y procedimientos "
+            f"que protegen a las personas frente a contingencias sociales, con fundamento en el "
+            f"marco constitucional y en la legislación vigente \\citep{{cpeum2026}}. Precisar este "
+            f"objeto permite distinguir las categorías centrales del tema y evitar confusiones "
+            f"frecuentes, como equiparar un programa asistencial con un verdadero sistema de "
+            f"seguro social.\n\n"
+            f"Sobre este encuadre se construye la intervención en el foro: las respuestas "
+            f"recuperan primero las nociones previas y luego las contrastan con fuentes "
+            f"institucionales y normativas verificables, delimitando en cada caso el concepto, su "
+            f"finalidad y su ámbito de aplicación, para cerrar con una pregunta que abra la "
+            f"discusión entre pares.\n"
         )
-        cierre = (
-            "\n\n\\subsection{Lectura e interpretación}\n"
-            "Leída en conjunto, la intervención muestra que las nociones del tema forman una "
-            "cadena coherente: del fundamento normativo a las vías concretas de protección, el "
-            "énfasis recae en que un derecho solo se realiza cuando existe un mecanismo eficaz "
-            "que lo hace exigible. Esta lectura orienta el estudio posterior hacia las "
-            "instituciones, prestaciones y procedimientos que dan efectividad a la protección "
-            "social \\citep{lss2026}.\n"
-        )
-        new_region = head + marco + forobox_block + cierre + "\n"
+        new_region = head + marco + forobox_block + "\n"
         new_tex = tex[: dev.start()] + new_region + tex[dev.end():]
+        # Integrar la lectura interpretativa en la conclusión (orgánica).
+        new_tex = self._fold_interpretation_into_conclusion(new_tex, tema)
         return new_tex, True
+
+    def _fold_interpretation_into_conclusion(self, tex: str, tema: str) -> str:
+        """Inserta la lectura interpretativa como PRIMER párrafo de la conclusión.
+
+        Evita una subsección 'Lectura e interpretación' separada: el análisis se
+        integra de forma orgánica al inicio del acto de cierre.
+        """
+        if "forman una cadena coherente" in tex:
+            return tex  # ya integrada
+        interp = (
+            f"Leída en conjunto, la intervención muestra que las nociones de {tema} forman una "
+            f"cadena coherente: del fundamento normativo a las vías concretas de protección, el "
+            f"énfasis recae en que un derecho solo se realiza cuando existe un mecanismo eficaz "
+            f"que lo hace exigible \\citep{{lss2026}}. "
+        )
+        pat = re.compile(r"(\\section\{Conclusi[óo]n\}\s*\n)")
+        m = pat.search(tex)
+        if not m:
+            return tex
+        return tex[: m.end()] + interp + tex[m.end():]
 
     def _insert_after_development_title(self, tex: str, forobox_block: str) -> tuple[str, bool]:
         pat = re.compile(r"(\\section\{(?:Desarrollo[^}]*|Nociones[^}]*)\}\s*\n)")

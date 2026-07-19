@@ -42,6 +42,18 @@ class ActivityObserver:
     def observe(self, request: ActivityObservationRequest) -> ActivityObservationResult:
         run_id = f"{self.workspace.timestamp()}-activity-{int(request.activity_number):02d}-observer"
         run_dir = self._resolve_run_dir(request, run_id)
+        # timestamp() tiene resolución de segundos; en flujos anidados (monitor ->
+        # compilation-repair -> observe) varios observes caen en el mismo segundo y
+        # colisionan de directorio, provocando FileNotFoundError al leer artefactos
+        # de un run pisado por otro. Garantizar unicidad con sufijo incremental,
+        # tanto con output implícito como explícito.
+        if run_dir.exists() and any(run_dir.iterdir()):
+            suffix = 1
+            base_run_id = run_id
+            while run_dir.exists() and any(run_dir.iterdir()):
+                run_id = f"{base_run_id}-{suffix:02d}"
+                run_dir = self._resolve_run_dir(request, run_id)
+                suffix += 1
         run_dir.mkdir(parents=True, exist_ok=True)
 
         scope = self.workspace.find_scope_for_target(request.target, activity_number=request.activity_number)
