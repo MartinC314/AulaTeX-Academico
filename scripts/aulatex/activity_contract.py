@@ -346,9 +346,37 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
         "closure_rule": "El análisis derivado de la tabla y la postura personal se cierran en la conclusión, no en secciones visibles separadas salvo consigna expresa. La conclusión inicia con \\clearpage y ocupa preferentemente una sola página; la declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión.",
     },
     "foro_diagnostico": {
-        "aliases": ("foro", "foro diagnóstico", "foro diagnostico"),
-        "required_visible_elements": ("preguntas guía", "respuesta", "cierre"),
+        "aliases": ("foro", "foro diagnóstico", "foro diagnostico", "participación en foro", "participacion en foro"),
+        "required_visible_elements": ("preguntas guía", "respuesta", "participación textual publicada", "cierre"),
         "preservation_rule": "Si el producto es foro diagnóstico, conservar preguntas guía y respuestas compactas sin convertirlo en ensayo extenso.",
+        "visible_style_rule": (
+            "No explicar en el texto visible que 'esta actividad' usa la técnica foro ni describir la ficha de las 100 técnicas didácticas; "
+            "esa trazabilidad va como comentario TEX. El texto visible habla del tema y del diálogo, no del proceso editorial."
+        ),
+        "structure_rule": (
+            "Cuerpo en TRES actos: (1) Introducción, (2) una única sección de Desarrollo con título temático (NO 'Desarrollo' ni 'Participación en el foro') "
+            "y (3) Conclusiones. El PRODUCTO solicitado del foro —la participación textual publicada— es el NÚCLEO del acto de desarrollo y va como SUBsección "
+            "dentro de esa única sección, no como \\section de primer nivel. Orden dentro del desarrollo: (a) breve marco/encuadre que conduce a las preguntas guía, "
+            "(b) las respuestas a las preguntas guía, (c) la participación textual publicada en el foro como subsección protagónica (bloque de código verbatim/listings) "
+            "y su lectura breve."
+        ),
+        "three_act_gravity_rule": (
+            "El desarrollo NO se fragmenta en varias secciones \\section: marco, preguntas guía, participación publicada y su lectura son subsecciones de una sola "
+            "sección de desarrollo cuyo título nombra el tema del foro. El producto (la participación publicada) manda: el texto lo prepara antes y lo interpreta después."
+        ),
+        "forum_participation_block_rule": (
+            "La participación publicada en el foro debe materializarse como un BLOQUE de código textual (entorno sourcecode de la plantilla, o listings con estilo propio "
+            "cuando el documento no cargue la plantilla) que reproduzca literalmente lo que se publica: encuadre/apertura, respuesta a la pregunta detonante o preguntas guía, "
+            "y un cierre que invite al diálogo entre pares con al menos una pregunta al grupo. El bloque debe seguir la estructura de la técnica foro (apertura, participación, "
+            "coordinación, cierre). REQUISITOS DE FORMATO: cada respuesta/párrafo es UNA sola línea lógica en el fuente (una entrada por número); el bloque hace ajuste de línea "
+            "(breaklines) para el texto largo pero NO numera las líneas de continuación del ajuste (si se usa numeración, numbers=left con numberstyle que solo marque la línea de origen, "
+            "no las envueltas). El contenido del bloque debe ser SELECCIONABLE Y COPIABLE en el PDF (evitar literate/mapeos de caracteres que rompan el copiado; preferir fuente con "
+            "soporte de copia como \\ttfamily estándar o inputenc utf8 con extendedchars)."
+        ),
+        "closure_rule": (
+            "La conclusión integra síntesis, análisis propio y postura personal (posición, razón y consecuencia); no crear secciones visibles separadas de análisis o postura. "
+            "La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión, nunca como \\section."
+        ),
     },
 }
 
@@ -419,6 +447,11 @@ def evaluate_activity_contract(state: dict[str, Any]) -> dict[str, Any]:
         <= int(signals.get("sections_count", 0))
         <= ACTIVITY_1_CONTRACT["acceptable_ranges"]["sections_max"],
         "concepts_min": int(signals.get("extractor_concepts_count", 0)) >= ACTIVITY_1_CONTRACT["acceptable_ranges"]["concepts_min"],
+        # El cuerpo visible no debe contener metadiscurso de ejecución ni residuos de
+        # flujos antiguos (p. ej. 'Refuerzo editorial Ciclo A', 'La Actividad N',
+        # 'Esta actividad', 'el producto solicitado'). Si el observer no provee la
+        # señal (None), el check no penaliza.
+        "no_metadiscourse": len(signals.get("metadiscourse_hits") or []) == 0,
     }
     all_checks = {**required_checks, **range_checks}
     required_hits = sum(1 for ok in required_checks.values() if ok)
@@ -458,5 +491,6 @@ def _contract_finding(name: str) -> str:
         "ai_declaration_footnote": "La declaración de uso de IA debe ir como \\footnote ligada a una frase oportuna (por ejemplo de la conclusión), no como sección o bloque separado.",
         "sections_range": "La estructura de secciones queda fuera del rango contractual.",
         "concepts_min": "La cobertura conceptual extraída está por debajo del mínimo contractual.",
+        "no_metadiscourse": "El cuerpo visible contiene metadiscurso de ejecución o residuos de flujos antiguos (p. ej. 'Refuerzo editorial Ciclo A', 'La Actividad N', 'Esta actividad'); deben eliminarse o pasar a comentario TEX.",
     }
     return messages.get(name, f"Incumplimiento contractual: {name}.")

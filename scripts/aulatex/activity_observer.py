@@ -280,6 +280,7 @@ class ActivityObserver:
                     )
                 ),
                 "product_visual_detected": bool(re.search(r"tikzpicture|\\begin\{figure\}|mapa conceptual|cuadro|tabla|diagrama", active_tex, re.IGNORECASE)),
+                "metadiscourse_hits": self._find_metadiscourse(active_tex),
                 "evaluation_criteria_present": bool(re.search(r"criterios|r[úu]brica|evaluaci[óo]n", active_tex, re.IGNORECASE)),
                 "questionnaire_detected": bool(re.search(r"cuestionario|reactivo|pregunta\s*\d+", active_tex, re.IGNORECASE)),
                 "questionnaire_contract_satisfied": bool(
@@ -460,6 +461,28 @@ class ActivityObserver:
             hits.extend(match.group(0) for match in re.finditer(pattern, text, re.IGNORECASE))
         for pattern in (r"\bTODO\b", r"\bFIXME\b"):
             hits.extend(match.group(0) for match in re.finditer(pattern, text))
+        return sorted(set(hits))
+
+    def _find_metadiscourse(self, text: str) -> list[str]:
+        """Detecta metadiscurso de ejecución visible que el contrato prohíbe.
+
+        Incluye residuos del flujo antiguo (Refuerzo editorial Ciclo A) y menciones
+        de 'la actividad N' / 'esta actividad' / 'el producto solicitado' como narrador
+        externo. No penaliza el mismo texto dentro de comentarios TEX (que ya fueron
+        removidos por _strip_tex_comments antes de invocar este método).
+        """
+        hits: list[str] = []
+        patterns = (
+            r"Refuerzo editorial",
+            r"Ciclo A\b",
+            r"\bLa Actividad\s+\d+",
+            r"\bEsta actividad\b",
+            r"el producto solicitado",
+            r"la t[ée]cnica usada",
+            r"\\section\*?\{[^}]*[Rr]efuerzo",
+        )
+        for pattern in patterns:
+            hits.extend(match.group(0).strip() for match in re.finditer(pattern, text, re.IGNORECASE))
         return sorted(set(hits))
 
     def _extract_sections(self, text: str) -> list[str]:
