@@ -15,7 +15,29 @@
 \usepackage{ragged2e}
 \usepackage{tikz}
 \usepackage{hyperref}
+\usepackage{listings}
 \usetikzlibrary{calc,positioning,fit,shadows.blur}
+
+% Estilo de bloque de código para reproducir la participación textual del foro
+\lstdefinestyle{foroplano}{
+  basicstyle=\ttfamily\scriptsize\color{unadmInk},
+  backgroundcolor=\color{unadmPaper},
+  breaklines=true,
+  columns=fullflexible,
+  keepspaces=true,
+  extendedchars=true,
+  inputencoding=utf8,
+  frame=leftline,
+  framerule=1.4pt,
+  rulecolor=\color{unadmGreen},
+  xleftmargin=0.5em,
+  aboveskip=0.3em,
+  belowskip=0.3em,
+  literate=
+    {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+    {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+    {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1 {¡}{{!`}}1
+}
 
 \newcommand{\studentname}{Martin Jonathan de la Cruz}
 \newcommand{\studentshort}{M. J. de la Cruz}
@@ -185,6 +207,24 @@
     \item El derecho adjetivo indica la vía para reclamarlos.
     \item La garantía funciona como mecanismo de protección.
   \end{itemize}
+\end{frame}
+
+% META (interno): evidencia del producto FORO (100 Técnicas Didácticas, UnADM).
+% Reproduce de forma textual la participación publicada en el foro.
+\begin{frame}[fragile]{Participación publicada en el foro}
+  \begin{lstlisting}[style=foroplano]
+Asunto: Foro diagnóstico - Nociones básicas de derecho
+
+Hola a todas y todos: comparto mi participación.
+
+1) Constitución: norma fundamental; organiza el poder, reconoce derechos y limita a la autoridad (arts. 1.o y 133).
+2) Objetivo (sistema de normas) vs. subjetivo (facultad concreta que se exige a partir de la norma).
+3) Sustantivo (define el fondo) vs. adjetivo (vías para reclamarlo).
+4) Proceso (estructura para resolver el conflicto) vs. procedimiento (secuencia de actos, plazos y formalidades).
+5) Derecho humano (prerrogativa ligada a la dignidad) vs. garantía (mecanismo que lo hace exigible, p. ej. el juicio de amparo).
+
+Pregunta para el grupo: ¿en qué caso concreto un derecho reconocido se quedó sin protección por falta de una garantía eficaz?
+  \end{lstlisting}
 \end{frame}
 
 \begin{frame}{Cierre}

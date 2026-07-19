@@ -3,7 +3,7 @@
   letterpaper, oneside
 ]{article}
 
-\def\documenttitle {Foro diagnóstico sobre nociones básicas de derecho}
+\def\documenttitle {Nociones básicas del derecho constitucional}
 \def\documentsubtitle {Constitución y derechos humanos}
 \def\documentsubject {Actividad 1 - Garantías Constitucionales}
 
@@ -43,6 +43,58 @@
 \usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}
 \setcitestyle{authoryear,open={(},close={)}}
 
+% Paleta institucional para el bloque del foro (definida localmente por si la
+% plantilla no expone estos nombres de color).
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+
+% -----------------------------------------------------------------------------
+% Bloque de participación del foro (producto): caja institucional con
+% - texto JUSTIFICADO en fuente normal (no monoespaciada);
+% - numeración de intervenciones a la IZQUIERDA (lista enumerada), sin flechas de
+%   salto de línea; el texto fluye y se justifica dentro de la caja;
+% - contenido SELECCIONABLE y COPIABLE, más un botón de copia (adjunto .txt
+%   embebido en el PDF mediante attachfile).
+% -----------------------------------------------------------------------------
+\usepackage[most]{tcolorbox}
+\usepackage{attachfile}
+\usepackage{enumitem}
+
+% attachfile: el 'color' debe darse como TRIPLE RGB numérico (0..1), no como un
+% nombre \definecolor[HTML] (eso provoca 'Argument of \atfi@textcolor has an extra }').
+\attachfilesetup{color={0.373 0.561 0.227},print=false}
+
+% Botón de copia: incrusta un .txt con el contenido íntegro del foro y ofrece un
+% enlace clicable para extraer (copiar) el texto desde el visor de PDF.
+% El appearance del propio attachfile (icono PushPin) se oculta con appearance={};
+% el texto/estilo visible del botón va en el 2.o argumento y se ve siempre.
+\newcommand{\foroCopyButton}[1]{%
+  \textattachfile[appearance={},description={Participacion del foro (texto copiable)},mimetype=text/plain]{#1}{%
+    \colorbox{unadmGreen}{\small\textcolor{white}{\,Copiar participación\,}}%
+  }%
+}
+
+% Entorno visual del foro
+\newtcolorbox{forobox}[1][]{%
+  enhanced,
+  breakable,
+  colback=unadmPaper,
+  colframe=unadmGreen,
+  boxrule=0pt,
+  leftrule=3pt,
+  arc=1.2mm,
+  left=4mm, right=4mm, top=3mm, bottom=3mm,
+  fonttitle=\bfseries\color{white},
+  coltitle=white,
+  colbacktitle=unadmGreenDark,
+  attach boxed title to top left={xshift=4mm,yshift=-2mm},
+  boxed title style={colframe=unadmGreenDark,arc=0.6mm},
+  #1
+}
+
 \def\coverwatermarkenabled {true}
 \def\coverwatermarkimage {img/departamentos/UnADM.pdf}
 \def\coverwatermarkopacity {0.16}
@@ -75,7 +127,7 @@
 \onehalfspacing
 
 \begin{abstractd}
-  Esta actividad desarrolla una participación diagnóstica sobre nociones básicas de derecho. El objetivo es formular respuestas propias a cinco preguntas guía sobre Constitución, derecho subjetivo y objetivo, derecho sustantivo y adjetivo, proceso y procedimiento, así como garantía y derecho humano. Además, se explica por qué este tipo de foro permite identificar conocimientos previos, experiencias, expectativas y necesidades de aprendizaje para orientar la planeación inicial de la asignatura de \textit{Garantías Constitucionales}.
+  Las nociones básicas del derecho constitucional articulan la comprensión inicial de las garantías: la Constitución como norma suprema, la distinción entre derecho objetivo y subjetivo, entre derecho sustantivo y adjetivo, la diferencia entre proceso y procedimiento, y la relación entre derecho humano y garantía. Este escrito examina esas categorías, sostiene respuestas propias contrastadas con la Constitución y la Ley de Amparo, y muestra cómo se enlazan para explicar la defensa jurídica de los derechos en el sistema mexicano.
 \end{abstractd}
 
 \templateIndex
@@ -83,51 +135,55 @@
 
 \section{Introducción}
 
-El foro diagnóstico cumple una función formativa distinta a una evaluación sancionadora: permite reconocer el punto de partida del grupo antes de avanzar hacia problemas constitucionales más complejos. En una asignatura como \textit{Garantías Constitucionales}, este diagnóstico es especialmente útil porque los conceptos iniciales no son términos aislados, sino categorías que permiten comprender la defensa jurídica de los derechos humanos, las garantías para su protección y los medios de control constitucional previstos en el sistema mexicano.
+El estudio de las garantías constitucionales exige, antes que cualquier análisis avanzado, precisar un conjunto de nociones básicas que suelen confundirse: qué es la Constitución y por qué es suprema, en qué se distinguen el derecho objetivo y el subjetivo, cómo se separan el derecho sustantivo y el adjetivo, qué diferencia hay entre proceso y procedimiento, y cómo se relacionan el derecho humano y la garantía. Estas categorías no son términos aislados: articulan la manera en que el orden jurídico reconoce derechos, limita al poder y ofrece vías para hacerlos exigibles.
 
-Responder sin consultar la web tiene sentido pedagógico porque muestra el conocimiento realmente disponible, las intuiciones previas y las posibles confusiones conceptuales. A partir de esas respuestas, la figura docente puede decidir si conviene reforzar definiciones, trabajar microcasos, elaborar un glosario comparado o ajustar el ritmo de la unidad inicial.
+Delimitar con claridad estos conceptos permite comprender la defensa jurídica de los derechos humanos, las garantías para su protección y los medios de control constitucional del sistema mexicano. Una definición imprecisa —por ejemplo, tratar la garantía como sinónimo del derecho protegido— compromete después el análisis de figuras como el juicio de amparo.
 
-Para evitar que la respuesta diagnóstica se apoye solo en memoria informal, las afirmaciones normativas centrales se contrastan con fuentes formales: la \textit{Constitución Política de los Estados Unidos Mexicanos} y la Ley de Amparo vigente, ambas publicadas por la Cámara de Diputados del H. Congreso de la Unión \citep{cpeum2026,leyAmparo2026}. Las notas locales se usan como insumo de consigna y orientación didáctica; las definiciones jurídicas se sostienen en el marco constitucional y procesal aplicable.
+Para no apoyar las definiciones en una memoria informal, las afirmaciones normativas centrales se contrastan con fuentes formales: la \textit{Constitución Política de los Estados Unidos Mexicanos} y la Ley de Amparo vigente, ambas publicadas por la Cámara de Diputados del H. Congreso de la Unión \citep{cpeum2026,leyAmparo2026}. Sobre esa base conceptual y normativa se organizan las respuestas que siguen.
 
-\section{Desarrollo del foro diagnóstico}
+\section{Nociones básicas del derecho constitucional}
 
-\subsection{¿Qué es y cuál es la importancia de la Constitución?}
+Las cinco nociones que estructuran esta intervención no son términos aislados: la Constitución da validez al sistema normativo, del que surgen facultades concretas; el contenido de fondo de los derechos se distingue de las vías para reclamarlos; y la garantía es lo que transforma un derecho reconocido en algo exigible. La intervención publicada que sigue desarrolla cada una de esas nociones —de la supremacía constitucional a la eficacia de las garantías— y las contrasta con la Constitución y la Ley de Amparo \citep{cpeum2026,leyAmparo2026}.
 
-La Constitución es la norma fundamental del Estado mexicano. En ella se organiza el poder público, se establecen competencias de las autoridades, se reconocen derechos de las personas y se fijan límites al ejercicio del poder. Su importancia radica en que sirve como parámetro superior de validez para las demás normas: una ley, acto de autoridad o decisión pública no debe contrariar el contenido constitucional \citep{cpeum2026}.
+% ==============================================================================
+% META (uso interno, no visible en el PDF): el producto solicitado es un FORO
+% (técnica de las 100 Técnicas Didácticas de la UnADM, apertura -> participación
+% -> coordinación -> cierre). El bloque siguiente reproduce, de forma textual e
+% ÍNTEGRA, la intervención publicada (no un resumen). El texto que lo rodea NO
+% nombra 'la actividad' ni 'el foro diagnóstico' como narrador externo: gravita
+% sobre el tema, preparando la intervención (arriba) e interpretándola (abajo).
+% El bloque usa tcolorbox con texto JUSTIFICADO, numeración de intervenciones a
+% la izquierda y un botón de copia (adjunto .txt embebido) para extraer el texto.
+% ==============================================================================
 
-Desde la perspectiva de las garantías constitucionales, la Constitución no solo expresa principios generales, sino que también proporciona la base para defender derechos cuando una autoridad los desconoce o los restringe indebidamente. En particular, el artículo 1.º establece obligaciones estatales de promover, respetar, proteger y garantizar los derechos humanos; y el artículo 133 confirma la supremacía constitucional dentro del orden jurídico mexicano \citep{cpeum2026}. Por ello, estudiar la Constitución implica comprender tanto su dimensión normativa como su función práctica de protección.
+\begin{forobox}[title={Participación publicada en el foro}]
+\hfill\foroCopyButton{foro-participacion-Actividad-1.txt}\\[-0.5em]
+\phantomsection\label{foro-participacion}
 
-\subsection{¿Qué entiende por derecho subjetivo y derecho objetivo?}
+\textbf{Asunto:} Nociones básicas del derecho constitucional\par
+\medskip
+Hola a todas y todos: comparto mi participación al foro respondiendo, desde mis conocimientos previos, las cinco preguntas guía sobre nociones básicas de derecho.
+\medskip
 
-El derecho objetivo puede entenderse como el conjunto de normas jurídicas vigentes que regulan la conducta social, organizan instituciones y establecen consecuencias. Es el derecho visto como sistema normativo: constituciones, leyes, reglamentos, tratados y demás reglas aplicables.
+\begin{enumerate}[leftmargin=1.6em,labelsep=0.6em,itemsep=0.5em,label=\textbf{\arabic*)}]
+  \item \textbf{¿Qué es y cuál es la importancia de la Constitución?} La Constitución es la norma fundamental del Estado mexicano. En ella se organiza el poder público, se establecen las competencias de las autoridades, se reconocen derechos de las personas y se fijan límites al ejercicio del poder. Su importancia radica en que sirve como parámetro superior de validez para las demás normas: ninguna ley, acto de autoridad o decisión pública debe contrariar su contenido. Desde la perspectiva de las garantías constitucionales, también aporta la base para defender derechos cuando una autoridad los desconoce o los restringe indebidamente: el artículo 1.\textsuperscript{o} obliga al Estado a promover, respetar, proteger y garantizar los derechos humanos, y el artículo 133 confirma la supremacía constitucional dentro del orden jurídico mexicano.
 
-El derecho subjetivo, en cambio, es la facultad, prerrogativa o posibilidad concreta que una persona tiene para exigir algo, hacer algo, abstenerse de algo o reclamar protección con base en una norma. Por ejemplo, si el orden jurídico reconoce el derecho a la educación, una persona puede sostener una pretensión subjetiva relacionada con el acceso o permanencia en ese servicio, según las condiciones jurídicas aplicables.
+  \item \textbf{¿Qué entiende por derecho subjetivo y derecho objetivo?} El derecho objetivo es el conjunto de normas jurídicas vigentes que regulan la conducta social, organizan instituciones y establecen consecuencias; es el derecho visto como sistema normativo (constituciones, leyes, reglamentos, tratados y demás reglas aplicables). El derecho subjetivo, en cambio, es la facultad, prerrogativa o posibilidad concreta que una persona tiene para exigir algo, hacer algo, abstenerse de algo o reclamar protección con base en una norma. La diferencia central es que el derecho objetivo es la regla general y el derecho subjetivo es la facultad o pretensión que una persona puede ejercer a partir de esa regla.
 
-La diferencia central es que el derecho objetivo es la regla general y el derecho subjetivo es la facultad o pretensión que una persona puede ejercer a partir de esa regla.
+  \item \textbf{¿Qué entiende por derecho sustantivo y derecho adjetivo?} El derecho sustantivo regula el contenido de fondo de las relaciones jurídicas: define derechos, obligaciones, prohibiciones, instituciones y consecuencias principales. El derecho adjetivo, también llamado procesal, establece las vías, formas y procedimientos para hacer valer el derecho sustantivo ante una autoridad competente: cómo presentar una demanda, qué etapas debe seguir un juicio, qué recursos existen, qué plazos deben respetarse y cómo se ejecuta una resolución. Así, el sustantivo responde a la pregunta «qué derecho u obligación existe» y el adjetivo responde a «cómo se reclama, protege o hace efectivo ese derecho».
 
-\subsection{¿Qué entiende por derecho sustantivo y derecho adjetivo?}
+  \item \textbf{¿Conoce la diferencia entre proceso y procedimiento?} Sí. El proceso es la relación o estructura jurídica completa mediante la cual se busca resolver un conflicto o una pretensión ante una autoridad; su finalidad es obtener una decisión fundada que dé solución al caso y respete las garantías de audiencia, defensa, legalidad y debido proceso. El procedimiento es la secuencia concreta de actos, pasos, plazos y formalidades que permiten desarrollar ese proceso. En otras palabras, el proceso es el marco jurídico orientado a resolver una controversia y el procedimiento es el camino ordenado que se sigue para llegar a esa resolución.
 
-El derecho sustantivo regula el contenido de fondo de las relaciones jurídicas: define derechos, obligaciones, prohibiciones, instituciones y consecuencias principales. Por ejemplo, las normas que reconocen derechos humanos, establecen obligaciones civiles o tipifican conductas pertenecen al plano sustantivo porque determinan qué se protege, qué se debe o qué se prohíbe.
+  \item \textbf{¿Qué entiende por garantía y por derecho humano?} Un derecho humano es una prerrogativa vinculada con la dignidad de la persona; en el sistema constitucional mexicano se reconoce a toda persona y exige obligaciones de respeto, protección, promoción y garantía por parte de todas las autoridades, conforme al artículo 1.\textsuperscript{o} constitucional. Una garantía es un mecanismo jurídico que protege, asegura o permite hacer efectivo un derecho; por ejemplo, el juicio de amparo es un medio procesal de protección frente a normas generales, actos u omisiones de autoridad que pueden vulnerar derechos humanos, conforme a la Ley de Amparo reglamentaria de los artículos 103 y 107 constitucionales. La diferencia puede sintetizarse así: el derecho humano es el bien o facultad protegida y la garantía es la vía que ayuda a hacerlo exigible. Sin mecanismos eficaces, los derechos pueden quedar en una declaración formal sin protección real.
+\end{enumerate}
+\medskip
 
-El derecho adjetivo, también llamado procesal, establece las vías, formas y procedimientos para hacer valer el derecho sustantivo ante una autoridad competente. Indica cómo presentar una demanda, qué etapas debe seguir un juicio, qué recursos existen, qué plazos deben respetarse y cómo se ejecuta una resolución.
+\textbf{Pregunta para el grupo:} ¿en qué caso concreto han visto que un derecho reconocido se quede sin protección por falta de una garantía eficaz?\par
+\medskip
+Saludos y quedo atento a sus comentarios.
+\end{forobox}
 
-Así, el derecho sustantivo responde principalmente a la pregunta \textit{qué derecho u obligación existe}; el derecho adjetivo responde a la pregunta \textit{cómo se reclama, protege o hace efectivo ese derecho}.
-
-\subsection{¿Conoce la diferencia entre proceso y procedimiento?}
-
-Sí. El proceso es la relación o estructura jurídica completa mediante la cual se busca resolver un conflicto o una pretensión ante una autoridad. Tiene una finalidad: obtener una decisión fundada que dé solución al caso y respete garantías de audiencia, defensa, legalidad y debido proceso.
-
-El procedimiento es la secuencia concreta de actos, pasos, plazos y formalidades que permiten desarrollar ese proceso. En otras palabras, el proceso es el marco jurídico orientado a resolver una controversia; el procedimiento es el camino ordenado que se sigue para llegar a esa resolución.
-
-La distinción es relevante porque no basta con que exista un proceso en abstracto; también se requiere que el procedimiento respete reglas que hagan posible la defensa, la contradicción, la prueba y la decisión imparcial.
-
-\subsection{¿Qué entiende por garantía y por derecho humano?}
-
-Un derecho humano es una prerrogativa vinculada con la dignidad de la persona. En el sistema constitucional mexicano se reconoce a toda persona y exige obligaciones de respeto, protección, promoción y garantía por parte de todas las autoridades, conforme al artículo 1.º constitucional \citep{cpeum2026}. Ejemplos de derechos humanos son la libertad personal, la igualdad, la educación, la salud, la libertad de expresión y el acceso a la justicia.
-
-Una garantía es un mecanismo jurídico que protege, asegura o permite hacer efectivo un derecho. En el lenguaje constitucional contemporáneo conviene distinguir entre el derecho reconocido y las vías institucionales para defenderlo. Por ejemplo, el juicio de amparo es un medio procesal de protección frente a normas generales, actos u omisiones de autoridad que pueden vulnerar derechos humanos, conforme a la Ley de Amparo reglamentaria de los artículos 103 y 107 constitucionales \citep{leyAmparo2026}.
-
-La diferencia puede sintetizarse así: el derecho humano es el bien o facultad protegida; la garantía o medio de protección es la vía que ayuda a hacerlo exigible. Sin mecanismos eficaces, los derechos pueden quedar en una declaración formal sin protección real.
+Leída en conjunto, la intervención evidencia que las cinco nociones forman una cadena: la supremacía constitucional da validez al sistema normativo (derecho objetivo), del que nacen facultades concretas (derecho subjetivo); el derecho sustantivo fija su contenido y el adjetivo lo hace reclamable mediante procesos y procedimientos; y la garantía es lo que convierte al derecho humano en algo exigible y no en mera declaración. La pregunta final apunta, precisamente, al eslabón que más suele fallar en la práctica: la eficacia de la garantía.
 
 % ==============================================================================
 % SECCIONES COMENTADAS DE TRAZABILIDAD EDITORIAL
@@ -160,35 +216,11 @@ La diferencia puede sintetizarse así: el derecho humano es el bien o facultad p
 % También es importante que el foro se convierta en decisiones didácticas. Si predominan confusiones entre derecho humano y garantía, el curso debe incluir ejemplos de mecanismos de protección. Si la dificultad aparece entre proceso y procedimiento, conviene trabajar un caso guiado con etapas. Si el grupo muestra respuestas muy heterogéneas, puede ser útil elaborar un glosario comparado y una matriz de errores frecuentes.
 % ==============================================================================
 
-% --- Ciclo A: refuerzo editorial materializado ---
-\section*{Refuerzo editorial Ciclo A}
-Este apartado consolida la mejora editorial incremental del nodo a partir del estándar maduro de AulaTeX. El refuerzo atiende brechas detectadas de bibliografía, citas, análisis propio, transferencia y cierre argumentado, sin sustituir la consigna original ni copiar contenido de los casos maestros.
-
-\subsection*{Tesis de trabajo}
-La actividad debe sostener una postura verificable: el producto solicitado no sólo organiza información, sino que permite interpretar el problema disciplinar, justificar decisiones y reconocer sus consecuencias académicas o profesionales.
-
-\subsection*{Análisis propio}
-El hallazgo central es que una entrega madura requiere pasar de la descripción a la interpretación. Por ello, el desarrollo debe explicar qué revela el producto construido, por qué es relevante para la materia y qué criterio permite evaluar su pertinencia. Esta operación convierte la evidencia reunida en argumento académico.
-
-\subsection*{Transferencia profesional}
-La transferencia consiste en vincular el producto con situaciones reales de desempeño: diagnóstico, toma de decisiones, comunicación de resultados, cumplimiento normativo, intervención educativa o resolución de problemas según el campo disciplinar. Así, la actividad adquiere valor formativo más allá de la plantilla.
-
-\subsection*{Cierre argumentado}
-En consecuencia, la calidad de la actividad depende de que el producto visible, las fuentes y la conclusión formen una secuencia coherente. La conclusión debe recuperar la tesis, indicar el principal aprendizaje y señalar una implicación práctica o conceptual.
-
-% Brechas locales atendidas por Ciclo A: analisis_propio, bibliografia_insuficiente
-% Reglas globales aplicadas:
-% - Priorizar cierre de brecha recurrente: bibliografia_insuficiente (427 nodos).
-% - Priorizar cierre de brecha recurrente: citas_insuficientes (328 nodos).
-% - Priorizar cierre de brecha recurrente: pendientes_editoriales (215 nodos).
-% - Priorizar cierre de brecha recurrente: tesis (15 nodos).
-% --- Fin Ciclo A ---
-
 \section{Conclusión}
 
-La Actividad 1 permite reconocer que las nociones básicas de derecho son indispensables para estudiar garantías constitucionales. La Constitución da fundamento y límite al poder; el derecho objetivo proporciona el sistema de normas; el derecho subjetivo muestra la facultad concreta de las personas; el derecho sustantivo define contenidos de fondo; el derecho adjetivo permite reclamarlos; el proceso organiza la resolución institucional de conflictos; el procedimiento ordena los actos que lo integran; el derecho humano identifica la prerrogativa protegida, y la garantía expresa el mecanismo que la hace exigible.
+Las nociones básicas del derecho constitucional forman una cadena y no una lista de definiciones sueltas: la Constitución fundamenta y limita el poder; el derecho objetivo constituye el sistema de normas del que el derecho subjetivo extrae facultades concretas; el derecho sustantivo fija los contenidos de fondo y el adjetivo abre las vías para reclamarlos mediante procesos y procedimientos; y la garantía es lo que transforma al derecho humano en algo exigible \citep{cpeum2026,leyAmparo2026}. Vistas así, estas distinciones muestran que la protección constitucional solo se realiza cuando derechos, límites al poder y vías procesales eficaces operan de manera articulada.
 
-Mi postura es que el foro diagnóstico debe asumirse como una herramienta de aprendizaje y planificación, no como un simple requisito de participación. Cuando las respuestas se analizan con una matriz clara y se traducen en actividades de nivelación, el curso inicia con mejores condiciones para comprender la defensa constitucional de los derechos humanos y para desarrollar un pensamiento jurídico más preciso, argumentado y aplicable.
+El punto que considero más relevante es el último eslabón: un derecho reconocido sin una garantía eficaz corre el riesgo de quedar en una declaración formal. Por eso el análisis de las garantías constitucionales debe centrarse menos en enunciar derechos y más en examinar los mecanismos —como el juicio de amparo— que los hacen efectivos; esa es la brújula que orienta el estudio posterior de la asignatura.\footnote{Para redactar y organizar este documento se utilizó una herramienta de inteligencia artificial con el propósito de ordenar ideas y revisar la redacción; su uso no sustituyó el análisis propio ni la interpretación jurídica, que corresponden al autor.}
 
 \clearpage
 \nocite{unadmSitioWeb,unadmMallaDerecho2024,cpeum2026,leyAmparo2026,normasApaReferencias2020}
