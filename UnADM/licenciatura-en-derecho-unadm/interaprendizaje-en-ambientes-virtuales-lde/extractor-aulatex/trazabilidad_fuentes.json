@@ -8,23 +8,7 @@
     "cita_textual": ""
   },
   {
-    "concepto": "Diversidad cultural",
-    "fuente": "",
-    "ruta_fuente": "",
-    "ubicacion": "",
-    "fragmento_id": "",
-    "cita_textual": ""
-  },
-  {
-    "concepto": "Diversidad lingüística",
-    "fuente": "",
-    "ruta_fuente": "",
-    "ubicacion": "",
-    "fragmento_id": "",
-    "cita_textual": ""
-  },
-  {
-    "concepto": "Narración situada / comunitaria",
+    "concepto": "Diversidad cultural y lingüística",
     "fuente": "",
     "ruta_fuente": "",
     "ubicacion": "",
@@ -33,6 +17,22 @@
   },
   {
     "concepto": "Perspectiva intercultural",
+    "fuente": "",
+    "ruta_fuente": "",
+    "ubicacion": "",
+    "fragmento_id": "",
+    "cita_textual": ""
+  },
+  {
+    "concepto": "Composición pluricultural de la nación",
+    "fuente": "README.md",
+    "ruta_fuente": "C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\UnADM\\licenciatura-en-derecho-unadm\\interaprendizaje-en-ambientes-virtuales-lde\\referencias-interaprendizaje-en-ambientes-virtuales\\README.md",
+    "ubicacion": "bloque 1",
+    "fragmento_id": "README_5572760bf5_b0001_f001",
+    "cita_textual": "Referencias - Interaprendizaje en ambientes virtuales Carpeta para planeaciones, lecturas, notas, jurisprudencia, normas, casos, datos y evidencia auxiliar de la asignatura. Convenciones Registrar toda fuente final en ../interaprendizaje-en-ambientes-virtuales.bib."
+  },
+  {
+    "concepto": "Derechos lingüísticos",
     "fuente": "",
     "ruta_fuente": "",
     "ubicacion": "",
