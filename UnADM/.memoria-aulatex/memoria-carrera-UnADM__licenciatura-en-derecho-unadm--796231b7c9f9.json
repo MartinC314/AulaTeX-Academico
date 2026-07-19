@@ -457,7 +457,25 @@
           "respuesta",
           "justificación"
         ],
-        "preservation_rule": "Si el insumo es cuestionario, el desarrollo visible debe conservar reactivos, respuestas y justificaciones en tabla compacta o lista estructurada; no debe transformarse en ensayo salvo que la consigna lo pida."
+        "preservation_rule": "Si el insumo es cuestionario, el desarrollo visible debe conservar reactivos, respuestas y justificaciones en tabla compacta o lista estructurada; no debe transformarse en ensayo salvo que la consigna lo pida.",
+        "structure_rule": "Integrar contexto y problema en la introducción; si el producto es cuestionario, Desarrollo debe contener el cuestionario con su título y el marco conceptual debe integrarse dentro de la misma sección; nivel cognitivo aplicado va comentado salvo consigna expresa.",
+        "three_act_gravity_rule": "",
+        "layout_rule": "",
+        "no_gap_rule": "",
+        "closure_rule": "Integrar análisis propio y postura personal en la conclusión, con posición, razón y consecuencia."
+      },
+      "structure_contract": {
+        "three_part_structure": "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
+        "development_section": "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
+        "product_centric_gravity": "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
+        "introduction": "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
+        "conclusion": "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa"
+      },
+      "layout_contract": {
+        "no_gap_before_visual_deliverable": "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
+        "landscape_single_page": "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
+        "conclusion_single_page": "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla).",
+        "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos."
       },
       "bibliography_contract": {
         "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
@@ -469,7 +487,7 @@
         "career": "licenciatura-en-derecho-unadm",
         "subject": "",
         "activity": "Actividad 2",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-2"
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-2"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -480,13 +498,21 @@
         "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
         "sin placeholders, con contexto/problema integrado en introducción, análisis propio integrado en conclusión, postura personal integrada en conclusión y transferencia profesional",
         "sin metadiscurso de ejecución: no hablar de 'esta actividad', 'producto solicitado', 'se presenta' o 'la técnica usada' como narrador externo; hablar del tema, problema, concepto, cuestionario, caso o tabla según corresponda",
+        "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
         "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
-        "si el producto es cuestionario, la sección Desarrollo debe estar ocupada por el cuestionario con su título; el marco conceptual va dentro de esa misma sección, no como sección/subsección independiente salvo consigna expresa",
+        "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
+        "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
         "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa",
         "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
         "En el cuerpo final no narrar el proceso de elaboración ni mencionar la palabra 'Actividad' como sujeto del análisis; en su lugar hablar del tema, problema, concepto, cuestionario, caso, tabla o fenómeno estudiado.",
         "El contexto y el problema se integran en la introducción; no crear una subsección visible 'Contexto y problema' salvo instrucción expresa de la consigna.",
-        "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa."
+        "Estructurar el cuerpo visible en tres actos: Introducción, Desarrollo y Conclusiones. El desarrollo es UNA sola sección (no varias \\section de primer nivel); marco conceptual, producto solicitado y análisis van como subsecciones dentro de ella.",
+        "El título del acto de desarrollo debe ser descriptivo del tema, no la palabra 'Desarrollo'. Ejemplos válidos: 'Clasificación de los tipos de seguro', 'Marco y clasificación de los derechos humanos'. El nombre nombra el fenómeno, no la etiqueta didáctica.",
+        "Dar protagonismo imperativo al producto solicitado (mapa conceptual, cuadro, tabla, esquema) dentro del desarrollo. El desarrollo gravita a su alrededor: ANTES lo prepara (marco conceptual-teórico que conduce al producto) y DESPUÉS lo interpreta (lectura del producto, semejanzas y diferencias, implicaciones). El énfasis recae en el tema y en el producto, no en la etiqueta ni en el metadiscurso.",
+        "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa.",
+        "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
+        "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
+        "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla)."
       ],
       "exceptions": [],
       "learned_from": [
@@ -523,7 +549,9 @@
           "has_memory": true
         }
       ],
-      "novelty_signals": [],
+      "novelty_signals": [
+        "institutional_identity"
+      ],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -552,7 +580,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260717-201537",
+      "run_id": "20260719-082735",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm",
@@ -564,7 +592,7 @@
         "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde",
         "UnADM/licenciatura-en-derecho-unadm/derecho-de-la-contratacion-internacional-lde"
       ],
-      "novelty_count": 0
+      "novelty_count": 1
     }
   },
   "curricular_context": {},
