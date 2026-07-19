@@ -106,6 +106,130 @@ instrucciones locales > extractor > memoria distribuida > herencia > LLM
 - `bot-interfaz`: interfaz de comunicacion que pide confirmacion antes de ejecutar el motor inteligente.
 
 Los artefactos temporales viven en `.aulatex-temp/`. La memoria persistente por nodo vive en carpetas `.memoria-aulatex/` distribuidas en el workspace.
+
+## Contratos de `realizar-actividad` (motor inteligente)
+
+El motor inteligente `realizar-actividad` opera bajo un **contrato editorial explícito** definido en `scripts/aulatex/activity_contract.py` (`REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT`). Ese contrato se **propaga al prompt del agente** a través de `scripts/aulatex/incremental_detail_planner.py` (bloques `didactic_contract`, `structure_contract`, `layout_contract`, `bibliography_contract` y `_quality_rules()`), y se **evalúa** con `evaluate_activity_contract()` (consumido por `activity-observe` y `activity-monitor`).
+
+> Propósito del contrato: tomar un nodo, carpeta o archivo de actividad y llevarlo desde memoria e insumos hasta TEX/PDF final validado mediante ciclos repetibles.
+
+### Fases del pipeline (compromisos de proceso)
+
+El pipeline se compromete a recorrer, en orden, estas fases:
+
+| # | Fase | Compromiso |
+|---|---|---|
+| 1 | `discover_node` | Resolver scope editorial, TEX canónico, `.bib`, PDF esperado, memoria local y fuentes de referencia. |
+| 2 | `build_editorial_memory` | Construir, refrescar y consultar memoria editorial local, ascendente y de nodos relacionados **antes de redactar**. |
+| 3 | `ingest_sources` | Extraer e incorporar notas, programas, PDF, Markdown y referencias locales; buscar fuentes externas cuando falte sustento formal. |
+| 4 | `validate_questionnaire_inputs` | Validar reactivos, respuestas y justificaciones contra fuentes locales sólidas o fuentes en línea verificables. |
+| 5 | `detect_contracts` | Detectar técnica didáctica, formato solicitado, criterios de entrega, rúbrica, subject/título y bibliografía mínima. |
+| 6 | `draft_or_repair_content` | Crear o mejorar el TEX **conservando la técnica didáctica** y elevando rigor, fuentes y redacción. |
+| 7 | `evaluate_quality` | Observar contrato de actividad, trazabilidad, cobertura conceptual, citas, redacción, formato y coherencia. |
+| 8 | `compile_and_repair` | Compilar PDF, clasificar errores, reparar bibliografía o LaTeX y verificar frescura del PDF. |
+| 9 | `repeat_until_pass` | Repetir memoria, extracción, redacción, evaluación y compilación hasta aprobar criterios o agotar ciclos. |
+| 10 | `align_report_and_presentation` | Cuando existan reporte y presentación, alinear la presentación con el reporte (contenido, profundidad, fuentes, conclusión). |
+| 11 | `promote_artifacts` | Persistir TEX, PDF, `.bib`, extractor, memoria, manifiestos, reportes y bitácora de decisión. |
+
+### Compuertas de calidad (quality gates)
+
+El TEX/PDF final debe satisfacer estas compuertas antes de darse por aprobado:
+
+- **memory**: memoria local, ascendente y relacionada consultada antes de redactar o corregir.
+- **sources** / **online_validation**: fuentes locales incorporadas y fuentes formales citables; si el corpus local no basta, investigar en línea y materializar en `.bib`.
+- **questionnaire_validation**: cada respuesta y justificación de un cuestionario contrastada con bibliografía sólida.
+- **didactic_format**: la forma visible respeta la técnica solicitada (cuestionario, foro, caso, **mapa**, **tabla/cuadro**, etc.).
+- **headings**: título sin “Actividad #”; subtítulo compacto; `subject` = `Actividad # - Materia`.
+- **bibliography** / **visible_citations** / **reference_growth**: toda cita visible tiene entrada `.bib`; sin entradas inventadas; las fuentes nuevas aparecen como citas visibles; mínimo 3 fuentes (5 para cuestionarios extensos).
+- **content**: sin placeholders; contexto/problema en la introducción; análisis y postura propios en la conclusión.
+- **visible_style**: sin metadiscurso de ejecución (no hablar de “esta actividad”, “producto solicitado”, “se presenta”); hablar del tema.
+- **three_part_structure**: cuerpo visible en **tres actos** — Introducción, un único Desarrollo y Conclusiones; el marco conceptual, el producto y su análisis son **subsecciones** del desarrollo.
+- **development_section**: el acto de desarrollo **NO se titula “Desarrollo”**, sino con un título temático descriptivo (p. ej. “Clasificación de los tipos de seguro”).
+- **product_centric_gravity**: el producto solicitado (mapa/cuadro/tabla) tiene **protagonismo imperativo**; el texto gravita a su alrededor (lo prepara antes, lo interpreta después).
+- **introduction** / **conclusion**: la introducción absorbe contexto y problema; la conclusión integra síntesis, análisis y postura (sin secciones separadas de “Análisis propio”).
+- **ai_declaration**: la declaración de uso de IA, cuando exista, va como `\footnote` ligada a una frase oportuna (por defecto de la conclusión), **nunca** como `\section` ni bloque separado.
+- **compile**: PDF existe, está fresco, sin errores críticos ni citas indefinidas.
+- **report_presentation_alignment**: reporte y presentación coherentes en contenido, profundidad, fuentes y conclusión.
+
+### Reglas de texto visible
+
+- **avoid_metadiscourse** / **prefer_theme_language**: hablar del tema, problema, concepto, cuestionario, caso o tabla, no de “la actividad”.
+- **fold_context_into_introduction**: contexto y problema dentro de la introducción, sin subsección “Contexto y problema”.
+- **comment_organization_criteria** / **comment_cognitive_level**: criterio de organización, técnica y nivel cognitivo van como comentarios TEX, no como secciones visibles.
+- **three_part_body**: cuerpo en tres actos; desarrollo en una sola sección con subsecciones.
+- **development_title_cosmetic**: el título del desarrollo nombra el fenómeno, no la etiqueta didáctica.
+- **product_centric_development**: dar protagonismo imperativo al producto; prepararlo antes e interpretarlo después.
+- **fold_analysis_into_conclusion**: análisis propio y postura integrados en la conclusión.
+
+### Reglas de compilación y maquetado
+
+- **build_command** / **orphan_bbl**: usar `latexmk -f -pdf -bibtex` con `TEXINPUTS`/`BIBINPUTS`; borrar `.bbl`/`.aux` huérfanos si las citas salen como `[?]`.
+- **encoding_safety**: nunca editar `.tex` con PowerShell (`Set-Content`/`-replace`): corrompe UTF-8; usar herramientas que preserven la codificación.
+- **page_control** / **no_gap_before_visual_deliverable**: usar `\clearpage` para forzar secciones en su página; prohibido dejar media página o más en blanco antes de un entregable visual en landscape.
+- **landscape_single_page**: tabla/caption o diagrama/leyenda deben caber juntos en **una** página landscape (`\arraystretch<=1.2`, caption `\footnotesize`); no anteponer `\clearpage` a `\begin{landscape}`.
+- **conclusion_single_page**: la conclusión inicia con `\clearpage` y ocupa preferentemente una sola página.
+- **verify_visually**: verificar el resultado renderizando páginas a PNG con `pdftoppm`, no solo el código de retorno.
+
+### Contratos por técnica didáctica
+
+`DIDACTIC_TECHNIQUE_CONTRACTS` fija reglas específicas según el producto detectado (por alias en la planeación):
+
+| Técnica | Alias | Compromiso clave |
+|---|---|---|
+| `cuestionario_diagnostico` | cuestionario, diagnóstico, reactivo | Conservar pregunta, respuesta y justificación; el Desarrollo contiene el cuestionario con su título. |
+| `estudio_de_caso` | caso, estudio de caso, situación | Conservar hechos, actores, problema y resolución argumentada. |
+| `mapa_conceptual` | mapa conceptual, conceptos, diagrama | Mapa no esquelético (raíz + ramas + niveles); TikZ jerárquico en landscape; el mapa es el **núcleo** del desarrollo. |
+| `tabla_didactica` | tabla, cuadro, cuadro comparativo | Estructura tabular con caption y criterio de lectura; landscape en su propia página; la tabla es el **núcleo** del desarrollo. |
+| `foro_diagnostico` | foro, foro diagnóstico | Conservar preguntas guía y respuestas compactas, sin convertirlo en ensayo. |
+
+Para `mapa_conceptual` y `tabla_didactica` rige además `three_act_gravity_rule`: el desarrollo no se fragmenta en varias `\section`; marco, producto y análisis son subsecciones de una sola sección temática y el producto manda (se prepara antes y se interpreta después).
+
+### Modo monitor y ciclos de optimización
+
+Existen dos formas de ejecutar los ciclos, con compromisos distintos:
+
+- **`agent --action realizar-actividad --cycle-mode full --iterations N`**: N ciclos completos de los cinco roles (planificar, investigar, generar, validar, criticar). ⚠️ Según `iterative_improvement_rules.avoid_full_cycle_agent`, este modo **no es observable** (guarda todo al final) y es **vulnerable a cuelgues de red sin timeout**; no se recomienda para muchos ciclos de mejora incremental.
+- **`activity-monitor --activity N --max-cycles M --workflow-backend langgraph`** (recomendado): bucle **observable** que escribe por ciclo, aplica parches verificables (bibliografía, revisión, compilación), reevalúa el contrato y **cierra temprano** si aprueba (`prefer_observable_monitor`).
+
+Compromisos de los ciclos de optimización (`iterative_improvement_rules`):
+
+- **avoid_full_cycle_agent**: no usar `agent --cycle-mode full` con muchos ciclos para mejorar contenido incrementalmente.
+- **prefer_observable_monitor**: preferir `activity-monitor` o un orquestador con timeout por llamada.
+- **monitor_note**: `activity-monitor` **no agrega conceptos nuevos** (sus parches son deterministas: placeholders, criterios, bibliografía); para enriquecer con razonamiento LLM se requiere un orquestador que pida subconceptos en JSON, deduplique y apile con tope por rama.
+- **tex_target_priority**: al observar una actividad con reporte y presentación, priorizar el TEX de reporte (`reporte-*`).
+
+> Ejecución masiva por lotes: para lanzar muchos ciclos de forma resistente a cuelgues, `scripts/act2-100ciclos-monitor.ps1` divide el trabajo en lotes con *watchdog* por lote y timeout de LLM configurable (`AULATEX_LLM_TIMEOUT_SECONDS`, `AULATEX_LLM_MAX_TOKENS`), registrando el progreso en `.aulatex-temp/`.
+
+### Reglas de validación de fuentes
+
+- **editorial_memory_first**: consultar memoria editorial local, ascendente y relacionada antes de redactar.
+- **local_first_online_when_needed**: priorizar corpus local; recurrir a fuentes en línea sólidas solo si no alcanza, y registrarlas en `.bib` con citas visibles.
+- **questionnaire_answers** / **visible_reference_growth**: todo cuestionario resuelto requiere mapa reactivo → respuesta → fuente; el crecimiento de referencias debe ser visible en el cuerpo y en `.bib`.
+- **no_unsupported_answers**: no consolidar respuestas dudosas sin marcarlas, corregirlas o respaldarlas.
+
+### Contrato de aprobación de la actividad (`ACTIVITY_1_CONTRACT`)
+
+`evaluate_activity_contract()` verifica elementos requeridos y rangos aceptables:
+
+- **Requeridos**: objetivo, fuente de instrucción, técnica didáctica, formato didáctico preservado, formato de salida, bibliografía, trazabilidad, criterios de evaluación, reflexión final y declaración de IA como `\footnote`.
+- **Rangos**: secciones 3–8; mínimo 3 entradas `.bib` y 3 citas visibles (5 para cuestionarios extensos); mínimo 5 conceptos.
+
+### Ciclo recomendado
+
+```text
+editorial-memory (local/ascendente/relacionada)
+  -> investigation (queries bibliográficas)
+  -> extractor / investigation local
+  -> validación de cuestionario
+  -> investigation online (si falta sustento)
+  -> expansión .bib + citas visibles
+  -> agent realizar-actividad
+  -> activity-observe
+  -> activity-revise / bibliography-repair
+  -> latexmk-build
+  -> repetir hasta aprobar el contrato
+```
+
 ```powershell
 .\scripts\install-aulatex-deepagents.ps1
 ```
