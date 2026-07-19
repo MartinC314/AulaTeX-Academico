@@ -480,9 +480,7 @@ CODEX_API_VERSION=2026-02-24
         "maxOutputTokens": 128000
       },
       {
-        "id": "gpt-5.3-codex",
-        "name": "gpt-5.3-codex",
-        "url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/responses",
+        "id": "gpt-5.3-codex",,
         "maxInputTokens": 272000,
         "maxOutputTokens": 128000,
       }
