@@ -84,6 +84,111 @@
         "Análisis posterior que lee la evolución como secuencia razonada (etapas, rupturas, continuidades), no como lista de datos.",
         "Cada hito respaldado con su cita \\citep de obra/discurso representativo."
       ]
+    },
+    "resena": {
+      "fuente_real": {
+        "materia": "Derecho a la Seguridad Social (UnADM, Licenciatura en Derecho)",
+        "actividad": "Actividad 3 (Semana 3) - Resena sobre el fundamento constitucional del derecho a la seguridad social (10%)",
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex",
+        "planeacion": "planeaciones-derecho-a-la-seguridad-social/Planificacion de actividades S3 - Derecho a la seguridad social.pdf",
+        "guia_metodologica": "LEO Uniandes - Guia para la elaboracion de una resena (https://leo.uniandes.edu.co/guia-para-la-elaboracion-de-una-resena/)",
+        "titulo": "Resena academica juridica: sintesis expositiva + evaluacion critica con juicio sustentado",
+        "estado": "trazada desde planeacion oficial + notas + guia LEO; en construccion (100 ciclos monitor/optimize/latexmk)"
+      },
+      "packages": [
+        "\\usepackage{csquotes}",
+        "\\usepackage{enumitem}"
+      ],
+      "skeleton": "% Producto: RESENA academica (sintesis expositiva + evaluacion critica).\n% Estructura LINEAL (LEO Uniandes): introduccion -> exposicion -> evaluacion critica -> conclusion -> referencias.\n\\section{<Titulo tematico de la resena (distinto al de la obra; atrapa el interes)>}\n\n% INTRODUCCION: indica que es una resena, presenta la obra/tema, autor, el\n% criterio de valoracion elegido y la hoja de ruta. Marco conceptual con \\citep.\nLa presente resena sintetiza y evalua criticamente <obra/tema>, cuyo objeto es <tema central>. Se centra en el criterio de <criterio significativo y debatible> y sostiene, como juicio critico, que <criterio + adjetivo formal y preciso + justificacion> \\citep{<fuente>}.\n\n% EXPOSICION: sintesis del contenido (tesis, ideas principales), parafraseo, no copia literal.\n\\subsection{<Subtitulo tematico de la exposicion>}\n<Sintesis expositiva: reconstruye la tesis y las ideas centrales de la obra o del articulado, parafraseando su contenido con \\citep{<fuente>}.>\n\n% EVALUACION CRITICA: desarrolla el juicio critico con evidencias (externas + analisis propio).\n\\subsection{<Subtitulo tematico de la valoracion>}\n<Presenta el criterio y desarrolla el juicio critico con evidencias, contrastando aportes, limites y supuestos mediante \\citep{<fuente>}. Postura propia: posicion + razon + consecuencia.>\n\n% CONCLUSION en pagina propia; reitera criterio+valoracion, relevancia y limitaciones. IA como footnote.\n\\clearpage\n\\section{Conclusion}\n<Recapitula el criterio y la valoracion, destaca por que la evaluacion es relevante y senala limitaciones y caminos de profundizacion. Cierra con la postura sostenida.>\\footnote{Declaracion de uso de inteligencia artificial: ...}\n\n\\clearpage\n\\bibliography{<materia>}",
+      "estructura_leo": {
+        "que_es": "Sintesis de la obra + evaluacion critica (dos componentes esenciales e inseparables).",
+        "estructura_lineal": [
+          "Parrafo de introduccion",
+          "Parrafos de exposicion (sintesis)",
+          "Parrafos de evaluacion critica (juicio)",
+          "Parrafo de conclusion",
+          "Bibliografia y referencias"
+        ],
+        "estructura_mixta": [
+          "Introduccion",
+          "Parrafos que entretejen exposicion+evaluacion por argumento/criterio",
+          "Conclusion",
+          "Bibliografia y referencias"
+        ],
+        "planeacion_previa": [
+          "Conocer la obra a profundidad (releer, tomar apuntes)",
+          "Definir criterios significativos y debatibles",
+          "Concretar el juicio critico: [criterio]+[adjetivo formal]+[justificacion]",
+          "Determinar evidencias (informacion externa + analisis propio)",
+          "Elegir estructura lineal o mixta"
+        ],
+        "juicio_critico_formula": "[criterio] + [adjetivo formal y preciso] + [justificacion] (una sola oracion).",
+        "adjetivos_formales": [
+          "novedoso",
+          "coherente",
+          "vigente",
+          "anacronico",
+          "impreciso",
+          "debil",
+          "imparcial",
+          "armonioso",
+          "pertinente",
+          "solido",
+          "desactualizado",
+          "relevante"
+        ]
+      },
+      "trazabilidad_planeacion": {
+        "proposito": "Identificar y analizar el sustento del derecho a la seguridad social en Mexico.",
+        "elementos_obligatorios": [
+          "Indicar el fundamento constitucional (art. 123 A fr. XXIX, 123 B fr. XI y art. 4 CPEUM).",
+          "Parafrasear el contenido de dichos articulos (no copia literal).",
+          "Reflexionar sobre su importancia como derecho humano para la ciudadania.",
+          "Senalar la legislacion secundaria (LSS, LISSSTE, LISSFAM)."
+        ],
+        "rubrica_oficial": {
+          "escala": "0-10 (5 rubros x 2 puntos), aporta 10/100 al curso",
+          "rubros": [
+            {
+              "rubro": "Fundamento constitucional",
+              "excelente": "Identifica el sustento completo a nivel constitucional."
+            },
+            {
+              "rubro": "Contenidos",
+              "excelente": "Resume el contenido de los articulos de manera completa."
+            },
+            {
+              "rubro": "Reflexion personal",
+              "excelente": "Reflexiona sobre la importancia del derecho humano."
+            },
+            {
+              "rubro": "Legislacion secundaria",
+              "excelente": "Da un listado completo de las leyes secundarias."
+            },
+            {
+              "rubro": "Fuentes",
+              "excelente": "Usa citas y listado en APA 7, buena redaccion y ortografia."
+            }
+          ]
+        }
+      },
+      "rules": "La resena NO es un resumen descriptivo: integra SINTESIS EXPOSITIVA (tesis, ideas centrales, parafrasis del articulado con \\citep) + EVALUACION CRITICA (juicio critico sustentado en evidencias). Estructura de tres actos con \\clearpage antes de la conclusion. Para la actividad de Derecho a la Seguridad Social debe cumplir los 4 elementos obligatorios de la planeacion: (1) fundamento constitucional (art. 123 apartado A fr. XXIX, apartado B fr. XI y art. 4 CPEUM), (2) parafrasis de esos articulos, (3) reflexion sobre su importancia como derecho humano, (4) legislacion secundaria (Ley del Seguro Social, LISSSTE, LISSFAM). Todas las fuentes en APA 7 con \\citep; declaracion de IA como \\footnote. Titulo tematico (no generico ni 'Desarrollo'). Postura propia (posicion, razon, consecuencia).",
+      "scoring_extra": [
+        "Distingue el componente EXPOSITIVO (sintesis) del CRITICO (juicio valorativo).",
+        "Formula un juicio critico explicito: criterio + adjetivo formal + justificacion.",
+        "Identifica el fundamento constitucional COMPLETO (123 A fr. XXIX, 123 B fr. XI, art. 4).",
+        "Parafrasea el articulado sin copia literal y con \\citep a la fuente normativa.",
+        "Incluye la reflexion sobre la importancia del derecho humano a la seguridad social.",
+        "Enlista la legislacion secundaria (LSS, LISSSTE, LISSFAM) como desarrollo del mandato.",
+        "Cita y referencia en APA 7 (>=5 fuentes); declaracion de IA como footnote."
+      ],
+      "reporte_vs_producto_rule": "DISTINCION REPORTE vs PRODUCTO (clave): el REPORTE academico (contenedor) tiene su PROPIA Introduccion y Conclusion; la RESENA es el PRODUCTO y va ANIDADA y enmarcada dentro del cuerpo del reporte, en un recuadro (entorno resenabox tipo tcolorbox, homologo al forobox del foro), conservando su estructura oficial completa DENTRO del recuadro: ficha bibliografica (recuadro), titulo de la resena, introduccion de la resena, cuerpo (exposicion + valoracion critica) y conclusiones de la resena. La Introduccion del reporte CONTEXTUALIZA la actividad y anuncia que el producto es una resena; la Conclusion del reporte reflexiona sobre lo APRENDIDO en la actividad (no repite la conclusion de la resena). La declaracion de IA como footnote va en la conclusion del reporte. Cuando la obra resenada no es un libro (p.ej. articulado constitucional), la ficha se adapta: obra resenada = los articulos/normas; autoria = organo emisor; editorial/fuente = DOF/Camara.",
+      "entorno_recuadro": {
+        "nombre": "resenabox",
+        "definicion": "\\newtcolorbox{resenabox}[1][]{enhanced,breakable,colback=unadmPaper,colframe=unadmGreenDark,boxrule=1pt,leftrule=4pt,arc=2pt,fonttitle=\\bfseries\\color{white},colbacktitle=unadmGreenDark,title={Producto: rese\\~na academica},#1}",
+        "macro_ficha": "\\fichabibliografica{obra}{autoria}{editorial/fuente}{lugar}{ano}{edicion/version} -> tcolorbox claro con tabla 2-col; adaptable a articulado normativo.",
+        "requiere": "\\usepackage[most]{tcolorbox}"
+      }
     }
   }
 }
