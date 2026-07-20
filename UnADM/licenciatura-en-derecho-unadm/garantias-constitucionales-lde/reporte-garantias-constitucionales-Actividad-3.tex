@@ -141,76 +141,76 @@ La elaboración siguió los seis pasos sugeridos por la asignatura \citep{lopezM
 \thispagestyle{empty}
 \begin{center}
 \vspace*{\fill}
-\resizebox{!}{0.82\textwidth}{%
+\resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[node distance=0.55cm and 0.9cm]
 
 % Nodo raíz (centro superior)
 \node[mcroot] (root) at (0.00,0.00) {Marco teórico de los derechos humanos y sus principios};
 
 % Ramas de primer nivel: distribución radial en abanico bajo la raíz
-\node[mcbranch] (hist) at (-9.93,-2.80) {1.1 Antecedentes históricos};
-\node[mcbranch] (gen) at (-5.91,-4.10) {1.2 Generaciones de los derechos};
-\node[mcbranch] (concepto) at (0.00,-4.66) {1.3 Concepto de derecho humano};
-\node[mcbranch] (princ) at (6.58,-4.01) {1.4 Principios (art. 1.º constitucional)};
-\node[mcbranch] (gar) at (9.98,-2.55) {1.5 Concepto de garantía};
+\node[mcbranch] (hist) at (-9.49,-1.12) {1.1 Antecedentes históricos};
+\node[mcbranch] (gen) at (-4.88,-1.65) {1.2 Generaciones de los derechos};
+\node[mcbranch] (concepto) at (-0.03,-3.19) {1.3 Concepto de derecho humano};
+\node[mcbranch] (princ) at (5.83,-2.01) {1.4 Principios (art. 1.º constitucional)};
+\node[mcbranch] (gar) at (13.03,-0.18) {1.5 Concepto de garantía};
 
 % Enlaces raíz -> ramas (proposiciones)
-\draw[mclink] (root) -- node[mclabel, pos=0.50]{tienen origen en} (hist);
-\draw[mclink] (root) -- node[mclabel, pos=0.50]{se clasifican en} (gen);
+\draw[mclink] (root) -- node[mclabel, pos=0.62]{tienen origen en} (hist);
+\draw[mclink] (root) -- node[mclabel, pos=0.40, xshift=6.0pt, yshift=-16.0pt]{se clasifican en} (gen);
 \draw[mclink] (root) -- node[mclabel, pos=0.50]{se definen como} (concepto);
 \draw[mclink] (root) -- node[mclabel, pos=0.50]{se rigen por} (princ);
 \draw[mclink] (root) -- node[mclabel, pos=0.50]{se hacen efectivos con} (gar);
 
 % ---- Hojas: 1.1 Antecedentes históricos (columna izquierda, se abre a la izquierda) ----
-\node[mcleaf] (hist1) at (-13.39,-4.22) {Iusnaturalismo: derechos innatos y anteriores al Estado};
-\node[mcleaf] (hist2) at (-13.39,-7.36) {Hitos: Carta Magna, Declaraciones de 1776 y 1789};
-\node[mcleaf] (hist3) at (-13.39,-10.39) {Positivación: DUDH (ONU, 1948) e instrumentos internacionales};
-\node[mcsub] (hist4) at (-13.39,-13.42) {México: reforma constitucional de 2011};
+\node[mcleaf] (hist1) at (-13.09,-3.48) {Iusnaturalismo: derechos innatos y anteriores al Estado};
+\node[mcleaf] (hist2) at (-13.09,-7.86) {Hitos: Carta Magna, Declaraciones de 1776 y 1789};
+\node[mcleaf] (hist3) at (-13.09,-10.06) {Positivación: DUDH (ONU, 1948) e instrumentos internacionales};
+\node[mcsub] (hist4) at (-13.09,-12.26) {México: reforma constitucional de 2011};
 
 % ---- Hojas: 1.2 Generaciones ----
-\node[mcleaf] (gen1) at (-5.77,-5.86) {1.ª Civiles y políticos (libertad)};
-\node[mcleaf] (gen2) at (-5.85,-8.01) {2.ª Económicos, sociales y culturales (igualdad)};
-\node[mcleaf] (gen3) at (-4.81,-9.78) {3.ª Colectivos o de solidaridad (fraternidad)};
-\node[mcsub] (gen4) at (-5.86,-11.92) {Antes: operativos vs. programáticos (superado)};
+\node[mcleaf] (gen1) at (-5.07,-5.77) {1.ª Civiles y políticos (libertad)};
+\node[mcleaf] (gen2) at (-5.01,-8.10) {2.ª Económicos, sociales y culturales (igualdad)};
+\node[mcleaf] (gen3) at (-5.67,-10.45) {3.ª Colectivos o de solidaridad (fraternidad)};
+\node[mcsub] (gen4) at (-6.02,-13.48) {Antes: operativos vs. programáticos (superado)};
 
 % ---- Hojas: 1.3 Concepto (centro) ----
-\node[mcleaf] (con1) at (-0.08,-6.81) {Prerrogativas inherentes a la dignidad humana};
-\node[mcleaf] (con2) at (-0.07,-8.64) {Sujeto: toda persona; obligado: el Estado};
-\node[mcleaf] (con3) at (-1.06,-11.05) {Deberes estatales: respetar, proteger, promover y garantizar};
-\node[mcsub] (con4) at (-0.22,-12.67) {Base: art. 1.º y art. 133 constitucionales};
+\node[mcleaf] (con1) at (-1.21,-5.51) {Prerrogativas inherentes a la dignidad humana};
+\node[mcleaf] (con2) at (-0.93,-8.97) {Sujeto: toda persona; obligado: el Estado};
+\node[mcleaf] (con3) at (-1.74,-12.11) {Deberes estatales: respetar, proteger, promover y garantizar};
+\node[mcsub] (con4) at (-1.36,-14.22) {Base: art. 1.º y art. 133 constitucionales};
 
 % ---- Hojas: 1.4 Principios (art. 1.º) ----
-\node[mcleaf] (pr1) at (6.47,-5.44) {Universalidad: a toda persona por su condición humana};
-\node[mcleaf] (pr2) at (8.81,-7.17) {Interdependencia: unos derechos dependen de otros};
-\node[mcleaf] (pr3) at (7.13,-10.27) {Indivisibilidad: forman una unidad inseparable};
-\node[mcleaf] (pr4) at (6.55,-11.94) {Progresividad: avance constante en la protección};
-\node[mcleaf] (pr5) at (6.51,-13.80) {No regresión: prohíbe reducir el nivel ya alcanzado};
+\node[mcleaf] (pr1) at (4.34,-4.05) {Universalidad: a toda persona por su condición humana};
+\node[mcleaf] (pr2) at (6.25,-6.42) {Interdependencia: unos derechos dependen de otros};
+\node[mcleaf] (pr3) at (6.78,-10.73) {Indivisibilidad: forman una unidad inseparable};
+\node[mcleaf] (pr4) at (5.81,-14.18) {Progresividad: avance constante en la protección};
+\node[mcleaf] (pr5) at (6.94,-16.35) {No regresión: prohíbe reducir el nivel ya alcanzado};
 
 % ---- Hojas: 1.5 Garantías (columna derecha, se abre a la derecha) ----
-\node[mcleaf] (ga1) at (13.39,-3.99) {Mecanismo jurídico que hace exigible el derecho};
-\node[mcleaf] (ga2) at (13.39,-5.77) {Derecho $\neq$ garantía: bien protegido vs. vía de defensa};
-\node[mcleaf] (ga3) at (13.39,-10.96) {Formaliza y da efectividad al derecho};
-\node[mcsub] (ga4) at (13.39,-12.49) {Suspensión: legalidad, proporcionalidad y temporalidad};
+\node[mcleaf] (ga1) at (13.03,-3.88) {Mecanismo jurídico que hace exigible el derecho};
+\node[mcleaf] (ga2) at (13.38,-6.43) {Derecho $\neq$ garantía: bien protegido vs. vía de defensa};
+\node[mcleaf] (ga3) at (13.03,-8.67) {Formaliza y da efectividad al derecho};
+\node[mcsub] (ga4) at (13.03,-13.16) {Suspensión: legalidad, proporcionalidad y temporalidad};
 
 % Enlaces rama -> hojas (con palabras de enlace: cada liga forma una proposición)
-\draw[mclink] (hist) -- node[mclabel, pos=0.34, xshift=3.8pt, yshift=-9.2pt]{parten del} (hist1);
+\draw[mclink] (hist) -- node[mclabel, pos=0.66]{parten del} (hist1);
 \draw[mclink] (hist1) -- node[mclabel, pos=0.50]{se expresan en} (hist2);
 \draw[mclink] (hist2) -- node[mclabel, pos=0.50]{culminan en} (hist3);
 \draw[mclink] (hist3) -- node[mclabel, pos=0.50]{se recibe en} (hist4);
-\draw[mclink] (gen) -- node[mclabel, pos=0.50, xshift=17.0pt, yshift=1.4pt]{comprenden la} (gen1);
+\draw[mclink] (gen) -- node[mclabel, pos=0.50]{comprenden la} (gen1);
 \draw[mclink] (gen1) -- node[mclabel, pos=0.50]{y la} (gen2);
 \draw[mclink] (gen2) -- node[mclabel, pos=0.50]{y la} (gen3);
 \draw[mclink] (gen3) -- node[mclabel, pos=0.50]{superan la idea de} (gen4);
 \draw[mclink] (concepto) -- node[mclabel, pos=0.50]{son} (con1);
 \draw[mclink] (con1) -- node[mclabel, pos=0.50]{cuyo} (con2);
 \draw[mclink] (con2) -- node[mclabel, pos=0.50]{con} (con3);
-\draw[mclink] (con3) -- node[mclabel, pos=0.34, xshift=-22.8pt, yshift=-11.7pt]{fundados en} (con4);
-\draw[mclink] (princ) -- node[mclabel, pos=0.50]{incluyen} (pr1);
-\draw[mclink] (pr1) -- node[mclabel, pos=0.34, xshift=-15.3pt, yshift=-20.5pt]{y} (pr2);
+\draw[mclink] (con3) -- node[mclabel, pos=0.50]{fundados en} (con4);
+\draw[mclink] (princ) -- node[mclabel, pos=0.44]{incluyen} (pr1);
+\draw[mclink] (pr1) -- node[mclabel, pos=0.50]{y} (pr2);
 \draw[mclink] (pr2) -- node[mclabel, pos=0.50]{y} (pr3);
 \draw[mclink] (pr3) -- node[mclabel, pos=0.50]{y} (pr4);
 \draw[mclink] (pr4) -- node[mclabel, pos=0.50]{y} (pr5);
-\draw[mclink] (gar) -- node[mclabel, pos=0.42, xshift=-6.7pt, yshift=-15.7pt]{es un} (ga1);
+\draw[mclink] (gar) -- node[mclabel, pos=0.50]{es un} (ga1);
 \draw[mclink] (ga1) -- node[mclabel, pos=0.50]{pues} (ga2);
 \draw[mclink] (ga2) -- node[mclabel, pos=0.50]{ya que} (ga3);
 \draw[mclink] (ga3) -- node[mclabel, pos=0.50]{admite} (ga4);
@@ -225,54 +225,54 @@ La elaboración siguió los seis pasos sugeridos por la asignatura \citep{lopezM
 % las ramas internas (gen/con/pr) reparten sus nodos a ambos costados.
 
 % -- Historia: racimo a la izquierda de la columna hist --
-\node[mcsub] (mx4) at (-13.39,-2.50) {1689: Bill of Rights limita el poder monárquico inglés};
-\draw[mclink] (hist1) -- node[mclabel, pos=0.50]{arraiga en} (mx4);
-\node[mcsub] (mx2) at (-10.63,-5.77) {1945: Carta de la ONU impulsa la internacionalización de los derechos humanos};
-\draw[mclink] (hist2) -- node[mclabel, pos=0.28, xshift=-12.8pt, yshift=22.2pt]{avanza con} (mx2);
-\node[mcsub] (mx1) at (-10.19,-8.86) {1951: la ONU dividió en dos instrumentos los derechos de la DUDH};
-\draw[mclink] (hist3) -- node[mclabel, pos=0.28, xshift=-11.1pt, yshift=23.1pt]{se desarrolla al} (mx1);
-\node[mcsub] (mx3) at (-10.93,-11.95) {1993: Declaración de Viena reafirma universalidad e indivisibilidad};
-\draw[mclink] (hist4) -- node[mclabel, pos=0.22, xshift=-13.1pt, yshift=22.0pt]{consolidada en} (mx3);
+\node[mcsub] (mx4) at (-13.09,-0.87) {1689: Bill of Rights limita el poder monárquico inglés};
+\draw[mclink] (hist1) -- node[mclabel, pos=0.34]{arraiga en} (mx4);
+\node[mcsub] (mx2) at (-9.87,-5.67) {1945: Carta de la ONU impulsa la internacionalización de los derechos humanos};
+\draw[mclink] (hist2) -- node[mclabel, pos=0.50]{avanza con} (mx2);
+\node[mcsub] (mx1) at (-9.41,-9.91) {1951: la ONU dividió en dos instrumentos los derechos de la DUDH};
+\draw[mclink] (hist3) -- node[mclabel, pos=0.62, xshift=-1.2pt, yshift=29.9pt]{se desarrolla al} (mx1);
+\node[mcsub] (mx3) at (-13.09,-14.48) {1993: Declaración de Viena reafirma universalidad e indivisibilidad};
+\draw[mclink] (hist4) -- node[mclabel, pos=0.50]{consolidada en} (mx3);
 
 % -- Generaciones: racimo a la izquierda de la columna gen --
-\node[mcsub] (mx7) at (-9.34,-4.31) {3.ª generación: desarrollo, paz y medio ambiente sano};
-\draw[mclink] (gen1) -- node[mclabel, pos=0.58, xshift=-10.2pt, yshift=-23.5pt]{se amplía a} (mx7);
-\node[mcsub] (mx8) at (-9.33,-7.31) {PIDCP y PIDESC comparten la libre determinación (art. 1 común)};
-\draw[mclink] (gen2) -- node[mclabel, pos=0.28, xshift=5.0pt, yshift=25.1pt]{se articulan en} (mx8);
-\node[mcsub] (mx6) at (-8.28,-10.44) {Todas las generaciones imponen obligaciones positivas y negativas};
-\draw[mclink] (gen3) -- node[mclabel, pos=0.34, xshift=4.8pt, yshift=-25.2pt]{comparten que} (mx6);
-\node[mcsub] (mx5) at (-9.34,-13.46) {Crítica al modelo generacional: coexistencia y ausencia de jerarquía};
-\draw[mclink] (gen4) -- node[mclabel, pos=0.58, xshift=-4.0pt, yshift=9.1pt]{recibe} (mx5);
+\node[mcsub] (mx7) at (-8.42,-3.60) {3.ª generación: desarrollo, paz y medio ambiente sano};
+\draw[mclink] (gen1) -- node[mclabel, pos=0.50]{se amplía a} (mx7);
+\node[mcsub] (mx8) at (-8.75,-7.86) {PIDCP y PIDESC comparten la libre determinación (art. 1 común)};
+\draw[mclink] (gen2) -- node[mclabel, pos=0.38, xshift=-2.5pt, yshift=-39.8pt]{se articulan en} (mx8);
+\node[mcsub] (mx6) at (-9.57,-12.23) {Todas las generaciones imponen obligaciones positivas y negativas};
+\draw[mclink] (gen3) -- node[mclabel, pos=0.68, xshift=-5.9pt, yshift=12.9pt]{comparten que} (mx6);
+\node[mcsub] (mx5) at (-9.62,-14.41) {Crítica al modelo generacional: coexistencia y ausencia de jerarquía};
+\draw[mclink] (gen4) -- node[mclabel, pos=0.44, xshift=5.4pt, yshift=-20.7pt]{recibe} (mx5);
 
 % -- Concepto: racimo a la derecha de la columna con --
-\node[mcsub] (mx9) at (3.44,-7.07) {Derechos fundamentales: derechos humanos reconocidos constitucionalmente};
-\draw[mclink] (con1) -- node[mclabel, pos=0.78, xshift=1.9pt, yshift=25.5pt]{se positivan como} (mx9);
-\node[mcsub] (mx10) at (3.69,-8.55) {Irrenunciabilidad: la titularidad no puede abandonarse válidamente};
-\draw[mclink] (con2) -- node[mclabel, pos=0.58, xshift=0.6pt, yshift=-25.6pt]{implica} (mx10);
-\node[mcsub] (mx11) at (3.72,-10.42) {Imprescriptibilidad: el tiempo no extingue los derechos humanos};
+\node[mcsub] (mx9) at (2.44,-6.82) {Derechos fundamentales: derechos humanos reconocidos constitucionalmente};
+\draw[mclink] (con1) -- node[mclabel, pos=0.26, xshift=-10.1pt, yshift=-28.1pt]{se positivan como} (mx9);
+\node[mcsub] (mx10) at (2.87,-8.98) {Irrenunciabilidad: la titularidad no puede abandonarse válidamente};
+\draw[mclink] (con2) -- node[mclabel, pos=0.50, xshift=0.1pt, yshift=29.9pt]{implica} (mx10);
+\node[mcsub] (mx11) at (3.28,-12.08) {Imprescriptibilidad: el tiempo no extingue los derechos humanos};
 \draw[mclink] (con3) -- node[mclabel, pos=0.50]{y también} (mx11);
-\node[mcsub] (mx12) at (3.17,-12.27) {Dimensión objetiva: orientan legislación, políticas públicas e interpretación};
-\draw[mclink] (con4) -- node[mclabel, pos=0.66, xshift=3.0pt, yshift=-25.4pt]{tienen una} (mx12);
+\node[mcsub] (mx12) at (2.24,-15.74) {Dimensión objetiva: orientan legislación, políticas públicas e interpretación};
+\draw[mclink] (con4) -- node[mclabel, pos=0.38, xshift=-8.3pt, yshift=-19.6pt]{tienen una} (mx12);
 
 % -- Principios: racimo a la derecha de la columna pr --
-\node[mcsub] (mx16) at (9.99,-5.56) {Aplicación directa: los derechos obligan aun sin ley reglamentaria};
-\draw[mclink] (pr1) -- node[mclabel, pos=0.72, xshift=0.9pt, yshift=25.6pt]{permite la} (mx16);
-\node[mcsub] (mx15) at (10.08,-8.70) {Progresividad: máximo de recursos disponibles (art. 2.1 PIDESC)};
-\draw[mclink] (pr2) -- node[mclabel, pos=0.28, xshift=-19.7pt, yshift=-16.4pt]{se mide por} (mx15);
-\node[mcsub] (mx14) at (10.05,-12.47) {Jueces: control de convencionalidad ex officio según su competencia};
-\draw[mclink] (pr4) -- node[mclabel, pos=0.72, xshift=3.9pt, yshift=25.3pt]{vigilada por} (mx14);
-\node[mcsub] (mx13) at (10.14,-13.96) {Deber de garantía: prevenir, investigar, sancionar y reparar};
-\draw[mclink] (pr5) -- node[mclabel, pos=0.42, xshift=-1.1pt, yshift=-25.6pt]{imponen el} (mx13);
+\node[mcsub] (mx16) at (7.84,-3.97) {Aplicación directa: los derechos obligan aun sin ley reglamentaria};
+\draw[mclink] (pr1) -- node[mclabel, pos=0.50, xshift=-0.7pt, yshift=29.9pt]{permite la} (mx16);
+\node[mcsub] (mx15) at (9.40,-8.54) {Progresividad: máximo de recursos disponibles (art. 2.1 PIDESC)};
+\draw[mclink] (pr2) -- node[mclabel, pos=0.50]{se mide por} (mx15);
+\node[mcsub] (mx14) at (9.41,-12.99) {Jueces: control de convencionalidad ex officio según su competencia};
+\draw[mclink] (pr4) -- node[mclabel, pos=0.32, xshift=-6.7pt, yshift=20.3pt]{vigilada por} (mx14);
+\node[mcsub] (mx13) at (10.70,-17.38) {Deber de garantía: prevenir, investigar, sancionar y reparar};
+\draw[mclink] (pr5) -- node[mclabel, pos=0.38, xshift=-5.7pt, yshift=-20.6pt]{imponen el} (mx13);
 
 % -- Garantías: racimo a la derecha de la columna ga --
-\node[mcsub] (mx17) at (13.39,-2.24) {Vías no jurisdiccionales: queja ante la CNDH y organismos locales};
+\node[mcsub] (mx17) at (9.48,-1.84) {Vías no jurisdiccionales: queja ante la CNDH y organismos locales};
 \draw[mclink] (ga1) -- node[mclabel, pos=0.50]{se ejerce por} (mx17);
-\node[mcsub] (mx19) at (13.39,-7.30) {Seguridad jurídica: exige fundamentación y motivación (art. 16)};
-\draw[mclink] (ga2) -- node[mclabel, pos=0.50]{incluye la} (mx19);
-\node[mcsub] (mx20) at (13.39,-9.41) {Garantías de libertad: religión, conciencia, expresión y asociación};
+\node[mcsub] (mx19) at (9.95,-5.93) {Seguridad jurídica: exige fundamentación y motivación (art. 16)};
+\draw[mclink] (ga2) -- node[mclabel, pos=0.50, xshift=-5.7pt, yshift=-39.4pt]{incluye la} (mx19);
+\node[mcsub] (mx20) at (10.58,-10.74) {Garantías de libertad: religión, conciencia, expresión y asociación};
 \draw[mclink] (ga3) -- node[mclabel, pos=0.50]{y las} (mx20);
-\node[mcsub] (mx18) at (13.39,-13.96) {Art. 29: ciertos derechos no pueden restringirse ni suspenderse};
-\draw[mclink] (ga4) -- node[mclabel, pos=0.50, xshift=25.6pt, yshift=0.0pt]{con límite en el} (mx18);
+\node[mcsub] (mx18) at (13.03,-15.27) {Art. 29: ciertos derechos no pueden restringirse ni suspenderse};
+\draw[mclink] (ga4) -- node[mclabel, pos=0.50]{con límite en el} (mx18);
 % >>> MC-ENRIQUECIMIENTO-FIN
 
 \end{tikzpicture}}
