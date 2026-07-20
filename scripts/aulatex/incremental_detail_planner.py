@@ -6,7 +6,14 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from .activity_contract import DIDACTIC_TECHNIQUE_CONTRACTS, REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT
+from .activity_contract import (
+    DIDACTIC_TECHNIQUE_CONTRACTS,
+    REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT,
+)
+from .didactic_catalog import (
+    canonical_technique_id,
+    get_technique_contract,
+)
 from .editorial_memory import EditorialMemoryStore
 from .workspace import AulaTeXWorkspace, EditorialScope
 
@@ -217,7 +224,7 @@ class IncrementalDetailPlanner:
         source_artifacts = self._source_artifacts(scope)
         context_excerpt = self.workspace.context_summary(scope.relative_path, max_chars=5000)
         technique_id = self._infer_didactic_technique(context_excerpt)
-        technique_contract = DIDACTIC_TECHNIQUE_CONTRACTS.get(technique_id, {})
+        technique_contract = get_technique_contract(technique_id)
         inherited_fixes = self._collect_inherited_compilation_fixes(related_memories, previous_details)
         learned_from = [
             {
@@ -235,14 +242,32 @@ class IncrementalDetailPlanner:
             },
             "didactic_contract": {
                 "detected_id": technique_id,
+                "catalogo_no": technique_contract.get("catalogo_no"),
+                "nombre_oficial": technique_contract.get("nombre_oficial", ""),
+                "nivel": technique_contract.get("nivel", ""),
+                "familia": technique_contract.get("familia", ""),
                 "aliases": list(technique_contract.get("aliases", ())),
                 "required_visible_elements": list(technique_contract.get("required_visible_elements", ())),
                 "preservation_rule": technique_contract.get("preservation_rule", "Conservar la forma visible solicitada por la consigna."),
+                "preservation_rule_official": technique_contract.get("preservation_rule_official", ""),
                 "structure_rule": technique_contract.get("structure_rule", ""),
                 "three_act_gravity_rule": technique_contract.get("three_act_gravity_rule", ""),
                 "layout_rule": technique_contract.get("layout_rule", ""),
                 "no_gap_rule": technique_contract.get("no_gap_rule", ""),
                 "closure_rule": technique_contract.get("closure_rule", ""),
+                # Evidencia oficial UnADM (fascículos + web): pasos de construcción
+                # y secciones completas para que el motor materialice con fidelidad.
+                "build_steps": technique_contract.get("build_steps", ""),
+                "official_contract": technique_contract.get("official_contract", {}),
+                # Consolidación de construcción TikZ/LaTeX + rúbrica de puntuación
+                # (didactic_builder_consolidator): cómo materializar el producto y
+                # cómo se puntúa, para integrarlo con realizar-actividad.
+                "tikz_pattern": technique_contract.get("tikz_pattern", {}),
+                "scoring_rubric": technique_contract.get("scoring_rubric", {}),
+                "construction_integration": technique_contract.get("construction_contract", {}).get("realizar_actividad_integration", {}),
+                # Patrón curado desde una actividad REAL ya entregada (máxima
+                # prioridad: probado en producción). Incluye trazabilidad de origen.
+                "real_pattern": technique_contract.get("real_pattern", {}),
             },
             "structure_contract": {
                 "three_part_structure": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["quality_gates"]["three_part_structure"],
@@ -310,12 +335,24 @@ class IncrementalDetailPlanner:
         return artifacts
 
     def _infer_didactic_technique(self, context_excerpt: str) -> str:
+        """Detecta la técnica por alias, priorizando el match MÁS ESPECÍFICO.
+
+        Se ordenan todos los (alias, técnica) por longitud de alias descendente,
+        de modo que un alias más largo y específico (p. ej. "cronología ilustrada"
+        -> cronologia_ilustrada) gane sobre uno más corto y genérico (p. ej.
+        "cronología" -> linea_de_tiempo). Evita colisiones por orden del diccionario.
+        """
         normalized = context_excerpt.casefold()
+        candidates: list[tuple[int, str]] = []
         for technique_id, contract in DIDACTIC_TECHNIQUE_CONTRACTS.items():
-            for alias in contract.get("aliases", ()): 
-                if str(alias).casefold() in normalized:
-                    return technique_id
-        return "general"
+            for alias in contract.get("aliases", ()):
+                alias_cf = str(alias).casefold()
+                if alias_cf and alias_cf in normalized:
+                    candidates.append((len(alias_cf), technique_id))
+        if not candidates:
+            return "general"
+        candidates.sort(key=lambda item: item[0], reverse=True)
+        return candidates[0][1]
 
     def _collect_inherited_compilation_fixes(
         self,

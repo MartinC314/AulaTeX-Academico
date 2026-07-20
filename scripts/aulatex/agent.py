@@ -55,6 +55,10 @@ class AgentRequest:
     run_monitor: bool = True
     run_optimize: bool = True
     run_foro_producto: bool = True
+    # Optimizador de layout TikZ para producto MAPA CONCEPTUAL: resuelve choques,
+    # coloca las palabras de enlace sin empalmes y llena el alto de la pagina.
+    # Se aplica automaticamente si el .tex contiene un mapa conceptual (mc*).
+    run_mapa_layout: bool = True
     # Compilacion final con latexmk tras monitor/optimize (garantiza que el .tex
     # en su estado definitivo produce un PDF actualizado). Activada por defecto.
     run_final_compile: bool = True
@@ -424,6 +428,16 @@ class AulaTeXAgent:
                 optimize_ok = False
                 report_lines.append(f"- Optimización: ERROR ({optimize_invocation.error})")
 
+        # 2.5) Producto MAPA CONCEPTUAL: si el .tex contiene un mapa conceptual TikZ
+        #      (estilos mc*), correr el optimizador de layout que resuelve choques,
+        #      coloca las palabras de enlace sin empalmes (place_labels) y llena el
+        #      alto de la página (estira Y / comprime X). Se ejecuta tras monitor/
+        #      optimize para que las coordenadas absolutas sean el estado definitivo.
+        if request.run_mapa_layout:
+            mapa_note = self._optimize_mapa_layout(target_ctx.target_path)
+            if mapa_note:
+                report_lines.append(mapa_note)
+
         # 3) Compilación FINAL con latexmk: el monitor y el optimizador modifican
         #    el .tex; recompilamos su estado definitivo para dejar el PDF al día.
         #    latexmk-build.ps1 puede devolver rc=1 por advertencias NO fatales
@@ -470,6 +484,47 @@ class AulaTeXAgent:
             )
 
         return monitor_ok, optimize_ok, quality_before, quality_after, final_compile_ok
+
+    def _optimize_mapa_layout(self, target_path: Path) -> str | None:
+        """Aplica el optimizador de layout TikZ si el .tex es un mapa conceptual.
+
+        Detecta el mapa por los estilos mc* (mcroot + mcbranch). Ejecuta
+        scripts/optimize_mapa_layout.py con --write para: resolver choques,
+        colocar las palabras de enlace sin empalmes (place_labels) y llenar el
+        alto de la página (estira Y / comprime X, --target-aspect 1.4).
+        Devuelve una línea de reporte o None si no aplica.
+        """
+        import subprocess
+        import sys as _sys
+
+        tex = Path(target_path)
+        if not tex.is_file() or tex.suffix.lower() != ".tex":
+            return None
+        try:
+            content = tex.read_text(encoding="utf-8", errors="ignore")
+        except OSError:
+            return None
+        # Detección: mapa conceptual con estilos mc*
+        if "mcroot" not in content or "mcbranch" not in content:
+            return None
+
+        script = Path(__file__).resolve().parents[1] / "optimize_mapa_layout.py"
+        if not script.is_file():
+            return "- Mapa (optimizador TikZ): script no encontrado"
+        cmd = [
+            _sys.executable, str(script), str(tex),
+            "--iters", "2500", "--repulsion", "0.5", "--step", "0.32",
+            "--spring", "0.005", "--xlim", "16", "--ylim", "11",
+            "--target-aspect", "1.4", "--write",
+        ]
+        try:
+            proc = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
+        except (subprocess.SubprocessError, OSError) as exc:
+            return f"- Mapa (optimizador TikZ): ERROR ({exc})"
+        tail = (proc.stdout or "").strip().splitlines()
+        summary = tail[0] if tail else ""
+        status = "APLICADO" if proc.returncode == 0 else f"rc={proc.returncode}"
+        return f"- Mapa conceptual (optimizador TikZ): {status} {summary}".rstrip()
 
     def _build_prompts(self, request: AgentRequest, context: str) -> list[str]:
         base = (

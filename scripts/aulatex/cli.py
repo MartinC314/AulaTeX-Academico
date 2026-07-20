@@ -127,6 +127,7 @@ def build_parser() -> argparse.ArgumentParser:
     agent.add_argument("--no-monitor", action="store_true", help="Disable the automatic post-processing monitor loop after realizar-actividad.")
     agent.add_argument("--no-optimize", action="store_true", help="Disable the automatic post-processing quality optimization after realizar-actividad.")
     agent.add_argument("--no-foro-producto", action="store_true", help="Disable the automatic FORO product pattern (tcolorbox + copy button + 3-act structure) after realizar-actividad.")
+    agent.add_argument("--no-mapa-layout", action="store_true", help="Disable the automatic TikZ concept-map layout optimizer (anti-overlap + link-label placement + vertical fill) after realizar-actividad when the product is a concept map.")
     agent.add_argument("--no-final-compile", action="store_true", help="Disable the automatic final latexmk compilation after monitor/optimize in realizar-actividad.")
     agent.add_argument("--monitor-max-cycles", type=int, default=100, help="Max cycles for the automatic post-processing monitor loop.")
     agent.add_argument("--optimize-cycles", type=int, default=0, help="Fixed number of quality optimization cycles after realizar-actividad. Default 0 = converge-to-quality (run until target quality is reached).")
@@ -300,6 +301,21 @@ def build_parser() -> argparse.ArgumentParser:
     compile_cmd = sub.add_parser("compile", help="Compile a TeX file with the shared latexmk wrapper.")
     compile_cmd.add_argument("tex")
 
+    mapa_layout = sub.add_parser(
+        "mapa-layout",
+        help="Optimize a concept-map (mc*) TikZ layout: force-directed anti-overlap, converts relative to absolute coordinates, renders a real preview and (optionally) writes the .tex. Fixes choques/empalmes/palabras de enlace comidas.",
+    )
+    mapa_layout.add_argument("tex")
+    mapa_layout.add_argument("--iters", type=int, default=2500)
+    mapa_layout.add_argument("--repulsion", type=float, default=0.5)
+    mapa_layout.add_argument("--step", type=float, default=0.32)
+    mapa_layout.add_argument("--spring", type=float, default=0.005)
+    mapa_layout.add_argument("--xlim", type=float, default=16.0)
+    mapa_layout.add_argument("--ylim", type=float, default=11.0)
+    mapa_layout.add_argument("--target-aspect", type=float, default=1.4, help="Estira Y/comprime X para llenar el alto (0 = desactivar).")
+    mapa_layout.add_argument("--out-dir", default=".aulatex-temp/opt-mapa2")
+    mapa_layout.add_argument("--write", action="store_true", help="Write the optimized absolute coordinates back into the .tex.")
+
     return parser
 
 
@@ -396,6 +412,7 @@ def main(argv: list[str] | None = None) -> None:
             run_monitor=not bool(args.no_monitor),
             run_optimize=not bool(args.no_optimize),
             run_foro_producto=not bool(args.no_foro_producto),
+            run_mapa_layout=not bool(args.no_mapa_layout),
             run_final_compile=not bool(args.no_final_compile),
             monitor_max_cycles=args.monitor_max_cycles,
             optimize_cycles=args.optimize_cycles,
@@ -994,6 +1011,25 @@ def main(argv: list[str] | None = None) -> None:
         if result.stderr:
             print(result.stderr)
         raise SystemExit(result.returncode)
+
+    if args.command == "mapa-layout":
+        import subprocess as _sp
+        import sys as _sys
+        _script = Path(__file__).resolve().parents[1] / "optimize_mapa_layout.py"
+        _cmd = [
+            _sys.executable, str(_script), args.tex,
+            "--iters", str(args.iters),
+            "--repulsion", str(args.repulsion),
+            "--step", str(args.step),
+            "--spring", str(args.spring),
+            "--xlim", str(args.xlim),
+            "--ylim", str(args.ylim),
+            "--target-aspect", str(args.target_aspect),
+            "--out-dir", args.out_dir,
+        ]
+        if args.write:
+            _cmd.append("--write")
+        raise SystemExit(_sp.run(_cmd).returncode)
 
     parser.error(f"Unknown command: {args.command}")
 
