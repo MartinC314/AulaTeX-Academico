@@ -1,0 +1,180 @@
+% AulaTeX - Actividad 3 materializada desde planeacion S3, notas y guia LEO.
+% Consigna S3: Resena sobre el contenido de los articulos constitucionales que
+% sustentan el derecho de la seguridad social en Mexico. Tecnica didactica:
+% Resena (100 tecnicas UnADM). Ponderacion 10/100. APA 7.
+% Estructura LINEAL (LEO Uniandes): introduccion -> exposicion (sintesis) ->
+% evaluacion critica (juicio sustentado) -> conclusion -> referencias.
+% Elementos obligatorios (planeacion): (1) fundamento constitucional (art. 123
+% apartado A fr. XXIX, apartado B fr. XI y art. 4 CPEUM); (2) parafrasis de esos
+% articulos; (3) reflexion sobre su importancia como derecho humano; (4)
+% legislacion secundaria (LSS, LISSSTE, LISSFAM).
+\documentclass[12pt,letterpaper,oneside]{article}
+\usepackage[margin=2.35cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{hyperref}
+\usepackage[authoryear,round]{natbib}
+
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+\definecolor{unadmRowAlt}{HTML}{EDF1E7}
+\hypersetup{colorlinks=true,linkcolor=unadmGreenDark,citecolor=unadmGreenDark,urlcolor=unadmGreenDark}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.72em}
+\onehalfspacing
+\bibliographystyle{plainnat}
+\newcommand{\documenttitle}{El fundamento constitucional de la seguridad social en Mexico}
+\newcommand{\documentsubtitle}{Resena academica: sintesis del articulado y valoracion critica como derecho humano}
+\newcommand{\documentsubject}{Actividad 3 - Derecho a la Seguridad Social}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+% ==========================================================================
+% PRODUCTO ANIDADO: la RESENA es el producto de la actividad y va enmarcada
+% dentro del cuerpo del reporte (patron homologo al forobox de la Actividad 1).
+% El REPORTE conserva su propia Introduccion y Conclusion; la RESENA conserva
+% su estructura oficial (ficha bibliografica, titulo, introduccion, cuerpo,
+% conclusiones) DENTRO del recuadro.
+% ==========================================================================
+\newtcolorbox{resenabox}[1][]{%
+  enhanced, breakable,
+  colback=unadmPaper, colframe=unadmGreenDark,
+  boxrule=1pt, leftrule=4pt, arc=2pt,
+  left=10pt, right=10pt, top=8pt, bottom=8pt,
+  fonttitle=\bfseries\color{white},
+  colbacktitle=unadmGreenDark,
+  attach boxed title to top left={xshift=8pt, yshift=-2pt},
+  boxed title style={colback=unadmGreenDark, arc=1pt},
+  title={Producto: rese\~na academica}, #1}
+
+% Ficha bibliografica de la obra reseñada (recuadro superior de la resena).
+% Uso: \fichabibliografica{obra}{autoria}{editorial/fuente}{lugar}{ano}{edicion/version}
+\newcommand{\fichabibliografica}[6]{%
+  \begin{tcolorbox}[enhanced, colback=unadmRowAlt, colframe=unadmGreen,
+    boxrule=0.6pt, arc=1pt, left=8pt, right=8pt, top=5pt, bottom=5pt,
+    fonttitle=\bfseries\color{unadmGreenDark}, colbacktitle=unadmRowAlt,
+    coltitle=unadmGreenDark, title={Ficha bibliogr\'afica de la obra rese\~nada}]
+  {\small
+  \begin{tabular}{@{}p{0.24\linewidth}p{0.70\linewidth}@{}}
+    \textbf{Obra rese\~nada:} & #1 \\
+    \textbf{Autor\'ia:} & #2 \\
+    \textbf{Editorial / fuente:} & #3 \\
+    \textbf{Lugar de publicaci\'on:} & #4 \\
+    \textbf{A\~no:} & #5 \\
+    \textbf{Edici\'on / versi\'on:} & #6 \\
+  \end{tabular}}
+  \end{tcolorbox}}
+
+\begin{document}
+
+\begin{titlepage}
+  \pagecolor{unadmPaper}
+  \color{unadmInk}
+  \begin{center}
+    \vspace*{0.8cm}
+    \includegraphics[height=2.05cm]{img/departamentos/UnADM.pdf}\\[0.7cm]
+    {\Large Universidad Abierta y a Distancia de M\'exico}\\[0.2cm]
+    {\large Licenciatura en Derecho}\\[1.2cm]
+    {\color{unadmGreenDark}\rule{0.82\linewidth}{1.4pt}}\\[0.55cm]
+    {\Huge\bfseries \documenttitle\par}
+    \vspace{0.35cm}
+    {\Large \documentsubtitle\par}
+    \vspace{0.15cm}
+    {\large \documentsubject\par}
+    \vspace{0.45cm}
+    {\color{unadmGold}\rule{0.62\linewidth}{1.1pt}}\\[1.1cm]
+    \begin{tabular}{rl}
+      \textbf{Alumno:} & Martin Jonathan de la Cruz \\
+      \textbf{Matr\'icula:} & ES2611202040 \\
+      \textbf{Figura docente:} & Cristian Ortega Barrera \\
+      \textbf{Materia:} & Derecho a la Seguridad Social \\
+      \textbf{Semestre/Bloque:} & 2 / 1 \\
+      \textbf{Unidad tem\'atica:} & 2. Naturaleza y marco jur\'idico de la seguridad social \\
+      \textbf{Fecha:} & \today
+    \end{tabular}
+    \vfill
+    {\small Roma Norte, Ciudad de M\'exico}
+  \end{center}
+  \nopagecolor
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+% ==========================================================================
+% INTRODUCCION DEL REPORTE (contenedor): contextualiza la ACTIVIDAD y el tema,
+% anuncia que el producto es una RESENA anidada. NO es la introduccion de la
+% resena (esa va DENTRO del recuadro del producto).
+% ==========================================================================
+\section{Introducci\'on}
+
+Este reporte tiene como prop\'osito identificar y analizar el sustento del derecho a la seguridad social en M\'exico, a partir de la lectura de la bibliograf\'ia b\'asica y de la legislaci\'on aplicable. Su producto es una \textbf{rese\~na} sobre el contenido de los art\'iculos constitucionales que fundamentan este derecho, elaborada conforme a la t\'ecnica did\'actica de la rese\~na, que combina la s\'intesis expositiva de una obra con su evaluaci\'on cr\'itica. La seguridad social se entiende aqu\'i como un mecanismo p\'ublico, solidario y tutelar que protege a las personas frente a contingencias como la enfermedad, la maternidad, los riesgos de trabajo, la invalidez, la vejez, la cesant\'ia o la muerte \citep{bricenoRuiz2011}.
+
+Para elaborar el producto se revis\'o el articulado constitucional aplicable y su desarrollo en la legislaci\'on secundaria, con apoyo en fuentes doctrinales e institucionales \citep{cpeum2026,lss2026,belmontLugoParra2017}. La rese\~na, presentada en el apartado siguiente, se organiza conforme a sus elementos oficiales —ficha bibliogr\'afica, t\'itulo, introducci\'on, cuerpo y conclusiones— y se eval\'ua con criterios claros tomados de la r\'ubrica de la actividad: la identificaci\'on del fundamento constitucional, el res\'umen fiel del contenido de los art\'iculos, la reflexi\'on sobre su importancia como derecho humano, la referencia a la legislaci\'on secundaria y el uso de fuentes en formato APA.
+
+% ==========================================================================
+% CUERPO DEL REPORTE: presenta y enmarca el PRODUCTO (resena) en un recuadro
+% (resenabox), homologo al forobox de la Actividad 1. Dentro del recuadro, la
+% resena conserva su estructura oficial completa.
+% ==========================================================================
+\section{Rese\~na sobre el fundamento constitucional de la seguridad social}
+
+La rese\~na se presenta a continuaci\'on como el producto acad\'emico del reporte. Para distinguirla del cuerpo, se muestra dentro de un recuadro y conserva la estructura propia de la t\'ecnica: una ficha bibliogr\'afica de la obra rese\~nada —en este caso, el articulado constitucional y su legislaci\'on secundaria—, un t\'itulo, una introducci\'on, un cuerpo de exposici\'on y valoraci\'on cr\'itica, y unas conclusiones de la propia rese\~na.
+
+\begin{resenabox}
+\fichabibliografica
+  {Art\'iculos 123 (apartados A, fr.~XXIX y B, fr.~XI) y 4 de la Constituci\'on Pol\'itica de los Estados Unidos Mexicanos, y su legislaci\'on secundaria (LSS, LISSSTE, LISSFAM)}
+  {Constituyente Permanente; C\'amara de Diputados del H.\ Congreso de la Uni\'on (\'org.\ legislativo)}
+  {Diario Oficial de la Federaci\'on / C\'amara de Diputados}
+  {M\'exico}
+  {2026 (texto vigente)}
+  {\'Ultima reforma consultada}
+
+\medskip
+{\large\bfseries\color{unadmGreenDark} Coherencia constitucional y desarrollo legislativo del derecho a la seguridad social en M\'exico\par}
+\medskip
+
+\textbf{Introducci\'on.} La presente rese\~na sintetiza y eval\'ua cr\'iticamente el articulado constitucional que sustenta el derecho a la seguridad social en M\'exico. El criterio de valoraci\'on que ordena el an\'alisis es la \textbf{coherencia} entre el mandato constitucional y su desarrollo en la legislaci\'on secundaria, y el juicio cr\'itico que se sostiene es que dicho fundamento es \emph{coherente}, porque el reconocimiento contenido en el art\'iculo~123 de la Constituci\'on se traduce, sin ruptura, en un sistema de leyes secundarias que lo hacen exigible \citep{cpeum2026,lss2026}. Como derecho humano, su reconocimiento no se agota en una prestaci\'on econ\'omica: expresa un deber del Estado de garantizar condiciones dignas de existencia a lo largo del ciclo de vida \citep{belmontLugoParra2017,acnudhSeguridadSocial2026}.
+
+\medskip
+\textbf{Exposici\'on: contenido del articulado constitucional.} El sustento constitucional se concentra en el \textbf{art\'iculo~123} y se articula con el \textbf{art\'iculo~4} \citep{cpeum2026}. En el \textbf{apartado~A, fracci\'on~XXIX}, la Constituci\'on declara de utilidad p\'ublica la Ley del Seguro Social y precisa que comprender\'a seguros de invalidez, vejez, vida, cesaci\'on involuntaria del trabajo, enfermedades y accidentes, y servicios de guarder\'ia, entre otros; parafraseando su contenido, el precepto no s\'olo permite el seguro social, sino que lo declara de inter\'es p\'ublico y fija un cat\'alogo m\'inimo de contingencias que el legislador debe cubrir \citep{bricenoRuiz2011}. En el \textbf{apartado~B, fracci\'on~XI}, organiza la seguridad social de las personas al servicio del Estado —accidentes y enfermedades profesionales, maternidad, jubilaci\'on, invalidez, vejez, muerte y vivienda—, trasladando al sector p\'ublico la misma l\'ogica protectora con un dise\~no institucional propio \citep{cpeum2026,gonzalezCarvallo2024}. El \textbf{art\'iculo~4} complementa el andamiaje al reconocer el derecho a la protecci\'on de la salud, de modo que ambos preceptos configuran un \textbf{bloque de constitucionalidad}: el art\'iculo~123 fija la garant\'ia contributiva y el art\'iculo~4 la dimensi\'on de derecho social de titularidad universal \citep{ibarraOlguin2022,hernandezInclusion2020}.
+
+\medskip
+\textbf{Valoraci\'on cr\'itica: coherencia y sus tensiones.} La evidencia de la coherencia es la correspondencia verificable entre cada mandato y su ley: el apartado~A se desarrolla en la \textbf{Ley del Seguro Social}, mediante el \textbf{r\'egimen obligatorio} —cobertura contributiva de financiamiento tripartito que institucionaliza la \textbf{solidaridad social}— y el \textbf{r\'egimen voluntario} \citep{lss2026}; el apartado~B se concreta en la \textbf{Ley del ISSSTE} \citep{lissste2026} y en la \textbf{Ley del ISSFAM} \citep{lissfam2026}. Esta arquitectura conserva rasgos de la \textbf{tipolog\'ia germana (bismarckiana)}, ligada al empleo y la cotizaci\'on, con una aspiraci\'on redistributiva propia de la \textbf{tipolog\'ia latina} \citep{bricenoRuiz2011,ibarraOlguin2022}. No obstante, desde un enfoque de derechos humanos persiste una tensi\'on estructural: el modelo es predominantemente \textbf{contributivo}, mientras el derecho aspira a la \textbf{universalidad} \citep{acnudhSeguridadSocial2026,hernandezInclusion2020}. Mi postura es que la coherencia jur\'idica es s\'olida, pero la correspondencia formal entre Constituci\'on y ley es condici\'on necesaria y no suficiente para la cobertura efectiva, pues la exclusi\'on de la econom\'ia informal evidencia esa brecha \citep{gonzalezCarvallo2024,moralesFajardo2021}.
+
+\medskip
+\textbf{Conclusiones de la rese\~na.} El articulado constitucional de la seguridad social en M\'exico es \emph{coherente} porque el art\'iculo~123 (apartados~A y~B) y el art\'iculo~4 se prolongan sin ruptura en la LSS, la LISSSTE y la LISSFAM \citep{cpeum2026,lss2026,lissste2026}. Su relevancia como derecho humano radica en que impone al Estado obligaciones de respeto, protecci\'on y garant\'ia frente a toda persona, y no s\'olo frente a quien cotiza \citep{belmontLugoParra2017}. Como limitaci\'on de esta valoraci\'on, el criterio de coherencia no agota el an\'alisis: quedan abiertas la exigibilidad judicial y la sostenibilidad del sistema, que ameritan una rese\~na propia.
+\end{resenabox}
+
+% ==========================================================================
+% CONCLUSION DEL REPORTE (contenedor): reflexion del autor sobre la ACTIVIDAD y
+% lo aprendido; NO repite la conclusion de la resena. IA como \footnote.
+% ==========================================================================
+\clearpage
+\section{Conclusi\'on}
+
+La elaboraci\'on de esta rese\~na permiti\'o comprender que el derecho a la seguridad social en M\'exico posee un fundamento constitucional s\'olido y coherente, articulado en los art\'iculos~123 y~4, que se desarrolla de manera ordenada en la legislaci\'on secundaria \citep{cpeum2026,lss2026,lissste2026}. Al reconstruir ese v\'inculo entre la norma fundamental y las leyes que la ejecutan, la actividad mostr\'o que la coherencia normativa es una condici\'on indispensable, aunque no suficiente, para garantizar la protecci\'on efectiva de las personas.
+
+A mi juicio, el mayor aprendizaje de la actividad es distinguir entre la validez formal del derecho y su eficacia material: comprender el fundamento constitucional resulta indispensable para la pr\'actica jur\'idica, pues de \'el depende identificar qui\'en est\'a protegido, con qu\'e prestaciones y bajo qu\'e norma exigible, y desde \'el se proyecta la aspiraci\'on, todav\'ia inconclusa, de una seguridad social verdaderamente universal.\footnote{Declaraci\'on de uso de inteligencia artificial: conforme a los Lineamientos para el uso \'etico y responsable de la IA de la UnADM, se emple\'o asistencia de inteligencia artificial como apoyo para organizar y depurar la redacci\'on de este reporte. La identificaci\'on del fundamento constitucional, la par\'afrasis del articulado, la selecci\'on de fuentes y la postura cr\'itica son propias, verificadas y validadas por el autor con la bibliograf\'ia citada, sin que la IA sustituyera el criterio acad\'emico.}
+
+\clearpage
+\nocite{cpeum2026,lss2026,lissste2026,lissfam2026,bricenoRuiz2011,gonzalezCarvallo2024,ibarraOlguin2022,hernandezInclusion2020,belmontLugoParra2017,moralesFajardo2021,acnudhSeguridadSocial2026}
+\bibliography{derecho-a-la-seguridad-social}
+
+\end{document}

@@ -1,0 +1,141 @@
+% AulaTeX - Actividad 3 materializada desde planeacion S3, notas y guia LEO.
+% Consigna S3: Resena sobre el contenido de los articulos constitucionales que
+% sustentan el derecho de la seguridad social en Mexico. Tecnica didactica:
+% Resena (100 tecnicas UnADM). Ponderacion 10/100. APA 7.
+% Estructura LINEAL (LEO Uniandes): introduccion -> exposicion (sintesis) ->
+% evaluacion critica (juicio sustentado) -> conclusion -> referencias.
+% Elementos obligatorios (planeacion): (1) fundamento constitucional (art. 123
+% apartado A fr. XXIX, apartado B fr. XI y art. 4 CPEUM); (2) parafrasis de esos
+% articulos; (3) reflexion sobre su importancia como derecho humano; (4)
+% legislacion secundaria (LSS, LISSSTE, LISSFAM).
+\documentclass[12pt,letterpaper,oneside]{article}
+\usepackage[margin=2.35cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[authoryear,round]{natbib}
+
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+\definecolor{unadmRowAlt}{HTML}{EDF1E7}
+\hypersetup{colorlinks=true,linkcolor=unadmGreenDark,citecolor=unadmGreenDark,urlcolor=unadmGreenDark}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.72em}
+\onehalfspacing
+\bibliographystyle{plainnat}
+\newcommand{\documenttitle}{El fundamento constitucional de la seguridad social en Mexico}
+\newcommand{\documentsubtitle}{Resena academica: sintesis del articulado y valoracion critica como derecho humano}
+\newcommand{\documentsubject}{Actividad 3 - Derecho a la Seguridad Social}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+
+\begin{titlepage}
+  \pagecolor{unadmPaper}
+  \color{unadmInk}
+  \begin{center}
+    \vspace*{0.8cm}
+    \includegraphics[height=2.05cm]{img/departamentos/UnADM.pdf}\\[0.7cm]
+    {\Large Universidad Abierta y a Distancia de M\'exico}\\[0.2cm]
+    {\large Licenciatura en Derecho}\\[1.2cm]
+    {\color{unadmGreenDark}\rule{0.82\linewidth}{1.4pt}}\\[0.55cm]
+    {\Huge\bfseries \documenttitle\par}
+    \vspace{0.35cm}
+    {\Large \documentsubtitle\par}
+    \vspace{0.15cm}
+    {\large \documentsubject\par}
+    \vspace{0.45cm}
+    {\color{unadmGold}\rule{0.62\linewidth}{1.1pt}}\\[1.1cm]
+    \begin{tabular}{rl}
+      \textbf{Alumno:} & Martin Jonathan de la Cruz \\
+      \textbf{Matr\'icula:} & ES2611202040 \\
+      \textbf{Figura docente:} & Cristian Ortega Barrera \\
+      \textbf{Materia:} & Derecho a la Seguridad Social \\
+      \textbf{Semestre/Bloque:} & 2 / 1 \\
+      \textbf{Unidad tem\'atica:} & 2. Naturaleza y marco jur\'idico de la seguridad social \\
+      \textbf{Fecha:} & \today
+    \end{tabular}
+    \vfill
+    {\small Roma Norte, Ciudad de M\'exico}
+  \end{center}
+  \nopagecolor
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+% ==========================================================================
+% INTRODUCCION (LEO): indica que es una resena, presenta el objeto y el criterio
+% de valoracion, y traza la hoja de ruta. Marco conceptual con \citep.
+% ==========================================================================
+\section{Introducci\'on}
+
+La presente rese\~na sintetiza y eval\'ua cr\'iticamente el articulado constitucional que sustenta el derecho a la seguridad social en M\'exico, con el prop\'osito de identificar y analizar su fundamento, comprender su contenido y ponderar su relevancia como derecho humano. La seguridad social se entiende aqu\'i como un mecanismo p\'ublico, solidario y tutelar que protege a las personas frente a contingencias como la enfermedad, la maternidad, los riesgos de trabajo, la invalidez, la vejez, la cesant\'ia o la muerte \citep{bricenoRuiz2011}. Como derecho humano, su reconocimiento no se agota en una prestaci\'on econ\'omica: expresa un deber del Estado de garantizar condiciones dignas de existencia a lo largo del ciclo de vida \citep{belmontLugoParra2017,acnudhSeguridadSocial2026}.
+
+Esta rese\~na se eval\'ua con criterios claros, tomados de la r\'ubrica de la actividad: la identificaci\'on del fundamento constitucional, el res\'umen fiel del contenido de los art\'iculos, la reflexi\'on sobre su importancia como derecho humano, la referencia a la legislaci\'on secundaria y el uso de fuentes en formato APA. Sobre esa base, el criterio de valoraci\'on que ordena el an\'alisis es la \textbf{coherencia} entre el mandato constitucional y su desarrollo en la legislaci\'on secundaria. El juicio cr\'itico que se sostiene es que el fundamento constitucional de la seguridad social en M\'exico es \emph{coherente}, porque el reconocimiento contenido en el art\'iculo~123 de la Constituci\'on se traduce, sin ruptura, en un sistema de leyes secundarias que lo hacen exigible \citep{cpeum2026,lss2026}. Para sustentar esa valoraci\'on, el texto expone primero el contenido del articulado constitucional, enseguida desarrolla la evaluaci\'on cr\'itica de su coherencia con la legislaci\'on secundaria y su alcance como derecho humano, y finalmente ofrece una conclusi\'on con la postura sostenida.
+
+% ==========================================================================
+% EXPOSICION (LEO): sintesis del articulado constitucional con parafrasis (no
+% copia literal). Cumple elementos obligatorios 1 y 2 de la planeacion.
+% ==========================================================================
+\section{Fundamento constitucional del derecho a la seguridad social}
+
+El sustento constitucional de la seguridad social en M\'exico se concentra en el art\'iculo~123 y se articula con el art\'iculo~4 de la Constituci\'on Pol\'itica de los Estados Unidos Mexicanos \citep{cpeum2026}. El \textbf{art\'iculo~123 constitucional} regula la protecci\'on social vinculada al trabajo y divide ese \`ambito en dos apartados; por ello, su dise\~no se aproxima a la \textbf{tipolog\'ia germana (bismarckiana)}, fundada en seguros vinculados al empleo y financiados mediante aportaciones, sin excluir la proyecci\'on universalizante que aporta el art\'iculo~4 \citep{bricenoRuiz2011,ibarraOlguin2022}.
+
+En el \textbf{apartado~A, fracci\'on~XXIX}, la Constituci\'on declara de utilidad p\'ublica la Ley del Seguro Social y precisa que esta comprender\'a seguros de invalidez, de vejez, de vida, de cesaci\'on involuntaria del trabajo, de enfermedades y accidentes, de servicios de guarder\'ia y cualquier otro encaminado a la protecci\'on y bienestar de las personas trabajadoras y de sus familias \citep{cpeum2026}. Parafraseando su contenido, el precepto no se limita a permitir la existencia de un seguro social: lo declara de inter\'es p\'ublico y fija un cat\'alogo m\'inimo de contingencias que el legislador ordinario est\'a obligado a cubrir \citep{bricenoRuiz2011}.
+
+En el \textbf{apartado~B, fracci\'on~XI}, el texto constitucional organiza la seguridad social de las personas al servicio del Estado y enuncia sus bases: la cobertura de accidentes y enfermedades profesionales; las enfermedades no profesionales y la maternidad; la jubilaci\'on, la invalidez, la vejez y la muerte; as\'i como la protecci\'on en materia de vivienda y de servicios sociales \citep{cpeum2026}. En par\'afrasis, esta fracci\'on traslada al sector p\'ublico la misma l\'ogica protectora del apartado~A, pero con un dise\~no institucional propio orientado a las y los servidores p\'ublicos \citep{gonzalezCarvallo2024}.
+
+El \textbf{art\'iculo~4} complementa ese andamiaje al reconocer el derecho a la protecci\'on de la salud y otros derechos sociales que se entrelazan con la seguridad social \citep{cpeum2026,ibarraOlguin2022}. Le\'idos en conjunto, estos preceptos configuran un \textbf{bloque de constitucionalidad} de la seguridad social: el art\'iculo~123 fija la garant\'ia contributiva y profesional, mientras que el art\'iculo~4 aporta la dimensi\'on de derecho social de titularidad universal \citep{ibarraOlguin2022,hernandezInclusion2020}.
+
+% ==========================================================================
+% EVALUACION CRITICA (LEO): desarrolla el juicio critico con evidencias
+% (informacion externa + analisis propio). Cumple elementos 3 y 4.
+% ==========================================================================
+\section{Valoraci\'on cr\'itica: coherencia constitucional, desarrollo legislativo y alcance como derecho humano}
+
+El criterio elegido para valorar este articulado es su \textbf{coherencia}: la medida en que el mandato constitucional se prolonga, sin contradicci\'on, en el orden legal que lo ejecuta. El juicio cr\'itico que aqu\'i se defiende es que dicho fundamento es \emph{coherente}, y la evidencia que lo respalda es la correspondencia verificable entre cada mandato constitucional y su legislaci\'on secundaria.
+
+\subsection{La legislaci\'on secundaria como desarrollo del mandato constitucional}
+
+El apartado~A, fracci\'on~XXIX, encuentra su desarrollo directo en la \textbf{Ley del Seguro Social}, que organiza la protecci\'on mediante dos v\'ias complementarias. El \textbf{r\'egimen obligatorio} configura una \textbf{cobertura contributiva}: el acceso depende de los supuestos legales de aseguramiento y su sostenimiento descansa en un \textbf{financiamiento tripartito} integrado por aportaciones de las personas trabajadoras, de las empleadoras y del Estado. Por tanto, institucionaliza la \textbf{solidaridad social} necesaria para financiar los seguros previstos constitucionalmente. El \textbf{r\'egimen voluntario}, incluido el \textbf{seguro facultativo}, ampl\'ia la protecci\'on en los casos establecidos por la ley, pero no elimina por s\'i mismo las barreras de acceso derivadas de la falta de aseguramiento obligatorio \citep{lss2026}.
+
+Esta combinaci\'on confirma que el sistema conserva rasgos de la \textbf{tipolog\'ia germana (bismarckiana)}, pues vincula la protecci\'on con la relaci\'on laboral y la cotizaci\'on; sin embargo, incorpora una aspiraci\'on redistributiva propia de la \textbf{tipolog\'ia latina} mediante la solidaridad y la intervenci\'on estatal \citep{bricenoRuiz2011,ibarraOlguin2022}. Por su parte, el apartado~B, fracci\'on~XI, se concreta en la \textbf{Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado}, que estructura las prestaciones de las y los servidores p\'ublicos \citep{lissste2026}, y en la \textbf{Ley del Instituto de Seguridad Social para las Fuerzas Armadas Mexicanas} para el personal castrense \citep{lissfam2026}. En consecuencia, la correspondencia entre cada precepto constitucional y su ley secundaria constituye evidencia central de la coherencia afirmada, aunque su eficacia material permanece condicionada por los requisitos de afiliaci\'on y cobertura de cada r\'egimen.
+\subsection{El alcance como derecho humano y sus tensiones}
+
+La coherencia normativa, sin embargo, no clausura el an\'alisis cr\'itico. Desde un enfoque de derechos humanos, el sistema presenta una tensi\'on estructural: aunque el modelo constitucional es predominantemente \textbf{contributivo} y se vincula con el trabajo formal, el derecho a la seguridad social exige avanzar hacia la \textbf{universalidad} \citep{acnudhSeguridadSocial2026,hernandezInclusion2020}. Por ello, la correspondencia formal entre la Constituci\'on y las leyes secundarias constituye una condici\'on necesaria, pero no suficiente, para acreditar la eficacia del derecho: la exclusi\'on de parte de la poblaci\'on en la econom\'ia informal evidencia esa diferencia \citep{gonzalezCarvallo2024,moralesFajardo2021}. Mi postura es que esta constituye la principal limitaci\'on del articulado: su coherencia jur\'idica es s\'olida, pero su promesa de universalidad solo podr\'a cumplirse mediante pol\'iticas y reformas que reduzcan la dependencia del v\'inculo laboral \citep{moralesFajardo2021}.
+
+La importancia de este derecho para la ciudadan\'ia radica, precisamente, en que su reconocimiento como derecho humano impone al Estado obligaciones de respeto, protecci\'on y garant\'ia frente a toda persona, no exclusivamente frente a quien cotiza \citep{belmontLugoParra2017,ibarraOlguin2022}. En consecuencia, considero que el fundamento constitucional es relevante no solo por ordenar el desarrollo legislativo de las prestaciones, sino tambi\'en porque ofrece la base jur\'idica para exigirlas y para que los tribunales precisen el alcance de las obligaciones estatales. Esta dimensi\'on permite valorar el sistema con un criterio m\'as exigente: la coherencia normativa debe orientarse a producir cobertura efectiva e inclusiva.
+
+% ==========================================================================
+% CONCLUSION en pagina propia (LEO): reitera criterio+valoracion, relevancia y
+% limitaciones. Postura sostenida. Declaracion de IA como \footnote.
+% ==========================================================================
+\clearpage
+\section{Conclusi\'on}
+
+Esta rese\~na valor\'o la \textbf{coherencia} del fundamento constitucional de la seguridad social en M\'exico y sostuvo que dicho fundamento es coherente porque el art\'iculo~123, en sus apartados~A (fracci\'on~XXIX) y~B (fracci\'on~XI), junto con el art\'iculo~4, se traducen sin ruptura en la Ley del Seguro Social, la Ley del ISSSTE y la Ley del ISSFAM \citep{cpeum2026,lss2026,lissste2026}. La evaluaci\'on cr\'itica es relevante porque demuestra que el sistema mexicano no adolece de un vac\'io entre norma fundamental y norma secundaria, sino de una brecha distinta: la que separa la coherencia jur\'idica de la cobertura universal efectiva.
+
+Reconozco, como l\'imite de esta valoraci\'on, que el criterio de coherencia no agota el an\'alisis del derecho: quedan abiertas las v\'ias de la exigibilidad judicial y de la sostenibilidad financiera del sistema, que merecer\'ian una rese\~na propia. Con todo, la postura que sostengo es que comprender este fundamento constitucional es indispensable para la pr\'actica jur\'idica, pues de \'el depende identificar qui\'en est\'a protegido, con qu\'e prestaciones y bajo qu\'e norma exigible, y desde \'el se proyecta la aspiraci\'on, todav\'ia inconclusa, de una seguridad social verdaderamente universal.\footnote{Declaraci\'on de uso de inteligencia artificial: conforme a los Lineamientos para el uso \'etico y responsable de la IA de la UnADM, se emple\'o asistencia de inteligencia artificial como apoyo para organizar y depurar la redacci\'on de esta rese\~na. La identificaci\'on del fundamento constitucional, la par\'afrasis del articulado, la selecci\'on de fuentes y la postura cr\'itica son propias, verificadas y validadas por el autor con la bibliograf\'ia citada, sin que la IA sustituyera el criterio acad\'emico.}
+
+\clearpage
+\nocite{cpeum2026,lss2026,lissste2026,lissfam2026,bricenoRuiz2011,gonzalezCarvallo2024,ibarraOlguin2022,hernandezInclusion2020,belmontLugoParra2017,moralesFajardo2021,acnudhSeguridadSocial2026}
+\bibliography{derecho-a-la-seguridad-social}
+
+\end{document}
