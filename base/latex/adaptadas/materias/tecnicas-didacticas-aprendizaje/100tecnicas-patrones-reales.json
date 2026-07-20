@@ -4,26 +4,56 @@
     "prioridad": "real > llm > familia_generica"
   },
   "patrones": {
+    "estudio_de_caso": {
+      "fuente_real": {
+        "materia": "Filosofía del Derecho (UnADM, Licenciatura en Derecho)",
+        "actividad": "Actividad 5 - Reflexión y estudio de caso: interpretación jurídica",
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/reporte-filosofia-del-derecho-Actividad-5.tex",
+        "titulo": "Reflexión y estudio de caso: interpretación jurídica",
+        "estado": "entregada y compilada; análisis de 2 casos reales (SCJN) con estructura hechos-problema-interpretación-postura-argumentos"
+      },
+      "packages": [
+        "\\usepackage{enumitem}",
+        "\\usepackage{csquotes}"
+      ],
+      "skeleton": "\\section{Análisis de caso}\n\n\\subsection{<Criterio/Caso: título del caso>}\n\n\\textbf{Texto normativo de partida.} <Artículo/norma que enmarca la controversia y qué expresión se debe interpretar> \\citep{<fuente>}.\n\n\\textbf{Hechos.} <Hechos relevantes: qué ocurrió, decisión inicial y su revisión> \\citep{<fuente>}.\n\n\\textbf{Normas jurídicas aplicadas.} <Norma directa + normas de armonización (constitucional, leyes generales)> \\citep{<fuentes>}.\n\n\\textbf{Problema jurídico.} <La pregunta jurídica precisa; el punto crítico de la interpretación>.\n\n\\textbf{Interpretación literal.} <Lectura gramatical de la norma>.\n\\textbf{Interpretación histórica.} <Antecedentes y concepción tradicional>.\n\\textbf{Interpretación teleológica.} <Fin de la norma y bien jurídico protegido>.\n\\textbf{Interpretación sistemática.} <Coherencia con el sistema de derechos>.\n\n\\textbf{Postura y consecuencia.} <Lectura propia: por qué el criterio es correcto/incorrecto, qué corrige, qué límite deja>.\n\n\\textbf{Argumentos a favor.}\n\\begin{enumerate}\n  \\item \\textbf{<Título del argumento>.} <Desarrollo>.\n\\end{enumerate}\n\n\\textbf{Argumentos en contra.}\n\\begin{enumerate}\n  \\item \\textbf{<Título de la objeción>.} <Desarrollo>.\n\\end{enumerate}\n% ... repetir \\subsection por cada caso analizado ...",
+      "rules": "El producto es un ANÁLISIS DE CASO en prosa estructurada por etiquetas \\textbf, NO un ensayo libre ni una tabla. Por cada caso (\\subsection): Texto normativo de partida -> Hechos -> Normas aplicadas -> Problema jurídico -> los 4 métodos de interpretación (literal, histórica, teleológica, sistemática) -> Postura y consecuencia -> Argumentos a favor y en contra (enumerate con títulos en \\textbf). Cada bloque cita su fuente con \\citep (jurisprudencia, códigos, leyes). Antes de los casos: introducción con la postura conceptual y un criterio de análisis; después: conclusión que integra lo aprendido. Distinguir SIEMPRE hecho / interpretación / norma / problema / solución.",
+      "scoring_extra": [
+        "Cada caso distingue explícitamente: texto normativo, hechos, problema jurídico, criterios de interpretación y postura con consecuencia.",
+        "La postura es propia y argumentada (posición + razón + límite), no una repetición de la tesis judicial.",
+        "Incluye argumentos a favor Y en contra (deliberación real, no solo defensa de una postura).",
+        "Cada afirmación jurídica sustantiva se respalda con \\citep de la fuente (jurisprudencia, código, ley).",
+        "Trabaja hechos verificables reales; no inventa el caso."
+      ]
+    },
     "cuestionario": {
       "fuente_real": {
         "materia": "Interaprendizaje en Ambientes Virtuales (UnADM, Licenciatura en Derecho)",
         "actividad": "Actividad 1 - Cuestionario diagnóstico",
-        "archivo": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-1.tex",
-        "titulo": "Cuestionario diagnóstico sobre interaprendizaje y colaboración digital",
-        "estado": "entregada y compilada; longtable de 4 columnas (No./Pregunta/Respuesta/Justificación) con reactivos citados en APA"
+        "archivo": "UCNL/licenciatura-en-administracion/administracion-i-lad/reporte-administracion-I-Actividad-1.tex",
+        "archivo_variante_justificacion": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-1.tex",
+        "titulo": "Cuestionario resuelto en tabla (opción múltiple) con marco conceptual previo",
+        "estado": "entregadas y compiladas; Administración I usa longtable 3 col (No./Pregunta+opciones/Respuesta) con marco conceptual; Interaprendizaje usa 4 col con justificación APA"
       },
       "packages": [
         "\\usepackage{array}",
         "\\usepackage{longtable}",
-        "\\usepackage{booktabs}"
+        "\\usepackage{booktabs}",
+        "\\usepackage{pdflscape}"
       ],
-      "skeleton": "\\begingroup\\scriptsize\n\\setlength{\\tabcolsep}{3.2pt}\\renewcommand{\\arraystretch}{1.28}\n\\begin{longtable}{@{}>{\\centering\\arraybackslash}p{0.055\\textwidth}>{\\raggedright\\arraybackslash}p{0.30\\textwidth}>{\\raggedright\\arraybackslash}p{0.28\\textwidth}>{\\raggedright\\arraybackslash}p{0.285\\textwidth}@{}}\n\\caption{<Título del cuestionario>}\\label{tab:<id>}\\\\\n\\toprule\n\\textbf{No.} & \\textbf{Pregunta} & \\textbf{Respuesta} & \\textbf{Justificación y criterio} \\\\\n\\midrule\\endfirsthead\n\\toprule\n\\textbf{No.} & \\textbf{Pregunta} & \\textbf{Respuesta} & \\textbf{Justificación y criterio} \\\\\n\\midrule\\endhead\n\\bottomrule\\endfoot\n\\bottomrule\\endlastfoot\n\\midrule\n1 & <pregunta 1> & <respuesta 1> & <justificación con \\citep{fuente}> \\\\\n\\midrule\n2 & <pregunta 2> & <respuesta 2> & <justificación con \\citep{fuente}> \\\\\n% ... un \\midrule + fila por reactivo ...\n\\end{longtable}\\endgroup",
-      "rules": "El producto es una TABLA de reactivos, NO un ensayo: conservar pregunta + respuesta + justificación por fila. longtable de 4 columnas con anchos ~0.055/0.30/0.28/0.285\\textwidth, scriptsize, tabcolsep 3.2pt, arraystretch 1.28; encabezados repetibles (\\endfirsthead/\\endhead). Cada justificación cita su fuente con \\citep. Antes: contexto/enfoque del diagnóstico integrado en la introducción; después: cierre con lo que revela el diagnóstico. Nivel cognitivo va en comentario salvo consigna expresa.",
+      "skeleton": "% Cuestionario en TABLA HORIZONTAL (landscape) con formato booktabs 'lindo'.\n\\clearpage\\pagestyle{empty}\n\\begin{landscape}\n\\begingroup\\small\n\\setlength{\\tabcolsep}{5pt}\\renewcommand{\\arraystretch}{1.25}\n\\begin{longtable}{@{}>{\\centering\\arraybackslash}p{0.05\\linewidth}>{\\raggedright\\arraybackslash}p{0.62\\linewidth}>{\\raggedright\\arraybackslash}p{0.28\\linewidth}@{}}\n\\caption{<Título del cuestionario resuelto>}\\label{tab:<id>}\\\\\n\\toprule\n\\textbf{No.} & \\textbf{Pregunta y opciones} & \\textbf{Respuesta correcta} \\\\\n\\midrule\\endfirsthead\n\\toprule\n\\textbf{No.} & \\textbf{Pregunta y opciones} & \\textbf{Respuesta correcta} \\\\\n\\midrule\\endhead\n\\bottomrule\\endfoot\n\\bottomrule\\endlastfoot\n1 & <pregunta 1> \\newline a) <op> \\quad b) <op> \\quad c) <op> \\quad d) <op> & \\textbf{<letra. respuesta correcta>} \\\\\n\\midrule\n2 & <pregunta 2> \\newline a) <op> \\quad b) <op> \\quad c) <op> \\quad d) <op> & \\textbf{<letra. respuesta correcta>} \\\\\n% ... una fila por reactivo, separadas por \\midrule ...\n\\end{longtable}\\endgroup\n\\end{landscape}\\pagestyle{fancy}\\clearpage\n% VARIANTE 4 columnas (con justificación) cuando la consigna pida justificar:\n% columnas No./Pregunta/Respuesta/Justificación (anchos ~0.05/0.40/0.25/0.28), cada\n% justificación con \\citep{fuente}.",
+      "marco_conceptual_rule": "OBLIGATORIO: antes del cuestionario debe existir un MARCO CONCEPTUAL SÓLIDO (sección o subsección) que desarrolle, con fuentes citadas \\citep, los conceptos clave que sustentan las respuestas del cuestionario. El cuestionario NO puede aparecer 'a secas': cada respuesta debe poder justificarse desde ese marco. El marco define los términos técnicos (destacados con \\textbf/\\textit) que luego se aplican en los reactivos, de modo que resolver el cuestionario sea aplicar el marco, no adivinar.",
+      "columna_justificacion_rule": "La tabla del cuestionario DEBE incluir una columna de JUSTIFICACIÓN (4 columnas: No./Pregunta+opciones/Respuesta correcta/Justificación). Cada justificación explica por qué la opción es correcta desde el concepto evaluado, idealmente con \\citep a la fuente del marco conceptual; no repite la respuesta, la fundamenta.",
+      "sin_planeacion_rule": "CUANDO NO HAY PLANEACIÓN/CONSIGNA OFICIAL disponible en el repositorio (materias sin extractor/planeación): NO forzar trazabilidad ni criterios oficiales inexistentes. En su lugar, el objetivo de calidad es construir (1) una INTRODUCCIÓN SINTÉTICA que plantee el tema y su relevancia en pocas líneas, (2) un MARCO CONCEPTUAL SÓLIDO con los conceptos clave citados que sustentan el cuestionario, y (3) una CONCLUSIÓN SÓLIDA sobre el tema (síntesis + postura + implicación), además del cuestionario en tabla con justificación. El techo razonable de contract score sin planeación es ~80; los checks instruction_source/traceability/concepts_min dependen del extractor y no deben bloquear la entrega.",
+      "metadiscurso_rule": "PROHIBIDO metadiscurso visible sobre la REALIZACIÓN de la actividad. Van COMENTADOS (%) o integrados en prosa: el nivel cognitivo, la técnica didáctica aplicada, el formato del producto ('se presenta en tabla horizontal'), y los CRITERIOS DE EVALUACIÓN. Estos NO deben ser secciones/subsecciones ni listas visibles: los criterios de evaluación y el análisis propio se integran de forma ORGÁNICA EN PROSA dentro de la conclusión (la conclusión afirma que las respuestas son correctas por su correspondencia con el principio y su fundamento en las fuentes, y añade la postura/implicación profesional). El texto visible habla del TEMA, no del proceso editorial.",
+      "rules": "El producto es una TABLA HORIZONTAL (landscape) de reactivos, NO un enumerate en línea ni un ensayo. Formato 'lindo' estilo Ética y Moral Jurídica: longtable + booktabs (\\toprule/\\midrule/\\bottomrule), \\small o \\scriptsize, \\arraystretch 1.22-1.35, tabcolsep 4-5pt, encabezados repetibles (\\endfirsthead/\\endhead), en \\begin{landscape} con \\pagestyle{empty}. Opción múltiple: 3 columnas (No./Pregunta+opciones/Respuesta correcta en \\textbf). Con justificación: 4 columnas (No./Pregunta/Respuesta/Justificación con \\citep). SIEMPRE precedido de un marco conceptual sólido (ver marco_conceptual_rule). Las opciones dentro de la celda separadas con \\quad o \\newline; la respuesta correcta en negrita.",
       "scoring_extra": [
-        "Cada reactivo conserva las tres partes: pregunta clara + respuesta + justificación (no solo respuesta).",
-        "La justificación aporta criterio o fuente (\\citep), no repite la respuesta.",
-        "El cuestionario se mantiene como tabla/lista estructurada; NO se transforma en ensayo salvo consigna expresa.",
-        "Encabezados de tabla repetibles si el cuestionario abarca varias páginas."
+        "El cuestionario está en TABLA HORIZONTAL (longtable landscape con booktapes), NO en enumerate en línea ni prosa.",
+        "Existe un MARCO CONCEPTUAL SÓLIDO previo, con conceptos citados (\\citep), que sustenta cada respuesta del cuestionario.",
+        "Cada reactivo muestra pregunta + opciones (si es opción múltiple) + respuesta correcta destacada en \\textbf.",
+        "Formato 'lindo': booktabs, arraystretch >=1.22, encabezados repetibles, columnas proporcionales legibles.",
+        "El cuestionario NO se transforma en ensayo; conserva su forma de banco de reactivos verificable.",
+        "Conclusión que integra lo que revela el diagnóstico y la postura propia."
       ]
     },
     "linea_de_tiempo": {

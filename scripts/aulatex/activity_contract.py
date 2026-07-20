@@ -63,6 +63,12 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
             "stop_conditions": ("activity_contract.passed", "pdf_fresh", "sin citas indefinidas", "sin placeholders", "consensus_score suficiente"),
         },
         {
+            "id": "optimize_concept_map_layout",
+            "goal": "Cuando el producto sea un MAPA CONCEPTUAL (TikZ con estilos mc*), aplicar el optimizador de layout (aulatex mapa-layout --write) partiendo del layout relativo agrupado por ramas: convertir a coordenadas absolutas, resolver choques, colocar las palabras de enlace sin empalmes (place_labels), y SEPARAR en vertical/horizontal (--vspread/--hspread, con cap para no salir de página) dando aire a las etiquetas y llenando el alto. Verificar el render real con pdftoppm/view_image y que el mapa + caption 'Figura' queden en la misma página.",
+            "actions": ("partir del layout relativo agrupado", "aulatex mapa-layout --write (vspread/hspread/label-clearance)", "verificar render sin empalmes y sin desborde", "ajustar etiquetas root->rama y cruzadas con pos", "recompilar"),
+            "outputs": ("mapa_sin_choques", "etiquetas_sin_empalmes", "mapa_y_caption_misma_pagina"),
+        },
+        {
             "id": "align_report_and_presentation",
             "goal": "Cuando existan reporte y presentación de la misma actividad, alinear la presentación con el reporte: reflejar conceptos, profundidad, fuentes y conclusión, conservando el estilo Beamer institucional y añadiendo una diapositiva de referencias APA y declaración de IA si aplica.",
             "actions": ("comparar reporte vs presentación", "actualizar diapositivas desfasadas", "espejar estructura y fuentes", "compilar presentación", "verificar visualmente"),
@@ -95,6 +101,7 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
         "ai_declaration": "la declaración de uso de inteligencia artificial, cuando exista, se materializa como \\footnote ligada a una frase oportuna del documento (por defecto de la conclusión), NUNCA como \\section/\\section* ni como bloque separado; debe indicar herramienta y propósito (organizar ideas, revisar redacción) y afirmar que no sustituyó el análisis propio",
         "compile": "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
         "report_presentation_alignment": "cuando existan reporte y presentación de la misma actividad, la presentación debe reflejar el contenido, la profundidad, los conceptos, las fuentes y la conclusión del reporte, con estilo Beamer institucional y una diapositiva final de referencias APA y declaración de IA si el reporte la incluye",
+        "concept_map_layout": "cuando el producto sea un mapa conceptual (TikZ mc*), el layout debe estar optimizado partiendo del layout relativo agrupado por ramas: sin choques entre nodos, sin palabras de enlace empalmadas ni 'comidas' sobre los nodos (place_labels + separación vertical/horizontal con --vspread/--hspread), y con el mapa y su caption 'Figura' en la MISMA página sin desbordar (verificado con el render real). Aplicar 'aulatex mapa-layout --write' (integrado en el post-proceso de realizar-actividad).",
     },
     "source_validation_rules": {
         "questionnaire_answers": (
@@ -288,9 +295,25 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
             "'se clasifica en') y deben existir relaciones cruzadas entre ramas que evidencien interdependencia e indivisibilidad."
         ),
         "graphic_rule": (
-            "Construir el diagrama con TikZ jerárquico. Apilar subconceptos DEBAJO de la cola de cada rama (below= del último nodo), "
-            "nunca encimarlos a la derecha ni con posiciones absolutas que desborden. Escalar el diagrama con \\resizebox{!}{0.80\\textheight} "
-            "dentro de un entorno landscape para llenar la página sin desbordar; NO usar \\resizebox{\\linewidth}{!} porque desborda en alto."
+            "Construir el diagrama con TikZ y estilos mc* (mcroot/mcbranch/mcleaf/mcsub); cada liga con node[mclabel]{proposición}. "
+            "PUNTO DE PARTIDA recomendado: layout RELATIVO en abanico (raíz arriba-centro; ramas con below left/below right a distancias "
+            "crecientes; hojas apiladas con below= bajo su rama; nodos de enriquecimiento en RACIMOS LATERALES con left=/right= anclados a cada "
+            "hoja base, NO prolongando la columna). Esto AGRUPA por ramas y evita el aspecto de columnas largas. Después ejecutar el optimizador de "
+            "layout (véase layout_optimizer_rule) que convierte a coordenadas absolutas, resuelve choques y separa las etiquetas. Escalar con "
+            "\\resizebox{\\linewidth}{!} (por ancho) cuando el mapa optimizado es ancho-bajo; el mapa y su caption Figura deben caber en la misma página."
+        ),
+        "layout_optimizer_rule": (
+            "OBLIGATORIO tras generar/editar el mapa: correr 'aulatex mapa-layout <tex> --write' (scripts/optimize_mapa_layout.py) que "
+            "(1) parte del layout relativo agrupado por ramas, (2) convierte a coordenadas absolutas, (3) resuelve choques entre nodos con fuerza "
+            "dirigida, (4) COLOCA las palabras de enlace con pos+xshift/yshift anti-empalme (place_labels), (5) SEPARA en vertical (--vspread) y un "
+            "poco en horizontal (--hspread, con cap automático para NO salir de página) dando aire a las etiquetas y usando el alto libre, y "
+            "(6) reserva holgura de etiqueta (--label-clearance). Parámetros óptimos verificados: --iters 1200 --repulsion 0.35 --step 0.2 "
+            "--spring 0.03 --xlim 13.5 --ylim 11 --target-aspect 1.4 --vspread 1.4 --hspread 1.08 --label-clearance 1.35 (son los DEFAULTS). "
+            "REGLAS DE ORO: (a) partir del layout relativo agrupado, NUNCA reoptimizar coordenadas ya dispersas (empeora y desborda); (b) verificar el "
+            "RENDER real con view_image (el conteo 'overlaps->0' es del modelo, no del render); (c) confirmar que el caption 'Figura 1' quede en la "
+            "misma página del mapa y que x_max<ancho_pag (sin desborde); (d) los 2 empalmes residuales típicos (etiquetas root->rama muy juntas y ligas "
+            "cruzadas to[bend]) se ajustan a mano con node[mclabel, pos=0.16..0.85]; (e) si el resultado empeora, RESTAURAR el layout relativo y reintentar. "
+            "Integrado en el post-proceso de realizar-actividad cuando el producto es mapa conceptual (agent._optimize_mapa_layout, flag --no-mapa-layout)."
         ),
         "structure_rule": (
             "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. El mapa conceptual es el "
@@ -428,7 +451,13 @@ def evaluate_activity_contract(state: dict[str, Any]) -> dict[str, Any]:
     observed = state.get("observed_state", {})
     required_checks = {
         "objective": bool(signals.get("objective_present") or signals.get("extractor_objective_present")),
-        "instruction_source": bool(signals.get("purpose_present") or signals.get("extractor_planeacion_present")),
+        # Fuente de consigna/propósito: planeación oficial O, en su defecto, propósito
+        # derivable del propio marco conceptual del documento (fallback UCNL sin planeación).
+        "instruction_source": bool(
+            signals.get("purpose_present")
+            or signals.get("extractor_planeacion_present")
+            or signals.get("document_purpose_present")
+        ),
         "didactic_technique": bool(
             signals.get("didactic_technique_present")
             or signals.get("questionnaire_detected")
@@ -446,7 +475,16 @@ def evaluate_activity_contract(state: dict[str, Any]) -> dict[str, Any]:
         "bibliography": bool(observed.get("bibliography_ready")) and int(signals.get("cited_keys_count", 0)) >= ACTIVITY_1_CONTRACT["acceptable_ranges"]["bibliography_entries_min"],
         "visible_citations": int(signals.get("cited_keys_count", 0)) >= ACTIVITY_1_CONTRACT["acceptable_ranges"]["visible_citations_min"],
         "questionnaire_sources_min": (not signals.get("questionnaire_detected")) or int(signals.get("cited_keys_count", 0)) >= ACTIVITY_1_CONTRACT["acceptable_ranges"]["questionnaire_bibliography_entries_min"],
-        "traceability": bool(observed.get("extractor_ready")) and int(signals.get("cited_keys_count", 0)) >= 3,
+        # Trazabilidad: extractor listo con citas suficientes O, sin planeación oficial,
+        # trazabilidad interna sólida (citas visibles ligadas a un marco conceptual).
+        "traceability": (
+            bool(observed.get("extractor_ready")) and int(signals.get("cited_keys_count", 0)) >= 3
+        )
+        or (
+            bool(signals.get("document_purpose_present"))
+            and int(signals.get("cited_keys_count", 0)) >= 3
+            and int(signals.get("document_concepts_count", 0)) >= ACTIVITY_1_CONTRACT["acceptable_ranges"]["concepts_min"]
+        ),
         "evaluation_criteria": bool(signals.get("evaluation_criteria_present") or signals.get("extractor_criteria_count", 0) > 0),
         "final_reflection": bool(signals.get("conclusion_present")),
         # La declaración de uso de IA, cuando exista, debe ir como \footnote ligada a
@@ -464,12 +502,30 @@ def evaluate_activity_contract(state: dict[str, Any]) -> dict[str, Any]:
         "sections_range": ACTIVITY_1_CONTRACT["acceptable_ranges"]["sections_min"]
         <= int(signals.get("sections_count", 0))
         <= ACTIVITY_1_CONTRACT["acceptable_ranges"]["sections_max"],
-        "concepts_min": int(signals.get("extractor_concepts_count", 0)) >= ACTIVITY_1_CONTRACT["acceptable_ranges"]["concepts_min"],
+        # Cobertura conceptual: conceptos de la planeación oficial O, en su defecto,
+        # conceptos identificables en el marco conceptual del propio documento.
+        "concepts_min": max(
+            int(signals.get("extractor_concepts_count", 0)),
+            int(signals.get("document_concepts_count", 0)),
+        )
+        >= ACTIVITY_1_CONTRACT["acceptable_ranges"]["concepts_min"],
         # El cuerpo visible no debe contener metadiscurso de ejecución ni residuos de
         # flujos antiguos (p. ej. 'Refuerzo editorial Ciclo A', 'La Actividad N',
         # 'Esta actividad', 'el producto solicitado'). Si el observer no provee la
         # señal (None), el check no penaliza.
         "no_metadiscourse": len(signals.get("metadiscourse_hits") or []) == 0,
+        # ENCABEZADOS: el \documenttitle debe ser temático, no 'Actividad #'.
+        "thematic_title": not bool(signals.get("title_generic_activity")),
+        # ESTRUCTURA: la sección de desarrollo NO debe titularse literalmente 'Desarrollo'.
+        "development_thematic_heading": not bool(signals.get("development_section_literal")),
+        # POSTURA: análisis propio / postura personal presente (idealmente en conclusión).
+        "personal_stance": bool(signals.get("personal_stance_present")),
+        # POSTURA INTEGRADA: el análisis propio y la postura NO deben figurar como
+        # \section/\subsection separadas; deben fundirse en la prosa de la conclusión.
+        "stance_integrated_in_conclusion": not bool(signals.get("stance_as_separate_section")),
+        # CUESTIONARIO: las opciones no deben quedar como lista visible suelta
+        # ('Opciones: a) ...'); deben ir en la tabla o comentadas.
+        "questionnaire_options_hidden": not bool(signals.get("questionnaire_options_visible")),
     }
     all_checks = {**required_checks, **range_checks}
     required_hits = sum(1 for ok in required_checks.values() if ok)
@@ -510,5 +566,10 @@ def _contract_finding(name: str) -> str:
         "sections_range": "La estructura de secciones queda fuera del rango contractual.",
         "concepts_min": "La cobertura conceptual extraída está por debajo del mínimo contractual.",
         "no_metadiscourse": "El cuerpo visible contiene metadiscurso de ejecución o residuos de flujos antiguos (p. ej. 'Refuerzo editorial Ciclo A', 'La Actividad N', 'Esta actividad'); deben eliminarse o pasar a comentario TEX.",
+        "thematic_title": "El \\documenttitle es genérico ('Actividad #'); debe ser un título TEMÁTICO del producto (p. ej. 'Cuestionario resuelto de conceptos introductorios de microeconomía').",
+        "development_thematic_heading": "La sección de desarrollo se titula literalmente 'Desarrollo'; debe llevar un título temático del contenido (p. ej. 'Conceptos fundamentales de la microeconomía').",
+        "personal_stance": "Falta análisis propio o postura personal (primera persona académica: 'Considero...', 'Desde mi análisis...', 'A mi juicio...'), preferentemente integrada en la conclusión.",
+        "stance_integrated_in_conclusion": "El análisis propio o la postura personal aparecen como sección/subsección separada (p. ej. '\\section{Postura personal}', '\\subsection{Análisis propio}'); deben integrarse ORGÁNICAMENTE en la prosa de la conclusión, no como apartados propios.",
+        "questionnaire_options_hidden": "Las opciones del cuestionario aparecen como lista visible suelta ('Opciones: a) ...'); deben integrarse en la tabla o ir comentadas.",
     }
     return messages.get(name, f"Incumplimiento contractual: {name}.")

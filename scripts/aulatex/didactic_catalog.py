@@ -214,7 +214,7 @@ _CATALOG_BASE: tuple[tuple[Any, ...], ...] = (
     ("historieta", 10, "Historieta", "Recordar", "comunicativo_visual", "Viñetas TikZ o guion", ("viñetas", "secuencia", "mensaje"), ("historieta", "cómic", "comic")),
     ("informe", 11, "Informe", "Sintetizar", "escrito_expositivo", "Documento con secciones", ("introducción", "desarrollo", "conclusión", "referencias"), ("informe",)),
     ("linea_de_tiempo", 12, "Línea de tiempo", "Sintetizar", "temporal", "Timeline TikZ", ("hitos", "fechas", "eventos", "lectura histórica"), ("línea de tiempo", "linea de tiempo", "timeline", "cronología", "cronologia")),
-    ("mapa_conceptual", 13, "Mapa conceptual", "Sintetizar", "visual_jerarquico", "Nodos y conectores TikZ", ("conceptos", "relaciones", "lectura explicativa"), ("mapa conceptual", "conceptos")),
+    ("mapa_conceptual", 13, "Mapa conceptual", "Sintetizar", "visual_jerarquico", "Nodos y conectores TikZ", ("conceptos", "relaciones", "lectura explicativa"), ("mapa conceptual",)),
     ("panel_de_discusion", 14, "Panel de discusión", "Aplicar", "oral_participativo", "Tabla de posturas", ("panelistas", "posturas", "síntesis"), ("panel de discusión", "panel de discusion", "panel")),
     ("pensamiento_de_diseno", 15, "Pensamiento de diseño", "Recordar", "colaborativo_proyecto", "Fases empatizar-definir-idear-prototipar-evaluar", ("empatizar", "definir", "idear", "prototipar", "evaluar"), ("pensamiento de diseño", "design thinking", "pensamiento de diseno")),
     ("phillips_66", 16, "Phillips 66", "Aplicar", "colaborativo_proyecto", "Matriz grupo-idea-síntesis", ("grupos", "ideas", "síntesis"), ("phillips 66", "phillips66")),
@@ -228,7 +228,7 @@ _CATALOG_BASE: tuple[tuple[Any, ...], ...] = (
     ("autoexplicacion", 24, "Autoexplicación", "Explicar", "estrategia_cognitiva", "Secuencia pregunta-respuesta-criterio", ("pregunta", "respuesta", "criterio"), ("autoexplicación", "autoexplicacion")),
     ("cronologia_ilustrada", 25, "Cronología ilustrada", "Construir", "temporal", "Línea de tiempo con iconos", ("hitos", "iconos", "eventos", "lectura"), ("cronología ilustrada", "cronologia ilustrada")),
     ("estructuras_textuales", 26, "Estructuras textuales", "Analizar", "analisis_textual", "Mapa de estructura argumentativa", ("estructura", "argumentos", "relaciones"), ("estructuras textuales",)),
-    ("estudio_de_caso", 27, "Estudio de casos", "Explicar", "analisis_caso", "Hechos-problema-norma-solución", ("hechos", "análisis", "conclusión"), ("caso", "estudio de caso", "estudio de casos", "situación", "situacion")),
+    ("estudio_de_caso", 27, "Estudio de casos", "Explicar", "analisis_caso", "Hechos-problema-norma-solución", ("hechos", "análisis", "conclusión"), ("estudio de caso", "estudio de casos", "análisis de caso", "analisis de caso", "análisis de casos")),
     ("exposicion_oral", 28, "Exposición oral", "Aplicar", "expositivo_oral", "Guion o diapositivas", ("objetivo", "puntos clave", "cierre"), ("exposición oral", "exposicion oral")),
     ("foro", 29, "Foro", "Aplicar", "oral_participativo", "Entrada, réplica y cierre", ("preguntas guía", "respuesta", "participación textual publicada", "cierre"), ("foro", "foro diagnóstico", "foro diagnostico", "participación en foro", "participacion en foro")),
     ("grupos_de_discusion", 30, "Grupos de discusión", "Aplicar", "oral_participativo", "Matriz de aportaciones", ("participantes", "aportaciones", "síntesis"), ("grupos de discusión", "grupos de discusion")),
@@ -567,8 +567,24 @@ def _apply_real_patterns(contracts: dict[str, dict[str, Any]]) -> dict[str, dict
     return contracts
 
 
-TECHNIQUE_CONTRACTS: dict[str, dict[str, Any]] = _apply_real_patterns(
-    _apply_construction(_apply_overrides(_build_contracts()))
+def _apply_activity_products(contracts: dict[str, dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    """Adjunta a cada técnica los PRODUCTOS de actividad reales que la usan.
+
+    Lo genera ``productos_actividad.run()`` (inventario escaneado del repo). Cada
+    técnica recibe ``activity_products`` (lista de {archivo, titulo, actividad}) para
+    que el motor conozca ejemplos reales entregados de esa técnica.
+    """
+    inventory = _load_json_overlay("productos-actividad.json", "por_tecnica")
+    for tech_id, items in inventory.items():
+        if tech_id not in contracts:
+            continue
+        contracts[tech_id]["activity_products"] = items
+        contracts[tech_id]["activity_products_count"] = len(items)
+    return contracts
+
+
+TECHNIQUE_CONTRACTS: dict[str, dict[str, Any]] = _apply_activity_products(
+    _apply_real_patterns(_apply_construction(_apply_overrides(_build_contracts())))
 )
 
 

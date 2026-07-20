@@ -75,9 +75,14 @@ def base_style(s: str) -> str:
 
 
 # ancho aprox de una etiqueta mclabel (font \tiny\itshape): ~0.11cm por carácter, alto ~0.30cm
+# LABEL_CLEARANCE: factor global de holgura de la caja de etiqueta (para que place_labels
+# reserve más margen alrededor de la etiqueta y no quede pegada a los nodos).
+LABEL_CLEARANCE = 1.0
+
+
 def label_dims(text: str) -> tuple[float, float]:
     w = max(0.6, 0.115 * len(text.strip()) + 0.15)
-    return (w, 0.34)
+    return (w * LABEL_CLEARANCE, 0.34 * LABEL_CLEARANCE)
 
 
 def parse_edge_labels(block: str):
@@ -334,9 +339,9 @@ def place_labels(block: str, nodes) -> str:
     una zona libre (no queda 'comida' sobre un nodo)."""
     node_boxes = [bbox(n) for n in nodes.values() if not n.is_label]
 
-    positions = [0.5, 0.42, 0.58, 0.34, 0.66, 0.28, 0.72, 0.22, 0.78]
-    # desplazamientos perpendiculares (cm) a evaluar
-    perp_offsets = [0.0, 0.35, -0.35, 0.6, -0.6, 0.9, -0.9]
+    positions = [0.5, 0.44, 0.56, 0.38, 0.62, 0.32, 0.68, 0.26, 0.74, 0.20, 0.80, 0.15, 0.85]
+    # desplazamientos perpendiculares (cm) a evaluar (mayores para sacar la etiqueta del nodo)
+    perp_offsets = [0.0, 0.3, -0.3, 0.5, -0.5, 0.75, -0.75, 1.05, -1.05, 1.4, -1.4]
 
     def best_for_edge(na, nb, text):
         if na not in nodes or nb not in nodes:
@@ -430,7 +435,17 @@ def main():
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--target-aspect", type=float, default=0.0,
                     help="Si >0, estira Y tras optimizar para que ancho/alto se acerque a este ratio (p.ej. 1.5 llena más el vertical en landscape). Reverifica sin choques.")
+    ap.add_argument("--vspread", type=float, default=1.0,
+                    help="Factor de separación VERTICAL extra tras optimizar (>1 aleja los nodos en Y para dar aire a las etiquetas; usa el espacio libre del alto).")
+    ap.add_argument("--hspread", type=float, default=1.0,
+                    help="Factor de separación HORIZONTAL extra tras optimizar (>1 aleja en X sin salir de página).")
+    ap.add_argument("--label-clearance", type=float, default=1.0,
+                    help="Holgura de la caja de etiqueta para place_labels (>1 reserva más margen y evita empalmes etiqueta-nodo).")
     args = ap.parse_args()
+
+    # aplicar clearance global de etiquetas
+    global LABEL_CLEARANCE
+    LABEL_CLEARANCE = max(0.5, float(args.label_clearance))
 
     tex = args.tex.read_text(encoding="utf8")
     s, e, block = extract_block(tex)
@@ -495,6 +510,32 @@ def main():
                 if count_overlaps(nodes) == 0 and moved == 0:
                     break
             sync_labels(nodes)
+
+    # SEPARACIÓN EXTRA vertical/horizontal para dar aire a las etiquetas y usar el espacio
+    # libre de la página. Escala las coordenadas respecto al centroide; la horizontal se
+    # limita para NO exceder el ancho de página (los extremos ya están al máximo).
+    if args.vspread != 1.0 or args.hspread != 1.0:
+        reals = [n for n in nodes.values() if not n.is_label]
+        cx = sum(n.x for n in reals) / len(reals)
+        cy = sum(n.y for n in reals) / len(reals)
+        # límite horizontal: no crecer más allá del marco actual (evita desbordar)
+        cur_halfw = max(abs(n.x - cx) for n in reals) or 1e-6
+        max_halfw = args.xlim  # media anchura útil
+        hcap = min(args.hspread, max_halfw / cur_halfw)
+        hcap = max(1.0, hcap)  # nunca comprimir aquí
+        for n in reals:
+            if not n.pinned:
+                n.y = cy + (n.y - cy) * args.vspread
+                n.x = cx + (n.x - cx) * hcap
+        sync_labels(nodes)
+        # micro-reoptimización solo para deshacer choques nodo-nodo que la expansión no cause
+        vy = args.ylim * args.vspread + 3
+        vx = args.xlim + 1
+        for _ in range(800):
+            moved = step(nodes, args.repulsion * 0.6, args.step * 0.7, 0.0, vx, vy)
+            if count_overlaps(nodes) == 0 and moved == 0:
+                break
+        sync_labels(nodes)
 
     new_block = rebuild_block(block, nodes)
     # HEURÍSTICA anti-empalme de etiquetas: reescribe cada \draw con pos+shift óptimos

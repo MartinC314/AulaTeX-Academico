@@ -276,6 +276,43 @@ class ActivityObserver:
                 "objective_present": bool(re.search(r"\\textbf\{Objetivo:\}|\\section\{Objetivo", active_tex, re.IGNORECASE)),
                 "purpose_present": bool(re.search(r"\\textbf\{Prop[óo]sito:\}|prop[óo]sito", active_tex, re.IGNORECASE)),
                 "conclusion_present": bool(sections and any("conclus" in section.lower() for section in sections)) or bool(re.search(r"en conclusi[óo]n", active_tex, re.IGNORECASE)),
+                # Encabezados: el \documenttitle NO debe incluir 'Actividad #'; debe ser temático.
+                "title_generic_activity": bool(
+                    re.search(
+                        r"\\def\\documenttitle\s*\{[^}]*[Aa]ctividad\s*\d+",
+                        active_tex,
+                    )
+                    or re.search(
+                        r"\\(?:re)?newcommand\{\\documenttitle\}\s*\{[^}]*[Aa]ctividad\s*\d+",
+                        active_tex,
+                    )
+                ),
+                # La sección de desarrollo NO debe titularse literalmente 'Desarrollo'.
+                "development_section_literal": bool(
+                    re.search(r"\\section\*?\{\s*Desarrollo\s*\}", active_tex, re.IGNORECASE)
+                ),
+                # Postura/análisis propio: primera persona académica en la conclusión.
+                "personal_stance_present": bool(
+                    re.search(
+                        r"\b(considero|mi (an[áa]lisis|lectura|postura|juicio)|desde mi|sostengo|a mi juicio|en mi opini[óo]n|defiendo|concluyo que)\b",
+                        active_tex,
+                        re.IGNORECASE,
+                    )
+                ),
+                # El análisis propio y la postura personal deben integrarse ORGÁNICAMENTE
+                # en la conclusión (prosa), NO figurar como \section/\subsection propia.
+                "stance_as_separate_section": bool(
+                    re.search(
+                        r"\\(?:sub)?section\*?\{[^}]*(an[áa]lisis\s+propio|postura\s+personal|valoraci[óo]n\s+(?:cr[íi]tica|personal)|reflexi[óo]n\s+(?:propia|personal)|apreciaci[óo]n\s+personal|opini[óo]n\s+personal)",
+                        active_tex,
+                        re.IGNORECASE,
+                    )
+                ),
+                # Opciones de cuestionario visibles (a) b) c) d) en el cuerpo): deben ir
+                # comentadas o en tabla; su presencia como lista suelta es señal de ruido.
+                "questionnaire_options_visible": bool(
+                    re.search(r"Opciones:\s*[a-d][.)]", active_tex, re.IGNORECASE)
+                ),
                 "ai_declaration_present": bool(re.search(r"inteligencia artificial|uso de\s+ia\b|herramienta[s]?\s+de\s+ia\b", active_tex, re.IGNORECASE)),
                 "ai_declaration_as_footnote": bool(
                     re.search(
@@ -313,6 +350,18 @@ class ActivityObserver:
                 "extractor_criteria_count": len(extractor_summary.get("criterios_entrega", [])) if isinstance(extractor_summary, dict) and isinstance(extractor_summary.get("criterios_entrega", []), list) else 0,
                 "extractor_verbs_count": len(extractor_summary.get("verbos_operativos", [])) if isinstance(extractor_summary, dict) and isinstance(extractor_summary.get("verbos_operativos", []), list) else 0,
                 "extractor_concepts_count": len(extractor_concepts) if isinstance(extractor_concepts, list) else 0,
+                # Señales de FALLBACK derivadas del propio TEX, usadas cuando no existe
+                # planeación oficial (materias sin extractor-aulatex). Permiten que el
+                # contrato sea efectivo sin depender exclusivamente de la planeación.
+                "document_concepts_count": self._count_document_concepts(active_tex),
+                "document_purpose_present": bool(
+                    re.search(
+                        r"\\section\{[^}]*(marco conceptual|marco te[óo]rico|conceptos (fundamentales|introductorios|clave)|fundamentos)",
+                        active_tex,
+                        re.IGNORECASE,
+                    )
+                    or re.search(r"\\textbf\{Prop[óo]sito:\}|este (documento|cuestionario|trabajo) (aborda|analiza|examina|presenta)", active_tex, re.IGNORECASE)
+                ),
                 "extractor": extractor_state,
                 "compile": compile_result,
             },
@@ -478,20 +527,40 @@ class ActivityObserver:
     def _find_metadiscourse(self, text: str) -> list[str]:
         """Detecta metadiscurso de ejecución visible que el contrato prohíbe.
 
-        Incluye residuos del flujo antiguo (Refuerzo editorial Ciclo A) y menciones
+        Incluye residuos del flujo antiguo (Refuerzo editorial Ciclo A), menciones
         de 'la actividad N' / 'esta actividad' / 'el producto solicitado' como narrador
-        externo. No penaliza el mismo texto dentro de comentarios TEX (que ya fueron
+        externo, Y metadiscurso sobre la REALIZACIÓN de la actividad que debe ir
+        comentado (secciones 'Nivel cognitivo aplicado', 'Técnica didáctica aplicada',
+        'Producto solicitado', frases que narran cómo se presenta/aplica el producto en
+        lugar de hablar del TEMA). No penaliza texto dentro de comentarios TEX (ya
         removidos por _strip_tex_comments antes de invocar este método).
         """
         hits: list[str] = []
         patterns = (
+            # Residuos del flujo antiguo.
             r"Refuerzo editorial",
             r"Ciclo A\b",
+            r"\\section\*?\{[^}]*[Rr]efuerzo",
+            r"\\subsection\*?\{[^}]*[Rr]efuerzo",
+            # Narrador externo sobre la actividad.
             r"\bLa Actividad\s+\d+",
             r"\bEsta actividad\b",
+            r"\besta actividad\b",
             r"el producto solicitado",
             r"la t[ée]cnica usada",
-            r"\\section\*?\{[^}]*[Rr]efuerzo",
+            # Secciones de METADISCURSO sobre la realización (deben ir comentadas o
+            # integradas en prosa en la conclusión, no como sección/lista visible).
+            r"\\subsection\*?\{[^}]*[Nn]ivel cognitivo",
+            r"\\subsection\*?\{[^}]*[Tt][ée]cnica did[áa]ctica",
+            r"\\subsection\*?\{[^}]*[Pp]roducto solicitado",
+            r"\\subsection\*?\{[^}]*[Cc]riterios de evaluaci[óo]n",
+            # Frases que narran la realización en lugar del tema.
+            r"El nivel cognitivo (dominante|aplicado|esperado)",
+            r"[Ll]a t[ée]cnica de cuestionario",
+            r"[Ll]a t[ée]cnica did[áa]ctica (aplicada|utilizada|empleada)",
+            r"se aplic[oó] (una|la) t[ée]cnica",
+            r"El (cuestionario|producto|mapa|cuadro) se presenta en formato",
+            r"Considero que esta (estructura|t[ée]cnica|actividad)",
         )
         for pattern in patterns:
             hits.extend(match.group(0).strip() for match in re.finditer(pattern, text, re.IGNORECASE))
@@ -499,3 +568,56 @@ class ActivityObserver:
 
     def _extract_sections(self, text: str) -> list[str]:
         return [match.group(1).strip() for match in re.finditer(r"\\section\{([^}]+)\}", text)]
+
+    def _count_document_concepts(self, text: str) -> int:
+        """Cuenta conceptos identificables en el marco conceptual del propio TEX.
+
+        Fallback usado cuando NO existe planeación oficial (materias UCNL sin
+        extractor-aulatex). Deriva la cobertura conceptual del documento contando
+        términos técnicos resaltados de forma explícita: definiciones en
+        \\textbf{...}, entradas de description/itemize con \\item[\\textbf{...}] y
+        \\emph{...}. Sólo se consideran términos con longitud razonable (una a
+        varias palabras) para evitar contar énfasis accidental. Devuelve el número
+        de conceptos distintos detectados.
+        """
+        # Recortar bloques de tabla (longtable/tabular): ahí \textbf marca cabeceras y
+        # respuestas correctas, no conceptos del marco. Se evalúa sólo el texto en prosa.
+        prose = re.sub(
+            r"\\begin\{(longtable|tabular)\}.*?\\end\{\1\}",
+            " ",
+            text,
+            flags=re.DOTALL,
+        )
+        concepts: set[str] = set()
+        patterns = (
+            # Definiciones explícitas en listas descriptivas.
+            r"\\item\[\\textbf\{([^}]{3,60})\}\]",
+            r"\\item\[\\emph\{([^}]{3,60})\}\]",
+            # Términos técnicos resaltados en la prosa del marco conceptual.
+            r"\\textbf\{([^}]{3,60})\}",
+            r"\\emph\{([^}]{3,60})\}",
+        )
+        stop = {
+            "objetivo", "propósito", "proposito", "conclusión", "conclusion",
+            "respuesta", "respuestas", "justificación", "justificacion",
+            "pregunta", "preguntas", "producto elaborado", "referencias",
+            "bibliografía", "bibliografia", "introducción", "introduccion",
+            "correcta", "no.", "no", "opciones", "alumno", "objetivo:",
+            "enfoque de analisis", "nivel cognitivo", "producto elaborado:",
+        }
+        for pattern in patterns:
+            for match in re.finditer(pattern, prose):
+                term = re.sub(r"\s+", " ", match.group(1)).strip(" .:;,").lower()
+                if not term or term in stop or len(term) < 3:
+                    continue
+                if term.isdigit():
+                    continue
+                # Descartar énfasis largo (frases) o que parezca opción de respuesta ("a. ...").
+                if len(term.split()) > 4:
+                    continue
+                if re.match(r"^[a-d]\.\s", term):
+                    continue
+                if term.endswith(":"):
+                    continue
+                concepts.add(term)
+        return len(concepts)

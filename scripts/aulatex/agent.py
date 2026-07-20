@@ -513,9 +513,10 @@ class AulaTeXAgent:
             return "- Mapa (optimizador TikZ): script no encontrado"
         cmd = [
             _sys.executable, str(script), str(tex),
-            "--iters", "2500", "--repulsion", "0.5", "--step", "0.32",
-            "--spring", "0.005", "--xlim", "16", "--ylim", "11",
-            "--target-aspect", "1.4", "--write",
+            "--iters", "1200", "--repulsion", "0.35", "--step", "0.2",
+            "--spring", "0.03", "--xlim", "13.5", "--ylim", "11",
+            "--target-aspect", "1.4", "--vspread", "1.4", "--hspread", "1.08",
+            "--label-clearance", "1.35", "--write",
         ]
         try:
             proc = subprocess.run(cmd, capture_output=True, text=True, timeout=600)

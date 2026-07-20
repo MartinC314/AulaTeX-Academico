@@ -310,9 +310,12 @@ def build_parser() -> argparse.ArgumentParser:
     mapa_layout.add_argument("--repulsion", type=float, default=0.5)
     mapa_layout.add_argument("--step", type=float, default=0.32)
     mapa_layout.add_argument("--spring", type=float, default=0.005)
-    mapa_layout.add_argument("--xlim", type=float, default=16.0)
+    mapa_layout.add_argument("--xlim", type=float, default=13.5)
     mapa_layout.add_argument("--ylim", type=float, default=11.0)
     mapa_layout.add_argument("--target-aspect", type=float, default=1.4, help="Estira Y/comprime X para llenar el alto (0 = desactivar).")
+    mapa_layout.add_argument("--vspread", type=float, default=1.4, help="Separación vertical extra tras optimizar (aire para etiquetas).")
+    mapa_layout.add_argument("--hspread", type=float, default=1.08, help="Separación horizontal extra (sin salir de página).")
+    mapa_layout.add_argument("--label-clearance", type=float, default=1.35, help="Holgura de la caja de etiqueta (evita empalmes etiqueta-nodo).")
     mapa_layout.add_argument("--out-dir", default=".aulatex-temp/opt-mapa2")
     mapa_layout.add_argument("--write", action="store_true", help="Write the optimized absolute coordinates back into the .tex.")
 
@@ -1025,6 +1028,9 @@ def main(argv: list[str] | None = None) -> None:
             "--xlim", str(args.xlim),
             "--ylim", str(args.ylim),
             "--target-aspect", str(args.target_aspect),
+            "--vspread", str(args.vspread),
+            "--hspread", str(args.hspread),
+            "--label-clearance", str(args.label_clearance),
             "--out-dir", args.out_dir,
         ]
         if args.write:
