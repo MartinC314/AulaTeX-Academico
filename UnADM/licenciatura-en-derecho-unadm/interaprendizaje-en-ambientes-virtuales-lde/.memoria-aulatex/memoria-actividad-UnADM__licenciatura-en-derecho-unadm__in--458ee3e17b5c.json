@@ -118,7 +118,7 @@
         "scope_label": "Actividad 1"
       },
       "didactic_contract": {
-        "detected_id": "foro_diagnostico",
+        "detected_id": "cuestionario",
         "aliases": [
           "foro",
           "foro diagnóstico",
@@ -310,7 +310,7 @@
             "scope_label": "Actividad 1"
           },
           "didactic_contract": {
-            "detected_id": "foro_diagnostico",
+            "detected_id": "cuestionario",
             "aliases": [
               "foro",
               "foro diagnóstico",

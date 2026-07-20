@@ -602,7 +602,19 @@
     "career": "licenciatura-en-derecho-unadm",
     "subject": "etica-y-moral-juridica-lde",
     "activity": "Actividad 3",
-    "parent_key": "UnADM/licenciatura-en-derecho-unadm/etica-y-moral-juridica-lde"
+    "parent_key": "UnADM/licenciatura-en-derecho-unadm/etica-y-moral-juridica-lde",
+    "didactic_technique": {
+      "detected_id": "linea_de_tiempo",
+      "catalogo_no": 12,
+      "nombre_oficial": "Línea de tiempo",
+      "nivel": "Sintetizar",
+      "producto_entregado": "Línea de tiempo en TikZ: 'Principales autores sobre la ética en México' (8 hitos con retratos, tarjetas alternadas, análisis y conclusiones).",
+      "titulo_documento": "Línea de tiempo: autores sobre la ética en México",
+      "semana_planeacion": "Semana 4 - Línea de tiempo (10%)",
+      "fuente_planeacion": "referencias-etica-y-moral-juridica/conceptos-etica-y-moral-juridica-S09/resumen_planeacion.json",
+      "contractualizado": true,
+      "nota": "Actividad real que aportó el patrón TikZ de referencia para la técnica linea_de_tiempo en el catálogo (100tecnicas-patrones-reales.json)."
+    }
   },
   "curricular_context": {
     "institutional_frame": "Asignatura de la Licenciatura en Derecho de la UnADM ubicada en semestre 1, bloque 2. Su funcion editorial es orientar productos academicos con claridad, fundamento juridico, evidencia y transferencia profesional.",
