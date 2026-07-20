@@ -152,23 +152,155 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "UCNL",
+        "subject_rule": "Actividad 1 - UCNL",
         "scope_label": "UCNL"
       },
       "didactic_contract": {
-        "detected_id": "cuestionario_diagnostico",
+        "detected_id": "tabla_didactica",
+        "catalogo_no": 1,
+        "nombre_oficial": "Cuadro comparativo",
+        "nivel": "Sintetizar",
+        "familia": "tabular",
         "aliases": [
-          "cuestionario",
-          "diagnóstico",
-          "diagnostico",
-          "reactivo"
+          "cuadro comparativo",
+          "cuadro",
+          "tabla",
+          "longtable",
+          "tabular"
         ],
         "required_visible_elements": [
-          "pregunta",
-          "respuesta",
-          "justificación"
+          "título",
+          "encabezados",
+          "filas",
+          "criterio de lectura"
         ],
-        "preservation_rule": "Si el insumo es cuestionario, el desarrollo visible debe conservar reactivos, respuestas y justificaciones en tabla compacta o lista estructurada; no debe transformarse en ensayo salvo que la consigna lo pida."
+        "preservation_rule": "Si el producto solicitado es «Cuadro comparativo», conservar su forma visible característica (título, encabezados, filas, criterio de lectura) y su nivel cognitivo (Sintetizar); no transformarlo en otro producto salvo que la consigna lo pida. Construir con longtable/tabular; usar landscape, footnotesize, tabcolsep y arraystretch cuando el contenido sea amplio. Encabezados claros, filas completas y una guía de lectura de columnas.",
+        "preservation_rule_official": "Materializar «Cuadro comparativo» siguiendo la estructura oficial UnADM: Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria",
+        "structure_rule": "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. La tabla/cuadro es el NÚCLEO del acto de desarrollo. Orden: (a) marco conceptual-teórico breve que prepara la tabla, (b) la tabla en su página landscape como pieza protagónica, (c) semejanzas y diferencias u otro análisis derivado DESPUÉS de la tabla.",
+        "three_act_gravity_rule": "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, tabla y análisis (semejanzas/diferencias) son subsecciones de una sola sección de desarrollo cuyo título nombra el tema.",
+        "layout_rule": "El cuadro/tabla va en orientación horizontal (landscape) en su PROPIA página, con la tabla y su caption juntos en una sola página landscape. No anteponer \\clearpage al \\begin{landscape}. Compactar con \\arraystretch<=1.2 y caption en \\footnotesize.",
+        "no_gap_rule": "PROHIBIDO dejar media página o más en blanco justo antes del cuadro. Verificar visualmente con pdftoppm el flujo de páginas.",
+        "closure_rule": "El análisis derivado de la tabla y la postura personal se cierran en la conclusión. La conclusión inicia con \\clearpage y ocupa preferentemente una sola página; la declaración de uso de IA se liga como \\footnote.",
+        "build_steps": "Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria para establecer las comparaciones.\n 3. Trazar la tabla. Considerar el número de conceptos o\n temas y la cantidad de categorías que se utilizarán en\n la comparación. En el caso de los conceptos, cada uno\n requiere una columna. En cuanto a las categorías, se\n distribuye una en cada celda.\n 4. Titular el cuadro. Enunciar con claridad los conceptos\n o temas que se comparan.\n 5. Distribuir la información. Colocar en la parte superior\n de las columnas y las categorías se ubiquen en las celdas. En ambos casos, se debe escribir de manera puntual el nombre de cada elemento.\n 6. Revisar. Verificar la información, redacción y claridad\n de la tabla.\n\n22\n\f Cuadro comparativo",
+        "official_contract": {
+          "fuente_oficial": {
+            "fuentes": [
+              "fasciculos-pdf",
+              "100tecnicasdidacticas.unadmexico.mx"
+            ],
+            "sitio": "100tecnicasdidacticas.unadmexico.mx",
+            "numero_web": 76,
+            "nombre_oficial_web": "Cuadro comparativo"
+          },
+          "official_definition": "El cuadro comparativo establece, de manera clara y ordenada, las diferencias entre dos o más conceptos, ideas, temas o acontecimientos. Para ello, es necesario puntualizar las categorías que se contrastarán. Esta técnica se puede utilizar, por ejemplo, para comparar los costos, las medidas, las extensiones y los beneficios de dos productos.\n\nFortalece las habilidades para procesar datos,clasificar información, organizar el pensamiento y formular conclusiones o juicios de valor.",
+          "official_what_is": "Es un organizador visual y textual que se caracteriza por:\n\n ■■",
+          "official_structure": "r la información en una tabla.\n ■■ Identificar similitudes y diferencias.\n ■■ Comparar categorías o parámetros.\n ■■ Sintetizar la información para establecer un contraste\n inmediato.\n ■■ Facilitar el análisis y la observación.\n\n18\n\f Cuadro comparativo",
+          "official_utility": "El cuadro comparativo tiene las siguientes funciones:\n\n■■ Establece una lectura organizada.\n■■ Expone con claridad los parámetros a comparar.\n■■ Permite un análisis cuidadoso de todas las alternativas.\n■■ Sustenta las decisiones que surgen del análisis.\n■■ Facilita la exposición de temas complejos mediante\n la identificación de diferencias y ventajas.\n\n 21\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1",
+          "build_steps": "Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria para establecer las comparaciones.\n 3. Trazar la tabla. Considerar el número de conceptos o\n temas y la cantidad de categorías que se utilizarán en\n la comparación. En el caso de los conceptos, cada uno\n requiere una columna. En cuanto a las categorías, se\n distribuye una en cada celda.\n 4. Titular el cuadro. Enunciar con claridad los conceptos\n o temas que se comparan.\n 5. Distribuir la información. Colocar en la parte superior\n de las columnas y las categorías se ubiquen en las celdas. En ambos casos, se debe escribir de manera puntual el nombre de cada elemento.\n 6. Revisar. Verificar la información, redacción y claridad\n de la tabla.\n\n22\n\f Cuadro comparativo",
+          "caveats": "…\n\nLa elaboración de un cuadro comparativo implica:\n\n■■ Identificar las características comunes o divergentes\n entre los conceptos o elementos.\n■■ Sintetizar para comunicar lo más relevante de los conceptos que se comparan.\n■■",
+          "authorities": "…\n\n Pimienta (s. f.) comenta que un cuadro comparativo permitirá desarrollar competencias que facilitará la generación de ideas, por medio de conocimientos previos porque\n constituye la organización del pensamiento.\n\n El cuadro comparativo es una técnica de síntesis, la cual\n según Sebastián et al. (s. f.) ayuda a organizar diversas\n ideas con la finalidad de establecer una jerarquización de\n argumentos claros y de fácil comprensión.\n\n Se considera que el cuadro comparativo permite esquematizar y organizar la información de forma gráfica, y que\n ayuda a comprender y relacionar las ideas de un texto\n (Montanero y Blázquez, 2001).\n\n ...facilitará la generación de ideas...\n\n24\n\f Cuadro comparativo\n\n Para recordar...",
+          "references_seed": "Montanero, M. y Blázquez, F. (2001). Eficacia de las técnicas de síntesis en la comprensión y recuerdo de textos académicos. Revista Española de Pedagogía,\n 59(219), 251-267. https://dialnet.unirioja.es/servlet/articulo?codigo=23689\nPimienta, J. (s. f.). Estrategias de enseñanza aprendizaje [presentación]. https://\n cmapspublic2.ihmc.us/rid=1V2J9XZYF-B98X90-3VQC/ESTRATEGIAS%20\n DE%20ENSE%C3%91ANZA-APRENDIZAJE.pdf\nSebastián, A., Ballesteros, B. y Sánchez, M. (s. f.). Técnicas de estudio [presentación]. http://qinnova.uned.es/archivos_publicos/qweb_paginas/3439/tecnicasdeestudio.pdf\n\n 25\n\f\f Cuadro\nsinóptico\n\n 5\n Sintetizar\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1\n\n El",
+          "how_to_cite": "López, A. (2022). Cuadro comparativo. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Sintetizar. Universidad Abierta y a Distancia de México.\nhttps://100tecnicasdidacticas.unadmexico.mx/index.html\r\n\n Copiar cita al portapapeles",
+          "preservation_rule_official": "Materializar «Cuadro comparativo» siguiendo la estructura oficial UnADM: Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria"
+        },
+        "tikz_pattern": {
+          "packages": [
+            "longtable",
+            "booktabs",
+            "array",
+            "pdflscape"
+          ],
+          "skeleton": "\\clearpage\n\\begin{landscape}\n\\begingroup\n\\renewcommand{\\arraystretch}{1.2}\\footnotesize\n\n\\noindent\\textbf{Guía de lectura:} <...>\\par\\medskip\n\n\\begin{longtable}{@{}p{0.18\\linewidth}*{3}{p{0.25\\linewidth}}@{}}\n\\caption{<Cuadro comparativo de: tema>}\\label{tab:<id>}\\\\\n\\toprule\n\\textbf{Criterio} & \\textbf{<Opción A>} & \\textbf{<Opción B>} & \\textbf{<Opción C>}\\\\\n\\midrule\n\\endfirsthead\n\n\\toprule\n\\textbf{Criterio} & \\textbf{<Opción A>} & \\textbf{<Opción B>} & \\textbf{<Opción C>}\\\\\n\\midrule\n\\endhead\n\n<Criterio 1> & <...> & <...> & <...>\\\\\n<Criterio 2> & <...> & <...> & <...>\\\\\n<Criterio 3> & <...> & <...> & <...>\\\\\n\\bottomrule\n\\end{longtable}\n\n\\medskip\n\\noindent\\textbf{Análisis comparativo:}\\par\n\\begin{itemize}\n  \\item \\textbf{Semejanzas:} <...>\n  \\item \\textbf{Diferencias:} <...>\n\\end{itemize}\n\n\\endgroup\n\\end{landscape}\n\\clearpage",
+          "rules": "Los criterios deben organizarse exclusivamente en filas y las opciones en columnas, con encabezado repetible, caption y label únicos. La guía de lectura debe preceder a la tabla y el análisis posterior debe sintetizar semejanzas y diferencias sin introducir criterios nuevos.",
+          "materializacion": "Construir con longtable/tabular; usar landscape, footnotesize, tabcolsep y arraystretch cuando el contenido sea amplio. Encabezados claros, filas completas y una guía de lectura de columnas.",
+          "llm_refined_by": "GPT-5.6-Luna"
+        },
+        "scoring_rubric": {
+          "escala": "0-100",
+          "componentes_editoriales": {
+            "citas_apa": {
+              "peso": 25,
+              "criterio": "Citas APA 7 visibles y suficientes que sustentan el producto (mín. 3)."
+            },
+            "estructura_tres_actos": {
+              "peso": 20,
+              "criterio": "Tres actos: introducción (problema), desarrollo temático con el producto como núcleo, conclusión con postura."
+            },
+            "producto_protagonico": {
+              "peso": 20,
+              "criterio": "El producto de la técnica es el núcleo del desarrollo; el texto lo prepara antes y lo interpreta después."
+            },
+            "base_conceptual": {
+              "peso": 15,
+              "criterio": "Conceptos clave delimitados (\\textbf/\\textit) y cobertura de los subtemas de la planeación."
+            },
+            "conectores_prosa": {
+              "peso": 10,
+              "criterio": "Prosa con conectores lógicos; introducción y conclusión sin listas."
+            },
+            "integridad_postura": {
+              "peso": 10,
+              "criterio": "Postura propia (posición, razón, consecuencia) y declaración de IA como \\footnote."
+            }
+          },
+          "criterios_de_construccion_oficial": [
+            {
+              "criterio": "Investigar. Recopilar toda la información necesaria sobre los conceptos o temas que se compararán. Lo adecuado es consultar fuentes diversas que aporten varias perspectivas y datos confiables.",
+              "peso": 4.17
+            },
+            {
+              "criterio": "Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información necesaria para establecer las comparaciones.",
+              "peso": 4.17
+            },
+            {
+              "criterio": "Trazar la tabla. Considerar el número de conceptos o temas y la cantidad de categorías que se utilizarán en la comparación. En el caso de los conceptos, cada uno requiere una columna. En cuanto a las categorías, se distribuye una en cada celda.",
+              "peso": 4.17
+            },
+            {
+              "criterio": "Titular el cuadro. Enunciar con claridad los conceptos o temas que se comparan.",
+              "peso": 4.17
+            },
+            {
+              "criterio": "Distribuir la información. Colocar en la parte superior de las columnas y las categorías se ubiquen en las celdas. En ambos casos, se debe escribir de manera puntual el nombre de cada elemento.",
+              "peso": 4.17
+            },
+            {
+              "criterio": "Revisar. Verificar la información, redacción y claridad de la tabla. 22 Cuadro comparativo",
+              "peso": 4.17
+            }
+          ],
+          "consideraciones_para_puntuar": [
+            "… La elaboración de un cuadro comparativo implica: ■■ Identificar las características comunes o divergentes entre los conceptos o elementos.",
+            "■■ Sintetizar para comunicar lo más relevante de los conceptos que se comparan.",
+            "Puntuar si cada celda compara explícitamente las opciones mediante el mismo criterio, con información equilibrada, concreta y coherente entre columnas."
+          ],
+          "umbral_aprobacion": 100,
+          "nota": "El producto puntúa por fidelidad a la técnica (forma oficial) + calidad editorial (tres actos, citas, postura)."
+        },
+        "construction_integration": {
+          "deteccion": "Aliases: cuadro comparativo, cuadro, tabla, longtable, tabular.",
+          "producto_nucleo": "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, tabla y análisis (semejanzas/diferencias) son subsecciones de una sola sección de desarrollo cuyo título nombra el tema.",
+          "estructura": "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. La tabla/cuadro es el NÚCLEO del acto de desarrollo. Orden: (a) marco conceptual-teórico breve que prepara la tabla, (b) la tabla en su página landscape como pieza protagónica, (c) semejanzas y diferencias u otro análisis derivado DESPUÉS de la tabla.",
+          "layout": "El cuadro/tabla va en orientación horizontal (landscape) en su PROPIA página, con la tabla y su caption juntos en una sola página landscape. No anteponer \\clearpage al \\begin{landscape}. Compactar con \\arraystretch<=1.2 y caption en \\footnotesize.",
+          "cierre": "El análisis derivado de la tabla y la postura personal se cierran en la conclusión. La conclusión inicia con \\clearpage y ocupa preferentemente una sola página; la declaración de uso de IA se liga como \\footnote.",
+          "preservacion_oficial": "Materializar «Cuadro comparativo» siguiendo la estructura oficial UnADM: Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria",
+          "pasos_construccion": "Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria para establecer las comparaciones.\n 3. Trazar la tabla. Considerar el número de conceptos o\n temas y la cantidad de categorías que se utilizarán en\n la comparación. En el caso de los conceptos, cada uno\n requiere una columna. En cuanto a las categorías, se\n distribuye una en cada celda.\n 4. Titular el cuadro. Enunciar con claridad los conceptos\n o temas que se comparan.\n 5. Distribuir la información. Colocar en la parte superior\n de las columnas y las categorías se ubiquen en las celdas. En ambos casos, se debe escribir de manera puntual el nombre de cada elemento.\n 6. Revisar. Verificar la información, redacción y claridad\n de la tabla.\n\n22\n\f Cuadro comparativo",
+          "compilacion": "Compilar con latexmk -pdf -bibtex; verificar el producto renderizando a PNG con pdftoppm (no solo returncode)."
+        },
+        "real_pattern": {}
+      },
+      "structure_contract": {
+        "three_part_structure": "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
+        "development_section": "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
+        "product_centric_gravity": "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
+        "introduction": "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
+        "conclusion": "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa"
+      },
+      "layout_contract": {
+        "no_gap_before_visual_deliverable": "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
+        "landscape_single_page": "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
+        "conclusion_single_page": "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla).",
+        "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos."
       },
       "bibliography_contract": {
         "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
@@ -179,8 +311,8 @@
         "institution": "UCNL",
         "career": "",
         "subject": "",
-        "activity": "",
-        "seed_scope_key": "UAS"
+        "activity": "Actividad 1",
+        "seed_scope_key": "UCNL/licenciatura-en-administracion/microeconomia-lad/actividad-1"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -191,13 +323,21 @@
         "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
         "sin placeholders, con contexto/problema integrado en introducción, análisis propio integrado en conclusión, postura personal integrada en conclusión y transferencia profesional",
         "sin metadiscurso de ejecución: no hablar de 'esta actividad', 'producto solicitado', 'se presenta' o 'la técnica usada' como narrador externo; hablar del tema, problema, concepto, cuestionario, caso o tabla según corresponda",
+        "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
         "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
-        "si el producto es cuestionario, la sección Desarrollo debe estar ocupada por el cuestionario con su título; el marco conceptual va dentro de esa misma sección, no como sección/subsección independiente salvo consigna expresa",
+        "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
+        "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
         "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa",
         "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
         "En el cuerpo final no narrar el proceso de elaboración ni mencionar la palabra 'Actividad' como sujeto del análisis; en su lugar hablar del tema, problema, concepto, cuestionario, caso, tabla o fenómeno estudiado.",
         "El contexto y el problema se integran en la introducción; no crear una subsección visible 'Contexto y problema' salvo instrucción expresa de la consigna.",
-        "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa."
+        "Estructurar el cuerpo visible en tres actos: Introducción, Desarrollo y Conclusiones. El desarrollo es UNA sola sección (no varias \\section de primer nivel); marco conceptual, producto solicitado y análisis van como subsecciones dentro de ella.",
+        "El título del acto de desarrollo debe ser descriptivo del tema, no la palabra 'Desarrollo'. Ejemplos válidos: 'Clasificación de los tipos de seguro', 'Marco y clasificación de los derechos humanos'. El nombre nombra el fenómeno, no la etiqueta didáctica.",
+        "Dar protagonismo imperativo al producto solicitado (mapa conceptual, cuadro, tabla, esquema) dentro del desarrollo. El desarrollo gravita a su alrededor: ANTES lo prepara (marco conceptual-teórico que conduce al producto) y DESPUÉS lo interpreta (lectura del producto, semejanzas y diferencias, implicaciones). El énfasis recae en el tema y en el producto, no en la etiqueta ni en el metadiscurso.",
+        "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa.",
+        "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
+        "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
+        "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla)."
       ],
       "exceptions": [],
       "learned_from": [
@@ -207,7 +347,7 @@
         },
         {
           "scope_key": "interinstitucional",
-          "has_memory": true
+          "has_memory": false
         },
         {
           "scope_key": "IIIEPE",
@@ -235,7 +375,10 @@
         }
       ],
       "novelty_signals": [
-        "institutional_identity"
+        "heading_contract",
+        "didactic_contract",
+        "institutional_identity",
+        "quality_rules"
       ],
       "derived_from": {
         "local_memory": true,
@@ -266,7 +409,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260710-200153",
+      "run_id": "20260720-105656",
       "scope_key": "UCNL",
       "related_scope_keys": [
         "UCNL",
@@ -278,7 +421,7 @@
         "UnADM",
         "UCNL/licenciatura-en-administracion"
       ],
-      "novelty_count": 1
+      "novelty_count": 4
     }
   },
   "curricular_context": {},

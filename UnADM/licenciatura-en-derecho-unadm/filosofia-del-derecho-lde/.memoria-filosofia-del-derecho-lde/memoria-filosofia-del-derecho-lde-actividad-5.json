@@ -2111,7 +2111,17 @@
     "career": "licenciatura-en-derecho-unadm",
     "subject": "filosofia-del-derecho-lde",
     "activity": "Actividad 5",
-    "parent_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde"
+    "parent_key": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde",
+    "didactic_technique": {
+      "detected_id": "estudio_de_caso",
+      "catalogo_no": 27,
+      "nombre_oficial": "Estudio de casos",
+      "nivel": "Explicar",
+      "producto_entregado": "Estudio de caso: análisis de 2 criterios/casos reales de la SCJN (violencia física en violación; incapacidad de resistencia y consentimiento) con estructura hechos-problema-interpretación-postura-argumentos.",
+      "titulo_documento": "Reflexión y estudio de caso: interpretación jurídica",
+      "contractualizado": true,
+      "nota": "Actividad real que aportó el patrón de análisis de caso de referencia para la técnica estudio_de_caso en el catálogo (100tecnicas-patrones-reales.json)."
+    }
   },
   "curricular_context": {
     "institutional_frame": "Asignatura de la Licenciatura en Derecho de la UnADM ubicada en semestre 1, bloque 2. Su funcion editorial es orientar productos academicos con claridad, fundamento juridico, evidencia y transferencia profesional.",
