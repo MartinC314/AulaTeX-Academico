@@ -426,7 +426,9 @@
         "no_gap_before_visual_deliverable": "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
         "landscape_single_page": "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
         "conclusion_single_page": "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla).",
-        "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos."
+        "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos.",
+        "always_use_latexmk": "SIEMPRE compilar con latexmk vía scripts/latexmk-build.ps1 (o workspace.compile_tex, que lo invoca). El .latexmkrc de la raíz ya fija $out_dir='.build/latex' y $aux_dir='.build/latex/aux' + TEXINPUTS/BIBINPUTS/BSTINPUTS, de modo que TODOS los auxiliares (.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz) quedan AISLADOS en .build/latex y el PDF final se copia junto al .tex. PROHIBIDO compilar con pdflatex/bibtex manuales sin -output-directory (dejan residuos junto al .tex y ensucian la carpeta de la materia). latexmk además resuelve solo el ciclo pdflatex->bibtex->pdflatex x2 (max_repeat=5). Si aparece un warning no fatal 'Missing input file .toc' tras limpiar auxiliares, es cosmético: latexmk regenera el .toc en la 2ª pasada; usar -f (force) para que no aborte el exit code.",
+        "no_build_residues": "La carpeta de cada materia/actividad SOLO debe contener FUENTES (.tex .bib .md .json) y el PDF final; NUNCA residuos de compilación (.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz .nav .snm .vrb .xdv .run.xml) ni respaldos .bak del optimizador ya aplicados. Como latexmk (con el .latexmkrc) aísla todo en .build/latex, la única fuente de residuos son compilaciones manuales antiguas: si aparecen, BORRARLOS. El post-proceso de realizar-actividad debe barrer estos residuos de la carpeta de la actividad tras la compilación final."
       },
       "bibliography_contract": {
         "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
@@ -438,7 +440,7 @@
         "career": "",
         "subject": "",
         "activity": "Actividad 3",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-3"
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -500,7 +502,9 @@
           "has_memory": true
         }
       ],
-      "novelty_signals": [],
+      "novelty_signals": [
+        "institutional_identity"
+      ],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -530,7 +534,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260720-143130",
+      "run_id": "20260721-083904",
       "scope_key": "UnADM",
       "related_scope_keys": [
         "UnADM",
@@ -542,7 +546,7 @@
         "UCNL",
         "UnADM/licenciatura-en-derecho-unadm"
       ],
-      "novelty_count": 0
+      "novelty_count": 1
     }
   },
   "curricular_context": {},

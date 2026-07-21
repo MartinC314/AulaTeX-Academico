@@ -2057,22 +2057,140 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 2 - bases-de-derecho-internacional-publico-lde",
+        "subject_rule": "Actividad 3 - bases-de-derecho-internacional-publico-lde",
         "scope_label": "bases-de-derecho-internacional-publico-lde"
       },
       "didactic_contract": {
         "detected_id": "mapa_conceptual",
+        "catalogo_no": 13,
+        "nombre_oficial": "Mapa conceptual",
+        "nivel": "Sintetizar",
+        "familia": "visual_jerarquico",
         "aliases": [
-          "mapa conceptual",
-          "conceptos",
-          "diagrama"
+          "mapa conceptual"
         ],
         "required_visible_elements": [
           "conceptos",
           "relaciones",
           "lectura explicativa"
         ],
-        "preservation_rule": "Si el producto es mapa conceptual, conservar jerarquía, relaciones y explicación breve de lectura."
+        "preservation_rule": "Si el producto solicitado es «Mapa conceptual», conservar su forma visible característica (conceptos, relaciones, lectura explicativa) y su nivel cognitivo (Sintetizar); no transformarlo en otro producto salvo que la consigna lo pida. Construir con TikZ jerárquico o radial. Jerarquizar del concepto raíz a subconceptos, con conectores etiquetados donde aplique. Escalar con \\resizebox para llenar la página sin desbordar; usar landscape si el ancho lo exige.",
+        "preservation_rule_official": "Materializar «Mapa conceptual» siguiendo la estructura oficial UnADM: Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contenga",
+        "structure_rule": "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. El mapa conceptual es el NÚCLEO del acto de desarrollo y todo gravita a su alrededor. Orden: (a) preparación conceptual-teórica que conduce al mapa, (b) el diagrama en su propia página landscape como pieza protagónica, (c) lectura y desarrollo de las ramas tras el diagrama.",
+        "three_act_gravity_rule": "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, mapa y análisis son subsecciones de una sola sección de desarrollo cuyo título nombra el tema. El producto (mapa conceptual) manda: el texto lo prepara antes y lo interpreta después.",
+        "layout_rule": "El diagrama va en su propia página (landscape si es ancho), con su caption. No dejar media página en blanco antes del diagrama: llenar con la guía de lectura o iniciar la sección con \\clearpage.",
+        "no_gap_rule": "PROHIBIDO dejar media página o más en blanco justo antes del diagrama landscape. Verificar con pdftoppm que no quede una página semivacía antes del mapa ni una página landscape vacía extra.",
+        "closure_rule": "La conclusión inicia con \\clearpage en su propia página y ocupa preferentemente una sola página; integra síntesis, análisis propio y postura personal. La declaración de uso de IA puede ligarse como \\footnote a una frase oportuna de la conclusión.",
+        "build_steps": "Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contengan los conceptos más significativos del tema y los que se puedan utilizar para\n ampliar los subtemas, como una aproximación al proceso de construcción. Se sugiere que no todos los conceptos se incorporen al mapa.\n3. Jerarquizar los conceptos. Ordenar los conceptos del\n más general o inclusivo, al más específico o menos\n inclusivo, y determinar los conceptos clave con los que\n se va a trabajar o explicar el tema. Definen los conceptos\n subordinados que se desagregarán de ellos y que se\n usarán para formar proposiciones o afirmaciones con\n el mismo nivel jerárquico.\n4. Establecer relaciones significativas. Explorar diversas relaciones entre los conceptos seleccionados, construyendo proposiciones del tipo concepto-palabras o\n enlace-concepto. Construir y reconstruir las proposiciones con diversas alternativas que permitan seleccionar los conceptos con facilidad para determinar cuál es\n la mejor jerarquización y organización.\n\n 149\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1\n\n 5. Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los\n conceptos clave subordinados, cui",
+        "official_contract": {
+          "fuente_oficial": {
+            "fuentes": [
+              "fasciculos-pdf",
+              "100tecnicasdidacticas.unadmexico.mx"
+            ],
+            "sitio": "100tecnicasdidacticas.unadmexico.mx",
+            "numero_web": 81,
+            "nombre_oficial_web": "Mapa conceptual"
+          },
+          "official_definition": "El mapa conceptual es un organizador gráfico que visibiliza las relaciones entre conceptos vinculados a un tema en particular. La relevancia de las ideas se establece por orden jerárquico de modo que se puede apreciar de lo más general a lo específico. Puede utilizarse como un instrumento de evaluación o como control de lectura de textos.\n\nFortalece la recuperación de la información, al organizarla con un sentido personal; la memoria, la reflexión, el pensamiento crítico y la creatividad.",
+          "official_what_is": "Es una representación gráfica que se caracteriza por:\n\n ■■ Organizar y representar esquemas de conocimiento.\n ■■ Mostrar las relaciones significativas y jerárquicas\n entre conceptos en forma de proposiciones.\n ■■ Formarse con dos o más conceptos unidos por palabras enlace que especifican la relación entre ellos.\n ■■ Emplear elipses o recuadros unidos por líneas para\n visualizar las interrelaciones entre los conceptos.\n ■■ Organizar la información en niveles de abstracción,\n por lo que su lectura comienza con el concepto de\n mayor jerarquía, al más general o inclusivo, y su secuencia está determinada por las líneas que los unen.\n\n146\n\f Mapa conceptual",
+          "official_structure": "El mapa conceptual tiene tres elementos esenciales:\n\n1. Conceptos. Son el elemento central y la base para\n la construcción de significado. Son abstracciones o\n representaciones mentales que una persona hace de\n un objeto. Van encerrados en elipses, círculos o recuadros para distinguirse.\n2. Palabras enlace. Relacionan a dos conceptos y se\n representan con verbos. Junto con los conceptos se\n perciben como construcciones coherentes. Los conceptos y la palabras enlace se unen a través de líneas\n que funcionan como conectores.\n3. Preposiciones. Son el resultado de vincular dos conceptos con las palabras enlace.\n\n MAPA CONCEPTUAL\n\n Concepto\n\n Palabra enlace\n Concepto Concepto\n Concepto\n Palabra enlace Palabra enlace\n\n Concepto Concepto\n\n 147\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1",
+          "official_utility": "El mapa conceptual tiene las siguientes funciones:\n\n ■■ Integra información interrelacionada para orientar la\n enseñanza de un tema o facilitar los aprendizajes con\n una estructura visual llamativa.\n ■■ Permite la identificación de conexiones entre diversos conceptos.\n\n148\n\f Mapa conceptual",
+          "build_steps": "Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contengan los conceptos más significativos del tema y los que se puedan utilizar para\n ampliar los subtemas, como una aproximación al proceso de construcción. Se sugiere que no todos los conceptos se incorporen al mapa.\n3. Jerarquizar los conceptos. Ordenar los conceptos del\n más general o inclusivo, al más específico o menos\n inclusivo, y determinar los conceptos clave con los que\n se va a trabajar o explicar el tema. Definen los conceptos\n subordinados que se desagregarán de ellos y que se\n usarán para formar proposiciones o afirmaciones con\n el mismo nivel jerárquico.\n4. Establecer relaciones significativas. Explorar diversas relaciones entre los conceptos seleccionados, construyendo proposiciones del tipo concepto-palabras o\n enlace-concepto. Construir y reconstruir las proposiciones con diversas alternativas que permitan seleccionar los conceptos con facilidad para determinar cuál es\n la mejor jerarquización y organización.\n\n 149\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1\n\n 5. Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los\n conceptos clave subordinados, cui",
+          "caveats": "…\n\nLa elaboración de un mapa conceptual implica:\n\n■■ Comprender la relevancia de diversos conceptos, mostrando las relaciones entre cada uno de ellos.\n■■ Capacidad de análisis y abstracción entendiendo la\n relación conceptual.\n■■ Saber orientar los aprendizajes o, incluso, la enseñanza\n de un tema mediante la integración de información.\n■■ Desarrollar el pensamiento crítico, así como la capacidad reflexiva a través de la interpretación gráfica.\n■■ Recuperar y recordar conocimientos, así como plasmarlos de manera visual.\n■■ Identificar significados y facilitar los aprendizajes.\n■■ Organizar la información con sentido personal y explicar los conocimientos.\n\n 151\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1",
+          "authorities": "…\n\n Aguilar (2006) afirma que “el mapa conceptual tiene por\n objeto representar las relaciones significativas entre conceptos. Los conceptos expresan regularidades entre objetos y acontecimientos” (p. 3).\n\n De acuerdo con Ontoria et al. (1992):\n\n Con los mapas conceptuales, el alumno llega a tener la conciencia del propio proceso; cognitivo o metacognición. Puesto\n que la codificación es uno de los componentes de las estrategias de aprendizaje, se pueden clasificar éstas según el criterio de niveles de procesamiento, que a su vez coincide con\n los enfoques de aprendizaje memorístico y significativo de\n Ausubel (p. 20).\n\n La Universidad Autónoma del Estado de Hidalgo (s. f.) refiere\n el mapa conceptual como técnica de aprendizaje que\n tiene atención y aceptación para favorecer el desarrollo\n de autoestima y puede ser utilizado en diferentes etapas\n del proceso de enseñanza y aprendizaje.",
+          "references_seed": "Aguilar, M. (2006). El mapa conceptual: una herramienta para aprender y enseñar. Plasticidad y Restauración Neurológica. 5(1), 7-17. https://www.medigraphic.com/pdfs/plasticidad/prn-2006/prn061b.pdf\nOntoria, A., Ballesteros, A., Cuevas, C., Giraldo, L., Martín, I., Molina, A., Rodríguez,\n A. y Vélez, U. (1992). Mapas conceptuales. Una técnica para aprender.\n Narcea. https://cursoderecho.files.wordpress.com/2010/08/mapas-conceptuales-2.pdf\nUniversidad Autónoma del Estado de Hidalgo. (s. f.). Mapa Conceptual. https://\n www.uaeh.edu.mx/docencia/VI_Lectura/educ_continua/curso_formador/\n LECT58.pdf\nUniversidad Estatal a Distancia. (s. f.). El mapa conceptual como estrategia\n didáctica para el aprendizaje. https://www.uned.ac.cr/academica/images/\n ceced/docs/Estaticos/Estrategia_Mapa_conceptual.pdf\n\n 153\n\f\f Panel\nde discusión\n\n 3\n Aplicar\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1\n\n El",
+          "how_to_cite": "López, A. (2022). Mapa conceptual. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Sintetizar. Universidad Abierta y a Distancia de México.\nhttps://100tecnicasdidacticas.unadmexico.mx/index.html\r\n\n Copiar cita al portapapeles",
+          "preservation_rule_official": "Materializar «Mapa conceptual» siguiendo la estructura oficial UnADM: Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contenga"
+        },
+        "tikz_pattern": {
+          "packages": [
+            "tikz",
+            "\\usetikzlibrary{arrows.meta,positioning,fit,shapes.geometric}"
+          ],
+          "skeleton": "\\begin{landscape}\n\\begin{figure}[H]\n\\centering\n\\resizebox{!}{0.80\\textheight}{%\n\\begin{tikzpicture}[\n  >=Stealth,\n  nodo/.style={rectangle, draw, rounded corners=2pt, align=center,\n    text width=2.7cm, minimum height=0.8cm, fill=blue!5},\n  raiz/.style={nodo, text width=3.4cm, minimum height=0.95cm,\n    fill=blue!18, font=\\bfseries},\n  enlace/.style={-{Stealth[length=2mm]}, thick},\n  cruzada/.style={-{Stealth[length=1.8mm]}, dashed, semithick},\n  etiqueta/.style={font=\\scriptsize, align=center, fill=white,\n    inner sep=1pt, text depth=0pt}\n]\n\\node[raiz] (r) {<Concepto raíz>};\n\n\\node[nodo, below left=1.35cm and 6.0cm of r] (a) {<Rama A>};\n\\node[nodo, below left=1.35cm and 2.0cm of r] (b) {<Rama B>};\n\\node[nodo, below right=1.35cm and 2.0cm of r] (c) {<Rama C>};\n\\node[nodo, below right=1.35cm and 6.0cm of r] (d) {<Rama D>};\n\n\\node[nodo, below=0.7cm of a] (a1) {<Subconcepto A1>};\n\\node[nodo, below=0.55cm of a1] (a2) {<Subconcepto A2>};\n\\node[nodo, below=0.7cm of b] (b1) {<Subconcepto B1>};\n\\node[nodo, below=0.55cm of b1] (b2) {<Subconcepto B2>};\n\\node[nodo, below=0.7cm of c] (c1) {<Subconcepto C1>};\n\\node[nodo, below=0.55cm of c1] (c2) {<Subconcepto C2>};\n\\node[nodo, below=0.7cm of d] (d1) {<Subconcepto D1>};\n\\node[nodo, below=0.55cm of d1] (d2) {<Subconcepto D2>};\n\n\\draw[enlace] (r) -- node[etiqueta, above, sloped] {<se organiza en>} (a);\n\\draw[enlace] (r) -- node[etiqueta, above, sloped] {<incluye>} (b);\n\\draw[enlace] (r) -- node[etiqueta, above, sloped] {<comprende>} (c);\n\\draw[enlace] (r) -- node[etiqueta, above, sloped] {<se relaciona con>} (d);\n\n\\draw[enlace] (a) -- node[etiqueta, right] {<se caracteriza por>} (a1);\n\\draw[enlace] (a1) -- node[etiqueta, right] {<da lugar a>} (a2);\n\\draw[enlace] (b) -- node[etiqueta, right] {<se integra por>} (b1);\n\\draw[enlace] (b1) -- node[etiqueta, right] {<permite>} (b2);\n\\draw[enlace] (c) -- node[etiqueta, right] {<se manifiesta en>} (c1);\n\\draw[enlace] (c1) -- node[etiqueta, right] {<favorece>} (c2);\n\\draw[enlace] (d) -- node[etiqueta, right] {<se aplica mediante>} (d1);\n\\draw[enlace] (d1) -- node[etiqueta, right] {<contribuye a>} (d2);\n\n\\draw[cruzada] (a2.east) to[bend left=14]\n  node[etiqueta, above, sloped] {<se complementa con>} (b1.west);\n\\draw[cruzada] (b2.east) to[bend left=14]\n  node[etiqueta, above, sloped] {<se vincula con>} (c1.west);\n\\draw[cruzada] (c2.east) to[bend left=14]\n  node[etiqueta, above, sloped] {<se articula con>} (d1.west);\n\\draw[cruzada] (a1.south) to[bend right=22]\n  node[etiqueta, below, sloped] {<influye en>} (c1.south);\n\\end{tikzpicture}%\n}\n\\caption{<Mapa conceptual de: tema>}\n\\end{figure}\n\\end{landscape}",
+          "rules": "Organiza una raíz, cuatro ramas principales y dos subconceptos apilados verticalmente debajo de cada rama; cada vínculo debe expresar una proposición de enlace y las relaciones cruzadas deben distinguirse con trazos discontinuos. Mantén la composición en orientación horizontal y escala el conjunto con `\\resizebox{!}{0.80\\textheight}`.",
+          "materializacion": "Construir con TikZ jerárquico o radial. Jerarquizar del concepto raíz a subconceptos, con conectores etiquetados donde aplique. Escalar con \\resizebox para llenar la página sin desbordar; usar landscape si el ancho lo exige.",
+          "llm_refined_by": "GPT-5.6-Luna"
+        },
+        "scoring_rubric": {
+          "escala": "0-100",
+          "componentes_editoriales": {
+            "citas_apa": {
+              "peso": 25,
+              "criterio": "Citas APA 7 visibles y suficientes que sustentan el producto (mín. 3)."
+            },
+            "estructura_tres_actos": {
+              "peso": 20,
+              "criterio": "Tres actos: introducción (problema), desarrollo temático con el producto como núcleo, conclusión con postura."
+            },
+            "producto_protagonico": {
+              "peso": 20,
+              "criterio": "El producto de la técnica es el núcleo del desarrollo; el texto lo prepara antes y lo interpreta después."
+            },
+            "base_conceptual": {
+              "peso": 15,
+              "criterio": "Conceptos clave delimitados (\\textbf/\\textit) y cobertura de los subtemas de la planeación."
+            },
+            "conectores_prosa": {
+              "peso": 10,
+              "criterio": "Prosa con conectores lógicos; introducción y conclusión sin listas."
+            },
+            "integridad_postura": {
+              "peso": 10,
+              "criterio": "Postura propia (posición, razón, consecuencia) y declaración de IA como \\footnote."
+            }
+          },
+          "criterios_de_construccion_oficial": [
+            {
+              "criterio": "Conceptualizar el mapa. Reconocer las relaciones que hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la posible estructura del mapa.",
+              "peso": 12.5
+            },
+            {
+              "criterio": "Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los conceptos clave subordinados, cui",
+              "peso": 12.5
+            }
+          ],
+          "consideraciones_para_puntuar": [
+            "… La elaboración de un mapa conceptual implica: ■■ Comprender la relevancia de diversos conceptos, mostrando las relaciones entre cada uno de ellos.",
+            "■■ Capacidad de análisis y abstracción entendiendo la relación conceptual.",
+            "■■ Saber orientar los aprendizajes o, incluso, la enseñanza de un tema mediante la integración de información.",
+            "■■ Desarrollar el pensamiento crítico, así como la capacidad reflexiva a través de la interpretación gráfica.",
+            "■■ Recuperar y recordar conocimientos, así como plasmarlos de manera visual.",
+            "■■ Identificar significados y facilitar los aprendizajes.",
+            "■■ Organizar la información con sentido personal y explicar los conocimientos.",
+            "151 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1",
+            "Puntúa adicionalmente que las proposiciones de enlace formen relaciones semánticas legibles y no meras líneas, y que las conexiones cruzadas aporten síntesis entre ramas sin confundirse con la jerarquía principal."
+          ],
+          "umbral_aprobacion": 100,
+          "nota": "El producto puntúa por fidelidad a la técnica (forma oficial) + calidad editorial (tres actos, citas, postura)."
+        },
+        "construction_integration": {
+          "deteccion": "Aliases: mapa conceptual, conceptos.",
+          "producto_nucleo": "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, mapa y análisis son subsecciones de una sola sección de desarrollo cuyo título nombra el tema. El producto (mapa conceptual) manda: el texto lo prepara antes y lo interpreta después.",
+          "estructura": "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. El mapa conceptual es el NÚCLEO del acto de desarrollo y todo gravita a su alrededor. Orden: (a) preparación conceptual-teórica que conduce al mapa, (b) el diagrama en su propia página landscape como pieza protagónica, (c) lectura y desarrollo de las ramas tras el diagrama.",
+          "layout": "El diagrama va en su propia página (landscape si es ancho), con su caption. No dejar media página en blanco antes del diagrama: llenar con la guía de lectura o iniciar la sección con \\clearpage.",
+          "cierre": "La conclusión inicia con \\clearpage en su propia página y ocupa preferentemente una sola página; integra síntesis, análisis propio y postura personal. La declaración de uso de IA puede ligarse como \\footnote a una frase oportuna de la conclusión.",
+          "preservacion_oficial": "Materializar «Mapa conceptual» siguiendo la estructura oficial UnADM: Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contenga",
+          "pasos_construccion": "Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contengan los conceptos más significativos del tema y los que se puedan utilizar para\n ampliar los subtemas, como una aproximación al proceso de construcción. Se sugiere que no todos los conceptos se incorporen al mapa.\n3. Jerarquizar los conceptos. Ordenar los conceptos del\n más general o inclusivo, al más específico o menos\n inclusivo, y determinar los conceptos clave con los que\n se va a trabajar o explicar el tema. Definen los conceptos\n subordinados que se desagregarán de ellos y que se\n usarán para formar proposiciones o afirmaciones con\n el mismo nivel jerárquico.\n4. Establecer relaciones significativas. Explorar diversas relaciones entre los conceptos seleccionados, construyendo proposiciones del tipo concepto-palabras o\n enlace-concepto. Construir y reconstruir las proposiciones con diversas alternativas que permitan seleccionar los conceptos con facilidad para determinar cuál es\n la mejor jerarquización y organización.\n\n 149\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1\n\n 5. Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los\n conceptos clave subordinados, cui",
+          "compilacion": "Compilar con latexmk -pdf -bibtex; verificar el producto renderizando a PNG con pdftoppm (no solo returncode)."
+        },
+        "real_pattern": {}
+      },
+      "structure_contract": {
+        "three_part_structure": "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
+        "development_section": "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
+        "product_centric_gravity": "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
+        "introduction": "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
+        "conclusion": "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa"
+      },
+      "layout_contract": {
+        "no_gap_before_visual_deliverable": "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
+        "landscape_single_page": "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
+        "conclusion_single_page": "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla).",
+        "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos.",
+        "always_use_latexmk": "SIEMPRE compilar con latexmk vía scripts/latexmk-build.ps1 (o workspace.compile_tex, que lo invoca). El .latexmkrc de la raíz ya fija $out_dir='.build/latex' y $aux_dir='.build/latex/aux' + TEXINPUTS/BIBINPUTS/BSTINPUTS, de modo que TODOS los auxiliares (.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz) quedan AISLADOS en .build/latex y el PDF final se copia junto al .tex. PROHIBIDO compilar con pdflatex/bibtex manuales sin -output-directory (dejan residuos junto al .tex y ensucian la carpeta de la materia). latexmk además resuelve solo el ciclo pdflatex->bibtex->pdflatex x2 (max_repeat=5). Si aparece un warning no fatal 'Missing input file .toc' tras limpiar auxiliares, es cosmético: latexmk regenera el .toc en la 2ª pasada; usar -f (force) para que no aborte el exit code.",
+        "no_build_residues": "La carpeta de cada materia/actividad SOLO debe contener FUENTES (.tex .bib .md .json) y el PDF final; NUNCA residuos de compilación (.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz .nav .snm .vrb .xdv .run.xml) ni respaldos .bak del optimizador ya aplicados. Como latexmk (con el .latexmkrc) aísla todo en .build/latex, la única fuente de residuos son compilaciones manuales antiguas: si aparecen, BORRARLOS. El post-proceso de realizar-actividad debe barrer estos residuos de la carpeta de la actividad tras la compilación final."
       },
       "bibliography_contract": {
         "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
@@ -2083,8 +2201,8 @@
         "institution": "UnADM",
         "career": "licenciatura-en-derecho-unadm",
         "subject": "bases-de-derecho-internacional-publico-lde",
-        "activity": "Actividad 2",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde"
+        "activity": "Actividad 3",
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -2095,13 +2213,21 @@
         "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
         "sin placeholders, con contexto/problema integrado en introducción, análisis propio integrado en conclusión, postura personal integrada en conclusión y transferencia profesional",
         "sin metadiscurso de ejecución: no hablar de 'esta actividad', 'producto solicitado', 'se presenta' o 'la técnica usada' como narrador externo; hablar del tema, problema, concepto, cuestionario, caso o tabla según corresponda",
+        "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
         "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
-        "si el producto es cuestionario, la sección Desarrollo debe estar ocupada por el cuestionario con su título; el marco conceptual va dentro de esa misma sección, no como sección/subsección independiente salvo consigna expresa",
+        "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
+        "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
         "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa",
         "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
         "En el cuerpo final no narrar el proceso de elaboración ni mencionar la palabra 'Actividad' como sujeto del análisis; en su lugar hablar del tema, problema, concepto, cuestionario, caso, tabla o fenómeno estudiado.",
         "El contexto y el problema se integran en la introducción; no crear una subsección visible 'Contexto y problema' salvo instrucción expresa de la consigna.",
-        "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa."
+        "Estructurar el cuerpo visible en tres actos: Introducción, Desarrollo y Conclusiones. El desarrollo es UNA sola sección (no varias \\section de primer nivel); marco conceptual, producto solicitado y análisis van como subsecciones dentro de ella.",
+        "El título del acto de desarrollo debe ser descriptivo del tema, no la palabra 'Desarrollo'. Ejemplos válidos: 'Clasificación de los tipos de seguro', 'Marco y clasificación de los derechos humanos'. El nombre nombra el fenómeno, no la etiqueta didáctica.",
+        "Dar protagonismo imperativo al producto solicitado (mapa conceptual, cuadro, tabla, esquema) dentro del desarrollo. El desarrollo gravita a su alrededor: ANTES lo prepara (marco conceptual-teórico que conduce al producto) y DESPUÉS lo interpreta (lectura del producto, semejanzas y diferencias, implicaciones). El énfasis recae en el tema y en el producto, no en la etiqueta ni en el metadiscurso.",
+        "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa.",
+        "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
+        "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
+        "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla)."
       ],
       "exceptions": [],
       "learned_from": [
@@ -2138,10 +2264,7 @@
           "has_memory": true
         }
       ],
-      "novelty_signals": [
-        "heading_contract",
-        "institutional_identity"
-      ],
+      "novelty_signals": [],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -2172,7 +2295,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260716-184559",
+      "run_id": "20260721-105308",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde",
@@ -2184,7 +2307,7 @@
         "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde",
         "UnADM/licenciatura-en-derecho-unadm/derecho-de-la-contratacion-internacional-lde"
       ],
-      "novelty_count": 2
+      "novelty_count": 0
     }
   },
   "curricular_context": {
@@ -2297,7 +2420,7 @@
           "heading_contract": {
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-            "subject_rule": "Actividad 2 - bases-de-derecho-internacional-publico-lde",
+            "subject_rule": "Actividad 3 - bases-de-derecho-internacional-publico-lde",
             "scope_label": "bases-de-derecho-internacional-publico-lde"
           },
           "didactic_contract": {
@@ -2312,7 +2435,105 @@
               "relaciones",
               "lectura explicativa"
             ],
-            "preservation_rule": "Si el producto es mapa conceptual, conservar jerarquía, relaciones y explicación breve de lectura."
+            "preservation_rule": "Si el producto solicitado es «Mapa conceptual», conservar su forma visible característica (conceptos, relaciones, lectura explicativa) y su nivel cognitivo (Sintetizar); no transformarlo en otro producto salvo que la consigna lo pida. Construir con TikZ jerárquico o radial. Jerarquizar del concepto raíz a subconceptos, con conectores etiquetados donde aplique. Escalar con \\resizebox para llenar la página sin desbordar; usar landscape si el ancho lo exige.",
+            "catalogo_no": 13,
+            "nombre_oficial": "Mapa conceptual",
+            "nivel": "Sintetizar",
+            "familia": "visual_jerarquico",
+            "preservation_rule_official": "Materializar «Mapa conceptual» siguiendo la estructura oficial UnADM: Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contenga",
+            "structure_rule": "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. El mapa conceptual es el NÚCLEO del acto de desarrollo y todo gravita a su alrededor. Orden: (a) preparación conceptual-teórica que conduce al mapa, (b) el diagrama en su propia página landscape como pieza protagónica, (c) lectura y desarrollo de las ramas tras el diagrama.",
+            "three_act_gravity_rule": "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, mapa y análisis son subsecciones de una sola sección de desarrollo cuyo título nombra el tema. El producto (mapa conceptual) manda: el texto lo prepara antes y lo interpreta después.",
+            "layout_rule": "El diagrama va en su propia página (landscape si es ancho), con su caption. No dejar media página en blanco antes del diagrama: llenar con la guía de lectura o iniciar la sección con \\clearpage.",
+            "no_gap_rule": "PROHIBIDO dejar media página o más en blanco justo antes del diagrama landscape. Verificar con pdftoppm que no quede una página semivacía antes del mapa ni una página landscape vacía extra.",
+            "closure_rule": "La conclusión inicia con \\clearpage en su propia página y ocupa preferentemente una sola página; integra síntesis, análisis propio y postura personal. La declaración de uso de IA puede ligarse como \\footnote a una frase oportuna de la conclusión.",
+            "build_steps": "Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contengan los conceptos más significativos del tema y los que se puedan utilizar para\n ampliar los subtemas, como una aproximación al proceso de construcción. Se sugiere que no todos los conceptos se incorporen al mapa.\n3. Jerarquizar los conceptos. Ordenar los conceptos del\n más general o inclusivo, al más específico o menos\n inclusivo, y determinar los conceptos clave con los que\n se va a trabajar o explicar el tema. Definen los conceptos\n subordinados que se desagregarán de ellos y que se\n usarán para formar proposiciones o afirmaciones con\n el mismo nivel jerárquico.\n4. Establecer relaciones significativas. Explorar diversas relaciones entre los conceptos seleccionados, construyendo proposiciones del tipo concepto-palabras o\n enlace-concepto. Construir y reconstruir las proposiciones con diversas alternativas que permitan seleccionar los conceptos con facilidad para determinar cuál es\n la mejor jerarquización y organización.\n\n 149\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1\n\n 5. Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los\n conceptos clave subordinados, cui",
+            "official_contract": {
+              "fuente_oficial": {
+                "fuentes": [
+                  "fasciculos-pdf",
+                  "100tecnicasdidacticas.unadmexico.mx"
+                ],
+                "sitio": "100tecnicasdidacticas.unadmexico.mx",
+                "numero_web": 81,
+                "nombre_oficial_web": "Mapa conceptual"
+              },
+              "official_definition": "El mapa conceptual es un organizador gráfico que visibiliza las relaciones entre conceptos vinculados a un tema en particular. La relevancia de las ideas se establece por orden jerárquico de modo que se puede apreciar de lo más general a lo específico. Puede utilizarse como un instrumento de evaluación o como control de lectura de textos.\n\nFortalece la recuperación de la información, al organizarla con un sentido personal; la memoria, la reflexión, el pensamiento crítico y la creatividad.",
+              "official_what_is": "Es una representación gráfica que se caracteriza por:\n\n ■■ Organizar y representar esquemas de conocimiento.\n ■■ Mostrar las relaciones significativas y jerárquicas\n entre conceptos en forma de proposiciones.\n ■■ Formarse con dos o más conceptos unidos por palabras enlace que especifican la relación entre ellos.\n ■■ Emplear elipses o recuadros unidos por líneas para\n visualizar las interrelaciones entre los conceptos.\n ■■ Organizar la información en niveles de abstracción,\n por lo que su lectura comienza con el concepto de\n mayor jerarquía, al más general o inclusivo, y su secuencia está determinada por las líneas que los unen.\n\n146\n\f Mapa conceptual",
+              "official_structure": "El mapa conceptual tiene tres elementos esenciales:\n\n1. Conceptos. Son el elemento central y la base para\n la construcción de significado. Son abstracciones o\n representaciones mentales que una persona hace de\n un objeto. Van encerrados en elipses, círculos o recuadros para distinguirse.\n2. Palabras enlace. Relacionan a dos conceptos y se\n representan con verbos. Junto con los conceptos se\n perciben como construcciones coherentes. Los conceptos y la palabras enlace se unen a través de líneas\n que funcionan como conectores.\n3. Preposiciones. Son el resultado de vincular dos conceptos con las palabras enlace.\n\n MAPA CONCEPTUAL\n\n Concepto\n\n Palabra enlace\n Concepto Concepto\n Concepto\n Palabra enlace Palabra enlace\n\n Concepto Concepto\n\n 147\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1",
+              "official_utility": "El mapa conceptual tiene las siguientes funciones:\n\n ■■ Integra información interrelacionada para orientar la\n enseñanza de un tema o facilitar los aprendizajes con\n una estructura visual llamativa.\n ■■ Permite la identificación de conexiones entre diversos conceptos.\n\n148\n\f Mapa conceptual",
+              "build_steps": "Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contengan los conceptos más significativos del tema y los que se puedan utilizar para\n ampliar los subtemas, como una aproximación al proceso de construcción. Se sugiere que no todos los conceptos se incorporen al mapa.\n3. Jerarquizar los conceptos. Ordenar los conceptos del\n más general o inclusivo, al más específico o menos\n inclusivo, y determinar los conceptos clave con los que\n se va a trabajar o explicar el tema. Definen los conceptos\n subordinados que se desagregarán de ellos y que se\n usarán para formar proposiciones o afirmaciones con\n el mismo nivel jerárquico.\n4. Establecer relaciones significativas. Explorar diversas relaciones entre los conceptos seleccionados, construyendo proposiciones del tipo concepto-palabras o\n enlace-concepto. Construir y reconstruir las proposiciones con diversas alternativas que permitan seleccionar los conceptos con facilidad para determinar cuál es\n la mejor jerarquización y organización.\n\n 149\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1\n\n 5. Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los\n conceptos clave subordinados, cui",
+              "caveats": "…\n\nLa elaboración de un mapa conceptual implica:\n\n■■ Comprender la relevancia de diversos conceptos, mostrando las relaciones entre cada uno de ellos.\n■■ Capacidad de análisis y abstracción entendiendo la\n relación conceptual.\n■■ Saber orientar los aprendizajes o, incluso, la enseñanza\n de un tema mediante la integración de información.\n■■ Desarrollar el pensamiento crítico, así como la capacidad reflexiva a través de la interpretación gráfica.\n■■ Recuperar y recordar conocimientos, así como plasmarlos de manera visual.\n■■ Identificar significados y facilitar los aprendizajes.\n■■ Organizar la información con sentido personal y explicar los conocimientos.\n\n 151\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1",
+              "authorities": "…\n\n Aguilar (2006) afirma que “el mapa conceptual tiene por\n objeto representar las relaciones significativas entre conceptos. Los conceptos expresan regularidades entre objetos y acontecimientos” (p. 3).\n\n De acuerdo con Ontoria et al. (1992):\n\n Con los mapas conceptuales, el alumno llega a tener la conciencia del propio proceso; cognitivo o metacognición. Puesto\n que la codificación es uno de los componentes de las estrategias de aprendizaje, se pueden clasificar éstas según el criterio de niveles de procesamiento, que a su vez coincide con\n los enfoques de aprendizaje memorístico y significativo de\n Ausubel (p. 20).\n\n La Universidad Autónoma del Estado de Hidalgo (s. f.) refiere\n el mapa conceptual como técnica de aprendizaje que\n tiene atención y aceptación para favorecer el desarrollo\n de autoestima y puede ser utilizado en diferentes etapas\n del proceso de enseñanza y aprendizaje.",
+              "references_seed": "Aguilar, M. (2006). El mapa conceptual: una herramienta para aprender y enseñar. Plasticidad y Restauración Neurológica. 5(1), 7-17. https://www.medigraphic.com/pdfs/plasticidad/prn-2006/prn061b.pdf\nOntoria, A., Ballesteros, A., Cuevas, C., Giraldo, L., Martín, I., Molina, A., Rodríguez,\n A. y Vélez, U. (1992). Mapas conceptuales. Una técnica para aprender.\n Narcea. https://cursoderecho.files.wordpress.com/2010/08/mapas-conceptuales-2.pdf\nUniversidad Autónoma del Estado de Hidalgo. (s. f.). Mapa Conceptual. https://\n www.uaeh.edu.mx/docencia/VI_Lectura/educ_continua/curso_formador/\n LECT58.pdf\nUniversidad Estatal a Distancia. (s. f.). El mapa conceptual como estrategia\n didáctica para el aprendizaje. https://www.uned.ac.cr/academica/images/\n ceced/docs/Estaticos/Estrategia_Mapa_conceptual.pdf\n\n 153\n\f\f Panel\nde discusión\n\n 3\n Aplicar\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1\n\n El",
+              "how_to_cite": "López, A. (2022). Mapa conceptual. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Sintetizar. Universidad Abierta y a Distancia de México.\nhttps://100tecnicasdidacticas.unadmexico.mx/index.html\r\n\n Copiar cita al portapapeles",
+              "preservation_rule_official": "Materializar «Mapa conceptual» siguiendo la estructura oficial UnADM: Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contenga"
+            },
+            "tikz_pattern": {
+              "packages": [
+                "tikz",
+                "\\usetikzlibrary{arrows.meta,positioning,fit,shapes.geometric}"
+              ],
+              "skeleton": "\\begin{landscape}\n\\begin{figure}[H]\n\\centering\n\\resizebox{!}{0.80\\textheight}{%\n\\begin{tikzpicture}[\n  >=Stealth,\n  nodo/.style={rectangle, draw, rounded corners=2pt, align=center,\n    text width=2.7cm, minimum height=0.8cm, fill=blue!5},\n  raiz/.style={nodo, text width=3.4cm, minimum height=0.95cm,\n    fill=blue!18, font=\\bfseries},\n  enlace/.style={-{Stealth[length=2mm]}, thick},\n  cruzada/.style={-{Stealth[length=1.8mm]}, dashed, semithick},\n  etiqueta/.style={font=\\scriptsize, align=center, fill=white,\n    inner sep=1pt, text depth=0pt}\n]\n\\node[raiz] (r) {<Concepto raíz>};\n\n\\node[nodo, below left=1.35cm and 6.0cm of r] (a) {<Rama A>};\n\\node[nodo, below left=1.35cm and 2.0cm of r] (b) {<Rama B>};\n\\node[nodo, below right=1.35cm and 2.0cm of r] (c) {<Rama C>};\n\\node[nodo, below right=1.35cm and 6.0cm of r] (d) {<Rama D>};\n\n\\node[nodo, below=0.7cm of a] (a1) {<Subconcepto A1>};\n\\node[nodo, below=0.55cm of a1] (a2) {<Subconcepto A2>};\n\\node[nodo, below=0.7cm of b] (b1) {<Subconcepto B1>};\n\\node[nodo, below=0.55cm of b1] (b2) {<Subconcepto B2>};\n\\node[nodo, below=0.7cm of c] (c1) {<Subconcepto C1>};\n\\node[nodo, below=0.55cm of c1] (c2) {<Subconcepto C2>};\n\\node[nodo, below=0.7cm of d] (d1) {<Subconcepto D1>};\n\\node[nodo, below=0.55cm of d1] (d2) {<Subconcepto D2>};\n\n\\draw[enlace] (r) -- node[etiqueta, above, sloped] {<se organiza en>} (a);\n\\draw[enlace] (r) -- node[etiqueta, above, sloped] {<incluye>} (b);\n\\draw[enlace] (r) -- node[etiqueta, above, sloped] {<comprende>} (c);\n\\draw[enlace] (r) -- node[etiqueta, above, sloped] {<se relaciona con>} (d);\n\n\\draw[enlace] (a) -- node[etiqueta, right] {<se caracteriza por>} (a1);\n\\draw[enlace] (a1) -- node[etiqueta, right] {<da lugar a>} (a2);\n\\draw[enlace] (b) -- node[etiqueta, right] {<se integra por>} (b1);\n\\draw[enlace] (b1) -- node[etiqueta, right] {<permite>} (b2);\n\\draw[enlace] (c) -- node[etiqueta, right] {<se manifiesta en>} (c1);\n\\draw[enlace] (c1) -- node[etiqueta, right] {<favorece>} (c2);\n\\draw[enlace] (d) -- node[etiqueta, right] {<se aplica mediante>} (d1);\n\\draw[enlace] (d1) -- node[etiqueta, right] {<contribuye a>} (d2);\n\n\\draw[cruzada] (a2.east) to[bend left=14]\n  node[etiqueta, above, sloped] {<se complementa con>} (b1.west);\n\\draw[cruzada] (b2.east) to[bend left=14]\n  node[etiqueta, above, sloped] {<se vincula con>} (c1.west);\n\\draw[cruzada] (c2.east) to[bend left=14]\n  node[etiqueta, above, sloped] {<se articula con>} (d1.west);\n\\draw[cruzada] (a1.south) to[bend right=22]\n  node[etiqueta, below, sloped] {<influye en>} (c1.south);\n\\end{tikzpicture}%\n}\n\\caption{<Mapa conceptual de: tema>}\n\\end{figure}\n\\end{landscape}",
+              "rules": "Organiza una raíz, cuatro ramas principales y dos subconceptos apilados verticalmente debajo de cada rama; cada vínculo debe expresar una proposición de enlace y las relaciones cruzadas deben distinguirse con trazos discontinuos. Mantén la composición en orientación horizontal y escala el conjunto con `\\resizebox{!}{0.80\\textheight}`.",
+              "materializacion": "Construir con TikZ jerárquico o radial. Jerarquizar del concepto raíz a subconceptos, con conectores etiquetados donde aplique. Escalar con \\resizebox para llenar la página sin desbordar; usar landscape si el ancho lo exige.",
+              "llm_refined_by": "GPT-5.6-Luna"
+            },
+            "scoring_rubric": {
+              "escala": "0-100",
+              "componentes_editoriales": {
+                "citas_apa": {
+                  "peso": 25,
+                  "criterio": "Citas APA 7 visibles y suficientes que sustentan el producto (mín. 3)."
+                },
+                "estructura_tres_actos": {
+                  "peso": 20,
+                  "criterio": "Tres actos: introducción (problema), desarrollo temático con el producto como núcleo, conclusión con postura."
+                },
+                "producto_protagonico": {
+                  "peso": 20,
+                  "criterio": "El producto de la técnica es el núcleo del desarrollo; el texto lo prepara antes y lo interpreta después."
+                },
+                "base_conceptual": {
+                  "peso": 15,
+                  "criterio": "Conceptos clave delimitados (\\textbf/\\textit) y cobertura de los subtemas de la planeación."
+                },
+                "conectores_prosa": {
+                  "peso": 10,
+                  "criterio": "Prosa con conectores lógicos; introducción y conclusión sin listas."
+                },
+                "integridad_postura": {
+                  "peso": 10,
+                  "criterio": "Postura propia (posición, razón, consecuencia) y declaración de IA como \\footnote."
+                }
+              },
+              "criterios_de_construccion_oficial": [
+                "{'criterio': 'Conceptualizar el mapa. Reconocer las relaciones que hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la posible estructura del mapa.', 'peso': 12.5}",
+                "{'criterio': 'Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los conceptos clave subordinados, cui', 'peso': 12.5}"
+              ],
+              "consideraciones_para_puntuar": [
+                "… La elaboración de un mapa conceptual implica: ■■ Comprender la relevancia de diversos conceptos, mostrando las relaciones entre cada uno de ellos.",
+                "■■ Capacidad de análisis y abstracción entendiendo la relación conceptual.",
+                "■■ Saber orientar los aprendizajes o, incluso, la enseñanza de un tema mediante la integración de información.",
+                "■■ Desarrollar el pensamiento crítico, así como la capacidad reflexiva a través de la interpretación gráfica.",
+                "■■ Recuperar y recordar conocimientos, así como plasmarlos de manera visual.",
+                "■■ Identificar significados y facilitar los aprendizajes.",
+                "■■ Organizar la información con sentido personal y explicar los conocimientos.",
+                "151 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1",
+                "Puntúa adicionalmente que las proposiciones de enlace formen relaciones semánticas legibles y no meras líneas, y que las conexiones cruzadas aporten síntesis entre ramas sin confundirse con la jerarquía principal."
+              ],
+              "umbral_aprobacion": 100,
+              "nota": "El producto puntúa por fidelidad a la técnica (forma oficial) + calidad editorial (tres actos, citas, postura)."
+            },
+            "construction_integration": {
+              "deteccion": "Aliases: mapa conceptual, conceptos.",
+              "producto_nucleo": "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, mapa y análisis son subsecciones de una sola sección de desarrollo cuyo título nombra el tema. El producto (mapa conceptual) manda: el texto lo prepara antes y lo interpreta después.",
+              "estructura": "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. El mapa conceptual es el NÚCLEO del acto de desarrollo y todo gravita a su alrededor. Orden: (a) preparación conceptual-teórica que conduce al mapa, (b) el diagrama en su propia página landscape como pieza protagónica, (c) lectura y desarrollo de las ramas tras el diagrama.",
+              "layout": "El diagrama va en su propia página (landscape si es ancho), con su caption. No dejar media página en blanco antes del diagrama: llenar con la guía de lectura o iniciar la sección con \\clearpage.",
+              "cierre": "La conclusión inicia con \\clearpage en su propia página y ocupa preferentemente una sola página; integra síntesis, análisis propio y postura personal. La declaración de uso de IA puede ligarse como \\footnote a una frase oportuna de la conclusión.",
+              "preservacion_oficial": "Materializar «Mapa conceptual» siguiendo la estructura oficial UnADM: Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contenga",
+              "pasos_construccion": "Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contengan los conceptos más significativos del tema y los que se puedan utilizar para\n ampliar los subtemas, como una aproximación al proceso de construcción. Se sugiere que no todos los conceptos se incorporen al mapa.\n3. Jerarquizar los conceptos. Ordenar los conceptos del\n más general o inclusivo, al más específico o menos\n inclusivo, y determinar los conceptos clave con los que\n se va a trabajar o explicar el tema. Definen los conceptos\n subordinados que se desagregarán de ellos y que se\n usarán para formar proposiciones o afirmaciones con\n el mismo nivel jerárquico.\n4. Establecer relaciones significativas. Explorar diversas relaciones entre los conceptos seleccionados, construyendo proposiciones del tipo concepto-palabras o\n enlace-concepto. Construir y reconstruir las proposiciones con diversas alternativas que permitan seleccionar los conceptos con facilidad para determinar cuál es\n la mejor jerarquización y organización.\n\n 149\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 1\n\n 5. Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los\n conceptos clave subordinados, cui",
+              "compilacion": "Compilar con latexmk -pdf -bibtex; verificar el producto renderizando a PNG con pdftoppm (no solo returncode)."
+            }
           },
           "bibliography_contract": {
             "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
@@ -2323,8 +2544,8 @@
             "institution": "UnADM",
             "career": "licenciatura-en-derecho-unadm",
             "subject": "bases-de-derecho-internacional-publico-lde",
-            "activity": "Actividad 2",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde"
+            "activity": "Actividad 3",
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -2341,7 +2562,16 @@
             "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
             "En el cuerpo final no narrar el proceso de elaboración ni mencionar la palabra 'Actividad' como sujeto del análisis; en su lugar hablar del tema, problema, concepto, cuestionario, caso, tabla o fenómeno estudiado.",
             "El contexto y el problema se integran en la introducción; no crear una subsección visible 'Contexto y problema' salvo instrucción expresa de la consigna.",
-            "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa."
+            "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa.",
+            "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
+            "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
+            "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
+            "Estructurar el cuerpo visible en tres actos: Introducción, Desarrollo y Conclusiones. El desarrollo es UNA sola sección (no varias \\section de primer nivel); marco conceptual, producto solicitado y análisis van como subsecciones dentro de ella.",
+            "El título del acto de desarrollo debe ser descriptivo del tema, no la palabra 'Desarrollo'. Ejemplos válidos: 'Clasificación de los tipos de seguro', 'Marco y clasificación de los derechos humanos'. El nombre nombra el fenómeno, no la etiqueta didáctica.",
+            "Dar protagonismo imperativo al producto solicitado (mapa conceptual, cuadro, tabla, esquema) dentro del desarrollo. El desarrollo gravita a su alrededor: ANTES lo prepara (marco conceptual-teórico que conduce al producto) y DESPUÉS lo interpreta (lectura del producto, semejanzas y diferencias, implicaciones). El énfasis recae en el tema y en el producto, no en la etiqueta ni en el metadiscurso.",
+            "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
+            "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
+            "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla)."
           ],
           "exceptions": [],
           "learned_from": [
@@ -2358,7 +2588,9 @@
           "novelty_signals": [
             "bootstrap",
             "institutional_identity",
-            "heading_contract"
+            "heading_contract",
+            "didactic_contract",
+            "quality_rules"
           ],
           "derived_from": {
             "local_memory": true,
@@ -2387,10 +2619,25 @@
               "didactic_contract": 0.5,
               "bibliography_contract": 0.9
             }
+          },
+          "structure_contract": {
+            "three_part_structure": "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
+            "development_section": "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
+            "product_centric_gravity": "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
+            "introduction": "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
+            "conclusion": "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa"
+          },
+          "layout_contract": {
+            "no_gap_before_visual_deliverable": "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
+            "landscape_single_page": "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
+            "conclusion_single_page": "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla).",
+            "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos.",
+            "always_use_latexmk": "SIEMPRE compilar con latexmk vía scripts/latexmk-build.ps1 (o workspace.compile_tex, que lo invoca). El .latexmkrc de la raíz ya fija $out_dir='.build/latex' y $aux_dir='.build/latex/aux' + TEXINPUTS/BIBINPUTS/BSTINPUTS, de modo que TODOS los auxiliares (.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz) quedan AISLADOS en .build/latex y el PDF final se copia junto al .tex. PROHIBIDO compilar con pdflatex/bibtex manuales sin -output-directory (dejan residuos junto al .tex y ensucian la carpeta de la materia). latexmk además resuelve solo el ciclo pdflatex->bibtex->pdflatex x2 (max_repeat=5). Si aparece un warning no fatal 'Missing input file .toc' tras limpiar auxiliares, es cosmético: latexmk regenera el .toc en la 2ª pasada; usar -f (force) para que no aborte el exit code.",
+            "no_build_residues": "La carpeta de cada materia/actividad SOLO debe contener FUENTES (.tex .bib .md .json) y el PDF final; NUNCA residuos de compilación (.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz .nav .snm .vrb .xdv .run.xml) ni respaldos .bak del optimizador ya aplicados. Como latexmk (con el .latexmkrc) aísla todo en .build/latex, la única fuente de residuos son compilaciones manuales antiguas: si aparecen, BORRARLOS. El post-proceso de realizar-actividad debe barrer estos residuos de la carpeta de la actividad tras la compilación final."
           }
         },
         "detail_planner": {
-          "run_id": "20260716-184559",
+          "run_id": "20260721-105308",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde",
@@ -2402,7 +2649,7 @@
             "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde",
             "UnADM/licenciatura-en-derecho-unadm/derecho-de-la-contratacion-internacional-lde"
           ],
-          "novelty_count": 2
+          "novelty_count": 0
         }
       },
       "curricular_context": {

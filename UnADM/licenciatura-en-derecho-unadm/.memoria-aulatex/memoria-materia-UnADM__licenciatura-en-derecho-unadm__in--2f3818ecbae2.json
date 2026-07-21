@@ -104,11 +104,15 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 2 - interaprendizaje-en-ambientes-virtuales-lde",
+        "subject_rule": "Actividad 3 - interaprendizaje-en-ambientes-virtuales-lde",
         "scope_label": "interaprendizaje-en-ambientes-virtuales-lde"
       },
       "didactic_contract": {
         "detected_id": "foro_diagnostico",
+        "catalogo_no": 29,
+        "nombre_oficial": "Foro",
+        "nivel": "Aplicar",
+        "familia": "oral_participativo",
         "aliases": [
           "foro",
           "foro diagnóstico",
@@ -122,12 +126,112 @@
           "participación textual publicada",
           "cierre"
         ],
-        "preservation_rule": "Si el producto es foro diagnóstico, conservar preguntas guía y respuestas compactas sin convertirlo en ensayo extenso.",
-        "structure_rule": "Cuerpo en TRES actos: (1) Introducción, (2) una única sección de Desarrollo con título temático (NO 'Desarrollo' ni 'Participación en el foro') y (3) Conclusiones. El PRODUCTO solicitado del foro —la participación textual publicada— es el NÚCLEO del acto de desarrollo y va como SUBsección dentro de esa única sección, no como \\section de primer nivel. Orden dentro del desarrollo: (a) breve marco/encuadre que conduce a las preguntas guía, (b) las respuestas a las preguntas guía, (c) la participación textual publicada en el foro como subsección protagónica (bloque de código verbatim/listings) y su lectura breve.",
-        "three_act_gravity_rule": "El desarrollo NO se fragmenta en varias secciones \\section: marco, preguntas guía, participación publicada y su lectura son subsecciones de una sola sección de desarrollo cuyo título nombra el tema del foro. El producto (la participación publicada) manda: el texto lo prepara antes y lo interpreta después.",
-        "layout_rule": "",
+        "preservation_rule": "Si el producto solicitado es «Foro», conservar su forma visible característica (preguntas guía, respuesta, participación textual publicada, cierre) y su nivel cognitivo (Aplicar); no transformarlo en otro producto salvo que la consigna lo pida. Materializar como bloque de participación (sourcecode/listings o tcolorbox) que reproduce literalmente lo publicado/expuesto: apertura, postura con evidencia citada, y cierre que invita al diálogo. El texto debe ser seleccionable y copiable en el PDF.",
+        "preservation_rule_official": "Materializar «Foro» siguiendo la estructura oficial UnADM: Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Prepara",
+        "structure_rule": "Cuerpo en TRES actos: (1) Introducción, (2) una única sección de Desarrollo con título temático (NO 'Desarrollo' ni 'Participación en el foro') y (3) Conclusiones. El PRODUCTO —la participación textual publicada— es el NÚCLEO del desarrollo y va como SUBsección. Orden: (a) marco/encuadre que conduce a las preguntas guía, (b) respuestas a las preguntas guía, (c) la participación textual publicada como subsección protagónica y su lectura.",
+        "three_act_gravity_rule": "El desarrollo NO se fragmenta en varias secciones \\section: marco, preguntas guía, participación publicada y su lectura son subsecciones de una sola sección de desarrollo cuyo título nombra el tema del foro.",
+        "layout_rule": "Bloque con breaklines para texto largo, sin numerar líneas de continuación. Cada participación en una sola línea lógica del fuente.",
         "no_gap_rule": "",
-        "closure_rule": "La conclusión integra síntesis, análisis propio y postura personal (posición, razón y consecuencia); no crear secciones visibles separadas de análisis o postura. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión, nunca como \\section."
+        "closure_rule": "La conclusión integra síntesis, análisis propio y postura personal. Inicia SIEMPRE con \\clearpage inmediatamente antes de la \\section, de modo que arranque en una PÁGINA NUEVA y ocupe preferentemente una sola página. La declaración de uso de IA se liga como \\footnote, nunca como \\section.",
+        "build_steps": "Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Preparar las argumentaciones. Pensar bien las opiniones, ya que deben favorecer un diálogo crítico y\n reflexivo. Para ello es recomendable que el usuario prepare el tema a investigar y realice breves interrogantes\n que permitan sintetizar las ideas que se piensan\n expresar.\n 4. Recopilar y analizar la información. Reunir datos, a\n partir de la pregunta detonante o el planteamiento del\n problema. Aquí comienza una discusión entre los participantes. El moderador deberá ir recabando los puntos\n de vista más importantes para elaborar un resumen de\n los comentarios que después compartirá.\n 5. Cerrar la actividad. Concluir la sesión. El moderador\n da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la\n participación.\n\n104\n\f Foro",
+        "official_contract": {
+          "fuente_oficial": {
+            "fuentes": [
+              "fasciculos-pdf",
+              "100tecnicasdidacticas.unadmexico.mx"
+            ],
+            "sitio": "100tecnicasdidacticas.unadmexico.mx",
+            "numero_web": 42,
+            "nombre_oficial_web": "Foro"
+          },
+          "official_definition": "El foro es una reunión que permite establecer una conversación para la solución de problemas, mediante un trabajo colaborativo y cooperativo. Se discute un tema específico, según los intereses de los participantes y se aborda desde un pensamiento crítico, reflexivo y autónomo.\n\nFacilita la interacción y el intercambio de posturas de manera colectiva, respecto al tema a tratar.",
+          "official_what_is": "Es una práctica grupal que se caracteriza por:\n\n ■■ Permitir la formación entre pares, ya que se orientan\n los temas de mejor manera, se concretan y ejemplifican. En el caso de los foros virtuales, las actividades\n pueden seguir una metodología de enseñanza y aprendizaje considerando contenidos y recursos de información ofrecidos para las actividades que llevarán a cabo.\n ■■ Fortalecer el pensamiento crítico flexible, en virtud de\n que la comunicación que se establece es organizada,\n precisa y sistemática.\n ■■ Favorecer la interacción como un aspecto central para\n la enseñanza y el aprendizaje.\n\n100\n\f Foro",
+          "official_structure": "El foro tiene cuatro elementos esenciales:\n\n1. Apertura. En el espacio destinado para la interacción\n (virtual o presencial), un moderador expone las reglas\n de participación y presenta una pregunta detonante\n para iniciar el diálogo.\n2. Participantes. El número de integrantes dependerá\n del tipo y las características del foro.\n3. Coordinación. El moderador orienta las intervenciones de los participantes y reúne datos para el cierre del\n foro.\n4. Cierre. Se da una conclusión sobre la temática.\n\n 101\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 2\n\n Participantes\n\n Moderador\n\n Toma de datos para la\n moderación y el cierre\n\n102\n\f Foro",
+          "official_utility": "El foro tiene las siguientes funciones:\n\n■■ Inicia una conversación sobre un tema en específico y mediante intereses particulares a partir de una\n investigación.\n■■ Sintetiza ideas y las comparte ante un grupo de\n manera reflexiva para intercambiar opiniones y experiencias, desde un punto participativo y respetuoso.\n■■ Permite expresar pensamientos críticos de manera\n colaborativa, a través de un diálogo que propicia el\n desarrollo de habilidades cognitivas y procesos\n mentales como la interpretación y comprensión de la\n información.\n■■ Estimula la expresión libre de ideas y opiniones sobre\n un tema, en donde la conjunción de ideas amplía el\n conocimiento sobre el mismo, permitiendo la comunicación permanente y simultánea entre pares.\n\n 103\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 2",
+          "build_steps": "Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Preparar las argumentaciones. Pensar bien las opiniones, ya que deben favorecer un diálogo crítico y\n reflexivo. Para ello es recomendable que el usuario prepare el tema a investigar y realice breves interrogantes\n que permitan sintetizar las ideas que se piensan\n expresar.\n 4. Recopilar y analizar la información. Reunir datos, a\n partir de la pregunta detonante o el planteamiento del\n problema. Aquí comienza una discusión entre los participantes. El moderador deberá ir recabando los puntos\n de vista más importantes para elaborar un resumen de\n los comentarios que después compartirá.\n 5. Cerrar la actividad. Concluir la sesión. El moderador\n da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la\n participación.\n\n104\n\f Foro",
+          "caveats": "…\n\nEl desarrollo de un foro implica:\n\n■■ Mantener una actitud positiva, lo cual permitirá expresar argumentos y respetar otras opiniones para llegar\n a una conclusión exacta.\n■■ Aclarar dudas durante el intercambio de información.\n■■ Saber que en el entorno virtual hay tres tipos:\n ■■ Foros públicos: no hay reglas, número de participantes ni formas de participación, es decir, cualquier persona puede integrarse y comentar acerca\n de la problemática.\n ■■ Foros protegidos: es necesario registrarse para\n ingresar a la discusión.\n ■■ Foros privados: se integra por un cierto número de\n registrados y un administrador decide dar acceso\n o rechazar la solicitud de ingreso. En este tipo de\n foro, es recomendable investigar con anterioridad\n el tema para tener una perspectiva amplia y poder\n expresar puntos de vista críticos y reflexivos.\n\n 105\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 2",
+          "authorities": "…\n\n El foro es una técnica didáctica, mediante un espacio real\n o virtual, comunicativo o colaborativo en el que todo un\n grupo toma parte en un debate sobre un tema que sea de\n interés general (Berlo, 2004).\n\n Para Arango (2003) un foro es un escenario de comunicación, donde se propicia el debate, la concertación y el\n consenso de ideas, el cual permite a un usuario publicar\n su mensaje en cualquier momento, quedando visible para\n que otros usuarios expresen sus opiniones.\n\n Los foros pueden definirse como “espacios para discusiones académicas que contribuyen al desarrollo del pensamiento crítico a partir del diálogo” (Castro et al., 2016, p. 25).\n La principal finalidad de la discusión es expresar ideas a\n partir de una problemática e intervenir en una discusión\n con diversos puntos de vista.\n\n ...un espacio real o virtual,\n comunicativo o colaborativo\n en el que todo un grupo\n toma pa",
+          "references_seed": "Arango, M. (2003). Foros virtuales como estrategia de aprendizaje. https://\n revistas.rlcu.org.ar/index.php/Debates/article/view/33/19\nBerlo, D. (2004). El proceso de la comunicación. Introducción a la teoría y a la\n práctica. Buenos Aires: El Ateneo.\nCastro, N., Suárez, X. y Soto, V. (2016). El uso del foro virtual para desarrollar el aprendizaje autorregulado de los estudiantes universitarios.\n Innovación Educativa, 16(70), 23-41. https://www.redalyc.org/journal/1794/\n 179445403002/html/\n\n 107\n\f\fGrupos de\ndiscusión\n\n 3\n Aplicar\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 2\n\n Los",
+          "how_to_cite": "López, A. (2022). Foro. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Aplicar. Universidad Abierta y a Distancia de México.\nhttps://100tecnicasdidacticas.unadmexico.mx/index.html\r\n\n Copiar cita al portapapeles",
+          "preservation_rule_official": "Materializar «Foro» siguiendo la estructura oficial UnADM: Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Prepara"
+        },
+        "tikz_pattern": {
+          "packages": [
+            "tcolorbox",
+            "\\tcbuselibrary{most}",
+            "enumitem"
+          ],
+          "skeleton": "\\newtcolorbox{forobox}{enhanced,breakable,colback=black!2,colframe=green!45!black,boxrule=0.6pt,arc=2pt,left=8pt,right=8pt,top=6pt,bottom=6pt,title=\\textbf{Participación publicada en el foro}}\n\\begin{forobox}\n\\begin{enumerate}[label=\\textbf{\\arabic*)},leftmargin=*,itemsep=4pt,topsep=0pt]\n  \\item <Apertura / encuadre del tema>.\n  \\item <Respuesta a la pregunta guía con evidencia>. ``<cita textual>'' (<Apellido>, <año>, p.~<n>).\n  \\item <Cierre con una pregunta al grupo>.\n\\end{enumerate}\n\n\\par\\medskip\n\\noindent\\textbf{Referencias}\\par\\smallskip\n\\begingroup\n\\setlength{\\parindent}{0pt}\n\\setlength{\\hangindent}{1.6em}\n\\setlength{\\hangafter}{1}\n<Entrada APA 7 completa>.\n\\par\n\\endgroup\n\\end{forobox}\n\n\\newtcolorbox{retroforobox}{enhanced,breakable,colback=blue!2,colframe=blue!45!black,boxrule=0.6pt,arc=2pt,left=8pt,right=8pt,top=6pt,bottom=6pt,title=\\textbf{Retroalimentación}}\n\\begin{retroforobox}\n<Retroalimentación específica sobre la participación y su aporte al diálogo del grupo>.\n\\end{retroforobox}",
+          "rules": "El primer forobox debe reproducir únicamente la publicación: apertura, respuesta argumentada con cita textual y referencia APA 7, cierre interrogativo y referencias con sangría francesa; la retroalimentación debe aparecer en un segundo cuadro independiente. Los marcadores <...> deben conservarse literalmente y el contenido debe seguir siendo texto seleccionable y copiable.",
+          "materializacion": "Materializar como bloque de participación (sourcecode/listings o tcolorbox) que reproduce literalmente lo publicado/expuesto: apertura, postura con evidencia citada, y cierre que invita al diálogo. El texto debe ser seleccionable y copiable en el PDF.",
+          "llm_refined_by": "GPT-5.6-Luna"
+        },
+        "scoring_rubric": {
+          "escala": "0-100",
+          "componentes_editoriales": {
+            "citas_apa": {
+              "peso": 25,
+              "criterio": "Citas APA 7 visibles y suficientes que sustentan el producto (mín. 3)."
+            },
+            "estructura_tres_actos": {
+              "peso": 20,
+              "criterio": "Tres actos: introducción (problema), desarrollo temático con el producto como núcleo, conclusión con postura."
+            },
+            "producto_protagonico": {
+              "peso": 20,
+              "criterio": "El producto de la técnica es el núcleo del desarrollo; el texto lo prepara antes y lo interpreta después."
+            },
+            "base_conceptual": {
+              "peso": 15,
+              "criterio": "Conceptos clave delimitados (\\textbf/\\textit) y cobertura de los subtemas de la planeación."
+            },
+            "conectores_prosa": {
+              "peso": 10,
+              "criterio": "Prosa con conectores lógicos; introducción y conclusión sin listas."
+            },
+            "integridad_postura": {
+              "peso": 10,
+              "criterio": "Postura propia (posición, razón, consecuencia) y declaración de IA como \\footnote."
+            }
+          },
+          "criterios_de_construccion_oficial": [
+            {
+              "criterio": "Delimitar el tema y el tipo de foro. Especificar las características del foro. Se trata de que los participantes tengan los mismos intereses en el tema, hecho o problema a dialogar.",
+              "peso": 8.33
+            },
+            {
+              "criterio": "Establecer reglas. Elegir a un moderador para que presente el tema y comparta las instrucciones para participar de manera ordenada.",
+              "peso": 8.33
+            },
+            {
+              "criterio": "Cerrar la actividad. Concluir la sesión. El moderador da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la participación. 104 Foro",
+              "peso": 8.33
+            }
+          ],
+          "consideraciones_para_puntuar": [
+            "… El desarrollo de un foro implica: ■■ Mantener una actitud positiva, lo cual permitirá expresar argumentos y respetar otras opiniones para llegar a una conclusión exacta.",
+            "■■ Aclarar dudas durante el intercambio de información.",
+            "■■ Saber que en el entorno virtual hay tres tipos: ■■ Foros públicos: no hay reglas, número de participantes ni formas de participación, es decir, cualquier persona puede integrarse y comentar acerca de la problemática.",
+            "■■ Foros protegidos: es necesario registrarse para ingresar a la discusión.",
+            "■■ Foros privados: se integra por un cierto número de registrados y un administrador decide dar acceso o rechazar la solicitud de ingreso.",
+            "En este tipo de foro, es recomendable investigar con anterioridad el tema para tener una perspectiva amplia y poder expresar puntos de vista críticos y reflexivos.",
+            "105 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 2",
+            "Puntuar adicionalmente que la estructura y el orden de la publicación coincidan con el producto Foro y que la retroalimentación esté claramente separada de la intervención publicada."
+          ],
+          "umbral_aprobacion": 100,
+          "nota": "El producto puntúa por fidelidad a la técnica (forma oficial) + calidad editorial (tres actos, citas, postura)."
+        },
+        "construction_integration": {
+          "deteccion": "Aliases: foro, foro diagnóstico, foro diagnostico, participación en foro, participacion en foro.",
+          "producto_nucleo": "El desarrollo NO se fragmenta en varias secciones \\section: marco, preguntas guía, participación publicada y su lectura son subsecciones de una sola sección de desarrollo cuyo título nombra el tema del foro.",
+          "estructura": "Cuerpo en TRES actos: (1) Introducción, (2) una única sección de Desarrollo con título temático (NO 'Desarrollo' ni 'Participación en el foro') y (3) Conclusiones. El PRODUCTO —la participación textual publicada— es el NÚCLEO del desarrollo y va como SUBsección. Orden: (a) marco/encuadre que conduce a las preguntas guía, (b) respuestas a las preguntas guía, (c) la participación textual publicada como subsección protagónica y su lectura.",
+          "layout": "Bloque con breaklines para texto largo, sin numerar líneas de continuación. Cada participación en una sola línea lógica del fuente.",
+          "cierre": "La conclusión integra síntesis, análisis propio y postura personal. Inicia SIEMPRE con \\clearpage inmediatamente antes de la \\section, de modo que arranque en una PÁGINA NUEVA y ocupe preferentemente una sola página. La declaración de uso de IA se liga como \\footnote, nunca como \\section.",
+          "preservacion_oficial": "Materializar «Foro» siguiendo la estructura oficial UnADM: Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Prepara",
+          "pasos_construccion": "Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Preparar las argumentaciones. Pensar bien las opiniones, ya que deben favorecer un diálogo crítico y\n reflexivo. Para ello es recomendable que el usuario prepare el tema a investigar y realice breves interrogantes\n que permitan sintetizar las ideas que se piensan\n expresar.\n 4. Recopilar y analizar la información. Reunir datos, a\n partir de la pregunta detonante o el planteamiento del\n problema. Aquí comienza una discusión entre los participantes. El moderador deberá ir recabando los puntos\n de vista más importantes para elaborar un resumen de\n los comentarios que después compartirá.\n 5. Cerrar la actividad. Concluir la sesión. El moderador\n da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la\n participación.\n\n104\n\f Foro",
+          "compilacion": "Compilar con latexmk -pdf -bibtex; verificar el producto renderizando a PNG con pdftoppm (no solo returncode)."
+        },
+        "real_pattern": {}
       },
       "structure_contract": {
         "three_part_structure": "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
@@ -140,7 +244,9 @@
         "no_gap_before_visual_deliverable": "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
         "landscape_single_page": "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
         "conclusion_single_page": "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla).",
-        "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos."
+        "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos.",
+        "always_use_latexmk": "SIEMPRE compilar con latexmk vía scripts/latexmk-build.ps1 (o workspace.compile_tex, que lo invoca). El .latexmkrc de la raíz ya fija $out_dir='.build/latex' y $aux_dir='.build/latex/aux' + TEXINPUTS/BIBINPUTS/BSTINPUTS, de modo que TODOS los auxiliares (.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz) quedan AISLADOS en .build/latex y el PDF final se copia junto al .tex. PROHIBIDO compilar con pdflatex/bibtex manuales sin -output-directory (dejan residuos junto al .tex y ensucian la carpeta de la materia). latexmk además resuelve solo el ciclo pdflatex->bibtex->pdflatex x2 (max_repeat=5). Si aparece un warning no fatal 'Missing input file .toc' tras limpiar auxiliares, es cosmético: latexmk regenera el .toc en la 2ª pasada; usar -f (force) para que no aborte el exit code.",
+        "no_build_residues": "La carpeta de cada materia/actividad SOLO debe contener FUENTES (.tex .bib .md .json) y el PDF final; NUNCA residuos de compilación (.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz .nav .snm .vrb .xdv .run.xml) ni respaldos .bak del optimizador ya aplicados. Como latexmk (con el .latexmkrc) aísla todo en .build/latex, la única fuente de residuos son compilaciones manuales antiguas: si aparecen, BORRARLOS. El post-proceso de realizar-actividad debe barrer estos residuos de la carpeta de la actividad tras la compilación final."
       },
       "bibliography_contract": {
         "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
@@ -151,8 +257,8 @@
         "institution": "UnADM",
         "career": "licenciatura-en-derecho-unadm",
         "subject": "interaprendizaje-en-ambientes-virtuales-lde",
-        "activity": "Actividad 2",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-2"
+        "activity": "Actividad 3",
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -214,10 +320,7 @@
           "has_memory": true
         }
       ],
-      "novelty_signals": [
-        "didactic_contract",
-        "quality_rules"
-      ],
+      "novelty_signals": [],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -249,7 +352,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260718-224227",
+      "run_id": "20260721-083907",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
@@ -261,7 +364,7 @@
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
         "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde"
       ],
-      "novelty_count": 2
+      "novelty_count": 0
     },
     "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
     "level": "materia",
@@ -311,7 +414,7 @@
           "heading_contract": {
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-            "subject_rule": "Actividad 2 - interaprendizaje-en-ambientes-virtuales-lde",
+            "subject_rule": "Actividad 3 - interaprendizaje-en-ambientes-virtuales-lde",
             "scope_label": "interaprendizaje-en-ambientes-virtuales-lde"
           },
           "didactic_contract": {
@@ -329,10 +432,105 @@
               "cierre",
               "participación textual publicada"
             ],
-            "preservation_rule": "Si el producto es foro diagnóstico, conservar preguntas guía y respuestas compactas sin convertirlo en ensayo extenso.",
-            "structure_rule": "Cuerpo en TRES actos: (1) Introducción, (2) una única sección de Desarrollo con título temático (NO 'Desarrollo' ni 'Participación en el foro') y (3) Conclusiones. El PRODUCTO solicitado del foro —la participación textual publicada— es el NÚCLEO del acto de desarrollo y va como SUBsección dentro de esa única sección, no como \\section de primer nivel. Orden dentro del desarrollo: (a) breve marco/encuadre que conduce a las preguntas guía, (b) las respuestas a las preguntas guía, (c) la participación textual publicada en el foro como subsección protagónica (bloque de código verbatim/listings) y su lectura breve.",
-            "three_act_gravity_rule": "El desarrollo NO se fragmenta en varias secciones \\section: marco, preguntas guía, participación publicada y su lectura son subsecciones de una sola sección de desarrollo cuyo título nombra el tema del foro. El producto (la participación publicada) manda: el texto lo prepara antes y lo interpreta después.",
-            "closure_rule": "La conclusión integra síntesis, análisis propio y postura personal (posición, razón y consecuencia); no crear secciones visibles separadas de análisis o postura. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión, nunca como \\section."
+            "preservation_rule": "Si el producto solicitado es «Foro», conservar su forma visible característica (preguntas guía, respuesta, participación textual publicada, cierre) y su nivel cognitivo (Aplicar); no transformarlo en otro producto salvo que la consigna lo pida. Materializar como bloque de participación (sourcecode/listings o tcolorbox) que reproduce literalmente lo publicado/expuesto: apertura, postura con evidencia citada, y cierre que invita al diálogo. El texto debe ser seleccionable y copiable en el PDF.",
+            "structure_rule": "Cuerpo en TRES actos: (1) Introducción, (2) una única sección de Desarrollo con título temático (NO 'Desarrollo' ni 'Participación en el foro') y (3) Conclusiones. El PRODUCTO —la participación textual publicada— es el NÚCLEO del desarrollo y va como SUBsección. Orden: (a) marco/encuadre que conduce a las preguntas guía, (b) respuestas a las preguntas guía, (c) la participación textual publicada como subsección protagónica y su lectura.",
+            "three_act_gravity_rule": "El desarrollo NO se fragmenta en varias secciones \\section: marco, preguntas guía, participación publicada y su lectura son subsecciones de una sola sección de desarrollo cuyo título nombra el tema del foro.",
+            "closure_rule": "La conclusión integra síntesis, análisis propio y postura personal. Inicia SIEMPRE con \\clearpage inmediatamente antes de la \\section, de modo que arranque en una PÁGINA NUEVA y ocupe preferentemente una sola página. La declaración de uso de IA se liga como \\footnote, nunca como \\section.",
+            "catalogo_no": 29,
+            "nombre_oficial": "Foro",
+            "nivel": "Aplicar",
+            "familia": "oral_participativo",
+            "preservation_rule_official": "Materializar «Foro» siguiendo la estructura oficial UnADM: Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Prepara",
+            "layout_rule": "Bloque con breaklines para texto largo, sin numerar líneas de continuación. Cada participación en una sola línea lógica del fuente.",
+            "build_steps": "Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Preparar las argumentaciones. Pensar bien las opiniones, ya que deben favorecer un diálogo crítico y\n reflexivo. Para ello es recomendable que el usuario prepare el tema a investigar y realice breves interrogantes\n que permitan sintetizar las ideas que se piensan\n expresar.\n 4. Recopilar y analizar la información. Reunir datos, a\n partir de la pregunta detonante o el planteamiento del\n problema. Aquí comienza una discusión entre los participantes. El moderador deberá ir recabando los puntos\n de vista más importantes para elaborar un resumen de\n los comentarios que después compartirá.\n 5. Cerrar la actividad. Concluir la sesión. El moderador\n da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la\n participación.\n\n104\n\f Foro",
+            "official_contract": {
+              "fuente_oficial": {
+                "fuentes": [
+                  "fasciculos-pdf",
+                  "100tecnicasdidacticas.unadmexico.mx"
+                ],
+                "sitio": "100tecnicasdidacticas.unadmexico.mx",
+                "numero_web": 42,
+                "nombre_oficial_web": "Foro"
+              },
+              "official_definition": "El foro es una reunión que permite establecer una conversación para la solución de problemas, mediante un trabajo colaborativo y cooperativo. Se discute un tema específico, según los intereses de los participantes y se aborda desde un pensamiento crítico, reflexivo y autónomo.\n\nFacilita la interacción y el intercambio de posturas de manera colectiva, respecto al tema a tratar.",
+              "official_what_is": "Es una práctica grupal que se caracteriza por:\n\n ■■ Permitir la formación entre pares, ya que se orientan\n los temas de mejor manera, se concretan y ejemplifican. En el caso de los foros virtuales, las actividades\n pueden seguir una metodología de enseñanza y aprendizaje considerando contenidos y recursos de información ofrecidos para las actividades que llevarán a cabo.\n ■■ Fortalecer el pensamiento crítico flexible, en virtud de\n que la comunicación que se establece es organizada,\n precisa y sistemática.\n ■■ Favorecer la interacción como un aspecto central para\n la enseñanza y el aprendizaje.\n\n100\n\f Foro",
+              "official_structure": "El foro tiene cuatro elementos esenciales:\n\n1. Apertura. En el espacio destinado para la interacción\n (virtual o presencial), un moderador expone las reglas\n de participación y presenta una pregunta detonante\n para iniciar el diálogo.\n2. Participantes. El número de integrantes dependerá\n del tipo y las características del foro.\n3. Coordinación. El moderador orienta las intervenciones de los participantes y reúne datos para el cierre del\n foro.\n4. Cierre. Se da una conclusión sobre la temática.\n\n 101\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 2\n\n Participantes\n\n Moderador\n\n Toma de datos para la\n moderación y el cierre\n\n102\n\f Foro",
+              "official_utility": "El foro tiene las siguientes funciones:\n\n■■ Inicia una conversación sobre un tema en específico y mediante intereses particulares a partir de una\n investigación.\n■■ Sintetiza ideas y las comparte ante un grupo de\n manera reflexiva para intercambiar opiniones y experiencias, desde un punto participativo y respetuoso.\n■■ Permite expresar pensamientos críticos de manera\n colaborativa, a través de un diálogo que propicia el\n desarrollo de habilidades cognitivas y procesos\n mentales como la interpretación y comprensión de la\n información.\n■■ Estimula la expresión libre de ideas y opiniones sobre\n un tema, en donde la conjunción de ideas amplía el\n conocimiento sobre el mismo, permitiendo la comunicación permanente y simultánea entre pares.\n\n 103\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 2",
+              "build_steps": "Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Preparar las argumentaciones. Pensar bien las opiniones, ya que deben favorecer un diálogo crítico y\n reflexivo. Para ello es recomendable que el usuario prepare el tema a investigar y realice breves interrogantes\n que permitan sintetizar las ideas que se piensan\n expresar.\n 4. Recopilar y analizar la información. Reunir datos, a\n partir de la pregunta detonante o el planteamiento del\n problema. Aquí comienza una discusión entre los participantes. El moderador deberá ir recabando los puntos\n de vista más importantes para elaborar un resumen de\n los comentarios que después compartirá.\n 5. Cerrar la actividad. Concluir la sesión. El moderador\n da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la\n participación.\n\n104\n\f Foro",
+              "caveats": "…\n\nEl desarrollo de un foro implica:\n\n■■ Mantener una actitud positiva, lo cual permitirá expresar argumentos y respetar otras opiniones para llegar\n a una conclusión exacta.\n■■ Aclarar dudas durante el intercambio de información.\n■■ Saber que en el entorno virtual hay tres tipos:\n ■■ Foros públicos: no hay reglas, número de participantes ni formas de participación, es decir, cualquier persona puede integrarse y comentar acerca\n de la problemática.\n ■■ Foros protegidos: es necesario registrarse para\n ingresar a la discusión.\n ■■ Foros privados: se integra por un cierto número de\n registrados y un administrador decide dar acceso\n o rechazar la solicitud de ingreso. En este tipo de\n foro, es recomendable investigar con anterioridad\n el tema para tener una perspectiva amplia y poder\n expresar puntos de vista críticos y reflexivos.\n\n 105\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 2",
+              "authorities": "…\n\n El foro es una técnica didáctica, mediante un espacio real\n o virtual, comunicativo o colaborativo en el que todo un\n grupo toma parte en un debate sobre un tema que sea de\n interés general (Berlo, 2004).\n\n Para Arango (2003) un foro es un escenario de comunicación, donde se propicia el debate, la concertación y el\n consenso de ideas, el cual permite a un usuario publicar\n su mensaje en cualquier momento, quedando visible para\n que otros usuarios expresen sus opiniones.\n\n Los foros pueden definirse como “espacios para discusiones académicas que contribuyen al desarrollo del pensamiento crítico a partir del diálogo” (Castro et al., 2016, p. 25).\n La principal finalidad de la discusión es expresar ideas a\n partir de una problemática e intervenir en una discusión\n con diversos puntos de vista.\n\n ...un espacio real o virtual,\n comunicativo o colaborativo\n en el que todo un grupo\n toma pa",
+              "references_seed": "Arango, M. (2003). Foros virtuales como estrategia de aprendizaje. https://\n revistas.rlcu.org.ar/index.php/Debates/article/view/33/19\nBerlo, D. (2004). El proceso de la comunicación. Introducción a la teoría y a la\n práctica. Buenos Aires: El Ateneo.\nCastro, N., Suárez, X. y Soto, V. (2016). El uso del foro virtual para desarrollar el aprendizaje autorregulado de los estudiantes universitarios.\n Innovación Educativa, 16(70), 23-41. https://www.redalyc.org/journal/1794/\n 179445403002/html/\n\n 107\n\f\fGrupos de\ndiscusión\n\n 3\n Aplicar\n\f 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 2\n\n Los",
+              "how_to_cite": "López, A. (2022). Foro. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Aplicar. Universidad Abierta y a Distancia de México.\nhttps://100tecnicasdidacticas.unadmexico.mx/index.html\r\n\n Copiar cita al portapapeles",
+              "preservation_rule_official": "Materializar «Foro» siguiendo la estructura oficial UnADM: Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Prepara"
+            },
+            "tikz_pattern": {
+              "packages": [
+                "tcolorbox",
+                "\\tcbuselibrary{most}",
+                "enumitem"
+              ],
+              "skeleton": "\\newtcolorbox{forobox}{enhanced,breakable,colback=black!2,colframe=green!45!black,boxrule=0.6pt,arc=2pt,left=8pt,right=8pt,top=6pt,bottom=6pt,title=\\textbf{Participación publicada en el foro}}\n\\begin{forobox}\n\\begin{enumerate}[label=\\textbf{\\arabic*)},leftmargin=*,itemsep=4pt,topsep=0pt]\n  \\item <Apertura / encuadre del tema>.\n  \\item <Respuesta a la pregunta guía con evidencia>. ``<cita textual>'' (<Apellido>, <año>, p.~<n>).\n  \\item <Cierre con una pregunta al grupo>.\n\\end{enumerate}\n\n\\par\\medskip\n\\noindent\\textbf{Referencias}\\par\\smallskip\n\\begingroup\n\\setlength{\\parindent}{0pt}\n\\setlength{\\hangindent}{1.6em}\n\\setlength{\\hangafter}{1}\n<Entrada APA 7 completa>.\n\\par\n\\endgroup\n\\end{forobox}\n\n\\newtcolorbox{retroforobox}{enhanced,breakable,colback=blue!2,colframe=blue!45!black,boxrule=0.6pt,arc=2pt,left=8pt,right=8pt,top=6pt,bottom=6pt,title=\\textbf{Retroalimentación}}\n\\begin{retroforobox}\n<Retroalimentación específica sobre la participación y su aporte al diálogo del grupo>.\n\\end{retroforobox}",
+              "rules": "El primer forobox debe reproducir únicamente la publicación: apertura, respuesta argumentada con cita textual y referencia APA 7, cierre interrogativo y referencias con sangría francesa; la retroalimentación debe aparecer en un segundo cuadro independiente. Los marcadores <...> deben conservarse literalmente y el contenido debe seguir siendo texto seleccionable y copiable.",
+              "materializacion": "Materializar como bloque de participación (sourcecode/listings o tcolorbox) que reproduce literalmente lo publicado/expuesto: apertura, postura con evidencia citada, y cierre que invita al diálogo. El texto debe ser seleccionable y copiable en el PDF.",
+              "llm_refined_by": "GPT-5.6-Luna"
+            },
+            "scoring_rubric": {
+              "escala": "0-100",
+              "componentes_editoriales": {
+                "citas_apa": {
+                  "peso": 25,
+                  "criterio": "Citas APA 7 visibles y suficientes que sustentan el producto (mín. 3)."
+                },
+                "estructura_tres_actos": {
+                  "peso": 20,
+                  "criterio": "Tres actos: introducción (problema), desarrollo temático con el producto como núcleo, conclusión con postura."
+                },
+                "producto_protagonico": {
+                  "peso": 20,
+                  "criterio": "El producto de la técnica es el núcleo del desarrollo; el texto lo prepara antes y lo interpreta después."
+                },
+                "base_conceptual": {
+                  "peso": 15,
+                  "criterio": "Conceptos clave delimitados (\\textbf/\\textit) y cobertura de los subtemas de la planeación."
+                },
+                "conectores_prosa": {
+                  "peso": 10,
+                  "criterio": "Prosa con conectores lógicos; introducción y conclusión sin listas."
+                },
+                "integridad_postura": {
+                  "peso": 10,
+                  "criterio": "Postura propia (posición, razón, consecuencia) y declaración de IA como \\footnote."
+                }
+              },
+              "criterios_de_construccion_oficial": [
+                "{'criterio': 'Delimitar el tema y el tipo de foro. Especificar las características del foro. Se trata de que los participantes tengan los mismos intereses en el tema, hecho o problema a dialogar.', 'peso': 8.33}",
+                "{'criterio': 'Establecer reglas. Elegir a un moderador para que presente el tema y comparta las instrucciones para participar de manera ordenada.', 'peso': 8.33}",
+                "{'criterio': 'Cerrar la actividad. Concluir la sesión. El moderador da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la participación. 104 Foro', 'peso': 8.33}"
+              ],
+              "consideraciones_para_puntuar": [
+                "… El desarrollo de un foro implica: ■■ Mantener una actitud positiva, lo cual permitirá expresar argumentos y respetar otras opiniones para llegar a una conclusión exacta.",
+                "■■ Aclarar dudas durante el intercambio de información.",
+                "■■ Saber que en el entorno virtual hay tres tipos: ■■ Foros públicos: no hay reglas, número de participantes ni formas de participación, es decir, cualquier persona puede integrarse y comentar acerca de la problemática.",
+                "■■ Foros protegidos: es necesario registrarse para ingresar a la discusión.",
+                "■■ Foros privados: se integra por un cierto número de registrados y un administrador decide dar acceso o rechazar la solicitud de ingreso.",
+                "En este tipo de foro, es recomendable investigar con anterioridad el tema para tener una perspectiva amplia y poder expresar puntos de vista críticos y reflexivos.",
+                "105 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 2",
+                "Puntuar adicionalmente que la estructura y el orden de la publicación coincidan con el producto Foro y que la retroalimentación esté claramente separada de la intervención publicada."
+              ],
+              "umbral_aprobacion": 100,
+              "nota": "El producto puntúa por fidelidad a la técnica (forma oficial) + calidad editorial (tres actos, citas, postura)."
+            },
+            "construction_integration": {
+              "deteccion": "Aliases: foro, foro diagnóstico, foro diagnostico, participación en foro, participacion en foro.",
+              "producto_nucleo": "El desarrollo NO se fragmenta en varias secciones \\section: marco, preguntas guía, participación publicada y su lectura son subsecciones de una sola sección de desarrollo cuyo título nombra el tema del foro.",
+              "estructura": "Cuerpo en TRES actos: (1) Introducción, (2) una única sección de Desarrollo con título temático (NO 'Desarrollo' ni 'Participación en el foro') y (3) Conclusiones. El PRODUCTO —la participación textual publicada— es el NÚCLEO del desarrollo y va como SUBsección. Orden: (a) marco/encuadre que conduce a las preguntas guía, (b) respuestas a las preguntas guía, (c) la participación textual publicada como subsección protagónica y su lectura.",
+              "layout": "Bloque con breaklines para texto largo, sin numerar líneas de continuación. Cada participación en una sola línea lógica del fuente.",
+              "cierre": "La conclusión integra síntesis, análisis propio y postura personal. Inicia SIEMPRE con \\clearpage inmediatamente antes de la \\section, de modo que arranque en una PÁGINA NUEVA y ocupe preferentemente una sola página. La declaración de uso de IA se liga como \\footnote, nunca como \\section.",
+              "preservacion_oficial": "Materializar «Foro» siguiendo la estructura oficial UnADM: Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Prepara",
+              "pasos_construccion": "Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Preparar las argumentaciones. Pensar bien las opiniones, ya que deben favorecer un diálogo crítico y\n reflexivo. Para ello es recomendable que el usuario prepare el tema a investigar y realice breves interrogantes\n que permitan sintetizar las ideas que se piensan\n expresar.\n 4. Recopilar y analizar la información. Reunir datos, a\n partir de la pregunta detonante o el planteamiento del\n problema. Aquí comienza una discusión entre los participantes. El moderador deberá ir recabando los puntos\n de vista más importantes para elaborar un resumen de\n los comentarios que después compartirá.\n 5. Cerrar la actividad. Concluir la sesión. El moderador\n da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la\n participación.\n\n104\n\f Foro",
+              "compilacion": "Compilar con latexmk -pdf -bibtex; verificar el producto renderizando a PNG con pdftoppm (no solo returncode)."
+            }
           },
           "bibliography_contract": {
             "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
@@ -343,8 +541,8 @@
             "institution": "UnADM",
             "career": "licenciatura-en-derecho-unadm",
             "subject": "interaprendizaje-en-ambientes-virtuales-lde",
-            "activity": "Actividad 2",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-2"
+            "activity": "Actividad 3",
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -432,11 +630,13 @@
             "no_gap_before_visual_deliverable": "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
             "landscape_single_page": "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
             "conclusion_single_page": "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla).",
-            "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos."
+            "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos.",
+            "always_use_latexmk": "SIEMPRE compilar con latexmk vía scripts/latexmk-build.ps1 (o workspace.compile_tex, que lo invoca). El .latexmkrc de la raíz ya fija $out_dir='.build/latex' y $aux_dir='.build/latex/aux' + TEXINPUTS/BIBINPUTS/BSTINPUTS, de modo que TODOS los auxiliares (.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz) quedan AISLADOS en .build/latex y el PDF final se copia junto al .tex. PROHIBIDO compilar con pdflatex/bibtex manuales sin -output-directory (dejan residuos junto al .tex y ensucian la carpeta de la materia). latexmk además resuelve solo el ciclo pdflatex->bibtex->pdflatex x2 (max_repeat=5). Si aparece un warning no fatal 'Missing input file .toc' tras limpiar auxiliares, es cosmético: latexmk regenera el .toc en la 2ª pasada; usar -f (force) para que no aborte el exit code.",
+            "no_build_residues": "La carpeta de cada materia/actividad SOLO debe contener FUENTES (.tex .bib .md .json) y el PDF final; NUNCA residuos de compilación (.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz .nav .snm .vrb .xdv .run.xml) ni respaldos .bak del optimizador ya aplicados. Como latexmk (con el .latexmkrc) aísla todo en .build/latex, la única fuente de residuos son compilaciones manuales antiguas: si aparecen, BORRARLOS. El post-proceso de realizar-actividad debe barrer estos residuos de la carpeta de la actividad tras la compilación final."
           }
         },
         "detail_planner": {
-          "run_id": "20260718-224227",
+          "run_id": "20260721-083907",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
@@ -448,7 +648,7 @@
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
             "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde"
           ],
-          "novelty_count": 2
+          "novelty_count": 0
         },
         "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
         "level": "materia",
