@@ -27,6 +27,25 @@ def make_source_id(path: str | Path) -> str:
     return f"{stem}_{digest}"
 
 
+def _openable_path(path: str | Path) -> str:
+    """Devuelve una ruta que PyMuPDF pueda abrir aunque supere MAX_PATH (260) en
+    Windows, prefijando con \\\\?\\ la ruta absoluta larga. Sin efecto fuera de
+    Windows, en rutas cortas o ya prefijadas."""
+    import os
+    p = str(path)
+    if os.name != "nt":
+        return p
+    try:
+        full = os.path.abspath(p)
+    except OSError:
+        return p
+    if full.startswith("\\\\?\\") or full.startswith("\\\\.\\") or len(full) < 240:
+        return p
+    if full.startswith("\\\\"):
+        return "\\\\?\\UNC\\" + full[2:]
+    return "\\\\?\\" + full
+
+
 def _normalize_block_text(text: str) -> str:
     text = text.replace("\r\n", "\n").replace("\r", "\n")
     text = re.sub(r"[ \t]+", " ", text)
@@ -76,7 +95,7 @@ def extract_pdf_blocks(pdf_path: str | Path) -> list[PageText]:
     source_id = make_source_id(path)
     blocks: list[PageText] = []
 
-    with fitz.open(path) as doc:
+    with fitz.open(_openable_path(path)) as doc:
         for idx, page in enumerate(doc, start=1):
             for block_idx, (_y, _x, text) in enumerate(_extract_block_items(page), start=1):
                 blocks.append(

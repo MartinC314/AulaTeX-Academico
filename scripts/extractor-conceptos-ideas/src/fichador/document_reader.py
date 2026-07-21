@@ -35,13 +35,34 @@ def parse_extensions(value: str | None) -> set[str]:
     return result or set(SUPPORTED_EXTENSIONS)
 
 
+def _win_long_path(path: Path) -> Path:
+    """En Windows, prefija rutas largas con \\\\?\\ para evitar que stat/is_file
+    fallen silenciosamente cuando la ruta ABSOLUTA supera MAX_PATH (260 chars).
+    Se evalua por la longitud de la ruta COMPLETA del archivo (no de la carpeta).
+    Sin efecto en otros SO, rutas ya prefijadas, o rutas cortas."""
+    import os
+    if os.name != "nt":
+        return path
+    try:
+        full = os.path.abspath(str(path))
+    except OSError:
+        return path
+    if full.startswith("\\\\?\\") or full.startswith("\\\\.\\"):
+        return path
+    if len(full) < 240:
+        return path
+    if full.startswith("\\\\"):  # UNC path
+        return Path("\\\\?\\UNC\\" + full[2:])
+    return Path("\\\\?\\" + full)
+
+
 def discover_source_files(path: str | Path, *, recursive: bool = False, extensions: set[str] | None = None) -> tuple[list[Path], list[Path]]:
     root = Path(path)
-    if not root.exists():
+    if not _win_long_path(root).exists():
         raise FileNotFoundError(f"No existe la ruta de fuentes: {root}")
 
     allowed = extensions or set(SUPPORTED_EXTENSIONS)
-    if root.is_file():
+    if _win_long_path(root).is_file():
         if root.suffix.lower() in allowed:
             return [root], []
         return [], [root]
@@ -50,7 +71,9 @@ def discover_source_files(path: str | Path, *, recursive: bool = False, extensio
     files: list[Path] = []
     skipped: list[Path] = []
     for item in sorted(root.glob(pattern)):
-        if not item.is_file():
+        # En Windows, re-evaluar is_file() con el prefijo de ruta larga para no
+        # descartar archivos cuya ruta absoluta supera MAX_PATH (is_file->False).
+        if not _win_long_path(item).is_file():
             continue
         if item.name.startswith("~$"):
             continue

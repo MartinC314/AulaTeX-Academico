@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 import json
+import re
 from datetime import datetime
 import pandas as pd
 from docx import Document
@@ -9,6 +10,25 @@ from docx.shared import Pt
 
 from .fichas import ConceptFicha
 from .planeacion_parser import PlaneacionAnalizada, planeacion_to_dict
+
+
+# Caracteres de control ILEGALES para openpyxl/Excel (todo control excepto \t \n \r).
+# El texto extraído de PDFs a veces incluye \x00-\x08, \x0b, \x0c, \x0e-\x1f que
+# hacen fallar la exportación .xlsx con IllegalCharacterError.
+_ILLEGAL_XLSX_CHARS = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f]")
+
+
+def _sanitize_xlsx_value(value):
+    """Elimina caracteres de control ilegales para Excel de valores de texto."""
+    if isinstance(value, str):
+        return _ILLEGAL_XLSX_CHARS.sub("", value)
+    return value
+
+
+def _xml_safe(text) -> str:
+    """Elimina caracteres de control ilegales para XML (Excel .xlsx y Word .docx).
+    python-docx/lxml y openpyxl rechazan \x00-\x1f (salvo \t \n \r) provenientes de PDFs."""
+    return _ILLEGAL_XLSX_CHARS.sub("", text) if isinstance(text, str) else str(text)
 
 
 def fichas_to_rows(fichas: list[ConceptFicha]) -> list[dict]:
@@ -87,7 +107,10 @@ def export_markdown(fichas: list[ConceptFicha], output_path: Path) -> None:
 
 
 def export_excel(rows: list[dict], output_path: Path) -> None:
-    df = pd.DataFrame(rows)
+    # Sanear caracteres de control ilegales (provenientes de PDFs) que openpyxl
+    # rechaza con IllegalCharacterError al escribir el .xlsx.
+    safe_rows = [{k: _sanitize_xlsx_value(v) for k, v in row.items()} for row in rows]
+    df = pd.DataFrame(safe_rows)
     with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
         df.to_excel(writer, index=False, sheet_name="fichas")
         ws = writer.book["fichas"]
@@ -117,26 +140,26 @@ def export_docx(fichas: list[ConceptFicha], output_path: Path) -> Path:
     doc.add_paragraph("Archivo generado automáticamente. Las citas textuales se extrajeron de las fuentes de entrada.")
 
     for i, ficha in enumerate(fichas, start=1):
-        doc.add_heading(f"Ficha {i:02d}. {ficha.concept}", level=2)
+        doc.add_heading(_xml_safe(f"Ficha {i:02d}. {ficha.concept}"), level=2)
         p = doc.add_paragraph()
         p.add_run("Fuentes: ").bold = True
-        p.add_run(ficha.sources_text)
+        p.add_run(_xml_safe(ficha.sources_text))
         p = doc.add_paragraph()
         p.add_run("Ubicaciones: ").bold = True
-        p.add_run(ficha.locations_text)
+        p.add_run(_xml_safe(ficha.locations_text))
 
         if ficha.hits:
             for hit in ficha.hits:
-                doc.add_heading(f"{hit.source_name} — {hit.location} — similitud {hit.score:.4f}", level=3)
+                doc.add_heading(_xml_safe(f"{hit.source_name} — {hit.location} — similitud {hit.score:.4f}"), level=3)
                 q = doc.add_paragraph()
                 q.paragraph_format.left_indent = Pt(18)
-                q.add_run(f"“{hit.quote}”")
+                q.add_run(_xml_safe(f"“{hit.quote}”"))
         else:
             doc.add_paragraph("No se localizaron citas textuales por encima del umbral configurado.")
 
         p = doc.add_paragraph()
         p.add_run("Observación automática: ").bold = True
-        p.add_run(ficha.observation)
+        p.add_run(_xml_safe(ficha.observation))
 
     try:
         doc.save(output_path)
@@ -214,7 +237,14 @@ def export_all(
     export_excel(rows, paths["excel"])
     export_csv(rows, paths["csv"])
     export_json(rows, paths["json"])
-    paths["word"] = export_docx(fichas, paths["word"])
+    # El .docx es el formato MENOS crítico; un fallo suyo (p. ej. caracteres XML
+    # inválidos residuales) NO debe abortar la escritura de los artefactos clave
+    # (conceptos_detectados / trazabilidad / resumen_planeacion) que van después.
+    try:
+        paths["word"] = export_docx(fichas, paths["word"])
+    except Exception as exc:  # noqa: BLE001
+        print(f"      Aviso: no se pudo exportar .docx ({type(exc).__name__}); se continúa con el resto.")
+        paths.pop("word", None)
     paths["conceptos"].write_text(json.dumps(conceptos or [f.concept for f in fichas], ensure_ascii=False, indent=2), encoding="utf-8")
     paths["ideas"].write_text(json.dumps(_build_idea_rows(fichas), ensure_ascii=False, indent=2), encoding="utf-8")
     paths["trazabilidad"].write_text(json.dumps(_build_traceability(rows), ensure_ascii=False, indent=2), encoding="utf-8")
