@@ -180,10 +180,25 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
             "Usar siempre herramientas de edición que preserven UTF-8. Si ocurre mojibake, reparar con reemplazos dirigidos "
             "(Ã¡->á, Âº->º, â€\"->—) por Python, no re-decodificando todo el archivo."
         ),
+        "always_use_latexmk": (
+            "SIEMPRE compilar con latexmk vía scripts/latexmk-build.ps1 (o workspace.compile_tex, que lo invoca). El .latexmkrc de la raíz "
+            "ya fija $out_dir='.build/latex' y $aux_dir='.build/latex/aux' + TEXINPUTS/BIBINPUTS/BSTINPUTS, de modo que TODOS los auxiliares "
+            "(.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz) quedan AISLADOS en .build/latex y el PDF final se copia junto al .tex. "
+            "PROHIBIDO compilar con pdflatex/bibtex manuales sin -output-directory (dejan residuos junto al .tex y ensucian la carpeta de la materia). "
+            "latexmk además resuelve solo el ciclo pdflatex->bibtex->pdflatex x2 (max_repeat=5). Si aparece un warning no fatal 'Missing input file .toc' "
+            "tras limpiar auxiliares, es cosmético: latexmk regenera el .toc en la 2ª pasada; usar -f (force) para que no aborte el exit code."
+        ),
         "build_command": (
-            "Para builds con bibliografía y múltiples pasadas estables: cmd /c \"latexmk -f -pdf -bibtex -interaction=nonstopmode "
-            "-output-directory=.build\\latex\\aux <src>\" con TEXINPUTS='.;<repo>\\base\\Plantilla-Informe;<carpeta-materia>;' y "
-            "BIBINPUTS='<carpeta-materia>;'; luego copiar el PDF de .build\\latex\\aux al destino."
+            "Comando canónico (respeta el .latexmkrc, NO deja residuos junto al .tex): "
+            "powershell -File scripts/latexmk-build.ps1 <src.tex> -CleanMode safe. "
+            "Equivale a 'latexmk -f -pdf -interaction=nonstopmode -file-line-error <src>' con el .latexmkrc que aísla auxiliares en "
+            ".build/latex/aux y copia el PDF al lado del .tex. NO usar invocaciones manuales de pdflatex/bibtex que escriban junto al .tex."
+        ),
+        "no_build_residues": (
+            "La carpeta de cada materia/actividad SOLO debe contener FUENTES (.tex .bib .md .json) y el PDF final; NUNCA residuos de compilación "
+            "(.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz .nav .snm .vrb .xdv .run.xml) ni respaldos .bak del optimizador ya aplicados. "
+            "Como latexmk (con el .latexmkrc) aísla todo en .build/latex, la única fuente de residuos son compilaciones manuales antiguas: si aparecen, "
+            "BORRARLOS. El post-proceso de realizar-actividad debe barrer estos residuos de la carpeta de la actividad tras la compilación final."
         ),
         "page_control": (
             "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre "

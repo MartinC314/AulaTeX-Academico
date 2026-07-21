@@ -281,6 +281,8 @@ class IncrementalDetailPlanner:
                 "landscape_single_page": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["landscape_single_page"],
                 "conclusion_single_page": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["conclusion_single_page"],
                 "page_control": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["page_control"],
+                "always_use_latexmk": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["always_use_latexmk"],
+                "no_build_residues": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["no_build_residues"],
             },
             "bibliography_contract": {
                 "visible_citations_rule": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["quality_gates"]["visible_citations"],

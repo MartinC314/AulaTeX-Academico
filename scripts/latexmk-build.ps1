@@ -87,6 +87,33 @@ function Invoke-BuildCleanup {
         Remove-Item -Force -ErrorAction SilentlyContinue
 }
 
+function Remove-SourceDirResidues {
+    # Barre residuos de compilacion HUERFANOS que quedaron JUNTO al .tex (fruto de
+    # compilaciones manuales pdflatex/bibtex antiguas). El flujo canonico con
+    # latexmk aisla todo en .build/latex, asi que la carpeta de la materia debe
+    # contener SOLO fuentes (.tex/.bib/.md/.json) + el PDF final. Contractualizado
+    # en activity_contract.compilation_rules.no_build_residues.
+    param(
+        [string]$SourceDir,
+        [string]$BaseName
+    )
+
+    $residueExtensions = @(
+        '.aux', '.bbl', '.blg', '.fdb_latexmk', '.fls', '.lof', '.lot',
+        '.nav', '.out', '.run.xml', '.snm', '.toc', '.vrb', '.xdv', '.log'
+    )
+    Get-ChildItem -LiteralPath $SourceDir -File -Force -ErrorAction SilentlyContinue |
+        Where-Object {
+            $name = $_.Name.ToLowerInvariant()
+            $ext = $_.Extension.ToLowerInvariant()
+            # Respaldo del optimizador ya aplicado (obsoleto) y auxiliares del jobname.
+            ($name.EndsWith('.synctex.gz')) -or
+            ($name.EndsWith('.tex.activity-optimize.bak')) -or
+            ($residueExtensions -contains $ext)
+        } |
+        Remove-Item -Force -ErrorAction SilentlyContinue
+}
+
 $ResolvedTex = Resolve-TexFile $TexFile
 New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot '.build/latex') | Out-Null
 New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot '.build/latex/aux') | Out-Null
@@ -96,8 +123,17 @@ Push-Location $ProjectRoot
 try {
     # Force mode allows latexmk to complete bibliography passes even when
     # the first pdflatex run reports temporary undefined citations.
-    & latexmk -f -pdf -interaction=nonstopmode -file-line-error @LatexmkArgs $ResolvedTex
+    # latexmk writes non-fatal notices to stderr (e.g. "Missing input file
+    # '<jobname>.toc'" right after aux files were cleaned; latexmk regenerates the
+    # .toc on the next pass). Under $ErrorActionPreference='Stop' any native stderr
+    # is promoted to a terminating NativeCommandError, so we relax the preference
+    # ONLY around the native latexmk call and rely on $LASTEXITCODE for success.
+    $PreviousEAP = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    & latexmk -f -pdf -interaction=nonstopmode -file-line-error @LatexmkArgs $ResolvedTex 2>&1 |
+        ForEach-Object { Write-Host ($_ | Out-String).TrimEnd() }
     $LatexmkExitCode = $LASTEXITCODE
+    $ErrorActionPreference = $PreviousEAP
     if ($LatexmkExitCode -ne 0) {
         exit $LatexmkExitCode
     }
@@ -119,6 +155,12 @@ try {
 
     Copy-Item -LiteralPath $GeneratedPdf -Destination $FinalPdf -Force
     Invoke-BuildCleanup -Mode $CleanMode -Root $ProjectRoot
+    if ($CleanMode -ne 'none') {
+        # Barrer residuos huerfanos junto al .tex (compilaciones manuales antiguas)
+        # para garantizar que la carpeta de la materia quede limpia. latexmk por si
+        # mismo NO deja residuos ahi (usa .build/latex), esto solo limpia herencia.
+        Remove-SourceDirResidues -SourceDir (Split-Path -Parent $ResolvedTex) -BaseName $BaseName
+    }
     Write-Host "PDF final: $FinalPdf"
     exit 0
 }
