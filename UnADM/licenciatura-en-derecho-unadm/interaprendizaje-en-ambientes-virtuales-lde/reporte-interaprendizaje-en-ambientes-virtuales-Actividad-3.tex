@@ -1,0 +1,287 @@
+\documentclass[
+  spanish,
+  letterpaper, oneside
+]{article}
+
+\def\documenttitle {El interaprendizaje en ambientes virtuales}
+\def\documentsubtitle {Lo que el interaprendizaje no es y cómo evitarlo}
+\def\documentsubject {Actividad 3 - Interaprendizaje en ambientes virtuales}
+
+\def\documentauthor {Martin Jonathan de la Cruz}
+\def\coursename {Interaprendizaje en ambientes virtuales}
+\def\coursecode {004}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Interaprendizaje en ambientes virtuales}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de México}
+
+\def\authortable {
+  \begin{tabular}{ll}
+    \textbf{Alumno:}
+    & \begin{tabular}[t]{l}
+      Martin Jonathan de la Cruz \\
+    \end{tabular} \\
+    Matrícula: & ES2611202040 \\
+    Figura docente: & Janeth Santana Ramírez \\
+    Semestre/Bloque: & 2 / 1 \\
+    & \\
+    \multicolumn{2}{l}{Fecha de realización: \today} \\
+    \multicolumn{2}{l}{\universitylocation}
+  \end{tabular}
+}
+
+\input{template}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}
+\setcitestyle{authoryear,open={(},close={)}}
+
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+  \ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+    \AddToShipoutPictureBG*{%
+      \begin{tikzpicture}[remember picture,overlay]
+        \node[
+          opacity=\coverwatermarkopacity,
+          inner sep=0pt,
+          xshift=\coverwatermarkxshift,
+          yshift=\coverwatermarkyshift
+        ] at (current page.center) {%
+          \includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+        };
+      \end{tikzpicture}%
+    }%
+  }{}%
+}
+
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+\definecolor{unadmRowAlt}{HTML}{EEF2E6}
+
+% -----------------------------------------------------------------------------
+% AulaTeX:wiki-producto v1 -- bloque de contribución a la wiki colaborativa.
+% La wiki es la herramienta con que se materializa la técnica SOCIOAPRENDIZAJE
+% (#53 de las 100 Técnicas Didácticas UnADM): construcción coral del conocimiento.
+% Caja institucional homóloga al forobox: banda verde, fondo claro, texto
+% justificado. \wikimeta identifica la contribución publicada.
+% -----------------------------------------------------------------------------
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+
+% Entorno visual de la wiki (mismo estilo que el forobox de la materia)
+\newtcolorbox{wikibox}[1][]{%
+  enhanced, breakable,
+  colback=unadmPaper, colframe=unadmGreen,
+  boxrule=0pt, leftrule=3pt, arc=1.2mm,
+  left=4mm, right=4mm, top=3mm, bottom=3mm,
+  fonttitle=\bfseries\color{white}, coltitle=white, colbacktitle=unadmGreenDark,
+  attach boxed title to top left={xshift=4mm,yshift=-2mm},
+  boxed title style={colframe=unadmGreenDark,arc=0.6mm},
+  #1
+}
+
+% Ficha que identifica la contribución colaborativa (tema, participante, edición).
+\newcommand{\wikimeta}[4]{%
+  \begin{tcolorbox}[colback=unadmRowAlt,colframe=unadmRowAlt,boxrule=0pt,arc=1mm,
+    left=2mm,right=2mm,top=1.5mm,bottom=1.5mm]
+  {\small\begin{tabular}{@{}p{3.4cm}p{9.6cm}@{}}
+    \textbf{Tema de la wiki} & #1 \\
+    \textbf{Participante} & #2 \\
+    \textbf{Fecha de edición} & #3 \\
+    \textbf{Espacio / curso} & #4 \\
+  \end{tabular}}
+  \end{tcolorbox}\medskip}
+
+\begin{document}
+
+\insertcoverwatermark
+\templatePortrait
+\templatePagecfg
+\onehalfspacing
+
+\begin{abstractd}
+  El interaprendizaje nombra la construcción conjunta del conocimiento entre pares:
+  no se reduce a repartir tareas ni a acumular opiniones, sino que exige escucha
+  activa, transformación de las ideas propias a partir de las ajenas y condiciones de
+  participación que hagan de la diversidad un recurso. Sobre esa base conceptual
+  —principios, condiciones y prácticas dialógicas frente a monológicas— este reporte
+  contextualiza el trabajo colaborativo en ambientes virtuales y materializa, en una
+  wiki, una contribución que identifica una práctica contraria al interaprendizaje,
+  explica por qué obstaculiza la construcción compartida y propone una alternativa
+  concreta para transformarla. La técnica que sostiene el producto es el
+  socioaprendizaje, entendido como aprendizaje social sostenido por la interacción.
+\end{abstractd}
+
+\templateIndex
+\templateFinalcfg
+
+\section{Introducción}
+
+Aprender en un ambiente virtual no equivale a estar conectados al mismo tiempo ni a
+dividirnos el trabajo para terminar antes. El interaprendizaje parte de una premisa
+distinta: el conocimiento se construye entre personas cuando cada quien aporta,
+escucha y transforma sus propias ideas a partir de las de otras. Por eso, comprender
+esta noción exige distinguir con claridad qué prácticas construyen conocimiento en
+conjunto y cuáles solo lo simulan.
+
+El propósito de este trabajo es doble. Primero, ordenar la base conceptual del
+interaprendizaje —su noción, sus principios y condiciones, y la diferencia entre las
+prácticas dialógicas y las monológicas— apoyándose en las lecturas de la semana.
+Después, aplicar ese criterio en una wiki colaborativa, un espacio de construcción
+coral donde cada participante añade sin borrar ni repetir lo aportado por otras
+personas. La contribución no describe la actividad: reproduce lo publicado,
+identificando una práctica que obstaculiza el interaprendizaje, explicando su efecto
+y proponiendo una alternativa aplicable al trabajo académico y al campo jurídico.
+
+\section{Marco conceptual del interaprendizaje en ambientes virtuales}
+
+\subsection{Noción de interaprendizaje}
+
+El \textbf{interaprendizaje} designa la construcción conjunta del conocimiento a
+partir del intercambio de ideas, experiencias y perspectivas entre pares. No es un
+método para repartir responsabilidades, sino una forma de aprender en la que la
+interacción modifica lo que cada persona sabe. En entornos digitales, esa
+construcción se sostiene cuando los recursos y la comunicación en línea se orientan a
+fortalecer el aprendizaje colaborativo y autónomo, y no solo a transmitir contenidos
+\citep{bertely2011interaprendizajes}. Así entendido, el interaprendizaje es el
+resultado visible del \textbf{socioaprendizaje}: el aprendizaje social que ocurre
+gracias a la interacción sostenida dentro de una comunidad.
+
+\subsection{Principios y condiciones}
+
+El interaprendizaje se reconoce por algunas condiciones que lo hacen posible: la
+\textbf{escucha activa}, la disposición a transformar las ideas propias, la
+corresponsabilidad en la construcción del conocimiento y la existencia de reglas de
+participación que permitan una diversidad real de voces. Las metodologías activas para
+el aprendizaje virtual muestran que estas condiciones no surgen de manera espontánea:
+requieren estructurar la interacción, distribuir la palabra y sostener el seguimiento
+del proceso, de modo que la colaboración se convierta en aprendizaje y no en simple
+coordinación de entregas \citep{diazAlonso2011construccion}. En síntesis, tres
+condiciones resultan decisivas:
+
+\begin{itemize}[leftmargin=1.6em,itemsep=0.3em]
+  \item \textbf{Construcción conjunta}, no reparto de tareas: las aportaciones se
+  integran y se enriquecen mutuamente.
+  \item \textbf{Transformación por interacción}, no acumulación: las ideas cambian al
+  contrastarse con las de otras personas.
+  \item \textbf{Diversidad incorporada}, no neutralizada: las diferencias de voz,
+  lengua y perspectiva se leen como recurso y no como obstáculo.
+\end{itemize}
+
+\subsection{Prácticas dialógicas frente a prácticas monológicas}
+
+La distinción central para participar bien es la que separa lo dialógico de lo
+monológico. Una \textbf{práctica dialógica} abre el intercambio: pregunta, integra y
+permite que el sentido se construya entre varias personas. Una \textbf{práctica
+monológica}, en cambio, cierra el intercambio: impone una sola voz, simula acuerdo o
+reduce la participación a un trámite. La comunicación intercultural advierte que en
+toda interacción las personas no solo transmiten datos, sino que narran desde sus
+marcos de autoridad, memoria y pertenencia; ignorarlo convierte la diferencia en
+ruido y empobrece la construcción conjunta \citep{pech2016manual}. El interaprendizaje
+se distorsiona, entonces, cuando la interacción se reduce a repartir tareas, repetir
+opiniones, imponer una voz dominante o tratar la diversidad como un obstáculo en lugar
+de un recurso.
+
+\subsection{Contribución a la wiki colaborativa}
+
+Con el marco anterior como sustento, se reproduce a continuación la contribución
+publicada en la wiki de la semana, cuyo tema es aquello que el interaprendizaje no es
+y cómo evitarlo. La contribución sigue la lógica del socioaprendizaje: aporta una
+práctica que obstaculiza la construcción conjunta, explica por qué representa un
+problema y ofrece una alternativa para transformarla, además de ampliar —sin
+modificarla— una aportación previa de otra persona.
+
+\begin{wikibox}[title={Contribución publicada en la wiki colaborativa}]
+\phantomsection\label{wiki-participacion}
+\wikimeta{Lo que el interaprendizaje NO es y cómo evitarlo}{Martin Jonathan de la Cruz}{\today}{Wiki colaborativa, aula virtual UnADM}
+
+\textbf{Aportación: el monopolio de la palabra disfrazado de liderazgo.}\par
+\medskip
+Una práctica frecuente que contradice el interaprendizaje es que una sola persona
+concentre la palabra y las decisiones del equipo, presentándolo como ``liderazgo'' o
+``eficiencia''. En un ambiente virtual esto se reconoce cuando alguien redacta el
+producto casi completo, fija las conclusiones y deja a las demás personas el papel de
+aprobar lo ya hecho.
+
+\textit{Por qué es un problema.} El monopolio de la palabra rompe la condición básica
+del interaprendizaje: la construcción conjunta. Si las ideas no se contrastan ni se
+transforman por la interacción, el producto reproduce una sola voz y deja de constituir
+aprendizaje compartido \citep{bertely2011interaprendizajes}. A mi juicio, el problema no
+se limita a una distribución desigual del trabajo: también revela que la interacción no
+fue estructurada para producir aprendizaje, pues colaborar exige organizar la
+participación y no solo coordinar entregas \citep{diazAlonso2011construccion}. Además,
+invisibiliza la diversidad de perspectivas y lenguas del grupo, que debería enriquecer
+el intercambio; tratarla como ruido empobrece la construcción conjunta \citep{pech2016manual}.
+
+\textit{Alternativa para transformarla.} Una salida concreta es estructurar la
+participación con roles rotativos y aportes mínimos verificables: cada persona
+introduce una idea propia antes de comentar la ajena, y quien coordina sintetiza sin
+sustituir. En el trabajo académico a distancia esto se traduce en fijar turnos de
+edición en el documento compartido; en el campo jurídico, en un equipo que analiza un
+caso, equivale a que cada integrante aporte primero su lectura del problema antes de
+cerrar una estrategia común, para que la decisión final integre varias perspectivas y
+no la de una sola voz.
+
+\medskip
+\textbf{Complemento a una aportación previa.} Ampliando —sin modificarla— una
+aportación anterior que señalaba el ``consenso aparente'' como práctica dañina, añado
+un ejemplo del ámbito jurídico: cuando un equipo aprueba rápido una conclusión ``para
+avanzar'', suele ocultar desacuerdos que resurgen al final. Una forma de prevenirlo es
+pedir, antes de cerrar, al menos una objeción o matiz por persona; así el acuerdo se
+construye y no solo se simula.
+
+\medskip
+\textbf{Para seguir construyendo entre todas y todos:} ¿qué señales tempranas les
+ayudan a distinguir, en una actividad en línea, entre una colaboración real y un
+reparto de tareas que solo aparenta trabajo conjunto?
+\end{wikibox}
+
+Leída en conjunto, la contribución muestra que reconocer una práctica monológica no
+basta: hace falta proponer un cambio en la dinámica. El monopolio de la palabra se
+corrige distribuyendo la participación, y el consenso aparente, provocando el
+disenso antes de cerrar. En ambos casos, la diversidad de voces deja de ser un
+obstáculo para volverse la condición del aprendizaje compartido.
+
+\clearpage
+\section{Conclusión}
+
+A mi juicio, comprender el interaprendizaje es, sobre todo, aprender a distinguir la
+construcción conjunta real de la colaboración aparente. Las prácticas que lo
+obstaculizan —el monopolio de la palabra, el consenso aparente, la participación
+decorativa o la invisibilización de las diferencias— comparten un mismo rasgo:
+sustituyen el diálogo por una sola voz y convierten la diversidad en silencio.
+
+Por ello sostengo que participar bien en una wiki no consiste en aportar más, sino en
+aportar de manera que el conocimiento se construya entre varias personas: identificar
+con precisión qué daña el aprendizaje compartido, explicar su efecto y proponer una
+alternativa que modifique la dinámica. Ese criterio —trabajar por distinciones y no por
+definiciones memorizadas— es el que vuelve útil el concepto tanto en el trabajo
+académico a distancia como en el ejercicio del Derecho, donde decidir en conjunto y
+escuchar la diferencia son condiciones de una mejor
+justicia.\footnote{Para redactar y organizar este documento se utilizó una
+herramienta de inteligencia artificial con el propósito de ordenar ideas y revisar la
+redacción; su uso no sustituyó la comprensión de las lecturas, la selección y
+aplicación de las fuentes ni la elaboración de la contribución, que corresponden al
+autor.}
+
+\clearpage
+\nocite{bertely2011interaprendizajes,diazAlonso2011construccion,pech2016manual,cushpa2022pacie,silva2015metodologias}
+\bibliography{interaprendizaje-en-ambientes-virtuales}
+
+\end{document}
