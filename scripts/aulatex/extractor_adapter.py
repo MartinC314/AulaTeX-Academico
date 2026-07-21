@@ -209,13 +209,29 @@ class ExtractorAdapter:
 
     def _infer_sources_path(self, target_path: Path, scope: EditorialScope | None) -> Path | None:
         candidates: list[Path] = []
-        if target_path.exists():
-            if target_path.is_file():
-                candidates.append(target_path)
-            else:
-                for name in ("fuentes", "referencias", "documentos-base", "libros", "bibliografia", "investigacion-aulatex"):
-                    candidates.extend(path for path in sorted(target_path.glob(f"{name}*")) if path.exists())
-                candidates.extend(path for path in sorted(target_path.glob("*.bib")) if path.is_file())
+        # Cuando el target es un archivo (p. ej. un reporte .tex de actividad), las
+        # fuentes REALES no son el propio .tex, sino las carpetas de referencias/libros
+        # de la materia. Se prioriza subir al directorio de la materia y localizar
+        # 'referencias-*/libros-*', 'referencias-*', 'fuentes-*', etc.
+        search_dirs: list[Path] = []
+        if target_path.exists() and target_path.is_dir():
+            search_dirs.append(target_path)
+        if target_path.exists() and target_path.is_file():
+            search_dirs.append(target_path.parent)
+        for base in search_dirs:
+            # 'referencias-*/libros-*' es la fuente más rica (bibliografía en PDF).
+            for ref_dir in sorted(base.glob("referencias*")):
+                if ref_dir.is_dir():
+                    for libros in sorted(ref_dir.glob("libros*")):
+                        if libros.is_dir():
+                            candidates.append(libros)
+                    candidates.append(ref_dir)
+            for name in ("fuentes", "documentos-base", "libros", "bibliografia", "investigacion-aulatex"):
+                candidates.extend(path for path in sorted(base.glob(f"{name}*")) if path.exists())
+            candidates.extend(path for path in sorted(base.glob("*.bib")) if path.is_file())
+        # Como último recurso, el propio archivo target (si es fuente soportada).
+        if target_path.exists() and target_path.is_file():
+            candidates.append(target_path)
         if scope is not None and scope.institution:
             institution_root = self.workspace.resolve_target(scope.institution)
             candidates.extend(path for path in sorted(institution_root.glob("*.bib")) if path.is_file())
@@ -226,8 +242,25 @@ class ExtractorAdapter:
 
     def _infer_planeacion_path(self, target_path: Path, scope: EditorialScope | None, activity_number: int) -> Path | None:
         candidates: list[Path] = []
+        # PRIORIDAD 1: la planeacion OFICIAL de la actividad, ubicada en la carpeta de
+        # la materia (p. ej. 'planeaciones-*/Planificacion de actividades SN - ...pdf').
+        # Cuando el target es un .tex de reporte, NO usar el propio .tex como planeacion:
+        # subir al directorio de la materia y localizar por numero de actividad/semana.
+        base_dir = target_path.parent if target_path.is_file() else target_path
+        if activity_number > 0 and base_dir.is_dir():
+            act_pat = re.compile(rf"(actividad|semana|[\bsS])[-_\s]*0?{int(activity_number)}\b", re.IGNORECASE)
+            s_pat = re.compile(rf"\bs{int(activity_number)}\b", re.IGNORECASE)
+            for plan_dir in sorted(base_dir.glob("planeaciones*")):
+                if plan_dir.is_dir():
+                    for path in sorted(plan_dir.glob("*")):
+                        if path.is_file() and path.suffix.lower() in {".pdf", ".md", ".txt", ".docx"} and (
+                            act_pat.search(path.stem) or s_pat.search(path.stem)
+                        ):
+                            candidates.append(path)
+        # PRIORIDAD 2: comportamiento previo (target archivo/dir con patrones de actividad).
         if target_path.is_file() and target_path.suffix.lower() in {".md", ".txt", ".tex", ".pdf", ".docx"}:
-            candidates.append(target_path)
+            # El propio target solo como ULTIMO recurso (se agrega al final).
+            pass
         if target_path.is_dir():
             if activity_number > 0:
                 activity_pattern = re.compile(rf"actividad[-_\s]*0?{int(activity_number)}", re.IGNORECASE)
@@ -238,6 +271,9 @@ class ExtractorAdapter:
             scope_path = self.workspace.resolve_target(scope.relative_path)
             if scope_path != target_path and scope_path.is_dir():
                 candidates.extend(path for path in sorted(scope_path.glob("plan.md")) if path.is_file())
+        # ULTIMO recurso: el propio target si es un documento soportado.
+        if target_path.is_file() and target_path.suffix.lower() in {".md", ".txt", ".tex", ".pdf", ".docx"}:
+            candidates.append(target_path)
         for candidate in candidates:
             if candidate.exists() and candidate.suffix.lower() in {".md", ".txt", ".tex", ".pdf", ".docx"}:
                 return candidate

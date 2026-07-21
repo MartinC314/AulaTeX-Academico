@@ -327,10 +327,25 @@ class ActivityOptimizer:
 
         # Señal (b): cobertura de conceptos del extractor.
         if concepts:
-            low_body = body.lower()
-            key = [c for c in (str(x).strip().lower() for x in concepts) if len(c) >= 4]
+            # Normalizar acentos (LaTeX \'i y Unicode) para que la coincidencia no
+            # falle por la codificacion; y cobertura por TOKENS significativos para
+            # conceptos largos (basta con que el cuerpo cubra sus terminos clave).
+            norm_body = self._normalize_concept_text(body)
+            key = [str(x).strip() for x in concepts if len(str(x).strip()) >= 4]
             if key:
-                covered = sum(1 for c in key if c in low_body)
+                covered = 0
+                for concept in key:
+                    nc = self._normalize_concept_text(concept)
+                    if nc and nc in norm_body:
+                        covered += 1
+                        continue
+                    # Cobertura por tokens: conceptos largos se dan por cubiertos si
+                    # >=70% de sus tokens significativos (>=4 letras) estan en el cuerpo.
+                    toks = [t for t in re.findall(r"[a-z]{4,}", nc)
+                            if t not in {"para", "sobre", "entre", "segun", "entre",
+                                         "relacionadas", "sistemas", "federales"}]
+                    if toks and sum(1 for t in toks if t in norm_body) / len(toks) >= 0.7:
+                        covered += 1
                 ratio = covered / len(key)
                 b = 7.5 * ratio
             else:
@@ -339,6 +354,23 @@ class ActivityOptimizer:
             # Sin conceptos del extractor: la señal (a) puede cubrir hasta el tope.
             b = min(7.5, a)
         return min(15.0, a + b)
+
+    @staticmethod
+    def _normalize_concept_text(text: str) -> str:
+        """Normaliza acentos LaTeX (\\'i, \\'a, \\~n...) y Unicode a ASCII minusculas.
+
+        Permite comparar conceptos del extractor (con acentos Unicode) contra el
+        cuerpo del .tex (con acentos LaTeX o Unicode) sin falsos negativos.
+        """
+        import unicodedata
+        s = text.lower()
+        # Acentos LaTeX: \'a \'e \'i \'o \'u \~n \"u -> letra base.
+        s = re.sub(r"\\['`^\"~=.]\s*\{?\\?([a-z])\}?", r"\1", s)
+        s = re.sub(r"\\['`^\"~=.]([a-z])", r"\1", s)
+        # Unicode -> ASCII.
+        s = unicodedata.normalize("NFKD", s)
+        s = "".join(ch for ch in s if not unicodedata.combining(ch))
+        return s
 
     def _load_or_build_concepts(self, request: ActivityOptimizeRequest, tex_path: Path) -> list[str]:
         """Carga conceptos del extractor; si faltan y la base conceptual es escasa,

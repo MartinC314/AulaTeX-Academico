@@ -419,6 +419,56 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
             "La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión, nunca como \\section."
         ),
     },
+    "resena": {
+        "aliases": ("reseña", "resena", "reseña académica", "resena academica", "reseña crítica", "resena critica", "reseña literaria", "resena literaria"),
+        "required_visible_elements": ("ficha bibliográfica", "título", "introducción", "cuerpo", "conclusiones"),
+        "preservation_rule": (
+            "Si el producto es reseña, conservar los 5 ELEMENTOS OFICIALES (UnADM 100 técnicas) DENTRO de un recuadro (resenabox): "
+            "(1) ficha bibliográfica de la obra (macro \\fichabibliografica), (2) título propio distinto al de la obra, "
+            "(3) introducción que describe la temática y presenta la obra/autor, (4) cuerpo con el contenido de la obra + comentarios/críticas, "
+            "(5) conclusiones con una recomendación/valoración. No convertir la reseña en ensayo suelto sin recuadro."
+        ),
+        "visible_style_rule": (
+            "No explicar en el texto visible que 'esta actividad' usa la técnica reseña; esa trazabilidad va como comentario TEX. "
+            "El texto visible habla de la OBRA y del TEMA, no del proceso editorial. Prohibidos rótulos de proceso "
+            "(Exposición/Valoración crítica narrando el método); permitidos rótulos TEMÁTICOS que mapeen la rúbrica."
+        ),
+        "reporte_vs_producto_rule": (
+            "El REPORTE (contenedor) tiene su propia Introducción y Conclusión (reflexión del TEMA en 1a persona). El PRODUCTO (la reseña) "
+            "va ANIDADO dentro de un resenabox como subsección del desarrollo, homólogo al forobox del foro. La Introducción/Conclusión del "
+            "reporte NO se confunden con la introducción/conclusiones internas de la reseña."
+        ),
+        "marco_gravita_afuera_rule": (
+            "El MARCO CONCEPTUAL gravita AFUERA del resenabox: se materializa como subsecciones temáticas del reporte (una por eje conceptual "
+            "del extractor) con sus citas de sustento (\\citep de referencias externas). Esto mantiene la reseña CEÑIDA dentro del recuadro, "
+            "sin diluir su estructura con el aparato teórico."
+        ),
+        "structure_rule": (
+            "Cuerpo en TRES actos: (1) Introducción del reporte (contextualiza el TEMA), (2) una sección de Desarrollo con título temático "
+            "(p. ej. 'Marco jurídico y fundamento...') que contiene primero las subsecciones del marco conceptual (ejes del extractor con sus citas) "
+            "y luego la subsección 'Reseña de <objeto>' con el resenabox protagónico, (3) Conclusión del reporte. La reseña (resenabox) es el NÚCLEO."
+        ),
+        "cinco_elementos_oficiales_rule": (
+            "DENTRO del resenabox deben aparecer los 5 elementos: ficha bibliográfica (\\fichabibliografica), un título propio distinto al de la obra, "
+            "una introducción que inicia con el sujeto real (p. ej. 'La Constitución...') describiendo el tema y presentando la obra, un cuerpo con "
+            "rótulos TEMÁTICOS en negrita que mapean 1:1 los rubros de la rúbrica (con cita textual \\enquote de la obra y \\citep de sustento), y "
+            "conclusiones con recomendación/valoración explícita ('recomiendo la lectura...')."
+        ),
+        "citas_y_fuentes_rule": (
+            "Según la guía LEO, la reseña combina información externa + análisis propios: las referencias externas (\\citep) SON correctas y "
+            "recomendadas para sustentar; la obra reseñada aporta citas TEXTUALES (\\enquote con página). La reseña es autocontenida en su ESTRUCTURA "
+            "y JUICIO, pero se compone a partir de fuentes externas."
+        ),
+        "extension_dos_paginas_rule": (
+            "La reseña (dentro del resenabox) debe ocupar ~2 páginas contando la ficha (~7 filas). Si se pasa, RECORTAR párrafos ~30% "
+            "(NO reducir la ficha). Párrafos concisos por rótulo, redacción fluida y clara, sin subordinadas anidadas largas."
+        ),
+        "closure_rule": (
+            "Las conclusiones internas de la reseña cierran con una RECOMENDACIÓN/valoración. La Conclusión del reporte (fuera del recuadro) integra "
+            "síntesis, análisis propio y postura personal sobre el TEMA; inicia con \\clearpage y ocupa preferentemente una sola página; la declaración "
+            "de uso de IA se liga como \\footnote a una frase oportuna, nunca como \\section."
+        ),
+    },
 }
 
 ACTIVITY_1_CONTRACT = {

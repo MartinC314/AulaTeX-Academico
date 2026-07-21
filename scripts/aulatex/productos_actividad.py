@@ -203,6 +203,13 @@ def infer_technique(tex: str, title: str) -> tuple[str, str, str]:
     # El "Producto elaborado" declarado es tan fiable como el título.
     declared_n = _norm(_strip_template_noise(_extract_declared_product(tex)))
 
+    # Paso 0: entorno-producto propio de una técnica (señal MÁS fiable que el título,
+    # porque materializa el producto real). p. ej. resenabox -> reseña.
+    _ENV_TECH = {r"\\begin\{resenabox\}": "resena", r"\\begin\{forobox\}": "foro_diagnostico"}
+    for env_pat, env_tid in _ENV_TECH.items():
+        if re.search(env_pat, tex) and env_tid in TECHNIQUE_CONTRACTS:
+            return env_tid, "<recuadro>", "alta"
+
     # Paso 1: match por título O producto declarado (el más específico gana) -> alta.
     best_title: Optional[tuple[int, str, str]] = None
     for tech_id, contract in TECHNIQUE_CONTRACTS.items():
@@ -286,8 +293,19 @@ def detect_all_products(tex: str, title: str) -> list[dict[str, Any]]:
         origen = "<título>" if _norm(alias) in _norm(title) else "<producto elaborado>"
         _register(tid, alias, origen, "alta")
 
-    # (b) Cada \section: buscar la técnica más específica nombrada en su título.
-    for m in re.finditer(r"(?m)^\s*\\section\*?\{([^}]*)\}", tex):
+    # (a.bis) Entornos-producto propios de una técnica (señal de confianza ALTA):
+    # el recuadro materializa el producto real aunque no aparezca en un \section.
+    # p. ej. resenabox -> reseña, forobox -> foro. Más fiable que el alias en título.
+    _ENV_PRODUCT = {
+        r"\\begin\{resenabox\}": ("resena", "<recuadro resenabox>"),
+        r"\\begin\{forobox\}": ("foro_diagnostico", "<recuadro forobox>"),
+    }
+    for env_pat, (env_tid, env_origen) in _ENV_PRODUCT.items():
+        if re.search(env_pat, tex):
+            _register(env_tid, env_origen.strip("<>"), env_origen, "alta")
+
+    # (b) Cada \section o \subsection: buscar la técnica más específica en su título.
+    for m in re.finditer(r"(?m)^\s*\\(?:sub)?section\*?\{([^}]*)\}", tex):
         sec_title = m.group(1)
         sec_n = _norm(_strip_template_noise(sec_title))
         best: Optional[tuple[int, str, str]] = None
