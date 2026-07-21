@@ -1,0 +1,3825 @@
+{
+  "Interaprendizaje": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición formal y precisa del concepto de interaprendizaje",
+            "Fundamento teórico o epistemológico (constructivismo, aprendizaje colaborativo, Vygotsky, socioconstructivismo)",
+            "Autor o autores que acuñan o desarrollan el concepto",
+            "Crítica, límites o condiciones de aplicación del interaprendizaje"
+          ],
+          "consultas": [
+            "definición de interaprendizaje concepto y características aprendizaje colaborativo",
+            "fundamento teórico interaprendizaje Vygotsky zona de desarrollo próximo socioconstructivismo",
+            "origen y autor del concepto interaprendizaje pedagogía",
+            "diferencia entre interaprendizaje y aprendizaje colaborativo cooperativo",
+            "críticas y limitaciones del interaprendizaje en entornos educativos"
+          ],
+          "nota": "La ficha se apoya casi exclusivamente en un estudio empírico sobre la metodología PACIE (Cushpa Inchiglema) que aplica y evidencia mejoras en el interaprendizaje, pero no lo define ni lo fundamenta teóricamente. Solo hay cobertura de ejemplo/aplicación (estudio de caso ISTR y diplomados entre indígenas de Bertely). Las similitudes son bajas (<0.19), lo que sugiere que el corpus no contiene fuentes centradas en el concepto teórico. Es necesario recuperar la definición, el fundamento epistemológico, la autoría y las críticas para completar la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de interaprendizaje concepto y características aprendizaje colaborativo",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento teórico interaprendizaje Vygotsky zona de desarrollo próximo socioconstructivismo",
+            "hits": 6
+          },
+          {
+            "consulta": "origen y autor del concepto interaprendizaje pedagogía",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia entre interaprendizaje y aprendizaje colaborativo cooperativo",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y limitaciones del interaprendizaje en entornos educativos",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 33
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 33,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual explícita de interaprendizaje",
+            "Fundamento teórico (constructivismo, aprendizaje colaborativo, socioconstructivismo)",
+            "Autor o referente teórico que acuñe o desarrolle el concepto",
+            "Crítica, límites o condiciones para su efectividad"
+          ],
+          "consultas": [
+            "definición de interaprendizaje concepto aprendizaje entre pares",
+            "fundamento teórico interaprendizaje Vygotsky zona de desarrollo próximo aprendizaje colaborativo",
+            "interaprendizaje autor origen concepto pedagogía",
+            "diferencia entre interaprendizaje y aprendizaje colaborativo cooperativo",
+            "limitaciones y críticas del interaprendizaje en entornos educativos"
+          ],
+          "nota": "Las citas recuperadas provienen casi exclusivamente de un estudio aplicado sobre metodología PACIE, aportando solo ejemplos de aplicación y resultados empíricos (grupo experimental, mejora de medianas). No se recupera una definición formal, fundamento teórico ni autoría del concepto, y falta por completo la dimensión crítica. La similitud es baja (<0.19) en todas las citas, lo que sugiere baja cobertura conceptual. Se requiere ronda adicional orientada a fuentes teóricas del concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de interaprendizaje concepto aprendizaje entre pares",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento teórico interaprendizaje Vygotsky zona de desarrollo próximo aprendizaje colaborativo",
+            "hits": 6
+          },
+          {
+            "consulta": "interaprendizaje autor origen concepto pedagogía",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia entre interaprendizaje y aprendizaje colaborativo cooperativo",
+            "hits": 6
+          },
+          {
+            "consulta": "limitaciones y críticas del interaprendizaje en entornos educativos",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 40
+      },
+      {
+        "ronda": 3,
+        "hits_iniciales": 40,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita y conceptual de interaprendizaje",
+            "Fundamento teórico o pedagógico (constructivismo, aprendizaje colaborativo, socioconstructivismo)",
+            "Autor o referente teórico que acuñe o sustente el concepto",
+            "Crítica, límites o condiciones que restringen su aplicación"
+          ],
+          "consultas": [
+            "definición de interaprendizaje concepto pedagógico características",
+            "fundamento teórico interaprendizaje aprendizaje colaborativo Vygotsky zona de desarrollo próximo",
+            "autores que definen interaprendizaje origen del término educación",
+            "diferencia entre interaprendizaje y aprendizaje colaborativo cooperativo",
+            "críticas y limitaciones del interaprendizaje en entornos virtuales"
+          ],
+          "nota": "Las citas actuales provienen casi todas de un único estudio aplicado (metodología PACIE) que evidencia una aplicación concreta y resultados empíricos, pero no ofrecen una definición formal, fundamento teórico, autoría del concepto ni discusión crítica. La cita de Bertely aporta otro contexto de ejemplo (interaprendizaje entre indígenas) pero tampoco define el término. Se requiere ampliar la búsqueda hacia fuentes conceptuales y teóricas antes de dar por completa la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de interaprendizaje concepto pedagógico características",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento teórico interaprendizaje aprendizaje colaborativo Vygotsky zona de desarrollo próximo",
+            "hits": 6
+          },
+          {
+            "consulta": "autores que definen interaprendizaje origen del término educación",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia entre interaprendizaje y aprendizaje colaborativo cooperativo",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y limitaciones del interaprendizaje en entornos virtuales",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 51
+      },
+      {
+        "ronda": 4,
+        "hits_iniciales": 51,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual explícita de interaprendizaje",
+            "Fundamento teórico y pedagógico (constructivismo, socioconstructivismo, aprendizaje colaborativo)",
+            "Autor o autores de referencia que acuñen o desarrollen el concepto",
+            "Crítica, límites o condiciones de aplicación del interaprendizaje"
+          ],
+          "consultas": [
+            "definición de interaprendizaje concepto pedagógico características",
+            "fundamento teórico interaprendizaje socioconstructivismo Vygotsky aprendizaje colaborativo",
+            "autores del interaprendizaje origen del término educación",
+            "diferencia entre interaprendizaje aprendizaje colaborativo y cooperativo",
+            "limitaciones y críticas del interaprendizaje en entornos virtuales"
+          ],
+          "nota": "Las citas recuperadas provienen de una única fuente (tesis sobre metodología PACIE) y giran en torno a resultados empíricos de aplicación del interaprendizaje en la asignatura TIC. Solo cubren el eje de ejemplo/aplicación (efectividad medida por pretest/postest, entornos virtuales). Falta por completo una definición formal, el fundamento teórico, autores de referencia y cualquier crítica o límite. La similitud es baja (~0.17), lo que sugiere que el concepto no está bien tratado en el corpus actual; se recomienda ampliar la búsqueda hacia fuentes teóricas específicas del concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de interaprendizaje concepto pedagógico características",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento teórico interaprendizaje socioconstructivismo Vygotsky aprendizaje colaborativo",
+            "hits": 6
+          },
+          {
+            "consulta": "autores del interaprendizaje origen del término educación",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia entre interaprendizaje aprendizaje colaborativo y cooperativo",
+            "hits": 6
+          },
+          {
+            "consulta": "limitaciones y críticas del interaprendizaje en entornos virtuales",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 52
+      },
+      {
+        "ronda": 5,
+        "hits_iniciales": 52,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita del concepto de interaprendizaje",
+            "Fundamento teórico (constructivismo, aprendizaje colaborativo, sociocultural)",
+            "Autor o referente teórico que acuña o desarrolla el concepto",
+            "Crítica, límites o condiciones para su aplicación efectiva"
+          ],
+          "consultas": [
+            "definición de interaprendizaje concepto aprendizaje colaborativo entre pares",
+            "fundamento teórico interaprendizaje Vygotsky zona de desarrollo próximo constructivismo social",
+            "autor origen término interaprendizaje interlearning teoría educativa",
+            "interaprendizaje vs aprendizaje colaborativo diferencias características",
+            "críticas limitaciones interaprendizaje condiciones para su efectividad en entornos virtuales"
+          ],
+          "nota": "La ficha se apoya en una única fuente (tesis sobre metodología PACIE) que aporta un ejemplo aplicado sólido con resultados cuantitativos (mejora de mediana de 6.20 a 9.80), pero las similitudes son bajas (<0.19). Falta lo esencial: una definición conceptual del interaprendizaje, su fundamento teórico y el autor de referencia. Tampoco hay elementos críticos o de límite. Se recomienda diversificar fuentes más allá del documento PACIE para construir el núcleo conceptual del término."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de interaprendizaje concepto aprendizaje colaborativo entre pares",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento teórico interaprendizaje Vygotsky zona de desarrollo próximo constructivismo social",
+            "hits": 6
+          },
+          {
+            "consulta": "autor origen término interaprendizaje interlearning teoría educativa",
+            "hits": 6
+          },
+          {
+            "consulta": "interaprendizaje vs aprendizaje colaborativo diferencias características",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas limitaciones interaprendizaje condiciones para su efectividad en entornos virtuales",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 63
+      },
+      {
+        "ronda": 6,
+        "hits_iniciales": 63,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual explícita de interaprendizaje",
+            "Fundamento teórico (constructivismo social, aprendizaje colaborativo, mediación)",
+            "Autor o marco teórico de referencia que sustente el concepto",
+            "Crítica, límites o condiciones para su efectividad"
+          ],
+          "consultas": [
+            "definición de interaprendizaje concepto aprendizaje colaborativo entre pares",
+            "fundamento teórico interaprendizaje Vygotsky zona de desarrollo próximo mediación social",
+            "autores interaprendizaje Prieto Castillo comunicación educativa origen del término",
+            "interaprendizaje aprendizaje colaborativo vs cooperativo diferencias características",
+            "críticas y limitaciones del interaprendizaje condiciones para su efectividad en entornos virtuales"
+          ],
+          "nota": "Las citas provienen de una única fuente centrada en la metodología PACIE y su efecto sobre el interaprendizaje, aportando solo aplicación empírica (ejemplo). No hay definición conceptual clara, ni fundamento teórico, ni autor de referencia, ni discusión crítica. La similitud de todas las citas es baja (~0.16-0.18), lo que sugiere cobertura débil. Es necesario ampliar hacia fuentes que definan y fundamenten el concepto y su origen teórico."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de interaprendizaje concepto aprendizaje colaborativo entre pares",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento teórico interaprendizaje Vygotsky zona de desarrollo próximo mediación social",
+            "hits": 6
+          },
+          {
+            "consulta": "autores interaprendizaje Prieto Castillo comunicación educativa origen del término",
+            "hits": 6
+          },
+          {
+            "consulta": "interaprendizaje aprendizaje colaborativo vs cooperativo diferencias características",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y limitaciones del interaprendizaje condiciones para su efectividad en entornos virtuales",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 70
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 70
+  },
+  "Ambientes virtuales": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición formal y precisa de 'ambientes virtuales de aprendizaje' (EVA/EVEA)",
+            "Fundamento teórico-pedagógico explícito (constructivismo, conectivismo)",
+            "Autor de referencia con definición canónica del concepto",
+            "Crítica, límites o desventajas de los ambientes virtuales (brecha digital, deserción, limitaciones tecnológicas)"
+          ],
+          "consultas": [
+            "definición de ambientes virtuales de aprendizaje EVA características componentes",
+            "fundamento teórico constructivismo conectivismo entornos virtuales de aprendizaje",
+            "autor definición ambiente virtual de aprendizaje Coll Onrubia Salinas",
+            "limitaciones desventajas brecha digital deserción en ambientes virtuales de aprendizaje",
+            "componentes tecnológicos y pedagógicos de un entorno virtual de aprendizaje LMS"
+          ],
+          "nota": "Las citas provienen de una sola fuente (tesis sobre metodología PACIE) y giran en torno al uso instrumental de los EVEA, sin ofrecer una definición formal ni una crítica del concepto. Hay ejemplos de aplicación (PACIE, educación superior en pandemia) y menciones de autores contextuales (Madriz, 2016; Carbache et al., 2021), pero falta una definición canónica, un fundamento teórico explícito y un análisis de límites. Se recomienda diversificar fuentes en la ronda 2."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de ambientes virtuales de aprendizaje EVA características componentes",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento teórico constructivismo conectivismo entornos virtuales de aprendizaje",
+            "hits": 6
+          },
+          {
+            "consulta": "autor definición ambiente virtual de aprendizaje Coll Onrubia Salinas",
+            "hits": 6
+          },
+          {
+            "consulta": "limitaciones desventajas brecha digital deserción en ambientes virtuales de aprendizaje",
+            "hits": 6
+          },
+          {
+            "consulta": "componentes tecnológicos y pedagógicos de un entorno virtual de aprendizaje LMS",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 28
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 28,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita y formal de 'ambiente virtual de aprendizaje' (EVEA/AVA); las citas lo mencionan pero no lo definen conceptualmente",
+            "Elementos o componentes constitutivos de un ambiente virtual (aunque p.31 los insinúa, falta una enumeración clara)",
+            "Crítica, límites o desventajas de los ambientes virtuales (brecha digital, exclusión, limitaciones pedagógicas, aislamiento)",
+            "Distinción conceptual entre 'ambiente virtual', 'entorno virtual de aprendizaje' y 'aula virtual'"
+          ],
+          "consultas": [
+            "definición de ambiente virtual de aprendizaje AVA características",
+            "componentes y elementos de un entorno virtual de aprendizaje EVEA",
+            "limitaciones y desventajas de los ambientes virtuales de aprendizaje brecha digital",
+            "diferencia entre ambiente virtual entorno virtual y aula virtual",
+            "fundamento teórico constructivismo ambientes virtuales de aprendizaje autores"
+          ],
+          "nota": "La ficha tiene buena cobertura de fundamento (constructivismo, integración de TIC), autores (Silva y Romero, Díaz y Castro, Yuste et al.) y ejemplos de aplicación (metodología PACIE en EVEA). Sin embargo, todas las citas provienen de una única fuente centrada en PACIE, lo que sesga la conceptualización. Falta una definición formal y directa del concepto, así como cualquier abordaje crítico o de sus límites. Se recomienda una nueva ronda con fuentes diversas para asegurar rigor conceptual."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de ambiente virtual de aprendizaje AVA características",
+            "hits": 6
+          },
+          {
+            "consulta": "componentes y elementos de un entorno virtual de aprendizaje EVEA",
+            "hits": 6
+          },
+          {
+            "consulta": "limitaciones y desventajas de los ambientes virtuales de aprendizaje brecha digital",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia entre ambiente virtual entorno virtual y aula virtual",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento teórico constructivismo ambientes virtuales de aprendizaje autores",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 36
+      },
+      {
+        "ronda": 3,
+        "hits_iniciales": 36,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita y formal de 'ambientes virtuales de aprendizaje' (qué son, componentes esenciales)",
+            "Crítica, límites o desventajas de los ambientes virtuales (brecha digital, aislamiento, deserción, limitaciones pedagógicas)",
+            "Diferenciación conceptual entre ambiente virtual, entorno virtual (EVEA) y aula virtual"
+          ],
+          "consultas": [
+            "definición de ambientes virtuales de aprendizaje concepto y componentes",
+            "elementos que integran un entorno virtual de aprendizaje plataforma actividades recursos",
+            "desventajas y limitaciones de los ambientes virtuales de aprendizaje",
+            "críticas a la educación virtual brecha digital deserción interacción",
+            "diferencia entre ambiente virtual entorno virtual y aula virtual definición autores"
+          ],
+          "nota": "La ficha cuenta con fundamento pedagógico (constructivismo, modelos socio-pedagógicos), autores citados (Silva y Romero, Yuste, Blázquez) y ejemplos de aplicación (PACIE, aula virtual en TIC turismo con validación estadística). Sin embargo, todas las citas provienen de una sola fuente, lo que limita la diversidad. Falta una definición formal y directa del concepto 'ambientes virtuales' y carece por completo de perspectiva crítica o límites. Se recomienda una ronda adicional priorizando definición y crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de ambientes virtuales de aprendizaje concepto y componentes",
+            "hits": 6
+          },
+          {
+            "consulta": "elementos que integran un entorno virtual de aprendizaje plataforma actividades recursos",
+            "hits": 6
+          },
+          {
+            "consulta": "desventajas y limitaciones de los ambientes virtuales de aprendizaje",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas a la educación virtual brecha digital deserción interacción",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia entre ambiente virtual entorno virtual y aula virtual definición autores",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 42
+      },
+      {
+        "ronda": 4,
+        "hits_iniciales": 42,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición precisa y explícita de 'ambientes virtuales de aprendizaje' (qué son, elementos constitutivos)",
+            "Autor o referente teórico que acuñe o defina formalmente el concepto de ambientes virtuales",
+            "Crítica, límites o desventajas de los ambientes virtuales de aprendizaje (brecha digital, deserción, limitaciones pedagógicas)"
+          ],
+          "consultas": [
+            "definición de ambiente virtual de aprendizaje AVA características componentes",
+            "autor que define entornos virtuales de aprendizaje EVEA marco teórico",
+            "fundamento pedagógico constructivista ambientes virtuales de aprendizaje",
+            "limitaciones y desventajas de los ambientes virtuales de aprendizaje brecha digital deserción",
+            "críticas a la educación en entornos virtuales de aprendizaje efectividad interacción"
+          ],
+          "nota": "La ficha aporta buen contexto sobre aplicación (aula virtual en TIC aplicadas al turismo con validación de expertos) y fundamento pedagógico (modelos socio-constructivistas, integración gradual de TIC). Sin embargo, no ofrece una definición explícita y directa del concepto 'ambientes virtuales', las citas lo abordan tangencialmente a través de la metodología PACIE. No hay un autor que defina formalmente el término ni referencias que expongan críticas, límites o riesgos. Las similitudes son bajas (máx. 0.22), lo que sugiere que las fuentes están centradas en PACIE más que en el concepto nuclear. Se recomienda una nueva ronda de búsqueda con enfoque en definición, autoría y crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de ambiente virtual de aprendizaje AVA características componentes",
+            "hits": 6
+          },
+          {
+            "consulta": "autor que define entornos virtuales de aprendizaje EVEA marco teórico",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento pedagógico constructivista ambientes virtuales de aprendizaje",
+            "hits": 6
+          },
+          {
+            "consulta": "limitaciones y desventajas de los ambientes virtuales de aprendizaje brecha digital deserción",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas a la educación en entornos virtuales de aprendizaje efectividad interacción",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 42
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 42
+  },
+  "Colaboración a distancia": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita y precisa de 'colaboración a distancia' como concepto autónomo (las citas hablan de EVEA, educación a distancia e interaprendizaje, pero no definen el término)",
+            "Autor de referencia que teorice específicamente la colaboración a distancia (aprendizaje colaborativo mediado por tecnología)",
+            "Ejemplo o aplicación concreta de colaboración a distancia (herramientas, dinámicas, casos)",
+            "Crítica, límites o desventajas de la colaboración a distancia (distancia emocional, brecha digital, coordinación asincrónica)"
+          ],
+          "consultas": [
+            "definición de colaboración a distancia aprendizaje colaborativo mediado por computadora CSCL",
+            "trabajo colaborativo en entornos virtuales autores Dillenbourg Salmon teoría",
+            "ejemplos de actividades de colaboración a distancia en plataformas Moodle foros wikis",
+            "desventajas y límites del trabajo colaborativo virtual brecha digital coordinación asincrónica",
+            "colaboración a distancia interacción sincrónica y asincrónica fundamento pedagógico constructivismo"
+          ],
+          "nota": "La ficha es insuficiente en la ronda 1. Las citas provienen mayoritariamente de una sola fuente y giran en torno a EVEA y educación a distancia, no al concepto específico de 'colaboración a distancia'. Solo hay una base parcial de fundamento (carácter social, trabajo en equipo, interacción sin coincidencia de tiempo/espacio) y una mención tangencial de la distancia emocional/cognitiva que podría servir como crítica, pero sin desarrollo. Faltan definición operativa, autor de referencia, ejemplo aplicado y crítica sistematizada. Las similitudes son muy bajas (<0.14), lo que indica escasa pertinencia. Se recomienda una nueva ronda con las consultas propuestas y diversificar fuentes."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de colaboración a distancia aprendizaje colaborativo mediado por computadora CSCL",
+            "hits": 6
+          },
+          {
+            "consulta": "trabajo colaborativo en entornos virtuales autores Dillenbourg Salmon teoría",
+            "hits": 6
+          },
+          {
+            "consulta": "ejemplos de actividades de colaboración a distancia en plataformas Moodle foros wikis",
+            "hits": 6
+          },
+          {
+            "consulta": "desventajas y límites del trabajo colaborativo virtual brecha digital coordinación asincrónica",
+            "hits": 6
+          },
+          {
+            "consulta": "colaboración a distancia interacción sincrónica y asincrónica fundamento pedagógico constructivismo",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 30
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 30,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita y directa del concepto 'colaboración a distancia' (las citas hablan de aprendizaje colaborativo y educación a distancia de forma tangencial, sin definir el concepto compuesto)",
+            "Fundamento teórico específico de la colaboración a distancia (teorías del aprendizaje colaborativo mediado por tecnología, conectivismo, CSCL)",
+            "Autor de referencia que acuñe o desarrolle directamente el concepto de colaboración a distancia",
+            "Ejemplo o aplicación concreta y detallada de colaboración a distancia (las citas mencionan PACIE y EVEA pero no un caso operativo de colaboración a distancia)",
+            "Crítica, límite o desafío de la colaboración a distancia (distancia emocional/cognitiva se menciona pero no se desarrolla como límite)"
+          ],
+          "consultas": [
+            "definición de aprendizaje colaborativo a distancia CSCL computer supported collaborative learning",
+            "trabajo colaborativo en entornos virtuales de aprendizaje fundamento teórico conectivismo",
+            "desafíos y limitaciones de la colaboración a distancia distancia emocional cognitiva estudiantes",
+            "ejemplo aplicación de estrategias colaborativas en educación a distancia foros wikis trabajo en equipo virtual",
+            "autores teoría colaboración mediada por tecnología Vygotsky socioconstructivismo aprendizaje en línea"
+          ],
+          "nota": "La ficha está soportada por una única fuente (metodología PACIE), lo que limita la diversidad y profundidad. Las citas tocan de forma indirecta el aprendizaje colaborativo y la educación a distancia, pero no ofrecen una definición precisa del concepto 'colaboración a distancia' ni desarrollan su fundamento teórico, autoría específica ni sus límites/críticas. La cita de Morado y Ocampo (2018) sobre 'distancia emocional y cognitiva' es un punto de partida útil para desarrollar la crítica. Se recomienda ampliar con fuentes de CSCL y socioconstructivismo para robustecer la cobertura."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de aprendizaje colaborativo a distancia CSCL computer supported collaborative learning",
+            "hits": 6
+          },
+          {
+            "consulta": "trabajo colaborativo en entornos virtuales de aprendizaje fundamento teórico conectivismo",
+            "hits": 6
+          },
+          {
+            "consulta": "desafíos y limitaciones de la colaboración a distancia distancia emocional cognitiva estudiantes",
+            "hits": 6
+          },
+          {
+            "consulta": "ejemplo aplicación de estrategias colaborativas en educación a distancia foros wikis trabajo en equipo virtual",
+            "hits": 6
+          },
+          {
+            "consulta": "autores teoría colaboración mediada por tecnología Vygotsky socioconstructivismo aprendizaje en línea",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 42
+      },
+      {
+        "ronda": 3,
+        "hits_iniciales": 42,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'colaboración a distancia' como concepto (aprendizaje colaborativo mediado por tecnología a distancia)",
+            "Fundamento teórico (constructivismo social, teoría del aprendizaje colaborativo, conectivismo)",
+            "Autor de referencia que sustente el concepto de colaboración a distancia (p.ej. Vygotsky, Siemens, Harasim)",
+            "Ejemplo o aplicación concreta de trabajo colaborativo en entornos virtuales (foros, wikis, proyectos grupales en línea)",
+            "Crítica o límites (brecha digital, carga cognitiva, dificultades de coordinación, aislamiento)"
+          ],
+          "consultas": [
+            "definición aprendizaje colaborativo a distancia entornos virtuales",
+            "fundamento teórico colaboración en línea constructivismo social Vygotsky zona desarrollo próximo",
+            "estrategias trabajo colaborativo aula virtual foros wikis proyectos grupales ejemplo",
+            "conectivismo Siemens aprendizaje colaborativo mediado tecnología autor",
+            "limitaciones y desafíos colaboración a distancia brecha digital coordinación aislamiento"
+          ],
+          "nota": "Las citas recuperadas se centran casi exclusivamente en la metodología PACIE y entornos virtuales de aprendizaje en general, con baja similitud (todas por debajo de 0.23) respecto al concepto específico de 'colaboración a distancia'. No hay ninguna cita que defina el término, aporte su fundamento teórico, identifique un autor de referencia, ofrezca un ejemplo concreto de colaboración ni discuta sus límites. La ficha es insuficiente y requiere una nueva ronda de búsqueda orientada específicamente al aprendizaje colaborativo mediado por tecnología a distancia."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición aprendizaje colaborativo a distancia entornos virtuales",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento teórico colaboración en línea constructivismo social Vygotsky zona desarrollo próximo",
+            "hits": 6
+          },
+          {
+            "consulta": "estrategias trabajo colaborativo aula virtual foros wikis proyectos grupales ejemplo",
+            "hits": 6
+          },
+          {
+            "consulta": "conectivismo Siemens aprendizaje colaborativo mediado tecnología autor",
+            "hits": 6
+          },
+          {
+            "consulta": "limitaciones y desafíos colaboración a distancia brecha digital coordinación aislamiento",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 55
+      },
+      {
+        "ronda": 4,
+        "hits_iniciales": 55,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'colaboración a distancia' (aprendizaje colaborativo en entornos virtuales/remotos)",
+            "Fundamento teórico (constructivismo social, teoría del aprendizaje colaborativo, conectivismo)",
+            "Autor de referencia que acuñe o defina el concepto (p. ej. Vygotsky, Siemens, Salmon, Dillenbourg)",
+            "Crítica o límites de la colaboración a distancia (aislamiento, brecha digital, dificultad de coordinación, carga cognitiva)"
+          ],
+          "consultas": [
+            "definición de aprendizaje colaborativo a distancia en entornos virtuales",
+            "fundamento teórico colaboración a distancia constructivismo social Vygotsky",
+            "computer-supported collaborative learning Dillenbourg definición",
+            "limitaciones y desafíos del trabajo colaborativo a distancia brecha digital",
+            "ejemplo aplicación colaboración a distancia foros wikis trabajo en equipo virtual"
+          ],
+          "nota": "Las citas recuperadas se centran en la metodología PACIE y entornos virtuales de aprendizaje, tocando de forma tangencial la modalidad a distancia, pero no abordan directamente el concepto de 'colaboración a distancia'. Solo hay evidencia indirecta de aplicación/ejemplo (aulas virtuales, e-learning). Faltan definición precisa, fundamento teórico, autor de referencia y crítica/límites. Se recomienda una nueva ronda con consultas orientadas al aprendizaje colaborativo mediado por tecnología (CSCL) y sus bases teóricas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de aprendizaje colaborativo a distancia en entornos virtuales",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento teórico colaboración a distancia constructivismo social Vygotsky",
+            "hits": 6
+          },
+          {
+            "consulta": "computer-supported collaborative learning Dillenbourg definición",
+            "hits": 6
+          },
+          {
+            "consulta": "limitaciones y desafíos del trabajo colaborativo a distancia brecha digital",
+            "hits": 6
+          },
+          {
+            "consulta": "ejemplo aplicación colaboración a distancia foros wikis trabajo en equipo virtual",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 66
+      },
+      {
+        "ronda": 5,
+        "hits_iniciales": 66,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita y directa del concepto 'colaboración a distancia' (las citas hablan de educación a distancia y entornos virtuales, pero no definen la colaboración a distancia como tal)",
+            "Autor o marco teórico específico que sustente el concepto de colaboración a distancia (aprendizaje colaborativo, CSCL, etc.)",
+            "Crítica, límite o desventaja del trabajo/colaboración a distancia (brechas digitales, aislamiento, coordinación, etc.)",
+            "Fundamento teórico propio de la colaboración (no solo de la metodología PACIE ni de EVA en general)"
+          ],
+          "consultas": [
+            "definición de aprendizaje colaborativo a distancia CSCL entornos virtuales",
+            "trabajo colaborativo en línea fundamento teórico constructivismo social Vygotsky",
+            "autores teoría aprendizaje colaborativo mediado por computador tecnologías",
+            "limitaciones y desventajas de la colaboración a distancia brecha digital aislamiento",
+            "ejemplo aplicación colaboración a distancia herramientas sincrónicas asincrónicas educación"
+          ],
+          "nota": "La evidencia recuperada gira en torno a la metodología PACIE y a entornos virtuales de aprendizaje, pero no aborda directamente el concepto de 'colaboración a distancia'. Existe cobertura tangencial del fundamento (uso de TIC en educación a distancia) y del ejemplo (aplicaciones empresariales y educativas de PACIE), pero faltan la definición precisa del concepto, un autor de referencia sobre colaboración/aprendizaje colaborativo, y toda perspectiva crítica o de límites. La ficha no es suficiente; se requieren nuevas rondas orientadas específicamente a la dimensión colaborativa y no solo a la modalidad a distancia."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de aprendizaje colaborativo a distancia CSCL entornos virtuales",
+            "hits": 6
+          },
+          {
+            "consulta": "trabajo colaborativo en línea fundamento teórico constructivismo social Vygotsky",
+            "hits": 6
+          },
+          {
+            "consulta": "autores teoría aprendizaje colaborativo mediado por computador tecnologías",
+            "hits": 6
+          },
+          {
+            "consulta": "limitaciones y desventajas de la colaboración a distancia brecha digital aislamiento",
+            "hits": 6
+          },
+          {
+            "consulta": "ejemplo aplicación colaboración a distancia herramientas sincrónicas asincrónicas educación",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 73
+      },
+      {
+        "ronda": 6,
+        "hits_iniciales": 73,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'colaboración a distancia' (trabajo colaborativo mediado por TIC en entornos remotos)",
+            "Fundamento teórico (aprendizaje colaborativo, constructivismo social, CSCL)",
+            "Autor de referencia que sostenga el concepto de colaboración a distancia",
+            "Ejemplo o aplicación concreta de colaboración a distancia entre estudiantes/equipos",
+            "Crítica o límites (brecha digital, aislamiento, dificultad de coordinación asincrónica)"
+          ],
+          "consultas": [
+            "definición de aprendizaje colaborativo a distancia mediado por TIC",
+            "trabajo colaborativo sincrónico y asincrónico en entornos virtuales de aprendizaje",
+            "CSCL computer supported collaborative learning fundamento teórico constructivismo social",
+            "ejemplos de actividades colaborativas en aula virtual PACIE bloque de construcción",
+            "limitaciones y desafíos de la colaboración en educación a distancia brecha digital aislamiento"
+          ],
+          "nota": "Las citas recuperadas giran en torno a la metodología PACIE y los entornos virtuales de aprendizaje, pero ninguna define ni caracteriza directamente la 'colaboración a distancia'. La similitud es baja (máx. 0.227) y no se cubre ninguno de los cinco elementos exigidos. Se requiere reorientar la búsqueda hacia el aprendizaje colaborativo mediado por tecnología, su fundamento teórico (CSCL, Vygotsky/constructivismo social), autores de referencia, aplicaciones prácticas y sus limitaciones."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de aprendizaje colaborativo a distancia mediado por TIC",
+            "hits": 6
+          },
+          {
+            "consulta": "trabajo colaborativo sincrónico y asincrónico en entornos virtuales de aprendizaje",
+            "hits": 6
+          },
+          {
+            "consulta": "CSCL computer supported collaborative learning fundamento teórico constructivismo social",
+            "hits": 6
+          },
+          {
+            "consulta": "ejemplos de actividades colaborativas en aula virtual PACIE bloque de construcción",
+            "hits": 6
+          },
+          {
+            "consulta": "limitaciones y desafíos de la colaboración en educación a distancia brecha digital aislamiento",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 78
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 78
+  },
+  "colaboración": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "critica"
+          ],
+          "consultas": [
+            "definición de colaboración en el aprendizaje colaborativo y cooperativo",
+            "fundamento teórico de la colaboración Vygotsky zona de desarrollo próximo interacción social",
+            "autores que definen colaboración educativa concepto interaprendizaje",
+            "diferencia entre colaboración y cooperación en contextos pedagógicos",
+            "límites y críticas del trabajo colaborativo en educación intercultural"
+          ],
+          "nota": "Las citas recuperadas solo ilustran usos aplicados del término colaboración (ejemplos en contextos de interaprendizaje indígena y metodologías activas), con baja similitud (máx. 0.163). No hay una definición explícita, ni fundamento teórico, ni atribución de autor conceptual, ni crítica/límite. Se requieren nuevas búsquedas dirigidas a marcos teóricos (Vygotsky, aprendizaje colaborativo) y a las tensiones o críticas del concepto para completar la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de colaboración en el aprendizaje colaborativo y cooperativo",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento teórico de la colaboración Vygotsky zona de desarrollo próximo interacción social",
+            "hits": 6
+          },
+          {
+            "consulta": "autores que definen colaboración educativa concepto interaprendizaje",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia entre colaboración y cooperación en contextos pedagógicos",
+            "hits": 6
+          },
+          {
+            "consulta": "límites y críticas del trabajo colaborativo en educación intercultural",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 34
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 34,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "critica"
+          ],
+          "consultas": [
+            "definición de colaboración aprendizaje colaborativo concepto",
+            "fundamento teórico de la colaboración Vygotsky zona de desarrollo próximo",
+            "autores clave del aprendizaje colaborativo Johnson y Johnson cooperación",
+            "diferencia entre colaboración y cooperación en educación",
+            "críticas y límites del trabajo colaborativo desigualdad participación"
+          ],
+          "nota": "La evidencia recuperada tiene baja similitud (todas por debajo de 0.18) y solo aporta menciones incidentales de la colaboración en contextos de interaprendizaje. Se documenta un ejemplo de aplicación (colaboración de compañeros y actores no indígenas en el Método Inductivo Intercultural), pero falta una definición explícita, el fundamento teórico, autores de referencia (p. ej. Vygotsky, Johnson & Johnson) y una discusión crítica o de límites. La ficha requiere nuevas búsquedas más específicas para alcanzar cobertura conceptual suficiente."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de colaboración aprendizaje colaborativo concepto",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento teórico de la colaboración Vygotsky zona de desarrollo próximo",
+            "hits": 6
+          },
+          {
+            "consulta": "autores clave del aprendizaje colaborativo Johnson y Johnson cooperación",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia entre colaboración y cooperación en educación",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites del trabajo colaborativo desigualdad participación",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 46
+      },
+      {
+        "ronda": 3,
+        "hits_iniciales": 46,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion formal del concepto de colaboración",
+            "fundamento teórico de la colaboración (aprendizaje colaborativo, teoría sociocultural)",
+            "autor de referencia que defina o desarrolle el concepto",
+            "crítica o límites de los procesos colaborativos"
+          ],
+          "consultas": [
+            "definición de aprendizaje colaborativo Vygotsky zona de desarrollo próximo",
+            "colaboración concepto teórico cooperación diferencia trabajo colaborativo",
+            "fundamentos del aprendizaje colaborativo autores Johnson y Johnson interdependencia positiva",
+            "límites y críticas del trabajo colaborativo asimetrías de poder participación",
+            "colaboración intercultural comunitaria fundamento pedagógico ejemplos aplicados"
+          ],
+          "nota": "Las citas actuales solo ofrecen usos incidentales del término 'colaboración' en contextos de interaprendizaje y educación intercultural, aportando ejemplos de aplicación pero sin definición explícita, fundamento teórico, autor de referencia ni discusión crítica. La similitud es muy baja (máx. 0.17), lo que indica cobertura débil. Se requieren fuentes que definan y fundamenten el concepto de forma directa."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de aprendizaje colaborativo Vygotsky zona de desarrollo próximo",
+            "hits": 6
+          },
+          {
+            "consulta": "colaboración concepto teórico cooperación diferencia trabajo colaborativo",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamentos del aprendizaje colaborativo autores Johnson y Johnson interdependencia positiva",
+            "hits": 6
+          },
+          {
+            "consulta": "límites y críticas del trabajo colaborativo asimetrías de poder participación",
+            "hits": 6
+          },
+          {
+            "consulta": "colaboración intercultural comunitaria fundamento pedagógico ejemplos aplicados",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 57
+      },
+      {
+        "ronda": 4,
+        "hits_iniciales": 57,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita del concepto de colaboración",
+            "Fundamento teórico o marco conceptual de la colaboración",
+            "Autor o referente teórico que sustente el concepto",
+            "Crítica, límites o tensiones de la colaboración"
+          ],
+          "consultas": [
+            "definición de colaboración y trabajo colaborativo en educación",
+            "aprendizaje colaborativo fundamento teórico Vygotsky zona de desarrollo próximo",
+            "diferencia entre colaboración y cooperación autores teóricos",
+            "límites y críticas del trabajo colaborativo en contextos interculturales",
+            "colaboración interinstitucional comunitaria fundamento y aplicación"
+          ],
+          "nota": "Las citas recuperadas presentan baja similitud (todas por debajo de 0.18) y solo aportan menciones incidentales del término 'colaboración' en contextos de interaprendizaje y trabajo comunitario, sirviendo como ejemplo o aplicación. No hay una definición formal, ni fundamento teórico, ni autor de referencia, ni discusión crítica del concepto. Se recomienda una nueva ronda de búsqueda con consultas enfocadas en la conceptualización teórica y sus límites."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de colaboración y trabajo colaborativo en educación",
+            "hits": 6
+          },
+          {
+            "consulta": "aprendizaje colaborativo fundamento teórico Vygotsky zona de desarrollo próximo",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia entre colaboración y cooperación autores teóricos",
+            "hits": 6
+          },
+          {
+            "consulta": "límites y críticas del trabajo colaborativo en contextos interculturales",
+            "hits": 6
+          },
+          {
+            "consulta": "colaboración interinstitucional comunitaria fundamento y aplicación",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 66
+      },
+      {
+        "ronda": 5,
+        "hits_iniciales": 66,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "critica"
+          ],
+          "consultas": [
+            "definición de aprendizaje colaborativo teoría constructivista",
+            "colaboración fundamento teórico Vygotsky zona de desarrollo próximo",
+            "diferencia entre trabajo colaborativo y cooperativo autores",
+            "principios y condiciones del aprendizaje colaborativo interdependencia positiva",
+            "críticas y límites del aprendizaje colaborativo problemas grupales"
+          ],
+          "nota": "Las citas recuperadas mencionan la colaboración de forma tangencial y contextual (colaboración de compañeros, colaboración con actores no indígenas, aprendizaje colaborativo como recurso), pero no ofrecen una definición conceptual del término ni su fundamento teórico. Solo hay ejemplos de aplicación en contextos de interaprendizaje indígena. Falta identificar un autor de referencia que teorice la colaboración, su base conceptual (interdependencia, roles, mediación) y las críticas o límites del enfoque. La similitud de todas las citas es baja (<0.18), lo que sugiere que el corpus no aborda directamente el concepto. Se requieren nuevas rondas de búsqueda dirigidas a las dimensiones faltantes."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de aprendizaje colaborativo teoría constructivista",
+            "hits": 6
+          },
+          {
+            "consulta": "colaboración fundamento teórico Vygotsky zona de desarrollo próximo",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia entre trabajo colaborativo y cooperativo autores",
+            "hits": 6
+          },
+          {
+            "consulta": "principios y condiciones del aprendizaje colaborativo interdependencia positiva",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites del aprendizaje colaborativo problemas grupales",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 68
+      },
+      {
+        "ronda": 6,
+        "hits_iniciales": 68,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "critica"
+          ],
+          "consultas": [
+            "definición de colaboración en el aprendizaje colaborativo teoría",
+            "fundamento teórico de la colaboración Vygotsky zona de desarrollo próximo",
+            "autores que definen colaboración cooperación diferencia conceptual",
+            "límites y críticas del trabajo colaborativo en educación intercultural",
+            "colaboración interinstitucional comunitaria fundamentos epistemológicos"
+          ],
+          "nota": "Las citas actuales, con similitudes muy bajas (máx. 0.17), aluden a la colaboración sólo de forma incidental dentro de contextos de interaprendizaje y educación intercultural. Se observa material útil para ejemplos/aplicación (colaboración entre alumnos, maestros y actores no indígenas), pero no hay ninguna cita que ofrezca una definición explícita, fundamento teórico, autoría conceptual ni crítica del término. Se requiere una nueva ronda de búsqueda dirigida a fuentes que teoricen el concepto de colaboración de manera directa."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de colaboración en el aprendizaje colaborativo teoría",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento teórico de la colaboración Vygotsky zona de desarrollo próximo",
+            "hits": 6
+          },
+          {
+            "consulta": "autores que definen colaboración cooperación diferencia conceptual",
+            "hits": 6
+          },
+          {
+            "consulta": "límites y críticas del trabajo colaborativo en educación intercultural",
+            "hits": 6
+          },
+          {
+            "consulta": "colaboración interinstitucional comunitaria fundamentos epistemológicos",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 73
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 73
+  },
+  "Construcción conjunta del conocimiento": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita del concepto de construcción conjunta del conocimiento",
+            "Fundamento teórico (socioconstructivismo, aprendizaje colaborativo)",
+            "Autor de referencia (Vygotsky, zona de desarrollo próximo, andamiaje)",
+            "Crítica o límites del enfoque (asimetrías de poder, condiciones necesarias, riesgos)"
+          ],
+          "consultas": [
+            "definición construcción conjunta del conocimiento aprendizaje colaborativo",
+            "Vygotsky zona de desarrollo próximo andamiaje construcción social del conocimiento",
+            "socioconstructivismo interaccion social mediación en el aprendizaje",
+            "límites y críticas del aprendizaje colaborativo asimetría participación",
+            "condiciones y roles en la coconstrucción del conocimiento comunidad escuela"
+          ],
+          "nota": "Las citas actuales solo aportan ejemplos aplicados (validación participativa de materiales educativos indígenas), con similitudes muy bajas (<0.09) que indican baja pertinencia. Falta la base conceptual: definición precisa, fundamento teórico, autor(es) clave y discusión crítica. Se requiere una nueva ronda con consultas dirigidas al marco socioconstructivista y sus límites."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición construcción conjunta del conocimiento aprendizaje colaborativo",
+            "hits": 6
+          },
+          {
+            "consulta": "Vygotsky zona de desarrollo próximo andamiaje construcción social del conocimiento",
+            "hits": 6
+          },
+          {
+            "consulta": "socioconstructivismo interaccion social mediación en el aprendizaje",
+            "hits": 6
+          },
+          {
+            "consulta": "límites y críticas del aprendizaje colaborativo asimetría participación",
+            "hits": 6
+          },
+          {
+            "consulta": "condiciones y roles en la coconstrucción del conocimiento comunidad escuela",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 31
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 31,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita y precisa de 'construcción conjunta del conocimiento' (más allá de menciones tangenciales al aprendizaje colaborativo)",
+            "Fundamento teórico claro (socioconstructivismo, zona de desarrollo próximo, cognición distribuida)",
+            "Autor o referente teórico atribuido (Vygotsky, Bruner, Wells, Coll, etc.)",
+            "Crítica, límite o tensión del concepto (asimetrías de participación, riesgo de dilución de responsabilidad individual, condiciones para que la coconstrucción sea efectiva)"
+          ],
+          "consultas": [
+            "definición de construcción conjunta del conocimiento Vygotsky socioconstructivismo zona de desarrollo próximo",
+            "César Coll construcción conjunta del conocimiento en el aula interacción profesor alumno",
+            "Gordon Wells indagación dialógica coconstrucción del conocimiento discurso",
+            "límites y críticas del aprendizaje colaborativo asimetría participación responsabilidad individual",
+            "andamiaje mediación scaffolding fundamentos teóricos construcción social del conocimiento"
+          ],
+          "nota": "Las citas recuperadas rozan el concepto mediante nociones afines (aprendizaje colaborativo, interaprendizaje, andamiaje, educación horizontal intercultural) y aportan ejemplos aplicados (EVEA, articulación de saberes comunitarios). Sin embargo, la similitud es muy baja (máx. 0.15) y no hay una definición formal, fundamento teórico explícito, autoría reconocida ni crítica del concepto. La ficha requiere una segunda ronda dirigida a fuentes teóricas del socioconstructivismo."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de construcción conjunta del conocimiento Vygotsky socioconstructivismo zona de desarrollo próximo",
+            "hits": 6
+          },
+          {
+            "consulta": "César Coll construcción conjunta del conocimiento en el aula interacción profesor alumno",
+            "hits": 6
+          },
+          {
+            "consulta": "Gordon Wells indagación dialógica coconstrucción del conocimiento discurso",
+            "hits": 6
+          },
+          {
+            "consulta": "límites y críticas del aprendizaje colaborativo asimetría participación responsabilidad individual",
+            "hits": 6
+          },
+          {
+            "consulta": "andamiaje mediación scaffolding fundamentos teóricos construcción social del conocimiento",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 51
+      },
+      {
+        "ronda": 3,
+        "hits_iniciales": 51,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Fundamento teórico explícito (constructivismo social, socioconstructivismo)",
+            "Autor de referencia identificado (Vygotsky, Bruner, Coll, etc.)",
+            "Crítica, límite o tensión del enfoque de construcción conjunta del conocimiento"
+          ],
+          "consultas": [
+            "Vygotsky zona de desarrollo próximo construcción social del conocimiento andamiaje",
+            "César Coll construcción conjunta del conocimiento influencia educativa interactividad",
+            "constructivismo social Bruner mediación negociación de significados aula",
+            "críticas limitaciones aprendizaje colaborativo construcción conjunta del conocimiento",
+            "comunidades de práctica Wenger construcción compartida del conocimiento fundamento teórico"
+          ],
+          "nota": "Las citas ofrecen una definición operativa (construcción interactiva y colaborativa del conocimiento en EVEA) y ejemplos de aplicación (educación intercultural, articulación de saberes comunitarios, andamiaje). Sin embargo, la similitud es muy baja (máx. 0.15) y ninguna cita explicita el fundamento teórico canónico ni un autor de referencia (Vygotsky, Coll, Bruner). Falta por completo cualquier crítica o límite del enfoque. Se recomienda una ronda adicional con consultas orientadas al marco socioconstructivista y a sus tensiones."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Vygotsky zona de desarrollo próximo construcción social del conocimiento andamiaje",
+            "hits": 6
+          },
+          {
+            "consulta": "César Coll construcción conjunta del conocimiento influencia educativa interactividad",
+            "hits": 6
+          },
+          {
+            "consulta": "constructivismo social Bruner mediación negociación de significados aula",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas limitaciones aprendizaje colaborativo construcción conjunta del conocimiento",
+            "hits": 6
+          },
+          {
+            "consulta": "comunidades de práctica Wenger construcción compartida del conocimiento fundamento teórico",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 67
+      },
+      {
+        "ronda": 4,
+        "hits_iniciales": 67,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita y directa del concepto 'construcción conjunta del conocimiento' (las citas solo la abordan tangencialmente)",
+            "Fundamento teórico (constructivismo social, socioconstructivismo, zona de desarrollo próximo)",
+            "Autores de referencia (Vygotsky, Bruner, Coll, Onrubia, Wenger)",
+            "Crítica o límites del enfoque (asimetrías de participación, dificultades de evaluación, condiciones para que la co-construcción ocurra)"
+          ],
+          "consultas": [
+            "construcción conjunta del conocimiento Vygotsky zona de desarrollo próximo socioconstructivismo",
+            "César Coll Onrubia construcción guiada del conocimiento andamiaje aula",
+            "aprendizaje colaborativo negociación de significados definición teórica",
+            "críticas y límites del aprendizaje colaborativo participación desigual evaluación",
+            "comunidades de práctica Wenger construcción social del conocimiento"
+          ],
+          "nota": "La ficha aporta aproximaciones parciales: hay una cuasi-definición operativa (EVEA como entorno de construcción interactiva del conocimiento) y ejemplos aplicados (aula intercultural, aprendizaje colaborativo mediado por TIC). Sin embargo, las similitudes son muy bajas (todas por debajo de 0.16), lo que indica que la evidencia es marginal y no aborda el concepto de forma central. Faltan por completo el fundamento teórico explícito, la atribución a autores clave y la dimensión crítica. Se recomienda una nueva ronda de búsqueda orientada a fuentes de psicología educativa y teoría socioconstructivista."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "construcción conjunta del conocimiento Vygotsky zona de desarrollo próximo socioconstructivismo",
+            "hits": 6
+          },
+          {
+            "consulta": "César Coll Onrubia construcción guiada del conocimiento andamiaje aula",
+            "hits": 6
+          },
+          {
+            "consulta": "aprendizaje colaborativo negociación de significados definición teórica",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites del aprendizaje colaborativo participación desigual evaluación",
+            "hits": 6
+          },
+          {
+            "consulta": "comunidades de práctica Wenger construcción social del conocimiento",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 74
+      },
+      {
+        "ronda": 5,
+        "hits_iniciales": 74,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'construcción conjunta del conocimiento' (no solo menciones tangenciales a construcción de conocimiento colaborativo)",
+            "Fundamento teórico (constructivismo social, socioconstructivismo, zona de desarrollo próximo)",
+            "Autor de referencia (Vygotsky, Coll, Mercer, Scardamalia y Bereiter)",
+            "Crítica, límites o tensiones del enfoque (asimetrías de participación, riesgo de pseudocolaboración, evaluación individual vs. colectiva)"
+          ],
+          "consultas": [
+            "construcción conjunta del conocimiento definición socioconstructivismo Coll",
+            "Vygotsky zona de desarrollo próximo mediación social construcción del conocimiento",
+            "Scardamalia Bereiter knowledge building comunidad de aprendizaje",
+            "críticas límites aprendizaje colaborativo participación desigual pseudocolaboración",
+            "negociación de significados discurso educativo Mercer construcción compartida conocimiento"
+          ],
+          "nota": "La ficha es insuficiente. Las citas recuperadas tienen baja similitud (máx. 0.15) y solo abordan de manera tangencial la construcción de conocimiento en entornos digitales (EVEA, aprendizaje colaborativo) y ejemplos interculturales (Bertely). Falta la definición precisa del concepto, su fundamento teórico anclado en el socioconstructivismo, la atribución a autores clave (Vygotsky, Coll, Mercer, Scardamalia y Bereiter) y cualquier crítica o límite. Se cubre parcialmente el ejemplo/aplicación (aula intercultural y EVEA), pero el resto del andamiaje conceptual está ausente. Se recomienda ampliar la búsqueda hacia fuentes de teoría educativa y psicología del aprendizaje."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "construcción conjunta del conocimiento definición socioconstructivismo Coll",
+            "hits": 6
+          },
+          {
+            "consulta": "Vygotsky zona de desarrollo próximo mediación social construcción del conocimiento",
+            "hits": 6
+          },
+          {
+            "consulta": "Scardamalia Bereiter knowledge building comunidad de aprendizaje",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas límites aprendizaje colaborativo participación desigual pseudocolaboración",
+            "hits": 6
+          },
+          {
+            "consulta": "negociación de significados discurso educativo Mercer construcción compartida conocimiento",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 83
+      },
+      {
+        "ronda": 6,
+        "hits_iniciales": 83,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita y precisa de 'construcción conjunta del conocimiento' (las citas aluden a aprendizaje colaborativo o construcción de conocimiento, pero no delimitan el concepto)",
+            "Autor o marco teórico de referencia (constructivismo social, Vygotsky, socioconstructivismo, negociación de significados)",
+            "Crítica, límite o tensión del concepto (dificultades de la co-construcción, asimetrías de poder, condiciones para que ocurra)"
+          ],
+          "consultas": [
+            "definición de construcción conjunta del conocimiento socioconstructivismo Vygotsky zona de desarrollo próximo",
+            "negociación de significados co-construcción del conocimiento fundamento teórico",
+            "aprendizaje colaborativo construcción social del conocimiento autor referente",
+            "límites y críticas de la construcción colaborativa del conocimiento asimetrías participación",
+            "andamiaje mediación docente construcción conjunta de significados en el aula"
+          ],
+          "nota": "La ficha tiene baja cobertura y las similitudes son muy bajas (máx. 0.15), lo que indica evidencia tangencial. Solo se cubren parcialmente el fundamento (EVEA, aprendizaje colaborativo) y un ejemplo (aula intercultural de Bertely). Falta una definición nuclear del concepto, la atribución a un autor/marco teórico y todo tratamiento crítico. Se recomienda una nueva ronda con consultas orientadas al socioconstructivismo y la negociación de significados."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de construcción conjunta del conocimiento socioconstructivismo Vygotsky zona de desarrollo próximo",
+            "hits": 6
+          },
+          {
+            "consulta": "negociación de significados co-construcción del conocimiento fundamento teórico",
+            "hits": 6
+          },
+          {
+            "consulta": "aprendizaje colaborativo construcción social del conocimiento autor referente",
+            "hits": 6
+          },
+          {
+            "consulta": "límites y críticas de la construcción colaborativa del conocimiento asimetrías participación",
+            "hits": 6
+          },
+          {
+            "consulta": "andamiaje mediación docente construcción conjunta de significados en el aula",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 94
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 94
+  },
+  "construcción": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición explícita y autónoma del concepto de 'construcción' (el término aparece siempre subordinado a otros conceptos: 'construcción de la tercera cultura', 'construcción de identidad', 'construcción de un test')",
+            "El concepto 'construcción' no está tratado como categoría teórica propia; las citas lo usan de forma instrumental sin delimitarlo",
+            "Fundamento epistemológico del constructivismo/construccionismo como marco general (no solo aplicado a la tercera cultura)",
+            "Autor de referencia específico del concepto general de 'construcción' (p. ej. Berger y Luckmann, constructivismo social)"
+          ],
+          "consultas": [
+            "definición de construcción social de la realidad Berger Luckmann",
+            "construccionismo constructivismo como marco epistemológico fundamento teórico",
+            "construcción de la identidad proceso simbolización pública privada",
+            "críticas al enfoque construccionista límites relativismo",
+            "ejemplo aplicación proceso de construcción de significados comunicación intercultural"
+          ],
+          "nota": "La ficha presenta un problema de ambigüedad conceptual: 'construcción' aparece en las citas únicamente como componente de expresiones compuestas (construcción de la tercera cultura, de la identidad, de un test), no como concepto autónomo con definición propia. Aunque hay buena cobertura de fundamento, autor (Casmir), ejemplo y crítica en el contexto de la 'tercera cultura', falta una definición general y un anclaje teórico del concepto de construcción como tal (constructivismo/construccionismo). Las similitudes son bajas (~0.15), lo que confirma que ninguna cita aborda el concepto de forma central. Se recomienda una segunda ronda que delimite si el concepto buscado es 'construcción social/construccionismo' o 'construcción' en un sentido jurídico específico, para orientar mejor la recuperación."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de construcción social de la realidad Berger Luckmann",
+            "hits": 6
+          },
+          {
+            "consulta": "construccionismo constructivismo como marco epistemológico fundamento teórico",
+            "hits": 6
+          },
+          {
+            "consulta": "construcción de la identidad proceso simbolización pública privada",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas al enfoque construccionista límites relativismo",
+            "hits": 6
+          },
+          {
+            "consulta": "ejemplo aplicación proceso de construcción de significados comunicación intercultural",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 35
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 35,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición precisa del concepto de 'construcción' (como proceso social, epistemológico o de la realidad)",
+            "Fundamento teórico explícito del concepto (base epistemológica del constructivismo/construccionismo)",
+            "Crítica o límite del concepto de construcción social",
+            "Vinculación clara autor-concepto: las citas mencionan a Berger y Luckmann y a Casmir de forma tangencial, pero no desarrollan qué entienden por 'construcción'"
+          ],
+          "consultas": [
+            "definición de construcción social de la realidad Berger y Luckmann",
+            "constructivismo epistemológico fundamento teórico conocimiento",
+            "críticas al constructivismo social relativismo límites",
+            "proceso de construcción de identidad y actores sociales ejemplo",
+            "construcción de la tercera cultura Casmir aplicación intercultural"
+          ],
+          "nota": "La ficha es insuficiente. Las citas recuperadas mencionan la 'construcción' de forma dispersa y periférica (construcción social de la realidad, construcción de actores sociales, Teoría de la Construcción de la Tercera Cultura) con similitudes bajas (todas por debajo de 0.20), lo que indica escasa pertinencia. Falta una definición nuclear del concepto, su fundamento epistemológico y cualquier tratamiento crítico o de sus límites. Solo hay cobertura parcial de autor (Berger y Luckmann, Casmir) y de ejemplos/aplicación (construcción de terceras culturas). Se recomienda una nueva ronda de búsqueda orientada a fuentes que aborden directamente la noción de construcción social del conocimiento."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de construcción social de la realidad Berger y Luckmann",
+            "hits": 6
+          },
+          {
+            "consulta": "constructivismo epistemológico fundamento teórico conocimiento",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas al constructivismo social relativismo límites",
+            "hits": 6
+          },
+          {
+            "consulta": "proceso de construcción de identidad y actores sociales ejemplo",
+            "hits": 6
+          },
+          {
+            "consulta": "construcción de la tercera cultura Casmir aplicación intercultural",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 45
+      },
+      {
+        "ronda": 3,
+        "hits_iniciales": 45,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición explícita del concepto de 'construcción' (como categoría teórica, no solo mencionado dentro de 'construcción de la tercera cultura')",
+            "Fundamento epistemológico del constructivismo/construccionismo social como marco teórico",
+            "Autor central asociado al concepto general de construcción social (más allá de Casmir para la tercera cultura)"
+          ],
+          "consultas": [
+            "definición de construcción social de la realidad Berger y Luckmann",
+            "construccionismo social como fundamento epistemológico de la comunicación intercultural",
+            "construcción de la identidad cultural proceso simbólico interaccionismo",
+            "construcción del sentido y la negociación en la comunicación intercultural",
+            "críticas al enfoque constructivista de la cultura y la identidad"
+          ],
+          "nota": "Las citas recuperadas abordan mayoritariamente el concepto de 'construcción de la tercera cultura' de Casmir (con fundamento, autor, ejemplo y crítica de Rodrigo Alsina), pero no ofrecen una definición general y autónoma del concepto de 'construcción' como categoría teórica ni su fundamento constructivista/construccionista. La similitud de las citas es baja (máx. 0.24), lo que sugiere que el concepto aparece de modo tangencial. Se recomienda una ronda adicional orientada a fuentes que definan la construcción social y su base epistemológica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de construcción social de la realidad Berger y Luckmann",
+            "hits": 6
+          },
+          {
+            "consulta": "construccionismo social como fundamento epistemológico de la comunicación intercultural",
+            "hits": 6
+          },
+          {
+            "consulta": "construcción de la identidad cultural proceso simbólico interaccionismo",
+            "hits": 6
+          },
+          {
+            "consulta": "construcción del sentido y la negociación en la comunicación intercultural",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas al enfoque constructivista de la cultura y la identidad",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 60
+      },
+      {
+        "ronda": 4,
+        "hits_iniciales": 60,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición explícita y autónoma del concepto de 'construcción' (el término aparece solo dentro de expresiones compuestas como 'construcción de la tercera cultura' o 'construcción de actores sociales', sin una definición propia)",
+            "Fundamento teórico específico del concepto de construcción como categoría (por ejemplo, constructivismo social, construccionismo)",
+            "Autor claramente atribuido al concepto de 'construcción' en sí mismo (las citas atribuyen construcciones a Casmir, Caggiano, pero no definen el término como categoría teórica autónoma)"
+          ],
+          "consultas": [
+            "definición de construcción social de la realidad en comunicación intercultural",
+            "construccionismo social Berger Luckmann fundamento teórico",
+            "construcción de la identidad cultural proceso definición autor",
+            "construcción simbólica de significados interaccionismo simbólico",
+            "críticas al enfoque construccionista en estudios culturales"
+          ],
+          "nota": "La ficha presenta un problema de fondo: las citas recuperadas no abordan 'construcción' como concepto autónomo, sino como componente de expresiones compuestas (construcción de la tercera cultura, construcción de actores sociales). Hay buena cobertura de fundamento (relación con Interaccionismo Simbólico y Escuela Palo Alto), autor (Casmir, Caggiano), ejemplo/aplicación (proceso de interrelación entre actores culturalmente distintos) y crítica (cuestionamientos de Rodrigo Alsina). Sin embargo, falta una definición precisa del término y su anclaje teórico como categoría propia (constructivismo/construccionismo). En la ronda 4 conviene delimitar si el concepto buscado es la 'construcción' genérica o específicamente la 'construcción social/cultural', pues la ambigüedad debilita la ficha. Se recomienda una ronda adicional orientada a las consultas propuestas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de construcción social de la realidad en comunicación intercultural",
+            "hits": 6
+          },
+          {
+            "consulta": "construccionismo social Berger Luckmann fundamento teórico",
+            "hits": 6
+          },
+          {
+            "consulta": "construcción de la identidad cultural proceso definición autor",
+            "hits": 6
+          },
+          {
+            "consulta": "construcción simbólica de significados interaccionismo simbólico",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas al enfoque construccionista en estudios culturales",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 73
+      },
+      {
+        "ronda": 5,
+        "hits_iniciales": 73,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición explícita y general del concepto de 'construcción' (no solo asociado a 'tercera cultura')",
+            "Fundamento teórico-epistemológico del constructivismo/construccionismo social",
+            "Autoría clara del concepto genérico de 'construcción' (más allá de Casmir para la tercera cultura)",
+            "Ejemplo o aplicación directa del término 'construcción' en un proceso comunicativo concreto"
+          ],
+          "consultas": [
+            "definición de construcción social de la realidad en comunicación intercultural",
+            "constructivismo y construccionismo social fundamentos epistemológicos Berger Luckmann",
+            "construcción de la identidad cultural proceso comunicativo autores",
+            "ejemplo aplicación construcción de significados en interacción intercultural",
+            "críticas a la noción de construcción social en teoría de la comunicación"
+          ],
+          "nota": "Las citas recuperadas abordan el término 'construcción' de forma tangencial y siempre subordinado a la 'teoría de la construcción de la tercera cultura' de Casmir. Hay fundamento (vínculo con Interaccionismo Simbólico y Escuela de Palo Alto), autor (Casmir), ejemplo (semejanza humana en la facultad de comunicarse) y crítica (cuestionamientos de Rodrigo Alsina), pero falta una definición autónoma y clara del concepto 'construcción' como categoría teórica general. La similitud de las citas es baja (máx. 0.2355), lo que indica cobertura débil. Se recomienda una nueva ronda de búsqueda orientada al construccionismo social y a la construcción de significados/identidades."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de construcción social de la realidad en comunicación intercultural",
+            "hits": 6
+          },
+          {
+            "consulta": "constructivismo y construccionismo social fundamentos epistemológicos Berger Luckmann",
+            "hits": 6
+          },
+          {
+            "consulta": "construcción de la identidad cultural proceso comunicativo autores",
+            "hits": 6
+          },
+          {
+            "consulta": "ejemplo aplicación construcción de significados en interacción intercultural",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas a la noción de construcción social en teoría de la comunicación",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 84
+      },
+      {
+        "ronda": 6,
+        "hits_iniciales": 84,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición explícita y autónoma del concepto de 'construcción' (no solo asociado a 'tercera cultura')",
+            "Ejemplo o aplicación concreta del proceso de construcción (comunicativa, cultural o social)",
+            "Fundamento teórico general del constructivismo/construccionismo social como marco del concepto"
+          ],
+          "consultas": [
+            "definición de construcción social de la realidad Berger y Luckmann",
+            "concepto de construcción de la tercera cultura Casmir características y fases",
+            "ejemplo de construcción comunicativa de la cultura en interacción intercultural",
+            "construccionismo social y comunicación fundamentos teóricos",
+            "construcción de identidad cultural proceso y factores Kim"
+          ],
+          "nota": "Las citas giran en torno a la 'teoría de la construcción de la tercera cultura' de Casmir, aportando autor (Casmir), fundamento (semejanza humana, Interaccionismo Simbólico, Escuela de Palo Alto) y crítica sólida (Rodrigo Alsina cuestiona el lenguaje, la lengua, la negociación y el marco institucional). Sin embargo, no hay una definición clara y directa del concepto de 'construcción' como tal, ni un ejemplo o aplicación operativa. La cobertura es parcial y con similitudes bajas (máx. 0.235), por lo que se recomienda ampliar la búsqueda hacia el fundamento constructivista general y ejemplos concretos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de construcción social de la realidad Berger y Luckmann",
+            "hits": 6
+          },
+          {
+            "consulta": "concepto de construcción de la tercera cultura Casmir características y fases",
+            "hits": 6
+          },
+          {
+            "consulta": "ejemplo de construcción comunicativa de la cultura en interacción intercultural",
+            "hits": 6
+          },
+          {
+            "consulta": "construccionismo social y comunicación fundamentos teóricos",
+            "hits": 6
+          },
+          {
+            "consulta": "construcción de identidad cultural proceso y factores Kim",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 91
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 91
+  },
+  "Diversidad cultural y lingüística": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición explícita y formal del concepto de diversidad cultural y lingüística",
+            "Autor o marco teórico de referencia que sustente conceptualmente el término",
+            "Fundamento normativo/instrumental preciso (p. ej. Declaración UNESCO sobre Diversidad Cultural, Convenio 169 OIT)"
+          ],
+          "consultas": [
+            "definición de diversidad cultural y lingüística UNESCO",
+            "Declaración Universal sobre la Diversidad Cultural fundamento derechos humanos",
+            "autores teoría multiculturalismo diversidad cultural Kymlicka Taylor",
+            "derechos lingüísticos pueblos indígenas Convenio 169 OIT diversidad",
+            "crítica al concepto de diversidad cultural homogeneización interculturalidad"
+          ],
+          "nota": "La ficha aporta ejemplos de aplicación (Puebla, magisterio oaxaqueño, antropología médica) y esbozos de fundamento (reconocimiento constitucional y convencional como derecho humano) y de crítica (problematización de los conceptos de cultura e identidad frente a la homogeneidad). Sin embargo, ninguna cita ofrece una definición formal del concepto ni identifica un autor o marco teórico de referencia; las similitudes son bajas (máx. 0.21), lo que sugiere cobertura tangencial. Se recomienda una segunda ronda orientada a definición conceptual y anclaje teórico-normativo."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de diversidad cultural y lingüística UNESCO",
+            "hits": 6
+          },
+          {
+            "consulta": "Declaración Universal sobre la Diversidad Cultural fundamento derechos humanos",
+            "hits": 6
+          },
+          {
+            "consulta": "autores teoría multiculturalismo diversidad cultural Kymlicka Taylor",
+            "hits": 6
+          },
+          {
+            "consulta": "derechos lingüísticos pueblos indígenas Convenio 169 OIT diversidad",
+            "hits": 6
+          },
+          {
+            "consulta": "crítica al concepto de diversidad cultural homogeneización interculturalidad",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 28
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 28,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición explícita del concepto de diversidad cultural y lingüística",
+            "Autor o fuente doctrinal/teórica que conceptualice el término (antropología, sociolingüística, teoría multicultural)",
+            "Fundamento normativo internacional más preciso (UNESCO, Declaración Universal sobre la Diversidad Cultural)"
+          ],
+          "consultas": [
+            "definición de diversidad cultural y lingüística concepto UNESCO",
+            "Declaración Universal sobre la Diversidad Cultural fundamento internacional",
+            "multiculturalismo interculturalidad autor teoría Kymlicka Will",
+            "derechos lingüísticos pueblos indígenas fundamento constitucional artículo 2",
+            "críticas y límites al reconocimiento de la diversidad cultural relativismo cultural"
+          ],
+          "nota": "Las citas aportan buen fundamento jurídico (Convenio 169 OIT, Ley General de Derechos Lingüísticos) y ejemplos aplicados (Puebla, colisión con sistemas normativos indígenas, crítica sobre conflicto de derechos), pero carecen de una definición conceptual explícita y de un autor doctrinal que teorice el concepto. La cobertura sobre crítica es parcial (solo la tensión de derechos en el Protocolo). Se recomienda una tercera ronda enfocada en fuentes teóricas y normativa internacional específica sobre diversidad."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de diversidad cultural y lingüística concepto UNESCO",
+            "hits": 6
+          },
+          {
+            "consulta": "Declaración Universal sobre la Diversidad Cultural fundamento internacional",
+            "hits": 6
+          },
+          {
+            "consulta": "multiculturalismo interculturalidad autor teoría Kymlicka Will",
+            "hits": 6
+          },
+          {
+            "consulta": "derechos lingüísticos pueblos indígenas fundamento constitucional artículo 2",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites al reconocimiento de la diversidad cultural relativismo cultural",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 39
+      },
+      {
+        "ronda": 3,
+        "hits_iniciales": 39,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición conceptual explícita de diversidad cultural y lingüística",
+            "Autor o marco teórico que sustente el concepto (referencia académica identificable)",
+            "Fundamento normativo internacional (UNESCO, Declaración Universal sobre la Diversidad Cultural)"
+          ],
+          "consultas": [
+            "definición de diversidad cultural y lingüística UNESCO Declaración Universal 2001",
+            "concepto diversidad lingüística pluralismo jurídico multiculturalismo autores teóricos",
+            "diversidad cultural fundamento constitucional artículo 2 Constitución mexicana pueblos indígenas",
+            "críticas al multiculturalismo y relativismo cultural derechos humanos límites",
+            "diversidad lingüística política pública educación intercultural bilingüe ejemplo aplicación"
+          ],
+          "nota": "La ficha aporta ejemplos aplicados (contexto de Puebla, obligación de intérpretes) y una crítica relevante (colisión entre diversidad cultural y otros derechos humanos), pero carece de una definición conceptual precisa y de una atribución autoral o marco teórico claro. Las similitudes son bajas (<0.22), lo que indica cobertura tangencial. Se recomienda una ronda adicional enfocada en definición y fundamento teórico-normativo."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de diversidad cultural y lingüística UNESCO Declaración Universal 2001",
+            "hits": 6
+          },
+          {
+            "consulta": "concepto diversidad lingüística pluralismo jurídico multiculturalismo autores teóricos",
+            "hits": 6
+          },
+          {
+            "consulta": "diversidad cultural fundamento constitucional artículo 2 Constitución mexicana pueblos indígenas",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas al multiculturalismo y relativismo cultural derechos humanos límites",
+            "hits": 6
+          },
+          {
+            "consulta": "diversidad lingüística política pública educación intercultural bilingüe ejemplo aplicación",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 56
+      },
+      {
+        "ronda": 4,
+        "hits_iniciales": 56,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición explícita y precisa de 'diversidad cultural y lingüística' como concepto",
+            "Autor o marco teórico de referencia que sistematice el concepto (las citas solo mencionan autores de interculturalidad sin definirlo)",
+            "Fundamento normativo directo (instrumentos internacionales: UNESCO, Convenio 169 OIT, art. 2 constitucional mexicano)"
+          ],
+          "consultas": [
+            "definición de diversidad cultural y lingüística UNESCO Declaración Universal 2001",
+            "fundamento constitucional artículo 2 diversidad cultural pueblos indígenas México derecho a la lengua",
+            "Convenio 169 OIT diversidad lingüística derechos culturales pueblos indígenas",
+            "autores teoría diversidad cultural multiculturalismo Kymlicka Taylor reconocimiento",
+            "críticas límites al reconocimiento de la diversidad cultural relativismo cultural y derechos humanos"
+          ],
+          "nota": "La ficha tiene evidencia parcial: aporta ejemplos concretos (contexto sociolingüístico de Puebla, convergencia de lenguas indígenas) y elementos de fundamento y crítica (pluralismo jurídico, colisión entre diversidad cultural y derechos humanos en sistemas normativos indígenas). Sin embargo, ninguna cita ofrece una definición formal del concepto ni identifica un autor que lo teorice; las similitudes son bajas (<0.25), lo que sugiere cobertura tangencial. Se requiere una nueva ronda enfocada en definición autoritativa y fundamento normativo internacional."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de diversidad cultural y lingüística UNESCO Declaración Universal 2001",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento constitucional artículo 2 diversidad cultural pueblos indígenas México derecho a la lengua",
+            "hits": 6
+          },
+          {
+            "consulta": "Convenio 169 OIT diversidad lingüística derechos culturales pueblos indígenas",
+            "hits": 6
+          },
+          {
+            "consulta": "autores teoría diversidad cultural multiculturalismo Kymlicka Taylor reconocimiento",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas límites al reconocimiento de la diversidad cultural relativismo cultural y derechos humanos",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 61
+      },
+      {
+        "ronda": 5,
+        "hits_iniciales": 61,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición explícita y conceptual de 'diversidad cultural y lingüística'",
+            "Autor o marco teórico que sustente el concepto (referencia clara a un teórico)",
+            "Fundamento normativo directo (instrumentos internacionales como la UNESCO)"
+          ],
+          "consultas": [
+            "definición de diversidad cultural y lingüística UNESCO",
+            "Declaración Universal sobre la Diversidad Cultural 2001 fundamento",
+            "diversidad lingüística derechos pueblos indígenas Convenio 169 OIT",
+            "autores diversidad cultural multiculturalismo Kymlicka Taylor",
+            "críticas al reconocimiento de la diversidad cultural relativismo cultural"
+          ],
+          "nota": "Las citas recuperadas tienen baja similitud (todas por debajo de 0.25) y solo abordan tangencialmente el concepto a través de la interculturalidad, la educación bilingüe y el pluralismo jurídico. Falta una definición precisa del término, un autor o marco teórico que lo sustente directamente, y un fundamento normativo explícito (por ejemplo, instrumentos de la UNESCO o convenios internacionales). Aunque hay ejemplos contextuales (Puebla, sistemas normativos indígenas) y elementos de tensión/crítica (colisión de derechos), la ficha requiere reforzarse con fuentes conceptuales y normativas directas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de diversidad cultural y lingüística UNESCO",
+            "hits": 6
+          },
+          {
+            "consulta": "Declaración Universal sobre la Diversidad Cultural 2001 fundamento",
+            "hits": 6
+          },
+          {
+            "consulta": "diversidad lingüística derechos pueblos indígenas Convenio 169 OIT",
+            "hits": 6
+          },
+          {
+            "consulta": "autores diversidad cultural multiculturalismo Kymlicka Taylor",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas al reconocimiento de la diversidad cultural relativismo cultural",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 65
+      },
+      {
+        "ronda": 6,
+        "hits_iniciales": 65,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición clara y explícita del concepto de diversidad cultural y lingüística",
+            "Autor(es) de referencia que teorice(n) la diversidad cultural y lingüística",
+            "Crítica, límites o tensiones del concepto (por ejemplo, relación entre reconocimiento formal y desigualdad real)"
+          ],
+          "consultas": [
+            "definición de diversidad cultural y lingüística según UNESCO o instrumentos internacionales",
+            "fundamento jurídico del derecho a la diversidad lingüística en pueblos indígenas México",
+            "autores teoría de la diversidad cultural multiculturalismo Kymlicka Taylor",
+            "críticas al reconocimiento de la diversidad cultural desigualdad estructural",
+            "diversidad lingüística políticas educativas interculturales límites y desafíos"
+          ],
+          "nota": "La ficha aporta contexto sobre interculturalidad y menciona un ejemplo concreto (Puebla como espacio multicultural con diversidad cultural y lingüística), además de referencias normativas que sirven de fundamento (Convenio 169 OIT, Declaración Americana). Sin embargo, las similitudes son bajas (todas por debajo de 0.25) y no hay ninguna cita que ofrezca una definición explícita del concepto, un autor teórico identificable ni un análisis crítico o de límites. Se requieren consultas dirigidas a fuentes conceptuales y críticas para completar la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de diversidad cultural y lingüística según UNESCO o instrumentos internacionales",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento jurídico del derecho a la diversidad lingüística en pueblos indígenas México",
+            "hits": 6
+          },
+          {
+            "consulta": "autores teoría de la diversidad cultural multiculturalismo Kymlicka Taylor",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas al reconocimiento de la diversidad cultural desigualdad estructural",
+            "hits": 6
+          },
+          {
+            "consulta": "diversidad lingüística políticas educativas interculturales límites y desafíos",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 81
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 81
+  },
+  "Interculturalidad": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Atribución a autores específicos que desarrollaron el concepto (p. ej. Catherine Walsh, Fornet-Betancourt, Fidel Tubino)",
+            "Distinción entre tipos de interculturalidad (funcional vs. crítica)",
+            "Crítica o límites del concepto: riesgos de uso retórico, tensiones con el relativismo cultural, dificultades de implementación",
+            "Aplicación concreta en el ámbito jurídico (derechos indígenas, justicia intercultural, peritajes culturales)"
+          ],
+          "consultas": [
+            "Catherine Walsh interculturalidad crítica y funcional definición",
+            "Fornet-Betancourt filosofía intercultural fundamento teórico",
+            "críticas y límites del concepto de interculturalidad relativismo cultural",
+            "interculturalidad aplicación en justicia y derechos de pueblos indígenas",
+            "Fidel Tubino interculturalidad funcional versus interculturalidad crítica"
+          ],
+          "nota": "La ficha cubre bien la definición (relaciones simétricas entre culturas), el fundamento (equidad, igualdad, respeto frente a asimetrías de poder) y ofrece un ejemplo de aplicación como herramienta de refundación de estructuras de poder desde poblaciones indígenas y afrodescendientes. Sin embargo, todas las citas provienen esencialmente de dos fuentes y no atribuyen el concepto a autores identificados; falta también una posición crítica explícita sobre los límites o tensiones del término. Se recomienda una segunda ronda enfocada en autoría (Walsh, Tubino, Fornet-Betancourt) y en las críticas/tipologías del concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Catherine Walsh interculturalidad crítica y funcional definición",
+            "hits": 6
+          },
+          {
+            "consulta": "Fornet-Betancourt filosofía intercultural fundamento teórico",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites del concepto de interculturalidad relativismo cultural",
+            "hits": 6
+          },
+          {
+            "consulta": "interculturalidad aplicación en justicia y derechos de pueblos indígenas",
+            "hits": 6
+          },
+          {
+            "consulta": "Fidel Tubino interculturalidad funcional versus interculturalidad crítica",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 27
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 27,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Autor o teórico identificable que proponga y sustente el concepto (ej. Catherine Walsh, Fornet-Betancourt, Fidel Tubino)",
+            "Ejemplo concreto o aplicación práctica de la interculturalidad (educación intercultural, justicia con perspectiva intercultural)",
+            "Crítica o límite del concepto (interculturalidad funcional vs. crítica, riesgo de neutralización de asimetrías)"
+          ],
+          "consultas": [
+            "interculturalidad crítica Catherine Walsh definición y colonialidad",
+            "diferencia interculturalidad funcional y crítica Fidel Tubino límites",
+            "educación intercultural bilingüe ejemplo aplicación América Latina",
+            "justicia intercultural pueblos indígenas peritaje cultural caso práctico",
+            "crítica a la interculturalidad relaciones de poder asimetría multiculturalismo"
+          ],
+          "nota": "La ficha tiene buena cobertura de definición (p. 54, p. 93) y fundamento (relaciones simétricas, equidad, respeto), pero carece de un autor claramente atribuido: las citas mencionan 'autores estudiados' sin identificarlos. Faltan ejemplos aplicados concretos —las citas del Protocolo de la SCJN son marginales y solo aportan contexto normativo indígena sin desarrollar aplicación intercultural— y falta por completo el elemento crítico/límite (distinción funcional vs. crítica, riesgo de invisibilizar asimetrías de poder). Se recomienda una ronda adicional dirigida a autor, ejemplo y crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "interculturalidad crítica Catherine Walsh definición y colonialidad",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia interculturalidad funcional y crítica Fidel Tubino límites",
+            "hits": 6
+          },
+          {
+            "consulta": "educación intercultural bilingüe ejemplo aplicación América Latina",
+            "hits": 6
+          },
+          {
+            "consulta": "justicia intercultural pueblos indígenas peritaje cultural caso práctico",
+            "hits": 6
+          },
+          {
+            "consulta": "crítica a la interculturalidad relaciones de poder asimetría multiculturalismo",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 41
+      },
+      {
+        "ronda": 3,
+        "hits_iniciales": 41,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Autor identificable con una definición atribuida (las citas mencionan interculturalidad pero no vinculan un teórico específico con su propuesta conceptual)",
+            "Crítica o límites del concepto (por ejemplo, interculturalidad funcional vs. crítica, riesgo de folclorización o instrumentalización)",
+            "Distinción conceptual frente a multiculturalismo y pluralismo cultural"
+          ],
+          "consultas": [
+            "Catherine Walsh interculturalidad crítica definición y crítica al modelo funcional",
+            "diferencia entre multiculturalismo y interculturalidad autores debate teórico",
+            "críticas al concepto de interculturalidad folclorización relaciones de poder",
+            "interculturalidad como proyecto político decolonial autor fundamento",
+            "aplicación interculturalidad educación intercultural bilingüe caso México experiencia"
+          ],
+          "nota": "La ficha cubre bien definición (Pech Salvador p.54 aporta una definición sólida basada en relaciones simétricas), fundamento (equidad e igualdad frente al poder) y una noción aplicada del 'ser intercultural' (p.93). Sin embargo, ninguna cita atribuye claramente el concepto a un autor de referencia (falta Walsh, Tubino, Fornet-Betancourt) ni ofrece una crítica o límite explícito del concepto. La cita del Protocolo de la SCJN y la de Bertely son de baja relevancia (bibliográficas). Se recomienda una ronda adicional enfocada en autoría teórica y crítica para lograr suficiencia."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Catherine Walsh interculturalidad crítica definición y crítica al modelo funcional",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia entre multiculturalismo y interculturalidad autores debate teórico",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas al concepto de interculturalidad folclorización relaciones de poder",
+            "hits": 6
+          },
+          {
+            "consulta": "interculturalidad como proyecto político decolonial autor fundamento",
+            "hits": 6
+          },
+          {
+            "consulta": "aplicación interculturalidad educación intercultural bilingüe caso México experiencia",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 53
+      },
+      {
+        "ronda": 4,
+        "hits_iniciales": 53,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Atribución del concepto a un autor o corriente teórica específica (p. ej. Catherine Walsh, Fidel Tubino, Fornet-Betancourt)",
+            "Distinción entre interculturalidad funcional, relacional y crítica",
+            "Crítica o límites del concepto (riesgo de folclorización, asimetrías de poder no resueltas, interculturalidad como discurso hegemónico)",
+            "Fundamento normativo o jurídico claro (más allá de la referencia bibliográfica dispersa del Protocolo)"
+          ],
+          "consultas": [
+            "Catherine Walsh interculturalidad crítica definición decolonial",
+            "interculturalidad funcional versus interculturalidad crítica Fidel Tubino",
+            "crítica al concepto de interculturalidad folclorización asimetría de poder",
+            "interculturalidad fundamento jurídico pueblos indígenas Convenio 169 OIT",
+            "Fornet-Betancourt filosofía intercultural diálogo entre culturas"
+          ],
+          "nota": "La ficha cuenta con una definición sólida y su fundamento (relaciones simétricas, equidad, igualdad) en la cita de Pech Salvador (p. 54), además de referencias que apuntan a aplicaciones educativas (educación intercultural bilingüe, Bertely). Sin embargo, faltan dos elementos clave: la atribución autoral clara (las citas mencionan autores como Bertely en contexto bibliográfico pero no articulan una postura teórica atribuida) y una sección de crítica/límites del concepto. Las citas del Protocolo y de listados bibliográficos aportan poco valor conceptual (similitudes bajas). Se recomienda una ronda adicional enfocada en autores canónicos (Walsh, Tubino) y en la dimensión crítica del concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Catherine Walsh interculturalidad crítica definición decolonial",
+            "hits": 6
+          },
+          {
+            "consulta": "interculturalidad funcional versus interculturalidad crítica Fidel Tubino",
+            "hits": 6
+          },
+          {
+            "consulta": "crítica al concepto de interculturalidad folclorización asimetría de poder",
+            "hits": 6
+          },
+          {
+            "consulta": "interculturalidad fundamento jurídico pueblos indígenas Convenio 169 OIT",
+            "hits": 6
+          },
+          {
+            "consulta": "Fornet-Betancourt filosofía intercultural diálogo entre culturas",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 63
+      },
+      {
+        "ronda": 5,
+        "hits_iniciales": 63,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Autor de referencia con atribución teórica clara (la cita p.184 solo alude a 'autores estudiados' sin nombrarlos)",
+            "Crítica o límite del concepto (riesgo de interculturalidad funcional/neoliberal, brecha entre discurso y práctica, asimetrías persistentes de poder)",
+            "Distinción conceptual entre multiculturalidad, pluriculturalidad e interculturalidad",
+            "Fundamento jurídico-normativo explícito (marco de derechos de pueblos indígenas más allá de la mera referencia bibliográfica del Protocolo)"
+          ],
+          "consultas": [
+            "Catherine Walsh interculturalidad crítica y funcional definición",
+            "diferencia entre multiculturalismo pluriculturalidad e interculturalidad",
+            "crítica interculturalidad funcional neoliberal asimetría de poder relaciones simétricas",
+            "interculturalidad marco jurídico derechos pueblos indígenas convenio 169 OIT",
+            "interculturalidad definición autor Fornet-Betancourt Tubino diálogo intercultural"
+          ],
+          "nota": "La ficha cubre bien la definición y el fundamento (relaciones simétricas, respeto, equidad frente a asimetrías de poder, cita p.54) y ofrece aplicación en el ámbito de educación intercultural bilingüe (Bertely). Sin embargo, carece de una atribución autoral explícita —las citas mencionan 'autores estudiados' o referencias bibliográficas sin desarrollar su aporte— y no incluye ninguna crítica o límite del concepto, elemento clave dado que la interculturalidad es objeto de debate teórico (crítica vs. funcional). Se recomienda una ronda adicional orientada a autores canónicos (Walsh, Tubino, Fornet-Betancourt) y a la dimensión crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Catherine Walsh interculturalidad crítica y funcional definición",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia entre multiculturalismo pluriculturalidad e interculturalidad",
+            "hits": 6
+          },
+          {
+            "consulta": "crítica interculturalidad funcional neoliberal asimetría de poder relaciones simétricas",
+            "hits": 6
+          },
+          {
+            "consulta": "interculturalidad marco jurídico derechos pueblos indígenas convenio 169 OIT",
+            "hits": 6
+          },
+          {
+            "consulta": "interculturalidad definición autor Fornet-Betancourt Tubino diálogo intercultural",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 73
+      },
+      {
+        "ronda": 6,
+        "hits_iniciales": 73,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Atribución teórica clara a un autor específico (p. ej. Catherine Walsh, Fidel Tubino, Néstor García Canclini)",
+            "Distinción entre interculturalidad funcional y crítica",
+            "Crítica o límites del concepto (riesgo de folklorización, asimetrías de poder no resueltas)",
+            "Marco jurídico o de derechos que operacionalice la interculturalidad"
+          ],
+          "consultas": [
+            "Catherine Walsh interculturalidad crítica definición y funcional",
+            "Fidel Tubino interculturalidad funcional versus crítica límites",
+            "crítica al concepto de interculturalidad folklorización asimetría de poder",
+            "interculturalidad y derechos de pueblos indígenas marco jurídico México",
+            "Néstor García Canclini interculturalidad hibridación cultural"
+          ],
+          "nota": "La ficha cuenta con una definición operativa sólida (Pech Salvador, p. 54) que incluye el fundamento en relaciones simétricas y equidad, y hay ejemplos aplicados en el campo de la educación intercultural bilingüe (Bertely). Sin embargo, falta una atribución teórica precisa a autores de referencia del campo (Walsh, Tubino, García Canclini) y, sobre todo, no existe ninguna cita que aborde la dimensión crítica o los límites del concepto, ni la distinción clave entre interculturalidad funcional y crítica. Se recomienda una ronda adicional focalizada en autores fundacionales y en la vertiente crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Catherine Walsh interculturalidad crítica definición y funcional",
+            "hits": 6
+          },
+          {
+            "consulta": "Fidel Tubino interculturalidad funcional versus crítica límites",
+            "hits": 6
+          },
+          {
+            "consulta": "crítica al concepto de interculturalidad folklorización asimetría de poder",
+            "hits": 6
+          },
+          {
+            "consulta": "interculturalidad y derechos de pueblos indígenas marco jurídico México",
+            "hits": 6
+          },
+          {
+            "consulta": "Néstor García Canclini interculturalidad hibridación cultural",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 78
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 78
+  },
+  "Prácticas dialógicas y monológicas": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'prácticas dialógicas' y su contraste con las 'prácticas monológicas'",
+            "Fundamento teórico (p. ej. teoría dialógica de Bajtín, acción comunicativa de Habermas, pedagogía dialógica de Freire)",
+            "Autor de referencia que acuñe o desarrolle la distinción dialógico/monológico",
+            "Ejemplo o aplicación concreta de prácticas dialógicas en contextos interculturales, educativos o jurídicos",
+            "Crítica o límites del enfoque dialógico (asimetrías de poder, riesgo de diálogo instrumentalizado)"
+          ],
+          "consultas": [
+            "definición de prácticas dialógicas y monológicas en comunicación intercultural",
+            "Bajtín dialogismo monologismo teoría del enunciado",
+            "Freire diálogo pedagogía dialógica frente a educación bancaria",
+            "ejemplos de prácticas dialógicas en interaprendizaje entre indígenas y mestizos Bertely",
+            "críticas al diálogo intercultural asimetría de poder relaciones dominación sumisión"
+          ],
+          "nota": "Las citas recuperadas solo rozan tangencialmente el concepto: la única relevante alude a 'identidades dialógicas' (Romeu Aldaya) y a 'prácticas ambivalentes' de dominación/sumisión (Bertely), pero no definen ni oponen prácticas dialógicas frente a monológicas. Las restantes citas (perfiles raciales, Convenio 169, prácticas discriminatorias) son ruido temático con baja similitud (<0.09). No hay cobertura de ninguno de los cinco elementos requeridos. Se requiere una nueva ronda orientada a fuentes teóricas (Bajtín, Habermas, Freire) y a aplicaciones concretas del diálogo intercultural, así como a sus críticas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de prácticas dialógicas y monológicas en comunicación intercultural",
+            "hits": 6
+          },
+          {
+            "consulta": "Bajtín dialogismo monologismo teoría del enunciado",
+            "hits": 6
+          },
+          {
+            "consulta": "Freire diálogo pedagogía dialógica frente a educación bancaria",
+            "hits": 6
+          },
+          {
+            "consulta": "ejemplos de prácticas dialógicas en interaprendizaje entre indígenas y mestizos Bertely",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas al diálogo intercultural asimetría de poder relaciones dominación sumisión",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 37
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 37,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'prácticas dialógicas' y 'prácticas monológicas'",
+            "Fundamento teórico (dialogismo bajtiniano, teoría dialógica de la comunicación)",
+            "Autor de referencia (Bajtín, Freire, Buber, u otros)",
+            "Ejemplo o aplicación concreta que contraste lo dialógico frente a lo monológico",
+            "Crítica o límites del enfoque dialógico/monológico"
+          ],
+          "consultas": [
+            "definición práctica dialógica versus práctica monológica comunicación",
+            "Bajtín dialogismo monologismo teoría del discurso",
+            "Paulo Freire educación dialógica versus educación bancaria monológica",
+            "ejemplo aplicación diálogo intercultural práctica dialógica pedagogía",
+            "críticas límites enfoque dialógico asimetría de poder relaciones de dominación"
+          ],
+          "nota": "Las citas recuperadas tratan sobre comunicación intercultural (teoría de la ansiedad/incertidumbre, adaptación transcultural, interaprendizaje) pero ninguna aborda directamente el concepto de prácticas dialógicas y monológicas. Solo la cita de Bertely (p.10) roza lo dialógico al mencionar el 'diálogo entre indígenas', pero sin definir el par conceptual ni oponerlo a lo monológico. Las similitudes son bajas (<0.23), lo que confirma cobertura nula de los cinco elementos. Es necesaria una nueva búsqueda orientada al dialogismo (Bajtín) y a la pedagogía dialógica (Freire) para fundamentar la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición práctica dialógica versus práctica monológica comunicación",
+            "hits": 6
+          },
+          {
+            "consulta": "Bajtín dialogismo monologismo teoría del discurso",
+            "hits": 6
+          },
+          {
+            "consulta": "Paulo Freire educación dialógica versus educación bancaria monológica",
+            "hits": 6
+          },
+          {
+            "consulta": "ejemplo aplicación diálogo intercultural práctica dialógica pedagogía",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas límites enfoque dialógico asimetría de poder relaciones de dominación",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 60
+      },
+      {
+        "ronda": 3,
+        "hits_iniciales": 60,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de práctica dialógica y práctica monológica",
+            "Fundamento teórico del dialogismo (Bajtín) y del monologismo",
+            "Autor de referencia (Mijaíl Bajtín, Freire, Buber u otros)",
+            "Ejemplo o aplicación concreta de prácticas dialógicas frente a monológicas",
+            "Crítica o límites del enfoque dialógico/monológico"
+          ],
+          "consultas": [
+            "definición de práctica dialógica y monológica Bajtín dialogismo",
+            "Paulo Freire educación dialógica versus educación bancaria monológica",
+            "Martin Buber relación yo-tú diálogo alteridad fundamento filosófico",
+            "ejemplo aplicación pedagogía dialógica aula comunidades de aprendizaje",
+            "críticas límites enfoque dialógico asimetrías de poder relaciones dominación"
+          ],
+          "nota": "Las citas recuperadas se centran en teorías de comunicación intercultural (Gudykunst, Kim) y educación intercultural, pero ninguna aborda directamente el par conceptual 'prácticas dialógicas y monológicas'. La cita de Bertely (p. 10) roza la noción de diálogo como recurso frente a relaciones de dominación, pero no define ni fundamenta el concepto. Falta cobertura en las cinco dimensiones. Se recomienda ampliar la búsqueda hacia las fuentes clásicas del dialogismo (Bajtín), la pedagogía crítica (Freire) y la filosofía del diálogo (Buber), así como localizar ejemplos aplicados y críticas al enfoque."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de práctica dialógica y monológica Bajtín dialogismo",
+            "hits": 6
+          },
+          {
+            "consulta": "Paulo Freire educación dialógica versus educación bancaria monológica",
+            "hits": 6
+          },
+          {
+            "consulta": "Martin Buber relación yo-tú diálogo alteridad fundamento filosófico",
+            "hits": 6
+          },
+          {
+            "consulta": "ejemplo aplicación pedagogía dialógica aula comunidades de aprendizaje",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas límites enfoque dialógico asimetrías de poder relaciones dominación",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 77
+      },
+      {
+        "ronda": 4,
+        "hits_iniciales": 77,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de práctica dialógica y práctica monológica",
+            "Fundamento teórico (dialogismo, teoría de la comunicación, filosofía del diálogo)",
+            "Autor de referencia (p. ej. Bajtín, Buber, Freire, Habermas)",
+            "Ejemplo o aplicación concreta que distinga lo dialógico de lo monológico",
+            "Crítica o límite del enfoque dialógico/monológico"
+          ],
+          "consultas": [
+            "definición de práctica dialógica y monológica en educación intercultural",
+            "Bajtín dialogismo voz monológica concepto",
+            "Paulo Freire diálogo educación bancaria antidialogicidad",
+            "ejemplo aplicación prácticas dialógicas aula interaprendizaje indígena",
+            "críticas límites del enfoque dialógico relaciones de poder asimetría"
+          ],
+          "nota": "Las citas recuperadas giran en torno a teorías de comunicación intercultural (Gudykunst, Kim) y a la idea de diálogo como recurso en el interaprendizaje (Bertely), pero ninguna define ni contrasta directamente 'práctica dialógica' frente a 'monológica'. No hay fundamento teórico específico (Bajtín, Buber, Freire), ni autor asociado al par conceptual, ni ejemplo que oponga ambos modos, ni crítica. La similitud es baja (máx. 0.22). La ficha no es suficiente; se requieren búsquedas orientadas al dialogismo y a la pedagogía crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de práctica dialógica y monológica en educación intercultural",
+            "hits": 6
+          },
+          {
+            "consulta": "Bajtín dialogismo voz monológica concepto",
+            "hits": 6
+          },
+          {
+            "consulta": "Paulo Freire diálogo educación bancaria antidialogicidad",
+            "hits": 6
+          },
+          {
+            "consulta": "ejemplo aplicación prácticas dialógicas aula interaprendizaje indígena",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas límites del enfoque dialógico relaciones de poder asimetría",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 96
+      },
+      {
+        "ronda": 5,
+        "hits_iniciales": 96,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'prácticas dialógicas' y 'prácticas monológicas'",
+            "Fundamento teórico del dialogismo (concepto de diálogo frente a monólogo)",
+            "Autor de referencia (p. ej. Bajtín, Freire, Buber, Habermas)",
+            "Ejemplo o aplicación concreta de prácticas dialógicas y monológicas en educación o comunicación intercultural",
+            "Crítica o límites de la distinción dialógico/monológico"
+          ],
+          "consultas": [
+            "definición de prácticas dialógicas y monológicas Bajtín dialogismo",
+            "Paulo Freire educación dialógica frente a educación bancaria monológica",
+            "diálogo intercultural como práctica dialógica ejemplo aplicación",
+            "críticas al modelo dialógico límites del diálogo relaciones de poder",
+            "Martin Buber Habermas concepto de diálogo comunicación monológica"
+          ],
+          "nota": "Ninguna de las citas recuperadas aborda directamente el concepto de prácticas dialógicas y monológicas. Las fuentes tratan teorías de comunicación intercultural (gestión de la incertidumbre, adaptación transcultural) y una referencia al 'diálogo entre indígenas' como recurso, pero sin definir ni contrastar lo dialógico frente a lo monológico ni citar autores clave del dialogismo. Las similitudes son bajas (máx. 0.22), lo que confirma la insuficiencia. Se requieren nuevas búsquedas orientadas a la teoría dialógica (Bajtín, Freire, Buber, Habermas) y a ejemplos/críticas concretas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de prácticas dialógicas y monológicas Bajtín dialogismo",
+            "hits": 6
+          },
+          {
+            "consulta": "Paulo Freire educación dialógica frente a educación bancaria monológica",
+            "hits": 6
+          },
+          {
+            "consulta": "diálogo intercultural como práctica dialógica ejemplo aplicación",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas al modelo dialógico límites del diálogo relaciones de poder",
+            "hits": 6
+          },
+          {
+            "consulta": "Martin Buber Habermas concepto de diálogo comunicación monológica",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 105
+      },
+      {
+        "ronda": 6,
+        "hits_iniciales": 105,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de prácticas dialógicas y monológicas",
+            "Fundamento teórico del concepto (dialogismo, teoría de la comunicación)",
+            "Autor de referencia (Mijaíl Bajtín, Paulo Freire, u otros)",
+            "Ejemplo o aplicación concreta que distinga lo dialógico de lo monológico",
+            "Crítica o límite del enfoque dialógico/monológico"
+          ],
+          "consultas": [
+            "definición de prácticas dialógicas y monológicas en educación intercultural",
+            "Bajtín dialogismo y discurso monológico concepto",
+            "Paulo Freire diálogo versus antidiálogo educación bancaria",
+            "ejemplo de comunicación dialógica frente a monológica en aula intercultural",
+            "críticas y límites del enfoque dialógico en la pedagogía"
+          ],
+          "nota": "Las citas recuperadas no abordan el concepto de prácticas dialógicas y monológicas. Se centran en teorías de comunicación intercultural (adaptación transcultural de Kim, gestión de la ansiedad/incertidumbre de Gudykunst) y en interaprendizajes indígenas, con similitudes muy bajas (todas por debajo de 0.23). Aunque la cita de Bertely menciona el 'diálogo' como recurso, no define ni contrasta lo dialógico con lo monológico. La ficha carece por completo de definición, fundamento, autor asociado, ejemplo diferenciador y crítica. Es necesario redirigir la búsqueda hacia fuentes específicas sobre dialogismo (Bajtín) y pedagogía dialógica (Freire)."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de prácticas dialógicas y monológicas en educación intercultural",
+            "hits": 6
+          },
+          {
+            "consulta": "Bajtín dialogismo y discurso monológico concepto",
+            "hits": 6
+          },
+          {
+            "consulta": "Paulo Freire diálogo versus antidiálogo educación bancaria",
+            "hits": 6
+          },
+          {
+            "consulta": "ejemplo de comunicación dialógica frente a monológica en aula intercultural",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites del enfoque dialógico en la pedagogía",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 117
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 117
+  },
+  "aportaciones": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual del término 'aportaciones' (no aparece como concepto autónomo; solo se usa coloquialmente como 'contribuciones' de autores o escuelas)",
+            "Fundamento teórico o normativo del concepto",
+            "Autor de referencia que teorice específicamente sobre 'aportaciones'",
+            "Ejemplo o aplicación concreta del concepto como unidad definida",
+            "Crítica o límites del concepto"
+          ],
+          "consultas": [
+            "definición jurídica de aportaciones sociales capital de una sociedad",
+            "aportaciones como contribuciones al patrimonio derecho societario",
+            "concepto de aportación en derecho civil y mercantil fundamento legal",
+            "tipos de aportaciones dinerarias y no dinerarias ejemplo",
+            "críticas y límites al régimen de aportaciones de capital doctrina"
+          ],
+          "nota": "Las citas recuperadas usan 'aportaciones' únicamente en sentido coloquial (contribuciones de autores, escuelas o participantes) y no abordan el concepto como categoría definida. La similitud es muy baja (máximo 0.19) y el corpus es de comunicación intercultural e interaprendizaje indígena, ajeno a un tratamiento conceptual jurídico o académico del término. Ninguno de los cinco elementos evaluados está cubierto. Se recomienda reorientar la búsqueda hacia el sentido técnico-jurídico o al dominio disciplinar preciso que se busca fichar, pues es probable que el corpus actual no contenga fuentes adecuadas para este concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición jurídica de aportaciones sociales capital de una sociedad",
+            "hits": 6
+          },
+          {
+            "consulta": "aportaciones como contribuciones al patrimonio derecho societario",
+            "hits": 6
+          },
+          {
+            "consulta": "concepto de aportación en derecho civil y mercantil fundamento legal",
+            "hits": 6
+          },
+          {
+            "consulta": "tipos de aportaciones dinerarias y no dinerarias ejemplo",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites al régimen de aportaciones de capital doctrina",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 32
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 32,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definición conceptual del término 'aportaciones' (ya sea en sentido jurídico-societario, académico o de contribución)",
+            "fundamento teórico o normativo que sustente el concepto",
+            "autor o corriente que defina o teorice el concepto",
+            "ejemplo o aplicación concreta del concepto",
+            "crítica o límites del concepto"
+          ],
+          "consultas": [
+            "definición de aportaciones sociales concepto jurídico o societario",
+            "aportaciones al capital social fundamento legal derecho mercantil",
+            "aportaciones teóricas de autores concepto y clasificación",
+            "ejemplo de aportaciones dinerarias y no dinerarias aplicación práctica",
+            "críticas y límites de las aportaciones en la doctrina"
+          ],
+          "nota": "Las citas recuperadas usan la palabra 'aportaciones' únicamente en su sentido coloquial de 'contribuciones' de autores o participantes, sin definir ni tematizar el concepto como objeto de estudio. Ninguna cita aborda definición, fundamento, autoría teórica, ejemplos ni críticas del concepto. Las similitudes son muy bajas (0.13-0.19), lo que confirma que el corpus actual (comunicación intercultural e interaprendizajes indígenas) no es pertinente para este concepto. Debe aclararse el campo semántico de 'aportaciones' (¿jurídico-societario? ¿académico?) y reorientar la búsqueda hacia fuentes especializadas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de aportaciones sociales concepto jurídico o societario",
+            "hits": 6
+          },
+          {
+            "consulta": "aportaciones al capital social fundamento legal derecho mercantil",
+            "hits": 6
+          },
+          {
+            "consulta": "aportaciones teóricas de autores concepto y clasificación",
+            "hits": 6
+          },
+          {
+            "consulta": "ejemplo de aportaciones dinerarias y no dinerarias aplicación práctica",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites de las aportaciones en la doctrina",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 43
+      },
+      {
+        "ronda": 3,
+        "hits_iniciales": 43,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual precisa de 'aportaciones' (el término aparece solo como uso genérico de 'contribuciones', no definido como concepto)",
+            "Fundamento teórico o jurídico que sustente el concepto",
+            "Autor de referencia que teorice específicamente sobre 'aportaciones'",
+            "Ejemplo o aplicación concreta del concepto delimitado",
+            "Crítica, límite o debate en torno al concepto"
+          ],
+          "consultas": [
+            "definición de aportaciones societarias capital social derecho mercantil",
+            "aportaciones contribución concepto marco teórico académico definición",
+            "aportaciones de los socios naturaleza jurídica dinerarias no dinerarias",
+            "aportaciones ejemplo aplicación práctica límites requisitos",
+            "crítica límites concepto aportaciones doctrina autor"
+          ],
+          "nota": "Las citas recuperadas no abordan 'aportaciones' como concepto autónomo; el término aparece únicamente en su acepción coloquial de 'contribuciones' (aportaciones de autores, de escuelas, de participantes). No hay ninguna que defina, fundamente, atribuya autoría, ejemplifique ni critique el concepto. La similitud es muy baja (máx. 0.19). Es necesario aclarar el dominio del concepto (¿jurídico-mercantil de aportaciones de capital? ¿académico de contribuciones?) y relanzar búsquedas más específicas. Ficha insuficiente en la ronda 3."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de aportaciones societarias capital social derecho mercantil",
+            "hits": 6
+          },
+          {
+            "consulta": "aportaciones contribución concepto marco teórico académico definición",
+            "hits": 6
+          },
+          {
+            "consulta": "aportaciones de los socios naturaleza jurídica dinerarias no dinerarias",
+            "hits": 6
+          },
+          {
+            "consulta": "aportaciones ejemplo aplicación práctica límites requisitos",
+            "hits": 6
+          },
+          {
+            "consulta": "crítica límites concepto aportaciones doctrina autor",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 56
+      },
+      {
+        "ronda": 4,
+        "hits_iniciales": 56,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "nota": "Las citas recuperadas usan la palabra 'aportaciones' únicamente en su sentido coloquial (contribuciones de autores o participantes), no como concepto jurídico o técnico definido. No hay ninguna definición conceptual, ningún fundamento teórico o normativo, ningún autor asociado al concepto, ni ejemplos de aplicación o críticas. La similitud es muy baja (máx. 0.19), lo que indica que el corpus actual no contiene material pertinente. Es necesario aclarar el campo semántico del concepto (¿aportaciones societarias/mercantiles? ¿aportaciones fiscales? ¿aportaciones al conocimiento/metodológicas?) y dirigir búsquedas específicas.",
+          "consultas": []
+        },
+        "consultas_ejecutadas": []
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 56
+  },
+  "participación": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual precisa de participación (política, ciudadana, social)",
+            "Fundamento teórico o normativo (derecho a la participación, marco constitucional/internacional)",
+            "Autor o corriente teórica que sustente el concepto",
+            "Crítica o límites de la participación (participación simbólica, tokenismo, obstáculos estructurales)"
+          ],
+          "consultas": [
+            "definición de participación ciudadana y política concepto teórico",
+            "fundamento jurídico del derecho a la participación instrumentos internacionales derechos humanos",
+            "teoría de la participación autores Sherry Arnstein escalera de participación",
+            "límites y críticas participación simbólica tokenismo exclusión social",
+            "participación efectiva pueblos indígenas consulta previa fundamento normativo"
+          ],
+          "nota": "La ficha solo cuenta con ejemplos dispersos de participación (política indígena, educativa, ciudadana intercultural) con baja similitud (<0.19). Falta una definición conceptual sólida, fundamento teórico o jurídico, autoría de referencia y análisis crítico. Las citas educativas (inter-aprendizaje, metodología PACIE) son ruido no pertinente al concepto jurídico-académico central. Se requiere una segunda ronda de búsqueda orientada a fuentes teóricas y normativas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de participación ciudadana y política concepto teórico",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento jurídico del derecho a la participación instrumentos internacionales derechos humanos",
+            "hits": 6
+          },
+          {
+            "consulta": "teoría de la participación autores Sherry Arnstein escalera de participación",
+            "hits": 6
+          },
+          {
+            "consulta": "límites y críticas participación simbólica tokenismo exclusión social",
+            "hits": 6
+          },
+          {
+            "consulta": "participación efectiva pueblos indígenas consulta previa fundamento normativo",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 31
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 31,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definición conceptual clara del término participación",
+            "fundamento teórico o jurídico de la participación (marco normativo, derechos)",
+            "autor o referente teórico que defina el concepto",
+            "crítica, límite o tensión del concepto (participación real vs. simbólica, límites de la participación ciudadana)"
+          ],
+          "consultas": [
+            "definición de participación ciudadana concepto y elementos",
+            "fundamento jurídico derecho a la participación política tratados internacionales",
+            "autores teoría de la participación democrática Pateman Fung",
+            "participación simbólica versus participación efectiva escalera de Arnstein crítica",
+            "participación social comunitaria definición y tipos según autor"
+          ],
+          "nota": "Las citas recuperadas tienen baja similitud (todas por debajo de 0.19) y provienen mayormente de contextos educativos (interaprendizaje, metodologías activas) que usan 'participación' de forma tangencial, no como concepto definido. Solo hay ejemplos aplicados (participación indígena, ciudadana intercultural), pero falta una definición precisa, el fundamento normativo/teórico, atribución a autores y una discusión crítica sobre sus límites. Se recomienda una nueva ronda de búsqueda enfocada en fuentes que traten la participación como concepto jurídico-político central."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de participación ciudadana concepto y elementos",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento jurídico derecho a la participación política tratados internacionales",
+            "hits": 6
+          },
+          {
+            "consulta": "autores teoría de la participación democrática Pateman Fung",
+            "hits": 6
+          },
+          {
+            "consulta": "participación simbólica versus participación efectiva escalera de Arnstein crítica",
+            "hits": 6
+          },
+          {
+            "consulta": "participación social comunitaria definición y tipos según autor",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 51
+      },
+      {
+        "ronda": 3,
+        "hits_iniciales": 51,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual explícita de participación (política, ciudadana, social)",
+            "Fundamento teórico o jurídico del derecho a la participación",
+            "Autor o referente teórico que sustente el concepto",
+            "Crítica, límites o tensiones del concepto de participación"
+          ],
+          "consultas": [
+            "definición de participación ciudadana y participación política concepto",
+            "fundamento jurídico derecho a la participación tratados internacionales derechos humanos",
+            "participación política pueblos indígenas consulta previa marco normativo",
+            "teoría de la democracia participativa autores Pateman Habermas participación",
+            "críticas y límites de la participación ciudadana simulación tokenismo Arnstein"
+          ],
+          "nota": "Las citas recuperadas tienen similitud muy baja (todas por debajo de 0.19) y son dispersas: mezclan participación política indígena, participación en contextos de inter-aprendizaje educativo y participación en clases virtuales. Solo hay ejemplos aplicados (consultas previas, movimientos sociales), pero falta una definición precisa, el fundamento teórico o jurídico, un autor de referencia y la dimensión crítica. Se recomienda una nueva ronda de búsqueda orientada a fuentes conceptuales y normativas para consolidar la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de participación ciudadana y participación política concepto",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento jurídico derecho a la participación tratados internacionales derechos humanos",
+            "hits": 6
+          },
+          {
+            "consulta": "participación política pueblos indígenas consulta previa marco normativo",
+            "hits": 6
+          },
+          {
+            "consulta": "teoría de la democracia participativa autores Pateman Habermas participación",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites de la participación ciudadana simulación tokenismo Arnstein",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 63
+      },
+      {
+        "ronda": 4,
+        "hits_iniciales": 63,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual explícita de participación (política, ciudadana o social)",
+            "Fundamento teórico o normativo que sustente el concepto",
+            "Autor o corriente teórica de referencia que lo defina",
+            "Crítica, límite o tensión del concepto (participación real vs. formal, participación simbólica)"
+          ],
+          "consultas": [
+            "definición de participación ciudadana concepto teórico democracia",
+            "fundamento normativo derecho a la participación política pueblos indígenas consulta previa",
+            "teoría de la participación autor Sherry Arnstein escalera de participación",
+            "crítica participación simbólica tokenismo límites participación ciudadana",
+            "participación social y política formas y niveles definición autor"
+          ],
+          "nota": "Las citas recuperadas tienen baja similitud (todas por debajo de 0.19) y son dispersas. Aportan solo ejemplos o menciones tangenciales (participación política indígena, participación en interaprendizaje escolar), pero ninguna ofrece una definición formal, fundamento teórico, autor de referencia ni crítica del concepto. La ficha es insuficiente; se requieren búsquedas más precisas orientadas a fuentes conceptuales y críticas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de participación ciudadana concepto teórico democracia",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento normativo derecho a la participación política pueblos indígenas consulta previa",
+            "hits": 6
+          },
+          {
+            "consulta": "teoría de la participación autor Sherry Arnstein escalera de participación",
+            "hits": 6
+          },
+          {
+            "consulta": "crítica participación simbólica tokenismo límites participación ciudadana",
+            "hits": 6
+          },
+          {
+            "consulta": "participación social y política formas y niveles definición autor",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 70
+      },
+      {
+        "ronda": 5,
+        "hits_iniciales": 70,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "critica"
+          ],
+          "consultas": [
+            "definición de participación ciudadana concepto teórico",
+            "participación política fundamento democrático teoría",
+            "autores clásicos participación democrática Pateman Sartori",
+            "tipos y niveles de participación escalera de Arnstein",
+            "críticas y límites de la participación ciudadana simbólica o tokenismo"
+          ],
+          "nota": "Las citas recuperadas son fragmentarias y dispersas: mezclan participación política indígena, participación en contextos pedagógicos (inter-aprendizaje, aula virtual) y participación ciudadana intercultural, sin ofrecer una definición conceptual sólida del término. Solo se cubre parcialmente el elemento de ejemplo/aplicación (consultas previas indígenas, movimientos sociales). Faltan por completo una definición formal, el fundamento teórico o normativo, autores de referencia y una discusión crítica sobre los límites de la participación. La baja similitud (todas por debajo de 0.19) sugiere que el corpus no contiene material centrado en el concepto; se recomienda ampliar las fuentes hacia teoría política y democrática."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de participación ciudadana concepto teórico",
+            "hits": 6
+          },
+          {
+            "consulta": "participación política fundamento democrático teoría",
+            "hits": 6
+          },
+          {
+            "consulta": "autores clásicos participación democrática Pateman Sartori",
+            "hits": 6
+          },
+          {
+            "consulta": "tipos y niveles de participación escalera de Arnstein",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites de la participación ciudadana simbólica o tokenismo",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 81
+      },
+      {
+        "ronda": 6,
+        "hits_iniciales": 81,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual precisa de participación (política, ciudadana, social)",
+            "Fundamento teórico o normativo que sustente el concepto",
+            "Autor o referente teórico que defina el término",
+            "Crítica, límite o tensión del concepto de participación"
+          ],
+          "consultas": [
+            "definición de participación ciudadana concepto y tipos",
+            "fundamento jurídico participación política derechos humanos constitución",
+            "teoría de la participación democrática autor Pateman Sartori",
+            "críticas y límites de la participación ciudadana pseudoparticipación tokenismo",
+            "participación como derecho fundamento en tratados internacionales consulta previa"
+          ],
+          "nota": "Las citas recuperadas son de baja similitud (todas por debajo de 0.19) y provienen mayoritariamente de contextos pedagógicos (interaprendizaje, metodologías activas) donde 'participación' aparece como término incidental, no como concepto desarrollado. Solo dos citas abordan participación en sentido político/ciudadano (consulta previa indígena y democracia intercultural), que sirven como ejemplo/aplicación pero no aportan definición, fundamento ni marco teórico. Falta identificación de autor y ausencia total de crítica o límite. Se recomienda una nueva ronda enfocada en fuentes de teoría política y jurídica para cubrir los elementos esenciales."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de participación ciudadana concepto y tipos",
+            "hits": 6
+          },
+          {
+            "consulta": "fundamento jurídico participación política derechos humanos constitución",
+            "hits": 6
+          },
+          {
+            "consulta": "teoría de la participación democrática autor Pateman Sartori",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites de la participación ciudadana pseudoparticipación tokenismo",
+            "hits": 6
+          },
+          {
+            "consulta": "participación como derecho fundamento en tratados internacionales consulta previa",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 88
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 88
+  },
+  "principios": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "critica"
+          ],
+          "consultas": [
+            "definición de principio jurídico y distinción con las reglas",
+            "función de los principios generales del derecho como fuente e integración normativa",
+            "teoría de los principios de Robert Alexy y ponderación como mandatos de optimización",
+            "distinción entre principios y reglas según Ronald Dworkin",
+            "críticas y límites a la aplicación de principios y riesgo de discrecionalidad judicial"
+          ],
+          "nota": "Las citas recuperadas tienen baja similitud (todas por debajo de 0.17) y mencionan 'principios' de forma tangencial en contextos específicos (metodologías activas, jurisdicción indígena, perspectiva intercultural), sin ofrecer una definición conceptual ni fundamento teórico del término. Solo se aprecia un uso aplicado en el ámbito de justicia intercultural que podría servir como ejemplo. Falta por completo la definición doctrinal, el fundamento teórico, la atribución autoral y cualquier discusión crítica sobre los límites del concepto. Se recomiendan consultas orientadas a fuentes de teoría general del derecho."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de principio jurídico y distinción con las reglas",
+            "hits": 6
+          },
+          {
+            "consulta": "función de los principios generales del derecho como fuente e integración normativa",
+            "hits": 6
+          },
+          {
+            "consulta": "teoría de los principios de Robert Alexy y ponderación como mandatos de optimización",
+            "hits": 6
+          },
+          {
+            "consulta": "distinción entre principios y reglas según Ronald Dworkin",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites a la aplicación de principios y riesgo de discrecionalidad judicial",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 31
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 31,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición jurídica precisa de 'principios' (principios generales del derecho)",
+            "Fundamento doctrinal o normativo sobre la función de los principios",
+            "Distinción entre principios y reglas o valores",
+            "Crítica o límites al uso de principios en la argumentación jurídica"
+          ],
+          "consultas": [
+            "definición de principios generales del derecho concepto doctrinal",
+            "función de los principios jurídicos como fuente del derecho fundamento",
+            "distinción entre principios y reglas Dworkin Alexy",
+            "principios como mandatos de optimización ponderación argumentación jurídica",
+            "críticas y límites a la aplicación de principios generales del derecho"
+          ],
+          "nota": "Las citas recuperadas mencionan 'principios' de forma tangencial y contextualizada (principios del derecho indígena, principios de la perspectiva intercultural, principios éticos y filosóficos), lo que aporta ejemplos y aplicaciones concretas y referencia autoral (Rueda Cruz, SCJN, Corte IDH). Sin embargo, ninguna cita ofrece una definición conceptual del término 'principios' ni desarrolla su fundamento teórico o crítica. Las similitudes son muy bajas (~0.15), lo que indica escasa pertinencia. Se requieren consultas dirigidas a la teoría general del derecho para cubrir definición, fundamento y crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de principios generales del derecho concepto doctrinal",
+            "hits": 6
+          },
+          {
+            "consulta": "función de los principios jurídicos como fuente del derecho fundamento",
+            "hits": 6
+          },
+          {
+            "consulta": "distinción entre principios y reglas Dworkin Alexy",
+            "hits": 6
+          },
+          {
+            "consulta": "principios como mandatos de optimización ponderación argumentación jurídica",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites a la aplicación de principios generales del derecho",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 45
+      },
+      {
+        "ronda": 3,
+        "hits_iniciales": 45,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definición conceptual clara de 'principios' (jurídicos o generales)",
+            "fundamento teórico o normativo que sustente la noción de principios",
+            "crítica, límites o discusión doctrinal sobre la aplicación de los principios",
+            "distinción entre principios y reglas o valores"
+          ],
+          "consultas": [
+            "definición doctrinal de principios jurídicos y su distinción con las reglas",
+            "principios generales del derecho fundamento constitucional y función normativa",
+            "diferencia entre principios reglas y valores Dworkin Alexy",
+            "críticas y límites de la aplicación de principios en la argumentación jurídica",
+            "principios generales del derecho indígena definición y contenido"
+          ],
+          "nota": "La ficha es insuficiente. Las citas recuperadas tienen baja similitud (max 0.166) y mencionan 'principios' de forma tangencial o contextual (principios interculturales, indígenas, éticos), pero ninguna ofrece una definición conceptual precisa ni fundamento teórico del concepto. Se detecta presencia de autor (Rueda Cruz, SCJN) y ejemplos aplicados (principios de igualdad, libre determinación, acceso a la justicia), pero falta por completo definición, fundamento doctrinal y crítica. Se recomienda una nueva ronda de búsqueda orientada a fuentes de teoría del derecho (Dworkin, Alexy) para robustecer los ejes ausentes."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición doctrinal de principios jurídicos y su distinción con las reglas",
+            "hits": 6
+          },
+          {
+            "consulta": "principios generales del derecho fundamento constitucional y función normativa",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia entre principios reglas y valores Dworkin Alexy",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites de la aplicación de principios en la argumentación jurídica",
+            "hits": 6
+          },
+          {
+            "consulta": "principios generales del derecho indígena definición y contenido",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 52
+      },
+      {
+        "ronda": 4,
+        "hits_iniciales": 52,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición jurídica precisa de 'principios' (principios generales del derecho)",
+            "Fundamento teórico/dogmático que distinga principios de reglas",
+            "Autor de referencia (doctrina) que conceptualice los principios",
+            "Crítica o límites en la aplicación de los principios jurídicos"
+          ],
+          "consultas": [
+            "definición de principios generales del derecho concepto doctrina",
+            "distinción entre principios y reglas Dworkin Alexy teoría",
+            "función de los principios en la interpretación y aplicación del derecho",
+            "críticas y límites al uso de principios en la argumentación jurídica",
+            "principios generales del derecho indígena definición y alcance"
+          ],
+          "nota": "Las citas recuperadas tienen baja similitud (todas por debajo de 0.17) y solo mencionan 'principios' de forma tangencial o aplicada (principios interculturales, principios del derecho indígena, principios éticos), sin ofrecer una definición conceptual, un fundamento teórico ni una autoría doctrinal clara. Solo se cubre parcialmente el elemento 'ejemplo/aplicación' mediante el uso de principios en contextos interculturales e indígenas. Falta la base conceptual mínima (definición, fundamento, autor, crítica), por lo que la ficha es insuficiente. Se recomienda reorientar la búsqueda hacia fuentes de teoría del derecho que aborden los principios de manera dogmática (p. ej. la distinción principios/reglas)."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de principios generales del derecho concepto doctrina",
+            "hits": 6
+          },
+          {
+            "consulta": "distinción entre principios y reglas Dworkin Alexy teoría",
+            "hits": 6
+          },
+          {
+            "consulta": "función de los principios en la interpretación y aplicación del derecho",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites al uso de principios en la argumentación jurídica",
+            "hits": 6
+          },
+          {
+            "consulta": "principios generales del derecho indígena definición y alcance",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 58
+      },
+      {
+        "ronda": 5,
+        "hits_iniciales": 58,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición precisa de 'principios' (jurídicos o generales del derecho)",
+            "Fundamento teórico o normativo del concepto",
+            "Crítica, límites o distinción respecto de reglas y valores"
+          ],
+          "consultas": [
+            "definición de principios generales del derecho doctrina jurídica",
+            "diferencia entre principios y reglas Dworkin Alexy",
+            "función normativa de los principios en la interpretación constitucional",
+            "críticas y límites a la aplicación de principios jurídicos ponderación",
+            "principios generales del derecho fundamento y jerarquía normativa"
+          ],
+          "nota": "Las citas recuperadas mencionan 'principios' de forma tangencial (principios del derecho indígena, principios de la perspectiva intercultural, principios éticos), lo que aporta ejemplos y referencias de autores, pero ninguna ofrece una definición conceptual clara ni un fundamento teórico. Falta por completo la distinción doctrinal entre principios y reglas y cualquier crítica o límite. La similitud es baja (<0.17), señal de escasa pertinencia. Se requieren nuevas búsquedas orientadas a la teoría general del derecho para consolidar la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de principios generales del derecho doctrina jurídica",
+            "hits": 6
+          },
+          {
+            "consulta": "diferencia entre principios y reglas Dworkin Alexy",
+            "hits": 6
+          },
+          {
+            "consulta": "función normativa de los principios en la interpretación constitucional",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas y límites a la aplicación de principios jurídicos ponderación",
+            "hits": 6
+          },
+          {
+            "consulta": "principios generales del derecho fundamento y jerarquía normativa",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 66
+      },
+      {
+        "ronda": 6,
+        "hits_iniciales": 66,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion conceptual de 'principios' (jurídicos o generales)",
+            "fundamento teorico o normativo que explique su funcion",
+            "autor o doctrina de referencia sobre la teoria de los principios",
+            "critica o limites en la aplicacion de los principios"
+          ],
+          "consultas": [
+            "definicion de principios generales del derecho doctrina juridica",
+            "distincion entre principios y reglas Dworkin Alexy",
+            "funcion normativa de los principios en la interpretacion juridica",
+            "criticas a la ponderacion de principios y sus limites",
+            "principios generales del derecho indigena definicion y fundamento"
+          ],
+          "nota": "La ficha es insuficiente. Las citas recuperadas mencionan 'principios' de forma incidental (principios del derecho indigena, principios de la perspectiva intercultural, principios eticos), lo que aporta ejemplos de aplicacion, pero ninguna ofrece una definicion clara del concepto, su fundamento teorico, un autor de referencia (por ejemplo Dworkin o Alexy sobre la distincion principios/reglas) ni una critica de sus limites. La similitud de todas las citas es muy baja (~0.15), lo que indica escasa pertinencia. Se recomienda ejecutar nuevas busquedas orientadas a la teoria de los principios."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definicion de principios generales del derecho doctrina juridica",
+            "hits": 6
+          },
+          {
+            "consulta": "distincion entre principios y reglas Dworkin Alexy",
+            "hits": 6
+          },
+          {
+            "consulta": "funcion normativa de los principios en la interpretacion juridica",
+            "hits": 6
+          },
+          {
+            "consulta": "criticas a la ponderacion de principios y sus limites",
+            "hits": 6
+          },
+          {
+            "consulta": "principios generales del derecho indigena definicion y fundamento",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 73
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 73
+  },
+  "principios condiciones": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición clara y unívoca del concepto 'principios condiciones' (el concepto es ambiguo; las citas mezclan 'principios rectores' y 'condiciones' como nociones distintas)",
+            "Fundamento teórico o normativo específico que articule 'principios' y 'condiciones' como una categoría integrada",
+            "Autor o fuente doctrinal que defina y desarrolle el concepto",
+            "Crítica, límite o debate en torno al concepto"
+          ],
+          "consultas": [
+            "diferencia entre principios y reglas en teoría del derecho Alexy Dworkin",
+            "principios como mandatos de optimización condiciones fácticas y jurídicas",
+            "condiciones de aplicación de principios jurídicos ponderación",
+            "principios rectores del derecho indígena fundamento normativo Convenio 169 OIT",
+            "crítica a la distinción principios y reglas límites de la ponderación"
+          ],
+          "nota": "El concepto 'principios condiciones' es ambiguo y las citas recuperadas no lo abordan como categoría unitaria: aparecen menciones dispersas a 'principios rectores' y a 'condiciones de materialidad/empleo' en contextos distintos (derechos indígenas, comunicación intercultural, pedagogía). La similitud es muy baja (<0.09) en todos los casos, lo que indica escasa pertinencia. Solo se logra un ejemplo aplicado tangencial (principios rectores del Convenio 169). Falta definición, fundamento, autor y crítica. Se recomienda clarificar primero el sentido buscado del concepto (¿teoría de principios vs. reglas? ¿principios y condiciones de un régimen jurídico concreto?) y relanzar consultas más precisas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "diferencia entre principios y reglas en teoría del derecho Alexy Dworkin",
+            "hits": 6
+          },
+          {
+            "consulta": "principios como mandatos de optimización condiciones fácticas y jurídicas",
+            "hits": 6
+          },
+          {
+            "consulta": "condiciones de aplicación de principios jurídicos ponderación",
+            "hits": 6
+          },
+          {
+            "consulta": "principios rectores del derecho indígena fundamento normativo Convenio 169 OIT",
+            "hits": 6
+          },
+          {
+            "consulta": "crítica a la distinción principios y reglas límites de la ponderación",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 31
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 31,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'principios' como categoría normativa y de 'condiciones' de aplicación",
+            "Fundamento teórico o doctrinal que distinga principios de reglas",
+            "Autor o fuente doctrinal de referencia (p. ej. Alexy, Dworkin) que sustente el concepto",
+            "Ejemplo o aplicación concreta del concepto 'principios condiciones' en un caso judicial",
+            "Crítica o límites en el uso de principios y sus condiciones de ponderación"
+          ],
+          "consultas": [
+            "definición de principios jurídicos y condiciones de aplicación en la interpretación constitucional",
+            "distinción entre principios y reglas Alexy Dworkin ponderación",
+            "condiciones de procedencia y mandato de optimización de los principios",
+            "test de proporcionalidad principios condiciones límites ponderación",
+            "críticas al uso de principios en la argumentación jurídica riesgos discrecionalidad"
+          ],
+          "nota": "Las citas recuperadas se refieren a sistemas normativos indígenas, autonomía y autoadscripción bajo el Convenio 169 de la OIT y el artículo 2 constitucional, pero no abordan el concepto 'principios condiciones' en ninguno de sus elementos (definición, fundamento, autor, ejemplo, crítica). La evidencia es temáticamente ajena al concepto solicitado. Se recomienda reformular las consultas hacia teoría de los principios, ponderación y condiciones de aplicación normativa."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de principios jurídicos y condiciones de aplicación en la interpretación constitucional",
+            "hits": 6
+          },
+          {
+            "consulta": "distinción entre principios y reglas Alexy Dworkin ponderación",
+            "hits": 6
+          },
+          {
+            "consulta": "condiciones de procedencia y mandato de optimización de los principios",
+            "hits": 6
+          },
+          {
+            "consulta": "test de proporcionalidad principios condiciones límites ponderación",
+            "hits": 6
+          },
+          {
+            "consulta": "críticas al uso de principios en la argumentación jurídica riesgos discrecionalidad",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 51
+      },
+      {
+        "ronda": 3,
+        "hits_iniciales": 51,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición del concepto 'principios condiciones' (las citas no abordan el concepto solicitado; tratan sobre derechos indígenas y sistemas normativos)",
+            "Fundamento normativo o doctrinal del concepto",
+            "Autor o fuente doctrinal que desarrolle el término",
+            "Ejemplo o aplicación práctica del concepto",
+            "Crítica, límite o debate sobre el concepto"
+          ],
+          "consultas": [
+            "definición de principios como condiciones de validez jurídica",
+            "distinción entre principios y reglas condiciones de aplicación Alexy Dworkin",
+            "principios condiciones de aplicación en la ponderación de derechos",
+            "requisitos y condiciones para aplicar principios constitucionales",
+            "crítica a la aplicación de principios como mandatos de optimización condicionados"
+          ],
+          "nota": "Las citas recuperadas no corresponden al concepto 'principios condiciones': todas versan sobre derechos de pueblos indígenas, autoadscripción y sistemas normativos indígenas (art. 2º constitucional y Convenio 169 OIT). No hay cobertura de ningún elemento de la ficha. Es necesario reformular las búsquedas hacia teoría de los principios jurídicos y sus condiciones de aplicación/validez, ya que el concepto parece mal delimitado o desalineado con el corpus consultado. Se recomienda además clarificar el sentido exacto de 'principios condiciones' antes de continuar."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de principios como condiciones de validez jurídica",
+            "hits": 6
+          },
+          {
+            "consulta": "distinción entre principios y reglas condiciones de aplicación Alexy Dworkin",
+            "hits": 6
+          },
+          {
+            "consulta": "principios condiciones de aplicación en la ponderación de derechos",
+            "hits": 6
+          },
+          {
+            "consulta": "requisitos y condiciones para aplicar principios constitucionales",
+            "hits": 6
+          },
+          {
+            "consulta": "crítica a la aplicación de principios como mandatos de optimización condicionados",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 68
+      },
+      {
+        "ronda": 4,
+        "hits_iniciales": 68,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición precisa de 'principios' y 'condiciones' como categorías jurídicas o conceptuales; las citas tratan de derechos indígenas y sistemas normativos, no del concepto solicitado",
+            "Fundamento teórico o normativo del concepto 'principios condiciones'",
+            "Autor o fuente doctrinal que desarrolle el concepto",
+            "Ejemplo o aplicación concreta del concepto",
+            "Crítica o límites del concepto"
+          ],
+          "consultas": [
+            "diferencia entre principios y reglas en teoría del derecho",
+            "condiciones de validez y aplicación de principios jurídicos",
+            "principios generales del derecho definición y fundamento doctrinal",
+            "ponderación de principios y condiciones de aplicación Alexy Dworkin",
+            "límites y críticas a la aplicación de principios en la argumentación jurídica"
+          ],
+          "nota": "Las citas recuperadas son totalmente ajenas al concepto 'principios condiciones': todas versan sobre derechos de pueblos y comunidades indígenas, el Convenio 169 de la OIT y el artículo 2º constitucional. Las similitudes son muy bajas (0.13-0.15), lo que confirma la falta de pertinencia. Ninguno de los cinco elementos evaluativos está cubierto. Se recomienda reformular el concepto (parece ambiguo o mal delimitado) y reorientar las búsquedas hacia teoría de los principios jurídicos y sus condiciones de aplicación."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "diferencia entre principios y reglas en teoría del derecho",
+            "hits": 6
+          },
+          {
+            "consulta": "condiciones de validez y aplicación de principios jurídicos",
+            "hits": 6
+          },
+          {
+            "consulta": "principios generales del derecho definición y fundamento doctrinal",
+            "hits": 6
+          },
+          {
+            "consulta": "ponderación de principios y condiciones de aplicación Alexy Dworkin",
+            "hits": 6
+          },
+          {
+            "consulta": "límites y críticas a la aplicación de principios en la argumentación jurídica",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 77
+      },
+      {
+        "ronda": 5,
+        "hits_iniciales": 77,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición precisa del concepto 'principios' y 'condiciones' como categoría jurídica autónoma",
+            "Autor doctrinal que teorice sobre la distinción entre principios y condiciones",
+            "Crítica o límites al uso de principios como fuente y sus condiciones de aplicación",
+            "Vinculación clara del concepto con la teoría general del derecho (no solo derecho indígena)"
+          ],
+          "consultas": [
+            "definición de principios generales del derecho y sus condiciones de aplicación",
+            "distinción entre principios y reglas Dworkin Alexy condiciones de aplicabilidad",
+            "límites y críticas al uso de principios jurídicos como fuente del derecho",
+            "principios del derecho indígena Elisa Rueda Cruz condiciones de reconocimiento",
+            "condiciones de compatibilidad de sistemas normativos indígenas con derechos humanos"
+          ],
+          "nota": "Las citas recuperadas se centran casi exclusivamente en derecho indígena (autoadscripción, sistemas normativos, Convenio 169 OIT) y no abordan directamente el concepto abstracto de 'principios' y 'condiciones' como categoría jurídica. La similitud es muy baja (máx. 0.15), lo que indica escasa pertinencia. Falta una definición conceptual clara, un autor que fundamente teóricamente la distinción principios/condiciones, y análisis crítico. La única referencia de autor (Rueda Cruz) es tangencial. Se recomienda ampliar la búsqueda hacia teoría general del derecho y afinar el término conceptual, que resulta ambiguo tal como está planteado."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de principios generales del derecho y sus condiciones de aplicación",
+            "hits": 6
+          },
+          {
+            "consulta": "distinción entre principios y reglas Dworkin Alexy condiciones de aplicabilidad",
+            "hits": 6
+          },
+          {
+            "consulta": "límites y críticas al uso de principios jurídicos como fuente del derecho",
+            "hits": 6
+          },
+          {
+            "consulta": "principios del derecho indígena Elisa Rueda Cruz condiciones de reconocimiento",
+            "hits": 6
+          },
+          {
+            "consulta": "condiciones de compatibilidad de sistemas normativos indígenas con derechos humanos",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 89
+      },
+      {
+        "ronda": 6,
+        "hits_iniciales": 89,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición precisa de 'principios' y 'condiciones' como concepto autónomo; las citas hablan de sistemas normativos indígenas pero no definen el concepto solicitado",
+            "Autor o fuente doctrinal que teorice específicamente los 'principios' y 'condiciones' (no solo referencias procesales del Protocolo)",
+            "El concepto 'principios condiciones' está mal delimitado en las citas: la recuperación es tangencial (similitudes bajas, máx. 0.29), no hay una definición conceptual directa"
+          ],
+          "consultas": [
+            "definición de principios y condiciones para juzgar con perspectiva intercultural",
+            "principios rectores aplicación derecho indígena requisitos y condiciones",
+            "condiciones de validez de los sistemas normativos indígenas límites constitucionales",
+            "principios de igualdad no discriminación acceso a la justicia pueblos indígenas",
+            "crítica doctrinal límites al reconocimiento de sistemas normativos indígenas derechos humanos"
+          ],
+          "nota": "La ficha es insuficiente. El concepto 'principios condiciones' aparece pobremente delimitado y las citas recuperadas tienen baja similitud (0.18–0.29), abordando de forma tangencial los sistemas normativos indígenas sin ofrecer una definición conceptual directa ni autoría doctrinal del concepto. Se cubre parcialmente fundamento (validez internacional CIDH), ejemplo (administración de tierras, elección de autoridades) y crítica/límite (colisión entre derechos humanos y sistemas indígenas), pero faltan definición y autor. Todas las citas provienen de una sola fuente, lo que reduce la robustez. Se recomiendan nuevas búsquedas para precisar el concepto y diversificar fuentes."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de principios y condiciones para juzgar con perspectiva intercultural",
+            "hits": 6
+          },
+          {
+            "consulta": "principios rectores aplicación derecho indígena requisitos y condiciones",
+            "hits": 6
+          },
+          {
+            "consulta": "condiciones de validez de los sistemas normativos indígenas límites constitucionales",
+            "hits": 6
+          },
+          {
+            "consulta": "principios de igualdad no discriminación acceso a la justicia pueblos indígenas",
+            "hits": 6
+          },
+          {
+            "consulta": "crítica doctrinal límites al reconocimiento de sistemas normativos indígenas derechos humanos",
+            "hits": 6
+          }
+        ],
+        "hits_finales": 100
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 100
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "tema": "I. De la diversidad cultural y lingüística a los interaprendizajes. 1.2 La noción de interaprendizaje.",
+  "objetivo": "Analizar la noción de interaprendizaje, sus principios y distorsiones, mediante la participación en una wiki colaborativa y la resolución de un cuestionario basado en un caso de colaboración a distancia, para distinguir las prácticas que favorecen u obstaculizan la construcción conjunta del conocimiento.",
+  "tecnica_didactica": [
+    "#53 Socioaprendizaje",
+    "#66 Estudio de caso"
+  ],
+  "actividad": [
+    {
+      "nombre": "Lo que el interaprendizaje NO es y cómo evitarlo",
+      "tipo": "Wiki colaborativa (formativa)",
+      "fecha_entrega": "26 de julio, 23:55 hrs",
+      "valor": "No aplica",
+      "descripcion": "Construir de manera colectiva la comprensión acerca de lo que es el interaprendizaje, mediante la identificación de confusiones y prácticas que dificultan la construcción conjunta del conocimiento; aportar al menos una confusión/práctica que contradiga el interaprendizaje, explicación de por qué representa un problema y una alternativa para prevenirla o transformarla."
+    },
+    {
+      "nombre": "Interaprendizaje: comprender, construir y distinguir",
+      "tipo": "Cuestionario automatizado de opción múltiple (sumativa)",
+      "fecha_entrega": "26 de julio, 23:55 hrs",
+      "disponible": "Jueves 23 de julio de 2026, 9:00 h",
+      "valor": "10 puntos (10/100)",
+      "descripcion": "Resolución individual de un cuestionario automatizado de 10 reactivos, basado en el análisis de un caso de colaboración académica a distancia. Un intento, 30 minutos, calificación automática."
+    }
+  ],
+  "bibliografia": [
+    "Bertely Busquets, M. (Coord.). (2011). Interaprendizajes entre indígenas: De cómo las y los educadores pescan conocimientos y significados comunitarios en contextos interculturales. CIESAS-UPN.",
+    "Cushpa Inchiglema, R. C. (2022). Metodología PACIE en el interaprendizaje de la asignatura TICS del Instituto Superior Riobamba [Tesis de maestría, Pontificia Universidad Católica del Ecuador, Sede Ambato].",
+    "Silva Zambrano, R. I. (2015). Metodologías activas en el interaprendizaje de educación básica superior en los estudiantes de la Unidad Educativa \"José Rodríguez Labandera\", área de estudios sociales, cantón Quevedo, provincia Los Ríos [Tesis de licenciatura, Universidad Técnica de Babahoyo]. http://dspace.utb.edu.ec/handle/49000/2808",
+    "Díaz, R., & Alonso, G. (2011). Construcción de espacios interculturales (2.ª ed.). Miño y Dávila.",
+    "López, A. (2022). Foro. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Aplicar. Universidad Abierta y a Distancia de México.",
+    "Constitución Política de los Estados Unidos Mexicanos. (1917). Diario Oficial de la Federación.",
+    "Ley General de Derechos Lingüísticos de los Pueblos Indígenas. (2003). Diario Oficial de la Federación.",
+    "Naciones Unidas. (2001). Conferencia Mundial contra el Racismo, la Discriminación Racial, la Xenofobia y las Formas Conexas de Intolerancia: Declaración y Programa de Acción.",
+    "Organización Internacional del Trabajo. (1989). Convenio 169 sobre pueblos indígenas y tribales en países independientes.",
+    "UNESCO. (1998). Declaración mundial sobre la educación superior en el siglo XXI: Visión y acción."
+  ],
+  "criterios_entrega": [
+    "La entrega de actividades se realizará de acuerdo con el calendario proporcionado por la Figura Académica y marcado en el documento.",
+    "La entrega corresponde a un solo intento.",
+    "Las entregas extemporáneas tendrán una penalización equivalente al 20% del valor de la actividad; recepción extemporánea únicamente hasta el martes de cada semana (no aplica para semanas 9 y 10).",
+    "El cuestionario no puede presentarse después del cierre del recurso ni de manera extemporánea.",
+    "La persona estudiante entregará sus actividades debidamente citadas en formato APA 7ª edición.",
+    "El uso de IA debe apegarse a los Lineamientos para el uso ético y responsable de la IA y declararse al final del trabajo (herramienta y propósito).",
+    "Calificación mínima aprobatoria: 60. Escala del 0 al 100.",
+    "Las actividades con falta de integridad académica serán evaluadas con 0.",
+    "Cuestionario: un intento, 30 minutos, método de calificación último intento.",
+    "Criterio de calificación del cuestionario: cada respuesta correcta suma 1 punto (10 reactivos, total 10 puntos)."
+  ],
+  "aprendizajes": [
+    "Distinguir las prácticas que favorecen u obstaculizan la construcción conjunta del conocimiento.",
+    "Comprender qué es el interaprendizaje, sus principios y condiciones.",
+    "Identificar actitudes y habilidades que requiere el interaprendizaje.",
+    "Reconocer prácticas que pueden obstaculizarlo o distorsionarlo y proponer alternativas.",
+    "Aplicar la comprensión del interaprendizaje en una situación vinculada con la formación académica."
+  ],
+  "conceptos_clave": [
+    "Interaprendizaje",
+    "Diversidad cultural y lingüística",
+    "Construcción conjunta del conocimiento",
+    "Colaboración a distancia",
+    "Prácticas dialógicas y monológicas",
+    "Interculturalidad",
+    "Ambientes virtuales"
+  ],
+  "page_evidence": {
+    "tema": "p. 3, bloque 4",
+    "objetivo": "p. 3, bloque 6",
+    "tecnica_didactica": "p. 3, bloques 8-9",
+    "actividad": "p. 5, bloque 7; p. 6, bloques 2-3; p. 7, bloque 3",
+    "bibliografia": "p. 4, bloques 3-9; p. 4-5, bloques 11-16 y 1-2",
+    "criterios_entrega": "p. 7, bloques 8-15; p. 8, bloques 1-12; p. 9, bloques 1-10",
+    "aprendizajes": "p. 3, bloque 6; p. 5, bloques 7-8",
+    "conceptos_clave": "p. 2, bloques 8-9; p. 3, bloques 1-4"
+  },
+  "warnings": [
+    "El objetivo general de la asignatura y objetivos específicos (p. 2-3) corresponden al programa completo, no exclusivamente a esta semana.",
+    "La tabla de criterios de sanción por uso de IA (p. 8) presenta formato fragmentado que puede dificultar la interpretación exacta de las penalizaciones.",
+    "El valor de la actividad wiki es formativo (no aporta puntos); solo el cuestionario aporta calificación (10/100)."
+  ]
+}

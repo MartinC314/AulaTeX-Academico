@@ -1,0 +1,36 @@
+{
+  "subject_slug": "interaprendizaje-en-ambientes-virtuales",
+  "kept": [
+    "Interaprendizaje",
+    "Ambientes virtuales",
+    "Colaboración a distancia",
+    "colaboración",
+    "Construcción conjunta del conocimiento",
+    "construcción",
+    "Diversidad cultural y lingüística",
+    "Interculturalidad",
+    "Prácticas dialógicas y monológicas",
+    "aportaciones",
+    "participación",
+    "principios",
+    "principios condiciones"
+  ],
+  "discarded": [
+    "acerca interaprendizaje",
+    "aportación similar",
+    "comprensión acerca",
+    "comprensión acerca interaprendizaje",
+    "confusiones",
+    "cuáles principios",
+    "cómo evitarlo",
+    "desarrollar wiki",
+    "encuentres aportación",
+    "entiende interaprendizaje",
+    "espacio correspondiente",
+    "interaprendizaje cómo",
+    "lecturas semana",
+    "participación espacio",
+    "participación wiki"
+  ],
+  "notes": "Se conservaron los conceptos sustantivos y disciplinares centrales de la materia (interaprendizaje, colaboración a distancia, construcción conjunta del conocimiento, interculturalidad, prácticas dialógicas/monológicas) junto con nociones operativas útiles como aportaciones, participación y principios/condiciones. Se descartaron fragmentos truncados o gramaticalmente incompletos ('acerca interaprendizaje', 'entiende interaprendizaje', 'cuáles principios'), términos administrativos o instruccionales ligados a la logística de la actividad ('lecturas semana', 'desarrollar wiki', 'participación wiki', 'espacio correspondiente', 'cómo evitarlo') y ruido genérico ('confusiones', 'aportación similar', 'encuentres aportación')."
+}
