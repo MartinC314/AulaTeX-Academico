@@ -279,7 +279,7 @@ _CATALOG_BASE: tuple[tuple[Any, ...], ...] = (
     ("redes_conceptuales", 75, "Redes conceptuales", "Sintetizar", "visual_jerarquico", "Grafo TikZ", ("nodos", "relaciones", "lectura"), ("redes conceptuales", "red conceptual")),
     ("reporte_de_investigacion", 76, "Reporte de investigación", "Explicar", "escrito_expositivo", "Documento con método", ("problema", "método", "resultados", "conclusión"), ("reporte de investigación", "reporte de investigacion")),
     ("simposio", 77, "Simposio", "Aplicar", "oral_participativo", "Programa y síntesis", ("ponencias", "programa", "síntesis"), ("simposio",)),
-    ("socioaprendizaje", 78, "Socioaprendizaje", "Aplicar", "colaborativo_proyecto", "Comunidad y evidencias", ("comunidad", "interacción", "evidencias"), ("socioaprendizaje", "aprendizaje social")),
+    ("socioaprendizaje", 78, "Socioaprendizaje", "Aplicar", "colaborativo_proyecto", "Comunidad y evidencias", ("comunidad", "interacción", "evidencias"), ("socioaprendizaje", "aprendizaje social", "wiki", "wiki colaborativa", "wiki de la plataforma", "contribución a la wiki", "contribucion a la wiki", "participación en wiki", "participacion en wiki")),
     ("tuits", 79, "Tuits", "Sintetizar", "audiovisual_guion", "Microargumentos", ("mensaje breve", "hashtags", "síntesis"), ("tuits", "tweet", "microblogging")),
     ("valoracion_de_decisiones", 80, "Valoración de decisiones", "Analizar", "tabular", "Matriz ponderada", ("alternativas", "criterios", "pesos", "decisión"), ("valoración de decisiones", "valoracion de decisiones", "matriz de decisión")),
     ("articulo", 81, "Artículo", "Analizar", "escrito_expositivo", "Texto con tesis y fuentes", ("tesis", "desarrollo", "fuentes"), ("artículo", "articulo")),
@@ -539,32 +539,51 @@ def _apply_real_patterns(contracts: dict[str, dict[str, Any]]) -> dict[str, dict
     skeleton reemplaza el de ``tikz_pattern`` para que el motor use el patrón real.
     """
     real = _load_json_overlay("100tecnicas-patrones-reales.json", "patrones")
+    # La wiki NO es una técnica del catálogo de 100: es una herramienta de trabajo
+    # colaborativo en plataforma. Su patrón (wikibox) se propaga a las técnicas
+    # ANFITRIONAS que se materializan en wiki, para que realizar-actividad lo tenga
+    # disponible cuando la consigna use una wiki (p. ej. Socioaprendizaje S3).
+    _WIKI_HOST_TECHNIQUES = (
+        "socioaprendizaje",
+        "glosario_colaborativo",
+        "trabajo_cooperativo",
+        "proyectos_colaborativos",
+    )
     for tech_id, pattern in real.items():
-        if tech_id not in contracts:
-            continue
-        contracts[tech_id]["real_pattern"] = pattern
-        tikz = dict(contracts[tech_id].get("tikz_pattern", {}))
-        if pattern.get("skeleton"):
-            tikz["skeleton"] = pattern["skeleton"]
-        if pattern.get("packages"):
-            tikz["packages"] = pattern["packages"]
-        if pattern.get("rules"):
-            tikz["rules"] = pattern["rules"]
-        if pattern.get("macro_tarjeta"):
-            tikz["macro"] = pattern["macro_tarjeta"]
-        tikz["source"] = "actividad_real"
-        tikz["fuente_real"] = pattern.get("fuente_real", {})
-        contracts[tech_id]["tikz_pattern"] = tikz
-        # Añadir criterios de puntuación extra del patrón real a la rúbrica.
-        if pattern.get("scoring_extra"):
-            rubric = dict(contracts[tech_id].get("scoring_rubric", {}))
-            considers = list(rubric.get("consideraciones_para_puntuar", []))
-            for extra in pattern["scoring_extra"]:
-                if extra not in considers:
-                    considers.append(extra)
-            rubric["consideraciones_para_puntuar"] = considers
-            contracts[tech_id]["scoring_rubric"] = rubric
+        targets = _WIKI_HOST_TECHNIQUES if tech_id == "wiki" else (tech_id,)
+        for target in targets:
+            if target not in contracts:
+                continue
+            _overlay_real_pattern(contracts, target, pattern)
     return contracts
+
+
+def _overlay_real_pattern(
+    contracts: dict[str, dict[str, Any]], tech_id: str, pattern: dict[str, Any]
+) -> None:
+    """Superpone un patrón real sobre el contrato de una técnica concreta."""
+    contracts[tech_id]["real_pattern"] = pattern
+    tikz = dict(contracts[tech_id].get("tikz_pattern", {}))
+    if pattern.get("skeleton"):
+        tikz["skeleton"] = pattern["skeleton"]
+    if pattern.get("packages"):
+        tikz["packages"] = pattern["packages"]
+    if pattern.get("rules"):
+        tikz["rules"] = pattern["rules"]
+    if pattern.get("macro_tarjeta"):
+        tikz["macro"] = pattern["macro_tarjeta"]
+    tikz["source"] = "actividad_real"
+    tikz["fuente_real"] = pattern.get("fuente_real", {})
+    contracts[tech_id]["tikz_pattern"] = tikz
+    # Añadir criterios de puntuación extra del patrón real a la rúbrica.
+    if pattern.get("scoring_extra"):
+        rubric = dict(contracts[tech_id].get("scoring_rubric", {}))
+        considers = list(rubric.get("consideraciones_para_puntuar", []))
+        for extra in pattern["scoring_extra"]:
+            if extra not in considers:
+                considers.append(extra)
+        rubric["consideraciones_para_puntuar"] = considers
+        contracts[tech_id]["scoring_rubric"] = rubric
 
 
 def _apply_activity_products(contracts: dict[str, dict[str, Any]]) -> dict[str, dict[str, Any]]:
@@ -593,6 +612,10 @@ LEGACY_TECHNIQUE_ID_ALIASES: dict[str, str] = {
     "cuestionario_diagnostico": "cuestionario",
     "tabla_didactica": "cuadro_comparativo",
     "foro_diagnostico": "foro",
+    # La "wiki" es la HERRAMIENTA/soporte de plataforma con que se materializa la
+    # TÉCNICA Socioaprendizaje (#53 planeación / #78 catálogo). Son lo mismo: el
+    # producto wiki (wikibox) ES el socioaprendizaje. Se resuelven al mismo id.
+    "wiki": "socioaprendizaje",
 }
 
 

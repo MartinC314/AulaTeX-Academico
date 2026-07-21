@@ -175,6 +175,21 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
             "El adaptador del extractor debe cargar scripts/aulatex.env y exportar PYTHONUTF8=1 al subproceso para heredar credenciales "
             "Foundry y evitar UnicodeEncodeError en Windows (cp1252)."
         ),
+        "extractor_output_folder": (
+            "CONTRATO DE CARPETA DEL EXTRACTOR: la base conceptual de CADA actividad se almacena en su PROPIA subcarpeta bajo "
+            "extractor-aulatex/, con el patrón 'conceptos-<materia-slug>-actividad-N' (materia-slug = nombre de la carpeta de materia sin "
+            "sufijo de programa como -lde/-mga). El adaptador (extractor_adapter._resolve_output_dir/_activity_concept_dir) IDENTIFICA el "
+            "número de actividad, LOCALIZA una carpeta existente que corresponda a esa actividad (patrón 'conceptos-*-actividad-N' o "
+            "'conceptos-*-sN') y, si no existe, la CREA (mkdir). Así una corrida NUNCA sobrescribe la base conceptual de otra semana. "
+            "PROHIBIDO escribir los artefactos del extractor en la raíz de extractor-aulatex/ cuando hay número de actividad; solo la corrida "
+            "sin actividad (activity=0) usa la raíz. Verificar con --activity N que la salida caiga en la subcarpeta correcta."
+        ),
+        "extractor_long_paths": (
+            "En Windows, si las rutas absolutas de las fuentes (p. ej. libros en referencias-*/libros-*) superan MAX_PATH (260 chars) con "
+            "LongPathsEnabled=0, is_file()/exists() fallan SILENCIOSAMENTE y el extractor reporta 'Fuentes cargables: 0'. El extractor ya "
+            "maneja esto con el prefijo de ruta extendida \\\\?\\ en document_reader._win_long_path (descubrimiento) y pdf_reader._openable_path "
+            "(apertura con PyMuPDF). Si aparece '0 fuentes' pese a haber PDFs, verificar la longitud de la ruta y que estos helpers estén activos."
+        ),
         "encoding_safety": (
             "NUNCA editar archivos .tex con PowerShell (Set-Content / -replace): corrompe la codificación UTF-8 (mojibake doble). "
             "Usar siempre herramientas de edición que preserven UTF-8. Si ocurre mojibake, reparar con reemplazos dirigidos "
@@ -482,6 +497,59 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
             "Las conclusiones internas de la reseña cierran con una RECOMENDACIÓN/valoración. La Conclusión del reporte (fuera del recuadro) integra "
             "síntesis, análisis propio y postura personal sobre el TEMA; inicia con \\clearpage y ocupa preferentemente una sola página; la declaración "
             "de uso de IA se liga como \\footnote a una frase oportuna, nunca como \\section."
+        ),
+    },
+    "socioaprendizaje": {
+        "aliases": ("socioaprendizaje", "aprendizaje social", "wiki", "wiki colaborativa", "wiki de la plataforma", "trabajo colaborativo en wiki", "contribución a la wiki", "contribucion a la wiki", "edición de wiki", "edicion de wiki", "participación en wiki", "participacion en wiki"),
+        "required_visible_elements": ("contribución publicada", "base conceptual", "cita textual", "referencias", "reflexión colaborativa"),
+        "equivalence_rule": (
+            "SOCIOAPRENDIZAJE (#53 planeación / #78 catálogo) y WIKI son lo MISMO en este sistema: el Socioaprendizaje es la TÉCNICA didáctica (método de "
+            "aprendizaje social/colaborativo) y la wiki es la HERRAMIENTA/soporte de plataforma con que se materializa (construcción coral). El producto "
+            "wiki (wikibox) ES el producto del socioaprendizaje. Se detectan y contractualizan bajo el id canónico 'socioaprendizaje'."
+        ),
+        "preservation_rule": (
+            "El PRODUCTO del socioaprendizaje se materializa como una CONTRIBUCIÓN publicada en la wiki de la plataforma (herramienta de trabajo colaborativo). "
+            "Otras técnicas colaborativas (glosario colaborativo, trabajo cooperativo, proyectos colaborativos) también pueden materializarse en wiki. El PRODUCTO es la CONTRIBUCIÓN "
+            "PUBLICADA en la wiki y se reproduce ANIDADA en un recuadro (wikibox), homólogo al forobox del foro y al resenabox de la reseña. Conservar "
+            "el contenido tal como se publica (aportes + complementos a otros), no convertirlo en ensayo suelto."
+        ),
+        "visible_style_rule": (
+            "No explicar en el texto visible que 'esta actividad' usa una wiki; esa trazabilidad va como comentario TEX. El texto visible REPRODUCE la "
+            "contribución (aportes/definiciones) y habla del TEMA, no del proceso ('en esta wiki aporté...'). Prohibido metadiscurso de proceso."
+        ),
+        "reporte_vs_producto_rule": (
+            "El REPORTE (contenedor: portada + resumen + índice + 3 secciones + referencias) tiene su propia Introducción y Conclusión. El PRODUCTO "
+            "(contribución a la wiki) va ANIDADO en el Desarrollo dentro de una wikibox. La Conclusión del reporte reflexiona sobre el APORTE colaborativo "
+            "y lo aprendido; no repite el contenido de la wiki. La declaración de IA como \\footnote va en la Conclusión del reporte."
+        ),
+        "tres_secciones_rule": (
+            "El reporte tiene EXACTAMENTE 3 secciones de contenido: (1) Introducción (contextualiza el TEMA y el trabajo colaborativo), (2) Desarrollo con "
+            "título temático (NO 'Desarrollo') que contiene la base conceptual en subsecciones + la wikibox, (3) Conclusiones. Más portada, resumen, índice "
+            "y referencias como partes de la plantilla consolidada."
+        ),
+        "base_conceptual_gravita_afuera_rule": (
+            "La BASE CONCEPTUAL (subsecciones temáticas con conceptos del extractor + citas de sustento \\citep) va AFUERA de la wikibox, como \\subsection "
+            "del Desarrollo, preparando y sosteniendo de forma orgánica y fluida el producto. Bien articulada (títulos y subsecciones adecuadas), respalda "
+            "con solidez la contribución y gravita ALREDEDOR del producto sin encerrarlo."
+        ),
+        "aportacion_tres_elementos_rule": (
+            "Cada APORTACIÓN a la wiki desarrolla 3 ELEMENTOS (planeación real S3): (1) una confusión/práctica/idea que CONTRADICE el tema; "
+            "(2) una explicación breve de por qué es un problema; (3) una alternativa para prevenirla/transformarla, con ejemplo concreto "
+            "(educación a distancia, trabajo académico, campo jurídico). Se incluye al menos una aportación propia + 1-2 complementos a aportes previos."
+        ),
+        "colaborativo_rule": (
+            "Al ser TRABAJO COLABORATIVO EN PLATAFORMA (Socioaprendizaje), la wikibox evidencia construcción CORAL respetando las reglas reales: NO repetir "
+            "ideas; NO eliminar ni modificar aportes de otros (solo AMPLIAR con otro ejemplo/consecuencia/propuesta, referidos SIN nombre: 'ampliando un aporte "
+            "previo...'); cerrar con una invitación/pregunta que abra a seguir colaborando. Escritura colectiva e hipertextual, no texto individual."
+        ),
+        "citas_y_referencias_rule": (
+            "MATIZ WIKI (distinto al foro): la wiki formativa NO exige citas ni referencias APA en cada aportación; solo mencionar la fuente (Autor, año) SI se usa "
+            "una cita textual (\\enquote). NO se obliga a un apartado 'Referencias' dentro de la wikibox. En cambio, la BASE CONCEPTUAL del desarrollo (afuera de "
+            "la wikibox) y la bibliografía general del reporte SÍ se rigen por los Lineamientos UnADM (APA 7 formal con \\citep + \\bibliography)."
+        ),
+        "closure_rule": (
+            "La Conclusión del reporte integra síntesis, análisis propio y postura personal sobre el APORTE colaborativo; inicia con \\clearpage y ocupa "
+            "preferentemente una sola página; la declaración de uso de IA se liga como \\footnote a una frase oportuna, nunca como \\section."
         ),
     },
 }

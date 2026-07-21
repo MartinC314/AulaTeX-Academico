@@ -75,8 +75,14 @@ class ActivityObserver:
         sections = self._extract_sections(active_tex)
         extractor_state = self._observe_extractor(target_root, request.activity_number)
         compile_result = self._compile_if_requested(tex_path, request.compile_check)
-        extractor_summary = self._load_json(target_root / "extractor-aulatex" / CORE_EXTRACTOR_ARTIFACTS["planeacion"])
-        extractor_concepts = self._load_json(target_root / "extractor-aulatex" / CORE_EXTRACTOR_ARTIFACTS["conceptos"])
+        # Cargar summary/concepts desde la MISMA carpeta que resolvió el observer
+        # (subcarpeta por actividad 'conceptos-<materia>-actividad-N' del contrato).
+        extractor_dir = next(
+            (c for c in self._extractor_activity_candidates(target_root, request.activity_number) if c.exists()),
+            target_root / "extractor-aulatex",
+        )
+        extractor_summary = self._load_json(extractor_dir / CORE_EXTRACTOR_ARTIFACTS["planeacion"])
+        extractor_concepts = self._load_json(extractor_dir / CORE_EXTRACTOR_ARTIFACTS["conceptos"])
         editing_details = self._load_editing_details(scope)
 
         state = self._build_state(
@@ -164,11 +170,28 @@ class ActivityObserver:
             return preferred[0] if preferred else direct[0]
         return None
 
+    def _extractor_activity_candidates(self, target_root: Path, activity_number: int) -> list[Path]:
+        """Carpetas candidatas de la base conceptual del extractor, en orden de prioridad.
+
+        Prioriza la subcarpeta por actividad 'conceptos-<materia>-actividad-N'
+        (contrato vigente), luego variantes legacy y la raíz de extractor-aulatex.
+        """
+        base = target_root / "extractor-aulatex"
+        candidates: list[Path] = []
+        act = int(activity_number)
+        if act > 0 and base.is_dir():
+            # 'conceptos-*-actividad-N' o 'conceptos-*-sN' (patrón del contrato).
+            act_pat = re.compile(rf"conceptos-.*-(?:actividad-0?{act}|s0?{act})\b", re.IGNORECASE)
+            for cand in sorted(base.glob("conceptos-*")):
+                if cand.is_dir() and act_pat.search(cand.name):
+                    candidates.append(cand)
+        if act > 0:
+            candidates.append(base / f"actividad-{act:02d}")
+        candidates.append(base)
+        return candidates
+
     def _observe_extractor(self, target_root: Path, activity_number: int) -> dict[str, Any]:
-        candidates = [
-            target_root / "extractor-aulatex" / f"actividad-{int(activity_number):02d}",
-            target_root / "extractor-aulatex",
-        ]
+        candidates = self._extractor_activity_candidates(target_root, activity_number)
         for candidate in candidates:
             if candidate.exists():
                 artifacts = {

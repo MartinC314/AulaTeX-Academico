@@ -204,8 +204,13 @@ def infer_technique(tex: str, title: str) -> tuple[str, str, str]:
     declared_n = _norm(_strip_template_noise(_extract_declared_product(tex)))
 
     # Paso 0: entorno-producto propio de una técnica (señal MÁS fiable que el título,
-    # porque materializa el producto real). p. ej. resenabox -> reseña.
-    _ENV_TECH = {r"\\begin\{resenabox\}": "resena", r"\\begin\{forobox\}": "foro_diagnostico"}
+    # porque materializa el producto real). p. ej. resenabox -> reseña, wikibox ->
+    # socioaprendizaje (la wiki es herramienta colaborativa de esa técnica anfitriona).
+    _ENV_TECH = {
+        r"\\begin\{resenabox\}": "resena",
+        r"\\begin\{forobox\}": "foro_diagnostico",
+        r"\\begin\{wikibox\}": "socioaprendizaje",
+    }
     for env_pat, env_tid in _ENV_TECH.items():
         if re.search(env_pat, tex) and env_tid in TECHNIQUE_CONTRACTS:
             return env_tid, "<recuadro>", "alta"
@@ -299,6 +304,7 @@ def detect_all_products(tex: str, title: str) -> list[dict[str, Any]]:
     _ENV_PRODUCT = {
         r"\\begin\{resenabox\}": ("resena", "<recuadro resenabox>"),
         r"\\begin\{forobox\}": ("foro_diagnostico", "<recuadro forobox>"),
+        r"\\begin\{wikibox\}": ("socioaprendizaje", "<recuadro wikibox>"),
     }
     for env_pat, (env_tid, env_origen) in _ENV_PRODUCT.items():
         if re.search(env_pat, tex):

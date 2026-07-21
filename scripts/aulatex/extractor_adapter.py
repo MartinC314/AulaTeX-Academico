@@ -289,8 +289,55 @@ class ExtractorAdapter:
 
     def _resolve_output_dir(self, request: ExtractorRequest, target_path: Path) -> Path:
         if request.salida.strip():
-            return self.workspace.resolve_target(request.salida)
-        return (target_path / "extractor-aulatex").resolve()
+            resolved = self.workspace.resolve_target(request.salida)
+            resolved.mkdir(parents=True, exist_ok=True)
+            return resolved
+        base = (target_path / "extractor-aulatex").resolve()
+        # CONTRATO DE CARPETA DEL EXTRACTOR: cada ACTIVIDAD conserva su propia base
+        # conceptual en una subcarpeta 'conceptos-<materia>-actividad-N', evitando que
+        # una corrida sobrescriba la base de otra semana. El motor IDENTIFICA el número
+        # de actividad, LOCALIZA una carpeta existente que matchee el patrón (aunque el
+        # slug varíe) y, si no existe, la CREA. Coincide con el patrón del repo
+        # (p. ej. 'conceptos-interaprendizaje-en-ambientes-virtuales-actividad-3').
+        activity_number = int(request.activity_number or 0)
+        if activity_number <= 0:
+            base.mkdir(parents=True, exist_ok=True)
+            return base
+        target_dir = self._activity_concept_dir(base, target_path, activity_number)
+        target_dir.mkdir(parents=True, exist_ok=True)
+        return target_dir
+
+    def _activity_concept_dir(self, base: Path, target_path: Path, activity_number: int) -> Path:
+        """Localiza (o define para crear) la carpeta de conceptos de la actividad.
+
+        Prioridad: (1) reutilizar una carpeta existente 'conceptos-*-actividad-N' /
+        'conceptos-*-sN' bajo extractor-aulatex; (2) si no existe, definir el nombre
+        canónico 'conceptos-<materia>-actividad-N'.
+        """
+        materia_slug = self._materia_slug(target_path)
+        canonical = base / f"conceptos-{materia_slug}-actividad-{activity_number}"
+        if canonical.exists():
+            return canonical.resolve()
+        # Localizar cualquier carpeta existente que corresponda a esta actividad.
+        if base.is_dir():
+            act_pat = re.compile(
+                rf"conceptos-.*-(?:actividad-0?{activity_number}|s0?{activity_number})\b",
+                re.IGNORECASE,
+            )
+            for candidate in sorted(base.glob("conceptos-*")):
+                if candidate.is_dir() and act_pat.search(candidate.name):
+                    return candidate.resolve()
+        return canonical.resolve()
+
+    def _materia_slug(self, target_path: Path) -> str:
+        """Deriva el slug de materia desde la carpeta objetivo (nombre sin sufijo de programa)."""
+        materia_dir = target_path if target_path.is_dir() else target_path.parent
+        name = materia_dir.name
+        for suffix in ("-lde", "-lic", "-mga", "-mem", "-mtia", "-lgc"):
+            if name.endswith(suffix):
+                name = name[: -len(suffix)]
+                break
+        return name or "materia"
 
     def _build_command(self, request: ExtractorRequest, resolved: ResolvedExtractorRequest) -> list[str]:
         python_executable = self._python_executable()
