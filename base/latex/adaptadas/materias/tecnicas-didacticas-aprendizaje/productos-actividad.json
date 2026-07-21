@@ -1,43 +1,87 @@
 {
   "_meta": {
     "proposito": "Inventario de PRODUCTOS de actividad (entregable en reporte/presentación) por técnica didáctica. Una actividad puede aportar varios productos.",
-    "total_reportes_actividad": 188,
-    "productos_completos": 127,
-    "productos_confirmados": 30,
-    "actividades_multiproducto": 1,
+    "total_reportes_actividad": 189,
+    "productos_completos": 128,
+    "productos_confirmados": 44,
+    "actividades_multiproducto": 4,
     "incompletos": 61,
     "tecnicas_con_producto": [
       "analisis_de_hechos",
+      "articulo",
       "cuadro_comparativo",
       "cuestionario",
       "ensayo",
       "esquema",
       "estudio_de_caso",
+      "foro",
       "glosario_colaborativo",
       "juego_de_roles",
       "linea_de_tiempo",
       "mapa_conceptual",
       "portafolio_de_evidencias_digital",
       "reporte_de_lectura_general",
+      "resena",
       "resumen"
     ],
     "conteo_por_tecnica": {
       "cuestionario": 8,
-      "mapa_conceptual": 4,
-      "estudio_de_caso": 4,
-      "cuadro_comparativo": 3,
+      "cuadro_comparativo": 5,
+      "mapa_conceptual": 5,
+      "estudio_de_caso": 5,
+      "esquema": 4,
+      "foro": 4,
+      "juego_de_roles": 3,
       "resumen": 2,
-      "juego_de_roles": 2,
-      "esquema": 1,
+      "resena": 1,
       "linea_de_tiempo": 1,
       "reporte_de_lectura_general": 1,
       "analisis_de_hechos": 1,
       "ensayo": 1,
+      "articulo": 1,
       "glosario_colaborativo": 1,
       "portafolio_de_evidencias_digital": 1
     }
   },
   "por_tecnica": {
+    "esquema": [
+      {
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/etica-y-moral-juridica-lde/reporte-etica-y-moral-juridica-Actividad-2.tex",
+        "titulo": "Esquema de las escuelas contemporáneas de la ética",
+        "actividad": 2,
+        "confianza": "alta",
+        "seccion": "<título>",
+        "tiene_tikz": true,
+        "tiene_longtable": false
+      },
+      {
+        "archivo": "IIIEPE/maestria-en-enseñanza-y-aprendizaje-de-las-matematicas/temas-selectos-de-matematicas-I/reporte-temas-selectos-de-matematicas-I-Actividad-1.tex",
+        "titulo": "Suma y resta con fracciones",
+        "actividad": 1,
+        "confianza": "media",
+        "seccion": "Esquemas de apoyo para las situaciones",
+        "tiene_tikz": true,
+        "tiene_longtable": true
+      },
+      {
+        "archivo": "IIIEPE/maestria-en-enseñanza-y-aprendizaje-de-las-matematicas/temas-selectos-de-matematicas-I/reporte-temas-selectos-de-matematicas-I-Actividad-2.tex",
+        "titulo": "Multiplicacion y division con fracciones",
+        "actividad": 2,
+        "confianza": "media",
+        "seccion": "Esquemas de apoyo para las situaciones",
+        "tiene_tikz": true,
+        "tiene_longtable": true
+      },
+      {
+        "archivo": "IIIEPE/maestria-en-enseñanza-y-aprendizaje-de-las-matematicas/temas-selectos-de-matematicas-I/reporte-temas-selectos-de-matematicas-I-Actividad-3.tex",
+        "titulo": "Conversi�n de fracciones a decimales y viceversa",
+        "actividad": 3,
+        "confianza": "media",
+        "seccion": "Procedimientos con esquemas",
+        "tiene_tikz": true,
+        "tiene_longtable": true
+      }
+    ],
     "cuestionario": [
       {
         "archivo": "ITESCA/maestria-en-gestion-administrativa/primer-ingreso-mga/reporte-primer-ingreso-mga-Actividad-2.tex",
@@ -50,7 +94,7 @@
       },
       {
         "archivo": "UCNL/licenciatura-en-administracion/administracion-i-lad/reporte-administracion-I-Actividad-1.tex",
-        "titulo": "Actividad 1 - Administracion I",
+        "titulo": "La comunicacion en la administracion",
         "actividad": 1,
         "confianza": "alta",
         "seccion": "<producto elaborado>",
@@ -59,7 +103,7 @@
       },
       {
         "archivo": "UCNL/licenciatura-en-administracion/contabilidad-i-lad/reporte-contabilidad-I-Actividad-1.tex",
-        "titulo": "Actividad 1 - Contabilidad I",
+        "titulo": "Conceptos basicos de la contabilidad",
         "actividad": 1,
         "confianza": "alta",
         "seccion": "<producto elaborado>",
@@ -68,7 +112,7 @@
       },
       {
         "archivo": "UCNL/licenciatura-en-administracion/contabilidad-i-lad/reporte-contabilidad-I-Actividad-2.tex",
-        "titulo": "Actividad 2 - Contabilidad I",
+        "titulo": "Ciclo contable y estados financieros",
         "actividad": 2,
         "confianza": "alta",
         "seccion": "<producto elaborado>",
@@ -77,7 +121,7 @@
       },
       {
         "archivo": "UCNL/licenciatura-en-administracion/ingles-i-lad/reporte-ingles-I-Actividad-1.tex",
-        "titulo": "Actividad 1 - Ingles I",
+        "titulo": "Estructuras gramaticales basicas del ingles",
         "actividad": 1,
         "confianza": "alta",
         "seccion": "<producto elaborado>",
@@ -86,7 +130,7 @@
       },
       {
         "archivo": "UCNL/licenciatura-en-administracion/matematicas-i-lad/reporte-matematicas-I-Actividad-1.tex",
-        "titulo": "Actividad 1 - Matematicas I",
+        "titulo": "Conceptos introductorios del algebra",
         "actividad": 1,
         "confianza": "alta",
         "seccion": "<producto elaborado>",
@@ -95,7 +139,7 @@
       },
       {
         "archivo": "UCNL/licenciatura-en-administracion/microeconomia-lad/reporte-microeconomia-Actividad-1.tex",
-        "titulo": "Actividad 1 - Microeconomia",
+        "titulo": "Conceptos introductorios de la microeconomia",
         "actividad": 1,
         "confianza": "alta",
         "seccion": "<producto elaborado>",
@@ -112,23 +156,41 @@
         "tiene_longtable": true
       }
     ],
-    "resumen": [
+    "foro": [
       {
-        "archivo": "UnADM/licenciatura-en-derecho-unadm/etica-y-moral-juridica-lde/reporte-etica-y-moral-juridica-Actividad-5.tex",
-        "titulo": "La sociedad y su relación con la ética y la moral",
-        "actividad": 5,
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-1.tex",
+        "titulo": "Nociones básicas del tema",
+        "actividad": 1,
         "confianza": "alta",
-        "seccion": "<producto elaborado>",
+        "seccion": "<recuadro forobox>",
+        "tiene_tikz": false,
+        "tiene_longtable": false
+      },
+      {
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/reporte-garantias-constitucionales-Actividad-1.tex",
+        "titulo": "Nociones básicas del derecho constitucional",
+        "actividad": 1,
+        "confianza": "alta",
+        "seccion": "<recuadro forobox>",
+        "tiene_tikz": true,
+        "tiene_longtable": true
+      },
+      {
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/reporte-garantias-constitucionales-Actividad-2.tex",
+        "titulo": "El Estado a través de la historia",
+        "actividad": 2,
+        "confianza": "alta",
+        "seccion": "<recuadro forobox>",
         "tiene_tikz": true,
         "tiene_longtable": false
       },
       {
-        "archivo": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-2.tex",
-        "titulo": "Clasificación de los tipos de seguro",
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-2.tex",
+        "titulo": "Diversidad cultural y lingüística en el derecho",
         "actividad": 2,
-        "confianza": "media",
-        "seccion": "Resumen editorial",
-        "tiene_tikz": false,
+        "confianza": "alta",
+        "seccion": "<recuadro forobox>",
+        "tiene_tikz": true,
         "tiene_longtable": false
       }
     ],
@@ -159,16 +221,54 @@
         "seccion": "<título>",
         "tiene_tikz": true,
         "tiene_longtable": true
+      },
+      {
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-2.tex",
+        "titulo": "Clasificación de los tipos de seguro",
+        "actividad": 2,
+        "confianza": "media",
+        "seccion": "Cuadro comparativo de las modalidades de seguro",
+        "tiene_tikz": false,
+        "tiene_longtable": false
+      },
+      {
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/redaccion-en-contextos-virtuales-lde/reporte-redaccion-en-contextos-virtuales-Actividad-7.tex",
+        "titulo": "Portafolio de evidencias de redaccion en contextos virtuales",
+        "actividad": 7,
+        "confianza": "media",
+        "seccion": "Actividad 2. Cuadro comparativo de criterios de la redaccion academica",
+        "tiene_tikz": true,
+        "tiene_longtable": true
       }
     ],
-    "esquema": [
+    "resumen": [
       {
-        "archivo": "UnADM/licenciatura-en-derecho-unadm/etica-y-moral-juridica-lde/reporte-etica-y-moral-juridica-Actividad-2.tex",
-        "titulo": "Esquema de las escuelas contemporáneas de la ética",
-        "actividad": 2,
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/etica-y-moral-juridica-lde/reporte-etica-y-moral-juridica-Actividad-5.tex",
+        "titulo": "La sociedad y su relación con la ética y la moral",
+        "actividad": 5,
         "confianza": "alta",
-        "seccion": "<título>",
+        "seccion": "<producto elaborado>",
         "tiene_tikz": true,
+        "tiene_longtable": false
+      },
+      {
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-2.tex",
+        "titulo": "Clasificación de los tipos de seguro",
+        "actividad": 2,
+        "confianza": "media",
+        "seccion": "Resumen editorial",
+        "tiene_tikz": false,
+        "tiene_longtable": false
+      }
+    ],
+    "resena": [
+      {
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex",
+        "titulo": "El fundamento constitucional de la seguridad social en Mexico",
+        "actividad": 3,
+        "confianza": "alta",
+        "seccion": "<producto elaborado>",
+        "tiene_tikz": false,
         "tiene_longtable": false
       }
     ],
@@ -219,6 +319,15 @@
         "seccion": "<título>",
         "tiene_tikz": true,
         "tiene_longtable": false
+      },
+      {
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/redaccion-en-contextos-virtuales-lde/reporte-redaccion-en-contextos-virtuales-Actividad-7.tex",
+        "titulo": "Portafolio de evidencias de redaccion en contextos virtuales",
+        "actividad": 7,
+        "confianza": "media",
+        "seccion": "Actividad 6. Mapa conceptual sobre autogestion del aprendizaje y redaccion academica",
+        "tiene_tikz": true,
+        "tiene_longtable": true
       }
     ],
     "reporte_de_lectura_general": [
@@ -250,6 +359,17 @@
         "actividad": 8,
         "confianza": "alta",
         "seccion": "<producto elaborado>",
+        "tiene_tikz": true,
+        "tiene_longtable": true
+      }
+    ],
+    "articulo": [
+      {
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/etica-y-moral-juridica-lde/reporte-etica-y-moral-juridica-Actividad-8.tex",
+        "titulo": "Dignidad humana y límites del poder en el Derecho mexicano",
+        "actividad": 8,
+        "confianza": "media",
+        "seccion": "Fundamento constitucional: artículos 1o., 2o., 3o. y 25",
         "tiene_tikz": true,
         "tiene_longtable": true
       }
@@ -290,6 +410,15 @@
         "seccion": "<título>",
         "tiene_tikz": true,
         "tiene_longtable": false
+      },
+      {
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/redaccion-en-contextos-virtuales-lde/reporte-redaccion-en-contextos-virtuales-Actividad-7.tex",
+        "titulo": "Portafolio de evidencias de redaccion en contextos virtuales",
+        "actividad": 7,
+        "confianza": "media",
+        "seccion": "Actividad 1. Estudio de caso: elementos del proceso de comunicacion",
+        "tiene_tikz": true,
+        "tiene_longtable": true
       }
     ],
     "glosario_colaborativo": [
@@ -321,6 +450,15 @@
         "seccion": "<producto elaborado>",
         "tiene_tikz": true,
         "tiene_longtable": true
+      },
+      {
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/redaccion-en-contextos-virtuales-lde/reporte-redaccion-en-contextos-virtuales-Actividad-7.tex",
+        "titulo": "Portafolio de evidencias de redaccion en contextos virtuales",
+        "actividad": 7,
+        "confianza": "media",
+        "seccion": "Actividad 3. Comunicacion efectiva en el ambito laboral: juego de roles",
+        "tiene_tikz": true,
+        "tiene_longtable": true
       }
     ],
     "portafolio_de_evidencias_digital": [
@@ -337,12 +475,42 @@
   },
   "multiproducto": [
     {
+      "archivo": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-2.tex",
+      "titulo": "Clasificación de los tipos de seguro",
+      "actividad": 2,
+      "productos": [
+        "cuadro_comparativo",
+        "resumen"
+      ]
+    },
+    {
+      "archivo": "UnADM/licenciatura-en-derecho-unadm/etica-y-moral-juridica-lde/reporte-etica-y-moral-juridica-Actividad-8.tex",
+      "titulo": "Dignidad humana y límites del poder en el Derecho mexicano",
+      "actividad": 8,
+      "productos": [
+        "ensayo",
+        "articulo"
+      ]
+    },
+    {
       "archivo": "UnADM/licenciatura-en-derecho-unadm/filosofia-del-derecho-lde/reporte-filosofia-del-derecho-Actividad-3.tex",
       "titulo": "Glosario y análisis de caso. Conceptos jurídicos fundamentales, moral y Derecho",
       "actividad": 3,
       "productos": [
         "estudio_de_caso",
         "glosario_colaborativo"
+      ]
+    },
+    {
+      "archivo": "UnADM/licenciatura-en-derecho-unadm/redaccion-en-contextos-virtuales-lde/reporte-redaccion-en-contextos-virtuales-Actividad-7.tex",
+      "titulo": "Portafolio de evidencias de redaccion en contextos virtuales",
+      "actividad": 7,
+      "productos": [
+        "portafolio_de_evidencias_digital",
+        "cuadro_comparativo",
+        "mapa_conceptual",
+        "estudio_de_caso",
+        "juego_de_roles"
       ]
     }
   ],
@@ -359,7 +527,16 @@
       "catalogo_no": 47,
       "alias_match": "documental",
       "confianza": "baja",
-      "productos": [],
+      "productos": [
+        {
+          "technique_id": "esquema",
+          "nombre": "Esquema",
+          "catalogo_no": 8,
+          "alias_match": "esquema",
+          "seccion": "Esquemas de apoyo para las situaciones",
+          "confianza": "media"
+        }
+      ],
       "multiproducto": false,
       "tiene_tikz": true,
       "tiene_longtable": true
@@ -376,7 +553,16 @@
       "catalogo_no": 1,
       "alias_match": "longtable",
       "confianza": "baja",
-      "productos": [],
+      "productos": [
+        {
+          "technique_id": "esquema",
+          "nombre": "Esquema",
+          "catalogo_no": 8,
+          "alias_match": "esquema",
+          "seccion": "Esquemas de apoyo para las situaciones",
+          "confianza": "media"
+        }
+      ],
       "multiproducto": false,
       "tiene_tikz": true,
       "tiene_longtable": true
@@ -393,7 +579,16 @@
       "catalogo_no": 1,
       "alias_match": "longtable",
       "confianza": "baja",
-      "productos": [],
+      "productos": [
+        {
+          "technique_id": "esquema",
+          "nombre": "Esquema",
+          "catalogo_no": 8,
+          "alias_match": "esquema",
+          "seccion": "Procedimientos con esquemas",
+          "confianza": "media"
+        }
+      ],
       "multiproducto": false,
       "tiene_tikz": true,
       "tiene_longtable": true
@@ -1922,11 +2117,11 @@
     },
     {
       "archivo": "UCNL/licenciatura-en-administracion/administracion-i-lad/reporte-administracion-I-Actividad-1.tex",
-      "titulo": "Actividad 1 - Administracion I",
+      "titulo": "La comunicacion en la administracion",
       "actividad": 1,
       "completado": true,
       "razones_incompleto": [],
-      "secciones": 5,
+      "secciones": 3,
       "tecnica_detectada": "cuestionario",
       "tecnica_nombre": "Cuestionario",
       "catalogo_no": 3,
@@ -1948,11 +2143,11 @@
     },
     {
       "archivo": "UCNL/licenciatura-en-administracion/contabilidad-i-lad/reporte-contabilidad-I-Actividad-1.tex",
-      "titulo": "Actividad 1 - Contabilidad I",
+      "titulo": "Conceptos basicos de la contabilidad",
       "actividad": 1,
       "completado": true,
       "razones_incompleto": [],
-      "secciones": 4,
+      "secciones": 3,
       "tecnica_detectada": "cuestionario",
       "tecnica_nombre": "Cuestionario",
       "catalogo_no": 3,
@@ -1974,7 +2169,7 @@
     },
     {
       "archivo": "UCNL/licenciatura-en-administracion/contabilidad-i-lad/reporte-contabilidad-I-Actividad-2.tex",
-      "titulo": "Actividad 2 - Contabilidad I",
+      "titulo": "Ciclo contable y estados financieros",
       "actividad": 2,
       "completado": true,
       "razones_incompleto": [],
@@ -2000,7 +2195,7 @@
     },
     {
       "archivo": "UCNL/licenciatura-en-administracion/ingles-i-lad/reporte-ingles-I-Actividad-1.tex",
-      "titulo": "Actividad 1 - Ingles I",
+      "titulo": "Estructuras gramaticales basicas del ingles",
       "actividad": 1,
       "completado": true,
       "razones_incompleto": [],
@@ -2026,11 +2221,11 @@
     },
     {
       "archivo": "UCNL/licenciatura-en-administracion/matematicas-i-lad/reporte-matematicas-I-Actividad-1.tex",
-      "titulo": "Actividad 1 - Matematicas I",
+      "titulo": "Conceptos introductorios del algebra",
       "actividad": 1,
       "completado": true,
       "razones_incompleto": [],
-      "secciones": 5,
+      "secciones": 3,
       "tecnica_detectada": "cuestionario",
       "tecnica_nombre": "Cuestionario",
       "catalogo_no": 3,
@@ -2052,11 +2247,11 @@
     },
     {
       "archivo": "UCNL/licenciatura-en-administracion/microeconomia-lad/reporte-microeconomia-Actividad-1.tex",
-      "titulo": "Actividad 1 - Microeconomia",
+      "titulo": "Conceptos introductorios de la microeconomia",
       "actividad": 1,
       "completado": true,
       "razones_incompleto": [],
-      "secciones": 5,
+      "secciones": 3,
       "tecnica_detectada": "cuestionario",
       "tecnica_nombre": "Cuestionario",
       "catalogo_no": 3,
@@ -2105,7 +2300,16 @@
       "catalogo_no": 1,
       "alias_match": "longtable",
       "confianza": "baja",
-      "productos": [],
+      "productos": [
+        {
+          "technique_id": "foro",
+          "nombre": "Foro",
+          "catalogo_no": 29,
+          "alias_match": "recuadro forobox",
+          "seccion": "<recuadro forobox>",
+          "confianza": "alta"
+        }
+      ],
       "multiproducto": false,
       "tiene_tikz": false,
       "tiene_longtable": false
@@ -2124,12 +2328,46 @@
       "confianza": "media",
       "productos": [
         {
+          "technique_id": "cuadro_comparativo",
+          "nombre": "Cuadro comparativo",
+          "catalogo_no": 1,
+          "alias_match": "cuadro comparativo",
+          "seccion": "Cuadro comparativo de las modalidades de seguro",
+          "confianza": "media"
+        },
+        {
           "technique_id": "resumen",
           "nombre": "Resumen",
           "catalogo_no": 17,
           "alias_match": "resumen",
           "seccion": "Resumen editorial",
           "confianza": "media"
+        }
+      ],
+      "multiproducto": true,
+      "tiene_tikz": false,
+      "tiene_longtable": false
+    },
+    {
+      "archivo": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex",
+      "titulo": "El fundamento constitucional de la seguridad social en Mexico",
+      "actividad": 3,
+      "completado": true,
+      "razones_incompleto": [],
+      "secciones": 3,
+      "tecnica_detectada": "resena",
+      "tecnica_nombre": "Reseña",
+      "catalogo_no": 37,
+      "alias_match": "<recuadro>",
+      "confianza": "alta",
+      "productos": [
+        {
+          "technique_id": "resena",
+          "nombre": "Reseña",
+          "catalogo_no": 37,
+          "alias_match": "<recuadro>",
+          "seccion": "<producto elaborado>",
+          "confianza": "alta"
         }
       ],
       "multiproducto": false,
@@ -2338,9 +2576,17 @@
           "alias_match": "ensayo",
           "seccion": "<producto elaborado>",
           "confianza": "alta"
+        },
+        {
+          "technique_id": "articulo",
+          "nombre": "Artículo",
+          "catalogo_no": 81,
+          "alias_match": "artículo",
+          "seccion": "Fundamento constitucional: artículos 1o., 2o., 3o. y 25",
+          "confianza": "media"
         }
       ],
-      "multiproducto": false,
+      "multiproducto": true,
       "tiene_tikz": true,
       "tiene_longtable": true
     },
@@ -2511,7 +2757,16 @@
       "catalogo_no": 42,
       "alias_match": "controversia",
       "confianza": "baja",
-      "productos": [],
+      "productos": [
+        {
+          "technique_id": "foro",
+          "nombre": "Foro",
+          "catalogo_no": 29,
+          "alias_match": "recuadro forobox",
+          "seccion": "<recuadro forobox>",
+          "confianza": "alta"
+        }
+      ],
       "multiproducto": false,
       "tiene_tikz": true,
       "tiene_longtable": true
@@ -2528,7 +2783,16 @@
       "catalogo_no": 1,
       "alias_match": "tabular",
       "confianza": "baja",
-      "productos": [],
+      "productos": [
+        {
+          "technique_id": "foro",
+          "nombre": "Foro",
+          "catalogo_no": 29,
+          "alias_match": "recuadro forobox",
+          "seccion": "<recuadro forobox>",
+          "confianza": "alta"
+        }
+      ],
       "multiproducto": false,
       "tiene_tikz": true,
       "tiene_longtable": false
@@ -2565,7 +2829,7 @@
       "actividad": 1,
       "completado": true,
       "razones_incompleto": [],
-      "secciones": 4,
+      "secciones": 3,
       "tecnica_detectada": "cuestionario",
       "tecnica_nombre": "Cuestionario",
       "catalogo_no": 3,
@@ -2597,7 +2861,16 @@
       "catalogo_no": 7,
       "alias_match": "entrevista",
       "confianza": "baja",
-      "productos": [],
+      "productos": [
+        {
+          "technique_id": "foro",
+          "nombre": "Foro",
+          "catalogo_no": 29,
+          "alias_match": "recuadro forobox",
+          "seccion": "<recuadro forobox>",
+          "confianza": "alta"
+        }
+      ],
       "multiproducto": false,
       "tiene_tikz": true,
       "tiene_longtable": false
@@ -2769,9 +3042,41 @@
           "alias_match": "portafolio de evidencias",
           "seccion": "<título>",
           "confianza": "alta"
+        },
+        {
+          "technique_id": "cuadro_comparativo",
+          "nombre": "Cuadro comparativo",
+          "catalogo_no": 1,
+          "alias_match": "cuadro comparativo",
+          "seccion": "Actividad 2. Cuadro comparativo de criterios de la redaccion academica",
+          "confianza": "media"
+        },
+        {
+          "technique_id": "mapa_conceptual",
+          "nombre": "Mapa conceptual",
+          "catalogo_no": 13,
+          "alias_match": "mapa conceptual",
+          "seccion": "Actividad 6. Mapa conceptual sobre autogestion del aprendizaje y redaccion academica",
+          "confianza": "media"
+        },
+        {
+          "technique_id": "estudio_de_caso",
+          "nombre": "Estudio de casos",
+          "catalogo_no": 27,
+          "alias_match": "estudio de caso",
+          "seccion": "Actividad 1. Estudio de caso: elementos del proceso de comunicacion",
+          "confianza": "media"
+        },
+        {
+          "technique_id": "juego_de_roles",
+          "nombre": "Juego de roles",
+          "catalogo_no": 91,
+          "alias_match": "juego de roles",
+          "seccion": "Actividad 3. Comunicacion efectiva en el ambito laboral: juego de roles",
+          "confianza": "media"
         }
       ],
-      "multiproducto": false,
+      "multiproducto": true,
       "tiene_tikz": true,
       "tiene_longtable": true
     }
