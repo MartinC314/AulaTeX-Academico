@@ -2,1540 +2,818 @@
 
 Las citas textuales se extrajeron de las fuentes de entrada. La búsqueda puede agrupar referencias del mismo concepto aunque estén en archivos distintos.
 
-## Ficha 01. Artículo 123 constitucional
+## Ficha 01. Fuentes del Derecho de la Seguridad Social
 
-**Calidad estimada:** media
-**Mejor similitud:** 0.2109
-**Similitud promedio:** 0.1338
-**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf
-**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 314; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 644; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 833; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 836; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 850; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 852; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 855; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 868; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 92; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 95; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 149; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 168; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 34; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 96; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 5
+**Calidad estimada:** alta
+**Mejor similitud:** 0.2971
+**Similitud promedio:** 0.1773
+**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf; La seguridad social y los  desa - Ana Belem Hernandez.pdf
+**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 894; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 897; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 904; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 905; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 906; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 913; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 924; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 94; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 13; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 289; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf, p. 13; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf, p. 3; La seguridad social y los  desa - Ana Belem Hernandez.pdf, p. 17
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 855 — similitud 0.2109
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.2971
 
-**Detalle de puntaje:** tfidf=0.1309; bonus=0.0800
+**Detalle de puntaje:** tfidf=0.2671; bonus=0.0300
 
-> En los dos apartados, A y B, del artículo 123 constitucional, se encuentra el catálogo de derechos laborales que se refieren a los mínimos de protección en materia de condiciones de trabajo: la jornada máxima, las medidas de protección del salario, la protección de la mujer y de la infancia en el trabajo, los derechos sindicales, así como las normas de seguridad social y las bases para la organiza- ción del sistema de justicia laboral. C.
+> 11 3. Fuente internacional del derecho a la seguridad social . . . . . . . . . . . . . . . . . . . 13 4.
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 95 — similitud 0.1995
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.2673
 
-**Detalle de puntaje:** tfidf=0.1195; bonus=0.0800
-
-> En el caso concreto, la Corte afirmó que el Convenio 87 de la OIT, al ser conforme con las disposiciones constitucionales, representa una clase de ley reglamentaria que detalla el alcance del artículo 123 constitucional en materia de libertad sindical, razón por la cual las autoridades federales y locales debían atenerse a lo dispuesto por dicho tratado.13 Aunque la interpretación realizada por la Corte al afirmar que el Convenio 87 de la OIT reglamenta un artículo constitucional contrasta con el alcance y sentido de los compromisos internacionales, la decisión sirvió para sentar un nuevo criterio en torno a la jerarquía normativa entre la Constitución, los tratados internacionales y las...
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 149 — similitud 0.1848
-
-**Detalle de puntaje:** tfidf=0.1048; bonus=0.0800
-
-> En cambio, la Ley del Seguro Social, según la fracción xxix, apartado A, del artículo 123 constitucional, “comprenderá seguros de invalidez, de vida, de cesación involuntaria del trabajo, de enfermedades y accidentes y otros con ñnes análogos", de donde se sigue que esta última Ley presupone la existencia del contrato de trabajo, pero no lo regula, ni establece o define sus elementos integrantes, entre ellos el salario, pues todo ello corresponde a la Ley Federal del Trabajo. Sobre la base de que existe el con­ trato de trabajo, la Ley del Seguro Social desarrolla sus normas dentro del ámbito que le fija la fracción XXIX antes citada.- Séptima Época.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 868 — similitud 0.1769
-
-**Detalle de puntaje:** tfidf=0.0969; bonus=0.0800
-
-> La Segunda Sala resolvió que ese contenido no puede ser inferior a las condiciones previstas en el artículo 123 constitucional, a las previstas en Ley Fe- deral del Trabajo, ni contrariar los derechos humanos reconocidos en la Consti- tución.163 En cuanto a la impugnación de la constitucionalidad de los contratos colec- tivos, la Segunda Sala resolvió que para efectos exclusivos del juicio de amparo directo, basta que se señale como acto reclamado el laudo dictado en un juicio laboral en el que, a su vez, se haya planteado alguna pretensión con base en una de esas cláusulas contractuales, para que pueda analizarse su constitucionalidad o su conformidad con los tratados internacionales en...
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 34 — similitud 0.1585
-
-**Detalle de puntaje:** tfidf=0.1285; bonus=0.0300
-
-> No es válido estimar que en razón a los grupos que se tutelan, por la naturaleza jurídica de la institución o por cualquier otra razón, los principios reguladores y los conceptos sean diversos. La naturale­ za jurídica del seguro social debía ser la misma, tratándose del Apartado A, del Apartado B del art. 123 constitucional, de los militares, de los institutos estatales o municipales, de los contratos colectivos de trabajo o de determi­ naciones que otorguen beneficios diversos.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 92 — similitud 0.1577
-
-**Detalle de puntaje:** tfidf=0.1177; bonus=0.0400
-
-> La recepción de esta norma en nuestro escenario legal ocurrió, en un primer momento, cuando el Congreso Constituyente de 1857 incorporó casi de manera literal el contenido de dicha disposición en el artículo 123 de la Constitución de aquel entonces, el cual fue aprobado por los constituyentes sin mayor discusión y reservas.6 Algo similar sucedió con el Congreso de Querétaro de 1917 que, aun- que en un inicio no consideró dicho precepto en las actas para la discusión del proyecto de la nueva Constitución, lo retomó gracias a la iniciativa de la Segunda Comisión Constituyente y lo incorporó en el que hoy es el artículo 133 de nuestra Constitución.7 Nada se dijo en aquellos debates sobre la...
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 96 — similitud 0.1157
-
-**Detalle de puntaje:** tfidf=0.0757; bonus=0.0400
-
-> 135 establecía que el gobierno fomentaría una asociación mutualista en la que los trabajadores fueran asegurados contra los riesgos de vejez y muerte. Constitución de 1917 En 1916 se convocó al Congreso Constituyente, integrado con representa­ ciones de carácter no muy definido de todos los estados de la República. El propósito de Carranza era actualizar las normas de la Constitución expedida en 1857, cuyos efectos no se habían medido a causa de las luchas internas y las presiones del extranjero.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 168 — similitud 0.1154
-
-**Detalle de puntaje:** tfidf=0.1054; bonus=0.0100
-
-> Regulación en el Derecho Mexicano En nuestro Derecho, las normas reguladoras de protección al trabajador ema­ nan de los apartados A y B del art. 123 constitucional, sin que sus disposicio-
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 314 — similitud 0.1096
-
-**Detalle de puntaje:** tfidf=0.0896; bonus=0.0200
-
-> EL ARTÍCULO 85, FRACCIÓN II, INCISO E, PRIMERA PARTE, DE LA LEY ORGÁNICA DE LA ARMADA DE MÉXICO, ABROGA- DA, QUE LA PREVÉ, ES CONSTITUCIONAL”, la cual establece en la parte que interesa lo siguiente, “La mecánica de conclusión de la relación establecida entre el personal de la milicia auxiliar y la Secretaría de Marina prevista en la norma legal referida, tiene su fundamento constitucional en el artículo 123, apartado B, fracción XIII, pues su vínculo no es de natura- leza laboral, sino administrativa, en virtud de que los militares, marinos, personal del servicio
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 836 — similitud 0.1050
-
-**Detalle de puntaje:** tfidf=0.0650; bonus=0.0400
-
-> Héctor Orduña Sosa 836 Del origen histórico de los derechos humanos laborales, así como de su funda- mento y clasificación, se puede advertir que no se reducen a derechos prestacionales a cargo del Estado, sino que tienden a configurar la organización de la sociedad en diferentes aspectos y que bajo ese rubro se agrupan diversos derechos, cuya eficacia horizontal frente a las personas empleadoras adquiere un papel relevante. A continuación, se precisarán cuáles son los grupos de derechos que se anali- zarán en este capítulo.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 852 — similitud 0.1008
-
-**Detalle de puntaje:** tfidf=0.0808; bonus=0.0200
-
-> La Segunda Sala re- solvió que los trabajadores de confianza carecen de estabilidad en el empleo, en virtud de la restricción prevista en el artículo 123, apartado B, fracción XIV, de la Constitución.94 También estableció que es una restricción constitucional la pro- hibición de reinstalación de quienes ocupan las categorías previstas en el régimen del artículo 123, apartado B, fracción XIII, de la Constitución (como los agentes de las instituciones de seguridad pública).95 La Segunda Sala declaró la inconstitu- cionalidad del artículo 63, párrafo quinto, de la Ley de Transparencia y Acceso a la Información Pública del Distrito Federal, porque establece que todo el personal del instituto de...
-
-### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 5 — similitud 0.0998
-
-**Detalle de puntaje:** tfidf=0.0598; bonus=0.0400
-
-> ISSN-e: 2529-850X Volumen 5 Numero 7 pp 740-762 JULIO 2020 DOI: 10.19230/jonnpr.3511 Evolución de la Seguridad Social en México y su relación con el contexto socioeconómico nacional (1900-2020) Ernesto Cotonieto-Martínez · 1917. Se proclamó la Constitución Política de los Estados Unidos Mexicanos en 1917 (CPEUM) durante la presidencia de Venustiano Carranza, en la que se buscó atender las demandas que dieron origen al movimiento revolucionario, incluyendo aquellas relacionadas con los derechos y obligaciones de los trabajadores y en particular sobre la seguridad social. Estas quedaron concretadas los Artículos 2, 4, 5 y 123(7,8) (Cuadro 1).
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 850 — similitud 0.0942
-
-**Detalle de puntaje:** tfidf=0.0642; bonus=0.0300
-
-> Estabilidad laboral En este apartado se incluyen los precedentes de la Suprema Corte sobre la pro- tección contra el despido injustificado y la terminación de la relación laboral, así como las medidas de protección y reparación frente a la separación arbitraria del empleo. La Segunda Sala definió la estabilidad laboral como el derecho que tiene la trabajadora o el trabajador a conservarlo, hasta la terminación de la relación laboral, de manera natural.81
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 833 — similitud 0.0926
-
-**Detalle de puntaje:** tfidf=0.0526; bonus=0.0400
-
-> Por un lado, de los grupos que acceden a la ciudadanía mediante el mercado laboral, como las mujeres o los extranjeros, y por otro, la de los recursos naturales, como la tierra, el agua o los alimentos, “que representan para el modelo productivista de desarrollo capitalista un objeto de explotación estatal o privada casi ilimitada”.13 Así, en ese esquema, la protección social se proporcionó por medio de planes de seguro social contributivos, de base profesional, y por tanto no universales, por lo que el hombre adulto a quien se dirigía la política de pleno empleo era el sujeto que producía (forjaba) la ciudadanía social, en tanto que los demás miem- bros de la familia, como la mujer, que no...
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 644 — similitud 0.0855
-
-**Detalle de puntaje:** tfidf=0.0755; bonus=0.0100
-
-> Para cumplir con este man- dato, el Estado debe dotar a niñas, niños y adolescentes con dos tipos genéricos de garantías: a) garantías primarias y b) garantías secundarias. 87 Ibidem, artículo 123, sección A-V. 88 Ibidem, artículo 123, sección A-III.
-
-**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
-
-## Ficha 02. Cobertura contributiva
-
-**Calidad estimada:** media
-**Mejor similitud:** 0.2294
-**Similitud promedio:** 0.1250
-**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf
-**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 678; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 893; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 896; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 901; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 906; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 908; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 913; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 924; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 127; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 15; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 238; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 29; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 321; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 87; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 1; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 10; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 15; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 5
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.2294
-
-**Detalle de puntaje:** tfidf=0.1994; bonus=0.0300
-
-> El derecho a la seguridad social 913 causa de muerte —de viudez en el matrimonio y en el concubinato, de orfandad y ascendencia— y servicios de guarderías. La inmensa mayoría de sentencias de la SCJN sobre seguridad social se origina en litigios dentro del modelo contributivo de aseguramiento social. Las pocas que hay sobre “programas sociales”, o modelo de seguridad social no contributivo, no le dicen, por razones que habrá que explorar con más detenimiento, “derecho a la seguridad social” al derecho a la seguridad social.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 901 — similitud 0.2021
-
-**Detalle de puntaje:** tfidf=0.1721; bonus=0.0300
-
-> II. MARCO NORMATIVO SOBRE EL DERECHO HUMANO A LA SEGURIDAD SOCIAL En este apartado quisiera exponer las fuentes normativas del derecho humano a la seguridad social. En primer lugar, voy a presentar las normas que integran el bloque de constitucionalidad.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 893 — similitud 0.1849
-
-**Detalle de puntaje:** tfidf=0.1549; bonus=0.0300
-
-> Capítulo 19 El derecho a la seguridad social 1Diana Beatriz González Carvallo* SUMARIO: I. DOCTRINA SOBRE EL CONTENIDO NORMATIVO DEL DERECHO HUMANO A LA SEGURIDAD SOCIAL.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 906 — similitud 0.1828
-
-**Detalle de puntaje:** tfidf=0.1428; bonus=0.0400
-
-> Normatividad nacional. Esquema contributivo de aseguramiento El modelo contributivo de aseguramiento está integrado por diversas institucio- nes, leyes, reglamentos y prestaciones. Para los trabajadores formales y jubilados del sector privado, el Instituto Mexicano del Seguro Social (IMSS) que, por volumen de afiliados, de trabajadores y de infraestructura institucional, es el más grande e importante.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 893 — similitud 0.1756
-
-**Detalle de puntaje:** tfidf=0.1356; bonus=0.0400
-
-> Capítulo 19 El derecho a la seguridad social 1Diana Beatriz González Carvallo* SUMARIO: I. DOCTRINA SOBRE EL CONTENIDO NORMATIVO DEL DERECHO HUMANO A LA SEGURIDAD SOCIAL. II.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 29 — similitud 0.1664
-
-**Detalle de puntaje:** tfidf=0.1364; bonus=0.0300
-
-> El objeto de la seguridad social es alcanzar el bienestar individual y colectivo mediante las normas y los principios que regulen los sistemas 1ó Migue! García Cruz, La seguridad social, México, 1951, pp. 30 y 33.
-
-### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 5 — similitud 0.1616
-
-**Detalle de puntaje:** tfidf=0.1316; bonus=0.0300
-
-> ISSN-e: 2529-850X Volumen 5 Numero 7 pp 740-762 JULIO 2020 DOI: 10.19230/jonnpr.3511 Evolución de la Seguridad Social en México y su relación con el contexto socioeconómico nacional (1900-2020) Ernesto Cotonieto-Martínez · 1917. Se proclamó la Constitución Política de los Estados Unidos Mexicanos en 1917 (CPEUM) durante la presidencia de Venustiano Carranza, en la que se buscó atender las demandas que dieron origen al movimiento revolucionario, incluyendo aquellas relacionadas con los derechos y obligaciones de los trabajadores y en particular sobre la seguridad social.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 924 — similitud 0.1387
-
-**Detalle de puntaje:** tfidf=0.1087; bonus=0.0300
-
-> Diana Beatriz González Carvallo 924 proveedor, pero no de manera autónoma u optar por una pensión universal, cuyo monto es muy bajo. c. El derecho a la seguridad social de las personas no afiliadas al esquema contributivo. El modelo de aseguramiento social en México parece estar en con- travía con el carácter universal del derecho humano a la seguridad social.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 924 — similitud 0.1378
-
-**Detalle de puntaje:** tfidf=0.0978; bonus=0.0400
-
-> Si lo hay, ¿cuál es? Si no lo hay, ¿cuál es el valor que lo fundamenta?; ¿de qué forma se estructuran las instituciones en- cargadas de garantizar el respeto de ese derecho?; ¿cómo está integrada la familia como objeto de tutela de la seguridad social y quiénes son titulares de ese derecho? ¿Cuál es la relación en México entre trabajo formal y dere- cho a la seguridad social? ¿Tienen derecho a la seguridad social las personas que no están afiliadas y que contribuyen al sistema? ¿Cuál es la relación, si la hay, entre género y derecho humano a la seguridad social?
-
-### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 1 — similitud 0.1318
-
-**Detalle de puntaje:** tfidf=0.1018; bonus=0.0300
-
-> ISSN-e: 2529-850X Volumen 5 Numero 7 pp 740-762 JULIO 2020 DOI: 10.19230/jonnpr.3511 Evolución de la Seguridad Social en México y su relación con el contexto socioeconómico nacional (1900-2020) Ernesto Cotonieto-Martínez RINCÓN DE LA HISTORIA Evolución de la Seguridad Social en México y su relación con el contexto socioeconómico nacional (1900-2020) Evolution of Social Security in México and its relation with the national socioeconomic context (1900-2020) Ernesto Cotonieto-Martínez Instituto de Ciencias de la Salud (ICSa), Universidad Autónoma del Estado de Hidalgo (UAEH) / San Agustín Tlaxiaca, Hidalgo, México Autor para correspondencia.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 906 — similitud 0.1260
-
-**Detalle de puntaje:** tfidf=0.0860; bonus=0.0400
-
-> En conclusión, la normatividad internacional que integra el bloque de consti- tucionalidad es enfática en relación con la titularidad de todas las personas del derecho a la seguridad social, pero reconoce un margen amplio de los Estados para proteger este derecho mediante esquemas de seguros —contributivos y no contributivos— o con otro tipo de modelos no necesariamente ligados al estatus laboral. Los instrumentos que provienen de instituciones como la OIT suelen conservar un supuesto laboralista y familista de ese derecho.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 901 — similitud 0.1259
-
-**Detalle de puntaje:** tfidf=0.0859; bonus=0.0400
-
-> La cuestión es si los diseños laboralistas y familistas, predominantes en ciertas regiones, ciertamente en México, responden adecuada- mente al desafío que supone la actualización de esos riesgos sociales en términos de derechos humanos. Una pregunta derivada de la anterior es si la división entre modelos, y sus efectos sobre la titularidad del derecho, contributivo y no contri- butivo de aseguramiento es admisible y sostenible. II.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 924 — similitud 0.1191
-
-**Detalle de puntaje:** tfidf=0.0791; bonus=0.0400
-
-> El derecho a la seguridad social de las personas no afiliadas al esquema contributivo. El modelo de aseguramiento social en México parece estar en con- travía con el carácter universal del derecho humano a la seguridad social. Hay una división normativa, de adjudicación y narrativa entre los beneficiarios de los modelos contributivos —entendidos con titulares del derecho— y los beneficia- rios de programas sociales —entendidos como receptores de apoyos sociales que no constituyen derechos subjetivos—.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 908 — similitud 0.1021
-
-**Detalle de puntaje:** tfidf=0.0921; bonus=0.0100
-
-> Una de las prestaciones que funcionaba de manera similar en las modalida- des contributiva y no contributiva de aseguramiento social era la de guarderías. El programa de estancias infantiles del gobierno federal estaba dirigido a la po- blación no derechohabiente con niños entre 1 y 4 año que está bajo la línea de bienestar.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 15 — similitud 0.0985
-
-**Detalle de puntaje:** tfidf=0.0585; bonus=0.0400
-
-> La creación del IMSS fue un avance fundamental para el país, toda vez que sería el marco normativo que habría de dar cabida a otros instrumentos e instituciones sobre seguros sociales, como los que protegen a los servidores públicos (Instituto de Seguridad y Servicios Sociales de los Tra­ bajadores del Estado, ISSSTE) o a las fuerzas armadas y, más tarde, al Instituto del Fondo Nacional de la Vivienda para los Trabajadores (Infonavit). En 1973 se expidió una nueva Ley del Seguro Social a iniciativa del presidente Luis Echeverría. El ordenamiento mejoró diversas áreas de la seguridad social.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 321 — similitud 0.0953
-
-**Detalle de puntaje:** tfidf=0.0753; bonus=0.0200
-
-> Ley del Seguro Social La Consar tiene como antecedente la reforma a la Ley del Seguro Social (LSS) de 1992, donde se incluye, en el art. 11, el seguro de retiro; los arts.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 896 — similitud 0.0922
-
-**Detalle de puntaje:** tfidf=0.0722; bonus=0.0200
-
-> Busca que los afectados por esas situaciones no terminen por empeñar los recursos que debieran destinar a cuestiones como cuidado y educación a la superación de situaciones urgentes y potencialmente catastróficas.9 En el debate sobre la importancia del aseguramiento social hay un tema que, aunque parece obvio, no lo es: su estatus de derecho. Tal vez el predominio de modelos laboralistas de aseguramiento hace que se soslaye que la cobertura de esos riesgos es un derecho de todas las personas y no un favor de quien cubre el riesgo —que generalmente es el Estado— a la población no contributiva.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 87 — similitud 0.0879
-
-**Detalle de puntaje:** tfidf=0.0679; bonus=0.0200
-
-> En 1974, en la ciudad de México durante la decimoprimera Conferencia se reconoce: “Que la evolución de la seguridad social en las Américas, revela tendencias y logros en la búsqueda de mecanis­ mos que permitan la incorporación voluntaria de sectores de la población con capacidad contributiva, la ampliación de la cobertura de aseguramiento hacia personas de escasos recursos, así como la introducción de programas de solida­ ridad social dirigidos a los marginados.”24 En la decimoquinta conferencia en San José, “reconoce que, no obstante el fortalecimiento de la Seguridad Social en América, aún persisten problemas que permiten apreciar que el horizonte del siglo xxi, seguirá recibiendo el...
-
-### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 10 — similitud 0.0812
-
-**Detalle de puntaje:** tfidf=0.0712; bonus=0.0100
-
-> extender la cobertura a la población abierta en zonas rurales de alta marginación, de tal forma que origina IMSS-Coplamar, posteriormente IMSS-Solidaridad (en 1996) e IMSS- Oportunidades(16,23).
-
-### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 15 — similitud 0.0597
-
-**Detalle de puntaje:** tfidf=0.0497; bonus=0.0100
-
-> Esta información causó un gran revuelo puesto que aunque el SP era un programa insuficiente, especialmente respecto a la calidad de los servicios más que de cobertura, de acuerdo con información proporcionada en el año 2019 por el Consejo Nacional de Evaluación de la Política de Desarrollo Social (CONEVAL) era considerada como una intervención efectiva en Salud Pública que contribuía a la cobertura universal; es decir, sí estaba cambiando la realidad de la población que no tenía acceso a los servicios de seguridad social(33).
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 678 — similitud 0.0589
-
-**Detalle de puntaje:** tfidf=0.0489; bonus=0.0100
-
-> Daniel Cerqueira 678 En los pueblos y comunidades indígenas se impartirá educación plurilingüe e intercultu- ral basada en el respeto, promoción y preservación del patrimonio histórico y cultural; Artículo 4º La mujer y el hombre son iguales ante la ley […] Las personas mayores de sesenta y ocho años tienen derecho a recibir por parte del Es- tado una pensión no contributiva en los términos que fije la Ley. En el caso de las y los indígenas y las y los afromexicanos esta prestación se otorgará a partir de los sesenta y cinco años de edad.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 238 — similitud 0.0588
-
-**Detalle de puntaje:** tfidf=0.0488; bonus=0.0100
-
-> Desconcentrar lleva a la creación de organismos dependientes del Ins­ tituto, como se hace en las delegaciones regionales y estatales, con funciones de decisión, para eficientizar el sistema, sin desvincularlo. En el apartado “Organización, cobertura y prestación de los servicios de salud” se señala que muchos de los problemas del acceso financiero que se han destacado en la sección anterior son parte del resultado de la existencia de un sistema vertical de servicios (delivery). La duplicidad de servicios (facilities) y el exceso de capacidad en las áreas urbanas constituyen un problema de mucho tiempo.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 127 — similitud 0.0583
-
-**Detalle de puntaje:** tfidf=0.0483; bonus=0.0100
-
-> P rim e ra s leyes 111 revisar las aportaciones patronales y de los trabajadores, como necesidad de conciliar las finanzas a fin de dar viabilidad a los ramos de aseguramiento, que permitieran ampliar la cobertura del Instituto y estimular su papel como promotor del empleo y la productividad y, finalmente, que ello conduciría a conformar la Nueva Era, con el consenso de la clase trabajadora del país.
-
-**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 4 referencia(s) de baja similitud que podrían introducir ruido.
-
-## Ficha 03. Financiamiento tripartito
-
-**Calidad estimada:** media
-**Mejor similitud:** 0.1611
-**Similitud promedio:** 0.0977
-**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf
-**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 216; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 222; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 223; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 482; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 676; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 893; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 912; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 913; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 921; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 924; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 121; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 131; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 132; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 150; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 166; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 228; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 250; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 305; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 309; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 327; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 346; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 357; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 8
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 346 — similitud 0.1611
-
-**Detalle de puntaje:** tfidf=0.1211; bonus=0.0400
-
-> Respecto de la subcuenta de vivienda, la Afore deberá individualizar las aportaciones y los rendimientos correspondientes con base en la información que le proporcionen los institutos de seguridad social. En consecuencia, la Afore recibirá las cuotas y aportaciones de seguri­ dad social correspondientes a las cuentas individuales, de conformidad con las leyes de seguridad social, así como las aportaciones voluntarias y comple­ mentarias de retiro, y los demás recursos que en términos de la Ley puedan ser recibidos en las cuentas individuales.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 250 — similitud 0.1456
-
-**Detalle de puntaje:** tfidf=0.1156; bonus=0.0300
-
-> No asalariados, campesinos y patrones personas físicas. Las personas comprendidas en este apartado pagarán el total de la cuota obrero- patronal, con base en un salario mínimo del Distrito Federal, vigente en el momento de la incorporación o de la renovación anual (art. 227, fracc.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 357 — similitud 0.1305
-
-**Detalle de puntaje:** tfidf=0.0905; bonus=0.0400
-
-> nen por objeto invertir los recursos provenientes de las cuentas individuales que reciban en los términos de las leyes de seguridad social”. Podrán invertir las aportaciones destinadas a fondos de previsión social, las aportaciones voluntarias y complementarias de retiro que reciban de los trabajadores y patrones, así como los demás recursos que en términos de esta Ley pueden ser depositados en las cuentas individuales.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 305 — similitud 0.1253
-
-**Detalle de puntaje:** tfidf=0.0853; bonus=0.0400
-
-> Articulo 75. El Instituto Mexicano del Seguro Social tendrá abierta a su nombre en el Banco de México, una cuenta que se denominará concentradora, en la cual se podrán depositar los recursos correspondientes a las cuentas obrero patro­ nales, contribuciones del Estado y cuota social del seguró de retiro, cesantía en edad avanzada y vejez, manteniéndose en dicha cuenta hasta en tanto se lleven a cabo los procesos de individualización necesarios para transferir dichos recursos a las administradoras elegidas por los trabajadores.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 893 — similitud 0.1214
-
-**Detalle de puntaje:** tfidf=0.0914; bonus=0.0300
-
-> Capítulo 19 El derecho a la seguridad social 1Diana Beatriz González Carvallo* SUMARIO: I. DOCTRINA SOBRE EL CONTENIDO NORMATIVO DEL DERECHO HUMANO A LA SEGURIDAD SOCIAL.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 893 — similitud 0.1181
-
-**Detalle de puntaje:** tfidf=0.0981; bonus=0.0200
-
-> Capítulo 19 El derecho a la seguridad social 1Diana Beatriz González Carvallo* SUMARIO: I. DOCTRINA SOBRE EL CONTENIDO NORMATIVO DEL DERECHO HUMANO A LA SEGURIDAD SOCIAL. II.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 132 — similitud 0.1181
-
-**Detalle de puntaje:** tfidf=0.0881; bonus=0.0300
-
-> Política económica y social. Considera a la seguridad social como uno de ¡os mejores medios para llevar a cabo los objetivos de estas políticas del gobierno. Situación financiera.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 131 — similitud 0.1125
-
-**Detalle de puntaje:** tfidf=0.0725; bonus=0.0400
-
-> Entre los foros destacan los de consulta para la formulación del Plan Nacional de Desarrollo 1995-2000. Asimismo, se constituyó la Comisión Tripartita para el Fortalecimiento y Mo­ dernización de la Seguridad Social, integrada por representantes de los sectores obrero y patronal, así como del gobierno, quienes son ios aportantes y beneficia­ rios directos de la institución. Después de analizadas las aportaciones recibidas
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 924 — similitud 0.1070
-
-**Detalle de puntaje:** tfidf=0.0870; bonus=0.0200
-
-> Derivado de esto, ¿cómo se integran los vínculos de correlatividad de posiciones normativas y los sujetos obligados?; ¿de qué forma se estructuran las instituciones encargadas de garantizar el respeto de ese derecho?; ¿hay algún vínculo entre el derecho a la seguridad social y la igualdad sustantiva? Si lo hay, ¿cuál es?
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 482 — similitud 0.1064
-
-**Detalle de puntaje:** tfidf=0.0664; bonus=0.0400
-
-> Fabiana Estrada Tena 482 constitucional, pues el hecho de que realizaran un “trabajo especial” en forma alguna implicaba que pudieran encontrarse privadas de una adecuada cobertura de seguridad social […]”.78 Consecuentemente, la Sala declaró la inconstitucionalidad del precepto y, plan- teó al Instituto Mexicano del Seguro Social que, al término de un año, implemen- tara un programa piloto para diseñar y ejecutar un régimen especial de seguridad social para las trabajadoras del hogar siguiendo determinados lineamientos.79 C.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.1058
-
-**Detalle de puntaje:** tfidf=0.0858; bonus=0.0200
+**Detalle de puntaje:** tfidf=0.2373; bonus=0.0300
 
 > El derecho a la seguridad social 913 causa de muerte —de viudez en el matrimonio y en el concubinato, de orfandad y ascendencia— y servicios de guarderías. La inmensa mayoría de sentencias de la SCJN sobre seguridad social se origina en litigios dentro del modelo contributivo de aseguramiento social.
 
-### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 8 — similitud 0.1050
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.2308
 
-**Detalle de puntaje:** tfidf=0.0650; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.2008; bonus=0.0300
 
-> Los beneficios que otorgaba esta institución eran: enfermedades no profesionales y maternidad, invalidez, senectud y muerte, accidentes en el centro de trabajo y cesantía involuntaria en edad avanzada. Para el financiamiento de estos bienes y servicios estaba contemplada la contribución tripartita del Estado, el trabajador y el patrón/empleador; con ello se construían los pilares de la institución que más tarde se convertiría en la más importante en términos de seguridad social y salud en el país(13). Respecto a la población objetivo, los
+> La inmensa mayoría de sentencias de la SCJN sobre seguridad social se origina en litigios dentro del modelo contributivo de aseguramiento social. Las pocas que hay sobre “programas sociales”, o modelo de seguridad social no contributivo, no le dicen, por razones que habrá que explorar con más detenimiento, “derecho a la seguridad social” al derecho a la seguridad social.
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 912 — similitud 0.1038
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 904 — similitud 0.1997
 
-**Detalle de puntaje:** tfidf=0.0838; bonus=0.0200
+**Detalle de puntaje:** tfidf=0.1697; bonus=0.0300
 
-> En suma, la CoIDH ha pasado de la negación tajante de su competencia con- vencional para conocer de violaciones interamericanas del derecho a la seguridad social, y del escepticismo velado en relación con su carácter de derecho humano, a sostener su tutela mediante el argumento de conexidad con un derecho respecto del cual tiene competencia para resolver. Más recientemente, ha sostenido que la Corte tiene competencia convencional para estudiar de manera directa la posible violación del derecho humano a la seguridad social por parte de los Estados so- metidos a su jurisdicción interamericana.
+> Requiere a los Estados reglamentar la situación de los aportes de las personas mayores migrantes y su derecho a la pensión. La OG19 del Comité de Derechos Económicos Sociales y Culturales de la ONU (CESCR), aprobada en 2007, desarrolla el artículo 9 del PIDESC sobre el derecho a la seguridad social. Precisa algunos de los riesgos sociales básicos que deben estar cubiertos a través del aseguramiento social, entre estos, maternidad, vejez, desempleo, accidentes laborales, prestaciones familiares, discapacidad, y pensiones de sobrevivientes y huérfanos.
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 676 — similitud 0.0934
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 897 — similitud 0.1993
 
-**Detalle de puntaje:** tfidf=0.0834; bonus=0.0100
+**Detalle de puntaje:** tfidf=0.1693; bonus=0.0300
 
-> vivencia y recreación, mediante acciones que faciliten el acceso al financiamiento público y privado para la construcción y mejoramiento de vivienda, así como ampliar
+> La falta de esos instrumentos, o su mal diseño, dificulta o impide que los titulares del derecho reclamen ante las autoridades competentes, o que deberían serlo, el desconocimiento de estos. Una de las facetas de la brecha entre la noción de derecho humano universal y constitucional del derecho a la seguridad social y el diseño y funcionamiento institucionales es la división entre modelos contributivos y no contributivos de aseguramiento. No sólo se trata de un problema de segmentación entre tipos de aseguramiento según el estatus laboral, sino que impacta de manera directa el derecho humano a la seguridad social, entre otros, en términos de género y con- dición socioeconómica.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 166 — similitud 0.0892
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 924 — similitud 0.1982
 
-**Detalle de puntaje:** tfidf=0.0592; bonus=0.0300
+**Detalle de puntaje:** tfidf=0.1682; bonus=0.0300
 
-> i 50 Los seguros del Seguro Social limitación propia de ese derecho común, de que ia prueba sobre la existencia de la culpa correspondía al obrero. Resultando de todo ello que, realmente el obrero carecía casi de todo derecho, quedando fuera de la protección legal los accidentes debidos a causas fortuitas, así como los debidos a imprudencia profesional del trabajador, y en los casos en que existiera esa repetida culpabilidad patronal, el obrero, carente de medios materiales, se veía imposibilitado de demostrarla!1 En Inglaterra surge, por primera vez, en forma imperativa, la protección contra los accidentes de trabajo.
+> Derivado de esto, ¿cómo se integran los vínculos de correlatividad de posiciones normativas y los sujetos obligados?; ¿de qué forma se estructuran las instituciones encargadas de garantizar el respeto de ese derecho?; ¿hay algún vínculo entre el derecho a la seguridad social y la igualdad sustantiva? Si lo hay, ¿cuál es?
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 150 — similitud 0.0795
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 894 — similitud 0.1850
 
-**Detalle de puntaje:** tfidf=0.0495; bonus=0.0300
+**Detalle de puntaje:** tfidf=0.1550; bonus=0.0300
 
-> El Consejo Técnico señala: "... cuando el fondo de ahorro se integra mediante aportaciones comunes y periódicas, y la correspondiente al pa­ trón sea igual o inferior a la cantidad aportada por el trabajador, no cons­ tituyen salario base de cotización; y si la contribución patronal al fondo de ahorro es mayor que la del trabajador, el salario base de cotización se incrementará únicamente en la cantidad que exceda a la aportada por el trabajador”, es decir: Concepto No integra Sí integra Salario ordinario N$ 1 000.00 N$ 1 000.00 Cuota de ahorro del trabajador 130.00 50.00 Cuota de ahorro del patrón 1 30.00 130.00 Parte que se integra al salario 0.00 80.00 base de cotización “La cantidad de...
+> En términos generales, el derecho a la seguridad social protege a las personas contra los riesgos graves que implican para su vida y bienestar ciertas situaciones naturales y sociales.1 Este derecho ampara, entonces, contra los efectos catastró- ficos de situaciones extraordinarias, como las pandemias, y de acontecimientos ordinarios, como la salida del mercado de trabajo por vejez.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 309 — similitud 0.0756
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 13 — similitud 0.1757
 
-**Detalle de puntaje:** tfidf=0.0356; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.1457; bonus=0.0300
 
-> Banco de México cobrará comisiones sim de la Ley de los Sistemas de Ahorro para el Re­ tiro, [...] en la cuenta “concentradora” podrán depositarse los recursos corres­ pondientes a las cuentas obrero patronales, contribuciones del Estado y cuota social del seguro de retiro, cesantía en edad avanzada y vejez, manteniéndose en ella hasta en tanto se lleven a cabo los procesos de individualización previstos en la propia Ley;
+> Cabe destacar que el maestro Briceño ha participado intensamente en el aná­ lisis y estudio de las muchísimas modificaciones que ha tenido el Derecho de la Seguridad Social en México y en el mundo. El texto que ahora sale a la luz consta de seis partes temáticas en las que el autor expone, de manera erudita pero ágil y notablemente didáctica, los aspec­ tos sustanciales del Derecho de la Seguridad Social. En la primera de ellas abor­ da los principios estructurales de la disciplina, explicando con minuciosidad los conceptos que más utiliza esta rama del Derecho, como seguridad, inseguridad, seguro, seguro social, régimen del seguro y seguros del seguro social.
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 216 — similitud 0.0728
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 894 — similitud 0.1740
 
-**Detalle de puntaje:** tfidf=0.0628; bonus=0.0100
+**Detalle de puntaje:** tfidf=0.1440; bonus=0.0300
 
-> Particularmente, los estándares del sis- tema interamericano han sido fuente clave para la consolidación de las principales líneas jurisprudenciales que han sido incorporadas por el Máximo Tribunal, tales como: la presunción general de constitucionalidad, el sistema dual de protección o los límites excepcionales a la libertad de expresión a través del test tripartito. Tales doctrinas se distinguen como aspectos pilares del alcance y contenido de este derecho fundamental y en los que se encapsulan las ideas y teorías antes revi- sadas a través de criterios puntuales y desde enfoques razonables.
+> 1 Ver OHCHR-ONU, Observación general 19, El derecho a la seguridad social, E/C.12GC/19, 4 de febrero de 2008; Melik, Özden, El derecho a la seguridad social, s.l., CETIM, 2008; Sepúlveda Carmona, Ma. Magdalena, “The Rights-Based Approach to Social Protection in Latin America: From Rethoric to Practice”, SSRN, 2015, y Sepúlveda Carmona, Ma.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 121 — similitud 0.0714
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 904 — similitud 0.1737
 
-**Detalle de puntaje:** tfidf=0.0614; bonus=0.0100
+**Detalle de puntaje:** tfidf=0.1437; bonus=0.0300
 
-> P rim eras leyes 105 En cuanto al financiamiento, “las cuotas constituyen las fuentes primarias y únicas de financiamiento”.11 Parte importante de los recursos de este ramo han provenido de los ramos de invalidez, vejez, cesantía en edad avanzada y muerte (IVCM) y guarderías.
+> Diana Beatriz González Carvallo 904 artículo 17 que todas las personas mayores tienen derecho a la seguridad social que las proteja y les permita llevar una vida digna. Esto incluye el deber de los Estados de garantizar a estas personas un ingreso digno derivado de la seguridad social o de otros sistemas de protección social flexibles.
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 921 — similitud 0.0684
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 905 — similitud 0.1566
 
-**Detalle de puntaje:** tfidf=0.0584; bonus=0.0100
+**Detalle de puntaje:** tfidf=0.1166; bonus=0.0400
 
-> Los escenarios constitucionales de litigio (iv) y (viii) se ocupan de asuntos relacionados con ese tema y son especialmente importantes porque la de guarderías es una de las prestaciones más deficitarias y, también, de las más importantes cuando se piensa en la distribución genérica de cuidados, mercados laborales y acceso a la seguridad social contributiva.76 En el patrón de litigio (iv), seguro de guarderías y de prestaciones sociales, ré- gimen de financiamiento compartido, la SCJN sostuvo que no procede el amparo cuando los demandantes no demuestran que una norma fue aplicada en su per- juicio.
+> Finalmente, el párrafo 32 enfatiza, respecto de los planes no contri- butivos, que las personas sujetas a este modelo de aseguramiento social suelen estar en condiciones de pobreza y que la mayoría de esas personas son mujeres responsables únicas del cuidado de niños. El Convenio 102 de la OIT, o norma mínima, desarrolla específicamente los su- puestos fundamentales del derecho a la seguridad social. Precisa que este derecho implica la obtención y conservación de prestaciones en efectivo o en especie que protejan a las personas contra los efectos de la falta de ingreso laboral debido a la enfermedad, invalidez, accidentes de trabajo, maternidad, apoyo familiar insu- ficiente, entre otros.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 228 — similitud 0.0634
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 94 — similitud 0.1503
 
-**Detalle de puntaje:** tfidf=0.0534; bonus=0.0100
+**Detalle de puntaje:** tfidf=0.1103; bonus=0.0400
 
-> 2 1 2 . . Los seguros del Seguro Social Financiamiento del Banco Mundial A principios de 1998 se dieron a conocer las negociaciones que venía realizan­ do ei 1MSS para obtener del Banco Mundial un financiamiento por 700 millo­ nes de dólares con el objetivo de respaldar el mejoramiento en la calidad de los servicios médicos, a seis meses de haber entrado en vigor la nueva Ley. Uno de los objetivos que se perseguían con e! ordenamiento legal era dar estabilidad financiera al Instituto y elevar la calidad de sus servicios médicos.
+> En su demanda el quejoso planteó que dicha obligación atentaba contra sus derechos de igualdad y de libertad de asociación reconocidos por la Constitución y por la Declaración Universal de los Derechos Humanos. En respuesta a dichos agravios, la Corte afirmó de manera clara que “las leyes del Congreso de la Unión y los tratados internacionales no tienen la misma jerarquía normativa que la Constitución, puesto que las leyes ‘emanan’ de ella y los tratados ‘deben estar de acuerdo con la misma’, lo que significa que dichas normas se encuentran subordinadas a la Constitución, la que las determina formal y materialmente”.
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 223 — similitud 0.0597
+### La seguridad social y los  desa - Ana Belem Hernandez.pdf — p. 17 — similitud 0.1239
 
-**Detalle de puntaje:** tfidf=0.0497; bonus=0.0100
+**Detalle de puntaje:** tfidf=0.0939; bonus=0.0300
 
-> Derecho a la libertad de expresión e información 223 Concretamente, el tercer paso del test tripartito se subdivide, a su vez, en tres criterios: la necesidad, la proporcionalidad y la idonei- dad de la limitación analizada. Necesidad.
+> La seguridad social como derecho humano también se encuentra consagrada en una serie de convenios de la oit, de los cuales destaca el número 102 (1952) sobre la seguridad social, que ha servido de base para otros instru- mentos regionales, como la Carta Social Europea, instru- mentos relativos a África y América Latina, así como el Tra- tado de Ámsterdam de la Unión Europea.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 327 — similitud 0.0593
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 289 — similitud 0.1230
 
-**Detalle de puntaje:** tfidf=0.0493; bonus=0.0100
+**Detalle de puntaje:** tfidf=0.0830; bonus=0.0400
 
-> La Comisión contará con un órgano tripartito denominado Comité Consul­ tivo y de Vigilancia, integrado por los sectores obrero, patronal y del Gobierno, que tiene por fin velar por los intereses de las partes involucradas, a efecto de que siempre se guarde armonía y equilibrio entre los intereses mencionados para el mejor funcionamiento de los SAR. Los miembros del Comité Consultivo y de Vigilancia tendrán conocimientos en materia financiera, jurídica o de se­ guridad social.
+> Es evidente que no hay espacio constitucional o legal para las empresas privadas, por lo que su participación en la administración de los recursos atenta contra los principios de la seguridad social. En caso de estimarse conveniente, debe reformarse la Constitución con la adición de un numeral, donde se dé cabida a las figuras que se han conformado en las diversas leyes y reglamentos. De las pensiones AI inicio de este capítulo mencioné la polémica que había desatado el siste­
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 222 — similitud 0.0517
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.1225
 
-**Detalle de puntaje:** tfidf=0.0417; bonus=0.0100
+**Detalle de puntaje:** tfidf=0.1025; bonus=0.0200
 
-> Es decir, “utilizar términos estric- tos y unívocos, que acoten claramente las conductas punibles»62 y de incorporar «una clara definición de la conducta incriminada, la fijación de sus elementos y el deslinde de comportamientos no pu- nibles o conductas ilícitas sancionables con medidas no penales”.63 1 Las limitaciones deben establecerse mediante leyes redactadas de forma clara y precisa El segundo paso del test tripartito consiste en determinar si la limita- ción impuesta a la libertad de expresión persigue alguno de los ob- jetivos legítimos taxativamente enunciados en el artículo 13.2.
-
-**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 9 referencia(s) de baja similitud que podrían introducir ruido.
-
-## Ficha 04. Ley del ISSSTE
-
-**Calidad estimada:** media
-**Mejor similitud:** 0.2202
-**Similitud promedio:** 0.1048
-**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf
-**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 314; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 376; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 378; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 484; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 781; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 833; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 852; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 906; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 117; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 134; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 15; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 32; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 330; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 335; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 346; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 357; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 40; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 43; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 90; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 99; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 11; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 14
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 314 — similitud 0.2202
-
-**Detalle de puntaje:** tfidf=0.1802; bonus=0.0400
-
-> EL ARTÍCULO 85, FRACCIÓN II, INCISO E, PRIMERA PARTE, DE LA LEY ORGÁNICA DE LA ARMADA DE MÉXICO, ABROGA- DA, QUE LA PREVÉ, ES CONSTITUCIONAL”, la cual establece en la parte que interesa lo siguiente, “La mecánica de conclusión de la relación establecida entre el personal de la milicia auxiliar y la Secretaría de Marina prevista en la norma legal referida, tiene su fundamento constitucional en el artículo 123, apartado B, fracción XIII, pues su vínculo no es de natura- leza laboral, sino administrativa, en virtud de que los militares, marinos, personal del servicio
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 852 — similitud 0.1540
-
-**Detalle de puntaje:** tfidf=0.1140; bonus=0.0400
-
-> La Segunda Sala re- solvió que los trabajadores de confianza carecen de estabilidad en el empleo, en virtud de la restricción prevista en el artículo 123, apartado B, fracción XIV, de la Constitución.94 También estableció que es una restricción constitucional la pro- hibición de reinstalación de quienes ocupan las categorías previstas en el régimen del artículo 123, apartado B, fracción XIII, de la Constitución (como los agentes de las instituciones de seguridad pública).95 La Segunda Sala declaró la inconstitu- cionalidad del artículo 63, párrafo quinto, de la Ley de Transparencia y Acceso a la Información Pública del Distrito Federal, porque establece que todo el personal del instituto de...
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 134 — similitud 0.1456
-
-**Detalle de puntaje:** tfidf=0.1056; bonus=0.0400
-
-> Al respecto, Javier Moreno Padilla señala: Las instituciones que se encargan de dar estos servicios en nuestro país aparte del Instituto Mexicano del Seguro Social son: el Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado, el Instituto del Fondo Nacional de la Vivienda para los Trabajadores, la Dirección de Pensiones Militares, las depen­ dencias respectivas que tienen autonomía en estos servicios (clínicas para los trabajadores bancarios, petroleros, ferrocarrileros, etc.), así como las direcciones que se encargan de prestar servicios de seguridad social a los trabajadores que laboran en las oficinas gubernamentales locales de la mayor parte de los Estados de la...
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 335 — similitud 0.1333
-
-**Detalle de puntaje:** tfidf=0.1033; bonus=0.0300
-
-> El precepto les confiere facultades expresas como abrir, administrar y ope­ rar cuentas individuales de los trabajadores inscritos en el ISSSTE, en las que se reciban recursos de los trabajadores no afiliados, que así lo deseen, destinados a la contratación de rentas vitalicias, seguros de sobrevivencia o retiros progra­ mados; cuentas en las que se reciban recursos de los trabajadores no afiliados de las dependencias o entidades públicas de carácter estatal o municipal, cuando proceda.
+> 5 1. Los derechos humanos y el derecho humano a la seguridad social . . . . . . . . . . . . . . . . . . . 5 2.
 
 ### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 906 — similitud 0.1196
 
 **Detalle de puntaje:** tfidf=0.0796; bonus=0.0400
 
-> Para los trabajadores y jubilados del sector público se crearon el Insti- tuto de Seguridad y Servicios Sociales de los Trabajadores del Estado (ISSSTE), el Instituto de Seguridad Social para las Fuerzas Armadas Mexicanas (ISSSFAM) y los 26 La sistematización de las decisiones de la SCJN sobre este tema puede consultarse en el cuader- no de jurisprudencia núm. 8.
+> En conclusión, la normatividad internacional que integra el bloque de consti- tucionalidad es enfática en relación con la titularidad de todas las personas del derecho a la seguridad social, pero reconoce un margen amplio de los Estados para proteger este derecho mediante esquemas de seguros —contributivos y no contributivos— o con otro tipo de modelos no necesariamente ligados al estatus laboral. Los instrumentos que provienen de instituciones como la OIT suelen conservar un supuesto laboralista y familista de ese derecho.
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 484 — similitud 0.1171
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 13 — similitud 0.1173
 
-**Detalle de puntaje:** tfidf=0.0771; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.0773; bonus=0.0400
 
-> En esa lógica, la Sala ha determinado que concluir el nombramiento de una trabajadora mientras goza de una licencia por maternidad se traduce en una acti- tud discriminatoria e ilegal que contraviene el principio de igualdad y no discrimi- nación.91 En ese sentido, corresponde a la persona empleadora hacer las gestiones necesarias para prorrogar o renovar el contrato por lo menos hasta la terminación de la licencia médica, a fin de permitir que la trabajadora goce de los tres meses de descanso, perciba su salario íntegro y conserve su empleo, “ya que si bien, por regla general, los trabajadores de confianza no tienen estabilidad en el empleo, lo cierto es que la propia Constitución les...
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 833 — similitud 0.1119
-
-**Detalle de puntaje:** tfidf=0.0719; bonus=0.0400
-
-> La seguridad social en nuestro país encuentra reconocimiento en el artículo 123, apartado A, fracción XXIX, de la Constitución, mediante un esquema contributivo de carácter profesional, lo cual condiciona el acceso a ese otro derecho social a que se acceda a un empleo formal con un ingreso suficiente para garantizar prestaciones sociales adecuadas y suficientes.
-
-### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 14 — similitud 0.1102
-
-**Detalle de puntaje:** tfidf=0.1002; bonus=0.0100
-
-> ISSN-e: 2529-850X Volumen 5 Numero 7 pp 740-762 JULIO 2020 DOI: 10.19230/jonnpr.3511 Evolución de la Seguridad Social en México y su relación con el contexto socioeconómico nacional (1900-2020) Ernesto Cotonieto-Martínez En 2007 entró en vigor la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del ISSSTE, en la que se creó el Fondo Nacional de Pensiones de los Trabajadores al Servicio del Estado (PENSIONISSSTE): un órgano público desconcentrado del propio ISSSTE, con las facultades y personalidad jurídica propia capaz de recibir e individualizar lo relativo a cuotas y aportaciones, abrir, operar, administrar y hacer inversiones con los recursos de las subcuentas...
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 346 — similitud 0.1089
-
-**Detalle de puntaje:** tfidf=0.0989; bonus=0.0100
-
-> La cláusula tercera confiere a las Afore, más que facultades específicas, fa­ cultades amplísimas para abrir, administrar y operar la cuenta individual del trabajador afiliado al IMSS, de los trabajadores inscritos en el ISSSTE, de traba­ jadores no afiliados al imss o que no estén inscritos en el ISSSTE, o bien que se encuentren sujetos a dos o más regímenes de seguridad social y de trabajadores de las dependencias o entidades públicas de carácter estatal o municipal. Dichas cuentas se sujetarán a las disposiciones de las leyes de seguridad social aplica­ bles y sus reglamentos, así como a lo establecido en los términos previstos en la Ley.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 32 — similitud 0.1034
-
-**Detalle de puntaje:** tfidf=0.0634; bonus=0.0400
-
-> 4. El seguro social como conocimiento ordenado, sistematizado, permite la formulación de principios; sus normas jurídicas dan lugar a institu­ ciones de Derecho; así es como conforma su autonomía, con claro y limitado ámbito de aplicación.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 357 — similitud 0.1022
-
-**Detalle de puntaje:** tfidf=0.0822; bonus=0.0200
-
-> nen por objeto invertir los recursos provenientes de las cuentas individuales que reciban en los términos de las leyes de seguridad social”. Podrán invertir las aportaciones destinadas a fondos de previsión social, las aportaciones voluntarias y complementarias de retiro que reciban de los trabajadores y patrones, así como los demás recursos que en términos de esta Ley pueden ser depositados en las cuentas individuales.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 346 — similitud 0.0999
-
-**Detalle de puntaje:** tfidf=0.0799; bonus=0.0200
-
-> Respecto de la subcuenta de vivienda, la Afore deberá individualizar las aportaciones y los rendimientos correspondientes con base en la información que le proporcionen los institutos de seguridad social. En consecuencia, la Afore recibirá las cuotas y aportaciones de seguri­ dad social correspondientes a las cuentas individuales, de conformidad con las leyes de seguridad social, así como las aportaciones voluntarias y comple­ mentarias de retiro, y los demás recursos que en términos de la Ley puedan ser recibidos en las cuentas individuales.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 43 — similitud 0.0945
-
-**Detalle de puntaje:** tfidf=0.0845; bonus=0.0100
-
-> El sistema de cuentas individuales instaurado por primera vez en la República de Chile (por Decreto 3 ,100 de 1980) y en México, iniciado con la reforma de 1992 a la LSS, cuya culminación en ese ordenamiento se da con la Ley de 1997 y en 2007 con la LISSSTE, consiste básicamente, como veremos en el desarrollo de esta obra, en eliminar los principios de solidaridad y de reparto de los ins­ titutos oficiales de seguro social (imms e issste).
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 376 — similitud 0.0916
-
-**Detalle de puntaje:** tfidf=0.0816; bonus=0.0100
-
-> 35 Véanse los amparos en revisión 703/2004 (Ponente: José de Jesús Gudiño Pelayo, resuelto el 26 de enero de 2005), 333/2007 (Ponente: Sergio Valls Hernández, resuelto el 20 de junio de 2007), 361/2007 (Ponente: Juan Silva Meza, resuelto el 20 de junio de 2007), 391/2007 (Po- nente: Juan Silva Meza, resuelto el 27 de junio de 2007) y 999/2007 (Ponente: Olga Sánchez Cordero, resuelto el 21 de noviembre de 2007), resueltos todos por la Primera Sala de la Su- prema Corte de Justicia de la Nación, Así como la tesis: 1a./J. 5/2008, Gaceta del Semanario Judicial de la Federación, Novena Época, Tomo XXVII, febrero de 2008, página 129, registro digital: 170393.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 40 — similitud 0.0896
-
-**Detalle de puntaje:** tfidf=0.0596; bonus=0.0300
-
-> Guarderías y prestaciones V. Guarderías y prestaciones sociales sociales Seguros del Seguro Social Insisto en que en México estamos cada vez más alejados de contar con una seguridad social y que, de acuerdo con las normas constitucionales, lo que tenemos son variados sistemas de seguros sociales. La lss y la lissste con­ forman, a su vez, seguros; en torno a ellos se determinan sujetos, cuotas, condiciones y prestaciones.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 15 — similitud 0.0860
-
-**Detalle de puntaje:** tfidf=0.0760; bonus=0.0100
-
-> La creación del IMSS fue un avance fundamental para el país, toda vez que sería el marco normativo que habría de dar cabida a otros instrumentos e instituciones sobre seguros sociales, como los que protegen a los servidores públicos (Instituto de Seguridad y Servicios Sociales de los Tra­ bajadores del Estado, ISSSTE) o a las fuerzas armadas y, más tarde, al Instituto del Fondo Nacional de la Vivienda para los Trabajadores (Infonavit). En 1973 se expidió una nueva Ley del Seguro Social a iniciativa del presidente Luis Echeverría.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 117 — similitud 0.0858
-
-**Detalle de puntaje:** tfidf=0.0758; bonus=0.0100
-
-> En los apartados anteriores de este capítulo establecimos los elementos de conocimiento en relación con la Ley de 1943 y con la Ley de 1973. Este último ordenamiento representa la consolidación de la primera etapa del sis­ tema, así como el antecedente, por las reformas llevadas a cabo del sistema de cuentas individuales, establecido primero en el IMSS y con posterioridad en el ISSSTE, hasta culminar con la LSS aprobada en 1995 y vigente en 1997, a la que habría de seguir la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado, en vigor a partir de 2007.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 378 — similitud 0.0854
-
-**Detalle de puntaje:** tfidf=0.0654; bonus=0.0200
-
-> La Corte ha precisado que el ámbito de aplicación material del principio de irretroactividad de la ley penal recae, por regla general, en normas sustantivas, no así en las procesales.43 Para la Suprema Corte, los actos procesales se rigen necesariamente por las normas vigentes en la época de su aplicación, por lo que no pueden tener aplicación retroactiva.44 Por tanto, si antes de que se realice una etapa del procedimiento, el legislador cambia su tramitación modificando, por ejemplo, la valoración de pruebas o suprimiendo un recurso, no existirá aplica- ción retroactiva, siempre que tales situaciones aún no se hubieren llevado a cabo.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 99 — similitud 0.0789
-
-**Detalle de puntaje:** tfidf=0.0589; bonus=0.0200
-
-> El financiamiento de este seguro se cubría mediante aportación del Gobierno Federal y de los empleados que generaban una especie de fondo de ahorro con posibilidad de retirarlo al dejar de trabajar, lo que implicaba la pér­ dida de antigüedad y derechos adquiridos, salvo reintegro que se efectuara. Se creó un organismo administrador, desconcentrado de la Secretaría de Hacien­ da, denominado Dirección General de Pensiones Civiles y de Retiro.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 90 — similitud 0.0734
-
-**Detalle de puntaje:** tfidf=0.0534; bonus=0.0200
-
-> instrumentar el traspaso tenía que superarse algunos “escollos”. Entre ellos, cómo resolver lo que se dio en llamar el “stock" del sistema, que no era otra cosa que el pago de los beneficios de los jubilados anteriores a la reforma; cómo resolver la enorme litigiosidad que generaba la nueva ley al vulnerar los derechos adquiridos con prioridad a ella, y cómo resolver el enorme agujero financiero que generaba el cambio.- Para resolver estos dilemas, además de la creación de impuestos y del endeudamiento internacional consabido, descargó una serie de leyes, decretos, decretos de necesidad y urgencia, resoluciones y reglamentaciones que transfor­ maron de cuajo el sistema...
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 330 — similitud 0.0688
-
-**Detalle de puntaje:** tfidf=0.0588; bonus=0.0100
-
-> 25). Se obliga a la Consar a actuar en concordancia con la Ley Federal de Compe­ tencia Económica para establecer los mecanismos necesarios a efecto de que no se presenten prácticas monopólicas absolutas o relativas como resultado de la conducta de los participantes o por una concentración del mercado. Los mecanismos señalados se aplicarán previa opinión de la Comisión Federa! de Competencia Económica y del Comité Consultivo y de Vigilancia.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 781 — similitud 0.0660
-
-**Detalle de puntaje:** tfidf=0.0660; bonus=0.0000
-
-> El derecho a un medio ambiente sano 781 artículo 73, fracción XXIX-G constitucional, no solamente entre los tres órdenes de gobierno, sino también de manera transversal por los diferentes sectores del desarrollo nacional. Entre ellas se encuentran la Ley General del Equilibrio Eco- lógico y la Protección al Ambiente (LGEEPA), la Ley General de Vida Silvestre, la Ley General de Cambio Climático, la Ley General de Desarrollo Forestal Sus- tentable, la Ley General para la Prevención y Gestión Integral de los Residuos, la Ley Federal de Responsabilidad Ambiental, la Ley de Aguas Nacionales y el Código Penal Federal en su capítulo de Delitos contra el Ambiente y la Gestión Ambiental, entre otras.
-
-### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 11 — similitud 0.0641
-
-**Detalle de puntaje:** tfidf=0.0541; bonus=0.0100
-
-> ISSN-e: 2529-850X Volumen 5 Numero 7 pp 740-762 JULIO 2020 DOI: 10.19230/jonnpr.3511 Evolución de la Seguridad Social en México y su relación con el contexto socioeconómico nacional (1900-2020) Ernesto Cotonieto-Martínez embargo, esto también permitió abrir la competencia entre prestadores de servicios privados y públicos. Esta reforma estableció las bases para la promulgación de la Ley General de Salud en 1984, la que contempló la articulación de acciones estatales y federales, así como los principios para la descentralización de los servicios sanitarios respecto al manejo de recursos económicos, humanos y materiales(25).
-
-**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 5 referencia(s) de baja similitud que podrían introducir ruido.
-
-## Ficha 05. Ley del Seguro Social
-
-**Calidad estimada:** alta
-**Mejor similitud:** 0.2821
-**Similitud promedio:** 0.1752
-**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf
-**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 765; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 100; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 111; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 114; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 13; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 137; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 148; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 149; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 169; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 221; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 226; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 228; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 23; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 24; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 26; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 27; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 275; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 28; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 321; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 335; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 346; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 369; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 38; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 39; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 4; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 419; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 12
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 23 — similitud 0.2821
-
-**Detalle de puntaje:** tfidf=0.2421; bonus=0.0400
-
-> Sierra López, "Inseguridad, seguridad jurídica y seguridad social”, en Boletín de Información Jurídica, IMSS, núm. 15, septiembre-octubre de 1985.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 321 — similitud 0.2721
-
-**Detalle de puntaje:** tfidf=0.1921; bonus=0.0800
-
-> Ley del Seguro Social La Consar tiene como antecedente la reforma a la Ley del Seguro Social (LSS) de 1992, donde se incluye, en el art. 11, el seguro de retiro; los arts.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 148 — similitud 0.2549
-
-**Detalle de puntaje:** tfidf=0.1749; bonus=0.0800
-
-> Instituto Mexicano del Seguro Social, en su carácter de Organismo Fiscal Autóno­ mo, la determinación de los créditos y de las bases para su liquidación, fijar la canti­ dad líquida, su percepción y cobro de conformidad con la Ley del Seguro Social. En el art.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 149 — similitud 0.2506
-
-**Detalle de puntaje:** tfidf=0.1706; bonus=0.0800
-
-> En cambio, la Ley del Seguro Social, según la fracción xxix, apartado A, del artículo 123 constitucional, “comprenderá seguros de invalidez, de vida, de cesación involuntaria del trabajo, de enfermedades y accidentes y otros con ñnes análogos", de donde se sigue que esta última Ley presupone la existencia del contrato de trabajo, pero no lo regula, ni establece o define sus elementos integrantes, entre ellos el salario, pues todo ello corresponde a la Ley Federal del Trabajo. Sobre la base de que existe el con­ trato de trabajo, la Ley del Seguro Social desarrolla sus normas dentro del ámbito que le fija la fracción XXIX antes citada.- Séptima Época.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 169 — similitud 0.2347
-
-**Detalle de puntaje:** tfidf=0.1547; bonus=0.0800
-
-> La l f t , en atención a la disposición constitucional, precisa 3a forma y los términos en que el patrón otorgará los servicios médicos y los diversos su­ puestos de indemnización, según el daño resentido. La Ley del Seguro Social (l s s) establece, a partir del ordenamiento de 1943, el seguro de accidentes de trabajo y enfermedades profesional y, a partir
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 100 — similitud 0.2283
-
-**Detalle de puntaje:** tfidf=0.1483; bonus=0.0800
-
-> Se considera de utilidad pública la expedición de la Ley del Seguro Social y ella comprenderá los seguros de invalidez, de vejez, de cesación involuntaria del traba­ jo, de enfermedades y accidentes y otros con fines análogos. La reforma de 1959 incluyó el Apartado B para regular las relaciones labo­ rales entre los Poderes de la Unión y sus trabajadores.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 111 — similitud 0.2263
-
-**Detalle de puntaje:** tfidf=0.1463; bonus=0.0800
-
-> F Primeras leyes 95 Reformas constitucionales | Texto inicial 1917 \ Se considera de utilidad social: el establecimiento de cajas de seguros populares; de invalidez, de vida, de cesación involuntaria de trabajo, de accidentes y otros, con fines análogos, por lo cual, el Gobierno Federal como el de cada Estado, deberán fomentar la organización de instituciones económicas de esta índole, para infundir e inculcar la previsión popular. | Reforma 1929 \ Se considera de utilidad pública la Ley del Seguro Social, y ella comprenderá seguros de invalidez, de vejez, de cesación involuntaria del trabajo, de enfermedades y accidentes y otros con fines análogos. | Reforma 1974 | Es de utilidad pública...
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 275 — similitud 0.2251
-
-**Detalle de puntaje:** tfidf=0.1451; bonus=0.0800
-
-> Este seguro protege a ios hijos de las madres aseguradas, los viudos, divorciados o los que judicialmente conser­ ven la custodia de sus hijos, mientras no contraigan nuevamente matrimonio E o se unan en concubinato (art. 205, LSS), durante las horas de su jornada de trabajo, en la forma y tos términos establecidos en la Ley del Seguro Social (LSS) y el reglamento relativo: Reglamento para la Prestación de los Servicios de Guardería (r psg).
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 114 — similitud 0.2235
-
-**Detalle de puntaje:** tfidf=0.1435; bonus=0.0800
-
-> El art. 183 H ordenó que dentro de los cuatro días hábiles siguientes a su re­ cepción trasladarían al Banco de México los recursos; esta institución abriría 2 Ley del Seguro Social, Aleo, México, 1993, pp. 10 y sigs.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 4 — similitud 0.1984
-
-**Detalle de puntaje:** tfidf=0.1584; bonus=0.0400
-
-> C O L E C C I Ó N T E X T O S J U R Í D I C O S U N I V E R S I T A R I O S Derecho de la seguridad social Alberto Briceño Ruiz U n iv er sid a d N a c io n a l A u t ó n o m a de M éxico O X FO R D l í N I V E R S I T Y PRESS
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 24 — similitud 0.1921
-
-**Detalle de puntaje:** tfidf=0.1521; bonus=0.0400
-
-> La protección supone un riesgo y éste la necesidad de atender una con­ tingencia. Así como se ha visto la conveniencia de precisar el concepto de seguridad social, existe la preocupación de que la denominación de seguro no comprenda la trascendencia de esta disciplina. Los pocos autores y el reducido número de maestros en esta materia no hemos unificado criterios en cuanto al concepto de seguridad social.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 38 — similitud 0.1677
-
-**Detalle de puntaje:** tfidf=0.1277; bonus=0.0400
-
-> Regímenes de Seguro En el art. 6 de la Ley de 1997 se reproduce el criterio de los ordenamientos anteriores y el seguro social comprende dos tipos de régimen: obligatorio y voluntario. Seguro obligatorio El seguro social se impone a la voluntad de los particulares.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 13 — similitud 0.1607
-
-**Detalle de puntaje:** tfidf=0.1207; bonus=0.0400
-
-> Queda claro que en nuestro país la seguridad social ha sido preocupación tanto de la administración pública como del sector académico, que mucho ha aportado para su mejor concepción y funcionamiento. En este marco apa­ rece la presente obra titulada Derecho de la seguridad social, de la autoría de Don Alberto Briceño Ruiz, distinguido catedrático universitario, quien desde hace casi 40 años ha impartido la asignatura en la Facultad de Derecho de la Universidad Nacional Autónoma de México (unam), en donde cuenta con la categoría de profesor titular nivel “C”. Briceño Ruiz es, además, presidente de la Academia Mexicana de Derecho de la Seguridad Social, que fundó hace poco más de 10 años.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 39 — similitud 0.1600
-
-**Detalle de puntaje:** tfidf=0.1200; bonus=0.0400
-
-> El seguro facultativo da al asegurado en el régimen obligatorio la posibilidad de incorporar al sistema del seguro social a familiares o personas que no tie­ nen el carácter de beneficiarios, mediante convenios que al respecto celebren. Representa una facilidad para el asegurado, al poder inscribir a personas que dependen de él, con la facilidad de inscribirlos y poder darlos de baja, sin ma­ yor trámite.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 765 — similitud 0.1573
-
-**Detalle de puntaje:** tfidf=0.1173; bonus=0.0400
-
-> Tal como se mencionó anteriormente, un importante precedente de la Corte donde se intentó avanzar en este tema es el Amparo en Revisión 9/2018, también llamado “Caso de las Trabajadoras del Hogar”, en este asunto la Suprema Corte analizó diversas disposiciones de la Ley del Seguro Social y de la Ley Federal del Trabajo que permitían a los patrones omitir la inscripción de las trabajadoras y los trabajadores domésticos ante el Instituto Mexicano del Seguro Social.188 La Corte señaló que las normas analizadas eran inconstitucionales, debido a que no obstante se encontraban redactadas en términos neutrales, con un enfo- que de género era posible visualizar que la exclusión de la labor...
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 137 — similitud 0.1552
-
-**Detalle de puntaje:** tfidf=0.1352; bonus=0.0200
-
-> 13 se dispone: Mediante convenio con el Instituto se establecerán las modalidades y fechas de incorporación al régimen obligatorio, de los sujetos de aseguramiento compren­ didos en este artículo.- Dichos convenios deberán sujetarse al reglamento íjue al efecto expida el Ejecutivo Federal, Si los sujetos pueden incorporarse y el Instituto está facultado para abrir lapsos de inscripción, no estamos ante un régimen obligatorio, sino ante un régimen voluntario. En el estudio de la Ley se observa la figura de la continua­ ción voluntaria en el régimen obligatorio”, en la que el asegurado... al ser dado de baja tiene el derecho a continuar voluntariamente en el mismo...” (art.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 419 — similitud 0.1406
-
-**Detalle de puntaje:** tfidf=0.1006; bonus=0.0400
-
-> Beveridge, William, Las bases de la seguridad social, Fondo de Cultura Eco­ nómica, México, 1987. Bowen Herrera, Alfredo, Introducción a la seguridad social, 3a ed. actualizada, Editorial Jurídica de Chile, Santiago de Chile, 1992. Briceño Ruiz, Alberto, Derecho mexicano de los seguros sociales, Haría, Méxi­ co, 1987. _____, Derecho individual del trabajo, Haría, México, 1985.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 27 — similitud 0.1365
-
-**Detalle de puntaje:** tfidf=0.0965; bonus=0.0400
-
-> El seguro social asume la función particular, no general, sino ■precisada y referida a grupos determinados, como imperativo funcional, de estructura, de un organismo especializado. La seguridad social es total, obligatoria y humana. El seguro social es un mecanismo que produce un resultado previsto y deseado, como fenómeno técnico objetivo.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 346 — similitud 0.1363
-
-**Detalle de puntaje:** tfidf=0.0963; bonus=0.0400
-
-> Respecto de la subcuenta de vivienda, la Afore deberá individualizar las aportaciones y los rendimientos correspondientes con base en la información que le proporcionen los institutos de seguridad social. En consecuencia, la Afore recibirá las cuotas y aportaciones de seguri­ dad social correspondientes a las cuentas individuales, de conformidad con las leyes de seguridad social, así como las aportaciones voluntarias y comple­ mentarias de retiro, y los demás recursos que en términos de la Ley puedan ser recibidos en las cuentas individuales.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 28 — similitud 0.1331
-
-**Detalle de puntaje:** tfidf=0.0931; bonus=0.0400
-
-> Me atrevería a sostener que se remonta al momento mismo de la creación, en que el universo y los sistemas de planetas son producto de una armonía de fuerzas. El seguro social nació a fines del siglo XIX por la acción decidida de los gobiernos europeos, casi al tiempo que se estructura el derecho del trabajo, sin contar con su dinámica. Las publicaciones al respecto son escasas y su vinculación con la legislación laboral persiste hasta nuestros días.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 221 — similitud 0.1316
-
-**Detalle de puntaje:** tfidf=0.1016; bonus=0.0300
-
-> La solución no es acabar con las deficiencias, sino realizar el máximo esfuerzo para hacer de ésta una institución cuyo servicio sea cada día más eficiente. La iniciativa presidencial presentada en 1995 destaca la intención de am­ pliar el esquema para facilitar la impartición de los servicios por organismos privados: La Iniciativa establece bases claras para la suscripción de convenios de reversión de cuotas, los cuales están presentes desde la Ley del Seguro Social de 1943. Estos, que han existido desde ios orígenes del Instituto, no contaban con la pre­ cisión y certidumbre jurídica requerida, fijándose ahora los principios que le ga­ rantizan protección total al trabajador.
-
-### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 12 — similitud 0.1305
-
-**Detalle de puntaje:** tfidf=0.0905; bonus=0.0400
-
-> Creado durante el sexenio de Ernesto Zedillo (1994-2000), tuvo como principal objetivo la reorganización de la atención y del sistema de pensiones del IMSS, la descentralización iniciada en 1984 y la conformación de paquetes de atención en materia de Seguridad Social(25). · Nueva Ley del Seguro Social de 1995 (entró en vigor en 1997). Contempló la creación del Seguro de Salud para la familia, lo que le permitía a los trabajadores no asalariados, y a sus familias, recibir atención médica del IMSS con el pago anticipado de cuotas anuales.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 26 — similitud 0.1288
-
-**Detalle de puntaje:** tfidf=0.0888; bonus=0.0400
-
-> Asimismo, en la medida de su eficacia y cuidadosa administración, el se­ guro social es un instrumento de paz social, especialmente en esta época en la que los problemas internos se han hecho evidentes con mayores índices de inseguridad. Seguridad social y seguro social La existencia de la seguridad social supone y condiciona al seguro social; el crecimiento del seguro social amplía el marco de la seguridad social.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 226 — similitud 0.1236
-
-**Detalle de puntaje:** tfidf=0.0836; bonus=0.0400
-
-> Su sueño será realidad si el Gobierno de Zedillo lleva a cabo ios planes para permitir a las grandes empresas subrogar el pago de las cuotas al Seguro Social cuando se pueda proporcionar servicio médico alternativo a sus trabajadores. La cláusula de subrogación, incluida en una nueva ley de! seguro social que en­ tró en vigor en julio, podría abrir la puerta para que organizaciones de servicios de salud como las HMO (Health Maintenance Organizations) comiencen a hacer negocios en México.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 228 — similitud 0.1210
-
-**Detalle de puntaje:** tfidf=0.0810; bonus=0.0400
-
-> Dos para la privatización de las pensiones, dos para la privatización del Sector Salud. Si no hubiera otras evidencias de la injerencia del Banco Mundial en la siniestra refor­ ma del Seguro Social, estos cuatro préstamos por un total de 2 mil 200 millones de dólares, deberá ser prueba ante la historia de que la reforma se decidió en Washington.- A mí me parecía sorprendente que los representantes de las Afores estuvieran tan firmes en sus convicciones; hace una semana el director de una de ellas declaró que no habría cambio en la legislación, digan lo que digan los diputados - ¡Claro!
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 335 — similitud 0.1194
-
-**Detalle de puntaje:** tfidf=0.0794; bonus=0.0400
-
-> Por tanto, recibirán las cuotas y aportaciones de seguridad social co­ rrespondientes a las cuentas individuales, de conformidad con las leyes de segu­ ridad social, así como las aportaciones voluntarias y complementarias de retiro y los demás recursos en las cuentas individuales, y administrarán los recursos de los fondos de previsión social.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 369 — similitud 0.1082
-
-**Detalle de puntaje:** tfidf=0.0682; bonus=0.0400
-
-> Con razón señaló José Ángel Conchello Dávila, de grata memoria, en un artículo publicado en El Universal. Ayer se cumplió un año de haber iniciado la privatización de las pensiones del Seguro Social.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 13 — similitud 0.1079
-
-**Detalle de puntaje:** tfidf=0.0679; bonus=0.0400
-
-> Cabe destacar que el maestro Briceño ha participado intensamente en el aná­ lisis y estudio de las muchísimas modificaciones que ha tenido el Derecho de la Seguridad Social en México y en el mundo. El texto que ahora sale a la luz consta de seis partes temáticas en las que el autor expone, de manera erudita pero ágil y notablemente didáctica, los aspec­ tos sustanciales del Derecho de la Seguridad Social. En la primera de ellas abor­ da los principios estructurales de la disciplina, explicando con minuciosidad los conceptos que más utiliza esta rama del Derecho, como seguridad, inseguridad, seguro, seguro social, régimen del seguro y seguros del seguro social.
+> En consecuencia, el Estado deberá prevenir, investigar, sancionar y reparar las violaciones a los derechos humanos, en los términos que establezca la ley.11 3. Fuente internacional del derecho a la seguridad social La seguridad social en el ámbito de cada país, se com­ plementa con los avances que han impulsado organis­ mos internacionales como la Organización de las Na­ ciones Unidas y la OIT, mediante la celebración de 11 En su artículo 1º, párrafo primero, la Constitución ordena que los de­ rechos no podrán restringirse ni suspenderse salvo los casos y en las condi­ ciones que ella establece. Derecho humano a la seguridad social 13
 
 **Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
 
-## Ficha 06. Régimen obligatorio
+## Ficha 02. Fundamento constitucional del derecho a la seguridad social
 
 **Calidad estimada:** alta
-**Mejor similitud:** 0.3317
-**Similitud promedio:** 0.1865
-**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf
-**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 314; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 459; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 765; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 913; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 136; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 137; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 139; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 140; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 141; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 160; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 213; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 38; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 39; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 391
+**Mejor similitud:** 0.3168
+**Similitud promedio:** 0.1860
+**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf; La seguridad social y los  desa - Ana Belem Hernandez.pdf; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf
+**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 826; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 833; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 852; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 863; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 879; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 893; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 894; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 897; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 901; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 904; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 905; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 909; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 913; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 924; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 419; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf, p. 3; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf, p. 5; La seguridad social y los  desa - Ana Belem Hernandez.pdf, p. 6; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 139; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 158; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 161
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 137 — similitud 0.3317
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.3168
 
-**Detalle de puntaje:** tfidf=0.2917; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.2768; bonus=0.0400
 
-> Artículo 13. Igualmente son sujetos de aseguramiento del régimen obligatorio... El adverbio de modo que se empleaba en el segundo de los preceptos, “igualmente”, significa: con igualdad, también, asimismo; esta palabra obli­ gaba a dar el mismo trato y sujetar a iguales condiciones ambos supuestos, lo que no sucedía en la práctica.
+> 10 III. Fundamento constitucional y organismos de seguridad social . . . . . . . . . . . . . . . . . 11 3.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 137 — similitud 0.3064
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 5 — similitud 0.2724
 
-**Detalle de puntaje:** tfidf=0.2264; bonus=0.0800
+**Detalle de puntaje:** tfidf=0.2324; bonus=0.0400
 
-> En la parte final del art. 13 se dispone: Mediante convenio con el Instituto se establecerán las modalidades y fechas de incorporación al régimen obligatorio, de los sujetos de aseguramiento compren­ didos en este artículo.- Dichos convenios deberán sujetarse al reglamento íjue al efecto expida el Ejecutivo Federal, Si los sujetos pueden incorporarse y el Instituto está facultado para abrir lapsos de inscripción, no estamos ante un régimen obligatorio, sino ante un régimen voluntario.
+> Presentación A través de esta publicación, la Comisión Nacional de los Derechos Humanos presenta una visión introduc­ toria del derecho humano a la seguridad social y es­ pera brindar a toda persona o autoridad interesada, información básica, a fin de coadyuvar a la consolida­ ción de una cultura de promoción, respeto, protección y garantía de los derechos humanos. 1.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 139 — similitud 0.2515
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 909 — similitud 0.2423
 
-**Detalle de puntaje:** tfidf=0.1715; bonus=0.0800
+**Detalle de puntaje:** tfidf=0.2023; bonus=0.0400
 
-> Los pri­ meros pertenecen al régimen obligatorio o voluntario; los beneficiarios son el (la) cónyuge o concubino(a) y los familiares de los asegurados, que por ley tienen a su favor los servicios médicos y en algunos casos prestaciones económicas.
+> En los casos en los que el objeto de litigio era una cuestión del derecho humano a la seguridad social, el Tribunal interamericano reconducía el problema jurídico a la violación del derecho a la propiedad privada y, por esa vía, otorgaba la tutela. Posteriormente, esa doctrina de la incompetencia fue modificada.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 137 — similitud 0.2414
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 897 — similitud 0.2300
 
-**Detalle de puntaje:** tfidf=0.1614; bonus=0.0800
+**Detalle de puntaje:** tfidf=0.1900; bonus=0.0400
 
-> El supuesto jurídico era el mismo en la Ley vigente hasta junio de 1997, donde señalaba: Artículo 12. Son sujetos de aseguramiento a! régimen obligatorio. Artículo 13.
+> La falta de esos instrumentos, o su mal diseño, dificulta o impide que los titulares del derecho reclamen ante las autoridades competentes, o que deberían serlo, el desconocimiento de estos. Una de las facetas de la brecha entre la noción de derecho humano universal y constitucional del derecho a la seguridad social y el diseño y funcionamiento institucionales es la división entre modelos contributivos y no contributivos de aseguramiento. No sólo se trata de un problema de segmentación entre tipos de aseguramiento según el estatus laboral, sino que impacta de manera directa el derecho humano a la seguridad social, entre otros, en términos de género y con- dición socioeconómica.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 141 — similitud 0.2373
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.2245
 
-**Detalle de puntaje:** tfidf=0.1573; bonus=0.0800
-
-> en el seguro voluntario, sin que sea adecuada la mención en el enunciado del precepto; “voluntariamente podrán ser sujetos de aseguramiento en el régimen obligatorio”. Los términos voluntariamente y podrán implican que resulta de la voluntad de los sujetos y los grupos, aun cuando se advierta que los capítu­ los IX y X del Título Segundo establecen tanto las condiciones como los seguros que específicamente pueden en cada caso establecerse, de los arts.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 213 — similitud 0.2227
-
-**Detalle de puntaje:** tfidf=0.1427; bonus=0.0800
-
-> El Instituto proporcionará el apoyo necesario a los servicios de solidaridad social que esta Ley le atribuye, sin perjuicio del eficaz otorgam iento de las prestaciones a que tienen derecho los trabajadores y demás beneficíanos del régimen obligatorio. Artículo 226.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 140 — similitud 0.2136
-
-**Detalle de puntaje:** tfidf=0.1336; bonus=0.0800
-
-> Artículo 12. Los grupos contenidos en este precepto corresponden al régimen obligatorio, sin condición; deben incorporarse o ser inscritos en el momento en que tengan el carácter que en cada caso determina la Ley. La falta de afilia­ ción dará lugar a la aplicación de sanción.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 136 — similitud 0.2046
-
-**Detalle de puntaje:** tfidf=0.1646; bonus=0.0400
-
-> 18). Régimen voluntario El régimen voluntario se refiere a: a) El seguro de salud para la familia, a favor de todos sus integrantes, que tienen derecho a un seguro de enfermedades y maternidad, me­ diante convenio (Capítulo i del Título Tercero). b) La seguridad social en el campo, tanto campesinos como trabajado­ res asalariados (arts. 234, 235 y 237). c) Los grupos de aseguramiento a que se refiere el art.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 38 — similitud 0.2018
-
-**Detalle de puntaje:** tfidf=0.1218; bonus=0.0800
-
-> Se limita en cuanto a los sujetos que protege y a los tiempos de protec­ ción; además de que reduce las ventajas del seguro obligatorio. Este tipo de seguro permite: • Captar ingresos adicionales mediante aportaciones diversas a las del régimen obligatorio. • Facultar ai Instituto administrador para incorporar a otros grupos so­ ciales, ajenos a los trabajadores.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 39 — similitud 0.1882
-
-**Detalle de puntaje:** tfidf=0.1082; bonus=0.0800
-
-> El seguro facultativo da al asegurado en el régimen obligatorio la posibilidad de incorporar al sistema del seguro social a familiares o personas que no tie­ nen el carácter de beneficiarios, mediante convenios que al respecto celebren. Representa una facilidad para el asegurado, al poder inscribir a personas que dependen de él, con la facilidad de inscribirlos y poder darlos de baja, sin ma­ yor trámite.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 314 — similitud 0.1773
-
-**Detalle de puntaje:** tfidf=0.1473; bonus=0.0300
-
-> EL ARTÍCULO 85, FRACCIÓN II, INCISO E, PRIMERA PARTE, DE LA LEY ORGÁNICA DE LA ARMADA DE MÉXICO, ABROGA- DA, QUE LA PREVÉ, ES CONSTITUCIONAL”, la cual establece en la parte que interesa lo siguiente, “La mecánica de conclusión de la relación establecida entre el personal de la milicia auxiliar y la Secretaría de Marina prevista en la norma legal referida, tiene su fundamento constitucional en el artículo 123, apartado B, fracción XIII, pues su vínculo no es de natura- leza laboral, sino administrativa, en virtud de que los militares, marinos, personal del servicio
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 765 — similitud 0.1585
-
-**Detalle de puntaje:** tfidf=0.1185; bonus=0.0400
-
-> Tal como se mencionó anteriormente, un importante precedente de la Corte donde se intentó avanzar en este tema es el Amparo en Revisión 9/2018, también llamado “Caso de las Trabajadoras del Hogar”, en este asunto la Suprema Corte analizó diversas disposiciones de la Ley del Seguro Social y de la Ley Federal del Trabajo que permitían a los patrones omitir la inscripción de las trabajadoras y los trabajadores domésticos ante el Instituto Mexicano del Seguro Social.188 La Corte señaló que las normas analizadas eran inconstitucionales, debido a que no obstante se encontraban redactadas en términos neutrales, con un enfo- que de género era posible visualizar que la exclusión de la labor...
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 38 — similitud 0.1508
-
-**Detalle de puntaje:** tfidf=0.1108; bonus=0.0400
-
-> Regímenes de Seguro En el art. 6 de la Ley de 1997 se reproduce el criterio de los ordenamientos anteriores y el seguro social comprende dos tipos de régimen: obligatorio y voluntario. Seguro obligatorio El seguro social se impone a la voluntad de los particulares.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 140 — similitud 0.1498
-
-**Detalle de puntaje:** tfidf=0.1098; bonus=0.0400
-
-> 124 Las leyes d el Seguro Social A continuación se presenta esquemáticamente la clasificación de las personas: Solid ario habientes Personas 4 Sujetos obligados Derechohabieníes i Beneficiarios Asegurados 4 Voluntario Obligatorio Derechohabientes Asegurados Los sujetos de aseguramiento que pertenecen tanto al seguro obligatorio como al voluntario se enlistan por grupos en los arts. 12 y 13.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 459 — similitud 0.1372
-
-**Detalle de puntaje:** tfidf=0.0972; bonus=0.0400
-
-> En DH and Others, la Corte Europea de Derechos Humanos reiteró que las diferencias de tra- to basadas en raza, color u origen étnico ameritan la aplicación de un escrutinio estricto.83 De igual manera, la Corte mexicana aplicó un test estricto de igualdad al estudiar el impacto desproporcionado en las mujeres que generaban las normas que excluían a los trabajadores del hogar del régimen obligatorio de seguridad social.84 El siguiente esquema muestra un resumen de estas gradas, según los diferentes niveles de análisis. Test de igualdad85 Escrutinio leve •  Fin legítimo •  Adecuación potencial de la medida Se aplica tratándose de violaciones genéri- cas al principio de igualdad.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 213 — similitud 0.1220
-
-**Detalle de puntaje:** tfidf=0.0820; bonus=0.0400
-
-> Artículo 226. No procederá el aseguramiento voluntario, cuando de manera pre­ visible éste pueda comprometer el equilibrio financiero del Instituto o la eficacia de los servicios que proporcione a los asegurados en el régimen obligatorio. El art.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 141 — similitud 0.1174
-
-**Detalle de puntaje:** tfidf=0.0774; bonus=0.0400
-
-> Las características de los grupos señalados en el art. 13 se indican en el último párrafo: “Mediante convenio se establecerán las modalidades y fe­ chas de incorporación ai régimen obligatorio, de los sujetos de aseguramiento comprendidos en este artículo.” No asalariados. Son las personas que desempeñan por propia cuenta una actividad económica que les permite obtener ingresos para aten­ der sus necesidades, sin estar subordinados a alguna persona física o moral.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 391 — similitud 0.1087
-
-**Detalle de puntaje:** tfidf=0.0687; bonus=0.0400
-
-> Estos tributos tienen su fundamento jurídico, además de la sujeción a la potestad de imperio del Estado para imponer las contribuciones necesarias para hacer frente a los gastos públicos, en lo dispuesto por el artícu­ lo 123, fracción XXIX, de la Constitución Política, pues el Seguro Social consti­ tuye un servicio público nacional, establecido con carácter obligatorio.2 2 Informe del Presidente de la Suprema Corte de Justicia de la Nación. 1970.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.1055
-
-**Detalle de puntaje:** tfidf=0.0755; bonus=0.0300
+**Detalle de puntaje:** tfidf=0.1845; bonus=0.0400
 
 > Las pocas que hay sobre “programas sociales”, o modelo de seguridad social no contributivo, no le dicen, por razones que habrá que explorar con más detenimiento, “derecho a la seguridad social” al derecho a la seguridad social. Un porcentaje importante de asuntos se desechan por cuestiones de procedimiento41 y otro tanto niegan la pro- tección constitucional porque sostienen que las instituciones de seguridad social, cuando actúan en su calidad de aseguradoras, no son autoridades en términos del juicio de amparo, sino que están en igualdad de condiciones con el solicitante. Esa doctrina recientemente se ha modificado.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 160 — similitud 0.1039
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.2233
 
-**Detalle de puntaje:** tfidf=0.0639; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.1933; bonus=0.0300
 
-> 3. La obligatoriedad de la cuota deriva: a) Del carácter obligatorio del Seguro Social, en los términos de la fracc. xxix del Apartado A del art. 123 constitucional. b) De la voluntad de los asegurados, cuando queda a su potestad la incorporación al Seguro Social.
+> 5 1. Los derechos humanos y el derecho humano a la seguridad social . . . . . . . . . . . . . . . . . . . 5 2.
 
-**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 833 — similitud 0.2165
 
-## Ficha 07. Régimen voluntario
+**Detalle de puntaje:** tfidf=0.1765; bonus=0.0400
 
-**Calidad estimada:** media
-**Mejor similitud:** 0.2675
-**Similitud promedio:** 0.1674
-**Fuentes:** Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf
-**Ubicaciones:** Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 112; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 118; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 136; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 137; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 139; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 140; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 141; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 142; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 15; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 157; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 212; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 239; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 38; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 388; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 39; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 41; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 12
+> La seguridad social en nuestro país encuentra reconocimiento en el artículo 123, apartado A, fracción XXIX, de la Constitución, mediante un esquema contributivo de carácter profesional, lo cual condiciona el acceso a ese otro derecho social a que se acceda a un empleo formal con un ingreso suficiente para garantizar prestaciones sociales adecuadas y suficientes.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 136 — similitud 0.2675
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 901 — similitud 0.2099
 
-**Detalle de puntaje:** tfidf=0.1875; bonus=0.0800
+**Detalle de puntaje:** tfidf=0.1699; bonus=0.0400
 
-> 18). Régimen voluntario El régimen voluntario se refiere a: a) El seguro de salud para la familia, a favor de todos sus integrantes, que tienen derecho a un seguro de enfermedades y maternidad, me­ diante convenio (Capítulo i del Título Tercero). b) La seguridad social en el campo, tanto campesinos como trabajado­ res asalariados (arts. 234, 235 y 237). c) Los grupos de aseguramiento a que se refiere el art.
+> Luego de eso, me voy a referir a la legislación pri- maria en materia de los modelos contributivo y no contributivo de aseguramiento. 1.  Integración del bloque de constitucionalidad respecto del derecho hu- mano a la seguridad social El derecho a la seguridad social está consagrado en diversos instrumentos in- ternacionales de derechos humanos y, por supuesto, en la Constitución mexicana. El artículo 123 establece que la ley del seguro social comprenderá los seguros de
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 137 — similitud 0.2623
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 879 — similitud 0.2033
 
-**Detalle de puntaje:** tfidf=0.2223; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.1633; bonus=0.0400
 
-> Artículo 13. Igualmente son sujetos de aseguramiento del régimen obligatorio... El adverbio de modo que se empleaba en el segundo de los preceptos, “igualmente”, significa: con igualdad, también, asimismo; esta palabra obli­ gaba a dar el mismo trato y sujetar a iguales condiciones ambos supuestos, lo que no sucedía en la práctica.
+> 166 y 167. Grupo de Trabajo para el Análisis de los Informes Nacionales previstos en el Protocolo de San Salvador, Examen de los Informes presentados por los Estados Parte al Segundo Agrupamiento de Derechos del Protocolo adicional a la Convención Americana sobre Derechos Económicos, Sociales y Culturales “Protocolo de San Salvador” (arts. 6, 7, 8, 11, 12, 14): Observaciones y recomendaciones finales al Estado mexicano, Organización de Estados Americanos, mayo 2018, OAS/Ser.L/XXV.2.1, GT/PSS/doc.42/19, párr.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 239 — similitud 0.2277
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.2018
 
-**Detalle de puntaje:** tfidf=0.1877; bonus=0.0400
-
-> Bajo el viejo sistema no tenía posibilidad de estar incluida en una institución de seguridad social. Con la reforma de opción interna {<opting-in) las familias del sector informal podrán adquirir el seguro de salud del im s s a un precio atractivo dentro del seguro de salud para la familia. Además se incluye la posibilidad de un seguro de salud para un grupo de población anteriormente excluido; los cambios en el sistema tienen importantes implicaciones para financiar el seguro de salud en beneficio de los no asalariados y del sector informal de trabajadores.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 137 — similitud 0.2029
-
-**Detalle de puntaje:** tfidf=0.1229; bonus=0.0800
-
-> En la parte final del art. 13 se dispone: Mediante convenio con el Instituto se establecerán las modalidades y fechas de incorporación al régimen obligatorio, de los sujetos de aseguramiento compren­ didos en este artículo.- Dichos convenios deberán sujetarse al reglamento íjue al efecto expida el Ejecutivo Federal, Si los sujetos pueden incorporarse y el Instituto está facultado para abrir lapsos de inscripción, no estamos ante un régimen obligatorio, sino ante un régimen voluntario.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 137 — similitud 0.1990
-
-**Detalle de puntaje:** tfidf=0.1590; bonus=0.0400
-
-> 13 se dispone: Mediante convenio con el Instituto se establecerán las modalidades y fechas de incorporación al régimen obligatorio, de los sujetos de aseguramiento compren­ didos en este artículo.- Dichos convenios deberán sujetarse al reglamento íjue al efecto expida el Ejecutivo Federal, Si los sujetos pueden incorporarse y el Instituto está facultado para abrir lapsos de inscripción, no estamos ante un régimen obligatorio, sino ante un régimen voluntario. En el estudio de la Ley se observa la figura de la continua­ ción voluntaria en el régimen obligatorio”, en la que el asegurado... al ser dado de baja tiene el derecho a continuar voluntariamente en el mismo...” (art.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 141 — similitud 0.1800
-
-**Detalle de puntaje:** tfidf=0.1400; bonus=0.0400
-
-> en el seguro voluntario, sin que sea adecuada la mención en el enunciado del precepto; “voluntariamente podrán ser sujetos de aseguramiento en el régimen obligatorio”. Los términos voluntariamente y podrán implican que resulta de la voluntad de los sujetos y los grupos, aun cuando se advierta que los capítu­ los IX y X del Título Segundo establecen tanto las condiciones como los seguros que específicamente pueden en cada caso establecerse, de los arts.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 41 — similitud 0.1749
-
-**Detalle de puntaje:** tfidf=0.0949; bonus=0.0800
-
-> Prestación más próxima que se otorga cuando ocurre una contin­ gencia, enfermedad, accidente o maternidad. Está limitada a los asegu­ rados del régimen obligatorio y sólo por convenio se otorga a los dei régimen voluntario. Ayudas.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 157 — similitud 0.1747
-
-**Detalle de puntaje:** tfidf=0.0947; bonus=0.0800
-
-> 35), No se contempla el caso de una persona que sea, al mismo tiempo, tra­ bajador y profesionista o no asalariado; es decir, sujeto al régimen obligatorio (art. 12) y con posibilidad de inscribirse en el régimen voluntario (art. 13), para incrementar el monto de sus prestaciones.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 212 — similitud 0.1740
-
-**Detalle de puntaje:** tfidf=0.0940; bonus=0.0800
-
-> II y III del art. 12, miembros de sociedades cooperativas y las personas que determine el Ejecutivo Federal a través de decretos, aunados a los trabajadores en el régimen voluntario: no asalariados, campesinos, trabajadores domésticos, patrones, personas físicas y estudiantes universitarios estipulados en e! art. 13, han sumado millones de personas, lo que hace imposible estimar actuarialmente costos y prestaciones.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 39 — similitud 0.1689
-
-**Detalle de puntaje:** tfidf=0.1289; bonus=0.0400
-
-> Representa una facilidad para el asegurado, al poder inscribir a personas que dependen de él, con la facilidad de inscribirlos y poder darlos de baja, sin ma­ yor trámite. La lss de 1997 sustituyó la figura del seguro facultativo por el seguro de salud para la familia. Seguro adicional Este tipo de seguro no tiene vida autónoma; depende del obligatorio o del voluntario.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 112 — similitud 0.1670
-
-**Detalle de puntaje:** tfidf=0.0870; bonus=0.0800
-
-> Se amplió, en el art. 12 la obligatoriedad de inscripción a los trabajadores, al comprender a los miembros de sociedades cooperativas de producción y a los determinados en decretos presidenciales; se fortale­ ció el régimen voluntario, para los grupos campesinos, trabajadores do­ mésticos, no asalariados y patrones personas físicas, quienes harían apor­ taciones adecuadas a su condición económica. Como una novedad incluyó la figura de los solidariohabientes a fin de brindar atención médica a los marginados, con la intención de incorporarlos al desarrollo general.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 118 — similitud 0.1615
-
-**Detalle de puntaje:** tfidf=0.0815; bonus=0.0800
-
-> Las leyes del Seguro Social corresponden al patrón 70%, al trabajador 25% y al Gobierno Federal 5%. En cuanto a las cuotas netas, corresponde al patrón 38.5%, al trabajador 32% y al Gobierno Federal 29.5%; “las empresas que contratan personal con salarios superiores a 10 salarios mínimos critican el hecho de que a partir de este salario podría resultarles conveniente hacerse cargo del seguro médico o con­ tratar el servicio de un seguro privado en lugar del IMSS” .6 Los esquemas modificados, donde se ubica a los asegurados del régimen voluntario, campesinos, no asalariados, cañeros, tabacaleros, trabajadores do­ mésticos, representan 17% de los derechohabientes.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 388 — similitud 0.1578
-
-**Detalle de puntaje:** tfidf=0.1178; bonus=0.0400
-
-> 3 7 2 Organización del Instituto Mexicano del Seguro Social. Atedias de defensa contrato colectivo de trabajo, y se encargará de la aplicación de los reglamen­ tos derivados deí mismo.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 15 — similitud 0.1576
-
-**Detalle de puntaje:** tfidf=0.0776; bonus=0.0800
-
-> El ordenamiento mejoró diversas áreas de la seguridad social. Se reiteraron los seguros existentes, aumentándose otros, como el seguro de guarderías, y se estableció el régimen voluntario. Esta nueva Ley también se distinguió por haber contemplado una cobertura para los grupos campesinos organizados al instituir el Programa de Solidaridad Social IMSS-Coplamar, administrado por el Instituto.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 38 — similitud 0.1449
-
-**Detalle de puntaje:** tfidf=0.1049; bonus=0.0400
-
-> Se limita en cuanto a los sujetos que protege y a los tiempos de protec­ ción; además de que reduce las ventajas del seguro obligatorio. Este tipo de seguro permite: • Captar ingresos adicionales mediante aportaciones diversas a las del régimen obligatorio. • Facultar ai Instituto administrador para incorporar a otros grupos so­ ciales, ajenos a los trabajadores.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 140 — similitud 0.1427
-
-**Detalle de puntaje:** tfidf=0.1027; bonus=0.0400
-
-> 124 Las leyes d el Seguro Social A continuación se presenta esquemáticamente la clasificación de las personas: Solid ario habientes Personas 4 Sujetos obligados Derechohabieníes i Beneficiarios Asegurados 4 Voluntario Obligatorio Derechohabientes Asegurados Los sujetos de aseguramiento que pertenecen tanto al seguro obligatorio como al voluntario se enlistan por grupos en los arts. 12 y 13.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 142 — similitud 0.1417
-
-**Detalle de puntaje:** tfidf=0.1017; bonus=0.0400
-
-> 222, fracc. II, inciso a), cuyo esquema de aseguramiento comprende: Para los sujetos a que se refieren la fracciones i y iu del artículo 13 de esta Ley, las prestaciones en especie del seguro de enfermedades y maternidad y las correspondientes de los seguros de invalidez y vida, así como de retiro y vejez, en los términos de los capítulos respectivos. Patrones.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 136 — similitud 0.1327
-
-**Detalle de puntaje:** tfidf=0.0927; bonus=0.0400
-
-> 6): el obligatorio y el voluntario. Régimen obligatorio La obligatoriedad se refleja tanto en la inscripción como en el pago de cuotas.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 139 — similitud 0.1321
-
-**Detalle de puntaje:** tfidf=0.0921; bonus=0.0400
-
-> Los pri­ meros pertenecen al régimen obligatorio o voluntario; los beneficiarios son el (la) cónyuge o concubino(a) y los familiares de los asegurados, que por ley tienen a su favor los servicios médicos y en algunos casos prestaciones económicas.
-
-### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 12 — similitud 0.1298
-
-**Detalle de puntaje:** tfidf=0.0898; bonus=0.0400
-
-> Creado durante el sexenio de Ernesto Zedillo (1994-2000), tuvo como principal objetivo la reorganización de la atención y del sistema de pensiones del IMSS, la descentralización iniciada en 1984 y la conformación de paquetes de atención en materia de Seguridad Social(25). · Nueva Ley del Seguro Social de 1995 (entró en vigor en 1997). Contempló la creación del Seguro de Salud para la familia, lo que le permitía a los trabajadores no asalariados, y a sus familias, recibir atención médica del IMSS con el pago anticipado de cuotas anuales.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 140 — similitud 0.1230
-
-**Detalle de puntaje:** tfidf=0.0830; bonus=0.0400
-
-> 12 y 13. La nueva Ley, con una mejor redacción, mantiene el viejo error de no distinguir los tipos de seguro y pretender englobarlos dentro del seguro obligatorio. Además, aun cuando suprime la figura del decreto deí Ejecutivo para la incorporación de los grupos mencionados en el art.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 388 — similitud 0.1221
-
-**Detalle de puntaje:** tfidf=0.0921; bonus=0.0300
-
-> Admite la existencia de trabajadores que, por sus actividades profesionales, la naturaleza de su trabajo, sus especiales condiciones de tiempo y lugar o por la índole de sus procesos productivos, no se adecúen a los requisitos generales del régimen obligatorio de esta Ley; para ellos puede establecer las condicio­ nes de aseguramiento y cotización a fin de hacerlos equitativos, respetando los elementos de sujeto, objeto, base, cuota, primas de financiamiento y época de pago de las cuotas, conforme a lo establecido en la Ley (fracc. xv). Comisión de Vigilancia
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 141 — similitud 0.1051
-
-**Detalle de puntaje:** tfidf=0.0651; bonus=0.0400
-
-> Las características de los grupos señalados en el art. 13 se indican en el último párrafo: “Mediante convenio se establecerán las modalidades y fe­ chas de incorporación ai régimen obligatorio, de los sujetos de aseguramiento comprendidos en este artículo.” No asalariados. Son las personas que desempeñan por propia cuenta una actividad económica que les permite obtener ingresos para aten­ der sus necesidades, sin estar subordinados a alguna persona física o moral.
-
-**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
-
-## Ficha 08. Seguro facultativo
-
-**Calidad estimada:** alta
-**Mejor similitud:** 0.3197
-**Similitud promedio:** 0.1355
-**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf
-**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 589; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 913; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 132; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 136; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 137; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 138; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 149; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 313; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 321; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 38; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 388; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 39; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 51; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 66
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 137 — similitud 0.3197
-
-**Detalle de puntaje:** tfidf=0.2397; bonus=0.0800
-
-> Régimen facultativo La Ley permite al Instituto contratar con las familias que lo deseen un seguro de salud (art. 240), con características que son propias del seguro facultativo.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 39 — similitud 0.3122
-
-**Detalle de puntaje:** tfidf=0.2322; bonus=0.0800
-
-> El seguro facultativo da al asegurado en el régimen obligatorio la posibilidad de incorporar al sistema del seguro social a familiares o personas que no tie­ nen el carácter de beneficiarios, mediante convenios que al respecto celebren. Representa una facilidad para el asegurado, al poder inscribir a personas que dependen de él, con la facilidad de inscribirlos y poder darlos de baja, sin ma­ yor trámite.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 137 — similitud 0.2060
-
-**Detalle de puntaje:** tfidf=0.1660; bonus=0.0400
-
-> 13 se dispone: Mediante convenio con el Instituto se establecerán las modalidades y fechas de incorporación al régimen obligatorio, de los sujetos de aseguramiento compren­ didos en este artículo.- Dichos convenios deberán sujetarse al reglamento íjue al efecto expida el Ejecutivo Federal, Si los sujetos pueden incorporarse y el Instituto está facultado para abrir lapsos de inscripción, no estamos ante un régimen obligatorio, sino ante un régimen voluntario. En el estudio de la Ley se observa la figura de la continua­ ción voluntaria en el régimen obligatorio”, en la que el asegurado... al ser dado de baja tiene el derecho a continuar voluntariamente en el mismo...” (art.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 39 — similitud 0.1798
-
-**Detalle de puntaje:** tfidf=0.0998; bonus=0.0800
-
-> Los gastos médicos por su atención representan una carga que gravita a los sujetos obligados y los asegurados, sin contar con beneficios adecuados a su actividad económica. Seguro facultativo
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 137 — similitud 0.1683
-
-**Detalle de puntaje:** tfidf=0.1283; bonus=0.0400
-
-> 220), lo que significa que el asegurado se inscribe y da de baja a su conveniencia. Régimen facultativo La Ley permite al Instituto contratar con las familias que lo deseen un seguro de salud (art. 240), con características que son propias del seguro facultativo.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 388 — similitud 0.1437
-
-**Detalle de puntaje:** tfidf=0.1037; bonus=0.0400
-
-> Atedias de defensa contrato colectivo de trabajo, y se encargará de la aplicación de los reglamen­ tos derivados deí mismo. En relación con los patrones y derechohabientes, sus facultades le per­ miten conceder, rechazar y modificar las pensiones, que conforme a esta Ley le corresponde otorgar al Instituto, pudiendo delegar estas facultades a las dependencias competentes, así como aprobar las bases para la celebración de convenios de incorporación voluntaria al régimen obligatorio a que se refie­ re la Ley.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 38 — similitud 0.1405
-
-**Detalle de puntaje:** tfidf=0.1005; bonus=0.0400
-
-> Regímenes de Seguro En el art. 6 de la Ley de 1997 se reproduce el criterio de los ordenamientos anteriores y el seguro social comprende dos tipos de régimen: obligatorio y voluntario. Seguro obligatorio El seguro social se impone a la voluntad de los particulares.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 136 — similitud 0.1331
-
-**Detalle de puntaje:** tfidf=0.0931; bonus=0.0400
-
-> 18). Régimen voluntario El régimen voluntario se refiere a: a) El seguro de salud para la familia, a favor de todos sus integrantes, que tienen derecho a un seguro de enfermedades y maternidad, me­ diante convenio (Capítulo i del Título Tercero). b) La seguridad social en el campo, tanto campesinos como trabajado­ res asalariados (arts. 234, 235 y 237). c) Los grupos de aseguramiento a que se refiere el art.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 321 — similitud 0.1268
-
-**Detalle de puntaje:** tfidf=0.0968; bonus=0.0300
-
-> Ley del Seguro Social La Consar tiene como antecedente la reforma a la Ley del Seguro Social (LSS) de 1992, donde se incluye, en el art. 11, el seguro de retiro; los arts.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 66 — similitud 0.1214
-
-**Detalle de puntaje:** tfidf=0.0914; bonus=0.0300
-
-> La Ley del 5 de julio de 1934 reorganiza la administración de los seguros sociales, autorizando al gobierno para dictar las disposiciones pertinentes. El seguro social en Inglaterra Las causas que originan el establecimiento del seguro social en Inglaterra son diversas: van de la atención a los pobres, a la Revolución Industrial y a los movimientos sociales que no se atrevieron a alterar sus estructuras. Las leyes de pobres, los movimientos cartistas, el aislamiento de la gran isla y el crecimiento de las fábricas, configuran un sistema de indiscutible efectividad, muy distinto del alemán.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 132 — similitud 0.1148
-
-**Detalle de puntaje:** tfidf=0.0748; bonus=0.0400
-
-> 116 Las leyes del Seguro Social a lo largo de toda la consulta, dicha comisión arribó a un conjunto de conclusio­ nes, mismas que en su momento me presentaron en el documento de “Propues­ ta de alianza obrero-empresarial para el fortalecimiento y modernización de la seguridad social.” Al presentar esta iniciativa a consideración de la representación nacional, com­ parto la convicción de que el actual, es el momento en que el Instituto debe emprender acciones profundas de reestructuración con la finalidad de renovarse para su fortalecimiento, y así, acrecentar su capacidad de proporcionar servicios y prestaciones como garantías de seguridad y bienestar para el pueblo de Méxi­ co.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.1128
-
-**Detalle de puntaje:** tfidf=0.0928; bonus=0.0200
-
-> El derecho a la seguridad social 913 causa de muerte —de viudez en el matrimonio y en el concubinato, de orfandad y ascendencia— y servicios de guarderías. La inmensa mayoría de sentencias de la SCJN sobre seguridad social se origina en litigios dentro del modelo contributivo de aseguramiento social. Las pocas que hay sobre “programas sociales”, o modelo de seguridad social no contributivo, no le dicen, por razones que habrá que explorar con más detenimiento, “derecho a la seguridad social” al derecho a la seguridad social.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 39 — similitud 0.1009
-
-**Detalle de puntaje:** tfidf=0.0709; bonus=0.0300
-
-> No obstante, tiene los inconvenientes: • Generalmente se incorporan las personas que requieren atención inmediata. • Las cuotas resultan muy elevadas en relación con las aportaciones. • Sólo por excepción generan derecho a una pensión. Este seguro hace posible otorgar prestaciones a: Grupos de no asalariados: vendedores, ambulantes, aseadores de calzado, taxistas, etcétera. Campesinos: ejidatarios, colonos, comuneros, pequeños propietarios y tra­ bajadores asalariados del campo.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 149 — similitud 0.0977
-
-**Detalle de puntaje:** tfidf=0.0677; bonus=0.0300
-
-> En cambio, la Ley del Seguro Social, según la fracción xxix, apartado A, del artículo 123 constitucional, “comprenderá seguros de invalidez, de vida, de cesación involuntaria del trabajo, de enfermedades y accidentes y otros con ñnes análogos", de donde se sigue que esta última Ley presupone la existencia del contrato de trabajo, pero no lo regula, ni establece o define sus elementos integrantes, entre ellos el salario, pues todo ello corresponde a la Ley Federal del Trabajo. Sobre la base de que existe el con­ trato de trabajo, la Ley del Seguro Social desarrolla sus normas dentro del ámbito que le fija la fracción XXIX antes citada.- Séptima Época.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 66 — similitud 0.0690
-
-**Detalle de puntaje:** tfidf=0.0590; bonus=0.0100
-
-> Seguro obligatorio de invalidez, vejez y muerte: a) Seguro de los obreros. b) Seguro de los empleados. c) Seguro de los mineros. 4.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 589 — similitud 0.0671
-
-**Detalle de puntaje:** tfidf=0.0571; bonus=0.0100
-
-> Comité sobre los Derechos de las Personas con Discapacidad, Dictamen aprobado por el Comité en virtud del artículo 5 del Protocolo Facultativo, respecto de la comunicación núm. 39/2017, CRPD/C/20/D/39/2017, Naciones Unidas, 2018.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 138 — similitud 0.0645
-
-**Detalle de puntaje:** tfidf=0.0545; bonus=0.0100
-
-> 122 Las leyes del Seguro Social En éste, sólo se otorgan prestaciones en especie dentro del seguro de en­ fermedades y maternidad, tanto para los reconocidos por la Ley: cónyuge, concubino(a), descendientes y ascendientes, como para aquellos que depen­ dan económicamente del asegurado (art, 241) y que no estén protegidos. Las modalidades que se convengan {art.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 51 — similitud 0.0499
-
-**Detalle de puntaje:** tfidf=0.0399; bonus=0.0100
-
-> Son características del aseguramiento la obligatoriedad en cuanto a los esclavos mayores de 10 años, con valor fijado por su dueño en el momento de iniciarse el seguro por inscripción en el registro, pagando por los asegurados una prima anual por semestres, proporcional a la estimación registrada. En caso de siniestro; esto es, si ocurría el riesgo previsto de la fuga del esclavo y no se le restituía al poder de su dueño en el plazo de dos meses, el seguro pagaba al propie­ tario el importe del valor asegurado.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 313 — similitud 0.0468
-
-**Detalle de puntaje:** tfidf=0.0368; bonus=0.0100
-
-> Las sociedades mercantiles en ei seguro ue retiro, cesantía en edad avanzada y vejez 2 9 7 nombre del trabajador o de sus beneficiarios un seguro de sobrevivencia, en los términos que determine la Comisión de Seguros y Fianzas: Artículo 189.
-
-**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 5 referencia(s) de baja similitud que podrían introducir ruido.
-
-## Ficha 09. Solidaridad social
-
-**Calidad estimada:** media
-**Mejor similitud:** 0.2223
-**Similitud promedio:** 0.1561
-**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf
-**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 893; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 897; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 904; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 913; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 924; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 116; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 130; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 15; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 228; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 278; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 28; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 30; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 398; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 42; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 10
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 42 — similitud 0.2223
-
-**Detalle de puntaje:** tfidf=0.1423; bonus=0.0800
-
-> Prestaciones sociales Las prestaciones sociales tienen un triple objetivo: • Colaborar a la adopción de medidas preventivas para incrementar nive­ les de salud. • Capacitar a la población para el trabajó, en forma especial a los derechohabientes. • Fomentar la recreación sana de la comunidad, con base en la unidad familiar. Solidaridad social En la lss los servicios de solidaridad social se reducen a proporcionar presta­ ciones médicas para los núcleos económicamente marginados. Las personas protegidas dan como contraprestación una cuota reducida, un pago en especie o un servicio a favor de la comunidad.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 924 — similitud 0.2070
-
-**Detalle de puntaje:** tfidf=0.1670; bonus=0.0400
-
-> Si lo hay, ¿cuál es? Si no lo hay, ¿cuál es el valor que lo fundamenta?; ¿de qué forma se estructuran las instituciones en- cargadas de garantizar el respeto de ese derecho?; ¿cómo está integrada la familia como objeto de tutela de la seguridad social y quiénes son titulares de ese derecho? ¿Cuál es la relación en México entre trabajo formal y dere- cho a la seguridad social? ¿Tienen derecho a la seguridad social las personas que no están afiliadas y que contribuyen al sistema? ¿Cuál es la relación, si la hay, entre género y derecho humano a la seguridad social?
-
-### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 10 — similitud 0.1966
-
-**Detalle de puntaje:** tfidf=0.1166; bonus=0.0800
-
-> En 1976 se creó el Instituto de Seguridad Social para las Fuerzas Armadas de México (ISSFAM) y para los trabajadores de Petróleos Mexicanos (PEMEX), lo que representaba el continuo expansionismo. Posteriormente, en 1979 el gobierno suscribió un convenio para la creación de servicios de solidaridad social; con el propósito de
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 116 — similitud 0.1887
-
-**Detalle de puntaje:** tfidf=0.1087; bonus=0.0800
-
-> Instituto Mexicano del Seguro Social. Seguridad y Solidaridad Social, marzo de 1995, p. 1.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 904 — similitud 0.1778
-
-**Detalle de puntaje:** tfidf=0.1378; bonus=0.0400
-
-> Diana Beatriz González Carvallo 904 artículo 17 que todas las personas mayores tienen derecho a la seguridad social que las proteja y les permita llevar una vida digna. Esto incluye el deber de los Estados de garantizar a estas personas un ingreso digno derivado de la seguridad social o de otros sistemas de protección social flexibles.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 924 — similitud 0.1772
-
-**Detalle de puntaje:** tfidf=0.1372; bonus=0.0400
-
-> Derivado de esto, ¿cómo se integran los vínculos de correlatividad de posiciones normativas y los sujetos obligados?; ¿de qué forma se estructuran las instituciones encargadas de garantizar el respeto de ese derecho?; ¿hay algún vínculo entre el derecho a la seguridad social y la igualdad sustantiva? Si lo hay, ¿cuál es?
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 28 — similitud 0.1720
-
-**Detalle de puntaje:** tfidf=0.0920; bonus=0.0800
-
-> Cordini,13 14 la seguridad social es el conjunto de principios y normas que, en función de solidaridad social, regula los sistemas y las institu­ ciones destinados a conferir una protección jurídicamente garantizada en los casos de necesidad bioeconómica determinados por contingencias sociales. Dino Jarach1^ la considera como el conjunto de medidas que tienden a asegurar un mínimo de rédito a toda persona, cuando la interrupción o pérdi­ da de su capacidad de trabajo le impidan conseguirlo con sus propios medios.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 897 — similitud 0.1715
-
-**Detalle de puntaje:** tfidf=0.1315; bonus=0.0400
-
-> El derecho a la seguridad social 897 institucional y legal adecuado y con las herramientas para detectar en dónde y de qué manera lo vulnera el diseño y funcionamiento de las instituciones de asegura- miento. La falta de esos instrumentos, o su mal diseño, dificulta o impide que los titulares del derecho reclamen ante las autoridades competentes, o que deberían serlo, el desconocimiento de estos.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 15 — similitud 0.1661
-
-**Detalle de puntaje:** tfidf=0.0861; bonus=0.0800
-
-> Se reiteraron los seguros existentes, aumentándose otros, como el seguro de guarderías, y se estableció el régimen voluntario. Esta nueva Ley también se distinguió por haber contemplado una cobertura para los grupos campesinos organizados al instituir el Programa de Solidaridad Social IMSS-Coplamar, administrado por el Instituto. Con la Ley de 1973 se estaba logrando la realización del justo anhelo de los mexicanos por contar con un sistema de seguridad social integral.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 278 — similitud 0.1655
-
-**Detalle de puntaje:** tfidf=0.0855; bonus=0.0800
-
-> Prestaciones sociales Las prestaciones sociales han tenido reformas a partir de la primera Ley, por lo que se entiende que el IMSS haya construido y sostenga cines, centros deportivos, centros vacacionales, además de centros sociales y familiares. La LSS determina que comprenderán prestaciones sociales institucionales y de solidaridad social (art. 208).
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 130 — similitud 0.1613
-
-**Detalle de puntaje:** tfidf=0.0813; bonus=0.0800
-
-> ingreso, expresión de solidaridad social y baluarte auténtico de la equidad y la estabilidad en nuestro país, A través de los años ha quedado constatada su ca­ pacidad de brindar protección, certidumbre y justicia social para los mexicanos, contribuyendo notablemente al desarrollo de nuestra nación. El 1MSS es patrimonio del pueblo mexicano.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 30 — similitud 0.1607
-
-**Detalle de puntaje:** tfidf=0.0807; bonus=0.0800
-
-> 14 Principios estructurales e instituciones de protección integral, en función de la solidaridad social. Para el logro de su objetivo, como afirma José González Gales: La Seguridad Social emplea los mismos métodos del Seguro, pero su campo de acción es mucho más vasto.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.1536
-
-**Detalle de puntaje:** tfidf=0.1236; bonus=0.0300
+**Detalle de puntaje:** tfidf=0.1718; bonus=0.0300
 
 > El derecho a la seguridad social 913 causa de muerte —de viudez en el matrimonio y en el concubinato, de orfandad y ascendencia— y servicios de guarderías. La inmensa mayoría de sentencias de la SCJN sobre seguridad social se origina en litigios dentro del modelo contributivo de aseguramiento social.
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 893 — similitud 0.1526
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 863 — similitud 0.1998
 
-**Detalle de puntaje:** tfidf=0.1126; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.1598; bonus=0.0400
 
-> IV. LAS DECISIONES DE LA SUPREMA CORTE DE JUSTICIA SOBRE EL DERECHO HUMANO A LA SEGURIDAD SOCIAL. V.
+> Asimismo, la Corte abordó la protección a la libertad sindical en la Opinión Consultiva 22/16, en la que concluyó que el artículo 8.1.a del Protocolo de San Salvador otorga titularidad de derechos a los sindicatos, las federaciones y las confederaciones, lo cual les permite presentarse ante el sistema interamericano en defensa de sus propios derechos en el marco de lo establecido en dicho artículo,143 y también recordó que, en razón de lo dispuesto por el artí- culo 44 de la Convención Americana, los sindicatos, las federaciones y las confe- deraciones legalmente reconocidos en uno o más Estados Parte de la Convención, formen o no parte del Protocolo de San Salvador, pueden presentar...
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 893 — similitud 0.1207
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 852 — similitud 0.1922
 
-**Detalle de puntaje:** tfidf=0.1007; bonus=0.0200
+**Detalle de puntaje:** tfidf=0.1522; bonus=0.0400
+
+> La Segunda Sala re- solvió que los trabajadores de confianza carecen de estabilidad en el empleo, en virtud de la restricción prevista en el artículo 123, apartado B, fracción XIV, de la Constitución.94 También estableció que es una restricción constitucional la pro- hibición de reinstalación de quienes ocupan las categorías previstas en el régimen del artículo 123, apartado B, fracción XIII, de la Constitución (como los agentes de las instituciones de seguridad pública).95 La Segunda Sala declaró la inconstitu- cionalidad del artículo 63, párrafo quinto, de la Ley de Transparencia y Acceso a la Información Pública del Distrito Federal, porque establece que todo el personal del instituto de...
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 893 — similitud 0.1793
+
+**Detalle de puntaje:** tfidf=0.1393; bonus=0.0400
+
+> 1. Integración del bloque de constitucionalidad respecto del derecho hu- mano a la seguridad social. 2.
+
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.1710
+
+**Detalle de puntaje:** tfidf=0.1310; bonus=0.0400
+
+> 13 4. La protección del derecho a la seguridad social . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 5.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 904 — similitud 0.1588
+
+**Detalle de puntaje:** tfidf=0.1288; bonus=0.0300
+
+> Requiere a los Estados reglamentar la situación de los aportes de las personas mayores migrantes y su derecho a la pensión. La OG19 del Comité de Derechos Económicos Sociales y Culturales de la ONU (CESCR), aprobada en 2007, desarrolla el artículo 9 del PIDESC sobre el derecho a la seguridad social. Precisa algunos de los riesgos sociales básicos que deben estar cubiertos a través del aseguramiento social, entre estos, maternidad, vejez, desempleo, accidentes laborales, prestaciones familiares, discapacidad, y pensiones de sobrevivientes y huérfanos.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 905 — similitud 0.1583
+
+**Detalle de puntaje:** tfidf=0.1183; bonus=0.0400
+
+> Finalmente, el párrafo 32 enfatiza, respecto de los planes no contri- butivos, que las personas sujetas a este modelo de aseguramiento social suelen estar en condiciones de pobreza y que la mayoría de esas personas son mujeres responsables únicas del cuidado de niños. El Convenio 102 de la OIT, o norma mínima, desarrolla específicamente los su- puestos fundamentales del derecho a la seguridad social. Precisa que este derecho implica la obtención y conservación de prestaciones en efectivo o en especie que protejan a las personas contra los efectos de la falta de ingreso laboral debido a la enfermedad, invalidez, accidentes de trabajo, maternidad, apoyo familiar insu- ficiente, entre otros.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 924 — similitud 0.1576
+
+**Detalle de puntaje:** tfidf=0.1276; bonus=0.0300
+
+> Derivado de esto, ¿cómo se integran los vínculos de correlatividad de posiciones normativas y los sujetos obligados?; ¿de qué forma se estructuran las instituciones encargadas de garantizar el respeto de ese derecho?; ¿hay algún vínculo entre el derecho a la seguridad social y la igualdad sustantiva? Si lo hay, ¿cuál es?
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 826 — similitud 0.1565
+
+**Detalle de puntaje:** tfidf=0.1165; bonus=0.0400
+
+> Pacto Internacional de Derechos Económicos, Sociales y Culturales. Protocolo adicional a la Convención Americana sobre Derechos Humanos en materia de Derechos Económicos, Sociales y Culturales (Protocolo de San Salvador) Tratado de Libre Comercio entre México, Estados Unidos y Canadá (T-MEC) Normativa nacional Constitución Política de los Estados Unidos Mexicanos. Ley General de Cambio Climático.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 893 — similitud 0.1485
+
+**Detalle de puntaje:** tfidf=0.1085; bonus=0.0400
 
 > Capítulo 19 El derecho a la seguridad social 1Diana Beatriz González Carvallo* SUMARIO: I. DOCTRINA SOBRE EL CONTENIDO NORMATIVO DEL DERECHO HUMANO A LA SEGURIDAD SOCIAL. II.
 
-### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 10 — similitud 0.1194
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 894 — similitud 0.1477
 
-**Detalle de puntaje:** tfidf=0.0794; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.1177; bonus=0.0300
 
-> ISSN-e: 2529-850X Volumen 5 Numero 7 pp 740-762 JULIO 2020 DOI: 10.19230/jonnpr.3511 Evolución de la Seguridad Social en México y su relación con el contexto socioeconómico nacional (1900-2020) Ernesto Cotonieto-Martínez A inicios de este periodo, se llevó a cabo la reforma a la Ley del Seguro Social en el año de 1973.
+> En términos generales, el derecho a la seguridad social protege a las personas contra los riesgos graves que implican para su vida y bienestar ciertas situaciones naturales y sociales.1 Este derecho ampara, entonces, contra los efectos catastró- ficos de situaciones extraordinarias, como las pandemias, y de acontecimientos ordinarios, como la salida del mercado de trabajo por vejez.
 
-### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 10 — similitud 0.0873
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 419 — similitud 0.1421
 
-**Detalle de puntaje:** tfidf=0.0573; bonus=0.0300
+**Detalle de puntaje:** tfidf=0.1021; bonus=0.0400
 
-> Con esta nueva Ley se instituyeron tres elementos: afiliación voluntaria para trabajadores que habían sido excluidos, creación de guarderías como prestación e inclusión de la población campesina marginada y del medio urbano al IMSS bajo el concepto de solidaridad a los campesinos sin capacidad de cotización mediante aportaciones bipartitas por parte de patrones y del Estado(14,21); estableciéndose un claro antecedente respecto a la búsqueda del principio de universalidad en México. En 1976 se creó el Instituto de Seguridad Social para las Fuerzas Armadas de México (ISSFAM) y para los trabajadores de Petróleos Mexicanos (PEMEX), lo que representaba el continuo expansionismo.
+> Carrasco Iriarte, Hugo, Derecho fiscal constitucional, Oxford University Press México, 1999. Cazares García, Gustavo, Derecho de la seguridad social, Porrúa, México, 2007. Cordini, Miguel A., Derecho de la seguridad social, Eudeba, Buenos Aires, 1966. , , .
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 398 — similitud 0.0835
+### La seguridad social y los  desa - Ana Belem Hernandez.pdf — p. 6 — similitud 0.1377
 
-**Detalle de puntaje:** tfidf=0.0435; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.0977; bonus=0.0400
 
-> El art. 277 C libera al instituto de la obligación de concentrar en la Tesorería de la Federación sus ingresos, con excepción de los remanentes de subsidios y transferencias de programas de solidaridad social y otros financiados direc­ tamente por el Gobierno Federal, por lo que manejará y erogará sus recursos por medio de sus unidades administrativas competentes. Trabajadores de confianza En una invasión contraria a su naturaleza y a la LFT, el art.
+> Introducción La Conferencia Interamericana de Seguridad Social (ciss), cuyo propósito es el fomento del desarrollo de la protección y seguridad social en América, a través del diálogo interna- cional, así como la construcción colectiva de programas y propuestas de política pública, ha hecho posible el presente estudio que parte de la premisa de que la seguridad social es un derecho humano, base del bienestar de los pueblos y facilitador de la paz, que a través del establecimiento de instituciones y programas de previsión, asistencia y ayuda, puede lograr la prosperidad, el bienestar individual, colec- tivo y la felicidad.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 228 — similitud 0.0820
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 161 — similitud 0.1206
 
-**Detalle de puntaje:** tfidf=0.0520; bonus=0.0300
+**Detalle de puntaje:** tfidf=0.0906; bonus=0.0300
 
-> 2 1 2 . . Los seguros del Seguro Social Financiamiento del Banco Mundial A principios de 1998 se dieron a conocer las negociaciones que venía realizan­ do ei 1MSS para obtener del Banco Mundial un financiamiento por 700 millo­ nes de dólares con el objetivo de respaldar el mejoramiento en la calidad de los servicios médicos, a seis meses de haber entrado en vigor la nueva Ley. Uno de los objetivos que se perseguían con e! ordenamiento legal era dar estabilidad financiera al Instituto y elevar la calidad de sus servicios médicos.
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman los Artículos Transitorios Primero, Tercero, Cuarto, Quinto, Sexto y Séptimo del "Decreto por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo; de la Ley del Seguro Social; de la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores; del Código Fiscal de la Federación; de la Ley del Impuesto sobre la Renta; de la Ley del Impuesto al Valor Agregado; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del Artículo 123 Constitucional; de la Ley...
 
-**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 158 — similitud 0.1205
 
-## Ficha 10. Tipología germana (bismarckiana)
+**Detalle de puntaje:** tfidf=0.0905; bonus=0.0300
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo; de la Ley del Seguro Social; de la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores; del Código Fiscal de la Federación; de la Ley del Impuesto sobre la Renta; de la Ley del Impuesto al Valor Agregado; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del Artículo 123 Constitucional; de la Ley Reglamentaria de la Fracción XIII Bis del Apartado B, del Artículo 123 de la Constitución Política de los Estados Unidos...
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 139 — similitud 0.1188
+
+**Detalle de puntaje:** tfidf=0.0788; bonus=0.0400
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se adicionan y reforman diversas disposiciones de la Ley General de Salud; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del artículo 123 Constitucional; de la Ley del Seguro Social; de la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado; de la Ley para la Protección de los Derechos de Niñas, Niños y Adolescentes, y de la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 03. Legislación secundaria en materia de seguridad social
 
 **Calidad estimada:** media
-**Mejor similitud:** 0.2406
-**Similitud promedio:** 0.1332
-**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf
-**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 725; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 893; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 901; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 913; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 922; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 924; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 14; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 419; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 62; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 63; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 64; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 66; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 69; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 86
+**Mejor similitud:** 0.1730
+**Similitud promedio:** 0.1375
+**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf
+**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 314; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 764; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 852; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 881; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 893; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 901; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 913; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 915; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 95; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 13; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 14; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 149; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 158; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 23; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 299; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 4; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf, p. 3; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 119; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 132; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 139; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 147; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 149; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 158; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 161
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.2406
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 4 — similitud 0.1730
 
-**Detalle de puntaje:** tfidf=0.2006; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.1330; bonus=0.0400
 
-> El derecho a la seguridad social 913 causa de muerte —de viudez en el matrimonio y en el concubinato, de orfandad y ascendencia— y servicios de guarderías. La inmensa mayoría de sentencias de la SCJN sobre seguridad social se origina en litigios dentro del modelo contributivo de aseguramiento social. Las pocas que hay sobre “programas sociales”, o modelo de seguridad social no contributivo, no le dicen, por razones que habrá que explorar con más detenimiento, “derecho a la seguridad social” al derecho a la seguridad social.
+> C O L E C C I Ó N T E X T O S J U R Í D I C O S U N I V E R S I T A R I O S Derecho de la seguridad social Alberto Briceño Ruiz U n iv er sid a d N a c io n a l A u t ó n o m a de M éxico O X FO R D l í N I V E R S I T Y PRESS
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 901 — similitud 0.1937
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 149 — similitud 0.1672
 
-**Detalle de puntaje:** tfidf=0.1537; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.1272; bonus=0.0400
 
-> II. MARCO NORMATIVO SOBRE EL DERECHO HUMANO A LA SEGURIDAD SOCIAL En este apartado quisiera exponer las fuentes normativas del derecho humano a la seguridad social. En primer lugar, voy a presentar las normas que integran el bloque de constitucionalidad.
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se adicionan diversas disposiciones de la Ley del Seguro Social, de la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado y de la Ley Federal del Trabajo. Publicado en el Diario Oficial de la Federación el 4 de junio de 2019 Artículo Primero.- Se adiciona un artículo 140 Bis a la Ley del Seguro Social, para quedar como sigue: ……… Transitorios Primero.- El presente Decreto entrará en vigor el día siguiente al de su publicación en el Diario Oficial de la Federación.
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 893 — similitud 0.1925
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.1645
 
-**Detalle de puntaje:** tfidf=0.1525; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.1445; bonus=0.0200
+
+> 5 1. Los derechos humanos y el derecho humano a la seguridad social . . . . . . . . . . . . . . . . . . . 5 2.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 299 — similitud 0.1585
+
+**Detalle de puntaje:** tfidf=0.1285; bonus=0.0300
+
+> El último párrafo del art. 168 contiene una disposición de especia! trascenden­ cia: “Estas cuotas y aportaciones al destinarse, en su caso, al otorgamiento de pensiones, se entenderán destinadas al gasto público, en materia de seguridad social.” Al considerar el destino de las cuotas y aportaciones cuando tengan por objeto cubrir el pago de las pensiones como gasto público, incurre en un concepto delicado, tanto por su manejo legal como en cuanto a su aplicación práctica. El término gasto público tiene desde implicaciones constitucionales hasta consideraciones en leyes específicas.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 132 — similitud 0.1559
+
+**Detalle de puntaje:** tfidf=0.1159; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman diversas disposiciones de la Ley del Seguro Social. Publicado en el Diario Oficial de la Federación el 26 de mayo de 2009 ARTÍCULO ÚNICO.- Se reforman los artículos 139, segundo párrafo, 165, primer párrafo, 168, fracción IV y último párrafo, 191, fracción II, y 198 de la Ley del Seguro Social, para quedar como sigue: ……….
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 149 — similitud 0.1529
+
+**Detalle de puntaje:** tfidf=0.1129; bonus=0.0400
+
+> En efecto, la primera se emitió en ejerci­ cio de la facultad que el artículo 73 de la Constitución, en su fracción X, concede al Congreso de la Unión “para expedir las leyes del trabajo reglamentarias del artículo 123 de la Constitución” y en uso de dicha facultad el Congreso expidió la Ley Federal del Trabajo, que regula como materia privativa suya el contrato de trabajo, uno de cuyos elementos primordiales es el salario.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 119 — similitud 0.1511
+
+**Detalle de puntaje:** tfidf=0.1211; bonus=0.0300
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman diversas disposiciones de la Ley del Seguro Social.
+
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.1491
+
+**Detalle de puntaje:** tfidf=0.1191; bonus=0.0300
+
+> 11 3. Fuente internacional del derecho a la seguridad social . . . . . . . . . . . . . . . . . . . 13 4.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 14 — similitud 0.1479
+
+**Detalle de puntaje:** tfidf=0.1179; bonus=0.0300
+
+> Al surgir la Organización Internacional del Trabajo (OIT) se fueron elaborando y suscribiendo importan­ tes instrumentos legales sobre la materia de seguridad social. Ha correspondi­ do al Convenio 102 de esa Organización establecer las bases mínimas para que se brinde la seguridad social, que de acuerdo con dicho ordenamiento habrá de contener cuando menos los aspectos relativos a asistencia médica, así como prestaciones por enfermedad, desempleo, vejez, en caso de accidentes de tra­ bajo y de enfermedades profesionales, maternidad e invalidez.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 14 — similitud 0.1472
+
+**Detalle de puntaje:** tfidf=0.1072; bonus=0.0400
+
+> En este orden de ideas, indica el maestro Briceño, en 1942 surgió en Inglaterra el Plan Beveridge, que debió su nombre a Sir William Beveridge, quien contó con el respaldo de Winston Churchill, y que tuvo como fin con­ centrar todas las experiencias obtenidas en materia de combate a la miseria, así como las prestaciones diversas por riesgos de trabajo y la asistencia de los seguros sociales, ubicando a ese país como el más desarrollado en materia de seguridad social. Destaca el autor, en este apartado de su texto, cómo los diversos congresos de trabajadores europeos de filiación socialista fueron pugnando por la exten­ sión generalizada de las normas de seguridad social.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 23 — similitud 0.1468
+
+**Detalle de puntaje:** tfidf=0.1068; bonus=0.0400
+
+> Sierra López, "Inseguridad, seguridad jurídica y seguridad social”, en Boletín de Información Jurídica, IMSS, núm. 15, septiembre-octubre de 1985.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 764 — similitud 0.1453
+
+**Detalle de puntaje:** tfidf=0.1153; bonus=0.0300
+
+> Como se mencionó en apartados anteriores, se ha generado una modulación en efectos del principio de relatividad, con lo cual se ha abierto la posibilidad a que el Poder Judicial pueda emitir órdenes para legislar, precisamente el caso so- bre trabajadoras del hogar, constituye un asunto en materia de seguridad social, donde se ordenó proponer al Congreso de la Unión la adecuación de las dispo- siciones normativas necesarias para la incorporación formal del nuevo sistema especial de seguridad social para las trabajadoras del hogar, por parte del Instituto Mexicano del Seguro Social.183 9. Medidas de reparación
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 915 — similitud 0.1428
+
+**Detalle de puntaje:** tfidf=0.1128; bonus=0.0300
+
+> También en cuanto a los requisitos para que los concubinos hombres pudieran acceder a la pensión de viudez —dependencia económica o discapacidad—,48 en comparación con lo que se pedía a las concubinas, la Corte resolvió que estos violan el mandato de no discri- minación en materia de seguridad social.49 Los asuntos que se ubican en este patrón de litigio son también de los pocos en los que los actores son hombres.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 13 — similitud 0.1427
+
+**Detalle de puntaje:** tfidf=0.1027; bonus=0.0400
+
+> Queda claro que en nuestro país la seguridad social ha sido preocupación tanto de la administración pública como del sector académico, que mucho ha aportado para su mejor concepción y funcionamiento. En este marco apa­ rece la presente obra titulada Derecho de la seguridad social, de la autoría de Don Alberto Briceño Ruiz, distinguido catedrático universitario, quien desde hace casi 40 años ha impartido la asignatura en la Facultad de Derecho de la Universidad Nacional Autónoma de México (unam), en donde cuenta con la categoría de profesor titular nivel “C”. Briceño Ruiz es, además, presidente de la Academia Mexicana de Derecho de la Seguridad Social, que fundó hace poco más de 10 años.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 314 — similitud 0.1399
+
+**Detalle de puntaje:** tfidf=0.0999; bonus=0.0400
+
+> EL ARTÍCULO 85, FRACCIÓN II, INCISO E, PRIMERA PARTE, DE LA LEY ORGÁNICA DE LA ARMADA DE MÉXICO, ABROGA- DA, QUE LA PREVÉ, ES CONSTITUCIONAL”, la cual establece en la parte que interesa lo siguiente, “La mecánica de conclusión de la relación establecida entre el personal de la milicia auxiliar y la Secretaría de Marina prevista en la norma legal referida, tiene su fundamento constitucional en el artículo 123, apartado B, fracción XIII, pues su vínculo no es de natura- leza laboral, sino administrativa, en virtud de que los militares, marinos, personal del servicio
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 147 — similitud 0.1390
+
+**Detalle de puntaje:** tfidf=0.1090; bonus=0.0300
+
+> La fracción IV del artículo 337 del presente Decreto en materia de trabajo del hogar iniciará su vigencia una vez que se aprueben y entren en vigor las adecuaciones normativas necesarias para la incorporación formal de las personas trabajadoras del hogar en el régimen obligatorio de seguridad social, conforme a la resolución del Amparo Directo 9/2018 (relacionado con el Amparo Directo 8/2018), emitido por la Segunda Sala de la Suprema Corte de Justicia de la Nación. Aquellos trabajadores del hogar que se encuentren inscritos ante el Instituto Mexicano del Seguro Social no les será aplicable los artículos 338 y 339 de esta Ley.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 852 — similitud 0.1368
+
+**Detalle de puntaje:** tfidf=0.0968; bonus=0.0400
+
+> La Segunda Sala re- solvió que los trabajadores de confianza carecen de estabilidad en el empleo, en virtud de la restricción prevista en el artículo 123, apartado B, fracción XIV, de la Constitución.94 También estableció que es una restricción constitucional la pro- hibición de reinstalación de quienes ocupan las categorías previstas en el régimen del artículo 123, apartado B, fracción XIII, de la Constitución (como los agentes de las instituciones de seguridad pública).95 La Segunda Sala declaró la inconstitu- cionalidad del artículo 63, párrafo quinto, de la Ley de Transparencia y Acceso a la Información Pública del Distrito Federal, porque establece que todo el personal del instituto de...
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 893 — similitud 0.1341
+
+**Detalle de puntaje:** tfidf=0.0941; bonus=0.0400
+
+> Capítulo 19 El derecho a la seguridad social 1Diana Beatriz González Carvallo* SUMARIO: I. DOCTRINA SOBRE EL CONTENIDO NORMATIVO DEL DERECHO HUMANO A LA SEGURIDAD SOCIAL. II.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 158 — similitud 0.1294
+
+**Detalle de puntaje:** tfidf=0.0994; bonus=0.0300
+
+> Aportaciones de seguridad social son las contribuciones establecidas en la ley a cargo de personas que son sustituidas por el Estado en el cumplimiento de las obligaciones fijadas por la Ley en materia de seguridad social o a las personas que se beneficien en forma especial por servicios de seguridad social proporcionados por el mismo Estado. El Seguro Social (art.
+
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.1283
+
+**Detalle de puntaje:** tfidf=0.0983; bonus=0.0300
+
+> 10 III. Fundamento constitucional y organismos de seguridad social . . . . . . . . . . . . . . . . . 11 3.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.1258
+
+**Detalle de puntaje:** tfidf=0.0958; bonus=0.0300
+
+> Las pocas que hay sobre “programas sociales”, o modelo de seguridad social no contributivo, no le dicen, por razones que habrá que explorar con más detenimiento, “derecho a la seguridad social” al derecho a la seguridad social. Un porcentaje importante de asuntos se desechan por cuestiones de procedimiento41 y otro tanto niegan la pro- tección constitucional porque sostienen que las instituciones de seguridad social, cuando actúan en su calidad de aseguradoras, no son autoridades en términos del juicio de amparo, sino que están en igualdad de condiciones con el solicitante. Esa doctrina recientemente se ha modificado.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 161 — similitud 0.1238
+
+**Detalle de puntaje:** tfidf=0.0938; bonus=0.0300
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman los Artículos Transitorios Primero, Tercero, Cuarto, Quinto, Sexto y Séptimo del "Decreto por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo; de la Ley del Seguro Social; de la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores; del Código Fiscal de la Federación; de la Ley del Impuesto sobre la Renta; de la Ley del Impuesto al Valor Agregado; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del Artículo 123 Constitucional; de la Ley...
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 158 — similitud 0.1237
+
+**Detalle de puntaje:** tfidf=0.0937; bonus=0.0300
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo; de la Ley del Seguro Social; de la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores; del Código Fiscal de la Federación; de la Ley del Impuesto sobre la Renta; de la Ley del Impuesto al Valor Agregado; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del Artículo 123 Constitucional; de la Ley Reglamentaria de la Fracción XIII Bis del Apartado B, del Artículo 123 de la Constitución Política de los Estados Unidos...
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 139 — similitud 0.1216
+
+**Detalle de puntaje:** tfidf=0.0816; bonus=0.0400
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se adicionan y reforman diversas disposiciones de la Ley General de Salud; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del artículo 123 Constitucional; de la Ley del Seguro Social; de la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado; de la Ley para la Protección de los Derechos de Niñas, Niños y Adolescentes, y de la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 881 — similitud 0.1170
+
+**Detalle de puntaje:** tfidf=0.0870; bonus=0.0300
+
+> El artículo 123, apartado A, fracciones II y III, de la Constitución prevé un conjunto de normas que establecen las actividades que se consideran prohibidas y una jornada máxima para las personas menores de dieciséis años de edad. A partir de la reforma publicada en el Diario Oficial de la Federación el 17 de junio de 2014, la edad mínima para trabajar es la de quince años, tal como se establece en el Convenio No.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 893 — similitud 0.1111
+
+**Detalle de puntaje:** tfidf=0.0811; bonus=0.0300
 
 > Capítulo 19 El derecho a la seguridad social 1Diana Beatriz González Carvallo* SUMARIO: I. DOCTRINA SOBRE EL CONTENIDO NORMATIVO DEL DERECHO HUMANO A LA SEGURIDAD SOCIAL.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 69 — similitud 0.1873
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 901 — similitud 0.1088
 
-**Detalle de puntaje:** tfidf=0.1573; bonus=0.0300
+**Detalle de puntaje:** tfidf=0.0688; bonus=0.0400
 
-> Primera Parte. 12 Wülíam Beveridge, Las bases de la seguridad social, Fondo de Cultura Económica, México, 1987, p. 37.
+> II. MARCO NORMATIVO SOBRE EL DERECHO HUMANO A LA SEGURIDAD SOCIAL En este apartado quisiera exponer las fuentes normativas del derecho humano a la seguridad social. En primer lugar, voy a presentar las normas que integran el bloque de constitucionalidad.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 63 — similitud 0.1661
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 95 — similitud 0.1030
 
-**Detalle de puntaje:** tfidf=0.1361; bonus=0.0300
+**Detalle de puntaje:** tfidf=0.0630; bonus=0.0400
 
-> La ley de responsabilidad civil sólo entra en acción des­ pués de infringidas estas prescripciones.- En una palabra, también el apéndice se caracteriza por su descuidada redacción.- Dixit et salvavianiman meam (He dicho y salvado mi alma). Primeras leyes de seguro social En 1878, frente a la fuerza del socialismo y después de dos atentados frus­ trados contra la vida del viejo kaiser Guillermo I, unificador de Alemania, su canciller, Otto von Bismarck, concibe un plan para ahogar el poderoso 6 Ibidem, p. 10 en adelante.
+> En el caso concreto, la Corte afirmó que el Convenio 87 de la OIT, al ser conforme con las disposiciones constitucionales, representa una clase de ley reglamentaria que detalla el alcance del artículo 123 constitucional en materia de libertad sindical, razón por la cual las autoridades federales y locales debían atenerse a lo dispuesto por dicho tratado.13 Aunque la interpretación realizada por la Corte al afirmar que el Convenio 87 de la OIT reglamenta un artículo constitucional contrasta con el alcance y sentido de los compromisos internacionales, la decisión sirvió para sentar un nuevo criterio en torno a la jerarquía normativa entre la Constitución, los tratados internacionales y las...
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 66 — similitud 0.1568
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 901 — similitud 0.1002
 
-**Detalle de puntaje:** tfidf=0.1168; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.0602; bonus=0.0400
 
-> r 50 Antecedentes En 1900, los seguros sociales alemanes se enfocan con mayor amplitud y se procede a la unificación de accidentes, que en 1905 se extiende a tres as­ pectos: accidentes, enfermedad e invalidez. Sin embargo, esta tendencia no se completa hasta 1911 con la promul­ gación del Código Federal de Seguros Sociales y la Ley de Seguros de Em­ pleados Particulares.
+> 1.  Integración del bloque de constitucionalidad respecto del derecho hu- mano a la seguridad social El derecho a la seguridad social está consagrado en diversos instrumentos in- ternacionales de derechos humanos y, por supuesto, en la Constitución mexicana. El artículo 123 establece que la ley del seguro social comprenderá los seguros de
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 924 — similitud 0.1498
+**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
 
-**Detalle de puntaje:** tfidf=0.1098; bonus=0.0400
+## Ficha 04. Naturaleza jurídica del Derecho de la Seguridad Social
 
-> Diana Beatriz González Carvallo 924 proveedor, pero no de manera autónoma u optar por una pensión universal, cuyo monto es muy bajo. c. El derecho a la seguridad social de las personas no afiliadas al esquema contributivo. El modelo de aseguramiento social en México parece estar en con- travía con el carácter universal del derecho humano a la seguridad social.
+**Calidad estimada:** media
+**Mejor similitud:** 0.2674
+**Similitud promedio:** 0.2004
+**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf
+**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 894; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 897; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 904; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 913; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 919; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 924; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 13; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 2; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 21; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 419; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf, p. 3
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 14 — similitud 0.1412
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.2674
 
-**Detalle de puntaje:** tfidf=0.1012; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.2374; bonus=0.0300
 
-> En este repaso de los antecedentes de la seguridad social nos lleva el autor por otros importantes pasajes, para precisar la génesis de estas instituciones. Afirma que no fue sino hasta finales de siglo xix cuando el llamado Mariscal de Hierro, Otto von Bismarck, ministro del viejo Kaiser Guillermo I, creó en Alemania un sistema de seguridad social con el fin de contrarrestar al pode­ roso movimiento socialista que se incrustaba en los más amplios espacios de Europa. En los años iniciales del siglo xx se fueron consolidando de manera más firme las legislaciones relativas a los seguros de orden social, tanto en Alema­ nia como en Inglaterra.
+> 11 3. Fuente internacional del derecho a la seguridad social . . . . . . . . . . . . . . . . . . . 13 4.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 419 — similitud 0.1307
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.2531
 
-**Detalle de puntaje:** tfidf=0.0907; bonus=0.0400
+**Detalle de puntaje:** tfidf=0.2131; bonus=0.0400
 
-> Becker, Historia del pensamiento social, 1.1, Fondo de Cul­ tura Económica, México. Beveridge, William, Las bases de la seguridad social, Fondo de Cultura Eco­ nómica, México, 1987. Bowen Herrera, Alfredo, Introducción a la seguridad social, 3a ed. actualizada, Editorial Jurídica de Chile, Santiago de Chile, 1992.
+> 5 1. Los derechos humanos y el derecho humano a la seguridad social . . . . . . . . . . . . . . . . . . . 5 2.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 69 — similitud 0.1207
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.2409
 
-**Detalle de puntaje:** tfidf=0.1107; bonus=0.0100
+**Detalle de puntaje:** tfidf=0.2109; bonus=0.0300
 
-> 11 E! Pian Beveridge, aceptado por el gobierno ingiés, se publica en dos libros blancos en 1944 con el nombre Seguros Sociales. Primera Parte.
+> El derecho a la seguridad social 913 causa de muerte —de viudez en el matrimonio y en el concubinato, de orfandad y ascendencia— y servicios de guarderías. La inmensa mayoría de sentencias de la SCJN sobre seguridad social se origina en litigios dentro del modelo contributivo de aseguramiento social.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 69 — similitud 0.1121
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 924 — similitud 0.2234
 
-**Detalle de puntaje:** tfidf=0.0921; bonus=0.0200
-
-> n Antecedentes del seguro social 53 Plan Beveridge E! gobierno de guerra presidido por Churchill, junto con Wiliiam Beveridge, integró la comisión con representaciones de 11 departamentos. El informe Beveridge11 examina programas e ideas, incluso reiteró la idea de Bismarck en relación con el Estado de bienestar; toma como fundamento el ingreso básico mínimo que todo inglés debe percibir.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 64 — similitud 0.1111
-
-**Detalle de puntaje:** tfidf=0.0711; bonus=0.0400
-
-> Aunque se precisase mucho dinero para conseguir el contento de los desheredados, no será nunca de­ masiado caro: sería, por el contrario, una buena colocación de dinero, pues con ello evitaríamos una revolución que consumiría cantidades muy superiores.7 La primera ley fue la del seguro obligatorio de enfermedades, estableci­ da el 13 de junio de 1883; la segunda, e! 6 de julio de 1884, sobre seguro de accidentes de trabajo de los obreros y empleados de las empresas industria­ les; y otra más el 22 de junio de 1889, con el seguro obligatorio de invalidez y de vejez.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 86 — similitud 0.0987
-
-**Detalle de puntaje:** tfidf=0.0687; bonus=0.0300
-
-> En esta Conferencia se creó el Centro Interamericano de Seguridad Social, Con posterioridad, México ofreció ¡a sede de ambos organismos y la Presidencia de la Conferencia se ha confiado al Director General del Instituto Mexicano del Seguro Social; para la Dirección del Centro se han elegido destacados especialistas en la materia. 21 Sergio Tomás Massa y Miguel A.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 924 — similitud 0.0979
-
-**Detalle de puntaje:** tfidf=0.0679; bonus=0.0300
+**Detalle de puntaje:** tfidf=0.1834; bonus=0.0400
 
 > Si lo hay, ¿cuál es? Si no lo hay, ¿cuál es el valor que lo fundamenta?; ¿de qué forma se estructuran las instituciones en- cargadas de garantizar el respeto de ese derecho?; ¿cómo está integrada la familia como objeto de tutela de la seguridad social y quiénes son titulares de ese derecho? ¿Cuál es la relación en México entre trabajo formal y dere- cho a la seguridad social? ¿Tienen derecho a la seguridad social las personas que no están afiliadas y que contribuyen al sistema? ¿Cuál es la relación, si la hay, entre género y derecho humano a la seguridad social?
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 922 — similitud 0.0977
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 897 — similitud 0.2208
 
-**Detalle de puntaje:** tfidf=0.0677; bonus=0.0300
+**Detalle de puntaje:** tfidf=0.1808; bonus=0.0400
 
-> Distribución de riesgos y asignación de costos de la actualización de contin- gencias en seguridad social. Hay una distancia importante entre la retórica de los derechos humanos, especialmente de la seguridad social, y el modelo de asegura- miento instaurado por los países. Esto es, las decisiones legislativas, las políticas públicas y el diseño institucional mediante los cuales se distribuyen los costos de la materialización de riesgos sociales, contingentes o estructurales.
+> El derecho a la seguridad social 897 institucional y legal adecuado y con las herramientas para detectar en dónde y de qué manera lo vulnera el diseño y funcionamiento de las instituciones de asegura- miento. La falta de esos instrumentos, o su mal diseño, dificulta o impide que los titulares del derecho reclamen ante las autoridades competentes, o que deberían serlo, el desconocimiento de estos.
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 901 — similitud 0.0852
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 13 — similitud 0.1941
 
-**Detalle de puntaje:** tfidf=0.0652; bonus=0.0200
+**Detalle de puntaje:** tfidf=0.1541; bonus=0.0400
 
-> La cuestión es si los diseños laboralistas y familistas, predominantes en ciertas regiones, ciertamente en México, responden adecuada- mente al desafío que supone la actualización de esos riesgos sociales en términos de derechos humanos. Una pregunta derivada de la anterior es si la división entre modelos, y sus efectos sobre la titularidad del derecho, contributivo y no contri- butivo de aseguramiento es admisible y sostenible. II.
+> El texto que ahora sale a la luz consta de seis partes temáticas en las que el autor expone, de manera erudita pero ágil y notablemente didáctica, los aspec­ tos sustanciales del Derecho de la Seguridad Social. En la primera de ellas abor­ da los principios estructurales de la disciplina, explicando con minuciosidad los conceptos que más utiliza esta rama del Derecho, como seguridad, inseguridad, seguro, seguro social, régimen del seguro y seguros del seguro social. La segunda parte del texto está dedicada a exponer los antecedentes de la seguridad social.
 
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 725 — similitud 0.0645
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 2 — similitud 0.1851
 
-**Detalle de puntaje:** tfidf=0.0545; bonus=0.0100
+**Detalle de puntaje:** tfidf=0.1451; bonus=0.0400
 
-> Tanto los derechos sociales como los civiles y políticos requieren el despliegue de obligaciones positivas y negativas por parte del Estado para su plena protección; a su vez, éstas pueden incluir o no grandes desembolsos financieros, así como realizarse de manera progresiva o inmediata. En últimas, la adopción de determinado tipo de obligaciones dependerá de las necesidades materiales y jurídicas de cada contexto o del caso en concreto, mas no de una tipología inmutable de los dere- chos y del papel estatal a adoptar. 2 La estructura jurídica de los DESC Obligaciones positivas y negativas 54 Ferrajoli, Luigi, Derechos y garantías…, op. cit., p.
+> Alberto B riceño R uiz Licenciado en Derecho. Presidente de la Academia Mexicana de Derecho de la Seguridad Social, A.C. y de la (.omisión de Segu­ ridad Sociat del Foro Per­ manente de Legisladores. Autor de Derecho individual del trabajo, Derecho mexicano de ¡os segaros sociales, Reformas al seguro social.
 
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 62 — similitud 0.0508
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 904 — similitud 0.1809
 
-**Detalle de puntaje:** tfidf=0.0408; bonus=0.0100
+**Detalle de puntaje:** tfidf=0.1509; bonus=0.0300
 
-> Era un partido de la pequeña burguesía sobre todo del sur de Alemania. Oponía los principios pequeñoburgueses del federalismo a la política bismarckiana que buscaba la unificación de Alemania bajo la hegemonía de la Prusia de los Junkers. El Congreso pangermano de los socialdemócratas de Alemania, Austria y Suiza, celebrado en Eisenach del 7 al 9 de agosto de 1869, formó el Partido Social Demócrata Obrero Alemán, conocido después como el partido eisenachianos.
+> Requiere a los Estados reglamentar la situación de los aportes de las personas mayores migrantes y su derecho a la pensión. La OG19 del Comité de Derechos Económicos Sociales y Culturales de la ONU (CESCR), aprobada en 2007, desarrolla el artículo 9 del PIDESC sobre el derecho a la seguridad social. Precisa algunos de los riesgos sociales básicos que deben estar cubiertos a través del aseguramiento social, entre estos, maternidad, vejez, desempleo, accidentes laborales, prestaciones familiares, discapacidad, y pensiones de sobrevivientes y huérfanos.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 897 — similitud 0.1805
+
+**Detalle de puntaje:** tfidf=0.1505; bonus=0.0300
+
+> La falta de esos instrumentos, o su mal diseño, dificulta o impide que los titulares del derecho reclamen ante las autoridades competentes, o que deberían serlo, el desconocimiento de estos. Una de las facetas de la brecha entre la noción de derecho humano universal y constitucional del derecho a la seguridad social y el diseño y funcionamiento institucionales es la división entre modelos contributivos y no contributivos de aseguramiento. No sólo se trata de un problema de segmentación entre tipos de aseguramiento según el estatus laboral, sino que impacta de manera directa el derecho humano a la seguridad social, entre otros, en términos de género y con- dición socioeconómica.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 924 — similitud 0.1794
+
+**Detalle de puntaje:** tfidf=0.1494; bonus=0.0300
+
+> Derivado de esto, ¿cómo se integran los vínculos de correlatividad de posiciones normativas y los sujetos obligados?; ¿de qué forma se estructuran las instituciones encargadas de garantizar el respeto de ese derecho?; ¿hay algún vínculo entre el derecho a la seguridad social y la igualdad sustantiva? Si lo hay, ¿cuál es?
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 21 — similitud 0.1715
+
+**Detalle de puntaje:** tfidf=0.1315; bonus=0.0400
+
+> Aspectos conceptuales Seguridad jurídica, derivada del orden normativo; de garantías de seguri­ dad, para impedir extremos de autoridad. Seguridad laboral, consistente en el desarrollo de una infraestructura que permita hacer del trabajo la fuente primordial de sostén de la familia.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 919 — similitud 0.1714
+
+**Detalle de puntaje:** tfidf=0.1314; bonus=0.0400
+
+> En estos análoga podría hacerse respecto de los concubinatos—. Para un análisis de este asunto desde la perspectiva del derecho de familia como una rama del derecho de la seguridad social puede revisarse el texto de Ann Alstott, “Private Tragedies? Family Law and Social Insurance”, Har- vard Law and Policy, vol, 3, 2009, pp.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 419 — similitud 0.1691
+
+**Detalle de puntaje:** tfidf=0.1291; bonus=0.0400
+
+> Bibliografía Acharan Balv, Boris, “La evolución de la seguridad social”, vol. II de Memorias de Derecho del Trabajo, Editorial Jurídica de Chile, Santiago de Chile, 1950. Barnes, H.E. y H.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 894 — similitud 0.1678
+
+**Detalle de puntaje:** tfidf=0.1378; bonus=0.0300
+
+> En términos generales, el derecho a la seguridad social protege a las personas contra los riesgos graves que implican para su vida y bienestar ciertas situaciones naturales y sociales.1 Este derecho ampara, entonces, contra los efectos catastró- ficos de situaciones extraordinarias, como las pandemias, y de acontecimientos ordinarios, como la salida del mercado de trabajo por vejez.
+
+**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 05. Normas constitucionales relacionadas con los sistemas federales de la seguridad social en México
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.3106
+**Similitud promedio:** 0.1782
+**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf
+**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 759; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 764; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 781; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 897; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 13; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 149; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 29; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 40; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 419; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf, p. 3; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 1; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 17; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 5; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 139; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 158; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 161
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 759 — similitud 0.3106
+
+**Detalle de puntaje:** tfidf=0.2706; bonus=0.0400
+
+> 158 Constitución Política de los Estados Unidos Mexicanos, México, artículo 107, fracción II, y Ley de Amparo, Reglamentaria de los Artículos 103 y 107 de la Constitución Política de los Estados Unidos Mexicanos, artículo 73. 159 Pou Giménez, Francisca, op. cit., p.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 764 — similitud 0.2663
+
+**Detalle de puntaje:** tfidf=0.2263; bonus=0.0400
+
+> 183 Amparo Directo 9/2018, Segunda Sala de la Suprema Corte de Justicia de la Nación, Ponente: Ministro Alberto Pérez Dayán, 5 de diciembre de 2018. 184 Constitución Política de los Estados Unidos Mexicanos, México, artículo 107 y Ley de Ampa- ro, Reglamentaria de los Artículos 103 y 107 de la Constitución Política de los Estados Unidos Mexicanos, artículo 77. 185 Pou Giménez, Francisca, op. cit., p.
+
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.2605
+
+**Detalle de puntaje:** tfidf=0.2305; bonus=0.0300
+
+> 5 1. Los derechos humanos y el derecho humano a la seguridad social . . . . . . . . . . . . . . . . . . . 5 2.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 161 — similitud 0.2310
+
+**Detalle de puntaje:** tfidf=0.1910; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman los Artículos Transitorios Primero, Tercero, Cuarto, Quinto, Sexto y Séptimo del "Decreto por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo; de la Ley del Seguro Social; de la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores; del Código Fiscal de la Federación; de la Ley del Impuesto sobre la Renta; de la Ley del Impuesto al Valor Agregado; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del Artículo 123 Constitucional; de la Ley...
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 158 — similitud 0.2215
+
+**Detalle de puntaje:** tfidf=0.1815; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo; de la Ley del Seguro Social; de la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores; del Código Fiscal de la Federación; de la Ley del Impuesto sobre la Renta; de la Ley del Impuesto al Valor Agregado; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del Artículo 123 Constitucional; de la Ley Reglamentaria de la Fracción XIII Bis del Apartado B, del Artículo 123 de la Constitución Política de los Estados Unidos...
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 161 — similitud 0.2090
+
+**Detalle de puntaje:** tfidf=0.1690; bonus=0.0400
+
+> Artículo Único.- Se reforman los Artículos Transitorios Primero, Tercero, Cuarto, Quinto, Sexto y Séptimo del “Decreto por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo; de la Ley del Seguro Social; de la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores; del Código Fiscal de la Federación; de la Ley del Impuesto sobre la Renta; de la Ley del Impuesto al Valor Agregado; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del Artículo 123 Constitucional; de la Ley Reglamentaria de la Fracción XIII Bis del Apartado B, del Artículo 123 de la Constitución Política de los Estados Unidos...
+
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.1950
+
+**Detalle de puntaje:** tfidf=0.1650; bonus=0.0300
+
+> 5 2. La seguridad social en México . . . . . . . . . . . . 8 I.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 29 — similitud 0.1910
+
+**Detalle de puntaje:** tfidf=0.1510; bonus=0.0400
+
+> • Asistencia médica. • Protección a los medios de subsistencia. • Servicios sociales. El objeto de la seguridad social es alcanzar el bienestar individual y colectivo mediante las normas y los principios que regulen los sistemas 1ó Migue! García Cruz, La seguridad social, México, 1951, pp.
+
+### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 5 — similitud 0.1888
+
+**Detalle de puntaje:** tfidf=0.1488; bonus=0.0400
+
+> ISSN-e: 2529-850X Volumen 5 Numero 7 pp 740-762 JULIO 2020 DOI: 10.19230/jonnpr.3511 Evolución de la Seguridad Social en México y su relación con el contexto socioeconómico nacional (1900-2020) Ernesto Cotonieto-Martínez · 1917. Se proclamó la Constitución Política de los Estados Unidos Mexicanos en 1917 (CPEUM) durante la presidencia de Venustiano Carranza, en la que se buscó atender las demandas que dieron origen al movimiento revolucionario, incluyendo aquellas relacionadas con los derechos y obligaciones de los trabajadores y en particular sobre la seguridad social. Estas quedaron concretadas los Artículos 2, 4, 5 y 123(7,8) (Cuadro 1).
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 139 — similitud 0.1719
+
+**Detalle de puntaje:** tfidf=0.1319; bonus=0.0400
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se adicionan y reforman diversas disposiciones de la Ley General de Salud; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del artículo 123 Constitucional; de la Ley del Seguro Social; de la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado; de la Ley para la Protección de los Derechos de Niñas, Niños y Adolescentes, y de la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 149 — similitud 0.1675
+
+**Detalle de puntaje:** tfidf=0.1275; bonus=0.0400
+
+> En efecto, la primera se emitió en ejerci­ cio de la facultad que el artículo 73 de la Constitución, en su fracción X, concede al Congreso de la Unión “para expedir las leyes del trabajo reglamentarias del artículo 123 de la Constitución” y en uso de dicha facultad el Congreso expidió la Ley Federal del Trabajo, que regula como materia privativa suya el contrato de trabajo, uno de cuyos elementos primordiales es el salario.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 781 — similitud 0.1501
+
+**Detalle de puntaje:** tfidf=0.1101; bonus=0.0400
+
+> El derecho a un medio ambiente sano 781 artículo 73, fracción XXIX-G constitucional, no solamente entre los tres órdenes de gobierno, sino también de manera transversal por los diferentes sectores del desarrollo nacional. Entre ellas se encuentran la Ley General del Equilibrio Eco- lógico y la Protección al Ambiente (LGEEPA), la Ley General de Vida Silvestre, la Ley General de Cambio Climático, la Ley General de Desarrollo Forestal Sus- tentable, la Ley General para la Prevención y Gestión Integral de los Residuos, la Ley Federal de Responsabilidad Ambiental, la Ley de Aguas Nacionales y el Código Penal Federal en su capítulo de Delitos contra el Ambiente y la Gestión Ambiental, entre otras.
+
+### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 17 — similitud 0.1432
+
+**Detalle de puntaje:** tfidf=0.1032; bonus=0.0400
+
+> regulación del mercado desde un modelo proteccionista durante 30 años que lo llevó a un acelerado crecimiento del PIB y a la tan ansiada estabilidad social y política. Congruentemente, se presentaron dos avances sumamente significativos sobre seguridad social en este periodo histórico fueron: a) después de más de una década fue promulgada la Ley del Seguro Social después y b) se crearon las dos instituciones que hasta el momento son las más importantes en México: IMSS e ISSSTE.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 29 — similitud 0.1419
+
+**Detalle de puntaje:** tfidf=0.1019; bonus=0.0400
+
+> El objeto de la seguridad social es alcanzar el bienestar individual y colectivo mediante las normas y los principios que regulen los sistemas 1ó Migue! García Cruz, La seguridad social, México, 1951, pp. 30 y 33.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 897 — similitud 0.1373
+
+**Detalle de puntaje:** tfidf=0.0973; bonus=0.0400
+
+> 15, núm. 3, 2000; Martínez Soria, Jesuswaldo y Cabestany Ruiz, Gabriela, “La reforma de la seguridad social en México frente a los desequilibrios del merca- do de trabajo”, Economía Informa, núm. 397, 2017, pp.
+
+### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 1 — similitud 0.1330
+
+**Detalle de puntaje:** tfidf=0.1030; bonus=0.0300
+
+> ISSN-e: 2529-850X Volumen 5 Numero 7 pp 740-762 JULIO 2020 DOI: 10.19230/jonnpr.3511 Evolución de la Seguridad Social en México y su relación con el contexto socioeconómico nacional (1900-2020) Ernesto Cotonieto-Martínez RINCÓN DE LA HISTORIA Evolución de la Seguridad Social en México y su relación con el contexto socioeconómico nacional (1900-2020) Evolution of Social Security in México and its relation with the national socioeconomic context (1900-2020) Ernesto Cotonieto-Martínez Instituto de Ciencias de la Salud (ICSa), Universidad Autónoma del Estado de Hidalgo (UAEH) / San Agustín Tlaxiaca, Hidalgo, México Autor para correspondencia.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 419 — similitud 0.1215
+
+**Detalle de puntaje:** tfidf=0.0815; bonus=0.0400
+
+> Becker, Historia del pensamiento social, 1.1, Fondo de Cul­ tura Económica, México. Beveridge, William, Las bases de la seguridad social, Fondo de Cultura Eco­ nómica, México, 1987. Bowen Herrera, Alfredo, Introducción a la seguridad social, 3a ed. actualizada, Editorial Jurídica de Chile, Santiago de Chile, 1992.
+
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.1120
+
+**Detalle de puntaje:** tfidf=0.0920; bonus=0.0200
+
+> 11 3. Fuente internacional del derecho a la seguridad social . . . . . . . . . . . . . . . . . . . 13 4.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 13 — similitud 0.1101
+
+**Detalle de puntaje:** tfidf=0.0801; bonus=0.0300
+
+> El texto que ahora sale a la luz consta de seis partes temáticas en las que el autor expone, de manera erudita pero ágil y notablemente didáctica, los aspec­ tos sustanciales del Derecho de la Seguridad Social. En la primera de ellas abor­ da los principios estructurales de la disciplina, explicando con minuciosidad los conceptos que más utiliza esta rama del Derecho, como seguridad, inseguridad, seguro, seguro social, régimen del seguro y seguros del seguro social. La segunda parte del texto está dedicada a exponer los antecedentes de la seguridad social.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 40 — similitud 0.1022
+
+**Detalle de puntaje:** tfidf=0.0622; bonus=0.0400
+
+> Guarderías y prestaciones V. Guarderías y prestaciones sociales sociales Seguros del Seguro Social Insisto en que en México estamos cada vez más alejados de contar con una seguridad social y que, de acuerdo con las normas constitucionales, lo que tenemos son variados sistemas de seguros sociales. La lss y la lissste con­ forman, a su vez, seguros; en torno a ellos se determinan sujetos, cuotas, condiciones y prestaciones.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 06. Principios de la seguridad social
+
+**Calidad estimada:** media
+**Mejor similitud:** 0.2391
+**Similitud promedio:** 0.1355
+**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf; La seguridad social y los  desa - Ana Belem Hernandez.pdf
+**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 748; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 800; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 893; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 913; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 116; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 136; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 14; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 28; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 289; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 29; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 303; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 69; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf, p. 3; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 10; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 17; La seguridad social y los  desa - Ana Belem Hernandez.pdf, p. 20; La seguridad social y los  desa - Ana Belem Hernandez.pdf, p. 22; La seguridad social y los  desa - Ana Belem Hernandez.pdf, p. 36; La seguridad social y los  desa - Ana Belem Hernandez.pdf, p. 61
+
+### La seguridad social y los  desa - Ana Belem Hernandez.pdf — p. 20 — similitud 0.2391
+
+**Detalle de puntaje:** tfidf=0.1491; bonus=0.0900
+
+> Principios de la seguridad social Como se ha señalado, a la par de las normas laborales, el derecho a la seguridad social debe garantizar la protección a todos los miembros de la población, supuesto que, en el caso de los países en desarrollo, no se ha logrado, pues el núcleo de beneficios sigue cubriendo mayoritariamente a los trabajadores subordinados. Lo cierto es que existen ciertos principios que sirven como guía para lograr su ple- no ejercicio, que han sido utilizados para establecer los elementos que integran los distintos sistemas de seguridad social, que se pueden enumerar de la siguiente forma: • Universalidad.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 289 — similitud 0.2190
+
+**Detalle de puntaje:** tfidf=0.1290; bonus=0.0900
+
+> 5 dispone que la organización y administración del Seguro Social están a cargo del organismo público descentralizado con personalidad jurídica y patrimonio propios, de integración operativa tripartita, denominado instituto Mexicano del Seguro Social, el cual tiene también el carácter de organismo fiscal autónomo. Es evidente que no hay espacio constitucional o legal para las empresas privadas, por lo que su participación en la administración de los recursos atenta contra los principios de la seguridad social.
+
+### La seguridad social y los  desa - Ana Belem Hernandez.pdf — p. 61 — similitud 0.1787
+
+**Detalle de puntaje:** tfidf=0.1387; bonus=0.0400
+
+> quienes aún no se incorporan a la actividad laboral, o quie- nes trabajan en el llamado sector informal, así como la pobla- ción desempleada o el grupo juvenil de los estudiantes. Sin embargo, las políticas de financiamiento de los sistemas de salud han quedado cortas, sobre todo en los países en desarrollo, en donde el principio de universalidad de la seguridad social no se cumple en pleno siglo xxi, y en donde la pobreza y desigualdad siguen siendo factores que determinan el acceso a ella.
+
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.1771
+
+**Detalle de puntaje:** tfidf=0.1571; bonus=0.0200
+
+> 5 1. Los derechos humanos y el derecho humano a la seguridad social . . . . . . . . . . . . . . . . . . . 5 2.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 69 — similitud 0.1663
+
+**Detalle de puntaje:** tfidf=0.1363; bonus=0.0300
+
+> Primera Parte. 12 Wülíam Beveridge, Las bases de la seguridad social, Fondo de Cultura Económica, México, 1987, p. 37.
+
+### La seguridad social y los  desa - Ana Belem Hernandez.pdf — p. 36 — similitud 0.1531
+
+**Detalle de puntaje:** tfidf=0.1131; bonus=0.0400
+
+> bajadores tienen al seguro social, como uno de los instru- mentos principales de la seguridad social.37 Lo cierto es que en la actualidad se ha replanteado su contenido y alcance, debido a que históricamente se había situado como una es- tructura de los seguros, con miras sólo en algunos países —sobre todo desarrollados— a ampliar la cobertura a toda la población (principio de universalización), pero ahora tal cobertura se ha ampliado poco a poco, también para el caso de países en desarrollo, tal como ocurre con algunos Esta- dos de América del Sur, en donde el derecho a la seguridad social universal ha tenido una cobertura más amplia.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 116 — similitud 0.1343
+
+**Detalle de puntaje:** tfidf=0.0943; bonus=0.0400
+
+> La instrucción era realizar un “diagnóstico objetivo, sereno, profundo y realista que permita acometer los nuevos retos de la seguridad social que demandan los mexicanos”,3 con cinco principios: 1. El sistema de seguridad social mexicano no se privatizará. 2.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.1308
+
+**Detalle de puntaje:** tfidf=0.1108; bonus=0.0200
+
+> El derecho a la seguridad social 913 causa de muerte —de viudez en el matrimonio y en el concubinato, de orfandad y ascendencia— y servicios de guarderías. La inmensa mayoría de sentencias de la SCJN sobre seguridad social se origina en litigios dentro del modelo contributivo de aseguramiento social.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 136 — similitud 0.1308
+
+**Detalle de puntaje:** tfidf=0.1008; bonus=0.0300
+
+> 120 Las leyes del Seguro S ocial Por la naturaleza de la Ley que atiende principios de seguridad social {art. 4), para garantizar el derecho a la salud, la asistencia médica, la pro- tección de los medios de subsistencia y los servicios sociales necesarios para el bienestar individual y colectivo (art.
+
+### La seguridad social y los  desa - Ana Belem Hernandez.pdf — p. 36 — similitud 0.1287
+
+**Detalle de puntaje:** tfidf=0.0887; bonus=0.0400
+
+> La seguridad social desde la política social Desde comienzos del siglo xxi se observa un cambio en los sistemas de protección social, sobre todo en los países en desarrollo, formados por diversas etapas. En la actualidad, dichos sistemas han pretendido cumplir los principios de universalidad e integralidad, con el objeto de que el total de la población tenga acceso a la protección social en todos los niveles.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 14 — similitud 0.1264
+
+**Detalle de puntaje:** tfidf=0.0864; bonus=0.0400
+
+> En este orden de ideas, indica el maestro Briceño, en 1942 surgió en Inglaterra el Plan Beveridge, que debió su nombre a Sir William Beveridge, quien contó con el respaldo de Winston Churchill, y que tuvo como fin con­ centrar todas las experiencias obtenidas en materia de combate a la miseria, así como las prestaciones diversas por riesgos de trabajo y la asistencia de los seguros sociales, ubicando a ese país como el más desarrollado en materia de seguridad social. Destaca el autor, en este apartado de su texto, cómo los diversos congresos de trabajadores europeos de filiación socialista fueron pugnando por la exten­ sión generalizada de las normas de seguridad social.
+
+### La seguridad social y los  desa - Ana Belem Hernandez.pdf — p. 22 — similitud 0.1251
+
+**Detalle de puntaje:** tfidf=0.0851; bonus=0.0400
+
+> • Cobertura universal y prestaciones adecuadas. • Asunción por parte del Estado de la responsabili- dad general y definitiva del pago de dichas presta- ciones de manera oportuna. • Seguridad social organizada con base en el principio de solidaridad entre hombres y mujeres, entre tra- bajadores activos y jubilados, entre ricos y pobres. • Generación de empleo. • Seguridad de ingresos y asistencia sanitaria a los grupos sociales de la economía formal e informal.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 893 — similitud 0.1188
+
+**Detalle de puntaje:** tfidf=0.0988; bonus=0.0200
+
+> Capítulo 19 El derecho a la seguridad social 1Diana Beatriz González Carvallo* SUMARIO: I. DOCTRINA SOBRE EL CONTENIDO NORMATIVO DEL DERECHO HUMANO A LA SEGURIDAD SOCIAL.
+
+### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 17 — similitud 0.1185
+
+**Detalle de puntaje:** tfidf=0.0885; bonus=0.0300
+
+> Congruentemente, se presentaron dos avances sumamente significativos sobre seguridad social en este periodo histórico fueron: a) después de más de una década fue promulgada la Ley del Seguro Social después y b) se crearon las dos instituciones que hasta el momento son las más importantes en México: IMSS e ISSSTE. Sin embargo, a partir de la crisis de gobernabilidad como consecuencia de la masacre de Tlatelolco, el gobierno mexicano comenzó a posicionarse de manera contradictoria en materia política, económica y legislativa sobre seguridad social y universalidad de la salud.
+
+### La seguridad social y los  desa - Ana Belem Hernandez.pdf — p. 22 — similitud 0.1185
+
+**Detalle de puntaje:** tfidf=0.0785; bonus=0.0400
+
+> con funciones coordinadas para el otorgamiento de beneficios semejantes a las distintas personas que acceden a él, atendiendo al principio de igualdad. Cabe destacar que para poder hablar de un verda- dero sistema de seguridad social integral se debe cumplir de forma satisfactoria con los principios mencionados, que corresponden a los mínimos o básicos necesarios de un sis- tema de seguridad social que, como es sabido, en muchos países de América aún no se incorporan de forma total, so- bre todo en los países en desarrollo.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 29 — similitud 0.1111
+
+**Detalle de puntaje:** tfidf=0.0811; bonus=0.0300
+
+> • Asistencia médica. • Protección a los medios de subsistencia. • Servicios sociales. El objeto de la seguridad social es alcanzar el bienestar individual y colectivo mediante las normas y los principios que regulen los sistemas 1ó Migue! García Cruz, La seguridad social, México, 1951, pp.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 28 — similitud 0.1104
+
+**Detalle de puntaje:** tfidf=0.0804; bonus=0.0300
+
+> 12 Principios estructurales propias, exigibilidad de los sujetos beneficiados por la norma para con la or­ ganización obligada, y de la institución administradora para con los sujetos públicos o particulares que deben cumplir lo estatuido. Conceptos La seguridad social es tan antigua como la humanidad. Me atrevería a sostener que se remonta al momento mismo de la creación, en que el universo y los sistemas de planetas son producto de una armonía de fuerzas.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 303 — similitud 0.1087
+
+**Detalle de puntaje:** tfidf=0.0687; bonus=0.0400
+
+> Este sistema de cuentas individuales es “de inspiración neoliberal que se basa en la apertura de la economía y en la integración de los procesos de glo- balización, en el repliegue del Estado en su función de regulación, producción y redistribución relegando la dirección a los mecanismos del mercado, con lo cual se establecen nuevas reglas del juego”.4 El sistema incrementa “la renun­ cia del Estado a su papel regulador predominante (que) abre a la negociación y (auto) regulación entre los actores ‘civiles’, las empresas y los sindicatos” y rompe el principio de solidaridad que es el régimen tradicional, el de reparto, para sustituirlo por el de capitalización individual; releva al gobierno...
+
+### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 10 — similitud 0.0932
+
+**Detalle de puntaje:** tfidf=0.0532; bonus=0.0400
+
+> Con esta nueva Ley se instituyeron tres elementos: afiliación voluntaria para trabajadores que habían sido excluidos, creación de guarderías como prestación e inclusión de la población campesina marginada y del medio urbano al IMSS bajo el concepto de solidaridad a los campesinos sin capacidad de cotización mediante aportaciones bipartitas por parte de patrones y del Estado(14,21); estableciéndose un claro antecedente respecto a la búsqueda del principio de universalidad en México. En 1976 se creó el Instituto de Seguridad Social para las Fuerzas Armadas de México (ISSFAM) y para los trabajadores de Petróleos Mexicanos (PEMEX), lo que representaba el continuo expansionismo.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 800 — similitud 0.0798
+
+**Detalle de puntaje:** tfidf=0.0498; bonus=0.0300
+
+> Alejandra Rabasa Salinas 800 Entre esas medidas, en aplicación del principio precautorio, la Corte estableció que los jueces deben realizar una valoración preliminar sobre la existencia de cual- quier riesgo que pueda afectar a los ecosistemas o al medio ambiente atendiendo a un criterio de razonabilidad y en el marco de los principios de precaución e in dubio pro natura.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 748 — similitud 0.0771
+
+**Detalle de puntaje:** tfidf=0.0471; bonus=0.0300
+
+> A su vez, se establecieron diversas obligaciones para todos los po- deres públicos, tales como la promoción, el respeto, la protección y la garantía de los derechos humanos de conformidad con los principios de universalidad, inter- dependencia, indivisibilidad y progresividad, así como la obligación de prevenir, investigar, sancionar y reparar las violaciones a estos derechos, en los términos que establezca la ley. Dichos cambios fueron acompañados con la inclusión de meca- nismos de aplicación como el principio pro persona y la interpretación conforme.
 
 **Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 2 referencia(s) de baja similitud que podrían introducir ruido.
-
-## Ficha 11. Tipología latina
-
-**Calidad estimada:** baja
-**Mejor similitud:** 0.1071
-**Similitud promedio:** 0.0695
-**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf
-**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 129; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 130; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 308; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 316; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 373; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 537; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 56; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 561; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 586; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 645; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 652; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 725; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 778; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 789; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 807; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 848; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 902; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 926; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 157; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 22; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 229; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 322; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 394; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 59
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 394 — similitud 0.1071
-
-**Detalle de puntaje:** tfidf=0.0871; bonus=0.0200
-
-> Los servidores públicos del Instituto serán los responsables de cualquier daño o perjuicio estimable en dinero que afecte a la hacienda pública fe­ deral o el patrimonio del propio Instituto, sin perjuicio de lo dispuesto en 4 Hugo Carrasco Iriarte, Derecho fiscal constitucional, Oxford University Press México, 1999, p, 56.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 373 — similitud 0.0942
-
-**Detalle de puntaje:** tfidf=0.0742; bonus=0.0200
-
-> Cfr. Bernal del Castillo, Jesús, Derecho penal comparado: la definición del delito en los sistemas anglosajón y continental, Barcelona, Atelier, 2011, pp. 47-53.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 157 — similitud 0.0870
-
-**Detalle de puntaje:** tfidf=0.0670; bonus=0.0200
-
-> La complejidad se incrementa cuando se analiza la naturaleza de la cuota, que parte del salario base de cotización. La lss no da una definición de la cuota que permita precisar sus características. A partir de 1943 los embates contra el Seguro Social se centraron a combatir
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 652 — similitud 0.0863
-
-**Detalle de puntaje:** tfidf=0.0663; bonus=0.0200
-
-> Algunas jurisdicciones han tomado el reto de la incorporación efectiva de estos derechos al más alto nivel y han reconocido tales derechos a nivel constitucional. En esos casos —e incluso en aquellos en que dicho recono- cimiento constitucional no ha tenido lugar— los sistemas jurídicos internos han desarrollado sistemas de garantías integrales y especiales para dar efectividad a tales derechos.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 22 — similitud 0.0850
-
-**Detalle de puntaje:** tfidf=0.0550; bonus=0.0300
-
-> Este criterio limitaría nuestro estudio a las causas biológicas, las que no podemos aislar sin encontrar la interdependencia entre todos los factores señalados. Es importante mencionar factores de seguridad y analizar las causas que deben atenderse; sin embargo, resulta imposible elaborar una lista de contin­ gencias que irían desde la función pública hasta la preservación del empleo, y donde se abarcarían aspectos de ingresos, mercados, producción, moral, arte, derecho, etcétera. 7 México y la seguridad social, Stylo, México, 1952, p.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 316 — similitud 0.0831
-
-**Detalle de puntaje:** tfidf=0.0531; bonus=0.0300
-
-> La violencia política contra las mujeres en razón de género: es toda acción u omisión, incluida la tolerancia, basada en elementos de género y ejercida dentro de la esfera pública o privada, que tenga por objeto o resultado limitar, anular o menoscabar el ejercicio efectivo de los derechos políticos y electorales de una o varias mujeres, el acceso al pleno ejerci- cio de las atribuciones inherentes a su cargo, labor o actividad, el libre desarrollo de la función pública, la toma de decisiones, la libertad de organización, así como el acceso y ejercicio a las prerrogativas, tratándose de precandidaturas, candidaturas, funciones o cargos públicos del mismo tipo.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 308 — similitud 0.0818
-
-**Detalle de puntaje:** tfidf=0.0518; bonus=0.0300
-
-> 80 La Suprema Corte se ha pronunciado en términos similares al sostener que la reelección es una posibilidad para el ejercicio del derecho a ser votado, pues permite a un ciudadano, que ha sido electo para una función pública con renovación periódica, postularse de nuevo para el mismo cargo (acción de inconstitucionalidad 126/2015, resuelta por el Tribunal Pleno en sesión de 11 de febrero de 2016, página 90 y acción de inconstitucionalidad 269/2020 y sus acumuladas, resuelta por el Tribunal Pleno de la SCJN en sesión de 7 de diciembre de 2020, páginas 62 a 65). 81 Juicio para la protección de los derechos político-electorales SUP-JDC-1172/2017 y acumula- dos, supra, páginas 46 a 48.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 373 — similitud 0.0802
-
-**Detalle de puntaje:** tfidf=0.0702; bonus=0.0100
-
-> Como refiere Bernal del Castillo, el principio de legalidad tuvo una evolución muy distinta en el derecho continental y en el anglosajón, debido a las particularidades del sistema de fuentes de cada uno de ellos y el papel reconocido a los jueces en la creación del derecho penal. Cfr.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 229 — similitud 0.0786
-
-**Detalle de puntaje:** tfidf=0.0586; bonus=0.0200
-
-> Health System Reform (México. Reforma al Sistema de Salud), Documento en español La primera parte elaborada por el Instituto precisa en el rubro “Advertencia’ que “El presente trabajo ha sido elaborado con el propósito de presentar al Banco Mundial un documento integral que sirva de base para la negociación de un crédito, que apoye la Reforma de! Instituto Mexicano del Seguro Social en lo general y la recuperación y desarrollo de la infraestructura médica en lo particular.” Dicho proyecto “será un soporte crítico para apoyar las políticas institucionales de seguridad social en razón de que la nueva legislación abre
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 789 — similitud 0.0785
-
-**Detalle de puntaje:** tfidf=0.0585; bonus=0.0200
-
-> El derecho a un medio ambiente sano 789 instrumentos legislativos o incluso de políticas públicas, se han incorporado a los sistemas jurídicos de protección ambiental a través de las sentencias de diversos tribunales, incluyendo a la Suprema Corte de Justicia de la Nación (SCJN).
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 725 — similitud 0.0741
-
-**Detalle de puntaje:** tfidf=0.0641; bonus=0.0100
-
-> Tanto los derechos sociales como los civiles y políticos requieren el despliegue de obligaciones positivas y negativas por parte del Estado para su plena protección; a su vez, éstas pueden incluir o no grandes desembolsos financieros, así como realizarse de manera progresiva o inmediata. En últimas, la adopción de determinado tipo de obligaciones dependerá de las necesidades materiales y jurídicas de cada contexto o del caso en concreto, mas no de una tipología inmutable de los dere- chos y del papel estatal a adoptar. 2 La estructura jurídica de los DESC Obligaciones positivas y negativas 54 Ferrajoli, Luigi, Derechos y garantías…, op. cit., p.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 902 — similitud 0.0719
-
-**Detalle de puntaje:** tfidf=0.0619; bonus=0.0100
-
-> Algunas académicas consideran que “protección” alude más a sistemas familiares y privados de apoyo social, frente al de “seguro” que apela directamente a las responsabilidades estatales respecto de este derecho humano. Ese debate se da en los textos de Pautassi, Laura, “Legislación provisional y equidad de género en América Latina”, En F. Marco, Los sistemas de pensiones en América Latina, un análisis de género, Santiago de Chile: CEPAL, 2004, p.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 56 — similitud 0.0697
-
-**Detalle de puntaje:** tfidf=0.0497; bonus=0.0200
-
-> En el ámbito jurídico, muy particularmente en relación con los derechos fun- damentales, la idea de “proporcionalidad” generó en Alemania un procedimiento para determinar la validez de sus restricciones, que ha tenido una gran aceptación en distintos sistemas jurídicos (nacionales e internacionales).72 Según consolidada jurisprudencia del Tribunal Constitucional Federal germano, esta técnica se basa en un principio de proporcionalidad derivado de la “esencia” de los derechos fun- damentales e implicado por el Estado de derecho, que podría enunciarse así: “está permitido restringir un derecho fundamental sólo en la medida indispensable para lograr un fin constitucionalmente válido”.73 Este...
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 586 — similitud 0.0665
-
-**Detalle de puntaje:** tfidf=0.0465; bonus=0.0200
-
-> María Fernanda Pinkus Aguilar 586 ante la discapacidad e ignore las diferencias entre los seres humanos. Se requiere corregir la situación de desventaja estructural en la que se encuentra esta pobla- ción, para lo que es necesario hacer adaptaciones y cambios, redistribuir las des- ventajas económicas, combatir el estigma y los estereotipos y así dar cabida a la diferencia.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 848 — similitud 0.0634
-
-**Detalle de puntaje:** tfidf=0.0534; bonus=0.0100
-
-> La Corte resolvió que la organiza- ción de las profesiones en general, en colegios profesionales, no es per se contraria a la Convención, sino que constituye un medio de regulación y de control de la fe pública y de la ética a través de la actuación de los colegas.71 Sin embargo, conclu- yó que las razones de orden público que son válidas para justificar la colegiación obligatoria de otras profesiones no pueden invocarse en el caso del periodismo, pues conducen a limitar de modo permanente, en perjuicio de los no colegiados, el derecho de hacer uso pleno de las facultades que reconoce a todo ser humano el artículo 13 de la Convención, lo cual infringe principios primarios del orden público...
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 652 — similitud 0.0634
-
-**Detalle de puntaje:** tfidf=0.0534; bonus=0.0100
-
-> A su vez, priorizados, el intérprete constitucional requerirá de mayor claridad a la hora de proceder a ad- judicar tales derechos en el marco general de los modelos de interpretación, tales como el de ponderación en general y el test de proporcionalidad, en particular. Finalmente, la irrupción constitucional de los derechos de niñas, niños y adoles- centes genera desafíos de interpretación constitucional específica en el campo de 123 Junto a un grupo de expertas y expertos de América Latina hemos intentado comenzar a desarro- llar este tipo de dogmática constitucional comparada, aun cuando sea a nivel inicial y explorato- ria.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 59 — similitud 0.0576
-
-**Detalle de puntaje:** tfidf=0.0376; bonus=0.0200
-
-> 3 Antecedentes del seguro social ualquier intento de sintetizar la evolución histórica de una institución jurídica es siempre incompleta, por lo que debe tomarse con las debidas reservas. Desde luego, estimo que debe pugnarse por establecer, conforme a las características de cada país, la seguridad social integral, con el objeto de proteger a las personas desde su nacimiento frente a los embates o infortunios que la vida presenta.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 926 — similitud 0.0576
-
-**Detalle de puntaje:** tfidf=0.0476; bonus=0.0100
-
-> Diana Beatriz González Carvallo 926 Pizarro, Roberto, La vulnerabilidad social y sus desafíos: una mirada desde América Latina, CEPAL, 2001. Sánchez-Belmont Montiel Mariela, Ramírez Villela, Miguel Ángel y Romero Suárez, Frida, Propues- ta conceptual para el análisis de la seguridad social desde la CISS, CISS, 2019. “Sepúlveda Carmona, Ma.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 129 — similitud 0.0568
-
-**Detalle de puntaje:** tfidf=0.0468; bonus=0.0100
-
-> Derechos Humanos en el Derecho Interno: Una tarea pendiente”, en García Ramírez, Sergio y Castañeda Hernández, Mireya (eds.), Recepción nacional del derecho internacional de los dere- chos humanos y admisión de la competencia contenciosa de la Corte Interamericana, Ciudad de México, Instituto de Investigaciones Jurídicas/Universidad Nacional Autónoma de México/ Secretaría de Relaciones Exteriores, 2009. Góngora Mera, Manuel Eduardo, “La difusión del bloque de constitucionalidad en la jurispruden- cia latinoamericana y su potencial en la construcción del Ius Constitutionale Commune Latino-
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 130 — similitud 0.0566
-
-**Detalle de puntaje:** tfidf=0.0466; bonus=0.0100
-
-> 3, 2021. Uprimny, Rodrigo, “Las Transformaciones Constitucionales Recientes en América Latina: Tenden- cias y Desafíos”, en Rodríguez Garavito, César (ed.), El Derecho en América Latina. Un mapa para el Pensamiento Jurídico del Siglo XXI, Argentina, Siglo XXI, 2011.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 537 — similitud 0.0559
-
-**Detalle de puntaje:** tfidf=0.0459; bonus=0.0100
-
-> Los derechos de las personas de la diversidad sexual 537 el pago de pensiones a parejas del mismo sexo es una diferencia de trato que vul- nera el derecho a la igualdad y no discriminación.47 De acuerdo con el tribunal, una diferencia de trato es discriminatoria cuando no persigue un fin legítimo y no existe una relación razonable de proporcionalidad entre los medios utilizados y el fin perseguido. Adicionalmente, cuando una diferencia de trato se basa en una de las categorías protegidas por el artículo 1.1 de la Convención Americana, la restricción de un derecho exige una fundamentación rigurosa.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 778 — similitud 0.0556
-
-**Detalle de puntaje:** tfidf=0.0456; bonus=0.0100
-
-> También los instrumentos enfocados en la protección de la naturaleza, incluyendo a las especies de plantas y animales en riesgos; ecosistemas específicos como los humedales, o los que se refieren a regiones particulares como podría ser el Acuerdo de Escazú que aplica en la región de América Latina y el Caribe, aunque no estaba en vigor cuando se emitió la OC 23/2017.
-
-### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 322 — similitud 0.0527
-
-**Detalle de puntaje:** tfidf=0.0327; bonus=0.0200
-
-> Al Comité se le confieren atribu­ ciones para emitir disposiciones relativas al Sistema de Ahorro para el Retiro (sar), sin sujetarlas a la consideración del Consejo Técnico o de la Asamblea General del im ss. El Comité tenía autonomía de gestión.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 645 — similitud 0.0481
-
-**Detalle de puntaje:** tfidf=0.0381; bonus=0.0100
-
-> El énfasis es mío. 93 Morlachetti, Alejandro, Sistemas nacionales de protección integral de la infancia: fundamentos jurídicos y estado de aplicación en América Latina y el Caribe, CEPAL /UNICEF, 2013. 94 Comisión Interamericana de Derechos Humanos (CIDH) Derecho del niño y la niña a la fa- milia.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 807 — similitud 0.0479
-
-**Detalle de puntaje:** tfidf=0.0379; bonus=0.0100
-
-> El derecho a un medio ambiente sano 807 la tierra en el Amazonas que desmonten 80% del área de su propiedad. Básicamente, lo que el sistema jurídico establece aquí es que los derechos de propiedad tienen una función ecológica.116 La Suprema Corte de Justicia ha adoptado un criterio similar, en el cual afirmó que en el sistema jurídico mexicano la propiedad también tiene una función eco- lógica que se deriva del mandato de conservación de los recursos naturales y el régimen de responsabilidad ambiental que complementa el derecho humano a un medio ambiente sano, de conformidad con los artículos 4º, párrafo quinto, y 27, párrafo tercero de la Constitución.
-
-### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 561 — similitud 0.0471
-
-**Detalle de puntaje:** tfidf=0.0371; bonus=0.0100
-
-> 941/2000-CCPR/ C/78/D/941/2000. Comisión Interamericana de Derechos Humanos, Violencia contra personas lesbianas, gay, bisex- uales, trans e intersex en América Latina. OEA/Ser.L/V/II, Doc.
-
-**Observación automática:** La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 18 referencia(s) de baja similitud que podrían introducir ruido.

@@ -1,53 +1,65 @@
 {
-  "tema": "Clasificación de los tipos de seguro en la seguridad social mexicana: modalidades (obligatorio, voluntario y facultativo) y tipología germano-latina",
-  "objetivo": "Clasificar los tipos de seguro a partir del análisis de sus características, plasmando sus características y sustento legal, estableciendo semejanzas y diferencias, y ubicando cada modalidad dentro de las tipologías de origen germano y latino",
-  "tecnica_didactica": "Cuadro comparativo",
-  "actividad": "Actividad 2 - Elaboración de un cuadro comparativo de las modalidades y tipologías germano-latina de los tipos de seguro, con texto que justifica los criterios de clasificación y el fundamento normativo",
+  "tema": "Naturaleza y marco jurídico de la seguridad social. Fuentes y principios de la seguridad social.",
+  "objetivo": "Promover el análisis e interpretación del Derecho a la Seguridad Social desde un enfoque integral para ubicar la fundamentación teórica, legislativa y jurisprudencial que rige el Derecho a la Seguridad Social.",
+  "tecnica_didactica": "Reseña",
+  "actividad": "Reseña sobre el contenido de los artículos constitucionales que sustentan el derecho de la seguridad social en México. El estudiante dará lectura a la bibliografía y la legislación identificando el sustento constitucional de la seguridad social en México, redactará una reseña que indique el fundamento constitucional del derecho a la seguridad social, parafraseará el contenido de dicho articulado, hará una reflexión sobre la importancia que tiene para la ciudadanía este derecho humano e indicará en qué legislación secundaria se refleja. Tiempo estimado: 2 horas.",
   "bibliografia": [
-    "Briceño Ruiz, A. (2011). Derecho de la Seguridad Social. Oxford University Press, México. Colección Textos Jurídicos Universitarios.",
-    "Cámara de Diputados del H. Congreso de la Unión (2026a). Constitución Política de los Estados Unidos Mexicanos. https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
-    "Cámara de Diputados del H. Congreso de la Unión (2026b). Ley del Instituto de Seguridad Social para las Fuerzas Armadas Mexicanas. https://www.diputados.gob.mx/LeyesBiblio/pdf/LISSFAM.pdf",
-    "Cámara de Diputados del H. Congreso de la Unión (2026c). Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado. https://www.diputados.gob.mx/LeyesBiblio/pdf/LISSSTE.pdf",
-    "Cámara de Diputados del H. Congreso de la Unión (2026d). Ley del Seguro Social. https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
-    "Cotonieto-Martínez, E. (2021). Evolución de la seguridad social en México y su relación con el contexto socioeconómico nacional (1920-2020). Journal of Negative and No Positive Results (JONNPR), 5(7):740-762. doi: 10.19230/jonnpr.3511.",
-    "González Carvallo, D. B. (2024). El derecho a la seguridad social y las responsabilidades de cuidado. Tirant lo Blanch, México.",
-    "Ibarra Olguín, A. M. (2022). Curso de Derechos Humanos. Suprema Corte de Justicia de la Nación; Tirant lo Blanch, México.",
-    "Martínez Ramírez, F., Franco Martín del Campo, M. E., Verdín Pérez, J. A. y Fajardo Morales, Z. A. (2021). Voces por la universalización de los derechos humanos: a 70 años de la Declaración Universal de los Derechos Humanos. Instituto de Estudios Constitucionales del Estado de Querétaro.",
-    "Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos (2026). El ACNUDH y el derecho a la seguridad social. https://www.ohchr.org/es/social-security",
-    "Sánchez, C. (2020). Referencias APA. https://normas-apa.org/referencias/"
+    "Briceño Ruíz, Alberto (2011), Derecho de la Seguridad Social, Oxford, México.",
+    "González Carvallo, Diana Beatríz (2024), El derecho a la seguridad social y las responsabilidades de cuidado, Tirant Lo Blanch, México.",
+    "Hernández, Ana Belem (2020) La seguridad social y los desafíos de la inclusión juvenil en América. Colección CISS, Comisión Americana de Salud, Bienestar y Seguridad Social.",
+    "Ibarra Olguín, Ana María (editora) (2022), Curso de Derechos Humanos, Tirant Lo Blanch, México.",
+    "Belmont Lugo, José Luis y Parra García, María de Lourdes (2017) Derecho humano a la seguridad social, Comisión Nacional de los Derechos Humanos, México.",
+    "Morales Fajardo, Zamir Andrés (2021) Voces por la universalización de los derechos humanos. A 70 años de la Declaración Universal de los Derechos Humanos. Colección ICEQ, Instituto de Estudios Constitucionales del Estado de Querétaro. (Complementaria)"
   ],
-  "criterios_entrega": [],
-  "aprendizajes": [],
+  "criterios_entrega": [
+    "Entrega de acuerdo con el calendario proporcionado; fecha de entrega: 26 de julio de 2026, 23:55 hrs. de la Ciudad de México.",
+    "La entrega corresponde a un solo intento.",
+    "Entregas extemporáneas con penalización de 10% menos de los puntos; recepción únicamente hasta el martes de cada semana (no aplica semanas 9 y 10).",
+    "Actividades debidamente citadas en formato APA 7ª edición.",
+    "Uso de IA apegado a los Lineamientos para el uso ético y responsable de la IA.",
+    "Evaluación formativa; la actividad aporta 10/100.",
+    "Escala de evaluación IA: 50%-100% no declarado uso de IA = 7 puntos menos; 50% en adelante declarado = no se penaliza pero se evalúa en función del contenido; 0-49% no declarado = 5 puntos menos; 0-49% declarado = no se penaliza pero se evalúa en función del contenido.",
+    "Rúbrica con rubros: Fundamento constitucional, Contenidos, Reflexión personal, Legislación secundaria y Fuentes (Excelente 2 puntos, Regular 1 punto, En desarrollo 0 puntos)."
+  ],
+  "aprendizajes": [
+    "Comprender los aspectos teóricos y técnicos de los derechos de la Seguridad Social y los que emanen de éste, para su debida aplicación.",
+    "Identificar y analizar el sustento del derecho a la seguridad social en México."
+  ],
   "conceptos_clave": [
-    "Seguro",
-    "Régimen obligatorio",
-    "Régimen voluntario",
-    "Seguro facultativo",
-    "Tipología germana (bismarckiana)",
-    "Tipología latina",
-    "Cobertura contributiva",
-    "Solidaridad social",
-    "Financiamiento tripartito",
-    "Ley del Seguro Social",
-    "Ley del ISSSTE",
-    "Artículo 123 constitucional"
+    "Fuentes del Derecho de la Seguridad Social",
+    "Normas Constitucionales relacionadas con los sistemas federales de la seguridad social en México",
+    "Naturaleza Jurídica del Derecho de la Seguridad Social",
+    "Principios de la seguridad social"
   ],
   "page_evidence": [
-    "p. 1: portada con tema, actividad, materia y unidad temática",
-    "p. 2: índice de la actividad",
-    "p. 3: resumen editorial e introducción con consigna de la Semana 2",
-    "p. 4: marco conceptual y normativo (modalidades y tipología germano-latina)",
-    "p. 5: descripción del cuadro comparativo",
-    "p. 6: cuadro comparativo (Tabla 1)",
-    "p. 7: semejanzas y diferencias",
-    "p. 8: conclusión y declaración de uso de IA",
-    "p. 9: referencias"
+    {
+      "pagina": 3,
+      "detalle": "Contenido temático, objetivo específico y datos de planificación (Semana 3)"
+    },
+    {
+      "pagina": 4,
+      "detalle": "Técnica didáctica (Reseña), bibliografía y normatividad gubernamental"
+    },
+    {
+      "pagina": 5,
+      "detalle": "Tipo de evaluación, actividad, propósito, indicaciones y porcentaje (10/100)"
+    },
+    {
+      "pagina": 6,
+      "detalle": "Lineamientos de evaluación y escala de uso de IA"
+    },
+    {
+      "pagina": 7,
+      "detalle": "Rúbrica de evaluación"
+    },
+    {
+      "pagina": 8,
+      "detalle": "Concentrado de calificaciones"
+    }
   ],
   "warnings": [
-    "No se especifican explícitamente criterios de entrega ni rúbrica de evaluación en el documento.",
-    "No se listan aprendizajes esperados de forma explícita.",
-    "El cuadro comparativo (p. 6) aparece con bloques desordenados por la extracción, dificultando la lectura lineal de la tabla.",
-    "El documento es un trabajo de estudiante (producto entregable), no una planeación docente formal; algunos campos de planeación no aplican.",
-    "Se declara uso de asistencia de inteligencia artificial en la elaboración del cuadro comparativo."
+    "Los datos de identificación RFC, CURP y Matrícula/Folio aparecen sin valor claro (solo etiquetas).",
+    "La rúbrica en la página 7 presenta desalineación entre rubros y descriptores, lo que dificulta asociar cada nivel con su criterio correspondiente.",
+    "Algunas URLs de la bibliografía aparecen truncadas o incompletas."
   ]
 }
