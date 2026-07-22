@@ -63,12 +63,6 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
             "stop_conditions": ("activity_contract.passed", "pdf_fresh", "sin citas indefinidas", "sin placeholders", "consensus_score suficiente"),
         },
         {
-            "id": "optimize_concept_map_layout",
-            "goal": "Cuando el producto sea un MAPA CONCEPTUAL (TikZ con estilos mc*), aplicar el optimizador de layout (aulatex mapa-layout --write) partiendo del layout relativo agrupado por ramas: convertir a coordenadas absolutas, resolver choques, colocar las palabras de enlace sin empalmes (place_labels), y SEPARAR en vertical/horizontal (--vspread/--hspread, con cap para no salir de página) dando aire a las etiquetas y llenando el alto. Verificar el render real con pdftoppm/view_image y que el mapa + caption 'Figura' queden en la misma página.",
-            "actions": ("partir del layout relativo agrupado", "aulatex mapa-layout --write (vspread/hspread/label-clearance)", "verificar render sin empalmes y sin desborde", "ajustar etiquetas root->rama y cruzadas con pos", "recompilar"),
-            "outputs": ("mapa_sin_choques", "etiquetas_sin_empalmes", "mapa_y_caption_misma_pagina"),
-        },
-        {
             "id": "align_report_and_presentation",
             "goal": "Cuando existan reporte y presentación de la misma actividad, alinear la presentación con el reporte: reflejar conceptos, profundidad, fuentes y conclusión, conservando el estilo Beamer institucional y añadiendo una diapositiva de referencias APA y declaración de IA si aplica.",
             "actions": ("comparar reporte vs presentación", "actualizar diapositivas desfasadas", "espejar estructura y fuentes", "compilar presentación", "verificar visualmente"),
@@ -101,7 +95,6 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
         "ai_declaration": "la declaración de uso de inteligencia artificial, cuando exista, se materializa como \\footnote ligada a una frase oportuna del documento (por defecto de la conclusión), NUNCA como \\section/\\section* ni como bloque separado; debe indicar herramienta y propósito (organizar ideas, revisar redacción) y afirmar que no sustituyó el análisis propio",
         "compile": "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
         "report_presentation_alignment": "cuando existan reporte y presentación de la misma actividad, la presentación debe reflejar el contenido, la profundidad, los conceptos, las fuentes y la conclusión del reporte, con estilo Beamer institucional y una diapositiva final de referencias APA y declaración de IA si el reporte la incluye",
-        "concept_map_layout": "cuando el producto sea un mapa conceptual (TikZ mc*), el layout debe estar optimizado partiendo del layout relativo agrupado por ramas: sin choques entre nodos, sin palabras de enlace empalmadas ni 'comidas' sobre los nodos (place_labels + separación vertical/horizontal con --vspread/--hspread), y con el mapa y su caption 'Figura' en la MISMA página sin desbordar (verificado con el render real). Aplicar 'aulatex mapa-layout --write' (integrado en el post-proceso de realizar-actividad).",
     },
     "source_validation_rules": {
         "questionnaire_answers": (
@@ -175,45 +168,15 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
             "El adaptador del extractor debe cargar scripts/aulatex.env y exportar PYTHONUTF8=1 al subproceso para heredar credenciales "
             "Foundry y evitar UnicodeEncodeError en Windows (cp1252)."
         ),
-        "extractor_output_folder": (
-            "CONTRATO DE CARPETA DEL EXTRACTOR: la base conceptual de CADA actividad se almacena en su PROPIA subcarpeta bajo "
-            "extractor-aulatex/, con el patrón 'conceptos-<materia-slug>-actividad-N' (materia-slug = nombre de la carpeta de materia sin "
-            "sufijo de programa como -lde/-mga). El adaptador (extractor_adapter._resolve_output_dir/_activity_concept_dir) IDENTIFICA el "
-            "número de actividad, LOCALIZA una carpeta existente que corresponda a esa actividad (patrón 'conceptos-*-actividad-N' o "
-            "'conceptos-*-sN') y, si no existe, la CREA (mkdir). Así una corrida NUNCA sobrescribe la base conceptual de otra semana. "
-            "PROHIBIDO escribir los artefactos del extractor en la raíz de extractor-aulatex/ cuando hay número de actividad; solo la corrida "
-            "sin actividad (activity=0) usa la raíz. Verificar con --activity N que la salida caiga en la subcarpeta correcta."
-        ),
-        "extractor_long_paths": (
-            "En Windows, si las rutas absolutas de las fuentes (p. ej. libros en referencias-*/libros-*) superan MAX_PATH (260 chars) con "
-            "LongPathsEnabled=0, is_file()/exists() fallan SILENCIOSAMENTE y el extractor reporta 'Fuentes cargables: 0'. El extractor ya "
-            "maneja esto con el prefijo de ruta extendida \\\\?\\ en document_reader._win_long_path (descubrimiento) y pdf_reader._openable_path "
-            "(apertura con PyMuPDF). Si aparece '0 fuentes' pese a haber PDFs, verificar la longitud de la ruta y que estos helpers estén activos."
-        ),
         "encoding_safety": (
             "NUNCA editar archivos .tex con PowerShell (Set-Content / -replace): corrompe la codificación UTF-8 (mojibake doble). "
             "Usar siempre herramientas de edición que preserven UTF-8. Si ocurre mojibake, reparar con reemplazos dirigidos "
             "(Ã¡->á, Âº->º, â€\"->—) por Python, no re-decodificando todo el archivo."
         ),
-        "always_use_latexmk": (
-            "SIEMPRE compilar con latexmk vía scripts/latexmk-build.ps1 (o workspace.compile_tex, que lo invoca). El .latexmkrc de la raíz "
-            "ya fija $out_dir='.build/latex' y $aux_dir='.build/latex/aux' + TEXINPUTS/BIBINPUTS/BSTINPUTS, de modo que TODOS los auxiliares "
-            "(.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz) quedan AISLADOS en .build/latex y el PDF final se copia junto al .tex. "
-            "PROHIBIDO compilar con pdflatex/bibtex manuales sin -output-directory (dejan residuos junto al .tex y ensucian la carpeta de la materia). "
-            "latexmk además resuelve solo el ciclo pdflatex->bibtex->pdflatex x2 (max_repeat=5). Si aparece un warning no fatal 'Missing input file .toc' "
-            "tras limpiar auxiliares, es cosmético: latexmk regenera el .toc en la 2ª pasada; usar -f (force) para que no aborte el exit code."
-        ),
         "build_command": (
-            "Comando canónico (respeta el .latexmkrc, NO deja residuos junto al .tex): "
-            "powershell -File scripts/latexmk-build.ps1 <src.tex> -CleanMode safe. "
-            "Equivale a 'latexmk -f -pdf -interaction=nonstopmode -file-line-error <src>' con el .latexmkrc que aísla auxiliares en "
-            ".build/latex/aux y copia el PDF al lado del .tex. NO usar invocaciones manuales de pdflatex/bibtex que escriban junto al .tex."
-        ),
-        "no_build_residues": (
-            "La carpeta de cada materia/actividad SOLO debe contener FUENTES (.tex .bib .md .json) y el PDF final; NUNCA residuos de compilación "
-            "(.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz .nav .snm .vrb .xdv .run.xml) ni respaldos .bak del optimizador ya aplicados. "
-            "Como latexmk (con el .latexmkrc) aísla todo en .build/latex, la única fuente de residuos son compilaciones manuales antiguas: si aparecen, "
-            "BORRARLOS. El post-proceso de realizar-actividad debe barrer estos residuos de la carpeta de la actividad tras la compilación final."
+            "Para builds con bibliografía y múltiples pasadas estables: cmd /c \"latexmk -f -pdf -bibtex -interaction=nonstopmode "
+            "-output-directory=.build\\latex\\aux <src>\" con TEXINPUTS='.;<repo>\\base\\Plantilla-Informe;<carpeta-materia>;' y "
+            "BIBINPUTS='<carpeta-materia>;'; luego copiar el PDF de .build\\latex\\aux al destino."
         ),
         "page_control": (
             "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre "
@@ -325,25 +288,9 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
             "'se clasifica en') y deben existir relaciones cruzadas entre ramas que evidencien interdependencia e indivisibilidad."
         ),
         "graphic_rule": (
-            "Construir el diagrama con TikZ y estilos mc* (mcroot/mcbranch/mcleaf/mcsub); cada liga con node[mclabel]{proposición}. "
-            "PUNTO DE PARTIDA recomendado: layout RELATIVO en abanico (raíz arriba-centro; ramas con below left/below right a distancias "
-            "crecientes; hojas apiladas con below= bajo su rama; nodos de enriquecimiento en RACIMOS LATERALES con left=/right= anclados a cada "
-            "hoja base, NO prolongando la columna). Esto AGRUPA por ramas y evita el aspecto de columnas largas. Después ejecutar el optimizador de "
-            "layout (véase layout_optimizer_rule) que convierte a coordenadas absolutas, resuelve choques y separa las etiquetas. Escalar con "
-            "\\resizebox{\\linewidth}{!} (por ancho) cuando el mapa optimizado es ancho-bajo; el mapa y su caption Figura deben caber en la misma página."
-        ),
-        "layout_optimizer_rule": (
-            "OBLIGATORIO tras generar/editar el mapa: correr 'aulatex mapa-layout <tex> --write' (scripts/optimize_mapa_layout.py) que "
-            "(1) parte del layout relativo agrupado por ramas, (2) convierte a coordenadas absolutas, (3) resuelve choques entre nodos con fuerza "
-            "dirigida, (4) COLOCA las palabras de enlace con pos+xshift/yshift anti-empalme (place_labels), (5) SEPARA en vertical (--vspread) y un "
-            "poco en horizontal (--hspread, con cap automático para NO salir de página) dando aire a las etiquetas y usando el alto libre, y "
-            "(6) reserva holgura de etiqueta (--label-clearance). Parámetros óptimos verificados: --iters 1200 --repulsion 0.35 --step 0.2 "
-            "--spring 0.03 --xlim 13.5 --ylim 11 --target-aspect 1.4 --vspread 1.4 --hspread 1.08 --label-clearance 1.35 (son los DEFAULTS). "
-            "REGLAS DE ORO: (a) partir del layout relativo agrupado, NUNCA reoptimizar coordenadas ya dispersas (empeora y desborda); (b) verificar el "
-            "RENDER real con view_image (el conteo 'overlaps->0' es del modelo, no del render); (c) confirmar que el caption 'Figura 1' quede en la "
-            "misma página del mapa y que x_max<ancho_pag (sin desborde); (d) los 2 empalmes residuales típicos (etiquetas root->rama muy juntas y ligas "
-            "cruzadas to[bend]) se ajustan a mano con node[mclabel, pos=0.16..0.85]; (e) si el resultado empeora, RESTAURAR el layout relativo y reintentar. "
-            "Integrado en el post-proceso de realizar-actividad cuando el producto es mapa conceptual (agent._optimize_mapa_layout, flag --no-mapa-layout)."
+            "Construir el diagrama con TikZ jerárquico. Apilar subconceptos DEBAJO de la cola de cada rama (below= del último nodo), "
+            "nunca encimarlos a la derecha ni con posiciones absolutas que desborden. Escalar el diagrama con \\resizebox{!}{0.80\\textheight} "
+            "dentro de un entorno landscape para llenar la página sin desbordar; NO usar \\resizebox{\\linewidth}{!} porque desborda en alto."
         ),
         "structure_rule": (
             "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. El mapa conceptual es el "
@@ -449,115 +396,6 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
             "La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión, nunca como \\section."
         ),
     },
-    "resena": {
-        "aliases": ("reseña", "resena", "reseña académica", "resena academica", "reseña crítica", "resena critica", "reseña literaria", "resena literaria"),
-        "required_visible_elements": ("ficha bibliográfica", "título", "introducción", "cuerpo", "conclusiones"),
-        "preservation_rule": (
-            "Si el producto es reseña, conservar los 5 ELEMENTOS OFICIALES (UnADM 100 técnicas) DENTRO de un recuadro (resenabox): "
-            "(1) ficha bibliográfica de la obra (macro \\fichabibliografica), (2) título propio distinto al de la obra, "
-            "(3) introducción que describe la temática y presenta la obra/autor, (4) cuerpo con el contenido de la obra + comentarios/críticas, "
-            "(5) conclusiones con una recomendación/valoración. No convertir la reseña en ensayo suelto sin recuadro."
-        ),
-        "visible_style_rule": (
-            "No explicar en el texto visible que 'esta actividad' usa la técnica reseña; esa trazabilidad va como comentario TEX. "
-            "El texto visible habla de la OBRA y del TEMA, no del proceso editorial. Prohibidos rótulos de proceso "
-            "(Exposición/Valoración crítica narrando el método); permitidos rótulos TEMÁTICOS que mapeen la rúbrica."
-        ),
-        "reporte_vs_producto_rule": (
-            "El REPORTE (contenedor) tiene su propia Introducción y Conclusión (reflexión del TEMA en 1a persona). El PRODUCTO (la reseña) "
-            "va ANIDADO dentro de un resenabox como subsección del desarrollo, homólogo al forobox del foro. La Introducción/Conclusión del "
-            "reporte NO se confunden con la introducción/conclusiones internas de la reseña."
-        ),
-        "marco_gravita_afuera_rule": (
-            "El MARCO CONCEPTUAL gravita AFUERA del resenabox: se materializa como subsecciones temáticas del reporte (una por eje conceptual "
-            "del extractor) con sus citas de sustento (\\citep de referencias externas). Esto mantiene la reseña CEÑIDA dentro del recuadro, "
-            "sin diluir su estructura con el aparato teórico."
-        ),
-        "structure_rule": (
-            "Cuerpo en TRES actos: (1) Introducción del reporte (contextualiza el TEMA), (2) una sección de Desarrollo con título temático "
-            "(p. ej. 'Marco jurídico y fundamento...') que contiene primero las subsecciones del marco conceptual (ejes del extractor con sus citas) "
-            "y luego la subsección 'Reseña de <objeto>' con el resenabox protagónico, (3) Conclusión del reporte. La reseña (resenabox) es el NÚCLEO."
-        ),
-        "cinco_elementos_oficiales_rule": (
-            "DENTRO del resenabox deben aparecer los 5 elementos: ficha bibliográfica (\\fichabibliografica), un título propio distinto al de la obra, "
-            "una introducción que inicia con el sujeto real (p. ej. 'La Constitución...') describiendo el tema y presentando la obra, un cuerpo con "
-            "rótulos TEMÁTICOS en negrita que mapean 1:1 los rubros de la rúbrica (con cita textual \\enquote de la obra y \\citep de sustento), y "
-            "conclusiones con recomendación/valoración explícita ('recomiendo la lectura...')."
-        ),
-        "citas_y_fuentes_rule": (
-            "Según la guía LEO, la reseña combina información externa + análisis propios: las referencias externas (\\citep) SON correctas y "
-            "recomendadas para sustentar; la obra reseñada aporta citas TEXTUALES (\\enquote con página). La reseña es autocontenida en su ESTRUCTURA "
-            "y JUICIO, pero se compone a partir de fuentes externas."
-        ),
-        "extension_dos_paginas_rule": (
-            "La reseña (dentro del resenabox) debe ocupar ~2 páginas contando la ficha (~7 filas). Si se pasa, RECORTAR párrafos ~30% "
-            "(NO reducir la ficha). Párrafos concisos por rótulo, redacción fluida y clara, sin subordinadas anidadas largas."
-        ),
-        "closure_rule": (
-            "Las conclusiones internas de la reseña cierran con una RECOMENDACIÓN/valoración. La Conclusión del reporte (fuera del recuadro) integra "
-            "síntesis, análisis propio y postura personal sobre el TEMA; inicia con \\clearpage y ocupa preferentemente una sola página; la declaración "
-            "de uso de IA se liga como \\footnote a una frase oportuna, nunca como \\section."
-        ),
-    },
-    "socioaprendizaje": {
-        "aliases": ("socioaprendizaje", "aprendizaje social", "wiki", "wiki colaborativa", "wiki de la plataforma", "trabajo colaborativo en wiki", "contribución a la wiki", "contribucion a la wiki", "edición de wiki", "edicion de wiki", "participación en wiki", "participacion en wiki"),
-        "required_visible_elements": ("contribución publicada", "base conceptual", "cita textual", "referencias", "reflexión colaborativa"),
-        "equivalence_rule": (
-            "SOCIOAPRENDIZAJE (#53 planeación / #78 catálogo) y WIKI son lo MISMO en este sistema: el Socioaprendizaje es la TÉCNICA didáctica (método de "
-            "aprendizaje social/colaborativo) y la wiki es la HERRAMIENTA/soporte de plataforma con que se materializa (construcción coral). El producto "
-            "wiki (wikibox) ES el producto del socioaprendizaje. Se detectan y contractualizan bajo el id canónico 'socioaprendizaje'."
-        ),
-        "preservation_rule": (
-            "El PRODUCTO del socioaprendizaje se materializa como una CONTRIBUCIÓN publicada en la wiki de la plataforma (herramienta de trabajo colaborativo). "
-            "Otras técnicas colaborativas (glosario colaborativo, trabajo cooperativo, proyectos colaborativos) también pueden materializarse en wiki. El PRODUCTO es la CONTRIBUCIÓN "
-            "PUBLICADA en la wiki y se reproduce ANIDADA en un recuadro (wikibox), homólogo al forobox del foro y al resenabox de la reseña. Conservar "
-            "el contenido tal como se publica (aportes + complementos a otros), no convertirlo en ensayo suelto."
-        ),
-        "visible_style_rule": (
-            "No explicar en el texto visible que 'esta actividad' usa una wiki; esa trazabilidad va como comentario TEX. El texto visible REPRODUCE la "
-            "contribución (aportes/definiciones) y habla del TEMA, no del proceso ('en esta wiki aporté...'). Prohibido metadiscurso de proceso."
-        ),
-        "reporte_vs_producto_rule": (
-            "El REPORTE (contenedor: portada + resumen + índice + 3 secciones + referencias) tiene su propia Introducción y Conclusión. El PRODUCTO "
-            "(contribución a la wiki) va ANIDADO en el Desarrollo dentro de una wikibox. La Conclusión del reporte reflexiona sobre el APORTE colaborativo "
-            "y lo aprendido; no repite el contenido de la wiki. La declaración de IA como \\footnote va en la Conclusión del reporte."
-        ),
-        "boton_copiar_txt_rule": (
-            "La wikibox DEBE llevar un BOTÓN 'Copiar contribución' en su esquina superior derecha (\\wikiCopyButton via \\usepackage{attachfile}, "
-            "homólogo al \\foroCopyButton del foro), justo tras \\begin{wikibox}: \\hfill\\wikiCopyButton{wiki-participacion-Actividad-N.txt}. El .txt "
-            "reproduce la contribución en TEXTO PLANO copiable (sin LaTeX) y se crea JUNTO al .tex/.pdf en UTF-8, para pegar directo en la plataforma. "
-            "Requiere \\attachfilesetup{color={0.373 0.561 0.227},print=false} (color RGB triple numérico; un nombre HTML rompe attachfile)."
-        ),
-        "tres_secciones_rule": (
-            "El reporte tiene EXACTAMENTE 3 secciones de contenido: (1) Introducción (contextualiza el TEMA y el trabajo colaborativo), (2) Desarrollo con "
-            "título temático (NO 'Desarrollo') que contiene la base conceptual en subsecciones + la wikibox, (3) Conclusiones. Más portada, resumen, índice "
-            "y referencias como partes de la plantilla consolidada."
-        ),
-        "base_conceptual_gravita_afuera_rule": (
-            "La BASE CONCEPTUAL (subsecciones temáticas con conceptos del extractor + citas de sustento \\citep) va AFUERA de la wikibox, como \\subsection "
-            "del Desarrollo, preparando y sosteniendo de forma orgánica y fluida el producto. Bien articulada (títulos y subsecciones adecuadas), respalda "
-            "con solidez la contribución y gravita ALREDEDOR del producto sin encerrarlo."
-        ),
-        "aportacion_tres_elementos_rule": (
-            "Cada APORTACIÓN a la wiki desarrolla 3 ELEMENTOS (planeación real S3): (1) una confusión/práctica/idea que CONTRADICE el tema; "
-            "(2) una explicación breve de por qué es un problema; (3) una alternativa para prevenirla/transformarla, con ejemplo concreto "
-            "(educación a distancia, trabajo académico, campo jurídico). Se incluye al menos una aportación propia + 1-2 complementos a aportes previos."
-        ),
-        "colaborativo_rule": (
-            "Al ser TRABAJO COLABORATIVO EN PLATAFORMA (Socioaprendizaje), la wikibox evidencia construcción CORAL respetando las reglas reales: NO repetir "
-            "ideas; NO eliminar ni modificar aportes de otros (solo AMPLIAR con otro ejemplo/consecuencia/propuesta, referidos SIN nombre: 'ampliando un aporte "
-            "previo...'); cerrar con una invitación/pregunta que abra a seguir colaborando. Escritura colectiva e hipertextual, no texto individual."
-        ),
-        "citas_y_referencias_rule": (
-            "MATIZ WIKI (distinto al foro): la wiki formativa NO exige citas ni referencias APA en cada aportación; solo mencionar la fuente (Autor, año) SI se usa "
-            "una cita textual (\\enquote). NO se obliga a un apartado 'Referencias' dentro de la wikibox. En cambio, la BASE CONCEPTUAL del desarrollo (afuera de "
-            "la wikibox) y la bibliografía general del reporte SÍ se rigen por los Lineamientos UnADM (APA 7 formal con \\citep + \\bibliography)."
-        ),
-        "closure_rule": (
-            "La Conclusión del reporte integra síntesis, análisis propio y postura personal sobre el APORTE colaborativo; inicia con \\clearpage y ocupa "
-            "preferentemente una sola página; la declaración de uso de IA se liga como \\footnote a una frase oportuna, nunca como \\section."
-        ),
-    },
 }
 
 ACTIVITY_1_CONTRACT = {
@@ -590,13 +428,7 @@ def evaluate_activity_contract(state: dict[str, Any]) -> dict[str, Any]:
     observed = state.get("observed_state", {})
     required_checks = {
         "objective": bool(signals.get("objective_present") or signals.get("extractor_objective_present")),
-        # Fuente de consigna/propósito: planeación oficial O, en su defecto, propósito
-        # derivable del propio marco conceptual del documento (fallback UCNL sin planeación).
-        "instruction_source": bool(
-            signals.get("purpose_present")
-            or signals.get("extractor_planeacion_present")
-            or signals.get("document_purpose_present")
-        ),
+        "instruction_source": bool(signals.get("purpose_present") or signals.get("extractor_planeacion_present")),
         "didactic_technique": bool(
             signals.get("didactic_technique_present")
             or signals.get("questionnaire_detected")
@@ -614,16 +446,7 @@ def evaluate_activity_contract(state: dict[str, Any]) -> dict[str, Any]:
         "bibliography": bool(observed.get("bibliography_ready")) and int(signals.get("cited_keys_count", 0)) >= ACTIVITY_1_CONTRACT["acceptable_ranges"]["bibliography_entries_min"],
         "visible_citations": int(signals.get("cited_keys_count", 0)) >= ACTIVITY_1_CONTRACT["acceptable_ranges"]["visible_citations_min"],
         "questionnaire_sources_min": (not signals.get("questionnaire_detected")) or int(signals.get("cited_keys_count", 0)) >= ACTIVITY_1_CONTRACT["acceptable_ranges"]["questionnaire_bibliography_entries_min"],
-        # Trazabilidad: extractor listo con citas suficientes O, sin planeación oficial,
-        # trazabilidad interna sólida (citas visibles ligadas a un marco conceptual).
-        "traceability": (
-            bool(observed.get("extractor_ready")) and int(signals.get("cited_keys_count", 0)) >= 3
-        )
-        or (
-            bool(signals.get("document_purpose_present"))
-            and int(signals.get("cited_keys_count", 0)) >= 3
-            and int(signals.get("document_concepts_count", 0)) >= ACTIVITY_1_CONTRACT["acceptable_ranges"]["concepts_min"]
-        ),
+        "traceability": bool(observed.get("extractor_ready")) and int(signals.get("cited_keys_count", 0)) >= 3,
         "evaluation_criteria": bool(signals.get("evaluation_criteria_present") or signals.get("extractor_criteria_count", 0) > 0),
         "final_reflection": bool(signals.get("conclusion_present")),
         # La declaración de uso de IA, cuando exista, debe ir como \footnote ligada a
@@ -641,30 +464,12 @@ def evaluate_activity_contract(state: dict[str, Any]) -> dict[str, Any]:
         "sections_range": ACTIVITY_1_CONTRACT["acceptable_ranges"]["sections_min"]
         <= int(signals.get("sections_count", 0))
         <= ACTIVITY_1_CONTRACT["acceptable_ranges"]["sections_max"],
-        # Cobertura conceptual: conceptos de la planeación oficial O, en su defecto,
-        # conceptos identificables en el marco conceptual del propio documento.
-        "concepts_min": max(
-            int(signals.get("extractor_concepts_count", 0)),
-            int(signals.get("document_concepts_count", 0)),
-        )
-        >= ACTIVITY_1_CONTRACT["acceptable_ranges"]["concepts_min"],
+        "concepts_min": int(signals.get("extractor_concepts_count", 0)) >= ACTIVITY_1_CONTRACT["acceptable_ranges"]["concepts_min"],
         # El cuerpo visible no debe contener metadiscurso de ejecución ni residuos de
         # flujos antiguos (p. ej. 'Refuerzo editorial Ciclo A', 'La Actividad N',
         # 'Esta actividad', 'el producto solicitado'). Si el observer no provee la
         # señal (None), el check no penaliza.
         "no_metadiscourse": len(signals.get("metadiscourse_hits") or []) == 0,
-        # ENCABEZADOS: el \documenttitle debe ser temático, no 'Actividad #'.
-        "thematic_title": not bool(signals.get("title_generic_activity")),
-        # ESTRUCTURA: la sección de desarrollo NO debe titularse literalmente 'Desarrollo'.
-        "development_thematic_heading": not bool(signals.get("development_section_literal")),
-        # POSTURA: análisis propio / postura personal presente (idealmente en conclusión).
-        "personal_stance": bool(signals.get("personal_stance_present")),
-        # POSTURA INTEGRADA: el análisis propio y la postura NO deben figurar como
-        # \section/\subsection separadas; deben fundirse en la prosa de la conclusión.
-        "stance_integrated_in_conclusion": not bool(signals.get("stance_as_separate_section")),
-        # CUESTIONARIO: las opciones no deben quedar como lista visible suelta
-        # ('Opciones: a) ...'); deben ir en la tabla o comentadas.
-        "questionnaire_options_hidden": not bool(signals.get("questionnaire_options_visible")),
     }
     all_checks = {**required_checks, **range_checks}
     required_hits = sum(1 for ok in required_checks.values() if ok)
@@ -705,10 +510,5 @@ def _contract_finding(name: str) -> str:
         "sections_range": "La estructura de secciones queda fuera del rango contractual.",
         "concepts_min": "La cobertura conceptual extraída está por debajo del mínimo contractual.",
         "no_metadiscourse": "El cuerpo visible contiene metadiscurso de ejecución o residuos de flujos antiguos (p. ej. 'Refuerzo editorial Ciclo A', 'La Actividad N', 'Esta actividad'); deben eliminarse o pasar a comentario TEX.",
-        "thematic_title": "El \\documenttitle es genérico ('Actividad #'); debe ser un título TEMÁTICO del producto (p. ej. 'Cuestionario resuelto de conceptos introductorios de microeconomía').",
-        "development_thematic_heading": "La sección de desarrollo se titula literalmente 'Desarrollo'; debe llevar un título temático del contenido (p. ej. 'Conceptos fundamentales de la microeconomía').",
-        "personal_stance": "Falta análisis propio o postura personal (primera persona académica: 'Considero...', 'Desde mi análisis...', 'A mi juicio...'), preferentemente integrada en la conclusión.",
-        "stance_integrated_in_conclusion": "El análisis propio o la postura personal aparecen como sección/subsección separada (p. ej. '\\section{Postura personal}', '\\subsection{Análisis propio}'); deben integrarse ORGÁNICAMENTE en la prosa de la conclusión, no como apartados propios.",
-        "questionnaire_options_hidden": "Las opciones del cuestionario aparecen como lista visible suelta ('Opciones: a) ...'); deben integrarse en la tabla o ir comentadas.",
     }
     return messages.get(name, f"Incumplimiento contractual: {name}.")
