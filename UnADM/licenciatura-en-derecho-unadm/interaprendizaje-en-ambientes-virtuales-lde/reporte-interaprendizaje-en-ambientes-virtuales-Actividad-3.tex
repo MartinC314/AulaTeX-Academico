@@ -82,7 +82,20 @@
 % justificado. \wikimeta identifica la contribución publicada.
 % -----------------------------------------------------------------------------
 \usepackage[most]{tcolorbox}
+\usepackage{attachfile}
 \usepackage{enumitem}
+
+% attachfile: el 'color' debe darse como TRIPLE RGB numérico (0..1); un nombre
+% \definecolor[HTML] provoca 'Argument of \atfi@textcolor has an extra }'.
+\attachfilesetup{color={0.373 0.561 0.227},print=false}
+
+% Botón de copia: appearance={} oculta el PushPin y muestra el 2.o argumento como
+% botón visible. Adjunta el .txt embebido con la contribución copiable.
+\newcommand{\wikiCopyButton}[1]{%
+  \textattachfile[appearance={},description={Contribucion a la wiki (texto copiable)},mimetype=text/plain]{#1}{%
+    \colorbox{unadmGreen}{\small\textcolor{white}{\,Copiar contribución\,}}%
+  }%
+}
 
 % Entorno visual de la wiki (mismo estilo que el forobox de la materia)
 \newtcolorbox{wikibox}[1][]{%
@@ -208,6 +221,7 @@ problema y ofrece una alternativa para transformarla, además de ampliar —sin
 modificarla— una aportación previa de otra persona.
 
 \begin{wikibox}[title={Contribución publicada en la wiki colaborativa}]
+\hfill\wikiCopyButton{wiki-participacion-Actividad-3.txt}\\[-0.5em]
 \phantomsection\label{wiki-participacion}
 \wikimeta{Lo que el interaprendizaje NO es y cómo evitarlo}{Martin Jonathan de la Cruz}{\today}{Wiki colaborativa, aula virtual UnADM}
 
