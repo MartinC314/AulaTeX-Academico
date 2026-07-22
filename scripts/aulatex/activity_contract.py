@@ -522,6 +522,12 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
             "(contribución a la wiki) va ANIDADO en el Desarrollo dentro de una wikibox. La Conclusión del reporte reflexiona sobre el APORTE colaborativo "
             "y lo aprendido; no repite el contenido de la wiki. La declaración de IA como \\footnote va en la Conclusión del reporte."
         ),
+        "boton_copiar_txt_rule": (
+            "La wikibox DEBE llevar un BOTÓN 'Copiar contribución' en su esquina superior derecha (\\wikiCopyButton via \\usepackage{attachfile}, "
+            "homólogo al \\foroCopyButton del foro), justo tras \\begin{wikibox}: \\hfill\\wikiCopyButton{wiki-participacion-Actividad-N.txt}. El .txt "
+            "reproduce la contribución en TEXTO PLANO copiable (sin LaTeX) y se crea JUNTO al .tex/.pdf en UTF-8, para pegar directo en la plataforma. "
+            "Requiere \\attachfilesetup{color={0.373 0.561 0.227},print=false} (color RGB triple numérico; un nombre HTML rompe attachfile)."
+        ),
         "tres_secciones_rule": (
             "El reporte tiene EXACTAMENTE 3 secciones de contenido: (1) Introducción (contextualiza el TEMA y el trabajo colaborativo), (2) Desarrollo con "
             "título temático (NO 'Desarrollo') que contiene la base conceptual en subsecciones + la wikibox, (3) Conclusiones. Más portada, resumen, índice "
