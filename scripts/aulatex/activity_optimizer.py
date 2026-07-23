@@ -20,12 +20,13 @@ from __future__ import annotations
 
 import json
 import re
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any
 
 from .activity_observer import ActivityObservationRequest, ActivityObserver
 from .llm_bridge import DEFAULT_MAX_TOKENS, AulaTeXLLMClient
+from .semantic_audit import SemanticAuditResult, SemanticAuditor
 from .workspace import AulaTeXWorkspace
 
 
@@ -46,6 +47,10 @@ class ActivityOptimizeRequest:
     max_tokens: int = DEFAULT_MAX_TOKENS
     backup: bool = True
     require_contract_100: bool = True
+    run_semantic_audit: bool = True
+    semantic_fail_closed: bool = True
+    semantic_audit_engine: str = ""
+    semantic_feedback_path: str = ""
 
 
 @dataclass(frozen=True)
@@ -59,6 +64,9 @@ class ActivityOptimizeResult:
     quality_before: float
     quality_after: float
     tex_path: Path | None
+    semantic_blocking_before: int = 0
+    semantic_blocking_after: int = 0
+    semantic_audit_available: bool = True
 
 
 @dataclass
@@ -73,6 +81,8 @@ class CycleRecord:
     contract_after: float
     improvement_kind: str = ""
     diff_chars: int = 0
+    semantic_blocking_before: int = 0
+    semantic_blocking_after: int = 0
 
 
 class ActivityOptimizer:
@@ -80,6 +90,7 @@ class ActivityOptimizer:
         self.workspace = workspace or AulaTeXWorkspace()
         self.observer = ActivityObserver(self.workspace)
         self.llm = llm or AulaTeXLLMClient()
+        self.semantic_auditor = SemanticAuditor(self.llm)
         self.root = self.workspace.feedback_root / "activity-optimize" / "runs"
         self.root.mkdir(parents=True, exist_ok=True)
 
@@ -120,6 +131,15 @@ class ActivityOptimizer:
 
         cycles: list[CycleRecord] = []
         engines = request.engines or ("GPT-5.6-Luna", "GPT-5.6-Terra")
+        semantic_engine = request.semantic_audit_engine.strip() or engines[-1]
+        semantic_current = self._semantic_audit(
+            request,
+            current_text,
+            tex_path,
+            semantic_engine,
+            run_dir / "semantic-initial.json",
+        )
+        semantic_initial = semantic_current
 
         # Modo de parada:
         #  - fixed_cycles (cycles>0): número exacto de ciclos solicitado.
@@ -136,7 +156,12 @@ class ActivityOptimizer:
         while index < hard_cap:
             # Parada por convergencia (solo en modo convergencia).
             if fixed_cycles == 0:
-                if self._quality_score(current_text) >= target_quality:
+                if (
+                    self._quality_score(current_text) >= target_quality
+                    and self._semantic_gate_passed(request, semantic_current)
+                ):
+                    break
+                if request.run_semantic_audit and not semantic_current.audit_available:
                     break
                 if stall >= stall_limit:
                     break
@@ -146,7 +171,9 @@ class ActivityOptimizer:
             cycle_dir.mkdir(parents=True, exist_ok=True)
 
             quality_before = self._quality_score(current_text)
-            proposal = self._request_improvement(engine, current_text, rubric, request, cycle_dir)
+            proposal = self._request_improvement(
+                engine, current_text, rubric, request, cycle_dir, semantic_current
+            )
 
             if proposal is None:
                 stall += 1
@@ -169,22 +196,43 @@ class ActivityOptimizer:
             contract_after = float((new_eval.get("contract") or {}).get("score", 0.0))
             compile_ok = self._compile_ok(new_eval)
             quality_after = self._quality_score(candidate_text)
+            semantic_candidate = self._semantic_audit(
+                request,
+                candidate_text,
+                tex_path,
+                semantic_engine,
+                cycle_dir / "semantic-candidate.json",
+            )
+            semantic_before_count = len(semantic_current.blocking_findings)
+            semantic_after_count = len(semantic_candidate.blocking_findings)
+            semantic_progress = self._semantic_candidate_acceptable(
+                request, semantic_current, semantic_candidate
+            )
+            quality_progress = (
+                quality_after >= quality_before
+                if semantic_after_count < semantic_before_count
+                else quality_after > quality_before
+            )
 
             accept = (
                 compile_ok
                 and contract_after >= contract_current
                 and (not request.require_contract_100 or contract_after >= 100.0)
-                and quality_after > quality_before
+                and quality_progress
+                and semantic_progress
             )
 
             if accept:
                 diff = abs(len(candidate_text) - len(current_text))
                 current_text = candidate_text
                 contract_current = contract_after
+                semantic_current = semantic_candidate
                 stall = 0  # hubo mejora aceptada: se reinicia el contador de estancamiento
                 cycles.append(CycleRecord(index, engine, True, "Mejora aplicada y verificada.",
                                           quality_before, quality_after, contract_current, contract_after,
-                                          improvement_kind=kind, diff_chars=diff))
+                                          improvement_kind=kind, diff_chars=diff,
+                                          semantic_blocking_before=semantic_before_count,
+                                          semantic_blocking_after=semantic_after_count))
             else:
                 # Revertir el candidato.
                 tex_path.write_text(current_text, encoding="utf-8")
@@ -192,17 +240,24 @@ class ActivityOptimizer:
                 reason = self._reject_reason(compile_ok, contract_after, contract_current, quality_after, quality_before, request)
                 cycles.append(CycleRecord(index, engine, False, reason,
                                           quality_before, quality_after, contract_current, contract_after,
-                                          improvement_kind=kind))
+                                          improvement_kind=kind,
+                                          semantic_blocking_before=semantic_before_count,
+                                          semantic_blocking_after=semantic_after_count))
 
         # Asegurar que el archivo final refleja el mejor estado aceptado.
         tex_path.write_text(current_text, encoding="utf-8")
         quality_end = self._quality_score(current_text)
         applied = sum(1 for c in cycles if c.accepted)
-        ok = quality_end >= quality_start and contract_current >= contract_before
+        ok = (
+            quality_end >= quality_start
+            and contract_current >= contract_before
+            and self._semantic_gate_passed(request, semantic_current)
+        )
 
         return self._finalize(request, run_id, run_dir, cycles, quality_start, quality_end, tex_path,
                               ok=ok, note="", contract_before=contract_before, contract_after=contract_current,
-                              applied=applied)
+                              applied=applied, semantic_before=semantic_initial,
+                              semantic_after=semantic_current)
 
     # ---------------------------------------------------------------- observación
 
@@ -558,10 +613,12 @@ class ActivityOptimizer:
         )
 
     def _request_improvement(self, engine: str, current_text: str, rubric: str,
-                             request: ActivityOptimizeRequest, cycle_dir: Path) -> dict[str, Any] | None:
+                             request: ActivityOptimizeRequest, cycle_dir: Path,
+                             semantic_audit: SemanticAuditResult) -> dict[str, Any] | None:
         body = self._strip_comments(current_text)
         cite_keys = sorted(set(re.findall(r"\\cite[tp]?\*?(?:\[[^\]]*\])*\{([^}]+)\}", body)))
         allowed_keys = sorted({k.strip() for group in cite_keys for k in group.split(",") if k.strip()})
+        semantic_guidance = self._semantic_guidance(semantic_audit)
 
         prompt = (
             "Eres un editor académico experto en LaTeX. Se te da un documento .tex de una actividad "
@@ -571,22 +628,29 @@ class ActivityOptimizer:
             "REGLAS ESTRICTAS:\n"
             "- Devuelve SOLO un objeto JSON válido, sin texto adicional ni ```.\n"
             "- El campo 'original_block' DEBE ser una copia EXACTA y literal de un fragmento contiguo "
-            "presente en el documento (incluye saltos de línea reales). Copia entre 2 y 12 líneas.\n"
+            "presente en el documento (incluye saltos de línea reales). Copia entre 2 y 24 líneas; "
+            "si una observación aparece en varias zonas, corrige una zona exacta por ciclo y deja "
+            "que los ciclos posteriores corrijan las demás.\n"
             "- El campo 'improved_block' es su reemplazo: mismo rol, mejor rigor/estructura/densidad, "
             "LaTeX válido y balanceado (no rompas entornos ni llaves).\n"
             "- NO inventes claves de cita nuevas. Solo puedes usar estas claves ya presentes: "
             f"{', '.join(allowed_keys) or '(ninguna)'}.\n"
-            "- NO cambies la técnica didáctica ni el sentido; solo mejora la calidad.\n"
+            "- NO cambies la técnica didáctica. Conserva el sentido salvo cuando la AUDITORÍA "
+            "SEMÁNTICA exija corregir una afirmación; esa corrección tiene prioridad.\n"
             "- Prefiere: convertir prosa difusa en enumeraciones ordenadas, añadir un conector lógico, "
-            "precisar una afirmación con una cita ya existente, o reforzar la postura propia.\n\n"
+            "precisar una afirmación con una cita ya existente, reforzar la postura propia o resolver "
+            "UNA observación semántica bloqueante en una aparición exacta por ciclo. No incluyas "
+            "secciones distantes ni uses puntos suspensivos: una corrección parcial aplicable es "
+            "preferible a un bloque enorme no localizable.\n\n"
             "Formato JSON EXACTO:\n"
             '{\n'
-            '  "improvement_kind": "<enumeracion|conector|precision-cita|postura-propia|estructura>",\n'
+            '  "improvement_kind": "<correccion-semantica|enumeracion|conector|precision-cita|postura-propia|estructura>",\n'
             '  "justification": "<por qué eleva la calidad, 1-2 frases>",\n'
             '  "original_block": "<copia literal del bloque existente>",\n'
             '  "improved_block": "<bloque mejorado>"\n'
             '}\n\n'
             f"Guía de calidad:\n{rubric}\n\n"
+            f"AUDITORÍA SEMÁNTICA (prioridad sobre mejoras formales):\n{semantic_guidance}\n\n"
             f"{self._quality_gap_hint(current_text)}\n\n"
             "DOCUMENTO .tex ACTUAL:\n"
             "-----8<-----\n"
@@ -685,6 +749,67 @@ class ActivityOptimizer:
             return f"La calidad no mejoró ({quality_before}->{quality_after}); revertido."
         return "Rechazado por criterio de aceptación."
 
+    def _semantic_audit(
+        self,
+        request: ActivityOptimizeRequest,
+        text: str,
+        tex_path: Path,
+        engine: str,
+        output_path: Path,
+    ) -> SemanticAuditResult:
+        if not request.run_semantic_audit:
+            return SemanticAuditResult(True, True, 0, 0)
+        return self.semantic_auditor.audit(
+            text,
+            tex_path.parent,
+            engine=engine,
+            max_tokens=request.max_tokens,
+            output_path=output_path,
+            feedback_path=Path(request.semantic_feedback_path) if request.semantic_feedback_path else None,
+        )
+
+    def _semantic_gate_passed(
+        self,
+        request: ActivityOptimizeRequest,
+        audit: SemanticAuditResult,
+    ) -> bool:
+        if not request.run_semantic_audit:
+            return True
+        if not audit.audit_available:
+            return not request.semantic_fail_closed
+        return not audit.blocking_findings
+
+    def _semantic_candidate_acceptable(
+        self,
+        request: ActivityOptimizeRequest,
+        before: SemanticAuditResult,
+        after: SemanticAuditResult,
+    ) -> bool:
+        if not request.run_semantic_audit:
+            return True
+        if not after.audit_available:
+            return not request.semantic_fail_closed
+        before_count = len(before.blocking_findings)
+        after_count = len(after.blocking_findings)
+        if before_count:
+            return after_count < before_count
+        return after_count == 0
+
+    def _semantic_guidance(self, audit: SemanticAuditResult) -> str:
+        if not audit.audit_available:
+            return f"AUDITORÍA NO DISPONIBLE: {audit.error}. No declares resuelto el contenido."
+        if not audit.blocking_findings:
+            return "Sin observaciones semánticas bloqueantes; no introduzcas afirmaciones nuevas sin respaldo."
+        lines = []
+        for index, finding in enumerate(audit.blocking_findings[:6], start=1):
+            lines.append(
+                f"{index}. [{finding.kind}] {finding.claim}\n"
+                f"   Razón: {finding.explanation}\n"
+                f"   Corrección sugerida: "
+                f"{finding.suggested_fix or 'contrastar y corregir con los pasajes locales'}"
+            )
+        return "\n".join(lines)
+
     # ---------------------------------------------------------------- utilidades
 
     def _strip_comments(self, text: str) -> str:
@@ -703,7 +828,12 @@ class ActivityOptimizer:
                   cycles: list[CycleRecord], quality_before: float, quality_after: float,
                   tex_path: Path | None, *, ok: bool, note: str = "",
                   contract_before: float = 0.0, contract_after: float = 0.0,
-                  applied: int = 0) -> ActivityOptimizeResult:
+                  applied: int = 0,
+                  semantic_before: SemanticAuditResult | None = None,
+                  semantic_after: SemanticAuditResult | None = None) -> ActivityOptimizeResult:
+        semantic_before = semantic_before or SemanticAuditResult(True, True, 0, 0)
+        semantic_after = semantic_after or semantic_before
+        semantic_gate_passed = self._semantic_gate_passed(request, semantic_after)
         manifest = {
             "run_id": run_id,
             "kind": "activity-optimize",
@@ -713,7 +843,7 @@ class ActivityOptimizer:
             "requested_cycles": int(request.cycles),
             "target_quality": float(request.target_quality),
             "max_cycles": int(request.max_cycles),
-            "converged": bool(quality_after >= float(request.target_quality)),
+            "converged": bool(quality_after >= float(request.target_quality) and semantic_gate_passed),
             "engines": list(request.engines),
             "ok": bool(ok),
             "note": note,
@@ -722,6 +852,11 @@ class ActivityOptimizer:
             "quality_delta": round(quality_after - quality_before, 2),
             "contract_before": contract_before,
             "contract_after": contract_after,
+            "semantic_gate_passed": semantic_gate_passed,
+            "semantic_audit_available": semantic_after.audit_available,
+            "semantic_blocking_before": len(semantic_before.blocking_findings),
+            "semantic_blocking_after": len(semantic_after.blocking_findings),
+            "semantic_findings": [asdict(item) for item in semantic_after.findings],
             "applied_cycles": applied,
             "tex": self.workspace.relative(tex_path) if tex_path else "",
             "cycles": [self._cycle_dict(c) for c in cycles],
@@ -736,6 +871,9 @@ class ActivityOptimizer:
             manifest_path=manifest_path, report_path=report_path,
             applied_cycles=applied, quality_before=quality_before,
             quality_after=quality_after, tex_path=tex_path,
+            semantic_blocking_before=len(semantic_before.blocking_findings),
+            semantic_blocking_after=len(semantic_after.blocking_findings),
+            semantic_audit_available=semantic_after.audit_available,
         )
 
     def _cycle_dict(self, c: CycleRecord) -> dict[str, Any]:
@@ -749,6 +887,8 @@ class ActivityOptimizer:
             "quality_after": c.quality_after,
             "contract_before": c.contract_before,
             "contract_after": c.contract_after,
+            "semantic_blocking_before": c.semantic_blocking_before,
+            "semantic_blocking_after": c.semantic_blocking_after,
         }
 
     def _render_report(self, manifest: dict[str, Any]) -> str:
@@ -762,6 +902,9 @@ class ActivityOptimizer:
             f"- Calidad antes: {manifest['quality_before']}/100",
             f"- Calidad después: {manifest['quality_after']}/100 (Δ {manifest['quality_delta']})",
             f"- Contrato: {manifest['contract_before']} → {manifest['contract_after']} /100",
+            f"- Auditoría semántica: {'DISPONIBLE' if manifest['semantic_audit_available'] else 'NO DISPONIBLE'}; "
+            f"bloqueos {manifest['semantic_blocking_before']} → {manifest['semantic_blocking_after']}",
+            f"- Puerta semántica: {'APROBADA' if manifest['semantic_gate_passed'] else 'BLOQUEADA'}",
             f"- Estado: {'OK' if manifest['ok'] else 'SIN CAMBIOS/REVISAR'}",
             "",
         ]
@@ -776,5 +919,12 @@ class ActivityOptimizer:
                 f"calidad {c['quality_before']}→{c['quality_after']}, "
                 f"contrato {c['contract_before']}→{c['contract_after']}. {c['reason']}"
             )
+        if manifest.get("semantic_findings"):
+            lines.extend(["", "## Observaciones semánticas", ""])
+            for finding in manifest["semantic_findings"]:
+                lines.append(
+                    f"- **{finding['severity']} / {finding['kind']}**: "
+                    f"{finding['claim']} — {finding['explanation']}"
+                )
         lines.append("")
         return "\n".join(lines)

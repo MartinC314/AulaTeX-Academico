@@ -377,6 +377,7 @@ class IntelligentEngine:
                 run_optimize=True,
                 monitor_max_cycles=int(request.monitor_max_cycles),
                 optimize_cycles=int(request.optimize_cycles),
+                    semantic_feedback_path=request.audit_path,
             )
         )
         reporter.progress(
@@ -391,6 +392,9 @@ class IntelligentEngine:
             "quality_before": getattr(result, "quality_before", None),
             "quality_after": getattr(result, "quality_after", None),
             "final_compile_ok": getattr(result, "final_compile_ok", None),
+            "semantic_blocking_before": getattr(result, "semantic_blocking_before", None),
+            "semantic_blocking_after": getattr(result, "semantic_blocking_after", None),
+            "semantic_audit_available": getattr(result, "semantic_audit_available", None),
         }
 
     def _resolve_run_dir(self, request: IntelligentEngineRequest, run_id: str) -> Path:

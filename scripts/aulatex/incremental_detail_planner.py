@@ -281,8 +281,14 @@ class IncrementalDetailPlanner:
                 "landscape_single_page": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["landscape_single_page"],
                 "conclusion_single_page": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["conclusion_single_page"],
                 "page_control": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["page_control"],
-                "always_use_latexmk": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["always_use_latexmk"],
-                "no_build_residues": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"]["no_build_residues"],
+                "always_use_latexmk": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"].get(
+                    "always_use_latexmk",
+                    "Compilar siempre con latexmk y aislar los auxiliares en .build/latex.",
+                ),
+                "no_build_residues": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["compilation_rules"].get(
+                    "no_build_residues",
+                    "La carpeta de la actividad no debe conservar auxiliares de compilación junto al TEX.",
+                ),
             },
             "bibliography_contract": {
                 "visible_citations_rule": REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT["quality_gates"]["visible_citations"],

@@ -2,10 +2,12 @@ from __future__ import annotations
 
 import argparse
 import json
+from dataclasses import asdict
 import os
 from pathlib import Path
 
 from .activity_monitor import ActivityMonitor, ActivityMonitorRequest
+from .calibration import ActivityCalibration, CalibrationRequest, MotorCalibrationRequest
 from .activity_observer import ActivityObservationRequest, ActivityObserver
 from .activity_optimizer import ActivityOptimizeRequest, ActivityOptimizer
 from .activity_revision import ActivityRevisionRequest, ActivityReviser
@@ -131,6 +133,8 @@ def build_parser() -> argparse.ArgumentParser:
     agent.add_argument("--no-final-compile", action="store_true", help="Disable the automatic final latexmk compilation after monitor/optimize in realizar-actividad.")
     agent.add_argument("--monitor-max-cycles", type=int, default=100, help="Max cycles for the automatic post-processing monitor loop.")
     agent.add_argument("--optimize-cycles", type=int, default=0, help="Fixed number of quality optimization cycles after realizar-actividad. Default 0 = converge-to-quality (run until target quality is reached).")
+    agent.add_argument("--no-semantic-audit", action="store_true", help="Disable semantic claim auditing (only for offline/debug runs).")
+    agent.add_argument("--semantic-feedback", default="", help="Archivo JSON/TXT con retroalimentación externa para la auditoría semántica.")
 
     editorial = sub.add_parser("editorial-memory", help="Build persistent editorial memory from a selected scope.")
     editorial.add_argument("--target", default=".")
@@ -227,6 +231,8 @@ def build_parser() -> argparse.ArgumentParser:
     activity_optimize.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
     activity_optimize.add_argument("--no-backup", action="store_true")
     activity_optimize.add_argument("--allow-incomplete-contract", action="store_true", help="Optimize even if the editorial contract is below 100.")
+    activity_optimize.add_argument("--no-semantic-audit", action="store_true", help="Disable semantic claim auditing (only for offline/debug runs).")
+    activity_optimize.add_argument("--semantic-feedback", default="", help="Archivo JSON/TXT con retroalimentación externa para la auditoría semántica.")
 
     activity_revise = sub.add_parser("activity-revise", help="Build a structured revision plan for an activity.")
     activity_revise.add_argument("--target", required=True)
@@ -297,6 +303,34 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Emitir marcadores ::progress::/::notice::/::result:: a stderr para el monitor visual.",
     )
+
+    calibration = sub.add_parser(
+        "calibrar-actividad",
+        help="Ejecutar el lazo cerrado opcional de calibración con retroalimentación externa.",
+    )
+    calibration.add_argument("--target", required=True)
+    calibration.add_argument("--activity", type=int, default=1)
+    calibration.add_argument("--feedback", required=True, help="Archivo JSON/TXT de retroalimentación docente.")
+    calibration.add_argument("--output", default="")
+    calibration.add_argument("--max-rounds", type=int, default=3)
+    calibration.add_argument("--engine", action="append", choices=LLM_ENGINES)
+    calibration.add_argument("--monitor-max-cycles", type=int, default=100)
+    calibration.add_argument("--optimize-cycles", type=int, default=0)
+    calibration.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
+
+    motor_calibration = sub.add_parser(
+        "calibrar-motor",
+        help="Promover retroalimentación validada a reglas persistentes del motor inteligente.",
+    )
+    motor_calibration.add_argument("--feedback", required=True, help="Archivo JSON/TXT de retroalimentación.")
+    motor_calibration.add_argument("--target-context", default="", help="Materia o actividad que originó la calibración.")
+    motor_calibration.add_argument("--target", default="", help="TEX de prueba para validar que el motor reproduce la retroalimentación sin recibirla.")
+    motor_calibration.add_argument("--activity", type=int, default=0)
+    motor_calibration.add_argument("--max-rounds", type=int, default=2)
+    motor_calibration.add_argument("--engine", action="append", choices=LLM_ENGINES)
+    motor_calibration.add_argument("--monitor-max-cycles", type=int, default=100)
+    motor_calibration.add_argument("--optimize-cycles", type=int, default=0)
+    motor_calibration.add_argument("--output", default="")
 
     compile_cmd = sub.add_parser("compile", help="Compile a TeX file with the shared latexmk wrapper.")
     compile_cmd.add_argument("tex")
@@ -419,6 +453,8 @@ def main(argv: list[str] | None = None) -> None:
             run_final_compile=not bool(args.no_final_compile),
             monitor_max_cycles=args.monitor_max_cycles,
             optimize_cycles=args.optimize_cycles,
+            run_semantic_audit=not bool(args.no_semantic_audit),
+            semantic_feedback_path=args.semantic_feedback,
         )
         result = AulaTeXAgent().run(request)
         print(json.dumps({
@@ -430,6 +466,9 @@ def main(argv: list[str] | None = None) -> None:
             "quality_before": result.quality_before,
             "quality_after": result.quality_after,
             "final_compile_ok": result.final_compile_ok,
+            "semantic_blocking_before": result.semantic_blocking_before,
+            "semantic_blocking_after": result.semantic_blocking_after,
+            "semantic_audit_available": result.semantic_audit_available,
         }, ensure_ascii=False, indent=2))
         return
 
@@ -776,6 +815,8 @@ def main(argv: list[str] | None = None) -> None:
                 max_tokens=args.max_tokens,
                 backup=not bool(args.no_backup),
                 require_contract_100=not bool(args.allow_incomplete_contract),
+                run_semantic_audit=not bool(args.no_semantic_audit),
+                semantic_feedback_path=args.semantic_feedback,
             )
         )
         print(
@@ -790,7 +831,14 @@ def main(argv: list[str] | None = None) -> None:
                     "applied_cycles": result.applied_cycles,
                     "quality_before": result.quality_before,
                     "quality_after": result.quality_after,
-                    "converged": result.quality_after >= args.target_quality,
+                    "converged": bool(
+                        result.ok
+                        and result.quality_after >= args.target_quality
+                        and result.semantic_blocking_after == 0
+                    ),
+                    "semantic_blocking_before": result.semantic_blocking_before,
+                    "semantic_blocking_after": result.semantic_blocking_after,
+                    "semantic_audit_available": result.semantic_audit_available,
                 },
                 ensure_ascii=False,
                 indent=2,
@@ -1001,6 +1049,74 @@ def main(argv: list[str] | None = None) -> None:
                     "executed": result.executed,
                     "execution_ok": result.execution_ok,
                     "execution_summary": result.execution_summary,
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    if args.command == "calibrar-actividad":
+        request = CalibrationRequest(
+            target=args.target,
+            activity_number=args.activity,
+            feedback_path=args.feedback,
+            output=args.output,
+            max_rounds=args.max_rounds,
+            engines=tuple(args.engine or ("GPT-5.6-Terra",)),
+            monitor_max_cycles=args.monitor_max_cycles,
+            optimize_cycles=args.optimize_cycles,
+            max_tokens=args.max_tokens,
+        )
+        result = ActivityCalibration(AulaTeXWorkspace()).run(request)
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "run_id": result.run_id,
+                    "run_dir": str(result.run_dir),
+                    "manifest": str(result.manifest_path),
+                    "target": result.target,
+                    "activity_number": result.activity_number,
+                    "rounds": [asdict(item) for item in result.rounds],
+                    "semantic_blocking": (
+                        len(result.final_audit.blocking_findings)
+                        if result.final_audit
+                        else None
+                    ),
+                    "promotion_ok": result.promotion_ok,
+                    "promoted_scope_keys": list(result.promoted_scope_keys),
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return
+
+    if args.command == "calibrar-motor":
+        result = ActivityCalibration(AulaTeXWorkspace()).calibrate_motor(
+            MotorCalibrationRequest(
+                feedback_path=args.feedback,
+                target_context=args.target_context,
+                target=args.target,
+                activity_number=args.activity,
+                output=args.output,
+                max_rounds=args.max_rounds,
+                engines=tuple(args.engine or ("GPT-5.6-Terra",)),
+                monitor_max_cycles=args.monitor_max_cycles,
+                optimize_cycles=args.optimize_cycles,
+            )
+        )
+        print(
+            json.dumps(
+                {
+                    "ok": result.ok,
+                    "run_id": result.run_id,
+                    "rules_path": str(result.rules_path),
+                    "manifest": str(result.manifest_path),
+                    "rules_added": list(result.rules),
+                    "self_test_ok": result.self_test_ok,
+                    "self_test_rounds": list(result.self_test_rounds),
                 },
                 ensure_ascii=False,
                 indent=2,

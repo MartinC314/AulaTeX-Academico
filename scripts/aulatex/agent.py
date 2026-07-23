@@ -65,6 +65,9 @@ class AgentRequest:
     monitor_max_cycles: int = 100
     # 0 = modo convergencia (optimiza hasta calidad objetivo, ciclos necesarios).
     optimize_cycles: int = 0
+    run_semantic_audit: bool = True
+    semantic_fail_closed: bool = True
+    semantic_feedback_path: str = ""
 
 
 @dataclass
@@ -79,6 +82,9 @@ class AgentRunResult:
     quality_before: float | None = None
     quality_after: float | None = None
     final_compile_ok: bool | None = None
+    semantic_blocking_before: int | None = None
+    semantic_blocking_after: int | None = None
+    semantic_audit_available: bool | None = None
 
 
 @dataclass(frozen=True)
@@ -308,9 +314,18 @@ class AulaTeXAgent:
         # Post-procesamiento automático para realizar-actividad:
         # 1) monitor -> converger el contrato editorial del .tex (aplica parches reales).
         # 2) optimize -> elevar la calidad del .tex de forma verificada.
-        monitor_ok, optimize_ok, quality_before, quality_after, final_compile_ok = self._postprocess_activity(
-            request, target_ctx, run_dir, report_path
-        )
+        (
+            monitor_ok,
+            optimize_ok,
+            quality_before,
+            quality_after,
+            final_compile_ok,
+            semantic_blocking_before,
+            semantic_blocking_after,
+            semantic_audit_available,
+        ) = self._postprocess_activity(request, target_ctx, run_dir, report_path)
+        if monitor_ok is False or optimize_ok is False:
+            ok = False
         # Si la compilación final falló, el resultado global no puede reportar éxito.
         if final_compile_ok is False:
             ok = False
@@ -320,6 +335,9 @@ class AulaTeXAgent:
             monitor_ok=monitor_ok, optimize_ok=optimize_ok,
             quality_before=quality_before, quality_after=quality_after,
             final_compile_ok=final_compile_ok,
+            semantic_blocking_before=semantic_blocking_before,
+            semantic_blocking_after=semantic_blocking_after,
+            semantic_audit_available=semantic_audit_available,
         )
 
     def _postprocess_activity(
@@ -328,7 +346,16 @@ class AulaTeXAgent:
         target_ctx: AgentTargetContext,
         run_dir: Path,
         report_path: Path,
-    ) -> tuple[bool | None, bool | None, float | None, float | None, bool | None]:
+    ) -> tuple[
+        bool | None,
+        bool | None,
+        float | None,
+        float | None,
+        bool | None,
+        int | None,
+        int | None,
+        bool | None,
+    ]:
         """Encadena monitor + optimize + compilación final tras realizar-actividad.
 
         - Solo aplica a la acción realizar-actividad en nivel materia/actividad y
@@ -342,15 +369,18 @@ class AulaTeXAgent:
         """
         action = request.action.strip().lower()
         if action != "realizar-actividad" or request.level not in {"materia", "actividad"}:
-            return None, None, None, None, None
+            return None, None, None, None, None, None, None, None
         if target_ctx.generation_mode == "downward":
-            return None, None, None, None, None
+            return None, None, None, None, None, None, None, None
 
         monitor_ok: bool | None = None
         optimize_ok: bool | None = None
         quality_before: float | None = None
         quality_after: float | None = None
         final_compile_ok: bool | None = None
+        semantic_blocking_before: int | None = None
+        semantic_blocking_after: int | None = None
+        semantic_audit_available: bool | None = None
         report_lines: list[str] = []
 
         # 0) Producto FORO: si la actividad es un foro, aplicar el patrón editorial
@@ -411,7 +441,13 @@ class AulaTeXAgent:
                     output=str(run_dir / "post-optimize"),
                     cycles=max(0, int(request.optimize_cycles)),
                     engines=self._optimize_engines(request.engines),
-                    require_contract_100=True,
+                    # El monitor ya valida los checks requeridos del contrato.
+                    # Permitir aquí reparar rangos no bloqueantes (p. ej.
+                    # no_metadiscourse) sin aceptar una regresión del score.
+                    require_contract_100=False,
+                    run_semantic_audit=request.run_semantic_audit,
+                    semantic_fail_closed=request.semantic_fail_closed,
+                    semantic_feedback_path=request.semantic_feedback_path,
                 ),
             )
             if optimize_invocation.ok:
@@ -419,9 +455,14 @@ class AulaTeXAgent:
                 optimize_ok = bool(result.ok)
                 quality_before = result.quality_before
                 quality_after = result.quality_after
+                semantic_blocking_before = result.semantic_blocking_before
+                semantic_blocking_after = result.semantic_blocking_after
+                semantic_audit_available = result.semantic_audit_available
                 report_lines.append(
                     f"- Optimización: {result.applied_cycles} ciclo(s) aplicados, "
-                    f"calidad {result.quality_before}→{result.quality_after} "
+                    f"calidad {result.quality_before}→{result.quality_after}; "
+                    f"bloqueos semánticos "
+                    f"{result.semantic_blocking_before}→{result.semantic_blocking_after} "
                     f"(`{self.workspace.relative(result.manifest_path)}`)"
                 )
             else:
@@ -483,7 +524,16 @@ class AulaTeXAgent:
                 encoding="utf-8",
             )
 
-        return monitor_ok, optimize_ok, quality_before, quality_after, final_compile_ok
+        return (
+            monitor_ok,
+            optimize_ok,
+            quality_before,
+            quality_after,
+            final_compile_ok,
+            semantic_blocking_before,
+            semantic_blocking_after,
+            semantic_audit_available,
+        )
 
     def _optimize_mapa_layout(self, target_path: Path) -> str | None:
         """Aplica el optimizador de layout TikZ si el .tex es un mapa conceptual.
