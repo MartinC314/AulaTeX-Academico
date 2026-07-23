@@ -125,7 +125,7 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 3 - derecho-a-la-seguridad-social-lde",
+        "subject_rule": "Actividad 2 - derecho-a-la-seguridad-social-lde",
         "scope_label": "Actividad 2"
       },
       "didactic_contract": {
@@ -341,7 +341,9 @@
         "no_gap_before_visual_deliverable": "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
         "landscape_single_page": "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
         "conclusion_single_page": "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla).",
-        "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos."
+        "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos.",
+        "always_use_latexmk": "Compilar siempre con latexmk y aislar los auxiliares en .build/latex.",
+        "no_build_residues": "La carpeta de la actividad no debe conservar auxiliares de compilación junto al TEX."
       },
       "bibliography_contract": {
         "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
@@ -353,7 +355,7 @@
         "career": "licenciatura-en-derecho-unadm",
         "subject": "derecho-a-la-seguridad-social-lde",
         "activity": "Actividad 2",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-3"
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -442,7 +444,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260720-143127",
+      "run_id": "20260723-011837",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
@@ -503,7 +505,7 @@
           "heading_contract": {
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-            "subject_rule": "Actividad 3 - derecho-a-la-seguridad-social-lde",
+            "subject_rule": "Actividad 2 - derecho-a-la-seguridad-social-lde",
             "scope_label": "Actividad 2"
           },
           "didactic_contract": {
@@ -689,7 +691,9 @@
             "no_gap_before_visual_deliverable": "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
             "landscape_single_page": "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
             "conclusion_single_page": "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla).",
-            "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos."
+            "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos.",
+            "always_use_latexmk": "Compilar siempre con latexmk y aislar los auxiliares en .build/latex.",
+            "no_build_residues": "La carpeta de la actividad no debe conservar auxiliares de compilación junto al TEX."
           },
           "bibliography_contract": {
             "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
@@ -701,7 +705,7 @@
             "career": "licenciatura-en-derecho-unadm",
             "subject": "derecho-a-la-seguridad-social-lde",
             "activity": "Actividad 2",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-3"
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -739,7 +743,9 @@
             "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-3', 'has_memory': False}"
           ],
           "novelty_signals": [
-            "bootstrap"
+            "bootstrap",
+            "heading_contract",
+            "institutional_identity"
           ],
           "derived_from": {
             "local_memory": true,
@@ -771,7 +777,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260720-143127",
+          "run_id": "20260723-011837",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",

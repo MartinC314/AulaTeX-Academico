@@ -1,0 +1,63 @@
+{
+  "tema": "Aspectos históricos de la seguridad social. Clasificación de los tipos de seguro (obligatorios, voluntarios, facultativos, germanos y latinos), seguro social y privado, y su relación con la Declaración Universal de los Derechos Humanos y la normatividad mexicana.",
+  "objetivo": "Diseñar y desarrollar herramientas necesarias para la identificación de las tensiones y posibles riesgos a través de la aplicación de las normas e instituciones jurídicas competentes para encontrar soluciones a las problemáticas derivadas de la no aplicación del derecho a la seguridad social.",
+  "tecnica_didactica": "Cuadro comparativo",
+  "actividad": "Cuadro comparativo de la clasificación de los tipos de seguro en donde se indican sus características y su clasificación entre germanos o latinos. Propósito: clasificar los tipos de seguro a través del análisis de sus características. Indicaciones: 1) Leer los tipos de seguro existentes en la bibliografía y legislación, identificando las modalidades (voluntarios, obligatorios y facultativos) y su sustento legal; 2) Enunciar en un cuadro comparativo las similitudes y diferencias entre los seguros; 3) Identificar cada uno como tipo germano o latino. Tiempo estimado: 3 horas. Ponderación: 10/100.",
+  "bibliografia": [
+    "Briceño Ruíz, Alberto (2011), Derecho de la Seguridad Social, Oxford, México.",
+    "González Carvallo, Diana Beatríz (2024), El derecho a la seguridad social y las responsabilidades de cuidado, Tirant Lo Blanch, México.",
+    "Ibarra Oguín, Ana María (editora) (2022), Curso de Derechos Humanos, Tirant Lo Blanch, México.",
+    "Cotonieto-Martínez, Ernesto (2021), Evolución de la Seguridad Social en México y su relación con el contexto socioeconómico nacional (1920-2020), Journal of negative & no positive results, 5 (7), 740-762.",
+    "Morales Fajardo, Zamir Andrés (2021), Voces por la universalización de los derechos humanos. A 70 años de la Declaración Universal de los Derechos Humanos, Colección ICEQ, Instituto de Estudios Constitucionales del Estado de Querétaro.",
+    "ACNUDH (s/a), El ACNUDH y el derecho a la seguridad social, Naciones Unidas."
+  ],
+  "criterios_entrega": [
+    "La entrega se realizará conforme al calendario proporcionado por la Figura Académica; fecha de entrega: 19 de julio de 2026, 23:55 hora Ciudad de México.",
+    "La entrega corresponde a un solo intento.",
+    "Las entregas extemporáneas tendrán penalización de 10% menos de los puntos; recepción únicamente hasta el martes de cada semana (no aplica semanas 9 y 10).",
+    "Las actividades deben entregarse debidamente citadas en formato APA 7ª edición.",
+    "El uso de herramientas de IA debe apegarse a los Lineamientos para el uso ético y responsable de la IA, con escala de penalización según declaración y porcentaje de uso.",
+    "No se reciben entregas por medios distintos al aula ni posteriores al cierre.",
+    "Evaluación formativa. Actividad ponderable 10/100.",
+    "Calificación en escala de 0 a 100; mínima aprobatoria 60. Actividades con falta de integridad académica se evalúan con 0."
+  ],
+  "aprendizajes": [
+    "Identificar las modalidades de los seguros (obligatorio, voluntario y facultativo) y sus características.",
+    "Clasificar los seguros en los tipos germano o latino.",
+    "Establecer semejanzas y diferencias entre las modalidades de seguro.",
+    "Indicar el sustento legal de cada tipo de seguro en la ley correspondiente.",
+    "Comprender los aspectos teóricos y técnicos de los derechos de la Seguridad Social para su debida aplicación."
+  ],
+  "conceptos_clave": [
+    "Seguridad social",
+    "Seguro obligatorio",
+    "Seguro voluntario",
+    "Seguro facultativo",
+    "Seguro germano",
+    "Seguro latino",
+    "Seguro social",
+    "Seguro privado",
+    "Declaración Universal de los Derechos Humanos",
+    "Leyes preconstitucionales",
+    "Constitución Política de los Estados Unidos Mexicanos"
+  ],
+  "page_evidence": [
+    "p.3 - Contenido temático (Aspectos históricos de la seguridad social)",
+    "p.3 - Datos para la planificación: Semana 2, fecha de entrega 19 de julio de 2026",
+    "p.4 - Técnica didáctica: Cuadro comparativo",
+    "p.4 - Bibliografía propuesta (general, complementaria, optativa)",
+    "p.4 - Objetivo específico que se desarrolla del contenido temático",
+    "p.5 - Normatividad gubernamental y actividad de evaluación",
+    "p.5 - Tipo de evaluación: Formativa; Evidencia ponderable 10/100",
+    "p.6 - Lineamientos para la evaluación del aprendizaje",
+    "p.7 - Rúbrica (Modalidades, Tipos, Semejanzas y diferencias, Sustento legal, Fuentes)",
+    "p.8 - Concentrado de calificaciones"
+  ],
+  "warnings": [
+    "Los campos RFC, CURP y Matrícula/Folio aparecen como etiquetas sin datos claros salvo el folio 'FA2611OEBC00060'.",
+    "El porcentaje de calificación en el bloque 'Porcentaje de calificación que aporta (--/100)' aparece incompleto en p.6, aunque se infiere 10/100 de p.5 y p.8.",
+    "La rúbrica en p.7 presenta desorden en el orden de bloques, lo que dificulta asociar con precisión cada nivel de desempeño (Excelente/Regular/En desarrollo) a su rubro correspondiente.",
+    "Fecha de sesión sincrónica y hora indicadas como 'Por determinar conforme a la encuesta de forms'.",
+    "Los enlaces de bibliografía aparecen truncados en el texto original."
+  ]
+}

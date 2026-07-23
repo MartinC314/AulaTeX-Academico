@@ -1,0 +1,966 @@
+{
+  "Constitución Política de los Estados Unidos Mexicanos": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual de la Constitución como norma suprema del ordenamiento jurídico mexicano",
+            "Fundamento del principio de supremacía constitucional (artículo 133)",
+            "Origen histórico y autoría (Congreso Constituyente de 1917, Venustiano Carranza)",
+            "Ejemplo o aplicación concreta de su estructura (parte dogmática y orgánica)",
+            "Crítica o límites (reformabilidad excesiva, tensiones con bloque de constitucionalidad y tratados internacionales)"
+          ],
+          "consultas": [
+            "artículo 133 supremacía constitucional Constitución mexicana norma suprema ley fundamental",
+            "Congreso Constituyente 1917 Querétaro Venustiano Carranza origen Constitución mexicana parte dogmática orgánica",
+            "reformas constitucionales críticas rigidez flexibilidad bloque de constitucionalidad derechos humanos artículo 1"
+          ],
+          "nota": "Las cinco citas recuperadas son casi idénticas: se limitan a encabezados y portadas del documento oficial de la Cámara de Diputados y a listas de decretos de reforma. No aportan contenido sustantivo sobre ninguno de los cinco elementos evaluados. La ficha carece por completo de definición, fundamento, autoría histórica, ejemplos de aplicación y análisis crítico. Es imprescindible una nueva ronda de búsqueda orientada al articulado sustantivo (arts. 1, 39, 40, 133) y a fuentes doctrinales/históricas para complementar el texto normativo."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "artículo 133 supremacía constitucional Constitución mexicana norma suprema ley fundamental",
+            "hits": 4
+          },
+          {
+            "consulta": "Congreso Constituyente 1917 Querétaro Venustiano Carranza origen Constitución mexicana parte dogmática orgánica",
+            "hits": 4
+          },
+          {
+            "consulta": "reformas constitucionales críticas rigidez flexibilidad bloque de constitucionalidad derechos humanos artículo 1",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual de la Constitución como norma suprema del ordenamiento jurídico mexicano",
+            "Fundamento del principio de supremacía constitucional (artículo 133)",
+            "Contexto histórico y autoría: Congreso Constituyente de Querétaro 1917",
+            "Ejemplo o aplicación concreta: estructura dogmática y orgánica, garantías individuales",
+            "Crítica o límites: reformabilidad excesiva, rigidez/flexibilidad, tensiones con control de convencionalidad"
+          ],
+          "consultas": [
+            "artículo 133 supremacía constitucional Constitución ley suprema de toda la Unión",
+            "artículo 39 40 soberanía nacional forma de gobierno república representativa federal",
+            "artículo 135 procedimiento de reforma constitucional poder revisor Congreso legislaturas estatales"
+          ],
+          "nota": "Las citas recuperadas son exclusivamente encabezados repetidos de páginas del documento oficial (portadillas con datos de reforma DOF 02-06-2026), sin contenido sustantivo. No aportan definición, fundamento, autoría, ejemplos ni crítica. Es necesario recuperar el texto de artículos clave (39, 40, 133, 135) y fuentes doctrinales sobre el origen histórico (Constituyente de 1917) y análisis crítico del texto constitucional. La ficha es insuficiente en todos los ejes evaluados."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "artículo 133 supremacía constitucional Constitución ley suprema de toda la Unión",
+            "hits": 4
+          },
+          {
+            "consulta": "artículo 39 40 soberanía nacional forma de gobierno república representativa federal",
+            "hits": 4
+          },
+          {
+            "consulta": "artículo 135 procedimiento de reforma constitucional poder revisor Congreso legislaturas estatales",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 30
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 30
+  },
+  "Declaración Universal de los Derechos Humanos": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición formal de la Declaración Universal de los Derechos Humanos como instrumento",
+            "Contexto histórico y órgano adoptante (Asamblea General de la ONU, 10 de diciembre de 1948)",
+            "Autoría intelectual y actores clave (Comisión de Derechos Humanos, Eleanor Roosevelt, René Cassin)",
+            "Naturaleza jurídica y su valor no vinculante (crítica/límite)",
+            "Críticas sobre universalidad vs. relativismo cultural"
+          ],
+          "consultas": [
+            "definición y naturaleza jurídica de la Declaración Universal de los Derechos Humanos como instrumento no vinculante",
+            "historia adopción DUDH 1948 Asamblea General ONU René Cassin Eleanor Roosevelt redacción",
+            "críticas a la Declaración Universal de los Derechos Humanos universalismo relativismo cultural eficacia"
+          ],
+          "nota": "Las citas recuperadas solo mencionan la DUDH de forma tangencial, principalmente como fuente del derecho a la seguridad social (art. 22) o como instrumento suscrito por México. No aportan una definición conceptual del instrumento, su contexto de creación, sus autores ni un análisis crítico de su naturaleza y límites. Se requiere una segunda ronda de búsqueda enfocada en fuentes que traten la DUDH como objeto de estudio central."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y naturaleza jurídica de la Declaración Universal de los Derechos Humanos como instrumento no vinculante",
+            "hits": 4
+          },
+          {
+            "consulta": "historia adopción DUDH 1948 Asamblea General ONU René Cassin Eleanor Roosevelt redacción",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas a la Declaración Universal de los Derechos Humanos universalismo relativismo cultural eficacia",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 12
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 12,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición formal de la Declaración Universal de los Derechos Humanos como instrumento internacional",
+            "Fundamento y contexto histórico de su adopción (posguerra, ONU, 10 de diciembre de 1948)",
+            "Autoría institucional y personas clave (Asamblea General de la ONU, Comisión de Derechos Humanos, Eleanor Roosevelt, René Cassin)",
+            "Crítica o límite: su naturaleza no vinculante (soft law) y debates sobre universalidad vs. relativismo cultural"
+          ],
+          "consultas": [
+            "Declaración Universal de los Derechos Humanos 1948 definición naturaleza jurídica no vinculante soft law",
+            "historia adopción Declaración Universal Derechos Humanos ONU Asamblea General Eleanor Roosevelt René Cassin",
+            "críticas Declaración Universal Derechos Humanos universalismo relativismo cultural valor no vinculante"
+          ],
+          "nota": "Las citas recuperadas solo confirman aplicaciones puntuales (art. 22 seguridad social, art. 1) y referencias contextuales, con baja similitud (todas por debajo de 0.37). Falta el núcleo conceptual: definición, fundamento histórico, autoría y crítica. Es necesaria otra ronda de búsqueda orientada a fuentes que traten la DUDH como objeto central, no como cita instrumental."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Declaración Universal de los Derechos Humanos 1948 definición naturaleza jurídica no vinculante soft law",
+            "hits": 4
+          },
+          {
+            "consulta": "historia adopción Declaración Universal Derechos Humanos ONU Asamblea General Eleanor Roosevelt René Cassin",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas Declaración Universal Derechos Humanos universalismo relativismo cultural valor no vinculante",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 14
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 14
+  },
+  "Leyes preconstitucionales": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "leyes preconstitucionales vigencia y validez tras entrada en vigor de la Constitución de 1917",
+            "control de constitucionalidad de normas anteriores a la Constitución derogación tácita",
+            "artículos transitorios Constitución mexicana ultractividad de legislación preconstitucional"
+          ],
+          "nota": "Las citas recuperadas no abordan el concepto de 'leyes preconstitucionales'. Todas las coincidencias son de baja similitud (0.10-0.14) y refieren a facultades legislativas del Congreso, régimen de la Ciudad de México, tesorería y no regresión ambiental. Ninguna define qué son las leyes preconstitucionales, su fundamento (arts. transitorios, principio de continuidad normativa), autor doctrinal, ejemplo jurisprudencial de derogación tácita o su crítica. La ficha carece de todos los elementos evaluados; se recomienda una segunda ronda con consultas más específicas sobre vigencia, ultractividad y control de normas previas al orden constitucional."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "leyes preconstitucionales vigencia y validez tras entrada en vigor de la Constitución de 1917",
+            "hits": 4
+          },
+          {
+            "consulta": "control de constitucionalidad de normas anteriores a la Constitución derogación tácita",
+            "hits": 4
+          },
+          {
+            "consulta": "artículos transitorios Constitución mexicana ultractividad de legislación preconstitucional",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición de 'leyes preconstitucionales' (normas anteriores a la Constitución vigente)",
+            "Fundamento sobre su vigencia o derogación (artículos transitorios, principio de continuidad normativa)",
+            "Autor o doctrina que aborde el tratamiento de normas preconstitucionales",
+            "Ejemplo o aplicación jurisprudencial del control de leyes preconstitucionales",
+            "Crítica o límite (problema de la derogación tácita, control de constitucionalidad sobre normas previas)"
+          ],
+          "consultas": [
+            "vigencia de leyes anteriores a la Constitución artículos transitorios derogación tácita",
+            "control de constitucionalidad de normas preconstitucionales jurisprudencia Suprema Corte",
+            "principio de continuidad del orden jurídico normas previas a la Constitución doctrina"
+          ],
+          "nota": "Las citas recuperadas no abordan el concepto de leyes preconstitucionales. La mayoría son fragmentos genéricos de la Constitución (facultades del Congreso, reformas, disposiciones de la Ciudad de México) con similitud muy baja (<0.16). Ninguna cita cubre definición, fundamento, autoría, ejemplo ni crítica del concepto solicitado. Es necesario reorientar la búsqueda hacia la temporalidad normativa, la vigencia de normas previas a la Constitución vigente y su control jurisdiccional."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "vigencia de leyes anteriores a la Constitución artículos transitorios derogación tácita",
+            "hits": 4
+          },
+          {
+            "consulta": "control de constitucionalidad de normas preconstitucionales jurisprudencia Suprema Corte",
+            "hits": 4
+          },
+          {
+            "consulta": "principio de continuidad del orden jurídico normas previas a la Constitución doctrina",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  },
+  "Seguridad social": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición formal y precisa del concepto de seguridad social",
+            "Fundamento normativo internacional explícito (Convenio 102 OIT, DUDH art. 22, PIDESC art. 9)",
+            "Componentes o ramas que integran la seguridad social (contingencias cubiertas)"
+          ],
+          "consultas": [
+            "definición seguridad social Convenio 102 OIT contingencias cubiertas",
+            "fundamento seguridad social artículo 22 Declaración Universal PIDESC artículo 9",
+            "principios de la seguridad social universalidad solidaridad suficiencia"
+          ],
+          "nota": "La ficha aporta buenos elementos sobre fundamento histórico (Nugent), autoría, ejemplos jurisprudenciales (SCJN, viudez, orfandad, guarderías) y crítica sólida (relación paradójica cuidados-género, discriminación en regímenes especiales). Sin embargo, carece de una definición conceptual formal del término y de un anclaje normativo internacional explícito. Las similitudes son bajas (máx. 0.44), lo que sugiere recuperación tangencial; conviene una segunda ronda enfocada en definir el núcleo conceptual y su base jurídica internacional."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición seguridad social Convenio 102 OIT contingencias cubiertas",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento seguridad social artículo 22 Declaración Universal PIDESC artículo 9",
+            "hits": 4
+          },
+          {
+            "consulta": "principios de la seguridad social universalidad solidaridad suficiencia",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición precisa de seguridad social como derecho y como sistema",
+            "Fundamento normativo (Convenio 102 OIT, PIDESC art. 9, art. 123 constitucional, observaciones del Comité DESC)",
+            "Delimitación conceptual de sus componentes o ramas (prestaciones, riesgos cubiertos, principios de universalidad y solidaridad)"
+          ],
+          "consultas": [
+            "definición de seguridad social principios de universalidad solidaridad y suficiencia",
+            "fundamento normativo seguridad social Convenio 102 OIT PIDESC artículo 9 Comité DESC",
+            "seguridad social artículo 123 constitucional ramas y prestaciones IMSS ISSSTE"
+          ],
+          "nota": "La ficha aporta elementos de ejemplo (litigios ante la SCJN en el modelo contributivo) y de crítica (relación paradójica cuidados-seguridad social, discriminación en regímenes especiales), y menciona un autor de fuente histórica (Nugent). Sin embargo, falta una definición operativa del concepto y su fundamento jurídico expreso: las citas actuales son índices o fragmentos tangenciales con baja similitud (máx. 0.44). Se requieren consultas dirigidas a la definición dogmática, el basamento normativo internacional y constitucional, y los principios rectores. Ronda 2 aún insuficiente."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de seguridad social principios de universalidad solidaridad y suficiencia",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento normativo seguridad social Convenio 102 OIT PIDESC artículo 9 Comité DESC",
+            "hits": 4
+          },
+          {
+            "consulta": "seguridad social artículo 123 constitucional ramas y prestaciones IMSS ISSSTE",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "Seguro facultativo": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Crítica, límite o desventaja del seguro facultativo",
+            "Régimen jurídico completo (base legal específica en la Ley del Seguro Social más allá de menciones aisladas)",
+            "Distinción precisa entre seguro facultativo y continuación voluntaria del régimen obligatorio"
+          ],
+          "consultas": [
+            "límites y desventajas del seguro facultativo en la seguridad social mexicana",
+            "diferencia entre seguro facultativo y continuación voluntaria del régimen obligatorio Ley del Seguro Social",
+            "requisitos y prestaciones del seguro facultativo artículo Ley del Seguro Social"
+          ],
+          "nota": "La ficha cubre definición (incorporación de familiares o personas sin carácter de beneficiario mediante convenio), fundamento (facilidad para el asegurado), autor (Briceño Ruiz) y ejemplo (contratación con familias, art. 240). Sin embargo, falta el elemento crítico/límite: no hay evidencia sobre desventajas, cobertura restringida de prestaciones, ni comparación con figuras afines. Las últimas dos citas (similitud <0.07) son ruido irrelevante (Protocolo Facultativo de derechos humanos y seguro obligatorio de IVM). Se recomienda una segunda ronda para completar la crítica y precisar el marco legal."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "límites y desventajas del seguro facultativo en la seguridad social mexicana",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia entre seguro facultativo y continuación voluntaria del régimen obligatorio Ley del Seguro Social",
+            "hits": 4
+          },
+          {
+            "consulta": "requisitos y prestaciones del seguro facultativo artículo Ley del Seguro Social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 15
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 15,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Crítica, límites o desventajas del seguro facultativo",
+            "Delimitación clara respecto a figuras afines como continuación voluntaria y seguro de salud para la familia (para evitar confusión conceptual presente en las citas)"
+          ],
+          "consultas": [
+            "límites y desventajas del seguro facultativo régimen voluntario seguro social",
+            "diferencia entre seguro facultativo, continuación voluntaria y seguro de salud para la familia",
+            "prestaciones excluidas y financiamiento del seguro facultativo Ley del Seguro Social"
+          ],
+          "nota": "La ficha cubre bien definición (p.39), fundamento legal (art. 240) y ejemplo/aplicación (incorporación de familiares mediante convenio, seguro de salud familiar). El autor Briceño Ruiz aporta la doctrina. Sin embargo, falta por completo el elemento crítico/límite: no hay citas sobre restricciones de cobertura, exclusiones o desventajas del régimen. Además, algunas citas (pp. 61, 62) refieren a 'continuación voluntaria' y no propiamente al seguro facultativo, lo que introduce ruido y confusión de figuras del régimen voluntario que conviene depurar en una nueva ronda."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "límites y desventajas del seguro facultativo régimen voluntario seguro social",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia entre seguro facultativo, continuación voluntaria y seguro de salud para la familia",
+            "hits": 4
+          },
+          {
+            "consulta": "prestaciones excluidas y financiamiento del seguro facultativo Ley del Seguro Social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  },
+  "Seguro germano": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "modelo bismarckiano de seguro social obligatorio Alemania 1883 origen",
+            "seguro social germano Otto von Bismarck características financiamiento cotizaciones",
+            "diferencias modelo Bismarck seguro contributivo versus modelo Beveridge crítica"
+          ],
+          "nota": "Ninguna cita aborda directamente el concepto de 'seguro germano' (modelo bismarckiano de seguridad social). Las referencias recuperadas mencionan tangencialmente 'ciudades de origen germano' (guildas medievales) y un 'Tribunal Constitucional Federal germano' sobre proporcionalidad, pero ninguna define el seguro social de origen alemán, su fundamento histórico-jurídico, su autor (Bismarck), ejemplos de aplicación ni críticas. La ficha carece de todos los elementos evaluados; se requiere una segunda ronda con consultas dirigidas al modelo bismarckiano de seguridad social."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "modelo bismarckiano de seguro social obligatorio Alemania 1883 origen",
+            "hits": 4
+          },
+          {
+            "consulta": "seguro social germano Otto von Bismarck características financiamiento cotizaciones",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencias modelo Bismarck seguro contributivo versus modelo Beveridge crítica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición formal y precisa del modelo de seguro germano o bismarckiano (características esenciales: financiamiento contributivo, cotizaciones tripartitas, vinculación al empleo)",
+            "Crítica, límites o comparación con el modelo Beveridge (universalista)",
+            "Principios estructurales del modelo contributivo (proporcionalidad prestación-cotización, gestión por cajas o fondos)"
+          ],
+          "consultas": [
+            "características del modelo bismarckiano de seguridad social financiamiento contributivo cotizaciones",
+            "diferencias entre modelo Bismarck y modelo Beveridge seguridad social críticas y límites",
+            "principios del seguro social contributivo alemán proporcionalidad prestación cotización gestión"
+          ],
+          "nota": "Las citas cubren bien el fundamento histórico (contexto socialista, atentados a Guillermo I), el autor (Otto von Bismarck) y ejemplos de aplicación (seguros de vejez, enfermedad, accidentes desde 1881-1880). Sin embargo, falta una definición conceptual precisa del 'seguro germano' como modelo contributivo vinculado al trabajo, así como su crítica o límites y la comparación con el modelo Beveridge, elementos clave para caracterizar el concepto. La última cita (Ley del Seguro Social mexicana) es irrelevante para el concepto. Se recomienda una tercera ronda con las consultas propuestas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "características del modelo bismarckiano de seguridad social financiamiento contributivo cotizaciones",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencias entre modelo Bismarck y modelo Beveridge seguridad social críticas y límites",
+            "hits": 4
+          },
+          {
+            "consulta": "principios del seguro social contributivo alemán proporcionalidad prestación cotización gestión",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 29
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 29
+  },
+  "Seguro latino": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición precisa de 'seguro latino' como institución jurídica o modalidad de seguro",
+            "Fundamento normativo o histórico del concepto",
+            "Autor o doctrina que acuña o desarrolla el término",
+            "Ejemplo concreto o ámbito de aplicación",
+            "Crítica, límites o debate en torno a la figura"
+          ],
+          "consultas": [
+            "seguro latino definición derecho romano seguro de esclavos",
+            "seguro latino concepto origen histórico seguridad social",
+            "modalidades de aseguramiento en el derecho romano seguro fuga de esclavos"
+          ],
+          "nota": "Ninguna cita recuperada aborda directamente el concepto de 'seguro latino'; las similitudes son muy bajas (máx. 0.10). La cita de p.51 sobre aseguramiento de esclavos en la antigüedad podría estar tangencialmente relacionada con antecedentes históricos del seguro, pero no define ni identifica el 'seguro latino' como tal. Se requiere una nueva ronda de búsqueda enfocada en el origen histórico y la definición precisa del término, verificando además si se refiere a una figura del derecho romano o a una modalidad específica de la seguridad social."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "seguro latino definición derecho romano seguro de esclavos",
+            "hits": 4
+          },
+          {
+            "consulta": "seguro latino concepto origen histórico seguridad social",
+            "hits": 4
+          },
+          {
+            "consulta": "modalidades de aseguramiento en el derecho romano seguro fuga de esclavos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 16
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 16,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición específica de 'seguro latino' como concepto propio",
+            "Fundamento jurídico o técnico del modelo de seguro latino",
+            "Autor o doctrina que acuñe o desarrolle el concepto",
+            "Ejemplo o aplicación concreta del seguro latino en algún sistema",
+            "Crítica o límites del modelo de seguro latino"
+          ],
+          "consultas": [
+            "definición seguro latino modelo europeo continental derecho de seguros",
+            "sistema de seguros latino versus anglosajón características doctrina",
+            "regulación y crítica del seguro latino contratos aseguradores tradición jurídica"
+          ],
+          "nota": "Las citas recuperadas no abordan el concepto de 'seguro latino'. Tratan sobre seguridad social, seguros sociales, derecho al cuidado y discriminación de género, que son temas distintos. La similitud es muy baja (máx. 0.127), lo que confirma la ausencia de material relevante. El concepto 'seguro latino' probablemente se refiere al modelo continental europeo de contrato de seguro (tradición del derecho civil latino/romanista), no cubierto por las fuentes actuales. Se requiere buscar en fuentes de derecho de seguros o derecho mercantil comparado."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición seguro latino modelo europeo continental derecho de seguros",
+            "hits": 4
+          },
+          {
+            "consulta": "sistema de seguros latino versus anglosajón características doctrina",
+            "hits": 4
+          },
+          {
+            "consulta": "regulación y crítica del seguro latino contratos aseguradores tradición jurídica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  },
+  "Seguro obligatorio": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Autor o doctrina que teorice el concepto de seguro obligatorio (no solo la fuente citada como narrador, sino atribución conceptual clara)",
+            "Definición doctrinal más precisa y desarrollada del seguro obligatorio, más allá de la mención legal",
+            "Crítica o límite explícito del seguro obligatorio (la cita p.38 trata más del voluntario que del obligatorio)"
+          ],
+          "consultas": [
+            "definición doctrinal seguro obligatorio seguridad social sujetos de aseguramiento artículos 12 y 13",
+            "principios y fundamento del régimen obligatorio del seguro social autores doctrina",
+            "críticas y límites del seguro obligatorio cobertura sanciones incumplimiento patronal"
+          ],
+          "nota": "La ficha tiene cobertura razonable de definición (p.38: imposición a la voluntad de los particulares), fundamento normativo (Ley de 1997, art. 6) y ejemplos históricos (leyes alemanas de 1883-1889). Sin embargo, falta una atribución de autor/doctrina que sostenga conceptualmente la figura y una crítica específica del seguro obligatorio (la cita crítica disponible aborda el régimen voluntario). Las similitudes son bajas (máx. 0.26), por lo que conviene una segunda ronda de búsqueda para robustecer la definición y la dimensión crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición doctrinal seguro obligatorio seguridad social sujetos de aseguramiento artículos 12 y 13",
+            "hits": 4
+          },
+          {
+            "consulta": "principios y fundamento del régimen obligatorio del seguro social autores doctrina",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del seguro obligatorio cobertura sanciones incumplimiento patronal",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 17,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición explícita y precisa de 'seguro obligatorio' (qué es, características esenciales, obligatoriedad legal)",
+            "Autor o doctrina que conceptualice el seguro obligatorio de manera teórica",
+            "Sujetos y ramas de aseguramiento del régimen obligatorio conforme a la legislación vigente (arts. 11, 12 LSS)"
+          ],
+          "consultas": [
+            "definición y concepto de seguro obligatorio régimen obligatorio del seguro social características",
+            "artículo 11 Ley del Seguro Social ramos de aseguramiento del régimen obligatorio riesgos de trabajo enfermedades maternidad invalidez",
+            "doctrina naturaleza jurídica del seguro obligatorio autor fundamento de la obligatoriedad estatal seguridad social"
+          ],
+          "nota": "Las citas aportan el fundamento histórico (leyes alemanas de 1883-1889), un ejemplo de ramas (invalidez, vejez, muerte) y un contraste crítico frente al seguro voluntario, pero carecen de una definición doctrinal o legal precisa del seguro obligatorio y de una atribución autoral clara del concepto. La similitud de las citas es baja (todas <0.27), lo que indica cobertura tangencial. Se recomienda una tercera ronda enfocada en la definición legal (arts. 11-12 LSS) y en la conceptualización doctrinal."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y concepto de seguro obligatorio régimen obligatorio del seguro social características",
+            "hits": 4
+          },
+          {
+            "consulta": "artículo 11 Ley del Seguro Social ramos de aseguramiento del régimen obligatorio riesgos de trabajo enfermedades maternidad invalidez",
+            "hits": 4
+          },
+          {
+            "consulta": "doctrina naturaleza jurídica del seguro obligatorio autor fundamento de la obligatoriedad estatal seguridad social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  },
+  "Seguro privado": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición precisa de seguro privado (concepto, naturaleza contractual y elementos: prima, riesgo, asegurador)",
+            "Fundamento jurídico y doctrinal (regulación mercantil, base actuarial, principio de mutualidad)",
+            "Autor o fuente doctrinal que defina y caracterice el seguro privado frente al seguro social"
+          ],
+          "consultas": [
+            "definición de seguro privado contrato prima riesgo asegurador elementos esenciales",
+            "diferencia entre seguro privado y seguro social base actuarial mutualidad regulación mercantil",
+            "doctrina autor concepto naturaleza jurídica del seguro privado y contrato de seguro"
+          ],
+          "nota": "Las citas recuperadas son tangenciales: mencionan el seguro privado en contraste con el Seguro Social (ejemplo de aplicación en reversión de cuotas y crítica sobre la regulación mercantil), pero ninguna ofrece una definición autónoma ni el fundamento conceptual o actuarial del seguro privado. Falta identificar un autor que lo defina explícitamente. La similitud de todas las citas es baja (<0.19), lo que confirma cobertura insuficiente. Se requiere una segunda ronda enfocada en definición, fundamento y respaldo doctrinal."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de seguro privado contrato prima riesgo asegurador elementos esenciales",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia entre seguro privado y seguro social base actuarial mutualidad regulación mercantil",
+            "hits": 4
+          },
+          {
+            "consulta": "doctrina autor concepto naturaleza jurídica del seguro privado y contrato de seguro",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 14
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 14,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición explícita y directa de 'seguro privado' (concepto, naturaleza jurídica)",
+            "Fundamento normativo o doctrinal que distinga el seguro privado del seguro social",
+            "Autor o corriente doctrinal que teorice el seguro privado como institución",
+            "Elementos constitutivos: prima, riesgo, contrato mercantil, asegurador privado"
+          ],
+          "consultas": [
+            "definición de seguro privado contrato mercantil naturaleza jurídica elementos prima riesgo",
+            "diferencia entre seguro privado y seguro social principios lucro solidaridad regulación",
+            "fundamento doctrinal contrato de seguro Ley sobre el Contrato de Seguro asegurador privado"
+          ],
+          "nota": "Las citas actuales solo abordan el seguro privado de forma tangencial y contrastiva frente al seguro social, principalmente en el contexto de reformas al IMSS (reversión de cuotas) y ejemplos históricos (Friendly Societies) o comparados (SSDI). Falta lo esencial: una definición autónoma del concepto, su fundamento jurídico-mercantil, sus elementos constitutivos y una referencia autoral clara. La cobertura de ejemplo/aplicación (opting-out, tablas de invalidez) y crítica (regulación mercantil que 'atenta contra los principios del Seguro Social') es aceptable, pero la baja similitud (~0.17-0.19) confirma que ninguna cita está centrada en definir el concepto. Se requiere una nueva ronda dirigida a la naturaleza jurídica y regulación del seguro privado."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de seguro privado contrato mercantil naturaleza jurídica elementos prima riesgo",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia entre seguro privado y seguro social principios lucro solidaridad regulación",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento doctrinal contrato de seguro Ley sobre el Contrato de Seguro asegurador privado",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 22
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 22
+  },
+  "Seguro social": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Fundamento jurídico y doctrinal del seguro social (bases constitucionales, principios como solidaridad y obligatoriedad)",
+            "Definición precisa y completa del seguro social diferenciada de la seguridad social",
+            "Crítica, límites o debate doctrinal sobre el seguro social (cobertura parcial, financiamiento, límites frente a la seguridad social universal)"
+          ],
+          "consultas": [
+            "definición seguro social concepto elementos Briceño Ruiz derecho seguridad social",
+            "fundamento constitucional seguro social artículo 123 principios solidaridad obligatoriedad",
+            "críticas límites seguro social diferencia seguridad social cobertura financiamiento"
+          ],
+          "nota": "La ficha tiene cobertura parcial. La definición aparece de forma incipiente (cita de Briceño Ruiz p.27 sobre función particular del seguro social) y hay ejemplos históricos (modelo inglés y alemán, Ley de 1934). Sin embargo, las citas de la Ley del Seguro Social son meramente encabezados de decretos sin contenido sustantivo, y no aportan fundamento jurídico real. Falta el fundamento doctrinal/constitucional, una definición robusta y la dimensión crítica o de límites. Las similitudes son bajas (0.27-0.29), lo que sugiere recuperación poco precisa. Se recomienda una segunda ronda con las consultas propuestas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición seguro social concepto elementos Briceño Ruiz derecho seguridad social",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento constitucional seguro social artículo 123 principios solidaridad obligatoriedad",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas límites seguro social diferencia seguridad social cobertura financiamiento",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición precisa y completa del seguro social (las citas actuales solo lo abordan tangencialmente, por contraste con la seguridad social)",
+            "Crítica, límites o debilidades del modelo de seguro social (cobertura limitada a grupos determinados, exclusiones, sostenibilidad financiera)",
+            "Distinción conceptual clara y desarrollada entre 'seguro social' y 'seguridad social'"
+          ],
+          "consultas": [
+            "definición y concepto de seguro social frente a seguridad social Briceño Ruiz",
+            "críticas y límites del seguro social cobertura grupos excluidos sostenibilidad",
+            "objeto y ramos de aseguramiento del seguro social artículo Ley del Seguro Social"
+          ],
+          "nota": "La ficha cuenta con base histórica (Inglaterra, Alemania, ley de 1934), fundamento normativo (Ley del Seguro Social vigente) y una aproximación conceptual del autor Briceño Ruiz que distingue seguro social de seguridad social. Sin embargo, la definición es indirecta y fragmentaria, y falta por completo el elemento crítico/límite. Las citas de la Ley del Seguro Social son meros encabezados de decretos sin contenido sustantivo, por lo que aportan poco valor material. Se recomienda una tercera ronda para consolidar una definición nítida, precisar el objeto/ramos del seguro social y recuperar la dimensión crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y concepto de seguro social frente a seguridad social Briceño Ruiz",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del seguro social cobertura grupos excluidos sostenibilidad",
+            "hits": 4
+          },
+          {
+            "consulta": "objeto y ramos de aseguramiento del seguro social artículo Ley del Seguro Social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  },
+  "Seguro voluntario": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición técnica precisa y actual del seguro voluntario conforme a la Ley del Seguro Social vigente (art. 13 LSS y modalidades del régimen voluntario)",
+            "Distinción clara entre régimen obligatorio y voluntario, y sujetos que pueden incorporarse voluntariamente",
+            "Requisitos, prestaciones cubiertas y procedimiento de incorporación al seguro voluntario en la normativa actual",
+            "Desarrollo doctrinal de la crítica: por qué se considera figura de excepción y sus límites en beneficios"
+          ],
+          "consultas": [
+            "seguro voluntario régimen artículo 13 Ley del Seguro Social incorporación voluntaria sujetos",
+            "modalidades continuación voluntaria régimen obligatorio prestaciones seguro voluntario IMSS",
+            "diferencias seguro social obligatorio y voluntario naturaleza jurídica crítica doctrinal"
+          ],
+          "nota": "Aunque formalmente todos los elementos aparecen mencionados, la profundidad es baja: las similitudes son muy bajas (máx. 0.21) y las citas son dispersas y de corte histórico. La definición actual y el fundamento normativo vigente están apenas esbozados; el 'ejemplo' se limita a un dato de costo de la LSS de 1973 y la crítica se reduce a una frase sobre su carácter de excepción. Se recomienda una segunda ronda para obtener la regulación vigente, requisitos concretos y un tratamiento doctrinal más sólido."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "seguro voluntario régimen artículo 13 Ley del Seguro Social incorporación voluntaria sujetos",
+            "hits": 4
+          },
+          {
+            "consulta": "modalidades continuación voluntaria régimen obligatorio prestaciones seguro voluntario IMSS",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencias seguro social obligatorio y voluntario naturaleza jurídica crítica doctrinal",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición doctrinal precisa de 'seguro voluntario' como institución jurídica de la seguridad social",
+            "Autor doctrinal que conceptualice y clasifique el seguro/régimen voluntario",
+            "Crítica o límites del seguro voluntario (baja por falta de pago, cobertura parcial, exclusiones)"
+          ],
+          "consultas": [
+            "definición doctrinal seguro voluntario y régimen voluntario en la seguridad social mexicana",
+            "clasificación del régimen voluntario continuación voluntaria seguro de salud para la familia Briceño Ruiz",
+            "críticas y limitaciones del régimen voluntario del Seguro Social exclusión riesgos de trabajo baja por falta de pago"
+          ],
+          "nota": "La ficha cubre el fundamento normativo (arts. 200 y siguientes de la Ley del ISSSTE y Título Tercero del Régimen Voluntario) y ofrece ejemplos de aplicación (continuación voluntaria, reingreso, caso de trabajadoras del hogar). Sin embargo, falta una definición conceptual clara del seguro voluntario como figura jurídica, no hay atribución a un autor que lo teorice (Briceño Ruiz solo aparece mencionado marginalmente) y carece de análisis crítico sobre sus límites o problemáticas. La similitud de las citas es baja (máx. 0.275), lo que sugiere recuperación poco pertinente. Se recomienda una tercera ronda enfocada en fuentes doctrinales."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición doctrinal seguro voluntario y régimen voluntario en la seguridad social mexicana",
+            "hits": 4
+          },
+          {
+            "consulta": "clasificación del régimen voluntario continuación voluntaria seguro de salud para la familia Briceño Ruiz",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y limitaciones del régimen voluntario del Seguro Social exclusión riesgos de trabajo baja por falta de pago",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  }
+}
