@@ -106,7 +106,11 @@ class SemanticAuditor:
                 )
             )
         prompt = self._build_prompt(claims, evidence, deterministic, external_feedback)
-        response = self.llm.call(engine, prompt, max_tokens=min(max_tokens, 24_000))
+        # Auditoría con RED DE SEGURIDAD: si el motor elegido falla, opus entra
+        # al quite (tarea 'razonamiento') para no quedar sin auditoría.
+        response = self.llm.call_with_safety_net(
+            prompt, task="razonamiento", engine=engine, max_tokens=min(max_tokens, 24_000)
+        )
         if not response.ok or not response.text.strip():
             result = SemanticAuditResult(
                 ok=False,

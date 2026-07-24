@@ -8,11 +8,16 @@ from pathlib import Path
 LLM_ENGINES = (
     "Auto (model-router)",
     "Claude Foundry",
+    "Claude Sonnet",
+    "Claude Haiku",
     "GPT-5.6-SOL",
     "GPT-5.6-Luna",
     "GPT-5.6-Terra",
     "GPT-Pro",
     "Codex",
+    "Mistral-Large-3",
+    "DeepSeek-V4-Pro",
+    "GPT-Chat-Latest",
 )
 
 ENGINE_ENV_PREFIX = {
@@ -23,6 +28,13 @@ ENGINE_ENV_PREFIX = {
     "GPT-5.6-Terra": "AZURE_OPENAI_GPT_5_6_TERRA",
     "GPT-Pro": "GPT_PRO",
     "Codex": "CODEX",
+    # LLMs adicionales presentes en aulatex.env (protocolo chat/completions).
+    "Mistral-Large-3": "MISTRAL_LARGE_3",
+    "DeepSeek-V4-Pro": "DEEPSEEK_V4_PRO",
+    "GPT-Chat-Latest": "GPT_CHAT_LATEST",
+    # Anthropic Sonnet/Haiku (mismo endpoint que Claude Foundry, otro deployment).
+    "Claude Sonnet": "ANTHROPIC_SONNET",
+    "Claude Haiku": "ANTHROPIC_HAIKU",
 }
 
 REQUIRED_LLM_SUFFIXES = ("BASE_URL", "API_KEY", "CHAT_DEPLOYMENT")
@@ -84,7 +96,41 @@ def load_aulatex_env(path: str | Path | None = None, *, override: bool = True) -
             continue
         os.environ[name] = _strip_env_value(value)
         loaded += 1
+    # Descifrado autónomo de los valores enc: con la clave local del proyecto.
+    _decrypt_local_secrets()
     return EnvLoadResult(env_path, True, loaded, skipped)
+
+
+def _decrypt_local_secrets() -> None:
+    """Descifra en os.environ los valores con prefijo ``enc:`` usando la clave
+    local del proyecto (scripts/secret.key). Silencioso si no hay clave/módulo."""
+    if not any(str(v).startswith("enc:") for v in os.environ.values()):
+        return
+    try:
+        import importlib.util
+
+        module_path = repo_root() / "scripts" / "secrets_local.py"
+        if not module_path.exists():
+            return
+        spec = importlib.util.spec_from_file_location("aulatex_secrets_local", module_path)
+        if spec is None or spec.loader is None:
+            return
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        fernet = mod.resolve_fernet(create=False)
+        if fernet is None:
+            return
+        from cryptography.fernet import InvalidToken
+
+        for key, value in list(os.environ.items()):
+            if isinstance(value, str) and value.startswith("enc:"):
+                try:
+                    os.environ[key] = fernet.decrypt(value[4:].encode("ascii")).decode("utf-8")
+                except InvalidToken:
+                    pass
+    except Exception:
+        # El descifrado es best-effort; si falla, se dejan los valores tal cual.
+        pass
 
 
 def credential_status() -> list[CredentialStatus]:
@@ -93,9 +139,17 @@ def credential_status() -> list[CredentialStatus]:
     for engine, prefix in ENGINE_ENV_PREFIX.items():
         present: list[str] = []
         missing: list[str] = []
+        # Sonnet/Haiku comparten endpoint/clave con Claude Foundry: solo aportan
+        # su *_DEPLOYMENT y heredan BASE_URL/API_KEY de ANTHROPIC_FOUNDRY.
+        inherits_anthropic = prefix in ("ANTHROPIC_SONNET", "ANTHROPIC_HAIKU")
         for suffix in REQUIRED_LLM_SUFFIXES:
             key = f"{prefix}_{suffix}"
-            if os.getenv(key, "").strip().strip('"').strip("'"):
+            value = os.getenv(key, "").strip().strip('"').strip("'")
+            if not value and inherits_anthropic and suffix in ("BASE_URL", "API_KEY"):
+                value = os.getenv(f"ANTHROPIC_FOUNDRY_{suffix}", "").strip().strip('"').strip("'")
+            if not value and inherits_anthropic and suffix == "CHAT_DEPLOYMENT":
+                value = os.getenv(f"{prefix}_DEPLOYMENT", "").strip().strip('"').strip("'")
+            if value:
                 present.append(key)
             else:
                 missing.append(key)

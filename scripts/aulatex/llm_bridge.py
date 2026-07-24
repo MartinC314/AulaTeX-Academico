@@ -19,6 +19,41 @@ _FALSE_VALUES = {"0", "false", "no", "off"}
 _TRUE_VALUES = {"1", "true", "yes", "on", "si", "sí"}
 DEFAULT_MAX_TOKENS = 200_000
 DEFAULT_TIMEOUT_SECONDS = 300
+
+# Motor de máxima calidad que "entra al quite" cuando el resto falla.
+_SAFETY_NET_ENGINE = "Claude Foundry"
+
+# Cadenas de motores por tarea (usan los labels de config.LLM_ENGINES). El
+# motor de red de seguridad (opus/Claude Foundry) se garantiza al final.
+#   - redaccion / prosa académica -> Claude Foundry (juicio) -> GPT-Pro
+#   - codigo LaTeX / estructura    -> Codex -> GPT-Pro -> Claude Foundry
+#   - razonamiento / analisis      -> Codex -> Claude Foundry -> GPT-Pro
+#   - revision / correccion        -> GPT-Pro -> Claude Foundry -> Codex
+#   - rapido / borradores          -> Auto (model-router) -> Claude Foundry
+_TASK_ENGINE_CHAINS: dict[str, list[str]] = {
+    "redaccion": ["Claude Foundry", "GPT-Pro", "Codex"],
+    "codigo": ["Codex", "GPT-Pro", "Claude Foundry"],
+    "razonamiento": ["Codex", "Claude Foundry", "GPT-Pro"],
+    "revision": ["GPT-Pro", "Claude Foundry", "Codex"],
+    "rapido": ["Auto (model-router)", "Claude Foundry"],
+    "default": ["Codex", "Claude Foundry", "GPT-Pro"],
+}
+
+
+def engine_chain_for_task(task: str | None, forced_engine: str | None = None) -> list[str]:
+    """Cadena de motores a intentar para una tarea, con opus como red de
+    seguridad final. Si ``forced_engine`` se indica, va primero."""
+    import os as _os
+
+    base = list(_TASK_ENGINE_CHAINS.get((task or "default"), _TASK_ENGINE_CHAINS["default"]))
+    if _SAFETY_NET_ENGINE not in base:
+        base.append(_SAFETY_NET_ENGINE)
+    override = (_os.getenv("AULATEX_LLM_ENGINE", "") or "").strip()
+    forced = forced_engine or (override if override.lower() not in ("", "auto") else "")
+    if forced:
+        norm = normalize_llm_engine_label(forced)
+        base = [norm] + [e for e in base if e != norm]
+    return base
 _MIN_MAX_TOKENS = 16
 _THEORETICAL_LIMITS = {
     "gpt-5.4-pro": {"input": 922_000, "output": 128_000},
@@ -64,6 +99,13 @@ class AulaTeXLLMConfig:
         api_key = _env(f"{prefix}_API_KEY")
         deployment = _env(f"{prefix}_CHAT_DEPLOYMENT")
         api_version = _env(f"{prefix}_API_VERSION", "2023-06-01")
+        # Sonnet/Haiku comparten endpoint y clave con Claude Foundry (Anthropic);
+        # solo aportan su propio *_DEPLOYMENT. Heredan base_url/api_key.
+        if prefix in ("ANTHROPIC_SONNET", "ANTHROPIC_HAIKU"):
+            base_url = base_url or _env("ANTHROPIC_FOUNDRY_BASE_URL")
+            api_key = api_key or _env("ANTHROPIC_FOUNDRY_API_KEY")
+            deployment = deployment or _env(f"{prefix}_DEPLOYMENT")
+            api_version = _env(f"{prefix}_API_VERSION", _env("ANTHROPIC_FOUNDRY_API_VERSION", "2023-06-01"))
         timeout_seconds = _env_int(
             "AULATEX_LLM_TIMEOUT_SECONDS",
             _env_int("AULATEX_LLM_VALIDATION_TIMEOUT", _env_int("TB_BOOKS_LLM_VALIDATION_TIMEOUT", DEFAULT_TIMEOUT_SECONDS)),
@@ -93,7 +135,10 @@ class AulaTeXLLMConfig:
 
     def is_anthropic(self) -> bool:
         parsed = urlsplit(self.base_url)
-        return self.engine_label == "Claude Foundry" or "/anthropic" in parsed.path.lower()
+        return (
+            self.engine_label in ("Claude Foundry", "Claude Sonnet", "Claude Haiku")
+            or "/anthropic" in parsed.path.lower()
+        )
 
 
 class AulaTeXLLMClient:
@@ -124,6 +169,35 @@ class AulaTeXLLMClient:
                 if not _should_retry_with_lower_max_tokens(exc):
                     break
         return LLMCallResult(selected, False, "", _friendly_error(last_exc or RuntimeError("Fallo desconocido.")))
+
+    def call_with_safety_net(
+        self,
+        prompt: str,
+        *,
+        task: str | None = None,
+        engine: str | None = None,
+        max_tokens: int = DEFAULT_MAX_TOKENS,
+        timeout_seconds: int = DEFAULT_TIMEOUT_SECONDS,
+        on_event: Callable[[str], None] | None = None,
+    ) -> LLMCallResult:
+        """Llama al LLM con routing por tarea y RED DE SEGURIDAD opus.
+
+        Recorre una cadena de motores según la tarea (o el motor forzado); si
+        todos fallan, Claude Foundry (opus) entra al quite como último recurso.
+        """
+        chain = engine_chain_for_task(task, forced_engine=engine)
+        errors: list[str] = []
+        for candidate in chain:
+            result = self.call(candidate, prompt, max_tokens=max_tokens, timeout_seconds=timeout_seconds)
+            if result.ok and result.text.strip():
+                if candidate == _SAFETY_NET_ENGINE and errors and on_event:
+                    on_event(f"Rescate {candidate} para la tarea '{task or 'default'}'.")
+                return result
+            errors.append(f"{candidate}: {result.error or 'respuesta vacía'}")
+        return LLMCallResult(
+            chain[-1] if chain else "Codex", False, "",
+            "Ningún motor resolvió la tarea. " + " | ".join(errors[-3:]),
+        )
 
     def call_image(
         self,

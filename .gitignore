@@ -81,3 +81,8 @@ bot-interfaz/.pytest_cache/
 bot-interfaz/**/__pycache__/
 bot-interfaz/**/*.pyc
 bot-interfaz/interfaz.env
+
+# Clave de cifrado local de secretos: NUNCA versionar
+secret.key
+**/secret.key
+scripts/secret.key

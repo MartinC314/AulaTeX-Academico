@@ -10,10 +10,12 @@ from dotenv import load_dotenv
 
 def _load_env_files() -> None:
     load_dotenv(override=True)
-    # bot-interfaz está ABSORBIDA en AulaTeX: comparte el único .env cifrado del
-    # proyecto (scripts/aulatex.env) como fuente de verdad. Hereda todas las
-    # credenciales de ahí y las descifra con la clave local del proyecto.
-    parent_env = Path(__file__).resolve().parents[2] / "scripts" / "aulatex.env"
+    # La interfaz está ABSORBIDA en AulaTeX (scripts/interfaz/): comparte el
+    # único .env cifrado del proyecto (scripts/aulatex.env) como fuente de
+    # verdad. Ruta: este archivo es scripts/interfaz/interfaz/config.py, por lo
+    # que parents[2] == scripts/.
+    scripts_dir = Path(__file__).resolve().parents[2]
+    parent_env = scripts_dir / "aulatex.env"
     if parent_env.exists():
         load_dotenv(parent_env, override=True)
     _decrypt_local_secrets()
@@ -27,7 +29,7 @@ def _decrypt_local_secrets() -> None:
     try:
         import importlib.util
 
-        module_path = Path(__file__).resolve().parents[2] / "scripts" / "secrets_local.py"
+        module_path = Path(__file__).resolve().parents[2] / "secrets_local.py"
         if not module_path.exists():
             return
         spec = importlib.util.spec_from_file_location("aulatex_secrets_local", module_path)
@@ -128,6 +130,14 @@ class Settings:
     azure_openai_realtime_api_key: str = ""
     azure_openai_realtime_transcription_model: str = "gpt-4o-mini-transcribe"
     aulatex_motor_execution_mode: str = "delegate"
+    # --- Generación visual (gpt-image / sora) ---
+    azure_openai_images_endpoint: str = ""
+    azure_openai_image_deployment: str = "gpt-image-2"
+    azure_openai_image_api_key: str = ""
+    azure_openai_video_endpoint: str = ""
+    azure_openai_video_deployment: str = "sora-2"
+    azure_openai_video_api_key: str = ""
+    azure_openai_video_max_seconds: int = 8
 
 
 def _normalize_azure_endpoint(value: str) -> str:
@@ -395,6 +405,13 @@ def load_settings() -> Settings:
             "gpt-4o-mini-transcribe",
         ).strip() or "gpt-4o-mini-transcribe",
         aulatex_motor_execution_mode=os.getenv("AULATEX_MOTOR_EXECUTION_MODE", "delegate").strip().lower() or "delegate",
+        azure_openai_images_endpoint=os.getenv("AZURE_OPENAI_IMAGES_ENDPOINT", "").strip(),
+        azure_openai_image_deployment=os.getenv("AZURE_OPENAI_IMAGE_DEPLOYMENT", "gpt-image-2").strip() or "gpt-image-2",
+        azure_openai_image_api_key=os.getenv("AZURE_OPENAI_IMAGE_API_KEY", "").strip(),
+        azure_openai_video_endpoint=os.getenv("AZURE_OPENAI_VIDEO_ENDPOINT", "").strip(),
+        azure_openai_video_deployment=os.getenv("AZURE_OPENAI_VIDEO_DEPLOYMENT", "sora-2").strip() or "sora-2",
+        azure_openai_video_api_key=os.getenv("AZURE_OPENAI_VIDEO_API_KEY", "").strip(),
+        azure_openai_video_max_seconds=int(os.getenv("AZURE_OPENAI_VIDEO_MAX_SECONDS", "8") or "8"),
     )
 
 
