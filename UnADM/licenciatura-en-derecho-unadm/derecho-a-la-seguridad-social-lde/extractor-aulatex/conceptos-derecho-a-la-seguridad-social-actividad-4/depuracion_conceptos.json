@@ -1,0 +1,34 @@
+{
+  "subject_slug": "garantias-constitucionales",
+  "kept": [
+    "Concepto y clasificación del seguro",
+    "Evolución histórica del seguro",
+    "Seguridad social",
+    "Seguro",
+    "Seguro privado",
+    "Seguro social",
+    "características del seguro privado",
+    "características del seguro social",
+    "Contingencia"
+  ],
+  "discarded": [
+    "(naturaleza",
+    "actualizase la",
+    "aproximación a sus alcances",
+    "consecuencias de",
+    "del social",
+    "disponible",
+    "entre ambos",
+    "https://dialnet",
+    "las diferencias",
+    "los elementos",
+    "límites",
+    "No indica ninguno de",
+    "Revista Iustitia",
+    "seguridad social: una",
+    "utilidad",
+    "en",
+    "las"
+  ],
+  "notes": "Se conservaron los conceptos sustantivos y temáticamente coherentes sobre seguro y seguridad social, relevantes para el marco de garantías constitucionales. Se descartaron fragmentos incompletos, conectores, referencias bibliográficas (Dialnet, Revista Iustitia), stopwords y términos genéricos o ruidosos sin valor conceptual para redactar la actividad."
+}

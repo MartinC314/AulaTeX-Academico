@@ -73,7 +73,10 @@
     "Ley del Instituto de Seguridad Social para las Fuerzas Armadas Mexicanas :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
     "El ACNUDH y el derecho a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
     "La seguridad social y los desaf \\'i os de la inclusi \\'o n juvenil en Am \\'e rica :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
-    "Derecho humano a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
+    "Derecho humano a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+    "El concepto de seguridad social: una aproximaci \\'o n a sus alcances y l \\'i mites :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+    "Ley sobre el Contrato de Seguro :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+    "Qu \\'e diferencia al Seguro Social de un seguro privado :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
   ],
   "section_titles": [
     "Bienvenida y sentido de la materia",
@@ -124,14 +127,18 @@
     "lissfam2026 :: Ley del Instituto de Seguridad Social para las Fuerzas Armadas Mexicanas :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
     "acnudhSeguridadSocial2026 :: El ACNUDH y el derecho a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
     "hernandezInclusion2020 :: La seguridad social y los desaf \\'i os de la inclusi \\'o n juvenil en Am \\'e rica :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
-    "belmontLugoParra2017 :: Derecho humano a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
+    "belmontLugoParra2017 :: Derecho humano a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+    "belmontParra2017 :: Derecho humano a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+    "perezSotoCalderon2012 :: El concepto de seguridad social: una aproximaci \\'o n a sus alcances y l \\'i mites :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+    "leyContratoSeguro2026 :: Ley sobre el Contrato de Seguro :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+    "idcRodriguez2019 :: Qu \\'e diferencia al Seguro Social de un seguro privado :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
   ],
   "node_metadata": {
     "editing_details": {
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 2 - derecho-a-la-seguridad-social-lde",
+        "subject_rule": "Actividad 4 - derecho-a-la-seguridad-social-lde",
         "scope_label": "Actividad 3"
       },
       "didactic_contract": {
@@ -361,7 +368,7 @@
         "career": "licenciatura-en-derecho-unadm",
         "subject": "derecho-a-la-seguridad-social-lde",
         "activity": "Actividad 3",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2"
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -417,6 +424,10 @@
         {
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
           "has_memory": false
+        },
+        {
+          "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4",
+          "has_memory": false
         }
       ],
       "novelty_signals": [],
@@ -430,7 +441,8 @@
           "UnADM",
           "interinstitucional",
           "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
-          "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2"
+          "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
+          "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4"
         ],
         "source_artifacts": [
           "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/README.md",
@@ -450,7 +462,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260723-011840",
+      "run_id": "20260725-051604",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-3",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-3",
@@ -459,7 +471,8 @@
         "UnADM",
         "interinstitucional",
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
-        "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2"
+        "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
+        "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4"
       ],
       "novelty_count": 0
     },
@@ -511,7 +524,7 @@
           "heading_contract": {
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-            "subject_rule": "Actividad 2 - derecho-a-la-seguridad-social-lde",
+            "subject_rule": "Actividad 4 - derecho-a-la-seguridad-social-lde",
             "scope_label": "Actividad 3"
           },
           "didactic_contract": {
@@ -711,7 +724,7 @@
             "career": "licenciatura-en-derecho-unadm",
             "subject": "derecho-a-la-seguridad-social-lde",
             "activity": "Actividad 3",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2"
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -746,7 +759,8 @@
             "{'scope_key': 'UnADM', 'has_memory': True}",
             "{'scope_key': 'interinstitucional', 'has_memory': False}",
             "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1', 'has_memory': True}",
-            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2', 'has_memory': False}"
+            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2', 'has_memory': False}",
+            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4', 'has_memory': False}"
           ],
           "novelty_signals": [
             "bootstrap",
@@ -763,7 +777,8 @@
               "UnADM",
               "interinstitucional",
               "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
-              "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2"
+              "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
+              "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4"
             ],
             "source_artifacts": [
               "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/README.md",
@@ -783,7 +798,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260723-011840",
+          "run_id": "20260725-051604",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-3",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-3",
@@ -792,7 +807,8 @@
             "UnADM",
             "interinstitucional",
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
-            "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2"
+            "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
+            "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4"
           ],
           "novelty_count": 0
         },
@@ -941,7 +957,8 @@
       "Memoria de redacción preservada en 24 bloques.",
       "Memoria de redacción preservada en 25 bloques.",
       "ADN sintetizado con 27 conceptos, 11 citas y 7 relaciones.",
-      "Memoria de redacción preservada en 39 bloques."
+      "Memoria de redacción preservada en 39 bloques.",
+      "ADN sintetizado con 30 conceptos, 11 citas y 7 relaciones."
     ],
     "knowledge_graph": {
       "concepts": [
@@ -971,7 +988,10 @@
         "Ley del Instituto de Seguridad Social para las Fuerzas Armadas Mexicanas :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
         "El ACNUDH y el derecho a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
         "La seguridad social y los desaf \\'i os de la inclusi \\'o n juvenil en Am \\'e rica :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
-        "Derecho humano a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
+        "Derecho humano a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "El concepto de seguridad social: una aproximaci \\'o n a sus alcances y l \\'i mites :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "Ley sobre el Contrato de Seguro :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "Qu \\'e diferencia al Seguro Social de un seguro privado :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
       ],
       "citations": [
         "bricenoRuiz2011",
@@ -1010,7 +1030,11 @@
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social.tex",
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/presentacion-derecho-a-la-seguridad-social.tex",
-        "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
+        "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex",
+        "belmontParra2017 :: Derecho humano a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "perezSotoCalderon2012 :: El concepto de seguridad social: una aproximaci \\'o n a sus alcances y l \\'i mites :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "leyContratoSeguro2026 :: Ley sobre el Contrato de Seguro :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "idcRodriguez2019 :: Qu \\'e diferencia al Seguro Social de un seguro privado :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
       ],
       "relations": [
         {
@@ -1231,7 +1255,7 @@
             "year": "2026",
             "url": "https://www.ohchr.org/es/social-security",
             "note": "Fuente institucional",
-            "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+            "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
           }
         ],
         "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -1563,7 +1587,7 @@
             "year": "2026",
             "url": "https://www.ohchr.org/es/social-security",
             "note": "Fuente institucional",
-            "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+            "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
           },
           {
             "key": "ibarraOlguin2022",
@@ -2044,7 +2068,7 @@
             "year": "2026",
             "url": "https://www.ohchr.org/es/social-security",
             "note": "Fuente institucional",
-            "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+            "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
           }
         ],
         "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -4238,7 +4262,7 @@
                   "year": "2026",
                   "url": "https://www.ohchr.org/es/social-security",
                   "note": "Fuente institucional",
-                  "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                  "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
                 }
               ],
               "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -4570,7 +4594,7 @@
                   "year": "2026",
                   "url": "https://www.ohchr.org/es/social-security",
                   "note": "Fuente institucional",
-                  "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                  "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
                 },
                 {
                   "key": "ibarraOlguin2022",
@@ -5051,7 +5075,7 @@
                   "year": "2026",
                   "url": "https://www.ohchr.org/es/social-security",
                   "note": "Fuente institucional",
-                  "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                  "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
                 }
               ],
               "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -5277,7 +5301,7 @@
                   "year": "2026",
                   "url": "https://www.ohchr.org/es/social-security",
                   "note": "Fuente institucional",
-                  "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                  "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
                 }
               ],
               "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -5609,7 +5633,7 @@
                   "year": "2026",
                   "url": "https://www.ohchr.org/es/social-security",
                   "note": "Fuente institucional",
-                  "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                  "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
                 },
                 {
                   "key": "ibarraOlguin2022",
@@ -6090,7 +6114,7 @@
                   "year": "2026",
                   "url": "https://www.ohchr.org/es/social-security",
                   "note": "Fuente institucional",
-                  "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                  "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
                 }
               ],
               "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -6253,7 +6277,7 @@
                 "year": "2026",
                 "url": "https://www.ohchr.org/es/social-security",
                 "note": "Fuente institucional",
-                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
               }
             },
             "cpeum2026": {
@@ -6632,7 +6656,7 @@
                 "year": "2026",
                 "url": "https://www.ohchr.org/es/social-security",
                 "note": "Fuente institucional",
-                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
               }
             ],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -6964,7 +6988,7 @@
                 "year": "2026",
                 "url": "https://www.ohchr.org/es/social-security",
                 "note": "Fuente institucional",
-                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
               },
               {
                 "key": "ibarraOlguin2022",
@@ -7445,7 +7469,7 @@
                 "year": "2026",
                 "url": "https://www.ohchr.org/es/social-security",
                 "note": "Fuente institucional",
-                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
               }
             ],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -7671,7 +7695,7 @@
                 "year": "2026",
                 "url": "https://www.ohchr.org/es/social-security",
                 "note": "Fuente institucional",
-                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
               }
             ],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -8003,7 +8027,7 @@
                 "year": "2026",
                 "url": "https://www.ohchr.org/es/social-security",
                 "note": "Fuente institucional",
-                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
               },
               {
                 "key": "ibarraOlguin2022",
@@ -8484,7 +8508,7 @@
                 "year": "2026",
                 "url": "https://www.ohchr.org/es/social-security",
                 "note": "Fuente institucional",
-                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
               }
             ],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -8647,7 +8671,7 @@
               "year": "2026",
               "url": "https://www.ohchr.org/es/social-security",
               "note": "Fuente institucional",
-              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
             }
           },
           "cpeum2026": {
@@ -10851,7 +10875,7 @@
                 "year": "2026",
                 "url": "https://www.ohchr.org/es/social-security",
                 "note": "Fuente institucional",
-                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
               }
             ],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -11183,7 +11207,7 @@
                 "year": "2026",
                 "url": "https://www.ohchr.org/es/social-security",
                 "note": "Fuente institucional",
-                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
               },
               {
                 "key": "ibarraOlguin2022",
@@ -11664,7 +11688,7 @@
                 "year": "2026",
                 "url": "https://www.ohchr.org/es/social-security",
                 "note": "Fuente institucional",
-                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
               }
             ],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -11890,7 +11914,7 @@
                 "year": "2026",
                 "url": "https://www.ohchr.org/es/social-security",
                 "note": "Fuente institucional",
-                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
               }
             ],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -12222,7 +12246,7 @@
                 "year": "2026",
                 "url": "https://www.ohchr.org/es/social-security",
                 "note": "Fuente institucional",
-                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
               },
               {
                 "key": "ibarraOlguin2022",
@@ -12703,7 +12727,7 @@
                 "year": "2026",
                 "url": "https://www.ohchr.org/es/social-security",
                 "note": "Fuente institucional",
-                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+                "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
               }
             ],
             "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -12866,7 +12890,7 @@
               "year": "2026",
               "url": "https://www.ohchr.org/es/social-security",
               "note": "Fuente institucional",
-              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
             }
           },
           "cpeum2026": {
@@ -13214,7 +13238,7 @@
               "year": "2026",
               "url": "https://www.ohchr.org/es/social-security",
               "note": "Fuente institucional",
-              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
             }
           ],
           "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -13546,7 +13570,7 @@
               "year": "2026",
               "url": "https://www.ohchr.org/es/social-security",
               "note": "Fuente institucional",
-              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
             },
             {
               "key": "ibarraOlguin2022",
@@ -14027,7 +14051,7 @@
               "year": "2026",
               "url": "https://www.ohchr.org/es/social-security",
               "note": "Fuente institucional",
-              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
             }
           ],
           "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -14253,7 +14277,7 @@
               "year": "2026",
               "url": "https://www.ohchr.org/es/social-security",
               "note": "Fuente institucional",
-              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
             }
           ],
           "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -14585,7 +14609,7 @@
               "year": "2026",
               "url": "https://www.ohchr.org/es/social-security",
               "note": "Fuente institucional",
-              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
             },
             {
               "key": "ibarraOlguin2022",
@@ -15066,7 +15090,7 @@
               "year": "2026",
               "url": "https://www.ohchr.org/es/social-security",
               "note": "Fuente institucional",
-              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+              "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
             }
           ],
           "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/reporte-derecho-a-la-seguridad-social-Actividad-3.tex"
@@ -15229,7 +15253,7 @@
             "year": "2026",
             "url": "https://www.ohchr.org/es/social-security",
             "note": "Fuente institucional",
-            "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+            "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
           }
         },
         "cpeum2026": {
@@ -15595,7 +15619,7 @@
         "year": "2026",
         "url": "https://www.ohchr.org/es/social-security",
         "note": "Fuente institucional",
-        "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}"
+        "raw_entry": "@misc{acnudhSeguridadSocial2026,\n  author = {{Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos}},\n  title = {El ACNUDH y el derecho a la seguridad social},\n  year = {2026},\n  howpublished = {\\url{https://www.ohchr.org/es/social-security}},\n  note = {Fuente institucional},\n  annote = {Trazabilidad interna: consulta 2026-07-13}\n}\n\n% --- Referencias Actividad 4: seguro social y seguro privado ---"
       },
       "hernandezInclusion2020": {
         "key": "hernandezInclusion2020",
@@ -15619,6 +15643,54 @@
         "year": "2017",
         "publisher": "Comisi \\'o n Nacional de los Derechos Humanos",
         "raw_entry": "@book{belmontLugoParra2017,\n  author = {Belmont Lugo, Jos{\\'e} Luis and Parra Garc{\\'i}a, Mar{\\'i}a de Lourdes},\n  title = {Derecho humano a la seguridad social},\n  publisher = {Comisi{\\'o}n Nacional de los Derechos Humanos},\n  year = {2017},\n  address = {Mexico},\n  annote = {Trazabilidad interna: ejemplar local en referencias-derecho-a-la-seguridad-social/libros; consulta 2026-07-18}\n}"
+      },
+      "belmontParra2017": {
+        "key": "belmontParra2017",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "entry_type": "book",
+        "title": "Derecho humano a la seguridad social",
+        "author": "Belmont Lugo, Jos \\'e Luis and Parra Garc \\'i a, Mar \\'i a de Lourdes",
+        "year": "2017",
+        "publisher": "Comisi \\'o n Nacional de los Derechos Humanos",
+        "url": "https://www.cndh.org.mx/sites/default/files/documentos/2019-05/Cartilla-DH_Seguridad_social.pdf",
+        "raw_entry": "@book{belmontParra2017,\n  author = {Belmont Lugo, Jos{\\'e} Luis and Parra Garc{\\'i}a, Mar{\\'i}a de Lourdes},\n  title = {Derecho humano a la seguridad social},\n  publisher = {Comisi{\\'o}n Nacional de los Derechos Humanos},\n  year = {2017},\n  address = {M{\\'e}xico},\n  howpublished = {\\url{https://www.cndh.org.mx/sites/default/files/documentos/2019-05/Cartilla-DH_Seguridad_social.pdf}},\n  annote = {Bibliograf{\\'i}a indicada en la planeaci{\\'o}n S4}\n}"
+      },
+      "perezSotoCalderon2012": {
+        "key": "perezSotoCalderon2012",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "entry_type": "article",
+        "title": "El concepto de seguridad social: una aproximaci \\'o n a sus alcances y l \\'i mites",
+        "author": "P \\'e rez y Soto Dom \\'i nguez, Alejandro and Calder \\'o n Ossa, Yenni Andrea",
+        "year": "2012",
+        "journal": "Revista Iustitia",
+        "url": "https://dialnet.unirioja.es/descarga/articulo/5978951.pdf",
+        "raw_entry": "@article{perezSotoCalderon2012,\n  author = {P{\\'e}rez y Soto Dom{\\'i}nguez, Alejandro and Calder{\\'o}n Ossa, Yenni Andrea},\n  title = {El concepto de seguridad social: una aproximaci{\\'o}n a sus alcances y l{\\'i}mites},\n  journal = {Revista Iustitia},\n  year = {2012},\n  howpublished = {\\url{https://dialnet.unirioja.es/descarga/articulo/5978951.pdf}},\n  annote = {Bibliograf{\\'i}a indicada en la planeaci{\\'o}n S4}\n}"
+      },
+      "leyContratoSeguro2026": {
+        "key": "leyContratoSeguro2026",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "entry_type": "misc",
+        "title": "Ley sobre el Contrato de Seguro",
+        "author": "C \\'a mara de Diputados del H. Congreso de la Uni \\'o n",
+        "year": "1935",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/211.pdf",
+        "note": "Texto vigente consultado en 2026",
+        "raw_entry": "@misc{leyContratoSeguro2026,\n  author = {{C{\\'a}mara de Diputados del H. Congreso de la Uni{\\'o}n}},\n  title = {Ley sobre el Contrato de Seguro},\n  year = {1935},\n  howpublished = {\\url{https://www.diputados.gob.mx/LeyesBiblio/pdf/211.pdf}},\n  note = {Texto vigente consultado en 2026},\n  annote = {Legislaci{\\'o}n indicada en la planeaci{\\'o}n S4}\n}"
+      },
+      "idcRodriguez2019": {
+        "key": "idcRodriguez2019",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "entry_type": "misc",
+        "title": "Qu \\'e diferencia al Seguro Social de un seguro privado",
+        "author": "Rodr \\'i guez, Sandra",
+        "year": "2019",
+        "url": "https://idconline.mx/seguridad-social/2019/10/09/que-diferencia-al-seguro-social-de-un-seguro-privado",
+        "note": "IDC Asesor Fiscal, Jur \\'i dico y Laboral; consulta: 2026-07-25",
+        "raw_entry": "@misc{idcRodriguez2019,\n  author = {Rodr{\\'i}guez, Sandra},\n  title = {Qu{\\'e} diferencia al Seguro Social de un seguro privado},\n  year = {2019},\n  howpublished = {\\url{https://idconline.mx/seguridad-social/2019/10/09/que-diferencia-al-seguro-social-de-un-seguro-privado}},\n  note = {IDC Asesor Fiscal, Jur{\\'i}dico y Laboral; consulta: 2026-07-25},\n  annote = {La planeaci{\\'o}n consigna 2026; se normaliza al a{\\~n}o visible en la URL}\n}"
       }
     }
   },

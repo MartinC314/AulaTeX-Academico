@@ -1,0 +1,810 @@
+{
+  "Concepto y clasificación del seguro": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición jurídica del contrato de seguro y elementos esenciales",
+            "clasificación de los seguros: seguros de daños, de personas, patrimoniales y de vida",
+            "función económica y jurídica del seguro doctrina y límites"
+          ],
+          "nota": "Las citas recuperadas no guardan relación alguna con el concepto de seguro; todas provienen de obras sobre derechos humanos y tratan temas de clasificación de derechos, antisemitismo y filosofía política. Ninguno de los elementos evaluados (definición, fundamento, autor, ejemplo, crítica) está cubierto. Es necesario reorientar completamente la búsqueda hacia fuentes de derecho mercantil o de seguros."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición jurídica del contrato de seguro y elementos esenciales",
+            "hits": 4
+          },
+          {
+            "consulta": "clasificación de los seguros: seguros de daños, de personas, patrimoniales y de vida",
+            "hits": 4
+          },
+          {
+            "consulta": "función económica y jurídica del seguro doctrina y límites",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición jurídica de contrato de seguro y sus elementos esenciales",
+            "clasificación de los seguros: seguros de daños y seguros de personas doctrina",
+            "principio indemnizatorio y función económica del seguro autores"
+          ],
+          "nota": "Ninguna de las citas recuperadas trata sobre el concepto ni la clasificación del seguro; todas provienen de obras de derechos humanos y filosofía jurídica, con similitudes muy bajas (<0.09). La ficha carece por completo de cobertura. Es necesario reorientar la búsqueda hacia fuentes de derecho de seguros o derecho mercantil que aborden definición, fundamento (principio indemnizatorio, mutualidad, riesgo), autores especializados, ejemplos de tipos de seguros y críticas o límites de la clasificación."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición jurídica de contrato de seguro y sus elementos esenciales",
+            "hits": 4
+          },
+          {
+            "consulta": "clasificación de los seguros: seguros de daños y seguros de personas doctrina",
+            "hits": 4
+          },
+          {
+            "consulta": "principio indemnizatorio y función económica del seguro autores",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  },
+  "Evolución histórica del seguro": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "historia y origen del contrato de seguro: préstamo a la gruesa y seguro marítimo",
+            "evolución del seguro desde el Código de Hammurabi hasta las aseguradoras modernas",
+            "primeras compañías de seguros y desarrollo del seguro terrestre y de vida siglos XVII-XVIII"
+          ],
+          "nota": "Las citas recuperadas no guardan relación con el concepto 'Evolución histórica del seguro'; todas provienen de textos sobre derechos humanos y su historicidad, con similitudes muy bajas (<0.07). No cubren ningún elemento requerido. Se requiere reorientar la búsqueda hacia fuentes de derecho mercantil o de seguros que aborden hitos históricos (seguro marítimo, préstamo a la gruesa, gremios medievales, Lloyd's, mutualismo) con definiciones, autores y ejemplos concretos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "historia y origen del contrato de seguro: préstamo a la gruesa y seguro marítimo",
+            "hits": 4
+          },
+          {
+            "consulta": "evolución del seguro desde el Código de Hammurabi hasta las aseguradoras modernas",
+            "hits": 4
+          },
+          {
+            "consulta": "primeras compañías de seguros y desarrollo del seguro terrestre y de vida siglos XVII-XVIII",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 17,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "historia del contrato de seguro desde el préstamo a la gruesa ventura y el comercio marítimo",
+            "origen y evolución del seguro: mutualidades, Lloyd's de Londres y primeras pólizas marítimas",
+            "desarrollo histórico del seguro moderno: aparición del seguro de vida y regulación jurídica"
+          ],
+          "nota": "Ninguna de las citas recuperadas aborda el concepto de evolución histórica del seguro. Las fuentes tratan sobre derechos humanos, el Código de Hammurabi y cambio climático, sin relación con el desarrollo del contrato o la institución del seguro. Similitudes muy bajas (<0.08). Es necesario reformular las búsquedas hacia fuentes específicas de derecho de seguros, historia mercantil o comercio marítimo."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "historia del contrato de seguro desde el préstamo a la gruesa ventura y el comercio marítimo",
+            "hits": 4
+          },
+          {
+            "consulta": "origen y evolución del seguro: mutualidades, Lloyd's de Londres y primeras pólizas marítimas",
+            "hits": 4
+          },
+          {
+            "consulta": "desarrollo histórico del seguro moderno: aparición del seguro de vida y regulación jurídica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 25
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 25
+  },
+  "Seguridad social": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición de seguridad social como derecho humano y prestaciones que comprende",
+            "fundamento jurídico seguridad social artículo 22 Declaración Universal y Pacto DESC",
+            "críticas y límites del sistema de seguridad social cobertura y financiamiento"
+          ],
+          "nota": "Las citas recuperadas solo mencionan 'seguridad social' de forma tangencial (listados de convenios europeos y enumeraciones de derechos), sin ofrecer definición conceptual, fundamento doctrinal, autor de referencia, ejemplo de aplicación ni crítica. La similitud es muy baja (máx. 0.20). Se requiere nueva búsqueda enfocada en el contenido sustantivo del concepto."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de seguridad social como derecho humano y prestaciones que comprende",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento jurídico seguridad social artículo 22 Declaración Universal y Pacto DESC",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del sistema de seguridad social cobertura y financiamiento",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 14
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 14,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición jurídica precisa de seguridad social",
+            "Fundamento doctrinal y normativo (como derecho social/DESC)",
+            "Autor o teórico de referencia sobre seguridad social",
+            "Ejemplo o aplicación concreta (prestaciones, cobertura, sistemas nacionales)",
+            "Crítica o límites del sistema de seguridad social"
+          ],
+          "consultas": [
+            "definición de seguridad social como derecho humano prestaciones y cobertura",
+            "seguridad social fundamento Pacto Internacional de Derechos Económicos Sociales y Culturales artículo 9",
+            "críticas y límites de los sistemas de seguridad social sostenibilidad financiera"
+          ],
+          "nota": "Las citas recuperadas mencionan la seguridad social solo de forma tangencial: aparece como uno más de varios instrumentos europeos o dentro de listados de derechos, sin definirla, fundamentarla ni analizarla. No hay definición operativa, autor de referencia, ejemplo de aplicación ni crítica. La cobertura es insuficiente en todas las dimensiones; se requieren nuevas búsquedas enfocadas específicamente en el concepto como derecho económico-social."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de seguridad social como derecho humano prestaciones y cobertura",
+            "hits": 4
+          },
+          {
+            "consulta": "seguridad social fundamento Pacto Internacional de Derechos Económicos Sociales y Culturales artículo 9",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites de los sistemas de seguridad social sostenibilidad financiera",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 19
+  },
+  "Seguro": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 6,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición de contrato de seguro y elementos esenciales en derecho civil y mercantil",
+            "fundamento jurídico del seguro: riesgo, prima e indemnización según la doctrina",
+            "límites y críticas al contrato de seguro: buena fe, exclusiones y asimetría de información"
+          ],
+          "nota": "Las citas recuperadas no abordan el concepto jurídico de 'Seguro' (contrato/institución). Los fragmentos usan 'seguro' como adjetivo (seguridad, ambiente seguro, estar seguro de algo), sin relación con el concepto buscado. Similitudes muy bajas (<0.14). Ningún elemento de la ficha está cubierto; se requiere nueva búsqueda dirigida al contrato de seguro."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de contrato de seguro y elementos esenciales en derecho civil y mercantil",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento jurídico del seguro: riesgo, prima e indemnización según la doctrina",
+            "hits": 4
+          },
+          {
+            "consulta": "límites y críticas al contrato de seguro: buena fe, exclusiones y asimetría de información",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 18,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición jurídica del contrato de seguro y elementos esenciales",
+            "seguro concepto doctrina prima riesgo asegurador asegurado póliza",
+            "principios del seguro buena fe interés asegurable indemnización crítica"
+          ],
+          "nota": "Las citas recuperadas no abordan el concepto de 'seguro' en sentido jurídico o económico. Todas usan la palabra 'seguro' como adjetivo (ambiente seguro, mundo más seguro, es seguro que la muerte llegará) o en contextos ajenos (Hobbes, guerra de Irak, tragedia griega). La similitud es muy baja (~0.12) y ninguna dimensión está cubierta. Se requiere reformular las búsquedas hacia fuentes de derecho de seguros o teoría económica del riesgo."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición jurídica del contrato de seguro y elementos esenciales",
+            "hits": 4
+          },
+          {
+            "consulta": "seguro concepto doctrina prima riesgo asegurador asegurado póliza",
+            "hits": 4
+          },
+          {
+            "consulta": "principios del seguro buena fe interés asegurable indemnización crítica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "Seguro privado": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición de contrato de seguro privado y elementos esenciales (prima, riesgo, indemnización)",
+            "seguro privado frente a seguridad social pública: fundamento y diferencias doctrinales",
+            "críticas y límites del seguro privado: exclusiones, selección de riesgos y acceso desigual"
+          ],
+          "nota": "Las citas recuperadas no guardan relación con el concepto de 'seguro privado' como institución jurídico-económica; abordan derechos humanos, sector privado empresarial y contextos políticos. La similitud es muy baja (<0.08) en todos los casos. Ninguno de los cinco elementos evaluados queda cubierto. Se requiere reorientar la búsqueda hacia fuentes de derecho de seguros o economía aseguradora."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de contrato de seguro privado y elementos esenciales (prima, riesgo, indemnización)",
+            "hits": 4
+          },
+          {
+            "consulta": "seguro privado frente a seguridad social pública: fundamento y diferencias doctrinales",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del seguro privado: exclusiones, selección de riesgos y acceso desigual",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición de contrato de seguro privado y elementos esenciales (prima, riesgo, indemnización)",
+            "diferencia entre seguro privado y seguridad social pública regulación",
+            "críticas al modelo de seguros privados de salud cobertura y exclusiones"
+          ],
+          "nota": "Las citas recuperadas son irrelevantes al concepto 'seguro privado'; tratan de derechos humanos, seguridad pública y convenios europeos de seguridad social, con similitudes muy bajas (<0.10). Ningún elemento de la ficha está cubierto. Se requiere replantear las búsquedas hacia fuentes de derecho de seguros o económicas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de contrato de seguro privado y elementos esenciales (prima, riesgo, indemnización)",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia entre seguro privado y seguridad social pública regulación",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al modelo de seguros privados de salud cobertura y exclusiones",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 25
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 25
+  },
+  "Seguro social": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición y concepto de seguro social sistema de seguridad social contributivo",
+            "origen histórico del seguro social Bismarck 1883 y Rerum Novarum reforma laboral",
+            "críticas y límites del seguro social financiamiento cobertura y sostenibilidad"
+          ],
+          "nota": "Las citas recuperadas no abordan directamente el concepto de 'seguro social'. La mención más cercana es la encíclica Rerum Novarum (1891) sobre condiciones obreras y la emergencia de derechos sociales, pero no define ni fundamenta el seguro social como institución. Las demás citas tratan de derechos humanos generales, ambientales, igualdad y tratados europeos, sin relación específica. La similitud es muy baja (<0.08) en todas. Se requiere una nueva ronda de búsqueda enfocada en la definición jurídica, el origen histórico (modelo bismarckiano), autores de referencia, ejemplos de aplicación (IMSS, instituciones de seguridad social) y críticas al modelo."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y concepto de seguro social sistema de seguridad social contributivo",
+            "hits": 4
+          },
+          {
+            "consulta": "origen histórico del seguro social Bismarck 1883 y Rerum Novarum reforma laboral",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del seguro social financiamiento cobertura y sostenibilidad",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 18,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición precisa de seguro social como institución jurídica",
+            "Fundamento normativo y doctrinal del seguro social",
+            "Autor o corriente doctrinal que teorice el concepto",
+            "Ejemplo concreto de aplicación (regímenes, prestaciones, instituciones como IMSS)",
+            "Crítica o límites del modelo de seguro social"
+          ],
+          "consultas": [
+            "definición y origen del seguro social Bismarck y modelo contributivo",
+            "diferencia entre seguro social y seguridad social prestaciones y financiamiento",
+            "críticas y límites del sistema de seguro social sostenibilidad y cobertura"
+          ],
+          "nota": "Las citas recuperadas son marginales: mencionan la 'seguridad social' como derecho humano o en listados de convenios europeos, pero ninguna define, fundamenta ni ejemplifica el concepto específico de 'seguro social'. La similitud es muy baja (máx. 0.135). Se confunde además seguridad social con seguro social. Ninguno de los cinco elementos editoriales está cubierto; se requiere nueva búsqueda con fuentes de derecho de la seguridad social o teoría del Estado social."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y origen del seguro social Bismarck y modelo contributivo",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia entre seguro social y seguridad social prestaciones y financiamiento",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del sistema de seguro social sostenibilidad y cobertura",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  },
+  "características del seguro privado": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición y características del contrato de seguro privado en el derecho mercantil",
+            "elementos esenciales del seguro privado: prima, riesgo, interés asegurable y buena fe",
+            "principios y críticas del seguro privado frente a la seguridad social"
+          ],
+          "nota": "Ninguna de las citas recuperadas guarda relación con el concepto de 'características del seguro privado'. Todas las fuentes tratan sobre derechos humanos y presentan similitudes muy bajas (<0.08). No se cubre ningún elemento de la ficha. Se requiere buscar en fuentes de derecho mercantil, de seguros o derecho de contratos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y características del contrato de seguro privado en el derecho mercantil",
+            "hits": 4
+          },
+          {
+            "consulta": "elementos esenciales del seguro privado: prima, riesgo, interés asegurable y buena fe",
+            "hits": 4
+          },
+          {
+            "consulta": "principios y críticas del seguro privado frente a la seguridad social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "características esenciales del contrato de seguro privado consensual bilateral oneroso aleatorio",
+            "elementos del seguro privado prima riesgo interés asegurable indemnización doctrina",
+            "diferencia entre seguro privado y seguridad social principios mutualidad"
+          ],
+          "nota": "Las citas recuperadas no guardan relación alguna con el concepto de 'características del seguro privado'. Todas provienen de un texto sobre derechos humanos y tratan sobre derecho a la vida, convenios europeos y seguridad social internacional, no sobre el contrato de seguro privado. La similitud es muy baja (<0.10) y ningún elemento de la ficha queda cubierto. Se requiere una nueva búsqueda con fuentes de derecho mercantil o de seguros."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "características esenciales del contrato de seguro privado consensual bilateral oneroso aleatorio",
+            "hits": 4
+          },
+          {
+            "consulta": "elementos del seguro privado prima riesgo interés asegurable indemnización doctrina",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia entre seguro privado y seguridad social principios mutualidad",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 26
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 26
+  },
+  "características del seguro social": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición y características del seguro social en la seguridad social",
+            "principios del seguro social: solidaridad, obligatoriedad, universalidad e integralidad",
+            "origen del seguro social Bismarck y modelo Beveridge fundamento doctrinal"
+          ],
+          "nota": "Las citas recuperadas no abordan el concepto de 'seguro social'; todas tratan sobre derechos humanos, su historia y características generales (universalidad, dimensión social), sin definir ni caracterizar el seguro social como institución de la seguridad social. La similitud es muy baja (~0.06). Ninguno de los cinco elementos está cubierto. Se requiere una nueva ronda de búsqueda con fuentes específicas de derecho de la seguridad social o derecho laboral."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y características del seguro social en la seguridad social",
+            "hits": 4
+          },
+          {
+            "consulta": "principios del seguro social: solidaridad, obligatoriedad, universalidad e integralidad",
+            "hits": 4
+          },
+          {
+            "consulta": "origen del seguro social Bismarck y modelo Beveridge fundamento doctrinal",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 18,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "ejemplo",
+            "critica"
+          ],
+          "consultas": [
+            "definición y características esenciales del seguro social solidaridad obligatoriedad",
+            "principios del seguro social: universalidad, integralidad y unidad de gestión",
+            "críticas y límites del seguro social contributivo cobertura y sostenibilidad financiera"
+          ],
+          "nota": "Las citas recuperadas no abordan el concepto de 'características del seguro social'. Solo mencionan de forma tangencial la seguridad social como derecho humano o en títulos de convenios europeos, sin definir sus características (obligatoriedad, solidaridad, contributividad, etc.), su fundamento doctrinal, autores de referencia, ejemplos de aplicación ni críticas. La similitud es muy baja (<0.12) en todas las fuentes. Se requiere una nueva ronda de búsqueda enfocada en literatura de seguridad social y derecho laboral."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y características esenciales del seguro social solidaridad obligatoriedad",
+            "hits": 4
+          },
+          {
+            "consulta": "principios del seguro social: universalidad, integralidad y unidad de gestión",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del seguro social contributivo cobertura y sostenibilidad financiera",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 26
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 26
+  },
+  "Contingencia": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 2,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "critica"
+          ],
+          "consultas": [
+            "definición filosófica de contingencia frente a necesidad Aristóteles",
+            "concepto de contingencia modal posibilidad lógica ser y no ser",
+            "contingencia en la teoría del derecho y la argumentación jurídica"
+          ],
+          "nota": "Las citas recuperadas usan 'contingencia' en sentido coloquial (eventualidad, contratiempo) y no aportan una definición conceptual, su fundamento filosófico, un autor de referencia ni crítica alguna. La similitud es muy baja (0.07), lo que indica escasa pertinencia. Solo hay un uso aplicado del término, insuficiente para construir una ficha conceptual rigurosa. Se requieren nuevas búsquedas orientadas al concepto filosófico/lógico o jurídico de contingencia."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición filosófica de contingencia frente a necesidad Aristóteles",
+            "hits": 4
+          },
+          {
+            "consulta": "concepto de contingencia modal posibilidad lógica ser y no ser",
+            "hits": 4
+          },
+          {
+            "consulta": "contingencia en la teoría del derecho y la argumentación jurídica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 14
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 14,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definicion",
+            "fundamento",
+            "autor",
+            "critica"
+          ],
+          "consultas": [
+            "definición filosófica de contingencia y su contraste con necesidad",
+            "contingencia en la filosofía de Aristóteles y la modalidad de lo posible",
+            "contingencia versus necesidad en el pensamiento jurídico y de derechos humanos"
+          ],
+          "nota": "Las citas recuperadas no abordan el concepto de 'contingencia' como categoría filosófica o jurídica. Solo la cita de Rabinovich-Berkman (p.67) usa la palabra 'contingencias' en sentido coloquial (hechos aceptables), sin definirla ni fundamentarla; sirve marginalmente como ejemplo de uso. Faltan definición, fundamento teórico (contraste con necesidad, modalidad ontológica), autor de referencia (Aristóteles, Leibniz, Kelsen sobre normatividad) y crítica o límite del concepto. Baja similitud general (máx. 0.24) indica que el corpus no está alineado con el concepto; se recomienda reorientar las búsquedas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición filosófica de contingencia y su contraste con necesidad",
+            "hits": 4
+          },
+          {
+            "consulta": "contingencia en la filosofía de Aristóteles y la modalidad de lo posible",
+            "hits": 4
+          },
+          {
+            "consulta": "contingencia versus necesidad en el pensamiento jurídico y de derechos humanos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 25
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 25
+  }
+}
