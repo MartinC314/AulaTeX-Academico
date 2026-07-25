@@ -1,0 +1,1407 @@
+# Fichas de conceptos
+
+Las citas textuales se extrajeron de las fuentes de entrada. La búsqueda puede agrupar referencias del mismo concepto aunque estén en archivos distintos.
+
+## Ficha 01. Concepto y clasificación del seguro
+
+**Calidad estimada:** baja
+**Mejor similitud:** 0.0803
+**Similitud promedio:** 0.0599
+**Fuentes:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf
+**Ubicaciones:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 121; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 122; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 130; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 142; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 198; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 211; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 260; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 261; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 282; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 16; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 20; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 23; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 29; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 53; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 54; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 56; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 65; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 66; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 70; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 23; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 61
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 198 — similitud 0.0803
+
+**Detalle de puntaje:** tfidf=0.0503; bonus=0.0300
+
+> Como ésta, también del Éxodo, que se relaciona con disposiciones de la piedra de Ha- mmurabi: "El que hiera a un hombre de modo que en efecto muera, ha de ser muerto sin falta" (21.12). Otras, buscan resguardar elementos esenciales del ser humano en forma bastante minuciosa: "Y en caso de que unos hombres se pongan a reñir y uno efectivamente hiera a su prójimo con una piedra o un azadón y este no mue- ra, pero tenga que quedarse en cama; sí se levanta y va andando fuera sobre algún sostén suyo, entonces el que lo haya herido tiene que estar libre de cas- tigo; dará compensación solo por el tiempo que se haya perdido del trabajo de aquel hasta que lo tenga completamente sanado" (21,18-19).
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 65 — similitud 0.0786
+
+**Detalle de puntaje:** tfidf=0.0686; bonus=0.0100
+
+> En la evolución de los derechos humanos su reconocimiento y protección ha ido «in crescendo»; formulándose para su clasificación diversos criterios, sin embargo a los fines de la investigación se estima apropiado aquella que los clasifica o cataloga por generaciones atendiendo al contexto histórico y positivista; sin embargo esto no implica que ante la protección de los derechos humanos en el paradigma vigente unos tengan prelación frente a otros; independientemente incluso ante el asentimiento de considerar la existencia del llamado «núcleo duro» de los derechos humanos. 2.3.7.- Clasificación
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 56 — similitud 0.0771
+
+**Detalle de puntaje:** tfidf=0.0571; bonus=0.0200
+
+> Sin embargo, también patrocina la necesidad de un pacto entre las individualidades para formar un gobierno (…) las voluntades individuales siguen siendo el origen y forman los elementos esenciales; pero, consideradas separadamente, su poder sería nulo, puesto que sólo reside en el conjunto44.Tal es el origen de un gobierno, ejercido por procuración; coincide con Locke, en legar una porción de poder «a algunos de ellos» el pueblo es numeroso y es imposible consultarlo en su totalidad por toda la nación; esta delegación no implica un desprendimiento total del poder soberano. Expone su celebre tesis acerca del poder constituyente originario de esta manera:
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 54 — similitud 0.0765
+
+**Detalle de puntaje:** tfidf=0.0665; bonus=0.0100
+
+> • La doctrina de Jellinek, para quien la Declaración francesa emuló las declaraciones norteamericanas que a su vez surgieron ideológicamente de las concepciones puritanas mayormente inspiradas por inmigrantes protestantes. • La doctrina francesa, a partir de las tesis de Boutmy polemizando con Jellinek, que desecha tanto la paternidad americana como germánica, insistiendo en su derivación por el influjo de la literatura europea, y especialmente del pensamiento ilustrado francés del siglo XVIII. • La doctrina ecléctica, consistente en afirmar que son compatibles tanto el criterio de Jellinek como la tesis oposicionista de Boutmy.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 29 — similitud 0.0736
+
+**Detalle de puntaje:** tfidf=0.0436; bonus=0.0300
+
+> 15). De una vez manifiesta tajantemente su objetivo, no se detendrá a divagar y concibe al derecho libre de elementos metajurídicos; el hombre está escindido entre el mundo del “ser”y del “deber ser”; el hombre sólo es capaz de conocer lo dado, escapándosele toda metafísica; pretende (…)“brindar una definición de la norma jurídica totalmente independiente de la noción de norma moral (…) al afirmar la autonomía del derecho respecto de la moral.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 53 — similitud 0.0729
+
+**Detalle de puntaje:** tfidf=0.0529; bonus=0.0200
+
+> Luis Manuel Marcano Salazar • La filosofía jurídica de Locke, fundadora de la doctrina liberal fue recogida en los textos de Derecho positivo; la libertad religiosa en un principio fue la bandera a izar, en «búsqueda de la felicidad» el iusnaturalismo fue útil en la mezcla del racionalismo y pragmatismo. • La separación de los poderes públicos en el ejercicio de sus funciones, encuentra en Norteamérica sus más fieros defensores quienes transfieren esta doctrina a la Francia revolucionaria, quedando establecido para la posteridad el lacónico pero contundente artículo 16 de la Declaración Francesa. “Toda sociedad en la que la garantía de los derechos no esté asegurada, ni determinada la...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 20 — similitud 0.0689
+
+**Detalle de puntaje:** tfidf=0.0489; bonus=0.0200
+
+> Derechos humanos. Teorías y doctrinas religión, aparte de su función redentora, pasa a ser considerada ante todo en su función civil. El humanismo vino a sustituir la visión del mundo vista bajo el prisma dogmático religioso; se enfoca una nueva perspectiva donde se refleja la racionalidad, en la que prima la idea del hombre como ser humano, verdadero e integral.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 211 — similitud 0.0682
+
+**Detalle de puntaje:** tfidf=0.0482; bonus=0.0200
+
+> Así que, para horror de Creón, Me- neceo, su primogénito, se suicida arrojándose desde una de las torres. El sacrificio de Meneceo hace a los tebanos sentirse seguros, así que salen a combatir. Ante los muros, Eteocles y Polinices se enfrentan en combate singular.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 122 — similitud 0.0680
+
+**Detalle de puntaje:** tfidf=0.0480; bonus=0.0200
+
+> Soy de tal clase social, tengo tales ingresos económicos, mi piel es de tal color, nací en un hogar de determinada religión, poseo esta inclinación sexual, sigo aquellas ideas políticas, padezco un defecto físico.,> Así es que sugiere que la respuesta sólo podría surgir de un ejercicio mental Es decir, un procedimiento ficticio ¿Es ello un disparate? Todas las teorías pactistas, que plantean al contrato social como base de la estructura política y jurídica humana, parten de una ficción, que sus seguido- res saben perfectamente que lo es.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 61 — similitud 0.0650
+
+**Detalle de puntaje:** tfidf=0.0550; bonus=0.0100
+
+> De este modo, se espera que para 2050 haya más de 36 millones de personas adultas mayores. Según datos del Segundo Conteo de Población y Vivienda 2005, en el país residían poco más de 9 millones de adultos mayores, de ellos 3.3 millones realizaban alguna actividad económica, lo que equivalía al 36.5 por ciento. De la misma forma, poco más de 45 por ciento no contaba con algún tipo de transferencia que le brindara seguridad económica y 63 por ciento se desempeñaba en ocupacio- nes informales, hecho que les impidía acceder a las prestaciones que establecía la ley.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 121 — similitud 0.0643
+
+**Detalle de puntaje:** tfidf=0.0543; bonus=0.0100
+
+> Enmarcado en la tradición británica, Rawls prefirió hablar de "libertades" 'más que de "derechos". Así, de este primer principio se derivarían (o serían reforzadas) varias de las "libertades" que se remontan (remotamente) a la cultura medieval normando-inglesa, y se consolidaron (y generalizaron) en los textos revolucionarios del siglo XVII, y fueron objeto de las proclamas del XVIII: las libertades de expresión, de conciencia y de asociación. También la democracia (y sus prerrogativas anexas) y la propiedad privada.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 130 — similitud 0.0570
+
+**Detalle de puntaje:** tfidf=0.0470; bonus=0.0100
+
+> Comenta con dureza el pensador musulmán contem poráneo S, A. Aideeb Abu-Saieh: "Este pasaje contiene tres conceptos relacionados que son problemáticos para nuestra concepción del co m - portamiento moral: primero, el concepto de un pueblo elegido, que es un concepto racista;segun- do, el concepto de dar la tierra de Canaán a ios judíos, que es un acto de robo; y tercero, el concep- to de circuncisión, que es una práctica mutiladora" {Denniston e t a/., 2004, p. 136 y siguientes).
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 261 — similitud 0.0563
+
+**Detalle de puntaje:** tfidf=0.0363; bonus=0.0200
+
+> Estas ideas se notan en la doctrina del período "clásico" (siglo II y primera mitad del III), recopilada después en el Digesto. Vimos cómo Gayo recorda- ba: "la principal división jurídica de las personas es aquella según la cual los hombres o son libres o son siervos" (1.5.3).
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 282 — similitud 0.0510
+
+**Detalle de puntaje:** tfidf=0.0310; bonus=0.0200
+
+> Es decir que, desde esta acepción, sería "antisemita' quien no gustase de los árabes, o se sintiese molesto por el estudio histórico de los babilonios. Sin embargo, la expresión "antisemitismo" se ha ganado ya, a los golpes y mercéd ásangre y tris- teza, un lugar en la sem ántica mundial, com o referente del prejuicio contra los "judíos'' (definir a quiénes se engloba dentro de esa clasificación, ya es otro cantar, com o viéramos antes).
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 66 — similitud 0.0507
+
+**Detalle de puntaje:** tfidf=0.0407; bonus=0.0100
+
+> Donde se incluyen los siguientes derechos tendientes a un orden internacional apto para los derechos humanos; a la libre determinación de los pueblos y a la libre disposición de sus riquezas y recursos naturales; de las minorías étnicas, religiosas o lingüísticas a su cultura, a su religión y a su lengua; de los trabajadores migrantes a trabajar en otros países bajo condiciones dignas y justas; a un medio ambiente sano. En relación con esta clasificación por generaciones hay que indicar que: 1. No es la más adecuada, por cuanto no es cierto que los derechos civiles y políticos hayan sido reconocidos en primer término que los derechos económicos, sociales y culturales.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 23 — similitud 0.0499
+
+**Detalle de puntaje:** tfidf=0.0399; bonus=0.0100
+
+> Luis Manuel Marcano Salazar Por consiguiente, a pesar de las leyes de naturaleza (que cada uno observa cuando tiene la voluntad de observarlas, cuando puede hacerlo de modo seguro) si no se ha instituido o no es suficientemente grande para nuestra seguridad, cada uno se fiará tan sólo, y podrá hacerlo legalmente, sobre su propia fuerza y maña, para protegerse contra los demás hombres.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 23 — similitud 0.0494
+
+**Detalle de puntaje:** tfidf=0.0394; bonus=0.0100
+
+> Estos derechos surgieron tras una serie de luchas reivin- dicatorias que la sociedad civil sostuvo para buscar condiciones más equitativas a nivel internacional para el desarrollo de las personas y de los pueblos. La integralidad de los derechos humanos Hay que decir que la clasificación y división anteriores son exclusiva- mente para fines analíticos, pues como se señala en la Declaración y Programa de Acción de Viena, aprobada por la Conferencia Mundial de Derechos Humanos el 25 de junio de 1993: Todos los derechos humanos son universales, indivisibles e interdependientes y están relacionados entre sí. La comuni- dad internacional debe tratar los derechos humanos de forma
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 70 — similitud 0.0476
+
+**Detalle de puntaje:** tfidf=0.0176; bonus=0.0300
+
+> Derechos humanos. Teorías y doctrinas Capitulo III Protección jurídica internacional de la persona humana Lo que en definitiva desencadenó la internacionalización de los derechos humanos fue la conmoción histórica de millones de personas fallecidas durante la Segunda Guerra Mundial y la posterior creación de la Organización de las Naciones Unidas. La magnitud del genocidio puso en evidencia que el ejercicio abusivo del poder constituye una actividad peligrosa para la dignidad humana, de modo que su control no debe dejarse a cargo, exclusivamente, de las instituciones domésticas, sino que deben constituirse instancias internacionales para su protección.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 142 — similitud 0.0470
+
+**Detalle de puntaje:** tfidf=0.0170; bonus=0.0300
+
+> Su ejemplo no cundió. Se di- luyó entre las miríadas de personas que ingresaron, como diría la pensadora alemana Hannah Arendt (1906-1975), en la "banalidad del mal". En cambio, lo que sí terminó con el horror, cortó el Holocausto (desgraciadamente bas- tante tarde) y abortó el sueño hitleriano de un imperio basado en la supuesta superioridad biológica de algunos, fue la violencia.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 260 — similitud 0.0465
+
+**Detalle de puntaje:** tfidf=0.0365; bonus=0.0100
+
+> Su equivalente en las Instituciojies de Justiniano (1.3)> obra concebida en paralelo, como texto de estudio, también dirigida por el jurista Triboniano, lleva el nombre denominación "De iure per- sonarían" (Del ius de las personas). El Título de las Instituciones se inicia con la división (atribuida a Gayo) del "ius persommm", según los "homines" sean libres o siervos, clasificación que aparece también en el Digesto (1.5.3). Siguen cinco parágrafos, todos ellos de- dicados a la esclavitud.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 16 — similitud 0.0462
+
+**Detalle de puntaje:** tfidf=0.0362; bonus=0.0100
+
+> Esos eventos internacionales generaron cambios constitucionales; así, en Venezuela a partir de la Constitución de 1999 en su Capítulo IX se contemplan los derechos ambientales en los artículos 127 al 129, como un derecho de la persona susceptible de protección y a su vez un deber compartido con el Estado que imperiosamente debe protegerlo e imponer la conservación del equilibrio ecológico para las generaciones futuras, en el artículo 127 se consagra específicamente: “Es un derecho y un deber de cada generación proteger y mantener el ambiente en beneficio de sí misma y del mundo futuro.Toda persona tiene derecho individual y colectivamente a disfrutar de una vida y de un ambiente seguro...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 54 — similitud 0.0430
+
+**Detalle de puntaje:** tfidf=0.0330; bonus=0.0100
+
+> De acuerdo a Xifra Heras (1957). “Hoy día se está de acuerdo en admitir que las fuentes de la primera Declaración francesa fueron múltiples, y que entre ellas figuran indiscutiblemente las declaraciones americanas, la doctrina de los filósofos franceses (Montesquieu, Rousseau, Voltaire, Condorcet), las teorías iusnaturalistas y las corrientes religiosas tradicionales”. (p.345)
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 23 — similitud 0.0396
+
+**Detalle de puntaje:** tfidf=0.0196; bonus=0.0200
+
+> Son los derechos más recientes y aún están en proceso de codificación tanto nacional como internacional; es decir, prácticamente no se encuen- tran establecidos en las leyes ni en los tratados internacionales o nacionales. Estos derechos surgieron tras una serie de luchas reivin- dicatorias que la sociedad civil sostuvo para buscar condiciones más equitativas a nivel internacional para el desarrollo de las personas y de los pueblos.
+
+**Observación automática:** La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 22 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 02. Evolución histórica del seguro
+
+**Calidad estimada:** baja
+**Mejor similitud:** 0.0733
+**Similitud promedio:** 0.0579
+**Fuentes:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf
+**Ubicaciones:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 12; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 122; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 14; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 141; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 174; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 184; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 192; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 217; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 285; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 295; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 68; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 82; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 127; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 128; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 141; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 142; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 16; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 23; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 34; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 39; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 54; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 64; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 92; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 14; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 48
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 184 — similitud 0.0733
+
+**Detalle de puntaje:** tfidf=0.0533; bonus=0.0200
+
+> 195 El uso de la expresión "Código" es más que controversia!. La piedra fue hallada por una expedición francesa en 1901, en las ruinas de Susa, una an- tigua capital del Elam, hoy territorio del Irán (por eso, hay una copia exacta en el Museo de Teherán). AI parecer, había sido llevada a Susa como trofeo por los elamitas, en el siglo XII.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 64 — similitud 0.0693
+
+**Detalle de puntaje:** tfidf=0.0293; bonus=0.0400
+
+> 1. derecho a la vida; 2. derecho a la integridad personal; 3. la prohibición de esclavitud y servidumbre; 4. la prohibición de la discriminación; 5. el derecho a la personalidad jurídica; 6. el derecho a la nacionalidad; los derechos políticos; el principio de legalidad y no retroactividad; 7. la libertad de conciencia y religión; 8. la protección a la familia y los derechos del niño; 9. así como las garantías judiciales indispensables para la protección de tales derechos, entre los cuales deben considerarse incluidos el amparo y el hábeas corpus. (p.45) 2.3.6.5.- Son progresivos El desarrollo de la protección internacional de los derechos humanos, si bien ha sido paulatino, a medida que ha...
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 192 — similitud 0.0648
+
+**Detalle de puntaje:** tfidf=0.0548; bonus=0.0100
+
+> 203 Y concluye: "Cuando Marduk me envió a gobernar al pueblo y ayudar al país, establecí la protección y la justicia en la tierra y promoví el bienestar de la gente". El comienzo del "epílogo" apunta en el mismo sentido: "Decisiones justas296 que Hammurabi, el rey237 sabio, estableció, dando estabilidad y buen gobierno al país. Hammurabi, el rey perfecto298, soy yo.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 92 — similitud 0.0648
+
+**Detalle de puntaje:** tfidf=0.0548; bonus=0.0100
+
+> Como se observó el derecho internacional ha calado en el constitucionalismo latinoamericano siendo el reconocimiento y protección de los derechos humanos el tópico en el cual se patentiza esta evolución de una manera más palpable; desde los preámbulos donde se exponen preciosos anhelos los cuales son incorporados al articulado constitucional formando hoy lo que se conoce como el bloque de la constitucionalidad,28 pero este bloque, será quebradizo si los esfuerzos realizados en los procesos constituyentes se derogan por la inaplicabilidad de las decisiones de los tribunales o cortes competentes en materia de derechos humanos; una cosa es su establecimiento en las diferentes Cartas Políticas...
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 295 — similitud 0.0645
+
+**Detalle de puntaje:** tfidf=0.0545; bonus=0.0100
+
+> También Constancio, en 339, les retira el derecho de tener esclavos que no sean judíos. Con ello, Ies propina un duro golpe económico, en una época don- de las actividades industriales y agrícolas se basaban en la servidumbre371. Se inician así las restricciones a los medios de subsistencia, que irán acorralando a los israelitas hacia unas pocas profesiones.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 39 — similitud 0.0644
+
+**Detalle de puntaje:** tfidf=0.0444; bonus=0.0200
+
+> Se imponen a todas las normas del Derecho creado por el Soberano y son un límite a su acción. (p.26) Para los positivistas, el hombre, en razón del desarrollo histórico de la sociedad, se encuentra revestido de derechos variables y sometidos al flujo del devenir que impone la convivencia social, consideran que estos derechos son únicamente aquellos reconocidos expresamente en el texto constitucional por el propio Estado, teniendo por ello un carácter constitutivo su consagración.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 142 — similitud 0.0637
+
+**Detalle de puntaje:** tfidf=0.0437; bonus=0.0200
+
+> De hecho, son ya muchos los países, estados y compañías que han puesto manos a la obra. A pesar de ello, las emisiones de la mayor parte de los países individuales son bajas, en relación con el total mundial.El informe Stern se hace eco de la Convención Marco de las Naciones Unidas sobre el Cambio Climático (UNFCCC), el Protocolo de Kioto y de una serie de asociaciones y diálogos informales que proporcionan un marco en apoyo de la cooperación y los cimientos sobre los cuales se pueden levantar nuevas medidas colectivas58.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 141 — similitud 0.0634
+
+**Detalle de puntaje:** tfidf=0.0434; bonus=0.0200
+
+> Es la decisi- va lucha ideológica del siglo XXI, y la misión de nuestra generación", agrega- ba Bush a renglón seguido, colocando el ataque estadounidense a Irak en un nivel de necesidad apocalíptica, que hace acordar a los criterios de la "guerra santa", sobre los que volveremos más adelante. "El mundo está más seguro porque Saddam Hussein no está más en el poder. Y ahora el desafío es ayudar al pueblo iraquí a construir una de- mocracia que cumpla los sueños de los casi doce millones de iraquíes que salieron a votar en elecciones libres el último diciembre", concluía optimista el mandatario estadounidense213.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 217 — similitud 0.0633
+
+**Detalle de puntaje:** tfidf=0.0433; bonus=0.0200
+
+> Advierte: "Los árboles que se doblan conservan sus ramas, pero los que se resis- ten acaban arrancados de raíz" (que es como Creón terminará: sin des- cendientes). Y emplea una imagen característica de un griego (aunque de un ateniense más que de un beocio): " Aquel piloto que, seguro de lo que hace, ajusta la escota de ía vela y no la suelta, realiza el resto del viaje con el navio tumbado" (713-717). El corifeo trata de ponerlos de acuerdo.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 285 — similitud 0.0622
+
+**Detalle de puntaje:** tfidf=0.0522; bonus=0.0100
+
+> Esta visión seria coherente con la de Marcel Simón, uno de los máximos especialistas en este período. Él entiende que los primeros conflictos de as- pecto intercultural no se habrían dado entre cristianos de origen israelita y cristianos de origen pagano, sino entre cristianos de origen israelita palestino, con lengua materna hebrea o aramea, y cristianos de origen israelita pero he- lenístico, llegados de las comunidades de la diáspora y greco-parlantes358. Para los tiempos de Pablo de Tarse, empero, la presencia de conversos de origen gentil parece haber sido lo suficientemente importante como para qué se generasen las controversias acerca de la obligatoriedad de la circuncisión.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 14 — similitud 0.0615
+
+**Detalle de puntaje:** tfidf=0.0415; bonus=0.0200
+
+> Por esto, consideraba las constituciones como el centro del sistema político, ya que debían fundarse sobre el interés común y la justicia para las y los ciudadanos. Así, las declaraciones estadounidense y francesa supusieron un hito fundamental en la historia de los derechos humanos, ya que pro- clamaron por vez primera los derechos del individuo y la libertad, igualdad y fraternidad de todos los seres humanos. Asimismo, afir- maron la separación de los poderes del Estado en Legislativo y Ejecu- tivo; esto es: la primacía del poder del pueblo y de sus representantes, y la subordinación del poder militar al poder civil.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 122 — similitud 0.0612
+
+**Detalle de puntaje:** tfidf=0.0512; bonus=0.0100
+
+> Soy de tal clase social, tengo tales ingresos económicos, mi piel es de tal color, nací en un hogar de determinada religión, poseo esta inclinación sexual, sigo aquellas ideas políticas, padezco un defecto físico.,> Así es que sugiere que la respuesta sólo podría surgir de un ejercicio mental Es decir, un procedimiento ficticio ¿Es ello un disparate? Todas las teorías pactistas, que plantean al contrato social como base de la estructura política y jurídica humana, parten de una ficción, que sus seguido- res saben perfectamente que lo es.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 34 — similitud 0.0598
+
+**Detalle de puntaje:** tfidf=0.0498; bonus=0.0100
+
+> Teorías y doctrinas Capitulo II Definición, evolución y trascendencia de los derechos humanos Se estima conveniente realizar un esbozo acerca de los derechos humanos; su definición, fundamento, historicidad, variables que los caracterizan clasificación; a fin de imbricarlos como prolegómenos hacia la concepción de los derechos humanos desde una perspectiva transgeneracional. “Si bien todos los derechos son «humanos», en cuanto sólo el hombre es sujeto de derecho, la evolución de las ciencias jurídicas ha dado lugar a una categoría de derechos denominada «humanos», también conocidos como derechos del hombre, derechos naturales, derechos innatos, derechos originarios, derechos...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 128 — similitud 0.0591
+
+**Detalle de puntaje:** tfidf=0.0491; bonus=0.0100
+
+> 4.- Reconocieron la realidad de que la sociedad global tiene los medios y está dotada de los recursos para recoger los retos de la erradicación de la pobreza y el logro del desarrollo sostenible a que hace frente toda la humanidad. Unidos se tomarán las medidas adicionales para velar por que estos recursos disponibles sean aprovechados en beneficio de toda la humanidad.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 14 — similitud 0.0586
+
+**Detalle de puntaje:** tfidf=0.0486; bonus=0.0100
+
+> 22 FLÁVIA PÍOVESAN Luego el capítulo VI transita hacia el análisis del poder legítimo y sus límites. La travesía histórica tiene en el capítulo VII: el estudio de la Grecia Antigua, en el capítulo VIII el estudio de Roma antigua y en el capítulo IX el estudio de la Edad Media.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 127 — similitud 0.0546
+
+**Detalle de puntaje:** tfidf=0.0346; bonus=0.0200
+
+> Pero los beneficios y costos de la globalización no se distribuyen de forma pareja y a los países en desarrollo les resulta especialmente difícil responder a este reto. 5.- Se corre el riesgo de que estas disparidades mundiales se vuelvan permanentes y, si no se actúa de manera que se cambie radicalmente la vida de los pobres del mundo pueden perder la fe en sus representantes y en los sistemas democráticos con los cuales se está comprometido, y empezar a sentir que sus representantes vienen a ser sólo metal que resuena o címbalo que retiñe.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 174 — similitud 0.0537
+
+**Detalle de puntaje:** tfidf=0.0337; bonus=0.0200
+
+> Los dos aspectos de este episodio que resultan relevantes para nuestro es- tudio son: a) Los alegatos de Humbaba en defensa de su vida, que resultan, en definitiva, las primeras exposiciones en pro de un prisionero de guerra que tenemos; b) La posición de los dioses frente a la muerte de Humbaba, desar- mado y sometido a la voluntad de sus captores.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 141 — similitud 0.0498
+
+**Detalle de puntaje:** tfidf=0.0298; bonus=0.0200
+
+> En términos económicos, los gases invernadero son una externalidad: quienes producen emisiones de gases invernadero están contribuyendo al cambio climático y, en consecuencia, imponiendo costes al mundo y a las futuras generaciones, sin que ellos tengan que hacer frente plenamente a las consecuencias de sus acciones. La asignación de un precio apropiado al carbono (explícitamente), mediante impuestos al comercio, o (implícitamente) mediante reglamentación significa que la gente tiene que hacer frente al entero coste social de sus acciones. b.- El segundo elemento de la política sobre el cambio climático es la política tecnológica.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 23 — similitud 0.0496
+
+**Detalle de puntaje:** tfidf=0.0396; bonus=0.0100
+
+> Luis Manuel Marcano Salazar Por consiguiente, a pesar de las leyes de naturaleza (que cada uno observa cuando tiene la voluntad de observarlas, cuando puede hacerlo de modo seguro) si no se ha instituido o no es suficientemente grande para nuestra seguridad, cada uno se fiará tan sólo, y podrá hacerlo legalmente, sobre su propia fuerza y maña, para protegerse contra los demás hombres.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 12 — similitud 0.0494
+
+**Detalle de puntaje:** tfidf=0.0394; bonus=0.0100
+
+> 20 FLÁVIA PIOVESAN Já o capítulo VI transita para a análise do poder legítimo e seus limites. A travessia histórica tem no capítulo VII o estudó da Grécia Antiga, no capítulo IX o estudo de Roma antiga e no capítulo IX o estudo da Idade Media. Por ñm, o capítulo X trata do surgimento do antissemítismo e da gradativa composigáo de um quadro de graves violagoes a direitos pautado na intolerancia.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 68 — similitud 0.0490
+
+**Detalle de puntaje:** tfidf=0.0390; bonus=0.0100
+
+> m Esta evolución del franquismo, así com o la del salazarísmo en Portugal ponen en evidencia la posibilidad de ese tipo de regímenes de coexistir y aliarse con el capitalismo, cosa que se vislumbra- ra ya desde un comienzo con el apoyo estadounidense al advenimiento de Mussolini y de Hrtfer, y plantean hasta qué punto el bombardeo de Pearl Harbor, al obligar a los Estados Unidos a entrar en una guerra que, hasta entonces, venía cuidadosamente evitando, cambió eí destino del mundo.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 48 — similitud 0.0488
+
+**Detalle de puntaje:** tfidf=0.0288; bonus=0.0200
+
+> Antecedentes organizativos Algunas iniciativas de naturaleza similar durante el siglo xx se muestran en el siguiente cuadro: Cuadro 3. Primeras instituciones defensoras de derechos Año Institución 1975 Procuraduría Federal del Consumidor 1979 Dirección para la Defensa de los Derechos Humanos de Nuevo León 1983 Procuraduría de Vecinos de la Ciudad de Colima 1985 Defensoría de los Derechos Universitarios de la Universidad Nacional Autónoma de México 1986 Procuraduría para la Defensa del Indígena del Estado de Oaxaca
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 82 — similitud 0.0487
+
+**Detalle de puntaje:** tfidf=0.0287; bonus=0.0200
+
+> Esto no implicaría ninguna novedad. Posibilidades futuras, por lo tanto hi- potéticas , eventuales, son objeto de construcciones jurídicas desde tiempo atrás. Por ejemplo, en materia civil, las "indemnizaciones de chance".
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 16 — similitud 0.0458
+
+**Detalle de puntaje:** tfidf=0.0358; bonus=0.0100
+
+> Esos eventos internacionales generaron cambios constitucionales; así, en Venezuela a partir de la Constitución de 1999 en su Capítulo IX se contemplan los derechos ambientales en los artículos 127 al 129, como un derecho de la persona susceptible de protección y a su vez un deber compartido con el Estado que imperiosamente debe protegerlo e imponer la conservación del equilibrio ecológico para las generaciones futuras, en el artículo 127 se consagra específicamente: “Es un derecho y un deber de cada generación proteger y mantener el ambiente en beneficio de sí misma y del mundo futuro.Toda persona tiene derecho individual y colectivamente a disfrutar de una vida y de un ambiente seguro...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 54 — similitud 0.0436
+
+**Detalle de puntaje:** tfidf=0.0336; bonus=0.0100
+
+> En su obra supra citada Jellinek argumenta contundentemente, realizando una apología encomiable en cuanto al valor trascendental de esta declaración, estima que: “La influencia de la Revolución americana en la francesa es notoria; ambos sucesos son ciertamente, momentos de una misma evolución política” (p.8), defendiendo sus principios contra los detractores del momento, de esta manera: 53
+
+**Observación automática:** La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 25 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 03. Seguridad social
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.3263
+**Similitud promedio:** 0.1451
+**Fuentes:** Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf
+**Ubicaciones:** Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 113; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 118; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 29; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 41; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 58; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 66; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 75; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 82; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 83; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 90; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 15; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 27; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 28; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 29; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 47; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 53; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 56; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 61
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 28 — similitud 0.3263
+
+**Detalle de puntaje:** tfidf=0.2863; bonus=0.0400
+
+> 27 Defensa, protección y promoción de los derechos humanos Marco legal internacional: De esta manera, la onu ha sido fuente de diversos instrumentos de defensa y protección de los derechos humanos; sin embargo, por servir de base a la codificación del derecho internacional son trascendentales el Pacto Internacional de Derechos Civiles y Políti- cos (pidcp) y sus dos protocolos facultativos (el Protocolo Faculta- tivo del Pacto Internacional de Derechos Civiles y Políticos, del 16 diciembre de 1966 —que faculta al Comité de Derechos Humanos para recibir y considerar comunicaciones de individuos que aleguen ser víctimas de violaciones de cualquiera de los derechos enunciados en el Pacto—, y...
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 53 — similitud 0.2842
+
+**Detalle de puntaje:** tfidf=0.2442; bonus=0.0400
+
+> Este instrumento hace constar los preceptos de igualdad a través de los valores, conceptos y contenidos. A raíz de la proclamación de la declaración se han ido aprobando diversos instrumentos complemen- tarios para la defensa y promoción de los derechos humanos, como son: el Pacto Internacional de los Derechos Civiles y Políticos, el Pacto Internacional de los Derechos Económicos, Sociales y Culturales y la Convención Americana sobre Derechos Humanos, entre otros.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 41 — similitud 0.2808
+
+**Detalle de puntaje:** tfidf=0.2408; bonus=0.0400
+
+> Artículo 1: Todos los seres humanos nacen libres e iguales en dignidad y derechos y, dotados, como están de razón y conciencia, deben comportarse fraternamente los unos con los otros. En la misma dirección posteriormente, el párrafo primero (común) de los Preámbulos del Pacto Internacional de Derechos Económicos, Sociales y Culturales y del Pacto Internacional de Derechos Civiles y Políticos, expresa: (…) conforme a los principios enunciados en la Carta de las Naciones Unidas, la libertad, la justicia y la paz en el mundo tienen por base el reconocimiento de la dignidad inherente a todos los miembros de la familia humana y de sus derechos iguales e inalienables”.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 66 — similitud 0.2282
+
+**Detalle de puntaje:** tfidf=0.1882; bonus=0.0400
+
+> Derechos humanos. Teorías y doctrinas en 1951 elaborar dos instrumentos que tipificaran los derechos civiles y políticos en un pacto y los derechos económicos, sociales y culturales en otro pacto. Existiendo, para aquel entonces una fuerte corriente doctrinaria que estimaba la reivindicación de los derechos civiles y políticos y su aplicación debía ser de forma inmediata, a diferencia de los derechos económicos, sociales y culturales debían ser implementados de manera progresiva; es decir se entró en una superada distinción de considerar que los derechos constitucionales son unos operativos y otros programáticos.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 82 — similitud 0.1997
+
+**Detalle de puntaje:** tfidf=0.1197; bonus=0.0800
+
+> forma enmendada por el Protocolo N º 11 • Protocolo N º 5 de la Convención para la Protección de los Derechos Humanos y las Libertades Fundamentales, se modifican los artículos 22 y 40 de la Convención • Convenio Europeo para la adopción de niños • Convenio europeo sobre la repatriación de los menores • Convenio europeo sobre inmunidad de los Estados • Protocolo adicional al Convenio Europeo para la inmunidad de los Estado • Convenio Europeo para la Seguridad Social • Acuerdo Complementario para la Aplicación de la Convención Europea para la Seguridad Social • Convenio Europeo sobre la no Aplicabilidad de las Limitaciones legales a los crímenes de lesa humanidad y crímenes de guerra •...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 83 — similitud 0.1694
+
+**Detalle de puntaje:** tfidf=0.0894; bonus=0.0800
+
+> a la Prevención de la Tortura y los Tratos Inhumanos o Degradantes • Protocolo del Convenio Europeo de Seguridad Social • Convenio Marco para la Protección de las Minorías Nacionales • Convenio Europeo sobre el Ejercicio de los Derechos del Niño • Sexto Protocolo del Acuerdo General sobre Privilegios e Inmunidades del Consejo de Europa • Carta Social Europea • Convenio Europeo sobre la Nacionalidad • Protocolo adicional al Convenio sobre traslado de personas condenadas • Protocolo Adicional a la Convención para la Protección de los Derechos Humanos y la Dignidad del Ser Humano con respecto a las aplicaciones de la Biología y la Medicina, sobre la prohibición de la clonación de seres humanos...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 90 — similitud 0.1614
+
+**Detalle de puntaje:** tfidf=0.1514; bonus=0.0100
+
+> Asimismo, garantiza la libertad de religión y de conciencia (Artículo 8), de expresión (artículo 9), de asociación (artículo 10), el derecho de la propiedad (artículo 14), al trabajo y a un salario justo (artículo 15), a la salud (artículo 16), y a la educación (artículo 17). No contiene ninguna disposición que autorice la derogación de los derechos humanos en caso de situaciones excepcionales.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 29 — similitud 0.1591
+
+**Detalle de puntaje:** tfidf=0.0791; bonus=0.0800
+
+> 28 Los derechos humanos en México 2) El derecho a la seguridad social, a un nivel de vida adecuado y a los niveles más altos posibles de bienestar físico y mental. 3) El derecho a la educación y el disfrute de los beneficios de la libertad cultural y el progreso científico.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 113 — similitud 0.1469
+
+**Detalle de puntaje:** tfidf=0.1069; bonus=0.0400
+
+> Luis Manuel Marcano Salazar el PIDCP y las Declaraciones (Universal y Americana) guardan silencio sobre la cuestión de saber cuándo hay que reconocer y proteger la vida. Se estima conveniente señalar algunos instrumentos internacionales que consagran el derecho a la vida 4.1.1.- Declaración Universal de Derechos Humanos Artículo 3 Todo individuo tiene derecho a la vida, a la libertad y a la seguridad de su persona. 4.1.2.- Pacto Internacional de Derechos Civiles y Políticos (PIDCP) Artículo 6 1.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 27 — similitud 0.1316
+
+**Detalle de puntaje:** tfidf=0.0916; bonus=0.0400
+
+> La Declaración Universal de los Derechos Humanos es el prin- cipal documento de la onu y la base jurídica del siglo xx en materia de derechos humanos. Fue aprobada y proclamada el 10 de diciem- bre de 1948 por la Asamblea General de las Naciones Unidas y, a través de sus 30 artículos, establece los derechos civiles y políticos, así como los económicos, sociales y culturales de que son titulares todas las personas.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 118 — similitud 0.1159
+
+**Detalle de puntaje:** tfidf=0.0759; bonus=0.0400
+
+> Son estas influencias las que van configurando a la sociedad, y que la ley y el contenido de justicia que debe tener quien la aplica, deben ir tomando en cuenta a fin de garantizar a los ciudadanos una calidad integral de vida, signada por el valor dignidad del ser humano. El Estado constituido hacia ese fin, es un Estado Social de Derecho y de Justicia, cuya meta no es primordialmente el engrandecimiento del Estado, sino el de la sociedad que lo conforma, con quien interactúa en la búsqueda de tal fin. (…) Como derechos cívicos, destinados a proteger la calidad de la vida, a ellos se les pueden resaltar varios caracteres. Uno, el 117
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 58 — similitud 0.0906
+
+**Detalle de puntaje:** tfidf=0.0506; bonus=0.0400
+
+> (…) sobre el trabajo, sobre el derecho de propiedad, sobre el principio de colaboración contrapuesto a la lucha de clases como medio fundamental para el cambio social, sobre el derecho de los débiles, sobre la dignidad de los pobres y sobre las obligaciones de los ricos, sobre el perfeccionamiento de la justicia por la caridad, sobre el derecho a tener asociaciones profesionales”.47 Las anteriores áreas serán tópicos esenciales sobre los cuales se desplegará con ahínco el compromiso de los patrocinadores modernos de los derechos humanos; de ellos se desglosarán otros; no sólo de forma individual o sino además para grupos vulnerables específicos, hasta llegar a los derechos...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 29 — similitud 0.0806
+
+**Detalle de puntaje:** tfidf=0.0506; bonus=0.0300
+
+> Luis Manuel Marcano Salazar K Larenz al diferenciar el sistema de Savigny y Puchta señala: (…) Puchta es el primero en presentar el Derecho como un sistema lógico jerarquizado, que presenta más bien la forma de una pirámide (…) Tal método racional, al que sólo la terminología «organicista» de Puchta nos permite emparentar con el historicismo, se pretende «genealógico» y aspira, en palabras del propio autor, a conocer las proposiciones del Derecho en su conexión sistemática «como recíprocamente condicionadas y derivadas unas de otras» (…) Con ello la Ciencia del Derecho (Jurisprudencia) tomaba carta de naturaleza como autentica fuente del Derecho”.29 Los juristas son los llamados a extraer...
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 56 — similitud 0.0756
+
+**Detalle de puntaje:** tfidf=0.0556; bonus=0.0200
+
+> Asimetrías y déficit La situación de los derechos humanos en nuestro país es alta- mente preocupante. Temas como la seguridad humana, la seguridad pública, la justicia y la convivencia social son todavía asignaturas pendientes. Por lo mismo, la igualdad, accesibilidad, no discrimina- ción y equidad de género se imponen como aspectos esenciales para la consolidación de una verdadera sociedad democrática.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 75 — similitud 0.0690
+
+**Detalle de puntaje:** tfidf=0.0390; bonus=0.0300
+
+> Oficina en Colombia del Alto Comisionado de las Naciones Unidas para los Derechos Humanos Primera edición: Bogotá, abril de 2004. “La expresión “sistema universal” se refiere a los órganos de derechos humanos de la Organización de las Naciones Unidas (en particular la Comisión de Derechos Humanos, la Subcomisión y los Relatores y Grupos de Trabajo que de éstas dependen), a los Comités de expertos establecidos en virtud de ciertos tratados en materia de derechos humanos (Comité de Derechos Humanos, Comité de Derechos Económicos, Sociales y Culturales, Comité para la Eliminación de la Discriminación Racial, Comité para la Eliminación de la Discriminación contra la Mujer, Comité contra la...
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 15 — similitud 0.0673
+
+**Detalle de puntaje:** tfidf=0.0473; bonus=0.0200
+
+> Nuevo orden internacional En la actualidad, 192 países soberanos integran la lista de Estados miembros de las Naciones Unidas, cuya finalidad es mante- ner la paz y seguridad internacionales, así como promover las rela- ciones de amistad entre las naciones y el progreso social. México es parte de esta organización desde el 7 de noviembre de 1945.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 61 — similitud 0.0602
+
+**Detalle de puntaje:** tfidf=0.0402; bonus=0.0200
+
+> Por ello, construir un sistema de seguridad pública eficaz y confiable implica que reconozcamos la complejidad de la tarea de mantener el orden público en congruencia con la vigencia integral de los derechos humanos de cada persona, tanto los civiles y políti- cos, como los económicos, sociales y culturales.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 58 — similitud 0.0593
+
+**Detalle de puntaje:** tfidf=0.0493; bonus=0.0100
+
+> Es el proceso de positivización de las garantías; d) Los derechos reconocidos comienzan a ampliarse, en procura de otros derechos y hacia un estado de bienestar. • En este proceso de expansión a partir de la mitad del siglo XIX, emergen los derechos económicos, sociales y culturales; en este interregnum se hace necesario destacar el valor de las luchas por las reivindicaciones obreras y otras pretensiones de carácter social. León XIII en el año 1891 promulga la primera encíclica social de la Iglesia denominada “Rerum novarum”, como un grito convincente por las precarias condiciones indignas en que se encontraban los obreros; siendo execrables la situación de miseria que debían soportar.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 47 — similitud 0.0512
+
+**Detalle de puntaje:** tfidf=0.0412; bonus=0.0100
+
+> El Conapred es la institución rectora para promover políticas que buscan contribuir al desarrollo cultural y social a través de la inclusión social, garantizando el derecho a la igualdad, que es el primero de los derechos fundamentales en la Constitución federal. Sin duda, las movilizaciones de las osc lograron un avance en materia de derechos humanos gracias al impacto que tuvieron en la
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 6 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 04. Seguro
+
+**Calidad estimada:** baja
+**Mejor similitud:** 0.1320
+**Similitud promedio:** 0.0737
+**Fuentes:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf
+**Ubicaciones:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 122; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 141; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 148; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 151; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 198; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 211; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 217; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 261; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 60; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 103; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 111; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 112; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 16; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 17; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 20; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 23; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 29; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 53; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 54; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 56; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 71; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 87; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 47
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 23 — similitud 0.1320
+
+**Detalle de puntaje:** tfidf=0.0620; bonus=0.0700
+
+> Luis Manuel Marcano Salazar Por consiguiente, a pesar de las leyes de naturaleza (que cada uno observa cuando tiene la voluntad de observarlas, cuando puede hacerlo de modo seguro) si no se ha instituido o no es suficientemente grande para nuestra seguridad, cada uno se fiará tan sólo, y podrá hacerlo legalmente, sobre su propia fuerza y maña, para protegerse contra los demás hombres.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 16 — similitud 0.1262
+
+**Detalle de puntaje:** tfidf=0.0562; bonus=0.0700
+
+> Esos eventos internacionales generaron cambios constitucionales; así, en Venezuela a partir de la Constitución de 1999 en su Capítulo IX se contemplan los derechos ambientales en los artículos 127 al 129, como un derecho de la persona susceptible de protección y a su vez un deber compartido con el Estado que imperiosamente debe protegerlo e imponer la conservación del equilibrio ecológico para las generaciones futuras, en el artículo 127 se consagra específicamente: “Es un derecho y un deber de cada generación proteger y mantener el ambiente en beneficio de sí misma y del mundo futuro.Toda persona tiene derecho individual y colectivamente a disfrutar de una vida y de un ambiente seguro...
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 141 — similitud 0.1217
+
+**Detalle de puntaje:** tfidf=0.0517; bonus=0.0700
+
+> Es la decisi- va lucha ideológica del siglo XXI, y la misión de nuestra generación", agrega- ba Bush a renglón seguido, colocando el ataque estadounidense a Irak en un nivel de necesidad apocalíptica, que hace acordar a los criterios de la "guerra santa", sobre los que volveremos más adelante. "El mundo está más seguro porque Saddam Hussein no está más en el poder. Y ahora el desafío es ayudar al pueblo iraquí a construir una de- mocracia que cumpla los sueños de los casi doce millones de iraquíes que salieron a votar en elecciones libres el último diciembre", concluía optimista el mandatario estadounidense213.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 217 — similitud 0.1216
+
+**Detalle de puntaje:** tfidf=0.0516; bonus=0.0700
+
+> Advierte: "Los árboles que se doblan conservan sus ramas, pero los que se resis- ten acaban arrancados de raíz" (que es como Creón terminará: sin des- cendientes). Y emplea una imagen característica de un griego (aunque de un ateniense más que de un beocio): " Aquel piloto que, seguro de lo que hace, ajusta la escota de ía vela y no la suelta, realiza el resto del viaje con el navio tumbado" (713-717). El corifeo trata de ponerlos de acuerdo.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 151 — similitud 0.1189
+
+**Detalle de puntaje:** tfidf=0.0489; bonus=0.0700
+
+> 162 RICARDO D. RABINOVICH-BERKMAN tencialismo, que "la mayor parte de los mortales se queja de la malignidad de la Naturaleza, por habernos engendrado para un tiempo tan breve y porque este espacio de tiempo que se nos dio se escurre tan velozmente"22* No sabemos cuándo llegará la muerte, pero es seguro que ella va a venir, Borges, de nuevo, escribe: "Tras el cristal ya gris la noche cesa y del alto de libros que una trunca sombra dilata por la vaga mesa, alguno habrá que no leeremos nunca"225. La muerte, en efecto pone limites (tal el título de este maravilloso poema) a nuestro tiempo.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 56 — similitud 0.0844
+
+**Detalle de puntaje:** tfidf=0.0544; bonus=0.0300
+
+> Sin embargo, también patrocina la necesidad de un pacto entre las individualidades para formar un gobierno (…) las voluntades individuales siguen siendo el origen y forman los elementos esenciales; pero, consideradas separadamente, su poder sería nulo, puesto que sólo reside en el conjunto44.Tal es el origen de un gobierno, ejercido por procuración; coincide con Locke, en legar una porción de poder «a algunos de ellos» el pueblo es numeroso y es imposible consultarlo en su totalidad por toda la nación; esta delegación no implica un desprendimiento total del poder soberano. Expone su celebre tesis acerca del poder constituyente originario de esta manera:
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 29 — similitud 0.0840
+
+**Detalle de puntaje:** tfidf=0.0540; bonus=0.0300
+
+> 15). De una vez manifiesta tajantemente su objetivo, no se detendrá a divagar y concibe al derecho libre de elementos metajurídicos; el hombre está escindido entre el mundo del “ser”y del “deber ser”; el hombre sólo es capaz de conocer lo dado, escapándosele toda metafísica; pretende (…)“brindar una definición de la norma jurídica totalmente independiente de la noción de norma moral (…) al afirmar la autonomía del derecho respecto de la moral.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 198 — similitud 0.0803
+
+**Detalle de puntaje:** tfidf=0.0503; bonus=0.0300
+
+> Como ésta, también del Éxodo, que se relaciona con disposiciones de la piedra de Ha- mmurabi: "El que hiera a un hombre de modo que en efecto muera, ha de ser muerto sin falta" (21.12). Otras, buscan resguardar elementos esenciales del ser humano en forma bastante minuciosa: "Y en caso de que unos hombres se pongan a reñir y uno efectivamente hiera a su prójimo con una piedra o un azadón y este no mue- ra, pero tenga que quedarse en cama; sí se levanta y va andando fuera sobre algún sostén suyo, entonces el que lo haya herido tiene que estar libre de cas- tigo; dará compensación solo por el tiempo que se haya perdido del trabajo de aquel hasta que lo tenga completamente sanado" (21,18-19).
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 47 — similitud 0.0797
+
+**Detalle de puntaje:** tfidf=0.0697; bonus=0.0100
+
+> Sin embargo, la transparencia electoral, que facilita la elección demo- crática de los gobernantes, no garantiza de facto la rendición de cuen- tas. El paradigma ético de la democracia exige conductas y actitudes ciudadanas continuas que salvaguarden el ejercicio plural del poder político de los resabios de carácter autoritario, el uso regular y sis- temático de los mecanismos de toma de decisiones que considera el Estado democrático de derecho, y el acceso a la información pública que transparenta la gestión pública y permite una rendición de cuen- tas a satisfacción.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 111 — similitud 0.0749
+
+**Detalle de puntaje:** tfidf=0.0449; bonus=0.0300
+
+> Dichos elementos se encuentran sujetos a transformaciones permanentes, tanto de origen natural como antrópico, los cuales pueden determinar efectos positivos o negativos sobre las generaciones futuras” (p. 136); ha generado su consagración en múltiples instrumentos jurídicos que protegen los derechos humanos y Constituciones; correspondiendo a continuación establecer la relación existente entre el derecho a la vida, el derecho a un ambiente sano para poder concebir la existencia de los derechos transgeneracionales.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 60 — similitud 0.0717
+
+**Detalle de puntaje:** tfidf=0.0517; bonus=0.0200
+
+> A veces se estudian algunos de ellos en forma directa. En Derecho Civil eso es muy notable, sobre todo, en la "parte general". Pero también en Derecho Penal, Constitucional, Administrativo, Procesal, Internacional Público, en Filosofía del Derecho, Historia del De- recho... y podríamos seguir.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 122 — similitud 0.0700
+
+**Detalle de puntaje:** tfidf=0.0500; bonus=0.0200
+
+> Es decir, nadie piensa que realmente haya habido un día en qué las per- sonas de cada grupo, cansadas de andar por allí como salvajes, felices pero ignorantes, al estilo de Rousseau, o prepotentes y nerviosas, a la manera de Hobbes, se reunieron en un sitio y dijeron: "jCaramba, vamos de una buena vez a ponernos todos de acuerdo y hacer un contrato social!" Y uno alzó la mano, y dijo: "¡Oiga, explique!" Y el primero respondió: "Mire, vamos a dejar parte de nuestra libertad, porque de ese modo podremos construir una cosa que la vamos a llamar sociedad, y va a ser algo bu enísimo". Y uña mu- jer: "¿Y a mí qué me va con eso?" Todos miran.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 211 — similitud 0.0700
+
+**Detalle de puntaje:** tfidf=0.0000; bonus=0.0700
+
+> Así que, para horror de Creón, Me- neceo, su primogénito, se suicida arrojándose desde una de las torres. El sacrificio de Meneceo hace a los tebanos sentirse seguros, así que salen a combatir. Ante los muros, Eteocles y Polinices se enfrentan en combate singular.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 103 — similitud 0.0693
+
+**Detalle de puntaje:** tfidf=0.0593; bonus=0.0100
+
+> En el mismo la Comisión explana enfáticamente como debe ser interpretado el artículo 30 de la Convención Americana sobre Derechos Humanos, criterio que esta a su vez compaginado con el discernimiento de la Corte Interamericana de Derechos Humanos, es decir ambos organismos integrantes del sistema de protección de los derechos humanos en Latinoamérica, no tienen divergencias y quien alegue mejor razonamiento a este precedente debe desmontar todo un sistema que poco a poco ha ido sentando unas bases sólidas en reconocimiento y defensa de los derechos humanos; por lo que: (…) Al respecto, la CIDH reitera que las únicas restricciones admisibles para regular el ejercicio y goce de los derechos...
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 122 — similitud 0.0680
+
+**Detalle de puntaje:** tfidf=0.0480; bonus=0.0200
+
+> Soy de tal clase social, tengo tales ingresos económicos, mi piel es de tal color, nací en un hogar de determinada religión, poseo esta inclinación sexual, sigo aquellas ideas políticas, padezco un defecto físico.,> Así es que sugiere que la respuesta sólo podría surgir de un ejercicio mental Es decir, un procedimiento ficticio ¿Es ello un disparate? Todas las teorías pactistas, que plantean al contrato social como base de la estructura política y jurídica humana, parten de una ficción, que sus seguido- res saben perfectamente que lo es.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 103 — similitud 0.0678
+
+**Detalle de puntaje:** tfidf=0.0578; bonus=0.0100
+
+> Todo tratado en vigor obliga a las partes y debe ser cumplido por ellas de buena fe. Artículo 27. “El derecho interno y la observancia de los tratados”.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 54 — similitud 0.0623
+
+**Detalle de puntaje:** tfidf=0.0523; bonus=0.0100
+
+> • La doctrina de Jellinek, para quien la Declaración francesa emuló las declaraciones norteamericanas que a su vez surgieron ideológicamente de las concepciones puritanas mayormente inspiradas por inmigrantes protestantes. • La doctrina francesa, a partir de las tesis de Boutmy polemizando con Jellinek, que desecha tanto la paternidad americana como germánica, insistiendo en su derivación por el influjo de la literatura europea, y especialmente del pensamiento ilustrado francés del siglo XVIII. • La doctrina ecléctica, consistente en afirmar que son compatibles tanto el criterio de Jellinek como la tesis oposicionista de Boutmy.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 261 — similitud 0.0556
+
+**Detalle de puntaje:** tfidf=0.0356; bonus=0.0200
+
+> Estas ideas se notan en la doctrina del período "clásico" (siglo II y primera mitad del III), recopilada después en el Digesto. Vimos cómo Gayo recorda- ba: "la principal división jurídica de las personas es aquella según la cual los hombres o son libres o son siervos" (1.5.3).
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 20 — similitud 0.0514
+
+**Detalle de puntaje:** tfidf=0.0314; bonus=0.0200
+
+> Teorías y doctrinas religión, aparte de su función redentora, pasa a ser considerada ante todo en su función civil. El humanismo vino a sustituir la visión del mundo vista bajo el prisma dogmático religioso; se enfoca una nueva perspectiva donde se refleja la racionalidad, en la que prima la idea del hombre como ser humano, verdadero e integral. Así, tanto la religión como la tolerancia religiosa son instrumentos válidos para asegurar el ideal de la paz civil.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 148 — similitud 0.0495
+
+**Detalle de puntaje:** tfidf=0.0295; bonus=0.0200
+
+> Por comenzar, chocaron estas predicaciones con mi formación previa, muy crítica y muy laica. Pero ade- más, me resultaron completamente insuficientes los fundamentos que casi todos mis profesores y la gran mayoría de las obras que leía entonces, esgri- mían para defender esas prerrogativas.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 17 — similitud 0.0493
+
+**Detalle de puntaje:** tfidf=0.0293; bonus=0.0200
+
+> Luis Manuel Marcano Salazar derechos humanos, han venido desarrollando una base jurisprudencial que si bien en principio se avocaba a proteger los derechos civiles y políticos, los derechos sociales emergieron con fuerza además de los derechos de los pueblos indígenas, su alcance sin duda va mucho más allá; proteger una porción de la tierra y a sus habitantes con arraigo y fundamento en un derecho ancestral, conlleva también a la protección del derecho a la vida transgeneracional, puesta en peligro por la devastación ambiental.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 112 — similitud 0.0491
+
+**Detalle de puntaje:** tfidf=0.0191; bonus=0.0300
+
+> Teorías y doctrinas que recae intrínsecamente en el Estado. Este concepto « tradicional » ha evolucionado, pues la tendencia actual es la ser una obligación positiva, primando la dignidad humana como parte del derecho a la vida. El derecho a la vida indubitablemente es el derecho matriz de los otros derechos de la persona, aunque de acuerdo a la Declaración de Viena, adoptada por la segunda Conferencia Mundial sobre Derechos Humanos, celebrada en Viena en 1993: “Todos los derechos humanos son universales, indivisibles e interdependientes y están relacionados entre sí.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 71 — similitud 0.0490
+
+**Detalle de puntaje:** tfidf=0.0290; bonus=0.0200
+
+> La tradición de la ley de la naturaleza una vez más se convirtió en un elemento vital en la afirmación de la dignidad de la persona y en el deseo de encontrar una base en la ley más duradera que la voluntad del soberano pudiere ejecutar. Una de las manifestaciones más características de la Alemania nacional- socialista y la doctrina italiana fascista era negar los derechos; de donde el derecho natural se imbricó en las bases racionalistas, por lo que se puede explicar el fervor y la intensidad de la reaparición de la idea con fundamento en el derecho natural.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 53 — similitud 0.0487
+
+**Detalle de puntaje:** tfidf=0.0387; bonus=0.0100
+
+> Luis Manuel Marcano Salazar • La filosofía jurídica de Locke, fundadora de la doctrina liberal fue recogida en los textos de Derecho positivo; la libertad religiosa en un principio fue la bandera a izar, en «búsqueda de la felicidad» el iusnaturalismo fue útil en la mezcla del racionalismo y pragmatismo. • La separación de los poderes públicos en el ejercicio de sus funciones, encuentra en Norteamérica sus más fieros defensores quienes transfieren esta doctrina a la Francia revolucionaria, quedando establecido para la posteridad el lacónico pero contundente artículo 16 de la Declaración Francesa. “Toda sociedad en la que la garantía de los derechos no esté asegurada, ni determinada la...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 53 — similitud 0.0457
+
+**Detalle de puntaje:** tfidf=0.0257; bonus=0.0200
+
+> En la magnánima obra de: Jay, Hamilton y Madison“El Federalista”, más que ninguna otra, se visualizan los ideales de los padres fundadores; al exponer la separación de los poderes, como uno de los fundamentos de la democracia representativa, la describen así: “La distribución ordenada del poder en distintos departamentos; la introducción de frenos y contrapesos legislativos; la institución de tribunales integrados por jueces que conservaran su cargo mientras observen buena conducta; la representación del pueblo en la legislatura por medio de diputados de su elección.”38 La inmanencia de la Constitución como norma suprema se ha convertido en un legado del constitucionalismo Norteamericano...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 53 — similitud 0.0456
+
+**Detalle de puntaje:** tfidf=0.0356; bonus=0.0100
+
+> o un alto sentido de los principios y valores constitucionales, originando una forma de gobierno; (…) bajo el influjo de América, se han erigido, en reglas de derecho, los principios de libertad, y lo han hecho para toda Europa.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 87 — similitud 0.0446
+
+**Detalle de puntaje:** tfidf=0.0346; bonus=0.0100
+
+> Las decisiones de la comisión en casos contra Argentina, Uruguay, El Salvador, Chile y Perú abrieron una puerta que ha permitido sentar en el banquillo de los acusados a los responsables de los golpes de Estado y del asesinato y desaparición de miles de personas. En el segundo caso, la derogación de las leyes que sancionan la crítica a funcionarios públicos -desacato- conjuntamente con la sanción de leyes de acceso a la información están consolidando la democracia, al permitir la crítica de las autoridades sin riesgo de represalias y la transparencia del accionar de los gobernantes.
+
+**Observación automática:** La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 19 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 05. Seguro privado
+
+**Calidad estimada:** baja
+**Mejor similitud:** 0.0970
+**Similitud promedio:** 0.0586
+**Fuentes:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf
+**Ubicaciones:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 125; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 141; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 151; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 198; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 211; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 217; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 247; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 113; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 128; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 135; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 148; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 16; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 23; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 29; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 56; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 82; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 29; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 47; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 52; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 56; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 57; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 61; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 69
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 56 — similitud 0.0970
+
+**Detalle de puntaje:** tfidf=0.0570; bonus=0.0400
+
+> Asimetrías y déficit La situación de los derechos humanos en nuestro país es alta- mente preocupante. Temas como la seguridad humana, la seguridad pública, la justicia y la convivencia social son todavía asignaturas pendientes. Por lo mismo, la igualdad, accesibilidad, no discrimina- ción y equidad de género se imponen como aspectos esenciales para la consolidación de una verdadera sociedad democrática.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 82 — similitud 0.0806
+
+**Detalle de puntaje:** tfidf=0.0606; bonus=0.0200
+
+> forma enmendada por el Protocolo N º 11 • Protocolo N º 5 de la Convención para la Protección de los Derechos Humanos y las Libertades Fundamentales, se modifican los artículos 22 y 40 de la Convención • Convenio Europeo para la adopción de niños • Convenio europeo sobre la repatriación de los menores • Convenio europeo sobre inmunidad de los Estados • Protocolo adicional al Convenio Europeo para la inmunidad de los Estado • Convenio Europeo para la Seguridad Social • Acuerdo Complementario para la Aplicación de la Convención Europea para la Seguridad Social • Convenio Europeo sobre la no Aplicabilidad de las Limitaciones legales a los crímenes de lesa humanidad y crímenes de guerra •...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 128 — similitud 0.0782
+
+**Detalle de puntaje:** tfidf=0.0682; bonus=0.0100
+
+> Como colaboradores sociales, seguiremos bregando por la formación de asociaciones estables con todos los grandes grupos, respetando el importante papel independiente que desempeña cada uno de ellos. 9.- Conviniendo que en la realización de sus actividades legítimas el sector privado, incluidas tanto las grandes empresas como las pequeñas, tiene el deber de contribuir a la evolución de comunidades y sociedades equitativas y sostenibles. 10.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 61 — similitud 0.0744
+
+**Detalle de puntaje:** tfidf=0.0444; bonus=0.0300
+
+> Por ello, construir un sistema de seguridad pública eficaz y confiable implica que reconozcamos la complejidad de la tarea de mantener el orden público en congruencia con la vigencia integral de los derechos humanos de cada persona, tanto los civiles y políti- cos, como los económicos, sociales y culturales.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 29 — similitud 0.0743
+
+**Detalle de puntaje:** tfidf=0.0443; bonus=0.0300
+
+> 28 Los derechos humanos en México 2) El derecho a la seguridad social, a un nivel de vida adecuado y a los niveles más altos posibles de bienestar físico y mental. 3) El derecho a la educación y el disfrute de los beneficios de la libertad cultural y el progreso científico.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 52 — similitud 0.0732
+
+**Detalle de puntaje:** tfidf=0.0632; bonus=0.0100
+
+> Esto habrá de ser un instrumento valioso que señale a las auto- ridades lo que está detrás de cada uno de los expedientes de queja; es decir: las personas. Cabe señalar que el modelo de queja es enmarcado dentro de un Modelo Institucional, cuyo objetivo es la construcción de una ins- titución que defienda los derechos humanos de las y los ciudadanos (Defensoría del Pueblo). Modelo de la CDHDF De este modo, el Modelo se basa en los siguientes principios: Autonomía.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 113 — similitud 0.0716
+
+**Detalle de puntaje:** tfidf=0.0616; bonus=0.0100
+
+> Este derecho estará protegido por la ley. Nadie podrá ser privado de la vida arbitrariamente. 4.1.3.- Declaración Americana de los Derechos y Deberes del Hombre Artículo I.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 61 — similitud 0.0691
+
+**Detalle de puntaje:** tfidf=0.0391; bonus=0.0300
+
+> 6.6 Seguridad pública Uno de los grandes retos a vencer en nuestro país es el relacionado con la inseguridad pública, la cual tiene sus orígenes en diversos pro- blemas estructurales de la sociedad. Atender este problema no es una tarea sencilla.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 56 — similitud 0.0646
+
+**Detalle de puntaje:** tfidf=0.0446; bonus=0.0200
+
+> Sin embargo, también patrocina la necesidad de un pacto entre las individualidades para formar un gobierno (…) las voluntades individuales siguen siendo el origen y forman los elementos esenciales; pero, consideradas separadamente, su poder sería nulo, puesto que sólo reside en el conjunto44.Tal es el origen de un gobierno, ejercido por procuración; coincide con Locke, en legar una porción de poder «a algunos de ellos» el pueblo es numeroso y es imposible consultarlo en su totalidad por toda la nación; esta delegación no implica un desprendimiento total del poder soberano. Expone su celebre tesis acerca del poder constituyente originario de esta manera:
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 198 — similitud 0.0593
+
+**Detalle de puntaje:** tfidf=0.0393; bonus=0.0200
+
+> Como ésta, también del Éxodo, que se relaciona con disposiciones de la piedra de Ha- mmurabi: "El que hiera a un hombre de modo que en efecto muera, ha de ser muerto sin falta" (21.12). Otras, buscan resguardar elementos esenciales del ser humano en forma bastante minuciosa: "Y en caso de que unos hombres se pongan a reñir y uno efectivamente hiera a su prójimo con una piedra o un azadón y este no mue- ra, pero tenga que quedarse en cama; sí se levanta y va andando fuera sobre algún sostén suyo, entonces el que lo haya herido tiene que estar libre de cas- tigo; dará compensación solo por el tiempo que se haya perdido del trabajo de aquel hasta que lo tenga completamente sanado" (21,18-19).
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 57 — similitud 0.0585
+
+**Detalle de puntaje:** tfidf=0.0285; bonus=0.0300
+
+> 56 Los derechos humanos en México Se está muy lejos de la igualdad total si se considera que 96.2 por ciento de los presidentes municipales son hombres; que en 2007 la relación entre diputados y diputadas locales era de 3 a 1; que en 2008 la relación de jueces y magistrados era de 2 por cada jueza o magis- trado y que, además, los funcionarios y directivos del sector público, privado y social son en su mayoría hombres (72.5 por ciento).
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 69 — similitud 0.0576
+
+**Detalle de puntaje:** tfidf=0.0476; bonus=0.0100
+
+> 68 Los derechos humanos en México Modelo integral de defensa. Modelo de defensa que coloca en el cen- tro a las personas al asumirlas como ciudadanas y ciudadanos que ejercen sus derechos.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 23 — similitud 0.0560
+
+**Detalle de puntaje:** tfidf=0.0460; bonus=0.0100
+
+> Luis Manuel Marcano Salazar Por consiguiente, a pesar de las leyes de naturaleza (que cada uno observa cuando tiene la voluntad de observarlas, cuando puede hacerlo de modo seguro) si no se ha instituido o no es suficientemente grande para nuestra seguridad, cada uno se fiará tan sólo, y podrá hacerlo legalmente, sobre su propia fuerza y maña, para protegerse contra los demás hombres.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 16 — similitud 0.0517
+
+**Detalle de puntaje:** tfidf=0.0417; bonus=0.0100
+
+> Esos eventos internacionales generaron cambios constitucionales; así, en Venezuela a partir de la Constitución de 1999 en su Capítulo IX se contemplan los derechos ambientales en los artículos 127 al 129, como un derecho de la persona susceptible de protección y a su vez un deber compartido con el Estado que imperiosamente debe protegerlo e imponer la conservación del equilibrio ecológico para las generaciones futuras, en el artículo 127 se consagra específicamente: “Es un derecho y un deber de cada generación proteger y mantener el ambiente en beneficio de sí misma y del mundo futuro.Toda persona tiene derecho individual y colectivamente a disfrutar de una vida y de un ambiente seguro...
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 141 — similitud 0.0484
+
+**Detalle de puntaje:** tfidf=0.0384; bonus=0.0100
+
+> Es la decisi- va lucha ideológica del siglo XXI, y la misión de nuestra generación", agrega- ba Bush a renglón seguido, colocando el ataque estadounidense a Irak en un nivel de necesidad apocalíptica, que hace acordar a los criterios de la "guerra santa", sobre los que volveremos más adelante. "El mundo está más seguro porque Saddam Hussein no está más en el poder. Y ahora el desafío es ayudar al pueblo iraquí a construir una de- mocracia que cumpla los sueños de los casi doce millones de iraquíes que salieron a votar en elecciones libres el último diciembre", concluía optimista el mandatario estadounidense213.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 217 — similitud 0.0483
+
+**Detalle de puntaje:** tfidf=0.0383; bonus=0.0100
+
+> Advierte: "Los árboles que se doblan conservan sus ramas, pero los que se resis- ten acaban arrancados de raíz" (que es como Creón terminará: sin des- cendientes). Y emplea una imagen característica de un griego (aunque de un ateniense más que de un beocio): " Aquel piloto que, seguro de lo que hace, ajusta la escota de ía vela y no la suelta, realiza el resto del viaje con el navio tumbado" (713-717). El corifeo trata de ponerlos de acuerdo.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 247 — similitud 0.0467
+
+**Detalle de puntaje:** tfidf=0.0367; bonus=0.0100
+
+> Y todo ello, en procura del bien y de la equidad. ¡Qué bien harían los sandios profesores que basan sus cursos en meras me^ morizaciones y repeticiones de los alumnos, en tener presente esto! §3. Ius natural e ius de gentes A Ulpiano le. atribuyen luego los compiladores el establecimiento de tres categorías dentro del ius privado (es decir, el "que contempla a la utilidad de 326 Así en numerosas fuentes. Por ejemplo, César (De belfo gofiico, 728.2).
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 151 — similitud 0.0463
+
+**Detalle de puntaje:** tfidf=0.0363; bonus=0.0100
+
+> 162 RICARDO D. RABINOVICH-BERKMAN tencialismo, que "la mayor parte de los mortales se queja de la malignidad de la Naturaleza, por habernos engendrado para un tiempo tan breve y porque este espacio de tiempo que se nos dio se escurre tan velozmente"22* No sabemos cuándo llegará la muerte, pero es seguro que ella va a venir, Borges, de nuevo, escribe: "Tras el cristal ya gris la noche cesa y del alto de libros que una trunca sombra dilata por la vaga mesa, alguno habrá que no leeremos nunca"225. La muerte, en efecto pone limites (tal el título de este maravilloso poema) a nuestro tiempo.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 135 — similitud 0.0462
+
+**Detalle de puntaje:** tfidf=0.0262; bonus=0.0200
+
+> Una segunda Resolución del Consejo de Europa, la 1/1990, relativa a la protección del Medio Ambiente a través del Derecho penal actualizó las recomendaciones de la anterior, estableciéndose la necesidad de elaborar un listado de tipos penales en los que se asegurase la protección adecuada al medio ambiente y a sus elementos integrantes (agua, aire, suelo, flora y fauna, así como a las personas); la regulación de las infracciones penales a través de tipos de peligro (abstracto, concreto o potencial); la delimitación en materia ambiental entre delitos (Derecho penal) e infracciones administrativas (Derecho administrativo) sobre la base de la gravedad y al riesgo de los comportamientos y, por...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 29 — similitud 0.0461
+
+**Detalle de puntaje:** tfidf=0.0261; bonus=0.0200
+
+> 15). De una vez manifiesta tajantemente su objetivo, no se detendrá a divagar y concibe al derecho libre de elementos metajurídicos; el hombre está escindido entre el mundo del “ser”y del “deber ser”; el hombre sólo es capaz de conocer lo dado, escapándosele toda metafísica; pretende (…)“brindar una definición de la norma jurídica totalmente independiente de la noción de norma moral (…) al afirmar la autonomía del derecho respecto de la moral.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 47 — similitud 0.0453
+
+**Detalle de puntaje:** tfidf=0.0353; bonus=0.0100
+
+> Sin embargo, la transparencia electoral, que facilita la elección demo- crática de los gobernantes, no garantiza de facto la rendición de cuen- tas. El paradigma ético de la democracia exige conductas y actitudes ciudadanas continuas que salvaguarden el ejercicio plural del poder político de los resabios de carácter autoritario, el uso regular y sis- temático de los mecanismos de toma de decisiones que considera el Estado democrático de derecho, y el acceso a la información pública que transparenta la gestión pública y permite una rendición de cuen- tas a satisfacción.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 125 — similitud 0.0447
+
+**Detalle de puntaje:** tfidf=0.0347; bonus=0.0100
+
+> Esta posición generó ácidas críticas, y hasta asombro por parte de pensa- : dores que se manifestaban en general coincidentes con las ideas de Rawls. Sin :.;í embargo, y con todo lo problemático que el tema es, no deja de tratarse de una alternativa coherente con la creencia en la posibilidad de una base objetiva de la que se puedan desprender los derechos (o libertades) fundamentales.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 211 — similitud 0.0434
+
+**Detalle de puntaje:** tfidf=0.0334; bonus=0.0100
+
+> Así que, para horror de Creón, Me- neceo, su primogénito, se suicida arrojándose desde una de las torres. El sacrificio de Meneceo hace a los tebanos sentirse seguros, así que salen a combatir. Ante los muros, Eteocles y Polinices se enfrentan en combate singular.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 128 — similitud 0.0433
+
+**Detalle de puntaje:** tfidf=0.0333; bonus=0.0100
+
+> También se convino en prestar asistencia a fin de aumentar las oportunidades de empleo generador de ingresos, teniendo en cuenta la Declaración de Principios de la Organización Internacional del Trabajo relativa a los Derechos Fundamentales en el Trabajo. 11.- Además, en que es necesario que las empresas del sector privado cumplan la obligación de rendir cuentas, rendición que ha de tener lugar en un entorno reglamentario transparente y estable. 127
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 148 — similitud 0.0405
+
+**Detalle de puntaje:** tfidf=0.0305; bonus=0.0100
+
+> Por ello, se propone que ante una posible reforma de la Organización de las Naciones Unidas el poder de decisión no puede seguir en cónclave de cinco. La misma dinámica evolutiva pauta directrices que no pueden pasar desapercibidas, el derretimiento de las capas de hielo, la desaparición de glaciares está aumentando el nivel del mar afectando los ecosistemas e incrementando los riesgos para el normal desarrollo de las actividades humanas, la desertización crece, los deslaves e inundaciones son 147
+
+**Observación automática:** La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 23 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 06. Seguro social
+
+**Calidad estimada:** baja
+**Mejor similitud:** 0.1354
+**Similitud promedio:** 0.0733
+**Fuentes:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf
+**Ubicaciones:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 125; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 141; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 168; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 217; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 285; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 108; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 16; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 23; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 29; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 32; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 39; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 47; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 54; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 58; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 82; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 83; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 15; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 29; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 35; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 47; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 52; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 61; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 69
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 61 — similitud 0.1354
+
+**Detalle de puntaje:** tfidf=0.0954; bonus=0.0400
+
+> Por ello, construir un sistema de seguridad pública eficaz y confiable implica que reconozcamos la complejidad de la tarea de mantener el orden público en congruencia con la vigencia integral de los derechos humanos de cada persona, tanto los civiles y políti- cos, como los económicos, sociales y culturales.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 82 — similitud 0.1041
+
+**Detalle de puntaje:** tfidf=0.0741; bonus=0.0300
+
+> forma enmendada por el Protocolo N º 11 • Protocolo N º 5 de la Convención para la Protección de los Derechos Humanos y las Libertades Fundamentales, se modifican los artículos 22 y 40 de la Convención • Convenio Europeo para la adopción de niños • Convenio europeo sobre la repatriación de los menores • Convenio europeo sobre inmunidad de los Estados • Protocolo adicional al Convenio Europeo para la inmunidad de los Estado • Convenio Europeo para la Seguridad Social • Acuerdo Complementario para la Aplicación de la Convención Europea para la Seguridad Social • Convenio Europeo sobre la no Aplicabilidad de las Limitaciones legales a los crímenes de lesa humanidad y crímenes de guerra •...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 32 — similitud 0.0981
+
+**Detalle de puntaje:** tfidf=0.0681; bonus=0.0300
+
+> El marxismo presentaba una realidad en un contexto social que llevó incluso a la Iglesia a pronunciarse en la celebre encíclica Rerum novarum de León XIII; la lucha de clases, las condiciones infrahumanas, la desvalorización del trabajo humano, presentan un nuevo matiz que fuera de las desviaciones y radicalismo implementado por la Rusia bolchevique, pone en evidencia el surgimiento de ideólogos que darán nuevos visos a la realidad circundante.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 29 — similitud 0.0963
+
+**Detalle de puntaje:** tfidf=0.0563; bonus=0.0400
+
+> 28 Los derechos humanos en México 2) El derecho a la seguridad social, a un nivel de vida adecuado y a los niveles más altos posibles de bienestar físico y mental. 3) El derecho a la educación y el disfrute de los beneficios de la libertad cultural y el progreso científico.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 83 — similitud 0.0906
+
+**Detalle de puntaje:** tfidf=0.0606; bonus=0.0300
+
+> a la Prevención de la Tortura y los Tratos Inhumanos o Degradantes • Protocolo del Convenio Europeo de Seguridad Social • Convenio Marco para la Protección de las Minorías Nacionales • Convenio Europeo sobre el Ejercicio de los Derechos del Niño • Sexto Protocolo del Acuerdo General sobre Privilegios e Inmunidades del Consejo de Europa • Carta Social Europea • Convenio Europeo sobre la Nacionalidad • Protocolo adicional al Convenio sobre traslado de personas condenadas • Protocolo Adicional a la Convención para la Protección de los Derechos Humanos y la Dignidad del Ser Humano con respecto a las aplicaciones de la Biología y la Medicina, sobre la prohibición de la clonación de seres humanos...
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 52 — similitud 0.0891
+
+**Detalle de puntaje:** tfidf=0.0791; bonus=0.0100
+
+> Esto habrá de ser un instrumento valioso que señale a las auto- ridades lo que está detrás de cada uno de los expedientes de queja; es decir: las personas. Cabe señalar que el modelo de queja es enmarcado dentro de un Modelo Institucional, cuyo objetivo es la construcción de una ins- titución que defienda los derechos humanos de las y los ciudadanos (Defensoría del Pueblo). Modelo de la CDHDF De este modo, el Modelo se basa en los siguientes principios: Autonomía.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 15 — similitud 0.0830
+
+**Detalle de puntaje:** tfidf=0.0430; bonus=0.0400
+
+> Nuevo orden internacional En la actualidad, 192 países soberanos integran la lista de Estados miembros de las Naciones Unidas, cuya finalidad es mante- ner la paz y seguridad internacionales, así como promover las rela- ciones de amistad entre las naciones y el progreso social. México es parte de esta organización desde el 7 de noviembre de 1945.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 47 — similitud 0.0806
+
+**Detalle de puntaje:** tfidf=0.0606; bonus=0.0200
+
+> Aún, los visos de protección de los derechos humanos no se vislumbraban. En este contexto las variables que caracterizaron el modelo Iglesia- Institución contribuyeron a esta concepción por lo que al respecto se precisa analizarlas debido a su repercusión en lo social, cultural, político, económico e ideológico. 2.3.2.1- Principales características del modelo Iglesia-Institución 1.- Se resaltaban los aspectos visibles, sociales, institucionales y organi- zativos, existía una autocomprensión en el que predominaba lo jurídico, la dimensión de la Iglesia como misterio se mitiga; no ejerce gran influencia este aspecto.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 58 — similitud 0.0703
+
+**Detalle de puntaje:** tfidf=0.0603; bonus=0.0100
+
+> Es el proceso de positivización de las garantías; d) Los derechos reconocidos comienzan a ampliarse, en procura de otros derechos y hacia un estado de bienestar. • En este proceso de expansión a partir de la mitad del siglo XIX, emergen los derechos económicos, sociales y culturales; en este interregnum se hace necesario destacar el valor de las luchas por las reivindicaciones obreras y otras pretensiones de carácter social. León XIII en el año 1891 promulga la primera encíclica social de la Iglesia denominada “Rerum novarum”, como un grito convincente por las precarias condiciones indignas en que se encontraban los obreros; siendo execrables la situación de miseria que debían soportar.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 285 — similitud 0.0701
+
+**Detalle de puntaje:** tfidf=0.0601; bonus=0.0100
+
+> Esta visión seria coherente con la de Marcel Simón, uno de los máximos especialistas en este período. Él entiende que los primeros conflictos de as- pecto intercultural no se habrían dado entre cristianos de origen israelita y cristianos de origen pagano, sino entre cristianos de origen israelita palestino, con lengua materna hebrea o aramea, y cristianos de origen israelita pero he- lenístico, llegados de las comunidades de la diáspora y greco-parlantes358. Para los tiempos de Pablo de Tarse, empero, la presencia de conversos de origen gentil parece haber sido lo suficientemente importante como para qué se generasen las controversias acerca de la obligatoriedad de la circuncisión.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 69 — similitud 0.0696
+
+**Detalle de puntaje:** tfidf=0.0596; bonus=0.0100
+
+> Modelo de defensa que coloca en el cen- tro a las personas al asumirlas como ciudadanas y ciudadanos que ejercen sus derechos. Asimismo, la calificación y los proce- dimientos de investigación de quejas se llevan a cabo, en este modelo, a partir de las disposiciones del derecho internacional de los derechos humanos y bajo un enfoque de integralidad de los mismos. Progresividad.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 29 — similitud 0.0650
+
+**Detalle de puntaje:** tfidf=0.0450; bonus=0.0200
+
+> Luis Manuel Marcano Salazar K Larenz al diferenciar el sistema de Savigny y Puchta señala: (…) Puchta es el primero en presentar el Derecho como un sistema lógico jerarquizado, que presenta más bien la forma de una pirámide (…) Tal método racional, al que sólo la terminología «organicista» de Puchta nos permite emparentar con el historicismo, se pretende «genealógico» y aspira, en palabras del propio autor, a conocer las proposiciones del Derecho en su conexión sistemática «como recíprocamente condicionadas y derivadas unas de otras» (…) Con ello la Ciencia del Derecho (Jurisprudencia) tomaba carta de naturaleza como autentica fuente del Derecho”.29 Los juristas son los llamados a extraer...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 23 — similitud 0.0647
+
+**Detalle de puntaje:** tfidf=0.0547; bonus=0.0100
+
+> Luis Manuel Marcano Salazar Por consiguiente, a pesar de las leyes de naturaleza (que cada uno observa cuando tiene la voluntad de observarlas, cuando puede hacerlo de modo seguro) si no se ha instituido o no es suficientemente grande para nuestra seguridad, cada uno se fiará tan sólo, y podrá hacerlo legalmente, sobre su propia fuerza y maña, para protegerse contra los demás hombres.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 54 — similitud 0.0616
+
+**Detalle de puntaje:** tfidf=0.0416; bonus=0.0200
+
+> 2.3.5.3.- Características de las declaraciones francesas Su origen histórico es muy discutido; sin embargo pueden exponerse tres posturas básicas.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 47 — similitud 0.0604
+
+**Detalle de puntaje:** tfidf=0.0504; bonus=0.0100
+
+> El Conapred es la institución rectora para promover políticas que buscan contribuir al desarrollo cultural y social a través de la inclusión social, garantizando el derecho a la igualdad, que es el primero de los derechos fundamentales en la Constitución federal. Sin duda, las movilizaciones de las osc lograron un avance en materia de derechos humanos gracias al impacto que tuvieron en la
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 16 — similitud 0.0596
+
+**Detalle de puntaje:** tfidf=0.0496; bonus=0.0100
+
+> Esos eventos internacionales generaron cambios constitucionales; así, en Venezuela a partir de la Constitución de 1999 en su Capítulo IX se contemplan los derechos ambientales en los artículos 127 al 129, como un derecho de la persona susceptible de protección y a su vez un deber compartido con el Estado que imperiosamente debe protegerlo e imponer la conservación del equilibrio ecológico para las generaciones futuras, en el artículo 127 se consagra específicamente: “Es un derecho y un deber de cada generación proteger y mantener el ambiente en beneficio de sí misma y del mundo futuro.Toda persona tiene derecho individual y colectivamente a disfrutar de una vida y de un ambiente seguro...
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 35 — similitud 0.0593
+
+**Detalle de puntaje:** tfidf=0.0493; bonus=0.0100
+
+> El Convenio Europeo, junto con sus protocolos adicionales, constituyen un tratado general de derechos civiles y políticos. Los derechos sociales, económicos y culturales están consagrados en la Carta Social Europea (1961-1965) y sus protocolos adicionales y revisiones en la Carta Social Europea Revisada (1996-1999). -Carta Social
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 125 — similitud 0.0557
+
+**Detalle de puntaje:** tfidf=0.0457; bonus=0.0100
+
+> Esta posición generó ácidas críticas, y hasta asombro por parte de pensa- : dores que se manifestaban en general coincidentes con las ideas de Rawls. Sin :.;í embargo, y con todo lo problemático que el tema es, no deja de tratarse de una alternativa coherente con la creencia en la posibilidad de una base objetiva de la que se puedan desprender los derechos (o libertades) fundamentales.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 141 — similitud 0.0556
+
+**Detalle de puntaje:** tfidf=0.0456; bonus=0.0100
+
+> Es la decisi- va lucha ideológica del siglo XXI, y la misión de nuestra generación", agrega- ba Bush a renglón seguido, colocando el ataque estadounidense a Irak en un nivel de necesidad apocalíptica, que hace acordar a los criterios de la "guerra santa", sobre los que volveremos más adelante. "El mundo está más seguro porque Saddam Hussein no está más en el poder. Y ahora el desafío es ayudar al pueblo iraquí a construir una de- mocracia que cumpla los sueños de los casi doce millones de iraquíes que salieron a votar en elecciones libres el último diciembre", concluía optimista el mandatario estadounidense213.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 217 — similitud 0.0555
+
+**Detalle de puntaje:** tfidf=0.0455; bonus=0.0100
+
+> Advierte: "Los árboles que se doblan conservan sus ramas, pero los que se resis- ten acaban arrancados de raíz" (que es como Creón terminará: sin des- cendientes). Y emplea una imagen característica de un griego (aunque de un ateniense más que de un beocio): " Aquel piloto que, seguro de lo que hace, ajusta la escota de ía vela y no la suelta, realiza el resto del viaje con el navio tumbado" (713-717). El corifeo trata de ponerlos de acuerdo.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 108 — similitud 0.0548
+
+**Detalle de puntaje:** tfidf=0.0448; bonus=0.0100
+
+> También se puede apreciar la influencia de del ius naturalismo en la admisión positiva Latinoamericana del Derecho Internacional, así se tiene que las bases del sistema jurídico está en el hecho de que el ser humano es, ante todo, un ser racional y social, de allí que este enfoque extrapolado a la sociedad internacional que está constituida por seres humanos, también tiende hacia la racionalidad y que los mismos actores establecen ciertas normas para la vida social internacional; así lo expone Toro Jiménez (2004), “La fundamentación del Derecho Internacional Público, como Derecho Positivo, en el Derecho Natural, reside en el mandato, originario de este último, de que los sujetos del Derecho...
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 168 — similitud 0.0537
+
+**Detalle de puntaje:** tfidf=0.0437; bonus=0.0100
+
+> VI. LAS PRIMERAS IDEAS SOBRE LOS LÍMITES AL PODER LEGÍTIMO "Alik mahrí tappaa ushezeb shá tuúdu iduú ibirshú liissur" ("Quien va primero, salva a su camarada, quien conoce el camino cuida a su amigo'"). Epopeya de GuiJgamesh, Tablilla IH §1.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 39 — similitud 0.0536
+
+**Detalle de puntaje:** tfidf=0.0236; bonus=0.0300
+
+> Se imponen a todas las normas del Derecho creado por el Soberano y son un límite a su acción. (p.26) Para los positivistas, el hombre, en razón del desarrollo histórico de la sociedad, se encuentra revestido de derechos variables y sometidos al flujo del devenir que impone la convivencia social, consideran que estos derechos son únicamente aquellos reconocidos expresamente en el texto constitucional por el propio Estado, teniendo por ello un carácter constitutivo su consagración.
+
+**Observación automática:** La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 15 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 07. características del seguro privado
+
+**Calidad estimada:** baja
+**Mejor similitud:** 0.0952
+**Similitud promedio:** 0.0643
+**Fuentes:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf
+**Ubicaciones:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 122; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 141; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 198; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 217; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 238; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 33; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 82; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 91; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 103; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 113; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 128; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 135; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 16; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 23; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 29; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 54; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 56; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 82; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 83; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 26; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 29; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 8
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 113 — similitud 0.0952
+
+**Detalle de puntaje:** tfidf=0.0752; bonus=0.0200
+
+> Derecho a la vida Toda persona tiene derecho a que se respete su vida. Este derecho estará protegido por la ley y, en general, a partir del momento de la concepción. Nadie puede ser privado de la vida arbitrariamente.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 82 — similitud 0.0912
+
+**Detalle de puntaje:** tfidf=0.0712; bonus=0.0200
+
+> forma enmendada por el Protocolo N º 11 • Protocolo N º 5 de la Convención para la Protección de los Derechos Humanos y las Libertades Fundamentales, se modifican los artículos 22 y 40 de la Convención • Convenio Europeo para la adopción de niños • Convenio europeo sobre la repatriación de los menores • Convenio europeo sobre inmunidad de los Estados • Protocolo adicional al Convenio Europeo para la inmunidad de los Estado • Convenio Europeo para la Seguridad Social • Acuerdo Complementario para la Aplicación de la Convención Europea para la Seguridad Social • Convenio Europeo sobre la no Aplicabilidad de las Limitaciones legales a los crímenes de lesa humanidad y crímenes de guerra •...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 128 — similitud 0.0816
+
+**Detalle de puntaje:** tfidf=0.0516; bonus=0.0300
+
+> Como colaboradores sociales, seguiremos bregando por la formación de asociaciones estables con todos los grandes grupos, respetando el importante papel independiente que desempeña cada uno de ellos. 9.- Conviniendo que en la realización de sus actividades legítimas el sector privado, incluidas tanto las grandes empresas como las pequeñas, tiene el deber de contribuir a la evolución de comunidades y sociedades equitativas y sostenibles. 10.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 29 — similitud 0.0809
+
+**Detalle de puntaje:** tfidf=0.0509; bonus=0.0300
+
+> 28 Los derechos humanos en México 2) El derecho a la seguridad social, a un nivel de vida adecuado y a los niveles más altos posibles de bienestar físico y mental. 3) El derecho a la educación y el disfrute de los beneficios de la libertad cultural y el progreso científico.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 128 — similitud 0.0778
+
+**Detalle de puntaje:** tfidf=0.0478; bonus=0.0300
+
+> 10. También se convino en prestar asistencia a fin de aumentar las oportunidades de empleo generador de ingresos, teniendo en cuenta la Declaración de Principios de la Organización Internacional del Trabajo relativa a los Derechos Fundamentales en el Trabajo. 11.- Además, en que es necesario que las empresas del sector privado cumplan la obligación de rendir cuentas, rendición que ha de tener lugar en un entorno reglamentario transparente y estable.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 113 — similitud 0.0776
+
+**Detalle de puntaje:** tfidf=0.0576; bonus=0.0200
+
+> Luis Manuel Marcano Salazar el PIDCP y las Declaraciones (Universal y Americana) guardan silencio sobre la cuestión de saber cuándo hay que reconocer y proteger la vida. Se estima conveniente señalar algunos instrumentos internacionales que consagran el derecho a la vida 4.1.1.- Declaración Universal de Derechos Humanos Artículo 3 Todo individuo tiene derecho a la vida, a la libertad y a la seguridad de su persona. 4.1.2.- Pacto Internacional de Derechos Civiles y Políticos (PIDCP) Artículo 6 1.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 83 — similitud 0.0732
+
+**Detalle de puntaje:** tfidf=0.0532; bonus=0.0200
+
+> a la Prevención de la Tortura y los Tratos Inhumanos o Degradantes • Protocolo del Convenio Europeo de Seguridad Social • Convenio Marco para la Protección de las Minorías Nacionales • Convenio Europeo sobre el Ejercicio de los Derechos del Niño • Sexto Protocolo del Acuerdo General sobre Privilegios e Inmunidades del Consejo de Europa • Carta Social Europea • Convenio Europeo sobre la Nacionalidad • Protocolo adicional al Convenio sobre traslado de personas condenadas • Protocolo Adicional a la Convención para la Protección de los Derechos Humanos y la Dignidad del Ser Humano con respecto a las aplicaciones de la Biología y la Medicina, sobre la prohibición de la clonación de seres humanos...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 29 — similitud 0.0726
+
+**Detalle de puntaje:** tfidf=0.0526; bonus=0.0200
+
+> 15). De una vez manifiesta tajantemente su objetivo, no se detendrá a divagar y concibe al derecho libre de elementos metajurídicos; el hombre está escindido entre el mundo del “ser”y del “deber ser”; el hombre sólo es capaz de conocer lo dado, escapándosele toda metafísica; pretende (…)“brindar una definición de la norma jurídica totalmente independiente de la noción de norma moral (…) al afirmar la autonomía del derecho respecto de la moral.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 26 — similitud 0.0724
+
+**Detalle de puntaje:** tfidf=0.0424; bonus=0.0300
+
+> Por otro, se presenta la historia, características y funcionamiento del sistema Ombudsman, y se aborda el trabajo que realizan algunas osc para la defensa de los derechos humanos a nivel internacional. 4.1 Principales instrumentos de defensa y protección 4.1.1 El sistema internacional Los primeros antecedentes en torno a la integración de un sistema jurídico internacional de protección de las personas se encuentran en la definición del Derecho Internacional Humanitario (dih), con- cebido en el siglo xix, cuyo antecedente más claro, a su vez, puede Antecedentes en el siglo XIX
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 128 — similitud 0.0718
+
+**Detalle de puntaje:** tfidf=0.0618; bonus=0.0100
+
+> También se convino en prestar asistencia a fin de aumentar las oportunidades de empleo generador de ingresos, teniendo en cuenta la Declaración de Principios de la Organización Internacional del Trabajo relativa a los Derechos Fundamentales en el Trabajo. 11.- Además, en que es necesario que las empresas del sector privado cumplan la obligación de rendir cuentas, rendición que ha de tener lugar en un entorno reglamentario transparente y estable. 127
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 82 — similitud 0.0667
+
+**Detalle de puntaje:** tfidf=0.0367; bonus=0.0300
+
+> Empero, podría suceder que un hombre excelente se enamorase de una mujer justamente atraído por esa defor- midad. O que ella le generase a la víctima un contrato cinematográfico millona- rio, por adecuarse perfectamente a las características físicas de un personaje. Es decir, que no hay certeza deí perjuicio futuro.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 113 — similitud 0.0658
+
+**Detalle de puntaje:** tfidf=0.0558; bonus=0.0100
+
+> Este derecho estará protegido por la ley. Nadie podrá ser privado de la vida arbitrariamente. 4.1.3.- Declaración Americana de los Derechos y Deberes del Hombre Artículo I.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 33 — similitud 0.0643
+
+**Detalle de puntaje:** tfidf=0.0443; bonus=0.0200
+
+> Porque lo que hace a una paella ser tal, su esencia, son el arroz y los mariscos (característicos ambos de la región de Valencia). La idea de que determinados derechos fueran esenciales implicaría pensar que éstos hacen al ser humano, que integran la sustancia de éste. Es decir, que sin esas prerrogativas no tengo un ser humano.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 56 — similitud 0.0626
+
+**Detalle de puntaje:** tfidf=0.0426; bonus=0.0200
+
+> Sin embargo, también patrocina la necesidad de un pacto entre las individualidades para formar un gobierno (…) las voluntades individuales siguen siendo el origen y forman los elementos esenciales; pero, consideradas separadamente, su poder sería nulo, puesto que sólo reside en el conjunto44.Tal es el origen de un gobierno, ejercido por procuración; coincide con Locke, en legar una porción de poder «a algunos de ellos» el pueblo es numeroso y es imposible consultarlo en su totalidad por toda la nación; esta delegación no implica un desprendimiento total del poder soberano. Expone su celebre tesis acerca del poder constituyente originario de esta manera:
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 54 — similitud 0.0600
+
+**Detalle de puntaje:** tfidf=0.0500; bonus=0.0100
+
+> • La doctrina de Jellinek, para quien la Declaración francesa emuló las declaraciones norteamericanas que a su vez surgieron ideológicamente de las concepciones puritanas mayormente inspiradas por inmigrantes protestantes. • La doctrina francesa, a partir de las tesis de Boutmy polemizando con Jellinek, que desecha tanto la paternidad americana como germánica, insistiendo en su derivación por el influjo de la literatura europea, y especialmente del pensamiento ilustrado francés del siglo XVIII. • La doctrina ecléctica, consistente en afirmar que son compatibles tanto el criterio de Jellinek como la tesis oposicionista de Boutmy.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 103 — similitud 0.0595
+
+**Detalle de puntaje:** tfidf=0.0495; bonus=0.0100
+
+> En el mismo la Comisión explana enfáticamente como debe ser interpretado el artículo 30 de la Convención Americana sobre Derechos Humanos, criterio que esta a su vez compaginado con el discernimiento de la Corte Interamericana de Derechos Humanos, es decir ambos organismos integrantes del sistema de protección de los derechos humanos en Latinoamérica, no tienen divergencias y quien alegue mejor razonamiento a este precedente debe desmontar todo un sistema que poco a poco ha ido sentando unas bases sólidas en reconocimiento y defensa de los derechos humanos; por lo que: (…) Al respecto, la CIDH reitera que las únicas restricciones admisibles para regular el ejercicio y goce de los derechos...
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 122 — similitud 0.0582
+
+**Detalle de puntaje:** tfidf=0.0482; bonus=0.0100
+
+> Soy de tal clase social, tengo tales ingresos económicos, mi piel es de tal color, nací en un hogar de determinada religión, poseo esta inclinación sexual, sigo aquellas ideas políticas, padezco un defecto físico.,> Así es que sugiere que la respuesta sólo podría surgir de un ejercicio mental Es decir, un procedimiento ficticio ¿Es ello un disparate? Todas las teorías pactistas, que plantean al contrato social como base de la estructura política y jurídica humana, parten de una ficción, que sus seguido- res saben perfectamente que lo es.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 198 — similitud 0.0575
+
+**Detalle de puntaje:** tfidf=0.0375; bonus=0.0200
+
+> Como ésta, también del Éxodo, que se relaciona con disposiciones de la piedra de Ha- mmurabi: "El que hiera a un hombre de modo que en efecto muera, ha de ser muerto sin falta" (21.12). Otras, buscan resguardar elementos esenciales del ser humano en forma bastante minuciosa: "Y en caso de que unos hombres se pongan a reñir y uno efectivamente hiera a su prójimo con una piedra o un azadón y este no mue- ra, pero tenga que quedarse en cama; sí se levanta y va andando fuera sobre algún sostén suyo, entonces el que lo haya herido tiene que estar libre de cas- tigo; dará compensación solo por el tiempo que se haya perdido del trabajo de aquel hasta que lo tenga completamente sanado" (21,18-19).
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 8 — similitud 0.0550
+
+**Detalle de puntaje:** tfidf=0.0450; bonus=0.0100
+
+> La presente obra constituye una guía para entender el concepto, desa- rrollo e importancia de los derechos humanos en el ámbito interna- cional y nacional de manera rápida y sencilla. Para ello, se aborda su historia y el contexto en el que se originaron; se desarrolla breve- mente el concepto, las características y los diferentes derechos huma- nos que existen; se analizan los instrumentos que los resguardan en el ámbito nacional, internacional y regional, así como las características y funcionamiento del sistema Ombudsman, herramienta fundamen- tal para su protección y defensa alrededor del mundo.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 23 — similitud 0.0517
+
+**Detalle de puntaje:** tfidf=0.0417; bonus=0.0100
+
+> Luis Manuel Marcano Salazar Por consiguiente, a pesar de las leyes de naturaleza (que cada uno observa cuando tiene la voluntad de observarlas, cuando puede hacerlo de modo seguro) si no se ha instituido o no es suficientemente grande para nuestra seguridad, cada uno se fiará tan sólo, y podrá hacerlo legalmente, sobre su propia fuerza y maña, para protegerse contra los demás hombres.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 91 — similitud 0.0481
+
+**Detalle de puntaje:** tfidf=0.0281; bonus=0.0200
+
+> No la ha iniciado, ni ha sido demandado en ella. Tampoco hay riesgo de que se le extienda la demanda. Sin embargo, posee un marcado interés en la resolución final de ese litigio.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 16 — similitud 0.0478
+
+**Detalle de puntaje:** tfidf=0.0378; bonus=0.0100
+
+> Esos eventos internacionales generaron cambios constitucionales; así, en Venezuela a partir de la Constitución de 1999 en su Capítulo IX se contemplan los derechos ambientales en los artículos 127 al 129, como un derecho de la persona susceptible de protección y a su vez un deber compartido con el Estado que imperiosamente debe protegerlo e imponer la conservación del equilibrio ecológico para las generaciones futuras, en el artículo 127 se consagra específicamente: “Es un derecho y un deber de cada generación proteger y mantener el ambiente en beneficio de sí misma y del mundo futuro.Toda persona tiene derecho individual y colectivamente a disfrutar de una vida y de un ambiente seguro...
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 238 — similitud 0.0452
+
+**Detalle de puntaje:** tfidf=0.0352; bonus=0.0100
+
+> No caben dudas para Aristóteles, en punto a que el "an- thropos" es un "zóon", un animal. Entonces, habrá características que le sean idiosincrásicas (como el ser "poUtico") y otras que comparta con las bestias.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 135 — similitud 0.0450
+
+**Detalle de puntaje:** tfidf=0.0250; bonus=0.0200
+
+> Una segunda Resolución del Consejo de Europa, la 1/1990, relativa a la protección del Medio Ambiente a través del Derecho penal actualizó las recomendaciones de la anterior, estableciéndose la necesidad de elaborar un listado de tipos penales en los que se asegurase la protección adecuada al medio ambiente y a sus elementos integrantes (agua, aire, suelo, flora y fauna, así como a las personas); la regulación de las infracciones penales a través de tipos de peligro (abstracto, concreto o potencial); la delimitación en materia ambiental entre delitos (Derecho penal) e infracciones administrativas (Derecho administrativo) sobre la base de la gravedad y al riesgo de los comportamientos y, por...
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 141 — similitud 0.0448
+
+**Detalle de puntaje:** tfidf=0.0348; bonus=0.0100
+
+> Es la decisi- va lucha ideológica del siglo XXI, y la misión de nuestra generación", agrega- ba Bush a renglón seguido, colocando el ataque estadounidense a Irak en un nivel de necesidad apocalíptica, que hace acordar a los criterios de la "guerra santa", sobre los que volveremos más adelante. "El mundo está más seguro porque Saddam Hussein no está más en el poder. Y ahora el desafío es ayudar al pueblo iraquí a construir una de- mocracia que cumpla los sueños de los casi doce millones de iraquíes que salieron a votar en elecciones libres el último diciembre", concluía optimista el mandatario estadounidense213.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 217 — similitud 0.0447
+
+**Detalle de puntaje:** tfidf=0.0347; bonus=0.0100
+
+> Advierte: "Los árboles que se doblan conservan sus ramas, pero los que se resis- ten acaban arrancados de raíz" (que es como Creón terminará: sin des- cendientes). Y emplea una imagen característica de un griego (aunque de un ateniense más que de un beocio): " Aquel piloto que, seguro de lo que hace, ajusta la escota de ía vela y no la suelta, realiza el resto del viaje con el navio tumbado" (713-717). El corifeo trata de ponerlos de acuerdo.
+
+**Observación automática:** La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 22 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 08. características del seguro social
+
+**Calidad estimada:** baja
+**Mejor similitud:** 0.1166
+**Similitud promedio:** 0.0697
+**Fuentes:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf
+**Ubicaciones:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 125; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 168; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 25; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 280; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 285; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 33; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 117; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 118; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 23; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 29; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 47; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 58; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 59; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 61; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 82; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 83; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 20; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 29; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 47; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 50; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 52; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 69; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 8
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 82 — similitud 0.1166
+
+**Detalle de puntaje:** tfidf=0.0866; bonus=0.0300
+
+> forma enmendada por el Protocolo N º 11 • Protocolo N º 5 de la Convención para la Protección de los Derechos Humanos y las Libertades Fundamentales, se modifican los artículos 22 y 40 de la Convención • Convenio Europeo para la adopción de niños • Convenio europeo sobre la repatriación de los menores • Convenio europeo sobre inmunidad de los Estados • Protocolo adicional al Convenio Europeo para la inmunidad de los Estado • Convenio Europeo para la Seguridad Social • Acuerdo Complementario para la Aplicación de la Convención Europea para la Seguridad Social • Convenio Europeo sobre la no Aplicabilidad de las Limitaciones legales a los crímenes de lesa humanidad y crímenes de guerra •...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 83 — similitud 0.1009
+
+**Detalle de puntaje:** tfidf=0.0709; bonus=0.0300
+
+> a la Prevención de la Tortura y los Tratos Inhumanos o Degradantes • Protocolo del Convenio Europeo de Seguridad Social • Convenio Marco para la Protección de las Minorías Nacionales • Convenio Europeo sobre el Ejercicio de los Derechos del Niño • Sexto Protocolo del Acuerdo General sobre Privilegios e Inmunidades del Consejo de Europa • Carta Social Europea • Convenio Europeo sobre la Nacionalidad • Protocolo adicional al Convenio sobre traslado de personas condenadas • Protocolo Adicional a la Convención para la Protección de los Derechos Humanos y la Dignidad del Ser Humano con respecto a las aplicaciones de la Biología y la Medicina, sobre la prohibición de la clonación de seres humanos...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 117 — similitud 0.0898
+
+**Detalle de puntaje:** tfidf=0.0698; bonus=0.0200
+
+> Coexistimos en el mismo cosmos y en la misma naturaleza con un origen y un destino comunes (…) la ley suprema del universo es la de la solidaridad y la cooperación de todos con todos”. (55) siguiendo a este autor se puede inferir que la solidaridad es un vínculo que ha unido al Hombre en su (…) “salto de la animalidad a la humanidad y a la creación de la socializad que se expresa por el lenguaje” (…); entonces quien pretenda que las catástrofes, tragedias, calamidades, desastres etc. Producto de las acometidas naturales se evitan y solucionan aisladamente está errado.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 280 — similitud 0.0897
+
+**Detalle de puntaje:** tfidf=0.0597; bonus=0.0300
+
+> Sin embargo, como también adelantamos, ello no ten- día a formar una clase elitista de hombres de derecho (y, si esa elite surgió, no fue por esto), porque el árabe coránico es, por definición, eí más enseñado. De modo que el efecto, en el caso islámico, puede considerarse de hecho in- verso, realmente paradoja!.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 52 — similitud 0.0873
+
+**Detalle de puntaje:** tfidf=0.0573; bonus=0.0300
+
+> En la cdhdf opera un ser- vicio civil de carrera para la profesionalización de su personal, que busca mayor eficiencia en su mandato con el objetivo de elevar la calidad de los servicios que ofrece a la ciudadanía. Integralidad de los derechos humanos. En el ejercicio de sus actua- ciones se atiende y promueve la vigencia integral de los derechos humanos, con el fin de que las y los ciudadanos ejerzan plenamente todos sus derechos.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 29 — similitud 0.0872
+
+**Detalle de puntaje:** tfidf=0.0572; bonus=0.0300
+
+> 28 Los derechos humanos en México 2) El derecho a la seguridad social, a un nivel de vida adecuado y a los niveles más altos posibles de bienestar físico y mental. 3) El derecho a la educación y el disfrute de los beneficios de la libertad cultural y el progreso científico.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 52 — similitud 0.0754
+
+**Detalle de puntaje:** tfidf=0.0654; bonus=0.0100
+
+> Esto habrá de ser un instrumento valioso que señale a las auto- ridades lo que está detrás de cada uno de los expedientes de queja; es decir: las personas. Cabe señalar que el modelo de queja es enmarcado dentro de un Modelo Institucional, cuyo objetivo es la construcción de una ins- titución que defienda los derechos humanos de las y los ciudadanos (Defensoría del Pueblo). Modelo de la CDHDF De este modo, el Modelo se basa en los siguientes principios: Autonomía.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 47 — similitud 0.0701
+
+**Detalle de puntaje:** tfidf=0.0501; bonus=0.0200
+
+> Aún, los visos de protección de los derechos humanos no se vislumbraban. En este contexto las variables que caracterizaron el modelo Iglesia- Institución contribuyeron a esta concepción por lo que al respecto se precisa analizarlas debido a su repercusión en lo social, cultural, político, económico e ideológico. 2.3.2.1- Principales características del modelo Iglesia-Institución 1.- Se resaltaban los aspectos visibles, sociales, institucionales y organi- zativos, existía una autocomprensión en el que predominaba lo jurídico, la dimensión de la Iglesia como misterio se mitiga; no ejerce gran influencia este aspecto.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 61 — similitud 0.0698
+
+**Detalle de puntaje:** tfidf=0.0498; bonus=0.0200
+
+> 7.Irreversibles. 2.3.6.1.- Universalidad Esta característica implica que todas las personas son titulares de los derechos humanos y no pueden invocarse diferencias de regímenes políticos, sociales o culturales como pretexto para ofenderlos o menoscabarlos.La universalidad es inherente a los derechos fundamentales del hombre porque se trata de derechos que son expresión de la dignidad intrínseca de todo individuo, debiendo, en ese sentido, ser aceptados y respetados por todos los Estados, con independencia de su sistema ideológico-político, económico y socio-cultural.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 47 — similitud 0.0678
+
+**Detalle de puntaje:** tfidf=0.0378; bonus=0.0300
+
+> En la medida en que el ifai promueva el escrutinio ciudadano a través del acceso a la información pública, y realice una difusión amplia sobre la utilidad social que genera la supervisión continua de la gestión pública, se configurará con más fuerza una figura de Ombudsman “Defensor de la Información”. De esta manera, en México se ha pasado de la protesta de los sesenta y setenta a la propuesta y la construcción de los principios democrá- ticos del siglo xxi.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 29 — similitud 0.0650
+
+**Detalle de puntaje:** tfidf=0.0450; bonus=0.0200
+
+> Luis Manuel Marcano Salazar K Larenz al diferenciar el sistema de Savigny y Puchta señala: (…) Puchta es el primero en presentar el Derecho como un sistema lógico jerarquizado, que presenta más bien la forma de una pirámide (…) Tal método racional, al que sólo la terminología «organicista» de Puchta nos permite emparentar con el historicismo, se pretende «genealógico» y aspira, en palabras del propio autor, a conocer las proposiciones del Derecho en su conexión sistemática «como recíprocamente condicionadas y derivadas unas de otras» (…) Con ello la Ciencia del Derecho (Jurisprudencia) tomaba carta de naturaleza como autentica fuente del Derecho”.29 Los juristas son los llamados a extraer...
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 20 — similitud 0.0640
+
+**Detalle de puntaje:** tfidf=0.0440; bonus=0.0200
+
+> Por ello, es fundamental tener presente que el único límite a todos los derechos humanos de una persona son los derechos de los demás. Responsabilidad social 3.2 Características Las principales características de los derechos humanos son: Requisitos mínimos Son universales. Se aplican a todas las personas por igual, pues todos tenemos la misma dignidad.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 47 — similitud 0.0632
+
+**Detalle de puntaje:** tfidf=0.0432; bonus=0.0200
+
+> En este contexto las variables que caracterizaron el modelo Iglesia- Institución contribuyeron a esta concepción por lo que al respecto se precisa analizarlas debido a su repercusión en lo social, cultural, político, económico e ideológico. 2.3.2.1- Principales características del modelo Iglesia-Institución 1.- Se resaltaban los aspectos visibles, sociales, institucionales y organi- zativos, existía una autocomprensión en el que predominaba lo jurídico, la dimensión de la Iglesia como misterio se mitiga; no ejerce gran influencia este aspecto.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 58 — similitud 0.0628
+
+**Detalle de puntaje:** tfidf=0.0528; bonus=0.0100
+
+> Es el proceso de positivización de las garantías; d) Los derechos reconocidos comienzan a ampliarse, en procura de otros derechos y hacia un estado de bienestar. • En este proceso de expansión a partir de la mitad del siglo XIX, emergen los derechos económicos, sociales y culturales; en este interregnum se hace necesario destacar el valor de las luchas por las reivindicaciones obreras y otras pretensiones de carácter social. León XIII en el año 1891 promulga la primera encíclica social de la Iglesia denominada “Rerum novarum”, como un grito convincente por las precarias condiciones indignas en que se encontraban los obreros; siendo execrables la situación de miseria que debían soportar.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 50 — similitud 0.0618
+
+**Detalle de puntaje:** tfidf=0.0518; bonus=0.0100
+
+> En la medida en que las acciones de las autoridades públicas incorporen el factor humano dentro de los mecanismos de gestión gubernamental, y que ese mismo sea reconocido como una con- dición básica de gobernabilidad democrática, entonces la efectiva
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 8 — similitud 0.0616
+
+**Detalle de puntaje:** tfidf=0.0516; bonus=0.0100
+
+> La presente obra constituye una guía para entender el concepto, desa- rrollo e importancia de los derechos humanos en el ámbito interna- cional y nacional de manera rápida y sencilla. Para ello, se aborda su historia y el contexto en el que se originaron; se desarrolla breve- mente el concepto, las características y los diferentes derechos huma- nos que existen; se analizan los instrumentos que los resguardan en el ámbito nacional, internacional y regional, así como las características y funcionamiento del sistema Ombudsman, herramienta fundamen- tal para su protección y defensa alrededor del mundo.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 117 — similitud 0.0603
+
+**Detalle de puntaje:** tfidf=0.0403; bonus=0.0200
+
+> Sólo el que ha sufrido una guerra sabe lo que es la guerra. (…) Sólo el que sufrió la terrible y horrorosa (no encuentro palabras más intensas) tragedia de Vargas, puede saber realmente lo que fue.15 Al reconocer la tuición a la vida, al ambiente y más aún a las generaciones que aún son una expectativa es porque existen razones para ello. La interdependencia, indivisibilidad y universalidad de los derechos humanos, no permite su encasillamiento, de allí, que la progresividad como principio inmanente en su estudio no admite que el Hombre se detenga en beneficio propio.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 285 — similitud 0.0597
+
+**Detalle de puntaje:** tfidf=0.0497; bonus=0.0100
+
+> Esta visión seria coherente con la de Marcel Simón, uno de los máximos especialistas en este período. Él entiende que los primeros conflictos de as- pecto intercultural no se habrían dado entre cristianos de origen israelita y cristianos de origen pagano, sino entre cristianos de origen israelita palestino, con lengua materna hebrea o aramea, y cristianos de origen israelita pero he- lenístico, llegados de las comunidades de la diáspora y greco-parlantes358. Para los tiempos de Pablo de Tarse, empero, la presencia de conversos de origen gentil parece haber sido lo suficientemente importante como para qué se generasen las controversias acerca de la obligatoriedad de la circuncisión.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 118 — similitud 0.0594
+
+**Detalle de puntaje:** tfidf=0.0394; bonus=0.0200
+
+> Todos los derechos tienen una dimensión social, en la medida en que son ejercidos por individuos o grupos en un contexto social; pero, ciertos derechos como los de solidaridad, se relacionan en mayor grado con la propia comunidad. Así ha quedado establecido en sentencia de fecha 30/06/2000 emanada del Tribunal Supremo de Justicia en Sala Constitucional de Venezuela: La Sala Constitucional en este sentido va a delinear notas características congruentes con los derechos de solidaridad en los cuales se enmarcan una serie de valores y principios que se implican en la calidad de vida y el bien común.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 69 — similitud 0.0593
+
+**Detalle de puntaje:** tfidf=0.0493; bonus=0.0100
+
+> Modelo de defensa que coloca en el cen- tro a las personas al asumirlas como ciudadanas y ciudadanos que ejercen sus derechos. Asimismo, la calificación y los proce- dimientos de investigación de quejas se llevan a cabo, en este modelo, a partir de las disposiciones del derecho internacional de los derechos humanos y bajo un enfoque de integralidad de los mismos. Progresividad.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 33 — similitud 0.0587
+
+**Detalle de puntaje:** tfidf=0.0387; bonus=0.0200
+
+> Porque lo que hace a una paella ser tal, su esencia, son el arroz y los mariscos (característicos ambos de la región de Valencia). La idea de que determinados derechos fueran esenciales implicaría pensar que éstos hacen al ser humano, que integran la sustancia de éste. Es decir, que sin esas prerrogativas no tengo un ser humano.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 23 — similitud 0.0579
+
+**Detalle de puntaje:** tfidf=0.0479; bonus=0.0100
+
+> Luis Manuel Marcano Salazar Por consiguiente, a pesar de las leyes de naturaleza (que cada uno observa cuando tiene la voluntad de observarlas, cuando puede hacerlo de modo seguro) si no se ha instituido o no es suficientemente grande para nuestra seguridad, cada uno se fiará tan sólo, y podrá hacerlo legalmente, sobre su propia fuerza y maña, para protegerse contra los demás hombres.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 59 — similitud 0.0576
+
+**Detalle de puntaje:** tfidf=0.0376; bonus=0.0200
+
+> 2.3.5.5. 1- Características de las declaraciones del siglo XX • La Declaración francesa de los Derechos del Hombre y del Ciudadano, prosigue como el gran hito inspirador tanto en el orden constitucional interno (Preámbulo de las constituciones francesas de 1946 y 1958)48, como de las declaraciones estricto sensu, por ejemplo la Declaración Universal de los Derechos Humanos; contribuyendo a la consagración constitucional e internacional definitiva de los derechos económicos, sociales y culturales; se entreve la vigencia y reconocimiento de los llamados derechos de «tercera generación ».
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 125 — similitud 0.0557
+
+**Detalle de puntaje:** tfidf=0.0457; bonus=0.0100
+
+> Esta posición generó ácidas críticas, y hasta asombro por parte de pensa- : dores que se manifestaban en general coincidentes con las ideas de Rawls. Sin :.;í embargo, y con todo lo problemático que el tema es, no deja de tratarse de una alternativa coherente con la creencia en la posibilidad de una base objetiva de la que se puedan desprender los derechos (o libertades) fundamentales.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 25 — similitud 0.0557
+
+**Detalle de puntaje:** tfidf=0.0357; bonus=0.0200
+
+> La siguiente: "Conjunto de características o cualidades originales que destacan en algunas personas-. Son ideas muy cercanas y se confunden.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 168 — similitud 0.0537
+
+**Detalle de puntaje:** tfidf=0.0437; bonus=0.0100
+
+> VI. LAS PRIMERAS IDEAS SOBRE LOS LÍMITES AL PODER LEGÍTIMO "Alik mahrí tappaa ushezeb shá tuúdu iduú ibirshú liissur" ("Quien va primero, salva a su camarada, quien conoce el camino cuida a su amigo'"). Epopeya de GuiJgamesh, Tablilla IH §1.
+
+**Observación automática:** La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 20 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 09. Contingencia
+
+**Calidad estimada:** media
+**Mejor similitud:** 0.2400
+**Similitud promedio:** 0.0844
+**Fuentes:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf
+**Ubicaciones:** Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 123; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 130; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 145; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 166; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 237; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 238; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 242; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 245; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 279; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 67; Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf, p. 93; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 111; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 114; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 116; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 117; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 21; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 29; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 35; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 64; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 78; Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf, p. 82; Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf, p. 12
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 29 — similitud 0.2400
+
+**Detalle de puntaje:** tfidf=0.2100; bonus=0.0300
+
+> Otro insigne representante del ius positivismo es Hans Kelsen, fundador del Círculo de Viena, quien en su obra La teoría del Derecho de entrada plantea que: “La teoría pura del Derecho es una teoría del derecho positivo; es teoría general del derecho, no una exposición o interpretación de un orden jurídico particular” (p. 15).
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 21 — similitud 0.1295
+
+**Detalle de puntaje:** tfidf=0.0895; bonus=0.0400
+
+> Partiendo del humanismo las corrientes paradigmáticas en las cuales se bifurcó el derecho son el ius naturalismo y el ius positivismo, el pensamiento jurídico posterior se enmarcará en una u otra rama teniendo sus matices distintivos cada una, sin embargo ambas fuentes se apalancarán para así lograr el auge que ha tenido el reconocimiento y protección de los derechos humanos. 1.2.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 78 — similitud 0.1082
+
+**Detalle de puntaje:** tfidf=0.0882; bonus=0.0200
+
+> Derechos humanos. Teorías y doctrinas
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 82 — similitud 0.1082
+
+**Detalle de puntaje:** tfidf=0.0882; bonus=0.0200
+
+> Derechos humanos. Teorías y doctrinas
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 114 — similitud 0.1082
+
+**Detalle de puntaje:** tfidf=0.0882; bonus=0.0200
+
+> Derechos humanos. Teorías y doctrinas
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 238 — similitud 0.0928
+
+**Detalle de puntaje:** tfidf=0.0728; bonus=0.0200
+
+> Fundamentalmente, habrían de abordarse las diversas poleis griegas, que para entonces constituían un número altísimo, en una extensión enorme. De modo que Aristóteles, según parece, puso a sus discípulos a trabajar en la colosal tarea de recopilar todas las formas de gobierno de las ciudades griegas, y sus antecedentes. Habrían reunido 158 pero, si así fue, casi todas se habrían perdido para nosotros.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 279 — similitud 0.0901
+
+**Detalle de puntaje:** tfidf=0.0801; bonus=0.0100
+
+> Al mismo tiempo, la lengua coránica, enseñada en el "kuttáb", y compartida por grupos humanos muy diversos, incluso geográficamente alejados, mantuvo sus connotaciones originales a lo largo de los siglos. Lo más notable de este cuadro es que no se trata de una forma idiomática de elite, reservada a un grupo cerrado, dominante, sino que, por el contrario, es la modalidad de enseñanza más popular. De hecho, para la mayoría de los hombres de las comunidades en cuestión, la única modalidad escolarizada..
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 116 — similitud 0.0796
+
+**Detalle de puntaje:** tfidf=0.0496; bonus=0.0300
+
+> Derechos humanos. Teorías y doctrinas la argumentación propuesta por De George, diciendo (…) exigencias de individuos pertenecientes a generaciones futuras pueden hacerse valer ahora a través de personas o instituciones que les representen.13 El autor supra citado, también menciona como participe de la anterior tesis a D. Callahan, según este no “logra entender como se puede negar la exigencia de un derecho humano fundamental que hace valer una persona que vive en la actualidad dando preferencia a la exigencia condicional que puede hacer valer alguien que existirá en un futuro”; no compartiendo tal tesis, inscribiéndose en el utilitarismo.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 245 — similitud 0.0781
+
+**Detalle de puntaje:** tfidf=0.0581; bonus=0.0200
+
+> De esa manera, el problema de las clases dominantes se resolvía. Era posible acceder a la filosofía griega, sin salir de Roma. Como era de esperarse, las lecciones de Panecio se llenaron de alumnos de las más distinguidas familias políticas, como el ya referido Quinto Mudo Scévola, Este público, diferente del de la escuela estoica en Grecia, marcaría la terir dencia definitiva de la corriente en Roma.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 166 — similitud 0.0758
+
+**Detalle de puntaje:** tfidf=0.0558; bonus=0.0200
+
+> El verdadero problema lo plantea otro tipo de casos, Aquellos en los cuales no hay forma de suponer, lógica y científicamente, una posibilidad de autoconstrucción en el futuro. Un niño que carece de parte del encéfalo (como sucede en el cuadro patológico llamado "anencefalia") nunca podrá desarrollar las funciones que se asocian a la región cerebral que les falta, y que son imprescindibles para la existencia.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 237 — similitud 0.0740
+
+**Detalle de puntaje:** tfidf=0.0540; bonus=0.0200
+
+> 248 RICARDO D. RABINOViCH-BERKMAN todo lo que oliera a macedónico, y el estagirita resolvió marcharse (según una tradición, para "evitar que Atenas pecase contra la filosofía por segunda vez"). Murió en la isla de Eubea al año siguiente.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 12 — similitud 0.0715
+
+**Detalle de puntaje:** tfidf=0.0515; bonus=0.0200
+
+> 11 2. Historia de los derechos humanos en el mundo La formulación actual de los derechos humanos es el resultado de una larga lucha que debe rastrearse en la historia política y filosófica de la humanidad. Su definición responde a las distintas batallas que se libraron por el reconocimiento y respeto del valor más grande con el que cuentan todas las personas y que constituye actualmente el fundamento de todos nuestros derechos: la dignidad humana.
+
+### Los derechos humanos en Mexico - Emilio Alvarez Icaza Longoria.pdf — p. 12 — similitud 0.0703
+
+**Detalle de puntaje:** tfidf=0.0503; bonus=0.0200
+
+> Historia de los derechos humanos en el mundo La formulación actual de los derechos humanos es el resultado de una larga lucha que debe rastrearse en la historia política y filosófica de la humanidad. Su definición responde a las distintas batallas que se libraron por el reconocimiento y respeto del valor más grande con el que cuentan todas las personas y que constituye actualmente el fundamento de todos nuestros derechos: la dignidad humana.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 67 — similitud 0.0700
+
+**Detalle de puntaje:** tfidf=0.0000; bonus=0.0700
+
+> 76 RICARDO D. RABINOV1CH-BERKMAN miles de latinoamericanos y la sumisión de otros millares a toda suerte de ve- jámenes podían ser contingencias perfectamente aceptables en aras de evitar la expansión del marxismo. Todas las dictaduras sudamericanas de este período se proclamaron y mostraron fieles aliadas de los Estados Unidos, y decididas defensoras no sólo de los intereses estratégicos de ese país, sino además de los de las cor- poraciones comerciales privadas vinculadas con él (incluso por la vía de la represión violenta de los reclamos laborales).
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 117 — similitud 0.0700
+
+**Detalle de puntaje:** tfidf=0.0000; bonus=0.0700
+
+> Luis Manuel Marcano Salazar situación; los estragos contra el ambiente ahora no son los mismos de hace cuarenta o cincuenta años atrás, hoy son perceptibles las contingencias naturales cada vez peores; para los que vivieron la tragedia natural de 1999 en el Estado Vargas (Venezuela) se volvió connatural la relación ambiente-vida: Con un mar de fondo se inicia en el estado Vargas la emergencia fue le primer signo de los que sería después una gran tragedia.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 111 — similitud 0.0698
+
+**Detalle de puntaje:** tfidf=0.0498; bonus=0.0200
+
+> La unanimidad demostrada en los principales instrumentos internacionales de derechos humanos al reconocer y garantizar el derecho la vida, no significa que dejen de presentarse, divergencias las cuales versan en torno a tres peculiaridades relevantes como lo son: a. es la base ontológica de todos los otros derechos, b. su violación es irreversible ya que implica la desaparición de su titular. c. la propia definición de “vida” genera conflictos entre conceptos éticos, morales y religiosos, lo que alimenta debates como los sostenidos sobre la eutanasia, el aborto y el suicidio asistido.4 El sentido primordial de este derecho es el de impedir que el Estado, de manera arbitraria, arrebate la...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 35 — similitud 0.0698
+
+**Detalle de puntaje:** tfidf=0.0498; bonus=0.0200
+
+> Luis Manuel Marcano Salazar 2.1- Definición de Derechos Humanos Esta denominación The Right of Man, ha sido adoptada modernamente en el contenido que define a los derechos humanos, entendidos estos desde dos corrientes del pensamiento como lo son la iusnaturalista y la iuspositivista. Aunque, para Nikken (1994), esta contraposición no tiene mayor trascendencia.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 123 — similitud 0.0696
+
+**Detalle de puntaje:** tfidf=0.0496; bonus=0.0200
+
+> En tales circunstancias, habrían de formularse principios generales, de aplica* ción universal (al estilo kantiano), públicos, que resolvieran los conflictos al modo de un tribunal de apelación supremo. En cuanto interesa a nuestro abordaje, Rawls representa una manera reno- vada (que ya denota la marca de las atrocidades vividas en coincidencia con . la pérdida de sentido de las bases objetivas para la construcción de los dere- chos esenciales) de reclamar la existencia de una universalidad ética sobre la que erguir la teoría de esas prerrogativas. Sus resultados prácticos no difieren mucho de los de Kant, aunque la argumentación es completamente diferente.
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 64 — similitud 0.0680
+
+**Detalle de puntaje:** tfidf=0.0480; bonus=0.0200
+
+> 1. derecho a la vida; 2. derecho a la integridad personal; 3. la prohibición de esclavitud y servidumbre; 4. la prohibición de la discriminación; 5. el derecho a la personalidad jurídica; 6. el derecho a la nacionalidad; los derechos políticos; el principio de legalidad y no retroactividad; 7. la libertad de conciencia y religión; 8. la protección a la familia y los derechos del niño; 9. así como las garantías judiciales indispensables para la protección de tales derechos, entre los cuales deben considerarse incluidos el amparo y el hábeas corpus. (p.45) 2.3.6.5.- Son progresivos El desarrollo de la protección internacional de los derechos humanos, si bien ha sido paulatino, a medida que ha...
+
+### Derechos humanos, teorias y doc - Luis Manuel Marcano Salazar.pdf — p. 35 — similitud 0.0664
+
+**Detalle de puntaje:** tfidf=0.0364; bonus=0.0300
+
+> También, en esta materia Faúndez Ledesma (1999), expresa que los derechos humanos pueden definirse como las “Prerrogativas que, conforme al Derecho internacional, tiene todo individuo frente a los órganos del poder para preservar su dignidad como ser humano, y cuya función es excluir la interferencia del Estado en áreas especificas de la vida individual, o asegurar la prestación de determinados servicios por parte del Estado, para satisfacer sus necesidades básicas, y que reflejan las exigencias fundamentales que cada ser humano puede formular a la sociedad de que forma parte” (p.28).
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 93 — similitud 0.0642
+
+**Detalle de puntaje:** tfidf=0.0542; bonus=0.0100
+
+> Sin embargo, como la Comisión es anterior al Pacto de San José, y esa facultad no le ha sido retirada, se entiende que mantiene la posibilidad de procesar peticiones individuales relativas a estados de la OEA que aún no sean parte de esa Convención.
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 130 — similitud 0.0631
+
+**Detalle de puntaje:** tfidf=0.0531; bonus=0.0100
+
+> Comenta con dureza el pensador musulmán contem poráneo S, A. Aideeb Abu-Saieh: "Este pasaje contiene tres conceptos relacionados que son problemáticos para nuestra concepción del co m - portamiento moral: primero, el concepto de un pueblo elegido, que es un concepto racista;segun- do, el concepto de dar la tierra de Canaán a ios judíos, que es un acto de robo; y tercero, el concep- to de circuncisión, que es una práctica mutiladora" {Denniston e t a/., 2004, p. 136 y siguientes).
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 166 — similitud 0.0620
+
+**Detalle de puntaje:** tfidf=0.0520; bonus=0.0100
+
+> Algunas de ellas tienen, sin embargo, en términos aristoté- lico-tomistas, la potencia de hacerlo. Es decir, poseen la posibilidad de auto- construirse en e] futuro. Tal es el caso de los que aún no han nacido (como lo implica, casi poéticamente la clásica expresión nasdturi, "los que tienen la posibilidad de nacer").
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 242 — similitud 0.0552
+
+**Detalle de puntaje:** tfidf=0.0452; bonus=0.0100
+
+> Fue entonces cuando arribó a ia urbe del Lacio, procedente de Grecia, el estoicismo. Esta corriente filosófica, desde el principio, atrajo a importantes juristas la- tinos. Entre ellos, el pontífice máximo Quinto Mucio Scévola (muerto en 82
+
+### Como se hicieron los Derechos H - Ricardo Rabinovich Berkman.pdf — p. 145 — similitud 0.0548
+
+**Detalle de puntaje:** tfidf=0.0348; bonus=0.0200
+
+> Ya la Declaración Universal de 1948 proclamaba en su preámbulo la "dignidad inherente a todos los miembros de la familia humana". Con sagacidad, destaca Andorno que es frente a situaciones de crueldad atroz donde, por contraste, queda claro qué es la dignidad, y cuán lejos está de ser una mera "hipótesis metafísica".
+
+**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 18 referencia(s) de baja similitud que podrían introducir ruido.
