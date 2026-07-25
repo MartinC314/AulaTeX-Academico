@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from collections import deque
 from dataclasses import dataclass
 from pathlib import Path
@@ -222,7 +223,7 @@ class IncrementalDetailPlanner:
         previous_details: dict[str, Any],
     ) -> dict[str, Any]:
         source_artifacts = self._source_artifacts(scope)
-        context_excerpt = self.workspace.context_summary(scope.relative_path, max_chars=5000)
+        context_excerpt = self._activity_context_excerpt(seed_scope, scope, request)
         technique_id = self._infer_didactic_technique(context_excerpt)
         technique_contract = get_technique_contract(technique_id)
         inherited_fixes = self._collect_inherited_compilation_fixes(related_memories, previous_details)
@@ -433,6 +434,35 @@ class IncrementalDetailPlanner:
                 "bibliography_contract": round(min(1.0, 0.2 + memory_score + artifact_score), 2),
             },
         }
+
+    def _activity_context_excerpt(
+        self,
+        seed_scope: EditorialScope,
+        scope: EditorialScope,
+        request: DetailPlannerRequest,
+    ) -> str:
+        if scope.key != seed_scope.key or scope.level != "actividad":
+            return self.workspace.context_summary(scope.relative_path, max_chars=5000)
+
+        parts: list[str] = []
+        target = self.workspace.resolve_target(request.target)
+        if target.is_file():
+            parts.append(self.workspace.context_summary(str(target), max_chars=5000))
+
+        base = self.workspace.resolve_target(scope.relative_path) / "extractor-aulatex"
+        activity_number = int(request.activity_number or 0)
+        if activity_number > 0 and base.is_dir():
+            pattern = re.compile(
+                rf"conceptos-.*-(?:actividad-0?{activity_number}|s0?{activity_number})\b",
+                re.IGNORECASE,
+            )
+            for candidate in sorted(base.glob("conceptos-*")):
+                summary = candidate / "resumen_planeacion.json"
+                if candidate.is_dir() and pattern.search(candidate.name) and summary.is_file():
+                    parts.insert(0, summary.read_text(encoding="utf-8", errors="replace")[:10000])
+                    break
+
+        return "\n\n".join(parts) or self.workspace.context_summary(scope.relative_path, max_chars=5000)
 
     def _compute_novelty_events(
         self,

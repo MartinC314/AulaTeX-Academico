@@ -317,6 +317,53 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
             "y postura personal. La declaración de uso de IA puede ligarse como \\footnote a una frase oportuna de la conclusión."
         ),
     },
+    "mapa_semantico": {
+        "aliases": ("mapa semántico", "mapa semantico", "mapa semántico", "red semántica", "red semantica", "campo semántico", "campo semantico"),
+        "required_visible_elements": ("tema central", "conceptos", "palabras enlace"),
+        "preservation_rule": (
+            "Si el producto es mapa semántico (#70, familia visual-jerárquica homóloga al mapa conceptual), conservar los 3 ELEMENTOS "
+            "OFICIALES: (1) tema central (nodo raíz), (2) conceptos/ideas principales jerarquizados de lo general a lo particular, (3) "
+            "PALABRAS ENLACE sobre las líneas que especifican la relación. Sin palabras enlace no es mapa semántico. Reutiliza el patrón "
+            "TikZ del mapa conceptual (estilos ms*/mc*, landscape, \\resizebox) organizado por CAMPOS SEMÁNTICOS en layout radial."
+        ),
+        "visible_style_rule": (
+            "El criterio de organización y la herramienta didáctica van comentados si son guía editorial; el texto visible entra directo al "
+            "tema sin metadiscurso. El mapa se acompaña de una metodología breve (6 pasos) antes y una lectura del mapa después."
+        ),
+        "campos_semanticos_rule": (
+            "A diferencia del mapa conceptual (proposiciones encadenadas), el mapa semántico organiza por CAMPOS SEMÁNTICOS alrededor de un "
+            "TEMA CENTRAL: raíz al centro-arriba y campos en disposición RADIAL/abanico (below left/below right a distancias crecientes), con "
+            "sus conceptos debajo. Impacto visual de 'un pantallazo del tema': layout radial equilibrado, no columnas largas."
+        ),
+        "palabras_enlace_rule": (
+            "Cada línea (raíz->campo y campo->concepto) DEBE llevar su PALABRA ENLACE explícita (etiqueta itálica sobre la flecha: 'se "
+            "clasifican en', 'comprende', 'se funda en', 'se garantiza con'). Las palabras enlace son un elemento OFICIAL obligatorio del "
+            "mapa semántico y su ausencia lo invalida."
+        ),
+        "fundamento_constitucional_rule": (
+            "REGLA JURÍDICA (cuando el contenido es normativo): CADA concepto debe correlacionarse con su FUNDAMENTO CONSTITUCIONAL EXACTO "
+            "—artículo, fracción, párrafo, inciso o numeral— con las abreviaturas normativas (p.ej. 'art.~1.º, párr.~3.º CPEUM'). El "
+            "fundamento va dentro del nodo concepto o como palabra enlace 'se funda en'. Suele ser el eje de la rúbrica."
+        ),
+        "structure_rule": (
+            "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. El mapa semántico es el "
+            "NÚCLEO del desarrollo: (a) metodología breve (6 pasos) que prepara el mapa, (b) el diagrama en su propia página landscape, (c) "
+            "lectura/interpretación del mapa después. El énfasis es del tema y del mapa."
+        ),
+        "layout_optimizer_rule": (
+            "OBLIGATORIO tras generar/editar el mapa: partir de un layout RELATIVO agrupado por campos (radial) y correr el optimizador "
+            "(aulatex mapa-layout <tex> --write) que resuelve solapes y coloca las palabras enlace anti-empalme. Escalar con "
+            "\\resizebox{!}{0.80\\textheight} en landscape. Verificar el render (view_image); el mapa y su caption caben en la misma página."
+        ),
+        "no_gap_rule": (
+            "PROHIBIDO dejar media página o más en blanco antes del diagrama landscape. Llenar el bloque previo con la metodología/lectura o "
+            "usar \\clearpage. Verificar con pdftoppm que no quede página semivacía antes del mapa ni página landscape vacía extra."
+        ),
+        "closure_rule": (
+            "La conclusión inicia con \\clearpage en su propia página; integra síntesis y postura personal sobre lo representado. La "
+            "declaración de uso de IA se liga como \\footnote a una frase oportuna, nunca como \\section."
+        ),
+    },
     "tabla_didactica": {
         "aliases": ("tabla", "cuadro", "cuadro comparativo", "longtable", "tabular"),
         "required_visible_elements": ("título", "encabezados", "filas", "criterio de lectura"),

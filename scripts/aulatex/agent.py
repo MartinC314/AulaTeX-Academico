@@ -186,11 +186,11 @@ class AulaTeXAgent:
 
         materialization_result: MaterializationResult | None = None
         if self._should_materialize_template(request, target_ctx):
-            workflow.record("materialize-start", "ok", "generar-plantilla materializara estructura canonica de archivos")
+            workflow.record("materialize-start", "ok", f"{request.action} materializara los archivos faltantes de la actividad")
             materialization_result = self.template_materializer.materialize_subject(
                 target_ctx.target_path,
                 activity_number=request.activity_number,
-                force=True,
+                force=request.action.strip().lower() == "generar-plantilla",
             )
             workflow.record(
                 "materialize-end",
@@ -201,7 +201,7 @@ class AulaTeXAgent:
         compile_results = []
         if request.compile_tex:
             workflow.record("tool-select", "ok", "latexmk-build.ps1 seleccionado para compilar objetivos canonicos")
-            for tex in self._select_compile_targets(target_ctx):
+            for tex in self._select_compile_targets(target_ctx, request.activity_number):
                 invocation = safe_invoke(self.workspace.compile_tex, tex, clean_mode="safe")
                 if invocation.ok:
                     build = invocation.result
@@ -485,7 +485,7 @@ class AulaTeXAgent:
         #    (p. ej. .toc ausente) aunque el PDF sí se genere; por eso el éxito se
         #    determina como "rc==0" O "el PDF existe y quedó actualizado".
         if request.run_final_compile:
-            final_targets = self._select_compile_targets(target_ctx)
+            final_targets = self._select_compile_targets(target_ctx, request.activity_number)
             compiled_any = False
             all_ok = True
             for tex in final_targets:
@@ -712,20 +712,30 @@ class AulaTeXAgent:
         slug = child_name.strip().lower().replace(" ", "-")
         return f"{parent_rel}/{slug}"
 
-    def _select_compile_targets(self, target_ctx: AgentTargetContext) -> list[Path]:
+    def _select_compile_targets(self, target_ctx: AgentTargetContext, activity_number: int) -> list[Path]:
         if target_ctx.generation_mode == "downward":
             return []
         tex_files = self.workspace.find_tex_files(target_ctx.target_path, limit=30)
-        reports = [p for p in tex_files if p.name.startswith("reporte-")]
-        presentations = [p for p in tex_files if p.name.startswith("presentacion-")]
+        activity_marker = f"actividad-{int(activity_number)}".lower()
+        reports = [
+            path for path in tex_files
+            if path.name.startswith("reporte-") and activity_marker in path.name.lower()
+        ]
+        presentations = [
+            path for path in tex_files
+            if path.name.startswith("presentacion-") and activity_marker in path.name.lower()
+        ]
         selected = reports[:1] + presentations[:1]
-        return selected or tex_files[:1]
+        return selected
 
     def _should_materialize_template(self, request: AgentRequest, target_ctx: AgentTargetContext) -> bool:
+        action = request.action.strip().lower()
+        if target_ctx.generation_mode != "direct" or request.level not in {"materia", "actividad"}:
+            return False
+        if action == "realizar-actividad":
+            return not self._select_compile_targets(target_ctx, request.activity_number)
         return (
-            request.action.strip().lower() == "generar-plantilla"
-            and target_ctx.generation_mode == "direct"
-            and request.level in {"materia", "actividad"}
+            action == "generar-plantilla"
         )
 
     def _should_run_extractor(self, request: AgentRequest, target_ctx: AgentTargetContext) -> bool:

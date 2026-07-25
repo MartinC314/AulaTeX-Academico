@@ -210,6 +210,10 @@ def infer_technique(tex: str, title: str) -> tuple[str, str, str]:
         r"\\begin\{resenabox\}": "resena",
         r"\\begin\{forobox\}": "foro_diagnostico",
         r"\\begin\{wikibox\}": "socioaprendizaje",
+        # Mapa semántico: estilos TikZ propios msroot/msfield (distintos de los
+        # mcroot/mcbranch del mapa conceptual). Señal fiable del producto gráfico.
+        r"\\node\[msroot\]": "mapa_semantico",
+        r"msroot/\.style": "mapa_semantico",
     }
     for env_pat, env_tid in _ENV_TECH.items():
         if re.search(env_pat, tex) and env_tid in TECHNIQUE_CONTRACTS:
@@ -305,6 +309,7 @@ def detect_all_products(tex: str, title: str) -> list[dict[str, Any]]:
         r"\\begin\{resenabox\}": ("resena", "<recuadro resenabox>"),
         r"\\begin\{forobox\}": ("foro_diagnostico", "<recuadro forobox>"),
         r"\\begin\{wikibox\}": ("socioaprendizaje", "<recuadro wikibox>"),
+        r"\\node\[msroot\]": ("mapa_semantico", "<mapa semántico msroot>"),
     }
     for env_pat, (env_tid, env_origen) in _ENV_PRODUCT.items():
         if re.search(env_pat, tex):
