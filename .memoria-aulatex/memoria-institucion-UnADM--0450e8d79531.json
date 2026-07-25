@@ -390,7 +390,7 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 2 - UnADM",
+        "subject_rule": "Actividad 4 - UnADM",
         "scope_label": "UnADM"
       },
       "didactic_contract": {
@@ -439,8 +439,8 @@
         "institution": "UnADM",
         "career": "",
         "subject": "",
-        "activity": "Actividad 2",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2"
+        "activity": "Actividad 4",
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -502,7 +502,9 @@
           "has_memory": true
         }
       ],
-      "novelty_signals": [],
+      "novelty_signals": [
+        "institutional_identity"
+      ],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -532,7 +534,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260723-011842",
+      "run_id": "20260725-040505",
       "scope_key": "UnADM",
       "related_scope_keys": [
         "UnADM",
@@ -544,7 +546,7 @@
         "UCNL",
         "UnADM/licenciatura-en-derecho-unadm"
       ],
-      "novelty_count": 0
+      "novelty_count": 1
     }
   },
   "curricular_context": {},
