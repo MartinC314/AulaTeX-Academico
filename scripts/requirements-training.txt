@@ -13,7 +13,33 @@
 #
 # Versiones verificadas al instalar (2026-07): boto3 1.43.59, sagemaker 2.257.5,
 # azure-ai-ml 1.34.1, torch 2.13.0+cpu, transformers 4.57.6, peft 0.20.0,
-# trl 0.15.2, datasets 2.21.0, accelerate 0.34.2.
+# trl 0.15.2, datasets 2.21.0, accelerate 1.14.0.
+#
+# ----------------------------------------------------------------- PIPELINE ---
+# Orden de ejecución (cada paso alimenta al siguiente):
+#
+#   1. Generar datos      aulatex activity-optimize --target <ruta> --activity <n>
+#   2. Métricas por ciclo python scripts/aulatex/training_dataset.py
+#                         -> dataset.jsonl + dataset-report.md (tasa de aceptación)
+#   3. Corpus de texto    python scripts/aulatex_training/build_reward_corpus.py
+#                         -> reward.jsonl (regresión) + preference.jsonl (DPO)
+#   4. Validar si vale ML python scripts/aulatex_training/train_policy.py
+#                         Si NO supera el baseline, NO gastes GPU: recalibra a mano.
+#   5. Reward model (GPU) python scripts/aulatex_training/train_reward_model.py \
+#                             --train-file .../reward.jsonl
+#   6. Lanzar a la nube   python scripts/aulatex_training/submit_cloud_job.py \
+#                             --backend aws --check     (y luego --submit --yes)
+#
+# Credenciales AWS:  scripts/aulatex_training/setup_aws_credentials.ps1
+#
+# Mínimos exigidos (los scripts abortan si no se cumplen, por diseño):
+#   train_policy       >= 40 ciclos y >= 8 por clase
+#   train_reward_model >= 50 ejemplos con texto y desviación de scores >= 2.0
+#
+# Cuotas GPU verificadas (laboratorios del hub, 2026-07-24):
+#   AWS  G/VT vCPU = 8  -> ml.g5.2xlarge VIABLE (A10G/L4 24 GB)
+#   AWS  P   vCPU = 8  -> INSERVIBLE: p4d.24xlarge exige 96 vCPU
+#   Azure GPU          -> bloqueado por API en PayAsYouGo (requiere ticket manual)
 
 # --- SDKs de nube (orquestar jobs y datos) ---
 boto3>=1.34.0,<2
