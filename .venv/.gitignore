@@ -1,0 +1,6 @@
+# Ignorar TODO el contenido del entorno virtual...
+*
+# ...excepto los archivos necesarios para reconstruirlo desde cero
+!.gitignore
+!install-venv.ps1
+

@@ -59,7 +59,11 @@ base/Plantilla-Informe/dist/template_config.tex
 .aulatex-temp/
 retroalimentacion-editorial/
 salidas/
-.venv/
+# .venv: versionar la carpeta pero ignorar su contenido (ver .venv/.gitignore),
+# excepto el script de reconstruccion install-venv.ps1
+.venv/*
+!.venv/.gitignore
+!.venv/install-venv.ps1
 logs-compilacion-tex/
 *.xlsx
 *_temp.tex
