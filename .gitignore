@@ -70,7 +70,7 @@ logs-compilacion-tex/
 TODO.txt
 scripts/preview/
 scripts/tikz-preview/
-scripts/aulatex.env
+# scripts/aulatex.env se versiona con secretos cifrados (enc:); la clave secret.key permanece ignorada.
 
 # Incubadora local: conservar carpeta, ignorar contenido
 upgrade/*
