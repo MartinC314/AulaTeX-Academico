@@ -101,29 +101,43 @@ def load_aulatex_env(path: str | Path | None = None, *, override: bool = True) -
     return EnvLoadResult(env_path, True, loaded, skipped)
 
 
-def _decrypt_local_secrets() -> None:
-    """Descifra en os.environ los valores con prefijo ``enc:`` usando la clave
-    local del proyecto (scripts/secret.key). Silencioso si no hay clave/módulo."""
-    if not any(str(v).startswith("enc:") for v in os.environ.values()):
-        return
+ENC_PREFIX = "enc:"
+
+
+def _secrets_module():
+    """Carga perezosamente scripts/secrets_local.py. Devuelve None si no se puede."""
     try:
         import importlib.util
 
         module_path = repo_root() / "scripts" / "secrets_local.py"
         if not module_path.exists():
-            return
+            return None
         spec = importlib.util.spec_from_file_location("aulatex_secrets_local", module_path)
         if spec is None or spec.loader is None:
-            return
+            return None
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
+        return mod
+    except Exception:
+        return None
+
+
+def _decrypt_local_secrets() -> None:
+    """Descifra en os.environ los valores con prefijo ``enc:`` usando la clave
+    local del proyecto (scripts/secret.key). Silencioso si no hay clave/módulo."""
+    if not any(str(v).startswith(ENC_PREFIX) for v in os.environ.values()):
+        return
+    try:
+        mod = _secrets_module()
+        if mod is None:
+            return
         fernet = mod.resolve_fernet(create=False)
         if fernet is None:
             return
         from cryptography.fernet import InvalidToken
 
         for key, value in list(os.environ.items()):
-            if isinstance(value, str) and value.startswith("enc:"):
+            if isinstance(value, str) and value.startswith(ENC_PREFIX):
                 try:
                     os.environ[key] = fernet.decrypt(value[4:].encode("ascii")).decode("utf-8")
                 except InvalidToken:
@@ -131,6 +145,64 @@ def _decrypt_local_secrets() -> None:
     except Exception:
         # El descifrado es best-effort; si falla, se dejan los valores tal cual.
         pass
+
+
+def decrypt_value(value: str) -> str:
+    """Descifra un valor ``enc:`` individual. Devuelve el original si no se puede."""
+    if not isinstance(value, str) or not value.startswith(ENC_PREFIX):
+        return value
+    mod = _secrets_module()
+    if mod is None:
+        return value
+    try:
+        fernet = mod.resolve_fernet(create=False)
+        if fernet is None:
+            return value
+        return fernet.decrypt(value[len(ENC_PREFIX):].encode("ascii")).decode("utf-8")
+    except Exception:
+        return value
+
+
+def encrypt_env_secrets(path: str | Path | None = None) -> int:
+    """Cifra en el archivo .env los valores secretos que aún estén en claro.
+
+    Devuelve el número de claves cifradas. Si no hay módulo de cifrado
+    disponible, devuelve -1 para que la interfaz pueda avisar al usuario.
+    """
+    env_path = Path(path or os.getenv("AULATEX_ENV_PATH") or default_env_path()).expanduser().resolve()
+    if not env_path.exists():
+        return 0
+    mod = _secrets_module()
+    if mod is None:
+        return -1
+    try:
+        return _encrypt_with(mod, env_path)
+    except Exception:
+        return -1
+
+
+def _encrypt_with(mod, env_path: Path) -> int:
+    fernet = mod.resolve_fernet(create=True)
+    if fernet is None:
+        return -1
+    out_lines: list[str] = []
+    cifrados = 0
+    for raw_line in env_path.read_text(encoding="utf-8", errors="replace").splitlines():
+        stripped = raw_line.strip()
+        if stripped and not stripped.startswith("#") and "=" in stripped:
+            candidate = stripped[7:].strip() if stripped.lower().startswith("export ") else stripped
+            name, _, value = candidate.partition("=")
+            name = name.strip()
+            value = _strip_env_value(value)
+            if value and not value.startswith(ENC_PREFIX) and mod._is_secret_name(name):
+                token = fernet.encrypt(value.encode("utf-8")).decode("ascii")
+                out_lines.append(f"{name}={ENC_PREFIX}{token}")
+                cifrados += 1
+                continue
+        out_lines.append(raw_line)
+    if cifrados:
+        env_path.write_text("\n".join(out_lines) + "\n", encoding="utf-8")
+    return cifrados
 
 
 def credential_status() -> list[CredentialStatus]:
@@ -281,7 +353,11 @@ def credential_catalog() -> tuple[CredentialGroup, ...]:
 
 
 def read_env_values(keys: "list[str] | tuple[str, ...]", path: str | Path | None = None) -> dict[str, str]:
-    """Lee valores actuales del archivo .env sin tocar os.environ."""
+    """Lee valores actuales del archivo .env sin tocar os.environ.
+
+    Los valores cifrados (``enc:``) se devuelven ya descifrados para que la
+    interfaz de credenciales muestre el secreto real.
+    """
 
     env_path = Path(path or os.getenv("AULATEX_ENV_PATH") or default_env_path()).expanduser()
     result: dict[str, str] = {key: "" for key in keys}
@@ -297,7 +373,7 @@ def read_env_values(keys: "list[str] | tuple[str, ...]", path: str | Path | None
         name, value = line.split("=", 1)
         name = name.strip()
         if name in wanted:
-            result[name] = _strip_env_value(value)
+            result[name] = decrypt_value(_strip_env_value(value))
     return result
 
 
@@ -306,6 +382,7 @@ def write_env_values(
     path: str | Path | None = None,
     *,
     reload: bool = True,
+    encrypt: bool = True,
 ) -> Path:
     """Actualiza o inserta claves en el archivo .env preservando comentarios y orden.
 
@@ -313,6 +390,8 @@ def write_env_values(
       vacío se dejan intactas (no se borran del archivo).
     - Los valores que contienen espacios o caracteres especiales se entrecomillan.
     - Las claves nuevas se agregan al final bajo una sección gestionada.
+    - Con ``encrypt=True`` (por defecto) los secretos se cifran con la clave local
+      antes de escribirse, de modo que nunca quedan en claro en el archivo.
     """
 
     env_path = Path(path or os.getenv("AULATEX_ENV_PATH") or default_env_path()).expanduser().resolve()
@@ -349,6 +428,9 @@ def write_env_values(
             updated_lines.append(f"{name}={_quote_env_value(value)}")
 
     env_path.write_text("\n".join(updated_lines) + "\n", encoding="utf-8")
+
+    if encrypt:
+        encrypt_env_secrets(env_path)
 
     if reload:
         load_aulatex_env(env_path)

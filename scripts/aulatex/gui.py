@@ -18,6 +18,7 @@ from .config import (
     credential_catalog,
     credential_status,
     diagnostic_metrics_enabled,
+    encrypt_env_secrets,
     read_env_values,
     write_env_values,
 )
@@ -291,6 +292,7 @@ class AulaTeXApp(tk.Tk):
         self.credentials_save_button.grid(row=0, column=0, sticky="w")
         ttk.Button(actions, text="Recargar desde .env", command=self._reload_credentials).grid(row=0, column=1, sticky="w", padx=(8, 0))
         ttk.Button(actions, text="Verificar estado", command=self._refresh_credential_status).grid(row=0, column=2, sticky="w", padx=(8, 0))
+        ttk.Button(actions, text="Cifrar secretos ahora", command=self._encrypt_credentials).grid(row=0, column=3, sticky="w", padx=(8, 0))
 
         self.credentials_status_text = ttk.Label(self.credentials_tab, text="", foreground="#2e7d32")
         self.credentials_status_text.grid(row=4, column=0, sticky="w", pady=(6, 0))
@@ -306,7 +308,12 @@ class AulaTeXApp(tk.Tk):
             "   preservando comentarios y el orden existente; los campos vacíos no borran claves.\n"
             "4. 'Recargar desde .env' descarta los cambios sin guardar y vuelve a leer el archivo.\n"
             "5. 'Verificar estado' recalcula qué motores tienen sus tres claves obligatorias completas.\n"
-            "6. Las credenciales quedan embebidas localmente; no se envían a ningún servicio al guardarlas.",
+            "6. Al guardar, los secretos se cifran automáticamente con la clave local\n"
+            "   (scripts/secret.key) y quedan en el .env con el prefijo 'enc:'.\n"
+            "7. 'Cifrar secretos ahora' fuerza el cifrado de cualquier valor que haya quedado en claro.\n"
+            "8. Respalda scripts/secret.key fuera del repositorio: sin ella los valores 'enc:'\n"
+            "   son irrecuperables y habría que rotar todas las claves.\n"
+            "9. Las credenciales quedan embebidas localmente; no se envían a ningún servicio al guardarlas.",
         )
 
     def _refresh_credential_status(self) -> None:
@@ -356,10 +363,33 @@ class AulaTeXApp(tk.Tk):
             messagebox.showerror("AulaTeX", f"No se pudieron guardar las credenciales: {exc}")
             return
         self.credentials_status_text.configure(
-            text=f"Credenciales guardadas en {written_path}",
+            text=f"Credenciales guardadas y cifradas en {written_path}",
             foreground="#2e7d32",
         )
         self._refresh_credential_status()
+
+    def _encrypt_credentials(self) -> None:
+        try:
+            cifrados = encrypt_env_secrets(self.llm.env_path)
+        except Exception as exc:  # noqa: BLE001
+            messagebox.showerror("AulaTeX", f"No se pudieron cifrar los secretos: {exc}")
+            return
+        if cifrados < 0:
+            self.credentials_status_text.configure(
+                text="No hay clave local disponible; instala 'cryptography' y verifica scripts/secret.key.",
+                foreground="#c62828",
+            )
+            return
+        if cifrados == 0:
+            self.credentials_status_text.configure(
+                text="Todos los secretos del .env ya estaban cifrados.",
+                foreground="#2e7d32",
+            )
+            return
+        self.credentials_status_text.configure(
+            text=f"Cifrados {cifrados} secretos en el archivo .env.",
+            foreground="#2e7d32",
+        )
 
     def _build_llm_tab(self) -> None:
         self.llm_tab.columnconfigure(0, weight=1)

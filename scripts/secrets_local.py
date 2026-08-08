@@ -29,9 +29,14 @@ ENC_PREFIX = "enc:"
 # Claves que se consideran secretas (se cifran). El resto queda en claro.
 _SECRET_HINTS = ("API_KEY", "TOKEN", "SECRET", "PASSWORD", "_KEY", "ACCESS_KEY_ID")
 
+# Nombres que contienen una pista de secreto pero NO lo son (limites, flags...).
+_SECRET_EXCLUDES = ("MAX_TOKENS", "TOKENS_LIMIT", "TOKEN_LIMIT", "KEY_VAULT_NAME")
+
 
 def _is_secret_name(name: str) -> bool:
     up = name.upper()
+    if any(x in up for x in _SECRET_EXCLUDES):
+        return False
     return any(h in up for h in _SECRET_HINTS)
 
 
