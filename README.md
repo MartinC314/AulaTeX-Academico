@@ -332,6 +332,48 @@ institucionales. Licencia base: MIT.
 Use `scripts/aulatex.env` o variables de entorno locales para configurar
 proveedores. No publiques llaves reales en este archivo.
 
+### PIN maestro y rotacion de claves
+
+Los secretos de `scripts/aulatex.env` se guardan cifrados con prefijo `enc:`
+(Fernet). La clave se deriva del PIN maestro `$env:AHK_MASTER_PIN` mediante
+PBKDF2-SHA256 (480 000 iteraciones) sobre `scripts/secret.salt`. El PIN nunca se
+escribe en disco; el salt y `secret.key` estan en `.gitignore`.
+
+```powershell
+# Sesion actual
+$env:AHK_MASTER_PIN = '<pin>'
+
+# Persistente para el usuario (opcional)
+[Environment]::SetEnvironmentVariable('AHK_MASTER_PIN', '<pin>', 'User')
+```
+
+Rotacion con `az` y `aws` (`scripts/rotate-keys.ps1`). Regenera la clave en el
+proveedor y la escribe cifrada; el valor en claro viaja solo por stdin, nunca por
+argv ni por el historial de PowerShell.
+
+```powershell
+# Azure AI / Cognitive Services
+.\scripts\rotate-keys.ps1 -Provider Azure `
+  -AccountName carlosmauriciocarvajalcoronado-4 -ResourceGroup maurygrupo `
+  -AzureEnvName AZURE_API_KEY,MODEL_ROUTER_API_KEY,GPT_PRO_API_KEY,CODEX_API_KEY
+
+# AWS IAM (Polly). Sin -DeactivateOld la clave anterior sigue activa.
+.\scripts\rotate-keys.ps1 -Provider Aws -IamUserName <usuario-iam> -DeactivateOld
+
+# Simulacion previa
+.\scripts\rotate-keys.ps1 -Provider All -AccountName ... -ResourceGroup ... -IamUserName ... -WhatIf
+```
+
+Utilidades de `scripts/secrets_local.py`:
+
+```powershell
+python scripts\secrets_local.py encrypt aulatex.env       # cifra valores en claro
+python scripts\secrets_local.py decrypt-env aulatex.env   # NOMBRE<TAB>valor
+'<valor>' | python scripts\secrets_local.py set-value aulatex.env NOMBRE
+```
+
+Requisitos: `az login` y `aws configure` previos.
+
 ```env
 # Opcion compatible OpenAI/Azure v1 preferida por este repo:
 OPENAI_BASE_URL=https://example-resource.openai.azure.com/openai/v1/
