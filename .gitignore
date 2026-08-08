@@ -111,3 +111,7 @@ scripts/secret.key
 # Respaldos automaticos del .env: pueden contener secretos en claro
 scripts/aulatex.env.bak-*
 **/*.env.bak-*
+
+# Salt de derivacion del PIN maestro (AHK_MASTER_PIN)
+scripts/secret.salt
+**/secret.salt
