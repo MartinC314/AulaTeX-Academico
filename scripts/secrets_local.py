@@ -9,22 +9,32 @@ Comandos:
     python secrets_local.py encrypt aulatex.env      # cifra los secretos del .env
     python secrets_local.py decrypt-env aulatex.env  # imprime NAME<TAB>plano (PowerShell)
     python secrets_local.py hydrate aulatex.env      # descifra en os.environ (Python)
+    python secrets_local.py set-value aulatex.env NOMBRE  # cifra un valor leido de stdin
 
 Resolución de la clave:
-    1. Variable de entorno ``AULATEX_SECRET_KEY`` (clave Fernet directa).
-    2. Archivo ``secret.key`` junto a este script.
+    1. Variable de entorno ``AHK_MASTER_PIN`` (PIN maestro; deriva la clave Fernet
+       con PBKDF2-SHA256 sobre ``secret.salt``). Es el mecanismo preferido: el PIN
+       nunca toca el disco.
+    2. Variable de entorno ``AULATEX_SECRET_KEY`` (clave Fernet directa).
+    3. Archivo ``secret.key`` junto a este script (modo heredado).
 """
 from __future__ import annotations
 
+import base64
 import os
 import sys
 from pathlib import Path
 
 from cryptography.fernet import Fernet, InvalidToken
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
 HERE = Path(__file__).resolve().parent
 SECRET_KEY_PATH = HERE / "secret.key"
+SECRET_SALT_PATH = HERE / "secret.salt"
 ENC_PREFIX = "enc:"
+PIN_ENV_VAR = "AHK_MASTER_PIN"
+PBKDF2_ITERATIONS = 480_000
 
 # Claves que se consideran secretas (se cifran). El resto queda en claro.
 _SECRET_HINTS = ("API_KEY", "TOKEN", "SECRET", "PASSWORD", "_KEY", "ACCESS_KEY_ID")
@@ -40,7 +50,44 @@ def _is_secret_name(name: str) -> bool:
     return any(h in up for h in _SECRET_HINTS)
 
 
+def _restrict_permissions(path: Path) -> None:
+    try:
+        os.chmod(path, 0o600)
+    except OSError:
+        pass
+
+
+def _resolve_salt(create: bool = False) -> bytes | None:
+    """Salt publico de derivacion. No es secreto, pero debe ser estable."""
+    if SECRET_SALT_PATH.exists():
+        return SECRET_SALT_PATH.read_bytes().strip()
+    if create:
+        salt = base64.urlsafe_b64encode(os.urandom(16))
+        SECRET_SALT_PATH.write_bytes(salt)
+        _restrict_permissions(SECRET_SALT_PATH)
+        return salt
+    return None
+
+
+def fernet_from_pin(pin: str, create_salt: bool = False) -> Fernet | None:
+    salt = _resolve_salt(create=create_salt)
+    if salt is None:
+        return None
+    kdf = PBKDF2HMAC(
+        algorithm=hashes.SHA256(),
+        length=32,
+        salt=salt,
+        iterations=PBKDF2_ITERATIONS,
+    )
+    return Fernet(base64.urlsafe_b64encode(kdf.derive(pin.encode("utf-8"))))
+
+
 def resolve_fernet(create: bool = False) -> Fernet | None:
+    pin = os.getenv(PIN_ENV_VAR, "").strip()
+    if pin:
+        f = fernet_from_pin(pin, create_salt=create)
+        if f is not None:
+            return f
     env_key = os.getenv("AULATEX_SECRET_KEY", "").strip()
     if env_key:
         return Fernet(env_key.encode("utf-8"))
@@ -49,10 +96,7 @@ def resolve_fernet(create: bool = False) -> Fernet | None:
     if create:
         key = Fernet.generate_key()
         SECRET_KEY_PATH.write_bytes(key)
-        try:
-            os.chmod(SECRET_KEY_PATH, 0o600)
-        except OSError:
-            pass
+        _restrict_permissions(SECRET_KEY_PATH)
         return Fernet(key)
     return None
 
@@ -120,6 +164,43 @@ def cmd_decrypt_env(env_file: str) -> int:
     return 0
 
 
+def cmd_set_value(env_file: str, name: str) -> int:
+    """Cifra un valor leido de stdin y lo escribe en el .env.
+
+    El valor nunca pasa por argv, asi no queda en el historial del shell.
+    """
+    path = HERE / env_file if not Path(env_file).is_absolute() else Path(env_file)
+    f = resolve_fernet(create=True)
+    if f is None:
+        print("No hay clave disponible: define AHK_MASTER_PIN.", file=sys.stderr)
+        return 1
+
+    plain = sys.stdin.read().strip()
+    if not plain:
+        print("No se recibio ningun valor por stdin.", file=sys.stderr)
+        return 1
+
+    token = ENC_PREFIX + f.encrypt(plain.encode("utf-8")).decode("ascii")
+
+    lines = path.read_text(encoding="utf-8").splitlines() if path.exists() else []
+    out_lines: list[str] = []
+    replaced = False
+    for line in lines:
+        existing, _ = _parse_line(line)
+        if existing == name:
+            out_lines.append(f"{name}={token}")
+            replaced = True
+        else:
+            out_lines.append(line)
+    if not replaced:
+        out_lines.append(f"{name}={token}")
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(out_lines) + "\n", encoding="utf-8")
+    print(f"{name} cifrado en {path.name}")
+    return 0
+
+
 def hydrate(env_file: str) -> None:
     """Descifra los valores enc: del .env directamente en os.environ."""
     path = HERE / env_file if not Path(env_file).is_absolute() else Path(env_file)
@@ -149,6 +230,8 @@ def main() -> int:
         return cmd_encrypt(sys.argv[2])
     if cmd == "decrypt-env" and len(sys.argv) >= 3:
         return cmd_decrypt_env(sys.argv[2])
+    if cmd == "set-value" and len(sys.argv) >= 4:
+        return cmd_set_value(sys.argv[2], sys.argv[3])
     if cmd == "hydrate" and len(sys.argv) >= 3:
         hydrate(sys.argv[2])
         return 0
