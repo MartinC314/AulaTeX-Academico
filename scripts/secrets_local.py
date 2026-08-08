@@ -175,7 +175,8 @@ def cmd_set_value(env_file: str, name: str) -> int:
         print("No hay clave disponible: define AHK_MASTER_PIN.", file=sys.stderr)
         return 1
 
-    plain = sys.stdin.read().strip()
+    # PowerShell 5.1 antepone un BOM al canalizar hacia stdin; corrompe la clave.
+    plain = sys.stdin.read().lstrip("\ufeff").strip()
     if not plain:
         print("No se recibio ningun valor por stdin.", file=sys.stderr)
         return 1

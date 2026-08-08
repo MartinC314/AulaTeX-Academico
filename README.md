@@ -347,21 +347,28 @@ $env:AHK_MASTER_PIN = '<pin>'
 [Environment]::SetEnvironmentVariable('AHK_MASTER_PIN', '<pin>', 'User')
 ```
 
-Rotacion con `az` y `aws` (`scripts/rotate-keys.ps1`). Regenera la clave en el
-proveedor y la escribe cifrada; el valor en claro viaja solo por stdin, nunca por
-argv ni por el historial de PowerShell.
+`scripts/sync-keys.ps1` sustituye las claves del `.env` con las de tus
+suscripciones. Recorre todas las suscripciones de `az account list`, inventaria
+las cuentas de Cognitive Services y asocia cada variable `*_API_KEY` con la
+cuenta cuyo host coincide con su `*_BASE_URL` o `*_ENDPOINT` hermano. El valor en
+claro viaja solo por stdin: nunca por argv ni por el historial de PowerShell.
 
 ```powershell
-# Azure AI / Cognitive Services
-.\scripts\rotate-keys.ps1 -Provider Azure `
-  -AccountName carlosmauriciocarvajalcoronado-4 -ResourceGroup maurygrupo `
-  -AzureEnvName AZURE_API_KEY,MODEL_ROUTER_API_KEY,GPT_PRO_API_KEY,CODEX_API_KEY
+# Inventario y plan, sin escribir nada
+.\scripts\sync-keys.ps1 -WhatIf
+
+# Sincroniza las claves vigentes (respalda el .env antes)
+.\scripts\sync-keys.ps1
+
+# Rotacion real: regenera key1 en Azure y sustituye
+.\scripts\sync-keys.ps1 -Rotate
+
+# Acotar a ciertas variables o suscripciones
+.\scripts\sync-keys.ps1 -Name MODEL_ROUTER_API_KEY,CODEX_API_KEY
+.\scripts\sync-keys.ps1 -Subscription 'Suscripcion Maury'
 
 # AWS IAM (Polly). Sin -DeactivateOld la clave anterior sigue activa.
-.\scripts\rotate-keys.ps1 -Provider Aws -IamUserName <usuario-iam> -DeactivateOld
-
-# Simulacion previa
-.\scripts\rotate-keys.ps1 -Provider All -AccountName ... -ResourceGroup ... -IamUserName ... -WhatIf
+.\scripts\sync-keys.ps1 -IamUserName <usuario-iam> -DeactivateOld
 ```
 
 Utilidades de `scripts/secrets_local.py`:
