@@ -16,8 +16,15 @@ LLM_ENGINES = (
     "GPT-Pro",
     "Codex",
     "Mistral-Large-3",
+    "Mistral-Matematicas",
+    "Mistral-Medium-DZ",
+    "Grok-Pensamiento-Libre",
     "DeepSeek-V4-Pro",
     "GPT-Chat-Latest",
+    # Replicas DataZoneStandard: mismo modelo, cuota independiente.
+    "GPT-5.6-SOL-DZ",
+    "GPT-5.6-Luna-DZ",
+    "GPT-5.6-Terra-DZ",
 )
 
 ENGINE_ENV_PREFIX = {
@@ -30,8 +37,14 @@ ENGINE_ENV_PREFIX = {
     "Codex": "CODEX",
     # LLMs adicionales presentes en aulatex.env (protocolo chat/completions).
     "Mistral-Large-3": "MISTRAL_LARGE_3",
+    "Mistral-Matematicas": "MISTRAL_MATEMATICAS",
+    "Mistral-Medium-DZ": "MISTRAL_MEDIUM_DZ",
+    "Grok-Pensamiento-Libre": "GROK_PENSAMIENTO_LIBRE",
     "DeepSeek-V4-Pro": "DEEPSEEK_V4_PRO",
     "GPT-Chat-Latest": "GPT_CHAT_LATEST",
+    "GPT-5.6-SOL-DZ": "AZURE_OPENAI_GPT_5_6_SOL_DZ",
+    "GPT-5.6-Luna-DZ": "AZURE_OPENAI_GPT_5_6_LUNA_DZ",
+    "GPT-5.6-Terra-DZ": "AZURE_OPENAI_GPT_5_6_TERRA_DZ",
     # Anthropic Sonnet/Haiku (mismo endpoint que Claude Foundry, otro deployment).
     "Claude Sonnet": "ANTHROPIC_SONNET",
     "Claude Haiku": "ANTHROPIC_HAIKU",

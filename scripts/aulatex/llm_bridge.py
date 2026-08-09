@@ -30,12 +30,19 @@ _SAFETY_NET_ENGINE = "Claude Foundry"
 #   - razonamiento / analisis      -> Codex -> Claude Foundry -> GPT-Pro
 #   - revision / correccion        -> GPT-Pro -> Claude Foundry -> Codex
 #   - rapido / borradores          -> Auto (model-router) -> Claude Foundry
+#   - matematicas                  -> Mistral-Matematicas -> GPT-Pro
+#   - exploracion / ideacion       -> Grok-Pensamiento-Libre -> Claude Foundry
 _TASK_ENGINE_CHAINS: dict[str, list[str]] = {
     "redaccion": ["Claude Foundry", "GPT-Pro", "Codex"],
     "codigo": ["Codex", "GPT-Pro", "Claude Foundry"],
     "razonamiento": ["Codex", "Claude Foundry", "GPT-Pro"],
     "revision": ["GPT-Pro", "Claude Foundry", "Codex"],
     "rapido": ["Auto (model-router)", "Claude Foundry"],
+    "matematicas": ["Mistral-Matematicas", "Mistral-Medium-DZ", "GPT-Pro", "Codex"],
+    "exploracion": ["Grok-Pensamiento-Libre", "Claude Foundry", "GPT-Pro"],
+    # Las replicas -DZ usan cuota DataZone independiente: absorben el 429 de la
+    # cuota GlobalStandard, que esta saturada para los tres GPT-5.6.
+    "volumen": ["GPT-5.6-SOL-DZ", "GPT-5.6-Luna-DZ", "GPT-5.6-Terra-DZ", "Auto (model-router)"],
     "default": ["Codex", "Claude Foundry", "GPT-Pro"],
 }
 
@@ -60,6 +67,8 @@ _THEORETICAL_LIMITS = {
     "model-router": {"input": 1_015_808, "output": 32_768},
     "gpt-5.3-codex": {"input": 272_000, "output": 128_000},
     "claude-opus-4-8": {"input": 1_000_000, "output": 128_000},
+    "mistral-matematicas": {"input": 126_976, "output": 4_096},
+    "grok-pensamiento-libre": {"input": 256_000, "output": 32_768},
 }
 
 
