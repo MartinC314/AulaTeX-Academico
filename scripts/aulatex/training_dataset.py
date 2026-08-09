@@ -250,6 +250,11 @@ def main(argv: list[str] | None = None) -> int:
                         help="Ruta del reporte Markdown (por defecto, junto al dataset).")
     args = parser.parse_args(argv)
 
+    # La consola de Windows usa cp1252 y aborta con UnicodeEncodeError ante 'Δ' o acentos.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="replace")
+
     runs_dir = Path(args.runs_dir).resolve()
     output_path = Path(args.output).resolve()
     report_path = Path(args.report).resolve() if args.report else output_path.with_name("dataset-report.md")
