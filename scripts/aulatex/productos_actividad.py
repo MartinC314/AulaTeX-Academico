@@ -181,7 +181,13 @@ _TEMPLATE_NOISE = (
 )
 
 # Aliases demasiado genéricos: solo cuentan si aparecen en el TÍTULO, no en el cuerpo.
-_TITLE_ONLY_ALIASES = {"diagnóstico", "diagnostico", "conceptos", "diagrama", "situación", "situacion"}
+# "resumen"/"síntesis": la plantilla da a TODO reporte una sección abstract llamada
+# "Resumen", así que en el cuerpo no distinguen el producto (un cuadro comparativo
+# se detectaría como resumen). En el título sí son señal fiable.
+_TITLE_ONLY_ALIASES = {
+    "diagnóstico", "diagnostico", "conceptos", "diagrama", "situación", "situacion",
+    "resumen", "síntesis", "sintesis",
+}
 
 
 def _strip_template_noise(text: str) -> str:
@@ -220,11 +226,11 @@ def infer_technique(tex: str, title: str) -> tuple[str, str, str]:
             return env_tid, "<recuadro>", "alta"
 
     # Paso 1: match por título O producto declarado (el más específico gana) -> alta.
+    # Los alias genéricos SÍ valen aquí: es el lugar donde son señal fiable del
+    # producto. Los pasos siguientes (cuerpo) sí deben descartarlos.
     best_title: Optional[tuple[int, str, str]] = None
     for tech_id, contract in TECHNIQUE_CONTRACTS.items():
         for alias in contract.get("aliases", ()):
-            if alias in _TITLE_ONLY_ALIASES:
-                continue
             alias_n = _norm(alias)
             if not alias_n:
                 continue

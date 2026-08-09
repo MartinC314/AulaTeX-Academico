@@ -414,6 +414,7 @@ class IntelligentEngine:
         else:
             tex_candidates = []
 
+        requested_activity = int(request.activity_number or 0)
         for tex in tex_candidates:
             tex_kind = self._detect_tex_kind(tex)
             if tex_kind == "report" and not request.include_reports:
@@ -421,6 +422,11 @@ class IntelligentEngine:
             if tex_kind == "presentation" and not request.include_presentations:
                 continue
             if tex_kind == "other":
+                continue
+            # --activity N acota el inventario a esa actividad; sin ella se
+            # inventaria todo. Sin este filtro el motor prioriza por score y
+            # elige otra actividad aunque se haya pedido una concreta.
+            if requested_activity > 0 and self._extract_activity_number(tex.stem) != requested_activity:
                 continue
             pdf_path = tex.with_suffix(".pdf")
             items.append(

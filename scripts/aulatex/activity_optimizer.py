@@ -924,7 +924,7 @@ class ActivityOptimizer:
         )
 
     def _cycle_dict(self, c: CycleRecord) -> dict[str, Any]:
-        return {
+        payload = {
             "cycle": c.index,
             "engine": c.engine,
             "accepted": c.accepted,
@@ -937,6 +937,9 @@ class ActivityOptimizer:
             "semantic_blocking_before": c.semantic_blocking_before,
             "semantic_blocking_after": c.semantic_blocking_after,
         }
+        if c.panel_verdict is not None:
+            payload["panel_verdict"] = c.panel_verdict
+        return payload
 
     def _render_report(self, manifest: dict[str, Any]) -> str:
         lines = [
