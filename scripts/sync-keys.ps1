@@ -1,7 +1,7 @@
 <#
 .SYNOPSIS
     Sustituye las claves de scripts/aulatex.env con las de tus suscripciones de
-    Azure (az cli) y AWS (aws cli), cifradas con el PIN maestro $env:AHK_MASTER_PIN.
+    Azure (az cli) y AWS (aws cli), cifradas con el PIN maestro $env:AULATEX_MASTER_PIN.
 
 .DESCRIPTION
     Recorre TODAS las suscripciones visibles con `az account list`, inventaria las
@@ -22,7 +22,7 @@
     Sin este switch solo se sincroniza la clave vigente.
 
 .EXAMPLE
-    $env:AHK_MASTER_PIN = '<pin>'
+    $env:AULATEX_MASTER_PIN = '<pin>'
     .\scripts\sync-keys.ps1 -WhatIf          # inventario y plan, sin escribir
 
 .EXAMPLE
@@ -65,8 +65,8 @@ $envPath    = if ([IO.Path]::IsPathRooted($EnvFile)) { $EnvFile } else { Join-Pa
 $venvPython = Join-Path $repoRoot '.venv\Scripts\python.exe'
 $pythonCmd  = if (Test-Path $venvPython) { $venvPython } else { 'python' }
 
-if ([string]::IsNullOrWhiteSpace($env:AHK_MASTER_PIN)) {
-    throw "Define el PIN maestro antes de sincronizar: `$env:AHK_MASTER_PIN = '<pin>'"
+if ([string]::IsNullOrWhiteSpace($env:AULATEX_MASTER_PIN)) {
+    throw "Define el PIN maestro antes de sincronizar: `$env:AULATEX_MASTER_PIN = '<pin>'"
 }
 if (-not (Test-Path $secretsPy)) { throw "No se encontro $secretsPy." }
 if (-not (Test-Path $envPath))   { throw "No se encontro $envPath." }

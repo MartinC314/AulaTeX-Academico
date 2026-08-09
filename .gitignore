@@ -112,6 +112,6 @@ scripts/secret.key
 scripts/aulatex.env.bak-*
 **/*.env.bak-*
 
-# Salt de derivacion del PIN maestro (AHK_MASTER_PIN)
+# Salt de derivacion del PIN maestro (AULATEX_MASTER_PIN)
 scripts/secret.salt
 **/secret.salt

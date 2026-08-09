@@ -24,7 +24,7 @@
     repositorio es publico.
 
 .PARAMETER Persist
-    Guarda el PIN nuevo en la variable de usuario AHK_MASTER_PIN. Comodo, pero
+    Guarda el PIN nuevo en la variable de usuario AULATEX_MASTER_PIN. Comodo, pero
     lo deja legible por cualquier proceso de tu sesion; sin este switch solo se
     define para la consola actual.
 
@@ -120,7 +120,7 @@ finally {
 }
 
 # --- Verificacion ------------------------------------------------------------
-$env:AHK_MASTER_PIN = $new
+$env:AULATEX_MASTER_PIN = $new
 $check = & $python $secretsPy decrypt-env $EnvFile 2>&1
 $okCount = ($check | Where-Object { $_ -match "`t" }).Count
 
@@ -133,8 +133,8 @@ Write-Host "Verificado: $okCount de $encCount secretos descifran con el PIN nuev
 Remove-Item $saltBackup -Force
 
 if ($Persist) {
-    [Environment]::SetEnvironmentVariable('AHK_MASTER_PIN', $new, 'User')
-    Write-Host 'PIN guardado en la variable de usuario AHK_MASTER_PIN.' -ForegroundColor Green
+    [Environment]::SetEnvironmentVariable('AULATEX_MASTER_PIN', $new, 'User')
+    Write-Host 'PIN guardado en la variable de usuario AULATEX_MASTER_PIN.' -ForegroundColor Green
 }
 else {
     Write-Host 'PIN definido solo para esta consola. Usa -Persist para conservarlo.' -ForegroundColor Yellow

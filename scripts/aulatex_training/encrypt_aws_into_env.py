@@ -97,7 +97,7 @@ def main(argv: list[str] | None = None) -> int:
     fernet = sc.resolve_data_fernet(create_key=False)
     if fernet is None:
         print("[encrypt] ERROR: no hay clave Fernet disponible.")
-        print("          Define AHK_MASTER_PIN o asegura que exista secret.key.")
+        print("          Define AULATEX_MASTER_PIN o asegura que exista secret.key.")
         return 2
 
     # Respaldo antes de tocar el archivo.

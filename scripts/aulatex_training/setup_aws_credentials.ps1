@@ -32,7 +32,7 @@
 
 .PARAMETER EncryptToEnv
     Ademas del perfil de AWS CLI, cifra las llaves en el .env indicado usando
-    la clave Fernet del hub (derivada del PIN). Requiere AHK_MASTER_PIN o el
+    la clave Fernet del hub (derivada del PIN). Requiere AULATEX_MASTER_PIN o el
     archivo secret.key presente.
 
 .PARAMETER SkipConfigure

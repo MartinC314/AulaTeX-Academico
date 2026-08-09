@@ -13,9 +13,9 @@ Comandos:
     python secrets_local.py rotate-pin aulatex.env   # recifra con un PIN nuevo (stdin)
 
 Resolución de la clave:
-    1. Variable de entorno ``AHK_MASTER_PIN`` (PIN maestro; deriva la clave Fernet
-       con PBKDF2-SHA256 sobre ``secret.salt``). Es el mecanismo preferido: el PIN
-       nunca toca el disco.
+    1. Variable de entorno ``AULATEX_MASTER_PIN`` (PIN maestro; deriva la clave
+       Fernet con PBKDF2-SHA256 sobre ``secret.salt``). Es el mecanismo preferido:
+       el PIN nunca toca el disco.
     2. Variable de entorno ``AULATEX_SECRET_KEY`` (clave Fernet directa).
     3. Archivo ``secret.key`` junto a este script (modo heredado).
 """
@@ -34,7 +34,7 @@ HERE = Path(__file__).resolve().parent
 SECRET_KEY_PATH = HERE / "secret.key"
 SECRET_SALT_PATH = HERE / "secret.salt"
 ENC_PREFIX = "enc:"
-PIN_ENV_VAR = "AHK_MASTER_PIN"
+PIN_ENV_VAR = "AULATEX_MASTER_PIN"
 PBKDF2_ITERATIONS = 480_000
 
 # Claves que se consideran secretas (se cifran). El resto queda en claro.
@@ -177,7 +177,7 @@ def cmd_set_value(env_file: str, name: str) -> int:
     path = HERE / env_file if not Path(env_file).is_absolute() else Path(env_file)
     f = resolve_fernet(create=True)
     if f is None:
-        print("No hay clave disponible: define AHK_MASTER_PIN.", file=sys.stderr)
+        print("No hay clave disponible: define AULATEX_MASTER_PIN.", file=sys.stderr)
         return 1
 
     # PowerShell 5.1 antepone un BOM al canalizar hacia stdin; corrompe la clave.

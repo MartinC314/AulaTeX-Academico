@@ -335,7 +335,7 @@ proveedores. No publiques llaves reales en este archivo.
 ### PIN maestro y rotacion de claves
 
 Los secretos de `scripts/aulatex.env` se guardan cifrados con prefijo `enc:`
-(Fernet). La clave se deriva del PIN maestro `$env:AHK_MASTER_PIN` mediante
+(Fernet). La clave se deriva del PIN maestro `$env:AULATEX_MASTER_PIN` mediante
 PBKDF2-SHA256 (480 000 iteraciones) sobre `scripts/secret.salt`. El PIN nunca se
 escribe en disco; el salt y `secret.key` estan en `.gitignore`.
 
@@ -347,10 +347,10 @@ escribe en disco; el salt y `secret.key` estan en `.gitignore`.
 
 ```powershell
 # Sesion actual
-$env:AHK_MASTER_PIN = '<pin>'
+$env:AULATEX_MASTER_PIN = '<pin>'
 
 # Persistente para el usuario (opcional)
-[Environment]::SetEnvironmentVariable('AHK_MASTER_PIN', '<pin>', 'User')
+[Environment]::SetEnvironmentVariable('AULATEX_MASTER_PIN', '<pin>', 'User')
 ```
 
 Para cambiar el PIN, `scripts/rotate-pin.ps1` descifra los valores `enc:` con el
