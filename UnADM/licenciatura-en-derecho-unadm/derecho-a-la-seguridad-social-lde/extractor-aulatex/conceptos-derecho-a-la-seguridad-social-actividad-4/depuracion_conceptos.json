@@ -1,15 +1,14 @@
 {
-  "subject_slug": "garantias-constitucionales",
+  "subject_slug": "derecho-a-la-seguridad-social",
   "kept": [
-    "Concepto y clasificación del seguro",
-    "Evolución histórica del seguro",
-    "Seguridad social",
-    "Seguro",
-    "Seguro privado",
-    "Seguro social",
-    "características del seguro privado",
     "características del seguro social",
-    "Contingencia"
+    "características del seguro privado",
+    "seguridad social: una aproximación a sus alcances",
+    "las diferencias entre ambos",
+    "los elementos",
+    "límites",
+    "seguro",
+    "naturaleza"
   ],
   "discarded": [
     "(naturaleza",
@@ -20,9 +19,6 @@
     "disponible",
     "entre ambos",
     "https://dialnet",
-    "las diferencias",
-    "los elementos",
-    "límites",
     "No indica ninguno de",
     "Revista Iustitia",
     "seguridad social: una",
@@ -30,5 +26,5 @@
     "en",
     "las"
   ],
-  "notes": "Se conservaron los conceptos sustantivos y temáticamente coherentes sobre seguro y seguridad social, relevantes para el marco de garantías constitucionales. Se descartaron fragmentos incompletos, conectores, referencias bibliográficas (Dialnet, Revista Iustitia), stopwords y términos genéricos o ruidosos sin valor conceptual para redactar la actividad."
+  "notes": "Se conservan los conceptos con carga sustantiva para la materia: la contraposición entre seguro social y seguro privado, la noción y alcances de la seguridad social, sus elementos, límites y naturaleza. Se reconstruyeron dos entradas fragmentadas ('seguridad social: una' + 'aproximación a sus alcances' y 'las diferencias' + 'entre ambos') y se descartaron sus fragmentos aislados. Se eliminaron fragmentos truncados o sin sentido ('(naturaleza', 'actualizase la', 'del social', 'consecuencias de'), conectores y artículos ('en', 'las'), términos demasiado genéricos ('disponible', 'utilidad') y referencias bibliográficas o administrativas ('https://dialnet', 'Revista Iustitia'), así como distractores de formato de test ('No indica ninguno de')."
 }

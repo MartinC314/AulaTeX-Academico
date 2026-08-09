@@ -1,0 +1,1875 @@
+# Fichas de conceptos
+
+Las citas textuales se extrajeron de las fuentes de entrada. La búsqueda puede agrupar referencias del mismo concepto aunque estén en archivos distintos.
+
+## Ficha 01. Derecho a la Seguridad Social
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.4384
+**Similitud promedio:** 0.2327
+**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf
+**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 116; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 131; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 544; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 561; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 894; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 901; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 913; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 914; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 917; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf, p. 3; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 168; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 20; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 210; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 214; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 235; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 252; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 340; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 342; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 344; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 348; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 440; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 65; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 87
+
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.4384
+
+**Detalle de puntaje:** tfidf=0.3484; bonus=0.0900
+
+> 11 3. Fuente internacional del derecho a la seguridad social . . . . . . . . . . . . . . . . . . . 13 4.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.3864
+
+**Detalle de puntaje:** tfidf=0.2964; bonus=0.0900
+
+> El derecho a la seguridad social 913 causa de muerte —de viudez en el matrimonio y en el concubinato, de orfandad y ascendencia— y servicios de guarderías. La inmensa mayoría de sentencias de la SCJN sobre seguridad social se origina en litigios dentro del modelo contributivo de aseguramiento social.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 168 — similitud 0.3686
+
+**Detalle de puntaje:** tfidf=0.2786; bonus=0.0900
+
+> 144 El derecho a la seguridad social y las responsabilidades de cuidado El Pacto Internacional de Derechos Económicos, Sociales y Culturales23 establece en su artículo 9 el derecho a la seguridad social, el cual consiste en el derecho que tienen a la seguridad todas las personas a la provisión de bienestar social, garantizando en particular la protección de las personas más vulnerables, como es el caso de las niñas y los niños entre cero y seis años.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 344 — similitud 0.3600
+
+**Detalle de puntaje:** tfidf=0.2700; bonus=0.0900
+
+> 320 El derecho a la seguridad social y las responsabilidades de cuidado De tal manera, y en línea con la forma en que es utilizado el concepto por la OIT, en el marco del derecho internacional de los derechos humanos, y por ende, para este documento, se utilizan las expresiones “derecho a la seguridad social” y “protección social” como sinónimos. Cuadro 1.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 342 — similitud 0.3309
+
+**Detalle de puntaje:** tfidf=0.2409; bonus=0.0900
+
+> 318 El derecho a la seguridad social y las responsabilidades de cuidado En la mayoría de los instrumentos jurídicos mencionados se utiliza la expresión “derecho a la seguridad social”, salvo en la Convención Internacional sobre los Derechos de las Personas con Discapacidad (artículo 28), que utiliza el término “protección social”. Del trabajo del Comité de Derechos Económicos, Sociales y Culturales (órgano encargado de la supervisión del cumplimiento del PIDESC) se puede deducir que los conceptos de “seguridad social” y “protección social” son sinónimos.10 Esto es evidente, por ejemplo, en la Observación General núm.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 340 — similitud 0.3225
+
+**Detalle de puntaje:** tfidf=0.2325; bonus=0.0900
+
+> 316 El derecho a la seguridad social y las responsabilidades de cuidado consagran la igualdad de trato, la prohibición de toda forma de discriminación y la obligación de tomar medidas afirmativas para la protección de ciertos grupos que han sufrido de discriminación estructural o que son vulnerables.7 Otras disposiciones constitucionales, tales como las que consagran el derecho de participación de la población en la formulación de las políticas, el principio de rendición de cuentas, el acceso a la información y las relativas a la descen- tralización político-administrativa son también relevantes y deben guiar el establecimiento de programas de protección social.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 348 — similitud 0.3183
+
+**Detalle de puntaje:** tfidf=0.2283; bonus=0.0900
+
+> 324 El derecho a la seguridad social y las responsabilidades de cuidado El Comité de Derechos Económicos, Sociales y Culturales (Comité), órgano encargado de la supervisión del PIDESC, ha desarrollado el contenido de este derecho. Por analogía, es posible aplicar esta interpretación a las demás disposiciones internacionales de derechos humanos que contienen el derecho a la seguridad social.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 235 — similitud 0.3167
+
+**Detalle de puntaje:** tfidf=0.2267; bonus=0.0900
+
+> 211 El derecho a la seguridad social de las trabajadoras domésticas remuneradas persona, como miembro de la sociedad, tiene derecho a la seguridad social”, y en el párrafo 1 del artículo 25, que establece que toda persona tiene “derecho a los seguros en caso de desempleo, enfermedad, invalidez, viudez, vejez y otros casos de pérdida de sus medios de subsistencia por circunstancias independientes de su voluntad”. Asimismo, se reconoce en el Convenio 102 sobre seguridad social de la OIT (1952).
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 214 — similitud 0.2706
+
+**Detalle de puntaje:** tfidf=0.2306; bonus=0.0400
+
+> Además, el Comité DESC en la Observación General No. 19 destacó que los ele- mentos base de la seguridad social son a) disponibilidad, b) riesgos e imprevistos sociales, c) nivel suficiente, d) accesibilidad y e) relación con otros derechos.13 ción y los recursos de cada Estado, la satisfacción de los derechos económicos, sociales y culturales, indispensables a su dignidad y al libre desarrollo de su personalidad”. 10  “Artículo 9.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 131 — similitud 0.2492
+
+**Detalle de puntaje:** tfidf=0.2092; bonus=0.0400
+
+> 154. Corte IDH. Caso Cabrera García y Montiel Flores Vs.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 116 — similitud 0.2280
+
+**Detalle de puntaje:** tfidf=0.1880; bonus=0.0400
+
+> 253. 46 Corte IDH. Caso Gelman Vs.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 544 — similitud 0.2123
+
+**Detalle de puntaje:** tfidf=0.1823; bonus=0.0300
+
+> 239, párr. 259; Corte IDH. Caso Duque Vs.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 561 — similitud 0.2081
+
+**Detalle de puntaje:** tfidf=0.1681; bonus=0.0400
+
+> 310. Corte IDH. Caso Flor Freire Vs.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 168 — similitud 0.1945
+
+**Detalle de puntaje:** tfidf=0.1545; bonus=0.0400
+
+> Se establece que por su carácter redistributivo, el derecho a la seguridad social es un factor fundamental de inclusión y cohesión social, así como para la reducción de la pobreza. En la Observación general 19, el Comité de Derechos Económicos, Sociales y Culturales (DESC), la ONU establece las obligaciones de los Estados en cuanto a respetar, proteger y garantizar el derecho a la seguridad social.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 914 — similitud 0.1767
+
+**Detalle de puntaje:** tfidf=0.1367; bonus=0.0400
+
+> Esta cifra se reduce al 69% cuando son mujeres y, conforme aumenta la edad, la brecha también se profundiza. 43 La sistematización de los fallos de la SCJN sobre concubinato y uniones de hecho se puede consultar en el cuaderno de jurisprudencia núm. 4.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 894 — similitud 0.1741
+
+**Detalle de puntaje:** tfidf=0.1341; bonus=0.0400
+
+> En términos de la Observación General 19 del Comité de Derechos Económicos, Sociales y Cultu- rales de la ONU sobre el derecho a la seguridad social, éste incluye el derecho a obtener y conservar prestaciones en efectivo o en especie que permitan afrontar de manera adecuada situaciones como la pérdida del ingreso individual o familiar debido a enfermedad, discapacidad, accidente de trabajo, maternidad, vejez, entre otras.2 En suma, el derecho a la seguridad social establece la protección suficiente de las personas y el mantenimiento de estándares de vida adecuados contra ries- gos e imprevistos sociales particularmente graves.3
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 901 — similitud 0.1708
+
+**Detalle de puntaje:** tfidf=0.1308; bonus=0.0400
+
+> 21 Ver Cecchini, Simone y Martínez, Rodrigo, Inclusive Social Protection…, op. cit. 22 Ver OHCHR-ONU, Observación general 19; Melik, Ö., El derecho a la seguridad social, op. cit.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 20 — similitud 0.1641
+
+**Detalle de puntaje:** tfidf=0.1241; bonus=0.0400
+
+> En su texto sobre la pensión de viudez en el concubinato y el derecho a la seguridad social, Berenice Montealegre Ramírez y Gema Cortés Matus revisan algunas de las decisiones de la Suprema Corte de Justicia de México sobre
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 252 — similitud 0.1629
+
+**Detalle de puntaje:** tfidf=0.1229; bonus=0.0400
+
+> De manera similar, hay otros casos que determinan la configuración de la relación laboral a partir de cierto tiempo de trabajo a la semana, quienes no cumplen con ese tiempo mínimo quedan también excluidos de la seguridad social. Este es el caso de Brasil, donde la obligación de afiliación a la seguridad social se genera a partir de los tres días semanales, y de Colombia, donde el supuesto de trabajo por días no es obligatorio cuando las personas trabaja- doras domésticas están afiliadas al Régimen Subsidiado (Piso de Protección Social) o resulten beneficiarias de esta prestación en el Régimen Contributivo.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 913 — similitud 0.1569
+
+**Detalle de puntaje:** tfidf=0.1169; bonus=0.0400
+
+> Al igual que la normatividad —nacional e internacional—, los fallos de la SCJN en esta materia no cuestionan demasiado el modelo de familia monó- gamo que está a la base del modelo contributivo de seguridad social: padre traba- jador, asegurado o proveedor, madre-cónyuge —que hace trabajo de cuidado en el hogar no remunerado e hijos—. Tampoco se ocupan de las posibles inequidades y discriminaciones entre beneficiarios de los modelos contributivos, los de los no contributivos y los excluidos de ambos.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 210 — similitud 0.1478
+
+**Detalle de puntaje:** tfidf=0.1078; bonus=0.0400
+
+> 186 El derecho a la seguridad social y las responsabilidades de cuidado En particular, en el caso del concubinato, la reconfiguración del concepto de familia y la interpretación del régimen de pensiones de viudez han evo- lucionado haciendo frente a una realidad que debe ser atendida, protegida y reconocida bajo la tutela jurisdiccional. En este trabajo se expone el cambio de paradigma jurisprudencial en materia de concubinato y pensión de viudez emitido por la Suprema Corte de Justicia de la Nación a la luz del principio de realidad en materia de seguridad social.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 917 — similitud 0.1353
+
+**Detalle de puntaje:** tfidf=0.0953; bonus=0.0400
+
+> El derecho a la seguridad social 917 Los fallos sobre pensión de viudez en el matrimonio55 son, aproximadamente, 70.56 Es posible identificar siete grandes escenarios constitucionales de litigio: (i) base pensional para el cálculo de los montos mensuales para la pensión de viudez; (ii) concurrencia de la pensión de viudez con otros beneficios; (iii) contratos co- lectivos de trabajo y constitucionalidad de las cláusulas sobre pensión de viudez; (iv) criterios diferenciados por género para acceder a la pensión de viudez; (v) término mínimo de duración del matrimonio; (vi) litigios sobre la titularidad de la pensión; y (vii) periodo de conservación de derechos.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 440 — similitud 0.1274
+
+**Detalle de puntaje:** tfidf=0.0874; bonus=0.0400
+
+> 416 El derecho a la seguridad social y las responsabilidades de cuidado que reduce los recursos disponibles para las medidas destinadas a realizar los derechos humanos. También hay que considerar la posibilidad de modificar las prioridades de los gastos en sectores sociales (tales como la educación y la salud) en comparación con los gastos militares para garantizar una utilización al máximo de los recursos disponibles para la realización de los DESC.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 87 — similitud 0.0994
+
+**Detalle de puntaje:** tfidf=0.0594; bonus=0.0400
+
+> Sistematización de buenas prácticas de políticas que reconozcan el trabajo de cuidado como vía de acceso a prestaciones de seguridad social, la CISS desarrolla y fundamenta una contundente crítica al diseño de los sistemas de seguridad social “que funcionan bajo el supuesto de un hombre proveedor sin responsabilidades de cuidado familiar y una mujer que asume todo el trabajo de cuidados en forma no remunerada”.42 Al basarse en estereotipos de género, el diseño de la seguridad social no puede ofrecer una protección adecuada, justa y completa
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 65 — similitud 0.0975
+
+**Detalle de puntaje:** tfidf=0.0575; bonus=0.0400
+
+> Hablar de seguridad social a menudo implica entrar en debates teóricos y conceptuales de gran relevancia. Desde su origen hace ya más de un siglo e incluso hasta la actualidad, sigue despertando diferentes dudas y cuestio- namientos vinculados especialmente a su alcance, prestaciones incluidas, financiamiento y hasta asuntos relativos a la diversidad de formas que adopta su recepción normativa en cada uno de los estados nacionales.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 02. Instituto Mexicano del Seguro Social (IMSS)
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.3791
+**Similitud promedio:** 0.1969
+**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf
+**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 852; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 117; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 15; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 159; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 170; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 309; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 322; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 381; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 385; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 387; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 389; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 216; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 276; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 74; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 12; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 7; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 74; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 75; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 121; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 156; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 158; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 168; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 172; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 84; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 86; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 94
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 276 — similitud 0.3791
+
+**Detalle de puntaje:** tfidf=0.2791; bonus=0.1000
+
+> 252 El derecho a la seguridad social y las responsabilidades de cuidado Picado, Gustavo, Doce recomendaciones para el programa de trabajadoras del hogar en el Instituto Mexicano del Seguro Social (IMSS), OIT y Nacional Monte de Piedad, 2019. Picado, Gustavo e Irra Fernández, Ricardo, La Prueba piloto para la incor- poración de las personas trabajadoras del hogar al Instituto Mexicano del Seguro Social Estudio de resultados y recomendaciones para el régimen obligatorio, 2020.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 172 — similitud 0.2903
+
+**Detalle de puntaje:** tfidf=0.2603; bonus=0.0300
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se adicionan los artículos 251 de la Ley del Seguro Social y 208 de la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado. Publicado en el Diario Oficial de la Federación el 23 de abril de 2024 Artículo Primero.- Se adiciona una fracción XXXVII, recorriéndose la actual para pasar a ser fracción XXXVIII, del artículo 251 de la Ley del Seguro Social, para quedar como sigue: …….. Transitorios Primero.
+
+### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 7 — similitud 0.2857
+
+**Detalle de puntaje:** tfidf=0.1857; bonus=0.1000
+
+> humano; por tal motivo, la Ley apelaba a la asistencia médica, los servicios sociales y la protección de medios de subsistencia como mecanismos capaces de contribuir a generar condiciones de bienestar individual y colectivo al interior del país; estableciendo como instrumento básico el Seguro Social(16). Para dar figura a dicho instrumento, ese mismo día se creó el Instituto Mexicano del Seguro Social (IMSS), un organismo público y descentralizado, con personalidad y patrimonio propio. Un año después de su creación (es decir, en 1944) Ignacio García Téllez, autor 746
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 121 — similitud 0.2684
+
+**Detalle de puntaje:** tfidf=0.2284; bonus=0.0400
+
+> En tanto se emite el Reglamento Interior del Instituto Mexicano del Seguro Social previsto en este Decreto, continuará vigente el texto del Capítulo VI del Título Cuarto que se deroga y el Reglamento de Organización Interna del Instituto Mexicano del Seguro Social, publicado en el Diario Oficial de la Federación el 11 de noviembre de 1998, manteniendo los órganos regionales y delegacionales, así como los Directores Regionales, Delegados, Subdelegados y Jefes de Oficinas para Cobros las atribuciones que esas disposiciones les otorgan, sin perjuicio de la vigencia del contenido del nuevo Capítulo VI, del Título Cuarto denominado del Instituto Mexicano del Seguro Social como Organismo Fiscal...
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 309 — similitud 0.2615
+
+**Detalle de puntaje:** tfidf=0.1615; bonus=0.1000
+
+> Me refiero a su atento escrito de! 14 de abril de 1997, en el que, en relación con la copia del boletín de prensa de la Comisión Nacional del Sistema de Ahorro para el Retiro que a ét adjunta, solicita se le informe si por llevar la cuenta denominada “Concentradora” del Instituto Mexicano del Seguro Social (IMSS), e!
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 322 — similitud 0.2585
+
+**Detalle de puntaje:** tfidf=0.1585; bonus=0.1000
+
+> 306 El derecho mercantil regulador del Seguro Social de México, sin cobro de comisión, dentro de los cuatro días hábiles banca- rios siguientes. Esta institución oficial abría dos subcuentas: una por retiro a nombre del Instituto Mexicano del Seguro Social (imss) y otra de vivienda a nombre del Infonavit. Los fondos los ponía a disposición del Gobierno Fede­ ral, en forma de créditos.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 170 — similitud 0.2525
+
+**Detalle de puntaje:** tfidf=0.1525; bonus=0.1000
+
+> 154 Los seguros del Seguro Social de la Ley de 1973, el seguro de riegos de trabajo, para que mediante la aporta­ ción de una cuota el instituto Mexicano del Seguro Social (IMSS) proporcione servicios médicos y prestaciones económicas al trabajador. Es importante considerar si la LSS puede liberar al patrón de una carga que le es impuesta por la Constitución y regulada por la l f t.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 156 — similitud 0.2462
+
+**Detalle de puntaje:** tfidf=0.2062; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 Quinto. El Instituto Mexicano del Seguro Social, dentro de los seis meses siguientes a la fecha de entrada en vigor del presente Decreto, deberá enviar a la Secretaría de Hacienda y Crédito Público para su aprobación, la metodología para determinar el monto de la reserva que dicho Instituto constituirá para atender las solicitudes de devolución a que se refiere el artículo 302 de la Ley del Seguro Social.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 84 — similitud 0.2432
+
+**Detalle de puntaje:** tfidf=0.2032; bonus=0.0400
+
+> Practicar la auditoría de los balances contables y al informe financiero y actuarial a que se refiere el artículo 261 de esta Ley, así como comprobar los avalúos de los bienes materia de operaciones del Instituto; Fracción reformada DOF 20-12-2001 III. Sugerir a la Asamblea General, al Consejo Técnico, y a la Comisión Nacional del Sistema de Ahorro para el Retiro, en su caso, las medidas que juzgue convenientes para mejorar el funcionamiento de los seguros que ampara esta Ley; IV.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 74 — similitud 0.2427
+
+**Detalle de puntaje:** tfidf=0.1427; bonus=0.1000
+
+> Además, la misma configura- ción de los alcances y contenidos del articulo 123, donde vienen regulados todos los derechos laborales de “los trabajadores”, deja entrever la estrecha vinculación entre el acceso y disfrute de prestaciones de seguridad social y el estatus laboral de las personas. De hecho, es conocido que la seguridad social en México está gestionada prin- cipalmente por el Instituto Mexicano del Seguro Social (IMSS) y el Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (ISSSTE). Estas instituciones proporcionan servicios de salud, pensiones y otros beneficios y prestaciones a los trabajadores, trabajadoras y sus familias.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 168 — similitud 0.2256
+
+**Detalle de puntaje:** tfidf=0.1956; bonus=0.0300
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman los artículos 251 de la Ley del Seguro Social y 146 de la Ley Federal del Trabajo, y se adiciona un artículo 59 Bis a la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores. Publicado en el Diario Oficial de la Federación el 29 de noviembre de 2023 Artículo Primero.- Se adiciona un tercer párrafo a la fracción XIV del artículo 251 de la Ley del Seguro Social, para quedar como sigue: ……..
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 159 — similitud 0.2225
+
+**Detalle de puntaje:** tfidf=0.1825; bonus=0.0400
+
+> Como lo preciso en la sexta parte de esta obra, acerca de la organización del Seguro Social, el Ejecutivo Federal no cuenta con facultades y obligaciones constitucionales. Los órganos de gobierno-asamblea general, con­ sejo técnico, comisión de vigilancia y dirección general- conforman un marco que le da plena autonomía. El art.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 385 — similitud 0.2210
+
+**Detalle de puntaje:** tfidf=0.1810; bonus=0.0400
+
+> 123 de la Constitución, único del que emana el Seguro Social, es necesario concluir que tanto el Presidente de la República como sus dependencias carecen de facultad. Órganos de Gobierno El art, 257 de la LSS determina los órganos superiores del Instituto: la Asam­ blea General, el Consejo Técnico, la Comisión de Vigilancia y la Dirección General. En la reforma de 1992 se adicionó el Comité Técnico para el manejo del Seguro de Retiro, que fue sustituido por la Comisión Nacional del Sistema de Ahorro para el Retiro (Consar) y eliminado de los órganos del Instituto.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 389 — similitud 0.2088
+
+**Detalle de puntaje:** tfidf=0.1688; bonus=0.0400
+
+> 266 le imponen vigilar que las inversiones se hagan de acuerdo con las disposiciones de esta Ley y sus reglamentos; realizar la auditoría de los balances contables y al informe financiero y actuarial, así como comprobar los avalúos de los bie­ nes materia de operaciones del Instituto. Puede sugerir a la Asamblea General, al Consejo Técnico y a la Consar la adopción de las medidas que juzgue conve­ nientes para mejorar el funcionamiento de los seguros que señala la Ley. Presentará ante la Asamblea General un dictamen sobre el informe de actividades y los estados financieros presentados por el Consejo Técnico, los cuales le serán dados a conocer con la debida oportunidad.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 389 — similitud 0.2064
+
+**Detalle de puntaje:** tfidf=0.1664; bonus=0.0400
+
+> Dirección General El Director General es la máxima autoridad del Instituto, limitado sólo por el Presidente de la República. La Asamblea General, el Consejo Técnico y la Comisión de Vigilancia son organismos atentos a obsequiar sus propuestas, como sucede en muchos organismos públicos. Quienes hemos tenido opor­ tunidad de laborar en las oficinas centrales, comprobamos el enorme poder que ejerce el Director General.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 86 — similitud 0.1850
+
+**Detalle de puntaje:** tfidf=0.1450; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 Artículo 270. El Instituto, en su carácter de organismo fiscal autónomo, se sujetará al régimen establecido en esta Ley, ejerciendo las atribuciones que la misma le confiere de manera ejecutiva, con autonomía de gestión y técnica, en los ámbitos regulados en la presente Ley. Artículo reformado DOF 20-12-2001 Artículo 271.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 381 — similitud 0.1781
+
+**Detalle de puntaje:** tfidf=0.1381; bonus=0.0400
+
+> 15 Organización y facultades d e l IM S S l título cuarto de la Ley del Seguro Social (LSS) está dedicado a la organiza­ ción y el funcionamiento del Instituto Mexicano del Seguro Social (iMSS), en su doble función: como organismo encargado de proporcionar servicios y como organismo fiscal autónomo. Se parte de atribuciones para concluir en las facultades de comprobación fiscal; para ello deben especificarse sus prerrogati­ vas, patrimonio y órganos de gobierno y administración, así como la posibilidad E de recibir el pago, fincarlo y disponer de él, para que pueda otorgar las prestacio­ nes que hemos visto en cada uno de los seguros que integran el sistema.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 86 — similitud 0.1594
+
+**Detalle de puntaje:** tfidf=0.1194; bonus=0.0400
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 Artículo 270.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 852 — similitud 0.1554
+
+**Detalle de puntaje:** tfidf=0.1154; bonus=0.0400
+
+> La Segunda Sala re- solvió que los trabajadores de confianza carecen de estabilidad en el empleo, en virtud de la restricción prevista en el artículo 123, apartado B, fracción XIV, de la Constitución.94 También estableció que es una restricción constitucional la pro- hibición de reinstalación de quienes ocupan las categorías previstas en el régimen del artículo 123, apartado B, fracción XIII, de la Constitución (como los agentes de las instituciones de seguridad pública).95 La Segunda Sala declaró la inconstitu- cionalidad del artículo 63, párrafo quinto, de la Ley de Transparencia y Acceso a la Información Pública del Distrito Federal, porque establece que todo el personal del instituto de...
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 216 — similitud 0.1541
+
+**Detalle de puntaje:** tfidf=0.1141; bonus=0.0400
+
+> 192 El derecho a la seguridad social y las responsabilidades de cuidado Por lo que se refiere al sistema jurídico mexicano, el artículo 123 de la Constitución federal prevé la seguridad social como un derecho humano desarrollado en el apartado A, fracción XXIX, y apartado B, fracción XI, inciso A, que tiene como objeto proteger a las personas trabajadoras y sus familiares beneficiarias.18 Específicamente, en relación con la pensión de viudez, la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado y la Ley del Seguro Social19 establecen el orden de prelación para tener derecho a una pensión derivada del fallecimiento de una persona trabajadora.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 158 — similitud 0.1537
+
+**Detalle de puntaje:** tfidf=0.1137; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo; de la Ley del Seguro Social; de la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores; del Código Fiscal de la Federación; de la Ley del Impuesto sobre la Renta; de la Ley del Impuesto al Valor Agregado; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del Artículo 123 Constitucional; de la Ley Reglamentaria de la Fracción XIII Bis del Apartado B, del Artículo 123 de la Constitución Política de los Estados Unidos...
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 15 — similitud 0.1362
+
+**Detalle de puntaje:** tfidf=0.0962; bonus=0.0400
+
+> Fue en 1995 cuando se expidió la Ley vigente en materia de seguro social a propuesta del presidente Ernesto Zedillo, misma que apareció publicada en el Diario Oficial de la Federación el día 21 de diciembre de ese año, para entrar en vigor el 1 de enero de 1997, prorrogándose finalmen­ te el inicio de su vigencia al 1 de julio de 1997. Indica el autor del libro que el contenido y las tendencias técnicas de esa Ley se debían a un diagnóstico sobre la crisis financiera que de años anteriores venía enfrentando el IMSS.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 94 — similitud 0.1293
+
+**Detalle de puntaje:** tfidf=0.0993; bonus=0.0300
+
+> Todos los bienes inmuebles destinados a la prestación de servicios directamente derivados de los seguros a que se refieren los Título Segundo y Tercero de esta Ley, estarán afectos a la Reserva General Financiera y Actuarial y por tanto se considerarán destinados al servicio público de carácter nacional del Seguro Social a que se refiere el artículo 4o. de la propia Ley y tendrán el carácter de bienes del dominio público de la Federación. Artículo reformado DOF 20-12-2001 Artículo 286.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 74 — similitud 0.1040
+
+**Detalle de puntaje:** tfidf=0.0640; bonus=0.0400
+
+> Artículo 238. La Reserva general financiera y actuarial deberá constituirse, incrementarse o reconstituirse a través de una aportación anual a estimarse en el informe financiero y actuarial que se presente anualmente a la Junta Directiva, para enfrentar efectos catastróficos o variaciones de carácter financiero de significación en los ingresos o incrementos drásticos en los egresos derivados de problemas epidemiológicos o económicos severos y de larga duración que provoquen insuficiencia de cualquiera de las Reservas financieras y actuariales. Artículo 239.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 75 — similitud 0.0983
+
+**Detalle de puntaje:** tfidf=0.0683; bonus=0.0300
+
+> LEY DEL INSTITUTO DE SEGURIDAD Y SERVICIOS SOCIALES DE LOS TRABAJADORES DEL ESTADO CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 Los recursos destinados a financiar contingencias se deberán reintegrar con los correspondientes intereses, en los términos del reglamento respectivo, en un plazo no mayor a tres años. Artículo 241.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 117 — similitud 0.0845
+
+**Detalle de puntaje:** tfidf=0.0445; bonus=0.0400
+
+> En los apartados anteriores de este capítulo establecimos los elementos de conocimiento en relación con la Ley de 1943 y con la Ley de 1973. Este último ordenamiento representa la consolidación de la primera etapa del sis­ tema, así como el antecedente, por las reformas llevadas a cabo del sistema de cuentas individuales, establecido primero en el IMSS y con posterioridad en el ISSSTE, hasta culminar con la LSS aprobada en 1995 y vigente en 1997, a la que habría de seguir la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado, en vigor a partir de 2007.
+
+### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 12 — similitud 0.0823
+
+**Detalle de puntaje:** tfidf=0.0423; bonus=0.0400
+
+> Creado durante el sexenio de Ernesto Zedillo (1994-2000), tuvo como principal objetivo la reorganización de la atención y del sistema de pensiones del IMSS, la descentralización iniciada en 1984 y la conformación de paquetes de atención en materia de Seguridad Social(25). · Nueva Ley del Seguro Social de 1995 (entró en vigor en 1997). Contempló la creación del Seguro de Salud para la familia, lo que le permitía a los trabajadores no asalariados, y a sus familias, recibir atención médica del IMSS con el pago anticipado de cuotas anuales.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 387 — similitud 0.0792
+
+**Detalle de puntaje:** tfidf=0.0492; bonus=0.0300
+
+> En esta forma, el Consejo Técnico decide sobre las inversiones de las reservas y todos los recursos del Instituto. De acuerdo con la reforma de 1995, se exceptúan los recursos provenientes del seguro de retiro, cesantía en edad avanzada y vejez.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 1 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 03. Naturaleza jurídica del IMSS
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.4589
+**Similitud promedio:** 0.1644
+**Fuentes:** Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf; La seguridad social y los  desa - Ana Belem Hernandez.pdf; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf
+**Ubicaciones:** Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf, p. 269; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 118; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 166; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 134; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 136; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 159; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 17; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 23; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 278; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 283; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 289; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 322; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 330; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 34; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 385; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 389; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 390; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 393; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 401; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 412; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 7; La seguridad social y los  desa - Ana Belem Hernandez.pdf, p. 13; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 1; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 100; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 79; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 84; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 86
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 1 — similitud 0.4589
+
+**Detalle de puntaje:** tfidf=0.4189; bonus=0.0400
+
+> La organización y administración del Seguro Social, en los términos consignados en esta Ley, están a cargo del organismo público descentralizado con personalidad jurídica y patrimonio propios, de integración operativa tripartita, en razón de que a la misma concurren los sectores público, social y 1 de 181
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 289 — similitud 0.2514
+
+**Detalle de puntaje:** tfidf=0.2114; bonus=0.0400
+
+> El art. 5 dispone que la organización y administración del Seguro Social están a cargo del organismo público descentralizado con personalidad jurídica y patrimonio propios, de integración operativa tripartita, denominado instituto Mexicano del Seguro Social, el cual tiene también el carácter de organismo fiscal autónomo. Es evidente que no hay espacio constitucional o legal para las empresas privadas, por lo que su participación en la administración de los recursos atenta contra los principios de la seguridad social.
+
+### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 7 — similitud 0.2444
+
+**Detalle de puntaje:** tfidf=0.2044; bonus=0.0400
+
+> humano; por tal motivo, la Ley apelaba a la asistencia médica, los servicios sociales y la protección de medios de subsistencia como mecanismos capaces de contribuir a generar condiciones de bienestar individual y colectivo al interior del país; estableciendo como instrumento básico el Seguro Social(16). Para dar figura a dicho instrumento, ese mismo día se creó el Instituto Mexicano del Seguro Social (IMSS), un organismo público y descentralizado, con personalidad y patrimonio propio. Un año después de su creación (es decir, en 1944) Ignacio García Téllez, autor 746
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 159 — similitud 0.2341
+
+**Detalle de puntaje:** tfidf=0.1941; bonus=0.0400
+
+> 5 la Ley precisa que la organización y administración del Se­ guro Social está a cargo de! organismo público descentralizado que se deno­ mina Instituto Mexicano del Seguro Social. Es fácil entender la voluntad del legislador, al cuidar el interés público y prever las contingencias que motivan el funcionamiento del Seguro Social, al darle el carácter de organismo público descentralizado con elementos de personalidad y patrimonio propios.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 100 — similitud 0.2136
+
+**Detalle de puntaje:** tfidf=0.1736; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 SECCIÓN PRIMERA PROCEDIMIENTO ADMINISTRATIVO DE EJECUCIÓN Sección adicionada DOF 20-12-2001 Artículo 291. El procedimiento administrativo de ejecución para el cobro de los créditos a que se refiere el artículo 287 de esta Ley, que no hubiesen sido cubiertos oportunamente al Instituto, se aplicará por éste, con sujeción a las normas del Código y demás disposiciones aplicables, a través de sus unidades administrativas facultadas al efecto.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 393 — similitud 0.2063
+
+**Detalle de puntaje:** tfidf=0.1663; bonus=0.0400
+
+> Aportaciones de seguridad social son las contribuciones establecidas en ley a cargo de personas que son substituidas por el Estado en el cumplimiento de obligaciones fijadas por la ley en materia de seguridad social o a las personas que se beneficien en forma especial por servicios de seguridad social proporcionados por el mismo Estado. Esta reforma incrementó la discusión en torno a las facultades fiscales del Instituto, sin considerar que la misma sea meramente doctrinal, pues re­ percute en las facultades ejecutoras del organismo fiscal autónomo y en la determinación de ¡a exigibilidad del crédito. Oñcinas para cobros La Ley en vigor a partir del 1 de julio de 1997 reproduce en su art.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 86 — similitud 0.2032
+
+**Detalle de puntaje:** tfidf=0.1632; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 Artículo 270. El Instituto, en su carácter de organismo fiscal autónomo, se sujetará al régimen establecido en esta Ley, ejerciendo las atribuciones que la misma le confiere de manera ejecutiva, con autonomía de gestión y técnica, en los ámbitos regulados en la presente Ley. Artículo reformado DOF 20-12-2001 Artículo 271.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 385 — similitud 0.1907
+
+**Detalle de puntaje:** tfidf=0.1507; bonus=0.0400
+
+> 123 de la Constitución, único del que emana el Seguro Social, es necesario concluir que tanto el Presidente de la República como sus dependencias carecen de facultad. Órganos de Gobierno El art, 257 de la LSS determina los órganos superiores del Instituto: la Asam­ blea General, el Consejo Técnico, la Comisión de Vigilancia y la Dirección General. En la reforma de 1992 se adicionó el Comité Técnico para el manejo del Seguro de Retiro, que fue sustituido por la Comisión Nacional del Sistema de Ahorro para el Retiro (Consar) y eliminado de los órganos del Instituto.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 283 — similitud 0.1875
+
+**Detalle de puntaje:** tfidf=0.1475; bonus=0.0400
+
+> La regulación del seguro de retiro fue alejada de las estructuras del Insti­ tuto, con la creación de un comité técnico integrado con representación plural, bajo la égida del Secretario de Hacienda y Crédito Público. El segundo paso llevado a cabo fue la reforma de 1993, donde se incor­ poran elementos ajenos a la seguridad social, a fin de dotar al IMSS, como organismo fiscal autónomo, de facultades adicionales de sanción; se crea la figura delictiva equiparable al fraude fiscal por la no inscripción de los tra­ bajadores y la falta de pago de las cuotas. Esta reforma reafirmó la fama del
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 390 — similitud 0.1832
+
+**Detalle de puntaje:** tfidf=0.1432; bonus=0.0400
+
+> Para cumplir con sus funciones, el Director General será auxiliado por los servidores públicos de mando, personal de base y de confianza que se esta­ blezcan en el Reglamento Interior del Instituto, que a propuesta del Consejo Técnico expida el Ejecutivo Federal, considerando lo que al efecto se estipule en el contrato colectivo de trabajo suscrito con los trabajadores del Instituto. El IMSS como organismo fiscal autónomo Discusión Desde su creación, dos aspectos fundamentes en la vida del Instituto han produ­ cido una discusión inacabada: las facultades para el cobro de las cuotas y la posi­ bilidad de cobro coercitivo cuando las cuotas dejen de enterarse.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 23 — similitud 0.1804
+
+**Detalle de puntaje:** tfidf=0.1604; bonus=0.0200
+
+> Sierra López, "Inseguridad, seguridad jurídica y seguridad social”, en Boletín de Información Jurídica, IMSS, núm. 15, septiembre-octubre de 1985.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 389 — similitud 0.1791
+
+**Detalle de puntaje:** tfidf=0.1391; bonus=0.0400
+
+> 266 le imponen vigilar que las inversiones se hagan de acuerdo con las disposiciones de esta Ley y sus reglamentos; realizar la auditoría de los balances contables y al informe financiero y actuarial, así como comprobar los avalúos de los bie­ nes materia de operaciones del Instituto. Puede sugerir a la Asamblea General, al Consejo Técnico y a la Consar la adopción de las medidas que juzgue conve­ nientes para mejorar el funcionamiento de los seguros que señala la Ley. Presentará ante la Asamblea General un dictamen sobre el informe de actividades y los estados financieros presentados por el Consejo Técnico, los cuales le serán dados a conocer con la debida oportunidad.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 84 — similitud 0.1765
+
+**Detalle de puntaje:** tfidf=0.1365; bonus=0.0400
+
+> Practicar la auditoría de los balances contables y al informe financiero y actuarial a que se refiere el artículo 261 de esta Ley, así como comprobar los avalúos de los bienes materia de operaciones del Instituto; Fracción reformada DOF 20-12-2001 III. Sugerir a la Asamblea General, al Consejo Técnico, y a la Comisión Nacional del Sistema de Ahorro para el Retiro, en su caso, las medidas que juzgue convenientes para mejorar el funcionamiento de los seguros que ampara esta Ley; IV.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 278 — similitud 0.1647
+
+**Detalle de puntaje:** tfidf=0.1247; bonus=0.0400
+
+> La disposición en la LSS está en el art. 213, que permite a los patrones tener instaladas guarderías en sus empresas o establecimientos, siempre que reúnan los requisitos señalados en las disposiciones relativas; éstos depende­ rán de los convenios con el Consejo Técnico y la Dirección General, ya que no hay mención de ello en el RPSG. Prestaciones sociales Las prestaciones sociales han tenido reformas a partir de la primera Ley, por lo que se entiende que el IMSS haya construido y sostenga cines, centros deportivos, centros vacacionales, además de centros sociales y familiares.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 401 — similitud 0.1428
+
+**Detalle de puntaje:** tfidf=0.1128; bonus=0.0300
+
+> 16 Medios de defensa contra el IMSS Naturaleza jurídica de la cuota os diferentes medios de defensa por parte del patrón conducen a los recur­ sos administrativos, y por parte del trabajador se inician con la queja. Para analizarlos, debemos partir de la naturaleza jurídica de la cuota; es decir, se hace indispensable retomar lo que en el capítulo respectivo dije sobre la natu­ raleza jurídica de la aportación.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 136 — similitud 0.1262
+
+**Detalle de puntaje:** tfidf=0.0862; bonus=0.0400
+
+> 2), debía precisarse que sólo las nor­ mas relativas al cobro de cuotas, capitales constitutivos, su actualización y los recargos (art. 287), tienen carácter fiscal, toda vez que únicamente para esos efectos se confiere al Instituto la categoría de organismo fiscal autónomo (art. 288).
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 412 — similitud 0.1234
+
+**Detalle de puntaje:** tfidf=0.1034; bonus=0.0200
+
+> Esto se traduce en que en algunos países estos derechos aún están excluidos de una protección constitucional (tutela constitucional) (Courtis, 2010). Efectivamente, tradicionalmente se ha considerado que los DESC son de naturaleza jurídica distinta a los derechos civiles y políticos, considerándose que son vagos, de naturaleza inherentemente positiva y dependientes de recursos disponibles (Sepúlveda, 2005). Esta visión limitada de la naturaleza jurídica de los DESC, ha sido ampliamente debatida en la doctrina, y se pue- de considerar como un debate superado (Sepúlveda, 2001).
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 134 — similitud 0.1189
+
+**Detalle de puntaje:** tfidf=0.0789; bonus=0.0400
+
+> 1 1 8 Las leyes del Seguro Social Los principios anteriores se complementan con lo ordenado por el art. 5 del mismo ordenamiento, que dispone: La organización y administración del Seguro Social, en los términos consignados en esta Ley, están a cargo del organismo público descentralizado con persona­ lidad y patrimonio propios, denominado Instituto Mexicano del Seguro Social, el que tiene el carácter de organismo fiscal autónomo, cuando así lo prevea la presente Ley. En el sentido de las normas anteriores, el art.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 322 — similitud 0.1175
+
+**Detalle de puntaje:** tfidf=0.0775; bonus=0.0400
+
+> 306 El derecho mercantil regulador del Seguro Social de México, sin cobro de comisión, dentro de los cuatro días hábiles banca- rios siguientes. Esta institución oficial abría dos subcuentas: una por retiro a nombre del Instituto Mexicano del Seguro Social (imss) y otra de vivienda a nombre del Infonavit. Los fondos los ponía a disposición del Gobierno Fede­ ral, en forma de créditos.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 34 — similitud 0.1109
+
+**Detalle de puntaje:** tfidf=0.0909; bonus=0.0200
+
+> No es válido estimar que en razón a los grupos que se tutelan, por la naturaleza jurídica de la institución o por cualquier otra razón, los principios reguladores y los conceptos sean diversos. La naturale­ za jurídica del seguro social debía ser la misma, tratándose del Apartado A, del Apartado B del art.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 17 — similitud 0.1007
+
+**Detalle de puntaje:** tfidf=0.0707; bonus=0.0300
+
+> El capítulo 16, con el que concluye el texto, contiene un sustancioso estu­ dio de los medios de defensa en contra de las determinaciones del imss. Detalla al efecto las diversas posiciones teóricas en torno a la naturaleza jurídica de las cuotas que se pagan al Instituto, las cédulas de determinación, las cédulas de liquidación, las prórrogas y los recursos administrativos internos que se pueden hacer valer.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 330 — similitud 0.1000
+
+**Detalle de puntaje:** tfidf=0.0700; bonus=0.0300
+
+> Con esta disposición se les traslada una parte de la contribución que aportan los patrones, los trabajadores y el mismo Gobier­ no Federa!. Este movimiento varía la naturaleza jurídica de la contribución, ai encomendarle además la inversión en la sociedad especializada en dichos fondos. La Consar autoriza la celebración de contratos de naturaleza mer­ cantil con cada trabajador y la aportación (contribución) se transforma en una acción de esta segunda sociedad mercantil.
+
+### La seguridad social y los  desa - Ana Belem Hernandez.pdf — p. 13 — similitud 0.0932
+
+**Detalle de puntaje:** tfidf=0.0732; bonus=0.0200
+
+> 35. 5 Sergio Sandoval Hernández, “La Seguridad Social en el Mundo Contem- poráneo”, Boletín de Información Jurídica del IMSS, núm. 21, México, sep- tiembre-octubre de 1976, p.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 79 — similitud 0.0910
+
+**Detalle de puntaje:** tfidf=0.0710; bonus=0.0200
+
+> Los bienes muebles e inmuebles de cualquier naturaleza, con excepción de aquellos provenientes de adjudicación o dación en pago por adeudo de cuotas obrero patronales, capitales constitutivos y accesorios, así como cualquier otro que se afecte expresamente a las reservas que el Instituto deba constituir en términos de esta Ley; II. Los derechos de propiedad y posesión de bienes muebles e inmuebles, cualquiera que sea su naturaleza jurídica, que por justo título obren en poder del Instituto; III. Los derechos de cualquier naturaleza que el Instituto obtenga o pueda obtener; IV.
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 269 — similitud 0.0905
+
+**Detalle de puntaje:** tfidf=0.0605; bonus=0.0300
+
+> Las adecuaciones al marco jurídico para: a) Fortalecer la autonomía de gestión de las escuelas ante los órdenes de gobierno que corresponda con el objetivo de mejorar su infraestructura, comprar materiales educativos, resolver problemas de operación básicos y propiciar condiciones de participación para que alumnos, maestros y padres de familia, bajo el liderazgo del director, se involucren en la resolución de los retos que cada escuela enfrenta. b) Establecer en forma paulatina y conforme a la suficiencia presupuestal escuelas de tiempo completo con jornadas de entre 6 y 8 horas diarias, para aprovechar mejor el tiempo disponible para el desarrollo académico, deportivo y cultural.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 166 — similitud 0.0758
+
+**Detalle de puntaje:** tfidf=0.0558; bonus=0.0200
+
+> Como se observa, la Primera Sala parece entender que el derecho al libre desa- rrollo de la personalidad no sólo impone límites negativos al Estado, es decir, obli- gaciones de no hacer o de no intervención, sino que también posee una dimensión positiva que orienta o dota de contenido a otros derechos fundamentales (como el derecho a la educación), lo cual puede traducirse en obligaciones positivas o de hacer para el Estado (en este caso, la obligación de proporcionar una educación orientada a garantizar la autonomía de las personas con base en ciertos conteni- dos mínimos). VIII.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 118 — similitud 0.0752
+
+**Detalle de puntaje:** tfidf=0.0652; bonus=0.0100
+
+> 1 La Corte determinó que, derivado de la sentencia de la Corte Interameri- cana de Derechos Humanos en el caso Radilla Pacheco, las juezas y los jueces mexicanos deben llevar a cabo un control de convencionalidad ex officio. Deber de ejercer un control de convencionalidad ex officio A juicio de la Corte, el ejercicio del control de convencionalidad debe realizarse dentro de los cauces previstos por el modelo de control de constitucionalidad vigente en nuestro país.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 2 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 04. Ley Federal del Trabajo (LFT)
+
+**Calidad estimada:** media
+**Mejor similitud:** 0.2679
+**Similitud promedio:** 0.1872
+**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf
+**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 844; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 916; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 106; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 147; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 169; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 246; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 26; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 267; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 300; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 384; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 129; Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf, p. 6; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 127; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 11; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 141; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 142; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 150; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 158; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 161; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 162; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 180; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 2
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 141 — similitud 0.2679
+
+**Detalle de puntaje:** tfidf=0.2279; bonus=0.0400
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se expide la Ley Federal de Declaración Especial de Ausencia para Personas Desaparecidas, y se reforman diversas disposiciones de la Ley Federal del Trabajo; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del artículo 123 Constitucional; de la Ley del Seguro Social; de la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado; de la Ley General de Títulos y Operaciones de Crédito; de la Ley de Instituciones de Crédito y de la Ley Agraria.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 150 — similitud 0.2336
+
+**Detalle de puntaje:** tfidf=0.1936; bonus=0.0400
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo y de la Ley del Seguro Social, en materia de las personas trabajadoras del hogar. Publicado en el Diario Oficial de la Federación el 2 de julio de 2019 Artículo Segundo.- Se adiciona una fracción IV al artículo 12; se deroga la fracción II, del artículo 13, de la Ley del Seguro Social. ……..
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 300 — similitud 0.2295
+
+**Detalle de puntaje:** tfidf=0.1495; bonus=0.0800
+
+> 169 de la LSS consigna la propiedad del trabajador en relación con los fon­ dos depositados en la cuenta individual, con lo que le permite disponer de esos recursos cuando reciban una pensión por riesgos de trabajo o por invalidez y vida, puesto que no existe en la Ley modalidad alguna que lo limite. Si bien la aporta­ ción es contribución para fines del pago y exigencia del cobro, en todo momento es parte del salario del trabajador y cuenta con los derechos y las garantías que le confiere la Ley Federal del Trabajo (LFT).
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 147 — similitud 0.2273
+
+**Detalle de puntaje:** tfidf=0.1473; bonus=0.0800
+
+> XVIII, que se entenderá por salario “la retribución que la Ley Federa! del Trabajo define como tal”. La Ley Federal del Trabajo (LFT), en el art. 82, define el sa­ lario como la remuneración que debe otorgar el patrón al trabajador por sus servicios.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 147 — similitud 0.2217
+
+**Detalle de puntaje:** tfidf=0.1817; bonus=0.0400
+
+> 7 Salario base de cotización y cuota Concepto L a Ley del Seguro Social (l ss) determina en el art. 5 A, fracc.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 169 — similitud 0.2165
+
+**Detalle de puntaje:** tfidf=0.1365; bonus=0.0800
+
+> La seguridad social se organizará conforme a las siguientes bases mínimas: a) Cubrirá los accidentes y enfermedades profesionales; las enfermedades no profe­ sionales y maternidad; y la jubilación, la invalidez, vejez y muerte. Los códigos civiles anteriores a la expedición de la Ley Federal del Trabajo (LFT) del 18 de agosto de 1931, consignan la responsabilidad civil del daño y obligan a su reparación mediante el pago de indemnización. Al expedirse los ordenamientos laborales se adecúan las normas, sin desestimar la figura de indemnización, cuyo cálculo en salarios es superior, aun cuando remiten a la ley laboral para estimar los días.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 267 — similitud 0.2163
+
+**Detalle de puntaje:** tfidf=0.1363; bonus=0.0800
+
+> XIV de ese numeral, puesto que esta última fracción expresamente ordena que el patrón cubra una indemnización, en los términos consignados en la Ley Federal del Trabajo (lft). Tampoco puede invocarse como fundamento la fracc. iv del art.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 384 — similitud 0.2112
+
+**Detalle de puntaje:** tfidf=0.1312; bonus=0.0800
+
+> 256, fas relaciones entre el Instituto y sus trabajadores se regirán por lo dispuesto en el Apartado A del art. 123 constitucional, la Ley Federal del Trabajo (lft) y el contrato colectivo de trabajo. El Ejecutivo Federal ha expedido los reglamentos que norman al Instituto desde su creación, sin tener más facultades que las derivadas de una interpre­ tación inadecuada de la segunda parte de la fracc.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 161 — similitud 0.2099
+
+**Detalle de puntaje:** tfidf=0.1699; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman los Artículos Transitorios Primero, Tercero, Cuarto, Quinto, Sexto y Séptimo del "Decreto por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo; de la Ley del Seguro Social; de la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores; del Código Fiscal de la Federación; de la Ley del Impuesto sobre la Renta; de la Ley del Impuesto al Valor Agregado; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del Artículo 123 Constitucional; de la Ley...
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 106 — similitud 0.2062
+
+**Detalle de puntaje:** tfidf=0.1262; bonus=0.0800
+
+> 90 Las leyes del Seguro Social Ejecutivo de ia Unión dictará las medidas complementarias de la Ley que sean procedentes para establecer el Seguro Social.” Se fue creando un ambiente de convencimiento y el art. 305 de la Ley Federal del Trabajo (lft) del 18 de agosto de 1931, dispuso que los patrones pudieran cumplir las obligaciones emanadas de los riesgos profesionales, ase­ gurando a su costa al trabajador, en lugar de la indemnización que determina­ ba la fracc. xiv del art. 123.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 11 — similitud 0.1993
+
+**Detalle de puntaje:** tfidf=0.1593; bonus=0.0400
+
+> Artículo 28 A. La base de cotización para los sujetos obligados señalados en la fracción II del artículo 12 de esta Ley, se integrará por el total de las percepciones que reciban por la aportación de su trabajo personal, aplicándose en lo conducente lo establecido en los artículos 28, 29, 30, 32 y demás aplicables de esta Ley.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 158 — similitud 0.1992
+
+**Detalle de puntaje:** tfidf=0.1592; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo; de la Ley del Seguro Social; de la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores; del Código Fiscal de la Federación; de la Ley del Impuesto sobre la Renta; de la Ley del Impuesto al Valor Agregado; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del Artículo 123 Constitucional; de la Ley Reglamentaria de la Fracción XIII Bis del Apartado B, del Artículo 123 de la Constitución Política de los Estados Unidos...
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 916 — similitud 0.1961
+
+**Detalle de puntaje:** tfidf=0.1161; bonus=0.0800
+
+> Con base en estadísticas de ocupación y empleo, desigualdad de género y cobertura en seguridad social, llega a la conclusión de que la pérdida de quien aporta el ingreso principal al hogar es a las mujeres. La SCJN resuelve declarar la inconstitucionalidad de la norma de la Ley Federal del Trabajo (LFT) que impide el acceso de las concubinas a la indemnización por causa de muerte en tanto discrimina de manera indirecta a las mujeres y de manera directa a las concubinas por razón de estado civil y, en consecuencia, ampara a la demandante.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 246 — similitud 0.1942
+
+**Detalle de puntaje:** tfidf=0.1142; bonus=0.0800
+
+> Cuando el momento de parto no coincida y exista un lapso posterior, hasta el alumbramiento, de 42 días al instante del nacimiento, se cubrirá con 60% del salario de cotización (equiva­ lente al subsidio por enfermedad), como lo dispone el art. 101. __ La Ley Federal del Trabajo (lft), en la fracc. v del art. 170 dispone que las prórrogas se cubrirán al 50% del salario, por un periodo no mayor de 60 días; cantidad y lapso que, en todo caso, deberá completar el patrón.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 127 — similitud 0.1881
+
+**Detalle de puntaje:** tfidf=0.1481; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman, adicionan y derogan diversas disposiciones de la Ley General para la Igualdad entre Mujeres y Hombres; de la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia; del Código Nacional de Procedimientos Civiles y Familiares; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del Artículo 123 Constitucional; de la Ley General de Desarrollo Social; de la Ley General de Salud; de la Ley General de Educación; de la Ley del Seguro Social; de la Ley de Migración; de la Ley General de los Derechos de Niñas...
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 161 — similitud 0.1865
+
+**Detalle de puntaje:** tfidf=0.1465; bonus=0.0400
+
+> Artículo Único.- Se reforman los Artículos Transitorios Primero, Tercero, Cuarto, Quinto, Sexto y Séptimo del “Decreto por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo; de la Ley del Seguro Social; de la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores; del Código Fiscal de la Federación; de la Ley del Impuesto sobre la Renta; de la Ley del Impuesto al Valor Agregado; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del Artículo 123 Constitucional; de la Ley Reglamentaria de la Fracción XIII Bis del Apartado B, del Artículo 123 de la Constitución Política de los Estados Unidos...
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 162 — similitud 0.1684
+
+**Detalle de puntaje:** tfidf=0.1284; bonus=0.0400
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforma el artículo Quinto Transitorio del "Decreto por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo, de la Ley Orgánica del Poder Judicial de la Federación, de la Ley Federal de la Defensoría Pública, de la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores y de la Ley del Seguro Social, en materia de justicia laboral, libertad sindical y negociación colectiva", publicado en el Diario Oficial de la Federación el 1 de mayo de 2019.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 844 — similitud 0.1656
+
+**Detalle de puntaje:** tfidf=0.1256; bonus=0.0400
+
+> Respecto a la estabilidad en el empleo, el doctor Carlos Reynoso refiere que “la idea de preservar el trabajo y de conservar al trabajador en él”, sería el “eje conductor de un conjunto de normas jurídicas” conocido como derecho a la esta- bilidad en el empleo o estabilidad laboral.54 De acuerdo con ese concepto el derecho a no ser privado del empleo de ma- nera injusta es una de las normas que protegen la estabilidad en el empleo, pero también se refiere a la duración de las relaciones laborales.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 26 — similitud 0.1509
+
+**Detalle de puntaje:** tfidf=0.1209; bonus=0.0300
+
+> La se­ guridad es el género; el seguro social, su instrumento. Desde luego, diversas disciplinas como la medicina, ergonomía, economía, estadística y matemática guardan relación con la seguridad y gravan o benefician su desarrollo, depen­ diendo, en buena parte, de la eficacia del seguro social. La relación entre seguridad social y seguro social, con sus distinciones, se presenta en el cuadro siguiente:
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 2 — similitud 0.1448
+
+**Detalle de puntaje:** tfidf=0.1048; bonus=0.0400
+
+> Trabajador permanente: aquél que tenga una relación de trabajo por tiempo indeterminado; VII. Trabajador eventual: aquél que tenga una relación de trabajo para obra determinada o por tiempo determinado en los términos de la Ley Federal del Trabajo; VIII. Sujetos o sujeto obligado: los señalados en los artículos 12, 13, 229, 230, 241 y 250-A de la
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 142 — similitud 0.1446
+
+**Detalle de puntaje:** tfidf=0.1046; bonus=0.0400
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo, de la Ley Orgánica del Poder Judicial de la Federación, de la Ley Federal de la Defensoría Pública, de la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores y de la Ley del Seguro Social, en materia de Justicia Laboral, Libertad Sindical y Negociación Colectiva. Publicado en el Diario Oficial de la Federación el 1 de mayo de 2019 ARTÍCULO QUINTO.
+
+### Evolucion de la  Seguridad Soci - Ernesto Cotonieto-Martinez.pdf — p. 6 — similitud 0.1430
+
+**Detalle de puntaje:** tfidf=0.1030; bonus=0.0400
+
+> En 1946 y 1947, la Ley General de Pensiones Civiles y la Ley de Pensiones Civiles, respectivamente, sustituyeron la de 1925; pero en ninguna se incluían los servicios médicos para el cuidado de la salud(12,13,14). · En 1929 se formalizó la necesidad de contar con una Ley del Seguro Social y quedó plasmada en el artículo 123 de la CPEUM(13); con lo que se establecieron los derechos de las personas respecto al trabajo digno y socialmente útil, para lo cual el Congreso de la Unión se debía comprometer en la expedición de leyes del trabajo y que contemplen aspectos como: jornada laboral, condiciones laborales, días de descanso, condiciones de vulnerabilidad, salario, accidentes en el centro de...
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 162 — similitud 0.1428
+
+**Detalle de puntaje:** tfidf=0.1028; bonus=0.0400
+
+> Artículo Único.- Se reforma el artículo Quinto Transitorio del “Decreto por el que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo, de la Ley Orgánica del Poder Judicial de la Federación, de la Ley Federal de la Defensoría Pública, de la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores y de la Ley del Seguro Social, en materia de justicia laboral, libertad sindical y negociación colectiva”, publicado en el Diario Oficial de la Federación el 1 de mayo de 2019, para quedar como sigue: ……… Transitorio Único.- El presente Decreto entrará en vigor el día siguiente al de su publicación en el Diario Oficial de la Federación.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 129 — similitud 0.1390
+
+**Detalle de puntaje:** tfidf=0.0990; bonus=0.0400
+
+> A. Introducción Se han hecho esfuerzos para sancionar las vulneraciones al embarazo y la maternidad, como en las recientes reformas a la Ley Federal del Trabajo (2019).
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 2 — similitud 0.1334
+
+**Detalle de puntaje:** tfidf=0.1034; bonus=0.0300
+
+> Instituto: el Instituto Mexicano del Seguro Social; IV. Patrones, patrón o persona empleadora: la persona física o moral que tenga ese carácter en los términos de la Ley Federal del Trabajo; Fracción reformada DOF 16-11-2022 V. Trabajadores o trabajador: la persona física que la Ley Federal del Trabajo define como tal; VI.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 180 — similitud 0.1312
+
+**Detalle de puntaje:** tfidf=0.0912; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman, adicionan y derogan diversas disposiciones de la Ley General para la Igualdad entre Mujeres y Hombres; de la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia; del Código Nacional de Procedimientos Civiles y Familiares; de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del Artículo 123 Constitucional; de la Ley General de Desarrollo Social; de la Ley General de Salud; de la Ley General de Educación; de la Ley del Seguro Social; de la Ley de Migración; de la Ley General de los Derechos de Niñas...
+
+**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 05. Leyes del Seguro Social de 1973 y 1997
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.2812
+**Similitud promedio:** 0.1474
+**Fuentes:** Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf
+**Ubicaciones:** Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf, p. 248; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 108; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 114; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 117; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 130; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 134; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 138; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 290; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 346; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 36; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 37; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 43; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf, p. 3; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 267; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 66; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 36; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 46; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 117; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 119; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 132; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 137; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 139; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 149
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 36 — similitud 0.2812
+
+**Detalle de puntaje:** tfidf=0.2412; bonus=0.0400
+
+> Sujetos obligados La relación que mantienen las leyes de Seguro Social con los ordenamien­ tos laborales imponen a los patrones las principales obligaciones de cotiza­ ción. Las leyes del Seguro Social de 1973 y de 1977, en la fracc. ¡I del art. 12, determinan que las cooperativas tienen las obligaciones que se consignan a los patrones.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 117 — similitud 0.1947
+
+**Detalle de puntaje:** tfidf=0.1547; bonus=0.0400
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforma el párrafo primero del artículo primero transitorio de la Ley del Seguro Social, publicado el 21 de diciembre de 1995. Publicado en el Diario Oficial de la Federación el 21 de noviembre de 1996 ARTÍCULO PRIMERO.- Se reforma el párrafo primero del artículo primero transitorio de la Ley del Seguro Social publicada en el Diario Oficial de la Federación el día 21 de diciembre de 1995, para quedar como sigue: ..........
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 132 — similitud 0.1831
+
+**Detalle de puntaje:** tfidf=0.1431; bonus=0.0400
+
+> TRANSITORIOS PRIMERO.- El presente Decreto entrará en vigor al día siguiente de su publicación en el Diario Oficial de la Federación, con excepción de lo dispuesto por el artículo 168, fracción IV, de la Ley del Seguro Social que se reforma, el cual entrará en vigor a partir del bimestre de cotización siguiente a su publicación. SEGUNDO.- Los bimestres y semanas de cotización de los trabajadores anteriores a la fecha de entrada en vigor del presente Decreto, así como la antigüedad de su cuenta individual, deberán ser reconocidos para efecto del cálculo de los plazos a que se refiere el artículo 191, fracción II, de la Ley del Seguro Social que se reforma.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 267 — similitud 0.1818
+
+**Detalle de puntaje:** tfidf=0.1418; bonus=0.0400
+
+> Precisamente, a poco de entrar en vigor la reforma a la Ley del Seguro Social (LSS) por la cual las personas empleadoras están obligadas a inscribir a las trabajadoras domésticas en el IMSS, el SINACTRAHO interpuso un recurso de amparo ante el Poder Judicial en contra del decreto de reforma por estar el
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 149 — similitud 0.1737
+
+**Detalle de puntaje:** tfidf=0.1337; bonus=0.0400
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se adicionan diversas disposiciones de la Ley del Seguro Social, de la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado y de la Ley Federal del Trabajo. Publicado en el Diario Oficial de la Federación el 4 de junio de 2019 Artículo Primero.- Se adiciona un artículo 140 Bis a la Ley del Seguro Social, para quedar como sigue: ……… Transitorios Primero.- El presente Decreto entrará en vigor el día siguiente al de su publicación en el Diario Oficial de la Federación.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 37 — similitud 0.1676
+
+**Detalle de puntaje:** tfidf=0.1276; bonus=0.0400
+
+> El monto de la pensión suele ser insuficiente para atender las necesidades mínimas de una persona; su cálculo se hace sobre bases de promedios de los últimos años cotizados y según el monto acumulado en la cuenta individual. Solidariohabiente Las leyes del Seguro Social de 1973 y de 1977 incluyen la solidariohabiencia, con prestaciones limitadas al aspecto médico: atención de consulta, farmacia y hospitalaria, para atender a zonas social y económicamente marginadas, que determine el Presidente de la República. Se instrumentaron programas de alcance nacional, hasta llegar a la cifra de atención de 11 millones de perso­ nas.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 137 — similitud 0.1674
+
+**Detalle de puntaje:** tfidf=0.1274; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman diversas disposiciones de la Ley del Seguro Social y de la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado. Publicado en el Diario Oficial de la Federación el 28 de mayo de 2012 Artículo Primero.- Se reforma el artículo 118 y se adiciona un artículo Vigésimo Noveno Transitorio a la Ley del Seguro Social, publicada el 12 de diciembre de 1995, para quedar como sigue: ………. Transitorio Único.- El presente Decreto entrará en vigor al día siguiente de su publicación en el Diario Oficial de la Federación.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 119 — similitud 0.1657
+
+**Detalle de puntaje:** tfidf=0.1257; bonus=0.0400
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman diversas disposiciones de la Ley del Seguro Social. Publicado en el Diario Oficial de la Federación el 20 de diciembre de 2001 ARTÍCULO ÚNICO: Se reforman, adicionan y derogan diversas disposiciones de la Ley del Seguro Social, publicada en el Diario Oficial de la Federación del 21 de diciembre de 1995, en los términos siguientes: A.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 132 — similitud 0.1633
+
+**Detalle de puntaje:** tfidf=0.1233; bonus=0.0400
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman diversas disposiciones de la Ley del Seguro Social. Publicado en el Diario Oficial de la Federación el 26 de mayo de 2009 ARTÍCULO ÚNICO.- Se reforman los artículos 139, segundo párrafo, 165, primer párrafo, 168, fracción IV y último párrafo, 191, fracción II, y 198 de la Ley del Seguro Social, para quedar como sigue: ……….
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 36 — similitud 0.1598
+
+**Detalle de puntaje:** tfidf=0.1298; bonus=0.0300
+
+> Abrir, administrar y operar las Cuentas Individuales de los Trabajadores en los mismos términos que las Administradoras; II. Recibir las Cuotas y Aportaciones de seguridad social correspondientes a las Cuentas Individuales y los demás recursos que en términos de esta Ley puedan ser recibidos en las Cuentas Individuales, excepto las de la Subcuenta del Fondo de la Vivienda; III.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 46 — similitud 0.1520
+
+**Detalle de puntaje:** tfidf=0.1120; bonus=0.0400
+
+> De la misma manera los Trabajadores inscritos en el IMSS que inicien una relación laboral que los sujete al régimen de esta ley podrán transferir al Instituto los derechos de sus semanas de cotización. Para efectos de la transferencia de derechos prevista en el presente artículo se considerará que un año de cotización al Instituto equivale a cincuenta y dos semanas de cotización del régimen de la Ley del Seguro Social. Asimismo, el Instituto deberá señalar en las constancias de baja que expida a los Trabajadores el número de años de cotización incluyendo, en su caso, la última fracción de año cotizado.
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 248 — similitud 0.1490
+
+**Detalle de puntaje:** tfidf=0.1190; bonus=0.0300
+
+> CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Últimas Reformas DOF 02-06-2026 DECRETO por el que se adiciona un segundo párrafo al artículo segundo transitorio y un artículo tercero transitorio al decreto por el que se declaran reformado el párrafo cuarto y adicionados los párrafos quinto y sexto, y se recorre el orden de los últimos dos párrafos del artículo 18 de la Constitución Política de los Estados Unidos Mexicanos, publicado el 12 de diciembre de 2005. Publicado en el Diario Oficial de la Federación el 14 de agosto de 2009 Artículo Único.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 139 — similitud 0.1459
+
+**Detalle de puntaje:** tfidf=0.1059; bonus=0.0400
+
+> Publicado en el Diario Oficial de la Federación el 2 de abril de 2014 Artículo Tercero.- Se reforma la fracción II y se adiciona una fracción III, recorriéndose la actual en su orden, al artículo 94 de la Ley del Seguro Social, para quedar como sigue. …….. TRANSITORIOS PRIMERO.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 43 — similitud 0.1449
+
+**Detalle de puntaje:** tfidf=0.1049; bonus=0.0400
+
+> El sistema de cuentas individuales instaurado por primera vez en la República de Chile (por Decreto 3 ,100 de 1980) y en México, iniciado con la reforma de 1992 a la LSS, cuya culminación en ese ordenamiento se da con la Ley de 1997 y en 2007 con la LISSSTE, consiste básicamente, como veremos en el desarrollo de esta obra, en eliminar los principios de solidaridad y de reparto de los ins­ titutos oficiales de seguro social (imms e issste).
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 346 — similitud 0.1393
+
+**Detalle de puntaje:** tfidf=0.0993; bonus=0.0400
+
+> Respecto de la subcuenta de vivienda, la Afore deberá individualizar las aportaciones y los rendimientos correspondientes con base en la información que le proporcionen los institutos de seguridad social. En consecuencia, la Afore recibirá las cuotas y aportaciones de seguri­ dad social correspondientes a las cuentas individuales, de conformidad con las leyes de seguridad social, así como las aportaciones voluntarias y comple­ mentarias de retiro, y los demás recursos que en términos de la Ley puedan ser recibidos en las cuentas individuales.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 117 — similitud 0.1270
+
+**Detalle de puntaje:** tfidf=0.0870; bonus=0.0400
+
+> En marzo de 1995 el im ss presentó un documento oficial de 151 hojas, “las conclusiones a las que se lleguen derivadas de este proceso serán un firme sustento para emprender la Nueva Era del IMSS, fortalecida por la correspon­ sabilidad de sus trabajadores, beneficiarios y aportantes”,4 Su análisis permite comprender los objetivos de las nuevas leyes en el Seguro Social, de la LSS, en vigor a partir del 1 de julio de 1997 y de la Ley de los Sistemas de Ahorro para el Retiro (lsar) de! 26 de mayo de 2006.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 108 — similitud 0.1197
+
+**Detalle de puntaje:** tfidf=0.0897; bonus=0.0300
+
+> I Las leyes del Seguro Social 4. Interés público. “El Seguro Social no considera el riesgo particular de cada persona que se asegura, sino que atiende a las condiciones econó­ micas del sector de la colectividad que trata de asegurar.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 134 — similitud 0.1171
+
+**Detalle de puntaje:** tfidf=0.0871; bonus=0.0300
+
+> 1 1 8 Las leyes del Seguro Social Los principios anteriores se complementan con lo ordenado por el art. 5 del mismo ordenamiento, que dispone: La organización y administración del Seguro Social, en los términos consignados en esta Ley, están a cargo del organismo público descentralizado con persona­ lidad y patrimonio propios, denominado Instituto Mexicano del Seguro Social, el que tiene el carácter de organismo fiscal autónomo, cuando así lo prevea la presente Ley.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 346 — similitud 0.1139
+
+**Detalle de puntaje:** tfidf=0.0839; bonus=0.0300
+
+> 330 El derecho mercantil regulador del Seguro Social de acciones de las Siefore que la Afore opera, donde actúa en nombre y por cuenta del trabajador, así como los servicios de guarda y administración rela­ tivos a tales acciones. En esta cláusula se varía la naturaleza de la cuota que ha recibido la Afore, sin tomar en cuenta que se trata de una contribución y de su naturaleza fiscal; convierte la cuota en una acción mercantil.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 66 — similitud 0.1097
+
+**Detalle de puntaje:** tfidf=0.0697; bonus=0.0400
+
+> 2  Carpenter, S. et al., “Sistemas previsionales con enfoque de género en América Latina y el Caribe: una cuestión de igualdad”, Conferencia Interamericana de Seguridad Social, 2022. 3  Nugent, R., “Capítulo 33 La Seguridad Social: su Historia y sus Fuentes”, en Instituciones de derecho del trabajo y de la seguridad social, México, Academia Iberoamericana de Derecho del Trabajo y de la Seguridad Social y Universidad Nacional Autónoma de México, 1997.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 114 — similitud 0.1095
+
+**Detalle de puntaje:** tfidf=0.0695; bonus=0.0400
+
+> 98 Las leyes del Seguro Social alcanzada por los diversos sectores acerca de la magnitud del rezago social que afronta el país y la necesidad de imprimir un sentido humano al progreso.2 A lo largo de sus 24 años de vigencia este ordenamiento fue objeto de con­ tinuas modificaciones para adecuar sus prestaciones y servicios. Durante el gobierno del presidente Carlos Salinas de Gortari se llevaron a cabo reformas que alteraron los principios y la administración del Instituto, y que fueron el antecedente de la privatización de los seguros sociales.
+
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.1093
+
+**Detalle de puntaje:** tfidf=0.0793; bonus=0.0300
+
+> 5 2. La seguridad social en México . . . . . . . . . . . . 8 I.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 138 — similitud 0.1054
+
+**Detalle de puntaje:** tfidf=0.0754; bonus=0.0300
+
+> 122 Las leyes del Seguro Social En éste, sólo se otorgan prestaciones en especie dentro del seguro de en­ fermedades y maternidad, tanto para los reconocidos por la Ley: cónyuge, concubino(a), descendientes y ascendientes, como para aquellos que depen­ dan económicamente del asegurado (art, 241) y que no estén protegidos. Las modalidades que se convengan {art.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 130 — similitud 0.1031
+
+**Detalle de puntaje:** tfidf=0.0731; bonus=0.0300
+
+> 114 . . . . Las leyes del Seguro Social El Presidente de la República envió la iniciativa al Congreso de la Unión el 9 de noviembre de 1995. La exposición señala: La estabilidad y el crecimiento económico sostenido son condiciones indispen­ sables para el progreso social, por eso el Plan Nacional de Desarrollo establece la articulación de la política social con la fiscal y la financiera.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 290 — similitud 0.1014
+
+**Detalle de puntaje:** tfidf=0.0614; bonus=0.0400
+
+> El actual sistema ha demostrado ser inequitativo, no confiable y desequi­ librado. El objetivo es que el trabajador acerque más la tasa de reemplazo al último salario y que las personas que reciben medio salario mínimo obtengan la cantidad adecuada para mantener una vida decorosa. Como hemos visto, el sistema se basa en las aportaciones estimadas sobre el salario de los trabajado­ res, sin posibilidad de alcanzar una revisión integral.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 06. Rama (del seguro social)
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.3036
+**Similitud promedio:** 0.1572
+**Fuentes:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf; La seguridad social y los  desa - Ana Belem Hernandez.pdf; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf
+**Ubicaciones:** Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 899; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 13; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 23; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 250; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 26; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 27; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 295; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 381; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 4; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 66; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 72; Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf, p. 3; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 160; La seguridad social y los  desa - Ana Belem Hernandez.pdf, p. 17; La seguridad social y los  desa - Ana Belem Hernandez.pdf, p. 18; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 102; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 119; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 132; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 149; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 158; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 66; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 75; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 92
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 66 — similitud 0.3036
+
+**Detalle de puntaje:** tfidf=0.2636; bonus=0.0400
+
+> a) Para los sujetos a que se refiere la fracción I del artículo 13 de esta Ley, las prestaciones del seguro de enfermedades y maternidad, por lo que se refiere a las prestaciones en especie estarán sujetos a los tiempos de espera determinados en el reglamento de la ley en la materia, las del seguro de riesgos de trabajo, las correspondientes de los seguros de invalidez y vida, retiro, cesantía en edad avanzada y vejez, así como las del seguro de guarderías y prestaciones sociales, en los términos de los capítulos respectivos; Inciso reformado DOF 20-12-2001, 01-12-2023 b) Se deroga. Inciso derogado DOF 16-11-2022 c) Se deroga.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 75 — similitud 0.2642
+
+**Detalle de puntaje:** tfidf=0.2242; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 I. Administrar los seguros de riesgos de trabajo, enfermedades y maternidad, invalidez y vida, guarderías y prestaciones sociales, salud para la familia, adicionales y otros, así como prestar los servicios de beneficio colectivo que señala esta Ley; Fracción reformada DOF 20-12-2001 II. Satisfacer las prestaciones que se establecen en esta Ley; III.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 102 — similitud 0.2617
+
+**Detalle de puntaje:** tfidf=0.2217; bonus=0.0400
+
+> Artículo reformado DOF 14-12-2005 Artículo 300. El derecho de los asegurados o sus beneficiarios para reclamar el pago de las prestaciones en dinero, respecto a los seguros de riesgos de trabajo, enfermedades y maternidad, invalidez y vida y guarderías y prestaciones sociales prescribe en un año de acuerdo con las reglas siguientes: I. Cualquier mensualidad de una pensión, asignación familiar o ayuda asistencial, así como el aguinaldo; II.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 295 — similitud 0.2479
+
+**Detalle de puntaje:** tfidf=0.2079; bonus=0.0400
+
+> Para efectos de esta Ley, se entenderá por: l. Cuenta individual, aquella que se abrirá para cada asegurado en las Adminis­ tradoras de Fondos para el Retiro, para que se depositen en la misma las cuotas obrero-patronales y estatal por concepto del seguro de retiro, cesantía en edad avanzada y vejez, así como los rendimientos. La cuenta individual se integrará por las subcuentas: de retiro, cesantía en edad avanzada y vejez; de vivienda y de aportaciones voluntarias.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 75 — similitud 0.2444
+
+**Detalle de puntaje:** tfidf=0.2044; bonus=0.0400
+
+> Recaudar y cobrar las cuotas de los seguros de riesgos de trabajo, enfermedades y maternidad, invalidez y vida, guarderías y prestaciones sociales, salud para la familia y adicionales, los capitales constitutivos, así como sus accesorios legales, percibir los demás recursos del Instituto, y llevar a cabo programas de regularización de pago de cuotas. De igual forma, recaudar y cobrar las cuotas y sus accesorios legales del seguro de retiro, cesantía en edad avanzada y vejez; Fracción reformada DOF 20-12-2001 XIII.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 381 — similitud 0.2277
+
+**Detalle de puntaje:** tfidf=0.1877; bonus=0.0400
+
+> Las divido en administrativas y fiscalizadoras. Entre las primera está administrar los seguros de riesgos de trabajo, enfermedades y maternidad, invalidez y vida, guarderías y prestaciones sociales, salud para la familia, adicionales y otros. Si bien no menciona el seguro de retiro, cesantía en edad avanzada y vejez, su consideración no deja lugar a duda.
+
+### La seguridad social y los  desa - Ana Belem Hernandez.pdf — p. 17 — similitud 0.1748
+
+**Detalle de puntaje:** tfidf=0.1348; bonus=0.0400
+
+> Por ello, debe tomarse en cuenta el concepto amplio de seguridad social que la propia oit en 2007, en la Campa- ña Mundial sobre Seguridad Social y Cobertura para Todos, señala como el conjunto de instituciones, medidas, dere- chos y obligaciones cuyo objetivo principal es proporcionar —o tratar de proporcionar— de conformidad con reglas específicas, la seguridad de los ingresos y la asistencia sani- taria a cada miembro de la sociedad.11 11 oit, Seguridad social para todos: Una inversión en el desarrollo económi- co y social mundial, Campaña Mundial sobre Seguridad Social y Cobertura 17
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 13 — similitud 0.1489
+
+**Detalle de puntaje:** tfidf=0.1189; bonus=0.0300
+
+> El texto que ahora sale a la luz consta de seis partes temáticas en las que el autor expone, de manera erudita pero ágil y notablemente didáctica, los aspec­ tos sustanciales del Derecho de la Seguridad Social. En la primera de ellas abor­ da los principios estructurales de la disciplina, explicando con minuciosidad los conceptos que más utiliza esta rama del Derecho, como seguridad, inseguridad, seguro, seguro social, régimen del seguro y seguros del seguro social. La segunda parte del texto está dedicada a exponer los antecedentes de la seguridad social.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 4 — similitud 0.1485
+
+**Detalle de puntaje:** tfidf=0.1185; bonus=0.0300
+
+> C O L E C C I Ó N T E X T O S J U R Í D I C O S U N I V E R S I T A R I O S Derecho de la seguridad social Alberto Briceño Ruiz U n iv er sid a d N a c io n a l A u t ó n o m a de M éxico O X FO R D l í N I V E R S I T Y PRESS
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 66 — similitud 0.1452
+
+**Detalle de puntaje:** tfidf=0.1252; bonus=0.0200
+
+> La Ley del 5 de julio de 1934 reorganiza la administración de los seguros sociales, autorizando al gobierno para dictar las disposiciones pertinentes. El seguro social en Inglaterra Las causas que originan el establecimiento del seguro social en Inglaterra son diversas: van de la atención a los pobres, a la Revolución Industrial y a los movimientos sociales que no se atrevieron a alterar sus estructuras. Las leyes de pobres, los movimientos cartistas, el aislamiento de la gran isla y el crecimiento de las fábricas, configuran un sistema de indiscutible efectividad, muy distinto del alemán.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 119 — similitud 0.1418
+
+**Detalle de puntaje:** tfidf=0.1218; bonus=0.0200
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman diversas disposiciones de la Ley del Seguro Social.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 149 — similitud 0.1397
+
+**Detalle de puntaje:** tfidf=0.1197; bonus=0.0200
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se adicionan diversas disposiciones de la Ley del Seguro Social, de la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado y de la Ley Federal del Trabajo.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 27 — similitud 0.1392
+
+**Detalle de puntaje:** tfidf=0.1192; bonus=0.0200
+
+> Su aspecto particular permite la concreción en los conocimientos, aplicación de políticas y determinación de resultados. El seguro social integra normas jurídicas con autonomía; por esto podemos hablar de un Derecho del seguro social, con instituciones jurídicas
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 132 — similitud 0.1347
+
+**Detalle de puntaje:** tfidf=0.1147; bonus=0.0200
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se reforman diversas disposiciones de la Ley del Seguro Social.
+
+### La seguridad social y los  desa - Ana Belem Hernandez.pdf — p. 17 — similitud 0.1336
+
+**Detalle de puntaje:** tfidf=0.0936; bonus=0.0400
+
+> Esto quiere decir que la oit com- parte una visión integral de la seguridad social, a través de un sistema que sea flexible para adaptarse al grado de desarrollo económico y perseguir los objetivos de la uni- versalidad: reducir la pobreza y refrenar la inseguridad social por medio de los derechos sociales, la promoción del crecimiento a largo plazo, la distribución justa del in- greso, la ausencia de discriminación y la seguridad nacio- nal e internacional.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 26 — similitud 0.1332
+
+**Detalle de puntaje:** tfidf=0.1132; bonus=0.0200
+
+> La se­ guridad es el género; el seguro social, su instrumento. Desde luego, diversas disciplinas como la medicina, ergonomía, economía, estadística y matemática guardan relación con la seguridad y gravan o benefician su desarrollo, depen­ diendo, en buena parte, de la eficacia del seguro social. La relación entre seguridad social y seguro social, con sus distinciones, se presenta en el cuadro siguiente:
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 23 — similitud 0.1312
+
+**Detalle de puntaje:** tfidf=0.1012; bonus=0.0300
+
+> 15, septiembre-octubre de 1985. 10 Alberto Briceño Ruiz, op. cit., p. 24.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 158 — similitud 0.1308
+
+**Detalle de puntaje:** tfidf=0.1108; bonus=0.0200
+
+> Aquellos patrones que, en términos del segundo párrafo del artículo 75 de la Ley del Seguro Social, previo a la entrada en vigor del presente Decreto, hubiesen solicitado al Instituto Mexicano del Seguro Social la asignación de uno o más registros patronales por clase, de las señaladas en el artículo 73 de la Ley del Seguro Social, para realizar la inscripción de sus trabajadores a nivel nacional, tendrán hasta el 1 de septiembre de 2021 para dar de baja dichos registros patronales y de ser procedente, solicitar al mencionado Instituto se le otorgue un registro patronal en términos de lo dispuesto por el Reglamento de la Ley del Seguro Social en materia de Afiliación, Clasificación de...
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 72 — similitud 0.1244
+
+**Detalle de puntaje:** tfidf=0.1044; bonus=0.0200
+
+> La contingencia cubierta deberá comprender la suspensión de ga­ nancias, según la defina la legislación nacional, ocasionada por la imposibilidad de obtener un empleo conveniente, en el caso de una persona protegida que sea apta para trabajar y esté disponible para el trabajo. Las personas protegidas podrán ser de las categorías prescritas de asalariados, cuando no sean más de 50% de todos los asalariados.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 13 — similitud 0.1244
+
+**Detalle de puntaje:** tfidf=0.0844; bonus=0.0400
+
+> Queda claro que en nuestro país la seguridad social ha sido preocupación tanto de la administración pública como del sector académico, que mucho ha aportado para su mejor concepción y funcionamiento. En este marco apa­ rece la presente obra titulada Derecho de la seguridad social, de la autoría de Don Alberto Briceño Ruiz, distinguido catedrático universitario, quien desde hace casi 40 años ha impartido la asignatura en la Facultad de Derecho de la Universidad Nacional Autónoma de México (unam), en donde cuenta con la categoría de profesor titular nivel “C”. Briceño Ruiz es, además, presidente de la Academia Mexicana de Derecho de la Seguridad Social, que fundó hace poco más de 10 años.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 250 — similitud 0.1127
+
+**Detalle de puntaje:** tfidf=0.0727; bonus=0.0400
+
+> 2. Trabajadores domésticos y trabajadores al servicio de las adminis­ traciones públicas de la Federación, entidades federativas y m uni­ cipios, excluidos o no comprendidos en otras leyes o decretos como sujetos de seguridad social. Para este supuesto, los sujetos de ase­
+
+### La seguridad social y los  desa - Ana Belem Hernandez.pdf — p. 18 — similitud 0.1044
+
+**Detalle de puntaje:** tfidf=0.0644; bonus=0.0400
+
+> Una dificultad que ha tenido que enfrentar la seguri- dad social desde su reconocimiento institucional es que se le ha entendido a la par de las reglas laborales, y se le ha conce- bido —de forma errónea— como un derecho que tiene que ver únicamente con los trabajadores asalariados. Lo cierto es que no se limita a un determinado grupo, pues tal como señala Theodor Tomandi, citado por Gabriela Mendizábal: La nueva concepción total de la Seguridad Social se de- sarrolló durante la segunda guerra mundial en territorio angloamericano, y además se encuentra en una clara con- traposición ideológica con el seguro social.
+
+### Derecho humano a la seguridad s - Jose Luis Belmont Lugo.pdf — p. 3 — similitud 0.1036
+
+**Detalle de puntaje:** tfidf=0.0736; bonus=0.0300
+
+> 11 3. Fuente internacional del derecho a la seguridad social . . . . . . . . . . . . . . . . . . . 13 4.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 92 — similitud 0.0936
+
+**Detalle de puntaje:** tfidf=0.0536; bonus=0.0400
+
+> El Instituto para garantizar el debido y oportuno cumplimiento de las obligaciones que contraiga, derivadas del pago de beneficios y la prestación de servicios relativos a los seguros que se establecen en esta Ley, deberá constituir y contabilizar por ramo de seguro la provisión y el respaldo financiero de las reservas que se establecen en este Capítulo, en los términos que el mismo indica. Los recursos afectos a estas reservas no formarán parte del patrimonio del Instituto y sólo se podrá disponer de ellos para cumplir los fines previstos en esta Ley y garantizar su viabilidad financiera en el largo plazo.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 160 — similitud 0.0869
+
+**Detalle de puntaje:** tfidf=0.0469; bonus=0.0400
+
+> 136 El derecho a la seguridad social y las responsabilidades de cuidado pues, a pesar de los esfuerzos por expandir los servicios de cuidado infantil, persiste la fragmentación. Además, no obstante el carácter garantista del Estado frente a los derechos de la infancia, que asume su corresponsabilidad en el cuidado de la infancia, y que está presente en el marco normativo, las familias siguen cargando con la responsabilidad primaria del cuidado infantil, con consecuencias para el desarrollo integral de la infancia, así como para la inserción laboral femenina y el reparto del cuidado entre mujeres y varones.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 899 — similitud 0.0868
+
+**Detalle de puntaje:** tfidf=0.0468; bonus=0.0400
+
+> El derecho a la seguridad social 899 A la cuestión de las prestaciones diferentes entre planes contributivos y no con- tributivos, y aun entre planes contributivos entre sí, se le conoce como el problema de la fragmentación. La fragmentación consiste en la coexistencia de instituciones y planes de aseguramiento que cubren a cierto tipo de población y que establecen prestaciones diferentes para sus beneficiarios sin que haya una justificación sufi- ciente para este trato.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 07. Régimen obligatorio
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.2868
+**Similitud promedio:** 0.2017
+**Fuentes:** Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf
+**Ubicaciones:** Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 136; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 137; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 139; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 141; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 295; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 38; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 260; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 61; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 62; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 91; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 102; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 149; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 6; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 65; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 66; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 68; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 70; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 75
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 137 — similitud 0.2868
+
+**Detalle de puntaje:** tfidf=0.2068; bonus=0.0800
+
+> En la parte final del art. 13 se dispone: Mediante convenio con el Instituto se establecerán las modalidades y fechas de incorporación al régimen obligatorio, de los sujetos de aseguramiento compren­ didos en este artículo.- Dichos convenios deberán sujetarse al reglamento íjue al efecto expida el Ejecutivo Federal, Si los sujetos pueden incorporarse y el Instituto está facultado para abrir lapsos de inscripción, no estamos ante un régimen obligatorio, sino ante un régimen voluntario.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 66 — similitud 0.2838
+
+**Detalle de puntaje:** tfidf=0.2438; bonus=0.0400
+
+> a) Para los sujetos a que se refiere la fracción I del artículo 13 de esta Ley, las prestaciones del seguro de enfermedades y maternidad, por lo que se refiere a las prestaciones en especie estarán sujetos a los tiempos de espera determinados en el reglamento de la ley en la materia, las del seguro de riesgos de trabajo, las correspondientes de los seguros de invalidez y vida, retiro, cesantía en edad avanzada y vejez, así como las del seguro de guarderías y prestaciones sociales, en los términos de los capítulos respectivos; Inciso reformado DOF 20-12-2001, 01-12-2023 b) Se deroga. Inciso derogado DOF 16-11-2022 c) Se deroga.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 62 — similitud 0.2746
+
+**Detalle de puntaje:** tfidf=0.1946; bonus=0.0800
+
+> Dejar de pagar las Cuotas y Aportaciones en los plazos a que se refiere el artículo 200 de esta Ley, y III. Ingresar nuevamente al régimen obligatorio de esta Ley. La persona trabajadora podrá solicitar por escrito su reingreso al régimen obligatorio a través de la continuación voluntaria, cuando hubiese causado baja por la falta de pago de las cuotas y aportaciones a que se refiere el artículo 200 de esta Ley.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 91 — similitud 0.2663
+
+**Detalle de puntaje:** tfidf=0.1863; bonus=0.0800
+
+> Los convenios de incorporación parcial al régimen obligatorio celebrados antes de la entrada en vigor de esta Ley, podrán renovarse como convenios parciales, con la obligación de ajustarse al régimen de esta Ley. 91 de 128
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 295 — similitud 0.2619
+
+**Detalle de puntaje:** tfidf=0.2219; bonus=0.0400
+
+> Para efectos de esta Ley, se entenderá por: l. Cuenta individual, aquella que se abrirá para cada asegurado en las Adminis­ tradoras de Fondos para el Retiro, para que se depositen en la misma las cuotas obrero-patronales y estatal por concepto del seguro de retiro, cesantía en edad avanzada y vejez, así como los rendimientos. La cuenta individual se integrará por las subcuentas: de retiro, cesantía en edad avanzada y vejez; de vivienda y de aportaciones voluntarias.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 65 — similitud 0.2443
+
+**Detalle de puntaje:** tfidf=0.1643; bonus=0.0800
+
+> Dejar de pagar las cuotas durante dos meses, y Fracción reformada DOF 20-12-2001 III. Ser dado de alta nuevamente en el régimen obligatorio, en los términos del artículo 12 de esta Ley. El asegurado podrá solicitar por escrito su reingreso al régimen obligatorio del seguro social a través de la continuación voluntaria, cuando hubiese causado baja por la falta de pago de las cuotas de dos meses consecutivos.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 102 — similitud 0.2403
+
+**Detalle de puntaje:** tfidf=0.2003; bonus=0.0400
+
+> Artículo reformado DOF 14-12-2005 Artículo 300. El derecho de los asegurados o sus beneficiarios para reclamar el pago de las prestaciones en dinero, respecto a los seguros de riesgos de trabajo, enfermedades y maternidad, invalidez y vida y guarderías y prestaciones sociales prescribe en un año de acuerdo con las reglas siguientes: I. Cualquier mensualidad de una pensión, asignación familiar o ayuda asistencial, así como el aguinaldo; II.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 61 — similitud 0.2389
+
+**Detalle de puntaje:** tfidf=0.1589; bonus=0.0800
+
+> Dicho costo será determinado anualmente por la Junta Directiva. TÍTULO TERCERO DEL RÉGIMEN VOLUNTARIO CAPÍTULO I CONTINUACIÓN VOLUNTARIA EN EL RÉGIMEN OBLIGATORIO Artículo 200. El Trabajador que deje de prestar sus servicios en alguna Dependencia o Entidad y no tenga la calidad de Pensionado, podrá solicitar la continuación voluntaria en todos o alguno de los seguros del régimen obligatorio, con excepción del seguro de riesgos del trabajo y, al efecto, cubrirá íntegramente las Cuotas y Aportaciones que correspondan conforme a lo dispuesto por el régimen financiero de los seguros en que desee continuar voluntariamente.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 139 — similitud 0.2342
+
+**Detalle de puntaje:** tfidf=0.1542; bonus=0.0800
+
+> Los pri­ meros pertenecen al régimen obligatorio o voluntario; los beneficiarios son el (la) cónyuge o concubino(a) y los familiares de los asegurados, que por ley tienen a su favor los servicios médicos y en algunos casos prestaciones económicas.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 137 — similitud 0.2275
+
+**Detalle de puntaje:** tfidf=0.1475; bonus=0.0800
+
+> El supuesto jurídico era el mismo en la Ley vigente hasta junio de 1997, donde señalaba: Artículo 12. Son sujetos de aseguramiento a! régimen obligatorio. Artículo 13.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 75 — similitud 0.2269
+
+**Detalle de puntaje:** tfidf=0.1869; bonus=0.0400
+
+> Recaudar y cobrar las cuotas de los seguros de riesgos de trabajo, enfermedades y maternidad, invalidez y vida, guarderías y prestaciones sociales, salud para la familia y adicionales, los capitales constitutivos, así como sus accesorios legales, percibir los demás recursos del Instituto, y llevar a cabo programas de regularización de pago de cuotas. De igual forma, recaudar y cobrar las cuotas y sus accesorios legales del seguro de retiro, cesantía en edad avanzada y vejez; Fracción reformada DOF 20-12-2001 XIII.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 141 — similitud 0.2229
+
+**Detalle de puntaje:** tfidf=0.1429; bonus=0.0800
+
+> en el seguro voluntario, sin que sea adecuada la mención en el enunciado del precepto; “voluntariamente podrán ser sujetos de aseguramiento en el régimen obligatorio”. Los términos voluntariamente y podrán implican que resulta de la voluntad de los sujetos y los grupos, aun cuando se advierta que los capítu­ los IX y X del Título Segundo establecen tanto las condiciones como los seguros que específicamente pueden en cada caso establecerse, de los arts.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 260 — similitud 0.1781
+
+**Detalle de puntaje:** tfidf=0.1381; bonus=0.0400
+
+> Mediante la sentencia del 5 de diciembre de 2018 la Suprema Corte de Jus- ticia de la Nación, en Amparo Directo 9/2018 relacionado con el Amparo Directo 8/2019, declaró la inconstitucionalidad del artículo 13 de la Ley del Seguro Social, que excluía del régimen obligatorio de la Seguridad Social a las personas trabajadoras de hogar. Con la mencionada reforma se derogó en el artículo 13 de la Ley de Seguro Social el carácter voluntario de la afiliación de las trabajadoras domésticas y se las incorporó como sujetos de aseguramiento en el régimen obligatorio, artículo 12 de la misma norma.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 65 — similitud 0.1780
+
+**Detalle de puntaje:** tfidf=0.1380; bonus=0.0400
+
+> Ser dado de alta nuevamente en el régimen obligatorio, en los términos del artículo 12 de esta Ley. El asegurado podrá solicitar por escrito su reingreso al régimen obligatorio del seguro social a través de la continuación voluntaria, cuando hubiese causado baja por la falta de pago de las cuotas de dos meses consecutivos. La solicitud deberá formularse dentro de los doce meses siguientes a la fecha de su baja en la continuación voluntaria.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 149 — similitud 0.1679
+
+**Detalle de puntaje:** tfidf=0.1279; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se adicionan diversas disposiciones de la Ley del Seguro Social, de la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado y de la Ley Federal del Trabajo. Publicado en el Diario Oficial de la Federación el 4 de junio de 2019 Artículo Primero.- Se adiciona un artículo 140 Bis a la Ley del Seguro Social, para quedar como sigue: ……… Transitorios Primero.- El presente Decreto entrará en vigor el día siguiente al de su publicación en el Diario Oficial de la Federación.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 137 — similitud 0.1658
+
+**Detalle de puntaje:** tfidf=0.1258; bonus=0.0400
+
+> Artículo 13. Igualmente son sujetos de aseguramiento del régimen obligatorio... El adverbio de modo que se empleaba en el segundo de los preceptos, “igualmente”, significa: con igualdad, también, asimismo; esta palabra obli­ gaba a dar el mismo trato y sujetar a iguales condiciones ambos supuestos, lo que no sucedía en la práctica.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 38 — similitud 0.1500
+
+**Detalle de puntaje:** tfidf=0.1100; bonus=0.0400
+
+> Regímenes de Seguro En el art. 6 de la Ley de 1997 se reproduce el criterio de los ordenamientos anteriores y el seguro social comprende dos tipos de régimen: obligatorio y voluntario. Seguro obligatorio El seguro social se impone a la voluntad de los particulares.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 68 — similitud 0.1485
+
+**Detalle de puntaje:** tfidf=0.1085; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 I. Para las y los sujetos a que se refiere la fracción V del artículo 13, de acuerdo con lo establecido tratándose de las personas del artículo 12 de esta Ley, y Fracción reformada DOF 16-11-2022 II. Para los sujetos a que se refiere la fracción I del artículo 13 de esta Ley, les corresponderá cubrir íntegramente la cuota obrero-patronal, contribuyendo el Estado conforme le corresponda a cada ramo de seguro, de acuerdo con lo dispuesto en esta Ley, incluyendo la cuota social.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 6 — similitud 0.1465
+
+**Detalle de puntaje:** tfidf=0.1065; bonus=0.0400
+
+> Las personas empleadoras están obligadas a: Párrafo reformado DOF 24-01-2024 I. Registrarse e inscribir a sus trabajadores en el Instituto, comunicar sus altas y bajas, las modificaciones de su salario y los demás datos, dentro de plazos no mayores de cinco días hábiles; Fracción reformada DOF 20-12-2001 II. Llevar registros, tales como nóminas y listas de raya en las que se asiente invariablemente el número de días trabajados y los salarios percibidos por sus trabajadores, además de otros datos que exijan la presente Ley y sus reglamentos.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 136 — similitud 0.1443
+
+**Detalle de puntaje:** tfidf=0.1043; bonus=0.0400
+
+> 18). Régimen voluntario El régimen voluntario se refiere a: a) El seguro de salud para la familia, a favor de todos sus integrantes, que tienen derecho a un seguro de enfermedades y maternidad, me­ diante convenio (Capítulo i del Título Tercero). b) La seguridad social en el campo, tanto campesinos como trabajado­ res asalariados (arts. 234, 235 y 237). c) Los grupos de aseguramiento a que se refiere el art.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 136 — similitud 0.1247
+
+**Detalle de puntaje:** tfidf=0.0847; bonus=0.0400
+
+> 234, 235 y 237). c) Los grupos de aseguramiento a que se refiere el art. 13: no asalaria­ dos, patrones personas físicas, trabajadores domésticos, cuya incor­ poración se deja como facultad discrecional del Instituto, por lo que hace a plazos, condiciones y modalidades. Por Lanto, en el sistema de la Ley la diferencia entre un seguro obligatorio y uno voluntario depende del trato que se da a los sujetos comprendidos en los
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 62 — similitud 0.1163
+
+**Detalle de puntaje:** tfidf=0.0763; bonus=0.0400
+
+> LEY DEL INSTITUTO DE SEGURIDAD Y SERVICIOS SOCIALES DE LOS TRABAJADORES DEL ESTADO CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 Artículo 202.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 70 — similitud 0.1109
+
+**Detalle de puntaje:** tfidf=0.0709; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 proporcionados deberá ser comunicada al Instituto en un plazo no mayor de treinta días naturales contados a partir de la fecha en que se produzcan; II. Comunicarán altas, bajas y reingresos de sus trabajadores así como las modificaciones de su salario y los demás datos, en los términos del reglamento correspondiente, dentro de plazos no mayores de siete días hábiles, y III. Expedirán y entregarán, constancia de los días laborados y de salarios totales devengados, de acuerdo a lo que establezcan los reglamentos respectivos.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 08. Régimen voluntario
+
+**Calidad estimada:** media
+**Mejor similitud:** 0.2689
+**Similitud promedio:** 0.1914
+**Fuentes:** Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf
+**Ubicaciones:** Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 112; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 136; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 137; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 157; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 212; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 41; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 61; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 4
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 136 — similitud 0.2689
+
+**Detalle de puntaje:** tfidf=0.1889; bonus=0.0800
+
+> 18). Régimen voluntario El régimen voluntario se refiere a: a) El seguro de salud para la familia, a favor de todos sus integrantes, que tienen derecho a un seguro de enfermedades y maternidad, me­ diante convenio (Capítulo i del Título Tercero). b) La seguridad social en el campo, tanto campesinos como trabajado­ res asalariados (arts. 234, 235 y 237). c) Los grupos de aseguramiento a que se refiere el art.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 61 — similitud 0.1964
+
+**Detalle de puntaje:** tfidf=0.1164; bonus=0.0800
+
+> Dicho costo será determinado anualmente por la Junta Directiva. TÍTULO TERCERO DEL RÉGIMEN VOLUNTARIO CAPÍTULO I CONTINUACIÓN VOLUNTARIA EN EL RÉGIMEN OBLIGATORIO Artículo 200. El Trabajador que deje de prestar sus servicios en alguna Dependencia o Entidad y no tenga la calidad de Pensionado, podrá solicitar la continuación voluntaria en todos o alguno de los seguros del régimen obligatorio, con excepción del seguro de riesgos del trabajo y, al efecto, cubrirá íntegramente las Cuotas y Aportaciones que correspondan conforme a lo dispuesto por el régimen financiero de los seguros en que desee continuar voluntariamente.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 137 — similitud 0.1959
+
+**Detalle de puntaje:** tfidf=0.1159; bonus=0.0800
+
+> En la parte final del art. 13 se dispone: Mediante convenio con el Instituto se establecerán las modalidades y fechas de incorporación al régimen obligatorio, de los sujetos de aseguramiento compren­ didos en este artículo.- Dichos convenios deberán sujetarse al reglamento íjue al efecto expida el Ejecutivo Federal, Si los sujetos pueden incorporarse y el Instituto está facultado para abrir lapsos de inscripción, no estamos ante un régimen obligatorio, sino ante un régimen voluntario.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 4 — similitud 0.1885
+
+**Detalle de puntaje:** tfidf=0.1085; bonus=0.0800
+
+> El régimen obligatorio, y II. El régimen voluntario. Artículo 7.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 212 — similitud 0.1730
+
+**Detalle de puntaje:** tfidf=0.0930; bonus=0.0800
+
+> II y III del art. 12, miembros de sociedades cooperativas y las personas que determine el Ejecutivo Federal a través de decretos, aunados a los trabajadores en el régimen voluntario: no asalariados, campesinos, trabajadores domésticos, patrones, personas físicas y estudiantes universitarios estipulados en e! art. 13, han sumado millones de personas, lo que hace imposible estimar actuarialmente costos y prestaciones.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 41 — similitud 0.1713
+
+**Detalle de puntaje:** tfidf=0.0913; bonus=0.0800
+
+> Prestación más próxima que se otorga cuando ocurre una contin­ gencia, enfermedad, accidente o maternidad. Está limitada a los asegu­ rados del régimen obligatorio y sólo por convenio se otorga a los dei régimen voluntario. Ayudas.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 157 — similitud 0.1711
+
+**Detalle de puntaje:** tfidf=0.0911; bonus=0.0800
+
+> 35), No se contempla el caso de una persona que sea, al mismo tiempo, tra­ bajador y profesionista o no asalariado; es decir, sujeto al régimen obligatorio (art. 12) y con posibilidad de inscribirse en el régimen voluntario (art. 13), para incrementar el monto de sus prestaciones.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 112 — similitud 0.1661
+
+**Detalle de puntaje:** tfidf=0.0861; bonus=0.0800
+
+> Se amplió, en el art. 12 la obligatoriedad de inscripción a los trabajadores, al comprender a los miembros de sociedades cooperativas de producción y a los determinados en decretos presidenciales; se fortale­ ció el régimen voluntario, para los grupos campesinos, trabajadores do­ mésticos, no asalariados y patrones personas físicas, quienes harían apor­ taciones adecuadas a su condición económica. Como una novedad incluyó la figura de los solidariohabientes a fin de brindar atención médica a los marginados, con la intención de incorporarlos al desarrollo general.
+
+**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 09. Seguro de Riesgos de Trabajo
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.3799
+**Similitud promedio:** 0.2211
+**Fuentes:** Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf
+**Ubicaciones:** Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 125; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 175; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 179; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 203; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 205; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 206; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 4; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 22; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 110; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 159; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 18; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 19; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 2; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 20; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 21; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 25; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 38; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 66
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 25 — similitud 0.3799
+
+**Detalle de puntaje:** tfidf=0.2899; bonus=0.0900
+
+> SECCION QUINTA DEL REGIMEN FINANCIERO Artículo 70. Las prestaciones del seguro de riesgos de trabajo, inclusive los capitales constitutivos de las rentas líquidas al fin de año y los gastos administrativos, serán cubiertos íntegramente por las cuotas que para este efecto aporten los patrones y demás sujetos obligados. Artículo 71.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 66 — similitud 0.2838
+
+**Detalle de puntaje:** tfidf=0.1938; bonus=0.0900
+
+> a) Para los sujetos a que se refiere la fracción I del artículo 13 de esta Ley, las prestaciones del seguro de enfermedades y maternidad, por lo que se refiere a las prestaciones en especie estarán sujetos a los tiempos de espera determinados en el reglamento de la ley en la materia, las del seguro de riesgos de trabajo, las correspondientes de los seguros de invalidez y vida, retiro, cesantía en edad avanzada y vejez, así como las del seguro de guarderías y prestaciones sociales, en los términos de los capítulos respectivos; Inciso reformado DOF 20-12-2001, 01-12-2023 b) Se deroga. Inciso derogado DOF 16-11-2022 c) Se deroga.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 125 — similitud 0.2801
+
+**Detalle de puntaje:** tfidf=0.1901; bonus=0.0900
+
+> 3. En cuanto al seguro de riesgos de trabajo: “Actualmente se tiene la in­ fraestructura para otorgar la cobertura del Seguro de Riesgos de Trabajo a todas las empresas que lo requieran, además de no existir rezago en el cumplimiento de las obligaciones por parte del Instituto.”20 El Diagnóstico menciona dos problemas estructurales: i. Una situación de desequilibrio financiero generada por:
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 38 — similitud 0.2727
+
+**Detalle de puntaje:** tfidf=0.1827; bonus=0.0900
+
+> Si una persona tiene derecho a cualquiera de las pensiones de este capítulo y también a pensión proveniente del seguro de riesgos de trabajo, percibirá ambas sin que la suma de sus cuantías exceda del cien por ciento del salario mayor, de los que sirvieron de base para determinar la cuantía de las pensiones concedidas. Los ajustes para no exceder del límite señalado no afectarán la pensión proveniente de riesgos de trabajo.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 159 — similitud 0.2719
+
+**Detalle de puntaje:** tfidf=0.1819; bonus=0.0900
+
+> Para efectos de la Ley del Seguro Social, desde la entrada en vigor de la presente reforma y hasta el 1 de septiembre de 2021, se considerará como sustitución patronal la migración de trabajadores de las empresas que operaban bajo el régimen de subcontratación laboral, siempre y cuando la empresa destino de los trabajadores reconozca sus derechos laborales, incluyendo la antigüedad de los mismos y los riesgos de trabajo terminados, ante las instancias legales correspondientes. Párrafo reformado DOF 31-07-2021 En estos supuestos aplicarán las siguientes reglas, para efectos de la determinación de la clase, fracción y prima del Seguro de Riesgos de Trabajo:
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 206 — similitud 0.2718
+
+**Detalle de puntaje:** tfidf=0.1818; bonus=0.0900
+
+> Una vez obtenido el grado de siniestraiidad, se sumará 0.005, que es la prima mínima de riesgo (M), para determinar la prima a cubrir por e! seguro de riesgos de trabajo a que se refiere el art. 72 de la LSS.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 20 — similitud 0.2689
+
+**Detalle de puntaje:** tfidf=0.2289; bonus=0.0400
+
+> Muerte. Se entenderá por incapacidad temporal, incapacidad permanente parcial e incapacidad permanente total, lo que al respecto disponen los artículos relativos de la Ley Federal del Trabajo. SECCION SEGUNDA DE LAS PRESTACIONES EN ESPECIE Artículo 56.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 18 — similitud 0.2511
+
+**Detalle de puntaje:** tfidf=0.1611; bonus=0.0900
+
+> Tampoco podrá condonar, total o parcialmente, la actualización de las cuotas ni los recargos correspondientes. Artículo adicionado DOF 20-12-2001 CAPITULO III DEL SEGURO DE RIESGOS DE TRABAJO SECCION PRIMERA GENERALIDADES Artículo 41. Riesgos de trabajo son los accidentes y enfermedades a que están expuestos los trabajadores en ejercicio o con motivo del trabajo.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 2 — similitud 0.2503
+
+**Detalle de puntaje:** tfidf=0.2103; bonus=0.0400
+
+> ambos, que en los términos de la Ley tengan vigente su derecho a recibir las prestaciones del Instituto; XIV. Pensionados o pensionado: el asegurado que por resolución del Instituto tiene otorgada pensión por: incapacidad permanente total; incapacidad permanente parcial superior al cincuenta por ciento o en su caso incapacidad permanente parcial entre el veinticinco y el cincuenta por ciento; invalidez; cesantía en edad avanzada y vejez, así como los beneficiarios 2 de 181
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 203 — similitud 0.2487
+
+**Detalle de puntaje:** tfidf=0.1587; bonus=0.0900
+
+> 187 Riesgos de trabajo j los trabajadores y el Gobierno Federal, lo que impide que puedan tomarse recursos de un seguro para transferirlos a otro, como lamentablemente acon­ teció y lo reconoce el dictamen de 1995. En el seguro de riesgos de trabajo, las prestaciones -servicios médicos, pensiones, indemnizaciones y pensiones de viudez, orfandad y ascendientes- serán cubiertos íntegramente por las cuotas que aporten los patrones y demás sujetos obligados; esto incluye los capitales constitutivos de las rentas líquidas al fin de año y los gastos administrativos.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 179 — similitud 0.2473
+
+**Detalle de puntaje:** tfidf=0.2073; bonus=0.0400
+
+> Riesgos de trabajo 163 imposibilidad temporal o definitiva de realizar el trabajo que motivó la afilia­ ción, para distinguirla de inhabilitación cuando sea ajena al trabajo. El riesgo de trabajo puede producir (art, 55): Incapacidad temporal incapacidad permanente —> Incapacidad permanente total —► Incapacidad permanente parcial ® Muerte La LSS, en el último párrafo del art, 55, remite a la LFT: Se entenderá por incapacidad temporal, incapacidad permanente parcial e inca­ pacidad permanente total, !o que al respecto disponen los artículos relativos de la Ley Federal del Trabajo.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 175 — similitud 0.2241
+
+**Detalle de puntaje:** tfidf=0.1841; bonus=0.0400
+
+> 513 de la LFT. Éste amplía la protección al considerar el origen o motivo del riesgo en términos genera­ les, hasta comprender el medio ambiente como causa para calificar de riesgo de trabajo el accidente o la enfermedad.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 19 — similitud 0.2111
+
+**Detalle de puntaje:** tfidf=0.1711; bonus=0.0400
+
+> En los términos establecidos por la Ley Federal del Trabajo, cuando el asegurado sufra un riesgo de trabajo por falta inexcusable del patrón a juicio de los Tribunales federales en materia laboral, las prestaciones en dinero que este capítulo establece a favor del trabajador asegurado, se aumentarán en el porcentaje que los propios Tribunales determinen en sus resoluciones. El patrón tendrá la obligación de pagar al Instituto el capital constitutivo sobre el incremento correspondiente.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 21 — similitud 0.1910
+
+**Detalle de puntaje:** tfidf=0.1510; bonus=0.0400
+
+> Si lo incapacita para trabajar recibirá mientras dure la inhabilitación, el cien por ciento del salario en que estuviese cotizando en el momento de ocurrir el riesgo. El goce de este subsidio se otorgará al asegurado entre tanto no se declare que se encuentra capacitado para trabajar, o bien se declare la incapacidad permanente parcial o total, lo cual deberá realizarse dentro del término de cincuenta y dos semanas que dure la atención médica como consecuencia del accidente, sin perjuicio de que una vez determinada la incapacidad que corresponda, continúe su atención o rehabilitación conforme a lo dispuesto por el artículo 61 de la presente Ley; II.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 20 — similitud 0.1905
+
+**Detalle de puntaje:** tfidf=0.1505; bonus=0.0400
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 El trabajador, los beneficiarios del trabajador incapacitado o muerto, o las personas encargadas de representarlos, podrán denunciar inmediatamente al Instituto el accidente o la enfermedad de trabajo que haya sufrido. El aviso también podrá hacerse del conocimiento de la autoridad de trabajo correspondiente, la que, a su vez, dará traslado del mismo al Instituto.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 19 — similitud 0.1865
+
+**Detalle de puntaje:** tfidf=0.1465; bonus=0.0400
+
+> Artículo reformado DOF 20-12-2001 Artículo 51. El patrón deberá dar aviso al Instituto del accidente o enfermedad de trabajo, en los términos que señale el reglamento respectivo. 19 de 181
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 4 — similitud 0.1380
+
+**Detalle de puntaje:** tfidf=0.1180; bonus=0.0200
+
+> C O L E C C I Ó N T E X T O S J U R Í D I C O S U N I V E R S I T A R I O S Derecho de la seguridad social Alberto Briceño Ruiz U n iv er sid a d N a c io n a l A u t ó n o m a de M éxico O X FO R D l í N I V E R S I T Y PRESS
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 205 — similitud 0.1274
+
+**Detalle de puntaje:** tfidf=0.0874; bonus=0.0400
+
+> Esta fórmula es de difícil comprensión para las empresas y dificulta su cumplimiento, pues está sujeta a interpretaciones: Prima = [(S/365J+V * (I + D)] * (F/N) + M donde: V = 28 años, duración promedio de vida activa de un individuo que no haya sido víctima de un accidente mortal o de incapacidad permanente total F = 2.3, factor de prima N = Número de trabajadores promedio expuestos al riesgo S = Total de días subsidiados a causa de incapacidad temporal I = Suma de los porcentajes de las incapacidades permanentes, parcia­ les y totales, divididos entre 100 D = Número de defunciones M = 0.005, prima mínima de riesgo Para determinar la siniestralidad de las empresas no se tomarán en cuenta...
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 22 — similitud 0.1224
+
+**Detalle de puntaje:** tfidf=0.0924; bonus=0.0300
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 Generalidades Artículo 55. Se establece el seguro de riesgos del trabajo en favor de los Trabajadores y, como consecuencia de ello, el Instituto se subrogará en la medida y términos de esta Ley, en las obligaciones de las Dependencias o Entidades, derivadas de la Ley Federal de los Trabajadores al Servicio del Estado, reglamentaria del Apartado B del artículo 123 Constitucional y de la Ley Federal del Trabajo, por cuanto a los mismos riesgos se refiere. Artículo 56.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 159 — similitud 0.1157
+
+**Detalle de puntaje:** tfidf=0.0757; bonus=0.0400
+
+> 1.- La empresa que absorba a los trabajadores deberá auto clasificarse conforme a los criterios que se establecen en los artículos 71, 73 y 75 de la Ley del Seguro Social, y de acuerdo a los artículos 18, 20 y al Catálogo de Actividades previsto en el artículo 196, todos del Reglamento de la Ley del Seguro Social en materia de Afiliación, Clasificación de Empresas, Recaudación y Fiscalización, debiendo conservar la prima con la que venía cotizando la empresa que tenía los trabajadores registrados en el IMSS, siempre y cuando dicha empresa haya estado correctamente clasificada conforme a los riesgos inherentes a la actividad de la negociación de que se trataba y a las disposiciones...
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 110 — similitud 0.1096
+
+**Detalle de puntaje:** tfidf=0.0696; bonus=0.0400
+
+> A partir del segundo bimestre de 1998, estos patrones deberán determinar su prima conforme a su siniestralidad registrada del periodo comprendido del 1 de enero al 31 de diciembre de 1997. Los patrones inscritos o que cambien de actividad bajo la vigencia de esta Ley determinarán su prima en términos del artículo 73 de esta Ley y la modificación anual de la prima conforme a la siniestralidad ocurrida durante el lapso que se establezca en el Reglamento respectivo. DECIMO.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 10. Seguro de Invalidez
+
+**Calidad estimada:** media
+**Mejor similitud:** 0.2527
+**Similitud promedio:** 0.1958
+**Fuentes:** Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf
+**Ubicaciones:** Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 139; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 179; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 214; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 253; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 254; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 255; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 297; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 321; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 415; El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf, p. 267; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 24; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 29; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 36; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 39; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 40; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 41; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 46; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 112; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 149; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 2; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 20; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 22; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 37; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 38; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 39; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 43; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 46
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 179 — similitud 0.2527
+
+**Detalle de puntaje:** tfidf=0.2127; bonus=0.0400
+
+> Riesgos de trabajo 163 imposibilidad temporal o definitiva de realizar el trabajo que motivó la afilia­ ción, para distinguirla de inhabilitación cuando sea ajena al trabajo. El riesgo de trabajo puede producir (art, 55): Incapacidad temporal incapacidad permanente —> Incapacidad permanente total —► Incapacidad permanente parcial ® Muerte La LSS, en el último párrafo del art, 55, remite a la LFT: Se entenderá por incapacidad temporal, incapacidad permanente parcial e inca­ pacidad permanente total, !o que al respecto disponen los artículos relativos de la Ley Federal del Trabajo.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 254 — similitud 0.2446
+
+**Detalle de puntaje:** tfidf=0.2046; bonus=0.0400
+
+> Invalidez Este tema se trata en los artículos siguientes: Artículo 119. Para los efectos de esta Ley existe invalidez cuando el asegurado se halle imposibilitado para procurarse, mediante un trabajo igual, una remunera­ ción superior al cincuenta por ciento de su remuneración habitual percibida du­ rante el último año de trabajo y que esa imposibilidad derive de una enfermedad o accidente que no sean de trabajo. La declaración de invalidez deberá ser realizada por el Instituto Mexicano del Seguro Social.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 214 — similitud 0.2393
+
+**Detalle de puntaje:** tfidf=0.1993; bonus=0.0400
+
+> La invalidez (art. 119), que deriva de una enfermedad o accidente no pro­ fesionales, sí se refiere expresamente al accidente y la enfermedad: Para los efectos de esta ley existe invalidez cuando el asegurado se halle imposi­ bilitado para procurarse, mediante un trabajo igual, una remuneración superior al cincuenta por ciento de su remuneración habitual percibida durante el último año de trabajo y que esa imposibilidad derive de una enfermedad o accidente no profesionales. La declaración de invalidez deberá ser realizada por el Instituto Mexicano del Seguro Social.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 38 — similitud 0.2357
+
+**Detalle de puntaje:** tfidf=0.1957; bonus=0.0400
+
+> Artículo reformado DOF 28-05-2012 SECCION SEGUNDA DEL RAMO DE INVALIDEZ Artículo 119. Para los efectos de esta Ley existe invalidez cuando el asegurado se halle imposibilitado para procurarse, mediante un trabajo igual, una remuneración superior al cincuenta por ciento de su remuneración habitual percibida durante el último año de trabajo y que esa imposibilidad derive de una enfermedad o accidente no profesionales. La declaración de invalidez deberá ser realizada por el Instituto Mexicano del Seguro Social.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 255 — similitud 0.2349
+
+**Detalle de puntaje:** tfidf=0.1949; bonus=0.0400
+
+> Invalidez y vida 239 ¡ Cuantía básica j | 35% salario promedio 10 años Asignaciones familiares Cónyuge o concubina 15% Hijo 10% Ascendiente 10% Ayuda asistencia! De 15 a 20% sobre cuantía básica Las pensiones definitivas que se otorgan por invalidez responden a dos criterios: ® Pensión con valoración menor de 75%, requiere 250 semanas de cotización. • Pensión con valoración superior a 75%, requiere 150 semanas de cotización.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 253 — similitud 0.2332
+
+**Detalle de puntaje:** tfidf=0.1532; bonus=0.0800
+
+> Invalidez y vida 10 ................................................ Condiciones previas L a Ley del Seguro Social (lss) contiene en un soSo capítulo las pen­ siones de invalidez y vida, cuando el seguro de invalidez debía formar parte del de enfermedad, en vista de que uno de los requisitos es que la imposibilidad derive de un accidente o enfermedad no profesionales, por lo cual debía entenderse el capítulo relativo sólo para el supuesto de muerte, que de manera confusa se denomina seguro de vida. Artículo 112.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 40 — similitud 0.2329
+
+**Detalle de puntaje:** tfidf=0.1929; bonus=0.0400
+
+> La Pensión temporal se concederá con carácter provisional, por un periodo de adaptación de dos años durante los cuales será pagada con cargo a las Reservas de este seguro por parte del Instituto. Transcurrido el periodo de adaptación, la Pensión se considerará como definitiva debiéndose contratar un Seguro de Pensión que le otorgue la Renta a que se refiere el artículo siguiente, y su revisión sólo podrá hacerse una vez al año, salvo que existieran pruebas de un cambio sustancial en las condiciones de la invalidez. El derecho al pago de esta Pensión comienza a partir del día siguiente al de la fecha en que el Trabajador cause baja motivada por la inhabilitación.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 46 — similitud 0.2313
+
+**Detalle de puntaje:** tfidf=0.1513; bonus=0.0800
+
+> SECCION SEXTA DEL REGIMEN FINANCIERO Artículo 146. Los recursos necesarios para financiar las prestaciones y los gastos administrativos del seguro de invalidez y vida, así como la constitución de las reservas técnicas, se obtendrán de las cuotas que están obligados a cubrir los patrones, los trabajadores y demás sujetos obligados, así como de la contribución que corresponda al Estado. Artículo 147.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 46 — similitud 0.2267
+
+**Detalle de puntaje:** tfidf=0.1467; bonus=0.0800
+
+> La cuantía de las Pensiones por invalidez será actualizada anualmente en el mes de febrero, conforme al Índice Nacional de Precios al Consumidor correspondiente al año calendario anterior. Las Pensiones a los Familiares Derechohabientes del Trabajador por el seguro de invalidez y vida serán revisadas e incrementadas en la proporción que corresponda, en términos de lo dispuesto en el párrafo anterior. Sección V Régimen Financiero Artículo 140.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 22 — similitud 0.2216
+
+**Detalle de puntaje:** tfidf=0.1816; bonus=0.0400
+
+> Cuando el asegurado al que se le haya declarado una incapacidad permanente total o parcial que le dé derecho a la contratación de la renta vitalicia y del seguro de sobrevivencia en los términos previstos en los artículos 58 fracciones II y III, 61 y 159 fracciones IV y VI de esta Ley, se rehabilite y tenga un trabajo remunerado en la misma actividad en que se desempeñaba, que le proporcione un ingreso cuando menos equivalente al cincuenta por ciento de la remuneración habitual que hubiere percibido de 22 de 181
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 39 — similitud 0.2181
+
+**Detalle de puntaje:** tfidf=0.1381; bonus=0.0800
+
+> CAPÍTULO VII SEGURO DE INVALIDEZ Y VIDA Sección I Generalidades Artículo 114. Los riesgos protegidos en este Capítulo son la invalidez y la muerte del Trabajador o del Pensionado por invalidez, en los términos y con las modalidades previstas en esta Ley.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 139 — similitud 0.2130
+
+**Detalle de puntaje:** tfidf=0.1330; bonus=0.0800
+
+> 3. El seguro de invalidez y vida toma parte del anterior de “invalidez, ve­ jez, cesantía en edad avanzada y muerte”; se distingue la invalidez de la incapacidad por riesgo de trabajo, aun cuando gramaticalmente tengan el mismo sentido. Incapacidad es la falta de aptitud para hacer una cosa; inválido se dice de la persona que adolece de un defecto físico o mental, ya sea congénito o adquirido, lo cual le impide o dificulta alguna de sus actividades.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 24 — similitud 0.2108
+
+**Detalle de puntaje:** tfidf=0.1708; bonus=0.0400
+
+> Para los efectos de la determinación de la incapacidad producida por riesgo del trabajo, se estará a lo dispuesto por la Ley Federal del Trabajo por lo que respecta a los exámenes trimestrales a que deberá someterse el Trabajador y en la inteligencia de que si a los tres meses de iniciada dicha incapacidad no está el Trabajador en aptitud de volver al trabajo, él mismo o la Dependencia o Entidad, podrán solicitar en vista de los certificados médicos correspondientes, que sea declarada la incapacidad permanente.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 37 — similitud 0.2102
+
+**Detalle de puntaje:** tfidf=0.1302; bonus=0.0800
+
+> Todo ello, considerando las leyes aplicables en materia de protección de datos personales en posesión de sujetos obligados. Párrafo adicionado DOF 15-01-2026 Artículo adicionado DOF 20-12-2001 CAPITULO V DEL SEGURO DE INVALIDEZ Y VIDA SECCION PRIMERA GENERALIDADES Artículo 112. Los riesgos protegidos en este capítulo son la invalidez y la muerte del asegurado o del pensionado por invalidez, en los términos y con las modalidades previstos en esta Ley.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 29 — similitud 0.2083
+
+**Detalle de puntaje:** tfidf=0.1283; bonus=0.0800
+
+> Los beneficiarios legales del Trabajador titular de una Cuenta Individual del seguro de retiro, cesantía en edad avanzada y vejez serán los Familiares Derechohabientes que establece la sección de Pensión por causa de muerte del seguro de invalidez y vida. En caso de fallecimiento del Trabajador, si los beneficiarios a que se refiere el párrafo anterior, ya no tienen derecho a Pensión por el seguro de invalidez y vida, el PENSIONISSSTE o la Administradora respectiva entregarán el saldo de la Cuenta Individual en partes iguales a los beneficiarios legales que haya registrado el Trabajador en el Instituto.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 112 — similitud 0.2054
+
+**Detalle de puntaje:** tfidf=0.1254; bonus=0.0800
+
+> VIGESIMO QUINTO. El artículo 28 de esta Ley entrará en vigor el 1 de enero del año 2007, en lo relativo al seguro de invalidez y vida, así como en los ramos de cesantía en edad avanzada y vejez. Los 112 de 181
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 20 — similitud 0.1996
+
+**Detalle de puntaje:** tfidf=0.1596; bonus=0.0400
+
+> Muerte. Se entenderá por incapacidad temporal, incapacidad permanente parcial e incapacidad permanente total, lo que al respecto disponen los artículos relativos de la Ley Federal del Trabajo. SECCION SEGUNDA DE LAS PRESTACIONES EN ESPECIE Artículo 56.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 2 — similitud 0.1949
+
+**Detalle de puntaje:** tfidf=0.1549; bonus=0.0400
+
+> ambos, que en los términos de la Ley tengan vigente su derecho a recibir las prestaciones del Instituto; XIV. Pensionados o pensionado: el asegurado que por resolución del Instituto tiene otorgada pensión por: incapacidad permanente total; incapacidad permanente parcial superior al cincuenta por ciento o en su caso incapacidad permanente parcial entre el veinticinco y el cincuenta por ciento; invalidez; cesantía en edad avanzada y vejez, así como los beneficiarios 2 de 181
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 22 — similitud 0.1748
+
+**Detalle de puntaje:** tfidf=0.1348; bonus=0.0400
+
+> Artículo 59. La pensión que se otorgue en el caso de incapacidad permanente total, será siempre superior a la que le correspondería al asegurado por invalidez, y comprenderá en todos los casos, las asignaciones familiares y la ayuda asistencial, así como cualquier otra prestación en dinero a que tenga derecho en los términos de este capítulo. Artículo 60.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 297 — similitud 0.1660
+
+**Detalle de puntaje:** tfidf=0.1260; bonus=0.0400
+
+> En este seguro las prestaciones son similares a las de cesantía en edad avanzada, como lo precisa el art. 161: pensión, asistencia médica, asignaciones familiares y ayuda asistencial, previa solicitud del asegurado, y se le cubrirá a partir de la fecha en que haya dejado de trabajar, siempre que cumpla con los requisitos señalados en el art. 162.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 43 — similitud 0.1653
+
+**Detalle de puntaje:** tfidf=0.1253; bonus=0.0400
+
+> Cuando se compruebe el fallecimiento del pensionado, la transmisión será definitiva. Artículo adicionado DOF 07-11-2019 SECCION CUARTA DE LAS ASIGNACIONES FAMILIARES Y AYUDA ASISTENCIAL Artículo 138.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 36 — similitud 0.1619
+
+**Detalle de puntaje:** tfidf=0.1219; bonus=0.0400
+
+> Abrir, administrar y operar las Cuentas Individuales de los Trabajadores en los mismos términos que las Administradoras; II. Recibir las Cuotas y Aportaciones de seguridad social correspondientes a las Cuentas Individuales y los demás recursos que en términos de esta Ley puedan ser recibidos en las Cuentas Individuales, excepto las de la Subcuenta del Fondo de la Vivienda; III.
+
+### El derecho a la seguridad socia - Diana Beatriz Gonzalez Carvallo.pdf — p. 267 — similitud 0.1591
+
+**Detalle de puntaje:** tfidf=0.1291; bonus=0.0300
+
+> Precisamente, a poco de entrar en vigor la reforma a la Ley del Seguro Social (LSS) por la cual las personas empleadoras están obligadas a inscribir a las trabajadoras domésticas en el IMSS, el SINACTRAHO interpuso un recurso de amparo ante el Poder Judicial en contra del decreto de reforma por estar el
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 321 — similitud 0.1532
+
+**Detalle de puntaje:** tfidf=0.1132; bonus=0.0400
+
+> Ley del Seguro Social La Consar tiene como antecedente la reforma a la Ley del Seguro Social (LSS) de 1992, donde se incluye, en el art. 11, el seguro de retiro; los arts.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 149 — similitud 0.1431
+
+**Detalle de puntaje:** tfidf=0.1131; bonus=0.0300
+
+> LEY DEL SEGURO SOCIAL CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 DECRETO por el que se adicionan diversas disposiciones de la Ley del Seguro Social, de la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado y de la Ley Federal del Trabajo. Publicado en el Diario Oficial de la Federación el 4 de junio de 2019 Artículo Primero.- Se adiciona un artículo 140 Bis a la Ley del Seguro Social, para quedar como sigue: ……… Transitorios Primero.- El presente Decreto entrará en vigor el día siguiente al de su publicación en el Diario Oficial de la Federación.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 41 — similitud 0.1200
+
+**Detalle de puntaje:** tfidf=0.0800; bonus=0.0400
+
+> Dictamen de uno o más médicos o técnicos designados por el Instituto, que certifiquen la existencia del estado de invalidez de conformidad con el reglamento respectivo. En caso de desacuerdo con la dictaminación, el afectado inconforme tendrá treinta días naturales para presentar por escrito ante el Instituto, su inconformidad avalada con un dictamen de un médico especialista en la materia.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 39 — similitud 0.1197
+
+**Detalle de puntaje:** tfidf=0.0797; bonus=0.0400
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 Artículo 120. El estado de invalidez da derecho al asegurado, en los términos de esta Ley y sus reglamentos, al otorgamiento de las prestaciones siguientes: I. Pensión temporal; II.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 415 — similitud 0.1066
+
+**Detalle de puntaje:** tfidf=0.0666; bonus=0.0400
+
+> La resolución definitiva emitida y notificada después de concluido el pla­ zo establecido por los artículos 52 y 57, fracción i, inciso b), de esta Ley, cuando se trate de una sentencia dictada con base en las fracciones Ii y III del art. 51 de la propia Ley, que obligó a la autoridad demandada a iniciar un procedimiento o a emitir una nueva resolución, siempre y cuando se trate de un procedimiento oficioso.
+
+**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 11. Seguros de Vejez y Cesantía en Edad Avanzada
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.3078
+**Similitud promedio:** 0.1987
+**Fuentes:** Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf
+**Ubicaciones:** Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 131; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 133; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 290; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 293; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 295; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 296; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 297; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 302; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 317; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 325; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 346; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 25; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 30; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 32; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 36; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 41; Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf, p. 47; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 110; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 132; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 47; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 49; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 50
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 297 — similitud 0.3078
+
+**Detalle de puntaje:** tfidf=0.2678; bonus=0.0400
+
+> En este seguro las prestaciones son similares a las de cesantía en edad avanzada, como lo precisa el art. 161: pensión, asistencia médica, asignaciones familiares y ayuda asistencial, previa solicitud del asegurado, y se le cubrirá a partir de la fecha en que haya dejado de trabajar, siempre que cumpla con los requisitos señalados en el art. 162.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 32 — similitud 0.2606
+
+**Detalle de puntaje:** tfidf=0.2206; bonus=0.0400
+
+> El Trabajador referido en el artículo anterior, cuyos recursos acumulados en su Cuenta Individual resulten insuficientes para contratar una Renta vitalicia o un Retiro Programado que le asegure el disfrute de una Pensión Garantizada en forma vitalicia y la adquisición de un Seguro de Sobrevivencia para sus Familiares Derechohabientes, recibirá del Gobierno Federal una Aportación complementaria suficiente para el pago de la Pensión correspondiente.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 295 — similitud 0.2539
+
+**Detalle de puntaje:** tfidf=0.2139; bonus=0.0400
+
+> Se subdvidirá en las subcuentas: de retiro, cesantía en edad avanzada y vejez; de vivienda y de aportaciones voluntarias. Es evidente que la mención a la cuenta individual, en los seguros de riesgos de trabajo, invalidez y vida, no implica disposición de la suma acumulada.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 131 — similitud 0.2489
+
+**Detalle de puntaje:** tfidf=0.2089; bonus=0.0400
+
+> Fundamentos de los seguros sociales 1 1 5 egresos de invalidez, vejez, cesantía en edad avanzada y muerte superarán sus ingresos, es decir, las cuotas que para este ramo están cubriendo los trabajadores en activo no alcanzarían para pagar la nómina de pensionados. Ante tal situación, se recurriría al uso de la reserva, que es mínima, la cual se agotaría en dos años.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 133 — similitud 0.2438
+
+**Detalle de puntaje:** tfidf=0.2038; bonus=0.0400
+
+> Desfasamiento a corto plazo. Aun con las proyecciones más optimistas, se tiene previsto que para 1999 los egresos de invalidez, vejez, cesantía en edad avanzada y muerte superarán sus ingresos. Apoyo financiero.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 30 — similitud 0.2364
+
+**Detalle de puntaje:** tfidf=0.1964; bonus=0.0400
+
+> Los recursos depositados en la Cuenta Individual de cada Trabajador son propiedad de éste con las modalidades que se establecen en esta Ley y demás disposiciones aplicables. Los recursos depositados en la Subcuenta de retiro, cesantía en edad avanzada y vejez y en la Subcuenta de ahorro solidario serán inembargables. Los recursos depositados en las Subcuentas de aportaciones voluntarias, complementarias de retiro y de ahorro a largo plazo serán inembargables hasta por un monto equivalente a veinte veces el Salario Mínimo elevado al año por cada Subcuenta, por el importe excedente a esta cantidad se podrá trabar embargo.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 302 — similitud 0.2361
+
+**Detalle de puntaje:** tfidf=0.1961; bonus=0.0400
+
+> Las subcuentas se regirán por esta Ley; sin embargo, la subcuenta de retiro, cesantía en edad avanzada y vejez se regulará por la LSS y la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores. En cualquier caso, ya sea que el trabajador ejerza o no su derecho, la cuenta individual tiene como único destino cubrir las pensiones de cesantía en edad avanzada y vejez, sin que se autorice tomar estos fondos para finan­ ciar las pensiones de otros seguros; la de riesgo de trabajo se cubrirá con los
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 293 — similitud 0.2161
+
+**Detalle de puntaje:** tfidf=0.1761; bonus=0.0400
+
+> La Ley de 1973 fijaba a las pensiones un tiempo de espera de 500 semanas de cotización; la de cesantía en edad avanzada se estimaba como una pensión disminuida de vejez, donde se otorgaba un porcentaje que iba de 85 a 95%, según la edad, del cálculo de la pensión que podría corresponderle por vejez; el art. 171 establecía las bases para el cálculo de la pensión de cesantía en edad avanzada, siempre que se reunieran las 500 cotizaciones semanales; el porcentaje se modificaba cuando la edad excediera a ios seis meses.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 295 — similitud 0.2117
+
+**Detalle de puntaje:** tfidf=0.1717; bonus=0.0400
+
+> Para efectos de esta Ley, se entenderá por: l. Cuenta individual, aquella que se abrirá para cada asegurado en las Adminis­ tradoras de Fondos para el Retiro, para que se depositen en la misma las cuotas obrero-patronales y estatal por concepto del seguro de retiro, cesantía en edad avanzada y vejez, así como los rendimientos. La cuenta individual se integrará por las subcuentas: de retiro, cesantía en edad avanzada y vejez; de vivienda y de aportaciones voluntarias.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 293 — similitud 0.2108
+
+**Detalle de puntaje:** tfidf=0.1708; bonus=0.0400
+
+> En abril de 1995 se presentó el diagnóstico del 1MSS y en diciembre se aprobó la LSS, por el Congreso de la Unión. El reflejo inmediato se sintió en la modificación a las condiciones para el otorgamiento de pensiones de cesantía en edad avanzada y vejez. La Ley establece el mismo cálculo para estas pensiones; mantiene las edades de 60 y 65 años, la disposición e inte­ gración en una cuenta individual son las mismas.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 110 — similitud 0.2097
+
+**Detalle de puntaje:** tfidf=0.1697; bonus=0.0400
+
+> Los asegurados inscritos con anterioridad a la fecha de entrada en vigor de esta Ley, al momento de cumplirse los supuestos legales o el siniestro respectivo que, para el disfrute de las pensiones de vejez, cesantía en edad avanzada o riesgos de trabajo, se encontraban previstos por la Ley del Seguro Social que se deroga, podrán optar por acogerse a los beneficios por ella contemplados o a los que establece la presente Ley. 110 de 181
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 302 — similitud 0.2092
+
+**Detalle de puntaje:** tfidf=0.1692; bonus=0.0400
+
+> Las cuentas se integrarán por las subcuentas de retiro, cesantía en edad avanzada y vejez; de vivienda; aportaciones voluntarias y aportaciones complementarias de retiro. Las subcuentas se regirán por esta Ley; sin embargo, la subcuenta de retiro, cesantía en edad avanzada y vejez se regulará por la LSS y la Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores. En cualquier caso, ya sea que el trabajador ejerza o no su derecho, la cuenta individual tiene como único destino cubrir las pensiones de cesantía en edad avanzada y vejez, sin que se autorice tomar estos fondos para finan­ ciar las pensiones de otros seguros; la de riesgo de trabajo se cubrirá con los
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 47 — similitud 0.2089
+
+**Detalle de puntaje:** tfidf=0.1689; bonus=0.0400
+
+> Los Trabajadores que lleguen a la edad para pensionarse por cesantía en edad avanzada o vejez, podrán transferir sus periodos de cotización no simultáneos al IMSS y al Instituto, en los términos de lo previsto por los artículos 141 y 148 de la presente ley, a efecto de cumplir con el mínimo de años de cotización requerido. En este caso, además de sus periodos de cotización, se sumarán los recursos acumulados en sus Subcuentas del seguro de retiro, cesantía en edad avanzada y vejez, constituidas bajo los dos regímenes mencionados, para integrar el monto con el que se financiará su Pensión y el Seguro de Sobrevivencia para sus Familiares Derechohabientes.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 317 — similitud 0.2078
+
+**Detalle de puntaje:** tfidf=0.1678; bonus=0.0400
+
+> 154 y 162 de la LSS; es decir, a quienes hayan cumplido 60 o 65 años de edad (art. 170), acreditado 1250 semanas cotizadas y el fondo acumulado en su cuen­ ta individual resulte insuficiente para celebrar con la aseguradora privada de su elección el contrato de renta vitalicia o un retiro programado, sin especificar el monto o si se refiere a la suma asegurada.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 47 — similitud 0.1881
+
+**Detalle de puntaje:** tfidf=0.1481; bonus=0.0400
+
+> Las semanas de cotización amparadas por certificados de incapacidad médica para el trabajo, expedidos o reconocidos por el Instituto, serán consideradas únicamente para el otorgamiento de la pensión garantizada que en su caso corresponda. SECCION SEGUNDA DEL RAMO DE CESANTIA EN EDAD AVANZADA Artículo 154. Para los efectos de esta Ley existe cesantía en edad avanzada cuando el asegurado quede privado de trabajos remunerados a partir de los sesenta años de edad.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 36 — similitud 0.1737
+
+**Detalle de puntaje:** tfidf=0.1337; bonus=0.0400
+
+> El PENSIONISSSTE tendrá a su cargo: I. Administrar Cuentas Individuales, y II. Invertir los recursos de las Cuentas Individuales que administre, excepto los de la Subcuenta del Fondo de la Vivienda.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 25 — similitud 0.1717
+
+**Detalle de puntaje:** tfidf=0.1317; bonus=0.0400
+
+> La Pensión, y II. Las Cuotas y Aportaciones a la Cuenta Individual del seguro de retiro, cesantía en edad avanzada y vejez en los términos de la presente Ley. Terminada la vigencia del contrato de Seguro de Pensión, el Trabajador que reúna los requisitos correspondientes tendrá derecho a recibir su Pensión de vejez.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 41 — similitud 0.1696
+
+**Detalle de puntaje:** tfidf=0.1296; bonus=0.0400
+
+> La Pensión, y II. Las Cuotas y Aportaciones a la Cuenta Individual del seguro de retiro, cesantía en edad avanzada y vejez en los términos de la presente Ley. Terminada la vigencia del contrato de Seguro de Pensión, el Trabajador que reúna los requisitos correspondientes tendrá derecho a recibir su Pensión de vejez.
+
+### Ley del Instituto de Seguridad - Camara de Diputados del H. Cong.pdf — p. 30 — similitud 0.1664
+
+**Detalle de puntaje:** tfidf=0.1264; bonus=0.0400
+
+> Sección II Pensión por Cesantía en Edad Avanzada Artículo 84. Para los efectos de esta Ley, existe cesantía en edad avanzada cuando el Trabajador quede privado de trabajo a partir de los sesenta años de edad. Para gozar de las prestaciones de cesantía en edad avanzada se requiere que el Trabajador tenga un mínimo de veinticinco años de cotización reconocidos por el Instituto.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 132 — similitud 0.1629
+
+**Detalle de puntaje:** tfidf=0.1229; bonus=0.0400
+
+> TRANSITORIOS PRIMERO.- El presente Decreto entrará en vigor al día siguiente de su publicación en el Diario Oficial de la Federación, con excepción de lo dispuesto por el artículo 168, fracción IV, de la Ley del Seguro Social que se reforma, el cual entrará en vigor a partir del bimestre de cotización siguiente a su publicación. SEGUNDO.- Los bimestres y semanas de cotización de los trabajadores anteriores a la fecha de entrada en vigor del presente Decreto, así como la antigüedad de su cuenta individual, deberán ser reconocidos para efecto del cálculo de los plazos a que se refiere el artículo 191, fracción II, de la Ley del Seguro Social que se reforma.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 50 — similitud 0.1622
+
+**Detalle de puntaje:** tfidf=0.1222; bonus=0.0400
+
+> Artículo 162. Para tener derecho al goce de las prestaciones del seguro de vejez, se requiere que el asegurado haya cumplido sesenta y cinco años de edad y tenga reconocidas por el Instituto un mínimo de mil cotizaciones semanales. Párrafo reformado DOF 16-12-2020 En caso que el asegurado tenga sesenta y cinco años o más y no reúna las semanas de cotización señaladas en el párrafo precedente, podrá retirar el saldo de su cuenta individual en una sola exhibición o seguir cotizando hasta cubrir las semanas necesarias para que opere su pensión.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 296 — similitud 0.1576
+
+**Detalle de puntaje:** tfidf=0.1176; bonus=0.0400
+
+> III. Pensión, la renta vitalicia o el retiro programado. IV.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 49 — similitud 0.1559
+
+**Detalle de puntaje:** tfidf=0.1159; bonus=0.0400
+
+> III. Pensión, la renta vitalicia o el retiro programado. IV.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 290 — similitud 0.1375
+
+**Detalle de puntaje:** tfidf=0.0975; bonus=0.0400
+
+> Como hemos visto, el sistema se basa en las aportaciones estimadas sobre el salario de los trabajado­ res, sin posibilidad de alcanzar una revisión integral. La l s s comprende en un mismo capítulo los seguros de retiro, cesantía en edad avanzada y vejez, para hacerlos coparticipes, en cuanto a las aportaciones del sistema de cuentas individuales. Las sucesivas reformas de 1992 a 1994 constituyeron la base para las reformas posteriores.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 346 — similitud 0.1350
+
+**Detalle de puntaje:** tfidf=0.1050; bonus=0.0300
+
+> Respecto de la subcuenta de vivienda, la Afore deberá individualizar las aportaciones y los rendimientos correspondientes con base en la información que le proporcionen los institutos de seguridad social. En consecuencia, la Afore recibirá las cuotas y aportaciones de seguri­ dad social correspondientes a las cuentas individuales, de conformidad con las leyes de seguridad social, así como las aportaciones voluntarias y comple­ mentarias de retiro, y los demás recursos que en términos de la Ley puedan ser recibidos en las cuentas individuales.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 325 — similitud 0.1238
+
+**Detalle de puntaje:** tfidf=0.0838; bonus=0.0400
+
+> Consar, Afore y Siefore J . 309 cultades y obligaciones, por la afectación que en estos años hemos visto a los derechohabientes, puesto que se le faculta para afectar los recursos de las cuentas individuales de los trabajadores que no elijan la Afore que operará su cuenta individual (art. 176), regular la unificación o traspaso de las cuentas individuales (art.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 12. Medios de impugnación administrativos y jurisdiccionales
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.3037
+**Similitud promedio:** 0.1356
+**Fuentes:** Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf
+**Ubicaciones:** Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf, p. 113; Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf, p. 124; Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf, p. 133; Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf, p. 223; Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf, p. 276; Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf, p. 297; Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf, p. 316; Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf, p. 4; Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf, p. 60; Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf, p. 65; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 284; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 292; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 335; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 343; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 347; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 349; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 361; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 403; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 753; Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf, p. 775; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 405; Derecho de la seguridad social - Alberto Briceno Ruiz.pdf, p. 409; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 100; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 123; Ley del Seguro Social - Camara de Diputados del H. Cong.pdf, p. 4
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 316 — similitud 0.3037
+
+**Detalle de puntaje:** tfidf=0.2637; bonus=0.0400
+
+> Los recursos humanos, materiales, financieros y presupuestales con que cuenta el Tribunal Federal de Justicia Fiscal y Administrativa, incluyendo todos sus bienes y los derechos derivados de los fondos o fideicomisos vigentes, pasarán a formar parte del Tribunal Federal de Justicia Administrativa en los términos que determine la Ley a que se refiere la fracción XXIX-H, del artículo 73, de esta Constitución. Décimo.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 409 — similitud 0.2348
+
+**Detalle de puntaje:** tfidf=0.1948; bonus=0.0400
+
+> Juicio fiscal La impartición de justicia por parte del Tribunal Federal de Justicia Fiscal y Administrativa, derivada de la competencia que le confiere el art. 14 de su Ley Orgánica, no se limita a revisar y declarar, cuando procede, la nulidad de los actos administrativos, sino a impartir justicia, condenando a hacer o dejar de hacer, cuando procede. _ Los juicios que se promuevan ante el Tribunal Federal de Justicia F is- cal y Administrativa se regirán por las disposiciones de la ley Federal de Procedimiento Contencioso Administrativo (LFPCA), sin perjuicio de lo dis­ puesto por los tratados internacionales de que México.sea parte.
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 316 — similitud 0.2067
+
+**Detalle de puntaje:** tfidf=0.1667; bonus=0.0400
+
+> Octavo. Los Magistrados del Tribunal Federal de Justicia Fiscal y Administrativa que hayan sido nombrados a la fecha de entrada en vigor de la Ley a que se refiere la fracción XXIX-H, del artículo 73, de esta Constitución, continuarán como Magistrados del Tribunal Federal de Justicia Administrativa por el tiempo que fueron nombrados.
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 223 — similitud 0.2061
+
+**Detalle de puntaje:** tfidf=0.1661; bonus=0.0400
+
+> CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS CÁMARA DE DIPUTADOS DEL H. CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Últimas Reformas DOF 02-06-2026 DECRETO por el que se reforma el artículo 73, fracción XXIX-H de la Constitución Política de los Estados Unidos Mexicanos. Publicado en el Diario Oficial de la Federación el 4 de diciembre de 2006 ARTÍCULO ÚNICO.- Se reforma el artículo 73, fracción XXIX-H de la Constitución Política de los Estados Unidos Mexicanos, para quedar como sigue: ..........
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 60 — similitud 0.1758
+
+**Detalle de puntaje:** tfidf=0.1558; bonus=0.0200
+
+> Fracción reformada DOF 10-02-2014 VI. Para garantizar los principios de constitucionalidad y legalidad de los actos y resoluciones electorales, incluidos los relativos a los procesos de consulta popular y de revocación de mandato, se establecerá un sistema de medios de impugnación en los términos que señalen esta Constitución y la ley. Dicho sistema dará definitividad a las distintas etapas de los procesos electorales, de consulta popular y de revocación de mandato, y garantizará la protección de los derechos políticos de los ciudadanos de votar, ser votados y de asociación, en los términos del artículo 99 de esta Constitución.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 753 — similitud 0.1627
+
+**Detalle de puntaje:** tfidf=0.1227; bonus=0.0400
+
+> Parte del foro jurídico considera que este mecanismo cumple los requisitos establecidos en el artículo 25 de la Convención Americana sobre Derechos Humanos, en el cual se ordena a los Estados prever la existencia de un recurso efectivo que ampare a las personas contra actos que violen los derechos fundamentales de las personas.142 Lo anterior debido a que el juicio de amparo actúa como un medio para el control de legalidad, constitucionalidad y convencionalidad de normas, actos u omisiones de la autoridad.143 A pesar de ello, el juicio de amparo posee diversas características que lo hacen complejo y de difícil acceso para todas las personas.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 335 — similitud 0.1602
+
+**Detalle de puntaje:** tfidf=0.1202; bonus=0.0400
+
+> 1. Toda persona tiene derecho a un recurso sencillo y rápido o a cualquier otro recurso efectivo ante los jueces o tribunales competentes, que la ampare contra actos que violen sus derechos fun- damentales reconocidos por la Constitución, la ley o la presente Convención, aun cuando tal violación sea cometida por personas que actúen en ejercicio de sus funciones oficiales. 2.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 4 — similitud 0.1573
+
+**Detalle de puntaje:** tfidf=0.1273; bonus=0.0300
+
+> A falta de norma expresa en esta Ley, se aplicarán supletoriamente las disposiciones de la Ley Federal de Trabajo, del Código o del derecho común, en ese orden, cuando su aplicación no sea contraria a la naturaleza propia del régimen de seguridad social que establece esta Ley. El Instituto deberá sujetarse al Título Tercero A de la Ley Federal del Procedimiento Administrativo para efectos de lo previsto en éste, con las excepciones que la citada ley indica y las correspondientes a los trámites y procedimientos directamente relacionados con la prestación de servicios médicos de carácter preventivo, de diagnóstico, rehabilitación, manejo y tratamiento hospitalarios.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 343 — similitud 0.1568
+
+**Detalle de puntaje:** tfidf=0.1168; bonus=0.0400
+
+> 56 Primera Sala, Amparo en revisión 882/2016, 3 de mayo de 2017. Tesis aislada 2018637, de rubro: “DERECHO A LA EJECUCIÓN DE SENTENCIAS, COMO PARTE DE LA TUTELA JURISDICCIONAL EFECTIVA”. 57 Cifuentes Muñoz, Eduardo, op. cit., p.
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 123 — similitud 0.1401
+
+**Detalle de puntaje:** tfidf=0.1001; bonus=0.0400
+
+> Para el ejercicio 2002, F =2.7 y para el ejercicio 2003, F =2.5 y a partir del ejercicio 2004, F =2.3 como se indica en ese artículo. La Secretaría del Trabajo y Previsión Social deberá realizar todos los trámites de registro y autorización que exige la Ley Federal de Procedimiento Administrativo respecto de la acreditación de los sistemas de administración y seguridad en el trabajo a que se refiere el penúltimo párrafo del artículo 72 de esta Ley, en un plazo no mayor de 60 días hábiles contado a partir del inicio de vigencia del presente Decreto. Vigésimo.
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 276 — similitud 0.1385
+
+**Detalle de puntaje:** tfidf=0.1085; bonus=0.0300
+
+> En relación con las resoluciones a que se refieren las fracciones III y IV del artículo anterior, se estará a lo siguiente: I. Se pronunciarán de conformidad con el procedimiento que establezca la legislación vigente en la fecha de su emisión y a falta de disposición expresa, conforme a la Ley Federal de Procedimiento Administrativo; II.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 405 — similitud 0.1274
+
+**Detalle de puntaje:** tfidf=0.0974; bonus=0.0300
+
+> 294. La reforma del 20 de diciembre de 2001 elimina la condición necesaria de agotar el recurso de inconformidad, en los términos anotados. El Reglamento vigente aplica supletoriamente el c ff, la lft y el Código Federal de Procedimientos Civiles (cfpc), con lo que contraría al art.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 347 — similitud 0.1231
+
+**Detalle de puntaje:** tfidf=0.0831; bonus=0.0400
+
+> Por otro lado, el Pacto Internacional de Derechos Civiles y Políticos reconoce en su artículo 14.1 el derecho a un tribunal competente, independiente e impar- cial, establecido por la ley. En su artículo 2.3 a) el derecho a un recurso efectivo ante un Tribunal superior y en el artículo 14.4 el derecho a revisar el fallo conde- natorio.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 284 — similitud 0.1217
+
+**Detalle de puntaje:** tfidf=0.0817; bonus=0.0400
+
+> Para el autor, simplemente no hay derechos humanos sin de- mocracia, ni democracia sin derechos humanos.3 En ese orden de ideas, la Carta Democrática Interamericana reconoce un de- recho de los pueblos a la democracia, obligando a los gobiernos a promoverla y 1 Opinión Consultiva OC-8/87 del 30 de enero de 1987, El habeas corpus bajo suspensión de garantías (artículos 27.2, 25.1 y 7.6 de la Convención Americana sobre Derechos Humanos), solicitada por la Comisión Interamericana de Derechos Humanos, párrafo 26; caso Yatama vs.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 349 — similitud 0.1201
+
+**Detalle de puntaje:** tfidf=0.0801; bonus=0.0400
+
+> Acceso a la justicia y debido proceso 349 acuerdo con el contenido del derecho a la tutela judicial efectiva reconocido en el artículo 17 de la Constitución General.71 Este elemento, sostiene la Primera Sala, es parte fundamental del debido proce- so pues constituye el acto procesal de mayor entidad en todo proceso judicial para que exista certidumbre de que el demandado ha adquirido pleno conocimiento de la instauración de un proceso judicial en su contra, el lugar donde se le ha de- mandado, el Juez que conoce de la causa y el contenido de la demanda,72 para que quede en aptitud de poder ejercer su derecho de defensa.
+
+### Derecho de la seguridad social - Alberto Briceno Ruiz.pdf — p. 409 — similitud 0.1198
+
+**Detalle de puntaje:** tfidf=0.0798; bonus=0.0400
+
+> Como lo dice la maes­ tra Villalobos, “ante una actuación administrativa irregular, ha de buscarse que sea corregida dentro del orden existente con aquellos remedios legales que sean idóneos para el restablecimiento de la situación vulnerada , de ahí que nuestra legislación prevea la existencia del recurso de revocación y del juicio de nulidad, además de la vía de amparo ante el poder judicial.5 A pesar de las bondades que debía tener el recurso de inconformidad, su planteamiento es complicado porque está sujeto a las disposiciones del Regla­ mento de Inconformidades, cuya observancia es rigurosa, de tal forma que la ausencia de algún elemento da lugar a una prevención o al desechamiento.
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 133 — similitud 0.1165
+
+**Detalle de puntaje:** tfidf=0.0765; bonus=0.0400
+
+> Igualmente, que se señalen los supuestos y las reglas para la realización, en los ámbitos administrativo y jurisdiccional, de recuentos totales o parciales de votación; m) Se fijen las causales de nulidad de las elecciones de gobernador, diputados locales y ayuntamientos, así como los plazos convenientes para el desahogo de todas las instancias impugnativas, tomando en cuenta el principio de definitividad de las etapas de los procesos electorales, y n) Se verifique, al menos, una elección local en la misma fecha en que tenga lugar alguna de las elecciones federales; Inciso adicionado DOF 10-02-2014 o) Se tipifiquen los delitos y determinen las faltas en materia electoral, así como las...
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 361 — similitud 0.1151
+
+**Detalle de puntaje:** tfidf=0.0751; bonus=0.0400
+
+> Acceso a la justicia y debido proceso 361 Código de Comercio que incrementaron la cuantía necesaria para la procedencia del recurso de apelación, el derecho de acceso a los recursos únicamente puede ser exceptuado por el legislador cuando busque el logro de una finalidad constitucio- nalmente legítima, lo que hace necesario estudiar cada caso individual para de- terminar la razonabilidad de las exclusiones de recursos, tomando en cuenta para ello la totalidad del contexto normativo aplicable, a fin de determinar si existen otros medios de defensa, acciones, oportunidades procesales o mecanismos, que garanticen adecuadamente el derecho de defensa y el derecho a la tutela judicial efectiva de...
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 276 — similitud 0.1150
+
+**Detalle de puntaje:** tfidf=0.0750; bonus=0.0400
+
+> Las normas generales aplicadas durante el procedimiento y los actos intraprocesales sólo podrán reclamarse en el amparo promovido contra la resolución referida, y III. No admitirán recurso administrativo alguno y solamente podrán ser impugnadas a través del juicio de amparo indirecto en los términos de la fracción anterior. El incumplimiento de las medidas contempladas en las citadas resoluciones será sancionado en términos de las disposiciones aplicables.
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 113 — similitud 0.1148
+
+**Detalle de puntaje:** tfidf=0.0748; bonus=0.0400
+
+> Si las violaciones procesales no se invocaron en un primer amparo, ni el Tribunal Colegiado correspondiente las hizo valer de oficio en los casos en que proceda la suplencia de la queja, no podrán ser materia de concepto de violación, ni de estudio oficioso en juicio de amparo posterior. La parte que haya obtenido sentencia favorable y la que tenga interés jurídico en que subsista el acto reclamado, podrá presentar amparo en forma adhesiva al que promueva cualquiera de las partes que intervinieron en el juicio del que emana el acto reclamado. La ley determinará la forma y términos en que deberá promoverse.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 775 — similitud 0.1117
+
+**Detalle de puntaje:** tfidf=0.0717; bonus=0.0400
+
+> Al mismo tiempo, derechos civiles y políticos como el acceso a la información, a la participación y a la tutela judicial efectiva se con- sideran herramientas esenciales para la protección del medio ambiente y los dere- chos sustantivos que dependen de su calidad y la conservación de la naturaleza.11
+
+### Ley del Seguro Social - Camara de Diputados del H. Cong.pdf — p. 100 — similitud 0.1116
+
+**Detalle de puntaje:** tfidf=0.0916; bonus=0.0200
+
+> CONGRESO DE LA UNIÓN Secretaría General Secretaría de Servicios Parlamentarios Última Reforma DOF 15-01-2026 SECCIÓN PRIMERA PROCEDIMIENTO ADMINISTRATIVO DE EJECUCIÓN Sección adicionada DOF 20-12-2001 Artículo 291. El procedimiento administrativo de ejecución para el cobro de los créditos a que se refiere el artículo 287 de esta Ley, que no hubiesen sido cubiertos oportunamente al Instituto, se aplicará por éste, con sujeción a las normas del Código y demás disposiciones aplicables, a través de sus unidades administrativas facultadas al efecto.
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 124 — similitud 0.1061
+
+**Detalle de puntaje:** tfidf=0.0861; bonus=0.0200
+
+> a) Las bases generales de la administración pública municipal y del procedimiento administrativo, incluyendo los medios de impugnación y los órganos para dirimir las controversias entre dicha administración y los particulares, con sujeción a los principios de igualdad, publicidad, audiencia y legalidad; b) Los casos en que se requiera el acuerdo de las dos terceras partes de los miembros de los ayuntamientos para dictar resoluciones que afecten el patrimonio inmobiliario municipal o para celebrar actos o convenios que comprometan al Municipio por un plazo mayor al periodo del Ayuntamiento; c) Las normas de aplicación general para celebrar los convenios a que se refieren tanto las fracciones...
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 297 — similitud 0.0944
+
+**Detalle de puntaje:** tfidf=0.0744; bonus=0.0200
+
+> El Congreso de la Unión deberá expedir la Ley General del Artículo 6o. de esta Constitución, así como las reformas que correspondan a la Ley Federal de Transparencia y Acceso a la Información Pública Gubernamental, a la Ley Federal de Datos Personales en Posesión de los Particulares, al Código Federal de Instituciones y Procedimientos Electorales, a la Ley General del Sistema de Medios de Impugnación en Materia Electoral y los demás ordenamientos necesarios, en un plazo de un año contado a partir de la fecha de publicación del presente Decreto. TERCERO.
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 292 — similitud 0.0912
+
+**Detalle de puntaje:** tfidf=0.0712; bonus=0.0200
+
+> A su vez, se debe contar con un sistema de medios de impugnación para garantizar la constitucionalidad y legalidad de las consultas.24 Finalmente, el propio artículo 35 constitucional establece que, desde la convo- catoria y hasta la conclusión de la jornada, deberá suspenderse la difusión en me- dios de comunicación de toda propaganda gubernamental de cualquier orden de gobierno.
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 133 — similitud 0.0867
+
+**Detalle de puntaje:** tfidf=0.0667; bonus=0.0200
+
+> En todo caso, la duración de las campañas será de sesenta a noventa días para la elección de gobernador y de treinta a sesenta días cuando sólo se elijan diputados locales o ayuntamientos; las precampañas no podrán durar más de las dos terceras partes de las respectivas campañas electorales; Inciso reformado DOF 10-02-2014 k) Se regule el régimen aplicable a la postulación, registro, derechos y obligaciones de los candidatos independientes, garantizando su derecho al financiamiento público y al acceso a la radio y la televisión en los términos establecidos en esta Constitución y en las leyes correspondientes; Inciso reformado DOF 10-02-2014 l) Se establezca un sistema de medios de...
+
+### Curso de derechos humanos - Ana Maria Ibarra Olguin.pdf — p. 403 — similitud 0.0837
+
+**Detalle de puntaje:** tfidf=0.0637; bonus=0.0200
+
+> El primero se relaciona con lo que se conoce como la defensa técnica (es decir, proporcionada por un licenciado o licenciada en derecho);150 mientras que el segundo establece que la defensa requiere ser efectiva (actuar diligente).151 Ade- más, ha reconocido que este derecho también comprende dar oportunidad a todo inculpado de que su defensor tenga oportunidad de participar en todas las etapas del proceso, aportar pruebas, presentar medios de impugnación, exponer argumentos y utilizar los beneficios procesales que la legislación correspondiente establezca para la defensa.152 148 Amparo directo en revisión 2886/2012, Pleno de la Suprema Corte de Justicia de la Nación, Ponente: Arturo...
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 4 — similitud 0.0672
+
+**Detalle de puntaje:** tfidf=0.0472; bonus=0.0200
+
+> La persona física o moral que obtenga un lucro por las medidas administrativas objeto de consulta debe otorgar a los pueblos y comunidades indígenas un beneficio justo y equitativo, en los términos que establezcan las leyes aplicables. Los pueblos y comunidades indígenas son los únicos legitimados para impugnar, por las vías jurisdiccionales establecidas, el incumplimiento del derecho reconocido en esta fracción. La ley de la materia regulará los términos, condiciones y procedimientos para llevar a cabo la impugnación.
+
+### Constitucion Politica de los Es - Camara de Diputados del H. Cong.pdf — p. 65 — similitud 0.0632
+
+**Detalle de puntaje:** tfidf=0.0532; bonus=0.0100
+
+> Párrafo reformado DOF 22-08-1996 Las resoluciones de las salas a que se refiere el párrafo anterior, podrán ser revisadas exclusivamente por la Sala Superior del propio Tribunal, a través del medio de impugnación que los partidos políticos podrán interponer únicamente cuando por los agravios esgrimidos se pueda modificar el resultado de la elección. Los fallos de la Sala serán definitivos e inatacables.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 2 referencia(s) de baja similitud que podrían introducir ruido.

@@ -77,7 +77,10 @@
     "Derecho humano a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
     "El concepto de seguridad social: una aproximaci \\'o n a sus alcances y l \\'i mites :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
     "Ley sobre el Contrato de Seguro :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
-    "Qu \\'e diferencia al Seguro Social de un seguro privado :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
+    "Qu \\'e diferencia al Seguro Social de un seguro privado :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+    "Nociones jur \\'i dicas de los seguros sociales en M \\'e xico :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+    "Gu \\'i a de Educaci \\'o n Previsional en Materia de Seguridad Social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+    "Ley del Seguro Social (comentarios y jurisprudencia) :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
   ],
   "section_titles": [
     "Bienvenida y sentido de la materia",
@@ -125,7 +128,10 @@
     "belmontParra2017 :: Derecho humano a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
     "perezSotoCalderon2012 :: El concepto de seguridad social: una aproximaci \\'o n a sus alcances y l \\'i mites :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
     "leyContratoSeguro2026 :: Ley sobre el Contrato de Seguro :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
-    "idcRodriguez2019 :: Qu \\'e diferencia al Seguro Social de un seguro privado :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
+    "idcRodriguez2019 :: Qu \\'e diferencia al Seguro Social de un seguro privado :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+    "ramirezChavero2009 :: Nociones jur \\'i dicas de los seguros sociales en M \\'e xico :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+    "stpsGuiaPrevisional :: Gu \\'i a de Educaci \\'o n Previsional en Materia de Seguridad Social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+    "herreraMontes2024 :: Ley del Seguro Social (comentarios y jurisprudencia) :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
   ],
   "node_metadata": {
     "editing_details": {
@@ -424,7 +430,10 @@
           "has_memory": false
         }
       ],
-      "novelty_signals": [],
+      "novelty_signals": [
+        "heading_contract",
+        "institutional_identity"
+      ],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -456,7 +465,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260725-051603",
+      "run_id": "20260809-152344",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
@@ -468,7 +477,7 @@
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-3",
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4"
       ],
-      "novelty_count": 0
+      "novelty_count": 2
     },
     "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
     "level": "actividad",
@@ -792,7 +801,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260725-051603",
+          "run_id": "20260809-152344",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
@@ -804,7 +813,7 @@
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-3",
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4"
           ],
-          "novelty_count": 0
+          "novelty_count": 2
         },
         "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
         "level": "actividad",
@@ -942,7 +951,8 @@
       "ADN sintetizado con 27 conceptos, 7 citas y 3 relaciones.",
       "Memoria de redacción preservada en 39 bloques.",
       "Memoria de redacción preservada en 36 bloques.",
-      "ADN sintetizado con 30 conceptos, 7 citas y 3 relaciones."
+      "ADN sintetizado con 30 conceptos, 7 citas y 3 relaciones.",
+      "ADN sintetizado con 33 conceptos, 7 citas y 3 relaciones."
     ],
     "knowledge_graph": {
       "concepts": [
@@ -975,7 +985,10 @@
         "Derecho humano a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
         "El concepto de seguridad social: una aproximaci \\'o n a sus alcances y l \\'i mites :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
         "Ley sobre el Contrato de Seguro :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
-        "Qu \\'e diferencia al Seguro Social de un seguro privado :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
+        "Qu \\'e diferencia al Seguro Social de un seguro privado :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "Nociones jur \\'i dicas de los seguros sociales en M \\'e xico :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "Gu \\'i a de Educaci \\'o n Previsional en Materia de Seguridad Social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "Ley del Seguro Social (comentarios y jurisprudencia) :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
       ],
       "citations": [
         "lss2026",
@@ -1014,7 +1027,10 @@
         "belmontParra2017 :: Derecho humano a la seguridad social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
         "perezSotoCalderon2012 :: El concepto de seguridad social: una aproximaci \\'o n a sus alcances y l \\'i mites :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
         "leyContratoSeguro2026 :: Ley sobre el Contrato de Seguro :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
-        "idcRodriguez2019 :: Qu \\'e diferencia al Seguro Social de un seguro privado :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
+        "idcRodriguez2019 :: Qu \\'e diferencia al Seguro Social de un seguro privado :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "ramirezChavero2009 :: Nociones jur \\'i dicas de los seguros sociales en M \\'e xico :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "stpsGuiaPrevisional :: Gu \\'i a de Educaci \\'o n Previsional en Materia de Seguridad Social :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "herreraMontes2024 :: Ley del Seguro Social (comentarios y jurisprudencia) :: fuente=UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib"
       ],
       "relations": [
         {
@@ -14923,7 +14939,42 @@
         "year": "2019",
         "url": "https://idconline.mx/seguridad-social/2019/10/09/que-diferencia-al-seguro-social-de-un-seguro-privado",
         "note": "IDC Asesor Fiscal, Jur \\'i dico y Laboral; consulta: 2026-07-25",
-        "raw_entry": "@misc{idcRodriguez2019,\n  author = {Rodr{\\'i}guez, Sandra},\n  title = {Qu{\\'e} diferencia al Seguro Social de un seguro privado},\n  year = {2019},\n  howpublished = {\\url{https://idconline.mx/seguridad-social/2019/10/09/que-diferencia-al-seguro-social-de-un-seguro-privado}},\n  note = {IDC Asesor Fiscal, Jur{\\'i}dico y Laboral; consulta: 2026-07-25},\n  annote = {La planeaci{\\'o}n consigna 2026; se normaliza al a{\\~n}o visible en la URL}\n}"
+        "raw_entry": "@misc{idcRodriguez2019,\n  author = {Rodr{\\'i}guez, Sandra},\n  title = {Qu{\\'e} diferencia al Seguro Social de un seguro privado},\n  year = {2019},\n  howpublished = {\\url{https://idconline.mx/seguridad-social/2019/10/09/que-diferencia-al-seguro-social-de-un-seguro-privado}},\n  note = {IDC Asesor Fiscal, Jur{\\'i}dico y Laboral; consulta: 2026-07-25},\n  annote = {La planeaci{\\'o}n consigna 2026; se normaliza al a{\\~n}o visible en la URL}\n}\n\n% --- Referencias Actividad 5 (Semana 5): ramas del regimen obligatorio del IMSS ---"
+      },
+      "ramirezChavero2009": {
+        "key": "ramirezChavero2009",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "entry_type": "book",
+        "title": "Nociones jur \\'i dicas de los seguros sociales en M \\'e xico",
+        "author": "Ram \\'i rez Chavero, Iv \\'a n",
+        "year": "2009",
+        "publisher": "C \\'a mara de Diputados; Porr \\'u a; UNAM",
+        "raw_entry": "@book{ramirezChavero2009,\n  author = {Ram{\\'i}rez Chavero, Iv{\\'a}n},\n  title = {Nociones jur{\\'i}dicas de los seguros sociales en M{\\'e}xico},\n  publisher = {C{\\'a}mara de Diputados; Porr{\\'u}a; UNAM},\n  year = {2009},\n  address = {M{\\'e}xico},\n  annote = {Bibliograf{\\'i}a indicada en la planeaci{\\'o}n S5}\n}"
+      },
+      "stpsGuiaPrevisional": {
+        "key": "stpsGuiaPrevisional",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "entry_type": "misc",
+        "title": "Gu \\'i a de Educaci \\'o n Previsional en Materia de Seguridad Social",
+        "author": "Secretar \\'i a del Trabajo y Previsi \\'o n Social",
+        "year": "2019",
+        "url": "https://www.gob.mx/stps",
+        "note": "Documento institucional de la STPS",
+        "raw_entry": "@misc{stpsGuiaPrevisional,\n  author = {{Secretar{\\'i}a del Trabajo y Previsi{\\'o}n Social}},\n  title = {Gu{\\'i}a de Educaci{\\'o}n Previsional en Materia de Seguridad Social},\n  year = {2019},\n  howpublished = {\\url{https://www.gob.mx/stps}},\n  note = {Documento institucional de la STPS},\n  annote = {Bibliograf{\\'i}a indicada en la planeaci{\\'o}n S5}\n}"
+      },
+      "herreraMontes2024": {
+        "key": "herreraMontes2024",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/derecho-a-la-seguridad-social.bib",
+        "entry_type": "incollection",
+        "title": "Ley del Seguro Social (comentarios y jurisprudencia)",
+        "author": "Herrera Montes, Eduardo Alberto and Herrera P \\'e rez, Alberto",
+        "year": "2024",
+        "publisher": "Instituto de Investigaciones Jur \\'i dicas, UNAM",
+        "url": "https://archivos.juridicas.unam.mx/www/bjv/libros/16/7595/14.pdf",
+        "raw_entry": "@incollection{herreraMontes2024,\n  author = {Herrera Montes, Eduardo Alberto and Herrera P{\\'e}rez, Alberto},\n  title = {Ley del Seguro Social (comentarios y jurisprudencia)},\n  booktitle = {Ley del Seguro Social. Comentarios y jurisprudencia},\n  publisher = {Instituto de Investigaciones Jur{\\'i}dicas, UNAM},\n  year = {2024},\n  address = {M{\\'e}xico},\n  howpublished = {\\url{https://archivos.juridicas.unam.mx/www/bjv/libros/16/7595/14.pdf}},\n  annote = {Bibliograf{\\'i}a indicada en la planeaci{\\'o}n S5}\n}"
       }
     }
   },

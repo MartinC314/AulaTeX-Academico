@@ -1,0 +1,26 @@
+{
+  "tema": "",
+  "objetivo": "",
+  "tecnica_didactica": "",
+  "actividad": "",
+  "aprendizajes": [],
+  "bibliografia": [
+    "Cámara de Diputados del H. Congreso de la Unión. (2026). Constitución Política de los Estados Unidos Mexicanos. https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+    "Cámara de Diputados del H. Congreso de la Unión. (2026). Ley del Seguro Social. https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+    "Carbonell",
+    "M. (2021). Los derechos fundamentales en México. Porrúa",
+    "Instituto Mexicano del Seguro Social. (2026). Sitio web del Instituto Mexicano del Seguro Social. https://www.imss.gob.mx/",
+    "Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado. (2026). Sitio web del ISSSTE. https://www.gob.mx/issste"
+  ],
+  "criterios_entrega": [],
+  "conceptos_explicitos": [],
+  "verbos_operativos": [],
+  "general_context": "Asunto: Nociones básicas — Derecho a la Seguridad Social\nHola a todas y todos:\nComparto mi participación al foro respondiendo, desde mis conocimientos previos, las preguntas guía del diagnóstico.\n¿A qué rama del Derecho pertenece el Derecho de la Seguridad Social?\nEl Derecho de la Seguridad Social pertenece principalmente al Derecho Social. Esta rama busca proteger a personas o grupos que se encuentran en situaciones de vulnerabilidad o desigualdad material. Por eso se relaciona estrechamente con el Derecho Laboral y con el Derecho Agrario, aunque tiene objeto propio.\n¿Qué es el Derecho de la Seguridad Social?\nEl Derecho de la Seguridad Social es el conjunto de normas, instituciones, principios y procedimientos destinados a proteger a las personas frente a contingencias como enfermedad, accidente, maternidad, invalidez, vejez, muerte, cesantía o desempleo. Su finalidad es que las personas no queden desamparadas cuando un riesgo reduce su capacidad de obtener ingresos o de sostener condiciones dignas de vida. En este sentido, conviene recordar que los derechos sociales \"imponen al Estado obligaciones de hacer, es decir, la realización de prestaciones positivas en favor de las personas\" (Carbonell, 2021, p. 89), lo que explica por qué la seguridad social requiere instituciones y procedimientos que la hagan exigible.\n¿Qué sistemas de seguros públicos existen en México?\nDe manera general, los sistemas públicos más reconocibles en México son el Instituto Mexicano del Seguro Social (IMSS) y el Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (ISSSTE). El IMSS se vincula principalmente con personas trabajadoras del sector privado y sus beneficiarios; el ISSSTE se relaciona con personas trabajadoras al servicio del Estado y sus beneficiarios.\n¿Qué es un sistema de ahorro para el retiro?\nUn sistema de ahorro para el retiro es un mecanismo destinado a acumular recursos durante la vida laboral para financiar una pensión o ingreso en la etapa de retiro. En México suele asociarse con cuentas individuales administradas por entidades especializadas, donde se concentran aportaciones del trabajador, del patrón y del Estado, según el régimen aplicable.\nPregunta para el grupo: ¿han observado algún caso concreto en el que, pese al reconocimiento de un derecho, una persona no haya podido acceder efectivamente a la prestación? Indiquen: (i) la contingencia involucrada; (ii) la institución que debía atenderla; y (iii) la principal barrera de acceso identificada.\nSaludos y quedo atento a sus comentarios.",
+  "sections": {
+    "bibliografia": "Cámara de Diputados del H. Congreso de la Unión. (2026). Constitución Política de los Estados Unidos Mexicanos. https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf\nCámara de Diputados del H. Congreso de la Unión. (2026). Ley del Seguro Social. https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf\nCarbonell, M. (2021). Los derechos fundamentales en México. Porrúa.\nInstituto Mexicano del Seguro Social. (2026). Sitio web del Instituto Mexicano del Seguro Social. https://www.imss.gob.mx/\nInstituto de Seguridad y Servicios Sociales de los Trabajadores del Estado. (2026). Sitio web del ISSSTE. https://www.gob.mx/issste"
+  },
+  "campos_detectados": [
+    "bibliografía"
+  ],
+  "resumen": "campos=bibliografía"
+}

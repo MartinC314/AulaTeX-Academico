@@ -1,0 +1,87 @@
+{
+  "tema": "Instituto Mexicano del Seguro Social (IMSS): naturaleza jurídica, estructura, órganos y principales funciones; Leyes de 73 y 97; régimen obligatorio y voluntario; tipos de seguros del régimen obligatorio (riesgos de trabajo, invalidez, vejez y cesantía en edad avanzada) y medios de impugnación administrativos y jurisdiccionales",
+  "objetivo": "Objetivo específico que se desarrolla: Fortalecer la cultura del Derecho de la Seguridad Social diseñando actividades con la normatividad aplicable y así promover el compromiso de los trabajadores y patrones a la seguridad y liderazgo respecto al Derecho a la Seguridad Social. Propósito de la actividad: Identificar las contingencias que cubren los diversos seguros (ramas) del Instituto Mexicano del Seguro Social en su régimen obligatorio. (Objetivo general de la asignatura: Identificar y comprender los aspectos teóricos y técnicos de los derechos de la Seguridad Social y los que emanen de éste, para su debida aplicación.)",
+  "tecnica_didactica": "Cuadro sinóptico sobre los seguros (ramas) del régimen obligatorio del IMSS (técnica tomada de las 100 técnicas de enseñanza y aprendizaje)",
+  "actividad": {
+    "nombre": "Cuadro sinóptico sobre los seguros (ramas) del régimen obligatorio del IMSS",
+    "proposito": "Identificar las contingencias que cubren los diversos seguros (ramas) del Instituto Mexicano del Seguro Social en su régimen obligatorio",
+    "material": "Bibliografía básica y complementaria (enunciada), legislación (enunciada), equipo de cómputo",
+    "indicaciones": [
+      "Dar lectura a la bibliografía y la legislación (solo en los artículos correspondientes), identificando los seguros que cubren las ramas del régimen obligatorio del IMSS.",
+      "Elaborar un cuadro sinóptico en donde se plasmen sus contenidos: el concepto de 'rama' en el contexto del seguro social del IMSS, el listado de las ramas existentes, su sustento legal y lo que cubre cada una.",
+      "Una vez elaborado el sinóptico, guardarlo en PDF y subirlo al espacio correspondiente a la tarea en el aula virtual."
+    ],
+    "tiempo_estimado": "4 horas",
+    "tipo_evaluacion": "Formativa",
+    "evidencia": "Actividad ponderable",
+    "ponderacion": "20/100",
+    "semana": "Semana 3 (del 03 al 09 de agosto de 2026)",
+    "fecha_entrega": "09 de agosto de 2026, 23:55 hora de la Ciudad de México",
+    "sesion_sincronica": "04 de agosto de 2026, 22:00 hora de la Ciudad de México"
+  },
+  "bibliografia": [
+    "Briceño Ruíz, Alberto (2011). Derecho de la Seguridad Social. Oxford, México. Disponible en https://andrescusia.wordpress.com/wp-content/uploads/2020/05/36.-seguridad-social-alberto-briceo-ruiz-2.pdf",
+    "Ramírez Chavero, Iván (2009). Nociones jurídicas de los seguros sociales en México. Cámara de Diputados, Porrúa y UNAM, México. Disponible en https://www.diputados.gob.mx/sedia/biblio/virtual/cono... (enlace truncado)",
+    "Secretaría del Trabajo y Previsión Social (s.a.). Guía de Educación Previsional en Materia de Seguridad Social. México. Disponible en https://www.gob.mx/cms/uploads/attachment/file/387588/Gui... (enlace truncado)",
+    "Herrera Montes, Eduardo Alberto y Herrera Pérez, Alberto (2024). Ley del Seguro Social (comentarios y jurisprudencia). Instituto de Investigaciones Jurídicas de la UNAM, México. Disponible en https://archivos.juridicas.unam.mx/www/bjv/libros/16/7595/14.pdf",
+    "Normatividad gubernamental: Constitución Política de los Estados Unidos Mexicanos",
+    "Normatividad gubernamental: Ley General de la Seguridad Social",
+    "Normatividad gubernamental: Ley del Seguro Social"
+  ],
+  "criterios_entrega": [
+    "Entrega en el espacio correspondiente del aula virtual, en formato PDF.",
+    "Fecha límite: 09 de agosto de 2026, 23:55 hora de la Ciudad de México.",
+    "La entrega corresponde a un solo intento.",
+    "Entregas extemporáneas con penalización de 10% menos de los puntos; recepción únicamente hasta el martes de cada semana (no aplica para semanas 9 y 10).",
+    "Actividades debidamente citadas en formato APA 7ª edición.",
+    "El uso de herramientas de IA debe apegarse a los Lineamientos para el uso ético y responsable de la IA: 50% a 100% de IA no declarada, 7 puntos menos; 50% en adelante declarada, no se penaliza pero se evalúa en función del contenido; 0 a 49% no declarada, 5 puntos menos; 0 a 49% declarada, no se penaliza pero se evalúa en función del contenido.",
+    "Se pierde el intento de envío cuando se incurra en las condiciones del apartado décimo octavo (Capítulo II, Sección Tercera, De la elaboración y entrega de actividades) de los Lineamientos para la evaluación del aprendizaje.",
+    "No se reciben actividades por medios distintos al aula ni posteriores al cierre de la misma (RUUADM y Lineamientos).",
+    "Escala de calificaciones de 0 a 100, mínima aprobatoria 60; no procede la renuncia a la calificación (Art. 27 del Reglamento Universitario de la UnADM).",
+    "Las actividades y evidencias en las que se identifique falta de integridad académica serán evaluadas con 0 (Art. 27 y Art. 76 fracción V).",
+    "Rúbrica con rubros: Concepto de rama, Ramas, Contenido de las ramas, Sustento y Fuentes, evaluados en niveles Excelente (4 puntos), Regular (2 puntos) y En desarrollo (0 puntos)."
+  ],
+  "aprendizajes": [
+    "Identificar las contingencias que cubren los diversos seguros (ramas) del IMSS en su régimen obligatorio",
+    "Comprender la naturaleza jurídica, estructura, órganos y funciones del IMSS, así como las Leyes de 1973 y 1997",
+    "Distinguir los aspectos generales del régimen obligatorio y voluntario, sus sujetos y su relación con la LFT",
+    "Reconocer el sustento legal y la cobertura de cada rama del seguro social",
+    "Identificar los medios de impugnación administrativos y jurisdiccionales en materia de seguridad social",
+    "Aplicar el formato APA 7ª edición en citas y listado de fuentes"
+  ],
+  "conceptos_clave": [
+    "Instituto Mexicano del Seguro Social (IMSS)",
+    "Naturaleza jurídica del IMSS",
+    "Leyes del Seguro Social de 1973 y 1997",
+    "Régimen obligatorio",
+    "Régimen voluntario",
+    "Rama (del seguro social)",
+    "Seguro de Riesgos de Trabajo",
+    "Seguro de Invalidez",
+    "Seguros de Vejez y Cesantía en Edad Avanzada",
+    "Medios de impugnación administrativos y jurisdiccionales",
+    "Ley Federal del Trabajo (LFT)",
+    "Derecho a la Seguridad Social"
+  ],
+  "page_evidence": {
+    "datos_identificacion": "p. 1 (bloques 1-17), p. 2 (bloques 1-2)",
+    "objetivos_asignatura": "p. 2 (bloques 3-9), p. 3 (bloques 1-2)",
+    "datos_planificacion_semana": "p. 3 (bloque 3)",
+    "tema": "p. 3 (bloque 4)",
+    "objetivo": "p. 3 (bloque 4), p. 4 (bloques 1-2), p. 4 (bloque 12)",
+    "tecnica_didactica": "p. 4 (bloques 3-4)",
+    "bibliografia": "p. 4 (bloques 5-7)",
+    "actividad": "p. 4 (bloques 8-12), p. 5 (bloques 1-3)",
+    "criterios_entrega": "p. 5 (bloques 4-7), p. 6 (bloques 1-12)",
+    "rubrica": "p. 6 (bloques 13-19), p. 7 (bloques 1-11)",
+    "concentrado_calificaciones": "p. 7 (bloques 12-39), p. 8 (bloques 1-2)"
+  },
+  "warnings": [
+    "Inconsistencia de calendario/ponderación: la planeación ubica el 'Cuadro sinóptico sobre los seguros del régimen obligatorio del IMSS' en la Semana 3 con 20/100, pero el concentrado de calificaciones asigna a la Semana 3 una 'Reseña sobre el contenido de los artículos constitucionales' con 10 puntos y ubica el cuadro sinóptico del IMSS en la Semana 5 con 20 puntos.",
+    "El campo 'Objetivo específico que se desarrolla del contenido temático' aparece fragmentado entre p. 3 (bloque 4) y p. 4 (bloque 2); el texto se reconstruyó a partir de ambos bloques.",
+    "Dos enlaces bibliográficos aparecen truncados en el documento (Ramírez Chavero, 2009 y STPS, s.a.).",
+    "La rúbrica está desordenada por el formato de tabla: las descripciones de los niveles 'Contenido de las ramas' y 'Sustento' aparecen intercaladas, por lo que la correspondencia exacta rubro-nivel no puede confirmarse con certeza.",
+    "No se indica explícitamente el puntaje total de la rúbrica ni su equivalencia con el 20/100 de la actividad.",
+    "Se menciona la 'Ley General de la Seguridad Social' como normatividad; podría tratarse de un error de denominación, pero se transcribe tal cual aparece."
+  ]
+}

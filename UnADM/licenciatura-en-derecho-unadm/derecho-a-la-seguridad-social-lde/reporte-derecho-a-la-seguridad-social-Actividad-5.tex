@@ -1,0 +1,186 @@
+% AulaTeX - Actividad 5 construida desde la planeacion S5 y sus referencias.
+% Tecnica didactica (catalogo 100): Cuadro sinoptico (arbol jerarquico TikZ).
+% Producto: cuadro sinoptico de las ramas del regimen obligatorio del IMSS.
+% Rubrica: concepto de rama, listado de ramas, contenido de cada rama, sustento legal y fuentes.
+\documentclass[12pt,letterpaper,oneside]{article}
+\usepackage[margin=2.35cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{float}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,shapes.geometric}
+\usepackage{hyperref}
+\usepackage[authoryear,round]{natbib}
+
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+\definecolor{unadmRowAlt}{HTML}{EDF1E7}
+\hypersetup{colorlinks=true,linkcolor=unadmGreenDark,citecolor=unadmGreenDark,urlcolor=unadmGreenDark}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.72em}
+\onehalfspacing
+\bibliographystyle{plainnat}
+\newcommand{\documenttitle}{Ramas del r\'egimen obligatorio del IMSS}
+\newcommand{\documentsubtitle}{Concepto de rama, seguros que la integran y su sustento legal}
+\newcommand{\documentsubject}{Actividad 5 - Derecho a la Seguridad Social}
+
+\begin{document}
+
+\begin{titlepage}
+  \pagecolor{unadmPaper}
+  \color{unadmInk}
+  \begin{center}
+    \vspace*{0.8cm}
+    \includegraphics[height=2.05cm]{img/departamentos/UnADM.pdf}\\[0.7cm]
+    {\Large Universidad Abierta y a Distancia de M\'exico}\\[0.2cm]
+    {\large Licenciatura en Derecho}\\[1.2cm]
+    {\color{unadmGreenDark}\rule{0.82\linewidth}{1.4pt}}\\[0.55cm]
+    {\Huge\bfseries \documenttitle\par}
+    \vspace{0.35cm}
+    {\Large \documentsubtitle\par}
+    \vspace{0.15cm}
+    {\large \documentsubject\par}
+    \vspace{0.45cm}
+    {\color{unadmGold}\rule{0.62\linewidth}{1.1pt}}\\[1.1cm]
+    \begin{tabular}{rl}
+      \textbf{Alumno:} & Martin Jonathan de la Cruz \\
+      \textbf{Matr\'icula:} & ES2611202040 \\
+      \textbf{Figura docente:} & Cristian Ortega Barrera \\
+      \textbf{Materia:} & Derecho a la Seguridad Social \\
+      \textbf{Semestre/Bloque:} & 2 / 1 \\
+      \textbf{Unidad tem\'atica:} & El Instituto Mexicano del Seguro Social \\
+      \textbf{Fecha:} & \today
+    \end{tabular}
+    \vfill
+    {\small Roma Norte, Ciudad de M\'exico}
+  \end{center}
+  \nopagecolor
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+\section{Introducci\'on}
+
+El \textbf{Instituto Mexicano del Seguro Social} (IMSS) es el organismo p\'ublico encargado de organizar y administrar el \textbf{seguro social} en M\'exico. En el marco constitucional, el art\'iculo~123, apartado~A, fracci\'on~XXIX, se relaciona con la protecci\'on mediante seguros de invalidez, vida, cesaci\'on involuntaria del trabajo, enfermedades y accidentes; la Ley del Seguro Social (LSS) desarrolla normativamente esta materia y permite organizar sus ramas de protecci\'on \citep{lss2026,bricenoRuiz2011}.
+
+El an\'alisis se concentra en el \textbf{r\'egimen obligatorio} y en las protecciones que el material consultado presenta mediante distintos seguros. Su obligatoriedad se relaciona con el aseguramiento y el pago forzoso de cuotas; por tanto, el cuadro sin\'optico organiza las contingencias, prestaciones y referencias normativas que se examinan en este trabajo \citep{lss2026,ramirezChavero2009}. Comprender esta organizaci\'on permite identificar, frente a un caso concreto, qu\'e contingencia se cubre, qu\'e prestaci\'on se otorga y qu\'e norma la sustenta.
+
+Para lograrlo se emplea un \textbf{cuadro sin\'optico}, t\'ecnica did\'actica que ordena y jerarquiza la informaci\'on de lo general a lo particular \citep{bricenoRuiz2011}. El producto que sigue coloca al r\'egimen obligatorio como concepto ra\'iz, despliega las cinco ramas que lo integran y, bajo cada una, sintetiza su cobertura y su base legal.
+
+\section{El r\'egimen obligatorio del IMSS y sus ramas}
+
+\subsection{Concepto de rama en el seguro social}
+
+Para fines de este cuadro sin\'optico, una \textbf{rama} ---tambi\'en llamada seguro o ramo--- se entiende como un conjunto de protecci\'on que agrupa contingencias sociales afines y las vincula con prestaciones y disposiciones aplicables. Su \textbf{naturaleza} es legal e institucional: no nace de un acuerdo de voluntades, sino que se integra en el r\'egimen obligatorio regulado por la Ley del Seguro Social \citep{lss2026,ramirezChavero2009}. Su \textbf{contenido}, por tanto, comprende tres elementos inseparables: la contingencia protegida, las prestaciones ---en especie y en dinero--- que se otorgan al actualizarse, y el sustento normativo que las hace obligatorias.
+
+Cada rama funciona como una unidad t\'ecnica de aseguramiento: agrupa riesgos afines, define condiciones de acceso ---por ejemplo, semanas de cotizaci\'on o certificaci\'on del padecimiento--- y organiza las prestaciones bajo un mismo cap\'itulo de la ley. Por eso, hablar de las ramas del r\'egimen obligatorio equivale a describir la estructura de protecci\'on del IMSS \citep{bricenoRuiz2011,herreraMontes2024}.
+
+\subsection{Las ramas del r\'egimen obligatorio}
+
+El art\'iculo~11 de la Ley del Seguro Social establece que el r\'egimen obligatorio comprende cinco seguros o ramas: \emph{riesgos de trabajo}; \emph{enfermedades y maternidad}; \emph{invalidez y vida}; \emph{retiro, cesant\'ia en edad avanzada y vejez}; y \emph{guarder\'ias y prestaciones sociales} \citep{lss2026}. Estas cinco ramas son las que el cuadro sin\'optico desarrolla; su lectura completa aparece en la gu\'ia posterior al diagrama.
+
+\clearpage
+\subsection{Cuadro sin\'optico de las ramas del r\'egimen obligatorio}
+
+El cuadro sin\'optico se lee de arriba hacia abajo: el r\'egimen obligatorio como \textbf{concepto ra\'iz}, sus cinco \textbf{ramas} y, bajo cada una, la \textbf{contingencia protegida} y el \textbf{fundamento legal} correspondiente. Las flechas continuas expresan la jerarqu\'ia ---de qu\'e se compone cada nivel---, mientras que las flechas discontinuas se\~nalan relaciones cruzadas entre ramas que comparten l\'ogica de protecci\'on.
+
+\begin{landscape}
+\begin{figure}[H]
+  \centering
+  \resizebox{\linewidth}{!}{%
+    \begin{tikzpicture}[
+      nodo/.style={
+        rectangle, draw=unadmGreenDark, rounded corners=2pt,
+        align=center, text width=3.0cm, minimum height=8mm,
+        inner sep=3pt, fill=unadmRowAlt
+      },
+      rama/.style={nodo, text width=3.05cm, fill=unadmGreen!22, font=\bfseries},
+      raiz/.style={nodo, text width=4.6cm, fill=unadmGreenDark, text=white, font=\bfseries},
+      enlace/.style={-{Stealth[length=2mm]}, thick, draw=unadmGreenDark},
+      cruz/.style={-{Stealth[length=2mm]}, dashed, thick, draw=unadmGold},
+      etiqueta/.style={font=\scriptsize, align=center, fill=white, inner sep=1pt}
+    ]
+      \node[raiz] (r) at (0,0.4) {R\'egimen obligatorio del IMSS\\(art.~11 LSS)};
+
+      \node[rama] (a) at (-10.0,-2.8) {1. Riesgos de trabajo};
+      \node[rama] (b) at (-5.0,-2.8) {2. Enfermedades y maternidad};
+      \node[rama] (c) at (0,-2.8) {3. Invalidez y vida};
+      \node[rama] (d) at (5.0,-2.8) {4. Retiro, cesant\'ia en edad avanzada y vejez};
+      \node[rama] (e) at (10.0,-2.8) {5. Guarder\'ias y prestaciones sociales};
+
+      \node[nodo, below=0.7cm of a] (a1) {Accidentes y enfermedades por el trabajo (arts.~41--42)};
+      \node[nodo, below=0.5cm of a1] (a2) {Prestaciones m\'edicas, subsidios, pensiones por incapacidad};
+      \node[nodo, below=0.7cm of b] (b1) {Enfermedad no profesional y maternidad (arts.~84, 96, 101)};
+      \node[nodo, below=0.5cm of b1] (b2) {Atenci\'on m\'edica y subsidios en dinero};
+      \node[nodo, below=0.7cm of c] (c1) {Invalidez y muerte del asegurado (arts.~112, 120)};
+      \node[nodo, below=0.5cm of c1] (c2) {Pensi\'on temporal o definitiva y de sobrevivencia};
+      \node[nodo, below=0.7cm of d] (d1) {Retiro, cesant\'ia y vejez (arts.~152, 154, 161--162, 167)};
+      \node[nodo, below=0.5cm of d1] (d2) {Pensi\'on por cuenta individual, asistencia m\'edica};
+      \node[nodo, below=0.7cm of e] (e1) {Cuidado de la infancia y bienestar (arts.~201, 205, 209--210)};
+      \node[nodo, below=0.5cm of e1] (e2) {Servicio de guarder\'ia y programas sociales};
+
+      \draw[enlace] (r) -- node[etiqueta, above, sloped] {comprende} (a);
+      \draw[enlace] (r) -- node[etiqueta, above, sloped] {comprende} (b);
+      \draw[enlace] (r) -- node[etiqueta, right] {comprende} (c);
+      \draw[enlace] (r) -- node[etiqueta, above, sloped] {comprende} (d);
+      \draw[enlace] (r) -- node[etiqueta, above, sloped] {comprende} (e);
+
+      \draw[enlace] (a) -- node[etiqueta, right] {protege} (a1);
+      \draw[enlace] (a1) -- node[etiqueta, right] {otorga} (a2);
+      \draw[enlace] (b) -- node[etiqueta, right] {protege} (b1);
+      \draw[enlace] (b1) -- node[etiqueta, right] {otorga} (b2);
+      \draw[enlace] (c) -- node[etiqueta, right] {protege} (c1);
+      \draw[enlace] (c1) -- node[etiqueta, right] {otorga} (c2);
+      \draw[enlace] (d) -- node[etiqueta, right] {protege} (d1);
+      \draw[enlace] (d1) -- node[etiqueta, right] {otorga} (d2);
+      \draw[enlace] (e) -- node[etiqueta, right] {protege} (e1);
+      \draw[enlace] (e1) -- node[etiqueta, right] {otorga} (e2);
+
+      \draw[cruz] (a2) to[bend right=16] node[etiqueta, below] {comparte prestaci\'on m\'edica con} (b2);
+      \draw[cruz] (c2) to[bend right=16] node[etiqueta, below] {enlaza pensi\'on con} (d2);
+    \end{tikzpicture}%
+  }
+  \caption{Cuadro sin\'optico de las ramas del r\'egimen obligatorio del IMSS. Elaboraci\'on propia con base en la Ley del Seguro Social, art.~11 y concordantes \citep{lss2026}, y en \citet{bricenoRuiz2011}.}
+  \label{fig:ramas-imss}
+\end{figure}
+\end{landscape}
+
+\subsection{Contenido y sustento legal de cada rama}
+
+La lectura del cuadro se completa precisando, rama por rama, qu\'e contingencia cubre, qu\'e prestaciones otorga y en qu\'e disposiciones de la Ley del Seguro Social se sustenta:
+
+\begin{itemize}
+  \item \textbf{Riesgos de trabajo.} Protege los accidentes y enfermedades a que est\'an expuestas las personas trabajadoras en ejercicio o con motivo del trabajo; otorga atenci\'on m\'edica, subsidios y pensiones por incapacidad. Para precisar el alcance de esta rama y de sus prestaciones, deben consultarse los art\'iculos~41 y 42 de la LSS \citep{lss2026}.
+  \item \textbf{Enfermedades y maternidad.} Ampara la enfermedad no profesional y la maternidad de la persona asegurada y sus beneficiarios; otorga asistencia m\'edica y subsidios en dinero durante la incapacidad y el periodo de parto. Se sustenta en los art\'iculos~84, 96 y 101 de la LSS \citep{lss2026}.
+  \item \textbf{Invalidez y vida.} Cubre la invalidez y la muerte del asegurado o del pensionado por invalidez; otorga pensi\'on temporal o definitiva y seguro de sobrevivencia. Se sustenta en los art\'iculos~112 y 120 de la LSS \citep{lss2026}.
+  \item \textbf{Retiro, cesant\'ia en edad avanzada y vejez.} Protege el retiro, la privaci\'on de trabajo remunerado a partir de los sesenta a\~nos y la vejez; otorga pensi\'on con cargo a la cuenta individual, asistencia m\'edica y asignaciones. Se sustenta en los art\'iculos~152, 154, 161, 162 y 167 de la LSS \citep{lss2026}.
+  \item \textbf{Guarder\'ias y prestaciones sociales.} Cubre el cuidado de las hijas e hijos en la primera infancia durante la jornada laboral y el bienestar general de la poblaci\'on derechohabiente; otorga el servicio de guarder\'ia y programas de prestaciones sociales institucionales. Se sustenta en los art\'iculos~201, 205, 209 y 210 de la LSS \citep{lss2026}.
+\end{itemize}
+
+Estas cinco ramas confirman que el r\'egimen obligatorio no es un seguro \'unico, sino un sistema integrado de protecciones cuya coherencia proviene de la ley: cada rama delimita una contingencia, la vincula con prestaciones determinadas y las sostiene con un fundamento normativo verificable \citep{bricenoRuiz2011,herreraMontes2024,stpsGuiaPrevisional}.
+
+\clearpage
+\section{Conclusi\'on}
+
+El cuadro sin\'optico muestra que el r\'egimen obligatorio del IMSS se organiza en cinco ramas ---riesgos de trabajo; enfermedades y maternidad; invalidez y vida; retiro, cesant\'ia en edad avanzada y vejez; y guarder\'ias y prestaciones sociales---, tal como lo dispone el art\'iculo~11 de la Ley del Seguro Social. Cada rama responde a una l\'ogica com\'un: identificar una contingencia social, asignarle prestaciones en especie y en dinero, y sujetarla a un fundamento legal que la vuelve exigible \citep{lss2026}.
+
+A mi juicio, jerarquizar la informaci\'on de esta manera tiene una utilidad pr\'actica directa: frente a un caso concreto, permite ubicar con rapidez la rama aplicable y, a partir de ella, la prestaci\'on que corresponde y la norma que la respalda. Considero que este orden ---del concepto ra\'iz a la contingencia y de la contingencia a la prestaci\'on--- es lo que convierte al r\'egimen obligatorio en un instrumento efectivo del derecho a la seguridad social, y no en una simple enumeraci\'on de seguros. Esta lectura se construy\'o con criterios claros: concepto de rama, listado completo, contenido de cada una y sustento legal verificable en la ley.\footnote{Declaraci\'on de uso de inteligencia artificial: conforme a los Lineamientos para el uso \'etico y responsable de la IA de la UnADM, se emple\'o asistencia de inteligencia artificial para organizar el cuadro sin\'optico y depurar la redacci\'on. La selecci\'on de fuentes, la verificaci\'on de los art\'iculos de la Ley del Seguro Social y la postura fueron confirmadas por el autor; la IA no sustituy\'o su criterio acad\'emico.}
+
+\clearpage
+\nocite{lss2026,bricenoRuiz2011,ramirezChavero2009,herreraMontes2024,stpsGuiaPrevisional,cpeum2026}
+\bibliography{derecho-a-la-seguridad-social}
+
+\end{document}

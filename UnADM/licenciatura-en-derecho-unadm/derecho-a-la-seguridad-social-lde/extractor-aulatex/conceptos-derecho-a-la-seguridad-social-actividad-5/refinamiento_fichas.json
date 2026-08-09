@@ -1,0 +1,1014 @@
+{
+  "Derecho a la Seguridad Social": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición técnica completa (elementos: disponibilidad, riesgos y contingencias cubiertas, nivel suficiente, accesibilidad) conforme a la Observación General núm. 19 del Comité DESC",
+            "Atribución doctrinal: autores o instituciones (OIT, Comité DESC, doctrina de seguridad social) que formulan y sostienen el concepto",
+            "Ejemplo o aplicación concreta desarrollada (sentencia de la SCJN o de la Corte IDH con hechos y criterio, no solo mención genérica)",
+            "Crítica o límite: progresividad, disponibilidad de recursos, fragmentación entre régimen contributivo y no contributivo, exclusión del trabajo informal y de las labores de cuidado"
+          ],
+          "consultas": [
+            "Observación General 19 Comité DESC elementos del derecho a la seguridad social: disponibilidad, riesgos cubiertos, suficiencia y accesibilidad",
+            "críticas y límites al derecho a la seguridad social: progresividad, recursos disponibles, cobertura del trabajo informal y régimen no contributivo",
+            "sentencia SCJN o Corte IDH sobre seguridad social: pensión, guarderías o viudez en concubinato, criterio y argumentación"
+          ],
+          "nota": "Las citas aportan una base normativa sólida (PIDESC art. 9, equivalencia con 'protección social' según OIT y Comité DESC) y una definición mínima, pero son mayoritariamente índices o pasajes contextuales de una sola obra. Falta el desarrollo de los elementos constitutivos del derecho, una atribución doctrinal explícita, un caso aplicado con ratio decidendi y, sobre todo, el apartado crítico. Se recomienda una segunda ronda de recuperación."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Observación General 19 Comité DESC elementos del derecho a la seguridad social: disponibilidad, riesgos cubiertos, suficiencia y accesibilidad",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites al derecho a la seguridad social: progresividad, recursos disponibles, cobertura del trabajo informal y régimen no contributivo",
+            "hits": 4
+          },
+          {
+            "consulta": "sentencia SCJN o Corte IDH sobre seguridad social: pensión, guarderías o viudez en concubinato, criterio y argumentación",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 18,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición doctrinal atribuida a un autor o al Comité DESC (Observación General núm. 19) con sus elementos constitutivos: riesgos y contingencias cubiertas, nivel suficiente, accesibilidad",
+            "Postura doctrinal identificable (autor y obra) sobre la naturaleza y principios del derecho a la seguridad social (universalidad, solidaridad, progresividad)",
+            "Ejemplo jurisprudencial desarrollado (criterio concreto de la SCJN o de la Corte IDH, con hechos y ratio) más allá de la mención genérica",
+            "Críticas y límites: exclusión de trabajadores informales por el modelo contributivo, sesgo de género en el reconocimiento del trabajo de cuidados, restricción de 'disponibilidad de recursos' y justiciabilidad de los DESC"
+          ],
+          "consultas": [
+            "Observación General 19 Comité DESC elementos del derecho a la seguridad social: disponibilidad, riesgos e imprevistos, nivel suficiente, accesibilidad y asequibilidad",
+            "críticas al modelo contributivo de seguridad social: exclusión de trabajo informal, sesgo de género en cuidados y cobertura no contributiva",
+            "sentencia SCJN o Corte IDH (caso Muelle Flores / pensiones) sobre justiciabilidad y progresividad del derecho a la seguridad social"
+          ],
+          "nota": "Las citas recuperadas son mayoritariamente fragmentos de índice o de encuadre normativo (PIDESC art. 9, sinonimia con 'protección social'), útiles para fundamento pero insuficientes para una definición analítica con elementos, una posición doctrinal atribuida y, sobre todo, para el apartado de crítica o límites, que está ausente. Se recomienda una ronda adicional dirigida a la Observación General núm. 19, a jurisprudencia concreta y a la literatura crítica sobre cobertura contributiva y cuidados."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Observación General 19 Comité DESC elementos del derecho a la seguridad social: disponibilidad, riesgos e imprevistos, nivel suficiente, accesibilidad y asequibilidad",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al modelo contributivo de seguridad social: exclusión de trabajo informal, sesgo de género en cuidados y cobertura no contributiva",
+            "hits": 4
+          },
+          {
+            "consulta": "sentencia SCJN o Corte IDH (caso Muelle Flores / pensiones) sobre justiciabilidad y progresividad del derecho a la seguridad social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 25
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 25
+  },
+  "Instituto Mexicano del Seguro Social (IMSS)": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Fundamento normativo preciso: artículos 5 y 251 de la Ley del Seguro Social (naturaleza jurídica, organismo fiscal autónomo, atribuciones) y anclaje constitucional en el artículo 123, apartado A, fracción XXIX",
+            "Definición formal y completa de sus fines legales (art. 2 LSS: garantizar el derecho a la salud, asistencia médica, protección de medios de subsistencia y servicios sociales)",
+            "Estructura orgánica y régimen tripartito (Asamblea General, Consejo Técnico, Comisión de Vigilancia, Dirección General)",
+            "Crítica o límites: crisis financiera y actuarial del IMSS, cobertura limitada frente a la informalidad, debates sobre la reforma de 1997 y el paso al régimen de cuentas individuales"
+          ],
+          "consultas": [
+            "artículo 5 y 251 Ley del Seguro Social IMSS organismo fiscal autónomo naturaleza jurídica atribuciones",
+            "crisis financiera y actuarial del IMSS críticas cobertura informalidad reforma 1997 pensiones",
+            "estructura orgánica IMSS Asamblea General Consejo Técnico Comisión de Vigilancia composición tripartita"
+          ],
+          "nota": "La ficha tiene una definición institucional básica (organismo público descentralizado con personalidad y patrimonio propios, creado en 1943), referencia autoral (García Téllez) y un caso de aplicación (incorporación de personas trabajadoras del hogar). Sin embargo, las citas restantes son marginales (subcuentas, reglamento interior) y no aportan el fundamento legal-constitucional ni una valoración crítica. Se requiere una segunda ronda enfocada en el marco normativo (LSS arts. 2, 4, 5, 251; art. 123-A-XXIX constitucional) y en el debate sobre sostenibilidad financiera y cobertura."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "artículo 5 y 251 Ley del Seguro Social IMSS organismo fiscal autónomo naturaleza jurídica atribuciones",
+            "hits": 4
+          },
+          {
+            "consulta": "crisis financiera y actuarial del IMSS críticas cobertura informalidad reforma 1997 pensiones",
+            "hits": 4
+          },
+          {
+            "consulta": "estructura orgánica IMSS Asamblea General Consejo Técnico Comisión de Vigilancia composición tripartita",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Fundamento normativo expreso: artículo 123 apartado A fracción XXIX constitucional y artículos 4, 5 y 5-A de la Ley del Seguro Social que definen al IMSS como organismo fiscal autónomo y su carácter de servicio público de carácter nacional",
+            "Atribuciones y estructura orgánica sustantiva (Asamblea General, Consejo Técnico, Dirección General) más allá de referencias transitorias del reglamento interior",
+            "Crítica o límites: sostenibilidad financiera, déficit de reservas, cobertura limitada a trabajadores formales, informalidad y reformas 1995/1997 y 2020-2021 (subcontratación, pensiones)",
+            "Doctrina que problematice el modelo bismarckiano contributivo del IMSS frente al derecho universal a la seguridad social"
+          ],
+          "consultas": [
+            "artículo 5 Ley del Seguro Social IMSS organismo fiscal autónomo servicio público nacional artículo 123 apartado A fracción XXIX",
+            "crítica sostenibilidad financiera IMSS reforma 1995 1997 pensiones cobertura informalidad límites",
+            "estructura orgánica IMSS Asamblea General Consejo Técnico Comisión de Vigilancia Dirección General atribuciones"
+          ],
+          "nota": "La ficha cuenta con una definición institucional aceptable (organismo público descentralizado, creado en 1943), autor histórico (Ignacio García Téllez) y un ejemplo de aplicación (incorporación de personas trabajadoras del hogar). Sin embargo, el fundamento jurídico aparece solo de forma incidental (artículo 251 y disposiciones transitorias) sin la base constitucional ni la definición legal del artículo 5 LSS, y no hay ninguna cita crítica sobre límites, financiamiento o cobertura. Se requiere una ronda adicional de búsqueda."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "artículo 5 Ley del Seguro Social IMSS organismo fiscal autónomo servicio público nacional artículo 123 apartado A fracción XXIX",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica sostenibilidad financiera IMSS reforma 1995 1997 pensiones cobertura informalidad límites",
+            "hits": 4
+          },
+          {
+            "consulta": "estructura orgánica IMSS Asamblea General Consejo Técnico Comisión de Vigilancia Dirección General atribuciones",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  },
+  "Naturaleza jurídica del IMSS": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición expresa del IMSS como organismo público descentralizado con personalidad jurídica y patrimonio propios",
+            "Fundamento normativo: artículo 5 de la Ley del Seguro Social, artículo 123 apartado A fracción XXIX constitucional y su carácter de organismo fiscal autónomo (art. 271 LSS)",
+            "Doctrina específica sobre la naturaleza descentralizada y de administración tripartita del Instituto (no solo sobre la naturaleza de las cuotas)",
+            "Ejemplo o aplicación concreta: ejercicio de facultades fiscales autónomas, determinación y liquidación de cuotas, actos de autoridad del IMSS",
+            "Crítica o límite: tensiones entre su carácter de asegurador público y de autoridad fiscal, autonomía limitada frente al Ejecutivo, debate sobre su régimen jurídico mixto"
+          ],
+          "consultas": [
+            "IMSS organismo público descentralizado personalidad jurídica y patrimonio propios artículo 5 Ley del Seguro Social",
+            "IMSS organismo fiscal autónomo facultades de determinación y cobro de cuotas artículo 271",
+            "críticas a la autonomía del IMSS administración tripartita naturaleza mixta seguro social Estado"
+          ],
+          "nota": "Las citas recuperadas tienen similitud muy baja (máx. 0.18) y ninguna aborda directamente la naturaleza jurídica del Instituto como ente público; se desvían hacia la naturaleza jurídica de las cuotas y de los DESC. Solo se identifica un autor de referencia (Briceño Ruiz) sin desarrollo doctrinal aplicable. Se requiere una segunda ronda enfocada en el marco normativo del Instituto y en su doble carácter de asegurador y autoridad fiscal."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "IMSS organismo público descentralizado personalidad jurídica y patrimonio propios artículo 5 Ley del Seguro Social",
+            "hits": 4
+          },
+          {
+            "consulta": "IMSS organismo fiscal autónomo facultades de determinación y cobro de cuotas artículo 271",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas a la autonomía del IMSS administración tripartita naturaleza mixta seguro social Estado",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 18,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": true
+          },
+          "faltantes": [
+            "Ejemplo o aplicación concreta de la naturaleza jurídica: cómo se materializa el carácter de organismo fiscal autónomo (determinación, liquidación y cobro de cuotas obrero-patronales, PAE, créditos fiscales)",
+            "Descripción operativa de la integración tripartita y órganos de gobierno (Asamblea General, Consejo Técnico, Dirección General) como expresión de la descentralización",
+            "Profundizar el límite/crítica: alcance real de la 'autonomía de gestión y técnica' frente a la sectorización y control presupuestal del Ejecutivo federal; criterios jurisprudenciales sobre su naturaleza"
+          ],
+          "consultas": [
+            "IMSS organismo fiscal autónomo facultades determinación y cobro de cuotas obrero-patronales procedimiento administrativo de ejecución",
+            "órganos de gobierno del IMSS Asamblea General Consejo Técnico Dirección General integración tripartita artículos 257-268 Ley del Seguro Social",
+            "límites de la autonomía de gestión del IMSS sectorización control presupuestal crítica doctrinal descentralización"
+          ],
+          "nota": "La ficha tiene sólida definición legal (organismo público descentralizado, personalidad y patrimonio propios, integración tripartita), fundamento normativo expreso (arts. 5 y 270 LSS), respaldo doctrinal (Briceño Ruiz, Cotonieto Martínez) y un apunte crítico sobre la exclusión de empresas privadas en la administración de recursos. Falta principalmente el componente de aplicación práctica que ilustre la doble naturaleza (descentralizado + fiscal autónomo) y una discusión más fina de los límites reales de su autonomía."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "IMSS organismo fiscal autónomo facultades determinación y cobro de cuotas obrero-patronales procedimiento administrativo de ejecución",
+            "hits": 4
+          },
+          {
+            "consulta": "órganos de gobierno del IMSS Asamblea General Consejo Técnico Dirección General integración tripartita artículos 257-268 Ley del Seguro Social",
+            "hits": 4
+          },
+          {
+            "consulta": "límites de la autonomía de gestión del IMSS sectorización control presupuestal crítica doctrinal descentralización",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "Ley Federal del Trabajo (LFT)": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición y naturaleza jurídica de la Ley Federal del Trabajo como ley reglamentaria del artículo 123 apartado A constitucional",
+            "Ámbito de aplicación, estructura y principios rectores (trabajo digno, irrenunciabilidad de derechos, tutela del trabajador)",
+            "Referencia doctrinal expresa (autor que la conceptualiza: p. ej. De la Cueva, De Buen, Briceño Ruiz) sobre su carácter de orden público",
+            "Antecedentes y reformas relevantes (1931, 1970, 1980, 2012, 2019 justicia laboral, 2021 subcontratación) más allá de la mención de 1931",
+            "Crítica o límites: tensiones con la seguridad social, eficacia real, informalidad, sobrerregulación o rezago frente a nuevas formas de trabajo"
+          ],
+          "consultas": [
+            "Ley Federal del Trabajo ley reglamentaria artículo 123 apartado A concepto naturaleza y ámbito de aplicación normas de orden público",
+            "principios de la Ley Federal del Trabajo irrenunciabilidad de derechos trabajo digno estabilidad en el empleo doctrina laboral mexicana",
+            "reformas y críticas a la Ley Federal del Trabajo 1931 1970 2012 subcontratación límites y relación con la seguridad social"
+          ],
+          "nota": "Las cinco citas provienen de una sola obra de seguridad social y mencionan la LFT solo de forma incidental (definición de salario art. 82, indemnizaciones, régimen laboral del IMSS). No existe una definición del ordenamiento en sí, ni autoría doctrinal, ni valoración crítica; la similitud es baja (≈0.21-0.23), lo que sugiere que el corpus actual no aborda la LFT como concepto central. Se requiere nueva búsqueda dirigida a derecho laboral sustantivo."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Ley Federal del Trabajo ley reglamentaria artículo 123 apartado A concepto naturaleza y ámbito de aplicación normas de orden público",
+            "hits": 4
+          },
+          {
+            "consulta": "principios de la Ley Federal del Trabajo irrenunciabilidad de derechos trabajo digno estabilidad en el empleo doctrina laboral mexicana",
+            "hits": 4
+          },
+          {
+            "consulta": "reformas y críticas a la Ley Federal del Trabajo 1931 1970 2012 subcontratación límites y relación con la seguridad social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 18,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición propia de la Ley Federal del Trabajo como ley reglamentaria del apartado A del art. 123 constitucional, su ámbito de aplicación (federal, observancia general) y objeto (equilibrio entre factores de la producción, trabajo digno)",
+            "Referencia doctrinal/autoral: tratadistas laborales (De la Cueva, Trueba Urbina, Briceño Ruiz) que expliquen su naturaleza tutelar y su carácter de derecho social irrenunciable",
+            "Trayectoria normativa: LFT de 1931, la de 1970 y las reformas de 1980 (procesal), 2012 (flexibilización) y 2019 (justicia laboral, libertad sindical)",
+            "Crítica o límites: tensiones entre flexibilización y tutela, ineficacia frente a informalidad/outsourcing, límites de su aplicación a trabajadores del apartado B y a regímenes especiales"
+          ],
+          "consultas": [
+            "Ley Federal del Trabajo ley reglamentaria apartado A artículo 123 constitucional ámbito de aplicación y principios tutelares",
+            "reformas a la Ley Federal del Trabajo 1970 2012 2019 justicia laboral outsourcing críticas",
+            "relación entre Ley Federal del Trabajo y Ley del Seguro Social: salario base de cotización, riesgos de trabajo e indemnizaciones"
+          ],
+          "nota": "Las citas provienen todas de una sola obra de seguridad social y mencionan la LFT solo de forma instrumental (remisión para definir salario, indemnizaciones y relación laboral del IMSS), con similitudes bajas (~0.21-0.23). Falta el núcleo conceptual: qué es la LFT, su fundamento constitucional explícito, respaldo doctrinal y valoración crítica. Se recomienda una nueva ronda con fuentes de derecho del trabajo, no solo de seguridad social."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Ley Federal del Trabajo ley reglamentaria apartado A artículo 123 constitucional ámbito de aplicación y principios tutelares",
+            "hits": 4
+          },
+          {
+            "consulta": "reformas a la Ley Federal del Trabajo 1970 2012 2019 justicia laboral outsourcing críticas",
+            "hits": 4
+          },
+          {
+            "consulta": "relación entre Ley Federal del Trabajo y Ley del Seguro Social: salario base de cotización, riesgos de trabajo e indemnizaciones",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 26
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 26
+  },
+  "Leyes del Seguro Social de 1973 y 1997": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición y caracterización propia de cada ordenamiento: la LSS de 1973 (régimen solidario de reparto, pensiones con salario promedio y semanas de cotización) frente a la LSS de 1997 (capitalización individual, AFORE, cuentas individuales)",
+            "Fecha de expedición, entrada en vigor y ámbito de aplicación de cada ley (1973 vigente desde 1973; LSS 1997 en vigor desde el 1 de julio de 1997)",
+            "Comparación estructural de ramos de seguro y requisitos de pensión (semanas cotizadas: 500 en 1973 vs 1250 en 1997)",
+            "Ejemplo o aplicación práctica: régimen de transición y derecho de opción del artículo Tercero Transitorio para asegurados inscritos antes del 1 de julio de 1997",
+            "Crítica doctrinal sistematizada sobre la privatización del sistema pensionario y la pérdida del principio de solidaridad",
+            "Corrección de la referencia confusa a la 'ley de 1977' que aparece en las citas recuperadas"
+          ],
+          "consultas": [
+            "diferencias entre la Ley del Seguro Social de 1973 y la de 1997 régimen de reparto cuentas individuales AFORE semanas de cotización",
+            "régimen de transición artículo tercero transitorio Ley del Seguro Social 1997 derecho de opción asegurados anteriores al 1 de julio de 1997",
+            "críticas a la reforma de la Ley del Seguro Social de 1997 privatización pensiones pérdida de solidaridad principio de seguridad social"
+          ],
+          "nota": "La evidencia recuperada es marginal y de baja similitud (máx. 0.28): solo aporta menciones incidentales (cooperativas como patrones, solidariohabiencia, interés público, naturaleza del IMSS) y una observación crítica aislada sobre la insuficiencia del monto de la pensión. No hay una definición contrastada de ambos ordenamientos ni la explicación del cambio de modelo pensionario, que es el núcleo del concepto. Además, dos citas hablan de la 'ley de 1977', probable errata o distinto ordenamiento, lo que exige verificación antes de usarlas. Se requiere una segunda ronda de búsqueda dirigida."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "diferencias entre la Ley del Seguro Social de 1973 y la de 1997 régimen de reparto cuentas individuales AFORE semanas de cotización",
+            "hits": 4
+          },
+          {
+            "consulta": "régimen de transición artículo tercero transitorio Ley del Seguro Social 1997 derecho de opción asegurados anteriores al 1 de julio de 1997",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas a la reforma de la Ley del Seguro Social de 1997 privatización pensiones pérdida de solidaridad principio de seguridad social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición y contenido sustantivo de la Ley del Seguro Social de 1973 (régimen de reparto solidario, ramos de aseguramiento, pensión por cesantía y vejez con 500 semanas)",
+            "Definición y contenido de la Ley del Seguro Social de 1997 (vigencia 1 de julio de 1997, cuentas individuales, AFORE, SAR, semanas de cotización requeridas)",
+            "Fundamento constitucional (art. 123 apartado A fracc. XXIX) y exposición de motivos/finalidad de cada ley",
+            "Comparación o régimen de transición entre ambas leyes (derecho de opción del art. Tercero Transitorio, 'Generación de Transición')",
+            "Ejemplo o aplicación práctica: cálculo de pensión bajo Ley 73 vs Ley 97, jurisprudencia relevante",
+            "Crítica doctrinal: privatización de la seguridad social, suficiencia de las pensiones, comisiones de las AFORE, reforma de pensiones 2020",
+            "Las citas recuperadas tienen baja similitud (<0.29) y una contiene un error de fecha ('1977' por 1973/1997)"
+          ],
+          "consultas": [
+            "diferencias entre la Ley del Seguro Social de 1973 régimen de reparto y la Ley de 1997 cuentas individuales AFORE régimen de transición",
+            "artículo tercero transitorio Ley del Seguro Social 1997 derecho de opción pensionarse conforme a la ley derogada de 1973 semanas de cotización",
+            "críticas doctrinales a la reforma de pensiones de 1997 privatización de la seguridad social tasa de reemplazo comisiones AFORE México"
+          ],
+          "nota": "La evidencia recuperada es insuficiente y de baja pertinencia: predominan decretos transitorios y reformas posteriores de la LSS que no explican el contenido, la ratio ni el debate doctrinal de las leyes de 1973 y 1997. Solo hay una mención doctrinal marginal (Briceño Ruiz, p. 36) sobre sujetos obligados, con aparente errata en la fecha. Se requiere una segunda ronda dirigida a la doctrina comparativa entre ambos regímenes, al artículo tercero transitorio y a la crítica sobre el modelo de capitalización individual."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "diferencias entre la Ley del Seguro Social de 1973 régimen de reparto y la Ley de 1997 cuentas individuales AFORE régimen de transición",
+            "hits": 4
+          },
+          {
+            "consulta": "artículo tercero transitorio Ley del Seguro Social 1997 derecho de opción pensionarse conforme a la ley derogada de 1973 semanas de cotización",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas doctrinales a la reforma de pensiones de 1997 privatización de la seguridad social tasa de reemplazo comisiones AFORE México",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 25
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 25
+  },
+  "Rama (del seguro social)": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición técnica de 'rama de aseguramiento' como subdivisión del régimen obligatorio del seguro social, con su objeto de protección y contingencia cubierta",
+            "Fundamento normativo expreso (art. 11 de la Ley del Seguro Social y disposiciones sobre cuotas y prestaciones por rama)",
+            "Autor doctrinal que teorice la clasificación por ramas (Briceño Ruiz, De Buen, De la Cueva, Ruiz Moreno) y la distinga de 'régimen' y 'seguro'",
+            "Ejemplo o aplicación concreta: enumeración de las cinco ramas (riesgos de trabajo; enfermedades y maternidad; invalidez y vida; retiro, cesantía en edad avanzada y vejez; guarderías y prestaciones sociales) y sus prestaciones",
+            "Crítica o límite: insuficiencia financiera de las ramas, fragmentación del sistema, exclusión de trabajadores no asalariados, debate sobre integralidad frente a la seguridad social universal"
+          ],
+          "consultas": [
+            "artículo 11 Ley del Seguro Social régimen obligatorio comprende los seguros de riesgos de trabajo, enfermedades y maternidad, invalidez y vida, retiro cesantía en edad avanzada y vejez, guarderías y prestaciones sociales",
+            "Briceño Ruiz clasificación ramas del seguro social contingencia cubierta diferencia entre régimen, seguro y rama de aseguramiento",
+            "críticas financiamiento por ramas del seguro social cobertura limitada trabajadores no asalariados fragmentación seguridad social mexicana"
+          ],
+          "nota": "Las cinco citas recuperadas tienen similitud muy baja (<0.15) y ninguna aborda el concepto de 'rama' como subdivisión del aseguramiento: dos son encabezados administrativos del DOF sin contenido conceptual, una es un prólogo bibliográfico, otra trata del seguro social en Inglaterra y la última usa 'rama' en sentido de rama del Derecho, no de rama de aseguramiento. La ficha carece de todos los elementos evaluados; se requiere una segunda ronda dirigida al artículo 11 LSS y a la doctrina que sistematiza las ramas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "artículo 11 Ley del Seguro Social régimen obligatorio comprende los seguros de riesgos de trabajo, enfermedades y maternidad, invalidez y vida, retiro cesantía en edad avanzada y vejez, guarderías y prestaciones sociales",
+            "hits": 4
+          },
+          {
+            "consulta": "Briceño Ruiz clasificación ramas del seguro social contingencia cubierta diferencia entre régimen, seguro y rama de aseguramiento",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas financiamiento por ramas del seguro social cobertura limitada trabajadores no asalariados fragmentación seguridad social mexicana",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición expresa de 'rama' o 'ramo de aseguramiento' como unidad de cobertura del seguro social (riesgo protegido + prestaciones + financiamiento propio)",
+            "Fundamento normativo directo: artículo 11 LSS (seguros que comprende el régimen obligatorio) y disposiciones sobre régimen financiero separado por ramo (arts. 25, 71, 106, 147, 168, 211)",
+            "Respaldo doctrinal: tratamiento del término por Briceño Ruiz (seguro, seguro social, régimen del seguro, seguros del seguro social) u otro autor de seguridad social",
+            "Crítica o límite: fragmentación por ramas, subsidios cruzados, insuficiencia financiera de ciertos ramos o tendencia hacia la cobertura integral/universal"
+          ],
+          "consultas": [
+            "artículo 11 Ley del Seguro Social el régimen obligatorio comprende los seguros de riesgos de trabajo enfermedades y maternidad invalidez y vida guarderías retiro",
+            "Briceño Ruiz seguros del seguro social clasificación ramos de aseguramiento concepto de rama riesgo protegido",
+            "régimen financiero de cada ramo de aseguramiento reservas separadas crítica fragmentación seguridad social cobertura integral"
+          ],
+          "nota": "Las citas solo enumeran los seguros del régimen obligatorio y aspectos de recaudación/prescripción; no aportan una definición conceptual de 'rama', su fundamento normativo específico (art. 11 LSS y régimen financiero por ramo), ni voz doctrinal o crítica. Se requiere una tercera ronda con las consultas propuestas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "artículo 11 Ley del Seguro Social el régimen obligatorio comprende los seguros de riesgos de trabajo enfermedades y maternidad invalidez y vida guarderías retiro",
+            "hits": 4
+          },
+          {
+            "consulta": "Briceño Ruiz seguros del seguro social clasificación ramos de aseguramiento concepto de rama riesgo protegido",
+            "hits": 4
+          },
+          {
+            "consulta": "régimen financiero de cada ramo de aseguramiento reservas separadas crítica fragmentación seguridad social cobertura integral",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 26
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 26
+  },
+  "Régimen obligatorio": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición doctrinal y legal del régimen obligatorio del Seguro Social (concepto, naturaleza y carácter forzoso de la afiliación)",
+            "Enumeración de los cinco seguros o ramos que comprende el régimen obligatorio (riesgos de trabajo, enfermedades y maternidad, invalidez y vida, retiro/cesantía y vejez, guarderías y prestaciones sociales) — art. 11 LSS",
+            "Sujetos de aseguramiento del régimen obligatorio (art. 12 LSS) y su distinción frente al régimen voluntario",
+            "Ejemplo o aplicación concreta: obligación patronal de inscripción, alta/baja y consecuencias del incumplimiento",
+            "Fundamento constitucional: art. 123 apartado A fracción XXIX y apartado B fracción XI"
+          ],
+          "consultas": [
+            "definición del régimen obligatorio del seguro social sujetos de aseguramiento artículo 11 y 12 Ley del Seguro Social ramos de seguro",
+            "obligación del patrón de inscribir a los trabajadores al régimen obligatorio plazos altas bajas sanciones por omisión",
+            "diferencia entre régimen obligatorio y régimen voluntario doctrina seguridad social carácter forzoso artículo 123 constitucional"
+          ],
+          "nota": "La evidencia actual gira casi por completo en torno a la continuación voluntaria y a los convenios de incorporación, es decir, aborda el régimen obligatorio solo por contraste o de forma tangencial. Se cuenta con una crítica valiosa de Briceño Ruiz (la incorporación por convenio desnaturaliza el carácter obligatorio) y con anclajes normativos dispersos (arts. 12 LSS, 13 LSS, 200 LISSSTE), pero falta el núcleo de la ficha: definición conceptual, ramos de aseguramiento que lo integran, sujetos comprendidos y un ejemplo de aplicación práctica. Se recomienda una segunda ronda de recuperación centrada en los artículos 11 y 12 de la LSS y en el fundamento constitucional."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición del régimen obligatorio del seguro social sujetos de aseguramiento artículo 11 y 12 Ley del Seguro Social ramos de seguro",
+            "hits": 4
+          },
+          {
+            "consulta": "obligación del patrón de inscribir a los trabajadores al régimen obligatorio plazos altas bajas sanciones por omisión",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia entre régimen obligatorio y régimen voluntario doctrina seguridad social carácter forzoso artículo 123 constitucional",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 17,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición doctrinal y legal del régimen obligatorio como modalidad de aseguramiento del seguro social",
+            "Enumeración de los seguros o ramas que comprende el régimen obligatorio (riesgos de trabajo, enfermedades y maternidad, invalidez y vida, retiro/cesantía y vejez, guarderías y prestaciones sociales)",
+            "Catálogo de sujetos de aseguramiento obligatorio (trabajadores subordinados, socios de sociedades cooperativas, etc.) y su distinción frente al régimen voluntario"
+          ],
+          "consultas": [
+            "artículo 11 Ley del Seguro Social el régimen obligatorio comprende los seguros de riesgos de trabajo, enfermedades y maternidad, invalidez y vida, retiro cesantía en edad avanzada y vejez, guarderías",
+            "artículo 12 Ley del Seguro Social son sujetos de aseguramiento del régimen obligatorio las personas que presten servicio subordinado",
+            "diferencia entre régimen obligatorio y régimen voluntario del seguro social naturaleza jurídica y afiliación forzosa doctrina"
+          ],
+          "nota": "La evidencia actual gira casi por completo alrededor de la continuación voluntaria y de los convenios de incorporación (arts. 13 LSS y 200 LISSSTE), con una crítica valiosa de Briceño Ruiz sobre la desnaturalización del carácter obligatorio. Falta el núcleo de la ficha: la definición del régimen obligatorio, sus ramas de aseguramiento y sus sujetos, que son la base normativa (arts. 11 y 12 LSS; arts. 4 y 5 LISSSTE). Se recomienda una tercera ronda con las consultas propuestas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "artículo 11 Ley del Seguro Social el régimen obligatorio comprende los seguros de riesgos de trabajo, enfermedades y maternidad, invalidez y vida, retiro cesantía en edad avanzada y vejez, guarderías",
+            "hits": 4
+          },
+          {
+            "consulta": "artículo 12 Ley del Seguro Social son sujetos de aseguramiento del régimen obligatorio las personas que presten servicio subordinado",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia entre régimen obligatorio y régimen voluntario del seguro social naturaleza jurídica y afiliación forzosa doctrina",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 23
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 23
+  },
+  "Régimen voluntario": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": true,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Delimitación precisa frente a la 'incorporación voluntaria al régimen obligatorio' (art. 13 LSS) y frente a la continuación voluntaria (art. 218 LSS / art. 200 LISSSTE)",
+            "Requisitos, financiamiento (cuotas íntegras a cargo del asegurado) y causales de terminación del convenio",
+            "Alcance limitado de prestaciones: exclusión de riesgos de trabajo y ausencia de prestaciones en dinero en el seguro de salud para la familia"
+          ],
+          "consultas": [
+            "seguro de salud para la familia artículo 240 241 242 Ley del Seguro Social requisitos cuota anual prestaciones excluidas",
+            "continuación voluntaria en el régimen obligatorio artículo 218 219 220 Ley del Seguro Social terminación del convenio",
+            "críticas régimen voluntario seguridad social financiamiento selección adversa cobertura limitada doctrina"
+          ],
+          "nota": "La ficha ya cuenta con definición legal (art. 6 fr. II LSS), fundamento normativo en LSS y LISSSTE, autoría doctrinal de Briceño Ruiz, ejemplos (seguro de salud para la familia, seguridad social en el campo, continuación voluntaria) y dos líneas críticas: la confusión conceptual entre incorporación voluntaria y régimen obligatorio (p. 137) y la inviabilidad actuarial por la heterogeneidad de sujetos (p. 212). Las consultas sugeridas son de refuerzo para precisar requisitos, financiamiento y límites prestacionales, no para suplir vacíos estructurales."
+        },
+        "consultas_ejecutadas": []
+      }
+    ],
+    "suficiente_final": true,
+    "hits_finales": 8
+  },
+  "Seguro de Riesgos de Trabajo": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición legal del seguro de riesgos de trabajo y del concepto de riesgo de trabajo (accidente y enfermedad de trabajo, arts. 41-43 LSS)",
+            "Catálogo de prestaciones en especie y en dinero (arts. 56, 58 LSS: incapacidad temporal, permanente parcial/total, muerte)",
+            "Definición doctrinal atribuida a autor (Briceño Ruiz u otro tratadista de seguridad social) sobre la naturaleza y fines del ramo",
+            "Detalle de la aplicación práctica: clasificación de empresas, prima de riesgo y siniestralidad (arts. 72-74 LSS)",
+            "Crítica más desarrollada: límites de cobertura, subdeclaración de riesgos, desequilibrio financiero del ramo"
+          ],
+          "consultas": [
+            "definición riesgos de trabajo accidente y enfermedad de trabajo artículo 41 42 43 Ley del Seguro Social",
+            "prestaciones en especie y en dinero seguro de riesgos de trabajo incapacidad permanente parcial total artículo 56 58",
+            "Briceño Ruiz naturaleza y fines del seguro de riesgos de trabajo doctrina crítica cobertura"
+          ],
+          "nota": "La ficha está sesgada al régimen financiero y a referencias incidentales (concurrencia de pensiones, sustitución patronal). Falta el núcleo conceptual: qué es un riesgo de trabajo, qué protege el seguro y qué prestaciones otorga, así como una definición doctrinal con autor identificado. La crítica existe pero solo como diagnóstico financiero institucional; conviene reforzarla con límites jurídicos y de cobertura."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición riesgos de trabajo accidente y enfermedad de trabajo artículo 41 42 43 Ley del Seguro Social",
+            "hits": 4
+          },
+          {
+            "consulta": "prestaciones en especie y en dinero seguro de riesgos de trabajo incapacidad permanente parcial total artículo 56 58",
+            "hits": 4
+          },
+          {
+            "consulta": "Briceño Ruiz naturaleza y fines del seguro de riesgos de trabajo doctrina crítica cobertura",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 17,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición legal de riesgo de trabajo (accidente y enfermedad de trabajo) y del ramo de seguro correspondiente",
+            "Catálogo de prestaciones en especie y en dinero (subsidios, incapacidad temporal, permanente parcial/total, pensión de viudez y orfandad por riesgo de trabajo)",
+            "Mecánica de financiamiento por prima de riesgo y clasificación de empresas (autodeterminación, siniestralidad)",
+            "Crítica doctrinal o límites: subdeclaración de riesgos, desequilibrio financiero, exclusiones de cobertura (estado de embriaguez, riña, dolo)"
+          ],
+          "consultas": [
+            "artículo 41 42 43 Ley del Seguro Social definición riesgo de trabajo accidente y enfermedad de trabajo en trayecto",
+            "prestaciones en especie y en dinero del seguro de riesgos de trabajo artículos 56 58 subsidio incapacidad permanente pensión",
+            "prima de riesgo clasificación de empresas siniestralidad artículos 72 73 74 y exclusiones del artículo 46 críticas Briceño Ruiz"
+          ],
+          "nota": "La ficha está anclada en el régimen financiero y en referencias incidentales (sustitución patronal, concurrencia de pensiones), pero carece del núcleo conceptual: qué es un riesgo de trabajo y qué cubre el seguro. La única fuente doctrinal (Briceño Ruiz) aporta un diagnóstico institucional insuficiente para sostener la crítica. Se requiere una tercera ronda enfocada en definición legal, prestaciones y régimen de primas/exclusiones."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "artículo 41 42 43 Ley del Seguro Social definición riesgo de trabajo accidente y enfermedad de trabajo en trayecto",
+            "hits": 4
+          },
+          {
+            "consulta": "prestaciones en especie y en dinero del seguro de riesgos de trabajo artículos 56 58 subsidio incapacidad permanente pensión",
+            "hits": 4
+          },
+          {
+            "consulta": "prima de riesgo clasificación de empresas siniestralidad artículos 72 73 74 y exclusiones del artículo 46 críticas Briceño Ruiz",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 21
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 21
+  },
+  "Seguro de Invalidez": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición legal precisa del 'estado de invalidez' (art. 119 LSS: imposibilidad de obtener una remuneración superior al 50% de la habitual del último año de trabajo, por enfermedad o accidente no profesionales)",
+            "Requisitos de acceso y prestaciones concretas: semanas de cotización exigidas, pensión temporal/definitiva, asignaciones familiares, ayuda asistencial, asistencia médica",
+            "Ejemplo o aplicación práctica: cálculo de la cuantía de la pensión, dictamen médico del IMSS/ISSSTE, casos de suspensión o revocación de la pensión",
+            "Distinción operativa frente al seguro de riesgos de trabajo (incapacidad permanente) más allá de la nota gramatical"
+          ],
+          "consultas": [
+            "artículo 119 Ley del Seguro Social estado de invalidez cincuenta por ciento remuneración habitual enfermedad no profesional",
+            "requisitos semanas de cotización pensión de invalidez temporal y definitiva cuantía asignaciones familiares ayuda asistencial",
+            "diferencia entre invalidez y riesgo de trabajo incapacidad permanente crítica doctrinal seguridad social mexicana"
+          ],
+          "nota": "La ficha tiene buen anclaje normativo (LSS y LISSSTE) y una crítica doctrinal valiosa de Briceño Ruiz sobre la ubicación sistemática del seguro de invalidez dentro del capítulo de invalidez y vida. Sin embargo, carece del núcleo definitorio legal (el umbral del 50% de la remuneración del art. 119 LSS) y de todo elemento de aplicación práctica (requisitos de cotización, tipos y cuantía de la pensión, dictamen médico). Se recomienda una segunda ronda enfocada en definición legal y prestaciones."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "artículo 119 Ley del Seguro Social estado de invalidez cincuenta por ciento remuneración habitual enfermedad no profesional",
+            "hits": 4
+          },
+          {
+            "consulta": "requisitos semanas de cotización pensión de invalidez temporal y definitiva cuantía asignaciones familiares ayuda asistencial",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia entre invalidez y riesgo de trabajo incapacidad permanente crítica doctrinal seguridad social mexicana",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Crítica doctrinal o límites del seguro de invalidez (rigidez del umbral del 50%, exclusión de riesgos profesionales, suficiencia de la cuantía de la pensión)",
+            "Delimitación conceptual frente a incapacidad permanente por riesgo de trabajo (la mayoría de citas repiten literalmente el art. 119)",
+            "Requisitos y procedimiento: dictamen del IMSS, pensión temporal vs. definitiva, causas de suspensión o revisión del estado de invalidez"
+          ],
+          "consultas": [
+            "críticas al ramo de invalidez y vida cuantía insuficiente pensión reforma Ley del Seguro Social 1997 cuentas individuales",
+            "estado de invalidez dictamen IMSS pensión temporal y definitiva revisión suspensión artículos 120 a 124",
+            "diferencia entre invalidez e incapacidad permanente por riesgo de trabajo doctrina seguridad social"
+          ],
+          "nota": "La ficha tiene definición legal sólida y fundamento normativo (art. 119 LSS) respaldado por doctrina (Briceño Ruiz), además de datos de aplicación (cuantía básica 35%, asignaciones familiares, semanas de cotización según grado). Sin embargo, las citas son en gran medida redundantes entre sí y no aportan valoración crítica ni límites del régimen; conviene una ronda adicional enfocada en crítica doctrinal, delimitación frente a la incapacidad permanente y procedimiento de declaración/revisión de la invalidez."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "críticas al ramo de invalidez y vida cuantía insuficiente pensión reforma Ley del Seguro Social 1997 cuentas individuales",
+            "hits": 4
+          },
+          {
+            "consulta": "estado de invalidez dictamen IMSS pensión temporal y definitiva revisión suspensión artículos 120 a 124",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia entre invalidez e incapacidad permanente por riesgo de trabajo doctrina seguridad social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  },
+  "Seguros de Vejez y Cesantía en Edad Avanzada": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición normativa del seguro de vejez y del seguro de cesantía en edad avanzada (concepto y riesgo cubierto)",
+            "Requisitos de acceso: edad (60 años cesantía / 65 años vejez), semanas de cotización mínimas y privación de trabajo remunerado",
+            "Prestaciones que otorgan ambos ramos (pensión, asistencia médica, asignaciones familiares, ayuda asistencial, aguinaldo)",
+            "Fundamento legal expreso (artículos de la LSS y de la Ley del ISSSTE) y doctrinal del ramo",
+            "Ejemplo o aplicación práctica del cálculo o del otorgamiento de la pensión (renta vitalicia, retiro programado, pensión mínima garantizada)",
+            "Crítica doctrinal específica al modelo de capitalización individual frente al de reparto en estos seguros (tasas de reemplazo, densidad de cotización)"
+          ],
+          "consultas": [
+            "seguro de cesantía en edad avanzada y vejez requisitos 60 años 65 años semanas de cotización pensión LSS",
+            "prestaciones del seguro de vejez: pensión, asistencia médica, asignaciones familiares, ayuda asistencial, renta vitalicia y retiro programado",
+            "críticas al sistema de capitalización individual y pensión mínima garantizada en cesantía en edad avanzada y vejez, tasa de reemplazo"
+          ],
+          "nota": "Las citas recuperadas son fragmentarias y de baja similitud (≈0.24-0.25): se centran en la subcuenta de retiro, cesantía en edad avanzada y vejez y en el diagnóstico financiero del ramo IVCM, pero no definen el concepto ni precisan requisitos, prestaciones ni fundamento normativo puntual. Aunque hay un autor identificable (Briceño Ruiz) y elementos de crítica financiera (desfasamiento y agotamiento de reservas), falta el núcleo conceptual y ejemplos de aplicación. Se recomienda una segunda ronda con las consultas propuestas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "seguro de cesantía en edad avanzada y vejez requisitos 60 años 65 años semanas de cotización pensión LSS",
+            "hits": 4
+          },
+          {
+            "consulta": "prestaciones del seguro de vejez: pensión, asistencia médica, asignaciones familiares, ayuda asistencial, renta vitalicia y retiro programado",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al sistema de capitalización individual y pensión mínima garantizada en cesantía en edad avanzada y vejez, tasa de reemplazo",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 17,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición precisa y diferenciada de cada ramo: qué es el seguro de vejez y qué es el de cesantía en edad avanzada (privación de trabajo remunerado a partir de los 60 años vs. 65 años)",
+            "Requisitos de acceso: edad mínima, semanas de cotización exigidas (arts. 154, 155, 162 LSS) y régimen de conservación/reconocimiento de derechos",
+            "Prestaciones concretas y modalidades de pago (renta vitalicia, retiro programado, pensión garantizada, negativa de pensión y retiro de recursos)",
+            "Ejemplo o aplicación práctica: cálculo de la pensión, monto de las cuotas patronales/obrero/estatales, caso de trabajador que cesa a los 60 años",
+            "Crítica doctrinal específica al modelo de cuentas individuales para vejez y cesantía (tasas de reemplazo bajas, reforma 2020-2021), más allá del desfase financiero de 1999"
+          ],
+          "consultas": [
+            "seguro de cesantía en edad avanzada definición requisitos 60 años semanas de cotización artículo 154 155 Ley del Seguro Social",
+            "seguro de vejez 65 años pensión garantizada renta vitalicia retiro programado ramos de aseguramiento prestaciones",
+            "crítica tasa de reemplazo cuentas individuales AFORE pensión de vejez y cesantía reforma pensiones deficiencias"
+          ],
+          "nota": "La evidencia de ronda 2 es fragmentaria: las citas mencionan el ramo dentro de la subcuenta RCV y remiten a los arts. 161-162, pero ninguna define el riesgo protegido ni distingue vejez (65 años) de cesantía en edad avanzada (60 años), ni enuncia requisitos de semanas cotizadas. El autor (Briceño Ruiz) está identificado y hay un esbozo de crítica financiera (desfase de egresos sobre ingresos, agotamiento de reservas), pero falta ejemplo o aplicación práctica y una crítica actualizada al esquema de capitalización individual. Se recomienda una ronda adicional con las consultas propuestas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "seguro de cesantía en edad avanzada definición requisitos 60 años semanas de cotización artículo 154 155 Ley del Seguro Social",
+            "hits": 4
+          },
+          {
+            "consulta": "seguro de vejez 65 años pensión garantizada renta vitalicia retiro programado ramos de aseguramiento prestaciones",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica tasa de reemplazo cuentas individuales AFORE pensión de vejez y cesantía reforma pensiones deficiencias",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 26
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 26
+  },
+  "Medios de impugnación administrativos y jurisdiccionales": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición doctrinal de medio de impugnación y distinción entre recurso administrativo (sede administrativa) y proceso jurisdiccional (contencioso-administrativo, amparo)",
+            "Autor o fuente doctrinal que sustente la clasificación (p. ej. tratadistas de derecho administrativo o procesal)",
+            "Ejemplo concreto de aplicación: recurso de revisión de la Ley Federal de Procedimiento Administrativo, juicio contencioso administrativo ante el TFJA, juicio de amparo indirecto contra actos de autoridad",
+            "Crítica o límite: principio de definitividad, agotamiento previo de recursos, excepciones, dilación y efectividad del recurso (art. 25 CADH)",
+            "Las citas recuperadas son casi exclusivamente de materia electoral y con similitud muy baja (<0.18), no cubren el eje administrativo-jurisdiccional general"
+          ],
+          "consultas": [
+            "recurso de revisión Ley Federal de Procedimiento Administrativo agotamiento y principio de definitividad amparo",
+            "juicio contencioso administrativo Tribunal Federal de Justicia Administrativa nulidad de actos de autoridad fundamento artículo 73 fracción XXIX-H",
+            "derecho a un recurso efectivo y sencillo artículo 25 Convención Americana garantía de audiencia artículos 14 y 17 constitucionales críticas a su efectividad"
+          ],
+          "nota": "La evidencia actual solo documenta el sistema de medios de impugnación en materia electoral y una mención al procedimiento administrativo municipal (art. 115). Falta el núcleo conceptual: definición, tipología (administrativos vs. jurisdiccionales), respaldo doctrinal, ejemplos procesales concretos y discusión crítica sobre definitividad y efectividad del recurso. Se recomienda una segunda ronda de recuperación con las consultas propuestas y, de ser posible, ampliar el corpus con leyes procedimentales y doctrina administrativa."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "recurso de revisión Ley Federal de Procedimiento Administrativo agotamiento y principio de definitividad amparo",
+            "hits": 4
+          },
+          {
+            "consulta": "juicio contencioso administrativo Tribunal Federal de Justicia Administrativa nulidad de actos de autoridad fundamento artículo 73 fracción XXIX-H",
+            "hits": 4
+          },
+          {
+            "consulta": "derecho a un recurso efectivo y sencillo artículo 25 Convención Americana garantía de audiencia artículos 14 y 17 constitucionales críticas a su efectividad",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición doctrinal y clasificación de los medios de impugnación (recursos administrativos vs. medios jurisdiccionales)",
+            "Elementos y requisitos de procedencia del recurso administrativo (revisión, inconformidad, revocación): plazos, legitimación, efectos",
+            "Atribución doctrinal (autor) que sustente el concepto y su naturaleza jurídica (autotutela administrativa / control de legalidad)",
+            "Crítica o límites: optatividad vs. definitividad, agotamiento previo del recurso, eficacia real como garantía del particular",
+            "Relación con el juicio de amparo y el principio de definitividad como cierre del sistema impugnativo"
+          ],
+          "consultas": [
+            "definición y clasificación de los medios de impugnación en materia administrativa: recurso de revocación, revisión e inconformidad",
+            "principio de definitividad, optatividad del recurso administrativo y procedencia del juicio de nulidad y del amparo",
+            "críticas y límites de los recursos administrativos como control de legalidad: juez y parte, eficacia y tutela judicial efectiva"
+          ],
+          "nota": "Las citas recuperadas son mayoritariamente disposiciones transitorias sobre el Tribunal Federal de Justicia Administrativa y una referencia al sistema de medios de impugnación electoral, por lo que aportan contexto orgánico y un ejemplo (juicio contencioso administrativo regido por la LFPCA), pero no ofrecen definición conceptual, sustento doctrinal atribuible a un autor ni discusión crítica. Se requiere una nueva ronda de búsqueda orientada a doctrina administrativa y a las reglas de procedencia/definitividad."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y clasificación de los medios de impugnación en materia administrativa: recurso de revocación, revisión e inconformidad",
+            "hits": 4
+          },
+          {
+            "consulta": "principio de definitividad, optatividad del recurso administrativo y procedencia del juicio de nulidad y del amparo",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites de los recursos administrativos como control de legalidad: juez y parte, eficacia y tutela judicial efectiva",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 29
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 29
+  }
+}

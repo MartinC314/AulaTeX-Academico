@@ -1,0 +1,1318 @@
+{
+  "Derecho de la Seguridad Social": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición doctrinal del Derecho de la Seguridad Social como rama jurídica autónoma (objeto, sujetos, principios de universalidad, solidaridad, integralidad), distinta del derecho subjetivo a la seguridad social",
+            "Autores de referencia y desarrollo doctrinal/histórico (Beveridge, Bismarck, De Buen, De la Cueva, Ruiz Moreno) sobre el origen y autonomía de la disciplina",
+            "Críticas y límites: sostenibilidad financiera, cobertura fragmentada del modelo contributivo, exclusión del trabajo informal y de las labores de cuidado, progresividad y no regresividad",
+            "Ejemplo normativo o jurisprudencial concreto (artículo 123 constitucional, Ley del Seguro Social, sentencias SCJN, Observación General núm. 19 del Comité DESC) explicado en su alcance"
+          ],
+          "consultas": [
+            "definición y autonomía del derecho de la seguridad social como rama jurídica: objeto, principios de universalidad y solidaridad, doctrina",
+            "origen histórico de la seguridad social: modelo Bismarck y Plan Beveridge, autores y evolución hacia la protección social universal",
+            "críticas y límites del sistema de seguridad social: informalidad, cobertura contributiva, sostenibilidad financiera y principio de no regresividad"
+          ],
+          "nota": "Las citas recuperadas se concentran en el derecho humano a la seguridad social desde el enfoque del DIDH (PIDESC art. 9, Comité DESC, OIT) y aportan definición y fundamento normativo, además de una aplicación general (litigios contributivos ante la SCJN). Sin embargo, no cubren la dimensión de la disciplina jurídica (autonomía, principios, sujetos), carecen de atribución doctrinal a autores específicos y no incluyen ninguna crítica o límite del sistema. Se requiere una segunda ronda orientada a doctrina, historia y análisis crítico."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y autonomía del derecho de la seguridad social como rama jurídica: objeto, principios de universalidad y solidaridad, doctrina",
+            "hits": 4
+          },
+          {
+            "consulta": "origen histórico de la seguridad social: modelo Bismarck y Plan Beveridge, autores y evolución hacia la protección social universal",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del sistema de seguridad social: informalidad, cobertura contributiva, sostenibilidad financiera y principio de no regresividad",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición doctrinal propia del Derecho de la Seguridad Social como rama jurídica autónoma (objeto, principios, sujetos), distinta del 'derecho a la seguridad social' como derecho humano",
+            "Atribución doctrinal: autores de referencia (p. ej. Beveridge, Ruiz Moreno, De Buen, Almansa Pastor) y su caracterización de la disciplina",
+            "Principios estructurantes: universalidad, solidaridad, integralidad, progresividad y no regresividad, con su fuente normativa (Convenio 102 OIT, art. 123 apartado A fracción XXIX CPEUM, Observación General 19 del Comité DESC)",
+            "Ejemplo o aplicación concreta desarrollada: criterio jurisprudencial de la SCJN o de la Corte IDH sobre pensiones, viudez o guarderías con razonamiento del caso",
+            "Crítica o límites: modelo contributivo vs. no contributivo, cobertura informal, sostenibilidad financiera, sesgos de género en el acceso, justiciabilidad de los DESC"
+          ],
+          "consultas": [
+            "principios del derecho de la seguridad social universalidad solidaridad integralidad Convenio 102 OIT y artículo 123 constitucional",
+            "críticas al modelo contributivo de seguridad social cobertura trabajo informal sostenibilidad y sesgo de género",
+            "sentencia SCJN o Corte IDH pensión de viudez o guarderías seguridad social caso concreto razonamiento"
+          ],
+          "nota": "Las citas recuperadas sitúan bien el fundamento normativo internacional (PIDESC art. 9, Comité DESC, OIT) y ofrecen una definición operativa que equipara 'seguridad social' y 'protección social', además de una mención contextual a la litigiosidad ante la SCJN. Sin embargo, la ficha está sesgada hacia la dimensión de derecho humano y no cubre el concepto como rama jurídica (objeto, fuentes, sujetos, principios), carece de atribución doctrinal identificable, no desarrolla un ejemplo o caso aplicado y no incorpora ningún elemento crítico o de límite. Se recomienda una tercera ronda con las consultas propuestas antes de dar por cerrada la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "principios del derecho de la seguridad social universalidad solidaridad integralidad Convenio 102 OIT y artículo 123 constitucional",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al modelo contributivo de seguridad social cobertura trabajo informal sostenibilidad y sesgo de género",
+            "hits": 4
+          },
+          {
+            "consulta": "sentencia SCJN o Corte IDH pensión de viudez o guarderías seguridad social caso concreto razonamiento",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 30
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 30
+  },
+  "seguridad social": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición conceptual de seguridad social (concepto, fines, contingencias cubiertas: enfermedad, vejez, invalidez, desempleo, maternidad, muerte)",
+            "Fundamento normativo: artículo 123 constitucional, artículo 9 del PIDESC, Convenio 102 de la OIT sobre norma mínima de seguridad social, Observación General 19 del Comité DESC",
+            "Distinción entre modelo contributivo (seguro social) y no contributivo (asistencia social / pisos de protección social)",
+            "Postura doctrinal atribuible a un autor identificado (p. ej. Nugent, Belmont Lugo, Ibarra Olguín) sobre la naturaleza y evolución del derecho",
+            "Principios rectores: universalidad, solidaridad, progresividad, no regresividad"
+          ],
+          "consultas": [
+            "definición y concepto de seguridad social principios universalidad solidaridad contingencias cubiertas",
+            "fundamento normativo derecho a la seguridad social artículo 123 constitucional artículo 9 PIDESC Convenio 102 OIT Observación General 19",
+            "diferencia régimen contributivo y no contributivo pensiones no contributivas pisos de protección social críticas al modelo"
+          ],
+          "nota": "La evidencia recuperada aporta contexto crítico valioso (paradoja cuidados-seguridad social, discriminación del trabajo doméstico) y un indicio de aplicación jurisprudencial (litigios ante la SCJN en el modelo contributivo), pero carece del núcleo de la ficha: no hay una definición explícita del concepto ni anclaje normativo internacional o constitucional. Las referencias a autores aparecen solo como notas bibliográficas, sin tesis doctrinal desarrollada. Se recomienda una segunda ronda dirigida a definición, fundamento jurídico y tipología de regímenes."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y concepto de seguridad social principios universalidad solidaridad contingencias cubiertas",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento normativo derecho a la seguridad social artículo 123 constitucional artículo 9 PIDESC Convenio 102 OIT Observación General 19",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencia régimen contributivo y no contributivo pensiones no contributivas pisos de protección social críticas al modelo",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición conceptual explícita de seguridad social (conjunto de medidas de protección frente a contingencias sociales: vejez, enfermedad, desempleo, maternidad, invalidez, muerte)",
+            "Fundamento normativo: artículo 123 constitucional, artículo 9 del PIDESC, artículo 22 de la DUDH, Convenio 102 de la OIT sobre norma mínima de seguridad social",
+            "Distinción entre modelo contributivo y no contributivo / principio de universalidad y solidaridad",
+            "Doctrina de un autor identificado con desarrollo argumental (no solo referencia bibliográfica en nota al pie)",
+            "Criterio jurisprudencial concreto (SCJN o Corte IDH) que precise el contenido del derecho"
+          ],
+          "consultas": [
+            "definición de seguridad social concepto contingencias sociales principios universalidad solidaridad",
+            "fundamento normativo derecho a la seguridad social artículo 123 constitucional artículo 9 PIDESC Convenio 102 OIT",
+            "críticas y límites al sistema de seguridad social cobertura contributiva informalidad sostenibilidad financiera"
+          ],
+          "nota": "La evidencia recuperada es tangencial: aborda sobre todo la dimensión de género y cuidados dentro de la seguridad social, pero no ofrece una definición operativa ni el anclaje normativo del concepto. Los elementos de crítica (paradoja de los cuidados, regímenes discriminatorios para el trabajo del hogar) y de ejemplo (litigios contributivos ante la SCJN, guarderías, pensiones de viudez y orfandad) están razonablemente cubiertos, pero sin definición ni fundamento la ficha queda descompensada. Se recomienda una tercera ronda dirigida a fuentes doctrinales generales y a instrumentos internacionales."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de seguridad social concepto contingencias sociales principios universalidad solidaridad",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento normativo derecho a la seguridad social artículo 123 constitucional artículo 9 PIDESC Convenio 102 OIT",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites al sistema de seguridad social cobertura contributiva informalidad sostenibilidad financiera",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 29
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 29
+  },
+  "Derecho Social": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición conceptual del Derecho Social como rama autónoma del ordenamiento jurídico (objeto, sujetos protegidos, principios rectores)",
+            "Fundamento normativo e histórico: constitucionalismo social (Constitución mexicana de 1917, Weimar 1919), artículos 123 y 4º constitucionales, PIDESC y Protocolo de San Salvador",
+            "Autoría doctrinal: aportes de Mario de la Cueva, Alberto Trueba Urbina, Gustav Radbruch, Georges Gurvitch o Néstor de Buen sobre la teoría del derecho social",
+            "Ejemplo o aplicación concreta: ramas que lo integran (derecho del trabajo, seguridad social, agrario, económico) y casos de exigibilidad judicial de DESC",
+            "Crítica desarrollada más allá del señalamiento de fallas redistributivas: debate sobre su autonomía frente a la dicotomía público/privado y sobre la justiciabilidad de los derechos sociales"
+          ],
+          "consultas": [
+            "definición y características del derecho social como rama autónoma: objeto, sujetos y principios frente al derecho público y privado",
+            "origen del constitucionalismo social artículo 123 Constitución 1917 Mario de la Cueva Trueba Urbina teoría del derecho social",
+            "críticas a la autonomía del derecho social y justiciabilidad de los derechos económicos, sociales y culturales (PIDESC, Protocolo de San Salvador)"
+          ],
+          "nota": "La evidencia recuperada es insuficiente y de baja pertinencia: la mayoría de las citas son referencias bibliográficas o menciones incidentales (nombre de revistas como 'Revista Latinoamericana de Derecho Social'), con similitudes muy bajas (<0.20). Solo la cita de p. 132 aporta un elemento sustantivo —la función redistributiva del derecho social y su incumplimiento práctico—, útil como crítica y como indicio de que la seguridad social es una de sus ramas. Falta por completo el núcleo conceptual: definición, fundamento normativo-histórico, respaldo doctrinal y ejemplos de aplicación. Se recomienda una segunda ronda de búsqueda con las consultas propuestas y, de ser posible, ampliar el corpus a fuentes de teoría general del derecho social y no solo de seguridad social."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y características del derecho social como rama autónoma: objeto, sujetos y principios frente al derecho público y privado",
+            "hits": 4
+          },
+          {
+            "consulta": "origen del constitucionalismo social artículo 123 Constitución 1917 Mario de la Cueva Trueba Urbina teoría del derecho social",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas a la autonomía del derecho social y justiciabilidad de los derechos económicos, sociales y culturales (PIDESC, Protocolo de San Salvador)",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual de 'derecho social' como rama o categoría jurídica (distinción frente a derecho público y privado)",
+            "Autor o corriente doctrinal de referencia (p. ej., constitucionalismo social, Radbruch, Gurvitch, Mendieta y Núñez, De la Cueva)",
+            "Fundamento histórico-dogmático: Constitución de 1917, Weimar, Estado social de derecho",
+            "Crítica o límites: progresividad, justiciabilidad limitada, cláusula de disponibilidad de recursos, objeción contramayoritaria"
+          ],
+          "consultas": [
+            "definición de derecho social como rama autónoma frente al derecho público y privado; constitucionalismo social 1917 Weimar",
+            "justiciabilidad y exigibilidad de los derechos sociales: progresividad, máximo de recursos disponibles y críticas doctrinales",
+            "doctrina del Estado social de derecho: autores y fundamentos teóricos de los derechos económicos, sociales y culturales"
+          ],
+          "nota": "Las citas recuperadas son mayoritariamente enumeraciones de instrumentos normativos (PIDESC, Protocolo de San Salvador) con similitud baja (<0.29); aportan fundamento normativo y ejemplos aplicados (seguridad social, cuidado) pero no una definición conceptual, respaldo doctrinal de autor ni discusión crítica. Se requiere al menos una ronda adicional orientada a doctrina y a los límites de exigibilidad."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de derecho social como rama autónoma frente al derecho público y privado; constitucionalismo social 1917 Weimar",
+            "hits": 4
+          },
+          {
+            "consulta": "justiciabilidad y exigibilidad de los derechos sociales: progresividad, máximo de recursos disponibles y críticas doctrinales",
+            "hits": 4
+          },
+          {
+            "consulta": "doctrina del Estado social de derecho: autores y fundamentos teóricos de los derechos económicos, sociales y culturales",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "Derecho Laboral": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición conceptual del derecho laboral (objeto, sujetos y contenido de la disciplina)",
+            "Fundamento normativo y principios rectores (protector, in dubio pro operario, irrenunciabilidad, estabilidad, artículo 123 constitucional, convenios OIT)",
+            "Referencia doctrinal o autoría teórica (autores clásicos del derecho del trabajo o instrumentos como la Declaración de Filadelfia)",
+            "Ejemplo o aplicación directamente ligada a la definición, no sólo casos derivados (las citas actuales sólo abordan jornada y trabajo doméstico de forma tangencial)",
+            "Crítica o límite propio de la disciplina (crisis del modelo asalariado, informalidad, plataformas digitales), no sólo su omisión respecto de mujeres y trabajadoras del hogar"
+          ],
+          "consultas": [
+            "definición y objeto del derecho del trabajo: relación laboral subordinada, contrato de trabajo y sujetos regulados",
+            "principios del derecho laboral: principio protector, irrenunciabilidad de derechos, estabilidad en el empleo y artículo 123 constitucional / convenios OIT",
+            "críticas y límites del derecho laboral contemporáneo: informalidad, precarización, trabajo en plataformas digitales y crisis del trabajo asalariado clásico"
+          ],
+          "nota": "La evidencia recuperada proviene de una sola fuente centrada en seguridad social y cuidados; las similitudes son bajas (0.16–0.21) y ninguna cita define el derecho laboral ni enuncia sus principios o fundamento normativo. Sólo hay aportes indirectos: un ejemplo histórico (jornada laboral como conquista) y una crítica sesgada hacia la exclusión de trabajadoras domésticas y mujeres. Se requiere al menos una ronda adicional con fuentes doctrinales propias de la disciplina para cubrir definición, fundamento y autoría."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y objeto del derecho del trabajo: relación laboral subordinada, contrato de trabajo y sujetos regulados",
+            "hits": 4
+          },
+          {
+            "consulta": "principios del derecho laboral: principio protector, irrenunciabilidad de derechos, estabilidad en el empleo y artículo 123 constitucional / convenios OIT",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del derecho laboral contemporáneo: informalidad, precarización, trabajo en plataformas digitales y crisis del trabajo asalariado clásico",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual del derecho laboral (objeto, sujetos: trabajador y patrón, relación de trabajo subordinada)",
+            "Fundamento normativo y principios rectores (artículo 123 constitucional, convenios OIT, principio protector, in dubio pro operario, irrenunciabilidad de derechos)",
+            "Doctrina fundacional con autor identificado que defina la disciplina (p. ej. Mario de la Cueva, Néstor de Buen, Alfredo Sánchez-Castañeda)",
+            "Crítica o límite: precarización, informalidad, plataformas digitales, eficacia limitada de la tutela laboral, críticas al modelo tutelar",
+            "Ejemplo o aplicación jurisprudencial concreta (reforma laboral 2019, justicia laboral, despido injustificado)"
+          ],
+          "consultas": [
+            "definición y concepto de derecho del trabajo: normas que rigen la relación entre trabajador y patrón, principio protector e irrenunciabilidad",
+            "artículo 123 constitucional y convenios de la OIT como fundamento del derecho laboral en México",
+            "críticas y límites del derecho laboral: precarización, informalidad, trabajo en plataformas digitales y reforma en materia de justicia laboral"
+          ],
+          "nota": "Las citas recuperadas en esta ronda tienen similitud muy baja (≤0.21) y son tangenciales: abordan seguridad social, maternidad y empleo juvenil más que el derecho laboral como disciplina. Solo la cita sobre estabilidad en el empleo (Carlos Reynoso) aporta contenido sustantivo, y una referencia curricular es ruido bibliográfico sin valor conceptual. Se requiere una nueva ronda dirigida a fuentes doctrinales de derecho del trabajo para obtener definición, fundamento normativo y crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y concepto de derecho del trabajo: normas que rigen la relación entre trabajador y patrón, principio protector e irrenunciabilidad",
+            "hits": 4
+          },
+          {
+            "consulta": "artículo 123 constitucional y convenios de la OIT como fundamento del derecho laboral en México",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del derecho laboral: precarización, informalidad, trabajo en plataformas digitales y reforma en materia de justicia laboral",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "Derecho Agrario": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definición doctrinal del derecho agrario como rama autónoma",
+            "autor o doctrina de referencia (agraristas: Mendieta y Núñez, Chávez Padrón, Ruiz Massieu)",
+            "crítica o límites: autonomía de la rama, reforma de 1992 al artículo 27, tensión con derechos indígenas",
+            "régimen ejidal y comunal, propiedad social y tribunales agrarios como aplicación concreta"
+          ],
+          "consultas": [
+            "definición y objeto del derecho agrario como rama autónoma: propiedad social, ejido y comunidad",
+            "artículo 27 constitucional reforma 1992 propiedad ejidal, dotación de tierras y Ley Agraria",
+            "críticas a la reforma agraria mexicana: tribunales agrarios, certificación PROCEDE y derechos de pueblos indígenas"
+          ],
+          "nota": "Las citas recuperadas tienen similitud muy baja (<0.09) y son en su mayoría irrelevantes (derecho familiar, derechos sociales). Solo el artículo transitorio de 1917 y el precedente sobre comunidades agrarias aportan fundamento normativo y un ejemplo jurisprudencial. Falta por completo la definición conceptual, la doctrina autoral y la discusión crítica. Se requiere al menos una ronda adicional con fuentes especializadas en derecho agrario."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y objeto del derecho agrario como rama autónoma: propiedad social, ejido y comunidad",
+            "hits": 4
+          },
+          {
+            "consulta": "artículo 27 constitucional reforma 1992 propiedad ejidal, dotación de tierras y Ley Agraria",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas a la reforma agraria mexicana: tribunales agrarios, certificación PROCEDE y derechos de pueblos indígenas",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición doctrinal de derecho agrario como rama autónoma (objeto: tierra, actividad agraria, sujetos agrarios)",
+            "Fundamento normativo: artículo 27 constitucional, Ley Agraria, régimen ejidal y comunal",
+            "Autor o doctrina de referencia (agraristas: Mendieta y Núñez, Chávez Padrón, Ruiz Massieu)",
+            "Ejemplo o aplicación: tribunales agrarios, juicio agrario, dotación/restitución de tierras, certificación PROCEDE/RAN",
+            "Crítica o límite: tensión entre propiedad social y mercado de tierras, autonomía disciplinar frente al derecho civil, conflictos con derechos de pueblos indígenas"
+          ],
+          "consultas": [
+            "definición y autonomía del derecho agrario: objeto, sujetos agrarios y propiedad social",
+            "artículo 27 constitucional y Ley Agraria: ejido, comunidad, tribunales agrarios y juicio agrario",
+            "críticas a la reforma agraria de 1992: privatización de la tierra ejidal y límites del derecho agrario mexicano"
+          ],
+          "nota": "Las citas recuperadas no abordan el derecho agrario como concepto; giran en torno a derechos territoriales de pueblos indígenas (útil solo tangencialmente para el art. 27 y la tenencia de la tierra) y una mención incidental a la Ley Agraria en un decreto de reformas. Similitudes muy bajas (<0.20) indican ausencia de fuentes agraristas en el corpus. Se recomienda una tercera ronda con consultas dirigidas a legislación agraria y doctrina especializada; si el corpus no contiene tales fuentes, considerar incorporar la Ley Agraria y manuales de derecho agrario mexicano."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y autonomía del derecho agrario: objeto, sujetos agrarios y propiedad social",
+            "hits": 4
+          },
+          {
+            "consulta": "artículo 27 constitucional y Ley Agraria: ejido, comunidad, tribunales agrarios y juicio agrario",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas a la reforma agraria de 1992: privatización de la tierra ejidal y límites del derecho agrario mexicano",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  },
+  "Contingencias (enfermedad, accidente, maternidad, invalidez, vejez, muerte, cesantía, desempleo)": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición doctrinal de 'contingencia' o 'riesgo social' como hecho futuro e incierto que genera necesidad económica y activa la protección de la seguridad social",
+            "Atribución doctrinal explícita (Briceño Ruiz, De Buen, De la Cueva, Ruiz Moreno) sobre la noción y clasificación de contingencias",
+            "Fundamento internacional: Convenio 102 OIT (norma mínima) y sus nueve ramas de prestaciones, incluida la de desempleo",
+            "Tratamiento específico de cesantía en edad avanzada y del seguro de desempleo (ausencia o insuficiencia en el sistema mexicano)",
+            "Crítica o límite: cobertura parcial, exclusión de trabajadores informales, ausencia de seguro de desempleo pleno, requisitos de semanas de cotización"
+          ],
+          "consultas": [
+            "definición de contingencia o riesgo social en la seguridad social: hecho futuro incierto, estado de necesidad y clasificación doctrinal",
+            "Convenio 102 de la OIT norma mínima de seguridad social nueve ramas: prestaciones de desempleo, vejez, maternidad e invalidez",
+            "cesantía en edad avanzada y seguro de desempleo en México: críticas, cobertura limitada y requisitos de semanas de cotización"
+          ],
+          "nota": "Las citas solo repiten el catálogo constitucional del artículo 123 apartado B fracción XI inciso a) y desarrollan la invalidez conforme al artículo 119 LSS, con similitudes bajas (<0.18). Falta el núcleo conceptual (qué es una contingencia/riesgo social), la voz doctrinal atribuida, el anclaje internacional (OIT C102) y toda dimensión crítica, además de los supuestos de cesantía y desempleo que el concepto enuncia pero la evidencia no cubre. Se requiere una segunda ronda de búsqueda."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de contingencia o riesgo social en la seguridad social: hecho futuro incierto, estado de necesidad y clasificación doctrinal",
+            "hits": 4
+          },
+          {
+            "consulta": "Convenio 102 de la OIT norma mínima de seguridad social nueve ramas: prestaciones de desempleo, vejez, maternidad e invalidez",
+            "hits": 4
+          },
+          {
+            "consulta": "cesantía en edad avanzada y seguro de desempleo en México: críticas, cobertura limitada y requisitos de semanas de cotización",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición doctrinal de 'contingencia' o 'riesgo social' como categoría conceptual (hecho futuro e incierto que genera necesidad económica), distinta de la mera enumeración del Convenio 102 de la OIT",
+            "Clasificación de las contingencias (patológicas, biológicas, económico-sociales; de origen profesional vs. no profesional; previsibles vs. imprevisibles)",
+            "Anclaje en el derecho positivo mexicano: artículo 123 constitucional (apartados A y B) y artículo 11 de la Ley del Seguro Social sobre los ramos de aseguramiento",
+            "Crítica más específica: insuficiencia de la cobertura de desempleo/cesantía en México y contingencias emergentes (cuidados, dependencia, informalidad)"
+          ],
+          "consultas": [
+            "concepto de contingencia social riesgo social definición doctrinal estado de necesidad seguridad social",
+            "artículo 11 Ley del Seguro Social ramos de aseguramiento riesgos de trabajo enfermedades y maternidad invalidez y vida retiro cesantía en edad avanzada y vejez guarderías",
+            "clasificación de las contingencias sociales críticas cobertura del seguro de desempleo en México insuficiencia"
+          ],
+          "nota": "La ficha tiene sólido fundamento normativo internacional (Convenio 102 OIT), autores identificables (Briceño Ruiz, Ibarra Olguín, González Carvallo), un ejemplo concreto (cesantía en edad avanzada bajo la Ley de 1973) y un esbozo de crítica (dependencia del vínculo laboral formal). Falta, sin embargo, la definición conceptual de 'contingencia' como riesgo social generador de estado de necesidad y su clasificación doctrinal, así como el anclaje en el derecho positivo mexicano (art. 123 constitucional y art. 11 LSS). Se recomienda una ronda adicional dirigida a esos vacíos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "concepto de contingencia social riesgo social definición doctrinal estado de necesidad seguridad social",
+            "hits": 4
+          },
+          {
+            "consulta": "artículo 11 Ley del Seguro Social ramos de aseguramiento riesgos de trabajo enfermedades y maternidad invalidez y vida retiro cesantía en edad avanzada y vejez guarderías",
+            "hits": 4
+          },
+          {
+            "consulta": "clasificación de las contingencias sociales críticas cobertura del seguro de desempleo en México insuficiencia",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 30
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 30
+  },
+  "Beneficiarios": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición normativa expresa de 'beneficiario' (concepto legal en la LSS art. 5-A y en la Ley del ISSSTE art. 6), y su distinción respecto de 'derechohabiente', 'asegurado' y 'familiar derechohabiente'",
+            "Desarrollo doctrinal con autor identificable (Briceño Ruiz, De Buen, Ruiz Moreno) sobre la naturaleza jurídica del beneficiario en seguridad social",
+            "Crítica, límites o problemas prácticos: prelación y controversias entre cónyuge y concubina, exclusión de beneficiarios sustitutos, litigios sobre designación, carga probatoria de la dependencia económica"
+          ],
+          "consultas": [
+            "definición legal de beneficiario y derechohabiente artículo 5-A Ley del Seguro Social concepto",
+            "doctrina naturaleza jurídica del beneficiario en seguridad social Briceño Ruiz concepto y clasificación",
+            "controversia entre cónyuge y concubina prelación de beneficiarios pensión por causa de muerte requisitos de dependencia económica"
+          ],
+          "nota": "Las citas aportan base normativa (LSS art. 193, LISSSTE, cuenta individual) y ejemplos de aplicación (beneficiarios sustitutos, desaparición del pensionado), pero carecen de una definición conceptual explícita, de sustento doctrinal atribuible a un autor y de análisis crítico sobre los límites del régimen de beneficiarios. Se requiere una segunda ronda de búsqueda enfocada en definición legal-doctrinal y en conflictos de prelación."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición legal de beneficiario y derechohabiente artículo 5-A Ley del Seguro Social concepto",
+            "hits": 4
+          },
+          {
+            "consulta": "doctrina naturaleza jurídica del beneficiario en seguridad social Briceño Ruiz concepto y clasificación",
+            "hits": 4
+          },
+          {
+            "consulta": "controversia entre cónyuge y concubina prelación de beneficiarios pensión por causa de muerte requisitos de dependencia económica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición doctrinal y legal precisa de 'beneficiario' en seguridad social (distinción entre beneficiario, derechohabiente y asegurado)",
+            "Desarrollo doctrinal atribuible a un autor (Briceño Ruiz u otro): solo se recuperaron portada y una referencia bibliográfica, sin contenido conceptual",
+            "Crítica, límites o problemas de aplicación: controversias sobre concubinato, hijos mayores, dependencia económica, prelación y conflictos entre beneficiarios designados y familiares derechohabientes"
+          ],
+          "consultas": [
+            "definición de beneficiario y derechohabiente en la Ley del Seguro Social: concepto, diferencia con asegurado y requisitos de dependencia económica",
+            "orden de prelación de beneficiarios en pensión por muerte: cónyuge, concubina o concubinario, hijos y ascendientes; requisitos y controversias",
+            "críticas doctrinales y criterios jurisprudenciales sobre la designación de beneficiarios sustitutos y la exclusión de familiares en la cuenta individual"
+          ],
+          "nota": "La ficha tiene anclaje normativo sólido (Ley del ISSSTE, art. 193 LSS y régimen de inembargabilidad) y un caso de aplicación (entrega del saldo de la cuenta individual), pero carece de una definición conceptual explícita, de sustento doctrinal citable (las citas de Briceño Ruiz son paratexto: portada y bibliografía, con similitud baja ~0.21) y de discusión crítica sobre límites. Se requiere una tercera ronda enfocada en definición, doctrina y controversias de prelación."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de beneficiario y derechohabiente en la Ley del Seguro Social: concepto, diferencia con asegurado y requisitos de dependencia económica",
+            "hits": 4
+          },
+          {
+            "consulta": "orden de prelación de beneficiarios en pensión por muerte: cónyuge, concubina o concubinario, hijos y ascendientes; requisitos y controversias",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas doctrinales y criterios jurisprudenciales sobre la designación de beneficiarios sustitutos y la exclusión de familiares en la cuenta individual",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  },
+  "Barreras de acceso a la prestación": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición operativa de 'barrera de acceso a la prestación' (barreras administrativas, económicas, geográficas, documentales, de información y actitudinales)",
+            "Fundamento normativo: artículo 123 y 4o constitucionales, Convenio 102 OIT, PIDESC art. 9 y Observación General 19 del Comité DESC (accesibilidad y asequibilidad como componentes exigibles)",
+            "Criterios jurisprudenciales o de organismos internacionales sobre eliminación de requisitos excesivos (semanas de cotización, condición laboral formal, acreditación documental)",
+            "Distinción entre cobertura legal y cobertura efectiva (brecha de titularidad vs. goce real)",
+            "Límites o contraargumentos: sostenibilidad financiera, focalización, progresividad y disponibilidad de recursos"
+          ],
+          "consultas": [
+            "Observación General 19 Comité DESC seguridad social accesibilidad asequibilidad requisitos razonables acceso a prestaciones",
+            "cobertura legal frente a cobertura efectiva barreras administrativas requisitos de cotización denegación de prestaciones seguridad social",
+            "críticas sostenibilidad financiera focalización progresividad no regresividad límites a la universalización de prestaciones sociales"
+          ],
+          "nota": "La evidencia es marginal: las similitudes son muy bajas (<0.11) y las citas mencionan las barreras de forma incidental (guarderías, jóvenes, discapacidad) sin ofrecer una definición ni un anclaje normativo del concepto. Solo hay material utilizable como ejemplo (segmentación en el acceso a guarderías; barreras vinculadas a la condición laboral en México) y un esbozo de crítica (necesidad de desvincular la seguridad social del empleo asalariado). Se requiere una segunda ronda dirigida a fuentes de derecho internacional de los DESC y a la distinción cobertura legal/efectiva, así como a los límites de exigibilidad."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Observación General 19 Comité DESC seguridad social accesibilidad asequibilidad requisitos razonables acceso a prestaciones",
+            "hits": 4
+          },
+          {
+            "consulta": "cobertura legal frente a cobertura efectiva barreras administrativas requisitos de cotización denegación de prestaciones seguridad social",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas sostenibilidad financiera focalización progresividad no regresividad límites a la universalización de prestaciones sociales",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'barrera de acceso' a una prestación de seguridad social (obstáculos jurídicos, administrativos, económicos, geográficos y de información)",
+            "Autor o doctrina que teorice las barreras de acceso (más allá de la mención genérica a la Observación General 19)",
+            "Ejemplo o aplicación concreta: requisitos de semanas cotizadas, exigencia de documentos, negativa de pensión, criterios jurisprudenciales que remueven obstáculos",
+            "Crítica o límite: tensión entre requisitos de sostenibilidad financiera del sistema y accesibilidad; formalidad laboral como barrera estructural"
+          ],
+          "consultas": [
+            "accesibilidad como elemento del derecho a la seguridad social: barreras administrativas, económicas y de información Observación General 19",
+            "requisitos y obstáculos para acceder a pensión: semanas de cotización, conservación de derechos y negativa del Instituto (criterios jurisprudenciales)",
+            "trabajo informal, exclusión y cobertura limitada de la seguridad social: crítica a los requisitos de acceso a prestaciones"
+          ],
+          "nota": "Las citas recuperadas tienen similitud muy baja (<0.19) y solo rozan el concepto por vía del elemento 'accesibilidad' de la Observación General 19 del Comité DESC. No hay definición operativa de 'barreras de acceso', ni autor que la desarrolle, ni ejemplo concreto (la cita de la Ley del Seguro Social sobre conservación de derechos es tangencial y no está problematizada como barrera), ni discusión crítica. Se requiere una segunda ronda de búsqueda enfocada en accesibilidad, requisitos de elegibilidad y exclusión por informalidad."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "accesibilidad como elemento del derecho a la seguridad social: barreras administrativas, económicas y de información Observación General 19",
+            "hits": 4
+          },
+          {
+            "consulta": "requisitos y obstáculos para acceder a pensión: semanas de cotización, conservación de derechos y negativa del Instituto (criterios jurisprudenciales)",
+            "hits": 4
+          },
+          {
+            "consulta": "trabajo informal, exclusión y cobertura limitada de la seguridad social: crítica a los requisitos de acceso a prestaciones",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "Derechos sociales y obligaciones de hacer / prestaciones positivas del Estado": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Fundamento normativo expreso: artículo 2.1 del PIDESC (progresividad, máximo de los recursos disponibles), artículo 26 de la CADH y artículo 1º constitucional (obligaciones de respetar, proteger, garantizar y promover)",
+            "Atribución doctrinal precisa: autores que sostienen la indivisibilidad e interdependencia y la crítica a la dicotomía derechos negativos/positivos (p. ej. Abramovich y Courtis, Holmes y Sunstein, Alexy, Pisarello)",
+            "Desarrollo de la tipología de obligaciones (respetar/proteger/cumplir) y del contenido mínimo esencial",
+            "Ejemplo jurisprudencial concreto de prestación positiva exigible (salud, vivienda, educación, seguridad social) con identificación del caso y su ratio",
+            "Crítica robusta: objeciones de justiciabilidad, costo fiscal, legitimidad democrática y límites del control judicial de políticas públicas; doctrina de la no regresividad como límite"
+          ],
+          "consultas": [
+            "obligaciones de respetar proteger y garantizar derechos sociales progresividad máximo de recursos disponibles PIDESC artículo 2.1 contenido mínimo esencial",
+            "crítica a la distinción entre derechos civiles negativos y derechos sociales positivos costo de los derechos justiciabilidad Abramovich Courtis Holmes Sunstein",
+            "jurisprudencia derecho a la salud o vivienda prestaciones positivas del Estado remedios estructurales control judicial de políticas públicas prohibición de regresividad"
+          ],
+          "nota": "Las citas recuperadas tienen similitud baja (máx. 0.18) y solo aportan una definición operativa (obligaciones de hacer vs. no hacer) y un apunte crítico a la tipología rígida de derechos. Falta el anclaje normativo internacional y constitucional, la atribución doctrinal expresa y un ejemplo jurisprudencial desarrollado de prestación positiva. Se recomienda una segunda ronda de búsqueda orientada al capítulo de derechos sociales del Curso de derechos humanos (pp. 707-760) y al texto sobre seguridad social."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "obligaciones de respetar proteger y garantizar derechos sociales progresividad máximo de recursos disponibles PIDESC artículo 2.1 contenido mínimo esencial",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica a la distinción entre derechos civiles negativos y derechos sociales positivos costo de los derechos justiciabilidad Abramovich Courtis Holmes Sunstein",
+            "hits": 4
+          },
+          {
+            "consulta": "jurisprudencia derecho a la salud o vivienda prestaciones positivas del Estado remedios estructurales control judicial de políticas públicas prohibición de regresividad",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición doctrinal robusta que distinguía derechos sociales de libertades y explique la tipología respetar/proteger/cumplir (facilitar y proveer) aplicada específicamente a derechos sociales",
+            "Atribución doctrinal explícita (autores como Abramovich y Courtis, Alexy, Pisarello, Comité DESC) sobre la falsa dicotomía entre derechos negativos y positivos, y sobre el costo de todos los derechos",
+            "Ejemplo jurisprudencial desarrollado de condena a prestaciones positivas (salud, vivienda, educación, seguridad social) con remedios estructurales",
+            "Crítica y límites: reserva de lo posible, máximo de recursos disponibles, progresividad y no regresividad como límite, objeciones de legitimidad democrática y capacidad institucional del juez, indeterminación del contenido prestacional"
+          ],
+          "consultas": [
+            "críticas a la justiciabilidad de los derechos sociales: reserva de lo posible, máximo de recursos disponibles y legitimidad democrática del juez",
+            "Abramovich y Courtis derechos sociales como derechos exigibles: falsa dicotomía obligaciones positivas y negativas, contenido mínimo esencial",
+            "sentencias sobre derecho a la salud o vivienda que ordenan prestaciones positivas al Estado: remedios estructurales y cumplimiento presupuestal"
+          ],
+          "nota": "La evidencia cubre la noción básica de obligaciones de hacer y su fundamento normativo (art. 1º constitucional, art. 2.1 PIDESC, art. 26 CADH, Observaciones Generales del Comité DESC) y ofrece aplicaciones incipientes (amparos en revisión sobre libre desarrollo de la personalidad; seguridad social y cuidado). Sin embargo, las similitudes son bajas (0.15–0.18) y los pasajes son tangenciales: no hay una definición doctrinal desarrollada de derecho social prestacional, falta atribución a autores clave del debate y, sobre todo, no existe ninguna cita sobre límites, objeciones o críticas (escasez de recursos, competencia institucional, riesgo de indeterminación). Se recomienda una nueva ronda focalizada en doctrina y en jurisprudencia con remedios prestacionales concretos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "críticas a la justiciabilidad de los derechos sociales: reserva de lo posible, máximo de recursos disponibles y legitimidad democrática del juez",
+            "hits": 4
+          },
+          {
+            "consulta": "Abramovich y Courtis derechos sociales como derechos exigibles: falsa dicotomía obligaciones positivas y negativas, contenido mínimo esencial",
+            "hits": 4
+          },
+          {
+            "consulta": "sentencias sobre derecho a la salud o vivienda que ordenan prestaciones positivas al Estado: remedios estructurales y cumplimiento presupuestal",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "IMSS (Instituto Mexicano del Seguro Social)": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición legal del IMSS como organismo público descentralizado con personalidad jurídica y patrimonio propios, y su carácter de organismo fiscal autónomo (arts. 5 y 270-271 LSS)",
+            "Fundamento constitucional y legal: art. 123 apartado A fracción XXIX de la CPEUM, la seguridad social como servicio público de carácter nacional (art. 4 y 6 LSS) y el régimen obligatorio/voluntario",
+            "Fuente doctrinal o autoral que explique la naturaleza jurídica, antecedentes históricos (Ley del Seguro Social de 1943) y funciones del IMSS",
+            "Ejemplo o aplicación concreta: ramos de aseguramiento, inscripción patronal, determinación y cobro de cuotas obrero-patronales, incorporación de personas trabajadoras del hogar",
+            "Crítica o límites: sostenibilidad financiera, cobertura limitada frente a la informalidad, diferencias con el ISSSTE, críticas a la reforma de pensiones"
+          ],
+          "consultas": [
+            "artículo 5 Ley del Seguro Social IMSS organismo público descentralizado personalidad jurídica patrimonio propios organismo fiscal autónomo",
+            "fundamento constitucional seguridad social artículo 123 apartado A fracción XXIX servicio público nacional régimen obligatorio ramos de aseguramiento IMSS",
+            "críticas cobertura y sostenibilidad financiera del IMSS informalidad laboral reforma de pensiones doctrina seguridad social México"
+          ],
+          "nota": "Las citas recuperadas son de baja similitud (< 0.25) y corresponden casi todas a artículos transitorios y referencias bibliográficas, por lo que no aportan definición, fundamento ni análisis del concepto. La ficha requiere al menos una nueva ronda de búsqueda orientada a los artículos sustantivos de la Ley del Seguro Social (5, 6, 11, 251, 270) y a fuentes doctrinales sobre la naturaleza jurídica y los límites del IMSS."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "artículo 5 Ley del Seguro Social IMSS organismo público descentralizado personalidad jurídica patrimonio propios organismo fiscal autónomo",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento constitucional seguridad social artículo 123 apartado A fracción XXIX servicio público nacional régimen obligatorio ramos de aseguramiento IMSS",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas cobertura y sostenibilidad financiera del IMSS informalidad laboral reforma de pensiones doctrina seguridad social México",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": true,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Fundamento constitucional explícito (artículo 123, apartado A, fracción XXIX) que da origen al IMSS como instrumento básico de la seguridad social",
+            "Detalle de atribuciones y estructura orgánica (Asamblea General, Consejo Técnico, Dirección General) y su carácter de organismo fiscal autónomo",
+            "Crítica sustantiva más allá de la privatización: sostenibilidad financiera, cobertura limitada frente a la informalidad y calidad de los servicios"
+          ],
+          "consultas": [
+            "artículo 123 apartado A fracción XXIX constitucional seguro social obligatorio utilidad pública creación IMSS",
+            "IMSS órganos de gobierno Asamblea General Consejo Técnico Comisión de Vigilancia Dirección General atribuciones organismo fiscal autónomo",
+            "crisis financiera del IMSS sostenibilidad reservas cobertura informalidad críticas al modelo de seguridad social mexicano"
+          ],
+          "nota": "La ficha cuenta con definición legal precisa (art. 5 LSS), fundamento normativo, respaldo doctrinal (Briceño Ruiz, García Téllez), un caso de aplicación (incorporación de personas trabajadoras del hogar) y una crítica sobre la participación privada. Es suficiente para cerrar, aunque conviene reforzar el anclaje constitucional, la estructura orgánica y una crítica de fondo sobre financiamiento y cobertura para dar mayor profundidad analítica."
+        },
+        "consultas_ejecutadas": []
+      }
+    ],
+    "suficiente_final": true,
+    "hits_finales": 20
+  },
+  "ISSSTE (Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado)": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición sustantiva del ISSSTE como organismo público descentralizado con personalidad jurídica y patrimonio propios (naturaleza jurídica y objeto)",
+            "Fundamento constitucional (artículo 123 apartado B fracción XI) y legal (artículos 1, 3 y 4 de la Ley del ISSSTE) del régimen de seguridad social de los trabajadores al servicio del Estado",
+            "Catálogo de seguros, prestaciones y servicios que otorga (retiro, cesantía y vejez, invalidez y vida, riesgos del trabajo, salud, servicios sociales y culturales, PENSIONISSSTE, FOVISSSTE)",
+            "Sujetos de aseguramiento, régimen obligatorio y voluntario, y cuotas y aportaciones (ejemplo o aplicación concreta)",
+            "Doctrina o autor que analice el ISSSTE y la reforma de 2007 (tránsito de reparto a cuentas individuales)",
+            "Crítica o límite: debate sobre la reforma de 2007, régimen de transición (décimo transitorio), amparos y criterios jurisprudenciales de la SCJN"
+          ],
+          "consultas": [
+            "artículo 1 4 Ley ISSSTE organismo público descentralizado personalidad jurídica patrimonio propio seguridad social trabajadores del Estado",
+            "seguros régimen obligatorio ISSSTE retiro cesantía en edad avanzada y vejez invalidez y vida riesgos del trabajo salud servicios sociales artículo 3",
+            "artículos transitorios décimo Ley ISSSTE 2007 régimen de transición bono de pensión cuentas individuales PENSIONISSSTE"
+          ],
+          "nota": "Las cinco citas recuperadas son exclusivamente encabezados institucionales y títulos de decretos de reforma del documento fuente; no aportan contenido sustantivo. La ficha carece de todos los elementos evaluados (definición, fundamento, autor, ejemplo y crítica). Se requiere una nueva ronda de recuperación dirigida al articulado sustantivo (Título Primero y Segundo) y a las disposiciones transitorias, así como a fuentes doctrinales o jurisprudenciales sobre la reforma de 2007."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "artículo 1 4 Ley ISSSTE organismo público descentralizado personalidad jurídica patrimonio propio seguridad social trabajadores del Estado",
+            "hits": 4
+          },
+          {
+            "consulta": "seguros régimen obligatorio ISSSTE retiro cesantía en edad avanzada y vejez invalidez y vida riesgos del trabajo salud servicios sociales artículo 3",
+            "hits": 4
+          },
+          {
+            "consulta": "artículos transitorios décimo Ley ISSSTE 2007 régimen de transición bono de pensión cuentas individuales PENSIONISSSTE",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición sustantiva del ISSSTE como organismo público descentralizado con personalidad jurídica y patrimonio propios, y su objeto",
+            "Fundamento constitucional (art. 123, apartado B, fracción XI) y artículos 1, 3 y 4 de la Ley del ISSSTE que enumeran seguros, prestaciones y servicios obligatorios",
+            "Autoría / atribución doctrinal o legislativa (doctrina de seguridad social del trabajador al servicio del Estado; exposición de motivos de la Ley 2007)",
+            "Ejemplo o aplicación concreta: régimen de cuentas individuales, PENSIONISSSTE, bono de reconocimiento, régimen del décimo transitorio",
+            "Crítica o límite: efectos de la reforma de 2007 (tránsito de reparto a capitalización), cobertura limitada a trabajadores del Estado, controversias constitucionales y amparos"
+          ],
+          "consultas": [
+            "Ley del ISSSTE artículo 4 seguros prestaciones y servicios obligatorios; artículo 1 sujetos de la Ley; naturaleza jurídica del Instituto organismo descentralizado",
+            "ISSSTE régimen de cuentas individuales PENSIONISSSTE bono de pensión artículo décimo transitorio opción de régimen",
+            "artículo 123 apartado B fracción XI constitucional bases mínimas de seguridad social trabajadores al servicio del Estado"
+          ],
+          "nota": "Las cinco citas recuperadas son únicamente encabezados institucionales y títulos de decretos de reforma de la Ley del ISSSTE, sin contenido normativo sustantivo. Solo acreditan la existencia y vigencia del ordenamiento (fundamento formal mínimo), pero no permiten redactar definición, ejemplo ni crítica. Se requiere una segunda ronda dirigida al articulado sustantivo (arts. 1, 3, 4, 5) y a las disposiciones transitorias del decreto de 2007, así como a fuentes doctrinales o de exposición de motivos para el elemento crítico."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Ley del ISSSTE artículo 4 seguros prestaciones y servicios obligatorios; artículo 1 sujetos de la Ley; naturaleza jurídica del Instituto organismo descentralizado",
+            "hits": 4
+          },
+          {
+            "consulta": "ISSSTE régimen de cuentas individuales PENSIONISSSTE bono de pensión artículo décimo transitorio opción de régimen",
+            "hits": 4
+          },
+          {
+            "consulta": "artículo 123 apartado B fracción XI constitucional bases mínimas de seguridad social trabajadores al servicio del Estado",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 31
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 31
+  },
+  "Pensión": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición normativa o doctrinal de pensión (concepto de renta vitalicia periódica derivada de un riesgo protegido: vejez, invalidez, muerte, cesantía)",
+            "Fundamento constitucional y convencional (art. 123 apartado A fracc. XXIX y apartado B fracc. XI CPEUM; Convenio 102 OIT; art. 9 PIDESC; derecho a la seguridad social)",
+            "Autor o fuente doctrinal (doctrina de seguridad social o criterios de la SCJN sobre naturaleza jurídica de la pensión)",
+            "Crítica o límites (sostenibilidad financiera del sistema de cuentas individuales, pensiones mínimas garantizadas, semanas de cotización, discriminación por género en pensión de viudez, tope de la pensión)"
+          ],
+          "consultas": [
+            "definición de pensión concepto naturaleza jurídica renta vitalicia seguridad social doctrina",
+            "artículo 123 constitucional fracción XXIX seguridad social pensiones invalidez vejez cesantía fundamento constitucional",
+            "críticas al sistema de pensiones cuentas individuales AFORE tasa de reemplazo semanas de cotización pensión garantizada límites"
+          ],
+          "nota": "Las citas recuperadas son fragmentos operativos de la LSS y la LISSSTE (porcentajes de pensión de viudez y orfandad, tipos temporal/definitiva, revocación) que sirven como ejemplos de aplicación, pero no aportan una definición conceptual, el anclaje constitucional-convencional, respaldo doctrinal ni discusión crítica. Se requiere una segunda ronda orientada a fuentes doctrinales y al marco constitucional, además de literatura sobre sostenibilidad y desigualdad en el acceso a las pensiones."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de pensión concepto naturaleza jurídica renta vitalicia seguridad social doctrina",
+            "hits": 4
+          },
+          {
+            "consulta": "artículo 123 constitucional fracción XXIX seguridad social pensiones invalidez vejez cesantía fundamento constitucional",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al sistema de pensiones cuentas individuales AFORE tasa de reemplazo semanas de cotización pensión garantizada límites",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición normativa o doctrinal de pensión (concepto, naturaleza jurídica como prestación económica periódica y vitalicia/temporal derivada de la seguridad social)",
+            "Fundamento constitucional y convencional (art. 123 CPEUM, Convenio 102 OIT, PIDESC art. 9) más allá de artículos operativos de la LSS y LISSSTE",
+            "Autoridad doctrinal o jurisprudencial que sustente el concepto (tratadistas de derecho de la seguridad social, tesis de la SCJN sobre naturaleza de la pensión)",
+            "Crítica o límites: debate sobre sistemas de reparto vs. cuentas individuales, tasas de reemplazo, suficiencia del monto, sostenibilidad financiera y brechas de género"
+          ],
+          "consultas": [
+            "definición de pensión naturaleza jurídica prestación económica seguridad social concepto doctrinal",
+            "artículo 123 constitucional Convenio 102 OIT derecho a la pensión fundamento seguridad social",
+            "crítica sistema de pensiones cuentas individuales tasa de reemplazo suficiencia sostenibilidad reforma"
+          ],
+          "nota": "Las citas recuperadas son mayoritariamente reglas de cuantificación (porcentajes de viudez, orfandad, incrementos) y una clasificación (temporal/definitiva), útiles como ejemplo y fundamento legal operativo, pero no aportan una definición conceptual, respaldo doctrinal ni discusión crítica. Se requiere una tercera ronda enfocada en definición, fundamento constitucional/convencional y debate sobre límites del sistema pensionario."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de pensión naturaleza jurídica prestación económica seguridad social concepto doctrinal",
+            "hits": 4
+          },
+          {
+            "consulta": "artículo 123 constitucional Convenio 102 OIT derecho a la pensión fundamento seguridad social",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica sistema de pensiones cuentas individuales tasa de reemplazo suficiencia sostenibilidad reforma",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 30
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 30
+  },
+  "Cuentas individuales": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición legal expresa de 'Cuenta Individual' (artículo de definiciones de la Ley del ISSSTE / Ley del SAR / LSS): titularidad del trabajador, propiedad de los recursos y carácter vitalicio",
+            "Estructura y composición de la cuenta: subcuentas (retiro, cesantía en edad avanzada y vejez, vivienda, ahorro solidario, aportaciones voluntarias y complementarias)",
+            "Desarrollo doctrinal del concepto (Briceño Ruiz u otros autores) sobre el tránsito del régimen de reparto solidario al de capitalización individual",
+            "Crítica o límites: comisiones de las AFORE, riesgo de mercado, insuficiencia de tasas de reemplazo, densidad de cotización, debate sobre solidaridad vs. individualización"
+          ],
+          "consultas": [
+            "definición de Cuenta Individual titularidad del trabajador subcuentas retiro cesantía vejez vivienda ahorro solidario Ley ISSSTE artículo 6",
+            "capitalización individual versus reparto solidario críticas al sistema de cuentas individuales tasa de reemplazo comisiones AFORE",
+            "Briceño Ruiz naturaleza jurídica de la cuenta individual propiedad de los recursos y transferencia de riesgo al trabajador"
+          ],
+          "nota": "Las citas describen sobre todo funciones operativas (administrar, individualizar e invertir recursos) del PENSIONISSSTE y las SIEFORE, con base legal suficiente, pero no aportan una definición normativa ni doctrinal del concepto, ni su composición por subcuentas, ni ninguna valoración crítica. Se requiere al menos una ronda adicional centrada en definición, naturaleza jurídica y crítica del modelo de capitalización individual."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de Cuenta Individual titularidad del trabajador subcuentas retiro cesantía vejez vivienda ahorro solidario Ley ISSSTE artículo 6",
+            "hits": 4
+          },
+          {
+            "consulta": "capitalización individual versus reparto solidario críticas al sistema de cuentas individuales tasa de reemplazo comisiones AFORE",
+            "hits": 4
+          },
+          {
+            "consulta": "Briceño Ruiz naturaleza jurídica de la cuenta individual propiedad de los recursos y transferencia de riesgo al trabajador",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Crítica doctrinal al sistema de capitalización individual (riesgo de pensiones insuficientes, tasas de reemplazo bajas, comisiones de las AFORE)",
+            "Límites y restricciones legales de disposición de los recursos de la cuenta individual (inembargabilidad, retiros parciales, portabilidad, traspaso entre AFORE)",
+            "Contraste conceptual entre el régimen solidario de reparto y el de cuentas individuales (transición 1997 IMSS / 2007 ISSSTE)"
+          ],
+          "consultas": [
+            "críticas al sistema de capitalización individual pensiones tasa de reemplazo comisiones AFORE",
+            "inembargabilidad y disposición de los recursos de la cuenta individual retiros parciales traspaso",
+            "diferencias régimen de reparto solidario frente a cuentas individuales reforma 1997 ISSSTE 2007"
+          ],
+          "nota": "La ficha cuenta con definición legal precisa (Briceño Ruiz, p. 295), fundamento normativo (Ley del ISSSTE, PENSIONISSSTE y SIEFORE) y aplicación operativa (administración e inversión de recursos, subcuentas). Falta el componente crítico-valorativo: no hay citas sobre los límites del modelo de capitalización individual, la suficiencia de las pensiones resultantes, ni el debate sobre su carácter solidario frente al régimen de reparto. Se recomienda una tercera ronda focalizada en doctrina crítica y en las restricciones jurídicas de disponibilidad de los recursos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "críticas al sistema de capitalización individual pensiones tasa de reemplazo comisiones AFORE",
+            "hits": 4
+          },
+          {
+            "consulta": "inembargabilidad y disposición de los recursos de la cuenta individual retiros parciales traspaso",
+            "hits": 4
+          },
+          {
+            "consulta": "diferencias régimen de reparto solidario frente a cuentas individuales reforma 1997 ISSSTE 2007",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  },
+  "Sistema de ahorro para el retiro": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición normativa o doctrinal del sistema de ahorro para el retiro (SAR) como régimen de capitalización individual",
+            "Fundamento legal expreso: objeto de la Ley de los Sistemas de Ahorro para el Retiro y artículos de la LSS sobre el seguro de retiro, cesantía en edad avanzada y vejez (cuotas y aportaciones)",
+            "Postura doctrinal identificada (p. ej. Briceño Ruiz u otro autor) sobre la naturaleza jurídica y el tránsito del reparto solidario a la capitalización individual",
+            "Ejemplo concreto de operación: integración de la cuenta individual (subcuentas de RCV, vivienda y aportaciones voluntarias) y cálculo de la pensión",
+            "Crítica o límites: comisiones de las AFORE, insuficiencia de tasas de reemplazo, riesgo financiero trasladado al trabajador, cobertura y densidad de cotización"
+          ],
+          "consultas": [
+            "definición y objeto del sistema de ahorro para el retiro cuenta individual subcuentas retiro cesantía vejez vivienda",
+            "crítica doctrinal capitalización individual AFORE comisiones tasa de reemplazo pensiones insuficientes",
+            "Briceño Ruiz naturaleza jurídica del sistema de ahorro para el retiro reforma 1997 reparto a capitalización"
+          ],
+          "nota": "Las citas recuperadas giran casi exclusivamente en torno a la CONSAR y a las AFORE (supervisión, traspaso y administración de cuentas), lo que aporta fundamento normativo y una aplicación institucional, pero no ofrece una definición del concepto ni una elaboración doctrinal o crítica. Se requiere una segunda ronda orientada a la definición legal/doctrinal y a los límites del modelo de capitalización individual."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y objeto del sistema de ahorro para el retiro cuenta individual subcuentas retiro cesantía vejez vivienda",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica doctrinal capitalización individual AFORE comisiones tasa de reemplazo pensiones insuficientes",
+            "hits": 4
+          },
+          {
+            "consulta": "Briceño Ruiz naturaleza jurídica del sistema de ahorro para el retiro reforma 1997 reparto a capitalización",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 15
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 15,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual del sistema de ahorro para el retiro (naturaleza jurídica, elementos: cuenta individual, capitalización individual, aportaciones tripartitas)",
+            "Desarrollo doctrinal sustantivo: la cita de Briceño Ruiz solo describe a las AFORE, no define el sistema ni explica su fundamento teórico",
+            "Ejemplo o aplicación concreta: integración de subcuentas (retiro, cesantía y vejez, vivienda, aportaciones voluntarias), cuotas y porcentajes, reforma 2020-2021",
+            "Crítica o límite: debate entre reparto y capitalización individual, bajas tasas de reemplazo, comisiones de las AFORE, cobertura y densidad de cotización"
+          ],
+          "consultas": [
+            "definición y naturaleza jurídica del sistema de ahorro para el retiro cuenta individual capitalización subcuentas retiro cesantía vejez vivienda",
+            "crítica al régimen de capitalización individual AFORE tasa de reemplazo comisiones pensiones mínimas garantizadas México",
+            "transición del régimen de reparto de 1973 al sistema de cuentas individuales de 1997 y reforma de pensiones 2020 semanas de cotización"
+          ],
+          "nota": "La evidencia recuperada es predominantemente normativa y fragmentaria: identifica correctamente el fundamento legal (LSS, Ley del ISSSTE, Ley de los SAR) y el rol supervisor de la CONSAR, pero ninguna cita define el concepto ni explica su lógica financiero-actuarial. La referencia a Briceño Ruiz aporta respaldo de autor pero solo parafrasea el precepto sobre las AFORE, sin análisis doctrinal. Faltan por completo el ejemplo aplicativo (estructura de aportaciones y subcuentas) y la dimensión crítica (comparación reparto vs. capitalización, suficiencia de las pensiones). Se recomienda una tercera ronda de búsqueda orientada a doctrina y a la reforma de 2020."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y naturaleza jurídica del sistema de ahorro para el retiro cuenta individual capitalización subcuentas retiro cesantía vejez vivienda",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica al régimen de capitalización individual AFORE tasa de reemplazo comisiones pensiones mínimas garantizadas México",
+            "hits": 4
+          },
+          {
+            "consulta": "transición del régimen de reparto de 1973 al sistema de cuentas individuales de 1997 y reforma de pensiones 2020 semanas de cotización",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 22
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 22
+  },
+  "personas trabajadoras": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición normativa expresa de 'persona trabajadora' (elementos: persona física, prestación personal, subordinación, salario)",
+            "Fundamento doctrinal o autoral sobre el concepto de trabajador y la relación de trabajo",
+            "Justificación del cambio de lenguaje ('trabajador' a 'personas trabajadoras') y perspectiva de género/inclusiva",
+            "Crítica o límite: fronteras del concepto frente a trabajo autónomo, plataformas digitales, simulación laboral y presunción de laboralidad"
+          ],
+          "consultas": [
+            "artículo 8 Ley Federal del Trabajo trabajador persona física trabajo personal subordinado definición",
+            "relación de trabajo subordinación elementos doctrina concepto de trabajador según autores derecho laboral",
+            "límites del concepto de persona trabajadora: trabajadores de plataformas digitales, independientes y simulación de la relación laboral"
+          ],
+          "nota": "Las citas recuperadas son mayoritariamente de aplicación sectorial (vivienda INFONAVIT, seguridad social, trabajo del hogar y migrantes) y confirman el uso constitucional y legal del término, pero ninguna aporta la definición técnica del sujeto ni respaldo doctrinal. Falta también el debate crítico sobre la extensión del concepto (informalidad, plataformas, personas trabajadoras del hogar y migrantes como casos límite de cobertura). Se recomienda una segunda ronda enfocada en el artículo 8 y 20 de la LFT, doctrina laboralista y crítica sobre nuevas formas de trabajo."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "artículo 8 Ley Federal del Trabajo trabajador persona física trabajo personal subordinado definición",
+            "hits": 4
+          },
+          {
+            "consulta": "relación de trabajo subordinación elementos doctrina concepto de trabajador según autores derecho laboral",
+            "hits": 4
+          },
+          {
+            "consulta": "límites del concepto de persona trabajadora: trabajadores de plataformas digitales, independientes y simulación de la relación laboral",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición normativa expresa de 'persona trabajadora' (relación de trabajo subordinada, prestación de servicio personal, pago de salario) conforme al artículo 8 de la Ley Federal del Trabajo",
+            "Referencia doctrinal o autoral que explique el concepto y el cambio a lenguaje incluyente/no sexista ('persona trabajadora' en lugar de 'trabajador')",
+            "Crítica o límite del concepto: exclusiones (trabajo autónomo, plataformas digitales, trabajo informal, personas trabajadoras del hogar), frontera con la figura de 'patrón' o 'persona empleadora'"
+          ],
+          "consultas": [
+            "artículo 8 Ley Federal del Trabajo definición trabajador persona física que presta servicio personal subordinado",
+            "concepto doctrinal de persona trabajadora subordinación lenguaje incluyente reforma laboral",
+            "críticas y límites del concepto de persona trabajadora: trabajo informal, plataformas digitales y exclusión de la seguridad social"
+          ],
+          "nota": "La ficha está anclada en fuentes normativas (Constitución art. 123 fracc. XII, Ley del Seguro Social) que ilustran usos y aplicaciones del término (vivienda, trabajo del hogar, personas migrantes), pero carece del núcleo conceptual: no hay una definición jurídica explícita ni elemento doctrinal con autoría identificada, y no aparece ningún señalamiento de límites o debate crítico. Se recomienda una tercera ronda dirigida a la definición legal y a la literatura especializada."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "artículo 8 Ley Federal del Trabajo definición trabajador persona física que presta servicio personal subordinado",
+            "hits": 4
+          },
+          {
+            "consulta": "concepto doctrinal de persona trabajadora subordinación lenguaje incluyente reforma laboral",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del concepto de persona trabajadora: trabajo informal, plataformas digitales y exclusión de la seguridad social",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  }
+}

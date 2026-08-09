@@ -1,0 +1,39 @@
+{
+  "subject_slug": "derecho-a-la-seguridad-social",
+  "kept": [
+    "Derecho a la Seguridad Social",
+    "Instituto Mexicano del Seguro Social (IMSS)",
+    "Naturaleza jurídica del IMSS",
+    "Ley Federal del Trabajo (LFT)",
+    "Leyes del Seguro Social de 1973 y 1997",
+    "Rama (del seguro social)",
+    "Régimen obligatorio",
+    "Régimen voluntario",
+    "Seguro de Riesgos de Trabajo",
+    "Seguro de Invalidez",
+    "Seguros de Vejez y Cesantía en Edad Avanzada",
+    "Medios de impugnación administrativos y jurisdiccionales"
+  ],
+  "discarded": [
+    "cada una",
+    "contenidos",
+    "contexto del seguro social del IMSS",
+    "contexto seguro",
+    "contexto seguro social",
+    "Contiene un concepto de",
+    "el listado de las",
+    "lo que cubre",
+    "naturaleza",
+    "rama o de sus contenidos",
+    "rama que contempla su",
+    "ramas existentes",
+    "seguro social",
+    "seguro social imss",
+    "social imss",
+    "su sustento legal",
+    "“rama” en el",
+    "rama",
+    "sus"
+  ],
+  "notes": "Se conservaron únicamente conceptos jurídicos sustantivos y verificables de la materia: marco institucional (IMSS y su naturaleza jurídica), marco normativo (LSS 1973/1997, LFT), estructura del sistema (regímenes obligatorio y voluntario, noción de rama), seguros específicos y vías de impugnación. Se descartaron fragmentos truncados de enunciado, conectores, duplicados en minúsculas y términos genéricos sin carga conceptual ('rama', 'sus', 'contenidos', 'naturaleza'), que no aportan valor para redactar ni resolver la actividad."
+}

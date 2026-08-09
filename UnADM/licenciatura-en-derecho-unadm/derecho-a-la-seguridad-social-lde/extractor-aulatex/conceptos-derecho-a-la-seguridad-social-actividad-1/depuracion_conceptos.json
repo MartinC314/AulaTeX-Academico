@@ -1,0 +1,41 @@
+{
+  "subject_slug": "derecho-a-la-seguridad-social",
+  "kept": [
+    "Derecho de la Seguridad Social",
+    "seguridad social",
+    "Derecho Social",
+    "Derecho Laboral",
+    "Derecho Agrario",
+    "Contingencias (enfermedad, accidente, maternidad, invalidez, vejez, muerte, cesantía, desempleo)",
+    "Beneficiarios",
+    "Barreras de acceso a la prestación",
+    "Derechos sociales y obligaciones de hacer / prestaciones positivas del Estado",
+    "IMSS (Instituto Mexicano del Seguro Social)",
+    "ISSSTE (Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado)",
+    "Pensión",
+    "Cuentas individuales",
+    "Sistema de ahorro para el retiro",
+    "personas trabajadoras"
+  ],
+  "discarded": [
+    "acceso identificada",
+    "ahorro retiro",
+    "atento comentarios",
+    "barrera acceso",
+    "básicas derecho",
+    "debía atenderla",
+    "derecho pertenece",
+    "derecho seguridad",
+    "derecho seguridad social",
+    "institución debía",
+    "institución debía atenderla",
+    "nociones básicas",
+    "proteger personas",
+    "quedo atento",
+    "saludos quedo",
+    "sistema ahorro",
+    "sistema ahorro retiro",
+    "social pertenece"
+  ],
+  "notes": "Se conservaron los conceptos sustantivos de la materia: la rama jurídica y sus ramas afines (Social, Laboral, Agrario), las contingencias cubiertas, los sujetos protegidos, las instituciones mexicanas (IMSS, ISSSTE), las prestaciones económicas (pensión, cuentas individuales, SAR) y la dimensión crítica de acceso a las prestaciones. Se descartaron fragmentos truncados o n-gramas incompletos ('derecho seguridad', 'sistema ahorro', 'básicas derecho'), duplicados de conceptos ya cubiertos en forma completa, y expresiones de cortesía o metadiscurso de correo ('quedo atento', 'saludos quedo', 'atento comentarios'), así como referencias narrativas a un caso particular ('institución debía atenderla', 'debía atenderla') que no aportan valor conceptual generalizable."
+}
