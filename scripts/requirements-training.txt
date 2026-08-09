@@ -54,7 +54,11 @@ azure-storage-blob>=12.20.0,<13
 transformers>=4.44.0,<5
 peft>=0.12.0,<1
 trl>=0.9.0,<1
-datasets>=2.20.0,<3
+# datasets <3 fija dill 0.3.8, que rompe en Python 3.14: el nuevo
+# Pickler._batch_setitems recibe 3 argumentos y dill 0.3.8 asume 2.
+# datasets >=4 traccion dill >=0.4, ya adaptado.
+datasets>=4.0.0,<6
+dill>=0.4.0
 # accelerate >=1.0 es OBLIGATORIO con transformers >=4.50: la firma de
 # Accelerator.unwrap_model(keep_torch_compile=...) cambió y 0.34 rompe Trainer.
 accelerate>=1.0,<2
