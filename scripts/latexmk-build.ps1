@@ -13,6 +13,59 @@ $ErrorActionPreference = 'Stop'
 
 $ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 
+function Initialize-PerlForLatexmk {
+    <#
+    .SYNOPSIS
+        Antepone un Perl COMPLETO al PATH para que latexmk pueda arrancar.
+    .DESCRIPTION
+        latexmk es un script Perl y necesita la biblioteca estandar
+        (File::Spec::Functions entre otros). Si en el PATH gana un Perl
+        embebido -- el de exiftool de Chocolatey es el caso tipico -- su @INC
+        no incluye la stdlib y latexmk aborta en el 'use' inicial con
+        "Can't locate File/Spec/Functions.pm in @INC", antes de leer el .tex.
+        Se prueban las distribuciones completas habituales y se usa la primera
+        que resuelva el modulo.
+    #>
+    $candidates = @(
+        'C:\Strawberry\perl\bin',
+        "$env:ProgramFiles\Git\usr\bin",
+        "$env:SystemDrive\Perl64\bin"
+    )
+
+    # Un Perl incompleto escribe el fallo del 'use' en stderr. Con
+    # $ErrorActionPreference='Stop' eso se convierte en NativeCommandError
+    # terminante y abortaria el script justo cuando la sonda hace su trabajo.
+    # La sonda debe poder fallar en silencio, que es su unico proposito.
+    function Test-PerlHasStdlib {
+        param([string]$Exe)
+        $previous = $ErrorActionPreference
+        $ErrorActionPreference = 'Continue'
+        try {
+            & $Exe -e 'use File::Spec::Functions; exit 0' 2>&1 | Out-Null
+            return ($LASTEXITCODE -eq 0)
+        } catch {
+            return $false
+        } finally {
+            $ErrorActionPreference = $previous
+        }
+    }
+
+    $current = (Get-Command perl -ErrorAction SilentlyContinue).Source
+    if ($current -and (Test-PerlHasStdlib -Exe $current)) { return }
+
+    foreach ($dir in $candidates) {
+        $exe = Join-Path $dir 'perl.exe'
+        if (-not (Test-Path -LiteralPath $exe)) { continue }
+        if (Test-PerlHasStdlib -Exe $exe) {
+            $env:PATH = "$dir;$env:PATH"
+            Write-Host "Perl para latexmk: $exe"
+            return
+        }
+    }
+
+    Write-Warning "No se encontro un Perl con biblioteca estandar; latexmk puede fallar al arrancar."
+}
+
 function Resolve-TexFile {
     param([string]$Path)
 
@@ -113,6 +166,8 @@ function Remove-SourceDirResidues {
         } |
         Remove-Item -Force -ErrorAction SilentlyContinue
 }
+
+Initialize-PerlForLatexmk
 
 $ResolvedTex = Resolve-TexFile $TexFile
 New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot '.build/latex') | Out-Null

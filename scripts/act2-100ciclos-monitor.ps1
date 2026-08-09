@@ -20,6 +20,8 @@ param(
     [int]$LlmTimeoutSeconds = 120,
     [int]$LlmMaxTokens = 6000,
     [int]$BatchWatchdogSeconds = 1500,
+    [int]$Activity = 2,
+    [string]$LogName = 'act2-100ciclos',
     [string]$Target = '.\UnADM\licenciatura-en-derecho-unadm\derecho-a-la-seguridad-social-lde\reporte-derecho-a-la-seguridad-social-Actividad-1.tex'
 )
 
@@ -27,7 +29,7 @@ $ErrorActionPreference = 'Stop'
 $root = 'C:\Users\delaCruz\Documents\AulaTeX-Academico'
 Set-Location $root
 
-$logDir = Join-Path $root '.aulatex-temp\act2-100ciclos'
+$logDir = Join-Path $root ".aulatex-temp\$LogName"
 New-Item -ItemType Directory -Force -Path $logDir | Out-Null
 $progressLog = Join-Path $logDir 'progreso-lotes.log'
 $engines = @('GPT-5.6-SOL', 'GPT-5.6-Luna', 'GPT-5.6-Terra')
@@ -51,19 +53,23 @@ for ($b = 1; $b -le $batches; $b++) {
 
     Write-Progress-Line "LOTE $b/$batches -> ejecutando $thisBatch ciclos (acumulado previo: $completedCycles)"
 
+    # El PIN maestro vive en la sesion que invoca; Start-Job abre una sesion nueva
+    # sin el, y el agente aborta en segundos sin poder descifrar las credenciales.
     $job = Start-Job -ScriptBlock {
-        param($r, $tgt, $iters, $llmTo, $llmMax, $eng)
+        param($r, $tgt, $iters, $llmTo, $llmMax, $eng, $act, $pin)
         Set-Location $r
+        $env:AULATEX_MASTER_PIN = $pin
         $env:AULATEX_LLM_TIMEOUT_SECONDS = "$llmTo"
         $env:AULATEX_LLM_MAX_TOKENS = "$llmMax"
         $env:PYTHONUTF8 = '1'
+        $env:TOKENIZERS_PARALLELISM = 'false'
         $engineArgs = @()
         foreach ($e in $eng) { $engineArgs += '--engine'; $engineArgs += $e }
         & '.\.venv\Scripts\python.exe' '.\scripts\aulatex_agent.py' agent `
-            --action realizar-actividad --target $tgt --activity 2 `
+            --action realizar-actividad --target $tgt --activity $act `
             --iterations $iters --cycle-mode full --no-compile --no-detail-planner `
             @engineArgs 2>&1
-    } -ArgumentList $root, $Target, $thisBatch, $LlmTimeoutSeconds, $LlmMaxTokens, $engines
+    } -ArgumentList $root, $Target, $thisBatch, $LlmTimeoutSeconds, $LlmMaxTokens, $engines, $Activity, $env:AULATEX_MASTER_PIN
 
     $done = Wait-Job $job -Timeout $BatchWatchdogSeconds
     if ($done) {
