@@ -240,15 +240,29 @@ def azure_submit(args: argparse.Namespace) -> int:
         image="mcr.microsoft.com/azureml/curated/acpt-pytorch-2.2-cuda12.1:latest",
         name="aulatex-reward-env",
     )
+
+    # El corpus se sube como input: la ruta local del host no existe en el contenedor.
+    train_path = Path(args.train_file).expanduser().resolve()
+    if not train_path.exists():
+        print(f"[azure] ERROR: no existe el corpus {train_path}")
+        print("        Genera primero: python scripts/aulatex_training/build_corpus_from_repo.py")
+        return 2
+
+    from azure.ai.ml import Input, Output
+    from azure.ai.ml.constants import AssetTypes
+
     job = command(
         code=str(HERE),  # sube esta carpeta (contiene train_reward_model.py)
         command=(
             "python train_reward_model.py "
-            f"--train-file {args.train_file} "
+            "--train-file ${{inputs.train_file}} "
             f"--model-name {args.model_name} "
             f"--epochs {args.epochs} "
+            f"--max-length {getattr(args, 'max_length', 512)} "
             "--output-dir ${{outputs.model_dir}}"
         ),
+        inputs={"train_file": Input(type=AssetTypes.URI_FILE, path=str(train_path))},
+        outputs={"model_dir": Output(type=AssetTypes.URI_FOLDER)},
         environment=environment,
         compute=args.compute,
         display_name="aulatex-reward-model",
@@ -261,7 +275,7 @@ def azure_submit(args: argparse.Namespace) -> int:
 
 
 # ----------------------------------------------------------------- SageMaker
-def aws_check() -> int:
+def aws_check(instance_type: str = "ml.g5.2xlarge") -> int:
     print("\n=== AWS SageMaker: verificación (read-only) ===")
     for var in ("AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "AWS_REGION", "SAGEMAKER_ROLE_ARN"):
         print(f"  {var:26s} {_present(var)}")
@@ -368,6 +382,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--s3-input", default="", help="URI S3 del dataset (SageMaker).")
     parser.add_argument("--model-name", default="FacebookAI/xlm-roberta-base")
     parser.add_argument("--epochs", type=int, default=3)
+    parser.add_argument("--max-length", type=int, default=512,
+                        help="Ventana de contexto. No puede exceder el limite del modelo.")
     args = parser.parse_args(argv)
 
     hydrate_env(args.env_file)
@@ -385,7 +401,7 @@ def main(argv: list[str] | None = None) -> int:
         return aws_submit(args)
 
     # Modo por defecto: verificación read-only.
-    return azure_check() if args.backend == "azure" else aws_check()
+    return azure_check() if args.backend == "azure" else aws_check(args.instance_type)
 
 
 if __name__ == "__main__":
