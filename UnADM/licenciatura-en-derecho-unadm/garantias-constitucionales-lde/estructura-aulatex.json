@@ -1,0 +1,22 @@
+{
+  "node": "garantias-constitucionales-lde",
+  "slug": "garantias-constitucionales",
+  "title": "Garantias Constitucionales",
+  "activity_number": 4,
+  "files": [
+    "garantias-constitucionales.bib",
+    "reporte-garantias-constitucionales.tex",
+    "reporte-garantias-constitucionales-Actividad-4.tex",
+    "presentacion-garantias-constitucionales.tex",
+    "presentacion-garantias-constitucionales-Actividad-4.tex",
+    "programa-analitico-garantias-constitucionales.md",
+    "COMPILACION-garantias-constitucionales.md",
+    "README.md"
+  ],
+  "folders": [
+    "referencias-garantias-constitucionales",
+    "planeaciones-garantias-constitucionales",
+    "assets-garantias-constitucionales"
+  ],
+  "memory_summary": []
+}

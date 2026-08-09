@@ -1,0 +1,34 @@
+{
+  "subject_slug": "garantias-constitucionales",
+  "kept": [
+    "Garantías constitucionales",
+    "Marco conceptual y normativo",
+    "Marco jurídico",
+    "Instituciones y sujetos",
+    "Práctica profesional",
+    "Postura personal"
+  ],
+  "discarded": [
+    "agosto 2026",
+    "bibliografia local",
+    "constitucionales unadm",
+    "constitucionales unadm agosto",
+    "control editorial",
+    "derecho unadm",
+    "editorial verificable",
+    "garantias constitucionales",
+    "garantias constitucionales unadm",
+    "garantias-constitucionales",
+    "instituciones sujetos",
+    "licenciatura derecho",
+    "licenciatura derecho unadm",
+    "local consistente",
+    "plantilla editorial",
+    "plantilla editorial verificable",
+    "trazabilidad control",
+    "unadm agosto",
+    "unadm agosto 2026",
+    "verificable"
+  ],
+  "notes": "Se conservaron únicamente los conceptos con carga temática y utilidad para redactar y resolver la actividad: el objeto de estudio (garantías constitucionales), su encuadre teórico-normativo (marco conceptual y normativo, marco jurídico), los actores implicados (instituciones y sujetos) y los ejes de aplicación y argumentación (práctica profesional, postura personal). Se descartaron metadatos administrativos (UNADM, licenciatura, fechas), términos de control editorial o trazabilidad (plantilla, verificable, bibliografía local) y variantes duplicadas o slugs sin valor conceptual, que no aportan contenido para resolver la actividad."
+}

@@ -1,0 +1,538 @@
+{
+  "Garantías constitucionales": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición técnica de 'garantías constitucionales' y su distinción respecto de los derechos que protegen (derecho sustantivo vs. mecanismo de tutela)",
+            "Fundamento jurídico-político: supremacía constitucional, rigidez, control de constitucionalidad y bloque de constitucionalidad como base de las garantías",
+            "Autor o corriente doctrinal de referencia (p. ej. Ferrajoli, Fix-Zamudio, Sagüés, Cappelletti) que sistematice la noción de garantía",
+            "Tipología y ejemplo procesal concreto: amparo, habeas corpus, habeas data, acción de inconstitucionalidad",
+            "Crítica sustantiva más allá de la suspensión: brecha entre garantías formales y eficacia real ('derechos de papel'), estados de excepción y su abuso"
+          ],
+          "consultas": [
+            "definición de garantías constitucionales diferencia entre derechos y garantías instrumentos de tutela",
+            "amparo habeas corpus habeas data garantías procesales control de constitucionalidad ejemplo",
+            "Ferrajoli garantismo garantías primarias y secundarias crítica ineficacia derechos sin garantías"
+          ],
+          "nota": "La evidencia recuperada es marginal y de baja similitud (máx. 0.17): las citas mencionan las garantías solo de modo incidental, en contextos de suspensión durante dictaduras y de reforma constitucional argentina. No hay definición conceptual, ni fundamento dogmático, ni autoridad doctrinal citable. Los principios de proporcionalidad y temporalidad aportan un límite útil, pero referido únicamente al supuesto de suspensión, no al concepto general. Se requiere una segunda ronda enfocada en fuentes de derecho constitucional y teoría garantista."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de garantías constitucionales diferencia entre derechos y garantías instrumentos de tutela",
+            "hits": 4
+          },
+          {
+            "consulta": "amparo habeas corpus habeas data garantías procesales control de constitucionalidad ejemplo",
+            "hits": 4
+          },
+          {
+            "consulta": "Ferrajoli garantismo garantías primarias y secundarias crítica ineficacia derechos sin garantías",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 15
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 15,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición precisa de 'garantía constitucional' y su distinción respecto de 'derecho fundamental'",
+            "Fundamento teórico-jurídico (supremacía constitucional, rigidez, control de constitucionalidad) y base normativa",
+            "Atribución doctrinal explícita (p. ej. Ferrajoli, Fix-Zamudio, Sagüés, Häberle) que sustente la noción",
+            "Tipología de garantías (normativas, jurisdiccionales, institucionales) y ejemplos procesales concretos (amparo, habeas corpus, habeas data)"
+          ],
+          "consultas": [
+            "definición de garantía constitucional diferencia entre derecho fundamental y garantía",
+            "garantías jurisdiccionales amparo habeas corpus habeas data control de constitucionalidad",
+            "Ferrajoli Fix-Zamudio garantías primarias y secundarias supremacía constitucional"
+          ],
+          "nota": "Las citas recuperadas tienen similitud muy baja (<0.20) y se concentran en la suspensión de garantías en estados de excepción y en antecedentes históricos (Bill of Rights, dictadura). Aportan buen material para el apartado de límites/crítica y un ejemplo (habeas corpus), pero no ofrecen una definición conceptual, ni el fundamento dogmático, ni un autor identificable que teorice la categoría. Se requiere una nueva ronda orientada a fuentes de teoría constitucional."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de garantía constitucional diferencia entre derecho fundamental y garantía",
+            "hits": 4
+          },
+          {
+            "consulta": "garantías jurisdiccionales amparo habeas corpus habeas data control de constitucionalidad",
+            "hits": 4
+          },
+          {
+            "consulta": "Ferrajoli Fix-Zamudio garantías primarias y secundarias supremacía constitucional",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 21
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 21
+  },
+  "Marco conceptual y normativo": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'marco conceptual' y de 'marco normativo' como categorías de análisis jurídico",
+            "Fundamento teórico: distinción entre plano conceptual (categorías, principios, doctrina) y plano normativo (fuentes positivas, jerarquía, bloque de constitucionalidad)",
+            "Autor de referencia que sistematice ambos planos (p. ej. teoría de las fuentes, doctrina de derechos humanos)",
+            "Ejemplo o aplicación concreta: articulación entre tratados internacionales, Constitución y ley interna como marco normativo de un derecho",
+            "Crítica o límite: riesgo de formalismo, brecha entre norma y eficacia, reduccionismo positivista del análisis normativo"
+          ],
+          "consultas": [
+            "definición de marco normativo y jerarquía de fuentes del derecho: Constitución, tratados internacionales y leyes internas",
+            "marco conceptual de los derechos humanos: fundamentación teórica, principios y categorías doctrinales",
+            "críticas al positivismo normativo: distancia entre reconocimiento formal y eficacia real de los derechos"
+          ],
+          "nota": "Las citas recuperadas tienen similitud muy baja (<0.07) y son mayoritariamente tangenciales: aluden al término 'normativo' en contextos históricos (Corán, califato) o metodológicos aislados. Solo la cita sobre jerarquía de tratados en constituciones latinoamericanas (Marcano Salazar, p. 108) aporta material utilizable para el componente normativo, pero sin definición ni crítica. La ficha no puede redactarse con esta evidencia; se requiere una segunda ronda orientada a definición, fundamentación doctrinal y límites."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de marco normativo y jerarquía de fuentes del derecho: Constitución, tratados internacionales y leyes internas",
+            "hits": 4
+          },
+          {
+            "consulta": "marco conceptual de los derechos humanos: fundamentación teórica, principios y categorías doctrinales",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al positivismo normativo: distancia entre reconocimiento formal y eficacia real de los derechos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de qué es un marco conceptual y qué es un marco normativo en investigación jurídica y en política pública",
+            "Fundamento teórico-doctrinal que distinga marco conceptual, marco teórico y marco normativo (bloque de constitucionalidad, jerarquía normativa como componente normativo)",
+            "Autor o corriente doctrinal de referencia que sistematice la construcción del marco conceptual/normativo (p. ej. Kelsen para jerarquía normativa, doctrina del bloque de constitucionalidad)",
+            "Crítica o límites: riesgo de formalismo, indeterminación conceptual, brecha entre norma escrita y aplicación efectiva"
+          ],
+          "consultas": [
+            "definición de marco conceptual y marco normativo en investigación jurídica: diferencia con marco teórico",
+            "jerarquía normativa, bloque de constitucionalidad y pirámide de Kelsen como fundamento del marco normativo de derechos humanos",
+            "críticas y límites del enfoque normativo formal: brecha entre reconocimiento normativo y eficacia real de los derechos"
+          ],
+          "nota": "Las citas recuperadas tienen similitud muy baja (máx. 0.22) y solo abordan tangencialmente el componente normativo (jerarquía de tratados, amparo, derechos constitucionales). No hay ninguna cita que defina el concepto de 'marco conceptual', ni autor que lo sustente, ni discusión crítica. La ficha es insuficiente: se requiere una ronda adicional orientada a fuentes metodológicas y de teoría del derecho, no solo a catálogos de derechos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de marco conceptual y marco normativo en investigación jurídica: diferencia con marco teórico",
+            "hits": 4
+          },
+          {
+            "consulta": "jerarquía normativa, bloque de constitucionalidad y pirámide de Kelsen como fundamento del marco normativo de derechos humanos",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites del enfoque normativo formal: brecha entre reconocimiento normativo y eficacia real de los derechos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 26
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 26
+  },
+  "Marco jurídico": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición técnica de 'marco jurídico' (conjunto de normas, jerarquía normativa y ámbito de validez)",
+            "Fundamento teórico: principio de legalidad, supremacía constitucional, sistema de fuentes del derecho",
+            "Autor de referencia (p. ej. Kelsen y la pirámide normativa; Bobbio y el ordenamiento jurídico; Ferrajoli y el garantismo)",
+            "Ejemplo o aplicación concreta: marco jurídico internacional de los derechos humanos (Carta de la ONU, DUDH, Pactos de 1966, Convención Americana), bloque de constitucionalidad",
+            "Crítica o límite: brecha entre marco normativo y eficacia real, formalismo jurídico, fragmentación e inaplicación de tratados"
+          ],
+          "consultas": [
+            "marco jurídico definición ordenamiento jurídico jerarquía normativa fuentes del derecho Kelsen pirámide",
+            "marco jurídico internacional de protección de los derechos humanos: Carta de Naciones Unidas, Declaración Universal, Pactos de 1966, sistema interamericano",
+            "críticas a la eficacia del marco normativo: ineficacia de las normas, formalismo jurídico, brecha entre reconocimiento formal y garantía real de derechos"
+          ],
+          "nota": "Las cinco citas recuperadas contienen la palabra 'marco' en sentidos incidentales y no jurídico-conceptuales ('en el marco del III Reich', 'marco constitucional', 'Convención Marco sobre Cambio Climático'), con similitudes muy bajas (0.06-0.08). No hay evidencia útil para ninguno de los cinco elementos de la ficha. Se requiere una segunda ronda con consultas que apunten a la teoría del ordenamiento jurídico y al sistema normativo de derechos humanos, evitando la coincidencia léxica superficial del término 'marco'."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "marco jurídico definición ordenamiento jurídico jerarquía normativa fuentes del derecho Kelsen pirámide",
+            "hits": 4
+          },
+          {
+            "consulta": "marco jurídico internacional de protección de los derechos humanos: Carta de Naciones Unidas, Declaración Universal, Pactos de 1966, sistema interamericano",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas a la eficacia del marco normativo: ineficacia de las normas, formalismo jurídico, brecha entre reconocimiento formal y garantía real de derechos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'marco jurídico' (conjunto de normas, principios e instituciones que regulan una materia)",
+            "Autor o fuente doctrinal que sostenga la definición (teoría del ordenamiento jurídico, pirámide normativa, bloque de constitucionalidad)",
+            "Fundamento normativo preciso (jerarquía constitucional, control de convencionalidad, artículo o instrumento que estructura el marco)",
+            "Crítica o límite: brecha entre marco jurídico formal y eficacia real, fragmentación normativa, ineficacia de la incorporación de tratados"
+          ],
+          "consultas": [
+            "definición de marco jurídico ordenamiento normativo conjunto de normas principios e instituciones",
+            "jerarquía normativa bloque de constitucionalidad control de convencionalidad fundamento del marco jurídico interno",
+            "críticas límites del marco jurídico ineficacia brecha entre norma formal y aplicación real derechos humanos"
+          ],
+          "nota": "Las citas recuperadas tienen similitud baja (máx. 0.21) y son tangenciales: describen instrumentos y sistemas de protección de derechos humanos, pero ninguna define ni fundamenta teóricamente el concepto de 'marco jurídico'. Solo la cita de p. 108 (jerarquía de tratados e incorporación al ordenamiento interno) aporta un fundamento útil y un ejemplo comparado latinoamericano. Falta núcleo definitorio, respaldo autoral explícito y discusión crítica; se recomienda una ronda adicional de búsqueda con las consultas propuestas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de marco jurídico ordenamiento normativo conjunto de normas principios e instituciones",
+            "hits": 4
+          },
+          {
+            "consulta": "jerarquía normativa bloque de constitucionalidad control de convencionalidad fundamento del marco jurídico interno",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas límites del marco jurídico ineficacia brecha entre norma formal y aplicación real derechos humanos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "Instituciones y sujetos": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual explícita de 'sujeto de derecho' (persona) y de 'institución jurídica' como categorías analíticas",
+            "Fundamento teórico de la distinción persona/cosa/acción y de la capacidad jurídica como base de la subjetividad de derechos",
+            "Aplicación concreta en la historia de los derechos humanos: ampliación del elenco de sujetos (esclavos, mujeres, indígenas, niños, colectivos, naturaleza)",
+            "Crítica o límite: exclusiones históricas del estatus de sujeto, personalidad jurídica como ficción, insuficiencia o captura de las instituciones de garantía",
+            "Distinción entre sujetos individuales y colectivos, y entre sujetos activos (titulares) y pasivos (obligados) frente a las instituciones"
+          ],
+          "consultas": [
+            "definición de sujeto de derecho, persona y capacidad jurídica en la tradición romanista (Gayo, Justiniano) y su recepción moderna",
+            "ampliación histórica de los sujetos de derechos humanos: esclavos, mujeres, pueblos indígenas, niños y sujetos colectivos",
+            "críticas y límites de las instituciones de garantía de derechos humanos: eficacia, autonomía, exclusión y personalidad jurídica como ficción"
+          ],
+          "nota": "La evidencia recuperada es dispersa y de muy baja similitud (<0.08). Solo aporta una mención al esquema de Gayo (personas, cosas, acciones), útil como raíz histórica de la noción de 'sujeto', y referencias tangenciales a instituciones nacionales de derechos humanos e instituciones republicanas romanas. Falta el núcleo conceptual: qué es una institución jurídica, qué es un sujeto de derecho, su fundamento y sus límites críticos. Se recomienda una segunda ronda con las consultas propuestas antes de redactar la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de sujeto de derecho, persona y capacidad jurídica en la tradición romanista (Gayo, Justiniano) y su recepción moderna",
+            "hits": 4
+          },
+          {
+            "consulta": "ampliación histórica de los sujetos de derechos humanos: esclavos, mujeres, pueblos indígenas, niños y sujetos colectivos",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites de las instituciones de garantía de derechos humanos: eficacia, autonomía, exclusión y personalidad jurídica como ficción",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 18,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición operativa de 'institución' (organismo, órgano de garantía, organización internacional) y de 'sujeto' (sujeto de derecho, titular y obligado) en el marco de los derechos humanos",
+            "Fundamento teórico-jurídico de la subjetividad jurídica: personalidad, capacidad, titularidad de derechos y deberes",
+            "Distinción entre sujeto activo (titular) y sujeto pasivo (Estado obligado), y papel de las instituciones estatales e internacionales de protección",
+            "Ejemplo o aplicación concreta: instituciones nacionales de derechos humanos (defensorías, ombudsman), Corte y Comisión Interamericana, Consejo de DDHH de la ONU",
+            "Crítica o límite: debate sobre subjetividad de entes colectivos, pueblos, generaciones futuras, naturaleza y personas jurídicas; ineficacia o captura institucional"
+          ],
+          "consultas": [
+            "definición de sujeto de derecho: personalidad jurídica, capacidad y titularidad de derechos humanos; sujeto activo y sujeto pasivo",
+            "instituciones de protección de los derechos humanos: defensoría del pueblo, ombudsman, Comisión y Corte Interamericana, Consejo de Derechos Humanos ONU funciones",
+            "críticas y límites a la subjetividad jurídica de entes colectivos: pueblos indígenas, generaciones futuras, naturaleza y personas jurídicas como titulares de derechos"
+          ],
+          "nota": "Las citas recuperadas tienen similitud muy baja (máx. 0.14) y son tangenciales: abordan grupos vulnerables, generaciones futuras y derechos agrarios, sin definir qué son las instituciones ni los sujetos como categorías. Solo se rescata un apunte doctrinal útil (Tarantino y Vila-Coro sobre sujeto de derecho sin personalidad), insuficiente para sostener la ficha. Se requiere una segunda ronda orientada a la definición dogmática de sujeto/institución, a la relación titular-obligado y a ejemplos institucionales concretos, además de una línea crítica sobre la expansión de la subjetividad jurídica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de sujeto de derecho: personalidad jurídica, capacidad y titularidad de derechos humanos; sujeto activo y sujeto pasivo",
+            "hits": 4
+          },
+          {
+            "consulta": "instituciones de protección de los derechos humanos: defensoría del pueblo, ombudsman, Comisión y Corte Interamericana, Consejo de Derechos Humanos ONU funciones",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites a la subjetividad jurídica de entes colectivos: pueblos indígenas, generaciones futuras, naturaleza y personas jurídicas como titulares de derechos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "Práctica profesional": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición de práctica profesional (pasantía/prácticas preprofesionales) como instancia formativa supervisada",
+            "Fundamento normativo y pedagógico (vinculación teoría-práctica, formación de competencias, regulación laboral y educativa)",
+            "Autor o marco teórico de referencia (p. ej. Schön y el profesional reflexivo, Perrenoud, Dewey, o doctrina sobre práctica jurídica supervisada)",
+            "Ejemplo o aplicación concreta (consultorio jurídico, clínica jurídica, pasantía curricular, práctica supervisada en carreras de Derecho)",
+            "Crítica o límite (precarización laboral encubierta, ausencia de tutoría efectiva, brecha entre currículo y ejercicio real)"
+          ],
+          "consultas": [
+            "definición de práctica profesional supervisada y pasantía en la formación universitaria: marco normativo y objetivos pedagógicos",
+            "clínica jurídica y consultorio jurídico como práctica profesional del estudiante de Derecho: ejemplos y regulación",
+            "críticas a las prácticas profesionales: precarización, trabajo no remunerado y límites formativos (Schön, profesional reflexivo)"
+          ],
+          "nota": "Las cinco citas recuperadas no guardan relación con el concepto: el motor de búsqueda recuperó ocurrencias del término 'práctica' en sentido de costumbre ritual (circuncisión, prácticas religiosas) y de 'razón práctica' kantiana, no de 'práctica profesional' como instancia formativa o ejercicio de una profesión. La similitud es muy baja (<0.09), lo que sugiere que el corpus disponible (obras sobre derechos humanos) probablemente no cubre el concepto. Se recomienda ampliar el corpus con fuentes de pedagogía universitaria, educación jurídica y normativa sobre pasantías antes de redactar la ficha; en la ronda 2, si persiste la falta de resultados, marcar el concepto como no cubierto por las fuentes."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de práctica profesional supervisada y pasantía en la formación universitaria: marco normativo y objetivos pedagógicos",
+            "hits": 4
+          },
+          {
+            "consulta": "clínica jurídica y consultorio jurídico como práctica profesional del estudiante de Derecho: ejemplos y regulación",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas a las prácticas profesionales: precarización, trabajo no remunerado y límites formativos (Schön, profesional reflexivo)",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definición de práctica profesional",
+            "fundamento normativo (regulación del ejercicio profesional, servicio social, prácticas preprofesionales)",
+            "autor o doctrina de referencia sobre formación práctica y competencias profesionales",
+            "ejemplo o aplicación concreta (clínicas jurídicas, pasantías, residencias)",
+            "crítica o límites (precarización, ética profesional, responsabilidad del practicante)"
+          ],
+          "consultas": [
+            "definición y regulación de la práctica profesional supervisada, pasantías y servicio social en la formación universitaria",
+            "clínicas jurídicas y formación práctica del abogado: metodología, competencias y ejemplos de aplicación",
+            "críticas y límites de las prácticas profesionales: precarización laboral, ética y responsabilidad del practicante"
+          ],
+          "nota": "Las citas recuperadas en la ronda 2 no guardan relación temática con el concepto: tratan del PIDCP, jerarquía de tratados, iuspositivismo kelseniano y pasajes histórico-religiosos. Las similitudes son muy bajas (<0.10) y las coincidencias léxicas ('práctica acostumbrada', 'práctica generalizada') son homónimas, no conceptuales. El corpus disponible parece centrado en derechos humanos, por lo que probablemente carece de fuentes sobre formación y ejercicio profesional; se recomienda reformular las consultas y, si persiste la falta de resultados, ampliar el corpus con bibliografía de pedagogía jurídica, deontología y regulación del ejercicio profesional."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y regulación de la práctica profesional supervisada, pasantías y servicio social en la formación universitaria",
+            "hits": 4
+          },
+          {
+            "consulta": "clínicas jurídicas y formación práctica del abogado: metodología, competencias y ejemplos de aplicación",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites de las prácticas profesionales: precarización laboral, ética y responsabilidad del practicante",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  },
+  "Postura personal": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición del concepto: qué se entiende por 'postura personal' (toma de posición argumentada del autor frente a un debate doctrinal)",
+            "Fundamento teórico: papel de la valoración y la argumentación propia en la investigación jurídica; libertad de conciencia y opinión como sustento",
+            "Autor o corriente de referencia que sostenga una postura personal explícita sobre derechos humanos (iusnaturalismo vs. iuspositivismo, universalismo vs. relativismo)",
+            "Ejemplo o aplicación: pasajes donde un autor declara 'a mi juicio', 'consideramos', 'en nuestra opinión' respecto de un problema de derechos humanos",
+            "Crítica o límite: riesgo de subjetividad, sesgo ideológico y exigencia de fundamentación frente a la mera opinión"
+          ],
+          "consultas": [
+            "\"a nuestro juicio\" OR \"en nuestra opinión\" OR \"consideramos que\" postura del autor sobre el fundamento de los derechos humanos",
+            "toma de posición doctrinal: iusnaturalismo, iuspositivismo y relativismo cultural en el debate sobre el fundamento de los derechos humanos",
+            "objetividad y subjetividad en la argumentación jurídica: límites de la opinión personal frente a la fundamentación científica"
+          ],
+          "nota": "Las cinco citas recuperadas tienen similitud muy baja (0.05–0.07) y responden a coincidencias léxicas con 'personal' (desarrollo personal, libertad personal, derechos personalísimos, satisfacción personal), no al concepto buscado. Solo la cita de Rabinovich Berkman (p. 55) roza el sentido de 'postura' al mencionar 'una postura sostenida por prestigiosos autores', pero se refiere al debate sobre derechos personalísimos y no aporta definición, fundamento ni crítica del concepto. La ficha carece de todos los elementos evaluados; se requiere una nueva ronda con consultas orientadas a la toma de posición argumentada del autor y a sus límites metodológicos."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "\"a nuestro juicio\" OR \"en nuestra opinión\" OR \"consideramos que\" postura del autor sobre el fundamento de los derechos humanos",
+            "hits": 4
+          },
+          {
+            "consulta": "toma de posición doctrinal: iusnaturalismo, iuspositivismo y relativismo cultural en el debate sobre el fundamento de los derechos humanos",
+            "hits": 4
+          },
+          {
+            "consulta": "objetividad y subjetividad en la argumentación jurídica: límites de la opinión personal frente a la fundamentación científica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 18,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición explícita de qué se entiende por 'postura personal' (toma de posición propia y argumentada del autor/estudiante frente a un debate teórico)",
+            "Fundamento metodológico: por qué una obra académica o una ficha conceptual exige asumir y justificar una posición propia (carga argumentativa, honestidad intelectual, no neutralidad valorativa)",
+            "Cita donde Rabinovich-Berkman (u otro autor) enuncie expresamente 'mi postura', 'a mi juicio', 'personalmente entiendo que' respecto del fundamento de los derechos humanos",
+            "Límite o crítica específica de la postura personal: riesgo de subjetivismo, relativismo o falacia de autoridad; distinción entre opinión y argumento fundado"
+          ],
+          "consultas": [
+            "Rabinovich-Berkman \"mi opinión personal\" \"a mi juicio\" fundamento de los derechos humanos postura propia",
+            "\"personalmente entiendo\" \"considero que\" toma de posición del autor frente a teorías del fundamento de los derechos humanos (iusnaturalismo, existencialismo, dignidad)",
+            "riesgo de subjetivismo y relativismo al asumir una postura personal: diferencia entre opinión y argumentación jurídica fundada"
+          ],
+          "nota": "Las cinco citas tienen similitud muy baja (0.077–0.092) y ninguna aborda el concepto 'postura personal' de manera directa: son fragmentos sobre el fundamento existencial, la dignidad según Andorno, un caso de castigo físico en comunidades indígenas del Ecuador y organizaciones civiles mexicanas. Sirven, a lo sumo, como ejemplo indirecto (el debate sobre diversidad cultural donde cada expositor asume una posición) y como crítica (paradoja de la teoría existencial), pero falta el núcleo: definición y fundamento del concepto, más una cita en primera persona que evidencie la toma de posición del autor. Se recomienda una tercera ronda con las consultas propuestas; si tras ella persiste la baja similitud, conviene reformular el concepto como 'toma de posición argumentada del autor' o tratarlo como categoría metodológica de la ficha, no como concepto sustantivo de la fuente."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Rabinovich-Berkman \"mi opinión personal\" \"a mi juicio\" fundamento de los derechos humanos postura propia",
+            "hits": 4
+          },
+          {
+            "consulta": "\"personalmente entiendo\" \"considero que\" toma de posición del autor frente a teorías del fundamento de los derechos humanos (iusnaturalismo, existencialismo, dignidad)",
+            "hits": 4
+          },
+          {
+            "consulta": "riesgo de subjetivismo y relativismo al asumir una postura personal: diferencia entre opinión y argumentación jurídica fundada",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 26
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 26
+  }
+}

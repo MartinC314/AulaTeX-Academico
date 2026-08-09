@@ -1,0 +1,95 @@
+{
+  "tema": "Actividad 4: Garantías Constitucionales (Licenciatura en Derecho - UnADM)",
+  "objetivo": "Convertir la consigna en problema jurídico verificable, con evidencia, fundamento y postura académica propia.",
+  "tecnica_didactica": "",
+  "actividad": "4:\nGarantias\nConstitucionales\nLicenciatura en Derecho - UnADM\nAulaTeX\nPlantilla editorial verificable\nMartin Jonathan de la Cruz\nObjetivo editorial\nObjetivo editable\nConvertir la consigna en problema juridico verificable, con evidencia, fundamento\ny postura academica propia.\n> Semestre: 2. Bloque: 1.\n> Tipo: Obligatoria. Creditos: 8.\n> Bibliografia local: garantias-constitucionales.bib.\nGarantias Constitucionales - UnADM - 9 de agosto de 2026\nMarcadores de investigacion\n> Delimitar marco juridico.\n> Identificar instituciones y sujetos.\n> Vincular problema con practica profesional.\nGarantias Constitucionales - UnADM - 9 de agosto de 2026\nProducto y estructura\nProblema.\nMarco conceptual y normativo.\nAnalisis o producto visual.\nPostura personal.\nConclusion.\nGarantias Constitucionales - UnADM - 9 de agosto de 2026\nIndicaciones editoriales\n> Sintetizar la memoria editorial de la materia sin perder continuidad con reporte\ny actividad.\nGarantias Constitucionales - UnADM - 9 de agosto de 2026\nCriterios de calidad\n> Citas verificables.\n> Bibliografia local consistente.\n> Compilacion limpia.\n> Redaccion formal.\nGarantias Constitucionales - UnADM - 9 de agosto de 2026\nCierre\nLa plantilla queda lista para desarrollar la actividad con criterio juridico,\ntrazabilidad y control editorial.\nGarantias Constitucionales - UnADM - 9 de agosto de 2026",
+  "aprendizajes": [
+    "Delimitar marco jurídico",
+    "Identificar instituciones y sujetos",
+    "Vincular problema con práctica profesional"
+  ],
+  "bibliografia": [
+    "Bibliografía local: garantias-constitucionales.bib"
+  ],
+  "criterios_entrega": [
+    "Citas verificables",
+    "Bibliografía local consistente",
+    "Compilación limpia",
+    "Redacción formal"
+  ],
+  "conceptos_explicitos": [
+    "Garantías constitucionales",
+    "Marco jurídico",
+    "Marco conceptual y normativo",
+    "Instituciones y sujetos",
+    "Postura personal",
+    "Práctica profesional"
+  ],
+  "verbos_operativos": [
+    "identificar",
+    "sintetizar",
+    "desarrollar"
+  ],
+  "general_context": "",
+  "sections": {
+    "actividad": "4:\nGarantias\nConstitucionales\nLicenciatura en Derecho - UnADM\nAulaTeX\nPlantilla editorial verificable\nMartin Jonathan de la Cruz\nObjetivo editorial\nObjetivo editable\nConvertir la consigna en problema juridico verificable, con evidencia, fundamento\ny postura academica propia.\n> Semestre: 2. Bloque: 1.\n> Tipo: Obligatoria. Creditos: 8.\n> Bibliografia local: garantias-constitucionales.bib.\nGarantias Constitucionales - UnADM - 9 de agosto de 2026\nMarcadores de investigacion\n> Delimitar marco juridico.\n> Identificar instituciones y sujetos.\n> Vincular problema con practica profesional.\nGarantias Constitucionales - UnADM - 9 de agosto de 2026\nProducto y estructura\nProblema.\nMarco conceptual y normativo.\nAnalisis o producto visual.\nPostura personal.\nConclusion.\nGarantias Constitucionales - UnADM - 9 de agosto de 2026\nIndicaciones editoriales\n> Sintetizar la memoria editorial de la materia sin perder continuidad con reporte\ny actividad.\nGarantias Constitucionales - UnADM - 9 de agosto de 2026\nCriterios de calidad\n> Citas verificables.\n> Bibliografia local consistente.\n> Compilacion limpia.\n> Redaccion formal.\nGarantias Constitucionales - UnADM - 9 de agosto de 2026\nCierre\nLa plantilla queda lista para desarrollar la actividad con criterio juridico,\ntrazabilidad y control editorial.\nGarantias Constitucionales - UnADM - 9 de agosto de 2026"
+  },
+  "campos_detectados": [
+    "actividad"
+  ],
+  "resumen": "campos=actividad | verbos=identificar, sintetizar, desarrollar",
+  "anthropic_page_evidence": {
+    "tema": [
+      "p. 1, bloque 1",
+      "p. 1, bloque 2"
+    ],
+    "objetivo": [
+      "p. 2, bloque 1",
+      "p. 2, bloque 2",
+      "p. 2, bloque 3"
+    ],
+    "tecnica_didactica": [],
+    "actividad": [
+      "p. 4, bloque 1",
+      "p. 4, bloque 2",
+      "p. 4, bloque 3",
+      "p. 4, bloque 4",
+      "p. 4, bloque 5",
+      "p. 4, bloque 6",
+      "p. 5, bloque 1",
+      "p. 5, bloque 2",
+      "p. 5, bloque 3"
+    ],
+    "bibliografia": [
+      "p. 2, bloque 6"
+    ],
+    "criterios_entrega": [
+      "p. 6, bloque 1",
+      "p. 6, bloque 2",
+      "p. 6, bloque 3",
+      "p. 6, bloque 4",
+      "p. 6, bloque 5"
+    ],
+    "aprendizajes": [
+      "p. 3, bloque 1",
+      "p. 3, bloque 2",
+      "p. 3, bloque 3",
+      "p. 3, bloque 4"
+    ],
+    "conceptos_clave": [
+      "p. 1, bloque 1",
+      "p. 3, bloque 2",
+      "p. 3, bloque 3",
+      "p. 3, bloque 4",
+      "p. 4, bloque 3",
+      "p. 4, bloque 5"
+    ]
+  },
+  "anthropic_warnings": [
+    "No se indica explícitamente una técnica didáctica; el campo se dejó vacío.",
+    "Los 'aprendizajes' se derivaron de la sección 'Marcadores de investigación' (p. 3); el documento no los nombra como aprendizajes esperados.",
+    "La bibliografía solo se menciona como archivo local (garantias-constitucionales.bib); no se listan referencias específicas.",
+    "No se especifican formato de entrega, extensión, fecha límite ni ponderación/rúbrica; solo criterios de calidad generales.",
+    "Datos administrativos adicionales sin categoría solicitada: Semestre 2, Bloque 1, asignatura obligatoria, 8 créditos, fecha 9 de agosto de 2026."
+  ]
+}
