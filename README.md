@@ -360,6 +360,9 @@ token no descifra, aborta sin escribir nada; ademas deja `aulatex.env.bak-rotate
 como respaldo. Renovar el salt invalida las claves derivadas del PIN anterior,
 de modo que una copia vieja del `.env` deja de servir aunque se conozca ese PIN.
 
+El minimo son 4 caracteres, pero por debajo de 16 (o si el PIN es solo numerico)
+el script advierte, calcula el espacio de busqueda y exige escribir `ACEPTO`.
+
 ```powershell
 .\scripts\rotate-pin.ps1            # PIN solo para la consola actual
 .\scripts\rotate-pin.ps1 -Persist   # ademas lo guarda en la variable de usuario

@@ -19,9 +19,10 @@
     Archivo .env a recifrar. Por defecto scripts/aulatex.env.
 
 .PARAMETER MinLength
-    Longitud minima exigida al PIN nuevo. Por defecto 16: un PIN numerico corto
-    se agota por fuerza bruta pese a las 480 000 iteraciones de PBKDF2, y este
-    repositorio es publico.
+    Longitud minima exigida al PIN nuevo. Por defecto 4. Por debajo de 16 el
+    script advierte y pide confirmacion: los blobs enc: se versionan en un repo
+    publico, asi que un PIN corto se agota por fuerza bruta pese a las 480 000
+    iteraciones de PBKDF2.
 
 .PARAMETER Persist
     Guarda el PIN nuevo en la variable de usuario AULATEX_MASTER_PIN. Comodo, pero
@@ -38,7 +39,7 @@
 [CmdletBinding(SupportsShouldProcess, ConfirmImpact = 'High')]
 param(
     [string]$EnvFile = 'aulatex.env',
-    [int]$MinLength = 16,
+    [int]$MinLength = 4,
     [switch]$Persist
 )
 
@@ -87,8 +88,19 @@ $confirm = Get-PlainText $confirmSecure
 if ($new -ne $confirm) { throw 'Los PIN nuevos no coinciden.' }
 if ($new.Length -lt $MinLength) { throw "El PIN nuevo debe tener al menos $MinLength caracteres." }
 if ($new -eq $current) { throw 'El PIN nuevo es igual al actual.' }
-if ($new -match '^\d+$') {
-    Write-Warning 'El PIN nuevo es solo numerico: una frase con letras y simbolos resiste mucho mejor.'
+
+# Un PIN debil no se rechaza, pero exige un reconocimiento explicito.
+if ($new.Length -lt 16 -or $new -match '^\d+$') {
+    $espacio = if ($new -match '^\d+$') { [math]::Pow(10, $new.Length) } else { $null }
+    Write-Warning 'PIN debil: los blobs enc: viajan en un repositorio publico, asi que es lo unico que protege tus claves de Azure.'
+    if ($espacio) {
+        Write-Warning ("Solo numerico y de {0} digitos: {1:N0} combinaciones posibles." -f $new.Length, $espacio)
+    }
+    $ok = Read-Host 'Escribe ACEPTO para continuar de todos modos'
+    if ($ok -ne 'ACEPTO') {
+        Write-Host 'Cancelado: no se modifico nada.' -ForegroundColor Yellow
+        return
+    }
 }
 
 if (-not $PSCmdlet.ShouldProcess($envPath, "Recifrar $encCount secretos y renovar el salt")) {
