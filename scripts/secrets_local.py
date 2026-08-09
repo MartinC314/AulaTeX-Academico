@@ -10,6 +10,7 @@ Comandos:
     python secrets_local.py decrypt-env aulatex.env  # imprime NAME<TAB>plano (PowerShell)
     python secrets_local.py hydrate aulatex.env      # descifra en os.environ (Python)
     python secrets_local.py set-value aulatex.env NOMBRE  # cifra un valor leido de stdin
+    python secrets_local.py rotate-pin aulatex.env   # recifra con un PIN nuevo (stdin)
 
 Resolución de la clave:
     1. Variable de entorno ``AHK_MASTER_PIN`` (PIN maestro; deriva la clave Fernet
@@ -69,10 +70,7 @@ def _resolve_salt(create: bool = False) -> bytes | None:
     return None
 
 
-def fernet_from_pin(pin: str, create_salt: bool = False) -> Fernet | None:
-    salt = _resolve_salt(create=create_salt)
-    if salt is None:
-        return None
+def _fernet_from_pin_and_salt(pin: str, salt: bytes) -> Fernet:
     kdf = PBKDF2HMAC(
         algorithm=hashes.SHA256(),
         length=32,
@@ -80,6 +78,13 @@ def fernet_from_pin(pin: str, create_salt: bool = False) -> Fernet | None:
         iterations=PBKDF2_ITERATIONS,
     )
     return Fernet(base64.urlsafe_b64encode(kdf.derive(pin.encode("utf-8"))))
+
+
+def fernet_from_pin(pin: str, create_salt: bool = False) -> Fernet | None:
+    salt = _resolve_salt(create=create_salt)
+    if salt is None:
+        return None
+    return _fernet_from_pin_and_salt(pin, salt)
 
 
 def resolve_fernet(create: bool = False) -> Fernet | None:
@@ -202,6 +207,78 @@ def cmd_set_value(env_file: str, name: str) -> int:
     return 0
 
 
+def cmd_rotate_pin(env_file: str) -> int:
+    """Recifra los valores enc: del .env con un PIN nuevo.
+
+    Lee ``PIN_ACTUAL\\nPIN_NUEVO`` por stdin para que ninguno pase por argv.
+    Renueva el salt, de modo que las claves derivadas antiguas dejan de servir
+    aunque alguien conserve una copia del .env previo.
+    """
+    path = HERE / env_file if not Path(env_file).is_absolute() else Path(env_file)
+    if not path.exists():
+        print(f"No existe: {path}", file=sys.stderr)
+        return 1
+
+    # PowerShell 5.1 antepone un BOM al canalizar hacia stdin.
+    payload = sys.stdin.read().lstrip("\ufeff").splitlines()
+    if len(payload) < 2:
+        print("Se esperaban dos lineas por stdin: PIN actual y PIN nuevo.", file=sys.stderr)
+        return 1
+    old_pin, new_pin = payload[0].strip(), payload[1].strip()
+    if not old_pin or not new_pin:
+        print("Ningun PIN puede quedar vacio.", file=sys.stderr)
+        return 1
+    if old_pin == new_pin:
+        print("El PIN nuevo es igual al actual.", file=sys.stderr)
+        return 1
+
+    old_salt = _resolve_salt(create=False)
+    if old_salt is None:
+        print(f"No existe {SECRET_SALT_PATH.name}: no hay nada que rotar.", file=sys.stderr)
+        return 1
+    old_f = _fernet_from_pin_and_salt(old_pin, old_salt)
+
+    lines = path.read_text(encoding="utf-8").splitlines()
+
+    # Descifrar todo antes de escribir: si un token falla, se aborta sin tocar nada.
+    plain_by_index: dict[int, str] = {}
+    for i, line in enumerate(lines):
+        name, value = _parse_line(line)
+        if not (name and value and value.startswith(ENC_PREFIX)):
+            continue
+        try:
+            plain_by_index[i] = old_f.decrypt(
+                value[len(ENC_PREFIX):].encode("ascii")
+            ).decode("utf-8")
+        except InvalidToken:
+            print(f"PIN actual incorrecto: no se pudo descifrar {name}.", file=sys.stderr)
+            return 1
+
+    if not plain_by_index:
+        print("No hay valores enc: que rotar.", file=sys.stderr)
+        return 1
+
+    backup = path.with_suffix(path.suffix + ".bak-rotate")
+    backup.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    _restrict_permissions(backup)
+
+    new_salt = base64.urlsafe_b64encode(os.urandom(16))
+    new_f = _fernet_from_pin_and_salt(new_pin, new_salt)
+    for i, plain in plain_by_index.items():
+        name, _ = _parse_line(lines[i])
+        token = new_f.encrypt(plain.encode("utf-8")).decode("ascii")
+        lines[i] = f"{name}={ENC_PREFIX}{token}"
+
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    SECRET_SALT_PATH.write_bytes(new_salt)
+    _restrict_permissions(SECRET_SALT_PATH)
+
+    print(f"Recifrados {len(plain_by_index)} secretos en {path.name}")
+    print(f"Salt renovado: {SECRET_SALT_PATH.name}")
+    print(f"Respaldo previo: {backup.name} (borralo cuando confirmes el acceso)")
+    return 0
+
+
 def hydrate(env_file: str) -> None:
     """Descifra los valores enc: del .env directamente en os.environ."""
     path = HERE / env_file if not Path(env_file).is_absolute() else Path(env_file)
@@ -233,6 +310,8 @@ def main() -> int:
         return cmd_decrypt_env(sys.argv[2])
     if cmd == "set-value" and len(sys.argv) >= 4:
         return cmd_set_value(sys.argv[2], sys.argv[3])
+    if cmd == "rotate-pin" and len(sys.argv) >= 3:
+        return cmd_rotate_pin(sys.argv[2])
     if cmd == "hydrate" and len(sys.argv) >= 3:
         hydrate(sys.argv[2])
         return 0

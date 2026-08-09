@@ -353,6 +353,18 @@ $env:AHK_MASTER_PIN = '<pin>'
 [Environment]::SetEnvironmentVariable('AHK_MASTER_PIN', '<pin>', 'User')
 ```
 
+Para cambiar el PIN, `scripts/rotate-pin.ps1` descifra los valores `enc:` con el
+PIN actual, renueva el salt y vuelve a cifrarlos con el nuevo. Ambos PIN se piden
+como `SecureString` y viajan por stdin, asi que no quedan en el historial. Si un
+token no descifra, aborta sin escribir nada; ademas deja `aulatex.env.bak-rotate`
+como respaldo. Renovar el salt invalida las claves derivadas del PIN anterior,
+de modo que una copia vieja del `.env` deja de servir aunque se conozca ese PIN.
+
+```powershell
+.\scripts\rotate-pin.ps1            # PIN solo para la consola actual
+.\scripts\rotate-pin.ps1 -Persist   # ademas lo guarda en la variable de usuario
+```
+
 `scripts/sync-keys.ps1` sustituye las claves del `.env` con las de tus
 suscripciones. Recorre todas las suscripciones de `az account list`, inventaria
 las cuentas de Cognitive Services y asocia cada variable `*_API_KEY` con la
