@@ -1,0 +1,25 @@
+{
+  "subject_slug": "interaprendizaje-en-ambientes-virtuales",
+  "kept": [
+    "brújula interaprendizaje",
+    "compromiso personal",
+    "compromiso personal estudiante",
+    "entornos virtuales",
+    "estudiante entornos virtuales"
+  ],
+  "discarded": [
+    "estudiante entornos",
+    "lectura propuesta",
+    "lectura propuesta aplicar",
+    "personal estudiante",
+    "personal estudiante entornos",
+    "propuesta aplicar",
+    "reflexionar lectura",
+    "reflexionar lectura propuesta",
+    "semana toca",
+    "semana toca reflexionar",
+    "toca reflexionar",
+    "toca reflexionar lectura"
+  ],
+  "notes": "Se conservan los conceptos con contenido temático propio de la materia: la metáfora de la 'brújula' del interaprendizaje, el compromiso personal del estudiante y los entornos virtuales como escenario de aprendizaje. Se descartan fragmentos n-gram truncados sin sentido autónomo ('personal estudiante', 'estudiante entornos', 'propuesta aplicar') y expresiones instruccionales o administrativas propias del enunciado de la tarea ('semana toca reflexionar', 'lectura propuesta'), que describen la consigna y no aportan carga conceptual para redactar la actividad."
+}

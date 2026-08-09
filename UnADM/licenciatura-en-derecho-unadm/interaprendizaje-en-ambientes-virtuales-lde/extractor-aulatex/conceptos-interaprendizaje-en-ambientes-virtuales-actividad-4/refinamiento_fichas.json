@@ -1,0 +1,449 @@
+{
+  "brújula interaprendizaje": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'brújula' como herramienta/metáfora orientadora dentro de procesos de interaprendizaje",
+            "Fundamento teórico-metodológico (diálogo de saberes, educación intercultural, milpa educativa) que sustenta la figura de la brújula",
+            "Autoría o marco institucional que acuña el término (p. ej. Bertely Busquets y colectivos indígenas; o metodología PACIE)",
+            "Ejemplo concreto de aplicación: instrumento, matriz, fases o guía práctica de la brújula en talleres o diplomados",
+            "Críticas, límites o tensiones del enfoque (riesgo de instrumentalización, asimetrías de poder, evaluación de resultados)"
+          ],
+          "consultas": [
+            "brújula metodológica interaprendizaje entre indígenas diálogo de saberes Bertely",
+            "definición y fases de la brújula como herramienta orientadora en procesos formativos interculturales",
+            "límites y críticas del interaprendizaje: asimetrías, mediación y evaluación de la propuesta metodológica"
+          ],
+          "nota": "Las citas recuperadas solo documentan el término 'interaprendizaje' asociado a la metodología PACIE (resultados estadísticos de una intervención) y, marginalmente, al interaprendizaje entre indígenas. Ninguna menciona la noción de 'brújula', por lo que no hay definición, fundamento, autoría, ejemplo ni crítica del concepto compuesto. Similitudes muy bajas (<0.13) sugieren que el corpus actual no contiene la fuente pertinente; conviene ampliar a textos de educación intercultural/milpa educativa o a manuales metodológicos que usen la metáfora de la brújula."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "brújula metodológica interaprendizaje entre indígenas diálogo de saberes Bertely",
+            "hits": 4
+          },
+          {
+            "consulta": "definición y fases de la brújula como herramienta orientadora en procesos formativos interculturales",
+            "hits": 4
+          },
+          {
+            "consulta": "límites y críticas del interaprendizaje: asimetrías, mediación y evaluación de la propuesta metodológica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 18,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'brújula' como metáfora, instrumento o herramienta orientadora dentro del interaprendizaje (ninguna cita menciona el término 'brújula')",
+            "Fundamento teórico-pedagógico que articule la noción de brújula con el interaprendizaje (aprendizaje dialógico, comunitario, mediación)",
+            "Autor o fuente que acuñe o utilice la expresión (p. ej. Bertely Busquets, metodología PACIE, educación popular)",
+            "Ejemplo o aplicación concreta del uso de la brújula como guía metodológica en un proceso de interaprendizaje",
+            "Críticas, límites o tensiones del uso de la metáfora orientadora (riesgo de prescriptividad, descontextualización cultural)",
+            "Baja pertinencia general: similitudes < 0.14, las citas describen resultados estadísticos de PACIE y (co)teorización, no el concepto solicitado"
+          ],
+          "consultas": [
+            "brújula metodológica orientación proceso de interaprendizaje comunitario",
+            "definición interaprendizaje construcción colectiva de conocimiento entre pares Bertely",
+            "instrumento guía o ruta metodológica limitaciones críticas del interaprendizaje intercultural"
+          ],
+          "nota": "La evidencia recuperada no aborda el concepto 'brújula interaprendizaje': ninguna cita contiene el término 'brújula' ni una definición operativa. Solo se cubre parcialmente el componente de ejemplo/aplicación mediante el caso PACIE en el ISTR (mejora de mediana 6.20 a 9.80), que ilustra interaprendizaje pero no la dimensión de brújula u orientación. Se recomienda una ronda adicional de búsqueda con las consultas propuestas y, si persiste la ausencia, verificar si el término es propio de una fuente no indexada o si debe reformularse como metáfora orientadora del interaprendizaje."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "brújula metodológica orientación proceso de interaprendizaje comunitario",
+            "hits": 4
+          },
+          {
+            "consulta": "definición interaprendizaje construcción colectiva de conocimiento entre pares Bertely",
+            "hits": 4
+          },
+          {
+            "consulta": "instrumento guía o ruta metodológica limitaciones críticas del interaprendizaje intercultural",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "compromiso personal": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definición explícita de compromiso personal como concepto",
+            "fundamento teórico o normativo (ético, pedagógico o jurídico) que lo sustente",
+            "autor o corriente que lo teorice (p. ej. ética del cuidado, investigación militante, compromiso freireano)",
+            "crítica o límites: riesgo de subjetivismo, sobrecarga individual, tensión con la imparcialidad institucional"
+          ],
+          "consultas": [
+            "definición de compromiso personal y ético del investigador en trabajo con comunidades indígenas",
+            "compromiso político y personal en la educación liberadora Freire investigación militante",
+            "límites y riesgos del compromiso personal: imparcialidad, objetividad y sobreimplicación del investigador o juzgador"
+          ],
+          "nota": "Las citas recuperadas tienen similitud muy baja (máx. 0.11) y usan 'compromiso' y 'personal' de forma incidental, no como concepto definido. Solo aportan ejemplos contextuales (maestros indígenas autónomos, diplomados UPN) sin definición, fundamento, autoría ni discusión crítica. Se requiere una segunda ronda con consultas dirigidas al marco ético-pedagógico y a sus límites."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de compromiso personal y ético del investigador en trabajo con comunidades indígenas",
+            "hits": 4
+          },
+          {
+            "consulta": "compromiso político y personal en la educación liberadora Freire investigación militante",
+            "hits": 4
+          },
+          {
+            "consulta": "límites y riesgos del compromiso personal: imparcialidad, objetividad y sobreimplicación del investigador o juzgador",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 17,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "definición explícita de compromiso personal como categoría ético-profesional",
+            "fundamento teórico o normativo del compromiso (deber ético, responsabilidad del funcionariado o del docente)",
+            "autoría identificable que teorice el concepto",
+            "crítica o límite: riesgo de que el compromiso personal derive en parcialidad, sesgo o sustituya garantías institucionales"
+          ],
+          "consultas": [
+            "definición de compromiso ético personal del juzgador y deber de imparcialidad",
+            "compromiso del docente con la comunidad: responsabilidad social e implicación personal en educación intercultural",
+            "límites y riesgos del involucramiento personal: parcialidad, subjetividad y prejuicios en la función pública"
+          ],
+          "nota": "Las citas tienen similitud muy baja (<0.11) y ninguna define el concepto: aluden a 'factor personal' de competencia indígena y a prejuicios personales, que son homónimos no equivalentes. Solo la cita de Bertely (p. 145 y p. 93) aporta un uso pertinente como compromiso docente/ético-político, útil como ejemplo pero insuficiente como definición. Se requiere una nueva ronda enfocada en las dimensiones ética, deontológica y crítica del término."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de compromiso ético personal del juzgador y deber de imparcialidad",
+            "hits": 4
+          },
+          {
+            "consulta": "compromiso del docente con la comunidad: responsabilidad social e implicación personal en educación intercultural",
+            "hits": 4
+          },
+          {
+            "consulta": "límites y riesgos del involucramiento personal: parcialidad, subjetividad y prejuicios en la función pública",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 25
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 25
+  },
+  "compromiso personal estudiante": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'compromiso personal del estudiante' (engagement / implicación académica) y sus dimensiones (conductual, emocional, cognitiva)",
+            "Fundamento teórico o pedagógico que sustente el compromiso como factor de aprendizaje (motivación, autorregulación, aprendizaje significativo)",
+            "Autor o referencia identificable que formule el concepto (p. ej. Fredricks, Schaufeli, Ausubel, Zimmerman) con cita textual atribuible",
+            "Ejemplo o aplicación concreta en aula: indicadores, instrumentos de medición o estrategias que promuevan el compromiso estudiantil",
+            "Crítica, límite o tensión del concepto (responsabilización individual del alumno, dificultad de medición, factores contextuales y socioeconómicos)"
+          ],
+          "consultas": [
+            "compromiso e implicación del estudiante en su propio aprendizaje: responsabilidad, motivación y autorregulación",
+            "dimensiones del engagement estudiantil: conductual, emocional y cognitivo según autores",
+            "estrategias y evaluación del compromiso del alumno en metodologías activas: participación, corresponsabilidad y limitaciones"
+          ],
+          "nota": "Las cinco citas recuperadas tienen similitud muy baja (<0.12) y ninguna aborda directamente el compromiso personal del estudiante: tratan de metodología, relación docente-alumno, un cuestionario diagnóstico y un fragmento de derecho indígena claramente ajeno al concepto. La evidencia es insuficiente en todas las dimensiones; se requiere una segunda ronda con consultas más específicas orientadas a implicación/engagement, autorregulación y sus críticas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "compromiso e implicación del estudiante en su propio aprendizaje: responsabilidad, motivación y autorregulación",
+            "hits": 4
+          },
+          {
+            "consulta": "dimensiones del engagement estudiantil: conductual, emocional y cognitivo según autores",
+            "hits": 4
+          },
+          {
+            "consulta": "estrategias y evaluación del compromiso del alumno en metodologías activas: participación, corresponsabilidad y limitaciones",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de compromiso personal del estudiante (engagement/implicación) como constructo",
+            "Fundamento teórico (autorregulación, motivación intrínseca, teoría de la autodeterminación, constructivismo)",
+            "Autor o referencia citada que sustente el concepto",
+            "Ejemplo o aplicación concreta en el aula (indicadores observables, resultados del estudio)",
+            "Crítica o límite (factores que dificultan el compromiso, dependencia del docente, contexto socioeconómico)"
+          ],
+          "consultas": [
+            "compromiso e implicación del estudiante en su propio aprendizaje definición responsabilidad autonomía",
+            "motivación intrínseca y autorregulación del aprendizaje según autores (Vygotsky, Ausubel, Piaget) citados en el marco teórico",
+            "resultados encuestas participación, responsabilidad y actitud de los estudiantes: limitaciones y dificultades encontradas"
+          ],
+          "nota": "Las citas recuperadas tienen similitud muy baja (<0.17) y provienen de secciones metodológicas (objetivos, hipótesis, recomendaciones) de una única fuente; solo la cita de p.15 roza el concepto al mencionar responsabilidad y participación, pero sin definirlo ni fundamentarlo. La ficha no es publicable: se requiere una segunda ronda orientada al marco teórico y a los resultados empíricos, y conviene ampliar el corpus a fuentes adicionales sobre engagement académico."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "compromiso e implicación del estudiante en su propio aprendizaje definición responsabilidad autonomía",
+            "hits": 4
+          },
+          {
+            "consulta": "motivación intrínseca y autorregulación del aprendizaje según autores (Vygotsky, Ausubel, Piaget) citados en el marco teórico",
+            "hits": 4
+          },
+          {
+            "consulta": "resultados encuestas participación, responsabilidad y actitud de los estudiantes: limitaciones y dificultades encontradas",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  },
+  "entornos virtuales": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita y operativa de 'entorno virtual de aprendizaje' (EVA/EVEA): qué es, componentes y características",
+            "Fundamento teórico-pedagógico (constructivismo, conectivismo, aprendizaje mediado por TIC) que sustenta los entornos virtuales",
+            "Distinción conceptual entre entorno virtual, aula virtual, plataforma LMS y educación en línea",
+            "Límites, críticas o desventajas: brecha digital, deserción, falta de interacción, sobrecarga docente",
+            "Diversidad de fuentes: todas las citas provienen de un único documento y con similitud baja (<0.30)"
+          ],
+          "consultas": [
+            "definición de entorno virtual de aprendizaje EVA características y componentes",
+            "fundamento teórico constructivismo conectivismo entornos virtuales de aprendizaje TIC",
+            "limitaciones desventajas y críticas de los entornos virtuales de aprendizaje brecha digital deserción"
+          ],
+          "nota": "La evidencia recuperada es monofuente (una sola tesis sobre metodología PACIE) y con similitudes bajas; aporta contexto de aplicación (REYBANCPAC, educación superior en pandemia) y menciones de autores (Proaño 2012, Becerra 2013/2014, Madriz 2016, Basantes 2018, Carbache et al. 2021), pero no ofrece una definición formal ni el sustento teórico del concepto, y carece por completo de perspectiva crítica o de límites. Se requiere una segunda ronda de búsqueda orientada a definición, fundamento y crítica, preferentemente en fuentes distintas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de entorno virtual de aprendizaje EVA características y componentes",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento teórico constructivismo conectivismo entornos virtuales de aprendizaje TIC",
+            "hits": 4
+          },
+          {
+            "consulta": "limitaciones desventajas y críticas de los entornos virtuales de aprendizaje brecha digital deserción",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 14
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 14,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición conceptual explícita de entorno virtual (EVA/EVEA) con sus componentes y características",
+            "Fundamento teórico-pedagógico (constructivismo, conectivismo, aprendizaje mediado por TIC) que sustenta los entornos virtuales",
+            "Autor o fuente de referencia que enuncie la definición (p. ej. Salinas, Area y Adell, Silva, Belloch) con año y cita textual",
+            "Crítica, limitaciones o desafíos: brecha digital, deserción en línea, falta de interacción, sobrecarga docente"
+          ],
+          "consultas": [
+            "definición de entorno virtual de aprendizaje EVEA características componentes según autor",
+            "fundamento pedagógico constructivista y conectivismo de los entornos virtuales de aprendizaje",
+            "limitaciones desventajas y desafíos de los entornos virtuales de aprendizaje brecha digital interacción"
+          ],
+          "nota": "Las citas recuperadas provienen de una sola fuente y giran en torno a la metodología PACIE, no al concepto en sí. Aportan aplicaciones concretas (REYBANPAC, aulas virtuales universitarias, contexto de pandemia) pero ninguna enuncia qué es un entorno virtual, en qué teoría se apoya, ni sus límites. Las similitudes son bajas (<0.30), lo que sugiere que el corpus consultado no contiene el desarrollo conceptual; conviene ampliar a fuentes específicas sobre EVA/EVEA antes de cerrar la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición de entorno virtual de aprendizaje EVEA características componentes según autor",
+            "hits": 4
+          },
+          {
+            "consulta": "fundamento pedagógico constructivista y conectivismo de los entornos virtuales de aprendizaje",
+            "hits": 4
+          },
+          {
+            "consulta": "limitaciones desventajas y desafíos de los entornos virtuales de aprendizaje brecha digital interacción",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 16
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 16
+  },
+  "estudiante entornos virtuales": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita del rol del estudiante en entornos virtuales de aprendizaje (EVA/EVEA): características, autonomía, autorregulación",
+            "Fundamento teórico (constructivismo, aprendizaje autónomo, conectivismo) que sustenta el papel activo del estudiante en la virtualidad",
+            "Competencias digitales y perfil del estudiante virtual (habilidades requeridas, motivación, gestión del tiempo)",
+            "Crítica o límites: brecha digital, deserción, falta de conectividad, aislamiento, sobrecarga cognitiva, dificultades de interacción",
+            "Evidencia empírica específica sobre desempeño o satisfacción del estudiante en aulas virtuales (datos, resultados del estudio)"
+          ],
+          "consultas": [
+            "rol del estudiante en el entorno virtual de aprendizaje autonomía autorregulación aprendizaje en línea",
+            "competencias digitales y habilidades del estudiante universitario en aulas virtuales Moodle",
+            "dificultades limitaciones del estudiante en educación virtual brecha digital deserción conectividad motivación"
+          ],
+          "nota": "Las citas recuperadas tienen similitud baja (<0.22) y giran en torno a la metodología PACIE y a los entornos virtuales en general, no al estudiante como sujeto. No hay una definición conceptual del estudiante virtual ni fundamento teórico propio; solo aparecen autores citados de forma indirecta (Madriz, Becerra, Carbache, Proaño) y aplicaciones contextuales (pandemia, empresa REYBANCPAC). Falta por completo el eje crítico. Se recomienda una segunda ronda con las consultas propuestas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "rol del estudiante en el entorno virtual de aprendizaje autonomía autorregulación aprendizaje en línea",
+            "hits": 4
+          },
+          {
+            "consulta": "competencias digitales y habilidades del estudiante universitario en aulas virtuales Moodle",
+            "hits": 4
+          },
+          {
+            "consulta": "dificultades limitaciones del estudiante en educación virtual brecha digital deserción conectividad motivación",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": true,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición operativa de 'estudiante en entornos virtuales' (perfil, rol activo, autonomía, autorregulación del aprendizaje)",
+            "Fundamento teórico-pedagógico (constructivismo, conectivismo, aprendizaje autónomo y colaborativo mediado por TIC)",
+            "Autor o fuente de referencia que caracterice al estudiante virtual (p. ej. Oñate/Camacho para PACIE, Garrison y Anderson, Siemens, García Aretio)",
+            "Crítica o límites: brecha digital, deserción, falta de competencias digitales, sobrecarga cognitiva, aislamiento y baja interacción"
+          ],
+          "consultas": [
+            "definición y características del estudiante en entornos virtuales de aprendizaje: rol activo, autonomía y autorregulación",
+            "competencias digitales y dificultades del estudiante en aulas virtuales: brecha digital, deserción, motivación",
+            "rol del estudiante en la metodología PACIE según Oñate/Camacho: interacción, participación y construcción del conocimiento"
+          ],
+          "nota": "Las citas recuperadas giran en torno a la metodología PACIE y a la coyuntura de pandemia, con similitudes bajas (0.17–0.24) y sin foco directo en el sujeto 'estudiante'. Solo se logra un respaldo indirecto de aplicación (aulas virtuales universitarias, caso REYBANCPAC). Falta el núcleo conceptual: definición, sustento teórico, autoría de referencia y discusión de límites. Se recomienda una nueva ronda de recuperación con las consultas propuestas antes de redactar la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "definición y características del estudiante en entornos virtuales de aprendizaje: rol activo, autonomía y autorregulación",
+            "hits": 4
+          },
+          {
+            "consulta": "competencias digitales y dificultades del estudiante en aulas virtuales: brecha digital, deserción, motivación",
+            "hits": 4
+          },
+          {
+            "consulta": "rol del estudiante en la metodología PACIE según Oñate/Camacho: interacción, participación y construcción del conocimiento",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 26
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 26
+  }
+}

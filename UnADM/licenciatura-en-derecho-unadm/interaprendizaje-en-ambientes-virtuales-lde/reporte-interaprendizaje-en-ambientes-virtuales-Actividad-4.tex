@@ -1,0 +1,457 @@
+\documentclass[
+  spanish,
+  letterpaper, oneside
+]{article}
+
+\def\documenttitle {Ser estudiante en entornos virtuales de enseñanza-aprendizaje}
+\def\documentsubtitle {Brújula de Interaprendizaje y compromisos de mejora}
+\def\documentsubject {Actividad 4 - Interaprendizaje en ambientes virtuales}
+
+\def\documentauthor {Martin Jonathan de la Cruz}
+\def\coursename {Interaprendizaje en ambientes virtuales}
+\def\coursecode {004}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Interaprendizaje en ambientes virtuales}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de México}
+
+\def\authortable {
+  \begin{tabular}{ll}
+    \textbf{Alumno:}
+    & \begin{tabular}[t]{l}
+      Martin Jonathan de la Cruz \\
+    \end{tabular} \\
+    Matrícula: & ES2611202040 \\
+    Figura docente: & Janeth Santana Ramírez \\
+    Semestre/Bloque: & 2 / 1 \\
+    & \\
+    \multicolumn{2}{l}{Fecha de realización: \today} \\
+    \multicolumn{2}{l}{\universitylocation}
+  \end{tabular}
+}
+
+\input{template}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric,shadows.blur}
+\setcitestyle{authoryear,open={(},close={)}}
+
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+  \ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+    \AddToShipoutPictureBG*{%
+      \begin{tikzpicture}[remember picture,overlay]
+        \node[
+          opacity=\coverwatermarkopacity,
+          inner sep=0pt,
+          xshift=\coverwatermarkxshift,
+          yshift=\coverwatermarkyshift
+        ] at (current page.center) {%
+          \includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+        };
+      \end{tikzpicture}%
+    }%
+  }{}%
+}
+
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+\definecolor{unadmRowAlt}{HTML}{EEF2E6}
+
+% -----------------------------------------------------------------------------
+% AulaTeX:ficha-producto v1 -- bloque de la Ficha de recuperación.
+% La ficha es el entregable con que se materializa la técnica CUESTIONARIO
+% (#32 de las 100 Técnicas Didácticas UnADM): el instrumento recoge datos y la
+% ficha los convierte en lectura razonada y compromisos verificables.
+% Caja institucional homóloga al wikibox de la materia.
+% -----------------------------------------------------------------------------
+\usepackage[most]{tcolorbox}
+\usepackage{attachfile}
+\usepackage{enumitem}
+
+% attachfile: el 'color' debe darse como TRIPLE RGB numérico (0..1); un nombre
+% \definecolor[HTML] provoca 'Argument of \atfi@textcolor has an extra }'.
+\attachfilesetup{color={0.373 0.561 0.227},print=false}
+
+% Botón de copia: appearance={} oculta el PushPin y muestra el 2.o argumento como
+% botón visible. Adjunta el .txt embebido con la ficha copiable.
+\newcommand{\fichaCopyButton}[1]{%
+  \textattachfile[appearance={},description={Ficha de recuperacion (texto copiable)},mimetype=text/plain]{#1}{%
+    \colorbox{unadmGreen}{\small\textcolor{white}{\,Copiar ficha\,}}%
+  }%
+}
+
+\newtcolorbox{fichabox}[1][]{%
+  enhanced, breakable,
+  colback=unadmPaper, colframe=unadmGreen,
+  boxrule=0pt, leftrule=3pt, arc=1.2mm,
+  left=4mm, right=4mm, top=3mm, bottom=3mm,
+  fonttitle=\bfseries\color{white}, coltitle=white, colbacktitle=unadmGreenDark,
+  attach boxed title to top left={xshift=4mm,yshift=-2mm},
+  boxed title style={colframe=unadmGreenDark,arc=0.6mm},
+  #1
+}
+
+\newcommand{\fichameta}[4]{%
+  \begin{tcolorbox}[colback=unadmRowAlt,colframe=unadmRowAlt,boxrule=0pt,arc=1mm,
+    left=2mm,right=2mm,top=1.5mm,bottom=1.5mm]
+  {\small\begin{tabular}{@{}p{3.4cm}p{9.6cm}@{}}
+    \textbf{Instrumento} & #1 \\
+    \textbf{Participante} & #2 \\
+    \textbf{Fecha de aplicación} & #3 \\
+    \textbf{Espacio / curso} & #4 \\
+  \end{tabular}}
+  \end{tcolorbox}\medskip}
+
+\begin{document}
+
+\insertcoverwatermark
+\templatePortrait
+\templatePagecfg
+\onehalfspacing
+
+\begin{abstractd}
+  Ser estudiante en un entorno virtual no es una condición administrativa sino un
+  conjunto de actitudes, habilidades y hábitos que se aprenden y pueden revisarse.
+  Este documento ordena primero ese marco --autonomía y autogestión, comunicación
+  escrita y dialógica, aprendizaje ubicuo mediado por TICCAD, colaboración e
+  interaprendizaje, y metacognición atenta a la diversidad cultural y
+  lingüística-- y después aplica la Brújula de Interaprendizaje, un cuestionario de
+  autopercepción con escala de frecuencia que recorre esas cinco dimensiones. El
+  registro razonado de las veinte afirmaciones permite identificar un perfil
+  autogestivo pero poco recíproco, del que derivan dos compromisos verificables,
+  uno personal y uno colaborativo, recogidos en la Ficha de recuperación.
+\end{abstractd}
+
+\templateIndex
+\templateFinalcfg
+
+\section{Introducción}
+
+Nadie nace sabiendo estudiar en línea. La expresión ``ser estudiante en un entorno
+virtual'' nombra algo más que estar inscrito en un aula digital: designa una forma de
+aprender que se construye con el tiempo y que involucra decisiones sobre el propio
+ritmo, la manera de comunicarse por escrito, el uso de las herramientas y la
+disposición a aprender con otras personas. Por eso conviene tratarla como una
+competencia revisable y no como un rasgo fijo.
+
+El propósito de este trabajo es doble. Primero, precisar qué caracteriza al
+estudiante de entornos virtuales según la literatura de la semana, con especial
+atención a las dimensiones que sostienen el interaprendizaje. Después, aplicar esa
+lectura a la propia experiencia mediante la Brújula de Interaprendizaje, un
+instrumento de autopercepción cuyos resultados se recuperan en una ficha con
+compromisos de mejora. El sentido de recorrer ambas partes es que el diagnóstico no
+quede en la descripción: la autopercepción sirve si permite decidir qué cambiar y
+cómo comprobar que cambió.
+
+\section{Ser estudiante en entornos virtuales de enseñanza-aprendizaje}
+
+\subsection{Una condición que se aprende}
+
+El estudiante de entornos virtuales no es simplemente un estudiante presencial que
+usa una computadora. La formación en línea reorganiza el tiempo, el espacio y los
+canales de la interacción, de modo que exige actitudes y hábitos propios: iniciativa
+para sostener el trabajo sin recordatorios continuos, disposición a comunicar por
+escrito con precisión y capacidad para pedir ayuda antes de que el problema crezca
+\citep{borges2007estudiante}. La didáctica universitaria en entornos virtuales
+subraya que estas condiciones no dependen solo de la voluntad individual: se aprenden
+cuando el diseño del curso las hace necesarias y visibles, y se debilitan cuando la
+actividad se reduce a entregar productos \citep{bautista2016didactica}.
+
+De ahí se sigue una consecuencia importante. Si la condición de estudiante en línea
+se aprende, entonces puede diagnosticarse; y si puede diagnosticarse, puede mejorarse
+mediante compromisos concretos. La autopercepción deja de ser una impresión difusa y
+se convierte en el punto de partida de una decisión pedagógica.
+
+\subsection{Las cinco dimensiones que se exploran}
+
+La revisión de las lecturas permite ordenar en cinco dimensiones lo que se pone en
+juego al estudiar en línea, y son precisamente las que recorre el instrumento
+aplicado.
+
+La \textbf{autogestión} concierne a la organización del tiempo, la constancia y la
+capacidad de sostener el propio proceso. La \textbf{comunicación dialógica} atiende a
+la calidad de la interacción escrita: no basta con participar, importa si la
+participación abre o cierra el intercambio. El \textbf{aprendizaje ubicuo} describe la
+posibilidad de aprender en tiempos y lugares diversos gracias a las TICCAD, siempre
+que las herramientas se elijan por su función y no se acumulen
+\citep{zambranoPilay2020tecnologias}. La \textbf{colaboración} distingue el reparto de
+tareas de la construcción conjunta; el estándar de competencia sobre trabajo en
+equipo lo formula con claridad al exigir acuerdos explícitos, aportación efectiva y
+revisión del resultado colectivo, y no solo cumplimiento individual
+\citep{conocer2025ec0554}. Por último, la \textbf{metacognición atenta a la
+diversidad} vincula la revisión del propio aprendizaje con el reconocimiento de la
+diversidad cultural y lingüística presente en el grupo, dentro del marco de la
+educación intercultural \citep{aguadoSleeter2021educacion}. En este trabajo adopto
+como criterio de diseño propio examinar, además, si el lenguaje y los ejemplos que
+utilizo facilitan la participación de personas con trayectorias distintas.
+
+\subsection{Por qué la autoevaluación es una práctica de interaprendizaje}
+
+Podría objetarse que un instrumento de autopercepción es un ejercicio individual y,
+por tanto, ajeno al interaprendizaje. La objeción se disuelve al observar qué evalúa:
+cuatro de las cinco dimensiones describen relaciones con otras personas. Reconocer
+los propios hábitos es la condición para saber qué se aporta y qué se obstaculiza en
+la construcción conjunta. La experiencia de los interaprendizajes entre educadores
+indígenas muestra justamente eso: el conocimiento comunitario se produce cuando cada
+quien reconoce su lugar, lo pone en juego y lo transforma en la relación con las
+demás personas \citep{bertely2011interaprendizajes}. La autoevaluación, en ese
+sentido, no aísla: prepara para participar mejor.
+
+\section{Aplicación de la Brújula de Interaprendizaje}
+
+\subsection{El instrumento y su lógica}
+
+La Brújula de Interaprendizaje es un cuestionario de autopercepción. En este
+trabajo, su aplicación queda documentada en la ficha de recuperación y en la tabla de
+registro: la primera identifica a la persona participante y el contexto, y la segunda
+reúne las afirmaciones agrupadas por dimensión con la frecuencia marcada. Para esta
+aplicación, cada afirmación se responde con una escala de frecuencia de cinco puntos
+--siempre, casi siempre, a veces, casi nunca, nunca--. Estas opciones permiten
+organizar la autopercepción por dimensiones y reconocer prácticas declaradas como
+sostenidas, intermitentes o poco frecuentes.
+
+Esa estructura explica por qué el instrumento sirve para orientar y no para calificar.
+La escala no produce un puntaje aprobatorio, sino un perfil: muestra en qué
+dimensiones la conducta es sostenida y en cuáles es intermitente. Las veinte
+afirmaciones se distribuyen en cuatro por dimensión, de manera que ninguna
+dimensión pese más que otra y el perfil resultante sea legible como un conjunto de
+tendencias, no como un promedio único.
+
+\subsection{Registro razonado de las respuestas}
+
+La tabla siguiente conserva la respuesta marcada en cada afirmación y añade la
+lectura que de ella se desprende. Se incluye esa tercera columna porque el dato
+aislado no dice nada: la frecuencia declarada solo adquiere sentido cuando se
+interpreta contra el marco de la sección anterior. Así, marcar ``a veces'' en una
+afirmación sobre revisión conjunta no significa un déficit de esfuerzo, sino que la
+colaboración se está entendiendo como cumplimiento de la parte propia.
+
+\clearpage
+\pagestyle{empty}
+\begin{landscape}
+\thispagestyle{empty}
+\begingroup
+\fontsize{7.6}{8.6}\selectfont
+\setlength{\tabcolsep}{3.2pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{longtable}{@{}>{\centering\arraybackslash}p{0.04\linewidth}>{\raggedright\arraybackslash}p{0.40\linewidth}>{\centering\arraybackslash}p{0.13\linewidth}>{\raggedright\arraybackslash}p{0.38\linewidth}@{}}
+\caption{Brújula de Interaprendizaje: registro de respuestas y lectura por dimensión}\label{tab:brujula-interaprendizaje-a4}\\
+\toprule
+\textbf{No.} & \textbf{Afirmación} & \textbf{Frecuencia marcada} & \textbf{Lectura del hallazgo} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{No.} & \textbf{Afirmación} & \textbf{Frecuencia marcada} & \textbf{Lectura del hallazgo} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\bottomrule
+\endlastfoot
+% Escala de frecuencia (comentada, no visible): Siempre / Casi siempre / A veces / Casi nunca / Nunca.
+\multicolumn{4}{@{}l}{\cellcolor{unadmRowAlt}\textbf{Dimensión 1. Autogestión y organización del estudio}} \\
+\midrule
+1 & Planifico mi semana de estudio a partir del calendario del aula antes de que inicie. & \textbf{Siempre} & La respuesta indica una práctica declarada de planeación anticipada; sin embargo, por sí sola no permite comparar esta conducta con las demás dimensiones ni inferir independencia respecto de recordatorios externos \citep{borges2007estudiante}. \\
+\midrule
+2 & Sostengo un ritmo constante de trabajo y no concentro el esfuerzo en el día de entrega. & \textbf{Casi siempre} & La constancia existe, pero cede cuando se acumulan entregas de varias asignaturas. \\
+\midrule
+3 & Dejo un margen de tiempo de reserva para imprevistos antes de la fecha de cierre. & \textbf{A veces} & Sin holgura, cualquier contratiempo se traslada íntegro a la calidad del producto. \\
+\midrule
+4 & Dedico tiempo a repasar lo aprendido aunque no haya una entrega inmediata. & \textbf{Casi nunca} & Lo primero que se sacrifica al apretar el calendario es la consolidación, no la entrega. \\
+\midrule
+% Escala de frecuencia (comentada, no visible): Siempre / Casi siempre / A veces / Casi nunca / Nunca.
+\multicolumn{4}{@{}l}{\cellcolor{unadmRowAlt}\textbf{Dimensión 2. Comunicación e interacción dialógica}} \\
+\midrule
+5 & Participo en los espacios de interacción dentro de los plazos establecidos. & \textbf{Siempre} & La presencia está garantizada; la pregunta es de qué tipo es esa presencia. \\
+\midrule
+6 & Fundamento mis aportaciones con las fuentes revisadas en la asignatura. & \textbf{Siempre} & El aporte es sustantivo y verificable, condición de una comunicación académica útil. \\
+\midrule
+7 & Retomo de manera explícita las aportaciones de otras personas en mis mensajes. & \textbf{A veces} & Aquí se localiza la brecha central: la participación es expositiva más que conversacional \citep{bautista2016didactica}. \\
+\midrule
+8 & Formulo preguntas abiertas que inviten a otras personas a continuar el intercambio. & \textbf{Casi nunca} & Sin preguntas, el intercambio se agota en la suma de posiciones y no llega a diálogo. \\
+\midrule
+% Escala de frecuencia (comentada, no visible): Siempre / Casi siempre / A veces / Casi nunca / Nunca.
+\multicolumn{4}{@{}l}{\cellcolor{unadmRowAlt}\textbf{Dimensión 3. Recursos digitales y aprendizaje ubicuo}} \\
+\midrule
+9 & Utilizo con soltura las herramientas del aula virtual y resuelvo por mi cuenta las fallas menores. & \textbf{Siempre} & El dominio técnico no es un obstáculo, de modo que las dificultades no son instrumentales. \\
+\midrule
+10 & Aprovecho tiempos y lugares distintos al escritorio para avanzar en el estudio. & \textbf{Casi siempre} & El aprendizaje ubicuo opera en la práctica y amplía la disponibilidad real de estudio \citep{zambranoPilay2020tecnologias}. \\
+\midrule
+11 & Elijo cada herramienta por la función que cumple y no por su disponibilidad o novedad. & \textbf{A veces} & La acumulación tecnológica supera a la integración: se guardan más recursos de los que se usan. \\
+\midrule
+12 & Integro en un solo lugar los materiales que reúno para poder recuperarlos después. & \textbf{Casi nunca} & La dispersión convierte el acopio en ruido y anula la ventaja de la ubicuidad. \\
+\midrule
+% Escala de frecuencia (comentada, no visible): Siempre / Casi siempre / A veces / Casi nunca / Nunca.
+\multicolumn{4}{@{}l}{\cellcolor{unadmRowAlt}\textbf{Dimensión 4. Colaboración e interaprendizaje}} \\
+\midrule
+13 & Cumplo en tiempo y forma la parte del trabajo colectivo que me corresponde. & \textbf{Siempre} & La responsabilidad individual está cubierta, primer requisito del trabajo en equipo \citep{conocer2025ec0554}. \\
+\midrule
+14 & Participo en la definición de los acuerdos de trabajo del equipo antes de comenzar. & \textbf{Casi siempre} & Intervengo en el encuadre, lo que facilita que las reglas sean compartidas y no impuestas. \\
+\midrule
+15 & Reviso el producto completo del equipo, y no solo el apartado que redacté. & \textbf{A veces} & Sin revisión del conjunto, la entrega es una suma de partes y no una construcción conjunta. \\
+\midrule
+16 & Propongo un cierre colectivo donde el equipo evalúe el resultado antes de entregarlo. & \textbf{Casi nunca} & Falta el momento en que el trabajo deja de ser reparto y se vuelve interaprendizaje \citep{bertely2011interaprendizajes}. \\
+\midrule
+% Escala de frecuencia (comentada, no visible): Siempre / Casi siempre / A veces / Casi nunca / Nunca.
+\multicolumn{4}{@{}l}{\cellcolor{unadmRowAlt}\textbf{Dimensión 5. Metacognición y atención a la diversidad}} \\
+\midrule
+17 & Reviso la retroalimentación recibida y la incorporo en el trabajo siguiente. & \textbf{Casi siempre} & La corrección ocurre, pero producto por producto y sin acumular aprendizaje. \\
+\midrule
+18 & Llevo un registro de mis avances y dificultades a lo largo del periodo. & \textbf{Casi nunca} & Sin registro no hay patrón visible y cada error se enfrenta como si fuera el primero. \\
+\midrule
+19 & Reconozco la diversidad cultural y lingüística del grupo como un recurso de aprendizaje. & \textbf{Casi siempre} & El reconocimiento existe en el plano del principio y orienta la disposición general. \\
+\midrule
+20 & Ajusto el lenguaje y los ejemplos que uso para que sean accesibles a personas con trayectorias distintas. & \textbf{A veces} & La brecha entre reconocer la diversidad y actuar en consecuencia se juega en esta práctica concreta \citep{aguadoSleeter2021educacion}. \\
+\end{longtable}
+\endgroup
+\end{landscape}
+\clearpage
+\pagestyle{fancy}
+
+\subsection{Perfil que arroja el instrumento}
+
+Leído en conjunto, el registro de la tabla \ref{tab:brujula-interaprendizaje-a4} muestra diez respuestas de frecuencia alta
+(``Siempre'' o ``Casi siempre'') y diez de frecuencia intermedia o baja
+(``A veces'' o ``Casi nunca''); no se marcó ``Nunca''. El recuento se obtiene de la
+frecuencia marcada en cada fila: las respuestas altas corresponden a los ítems 1,
+2, 5, 6, 9, 10, 13, 14, 17 y 19, mientras que ``A veces'' o ``Casi nunca'' aparecen
+en los ítems 3, 4, 7, 8, 11, 12, 15, 16, 18 y 20. Por tanto, la tabla documenta
+estas oportunidades de mejora en la interacción, la revisión conjunta y el ajuste
+del lenguaje, sin permitir atribuirlas únicamente a la dependencia de otras personas.
+Mi interpretación es que el compromiso prioritario no consiste en aumentar la
+disciplina general, sino en convertir la autogestión ya declarada en reciprocidad
+observable.
+
+Ese diagnóstico tiene una implicación práctica inmediata. Si el vacío está en la
+relación y no en el esfuerzo, entonces los compromisos de mejora deben formularse
+como conductas observables dentro de la interacción, y no como propósitos de
+dedicación. Un compromiso del tipo ``estudiaré más'' sería inútil aquí; uno del tipo
+``citaré explícitamente la aportación de otra persona'' es verificable y ataca el
+punto débil identificado.
+
+\subsection{Ficha de recuperación y compromisos}
+
+Con esa base se elabora la Ficha de recuperación, que se reproduce a continuación
+tal como fue entregada. La ficha recupera los hallazgos por dimensión, sintetiza la
+autopercepción y establece dos compromisos: uno personal, orientado a convertir la
+participación expositiva en conversacional, y uno colaborativo, orientado a instalar
+la revisión conjunta del producto de equipo. Ambos se acompañan de un criterio de
+verificación, de modo que en la semana 9 sea posible constatar avances y dificultades
+y no solo recordar intenciones.
+
+\begin{fichabox}[title={Ficha de recuperación de mi Brújula de Interaprendizaje}]
+\hfill\fichaCopyButton{ficha-brujula-Actividad-4.txt}\\[-0.5em]
+\phantomsection\label{ficha-brujula}
+\fichameta{Brújula de Interaprendizaje (cuestionario de autopercepción, escala de frecuencia)}{Martin Jonathan de la Cruz}{\today}{Semana 4, aula virtual UnADM}
+
+\textbf{Hallazgos por dimensión.}\par
+\medskip
+\textit{Autogestión.} Es la dimensión más firme: planifico a partir del calendario y
+sostengo un ritmo constante. La debilidad no está en la planeación sino en la
+holgura, pues al complicarse una entrega desaparece el margen de reserva y el repaso
+se sacrifica antes que el producto.
+
+\textit{Comunicación dialógica.} Participo con regularidad y fundamento lo que
+escribo, pero de manera expositiva: aporto mi posición más de lo que pregunto por la
+ajena. Leo con atención las aportaciones de otras personas, aunque no siempre las
+retomo de forma explícita, que es donde el diálogo se vuelve visible.
+
+\textit{Recursos digitales y aprendizaje ubicuo.} Manejo con soltura las herramientas
+y aprovecho tiempos y lugares diversos. El punto débil es la dispersión: acumulo
+materiales más rápido de lo que los integro, y la disponibilidad pesa más que el
+criterio de selección.
+
+\textit{Colaboración.} Cumplo los acuerdos y entrego lo que me corresponde, pero mi
+aportación se concentra en la parte asignada. Reviso poco el producto completo y
+participo poco en el cierre colectivo, justo donde el trabajo deja de ser reparto de
+tareas para volverse construcción conjunta.
+
+\textit{Metacognición y diversidad.} Reviso la retroalimentación y corrijo, aunque
+producto por producto y sin un registro que permita ver el patrón. Reconozco la
+diversidad cultural y lingüística como valor, pero rara vez ajusto el lenguaje o los
+ejemplos para que el intercambio sea efectivamente accesible.
+
+\medskip
+\textbf{Síntesis de la autopercepción.} La brújula apunta a un perfil autogestivo y
+constante, con una interacción más individual que dialógica. Soy sólido en lo que
+depende de mí y más débil en lo que depende de la relación con otras personas. Lo que
+falta no es disciplina, sino convertirla en reciprocidad.
+
+\medskip
+\textbf{Compromiso personal.} Antes de publicar cualquier aportación en foro o wiki,
+leeré al menos dos aportaciones previas y citaré de forma explícita una de ellas para
+continuarla, matizarla o preguntarle algo; además llevaré un registro semanal breve
+de lo que aprendí de otra persona. \textit{Verificación:} cada aportación mía debe
+contener una referencia nominal a la aportación de alguien más, y el registro debe
+tener una entrada por semana, de la semana 5 a la 10.
+
+\medskip
+\textbf{Compromiso colaborativo.} En los trabajos de equipo propondré y sostendré una
+revisión conjunta del producto completo antes de la entrega, con un turno de palabra
+por integrante, y me ofreceré a redactar la síntesis final integrando lo que aportó
+cada quien sin sustituir sus palabras, cuidando que el lenguaje resulte comprensible
+para personas con trayectorias y lenguas distintas. \textit{Verificación:} constancia
+de una sesión o hilo de revisión conjunta documentado antes de cada entrega en
+equipo, en las semanas 6 y 8.
+
+\medskip
+\textbf{Declaración de uso de inteligencia artificial.} Se utilizó una herramienta de
+inteligencia artificial generativa para organizar ideas y revisar la redacción de
+esta ficha. Las respuestas al instrumento, los hallazgos y los compromisos
+corresponden a mi propia experiencia como estudiante en entornos virtuales.
+\end{fichabox}
+
+\clearpage
+\section{Conclusión}
+
+El ejercicio confirma que ser estudiante en un entorno virtual es una condición
+aprendida y, por lo mismo, corregible. El instrumento fue respondido con criterios
+claros: cada afirmación se contrastó con conductas efectivamente realizadas durante
+el periodo y no con una imagen deseable de mí mismo, y cada frecuencia marcada se
+interpretó desde el marco conceptual de la semana en lugar de leerse como un valor
+aislado. Esa disciplina de lectura es lo que convierte una autopercepción en un
+diagnóstico utilizable.
+
+A mi juicio, el hallazgo más valioso no es ninguna respuesta en particular, sino su
+distribución: todas las fortalezas caen del lado de lo que depende de mí y todas las
+debilidades del lado de lo que depende de la relación con otras personas. Ese patrón
+explica por qué la autogestión, siendo una virtud, puede volverse un límite cuando
+sustituye al diálogo; y explica también por qué los compromisos se formularon como
+conductas verificables dentro de la interacción y no como propósitos de esfuerzo.
+
+La implicación profesional es directa. El ejercicio del Derecho rara vez es
+solitario: litigar, asesorar o redactar en equipo exige integrar versiones distintas
+de un mismo problema y comunicarse con personas cuya lengua, formación y contexto
+difieren de los propios. Un profesional que solo sabe cumplir su parte produce
+documentos correctos y decisiones parciales. Por eso los dos compromisos asumidos
+--retomar explícitamente lo que otras personas aportan y sostener la revisión
+conjunta antes de cerrar-- no son hábitos escolares, sino ensayos anticipados de la
+forma de trabajo que la práctica jurídica va a exigir.\footnote{Para redactar y
+organizar este documento se utilizó una herramienta de inteligencia artificial con el
+propósito de ordenar ideas y revisar la redacción; su uso no sustituyó la comprensión
+de las lecturas, la aplicación del instrumento ni la elaboración de la ficha y los
+compromisos, que corresponden al autor.}
+
+\clearpage
+\nocite{bautista2016didactica,borges2007estudiante,zambranoPilay2020tecnologias,aguadoSleeter2021educacion,conocer2025ec0554,bertely2011interaprendizajes}
+\bibliography{interaprendizaje-en-ambientes-virtuales}
+
+\end{document}
