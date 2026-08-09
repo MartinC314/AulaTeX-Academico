@@ -233,6 +233,9 @@ def build_parser() -> argparse.ArgumentParser:
     activity_optimize.add_argument("--allow-incomplete-contract", action="store_true", help="Optimize even if the editorial contract is below 100.")
     activity_optimize.add_argument("--no-semantic-audit", action="store_true", help="Disable semantic claim auditing (only for offline/debug runs).")
     activity_optimize.add_argument("--semantic-feedback", default="", help="Archivo JSON/TXT con retroalimentación externa para la auditoría semántica.")
+    activity_optimize.add_argument("--quality-panel", action="store_true", help="Decide con panel de jueces (heuristica + reward model + LLM) en vez de solo _quality_score.")
+    activity_optimize.add_argument("--no-panel-llm-judge", action="store_true", help="Excluye el juez LLM del panel (mas barato, menos criterio de fondo).")
+    activity_optimize.add_argument("--reward-model-dir", default="", help="Ruta del reward model entrenado. Por defecto AULATEX_REWARD_MODEL_DIR.")
 
     activity_revise = sub.add_parser("activity-revise", help="Build a structured revision plan for an activity.")
     activity_revise.add_argument("--target", required=True)
@@ -817,6 +820,9 @@ def main(argv: list[str] | None = None) -> None:
                 require_contract_100=not bool(args.allow_incomplete_contract),
                 run_semantic_audit=not bool(args.no_semantic_audit),
                 semantic_feedback_path=args.semantic_feedback,
+                use_quality_panel=bool(args.quality_panel),
+                panel_llm_judge=not bool(args.no_panel_llm_judge),
+                reward_model_dir=args.reward_model_dir,
             )
         )
         print(

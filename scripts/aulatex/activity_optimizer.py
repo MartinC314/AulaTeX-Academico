@@ -26,6 +26,7 @@ from typing import Any
 
 from .activity_observer import ActivityObservationRequest, ActivityObserver
 from .llm_bridge import DEFAULT_MAX_TOKENS, AulaTeXLLMClient
+from .quality_panel import PanelVerdict, QualityPanel, build_default_panel
 from .semantic_audit import SemanticAuditResult, SemanticAuditor
 from .workspace import AulaTeXWorkspace
 
@@ -51,6 +52,11 @@ class ActivityOptimizeRequest:
     semantic_fail_closed: bool = True
     semantic_audit_engine: str = ""
     semantic_feedback_path: str = ""
+    # Panel de jueces: sustituye la comparacion de _quality_score por mayoria
+    # entre heuristica, reward model y juez LLM. Ver quality_panel.py.
+    use_quality_panel: bool = False
+    panel_llm_judge: bool = True
+    reward_model_dir: str = ""
 
 
 @dataclass(frozen=True)
@@ -83,6 +89,7 @@ class CycleRecord:
     diff_chars: int = 0
     semantic_blocking_before: int = 0
     semantic_blocking_after: int = 0
+    panel_verdict: dict[str, Any] | None = None
 
 
 class ActivityOptimizer:
@@ -91,6 +98,7 @@ class ActivityOptimizer:
         self.observer = ActivityObserver(self.workspace)
         self.llm = llm or AulaTeXLLMClient()
         self.semantic_auditor = SemanticAuditor(self.llm)
+        self._panel: QualityPanel | None = None
         self.root = self.workspace.feedback_root / "activity-optimize" / "runs"
         self.root.mkdir(parents=True, exist_ok=True)
 
@@ -208,11 +216,13 @@ class ActivityOptimizer:
             semantic_progress = self._semantic_candidate_acceptable(
                 request, semantic_current, semantic_candidate
             )
-            quality_progress = (
-                quality_after >= quality_before
-                if semantic_after_count < semantic_before_count
-                else quality_after > quality_before
+            # Si el candidato resuelve un hallazgo semantico, basta con no degradar.
+            resolves_semantic = semantic_after_count < semantic_before_count
+            verdict = self._quality_verdict(
+                request, current_text, candidate_text,
+                quality_before, quality_after, allow_tie=resolves_semantic,
             )
+            quality_progress = verdict.improved
 
             accept = (
                 compile_ok
@@ -232,17 +242,21 @@ class ActivityOptimizer:
                                           quality_before, quality_after, contract_current, contract_after,
                                           improvement_kind=kind, diff_chars=diff,
                                           semantic_blocking_before=semantic_before_count,
-                                          semantic_blocking_after=semantic_after_count))
+                                          semantic_blocking_after=semantic_after_count,
+                                          panel_verdict=verdict.to_dict() if request.use_quality_panel else None))
             else:
                 # Revertir el candidato.
                 tex_path.write_text(current_text, encoding="utf-8")
                 stall += 1  # ciclo sin mejora: acerca la parada por estancamiento
                 reason = self._reject_reason(compile_ok, contract_after, contract_current, quality_after, quality_before, request)
+                if request.use_quality_panel and not verdict.improved:
+                    reason = f"{reason} | panel: {verdict.rule} ({verdict.detail})"
                 cycles.append(CycleRecord(index, engine, False, reason,
                                           quality_before, quality_after, contract_current, contract_after,
                                           improvement_kind=kind,
                                           semantic_blocking_before=semantic_before_count,
-                                          semantic_blocking_after=semantic_after_count))
+                                          semantic_blocking_after=semantic_after_count,
+                                          panel_verdict=verdict.to_dict() if request.use_quality_panel else None))
 
         # Asegurar que el archivo final refleja el mejor estado aceptado.
         tex_path.write_text(current_text, encoding="utf-8")
@@ -748,6 +762,39 @@ class ActivityOptimizer:
         if quality_after <= quality_before:
             return f"La calidad no mejoró ({quality_before}->{quality_after}); revertido."
         return "Rechazado por criterio de aceptación."
+
+    def _quality_verdict(
+        self,
+        request: ActivityOptimizeRequest,
+        before_text: str,
+        after_text: str,
+        quality_before: float,
+        quality_after: float,
+        *,
+        allow_tie: bool,
+    ) -> PanelVerdict:
+        """Decide si el candidato mejora la calidad.
+
+        Sin panel se conserva la regla historica: comparar ``_quality_score``.
+        Con panel, la decision es por mayoria entre heuristica, reward model y
+        juez LLM (ver quality_panel.py).
+        """
+        if not request.use_quality_panel:
+            improved = (quality_after >= quality_before if allow_tie
+                        else quality_after > quality_before)
+            from .quality_panel import JudgeVote  # local: evita coste si no se usa
+
+            vote = JudgeVote("heuristic", improved, quality_before, quality_after)
+            return PanelVerdict(improved, (vote,), "heuristica")
+
+        if self._panel is None:
+            self._panel = build_default_panel(
+                self._quality_score,
+                llm=self.llm,
+                reward_model_dir=request.reward_model_dir or None,
+                enable_llm_judge=request.panel_llm_judge,
+            )
+        return self._panel.evaluate(before_text, after_text, allow_tie=allow_tie)
 
     def _semantic_audit(
         self,
