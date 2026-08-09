@@ -145,7 +145,7 @@ Este bloque no devuelve aún ideas completas, sino candidatos conceptuales orden
 Una vez definidos los conceptos, el sistema busca citas y fragmentos asociados. En el proyecto funcional esta capa se distribuye en varios motores:
 
 - `search.py`: motor local `TF-IDF`.
-- `tfhub_search.py`: embeddings locales con TensorFlow Hub.
+- `tfhub_search.py`: embeddings locales con sentence-transformers.
 - `api_search.py`: embeddings remotos con Azure u OpenAI.
 - `api_client.py`: configuración del proveedor.
 

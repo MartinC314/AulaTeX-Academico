@@ -8,12 +8,12 @@ from .preprocessing import Fragment, clip_text
 from .search import SearchHit
 
 
-DEFAULT_TFHUB_MODEL = "https://tfhub.dev/google/universal-sentence-encoder-multilingual/3"
+DEFAULT_TFHUB_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
 
 @dataclass
 class TfHubSearchEngine:
-    """Motor opcional: TensorFlow Hub + Universal Sentence Encoder multilingüe.
+    """Motor opcional: sentence-transformers con modelo multilingüe.
 
     Requiere requirements-tfhub.txt. La primera ejecución descarga el modelo y después queda en caché.
     También acepta una ruta local en TFHUB_MODEL.
@@ -21,25 +21,38 @@ class TfHubSearchEngine:
 
     fragments: list[Fragment]
     model_url_or_path: str = DEFAULT_TFHUB_MODEL
+    batch_size: int = 32
 
     def __post_init__(self) -> None:
         try:
-            import tensorflow_hub as hub  # type: ignore
+            from sentence_transformers import SentenceTransformer  # type: ignore
         except ImportError as exc:
-            raise RuntimeError("Falta tensorflow-hub. Ejecuta: pip install -r requirements-tfhub.txt") from exc
+            raise RuntimeError("Falta sentence-transformers. Ejecuta: pip install -r requirements-tfhub.txt") from exc
 
-        self._hub: Any = hub
-        self._model = hub.load(self.model_url_or_path)
+        # Los modelos de TensorFlow Hub ya no se soportan: no hay ruedas de TF para Python 3.14.
+        if self.model_url_or_path.startswith(("http://tfhub.dev", "https://tfhub.dev")):
+            raise RuntimeError(
+                f"TFHUB_MODEL apunta a TensorFlow Hub ({self.model_url_or_path}), que ya no se soporta. "
+                f"Usa un modelo de sentence-transformers, por ejemplo {DEFAULT_TFHUB_MODEL}."
+            )
+
+        self._model: Any = SentenceTransformer(self.model_url_or_path)
         self._texts = [f.text for f in self.fragments]
         self._embeddings = self._embed(self._texts)
 
     def _embed(self, texts: list[str]) -> np.ndarray:
         if not texts:
             return np.empty((0, 0))
-        vectors = self._model(texts).numpy()
-        norms = np.linalg.norm(vectors, axis=1, keepdims=True)
-        norms[norms == 0] = 1.0
-        return vectors / norms
+        return np.asarray(
+            self._model.encode(
+                texts,
+                batch_size=self.batch_size,
+                normalize_embeddings=True,
+                convert_to_numpy=True,
+                show_progress_bar=False,
+            ),
+            dtype=np.float32,
+        )
 
     def search(self, concept: str, top_k: int = 8, threshold: float = 0.20, max_quote_chars: int = 700) -> list[SearchHit]:
         if not self.fragments:

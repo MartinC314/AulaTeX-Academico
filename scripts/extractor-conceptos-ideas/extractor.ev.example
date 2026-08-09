@@ -20,7 +20,7 @@ OUTPUT_DIR=../../salidas/fichas/etica-y-moral-juridica/semana-08
 
 # Motores: tfidf | tfhub | azure | openai | anthropicfoundry
 MOTOR=anthropicfoundry
-TFHUB_MODEL=https://tfhub.dev/google/universal-sentence-encoder-multilingual/3
+TFHUB_MODEL=sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 
 TOP_K=12
 MAX_CITAS=8

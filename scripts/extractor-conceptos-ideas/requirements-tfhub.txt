@@ -1,2 +1,3 @@
-tensorflow>=2.16.0
-tensorflow-hub>=0.16.1
+# TensorFlow no publica ruedas para Python 3.14; sentence-transformers lo sustituye
+# reutilizando el torch/transformers que ya instala requirements-training.txt.
+sentence-transformers>=5.0.0
