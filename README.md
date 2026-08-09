@@ -339,6 +339,12 @@ Los secretos de `scripts/aulatex.env` se guardan cifrados con prefijo `enc:`
 PBKDF2-SHA256 (480 000 iteraciones) sobre `scripts/secret.salt`. El PIN nunca se
 escribe en disco; el salt y `secret.key` estan en `.gitignore`.
 
+> Como este repositorio es publico y los blobs `enc:` si se versionan, el PIN es
+> lo unico que protege las claves de Azure. Usa una frase larga, no cuatro
+> digitos: un PIN numerico corto se agota por fuerza bruta pese al PBKDF2.
+> Evita tambien escribirlo en linea de comandos, porque queda en el historial de
+> PSReadLine.
+
 ```powershell
 # Sesion actual
 $env:AHK_MASTER_PIN = '<pin>'
