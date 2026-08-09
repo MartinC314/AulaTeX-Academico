@@ -14,7 +14,8 @@
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/programa-analitico-interaprendizaje-en-ambientes-virtuales.md",
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales.tex",
-    "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex"
+    "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex",
+    "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib"
   ],
   "artifact_types": [],
   "supported_artifact_types": [
@@ -26,7 +27,8 @@
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/programa-analitico-interaprendizaje-en-ambientes-virtuales.md",
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales.tex",
-    "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex"
+    "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex",
+    "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib"
   ],
   "source_fragments": [
     "# Interaprendizaje en ambientes virtuales",
@@ -65,7 +67,28 @@
     "Manual de comunicación intercultural: Una introducción a sus conceptos, teorías y aplicaciones :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "Protocolo para juzgar con perspectiva intercultural: Personas, pueblos y comunidades indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "Construcción de espacios interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-    "Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
+    "Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Metodología PACIE en el interaprendizaje de la asignatura TICS del Instituto Superior Riobamba :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Metodologías activas en el interaprendizaje de educación básica superior en los estudiantes de la Unidad Educativa José Rodríguez Labandera, área de estudios sociales, cantón Quevedo, provincia Los Ríos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Didáctica universitaria en entornos virtuales de enseñanza-aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "El estudiante de entornos virtuales: Una primera aproximación :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Educación intercultural en la práctica escolar: Cómo hacerla posible :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "EC0554.01: Trabajo en equipo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Sociedad bosquesina: Tomo I. Ensayo de antropología rural amazónica :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Declaración mundial sobre la educación superior en el siglo XXI: Visión y acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "Didáctica universitaria en entornos virtuales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "Metodología PACIE en el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "Metodologías activas en el interaprendizaje virtual :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "Estudio de caso. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "Convenio sobre Pueblos Indígenas y Tribales en Países Independientes (Convenio 169) :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "Interaprendizajes entre indígenas. Tomos I y II :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "Manual de comunicación intercultural :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib"
   ],
   "section_titles": [
     "Encuadre de la asignatura",
@@ -97,14 +120,35 @@
     "pech2016manual :: Manual de comunicación intercultural: Una introducción a sus conceptos, teorías y aplicaciones :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "scjn2022protocolo :: Protocolo para juzgar con perspectiva intercultural: Personas, pueblos y comunidades indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "diazAlonso2011construccion :: Construcción de espacios interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-    "oit1691989 :: Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
+    "oit1691989 :: Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "cushpa2022pacie :: Metodología PACIE en el interaprendizaje de la asignatura TICS del Instituto Superior Riobamba :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "silva2015metodologias :: Metodologías activas en el interaprendizaje de educación básica superior en los estudiantes de la Unidad Educativa José Rodríguez Labandera, área de estudios sociales, cantón Quevedo, provincia Los Ríos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "bautista2016didactica :: Didáctica universitaria en entornos virtuales de enseñanza-aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "borges2007estudiante :: El estudiante de entornos virtuales: Una primera aproximación :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "zambranoPilay2020tecnologias :: Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "aguadoSleeter2021educacion :: Educación intercultural en la práctica escolar: Cómo hacerla posible :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "conocer2025ec0554 :: EC0554.01: Trabajo en equipo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "gascheMendoza2012sociedad :: Sociedad bosquesina: Tomo I. Ensayo de antropología rural amazónica :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "unesco1998declaracion :: Declaración mundial sobre la educación superior en el siglo XXI: Visión y acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "zambrano2020tecnologias :: Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "bautista2016didactica :: Didáctica universitaria en entornos virtuales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "cushpa2022metodologia :: Metodología PACIE en el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "silva2015metodologias :: Metodologías activas en el interaprendizaje virtual :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "lopez2022estudio :: Estudio de caso. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "constitucion2026 :: Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "lgdl2003 :: Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "oit1989 :: Convenio sobre Pueblos Indígenas y Tribales en Países Independientes (Convenio 169) :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "escjn2020protocolo :: Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "bertely2013interaprendizajes :: Interaprendizajes entre indígenas. Tomos I y II :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "pech2017manual :: Manual de comunicación intercultural :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "unesco1998 :: Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib"
   ],
   "node_metadata": {
     "editing_details": {
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 3 - interaprendizaje-en-ambientes-virtuales-lde",
+        "subject_rule": "Actividad 5 - interaprendizaje-en-ambientes-virtuales-lde",
         "scope_label": "interaprendizaje-en-ambientes-virtuales-lde"
       },
       "didactic_contract": {
@@ -245,8 +289,8 @@
         "landscape_single_page": "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
         "conclusion_single_page": "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla).",
         "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos.",
-        "always_use_latexmk": "SIEMPRE compilar con latexmk vía scripts/latexmk-build.ps1 (o workspace.compile_tex, que lo invoca). El .latexmkrc de la raíz ya fija $out_dir='.build/latex' y $aux_dir='.build/latex/aux' + TEXINPUTS/BIBINPUTS/BSTINPUTS, de modo que TODOS los auxiliares (.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz) quedan AISLADOS en .build/latex y el PDF final se copia junto al .tex. PROHIBIDO compilar con pdflatex/bibtex manuales sin -output-directory (dejan residuos junto al .tex y ensucian la carpeta de la materia). latexmk además resuelve solo el ciclo pdflatex->bibtex->pdflatex x2 (max_repeat=5). Si aparece un warning no fatal 'Missing input file .toc' tras limpiar auxiliares, es cosmético: latexmk regenera el .toc en la 2ª pasada; usar -f (force) para que no aborte el exit code.",
-        "no_build_residues": "La carpeta de cada materia/actividad SOLO debe contener FUENTES (.tex .bib .md .json) y el PDF final; NUNCA residuos de compilación (.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz .nav .snm .vrb .xdv .run.xml) ni respaldos .bak del optimizador ya aplicados. Como latexmk (con el .latexmkrc) aísla todo en .build/latex, la única fuente de residuos son compilaciones manuales antiguas: si aparecen, BORRARLOS. El post-proceso de realizar-actividad debe barrer estos residuos de la carpeta de la actividad tras la compilación final."
+        "always_use_latexmk": "Compilar siempre con latexmk y aislar los auxiliares en .build/latex.",
+        "no_build_residues": "La carpeta de la actividad no debe conservar auxiliares de compilación junto al TEX."
       },
       "bibliography_contract": {
         "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
@@ -257,8 +301,8 @@
         "institution": "UnADM",
         "career": "licenciatura-en-derecho-unadm",
         "subject": "interaprendizaje-en-ambientes-virtuales-lde",
-        "activity": "Actividad 3",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde"
+        "activity": "Actividad 5",
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-5"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -320,7 +364,10 @@
           "has_memory": true
         }
       ],
-      "novelty_signals": [],
+      "novelty_signals": [
+        "heading_contract",
+        "institutional_identity"
+      ],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -352,7 +399,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260721-083907",
+      "run_id": "20260809-152347",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
@@ -364,7 +411,7 @@
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
         "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde"
       ],
-      "novelty_count": 0
+      "novelty_count": 2
     },
     "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
     "level": "materia",
@@ -414,7 +461,7 @@
           "heading_contract": {
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-            "subject_rule": "Actividad 3 - interaprendizaje-en-ambientes-virtuales-lde",
+            "subject_rule": "Actividad 5 - interaprendizaje-en-ambientes-virtuales-lde",
             "scope_label": "interaprendizaje-en-ambientes-virtuales-lde"
           },
           "didactic_contract": {
@@ -541,8 +588,8 @@
             "institution": "UnADM",
             "career": "licenciatura-en-derecho-unadm",
             "subject": "interaprendizaje-en-ambientes-virtuales-lde",
-            "activity": "Actividad 3",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde"
+            "activity": "Actividad 5",
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-5"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -608,7 +655,8 @@
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-1.tex",
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales.tex",
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex",
-              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-2.tex"
+              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-2.tex",
+              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib"
             ]
           },
           "confidence": {
@@ -631,12 +679,12 @@
             "landscape_single_page": "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
             "conclusion_single_page": "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla).",
             "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos.",
-            "always_use_latexmk": "SIEMPRE compilar con latexmk vía scripts/latexmk-build.ps1 (o workspace.compile_tex, que lo invoca). El .latexmkrc de la raíz ya fija $out_dir='.build/latex' y $aux_dir='.build/latex/aux' + TEXINPUTS/BIBINPUTS/BSTINPUTS, de modo que TODOS los auxiliares (.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz) quedan AISLADOS en .build/latex y el PDF final se copia junto al .tex. PROHIBIDO compilar con pdflatex/bibtex manuales sin -output-directory (dejan residuos junto al .tex y ensucian la carpeta de la materia). latexmk además resuelve solo el ciclo pdflatex->bibtex->pdflatex x2 (max_repeat=5). Si aparece un warning no fatal 'Missing input file .toc' tras limpiar auxiliares, es cosmético: latexmk regenera el .toc en la 2ª pasada; usar -f (force) para que no aborte el exit code.",
-            "no_build_residues": "La carpeta de cada materia/actividad SOLO debe contener FUENTES (.tex .bib .md .json) y el PDF final; NUNCA residuos de compilación (.aux .bbl .blg .log .out .toc .fls .fdb_latexmk .synctex.gz .nav .snm .vrb .xdv .run.xml) ni respaldos .bak del optimizador ya aplicados. Como latexmk (con el .latexmkrc) aísla todo en .build/latex, la única fuente de residuos son compilaciones manuales antiguas: si aparecen, BORRARLOS. El post-proceso de realizar-actividad debe barrer estos residuos de la carpeta de la actividad tras la compilación final."
+            "always_use_latexmk": "Compilar siempre con latexmk y aislar los auxiliares en .build/latex.",
+            "no_build_residues": "La carpeta de la actividad no debe conservar auxiliares de compilación junto al TEX."
           }
         },
         "detail_planner": {
-          "run_id": "20260721-083907",
+          "run_id": "20260809-152347",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
@@ -648,7 +696,7 @@
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
             "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde"
           ],
-          "novelty_count": 0
+          "novelty_count": 2
         },
         "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
         "level": "materia",
@@ -764,7 +812,9 @@
     "reinforcement_log": [
       "ADN sintetizado con 14 conceptos, 4 citas y 0 relaciones.",
       "Memoria de redacción preservada en 33 bloques.",
-      "ADN sintetizado con 19 conceptos, 4 citas y 0 relaciones."
+      "ADN sintetizado con 19 conceptos, 4 citas y 0 relaciones.",
+      "ADN sintetizado con 21 conceptos, 4 citas y 0 relaciones.",
+      "ADN sintetizado con 40 conceptos, 4 citas y 0 relaciones."
     ],
     "knowledge_graph": {
       "concepts": [
@@ -786,7 +836,28 @@
         "Manual de comunicación intercultural: Una introducción a sus conceptos, teorías y aplicaciones :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "Protocolo para juzgar con perspectiva intercultural: Personas, pueblos y comunidades indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "Construcción de espacios interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-        "Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
+        "Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Metodología PACIE en el interaprendizaje de la asignatura TICS del Instituto Superior Riobamba :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Metodologías activas en el interaprendizaje de educación básica superior en los estudiantes de la Unidad Educativa José Rodríguez Labandera, área de estudios sociales, cantón Quevedo, provincia Los Ríos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Didáctica universitaria en entornos virtuales de enseñanza-aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "El estudiante de entornos virtuales: Una primera aproximación :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Educación intercultural en la práctica escolar: Cómo hacerla posible :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "EC0554.01: Trabajo en equipo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Sociedad bosquesina: Tomo I. Ensayo de antropología rural amazónica :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Declaración mundial sobre la educación superior en el siglo XXI: Visión y acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "Didáctica universitaria en entornos virtuales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "Metodología PACIE en el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "Metodologías activas en el interaprendizaje virtual :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "Estudio de caso. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "Convenio sobre Pueblos Indígenas y Tribales en Países Independientes (Convenio 169) :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "Interaprendizajes entre indígenas. Tomos I y II :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "Manual de comunicación intercultural :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib"
       ],
       "citations": [
         "vygotsky1978mind",
@@ -813,7 +884,29 @@
         "pech2016manual :: Manual de comunicación intercultural: Una introducción a sus conceptos, teorías y aplicaciones :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "scjn2022protocolo :: Protocolo para juzgar con perspectiva intercultural: Personas, pueblos y comunidades indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "diazAlonso2011construccion :: Construcción de espacios interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-        "oit1691989 :: Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
+        "oit1691989 :: Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "cushpa2022pacie :: Metodología PACIE en el interaprendizaje de la asignatura TICS del Instituto Superior Riobamba :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "silva2015metodologias :: Metodologías activas en el interaprendizaje de educación básica superior en los estudiantes de la Unidad Educativa José Rodríguez Labandera, área de estudios sociales, cantón Quevedo, provincia Los Ríos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "bautista2016didactica :: Didáctica universitaria en entornos virtuales de enseñanza-aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "borges2007estudiante :: El estudiante de entornos virtuales: Una primera aproximación :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "zambranoPilay2020tecnologias :: Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "aguadoSleeter2021educacion :: Educación intercultural en la práctica escolar: Cómo hacerla posible :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "conocer2025ec0554 :: EC0554.01: Trabajo en equipo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "gascheMendoza2012sociedad :: Sociedad bosquesina: Tomo I. Ensayo de antropología rural amazónica :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "unesco1998declaracion :: Declaración mundial sobre la educación superior en el siglo XXI: Visión y acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "zambrano2020tecnologias :: Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "bautista2016didactica :: Didáctica universitaria en entornos virtuales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "cushpa2022metodologia :: Metodología PACIE en el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "silva2015metodologias :: Metodologías activas en el interaprendizaje virtual :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "lopez2022estudio :: Estudio de caso. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "constitucion2026 :: Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "lgdl2003 :: Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "oit1989 :: Convenio sobre Pueblos Indígenas y Tribales en Países Independientes (Convenio 169) :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "escjn2020protocolo :: Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "bertely2013interaprendizajes :: Interaprendizajes entre indígenas. Tomos I y II :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "pech2017manual :: Manual de comunicación intercultural :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "unesco1998 :: Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib"
       ],
       "relations": [],
       "concept_weights": {},
@@ -7247,7 +7340,227 @@
         "year": "1989",
         "url": "https://www.gob.mx/cms/uploads/attachment/file/30118/Convenio169.pdf",
         "note": "Normatividad gubernamental relacionada con la asignatura",
-        "raw_entry": "@misc{oit1691989,\n  author = {{Organización Internacional del Trabajo}},\n  title = {Convenio 169 sobre pueblos indígenas y tribales en países independientes},\n  year = {1989},\n  howpublished = {\\url{https://www.gob.mx/cms/uploads/attachment/file/30118/Convenio169.pdf}},\n  note = {Normatividad gubernamental relacionada con la asignatura}\n}"
+        "raw_entry": "@misc{oit1691989,\n  author = {{Organización Internacional del Trabajo}},\n  title = {Convenio 169 sobre pueblos indígenas y tribales en países independientes},\n  year = {1989},\n  howpublished = {\\url{https://www.gob.mx/cms/uploads/attachment/file/30118/Convenio169.pdf}},\n  note = {Normatividad gubernamental relacionada con la asignatura}\n}\n\n% --- Materiales de la Semana 4 (Actividad 4: Brújula de Interaprendizaje) ---"
+      },
+      "cushpa2022pacie": {
+        "key": "cushpa2022pacie",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "mastersthesis",
+        "title": "Metodología PACIE en el interaprendizaje de la asignatura TICS del Instituto Superior Riobamba",
+        "author": "Cushpa Inchiglema, Raúl Clemente",
+        "year": "2022",
+        "note": "Bibliografía general de la semana 3",
+        "raw_entry": "@mastersthesis{cushpa2022pacie,\n  author = {Cushpa Inchiglema, Raúl Clemente},\n  title = {Metodología PACIE en el interaprendizaje de la asignatura TICS del Instituto Superior Riobamba},\n  year = {2022},\n  school = {Pontificia Universidad Católica del Ecuador, Sede Ambato},\n  type = {Tesis de maestría},\n  note = {Bibliografía general de la semana 3}\n}"
+      },
+      "silva2015metodologias": {
+        "key": "silva2015metodologias",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "mastersthesis",
+        "title": "Metodologías activas en el interaprendizaje de educación básica superior en los estudiantes de la Unidad Educativa José Rodríguez Labandera, área de estudios sociales, cantón Quevedo, provincia Los Ríos",
+        "author": "Silva Zambrano, Rosa Inés",
+        "year": "2015",
+        "url": "http://dspace.utb.edu.ec/handle/49000/2808",
+        "note": "Bibliografía general de la semana 3",
+        "raw_entry": "@mastersthesis{silva2015metodologias,\n  author = {Silva Zambrano, Rosa Inés},\n  title = {Metodologías activas en el interaprendizaje de educación básica superior en los estudiantes de la Unidad Educativa José Rodríguez Labandera, área de estudios sociales, cantón Quevedo, provincia Los Ríos},\n  year = {2015},\n  school = {Universidad Técnica de Babahoyo},\n  type = {Tesis de licenciatura},\n  url = {http://dspace.utb.edu.ec/handle/49000/2808},\n  note = {Bibliografía general de la semana 3}\n}"
+      },
+      "bautista2016didactica": {
+        "key": "bautista2016didactica",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "book",
+        "title": "Didáctica universitaria en entornos virtuales de enseñanza-aprendizaje",
+        "author": "Bautista Pérez, Guillermo and Borges Sáiz, Federico and Forés Miravalles, Anna",
+        "year": "2016",
+        "publisher": "Narcea Ediciones",
+        "note": "Capítulo 2, ``Ser estudiante en entornos virtuales de enseñanza-aprendizaje''. Bibliografía general de la semana 4",
+        "raw_entry": "@book{bautista2016didactica,\n  author = {Bautista Pérez, Guillermo and Borges Sáiz, Federico and Forés Miravalles, Anna},\n  title = {Didáctica universitaria en entornos virtuales de enseñanza-aprendizaje},\n  year = {2016},\n  publisher = {Narcea Ediciones},\n  address = {Madrid},\n  note = {Capítulo 2, ``Ser estudiante en entornos virtuales de enseñanza-aprendizaje''. Bibliografía general de la semana 4}\n}"
+      },
+      "borges2007estudiante": {
+        "key": "borges2007estudiante",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "article",
+        "title": "El estudiante de entornos virtuales: Una primera aproximación",
+        "author": "Borges Sáiz, Federico",
+        "year": "2007",
+        "journal": "Digithum",
+        "url": "https://www.redalyc.org/pdf/550/55000904.pdf",
+        "note": "Universitat Oberta de Catalunya",
+        "raw_entry": "@article{borges2007estudiante,\n  author = {Borges Sáiz, Federico},\n  title = {El estudiante de entornos virtuales: Una primera aproximación},\n  journal = {Digithum},\n  number = {9},\n  pages = {1--7},\n  year = {2007},\n  url = {https://www.redalyc.org/pdf/550/55000904.pdf},\n  note = {Universitat Oberta de Catalunya}\n}"
+      },
+      "zambranoPilay2020tecnologias": {
+        "key": "zambranoPilay2020tecnologias",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "article",
+        "title": "Tecnologías educativas para el interaprendizaje",
+        "author": "Zambrano-Pilay, Elsa and Chiriboga-Dávalos, Jazmín and Chiriboga-Mendoza, Fabricio",
+        "year": "2020",
+        "journal": "Yachasun. Revista Científica Multidisciplinaria Arbitrada",
+        "note": "Bibliografía complementaria de la semana 4",
+        "raw_entry": "@article{zambranoPilay2020tecnologias,\n  author = {Zambrano-Pilay, Elsa and Chiriboga-Dávalos, Jazmín and Chiriboga-Mendoza, Fabricio},\n  title = {Tecnologías educativas para el interaprendizaje},\n  journal = {Yachasun. Revista Científica Multidisciplinaria Arbitrada},\n  volume = {4},\n  number = {7},\n  pages = {200--216},\n  year = {2020},\n  doi = {10.46296/yc.v4i7.0043},\n  note = {Bibliografía complementaria de la semana 4}\n}"
+      },
+      "aguadoSleeter2021educacion": {
+        "key": "aguadoSleeter2021educacion",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "article",
+        "title": "Educación intercultural en la práctica escolar: Cómo hacerla posible",
+        "author": "Aguado-Odina, Teresa and Sleeter, Christine",
+        "year": "2021",
+        "journal": "Profesorado: Revista de Currículum y Formación del Profesorado",
+        "note": "Bibliografía complementaria de la semana 4",
+        "raw_entry": "@article{aguadoSleeter2021educacion,\n  author = {Aguado-Odina, Teresa and Sleeter, Christine},\n  title = {Educación intercultural en la práctica escolar: Cómo hacerla posible},\n  journal = {Profesorado: Revista de Currículum y Formación del Profesorado},\n  volume = {25},\n  number = {3},\n  pages = {1--5},\n  year = {2021},\n  note = {Bibliografía complementaria de la semana 4}\n}"
+      },
+      "conocer2025ec0554": {
+        "key": "conocer2025ec0554",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "misc",
+        "title": "EC0554.01: Trabajo en equipo",
+        "author": "Consejo Nacional de Normalización y Certificación de Competencias Laborales",
+        "year": "2025",
+        "url": "https://www.conocer.gob.mx/contenido/publicaciones_dof/2025/EC0554_01.pdf",
+        "note": "Estándar de competencia. Bibliografía complementaria de la semana 4",
+        "raw_entry": "@misc{conocer2025ec0554,\n  author = {{Consejo Nacional de Normalización y Certificación de Competencias Laborales}},\n  title = {EC0554.01: Trabajo en equipo},\n  year = {2025},\n  howpublished = {\\url{https://www.conocer.gob.mx/contenido/publicaciones_dof/2025/EC0554_01.pdf}},\n  note = {Estándar de competencia. Bibliografía complementaria de la semana 4}\n}"
+      },
+      "gascheMendoza2012sociedad": {
+        "key": "gascheMendoza2012sociedad",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "book",
+        "title": "Sociedad bosquesina: Tomo I. Ensayo de antropología rural amazónica",
+        "author": "Gasché, Jorge and Mendoza, Napoleón",
+        "year": "2012",
+        "publisher": "Instituto de Investigaciones de la Amazonía Peruana",
+        "note": "Bibliografía complementaria de la semana 4",
+        "raw_entry": "@book{gascheMendoza2012sociedad,\n  author = {Gasché, Jorge and Mendoza, Napoleón},\n  title = {Sociedad bosquesina: Tomo I. Ensayo de antropología rural amazónica},\n  year = {2012},\n  publisher = {Instituto de Investigaciones de la Amazonía Peruana},\n  address = {Iquitos},\n  note = {Bibliografía complementaria de la semana 4}\n}"
+      },
+      "unesco1998declaracion": {
+        "key": "unesco1998declaracion",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "misc",
+        "title": "Declaración mundial sobre la educación superior en el siglo XXI: Visión y acción",
+        "author": "UNESCO",
+        "year": "1998",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000113878_spa",
+        "note": "Normatividad internacional relacionada con la asignatura",
+        "raw_entry": "@misc{unesco1998declaracion,\n  author = {{UNESCO}},\n  title = {Declaración mundial sobre la educación superior en el siglo XXI: Visión y acción},\n  year = {1998},\n  howpublished = {\\url{https://unesdoc.unesco.org/ark:/48223/pf0000113878_spa}},\n  note = {Normatividad internacional relacionada con la asignatura}\n}"
+      },
+      "zambrano2020tecnologias": {
+        "key": "zambrano2020tecnologias",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "entry_type": "book",
+        "title": "Tecnologías educativas para el interaprendizaje",
+        "author": "Zambrano-Pilay, Edith and Chiriboga-Dávalos, Jaime and Chiriboga-Mendoza, Fidel",
+        "year": "2020",
+        "publisher": "Editorial Académica",
+        "raw_entry": "@book{zambrano2020tecnologias,\n  author    = {Zambrano-Pilay, Edith and Chiriboga-Dávalos, Jaime and Chiriboga-Mendoza, Fidel},\n  year      = {2020},\n  title     = {Tecnologías educativas para el interaprendizaje},\n  publisher = {Editorial Académica}\n}"
+      },
+      "cushpa2022metodologia": {
+        "key": "cushpa2022metodologia",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "entry_type": "book",
+        "title": "Metodología PACIE en el interaprendizaje",
+        "author": "Cushpa Inchiglema, Raúl Clemente",
+        "year": "2022",
+        "publisher": "Editorial Académica",
+        "raw_entry": "@book{cushpa2022metodologia,\n  author    = {Cushpa Inchiglema, Raúl Clemente},\n  year      = {2022},\n  title     = {Metodología PACIE en el interaprendizaje},\n  publisher = {Editorial Académica}\n}"
+      },
+      "lopez2022estudio": {
+        "key": "lopez2022estudio",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "entry_type": "misc",
+        "title": "Estudio de caso. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje",
+        "author": "López, A.",
+        "year": "2022",
+        "note": "Universidad Abierta y a Distancia de México. Disponible en https://100tecnicasdidacticas.unadmexico.mx/",
+        "raw_entry": "@misc{lopez2022estudio,\n  author = {López, A.},\n  year   = {2022},\n  title  = {Estudio de caso. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje},\n  note   = {Universidad Abierta y a Distancia de México. Disponible en https://100tecnicasdidacticas.unadmexico.mx/}\n}"
+      },
+      "constitucion2026": {
+        "key": "constitucion2026",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "entry_type": "misc",
+        "title": "Constitución Política de los Estados Unidos Mexicanos",
+        "author": "Cámara de Diputados del H. Congreso de la Unión",
+        "year": "2026",
+        "publisher": "Diario Oficial de la Federación",
+        "note": "Última reforma: 2 de junio de 2026. Disponible en https://www.diputados.gob.mx/",
+        "raw_entry": "@misc{constitucion2026,\n  author       = {{Cámara de Diputados del H. Congreso de la Unión}},\n  year         = {2026},\n  title        = {Constitución Política de los Estados Unidos Mexicanos},\n  publisher    = {Diario Oficial de la Federación},\n  note         = {Última reforma: 2 de junio de 2026. Disponible en https://www.diputados.gob.mx/}\n}"
+      },
+      "lgdl2003": {
+        "key": "lgdl2003",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "entry_type": "misc",
+        "title": "Ley General de Derechos Lingüísticos de los Pueblos Indígenas",
+        "author": "Congreso de la Unión",
+        "year": "2003",
+        "publisher": "Diario Oficial de la Federación",
+        "raw_entry": "@misc{lgdl2003,\n  author       = {{Congreso de la Unión}},\n  year         = {2003},\n  title        = {Ley General de Derechos Lingüísticos de los Pueblos Indígenas},\n  publisher    = {Diario Oficial de la Federación},\n  month        = {marzo},\n  day          = {13}\n}"
+      },
+      "oit1989": {
+        "key": "oit1989",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "entry_type": "misc",
+        "title": "Convenio sobre Pueblos Indígenas y Tribales en Países Independientes (Convenio 169)",
+        "author": "Organización Internacional del Trabajo",
+        "year": "1989",
+        "note": "Adoptado en 1989, ratificado por México en 1990",
+        "raw_entry": "@misc{oit1989,\n  author       = {{Organización Internacional del Trabajo}},\n  year         = {1989},\n  title        = {Convenio sobre Pueblos Indígenas y Tribales en Países Independientes (Convenio 169)},\n  note         = {Adoptado en 1989, ratificado por México en 1990}\n}"
+      },
+      "escjn2020protocolo": {
+        "key": "escjn2020protocolo",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "entry_type": "misc",
+        "title": "Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas",
+        "author": "Suprema Corte de Justicia de la Nación",
+        "year": "2020",
+        "publisher": "SCJN",
+        "raw_entry": "@misc{escjn2020protocolo,\n  author       = {{Suprema Corte de Justicia de la Nación}},\n  year         = {2020},\n  title        = {Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas},\n  publisher    = {SCJN}\n}"
+      },
+      "bertely2013interaprendizajes": {
+        "key": "bertely2013interaprendizajes",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "entry_type": "book",
+        "title": "Interaprendizajes entre indígenas. Tomos I y II",
+        "author": "Bertely Busquets, María",
+        "year": "2013",
+        "publisher": "Editorial académica",
+        "raw_entry": "@book{bertely2013interaprendizajes,\n  author    = {Bertely Busquets, María},\n  year      = {2013},\n  title     = {Interaprendizajes entre indígenas. Tomos I y II},\n  publisher = {Editorial académica}\n}"
+      },
+      "pech2017manual": {
+        "key": "pech2017manual",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "entry_type": "book",
+        "title": "Manual de comunicación intercultural",
+        "author": "Pech Salvador, Cynthia",
+        "year": "2017",
+        "publisher": "Editorial académica",
+        "raw_entry": "@book{pech2017manual,\n  author    = {Pech Salvador, Cynthia},\n  year      = {2017},\n  title     = {Manual de comunicación intercultural},\n  publisher = {Editorial académica}\n}"
+      },
+      "unesco1998": {
+        "key": "unesco1998",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "entry_type": "misc",
+        "title": "Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción",
+        "author": "UNESCO",
+        "year": "1998",
+        "publisher": "UNESCO",
+        "note": "Conferencia Mundial sobre Educación Superior. París, 5-9 de octubre de 1998",
+        "raw_entry": "@misc{unesco1998,\n  author       = {{UNESCO}},\n  year         = {1998},\n  title        = {Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción},\n  publisher    = {UNESCO},\n  note         = {Conferencia Mundial sobre Educación Superior. París, 5-9 de octubre de 1998}\n}"
       }
     }
   },

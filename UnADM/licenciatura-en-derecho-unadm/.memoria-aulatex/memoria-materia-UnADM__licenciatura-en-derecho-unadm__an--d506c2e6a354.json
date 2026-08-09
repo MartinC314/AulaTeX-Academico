@@ -2641,7 +2641,7 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 4 - antropologia-de-la-cultura-en-mexico-lde",
+        "subject_rule": "Actividad 5 - antropologia-de-la-cultura-en-mexico-lde",
         "scope_label": "antropologia-de-la-cultura-en-mexico-lde"
       },
       "didactic_contract": {
@@ -2785,8 +2785,8 @@
         "institution": "UnADM",
         "career": "licenciatura-en-derecho-unadm",
         "subject": "antropologia-de-la-cultura-en-mexico-lde",
-        "activity": "Actividad 4",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde"
+        "activity": "Actividad 5",
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -2882,7 +2882,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260725-035101",
+      "run_id": "20260809-152347",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
@@ -3000,7 +3000,7 @@
           "heading_contract": {
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-            "subject_rule": "Actividad 4 - antropologia-de-la-cultura-en-mexico-lde",
+            "subject_rule": "Actividad 5 - antropologia-de-la-cultura-en-mexico-lde",
             "scope_label": "antropologia-de-la-cultura-en-mexico-lde"
           },
           "didactic_contract": {
@@ -3124,8 +3124,8 @@
             "institution": "UnADM",
             "career": "licenciatura-en-derecho-unadm",
             "subject": "antropologia-de-la-cultura-en-mexico-lde",
-            "activity": "Actividad 4",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde"
+            "activity": "Actividad 5",
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -3217,7 +3217,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260725-035101",
+          "run_id": "20260809-152347",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",

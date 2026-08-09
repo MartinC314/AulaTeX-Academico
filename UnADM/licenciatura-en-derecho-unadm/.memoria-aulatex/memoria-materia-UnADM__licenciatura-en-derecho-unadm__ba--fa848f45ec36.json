@@ -2202,7 +2202,7 @@
         "career": "licenciatura-en-derecho-unadm",
         "subject": "bases-de-derecho-internacional-publico-lde",
         "activity": "Actividad 4",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde"
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -2264,10 +2264,7 @@
           "has_memory": true
         }
       ],
-      "novelty_signals": [
-        "heading_contract",
-        "institutional_identity"
-      ],
+      "novelty_signals": [],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -2298,7 +2295,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260725-035103",
+      "run_id": "20260809-115506",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde",
@@ -2310,7 +2307,7 @@
         "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde",
         "UnADM/licenciatura-en-derecho-unadm/derecho-de-la-contratacion-internacional-lde"
       ],
-      "novelty_count": 2
+      "novelty_count": 0
     }
   },
   "curricular_context": {
@@ -2548,7 +2545,7 @@
             "career": "licenciatura-en-derecho-unadm",
             "subject": "bases-de-derecho-internacional-publico-lde",
             "activity": "Actividad 4",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde"
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -2640,7 +2637,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260725-035103",
+          "run_id": "20260809-115506",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde",
@@ -2652,7 +2649,7 @@
             "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde",
             "UnADM/licenciatura-en-derecho-unadm/derecho-de-la-contratacion-internacional-lde"
           ],
-          "novelty_count": 2
+          "novelty_count": 0
         }
       },
       "curricular_context": {

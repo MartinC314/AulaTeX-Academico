@@ -733,7 +733,10 @@
           "has_memory": true
         }
       ],
-      "novelty_signals": [],
+      "novelty_signals": [
+        "heading_contract",
+        "institutional_identity"
+      ],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -762,7 +765,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260725-051606",
+      "run_id": "20260809-152349",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm",
@@ -774,7 +777,7 @@
         "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde",
         "UnADM/licenciatura-en-derecho-unadm/derecho-de-la-contratacion-internacional-lde"
       ],
-      "novelty_count": 0
+      "novelty_count": 2
     }
   },
   "curricular_context": {},
