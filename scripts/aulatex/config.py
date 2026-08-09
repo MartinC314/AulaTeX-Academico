@@ -8,7 +8,9 @@ from pathlib import Path
 LLM_ENGINES = (
     "Auto (model-router)",
     "Claude Foundry",
+    "Claude Opus DZ",
     "Claude Sonnet",
+    "Claude Sonnet 4.5",
     "Claude Haiku",
     "GPT-5.6-SOL",
     "GPT-5.6-Luna",
@@ -48,6 +50,8 @@ ENGINE_ENV_PREFIX = {
     # Anthropic Sonnet/Haiku (mismo endpoint que Claude Foundry, otro deployment).
     "Claude Sonnet": "ANTHROPIC_SONNET",
     "Claude Haiku": "ANTHROPIC_HAIKU",
+    "Claude Opus DZ": "ANTHROPIC_OPUS_DZ",
+    "Claude Sonnet 4.5": "ANTHROPIC_SONNET_45",
 }
 
 REQUIRED_LLM_SUFFIXES = ("BASE_URL", "API_KEY", "CHAT_DEPLOYMENT")

@@ -33,10 +33,11 @@ _SAFETY_NET_ENGINE = "Claude Foundry"
 #   - matematicas                  -> Mistral-Matematicas -> GPT-Pro
 #   - exploracion / ideacion       -> Grok-Pensamiento-Libre -> Claude Foundry
 _TASK_ENGINE_CHAINS: dict[str, list[str]] = {
-    "redaccion": ["Claude Foundry", "GPT-Pro", "Codex"],
+    # Claude Opus DZ solo tiene 13 TPM: va tras Foundry como alivio puntual del 429.
+    "redaccion": ["Claude Foundry", "Claude Opus DZ", "GPT-Pro", "Codex"],
     "codigo": ["Codex", "GPT-Pro", "Claude Foundry"],
-    "razonamiento": ["Codex", "Claude Foundry", "GPT-Pro"],
-    "revision": ["GPT-Pro", "Claude Foundry", "Codex"],
+    "razonamiento": ["Codex", "Claude Foundry", "Claude Opus DZ", "GPT-Pro"],
+    "revision": ["GPT-Pro", "Claude Foundry", "Claude Sonnet 4.5", "Codex"],
     "rapido": ["Auto (model-router)", "Claude Foundry"],
     "matematicas": ["Mistral-Matematicas", "Mistral-Medium-DZ", "GPT-Pro", "Codex"],
     "exploracion": ["Grok-Pensamiento-Libre", "Claude Foundry", "GPT-Pro"],
@@ -110,7 +111,7 @@ class AulaTeXLLMConfig:
         api_version = _env(f"{prefix}_API_VERSION", "2023-06-01")
         # Sonnet/Haiku comparten endpoint y clave con Claude Foundry (Anthropic);
         # solo aportan su propio *_DEPLOYMENT. Heredan base_url/api_key.
-        if prefix in ("ANTHROPIC_SONNET", "ANTHROPIC_HAIKU"):
+        if prefix in ("ANTHROPIC_SONNET", "ANTHROPIC_HAIKU", "ANTHROPIC_OPUS_DZ", "ANTHROPIC_SONNET_45"):
             base_url = base_url or _env("ANTHROPIC_FOUNDRY_BASE_URL")
             api_key = api_key or _env("ANTHROPIC_FOUNDRY_API_KEY")
             deployment = deployment or _env(f"{prefix}_DEPLOYMENT")
