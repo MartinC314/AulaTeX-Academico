@@ -317,6 +317,50 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
             "y postura personal. La declaración de uso de IA puede ligarse como \\footnote a una frase oportuna de la conclusión."
         ),
     },
+    "resumen": {
+        "aliases": ("resumen", "resumen investigativo", "síntesis", "sintesis", "resumen de lectura"),
+        "required_visible_elements": ("introducción", "desarrollo", "conclusión"),
+        "preservation_rule": (
+            "Si el producto es resumen (#17, familia escrito-expositivo), conservar los 3 ELEMENTOS OFICIALES del fascículo: (1) INTRODUCCIÓN "
+            "que aborda de manera general el tema a resumir, (2) DESARROLLO como parte medular donde se explican con palabras propias las ideas "
+            "principales del texto base, (3) CONCLUSIÓN que cierra con una síntesis de las ideas presentadas. El resumen es un TEXTO NUEVO con "
+            "lenguaje y estilo propio, no una copia abreviada."
+        ),
+        "texto_nuevo_rule": (
+            "El resumen NO es un recorte del original: es un texto nuevo producido a partir del texto fuente. PROHIBIDAS las frases literales "
+            "del original salvo cita textual explícita y justificada. El lenguaje debe ser propio, en prosa y en TERCERA PERSONA, con unidad "
+            "textual (introduce, desarrolla y concluye lo que comunica)."
+        ),
+        "extension_rule": (
+            "Regla de proporción (Cervera et al., 2006, citados en Arenas et al., 2014): un buen resumen representa entre UN TERCIO y UNA "
+            "QUINTA PARTE del original. Extenderse demasiado revela poca capacidad de síntesis y repetición de ideas. La brevedad es criterio "
+            "de calidad, no defecto."
+        ),
+        "seis_pasos_rule": (
+            "Los 7 pasos del fascículo estructuran el trabajo: (1) lectura del texto fuente, (2) subrayar suprimiendo lo irrelevante o "
+            "repetitivo, (3) seleccionar la información esencial, (4) generalizar sustituyendo conceptos parecidos por uno más general, "
+            "(5) integrar construyendo proposiciones conceptualmente nuevas, (6) redactar según el objetivo definido, (7) cuidar la escritura "
+            "y revisar. Los pasos son método de trabajo; NO deben aparecer como andamiaje visible salvo que la planeación lo pida."
+        ),
+        "estilo_rule": (
+            "Frases cortas; sin expresiones ambiguas; sin superlativos ni adjetivos innecesarios; sin abreviaturas o acrónimos salvo los muy "
+            "conocidos; sin referencias particulares a gráficos o imágenes. Los párrafos guardan relación con el tema general y mantienen "
+            "conexión lógica entre sí."
+        ),
+        "fundamento_normativo_rule": (
+            "Cuando el contenido es jurídico, cada afirmación sustantiva se ancla en su FUNDAMENTO NORMATIVO EXACTO (artículo, fracción, "
+            "párrafo, inciso) con las abreviaturas de un texto normativo, y se respalda con cita APA de la fuente doctrinal o institucional."
+        ),
+        "structure_rule": (
+            "Cuerpo en TRES actos que coinciden con los 3 elementos oficiales del resumen: Introducción, un Desarrollo con título temático "
+            "(NO 'Desarrollo') y Conclusiones. El desarrollo se organiza en subsecciones temáticas que siguen la estructura del texto base, "
+            "no en una lista de pasos metodológicos."
+        ),
+        "closure_rule": (
+            "La conclusión sintetiza las ideas presentadas e integra postura propia. La declaración de uso de IA se liga como \\footnote a una "
+            "frase oportuna, nunca como \\section."
+        ),
+    },
     "mapa_semantico": {
         "aliases": ("mapa semántico", "mapa semantico", "mapa semántico", "red semántica", "red semantica", "campo semántico", "campo semantico"),
         "required_visible_elements": ("tema central", "conceptos", "palabras enlace"),

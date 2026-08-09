@@ -85,6 +85,35 @@
         "Cada hito respaldado con su cita \\citep de obra/discurso representativo."
       ]
     },
+    "resumen": {
+      "fuente_real": {
+        "materia": "Garantías Constitucionales (UnADM, Licenciatura en Derecho)",
+        "actividad": "Actividad 4 - Resumen investigativo del Tema 2 (Los derechos humanos y sus garantías en la Constitución Mexicana)",
+        "planeacion": "planeaciones-garantias-constitucionales/Planificacion de actividades S5 - Garantias constitucionales.pdf",
+        "guia_metodologica": "Fascículo #17 Resumen (100tecnicasdidacticas.unadmexico.mx); fuentes CNDH-INEHRM y CPEUM.",
+        "titulo": "Resumen jurídico: síntesis con lenguaje propio de los cuatro grupos de derechos humanos y sus garantías, cada uno anclado a su fundamento constitucional.",
+        "estado": "PATRON EN CONSTRUCCION. Es la base conceptual que alimenta el mapa semántico posterior (Actividad 5).",
+        "deriva_en": "mapa_semantico (los ejes temáticos del resumen se vuelven los campos semánticos del mapa)"
+      },
+      "packages": [
+        "\\usepackage{csquotes}",
+        "\\usepackage{enumitem}"
+      ],
+      "skeleton": "% ARQUITECTURA RESUMEN (reporte contenedor; el producto es el texto mismo):\n\\section{Introducci\\'on}\n% Aborda de manera GENERAL el tema a resumir y anuncia el recorrido. Es el elemento\n% oficial (1) del fasciculo #17. Sin metadiscurso ni mencion de la actividad.\n\n\\section{<Titulo tematico del desarrollo, p.ej. Los derechos humanos y sus garantias en la CPEUM>}\n% Elemento oficial (2): parte MEDULAR. Se explican con palabras propias las ideas\n% principales del texto base, organizadas en subsecciones que siguen su estructura.\n\\subsection{<Eje 1, p.ej. Derechos de igualdad y sus garantias>}\n% Cada afirmacion sustantiva ancla su fundamento normativo exacto y su \\citep.\n\\subsection{<Eje 2, p.ej. Derechos de libertad y sus garantias>}\n\\subsection{<Eje 3, p.ej. Legalidad y seguridad juridica>}\n\\subsection{<Eje 4, p.ej. Derechos sociales y sus garantias>}\n\n\\clearpage\\section{Conclusi\\'on}\n% Elemento oficial (3): cierra con SINTESIS de las ideas presentadas + postura propia.\n% IA como \\footnote ligada a una frase oportuna.\n\\clearpage\\bibliography{<materia>}",
+      "tres_elementos_oficiales_rule": "El resumen DEBE tener los 3 ELEMENTOS ESENCIALES oficiales (fascículo #17): (1) INTRODUCCIÓN que aborda de manera general el tema a resumir; (2) DESARROLLO como parte medular donde el autor explica CON PALABRAS PROPIAS las ideas principales del texto base; (3) CONCLUSIÓN que cierra con una síntesis de las ideas presentadas. Los tres se corresponden con los tres actos del reporte.",
+      "texto_nuevo_rule": "REGLA CENTRAL: el resumen es un TEXTO NUEVO producido a partir del texto fuente, no un recorte abreviado. Emplea lenguaje y estilo propio, posee unidad textual (introduce, desarrolla y concluye) y es la reescritura del original a partir de la construcción de significado que el lector hace de él. PROHIBIDAS las frases literales del original salvo cita textual explícita con \\enquote y su referencia.",
+      "extension_rule": "Regla de proporción (Cervera et al., 2006, citados en Arenas et al., 2014, p. 2): un buen resumen representa entre UN TERCIO y UNA QUINTA PARTE del original. Extenderse demasiado revela poca capacidad de síntesis y repetición de ideas. Aquí la brevedad es criterio de calidad, y esto TENSIONA con las métricas heurísticas que premian extensión: prevalece el fascículo.",
+      "siete_pasos_rule": "Los 7 pasos del fascículo son MÉTODO DE TRABAJO, no estructura visible: (1) lectura del texto fuente, (2) subrayar suprimiendo lo irrelevante o repetitivo, (3) seleccionar la información esencial, (4) generalizar sustituyendo conceptos parecidos por uno más general, (5) integrar construyendo proposiciones conceptualmente nuevas, (6) redactar según el objetivo definido, (7) cuidar la escritura y revisar. NO deben aparecer como andamiaje en el texto entregado salvo que la planeación lo exija.",
+      "estilo_rule": "Prosa en TERCERA PERSONA, frases cortas, lenguaje claro y preciso. Sin expresiones ambiguas, sin superlativos, sin adjetivos innecesarios, sin abreviaturas ni acrónimos salvo los muy conocidos, sin referencias particulares a gráficos o imágenes. Los párrafos guardan relación con el tema general y mantienen conexión lógica entre sí.",
+      "fundamento_normativo_rule": "Cuando el contenido es jurídico, cada afirmación sustantiva se ancla en su FUNDAMENTO NORMATIVO EXACTO (artículo, fracción, párrafo, inciso) con las abreviaturas de un texto normativo (p.ej. 'art.~1.º, párr.~3.º CPEUM') y se respalda con \\citep de la fuente doctrinal o institucional.",
+      "scoring_extra": [
+        "El resumen tiene los 3 elementos oficiales: introducción general, desarrollo medular con palabras propias y conclusión sintética.",
+        "Es un texto nuevo con lenguaje propio: no reproduce frases literales del original sin comillas ni referencia.",
+        "Respeta la proporción de síntesis (entre un tercio y una quinta parte del original); no se extiende por acumulación.",
+        "Está redactado en prosa, tercera persona, con frases cortas y sin adjetivación innecesaria.",
+        "Cada afirmación jurídica sustantiva ancla su fundamento normativo exacto y su cita APA."
+      ]
+    },
     "resena": {
       "fuente_real": {
         "materia": "Derecho a la Seguridad Social (UnADM, Licenciatura en Derecho)",
