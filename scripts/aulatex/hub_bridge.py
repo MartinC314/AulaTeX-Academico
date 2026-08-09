@@ -34,7 +34,7 @@ def _shared_key() -> str:
 
 def _shared_host() -> str:
     return (os.getenv("AZURE_AI_HOST")
-            or "https://martindelacruzm-9860-resource.services.ai.azure.com").rstrip("/")
+            or "https://carlosmauriciocarvajalcoronado-4.services.ai.azure.com").rstrip("/")
 
 
 # ============================================================

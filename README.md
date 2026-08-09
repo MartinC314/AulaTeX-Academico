@@ -496,35 +496,35 @@ CODEX_API_VERSION=2026-02-24
       {
         "id": "gpt-5.4-pro",
         "name": "gpt-5.4-pro",
-        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
+        "url": "https://carlosmauriciocarvajalcoronado-4.services.ai.azure.com/openai/v1/responses",
         "maxInputTokens": 922000,
         "maxOutputTokens": 128000,
       },
       {
         "id": "model-router",
         "name": "model-router",
-        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
+        "url": "https://carlosmauriciocarvajalcoronado-4.services.ai.azure.com/openai/v1/chat/completions",
         "maxInputTokens": 1015808,
         "maxOutputTokens": 32768
       },
       {
         "id": "Mistral-Large-3",
         "name": "Mistral-Large-3",
-        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
+        "url": "https://carlosmauriciocarvajalcoronado-4.services.ai.azure.com/openai/v1/chat/completions",
         "maxInputTokens": 126976,
         "maxOutputTokens": 4096
       },
       {
         "id": "gpt-chat-latest",
         "name": "gpt-chat-latest",
-        "url": "https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
+        "url": "https://carlosmauriciocarvajalcoronado-4.services.ai.azure.com/openai/v1/responses",
         "maxInputTokens": 72000,
         "maxOutputTokens": 128000,
       },
       {
         "id": "DeepSeek-V4-Pro",
         "name": "DeepSeek-V4-Pro",
-        "url": "https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/chat/completions",
+        "url": "https://carlosmauriciocarvajalcoronado-4.services.ai.azure.com/openai/v1/chat/completions",
         "maxInputTokens": 872000,
         "maxOutputTokens": 128000
       },

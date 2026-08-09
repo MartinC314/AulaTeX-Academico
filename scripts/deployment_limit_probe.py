@@ -32,7 +32,7 @@ class DeploymentSpec:
 SPECS: dict[str, DeploymentSpec] = {
     "gpt-5.4-pro": DeploymentSpec(
         model_id="gpt-5.4-pro",
-        url="https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
+        url="https://carlosmauriciocarvajalcoronado-4.services.ai.azure.com/openai/v1/responses",
         max_input_tokens=922000,
         max_output_tokens=128000,
         api_key_env="GPT_PRO_API_KEY",
@@ -41,7 +41,7 @@ SPECS: dict[str, DeploymentSpec] = {
     ),
     "model-router": DeploymentSpec(
         model_id="model-router",
-        url="https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
+        url="https://carlosmauriciocarvajalcoronado-4.services.ai.azure.com/openai/v1/chat/completions",
         max_input_tokens=1015808,
         max_output_tokens=32768,
         api_key_env="MODEL_ROUTER_API_KEY",
@@ -51,7 +51,7 @@ SPECS: dict[str, DeploymentSpec] = {
     ),
     "Mistral-Large-3": DeploymentSpec(
         model_id="Mistral-Large-3",
-        url="https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/chat/completions",
+        url="https://carlosmauriciocarvajalcoronado-4.services.ai.azure.com/openai/v1/chat/completions",
         max_input_tokens=126976,
         max_output_tokens=4096,
         api_key_env="MISTRAL_LARGE_3_API_KEY",
@@ -60,7 +60,7 @@ SPECS: dict[str, DeploymentSpec] = {
     ),
     "gpt-chat-latest": DeploymentSpec(
         model_id="gpt-chat-latest",
-        url="https://jonathandelacruz-6234-resource.services.ai.azure.com/openai/v1/responses",
+        url="https://carlosmauriciocarvajalcoronado-4.services.ai.azure.com/openai/v1/responses",
         max_input_tokens=72000,
         max_output_tokens=128000,
         api_key_env="GPT_CHAT_LATEST_API_KEY",
@@ -69,7 +69,7 @@ SPECS: dict[str, DeploymentSpec] = {
     ),
     "DeepSeek-V4-Pro": DeploymentSpec(
         model_id="DeepSeek-V4-Pro",
-        url="https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/chat/completions",
+        url="https://carlosmauriciocarvajalcoronado-4.services.ai.azure.com/openai/v1/chat/completions",
         max_input_tokens=872000,
         max_output_tokens=128000,
         api_key_env="DEEPSEEK_V4_PRO_API_KEY",
@@ -78,7 +78,7 @@ SPECS: dict[str, DeploymentSpec] = {
     ),
     "gpt-5.3-codex": DeploymentSpec(
         model_id="gpt-5.3-codex",
-        url="https://jonathandelacruz-2506-resource.services.ai.azure.com/openai/v1/responses",
+        url="https://carlosmauriciocarvajalcoronado-4.services.ai.azure.com/openai/v1/responses",
         max_input_tokens=272000,
         max_output_tokens=128000,
         api_key_env="CODEX_API_KEY",
