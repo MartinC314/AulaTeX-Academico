@@ -1,0 +1,22 @@
+{
+  "node": "filosofia-del-derecho-lde",
+  "slug": "filosofia-del-derecho",
+  "title": "Filosofia del Derecho",
+  "activity_number": 4,
+  "files": [
+    "filosofia-del-derecho.bib",
+    "reporte-filosofia-del-derecho.tex",
+    "reporte-filosofia-del-derecho-Actividad-4.tex",
+    "presentacion-filosofia-del-derecho.tex",
+    "presentacion-filosofia-del-derecho-Actividad-4.tex",
+    "programa-analitico-filosofia-del-derecho.md",
+    "COMPILACION-filosofia-del-derecho.md",
+    "README.md"
+  ],
+  "folders": [
+    "referencias-filosofia-del-derecho",
+    "planeaciones-filosofia-del-derecho",
+    "assets-filosofia-del-derecho"
+  ],
+  "memory_summary": []
+}

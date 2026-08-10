@@ -302,7 +302,7 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 5 - garantias-constitucionales-lde",
+        "subject_rule": "Actividad 4 - garantias-constitucionales-lde",
         "scope_label": "Actividad 1"
       },
       "didactic_contract": {
@@ -532,7 +532,7 @@
         "career": "licenciatura-en-derecho-unadm",
         "subject": "garantias-constitucionales-lde",
         "activity": "Actividad 1",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde"
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-4"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -594,10 +594,7 @@
           "has_memory": false
         }
       ],
-      "novelty_signals": [
-        "heading_contract",
-        "institutional_identity"
-      ],
+      "novelty_signals": [],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -629,7 +626,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260809-152341",
+      "run_id": "20260809-211515",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-1",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-1",
@@ -641,7 +638,7 @@
         "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-3",
         "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-4"
       ],
-      "novelty_count": 2
+      "novelty_count": 0
     }
   },
   "curricular_context": {
@@ -715,7 +712,7 @@
           "heading_contract": {
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-            "subject_rule": "Actividad 5 - garantias-constitucionales-lde",
+            "subject_rule": "Actividad 4 - garantias-constitucionales-lde",
             "scope_label": "Actividad 1"
           },
           "didactic_contract": {
@@ -904,7 +901,7 @@
             "career": "licenciatura-en-derecho-unadm",
             "subject": "garantias-constitucionales-lde",
             "activity": "Actividad 1",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde"
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-4"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -999,7 +996,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260809-152341",
+          "run_id": "20260809-211515",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-1",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-1",
@@ -1011,7 +1008,7 @@
             "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-3",
             "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/actividad-4"
           ],
-          "novelty_count": 2
+          "novelty_count": 0
         }
       },
       "curricular_context": {

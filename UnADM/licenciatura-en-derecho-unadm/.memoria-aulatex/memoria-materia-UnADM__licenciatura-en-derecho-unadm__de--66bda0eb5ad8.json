@@ -2479,7 +2479,7 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 4 - derecho-a-la-seguridad-social-lde",
+        "subject_rule": "Actividad 5 - derecho-a-la-seguridad-social-lde",
         "scope_label": "derecho-a-la-seguridad-social-lde"
       },
       "didactic_contract": {
@@ -2708,8 +2708,8 @@
         "institution": "UnADM",
         "career": "licenciatura-en-derecho-unadm",
         "subject": "derecho-a-la-seguridad-social-lde",
-        "activity": "Actividad 4",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4"
+        "activity": "Actividad 5",
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-5"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -2806,7 +2806,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260809-152348",
+      "run_id": "20260809-155337",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
@@ -2921,7 +2921,7 @@
           "heading_contract": {
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-            "subject_rule": "Actividad 4 - derecho-a-la-seguridad-social-lde",
+            "subject_rule": "Actividad 5 - derecho-a-la-seguridad-social-lde",
             "scope_label": "derecho-a-la-seguridad-social-lde"
           },
           "didactic_contract": {
@@ -3103,8 +3103,8 @@
             "institution": "UnADM",
             "career": "licenciatura-en-derecho-unadm",
             "subject": "derecho-a-la-seguridad-social-lde",
-            "activity": "Actividad 4",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4"
+            "activity": "Actividad 5",
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-5"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -3198,7 +3198,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260809-152348",
+          "run_id": "20260809-155337",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",

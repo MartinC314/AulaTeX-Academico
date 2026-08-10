@@ -1,0 +1,170 @@
+\documentclass[12pt,oneside]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=apa,sorting=nyt]{biblatex}
+
+\geometry{letterpaper, margin=2.5cm}
+\onehalfspacing
+\addbibresource{filosofia-del-derecho-Actividad-4.bib}
+
+\title{\textbf{[TÍTULO DE LA ACTIVIDAD]}}
+\author{
+    \textbf{Universidad Abierta y a Distancia de México}\\
+    Licenciatura en Derecho\\
+    Filosofía del Derecho\\
+    Actividad 4
+}
+\date{\today}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+
+    % Sustituir por el archivo institucional autorizado.
+    % \includegraphics[width=0.22\textwidth]{imagenes/logo-unadm.pdf}
+
+    \vspace*{1cm}
+    {\Large Universidad Abierta y a Distancia de México\par}
+    \vspace{0.5cm}
+    {\large Licenciatura en Derecho\par}
+
+    \vfill
+
+    {\LARGE\bfseries [TÍTULO DE LA ACTIVIDAD]\par}
+    \vspace{0.5cm}
+    {\large Actividad 4\par}
+
+    \vfill
+
+    \begin{flushleft}
+    \textbf{Asignatura:} Filosofía del Derecho\\
+    \textbf{Estudiante:} [NOMBRE]\\
+    \textbf{Matrícula:} [MATRÍCULA]\\
+    \textbf{Docente:} [NOMBRE DEL DOCENTE]\\
+    \textbf{Fecha:} [FECHA DE ENTREGA]
+    \end{flushleft}
+
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Introducción}
+
+% Incorporar aquí:
+% 1. Presentación de la actividad.
+% 2. Problema filosófico-jurídico o social.
+% 3. Objetivo del trabajo.
+% 4. Método de análisis.
+%
+% No incluir afirmaciones sustantivas hasta confirmar la consigna
+% y las fuentes correspondientes.
+
+El presente trabajo aborda el tema de \textbf{[TEMA CONFIRMADO]}.
+Su propósito es analizar \textbf{[PROBLEMA O PREGUNTA CENTRAL]} a partir
+de los conceptos de \textbf{[CONCEPTO 1]}, \textbf{[CONCEPTO 2]} y
+\textbf{[CONCEPTO 3]}.
+
+La exposición se organiza en cuatro momentos: delimitación del problema,
+presentación del marco conceptual, análisis propio y conclusión jurídica.
+Las afirmaciones doctrinales y normativas deberán sustentarse con fuentes
+verificables incorporadas en el archivo bibliográfico.
+
+\section{Planteamiento del problema}
+
+\subsection{Contexto}
+
+[Describir el contexto de la actividad con base en la consigna oficial.]
+
+\subsection{Pregunta de análisis}
+
+\textbf{Pregunta principal:} [PREGUNTA CONFIRMADA]
+
+\textbf{Preguntas secundarias:}
+
+\begin{enumerate}
+    \item [PREGUNTA SECUNDARIA 1]
+    \item [PREGUNTA SECUNDARIA 2]
+    \item [PREGUNTA SECUNDARIA 3]
+\end{enumerate}
+
+\section{Marco conceptual}
+
+\subsection{Concepto central}
+
+[Definir el concepto central con apoyo en una fuente verificable.]
+
+\subsection{Conceptos relacionados}
+
+\begin{table}[ht]
+\centering
+\caption{Conceptos necesarios para el análisis}
+\begin{tabular}{p{0.25\textwidth} p{0.65\textwidth}}
+\toprule
+\textbf{Concepto} & \textbf{Definición y función en el análisis} \\
+\midrule
+[Concepto 1] & [Definición sustentada.] \\
+[Concepto 2] & [Definición sustentada.] \\
+[Concepto 3] & [Definición sustentada.] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Análisis}
+
+\subsection{Aplicación de los conceptos}
+
+[Relacionar los conceptos con el problema planteado.]
+
+\subsection{Contraste de perspectivas}
+
+[Comparar las corrientes, autores o posiciones requeridas por la consigna.]
+
+\subsection{Argumentación propia}
+
+[Presentar una postura razonada. Distinguir claramente las ideas de las
+fuentes de la interpretación propia.]
+
+\section{Implicaciones jurídicas}
+
+[Explicar las consecuencias jurídicas del análisis, sin afirmar la vigencia
+de normas que no hayan sido verificadas.]
+
+\section{Conclusión}
+
+El análisis permite sostener que \textbf{[TESIS O RESPUESTA PRINCIPAL]}.
+Esta conclusión se fundamenta en que \textbf{[ARGUMENTO 1]} y
+\textbf{[ARGUMENTO 2]}.
+
+Desde una perspectiva jurídica, \textbf{[CRITERIO PROPIO SOBRE LA
+RELEVANCIA DEL TEMA]}. En consecuencia, la aplicación de los conceptos
+estudiados debe orientarse hacia \textbf{[CONCLUSIÓN TRANSFERIBLE A LA
+PRÁCTICA JURÍDICA]}.
+
+\section*{Investigación pendiente}
+
+Esta sección deberá eliminarse antes de la entrega. Se mantiene durante
+la fase editorial para registrar:
+
+\begin{itemize}
+    \item Consigna oficial de la Actividad 4.
+    \item Producto solicitado y extensión.
+    \item Rúbrica o criterios de evaluación.
+    \item Fuentes específicas indicadas por la UnADM.
+    \item Normas jurídicas aplicables y texto vigente.
+\end{itemize}
+
+\printbibliography
+
+\end{document}

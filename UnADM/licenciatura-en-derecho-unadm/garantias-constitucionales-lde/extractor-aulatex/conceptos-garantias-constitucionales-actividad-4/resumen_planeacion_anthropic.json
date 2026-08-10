@@ -1,8 +1,8 @@
 {
-  "tema": "Actividad 4: Garantías Constitucionales (Licenciatura en Derecho - UnADM)",
+  "tema": "Actividad 4: Garantías Constitucionales (Licenciatura en Derecho - UnADM, Semestre 2, Bloque 1, asignatura obligatoria, 8 créditos)",
   "objetivo": "Convertir la consigna en problema jurídico verificable, con evidencia, fundamento y postura académica propia.",
   "tecnica_didactica": "",
-  "actividad": "Elaborar un producto escrito con la siguiente estructura: 1) Problema; 2) Marco conceptual y normativo; 3) Análisis o producto visual; 4) Postura personal; 5) Conclusión. Indicación editorial: sintetizar la memoria editorial de la materia sin perder continuidad con reporte y actividad.",
+  "actividad": "Elaborar un producto escrito con la siguiente estructura: 1) Problema; 2) Marco conceptual y normativo; 3) Análisis o producto visual; 4) Postura personal; 5) Conclusión. Indicación editorial: sintetizar la memoria editorial de la materia sin perder continuidad con el reporte y la actividad.",
   "bibliografia": [
     "Bibliografía local: garantias-constitucionales.bib"
   ],
@@ -15,20 +15,22 @@
   "aprendizajes": [
     "Delimitar marco jurídico",
     "Identificar instituciones y sujetos",
-    "Vincular problema con práctica profesional"
+    "Vincular problema con práctica profesional",
+    "Desarrollar la actividad con criterio jurídico, trazabilidad y control editorial"
   ],
   "conceptos_clave": [
     "Garantías constitucionales",
-    "Marco jurídico",
+    "Problema jurídico verificable",
     "Marco conceptual y normativo",
-    "Instituciones y sujetos",
-    "Postura personal",
-    "Práctica profesional"
+    "Postura académica propia",
+    "Trazabilidad y control editorial"
   ],
   "page_evidence": {
     "tema": [
       "p. 1, bloque 1",
-      "p. 1, bloque 2"
+      "p. 1, bloque 2",
+      "p. 2, bloque 4",
+      "p. 2, bloque 5"
     ],
     "objetivo": [
       "p. 2, bloque 1",
@@ -61,22 +63,22 @@
       "p. 3, bloque 1",
       "p. 3, bloque 2",
       "p. 3, bloque 3",
-      "p. 3, bloque 4"
+      "p. 3, bloque 4",
+      "p. 7, bloque 2",
+      "p. 7, bloque 3"
     ],
     "conceptos_clave": [
       "p. 1, bloque 1",
-      "p. 3, bloque 2",
-      "p. 3, bloque 3",
-      "p. 3, bloque 4",
+      "p. 2, bloque 3",
       "p. 4, bloque 3",
-      "p. 4, bloque 5"
+      "p. 4, bloque 5",
+      "p. 7, bloque 3"
     ]
   },
   "warnings": [
-    "No se indica explícitamente una técnica didáctica; el campo se dejó vacío.",
-    "Los 'aprendizajes' se derivaron de la sección 'Marcadores de investigación' (p. 3); el documento no los nombra como aprendizajes esperados.",
-    "La bibliografía solo se menciona como archivo local (garantias-constitucionales.bib); no se listan referencias específicas.",
-    "No se especifican formato de entrega, extensión, fecha límite ni ponderación/rúbrica; solo criterios de calidad generales.",
-    "Datos administrativos adicionales sin categoría solicitada: Semestre 2, Bloque 1, asignatura obligatoria, 8 créditos, fecha 9 de agosto de 2026."
+    "No se especifica una técnica didáctica explícita en el documento.",
+    "La bibliografía solo indica un archivo local (garantias-constitucionales.bib); no se listan fuentes concretas.",
+    "El documento es una plantilla editorial (AulaTeX) sin instrucciones detalladas de entrega (formato, extensión, fecha límite ni ponderación).",
+    "No se identifican fechas de entrega; solo aparece la fecha de pie de página '9 de agosto de 2026'."
   ]
 }

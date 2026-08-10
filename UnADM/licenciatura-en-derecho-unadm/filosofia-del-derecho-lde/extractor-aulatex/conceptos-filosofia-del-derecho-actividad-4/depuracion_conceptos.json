@@ -1,0 +1,37 @@
+{
+  "subject_slug": "filosofia-del-derecho",
+  "kept": [
+    "función del derecho en la sociedad",
+    "filosofia del derecho",
+    "derecho natural",
+    "positivismo juridico",
+    "escepticismo juridico",
+    "jerarquia normativa",
+    "interpretacion juridica",
+    "sistema juridico",
+    "teorias contemporaneas del derecho",
+    "funcion social del derecho"
+  ],
+  "discarded": [
+    "con el propósito de",
+    "configuración",
+    "contemporáneos",
+    "desarrollar una comprensión crítica",
+    "examinando su evolución",
+    "filosóficas",
+    "fundamentales",
+    "histórica",
+    "influencia",
+    "jurídicos",
+    "legales",
+    "reflexiva de su papel en la estructura",
+    "sistemas",
+    "sus diversas interpretaciones",
+    "de",
+    "en",
+    "la",
+    "su",
+    "y"
+  ],
+  "notes": "Se conservó únicamente el candidato con carga conceptual propia ('función del derecho en la sociedad') y se completó la lista con los conceptos foco de la materia, que son nucleares para resolver una actividad de filosofía del derecho. Se descartaron fragmentos sintácticos ('de', 'en', 'la', 'su', 'y'), conectores y giros instruccionales ('con el propósito de', 'examinando su evolución', 'desarrollar una comprensión crítica', 'reflexiva de su papel en la estructura'), así como adjetivos o sustantivos aislados demasiado genéricos ('sistemas', 'jurídicos', 'legales', 'filosóficas', 'fundamentales', 'histórica', 'influencia', 'configuración', 'contemporáneos', 'sus diversas interpretaciones'), cuyo valor solo aparece al integrarse en los conceptos foco. No se detectaron términos administrativos de la lista de penalización en los candidatos."
+}

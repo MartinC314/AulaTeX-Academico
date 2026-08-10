@@ -3,10 +3,10 @@
   "kept": [
     "Garantías constitucionales",
     "Marco conceptual y normativo",
-    "Marco jurídico",
-    "Instituciones y sujetos",
-    "Práctica profesional",
-    "Postura personal"
+    "Problema jurídico verificable",
+    "Postura académica propia",
+    "Trazabilidad y control editorial",
+    "instituciones sujetos"
   ],
   "discarded": [
     "agosto 2026",
@@ -19,7 +19,6 @@
     "garantias constitucionales",
     "garantias constitucionales unadm",
     "garantias-constitucionales",
-    "instituciones sujetos",
     "licenciatura derecho",
     "licenciatura derecho unadm",
     "local consistente",
@@ -30,5 +29,5 @@
     "unadm agosto 2026",
     "verificable"
   ],
-  "notes": "Se conservaron únicamente los conceptos con carga temática y utilidad para redactar y resolver la actividad: el objeto de estudio (garantías constitucionales), su encuadre teórico-normativo (marco conceptual y normativo, marco jurídico), los actores implicados (instituciones y sujetos) y los ejes de aplicación y argumentación (práctica profesional, postura personal). Se descartaron metadatos administrativos (UNADM, licenciatura, fechas), términos de control editorial o trazabilidad (plantilla, verificable, bibliografía local) y variantes duplicadas o slugs sin valor conceptual, que no aportan contenido para resolver la actividad."
+  "notes": "Se conservaron únicamente los conceptos con carga sustantiva para la redacción de la actividad: el objeto de estudio (garantías constitucionales), los ejes de desarrollo académico (marco conceptual y normativo, problema jurídico, postura propia), el eje de rigor documental (trazabilidad y control editorial) y el componente analítico de instituciones y sujetos obligados/titulares. Se descartaron variantes duplicadas en minúsculas o sin acentos, fragmentos truncados de n-gramas, referencias administrativas e institucionales (UNADM, licenciatura en derecho, agosto 2026), y términos de plantilla o metadatos editoriales que no aportan contenido jurídico resoluble."
 }

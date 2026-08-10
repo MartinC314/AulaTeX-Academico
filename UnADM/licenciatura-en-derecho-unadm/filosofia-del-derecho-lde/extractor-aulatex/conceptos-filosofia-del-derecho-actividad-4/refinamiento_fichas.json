@@ -1,0 +1,894 @@
+{
+  "función del derecho en la sociedad": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Tipología sistemática de las funciones del derecho (orientación de conductas, resolución de conflictos, legitimación del poder, organización social, distribución de bienes y cargas)",
+            "Ejemplos concretos o aplicaciones institucionales de cada función (proceso judicial, contratos, seguridad jurídica, control social)",
+            "Perspectiva sociológica del derecho como control social (Durkheim, Weber, Luhmann, Bobbio: función promocional del derecho)",
+            "Críticas y límites: visión marxista/crítica del derecho como instrumento ideológico o de dominación; límites de la eficacia del derecho",
+            "Distinción entre fines del derecho (justicia, seguridad, bien común) y funciones sociales del derecho"
+          ],
+          "consultas": [
+            "funciones del derecho control social orientación de conductas resolución de conflictos legitimación del poder",
+            "Bobbio función promocional del derecho sanciones positivas; Luhmann derecho como sistema social; Weber derecho y dominación",
+            "crítica marxista del derecho como instrumento de dominación de clase e ideología; límites y eficacia del derecho"
+          ],
+          "nota": "Las citas recuperadas tienen similitud muy baja (máx. 0.137) y varias de Kelsen usan 'función' en sentido técnico distinto (función de producción y aplicación del derecho, órganos), por lo que resultan ruido. Solo hay base para una definición general (Paredes Lovón) y un fundamento axiológico (López Calera vía Ruiz Rodríguez: justicia como gran función). Falta la tipología clásica de funciones sociales, ejemplos aplicados y la dimensión crítica. Se recomienda una segunda ronda con las consultas propuestas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "funciones del derecho control social orientación de conductas resolución de conflictos legitimación del poder",
+            "hits": 4
+          },
+          {
+            "consulta": "Bobbio función promocional del derecho sanciones positivas; Luhmann derecho como sistema social; Weber derecho y dominación",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica marxista del derecho como instrumento de dominación de clase e ideología; límites y eficacia del derecho",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Ejemplo o aplicación concreta de las funciones del derecho (control social, resolución de conflictos, organización del poder, seguridad jurídica) en un caso o institución determinada",
+            "Crítica o límite: objeciones a la visión funcionalista/sistémica del derecho (p. ej. crítica a Luhmann, al formalismo procedimental, o visiones conflictualistas del derecho como instrumento de dominación)",
+            "Contraste con otras teorías sobre la función del derecho (Durkheim, Weber, marxismo, iusnaturalismo) para dar pluralidad de fundamentos",
+            "Definición más analítica y enumerativa de funciones típicas del derecho, no solo la formulación sistémica"
+          ],
+          "consultas": [
+            "funciones del derecho: control social, resolución de conflictos y seguridad jurídica ejemplos",
+            "críticas a la teoría de sistemas de Luhmann legitimación por el procedimiento límites",
+            "derecho como instrumento de dominación y poder crítica marxista función social del derecho"
+          ],
+          "nota": "Las citas recuperadas son casi todas de una única fuente (Paredes Lovón) y giran en torno al enfoque sistémico de Luhmann, con similitudes bajas (~0.13-0.14), lo que sugiere recuperación débil. Hay definición ('principios de conducta predecibles y vinculantes' + sistema legal como subsistema), fundamento sistémico y autor identificado (Luhmann), pero falta por completo ejemplo aplicado y crítica o límite. Se recomienda una tercera ronda con las consultas propuestas para diversificar fuentes y añadir contraste teórico."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "funciones del derecho: control social, resolución de conflictos y seguridad jurídica ejemplos",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas a la teoría de sistemas de Luhmann legitimación por el procedimiento límites",
+            "hits": 4
+          },
+          {
+            "consulta": "derecho como instrumento de dominación y poder crítica marxista función social del derecho",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 29
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 29
+  },
+  "filosofia del derecho": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de filosofía del derecho y su objeto de estudio",
+            "Fundamento: distinción entre filosofía del derecho, teoría del derecho y ciencia jurídica; problemas centrales (validez, justicia, eficacia)",
+            "Autores de referencia con posición doctrinal desarrollada (no meras entradas bibliográficas): Kelsen, Bobbio, González Vicén, Radbruch, Hart",
+            "Ejemplo o aplicación: cómo opera la reflexión iusfilosófica en debates concretos (iusnaturalismo vs. iuspositivismo, control constitucional, derechos humanos)",
+            "Crítica o límite: objeciones a la autonomía disciplinar de la filosofía del derecho y su carácter histórico"
+          ],
+          "consultas": [
+            "concepto y objeto de la filosofía del derecho: definición, problemas fundamentales y relación con la teoría general del derecho",
+            "González Vicén la filosofía del derecho como concepto histórico: crítica a su autonomía y al iusnaturalismo",
+            "iusnaturalismo y iuspositivismo: validez, justicia y eficacia del derecho en Kelsen, Hart y Bobbio"
+          ],
+          "nota": "Las citas recuperadas son casi exclusivamente entradas de bibliografía (pp. 346, 359, 362) y una mención tangencial al existencialismo; solo el fragmento de la p. 218 aporta contenido sustantivo, pero sobre la naturaleza autoritativa del derecho en Kelsen, no sobre la disciplina misma. La similitud máxima (0.086) indica recuperación muy débil. Se requiere una nueva ronda orientada a capítulos introductorios o de concepto, evitando secciones de referencias."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "concepto y objeto de la filosofía del derecho: definición, problemas fundamentales y relación con la teoría general del derecho",
+            "hits": 4
+          },
+          {
+            "consulta": "González Vicén la filosofía del derecho como concepto histórico: crítica a su autonomía y al iusnaturalismo",
+            "hits": 4
+          },
+          {
+            "consulta": "iusnaturalismo y iuspositivismo: validez, justicia y eficacia del derecho en Kelsen, Hart y Bobbio",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita y directa de filosofía del derecho (objeto y método propios)",
+            "Fundamento epistemológico: por qué la reflexión filosófica sobre el derecho es necesaria y qué problemas nucleares aborda (ontología jurídica, axiología jurídica, teoría de la ciencia jurídica)",
+            "Ejemplo o aplicación concreta: cómo opera la filosofía del derecho en un problema jurídico real (validez, justicia, obediencia al derecho, interpretación)",
+            "Crítica o límite: objeciones positivistas/analíticas a la filosofía del derecho, disolución en teoría general del derecho, cuestionamiento de su autonomía disciplinar"
+          ],
+          "consultas": [
+            "concepto y objeto de la filosofía del derecho: definición, contenidos ontología jurídica axiología jurídica gnoseología jurídica",
+            "problemas fundamentales de la filosofía del derecho: justicia, validez, obligación de obedecer el derecho, ejemplos de aplicación",
+            "críticas y límites de la filosofía del derecho: sustitución por teoría general del derecho, objeciones del positivismo jurídico y de la filosofía analítica"
+          ],
+          "nota": "Las citas recuperadas son de baja similitud (0,15–0,32) y de carácter tangencial: aportan referencias de autor (González Vicén y su tesis de la filosofía del derecho como concepto histórico; Eduardo García Máynez y el positivismo) y una pista útil sobre el deslinde entre filosofía del derecho y teoría general del derecho (validez universal a priori frente a general a posteriori), pero no ofrecen una definición operativa, ni el fundamento de la disciplina, ni ejemplo de aplicación, ni una crítica desarrollada. Se recomienda una ronda adicional orientada a capítulos introductorios donde se delimite el concepto, sus funciones y las objeciones a su autonomía."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "concepto y objeto de la filosofía del derecho: definición, contenidos ontología jurídica axiología jurídica gnoseología jurídica",
+            "hits": 4
+          },
+          {
+            "consulta": "problemas fundamentales de la filosofía del derecho: justicia, validez, obligación de obedecer el derecho, ejemplos de aplicación",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas y límites de la filosofía del derecho: sustitución por teoría general del derecho, objeciones del positivismo jurídico y de la filosofía analítica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 29
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 29
+  },
+  "derecho natural": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": true
+          },
+          "faltantes": [
+            "Ejemplo o aplicación concreta del derecho natural (p. ej. su invocación en juicios de Núremberg, derechos humanos, fórmula de Radbruch o control de leyes injustas)",
+            "Distinción operativa entre derecho natural clásico (tomista), racionalista moderno (Grocio, Pufendorf, Locke) y neoiusnaturalismo (Finnis, Fuller)",
+            "Desarrollo del fundamento ontológico/antropológico: naturaleza humana, razón práctica y primeros principios prácticos",
+            "Réplica iusnaturalista a la crítica relativista de Kelsen (contenido mínimo de derecho natural, Hart)"
+          ],
+          "consultas": [
+            "derecho natural aplicación práctica derechos humanos ley injusta Radbruch Núremberg",
+            "Tomás de Aquino primeros principios de la ley natural sindéresis bien común precepto",
+            "iusnaturalismo contemporáneo Finnis bienes básicos contenido mínimo de derecho natural Hart"
+          ],
+          "nota": "La ficha ya cuenta con una definición sólida (ley natural como participación de la ley eterna), fundamento racional-teológico, autores representativos (Pufendorf como fundador del derecho natural racional, Aquino implícito) y una crítica potente de Kelsen sobre la indeterminación del criterio 'natural'. El vacío principal es la dimensión aplicativa: no hay ninguna cita que muestre el derecho natural operando en un caso, institución o debate jurídico concreto. Conviene también recuperar la respuesta iusnaturalista a la objeción kelseniana para equilibrar la sección crítica, y precisar las corrientes internas del concepto, hoy fusionadas en las citas disponibles."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "derecho natural aplicación práctica derechos humanos ley injusta Radbruch Núremberg",
+            "hits": 4
+          },
+          {
+            "consulta": "Tomás de Aquino primeros principios de la ley natural sindéresis bien común precepto",
+            "hits": 4
+          },
+          {
+            "consulta": "iusnaturalismo contemporáneo Finnis bienes básicos contenido mínimo de derecho natural Hart",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 19
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 19,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": true
+          },
+          "faltantes": [
+            "Ejemplo o aplicación concreta del derecho natural (invocación en tribunales, declaraciones de derechos humanos, juicios de Núremberg, control de leyes injustas)",
+            "Distinción operativa entre iusnaturalismo clásico-tomista, racionalista moderno y neoconstitucional (definición más matizada por escuelas)",
+            "Contraargumento o defensa contemporánea frente a la crítica positivista (p. ej. Radbruch, Finnis, Fuller)"
+          ],
+          "consultas": [
+            "derecho natural fundamento de los derechos humanos declaración universal ejemplo",
+            "fórmula de Radbruch ley injusta Núremberg derecho natural aplicación jurisprudencial",
+            "iusnaturalismo clásico tomista frente a iusnaturalismo racionalista diferencias escuelas"
+          ],
+          "nota": "La ficha ya cuenta con una definición sólida (ley natural como participación de la ley eterna en la criatura racional), su fundamento racional-teológico, autores representativos (Pufendorf, tradición tomista) y una crítica de peso (Kelsen: indeterminación del criterio y conflicto con el derecho positivo). El vacío principal es la dimensión aplicada: no hay ninguna cita que muestre cómo opera el derecho natural en la práctica jurídica ni una réplica contemporánea a la objeción positivista. Se recomienda una ronda adicional centrada en ejemplos históricos-jurisprudenciales y en la tipología de escuelas iusnaturalistas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "derecho natural fundamento de los derechos humanos declaración universal ejemplo",
+            "hits": 4
+          },
+          {
+            "consulta": "fórmula de Radbruch ley injusta Núremberg derecho natural aplicación jurisprudencial",
+            "hits": 4
+          },
+          {
+            "consulta": "iusnaturalismo clásico tomista frente a iusnaturalismo racionalista diferencias escuelas",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 31
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 31
+  },
+  "positivismo juridico": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición canónica y completa del positivismo jurídico (tesis de las fuentes sociales y tesis de la separación entre Derecho y moral) con formulación explícita, no solo alusiones al positivismo metodológico",
+            "Ejemplo o aplicación concreta: identificación de la validez normativa mediante norma fundante básica / regla de reconocimiento, o casos de aplicación judicial (p. ej. leyes injustas, juicios de Núremberg)",
+            "Crítica y límites: objeciones iusnaturalistas y neoconstitucionalistas (Radbruch, Dworkin, Alexy, Ferrajoli), problema de la ley injusta y crisis del positivismo ante la constitucionalización",
+            "Distinción interna entre positivismo excluyente e incluyente y las tres acepciones de Bobbio desarrolladas (teórico, metodológico, ideológico)",
+            "Contexto histórico-doctrinal de formación del positivismo jurídico (Bentham, Austin, escuela de la exégesis, pandectismo)"
+          ],
+          "consultas": [
+            "tesis de la separación entre derecho y moral: definición del positivismo jurídico y tesis de las fuentes sociales",
+            "críticas al positivismo jurídico: ley injusta, fórmula de Radbruch, Dworkin y neoconstitucionalismo",
+            "positivismo ideológico, teórico y metodológico según Bobbio; positivismo incluyente y excluyente"
+          ],
+          "nota": "Las citas recuperadas tienen similitud baja (máx. 0.14) y son en su mayoría tangenciales: los fragmentos de Kelsen tratan del poder jurídico y la coacción, no del positivismo como corriente; el pasaje de Ruiz Rodríguez alude al positivismo filosófico decimonónico, no al jurídico. Solo la cita de Ansuátegui Roig (p. 216) aporta un núcleo definitorio útil (irrelevancia del punto de vista moral en la identificación del Derecho) y la de p. 228 apunta a la tipología de Bobbio sin desarrollarla. Falta por completo evidencia de ejemplo/aplicación y de crítica o límites. Se requiere al menos una ronda adicional de búsqueda enfocada en la definición canónica, la crítica iusnaturalista/neoconstitucionalista y las variantes internas de la corriente."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "tesis de la separación entre derecho y moral: definición del positivismo jurídico y tesis de las fuentes sociales",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al positivismo jurídico: ley injusta, fórmula de Radbruch, Dworkin y neoconstitucionalismo",
+            "hits": 4
+          },
+          {
+            "consulta": "positivismo ideológico, teórico y metodológico según Bobbio; positivismo incluyente y excluyente",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 17
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 17,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": false,
+            "critica": true
+          },
+          "faltantes": [
+            "Definición explícita y directa de positivismo jurídico (tesis de las fuentes sociales y tesis de la separación conceptual entre Derecho y moral)",
+            "Autores canónicos de la corriente (Kelsen, Hart, Bobbio, Austin) con atribución expresa de sus tesis; las citas actuales giran en torno a Radbruch, que es un crítico",
+            "Ejemplo o aplicación concreta del enfoque positivista (p. ej. validez formal de la norma, jerarquía normativa, regla de reconocimiento en un caso judicial)",
+            "Desarrollo de la tipología interna (positivismo ideológico, teórico y metodológico), solo mencionada de pasada",
+            "Contraste con iusnaturalismo y con el debate Hart–Dworkin"
+          ],
+          "consultas": [
+            "Kelsen teoría pura del derecho validez norma fundamental definición del positivismo jurídico",
+            "Hart regla de reconocimiento tesis de la separación entre derecho y moral positivismo",
+            "Bobbio distinción positivismo jurídico ideológico teórico y metodológico crítica iusnaturalismo"
+          ],
+          "nota": "La evidencia recuperada es de baja similitud (máx. 0,22) y está sesgada hacia la crítica antipositivista (Fórmula de Radbruch). Solo la cita de Rojas González y la de Contreras Peláez aportan fragmentos utilizables sobre la tipología y las tesis centrales del positivismo metodológico. Falta el núcleo conceptual: definición canónica, autores fundadores y una aplicación práctica. Se recomienda una nueva ronda con consultas orientadas a Kelsen, Hart y Bobbio antes de redactar la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Kelsen teoría pura del derecho validez norma fundamental definición del positivismo jurídico",
+            "hits": 4
+          },
+          {
+            "consulta": "Hart regla de reconocimiento tesis de la separación entre derecho y moral positivismo",
+            "hits": 4
+          },
+          {
+            "consulta": "Bobbio distinción positivismo jurídico ideológico teórico y metodológico crítica iusnaturalismo",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 24
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 24
+  },
+  "escepticismo juridico": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición de escepticismo jurídico (negación de la objetividad/determinación del derecho y de la corrección única de las decisiones)",
+            "Fundamento teórico: indeterminación del lenguaje normativo, crítica al formalismo y al cognoscitivismo ético",
+            "Autores de referencia: realismo jurídico norteamericano (Holmes, Llewellyn, Jerome Frank), realismo escandinavo (Alf Ross, Olivecrona), Kelsen (interpretación como acto de voluntad), Guastini (escepticismo interpretativo), Hart (crítica en 'El concepto de derecho')",
+            "Distinción entre escepticismo ante las normas y escepticismo ante los hechos",
+            "Ejemplo o aplicación: predicción de la conducta judicial, discrecionalidad, casos difíciles, textura abierta",
+            "Crítica y límites: objeción de Hart y Dworkin, autorrefutación del escepticismo radical, escepticismo moderado vs. radical"
+          ],
+          "consultas": [
+            "escepticismo ante las normas y escepticismo ante los hechos realismo jurídico Alf Ross Jerome Frank",
+            "interpretación jurídica como acto de voluntad indeterminación del derecho discrecionalidad judicial Kelsen Guastini",
+            "crítica de Hart y Dworkin al escepticismo sobre las reglas textura abierta respuesta correcta"
+          ],
+          "nota": "Las citas recuperadas son irrelevantes para el concepto: cuatro proceden de pasajes de Kelsen sobre coacción, sanción y poder jurídico (similitud <0.12) y una alude tangencialmente al 'escepticismo kantiano' epistemológico, no al escepticismo jurídico. No hay cobertura de ningún elemento de la ficha; se requiere una nueva ronda de recuperación orientada al realismo jurídico, a la teoría de la interpretación y a las críticas analíticas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "escepticismo ante las normas y escepticismo ante los hechos realismo jurídico Alf Ross Jerome Frank",
+            "hits": 4
+          },
+          {
+            "consulta": "interpretación jurídica como acto de voluntad indeterminación del derecho discrecionalidad judicial Kelsen Guastini",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica de Hart y Dworkin al escepticismo sobre las reglas textura abierta respuesta correcta",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "definición del escepticismo jurídico (realismo escéptico ante las normas y ante los hechos)",
+            "fundamento teórico: indeterminación del derecho y crítica a la existencia de reglas previas a la decisión judicial",
+            "autores representativos (Jerome Frank, Karl Llewellyn, Oliver W. Holmes, Alf Ross, movimiento Critical Legal Studies)",
+            "ejemplo o aplicación: predicción de la sentencia judicial, discrecionalidad del juez, textura abierta",
+            "crítica o límite: respuesta de Hart en 'El concepto de derecho' al escepticismo ante las reglas"
+          ],
+          "consultas": [
+            "escepticismo ante las reglas realismo jurídico norteamericano Jerome Frank Llewellyn definición",
+            "Hart crítica al escepticismo ante las reglas textura abierta discrecionalidad judicial El concepto de derecho",
+            "indeterminación del derecho predicción de decisiones judiciales Holmes Alf Ross escepticismo"
+          ],
+          "nota": "Las citas recuperadas tienen similitud muy baja (<0.19) y no abordan el escepticismo jurídico: refieren a la textura abierta de Hart, la crítica de Dworkin y la validez normativa en Kelsen, temas solo tangenciales. Se requiere una nueva ronda enfocada en el realismo jurídico escéptico y su refutación por Hart."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "escepticismo ante las reglas realismo jurídico norteamericano Jerome Frank Llewellyn definición",
+            "hits": 4
+          },
+          {
+            "consulta": "Hart crítica al escepticismo ante las reglas textura abierta discrecionalidad judicial El concepto de derecho",
+            "hits": 4
+          },
+          {
+            "consulta": "indeterminación del derecho predicción de decisiones judiciales Holmes Alf Ross escepticismo",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  },
+  "jerarquia normativa": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Atribución doctrinal explícita: Kelsen y la construcción escalonada del ordenamiento (Stufenbau), norma fundamental y relación de validez entre normas superiores e inferiores",
+            "Ejemplo o aplicación concreta: pirámide Constitución–ley–reglamento, reserva de ley, control de constitucionalidad y anulación de reglamentos contrarios a la ley",
+            "Crítica o límites: distinción entre jerarquía y competencia, pluralismo de fuentes, ordenamientos supranacionales (primacía del Derecho de la UE) y crisis del modelo piramidal",
+            "Fundamento técnico preciso: validez formal, nulidad de la norma inferior contraria a la superior, principios lex superior derogat inferiori",
+            "Base normativa positiva (p. ej. art. 9.3 CE, art. 1.2 Código Civil) si el corpus la contiene"
+          ],
+          "consultas": [
+            "Kelsen construcción escalonada del ordenamiento jurídico norma fundamental validez jerarquía de normas",
+            "principio de jerarquía normativa Constitución ley reglamento nulidad lex superior derogat legi inferiori ejemplo",
+            "límites de la jerarquía normativa principio de competencia pluralismo de fuentes primacía del Derecho de la Unión Europea crítica al modelo piramidal"
+          ],
+          "nota": "La evidencia recuperada es escasa y de baja similitud (máx. 0.12). Solo la cita de De Castro Cid (p. 152) aborda directamente el principio de jerarquía normativa, ofreciendo una definición operativa (abrogación de la norma inferior por la superior) y un fundamento dinámico. Las demás citas son tangenciales: tratan de desbordamiento de fuentes, Estado de Derecho y control de constitucionalidad, sin conectar explícitamente con la jerarquía. Falta el anclaje doctrinal canónico (Kelsen/Merkl), un ejemplo aplicado del escalonamiento normativo y la dimensión crítica (jerarquía vs. competencia, multinivel normativo). Se recomienda una segunda ronda con las consultas propuestas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Kelsen construcción escalonada del ordenamiento jurídico norma fundamental validez jerarquía de normas",
+            "hits": 4
+          },
+          {
+            "consulta": "principio de jerarquía normativa Constitución ley reglamento nulidad lex superior derogat legi inferiori ejemplo",
+            "hits": 4
+          },
+          {
+            "consulta": "límites de la jerarquía normativa principio de competencia pluralismo de fuentes primacía del Derecho de la Unión Europea crítica al modelo piramidal",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 18
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 18,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": true
+          },
+          "faltantes": [
+            "Ejemplo o aplicación concreta de la gradación normativa (Constitución > ley > reglamento > acto administrativo/sentencia) con la operatividad del principio",
+            "Aplicación práctica del principio en el control de constitucionalidad y en la invalidez/derogación de la norma inferior contraria a la superior",
+            "Crítica específica a la jerarquía (no solo a la norma fundamental): límites frente al principio de competencia, pluralismo de fuentes y ordenamientos supranacionales"
+          ],
+          "consultas": [
+            "pirámide normativa Constitución ley reglamento acto administrativo ejemplo de gradación de fuentes",
+            "principio de jerarquía normativa control de constitucionalidad nulidad de la norma inferior contraria a la superior",
+            "críticas al modelo escalonado de Kelsen principio de competencia y pluralismo de ordenamientos jurídicos"
+          ],
+          "nota": "Las citas cubren con solidez la definición (construcción escalonada, relación de producción), el fundamento (unidad dinámica y norma fundamental), el autor (Kelsen, con lecturas de Castro Cid) y una crítica al carácter ficcional de la Grundnorm (Nakhnikian). Falta, sin embargo, evidencia con ejemplo o aplicación concreta del orden jerárquico de fuentes y de sus consecuencias jurídicas (invalidez, control de constitucionalidad); además, las similitudes son bajas (0.12–0.14) y hay una cita duplicada (pp. 240 y 242 de Teoría pura del derecho), lo que aconseja una ronda adicional focalizada."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "pirámide normativa Constitución ley reglamento acto administrativo ejemplo de gradación de fuentes",
+            "hits": 4
+          },
+          {
+            "consulta": "principio de jerarquía normativa control de constitucionalidad nulidad de la norma inferior contraria a la superior",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al modelo escalonado de Kelsen principio de competencia y pluralismo de ordenamientos jurídicos",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "interpretacion juridica": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de interpretación jurídica (operación mental que acompaña el proceso de aplicación del derecho de una grada superior a una inferior)",
+            "Fundamento: indeterminación relativa e intencional del acto de aplicación del derecho; el 'marco' de significaciones posibles",
+            "Distinción entre interpretación auténtica (órgano de aplicación, acto de voluntad) e interpretación no auténtica o científica (acto de conocimiento)",
+            "Ejemplo o aplicación: interpretación judicial de la ley, tribunal que crea norma individual dentro del marco; ambigüedad lingüística del texto legal",
+            "Crítica o límite: rechazo kelseniano de los métodos tradicionales de interpretación (literal, teleológico, voluntad del legislador) por no ofrecer criterio objetivo; discrecionalidad y politicidad de la decisión"
+          ],
+          "consultas": [
+            "Kelsen interpretación como marco de varias posibilidades de aplicación del derecho, grada superior e inferior",
+            "interpretación auténtica del órgano de aplicación acto de voluntad frente a interpretación científica acto de conocimiento",
+            "crítica de Kelsen a los métodos de interpretación: ninguno permite determinar la única solución correcta, laguna y discrecionalidad judicial"
+          ],
+          "nota": "Las citas recuperadas no abordan la interpretación jurídica: tratan del enunciado jurídico y la causalidad, la retroactividad, la obligación jurídica y la personalidad jurídica del Estado. La única cobertura real es la del autor (Kelsen) como fuente doctrinal disponible. Es necesaria una nueva ronda dirigida al capítulo sobre la interpretación de la Teoría pura del derecho (habitualmente el capítulo final, en torno a las pp. 349-356) para obtener definición, fundamento, tipología, ejemplo y crítica. Conviene también contrastar con otra fuente distinta a Kelsen si el corpus lo permite, para incorporar una crítica externa a la tesis del marco."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Kelsen interpretación como marco de varias posibilidades de aplicación del derecho, grada superior e inferior",
+            "hits": 4
+          },
+          {
+            "consulta": "interpretación auténtica del órgano de aplicación acto de voluntad frente a interpretación científica acto de conocimiento",
+            "hits": 4
+          },
+          {
+            "consulta": "crítica de Kelsen a los métodos de interpretación: ninguno permite determinar la única solución correcta, laguna y discrecionalidad judicial",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Ejemplo concreto de aplicación: caso de interpretación de una ley por el juez o de la constitución por el legislador, con indicación de las lagunas o ambigüedades lingüísticas (varios sentidos de la palabra, discrepancia entre voluntad del legislador y texto)",
+            "Crítica o límite: rechazo kelseniano de la idea de una única interpretación correcta y de los métodos tradicionales (literal, teleológico, analogía) como carentes de fundamento científico",
+            "Distinción entre interpretación como acto de conocimiento (ciencia jurídica) y acto de voluntad (política jurídica), y el problema de la discrecionalidad judicial",
+            "Contraste con otras posiciones doctrinales (p. ej. interpretación como argumentación o hermenéutica) que discutan los límites del marco kelseniano"
+          ],
+          "consultas": [
+            "Kelsen métodos de interpretación literal teleológico analogía no hay criterio para preferir una posibilidad dentro del marco",
+            "interpretación como acto de conocimiento y acto de voluntad ciencia jurídica política jurídica ficción de la única solución correcta",
+            "ejemplo interpretación de la ley por el juez ambigüedad del texto discrepancia entre voluntad del legislador y expresión lingüística lagunas"
+          ],
+          "nota": "La ficha tiene bien resueltos la definición (interpretación como procedimiento espiritual que acompaña la aplicación del derecho y determina el marco de sentidos posibles), el fundamento (relación de determinación entre grada superior e inferior, indeterminación relativa del acto de aplicación) y la autoría (Kelsen, Teoría pura del derecho, cap. VIII). Falta material ilustrativo (un caso concreto de indeterminación: ambigüedad lingüística, conflicto entre normas, divergencia entre voluntad y texto) y, sobre todo, la dimensión crítica: la tesis kelseniana de que ningún método jurídico permite elegir la 'única interpretación correcta' dentro del marco, lo que traslada la decisión a un acto de voluntad del órgano y abre el problema de la discrecionalidad. Se sugieren tres consultas dirigidas a las páginas finales del capítulo sobre la interpretación (aprox. pp. 349-356 y 356-361 según la edición) para completar ejemplo y crítica."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "Kelsen métodos de interpretación literal teleológico analogía no hay criterio para preferir una posibilidad dentro del marco",
+            "hits": 4
+          },
+          {
+            "consulta": "interpretación como acto de conocimiento y acto de voluntad ciencia jurídica política jurídica ficción de la única solución correcta",
+            "hits": 4
+          },
+          {
+            "consulta": "ejemplo interpretación de la ley por el juez ambigüedad del texto discrepancia entre voluntad del legislador y expresión lingüística lagunas",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 30
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 30
+  },
+  "sistema juridico": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de sistema jurídico como conjunto unitario y ordenado de normas (distinción con 'orden jurídico' y con 'ordenamiento')",
+            "Fundamento de la unidad y validez del sistema: norma fundante básica (Grundnorm), jerarquía normativa y estructura escalonada",
+            "Criterios de pertenencia e identidad del sistema (regla de reconocimiento, normas primarias y secundarias en Hart)",
+            "Ejemplo o aplicación concreta: sistema jurídico estatal, familias jurídicas (civil law / common law), Constitución como norma suprema",
+            "Propiedades y problemas del sistema: plenitud, coherencia, lagunas, antinomias y sus críticas",
+            "Crítica: enfoque sistémico-autopoiético (Luhmann) frente al normativismo; límites del formalismo"
+          ],
+          "consultas": [
+            "norma fundante básica Grundnorm unidad y validez del ordenamiento jurídico estructura escalonada Kelsen",
+            "regla de reconocimiento normas primarias y secundarias sistema jurídico Hart criterio de pertenencia",
+            "plenitud coherencia lagunas y antinomias del ordenamiento jurídico críticas al sistema jurídico"
+          ],
+          "nota": "Las citas recuperadas tienen similitud muy baja (<0.17) y solo rozan el concepto: aportan la noción kelseniana de 'orden jurídico' como orden coactivo que faculta a producir normas y una aproximación sistémica general (sistema/entorno) de carácter introductorio. Falta el núcleo conceptual: definición de sistema jurídico, criterios de unidad y pertenencia, jerarquía normativa, ejemplos institucionales y las objeciones/límites (lagunas, antinomias, crítica autopoiética). Se requiere una segunda ronda de búsqueda dirigida."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "norma fundante básica Grundnorm unidad y validez del ordenamiento jurídico estructura escalonada Kelsen",
+            "hits": 4
+          },
+          {
+            "consulta": "regla de reconocimiento normas primarias y secundarias sistema jurídico Hart criterio de pertenencia",
+            "hits": 4
+          },
+          {
+            "consulta": "plenitud coherencia lagunas y antinomias del ordenamiento jurídico críticas al sistema jurídico",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": true,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Ejemplo o aplicación concreta: cómo opera la unidad y jerarquía del sistema jurídico en un ordenamiento estatal real (Constitución, ley, reglamento, sentencia) o en la resolución de antinomias y lagunas",
+            "Crítica o límite: objeciones a la concepción sistemática del derecho (crítica de Hart y Raz a la norma fundante básica; críticas realistas y de Dworkin sobre principios no reducibles a reglas)",
+            "Propiedades del sistema jurídico: unidad, coherencia, plenitud, apertura/clausura y criterios de pertenencia de normas (Alchourrón-Bulygin, Bobbio)",
+            "Distinción entre sistema jurídico y ordenamiento jurídico, y entre sistema estático y dinámico con desarrollo explícito"
+          ],
+          "consultas": [
+            "unidad coherencia y plenitud del ordenamiento jurídico antinomias y lagunas Bobbio",
+            "críticas a la norma fundante básica de Kelsen: regla de reconocimiento de Hart y objeciones de Raz",
+            "jerarquía normativa Constitución ley reglamento ejemplo de aplicación del sistema jurídico estatal"
+          ],
+          "nota": "La ficha cubre bien la definición del sistema jurídico como conjunto de normas unificadas por una norma fundante básica (Kelsen) y menciona la alternativa de Hart (reglas primarias y secundarias), con autores identificados. Sin embargo, las citas son mayormente índices o fragmentos descriptivos de baja similitud (max 0.28) y no aportan ejemplos de aplicación ni discusión crítica. Se requiere una tercera ronda orientada a propiedades sistémicas (coherencia, plenitud), aplicación jerárquica concreta y objeciones doctrinales."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "unidad coherencia y plenitud del ordenamiento jurídico antinomias y lagunas Bobbio",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas a la norma fundante básica de Kelsen: regla de reconocimiento de Hart y objeciones de Raz",
+            "hits": 4
+          },
+          {
+            "consulta": "jerarquía normativa Constitución ley reglamento ejemplo de aplicación del sistema jurídico estatal",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 28
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 28
+  },
+  "teorias contemporaneas del derecho": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición de 'teorías contemporáneas del derecho' como campo (iusnaturalismo renovado, positivismo incluyente/excluyente, no positivismo, realismo, críticas)",
+            "Fundamento teórico: el debate Hart-Dworkin y la relación derecho-moral como eje articulador",
+            "Autores de referencia identificados y su tesis central (Hart, Dworkin, Alexy, Raz, Nino, Ferrajoli, Kelsen como antecedente)",
+            "Ejemplo o aplicación: casos difíciles, principios vs. reglas, ponderación en la jurisdicción constitucional (neoconstitucionalismo)",
+            "Crítica o límite: objeciones al neoconstitucionalismo, a la ponderación, al positivismo incluyente y a las teorías críticas (Critical Legal Studies)"
+          ],
+          "consultas": [
+            "debate Hart Dworkin principios reglas casos difíciles positivismo jurídico contemporáneo",
+            "neoconstitucionalismo ponderación Alexy Ferrajoli teoría del derecho contemporánea críticas",
+            "corrientes iusfilosóficas actuales: iusnaturalismo, positivismo incluyente y excluyente, realismo jurídico, teorías críticas"
+          ],
+          "nota": "Las citas recuperadas tienen similitud muy baja (<0.22) y son mayoritariamente de la Teoría pura del derecho de Kelsen sobre temas tangenciales (derecho y Estado, fuentes, derecho consuetudinario) o de un manual sobre la división derecho público/privado. Solo la cita de 'Razón y voluntad' roza el eje derecho-poder-moral, útil como fundamento pero insuficiente. No hay ninguna fuente que enumere o caracterice las corrientes contemporáneas ni que aporte ejemplos de aplicación o crítica. Se requiere una segunda ronda de búsqueda orientada al debate Hart-Dworkin, al neoconstitucionalismo y a la tipología de corrientes iusfilosóficas actuales."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "debate Hart Dworkin principios reglas casos difíciles positivismo jurídico contemporáneo",
+            "hits": 4
+          },
+          {
+            "consulta": "neoconstitucionalismo ponderación Alexy Ferrajoli teoría del derecho contemporánea críticas",
+            "hits": 4
+          },
+          {
+            "consulta": "corrientes iusfilosóficas actuales: iusnaturalismo, positivismo incluyente y excluyente, realismo jurídico, teorías críticas",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": false,
+            "autor": false,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'teorías contemporáneas del derecho' como campo de la filosofía jurídica del siglo XX-XXI",
+            "Fundamento: el debate positivismo jurídico / iusnaturalismo / neoconstitucionalismo como eje articulador",
+            "Autores representativos identificados (Hart, Dworkin, Alexy, Kelsen, Raz, Nino, Ferrajoli) con su tesis central",
+            "Ejemplo o aplicación concreta: casos difíciles, ponderación de principios, control de constitucionalidad",
+            "Crítica o límite: objeciones al positivismo incluyente/excluyente, críticas a la ponderación, realismo jurídico y teorías críticas (CLS)"
+          ],
+          "consultas": [
+            "debate Hart Dworkin reglas y principios casos difíciles positivismo jurídico contemporáneo",
+            "Alexy teoría de los principios ponderación neoconstitucionalismo relación derecho y moral",
+            "críticas al positivismo jurídico realismo jurídico y teorías críticas del derecho límites"
+          ],
+          "nota": "Las cinco citas recuperadas tienen similitud muy baja (0.17-0.22) y son fragmentos sobre nociones generales (derecho público/privado, fuentes del derecho, derecho consuetudinario, Estado de derecho) que no abordan el concepto solicitado. Solo la cita de Paredes/Roig insinúa el eje Derecho-moral, útil como fundamento parcial pero insuficiente. Se requiere una nueva ronda orientada al debate Hart-Dworkin, a la teoría de los principios de Alexy y a las corrientes críticas, para poder construir definición, autores, ejemplo y límite."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "debate Hart Dworkin reglas y principios casos difíciles positivismo jurídico contemporáneo",
+            "hits": 4
+          },
+          {
+            "consulta": "Alexy teoría de los principios ponderación neoconstitucionalismo relación derecho y moral",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al positivismo jurídico realismo jurídico y teorías críticas del derecho límites",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 27
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 27
+  },
+  "funcion social del derecho": {
+    "rondas": [
+      {
+        "ronda": 1,
+        "hits_iniciales": 8,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'función social del derecho' como categoría (funciones del Derecho: integración, control social, resolución de conflictos, orientación de conductas, legitimación del poder)",
+            "Ejemplo o aplicación concreta (p. ej. función social de la propiedad, funciones del Derecho en el Estado social)",
+            "Crítica o límite: objeciones funcionalistas, límites de la eficacia social del Derecho, tesis kelseniana de la pureza metódica frente a la sociología jurídica",
+            "Referencia doctrinal precisa a autores que teorizan las funciones sociales (Durkheim, Weber, Parsons, Bobbio con función promocional, Luhmann, Raz)"
+          ],
+          "consultas": [
+            "funciones del Derecho control social integración resolución de conflictos legitimación del poder",
+            "función promocional del Derecho Bobbio Estado social función social de la propiedad",
+            "críticas al funcionalismo jurídico límites de la eficacia social del Derecho sociología jurídica"
+          ],
+          "nota": "Las citas recuperadas solo documentan la vinculación general entre Derecho y vida social (ubi societas ibi ius, el Derecho como forma de vida social en Legaz y Lacambra), con similitudes bajas (máx. 0.18). Falta el núcleo conceptual de la ficha: el catálogo de funciones sociales del Derecho, un caso aplicado y la discusión crítica sobre sus límites. Se recomienda una segunda ronda con las consultas propuestas."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "funciones del Derecho control social integración resolución de conflictos legitimación del poder",
+            "hits": 4
+          },
+          {
+            "consulta": "función promocional del Derecho Bobbio Estado social función social de la propiedad",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al funcionalismo jurídico límites de la eficacia social del Derecho sociología jurídica",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 20
+      },
+      {
+        "ronda": 2,
+        "hits_iniciales": 20,
+        "evaluacion": {
+          "suficiente": false,
+          "cobertura": {
+            "definicion": false,
+            "fundamento": true,
+            "autor": true,
+            "ejemplo": false,
+            "critica": false
+          },
+          "faltantes": [
+            "Definición explícita de 'función social del derecho' y enumeración de sus funciones típicas (control social, integración, resolución de conflictos, organización y legitimación del poder, orientación de conductas, distribución de bienes)",
+            "Distinción entre funciones manifiestas y latentes / funciones directas e indirectas del Derecho",
+            "Ejemplo o aplicación concreta (p. ej., función promocional del Derecho mediante sanciones positivas, función social de la propiedad, uso del Derecho como instrumento de cambio social)",
+            "Crítica o límites: enfoque funcionalista frente a crítica marxista o sistémica; riesgo de reduccionismo sociologista; ineficacia y disfunciones del Derecho",
+            "Autores específicos vinculados al tema (Durkheim, Bobbio y la función promocional, Parsons, Luhmann, Raz, Ehrlich) más allá de menciones generales sobre sociología jurídica"
+          ],
+          "consultas": [
+            "funciones del derecho: control social, integración, resolución de conflictos y legitimación del poder",
+            "Bobbio función promocional del derecho sanciones positivas derecho como instrumento de cambio social",
+            "críticas al funcionalismo jurídico: disfunciones, ineficacia del derecho y crítica marxista de la función social del derecho"
+          ],
+          "nota": "Las citas recuperadas giran en torno a la dimensión social del Derecho (ubi societas, ibi ius) y a la sociología jurídica como disciplina, pero no aportan una definición operativa de 'función social del derecho' ni un catálogo de funciones, ejemplos de aplicación o críticas. Las similitudes son bajas (<0,19), lo que sugiere que el corpus no ha sido consultado con términos suficientemente precisos. Se recomienda una tercera ronda con las consultas propuestas antes de redactar la ficha."
+        },
+        "consultas_ejecutadas": [
+          {
+            "consulta": "funciones del derecho: control social, integración, resolución de conflictos y legitimación del poder",
+            "hits": 4
+          },
+          {
+            "consulta": "Bobbio función promocional del derecho sanciones positivas derecho como instrumento de cambio social",
+            "hits": 4
+          },
+          {
+            "consulta": "críticas al funcionalismo jurídico: disfunciones, ineficacia del derecho y crítica marxista de la función social del derecho",
+            "hits": 4
+          }
+        ],
+        "hits_finales": 26
+      }
+    ],
+    "suficiente_final": false,
+    "hits_finales": 26
+  }
+}
