@@ -122,6 +122,7 @@ def spearman(y_true, y_pred) -> float:
 
 def train(args: argparse.Namespace) -> int:
     import numpy as np
+    import torch
     from transformers import (
         AutoModelForSequenceClassification,
         AutoTokenizer,
@@ -171,6 +172,13 @@ def train(args: argparse.Namespace) -> int:
     output_dir = Path(args.output_dir).resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    # bf16 en CPU activa AMX en Xeon 4.ª/5.ª gen: ~2.7x más rápido que fp32.
+    use_bf16_cpu = (
+        not torch.cuda.is_available()
+        and hasattr(torch.cpu, "_is_avx512_bf16_supported")
+        and torch.cpu._is_avx512_bf16_supported()
+    )
+
     training_args = TrainingArguments(
         output_dir=str(output_dir),
         num_train_epochs=epochs,
@@ -182,7 +190,13 @@ def train(args: argparse.Namespace) -> int:
         logging_steps=10,
         report_to=[],
         seed=0,
+        # En CPU, transformers exige use_cpu=True para aceptar bf16 (AMX).
+        use_cpu=not torch.cuda.is_available(),
+        bf16=use_bf16_cpu,
+        dataloader_pin_memory=torch.cuda.is_available(),
     )
+    if use_bf16_cpu:
+        print(f"[reward] bf16/AMX activo en CPU ({torch.get_num_threads()} hilos).")
 
     trainer = Trainer(
         model=model,

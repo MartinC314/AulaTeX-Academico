@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -198,6 +199,8 @@ class AulaTeXAgent:
                 f"{len(materialization_result.artifacts)} artefactos procesados",
             )
 
+        applied_tex = self._apply_generated_tex(request, target_ctx, selected_tasks, stage_results, workflow)
+
         compile_results = []
         if request.compile_tex:
             workflow.record("tool-select", "ok", "latexmk-build.ps1 seleccionado para compilar objetivos canonicos")
@@ -281,6 +284,7 @@ class AulaTeXAgent:
             "detail_planner": self._detail_planner_manifest(detail_plan_result),
             "extractor": self._extractor_manifest(extractor_result),
             "materialization": self._materialization_manifest(materialization_result),
+            "generated_tex": applied_tex,
             "consensus": consensus.as_dict(),
             "workflow_events": workflow.as_dicts(),
         }
@@ -737,6 +741,91 @@ class AulaTeXAgent:
         return (
             action == "generar-plantilla"
         )
+
+    @staticmethod
+    def _extract_tex_document(text: str) -> str:
+        """Devuelve el documento LaTeX completo contenido en la respuesta del LLM.
+
+        El arquitecto responde en markdown y envuelve el TEX en vallas de código.
+        Sin este rescate su redacción se queda en el log y el .tex conserva la
+        plantilla con \\pendiente{}.
+        """
+        if not text:
+            return ""
+        candidates: list[str] = []
+        for match in re.finditer(r"```(?:la)?tex\s*\n(.*?)```", text, re.DOTALL | re.IGNORECASE):
+            candidates.append(match.group(1))
+        if not candidates:
+            for match in re.finditer(r"```\s*\n(.*?)```", text, re.DOTALL):
+                candidates.append(match.group(1))
+        if not candidates:
+            candidates.append(text)
+
+        for body in sorted(candidates, key=len, reverse=True):
+            if r"\begin{document}" in body and r"\end{document}" in body:
+                start = body.index("\\documentclass") if "\\documentclass" in body else 0
+                end = body.index(r"\end{document}") + len(r"\end{document}")
+                document = body[start:end].strip()
+                if "\\documentclass" in document:
+                    return document
+        return ""
+
+    def _apply_generated_tex(
+        self,
+        request: AgentRequest,
+        target_ctx: AgentTargetContext,
+        tasks: list[AgentTask],
+        stage_results: list[LLMCallResult],
+        workflow: AgenticStateMachine,
+    ) -> dict[str, object]:
+        """Vuelca al .tex la redacción del arquitecto cuando el archivo sigue vacío.
+
+        Solo actúa si el destino conserva placeholders activos, de modo que nunca
+        pisa una actividad ya redactada.
+        """
+        summary: dict[str, object] = {"applied": False, "reason": "", "target": "", "chars": 0}
+        if request.action.strip().lower() != "realizar-actividad":
+            summary["reason"] = "accion-no-aplicable"
+            return summary
+
+        targets = self._select_compile_targets(target_ctx, request.activity_number)
+        report = next((p for p in targets if p.name.startswith("reporte-")), None)
+        if report is None:
+            summary["reason"] = "sin-reporte-destino"
+            return summary
+
+        current = report.read_text(encoding="utf-8", errors="replace")
+        if not re.search(r"\\pendiente\{", current):
+            summary["reason"] = "destino-ya-redactado"
+            return summary
+
+        document = ""
+        for task, result in zip(tasks, stage_results):
+            if self._base_stage(task.stage) != "generar" or not result.ok:
+                continue
+            candidate = self._extract_tex_document(result.text)
+            if len(candidate) > len(document):
+                document = candidate
+        if not document:
+            summary["reason"] = "arquitecto-sin-tex-completo"
+            workflow.record("apply-generated-tex", "error", "la etapa generar no devolvio un documento LaTeX completo")
+            return summary
+        if re.search(r"\\pendiente\{", document):
+            summary["reason"] = "propuesta-con-placeholders"
+            workflow.record("apply-generated-tex", "error", "la propuesta del arquitecto aun trae placeholders")
+            return summary
+
+        report.write_text(document, encoding="utf-8")
+        summary.update(
+            {
+                "applied": True,
+                "reason": "propuesta-del-arquitecto-aplicada",
+                "target": self.workspace.relative(report),
+                "chars": len(document),
+            }
+        )
+        workflow.record("apply-generated-tex", "ok", f"{summary['target']}: {len(document)} chars aplicados")
+        return summary
 
     def _should_run_extractor(self, request: AgentRequest, target_ctx: AgentTargetContext) -> bool:
         if request.skip_extractor or target_ctx.generation_mode == "downward":

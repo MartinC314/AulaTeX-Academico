@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import json
 import re
+import time
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any
@@ -184,8 +185,14 @@ class ActivityOptimizer:
             )
 
             if proposal is None:
-                stall += 1
-                cycles.append(CycleRecord(index, engine, False, "El motor no devolvió una propuesta aplicable.",
+                # Solo cuenta como estancamiento si el motor SÍ respondió y aun así
+                # no propuso nada útil; un 401 no dice nada sobre la calidad del texto.
+                transient = getattr(self, "_last_llm_failure_transient", False)
+                if not transient:
+                    stall += 1
+                razon = ("El motor no respondió por un fallo de infraestructura (credenciales o red)."
+                         if transient else "El motor no devolvió una propuesta aplicable.")
+                cycles.append(CycleRecord(index, engine, False, razon,
                                           quality_before, quality_before, contract_current, contract_current))
                 continue
 
@@ -672,15 +679,40 @@ class ActivityOptimizer:
             "-----8<-----\n"
         )
 
-        result = self.llm.call(engine, prompt, max_tokens=request.max_tokens)
-        (cycle_dir / "llm-raw.txt").write_text(result.text if result.ok else (result.error or ""), encoding="utf-8")
-        if not result.ok or not result.text.strip():
+        # Un 401/429/5xx agota el ciclo sin que el motor llegue a proponer nada.
+        # En corridas largas las credenciales caducan y así se perdía el 78% de
+        # los ciclos, que además contaban como estancamiento.
+        result = None
+        for attempt in range(1, 4):
+            result = self.llm.call(engine, prompt, max_tokens=request.max_tokens)
+            if result.ok and result.text.strip():
+                break
+            if not self._is_transient_llm_failure(result):
+                break
+            if attempt < 3:
+                time.sleep(2 ** attempt)
+
+        raw = result.text if (result and result.ok) else ((result.error if result else "") or "")
+        (cycle_dir / "llm-raw.txt").write_text(raw, encoding="utf-8")
+        if result is None or not result.ok or not result.text.strip():
+            self._last_llm_failure_transient = self._is_transient_llm_failure(result)
             return None
+        self._last_llm_failure_transient = False
         proposal = self._parse_json_proposal(result.text)
         if proposal is not None:
             (cycle_dir / "proposal.json").write_text(
                 json.dumps(proposal, ensure_ascii=False, indent=2), encoding="utf-8")
         return proposal
+
+    @staticmethod
+    def _is_transient_llm_failure(result: Any) -> bool:
+        """Distingue el fallo de infraestructura del de contenido."""
+        if result is None:
+            return True
+        if getattr(result, "ok", False):
+            return False
+        error = str(getattr(result, "error", "") or "")
+        return any(code in error for code in ("401", "403", "429", "500", "502", "503", "504", "timeout", "Timeout"))
 
     def _parse_json_proposal(self, text: str) -> dict[str, Any] | None:
         candidate = text.strip()

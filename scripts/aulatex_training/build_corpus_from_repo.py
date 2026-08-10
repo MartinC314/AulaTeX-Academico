@@ -205,10 +205,86 @@ def make_pair(before: str, after: str, score_of: Any, min_gain: float,
     }
 
 
+def extract_tex_document(text: str) -> str:
+    """Devuelve el documento LaTeX completo contenido en una respuesta del arquitecto."""
+    if not text:
+        return ""
+    candidates: list[str] = [m.group(1) for m in
+                             re.finditer(r"```(?:la)?tex\s*\n(.*?)```", text, re.DOTALL | re.IGNORECASE)]
+    if not candidates:
+        candidates = [m.group(1) for m in re.finditer(r"```\s*\n(.*?)```", text, re.DOTALL)]
+    if not candidates:
+        candidates = [text]
+    for body in sorted(candidates, key=len, reverse=True):
+        if r"\begin{document}" in body and r"\end{document}" in body and "\\documentclass" in body:
+            start = body.index("\\documentclass")
+            end = body.index(r"\end{document}") + len(r"\end{document}")
+            return body[start:end].strip()
+    return ""
+
+
+def iter_agent_proposal_pairs(root: Path, score_of: Any, min_gain: float):
+    """Pares (propuesta del arquitecto -> TEX final) de las corridas realizar-actividad."""
+    runs_dir = root / "retroalimentacion-editorial" / "aulatex" / "runs"
+    if not runs_dir.is_dir():
+        return
+    for run in sorted(runs_dir.glob("*realizar-actividad*")):
+        manifests = list(run.rglob("manifest.json"))
+        if not manifests:
+            continue
+        try:
+            manifest = json.loads(manifests[0].read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        targets = [c.get("tex") for c in (manifest.get("compile_results") or [])
+                   if isinstance(c, dict) and str(c.get("tex", "")).find("reporte-") >= 0]
+        if not targets:
+            continue
+        final_path = root / str(targets[0])
+        if not final_path.exists():
+            continue
+        final_tex = read_text(final_path)
+        for stage in run.rglob("stage-*generar*.md"):
+            proposal = extract_tex_document(read_text(stage))
+            if not proposal:
+                continue
+            yield make_pair(proposal, final_tex, score_of, min_gain,
+                            "agent-proposal", str(targets[0]))
+
+
+def iter_optimizer_block_pairs(root: Path):
+    """Pares a nivel de bloque desde los proposal.json del optimizador.
+
+    No se filtran por ganancia de score global: la mejora es local y el score
+    mide el documento completo. La justificación del motor acompaña al par.
+    """
+    runs_dir = root / "retroalimentacion-editorial" / "aulatex" / "runs"
+    if not runs_dir.is_dir():
+        return
+    for proposal_path in sorted(runs_dir.rglob("cycle-*/proposal.json")):
+        try:
+            data = json.loads(proposal_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        before = str(data.get("original_block", "")).strip()
+        after = str(data.get("improved_block", "")).strip()
+        if len(before) < 40 or len(after) < 40 or before == after:
+            continue
+        yield {
+            "prompt": PREFERENCE_PROMPT,
+            "chosen": after,
+            "rejected": before,
+            "quality_gain": 0.0,
+            "source": "optimizer-block",
+            "target": data.get("improvement_kind", ""),
+            "justification": str(data.get("justification", ""))[:300],
+        }
+
+
 def build_preference_rows(root: Path, score_of: Any, min_gain: float,
                           use_git: bool) -> tuple[list[dict[str, Any]], dict[str, int]]:
     rows: list[dict[str, Any]] = []
-    stats = {"bak": 0, "git": 0, "git_files": 0, "discarded": 0}
+    stats = {"bak": 0, "agent": 0, "blocks": 0, "git": 0, "git_files": 0, "discarded": 0}
     seen: set[tuple[str, str]] = set()
 
     def add(pair: dict[str, Any] | None) -> bool:
@@ -232,6 +308,20 @@ def build_preference_rows(root: Path, score_of: Any, min_gain: float,
         if add(make_pair(read_text(bak), read_text(current), score_of, min_gain,
                          "backup", current.relative_to(root).as_posix())):
             stats["bak"] += 1
+
+    # (a2) Propuestas del arquitecto en corridas de realizar-actividad frente al
+    # TEX final validado: enseñan a corregir los fallos reales del motor
+    # (plantilla equivocada, biblatex en vez de natbib, técnica mal detectada).
+    for pair in iter_agent_proposal_pairs(root, score_of, min_gain):
+        if add(pair):
+            stats["agent"] += 1
+
+    # (a3) Bloques del optimizador: cada proposal.json es una mejora quirúrgica
+    # (original_block -> improved_block) sobre un punto concreto del texto. Son
+    # la señal más limpia porque aíslan QUÉ cambió y por qué.
+    for pair in iter_optimizer_block_pairs(root):
+        if add(pair):
+            stats["blocks"] += 1
 
     if not use_git:
         return rows, stats
@@ -302,6 +392,8 @@ def main(argv: list[str] | None = None) -> int:
     print(f"[corpus] reward.jsonl           : {len(reward_rows)}  -> {reward_path}")
     print(f"[corpus] preference.jsonl       : {len(preference_rows)}  -> {preference_path}")
     print(f"[corpus]   desde respaldos .bak : {stats['bak']}")
+    print(f"[corpus]   desde el arquitecto  : {stats['agent']}")
+    print(f"[corpus]   bloques del optimizador: {stats['blocks']}")
     print(f"[corpus]   desde historial git  : {stats['git']} (en {stats['git_files']} archivos)")
     print(f"[corpus]   descartados          : {stats['discarded']} (sin ganancia o muy cortos)")
 
