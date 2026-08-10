@@ -1,0 +1,1777 @@
+# Fichas de conceptos
+
+Las citas textuales se extrajeron de las fuentes de entrada. La búsqueda puede agrupar referencias del mismo concepto aunque estén en archivos distintos.
+
+## Ficha 01. función del derecho en la sociedad
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.2849
+**Similitud promedio:** 0.1194
+**Fuentes:** Derecho y moral - Rudolf Laun.pdf; Filosofia del derechorgilio Ruiz Rodriguez.pdf; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf; Manual práctico de fiParedes Lovón, Javier.pdf; Razón y voluntad en eoig, Francisco Javier.pdf; Teoría pura del derecho - Hans Kelsen (1).pdf
+**Ubicaciones:** Derecho y moral - Rudolf Laun.pdf, p. 49; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 107; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 71; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 240; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 263; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 39; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 40; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 41; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 44; Manual práctico de fiParedes Lovón, Javier.pdf, p. 248; Manual práctico de fiParedes Lovón, Javier.pdf, p. 293; Manual práctico de fiParedes Lovón, Javier.pdf, p. 294; Manual práctico de fiParedes Lovón, Javier.pdf, p. 297; Manual práctico de fiParedes Lovón, Javier.pdf, p. 298; Manual práctico de fiParedes Lovón, Javier.pdf, p. 300; Razón y voluntad en eoig, Francisco Javier.pdf, p. 149; Razón y voluntad en eoig, Francisco Javier.pdf, p. 151; Razón y voluntad en eoig, Francisco Javier.pdf, p. 153; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 121; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 124; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 206; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 284; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 308; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 310; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 316; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 43
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 294 — similitud 0.2849
+
+**Detalle de puntaje:** tfidf=0.2549; bonus=0.0300
+
+> BLOQUE II FILOSOFÍA Con estos ejemplos, se demuestra que nosotros, la sociedad, el mundo y todo el universo somos y conformamos un sistema, y conﬁrman al mismo tiem- po la premisa de Niklas Luhmann: los sistemas existen. Luhmann, como sociólogo, desarrolló una teoría de sistemas para expli- car el funcionamiento de la sociedad. 1.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 293 — similitud 0.2048
+
+**Detalle de puntaje:** tfidf=0.1648; bonus=0.0400
+
+> En el presente capítulo: 1. Teoría de sistemas 2. Luhmann y el Derecho: Legitimación del derecho a través del proceso 3.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 153 — similitud 0.1598
+
+**Detalle de puntaje:** tfidf=0.1298; bonus=0.0300
+
+> Claro está, si se mantiene un concepto material de seguridad jurídica, como el que en mi opinión mantiene Pérez Luño, es posible afirmar que la tesis según la cual el Derecho es un sistema de seguridad es expre- sión de una acepción sociológica y empirista de la seguridad que no se corresponde con el Estado de Derecho 255. Estamos entonces frente a una concepción de la seguridad jurídica mucho más restrictiva que la mantenida aquí, y que le permite afirmar al prof. de la Universidad de Sevilla que más allá del Estado de Derecho, la única seguridad de la que se puede hablar es la seguridad de una iniquidad, «la seguridad fáctica de una inseguridad jurídica» 256.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 293 — similitud 0.1415
+
+**Detalle de puntaje:** tfidf=0.1015; bonus=0.0400
+
+> Teoría de sistemas 2. Luhmann y el Derecho: Legitimación del derecho a través del proceso 3. Función del derecho 4.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 297 — similitud 0.1377
+
+**Detalle de puntaje:** tfidf=0.0977; bonus=0.0400
+
+> 2. Luhmann y el derecho Luhmann, siendo sociólogo se atrevió a invadir la ﬁlosofía jurídica, aﬁr- mando que la legitimidad de los procedimientos no estaba relacionada con la naturaleza objetiva de la verdad. Según Luhmann, en los procedimientos jurídicos se trata del «cómo» en vez del «qué» de los hechos.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 300 — similitud 0.1372
+
+**Detalle de puntaje:** tfidf=0.1072; bonus=0.0300
+
+> 3. Función del derecho La sociedad al fomentar el desarrollo personal del individuo a través de una multitud de posibilidades (culturales, recreativas, económicas, deportivas, políticas etc.), demuestra que está en funcionamiento, por lo tanto, se requieren principios de conducta predecibles y vinculantes para que ese funcionamiento no se descontrole. Asimismo, ese funcionamiento esta provisto de un subsiste- ma político especializado, a saber, el sistema legal.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 151 — similitud 0.1348
+
+**Detalle de puntaje:** tfidf=0.1048; bonus=0.0300
+
+> 164 y ss. 249 De manera que aquí se defiende una concepción formal de la seguri- dad jurídica, que «no determina el contenido material del Derecho» y que «puede predicarse de un sistema juríico con cualquier contendio material» ( GARCÍA MANRIQUE, R., El valor de la seguridad jurídica, cit., p. 157).
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 294 — similitud 0.1336
+
+**Detalle de puntaje:** tfidf=0.0936; bonus=0.0400
+
+> Teoría de sistemas Luhmann, sostiene que la sociedad es un sistema, pero enfatiza que el hombre no es la unidad de ese sistema. La unidad del sistema social es la co- municación (ahí la singularidad de su teoría: la comunicación y no el individuo como la base del sistema social). Explica, que los sistemas sociales se forman a través de las comunicacio- nes, los cuales estructuran características propias observables, creando un tipo especial de «idioma» que lo diferencia dentro del entorno.
+
+### Derecho y moral - Rudolf Laun.pdf — p. 49 — similitud 0.1315
+
+**Detalle de puntaje:** tfidf=0.0915; bonus=0.0400
+
+> Pero es sin embargo una tarea siempre inacabada, y «nada es más grave como el con- fundir el poder con la dominación [...] si el poder es la fuente olvi- dada de la dominación [...] es incontestable la ausencia de parale- lismo entre la autonomía moral y lo que sería para un pueblo la autolegislación mediante la cual la dominación no haría más que arrancar del olvido el querer vivir juntos y el actuar en común de un pueblo» (Ricoeur, 1996, p. 283).
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 121 — similitud 0.1276
+
+**Detalle de puntaje:** tfidf=0.0876; bonus=0.0400
+
+> Por lo tanto, no es el derecho mismo el que constituye el objeto de este conocimiento, sino ciertos fen6mem¡s paralelos de la natura- 81 Es un elemento característico de la doctrina social marxista repudiar la exposición del derecho, impuesto por una clase dominante a una clase dominada, como un si~tema de normas, al caracterizar esa exposición como una ideología deformante de la realidad según el interés de la clase dominante. Para una consideración no ideológica, el derecho no sería un sistema de normas, sino un conglomerado de relaciones económicas, en las cuales se cumple la explotación de los dominados por la clase dominante.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 41 — similitud 0.1224
+
+**Detalle de puntaje:** tfidf=0.1024; bonus=0.0200
+
+> Como es obvio, el control social se da, en una u otra forma, en todos los niveles de la estructura social y actúa sobre los diferentes tipos de relaciones sociales, canalizando su presión a través de las múltiples instituciones que integran la estructura social y de los diversos grupos intermedios que consti- tuyen los núcleos de radicación del individuo en la sociedad. Por otra parte, el control social opera en direcciones y con sentidos muy diversos, buscando la integración de los miembros del grupo por caminos dispares.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 39 — similitud 0.1217
+
+**Detalle de puntaje:** tfidf=0.1017; bonus=0.0200
+
+> II. CONTROL SOCIAL Y NORMAS Parece inevitable que la coordinación e integración que, como acabamos de ver, viene exigida por el normal funcionamiento de cualquier vida social desemboque finalmente en la aplicación, por parte del correspondiente gru- po, de algún tipo de control social; en otro caso, sería difícil lograr el grado mínimo de organización colectiva. A su vez, esta organización presupone que cada grupo establezca los cauces regularizados de actuación para que sus miembros sepan lo que han de hacer en cada circunstancia y conozcan las consecuencias que tendrá para ellos su propia conducta en cada supues- to.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 43 — similitud 0.1214
+
+**Detalle de puntaje:** tfidf=0.0814; bonus=0.0400
+
+> En la más tajante oposición a un sistema social que estatuye sanciones (en sentido amplio), se encontrarla aquel que exige una determinada conducta, sin ligar a ella una recompensa, o a su contraria, una pena; un sistema social en que no se aplicara el principio de retribución. La moral, por lo común, es considerada como un sistema social semejante y distinguida del derecho, justamente, en cuanto éste constituye un sistema que estatuye sanciones.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 297 — similitud 0.1149
+
+**Detalle de puntaje:** tfidf=0.0749; bonus=0.0400
+
+> Considera que es una «ilusión» interpretar los pro- cedimientos como un medio con el propósito de buscar la verdad, y además, aﬁr- ma que los procesos no aumentan la racionalidad, solo reducen la complejidad de los hechos. Por lo tanto, la tesis de Luhmann parece ser cierta: el procedimiento legi- tima los hechos a través de los resultados reduciéndolos paso a paso en el proce- so y creando al mismo tiempo «una realidad procesal» aceptada por las partes.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 124 — similitud 0.1107
+
+**Detalle de puntaje:** tfidf=0.0707; bonus=0.0400
+
+> Enton- ces sería la teoría pura del derecho la que ha abierto el camino hacia ese punto de vista, a partir del cual el derecho puede ser entendido como una ideología en ese sentido, es decir, como un sistema relacional distinto de la naturaleza.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 263 — similitud 0.1087
+
+**Detalle de puntaje:** tfidf=0.0687; bonus=0.0400
+
+> No puede abandonarse a los estudiantes de Derecho al exclusivismo de unos conocimientos técnicos concretos e inmediatamente operativos. Es necesario que adquieran al mismo tiempo la información y la formación suficientes para tener unas ideas cla- ras sobre el sentido y la función social del Derecho. Es preciso proporcionarles todos aquellos co- nocimientos que son capaces de ofrecer una visión global comprensiva del fenómeno jurídico.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 248 — similitud 0.1081
+
+**Detalle de puntaje:** tfidf=0.0681; bonus=0.0400
+
+> Abarca 3 aspectos: Alienación social Alienación política Alienación religiosa Consiste en la división de la sociedad en clases sociales: entre capitalistas y proletarios. Aceptar como «nor- En toda sociedad de cla- ses, el Estado pertenece y sirve a la clase dominante, de ahí la importancia del internacionalismo proletario: «Proletarios del mundo, uníos». Consiste en la evasión de la realidad hacia un mundo de ilusiones: «La religión es el opio del pueblo», pues, la religión tiende a adormecer la lucha revolucionaria. mal» que un grupo se enriquezca a costa de la penuria de la mayoría.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 40 — similitud 0.1050
+
+**Detalle de puntaje:** tfidf=0.0850; bonus=0.0200
+
+> Asimismo, el control social supone siempre la presencia de algún tipo de autoridad colectiva que se impone e influye sobre los individuos. A diferencia del “autocontrol o control que los indi- viduos desarrollan para dirigir su propia conducta de acuerdo con los principios o valores que se han prefijado, el «control social» consiste siempre en una cierta presión de alguna autoridad.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 149 — similitud 0.1042
+
+**Detalle de puntaje:** tfidf=0.0742; bonus=0.0300
+
+> Identificar unos supuestos criterios de per- fección jurídica es una tarea ciertamente complicada a no ser que se adopte una perspectiva sustantiva, es decir, que la per- fección se identifique con determinados contenidos, y no otros, de las normas. Considerando que el Derecho es a fin de cuentas una técnica de control social, la perfección debe venir determi- nada, en todo caso, por la capacidad estructural y técnica del Derecho a la hora de llevar a cabo ese control social. Es esa capacidad la que le va a permitir presentarse como un sistema de control social.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 298 — similitud 0.1031
+
+**Detalle de puntaje:** tfidf=0.0731; bonus=0.0300
+
+> BLOQUE II FILOSOFÍA Legitimación del derecho a través del proceso La legitimación a través de los procedimientos (1969) es una de las obras más conocidas de Luhmann. Parte de la siguiente premisa: un sistema social, el cual tiene que garantizar la solución a todos los problemas que surjan, no pue- de garantizar al mismo tiempo la certeza en sus decisiones.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 107 — similitud 0.0990
+
+**Detalle de puntaje:** tfidf=0.0590; bonus=0.0400
+
+> escribe: “La constitución recíproca de derecho y poder político funda entre ambos momentos una conexión que abre y perpetúa la posibilidad latente de una instrumentalización del derecho al servicio de un empleo estratégico del poder. La idea de Estado de derecho exige, en movimiento contrario a ése, una organización del poder público que fuerce a su vez a la dominación política articulada en forma de derecho a legitimarse recurriendo al derecho legítimamente establecido.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 44 — similitud 0.0943
+
+**Detalle de puntaje:** tfidf=0.0543; bonus=0.0400
+
+> Por otra parte, se piensa también de manera generalizada que esa estre- cha vinculación que existe entre el Derecho y la vida social se realiza en sen- tido doble y recíproco: el que lleva del Derecho a la vida social y el que con- duce de la vida social al Derecho. No sólo puede constatarse que el Derecho hace siempre y sólo referencia a las relaciones sociales que los hombres de- sarrollan, sino que puede comprobarse también que allí donde existen rela- ciones sociales, allí donde se desarrolle un mínimo de vida social, allí está presente el Derecho, tal como pone de relieve el viejo aforismo latino ubi so- cietas, ibi ius; ubi ius, ibi societas.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 71 — similitud 0.0910
+
+**Detalle de puntaje:** tfidf=0.0610; bonus=0.0300
+
+> Por encima de estos fines, para López Calera —quien en lugar de hablar de fines del derecho, prefiere hablar de funciones del derecho— se encuentra la justicia: desde una perspectiva filosófico-jurídica, no es ninguna aberración afirmar que hay una función genérica, propia o específica del derecho que históricamente se re- conoce con bastante constancia e insistencia, aunque no de manera unívoca ni exclusiva, que es la justicia. En otras palabras, es razonable afirmar que la “gran función” del derecho es realizar la justicia en una determinada sociedad.196 Para Delos, la seguridad y la justicia forman parte del bien común; pero, también, nadie negará que son fines del derecho positivo.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 206 — similitud 0.0835
+
+**Detalle de puntaje:** tfidf=0.0635; bonus=0.0200
+
+> Así como no corresponde reconocer a la ciencia del derecho una función propia del derecho mismo, tampoco debe confundirse una función de la ciencia jurídica con una función del derecho. g) Superaci6n del dualismo entre el derecho en sentido ob;etivo y el derecho en sentido sub;etivo. Para la jurisprudencia tradicional, el sujeto de derecho representa -en tanto persona física o jurídica-, con "sus" obligaciones y derechos, el derecho en sentido subjetivo; el facultamiento caracterizado como derecho subjetivo no es más que un caso especial de esta representación amo plia.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 316 — similitud 0.0782
+
+**Detalle de puntaje:** tfidf=0.0482; bonus=0.0300
+
+> Sólo lo es admitiendo que se tenga conciencia de la naturaleza de la atribución imputativa, y que con una atribución a una persona jurídica -es decir, con el concepto de órgano- no se pretende decir más que la referencia de esa función a la unidad del orden jurídico, constituyente de la comunidad, que la determina; que con la atribución a otro individuo, o mdividuos, especial~ mente todos los individuos que constituyen la sociedad estatal, la población del Estado, es decir, con la noción de mandato o representación, no se pretenda decir sino que el individuo que ejerce la función, está jurídicamente obligado, o moral y políticamente obligado, a ejercer esa función en interés del indivi-...
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 284 — similitud 0.0781
+
+**Detalle de puntaje:** tfidf=0.0581; bonus=0.0200
+
+> Entonces cabe distinguir, en este sentido, una administración estatal mediata, cuya función na difiere de la jurisdicción, sino que, como ésa, es función de producción y aplicación de derecho, de la admi- nistración estatal inmediata (directa), que es esencialmente distinta de la función judicial, por tratarse de una función de cumplimiento del derecho. En la medida en que también es función de producción de derecho, tiene carác- ter de una función jurisdiccional, no en cambio el de un negocio jurídico.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 308 — similitud 0.0767
+
+**Detalle de puntaje:** tfidf=0.0567; bonus=0.0200
+
+> Pero como el Estado, como persona activa, no es una realidad, sino una construcci6n auxi- liar del pensamiento jurídico, la pregunta de si una función es una función estatal, no está dirigida a verificar la existencia de un hecho. Si se la formula y responde con ese sentido, estará equivocadamente planteada y erróneamente contestada.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 240 — similitud 0.0748
+
+**Detalle de puntaje:** tfidf=0.0448; bonus=0.0300
+
+> Así, deberán ser conocidos el sentido y la función que el Derecho desempeña en la vida so- cial, las variaciones históricas que ha experimentado y las razones profundas de su evolución, su condicionamiento por los factores de la realidad social (especialmente por los factores de poder), la necesidad que tiene de adaptar- se constantemente a los problemas o necesidades sociales nacientes, su ine- vitable determinación por los ideales o valores predominantes en la organi- zación general de la sociedad, su destino de adaptación a las exigencias de la justicia, etc. ] Puede concluirse, en consecuencia, que la jurisprudencia es una actividad compleja en la que se manifiestan de manera...
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 310 — similitud 0.0728
+
+**Detalle de puntaje:** tfidf=0.0528; bonus=0.0200
+
+> Muy característico de las atribuciones imputativas que se manifiestan en los usos lingüísticos dominan- tes, en los que reposa la representación del Estado como una persona activa, es el hecho de que la producción de normas jurídicas generales por vía de la costumbre no es interpretada Como función de! Estado.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 5 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 02. filosofia del derecho
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.3164
+**Similitud promedio:** 0.1220
+**Fuentes:** Filosofia del derechorgilio Ruiz Rodriguez.pdf; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf; Manual práctico de fiParedes Lovón, Javier.pdf; Razón y voluntad en eoig, Francisco Javier.pdf
+**Ubicaciones:** Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 133; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 14; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 15; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 198; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 199; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 62; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 63; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 76; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 83; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 84; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 94; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 96; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 107; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 265; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 368; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 377; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 386; Manual práctico de fiParedes Lovón, Javier.pdf, p. 373; Manual práctico de fiParedes Lovón, Javier.pdf, p. 399; Razón y voluntad en eoig, Francisco Javier.pdf, p. 202; Razón y voluntad en eoig, Francisco Javier.pdf, p. 218; Razón y voluntad en eoig, Francisco Javier.pdf, p. 225; Razón y voluntad en eoig, Francisco Javier.pdf, p. 346; Razón y voluntad en eoig, Francisco Javier.pdf, p. 353; Razón y voluntad en eoig, Francisco Javier.pdf, p. 359; Razón y voluntad en eoig, Francisco Javier.pdf, p. 362; Razón y voluntad en eoig, Francisco Javier.pdf, p. 366
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 202 — similitud 0.3164
+
+**Detalle de puntaje:** tfidf=0.2764; bonus=0.0400
+
+> Y nos permite comprender también cómo la garantía de la paz y de los derechos constitucionalmente estipulados 363 Felipe González Vicén desarrolló una visión de la Filosofía del Dere- cho en clave de concepto histórico (Vid. GONZÁLEZ VICÉN, F., «La filosofía del Derecho como concepto histórico», en ID., Estudios de Filosofía del Dere- cho, Facultad de Derecho, Universidad de La Laguna, 1979).
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 76 — similitud 0.1993
+
+**Detalle de puntaje:** tfidf=0.1593; bonus=0.0400
+
+> Sociología —y de ahí sucesivamente se han celebrado año con año—, dando con ello carta de entidad a la sociología jurídica como una disciplina que for- ma parte de la sociología en general o, mejor, como una sociología especiali- zada y a la que se le asigna como objeto de estudio el “fenómeno del Derecho no bajo el punto de vista normativo propio de la ciencia jurídica, sino como fenómeno social, usando el método inductivo”.216 Ramón Soriano, escribe que la sociología del derecho puede ser definida con sencillez y amplitud a través de la interconexión de los términos de su nomenclatura: la sociología jurídica se ocupa de la influencia de los factores sociales en el derecho y de la...
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 83 — similitud 0.1780
+
+**Detalle de puntaje:** tfidf=0.1380; bonus=0.0400
+
+> en lo que es, es decir, su esencia; han de saber expresar, decir, argumentar el derecho, y han de tener conciencia para practicar y aplicar el derecho. En con- sonancia con esto, estoy de acuerdo con Eusebio Fernández al indicar que la filosofía del derecho incluiría tres apartados temáticos de estudio, que se- rían: la teoría del derecho u ontología jurídica, la teoría de la ciencia jurídica o lógica jurídica y la teoría de la justicia o axiología jurídica.226 Esos serían los grandes troncos que, junto con sus ramas, constituidas por los diversos aspectos o subtemas en que se desdoblan cada uno, abarcan el objeto de es- tudio y análisis en los siguientes apartados.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 83 — similitud 0.1755
+
+**Detalle de puntaje:** tfidf=0.1355; bonus=0.0400
+
+> En este sentido, la ontología jurídica —para López Calera—, trata de dar un 226. Teoría de la justicia y derechos humanos, pp.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 199 — similitud 0.1657
+
+**Detalle de puntaje:** tfidf=0.1257; bonus=0.0400
+
+> Cfr. Filosofía del derecho, pp. 211-212.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 84 — similitud 0.1608
+
+**Detalle de puntaje:** tfidf=0.1208; bonus=0.0400
+
+> M., Filosofía del derecho, p. 35.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 265 — similitud 0.1563
+
+**Detalle de puntaje:** tfidf=0.1163; bonus=0.0400
+
+> Y, asimismo, queda incluído también el connatural compromiso de delimitación y caracterización de la propia reflexión filosófico-jurídica. Ñ 10 No es fácil discriminar las respectivas competencias de la filosofía del Derecho y de una posi- ble teoría general del Derecho en relación con este grupo de problemas, muy especialmente en rela- ción con las categorías jurídicas fundamentales. Suele señalarse como diferencia la validez «univer- sal a priori» de las conclusiones de la filosofía del Derecho frente a la validez «general a posteriori» de las de la teoría general.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 368 — similitud 0.1559
+
+**Detalle de puntaje:** tfidf=0.1159; bonus=0.0400
+
+> Las diferentes ramas del derecho son susceptibles de estudiarse distin- guiendo en cada una la parte «especial» que se ocupa de las instituciones concretas de la rama en cuestión, y la parte «general», en la que se conside- ran las líneas fundamentales que inspiran la disciplina de que se trate; así, hay una parte general del Derecho civil, del Derecho penal, del Derecho ad- ministrativo, etc., que se obtienen por inducción o reducción de las institu- ciones que se estudian en las respectivas partes especiales.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 63 — similitud 0.1504
+
+**Detalle de puntaje:** tfidf=0.1104; bonus=0.0400
+
+> Si ignoramos este elemento no podemos diferenciar el orden jurídico de otros órdenes sociales.164 Eduardo G. Máynez (1908-1993), uno de los grandes representantes del positivismo jurídico en México, para el tema que nos ocupa toma como pun- to de referencia la definición de orden que ha establecido en el primer capí- tulo de su Filosofía del derecho, así como las relaciones y diferencias entre la moral y el derecho, que tienen raigambre en la tradición positivista a partir de Kant hasta Kelsen. Frente a algunos autores para quienes el orden jurídico es un simple conjunto de normas, afirma que el derecho es un orden concreto 160.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 133 — similitud 0.1461
+
+**Detalle de puntaje:** tfidf=0.1061; bonus=0.0400
+
+> 448. Teoría general del derecho y del estado, p. 176.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 94 — similitud 0.1310
+
+**Detalle de puntaje:** tfidf=0.0910; bonus=0.0400
+
+> Una vez que ha expuesto el planteamiento de Kelsen, Hart expone el suyo: según Kelsen la eficacia general del sistema no es un criterio de validez proporcionado por la regla del reconocimiento de un sistema jurídico,274 sino que es presupuesta si el sistema no es en general eficaz, no puede hacerse con sentido ningún enunciado de validez.275 Mi punto de vista —dice Hart— difiere del de Kelsen en este particular, puesto que aunque la eficacia del sis- tema es el contexto normal para formular enunciados de validez, no obstan- te ello, en circunstancias especiales, tales enunciados pueden tener sentido aunque el sistema ya no sea eficaz.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 14 — similitud 0.1274
+
+**Detalle de puntaje:** tfidf=0.0874; bonus=0.0400
+
+> Como el propio título lo señala, considero aquello sobre lo que la mayoría de los iusfilósofos están de acuerdo que debe estudiar la filosofía del derecho: 1. Teoría del derecho u ontología jurídica, que no es lo mismo que teoría general del derecho, pues se ocupa de describir lo que es el derecho en la vida social humana en estrecha relación con otros fe- nómenos que se dan en la misma —fuerza y poder, y los límites de este último—, con la política, con la ética, con la validez y vigencia del derecho y con el Estado de derecho. 2.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 96 — similitud 0.1209
+
+**Detalle de puntaje:** tfidf=0.0809; bonus=0.0400
+
+> rídica por el reconocimiento real y efectivo a la justificación jurídica, a partir del simple deber de reconocer.282 Además de lo ya citado, Hart aclara algunas perplejidades vinculadas con la idea de validez, que según algunos, se refieren a la relación entre la validez y la eficacia del derecho.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 198 — similitud 0.1105
+
+**Detalle de puntaje:** tfidf=0.0705; bonus=0.0400
+
+> De igual manera, partiendo de la clásica distinción bobbiana entre po- sitivismo teórico, metodológico e ideológico —según Rodolfo Luis Vigo—, sabido es que este último afirma que el derecho positivo por el solo hecho de serlo, es válido y debe ser obedecido incondicionalmente cualquiera que sea su contenido;716 frente a lo cual la conclusión del profesor de Oxford es terminante: “he dicho que cualquier sociedad que pretenda reconocer los derechos, debe abandonar la idea de un deber general de obedecer la ley que sea válido en todos los casos”.717 Idea en la que está de acuerdo Hart al seña- lar que “la obligación moral de obedecer el derecho, puede ser desplazada en casos particulares por...
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 94 — similitud 0.1071
+
+**Detalle de puntaje:** tfidf=0.0671; bonus=0.0400
+
+> Hart, en lo particular, para expresar su concepto de validez, comienza por analizar el pensamiento de Kelsen, y observa que este autor distingue entre la eficacia de un orden jurídico que es, en su conjunto, eficaz, y la efica- cia de una norma particular.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 107 — similitud 0.1070
+
+**Detalle de puntaje:** tfidf=0.0670; bonus=0.0400
+
+> Al analizar la validez del Derecho, resulta imprescindible en la actuali- dad enfrentarse al problema de si (como se ha afirmado desde varios puntos de vista) esa validez está condicionada por la eficacia $ de tal modo que sólo podrían ser calificadas como normas jurídicas válidas aquellas que han al- canzado un mínimo nivel de efectividad social. Esta doctrina ha sido mante- nida siempre, dentro de diferentes perspectivas y con muy distintos grados de intensidad, a lo largo de la historia, pero ha llegado a un planteamiento especialmente agudo en el siglo xx, dentro de la teoría jurídica de H.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 15 — similitud 0.1065
+
+**Detalle de puntaje:** tfidf=0.0665; bonus=0.0400
+
+> tral de la filosofía del derecho porque sin justicia, para qué hablar de derecho y sin justicia y sin derecho no tendría razón de ser una filosofía del derecho. Al final del capítulo considero el tema de los valores, tomando en cuenta a la justicia como un valor absoluto, pues sin ella el derecho lo mismo que el licenciado en derecho no tendrían razón de ser.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 399 — similitud 0.0968
+
+**Detalle de puntaje:** tfidf=0.0568; bonus=0.0400
+
+> Clase de justicia: Justicia social (justa distribución de tierras) Justicia política (dación de la Ley de Reforma) Ahora bien, de la Ley se deduce lo siguiente: la demanda social del cam- pesinado hondureño como una pretensión de justicia (justicia material), no va a tener efectos sin una aplicación eﬁciente de la justicia política (justicia formal), puesto que solo esta posibilita que el gobierno de Honduras: 399 MANUAL PRÁCTICO DE FILOSOFÍA DEL DERECHO FUNDAMENTOS DEL DERECHO Y JUSTICIA
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 373 — similitud 0.0967
+
+**Detalle de puntaje:** tfidf=0.0567; bonus=0.0400
+
+> La persona como una instancia de justicia Para entender el criterio de «persona» como instancia de justicia debe- mos entender primero qué se entiende por persona. Por un lado, la cualidad de 373 MANUAL PRÁCTICO DE FILOSOFÍA DEL DERECHO FUNDAMENTOS DEL DERECHO Y JUSTICIA
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 359 — similitud 0.0864
+
+**Detalle de puntaje:** tfidf=0.0664; bonus=0.0200
+
+> Bibliografía FASSÓ, G., «Stato di diritto e Stado di giustizia», Atti del VI Congresso Nazionale di Filosofia del Diritto ,vol. I, Milano, 1963 FERNÁNDEZ GARCÍA, E., «Etica, Derecho y política ¿El Derecho positivo debe basarse en una ética?, ID., Filosofía Política y Dere- cho. — Filosofía Política y Derecho, Marcial Pons, Madrid, 1995. — «Hacia un concepto restringido de Estado de Derecho», Sistema, n.º 138, 1997. — «El iusnaturalismo», en GARZÓN VALDÉS, E., LAPORTA, F.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 386 — similitud 0.0798
+
+**Detalle de puntaje:** tfidf=0.0398; bonus=0.0400
+
+> En la Edad moderna, la naturaleza de la cosa aparece mentada por MONTESQUIEU, quien comienza su célebre obra L'esprit des lois con estas palabras: «Les lois, dans la signification la plus étendue, sont les rapports nécessaires qui dérivent de la nature des choses.» Desde entonces es frecuente hallar presente la idea en numerosas doctrinas de la ciencia y la filosofía del derecho. 2.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 62 — similitud 0.0780
+
+**Detalle de puntaje:** tfidf=0.0480; bonus=0.0300
+
+> expuestos los elementos esenciales del concepto del derecho, lo define como “la coordinación objetiva de las acciones posibles entre varios sujetos, según un principio ético que las determina excluyendo todo impedimento”.156 Gustav Radbruch (1878-1950) parece que no se libra de la influencia kantiana, y sostiene que el concepto del derecho es a la idea del derecho, lo que el ser al deber ser. Es decir, la idea del derecho precede al concepto del derecho.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 218 — similitud 0.0766
+
+**Detalle de puntaje:** tfidf=0.0566; bonus=0.0200
+
+> Por razones conceptuales, no todo poder de decisión es sometible a normas que vinculen a la decisión» 393. Parece que se estaría pensando, entonces, en un órgano como el Tribu- nal Constitucional, o en otro que pareciera no estar sometido a norma alguna, subrayándose así la naturaleza autoritativa del derecho; lo cual, parece ser problemático, desde el momento en 391 KELSEN, H., Teoría Pura del Derecho, cit., p. 203.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 362 — similitud 0.0760
+
+**Detalle de puntaje:** tfidf=0.0560; bonus=0.0200
+
+> Storia, teo- ria, critica. GONZÁLEZ VICÉN, F., «La filosofía del Derecho como concepto his- tórico», en ID., Estudios de Filosofía del Derecho, Facultad de Derecho, Universidad de La Laguna, 1979. GOYARD-FABRE, S., «L’Ètat du droit et la démocratie selon Kelsen», Cahiers de Philosophie Politique et Juridique, n.º 17, 1990.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 346 — similitud 0.0727
+
+**Detalle de puntaje:** tfidf=0.0527; bonus=0.0200
+
+> 237. Tambiém LA TORRE, M., «Democrazia», en LA TORRE, M., ZANETTI, G., Seminari di Filosofia del diritto, Rubbetino, Soveria Mannelli, 2000, pp. 216- 217.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 377 — similitud 0.0696
+
+**Detalle de puntaje:** tfidf=0.0596; bonus=0.0100
+
+> 6 Sobre estas bases se construye la filosofia existencialista, que ofrece una doble vertiente.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 353 — similitud 0.0683
+
+**Detalle de puntaje:** tfidf=0.0483; bonus=0.0200
+
+> Bibliografía BALLESTEROS, J. (ed.), Derechos humanos, Tecnos, Madrid, 1992. BARATTA, A., «El Estado de Derecho. Historia del concepto y proble- mática actual», Sistema, n.º 17-18, 1977.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 225 — similitud 0.0619
+
+**Detalle de puntaje:** tfidf=0.0519; bonus=0.0100
+
+> 400 Vid. GOZZI, G., «Storia e prospettive del costituzionalismo», en BON- GIOVANNI, G., (ed.), La Filosofia del Diritto Costituzionale e i problemi del libera- lismo contemporaneo, Clueb, Bologna, 1998, p. 13, en donde se afirma además que los criterios de distinción entre el constitucionalismo antiguo y el moderno consisten en las modalidades de instrumentos mediante los cuales se imponen los límites al Poder.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 366 — similitud 0.0614
+
+**Detalle de puntaje:** tfidf=0.0414; bonus=0.0200
+
+> 74. — «Positivismo giuridico», Enciclopedia del Diritto, Giuffré, annali VI, 2013. LA TORRE, M., ZANETTI, G., Seminari di Filosofia del diritto, Rubbe- tino, Soveria Mannelli, 2000. LAPORTA, F.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 9 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 03. derecho natural
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.4047
+**Similitud promedio:** 0.1974
+**Fuentes:** Filosofia del derechorgilio Ruiz Rodriguez.pdf; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf; Manual práctico de fiParedes Lovón, Javier.pdf; Razón y voluntad en eoig, Francisco Javier.pdf; Teoría pura del derecho - Hans Kelsen (1).pdf
+**Ubicaciones:** Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 191; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 195; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 197; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 199; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 202; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 204; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 221; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 48; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 280; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 333; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 340; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 353; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 408; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 409; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 429; Manual práctico de fiParedes Lovón, Javier.pdf, p. 125; Manual práctico de fiParedes Lovón, Javier.pdf, p. 175; Manual práctico de fiParedes Lovón, Javier.pdf, p. 255; Manual práctico de fiParedes Lovón, Javier.pdf, p. 257; Manual práctico de fiParedes Lovón, Javier.pdf, p. 259; Manual práctico de fiParedes Lovón, Javier.pdf, p. 260; Manual práctico de fiParedes Lovón, Javier.pdf, p. 58; Razón y voluntad en eoig, Francisco Javier.pdf, p. 162; Razón y voluntad en eoig, Francisco Javier.pdf, p. 183; Razón y voluntad en eoig, Francisco Javier.pdf, p. 222; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 238; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 239
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 175 — similitud 0.4047
+
+**Detalle de puntaje:** tfidf=0.3247; bonus=0.0800
+
+> SAMUEL VON PUFENDORF Samuel von Pufendorf (1632-1696) ﬁlósofo y jurista alemán. Fundador del Ver- nuftrecht o Derecho natural racional33 (el derecho natural sin connotación reli- giosa). Construyó también una teoría contractual sobre la base de Hobbes.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 239 — similitud 0.3874
+
+**Detalle de puntaje:** tfidf=0.3074; bonus=0.0800
+
+> Conforme a una doctrina iusnaturalista, sólo es "natural" la pro· piedad privada particular, mientras que para otra, sólo la propiedad colectiva; conforme a una~ sólo la democracia, mientras que para la otra lo "natural" es la autocracia, donde por "natural" se entiende justa. Todo derecho positivo que corresponde al derecho natural de una de esas doctrinas y que, por lo tanto, es juzgado justo, contradice al derecho natural de la otra, siendo en consecuencia, considerado injusto. La doctrina del derecho natural, cuando ha sido efectivamente desarrollada, no pudiendo desenvolverse de otro modo, está muy lejos de ofrecer el criterio firme que de ella se esperaba.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 238 — similitud 0.3295
+
+**Detalle de puntaje:** tfidf=0.2495; bonus=0.0800
+
+> Z30 HANS KELSEN hace la teoría pura del derecho como teoría jurídica positivista-, eficaz en términos generales, como un orden normativo objetivamente válido. La posi. bilidad de un conflicto entre el derecho natural y el derecho positivo, esto es, entre el derecho natural y un orden coactivo eficaz, incluye la posibilidad de tener que considerar ese orden coactivo como carente de validez.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 195 — similitud 0.2989
+
+**Detalle de puntaje:** tfidf=0.2189; bonus=0.0800
+
+> deración del derecho natural como ontología jurídica o teoría del derecho,702 basándose para ello en lo que escribe J. L.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 199 — similitud 0.2911
+
+**Detalle de puntaje:** tfidf=0.2111; bonus=0.0800
+
+> ley natural entendemos una ley que es conocida por las luces naturales de la razón como derivada de la naturaleza de las cosas, que procede de Dios como autor de la naturaleza y que dirige la actividad del hombre hacia su fin último, que consiste en la perfección de su naturaleza o la plenitud de su humanidad. Así la ley natural (o como se expresa más corrientemente, el derecho natural) puede definirse como una participación de la ley eterna en la criatura racional.721 J. M.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 340 — similitud 0.2833
+
+**Detalle de puntaje:** tfidf=0.2033; bonus=0.0800
+
+> cia lógica de la concepción de la ley natural como una participación de la ley eterna, cuyo autor es Dios. El derecho natural coexiste con el positivo, siendo necesarios el uno al otro; el positivo precisa del natural para obtener de él adecuado fundamento y el natural del positivo para concretarse y explicitarse a través de los pre- ceptos del mismo. El derecho natural tiene un carácter objetivo y normativo, esto es, no constituye un repertorio de principios axiológicos o éticos, sino que contie- ne auténticos preceptos; o, dicho de otro modo, es obligatorio y vigente, no meramente indicativo.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 58 — similitud 0.2776
+
+**Detalle de puntaje:** tfidf=0.1976; bonus=0.0800
+
+> Por lo tanto, la norma jurídica se constituye en la medida y deﬁnición de valores como la moral, la justicia, lo legal e ilegal, lo correcto o incorrecto. Diferencia entre el derecho natural y el derecho positivo El derecho natural y su base cristiana era el fundamento de la moral y la política del mundo occidental hasta el siglo XIX; en la actualidad el derecho po- sitivo (la norma del legislador) se ha impuesto en la sociedad y el derecho natural ha perdido toda relevancia práctica. Veamos un ejemplo: el matrimonio. ◾ Para el derecho natural, el matrimonio es la unión de hombre y mujer para formar una familia, cuyo ﬁn es la procreación y por lo tanto la pre- servación de la especie humana.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 162 — similitud 0.2755
+
+**Detalle de puntaje:** tfidf=0.1955; bonus=0.0800
+
+> En efecto, las propuestas al respecto son dispares y contradictorias: «No hay, como imaginan los partidarios de esta teoría, una sola sino numerosas normas de justicia diferentes y opuestas; si las normas de justicia no son, como quieren los teóricos del derecho natural, inmanentes a la naturaleza, entonces no podrán ser encontradas o deducidas en la naturaleza, sino que en realidad lo que ocurre es que vienen presupues- tas por dichos teóricos: por todas estas razones cada uno de éstos llega, según la norma de justicia por él propuesta, a resultados muy diferentes y contradic- torios» (Vid.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 204 — similitud 0.2630
+
+**Detalle de puntaje:** tfidf=0.2230; bonus=0.0400
+
+> ley natural”.737 Esa participación se llevará a cabo a través del primer princi- pio práctico universal llamado “Sindéresis”: bonum est faciendum et malum vitandum (se debe hacer el bien y evitar el mal); todos los demás preceptos se derivan de éste como de su fuente.738 En los siguientes artículos: 4, 5 y 6 de esta misma cuestión 94, dejó escri- tas las cualidades o características de la ley natural: a) sobre la universalidad de la ley natural, sostuvo que es la misma para todos los hombres; b) sobre la inmutabilidad de la ley natural, indica que puede mudarse, sea por adición de alguna cosa que sea muy útil a la vida humana, o por substracción, es decir, que deje de ser de ley natural...
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 255 — similitud 0.2461
+
+**Detalle de puntaje:** tfidf=0.2061; bonus=0.0400
+
+> I. GUSTAV RADBRUCH Gustav Radbruch (1878-1949) jurista alemán, pasa a la historia por la llamada Fórmula de Radbruch que plantea en su ensayo Arbitrariedad legal y Derecho Supralegal (1946). En el presente capítulo: 1.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 257 — similitud 0.2181
+
+**Detalle de puntaje:** tfidf=0.1781; bonus=0.0400
+
+> En Alemania, los Tribunales de Justicia aplicaron la Fórmula de Radbruch para resolver los problemas jurídicos que surgieron después de la II Guerra Mundial y de la caída del Muro de Berlín en 1990. a. Deﬁnición La llamada Fórmula de Radbruch proviene del jurista Gustav Radbruch que en su ensayo Arbitrariedad legal y Derecho Supralegal (1946) plantea el si- guiente principio: Se puede negar la validez legal de las leyes tremendamente injustas. 257 MANUAL PRÁCTICO DE FILOSOFÍA DEL DERECHO FUNDAMENTOS DEL DERECHO Y JUSTICIA
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 260 — similitud 0.2084
+
+**Detalle de puntaje:** tfidf=0.1784; bonus=0.0300
+
+> BLOQUE II FILOSOFÍA Este método epistemológicamente negativo (no veriﬁcar) es más fácil de realizar y menos objetable que el método positivo opuesto: «conociendo lo que no es, se acerca más a aquello a lo que sí es». Fórmula de Radbruch negación de la validez de la ley extremadamente injusta. Principio de insoportabilidad Principio de negación Libera al juez de su compromiso con la ley positiva, si la considera extremadamente injusta.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 195 — similitud 0.1855
+
+**Detalle de puntaje:** tfidf=0.1455; bonus=0.0400
+
+> La afirmación de que el derecho natural no sea estrictamente natural o dado por la naturaleza (exceptuando quizá lo que Hart ha denominado el contenido mínimo del derecho natural), encuentra un eco muy sólido en Bobbio, quien ha señalado que la noción de naturaleza es de tal modo equí- voca, que se han llegado a considerar como igualmente naturales derechos diametralmente opuestos.704 De igual manera, sobre la afirmación que el de- recho natural tampoco es estrictamente derecho con el mismo título que el derecho positivo, lo sustenta Bobbio, ya que carece del atributo de la eficacia y además no garantiza la paz ni la seguridad.705 Aunado a lo anterior, y como es obvio, según el positivismo...
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 48 — similitud 0.1827
+
+**Detalle de puntaje:** tfidf=0.1627; bonus=0.0200
+
+> 97. Santo Tomás de Aquino, De ente et essentia, p. 52.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 259 — similitud 0.1633
+
+**Detalle de puntaje:** tfidf=0.1233; bonus=0.0400
+
+> Radbruch, argumentó que después de 1945 en vista del esfuerzo de siglos de establecer los Derechos Humanos al menos se puede identiﬁcar un conjunto básico de derechos que solo el «escepticismo deliberado» real- mente puede poner en duda. La fórmula de Radbruch no trata de determinar positivamente o deﬁnir lo que es justo (veriﬁcación de la ley si es justa o legal). Se limita a determinar negativamente «conociendo lo que no es justo» qué leyes son, en cualquier caso, extremadamente injustas.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 197 — similitud 0.1622
+
+**Detalle de puntaje:** tfidf=0.1222; bonus=0.0400
+
+> Tales reglas constituyen de hecho un elemento común al derecho y a la moral conven- cional de todas las sociedades que han alcanzado el punto en que uno y otra se distinguen como formas diferentes de control social. Tales principios de conducta universalmente reconocidos, que tienen una base en verdades ele- mentales referentes a los seres humanos, a su circunstancia natural, y a sus propósitos, pueden ser considerados como el contenido mínimo del derecho natural, en contraste con las construcciones más grandilocuentes y más con- trovertibles que a menudo han sido enunciadas bajo ese nombre”.711 R.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 408 — similitud 0.1528
+
+**Detalle de puntaje:** tfidf=0.1128; bonus=0.0400
+
+> Asi, la Conferencia de San Francisco, de junio de 1945, aprobó la Carta de la organización de las Naciones Unidas, que dio nacimiento a este organis- mo internacional una de cuyas primeras misiones fue la redacción de un có- digo de derechos del hombre, ya reconocidos en la Carta. Creada una Comi- sión especial, presentó el proyecto a la Asamblea General, que en su sesión del 10 de diciembre de 1948 aprobó la Declaración universal de derechos humanos. La Declaración fue complementada, en el seno de la propia ONU, por el Pacto internacional de Derechos civiles y políticos y el Pacto internacional de Derechos económicos, sociales y culturales, suscritos ambos en 1966.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 409 — similitud 0.1444
+
+**Detalle de puntaje:** tfidf=0.1044; bonus=0.0400
+
+> LECCION XXXIV EL FUNDAMENTO DE LOS DERECHOS HUMANOS IL NECESIDAD DE UNA FUNDAMENTACIÓN DE ESTOS DERECHOS Es incuestionable que, como páginas atrás decíamos, los derechos hu- manos tienen hoy una total aceptación y disfrutan de un universal recono- cimiento, otorgándoseles, además, una primacía respecto de cualesquiera otras facultades o derechos que pueda ostentar el sujeto, como queda bien patente en las Constituciones de todos los países, en las que —indepen- dientemente de la sinceridad con que se haga— se consagran y reconocen los derechos fundamentales apelando a las expresiones más enfáticas.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 125 — similitud 0.1429
+
+**Detalle de puntaje:** tfidf=0.1129; bonus=0.0300
+
+> VI. SANTO TOMÁS DE AQUINO Entre San Agustín y Santo Tomás hay casi 800 años. Santo Tomás cono- cido como el Doctor Angelicus (1224-1274) fue un monje dominico que vivió entre Nápoles, París, Colonia y Roma.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 429 — similitud 0.1407
+
+**Detalle de puntaje:** tfidf=0.1007; bonus=0.0400
+
+> de 1789; a partir de entonces, como antes se dijo, las Constituciones han sido el medio más generalizado de positivación !. Una segunda posibilidad de positivación está en la Declaración universal de derechos humanos, de 1948, que es la única Declaración supraestatal con carácter universal (otras, como la Convención de Roma, de 1950, que dio origen al Consejo de Europa, o la Declaración americana de Bogotá, de 1948, tienen sólo alcance continental). La Declaración de la ONU represen- ta, pues, la expresión del deseo de todos los pueblos de reconocer y tutelar una serie de derechos y libertades con el carácter de fundamentales.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 202 — similitud 0.1395
+
+**Detalle de puntaje:** tfidf=0.0995; bonus=0.0400
+
+> Estas disposiciones particulares de la razón práctica reciben el nombre de leyes humanas cuando cumplen todas las demás condiciones que pertenecen a la naturaleza de la ley”.730 De esta manera, de las cuatro conclusiones establecidas (artículos 1, 2 y 3) puede colegirse —dice Santo Tomás— una definición de la ley: “La ley no es más que una ordenación de la razón, en orden al bien común, promulgada por aquél que tiene el cuidado de la comunidad”.731 Un poco más adelante, asigna el doctor Angélico tres cua- lidades o características esenciales a la ley humana: su dependencia de la ley eterna; su derivación de la ley natural y su relación al fin propio, que es la utilidad de los hombres, es...
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 221 — similitud 0.1378
+
+**Detalle de puntaje:** tfidf=0.0978; bonus=0.0400
+
+> De ahí, que, por ejemplo, grandes luminarias del pensamiento jurídico, como Ro- nald Dworkin, Gregorio Peces-Barba, Antonio Enrique Pérez Luño, Jürgen Habermas, entre otras, pidan y exijan que en todos los países del mundo se lleve a cabo la positivación de los derechos humanos; es decir, que sean reconocidos por cada Estado a través de la Constitución, obteniendo así la categoría de derechos fundamentales, no porque eso sea la solución, pero al hacerlo, aquéllos obtienen fuerza y respaldo y, en algo ayudará para que su respeto sea más real en todo el mundo.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 333 — similitud 0.1331
+
+**Detalle de puntaje:** tfidf=0.1031; bonus=0.0300
+
+> al terreno jurídico, su voluntarismo anuncia las posiciones positivistas poste- riores, así como ciertas tesis del iusnaturalismo racionalista, de las que más adelante nos ocuparemos. Y también el pensamiento protestante será tribu- tario, en buena medida, de las doctrinas de OckHam.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 183 — similitud 0.1302
+
+**Detalle de puntaje:** tfidf=0.1002; bonus=0.0300
+
+> Pero a partir de ese momento, un Derecho que cumpla con las exigencias del imperio de la ley puede tener unos contenidos que merezcan una evaluación moral negativa. Pues bien, ¿desde qué punto de vista no hay diferencias entre el iusnaturalismo en sentido débil y el positivismo defen- 322 Como se puede observar, la distinción coincide con aquella otra entre iusnaturalismo ontológico e iusnaturalismo deontológico. Vid.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 255 — similitud 0.1287
+
+**Detalle de puntaje:** tfidf=0.0887; bonus=0.0400
+
+> Aplicación de la ley o de la justicia 2. La Fórmula de Radbruch en la práctica Introducción ¿Qué es la ﬁlosofía del derecho? Se entiende la ﬁlosofía como la búsqueda para entender y establecer los principios generales que organizan y orientan el conocimiento de la realidad así como el sentido del obrar humano, siendo la ﬁlosofía del derecho una de sus ra- mas.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 259 — similitud 0.1287
+
+**Detalle de puntaje:** tfidf=0.0887; bonus=0.0400
+
+> 2. Radbruch, argumentó que después de 1945 en vista del esfuerzo de siglos de establecer los Derechos Humanos al menos se puede identiﬁcar un conjunto básico de derechos que solo el «escepticismo deliberado» real- mente puede poner en duda. La fórmula de Radbruch no trata de determinar positivamente o deﬁnir lo que es justo (veriﬁcación de la ley si es justa o legal).
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 280 — similitud 0.1285
+
+**Detalle de puntaje:** tfidf=0.1085; bonus=0.0200
+
+> postulados de la ley natural. Pero tampoco en ese caso entendemos que sea admisible la tesis de la inexistencia de la ley injusta; por mucha y grave que sea la carga de injusticia de que adolezca un precepto, lo cierto es que proce- de del legislador y está dado para regular la vida de convivencia, por lo que es ley: injusta, pero ley.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 259 — similitud 0.1237
+
+**Detalle de puntaje:** tfidf=0.0937; bonus=0.0300
+
+> FILOSOFÍA JURÍDICA CONTEMPORÁNEA Radbruch, subraya que la justicia y la seguridad jurídica tienen en prin- cipio la misma importancia que la idea de ley, es decir ni la justicia, ni la se- guridad jurídica, tienen prioridad sobre la otra, pero el principio de seguridad jurídica, debe al menos subordinarse al principio de justicia, si la injusticia de la ley en cuestión excede un cierto nivel o se coloca en un estado extremo, «insoportable». c. Método de aplicación ¿Cómo se puede deﬁnir una ley por correcta, incorrecta o insoportable- mente incorrecta o injusta según Radbruch?
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 191 — similitud 0.1202
+
+**Detalle de puntaje:** tfidf=0.0902; bonus=0.0300
+
+> Mientras que para el iusnaturalismo clásico debería tener valor de orden sólo lo que es justo, para la doctrina opuesta es justo sólo lo que es ordenado y por el hecho de ser ordenado.694 691. Idem.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 353 — similitud 0.1019
+
+**Detalle de puntaje:** tfidf=0.0719; bonus=0.0300
+
+> IV. WoLr El último personaje de este iusnaturalismo racionalista típico es Cris- tian WoLr (1679-1754), autor de enorme fecundidad y que gozó en su tiempo de gran predicamento. Es, con Tomasio, un representante genuino del espíritu de la Ilustración y, al igual que PuFFENDORF y el propio Tomas1o, ejerció la docencia universitaria.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 222 — similitud 0.0899
+
+**Detalle de puntaje:** tfidf=0.0499; bonus=0.0400
+
+> Sin embargo, el establecimien- to del sentido y contenido de ese mínimo moral común y com- partido constituye una tarea más o menos laboriosa y exigente desde el punto de vista intelectual, que está en función, entre otras cosas, del tipo de sociedad en la que nos tengamos que poner manos a la obra a la hora de identificar ese mínimo; está condicionada por el pluralismo ético que caracteriza de mane- ra creciente el entorno social en el que nos desenvolvemos y que se vincula, al menos en su versión fuerte, en primer lugar, a la afirmación de la existencia de una pluralidad de bienes o valores fundamentales y, en segundo lugar, a la tesis del carácter irreductible de esos bienes o valores a...
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 04. positivismo juridico
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.3332
+**Similitud promedio:** 0.1639
+**Fuentes:** Filosofia del derechorgilio Ruiz Rodriguez.pdf; Filosofía del Derechoegorio Rojas González.pdf; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf; Manual práctico de fiParedes Lovón, Javier.pdf; Razón y voluntad en eoig, Francisco Javier.pdf; Teoría pura del derecho - Hans Kelsen (1).pdf
+**Ubicaciones:** Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 189; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 198; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 214; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 63; Filosofía del Derechoegorio Rojas González.pdf, p. 20; Filosofía del Derechoegorio Rojas González.pdf, p. 40; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 346; Manual práctico de fiParedes Lovón, Javier.pdf, p. 255; Manual práctico de fiParedes Lovón, Javier.pdf, p. 257; Manual práctico de fiParedes Lovón, Javier.pdf, p. 260; Razón y voluntad en eoig, Francisco Javier.pdf, p. 216; Razón y voluntad en eoig, Francisco Javier.pdf, p. 228; Razón y voluntad en eoig, Francisco Javier.pdf, p. 229; Razón y voluntad en eoig, Francisco Javier.pdf, p. 230; Razón y voluntad en eoig, Francisco Javier.pdf, p. 268; Razón y voluntad en eoig, Francisco Javier.pdf, p. 52; Razón y voluntad en eoig, Francisco Javier.pdf, p. 68; Razón y voluntad en eoig, Francisco Javier.pdf, p. 72; Razón y voluntad en eoig, Francisco Javier.pdf, p. 76; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 165; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 236; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 58
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 52 — similitud 0.3332
+
+**Detalle de puntaje:** tfidf=0.2932; bonus=0.0400
+
+> 43 KELSEN, H., Teoría Pura del Derecho, cit., p. 315.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 63 — similitud 0.2793
+
+**Detalle de puntaje:** tfidf=0.2393; bonus=0.0400
+
+> Si ignoramos este elemento no podemos diferenciar el orden jurídico de otros órdenes sociales.164 Eduardo G. Máynez (1908-1993), uno de los grandes representantes del positivismo jurídico en México, para el tema que nos ocupa toma como pun- to de referencia la definición de orden que ha establecido en el primer capí- tulo de su Filosofía del derecho, así como las relaciones y diferencias entre la moral y el derecho, que tienen raigambre en la tradición positivista a partir de Kant hasta Kelsen. Frente a algunos autores para quienes el orden jurídico es un simple conjunto de normas, afirma que el derecho es un orden concreto 160.
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 40 — similitud 0.2716
+
+**Detalle de puntaje:** tfidf=0.2316; bonus=0.0400
+
+> Dicha idea, en últimas, viene a colegirse de su escepticis- mo ético, en cuanto, si se rechaza la posibilidad cognoscitiva de cualquier deber distinto al deber jurídico, a lo máximo que se puede llegar es a una identificación del Derecho con el Estado en el plano normativo, pues “los dos conceptos límites del positivismo y el Estado de Derecho son summa potestas, o soberanía, y norma fundamental”. Estos conceptos tienen como función cerrar el sistema a conside- raciones extrajurídicas.59 55 Bonorio, Filosofía del Derecho y Decisión Judicial, 40.
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 20 — similitud 0.2212
+
+**Detalle de puntaje:** tfidf=0.1812; bonus=0.0400
+
+> la práctica del derecho puede oscilar en dos extremos: por un lado, puede ser cínica, en donde lo que importa es la ley, lo que impera es la estabilidad y estructura de las normas, los formalismos y la integridad del sistema jurídico como tal, estará enmar- cada en el positivismo jurídico, ya sea ideológico, teórico o metodológico; y otra es la realista, en donde se “tiene una pretensión idealista como condición ontológica de la existencia del derecho”.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 236 — similitud 0.2108
+
+**Detalle de puntaje:** tfidf=0.1708; bonus=0.0400
+
+> Ya que el derecho po- sitivo sólo queda justificado -como ya se señalara '32_ mediante una nor- ma, o un orden normativo, conforme al cual el derecho positivo, por su contenido, puede corresponder o no corresponder, es decir, ser no sólo justo, sino también injusto. Pero la norma fundamental que la teoría pura del derecho establece como condición de la validez objetiva del derecho, sirve de fundamento a la validez de todo orden jurídico positivo, es decir, del orden coactivo, eficaz en general, instaurado mediante actos humanos.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 229 — similitud 0.1943
+
+**Detalle de puntaje:** tfidf=0.1543; bonus=0.0400
+
+> Un concepto material de Estado de Derecho presentarse como un tipo de formalismo ético, y por tanto, le son aplicables las mismas críticas 406. Y respecto al positivismo metodológico, que por otra parte es posiblemente el mejor positivismo que se puede mantener en la actualidad o, en otros términos, el positivismo a favor del cual concurren mejores razones, pienso que sus tesis centrales referidas al origen social de las fuentes del Derecho y a la posibilidad —y conveniencia— de una definición del concepto de Derecho en términos moral- mente neutrales, pueden seguir siendo defendidas.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 257 — similitud 0.1843
+
+**Detalle de puntaje:** tfidf=0.1443; bonus=0.0400
+
+> En Alemania, los Tribunales de Justicia aplicaron la Fórmula de Radbruch para resolver los problemas jurídicos que surgieron después de la II Guerra Mundial y de la caída del Muro de Berlín en 1990. a. Deﬁnición La llamada Fórmula de Radbruch proviene del jurista Gustav Radbruch que en su ensayo Arbitrariedad legal y Derecho Supralegal (1946) plantea el si- guiente principio: Se puede negar la validez legal de las leyes tremendamente injustas.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 260 — similitud 0.1785
+
+**Detalle de puntaje:** tfidf=0.1485; bonus=0.0300
+
+> BLOQUE II FILOSOFÍA Este método epistemológicamente negativo (no veriﬁcar) es más fácil de realizar y menos objetable que el método positivo opuesto: «conociendo lo que no es, se acerca más a aquello a lo que sí es». Fórmula de Radbruch negación de la validez de la ley extremadamente injusta. Principio de insoportabilidad Principio de negación Libera al juez de su compromiso con la ley positiva, si la considera extremadamente injusta.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 255 — similitud 0.1764
+
+**Detalle de puntaje:** tfidf=0.1564; bonus=0.0200
+
+> I. GUSTAV RADBRUCH Gustav Radbruch (1878-1949) jurista alemán, pasa a la historia por la llamada Fórmula de Radbruch que plantea en su ensayo Arbitrariedad legal y Derecho Supralegal (1946). En el presente capítulo: 1.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 68 — similitud 0.1561
+
+**Detalle de puntaje:** tfidf=0.1161; bonus=0.0400
+
+> 90 Al mismo tiempo, esa existencia exterior al Ordenamiento obliga a ser cuidadoso a la hora de marcar los paralelismos entre el Hecho Fundante Bási- co y la regla de reconocimiento hartiana que, en este caso sí, pertenece al Ordenamiento y forma parte del mismo. La regla de reconocimiento lleva a cabo funciones de identificación de los elementos del sistema jurídico, mien- tras que la función del Hecho Fundante Básico va más allá, desde el momento en que también llega a asegurar la eficacia del sistema en su conjunto.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 214 — similitud 0.1553
+
+**Detalle de puntaje:** tfidf=0.1153; bonus=0.0400
+
+> En el libro La decisión judicial, El debate Hart—Dworkin, refiriéndose a su libro El concepto de derecho, Hart señala, que en él argumenta que aun cuan- do puede haber muchas y diversas conexiones contingentes entre derecho y moral, no hay conexiones conceptuales necesarias entre el contenido del derecho y la moral; por ende, las disposiciones moralmente inicuas pueden ser válidas como reglas o principios jurídicos. Un aspecto de esta forma de separación entre derecho y moral, es que puede haber derechos y deberes jurídicos que no poseen ninguna justificación o fuerza moral.774 Las relaciones entre el derecho y la moral, existen, sin lugar a dudas.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 72 — similitud 0.1481
+
+**Detalle de puntaje:** tfidf=0.1081; bonus=0.0400
+
+> 2.1. La tesis de la separación conceptual entre el Derecho y la moral correcta El punto de partida y, al mismo tiempo, la posición que aquí se entiende como aceptable en relación con el problema de la relación entre el Derecho y la moral se identifica con la tesis de la separación conceptual entre el Derecho y la moral, tal y como ha sido defendida por Hart.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 228 — similitud 0.1444
+
+**Detalle de puntaje:** tfidf=0.1144; bonus=0.0300
+
+> 75 y ss.; ID., «Constitu- cionalización y neoconstitucionalismo», en COMANDUCCI, P., AHUMADA, M. A., GONZÁLEZ LAGIER, D., Positivismo jurídico y neoconstitucionalismo, Fun- dación Coloquio Jurídico Europeo, Madrid, 2009, pp. 85 y ss.; GARCÍA FIGUE- ROA, A., «La teoría del Derecho en tiempos del constitucionalismo», en CAR- BONELL, M., (ed.), Neoconstitucionalismo(s), pp.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 165 — similitud 0.1443
+
+**Detalle de puntaje:** tfidf=0.1343; bonus=0.0100
+
+> 160 HANS KELSEN legislativo facultado por el orden jurídico para producir normas juridicas, y que las funciones de los órganos judiciales y administrativos, facultados por el orden juridico para producir, en aplicación de norma generales, normas jurídicas indi- viduales. En todos estos casos tenemos, como en el caso de la denominada capacid¡¡d juridica, una faoultad para producir normas juridicas; en todos estos casos, el orden juridico otorga un poder juridico a determinados individuos.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 346 — similitud 0.1326
+
+**Detalle de puntaje:** tfidf=0.0926; bonus=0.0400
+
+> Como una consecuencia más de la ruptura entre lo moral y lo teológico (porque la ética se construye también por la razón mediante conclusiones obtenidas lógicamente a partir de unos principios racionales), se produce en los autores del ¡usnaturalismo racionalista una separación entre derecho y moral que, en general, consiste en atribuir al derecho la regulación de los ac- 360
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 76 — similitud 0.1325
+
+**Detalle de puntaje:** tfidf=0.0925; bonus=0.0400
+
+> Francisco Javier Ansuátegui Roig ante la realidad del Derecho) es aquella que afirma la no nece- saria conexión conceptual entre el Derecho y la moral conside- rada correcta. Robert Alexy ha diferenciado dos versiones de la tesis de la conexión necesaria entre el Derecho y la moral 100. Así, la versión débil, señala que existe una relación necesaria entre el Derecho y alguna moral.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 228 — similitud 0.1286
+
+**Detalle de puntaje:** tfidf=0.1186; bonus=0.0100
+
+> Francisco Javier Ansuátegui Roig momento que el constitucionalismo no presenta consecuencias similares en relación con cada uno de los «positivismos» carac- terizados en su momento por Norberto Bobbio: positivismo teórico, positivismo metodológico y positivismo ideológico. En relación con el positivismo teórico, qué duda cabe de que el modelo de Ordenamiento jurídico presentado por el constitu- cionalismo somete a revisión, y con razón, alguna de sus afir- maciones básicas 405.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 198 — similitud 0.1217
+
+**Detalle de puntaje:** tfidf=0.0817; bonus=0.0400
+
+> De igual manera, partiendo de la clásica distinción bobbiana entre po- sitivismo teórico, metodológico e ideológico —según Rodolfo Luis Vigo—, sabido es que este último afirma que el derecho positivo por el solo hecho de serlo, es válido y debe ser obedecido incondicionalmente cualquiera que sea su contenido;716 frente a lo cual la conclusión del profesor de Oxford es terminante: “he dicho que cualquier sociedad que pretenda reconocer los derechos, debe abandonar la idea de un deber general de obedecer la ley que sea válido en todos los casos”.717 Idea en la que está de acuerdo Hart al seña- lar que “la obligación moral de obedecer el derecho, puede ser desplazada en casos particulares por...
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 216 — similitud 0.1192
+
+**Detalle de puntaje:** tfidf=0.1092; bonus=0.0100
+
+> El positivismo jurídico, y más específicamente el positivismo metodológico, supone la afir- mación de la irrelevancia del punto de vista moral como ele- mento determinante del reconocimiento jurídico del mismo. Así, la presencia de puntos de vista morales en el sistema no niega la validez de la aproximación positivista, desde el momento en que precisamente ésta propone que aquellos no sean tomados en consideración a la hora de la identificación y análisis del Derecho 390.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 58 — similitud 0.1166
+
+**Detalle de puntaje:** tfidf=0.1066; bonus=0.0100
+
+> Puesto que el recurso a la fuerza física -esto es, la ejecución de un acto coactivo- está en principio prohibida, en la medida en que no esté positivamente permitida a determinados hombres, en que determinados hombres no estén facultados para ello. Puesto que un orden juridico, oomo todo sisterna social normativo, sólo pucae obligar a muy especificas acciones y omisiones, jamás puede el hombre, en la totalidad de su existencia, en el conjunto de sus actos externos e internos, en sus ,acciones, sus voliciones, sus pensamientos y sentimientos, verse limitado en su libertad por un orden juridico. El orden juridico puede limitar en más o en ., Cfr. infr., p.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 189 — similitud 0.1006
+
+**Detalle de puntaje:** tfidf=0.0906; bonus=0.0100
+
+> Si la Edad Media fue una época en la que la totalidad de la vida estaba permeada por la religión, al grado que no existía una sola ac- tividad que no tuviera una coloración ultramundana, el positivismo creó un ambiente radicalmente antimedieval en donde ninguna cuestión religiosa te- nía cabida ni podía legitimarse.684 Conclusión lógica: si la ciencia era el único conocimiento válido, sólo los hechos empíricos serían objeto de culaquier co- nocimiento posible.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 228 — similitud 0.0986
+
+**Detalle de puntaje:** tfidf=0.0886; bonus=0.0100
+
+> 405 Se ha señalado a este respecto que en realidad la auténtica oposición es la que existe entre constitucionalismo y positivismo teórico, desde el momento en que en ambos casos se están proponiendo modelos o tipos con- cretos de Derecho, cosa que no ocurre ni en el caso del positivismo metodoló- gico ni en el del positivismo ideológico. Vid.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 268 — similitud 0.0963
+
+**Detalle de puntaje:** tfidf=0.0863; bonus=0.0100
+
+> Aunque la opción metodológica que se ha asumido en esta investigación no aconseja afrontar en este momento con pro- fundidad la cuestión de las consecuencias teóricas que el cons- titucionalismo en general, y Zagrebelsky en particular, extraen de la configuración del Ordenamiento en el Estado constitucio- nal, sí cabe recordar aquí que se defiende una reformulación de la comprensión del Derecho defendida por el positivismo jurí- dico.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 230 — similitud 0.0890
+
+**Detalle de puntaje:** tfidf=0.0790; bonus=0.0100
+
+> Francisco Javier Ansuátegui Roig punto los problemas que el constitucionalismo le presenta al positivismo metodológico son ciertamente falsos o ficticios y, en todo caso, novedosos. Ciertamente, en realidad, no es el constitucionalismo el que reta al positivismo, sino más bien el hecho de que el Derecho mismo es un orden normativo de las conductas humanas que implica criterios de valoración moral de las mismas.
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 05. escepticismo juridico
+
+**Calidad estimada:** media
+**Mejor similitud:** 0.1841
+**Similitud promedio:** 0.1052
+**Fuentes:** Filosofia del derechorgilio Ruiz Rodriguez.pdf; Filosofía del Derechoegorio Rojas González.pdf; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf; Manual práctico de fiParedes Lovón, Javier.pdf; Razón y voluntad en eoig, Francisco Javier.pdf; Teoría pura del derecho - Hans Kelsen (1).pdf
+**Ubicaciones:** Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 141; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 40; Filosofía del Derechoegorio Rojas González.pdf, p. 29; Filosofía del Derechoegorio Rojas González.pdf, p. 35; Filosofía del Derechoegorio Rojas González.pdf, p. 55; Filosofía del Derechoegorio Rojas González.pdf, p. 65; Filosofía del Derechoegorio Rojas González.pdf, p. 67; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 125; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 132; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 185; Manual práctico de fiParedes Lovón, Javier.pdf, p. 282; Manual práctico de fiParedes Lovón, Javier.pdf, p. 287; Razón y voluntad en eoig, Francisco Javier.pdf, p. 160; Razón y voluntad en eoig, Francisco Javier.pdf, p. 166; Razón y voluntad en eoig, Francisco Javier.pdf, p. 288; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 107; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 165; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 182; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 228; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 25; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 367; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 376; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 56; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 57; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 58; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 99
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 55 — similitud 0.1841
+
+**Detalle de puntaje:** tfidf=0.1441; bonus=0.0400
+
+> Es allí, precisamente, en donde se encuentran las diferencias entre los diversos sistema jurídicos.93 Como Aftalión (citado por Hernández) lo explica, pese a que todos suponen que 91 Positivistas jurídicos como Hart no dudan en aceptar que la textura abierta del Derecho significa que hay, por cierto, áreas de conducta donde mucho debe dejarse para que sea desarrollado por los tribunales, o por los funcionarios que procuran hallar un compromiso, a la luz de las circunstancias, entre los intereses en conflicto, cuyo peso varía de caso a caso. H.L.A.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 287 — similitud 0.1523
+
+**Detalle de puntaje:** tfidf=0.1223; bonus=0.0300
+
+> 1. ¿Es el Derecho un sistema de normas? En su obra ¿Es el Derecho un sistema de normas? (1969)58 Dworkin critica el modelo de Hart, según el cual en la construcción de un orden jurídico, solo tiene en cuenta las normas y deja sin explicar otros componentes del derecho, como los valores morales y principios generales. Explica: El derecho no se debe ni se puede separar de la moral A diferencia de Hart, plantea Dworkin que el derecho no puede separar lo legal de la moral.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 282 — similitud 0.1501
+
+**Detalle de puntaje:** tfidf=0.1101; bonus=0.0400
+
+> En su obra principal El Concepto del derecho (1961) nos da una respuesta a la pregunta ¿qué es el derecho?. Parte de las siguientes premisas: ◾ el derecho es un sistema de reglas ◾ el derecho se forma de reglas primarias y secundarias ◾ la discrecionalidad judicial es una fuente del derecho El derecho: reglas primarias y secundarias Hart parte del concepto «regla» que llega a convertirse en ley. Construye un sistema legal asentado en los pilares de reglas primarias y reglas secundarias.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 132 — similitud 0.1363
+
+**Detalle de puntaje:** tfidf=0.0963; bonus=0.0400
+
+> Así, mie" tras que el racionalismo legalista del siglo xvi y el positivismo Jurídico estatista de los siglos x1x y M exaltan la ley como la manifestación directa de la razón jurídica y la expresión justa de la voluntad del pueblo soberano constituido en Estado, la escuela histórica del Derecho y los diversos tradicio- nalismos colocan en lugar preferente a la costumbre y a la doctrina de los jurisconsultos y la escuell del Derecho libre, junto con el realismo jurídico norteamericano, proclama la primacia de la jurispru- dencia, en cuanto que ésta es la realización del Derecho vivo y la encarnación más fiel de la justició- 134 Y
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 125 — similitud 0.1321
+
+**Detalle de puntaje:** tfidf=0.0921; bonus=0.0400
+
+> En realidad, entre la actividad creadora y la actividad aplicadora del Derecho, no se da ni una separación absoluta ni una absoluta unificación, sino más bien una cierta continuidad matizada por la presencia de unas diferencias cualitativas que radican en la distinta función social y en el diverso ámbito de la realidad jurídica en que actúan 5. 3 Por ejemplo, por la Escuela o movimiento del Derecho Libre, por el Institucionalismo, por la Jurisprudencia Sociológica O por el Realismo Jurídico norteamericano.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 185 — similitud 0.1299
+
+**Detalle de puntaje:** tfidf=0.0999; bonus=0.0300
+
+> Se ha afirmado también que el Derecho, en su sentido real y propio, no es más que la decisión final de aquellos órganos o sujetos jurídicos que intervienen en su proceso de realización, ya sea en el momento inicial de su concreción general (tesis de C. ScumiTT), ya sea en el momento de su creación definitiva (tesis tangencial del movimiento o escuela del Derecho libre y te- sis básica del realismo jurídico norteamericano).
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 25 — similitud 0.1257
+
+**Detalle de puntaje:** tfidf=0.0857; bonus=0.0400
+
+> Si la existenda específica de la norma es designada como su "validez", recibe expresión así la modalidad particular en que se presenta, a diferencia de la realidad de los hechos naturales. La "existencia" de una norma positiva, su validez, es diferente de la existencia del acto de voluntad cuyo sentido objetivo ella es. La norma puede valer aun cuando el acto de voluntad, cuyo sentido constituye, haya dejado de existir.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 367 — similitud 0.1229
+
+**Detalle de puntaje:** tfidf=0.0829; bonus=0.0400
+
+> En relación con ellas, la realización del acto jurídico dentro del marco de la norma juridica aplicable es libre, es decir, librado a la libre discrecionalidad del órgano llamado a efectuar el acto, como si el derecho positivo mismo delegara en ciertas normas metajuddicas, como la moral, la justicia, etcétera; pero de ese modo esas normas se trausformarían en normas jurídicas positivas.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 376 — similitud 0.1207
+
+**Detalle de puntaje:** tfidf=0.0807; bonus=0.0400
+
+> La esencia de la interpretación. Interpretación auténtica y no auténtica 349 a) Indeterminación relativa del acto de aplicación de derecho 349 b) Indeterminación intencional del acto de aplicaci6n de derecho 350 c) Indeterminación no intencional del acto de aplicación de derecho 350 d) El derecho aplicable como un marco dentro del cual hay varias posibi- lidades de aplicación 351 e) Las llamados métodos de interpretación 352
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 160 — similitud 0.1192
+
+**Detalle de puntaje:** tfidf=0.0792; bonus=0.0400
+
+> El contexto normativo dentro del cual se ejerce la discrecionalidad es inexistente en el caso de la arbitrariedad, que se caracteriza precisamente por la nega- ción del mismo. Como señala Dworkin, «el concepto de discre- ción sólo es adecuado en un único tipo de contexto; cuando alguien está en general encargado de tomar decisiones sujetas a las normas establecidas por una autoridad determinada» 274. Como sabemos, los operadores jurídicos jurídicos actúan discrecionalmente como consecuencia de la vaguedad congéni- ta al Ordenamiento jurídico, y de su textura abierta.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 367 — similitud 0.1173
+
+**Detalle de puntaje:** tfidf=0.0773; bonus=0.0400
+
+> Es por ese acto volitivo que la interpretación del derecho efectuada por el óogano de aplicación se distingue de toda otra interpretación, en especial, de la interpretación del derecho por la cienda jurídica. . La interpretación que efectúa el órgano de aplicación del derecho es siempre auténtica.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 166 — similitud 0.1169
+
+**Detalle de puntaje:** tfidf=0.0769; bonus=0.0400
+
+> Entonces, con- cluye Endicott, la vaguedad supone un déficit para el imperio de la ley 286. En realidad, estamos ante el problema planteado por la pre- sencia de ciertos rasgos (vaguedad, textura abierta) en los Ordenamientos que pueden llegar a dificultar la consecución del ideal de certeza en el que se asienta el imperio de la ley. Pero, posiblemente, en última instancia la certeza completa no sea sino eso, un ideal.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 107 — similitud 0.1149
+
+**Detalle de puntaje:** tfidf=0.0949; bonus=0.0200
+
+> Estas normas generales constituyen, empero, la parte mayor del derecho que es objeto de la ciencia jurídica. Pero aun en la medida en que la predicción sea posible, ena no es tarea de un" ciencia del derecho que s610 puede describir las normas jurídicas individuales producidas por los tribunales, y las normas juridicas generales producidas por los 6rganos legisladores y la costumbre, una vez que han adquirido validez. Las predicciones sobre una futura sentencia judicial puede ser asunto propio de un abogado que ejerce su profesi6n y asesora a sus clientes.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 165 — similitud 0.1111
+
+**Detalle de puntaje:** tfidf=0.1011; bonus=0.0100
+
+> 160 HANS KELSEN legislativo facultado por el orden jurídico para producir normas juridicas, y que las funciones de los órganos judiciales y administrativos, facultados por el orden juridico para producir, en aplicación de norma generales, normas jurídicas indi- viduales. En todos estos casos tenemos, como en el caso de la denominada capacid¡¡d juridica, una faoultad para producir normas juridicas; en todos estos casos, el orden juridico otorga un poder juridico a determinados individuos.
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 29 — similitud 0.1108
+
+**Detalle de puntaje:** tfidf=0.0908; bonus=0.0200
+
+> La Moderna Respuesta del Realismo Jurídico, de Javier Hervada, (Bogotá: Temis, 2005), XI. 35 Carlos Ignacio Massini, Sobre el Realismo Jurídico.
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 67 — similitud 0.1032
+
+**Detalle de puntaje:** tfidf=0.0632; bonus=0.0400
+
+> Así mismo, se define a través del material prescriptivo aportado por los principios generales del Derecho Natural Clásico y del objetivo, primario e irrenunciable, a que abocan estos principios en el Derecho: la justicia del juris- ta.119 Porque, para el Realismo Jurídico, “el Derecho es algo diferente a un acto de razón u obra de conciencia y que se encuentra en una realidad distinta de lo meramente material”,120 esa realidad de índole metafísica es la realidad del Derecho Natural que, a su vez, es una expresión de una concepción trascendente: la realidad metafísica total, el ser.
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 65 — similitud 0.0984
+
+**Detalle de puntaje:** tfidf=0.0684; bonus=0.0300
+
+> De este obstáculo se han servido posturas contrarias al Realismo Jurídico Clásico, como las de Kelsen y Ross, para considerar que el reclamo de justicia no es más que una respuesta emocional frente a una situación desfavorable a un interés que, como tal, es relativo, pues es apenas una percep- ción subjetiva de valores.113 Advierte Ross, por ejemplo, que cuando alguien afir- ma que una norma jurídica es injusta, no expresa ninguna cualidad discernible en 113 Hans Kelsen, ¿Qué es la justicia? (México: Fontanamara, 1996), 17-27.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 40 — similitud 0.0939
+
+**Detalle de puntaje:** tfidf=0.0539; bonus=0.0400
+
+> Fundamento del derecho Hemos dicho líneas arriba que el derecho es una necesidad que brota de la propia naturaleza del hombre: perfecta en el ser, mas no en el actuar y en el obrar. Del Vecchio, después de analizar con todo pormenor ciertos sistemas en torno al fundamento del derecho, señala que son insuficientes los inten- tos de negar este fundamento, como sostiene el escepticismo, o de fundar el derecho sobre hechos externos, como lo hacen el realismo empírico y el historicismo, o sobre el mandato de un ser trascendente, actitud propia del teologismo, o de reducir el derecho a la utilidad, rasgo peculiar del utilitaris- mo.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 58 — similitud 0.0902
+
+**Detalle de puntaje:** tfidf=0.0802; bonus=0.0100
+
+> Puesto que el recurso a la fuerza física -esto es, la ejecución de un acto coactivo- está en principio prohibida, en la medida en que no esté positivamente permitida a determinados hombres, en que determinados hombres no estén facultados para ello. Puesto que un orden juridico, oomo todo sisterna social normativo, sólo pucae obligar a muy especificas acciones y omisiones, jamás puede el hombre, en la totalidad de su existencia, en el conjunto de sus actos externos e internos, en sus ,acciones, sus voliciones, sus pensamientos y sentimientos, verse limitado en su libertad por un orden juridico. El orden juridico puede limitar en más o en ., Cfr. infr., p.
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 35 — similitud 0.0833
+
+**Detalle de puntaje:** tfidf=0.0733; bonus=0.0100
+
+> El escepticismo kantiano declaró que “la cosa en sí”, en su esencia, es incognoscible y, por tanto, “es incognoscible un orden moral como objeto de 45 Latorre, Introducción al Derecho, 94. 46 Pablo Bonorio, Filosofía del Derecho y Decisión Judicial.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 228 — similitud 0.0783
+
+**Detalle de puntaje:** tfidf=0.0583; bonus=0.0200
+
+> Puesto que el acto mediante el cual se ins· taura una norma jurldica positiva es -al igual que la eficacia de la nonna juddica- un hecho real. Una teoda positivista del derecho se encuentra ante la tarea de buscar entre dos extremos, ambos insostenibles, la vía media correcta. Un extremo es la tesis de que entre la validez, como lo debido, y la eficacia, como un hecho real, no existe relación alguna; de que la validez del derecho es enteramente independiente de su eficacia.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 141 — similitud 0.0771
+
+**Detalle de puntaje:** tfidf=0.0571; bonus=0.0200
+
+> Aristóteles ya lo había dicho cuando escribió que “es particular propiedad del hombre, que lo distingue de los demás animales, el ser el único que tiene la percepción del bien y del mal, de lo justo y lo injusto y de las demás cualidades morales”.482 Menos aún, tiene razón Alf Ross al escribir que “invocar la justicia es como dar un golpe sobre la mesa: una expresión emocional que hace de la propia exigen- cia un postulado absoluto”;483 solamente una persona muy avezada podría pensar que los juicios que emita tienen esta categoría y este peso.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 288 — similitud 0.0762
+
+**Detalle de puntaje:** tfidf=0.0562; bonus=0.0200
+
+> J., La indeterminación del Derecho y la interpretación de la Constitución, Centro de Estudios Políticos y Constitucionales, Madrid, 1997, p. 165.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 56 — similitud 0.0610
+
+**Detalle de puntaje:** tfidf=0.0510; bonus=0.0100
+
+> Y ese acto coactivo, como sanción (en el sentido de consecuencia de una ilicitud), s610 puede distinguirse de otros actos coactivos estatuidos por el orden juridico, en cuanto el hecho condicionante de esos actos coactivos es una acci6n u omisión determinada por el orden juridico, comprobada jurídicamente, y socialmente indeseada, mientras que los actos coactivos que no constituyen sanciones en el sentido de consecuencias de una ilicitud, están condicionados por otros hechos. 3.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 107 — similitud 0.0606
+
+**Detalle de puntaje:** tfidf=0.0506; bonus=0.0100
+
+> Aun cuando un orden juridico, que en términos generales es eficaz, pueda ser descrito en oraciones que, como las leyes naturales, enun- cien que bajo ciertas condiciones, efectivamente se producen determinadas consecuencias; que, cuando acontece algo, que según ese orden juridico es cali- ficado por los 6rganos de aplicaci6n del derecho como un delito, se produce la consecuencia sancionatoria determinada por el orden jurídico, con todo no es la ciencia del derecho la que aspira a esa descripci6n. Pues mediante los enunciados jurídicos que formula pretende mostrar, no las relaciones causales que se dan entre los elementos de su objeto, sino las relaciones imputativas que exhiba.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 99 — similitud 0.0603
+
+**Detalle de puntaje:** tfidf=0.0503; bonus=0.0100
+
+> No constituye enunciado alguno, sino el sentido de un acto madiante el cual se prescribe algo, y al hacerlo justamente se establece el enlace entre hechos, la relaci6n funcio- nal que será descrita por el enunciado jurídico, como ley juridica. Debe advertirse en ello que el enunciado juridico que aparece como ley juridica tiene, como la ley natural, un carácter general, es decir, describe las nonnas generales del orden juridico y las relaciones que a través de ellas se constituyen.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 182 — similitud 0.0601
+
+**Detalle de puntaje:** tfidf=0.0501; bonus=0.0100
+
+> Ello sucede especialmente cuando se trata de la relación en que -según la forma usual de exponerlo- el Estado, cama sujeto de un negocio jurídico, sea como com- prador o vendedor, se enfrenta a una persona privada; cuando el acto juridico de uno de los dos individuos que actúan en el negocio jurídico, así como la obligación O el derecho reflejo producido por ese negocio jurídico, es atribui- do, por cualquier fundamento, al Estado como persona jurídica.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 57 — similitud 0.0596
+
+**Detalle de puntaje:** tfidf=0.0496; bonus=0.0100
+
+> La sanción, en este sentido amplio, no es consecuencia necesariamente de una ilicitud, puesto que puede precederla. Por fin, cabe extender el concepto de sanción a todos los actos coactivos estatuidos por el orden juridico si con ello no quiere expre- sarse más sino que el orden jurídico reacciona can tal acto contra una situación social indeseada, expresando mediante esta reacción la indeseabilidad de la situa- ción. Efectivamente, ésta sería una nota común a todos los actos coactivos estatuidos por el orden juridico.
+
+**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 8 referencia(s) de baja similitud que podrían introducir ruido.
+
+## Ficha 06. jerarquia normativa
+
+**Calidad estimada:** media
+**Mejor similitud:** 0.1754
+**Similitud promedio:** 0.1104
+**Fuentes:** Filosofía del Derechoegorio Rojas González.pdf; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf; Manual práctico de fiParedes Lovón, Javier.pdf; Razón y voluntad en eoig, Francisco Javier.pdf; Teoría pura del derecho - Hans Kelsen (1).pdf
+**Ubicaciones:** Filosofía del Derechoegorio Rojas González.pdf, p. 20; Filosofía del Derechoegorio Rojas González.pdf, p. 26; Filosofía del Derechoegorio Rojas González.pdf, p. 52; Filosofía del Derechoegorio Rojas González.pdf, p. 55; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 114; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 125; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 132; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 147; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 152; Manual práctico de fiParedes Lovón, Javier.pdf, p. 386; Manual práctico de fiParedes Lovón, Javier.pdf, p. 40; Razón y voluntad en eoig, Francisco Javier.pdf, p. 113; Razón y voluntad en eoig, Francisco Javier.pdf, p. 114; Razón y voluntad en eoig, Francisco Javier.pdf, p. 206; Razón y voluntad en eoig, Francisco Javier.pdf, p. 255; Razón y voluntad en eoig, Francisco Javier.pdf, p. 267; Razón y voluntad en eoig, Francisco Javier.pdf, p. 280; Razón y voluntad en eoig, Francisco Javier.pdf, p. 286; Razón y voluntad en eoig, Francisco Javier.pdf, p. 45; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 108; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 223; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 240; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 242; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 255; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 295; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 344; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 352
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 255 — similitud 0.1754
+
+**Detalle de puntaje:** tfidf=0.1454; bonus=0.0300
+
+> DINÁMICA JURÍDICA 245 ción de una norma inferior fundándose en una norma superior, o ejecución del acto coactivo estatuido en una norma. Como se indicara ya, la producción de una nOlma inferior a través de una superior, puede estar determinada en dos direcciones.
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 26 — similitud 0.1392
+
+**Detalle de puntaje:** tfidf=0.0992; bonus=0.0400
+
+> 3 (Bogotá: Universidad Católica de Colombia, 2017), 53-54. En lo que concierne a la validez, como se recordará, el modelo kelseniano supone una jerarquía de validación normativa que debe terminar en una “Norma Fundamental”. Sin embargo, afirma Nakhnikian, la validez que Kelsen, como jurista analítico, asigna a la norma fundamental es la de una hipótesis o princi- pio unificador –ficción– que no es verdadero ni falso, sino útil o inútil.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 125 — similitud 0.1376
+
+**Detalle de puntaje:** tfidf=0.0976; bonus=0.0400
+
+> KELsEN, que concibe el orden jurí- dico como una estructura de niveles o escalones unidos entre sí por un nexo de derivación progresiva. Según esta teoría, los diversos elementos integran- tes de un ordenamiento jurídico constituyen una unidad dinámica, en cuanto que están unidos por una relación de producción o derivación; y es precisa- mente esa relación la que permite referir todas las normas vigentes a un úni- co centro jurídico: la norma fundamental.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 344 — similitud 0.1324
+
+**Detalle de puntaje:** tfidf=0.0924; bonus=0.0400
+
+> También la llamada sentencia contra legem es una norma válida, guardando validez en tanto y en cuanto no sea revocada por otra sentencia. Que la "contrariedad normativa" de una norma no siguifica un conflicto entre una norma inferior y una norma superior, sino sólo la anulabilidad de la norma inferior, o la punibilidad del órgano responsable, es cosa que ya fue puesta en claro anteriormente. Debe advertirse especialmente que el establecimiento de una norma "contraria a norma" puede ser un hecho delictivo al cual el orden jurídico enlace sus actos coactivos específicos como sanciones.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 280 — similitud 0.1285
+
+**Detalle de puntaje:** tfidf=0.0885; bonus=0.0400
+
+> En efecto, ya se han supe- rado aquellas épocas —identificadas con las del Estado legisla- tivo de Derecho— en las que el texto constitucional era enten- dido como una mera declaración de principios, sin carácter vinculante y directamente imperativo, respecto a la cual, por tanto, el legislador tenía las manos libres gozando de un amplio margen de independencia. Por el contrario, hoy la Constitución es la norma superior del sistema jurídico que, a partir de la aplicación del principio de jerarquía normativa, se caracteriza por ser directamente aplicable y vinculante respecto a todos.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 40 — similitud 0.1254
+
+**Detalle de puntaje:** tfidf=0.0854; bonus=0.0400
+
+> Leyes que regulen el tránsito. LA LEY como Reglamento de tránsito. DISPOSICIONES DE LA ADMINISTRACIÓN permiten establecer sanciones por estacionamiento en zona prohibida.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 240 — similitud 0.1244
+
+**Detalle de puntaje:** tfidf=0.0844; bonus=0.0400
+
+> La norma que regula la produc- ción es una norma superior, mientras que la producida conforme a esa deter- minación es la norma inferior. El orden jurídico no es un sistema de normas de derecho situadas en un mismo plano, ordenadas equivalentemente, sino una construcción escalonada de diversos estratos de normas jurídicas.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 242 — similitud 0.1244
+
+**Detalle de puntaje:** tfidf=0.0844; bonus=0.0400
+
+> La norma que regula la produc- ción es una norma superior, mientras que la producida conforme a esa deter- minación es la norma inferior. El orden jurídico no es un sistema de normas de derecho situadas en un mismo plano, ordenadas equivalentemente, sino una construcción escalonada de diversos estratos de normas jurídicas.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 255 — similitud 0.1213
+
+**Detalle de puntaje:** tfidf=0.0813; bonus=0.0400
+
+> Por el contrario, los sistemas estáticos establecen criterios materiales de pertenencia, identificados con la corres- pondencia que se establece entre el contenido de un enunciado y el de la norma superior del sistema 456. Kelsen afirmaba que los Ordenamientos jurídicos eran sistemas dinámicos, mientras 455 Es justo señalar, en este punto, que, como ha recordado A. PÉREZ LUÑO, si bien la concepción del Derecho de Kelsen ha sido y el objetivo de críticas por parte del constitucionalismo (y no sólo, añado, del constituciona- lismo), su aportación es imprescindible para entender puntos básicos de éste.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 152 — similitud 0.1205
+
+**Detalle de puntaje:** tfidf=0.1105; bonus=0.0100
+
+> Por otra parte, dicho principio parece venir exigido por el carácter dinámico y progresivo del Derecho, pues lo contrario desembocaría en el inmovilismo. 27 Esta es la consecuencia inmediata del principio de jerarquía normativa que todos los orde- namientos jurídicos incorporan en la actualidad: las disposiciones superiores abrogan (=anulan) a las disposiciones inferiores, pero éstas no pueden abrogar a aquéllas. La inferioridad de una dispo- sición jurídica respecto de otra consiste en su menor operatividad normativa.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 45 — similitud 0.1152
+
+**Detalle de puntaje:** tfidf=0.1052; bonus=0.0100
+
+> Dicha superación, que se materializa tanto a través de la supraestatalidad normativa como a través de la infraestatalidad normativa, forma parte del proceso que Pérez Luño ha identificado como «el desborda- miento de las fuentes del Derecho» 26. En todo caso, téngase en cuenta que el Estado, concebido como forma de organización del Poder político típica del mundo moderno, conserva una todavía importante capacidad de decisión en lo que se refiere a la definición y potencialidad de los procesos de infraestatalidad y supraestatalidad normativa.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 206 — similitud 0.1095
+
+**Detalle de puntaje:** tfidf=0.0795; bonus=0.0300
+
+> Francisco Javier Ansuátegui Roig en un escrito anterior a Principia Iuris, había señalado que «la teoría del derecho y de los derechos a la que trato de contribuir tiene, de hecho, como referencia empírica a los ordenamientos jurídicos de las democracias modernas que son, justamente, todos capitalistas» 374. En definitiva, parece que Ferrajoli si bien se propone prescindir de la experiencia jurídica a la hora de explicar que es un derecho fundamental, no logra del todo prescindir de esa experiencia, y en particular de la experiencia constitucional.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 386 — similitud 0.1092
+
+**Detalle de puntaje:** tfidf=0.0792; bonus=0.0300
+
+> BLOQUE III JUSTICIA tración lo más importante es el cumplimiento de los trámites y plazos, y esto es así, porque el cumplimiento del reglamento y protocolo del pro- cedimiento respectivo libera al funcionario de un proceso disciplinario y al acto administrativo de su nulidad. Es decir, estar «pegado a la letra», signiﬁca seguridad jurídica para el funcionario, para el acto en sí y para el solicitante.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 223 — similitud 0.1064
+
+**Detalle de puntaje:** tfidf=0.0664; bonus=0.0400
+
+> Como el órgano norma dar -sea el monarca o el parlamento- está facultado nor- malmente para establecer normas modificables y, por ende, eliminables, el principio ¡ex posterior derogat priori puede admitirse como un principio incluido en ese faculta miento. Este principio también recibe aplicación cuando las normas que se encuentran recíprocamente en conflicto han sido dictadas por dos órganos diferentes; cuando, por ejemplo, la constitución faculta al mOnarca y al parlamento regular el mismo objeto mediante normas generales, o cuando se instauran a la legislación y la costumbre como hechos produc- tores de derecho.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 132 — similitud 0.1057
+
+**Detalle de puntaje:** tfidf=0.0657; bonus=0.0400
+
+> la jerarquía de las «fuentes formales» de Derecho sería intrascendente en la práctica. Por lo demás, parece constituir un dato irrebatible el hecho de que en los distintos momentos históricos y en las diferentes áreas culturales el orden jerárquico de las fuentes formales ha sido diverso, ostentando la pri- macía, ya la costumbre, ya la doctrina jurídica, ya la ley, ya el precedente ju- dicial...
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 20 — similitud 0.1024
+
+**Detalle de puntaje:** tfidf=0.0624; bonus=0.0400
+
+> Existe, también, una tercera po- sibilidad problemática: la visión crítica y democrática del estudio del derecho, en la cual se procura a partir de los problemas que la afectan, dando primacía, en la comu- nidad académica, el uso de herramientas discursivas […] Este modelo es defendido por las escuelas críticas del derecho. [Sin embargo,] desde el positivismo es casi im- posible una crítica al modelo jurídico imperante; desde el positivismo incluyente, es más factible, pero sin salir de los marcos establecidos por el sistema legal para ello, y desde los estudios críticos, los análisis de los casos deben procurar una interpretación 15 En efecto, en el imaginario de muchos de los estudiantes...
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 147 — similitud 0.0973
+
+**Detalle de puntaje:** tfidf=0.0773; bonus=0.0200
+
+> IL. EL PROBLEMA DE LAS CONTRADICCIONES ENTRE NORMAS Los datos que arroja la experiencia diaria parecen avalar la intuición de que los Derechos históricos, es decir, los ordenamientos jurídicos de cada país, constituyen complejos de normas entre las que no existe ni una plena coherencia ni una exacta integración jerárquica. Y esos datos, al desvelar la existencia de contradicciones y falta de conexión, ponen en duda el carácter sistemático de los ordenamientos jurídicos estatales.
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 52 — similitud 0.0970
+
+**Detalle de puntaje:** tfidf=0.0670; bonus=0.0300
+
+> Así, por ejemplo, Bobbio distingue entre fuentes directas e indirectas85; Nino entre fuentes espon- táneas y deliberadas86; y Martínez Roldán entre fuentes internas y externas, esta- tales y no estatales y escritas y no escritas.87 Ciertamente el ejercicio taxonómico descrito no es injustificado, aunque par- te de una clarificación del sentido de la expresión fuente, que distingue entre el escenario que da origen a la norma jurídica, sea este espacial (interno o externo; 83 Hervada, Introducción Crítica al Derecho Natural, 119. (Cursivas en el original).
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 295 — similitud 0.0963
+
+**Detalle de puntaje:** tfidf=0.0563; bonus=0.0400
+
+> Cuando el orden jurídico, por ejemplo, determina que una norma no establecida por el órgano correspondiente, o por un individuo que carece en general de calidad de órgano; o que una norma que tiene un contenido exclui- do por la constitución, tenga que ser considerada como nula a priori, sin que se requiera acto alguno para suprimirla, tiene que determinar quién haya de establecer la presencia de esas condiciones de la nulidad; y como esa compro- bación tiene un carácter constitutivo, puesto que la nulidad de la norma cues- tionada es el efecto de esa comprobación, sin que pueda afirmársela antes de producida esa comprobación, resulta que esa comprobación significa, aun cuando se produzca...
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 352 — similitud 0.0959
+
+**Detalle de puntaje:** tfidf=0.0559; bonus=0.0400
+
+> 340 HANS KELSEN es determinado por el derecho internacional. El princIpIO jurídico de la efec· tividad rige el comienzo y el fin de la validez jurídica del orden estatal.
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 55 — similitud 0.0931
+
+**Detalle de puntaje:** tfidf=0.0531; bonus=0.0400
+
+> 92 Respecto a la visión radical de los factualismos jurídicos norteamericanos, véase: Rojas González, “Educar en filosofía para saber estar en la realidad jurídica”, 137-141. 93 En España, por ejemplo, son fuentes del Derecho la ley, la costumbre y los principios generales del Derecho; en la categoría de ley, y como norma fundamental, se encuentra la propia Constitución. La jurisprudencia aún no merece el calificativo de fuente, aunque en la práctica ha adquirido una cierta trascendencia normativa.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 114 — similitud 0.0927
+
+**Detalle de puntaje:** tfidf=0.0827; bonus=0.0100
+
+> Por otra parte, si bien la versión normativa amplia incluye exigencias que la diferencian de la anterior, tampoco sirven, en mi opinión, para individuali- zar y dotar de autonomía al concepto de Estado de Derecho, entre otras cosas, porque el imperio de la ley y la separación de poderes pueden ser comprendidos desde un punto de vista for- mal. Y, aunque, en efecto, el imperio de la ley y la separación de poderes están vinculados a determinados valores, no señalan necesariamente criterios en torno a la corrección de los conte- nidos jurídicos.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 286 — similitud 0.0876
+
+**Detalle de puntaje:** tfidf=0.0776; bonus=0.0100
+
+> Francisco Javier Ansuátegui Roig plantea el problema de la justificación de los mecanismos de control de constitucionalidad. La primacía constitucional, sin la cual es incomprensible el constitucionalismo, exige de mane- ra necesaria la creación y el funcionamiento de mecanismos de fiscalización de la acción normativa de las autoridades, comen- zando por el propio legislador. Esos mecanismos se recondu- cen a instituciones (como el Tribunal constitucional) que en muchas ocasiones forman parte orgánica del Poder judicial.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 114 — similitud 0.0868
+
+**Detalle de puntaje:** tfidf=0.0768; bonus=0.0100
+
+> 21 Esta doctrina surgió de una necesidad teórico-práctica que estuvo vinculada a estos dos su- puestos: por una parte, el mantenimiento de la afirmación del carácter ético del Derecho, es decir. de su dimensión verdaderamente normativa, y, por otra parte, la desvinculación de las normas juri- dicas respecto de la normatividad moral. En este sentido, la afirmación de una obligatoriedad jurí- dica diferente e independiente sólo pudo surgir tras el movimiento separatista, promocionado por C.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 267 — similitud 0.0863
+
+**Detalle de puntaje:** tfidf=0.0763; bonus=0.0100
+
+> Un concepto material de Estado de Derecho normativa ya no se presenta como un predicado de la ley, que ha dejado de ocupar de manera efectiva el vértice de la estruc- tura normativa, lugar en el que ahora se asienta la Constitu- ción. Es a partir de ese momento cuando a la ley se le exige conformidad y adecuación con la Constitución.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 113 — similitud 0.0856
+
+**Detalle de puntaje:** tfidf=0.0756; bonus=0.0100
+
+> De otra parte, existe una segunda noción del concepto, que incluye determinados elementos normativos. A su vez, y en función de esos elementos, podemos identificar dos versiones: la versión normativa amplia y la versión normativa restringida.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 108 — similitud 0.0849
+
+**Detalle de puntaje:** tfidf=0.0749; bonus=0.0100
+
+> Dado que el sentido especifico del acto mediante el cual se establece la relación entre condición y consecuencia en una ley moral o jurídica, es una norma, cabe hablar de una relación normativa, para diferenciarla de una rela- ción causal. "Imputación" e& el término que designa una relación normativa. Esta relación -y no otra cosa- se expresa mediante el verbo "deber", en ta forma en que es utilizado en leyes morales o jurídicas.
+
+**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 07. interpretacion juridica
+
+**Calidad estimada:** alta
+**Mejor similitud:** 0.2943
+**Similitud promedio:** 0.1469
+**Fuentes:** Filosofia del derechorgilio Ruiz Rodriguez.pdf; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf; Manual práctico de fiParedes Lovón, Javier.pdf; Razón y voluntad en eoig, Francisco Javier.pdf; Teoría pura del derecho - Hans Kelsen (1).pdf
+**Ubicaciones:** Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 124; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 142; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 143; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 167; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 169; Manual práctico de fiParedes Lovón, Javier.pdf, p. 43; Razón y voluntad en eoig, Francisco Javier.pdf, p. 162; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 138; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 165; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 25; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 261; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 264; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 267; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 338; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 340; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 362; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 364; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 366; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 367; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 368; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 98; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 99
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 367 — similitud 0.2943
+
+**Detalle de puntaje:** tfidf=0.2543; bonus=0.0400
+
+> Es por ese acto volitivo que la interpretación del derecho efectuada por el óogano de aplicación se distingue de toda otra interpretación, en especial, de la interpretación del derecho por la cienda jurídica. . La interpretación que efectúa el órgano de aplicación del derecho es siempre auténtica.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 368 — similitud 0.2519
+
+**Detalle de puntaje:** tfidf=0.2119; bonus=0.0400
+
+> LA INTElU'RET ACIÓN 355 aplicable, sino que también puede producirse una norma que se encuentre enteramente fuera del marco que configura la norma aplicable. Mediante una interpretación auténtica semejante puede crearse derecho no sólo en el caso en que la interpretación tenga carácter general, es decir, cuando se da una interpretación auténtica en el sentido usual de la palabra, sino también en el caso en que el órgano de aplicación de derecho produce una norma jurídica individual; tan pronto el acto del órgano de aplicación de derecho no puede ser dejado sin efecto, por haber adquirido fuerza de cosa juzgada.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 364 — similitud 0.2370
+
+**Detalle de puntaje:** tfidf=0.1970; bonus=0.0400
+
+> LA INTERPRETACIÓN 351 una secuencia de palabras, mediante las cuales la norma se expresa: el sentido lingüístico de la norma no es unívoco; e! órgano que tiene que aplicar la norma se encuentra ante varios significados posibles. La misma situación se presenta cuando quien tiene que aplicar la norma Cree poder suponer una discrepancia entre la expresión lingüística de la norma y la voluntad a través de ella expresada de la autoridad que dictó la norma, aunque así permanezca indecisa la manera en que esa voluntad podría verificarse.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 362 — similitud 0.2369
+
+**Detalle de puntaje:** tfidf=0.1969; bonus=0.0400
+
+> Aquí, por de pronto, sólo deberá tomarse en consideración la interpretación efectuada por el órgano de aplicación del derecho. a) Indeterminación relativa del acto de aplicación de derecho La relación entre una grada superior y una inferior del orden jurídico, como se da entre constitución y ley, o entre ley y sentencia judicial, es una relación de determinación o de obligación: la nonna de grada superior regula -como ya se
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 364 — similitud 0.2197
+
+**Detalle de puntaje:** tfidf=0.1797; bonus=0.0400
+
+> En todos estos ca- sos el derecho por aplicar constituye sólo un marco dentro de! cual están dadas varias posibilidades de aplicación, con lo cual todo acto es conforme a derecho si se mantiene dentro de ese marco, colmándolo en algún sentido posible. Si por "interpretación" se entiende la determinación en cuanto conocimiento del sentido del objeto interpretado, el resultado de una interpretación jurídica sólo puede ser determinar el marco que expone el derecho por interpretar, y, por lo tanto, el conocimiento de varias posibilidades dadas dentro de ese marco.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 362 — similitud 0.2024
+
+**Detalle de puntaje:** tfidf=0.1624; bonus=0.0400
+
+> La esencia de la interpretación. Interpretación auténtica y no auténtica Cuando el derecho tiene que ser aplicado por un órgano jurídico, éste tiene que establecer el sentido de la norma que aplicará, tiene que interpretar esas normas. La interpretación es un procedimiento espiritual que acompaña al proceso de aplicación de! derecho, en su tránsito de una grada superior a una inIerior.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 99 — similitud 0.1740
+
+**Detalle de puntaje:** tfidf=0.1640; bonus=0.0100
+
+> DERECHO Y CIENCIA 95 Dado que el enunciado juridico, como la ley natural, fonnula una relaci6n funcional, puede también -ateniéndose a la analogía con la ley natural- ser designado como una ley juridica. Expresa, como se ha señalado y como debe ser subrayado enfáticamente, con la palabra "deber" s6lo el sentido específico en que, a través de una nonna, se entrelazan condici6n y consecuencia, y, en especial, acto iHcito y consencuencia de lo iHcito; donde ese enlace descrito en la ley jurídica si bien es ciertamente análogo a la conexión entre causa y efecto expresada en la ley natural, con todo, es diferente de ella.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 367 — similitud 0.1661
+
+**Detalle de puntaje:** tfidf=0.1261; bonus=0.0400
+
+> Si hubiera que caracterizar no sólo la interpretacióu de la ley por parte de los tribunales u órganos administrativos, sino en forma enteramente general, la interpretación del derecho por los órganos de aplicación del derecho, habría que decir: en la aplicación del derecho por un órgano jurídico, la interpre- tación cognoscitiva del derecho aplicable se enlaza con un acto de voluntad en el cual el órgano de aplicación de derecho efectúa una elección entre las posibilidades que la interpretación cognoscitiva muestra. Con ese acto o bien se produce una norma jurídica de nivel inferior, O se Heva a cabo el acto coactivo estatuido por la norma jurídica aplicable.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 261 — similitud 0.1595
+
+**Detalle de puntaje:** tfidf=0.1195; bonus=0.0400
+
+> Así como el objeto de ese conocimiento es "producido" en el proceso del conocimiento, también el hecho condicionante de la sanción es producido en el proceso judi- ciaL Y así como el procedimiento judicial, en cuanto hecho, puede llegar a ser él mismo objeto de un proceso judicial, también el hecho de un proceso cog- noscitivo puede convertirse, él mismo, en 13.-teoría del conocimiento, en objeto de un acto de conocimiento. Pero el conocimiento que se tiene a sí mismo como objeto no puede volver a ser, como un hecho, objeto de un conocimiento: el regreso del hecho constituido por un proceso cognoscitivo a otro acto de cono- cimiento que tiene como objeto ese hecho, está limitado.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 362 — similitud 0.1396
+
+**Detalle de puntaje:** tfidf=0.0996; bonus=0.0400
+
+> Interpretación auténtica y no auténtica Cuando el derecho tiene que ser aplicado por un órgano jurídico, éste tiene que establecer el sentido de la norma que aplicará, tiene que interpretar esas normas. La interpretación es un procedimiento espiritual que acompaña al proceso de aplicación de! derecho, en su tránsito de una grada superior a una inIerior. En e! caso en que más se piensa cuando se habla de interpretación, en el caso de la interpretación de la ley, se debe dar respuesta a la pregunta de qué contenido hay que dar a la norma individual de una sentencia judicial o de una resolución administrativa, al deducirla de la norma general de la ley para su aplicación al hecho concreto.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 338 — similitud 0.1345
+
+**Detalle de puntaje:** tfidf=0.0945; bonus=0.0400
+
+> Dado que el fundamento del primero se encuentra en una norma perteneciente al segundo, ambos derechos se eneuen· tran en la relación de una grada superior a una grada inferior. Y si se toman en cuenta también las normas jurídicas producidas por los tribunales interna- cionales y por otros órganos internacionales creados por tratado, aparece en la estructura del derecho internacional también una tercera grada.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 264 — similitud 0.1310
+
+**Detalle de puntaje:** tfidf=0.1210; bonus=0.0100
+
+> Debe tenerse en cuenta, en ello, que cuando ninguna norma jurídica positiva general predetermina en su contenido la norma jurídica individual que el tribunal tiene que producir, esa norma individual es impuesta con fuerza retroactiva. Una norma juridica tiene fuerza retroactiva cuando el hecho al cual ella enlaza una sanción como consecuencia, fue establecido no después de su entrada en vigencia, sino que realizado anteriormente, es decir, por lo tanto, cuando en ese momento, el de la entrada en vigencia de la norma, no constituía una ilicitud, sino que sólo después fue convertido en tal cosa me- diante esa norma jurídica.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 98 — similitud 0.1294
+
+**Detalle de puntaje:** tfidf=0.1194; bonus=0.0100
+
+> 205. La causalidad afinoada en las normas jurídicas designadas como enunciados de derecho, es denominada por Zitel- mann, una "causalidad juridica". La coloca junto a la "causalidad natural'".
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 43 — similitud 0.1254
+
+**Detalle de puntaje:** tfidf=0.0854; bonus=0.0400
+
+> Al interpretar la nor- ma de acuerdo a su redacción, es esencial considerar el uso general del idioma o determinar si existe en la propia ley una deﬁnición legal que sea vinculante. Por lo tanto, la interpretación gramatical requiere que el signiﬁcado de una norma legal se establezca lo más cerca posible de su signiﬁcado literal. No tiene que ser necesariamente el uso general del lenguaje. b.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 138 — similitud 0.1249
+
+**Detalle de puntaje:** tfidf=0.1149; bonus=0.0100
+
+> 86 AH Ross, op. cit., p. 75, reprocha a la Teoría Pura del Derecho que su determinación del concepto de obligación juridica conduzca a un regreso al infinito. La obligación juridica de determinada conducta es constituida por una norma, que obliga a un órgano juridico a reaccionar con una sanción en el caso de una conducta contraria.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 25 — similitud 0.1241
+
+**Detalle de puntaje:** tfidf=0.0841; bonus=0.0400
+
+> Más: ella adquiere validez jus- tamente cuando el acto de voluntad, cuyo sentido constituye, ha cesado de existir. El individuo que con un acto suyo intencionalmente dirigido hada el comportamiento de otro, ha producido una norma jurídica, no tiene que con- tinuar queriendo ese comportamiento para que valga la norma que constituye el sentido de su acto.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 167 — similitud 0.1237
+
+**Detalle de puntaje:** tfidf=0.0937; bonus=0.0300
+
+> 1. Principales reglas o métodos de interpretación Método literal. Según la regla de la interpretación literal, la actividad del intérprete ha de atenerse al significado inmediato de las palabras en que vie- nen expresadas las normas, a su significado gramatical, al sentido que dichas palabras tienen en el lenguaje común.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 124 — similitud 0.1229
+
+**Detalle de puntaje:** tfidf=0.0829; bonus=0.0400
+
+> Al mismo tiempo, su reflexión sobre el conocimiento jurídico la obliga al rigor, y la mis- ma preocupación por el estatuto epistemológico del conocimiento jurídico, la hace científica en algún sentido.399 Por lo tanto, de acuerdo con lo planteado, la teoría de la ciencia jurídica tendrá como objeto de estudio: el problema de la cientificidad del derecho, la situación del derecho en el panorama general de los conocimientos cien- tíficos actuales y los problemas lógicos y metodológicos que plantea la acti- vidad científica y práctica del jurista, teniendo en cuenta siempre —señala E.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 267 — similitud 0.1209
+
+**Detalle de puntaje:** tfidf=0.0809; bonus=0.0400
+
+> Junto a las lagunas propiamente dichas, llamadas lagunas auténticas, se suelen distinguir las lagunas técnicas, cuya existencia es tenida por posible inclusive por aquellos que, desde un punto de vista positivista, niegan la existencia de auténticas lagunas. Una laguna técnica semejante aparece cuando el legislador, por ejemplo, omite normar lo que habría tenido que regular si, en general, debe ser técnicamente posible aplicar la ley. Sólo que, lo que se designa como laguna técnica o bien es una laguna en el sentido originario de la palabra, es decir, una discrepancia entre el derecho positivo y un derecho deseado, o bien esa indeterminación proviene de! carácter de marco que tiene la norma.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 169 — similitud 0.1208
+
+**Detalle de puntaje:** tfidf=0.0808; bonus=0.0400
+
+> Por eso, el intérprete tendrá que utilizar a menudo, no éste o el otro método preestablecido, sino todos aquellos que más contribu- yan al descubrimiento de la solución adecuada. En este sentido, los tradicionales métodos de interpretación pierden 31 Para la identificación de esos fines no puede tomarse en Cuenta únicamente el proyecto o voluntad de su autor, sino que deberá considerarse también la funcionalidad que las normas de- sempeñan en la vida social dentro del marco general del sistema jurídico vigente en el que se inte- gran.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 340 — similitud 0.1148
+
+**Detalle de puntaje:** tfidf=0.1048; bonus=0.0100
+
+> 328 HANS ULSI!N Estado (cuya expresión personificadora sólo es el "Estado"). La obligación y facultamiento del Estado por el derecho internacional tiene el mismo carácter que la obligación y facultamiento de una corporación como persona juridica por el orden juridico de un Estado en particular. El Estado es una persona juridica y las normas del derecho internacional, mediante las cuales los Estados, en tanto tales, son obligados y facultados, son normas incompletas, normas que requieren ser completadas.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 143 — similitud 0.1142
+
+**Detalle de puntaje:** tfidf=0.0842; bonus=0.0300
+
+> bargo, la doctrina ha señalado también otros varios tipos de lagunas, que conviene recordar brevemente, aunque no sea más que para tener una visión completa del tema. Entre esos tipos, han sido destacados con especial aten- ción los siguientes pares: 1.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 366 — similitud 0.1104
+
+**Detalle de puntaje:** tfidf=0.0904; bonus=0.0200
+
+> 46. La interpretación como acto de conocimiento o de voluntad La representación en que se funda la teoria tradicional de la interpretación, a saber: que la. determinación del acto jurídico por cumplirse, no efectuada por la norma juridica por aplicar, pueda obtenerse mediante alguna especie de conocimiento del derecho ya existente, es un autoengaño lleno de contra- dicciones, en cuanto es contrario a los presupuestos de la posibilidad de una interpretación.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 162 — similitud 0.1101
+
+**Detalle de puntaje:** tfidf=0.0801; bonus=0.0300
+
+> La disparidad de propuestas es algo que se constata al observar la his- toria de las teorías iusnaturalistas. Esa disparidad es la que le permite afirmar a Kelsen que «con los métodos de la teoría del Derecho natural, y en lo que se refiere a la justicia, se puede probar todo y, por lo tanto, no se prueba nada» («Justicia y Derecho natural», cit., p. 142).
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 43 — similitud 0.1084
+
+**Detalle de puntaje:** tfidf=0.0684; bonus=0.0400
+
+> ◾ considerar el contexto concreto-histórico (cuál fue la voluntad del legislador). c. Interpretación sistemática: Se basa en la idea de que el sistema legal como un todo se debe construir sin contradicciones, y por lo tanto, no puede contradecir una norma en él con otra norma.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 165 — similitud 0.1052
+
+**Detalle de puntaje:** tfidf=0.0952; bonus=0.0100
+
+> 160 HANS KELSEN legislativo facultado por el orden jurídico para producir normas juridicas, y que las funciones de los órganos judiciales y administrativos, facultados por el orden juridico para producir, en aplicación de norma generales, normas jurídicas indi- viduales. En todos estos casos tenemos, como en el caso de la denominada capacid¡¡d juridica, una faoultad para producir normas juridicas; en todos estos casos, el orden juridico otorga un poder juridico a determinados individuos. Pero no en todos los casos de concesión de un poder juridico, es decir, de facultamiento en el sentido estricto de la palabra, habla la tooria tradicional de capacidad juridica.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 99 — similitud 0.1048
+
+**Detalle de puntaje:** tfidf=0.0948; bonus=0.0100
+
+> Puesto que no es un enunciado declarativo en que se describe una relaci6n entre hechos, nna relaci6n funcional. No constituye enunciado alguno, sino el sentido de un acto madiante el cual se prescribe algo, y al hacerlo justamente se establece el enlace entre hechos, la relaci6n funcio- nal que será descrita por el enunciado jurídico, como ley juridica. Debe advertirse en ello que el enunciado juridico que aparece como ley juridica tiene, como la ley natural, un carácter general, es decir, describe las nonnas generales del orden juridico y las relaciones que a través de ellas se constituyen.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 169 — similitud 0.1023
+
+**Detalle de puntaje:** tfidf=0.0623; bonus=0.0400
+
+> Según la segunda ac- titud, hay criterios de valoración, que son reconocidos de forma predomi- nante en una determinada época o en una determinada comunidad O área cultural y que encuentran su expresión en las normas consuetudinarias, en la ética social, en las instituciones, en las formas comunes de vida, etc. Y esos valores O principios, no recogidos con frecuencia por las leyes, son precisa- mente los que permiten llegar a la interpretación correcta de las normas 32, 2.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 142 — similitud 0.1008
+
+**Detalle de puntaje:** tfidf=0.0708; bonus=0.0300
+
+> Ahora bien, esta situación puede darse en tres supuestos diferentes: en relación con un orden jurídico paradigmático o ideal (Flaguna ideológica), en relación con el Derecho legislado (=laguna legal) y en rela- ción con la totalidad del ordenamiento jurídico (laguna jurídica propiamente dicha). Si el problema de las lagunas se plantea dentro de la consideración del ordenamiento jurídico vigente en relación con algún tipo de ordena- miento jurídico ideal, se está ante las lagunas ideológicas o impropiamente dichas; y, en ese caso, la única solución posible es la que pasa por la inter- vención del correspondiente órgano legislador.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 364 — similitud 0.0969
+
+**Detalle de puntaje:** tfidf=0.0569; bonus=0.0400
+
+> Si por "interpretación" se entiende la determinación en cuanto conocimiento del sentido del objeto interpretado, el resultado de una interpretación jurídica sólo puede ser determinar el marco que expone el derecho por interpretar, y, por lo tanto, el conocimiento de varias posibilidades dadas dentro de ese marco. Por lo tanto, la interpretación de una ley no conduce necesariamente a una decisión única, como si se tratara de la única correcta, sino posiblemente a
+
+**Observación automática:** La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 08. sistema juridico
+
+**Calidad estimada:** media
+**Mejor similitud:** 0.2774
+**Similitud promedio:** 0.1640
+**Fuentes:** LECCIONES DE TEORÍA D Benito de Castro Cid.pdf; Manual práctico de fiParedes Lovón, Javier.pdf; Razón y voluntad en eoig, Francisco Javier.pdf; Teoría pura del derecho - Hans Kelsen (1).pdf
+**Ubicaciones:** LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 138; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 139; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 140; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 142; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 143; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 197; Manual práctico de fiParedes Lovón, Javier.pdf, p. 282; Manual práctico de fiParedes Lovón, Javier.pdf, p. 284; Manual práctico de fiParedes Lovón, Javier.pdf, p. 293; Manual práctico de fiParedes Lovón, Javier.pdf, p. 295; Manual práctico de fiParedes Lovón, Javier.pdf, p. 302; Manual práctico de fiParedes Lovón, Javier.pdf, p. 40; Razón y voluntad en eoig, Francisco Javier.pdf, p. 150; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 165; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 208; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 210; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 212; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 213; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 354; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 56; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 58
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 208 — similitud 0.2774
+
+**Detalle de puntaje:** tfidf=0.2374; bonus=0.0400
+
+> Dinámica jurídica 34. El fundamento de validez de un orden normativo: la norma fundante básica 201 d) Sentido de la pregunta por el tundamento de validez 201 b) El principio estático y el principio dinámico 203 e) El fundamento de validez de un orden jurídico 205 dl La norma fundante básica como presupuesto lógico-trascendental 208 e) La unidad lógica del orden jurídico. Conflictos normativos 214 f) Legitimidad y efectividad 217 g) Validez yeficacia 219 h) La norma fundante básica del derecho internacional 225 í) La teorla de la norma fundante básica y la doctrina del derecho natural 228 f} La norma fundante del derecho natural 230
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 213 — similitud 0.2636
+
+**Detalle de puntaje:** tfidf=0.2336; bonus=0.0300
+
+> Una norma jurídica no vale por tener un contenido determinado; es decir, no vale porque su contenido pueda inferirse, mediante un argumento deductivo lógico, de una norma fundante básica presupnesta, sino por haber sido producida de determinada manera, y, en última instancia, por haber sido producida de la manera determinada por una norma fundante básica presupuesta. Por ello, y sólo por ello, pertenece la norma al orden jurídico, cuyas normas han sido producidas conforme a esa norma fundante básica.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 197 — similitud 0.2622
+
+**Detalle de puntaje:** tfidf=0.2222; bonus=0.0400
+
+> En cambio, para otros (por ejemplo, KELseEN), las normas primarias son las que regulan la imposición de sanciones y las secundarias son aquellas normas cuya existencia reguladora del deber de no realizar la conducta prevista como con- dición de la sanción ha de suponerse para lograr el sentido pleno de las normas primarias. Pero otros (por ejemplo, HarT) afirman que las normas jurídicas secundarias son las que regulan el pro- cedimiento de creación y aplicación de las primarias, mientras que éstas son las que prescriben que los seres humanos hagan u omitan ciertas acciones, lo quieran o no.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 213 — similitud 0.2392
+
+**Detalle de puntaje:** tfidf=0.1992; bonus=0.0400
+
+> No hay comportamiento humano que, en cuanto tal, por 10 que es como contenido, esté excluido de Ser el contenido de una norma juridica. Ni la validez de una de ellas puede ser negada por Con- tradecir su contenido al de otra norma no perteneciente al orden jurídico cuya norma fundante básica es el fundamento de la validez de la norma cuestio- nada. la norma fundante de un orden juridico no es una norma material que, por considerarse inmediatamente evidente el contenido, sea presupuesta como
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 210 — similitud 0.2369
+
+**Detalle de puntaje:** tfidf=0.1969; bonus=0.0400
+
+> Una norma semejante, presupuesta como norma suprema, será desig- nada aquí como norma fundante básica (Grondnonn).117 Todas las normas cuya validez pueda remitirse a una y misma norma fundante básica, constituyen un sistema de normas, un orden normativo. La norma fundante básica es la fuente común de la validez de todas las normas pertenecientes a uno y el mismo orden.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 212 — similitud 0.2187
+
+**Detalle de puntaje:** tfidf=0.1887; bonus=0.0300
+
+> Formu- lado lo mismo más correctamente, se diría que vale porque se presupone como válida una norma fundante básica que, en última instancia, estatuye la manera de implantar normas. Una norma pertenece al orden sustentado en seme- jante norma fundante, en tanto ha sido producida en la manera determinada por la norma fundante básica, y no por tener determinado contenido.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 282 — similitud 0.2117
+
+**Detalle de puntaje:** tfidf=0.1717; bonus=0.0400
+
+> En su obra principal El Concepto del derecho (1961) nos da una respuesta a la pregunta ¿qué es el derecho?. Parte de las siguientes premisas: ◾ el derecho es un sistema de reglas ◾ el derecho se forma de reglas primarias y secundarias ◾ la discrecionalidad judicial es una fuente del derecho El derecho: reglas primarias y secundarias Hart parte del concepto «regla» que llega a convertirse en ley. Construye un sistema legal asentado en los pilares de reglas primarias y reglas secundarias.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 284 — similitud 0.2005
+
+**Detalle de puntaje:** tfidf=0.1605; bonus=0.0400
+
+> Con la regla de reconocimiento, por lo tanto, se resuelve el problema principal del derecho, es decir, el del criterio para identiﬁcar las normas jurídicas. Esta es la más importante de las reglas secundarias, ya que determina el paso desde una situación pre-jurídica, en la que un grupo humano tan solo se regiría por reglas primarias hacia una situación plenamente jurídica, pues, al proporcionar la regla de reconocimiento una marca o signo con autoridad sobre lo que es derecho, se introduciría ya, la idea de un sistema jurídico. Además, Hart propone otros tipos de reglas secundarias: las reglas de cambio y las reglas de adjudicación.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 212 — similitud 0.1960
+
+**Detalle de puntaje:** tfidf=0.1560; bonus=0.0400
+
+> Una norma pertenece al orden sustentado en seme- jante norma fundante, en tanto ha sido producida en la manera determinada por la norma fundante básica, y no por tener determinado contenido. La norma fundante básica s6lo provee del fundamento de validez, pero no además del contenido de las normas que constituyen ese sistema. Sus contenidos s6lo pue- den ser determinados por actos mediante los cuales la autoridad facultada por la norma básica, y luego, las autoridades facultadas por aquélla, establecen las normas positivas de ese sistema.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 143 — similitud 0.1787
+
+**Detalle de puntaje:** tfidf=0.1387; bonus=0.0400
+
+> Lagunas propias y lagunas impropias. Son entendidas como lagunas propias aquéllas que consisten en vacios o carencias normativos del ordena- miento jurídico considerado en sí mismo. Son definidas, en cambio, como lagunas impropias aquellas carencias normativas que registra un determina- do ordenamiento jurídico positivo cuando se le contrasta con algún tipo de ordenamiento modélico, sea real o ideal.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 282 — similitud 0.1743
+
+**Detalle de puntaje:** tfidf=0.1343; bonus=0.0400
+
+> Nos explica: las normas primarias imponen obligaciones (penas y responsabilidad civil) y, las secundarias, conﬁeren potestades, facultan (discrecionalidad judicial). REGLAS PRIMARIAS (OBLIGAN) REGLAS SECUNDARIAS (FACULTAN) Las primarias son normas de con- ducta y que caliﬁcan como prohibido, permitido y obligatorio.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 138 — similitud 0.1734
+
+**Detalle de puntaje:** tfidf=0.1334; bonus=0.0400
+
+> LECCION IX PLENITUD Y COHERENCIA DEL ORDENAMIENTO L EL PROBLEMA DE LAS LAGUNAS 1. Elprincipio de la plenitud y su problemática Afirmar la plenitud del Derecho equivale a sostener que cualquier orde- namiento jurídico estatal dispone siempre de alguna norma que regula ade- cuadamente cualquier supuesto fáctico-social que pueda presentarse; nunca se dará el caso de que el Derecho carezca de respuesta adecuada para una demanda de la vida social.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 165 — similitud 0.1608
+
+**Detalle de puntaje:** tfidf=0.1508; bonus=0.0100
+
+> 160 HANS KELSEN legislativo facultado por el orden jurídico para producir normas juridicas, y que las funciones de los órganos judiciales y administrativos, facultados por el orden juridico para producir, en aplicación de norma generales, normas jurídicas indi- viduales. En todos estos casos tenemos, como en el caso de la denominada capacid¡¡d juridica, una faoultad para producir normas juridicas; en todos estos casos, el orden juridico otorga un poder juridico a determinados individuos.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 142 — similitud 0.1528
+
+**Detalle de puntaje:** tfidf=0.1128; bonus=0.0400
+
+> Ahora bien, esta situación puede darse en tres supuestos diferentes: en relación con un orden jurídico paradigmático o ideal (Flaguna ideológica), en relación con el Derecho legislado (=laguna legal) y en rela- ción con la totalidad del ordenamiento jurídico (laguna jurídica propiamente dicha). Si el problema de las lagunas se plantea dentro de la consideración del ordenamiento jurídico vigente en relación con algún tipo de ordena- miento jurídico ideal, se está ante las lagunas ideológicas o impropiamente dichas; y, en ese caso, la única solución posible es la que pasa por la inter- vención del correspondiente órgano legislador.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 295 — similitud 0.1464
+
+**Detalle de puntaje:** tfidf=0.1364; bonus=0.0100
+
+> Ahora bien, el sistema y el entorno se forman en la me- dida en que los elementos del sistema, demarcan un límite (su campo operativo, es decir, el sistema en sí) que separa aquello que no está incluido en él (es decir, el entorno). De esta manera, el sistema no puede operar fuera de sus límites, pero, puede sobrepasarlos para relacionarse con el entorno, generándose así, una interdependencia entre sistema y entorno.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 354 — similitud 0.1317
+
+**Detalle de puntaje:** tfidf=0.1017; bonus=0.0300
+
+> Si se considera al derecho internacional como parte integrante de un orden jurídico estatal, es menester distinguir entre el orden jurídico estatal en sentido estricto, y el orden jurídico estatal en sentido lato. El orden jurídico estatal en sentido estricto son las normas de la consti- tución del Estado y las normas establecidas, conforme a esa constitución, por actos legislativos, actos jurisdiccionales y por administración.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 143 — similitud 0.1307
+
+**Detalle de puntaje:** tfidf=0.0907; bonus=0.0400
+
+> parcial y la solución apunta hacia las otras partes O sectores del ordenamien- to jurídico. En cambio, si el vacío se produce en referencia a la totalidad del ordenamiento jurídico estatal, se está ante el supuesto en que el problema de las lagunas se presenta en su sentido más genuino y con toda su crudeza, puesto que es el que realmente pone en apuros a los operadores jurídicos. En efecto, las dificultades y los problemas de los juristas surgen precisSamen- te cuando en el ordenamiento jurídico estatal, entendido como totalidad sis- temática de normas, no existe una regla jurídica específica con cuya ayuda pueda adoptarse una solución respecto del caso planteado.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 58 — similitud 0.1296
+
+**Detalle de puntaje:** tfidf=0.1196; bonus=0.0100
+
+> Puesto que el recurso a la fuerza física -esto es, la ejecución de un acto coactivo- está en principio prohibida, en la medida en que no esté positivamente permitida a determinados hombres, en que determinados hombres no estén facultados para ello. Puesto que un orden juridico, oomo todo sisterna social normativo, sólo pucae obligar a muy especificas acciones y omisiones, jamás puede el hombre, en la totalidad de su existencia, en el conjunto de sus actos externos e internos, en sus ,acciones, sus voliciones, sus pensamientos y sentimientos, verse limitado en su libertad por un orden juridico. El orden juridico puede limitar en más o en ., Cfr. infr., p.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 140 — similitud 0.1261
+
+**Detalle de puntaje:** tfidf=0.0961; bonus=0.0300
+
+> El Derecho es, por tanto, pleno, si bien su plenitud o suficiencia no ha de ser entendida en el sentido de abarcar todos y cada uno de los casos que puedan presentarse en la práctica, puesto que lo que no está jurídica- mente regulado no pertenece al Derecho. En este sentido, la plenitud del ordenamiento jurídico puede entenderse, tal como indicara K. BERGBOHM, como la plenitud de un río: todo lo que está comprendido en su cauce o en sus márgenes es del río, lo que queda fuera ya no pertenece al río.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 139 — similitud 0.1248
+
+**Detalle de puntaje:** tfidf=0.0848; bonus=0.0400
+
+> Pero la regulación jurídica no tiene descubiertos o lagunas. Lo que no cae dentro de los límites de la ordenación no puede ser considerado como un vacío del ordenamiento, sino como una realidad que está fuera de 2 Se ve, pues, cómo el debate doctrinal sobre la plenitud del Derecho refleja una pugna política de fondo por el control último del poder jurídico, tal como ha ocurrido también en el campo de las discusiones sobre las «fuentes formales» del Derecho.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 293 — similitud 0.1238
+
+**Detalle de puntaje:** tfidf=0.1138; bonus=0.0100
+
+> Función del derecho 4. Conclusiones Introducción A veces, cuando nos referimos a ciertos tipos de desórdenes en la socie- dad, aludimos a los errores del sistema: criticamos la corrupción del sistema político, la deﬁciencia del sistema educativo, la lentitud del sistema judicial, las carencias en el sistema de salud, o también el caos del sistema de transporte público, etc. Asimismo, hablamos de los sistemas cuando nos referimos a la máquinas.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 40 — similitud 0.1191
+
+**Detalle de puntaje:** tfidf=0.0791; bonus=0.0400
+
+> BLOQUE I DERECHO Jerarquía del sistema jurídico: un sistema de delegación DERECHO INTERNACIONAL Convención de Viena 1968 (ONU): Señalización de tránsito vehicular. LA CONSTITUCIÓN posibilita la promulgación de leyes, por ej.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 354 — similitud 0.1188
+
+**Detalle de puntaje:** tfidf=0.0988; bonus=0.0200
+
+> El derecho internacional que constituye parte integrante de este orden jurídico estatal, determina mediante su principio de efectividad el fundamento de validez de todo orden jurídico estatal, tanto los de aquellos que no son punto de partida de la construcción, como el de aquel que desempeña esa función y que tiene como parte integrante al derecho inter- nacional. Pero en el último caso, el derecho internacional -como parte inte- grante del orden jurídico estatal en sentido lato- cumple su función sólo en relación con el orden jurídico estatal en sentido estricto.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 354 — similitud 0.1165
+
+**Detalle de puntaje:** tfidf=0.0965; bonus=0.0200
+
+> Pero el principio de efectividad de la parte integrante del orden jurídico estatal que configura el derecho internacional, no es el últi- mo fundamento de validez de ese orden jurídico estatal en sentido estricto. Ese fundamento está dado por la norma fundante básica presupuesta de ese orden jurídico, que simultáneamente es el último fundamento de validez del derecho internacional convertido en una parte integrante suya.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 293 — similitud 0.1091
+
+**Detalle de puntaje:** tfidf=0.0991; bonus=0.0100
+
+> Los sistemas existen también en nosotros mismos, en la vida orgánica: nuestro cuerpo está compuesto por un sistema muscular, por un sistema óseo, etc. y somos a la par, parte de un sistema: el ecosistema, el sistema solar, etc. 293 MANUAL PRÁCTICO DE FILOSOFÍA DEL DERECHO FUNDAMENTOS DEL DERECHO Y JUSTICIA
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 302 — similitud 0.0948
+
+**Detalle de puntaje:** tfidf=0.0848; bonus=0.0100
+
+> BLOQUE II FILOSOFÍA los sistemas tienen en común que se integran en la sociedad por medio de una función especíﬁca. Se puede observar, por ejemplo, que el sistema económico y el sistema político tienen diferentes funciones y otro tipo de lenguaje: ◾ El económico, asegura la garantía de suministro futuro en condiciones de escasez y utiliza el lenguaje de la propiedad o del dinero. ◾ El lenguaje del sistema político es el poder, y su supervivencia depende de sus éxitos electorales.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 150 — similitud 0.0888
+
+**Detalle de puntaje:** tfidf=0.0788; bonus=0.0100
+
+> Francisco Javier Ansuátegui Roig derecho» 246. En relación con la violación generalizada de los principios del imperio de la ley, los efectos son similares, ya que «es justamente una característica de un sistema de derecho que opere sustancialmente de acuerdo con los principios del imperio de la ley» 247. En ambos casos, la consecuencia es la desaparición como tal de un sistema que no es capaz de guiar de manera efectiva los comportamientos humanos.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 56 — similitud 0.0861
+
+**Detalle de puntaje:** tfidf=0.0761; bonus=0.0100
+
+> Y ese acto coactivo, como sanción (en el sentido de consecuencia de una ilicitud), s610 puede distinguirse de otros actos coactivos estatuidos por el orden juridico, en cuanto el hecho condicionante de esos actos coactivos es una acci6n u omisión determinada por el orden juridico, comprobada jurídicamente, y socialmente indeseada, mientras que los actos coactivos que no constituyen sanciones en el sentido de consecuencias de una ilicitud, están condicionados por otros hechos. 3.
+
+**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 09. teorias contemporaneas del derecho
+
+**Calidad estimada:** media
+**Mejor similitud:** 0.2167
+**Similitud promedio:** 0.1465
+**Fuentes:** Filosofia del derechorgilio Ruiz Rodriguez.pdf; Filosofía del Derechoegorio Rojas González.pdf; Manual práctico de fiParedes Lovón, Javier.pdf; Razón y voluntad en eoig, Francisco Javier.pdf; Teoría pura del derecho - Hans Kelsen (1).pdf
+**Ubicaciones:** Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 197; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 214; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 249; Filosofía del Derechoegorio Rojas González.pdf, p. 18; Filosofía del Derechoegorio Rojas González.pdf, p. 20; Filosofía del Derechoegorio Rojas González.pdf, p. 29; Filosofía del Derechoegorio Rojas González.pdf, p. 41; Filosofía del Derechoegorio Rojas González.pdf, p. 55; Filosofía del Derechoegorio Rojas González.pdf, p. 63; Manual práctico de fiParedes Lovón, Javier.pdf, p. 287; Manual práctico de fiParedes Lovón, Javier.pdf, p. 289; Manual práctico de fiParedes Lovón, Javier.pdf, p. 290; Manual práctico de fiParedes Lovón, Javier.pdf, p. 32; Razón y voluntad en eoig, Francisco Javier.pdf, p. 127; Razón y voluntad en eoig, Francisco Javier.pdf, p. 216; Razón y voluntad en eoig, Francisco Javier.pdf, p. 228; Razón y voluntad en eoig, Francisco Javier.pdf, p. 371; Razón y voluntad en eoig, Francisco Javier.pdf, p. 53; Razón y voluntad en eoig, Francisco Javier.pdf, p. 69; Razón y voluntad en eoig, Francisco Javier.pdf, p. 76; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 206; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 246; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 252; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 273; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 327
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 32 — similitud 0.2167
+
+**Detalle de puntaje:** tfidf=0.2067; bonus=0.0100
+
+> Se reﬁere a la totalidad de todas las normas legales de un Estado y por lo tanto, es sinónimo de ley. Este derecho se divide en dos grupos: derecho privado y derecho público. ◾ Derecho privado, incluye básicamente todo el derecho civil y partes del derecho mercantil/comercial. ◾ Derecho público, el Estado y el derecho administrativo, el derecho penal, derecho internacional y el derecho procesal. Todas las normas vigentes de un Estado constituyen el orden jurídico y se dividen sistemáticamente en dos ramas: derecho público y derecho privado.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 327 — similitud 0.1866
+
+**Detalle de puntaje:** tfidf=0.1766; bonus=0.0100
+
+> DERECHO Y ESTADO 315 Estado, existente independientemente del derecho como una realidad social, pri- meramente crea el derecho, para luego someterse, por decir así libremente, a ese derecho. Sólo entonces seria un Estado de derecho.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 69 — similitud 0.1847
+
+**Detalle de puntaje:** tfidf=0.1747; bonus=0.0100
+
+> Derecho, Poder y Moral en el Estado de Derecho es uno de los grandes problemas de la Filosofía del Derecho. Pero no sólo de la Filosofía del Derecho en sentido amplio, sino también de la Teoría del Derecho, ya que la conclusión a la que se llegue a la hora de enfocar y resolver la cuestión de la rela- ción entre el Derecho y la moral va a condicionar necesaria- mente el concepto de Derecho que se defienda en su caso 91.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 252 — similitud 0.1822
+
+**Detalle de puntaje:** tfidf=0.1722; bonus=0.0100
+
+> En el terreno del derecho administrativo, en cambio, este campo es por lo común bastante amplio. Con otras palabras: la constitución representa derecho de forma, derecho procesal, predominantemente, mientras que el esca· Ión inmediatamente subordinado de producción de derecho, representa tanto derecho de forma, como derecho de fondo (material). e) lAs llamadas "fuentes del derecho".
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 53 — similitud 0.1797
+
+**Detalle de puntaje:** tfidf=0.1397; bonus=0.0400
+
+> Tambien, ALEXY, R., «Los principales elemen- tos de mi Filosofía del Derecho», Doxa, n.º 32, 2009, pp, 67 y ss. Sobre la cuestión de la pretensión de corrección, vid.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 246 — similitud 0.1768
+
+**Detalle de puntaje:** tfidf=0.1668; bonus=0.0100
+
+> Cuando el derecho consuetudinario, así como el derecho legislado, es derecho positivo, esto es, un derecho impuesto, tiene que haber un acto de voluntad, individual o colectivo, cuyo sentido subjetivo sea un deber, que pueda ser interpretado como una norma válida objetivamen- te, como derecho consuetudinario. Como ya se subrayó anteriormente, el derecho consuetudinario sólo puede ser aplicado por los órganos de aplicación del derecho, cuando puede conside- rarse que esos órganos están facultados para ello.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 76 — similitud 0.1738
+
+**Detalle de puntaje:** tfidf=0.1338; bonus=0.0400
+
+> Francisco Javier Ansuátegui Roig ante la realidad del Derecho) es aquella que afirma la no nece- saria conexión conceptual entre el Derecho y la moral conside- rada correcta. Robert Alexy ha diferenciado dos versiones de la tesis de la conexión necesaria entre el Derecho y la moral 100. Así, la versión débil, señala que existe una relación necesaria entre el Derecho y alguna moral.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 273 — similitud 0.1733
+
+**Detalle de puntaje:** tfidf=0.1633; bonus=0.0100
+
+> Bajo la impresión de la importancia predominante que el tribnnal tiene en un sistema de derecho consuetudinario y de precedentes, esta teoría pasa por alto la diferencia esencial que se da entre las "fuentes" del derecho jurídicamente obligatorias y las que no lo son. Se equivoca al 110 reconocer que fuente de derecho, es decir, origen del derecho, aqnello de donde el derecho proviene, aquello que produce derecho, sólo puede ser derecho, puesto que es e! derecho el que regula su propia producción.
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 18 — similitud 0.1681
+
+**Detalle de puntaje:** tfidf=0.1581; bonus=0.0100
+
+> FILOSOFÍA 4 16 Filosofía del Derecho el cuarto segmento el texto recoge los elementos adecuados a la discusión jus- filosófica sobre la relación justicia y Derecho; y en el quinto se reflexiona sobre el concepto –realidad– de persona humana como fundamento del Derecho en relación con la categoría de dignidad. Esta última parte, al tiempo, abre la puerta a consideraciones como la relación Derecho y moral, Derecho Natural y Derecho Positivo, Derecho Objetivo y Derecho Subjetivo, así como sobre la interpretación y argumentación adecuadas al Derecho desde la perspectiva realista.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 206 — similitud 0.1665
+
+**Detalle de puntaje:** tfidf=0.1565; bonus=0.0100
+
+> Así como no corresponde reconocer a la ciencia del derecho una función propia del derecho mismo, tampoco debe confundirse una función de la ciencia jurídica con una función del derecho. g) Superaci6n del dualismo entre el derecho en sentido ob;etivo y el derecho en sentido sub;etivo. Para la jurisprudencia tradicional, el sujeto de derecho representa -en tanto persona física o jurídica-, con "sus" obligaciones y derechos, el derecho en sentido subjetivo; el facultamiento caracterizado como derecho subjetivo no es más que un caso especial de esta representación amo plia.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 228 — similitud 0.1624
+
+**Detalle de puntaje:** tfidf=0.1224; bonus=0.0400
+
+> A., GONZÁLEZ LAGIER, D., Positivismo jurídico y neoconstitucionalismo, Fun- dación Coloquio Jurídico Europeo, Madrid, 2009, pp. 85 y ss.; GARCÍA FIGUE- ROA, A., «La teoría del Derecho en tiempos del constitucionalismo», en CAR- BONELL, M., (ed.), Neoconstitucionalismo(s), pp. 159 y ss.
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 41 — similitud 0.1615
+
+**Detalle de puntaje:** tfidf=0.1215; bonus=0.0400
+
+> La transformación de la cultura jurídica latinoamericana (Bogotá D.C.: Legis/Universidad de los Andes, 2004), 401. Así mismo: Eduardo García Máynez, Positivismo Jurídico, Realismo Sociológico y Iusnaturalismo (México D.F.: Fontanamara, 2002), 11-76.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 214 — similitud 0.1550
+
+**Detalle de puntaje:** tfidf=0.1150; bonus=0.0400
+
+> En el libro La decisión judicial, El debate Hart—Dworkin, refiriéndose a su libro El concepto de derecho, Hart señala, que en él argumenta que aun cuan- do puede haber muchas y diversas conexiones contingentes entre derecho y moral, no hay conexiones conceptuales necesarias entre el contenido del derecho y la moral; por ende, las disposiciones moralmente inicuas pueden ser válidas como reglas o principios jurídicos. Un aspecto de esta forma de separación entre derecho y moral, es que puede haber derechos y deberes jurídicos que no poseen ninguna justificación o fuerza moral.774 Las relaciones entre el derecho y la moral, existen, sin lugar a dudas.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 287 — similitud 0.1493
+
+**Detalle de puntaje:** tfidf=0.1093; bonus=0.0400
+
+> 1. ¿Es el Derecho un sistema de normas? En su obra ¿Es el Derecho un sistema de normas? (1969)58 Dworkin critica el modelo de Hart, según el cual en la construcción de un orden jurídico, solo tiene en cuenta las normas y deja sin explicar otros componentes del derecho, como los valores morales y principios generales. Explica: El derecho no se debe ni se puede separar de la moral A diferencia de Hart, plantea Dworkin que el derecho no puede separar lo legal de la moral.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 289 — similitud 0.1488
+
+**Detalle de puntaje:** tfidf=0.1088; bonus=0.0400
+
+> III. FILOSOFÍA JURÍDICA CONTEMPORÁNEA De acuerdo con Dworkin, las reglas y los principios legales son componen- tes paralelos de la ley. No persiguen un beneﬁcio social, sino que son un punto de referencia; el cumplimiento de ambas es un requisito de la justicia.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 197 — similitud 0.1351
+
+**Detalle de puntaje:** tfidf=0.0951; bonus=0.0400
+
+> García, Positivismo jurídico, Realismo sociológico y Iusnaturalismo, p. 32.
+
+### Manual práctico de fiParedes Lovón, Javier.pdf — p. 290 — similitud 0.1262
+
+**Detalle de puntaje:** tfidf=0.0962; bonus=0.0300
+
+> La diferencia en el derecho de reglas y principios La diferencia entre reglas y principios es simplemente una cuestión lógica, según Dworkin. ◾ La reglas están construidas para que haya directamente una consecuencia jurídica por la comisión de determinados hechos. ◾ Los principios, al contrario, dan una justiﬁcación al argumento en una dirección determinada, pero a la vez estos no son necesarios para tomar una decisión. 290 JAVIER FERNANDO PAREDES LOVÓN
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 249 — similitud 0.1187
+
+**Detalle de puntaje:** tfidf=0.0787; bonus=0.0400
+
+> Positivismo jurídico / Realismo sociológico y iusnatura- lismo. 4ª reimp., Fontamara, México, 2004. • Garzón V., E. (comp.).
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 55 — similitud 0.1172
+
+**Detalle de puntaje:** tfidf=0.0772; bonus=0.0400
+
+> Carrió (México: Editora Nacional, 1980) 168. La tesis de Hart, en efecto, reconoce que en los casos donde no existen medios jurídicos para “decir el derecho”, el juez bien debe recurrir a la discrecionalidad para garantizar su deber de fallar. H.L.A Hart, “Poscriptum”.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 371 — similitud 0.1171
+
+**Detalle de puntaje:** tfidf=0.0871; bonus=0.0300
+
+> PRIETO SANCHÍS, L., Estudios sobre derechos fundamentales, Deba- te, Madrid, 1990. — «El constitucionalismo de principios, ¿entre el positivismo y el iusnaturalismo? A propósito de «El Derecho dúctil» de Gustavo Zagrebelsky», Anuario de Filosofía del Derecho, XIII, 1996. — Constitucionalismo y Positivismo, Fontamara, México, 1997. — «Del mito a la decadencia de la Ley.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 216 — similitud 0.1116
+
+**Detalle de puntaje:** tfidf=0.0816; bonus=0.0300
+
+> ATIENZA y J. RUIZ MANERO han señalado que el positivismo incluyente sería merecedor de crítica ya que «su tesis distintiva —que la rela- ción entre Derecho y moral es contingente, pues es conceptualmente concebi- ble un sistema jurídico cuyos tests de validez no impliquen referencias a la moral— es de escaso interés para los juristas: pues aun concediendo que tales sistemas sean posibles, lo que es indudable es que no se trata de nuestros sistemas, de los Derechos del Estado constitucional, ni tampoco de los que cabe razonablemente prever», «Dejemos atrás el positivismo jurídico», en RAMOS PASCUA, J. A., RODILLA GONZALEZ, M.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 127 — similitud 0.1107
+
+**Detalle de puntaje:** tfidf=0.0807; bonus=0.0300
+
+> Se podría señalar, con razón, que la exclusiva identificación del Derecho como un conjunto de reglas simplifica en exceso la configuración interna del mismo. Es cierto que la Teoría del Derecho contemporánea ha dedicado parte de sus más relevan- tes esfuerzos a demostrar que el Derecho tiene un mayor nivel de complejidad, lo cual no se ignora en absoluto en este traba- jo. Si en esta ocasión se ha optado por la vinculación entre el Derecho y las reglas (o las normas) es porque se ha querido explicitar, aún corriendo el riesgo de incurrir en un posible reduccionismo, en la necesaria conexión entre la idea de Dere- cho y la existencia de patrones o modelos de comportamiento.
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 29 — similitud 0.1099
+
+**Detalle de puntaje:** tfidf=0.0899; bonus=0.0200
+
+> La Moderna Respuesta del Realismo Jurídico, de Javier Hervada, (Bogotá: Temis, 2005), XI. 35 Carlos Ignacio Massini, Sobre el Realismo Jurídico.
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 20 — similitud 0.1098
+
+**Detalle de puntaje:** tfidf=0.0698; bonus=0.0400
+
+> Existe, también, una tercera po- sibilidad problemática: la visión crítica y democrática del estudio del derecho, en la cual se procura a partir de los problemas que la afectan, dando primacía, en la comu- nidad académica, el uso de herramientas discursivas […] Este modelo es defendido por las escuelas críticas del derecho. [Sin embargo,] desde el positivismo es casi im- posible una crítica al modelo jurídico imperante; desde el positivismo incluyente, es más factible, pero sin salir de los marcos establecidos por el sistema legal para ello, y desde los estudios críticos, los análisis de los casos deben procurar una interpretación 15 En efecto, en el imaginario de muchos de los estudiantes...
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 63 — similitud 0.1075
+
+**Detalle de puntaje:** tfidf=0.0775; bonus=0.0300
+
+> Para el caso presente, los principios generales del Derecho (criterios auxilia- res en Colombia o fuentes complementarias en España), se caracterizan, siguien- do el planteamiento de Dworkin, teniendo en cuenta la distinción entre principios y reglas desarrollada por Alexy. Esto es, por la propiedad fundamental que dis- tingue principios y reglas: los primeros representan mandatos de optimización, o sea, son “normas que ordenan que algo sea realizado en la mayor medida posible, dentro de las posibilidades jurídicas y reales existentes”,110 a diferencia de las reglas, que “contienen determinaciones en el ámbito de lo fáctica y jurídicamente posible”.111 108 Ibíd., 68.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 53 — similitud 0.1047
+
+**Detalle de puntaje:** tfidf=0.0647; bonus=0.0400
+
+> Derecho, Poder y Moral en el Estado de Derecho a su control. Este es un esquema que se puede identificar con lo que tradicionalmente ha supuesto el iusnaturalismo, que encontramos en Radbruch 44, pero que también reaparece en las posiciones —que han sido caracterizadas genéricamente como no positivistas 45— de Ronald Dworkin y de Robert Alexy 46 y, en general, aquellas propuestas que, en el marco del neoconstitucionalismo (constitucionalismo contemporáneo), señalan la indisponibilidd de determinados contenidos en rela- ción con la acción normativa del Poder político.
+
+### Filosofía del Derechoegorio Rojas González.pdf — p. 20 — similitud 0.1027
+
+**Detalle de puntaje:** tfidf=0.0727; bonus=0.0300
+
+> la práctica del derecho puede oscilar en dos extremos: por un lado, puede ser cínica, en donde lo que importa es la ley, lo que impera es la estabilidad y estructura de las normas, los formalismos y la integridad del sistema jurídico como tal, estará enmar- cada en el positivismo jurídico, ya sea ideológico, teórico o metodológico; y otra es la realista, en donde se “tiene una pretensión idealista como condición ontológica de la existencia del derecho”.
+
+**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
+
+## Ficha 10. funcion social del derecho
+
+**Calidad estimada:** media
+**Mejor similitud:** 0.1822
+**Similitud promedio:** 0.1255
+**Fuentes:** Filosofia del derechorgilio Ruiz Rodriguez.pdf; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf; Razón y voluntad en eoig, Francisco Javier.pdf; Teoría pura del derecho - Hans Kelsen (1).pdf
+**Ubicaciones:** Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 218; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 43; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 75; Filosofia del derechorgilio Ruiz Rodriguez.pdf, p. 76; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 116; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 232; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 241; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 263; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 39; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 40; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 41; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 43; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 44; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 65; LECCIONES DE TEORÍA D Benito de Castro Cid.pdf, p. 75; Razón y voluntad en eoig, Francisco Javier.pdf, p. 149; Razón y voluntad en eoig, Francisco Javier.pdf, p. 229; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 121; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 16; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 248; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 284; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 308; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 309; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 340; Teoría pura del derecho - Hans Kelsen (1).pdf, p. 342
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 44 — similitud 0.1822
+
+**Detalle de puntaje:** tfidf=0.1522; bonus=0.0300
+
+> Por otra parte, se piensa también de manera generalizada que esa estre- cha vinculación que existe entre el Derecho y la vida social se realiza en sen- tido doble y recíproco: el que lleva del Derecho a la vida social y el que con- duce de la vida social al Derecho. No sólo puede constatarse que el Derecho hace siempre y sólo referencia a las relaciones sociales que los hombres de- sarrollan, sino que puede comprobarse también que allí donde existen rela- ciones sociales, allí donde se desarrolle un mínimo de vida social, allí está presente el Derecho, tal como pone de relieve el viejo aforismo latino ubi so- cietas, ibi ius; ubi ius, ibi societas.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 76 — similitud 0.1751
+
+**Detalle de puntaje:** tfidf=0.1351; bonus=0.0400
+
+> Sociología —y de ahí sucesivamente se han celebrado año con año—, dando con ello carta de entidad a la sociología jurídica como una disciplina que for- ma parte de la sociología en general o, mejor, como una sociología especiali- zada y a la que se le asigna como objeto de estudio el “fenómeno del Derecho no bajo el punto de vista normativo propio de la ciencia jurídica, sino como fenómeno social, usando el método inductivo”.216 Ramón Soriano, escribe que la sociología del derecho puede ser definida con sencillez y amplitud a través de la interconexión de los términos de su nomenclatura: la sociología jurídica se ocupa de la influencia de los factores sociales en el derecho y de la...
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 43 — similitud 0.1625
+
+**Detalle de puntaje:** tfidf=0.1425; bonus=0.0200
+
+> suelto que se debe hacer porque ineludiblemente se encuentra inserto en esa vida social. En razón de esto es que Legaz y Lacambra afirma que tiene un sentido fundamental decir que el derecho es forma de la vida social, porque se constituye por la referencia a la justicia.77 Y no sólo eso, sino que aún po- demos decir que así como la dimensión social es ineliminable de la existencia humana, de igual manera afirmamos que el derecho es una forma necesaria del vivir social, ya que sólo en la vida social tiene sentido hablar de derecho.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 241 — similitud 0.1498
+
+**Detalle de puntaje:** tfidf=0.1098; bonus=0.0400
+
+> El Derecho, en cuanto hecho social complejo que surge en el horizonte de la vida humana junto a los otros múltiples fenómenos o hechos sociales en que se manifiesta esa vida, presenta dos diferentes (aunque comple- mentarias) perspectivas de análisis: su incesante fluir a través del tiempo histórico y su integración sistemática en el conjunto de los fenómenos so- ciales. Consecuentemente, el estudio de la dimensión fáctica del Derecho ha desembocado en el desarrollo de dos distintos saberes particulares (la Historia del Derecho y la Sociología Jurídica) cuyos rasgos básicos es ine- vitable recordar, aunque sea muy brevemente. 247
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 75 — similitud 0.1469
+
+**Detalle de puntaje:** tfidf=0.1069; bonus=0.0400
+
+> A partir del año 1950, en plena posguerra, es cuando los problemas que vi- ven las sociedades causados por la guerra, van a exigir el surgimiento de So- ciologías especializadas, entre las que comienza a configurarse la Sociología jurídica, con el fin de llegar a un conocimiento realista del derecho, a un aná- lisis e investigación empírica del mismo en conexión con sus causas y efectos de carácter social.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 41 — similitud 0.1450
+
+**Detalle de puntaje:** tfidf=0.1150; bonus=0.0300
+
+> Como es obvio, el control social se da, en una u otra forma, en todos los niveles de la estructura social y actúa sobre los diferentes tipos de relaciones sociales, canalizando su presión a través de las múltiples instituciones que integran la estructura social y de los diversos grupos intermedios que consti- tuyen los núcleos de radicación del individuo en la sociedad. Por otra parte, el control social opera en direcciones y con sentidos muy diversos, buscando la integración de los miembros del grupo por caminos dispares.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 39 — similitud 0.1440
+
+**Detalle de puntaje:** tfidf=0.1140; bonus=0.0300
+
+> II. CONTROL SOCIAL Y NORMAS Parece inevitable que la coordinación e integración que, como acabamos de ver, viene exigida por el normal funcionamiento de cualquier vida social desemboque finalmente en la aplicación, por parte del correspondiente gru- po, de algún tipo de control social; en otro caso, sería difícil lograr el grado mínimo de organización colectiva. A su vez, esta organización presupone que cada grupo establezca los cauces regularizados de actuación para que sus miembros sepan lo que han de hacer en cada circunstancia y conozcan las consecuencias que tendrá para ellos su propia conducta en cada supues- to.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 121 — similitud 0.1426
+
+**Detalle de puntaje:** tfidf=0.1026; bonus=0.0400
+
+> A veces se cuestiona la posibilidad de una ciencia jurídica normativa, es decir, de una ciencia del derecho que describa el derecho como un sistema de normas, con el argumento de que el concepto de lo debido, cuya expresi6n es la norma, carece de sentido, o es un mero simulacro ideológico. 81 De ahi se arriba a la concepción de que no podría existir una ciencia jurídica nor- mativa, es decir, orientada al conocimiento de normas; de que la ciencia del derecho sólo es posible como sociología del derecho. La sociología jurídica relaciona los hechos reales que abarca, no con normas válidas, sino con otros hechos reales, como causas y efectos.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 116 — similitud 0.1359
+
+**Detalle de puntaje:** tfidf=0.1159; bonus=0.0200
+
+> Pues bien, si se quiere mantener la afirmación de que el Derecho posee una obligatoriedad propia y característica no reductible a la obligatoriedad moral, habrá que caracterizar a esa obligatoriedad diciendo que consiste en la capacidad de vincular al hombre, en cuanto sujeto de la vida social y del Derecho, a la realización de las conductas tipificadas en las normas y que esa capacidad nace de la relación necesaria que existe entre el Derecho y la vida humana.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 16 — similitud 0.1358
+
+**Detalle de puntaje:** tfidf=0.1158; bonus=0.0200
+
+> Si se parte de la distinción entre ciencias naturales y ciencias sociales, y, por ende, de una distinción entre naturaleza y sociedad, como distinción entre los diferentes objetos de esas ciencias, se plantea entonces, por de pronto, el inte- rrogante de si la ciencia jurídica es una ciencia natural o una ciencia social; de si el derecho es un objeto natural o un objeto social. Pero esta contraposición
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 263 — similitud 0.1262
+
+**Detalle de puntaje:** tfidf=0.0862; bonus=0.0400
+
+> No puede abandonarse a los estudiantes de Derecho al exclusivismo de unos conocimientos técnicos concretos e inmediatamente operativos. Es necesario que adquieran al mismo tiempo la información y la formación suficientes para tener unas ideas cla- ras sobre el sentido y la función social del Derecho. Es preciso proporcionarles todos aquellos co- nocimientos que son capaces de ofrecer una visión global comprensiva del fenómeno jurídico.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 309 — similitud 0.1211
+
+**Detalle de puntaje:** tfidf=0.0811; bonus=0.0400
+
+> Se trata del Eitado como aparato burocrático de funcio- ltU~ Yo mismo lo hice en mis Hauptprobleme der SttUttsrechtfehre, pp. 465 Y ss. donde la legislación es interpretada COmo una función social y no como función del Estado.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 308 — similitud 0.1206
+
+**Detalle de puntaje:** tfidf=0.0806; bonus=0.0400
+
+> Pero como el Estado, como persona activa, no es una realidad, sino una construcci6n auxi- liar del pensamiento jurídico, la pregunta de si una función es una función estatal, no está dirigida a verificar la existencia de un hecho. Si se la formula y responde con ese sentido, estará equivocadamente planteada y erróneamente contestada.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 284 — similitud 0.1205
+
+**Detalle de puntaje:** tfidf=0.0805; bonus=0.0400
+
+> Sin embargo, si la conducta del órgano burocrático --Como en el caso de la administración estatal, que no tiene, o no tiene primariamente, el carácter de producción o aplicación de de- recho, sino e! de cumplimiento de las normas jurídicas- es atribuida al Estado, interpretándosela como función del Estado (en sentido estricto), entonces el fin del Estado (en sentido amplio) es realizado inmediatamente con esa fun· ción estatal (en sentido estricto).
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 43 — similitud 0.1167
+
+**Detalle de puntaje:** tfidf=0.0967; bonus=0.0200
+
+> TII. LA VINCULACIÓN ENTRE LA VIDA SOCIAL Y EL DERECHO Dentro del diversificado complejo de normas de conducta que guían el dinamismo de la sociedad, hay un tipo de reglas cuya compenetración con las necesidades y exigencias de la vida social, no sólo es profunda y perma- nente, sino que es también decisiva para la configuración de ambos.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 65 — similitud 0.1115
+
+**Detalle de puntaje:** tfidf=0.0815; bonus=0.0300
+
+> La primera postura sostiene que Derecho y Poder representan fenóme- nos tan esencialmente distintos que se excluyen mutuamente, constituyÉéndo- se en alternativas de actuación radicalmente contrapuestas. En cuanto prin- cipios de acción social, Derecho y Poder han de ser enjuiciados según las dos categorías contrarias del bien y del mal: el Derecho representa el orden social éticamente bueno, el Poder y la fuerza son lo malo en sí. Por eso, al Derecho se le asigna la misión de controlar el ejercicio del Poder dentro de las relaciones sociales 10, El segundo punto de vista afirma, en cambio, que el Derecho y el Poder,
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 248 — similitud 0.1092
+
+**Detalle de puntaje:** tfidf=0.0892; bonus=0.0200
+
+> 238 HANS KELSEN un derecho naturalmente producido y un derecho producido por los hombres, reflejan en e! dualismo de un derecho producido por el espíritu del pueblo, o por la solidaridad social, y un derecho reproducido mediante la legislación y la costumbre. Lo que se dijo contra aquella doctrina, puede argumentarse <!ontra las dos otras.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 309 — similitud 0.1080
+
+**Detalle de puntaje:** tfidf=0.0680; bonus=0.0400
+
+> Si se investiga el uso lingüístico considerado, es decir, si se intenta establecer bajo qué condiciones el lenguaje jurídico atribuye ciertas funciones determi- nadas por el orden jurídico nacional al Estado, como cuando se dice que el Estado -a través de determinado hombre como órgano suyo- desempeña determinada función, resulta que, en general, sólo se atribuye al Estado la función determinada por el orden jurídico, sólo se interpreta como función del Estado, cuando es desempeñada por un individuo que trabaja con divi- sión del trabajo, designado al efecto, o, lo que es lo mismo, que un individuo sólo es considerado órgano del Estado cuando, conforme a procedimiento de- terminado por el...
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 40 — similitud 0.1070
+
+**Detalle de puntaje:** tfidf=0.0870; bonus=0.0200
+
+> Asimismo, el control social supone siempre la presencia de algún tipo de autoridad colectiva que se impone e influye sobre los individuos. A diferencia del “autocontrol o control que los indi- viduos desarrollan para dirigir su propia conducta de acuerdo con los principios o valores que se han prefijado, el «control social» consiste siempre en una cierta presión de alguna autoridad.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 75 — similitud 0.1067
+
+**Detalle de puntaje:** tfidf=0.0867; bonus=0.0200
+
+> Por otra parte, el proce- so de evolución y transformación interna, en cuanto a su alcance y a su contenido, de alguna o algu- nas de estas características del Estado de Derecho ha impuesto la necesidad teórica de distinguir varios tipos o formas históricas de «Estado de Derecho» (el Estado liberal de Derecho, el Estado social de Derecho, el Estado democrático de Derecho...) y ha provocado, al mismo tiempo, una cierta conciencia generalizada de crisis del «Estado de Derecho», Es claro que la caracterización que aquí se desarrolla responde fundamentalmente al modelo del Estado liberal de Derecho, ya que, en su origen, durante todo el pasado siglo y en las dos prime- ras décadas del actual...
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 149 — similitud 0.1059
+
+**Detalle de puntaje:** tfidf=0.0759; bonus=0.0300
+
+> Identificar unos supuestos criterios de per- fección jurídica es una tarea ciertamente complicada a no ser que se adopte una perspectiva sustantiva, es decir, que la per- fección se identifique con determinados contenidos, y no otros, de las normas. Considerando que el Derecho es a fin de cuentas una técnica de control social, la perfección debe venir determi- nada, en todo caso, por la capacidad estructural y técnica del Derecho a la hora de llevar a cabo ese control social. Es esa capacidad la que le va a permitir presentarse como un sistema de control social.
+
+### Filosofia del derechorgilio Ruiz Rodriguez.pdf — p. 218 — similitud 0.1010
+
+**Detalle de puntaje:** tfidf=0.0610; bonus=0.0400
+
+> Una no- ción del derecho será moral cuando predomina en ella la consideración racional del derecho como medio para lograr el fin último del hombre. Generalmente esto se hace considerando al derecho como un instrumento para la realización de la justicia.787 Es así, que por lo general el derecho es considerado de esta manera; luego el derecho tiene sentido moral.
+
+### LECCIONES DE TEORÍA D Benito de Castro Cid.pdf — p. 232 — similitud 0.0998
+
+**Detalle de puntaje:** tfidf=0.0598; bonus=0.0400
+
+> No puede iden- tificarse, sin embargo, la sanción jurídica con la coactividad; hay muchas ac- tuaciones jurídicas de carácter coactivo que no tienen ningún sentido sancio- nador 15, Otro de los rasgos característicos de las sanciones jurídicas es, según se ha indicado ya, el estar previstas y reglamentadas en las propias normas jurí- dicas para el supuesto de incumplimiento. Esta nota, que no es desde luego exclusiva, sí plantea, sin embargo, la necesidad de profundizar en el análisis de la relación que hay entre la infracción del deber jurídico y la sanción e in- cluso en el examen del vigor que tiene la conexión entre el Derecho y sus sanciones.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 340 — similitud 0.0983
+
+**Detalle de puntaje:** tfidf=0.0583; bonus=0.0400
+
+> En un contexto anterior,171 ya se apuntó la diferencia que se da al delito estatuido en este respecto, sea por el orden jurídico internacional, sea por un orden jurídico estatal. Como se indicó, afirmar que la guerra y las represalias son sanciones del derecho internacional dirigidas contra el Estado, siguifica que el padecer los males de esas sanciones, que de hecho son sufridas por los hombres pertene- cientes al Estado, es atribuido a la persona del Estado. La situación objetiva que se presenta puede ser expuesta en forma más realista sin recurrir a esta atribución ficticia.
+
+### Teoría pura del derecho - Hans Kelsen (1).pdf — p. 342 — similitud 0.0965
+
+**Detalle de puntaje:** tfidf=0.0565; bonus=0.0400
+
+> Las obligaciones que el derecho internacional impone inmediatamente a individuos se constituyen a través de las sanciones específicas del derecho estatal: sanciones penales y ejecución civil. El derecho internacional puede dejar a un orden jurídico estatal el estatuir y ejecutar esas sanciones, como en el caso del delito internacional de piratería. Esas sanciones pueden estatuirse también en una norma producida mediante un tratado internacional, dejándose su aplicación al caso particular a un tribunal internacional creado por un tratado internacional, como en el caso del procesamiento penal de los delin- cuentes de guerra, conforme al acuerdo de Londres del 8 de agosto de 1945.
+
+### Razón y voluntad en eoig, Francisco Javier.pdf — p. 229 — similitud 0.0952
+
+**Detalle de puntaje:** tfidf=0.0552; bonus=0.0400
+
+> Un concepto material de Estado de Derecho presentarse como un tipo de formalismo ético, y por tanto, le son aplicables las mismas críticas 406. Y respecto al positivismo metodológico, que por otra parte es posiblemente el mejor positivismo que se puede mantener en la actualidad o, en otros términos, el positivismo a favor del cual concurren mejores razones, pienso que sus tesis centrales referidas al origen social de las fuentes del Derecho y a la posibilidad —y conveniencia— de una definición del concepto de Derecho en términos moral- mente neutrales, pueden seguir siendo defendidas.
+
+**Observación automática:** La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto.
