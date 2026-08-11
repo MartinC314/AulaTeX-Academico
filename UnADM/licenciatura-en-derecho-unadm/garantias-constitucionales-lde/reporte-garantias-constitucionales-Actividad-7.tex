@@ -1,0 +1,249 @@
+\documentclass[
+  spanish,
+  letterpaper, oneside
+]{article}
+
+% PRODUCTO: Reporte de investigación (técnica 76 del catálogo UnADM).
+% Ficha oficial: López, A. (2022), 100 Técnicas Didácticas, Fascículo 4, pp. 173-183.
+% Los cinco elementos de la ficha se alojan en el esqueleto de tres actos: (1) y (5)
+% coinciden con Introducción y Conclusión; (2), (3) y (4) son subsecciones del desarrollo.
+% Planeación S7, Tema 3: Bloque de regularidad constitucional (CT 293/2011).
+% Fuentes: 9 tesis SCJN en referencias-.../notas-.../actividad-6-reporte-de-investigacion.
+
+% Los metadatos de portada NO admiten \pendiente: init.tex los evalúa con
+% \ifthenelse antes de que la macro exista.
+% El subtítulo viaja al pie de página: máximo 68 caracteres o choca con el curso.
+\def\documenttitle {Diferencias entre el control de constitucionalidad y el de convencionalidad}
+\def\documentsubtitle {Reporte de lectura sobre criterios jurisdiccionales de la SCJN}
+\def\documentsubject {Actividad 7 - Garantías Constitucionales}
+
+\def\documentauthor {Martin Jonathan de la Cruz}
+\def\coursename {Garantías Constitucionales}
+\def\coursecode {025}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Garantías Constitucionales}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de México}
+
+\def\authortable {
+  \begin{tabular}{ll}
+    \textbf{Alumno:}
+    & \begin{tabular}[t]{l}
+      Martin Jonathan de la Cruz \\
+    \end{tabular} \\
+    Matrícula: & ES2611202040 \\
+    Figura docente: & Aarón López Pérez \\
+    Semestre/Bloque: & 2 / 1 \\
+    & \\
+    \multicolumn{2}{l}{Fecha de realización: \today} \\
+    \multicolumn{2}{l}{\universitylocation}
+  \end{tabular}
+}
+
+\input{template}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,fit,shapes.geometric}
+\setcitestyle{authoryear,open={(},close={)}}
+
+% Plantilla-Informe no define \pendiente (sí lo hacen las plantillas maestras).
+% Marca en rojo lo que falta redactar; al completar la actividad no debe quedar ninguno.
+\providecommand{\pendiente}[1]{\textcolor{red}{[PENDIENTE: #1]}}
+
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+  \ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+    \AddToShipoutPictureBG*{%
+      \begin{tikzpicture}[remember picture,overlay]
+        \node[
+          opacity=\coverwatermarkopacity,
+          inner sep=0pt,
+          xshift=\coverwatermarkxshift,
+          yshift=\coverwatermarkyshift
+        ] at (current page.center) {%
+          \includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+        };
+      \end{tikzpicture}%
+    }%
+  }{}%
+}
+
+\begin{document}
+
+\insertcoverwatermark
+\templatePortrait
+\templatePagecfg
+\onehalfspacing
+
+% Pasos 1, 2 y 9 de la ficha (portada, índice y referencias) los resuelve la
+% plantilla: no se rehacen dentro del cuerpo.
+\templateIndex
+\templateFinalcfg
+
+%% ===========================================================================
+%% ACTO 1 - Introducción.
+%% Cubre el elemento (1) de la ficha: problema, antecedentes, hipótesis y
+%% objetivos. Es la MISMA sección de introducción del reporte, no una aparte.
+%% ===========================================================================
+\section{Introducción}
+
+La reforma constitucional de junio de 2011 dejó al juez mexicano con dos herramientas
+que se parecen y no son lo mismo. Una le permite contrastar cualquier norma con la
+Constitución; la otra, con los tratados internacionales de derechos humanos y con la
+jurisprudencia que los interpreta. Ambas pueden ejercerse de oficio, ambas terminan
+en la inaplicación de la norma y ambas se invocan con frecuencia en la misma
+sentencia. Esa proximidad explica que se confundan, y la confusión no es inocua: de
+ella dependen la competencia del órgano que resuelve, el efecto de su decisión y el
+parámetro que debe emplear para justificarla.
+
+El presente reporte de lectura examina esa distinción a partir de los criterios
+jurisdiccionales asignados y de la bibliografía obligada de la unidad. La pregunta
+que lo ordena es la siguiente: \textbf{si el control de constitucionalidad y el de
+convencionalidad comparten la técnica de la inaplicación, ¿en qué consiste realmente
+su diferencia y qué consecuencias prácticas se siguen de ella?} Sostengo que la
+respuesta no está en el procedimiento, sino en el parámetro de contraste y en el
+alcance del efecto; y que, tras la Contradicción de Tesis 293/2011, la diferencia
+tiende a disolverse en un único control de regularidad, aunque subsiste una
+asimetría relevante que conviene no perder de vista.
+
+\section{Dos controles frente a una misma norma}
+
+\subsection{El parámetro de contraste como criterio de distinción}
+
+La lectura de los criterios asignados permite fijar primero aquello que separa a
+ambos controles. El \textbf{control de constitucionalidad} confronta la norma o el
+acto con la Constitución y con la interpretación que de ella hace la Suprema Corte.
+El \textbf{control de convencionalidad} la confronta con los tratados
+internacionales de derechos humanos y con la jurisprudencia de la Corte
+Interamericana de Derechos Humanos \citep{scjnTesis2001605}. La diferencia inicial,
+por tanto, es de \textbf{parámetro}: cambia la norma que sirve de medida, no la
+operación que se realiza sobre la norma medida.
+
+Esta precisión importa porque el vocabulario de la reforma puede inducir a error. Al
+reconocer el artículo 1.\textsuperscript{o} los derechos humanos de fuente
+constitucional y convencional, podría suponerse que todo juez quedó habilitado para
+resolver cualquier conflicto normativo invocando indistintamente uno u otro cuerpo.
+\textbf{No obstante}, la Corte precisó que la obligación se ejerce siempre
+\textit{«en el ámbito de sus competencias»} \citep{scjnTesis2005056}, lo que
+significa que el parámetro se amplió, pero la competencia no.
+
+\subsection{Concentrado y difuso: la vía y el efecto}
+
+La segunda distinción no corre entre constitucionalidad y convencionalidad, sino
+dentro de cada una: la que media entre control concentrado y control difuso. El
+\textbf{control concentrado} corresponde a los órganos del Poder Judicial de la
+Federación mediante vías específicas —amparo, controversia constitucional y acción
+de inconstitucionalidad— y puede culminar en una declaratoria de invalidez con
+efectos generales. El \textbf{control difuso} habilita a cualquier autoridad
+jurisdiccional para dejar de aplicar una norma en el caso concreto, sin expulsarla
+del ordenamiento \citep{scjnTesis2005720}.
+
+La consecuencia práctica es considerable y la Corte la enunció sin ambigüedad: el
+ejercicio del control difuso \textit{no} implica declaratoria general de
+inconstitucionalidad \citep{scjnTesis2005057}. El juez que inaplica resuelve su
+asunto; la norma sigue vigente para los demás. \textbf{Por ello}, quien confunde
+ambos planos suele pedir al juzgador ordinario un pronunciamiento que éste no puede
+emitir, o atribuir a una inaplicación un alcance derogatorio que no posee.
+
+Conviene añadir que los dos controles no se excluyen ni se ordenan jerárquicamente
+entre sí. El ejercicio del control difuso \textit{«no limita ni condiciona»} el del
+concentrado \citep{scjnTesis2002264}, y tampoco opera como remedio subsidiario al
+que sólo se acuda cuando falta otra vía \citep{scjnTesis2010143}. Son cauces
+paralelos con efectos distintos, no etapas sucesivas de un mismo procedimiento.
+
+\subsection{La obligación ex officio y sus condiciones}
+
+Un tercer rasgo comparte ambos controles y merece atención propia: su carácter
+oficioso. Los órganos jurisdiccionales deben ejercerlos aunque las partes no lo
+soliciten \citep{scjnTesis2003679}, criterio que se extendió también a la
+jurisdicción contencioso-administrativa \citep{scjnTesis2005116}. La razón es
+comprensible: si la protección de los derechos humanos dependiera de que el
+justiciable supiera invocarla con la técnica adecuada, quedaría condicionada a la
+calidad de su defensa.
+
+Ahora bien, «de oficio» no equivale a «sin método». La Corte fijó condiciones
+generales para su ejercicio \citep{scjnTesis2005622} y estableció una secuencia
+ordenada que debe agotarse en este orden \citep{scjnTesis2000073}:
+
+\begin{enumerate}
+  \item \textbf{Interpretación conforme en sentido amplio:} leer la norma a la luz de
+        la Constitución y de los tratados, favoreciendo en todo tiempo la protección
+        más amplia de la persona.
+  \item \textbf{Interpretación conforme en sentido estricto:} cuando caben varias
+        lecturas válidas, preferir aquella que resulte acorde con el parámetro de
+        regularidad constitucional.
+  \item \textbf{Inaplicación:} sólo procede cuando las alternativas anteriores se
+        agotaron sin lograr la compatibilidad, y su efecto se limita al caso concreto.
+\end{enumerate}
+
+Además, cada órgano lo ejerce dentro de su competencia y
+no más allá de ella \citep{scjnTesis2009179}. \textbf{Es decir}, la oficiosidad
+describe el deber de examinar, no una licencia para inaplicar sin justificación.
+
+\subsection{El límite: restricciones constitucionales expresas}
+
+Aquí aparece la asimetría que impide tratar a ambos controles como equivalentes
+perfectos. La jurisprudencia de la Corte Interamericana resulta vinculante para los
+jueces mexicanos \citep{scjnTesis2005942}; sin embargo, el control de
+convencionalidad no autoriza a desconocer las restricciones expresas que la propia
+Constitución establece \citep{scjnTesis2006165}. Es la misma solución que fijó la
+Contradicción de Tesis 293/2011 al construir el parámetro de regularidad
+constitucional \citep{scjnTesis2006224, scjnIijCT293y2017}.
+
+\textbf{A mi juicio}, este es el punto donde la distinción conserva verdadera
+utilidad práctica. Si los derechos de ambas fuentes integran un mismo parámetro, la
+pregunta por cuál control se ejerce pierde relevancia en la mayoría de los casos:
+el juez contrasta con un bloque unificado. \textbf{Sin embargo}, cuando la
+Constitución contiene una restricción expresa, el origen de la norma vuelve a
+importar, porque la disposición constitucional prevalece. La diferencia, entonces,
+no desapareció: quedó reservada para los casos límite, que son precisamente los más
+difíciles.
+
+\section{Conclusión}
+
+El examen de los criterios asignados permite sostener tres conclusiones. La primera
+es que la diferencia entre control de constitucionalidad y de convencionalidad no
+radica en la técnica —ambos pueden ejercerse de oficio y ambos culminan en la
+inaplicación— sino en el \textbf{parámetro de contraste}: la Constitución en un
+caso, los tratados de derechos humanos y la jurisprudencia interamericana en el
+otro.
+
+La segunda es que la distinción operativamente decisiva no corre entre ambos
+controles, sino entre sus modalidades concentrada y difusa. De ahí dependen la
+competencia del órgano y el efecto de la resolución: invalidez general en un caso,
+inaplicación al caso concreto en el otro. \textbf{Considero} que buena parte de los
+errores de planteamiento en la práctica forense provienen de confundir estos dos
+ejes, que son independientes entre sí.
+
+La tercera es que, tras la Contradicción de Tesis 293/2011, ambos controles
+convergen en un control único de regularidad constitucional, con la salvedad de las
+restricciones constitucionales expresas. \textbf{Desde mi perspectiva}, esa
+convergencia es coherente con el artículo 1.\textsuperscript{o} y favorece la
+protección efectiva de la persona, porque libera al juzgador de una discusión sobre
+etiquetas y lo obliga a razonar sobre el contenido del derecho invocado. La reserva
+de las restricciones expresas, en cambio, mantiene abierta una tensión con el
+estándar interamericano que la jurisprudencia todavía administra caso por caso, y
+que difícilmente podrá resolverse sin una decisión de fondo sobre la relación entre
+soberanía constitucional y compromiso convencional.\footnote{En la elaboración de
+este trabajo se utilizaron herramientas de inteligencia artificial como apoyo para
+la organización y revisión del texto, conforme a los Lineamientos para el uso ético
+y responsable de la Inteligencia Artificial en el ámbito académico de la UnADM. El
+análisis, la selección de fuentes y la postura sostenida son de mi autoría.}
+
+\bibliography{garantias-constitucionales}
+
+\end{document}
