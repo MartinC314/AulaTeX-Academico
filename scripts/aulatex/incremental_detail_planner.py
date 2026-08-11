@@ -352,16 +352,17 @@ class IncrementalDetailPlanner:
         "cronología" -> linea_de_tiempo). Evita colisiones por orden del diccionario.
         """
         normalized = context_excerpt.casefold()
-        candidates: list[tuple[int, str]] = []
-        for technique_id, contract in DIDACTIC_TECHNIQUE_CONTRACTS.items():
+        candidates: list[tuple[int, int, str]] = []
+        for order, (technique_id, contract) in enumerate(DIDACTIC_TECHNIQUE_CONTRACTS.items()):
             for alias in contract.get("aliases", ()):
                 alias_cf = str(alias).casefold()
                 if alias_cf and alias_cf in normalized:
-                    candidates.append((len(alias_cf), technique_id))
+                    candidates.append((len(alias_cf), -order, technique_id))
         if not candidates:
             return "general"
-        candidates.sort(key=lambda item: item[0], reverse=True)
-        return candidates[0][1]
+        # Empate de longitud: gana el declarado primero (las legacy van al frente).
+        candidates.sort(key=lambda item: (item[0], item[1]), reverse=True)
+        return candidates[0][2]
 
     def _collect_inherited_compilation_fixes(
         self,

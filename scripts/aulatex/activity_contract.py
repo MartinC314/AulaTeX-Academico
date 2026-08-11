@@ -259,7 +259,10 @@ REALIZAR_ACTIVIDAD_PIPELINE_CONTRACT = {
 }
 
 
-DIDACTIC_TECHNIQUE_CONTRACTS = {
+# Contratos históricos validados en producción. Sus claves (cuestionario_diagnostico,
+# tabla_didactica, foro_diagnostico) NO existen en el catálogo de 100 técnicas y siguen
+# usándose en memorias y manifiestos, por eso se conservan y se superponen al catálogo.
+_LEGACY_TECHNIQUE_CONTRACTS = {
     "cuestionario_diagnostico": {
         "aliases": ("cuestionario", "diagnóstico", "diagnostico", "reactivo"),
         "required_visible_elements": ("pregunta", "respuesta", "justificación"),
@@ -409,7 +412,9 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
         ),
     },
     "tabla_didactica": {
-        "aliases": ("tabla", "cuadro", "cuadro comparativo", "longtable", "tabular"),
+        # "cuadro comparativo" pertenece a la técnica #1 del catálogo; aquí solo
+        # quedan los alias genéricos de tabla.
+        "aliases": ("tabla", "cuadro", "longtable", "tabular"),
         "required_visible_elements": ("título", "encabezados", "filas", "criterio de lectura"),
         "preservation_rule": "Si la técnica usa tabla o cuadro, conservar estructura tabular visible con título/caption, encabezados claros, filas completas y una lectura breve; usar longtable, landscape, scriptsize, tabcolsep y arraystretch cuando el contenido sea amplio.",
         "visible_style_rule": "El criterio de organización de la tabla y la herramienta didáctica deben quedar comentados si son guía editorial; el texto visible debe entrar directo al tema sin metadiscurso.",
@@ -488,6 +493,34 @@ DIDACTIC_TECHNIQUE_CONTRACTS = {
         ),
     },
 }
+
+
+def _merge_technique_contracts() -> dict[str, Any]:
+    """Catálogo de 100 técnicas + contratos legacy superpuestos.
+
+    Antes solo se exponían las 7 técnicas legacy, así que el motor no podía
+    reconocer las otras 93 (entre ellas reporte_de_investigacion).
+
+    Las legacy se insertan PRIMERO a propósito: la detección por alias desempata
+    por orden de inserción, y alias compartidos ("cuestionario", "foro") deben
+    seguir resolviendo a la clave legacy que ya usan memorias y manifiestos.
+    """
+    try:
+        from .didactic_catalog import TECHNIQUE_CONTRACTS
+    except ImportError:  # ejecución como script suelto
+        from didactic_catalog import TECHNIQUE_CONTRACTS  # type: ignore[no-redef]
+
+    merged: dict[str, Any] = {}
+    for tech_id, legacy in _LEGACY_TECHNIQUE_CONTRACTS.items():
+        base = dict(TECHNIQUE_CONTRACTS.get(tech_id, {}))
+        base.update(legacy)
+        merged[tech_id] = base
+    for tech_id, contract in TECHNIQUE_CONTRACTS.items():
+        merged.setdefault(tech_id, dict(contract))
+    return merged
+
+
+DIDACTIC_TECHNIQUE_CONTRACTS = _merge_technique_contracts()
 
 ACTIVITY_1_CONTRACT = {
     "required": {

@@ -36,6 +36,21 @@ from typing import Any
 # 1) Familias de producto: reglas compartidas por tipo de materialización.
 # ---------------------------------------------------------------------------
 
+# Regla transversal: aplica a TODAS las técnicas, se herede o no de la familia.
+# Medida sobre los PDF del repo: el pie izquierdo arranca en x=72pt y el bloque
+# derecho (\coursecode + \coursename) en x=395.2pt. Pasar de ~62 caracteres
+# solapa ambos bloques (Garantías A6 llegaba a x=433.4: 38pt de invasión).
+METADATA_LENGTH_RULE = (
+    "PIE DE PÁGINA: la plantilla compone el pie izquierdo con \\documentsubtitle y, si está vacío, con "
+    "\\documenttitle; a la derecha imprime \\coursecode + \\coursename. Ambos bloques van en la MISMA línea y "
+    "NO se recortan solos. RANGO OBLIGATORIO para \\documentsubtitle (o \\documenttitle cuando no hay subtítulo): "
+    "entre 28 y 68 caracteres contando espacios. Pasando de 68 los bloques se SOLAPAN; por debajo de 28 el pie "
+    "queda pobre y desaprovecha el ancho. El subtítulo debe ACOTAR el objeto del trabajo, no repetir el título ni "
+    "reducirse a una etiqueta. Si el título temático necesita más extensión, dejarlo completo en \\documenttitle: "
+    "es el SUBTÍTULO, no el título, lo que viaja al pie. Verificación objetiva: el bloque izquierdo del pie no debe "
+    "rebasar x=395pt en carta vertical."
+)
+
 PRODUCT_FAMILIES: dict[str, dict[str, Any]] = {
     "visual_jerarquico": {
         "label": "Producto visual jerárquico (mapas, esquemas, árboles, redes)",
@@ -277,7 +292,7 @@ _CATALOG_BASE: tuple[tuple[Any, ...], ...] = (
     ("mnemotecnia", 73, "Mnemotecnia", "Recordar", "estrategia_cognitiva", "Reglas de memoria", ("contenido", "regla mnemotécnica", "aplicación"), ("mnemotecnia", "regla mnemotécnica", "regla mnemotecnica")),
     ("portafolio_de_evidencias_digital", 74, "Portafolio de evidencias digital", "Construir", "reflexivo_bitacora", "Índice de evidencias", ("índice", "evidencias", "reflexión"), ("portafolio", "portafolio de evidencias", "portafolio digital")),
     ("redes_conceptuales", 75, "Redes conceptuales", "Sintetizar", "visual_jerarquico", "Grafo TikZ", ("nodos", "relaciones", "lectura"), ("redes conceptuales", "red conceptual")),
-    ("reporte_de_investigacion", 76, "Reporte de investigación", "Explicar", "escrito_expositivo", "Documento con método", ("problema", "método", "resultados", "conclusión"), ("reporte de investigación", "reporte de investigacion")),
+    ("reporte_de_investigacion", 76, "Reporte de investigación", "Explicar", "escrito_expositivo", "Documento con método", ("problema", "método", "resultados", "conclusión"), ("reporte de investigación", "reporte de investigacion", "reporte investigativo", "investigación documental", "investigacion documental", "reporte académico", "reporte academico", "informe de investigación", "informe de investigacion")),
     ("simposio", 77, "Simposio", "Aplicar", "oral_participativo", "Programa y síntesis", ("ponencias", "programa", "síntesis"), ("simposio",)),
     ("socioaprendizaje", 78, "Socioaprendizaje", "Aplicar", "colaborativo_proyecto", "Comunidad y evidencias", ("comunidad", "interacción", "evidencias"), ("socioaprendizaje", "aprendizaje social", "wiki", "wiki colaborativa", "wiki de la plataforma", "contribución a la wiki", "contribucion a la wiki", "participación en wiki", "participacion en wiki")),
     ("tuits", 79, "Tuits", "Sintetizar", "audiovisual_guion", "Microargumentos", ("mensaje breve", "hashtags", "síntesis"), ("tuits", "tweet", "microblogging")),
@@ -407,6 +422,89 @@ _DETAILED_CONTRACTS: dict[str, dict[str, Any]] = {
             "arranque en una PÁGINA NUEVA y ocupe preferentemente una sola página. La declaración de uso de IA se liga como \\footnote, nunca como \\section."
         ),
     },
+    # Ficha oficial: Fascículo 4, pp. 173-183. Los 5 elementos esenciales y los
+    # 9 pasos de construcción provienen literalmente de esa fuente.
+    "reporte_de_investigacion": {
+        "visible_style_rule": (
+            "No explicar en el texto visible que 'esta actividad' usa la técnica reporte de investigación ni describir la ficha "
+            "de las 100 técnicas; esa trazabilidad va como comentario TEX. El texto visible habla del problema investigado, del "
+            "procedimiento seguido y de los hallazgos, nunca del proceso editorial."
+        ),
+        "container_absorption_rule": (
+            "REGLA CRÍTICA: el reporte de investigación NO se anida dentro del reporte de actividad ni se encierra en un recuadro. La ficha "
+            "describe un documento AUTÓNOMO, pero aquí actúa como PRODUCTO alojado en el reporte-plantilla de la materia. PROHIBIDO crear una "
+            "sección llamada 'Reporte de investigación', igual que un resumen (#17) no lleva sección 'Resumen'. Contraste: foro o reseña SÍ van "
+            "en recuadro (forobox/resenabox) porque son piezas publicadas ajenas al documento; el reporte de investigación no lo es."
+        ),
+        "template_mapping_rule": (
+            "Los 9 pasos de construcción de la ficha se REPARTEN entre plantilla y producto; los que la plantilla ya resuelve SE DESCARTAN para "
+            "no duplicarlos: portada (paso 1) la da \\templatePortrait con \\documenttitle y \\authortable; índice (paso 2) lo da \\templateIndex; "
+            "referencias (paso 9) las da \\bibliography. NO se rehacen a mano dentro del cuerpo. Quedan a cargo del producto los pasos 3 a 8: "
+            "introducción, marco referencial, metodología, resultados, discusión y conclusiones."
+        ),
+        "structure_rule": (
+            "El producto se aloja en el ACTO DE DESARROLLO del esqueleto de tres actos que ya usa la materia. Reparto: el elemento (1) "
+            "Introducción de la ficha coincide con la \\section{Introducción} del reporte y el elemento (5) Conclusiones coincide con su "
+            "\\section{Conclusión} —no se duplican—; los elementos (2) Metodología, (3) Hallazgos y (4) Análisis y discusión son SUBSECCIONES "
+            "de una única sección de desarrollo cuyo título nombra el TEMA investigado. Así están los cinco contenidos sin un documento dentro "
+            "de otro. Solo si la consigna exige literalmente los rótulos IMRyD se elevan a \\section."
+        ),
+        "three_act_gravity_rule": (
+            "El NÚCLEO son Hallazgos + Análisis y discusión: ahí gravita el documento. La Metodología los prepara y las Conclusiones los "
+            "cierran. El marco teórico va como subsección breve y NO debe crecer hasta desplazar a los hallazgos: si el marco ocupa más que "
+            "hallazgos y discusión juntos, el producto degeneró en monografía. La sección de desarrollo lleva el título del TEMA investigado, "
+            "nunca la etiqueta 'Desarrollo' ni 'Reporte de investigación'."
+        ),
+        "metadiscourse_rule": (
+            "El texto visible NUNCA anuncia el formato ('en el presente reporte de investigación se expondrá...'). Entra directo al problema. "
+            "La trazabilidad con la técnica va como comentario TEX. Tampoco se rotula el índice con los cinco elementos si los títulos "
+            "temáticos ya los cubren: el lector debe ver un documento académico, no un formulario relleno."
+        ),
+        "method_rule": (
+            "La Metodología declara explícitamente y en este orden: tipo de investigación (documental, de campo, mixta), técnicas e "
+            "instrumentos, fases de trabajo, fuentes consultadas con criterio de selección, y procedimiento de análisis. Debe ser "
+            "CONGRUENTE con los objetivos y el marco teórico. PROHIBIDO inventar datos empíricos, encuestas o entrevistas no realizadas: "
+            "sin trabajo de campo real el tipo es 'documental' y las fuentes son la literatura y la normativa."
+        ),
+        "results_rule": (
+            "Los Hallazgos describen los resultados de forma sintética y objetiva, ordenados en cuadros, tablas o diagramas cuando el "
+            "volumen lo justifique, estableciendo comparaciones o correlaciones. REGLA de la ficha: no repetir en el texto la evidencia "
+            "que ya muestra la tabla. Los hallazgos NO son una lista de fuentes ni un resumen de abstracts."
+        ),
+        "discussion_rule": (
+            "Análisis y discusión es subsección PROPIA y no repite lo dicho en Hallazgos. Explica la congruencia de los resultados con las "
+            "preguntas de investigación, los objetivos, la hipótesis y la postura teórica; señala coincidencias y discrepancias con otras "
+            "investigaciones, y declara las limitaciones y las preguntas sin contestar."
+        ),
+        "hypothesis_rule": (
+            "La Introducción debe enunciar una hipótesis o conjetura de trabajo explícita y objetivos verificables. Las Conclusiones "
+            "deben indicar SI SE CUMPLIERON o no los objetivos propuestos: ese cierre es requisito de la ficha, no retórica opcional."
+        ),
+        "layout_rule": (
+            "Prosa académica con rigor formal. Admite tablas, gráficos o infografías de síntesis en Hallazgos; la tabla es auxiliar, "
+            "no el núcleo —el reporte no es un cuadro comparativo—. El índice se activa con \\templateIndex, que ya lo genera desde los "
+            "títulos: no transcribirlo a mano. Saltos de página limpios entre actos."
+        ),
+        "closure_rule": (
+            "Las Conclusiones inician con \\clearpage; resumen resultados y aportaciones, declaran implicaciones y limitaciones, "
+            "indican si se cumplieron los objetivos y proponen recomendaciones para investigaciones posteriores. La postura personal "
+            "cierra el argumento. La declaración de uso de IA se liga como \\footnote, nunca como \\section."
+        ),
+        "apa_citation_rule": (
+            "REGLA: al menos 5 fuentes formales (libros, artículos, normativa, estadística oficial) citadas APA 7 e integradas al hilo "
+            "argumentativo, no amontonadas al final. Las citas textuales llevan página: (Apellido, Año, p.~N). Las referencias van en "
+            "\\bibliography{<materia>}, nunca en thebibliography manual. La ficha exige que TODA fuente citada aparezca en referencias."
+        ),
+        "build_steps_official": (
+            "Pasos de la ficha y quién los resuelve. YA LOS DA LA PLANTILLA (no rehacer): 1. Portada -> \\templatePortrait; "
+            "2. Índice -> \\templateIndex; 9. Referencias -> \\bibliography. A CARGO DEL PRODUCTO: "
+            "3. Introducción (antecedentes, problema, hipótesis, objetivos, contexto y motivación); "
+            "4. Marco referencial o teórico (referentes del campo disciplinar; admite citas, tablas y gráficos); "
+            "5. Metodología congruente con objetivos y marco; 6. Resultados sintéticos y objetivos; "
+            "7. Discusión (relación con preguntas, objetivos e hipótesis; limitaciones); "
+            "8. Conclusiones y recomendaciones (indicar si se cumplieron los objetivos)."
+        ),
+    },
 }
 
 
@@ -453,6 +551,8 @@ def _build_contracts() -> dict[str, dict[str, Any]]:
         # Fusionar detalle específico por encima.
         detail = _DETAILED_CONTRACTS.get(tech_id, {})
         contract.update(detail)
+        # Transversal: ninguna técnica puede sobreescribirla.
+        contract["metadata_length_rule"] = METADATA_LENGTH_RULE
         contracts[tech_id] = contract
     return contracts
 

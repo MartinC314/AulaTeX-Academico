@@ -13,6 +13,43 @@ from .extractor_adapter import CORE_EXTRACTOR_ARTIFACTS, ExtractorAdapter, Extra
 from .workspace import AulaTeXWorkspace, EditorialScope
 
 
+# Medido sobre los PDF del repo: el pie izquierdo arranca en x=72pt y el bloque
+# derecho en x=395.2pt, así que hay 323pt. En \small itálica cada carácter ocupa
+# ~4.53pt (Garantías A4: 70 chars -> x1=388.8). El tope real son 71 caracteres;
+# se usa 68 como margen para acentos y mayúsculas, más anchas que el promedio.
+FOOTER_METADATA_MAX_CHARS = 68
+# Por debajo de esto el pie queda pobre y desaprovecha el ancho disponible.
+FOOTER_METADATA_MIN_CHARS = 28
+
+_RE_DOC_TITLE = re.compile(r"(?m)^\s*\\def\\documenttitle\s*\{(.*)\}\s*$")
+_RE_DOC_SUBTITLE = re.compile(r"(?m)^\s*\\def\\documentsubtitle\s*\{(.*)\}\s*$")
+
+
+def footer_metadata_text(tex: str) -> str:
+    """Devuelve el texto visible que la plantilla lleva al pie de página.
+
+    La plantilla usa \\documentsubtitle y, solo si está vacío, \\documenttitle.
+    """
+    subtitle = _RE_DOC_SUBTITLE.search(tex)
+    title = _RE_DOC_TITLE.search(tex)
+    candidato = (subtitle.group(1).strip() if subtitle else "") or (
+        title.group(1).strip() if title else ""
+    )
+    # El marcado LaTeX no ocupa ancho en la página.
+    return re.sub(r"\\[a-zA-Z]+\s*|[{}]", "", candidato).strip()
+
+
+def _footer_metadata_overflow(tex: str) -> bool:
+    """True si el texto del pie excede el ancho disponible y se solapa."""
+    return len(footer_metadata_text(tex)) > FOOTER_METADATA_MAX_CHARS
+
+
+def _footer_metadata_too_short(tex: str) -> bool:
+    """True si el pie es tan breve que desaprovecha el ancho disponible."""
+    visible = footer_metadata_text(tex)
+    return bool(visible) and len(visible) < FOOTER_METADATA_MIN_CHARS
+
+
 @dataclass(frozen=True)
 class ActivityObservationRequest:
     target: str
@@ -314,6 +351,11 @@ class ActivityObserver:
                 "development_section_literal": bool(
                     re.search(r"\\section\*?\{\s*Desarrollo\s*\}", active_tex, re.IGNORECASE)
                 ),
+                # El pie compone subtítulo (izq) y curso (der) en la misma línea:
+                # muy largo se solapan, muy corto desaprovecha el ancho.
+                "footer_metadata_overflow": _footer_metadata_overflow(active_tex),
+                "footer_metadata_too_short": _footer_metadata_too_short(active_tex),
+                "footer_metadata_length": len(footer_metadata_text(active_tex)),
                 # Postura/análisis propio: primera persona académica en la conclusión.
                 "personal_stance_present": bool(
                     re.search(

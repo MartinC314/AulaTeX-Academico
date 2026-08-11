@@ -67,9 +67,37 @@ def _dehyphenate(text: str) -> str:
     return text
 
 
+# Encabezado/pie de página que pdftotext arrastra en cada página del fascículo.
+_RUNNING_HEAD = re.compile(
+    r"[ \t]*100\s+T[eé]cnicas\s+Did[aá]cticas\s+de\s+Ense[nñ]anza\s+y\s+Aprendizaje"
+    r"(?:\s*\|\s*Fasc[ií]culo\s*\d*)?[ \t]*",
+    re.IGNORECASE,
+)
+
+# Número de página suelto en su propia línea.
+_PAGE_NUMBER = re.compile(r"(?m)^[ \t]*\d{1,3}[ \t]*$")
+
+# Marcador decorativo de los fascículos, sin valor semántico.
+_PULL_QUOTE = re.compile(r"(?m)^[ \t]*Para\s+recordar\.{2,3}[ \t]*$", re.IGNORECASE)
+
+
+def _strip_pdf_furniture(text: str) -> str:
+    """Elimina encabezados, pies y números de página del texto extraído.
+
+    Sin esto el texto oficial que se inyecta al prompt del LLM queda salpicado de
+    '100 Técnicas Didácticas ... | Fascículo 2' y números sueltos.
+    """
+    text = _RUNNING_HEAD.sub(" ", text)
+    text = _PULL_QUOTE.sub("", text)
+    text = _PAGE_NUMBER.sub("", text)
+    return text
+
+
 def _collapse(text: str) -> str:
     text = _dehyphenate(text)
+    text = _strip_pdf_furniture(text)
     text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r"(?m)[ \t]+$", "", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
 
@@ -79,7 +107,9 @@ def _split_sections(block: str) -> dict[str, str]:
     # Posiciones de cada encabezado dentro del bloque.
     marks: list[tuple[int, str]] = []
     for key, header in _SECTION_HEADERS:
-        for m in re.finditer(re.escape(header), block):
+        # (?!\w) evita que "Estructura" haga match dentro de "Estructuras textuales",
+        # que truncaba la ficha de la técnica #26 a 11 caracteres.
+        for m in re.finditer(re.escape(header) + r"(?!\w)", block):
             marks.append((m.start(), key))
     marks.sort()
     sections: dict[str, str] = {}

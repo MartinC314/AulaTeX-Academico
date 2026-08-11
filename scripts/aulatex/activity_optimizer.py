@@ -25,7 +25,13 @@ from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any
 
-from .activity_observer import ActivityObservationRequest, ActivityObserver
+from .activity_observer import (
+    FOOTER_METADATA_MAX_CHARS,
+    FOOTER_METADATA_MIN_CHARS,
+    ActivityObservationRequest,
+    ActivityObserver,
+    footer_metadata_text,
+)
 from .llm_bridge import DEFAULT_MAX_TOKENS, AulaTeXLLMClient
 from .quality_panel import PanelVerdict, QualityPanel, build_default_panel
 from .semantic_audit import SemanticAuditResult, SemanticAuditor
@@ -608,6 +614,9 @@ class ActivityOptimizer:
         for k, cap in caps.items():
             if bd.get(k, 0.0) < cap - 0.5:
                 gaps.append(f"- {labels[k]} (actual {bd.get(k,0.0)}/{cap})")
+        footer_hint = self._footer_metadata_hint(text)
+        if footer_hint:
+            gaps.append(footer_hint)
         if not gaps:
             return "El documento está cerca del máximo; refina precisión y cohesión en PROSA (evita añadir listas)."
         return (
@@ -615,6 +624,28 @@ class ActivityOptimizer:
             "títulos que NOMBREN el concepto/tema):\n"
             + "\n".join(gaps)
         )
+
+    def _footer_metadata_hint(self, text: str) -> str:
+        """Directiva sobre el texto que la plantilla lleva al pie de página."""
+        visible = footer_metadata_text(text)
+        if not visible:
+            return ""
+        n = len(visible)
+        if n > FOOTER_METADATA_MAX_CHARS:
+            return (
+                f"- ACORTAR \\documentsubtitle a un máximo de {FOOTER_METADATA_MAX_CHARS} caracteres "
+                f"(actual {n}): la plantilla lo imprime en el pie de página junto al nombre del curso "
+                f"y ambos bloques se SOLAPAN. Conservar el título completo en \\documenttitle y dejar "
+                f"en el subtítulo una versión breve pero informativa, de {FOOTER_METADATA_MIN_CHARS}-"
+                f"{FOOTER_METADATA_MAX_CHARS} caracteres. NO tocar \\documenttitle."
+            )
+        if n < FOOTER_METADATA_MIN_CHARS:
+            return (
+                f"- AMPLIAR \\documentsubtitle (actual {n} caracteres): queda demasiado escueto para el "
+                f"pie de página. Redactarlo entre {FOOTER_METADATA_MIN_CHARS} y {FOOTER_METADATA_MAX_CHARS} "
+                f"caracteres, acotando el objeto del trabajo sin repetir el título."
+            )
+        return ""
 
     # ---------------------------------------------------------------- LLM
 

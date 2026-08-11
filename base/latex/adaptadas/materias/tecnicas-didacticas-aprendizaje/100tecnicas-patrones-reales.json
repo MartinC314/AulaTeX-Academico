@@ -304,6 +304,27 @@
         "El mapa va en página landscape propia, sin hueco previo, con caption y en la misma página.",
         "El reporte respeta 3 secciones (Introducción/Desarrollo con el mapa/Conclusión) + portada+resumen+índice+referencias."
       ]
+    },
+    "reporte_de_investigacion": {
+      "fuente_real": {
+        "materia": "Garantías Constitucionales (UnADM, Licenciatura en Derecho)",
+        "actividad": "Actividad 6 - Plantilla de reporte de investigación",
+        "guia_metodologica": "Fascículo 4, pp. 173-183 (100tecnicasdidacticas.unadmexico.mx). Ficha extraída en .aulatex-temp/ficha-76-reporte-investigacion.txt",
+        "estado": "PLANTILLA VALIDADA (compila: 6 págs, 3 secciones, 0 citas rotas). Consigna S6 aún NO publicada: los \\pendiente esperan el tema real.",
+        "archivo": "UnADM/licenciatura-en-derecho-unadm/garantias-constitucionales-lde/reporte-garantias-constitucionales-Actividad-6.tex"
+      },
+      "packages": [
+        "\\usepackage{booktabs}",
+        "\\providecommand{\\pendiente}[1]{\\textcolor{red}{[PENDIENTE: #1]}}"
+      ],
+      "skeleton": "% ARQUITECTURA REPORTE DE INVESTIGACION (#76).\n% El producto NO se anida: se aloja en el acto de DESARROLLO del reporte-plantilla.\n% Pasos 1, 2 y 9 de la ficha (portada, indice, referencias) los da la plantilla.\n\\templateIndex\n\n\\section{Introducci\\'on}\n% Elemento oficial (1). MISMA seccion de introduccion del reporte, no una aparte.\n% Antecedentes -> problema -> pregunta -> hipotesis -> objetivos. Sin metadiscurso.\n\n\\section{<Titulo tematico del tema investigado>}\n% Acto de desarrollo: aloja los elementos (2), (3) y (4) como SUBSECCIONES.\n% PROHIBIDO titularla 'Desarrollo' o 'Reporte de investigacion'.\n\\subsection{Marco referencial}\n% Breve: no debe crecer mas que hallazgos y discusion juntos, o degenera en monografia.\n\\subsection{Procedimiento y fuentes}\n% Elemento (2) Metodologia: tipo de investigacion, fases, fuentes, criterio, analisis.\n\\subsection{<Titulo tematico del primer bloque de hallazgos>}\n\\subsection{<Titulo tematico del segundo bloque de hallazgos>}\n% Elemento (3) Hallazgos. Tabla de sintesis opcional; no repetir sus datos en el texto.\n\\subsection{Discusi\\'on de los resultados}\n% Elemento (4): significado, contraste con hipotesis, limitaciones. No repite hallazgos.\n\n\\clearpage\\section{Conclusi\\'on}\n% Elemento (5). MISMA seccion de conclusion del reporte. Debe declarar si se\n% cumplieron los objetivos + recomendaciones. IA como \\footnote.\n\\clearpage\\bibliography{<materia>}",
+      "container_absorption_rule": "El reporte de investigación NO genera un documento dentro del documento. La ficha describe una pieza autónoma, pero aquí es un PRODUCTO alojado en el reporte-plantilla de la materia. Los elementos (1) Introducción y (5) Conclusiones COINCIDEN con las secciones homónimas del reporte y no se duplican; (2), (3) y (4) son subsecciones del acto de desarrollo. Resultado: 3 secciones de nivel 1, igual que cualquier otra actividad de la materia.",
+      "descarte_rule": "Los pasos de la ficha que la plantilla YA resuelve se DESCARTAN: portada (paso 1) -> \\templatePortrait; índice (paso 2) -> \\templateIndex; referencias (paso 9) -> \\bibliography. Rehacerlos a mano duplica estructura y rompe la coherencia del reporte.",
+      "cinco_elementos_rule": "Deben estar los CINCO CONTENIDOS de la ficha aunque sus títulos se adapten: (1) Introducción con problema, antecedentes, HIPÓTESIS explícita y objetivos; (2) Metodología con tipo de investigación, fases, fuentes y criterio; (3) Hallazgos argumentados; (4) Análisis y discusión con limitaciones; (5) Conclusiones que DECLAREN si se cumplieron los objetivos y propongan recomendaciones.",
+      "metodo_rule": "PROHIBIDO atribuirse trabajo empírico no realizado (encuestas, entrevistas). Sin trabajo de campo real el tipo es 'documental' y las fuentes son la literatura y la normativa.",
+      "tabla_rule": "La tabla de síntesis es AUXILIAR, no el núcleo: el reporte no es un cuadro comparativo. Regla de la ficha: no repetir en el texto la evidencia que ya muestra la tabla. Borrar el entorno si no se justifica.",
+      "scoring_extra": "Métrica: máximo 1 lista en todo el documento (2+ penalizan), por eso los objetivos específicos van en prosa. Integridad requiere 4 marcadores de postura; la nota al pie de IA cuenta como uno.",
+      "template_gotchas": "Plantilla-Informe NO define \\pendiente: declararlo con \\providecommand. Y NUNCA usarlo en \\documenttitle/\\documentsubtitle: src/cfg/init.tex:52 los evalúa con \\ifthenelse antes del preámbulo del usuario -> error fatal. Tampoco dentro de \\section{}: va al índice."
     }
   }
 }
