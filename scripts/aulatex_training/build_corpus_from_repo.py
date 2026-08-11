@@ -258,27 +258,30 @@ def iter_optimizer_block_pairs(root: Path):
     No se filtran por ganancia de score global: la mejora es local y el score
     mide el documento completo. La justificación del motor acompaña al par.
     """
-    runs_dir = root / "retroalimentacion-editorial" / "aulatex" / "runs"
-    if not runs_dir.is_dir():
-        return
-    for proposal_path in sorted(runs_dir.rglob("cycle-*/proposal.json")):
-        try:
-            data = json.loads(proposal_path.read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError):
+    base = root / "retroalimentacion-editorial" / "aulatex"
+    # El optimizador escribe en activity-optimize/runs; el agente en runs.
+    runs_dirs = [base / "activity-optimize" / "runs", base / "runs"]
+    for runs_dir in runs_dirs:
+        if not runs_dir.is_dir():
             continue
-        before = str(data.get("original_block", "")).strip()
-        after = str(data.get("improved_block", "")).strip()
-        if len(before) < 40 or len(after) < 40 or before == after:
-            continue
-        yield {
-            "prompt": PREFERENCE_PROMPT,
-            "chosen": after,
-            "rejected": before,
-            "quality_gain": 0.0,
-            "source": "optimizer-block",
-            "target": data.get("improvement_kind", ""),
-            "justification": str(data.get("justification", ""))[:300],
-        }
+        for proposal_path in sorted(runs_dir.rglob("proposal.json")):
+            try:
+                data = json.loads(proposal_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                continue
+            before = str(data.get("original_block", "")).strip()
+            after = str(data.get("improved_block", "")).strip()
+            if len(before) < 40 or len(after) < 40 or before == after:
+                continue
+            yield {
+                "prompt": PREFERENCE_PROMPT,
+                "chosen": after,
+                "rejected": before,
+                "quality_gain": 0.0,
+                "source": "optimizer-block",
+                "target": data.get("improvement_kind", ""),
+                "justification": str(data.get("justification", ""))[:300],
+            }
 
 
 def build_preference_rows(root: Path, score_of: Any, min_gain: float,
