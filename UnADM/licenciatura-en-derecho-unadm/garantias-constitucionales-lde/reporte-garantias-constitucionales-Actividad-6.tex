@@ -1,0 +1,277 @@
+\documentclass[
+  spanish,
+  letterpaper, oneside
+]{article}
+
+% PRODUCTO: Reporte de investigación (técnica 76 del catálogo UnADM).
+% Ficha oficial: López, A. (2022), 100 Técnicas Didácticas, Fascículo 4, pp. 173-183.
+% Los cinco elementos de la ficha se alojan en el esqueleto de tres actos: (1) y (5)
+% coinciden con Introducción y Conclusión; (2), (3) y (4) son subsecciones del desarrollo.
+% Planeación S7, Tema 3: Bloque de regularidad constitucional (CT 293/2011).
+% Fuentes: 9 tesis SCJN en referencias-.../notas-.../actividad-6-reporte-de-investigacion.
+
+% Los metadatos de portada NO admiten \pendiente: init.tex los evalúa con
+% \ifthenelse antes de que la macro exista.
+\def\documenttitle {De la jerarquía normativa al parámetro de regularidad constitucional}
+\def\documentsubtitle {Evolución jurisprudencial del artículo 133 a la Contradicción de Tesis 293/2011}
+\def\documentsubject {Actividad 6 - Garantías Constitucionales}
+
+\def\documentauthor {Martin Jonathan de la Cruz}
+\def\coursename {Garantías Constitucionales}
+\def\coursecode {025}
+
+\def\universityname {Universidad Abierta y a Distancia de México}
+\def\universityfaculty {Licenciatura en Derecho}
+\def\universitydepartment {Garantías Constitucionales}
+\def\universitydepartmentimage {departamentos/UnADM}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Roma Norte, Ciudad de México}
+
+\def\authortable {
+  \begin{tabular}{ll}
+    \textbf{Alumno:}
+    & \begin{tabular}[t]{l}
+      Martin Jonathan de la Cruz \\
+    \end{tabular} \\
+    Matrícula: & ES2611202040 \\
+    Figura docente: & Aarón López Pérez \\
+    Semestre/Bloque: & 2 / 1 \\
+    & \\
+    \multicolumn{2}{l}{Fecha de realización: \today} \\
+    \multicolumn{2}{l}{\universitylocation}
+  \end{tabular}
+}
+
+\input{template}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,fit,shapes.geometric}
+\setcitestyle{authoryear,open={(},close={)}}
+
+% Plantilla-Informe no define \pendiente (sí lo hacen las plantillas maestras).
+% Marca en rojo lo que falta redactar; al completar la actividad no debe quedar ninguno.
+\providecommand{\pendiente}[1]{\textcolor{red}{[PENDIENTE: #1]}}
+
+\def\coverwatermarkenabled {true}
+\def\coverwatermarkimage {img/departamentos/UnADM.pdf}
+\def\coverwatermarkopacity {0.16}
+\def\coverwatermarkwidth {0.72\paperwidth}
+\def\coverwatermarkxshift {0cm}
+\def\coverwatermarkyshift {-0.35cm}
+
+\newcommand{\insertcoverwatermark}{%
+  \ifthenelse{\equal{\coverwatermarkenabled}{true}}{%
+    \AddToShipoutPictureBG*{%
+      \begin{tikzpicture}[remember picture,overlay]
+        \node[
+          opacity=\coverwatermarkopacity,
+          inner sep=0pt,
+          xshift=\coverwatermarkxshift,
+          yshift=\coverwatermarkyshift
+        ] at (current page.center) {%
+          \includegraphics[width=\coverwatermarkwidth]{\coverwatermarkimage}%
+        };
+      \end{tikzpicture}%
+    }%
+  }{}%
+}
+
+\begin{document}
+
+\insertcoverwatermark
+\templatePortrait
+\templatePagecfg
+\onehalfspacing
+
+% Pasos 1, 2 y 9 de la ficha (portada, índice y referencias) los resuelve la
+% plantilla: no se rehacen dentro del cuerpo.
+\templateIndex
+\templateFinalcfg
+
+%% ===========================================================================
+%% ACTO 1 - Introducción.
+%% Cubre el elemento (1) de la ficha: problema, antecedentes, hipótesis y
+%% objetivos. Es la MISMA sección de introducción del reporte, no una aparte.
+%% ===========================================================================
+\section{Introducción}
+
+La pregunta por el lugar que ocupan los tratados internacionales dentro del orden jurídico mexicano ha ocupado a la Suprema Corte de Justicia de la Nación durante más de dos décadas. El artículo 133 constitucional declara que la Constitución, las leyes del Congreso que emanen de ella y los tratados celebrados por el Presidente con aprobación del Senado serán la Ley Suprema de toda la Unión \citep{cpeum2026}, pero el precepto no establece un orden de prelación entre esos tres componentes. Esa indeterminación obligó al máximo tribunal a construir por vía interpretativa una respuesta que cambió en al menos tres ocasiones \citep{azuelaGuitronProcesalConstitucional2008}.
+
+La reforma constitucional en materia de derechos humanos de junio de 2011 alteró los términos del problema. Al reconocer en el artículo 1.\textsuperscript{o} los derechos humanos previstos tanto en la Constitución como en los tratados de los que el Estado mexicano sea parte, e incorporar el principio pro persona, el texto constitucional dejó de tratar a ambas fuentes como cuerpos separados que deben ordenarse entre sí \citep{cndhInehrmArticulo1o2015}. La Corte tuvo entonces que decidir si esa fórmula modificaba la jerarquía establecida o si introducía una relación de naturaleza distinta.
+
+Ese es el problema que aborda este trabajo. La Contradicción de Tesis 293/2011 sustituyó el vocabulario de la jerarquía por el del parámetro de regularidad constitucional, y conviene examinar si ese cambio fue terminológico o estructural. La distinción no es académica: de ella depende si quien reclama un derecho reconocido en un tratado debe acreditar primero la posición de esa norma frente a la ley que se le opone, o si puede invocar directamente el estándar más protector \citep{scjnIijCT293y2017}.
+
+La investigación se organiza en torno a la siguiente pregunta: ¿de qué manera la sustitución del criterio de jerarquía normativa por el de parámetro de regularidad constitucional modificó las condiciones de exigibilidad de los derechos humanos de fuente convencional en México? Como conjetura orientadora sostengo que la Contradicción de Tesis 293/2011 no resolvió una disputa de rango entre normas, sino que reconfiguró el fundamento mismo del control constitucional, aunque conservó una restricción que limita su alcance. \textbf{Desde mi perspectiva}, esa restricción explica la tensión que persiste entre el discurso garantista de la reforma y su aplicación judicial.
+
+El objetivo general consiste en analizar la evolución jurisprudencial que condujo del artículo 133 constitucional al parámetro de regularidad constitucional, del cual se desprenden el reconstruir la secuencia de criterios de la SCJN sobre la posición de los tratados, el identificar el contenido y los límites del parámetro fijado en la CT 293/2011, y el valorar sus efectos sobre el control de convencionalidad ejercido por los tribunales nacionales.
+
+%% ===========================================================================
+%% ACTO 2 - Desarrollo con TÍTULO TEMÁTICO.
+%% Aloja los elementos (2) Metodología, (3) Hallazgos y (4) Análisis y discusión
+%% como SUBSECCIONES. No usar aquí el rótulo "Desarrollo" ni "Reporte de
+%% investigación": el título nombra el tema investigado.
+%% ===========================================================================
+\section{El bloque de regularidad constitucional en el orden jurídico mexicano}
+
+\subsection{Marco referencial}
+
+El análisis requiere delimitar seis nociones. La \textbf{jerarquía normativa} designa la ordenación de las normas según su fuerza relativa, de modo que la de rango inferior no puede contradecir a la superior sin perder validez. El \textbf{parámetro de regularidad constitucional} designa, en cambio, el conjunto de normas frente a las cuales se contrasta la validez de las demás, con independencia de que entre ellas exista o no una relación de rango. El \textbf{bloque de constitucionalidad} es la denominación comparada de ese mismo conjunto, aunque la Corte mexicana prefirió la primera fórmula \citep{scjnIijCT293y2017}.
+
+En cuanto a los mecanismos, el \textbf{control concentrado} atribuye la declaración de inconstitucionalidad a órganos específicos del Poder Judicial de la Federación mediante vías determinadas; el \textbf{control difuso} habilita a cualquier juez para inaplicar una norma contraria a la Constitución en el caso concreto, sin expulsarla del orden jurídico; y el \textbf{control de convencionalidad} extiende ese examen a la conformidad de la norma interna con los tratados y con la interpretación que de ellos hacen los tribunales internacionales \citep{marcanoSalazarDerechosHumanos}.
+
+La distinción que articula todo el análisis es la que media entre una relación de \textbf{rango} y una de \textbf{integración}. En la primera, dos normas se ordenan verticalmente y una prevalece sobre la otra: la pregunta pertinente es cuál está arriba. En la segunda, varias normas conforman conjuntamente el canon de validez sin ordenarse entre sí: la pregunta pertinente es cuál ofrece mayor protección. \textbf{Dado que} el objeto de este reporte es determinar si la CT 293/2011 operó un cambio estructural, esta distinción funciona como criterio de análisis de cada uno de los criterios examinados \citep{rabinovichBerkmanDerechosHumanos}.
+
+\subsection{Procedimiento y fuentes}
+
+Este trabajo corresponde a una investigación documental de corte jurídico-analítico, desarrollada en tres fases: la reconstrucción cronológica de los criterios de la Suprema Corte sobre la posición de los tratados internacionales, el análisis del contenido de la Contradicción de Tesis 293/2011 y sus tesis derivadas, y la valoración de sus efectos sobre la práctica del control de convencionalidad.
+
+Se consultaron nueve criterios jurisdiccionales de la Suprema Corte de Justicia de la Nación, comprendidos entre la Octava y la Décima Época, junto con el texto constitucional vigente, la obra institucional conjunta de la Suprema Corte y el Instituto de Investigaciones Jurídicas sobre la propia contradicción de tesis \citep{scjnIijCT293y2017}, y la doctrina especializada disponible. El criterio de selección privilegió la pertinencia temática respecto del artículo 133 constitucional, la jerarquía del órgano emisor y la vigencia del criterio. El análisis se realizó mediante contraste diacrónico de los rubros y las razones de cada tesis, \textbf{de modo que} cada afirmación sostenida en los hallazgos queda referida a un registro digital verificable.
+
+\subsection{Del artículo 133 a la supremacía de los tratados: la etapa jerárquica}
+
+Durante casi dos décadas la Suprema Corte abordó la relación entre tratados internacionales y leyes mediante una sola pregunta: cuál de las dos normas ocupa la posición superior. La respuesta cambió tres veces, pero la pregunta permaneció idéntica, y esa continuidad es la que define la etapa.
+
+El punto de partida fue la equiparación. En 1992, el Pleno resolvió que leyes federales y tratados comparten rango, de manera que ninguno puede servir de medida de validez del otro:
+
+\begin{quote}
+\textit{«De conformidad con el artículo 133 de la Constitución, tanto las leyes que emanen de ella, como los tratados internacionales \dots\ ocupan, ambos, el rango inmediatamente inferior a la Constitución en la jerarquía de las normas en el orden jurídico mexicano. Ahora bien, teniendo la misma jerarquía, el tratado internacional no puede ser criterio para determinar la constitucionalidad de una ley ni viceversa»} \citep[tesis P. C/92]{scjnTesis205596}.
+\end{quote}
+
+La consecuencia práctica de este criterio era considerable: quien invocaba un tratado frente a una ley federal contradictoria carecía de argumento de validez, porque ambas normas se neutralizaban recíprocamente. \textbf{Desde mi perspectiva}, esta tesis expresa con nitidez el costo de razonar solo en términos de rango, pues el contenido del derecho invocado resultaba jurídicamente irrelevante para resolver el conflicto.
+
+El primer giro llegó en 1999. Al resolver el amparo en revisión 1475/98 el Pleno abandonó expresamente el criterio anterior y situó a los tratados en una posición intermedia:
+
+\begin{quote}
+\textit{«Esta Suprema Corte de Justicia considera que los tratados internacionales se encuentran en un segundo plano inmediatamente debajo de la Ley Fundamental y por encima del derecho federal y el local»} \citep[tesis P. LXXVII/99]{scjnTesis192867}.
+\end{quote}
+
+El argumento no fue formal sino institucional: la Corte razonó que los compromisos internacionales \textit{«son asumidos por el Estado mexicano en su conjunto y comprometen a todas sus autoridades frente a la comunidad internacional»} \citep{scjnTesis192867}. \textbf{Es decir}, la superioridad del tratado se justificó por el órgano que lo suscribe y por el alcance de la obligación contraída, no por la materia que regula ni por los derechos que reconoce.
+
+La tercera estación amplió el alcance de esa supremacía. En 2007 la Corte incorporó las leyes generales al esquema y construyó la noción de un orden jurídico superior de carácter nacional:
+
+\begin{quote}
+\textit{«La interpretación sistemática del artículo 133 \dots\ permite identificar la existencia de un orden jurídico superior, de carácter nacional, integrado por la Constitución Federal, los tratados internacionales y las leyes generales \dots\ se concluye que los tratados internacionales se ubican jerárquicamente abajo de la Constitución Federal y por encima de las leyes generales, federales y locales»} \citep[tesis P. IX/2007]{scjnTesis172650}.
+\end{quote}
+
+Conviene detenerse en el vocabulario de esta última tesis, porque anticipa lo que vendrá después. La expresión \textit{orden jurídico superior \dots\ integrado por} sugiere una relación de composición entre normas, no de subordinación; \textbf{sin embargo}, la conclusión vuelve a formularse en clave de rango (\textit{abajo de} y \textit{por encima de}). Esa tensión interna revela que el instrumental conceptual disponible en 2007 resultaba insuficiente para nombrar lo que la propia Corte empezaba a describir.
+
+El rasgo común de las tres tesis es que ninguna atiende al contenido de la norma invocada. \textbf{Dado que} la pregunta es siempre de posición, el derecho humano reconocido en un tratado recibe el mismo tratamiento que cualquier otra disposición convencional, sea comercial, fiscal o consular. Para la persona que reclamaba un derecho de fuente internacional esto significaba que su pretensión dependía de una discusión sobre la ubicación de la norma en el sistema, y no sobre el alcance de la protección que esa norma le ofrecía \citep{alvarezIcazaDerechosMexico}.
+
+\subsection{La grieta previa a la reforma: tratados de derechos humanos y control de convencionalidad}
+
+Mientras el Pleno razonaba en términos de rango, los tribunales colegiados de circuito comenzaron a introducir una distinción que resultaría decisiva: la de que los tratados sobre derechos humanos no admiten el mismo tratamiento que el resto de los instrumentos internacionales. Esa grieta se abrió entre 2008 y 2010, es decir, antes de la reforma constitucional de junio de 2011.
+
+El primer paso fue procesal. Un tribunal colegiado en materia civil sostuvo que si el amparo procede contra actos y leyes violatorios de garantías, la misma lógica alcanza a los tratados por integrar la Ley Suprema:
+
+\begin{quote}
+\textit{«Si en el amparo es posible conocer de actos o leyes violatorios de garantías individuales establecidas constitucionalmente, también pueden analizarse los actos y leyes contrarios a los tratados internacionales suscritos por México, por formar parte de la Ley Suprema de toda la Unión en el nivel que los ubicó la Corte»} \citep[tesis I.7o.C.46 K]{scjnTesis169108}.
+\end{quote}
+
+Conviene notar que este criterio aún se apoya en la tesis jerárquica de 1999, a la que cita expresamente. \textbf{En efecto}, no discute la posición del tratado: acepta la ubicación fijada por el Pleno y deduce de ella una consecuencia procesal que hasta entonces no se había extraído. El avance es de alcance, no de fundamento.
+
+El segundo paso sí fue sustantivo, y provino de un mismo asunto resuelto en 2009 por el Primer Tribunal Colegiado en Materias Administrativa y de Trabajo del Décimo Primer Circuito. De ese amparo directo derivaron dos tesis complementarias. La primera equiparó los tratados de derechos humanos al nivel constitucional:
+
+\begin{quote}
+\textit{«Los tratados o convenciones suscritos por el Estado mexicano relativos a derechos humanos, deben ubicarse a nivel de la Constitución \dots\ porque dichos instrumentos internacionales se conciben como una extensión de lo previsto en esa Ley Fundamental respecto a los derechos humanos, en tanto que constituyen la razón y el objeto de las instituciones»} \citep[tesis XI.1o.A.T.45 K]{scjnTesis164509}.
+\end{quote}
+
+La segunda derivó de ahí un deber judicial concreto, el control de convencionalidad, que hasta entonces no formaba parte del vocabulario ordinario de los tribunales mexicanos:
+
+\begin{quote}
+\textit{«Los tribunales del Estado mexicano no deben limitarse a aplicar sólo las leyes locales, sino también la Constitución, los tratados o convenciones internacionales conforme a la jurisprudencia emitida por cualesquiera de los tribunales internacionales \dots\ lo cual obliga a ejercer el control de convencionalidad entre las normas jurídicas internas y las supranacionales»} \citep[tesis XI.1o.A.T.47 K]{scjnTesis164611}.
+\end{quote}
+
+Estos dos criterios introdujeron un cambio de naturaleza. \textbf{A diferencia} de la etapa anterior, el argumento ya no consiste en ubicar la norma sino en atender a lo que la norma protege: los tratados de derechos humanos ascienden al nivel constitucional \emph{por su objeto}, porque prolongan el catálogo de la Ley Fundamental. La pregunta empieza a desplazarse del rango al contenido.
+
+Este movimiento interno coincidió con una presión externa. La sentencia del caso Radilla Pacheco condenó al Estado mexicano y le impuso obligaciones que alcanzaban al Poder Judicial \citep{cidhCasoRadillaPacheco2009}; al determinar cómo cumplirla, la Suprema Corte reconoció en el expediente Varios 912/2010 el deber de todos los jueces del país de ejercer un control difuso de convencionalidad \citep{scjnVarios912de2010}. \textbf{Por consiguiente}, hacia 2011 convergían un impulso jurisprudencial interno y un mandato internacional que el esquema jerárquico no alcanzaba a ordenar.
+
+Un dato del propio expediente confirma que esta etapa se cerró por agotamiento: las dos tesis del Décimo Primer Circuito fueron objeto de la denuncia que originó la Contradicción de Tesis 293/2011 \citep{scjnTesis164611}. \textbf{Es decir}, la apertura que estos colegiados propiciaron generó una divergencia de criterios que el Pleno tuvo que resolver, y al resolverla abandonó el marco conceptual que ambas etapas compartían.
+
+\subsection{La Contradicción de Tesis 293/2011: del rango al parámetro}
+
+El Pleno resolvió la contradicción el 3 de septiembre de 2013, precisamente entre los criterios del Primer Tribunal Colegiado en Materias Administrativa y de Trabajo del Décimo Primer Circuito y los del Séptimo Tribunal Colegiado en Materia Civil del Primer Circuito, es decir, entre las tesis analizadas en el apartado anterior. La votación fue de seis votos contra cinco \citep{scjnTesis2006225}, dato que conviene retener porque revela que la solución adoptada no fue pacífica.
+
+La tesis P./J. 20/2014 contiene la formulación que clausura la etapa jerárquica:
+
+\begin{quote}
+\textit{«Las normas de derechos humanos, independientemente de su fuente, no se relacionan en términos jerárquicos \dots\ los derechos humanos, en su conjunto, constituyen el parámetro de control de regularidad constitucional, conforme al cual debe analizarse la validez de las normas y actos que forman parte del orden jurídico mexicano»} \citep[tesis P./J. 20/2014]{scjnTesis2006224}.
+\end{quote}
+
+El contraste con la tesis de 1992 es directo y merece explicitarse. Aquella afirmaba que, por tener la misma jerarquía, el tratado \textit{«no puede ser criterio para determinar la constitucionalidad de una ley»} \citep{scjnTesis205596}; esta sostiene que las normas de derechos humanos, sin relación jerárquica entre sí, son conjuntamente el criterio de validez de todo el orden jurídico. \textbf{Es decir}, la ausencia de jerarquía dejó de ser un obstáculo para convertirse en el fundamento de la integración.
+
+La propia tesis explica en qué consiste el cambio y en qué no. La Corte precisa que la supremacía constitucional \textit{«no ha cambiado»}, y que lo que evolucionó \textit{«es la configuración del conjunto de normas jurídicas respecto de las cuales puede predicarse dicha supremacía»} \citep{scjnTesis2006224}. \textbf{Dicho de otro modo}, no se degradó la Constitución ni se elevó el tratado: se amplió el conjunto normativo que opera como canon de validez. Esa precisión es la que permite hablar de parámetro y no de rango.
+
+Ahora bien, el mismo criterio conserva una salvedad de alcance considerable: \textit{«cuando en la Constitución haya una restricción expresa al ejercicio de los derechos humanos, se deberá estar a lo que indica la norma constitucional»} \citep{scjnTesis2006224}. La cláusula reintroduce una prevalencia del texto constitucional en el supuesto de conflicto y es el punto donde la doctrina ha concentrado sus objeciones, según se examina en la discusión.
+
+La tesis gemela P./J. 21/2014 completó el sistema al fijar la fuerza de la jurisprudencia interamericana:
+
+\begin{quote}
+\textit{«Los criterios jurisprudenciales de la Corte Interamericana de Derechos Humanos, con independencia de que el Estado Mexicano haya sido parte en el litigio \dots\ resultan vinculantes para los Jueces nacionales al constituir una extensión de la Convención Americana sobre Derechos Humanos»} \citep[tesis P./J. 21/2014]{scjnTesis2006225}.
+\end{quote}
+
+Esta tesis no se limita a declarar la vinculatoriedad: establece un método de tres pasos para el operador jurídico. Verificar que existan las mismas razones que motivaron el precedente cuando México no fue parte; armonizar la jurisprudencia interamericana con la nacional siempre que sea posible; y, de resultar imposible la armonización, aplicar el criterio más favorable a la persona \citep{scjnTesis2006225}. \textbf{Por consiguiente}, el principio pro persona deja de operar como enunciado programático y adquiere una función operativa concreta dentro del razonamiento judicial.
+
+El desarrollo posterior amplió el ámbito del parámetro. En 2015 la Primera Sala precisó que el parámetro de regularidad no se agota en el enunciado normativo sino que alcanza su interpretación \citep[tesis 1a. CCCXLIV/2015]{scjnTesis2010426}. \textbf{En consecuencia}, el canon de validez comprende tanto las normas de derechos humanos como el sentido que los tribunales competentes les atribuyen, lo que confirma que el desplazamiento del rango al contenido no fue un episodio aislado de 2014 sino una línea que la Corte ha continuado.
+
+% Tabla de síntesis: pieza auxiliar. Regla de la ficha: no repetir sus datos en el texto.
+\begin{table}[htbp]
+  \centering
+  \footnotesize
+  \renewcommand{\arraystretch}{1.15}
+  \begin{tabular}{>{\bfseries}p{0.20\textwidth}p{0.19\textwidth}p{0.37\textwidth}}
+    \toprule
+    Etapa & Criterio (registro) & Posición asumida sobre los tratados \\
+    \midrule
+    Equiparación (1992) & P. C/92 (205596) & Mismo rango que las leyes federales; ninguno mide la validez del otro. Criterio abandonado en 1999. \\
+    Supremacía relativa (1999) & P. LXXVII/99 (192867) & Sobre las leyes federales y locales, bajo la Constitución, por el compromiso que asume el Estado. \\
+    Ampliación (2007) & P. IX/2007 (172650) & Integran un orden nacional superior junto con la Constitución y las leyes generales. \\
+    Apertura previa (2008--2010) & Colegiados (169108, 164611, 164509) & Invocables en amparo; los de derechos humanos alcanzan nivel constitucional y obligan al control de convencionalidad. \\
+    Parámetro (2014) & P./J. 20/2014 (2006224) & Sin relación jerárquica: integran con la Constitución el parámetro de regularidad, salvo restricción expresa. \\
+    Vinculatoriedad (2014) & P./J. 21/2014 (2006225) & La jurisprudencia interamericana vincula al juez nacional cuando resulta más favorable a la persona. \\
+    Extensión (2015) & 1a. CCCXLIV/2015 (2010426) & El parámetro comprende también la interpretación de la norma nacional o internacional. \\
+    \bottomrule
+  \end{tabular}
+  \caption{Evolución de los criterios de la Suprema Corte sobre la posición de los tratados internacionales de derechos humanos. Elaboración propia con base en los registros digitales consultados.}
+\end{table}
+
+\subsection{Discusión de los resultados}
+
+Leídos en conjunto, los siete criterios no describen una progresión acumulativa en la que cada tesis perfeccione a la anterior. Describen un cambio de pregunta. Entre 1992 y 2007 la Corte se interroga por la \emph{posición} de la norma; desde 2014 se interroga por su \emph{contenido protector}. Que la respuesta de 1999 contradiga la de 1992, y que la de 2014 abandone el marco de ambas, no revela inconsistencia sino el agotamiento de un instrumental conceptual que no lograba resolver los casos que se le presentaban.
+
+Este desplazamiento tiene una consecuencia práctica precisa. Bajo el esquema jerárquico, la persona que reclamaba un derecho debía primero acreditar que la norma invocada ocupaba una posición superior a la que se le oponía; solo después podía discutirse el fondo. Bajo el parámetro, la discusión sobre la posición desaparece y el análisis se dirige de inmediato a cuál de las normas ofrece mayor protección \citep{scjnIijCT293y2017}. \textbf{Es decir}, se suprime un obstáculo argumentativo previo que no aportaba nada a la tutela del derecho.
+
+\textbf{En efecto}, los resultados confirman la hipótesis planteada en la introducción, \textbf{puesto que} la evidencia documental muestra que el tránsito del rango al parámetro modificó la estructura del razonamiento y no solo su terminología: cambió el objeto sobre el que se predica la validez. \textbf{Sin embargo}, la confirmación debe matizarse en un punto, y es la restricción expresa que la propia tesis P./J. 20/2014 conserva.
+
+La cláusula admite dos lecturas y la doctrina se ha dividido entre ellas. La primera la considera una limitación regresiva: si ante una restricción constitucional expresa debe estarse al texto de la Constitución con independencia de que el tratado ofrezca mayor protección, entonces el principio pro persona queda subordinado y reaparece, por la puerta trasera, la jerarquía que la tesis declaró abolida \citep{alvarezIcazaDerechosMexico}. La segunda la entiende como cláusula de cierre: sin un criterio último de decisión, el sistema quedaría sin regla para los casos de conflicto irreductible, y la seguridad jurídica exige que alguna norma opere como punto final \citep{azuelaGuitronProcesalConstitucional2008}.
+
+\textbf{A mi juicio}, ambas lecturas capturan algo correcto y el desacuerdo real no está en la interpretación de la cláusula sino en qué se espera de un sistema de derechos. Quien privilegia la máxima protección leerá cualquier límite como retroceso; quien privilegia la operatividad del sistema aceptará un criterio de cierre aunque sacrifique protección en casos extremos. \textbf{No obstante}, conviene observar un dato que suele pasarse por alto: la votación fue de seis contra cinco \citep{scjnTesis2006225}. Una mayoría de un voto sugiere que la propia Corte no consideró la solución evidente, lo que respalda la idea de que la restricción es el punto de equilibrio de una discusión inconclusa antes que una conclusión asentada.
+
+Respecto de la coincidencia con otras investigaciones, la obra conjunta de la Suprema Corte y el Instituto de Investigaciones Jurídicas coincide en presentar la CT 293/2011 como un punto de inflexión y no como una precisión terminológica \citep{scjnIijCT293y2017}. La discrepancia principal se sitúa en la valoración de la restricción expresa, donde no existe consenso doctrinal.
+
+\textbf{A mi juicio}, el alcance de este trabajo está acotado por su naturaleza documental, por el recorte a los criterios seleccionados en la planeación y por la ausencia de análisis de sentencias de aplicación posteriores, que permitirían verificar cómo opera el parámetro en casos concretos. Quedan sin contestar dos preguntas: cómo resuelven los tribunales ordinarios cuando la restricción expresa concurre con un criterio interamericano más favorable, y si el principio pro persona admite excepciones sin desnaturalizarse como principio.
+
+%% ===========================================================================
+%% ACTO 3 - Conclusión.
+%% Cubre el elemento (5) de la ficha. Es la MISMA sección de conclusión del
+%% reporte: resultados, si se cumplieron los objetivos y recomendaciones.
+%% ===========================================================================
+\clearpage
+\section{Conclusión}
+
+La reconstrucción de los siete criterios examinados muestra que la Suprema Corte no perfeccionó progresivamente una misma respuesta, sino que abandonó la pregunta que la sostenía. De 1992 a 2007 el tribunal buscó la posición correcta de los tratados dentro de una estructura vertical, y cada respuesta fue sustituida por la siguiente. A partir de 2014 la pregunta dejó de ser dónde se ubica la norma para pasar a ser qué protección ofrece. Reconstruir esa trayectoria de forma ordenada permite advertir que las contradicciones entre criterios no expresan inconsistencia del tribunal, sino el agotamiento de un marco conceptual incapaz de resolver los casos que la reforma de 2011 puso sobre la mesa.
+
+Respecto de los objetivos propuestos, \textbf{considero} que se cumplieron en sus tres extremos. La secuencia de criterios quedó reconstruida y documentada con su registro digital; el contenido del parámetro fijado en la CT 293/2011 quedó identificado junto con su límite expreso; y sus efectos sobre el control de convencionalidad quedaron valorados a partir del método de tres pasos que fija la tesis P./J. 21/2014. El tercer objetivo se cumplió de manera parcial, pues la valoración se apoya en el texto de los criterios y no en sentencias de aplicación posteriores, que exceden el recorte documental de este trabajo.
+
+\textbf{Sostengo} que el tránsito del rango al parámetro es la transformación más relevante del control constitucional mexicano de las últimas décadas, y no una reformulación terminológica. La razón es que modifica el punto de partida del razonamiento judicial: mientras la pirámide obliga a resolver primero una cuestión de posición ajena al derecho reclamado, el parámetro dirige el análisis de inmediato al contenido protector de las normas concurrentes. La consecuencia para el litigio de derechos humanos es concreta, pues quien invoca un estándar convencional ya no necesita ganar una discusión previa sobre jerarquía para que su pretensión sea examinada en el fondo.
+
+\textbf{No obstante}, esa transformación quedó incompleta mientras subsista la restricción expresa, que reintroduce una prelación en el supuesto de conflicto y mantiene abierta la discusión que la contradicción pretendía cerrar. Como líneas de investigación posteriores se recomienda analizar la aplicación del parámetro en sentencias dictadas con posterioridad a 2014, examinar el tratamiento judicial concreto de las restricciones expresas cuando concurren con criterios interamericanos más favorables, y contrastar la solución mexicana con la de otros ordenamientos latinoamericanos que adoptaron la noción de bloque de constitucionalidad.\footnote{En la elaboración de este trabajo se utilizaron herramientas de inteligencia artificial como apoyo para la organización y revisión del texto, conforme a los Lineamientos para el uso ético y responsable de la Inteligencia Artificial en el ámbito académico de la UnADM. La delimitación del problema, la selección y verificación de las fuentes, el análisis de los hallazgos y la postura sostenida son de mi autoría.}
+
+\clearpage
+\bibliography{garantias-constitucionales}
+
+\end{document}
