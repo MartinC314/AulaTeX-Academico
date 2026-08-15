@@ -325,6 +325,146 @@
       "tabla_rule": "La tabla de síntesis es AUXILIAR, no el núcleo: el reporte no es un cuadro comparativo. Regla de la ficha: no repetir en el texto la evidencia que ya muestra la tabla. Borrar el entorno si no se justifica.",
       "scoring_extra": "Métrica: máximo 1 lista en todo el documento (2+ penalizan), por eso los objetivos específicos van en prosa. Integridad requiere 4 marcadores de postura; la nota al pie de IA cuenta como uno.",
       "template_gotchas": "Plantilla-Informe NO define \\pendiente: declararlo con \\providecommand. Y NUNCA usarlo en \\documenttitle/\\documentsubtitle: src/cfg/init.tex:52 los evalúa con \\ifthenelse antes del preámbulo del usuario -> error fatal. Tampoco dentro de \\section{}: va al índice."
+    },
+    "foro": {
+      "fuente_real": {
+        "materia": "Garantías Constitucionales, Interaprendizaje en Ambientes Virtuales y Derecho a la Seguridad Social (UnADM, Licenciatura en Derecho)",
+        "actividad": "Cuatro entregas compiladas y validadas: Garantías A1 y A2, Interaprendizaje A2, Seguridad Social A1",
+        "nota": "Patrón consolidado por convergencia: los cuatro TEX comparten paquetes, paleta, entorno y estructura del bloque de producto."
+      },
+      "packages": [
+        "\\usepackage[most]{tcolorbox}",
+        "\\usepackage{enumitem}",
+        "\\usepackage{attachfile}",
+        "\\usepackage{helvet}"
+      ],
+      "colores": [
+        "\\definecolor{unadmGreen}{HTML}{6A8A3A}",
+        "\\definecolor{unadmGreenDark}{HTML}{4F6A2A}",
+        "\\definecolor{unadmPaper}{HTML}{F7F8F3}",
+        "\\definecolor{unadmInk}{HTML}{22262B}",
+        "\\definecolor{unadmGold}{HTML}{C8A24B}"
+      ],
+      "macro_forobox": "\\newtcolorbox{forobox}[1][]{%\n  enhanced,\n  breakable,\n  colback=unadmPaper,\n  colframe=unadmGreen,\n  boxrule=0pt,\n  leftrule=3pt,\n  arc=1.2mm,\n  left=4mm, right=4mm, top=3mm, bottom=3mm,\n  fonttitle=\\bfseries\\color{white},\n  coltitle=white,\n  colbacktitle=unadmGreenDark,\n  attach boxed title to top left={xshift=4mm,yshift=-2mm},\n  boxed title style={colframe=unadmGreenDark,arc=0.6mm},\n  #1\n}",
+      "skeleton": "% ARQUITECTURA FORO (reporte contenedor + producto publicado en caja):\n\\section{Introducci\\'on}\n% Plantea el problema y anuncia la postura. SIN metadiscurso: no se dice\n% 'en esta actividad se pide'. La consigna no se copia al entregable.\n\n\\section{<titulo tematico del eje conceptual>}\n% Desarrollo argumentativo en prosa, con subsecciones TEMATICAS.\n% Aqui vive la base conceptual: terminos delimitados con \\textbf{}.\n\n% EL PRODUCTO: lo que efectivamente se publico en la plataforma.\n\\begin{forobox}[title={Participaci\\'on publicada en el foro}]\n\\hfill\\foroCopyButton{foro-participacion-Actividad-N.txt}\\\\[-0.5em]\n\\phantomsection\\label{foro-participacion}\n\n\\textbf{Asunto:} <asunto breve y tematico>\\par\n\\medskip\n<saludo y encuadre en una sola frase>\n\\medskip\n\n\\begin{enumerate}[leftmargin=1.6em,labelsep=0.6em,itemsep=0.5em,label=\\textbf{\\arabic*)}]\n  \\item \\textbf{<pregunta guia>} <respuesta con fundamento y cita>\n\\end{enumerate}\n\\end{forobox}\n\n\\section{Conclusi\\'on}\n% Cierra con postura propia y consecuencia practica. Incluye la nota al\n% pie de declaracion de uso de IA (requisito UnADM).\n",
+      "producto_en_caja_rule": "REGLA CENTRAL DEL FORO: el entregable tiene DOS capas. El reporte es el contenedor (introducción, desarrollo, conclusión) y la caja `forobox` reproduce EXACTAMENTE el texto publicado en la plataforma. La caja documenta algo verificable en el aula virtual; no lo sustituye. Por eso el texto de la caja debe poder copiarse y pegarse tal cual.",
+      "titulo_caja_rule": "El título de la caja nombra el acto comunicativo real: «Participación publicada en el foro», «Retroalimentación publicada a otra participación» o «Intervención en el foro sobre <tema>». Nunca «Desarrollo» ni «Participación publicada» como título-etiqueta de sección, porque la métrica penaliza los títulos que no nombran el tema.",
+      "preguntas_guia_rule": "Cuando la consigna trae preguntas guía, cada una se responde en un \\item con la pregunta en \\textbf{} seguida de la respuesta. La pregunta se reproduce para que la intervención sea legible por sí sola, pero NO se copian las instrucciones de la planeación.",
+      "retroalimentacion_rule": "Si la consigna pide comentar a un compañero, se agrega una SEGUNDA caja titulada «Retroalimentación publicada a otra participación». La retroalimentación aporta un argumento o una fuente; no es elogio genérico.",
+      "boton_copiar_rule": "La macro \\foroCopyButton adjunta el texto plano de la intervención con attachfile, para poder pegarlo en la plataforma sin arrastrar formato de LaTeX. El archivo adjunto debe existir junto al TEX.",
+      "sin_metadiscurso_rule": "El entregable NO menciona el sistema que lo produjo ni el proceso editorial: nada de «brechas detectadas», «refuerzo del ciclo A» o «esta actividad solicita». Ese andamiaje es telemetría interna.",
+      "scoring_extra": [
+        "El reporte contiene una caja `forobox` con el texto exacto publicado.",
+        "El título de la caja nombra el acto comunicativo, no una etiqueta genérica.",
+        "Cada pregunta guía de la consigna recibe respuesta con fundamento citado.",
+        "Las secciones del desarrollo tienen títulos temáticos, no de andamiaje.",
+        "La conclusión sostiene postura propia y cierra con la declaración de IA.",
+        "No se copian instrucciones de la planeación dentro del entregable."
+      ]
+    },
+    "cuadro_comparativo": {
+      "fuente_real": {
+        "materia": "Redacción en Contextos Virtuales, Derecho a la Seguridad Social y Ética y Moral Jurídica (UnADM, Licenciatura en Derecho)",
+        "actividad": "Tres entregas compiladas y validadas: Redacción A2 (criterios de redacción académica), Seguridad Social A4 (seguro social vs privado, 11 criterios) y Ética A1 (seis escuelas éticas)",
+        "nota": "Las tres coinciden en landscape + cabecera de color + criterios en la primera columna. Difieren en el entorno de tabla, y la diferencia no es estilística sino funcional: ver `dos_variantes_rule`."
+      },
+      "packages": [
+        "\\usepackage{longtable}",
+        "\\usepackage{booktabs}",
+        "\\usepackage{colortbl}",
+        "\\usepackage{pdflscape}",
+        "\\usepackage{graphicx}",
+        "\\usepackage{helvet}"
+      ],
+      "macro_columnas": "% Columnas de ancho fijo con texto justificado arriba.\n\\newcolumntype{L}[1]{>{\\raggedright\\arraybackslash}p{#1}}",
+      "skeleton": "% ARQUITECTURA CUADRO COMPARATIVO (reporte contenedor; el producto es la tabla):\n\\section{Introducci\\'on}\n% Plantea QUE se compara y POR QUE esa comparacion importa. Sin metadiscurso.\n\n\\section{<titulo tematico del eje de contraste>}\n% Prosa que delimita los conceptos con \\textbf{} ANTES de la tabla:\n% la tabla contrasta, no define por primera vez.\n\n\\begin{landscape}\n\\begingroup\n\\setlength{\\parskip}{0pt}\n\\centering\n{\\scriptsize\n\\setlength{\\tabcolsep}{8pt}\n\\renewcommand{\\arraystretch}{1.86}\n\\resizebox{\\linewidth}{!}{%\n\\begin{tabular}{L{0.17\\linewidth} L{0.39\\linewidth} L{0.39\\linewidth}}\n\\rowcolor{unadmGreenDark}\n\\textbf{\\color{white}Criterio} & \\textbf{\\color{white}<Opcion A>} & \\textbf{\\color{white}<Opcion B>} \\\\\n\\midrule\n\\textbf{<Criterio 1>} & <rasgo A con \\citep{}> & <rasgo B con \\citep{}> \\\\\n\\rowcolor{unadmRowAlt}\n\\textbf{<Criterio 2>} & <rasgo A> & <rasgo B> \\\\\n\\end{tabular}}\n}\n\\endgroup\n\\end{landscape}\n\n\\section{<titulo tematico del analisis>}\n% LECTURA de la tabla: que revela el contraste. No repetir celdas en prosa.\n\n\\section{Conclusi\\'on}\n% Postura propia sobre el contraste + nota al pie de declaracion de IA.\n",
+      "dos_variantes_rule": "Hay DOS variantes legítimas y la elección depende del tamaño, no del gusto. (a) `tabular` dentro de \\resizebox: para tablas que caben en UNA página apaisada; conserva proporciones y no parte filas. (b) `longtable` con \\endfirsthead/\\endhead: obligatoria cuando la tabla se desborda, porque repite la cabecera en cada página. Usar `longtable` dentro de \\resizebox NO funciona: resizebox necesita medir la caja completa.",
+      "criterios_en_columna_rule": "La PRIMERA columna lleva los criterios de comparación en \\textbf{}; las siguientes, los objetos comparados. Nunca al revés: leído de arriba abajo, el cuadro debe permitir seguir un mismo criterio a través de las opciones. Se recomiendan entre 6 y 11 criterios: menos empobrece el contraste, más vuelve la tabla ilegible.",
+      "cita_por_celda_rule": "Cada celda con afirmación sustantiva lleva su \\citep. Una tabla comparativa sin fuentes es una opinión tabulada. Las citas van DENTRO de la celda, no agrupadas al pie.",
+      "prosa_antes_y_despues_rule": "La tabla no se basta a sí misma: va precedida por prosa que delimita los conceptos y seguida por un análisis que LEE el contraste. Sin ese marco, la métrica castiga la base conceptual y el trabajo parece un formulario.",
+      "landscape_rule": "El cuadro va en \\begin{landscape} con \\null\\vspace*{-1.35cm} para recuperar el margen superior. Tras \\end{landscape} conviene \\clearpage y restaurar \\pagestyle{fancy} si se alteró.",
+      "sin_metadiscurso_rule": "El entregable no menciona el proceso editorial ni copia las instrucciones de la planeación. El caption nombra el contenido, no la tarea: «Comparación de criterios de redacción académica», no «Cuadro comparativo Actividad 2».",
+      "scoring_extra": [
+        "La primera columna contiene los criterios y las demás los objetos comparados.",
+        "Hay entre 6 y 11 criterios de comparación efectivos.",
+        "Cada celda sustantiva está respaldada con \\citep de fuente verificable.",
+        "La tabla va precedida de prosa conceptual y seguida de un análisis del contraste.",
+        "El caption nombra el contenido temático, no la actividad.",
+        "La variante de tabla (tabular+resizebox o longtable) corresponde al tamaño real."
+      ]
+    },
+    "mapa_conceptual": {
+      "fuente_real": {
+        "materia": "Garantías Constitucionales y Redacción en Contextos Virtuales (UnADM, Licenciatura en Derecho)",
+        "actividad": "Garantías A3 (El Estado a través de la historia, 48 nodos) y Redacción A6 (autogestión del aprendizaje, 20 nodos)",
+        "nota": "Ambas compiladas y en 100/100. Coinciden en TikZ + landscape + resizebox + palabras enlace en todas las aristas."
+      },
+      "packages": [
+        "\\usepackage{tikz}",
+        "\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric}",
+        "\\usepackage{pdflscape}",
+        "\\usepackage{graphicx}"
+      ],
+      "estilos_tikz": "% Jerarquía visual por nivel: raíz, rama, subrama, hoja, enlace, etiqueta.\nroot/.style={rectangle, rounded corners=2pt, draw=unadmGreenDark, fill=unadmGreenDark, text=white, font=\\bfseries\\small, align=center, inner sep=5pt},\nbranch/.style={rectangle, rounded corners=2pt, draw=unadmGreen, fill=unadmGreen!12, font=\\small, align=center, inner sep=4pt},\nsubbranch/.style={rectangle, rounded corners=2pt, draw=unadmGreen!60, fill=white, font=\\footnotesize, align=center, inner sep=3pt},\nleaf/.style={rectangle, draw=unadmGreen!35, fill=white, font=\\scriptsize, align=left, inner sep=3pt},\nedge/.style={-{Stealth[length=2mm]}, draw=unadmGreen!70, thick},\nlabel/.style={font=\\scriptsize\\itshape, text=unadmInk!75, fill=white, inner sep=1pt}",
+      "skeleton": "% ARQUITECTURA MAPA CONCEPTUAL (reporte contenedor; el producto es el grafo):\n\\section{Introducci\\'on}\n% Plantea el problema conceptual y anuncia la logica del mapa. Sin metadiscurso.\n\n\\section{<titulo tematico del campo conceptual>}\n% Prosa que DEFINE los conceptos con \\textbf{} antes de graficarlos.\n\n\\begin{landscape}\n\\thispagestyle{empty}\n\\begingroup\\centering\n\\resizebox{!}{0.80\\textheight}{%\n\\begin{tikzpicture}[node distance=8mm and 14mm]\n  \\node[root] (raiz) {<CONCEPTO RAIZ>};\n  \\node[branch, below left=of raiz] (r1) {<Rama 1>};\n  \\draw[edge] (raiz) -- node[label] {<palabra enlace>} (r1);\n\\end{tikzpicture}}\n\\par\\medskip\n{\\small Figura 1. <Lectura breve del mapa>.}\n\\endgroup\n\\end{landscape}\n\\clearpage\\pagestyle{fancy}\n\n\\section{<titulo tematico de la lectura del mapa>}\n% Explica el recorrido: del centro a las hojas. No enumerar nodos.\n\n\\section{Conclusi\\'on}\n% Postura propia + nota al pie de declaracion de IA.\n",
+      "palabras_enlace_rule": "REGLA CENTRAL: TODA arista lleva palabra enlace («se clasifican en», «depende de», «se hacen efectivos con»). Un mapa conceptual sin conectores es un organigrama: la proposición se forma con concepto + enlace + concepto. Verificado en las dos entregas: 48/48 y 21/21 aristas etiquetadas.",
+      "jerarquia_rule": "Estructura de arriba abajo o radial desde una raíz única, con niveles visualmente distinguibles (raíz, rama, subrama, hoja). Entre 18 y 50 nodos: menos resulta trivial, más vuelve el mapa ilegible al reducirlo.",
+      "resizebox_rule": "\\resizebox{!}{0.80\\textheight} es el máximo que deja mapa y pie en la misma página apaisada. Con 0.85+ el pie se va a la página siguiente y queda huérfano. Escalar por ALTO (primer argumento `!`), no por ancho.",
+      "fundamento_normativo_rule": "En contenido jurídico, las hojas terminales llevan el fundamento exacto (artículo, fracción, párrafo). El mapa no es decorativo: es un dispositivo de localización normativa.",
+      "scoring_extra": [
+        "Todas las aristas llevan palabra enlace visible.",
+        "Existe una raíz única y la jerarquía tiene al menos tres niveles.",
+        "Los conceptos se definen en prosa ANTES de aparecer en el grafo.",
+        "El mapa cabe con su pie en una sola página apaisada.",
+        "Hay una sección posterior que LEE el mapa, no que lo enumera.",
+        "En contenido jurídico, las hojas citan el fundamento normativo exacto."
+      ]
+    },
+    "tabla_didactica": {
+      "fuente_real": {
+        "materia": "Derecho a la Seguridad Social (UnADM, Licenciatura en Derecho)",
+        "actividad": "Seguridad Social A4 — cuadro de figuras y vías de exigibilidad",
+        "nota": "Entrega validada en 100/100. Difiere de cuadro_comparativo en la función: aquí la tabla ORGANIZA información didáctica; allá CONTRASTA dos o más objetos."
+      },
+      "packages": [
+        "\\usepackage{longtable}",
+        "\\usepackage{booktabs}",
+        "\\usepackage{colortbl}",
+        "\\usepackage{pdflscape}"
+      ],
+      "skeleton": "% ARQUITECTURA TABLA DIDACTICA (el producto es la tabla organizadora):\n\\section{Introducci\\'on}\n\n\\section{<titulo tematico>}\n% Prosa conceptual previa.\n\n\\begin{landscape}\n\\begingroup\\scriptsize\n\\setlength{\\tabcolsep}{6pt}\n\\renewcommand{\\arraystretch}{1.5}\n\\begin{longtable}{@{}L{0.20\\linewidth}L{0.38\\linewidth}L{0.38\\linewidth}@{}}\n\\caption{<titulo de contenido, no de la tarea>}\\label{tab:<clave>}\\\\\n\\toprule\n\\textbf{<Col 1>} & \\textbf{<Col 2>} & \\textbf{<Col 3>} \\\\\n\\midrule\\endfirsthead\n\\toprule\n\\textbf{<Col 1>} & \\textbf{<Col 2>} & \\textbf{<Col 3>} \\\\\n\\midrule\\endhead\n\\bottomrule\\endfoot\n<filas>\n\\end{longtable}\n\\endgroup\n\\end{landscape}\n\n\\section{Conclusi\\'on}\n",
+      "funcion_organizadora_rule": "La tabla didáctica ORGANIZA un campo de información (figuras, plazos, requisitos, vías) para hacerlo consultable. No exige dos objetos contrapuestos como el cuadro comparativo. Si el propósito es contrastar, usar `cuadro_comparativo`.",
+      "cabecera_repetida_rule": "Con longtable son obligatorios \\endfirsthead y \\endhead: si la tabla cruza de página sin repetir cabecera, las columnas quedan sin rótulo y el producto pierde su función de consulta.",
+      "scoring_extra": [
+        "La tabla tiene caption temático y \\label para referencia cruzada.",
+        "La cabecera se repite en cada página (endfirsthead/endhead).",
+        "Cada fila sustantiva lleva cita de fuente verificable.",
+        "Hay prosa que introduce la tabla y otra que la interpreta."
+      ]
+    },
+    "reporte_de_lectura_general": {
+      "fuente_real": {
+        "materia": "Garantías Constitucionales (UnADM, Licenciatura en Derecho)",
+        "actividad": "Actividad 7 — Reporte de lectura sobre criterios jurisdiccionales de la SCJN (subtema asignado por matrícula)",
+        "planeacion": "planeaciones-garantias-constitucionales/Planificacion de actividades S7 - Garantias constitucionales.pdf",
+        "nota": "ATENCIÓN: la planeación exige entrega AUTÓGRAFA de máximo 2 páginas. El TEX es BORRADOR; el entregable es el manuscrito escaneado."
+      },
+      "packages": [
+        "\\usepackage{enumitem}",
+        "\\usepackage{csquotes}"
+      ],
+      "skeleton": "% ARQUITECTURA REPORTE DE LECTURA (texto expositivo original):\n\\section{Introducci\\'on}\n% Presenta el texto/criterios leidos y la PREGUNTA que ordena el reporte.\n\n\\section{<titulo tematico>}\n\\subsection{<primer eje de analisis>}\n% Explica la tesis o argumento central de la fuente.\n\\subsection{<segundo eje>}\n% Reconoce la ESTRUCTURA: como se articula la argumentacion.\n\\subsection{<tercer eje>}\n% Profundiza en evidencias y alcance.\n\n\\section{Conclusi\\'on}\n% Juicio critico propio o contraargumento. Nota al pie de declaracion de IA.\n",
+      "seis_pasos_rule": "La consigna fija seis operaciones que deben ser VISIBLES en el texto: (1) exponer y recuperar información del tema asignado; (2) analizar la tesis o argumento central; (3) reconocer la estructura y el hilo conductor; (4) profundizar en evidencias, ejemplos y su alcance; (5) reconocer la utilidad, con balance de lo que aporta la lectura; (6) concluir con juicio crítico o contraargumento y postura propia.",
+      "tema_asignado_rule": "CRÍTICO: el subtema se asigna POR MATRÍCULA en el anexo de la planeación. Antes de redactar hay que localizar la fila correspondiente. Cuidado: al extraer el PDF, las matrículas pueden aparecer truncadas (9 dígitos frente a los 10 reales); verificar por prefijo y comprobar que la coincidencia sea única antes de decidir el tema.",
+      "entrega_autografa_rule": "Cuando la planeación pide escrito autógrafo, el PDF compilado NO es el entregable. Se genera además `A<N>-texto-para-transcribir.txt` calibrado a 540-580 palabras (1 cuartilla manuscrita ≈ 250-330 palabras). Las citas APA y la lista de referencias también se escriben a mano: verificar la coherencia citas<->referencias antes de transcribir.",
+      "citacion_apa_rule": "La rúbrica evalúa citación APA 7ª con 10 puntos propios. Toda referencia listada debe estar citada en el cuerpo y viceversa. Con varias obras del mismo autor y año, usar sufijos (2012a, 2012b) de forma consistente.",
+      "scoring_extra": [
+        "Los seis pasos de la consigna son identificables en el texto.",
+        "El subtema corresponde exactamente al asignado por matrícula.",
+        "La conclusión contiene juicio crítico propio, no resumen.",
+        "Las citas del cuerpo y la lista de referencias son coherentes entre sí.",
+        "Si la entrega es autógrafa, existe el borrador calibrado a 2 cuartillas."
+      ]
     }
   }
 }
