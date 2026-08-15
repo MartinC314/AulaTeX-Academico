@@ -77,6 +77,42 @@ def _resolve_prompt_text(prompt_value: str | None, prompt_file: str) -> str:
     return prompt_text
 
 
+def _collect_execution_optimize_plan_summaries(execution_summary: object) -> list[dict[str, object]]:
+    if not isinstance(execution_summary, dict):
+        return []
+    targets = execution_summary.get("targets")
+    if not isinstance(targets, list):
+        return []
+    summaries: list[dict[str, object]] = []
+    for target_record in targets:
+        if not isinstance(target_record, dict):
+            continue
+        actions = target_record.get("actions")
+        if not isinstance(actions, list):
+            continue
+        for action in actions:
+            if not isinstance(action, dict):
+                continue
+            if str(action.get("action") or "") != "realizar-actividad":
+                continue
+            summary = action.get("optimize_plan_summary")
+            if not isinstance(summary, dict):
+                continue
+            summaries.append(
+                {
+                    "target": target_record.get("target", ""),
+                    "activity_number": target_record.get("activity_number", 0),
+                    "policy_cycles": summary.get("policy_cycles", 0),
+                    "policy_usage_rate": summary.get("policy_usage_rate", 0.0),
+                    "action_alignment_rate": summary.get("action_alignment_rate", 0.0),
+                    "accepted_aligned_policy_cycles": summary.get("accepted_aligned_policy_cycles", 0),
+                    "accepted_misaligned_policy_cycles": summary.get("accepted_misaligned_policy_cycles", 0),
+                    "mean_policy_quality_delta": summary.get("mean_policy_quality_delta", 0.0),
+                }
+            )
+    return summaries
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="aulatex", description="AulaTeX GUI and agentic editorial workflow.")
     sub = parser.add_subparsers(dest="command")
@@ -468,6 +504,7 @@ def main(argv: list[str] | None = None) -> None:
             "optimize_ok": result.optimize_ok,
             "quality_before": result.quality_before,
             "quality_after": result.quality_after,
+            "optimize_plan_summary": result.optimize_plan_summary,
             "final_compile_ok": result.final_compile_ok,
             "semantic_blocking_before": result.semantic_blocking_before,
             "semantic_blocking_after": result.semantic_blocking_after,
@@ -1054,6 +1091,7 @@ def main(argv: list[str] | None = None) -> None:
                     "report": str(result.report_path),
                     "executed": result.executed,
                     "execution_ok": result.execution_ok,
+                    "optimize_plan_summaries": _collect_execution_optimize_plan_summaries(result.execution_summary),
                     "execution_summary": result.execution_summary,
                 },
                 ensure_ascii=False,

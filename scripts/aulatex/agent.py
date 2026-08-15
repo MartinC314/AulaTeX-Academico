@@ -86,6 +86,7 @@ class AgentRunResult:
     semantic_blocking_before: int | None = None
     semantic_blocking_after: int | None = None
     semantic_audit_available: bool | None = None
+    optimize_plan_summary: dict[str, object] | None = None
 
 
 @dataclass(frozen=True)
@@ -327,6 +328,7 @@ class AulaTeXAgent:
             semantic_blocking_before,
             semantic_blocking_after,
             semantic_audit_available,
+            optimize_plan_summary,
         ) = self._postprocess_activity(request, target_ctx, run_dir, report_path)
         if monitor_ok is False or optimize_ok is False:
             ok = False
@@ -342,6 +344,7 @@ class AulaTeXAgent:
             semantic_blocking_before=semantic_blocking_before,
             semantic_blocking_after=semantic_blocking_after,
             semantic_audit_available=semantic_audit_available,
+            optimize_plan_summary=optimize_plan_summary,
         )
 
     def _postprocess_activity(
@@ -359,6 +362,7 @@ class AulaTeXAgent:
         int | None,
         int | None,
         bool | None,
+        dict[str, object] | None,
     ]:
         """Encadena monitor + optimize + compilación final tras realizar-actividad.
 
@@ -373,9 +377,9 @@ class AulaTeXAgent:
         """
         action = request.action.strip().lower()
         if action != "realizar-actividad" or request.level not in {"materia", "actividad"}:
-            return None, None, None, None, None, None, None, None
+            return None, None, None, None, None, None, None, None, None
         if target_ctx.generation_mode == "downward":
-            return None, None, None, None, None, None, None, None
+            return None, None, None, None, None, None, None, None, None
 
         monitor_ok: bool | None = None
         optimize_ok: bool | None = None
@@ -385,6 +389,7 @@ class AulaTeXAgent:
         semantic_blocking_before: int | None = None
         semantic_blocking_after: int | None = None
         semantic_audit_available: bool | None = None
+        optimize_plan_summary: dict[str, object] | None = None
         report_lines: list[str] = []
 
         # 0) Producto FORO: si la actividad es un foro, aplicar el patrón editorial
@@ -462,6 +467,7 @@ class AulaTeXAgent:
                 semantic_blocking_before = result.semantic_blocking_before
                 semantic_blocking_after = result.semantic_blocking_after
                 semantic_audit_available = result.semantic_audit_available
+                optimize_plan_summary = self._load_planned_action_summary(result.manifest_path)
                 report_lines.append(
                     f"- Optimización: {result.applied_cycles} ciclo(s) aplicados, "
                     f"calidad {result.quality_before}→{result.quality_after}; "
@@ -469,6 +475,9 @@ class AulaTeXAgent:
                     f"{result.semantic_blocking_before}→{result.semantic_blocking_after} "
                     f"(`{self.workspace.relative(result.manifest_path)}`)"
                 )
+                summary_line = self._format_planned_action_summary(optimize_plan_summary)
+                if summary_line:
+                    report_lines.append(summary_line)
             else:
                 optimize_ok = False
                 report_lines.append(f"- Optimización: ERROR ({optimize_invocation.error})")
@@ -537,6 +546,30 @@ class AulaTeXAgent:
             semantic_blocking_before,
             semantic_blocking_after,
             semantic_audit_available,
+            optimize_plan_summary,
+        )
+
+    def _load_planned_action_summary(self, manifest_path: Path) -> dict[str, object] | None:
+        try:
+            payload = json.loads(manifest_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            return None
+        summary = payload.get("planned_action_summary")
+        return summary if isinstance(summary, dict) else None
+
+    def _format_planned_action_summary(self, summary: dict[str, object] | None) -> str | None:
+        if not summary:
+            return None
+        policy_cycles = int(summary.get("policy_cycles") or 0)
+        if policy_cycles <= 0:
+            return "- Optimización (política): sin ciclos guiados por la política entrenada en esta corrida."
+        return (
+            "- Optimización (política): "
+            f"uso {float(summary.get('policy_usage_rate') or 0.0):.1%}, "
+            f"alineación acción {float(summary.get('action_alignment_rate') or 0.0):.1%}, "
+            f"aceptados alineados={int(summary.get('accepted_aligned_policy_cycles') or 0)}, "
+            f"aceptados desalineados={int(summary.get('accepted_misaligned_policy_cycles') or 0)}, "
+            f"Δ medio={float(summary.get('mean_policy_quality_delta') or 0.0):+.2f}."
         )
 
     def _optimize_mapa_layout(self, target_path: Path) -> str | None:

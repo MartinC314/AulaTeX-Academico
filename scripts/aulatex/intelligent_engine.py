@@ -391,6 +391,7 @@ class IntelligentEngine:
             "optimize_ok": getattr(result, "optimize_ok", None),
             "quality_before": getattr(result, "quality_before", None),
             "quality_after": getattr(result, "quality_after", None),
+            "optimize_plan_summary": getattr(result, "optimize_plan_summary", None),
             "final_compile_ok": getattr(result, "final_compile_ok", None),
             "semantic_blocking_before": getattr(result, "semantic_blocking_before", None),
             "semantic_blocking_after": getattr(result, "semantic_blocking_after", None),

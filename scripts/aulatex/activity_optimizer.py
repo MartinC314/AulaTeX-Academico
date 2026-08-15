@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import json
 import re
+import statistics
 import time
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
@@ -36,6 +37,25 @@ from .llm_bridge import DEFAULT_MAX_TOKENS, AulaTeXLLMClient
 from .quality_panel import PanelVerdict, QualityPanel, build_default_panel
 from .semantic_audit import SemanticAuditResult, SemanticAuditor
 from .workspace import AulaTeXWorkspace
+
+
+POLICY_IMPROVEMENT_KINDS = (
+    "correccion-semantica",
+    "enumeracion",
+    "conector",
+    "precision-cita",
+    "postura-propia",
+    "estructura",
+)
+QUALITY_COMPONENTS = (
+    "citas",
+    "estructura",
+    "base_conceptual",
+    "listas",
+    "conectores",
+    "extension",
+    "integridad",
+)
 
 
 @dataclass(frozen=True)
@@ -64,6 +84,8 @@ class ActivityOptimizeRequest:
     use_quality_panel: bool = False
     panel_llm_judge: bool = True
     reward_model_dir: str = ""
+    use_trained_policy: bool = True
+    policy_model_dir: str = ""
 
 
 @dataclass(frozen=True)
@@ -77,6 +99,8 @@ class ActivityOptimizeResult:
     quality_before: float
     quality_after: float
     tex_path: Path | None
+    initial_tex_snapshot_path: Path | None = None
+    final_tex_snapshot_path: Path | None = None
     semantic_blocking_before: int = 0
     semantic_blocking_after: int = 0
     semantic_audit_available: bool = True
@@ -97,6 +121,31 @@ class CycleRecord:
     semantic_blocking_before: int = 0
     semantic_blocking_after: int = 0
     panel_verdict: dict[str, Any] | None = None
+    planned_engine: str = ""
+    planned_improvement_kind: str = ""
+    planned_action_source: str = "round-robin"
+    planned_expected_acceptance: float | None = None
+    planned_expected_reward: float | None = None
+    quality_breakdown_before: dict[str, float] = field(default_factory=dict)
+    quality_breakdown_after: dict[str, float] = field(default_factory=dict)
+
+
+@dataclass(frozen=True)
+class PlannedAction:
+    engine: str
+    improvement_kind: str = ""
+    source: str = "round-robin"
+    expected_acceptance: float | None = None
+    expected_reward: float | None = None
+
+
+@dataclass(frozen=True)
+class TrainedPolicyBundle:
+    accept_pipeline: Any
+    reward_pipeline: Any
+    numeric_features: tuple[str, ...]
+    categorical_features: tuple[str, ...]
+    model_dir: Path
 
 
 class ActivityOptimizer:
@@ -106,6 +155,9 @@ class ActivityOptimizer:
         self.llm = llm or AulaTeXLLMClient()
         self.semantic_auditor = SemanticAuditor(self.llm)
         self._panel: QualityPanel | None = None
+        self._policy_cache: TrainedPolicyBundle | None = None
+        self._policy_cache_key: str = ""
+        self._policy_error: str = ""
         self.root = self.workspace.feedback_root / "activity-optimize" / "runs"
         self.root.mkdir(parents=True, exist_ok=True)
 
@@ -127,14 +179,15 @@ class ActivityOptimizer:
         # su cobertura. Si faltan y la base conceptual del .tex es escasa, se intenta
         # correr el extractor en modo local para materializar conceptos.
         self._current_concepts = self._load_or_build_concepts(request, tex_path)
+        original_text = tex_path.read_text(encoding="utf-8", errors="replace")
 
         contract_before = float((evaluation.get("contract") or {}).get("score", 0.0))
         if request.require_contract_100 and contract_before < 100.0:
             return self._finalize(request, run_id, run_dir, [], 0.0, 0.0, tex_path, ok=False,
+                                  initial_text=original_text, final_text=original_text,
                                   note=(f"El contrato editorial está en {contract_before}/100; "
                                         "primero converge con activity-monitor antes de optimizar calidad."))
 
-        original_text = tex_path.read_text(encoding="utf-8", errors="replace")
         if request.backup:
             backup_path = tex_path.with_suffix(tex_path.suffix + ".activity-optimize.bak")
             backup_path.write_text(original_text, encoding="utf-8")
@@ -181,13 +234,29 @@ class ActivityOptimizer:
                 if stall >= stall_limit:
                     break
             index += 1
-            engine = engines[(index - 1) % len(engines)]
+            quality_breakdown_before = self._quality_breakdown(current_text, self._current_concepts)
+            quality_before = round(sum(quality_breakdown_before.values()), 2)
+            action = self._select_cycle_action(
+                request,
+                engines,
+                index,
+                quality_before,
+                contract_current,
+                len(semantic_current.blocking_findings),
+                quality_breakdown_before,
+            )
+            engine = action.engine
             cycle_dir = run_dir / f"cycle-{index:02d}"
             cycle_dir.mkdir(parents=True, exist_ok=True)
 
-            quality_before = self._quality_score(current_text)
             proposal = self._request_improvement(
-                engine, current_text, rubric, request, cycle_dir, semantic_current
+                engine,
+                current_text,
+                rubric,
+                request,
+                cycle_dir,
+                semantic_current,
+                desired_improvement_kind=action.improvement_kind,
             )
 
             if proposal is None:
@@ -199,7 +268,14 @@ class ActivityOptimizer:
                 razon = ("El motor no respondió por un fallo de infraestructura (credenciales o red)."
                          if transient else "El motor no devolvió una propuesta aplicable.")
                 cycles.append(CycleRecord(index, engine, False, razon,
-                                          quality_before, quality_before, contract_current, contract_current))
+                                          quality_before, quality_before, contract_current, contract_current,
+                                          planned_engine=action.engine,
+                                          planned_improvement_kind=action.improvement_kind,
+                                          planned_action_source=action.source,
+                                          planned_expected_acceptance=action.expected_acceptance,
+                                          planned_expected_reward=action.expected_reward,
+                                          quality_breakdown_before=quality_breakdown_before,
+                                          quality_breakdown_after=quality_breakdown_before))
                 continue
 
             candidate_text, kind = self._apply_proposal(current_text, proposal)
@@ -208,7 +284,14 @@ class ActivityOptimizer:
                 cycles.append(CycleRecord(index, engine, False,
                                           "El bloque original propuesto no se encontró textualmente en el TEX.",
                                           quality_before, quality_before, contract_current, contract_current,
-                                          improvement_kind=proposal.get("improvement_kind", "")))
+                                          improvement_kind=proposal.get("improvement_kind", ""),
+                                          planned_engine=action.engine,
+                                          planned_improvement_kind=action.improvement_kind,
+                                          planned_action_source=action.source,
+                                          planned_expected_acceptance=action.expected_acceptance,
+                                          planned_expected_reward=action.expected_reward,
+                                          quality_breakdown_before=quality_breakdown_before,
+                                          quality_breakdown_after=quality_breakdown_before))
                 continue
 
             # Escribir candidato, recompilar y verificar contrato + calidad.
@@ -216,7 +299,8 @@ class ActivityOptimizer:
             new_eval = self._observe_eval(request, cycle_dir / "obs")
             contract_after = float((new_eval.get("contract") or {}).get("score", 0.0))
             compile_ok = self._compile_ok(new_eval)
-            quality_after = self._quality_score(candidate_text)
+            quality_breakdown_after = self._quality_breakdown(candidate_text, self._current_concepts)
+            quality_after = round(sum(quality_breakdown_after.values()), 2)
             semantic_candidate = self._semantic_audit(
                 request,
                 candidate_text,
@@ -256,7 +340,14 @@ class ActivityOptimizer:
                                           improvement_kind=kind, diff_chars=diff,
                                           semantic_blocking_before=semantic_before_count,
                                           semantic_blocking_after=semantic_after_count,
-                                          panel_verdict=verdict.to_dict() if request.use_quality_panel else None))
+                                          panel_verdict=verdict.to_dict() if request.use_quality_panel else None,
+                                          planned_engine=action.engine,
+                                          planned_improvement_kind=action.improvement_kind,
+                                          planned_action_source=action.source,
+                                          planned_expected_acceptance=action.expected_acceptance,
+                                          planned_expected_reward=action.expected_reward,
+                                          quality_breakdown_before=quality_breakdown_before,
+                                          quality_breakdown_after=quality_breakdown_after))
             else:
                 # Revertir el candidato.
                 tex_path.write_text(current_text, encoding="utf-8")
@@ -269,7 +360,14 @@ class ActivityOptimizer:
                                           improvement_kind=kind,
                                           semantic_blocking_before=semantic_before_count,
                                           semantic_blocking_after=semantic_after_count,
-                                          panel_verdict=verdict.to_dict() if request.use_quality_panel else None))
+                                          panel_verdict=verdict.to_dict() if request.use_quality_panel else None,
+                                          planned_engine=action.engine,
+                                          planned_improvement_kind=action.improvement_kind,
+                                          planned_action_source=action.source,
+                                          planned_expected_acceptance=action.expected_acceptance,
+                                          planned_expected_reward=action.expected_reward,
+                                          quality_breakdown_before=quality_breakdown_before,
+                                          quality_breakdown_after=quality_breakdown_after))
 
         # Asegurar que el archivo final refleja el mejor estado aceptado.
         tex_path.write_text(current_text, encoding="utf-8")
@@ -283,7 +381,8 @@ class ActivityOptimizer:
 
         return self._finalize(request, run_id, run_dir, cycles, quality_start, quality_end, tex_path,
                               ok=ok, note="", contract_before=contract_before, contract_after=contract_current,
-                              applied=applied, semantic_before=semantic_initial,
+                              applied=applied, initial_text=original_text, final_text=current_text,
+                              semantic_before=semantic_initial,
                               semantic_after=semantic_current)
 
     # ---------------------------------------------------------------- observación
@@ -666,11 +765,20 @@ class ActivityOptimizer:
 
     def _request_improvement(self, engine: str, current_text: str, rubric: str,
                              request: ActivityOptimizeRequest, cycle_dir: Path,
-                             semantic_audit: SemanticAuditResult) -> dict[str, Any] | None:
+                             semantic_audit: SemanticAuditResult,
+                             desired_improvement_kind: str = "") -> dict[str, Any] | None:
         body = self._strip_comments(current_text)
         cite_keys = sorted(set(re.findall(r"\\cite[tp]?\*?(?:\[[^\]]*\])*\{([^}]+)\}", body)))
         allowed_keys = sorted({k.strip() for group in cite_keys for k in group.split(",") if k.strip()})
         semantic_guidance = self._semantic_guidance(semantic_audit)
+        desired_kind_rule = ""
+        if desired_improvement_kind:
+            desired_kind_rule = (
+                "- PRIORIDAD DE ESTE CICLO: intenta una mejora de tipo "
+                f"'{desired_improvement_kind}'. El campo 'improvement_kind' DEBE reflejar ese tipo "
+                "si encuentras una corrección local y segura; solo cambia de tipo si el documento no "
+                "admite una mejora aplicable de esa clase en una única aparición exacta.\n"
+            )
 
         prompt = (
             "Eres un editor académico experto en LaTeX. Se te da un documento .tex de una actividad "
@@ -693,7 +801,8 @@ class ActivityOptimizer:
             "precisar una afirmación con una cita ya existente, reforzar la postura propia o resolver "
             "UNA observación semántica bloqueante en una aparición exacta por ciclo. No incluyas "
             "secciones distantes ni uses puntos suspensivos: una corrección parcial aplicable es "
-            "preferible a un bloque enorme no localizable.\n\n"
+            "preferible a un bloque enorme no localizable.\n"
+            f"{desired_kind_rule}\n"
             "Formato JSON EXACTO:\n"
             '{\n'
             '  "improvement_kind": "<correccion-semantica|enumeracion|conector|precision-cita|postura-propia|estructura>",\n'
@@ -920,6 +1029,162 @@ class ActivityOptimizer:
             )
         return "\n".join(lines)
 
+    def _select_cycle_action(
+        self,
+        request: ActivityOptimizeRequest,
+        engines: tuple[str, ...],
+        cycle_index: int,
+        quality_before: float,
+        contract_before: float,
+        semantic_blocking_before: int,
+        quality_breakdown_before: dict[str, float] | None = None,
+    ) -> PlannedAction:
+        fallback_kind = "correccion-semantica" if semantic_blocking_before > 0 else ""
+        fallback = PlannedAction(
+            engine=engines[(cycle_index - 1) % len(engines)],
+            improvement_kind=fallback_kind,
+            source="round-robin",
+        )
+        policy = self._load_trained_policy(request)
+        if policy is None:
+            return fallback
+
+        best: PlannedAction | None = None
+        best_value = float("-inf")
+        for engine in engines:
+            for improvement_kind in self._policy_candidate_kinds(semantic_blocking_before):
+                features = self._policy_feature_vector(
+                    policy,
+                    engine=engine,
+                    improvement_kind=improvement_kind,
+                    quality_before=quality_before,
+                    contract_before=contract_before,
+                    semantic_blocking_before=semantic_blocking_before,
+                    cycle_index=cycle_index,
+                    activity_number=int(request.activity_number),
+                    quality_breakdown_before=quality_breakdown_before or {},
+                )
+                acceptance = self._predict_acceptance(policy, features)
+                reward = self._predict_reward(policy, features)
+                expected_value = acceptance * reward
+                if expected_value > best_value:
+                    best_value = expected_value
+                    best = PlannedAction(
+                        engine=engine,
+                        improvement_kind=improvement_kind,
+                        source="trained-policy",
+                        expected_acceptance=acceptance,
+                        expected_reward=reward,
+                    )
+        if best is None or best.expected_acceptance is None or best.expected_reward is None:
+            return fallback
+        if best.expected_acceptance <= 0.0 or best.expected_reward <= 0.0:
+            return fallback
+        return best
+
+    def _policy_candidate_kinds(self, semantic_blocking_before: int) -> tuple[str, ...]:
+        if semantic_blocking_before > 0:
+            return ("correccion-semantica",)
+        return POLICY_IMPROVEMENT_KINDS
+
+    def _resolve_policy_model_dir(self, request: ActivityOptimizeRequest) -> Path:
+        if request.policy_model_dir.strip():
+            return self.workspace.resolve_target(request.policy_model_dir)
+        return self.workspace.feedback_root / "training" / "models"
+
+    def _load_trained_policy(self, request: ActivityOptimizeRequest) -> TrainedPolicyBundle | None:
+        if not request.use_trained_policy:
+            return None
+        model_dir = self._resolve_policy_model_dir(request)
+        cache_key = str(model_dir.resolve()) if model_dir.exists() else str(model_dir)
+        if self._policy_cache is not None and self._policy_cache_key == cache_key:
+            return self._policy_cache
+
+        accept_path = model_dir / "accept_clf.joblib"
+        reward_path = model_dir / "reward_reg.joblib"
+        if not accept_path.exists() or not reward_path.exists():
+            self._policy_cache = None
+            self._policy_cache_key = cache_key
+            self._policy_error = "modelos de política no encontrados"
+            return None
+        try:
+            import joblib
+        except Exception as exc:  # noqa: BLE001 - el fallback cubre entornos sin sklearn/joblib
+            self._policy_cache = None
+            self._policy_cache_key = cache_key
+            self._policy_error = str(exc)
+            return None
+
+        try:
+            accept_meta = joblib.load(accept_path)
+            reward_meta = joblib.load(reward_path)
+            bundle = TrainedPolicyBundle(
+                accept_pipeline=accept_meta["pipeline"],
+                reward_pipeline=reward_meta["pipeline"],
+                numeric_features=tuple(accept_meta.get("numeric") or ()),
+                categorical_features=tuple(accept_meta.get("categorical") or ()),
+                model_dir=model_dir,
+            )
+        except Exception as exc:  # noqa: BLE001 - si la carga falla se vuelve al heurístico
+            self._policy_cache = None
+            self._policy_cache_key = cache_key
+            self._policy_error = str(exc)
+            return None
+
+        self._policy_cache = bundle
+        self._policy_cache_key = cache_key
+        self._policy_error = ""
+        return bundle
+
+    def _policy_feature_vector(
+        self,
+        policy: TrainedPolicyBundle,
+        *,
+        engine: str,
+        improvement_kind: str,
+        quality_before: float,
+        contract_before: float,
+        semantic_blocking_before: int,
+        cycle_index: int,
+        activity_number: int,
+        quality_breakdown_before: dict[str, float],
+    ) -> Any:
+        import numpy as np
+
+        values: dict[str, Any] = {
+            "quality_before": float(quality_before),
+            "contract_before": float(contract_before),
+            "semantic_blocking_before": int(semantic_blocking_before),
+            "cycle": int(cycle_index),
+            "activity_number": int(activity_number),
+            "engine": engine,
+            "improvement_kind": improvement_kind,
+        }
+        for component in QUALITY_COMPONENTS:
+            values[f"quality_{component}_before"] = float(quality_breakdown_before.get(component, 0.0) or 0.0)
+        row: list[Any] = []
+        for name in policy.numeric_features:
+            row.append(float(values.get(name, 0.0) or 0.0))
+        for name in policy.categorical_features:
+            row.append(str(values.get(name, "") or "(vacio)"))
+        return np.asarray([row], dtype=object)
+
+    def _predict_acceptance(self, policy: TrainedPolicyBundle, features: Any) -> float:
+        try:
+            proba = policy.accept_pipeline.predict_proba(features)
+        except Exception:  # noqa: BLE001 - el fallback ya cubre errores en tiempo de ejecución
+            return 0.0
+        if getattr(proba, "ndim", 0) != 2 or proba.shape[1] < 2:
+            return 0.0
+        return float(proba[0][1])
+
+    def _predict_reward(self, policy: TrainedPolicyBundle, features: Any) -> float:
+        try:
+            pred = policy.reward_pipeline.predict(features)
+        except Exception:  # noqa: BLE001 - el fallback ya cubre errores en tiempo de ejecución
+            return 0.0
+        return float(pred[0]) if len(pred) else 0.0
+
     # ---------------------------------------------------------------- utilidades
 
     def _strip_comments(self, text: str) -> str:
@@ -934,16 +1199,80 @@ class ActivityOptimizer:
             return self.workspace.resolve_target(request.output) / run_id
         return self.root / run_id
 
+    def _planned_action_summary(self, cycles: list[CycleRecord]) -> dict[str, Any]:
+        total_cycles = len(cycles)
+        policy_cycles = [c for c in cycles if c.planned_action_source == "trained-policy"]
+        fallback_cycles = total_cycles - len(policy_cycles)
+        aligned_engine = sum(1 for c in policy_cycles if (c.planned_engine or c.engine) == c.engine)
+        aligned_kind = sum(
+            1
+            for c in policy_cycles
+            if (c.planned_improvement_kind or "") == (c.improvement_kind or "")
+        )
+        aligned_action = sum(
+            1
+            for c in policy_cycles
+            if (c.planned_engine or c.engine) == c.engine
+            and (c.planned_improvement_kind or "") == (c.improvement_kind or "")
+        )
+        accepted_policy = sum(1 for c in policy_cycles if c.accepted)
+        accepted_aligned = sum(
+            1
+            for c in policy_cycles
+            if c.accepted
+            and (c.planned_engine or c.engine) == c.engine
+            and (c.planned_improvement_kind or "") == (c.improvement_kind or "")
+        )
+        accepted_misaligned = sum(
+            1
+            for c in policy_cycles
+            if c.accepted
+            and not (
+                (c.planned_engine or c.engine) == c.engine
+                and (c.planned_improvement_kind or "") == (c.improvement_kind or "")
+            )
+        )
+        expected_values = [
+            float(c.planned_expected_acceptance) * float(c.planned_expected_reward)
+            for c in policy_cycles
+            if c.planned_expected_acceptance is not None and c.planned_expected_reward is not None
+        ]
+        quality_deltas = [float(c.quality_after) - float(c.quality_before) for c in policy_cycles]
+        return {
+            "total_cycles": total_cycles,
+            "policy_cycles": len(policy_cycles),
+            "fallback_cycles": fallback_cycles,
+            "policy_usage_rate": round(len(policy_cycles) / total_cycles, 4) if total_cycles else 0.0,
+            "engine_alignment_rate": round(aligned_engine / len(policy_cycles), 4) if policy_cycles else 0.0,
+            "kind_alignment_rate": round(aligned_kind / len(policy_cycles), 4) if policy_cycles else 0.0,
+            "action_alignment_rate": round(aligned_action / len(policy_cycles), 4) if policy_cycles else 0.0,
+            "accepted_policy_cycles": accepted_policy,
+            "accepted_aligned_policy_cycles": accepted_aligned,
+            "accepted_misaligned_policy_cycles": accepted_misaligned,
+            "mean_expected_value": round(statistics.fmean(expected_values), 4) if expected_values else 0.0,
+            "mean_policy_quality_delta": round(statistics.fmean(quality_deltas), 4) if quality_deltas else 0.0,
+        }
+
     def _finalize(self, request: ActivityOptimizeRequest, run_id: str, run_dir: Path,
                   cycles: list[CycleRecord], quality_before: float, quality_after: float,
                   tex_path: Path | None, *, ok: bool, note: str = "",
                   contract_before: float = 0.0, contract_after: float = 0.0,
                   applied: int = 0,
+                  initial_text: str = "",
+                  final_text: str = "",
                   semantic_before: SemanticAuditResult | None = None,
                   semantic_after: SemanticAuditResult | None = None) -> ActivityOptimizeResult:
         semantic_before = semantic_before or SemanticAuditResult(True, True, 0, 0)
         semantic_after = semantic_after or semantic_before
         semantic_gate_passed = self._semantic_gate_passed(request, semantic_after)
+        planned_action_summary = self._planned_action_summary(cycles)
+        initial_snapshot_path: Path | None = None
+        final_snapshot_path: Path | None = None
+        if tex_path is not None:
+            initial_snapshot_path = run_dir / "initial-state.tex"
+            final_snapshot_path = run_dir / "final-state.tex"
+            initial_snapshot_path.write_text(initial_text or final_text, encoding="utf-8")
+            final_snapshot_path.write_text(final_text or initial_text, encoding="utf-8")
         manifest = {
             "run_id": run_id,
             "kind": "activity-optimize",
@@ -955,6 +1284,11 @@ class ActivityOptimizer:
             "max_cycles": int(request.max_cycles),
             "converged": bool(quality_after >= float(request.target_quality) and semantic_gate_passed),
             "engines": list(request.engines),
+            "trained_policy_requested": bool(request.use_trained_policy),
+            "trained_policy_active": bool(self._load_trained_policy(request) is not None),
+            "trained_policy_model_dir": self.workspace.relative(self._resolve_policy_model_dir(request)),
+            "trained_policy_error": self._policy_error,
+            "planned_action_summary": planned_action_summary,
             "ok": bool(ok),
             "note": note,
             "quality_before": quality_before,
@@ -969,6 +1303,8 @@ class ActivityOptimizer:
             "semantic_findings": [asdict(item) for item in semantic_after.findings],
             "applied_cycles": applied,
             "tex": self.workspace.relative(tex_path) if tex_path else "",
+            "initial_tex_snapshot": self.workspace.relative(initial_snapshot_path) if initial_snapshot_path else "",
+            "final_tex_snapshot": self.workspace.relative(final_snapshot_path) if final_snapshot_path else "",
             "cycles": [self._cycle_dict(c) for c in cycles],
         }
         manifest_path = run_dir / "manifest.json"
@@ -981,6 +1317,8 @@ class ActivityOptimizer:
             manifest_path=manifest_path, report_path=report_path,
             applied_cycles=applied, quality_before=quality_before,
             quality_after=quality_after, tex_path=tex_path,
+            initial_tex_snapshot_path=initial_snapshot_path,
+            final_tex_snapshot_path=final_snapshot_path,
             semantic_blocking_before=len(semantic_before.blocking_findings),
             semantic_blocking_after=len(semantic_after.blocking_findings),
             semantic_audit_available=semantic_after.audit_available,
@@ -993,13 +1331,24 @@ class ActivityOptimizer:
             "accepted": c.accepted,
             "reason": c.reason,
             "improvement_kind": c.improvement_kind,
+            "planned_engine": c.planned_engine or c.engine,
+            "planned_improvement_kind": c.planned_improvement_kind,
+            "planned_action_source": c.planned_action_source,
             "quality_before": c.quality_before,
             "quality_after": c.quality_after,
             "contract_before": c.contract_before,
             "contract_after": c.contract_after,
             "semantic_blocking_before": c.semantic_blocking_before,
             "semantic_blocking_after": c.semantic_blocking_after,
+            "quality_breakdown_before": c.quality_breakdown_before,
+            "quality_breakdown_after": c.quality_breakdown_after,
         }
+        if c.planned_expected_acceptance is not None:
+            payload["planned_expected_acceptance"] = round(float(c.planned_expected_acceptance), 4)
+        if c.planned_expected_reward is not None:
+            payload["planned_expected_reward"] = round(float(c.planned_expected_reward), 4)
+            acceptance = c.planned_expected_acceptance or 0.0
+            payload["planned_expected_value"] = round(float(acceptance) * float(c.planned_expected_reward), 4)
         if c.panel_verdict is not None:
             payload["panel_verdict"] = c.panel_verdict
         return payload
@@ -1023,14 +1372,48 @@ class ActivityOptimizer:
         ]
         if manifest.get("note"):
             lines.extend([f"> {manifest['note']}", ""])
+        summary = manifest.get("planned_action_summary") or {}
+        if summary:
+            lines.extend([
+                "## Resumen de planificación",
+                "",
+                f"- Ciclos totales: {summary.get('total_cycles', 0)}",
+                f"- Ciclos con política entrenada: {summary.get('policy_cycles', 0)} "
+                f"({summary.get('policy_usage_rate', 0.0):.1%})",
+                f"- Ciclos en fallback heurístico: {summary.get('fallback_cycles', 0)}",
+            ])
+            if summary.get("policy_cycles", 0):
+                lines.extend([
+                    f"- Alineación de motor: {summary.get('engine_alignment_rate', 0.0):.1%}",
+                    f"- Alineación de tipo de mejora: {summary.get('kind_alignment_rate', 0.0):.1%}",
+                    f"- Alineación completa de acción: {summary.get('action_alignment_rate', 0.0):.1%}",
+                    f"- Ciclos aceptados alineados: {summary.get('accepted_aligned_policy_cycles', 0)}",
+                    f"- Ciclos aceptados desalineados: {summary.get('accepted_misaligned_policy_cycles', 0)}",
+                    f"- Valor esperado medio de la política: {summary.get('mean_expected_value', 0.0)}",
+                    f"- Δ calidad medio en ciclos de política: {summary.get('mean_policy_quality_delta', 0.0):+.2f}",
+                    "",
+                ])
+            else:
+                lines.append("")
         lines.extend(["## Ciclos", ""])
         for c in manifest.get("cycles", []):
             mark = "✅" if c["accepted"] else "⏭️"
+            plan = (
+                f"plan={c.get('planned_engine')}/{c.get('planned_improvement_kind') or 'n/a'}"
+                f" via {c.get('planned_action_source') or 'n/a'}"
+            )
+            if c.get("planned_expected_value") is not None:
+                plan += (
+                    f" (p={c.get('planned_expected_acceptance')}, "
+                    f"r={c.get('planned_expected_reward')}, v={c.get('planned_expected_value')})"
+                )
+            actual = f"real={c['engine']}/{c.get('improvement_kind') or 'n/a'}"
             lines.append(
                 f"- {mark} Ciclo {c['cycle']} ({c['engine']}) "
                 f"[{c.get('improvement_kind') or 'n/a'}]: "
                 f"calidad {c['quality_before']}→{c['quality_after']}, "
-                f"contrato {c['contract_before']}→{c['contract_after']}. {c['reason']}"
+                f"contrato {c['contract_before']}→{c['contract_after']}. "
+                f"{plan}; {actual}. {c['reason']}"
             )
         if manifest.get("semantic_findings"):
             lines.extend(["", "## Observaciones semánticas", ""])

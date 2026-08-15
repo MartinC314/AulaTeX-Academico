@@ -49,6 +49,17 @@ CYCLE_FIELDS = (
     "contract_after",
     "semantic_blocking_before",
     "semantic_blocking_after",
+    "quality_breakdown_before",
+    "quality_breakdown_after",
+)
+QUALITY_COMPONENTS = (
+    "citas",
+    "estructura",
+    "base_conceptual",
+    "listas",
+    "conectores",
+    "extension",
+    "integridad",
 )
 
 
@@ -121,6 +132,13 @@ def _cycle_to_row(manifest: dict[str, Any], cycle: dict[str, Any]) -> dict[str, 
     """Aplana un ciclo + contexto del run en una fila del dataset."""
     quality_before = _coerce_float(cycle.get("quality_before"))
     quality_after = _coerce_float(cycle.get("quality_after"))
+    breakdown_before = cycle.get("quality_breakdown_before")
+    if not isinstance(breakdown_before, dict):
+        breakdown_before = {}
+    component_features = {
+        f"quality_{component}_before": _coerce_float(breakdown_before.get(component))
+        for component in QUALITY_COMPONENTS
+    }
     return {
         # --- Identidad / trazabilidad ---
         "run_id": str(manifest.get("run_id", "")),
@@ -134,6 +152,7 @@ def _cycle_to_row(manifest: dict[str, Any], cycle: dict[str, Any]) -> dict[str, 
         "quality_before": quality_before,
         "contract_before": _coerce_float(cycle.get("contract_before")),
         "semantic_blocking_before": _coerce_int(cycle.get("semantic_blocking_before")),
+        **component_features,
         # --- Resultado (features de salida) ---
         "quality_after": quality_after,
         "contract_after": _coerce_float(cycle.get("contract_after")),

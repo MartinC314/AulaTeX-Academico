@@ -47,6 +47,13 @@ NUMERIC_FEATURES = (
     "semantic_blocking_before",
     "cycle",
     "activity_number",
+    "quality_citas_before",
+    "quality_estructura_before",
+    "quality_base_conceptual_before",
+    "quality_listas_before",
+    "quality_conectores_before",
+    "quality_extension_before",
+    "quality_integridad_before",
 )
 CATEGORICAL_FEATURES = ("engine", "improvement_kind")
 
