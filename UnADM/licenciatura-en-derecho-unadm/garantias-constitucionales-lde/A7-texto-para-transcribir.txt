@@ -1,0 +1,132 @@
+================================================================================
+ACTIVIDAD 7 - GARANTÍAS CONSTITUCIONALES
+Reporte de lectura. Texto original expositivo, escrito autógrafamente.
+
+Alumno   : Martin Jonathan de la Cruz
+Matrícula: ES2611202040
+Docente  : Aarón López Pérez
+Tema asignado (anexo, fila 15): Diferencias del Control de constitucionalidad
+y convencionalidad. Conclusión personal.
+
+INSTRUCCIONES DE ENTREGA (planeación S7):
+  - Transcribir A MANO, maximo 2 páginas.
+  - Escanear en PDF con el nombre: Nombre_completo.Tema.pdf
+  - Fecha límite: 23 de agosto de 2026, 23:55 CST
+  - Extemporánea hasta el 25 de agosto con -20% del valor.
+  - Escribir tambien las citas (SCJN, 2014) y la lista de referencias.
+================================================================================
+
+
+DIFERENCIAS ENTRE EL CONTROL DE CONSTITUCIONALIDAD
+Y EL CONTROL DE CONVENCIONALIDAD
+
+La reforma constitucional de junio de 2011 dejó al juez mexicano con dos
+herramientas que se parecen y no son lo mismo. Ambas se ejercen de oficio y ambas
+terminan en la inaplicación de la norma, de modo que suelen confundirse. La
+confusión no es menor: de ella dependen la competencia del órgano, el efecto de
+su decisión y el parámetro que debe emplear para justificarla.
+
+La primera diferencia es de parámetro de contraste. El control de
+constitucionalidad confronta la norma con la Constitución; el de
+convencionalidad, con los tratados de derechos humanos y con los criterios de la
+Corte Interamericana (SCJN, 2012a). Cambia la medida, no la operación. Conviene
+precisarlo porque el artículo 1 constitucional pudo sugerir que todo juez quedaba
+habilitado para invocar ambas fuentes en cualquier conflicto; sin embargo, la
+Corte aclaró que el deber se ejerce "en el ámbito de sus competencias" (SCJN,
+2013a). El parámetro se amplió; la competencia no.
+
+La segunda distinción no corre entre ambos controles, sino dentro de cada uno: la
+que separa el concentrado del difuso, categorías que el derecho procesal
+constitucional mexicano ya distinguía por la vía y el efecto de la resolución
+(Azuela Güitrón et al., 2006). El concentrado corresponde a los órganos del Poder
+Judicial de la Federación por vías específicas y puede culminar en una
+declaratoria de invalidez con efectos generales; el difuso habilita a cualquier
+juez para inaplicar la norma en el caso concreto, sin expulsarla del ordenamiento
+(SCJN, 2014a). Por ello el control difuso no implica declaratoria general de
+inconstitucionalidad (SCJN, 2013b), y ambos cauces son paralelos: el difuso no
+limita ni condiciona al concentrado (SCJN, 2012b).
+
+El tercer rasgo es común a los dos. Los órganos jurisdiccionales deben ejercerlos
+aunque las partes no lo pidan (SCJN, 2013c), pues de otro modo la protección de
+los derechos dependería de la pericia técnica de la defensa. No obstante, de
+oficio no significa sin método: la Corte fijó una secuencia que debe agotarse en
+orden, esto es, interpretación conforme en sentido amplio, después en sentido
+estricto y, solo al final, la inaplicación (SCJN, 2012c).
+
+Existe, por último, un límite que impide equiparar ambos controles. La
+jurisprudencia interamericana vincula a los jueces mexicanos (SCJN, 2014b), pero
+el control de convencionalidad no autoriza a desconocer las restricciones que la
+propia Constitución establece de manera expresa (SCJN, 2014c). Es la solución que
+adoptó la Contradicción de Tesis 293/2011 al construir el parámetro de
+regularidad constitucional (SCJN e IIJ-UNAM, 2017).
+
+A mi juicio, la lectura conjunta de estos criterios muestra que la diferencia
+útil no es la que suele enseñarse. Si los derechos de ambas fuentes integran un
+mismo parámetro, preguntar cuál control se ejerce resulta secundario, porque el
+juez contrasta con un bloque unificado. La distinción decisiva en la práctica es
+la que media entre concentrado y difuso, pues de ella dependen quién resuelve y
+con qué alcance. Sostengo que buena parte de los errores de planteamiento forense
+provienen de confundir estos dos ejes, que son independientes entre sí.
+
+Concluyo señalando la tensión que permanece abierta. La reserva de las
+restricciones constitucionales expresas protege la supremacía de la Constitución,
+pero mantiene una fricción con el estándar interamericano que la jurisprudencia
+administra caso por caso. Considero que esa solución es prudente y a la vez
+provisional: ordena la práctica inmediata, aunque aplaza una decisión de fondo
+sobre la relación entre soberanía constitucional y compromiso convencional.
+
+REFERENCIAS
+
+Azuela Güitrón, M., Luna Ramos, M. B., y Sánchez Cordero de García Villegas, O.
+   (2006). Elementos de derecho procesal constitucional. Suprema Corte de
+   Justicia de la Nación.
+
+Suprema Corte de Justicia de la Nación. (2012a). Control de constitucionalidad y
+   de convencionalidad (reforma constitucional de 10 de junio de 2011) [Tesis
+   aislada, registro 2001605]. Semanario Judicial de la Federación.
+
+Suprema Corte de Justicia de la Nación. (2012b). Control difuso de
+   constitucionalidad y convencionalidad. Su ejercicio no limita ni condiciona el
+   del control concentrado [Registro 2002264]. Semanario Judicial de la
+   Federación.
+
+Suprema Corte de Justicia de la Nación. (2012c). Control de convencionalidad ex
+   officio. Los tribunales deben interpretar conforme y, en su caso, inaplicar la
+   norma [Registro 2000073]. Semanario Judicial de la Federación.
+
+Suprema Corte de Justicia de la Nación. (2013a). Control de convencionalidad. Es
+   una obligación a cargo de todas las autoridades en el ámbito de sus
+   competencias [Registro 2005056]. Semanario Judicial de la Federación.
+
+Suprema Corte de Justicia de la Nación. (2013b). Control de constitucionalidad y
+   convencionalidad ex officio. Su ejercicio no implica la declaratoria general de
+   inconstitucionalidad [Registro 2005057]. Semanario Judicial de la Federación.
+
+Suprema Corte de Justicia de la Nación. (2013c). Control difuso de
+   constitucionalidad y convencionalidad. Debe ejercerse oficiosamente por los
+   órganos jurisdiccionales [Registro 2003679]. Semanario Judicial de la
+   Federación.
+
+Suprema Corte de Justicia de la Nación. (2014a). Control de constitucionalidad y
+   convencionalidad. Modelo de control en el orden jurídico mexicano [Registro
+   2005720]. Semanario Judicial de la Federación.
+
+Suprema Corte de Justicia de la Nación. (2014b). Control de convencionalidad. La
+   jurisprudencia de la Corte Interamericana es vinculante para los jueces
+   mexicanos [Registro 2005942]. Semanario Judicial de la Federación.
+
+Suprema Corte de Justicia de la Nación. (2014c). Control de convencionalidad. No
+   puede desconocer las restricciones expresas previstas en la Constitución
+   [Registro 2006165]. Semanario Judicial de la Federación.
+
+Suprema Corte de Justicia de la Nación e Instituto de Investigaciones Jurídicas,
+   UNAM. (2017). Derechos humanos tanto de fuente constitucional como
+   convencional y parámetro de control de la regularidad constitucional:
+   contradicciones de tesis 293/2011 y 21/2011. SCJN e IIJ-UNAM.
+
+DECLARACIÓN DE USO DE IA (escribir tambien a mano, al final):
+En la elaboración de este trabajo se utilizaron herramientas de inteligencia
+artificial como apoyo para la organización y revisión del texto, conforme a los
+Lineamientos para el uso ético y responsable de la Inteligencia Artificial en el
+ámbito académico de la UnADM. El análisis, la selección de fuentes y la postura
+sostenida son de mi autoría.
