@@ -390,29 +390,121 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 5 - UnADM",
+        "subject_rule": "Actividad 6 - UnADM",
         "scope_label": "UnADM"
       },
       "didactic_contract": {
-        "detected_id": "general",
-        "catalogo_no": null,
-        "nombre_oficial": "",
-        "nivel": "",
-        "familia": "",
-        "aliases": [],
-        "required_visible_elements": [],
-        "preservation_rule": "Conservar la forma visible solicitada por la consigna.",
-        "preservation_rule_official": "",
-        "structure_rule": "",
+        "detected_id": "controversia_estructurada",
+        "catalogo_no": 42,
+        "nombre_oficial": "Controversia estructurada",
+        "nivel": "Analizar",
+        "familia": "argumentativo_estructurado",
+        "aliases": [
+          "controversia estructurada",
+          "controversia"
+        ],
+        "required_visible_elements": [
+          "tesis",
+          "antítesis",
+          "síntesis"
+        ],
+        "preservation_rule": "Si el producto solicitado es «Controversia estructurada», conservar su forma visible característica (tesis, antítesis, síntesis) y su nivel cognitivo (Analizar); no transformarlo en otro producto salvo que la consigna lo pida. Estructurar posturas: tesis, antítesis y síntesis; o acuerdos y disensos en matriz. Cada postura con evidencia y su valoración.",
+        "preservation_rule_official": "Materializar «Controversia estructurada» siguiendo la estructura oficial UnADM: Para desarrollar una controversia estructurada, se sugieren los siguientes pasos:\n\n 1. Planear. Elegir un tema controvertido; seleccionar los\n materiales y las fuentes de consulta para sustentar las\n opiniones; organizar al grupo, y precisar los espacios\n para llevar a cabo la deliberación. El tema debe suscitar\n interés y ser potencialmente discutible desde puntos\n de vista divergentes. La inform",
+        "structure_rule": "Tres actos. El desarrollo confronta posturas y deriva una síntesis argumentada.",
         "three_act_gravity_rule": "",
-        "layout_rule": "",
+        "layout_rule": "Puede combinar prosa y tabla de posturas.",
         "no_gap_rule": "",
-        "closure_rule": "",
-        "build_steps": "",
-        "official_contract": {},
-        "tikz_pattern": {},
-        "scoring_rubric": {},
-        "construction_integration": {},
+        "closure_rule": "Conclusión con \\clearpage y postura razonada. Declaración de IA como \\footnote.",
+        "build_steps": "Para desarrollar una controversia estructurada, se sugieren los siguientes pasos:\n\n 1. Planear. Elegir un tema controvertido; seleccionar los\n materiales y las fuentes de consulta para sustentar las\n opiniones; organizar al grupo, y precisar los espacios\n para llevar a cabo la deliberación. El tema debe suscitar\n interés y ser potencialmente discutible desde puntos\n de vista divergentes. La información para sustentar\n los argumentos debe provenir de medios fiables (lectura académica, artículos de revistas, entre otros) y el\n grupo puede organizarse en parejas con ideas contrapuestas, grupos pequeños con ideas afines o dos grupos opositores. También es necesario definir el espacio\n y la modalidad de las interacciones (foro síncrono o\n asíncrono, chat, grupos de discusión, etcétera) y determinar el tiempo disponible para preparar los argumentos, deliberar y hacer la conclusión de los puntos\n controversiales.\n 2. Presentar la temática. Dar a conocer el tema. Para llevar a cabo esta actividad, se puede presentar, de forma\n grupal y a partir de una lectura compartida, un organizador gráfico, un video, etcétera.\n 3. Formular argumentos. Asumir una postura sobre\n el tema, a favor o en contra, y expresarla al grupo.\n Luego, organizarse en pares o en grupos que comparten la misma opinión con el propósito de revisar\n los materiales, identificar los puntos de controversia,\n unificar el punto de vista a defender y seleccionar la\n\n\f Controversia estructurada\n\n informaciónpertinente para preparar los argumentos\n contundentes, precisos y breves que se usarán durante\n la deliberación.\n El",
+        "official_contract": {
+          "fuente_oficial": {
+            "fuentes": [
+              "fasciculos-pdf",
+              "100tecnicasdidacticas.unadmexico.mx"
+            ],
+            "sitio": "100tecnicasdidacticas.unadmexico.mx",
+            "numero_web": 62,
+            "nombre_oficial_web": "Controversia estructurada"
+          },
+          "official_definition": "La controversia estructurada es una deliberación para generar un espacio de reflexión, confrontación y conciliación de posturas. Consiste en un proceso de discusión sobre un tema polémico desde puntos de vista divergentes. Los participantes asumen una opinión encontrada, a favor o en contra, y defienden su postura con argumentos convincentes. La intención es conciliar las posturas. Además de promover el desarrollo del pensamiento crítico y creativo, impulsa el fortalecimiento de las habilidades comunicativas, afectivas, sociales y digitales.",
+          "official_what_is": "Es una deliberación que se caracteriza por:\n\n ■■ Plantear un tema controvertido. Primero, los participantes justifican su postura a favor o en contra. Después,\n asumen el rol contrario. Es decir, quienes iniciaron la\n controversia a favor, luego de exponer sus argumentos,\n deberán defender la postura opuesta. En ambos casos\n deben utilizar razonamientos informados.\n ■■ Integrar conocimientos construidos a partir de una\n investigación.\n ■■ Posibilitar la comprensión de diferentes perspectivas.\n\n\f Controversia estructurada",
+          "official_structure": "La controversia estructurada tiene tres elementos\nesenciales:\n\n1. Definición. Es la problemática o tema que será el centro de la controversia, así como los ambientes en los\n que se dará la deliberación.\n2. Desarrollo. El tratamiento del tema tiene que contemplar una dinámica de polémica y confrontación, pero\n ser asertiva y sana por parte de cada participante.\n3. Cierre. Son los aspectos puntuales abordados durante\n la controversia para sustentar las posturas.\n\n\f\n\n ador\n Facilit\n\n ma o problema\n 1. Definición del te\n controversia\n 2. Desarrollo de la\n sión\n 3. Cierre de la se\n\n\f Controversia estructurada",
+          "official_utility": "La controversia estructurada tiene las siguientes funciones:\n\n■■ Es eficaz para profundizar en un asunto controvertido y conciliar la diferencia de opiniones mediante la\n exposición de argumentos informados.\n■■ Es útil para defender la postura de un autor con razonamientos documentados e integrar los puntos de vista\n que permitan encontrar la solución a un problema.\n■■ Favorece la reconceptualización de las ideas propias y\n la resignificación de experiencias.",
+          "build_steps": "Para desarrollar una controversia estructurada, se sugieren los siguientes pasos:\n\n 1. Planear. Elegir un tema controvertido; seleccionar los\n materiales y las fuentes de consulta para sustentar las\n opiniones; organizar al grupo, y precisar los espacios\n para llevar a cabo la deliberación. El tema debe suscitar\n interés y ser potencialmente discutible desde puntos\n de vista divergentes. La información para sustentar\n los argumentos debe provenir de medios fiables (lectura académica, artículos de revistas, entre otros) y el\n grupo puede organizarse en parejas con ideas contrapuestas, grupos pequeños con ideas afines o dos grupos opositores. También es necesario definir el espacio\n y la modalidad de las interacciones (foro síncrono o\n asíncrono, chat, grupos de discusión, etcétera) y determinar el tiempo disponible para preparar los argumentos, deliberar y hacer la conclusión de los puntos\n controversiales.\n 2. Presentar la temática. Dar a conocer el tema. Para llevar a cabo esta actividad, se puede presentar, de forma\n grupal y a partir de una lectura compartida, un organizador gráfico, un video, etcétera.\n 3. Formular argumentos. Asumir una postura sobre\n el tema, a favor o en contra, y expresarla al grupo.\n Luego, organizarse en pares o en grupos que comparten la misma opinión con el propósito de revisar\n los materiales, identificar los puntos de controversia,\n unificar el punto de vista a defender y seleccionar la\n\n\f Controversia estructurada\n\n informaciónpertinente para preparar los argumentos\n contundentes, precisos y breves que se usarán durante\n la deliberación.\n El",
+          "caveats": "…\n\nEl desarrollo de una controversia estructurada implica:\n\n■■ Saber que un tema controversial es aquel que afecta\n emocionalmente a las personas. Esta característica\n facilita que asuman una postura.\n■■ Reconocer que deliberar no significa debatir, pelear,\n dar la razón a alguien o ganar una discusión. En realidad, es intercambiar ideas, analizar las opiniones diferentes, sustentar la visión propia y buscar puntos de\n acuerdo o consensos.\n■■ Reconocer que es una técnica participativa para promover la búsqueda y el manejo de información sobre\n temas controversiales en distintas fuentes. Esto permitirá comprender las diferentes perspectivas.\n■■ Entender que para que los argumentos sean objetivos\n y coherentes se tienen que apoyar tanto en los conocimientos y experiencias propias como en referencias\n bibliográficas.\n■■ Saber que en la deliberación se tiene que promover\n la libre expresión de opiniones, la escucha atenta y la\n valoración de opiniones contrarias o diferentes para\n desarrollar empatía y tolerancia hacia la opinión ajena.",
+          "authorities": "…\n\n Para Beltrán y Pérez (1996), la controversia es “un tipo de\n conflicto académico que se produce cuando las ideas, conclusiones o teorías de un estudiante son incompatibles\n con las de otro, y los dos tratan de alcanzar un acuerdo”\n (citados en López, 2013, p. 54).\n\n En una controversia estructurada se aprende a fundamentar las opiniones con fuentes de información fiables\n y argumentos lógicos y, al contrastarlos con otros que son\n diferentes, se puede modificar la posición personal (Salinas\n y Oller, 2017).\n\n La controversia estructurada es una técnica didáctica que\n promueve el trabajo colaborativo y se puede emplear de\n forma creativa mediante el uso de foros (Delgado y Solano,\n 2009).\n\n ...fundamentar las opiniones con\n fuentes de información fiables...\n\n\f Controversia estructurada",
+          "references_seed": "Delgado, M. y Solano, A. (2009). Estrategias didácticas creativas en entornos\n virtuales. Revista Electrónica Actualidades Investigativas en Educación,\n 9(2), 1-21.\nLópez, G. (2013). Pensamiento crítico en el aula. Docencia e Investigación, (2),\n 41-60.\nSalinas, J. y Oller, M. (2017). Debatiendo temas controversiales para formar ciudadanos. Una experiencia con alumnos de secundaria. Praxis Educativa,\n 21(3), 40-48.\nUniversidad Siglo xxi. (2020). Controversia estructurada [presentación]. https://\n www.studocu.com/es-ar/document/universidad-siglo-21/tecnologias\n -en-marketing-digital/m1-a4-consignas/11896209\n\n\f\fDebate\npúblico\n\n Aplicar\n\f\n\n El debate público es un intercambio de ideas y\n opiniones abiertas y diversas. En este tipo de técnica de\n expresión oral, los participantes suelen tener posiciones\n distintas, pero hay una intención de escuchar diversas\n percepciones sobre un mismo tema. Puede abordar\n situaciones muy variadas, pero se dirige más hacia\n temas políticos, porque se discuten ideas y propuestas\n del interés de un colectivo. Participa un moderador para\n la organización de la técnica.\n\n Sirve para mejorar habilidades de comunicación oral,\n fortalece valores y caracterís",
+          "how_to_cite": "López, A. (2022). Controversia estructurada. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Analizar. Universidad Abierta y a Distancia de México.\nhttps://100tecnicasdidacticas.unadmexico.mx/index.html\r\n\n Copiar cita al portapapeles",
+          "preservation_rule_official": "Materializar «Controversia estructurada» siguiendo la estructura oficial UnADM: Para desarrollar una controversia estructurada, se sugieren los siguientes pasos:\n\n 1. Planear. Elegir un tema controvertido; seleccionar los\n materiales y las fuentes de consulta para sustentar las\n opiniones; organizar al grupo, y precisar los espacios\n para llevar a cabo la deliberación. El tema debe suscitar\n interés y ser potencialmente discutible desde puntos\n de vista divergentes. La inform"
+        },
+        "tikz_pattern": {
+          "packages": [
+            "longtable",
+            "booktabs",
+            "array",
+            "pdflscape"
+          ],
+          "skeleton": "\\begin{landscape}\n\\begingroup\\renewcommand{\\arraystretch}{1.2}\\footnotesize\n\\begin{longtable}{@{}p{0.16\\linewidth}*{3}{p{0.24\\linewidth}}@{}}\n\\caption{<Cuadro comparativo de: tema>}\\label{tab:<id>}\\\\ \\toprule\n\\textbf{Criterio} & \\textbf{<Opción A>} & \\textbf{<Opción B>} & \\textbf{<Opción C>}\\\\ \\midrule \\endfirsthead\n\\toprule \\textbf{Criterio} & \\textbf{<A>} & \\textbf{<B>} & \\textbf{<C>}\\\\ \\midrule \\endhead\n<Criterio 1> & <...> & <...> & <...>\\\\\n<Criterio 2> & <...> & <...> & <...>\\\\\n<Criterio 3> & <...> & <...> & <...>\\\\ \\bottomrule\n\\end{longtable}\\endgroup\n\\end{landscape}",
+          "rules": "Criterios en filas, opciones en columnas; caption + label; landscape en página propia; \\arraystretch<=1.2 y \\footnotesize; guía de lectura antes y análisis (semejanzas/diferencias) después.",
+          "materializacion": "Estructurar posturas: tesis, antítesis y síntesis; o acuerdos y disensos en matriz. Cada postura con evidencia y su valoración."
+        },
+        "scoring_rubric": {
+          "escala": "0-100",
+          "componentes_editoriales": {
+            "citas_apa": {
+              "peso": 25,
+              "criterio": "Citas APA 7 visibles y suficientes que sustentan el producto (mín. 3)."
+            },
+            "estructura_tres_actos": {
+              "peso": 20,
+              "criterio": "Tres actos: introducción (problema), desarrollo temático con el producto como núcleo, conclusión con postura."
+            },
+            "producto_protagonico": {
+              "peso": 20,
+              "criterio": "El producto de la técnica es el núcleo del desarrollo; el texto lo prepara antes y lo interpreta después."
+            },
+            "base_conceptual": {
+              "peso": 15,
+              "criterio": "Conceptos clave delimitados (\\textbf/\\textit) y cobertura de los subtemas de la planeación."
+            },
+            "conectores_prosa": {
+              "peso": 10,
+              "criterio": "Prosa con conectores lógicos; introducción y conclusión sin listas."
+            },
+            "integridad_postura": {
+              "peso": 10,
+              "criterio": "Postura propia (posición, razón, consecuencia) y declaración de IA como \\footnote."
+            }
+          },
+          "criterios_de_construccion_oficial": [
+            {
+              "criterio": "Presentar la temática. Dar a conocer el tema. Para llevar a cabo esta actividad, se puede presentar, de forma grupal y a partir de una lectura compartida, un organizador gráfico, un video, etcétera.",
+              "peso": 25.0
+            }
+          ],
+          "consideraciones_para_puntuar": [
+            "… El desarrollo de una controversia estructurada implica: ■■ Saber que un tema controversial es aquel que afecta emocionalmente a las personas.",
+            "Esta característica facilita que asuman una postura.",
+            "■■ Reconocer que deliberar no significa debatir, pelear, dar la razón a alguien o ganar una discusión.",
+            "En realidad, es intercambiar ideas, analizar las opiniones diferentes, sustentar la visión propia y buscar puntos de acuerdo o consensos.",
+            "■■ Reconocer que es una técnica participativa para promover la búsqueda y el manejo de información sobre temas controversiales en distintas fuentes.",
+            "Esto permitirá comprender las diferentes perspectivas.",
+            "■■ Entender que para que los argumentos sean objetivos y coherentes se tienen que apoyar tanto en los conocimientos y experiencias propias como en referencias bibliográficas.",
+            "■■ Saber que en la deliberación se tiene que promover la libre expresión de opiniones, la escucha atenta y la valoración de opiniones contrarias o diferentes para desarrollar empatía y tolerancia hacia la opinión ajena."
+          ],
+          "umbral_aprobacion": 100,
+          "nota": "El producto puntúa por fidelidad a la técnica (forma oficial) + calidad editorial (tres actos, citas, postura)."
+        },
+        "construction_integration": {
+          "deteccion": "Aliases: controversia estructurada, controversia.",
+          "producto_nucleo": "El producto es el núcleo del desarrollo: prepararlo antes e interpretarlo después.",
+          "estructura": "Tres actos. El desarrollo confronta posturas y deriva una síntesis argumentada.",
+          "layout": "Puede combinar prosa y tabla de posturas.",
+          "cierre": "Conclusión con \\clearpage y postura razonada. Declaración de IA como \\footnote.",
+          "preservacion_oficial": "Materializar «Controversia estructurada» siguiendo la estructura oficial UnADM: Para desarrollar una controversia estructurada, se sugieren los siguientes pasos:\n\n 1. Planear. Elegir un tema controvertido; seleccionar los\n materiales y las fuentes de consulta para sustentar las\n opiniones; organizar al grupo, y precisar los espacios\n para llevar a cabo la deliberación. El tema debe suscitar\n interés y ser potencialmente discutible desde puntos\n de vista divergentes. La inform",
+          "pasos_construccion": "Para desarrollar una controversia estructurada, se sugieren los siguientes pasos:\n\n 1. Planear. Elegir un tema controvertido; seleccionar los\n materiales y las fuentes de consulta para sustentar las\n opiniones; organizar al grupo, y precisar los espacios\n para llevar a cabo la deliberación. El tema debe suscitar\n interés y ser potencialmente discutible desde puntos\n de vista divergentes. La información para sustentar\n los argumentos debe provenir de medios fiables (lectura académica, artículos de revistas, entre otros) y el\n grupo puede organizarse en parejas con ideas contrapuestas, grupos pequeños con ideas afines o dos grupos opositores. También es necesario definir el espacio\n y la modalidad de las interacciones (foro síncrono o\n asíncrono, chat, grupos de discusión, etcétera) y determinar el tiempo disponible para preparar los argumentos, deliberar y hacer la conclusión de los puntos\n controversiales.\n 2. Presentar la temática. Dar a conocer el tema. Para llevar a cabo esta actividad, se puede presentar, de forma\n grupal y a partir de una lectura compartida, un organizador gráfico, un video, etcétera.\n 3. Formular argumentos. Asumir una postura sobre\n el tema, a favor o en contra, y expresarla al grupo.\n Luego, organizarse en pares o en grupos que comparten la misma opinión con el propósito de revisar\n los materiales, identificar los puntos de controversia,\n unificar el punto de vista a defender y seleccionar la\n\n\f Controversia estructurada\n\n informaciónpertinente para preparar los argumentos\n contundentes, precisos y breves que se usarán durante\n la deliberación.\n El",
+          "compilacion": "Compilar con latexmk -pdf -bibtex; verificar el producto renderizando a PNG con pdftoppm (no solo returncode)."
+        },
         "real_pattern": {}
       },
       "structure_contract": {
@@ -439,8 +531,8 @@
         "institution": "UnADM",
         "career": "",
         "subject": "",
-        "activity": "Actividad 5",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-5"
+        "activity": "Actividad 6",
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -503,6 +595,8 @@
         }
       ],
       "novelty_signals": [
+        "heading_contract",
+        "didactic_contract",
         "institutional_identity"
       ],
       "derived_from": {
@@ -534,7 +628,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260809-211444",
+      "run_id": "20260816-193157",
       "scope_key": "UnADM",
       "related_scope_keys": [
         "UnADM",
@@ -546,7 +640,7 @@
         "UCNL",
         "UnADM/licenciatura-en-derecho-unadm"
       ],
-      "novelty_count": 1
+      "novelty_count": 3
     }
   },
   "curricular_context": {},

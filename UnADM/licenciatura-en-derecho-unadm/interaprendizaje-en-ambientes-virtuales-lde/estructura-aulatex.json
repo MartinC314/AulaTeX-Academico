@@ -1,0 +1,22 @@
+{
+  "node": "interaprendizaje-en-ambientes-virtuales-lde",
+  "slug": "interaprendizaje-en-ambientes-virtuales",
+  "title": "Interaprendizaje en Ambientes Virtuales",
+  "activity_number": 6,
+  "files": [
+    "interaprendizaje-en-ambientes-virtuales.bib",
+    "reporte-interaprendizaje-en-ambientes-virtuales.tex",
+    "reporte-interaprendizaje-en-ambientes-virtuales-Actividad-6.tex",
+    "presentacion-interaprendizaje-en-ambientes-virtuales.tex",
+    "presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-6.tex",
+    "programa-analitico-interaprendizaje-en-ambientes-virtuales.md",
+    "COMPILACION-interaprendizaje-en-ambientes-virtuales.md",
+    "README.md"
+  ],
+  "folders": [
+    "referencias-interaprendizaje-en-ambientes-virtuales",
+    "planeaciones-interaprendizaje-en-ambientes-virtuales",
+    "assets-interaprendizaje-en-ambientes-virtuales"
+  ],
+  "memory_summary": []
+}
