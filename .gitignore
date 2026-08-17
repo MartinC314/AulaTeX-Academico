@@ -71,6 +71,7 @@ base/Template-Tesis/
 
 # Archivos temporales
 .build/
+**/.build-cpp/
 .aulatex-temp/
 retroalimentacion-editorial/
 salidas/
