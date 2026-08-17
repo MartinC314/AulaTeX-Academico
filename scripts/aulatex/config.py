@@ -22,6 +22,7 @@ LLM_ENGINES = (
     "Mistral-Medium-DZ",
     "Grok-Pensamiento-Libre",
     "DeepSeek-V4-Pro",
+    "GPT-5-Mini",
     "GPT-Chat-Latest",
     # Replicas DataZoneStandard: mismo modelo, cuota independiente.
     "GPT-5.6-SOL-DZ",
@@ -43,6 +44,7 @@ ENGINE_ENV_PREFIX = {
     "Mistral-Medium-DZ": "MISTRAL_MEDIUM_DZ",
     "Grok-Pensamiento-Libre": "GROK_PENSAMIENTO_LIBRE",
     "DeepSeek-V4-Pro": "DEEPSEEK_V4_PRO",
+    "GPT-5-Mini": "GPT_5_MINI",
     "GPT-Chat-Latest": "GPT_CHAT_LATEST",
     "GPT-5.6-SOL-DZ": "AZURE_OPENAI_GPT_5_6_SOL_DZ",
     "GPT-5.6-Luna-DZ": "AZURE_OPENAI_GPT_5_6_LUNA_DZ",

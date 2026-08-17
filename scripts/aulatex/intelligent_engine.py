@@ -25,13 +25,10 @@ class IntelligentEngineRequest:
     include_reports: bool = True
     include_presentations: bool = True
     engines: tuple[str, ...] = (
-        "GPT-5.6-SOL",
-        "GPT-5.6-Luna",
-        "GPT-5.6-Terra",
-        "Codex",
         "Auto (model-router)",
-        "GPT-Pro",
-        "Claude Foundry",
+        "DeepSeek-V4-Pro",
+        "Grok-Pensamiento-Libre",
+        "GPT-5-Mini",
     )
     # Ejecución observable: si es True el motor no solo planifica, sino que
     # ejecuta las acciones recomendadas (realizar-actividad, memoria editorial)

@@ -29,8 +29,8 @@
     Máximo de objetivos priorizados a procesar.
 
 .PARAMETER Engines
-    Motores LLM a usar (repetible). Por defecto GPT-5.6-Luna y GPT-5.6-Terra
-    (los más confiables con prompts largos, ver memoria del repo).
+    Motores LLM a usar (repetible). Por defecto usa los despliegues disponibles
+    y verificados en la suscripción Azure configurada.
 
 .PARAMETER Plan
     Solo planificar (no ejecutar). Útil para inspeccionar la cola antes de correr.
@@ -67,7 +67,7 @@ param(
     [ValidateSet('realizar-actividad', 'construir-memoria-editorial')]
     [string[]]$Actions = @('construir-memoria-editorial', 'realizar-actividad'),
     [int]$MaxTargets = 12,
-    [string[]]$Engines = @('GPT-5.6-Luna', 'GPT-5.6-Terra'),
+    [string[]]$Engines = @('Auto (model-router)', 'DeepSeek-V4-Pro', 'Grok-Pensamiento-Libre', 'GPT-5-Mini'),
     [int]$MonitorMaxCycles = 100,
     [int]$OptimizeCycles = 3,
     [string]$Backend = 'langgraph',
