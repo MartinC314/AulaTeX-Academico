@@ -8,10 +8,14 @@
     entorno virtual desde cero e instalar todas las dependencias de Python
     declaradas en los archivos requirements-*.txt del proyecto.
 
-    Pasos:
+    Responsabilidades de este script:
       1. Crea (o recrea con -Force) el entorno virtual .venv en la raiz.
       2. Actualiza pip, setuptools y wheel.
-      3. Instala las dependencias de todos los requirements del proyecto.
+      3. Instala dependencias de ejecucion, integraciones y validacion.
+      4. Comprueba que los modulos esenciales se pueden importar.
+
+    El lanzador setup.bat de la raiz se encarga de invocar este instalador y
+    abrir una consola cmd con el entorno ya activado.
 
 .PARAMETER PythonExe
     Ruta al interprete de Python usado para crear el entorno.
@@ -137,6 +141,7 @@ if ((Test-Path $venvPython) -and -not $Force) {
 # --- Actualizar herramientas base ---------------------------------------------
 Write-Host "==> Actualizando pip, setuptools y wheel..."
 & $venvPython -m pip install --upgrade pip setuptools wheel
+if ($LASTEXITCODE -ne 0) { throw "Fallo la actualizacion de pip, setuptools o wheel." }
 
 # --- Instalar dependencias del proyecto ---------------------------------------
 $requirements = @(
@@ -165,11 +170,19 @@ foreach ($rel in $requirements) {
     }
 }
 
-# cryptography solo llegaba como dependencia transitiva de deepagents, pero
-# secrets_local.py la necesita para descifrar aulatex.env con AHK_MASTER_PIN.
-Write-Host "==> Instalando dependencias directas del nucleo AulaTeX..."
-& $venvPython -m pip install "cryptography>=42" "python-dotenv>=1.0.1" "requests>=2.31" "tiktoken>=0.7"
-if ($LASTEXITCODE -ne 0) { throw "Fallo la instalacion de las dependencias del nucleo." }
+# Dependencias directas: no deben depender de instalaciones transitivas.
+# secrets_local.py usa cryptography para descifrar aulatex.env mediante
+# AULATEX_MASTER_PIN; pytest permite validar los flujos editoriales instalados.
+Write-Host "==> Instalando dependencias directas y de validacion..."
+$corePackages = @(
+    "cryptography>=42",
+    "python-dotenv>=1.0.1",
+    "requests>=2.31",
+    "tiktoken>=0.7",
+    "pytest>=8.0"
+)
+& $venvPython -m pip install @corePackages
+if ($LASTEXITCODE -ne 0) { throw "Fallo la instalacion de las dependencias directas o de validacion." }
 
 # --- Verificacion --------------------------------------------------------------
 Write-Host ""
@@ -178,7 +191,7 @@ $modules = @(
     'cryptography', 'dotenv', 'requests', 'openai', 'httpx', 'tiktoken',
     'langchain', 'langchain_core', 'langchain_openai', 'langchain_anthropic',
     'langgraph', 'anthropic', 'numpy', 'pandas', 'sklearn', 'openpyxl',
-    'fitz', 'docx', 'pypdf', 'telegram', 'boto3'
+    'fitz', 'docx', 'pypdf', 'telegram', 'boto3', 'pytest'
 )
 $missing = @()
 foreach ($m in $modules) {
@@ -197,6 +210,8 @@ if ($missing.Count -gt 0) {
     exit 1
 }
 
-Write-Host "==> Entorno virtual reconstruido correctamente." -ForegroundColor Green
-Write-Host "    Activalo con:  .\.venv\Scripts\Activate.ps1"
-Write-Host "    Valida LLMs:   `$env:AHK_MASTER_PIN='<pin>'; .\scripts\aulatex.ps1 llm-check"
+Write-Host "==> Entorno virtual configurado correctamente." -ForegroundColor Green
+Write-Host "    PowerShell:     .\.venv\Scripts\Activate.ps1"
+Write-Host "    CMD:            .\.venv\Scripts\activate.bat"
+Write-Host "    Lanzador:       .\setup.bat"
+Write-Host "    Valida LLMs:    `$env:AULATEX_MASTER_PIN='<pin>'; .\scripts\aulatex.ps1 llm-check"
