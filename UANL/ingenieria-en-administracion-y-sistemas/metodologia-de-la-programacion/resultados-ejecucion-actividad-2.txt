@@ -1,0 +1,124 @@
+EJECUCION AUTOMATIZADA DE LA ACTIVIDAD 2
+Fecha: 2026-08-16 21:03:27
+Compilador: GNU C++ / Dev-C++ compatible
+
+===== 01_area_cuadrado.cpp =====
+Entrada: 5
+AREA DE UN CUADRADO
+Ingresa la medida del lado: Area = 25.00 unidades cuadradas
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 02_area_cuadrado_pow.cpp =====
+Entrada: 5
+AREA DE UN CUADRADO CON POW
+Ingresa la medida del lado: Area = 25.00 unidades cuadradas
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 03_area_circulo.cpp =====
+Entrada: 2
+AREA DE UN CIRCULO
+Ingresa el radio: Area = 12.57 unidades cuadradas
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 04_area_triangulo.cpp =====
+Entrada: 10, 6
+AREA DE UN TRIANGULO
+Ingresa la base: Ingresa la altura: Area = 30.00 unidades cuadradas
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 05_hipotenusa.cpp =====
+Entrada: 3, 4
+HIPOTENUSA DE UN TRIANGULO RECTANGULO
+Ingresa el primer cateto: Ingresa el segundo cateto: Hipotenusa = 5.00
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 06_nombre_semestre.cpp =====
+Entrada: Emilio Abraham Castillo Urdiales, 2
+DATOS DEL ESTUDIANTE
+Ingresa tu nombre completo: Ingresa el semestre que cursaras: Nombre: Emilio Abraham Castillo Urdiales
+Semestre a cursar: 2
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 07_fahrenheit_centigrados.cpp =====
+Entrada: 32
+CONVERSION DE FAHRENHEIT A CENTIGRADOS
+Ingresa la temperatura en grados Fahrenheit: 32.00 F = 0.00 C
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 08_pies_metros.cpp =====
+Entrada: 10
+CONVERSION DE PIES A METROS
+Ingresa la longitud en pies: 10.0000 pies = 3.0480 metros
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 09_libras_kilogramos.cpp =====
+Entrada: 10
+CONVERSION DE LIBRAS A KILOGRAMOS
+Ingresa el peso en libras: 10.0000 lb = 4.5359 kg
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 10_acres_hectareas.cpp =====
+Entrada: 1
+CONVERSION DE ACRES A HECTAREAS
+Ingresa la extension en acres: 1.0000 acres = 0.4047 hectareas
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 11_fuerza.cpp =====
+Entrada: 10, 2
+CALCULO DE FUERZA
+Ingresa la masa en kilogramos: Ingresa la aceleracion en m/s^2: Fuerza = 20.00 newtons
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 12_velocidad_impacto.cpp =====
+Entrada: 20
+VELOCIDAD FINAL DE IMPACTO EN CAIDA LIBRE
+Ingresa la altura en metros: Velocidad final = 19.81 m/s
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 13_energia_potencial.cpp =====
+Entrada: 10, 5
+ENERGIA POTENCIAL GRAVITATORIA
+Ingresa la masa en kilogramos: Ingresa la altura en metros: Energia potencial = 490.50 joules
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 14_energia_cinetica.cpp =====
+Entrada: 10, 3
+ENERGIA CINETICA
+Ingresa la masa en kilogramos: Ingresa la velocidad en m/s: Energia cinetica = 45.00 joules
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 15_hipotenusa_catetos.cpp =====
+Entrada: 3, 4
+HIPOTENUSA A PARTIR DE LOS CATETOS
+Ingresa el cateto 1: Ingresa el cateto 2: Hipotenusa = 5.00
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 16_volumen_esfera.cpp =====
+Entrada: 3
+VOLUMEN DE UNA ESFERA
+Ingresa el radio: Volumen = 113.10 unidades cubicas
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 17_recibo_luz.cpp =====
+Entrada: Emilio Castillo, 250, 0.85
+RECIBO DE ENERGIA ELECTRICA
+Ingresa el nombre del cliente: Ingresa el consumo en kilowatts: Ingresa la tarifa por kilowatt: $
+--- RECIBO ---
+Cliente: Emilio Castillo
+Pago: $212.50
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 18_pies_libras.cpp =====
+Entrada: 10, 10
+CONVERSION DE LONGITUD Y PESO
+Ingresa la longitud en pies: Ingresa el peso en libras: Longitud: 3.0480 metros
+Peso: 4.5359 kilogramos
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+===== 19_area_heron.cpp =====
+Entrada: 3, 4, 5
+AREA DE UN TRIANGULO: FORMULA DE HERON
+Ingresa el lado a: Ingresa el lado b: Ingresa el lado c: Area = 6.00 unidades cuadradas
+Estado: COMPILACION Y EJECUCION CORRECTAS
+
+TOTAL: 19/19 PROGRAMAS CORRECTOS
