@@ -82,13 +82,17 @@ function Set-EnvValues {
     $lines = if (Test-Path $envPath) { @(Get-Content -LiteralPath $envPath -Encoding UTF8) } else { @() }
     $remaining = @{}
     foreach ($key in $Values.Keys) { $remaining[$key] = [string]$Values[$key] }
+    $written = @{}
     $updated = New-Object System.Collections.Generic.List[string]
     foreach ($line in $lines) {
         $trimmed = $line.Trim()
         $name = if ($trimmed -and -not $trimmed.StartsWith('#') -and $trimmed.Contains('=')) { $trimmed.Split('=', 2)[0].Trim() } else { '' }
-        if ($name -and $remaining.ContainsKey($name)) {
-            $updated.Add("$name=$($remaining[$name])")
-            $remaining.Remove($name)
+        if ($name -and $Values.ContainsKey($name)) {
+            if (-not $written.ContainsKey($name)) {
+                $updated.Add("$name=$([string]$Values[$name])")
+                $written[$name] = $true
+                $remaining.Remove($name)
+            }
         } else {
             $updated.Add($line)
         }
@@ -347,7 +351,10 @@ if ($NonInteractive -and $Mode -eq 'manual') {
 }
 
 # La selección ocurre antes del PIN para explicar qué secretos se configurarán.
-$selected = Select-Profiles
+# El operador @() es imprescindible: PowerShell desempaqueta una salida única
+# como string y, con StrictMode, ese objeto no expone la propiedad Count.
+$selected = @(Select-Profiles)
+if ($selected.Count -eq 0) { throw 'No se seleccionó ningún perfil LLM.' }
 Write-Host "`nLLM seleccionados: $((@($selected | ForEach-Object { $profiles[$_].Label })) -join ', ')" -ForegroundColor Cyan
 
 if (-not $NonInteractive) {
