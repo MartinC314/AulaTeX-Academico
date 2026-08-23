@@ -390,11 +390,41 @@ Write-Host "`nConfigurados $($selected.Count) LLM(s): $((@($selected | ForEach-O
 Write-Host "Modo exclusivo model-router: $onlyRouter" -ForegroundColor Green
 
 if (-not $SkipConnectionTest) {
-    Write-Host 'Verificando conectividad de los perfiles seleccionados...' -ForegroundColor Cyan
-    foreach ($id in $selected) {
-        $label = $profiles[$id].Label
-        & $python (Join-Path $scriptDir 'aulatex_agent.py') llm-check --engine $label
-        if ($LASTEXITCODE -ne 0) { Write-Warning "La verificacion de $label reporto incidencias." }
+    while ($true) {
+        Write-Host "`nValidando que cada LLM responda..." -ForegroundColor Cyan
+        $validationFailed = $false
+        foreach ($id in $selected) {
+            $label = $profiles[$id].Label
+            $rawValidation = & $python (Join-Path $scriptDir 'aulatex_agent.py') llm-validate --engine $label --max-tokens 32 --timeout-seconds 45 2>&1
+            $validationExit = $LASTEXITCODE
+            $validation = $null
+            try { $validation = (($rawValidation | Out-String).Trim() | ConvertFrom-Json) } catch { }
+
+            if ($validationExit -eq 0 -and $null -ne $validation -and $validation.ok) {
+                Write-Host ("  [OK] {0}: respondio en {1} ms ({2} caracteres)." -f $label, $validation.latency_ms, $validation.response_chars) -ForegroundColor Green
+            } else {
+                $validationFailed = $true
+                $safeError = if ($null -ne $validation -and $validation.error) { [string]$validation.error } else { 'respuesta ausente o no reconocible' }
+                Write-Host ("  [ERROR] {0}: {1}." -f $label, $safeError) -ForegroundColor Red
+            }
+        }
+
+        if (-not $validationFailed) { break }
+        if ($NonInteractive) { throw 'Uno o más LLM no respondieron correctamente.' }
+
+        Write-Host ''
+        Write-Host 'Uno o más LLM no superaron la prueba funcional.' -ForegroundColor Yellow
+        Write-Host '  1. Reintentar validación'
+        Write-Host '  2. Conservar configuración y salir con advertencia'
+        Write-Host '  3. Volver a ejecutar el asistente'
+        $validationChoice = Read-MenuIndex -Count 3 -Prompt 'Selecciona una opción'
+        if ($validationChoice -eq 0) { continue }
+        if ($validationChoice -eq 2) {
+            & $PSCommandPath -EnvFile $EnvFile
+            exit $LASTEXITCODE
+        }
+        Write-Warning 'Configuración guardada, pero existen LLM sin respuesta funcional verificada.'
+        break
     }
 }
 

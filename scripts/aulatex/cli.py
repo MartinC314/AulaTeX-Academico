@@ -5,6 +5,7 @@ import json
 from dataclasses import asdict
 import os
 from pathlib import Path
+import time
 
 from .activity_monitor import ActivityMonitor, ActivityMonitorRequest
 from .calibration import ActivityCalibration, CalibrationRequest, MotorCalibrationRequest
@@ -125,6 +126,11 @@ def build_parser() -> argparse.ArgumentParser:
 
     check = sub.add_parser("llm-check", help="Check configured AulaTeX LLM engines.")
     check.add_argument("--engine", action="append", choices=LLM_ENGINES)
+
+    validate = sub.add_parser("llm-validate", help="Verify that one LLM returns usable content without printing it.")
+    validate.add_argument("--engine", required=True, choices=LLM_ENGINES)
+    validate.add_argument("--timeout-seconds", type=int, default=45)
+    validate.add_argument("--max-tokens", type=int, default=32)
 
     tokenize = sub.add_parser("llm-tokenize", help="Count prompt tokens with a local Python tokenizer.")
     tokenize.add_argument("prompt", nargs="?")
@@ -425,6 +431,36 @@ def main(argv: list[str] | None = None) -> None:
         for engine in engines:
             result = bridge.check(engine)
             print(f"{result.engine}: {'OK' if result.ok else 'ERROR'} {result.text or result.error}")
+        return
+
+    if args.command == "llm-validate":
+        marker = "AULATEX_VALIDACION_OK"
+        prompt_text = (
+            "Prueba de salud de AulaTeX. Responde exactamente con "
+            f"{marker} y no agregues ningún otro texto."
+        )
+        started = time.perf_counter()
+        result = AulaTeXLLMClient().call(
+            args.engine,
+            prompt_text,
+            max_tokens=max(16, min(int(args.max_tokens), 128)),
+            timeout_seconds=max(5, int(args.timeout_seconds)),
+        )
+        latency_ms = round((time.perf_counter() - started) * 1000)
+        response = result.text.strip() if result.ok else ""
+        marker_found = marker in response.upper()
+        payload = {
+            "engine": result.engine,
+            "ok": bool(result.ok and response and marker_found),
+            "responded": bool(response),
+            "marker_found": marker_found,
+            "response_chars": len(response),
+            "latency_ms": latency_ms,
+            "error": "" if result.ok else result.error,
+        }
+        print(json.dumps(payload, ensure_ascii=False))
+        if not payload["ok"]:
+            raise SystemExit(1)
         return
 
     if args.command == "llm-tokenize":
