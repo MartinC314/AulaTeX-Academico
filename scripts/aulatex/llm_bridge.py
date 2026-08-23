@@ -12,7 +12,14 @@ try:
 except ModuleNotFoundError:
     _requests = None
 
-from .config import ENGINE_ENV_PREFIX, LLM_ENGINES, load_aulatex_env
+from .config import (
+    ENGINE_ENV_PREFIX,
+    LLM_ENGINES,
+    MODEL_ROUTER_ENGINE,
+    load_aulatex_env,
+    model_router_only_enabled,
+    usable_secret,
+)
 
 
 _FALSE_VALUES = {"0", "false", "no", "off"}
@@ -49,9 +56,15 @@ _TASK_ENGINE_CHAINS: dict[str, list[str]] = {
 
 
 def engine_chain_for_task(task: str | None, forced_engine: str | None = None) -> list[str]:
-    """Cadena de motores a intentar para una tarea, con opus como red de
-    seguridad final. Si ``forced_engine`` se indica, va primero."""
+    """Cadena de motores a intentar para una tarea.
+
+    Cuando ``AULATEX_MODEL_ROUTER_ONLY=1`` no se permite ningún fallback a otro
+    deployment: los reintentos de transporte siguen disponibles sobre el router.
+    """
     import os as _os
+
+    if model_router_only_enabled():
+        return [MODEL_ROUTER_ENGINE]
 
     base = list(_TASK_ENGINE_CHAINS.get((task or "default"), _TASK_ENGINE_CHAINS["default"]))
     if _SAFETY_NET_ENGINE not in base:
@@ -129,7 +142,7 @@ class AulaTeXLLMConfig:
             _env_float("TB_BOOKS_LLM_VALIDATION_TEMPERATURE", 0.0),
         )
 
-        if not (base_url and api_key and deployment):
+        if not (base_url and usable_secret(api_key) and deployment):
             return None
 
         return cls(

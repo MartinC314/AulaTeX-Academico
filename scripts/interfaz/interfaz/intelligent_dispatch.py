@@ -275,6 +275,12 @@ def _candidate_scope_lines(instruction: str) -> list[str]:
 
 
 def _default_engines(provider: str) -> tuple[str, ...]:
+    import os
+
+    router_only = (os.getenv("AULATEX_MODEL_ROUTER_ONLY", "") or "").strip().lower()
+    if router_only in {"1", "true", "yes", "on", "si", "sí"}:
+        return ("Auto (model-router)",)
+
     preferred = ENGINE_LABEL_BY_PROVIDER.get(provider, "Auto (model-router)")
     ordered = [preferred, *LLM_ENGINES]
     seen: set[str] = set()
@@ -288,8 +294,11 @@ def _default_engines(provider: str) -> tuple[str, ...]:
 
 
 def _normalize_engines(raw_engines: object, provider: str) -> tuple[str, ...]:
+    defaults = _default_engines(provider)
+    if defaults == ("Auto (model-router)",):
+        return defaults
     if not isinstance(raw_engines, list) or not raw_engines:
-        return _default_engines(provider)
+        return defaults
 
     result: list[str] = []
     for raw in raw_engines:
@@ -299,7 +308,7 @@ def _normalize_engines(raw_engines: object, provider: str) -> tuple[str, ...]:
         engine = ENGINE_NAME_ALIASES.get(key.casefold(), key)
         if engine in LLM_ENGINES and engine not in result:
             result.append(engine)
-    return tuple(result) or _default_engines(provider)
+    return tuple(result) or defaults
 
 
 def _coerce_bool(value: object, default: bool) -> bool:

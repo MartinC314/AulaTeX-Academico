@@ -24,12 +24,7 @@ class IntelligentEngineRequest:
     audit_path: str = ""
     include_reports: bool = True
     include_presentations: bool = True
-    engines: tuple[str, ...] = (
-        "Auto (model-router)",
-        "DeepSeek-V4-Pro",
-        "Grok-Pensamiento-Libre",
-        "GPT-5-Mini",
-    )
+    engines: tuple[str, ...] = ("Auto (model-router)",)
     # Ejecución observable: si es True el motor no solo planifica, sino que
     # ejecuta las acciones recomendadas (realizar-actividad, memoria editorial)
     # emitiendo progreso. Ver IntelligentEngine.execute().

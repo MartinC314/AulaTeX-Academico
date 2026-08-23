@@ -210,6 +210,11 @@ def _first_mapping_value(env: dict[str, str], *names: str) -> str:
     return ""
 
 
+def _usable_secret(value: str) -> bool:
+    normalized = str(value or "").strip()
+    return bool(normalized) and not normalized.startswith("enc:")
+
+
 def _detect_openai_api_kind(raw_endpoint: str) -> str:
     endpoint = raw_endpoint.strip().rstrip("/").lower()
     if endpoint.endswith("/chat/completions"):
@@ -430,7 +435,7 @@ def validate_settings(settings: Settings) -> list[str]:
 
     if not settings.azure_openai_endpoint:
         missing.append(llm_config.endpoint_env)
-    if not settings.azure_openai_api_key:
+    if not _usable_secret(settings.azure_openai_api_key):
         missing.append(llm_config.api_key_env)
     if not settings.azure_openai_chat_deployment:
         missing.append(llm_config.deployment_env_label)

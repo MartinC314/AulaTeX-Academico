@@ -23,6 +23,7 @@ from .extractor_adapter import ExtractorAdapter, ExtractorRequest, ExtractorRunR
 from .incremental_detail_planner import DetailPlannerRequest, DetailPlannerResult, IncrementalDetailPlanner
 from .langchain_adapter import AulaTeXLLMInterface, AulaTeXLangChainAdapter
 from .llm_bridge import DEFAULT_MAX_TOKENS, LLM_ENGINES, AulaTeXLLMClient, LLMCallResult
+from .config import MODEL_ROUTER_ENGINE, restrict_engines_to_available
 from .template_materializer import MaterializationResult, TemplateMaterializer
 from .workspace import AulaTeXWorkspace
 
@@ -646,17 +647,20 @@ class AulaTeXAgent:
 
     def _normalize_engines(self, engines: list[str]) -> list[str]:
         allowed = set(self.llm.engines() or LLM_ENGINES)
-        out = [engine for engine in engines if engine in allowed]
-        return out or ["Codex", "Claude Foundry"]
+        out = [engine for engine in restrict_engines_to_available(engines) if engine in allowed]
+        return out or [MODEL_ROUTER_ENGINE]
 
     def _optimize_engines(self, engines: list[str]) -> tuple[str, ...]:
         """Motores para la optimización de calidad.
 
-        Prefiere los GPT-5.6 (Luna/Terra) por su fiabilidad con prompts largos.
-        Usa los del request solo si el usuario pidió explícitamente motores GPT-5.6.
+        Respeta el modo exclusivo de model-router. Fuera de ese modo, prefiere
+        GPT-5.6 (Luna/Terra) por su fiabilidad con prompts largos.
         """
+        restricted = restrict_engines_to_available(engines)
+        if restricted == [MODEL_ROUTER_ENGINE]:
+            return (MODEL_ROUTER_ENGINE,)
         allowed = set(self.llm.engines() or LLM_ENGINES)
-        requested_gpt56 = [e for e in engines if e in allowed and e.startswith("GPT-5.6")]
+        requested_gpt56 = [e for e in restricted if e in allowed and e.startswith("GPT-5.6")]
         if requested_gpt56:
             return tuple(requested_gpt56)
         preferred = [e for e in ("GPT-5.6-Luna", "GPT-5.6-Terra") if e in allowed]

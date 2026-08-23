@@ -214,4 +214,5 @@ Write-Host "==> Entorno virtual configurado correctamente." -ForegroundColor Gre
 Write-Host "    PowerShell:     .\.venv\Scripts\Activate.ps1"
 Write-Host "    CMD:            .\.venv\Scripts\activate.bat"
 Write-Host "    Lanzador:       .\setup.bat"
-Write-Host "    Valida LLMs:    `$env:AULATEX_MASTER_PIN='<pin>'; .\scripts\aulatex.ps1 llm-check"
+Write-Host "    Configura LLMs: .\setup.bat --llm-only"
+Write-Host "    El asistente solicita PIN y API keys como entrada oculta."

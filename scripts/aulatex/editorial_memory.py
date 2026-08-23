@@ -915,9 +915,11 @@ class EditorialMemoryBuilder:
         return self._plan_scopes(source_scope, build_level, propagation_mode, by_key, children)
 
     def _normalize_engines(self, engines: list[str] | tuple[str, ...]) -> list[str]:
-        selected = [engine for engine in engines if engine in self.llm.engines()]
+        from .config import MODEL_ROUTER_ENGINE, restrict_engines_to_available
+
+        selected = [engine for engine in restrict_engines_to_available(engines) if engine in self.llm.engines()]
         if not selected:
-            selected = [engine for engine in LLM_ENGINES if engine in ENGINE_PRIORITY]
+            selected = [MODEL_ROUTER_ENGINE]
         return sorted(selected, key=lambda engine: (ENGINE_PRIORITY.get(engine, 999), engine))
 
     def _plan_scopes(

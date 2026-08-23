@@ -368,6 +368,19 @@ el script advierte, calcula el espacio de busqueda y exige escribir `ACEPTO`.
 .\scripts\rotate-pin.ps1 -Persist   # ademas lo guarda en la variable de usuario
 ```
 
+`setup.bat` incluye un asistente para configurar uno o varios LLM. El flujo es:
+**modo → LLMs → PIN → credenciales → validación**. La opción «Conservar» termina
+sin pedir PIN. En los modos Azure CLI y manual, el PIN y las API keys se capturan
+como entrada oculta; cada clave se cifra antes de escribirla. Si se elige
+únicamente `model-router`, activa `AULATEX_MODEL_ROUTER_ONLY=1` automáticamente.
+
+```powershell
+.\setup.bat                 # instala y abre el asistente LLM
+.\setup.bat --llm-only      # solo PIN/endpoints/deployments/claves
+.\setup.bat --skip-llm      # instala sin asistente interactivo
+.\setup.bat --no-shell --configure-llm  # automatización con configuración explícita
+```
+
 `scripts/sync-keys.ps1` sustituye las claves del `.env` con las de tus
 suscripciones. Recorre todas las suscripciones de `az account list`, inventaria
 las cuentas de Cognitive Services y asocia cada variable `*_API_KEY` con la
@@ -499,10 +512,25 @@ TB_BOOKS_LLM_VALIDATION_MAX_TOKENS=220
 TB_BOOKS_LLM_VALIDATION_TEMPERATURE=0
 
 # Auto (model-router)
+# Endpoint de inferencia del recurso, no el endpoint /api/projects/... del proyecto.
 MODEL_ROUTER_BASE_URL=https://example-resource.services.ai.azure.com/openai/v1/chat/completions
 MODEL_ROUTER_API_KEY=<your-model-router-key>
 MODEL_ROUTER_CHAT_DEPLOYMENT=model-router
 MODEL_ROUTER_API_VERSION=2025-11-18
+
+# Modo de deployment único: evita cualquier fallback o rotación hacia otros LLM.
+AULATEX_MODEL_ROUTER_ONLY=1
+AULATEX_LLM_ENGINE="Auto (model-router)"
+AULATEX_LLM_PROVIDER=model-router
+LLM_PROVIDER=model-router
+TB_BOOKS_LLM_REVIEW_ENGINE="Auto (model-router)"
+# Debe respetar el máximo real del deployment; el valor conservador validado es 32768.
+AULATEX_LLM_MAX_TOKENS=32768
+
+# La clave se puede ingresar sin exponerla en argv ni en el historial:
+# '<valor>' | python scripts\secrets_local.py set-value scripts\aulatex.env MODEL_ROUTER_API_KEY
+# Después, cifra cualquier secreto en claro:
+# python scripts\secrets_local.py encrypt scripts\aulatex.env
 
 # Codex
 CODEX_BASE_URL=https://example-resource.services.ai.azure.com/openai/v1/responses

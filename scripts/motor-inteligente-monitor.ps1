@@ -67,7 +67,7 @@ param(
     [ValidateSet('realizar-actividad', 'construir-memoria-editorial')]
     [string[]]$Actions = @('construir-memoria-editorial', 'realizar-actividad'),
     [int]$MaxTargets = 12,
-    [string[]]$Engines = @('Auto (model-router)', 'DeepSeek-V4-Pro', 'Grok-Pensamiento-Libre', 'GPT-5-Mini'),
+    [string[]]$Engines = @('Auto (model-router)'),
     [int]$MonitorMaxCycles = 100,
     [int]$OptimizeCycles = 3,
     [string]$Backend = 'langgraph',

@@ -63,9 +63,15 @@ TASK_PROVIDER_CHAINS: dict[str, list[str]] = {
 
 
 def provider_chain_for_task(task: str) -> list[str]:
-    """Cadena de proveedores para una tarea. Respeta AULATEX_LLM_PROVIDER si se
-    fija a algo distinto de 'auto'."""
+    """Cadena de proveedores para una tarea.
+
+    ``AULATEX_MODEL_ROUTER_ONLY=1`` impide fallbacks a otros deployments.
+    """
     import os
+
+    router_only = (os.getenv("AULATEX_MODEL_ROUTER_ONLY", "") or "").strip().lower()
+    if router_only in {"1", "true", "yes", "on", "si", "sí"}:
+        return ["model-router"]
 
     override = (os.getenv("AULATEX_LLM_PROVIDER", "auto") or "auto").strip().lower()
     base = list(TASK_PROVIDER_CHAINS.get(task, TASK_PROVIDER_CHAINS["default"]))

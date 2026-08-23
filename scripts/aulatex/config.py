@@ -58,6 +58,20 @@ ENGINE_ENV_PREFIX = {
 
 REQUIRED_LLM_SUFFIXES = ("BASE_URL", "API_KEY", "CHAT_DEPLOYMENT")
 _TRUE_VALUES = {"1", "true", "yes", "on", "si", "sí"}
+MODEL_ROUTER_ENGINE = "Auto (model-router)"
+
+
+def model_router_only_enabled() -> bool:
+    """Indica si toda invocación LLM debe usar exclusivamente model-router."""
+    value = os.getenv("AULATEX_MODEL_ROUTER_ONLY", "").strip().lower()
+    return value in _TRUE_VALUES
+
+
+def restrict_engines_to_available(engines: list[str] | tuple[str, ...]) -> list[str]:
+    """Normaliza motores y aplica el modo global de deployment único."""
+    if model_router_only_enabled():
+        return [MODEL_ROUTER_ENGINE]
+    return [engine for engine in engines if engine in LLM_ENGINES]
 
 
 @dataclass(frozen=True)
@@ -182,6 +196,12 @@ def decrypt_value(value: str) -> str:
         return value
 
 
+def usable_secret(value: str) -> bool:
+    """Un secreto ``enc:`` sin descifrar no es una credencial utilizable."""
+    normalized = str(value or "").strip().strip('"').strip("'")
+    return bool(normalized) and not normalized.startswith(ENC_PREFIX)
+
+
 def encrypt_env_secrets(path: str | Path | None = None) -> int:
     """Cifra en el archivo .env los valores secretos que aún estén en claro.
 
@@ -240,7 +260,8 @@ def credential_status() -> list[CredentialStatus]:
                 value = os.getenv(f"ANTHROPIC_FOUNDRY_{suffix}", "").strip().strip('"').strip("'")
             if not value and inherits_anthropic and suffix == "CHAT_DEPLOYMENT":
                 value = os.getenv(f"{prefix}_DEPLOYMENT", "").strip().strip('"').strip("'")
-            if value:
+            valid = usable_secret(value) if suffix == "API_KEY" else bool(value)
+            if valid:
                 present.append(key)
             else:
                 missing.append(key)

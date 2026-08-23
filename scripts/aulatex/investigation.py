@@ -844,9 +844,11 @@ class InvestigationBuilder:
         return base
 
     def _normalize_engines(self, engines: list[str] | tuple[str, ...]) -> list[str]:
-        selected = [engine for engine in engines if engine in self.llm.engines()]
+        from .config import MODEL_ROUTER_ENGINE, restrict_engines_to_available
+
+        selected = [engine for engine in restrict_engines_to_available(engines) if engine in self.llm.engines()]
         if not selected:
-            selected = [engine for engine in LLM_ENGINES if engine in ENGINE_PRIORITY]
+            selected = [MODEL_ROUTER_ENGINE]
         return sorted(selected, key=lambda item: (ENGINE_PRIORITY.get(item, 999), item))
 
     def _emit(self, callback: Callable[[InvestigationEvent], None] | None, event: InvestigationEvent) -> None:
