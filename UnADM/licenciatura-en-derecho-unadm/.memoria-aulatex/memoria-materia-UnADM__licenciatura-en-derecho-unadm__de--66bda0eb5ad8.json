@@ -2708,7 +2708,7 @@
         "career": "licenciatura-en-derecho-unadm",
         "subject": "derecho-a-la-seguridad-social-lde",
         "activity": "Actividad 7",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde"
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-7"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -2802,7 +2802,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260823-210333",
+      "run_id": "20260823-220845",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
@@ -3100,7 +3100,7 @@
             "career": "licenciatura-en-derecho-unadm",
             "subject": "derecho-a-la-seguridad-social-lde",
             "activity": "Actividad 7",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde"
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-7"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -3194,7 +3194,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260823-210333",
+          "run_id": "20260823-220845",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",

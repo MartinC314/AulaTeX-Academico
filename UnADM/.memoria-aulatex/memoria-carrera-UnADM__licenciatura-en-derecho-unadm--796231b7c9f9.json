@@ -668,7 +668,7 @@
         "career": "licenciatura-en-derecho-unadm",
         "subject": "",
         "activity": "Actividad 7",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde"
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-7"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -731,7 +731,6 @@
         }
       ],
       "novelty_signals": [
-        "heading_contract",
         "institutional_identity"
       ],
       "derived_from": {
@@ -762,7 +761,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260823-210322",
+      "run_id": "20260823-220837",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm",
@@ -774,7 +773,7 @@
         "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde",
         "UnADM/licenciatura-en-derecho-unadm/derecho-de-la-contratacion-internacional-lde"
       ],
-      "novelty_count": 2
+      "novelty_count": 1
     }
   },
   "curricular_context": {},

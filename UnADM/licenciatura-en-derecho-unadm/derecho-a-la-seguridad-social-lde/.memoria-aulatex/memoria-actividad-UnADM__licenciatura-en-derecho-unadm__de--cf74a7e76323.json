@@ -374,7 +374,7 @@
         "career": "licenciatura-en-derecho-unadm",
         "subject": "derecho-a-la-seguridad-social-lde",
         "activity": "Actividad 5",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde"
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-7"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -437,8 +437,6 @@
         }
       ],
       "novelty_signals": [
-        "heading_contract",
-        "didactic_contract",
         "institutional_identity"
       ],
       "derived_from": {
@@ -472,7 +470,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260823-210343",
+      "run_id": "20260823-220853",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-5",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-5",
@@ -484,7 +482,7 @@
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-3"
       ],
-      "novelty_count": 3
+      "novelty_count": 1
     },
     "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-5",
     "level": "actividad",
@@ -756,7 +754,7 @@
             "career": "licenciatura-en-derecho-unadm",
             "subject": "derecho-a-la-seguridad-social-lde",
             "activity": "Actividad 5",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde"
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-7"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -831,7 +829,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260823-210343",
+          "run_id": "20260823-220853",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-5",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-5",
@@ -843,7 +841,7 @@
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-2",
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-3"
           ],
-          "novelty_count": 3
+          "novelty_count": 1
         },
         "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-5",
         "level": "actividad",
