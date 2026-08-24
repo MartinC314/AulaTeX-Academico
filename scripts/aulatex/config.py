@@ -8,9 +8,7 @@ from pathlib import Path
 LLM_ENGINES = (
     "Auto (model-router)",
     "Claude Foundry",
-    "Claude Opus DZ",
     "Claude Sonnet",
-    "Claude Sonnet 4.5",
     "Claude Haiku",
     "GPT-5.6-SOL",
     "GPT-5.6-Luna",
@@ -18,16 +16,8 @@ LLM_ENGINES = (
     "GPT-Pro",
     "Codex",
     "Mistral-Large-3",
-    "Mistral-Matematicas",
-    "Mistral-Medium-DZ",
-    "Grok-Pensamiento-Libre",
     "DeepSeek-V4-Pro",
-    "GPT-5-Mini",
     "GPT-Chat-Latest",
-    # Replicas DataZoneStandard: mismo modelo, cuota independiente.
-    "GPT-5.6-SOL-DZ",
-    "GPT-5.6-Luna-DZ",
-    "GPT-5.6-Terra-DZ",
 )
 
 ENGINE_ENV_PREFIX = {
@@ -40,38 +30,15 @@ ENGINE_ENV_PREFIX = {
     "Codex": "CODEX",
     # LLMs adicionales presentes en aulatex.env (protocolo chat/completions).
     "Mistral-Large-3": "MISTRAL_LARGE_3",
-    "Mistral-Matematicas": "MISTRAL_MATEMATICAS",
-    "Mistral-Medium-DZ": "MISTRAL_MEDIUM_DZ",
-    "Grok-Pensamiento-Libre": "GROK_PENSAMIENTO_LIBRE",
     "DeepSeek-V4-Pro": "DEEPSEEK_V4_PRO",
-    "GPT-5-Mini": "GPT_5_MINI",
     "GPT-Chat-Latest": "GPT_CHAT_LATEST",
-    "GPT-5.6-SOL-DZ": "AZURE_OPENAI_GPT_5_6_SOL_DZ",
-    "GPT-5.6-Luna-DZ": "AZURE_OPENAI_GPT_5_6_LUNA_DZ",
-    "GPT-5.6-Terra-DZ": "AZURE_OPENAI_GPT_5_6_TERRA_DZ",
     # Anthropic Sonnet/Haiku (mismo endpoint que Claude Foundry, otro deployment).
     "Claude Sonnet": "ANTHROPIC_SONNET",
     "Claude Haiku": "ANTHROPIC_HAIKU",
-    "Claude Opus DZ": "ANTHROPIC_OPUS_DZ",
-    "Claude Sonnet 4.5": "ANTHROPIC_SONNET_45",
 }
 
 REQUIRED_LLM_SUFFIXES = ("BASE_URL", "API_KEY", "CHAT_DEPLOYMENT")
 _TRUE_VALUES = {"1", "true", "yes", "on", "si", "sí"}
-MODEL_ROUTER_ENGINE = "Auto (model-router)"
-
-
-def model_router_only_enabled() -> bool:
-    """Indica si toda invocación LLM debe usar exclusivamente model-router."""
-    value = os.getenv("AULATEX_MODEL_ROUTER_ONLY", "").strip().lower()
-    return value in _TRUE_VALUES
-
-
-def restrict_engines_to_available(engines: list[str] | tuple[str, ...]) -> list[str]:
-    """Normaliza motores y aplica el modo global de deployment único."""
-    if model_router_only_enabled():
-        return [MODEL_ROUTER_ENGINE]
-    return [engine for engine in engines if engine in LLM_ENGINES]
 
 
 @dataclass(frozen=True)
@@ -196,12 +163,6 @@ def decrypt_value(value: str) -> str:
         return value
 
 
-def usable_secret(value: str) -> bool:
-    """Un secreto ``enc:`` sin descifrar no es una credencial utilizable."""
-    normalized = str(value or "").strip().strip('"').strip("'")
-    return bool(normalized) and not normalized.startswith(ENC_PREFIX)
-
-
 def encrypt_env_secrets(path: str | Path | None = None) -> int:
     """Cifra en el archivo .env los valores secretos que aún estén en claro.
 
@@ -260,8 +221,7 @@ def credential_status() -> list[CredentialStatus]:
                 value = os.getenv(f"ANTHROPIC_FOUNDRY_{suffix}", "").strip().strip('"').strip("'")
             if not value and inherits_anthropic and suffix == "CHAT_DEPLOYMENT":
                 value = os.getenv(f"{prefix}_DEPLOYMENT", "").strip().strip('"').strip("'")
-            valid = usable_secret(value) if suffix == "API_KEY" else bool(value)
-            if valid:
+            if value:
                 present.append(key)
             else:
                 missing.append(key)

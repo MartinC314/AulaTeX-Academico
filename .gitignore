@@ -71,7 +71,6 @@ base/Template-Tesis/
 
 # Archivos temporales
 .build/
-**/.build-cpp/
 .aulatex-temp/
 retroalimentacion-editorial/
 salidas/
@@ -112,7 +111,3 @@ scripts/secret.key
 # Respaldos automaticos del .env: pueden contener secretos en claro
 scripts/aulatex.env.bak-*
 **/*.env.bak-*
-
-# Salt de derivacion del PIN maestro (AULATEX_MASTER_PIN)
-scripts/secret.salt
-**/secret.salt
