@@ -252,6 +252,7 @@ function Invoke-ConsoleMonitor {
     }
 
     $json = ($stdoutTask.GetAwaiter().GetResult()).Trim()
+    $resultExitCode = $proc.ExitCode
     if ($json) {
         Write-Host ''
         Write-Host '  === Resultado (JSON) ===' -ForegroundColor DarkCyan
@@ -260,11 +261,14 @@ function Invoke-ConsoleMonitor {
             Write-Host ("  ok={0}  executed={1}  execution_ok={2}" -f $obj.ok, $obj.executed, $obj.execution_ok) -ForegroundColor Cyan
             Write-Host ("  run_dir: {0}" -f $obj.run_dir) -ForegroundColor DarkGray
             Write-Host ("  report : {0}" -f $obj.report) -ForegroundColor DarkGray
+            if (($obj.ok -eq $false) -or (($obj.executed -eq $true) -and ($obj.execution_ok -eq $false))) {
+                $resultExitCode = 1
+            }
         } catch {
             Write-Host $json -ForegroundColor DarkGray
         }
     }
-    return $proc.ExitCode
+    return $resultExitCode
 }
 
 # =============================================================== MODO GUI =====

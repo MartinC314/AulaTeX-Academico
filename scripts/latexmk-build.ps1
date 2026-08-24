@@ -66,6 +66,23 @@ function Initialize-PerlForLatexmk {
     Write-Warning "No se encontro un Perl con biblioteca estandar; latexmk puede fallar al arrancar."
 }
 
+function Resolve-LatexmkExecutable {
+    $command = Get-Command latexmk -ErrorAction SilentlyContinue
+    if ($command) { return $command.Source }
+
+    $candidates = @(
+        'C:\Program Files\MiKTeX\miktex\bin\x64\latexmk.exe',
+        "$env:LOCALAPPDATA\Programs\MiKTeX\miktex\bin\x64\latexmk.exe",
+        'C:\texlive\2026\bin\windows\latexmk.exe',
+        'C:\texlive\2025\bin\windows\latexmk.exe',
+        'C:\texlive\2024\bin\windows\latexmk.exe'
+    )
+    foreach ($candidate in $candidates) {
+        if (Test-Path -LiteralPath $candidate -PathType Leaf) { return $candidate }
+    }
+    throw 'Bloqueador de entorno: no se encontró latexmk en PATH, MiKTeX ni TeX Live.'
+}
+
 function Resolve-TexFile {
     param([string]$Path)
 
@@ -169,9 +186,26 @@ function Remove-SourceDirResidues {
 
 Initialize-PerlForLatexmk
 
+$LatexmkExe = Resolve-LatexmkExecutable
+$LatexmkBin = Split-Path -Parent $LatexmkExe
+if ($LatexmkBin -and ($env:PATH -notlike "*$LatexmkBin*")) {
+    $env:PATH = "$LatexmkBin;$env:PATH"
+}
 $ResolvedTex = Resolve-TexFile $TexFile
-New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot '.build/latex') | Out-Null
-New-Item -ItemType Directory -Force -Path (Join-Path $ProjectRoot '.build/latex/aux') | Out-Null
+$BuildRoot = Join-Path $ProjectRoot '.build'
+$LatexRoot = Join-Path $BuildRoot 'latex'
+# AUX es un nombre de dispositivo reservado en Windows, incluso como segmento.
+# Un nombre descriptivo evita WinError 267 y funciona también en Linux/macOS.
+$AuxRoot = Join-Path $LatexRoot 'aux-files'
+foreach ($directory in @($BuildRoot, $LatexRoot, $AuxRoot)) {
+    if ((Test-Path -LiteralPath $directory) -and -not (Test-Path -LiteralPath $directory -PathType Container)) {
+        throw "Bloqueador de entorno: la ruta de compilación existe pero no es un directorio: $directory"
+    }
+    New-Item -ItemType Directory -Force -Path $directory | Out-Null
+    if (-not (Test-Path -LiteralPath $directory -PathType Container)) {
+        throw "Bloqueador de entorno: no fue posible crear el directorio de compilación: $directory"
+    }
+}
 Invoke-BuildCleanup -Mode $CleanMode -Root $ProjectRoot
 
 Push-Location $ProjectRoot
@@ -185,7 +219,7 @@ try {
     # ONLY around the native latexmk call and rely on $LASTEXITCODE for success.
     $PreviousEAP = $ErrorActionPreference
     $ErrorActionPreference = 'Continue'
-    & latexmk -f -pdf -interaction=nonstopmode -file-line-error @LatexmkArgs $ResolvedTex 2>&1 |
+    & $LatexmkExe -f -pdf -interaction=nonstopmode -file-line-error "-outdir=$LatexRoot" "-auxdir=$AuxRoot" @LatexmkArgs $ResolvedTex 2>&1 |
         ForEach-Object { Write-Host ($_ | Out-String).TrimEnd() }
     $LatexmkExitCode = $LASTEXITCODE
     $ErrorActionPreference = $PreviousEAP
@@ -195,8 +229,8 @@ try {
 
     $BaseName = [System.IO.Path]::GetFileNameWithoutExtension($ResolvedTex)
     $GeneratedPdfCandidates = @(
-        (Join-Path $ProjectRoot (".build/latex/{0}.pdf" -f $BaseName)),
-        (Join-Path $ProjectRoot (".build/latex/aux/{0}.pdf" -f $BaseName))
+        (Join-Path $LatexRoot ("{0}.pdf" -f $BaseName)),
+        (Join-Path $AuxRoot ("{0}.pdf" -f $BaseName))
     )
     $GeneratedPdf = $GeneratedPdfCandidates | Where-Object {
         Test-Path -LiteralPath $_ -PathType Leaf

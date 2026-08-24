@@ -92,7 +92,7 @@ def compile_tex(tex_path: Path, *, timeout_seconds: int, repair_bibtex: bool) ->
     salvaged = False
     if not pdf_path.exists():
         build_pdf = REPO_ROOT / ".build" / "latex" / f"{tex_path.stem}.pdf"
-        aux_pdf = REPO_ROOT / ".build" / "latex" / "aux" / f"{tex_path.stem}.pdf"
+        aux_pdf = REPO_ROOT / ".build" / "latex" / "aux-files" / f"{tex_path.stem}.pdf"
         source_pdf = build_pdf if build_pdf.exists() else aux_pdf if aux_pdf.exists() else None
         if source_pdf:
             pdf_path.parent.mkdir(parents=True, exist_ok=True)
