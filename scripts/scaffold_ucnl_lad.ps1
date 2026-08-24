@@ -172,7 +172,7 @@ Ejecutar siempre desde la raiz del proyecto:
 - BibTeX busca `$($course.BibStem).bib` con `BIBINPUTS`.
 - El estilo `natnumurl.bst` se resuelve con `BSTINPUTS`.
 - El PDF final queda en esta misma carpeta, junto al `.tex`.
-- Los auxiliares quedan en `.build/latex` y `.build/latex/aux`.
+- Los auxiliares quedan en `.build/latex` y `.build/latex/aux-files`.
 
 ## Checklist del `.tex`
 
