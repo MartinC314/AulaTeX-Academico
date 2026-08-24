@@ -1,0 +1,77 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+import pytest
+
+from scripts.aulatex_training.motor_training import (
+    SCHEMA_VERSION,
+    assert_no_group_leakage,
+    grouped_split,
+    latex_generation_checks,
+    privacy_findings,
+    read_jsonl,
+    validate_sft_row,
+    write_jsonl,
+)
+
+
+def row(index: int, group: str) -> dict:
+    return {
+        "schema_version": SCHEMA_VERSION,
+        "id": str(index),
+        "target": f"{group}/actividad-{index}.tex",
+        "group": group,
+        "technique": "actividad_academica",
+        "messages": [
+            {"role": "system", "content": "reglas"},
+            {"role": "user", "content": "genera"},
+            {"role": "assistant", "content": "resultado"},
+        ],
+        "allowed_citation_keys": [],
+        "content_sha256": "a" * 64,
+    }
+
+
+def test_privacy_detects_secrets_and_pii() -> None:
+    text = "correo persona@example.com y clave AKIAABCDEFGHIJKLMNOP"
+    kinds = {finding.kind for finding in privacy_findings(text)}
+    assert {"email", "aws_access_key"} <= kinds
+
+
+def test_grouped_split_has_no_leakage() -> None:
+    rows = [row(index, f"materia-{index // 2}") for index in range(20)]
+    splits = grouped_split(rows, seed=7)
+    assert_no_group_leakage(splits)
+    assert sum(map(len, splits.values())) == len(rows)
+
+
+def test_leakage_is_rejected() -> None:
+    with pytest.raises(ValueError, match="Fuga"):
+        assert_no_group_leakage({"train": [row(1, "m")], "validation": [row(2, "m")], "test": []})
+
+
+def test_schema_validation() -> None:
+    assert validate_sft_row(row(1, "m")) == []
+    broken = row(2, "m")
+    broken["messages"] = []
+    assert validate_sft_row(broken)
+
+
+def test_jsonl_roundtrip(tmp_path: Path) -> None:
+    path = tmp_path / "data.jsonl"
+    assert write_jsonl(path, [row(1, "m")]) == 1
+    assert read_jsonl(path)[0]["id"] == "1"
+
+
+def test_native_image_rule() -> None:
+    bad = latex_generation_checks(r"\includegraphics{foto.png}")
+    good = latex_generation_checks(r"\insertimage{foto.png}{width=.8\linewidth}{Foto}")
+    assert not bad["native_image_rule_ok"]
+    assert good["native_image_rule_ok"]
+
+
+def test_unknown_citations() -> None:
+    result = latex_generation_checks(r"Texto \cite{permitida,inventada}.", ["permitida"])
+    assert result["unknown_citation_keys"] == ["inventada"]
