@@ -360,7 +360,9 @@ class IntelligentEngine:
         agent = AulaTeXAgent(self.workspace)
         result = agent.run(
             AgentRequest(
-                target=directory,
+                # Conservar el objetivo exacto: una presentación no debe degradarse
+                # a la carpeta de la materia ni terminar en un reporte distinto.
+                target=target,
                 level="actividad",
                 action="realizar-actividad",
                 activity_number=activity,

@@ -316,6 +316,18 @@ class AulaTeXAgent:
             ok = ok and extractor_result.ok
         if materialization_result is not None:
             ok = ok and materialization_result.ok
+        if request.action.strip().lower() == "realizar-actividad":
+            targets_after_generation = self._select_compile_targets(target_ctx, request.activity_number)
+            unresolved_scaffold = any(
+                "en construcción" in path.read_text(encoding="utf-8", errors="replace").lower()
+                or path.read_text(encoding="utf-8", errors="replace").count(r"\begin{frame}") <= 2
+                for path in targets_after_generation
+                if path.name.startswith("presentacion-")
+            )
+            if applied_tex.get("reason") in {"arquitecto-sin-tex-completo", "propuesta-con-placeholders", "propuesta-no-es-presentacion"}:
+                ok = False
+            if unresolved_scaffold:
+                ok = False
 
         # Post-procesamiento automático para realizar-actividad:
         # 1) monitor -> converger el contrato editorial del .tex (aplica parches reales).
@@ -336,6 +348,22 @@ class AulaTeXAgent:
         # Si la compilación final falló, el resultado global no puede reportar éxito.
         if final_compile_ok is False:
             ok = False
+
+        manifest.update(
+            {
+                "ok": ok,
+                "monitor_ok": monitor_ok,
+                "optimize_ok": optimize_ok,
+                "quality_before": quality_before,
+                "quality_after": quality_after,
+                "final_compile_ok": final_compile_ok,
+                "semantic_blocking_before": semantic_blocking_before,
+                "semantic_blocking_after": semantic_blocking_after,
+                "semantic_audit_available": semantic_audit_available,
+                "optimize_plan_summary": optimize_plan_summary,
+            }
+        )
+        manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
 
         return AgentRunResult(
             run_id, run_dir, ok, report_path, manifest_path,
@@ -826,19 +854,31 @@ class AulaTeXAgent:
             return summary
 
         targets = self._select_compile_targets(target_ctx, request.activity_number)
-        report = next((p for p in targets if p.name.startswith("reporte-")), None)
-        if report is None:
-            summary["reason"] = "sin-reporte-destino"
+        destination: Path | None = None
+        if target_ctx.target_path.is_file() and target_ctx.target_path.suffix.lower() == ".tex":
+            destination = target_ctx.target_path
+        elif len(targets) == 1:
+            destination = targets[0]
+        else:
+            destination = next((p for p in targets if p.name.startswith("reporte-")), None)
+        if destination is None:
+            summary["reason"] = "sin-destino-tex"
             return summary
 
-        current = report.read_text(encoding="utf-8", errors="replace")
-        if not re.search(r"\\pendiente\{", current):
+        current = destination.read_text(encoding="utf-8", errors="replace")
+        is_placeholder = bool(re.search(r"\\pendiente\{", current))
+        is_scaffold = (
+            "en construcción" in current.lower()
+            or current.count(r"\begin{frame}") <= 2
+            or len(current.strip()) < 1800
+        )
+        if not is_placeholder and not is_scaffold:
             summary["reason"] = "destino-ya-redactado"
             return summary
 
         document = ""
         for task, result in zip(tasks, stage_results):
-            if self._base_stage(task.stage) != "generar" or not result.ok:
+            if self._base_stage(task.stage) != "generar" or not result.ok or not result.text.strip():
                 continue
             candidate = self._extract_tex_document(result.text)
             if len(candidate) > len(document):
@@ -851,13 +891,17 @@ class AulaTeXAgent:
             summary["reason"] = "propuesta-con-placeholders"
             workflow.record("apply-generated-tex", "error", "la propuesta del arquitecto aun trae placeholders")
             return summary
+        if destination.name.startswith("presentacion-") and "beamer" not in document[:500].lower():
+            summary["reason"] = "propuesta-no-es-presentacion"
+            workflow.record("apply-generated-tex", "error", "el destino es una presentación pero el documento generado no usa Beamer")
+            return summary
 
-        report.write_text(document, encoding="utf-8")
+        destination.write_text(document, encoding="utf-8")
         summary.update(
             {
                 "applied": True,
                 "reason": "propuesta-del-arquitecto-aplicada",
-                "target": self.workspace.relative(report),
+                "target": self.workspace.relative(destination),
                 "chars": len(document),
             }
         )

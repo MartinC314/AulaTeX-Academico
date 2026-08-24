@@ -80,14 +80,21 @@ class AulaTeXLangChainAdapter:
             try:
                 model = self._build_model(config, invoke_cfg)
                 response = model.invoke([HumanMessage(content=prompt)])
-                return LLMCallResult(selected, True, self._extract_message_text(response.content))
+                text = self._extract_message_text(response.content)
+                if text.strip():
+                    return LLMCallResult(selected, True, text)
+                last_exc = RuntimeError(f"{selected} devolvió una respuesta vacía mediante LangChain.")
+                break
             except Exception as exc:
                 last_exc = exc
                 if not _should_retry_with_lower_max_tokens(exc):
                     break
 
         if self.fallback_to_direct:
-            return self.client.call(selected, prompt, max_tokens=max_tokens, timeout_seconds=timeout_seconds)
+            direct = self.client.call(selected, prompt, max_tokens=max_tokens, timeout_seconds=timeout_seconds)
+            if direct.ok and direct.text.strip():
+                return direct
+            return LLMCallResult(selected, False, "", direct.error or _friendly_error(last_exc or RuntimeError("Respuesta vacía.")))
         return LLMCallResult(selected, False, "", _friendly_error(last_exc or RuntimeError("Fallo desconocido.")))
 
     def cycle(

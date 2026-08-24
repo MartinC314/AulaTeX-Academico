@@ -296,7 +296,7 @@ class EditorialConsensusEngine:
 
     def _risks(self, criteria: dict[str, bool], results: list[LLMCallResult]) -> list[str]:
         risks = [f"Criterio sin cobertura: {name}" for name, ok in criteria.items() if not ok]
-        failed = [result.engine for result in results if not result.ok]
+        failed = [result.engine for result in results if not result.ok or not result.text.strip()]
         if failed:
             risks.append("LLM sin respuesta util: " + ", ".join(failed))
         return risks

@@ -186,7 +186,9 @@ class AulaTeXLLMClient:
         for candidate_max_tokens in _max_token_attempts(max_tokens):
             try:
                 text = call_llm_text(selected, prompt, max_tokens=candidate_max_tokens, timeout_seconds=timeout_seconds)
-                return LLMCallResult(selected, True, text)
+                if text.strip():
+                    return LLMCallResult(selected, True, text)
+                last_exc = RuntimeError(f"{selected} devolvió una respuesta vacía.")
             except Exception as exc:
                 last_exc = exc
                 if not _should_retry_with_lower_max_tokens(exc):

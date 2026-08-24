@@ -546,6 +546,8 @@ def main(argv: list[str] | None = None) -> None:
             "semantic_blocking_after": result.semantic_blocking_after,
             "semantic_audit_available": result.semantic_audit_available,
         }, ensure_ascii=False, indent=2))
+        if not result.ok:
+            raise SystemExit(1)
         return
 
     if args.command == "detail-planner":
@@ -1134,6 +1136,8 @@ def main(argv: list[str] | None = None) -> None:
                 indent=2,
             )
         )
+        if not result.ok or (result.executed and not result.execution_ok):
+            raise SystemExit(1)
         return
 
     if args.command == "calibrar-actividad":
