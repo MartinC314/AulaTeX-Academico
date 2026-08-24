@@ -1,17 +1,199 @@
-\documentclass[spanish,aspectratio=169]{beamer}
+\documentclass[spanish,aspectratio=169,10pt]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[spanish,es-tabla]{babel}
-\usepackage{graphicx}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{tikz}
 \usepackage{hyperref}
+\usetikzlibrary{positioning,shapes.geometric}
+
+\definecolor{unadmDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{paper}{HTML}{F6F7F2}
+\definecolor{ink}{HTML}{1F2A24}
+\setbeamercolor{normal text}{fg=ink,bg=white}
+\setbeamercolor{structure}{fg=unadmGreen}
+\setbeamercolor{frametitle}{fg=white,bg=unadmDark}
+\setbeamercolor{block title}{fg=white,bg=unadmGreen}
+\setbeamercolor{block body}{fg=ink,bg=paper}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\color{unadmGold}$\blacktriangleright$}
+\setbeamertemplate{footline}{%
+  \leavevmode\hbox{%
+  \begin{beamercolorbox}[wd=.71\paperwidth,ht=2.5ex,dp=1ex,leftskip=1em]{author in head/foot}\color{white}\bfseries Interaprendizaje en ambientes virtuales\end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.29\paperwidth,ht=2.5ex,dp=1ex,rightskip=1em plus1fil]{date in head/foot}\color{white}Actividad 7\hfill\insertframenumber/\inserttotalframenumber\end{beamercolorbox}}
+}
+\setbeamercolor{author in head/foot}{bg=unadmDark}
+\setbeamercolor{date in head/foot}{bg=unadmGreen}
+\hypersetup{colorlinks=true,urlcolor=unadmGreen}
+
 \title{Brief profesional del despacho jurídico digital}
-\subtitle{Actividad 7 · Interaprendizaje en ambientes virtuales}
+\subtitle{Identidad, organización, seguridad y comunicación}
 \author{Martin Jonathan de la Cruz · ES2611202040}
-\institute{Universidad Abierta y a Distancia de México · Licenciatura en Derecho}
+\institute{Universidad Abierta y a Distancia de México\\Licenciatura en Derecho · Semestre 2, Bloque 1\\Figura docente: Janeth Santana Ramírez}
 \date{23 de agosto de 2026}
+
 \begin{document}
-\begin{frame}\titlepage\end{frame}
-\begin{frame}{Actividad 7 en construcción}
-Este archivo canónico se materializa para que el motor inteligente desarrolle el brief conforme a la planeación y los contenidos oficiales de la semana 7.
+
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[unadmDark] (current page.south west) rectangle ([xshift=.61\paperwidth]current page.north west);
+  \fill[unadmGreen] ([xshift=.61\paperwidth]current page.south west) rectangle (current page.north east);
+  \node[circle,draw=unadmGold,line width=2pt,minimum size=2.8cm,text width=2.2cm,align=center,text=white,font=\bfseries] at ([xshift=-3.6cm,yshift=-2.8cm]current page.north east) {LEX\\DIGITAL};
+\end{tikzpicture}
+\vspace{1.1cm}
+\begin{minipage}{.56\textwidth}
+{\color{white}\LARGE\bfseries Brief profesional del despacho jurídico digital\par}
+\vspace{.35cm}{\color{unadmGold}\rule{8cm}{1.3pt}}\vspace{.35cm}
+{\color{white}\large Identidad, organización, seguridad y comunicación\par}
+\vspace{.7cm}{\color{white}\large Martin Jonathan de la Cruz\par}
+{\color{white!80}\small Matrícula ES2611202040\\Actividad 7 · 23 de agosto de 2026}
+\end{minipage}
 \end{frame}
+
+\begin{frame}{Identidad y propuesta de valor}
+\begin{columns}[T,onlytextwidth]
+\column{.48\textwidth}
+\begin{block}{Nombre de trabajo}
+\centering\Large\bfseries Lex Digital Colaborativo\\[2pt]
+\small Propuesta sujeta a validación del equipo
+\end{block}
+\textbf{Misión.} Brindar orientación jurídica clara, documentada y segura mediante colaboración digital, trato digno y protección responsable de la información.
+\column{.48\textwidth}
+\textbf{Líneas de especialización propuestas}
+\begin{itemize}
+  \item Protección de datos personales y privacidad.
+  \item Contratación y evidencia en entornos digitales.
+  \item Uso responsable de inteligencia artificial.
+  \item Derechos humanos y comunicación intercultural.
+\end{itemize}
+\vspace{2pt}\alert{Valor diferencial:} cada respuesta integra investigación verificable, revisión cruzada y trazabilidad de acuerdos.
+\end{columns}
+\end{frame}
+
+\begin{frame}{Equipo y trabajo cooperativo}
+\small
+\begin{tabularx}{\textwidth}{>{\bfseries}p{2.9cm}p{3.3cm}X}
+\toprule
+Integrante / asignación & Función & Responsabilidad observable \\
+\midrule
+Martin Jonathan de la Cruz & Investigación y control documental & Verificar fuentes, citas, versiones y bitácora de cambios. \\
+Por acordar en Teams & Coordinación y redacción & Organizar agenda, integrar aportaciones y cuidar claridad. \\
+Por acordar en Teams & Comunicación & Registrar acuerdos y mantener contacto con el cliente. \\
+Por acordar en Teams & Ciberseguridad & Revisar accesos, respaldos e incidencias. \\
+\bottomrule
+\end{tabularx}
+\vspace{.35cm}
+\begin{block}{Regla de cooperación}
+Cada función produce un insumo identificable, pero ninguna versión se cierra sin lectura cruzada y aceptación del equipo. Así se combinan responsabilidad individual e interdependencia positiva \cite{lopezMartinez2022trabajoCooperativo,conocer2025ec0554}.
+\end{block}
+\end{frame}
+
+\begin{frame}{Protocolo básico de ciberseguridad y confidencialidad}
+\small
+\begin{columns}[T,onlytextwidth]
+\column{.49\textwidth}
+\textbf{Prevención operativa propuesta}
+\begin{itemize}
+  \item Usar un repositorio único en Teams y asignar permisos por función como acuerdo interno sujeto a revisión.
+  \item Promover contraseñas robustas y autenticación multifactor cuando la plataforma lo permita.
+  \item Trabajar con datos mínimos; seudonimizar información en ejercicios académicos.
+  \item Verificar destinatario y permisos antes de compartir archivos o enlaces.
+  \item Documentar compromiso de no difusión y uso ético de IA.
+\end{itemize}
+\column{.47\textwidth}
+\textbf{Continuidad y respuesta operativa}
+\begin{itemize}
+  \item Conservar historial de versiones y programar respaldo semanal como práctica interna, no como certificación técnica.
+  \item Registrar accesos o envíos incorrectos para reconstruir hechos y responsabilidades.
+  \item Restringir el enlace y avisar al equipo ante incidentes.
+  \item Recuperar la última versión validada y documentar la corrección.
+\end{itemize}
+\end{columns}
+\vspace{2pt}
+\begin{block}{Criterio jurídico}
+El tratamiento debe tener finalidad definida, ser proporcional y proteger los datos bajo control del despacho; el protocolo no sustituye una evaluación jurídica del caso \cite{camaraDiputados2025lfpdppp}.
+\end{block}
+\end{frame}
+
+\begin{frame}{Plan de comunicación interna y externa}
+\small
+\begin{tabularx}{\textwidth}{p{2.8cm}p{3.1cm}X p{2.5cm}}
+\toprule
+Ámbito & Canal oficial & Regla de uso & Tiempo objetivo \\
+\midrule
+Equipo & Canal general de Teams & Avisos, dudas y decisiones que afecten al grupo. & Acuse: 24 h hábiles \\
+Documentos & Archivo maestro en Teams & Editar una sola versión y justificar cambios sustantivos. & Revisión: 48 h \\
+Reuniones & Teams con agenda & Cerrar con minuta, responsables y fechas. & Minuta: mismo día \\
+Cliente potencial & Correo institucional / reunión & Lenguaje claro; confirmar recepción, alcance y próximo paso. & Respuesta: 1 día hábil \\
+Urgencias & Teams + aviso directo & No enviar datos sensibles; remitir al registro institucional. & Acuse: 4 h hábiles \\
+\bottomrule
+\end{tabularx}
+\vspace{.3cm}
+La bitácora registra fecha, acuerdo, responsable, plazo y evidencia. Una comunicación profesional también escucha diferencias culturales y evita tecnicismos innecesarios \cite{pech2016manual}.
+\end{frame}
+
+\begin{frame}{Fuentes jurídicas base}
+\small
+\begin{columns}[T,onlytextwidth]
+\column{.48\textwidth}
+\begin{block}{Marco transversal}
+\begin{itemize}
+  \item Constitución Política de los Estados Unidos Mexicanos.
+  \item Ley Federal de Protección de Datos Personales en Posesión de los Particulares.
+  \item Normativa y criterios oficiales aplicables al asunto.
+\end{itemize}
+\end{block}
+\column{.48\textwidth}
+\begin{block}{Método de actualización}
+\begin{enumerate}
+  \item Precisar hechos, jurisdicción y fecha relevante.
+  \item Consultar fuente oficial vigente.
+  \item Registrar versión, enlace y fecha de consulta.
+  \item Contrastar interpretación y revisar en equipo.
+\end{enumerate}
+\end{block}
+\end{columns}
+\vspace{.2cm}
+Como decisión operativa del equipo, las herramientas digitales se usarán para comunicar acuerdos, contrastar aportaciones y conservar evidencia del trabajo construido; por tanto, no se limitarán a repartir tareas \cite{cushpa2022pacie,zambranoPilay2020tecnologias}.
+\end{frame}
+
+\begin{frame}{Agenda de cierre y continuidad}
+\small
+\begin{tabularx}{\textwidth}{p{1.2cm}X p{3.2cm}p{2.5cm}}
+\toprule
+Fase & Tarea & Responsable & Fecha interna \\
+\midrule
+1 & Validar nombre, misión, especialidades y roles. & Equipo completo & 20 de agosto \\
+2 & Revisar seguridad, comunicación y fuentes. & Roles asignados & 21 de agosto \\
+3 & Lectura cruzada, corrección y acuerdo final. & Equipo completo & 22 de agosto \\
+4 & Verificar apertura, guardar versión final y registrar acuerdo. & Coordinación & 23 de agosto, 20:00 \\
+5 & Avisar por correo a la docente, sin adjuntar archivo. & Representante & Antes de 23:55 \\
+\bottomrule
+\end{tabularx}
+\vspace{.35cm}
+\begin{block}{Entrega}
+Nombre: \texttt{Brief\_NombreDelDespacho\_Semana7}. Ubicación: carpeta Compartida/Archivos del canal del equipo en Teams. Esta versión será la base de la propuesta profesional de la semana 8.
+\end{block}
+\alert{Pendiente auténtico:} el equipo debe confirmar nombre, integrantes, funciones y especialidades antes de declarar concluida la versión colaborativa.
+\end{frame}
+
+\begin{frame}{Referencias y transparencia}
+\scriptsize
+\begin{thebibliography}{9}
+\bibitem{camaraDiputados2025lfpdppp} Cámara de Diputados del H. Congreso de la Unión. (2025). \textit{Ley Federal de Protección de Datos Personales en Posesión de los Particulares}.
+\bibitem{conocer2025ec0554} CONOCER. (2025). \textit{EC0554.01: Trabajo en equipo}.
+\bibitem{cushpa2022pacie} Cushpa Inchiglema, R. C. (2022). \textit{Metodología PACIE en el interaprendizaje de la asignatura TICS} [Tesis de maestría, PUCE].
+\bibitem{lopezMartinez2022trabajoCooperativo} López Martínez, A. (2022). Trabajo cooperativo. En \textit{100 técnicas didácticas de enseñanza y aprendizaje. Fascículo 1} (pp. 221--230). UnADM.
+\bibitem{pech2016manual} Pech Salvador, C. E., Rizo García, M. y Romeu Aldaya, V. (2016). \textit{Manual de comunicación intercultural} (2.ª ed.). UACM.
+\bibitem{zambranoPilay2020tecnologias} Zambrano-Pilay, E., Chiriboga-Dávalos, J. y Chiriboga-Mendoza, F. (2020). Tecnologías educativas para el interaprendizaje. \textit{Yachasun, 4}(7), 200--216. \href{https://doi.org/10.46296/yc.v4i7.0043}{doi:10.46296/yc.v4i7.0043}.
+\end{thebibliography}
+\vfill
+\textbf{Declaración de apoyo de IA.} Se utilizó una herramienta de inteligencia artificial para organizar información, revisar redacción y apoyar el diseño. Las fuentes fueron verificadas y el contenido queda sujeto a revisión, discusión y validación del equipo.
+\end{frame}
+
 \end{document}
