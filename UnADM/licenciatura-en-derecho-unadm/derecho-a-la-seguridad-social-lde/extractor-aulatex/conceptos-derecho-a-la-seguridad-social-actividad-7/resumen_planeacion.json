@@ -1,0 +1,27 @@
+{
+  "tema": "Seguros del régimen obligatorio del ISSSTE",
+  "objetivo": "Identificar las contingencias que cubren los diversos seguros del ISSSTE en su esquema obligatorio.",
+  "tecnica_didactica": "Cuadro sinóptico",
+  "actividad": "Cuadro sinóptico sobre los seguros del ISSSTE.",
+  "aprendizajes": [
+    "Distinguir los cuatro seguros obligatorios de las prestaciones y servicios.",
+    "Relacionar contingencias, cobertura, sujetos protegidos y fundamento legal."
+  ],
+  "criterios_entrega": [
+    "Concepto de seguro o rama con naturaleza y contenido.",
+    "Listado completo de los cuatro seguros obligatorios.",
+    "Cobertura general de cada seguro.",
+    "Sustento legal básico de cada seguro.",
+    "Citas y referencias APA, redacción y ortografía."
+  ],
+  "conceptos_explicitos": [
+    "Régimen obligatorio del ISSSTE",
+    "Seguro de salud",
+    "Seguro de riesgos del trabajo",
+    "Seguro de retiro, cesantía en edad avanzada y vejez",
+    "Seguro de invalidez y vida",
+    "Prestaciones y servicios obligatorios"
+  ],
+  "verbos_operativos": ["identificar", "distinguir", "relacionar", "sintetizar"],
+  "fuente_planeacion": "Planificacion de actividades S7 - Derecho a la seguridad social.pdf"
+}

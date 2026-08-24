@@ -1,0 +1,32 @@
+[
+  {
+    "concepto": "Régimen obligatorio del ISSSTE",
+    "idea_base": "El artículo 3 de la LISSSTE establece cuatro seguros obligatorios.",
+    "fuente": "Ley del ISSSTE",
+    "ubicacion": "art. 3"
+  },
+  {
+    "concepto": "Seguro de salud",
+    "idea_base": "Protege, promueve y restaura la salud mediante atención preventiva, curativa, de maternidad y rehabilitación.",
+    "fuente": "Ley del ISSSTE",
+    "ubicacion": "arts. 27-43"
+  },
+  {
+    "concepto": "Seguro de riesgos del trabajo",
+    "idea_base": "Atiende accidentes y enfermedades vinculados con el ejercicio o motivo del trabajo.",
+    "fuente": "Ley del ISSSTE",
+    "ubicacion": "arts. 55-75"
+  },
+  {
+    "concepto": "Seguro de retiro, cesantía y vejez",
+    "idea_base": "Protege la continuidad del ingreso ante el retiro o la salida laboral por edad.",
+    "fuente": "Ley del ISSSTE",
+    "ubicacion": "arts. 76-113"
+  },
+  {
+    "concepto": "Seguro de invalidez y vida",
+    "idea_base": "Cubre la inhabilitación ajena al trabajo y la muerte de la persona trabajadora o pensionada por invalidez.",
+    "fuente": "Ley del ISSSTE",
+    "ubicacion": "arts. 114-140"
+  }
+]

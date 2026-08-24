@@ -1,79 +1,167 @@
-\documentclass[12pt,aspectratio=169]{beamer}
+% AulaTeX - Actividad 7 construida desde la planeacion S7 y sus referencias.
+% Tecnica didactica (catalogo UnADM): cuadro sinoptico jerarquico en TikZ.
+% Contrato visible: tema central -> cuatro seguros -> contingencia, cobertura/sujetos y fundamento.
+% Nivel cognitivo: sintetizar. Rubrica: 5 criterios, meta 20/20 (100/100).
+\documentclass[12pt,letterpaper,oneside]{article}
+\usepackage[margin=2.35cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[spanish]{babel}
-\usepackage{graphicx}
-\usepackage{helvet}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
 \renewcommand{\familydefault}{\sfdefault}
-\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{float}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,shapes.geometric}
+\usepackage{hyperref}
+\usepackage[authoryear,round]{natbib}
 
 \definecolor{unadmGreenDark}{HTML}{174A3A}
 \definecolor{unadmGreen}{HTML}{5F8F3A}
 \definecolor{unadmGold}{HTML}{B88A2A}
 \definecolor{unadmPaper}{HTML}{F6F7F2}
 \definecolor{unadmInk}{HTML}{1F2A24}
-
-\usetheme{Madrid}
-\setbeamercolor{structure}{fg=unadmGreenDark}
-\setbeamercolor{frametitle}{fg=white,bg=unadmGreenDark}
-\setbeamercolor{title}{fg=white,bg=unadmGreenDark}
-\setbeamercolor{normal text}{fg=unadmInk,bg=white}
-
-\title[Seguros ISSSTE]{Seguros del r\'egimen obligatorio del ISSSTE}
-\subtitle{Contingencias, cobertura y sustento legal}
-\author{Martin Jonathan de la Cruz}
-\institute{Universidad Abierta y a Distancia de M\'exico\\Licenciatura en Derecho}
-\date{23 de agosto de 2026}
+\definecolor{unadmRowAlt}{HTML}{EDF1E7}
+\hypersetup{colorlinks=true,linkcolor=unadmGreenDark,citecolor=unadmGreenDark,urlcolor=unadmGreenDark}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.72em}
+\onehalfspacing
+\bibliographystyle{plainnat}
+\newcommand{\documenttitle}{Seguros del r\'egimen obligatorio del ISSSTE}
+\newcommand{\documentsubtitle}{Contingencias, cobertura, sujetos protegidos y sustento legal}
+\newcommand{\documentsubject}{Actividad 7 - Derecho a la Seguridad Social}
 
 \begin{document}
 
-\begin{frame}
-  \titlepage
-\end{frame}
+\begin{titlepage}
+  \pagecolor{unadmPaper}
+  \color{unadmInk}
+  \begin{center}
+    \vspace*{0.8cm}
+    \includegraphics[height=2.05cm]{img/departamentos/UnADM.pdf}\\[0.7cm]
+    {\Large Universidad Abierta y a Distancia de M\'exico}\\[0.2cm]
+    {\large Licenciatura en Derecho}\\[1.2cm]
+    {\color{unadmGreenDark}\rule{0.82\linewidth}{1.4pt}}\\[0.55cm]
+    {\Huge\bfseries \documenttitle\par}
+    \vspace{0.35cm}
+    {\Large \documentsubtitle\par}
+    \vspace{0.15cm}
+    {\large \documentsubject\par}
+    \vspace{0.45cm}
+    {\color{unadmGold}\rule{0.62\linewidth}{1.1pt}}\\[1.1cm]
+    \begin{tabular}{rl}
+      \textbf{Alumno:} & Martin Jonathan de la Cruz \\
+      \textbf{Matr\'icula:} & ES2611202040 \\
+      \textbf{Figura docente:} & Cristian Ortega Barrera \\
+      \textbf{Materia:} & Derecho a la Seguridad Social \\
+      \textbf{Semestre/Bloque:} & 2 / 1 \\
+      \textbf{Unidad tem\'atica:} & Instituto de Seguridad y Servicios Sociales \\
+      \textbf{Fecha de entrega:} & 23 de agosto de 2026
+    \end{tabular}
+    \vfill
+    {\small Roma Norte, Ciudad de M\'exico}
+  \end{center}
+  \nopagecolor
+\end{titlepage}
 
-\begin{frame}{Prop\'osito de la actividad}
+\tableofcontents
+\clearpage
+
+\section{Introducci\'on}
+
+El derecho a la seguridad social de las personas trabajadoras al servicio del Estado encuentra su fundamento en el art\'iculo~123, apartado~B, fracci\'on~XI, de la Constituci\'on Pol\'itica de los Estados Unidos Mexicanos. La Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (LISSSTE) desarrolla ese mandato mediante dos reg\'imenes, obligatorio y voluntario, y encomienda al ISSSTE la administraci\'on de seguros, prestaciones y servicios para la poblaci\'on derechohabiente \citep{cpeum2026,lissste2026}. Como organismo descentralizado con personalidad jur\'idica y patrimonio propios, el Instituto articula la obligaci\'on estatal de proteger a quienes prestan sus servicios en el sector p\'ublico \citep{carrilloCastroIssste,gonzalezCarvallo2024}.
+
+La cuesti\'on central consiste en reconocer qu\'e contingencia activa cada rama protectora y cu\'al es su respuesta jur\'idica. Para resolverla, el cuadro sin\'optico ordena el r\'egimen obligatorio como tema central y despliega los cuatro seguros del art\'iculo~3 de la LISSSTE; bajo cada uno sintetiza riesgo, cobertura, sujetos y fundamento. Esta lectura evita una confusi\'on relevante: los pr\'estamos y los servicios sociales y culturales del art\'iculo~4 son obligatorios, pero pertenecen a una categor\'ia distinta y no aumentan el n\'umero de seguros \citep{lissste2026}.
+
+\section{Sistema protector del ISSSTE}
+
+\subsection{Naturaleza y contenido de una rama de seguro social}
+
+En el contexto del ISSSTE, un \textbf{seguro o rama} es una unidad jur\'idica de protecci\'on que agrupa contingencias sociales afines y enlaza su actualizaci\'on con prestaciones legalmente determinadas. Su \textbf{naturaleza} es p\'ublica, obligatoria y protectora porque surge del mandato constitucional y de la ley, no de la voluntad contractual individual. Su \textbf{contenido} comprende el riesgo cubierto, las personas protegidas, las prestaciones en especie o en dinero, los requisitos de acceso y el fundamento que permite exigirlas \citep{bricenoRuiz2011,ramirezChavero2009,lissste2026}.
+
+Los art\'iculos~2 y 3 de la LISSSTE distinguen los reg\'imenes y enumeran, de manera taxativa, cuatro seguros obligatorios: \textbf{salud}; \textbf{riesgos del trabajo}; \textbf{retiro, cesant\'ia en edad avanzada y vejez}; e \textbf{invalidez y vida}. La estructura responde a la causa de la necesidad protegida: enfermedad o maternidad; da\~no de origen laboral; salida del empleo por retiro o edad; e inhabilitaci\'on no profesional o muerte. La doctrina explica esta organizaci\'on como una t\'ecnica de distribuci\'on colectiva del riesgo orientada a asegurar continuidad material frente a contingencias que reducen la salud o los ingresos \citep{bricenoRuiz2011,ramirezChavero2009}.
+
+\subsection{Gu\'ia de lectura}
+
+La figura~\ref{fig:seguros-issste} se lee de arriba hacia abajo. El primer nivel identifica el r\'egimen obligatorio; el segundo contiene exactamente las cuatro ramas previstas por la ley; y el tercero resume, para cada una, tres dimensiones: \emph{contingencia}, \emph{cobertura y sujetos} y \emph{sustento legal}. Las flechas continuas expresan pertenencia y desarrollo jer\'arquico. La franja inferior separa las prestaciones y servicios del art\'iculo~4 para mostrar que complementan la protecci\'on institucional sin convertirse en seguros.
+
+\begin{landscape}
+\begin{figure}[H]
+  \centering
+  \resizebox{!}{0.76\textheight}{%
+    \begin{tikzpicture}[
+      nodo/.style={rectangle,draw=unadmGreenDark,rounded corners=2pt,align=center,text width=4.0cm,minimum height=9mm,inner sep=4pt,fill=unadmRowAlt,font=\small},
+      seguro/.style={nodo,text width=4.1cm,fill=unadmGreen!25,font=\bfseries\small},
+      raiz/.style={nodo,text width=5.0cm,fill=unadmGreenDark,text=white,font=\bfseries},
+      aparte/.style={nodo,text width=18.0cm,fill=unadmGold!18,draw=unadmGold,font=\small},
+      enlace/.style={-{Stealth[length=2mm]},thick,draw=unadmGreenDark},
+      separa/.style={-{Stealth[length=2mm]},dashed,thick,draw=unadmGold},
+      etiqueta/.style={font=\scriptsize,align=center,fill=white,inner sep=1pt}
+    ]
+      \node[raiz] (r) at (0,1.2) {R\'egimen obligatorio del ISSSTE\\arts.~2 y 3 LISSSTE};
+
+      \node[seguro] (s1) at (-8.1,-1.9) {1. Seguro de salud};
+      \node[seguro] (s2) at (-2.7,-1.9) {2. Seguro de riesgos del trabajo};
+      \node[seguro] (s3) at (2.7,-1.9) {3. Seguro de retiro, cesant\'ia en edad avanzada y vejez};
+      \node[seguro] (s4) at (8.1,-1.9) {4. Seguro de invalidez y vida};
+
+      \node[nodo,below=0.55cm of s1] (s1a) {\textbf{Contingencia}\\Enfermedad y maternidad; necesidad de prevenci\'on y recuperaci\'on};
+      \node[nodo,below=0.35cm of s1a] (s1b) {\textbf{Cobertura y sujetos}\\Atenci\'on preventiva, curativa, maternidad y rehabilitaci\'on para derechohabientes};
+      \node[nodo,below=0.35cm of s1b] (s1c) {\textbf{Fundamento}\\arts.~27--43 LISSSTE};
+
+      \node[nodo,below=0.55cm of s2] (s2a) {\textbf{Contingencia}\\Accidente o enfermedad en ejercicio o con motivo del trabajo};
+      \node[nodo,below=0.35cm of s2a] (s2b) {\textbf{Cobertura y sujetos}\\Atenci\'on, rehabilitaci\'on, licencia o pensi\'on para la persona trabajadora y beneficiarios};
+      \node[nodo,below=0.35cm of s2b] (s2c) {\textbf{Fundamento}\\arts.~55--75 LISSSTE};
+
+      \node[nodo,below=0.55cm of s3] (s3a) {\textbf{Contingencia}\\Retiro o privaci\'on del trabajo remunerado por cesant\'ia o vejez};
+      \node[nodo,below=0.35cm of s3a] (s3b) {\textbf{Cobertura y sujetos}\\Pensi\'on mediante renta vitalicia o retiros programados; cuenta individual del trabajador};
+      \node[nodo,below=0.35cm of s3b] (s3c) {\textbf{Fundamento}\\arts.~76--113 LISSSTE};
+
+      \node[nodo,below=0.55cm of s4] (s4a) {\textbf{Contingencia}\\Inhabilitaci\'on por causa ajena al trabajo o muerte};
+      \node[nodo,below=0.35cm of s4a] (s4b) {\textbf{Cobertura y sujetos}\\Pensi\'on por invalidez y pensiones para familiares derechohabientes};
+      \node[nodo,below=0.35cm of s4b] (s4c) {\textbf{Fundamento}\\arts.~114--140 LISSSTE};
+
+      \node[aparte] (p) at (0,-11.7) {\textbf{Categor\'ia distinta: prestaciones y servicios obligatorios (art.~4 LISSSTE).} Pr\'estamos hipotecarios y personales, servicios sociales y servicios culturales complementan la protecci\'on, pero no son seguros del art\'iculo~3.};
+
+      \foreach \x in {s1,s2,s3,s4}{\draw[enlace] (r) -- node[etiqueta,sloped,above]{comprende} (\x);}
+      \draw[enlace] (s1)--node[etiqueta,right]{cubre}(s1a); \draw[enlace](s1a)--node[etiqueta,right]{protege}(s1b); \draw[enlace](s1b)--node[etiqueta,right]{se sustenta}(s1c);
+      \draw[enlace] (s2)--node[etiqueta,right]{cubre}(s2a); \draw[enlace](s2a)--node[etiqueta,right]{protege}(s2b); \draw[enlace](s2b)--node[etiqueta,right]{se sustenta}(s2c);
+      \draw[enlace] (s3)--node[etiqueta,right]{cubre}(s3a); \draw[enlace](s3a)--node[etiqueta,right]{protege}(s3b); \draw[enlace](s3b)--node[etiqueta,right]{se sustenta}(s3c);
+      \draw[enlace] (s4)--node[etiqueta,right]{cubre}(s4a); \draw[enlace](s4a)--node[etiqueta,right]{protege}(s4b); \draw[enlace](s4b)--node[etiqueta,right]{se sustenta}(s4c);
+      \draw[separa] (r.south) to[bend right=82] node[etiqueta,left]{se distingue de} (p.west);
+    \end{tikzpicture}%
+  }\\[0.25cm]
+  {\footnotesize\textit{Figura 1. Cuadro sin\'optico (tipo diagrama) de los seguros del r\'egimen obligatorio del ISSSTE. Elaboraci\'on propia con base en los art\'iculos 2--4 y los cap\'itulos relativos de la LISSSTE \citep{lissste2026}.}}
+  \label{fig:seguros-issste}
+\end{figure}
+\end{landscape}
+
+\subsection{Lectura jur\'idica de las cuatro ramas}
+
 \begin{itemize}
-  \item Identificar los seguros del r\'egimen obligatorio del ISSSTE.
-  \item Relacionar cada seguro con la contingencia social que cubre.
-  \item Ubicar el fundamento legal principal en la LISSSTE.
-  \item Distinguir seguros de prestaciones y servicios.
-\end{itemize}
-\end{frame}
+  \item \textbf{Seguro de salud.} Su finalidad legal es proteger, promover y restaurar la salud de las personas derechohabientes. Integra atenci\'on m\'edica preventiva y curativa, maternidad y rehabilitaci\'on f\'isica y mental. La protecci\'on alcanza a la persona trabajadora o pensionada y a sus familiares derechohabientes conforme a los supuestos legales; su regulaci\'on se concentra en los art\'iculos~27 a 43 de la LISSSTE \citep{lissste2026,isssteSitio2026}.
 
-\begin{frame}{Fundamento constitucional y legal}
-\tiny
-\begin{itemize}
-  \item \textbf{Constituci\'on, art\'iculo 123, apartado B, fracci\'on XI:} prev\'e que la seguridad social cubrir\'a ``los accidentes y enfermedades profesionales; las enfermedades no profesionales y maternidad; y la jubilaci\'on, la invalidez, vejez y muerte''.
-  \item \textbf{LISSSTE, art\'iculo 2:} precisa la estructura general: ``La seguridad social de los Trabajadores comprende: I. El r\'egimen obligatorio, y II. El r\'egimen voluntario''.
-  \item \textbf{LISSSTE, art\'iculo 3:} dispone: ``Se establecen con car\'acter obligatorio los siguientes seguros: I. De salud; II. De riesgos del trabajo; III. De retiro, cesant\'ia en edad avanzada y vejez, y IV. De invalidez y vida''.
-  \item \textbf{LISSSTE, art\'iculo 4:} al establecer ``prestaciones y servicios'' obligatorios, regula una categor\'ia distinta; por tanto, el an\'alisis debe separar seguros, prestaciones y servicios.
-\end{itemize}
-\end{frame}
+  \item \textbf{Seguro de riesgos del trabajo.} Cubre accidentes y enfermedades vinculados con el ejercicio o motivo del trabajo, incluidos los trayectos reconocidos por la ley. La contingencia puede generar incapacidad temporal, parcial o total, muerte o desaparici\'on derivada de un acto delictivo. Para la persona trabajadora contempla diagn\'ostico, atenci\'on m\'edica, rehabilitaci\'on, licencia o pensi\'on; ante el fallecimiento, protege a familiares derechohabientes. Su base se encuentra en los art\'iculos~55 a 75 \citep{lissste2026}.
 
-\begin{frame}{Seguros del art\'iculo 3 de la LISSSTE}
-\begin{enumerate}
-  \item Seguro de salud.
-  \item Seguro de riesgos del trabajo.
-  \item Seguro de retiro, cesant\'ia en edad avanzada y vejez.
-  \item Seguro de invalidez y vida.
-\end{enumerate}
-\end{frame}
+  \item \textbf{Seguro de retiro, cesant\'ia en edad avanzada y vejez.} Protege la salida del trabajo remunerado por retiro o edad y se articula mediante la cuenta individual de la persona trabajadora. En los supuestos y con los periodos de cotizaci\'on previstos por la ley, la pensi\'on puede cubrirse mediante renta vitalicia o retiros programados; tambi\'en se preservan derechos para beneficiarios cuando corresponda. Sus reglas b\'asicas se ubican en los art\'iculos~76 a 113 \citep{lissste2026,ramirezChavero2009}.
 
-\begin{frame}{Contingencias protegidas}
-\begin{itemize}
-  \item \textbf{Salud:} enfermedad, maternidad, prevenci\'on, atenci\'on curativa y rehabilitaci\'on.
-  \item \textbf{Riesgos del trabajo:} accidentes y enfermedades derivados del trabajo.
-  \item \textbf{Retiro, cesant\'ia y vejez:} salida del empleo por edad y retiro.
-  \item \textbf{Invalidez y vida:} inhabilitaci\'on ajena al trabajo y muerte.
+  \item \textbf{Seguro de invalidez y vida.} Cubre la inhabilitaci\'on f\'isica o mental de la persona trabajadora por causas ajenas al empleo y la muerte de la persona trabajadora o pensionada por invalidez. Comprende pensi\'on temporal o definitiva y, en caso de muerte, pensiones para familiares derechohabientes conforme al orden legal. Se regula en los art\'iculos~114 a 140 \citep{lissste2026,bricenoRuiz2011}.
 \end{itemize}
-\end{frame}
 
-\begin{frame}{Conclusi\'on}
-\begin{itemize}
-  \item El ISSSTE organiza la protecci\'on social mediante ramas jur\'idicas especializadas.
-  \item Cada seguro vincula una contingencia con prestaciones concretas.
-  \item La distinci\'on entre seguros y servicios permite interpretar correctamente la LISSSTE.
-\end{itemize}
-\end{frame}
+La clasificaci\'on permite seguir una ruta de aplicaci\'on: identificar primero si el hecho deriva o no del trabajo; despu\'es determinar si afecta salud, capacidad, vida o continuidad del ingreso; finalmente, ubicar la prestaci\'on y comprobar sus requisitos en el cap\'itulo legal correspondiente. As\'i, el art\'iculo~3 funciona como puerta de entrada al sistema, mientras los cap\'itulos especiales precisan el alcance de cada protecci\'on \citep{lissste2026,carrilloCastroIssste}.
+
+\clearpage
+\section{Conclusiones}
+
+El r\'egimen obligatorio del ISSSTE se integra por cuatro seguros y no por la totalidad de beneficios que administra el Instituto. Salud responde a enfermedad, maternidad y necesidades de prevenci\'on o rehabilitaci\'on; riesgos del trabajo atiende da\~nos de origen laboral; retiro, cesant\'ia y vejez protege la continuidad del ingreso ante la salida laboral por edad; e invalidez y vida cubre la inhabilitaci\'on no profesional y la muerte. En todos los casos, la contingencia, las personas protegidas y las prestaciones dependen de condiciones establecidas por la LISSSTE. Por tanto, clasificar correctamente el hecho es indispensable antes de solicitar una prestaci\'on.
+
+A mi juicio, esta organizaci\'on jer\'arquica tiene utilidad profesional porque evita seleccionar una v\'ia de protecci\'on solo por el nombre de una prestaci\'on. Sostengo que la decisi\'on jur\'idica correcta debe partir del origen de la contingencia, vincularla con uno de los cuatro seguros y verificar despu\'es requisitos y beneficiarios en la disposici\'on aplicable. En consecuencia, esta secuencia reduce errores como tratar un pr\'estamo o un servicio cultural como seguro y permite orientar con mayor precisi\'on a una persona derechohabiente. Adem\'as, conserva la diferencia entre la enumeraci\'on general del art\'iculo~3 y las reglas especiales de cada cap\'itulo. La s\'intesis fue revisada con apoyo tecnol\'ogico sin sustituir el an\'alisis jur\'idico propio.\footnote{Declaraci\'on de uso de inteligencia artificial: se emple\'o asistencia de IA para organizar la jerarqu\'ia del cuadro, contrastar consistencia interna y depurar la redacci\'on. El autor verific\'o las fuentes, los preceptos legales y la versi\'on final conforme a los lineamientos de uso \'etico y responsable de la IA de la UnADM.}
+
+\clearpage
+\nocite{cpeum2026,lissste2026,bricenoRuiz2011,ramirezChavero2009,carrilloCastroIssste,gonzalezCarvallo2024,isssteSitio2026}
+\bibliography{derecho-a-la-seguridad-social}
 
 \end{document}
