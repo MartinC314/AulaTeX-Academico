@@ -1343,9 +1343,7 @@
           "has_memory": false
         }
       ],
-      "novelty_signals": [
-        "institutional_identity"
-      ],
+      "novelty_signals": [],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -1377,7 +1375,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260823-220843",
+      "run_id": "20260823-222855",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
@@ -1389,7 +1387,7 @@
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-3",
         "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4"
       ],
-      "novelty_count": 1
+      "novelty_count": 0
     }
   },
   "curricular_context": {
@@ -1760,7 +1758,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260823-220843",
+          "run_id": "20260823-222855",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-1",
@@ -1772,7 +1770,7 @@
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-3",
             "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde/actividad-4"
           ],
-          "novelty_count": 1
+          "novelty_count": 0
         }
       },
       "curricular_context": {
