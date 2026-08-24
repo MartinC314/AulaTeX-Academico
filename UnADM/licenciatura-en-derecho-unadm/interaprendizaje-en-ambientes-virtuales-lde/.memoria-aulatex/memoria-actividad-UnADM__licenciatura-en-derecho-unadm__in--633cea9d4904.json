@@ -91,7 +91,11 @@
     "Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
     "Interaprendizajes entre indígenas. Tomos I y II :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
     "Manual de comunicación intercultural :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib"
+    "Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "El proceso de interaprendizaje en la carrera de derecho :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Ley Federal de Protección de Datos Personales en Posesión de los Particulares :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Trabajo cooperativo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Declaración y Programa de Acción de Durban :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
   ],
   "section_titles": [
     "Encuadre de la asignatura",
@@ -152,14 +156,18 @@
     "escjn2020protocolo :: Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
     "bertely2013interaprendizajes :: Interaprendizajes entre indígenas. Tomos I y II :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
     "pech2017manual :: Manual de comunicación intercultural :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "unesco1998 :: Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib"
+    "unesco1998 :: Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+    "cangasOna2020interaprendizaje :: El proceso de interaprendizaje en la carrera de derecho :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "camaraDiputados2025lfpdppp :: Ley Federal de Protección de Datos Personales en Posesión de los Particulares :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "lopezMartinez2022trabajoCooperativo :: Trabajo cooperativo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "onu2001durban :: Declaración y Programa de Acción de Durban :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
   ],
   "node_metadata": {
     "editing_details": {
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 6 - interaprendizaje-en-ambientes-virtuales-lde",
+        "subject_rule": "Actividad 7 - interaprendizaje-en-ambientes-virtuales-lde",
         "scope_label": "Actividad 3"
       },
       "didactic_contract": {
@@ -315,7 +323,7 @@
         "career": "licenciatura-en-derecho-unadm",
         "subject": "interaprendizaje-en-ambientes-virtuales-lde",
         "activity": "Actividad 3",
-        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde"
+        "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-7"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -377,11 +385,7 @@
           "has_memory": false
         }
       ],
-      "novelty_signals": [
-        "heading_contract",
-        "didactic_contract",
-        "institutional_identity"
-      ],
+      "novelty_signals": [],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -400,7 +404,7 @@
           "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
           "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-1.tex",
           "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-2.tex",
-          "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex"
+          "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-6.tex"
         ]
       },
       "confidence": {
@@ -413,7 +417,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260816-193208",
+      "run_id": "20260823-213308",
       "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-3",
       "related_scope_keys": [
         "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-3",
@@ -425,7 +429,7 @@
         "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-2",
         "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-4"
       ],
-      "novelty_count": 3
+      "novelty_count": 0
     },
     "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-3",
     "level": "actividad",
@@ -472,7 +476,7 @@
           "heading_contract": {
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-            "subject_rule": "Actividad 6 - interaprendizaje-en-ambientes-virtuales-lde",
+            "subject_rule": "Actividad 7 - interaprendizaje-en-ambientes-virtuales-lde",
             "scope_label": "Actividad 3"
           },
           "didactic_contract": {
@@ -693,7 +697,7 @@
             "career": "licenciatura-en-derecho-unadm",
             "subject": "interaprendizaje-en-ambientes-virtuales-lde",
             "activity": "Actividad 3",
-            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde"
+            "seed_scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-7"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -756,7 +760,8 @@
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-1.tex",
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-2.tex",
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex",
-              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib"
+              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-6.tex"
             ]
           },
           "confidence": {
@@ -769,7 +774,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260816-193208",
+          "run_id": "20260823-213308",
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-3",
           "related_scope_keys": [
             "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-3",
@@ -781,7 +786,7 @@
             "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-2",
             "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-4"
           ],
-          "novelty_count": 3
+          "novelty_count": 0
         },
         "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-3",
         "level": "actividad",
@@ -908,7 +913,8 @@
     "reinforcement_log": [
       "ADN sintetizado con 21 conceptos, 9 citas y 5 relaciones.",
       "Memoria de redacción preservada en 41 bloques.",
-      "ADN sintetizado con 40 conceptos, 9 citas y 5 relaciones."
+      "ADN sintetizado con 40 conceptos, 9 citas y 5 relaciones.",
+      "ADN sintetizado con 44 conceptos, 9 citas y 5 relaciones."
     ],
     "knowledge_graph": {
       "concepts": [
@@ -951,7 +957,11 @@
         "Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
         "Interaprendizajes entre indígenas. Tomos I y II :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
         "Manual de comunicación intercultural :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib"
+        "Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "El proceso de interaprendizaje en la carrera de derecho :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Ley Federal de Protección de Datos Personales en Posesión de los Particulares :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Trabajo cooperativo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Declaración y Programa de Acción de Durban :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
       ],
       "citations": [
         "vygotsky1978mind",
@@ -1006,7 +1016,11 @@
         "bertely2013interaprendizajes :: Interaprendizajes entre indígenas. Tomos I y II :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
         "pech2017manual :: Manual de comunicación intercultural :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
         "unesco1998 :: Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib"
+        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
+        "cangasOna2020interaprendizaje :: El proceso de interaprendizaje en la carrera de derecho :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "camaraDiputados2025lfpdppp :: Ley Federal de Protección de Datos Personales en Posesión de los Particulares :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "lopezMartinez2022trabajoCooperativo :: Trabajo cooperativo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "onu2001durban :: Declaración y Programa de Acción de Durban :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
       ],
       "relations": [
         {
@@ -11668,7 +11682,7 @@
         "year": "1998",
         "url": "https://unesdoc.unesco.org/ark:/48223/pf0000113878_spa",
         "note": "Normatividad internacional relacionada con la asignatura",
-        "raw_entry": "@misc{unesco1998declaracion,\n  author = {{UNESCO}},\n  title = {Declaración mundial sobre la educación superior en el siglo XXI: Visión y acción},\n  year = {1998},\n  howpublished = {\\url{https://unesdoc.unesco.org/ark:/48223/pf0000113878_spa}},\n  note = {Normatividad internacional relacionada con la asignatura}\n}"
+        "raw_entry": "@misc{unesco1998declaracion,\n  author = {{UNESCO}},\n  title = {Declaración mundial sobre la educación superior en el siglo XXI: Visión y acción},\n  year = {1998},\n  howpublished = {\\url{https://unesdoc.unesco.org/ark:/48223/pf0000113878_spa}},\n  note = {Normatividad internacional relacionada con la asignatura}\n}\n\n% --- Materiales de la Semana 7 (Actividad 7: Brief profesional) ---"
       },
       "zambrano2020tecnologias": {
         "key": "zambrano2020tecnologias",
@@ -11781,6 +11795,55 @@
         "publisher": "UNESCO",
         "note": "Conferencia Mundial sobre Educación Superior. París, 5-9 de octubre de 1998",
         "raw_entry": "@misc{unesco1998,\n  author       = {{UNESCO}},\n  year         = {1998},\n  title        = {Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción},\n  publisher    = {UNESCO},\n  note         = {Conferencia Mundial sobre Educación Superior. París, 5-9 de octubre de 1998}\n}"
+      },
+      "cangasOna2020interaprendizaje": {
+        "key": "cangasOna2020interaprendizaje",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "article",
+        "title": "El proceso de interaprendizaje en la carrera de derecho",
+        "author": "Cangas-Oña, Lola Ximena and Viteri-Naranjo, Beatriz del Carmen and Cangas-Oña, Verónica Elizabeth",
+        "year": "2020",
+        "journal": "Dominio de las Ciencias",
+        "url": "https://dominiodelasciencias.com/ojs/index.php/es/article/view/1348",
+        "note": "Bibliografía complementaria de la semana 7; metadatos verificados en el sitio de la revista",
+        "raw_entry": "@article{cangasOna2020interaprendizaje,\n  author = {Cangas-Oña, Lola Ximena and Viteri-Naranjo, Beatriz del Carmen and Cangas-Oña, Verónica Elizabeth},\n  title = {El proceso de interaprendizaje en la carrera de derecho},\n  journal = {Dominio de las Ciencias},\n  volume = {6},\n  number = {1},\n  pages = {109--128},\n  year = {2020},\n  doi = {10.23857/dc.v6i1.1348},\n  url = {https://dominiodelasciencias.com/ojs/index.php/es/article/view/1348},\n  note = {Bibliografía complementaria de la semana 7; metadatos verificados en el sitio de la revista}\n}"
+      },
+      "camaraDiputados2025lfpdppp": {
+        "key": "camaraDiputados2025lfpdppp",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "misc",
+        "title": "Ley Federal de Protección de Datos Personales en Posesión de los Particulares",
+        "author": "Cámara de Diputados del H. Congreso de la Unión",
+        "year": "2025",
+        "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf",
+        "note": "Texto oficial publicado el 20 de marzo de 2025; copia local para la semana 7",
+        "raw_entry": "@misc{camaraDiputados2025lfpdppp,\n  author = {{Cámara de Diputados del H. Congreso de la Unión}},\n  title = {Ley Federal de Protección de Datos Personales en Posesión de los Particulares},\n  year = {2025},\n  howpublished = {\\url{https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf}},\n  note = {Texto oficial publicado el 20 de marzo de 2025; copia local para la semana 7}\n}"
+      },
+      "lopezMartinez2022trabajoCooperativo": {
+        "key": "lopezMartinez2022trabajoCooperativo",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "incollection",
+        "title": "Trabajo cooperativo",
+        "author": "López Martínez, Armando",
+        "year": "2022",
+        "publisher": "Universidad Abierta y a Distancia de México",
+        "note": "Técnica 57; copia local en el directorio de libros de la asignatura",
+        "raw_entry": "@incollection{lopezMartinez2022trabajoCooperativo,\n  author = {López Martínez, Armando},\n  title = {Trabajo cooperativo},\n  booktitle = {100 Técnicas Didácticas de Enseñanza y Aprendizaje. Fascículo 1},\n  year = {2022},\n  publisher = {Universidad Abierta y a Distancia de México},\n  pages = {221--230},\n  note = {Técnica 57; copia local en el directorio de libros de la asignatura}\n}"
+      },
+      "onu2001durban": {
+        "key": "onu2001durban",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "misc",
+        "title": "Declaración y Programa de Acción de Durban",
+        "author": "Naciones Unidas",
+        "year": "2001",
+        "url": "https://www.un.org/es/events/pastevents/cmcr/durban_sp.pdf",
+        "note": "Conferencia Mundial contra el Racismo, la Discriminación Racial, la Xenofobia y las Formas Conexas de Intolerancia; copia local",
+        "raw_entry": "@misc{onu2001durban,\n  author = {{Naciones Unidas}},\n  title = {Declaración y Programa de Acción de Durban},\n  year = {2001},\n  howpublished = {\\url{https://www.un.org/es/events/pastevents/cmcr/durban_sp.pdf}},\n  note = {Conferencia Mundial contra el Racismo, la Discriminación Racial, la Xenofobia y las Formas Conexas de Intolerancia; copia local}\n}"
       }
     }
   },

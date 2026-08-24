@@ -8,27 +8,26 @@
   "bibliography_rules": [],
   "propagation_hints": [],
   "open_questions": [],
-  "artifact_name": "",
+  "artifact_name": "presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-7",
   "sources": [
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/README.md",
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/programa-analitico-interaprendizaje-en-ambientes-virtuales.md",
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales.tex",
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex",
-    "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib"
+    "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-7.tex"
   ],
-  "artifact_types": [],
-  "supported_artifact_types": [
-    "reporte",
+  "artifact_types": [
     "presentacion"
   ],
+  "supported_artifact_types": [],
   "source_documents": [
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/README.md",
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/programa-analitico-interaprendizaje-en-ambientes-virtuales.md",
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales.tex",
     "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex",
-    "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib"
+    "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-7.tex"
   ],
   "source_fragments": [
     "# Interaprendizaje en ambientes virtuales",
@@ -67,9 +66,9 @@
     "Manual de comunicación intercultural: Una introducción a sus conceptos, teorías y aplicaciones :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "Protocolo para juzgar con perspectiva intercultural: Personas, pueblos y comunidades indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "Construcción de espacios interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-    "Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "Metodología PACIE en el interaprendizaje de la asignatura TICS del Instituto Superior Riobamba :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "Metodologías activas en el interaprendizaje de educación básica superior en los estudiantes de la Unidad Educativa José Rodríguez Labandera, área de estudios sociales, cantón Quevedo, provincia Los Ríos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "Didáctica universitaria en entornos virtuales de enseñanza-aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "El estudiante de entornos virtuales: Una primera aproximación :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
@@ -77,18 +76,6 @@
     "EC0554.01: Trabajo en equipo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "Sociedad bosquesina: Tomo I. Ensayo de antropología rural amazónica :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "Declaración mundial sobre la educación superior en el siglo XXI: Visión y acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-    "Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "Didáctica universitaria en entornos virtuales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "Metodología PACIE en el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "Metodologías activas en el interaprendizaje virtual :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "Estudio de caso. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "Convenio sobre Pueblos Indígenas y Tribales en Países Independientes (Convenio 169) :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "Interaprendizajes entre indígenas. Tomos I y II :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "Manual de comunicación intercultural :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
     "El proceso de interaprendizaje en la carrera de derecho :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "Ley Federal de Protección de Datos Personales en Posesión de los Particulares :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "Trabajo cooperativo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
@@ -124,9 +111,9 @@
     "pech2016manual :: Manual de comunicación intercultural: Una introducción a sus conceptos, teorías y aplicaciones :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "scjn2022protocolo :: Protocolo para juzgar con perspectiva intercultural: Personas, pueblos y comunidades indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "diazAlonso2011construccion :: Construcción de espacios interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-    "oit1691989 :: Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "cushpa2022pacie :: Metodología PACIE en el interaprendizaje de la asignatura TICS del Instituto Superior Riobamba :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "silva2015metodologias :: Metodologías activas en el interaprendizaje de educación básica superior en los estudiantes de la Unidad Educativa José Rodríguez Labandera, área de estudios sociales, cantón Quevedo, provincia Los Ríos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+    "oit1691989 :: Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "bautista2016didactica :: Didáctica universitaria en entornos virtuales de enseñanza-aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "borges2007estudiante :: El estudiante de entornos virtuales: Una primera aproximación :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "zambranoPilay2020tecnologias :: Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
@@ -134,18 +121,6 @@
     "conocer2025ec0554 :: EC0554.01: Trabajo en equipo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "gascheMendoza2012sociedad :: Sociedad bosquesina: Tomo I. Ensayo de antropología rural amazónica :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "unesco1998declaracion :: Declaración mundial sobre la educación superior en el siglo XXI: Visión y acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-    "zambrano2020tecnologias :: Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "bautista2016didactica :: Didáctica universitaria en entornos virtuales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "cushpa2022metodologia :: Metodología PACIE en el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "silva2015metodologias :: Metodologías activas en el interaprendizaje virtual :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "lopez2022estudio :: Estudio de caso. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "constitucion2026 :: Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "lgdl2003 :: Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "oit1989 :: Convenio sobre Pueblos Indígenas y Tribales en Países Independientes (Convenio 169) :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "escjn2020protocolo :: Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "bertely2013interaprendizajes :: Interaprendizajes entre indígenas. Tomos I y II :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "pech2017manual :: Manual de comunicación intercultural :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-    "unesco1998 :: Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
     "cangasOna2020interaprendizaje :: El proceso de interaprendizaje en la carrera de derecho :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "camaraDiputados2025lfpdppp :: Ley Federal de Protección de Datos Personales en Posesión de los Particulares :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
     "lopezMartinez2022trabajoCooperativo :: Trabajo cooperativo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
@@ -157,31 +132,30 @@
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
         "subject_rule": "Actividad 7 - interaprendizaje-en-ambientes-virtuales-lde",
-        "scope_label": "interaprendizaje-en-ambientes-virtuales-lde"
+        "scope_label": "Actividad 7"
       },
       "didactic_contract": {
-        "detected_id": "simulacion",
-        "catalogo_no": 18,
-        "nombre_oficial": "Simulación",
-        "nivel": "Construir",
-        "familia": "dramatizacion_simulacion",
+        "detected_id": "mapa_conceptual",
+        "catalogo_no": 13,
+        "nombre_oficial": "Mapa conceptual",
+        "nivel": "Sintetizar",
+        "familia": "visual_jerarquico",
         "aliases": [
-          "simulación",
-          "simulacion"
+          "mapa conceptual"
         ],
         "required_visible_elements": [
-          "escenario",
-          "variables",
-          "resultados"
+          "conceptos",
+          "relaciones",
+          "lectura explicativa"
         ],
-        "preservation_rule": "Si el producto solicitado es «Simulación», conservar su forma visible característica (escenario, variables, resultados) y su nivel cognitivo (Construir); no transformarlo en otro producto salvo que la consigna lo pida. Materializar por escrito: problema, roles, reglas, escena/dinámica, decisiones, resultados y reflexión.",
-        "preservation_rule_official": "Materializar «Simulación» siguiendo la estructura oficial UnADM: Para desarrollar un juego de roles, se sugieren los siguientes pasos:\n\n 1. Establecer un tema. Delimitar el asunto y sus posibles\n soluciones para orientar el desarrollo de la técnica.\n 2. Determinar los roles. Definir los personajes con características particulares, así como los contextos en los\n que actuarán y la problemática particular que atenderá cada uno de ellos.\n 3. Definir las reglas de c",
-        "structure_rule": "Tres actos. El guion/dinámica es el NÚCLEO del desarrollo: contexto antes, resultados y aprendizaje después.",
-        "three_act_gravity_rule": "",
-        "layout_rule": "Guion estructurado; tabla de roles/decisiones cuando aplique.",
-        "no_gap_rule": "",
-        "closure_rule": "Conclusión con \\clearpage, resultados y aprendizaje. Declaración de IA como \\footnote.",
-        "build_steps": "Para desarrollar un juego de roles, se sugieren los siguientes pasos:\n\n 1. Establecer un tema. Delimitar el asunto y sus posibles\n soluciones para orientar el desarrollo de la técnica.\n 2. Determinar los roles. Definir los personajes con características particulares, así como los contextos en los\n que actuarán y la problemática particular que atenderá cada uno de ellos.\n 3. Definir las reglas de convivencia. Compartir el tiempo\n de actuación, las restricciones escénicas y los roles que\n cada usuario interpretará.\n 4. Desarrollar la actividad. Llevar a cabo la técnica respetando los acuerdos. Se puede incluir el cambio de\n roles para que la actividad sea más enriquecedora y la\n perspectiva sea más amplia.\n 5. Finalizar. Cerrar la actividad dando paso a la retroalimentación. Se debe escuchar el punto de vista del\n grupo contrastando sus impresiones con los resultados\n obtenidos.\n 6. Dar soluciones. Concluir y reflexionar sobre los resultados obtenidos.\n\n\f Juego de roles",
+        "preservation_rule": "Si el producto solicitado es «Mapa conceptual», conservar su forma visible característica (conceptos, relaciones, lectura explicativa) y su nivel cognitivo (Sintetizar); no transformarlo en otro producto salvo que la consigna lo pida. Construir con TikZ jerárquico o radial. Jerarquizar del concepto raíz a subconceptos, con conectores etiquetados donde aplique. Escalar con \\resizebox para llenar la página sin desbordar; usar landscape si el ancho lo exige.",
+        "preservation_rule_official": "Materializar «Mapa conceptual» siguiendo la estructura oficial UnADM: Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contenga",
+        "structure_rule": "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. El mapa conceptual es el NÚCLEO del acto de desarrollo y todo gravita a su alrededor. Orden: (a) preparación conceptual-teórica que conduce al mapa, (b) el diagrama en su propia página landscape como pieza protagónica, (c) lectura y desarrollo de las ramas tras el diagrama.",
+        "three_act_gravity_rule": "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, mapa y análisis son subsecciones de una sola sección de desarrollo cuyo título nombra el tema. El producto (mapa conceptual) manda: el texto lo prepara antes y lo interpreta después.",
+        "layout_rule": "El diagrama va en su propia página (landscape si es ancho), con su caption. No dejar media página en blanco antes del diagrama: llenar con la guía de lectura o iniciar la sección con \\clearpage.",
+        "no_gap_rule": "PROHIBIDO dejar media página o más en blanco justo antes del diagrama landscape. Verificar con pdftoppm que no quede una página semivacía antes del mapa ni una página landscape vacía extra.",
+        "closure_rule": "La conclusión inicia con \\clearpage en su propia página y ocupa preferentemente una sola página; integra síntesis, análisis propio y postura personal. La declaración de uso de IA puede ligarse como \\footnote a una frase oportuna de la conclusión.",
+        "build_steps": "Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contengan los conceptos más significativos del tema y los que se puedan utilizar para\n ampliar los subtemas, como una aproximación al proceso de construcción. Se sugiere que no todos los conceptos se incorporen al mapa.\n3. Jerarquizar los conceptos. Ordenar los conceptos del\n más general o inclusivo, al más específico o menos\n inclusivo, y determinar los conceptos clave con los que\n se va a trabajar o explicar el tema. Definen los conceptos\n subordinados que se desagregarán de ellos y que se\n usarán para formar proposiciones o afirmaciones con\n el mismo nivel jerárquico.\n4. Establecer relaciones significativas. Explorar diversas relaciones entre los conceptos seleccionados, construyendo proposiciones del tipo concepto-palabras o\n enlace-concepto. Construir y reconstruir las proposiciones con diversas alternativas que permitan seleccionar los conceptos con facilidad para determinar cuál es\n la mejor jerarquización y organización.\n\n\f\n\n 5. Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los\n conceptos clave subordinados, cuidando que no sean\n más de cuatro. Una vez construido el mapa, valorar",
         "official_contract": {
           "fuente_oficial": {
             "fuentes": [
@@ -189,25 +163,36 @@
               "100tecnicasdidacticas.unadmexico.mx"
             ],
             "sitio": "100tecnicasdidacticas.unadmexico.mx",
-            "numero_web": 99,
-            "nombre_oficial_web": "Simulación"
+            "numero_web": 81,
+            "nombre_oficial_web": "Mapa conceptual"
           },
-          "official_definition": "La simulación es una recreación de sucesos reales en la que los participantes hacen uso de habilidades y destrezas para manejar la situación. Se puede emplear antes o después de la instrucción formal para tener una mejor comprensión del tema. Por ejemplo, una intervención quirúrgica, reacciones ante desastres naturales o prácticas de vuelo, entre otros.\n\nFortalece la toma de decisiones, la participación grupal, el desarrollo de competencias y el aprendizaje significativo.",
-          "official_what_is": "Es una técnica que se caracteriza por:\n\n ■■ Generar aprendizajes significativos.\n ■■ Buscar el cambio de actitudes frente a una situación.\n ■■ Representar una situación real mediante el juego.\n\n\f Juego de roles",
-          "official_structure": "El juego de roles tiene tres elementos esenciales:\n\n1. Planeación. Se trata de reconocer la temática que se\n presentará, así como la identificación de los participantes y los lineamientos de la técnica.\n2. Ejecución. Delimitar las reglas, así como la alternancia\n de la participación de cada personaje.\n3. Cierre. Brindar una valoración asertiva respecto al rol\n representado y compartir reflexiones finales.\n\n\f\n\n s\n erentes a los propio\n de roles dif\n Asignación\n\n el rol asignado\n Interacción temporal en\n\n Conclusión y re\n flexión para da\n r soluciones\n\n\f Juego de roles",
-          "official_utility": "El juego de roles tiene las siguientes funciones:\n\n■■ Fortalece la empatía, comprendiendo el comportamiento del personaje que se representa.\n■■ Ayuda a visualizar diferentes alternativas, valorar\n desde diferentes puntos de vista, reconocer los contextos e identificar las formas de pensar.\n■■ Ayuda a entender un tema desde diferentes ángulos y\n soluciones.",
-          "build_steps": "Para desarrollar un juego de roles, se sugieren los siguientes pasos:\n\n 1. Establecer un tema. Delimitar el asunto y sus posibles\n soluciones para orientar el desarrollo de la técnica.\n 2. Determinar los roles. Definir los personajes con características particulares, así como los contextos en los\n que actuarán y la problemática particular que atenderá cada uno de ellos.\n 3. Definir las reglas de convivencia. Compartir el tiempo\n de actuación, las restricciones escénicas y los roles que\n cada usuario interpretará.\n 4. Desarrollar la actividad. Llevar a cabo la técnica respetando los acuerdos. Se puede incluir el cambio de\n roles para que la actividad sea más enriquecedora y la\n perspectiva sea más amplia.\n 5. Finalizar. Cerrar la actividad dando paso a la retroalimentación. Se debe escuchar el punto de vista del\n grupo contrastando sus impresiones con los resultados\n obtenidos.\n 6. Dar soluciones. Concluir y reflexionar sobre los resultados obtenidos.\n\n\f Juego de roles",
-          "caveats": "…\n\nEl desarrollo del juego de roles implica:\n\n■■ Que cada personaje tenga características que lo distingan de los demás. Entre ellas, pueden ser las reacciones ante la problemática o aspectos físicos.\n■■ Incentivar la creatividad. Aunque es un punto importante para dar resoluciones creativas e innovadoras, se\n recomienda mantener claridad en el contexto en todo\n momento.\n■■ Establecer metas. Esto ayudará a que los usuarios establezcan soluciones concretas, estructuradas y factibles\n ante las situaciones planteadas.\n■■ Dejar claro en la retroalimentación final que las observaciones realizadas no son personales y que van dirigidas al personaje.",
-          "authorities": "…\n\n El juego de roles también es conocido de manera lúdica\n como juego de actores, el cual se establece así porque el\n usuario toma el papel de jugador en un proceso de simulación, para representar a actores de la realidad, constituyendo un conjunto de individuos que operan por empatía\n (Dosso, 2009, p.7)\n\n Para el Instituto Tecnológico y de Estudios Superiores de\n Monterrey (2010):\n\n esta técnica es útil para manejar aspectos o temas difíciles\n en los que es necesario tomar diferentes posiciones para su\n mejor comprensión. Consiste en la representación espontánea de una situación real o hipotética para mostrar un problema o información relevante a los contenidos del curso (párr. 1).\n\n Grande y Abella (2010) apoyan que “los juegos de rol\n suponen interpretar, experimentar en cierta forma otros\n papeles, otras experiencias y, por ello, pueden jugar una\n importante baza. Los jugadores pued",
-          "references_seed": "Blanco, A. (s. f.). Juegos de rol o situaciones para fomentar la interacción.\n ELEconele. https://eleinternacional.com/blog/juegos-de-rol-o-situacionespara-fomentar-la-interaccion/#:~:text=%C2%BFC%C3%B3mo%20se%20\n utiliza%20este%20juego,su%20idea%20es%20la%20mejor\nDosso, R. (2009). El juego de roles: una opción didáctica eficaz para la formación\n en política y planificación turística. Redalyc. Red de Revistas Científicas de\n América Latina, el Caribe, España y Portugal, 13(2), 11-28. https://www.redalyc.org/pdf/276/27621943002.pdf\nGrande, M. y Abella, V. (2010). Los juegos de rol en el aula. Revista Electrónica\n Teoría de la Educación. Educación y Cultura en la Sociedad de la\n Información, 11(3), 56-84. https://www.redalyc.org/pdf/2010/201021093004.\n pdf\nInstituto Tecnológico y de Estudios Superiores de Monterrey. (2010). Juego de\n roles. http://sitios.itesm.mx/va/dide2/tecnicas_didacticas/juego_roles.htm\n\n\f\f Práctica\ndistribuida\n\n Aplicar\n\f\n\n La",
-          "how_to_cite": "López, A. (2022). Simulación. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Construir. Universidad Abierta y a Distancia de México.\nhttps://100tecnicasdidacticas.unadmexico.mx/index.html\r\n\n Copiar cita al portapapeles",
-          "preservation_rule_official": "Materializar «Simulación» siguiendo la estructura oficial UnADM: Para desarrollar un juego de roles, se sugieren los siguientes pasos:\n\n 1. Establecer un tema. Delimitar el asunto y sus posibles\n soluciones para orientar el desarrollo de la técnica.\n 2. Determinar los roles. Definir los personajes con características particulares, así como los contextos en los\n que actuarán y la problemática particular que atenderá cada uno de ellos.\n 3. Definir las reglas de c"
+          "official_definition": "El mapa conceptual es un organizador gráfico que visibiliza las relaciones entre conceptos vinculados a un tema en particular. La relevancia de las ideas se establece por orden jerárquico de modo que se puede apreciar de lo más general a lo específico. Puede utilizarse como un instrumento de evaluación o como control de lectura de textos.\n\nFortalece la recuperación de la información, al organizarla con un sentido personal; la memoria, la reflexión, el pensamiento crítico y la creatividad.",
+          "official_what_is": "Es una representación gráfica que se caracteriza por:\n\n ■■ Organizar y representar esquemas de conocimiento.\n ■■ Mostrar las relaciones significativas y jerárquicas\n entre conceptos en forma de proposiciones.\n ■■ Formarse con dos o más conceptos unidos por palabras enlace que especifican la relación entre ellos.\n ■■ Emplear elipses o recuadros unidos por líneas para\n visualizar las interrelaciones entre los conceptos.\n ■■ Organizar la información en niveles de abstracción,\n por lo que su lectura comienza con el concepto de\n mayor jerarquía, al más general o inclusivo, y su secuencia está determinada por las líneas que los unen.\n\n\f Mapa conceptual",
+          "official_structure": "El mapa conceptual tiene tres elementos esenciales:\n\n1. Conceptos. Son el elemento central y la base para\n la construcción de significado. Son abstracciones o\n representaciones mentales que una persona hace de\n un objeto. Van encerrados en elipses, círculos o recuadros para distinguirse.\n2. Palabras enlace. Relacionan a dos conceptos y se\n representan con verbos. Junto con los conceptos se\n perciben como construcciones coherentes. Los conceptos y la palabras enlace se unen a través de líneas\n que funcionan como conectores.\n3. Preposiciones. Son el resultado de vincular dos conceptos con las palabras enlace.\n\n MAPA CONCEPTUAL\n\n Concepto\n\n Palabra enlace\n Concepto Concepto\n Concepto\n Palabra enlace Palabra enlace\n\n Concepto Concepto",
+          "official_utility": "El mapa conceptual tiene las siguientes funciones:\n\n ■■ Integra información interrelacionada para orientar la\n enseñanza de un tema o facilitar los aprendizajes con\n una estructura visual llamativa.\n ■■ Permite la identificación de conexiones entre diversos conceptos.\n\n\f Mapa conceptual",
+          "build_steps": "Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contengan los conceptos más significativos del tema y los que se puedan utilizar para\n ampliar los subtemas, como una aproximación al proceso de construcción. Se sugiere que no todos los conceptos se incorporen al mapa.\n3. Jerarquizar los conceptos. Ordenar los conceptos del\n más general o inclusivo, al más específico o menos\n inclusivo, y determinar los conceptos clave con los que\n se va a trabajar o explicar el tema. Definen los conceptos\n subordinados que se desagregarán de ellos y que se\n usarán para formar proposiciones o afirmaciones con\n el mismo nivel jerárquico.\n4. Establecer relaciones significativas. Explorar diversas relaciones entre los conceptos seleccionados, construyendo proposiciones del tipo concepto-palabras o\n enlace-concepto. Construir y reconstruir las proposiciones con diversas alternativas que permitan seleccionar los conceptos con facilidad para determinar cuál es\n la mejor jerarquización y organización.\n\n\f\n\n 5. Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los\n conceptos clave subordinados, cuidando que no sean\n más de cuatro. Una vez construido el mapa, valorar",
+          "caveats": "…\n\nLa elaboración de un mapa conceptual implica:\n\n■■ Comprender la relevancia de diversos conceptos, mostrando las relaciones entre cada uno de ellos.\n■■ Capacidad de análisis y abstracción entendiendo la\n relación conceptual.\n■■ Saber orientar los aprendizajes o, incluso, la enseñanza\n de un tema mediante la integración de información.\n■■ Desarrollar el pensamiento crítico, así como la capacidad reflexiva a través de la interpretación gráfica.\n■■ Recuperar y recordar conocimientos, así como plasmarlos de manera visual.\n■■ Identificar significados y facilitar los aprendizajes.\n■■ Organizar la información con sentido personal y explicar los conocimientos.",
+          "authorities": "…\n\n Aguilar (2006) afirma que “el mapa conceptual tiene por\n objeto representar las relaciones significativas entre conceptos. Los conceptos expresan regularidades entre objetos y acontecimientos” (p. 3).\n\n De acuerdo con Ontoria et al. (1992):\n\n Con los mapas conceptuales, el alumno llega a tener la conciencia del propio proceso; cognitivo o metacognición. Puesto\n que la codificación es uno de los componentes de las estrategias de aprendizaje, se pueden clasificar éstas según el criterio de niveles de procesamiento, que a su vez coincide con\n los enfoques de aprendizaje memorístico y significativo de\n Ausubel (p. 20).\n\n La Universidad Autónoma del Estado de Hidalgo (s. f.) refiere\n el mapa conceptual como técnica de aprendizaje que\n tiene atención y aceptación para favorecer el desarrollo\n de autoestima y puede ser utilizado en diferentes etapas\n del proceso de enseñanza y aprendizaje.",
+          "references_seed": "Aguilar, M. (2006). El mapa conceptual: una herramienta para aprender y enseñar. Plasticidad y Restauración Neurológica. 5(1), 7-17. https://www.medigraphic.com/pdfs/plasticidad/prn-2006/prn061b.pdf\nOntoria, A., Ballesteros, A., Cuevas, C., Giraldo, L., Martín, I., Molina, A., Rodríguez,\n A. y Vélez, U. (1992). Mapas conceptuales. Una técnica para aprender.\n Narcea. https://cursoderecho.files.wordpress.com/2010/08/mapas-conceptuales-2.pdf\nUniversidad Autónoma del Estado de Hidalgo. (s. f.). Mapa Conceptual. https://\n www.uaeh.edu.mx/docencia/VI_Lectura/educ_continua/curso_formador/\n LECT58.pdf\nUniversidad Estatal a Distancia. (s. f.). El mapa conceptual como estrategia\n didáctica para el aprendizaje. https://www.uned.ac.cr/academica/images/\n ceced/docs/Estaticos/Estrategia_Mapa_conceptual.pdf\n\n\f\f Panel\nde discusión\n\n Aplicar\n\f\n\n El",
+          "how_to_cite": "López, A. (2022). Mapa conceptual. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Sintetizar. Universidad Abierta y a Distancia de México.\nhttps://100tecnicasdidacticas.unadmexico.mx/index.html\r\n\n Copiar cita al portapapeles",
+          "preservation_rule_official": "Materializar «Mapa conceptual» siguiendo la estructura oficial UnADM: Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contenga"
         },
         "tikz_pattern": {
-          "packages": [],
-          "skeleton": "% Producto en prosa: sin TikZ salvo figuras.\n\\section{<Título temático (no 'Desarrollo')>}\n<Marco conceptual que prepara el producto, con \\citep{...}.>\n\\subsection{<Subtema 1>}<Análisis con fuentes.>\n\\subsection{<Subtema 2>}<Aplicación.>",
-          "rules": "Prosa con introducción (problema), desarrollo con fuentes y análisis, conclusión con postura, referencias APA 7. La voz convierte información en criterio.",
-          "materializacion": "Materializar por escrito: problema, roles, reglas, escena/dinámica, decisiones, resultados y reflexión."
+          "packages": [
+            "\\usepackage{tikz}",
+            "\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric}",
+            "\\usepackage{pdflscape}",
+            "\\usepackage{graphicx}"
+          ],
+          "skeleton": "% ARQUITECTURA MAPA CONCEPTUAL (reporte contenedor; el producto es el grafo):\n\\section{Introducci\\'on}\n% Plantea el problema conceptual y anuncia la logica del mapa. Sin metadiscurso.\n\n\\section{<titulo tematico del campo conceptual>}\n% Prosa que DEFINE los conceptos con \\textbf{} antes de graficarlos.\n\n\\begin{landscape}\n\\thispagestyle{empty}\n\\begingroup\\centering\n\\resizebox{!}{0.80\\textheight}{%\n\\begin{tikzpicture}[node distance=8mm and 14mm]\n  \\node[root] (raiz) {<CONCEPTO RAIZ>};\n  \\node[branch, below left=of raiz] (r1) {<Rama 1>};\n  \\draw[edge] (raiz) -- node[label] {<palabra enlace>} (r1);\n\\end{tikzpicture}}\n\\par\\medskip\n{\\small Figura 1. <Lectura breve del mapa>.}\n\\endgroup\n\\end{landscape}\n\\clearpage\\pagestyle{fancy}\n\n\\section{<titulo tematico de la lectura del mapa>}\n% Explica el recorrido: del centro a las hojas. No enumerar nodos.\n\n\\section{Conclusi\\'on}\n% Postura propia + nota al pie de declaracion de IA.\n",
+          "rules": "Raíz + 3-4 ramas + subconceptos apilados DEBAJO (below=) de cada rama; conectores con proposición de enlace; relaciones cruzadas entre ramas; escalar con \\resizebox{!}{0.80\\textheight} en landscape.",
+          "materializacion": "Construir con TikZ jerárquico o radial. Jerarquizar del concepto raíz a subconceptos, con conectores etiquetados donde aplique. Escalar con \\resizebox para llenar la página sin desbordar; usar landscape si el ancho lo exige.",
+          "source": "actividad_real",
+          "fuente_real": {
+            "materia": "Garantías Constitucionales y Redacción en Contextos Virtuales (UnADM, Licenciatura en Derecho)",
+            "actividad": "Garantías A3 (El Estado a través de la historia, 48 nodos) y Redacción A6 (autogestión del aprendizaje, 20 nodos)",
+            "nota": "Ambas compiladas y en 100/100. Coinciden en TikZ + landscape + resizebox + palabras enlace en todas las aristas."
+          }
         },
         "scoring_rubric": {
           "escala": "0-100",
@@ -239,53 +224,69 @@
           },
           "criterios_de_construccion_oficial": [
             {
-              "criterio": "Establecer un tema. Delimitar el asunto y sus posibles soluciones para orientar el desarrollo de la técnica.",
-              "peso": 4.17
+              "criterio": "Conceptualizar el mapa. Reconocer las relaciones que hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la posible estructura del mapa.",
+              "peso": 12.5
             },
             {
-              "criterio": "Determinar los roles. Definir los personajes con características particulares, así como los contextos en los que actuarán y la problemática particular que atenderá cada uno de ellos.",
-              "peso": 4.17
-            },
-            {
-              "criterio": "Definir las reglas de convivencia. Compartir el tiempo de actuación, las restricciones escénicas y los roles que cada usuario interpretará.",
-              "peso": 4.17
-            },
-            {
-              "criterio": "Desarrollar la actividad. Llevar a cabo la técnica respetando los acuerdos. Se puede incluir el cambio de roles para que la actividad sea más enriquecedora y la perspectiva sea más amplia.",
-              "peso": 4.17
-            },
-            {
-              "criterio": "Finalizar. Cerrar la actividad dando paso a la retroalimentación. Se debe escuchar el punto de vista del grupo contrastando sus impresiones con los resultados obtenidos.",
-              "peso": 4.17
-            },
-            {
-              "criterio": "Dar soluciones. Concluir y reflexionar sobre los resultados obtenidos. Juego de roles",
-              "peso": 4.17
+              "criterio": "Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los conceptos clave subordinados, cuidando que no sean más de cuatro. Una vez construido el mapa, valorar",
+              "peso": 12.5
             }
           ],
           "consideraciones_para_puntuar": [
-            "… El desarrollo del juego de roles implica: ■■ Que cada personaje tenga características que lo distingan de los demás.",
-            "Entre ellas, pueden ser las reacciones ante la problemática o aspectos físicos.",
-            "■■ Incentivar la creatividad.",
-            "Aunque es un punto importante para dar resoluciones creativas e innovadoras, se recomienda mantener claridad en el contexto en todo momento.",
-            "■■ Establecer metas.",
-            "Esto ayudará a que los usuarios establezcan soluciones concretas, estructuradas y factibles ante las situaciones planteadas.",
-            "■■ Dejar claro en la retroalimentación final que las observaciones realizadas no son personales y que van dirigidas al personaje."
+            "… La elaboración de un mapa conceptual implica: ■■ Comprender la relevancia de diversos conceptos, mostrando las relaciones entre cada uno de ellos.",
+            "■■ Capacidad de análisis y abstracción entendiendo la relación conceptual.",
+            "■■ Saber orientar los aprendizajes o, incluso, la enseñanza de un tema mediante la integración de información.",
+            "■■ Desarrollar el pensamiento crítico, así como la capacidad reflexiva a través de la interpretación gráfica.",
+            "■■ Recuperar y recordar conocimientos, así como plasmarlos de manera visual.",
+            "■■ Identificar significados y facilitar los aprendizajes.",
+            "■■ Organizar la información con sentido personal y explicar los conocimientos.",
+            "Todas las aristas llevan palabra enlace visible.",
+            "Existe una raíz única y la jerarquía tiene al menos tres niveles.",
+            "Los conceptos se definen en prosa ANTES de aparecer en el grafo.",
+            "El mapa cabe con su pie en una sola página apaisada.",
+            "Hay una sección posterior que LEE el mapa, no que lo enumera.",
+            "En contenido jurídico, las hojas citan el fundamento normativo exacto."
           ],
           "umbral_aprobacion": 100,
           "nota": "El producto puntúa por fidelidad a la técnica (forma oficial) + calidad editorial (tres actos, citas, postura)."
         },
         "construction_integration": {
-          "deteccion": "Aliases: simulación, simulacion.",
-          "producto_nucleo": "El producto es el núcleo del desarrollo: prepararlo antes e interpretarlo después.",
-          "estructura": "Tres actos. El guion/dinámica es el NÚCLEO del desarrollo: contexto antes, resultados y aprendizaje después.",
-          "layout": "Guion estructurado; tabla de roles/decisiones cuando aplique.",
-          "cierre": "Conclusión con \\clearpage, resultados y aprendizaje. Declaración de IA como \\footnote.",
-          "preservacion_oficial": "Materializar «Simulación» siguiendo la estructura oficial UnADM: Para desarrollar un juego de roles, se sugieren los siguientes pasos:\n\n 1. Establecer un tema. Delimitar el asunto y sus posibles\n soluciones para orientar el desarrollo de la técnica.\n 2. Determinar los roles. Definir los personajes con características particulares, así como los contextos en los\n que actuarán y la problemática particular que atenderá cada uno de ellos.\n 3. Definir las reglas de c",
-          "pasos_construccion": "Para desarrollar un juego de roles, se sugieren los siguientes pasos:\n\n 1. Establecer un tema. Delimitar el asunto y sus posibles\n soluciones para orientar el desarrollo de la técnica.\n 2. Determinar los roles. Definir los personajes con características particulares, así como los contextos en los\n que actuarán y la problemática particular que atenderá cada uno de ellos.\n 3. Definir las reglas de convivencia. Compartir el tiempo\n de actuación, las restricciones escénicas y los roles que\n cada usuario interpretará.\n 4. Desarrollar la actividad. Llevar a cabo la técnica respetando los acuerdos. Se puede incluir el cambio de\n roles para que la actividad sea más enriquecedora y la\n perspectiva sea más amplia.\n 5. Finalizar. Cerrar la actividad dando paso a la retroalimentación. Se debe escuchar el punto de vista del\n grupo contrastando sus impresiones con los resultados\n obtenidos.\n 6. Dar soluciones. Concluir y reflexionar sobre los resultados obtenidos.\n\n\f Juego de roles",
+          "deteccion": "Aliases: mapa conceptual.",
+          "producto_nucleo": "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, mapa y análisis son subsecciones de una sola sección de desarrollo cuyo título nombra el tema. El producto (mapa conceptual) manda: el texto lo prepara antes y lo interpreta después.",
+          "estructura": "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. El mapa conceptual es el NÚCLEO del acto de desarrollo y todo gravita a su alrededor. Orden: (a) preparación conceptual-teórica que conduce al mapa, (b) el diagrama en su propia página landscape como pieza protagónica, (c) lectura y desarrollo de las ramas tras el diagrama.",
+          "layout": "El diagrama va en su propia página (landscape si es ancho), con su caption. No dejar media página en blanco antes del diagrama: llenar con la guía de lectura o iniciar la sección con \\clearpage.",
+          "cierre": "La conclusión inicia con \\clearpage en su propia página y ocupa preferentemente una sola página; integra síntesis, análisis propio y postura personal. La declaración de uso de IA puede ligarse como \\footnote a una frase oportuna de la conclusión.",
+          "preservacion_oficial": "Materializar «Mapa conceptual» siguiendo la estructura oficial UnADM: Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contenga",
+          "pasos_construccion": "Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contengan los conceptos más significativos del tema y los que se puedan utilizar para\n ampliar los subtemas, como una aproximación al proceso de construcción. Se sugiere que no todos los conceptos se incorporen al mapa.\n3. Jerarquizar los conceptos. Ordenar los conceptos del\n más general o inclusivo, al más específico o menos\n inclusivo, y determinar los conceptos clave con los que\n se va a trabajar o explicar el tema. Definen los conceptos\n subordinados que se desagregarán de ellos y que se\n usarán para formar proposiciones o afirmaciones con\n el mismo nivel jerárquico.\n4. Establecer relaciones significativas. Explorar diversas relaciones entre los conceptos seleccionados, construyendo proposiciones del tipo concepto-palabras o\n enlace-concepto. Construir y reconstruir las proposiciones con diversas alternativas que permitan seleccionar los conceptos con facilidad para determinar cuál es\n la mejor jerarquización y organización.\n\n\f\n\n 5. Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los\n conceptos clave subordinados, cuidando que no sean\n más de cuatro. Una vez construido el mapa, valorar",
           "compilacion": "Compilar con latexmk -pdf -bibtex; verificar el producto renderizando a PNG con pdftoppm (no solo returncode)."
         },
-        "real_pattern": {}
+        "real_pattern": {
+          "fuente_real": {
+            "materia": "Garantías Constitucionales y Redacción en Contextos Virtuales (UnADM, Licenciatura en Derecho)",
+            "actividad": "Garantías A3 (El Estado a través de la historia, 48 nodos) y Redacción A6 (autogestión del aprendizaje, 20 nodos)",
+            "nota": "Ambas compiladas y en 100/100. Coinciden en TikZ + landscape + resizebox + palabras enlace en todas las aristas."
+          },
+          "packages": [
+            "\\usepackage{tikz}",
+            "\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric}",
+            "\\usepackage{pdflscape}",
+            "\\usepackage{graphicx}"
+          ],
+          "estilos_tikz": "% Jerarquía visual por nivel: raíz, rama, subrama, hoja, enlace, etiqueta.\nroot/.style={rectangle, rounded corners=2pt, draw=unadmGreenDark, fill=unadmGreenDark, text=white, font=\\bfseries\\small, align=center, inner sep=5pt},\nbranch/.style={rectangle, rounded corners=2pt, draw=unadmGreen, fill=unadmGreen!12, font=\\small, align=center, inner sep=4pt},\nsubbranch/.style={rectangle, rounded corners=2pt, draw=unadmGreen!60, fill=white, font=\\footnotesize, align=center, inner sep=3pt},\nleaf/.style={rectangle, draw=unadmGreen!35, fill=white, font=\\scriptsize, align=left, inner sep=3pt},\nedge/.style={-{Stealth[length=2mm]}, draw=unadmGreen!70, thick},\nlabel/.style={font=\\scriptsize\\itshape, text=unadmInk!75, fill=white, inner sep=1pt}",
+          "skeleton": "% ARQUITECTURA MAPA CONCEPTUAL (reporte contenedor; el producto es el grafo):\n\\section{Introducci\\'on}\n% Plantea el problema conceptual y anuncia la logica del mapa. Sin metadiscurso.\n\n\\section{<titulo tematico del campo conceptual>}\n% Prosa que DEFINE los conceptos con \\textbf{} antes de graficarlos.\n\n\\begin{landscape}\n\\thispagestyle{empty}\n\\begingroup\\centering\n\\resizebox{!}{0.80\\textheight}{%\n\\begin{tikzpicture}[node distance=8mm and 14mm]\n  \\node[root] (raiz) {<CONCEPTO RAIZ>};\n  \\node[branch, below left=of raiz] (r1) {<Rama 1>};\n  \\draw[edge] (raiz) -- node[label] {<palabra enlace>} (r1);\n\\end{tikzpicture}}\n\\par\\medskip\n{\\small Figura 1. <Lectura breve del mapa>.}\n\\endgroup\n\\end{landscape}\n\\clearpage\\pagestyle{fancy}\n\n\\section{<titulo tematico de la lectura del mapa>}\n% Explica el recorrido: del centro a las hojas. No enumerar nodos.\n\n\\section{Conclusi\\'on}\n% Postura propia + nota al pie de declaracion de IA.\n",
+          "palabras_enlace_rule": "REGLA CENTRAL: TODA arista lleva palabra enlace («se clasifican en», «depende de», «se hacen efectivos con»). Un mapa conceptual sin conectores es un organigrama: la proposición se forma con concepto + enlace + concepto. Verificado en las dos entregas: 48/48 y 21/21 aristas etiquetadas.",
+          "jerarquia_rule": "Estructura de arriba abajo o radial desde una raíz única, con niveles visualmente distinguibles (raíz, rama, subrama, hoja). Entre 18 y 50 nodos: menos resulta trivial, más vuelve el mapa ilegible al reducirlo.",
+          "resizebox_rule": "\\resizebox{!}{0.80\\textheight} es el máximo que deja mapa y pie en la misma página apaisada. Con 0.85+ el pie se va a la página siguiente y queda huérfano. Escalar por ALTO (primer argumento `!`), no por ancho.",
+          "fundamento_normativo_rule": "En contenido jurídico, las hojas terminales llevan el fundamento exacto (artículo, fracción, párrafo). El mapa no es decorativo: es un dispositivo de localización normativa.",
+          "scoring_extra": [
+            "Todas las aristas llevan palabra enlace visible.",
+            "Existe una raíz única y la jerarquía tiene al menos tres niveles.",
+            "Los conceptos se definen en prosa ANTES de aparecer en el grafo.",
+            "El mapa cabe con su pie en una sola página apaisada.",
+            "Hay una sección posterior que LEE el mapa, no que lo enumera.",
+            "En contenido jurídico, las hojas citan el fundamento normativo exacto."
+          ]
+        }
       },
       "structure_contract": {
         "three_part_structure": "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
@@ -342,6 +343,10 @@
       "exceptions": [],
       "learned_from": [
         {
+          "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-7",
+          "has_memory": false
+        },
+        {
           "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
           "has_memory": false
         },
@@ -358,20 +363,16 @@
           "has_memory": false
         },
         {
-          "scope_key": "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
-          "has_memory": true
+          "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-1",
+          "has_memory": false
         },
         {
-          "scope_key": "UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde",
-          "has_memory": true
+          "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-2",
+          "has_memory": false
         },
         {
-          "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
-          "has_memory": true
-        },
-        {
-          "scope_key": "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde",
-          "has_memory": true
+          "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-3",
+          "has_memory": false
         }
       ],
       "novelty_signals": [],
@@ -379,14 +380,14 @@
         "local_memory": true,
         "ancestor_memory": true,
         "related_nodes": [
+          "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-7",
           "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
           "UnADM/licenciatura-en-derecho-unadm",
           "UnADM",
           "interinstitucional",
-          "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
-          "UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde",
-          "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
-          "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde"
+          "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-1",
+          "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-2",
+          "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-3"
         ],
         "source_artifacts": [
           "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/README.md",
@@ -397,38 +398,38 @@
         ]
       },
       "confidence": {
-        "global": 1.0,
+        "global": 0.7,
         "by_section": {
           "heading_contract": 0.6,
           "didactic_contract": 0.5,
-          "bibliography_contract": 0.9
+          "bibliography_contract": 0.6
         }
       }
     },
     "detail_planner": {
-      "run_id": "20260823-211326",
-      "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
+      "run_id": "20260823-215407",
+      "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-7",
       "related_scope_keys": [
+        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-7",
         "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
         "UnADM/licenciatura-en-derecho-unadm",
         "UnADM",
         "interinstitucional",
-        "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
-        "UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde",
-        "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
-        "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde"
+        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-1",
+        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-2",
+        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-3"
       ],
       "novelty_count": 0
     },
-    "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
-    "level": "materia",
-    "label": "interaprendizaje-en-ambientes-virtuales-lde",
+    "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-7",
+    "level": "actividad",
+    "label": "Actividad 7",
     "relative_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
     "institution": "UnADM",
     "career": "licenciatura-en-derecho-unadm",
     "subject": "interaprendizaje-en-ambientes-virtuales-lde",
-    "activity": "",
-    "parent_key": "UnADM/licenciatura-en-derecho-unadm"
+    "activity": "Actividad 7",
+    "parent_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde"
   },
   "curricular_context": {
     "institutional_frame": "Asignatura optativa de la Licenciatura en Derecho de la UnADM ubicada en segundo semestre, bloque 1. Su funcion editorial es orientar productos academicos donde la participacion en linea, la colaboracion y la autogestion se traduzcan en evidencia profesional, criterio juridico y mejora del trabajo colectivo.",
@@ -457,10 +458,7 @@
     "documenttitle": "Interaprendizaje en ambientes virtuales",
     "documentsubtitle": "Panorama de la asignatura"
   },
-  "artifact_templates": {
-    "reporte": "reporte-interaprendizaje-en-ambientes-virtuales",
-    "presentacion": "presentacion-interaprendizaje-en-ambientes-virtuales"
-  },
+  "artifact_templates": {},
   "editorial_dna": {
     "identity": {
       "node_metadata": {
@@ -469,39 +467,35 @@
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
             "subject_rule": "Actividad 7 - interaprendizaje-en-ambientes-virtuales-lde",
-            "scope_label": "interaprendizaje-en-ambientes-virtuales-lde"
+            "scope_label": "Actividad 7"
           },
           "didactic_contract": {
-            "detected_id": "simulacion",
+            "detected_id": "mapa_conceptual",
+            "catalogo_no": 13,
+            "nombre_oficial": "Mapa conceptual",
+            "nivel": "Sintetizar",
+            "familia": "visual_jerarquico",
             "aliases": [
-              "foro",
-              "foro diagnóstico",
-              "foro diagnostico",
-              "participación en foro",
-              "participacion en foro",
               "simulación",
-              "simulacion"
+              "simulacion",
+              "mapa conceptual"
             ],
             "required_visible_elements": [
-              "preguntas guía",
-              "respuesta",
-              "cierre",
-              "participación textual publicada",
               "escenario",
               "variables",
-              "resultados"
+              "resultados",
+              "conceptos",
+              "relaciones",
+              "lectura explicativa"
             ],
-            "preservation_rule": "Si el producto solicitado es «Simulación», conservar su forma visible característica (escenario, variables, resultados) y su nivel cognitivo (Construir); no transformarlo en otro producto salvo que la consigna lo pida. Materializar por escrito: problema, roles, reglas, escena/dinámica, decisiones, resultados y reflexión.",
-            "structure_rule": "Tres actos. El guion/dinámica es el NÚCLEO del desarrollo: contexto antes, resultados y aprendizaje después.",
-            "three_act_gravity_rule": "El desarrollo NO se fragmenta en varias secciones \\section: marco, preguntas guía, participación publicada y su lectura son subsecciones de una sola sección de desarrollo cuyo título nombra el tema del foro.",
-            "closure_rule": "Conclusión con \\clearpage, resultados y aprendizaje. Declaración de IA como \\footnote.",
-            "catalogo_no": 18,
-            "nombre_oficial": "Simulación",
-            "nivel": "Construir",
-            "familia": "dramatizacion_simulacion",
-            "preservation_rule_official": "Materializar «Simulación» siguiendo la estructura oficial UnADM: Para desarrollar un juego de roles, se sugieren los siguientes pasos:\n\n 1. Establecer un tema. Delimitar el asunto y sus posibles\n soluciones para orientar el desarrollo de la técnica.\n 2. Determinar los roles. Definir los personajes con características particulares, así como los contextos en los\n que actuarán y la problemática particular que atenderá cada uno de ellos.\n 3. Definir las reglas de c",
-            "layout_rule": "Guion estructurado; tabla de roles/decisiones cuando aplique.",
-            "build_steps": "Para desarrollar un juego de roles, se sugieren los siguientes pasos:\n\n 1. Establecer un tema. Delimitar el asunto y sus posibles\n soluciones para orientar el desarrollo de la técnica.\n 2. Determinar los roles. Definir los personajes con características particulares, así como los contextos en los\n que actuarán y la problemática particular que atenderá cada uno de ellos.\n 3. Definir las reglas de convivencia. Compartir el tiempo\n de actuación, las restricciones escénicas y los roles que\n cada usuario interpretará.\n 4. Desarrollar la actividad. Llevar a cabo la técnica respetando los acuerdos. Se puede incluir el cambio de\n roles para que la actividad sea más enriquecedora y la\n perspectiva sea más amplia.\n 5. Finalizar. Cerrar la actividad dando paso a la retroalimentación. Se debe escuchar el punto de vista del\n grupo contrastando sus impresiones con los resultados\n obtenidos.\n 6. Dar soluciones. Concluir y reflexionar sobre los resultados obtenidos.\n\n\f Juego de roles",
+            "preservation_rule": "Si el producto solicitado es «Mapa conceptual», conservar su forma visible característica (conceptos, relaciones, lectura explicativa) y su nivel cognitivo (Sintetizar); no transformarlo en otro producto salvo que la consigna lo pida. Construir con TikZ jerárquico o radial. Jerarquizar del concepto raíz a subconceptos, con conectores etiquetados donde aplique. Escalar con \\resizebox para llenar la página sin desbordar; usar landscape si el ancho lo exige.",
+            "preservation_rule_official": "Materializar «Mapa conceptual» siguiendo la estructura oficial UnADM: Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contenga",
+            "structure_rule": "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. El mapa conceptual es el NÚCLEO del acto de desarrollo y todo gravita a su alrededor. Orden: (a) preparación conceptual-teórica que conduce al mapa, (b) el diagrama en su propia página landscape como pieza protagónica, (c) lectura y desarrollo de las ramas tras el diagrama.",
+            "three_act_gravity_rule": "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, mapa y análisis son subsecciones de una sola sección de desarrollo cuyo título nombra el tema. El producto (mapa conceptual) manda: el texto lo prepara antes y lo interpreta después.",
+            "layout_rule": "El diagrama va en su propia página (landscape si es ancho), con su caption. No dejar media página en blanco antes del diagrama: llenar con la guía de lectura o iniciar la sección con \\clearpage.",
+            "no_gap_rule": "PROHIBIDO dejar media página o más en blanco justo antes del diagrama landscape. Verificar con pdftoppm que no quede una página semivacía antes del mapa ni una página landscape vacía extra.",
+            "closure_rule": "La conclusión inicia con \\clearpage en su propia página y ocupa preferentemente una sola página; integra síntesis, análisis propio y postura personal. La declaración de uso de IA puede ligarse como \\footnote a una frase oportuna de la conclusión.",
+            "build_steps": "Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contengan los conceptos más significativos del tema y los que se puedan utilizar para\n ampliar los subtemas, como una aproximación al proceso de construcción. Se sugiere que no todos los conceptos se incorporen al mapa.\n3. Jerarquizar los conceptos. Ordenar los conceptos del\n más general o inclusivo, al más específico o menos\n inclusivo, y determinar los conceptos clave con los que\n se va a trabajar o explicar el tema. Definen los conceptos\n subordinados que se desagregarán de ellos y que se\n usarán para formar proposiciones o afirmaciones con\n el mismo nivel jerárquico.\n4. Establecer relaciones significativas. Explorar diversas relaciones entre los conceptos seleccionados, construyendo proposiciones del tipo concepto-palabras o\n enlace-concepto. Construir y reconstruir las proposiciones con diversas alternativas que permitan seleccionar los conceptos con facilidad para determinar cuál es\n la mejor jerarquización y organización.\n\n\f\n\n 5. Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los\n conceptos clave subordinados, cuidando que no sean\n más de cuatro. Una vez construido el mapa, valorar",
             "official_contract": {
               "fuente_oficial": {
                 "fuentes": [
@@ -509,30 +503,36 @@
                   "100tecnicasdidacticas.unadmexico.mx"
                 ],
                 "sitio": "100tecnicasdidacticas.unadmexico.mx",
-                "numero_web": 99,
-                "nombre_oficial_web": "Simulación"
+                "numero_web": 81,
+                "nombre_oficial_web": "Mapa conceptual"
               },
-              "official_definition": "La simulación es una recreación de sucesos reales en la que los participantes hacen uso de habilidades y destrezas para manejar la situación. Se puede emplear antes o después de la instrucción formal para tener una mejor comprensión del tema. Por ejemplo, una intervención quirúrgica, reacciones ante desastres naturales o prácticas de vuelo, entre otros.\n\nFortalece la toma de decisiones, la participación grupal, el desarrollo de competencias y el aprendizaje significativo.",
-              "official_what_is": "Es una técnica que se caracteriza por:\n\n ■■ Generar aprendizajes significativos.\n ■■ Buscar el cambio de actitudes frente a una situación.\n ■■ Representar una situación real mediante el juego.\n\n\f Juego de roles",
-              "official_structure": "El juego de roles tiene tres elementos esenciales:\n\n1. Planeación. Se trata de reconocer la temática que se\n presentará, así como la identificación de los participantes y los lineamientos de la técnica.\n2. Ejecución. Delimitar las reglas, así como la alternancia\n de la participación de cada personaje.\n3. Cierre. Brindar una valoración asertiva respecto al rol\n representado y compartir reflexiones finales.\n\n\f\n\n s\n erentes a los propio\n de roles dif\n Asignación\n\n el rol asignado\n Interacción temporal en\n\n Conclusión y re\n flexión para da\n r soluciones\n\n\f Juego de roles",
-              "official_utility": "El juego de roles tiene las siguientes funciones:\n\n■■ Fortalece la empatía, comprendiendo el comportamiento del personaje que se representa.\n■■ Ayuda a visualizar diferentes alternativas, valorar\n desde diferentes puntos de vista, reconocer los contextos e identificar las formas de pensar.\n■■ Ayuda a entender un tema desde diferentes ángulos y\n soluciones.",
-              "build_steps": "Para desarrollar un juego de roles, se sugieren los siguientes pasos:\n\n 1. Establecer un tema. Delimitar el asunto y sus posibles\n soluciones para orientar el desarrollo de la técnica.\n 2. Determinar los roles. Definir los personajes con características particulares, así como los contextos en los\n que actuarán y la problemática particular que atenderá cada uno de ellos.\n 3. Definir las reglas de convivencia. Compartir el tiempo\n de actuación, las restricciones escénicas y los roles que\n cada usuario interpretará.\n 4. Desarrollar la actividad. Llevar a cabo la técnica respetando los acuerdos. Se puede incluir el cambio de\n roles para que la actividad sea más enriquecedora y la\n perspectiva sea más amplia.\n 5. Finalizar. Cerrar la actividad dando paso a la retroalimentación. Se debe escuchar el punto de vista del\n grupo contrastando sus impresiones con los resultados\n obtenidos.\n 6. Dar soluciones. Concluir y reflexionar sobre los resultados obtenidos.\n\n\f Juego de roles",
-              "caveats": "…\n\nEl desarrollo del juego de roles implica:\n\n■■ Que cada personaje tenga características que lo distingan de los demás. Entre ellas, pueden ser las reacciones ante la problemática o aspectos físicos.\n■■ Incentivar la creatividad. Aunque es un punto importante para dar resoluciones creativas e innovadoras, se\n recomienda mantener claridad en el contexto en todo\n momento.\n■■ Establecer metas. Esto ayudará a que los usuarios establezcan soluciones concretas, estructuradas y factibles\n ante las situaciones planteadas.\n■■ Dejar claro en la retroalimentación final que las observaciones realizadas no son personales y que van dirigidas al personaje.",
-              "authorities": "…\n\n El juego de roles también es conocido de manera lúdica\n como juego de actores, el cual se establece así porque el\n usuario toma el papel de jugador en un proceso de simulación, para representar a actores de la realidad, constituyendo un conjunto de individuos que operan por empatía\n (Dosso, 2009, p.7)\n\n Para el Instituto Tecnológico y de Estudios Superiores de\n Monterrey (2010):\n\n esta técnica es útil para manejar aspectos o temas difíciles\n en los que es necesario tomar diferentes posiciones para su\n mejor comprensión. Consiste en la representación espontánea de una situación real o hipotética para mostrar un problema o información relevante a los contenidos del curso (párr. 1).\n\n Grande y Abella (2010) apoyan que “los juegos de rol\n suponen interpretar, experimentar en cierta forma otros\n papeles, otras experiencias y, por ello, pueden jugar una\n importante baza. Los jugadores pued",
-              "references_seed": "Blanco, A. (s. f.). Juegos de rol o situaciones para fomentar la interacción.\n ELEconele. https://eleinternacional.com/blog/juegos-de-rol-o-situacionespara-fomentar-la-interaccion/#:~:text=%C2%BFC%C3%B3mo%20se%20\n utiliza%20este%20juego,su%20idea%20es%20la%20mejor\nDosso, R. (2009). El juego de roles: una opción didáctica eficaz para la formación\n en política y planificación turística. Redalyc. Red de Revistas Científicas de\n América Latina, el Caribe, España y Portugal, 13(2), 11-28. https://www.redalyc.org/pdf/276/27621943002.pdf\nGrande, M. y Abella, V. (2010). Los juegos de rol en el aula. Revista Electrónica\n Teoría de la Educación. Educación y Cultura en la Sociedad de la\n Información, 11(3), 56-84. https://www.redalyc.org/pdf/2010/201021093004.\n pdf\nInstituto Tecnológico y de Estudios Superiores de Monterrey. (2010). Juego de\n roles. http://sitios.itesm.mx/va/dide2/tecnicas_didacticas/juego_roles.htm\n\n\f\f Práctica\ndistribuida\n\n Aplicar\n\f\n\n La",
-              "how_to_cite": "López, A. (2022). Simulación. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Construir. Universidad Abierta y a Distancia de México.\nhttps://100tecnicasdidacticas.unadmexico.mx/index.html\r\n\n Copiar cita al portapapeles",
-              "preservation_rule_official": "Materializar «Simulación» siguiendo la estructura oficial UnADM: Para desarrollar un juego de roles, se sugieren los siguientes pasos:\n\n 1. Establecer un tema. Delimitar el asunto y sus posibles\n soluciones para orientar el desarrollo de la técnica.\n 2. Determinar los roles. Definir los personajes con características particulares, así como los contextos en los\n que actuarán y la problemática particular que atenderá cada uno de ellos.\n 3. Definir las reglas de c"
+              "official_definition": "El mapa conceptual es un organizador gráfico que visibiliza las relaciones entre conceptos vinculados a un tema en particular. La relevancia de las ideas se establece por orden jerárquico de modo que se puede apreciar de lo más general a lo específico. Puede utilizarse como un instrumento de evaluación o como control de lectura de textos.\n\nFortalece la recuperación de la información, al organizarla con un sentido personal; la memoria, la reflexión, el pensamiento crítico y la creatividad.",
+              "official_what_is": "Es una representación gráfica que se caracteriza por:\n\n ■■ Organizar y representar esquemas de conocimiento.\n ■■ Mostrar las relaciones significativas y jerárquicas\n entre conceptos en forma de proposiciones.\n ■■ Formarse con dos o más conceptos unidos por palabras enlace que especifican la relación entre ellos.\n ■■ Emplear elipses o recuadros unidos por líneas para\n visualizar las interrelaciones entre los conceptos.\n ■■ Organizar la información en niveles de abstracción,\n por lo que su lectura comienza con el concepto de\n mayor jerarquía, al más general o inclusivo, y su secuencia está determinada por las líneas que los unen.\n\n\f Mapa conceptual",
+              "official_structure": "El mapa conceptual tiene tres elementos esenciales:\n\n1. Conceptos. Son el elemento central y la base para\n la construcción de significado. Son abstracciones o\n representaciones mentales que una persona hace de\n un objeto. Van encerrados en elipses, círculos o recuadros para distinguirse.\n2. Palabras enlace. Relacionan a dos conceptos y se\n representan con verbos. Junto con los conceptos se\n perciben como construcciones coherentes. Los conceptos y la palabras enlace se unen a través de líneas\n que funcionan como conectores.\n3. Preposiciones. Son el resultado de vincular dos conceptos con las palabras enlace.\n\n MAPA CONCEPTUAL\n\n Concepto\n\n Palabra enlace\n Concepto Concepto\n Concepto\n Palabra enlace Palabra enlace\n\n Concepto Concepto",
+              "official_utility": "El mapa conceptual tiene las siguientes funciones:\n\n ■■ Integra información interrelacionada para orientar la\n enseñanza de un tema o facilitar los aprendizajes con\n una estructura visual llamativa.\n ■■ Permite la identificación de conexiones entre diversos conceptos.\n\n\f Mapa conceptual",
+              "build_steps": "Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contengan los conceptos más significativos del tema y los que se puedan utilizar para\n ampliar los subtemas, como una aproximación al proceso de construcción. Se sugiere que no todos los conceptos se incorporen al mapa.\n3. Jerarquizar los conceptos. Ordenar los conceptos del\n más general o inclusivo, al más específico o menos\n inclusivo, y determinar los conceptos clave con los que\n se va a trabajar o explicar el tema. Definen los conceptos\n subordinados que se desagregarán de ellos y que se\n usarán para formar proposiciones o afirmaciones con\n el mismo nivel jerárquico.\n4. Establecer relaciones significativas. Explorar diversas relaciones entre los conceptos seleccionados, construyendo proposiciones del tipo concepto-palabras o\n enlace-concepto. Construir y reconstruir las proposiciones con diversas alternativas que permitan seleccionar los conceptos con facilidad para determinar cuál es\n la mejor jerarquización y organización.\n\n\f\n\n 5. Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los\n conceptos clave subordinados, cuidando que no sean\n más de cuatro. Una vez construido el mapa, valorar",
+              "caveats": "…\n\nLa elaboración de un mapa conceptual implica:\n\n■■ Comprender la relevancia de diversos conceptos, mostrando las relaciones entre cada uno de ellos.\n■■ Capacidad de análisis y abstracción entendiendo la\n relación conceptual.\n■■ Saber orientar los aprendizajes o, incluso, la enseñanza\n de un tema mediante la integración de información.\n■■ Desarrollar el pensamiento crítico, así como la capacidad reflexiva a través de la interpretación gráfica.\n■■ Recuperar y recordar conocimientos, así como plasmarlos de manera visual.\n■■ Identificar significados y facilitar los aprendizajes.\n■■ Organizar la información con sentido personal y explicar los conocimientos.",
+              "authorities": "…\n\n Aguilar (2006) afirma que “el mapa conceptual tiene por\n objeto representar las relaciones significativas entre conceptos. Los conceptos expresan regularidades entre objetos y acontecimientos” (p. 3).\n\n De acuerdo con Ontoria et al. (1992):\n\n Con los mapas conceptuales, el alumno llega a tener la conciencia del propio proceso; cognitivo o metacognición. Puesto\n que la codificación es uno de los componentes de las estrategias de aprendizaje, se pueden clasificar éstas según el criterio de niveles de procesamiento, que a su vez coincide con\n los enfoques de aprendizaje memorístico y significativo de\n Ausubel (p. 20).\n\n La Universidad Autónoma del Estado de Hidalgo (s. f.) refiere\n el mapa conceptual como técnica de aprendizaje que\n tiene atención y aceptación para favorecer el desarrollo\n de autoestima y puede ser utilizado en diferentes etapas\n del proceso de enseñanza y aprendizaje.",
+              "references_seed": "Aguilar, M. (2006). El mapa conceptual: una herramienta para aprender y enseñar. Plasticidad y Restauración Neurológica. 5(1), 7-17. https://www.medigraphic.com/pdfs/plasticidad/prn-2006/prn061b.pdf\nOntoria, A., Ballesteros, A., Cuevas, C., Giraldo, L., Martín, I., Molina, A., Rodríguez,\n A. y Vélez, U. (1992). Mapas conceptuales. Una técnica para aprender.\n Narcea. https://cursoderecho.files.wordpress.com/2010/08/mapas-conceptuales-2.pdf\nUniversidad Autónoma del Estado de Hidalgo. (s. f.). Mapa Conceptual. https://\n www.uaeh.edu.mx/docencia/VI_Lectura/educ_continua/curso_formador/\n LECT58.pdf\nUniversidad Estatal a Distancia. (s. f.). El mapa conceptual como estrategia\n didáctica para el aprendizaje. https://www.uned.ac.cr/academica/images/\n ceced/docs/Estaticos/Estrategia_Mapa_conceptual.pdf\n\n\f\f Panel\nde discusión\n\n Aplicar\n\f\n\n El",
+              "how_to_cite": "López, A. (2022). Mapa conceptual. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Sintetizar. Universidad Abierta y a Distancia de México.\nhttps://100tecnicasdidacticas.unadmexico.mx/index.html\r\n\n Copiar cita al portapapeles",
+              "preservation_rule_official": "Materializar «Mapa conceptual» siguiendo la estructura oficial UnADM: Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contenga"
             },
             "tikz_pattern": {
               "packages": [
-                "tcolorbox",
-                "\\tcbuselibrary{most}",
-                "enumitem"
+                "\\usepackage{tikz}",
+                "\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric}",
+                "\\usepackage{pdflscape}",
+                "\\usepackage{graphicx}"
               ],
-              "skeleton": "% Producto en prosa: sin TikZ salvo figuras.\n\\section{<Título temático (no 'Desarrollo')>}\n<Marco conceptual que prepara el producto, con \\citep{...}.>\n\\subsection{<Subtema 1>}<Análisis con fuentes.>\n\\subsection{<Subtema 2>}<Aplicación.>",
-              "rules": "Prosa con introducción (problema), desarrollo con fuentes y análisis, conclusión con postura, referencias APA 7. La voz convierte información en criterio.",
-              "materializacion": "Materializar por escrito: problema, roles, reglas, escena/dinámica, decisiones, resultados y reflexión.",
-              "llm_refined_by": "GPT-5.6-Luna"
+              "skeleton": "% ARQUITECTURA MAPA CONCEPTUAL (reporte contenedor; el producto es el grafo):\n\\section{Introducci\\'on}\n% Plantea el problema conceptual y anuncia la logica del mapa. Sin metadiscurso.\n\n\\section{<titulo tematico del campo conceptual>}\n% Prosa que DEFINE los conceptos con \\textbf{} antes de graficarlos.\n\n\\begin{landscape}\n\\thispagestyle{empty}\n\\begingroup\\centering\n\\resizebox{!}{0.80\\textheight}{%\n\\begin{tikzpicture}[node distance=8mm and 14mm]\n  \\node[root] (raiz) {<CONCEPTO RAIZ>};\n  \\node[branch, below left=of raiz] (r1) {<Rama 1>};\n  \\draw[edge] (raiz) -- node[label] {<palabra enlace>} (r1);\n\\end{tikzpicture}}\n\\par\\medskip\n{\\small Figura 1. <Lectura breve del mapa>.}\n\\endgroup\n\\end{landscape}\n\\clearpage\\pagestyle{fancy}\n\n\\section{<titulo tematico de la lectura del mapa>}\n% Explica el recorrido: del centro a las hojas. No enumerar nodos.\n\n\\section{Conclusi\\'on}\n% Postura propia + nota al pie de declaracion de IA.\n",
+              "rules": "Raíz + 3-4 ramas + subconceptos apilados DEBAJO (below=) de cada rama; conectores con proposición de enlace; relaciones cruzadas entre ramas; escalar con \\resizebox{!}{0.80\\textheight} en landscape.",
+              "materializacion": "Construir con TikZ jerárquico o radial. Jerarquizar del concepto raíz a subconceptos, con conectores etiquetados donde aplique. Escalar con \\resizebox para llenar la página sin desbordar; usar landscape si el ancho lo exige.",
+              "source": "actividad_real",
+              "fuente_real": {
+                "materia": "Garantías Constitucionales y Redacción en Contextos Virtuales (UnADM, Licenciatura en Derecho)",
+                "actividad": "Garantías A3 (El Estado a través de la historia, 48 nodos) y Redacción A6 (autogestión del aprendizaje, 20 nodos)",
+                "nota": "Ambas compiladas y en 100/100. Coinciden en TikZ + landscape + resizebox + palabras enlace en todas las aristas."
+              }
             },
             "scoring_rubric": {
               "escala": "0-100",
@@ -563,46 +563,92 @@
                 }
               },
               "criterios_de_construccion_oficial": [
-                "{'criterio': 'Delimitar el tema y el tipo de foro. Especificar las características del foro. Se trata de que los participantes tengan los mismos intereses en el tema, hecho o problema a dialogar.', 'peso': 8.33}",
-                "{'criterio': 'Establecer reglas. Elegir a un moderador para que presente el tema y comparta las instrucciones para participar de manera ordenada.', 'peso': 8.33}",
-                "{'criterio': 'Cerrar la actividad. Concluir la sesión. El moderador da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la participación. 104 Foro', 'peso': 8.33}",
                 "{'criterio': 'Establecer un tema. Delimitar el asunto y sus posibles soluciones para orientar el desarrollo de la técnica.', 'peso': 4.17}",
                 "{'criterio': 'Determinar los roles. Definir los personajes con características particulares, así como los contextos en los que actuarán y la problemática particular que atenderá cada uno de ellos.', 'peso': 4.17}",
                 "{'criterio': 'Definir las reglas de convivencia. Compartir el tiempo de actuación, las restricciones escénicas y los roles que cada usuario interpretará.', 'peso': 4.17}",
                 "{'criterio': 'Desarrollar la actividad. Llevar a cabo la técnica respetando los acuerdos. Se puede incluir el cambio de roles para que la actividad sea más enriquecedora y la perspectiva sea más amplia.', 'peso': 4.17}",
                 "{'criterio': 'Finalizar. Cerrar la actividad dando paso a la retroalimentación. Se debe escuchar el punto de vista del grupo contrastando sus impresiones con los resultados obtenidos.', 'peso': 4.17}",
-                "{'criterio': 'Dar soluciones. Concluir y reflexionar sobre los resultados obtenidos. Juego de roles', 'peso': 4.17}"
+                "{'criterio': 'Dar soluciones. Concluir y reflexionar sobre los resultados obtenidos. Juego de roles', 'peso': 4.17}",
+                "{'criterio': 'Conceptualizar el mapa. Reconocer las relaciones que hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la posible estructura del mapa.', 'peso': 12.5}",
+                "{'criterio': 'Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los conceptos clave subordinados, cuidando que no sean más de cuatro. Una vez construido el mapa, valorar', 'peso': 12.5}"
               ],
               "consideraciones_para_puntuar": [
-                "… El desarrollo de un foro implica: ■■ Mantener una actitud positiva, lo cual permitirá expresar argumentos y respetar otras opiniones para llegar a una conclusión exacta.",
-                "■■ Aclarar dudas durante el intercambio de información.",
-                "■■ Saber que en el entorno virtual hay tres tipos: ■■ Foros públicos: no hay reglas, número de participantes ni formas de participación, es decir, cualquier persona puede integrarse y comentar acerca de la problemática.",
-                "■■ Foros protegidos: es necesario registrarse para ingresar a la discusión.",
-                "■■ Foros privados: se integra por un cierto número de registrados y un administrador decide dar acceso o rechazar la solicitud de ingreso.",
-                "En este tipo de foro, es recomendable investigar con anterioridad el tema para tener una perspectiva amplia y poder expresar puntos de vista críticos y reflexivos.",
-                "105 100 Técnicas Didácticas de Enseñanza y Aprendizaje | Fascículo 2",
-                "Puntuar adicionalmente que la estructura y el orden de la publicación coincidan con el producto Foro y que la retroalimentación esté claramente separada de la intervención publicada.",
                 "… El desarrollo del juego de roles implica: ■■ Que cada personaje tenga características que lo distingan de los demás.",
                 "Entre ellas, pueden ser las reacciones ante la problemática o aspectos físicos.",
                 "■■ Incentivar la creatividad.",
                 "Aunque es un punto importante para dar resoluciones creativas e innovadoras, se recomienda mantener claridad en el contexto en todo momento.",
                 "■■ Establecer metas.",
                 "Esto ayudará a que los usuarios establezcan soluciones concretas, estructuradas y factibles ante las situaciones planteadas.",
-                "■■ Dejar claro en la retroalimentación final que las observaciones realizadas no son personales y que van dirigidas al personaje."
+                "■■ Dejar claro en la retroalimentación final que las observaciones realizadas no son personales y que van dirigidas al personaje.",
+                "… La elaboración de un mapa conceptual implica: ■■ Comprender la relevancia de diversos conceptos, mostrando las relaciones entre cada uno de ellos.",
+                "■■ Capacidad de análisis y abstracción entendiendo la relación conceptual.",
+                "■■ Saber orientar los aprendizajes o, incluso, la enseñanza de un tema mediante la integración de información.",
+                "■■ Desarrollar el pensamiento crítico, así como la capacidad reflexiva a través de la interpretación gráfica.",
+                "■■ Recuperar y recordar conocimientos, así como plasmarlos de manera visual.",
+                "■■ Identificar significados y facilitar los aprendizajes.",
+                "■■ Organizar la información con sentido personal y explicar los conocimientos.",
+                "Todas las aristas llevan palabra enlace visible.",
+                "Existe una raíz única y la jerarquía tiene al menos tres niveles.",
+                "Los conceptos se definen en prosa ANTES de aparecer en el grafo.",
+                "El mapa cabe con su pie en una sola página apaisada.",
+                "Hay una sección posterior que LEE el mapa, no que lo enumera.",
+                "En contenido jurídico, las hojas citan el fundamento normativo exacto."
               ],
               "umbral_aprobacion": 100,
               "nota": "El producto puntúa por fidelidad a la técnica (forma oficial) + calidad editorial (tres actos, citas, postura)."
             },
             "construction_integration": {
-              "deteccion": "Aliases: simulación, simulacion.",
-              "producto_nucleo": "El producto es el núcleo del desarrollo: prepararlo antes e interpretarlo después.",
-              "estructura": "Tres actos. El guion/dinámica es el NÚCLEO del desarrollo: contexto antes, resultados y aprendizaje después.",
-              "layout": "Guion estructurado; tabla de roles/decisiones cuando aplique.",
-              "cierre": "Conclusión con \\clearpage, resultados y aprendizaje. Declaración de IA como \\footnote.",
-              "preservacion_oficial": "Materializar «Simulación» siguiendo la estructura oficial UnADM: Para desarrollar un juego de roles, se sugieren los siguientes pasos:\n\n 1. Establecer un tema. Delimitar el asunto y sus posibles\n soluciones para orientar el desarrollo de la técnica.\n 2. Determinar los roles. Definir los personajes con características particulares, así como los contextos en los\n que actuarán y la problemática particular que atenderá cada uno de ellos.\n 3. Definir las reglas de c",
-              "pasos_construccion": "Para desarrollar un juego de roles, se sugieren los siguientes pasos:\n\n 1. Establecer un tema. Delimitar el asunto y sus posibles\n soluciones para orientar el desarrollo de la técnica.\n 2. Determinar los roles. Definir los personajes con características particulares, así como los contextos en los\n que actuarán y la problemática particular que atenderá cada uno de ellos.\n 3. Definir las reglas de convivencia. Compartir el tiempo\n de actuación, las restricciones escénicas y los roles que\n cada usuario interpretará.\n 4. Desarrollar la actividad. Llevar a cabo la técnica respetando los acuerdos. Se puede incluir el cambio de\n roles para que la actividad sea más enriquecedora y la\n perspectiva sea más amplia.\n 5. Finalizar. Cerrar la actividad dando paso a la retroalimentación. Se debe escuchar el punto de vista del\n grupo contrastando sus impresiones con los resultados\n obtenidos.\n 6. Dar soluciones. Concluir y reflexionar sobre los resultados obtenidos.\n\n\f Juego de roles",
+              "deteccion": "Aliases: mapa conceptual.",
+              "producto_nucleo": "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, mapa y análisis son subsecciones de una sola sección de desarrollo cuyo título nombra el tema. El producto (mapa conceptual) manda: el texto lo prepara antes y lo interpreta después.",
+              "estructura": "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. El mapa conceptual es el NÚCLEO del acto de desarrollo y todo gravita a su alrededor. Orden: (a) preparación conceptual-teórica que conduce al mapa, (b) el diagrama en su propia página landscape como pieza protagónica, (c) lectura y desarrollo de las ramas tras el diagrama.",
+              "layout": "El diagrama va en su propia página (landscape si es ancho), con su caption. No dejar media página en blanco antes del diagrama: llenar con la guía de lectura o iniciar la sección con \\clearpage.",
+              "cierre": "La conclusión inicia con \\clearpage en su propia página y ocupa preferentemente una sola página; integra síntesis, análisis propio y postura personal. La declaración de uso de IA puede ligarse como \\footnote a una frase oportuna de la conclusión.",
+              "preservacion_oficial": "Materializar «Mapa conceptual» siguiendo la estructura oficial UnADM: Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contenga",
+              "pasos_construccion": "Para trazar un mapa conceptual, se sugieren los siguientes pasos:\n\n1. Conceptualizar el mapa. Reconocer las relaciones que\n hay entre las ideas o conceptos vinculados al tema; formular un título o una pregunta, lo que permitirá entender lo que se busca explicar o representar e imaginar la\n posible estructura del mapa.\n2. Seleccionar y agrupar conceptos. Hacer una lista-estacionamiento que contengan los conceptos más significativos del tema y los que se puedan utilizar para\n ampliar los subtemas, como una aproximación al proceso de construcción. Se sugiere que no todos los conceptos se incorporen al mapa.\n3. Jerarquizar los conceptos. Ordenar los conceptos del\n más general o inclusivo, al más específico o menos\n inclusivo, y determinar los conceptos clave con los que\n se va a trabajar o explicar el tema. Definen los conceptos\n subordinados que se desagregarán de ellos y que se\n usarán para formar proposiciones o afirmaciones con\n el mismo nivel jerárquico.\n4. Establecer relaciones significativas. Explorar diversas relaciones entre los conceptos seleccionados, construyendo proposiciones del tipo concepto-palabras o\n enlace-concepto. Construir y reconstruir las proposiciones con diversas alternativas que permitan seleccionar los conceptos con facilidad para determinar cuál es\n la mejor jerarquización y organización.\n\n\f\n\n 5. Elaborar la representación gráfica. Colocar el concepto clave más inclusivo o general en un lugar relevante del mapa y, a partir de éste, desprender los\n conceptos clave subordinados, cuidando que no sean\n más de cuatro. Una vez construido el mapa, valorar",
               "compilacion": "Compilar con latexmk -pdf -bibtex; verificar el producto renderizando a PNG con pdftoppm (no solo returncode)."
+            },
+            "real_pattern": {
+              "fuente_real": {
+                "materia": "Garantías Constitucionales y Redacción en Contextos Virtuales (UnADM, Licenciatura en Derecho)",
+                "actividad": "Garantías A3 (El Estado a través de la historia, 48 nodos) y Redacción A6 (autogestión del aprendizaje, 20 nodos)",
+                "nota": "Ambas compiladas y en 100/100. Coinciden en TikZ + landscape + resizebox + palabras enlace en todas las aristas."
+              },
+              "packages": [
+                "\\usepackage{tikz}",
+                "\\usetikzlibrary{arrows.meta,positioning,calc,matrix,fit,shapes.geometric}",
+                "\\usepackage{pdflscape}",
+                "\\usepackage{graphicx}"
+              ],
+              "estilos_tikz": "% Jerarquía visual por nivel: raíz, rama, subrama, hoja, enlace, etiqueta.\nroot/.style={rectangle, rounded corners=2pt, draw=unadmGreenDark, fill=unadmGreenDark, text=white, font=\\bfseries\\small, align=center, inner sep=5pt},\nbranch/.style={rectangle, rounded corners=2pt, draw=unadmGreen, fill=unadmGreen!12, font=\\small, align=center, inner sep=4pt},\nsubbranch/.style={rectangle, rounded corners=2pt, draw=unadmGreen!60, fill=white, font=\\footnotesize, align=center, inner sep=3pt},\nleaf/.style={rectangle, draw=unadmGreen!35, fill=white, font=\\scriptsize, align=left, inner sep=3pt},\nedge/.style={-{Stealth[length=2mm]}, draw=unadmGreen!70, thick},\nlabel/.style={font=\\scriptsize\\itshape, text=unadmInk!75, fill=white, inner sep=1pt}",
+              "skeleton": "% ARQUITECTURA MAPA CONCEPTUAL (reporte contenedor; el producto es el grafo):\n\\section{Introducci\\'on}\n% Plantea el problema conceptual y anuncia la logica del mapa. Sin metadiscurso.\n\n\\section{<titulo tematico del campo conceptual>}\n% Prosa que DEFINE los conceptos con \\textbf{} antes de graficarlos.\n\n\\begin{landscape}\n\\thispagestyle{empty}\n\\begingroup\\centering\n\\resizebox{!}{0.80\\textheight}{%\n\\begin{tikzpicture}[node distance=8mm and 14mm]\n  \\node[root] (raiz) {<CONCEPTO RAIZ>};\n  \\node[branch, below left=of raiz] (r1) {<Rama 1>};\n  \\draw[edge] (raiz) -- node[label] {<palabra enlace>} (r1);\n\\end{tikzpicture}}\n\\par\\medskip\n{\\small Figura 1. <Lectura breve del mapa>.}\n\\endgroup\n\\end{landscape}\n\\clearpage\\pagestyle{fancy}\n\n\\section{<titulo tematico de la lectura del mapa>}\n% Explica el recorrido: del centro a las hojas. No enumerar nodos.\n\n\\section{Conclusi\\'on}\n% Postura propia + nota al pie de declaracion de IA.\n",
+              "palabras_enlace_rule": "REGLA CENTRAL: TODA arista lleva palabra enlace («se clasifican en», «depende de», «se hacen efectivos con»). Un mapa conceptual sin conectores es un organigrama: la proposición se forma con concepto + enlace + concepto. Verificado en las dos entregas: 48/48 y 21/21 aristas etiquetadas.",
+              "jerarquia_rule": "Estructura de arriba abajo o radial desde una raíz única, con niveles visualmente distinguibles (raíz, rama, subrama, hoja). Entre 18 y 50 nodos: menos resulta trivial, más vuelve el mapa ilegible al reducirlo.",
+              "resizebox_rule": "\\resizebox{!}{0.80\\textheight} es el máximo que deja mapa y pie en la misma página apaisada. Con 0.85+ el pie se va a la página siguiente y queda huérfano. Escalar por ALTO (primer argumento `!`), no por ancho.",
+              "fundamento_normativo_rule": "En contenido jurídico, las hojas terminales llevan el fundamento exacto (artículo, fracción, párrafo). El mapa no es decorativo: es un dispositivo de localización normativa.",
+              "scoring_extra": [
+                "Todas las aristas llevan palabra enlace visible.",
+                "Existe una raíz única y la jerarquía tiene al menos tres niveles.",
+                "Los conceptos se definen en prosa ANTES de aparecer en el grafo.",
+                "El mapa cabe con su pie en una sola página apaisada.",
+                "Hay una sección posterior que LEE el mapa, no que lo enumera.",
+                "En contenido jurídico, las hojas citan el fundamento normativo exacto."
+              ]
             }
+          },
+          "structure_contract": {
+            "three_part_structure": "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
+            "development_section": "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
+            "product_centric_gravity": "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
+            "introduction": "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
+            "conclusion": "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa"
+          },
+          "layout_contract": {
+            "no_gap_before_visual_deliverable": "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
+            "landscape_single_page": "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
+            "conclusion_single_page": "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla).",
+            "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos.",
+            "always_use_latexmk": "Compilar siempre con latexmk y aislar los auxiliares en .build/latex.",
+            "no_build_residues": "La carpeta de la actividad no debe conservar auxiliares de compilación junto al TEX."
           },
           "bibliography_contract": {
             "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
@@ -625,114 +671,91 @@
             "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
             "sin placeholders, con contexto/problema integrado en introducción, análisis propio integrado en conclusión, postura personal integrada en conclusión y transferencia profesional",
             "sin metadiscurso de ejecución: no hablar de 'esta actividad', 'producto solicitado', 'se presenta' o 'la técnica usada' como narrador externo; hablar del tema, problema, concepto, cuestionario, caso o tabla según corresponda",
+            "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
             "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
-            "si el producto es cuestionario, la sección Desarrollo debe estar ocupada por el cuestionario con su título; el marco conceptual va dentro de esa misma sección, no como sección/subsección independiente salvo consigna expresa",
+            "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
+            "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
             "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa",
             "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
             "En el cuerpo final no narrar el proceso de elaboración ni mencionar la palabra 'Actividad' como sujeto del análisis; en su lugar hablar del tema, problema, concepto, cuestionario, caso, tabla o fenómeno estudiado.",
             "El contexto y el problema se integran en la introducción; no crear una subsección visible 'Contexto y problema' salvo instrucción expresa de la consigna.",
-            "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa.",
-            "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
-            "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
-            "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
             "Estructurar el cuerpo visible en tres actos: Introducción, Desarrollo y Conclusiones. El desarrollo es UNA sola sección (no varias \\section de primer nivel); marco conceptual, producto solicitado y análisis van como subsecciones dentro de ella.",
             "El título del acto de desarrollo debe ser descriptivo del tema, no la palabra 'Desarrollo'. Ejemplos válidos: 'Clasificación de los tipos de seguro', 'Marco y clasificación de los derechos humanos'. El nombre nombra el fenómeno, no la etiqueta didáctica.",
             "Dar protagonismo imperativo al producto solicitado (mapa conceptual, cuadro, tabla, esquema) dentro del desarrollo. El desarrollo gravita a su alrededor: ANTES lo prepara (marco conceptual-teórico que conduce al producto) y DESPUÉS lo interpreta (lectura del producto, semejanzas y diferencias, implicaciones). El énfasis recae en el tema y en el producto, no en la etiqueta ni en el metadiscurso.",
+            "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa.",
             "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
             "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
             "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla)."
           ],
           "exceptions": [],
           "learned_from": [
+            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-7', 'has_memory': False}",
             "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde', 'has_memory': False}",
             "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm', 'has_memory': True}",
             "{'scope_key': 'UnADM', 'has_memory': True}",
-            "{'scope_key': 'interinstitucional', 'has_memory': True}",
-            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde', 'has_memory': True}",
-            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde', 'has_memory': True}",
-            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde', 'has_memory': True}",
-            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde', 'has_memory': True}",
-            "{'scope_key': 'interinstitucional', 'has_memory': False}"
+            "{'scope_key': 'interinstitucional', 'has_memory': False}",
+            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-1', 'has_memory': False}",
+            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-2', 'has_memory': False}",
+            "{'scope_key': 'UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-3', 'has_memory': False}"
           ],
           "novelty_signals": [
             "bootstrap",
-            "heading_contract",
-            "institutional_identity",
-            "didactic_contract",
-            "quality_rules"
+            "didactic_contract"
           ],
           "derived_from": {
             "local_memory": true,
             "ancestor_memory": true,
             "related_nodes": [
+              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-7",
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
               "UnADM/licenciatura-en-derecho-unadm",
               "UnADM",
               "interinstitucional",
-              "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
-              "UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde",
-              "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
-              "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde"
+              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-1",
+              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-2",
+              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-3"
             ],
             "source_artifacts": [
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/README.md",
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-1.tex",
-              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales.tex",
-              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex",
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-2.tex",
-              "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
               "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-6.tex"
             ]
           },
           "confidence": {
-            "global": 1.0,
+            "global": 0.7,
             "by_section": {
               "heading_contract": 0.6,
               "didactic_contract": 0.5,
-              "bibliography_contract": 0.9
+              "bibliography_contract": 0.6
             }
-          },
-          "structure_contract": {
-            "three_part_structure": "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
-            "development_section": "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
-            "product_centric_gravity": "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
-            "introduction": "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
-            "conclusion": "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa"
-          },
-          "layout_contract": {
-            "no_gap_before_visual_deliverable": "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
-            "landscape_single_page": "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
-            "conclusion_single_page": "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla).",
-            "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos.",
-            "always_use_latexmk": "Compilar siempre con latexmk y aislar los auxiliares en .build/latex.",
-            "no_build_residues": "La carpeta de la actividad no debe conservar auxiliares de compilación junto al TEX."
           }
         },
         "detail_planner": {
-          "run_id": "20260823-211326",
-          "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
+          "run_id": "20260823-215407",
+          "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-7",
           "related_scope_keys": [
+            "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-7",
             "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
             "UnADM/licenciatura-en-derecho-unadm",
             "UnADM",
             "interinstitucional",
-            "UnADM/licenciatura-en-derecho-unadm/antropologia-de-la-cultura-en-mexico-lde",
-            "UnADM/licenciatura-en-derecho-unadm/bases-de-derecho-internacional-publico-lde",
-            "UnADM/licenciatura-en-derecho-unadm/derecho-a-la-seguridad-social-lde",
-            "UnADM/licenciatura-en-derecho-unadm/derecho-administrativo-y-control-lde"
+            "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-1",
+            "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-2",
+            "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-3"
           ],
           "novelty_count": 0
         },
-        "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
-        "level": "materia",
-        "label": "interaprendizaje-en-ambientes-virtuales-lde",
+        "scope_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/actividad-7",
+        "level": "actividad",
+        "label": "Actividad 7",
         "relative_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde",
         "institution": "UnADM",
         "career": "licenciatura-en-derecho-unadm",
         "subject": "interaprendizaje-en-ambientes-virtuales-lde",
-        "activity": "",
-        "parent_key": "UnADM/licenciatura-en-derecho-unadm"
+        "activity": "Actividad 7",
+        "parent_key": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde"
       },
       "curricular_context": {
         "institutional_frame": "Asignatura optativa de la Licenciatura en Derecho de la UnADM ubicada en segundo semestre, bloque 1. Su funcion editorial es orientar productos academicos donde la participacion en linea, la colaboracion y la autogestion se traduzcan en evidencia profesional, criterio juridico y mejora del trabajo colectivo.",
@@ -780,8 +803,8 @@
         "Criterios de entrega y evaluacion",
         "Conclusion editorial"
       ],
+      "artifact_name": "presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-7",
       "artifact_types": [
-        "reporte",
         "presentacion"
       ],
       "tex_functional_structure": {
@@ -836,12 +859,8 @@
       "Conclusion editorial"
     ],
     "reinforcement_log": [
-      "ADN sintetizado con 14 conceptos, 4 citas y 0 relaciones.",
-      "Memoria de redacción preservada en 33 bloques.",
-      "ADN sintetizado con 19 conceptos, 4 citas y 0 relaciones.",
-      "ADN sintetizado con 21 conceptos, 4 citas y 0 relaciones.",
-      "ADN sintetizado con 40 conceptos, 4 citas y 0 relaciones.",
-      "ADN sintetizado con 44 conceptos, 4 citas y 0 relaciones."
+      "ADN sintetizado con 32 conceptos, 4 citas y 0 relaciones.",
+      "Memoria de redacción preservada en 33 bloques."
     ],
     "knowledge_graph": {
       "concepts": [
@@ -863,9 +882,9 @@
         "Manual de comunicación intercultural: Una introducción a sus conceptos, teorías y aplicaciones :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "Protocolo para juzgar con perspectiva intercultural: Personas, pueblos y comunidades indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "Construcción de espacios interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-        "Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "Metodología PACIE en el interaprendizaje de la asignatura TICS del Instituto Superior Riobamba :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "Metodologías activas en el interaprendizaje de educación básica superior en los estudiantes de la Unidad Educativa José Rodríguez Labandera, área de estudios sociales, cantón Quevedo, provincia Los Ríos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "Didáctica universitaria en entornos virtuales de enseñanza-aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "El estudiante de entornos virtuales: Una primera aproximación :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
@@ -873,18 +892,6 @@
         "EC0554.01: Trabajo en equipo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "Sociedad bosquesina: Tomo I. Ensayo de antropología rural amazónica :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "Declaración mundial sobre la educación superior en el siglo XXI: Visión y acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-        "Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "Didáctica universitaria en entornos virtuales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "Metodología PACIE en el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "Metodologías activas en el interaprendizaje virtual :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "Estudio de caso. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "Convenio sobre Pueblos Indígenas y Tribales en Países Independientes (Convenio 169) :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "Interaprendizajes entre indígenas. Tomos I y II :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "Manual de comunicación intercultural :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
         "El proceso de interaprendizaje en la carrera de derecho :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "Ley Federal de Protección de Datos Personales en Posesión de los Particulares :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "Trabajo cooperativo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
@@ -906,18 +913,13 @@
         "unescoGenerativeAI2023 :: Guidance for Generative AI in Education and Research :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "cpeum2026 :: Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "leyDerechosLinguisticos2024 :: Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/README.md",
-        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/programa-analitico-interaprendizaje-en-ambientes-virtuales.md",
-        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales.tex",
-        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex",
         "bertely2011interaprendizajes :: Interaprendizajes entre indígenas: De cómo las y los educadores pescan conocimientos y significados comunitarios en contextos interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "pech2016manual :: Manual de comunicación intercultural: Una introducción a sus conceptos, teorías y aplicaciones :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "scjn2022protocolo :: Protocolo para juzgar con perspectiva intercultural: Personas, pueblos y comunidades indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "diazAlonso2011construccion :: Construcción de espacios interculturales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-        "oit1691989 :: Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "cushpa2022pacie :: Metodología PACIE en el interaprendizaje de la asignatura TICS del Instituto Superior Riobamba :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "silva2015metodologias :: Metodologías activas en el interaprendizaje de educación básica superior en los estudiantes de la Unidad Educativa José Rodríguez Labandera, área de estudios sociales, cantón Quevedo, provincia Los Ríos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "oit1691989 :: Convenio 169 sobre pueblos indígenas y tribales en países independientes :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "bautista2016didactica :: Didáctica universitaria en entornos virtuales de enseñanza-aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "borges2007estudiante :: El estudiante de entornos virtuales: Una primera aproximación :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "zambranoPilay2020tecnologias :: Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
@@ -925,23 +927,16 @@
         "conocer2025ec0554 :: EC0554.01: Trabajo en equipo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "gascheMendoza2012sociedad :: Sociedad bosquesina: Tomo I. Ensayo de antropología rural amazónica :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "unesco1998declaracion :: Declaración mundial sobre la educación superior en el siglo XXI: Visión y acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-        "zambrano2020tecnologias :: Tecnologías educativas para el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "bautista2016didactica :: Didáctica universitaria en entornos virtuales :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "cushpa2022metodologia :: Metodología PACIE en el interaprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "silva2015metodologias :: Metodologías activas en el interaprendizaje virtual :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "lopez2022estudio :: Estudio de caso. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "constitucion2026 :: Constitución Política de los Estados Unidos Mexicanos :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "lgdl2003 :: Ley General de Derechos Lingüísticos de los Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "oit1989 :: Convenio sobre Pueblos Indígenas y Tribales en Países Independientes (Convenio 169) :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "escjn2020protocolo :: Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "bertely2013interaprendizajes :: Interaprendizajes entre indígenas. Tomos I y II :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "pech2017manual :: Manual de comunicación intercultural :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "unesco1998 :: Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
         "cangasOna2020interaprendizaje :: El proceso de interaprendizaje en la carrera de derecho :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "camaraDiputados2025lfpdppp :: Ley Federal de Protección de Datos Personales en Posesión de los Particulares :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
         "lopezMartinez2022trabajoCooperativo :: Trabajo cooperativo :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-        "onu2001durban :: Declaración y Programa de Acción de Durban :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib"
+        "onu2001durban :: Declaración y Programa de Acción de Durban :: fuente=UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/README.md",
+        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/programa-analitico-interaprendizaje-en-ambientes-virtuales.md",
+        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales.tex",
+        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex",
+        "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-7.tex"
       ],
       "relations": [],
       "concept_weights": {},
@@ -3226,6 +3221,73 @@
               "cited_keys": [],
               "bibliography": [],
               "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales.tex"
+            }
+          ],
+          "citation_map": {},
+          "all_cited_keys": [],
+          "missing_bibliography_keys": []
+        }
+      },
+      "presentacion": {
+        "relative_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-7.tex",
+        "abstract": "",
+        "section_titles": [],
+        "subsection_titles": [],
+        "cited_keys": [],
+        "concepts": [],
+        "source_fragments": [],
+        "content_memory": {
+          "relative_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-7.tex",
+          "raw_latex_sha256": "1421f2caceef3854722ada09ebe07d126dd70b267a2417c403bf06cfab28e293",
+          "raw_latex_chars": 741,
+          "raw_latex": "\\documentclass[spanish,aspectratio=169]{beamer}\n\\usepackage[utf8]{inputenc}\n\\usepackage[T1]{fontenc}\n\\usepackage[spanish,es-tabla]{babel}\n\\usepackage{graphicx}\n\\usepackage{hyperref}\n\\title{Brief profesional del despacho jurídico digital}\n\\subtitle{Actividad 7 · Interaprendizaje en ambientes virtuales}\n\\author{Martin Jonathan de la Cruz · ES2611202040}\n\\institute{Universidad Abierta y a Distancia de México · Licenciatura en Derecho}\n\\date{23 de agosto de 2026}\n\\begin{document}\n\\begin{frame}\\titlepage\\end{frame}\n\\begin{frame}{Actividad 7 en construcción}\nEste archivo canónico se materializa para que el motor inteligente desarrolle el brief conforme a la planeación y los contenidos oficiales de la semana 7.\n\\end{frame}\n\\end{document}\n",
+          "functional_structure": {
+            "documentclass": {
+              "class": "beamer",
+              "options": "spanish,aspectratio=169"
+            },
+            "packages": [
+              "inputenc",
+              "fontenc",
+              "babel",
+              "graphicx",
+              "hyperref"
+            ],
+            "inputs": [],
+            "environments": [
+              "document",
+              "frame"
+            ],
+            "template_commands": []
+          },
+          "paragraph_map": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "paragraph",
+              "section": "",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Este archivo canónico se materializa para que el motor inteligente desarrolle el brief conforme a la planeación y los contenidos oficiales de la semana 7.",
+              "latex": "Este archivo canónico se materializa para que el motor inteligente desarrolle el brief conforme a la planeación y los contenidos oficiales de la semana 7.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-7.tex"
+            }
+          ],
+          "content_blocks": [
+            {
+              "id": "b0001",
+              "order": 1,
+              "kind": "paragraph",
+              "section": "",
+              "subsection": "",
+              "paragraph_heading": "",
+              "text": "Este archivo canónico se materializa para que el motor inteligente desarrolle el brief conforme a la planeación y los contenidos oficiales de la semana 7.",
+              "latex": "Este archivo canónico se materializa para que el motor inteligente desarrolle el brief conforme a la planeación y los contenidos oficiales de la semana 7.",
+              "cited_keys": [],
+              "bibliography": [],
+              "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-7.tex"
             }
           ],
           "citation_map": {},
@@ -6115,6 +6177,64 @@
         "citation_map": {},
         "all_cited_keys": [],
         "missing_bibliography_keys": []
+      },
+      "presentacion": {
+        "relative_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-7.tex",
+        "raw_latex_sha256": "1421f2caceef3854722ada09ebe07d126dd70b267a2417c403bf06cfab28e293",
+        "raw_latex_chars": 741,
+        "raw_latex": "\\documentclass[spanish,aspectratio=169]{beamer}\n\\usepackage[utf8]{inputenc}\n\\usepackage[T1]{fontenc}\n\\usepackage[spanish,es-tabla]{babel}\n\\usepackage{graphicx}\n\\usepackage{hyperref}\n\\title{Brief profesional del despacho jurídico digital}\n\\subtitle{Actividad 7 · Interaprendizaje en ambientes virtuales}\n\\author{Martin Jonathan de la Cruz · ES2611202040}\n\\institute{Universidad Abierta y a Distancia de México · Licenciatura en Derecho}\n\\date{23 de agosto de 2026}\n\\begin{document}\n\\begin{frame}\\titlepage\\end{frame}\n\\begin{frame}{Actividad 7 en construcción}\nEste archivo canónico se materializa para que el motor inteligente desarrolle el brief conforme a la planeación y los contenidos oficiales de la semana 7.\n\\end{frame}\n\\end{document}\n",
+        "functional_structure": {
+          "documentclass": {
+            "class": "beamer",
+            "options": "spanish,aspectratio=169"
+          },
+          "packages": [
+            "inputenc",
+            "fontenc",
+            "babel",
+            "graphicx",
+            "hyperref"
+          ],
+          "inputs": [],
+          "environments": [
+            "document",
+            "frame"
+          ],
+          "template_commands": []
+        },
+        "paragraph_map": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "paragraph",
+            "section": "",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Este archivo canónico se materializa para que el motor inteligente desarrolle el brief conforme a la planeación y los contenidos oficiales de la semana 7.",
+            "latex": "Este archivo canónico se materializa para que el motor inteligente desarrolle el brief conforme a la planeación y los contenidos oficiales de la semana 7.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-7.tex"
+          }
+        ],
+        "content_blocks": [
+          {
+            "id": "b0001",
+            "order": 1,
+            "kind": "paragraph",
+            "section": "",
+            "subsection": "",
+            "paragraph_heading": "",
+            "text": "Este archivo canónico se materializa para que el motor inteligente desarrolle el brief conforme a la planeación y los contenidos oficiales de la semana 7.",
+            "latex": "Este archivo canónico se materializa para que el motor inteligente desarrolle el brief conforme a la planeación y los contenidos oficiales de la semana 7.",
+            "cited_keys": [],
+            "bibliography": [],
+            "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/presentacion-interaprendizaje-en-ambientes-virtuales-Actividad-7.tex"
+          }
+        ],
+        "citation_map": {},
+        "all_cited_keys": [],
+        "missing_bibliography_keys": []
       }
     },
     "primary": {
@@ -7365,18 +7485,6 @@
         "note": "Bibliografía complementaria de la semana 2",
         "raw_entry": "@book{diazAlonso2011construccion,\n  author = {Díaz, Raúl and Alonso, Graciela},\n  title = {Construcción de espacios interculturales},\n  edition = {2},\n  year = {2011},\n  publisher = {Miño y Dávila},\n  address = {Buenos Aires},\n  note = {Bibliografía complementaria de la semana 2}\n}"
       },
-      "oit1691989": {
-        "key": "oit1691989",
-        "source_type": "bibtex",
-        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
-        "entry_type": "misc",
-        "title": "Convenio 169 sobre pueblos indígenas y tribales en países independientes",
-        "author": "Organización Internacional del Trabajo",
-        "year": "1989",
-        "url": "https://www.gob.mx/cms/uploads/attachment/file/30118/Convenio169.pdf",
-        "note": "Normatividad gubernamental relacionada con la asignatura",
-        "raw_entry": "@misc{oit1691989,\n  author = {{Organización Internacional del Trabajo}},\n  title = {Convenio 169 sobre pueblos indígenas y tribales en países independientes},\n  year = {1989},\n  howpublished = {\\url{https://www.gob.mx/cms/uploads/attachment/file/30118/Convenio169.pdf}},\n  note = {Normatividad gubernamental relacionada con la asignatura}\n}\n\n% --- Materiales de la Semana 4 (Actividad 4: Brújula de Interaprendizaje) ---"
-      },
       "cushpa2022pacie": {
         "key": "cushpa2022pacie",
         "source_type": "bibtex",
@@ -7399,6 +7507,18 @@
         "url": "http://dspace.utb.edu.ec/handle/49000/2808",
         "note": "Bibliografía general de la semana 3",
         "raw_entry": "@mastersthesis{silva2015metodologias,\n  author = {Silva Zambrano, Rosa Inés},\n  title = {Metodologías activas en el interaprendizaje de educación básica superior en los estudiantes de la Unidad Educativa José Rodríguez Labandera, área de estudios sociales, cantón Quevedo, provincia Los Ríos},\n  year = {2015},\n  school = {Universidad Técnica de Babahoyo},\n  type = {Tesis de licenciatura},\n  url = {http://dspace.utb.edu.ec/handle/49000/2808},\n  note = {Bibliografía general de la semana 3}\n}"
+      },
+      "oit1691989": {
+        "key": "oit1691989",
+        "source_type": "bibtex",
+        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/interaprendizaje-en-ambientes-virtuales.bib",
+        "entry_type": "misc",
+        "title": "Convenio 169 sobre pueblos indígenas y tribales en países independientes",
+        "author": "Organización Internacional del Trabajo",
+        "year": "1989",
+        "url": "https://www.gob.mx/cms/uploads/attachment/file/30118/Convenio169.pdf",
+        "note": "Normatividad gubernamental relacionada con la asignatura",
+        "raw_entry": "@misc{oit1691989,\n  author = {{Organización Internacional del Trabajo}},\n  title = {Convenio 169 sobre pueblos indígenas y tribales en países independientes},\n  year = {1989},\n  howpublished = {\\url{https://www.gob.mx/cms/uploads/attachment/file/30118/Convenio169.pdf}},\n  note = {Normatividad gubernamental relacionada con la asignatura}\n}\n\n% --- Materiales de la Semana 4 (Actividad 4: Brújula de Interaprendizaje) ---"
       },
       "bautista2016didactica": {
         "key": "bautista2016didactica",
@@ -7484,118 +7604,6 @@
         "url": "https://unesdoc.unesco.org/ark:/48223/pf0000113878_spa",
         "note": "Normatividad internacional relacionada con la asignatura",
         "raw_entry": "@misc{unesco1998declaracion,\n  author = {{UNESCO}},\n  title = {Declaración mundial sobre la educación superior en el siglo XXI: Visión y acción},\n  year = {1998},\n  howpublished = {\\url{https://unesdoc.unesco.org/ark:/48223/pf0000113878_spa}},\n  note = {Normatividad internacional relacionada con la asignatura}\n}\n\n% --- Materiales de la Semana 7 (Actividad 7: Brief profesional) ---"
-      },
-      "zambrano2020tecnologias": {
-        "key": "zambrano2020tecnologias",
-        "source_type": "bibtex",
-        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "entry_type": "book",
-        "title": "Tecnologías educativas para el interaprendizaje",
-        "author": "Zambrano-Pilay, Edith and Chiriboga-Dávalos, Jaime and Chiriboga-Mendoza, Fidel",
-        "year": "2020",
-        "publisher": "Editorial Académica",
-        "raw_entry": "@book{zambrano2020tecnologias,\n  author    = {Zambrano-Pilay, Edith and Chiriboga-Dávalos, Jaime and Chiriboga-Mendoza, Fidel},\n  year      = {2020},\n  title     = {Tecnologías educativas para el interaprendizaje},\n  publisher = {Editorial Académica}\n}"
-      },
-      "cushpa2022metodologia": {
-        "key": "cushpa2022metodologia",
-        "source_type": "bibtex",
-        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "entry_type": "book",
-        "title": "Metodología PACIE en el interaprendizaje",
-        "author": "Cushpa Inchiglema, Raúl Clemente",
-        "year": "2022",
-        "publisher": "Editorial Académica",
-        "raw_entry": "@book{cushpa2022metodologia,\n  author    = {Cushpa Inchiglema, Raúl Clemente},\n  year      = {2022},\n  title     = {Metodología PACIE en el interaprendizaje},\n  publisher = {Editorial Académica}\n}"
-      },
-      "lopez2022estudio": {
-        "key": "lopez2022estudio",
-        "source_type": "bibtex",
-        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "entry_type": "misc",
-        "title": "Estudio de caso. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje",
-        "author": "López, A.",
-        "year": "2022",
-        "note": "Universidad Abierta y a Distancia de México. Disponible en https://100tecnicasdidacticas.unadmexico.mx/",
-        "raw_entry": "@misc{lopez2022estudio,\n  author = {López, A.},\n  year   = {2022},\n  title  = {Estudio de caso. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje},\n  note   = {Universidad Abierta y a Distancia de México. Disponible en https://100tecnicasdidacticas.unadmexico.mx/}\n}"
-      },
-      "constitucion2026": {
-        "key": "constitucion2026",
-        "source_type": "bibtex",
-        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "entry_type": "misc",
-        "title": "Constitución Política de los Estados Unidos Mexicanos",
-        "author": "Cámara de Diputados del H. Congreso de la Unión",
-        "year": "2026",
-        "publisher": "Diario Oficial de la Federación",
-        "note": "Última reforma: 2 de junio de 2026. Disponible en https://www.diputados.gob.mx/",
-        "raw_entry": "@misc{constitucion2026,\n  author       = {{Cámara de Diputados del H. Congreso de la Unión}},\n  year         = {2026},\n  title        = {Constitución Política de los Estados Unidos Mexicanos},\n  publisher    = {Diario Oficial de la Federación},\n  note         = {Última reforma: 2 de junio de 2026. Disponible en https://www.diputados.gob.mx/}\n}"
-      },
-      "lgdl2003": {
-        "key": "lgdl2003",
-        "source_type": "bibtex",
-        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "entry_type": "misc",
-        "title": "Ley General de Derechos Lingüísticos de los Pueblos Indígenas",
-        "author": "Congreso de la Unión",
-        "year": "2003",
-        "publisher": "Diario Oficial de la Federación",
-        "raw_entry": "@misc{lgdl2003,\n  author       = {{Congreso de la Unión}},\n  year         = {2003},\n  title        = {Ley General de Derechos Lingüísticos de los Pueblos Indígenas},\n  publisher    = {Diario Oficial de la Federación},\n  month        = {marzo},\n  day          = {13}\n}"
-      },
-      "oit1989": {
-        "key": "oit1989",
-        "source_type": "bibtex",
-        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "entry_type": "misc",
-        "title": "Convenio sobre Pueblos Indígenas y Tribales en Países Independientes (Convenio 169)",
-        "author": "Organización Internacional del Trabajo",
-        "year": "1989",
-        "note": "Adoptado en 1989, ratificado por México en 1990",
-        "raw_entry": "@misc{oit1989,\n  author       = {{Organización Internacional del Trabajo}},\n  year         = {1989},\n  title        = {Convenio sobre Pueblos Indígenas y Tribales en Países Independientes (Convenio 169)},\n  note         = {Adoptado en 1989, ratificado por México en 1990}\n}"
-      },
-      "escjn2020protocolo": {
-        "key": "escjn2020protocolo",
-        "source_type": "bibtex",
-        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "entry_type": "misc",
-        "title": "Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas",
-        "author": "Suprema Corte de Justicia de la Nación",
-        "year": "2020",
-        "publisher": "SCJN",
-        "raw_entry": "@misc{escjn2020protocolo,\n  author       = {{Suprema Corte de Justicia de la Nación}},\n  year         = {2020},\n  title        = {Protocolo para Juzgar con Perspectiva de Derechos Humanos de Pueblos Indígenas},\n  publisher    = {SCJN}\n}"
-      },
-      "bertely2013interaprendizajes": {
-        "key": "bertely2013interaprendizajes",
-        "source_type": "bibtex",
-        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "entry_type": "book",
-        "title": "Interaprendizajes entre indígenas. Tomos I y II",
-        "author": "Bertely Busquets, María",
-        "year": "2013",
-        "publisher": "Editorial académica",
-        "raw_entry": "@book{bertely2013interaprendizajes,\n  author    = {Bertely Busquets, María},\n  year      = {2013},\n  title     = {Interaprendizajes entre indígenas. Tomos I y II},\n  publisher = {Editorial académica}\n}"
-      },
-      "pech2017manual": {
-        "key": "pech2017manual",
-        "source_type": "bibtex",
-        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "entry_type": "book",
-        "title": "Manual de comunicación intercultural",
-        "author": "Pech Salvador, Cynthia",
-        "year": "2017",
-        "publisher": "Editorial académica",
-        "raw_entry": "@book{pech2017manual,\n  author    = {Pech Salvador, Cynthia},\n  year      = {2017},\n  title     = {Manual de comunicación intercultural},\n  publisher = {Editorial académica}\n}"
-      },
-      "unesco1998": {
-        "key": "unesco1998",
-        "source_type": "bibtex",
-        "source_path": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/referencias.bib",
-        "entry_type": "misc",
-        "title": "Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción",
-        "author": "UNESCO",
-        "year": "1998",
-        "publisher": "UNESCO",
-        "note": "Conferencia Mundial sobre Educación Superior. París, 5-9 de octubre de 1998",
-        "raw_entry": "@misc{unesco1998,\n  author       = {{UNESCO}},\n  year         = {1998},\n  title        = {Declaración Mundial sobre la Educación Superior en el Siglo XXI: Visión y Acción},\n  publisher    = {UNESCO},\n  note         = {Conferencia Mundial sobre Educación Superior. París, 5-9 de octubre de 1998}\n}"
       },
       "cangasOna2020interaprendizaje": {
         "key": "cangasOna2020interaprendizaje",
