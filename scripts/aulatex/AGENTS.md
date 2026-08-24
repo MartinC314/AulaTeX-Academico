@@ -42,3 +42,8 @@ Each agent run writes:
 - Never hardcode credentials.
 - Keep LLM calls routed through `AulaTeXLLMClient`.
 - Keep fragile tools wrapped through `safe_invoke` or `graceful_fallback`.
+- Never copy credentials, encrypted secrets, PII or private document contents into notebooks, model cards, manifests or logs.
+- Keep real datasets, checkpoints and model weights outside Git; version only code, configuration, tests and small manifests.
+- Split training/evaluation by target or subject, never by related rows, to prevent leakage.
+- Reject learned judges below their documented validation threshold.
+- When the AulaTeX template is loaded, generate `\insertimage` or `images`/`\addimage`; do not emit manual `figure` + `\includegraphics`.

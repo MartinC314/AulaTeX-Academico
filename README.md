@@ -4,6 +4,33 @@ Entorno academico en LaTeX organizado por institucion, con una base comun de
 plantillas Pizarror y puntos de entrada canonicos para reportes, actividades,
 presentaciones y bibliografias.
 
+## Entrenamiento del motor inteligente
+
+La ruta progresiva está en `notebooks/`, desde la verificación de la GPU hasta
+la evaluación y publicación del adaptador. La lógica reutilizable vive en
+`scripts/aulatex_training/`; los notebooks no duplican el motor editorial.
+
+El modelo no es un único archivo que haga peticiones. El sistema desplegable
+combina el modelo base, un adaptador LoRA, tokenizer/configuración y código de
+inferencia. Git conserva código, configuración, pruebas y manifiestos pequeños.
+Los corpus privados, checkpoints y pesos quedan en `data/private/`,
+`checkpoints/` y `models/local/`, ignorados por Git; la copia canónica debe
+publicarse en S3 con versionado y cifrado.
+
+Orden recomendado:
+
+1. `00_entorno_y_gpu.ipynb`
+2. `01_inventario_privacidad.ipynb`
+3. `02_construccion_corpus.ipynb`
+4. `03_analisis_y_splits.ipynb`
+5. `04_reward_model.ipynb`
+6. `05_sft_lora_generador.ipynb`
+7. `06_evaluacion_exportacion.ipynb`
+
+La estación A10G ejecuta pruebas y LoRA/QLoRA; para QLoRA se prefiere WSL2 o
+Linux si `bitsandbytes` no funciona en Windows nativo. Nunca se copian secretos
+a notebooks, datasets, salidas ni manifiestos.
+
 ## Flujo Principal
 
 - Automatizacion de compilacion y exportacion: `scripts/`.- Entrada recomendada para trabajo editorial: `scripts/aulatex.ps1`.

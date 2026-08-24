@@ -74,6 +74,30 @@ base/Template-Tesis/
 .aulatex-temp/
 retroalimentacion-editorial/
 salidas/
+
+# Entrenamiento: Git conserva código/configuración/manifiestos, no datos ni pesos.
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+data/private/*
+!data/private/.gitkeep
+models/local/
+checkpoints/
+artifacts/
+outputs/
+runs/
+wandb/
+tensorboard/
+hf_cache/
+.cache/huggingface/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+adapter_model.*
+trainer_state.json
+optimizer.pt
+scheduler.pt
+
 # .venv: versionar la carpeta pero ignorar su contenido (ver .venv/.gitignore),
 # excepto el script de reconstruccion install-venv.ps1
 .venv/*
