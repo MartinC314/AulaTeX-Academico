@@ -155,8 +155,10 @@ $requirements = @(
 
 # training y tfhub pesan varios GB y solo hacen falta para entrenar modelos.
 if ($Full) {
-    $requirements += "scripts\requirements-training.txt"
+    # sentence-transformers permite transformers <6. Se instala primero para que
+    # requirements-training.txt aplique al final el rango validado transformers <5.
     $requirements += "scripts\extractor-conceptos-ideas\requirements-tfhub.txt"
+    $requirements += "scripts\requirements-training.txt"
 }
 
 foreach ($rel in $requirements) {
@@ -184,6 +186,10 @@ $corePackages = @(
 & $venvPython -m pip install @corePackages
 if ($LASTEXITCODE -ne 0) { throw "Fallo la instalacion de las dependencias directas o de validacion." }
 
+Write-Host "==> Comprobando consistencia de dependencias..."
+& $venvPython -m pip check
+if ($LASTEXITCODE -ne 0) { throw "pip check detecto dependencias incompatibles." }
+
 # --- Verificacion --------------------------------------------------------------
 Write-Host ""
 Write-Host "==> Verificando modulos requeridos..."
@@ -193,6 +199,9 @@ $modules = @(
     'langgraph', 'anthropic', 'numpy', 'pandas', 'sklearn', 'openpyxl',
     'fitz', 'docx', 'pypdf', 'telegram', 'boto3', 'pytest'
 )
+if ($Full) {
+    $modules += @('torch', 'transformers', 'datasets', 'accelerate', 'peft', 'trl')
+}
 $missing = @()
 foreach ($m in $modules) {
     & $venvPython -c "import $m" 2>$null
@@ -208,6 +217,11 @@ Write-Host ""
 if ($missing.Count -gt 0) {
     Write-Warning "Faltan $($missing.Count) modulo(s): $($missing -join ', ')"
     exit 1
+}
+
+if ($Full) {
+    & $venvPython -c "import transformers; major=int(transformers.__version__.split('.')[0]); assert major < 5, f'transformers {transformers.__version__} no esta soportado (se requiere <5)'"
+    if ($LASTEXITCODE -ne 0) { throw "La version instalada de transformers no cumple el contrato de entrenamiento." }
 }
 
 Write-Host "==> Entorno virtual configurado correctamente." -ForegroundColor Green

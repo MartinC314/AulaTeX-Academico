@@ -1,3 +1,5 @@
 # TensorFlow no publica ruedas para Python 3.14; sentence-transformers lo sustituye
 # reutilizando el torch/transformers que ya instala requirements-training.txt.
-sentence-transformers>=5.0.0
+# La serie 6 exige transformers>=5, mientras el stack de entrenamiento validado
+# usa transformers<5; mantener ambas restricciones evita un entorno incoherente.
+sentence-transformers>=5.0.0,<6
