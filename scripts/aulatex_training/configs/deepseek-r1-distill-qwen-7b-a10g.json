@@ -2,6 +2,7 @@
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
   "trust_remote_code": false,
   "direct_response_prefix": "</think>\n",
+  "generation_instruction": "Responde exclusivamente con LaTeX, sin explicación ni Markdown. Limita el cuerpo a 700 palabras. Incluye obligatoriamente \\section{Introducción}, una sola sección temática de desarrollo y \\section{Conclusiones}; escribe Conclusiones antes de agotar la respuesta. Usa únicamente las claves de cita permitidas.",
   "quantization": "4bit",
   "bf16": true,
   "max_seq_length": 2048,

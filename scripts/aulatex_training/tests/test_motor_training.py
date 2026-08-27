@@ -8,6 +8,7 @@ import pytest
 from scripts.aulatex_training.motor_training import (
     SCHEMA_VERSION,
     assert_no_group_leakage,
+    compact_training_body,
     grouped_split,
     latex_generation_checks,
     privacy_findings,
@@ -15,6 +16,7 @@ from scripts.aulatex_training.motor_training import (
     validate_sft_row,
     write_jsonl,
 )
+from scripts.aulatex_training.evaluate_generator import apply_generation_contract
 from scripts.aulatex_training.train_generator import render_prompt
 
 
@@ -106,3 +108,31 @@ def test_mojibake_is_rejected() -> None:
     clean = latex_generation_checks(r"\section{Introducción}Texto bien codificado.")
     assert broken["has_mojibake"]
     assert not clean["has_mojibake"]
+
+
+def test_generation_contract_does_not_mutate_source() -> None:
+    source = row(1, "m")
+    original = source["messages"][-2]["content"]
+    contracted = apply_generation_contract(source, "Incluye conclusiones.")
+    assert source["messages"][-2]["content"] == original
+    assert contracted["messages"][-2]["content"].endswith("Incluye conclusiones.")
+
+
+def test_structural_compaction_preserves_three_acts() -> None:
+    text = (
+        "\\templatePortrait\n"
+        "\\section{Introduccion}\n" + "Inicio académico. " * 120 + "\n\n"
+        "\\section{Tema jurídico}\n" + "Desarrollo argumentado. " * 250 + "\n\n"
+        "\\section{Conclusion}\n" + "Cierre reflexivo. " * 120
+    )
+    compact = compact_training_body(text, max_chars=3600)
+    checks = latex_generation_checks(compact)
+    assert len(compact) <= 3600
+    assert checks["has_introduction"]
+    assert checks["has_conclusion"]
+    assert "\\section{Tema jurídico}" in compact
+
+
+def test_singular_accented_conclusion_is_detected() -> None:
+    result = latex_generation_checks(r"\section{Conclusión}Cierre.")
+    assert result["has_conclusion"]

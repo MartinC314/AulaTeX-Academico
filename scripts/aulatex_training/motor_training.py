@@ -142,13 +142,81 @@ def document_body(text: str) -> str:
     return re.sub(r"\n{3,}", "\n\n", body).strip()
 
 
-def compact_training_body(text: str, max_chars: int = 9000) -> str:
-    """Conserva inicio y cierre para enseñar estructura dentro de contextos cortos."""
-    if len(text) <= max_chars:
+def _section_key(title: str) -> str:
+    """Normaliza un título para reconocer variantes acentuadas."""
+    import unicodedata
+
+    plain = unicodedata.normalize("NFKD", title)
+    return "".join(char for char in plain if not unicodedata.combining(char)).strip().lower()
+
+
+def _clip_latex_block(text: str, limit: int) -> str:
+    """Recorta en frontera de párrafo y evita dejar grupos/entornos abiertos."""
+    text = text.strip()
+    if len(text) <= limit:
         return text
-    head_chars = int(max_chars * 0.65)
-    tail_chars = max_chars - head_chars
-    return text[:head_chars].rstrip() + "\n\n% [CONTENIDO INTERMEDIO OMITIDO]\n\n" + text[-tail_chars:].lstrip()
+    candidate = text[:limit]
+    boundary = candidate.rfind("\n\n")
+    if boundary >= limit // 2:
+        candidate = candidate[:boundary]
+    lines = candidate.rstrip().splitlines()
+    while lines:
+        value = "\n".join(lines).rstrip()
+        active = re.sub(r"(?<!\\)%.*$", "", value, flags=re.MULTILINE)
+        brace_balance = active.count("{") - active.count("}")
+        begins = re.findall(r"\\begin\{([^}]+)\}", active)
+        ends = re.findall(r"\\end\{([^}]+)\}", active)
+        if brace_balance == 0 and sorted(begins) == sorted(ends):
+            return value
+        lines.pop()
+    return ""
+
+
+def compact_training_body(text: str, max_chars: int = 3600) -> str:
+    """Construye un objetivo corto con introducción, desarrollo y conclusión.
+
+    La selección ocurre por secciones completas para que el cierre permanezca
+    dentro de una ventana de 2048 tokens y no se enseñen fragmentos truncados.
+    """
+    matches = list(re.finditer(r"\\section\*?\{([^{}]+)\}", text, re.IGNORECASE))
+    if not matches:
+        return _clip_latex_block(text, max_chars)
+
+    sections: list[tuple[str, str]] = []
+    for index, match in enumerate(matches):
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
+        sections.append((match.group(1).strip(), text[match.end():end].strip()))
+
+    intro_index = next(
+        (index for index, (title, _) in enumerate(sections) if _section_key(title).startswith("introduc")),
+        None,
+    )
+    conclusion_index = next(
+        (index for index, (title, _) in reversed(list(enumerate(sections)))
+         if _section_key(title).startswith("conclusion")),
+        None,
+    )
+    if intro_index is None or conclusion_index is None or intro_index >= conclusion_index:
+        head = _clip_latex_block(text, int(max_chars * 0.65))
+        tail = _clip_latex_block(text[-int(max_chars * 0.35):], int(max_chars * 0.35))
+        return head + "\n\n% [CONTENIDO INTERMEDIO OMITIDO]\n\n" + tail
+
+    middle_index = next(
+        (index for index in range(intro_index + 1, conclusion_index)),
+        intro_index,
+    )
+    middle_title, middle_content = sections[middle_index]
+    prefix = _clip_latex_block(text[:matches[intro_index].start()], 300)
+    introduction = _clip_latex_block(sections[intro_index][1], 750)
+    development = _clip_latex_block(middle_content, 1550)
+    conclusion = _clip_latex_block(sections[conclusion_index][1], 850)
+    parts = [prefix] if prefix else []
+    parts.extend([
+        "\\section{Introducción}\n" + introduction,
+        f"\\section{{{middle_title}}}\n" + development,
+        "\\section{Conclusiones}\n" + conclusion,
+    ])
+    return "\n\n".join(part.rstrip() for part in parts if part.strip())[:max_chars].rstrip()
 
 
 def sha256_text(text: str) -> str:
@@ -383,7 +451,7 @@ def latex_generation_checks(text: str, allowed_citation_keys: Sequence[str] = ()
     mojibake = bool(re.search(r"(?:A[?0-9][A-Za-z]|\ufffd|Ã.|Â.)", text))
     return {
         "has_introduction": bool(re.search(r"\\section\*?\{Introducci[oó]n\}", text, re.I)),
-        "has_conclusion": bool(re.search(r"\\section\*?\{Conclusiones?\}", text, re.I)),
+        "has_conclusion": bool(re.search(r"\\section\*?\{Conclusi(?:[oó]n|ones)\}", text, re.I)),
         "has_literal_development_heading": bool(re.search(r"\\section\*?\{Desarrollo\}", text, re.I)),
         "unknown_citation_keys": sorted(cited - allowed) if allowed else [],
         "uses_manual_includegraphics": manual_images,

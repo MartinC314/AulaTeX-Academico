@@ -16,6 +16,17 @@ from .motor_training import latex_generation_checks, read_jsonl
 from .train_generator import load_config, render_prompt
 
 
+def apply_generation_contract(row: dict[str, Any], instruction: str) -> dict[str, Any]:
+    """Agrega restricciones de salida sin modificar el ejemplo original."""
+    if not instruction:
+        return row
+    cloned = {**row, "messages": [dict(message) for message in row["messages"]]}
+    cloned["messages"][-2]["content"] = (
+        cloned["messages"][-2]["content"].rstrip() + "\n\n" + instruction.strip()
+    )
+    return cloned
+
+
 def _generate(model: Any, tokenizer: Any, prompt: str, max_new_tokens: int) -> str:
     import torch
 
@@ -58,8 +69,10 @@ def evaluate(config_path: Path, adapter_dir: Path, eval_file: Path,
 
     results: list[dict[str, Any]] = []
     direct_response_prefix = str(config.get("direct_response_prefix", ""))
+    generation_instruction = str(config.get("generation_instruction", ""))
     for row in rows:
-        prompt = render_prompt(row, tokenizer, direct_response_prefix)
+        inference_row = apply_generation_contract(row, generation_instruction)
+        prompt = render_prompt(inference_row, tokenizer, direct_response_prefix)
         with model.disable_adapter():
             base_text = _generate(model, tokenizer, prompt, max_new_tokens)
         adapted_text = _generate(model, tokenizer, prompt, max_new_tokens)
