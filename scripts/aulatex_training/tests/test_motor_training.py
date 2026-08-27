@@ -15,6 +15,7 @@ from scripts.aulatex_training.motor_training import (
     validate_sft_row,
     write_jsonl,
 )
+from scripts.aulatex_training.train_generator import render_prompt
 
 
 def row(index: int, group: str) -> dict:
@@ -75,3 +76,33 @@ def test_native_image_rule() -> None:
 def test_unknown_citations() -> None:
     result = latex_generation_checks(r"Texto \cite{permitida,inventada}.", ["permitida"])
     assert result["unknown_citation_keys"] == ["inventada"]
+
+
+def test_reasoning_prefix_is_rejected() -> None:
+    reasoning = latex_generation_checks("Okay, I need to plan this activity first.\\section{Introducción}")
+    direct = latex_generation_checks(r"\section{Introducción}Texto directo.")
+    assert reasoning["has_reasoning_prefix"]
+    assert not reasoning["starts_with_latex"]
+    assert not direct["has_reasoning_prefix"]
+    assert direct["starts_with_latex"]
+
+
+def test_deepseek_direct_prefix_closes_think_block() -> None:
+    class Tokenizer:
+        chat_template = "template"
+
+        @staticmethod
+        def apply_chat_template(messages, tokenize=False, add_generation_prompt=True):
+            assert tokenize is False
+            assert add_generation_prompt is True
+            return "<｜Assistant｜><think>\n"
+
+    prompt = render_prompt(row(1, "m"), Tokenizer(), "</think>\n")
+    assert prompt.endswith("<think>\n</think>\n")
+
+
+def test_mojibake_is_rejected() -> None:
+    broken = latex_generation_checks(r"\section{IntroducciA3n}Texto con codificaciA3n rota.")
+    clean = latex_generation_checks(r"\section{Introducción}Texto bien codificado.")
+    assert broken["has_mojibake"]
+    assert not clean["has_mojibake"]

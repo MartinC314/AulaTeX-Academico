@@ -142,6 +142,15 @@ def document_body(text: str) -> str:
     return re.sub(r"\n{3,}", "\n\n", body).strip()
 
 
+def compact_training_body(text: str, max_chars: int = 9000) -> str:
+    """Conserva inicio y cierre para enseñar estructura dentro de contextos cortos."""
+    if len(text) <= max_chars:
+        return text
+    head_chars = int(max_chars * 0.65)
+    tail_chars = max_chars - head_chars
+    return text[:head_chars].rstrip() + "\n\n% [CONTENIDO INTERMEDIO OMITIDO]\n\n" + text[-tail_chars:].lstrip()
+
+
 def sha256_text(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
@@ -203,12 +212,26 @@ def make_instruction(path: Path, root: Path, text: str) -> str:
     )
 
 
-def build_sft_rows(root: Path, *, strict_privacy: bool = True) -> tuple[list[dict[str, Any]], list[PrivacyFinding]]:
+def build_sft_rows(root: Path, *, strict_privacy: bool = True,
+                   min_score: float = 0.0) -> tuple[list[dict[str, Any]], list[PrivacyFinding]]:
     rows: list[dict[str, Any]] = []
     findings: list[PrivacyFinding] = []
     seen: set[str] = set()
+    score_of = None
+    if min_score > 0:
+        sys.path.insert(0, str(root / "scripts"))
+        from aulatex.activity_optimizer import ActivityOptimizer
+
+        optimizer = ActivityOptimizer.__new__(ActivityOptimizer)
+        optimizer._current_concepts = None
+        score_of = optimizer._quality_score
     for path in iter_activity_tex(root):
         full_text = read_utf8(path)
+        if "POR DEFINIR" in full_text:
+            continue
+        score = float(score_of(full_text)) if score_of is not None else None
+        if score is not None and score < min_score:
+            continue
         body = document_body(full_text)
         if len(body) < MIN_DOCUMENT_CHARS:
             continue
@@ -218,6 +241,7 @@ def build_sft_rows(root: Path, *, strict_privacy: bool = True) -> tuple[list[dic
         if current and strict_privacy:
             continue
         clean, _ = redact_text(body)
+        clean = compact_training_body(clean)
         fingerprint = sha256_text(re.sub(r"\s+", " ", clean).strip())
         if fingerprint in seen:
             continue
@@ -235,6 +259,9 @@ def build_sft_rows(root: Path, *, strict_privacy: bool = True) -> tuple[list[dic
             ],
             "allowed_citation_keys": extract_bib_keys(clean),
             "content_sha256": fingerprint,
+            "validation_score": round(score, 2) if score is not None else None,
+            "validation_rule": f"quality_score>={min_score:g}" if min_score > 0 else "unfiltered",
+            "compacted_for_training": len(body) > len(clean),
         })
     return rows, findings
 
@@ -351,6 +378,9 @@ def latex_generation_checks(text: str, allowed_citation_keys: Sequence[str] = ()
     allowed = set(allowed_citation_keys)
     manual_images = bool(re.search(r"\\includegraphics", text))
     native_images = any(command in text for command in NATIVE_IMAGE_COMMANDS)
+    starts_with_latex = bool(re.match(r"\s*(?:```(?:latex|tex)?\s*)?\\", text, re.I))
+    reasoning_prefix = bool(re.match(r"\s*(?:Okay|We need|I need|Let me|First,|Alright)", text, re.I))
+    mojibake = bool(re.search(r"(?:A[?0-9][A-Za-z]|\ufffd|Ã.|Â.)", text))
     return {
         "has_introduction": bool(re.search(r"\\section\*?\{Introducci[oó]n\}", text, re.I)),
         "has_conclusion": bool(re.search(r"\\section\*?\{Conclusiones?\}", text, re.I)),
@@ -360,4 +390,7 @@ def latex_generation_checks(text: str, allowed_citation_keys: Sequence[str] = ()
         "uses_native_image_commands": native_images,
         "native_image_rule_ok": not manual_images or native_images,
         "has_placeholders": bool(re.search(r"\b(?:TODO|TBD|pendiente|lorem ipsum)\b", text, re.I)),
+        "starts_with_latex": starts_with_latex,
+        "has_reasoning_prefix": reasoning_prefix,
+        "has_mojibake": mojibake,
     }

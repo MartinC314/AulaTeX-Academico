@@ -126,13 +126,17 @@ def institution_of(path: Path, root: Path) -> str:
 
 
 # ------------------------------------------------------------------ reward set
-def build_reward_rows(root: Path, score_of: Any) -> list[dict[str, Any]]:
+def build_reward_rows(root: Path, score_of: Any,
+                      min_score: float = 0.0) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     seen: set[str] = set()
 
     for path in iter_activity_tex(root):
         text = read_text(path)
-        if len(text) < MIN_TEX_CHARS:
+        if len(text) < MIN_TEX_CHARS or "POR DEFINIR" in text:
+            continue
+        score = float(score_of(text))
+        if score < min_score:
             continue
         # El score se mide sobre el documento completo; el modelo recibe solo el
         # cuerpo, que es donde vive la señal de calidad.
@@ -147,8 +151,8 @@ def build_reward_rows(root: Path, score_of: Any) -> list[dict[str, Any]]:
         activity = re.search(r"Actividad-(\d+)", path.name)
         rows.append({
             "text": body,
-            "score": round(float(score_of(text)), 2),
-            "source": "workspace",
+            "score": round(score, 2),
+            "source": "workspace-validated" if min_score > 0 else "workspace",
             "target": rel,
             "institution": institution_of(path, root),
             "activity_number": int(activity.group(1)) if activity else 0,
@@ -368,6 +372,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--out-dir", default="", help="Carpeta de salida del corpus.")
     parser.add_argument("--min-gain", type=float, default=DEFAULT_MIN_GAIN,
                         help="Ganancia minima de score para aceptar un par de preferencia.")
+    parser.add_argument("--min-score", type=float, default=0.0,
+                        help="Score editorial minimo del TEX; usa 95 para actividades validadas.")
     parser.add_argument("--no-git", action="store_true",
                         help="Omite el historial de git (mas rapido, menos pares).")
     args = parser.parse_args(argv)
@@ -379,7 +385,7 @@ def main(argv: list[str] | None = None) -> int:
     score_of = load_scorer()
 
     print("[corpus] recorriendo TEX del workspace...")
-    reward_rows = build_reward_rows(root, score_of)
+    reward_rows = build_reward_rows(root, score_of, args.min_score)
     print(f"[corpus] ejemplos reward        : {len(reward_rows)}")
 
     print("[corpus] extrayendo pares de preferencia"

@@ -48,6 +48,7 @@ Uso en la nube (GPU):
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import sys
@@ -102,6 +103,21 @@ def build_dataset(rows: list[dict[str, Any]], tokenizer, max_length: int):
 
     ds = ds.map(tokenize, batched=True, remove_columns=["text"])
     return ds
+
+
+def split_rows_by_source(rows: list[dict[str, Any]], test_ratio: float = 0.2):
+    """Separa por actividad fuente para impedir fuga entre original y degradaciones."""
+    groups: dict[str, list[dict[str, Any]]] = {}
+    for index, row in enumerate(rows):
+        target = str(row.get("source_target") or row.get("target") or f"row-{index}")
+        target = target.split("::", 1)[0]
+        groups.setdefault(target, []).append(row)
+    ordered = sorted(groups, key=lambda value: hashlib.sha256(value.encode("utf-8")).hexdigest())
+    n_test = max(1, round(len(ordered) * test_ratio))
+    test_groups = set(ordered[:n_test])
+    train_rows = [row for group, items in groups.items() if group not in test_groups for row in items]
+    test_rows = [row for group, items in groups.items() if group in test_groups for row in items]
+    return train_rows, test_rows
 
 
 def spearman(y_true, y_pred) -> float:
@@ -160,8 +176,10 @@ def train(args: argparse.Namespace) -> int:
         model_name, num_labels=1, problem_type="regression"
     )
 
-    ds = build_dataset(rows, tokenizer, args.max_length)
-    split = ds.train_test_split(test_size=0.2, seed=0)
+    train_rows, eval_rows = split_rows_by_source(rows)
+    print(f"[reward] split por actividad: train={len(train_rows)}, eval={len(eval_rows)}")
+    train_ds = build_dataset(train_rows, tokenizer, args.max_length)
+    eval_ds = build_dataset(eval_rows, tokenizer, args.max_length)
 
     def compute_metrics(eval_pred):
         preds = np.asarray(eval_pred.predictions).squeeze()
@@ -201,8 +219,8 @@ def train(args: argparse.Namespace) -> int:
     trainer = Trainer(
         model=model,
         args=training_args,
-        train_dataset=split["train"],
-        eval_dataset=split["test"],
+        train_dataset=train_ds,
+        eval_dataset=eval_ds,
         data_collator=DataCollatorWithPadding(tokenizer),
         compute_metrics=compute_metrics,
     )

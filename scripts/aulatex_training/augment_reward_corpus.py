@@ -228,8 +228,13 @@ DEGRADACIONES = [
 
 
 def iter_fuentes(root: Path, min_score: float, score_of):
-    base = root / "UnADM" / "licenciatura-en-derecho-unadm"
-    for tex in sorted(base.rglob("reporte-*Actividad-*.tex")):
+    excluded = {".git", ".venv", "base", "node_modules", "__pycache__"}
+    for tex in sorted(root.rglob("*.tex")):
+        if excluded.intersection(tex.parts):
+            continue
+        name = tex.name.lower()
+        if not name.startswith(("reporte-", "presentacion-")) or "actividad-" not in name:
+            continue
         texto = tex.read_text(encoding="utf-8", errors="ignore")
         if "POR DEFINIR" in texto or len(texto) < 400:
             continue
@@ -278,14 +283,16 @@ def main() -> int:
             if score - nuevo < args.min_drop:
                 descartadas += 1
                 continue
+            rel = tex.relative_to(REPO_ROOT).as_posix()
             filas.append({
                 "text": variante,
                 "score": round(nuevo, 2),
-                "source": "degradacion-sintetica",
-                "target": f"{tex.name}::{nombre}",
-                "institution": "UnADM",
+                "source": "degradacion-sintetica-validada",
+                "target": f"{rel}::{nombre}",
+                "source_target": rel,
+                "institution": rel.split("/", 1)[0],
                 "activity_number": None,
-                "kind": "reporte",
+                "kind": "presentacion" if tex.name.lower().startswith("presentacion-") else "reporte",
                 "degradacion": nombre,
                 "score_origen": round(score, 2),
             })

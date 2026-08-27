@@ -35,8 +35,11 @@ def validate_inputs(config: dict[str, Any], train_file: Path, eval_file: Path) -
     overlap = train_groups & eval_groups
     if overlap:
         raise ValueError(f"Fuga de grupos train/eval: {sorted(overlap)[:5]}")
+    if not train_rows or not eval_rows:
+        raise ValueError("Train y evaluación deben contener al menos un ejemplo.")
     return {
         "base_model": config["base_model"],
+        "direct_response_prefix": config.get("direct_response_prefix", ""),
         "train_rows": len(train_rows),
         "eval_rows": len(eval_rows),
         "train_groups": len(train_groups),
@@ -45,7 +48,32 @@ def validate_inputs(config: dict[str, Any], train_file: Path, eval_file: Path) -
     }
 
 
-def render_text(row: dict[str, Any], tokenizer: Any) -> str:
+def render_prompt(row: dict[str, Any], tokenizer: Any,
+                  direct_response_prefix: str = "") -> str:
+    messages = row["messages"][:-1]
+    if getattr(tokenizer, "chat_template", None):
+        prompt = tokenizer.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+    else:
+        prompt = (
+            "\n\n".join(
+                f"{message['role'].upper()}: {message['content']}"
+                for message in messages
+            )
+            + "\n\nASSISTANT:"
+        )
+    return prompt + direct_response_prefix
+
+
+def render_text(row: dict[str, Any], tokenizer: Any,
+                direct_response_prefix: str = "") -> str:
+    if direct_response_prefix:
+        return (
+            render_prompt(row, tokenizer, direct_response_prefix)
+            + row["messages"][-1]["content"]
+            + (tokenizer.eos_token or "")
+        )
     messages = row["messages"]
     if getattr(tokenizer, "chat_template", None):
         return tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=False)
@@ -110,12 +138,24 @@ def train(config: dict[str, Any], train_file: Path, eval_file: Path, output_dir:
     model = get_peft_model(model, peft_config)
 
     max_length = int(config["max_seq_length"])
+    direct_response_prefix = str(config.get("direct_response_prefix", ""))
+
     def encode(row: dict[str, Any]) -> dict[str, Any]:
+        full_text = render_text(row, tokenizer, direct_response_prefix)
+        prompt_text = render_prompt(row, tokenizer, direct_response_prefix)
         encoded = tokenizer(
-            render_text(row, tokenizer), truncation=True, max_length=max_length,
+            full_text, truncation=True, max_length=max_length,
             padding="max_length",
         )
-        encoded["labels"] = encoded["input_ids"].copy()
+        prompt_ids = tokenizer(
+            prompt_text, truncation=True, max_length=max_length,
+            add_special_tokens=False,
+        )["input_ids"]
+        labels = encoded["input_ids"].copy()
+        prompt_length = min(len(prompt_ids), len(labels))
+        labels[:prompt_length] = [-100] * prompt_length
+        labels = [label if mask else -100 for label, mask in zip(labels, encoded["attention_mask"])]
+        encoded["labels"] = labels
         return encoded
 
     train_ds = Dataset.from_list(train_rows).map(encode, remove_columns=list(train_rows[0].keys()))

@@ -24,13 +24,17 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--root", default=str(root_default))
     parser.add_argument("--out-dir", default="")
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--min-score", type=float, default=0.0,
+                        help="Score editorial mínimo; usa 95 para entrenar solo con actividades validadas.")
     parser.add_argument("--allow-redacted", action="store_true",
                         help="Incluye documentos con PII sustituyéndola; requiere revisión humana posterior.")
     args = parser.parse_args(argv)
 
     root = Path(args.root).resolve()
     out_dir = Path(args.out_dir).resolve() if args.out_dir else root / "data/private/processed"
-    rows, findings = build_sft_rows(root, strict_privacy=not args.allow_redacted)
+    rows, findings = build_sft_rows(
+        root, strict_privacy=not args.allow_redacted, min_score=args.min_score
+    )
     errors = [(row.get("target"), validate_sft_row(row)) for row in rows if validate_sft_row(row)]
     if errors:
         print(json.dumps(errors[:10], ensure_ascii=False, indent=2))
