@@ -188,8 +188,12 @@ Initialize-PerlForLatexmk
 
 $LatexmkExe = Resolve-LatexmkExecutable
 $LatexmkBin = Split-Path -Parent $LatexmkExe
-if ($LatexmkBin -and ($env:PATH -notlike "*$LatexmkBin*")) {
-    $env:PATH = "$LatexmkBin;$env:PATH"
+if ($LatexmkBin) {
+    # latexmk debe resolver pdflatex/bibtex desde la misma distribución. Aunque
+    # MiKTeX ya aparezca más tarde en PATH, TeX Live o Strawberry pueden ganar y
+    # producir una instalación híbrida sin los paquetes de MiKTeX.
+    $pathParts = @($env:PATH -split ';' | Where-Object { $_ -and $_ -ine $LatexmkBin })
+    $env:PATH = (@($LatexmkBin) + $pathParts) -join ';'
 }
 $ResolvedTex = Resolve-TexFile $TexFile
 $BuildRoot = Join-Path $ProjectRoot '.build'
