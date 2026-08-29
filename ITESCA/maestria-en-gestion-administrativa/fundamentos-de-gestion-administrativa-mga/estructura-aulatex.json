@@ -1,0 +1,22 @@
+{
+  "node": "fundamentos-de-gestion-administrativa-mga",
+  "slug": "fundamentos-de-gestion-administrativa",
+  "title": "Fundamentos de Gestion Administrativa",
+  "activity_number": 2,
+  "files": [
+    "fundamentos-de-gestion-administrativa.bib",
+    "reporte-fundamentos-de-gestion-administrativa.tex",
+    "reporte-fundamentos-de-gestion-administrativa-Actividad-2.tex",
+    "presentacion-fundamentos-de-gestion-administrativa.tex",
+    "presentacion-fundamentos-de-gestion-administrativa-Actividad-2.tex",
+    "programa-analitico-fundamentos-de-gestion-administrativa.md",
+    "COMPILACION-fundamentos-de-gestion-administrativa.md",
+    "README.md"
+  ],
+  "folders": [
+    "referencias-fundamentos-de-gestion-administrativa",
+    "planeaciones-fundamentos-de-gestion-administrativa",
+    "assets-fundamentos-de-gestion-administrativa"
+  ],
+  "memory_summary": []
+}

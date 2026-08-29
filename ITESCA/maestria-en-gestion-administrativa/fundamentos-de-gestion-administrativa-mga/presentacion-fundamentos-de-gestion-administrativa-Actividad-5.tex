@@ -1,0 +1,386 @@
+\documentclass[spanish,aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{booktabs}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,calc}
+\tikzset{every node/.append style={align=center}}
+
+\definecolor{itescaRedDark}{HTML}{8F1117}
+\definecolor{itescaRed}{HTML}{D70F18}
+\definecolor{itescaCharcoal}{HTML}{141414}
+\definecolor{itescaSilver}{HTML}{D9D9D9}
+\definecolor{itescaPaper}{HTML}{F5F5F5}
+\definecolor{itescaInk}{HTML}{181818}
+\definecolor{itescaMuted}{HTML}{626262}
+
+\usetheme{default}
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+\setbeamersize{text margin left=.65cm,text margin right=.65cm}
+\setbeamercolor{normal text}{fg=itescaInk,bg=white}
+\setbeamercolor{structure}{fg=itescaRedDark}
+\setbeamercolor{frametitle}{fg=white,bg=itescaCharcoal}
+\setbeamercolor{block title}{fg=white,bg=itescaRedDark}
+\setbeamercolor{block body}{fg=itescaInk,bg=itescaPaper}
+\setbeamercolor{alerted text}{fg=itescaRedDark}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{itemize item}{\textcolor{itescaRedDark}{$\blacktriangleright$}}
+\setbeamertemplate{itemize subitem}{\textcolor{itescaRed}{\scriptsize$\blacksquare$}}
+\hypersetup{colorlinks=true,urlcolor=itescaRedDark,linkcolor=itescaRedDark}
+
+\newcommand{\itescalogo}{ITESCA/assets-itesca/web/logo-itesca-contorno.png}
+\newcommand{\monograma}{ITESCA/assets-itesca/itesca-monograma.png}
+\newcommand{\fuente}[1]{\par\vspace{.12cm}{\tiny\color{itescaMuted}Fuente: #1}}
+\newcommand{\clave}[1]{\textcolor{itescaRedDark}{\textbf{#1}}}
+
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\textwidth,ht=.88cm,dp=.22cm,leftskip=.30cm,rightskip=.30cm]{frametitle}
+    \insertframetitle\hfill\raisebox{-.07cm}{\includegraphics[height=.37cm]{\itescalogo}}
+  \end{beamercolorbox}
+  {\color{itescaRed}\rule{\textwidth}{1.3pt}}
+}
+
+\setbeamertemplate{footline}{%
+  \leavevmode
+  \hbox{%
+    \begin{beamercolorbox}[wd=.32\paperwidth,ht=2.6ex,dp=1ex,leftskip=.6em]{author in head/foot}\color{white}\scriptsize Martin Jonathan de la Cruz\end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.46\paperwidth,ht=2.6ex,dp=1ex,center]{title in head/foot}\color{white}\scriptsize Evolución de la gestión\end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.22\paperwidth,ht=2.6ex,dp=1ex,rightskip=.6em plus 1fil]{date in head/foot}\color{white}\scriptsize\hfill\insertframenumber/\inserttotalframenumber\end{beamercolorbox}%
+  }
+}
+\setbeamercolor{author in head/foot}{bg=itescaCharcoal}
+\setbeamercolor{title in head/foot}{bg=itescaRedDark}
+\setbeamercolor{date in head/foot}{bg=itescaCharcoal}
+
+\title{De la organización orgánica al cambio organizacional}
+\subtitle{Actividad 5 · Video presentación · Unidad II}
+\author{Martin Jonathan de la Cruz}
+\institute{Instituto Tecnológico Superior de Cajeme · Maestría en Gestión Administrativa}
+\date{Agosto de 2026}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[itescaRedDark] (current page.south west) rectangle ([xshift=.59\paperwidth]current page.north west);
+    \fill[itescaCharcoal] ([xshift=.59\paperwidth]current page.south west) rectangle (current page.north east);
+    \node[opacity=.08] at ([xshift=2.8cm]current page.center) {\includegraphics[width=.58\paperwidth]{\monograma}};
+    \node[anchor=north west] at ([xshift=.55cm,yshift=-.45cm]current page.north west) {\includegraphics[width=3.9cm]{\itescalogo}};
+  \end{tikzpicture}
+  \vspace*{1.6cm}
+  \begin{minipage}{.54\paperwidth}
+    {\color{white}\fontsize{23}{27}\selectfont\bfseries De la organización orgánica al cambio organizacional\par}
+    \vspace{.25cm}{\color{itescaSilver}\large Actividad 5 · Video presentación}\par
+    \vspace{.45cm}{\color{white}\normalsize Martin Jonathan de la Cruz}\par
+    {\color{white!80}\small Matrícula: ES2611202040}\par
+  \end{minipage}
+  \hfill
+  \begin{minipage}{.34\paperwidth}\raggedleft
+    \includegraphics[width=.95\linewidth]{\itescalogo}\\[.35cm]
+    {\color{white}\small Maestría en Gestión Administrativa}\\
+    {\color{white!78}\footnotesize Fundamentos de Gestión Administrativa}\\[.35cm]
+    {\color{white!72}\footnotesize Unidad II · Agosto de 2026}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}{Una idea rectora}
+  \begin{center}
+    \begin{tikzpicture}[node distance=1.05cm, every node/.style={align=center}]
+      \node[draw=itescaRedDark,very thick,rounded corners,fill=itescaPaper,minimum width=3.25cm,minimum height=1.2cm] (o) {\textbf{Organización}\\sistema abierto};
+      \node[draw=itescaCharcoal,thick,rounded corners,fill=itescaSilver!40,right=of o,minimum width=3.25cm,minimum height=1.2cm] (e) {\textbf{Estrategia}\\dirección y recursos};
+      \node[draw=itescaRed,thick,rounded corners,fill=itescaRed!7,right=of e,minimum width=3.25cm,minimum height=1.2cm] (c) {\textbf{Cambio}\\redes y decisiones};
+      \draw[-{Latex[length=3mm]},very thick,itescaRedDark] (o)--(e);
+      \draw[-{Latex[length=3mm]},very thick,itescaRedDark] (e)--(c);
+    \end{tikzpicture}
+  \end{center}
+  \vspace{.35cm}
+  \begin{block}{Tesis}
+    La organización sobrevive cuando \clave{interpreta el entorno}, convierte esa lectura en estrategia y aprende a cambiar bajo dependencia, presión institucional, intereses divergentes y ambigüedad.
+  \end{block}
+  \fuente{Sánchez Bañuelos (2017); Larrarte (s. f.).}
+\end{frame}
+
+\begin{frame}{1. Enfoque orgánico: sistema abierto}
+  \begin{columns}[T]
+    \begin{column}{.53\textwidth}
+      \begin{tikzpicture}[scale=.72,transform shape,node distance=.7cm]
+        \node[draw,rounded corners,fill=itescaSilver!35,minimum width=2.35cm,minimum height=.8cm] (in) {Recursos e información};
+        \node[draw=itescaRedDark,very thick,circle,fill=itescaRed!8,right=.70cm of in,minimum size=2.15cm,align=center] (org) {Organización\\\textbf{viva}};
+        \node[draw,rounded corners,fill=itescaSilver!35,right=.70cm of org,minimum width=2.25cm,minimum height=.8cm] (out) {Resultados};
+        \draw[-Latex,thick] (in)--(org); \draw[-Latex,thick] (org)--(out);
+        \draw[-Latex,thick,itescaRedDark,bend left=35] (out) to node[above,font=\scriptsize]{retroalimentación} (org);
+        \node[below=.72cm of org,font=\small,align=center] {adaptación externa\\+ integración interna};
+      \end{tikzpicture}
+    \end{column}
+    \begin{column}{.43\textwidth}
+      \begin{block}{Rasgos}
+        \begin{itemize}
+          \item Roles flexibles.
+          \item Comunicación lateral.
+          \item Coordinación por conocimiento.
+          \item Aprendizaje continuo.
+        \end{itemize}
+      \end{block}
+      \begin{alertblock}{Cuándo es pertinente}
+        Ambientes dinámicos, tareas nuevas e innovación.
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+  \fuente{Burns y Stalker (1961); Sánchez Bañuelos (2017, pp. 65--66).}
+\end{frame}
+
+\begin{frame}{De la metáfora a la práctica}
+  \begin{columns}[T]
+    \begin{column}{.47\textwidth}
+      \begin{block}{Adaptar no es improvisar}
+        \begin{enumerate}
+          \item Leer señales del entorno.
+          \item Coordinar partes interdependientes.
+          \item Experimentar y retroalimentar.
+          \item Ajustar estructura y capacidades.
+        \end{enumerate}
+      \end{block}
+    \end{column}
+    \begin{column}{.49\textwidth}
+      \begin{alertblock}{Ejemplo}
+        Una institución detecta nuevas competencias laborales, rediseña su oferta, capacita personal y evalúa resultados con empleadores y estudiantes.
+      \end{alertblock}
+      \begin{block}{Límite analítico}
+        La organización no es literalmente un ser vivo: también contiene poder, conflicto e interpretaciones.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \fuente{Sánchez Bañuelos (2017); Morgan (1990), citado en Sánchez Bañuelos (2017).}
+\end{frame}
+
+\begin{frame}{2. Administración estratégica: función del estratega}
+  \begin{columns}[T]
+    \begin{column}{.49\textwidth}
+      \begin{block}{Tres responsabilidades}
+        \begin{itemize}
+          \item \clave{Interpretar}: entorno y capacidades.
+          \item \clave{Elegir}: objetivos y prioridades.
+          \item \clave{Movilizar}: estructura, personas y recursos.
+        \end{itemize}
+      \end{block}
+      \begin{alertblock}{Criterio}
+        La estructura debe apoyar la estrategia, no obstaculizarla.
+      \end{alertblock}
+    \end{column}
+    \begin{column}{.47\textwidth}
+      \begin{tikzpicture}[node distance=.28cm,every node/.style={align=center,font=\small}]
+        \node[draw,rounded corners,fill=itescaRed!10,minimum width=5.0cm] (p) {\textbf{Deliberada}\\plan, metas, políticas};
+        \node[draw,rounded corners,fill=itescaSilver!45,below=of p,minimum width=5.0cm] (a) {\textbf{Adaptativa}\\ajustes incrementales};
+        \node[draw,rounded corners,fill=itescaRedDark!10,below=of a,minimum width=5.0cm] (em) {\textbf{Emprendedora}\\visión y decisiones audaces};
+      \end{tikzpicture}
+      \vspace{.18cm}\centering\small La estrategia también emerge de patrones de acción.
+    \end{column}
+  \end{columns}
+  \fuente{Mintzberg (1978); Sánchez Bañuelos (2017, pp. 66--68).}
+\end{frame}
+
+\begin{frame}{Estrategia y cambio: un ciclo}
+  \centering
+  \begin{tikzpicture}[node distance=.55cm,every node/.style={align=center,font=\small}]
+    \node[draw=itescaRedDark,thick,rounded corners,fill=itescaPaper,minimum width=2.4cm,minimum height=.9cm] (obs) {1. Observar\\entorno};
+    \node[draw=itescaRedDark,thick,rounded corners,fill=itescaPaper,right=of obs,minimum width=2.4cm,minimum height=.9cm] (ele) {2. Elegir\\orientación};
+    \node[draw=itescaRedDark,thick,rounded corners,fill=itescaPaper,right=of ele,minimum width=2.4cm,minimum height=.9cm] (mov) {3. Movilizar\\recursos};
+    \node[draw=itescaRedDark,thick,rounded corners,fill=itescaPaper,right=of mov,minimum width=2.4cm,minimum height=.9cm] (apr) {4. Aprender\\y ajustar};
+    \draw[-Latex,very thick,itescaRed] (obs)--(ele); \draw[-Latex,very thick,itescaRed] (ele)--(mov); \draw[-Latex,very thick,itescaRed] (mov)--(apr);
+    \draw[-Latex,very thick,itescaCharcoal,bend left=30] (apr.south) to node[below,font=\scriptsize]{retroalimentación} (obs.south);
+  \end{tikzpicture}
+  \vspace{.55cm}
+  \begin{block}{Implicación}
+    Una estrategia útil mantiene el rumbo, pero revisa supuestos. El cambio deja de ser episodio y se convierte en \clave{capacidad organizacional}.
+  \end{block}
+  \fuente{Mintzberg (1978); Sánchez Bañuelos (2017).}
+\end{frame}
+
+\begin{frame}{3. Relaciones interorganizacionales}
+  \small
+  \begin{columns}[T]
+    \begin{column}{.50\textwidth}
+      \centering
+      \begin{tikzpicture}[scale=.70,transform shape]
+        \node[draw=itescaRedDark,very thick,circle,fill=itescaRed!10,minimum size=1.8cm] (f) {Org.\\focal};
+        \foreach \ang/\lab in {90/Autoridad,18/Clientes,-54/Aliados,-126/Proveedores,162/Competidores}{
+          \node[draw,rounded corners,fill=itescaSilver!40] (n\ang) at (\ang:2.15cm) {\lab};
+          \draw[-{Latex[length=2mm]},thick,<->] (f)--(n\ang);
+        }
+      \end{tikzpicture}
+    \end{column}
+    \begin{column}{.46\textwidth}
+      \begin{block}{Qué explica}
+        El cambio nace del intercambio de recursos, información y legitimidad.
+      \end{block}
+      \begin{itemize}
+        \item Cooperación y aprendizaje.
+        \item Dependencia y negociación.
+        \item Resultados de red.
+      \end{itemize}
+      \begin{alertblock}{Pregunta gerencial}
+        ¿De quién depende la organización y cómo reduce su vulnerabilidad?
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+  \fuente{Evan (1967) y Provan y Milward (1995), citados en Sánchez Bañuelos (2017).}
+\end{frame}
+
+\begin{frame}{4. Institucionalismo: cambiar para ser legítimo}
+  \begin{columns}[T]
+    \begin{column}{.31\textwidth}
+      \begin{block}{Coercitivo}
+        Leyes, regulación y dependencia de actores con poder.
+      \end{block}
+    \end{column}
+    \begin{column}{.31\textwidth}
+      \begin{block}{Mimético}
+        Imitación de referentes cuando existe incertidumbre.
+      \end{block}
+    \end{column}
+    \begin{column}{.31\textwidth}
+      \begin{block}{Normativo}
+        Profesiones, formación y estándares compartidos.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vspace{.35cm}
+  \begin{alertblock}{Tensión central}
+    Adoptar prácticas puede generar confianza y legitimidad; pero, si se separan del trabajo real, se convierten en cumplimiento ceremonial.
+  \end{alertblock}
+  \fuente{Meyer y Rowan (1977); DiMaggio y Powell (1983); Sánchez Bañuelos (2017, pp. 69--70).}
+\end{frame}
+
+\begin{frame}{5. Teoría de la agencia}
+  \begin{center}
+    \begin{tikzpicture}[node distance=1.35cm,every node/.style={align=center}]
+      \node[draw=itescaCharcoal,thick,rounded corners,fill=itescaSilver!45,minimum width=3.2cm,minimum height=1.05cm] (p) {\textbf{Principal}\\delega y financia};
+      \node[draw=itescaRedDark,thick,rounded corners,fill=itescaRed!9,right=of p,minimum width=3.2cm,minimum height=1.05cm] (a) {\textbf{Agente}\\decide y ejecuta};
+      \draw[-Latex,very thick] ([yshift=3mm]p.east)--node[above,font=\scriptsize]{contrato + incentivos}([yshift=3mm]a.west);
+      \draw[-Latex,very thick,itescaRedDark] ([yshift=-3mm]a.west)--node[below,font=\scriptsize]{información + resultados}([yshift=-3mm]p.east);
+    \end{tikzpicture}
+  \end{center}
+  \begin{columns}[T]
+    \begin{column}{.47\textwidth}
+      \begin{block}{Problema}
+        Intereses distintos, información asimétrica y dificultad para observar el esfuerzo.
+      \end{block}
+    \end{column}
+    \begin{column}{.49\textwidth}
+      \begin{alertblock}{Respuesta de gestión}
+        Metas verificables, transparencia, incentivos compatibles, supervisión y rendición de cuentas.
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+  \fuente{Jensen y Meckling (1976); Sánchez Bañuelos (2017, p. 70).}
+\end{frame}
+
+\begin{frame}{6. Anarquías organizadas}
+  \begin{columns}[T]
+    \begin{column}{.43\textwidth}
+      \begin{block}{Tres rasgos}
+        \begin{itemize}
+          \item Preferencias problemáticas.
+          \item Tecnología poco clara.
+          \item Participación fluida.
+        \end{itemize}
+      \end{block}
+      \begin{alertblock}{No significa caos total}
+        Significa decisión bajo ambigüedad y acoplamiento débil.
+      \end{alertblock}
+    \end{column}
+    \begin{column}{.53\textwidth}
+      \centering
+      \begin{tikzpicture}[scale=.78,transform shape,every node/.style={align=center,font=\small}]
+        \node[draw,circle,fill=itescaRed!10] (pr) at (0,1.6) {Problemas};
+        \node[draw,circle,fill=itescaSilver!55] (so) at (3.2,1.6) {Soluciones};
+        \node[draw,circle,fill=itescaSilver!55] (pa) at (0,-1.1) {Participantes};
+        \node[draw,circle,fill=itescaRed!10] (op) at (3.2,-1.1) {Oportunidades\\de decisión};
+        \node[draw=itescaRedDark,very thick,rounded corners,fill=white] (enc) at (1.6,.25) {Coincidencia\\contingente};
+        \draw[-Latex] (pr)--(enc); \draw[-Latex] (so)--(enc); \draw[-Latex] (pa)--(enc); \draw[-Latex] (op)--(enc);
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+  \fuente{Cohen, March y Olsen (1972).}
+\end{frame}
+
+\begin{frame}{Lectura integrada del cambio}
+  \scriptsize
+  \begin{tabular}{p{.20\textwidth}p{.27\textwidth}p{.42\textwidth}}
+    \toprule
+    \textbf{Lente} & \textbf{Motor del cambio} & \textbf{Pregunta para decidir}\\
+    \midrule
+    Relaciones interorganizacionales & Dependencia e intercambio & ¿Qué actores controlan recursos críticos?\\
+    Institucionalismo & Legitimidad y presiones del campo & ¿Adoptamos por eficacia o por aceptación?\\
+    Agencia & Delegación e intereses divergentes & ¿Qué información e incentivos faltan?\\
+    Anarquía organizada & Ambigüedad y participación variable & ¿Cómo hacemos visibles criterios y decisiones?\\
+    \bottomrule
+  \end{tabular}
+  \vspace{.35cm}
+  \begin{alertblock}{Diagnóstico multiteórico}
+    Ninguna lente explica todo. Integrarlas evita reducir el cambio a organigramas, modas o decisiones individuales.
+  \end{alertblock}
+  \fuente{Síntesis propia con base en Sánchez Bañuelos (2017) y Cohen, March y Olsen (1972).}
+\end{frame}
+
+\begin{frame}{Conclusión: gestionar es adaptar con responsabilidad}
+  \begin{columns}[T]
+    \begin{column}{.31\textwidth}
+      \begin{block}{Organismo}
+        Sensibilidad al entorno, interdependencia y aprendizaje.
+      \end{block}
+    \end{column}
+    \begin{column}{.31\textwidth}
+      \begin{block}{Estrategia}
+        Dirección, prioridades y capacidades con ajuste continuo.
+      \end{block}
+    \end{column}
+    \begin{column}{.31\textwidth}
+      \begin{block}{Cambio}
+        Redes, legitimidad, incentivos y decisiones bajo ambigüedad.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vspace{.45cm}
+  \begin{alertblock}{Postura final}
+    La gestión efectiva no elimina la incertidumbre: construye mecanismos para observarla, discutirla y responder con \clave{coordinación, transparencia y aprendizaje}.
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}{Referencias principales}
+  \footnotesize
+  \begin{itemize}
+    \item Burns, T. y Stalker, G. M. (1961). \textit{The Management of Innovation}. Tavistock.
+    \item Cohen, M. D., March, J. G. y Olsen, J. P. (1972). A garbage can model of organizational choice. \textit{Administrative Science Quarterly, 17}(1), 1--25. \href{https://doi.org/10.2307/2392088}{doi:10.2307/2392088}.
+    \item DiMaggio, P. J. y Powell, W. W. (1983). The iron cage revisited. \textit{American Sociological Review, 48}(2), 147--160. \href{https://doi.org/10.2307/2095101}{doi:10.2307/2095101}.
+    \item Jensen, M. C. y Meckling, W. H. (1976). Theory of the firm. \textit{Journal of Financial Economics, 3}(4), 305--360. \href{https://doi.org/10.1016/0304-405X(76)90026-X}{doi:10.1016/0304-405X(76)90026-X}.
+    \item Meyer, J. W. y Rowan, B. (1977). Institutionalized organizations. \textit{American Journal of Sociology, 83}(2), 340--363. \href{https://doi.org/10.1086/226550}{doi:10.1086/226550}.
+    \item Mintzberg, H. (1978). Patterns in strategy formation. \textit{Management Science, 24}(9), 934--948. \href{https://doi.org/10.1287/mnsc.24.9.934}{doi:10.1287/mnsc.24.9.934}.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Material de apoyo y cierre}
+  \small
+  \begin{block}{Material base}
+    Sánchez Bañuelos, M. N. (2017). Aportes teóricos a la gestión organizacional: la evolución en la visión de la organización. \textit{Ciencias Administrativas}, (10), 64--74. \href{https://www.redalyc.org/articulo.oa?id=511653854007}{Redalyc 511653854007}.
+  \end{block}
+  \begin{block}{Contexto histórico}
+    Larrarte, P. (s. f.). \textit{Fundamentos de administración. Eje 1: Conceptualicemos}. Fundación Universitaria del Área Andina.
+  \end{block}
+  \vfill
+  \begin{center}
+    {\Large\bfseries\color{itescaRedDark}Gracias}\par
+    \vspace{.15cm}{\small La organización aprende cuando convierte incertidumbre en conversación, decisión y acción.}
+  \end{center}
+\end{frame}
+
+\end{document}
