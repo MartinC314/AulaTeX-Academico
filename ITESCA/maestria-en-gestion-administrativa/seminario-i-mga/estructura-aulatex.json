@@ -1,0 +1,41 @@
+{
+  "node": "seminario-i-mga",
+  "slug": "seminario-i",
+  "title": "Seminario I",
+  "program": "Maestría en Gestión Administrativa",
+  "institution": "ITESCA",
+  "course_code": "MGA-SEMINARIO-I",
+  "teacher": "Dra. Carla Olimpya Zapuche Moreno",
+  "units": 3,
+  "activities": 18,
+  "activity_number": 2,
+  "files": [
+    "README.md",
+    "programa-analitico-seminario-i.md",
+    "seminario-i.bib",
+    "reporte-seminario-i-mga.tex",
+    "reporte-seminario-i-mga.pdf",
+    "presentacion-seminario-i-mga.tex",
+    "reporte-seminario-i-Actividad-1.tex",
+    "reporte-seminario-i-Actividad-2.tex",
+    "reporte-seminario-i-Actividad-2.pdf",
+    "COMPILACION-seminario-i.md"
+  ],
+  "folders": [
+    ".memoria-aulatex",
+    "anteproyecto",
+    "assets-seminario-i",
+    "entregas",
+    "extractor-aulatex",
+    "investigacion-aulatex",
+    "notas",
+    "planeaciones-seminario-i",
+    "referencias-seminario-i"
+  ],
+  "grading": {
+    "unidad_1": 25,
+    "unidad_2": 25,
+    "unidad_3": 50
+  },
+  "status": "estructura compatible con AulaTeX/UnADM; actividades 1 y 2 materializadas; tema de anteproyecto por confirmar"
+}

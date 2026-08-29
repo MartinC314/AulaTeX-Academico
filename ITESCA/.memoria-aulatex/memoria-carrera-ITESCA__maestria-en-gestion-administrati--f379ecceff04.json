@@ -133,7 +133,7 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 2 - maestria-en-gestion-administrativa",
+        "subject_rule": "Actividad 1 - maestria-en-gestion-administrativa",
         "scope_label": "maestria-en-gestion-administrativa"
       },
       "didactic_contract": {
@@ -359,8 +359,8 @@
         "institution": "ITESCA",
         "career": "maestria-en-gestion-administrativa",
         "subject": "",
-        "activity": "Actividad 2",
-        "seed_scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-2"
+        "activity": "Actividad 1",
+        "seed_scope_key": "ITESCA/maestria-en-gestion-administrativa/seminario-i-mga/actividad-1"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -406,6 +406,10 @@
           "has_memory": true
         },
         {
+          "scope_key": "ITESCA/maestria-en-gestion-administracion",
+          "has_memory": false
+        },
+        {
           "scope_key": "ITESCA/maestria-en-gestion-administrativa/administracion-de-la-micro-pequena-y-medianas-empresas-mga",
           "has_memory": true
         },
@@ -416,13 +420,12 @@
         {
           "scope_key": "ITESCA/maestria-en-gestion-administrativa/analisis-y-estrategias-de-la-competitividad-empresarial-mga",
           "has_memory": true
-        },
-        {
-          "scope_key": "ITESCA/maestria-en-gestion-administrativa/desarrollo-de-las-organizaciones-de-calidad-mga",
-          "has_memory": true
         }
       ],
-      "novelty_signals": [],
+      "novelty_signals": [
+        "heading_contract",
+        "institutional_identity"
+      ],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -431,10 +434,10 @@
           "ITESCA",
           "interinstitucional",
           "ITESCA/ingenieria-en-sistemas-computacionales",
+          "ITESCA/maestria-en-gestion-administracion",
           "ITESCA/maestria-en-gestion-administrativa/administracion-de-la-micro-pequena-y-medianas-empresas-mga",
           "ITESCA/maestria-en-gestion-administrativa/analisis-y-desarrollo-economico-mga",
-          "ITESCA/maestria-en-gestion-administrativa/analisis-y-estrategias-de-la-competitividad-empresarial-mga",
-          "ITESCA/maestria-en-gestion-administrativa/desarrollo-de-las-organizaciones-de-calidad-mga"
+          "ITESCA/maestria-en-gestion-administrativa/analisis-y-estrategias-de-la-competitividad-empresarial-mga"
         ],
         "source_artifacts": [
           "ITESCA/maestria-en-gestion-administrativa/README.md",
@@ -453,19 +456,19 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260828-203355",
+      "run_id": "20260829-124004",
       "scope_key": "ITESCA/maestria-en-gestion-administrativa",
       "related_scope_keys": [
         "ITESCA/maestria-en-gestion-administrativa",
         "ITESCA",
         "interinstitucional",
         "ITESCA/ingenieria-en-sistemas-computacionales",
+        "ITESCA/maestria-en-gestion-administracion",
         "ITESCA/maestria-en-gestion-administrativa/administracion-de-la-micro-pequena-y-medianas-empresas-mga",
         "ITESCA/maestria-en-gestion-administrativa/analisis-y-desarrollo-economico-mga",
-        "ITESCA/maestria-en-gestion-administrativa/analisis-y-estrategias-de-la-competitividad-empresarial-mga",
-        "ITESCA/maestria-en-gestion-administrativa/desarrollo-de-las-organizaciones-de-calidad-mga"
+        "ITESCA/maestria-en-gestion-administrativa/analisis-y-estrategias-de-la-competitividad-empresarial-mga"
       ],
-      "novelty_count": 0
+      "novelty_count": 2
     }
   },
   "curricular_context": {},
