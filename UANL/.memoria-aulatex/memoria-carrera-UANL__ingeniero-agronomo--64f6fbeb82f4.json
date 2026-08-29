@@ -1,0 +1,200 @@
+{
+  "summary": [],
+  "identity_rules": [],
+  "structure_rules": [],
+  "activity_rules": [],
+  "quality_gates": [],
+  "latex_rules": [],
+  "bibliography_rules": [],
+  "propagation_hints": [],
+  "open_questions": [],
+  "artifact_name": "",
+  "sources": [],
+  "artifact_types": [],
+  "supported_artifact_types": [],
+  "source_documents": [],
+  "source_fragments": [],
+  "concepts": [],
+  "section_titles": [],
+  "citations": [],
+  "bibliography_index": [],
+  "node_metadata": {
+    "editing_details": {
+      "heading_contract": {
+        "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
+        "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
+        "subject_rule": "Actividad 1 - ingeniero-agronomo",
+        "scope_label": "ingeniero-agronomo"
+      },
+      "didactic_contract": {
+        "detected_id": "general",
+        "catalogo_no": null,
+        "nombre_oficial": "",
+        "nivel": "",
+        "familia": "",
+        "aliases": [],
+        "required_visible_elements": [],
+        "preservation_rule": "Conservar la forma visible solicitada por la consigna.",
+        "preservation_rule_official": "",
+        "structure_rule": "",
+        "three_act_gravity_rule": "",
+        "layout_rule": "",
+        "no_gap_rule": "",
+        "closure_rule": "",
+        "build_steps": "",
+        "official_contract": {},
+        "tikz_pattern": {},
+        "scoring_rubric": {},
+        "construction_integration": {},
+        "real_pattern": {}
+      },
+      "structure_contract": {
+        "three_part_structure": "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
+        "development_section": "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
+        "product_centric_gravity": "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
+        "introduction": "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
+        "conclusion": "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa"
+      },
+      "layout_contract": {
+        "no_gap_before_visual_deliverable": "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
+        "landscape_single_page": "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
+        "conclusion_single_page": "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla).",
+        "page_control": "Usar \\clearpage para forzar que una sección (p. ej. Conclusión) inicie en su propia página. El entorno landscape siempre abre página nueva: compactar el contenido previo para evitar huecos.",
+        "always_use_latexmk": "Compilar siempre con latexmk y aislar los auxiliares en .build/latex.",
+        "no_build_residues": "La carpeta de la actividad no debe conservar auxiliares de compilación junto al TEX."
+      },
+      "bibliography_contract": {
+        "visible_citations_rule": "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
+        "reference_growth_rule": "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
+        "local_first_rule": "Priorizar bibliografía, programa, notas y memorias editoriales locales; si no alcanzan para validar, buscar fuentes en línea sólidas y registrarlas en .bib con citas visibles en TEX."
+      },
+      "institutional_identity": {
+        "institution": "UANL",
+        "career": "ingeniero-agronomo",
+        "subject": "",
+        "activity": "Actividad 1",
+        "seed_scope_key": "UANL/ingeniero-agronomo/algebra-lineal/actividad-1"
+      },
+      "compilation_fixes": [],
+      "quality_rules": [
+        "título sin Actividad #; subtítulo compacto; subject/equivalente = Actividad # - Materia",
+        "la forma visible del producto respeta cuestionario, foro, caso, mapa, tabla u otro contrato",
+        "todas las citas visibles tienen entrada .bib, no hay entradas inventadas y el número de referencias aumenta cuando el corpus previo no sostiene todas las respuestas",
+        "las fuentes nuevas deben aparecer como citas visibles en introducción, marco conceptual, tabla o conclusión; no basta con agregar entradas al .bib",
+        "si realizar-actividad valida cuestionarios o afirmaciones sustantivas, debe incrementar o confirmar explícitamente el mapa de soporte bibliográfico: mínimo 3 fuentes sólidas para actividad simple y mínimo 5 para cuestionarios extensos, salvo memoria local suficiente documentada",
+        "sin placeholders, con contexto/problema integrado en introducción, análisis propio integrado en conclusión, postura personal integrada en conclusión y transferencia profesional",
+        "sin metadiscurso de ejecución: no hablar de 'esta actividad', 'producto solicitado', 'se presenta' o 'la técnica usada' como narrador externo; hablar del tema, problema, concepto, cuestionario, caso o tabla según corresponda",
+        "el cuerpo visible se organiza en TRES actos: (1) Introducción, (2) una única sección de Desarrollo y (3) Conclusiones. No fragmentar el desarrollo en varias secciones de primer nivel: el marco conceptual, el producto solicitado y su análisis son SUBsecciones de la misma sección de desarrollo. El marco conceptual, las semejanzas/diferencias u otros apoyos NO son secciones \\section independientes.",
+        "la introducción absorbe contexto y problema; evitar una subsección visible separada 'Contexto y problema' salvo consigna expresa",
+        "el segundo acto (desarrollo) NO debe titularse 'Desarrollo': lleva un título cosmético y descriptivo del TEMA (p. ej. 'Clasificación de los tipos de seguro', no 'Desarrollo'). Dentro de él se organizan como subsecciones: preparación conceptual -> producto solicitado (mapa/tabla/cuadro) -> análisis derivado. El producto solicitado es el NÚCLEO protagónico de este acto.",
+        "el producto solicitado (mapa conceptual, cuadro, tabla, esquema) tiene protagonismo imperativo dentro del desarrollo: el texto GRAVITA a su alrededor, antes preparándolo (marco conceptual que conduce a él) y después interpretándolo (lectura, semejanzas/diferencias, implicaciones). El protagonismo es del TEMA y del producto, no de la etiqueta 'desarrollo' ni de metadiscurso.",
+        "la conclusión integra síntesis, análisis propio, postura personal, razón y consecuencia; evitar secciones visibles separadas de 'Análisis propio' o 'Postura personal' salvo consigna expresa",
+        "PDF existe, está fresco y no presenta errores críticos ni citas indefinidas",
+        "En el cuerpo final no narrar el proceso de elaboración ni mencionar la palabra 'Actividad' como sujeto del análisis; en su lugar hablar del tema, problema, concepto, cuestionario, caso, tabla o fenómeno estudiado.",
+        "El contexto y el problema se integran en la introducción; no crear una subsección visible 'Contexto y problema' salvo instrucción expresa de la consigna.",
+        "Estructurar el cuerpo visible en tres actos: Introducción, Desarrollo y Conclusiones. El desarrollo es UNA sola sección (no varias \\section de primer nivel); marco conceptual, producto solicitado y análisis van como subsecciones dentro de ella.",
+        "El título del acto de desarrollo debe ser descriptivo del tema, no la palabra 'Desarrollo'. Ejemplos válidos: 'Clasificación de los tipos de seguro', 'Marco y clasificación de los derechos humanos'. El nombre nombra el fenómeno, no la etiqueta didáctica.",
+        "Dar protagonismo imperativo al producto solicitado (mapa conceptual, cuadro, tabla, esquema) dentro del desarrollo. El desarrollo gravita a su alrededor: ANTES lo prepara (marco conceptual-teórico que conduce al producto) y DESPUÉS lo interpreta (lectura del producto, semejanzas y diferencias, implicaciones). El énfasis recae en el tema y en el producto, no en la etiqueta ni en el metadiscurso.",
+        "El análisis propio y la postura personal se integran en la conclusión mediante posición, razón y consecuencia; no crear secciones visibles independientes de análisis propio o postura personal salvo instrucción expresa.",
+        "PROHIBIDO dejar un hueco grande (media página o más en blanco) inmediatamente antes de un entregable visual en landscape (tabla, cuadro comparativo, mapa conceptual, esquema). Como el entorno landscape abre página nueva, el texto que lo precede no debe quedar a media página. Estrategias en orden de preferencia: (1) enriquecer con contenido útil el bloque previo —p. ej. una guía de lectura de columnas/ramas o la metodología de construcción— hasta llenar la página; (2) iniciar la sección del entregable en página nueva con \\clearpage para que el hueco quede al final de la sección anterior y no entre el título y la tabla; (3) en caso extremo, ajustar la redacción del texto colindante para equilibrar el llenado. Verificar SIEMPRE con pdftoppm que no quede una página semivacía antes del entregable ni una página landscape vacía extra.",
+        "Tabla/caption o diagrama/leyenda de un entregable visual deben caber JUNTOS en UNA sola página landscape. Si el caption o la leyenda se desbordan a una segunda página landscape (dejando la primera casi vacía), compactar: \\arraystretch<=1.2, caption en \\footnotesize pegado con \\\\[0.3cm], y evitar \\vspace*{\\fill} superior e inferior simultáneos que empujan a 2 páginas. No anteponer \\clearpage a \\begin{landscape} porque pdflscape ya inserta el salto y se generaría una página landscape vacía.",
+        "La conclusión inicia con \\clearpage y debe ocupar preferentemente una sola página, sin arrastrar contenido a una página extra casi vacía. La declaración de uso de IA se liga como \\footnote a una frase oportuna de la conclusión (no como bloque separado ni amontonada al pie de una tabla)."
+      ],
+      "exceptions": [],
+      "learned_from": [
+        {
+          "scope_key": "UANL/ingeniero-agronomo",
+          "has_memory": false
+        },
+        {
+          "scope_key": "UANL",
+          "has_memory": true
+        },
+        {
+          "scope_key": "interinstitucional",
+          "has_memory": false
+        },
+        {
+          "scope_key": "UANL/ingenieria-en-administracion-y-sistemas",
+          "has_memory": false
+        },
+        {
+          "scope_key": "UANL/ingenieria-en-mecatronica",
+          "has_memory": true
+        },
+        {
+          "scope_key": "UANL/ingeniero-agronomo/algebra-lineal",
+          "has_memory": false
+        }
+      ],
+      "novelty_signals": [
+        "bootstrap"
+      ],
+      "derived_from": {
+        "local_memory": false,
+        "ancestor_memory": true,
+        "related_nodes": [
+          "UANL/ingeniero-agronomo",
+          "UANL",
+          "interinstitucional",
+          "UANL/ingenieria-en-administracion-y-sistemas",
+          "UANL/ingenieria-en-mecatronica",
+          "UANL/ingeniero-agronomo/algebra-lineal"
+        ],
+        "source_artifacts": [
+          "UANL/ingeniero-agronomo/README.md"
+        ]
+      },
+      "confidence": {
+        "global": 0.7,
+        "by_section": {
+          "heading_contract": 0.6,
+          "didactic_contract": 0.5,
+          "bibliography_contract": 0.6
+        }
+      }
+    },
+    "detail_planner": {
+      "run_id": "20260828-203147",
+      "scope_key": "UANL/ingeniero-agronomo",
+      "related_scope_keys": [
+        "UANL/ingeniero-agronomo",
+        "UANL",
+        "interinstitucional",
+        "UANL/ingenieria-en-administracion-y-sistemas",
+        "UANL/ingenieria-en-mecatronica",
+        "UANL/ingeniero-agronomo/algebra-lineal"
+      ],
+      "novelty_count": 1
+    },
+    "scope_key": "UANL/ingeniero-agronomo",
+    "level": "carrera",
+    "label": "ingeniero-agronomo",
+    "relative_path": "UANL/ingeniero-agronomo",
+    "institution": "UANL",
+    "career": "ingeniero-agronomo",
+    "subject": "",
+    "activity": "",
+    "parent_key": "UANL"
+  },
+  "curricular_context": {},
+  "artifact_templates": {},
+  "editorial_dna": {
+    "knowledge_graph": {
+      "concepts": [],
+      "citations": [],
+      "evidence": [],
+      "relations": [],
+      "concept_weights": {},
+      "citation_weights": {}
+    }
+  },
+  "tex_blueprint": {},
+  "tex_content_memory": {},
+  "locked_sections": [],
+  "compression": {
+    "method": "union-dedupe",
+    "lossless": true
+  },
+  "schema_version": 3
+}

@@ -1,0 +1,11 @@
+{
+  "key": "UANL/ingeniero-agronomo/algebra-lineal",
+  "level": "materia",
+  "label": "Álgebra Lineal",
+  "name": "Álgebra Lineal",
+  "parent_scope_key": "UANL/ingeniero-agronomo",
+  "activity_number": 0,
+  "relative_path": "UANL/ingeniero-agronomo/algebra-lineal",
+  "operation_mode": "crear",
+  "entrypoint": "UANL/ingeniero-agronomo/algebra-lineal/reporte-algebra-lineal.tex"
+}

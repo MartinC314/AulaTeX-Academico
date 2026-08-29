@@ -1,0 +1,17 @@
+{
+  "institucion": "Universidad Autónoma de Nuevo León",
+  "facultad": "Facultad de Agronomía",
+  "carrera": "Ingeniero Agrónomo",
+  "materia": "Álgebra Lineal",
+  "slug": "algebra-lineal",
+  "actividades": [
+    {
+      "numero": 1,
+      "fase": 1,
+      "titulo": "Mapa cognitivo de telaraña sobre aplicaciones del álgebra lineal en la vida cotidiana",
+      "entregable": "reporte-algebra-lineal-Actividad-1.pdf",
+      "modalidad": "Equipo de 2 a 3 personas",
+      "plataforma": "Nexus"
+    }
+  ]
+}
