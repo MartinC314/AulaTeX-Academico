@@ -64,7 +64,9 @@ class AgentRequest:
     # Compilacion final con latexmk tras monitor/optimize (garantiza que el .tex
     # en su estado definitivo produce un PDF actualizado). Activada por defecto.
     run_final_compile: bool = True
-    monitor_max_cycles: int = 100
+    # Una pasada monitorizada por defecto; la optimizacion posterior conserva su
+    # convergencia independiente hasta la calidad objetivo de 100.
+    monitor_max_cycles: int = 1
     # 0 = modo convergencia (optimiza hasta calidad objetivo, ciclos necesarios).
     optimize_cycles: int = 0
     run_semantic_audit: bool = True

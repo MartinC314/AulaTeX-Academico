@@ -30,8 +30,9 @@ class IntelligentEngineRequest:
     # emitiendo progreso. Ver IntelligentEngine.execute().
     execute: bool = False
     actions: tuple[str, ...] = ("realizar-actividad", "construir-memoria-editorial")
-    monitor_max_cycles: int = 100
-    optimize_cycles: int = 3
+    # Un ciclo monitorizado y luego convergencia de calidad a 100 (0).
+    monitor_max_cycles: int = 1
+    optimize_cycles: int = 0
 
 
 @dataclass(frozen=True)

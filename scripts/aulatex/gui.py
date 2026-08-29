@@ -540,7 +540,7 @@ class AulaTeXApp(tk.Tk):
         self.agent_apply = tk.BooleanVar(value=False)
         self.agent_monitor_mode = tk.BooleanVar(value=True)
         self.agent_run_extractor = tk.BooleanVar(value=True)
-        self.agent_max_cycles = tk.IntVar(value=2)
+        self.agent_max_cycles = tk.IntVar(value=1)
 
         overview = ttk.LabelFrame(self.agent_tab, text="Enfoque actual", padding=8)
         overview.grid(row=0, column=0, columnspan=3, sticky="ew", pady=(0, 8))

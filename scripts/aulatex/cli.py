@@ -173,8 +173,8 @@ def build_parser() -> argparse.ArgumentParser:
     agent.add_argument("--no-foro-producto", action="store_true", help="Disable the automatic FORO product pattern (tcolorbox + copy button + 3-act structure) after realizar-actividad.")
     agent.add_argument("--no-mapa-layout", action="store_true", help="Disable the automatic TikZ concept-map layout optimizer (anti-overlap + link-label placement + vertical fill) after realizar-actividad when the product is a concept map.")
     agent.add_argument("--no-final-compile", action="store_true", help="Disable the automatic final latexmk compilation after monitor/optimize in realizar-actividad.")
-    agent.add_argument("--monitor-max-cycles", type=int, default=100, help="Max cycles for the automatic post-processing monitor loop.")
-    agent.add_argument("--optimize-cycles", type=int, default=0, help="Fixed number of quality optimization cycles after realizar-actividad. Default 0 = converge-to-quality (run until target quality is reached).")
+    agent.add_argument("--monitor-max-cycles", type=int, default=1, help="Max cycles for the automatic post-processing monitor loop (default 1).")
+    agent.add_argument("--optimize-cycles", type=int, default=0, help="Fixed number of quality optimization cycles after realizar-actividad. Default 0 = converge-to-quality (run until target quality 100 is reached).")
     agent.add_argument("--no-semantic-audit", action="store_true", help="Disable semantic claim auditing (only for offline/debug runs).")
     agent.add_argument("--semantic-feedback", default="", help="Archivo JSON/TXT con retroalimentación externa para la auditoría semántica.")
 
@@ -341,8 +341,8 @@ def build_parser() -> argparse.ArgumentParser:
         choices=("realizar-actividad", "construir-memoria-editorial"),
         help="Acciones a ejecutar por objetivo cuando se usa --execute (repetible). Por defecto: memoria + actividad.",
     )
-    intelligent_engine.add_argument("--monitor-max-cycles", type=int, default=100)
-    intelligent_engine.add_argument("--optimize-cycles", type=int, default=3)
+    intelligent_engine.add_argument("--monitor-max-cycles", type=int, default=1)
+    intelligent_engine.add_argument("--optimize-cycles", type=int, default=0, help="0 = converger automáticamente a calidad 100.")
     intelligent_engine.add_argument(
         "--progress",
         action="store_true",
@@ -1114,8 +1114,8 @@ def main(argv: list[str] | None = None) -> None:
                 engines=tuple(args.engine or IntelligentEngineRequest().engines),
                 execute=bool(getattr(args, "execute", False)),
                 actions=tuple(args.action) if getattr(args, "action", None) else default_actions,
-                monitor_max_cycles=int(getattr(args, "monitor_max_cycles", 100)),
-                optimize_cycles=int(getattr(args, "optimize_cycles", 3)),
+                monitor_max_cycles=int(getattr(args, "monitor_max_cycles", 1)),
+                optimize_cycles=int(getattr(args, "optimize_cycles", 0)),
             ),
             reporter=reporter,
         )

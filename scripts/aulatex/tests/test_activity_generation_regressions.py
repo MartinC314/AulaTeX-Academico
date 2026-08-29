@@ -56,6 +56,21 @@ def test_intelligent_engine_preserves_requested_tex(monkeypatch, tmp_path: Path)
     assert not ok
     assert _CaptureAgent.request is not None
     assert Path(_CaptureAgent.request.target) == tex
+    assert _CaptureAgent.request.monitor_max_cycles == 1
+    assert _CaptureAgent.request.optimize_cycles == 0
+    assert _CaptureAgent.request.run_monitor is True
+    assert _CaptureAgent.request.run_optimize is True
+    assert _CaptureAgent.request.run_final_compile is True
+
+
+def test_realizar_actividad_defaults_to_one_monitored_cycle_with_convergence() -> None:
+    request = AgentRequest(action="realizar-actividad")
+
+    assert request.monitor_max_cycles == 1
+    assert request.optimize_cycles == 0
+    assert request.run_monitor is True
+    assert request.run_optimize is True
+    assert request.run_final_compile is True
 
 
 def test_generated_beamer_applies_to_explicit_presentation(tmp_path: Path) -> None:
