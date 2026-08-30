@@ -1,0 +1,212 @@
+% AulaTeX - Actividad 8 construida desde la planeación, presentación y contenidos S8.
+% Técnica didáctica: esquema sobre el PENSIONISSSTE.
+% Rúbrica: concepto, pensión, pensiones, requisitos y fuentes (meta: 10/10).
+\documentclass[11pt,letterpaper,oneside]{article}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{float}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,shapes.geometric,backgrounds}
+\usepackage{hyperref}
+\usepackage[authoryear,round]{natbib}
+
+\definecolor{unadmGreenDark}{HTML}{174A3A}
+\definecolor{unadmGreen}{HTML}{5F8F3A}
+\definecolor{unadmGold}{HTML}{B88A2A}
+\definecolor{unadmPaper}{HTML}{F6F7F2}
+\definecolor{unadmInk}{HTML}{1F2A24}
+\definecolor{unadmBlue}{HTML}{DDEBE8}
+\definecolor{unadmSand}{HTML}{F3E9D2}
+\hypersetup{colorlinks=true,linkcolor=unadmGreenDark,citecolor=unadmGreenDark,urlcolor=unadmGreenDark}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.48em}
+\setstretch{1.12}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+\bibliographystyle{plainnat}
+\newcommand{\documenttitle}{PENSIONISSSTE y pensiones de retiro}
+\newcommand{\documentsubtitle}{Naturaleza, funcionamiento, modalidades y requisitos}
+\newcommand{\documentsubject}{Actividad 8 - Derecho a la Seguridad Social}
+
+\begin{document}
+
+\begin{titlepage}
+  \pagecolor{unadmPaper}\color{unadmInk}
+  \begin{center}
+    \vspace*{0.55cm}
+    \includegraphics[height=1.95cm]{img/departamentos/UnADM.pdf}\\[0.55cm]
+    {\Large Universidad Abierta y a Distancia de México}\\[0.18cm]
+    {\large Licenciatura en Derecho}\\[1cm]
+    {\color{unadmGreenDark}\rule{0.82\linewidth}{1.4pt}}\\[0.5cm]
+    {\Huge\bfseries \documenttitle\par}
+    \vspace{0.3cm}
+    {\Large \documentsubtitle\par}
+    \vspace{0.12cm}
+    {\large \documentsubject\par}
+    \vspace{0.4cm}
+    {\color{unadmGold}\rule{0.62\linewidth}{1.1pt}}\\[0.85cm]
+    \begin{tabular}{rl}
+      \textbf{Alumno:} & Martin Jonathan de la Cruz \\
+      \textbf{Matrícula:} & ES2611202040 \\
+      \textbf{Figura docente:} & Cristian Ortega Barrera \\
+      \textbf{Materia:} & Derecho a la Seguridad Social \\
+      \textbf{Semestre/Bloque:} & 2 / 1 \\
+      \textbf{Unidad temática:} & PENSIONISSSTE y pensiones \\
+      \textbf{Fecha de entrega:} & 30 de agosto de 2026
+    \end{tabular}
+    \vfill
+    {\small Ciudad de México}
+  \end{center}
+  \nopagecolor
+\end{titlepage}
+
+\section{Introducción}
+
+La pensión de retiro protege la continuidad del ingreso cuando concluye la actividad laboral por retiro, cesantía en edad avanzada o vejez. En el régimen de cuentas individuales de la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (LISSSTE), el derecho pensionario no depende exclusivamente del ahorro: la ley fija edad, cotización y demás condiciones, mientras la cuenta individual proporciona los recursos para financiar la modalidad procedente. Esta distinción es necesaria para no confundir al ISSSTE, que reconoce el derecho, con PENSIONISSSTE, que administra e invierte recursos, o con la aseguradora que paga una renta vitalicia \citep{lissste2026,bricenoRuiz2011}.
+
+El propósito del esquema es distinguir el funcionamiento de PENSIONISSSTE y ordenar el concepto y finalidad de la pensión, la ruta de administración de la cuenta, las pensiones o modalidades disponibles y sus requisitos. La síntesis parte de la planeación y los contenidos de la semana 8, contrastados con los artículos 76 a 113 de la LISSSTE vigente \citep{materialS8DSS2026,lissste2026}.
+
+\vspace{0.55cm}
+\begin{center}
+\colorbox{unadmBlue}{%
+\begin{minipage}{0.88\linewidth}
+\centering
+{\color{unadmGreenDark}\large\bfseries Ruta de lectura jurídica}\par
+\vspace{0.3cm}
+\begin{tabular}{c@{\hspace{0.45cm}}c@{\hspace{0.45cm}}c@{\hspace{0.45cm}}c@{\hspace{0.45cm}}c}
+\textbf{1. Contingencia} & $\rightarrow$ & \textbf{2. Edad y cotización} & $\rightarrow$ & \textbf{3. Suficiencia del saldo} \\
+&& $\downarrow$ && \\
+\textbf{5. Pago} & $\leftarrow$ & \textbf{4. Modalidad aplicable} & $\leftarrow$ & \textbf{Seguro de sobrevivencia}
+\end{tabular}
+\vspace{0.25cm}
+
+\small El análisis debe separar el reconocimiento del derecho, la administración de los recursos y el pago de la prestación. Esa secuencia permite identificar correctamente la intervención del ISSSTE, PENSIONISSSTE y, en su caso, la aseguradora.
+\end{minipage}%
+}
+\end{center}
+
+\vfill
+{\small\color{unadmGreenDark}\textbf{Pregunta rectora:} ¿qué requisitos debe acreditar la persona trabajadora y qué función cumple PENSIONISSSTE desde la recepción de aportaciones hasta el pago de la modalidad pensionaria?}
+
+\clearpage
+\begin{landscape}
+\thispagestyle{empty}
+\newgeometry{top=0.7cm,bottom=0.65cm,left=0.75cm,right=0.75cm}
+\begin{center}
+{\color{unadmGreenDark}\LARGE\bfseries Esquema integral del PENSIONISSSTE\par}
+{\small Naturaleza, operación de la cuenta individual, pensiones y modalidades de pago\par}
+\vspace{0.3cm}
+\resizebox{0.98\linewidth}{!}{%
+\begin{tikzpicture}[
+  font=\sffamily,
+  principal/.style={rectangle,rounded corners=5pt,draw=unadmGreenDark,very thick,fill=unadmGreenDark,text=white,align=center,text width=9.2cm,minimum height=1.25cm,inner sep=7pt,font=\bfseries\Large},
+  fundamento/.style={rectangle,rounded corners=3pt,draw=unadmGreenDark,thick,fill=unadmBlue,align=left,text width=7.15cm,minimum height=3.65cm,inner sep=8pt,font=\small},
+  proceso/.style={rectangle,rounded corners=3pt,draw=unadmGreenDark,thick,fill=unadmGreen!22,align=center,text width=4.15cm,minimum height=1.45cm,inner sep=6pt,font=\small},
+  pension/.style={rectangle,rounded corners=3pt,draw=unadmGold,thick,fill=unadmSand,align=left,text width=5.3cm,minimum height=4.25cm,inner sep=8pt,font=\small},
+  modalidad/.style={rectangle,rounded corners=3pt,draw=unadmGreenDark,thick,fill=white,align=left,text width=10.85cm,minimum height=2.2cm,inner sep=8pt,font=\small},
+  banda/.style={rectangle,rounded corners=3pt,draw=unadmGreenDark,fill=unadmGreenDark,text=white,align=center,text width=23.1cm,minimum height=0.72cm,font=\bfseries},
+  enlace/.style={-{Stealth[length=2.3mm]},thick,draw=unadmGreenDark},
+  oro/.style={-{Stealth[length=2.3mm]},thick,draw=unadmGold}
+]
+
+\node[principal] (p) at (0,0) {PENSIONISSSTE\\[-1pt]\small Fondo Nacional de Pensiones de los Trabajadores al Servicio del Estado};
+
+\node[fundamento] (f1) at (-8.0,-3.25) {\textbf{1. Naturaleza y utilidad}\\[4pt]
+\textbf{Naturaleza:} órgano público desconcentrado del ISSSTE, con facultades ejecutivas y competencia funcional propia; opera como administradora pública y está sujeto a regulación y supervisión de CONSAR.\\[3pt]
+\textbf{Utilidad:} abre y administra cuentas; individualiza cuotas, aportaciones y rendimientos; invierte recursos, informa al trabajador y canaliza el ahorro hacia la pensión.\\[3pt]
+\textit{Arts. 103--106 LISSSTE.}};
+
+\node[fundamento] (f2) at (0,-3.25) {\textbf{2. Pensión: naturaleza y finalidad}\\[4pt]
+\textbf{Naturaleza:} prestación económica periódica derivada del derecho a la seguridad social, financiada con la cuenta individual y, cuando corresponde, con garantía estatal.\\[3pt]
+\textbf{Finalidad:} sustituir parte relevante del ingreso al cesar la actividad laboral y proteger la subsistencia de la persona pensionada y sus familiares mediante el seguro de sobrevivencia.\\[3pt]
+\textbf{Competencias:} el ISSSTE reconoce el derecho; PENSIONISSSTE administra; la aseguradora paga la renta vitalicia.};
+
+\node[fundamento] (f3) at (8.0,-3.25) {\textbf{3. Cuenta individual}\\[4pt]
+Es derecho de cada trabajador y puede operarla PENSIONISSSTE o una administradora elegida libremente.\\[3pt]
+\textbf{Subcuentas:} retiro, cesantía y vejez; vivienda; ahorro solidario; aportaciones complementarias; voluntarias; y ahorro a largo plazo. Los recursos pertenecen al trabajador con las modalidades legales.\\[3pt]
+\textit{Arts. 76, 83 y 97--100 LISSSTE.}};
+
+\draw[enlace] (p.south west) -- (f1.north);
+\draw[enlace] (p.south) -- (f2.north);
+\draw[enlace] (p.south east) -- (f3.north);
+
+\node[banda] (flujoT) at (0,-6.15) {Funcionamiento: del ahorro al pago de la pensión};
+\node[proceso] (a) at (-9.4,-7.75) {1. Cuotas y aportaciones\\Trabajador, dependencia y Estado};
+\node[proceso] (b) at (-4.7,-7.75) {2. Individualización\\Registro en subcuentas};
+\node[proceso] (c) at (0,-7.75) {3. Inversión\\Rendimientos regulados};
+\node[proceso] (d) at (4.7,-7.75) {4. Reconocimiento\\ISSSTE verifica requisitos};
+\node[proceso] (e) at (9.4,-7.75) {5. Elección y pago\\Modalidad pensionaria};
+\draw[enlace] (a)--(b); \draw[enlace] (b)--(c); \draw[enlace] (c)--(d); \draw[enlace] (d)--(e);
+
+\node[banda,fill=unadmGold,draw=unadmGold,text=unadmInk] (pensT) at (0,-9.35) {Pensiones y requisitos en el régimen de cuentas individuales};
+\node[pension] (r1) at (-9.0,-12.15) {\textbf{A. Retiro anticipado}\\\textit{Art. 80}\\[4pt]
+\textbf{Requisito:} antes de las edades y tiempos ordinarios, la renta vitalicia calculada debe superar en más de 30\% la pensión garantizada, después de cubrir el seguro de sobrevivencia.\\[3pt]
+\textbf{Resultado:} renta vitalicia y posibilidad de retirar el excedente bajo la misma condición.};
+\node[pension] (r2) at (-3.0,-12.15) {\textbf{B. Cesantía en edad avanzada}\\\textit{Arts. 84--87}\\[4pt]
+\textbf{Requisitos:} quedar sin trabajo desde los 60 años; tener al menos 25 años de cotización reconocidos; solicitar la pensión y acreditar la baja cuando sea necesario.\\[3pt]
+\textbf{Otorga:} pensión y seguro de salud.};
+\node[pension] (r3) at (3.0,-12.15) {\textbf{C. Vejez}\\\textit{Arts. 88--91}\\[4pt]
+\textbf{Requisitos:} haber cumplido 65 años; contar con al menos 25 años de cotización reconocidos; solicitar la pensión y haber concluido la relación laboral o la renta previa prevista por la ley.\\[3pt]
+\textbf{Otorga:} pensión y seguro de salud.};
+\node[pension] (r4) at (9.0,-12.15) {\textbf{D. Pensión garantizada}\\\textit{Arts. 92--96}\\[4pt]
+\textbf{Requisitos:} cumplir los de cesantía o vejez, pero tener saldo insuficiente para financiar vitaliciamente la pensión garantizada y el seguro de sobrevivencia.\\[3pt]
+\textbf{Operación:} se usa la cuenta y el Gobierno Federal complementa lo faltante.};
+\draw[oro] (pensT.south) -- ++(0,-0.35) -| (r1.north);
+\draw[oro] (pensT.south) -- ++(0,-0.35) -| (r2.north);
+\draw[oro] (pensT.south) -- ++(0,-0.35) -| (r3.north);
+\draw[oro] (pensT.south) -- ++(0,-0.35) -| (r4.north);
+
+\node[banda] (modT) at (0,-15.25) {Modalidades de pago para cesantía y vejez};
+\node[modalidad] (m1) at (-6.0,-17.0) {\textbf{Renta vitalicia.} Seguro de pensión contratado con la aseguradora elegida. Paga durante la vida de la persona pensionada, se actualiza en febrero conforme al INPC y exige cubrir el seguro de sobrevivencia. La elección no permite regresar a retiro programado.};
+\node[modalidad] (m2) at (6.0,-17.0) {\textbf{Retiros programados.} El saldo permanece en PENSIONISSSTE o en una administradora y financia pagos periódicos recalculados. Puede cambiarse a renta vitalicia si la renta convenida no resulta inferior a la pensión garantizada.};
+\draw[enlace] (modT.south) -- ++(0,-0.25) -| (m1.north);
+\draw[enlace] (modT.south) -- ++(0,-0.25) -| (m2.north);
+\end{tikzpicture}%
+}
+\vspace{0.22cm}
+
+{\footnotesize\textit{Figura 1. Elaboración propia con base en los artículos 76--113 de la LISSSTE y los materiales de la semana 8 \citep{lissste2026,materialS8DSS2026}.}}
+\end{center}
+\restoregeometry
+\end{landscape}
+\clearpage
+
+\section{Lectura jurídica del esquema}
+
+PENSIONISSSTE no es una pensión ni decide por sí solo si una persona reúne el derecho. Es el órgano público que cumple funciones de administradora: opera cuentas, invierte recursos, registra rendimientos, proporciona información y ejecuta la modalidad elegida cuando se trata de retiros programados. El ISSSTE verifica los supuestos legales; si se elige renta vitalicia, interviene una aseguradora. Esta distribución de competencias brinda trazabilidad y evita atribuir al administrador funciones que corresponden al instituto de seguridad social \citep{lissste2026,carrilloCastroIssste}.
+
+La cuenta individual integra seis subcuentas. No todos sus recursos tienen idéntico destino: PENSIONISSSTE no invierte la subcuenta de vivienda, y las aportaciones de ahorro pueden complementar el retiro en los supuestos legales. El ahorro solidario permite al trabajador autorizar hasta 2\% de su sueldo básico; la dependencia o entidad deposita \$3.25 por cada peso ahorrado, con el tope legal de 6.5\% del sueldo básico. Así, la utilidad del Fondo no se limita a custodiar dinero: individualiza aportaciones y rendimientos, informa y canaliza el ahorro hacia la prestación pensionaria \citep[arts.~76, 100 y 104--106]{lissste2026}.
+
+Las pensiones por cesantía y vejez comparten el requisito de 25 años de cotización, pero difieren en la contingencia: la primera exige quedar privado de trabajo desde los 60 años; la segunda requiere 65 años. Si se tiene la edad, pero no la cotización mínima, la ley permite retirar el saldo en una exhibición o seguir cotizando; ese supuesto no constituye pensión garantizada. Ésta procede, en cambio, cuando sí se reúnen los requisitos de cesantía o vejez y el saldo resulta insuficiente. La precisión corrige una posible lectura equívoca y resulta decisiva para orientar jurídicamente a la persona trabajadora \citep[arts.~84, 89 y 92--94]{lissste2026}.
+
+\subsection{Secuencia de decisión pensionaria}
+
+La aplicación práctica puede resumirse en cinco comprobaciones: identificar la contingencia; verificar edad y años reconocidos; determinar si el saldo financia la protección exigida; seleccionar la modalidad legalmente disponible; y confirmar el seguro de sobrevivencia y los servicios de salud que correspondan. En retiro anticipado, la suficiencia del saldo sustituye los umbrales ordinarios de edad y cotización, pero exige superar en más de 30\% la pensión garantizada después de cubrir el seguro de sobrevivencia. En cesantía y vejez, la persona puede optar entre renta vitalicia y retiros programados; la primera traslada el riesgo de longevidad a la aseguradora, mientras la segunda conserva el saldo bajo administración y requiere recalcular los pagos \citep[arts.~80, 81, 87 y 91]{lissste2026}.
+
+\begin{center}
+\setlength{\fboxsep}{8pt}
+\colorbox{unadmSand}{\begin{minipage}{0.88\linewidth}
+\textbf{Distinción indispensable.} Tener 60 o 65 años sin reunir 25 años de cotización permite retirar el saldo o continuar cotizando, pero no activa la pensión garantizada. Esta última exige cumplir los requisitos de cesantía o vejez y demostrar que los recursos son insuficientes para financiar la pensión y el seguro de sobrevivencia.
+\end{minipage}}
+\end{center}
+
+\section{Conclusiones}
+
+PENSIONISSSTE es un órgano público especializado cuya naturaleza y utilidad se explican por su función dentro del Sistema de Ahorro para el Retiro: administra e invierte cuentas individuales bajo supervisión de CONSAR y canaliza los recursos hacia la modalidad pensionaria aplicable. La pensión, por su parte, es la prestación económica que procura continuidad de ingresos; por eso deben separarse conceptualmente el derecho, su financiamiento, su administración y su pago.
+
+El acceso no depende de una regla única. El retiro anticipado exige suficiencia superior al umbral legal; la cesantía requiere desempleo desde los 60 años y 25 años cotizados; la vejez, 65 años y el mismo periodo de cotización; y la pensión garantizada protege a quien cumple los requisitos, pero carece de saldo suficiente. A mi juicio, esta ruta de verificación ---contingencia, edad, cotización, suficiencia y modalidad--- es la forma más clara de aplicar la LISSSTE y evitar decisiones basadas solo en el saldo visible de la cuenta.
+
+\textbf{Declaración de uso de inteligencia artificial.} Se utilizó asistencia de IA para organizar el esquema, contrastar la consistencia de los requisitos y depurar la redacción. El autor revisó el contenido, verificó los artículos citados en la LISSSTE vigente y asumió la responsabilidad académica de la versión final, conforme a los lineamientos de uso ético y responsable de IA de la UnADM.
+
+\nocite{bricenoRuiz2011,carrilloCastroIssste,lissste2026,materialS8DSS2026}
+\bibliography{derecho-a-la-seguridad-social}
+
+\end{document}
