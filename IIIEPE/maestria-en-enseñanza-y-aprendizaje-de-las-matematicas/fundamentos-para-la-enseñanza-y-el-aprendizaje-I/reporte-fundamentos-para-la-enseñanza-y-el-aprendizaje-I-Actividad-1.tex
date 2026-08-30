@@ -45,6 +45,7 @@
 \usepackage{longtable}
 \usepackage{pdflscape}
 \usepackage{tikz}
+\usepackage[most]{tcolorbox}
 \usetikzlibrary{arrows.meta,positioning,calc,fit,backgrounds}
 
 \definecolor{iiiepeNavy}{HTML}{163B5C}
@@ -66,6 +67,28 @@
   }%
 }
 
+% Presentación visual del reporte de lectura
+\newtcolorbox{reportelecturabox}[1][]{%
+  enhanced,breakable,
+  colback=iiiepePaper,colframe=iiiepeNavy,
+  boxrule=1pt,leftrule=4pt,arc=2pt,
+  left=8pt,right=8pt,top=6pt,bottom=6pt,
+  before skip=4pt,after skip=6pt,
+  fonttitle=\bfseries\color{white},coltitle=white,
+  colbacktitle=iiiepeNavy,
+  attach boxed title to top left={xshift=8pt,yshift=-2pt},
+  boxed title style={colback=iiiepeNavy,colframe=iiiepeNavy,arc=1pt},
+  title={Reporte de lectura},#1}
+
+\newtcolorbox{fichalecturabox}[1][]{%
+  enhanced,breakable,
+  colback=iiiepeAqua!7,colframe=iiiepeAqua!70!iiiepeNavy,
+  boxrule=.6pt,arc=1pt,
+  left=7pt,right=7pt,top=4pt,bottom=4pt,
+  fonttitle=\bfseries\color{iiiepeNavy},coltitle=iiiepeNavy,
+  colbacktitle=iiiepeAqua!7,
+  title={Ficha de la lectura},#1}
+
 \begin{document}
 
 \insertcoverwatermark
@@ -84,13 +107,18 @@ Este reporte analiza la tesis central de Cynthia Luna Scott: el contenido, la pe
 
 La discusión sobre el futuro del aprendizaje no se reduce a anticipar dispositivos o profesiones. Su problema de fondo es la distancia entre una escuela organizada para transmitir contenidos estables y una realidad caracterizada por incertidumbre, interdependencia, aceleración tecnológica y problemas que desbordan una sola disciplina. En \textit{El futuro del aprendizaje 1}, Scott examina por qué esa distancia obliga a revisar tanto lo que se aprende como la manera de aprenderlo \citep{scott2015futuro}.
 
-El propósito de este reporte es reconstruir el argumento de la autora, distinguir sus principales fuerzas explicativas y valorar sus implicaciones para la enseñanza de las matemáticas. Como producto de síntesis se presenta un mapa conceptual elaborado conforme a la técnica 81 del repertorio de la Universidad Abierta y a Distancia de México: conceptos jerarquizados, palabras de enlace y relaciones cruzadas que permiten leer proposiciones completas \citep{lopez2022mapa,unadm2023tecnicas}.
+La vigencia de esta discusión reside en una tensión decisiva: el acceso creciente a información no garantiza comprensión, autonomía ni participación responsable. Cuando la enseñanza conserva una lógica uniforme y reproductiva, limita la capacidad de interpretar evidencias, relacionar saberes y actuar ante situaciones nuevas; por ello, currículo, pedagogía y evaluación deben responder de manera articulada a la complejidad contemporánea.
 
-La postura que guía el análisis es que la reforma educativa no debe comenzar por la herramienta, sino por el tipo de actividad intelectual y social que se desea producir. La tecnología puede ampliar la participación, la personalización y el acceso; sin embargo, solo genera valor educativo cuando se articula con propósitos formativos, mediación docente y evaluación congruente.
+La reforma educativa no debe comenzar por la herramienta, sino por el tipo de actividad intelectual y social que se desea producir. La tecnología puede ampliar la participación, la personalización y el acceso; sin embargo, solo genera valor educativo cuando se articula con propósitos formativos, mediación docente y evaluación congruente.
 
-\section{Ficha de la lectura}
+\section{De la transmisión al aprendizaje para la complejidad}
 
-\begin{longtable}{@{}p{0.23\linewidth}p{0.70\linewidth}@{}}
+\subsection{Lectura crítica de la propuesta de Scott}
+
+\begin{reportelecturabox}
+\begin{spacing}{1.25}
+\begin{fichalecturabox}
+\begin{tabular}{@{}p{0.22\linewidth}p{0.70\linewidth}@{}}
 \toprule
 \textbf{Elemento} & \textbf{Descripción} \\
 \midrule
@@ -102,56 +130,49 @@ Tipo de texto & Documento de trabajo y revisión amplia de literatura sobre pros
 Pregunta central & ¿Qué transformaciones sociales, laborales, tecnológicas y educativas justifican reformar el contenido y los métodos de aprendizaje? \\
 Tesis reconstruida & La escuela debe desplazarse de la transmisión uniforme hacia aprendizajes autónomos, colaborativos, personalizados y vinculados con problemas reales, sin renunciar a una visión humanística de la educación. \\
 \bottomrule
-\end{longtable}
+\end{tabular}
+\end{fichalecturabox}
 
-\section{Reporte de lectura}
-
-\subsection{Propósito y organización argumentativa}
-
+\noindent\textbf{Organización argumentativa.}\enspace
 Scott presenta el primero de tres estudios sobre el aprendizaje del siglo XXI. Este volumen no ofrece todavía un catálogo definitivo de competencias ni una metodología única; construye el diagnóstico que vuelve necesaria la transformación. Su razonamiento sigue una secuencia reconocible: identifica cambios del entorno, muestra el desfase de la institución escolar, examina las características y expectativas de quienes aprenden, incorpora las demandas del trabajo y la ciudadanía, y concluye con la necesidad de modificar currículo, pedagogía y evaluación \citep{scott2015futuro}.
 
 Este alcance es importante porque evita leer el documento como una receta. La autora integra estudios prospectivos y reportes internacionales para sostener una dirección de cambio. Por ello, el valor principal del texto reside en relacionar presiones que suelen analizarse por separado: abandono escolar, desmotivación, transformación laboral, digitalización, movilidad humana, crisis ambientales y participación cívica.
 
-\subsection{De la transmisión a la formación para la complejidad}
-
+\medskip\noindent\textbf{De la transmisión a la formación para la complejidad.}\enspace
 La primera idea central es que preparar para el siglo XXI exige más que acumular información. La mundialización, los cambios demográficos, la incertidumbre laboral y los problemas socioambientales requieren pensamiento crítico, creatividad, comunicación, colaboración y capacidad para resolver situaciones sin una respuesta evidente. La alfabetización básica sigue siendo indispensable, pero deja de ser suficiente cuando las personas deben interpretar información contradictoria, aprender durante toda la vida y actuar con otros en contextos diversos \citep{scott2015futuro}.
 
 La lectura recupera una visión integral de la educación. Los fines económicos y laborales no agotan su sentido: también importa formar ciudadanía capaz de comprender asuntos públicos, deliberar con evidencia y participar responsablemente. Esta orientación coincide con la tradición humanística que concibe aprender como aprender a conocer, hacer, convivir y ser \citep{delors1996educacion}. Así, una reforma pertinente debe equilibrar empleabilidad, desarrollo personal, justicia social y sostenibilidad.
 
-\subsection{Fuerzas que impulsan el cambio}
-
+\medskip\noindent\textbf{Fuerzas que impulsan el cambio.}\enspace
 El texto reúne cuatro conjuntos de presiones. Primero, un mundo interconectado produce problemas complejos que demandan perspectivas interdisciplinarias y cooperación intercultural. Segundo, el estudiantado participa en ecosistemas digitales, espera mayor capacidad de elección y aprende también fuera de la escuela. Tercero, el desinterés y el abandono revelan que una parte de la oferta educativa no logra construir pertinencia. Cuarto, el trabajo cambia con rapidez y demanda aprender, desaprender y actualizar competencias de manera continua \citep{scott2015futuro}.
 
 Estas fuerzas no operan de modo aislado. La expansión tecnológica modifica la circulación de información y el trabajo; esas transformaciones cambian las expectativas del alumnado; cuando la escuela mantiene actividades descontextualizadas, aumenta la percepción de irrelevancia. La consecuencia no es que toda práctica anterior deba desecharse, sino que cada contenido y método necesita justificarse por su contribución a una formación transferible.
 
-\subsection{Transformación del papel docente y de la experiencia escolar}
-
+\medskip\noindent\textbf{Transformación del papel docente y de la experiencia escolar.}\enspace
 Scott prevé instituciones centradas menos en la enseñanza como exposición y más en el aprendizaje como actividad del estudiante. En ese marco, el profesorado deja de ser únicamente fuente de respuestas y asume funciones de diseño, mediación, acompañamiento y retroalimentación. El aprendizaje se vuelve más personal, participativo, práctico y colectivo; puede ocurrir en distintos tiempos y espacios y apoyarse en redes y recursos digitales \citep{scott2015futuro}.
 
 Este desplazamiento no disminuye la relevancia docente. Por el contrario, la incrementa: cuando la información es abundante, se necesita criterio para seleccionar fuentes, formular problemas, secuenciar retos y convertir la actividad en comprensión. La mediación también debe cuidar inclusión y equidad, pues el acceso a dispositivos no garantiza conectividad, alfabetización informacional ni condiciones equivalentes de participación.
 
-\subsection{Tecnología: medio y no finalidad}
-
+\medskip\noindent\textbf{Tecnología: medio y no finalidad.}\enspace
 Uno de los aportes más útiles de la lectura es evitar el determinismo tecnológico. El documento reconoce la potencia de Internet, las redes y los dispositivos móviles, pero advierte que incorporarlos como accesorios no transforma la pedagogía. Su valor surge cuando hacen posibles comunicación, creación, colaboración, acceso flexible y producción de conocimiento que no podrían alcanzarse del mismo modo con una clase exclusivamente transmisiva \citep{scott2015futuro}.
 
 Los datos de penetración tecnológica incluidos en el anexo corresponden a 2014. Por tanto, sirven para comprender el momento histórico del argumento, pero no deben emplearse como estadísticas actuales. Esta precaución fortalece la lectura crítica: el diagnóstico estructural puede conservar vigencia aunque algunos indicadores y ejemplos de plataforma hayan envejecido.
 
-\subsection{Implicaciones para currículo y evaluación}
-
+\medskip\noindent\textbf{Implicaciones para currículo y evaluación.}\enspace
 Si el propósito cambia de reproducir información a movilizar saberes, también debe cambiar la evaluación. No es coherente declarar como objetivos la colaboración, la creatividad o la resolución de problemas y medir únicamente recuerdo individual de datos. Se requieren desempeños observables: investigaciones, modelos, explicaciones, proyectos, debates, soluciones justificadas y procesos de revisión.
 
 El currículo, en consecuencia, debe seleccionar menos contenidos aislados y construir conexiones más profundas. La personalización no implica eliminar objetivos comunes, sino ofrecer rutas, apoyos y formas de participación que reconozcan diferencias. Desde una perspectiva de bien común, la innovación necesita mantener la responsabilidad pública, la inclusión y el sentido humanístico de la educación \citep{unesco2015replantear}.
 
-\section{Mapa conceptual}
-
-La técnica del mapa conceptual es pertinente como control de lectura porque obliga a seleccionar conceptos, jerarquizarlos y convertir sus vínculos en proposiciones. El mapa siguiente responde a la pregunta: \textit{¿por qué y hacia dónde debe transformarse el aprendizaje del siglo XXI?} No reproduce el índice de la lectura; reconstruye su lógica causal y agrega relaciones transversales para mostrar que entorno, escuela, actores y reforma forman un sistema \citep{lopez2022mapa}.
+\end{spacing}
+\end{reportelecturabox}
 
 \clearpage
 \pagestyle{empty}
 \begin{landscape}
-\begin{figure}[p]
+\subsection{Relaciones que configuran la transformación educativa}
+\begin{figure}[ht]
 \centering
-\resizebox{0.96\linewidth}{!}{%
+\resizebox{0.93\linewidth}{!}{%
 \begin{tikzpicture}[
   font=\sffamily,
   root/.style={rounded corners=4pt,draw=iiiepeNavy,very thick,fill=iiiepeNavy!12,text width=4.8cm,align=center,minimum height=1.25cm,font=\bfseries\large},
@@ -163,37 +184,30 @@ La técnica del mapa conceptual es pertinente como control de lectura porque obl
   label/.style={fill=white,inner sep=1.5pt,font=\scriptsize,text=iiiepeInk}
 ]
 \node[root] (center) at (0,0) {Transformación del aprendizaje\\en el siglo XXI};
-
 \node[branch] (forces) at (-8.2,3.3) {Fuerzas del cambio};
 \node[leaf] (complex) at (-12.1,5.5) {Complejidad global\\e interdependencia};
 \node[leaf] (digital) at (-8.2,5.5) {Cultura digital y\\nuevas formas de aprender};
 \node[leaf] (work) at (-4.3,5.5) {Transformación del trabajo\\y aprendizaje permanente};
-
 \node[branch] (gap) at (-8.2,-3.3) {Desfase del modelo escolar};
 \node[leaf] (transmission) at (-12.1,-5.5) {Transmisión uniforme\\de contenidos};
 \node[leaf] (disengage) at (-8.2,-5.5) {Desinterés y\\abandono escolar};
 \node[leaf] (assessment) at (-4.3,-5.5) {Evaluación centrada\\en la reproducción};
-
 \node[branch] (reform) at (8.2,3.3) {Reforma necesaria};
 \node[leaf] (curriculum) at (4.3,5.5) {Currículo pertinente,\\integrado y flexible};
 \node[leaf] (pedagogy) at (8.2,5.5) {Pedagogía activa,\\personal y colaborativa};
 \node[leaf] (evidence) at (12.1,5.5) {Evaluación mediante\\desempeños auténticos};
-
 \node[outcome] (purposes) at (8.2,-3.3) {Resultados formativos};
 \node[leaf] (skills) at (4.3,-5.5) {Pensamiento crítico,\\creatividad y solución};
 \node[leaf] (agency) at (8.2,-5.5) {Autonomía y\\autorregulación};
 \node[leaf] (citizenship) at (12.1,-5.5) {Colaboración, ciudadanía\\y convivencia intercultural};
-
 \draw[edge] (forces) -- node[label,above]{hacen necesaria} (center);
 \draw[edge] (gap) -- node[label,below]{evidencia la urgencia de} (center);
 \draw[edge] (center) -- node[label,above]{se concreta en} (reform);
 \draw[edge] (center) -- node[label,below]{busca producir} (purposes);
-
 \foreach \n in {complex,digital,work} {\draw[edge] (\n) -- (forces);}
 \foreach \n in {transmission,disengage,assessment} {\draw[edge] (\n) -- (gap);}
 \foreach \n in {curriculum,pedagogy,evidence} {\draw[edge] (reform) -- (\n);}
 \foreach \n in {skills,agency,citizenship} {\draw[edge] (purposes) -- (\n);}
-
 \draw[cross] (digital.south) to[out=-55,in=145] node[label,pos=.55]{no transforma por sí sola} (pedagogy.west);
 \draw[cross] (work.south east) to[out=-20,in=160] node[label,pos=.52]{orienta} (curriculum.west);
 \draw[cross] (assessment.north east) to[out=35,in=205] node[label,pos=.50]{debe sustituirse por} (evidence.south west);
@@ -201,20 +215,20 @@ La técnica del mapa conceptual es pertinente como control de lectura porque obl
 \draw[cross] (complex.south east) to[out=-15,in=165] node[label,pos=.50]{demanda} (citizenship.west);
 \end{tikzpicture}%
 }
-\caption{Mapa conceptual del argumento de \citet{scott2015futuro}. Elaboración propia con base en la técnica 81 de \citet{lopez2022mapa}.}
+\caption{Transformación del aprendizaje en el siglo XXI. Elaboración propia a partir de \citet{scott2015futuro}, con la técnica de \citet{lopez2022mapa}.}
 \label{fig:mapa-futuro-aprendizaje}
 \end{figure}
 \end{landscape}
 \pagestyle{fancy}
 \clearpage
 
-\subsection{Lectura del mapa}
+\subsection{Alcances pedagógicos y aplicación matemática}
 
 El concepto central se explica por dos entradas diagnósticas y dos salidas propositivas. Las fuerzas del cambio hacen necesaria la transformación, mientras el desfase escolar muestra por qué es urgente. La transformación se concreta en una reforma articulada de currículo, pedagogía y evaluación, cuyo resultado esperado es una formación que combine agencia individual y responsabilidad colectiva.
 
-Las relaciones cruzadas expresan cuatro criterios. La tecnología no transforma por sí sola la pedagogía; la evolución del trabajo orienta, pero no debe monopolizar, el currículo; una evaluación reproductiva debe reemplazarse por evidencias auténticas; y la pertinencia de las experiencias puede contribuir a atender el desinterés. De este modo, el mapa evita convertir la lectura en una lista y hace visible su estructura de causas, decisiones y consecuencias.
+Las relaciones cruzadas expresan cuatro criterios. La tecnología no transforma por sí sola la pedagogía; la evolución del trabajo orienta, pero no debe monopolizar, el currículo; una evaluación reproductiva debe reemplazarse por evidencias auténticas; y la pertinencia de las experiencias puede contribuir a atender el desinterés. Así se hace visible una estructura de causas, decisiones y consecuencias.
 
-\section{Valoración crítica y aplicación a la enseñanza de las matemáticas}
+\subsubsection{Implicaciones para la enseñanza de las matemáticas}
 
 La principal fortaleza del documento es su mirada sistémica. Scott no atribuye el cambio a una moda, sino a la convergencia de presiones sociales, tecnológicas, económicas y cívicas. También acierta al vincular el contenido con el método: enseñar nuevas competencias mediante prácticas centradas exclusivamente en exposición y repetición produciría una contradicción entre fines y medios.
 
@@ -224,13 +238,13 @@ En matemáticas, esta lectura conduce a reemplazar parte de la ejercitación des
 
 La evaluación congruente integraría productos y proceso: formulación del problema, elección de herramientas, precisión matemática, explicación, colaboración, revisión y transferencia. El docente diseñaría andamiajes y preguntas, observaría estrategias y ofrecería retroalimentación. Así, la autonomía no significaría abandono, sino responsabilidad progresiva dentro de una estructura deliberada.
 
-\section{Conclusión}
+\section{Conclusiones}
 
-La lectura permite concluir que el futuro del aprendizaje es, ante todo, una decisión pedagógica y social. Las transformaciones del entorno muestran la insuficiencia de una escuela dedicada únicamente a transmitir respuestas estables; sin embargo, la solución tampoco consiste en digitalizar esa misma transmisión. Se requiere alinear propósitos, currículo, experiencias, mediación y evaluación para formar personas capaces de aprender durante toda la vida, colaborar y actuar con juicio frente a problemas complejos.
+El futuro del aprendizaje es, ante todo, una decisión pedagógica y social. Las transformaciones del entorno muestran la insuficiencia de una escuela dedicada únicamente a transmitir respuestas estables; sin embargo, la solución tampoco consiste en digitalizar esa misma transmisión. Se requiere alinear propósitos, currículo, experiencias, mediación y evaluación para formar personas capaces de aprender durante toda la vida, colaborar y actuar con juicio frente a problemas complejos.
 
-Considero que el criterio decisivo para valorar una innovación es la actividad cognitiva que promueve y la evidencia que permite obtener. Si una herramienta solo acelera la entrega de información, el cambio es superficial; si ayuda a preguntar, representar, contrastar, argumentar y revisar, puede ampliar el aprendizaje. En la enseñanza de las matemáticas, esta distinción obliga a diseñar situaciones en las que el conocimiento funcione como instrumento para comprender y decidir, no únicamente como procedimiento para repetir.
+El criterio decisivo para valorar una innovación es la actividad cognitiva que promueve y la evidencia que permite obtener. Si una herramienta solo acelera la entrega de información, el cambio es superficial; si ayuda a preguntar, representar, contrastar, argumentar y revisar, puede ampliar el aprendizaje. En la enseñanza de las matemáticas, esta distinción obliga a diseñar situaciones en las que el conocimiento funcione como instrumento para comprender y decidir, no únicamente como procedimiento para repetir.
 
-El mapa conceptual confirma esta postura al mostrar que las fuerzas externas no determinan una respuesta automática: pasan por decisiones curriculares y pedagógicas. La implicación profesional es concreta: el futuro no se espera ni se incorpora como accesorio; se construye mediante experiencias inclusivas, intelectualmente exigentes y vinculadas con la realidad.
+Las fuerzas externas no determinan una respuesta automática: pasan por decisiones curriculares y pedagógicas. La implicación profesional es concreta: el futuro no se espera ni se incorpora como accesorio; se construye mediante experiencias inclusivas, intelectualmente exigentes y vinculadas con la realidad.
 
 \bibliography{fundamentos-para-la-enseñanza-y-el-aprendizaje-I}
 
