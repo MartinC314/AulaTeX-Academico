@@ -1,0 +1,214 @@
+\providecommand{\itescastudentname}{Martin Jonathan de la Cruz}
+\providecommand{\itescastudentid}{Por confirmar}
+\providecommand{\itescafaculty}{Maestría en Gestión Administrativa}
+\providecommand{\itescacoursename}{Seminario I}
+\providecommand{\itescacoursecode}{MGA-SEMINARIO-I}
+\providecommand{\itescadepartment}{Posgrado e Investigación}
+\providecommand{\itescateachingfigure}{Dra. Carla Olimpya Zapuche Moreno}
+\providecommand{\itescaprogramperiod}{Agosto--noviembre de 2026}
+\providecommand{\itescamodality}{En línea}
+\providecommand{\itescalocation}{Cajeme, Sonora}
+\providecommand{\itescaasset}{ITESCA/assets-itesca/itesca-monograma.png}
+\providecommand{\itescaofficialasset}{ITESCA/assets-itesca/web/logo-itesca-contorno.png}
+\providecommand{\itescasecondaryasset}{ITESCA/assets-itesca/itesca-monograma.png}
+
+\def\itescadocumenttitle {Matriz de Estado del Arte}
+\def\itescadocumentsubtitle {Actividad 3}
+\def\itescadocumentsubject {Transformación digital e innovación comercial en MiPyMEs}
+\def\itescaactivityname {Actividad 3. Matriz de Estado del Arte}
+\def\itescasessionname {Seminario I}
+\def\itescablockname {Antecedentes de investigación}
+\def\itescamainproduct {Matriz de referencias y síntesis crítica}
+
+\documentclass[spanish,letterpaper,oneside]{article}
+
+\def\documenttitle {\itescadocumenttitle}
+\def\documentsubtitle {\itescadocumentsubtitle}
+\def\documentsubject {\itescadocumentsubject}
+\def\documentauthor {\itescastudentname}
+\def\coursename {\itescacoursename}
+\def\coursecode {\itescacoursecode}
+\def\universityname {Instituto Tecnológico Superior de Cajeme}
+\def\universityfaculty {\itescafaculty}
+\def\universitydepartment {\itescadepartment}
+\def\universitydepartmentimage {\itescaofficialasset}
+\def\universitydepartmentimagecfg {width=5.2cm}
+\def\universitylocation {\itescalocation}
+
+\def\authortable {
+  \begin{tabular}{ll}
+    \textbf{Alumno:} & \itescastudentname \\
+    No. de control: & \itescastudentid \\
+    Carrera: & \itescafaculty \\
+    Semestre: & \itescaprogramperiod \\
+    Asignatura: & \itescacoursename \\
+    Docente: & \itescateachingfigure \\
+    Modalidad: & \itescamodality \\
+    Fecha de entrega: & 30 de agosto de 2026 \\
+    Lugar: & \universitylocation
+  \end{tabular}
+}
+
+\input{template}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\newenvironment{apareferences}{%
+  \begin{list}{}{\setlength{\leftmargin}{1.27cm}%
+    \setlength{\itemindent}{-1.27cm}%
+    \setlength{\itemsep}{0.75\baselineskip}%
+    \setlength{\parsep}{0pt}}}{\end{list}}
+
+\definecolor{itescaRedDark}{HTML}{8F1117}
+\definecolor{itescaRed}{HTML}{D70F18}
+\definecolor{itescaCharcoal}{HTML}{141414}
+\definecolor{itescaSilver}{HTML}{D9D9D9}
+\def\portraittitlecolor {itescaRedDark}
+
+\newcommand{\insertcoverwatermark}{%
+  \AddToShipoutPictureBG*{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[opacity=0.13,inner sep=0pt,yshift=-0.10cm] at (current page.center)
+      {\includegraphics[width=0.58\paperwidth]{\itescaasset}};
+    \end{tikzpicture}%
+  }%
+}
+\newcommand{\insertcoverinstitutionalfooter}{%
+  \AddToShipoutPictureFG*{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \fill[itescaCharcoal] (current page.south west) rectangle ([yshift=1.35cm]current page.south east);
+      \fill[itescaRed] ([yshift=1.35cm]current page.south west) rectangle ([yshift=1.47cm]current page.south east);
+      \node[anchor=south west] at ([xshift=0.95cm,yshift=0.16cm]current page.south west)
+      {\includegraphics[height=0.88cm]{\itescasecondaryasset}};
+      \node[anchor=south east,text=white,align=right,font=\sffamily\bfseries\small]
+      at ([xshift=-0.95cm,yshift=0.28cm]current page.south east)
+      {Instituto Tecnológico Superior de Cajeme\\\textcolor{itescaSilver}{\itescalocation\ \textperiodcentered\ itesca.edu.mx}};
+    \end{tikzpicture}%
+  }%
+}
+
+\newcommand{\matrixheader}{%
+\textbf{Autores (año)} & \textbf{Metodología} & \textbf{Objeto de estudio} &
+\textbf{Variables o categorías} & \textbf{Resultados y hallazgos} &
+\textbf{Limitaciones o recomendaciones} \\
+\midrule}
+
+\begin{document}
+\insertcoverwatermark
+\insertcoverinstitutionalfooter
+\templatePortrait
+\templatePagecfg
+\onehalfspacing
+
+\begin{abstractd}
+\textbf{Objetivo:} Construir una síntesis crítica de antecedentes que fundamente el estudio de la transformación digital y la innovación comercial en micro, pequeñas y medianas empresas, identifique vacíos de conocimiento y oriente una intervención basada en datos.
+
+\textbf{Producto:} Matriz analítica de diez investigaciones publicadas entre 2021 y 2024 y estado del arte de 500--800 palabras, con fuentes identificables mediante DOI y referencias en formato APA 7.
+\end{abstractd}
+
+\templateIndex
+\templateFinalcfg
+
+\section{Introducción}
+
+La transformación digital representa un reto de gestión para las micro, pequeñas y medianas empresas porque incorporar herramientas no garantiza mejores decisiones, relaciones duraderas con los clientes ni resultados sostenibles. En organizaciones con recursos limitados, la información comercial suele permanecer fragmentada entre ventas, campañas y contactos, lo que dificulta evaluar qué acciones generan conversión, retención, satisfacción y rentabilidad. Comprender las capacidades que convierten los datos en innovación resulta, por tanto, indispensable para fundamentar una intervención pertinente.
+
+El interés se concentra en la transformación digital y la innovación comercial como medios para fortalecer el desempeño de las MiPyMEs. Dentro de la LGAC \emph{Gestión e Innovación de las Organizaciones}, el título tentativo es \emph{Estrategia de innovación comercial basada en datos para fortalecer el desempeño de una MiPyME de Cajeme, Sonora}. Los antecedentes arbitrados publicados entre 2021 y 2024 permiten contrastar evidencia internacional, nacional y regional sobre digitalización, mercadotecnia, capacidades dinámicas, analítica, innovación y desempeño, sin perder de vista las condiciones particulares del entorno sonorense.
+
+\section[Capacidades digitales e innovación comercial]{Capacidades digitales e innovación comercial en las MiPyMEs}
+
+\subsection[Matriz de antecedentes]{Matriz analítica de antecedentes}
+
+\clearpage
+\pagestyle{empty}
+\begin{landscape}
+\begingroup
+\fontsize{6.35}{7.45}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{1.14}
+\begin{longtable}{@{}p{0.105\linewidth}p{0.155\linewidth}p{0.145\linewidth}p{0.17\linewidth}p{0.205\linewidth}p{0.18\linewidth}@{}}
+\caption{Matriz de estado del arte sobre transformación digital, innovación comercial y desempeño de MiPyMEs}\label{tab:estado-arte}\\
+\toprule
+\matrixheader
+\endfirsthead
+\multicolumn{6}{r}{\textit{Continuación de la Tabla \ref{tab:estado-arte}}}\\
+\toprule
+\matrixheader
+\endhead
+
+1. Kraus et al. (2021) & Revisión sistemática y análisis de coocurrencia con VOSviewer. & Estado de la investigación sobre transformación digital en organizaciones. & Categorías: efectos tecnológicos, empresariales y sociales; modelos de negocio; disrupción. & Organiza el campo en tres grupos de impacto y confirma que la transformación no equivale a instalar tecnología: modifica estrategia, procesos y relaciones con el entorno. & Literatura heterogénea y predominantemente tecnológica. Recomienda estudios sobre efectos sociales, ambientales y configuraciones sectoriales. \\
+\midrule
+2. Troise et al. (2021) & Estudio cuantitativo de MiPyMEs; modelado de relaciones entre agilidad y respuesta en entornos VUCA. & Capacidad de las MiPyMEs para responder a volatilidad, incertidumbre, complejidad y ambigüedad. & Transformación digital, agilidad, ambidestreza, desempeño y resiliencia. & La agilidad traduce recursos digitales en adaptación estratégica; la tecnología aislada no garantiza desempeño si la empresa no reconfigura rápidamente sus rutinas. & Contexto extraordinario de crisis y medición transversal. Sugiere diseños longitudinales y comparaciones entre países y sectores. \\
+\midrule
+3. Teng et al. (2022) & Diseño mixto secuencial: entrevistas y encuesta a 335 MiPyMEs chinas; ecuaciones estructurales. & Factores que explican el desempeño financiero durante la transformación digital. & Tecnología, habilidades del personal, estrategia de transformación, transformación digital y desempeño financiero. & Tecnología, competencias y estrategia se relacionan positivamente con la transformación; esta media su efecto sobre el desempeño. & Evidencia de un solo país y datos autoinformados. Recomienda validar por sector, territorio y con indicadores objetivos. \\
+\midrule
+4. Omrani et al. (2022) & Análisis cuantitativo de 15,346 MiPyMEs europeas y no europeas mediante regresión logística ordenada. & Determinantes de la adopción de tecnologías digitales en MiPyMEs. & Infraestructura y herramientas TI, innovación previa, regulación, habilidades y recursos financieros. & Los impulsores organizacionales predominan: infraestructura, capacidades e innovación previa explican más la adopción que el ambiente externo. & La influencia ambiental resultó marginal y la base es secundaria. Recomienda medir preparación antes de invertir y construir una hoja de ruta de habilidades e infraestructura. \\
+\midrule
+5. Rodríguez-Espíndola et al. (2022) & Encuesta a 165 MiPyMEs mexicanas; ecuaciones estructurales para efectos directos e indirectos. & Economía circular e innovación orientada a la sostenibilidad en el desempeño de MiPyMEs. & Presión gubernamental y del cliente, tecnología, economía circular, innovación sostenible y desempeño triple. & La innovación sostenible y la economía circular favorecen resultados financieros, sociales y ambientales; el apoyo gubernamental impulsa directamente la adopción. & Tamaño muestral y corte transversal. Recomienda adecuar apoyos y tecnología al contexto de economías emergentes. \\
+\midrule
+6. Ramírez-Solís et al. (2022) & Encuesta presencial a 360 MiPyMEs de cuatro ciudades mexicanas; ecuaciones estructurales. & Antecedentes de la innovación y su vínculo con el desempeño. & Capital relacional; orientaciones de mercado, emprendedora, de aprendizaje y tecnológica; innovación y desempeño. & El capital relacional fortalece las orientaciones estratégicas; mercado y emprendimiento impulsan innovación, que mejora el desempeño. Aprendizaje y tecnología muestran efectos mixtos. & Muestra urbana, transversal y autoinformada. Propone explotar redes y capital relacional y replicar en regiones y sectores específicos. \\
+\midrule
+7. Melo et al. (2023) & Revisión sistemática de 74 artículos de Web of Science y Scopus, más análisis bibliométrico. & Evaluación sostenible del desempeño de MiPyMEs bajo transformación digital. & Desempeño económico, social y ambiental; tecnologías digitales; métricas y contexto. & El campo crece, pero privilegia desempeño económico y carece de una definición y medición integral aceptada para MiPyMEs. & Concentración en Italia, China y Finlandia; poca evidencia regional y longitudinal. Plantea nueve líneas, entre ellas big data, priorización regional y estudios intertemporales. \\
+\midrule
+8. Cadden et al. (2023) & Encuesta a 194 MiPyMEs del Reino Unido; modelado PLS de rutas. & Uso de big data y analítica de marketing para innovación y ventaja competitiva. & Orientación emprendedora, big data, analítica, integración del conocimiento, innovación y ventaja competitiva. & La integración del conocimiento convierte datos y orientación emprendedora en innovación y ventaja; disponer de datos no crea valor sin mecanismos organizacionales de interpretación. & Un país, muestra moderada y medición transversal. Recomienda examinar capacidades analíticas, calidad de datos y relaciones causales en otros contextos. \\
+\midrule
+9. Valdez-Juárez et al. (2024) & Encuesta en línea a 4,121 MiPyMEs mexicanas de servicios, comercio y manufactura; PLS-SEM. & Transformación digital e innovación como capacidades para el desempeño financiero sostenible. & Transformación digital, innovación tecnológica y no tecnológica, sostenibilidad y desempeño financiero. & La transformación digital impulsa ambas modalidades de innovación y mejora el desempeño financiero; la sostenibilidad modera positivamente el proceso innovador. & Efecto directo sobre desempeño relativamente pequeño y datos de un periodo. Recomienda profundizar por tamaño, género, sector y región con indicadores objetivos. \\
+\midrule
+10. Merín-Rodrigáñez et al. (2024) & Encuesta a 434 MiPyMEs innovadoras españolas; PLS-SEM. & Efecto de la transformación digital en el desempeño de MiPyMEs innovadoras. & Transformación digital, innovación del modelo de negocio y desempeño empresarial. & La innovación del modelo de negocio media parcialmente la relación positiva: la inversión digital produce mejores resultados cuando rediseña la creación y captura de valor. & Se limita a empresas innovadoras y un país; no prueba temporalidad. Recomienda diseños longitudinales, muestras heterogéneas y análisis de condiciones sectoriales. \\
+\bottomrule
+\end{longtable}
+\endgroup
+\end{landscape}
+\clearpage
+\pagestyle{fancy}
+
+\subsection[Estado del arte]{Síntesis crítica del estado del arte}
+
+La investigación reciente coincide en que la transformación digital de las micro, pequeñas y medianas empresas no consiste en adquirir herramientas, sino en reconfigurar recursos, decisiones y propuestas de valor. En el panorama internacional, Kraus et al. (2021) ordenan el campo en impactos tecnológicos, empresariales y sociales, mientras que Melo et al. (2023) muestran que la medición del desempeño continúa concentrada en resultados económicos. Esta evolución sitúa el problema en la gestión: la tecnología genera valor cuando se articula con estrategia, capacidades humanas, aprendizaje y mecanismos de evaluación.
+
+Los estudios cuantitativos respaldan esa interpretación desde distintos contextos. En China, Teng et al. (2022) identifican tecnología, habilidades del personal y estrategia como antecedentes de la transformación digital, la cual media su efecto en el desempeño financiero. Omrani et al. (2022), con más de quince mil MiPyMEs europeas y no europeas, encuentran que infraestructura, competencias e innovación previa pesan más que las presiones ambientales en la adopción. Troise et al. (2021) agregan que la agilidad es necesaria para responder a entornos volátiles. Por tanto, la coincidencia central es que los recursos digitales son insuficientes sin una capacidad organizacional que los convierta en acciones oportunas.
+
+La literatura de innovación comercial precisa cómo ocurre esa conversión. Cadden et al. (2023) concluyen que los datos y la analítica de marketing fortalecen la innovación y la ventaja competitiva cuando existe integración del conocimiento. Merín-Rodrigáñez et al. (2024) demuestran, a su vez, que la innovación del modelo de negocio media parcialmente el efecto de la transformación digital sobre el desempeño. Ambos resultados desplazan la atención desde el volumen de datos hacia su uso: comprender clientes, rediseñar procesos y ajustar la forma de crear y capturar valor. Sin embargo, difieren en el mecanismo enfatizado; el primer estudio privilegia la interpretación de información, y el segundo la modificación del modelo de negocio.
+
+En México, la evidencia es pertinente, aunque todavía amplia para explicar realidades regionales. Rodríguez-Espíndola et al. (2022) relacionan economía circular e innovación sostenible con resultados financieros, sociales y ambientales. Ramírez-Solís et al. (2022) muestran que el capital relacional y las orientaciones de mercado y emprendimiento favorecen la innovación, pero reportan efectos mixtos para las orientaciones de aprendizaje y tecnológica. Más cerca del contexto de este proyecto, Valdez-Juárez et al. (2024), con 4,121 MiPyMEs mexicanas, confirman que la transformación digital impulsa innovación tecnológica y no tecnológica y que ambas fortalecen el desempeño financiero. La discrepancia aparente es relevante: poseer orientación tecnológica no siempre basta, pero una transformación articulada con innovación sí puede producir resultados. Esto refuerza la necesidad de observar prácticas y decisiones, no solo actitudes declaradas.
+
+Persisten cuatro vacíos. Primero, predominan encuestas transversales y autoinformes, que identifican asociaciones, pero no demuestran cambios a lo largo del tiempo. Segundo, hay escasa desagregación por microempresa, actividad comercial y territorio. Tercero, la mayoría utiliza indicadores globales de desempeño y no sigue el recorrido operativo desde datos del cliente hasta conversión, retención, satisfacción y rentabilidad. Cuarto, falta evidencia específica de Cajeme y Sonora que considere restricciones de recursos, madurez analítica y dinámicas del mercado local. Estas limitaciones impiden trasladar mecánicamente conclusiones internacionales o nacionales a una organización concreta.
+
+En consecuencia, el problema de investigación se delimita como la toma de decisiones comerciales con información fragmentada, procesos poco medibles y evaluación insuficiente en una MiPyME de Cajeme. El objetivo general tentativo es diseñar y evaluar una estrategia de innovación comercial basada en datos que fortalezca su desempeño. Los objetivos específicos serán diagnosticar capacidades digitales y comerciales; diseñar acciones e indicadores; implementar una intervención; y comparar conversión, retención, satisfacción y rentabilidad antes y después. La investigación se justifica porque integra capacidades, analítica e innovación del modelo comercial en una evaluación situada. Su aporte práctico será una ruta viable para la empresa; el metodológico, evidencia longitudinal con indicadores operativos; y el social y académico, conocimiento regional sobre digitalización responsable de MiPyMEs. De este modo, el proyecto se alinea con la LGAC de Gestión e Innovación de las Organizaciones y atiende un vacío verificable, en lugar de asumir que digitalizar equivale automáticamente a mejorar.
+
+\section{Conclusiones}
+
+La matriz muestra un consenso: la tecnología mejora el desempeño únicamente cuando la organización desarrolla habilidades, integra conocimiento, innova y mide resultados. La evidencia mexicana confirma esa dirección, pero no resuelve cómo opera en una micro o pequeña empresa de Cajeme ni cómo evolucionan indicadores comerciales concretos. Por ello, la aportación propuesta consiste en diseñar una intervención contextualizada y evaluarla en el tiempo, conectando decisiones basadas en datos con resultados financieros y de clientes.\footnote{Se utilizó inteligencia artificial como apoyo para organizar la búsqueda, normalizar la matriz y revisar la redacción. La selección, verificación mediante DOI, síntesis y postura final fueron supervisadas por el autor.}
+
+\clearpage
+\section*{Referencias}
+\addcontentsline{toc}{section}{Referencias}
+\begin{apareferences}
+  \item Cadden, T., Weerawardena, J., Cao, G., Duan, Y., \& McIvor, R. (2023). Examining the role of big data and marketing analytics in SMEs innovation and competitive advantage: A knowledge integration perspective. \emph{Journal of Business Research, 168}, 114225. \url{https://doi.org/10.1016/j.jbusres.2023.114225}
+
+  \item Kraus, S., Jones, P., Kailer, N., Weinmann, A., Chaparro-Banegas, N., \& Roig-Tierno, N. (2021). Digital transformation: An overview of the current state of the art of research. \emph{SAGE Open, 11}(3). \url{https://doi.org/10.1177/21582440211047576}
+
+  \item Melo, I. C., Queiroz, G. A., Alves Junior, P. N., de Sousa, T. B., Yushimito, W. F., \& Pereira, J. (2023). Sustainable digital transformation in small and medium enterprises (SMEs): A review on performance. \emph{Heliyon, 9}(3), e13908. \url{https://doi.org/10.1016/j.heliyon.2023.e13908}
+
+  \item Merín-Rodrigáñez, J., Dasí, À., \& Alegre, J. (2024). Digital transformation and firm performance in innovative SMEs: The mediating role of business model innovation. \emph{Technovation, 134}, 103027. \url{https://doi.org/10.1016/j.technovation.2024.103027}
+
+  \item Omrani, N., Rejeb, N., Maalaoui, A., Dabić, M., \& Kraus, S. (2022). Drivers of digital transformation in SMEs. \emph{IEEE Transactions on Engineering Management, 71}, 5030--5043. \url{https://doi.org/10.1109/TEM.2022.3215727}
+
+  \item Ramírez-Solís, E. R., Llonch-Andreu, J., \& Malpica-Romero, A. D. (2022). Relational capital and strategic orientations as antecedents of innovation: Evidence from Mexican SMEs. \emph{Journal of Innovation and Entrepreneurship, 11}, Article 35. \url{https://doi.org/10.1186/s13731-022-00235-2}
+
+  \item Rodríguez-Espíndola, O., Cuevas-Romo, A., Chowdhury, S., Díaz-Acevedo, N., Albores, P., Despoudi, S., Malesios, C., \& Dey, P. K. (2022). The role of circular economy principles and sustainable-oriented innovation to enhance social, economic and environmental performance: Evidence from Mexican SMEs. \emph{International Journal of Production Economics, 248}, 108495. \url{https://doi.org/10.1016/j.ijpe.2022.108495}
+
+  \item Teng, X., Wu, Z., \& Yang, F. (2022). Research on the relationship between digital transformation and performance of SMEs. \emph{Sustainability, 14}(10), 6012. \url{https://doi.org/10.3390/su14106012}
+
+  \item Troise, C., Corvello, V., Ghobadian, A., \& O'Regan, N. (2021). How can SMEs successfully navigate VUCA environment: The role of agility in the digital transformation era. \emph{Technological Forecasting and Social Change, 174}, 121227. \url{https://doi.org/10.1016/j.techfore.2021.121227}
+
+  \item Valdez-Juárez, L. E., Ramos-Escobar, E. A., Hernández-Ponce, O. E., \& Ruiz-Zamora, J. A. (2024). Digital transformation and innovation, dynamic capabilities to strengthen the financial performance of Mexican SMEs: A sustainable approach. \emph{Cogent Business \& Management, 11}(1), 2318635. \url{https://doi.org/10.1080/23311975.2024.2318635}
+\end{apareferences}
+
+\end{document}

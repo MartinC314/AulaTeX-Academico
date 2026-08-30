@@ -60,8 +60,15 @@
 \usepackage{ragged2e}
 \usepackage{enumitem}
 \usepackage{pdflscape}
-\setcitestyle{authoryear,open={(},close={)}}
+\usepackage{tikz}
+\usetikzlibrary{calc}
 \setlist[itemize]{leftmargin=*,nosep}
+
+\newenvironment{apareferences}{%
+  \begin{list}{}{\setlength{\leftmargin}{1.27cm}%
+    \setlength{\itemindent}{-1.27cm}%
+    \setlength{\itemsep}{0.8\baselineskip}%
+    \setlength{\parsep}{0pt}}}{\end{list}}
 
 \definecolor{itescaRedDark}{HTML}{8F1117}
 \definecolor{itescaRed}{HTML}{D70F18}
@@ -69,7 +76,28 @@
 \definecolor{itescaSilver}{HTML}{D9D9D9}
 \def\portraittitlecolor {itescaRedDark}
 
+% Identidad de portada idéntica a la plantilla maestra de Seminario I.
+\newcommand{\insertcoverwatermark}{%
+  \AddToShipoutPictureBG*{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[opacity=0.13,inner sep=0pt,yshift=-0.10cm] at (current page.center) {\includegraphics[width=0.58\paperwidth]{\itescaasset}};
+    \end{tikzpicture}%
+  }%
+}
+\newcommand{\insertcoverinstitutionalfooter}{%
+  \AddToShipoutPictureFG*{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \fill[itescaCharcoal] (current page.south west) rectangle ([yshift=1.35cm]current page.south east);
+      \fill[itescaRed] ([yshift=1.35cm]current page.south west) rectangle ([yshift=1.47cm]current page.south east);
+      \node[anchor=south west] at ([xshift=0.95cm,yshift=0.16cm]current page.south west) {\includegraphics[height=0.88cm]{\itescasecondaryasset}};
+      \node[anchor=south east,text=white,align=right,font=\sffamily\bfseries\small] at ([xshift=-0.95cm,yshift=0.28cm]current page.south east) {Instituto Tecnológico Superior de Cajeme\\\textcolor{itescaSilver}{\itescalocation\ \textperiodcentered\ itesca.edu.mx}};
+    \end{tikzpicture}%
+  }%
+}
+
 \begin{document}
+\insertcoverwatermark
+\insertcoverinstitutionalfooter
 \templatePortrait
 \templatePagecfg
 \onehalfspacing
@@ -85,15 +113,17 @@
 
 \section{Introducción}
 
-Obtener el grado de Maestro en Gestión Administrativa exige mucho más que aprobar asignaturas: requiere convertir un interés profesional en un proyecto de tesis pertinente, original y útil para una organización. La ruta de titulación debe diseñarse desde el inicio porque el perfil de egreso, los objetivos del programa, las LGAC y los requisitos normativos forman un sistema: orientan qué problema investigar, con qué capacidades intervenirlo y qué evidencias producir para graduarse \citep{itescaMGA2026}. A partir de esta premisa, se presenta un cuadro de integración institucional y una reflexión personal enfocada en la mejora de la mercadotecnia y las ventas mediante decisiones sustentadas en datos.
+Obtener el grado de Maestro en Gestión Administrativa exige mucho más que aprobar asignaturas: requiere convertir un interés profesional en un proyecto de tesis pertinente, original y útil para una organización. La ruta de titulación debe diseñarse desde el inicio porque el perfil de egreso, los objetivos del programa, las LGAC y los requisitos normativos forman un sistema: orientan qué problema investigar, con qué capacidades intervenirlo y qué evidencias producir para graduarse (Instituto Tecnológico Superior de Cajeme [ITESCA], 2026a). A partir de esta premisa, se presenta un cuadro de integración institucional y una reflexión personal enfocada en la mejora de la mercadotecnia y las ventas mediante decisiones sustentadas en datos.
 
 \section{Ruta estratégica de formación y titulación}
 
 \subsection{Cuadro de integración}
 
-La síntesis siguiente recupera la información oficial de la MGA publicada por ITESCA y los requisitos establecidos en el numeral 3.7.2 de los Lineamientos para la Operación de los Estudios de Posgrado del TecNM, disponibles en el repositorio institucional de normatividad \citep{tecnmLineamientos2023,itescaNormatividad2026}. El cuadro se lee por filas: cada apartado reúne tres o más ideas institucionales y, en la última columna, su traducción a decisiones de formación, investigación y desempeño profesional. Los conceptos rectores son \textbf{perfil de egreso}, \textbf{objetivos del programa}, \textbf{LGAC}, \textbf{innovación organizacional}, \textbf{gestión financiera}, \textbf{tesis individual}, \textbf{originalidad} y \textbf{retribución social}.
+La síntesis siguiente recupera la información oficial de la MGA publicada por ITESCA y los requisitos establecidos en el numeral 3.7.2 de los \emph{Lineamientos para la Operación de los Estudios de Posgrado} del TecNM, disponibles en el repositorio institucional de normatividad (Tecnológico Nacional de México [TecNM], 2023; ITESCA, 2026b). El cuadro se lee por filas: cada apartado reúne tres o más ideas institucionales y, en la última columna, su traducción a decisiones de formación, investigación y desempeño profesional. Los conceptos rectores son \textbf{perfil de egreso}, \textbf{objetivos del programa}, \textbf{LGAC}, \textbf{innovación organizacional}, \textbf{gestión financiera}, \textbf{tesis individual}, \textbf{originalidad} y \textbf{retribución social}.
 
+\clearpage
 \begin{landscape}
+\thispagestyle{empty}
 \begingroup
 \scriptsize
 \setlength{\tabcolsep}{4pt}
@@ -151,9 +181,9 @@ Mi proyecto personal y profesional se orienta a mejorar la gestión de mercadote
 
 Los objetivos de la maestría refuerzan esta dirección. El uso articulado de fundamentos administrativos, gestión financiera y estadística aplicada puede ayudarme a convertir datos de ventas, comportamiento del cliente y desempeño de campañas en evidencia para decidir. Asimismo, la ética, la responsabilidad social y la sustentabilidad ofrecen criterios indispensables: una intervención comercial debe ser rentable, pero también transparente, respetuosa de las personas y sostenible. Por ello, visualizo como proyecto inicial el diseño y evaluación de una estrategia de innovación comercial para una micro o pequeña empresa, con indicadores de conversión, retención, satisfacción y rentabilidad.
 
-Desde mi perspectiva, la LGAC más cercana es \emph{Gestión e Innovación de las Organizaciones}. Su atención a innovaciones de comercialización, procesos y modelos de negocio permite estudiar la experiencia del cliente y la transformación digital sin aislarlas del sistema organizacional. La LGAC de \emph{Gestión económica y financiera de las organizaciones} complementaría el estudio al valorar presupuesto, riesgo y resultados. El portal identifica a la Mtra. Manuela Ruiz Castro como responsable de la MGA y al Dr. Luis Alberto Limón Valencia en la Subdirección de Posgrado e Investigación \citep{itescaMGA2026}; los considero primeros enlaces para solicitar el directorio del núcleo académico y elegir, con evidencia de trayectoria, a quien realmente trabaje la línea y el problema propuestos. A mi juicio, no sería riguroso atribuirles una especialidad que la página consultada no publica.
+Desde mi perspectiva, la LGAC más cercana es \emph{Gestión e Innovación de las Organizaciones}. Su atención a innovaciones de comercialización, procesos y modelos de negocio permite estudiar la experiencia del cliente y la transformación digital sin aislarlas del sistema organizacional. La LGAC de \emph{Gestión económica y financiera de las organizaciones} complementaría el estudio al valorar presupuesto, riesgo y resultados. El portal identifica a la Mtra. Manuela Ruiz Castro como responsable de la MGA y al Dr. Luis Alberto Limón Valencia en la Subdirección de Posgrado e Investigación (ITESCA, 2026a); los considero primeros enlaces para solicitar el directorio del núcleo académico y elegir, con evidencia de trayectoria, a quien realmente trabaje la línea y el problema propuestos. A mi juicio, no sería riguroso atribuirles una especialidad que la página consultada no publica.
 
-Para cumplir eficientemente los requisitos de titulación aplicaré una estrategia de gestión por hitos. Durante el primer semestre delimitaré problema, organización usuaria, LGAC, pregunta, indicadores y cronograma con el posible director. En paralelo iniciaré la acreditación del segundo idioma y programaré las dos actividades de retribución social para evitar que se acumulen al final. Cada asignatura deberá aportar un insumo reutilizable para la tesis: revisión teórica, instrumento, análisis o procedimiento \citep{tecnmLineamientos2023}.
+Para cumplir eficientemente los requisitos de titulación aplicaré una estrategia de gestión por hitos. Durante el primer semestre delimitaré problema, organización usuaria, LGAC, pregunta, indicadores y cronograma con el posible director. En paralelo iniciaré la acreditación del segundo idioma y programaré las dos actividades de retribución social para evitar que se acumulen al final. Cada asignatura deberá aportar un insumo reutilizable para la tesis: revisión teórica, instrumento, análisis o procedimiento (TecNM, 2023).
 
 También mantendré una matriz mensual con promedio, avances, acuerdos tutoriales, versiones y respaldos; usaré un gestor bibliográfico y revisaré la similitud desde los borradores, no únicamente antes de imprimir. Acordaré con la organización la evidencia necesaria para obtener la carta de usuario y planearé desde temprano un producto académico derivado. Finalmente, reservaré un periodo para dictamen, autorización de impresión y simulacros de defensa. Así, titularme deja de ser una meta distante y se convierte en una secuencia controlable de productos conectados con una intervención útil.
 
@@ -163,7 +193,14 @@ También mantendré una matriz mensual con promedio, avances, acuerdos tutoriale
 Sostengo que la ruta hacia el grado depende de alinear desde el inicio el proyecto profesional, una LGAC y cada requisito normativo. Mi interés en mercadotecnia y ventas encuentra su mejor encuadre en la innovación organizacional, complementada por evaluación económica y financiera. Por consiguiente, la eficiencia no dependerá de acelerar trámites al final, sino de producir durante toda la maestría evidencia original, útil y verificable. Mantener un cronograma de hitos, vincular las asignaturas con la tesis y dialogar oportunamente con la coordinación y el núcleo académico permitirá que la investigación contribuya tanto a mi formación como a la organización participante. La responsabilidad sobre la exactitud, selección de fuentes y postura final permanece en el autor, quien empleó inteligencia artificial como apoyo de organización, revisión y edición.\footnote{Declaración de uso: se utilizó inteligencia artificial como apoyo para planificar, verificar consistencia y revisar la presentación; las fuentes institucionales fueron consultadas y las decisiones argumentativas fueron validadas por el autor.}
 
 \clearpage
-\bibliographystyle{apalike}
-\bibliography{\itescabibliography}
+\section*{Referencias}
+\addcontentsline{toc}{section}{Referencias}
+\begin{apareferences}
+  \item Instituto Tecnológico Superior de Cajeme. (2026a). \emph{Maestría en Gestión Administrativa}. \url{https://www.itesca.edu.mx/modulos/oferta/posgrado/mgad.php}
+
+  \item Instituto Tecnológico Superior de Cajeme. (2026b). \emph{Normatividad y documentos institucionales}. \url{https://www.itesca.edu.mx/modulos/itesca/documentacion.php}
+
+  \item Tecnológico Nacional de México. (2023). \emph{Lineamientos para la operación de los estudios de posgrado en el Tecnológico Nacional de México}. \url{https://www.itesca.edu.mx/docs/LINEAMIENTOS_OPERACION_POSGRADO_TECNM_2023.pdf}
+\end{apareferences}
 
 \end{document}
