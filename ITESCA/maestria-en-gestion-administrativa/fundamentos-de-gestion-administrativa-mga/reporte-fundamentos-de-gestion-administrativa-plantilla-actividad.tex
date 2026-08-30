@@ -1,0 +1,116 @@
+% Base compartida para las actividades pendientes de Fundamentos de Gestión Administrativa.
+% Este archivo se carga desde cada reporte de actividad; no se compila directamente.
+\documentclass[12pt,letterpaper,oneside]{article}
+\usepackage[margin=2.35cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[authoryear,round]{natbib}
+
+\definecolor{itescaRedDark}{HTML}{8F1117}
+\definecolor{itescaRed}{HTML}{D70F18}
+\definecolor{itescaCharcoal}{HTML}{141414}
+\definecolor{itescaSilver}{HTML}{D9D9D9}
+\definecolor{itescaPaper}{HTML}{F7F7F7}
+\definecolor{itescaInk}{HTML}{181818}
+\hypersetup{colorlinks=true,linkcolor=itescaRedDark,citecolor=itescaRedDark,urlcolor=itescaRedDark}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.72em}
+\onehalfspacing
+\bibliographystyle{plainnat}
+
+\newcommand{\pendiente}[1]{\textcolor{itescaRedDark}{\textbf{[PENDIENTE:} #1\textbf{]}}}
+\newcommand{\campo}[1]{\textcolor{itescaRedDark}{\textbf{#1}}}
+
+\begin{document}
+
+\begin{titlepage}
+  \pagecolor{itescaPaper}
+  \color{itescaInk}
+  \begin{center}
+    \vspace*{0.7cm}
+    \includegraphics[width=5.2cm]{ITESCA/assets-itesca/web/logo-itesca-contorno.png}\\[0.7cm]
+    {\Large Instituto Tecnológico Superior de Cajeme}\\[0.2cm]
+    {\large Maestría en Gestión Administrativa}\\[0.9cm]
+    {\color{itescaRedDark}\rule{0.84\linewidth}{1.5pt}}\\[0.5cm]
+    {\Huge\bfseries Actividad \actividadnumero\par}
+    \vspace{0.3cm}
+    {\LARGE\bfseries \actividadtitulo\par}
+    \vspace{0.35cm}
+    {\Large Unidad \unidadnumero\ · \actividadponderacion\par}
+    \vspace{0.4cm}
+    {\color{itescaRed}\rule{0.62\linewidth}{1.1pt}}\\[0.9cm]
+    \begin{tabular}{rl}
+      \textbf{Alumno:} & Martin Jonathan de la Cruz \\
+      \textbf{Matrícula:} & ITESCA-MGA \\
+      \textbf{Docente:} & Por definir \\
+      \textbf{Asignatura:} & Fundamentos de Gestión Administrativa \\
+      \textbf{Clave:} & ACF--0901 \\
+      \textbf{Créditos:} & 6 \\
+      \textbf{Evidencia:} & \actividadproducto \\
+      \textbf{Fecha:} & \today
+    \end{tabular}
+    \vfill
+    {\small Cajeme, Sonora}
+  \end{center}
+  \nopagecolor
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+\section*{Ficha de la actividad}
+\addcontentsline{toc}{section}{Ficha de la actividad}
+\begin{tabular}{>{\bfseries}p{0.27\textwidth}p{0.66\textwidth}}
+Unidad & \unidadnumero \\
+Competencia & \actividadcompetencia \\
+Evidencia & \actividadproducto \\
+Ponderación & \actividadponderacion \\
+Propósito & \actividadproposito
+\end{tabular}
+
+\section{Introducción}
+\pendiente{Plantear el problema organizacional que atiende la actividad, justificar su relevancia y anticipar el criterio central del trabajo.}
+
+\section{Marco conceptual}
+\pendiente{Definir y relacionar los conceptos indispensables mediante fuentes académicas verificables. Evitar una sucesión de definiciones aisladas.}
+
+\section{Desarrollo de la evidencia}
+\actividadcontenido
+
+\section{Análisis y criterio propio}
+\pendiente{Interpretar los resultados, valorar límites y riesgos, y justificar la decisión o postura administrativa asumida.}
+
+\section{Aplicación profesional}
+\pendiente{Explicar cómo se transferiría la evidencia a una organización real, indicando responsables, recursos, restricciones e indicadores de seguimiento.}
+
+\section{Conclusiones}
+\pendiente{Responder al propósito de la actividad, sintetizar el aprendizaje y formular una conclusión argumentada que no repita el desarrollo.}
+
+\section*{Lista de verificación}
+\addcontentsline{toc}{section}{Lista de verificación}
+\begin{itemize}[label=$\square$]
+  \item El producto solicitado aparece completo y con la ponderación correcta.
+  \item La competencia de la unidad se demuestra mediante análisis, no solo descripción.
+  \item Las afirmaciones centrales tienen citas autor--año verificables.
+  \item La evidencia distingue datos, interpretación y postura personal.
+  \item La conclusión responde al problema planteado.
+  \item La bibliografía coincide con las fuentes efectivamente utilizadas.
+  \item Se eliminaron todos los marcadores \texttt{PENDIENTE} antes de entregar.
+\end{itemize}
+
+\clearpage
+\nocite{itescaProgramaFundamentosGestion,robbinsCoulter2018Administracion}
+\bibliography{fundamentos-de-gestion-administrativa}
+
+\end{document}

@@ -1,107 +1,188 @@
-% AulaTeX - plantilla materializada desde memoria editorial
-\documentclass[12pt,letterpaper,oneside]{article}
-\usepackage[margin=2.35cm]{geometry}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[spanish,es-tabla]{babel}
-\usepackage[scaled=.96]{helvet}
+% Actividad 1 contractualizada por AulaTeX: foro diagnóstico con audio.
+\providecommand{\itescastudentname}{Martin Jonathan de la Cruz}
+\providecommand{\itescastudentid}{Por confirmar}
+\providecommand{\itescastudentemail}{Dato no proporcionado}
+\providecommand{\itescafaculty}{Maestría en Gestión Administrativa}
+\providecommand{\itescacoursename}{Fundamentos de Gestión Administrativa}
+\providecommand{\itescacoursecode}{ACF--0901}
+\providecommand{\itescadepartment}{Posgrado e Investigación}
+\providecommand{\itescateachingfigure}{Docente de la materia por confirmar}
+\providecommand{\itescaprogramlevel}{Maestría}
+\providecommand{\itescaprogramperiod}{Agosto--noviembre de 2026}
+\providecommand{\itescamodality}{En línea}
+\providecommand{\itescalocation}{Cajeme, Sonora}
+\providecommand{\itescaasset}{ITESCA/assets-itesca/itesca-monograma.png}
+\providecommand{\itescaofficialasset}{ITESCA/assets-itesca/web/logo-itesca-contorno.png}
+\providecommand{\itescasecondaryasset}{ITESCA/assets-itesca/itesca-monograma.png}
+\providecommand{\itescabibliography}{ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa}
+
+\def\itescadocumenttitle {La organización: identidad, límites y elementos de estudio}
+\def\itescadocumentsubtitle {Actividad 1}
+\def\itescadocumentsubject {Foro diagnóstico mediante audio}
+\def\itescaactivityname {Actividad 1. Foro sobre la organización}
+\def\itescasessionname {Unidad I}
+\def\itescablockname {Fundamentos de Gestión Administrativa}
+\def\itescamainproduct {Foro diagnóstico mediante audio}
+
+\documentclass[spanish,letterpaper,oneside]{article}
+
+\def\documenttitle {\itescadocumenttitle}
+\def\documentsubtitle {\itescadocumentsubtitle}
+\def\documentsubject {\itescadocumentsubject}
+\def\documentauthor {\itescastudentname}
+\def\coursename {\itescacoursename}
+\def\coursecode {\itescacoursecode}
+\def\universityname {Instituto Tecnológico Superior de Cajeme}
+\def\universityfaculty {\itescafaculty}
+\def\universitydepartment {\itescadepartment}
+\def\universitydepartmentimage {\itescaofficialasset}
+\def\universitydepartmentimagecfg {width=5.2cm}
+\def\universitylocation {\itescalocation}
+
+\def\authortable {
+  \begin{tabular}{ll}
+    \textbf{Alumno:} & \itescastudentname \\
+    No. de control: & \itescastudentid \\
+    Carrera: & \itescafaculty \\
+    Semestre: & \itescaprogramperiod \\
+    Asignatura: & \itescacoursename \\
+    Docente: & \itescateachingfigure \\
+    Modalidad: & \itescamodality \\
+    Fecha de entrega: & \today \\
+    Lugar: & \universitylocation
+  \end{tabular}
+}
+
+\input{template}
+\usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
-\usepackage{setspace}
-\usepackage{graphicx}
-\usepackage[table]{xcolor}
-\usepackage{booktabs}
-\usepackage{array}
-\usepackage{longtable}
-\usepackage{hyperref}
-\usepackage[authoryear,round]{natbib}
+\usepackage[most]{tcolorbox}
+\usepackage{attachfile}
+\usepackage{enumitem}
+\setcitestyle{numbers,open={[},close={]}}
+\setlist[itemize]{leftmargin=*,nosep}
 
-\definecolor{unadmGreenDark}{HTML}{174A3A}
-\definecolor{unadmGreen}{HTML}{5F8F3A}
-\definecolor{unadmGold}{HTML}{B88A2A}
-\definecolor{unadmPaper}{HTML}{F6F7F2}
-\definecolor{unadmInk}{HTML}{1F2A24}
-\hypersetup{colorlinks=true,linkcolor=unadmGreenDark,citecolor=unadmGreenDark,urlcolor=unadmGreenDark}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.72em}
-\onehalfspacing
-\bibliographystyle{plainnat}
+\definecolor{itescaRedDark}{HTML}{8F1117}
+\definecolor{itescaRed}{HTML}{D70F18}
+\definecolor{itescaCharcoal}{HTML}{141414}
+\definecolor{itescaSilver}{HTML}{D9D9D9}
+\definecolor{itescaPaper}{HTML}{F7F7F7}
+\def\portraittitlecolor {itescaRedDark}
 
-\newcommand{\pendiente}[1]{\textcolor{red}{[PENDIENTE: #1]}}
+\attachfilesetup{color={0.843 0.059 0.094},print=false}
+\newcommand{\foroCopyButton}[1]{%
+  \textattachfile[appearance={},description={Participación del foro en texto copiable},mimetype=text/plain]{#1}{%
+    \colorbox{itescaRed}{\small\textcolor{white}{\,Copiar participación\,}}%
+  }%
+}
+\newtcolorbox{forobox}[1][]{%
+  enhanced,breakable,
+  colback=itescaPaper,colframe=itescaRed,
+  boxrule=0pt,leftrule=3pt,arc=1.2mm,
+  left=4mm,right=4mm,top=3mm,bottom=3mm,
+  fonttitle=\bfseries\color{white},coltitle=white,colbacktitle=itescaRedDark,
+  attach boxed title to top left={xshift=4mm,yshift=-2mm},
+  boxed title style={colframe=itescaRedDark,arc=0.6mm},
+  #1
+}
+
+\hypersetup{
+  pdftitle={\itescadocumenttitle},
+  pdfsubject={\itescadocumentsubject},
+  pdfauthor={\itescastudentname},
+  colorlinks=true,
+  linkcolor=itescaRedDark,
+  citecolor=itescaRedDark,
+  urlcolor=itescaRedDark
+}
 
 \begin{document}
+\templatePortrait
+\templatePagecfg
+\onehalfspacing
 
-\begin{titlepage}
-  \pagecolor{unadmPaper}
-  \color{unadmInk}
-  \begin{center}
-    \vspace*{0.8cm}
-    \includegraphics[height=2.05cm]{img/departamentos/UnADM.pdf}\\[0.7cm]
-    {\Large Universidad Abierta y a Distancia de Mexico}\\[0.2cm]
-    {\large Licenciatura en Derecho}\\[1.2cm]
-    {\color{unadmGreenDark}\rule{0.82\linewidth}{1.4pt}}\\[0.55cm]
-    {\Huge\bfseries Actividad 1 - Fundamentos de Gestion Administrativa\par}
-    \vspace{0.35cm}
-    {\Large Actividad 1 - Fundamentos de Gestion Administrativa\par}
-    \vspace{0.45cm}
-    {\color{unadmGold}\rule{0.62\linewidth}{1.1pt}}\\[1.1cm]
-    \begin{tabular}{rl}
-      \textbf{Alumno:} & Martin Jonathan de la Cruz \\
-      \textbf{Matricula:} & ES2611202040 \\
-      \textbf{Figura docente:} & Nombre por definir \\
-      \textbf{Materia:} & Fundamentos de Gestion Administrativa \\
-      \textbf{Semestre/Bloque:} & 2 / 1 \\
-      \textbf{Tipo/Creditos:} & Obligatoria / 8 \\
-      \textbf{Fecha:} & \today
-    \end{tabular}
-    \vfill
-    {\small Roma Norte, Ciudad de Mexico}
-  \end{center}
-  \nopagecolor
-\end{titlepage}
+\begin{abstractd}
+\textbf{Objetivo:} Explicar qué constituye una organización, delimitar qué agrupaciones no reúnen sus rasgos esenciales e identificar los elementos necesarios para desarrollar estudios organizacionales con enfoque sistémico y contextual.
 
-\tableofcontents
+\textbf{Producto:} Guion oral literal para una aportación de foro de máximo tres minutos y dos réplicas adaptables a las intervenciones de compañeros.
+
+\textbf{Técnica didáctica:} Foro, técnica 42 del repertorio \textit{100 Técnicas Didácticas de Enseñanza y Aprendizaje}, orientada a aplicar información mediante diálogo crítico, reflexivo y respetuoso \citep{lopezForo2022}.
+\end{abstractd}
+
+\templateIndex
+\templateFinalcfg
+
+% Técnica didáctica: foro diagnóstico.
+% Nivel cognitivo: comprender, distinguir, analizar y dialogar.
+% Criterio de organización: concepto -> frontera -> sistema -> interacción.
+\section{Introducción}
+
+Distinguir una organización de cualquier agrupación humana es un problema administrativo relevante: si se confunde una coincidencia temporal con un sistema organizado, no pueden identificarse responsabilidades, procesos ni resultados. Una organización surge cuando personas y recursos se coordinan de manera relativamente estable alrededor de propósitos compartidos. Además, funciona como sistema abierto porque intercambia información, recursos y respuestas con su ambiente \citep{kastRosenzweig1972,kastRosenzweig1985}. Desde esa perspectiva, el análisis no debe aislar organigramas o individuos, sino explicar sus interdependencias. El producto central es un guion oral que delimita el concepto, señala lo que queda fuera de él y propone dimensiones para estudiar organizaciones.
+
+\section{La organización como sistema humano y abierto}
+
+\subsection{Preparación conceptual}
+
+La estructura distribuye autoridad, tareas y coordinación, pero no agota la realidad organizacional. También intervienen personas, tecnología, cultura, poder, recursos, ambiente y mecanismos de retroalimentación. El diseño más pertinente depende del contexto y de las demandas que enfrenta la entidad \citep{bright2019,openstaxStructures2019}. Por ello, ni el carácter lucrativo ni la constitución jurídica son requisitos universales: una asociación comunitaria puede ser organización si sostiene objetivos, roles, coordinación y continuidad.
+
+\subsection{Aportación preparada para el foro}
+
+\begin{forobox}[title={Intervención en el foro sobre la organización}]
+\hfill\foroCopyButton{ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/foro-participacion-Actividad-1.txt}\\[-0.5em]
+\phantomsection\label{foro-participacion}
+
+\textbf{Asunto:} La organización como sistema humano y abierto\par
+\medskip
+Hola, compañeras y compañeros. Comparto mi aportación sobre los rasgos que distinguen a una organización y los elementos necesarios para estudiarla.
+\medskip
+
+\begin{enumerate}[leftmargin=1.6em,labelsep=0.6em,itemsep=0.7em,label=\textbf{\arabic*)}]
+  \item \textbf{¿Qué es una organización?} Una organización es un sistema social deliberadamente coordinado. Está integrado por personas y grupos que distribuyen responsabilidades, emplean recursos y realizan procesos para alcanzar propósitos comunes con cierta continuidad. No se limita al organigrama: también comprende relaciones informales, cultura, tecnología, decisiones y vínculos con el entorno. Como sistema abierto, recibe recursos e información, los transforma y genera resultados; la retroalimentación le permite aprender y adaptarse \citep{kastRosenzweig1972,kastRosenzweig1985}.
+
+  \item \textbf{¿Qué no debe ser considerado una organización?} Una simple multitud, una fila o varias personas que coinciden temporalmente no constituyen una organización si carecen de propósito compartido, roles, coordinación y continuidad. Tampoco basta con tener un nombre, un edificio o un registro legal. En sentido contrario, no sería correcto afirmar que solo las empresas formales o lucrativas son organizaciones: una cooperativa, una asociación vecinal o un colectivo pueden serlo cuando articulan objetivos, reglas y acciones estables.
+
+  \item \textbf{¿Cuáles son los principales elementos que debemos considerar al hacer estudios organizacionales?} Deben analizarse el propósito y los resultados esperados; las personas, los grupos, el liderazgo, la cultura y las relaciones de poder; la estructura, la división del trabajo y la coordinación; los procesos, la tecnología, la información y los recursos; y el ambiente económico, social, político y tecnológico. Estas dimensiones son interdependientes: una tecnología puede mejorar un proceso, pero fracasar si contradice la cultura, concentra decisiones o no desarrolla capacidades en el personal. También conviene observar entradas, transformación, resultados y retroalimentación, pues no existe una estructura ideal para todos los contextos \citep{bright2019,openstaxEnvironment2019,openstaxStructures2019}.
+\end{enumerate}
+\medskip
+Mi postura es que estudiar una organización exige comprender cómo coordina diferencias y cómo aprende de sus efectos, no solamente describir puestos. Para dialogar: ¿qué elemento suele ignorarse más al diagnosticar una organización y qué consecuencia produce esa omisión?\par
+\medskip
+Saludos y quedo atento a sus comentarios.
+\medskip
+\textbf{Duración estimada del audio:} entre 2 minutos 35 segundos y 2 minutos 55 segundos.
+\end{forobox}
+
+\subsection{Interacción con dos aportaciones}
+
+Las siguientes réplicas se adaptan a la idea concreta publicada por cada compañero; no afirman que la interacción ya ocurrió.
+
+\begin{forobox}[title={Primera retroalimentación para adaptar y publicar}]
+\textbf{Asunto:} Propósito y coordinación\par
+\medskip
+Coincido en que el objetivo común permite reconocer una organización y añadiría que dicho objetivo necesita traducirse en roles, decisiones y mecanismos de coordinación. Sin esa conexión, el propósito permanece como intención y no como acción colectiva. Desde el enfoque sistémico, también importa observar si los resultados obtenidos regresan como información para corregir el proceso \citep{kastRosenzweig1972}. ¿Qué mecanismo de coordinación consideras más decisivo en el ejemplo que planteas y por qué?
+\end{forobox}
+
+\begin{forobox}[title={Segunda retroalimentación para adaptar y publicar}]
+\textbf{Asunto:} Ambiente y cultura\par
+\medskip
+Tu énfasis en las personas ayuda a evitar que la organización se reduzca a un organigrama. Complementaría la idea considerando cultura y ambiente: una misma estructura puede producir resultados distintos según las normas compartidas, el poder y las presiones externas. Por eso el diseño debe guardar congruencia con la estrategia y el contexto \citep{openstaxEnvironment2019,openstaxStructures2019}. ¿Qué señal permitiría detectar que la cultura está dificultando la adaptación de esa organización?
+\end{forobox}
+
+\subsection{Verificación previa a la publicación}
+
+\begin{itemize}
+  \item Ensayar el guion con cronómetro y mantener la grabación por debajo de tres minutos.
+  \item Vocalizar las tres respuestas, sin leer las referencias bibliográficas completas.
+  \item Publicar el audio mediante la herramienta disponible y comprobar que el enlace tenga acceso.
+  \item Personalizar cada réplica con una idea real de la aportación correspondiente.
+  \item Publicar al menos dos respuestas diferenciadas y conservar evidencia de la interacción.
+\end{itemize}
+
 \clearpage
+\section{Conclusiones}
 
-\section*{Resumen editorial}
-\addcontentsline{toc}{section}{Resumen editorial}
-Esta plantilla materializa la memoria editorial de \textit{Fundamentos de Gestion Administrativa}.
-La entrega debe convertir la consigna en un problema juridico delimitado, con
-fundamento verificable, analisis propio y conclusion aplicable.
-
-\section{Introduccion}
-\pendiente{Abrir con una afirmacion fuerte que traduzca la consigna a problema juridico.}
-
-\section{Encuadre institucional y administrativo}
-La materia se trabaja desde el programa academico del ITESCA. La bibliografia
-local debe sostener el analisis con fuentes institucionales y academicas
-verificables \citep{itescaProgramaFundamentosGestion,robbinsCoulter2018Administracion}.
-
-\section{Memoria editorial aplicada}
-\begin{itemize}
-  \item Organizar la entrega en problema, marco juridico, analisis, producto, conclusion y referencias.
-\end{itemize}
-
-\section{Marcadores de investigacion}
-\begin{itemize}
-  \item Delimitar fuentes oficiales, doctrina pertinente y criterios aplicables antes de redactar.
-\end{itemize}
-
-\section{Desarrollo del producto}
-\pendiente{Insertar aqui el producto solicitado: informe, cuadro, mapa, analisis de caso, matriz, linea de tiempo o ensayo.}
-
-\subsection{Analisis propio}
-\pendiente{Explicar la consecuencia juridica del producto y sostener una postura personal argumentada.}
-
-\section{Checklist de calidad}
-\begin{itemize}
-  \item Verificar citas, bibliografia, coherencia de estructura, ortografia y compilacion.
-\end{itemize}
-
-\section{Conclusion}
-\pendiente{Cerrar con aprendizaje, criterio administrativo propio y aplicacion profesional.}
+Una organización no se define por su edificio, lucro o formalización legal, sino por la coordinación relativamente estable de personas, recursos y procesos alrededor de propósitos. Su estudio requiere observar simultáneamente estructura, comportamiento humano, cultura, poder, tecnología y ambiente, porque una intervención en cualquiera de esos componentes modifica el sistema completo. La postura más útil para la gestión es, por tanto, relacional y contingente: diagnosticar conexiones, tensiones y retroalimentación antes de recomendar cambios. En el foro, esta delimitación permite pasar de definiciones generales a una conversación sobre consecuencias concretas y comparar perspectivas mediante las dos réplicas. La responsabilidad sobre la selección de fuentes, la argumentación y la publicación final permanece en el autor.\footnote{Declaración de uso: se utilizó inteligencia artificial como apoyo para organizar, revisar y editar el texto; el autor verificó las fuentes, asumió la postura expresada y conserva la responsabilidad sobre el contenido final.}
 
 \clearpage
-\nocite{itescaProgramaFundamentosGestion,robbinsCoulter2018Administracion}
-\bibliography{fundamentos-de-gestion-administrativa}
+\bibliography{\itescabibliography}
 
 \end{document}
