@@ -1,0 +1,51 @@
+{
+  "node": "investigacion-aplicada-a-la-contaduria",
+  "slug": "investigacion-aplicada-a-la-contaduria",
+  "institution": "Universidad Autónoma de Sinaloa",
+  "institution_key": "UAS",
+  "program": "Licenciatura en Contaduría",
+  "subject": "Investigación aplicada a la contaduría",
+  "status": "template-ready",
+  "unverified_metadata": [
+    "unidad_academica",
+    "plan_de_estudios",
+    "clave",
+    "semestre",
+    "horas",
+    "creditos",
+    "esquema_de_evaluacion"
+  ],
+  "entrypoints": {
+    "report": "reporte-investigacion-aplicada-a-la-contaduria.tex",
+    "activity": "actividad-investigacion-aplicada-a-la-contaduria.tex",
+    "presentation": "presentacion-investigacion-aplicada-a-la-contaduria.tex",
+    "bibliography": "investigacion-aplicada-a-la-contaduria.bib"
+  },
+  "files": [
+    "README.md",
+    "COMPILACION-investigacion-aplicada-a-la-contaduria.md",
+    "programa-analitico-investigacion-aplicada-a-la-contaduria.md",
+    "estructura-aulatex.json",
+    "investigacion-aplicada-a-la-contaduria.bib",
+    "reporte-investigacion-aplicada-a-la-contaduria.tex",
+    "actividad-investigacion-aplicada-a-la-contaduria.tex",
+    "presentacion-investigacion-aplicada-a-la-contaduria.tex"
+  ],
+  "folders": [
+    "planeaciones-investigacion-aplicada-a-la-contaduria",
+    "referencias-investigacion-aplicada-a-la-contaduria",
+    "extractor-aulatex",
+    ".memoria-aulatex",
+    ".memoria-investigacion-aplicada-a-la-contaduria"
+  ],
+  "workflow": [
+    "planeacion",
+    "referencias",
+    "extraccion",
+    "memoria_editorial",
+    "actividad",
+    "reporte",
+    "presentacion",
+    "compilacion"
+  ]
+}

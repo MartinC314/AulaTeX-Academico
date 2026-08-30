@@ -1,0 +1,146 @@
+% PLANTILLA MAESTRA — INVESTIGACIÓN APLICADA A LA CONTADURÍA / UAS
+% Duplique este archivo por actividad y sustituya todos los campos editables.
+% No invente datos, resultados, normas, fuentes ni metadatos curriculares.
+\documentclass[spanish,letterpaper,oneside]{article}
+
+% DATOS EDITABLES
+\def\documenttitle {Título del proyecto o actividad}
+\def\documentsubtitle {Investigación aplicada a la contaduría}
+\def\documentsubject {Actividad [POR COMPLETAR]}
+\def\documentauthor {Nombre del estudiante}
+\def\coursename {Investigación aplicada a la contaduría}
+\def\coursecode {Clave por confirmar}
+\def\universityname {Universidad Autónoma de Sinaloa}
+\def\universityfaculty {Licenciatura en Contaduría}
+\def\universitydepartment {Unidad académica por confirmar}
+\def\universitydepartmentimage {UAS/assets/marca-uas-provisional}
+\def\universitydepartmentimagecfg {height=1.45cm}
+\def\universitylocation {Sinaloa, México}
+\def\authortable {
+  \begin{tabular}{ll}
+    \textbf{Estudiante:} & Nombre por completar \\
+    Matrícula: & Por completar \\
+    \textit{Docente:} & Nombre por completar \\
+    Grupo y periodo: & Por completar \\
+    Fecha de entrega: & \today \\
+    Lugar: & \universitylocation
+  \end{tabular}
+}
+
+\input{template}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+\setcitestyle{authoryear,open={(},close={)}}
+
+\definecolor{uasBlue}{HTML}{123B6D}
+\definecolor{uasGold}{HTML}{C79A2B}
+\newcommand{\porcompletar}[1]{\textcolor{uasBlue}{\textbf{[POR COMPLETAR: #1]}}}
+
+\begin{document}
+\templatePortrait
+\templatePagecfg
+\onehalfspacing
+
+\begin{abstractd}
+  \textbf{Problema:} \porcompletar{delimitar el problema contable, su contexto y la unidad de análisis.}
+
+  \textbf{Objetivo:} \porcompletar{declarar el resultado verificable que persigue la investigación.}
+
+  \textbf{Método:} \porcompletar{indicar enfoque, diseño, fuentes o participantes y técnica de análisis.}
+
+  \textbf{Resultado o aporte:} \porcompletar{resumir el hallazgo real o, si es protocolo, el aporte esperado sin presentarlo como resultado.}
+\end{abstractd}
+
+\templateIndex
+\templateFinalcfg
+
+\section{Introducción}
+\porcompletar{presentar el contexto, la relevancia contable, el problema, el objetivo y la ruta del documento. Evitar iniciar con definiciones genéricas.}
+
+La investigación aplicada exige que las decisiones metodológicas respondan al problema y que las conclusiones se limiten a la evidencia disponible \citep{hernandezSampieriMetodologia2018,creswellResearchDesign2018}.
+
+\section{Planteamiento del problema}
+\subsection{Contexto y antecedentes}
+\porcompletar{identificar organización, sector, periodo, antecedentes y evidencia inicial verificable.}
+
+\subsection{Delimitación y pregunta de investigación}
+\porcompletar{precisar alcance temático, espacial, temporal y poblacional. Formular una pregunta investigable.}
+
+\subsection{Justificación}
+\porcompletar{explicar utilidad académica, profesional, organizacional o social; no confundir relevancia con promesas no demostrables.}
+
+\section{Objetivos}
+\subsection{Objetivo general}
+\porcompletar{usar un verbo observable y mantener correspondencia directa con la pregunta.}
+
+\subsection{Objetivos específicos}
+\begin{enumerate}
+  \item \porcompletar{primer objetivo específico.}
+  \item \porcompletar{segundo objetivo específico.}
+  \item \porcompletar{tercer objetivo específico.}
+\end{enumerate}
+
+\section{Marco de referencia}
+\subsection{Antecedentes de investigación}
+\porcompletar{comparar estudios previos por problema, método, resultados y vacío que permanece.}
+
+\subsection{Marco conceptual y normativo}
+\porcompletar{definir categorías contables y explicar la función de cada norma o criterio aplicable. Toda afirmación técnica requiere fuente.}
+
+\section{Diseño metodológico}
+\subsection{Enfoque y diseño}
+\porcompletar{justificar enfoque cuantitativo, cualitativo o mixto; alcance y diseño.}
+
+\subsection{Unidad de análisis, población y muestra}
+\porcompletar{definir criterios de inclusión, selección y tamaño. No declarar representatividad sin sustento.}
+
+\subsection{Técnicas, instrumentos y procedimiento}
+\porcompletar{describir recolección, validación, aplicación, resguardo y análisis de datos.}
+
+\subsection{Ética y confidencialidad}
+\porcompletar{explicar consentimiento, anonimización, permisos, manejo de conflictos de interés y protección de información contable.}
+
+\section{Matriz de congruencia}
+\begingroup
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{@{}p{0.18\linewidth}p{0.18\linewidth}p{0.18\linewidth}p{0.18\linewidth}p{0.18\linewidth}@{}}
+\caption{Correspondencia metodológica del proyecto}\label{tab:congruencia}\\
+\toprule
+\textbf{Pregunta} & \textbf{Objetivo} & \textbf{Categorías o variables} & \textbf{Técnica} & \textbf{Evidencia esperada} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Pregunta} & \textbf{Objetivo} & \textbf{Categorías o variables} & \textbf{Técnica} & \textbf{Evidencia esperada} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\porcompletar{pregunta} & \porcompletar{objetivo} & \porcompletar{categorías} & \porcompletar{técnica} & \porcompletar{evidencia} \\
+\end{longtable}
+\endgroup
+
+\section{Resultados o resultados esperados}
+\porcompletar{si ya existe trabajo de campo, presentar datos reales y su fuente; si es protocolo, identificar claramente resultados esperados.}
+
+\section{Discusión}
+\porcompletar{interpretar los resultados, contrastarlos con antecedentes y explicar implicaciones para la práctica contable. Separar descripción de interpretación.}
+
+\section{Conclusiones y recomendaciones}
+\porcompletar{responder la pregunta y cada objetivo con base en la evidencia, declarar limitaciones y proponer acciones viables. No introducir datos nuevos.}
+
+\section*{Lista de control antes de entregar}
+\begin{itemize}
+  \item La pregunta, los objetivos, el método, la evidencia y las conclusiones son congruentes.
+  \item Los datos son reales, trazables y se distingue entre resultado observado y expectativa.
+  \item Se protege la información confidencial y se declaran permisos y limitaciones.
+  \item Cada tabla o figura tiene título, fuente y explicación.
+  \item Toda cita aparece en la bibliografía y no hay referencias decorativas.
+  \item Se eliminaron todos los marcadores \texttt{[POR COMPLETAR]}.
+\end{itemize}
+
+\bibliography{investigacion-aplicada-a-la-contaduria}
+\end{document}

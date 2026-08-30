@@ -1,0 +1,173 @@
+% PRESENTACIÓN MAESTRA — INVESTIGACIÓN APLICADA A LA CONTADURÍA / UAS
+\documentclass[spanish,aspectratio=169,xcolor={dvipsnames,table}]{beamer}
+\geometry{paperwidth=19.2cm,paperheight=10.8cm}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[scaled=.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{array,booktabs,graphicx,ragged2e,tabularx,tikz,hyperref}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+
+% DATOS EDITABLES
+\newcommand{\studentname}{Nombre del estudiante}
+\newcommand{\studentid}{Matrícula por completar}
+\newcommand{\teachername}{Nombre del docente}
+\newcommand{\activitytitle}{Título de la investigación o actividad}
+\newcommand{\activitysubtitle}{Actividad y periodo por completar}
+\newcommand{\coursecode}{Clave por confirmar}
+\newcommand{\departmentlogo}{UAS/assets/marca-uas-provisional.pdf}
+
+\definecolor{uasBlueDark}{HTML}{0B294C}
+\definecolor{uasBlue}{HTML}{123B6D}
+\definecolor{uasGold}{HTML}{C79A2B}
+\definecolor{uasPaper}{HTML}{F4F6F8}
+\definecolor{uasInk}{HTML}{182432}
+\usetheme{default}
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{normal text}{fg=uasInk,bg=white}
+\setbeamercolor{structure}{fg=uasBlue}
+\setbeamercolor{frametitle}{fg=white,bg=uasBlueDark}
+\setbeamercolor{block title}{fg=white,bg=uasBlue}
+\setbeamercolor{block body}{fg=uasInk,bg=uasPaper}
+\setbeamercolor{alerted text}{fg=uasGold}
+\setbeamerfont{frametitle}{series=\bfseries,size=\large}
+\setbeamersize{text margin left=.65cm,text margin right=.65cm}
+\hypersetup{colorlinks=true,urlcolor=uasBlueDark,linkcolor=uasBlueDark}
+
+\setbeamertemplate{frametitle}{
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\textwidth,ht=1.02cm,dp=.22cm,leftskip=.35cm,rightskip=.25cm]{frametitle}
+    \insertframetitle\hfill\raisebox{-.10cm}{\includegraphics[height=.60cm]{\departmentlogo}}
+  \end{beamercolorbox}
+  {\color{uasGold}\rule{\textwidth}{1.3pt}}
+}
+\setbeamertemplate{footline}{
+  \leavevmode\hbox{
+    \begin{beamercolorbox}[wd=.36\paperwidth,ht=2.7ex,dp=1ex,leftskip=1em]{author in head/foot}\color{white}\studentname\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.46\paperwidth,ht=2.7ex,dp=1ex,center]{title in head/foot}\color{white}Investigación aplicada a la contaduría\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.18\paperwidth,ht=2.7ex,dp=1ex,rightskip=1em plus 1fil]{date in head/foot}\color{white}\insertframenumber/\inserttotalframenumber\end{beamercolorbox}}
+}
+\setbeamercolor{author in head/foot}{bg=uasBlueDark}
+\setbeamercolor{title in head/foot}{bg=uasBlue}
+\setbeamercolor{date in head/foot}{bg=uasBlueDark}
+
+\title{\activitytitle}
+\subtitle{\activitysubtitle}
+\author{\studentname\\\small Matrícula: \studentid}
+\institute{Universidad Autónoma de Sinaloa\\Licenciatura en Contaduría\\Investigación aplicada a la contaduría}
+\date{\today}
+
+\begin{document}
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[uasBlueDark] (current page.south west) rectangle ([xshift=.62\paperwidth]current page.north west);
+    \fill[uasBlue] ([xshift=.62\paperwidth]current page.south west) rectangle (current page.north east);
+    \node[opacity=.12] at (current page.center) {\includegraphics[width=.64\paperwidth]{\departmentlogo}};
+    \node[anchor=north east] at ([xshift=-.55cm,yshift=-.45cm]current page.north east) {\includegraphics[width=2.6cm]{\departmentlogo}};
+  \end{tikzpicture}
+  \vspace{1.9cm}
+  {\color{white}\fontsize{24}{29}\selectfont\bfseries\activitytitle\par}
+  \vspace{.25cm}{\color{white!85}\large\activitysubtitle}\par
+  \vspace{.35cm}{\color{uasGold}\rule{.55\linewidth}{1.5pt}}\par
+  \vspace{.45cm}{\color{white}\studentname}\par
+  {\color{white!80}\small Matrícula: \studentid\quad Docente: \teachername}
+\end{frame}
+
+\begin{frame}{Ruta de la exposición}
+\tableofcontents
+\end{frame}
+
+\section{Problema y propósito}
+\begin{frame}{Problema contable investigado}
+  \begin{block}{Situación verificable}
+    [POR COMPLETAR: contexto, unidad de análisis, periodo y evidencia inicial.]
+  \end{block}
+  \begin{alertblock}{Pregunta de investigación}
+    [POR COMPLETAR: pregunta concreta y respondible con el método propuesto.]
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}{Objetivo y relevancia}
+  \begin{columns}[T]
+    \begin{column}{.48\textwidth}
+      \begin{block}{Objetivo general}
+        [POR COMPLETAR: verbo, objeto, contexto y finalidad.]
+      \end{block}
+    \end{column}
+    \begin{column}{.48\textwidth}
+      \begin{block}{Aporte contable}
+        [POR COMPLETAR: decisión, control, información o proceso que puede mejorar.]
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\section{Sustento y método}
+\begin{frame}{Marco de referencia}
+  \begin{tabularx}{\linewidth}{@{}p{.22\linewidth}Y Y@{}}
+    \toprule
+    \textbf{Eje} & \textbf{Fuente o concepto} & \textbf{Función en la investigación} \\
+    \midrule
+    Conceptual & [POR COMPLETAR] & Define categorías o variables. \\
+    Normativo & [POR COMPLETAR] & Establece criterios aplicables. \\
+    Empírico & [POR COMPLETAR] & Delimita antecedentes y vacío. \\
+    \bottomrule
+  \end{tabularx}
+\end{frame}
+
+\begin{frame}{Diseño metodológico}
+  \begin{center}
+  \begin{tikzpicture}[node distance=.48cm,
+    box/.style={rounded corners=4pt,fill=uasPaper,draw=uasBlue!45,text width=3cm,minimum height=1.25cm,align=center,font=\small},
+    arrow/.style={-{Stealth[length=2.5mm]},very thick,draw=uasGold}]
+    \node[box] (e) {\textbf{Enfoque y diseño}\\[POR COMPLETAR]};
+    \node[box,right=of e] (u) {\textbf{Unidad de análisis}\\[POR COMPLETAR]};
+    \node[box,right=of u] (t) {\textbf{Técnica e instrumento}\\[POR COMPLETAR]};
+    \node[box,right=of t] (a) {\textbf{Análisis}\\[POR COMPLETAR]};
+    \draw[arrow] (e)--(u); \draw[arrow] (u)--(t); \draw[arrow] (t)--(a);
+  \end{tikzpicture}
+  \end{center}
+  \begin{alertblock}{Integridad}
+    Declarar permisos, anonimización, confidencialidad y límites de los datos.
+  \end{alertblock}
+\end{frame}
+
+\section{Evidencia y cierre}
+\begin{frame}{Resultados o evidencia esperada}
+  \begin{columns}[T]
+    \begin{column}{.48\textwidth}
+      \begin{block}{Evidencia}
+        [POR COMPLETAR: datos reales y fuente, o resultados esperados identificados como tales.]
+      \end{block}
+    \end{column}
+    \begin{column}{.48\textwidth}
+      \begin{block}{Interpretación}
+        [POR COMPLETAR: qué significa la evidencia y cómo responde al objetivo.]
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Conclusiones y recomendaciones}
+  \begin{enumerate}
+    \item [POR COMPLETAR: respuesta directa a la pregunta.]
+    \item [POR COMPLETAR: implicación para la práctica contable.]
+    \item [POR COMPLETAR: limitación principal.]
+    \item [POR COMPLETAR: recomendación viable y responsable.]
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Referencias esenciales}
+  \small
+  \begin{itemize}
+    \item [POR COMPLETAR: mostrar solo fuentes citadas y centrales para la exposición.]
+    \item Hernández Sampieri, R. y Mendoza Torres, C. P. (2018). \textit{Metodología de la investigación}.
+    \item Creswell, J. W. y Creswell, J. D. (2018). \textit{Research Design}.
+  \end{itemize}
+  \vfill
+  {\footnotesize La bibliografía maestra se conserva en \texttt{investigacion-aplicada-a-la-contaduria.bib}.}
+\end{frame}
+\end{document}

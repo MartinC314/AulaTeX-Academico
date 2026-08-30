@@ -1,0 +1,15 @@
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\definecolor{uasBlue}{HTML}{123B6D}
+\definecolor{uasGold}{HTML}{C79A2B}
+\begin{document}
+\begin{tikzpicture}
+  \fill[uasBlue,rounded corners=4pt] (0,0) rectangle (4.8,2.4);
+  \fill[uasGold] (0,0) rectangle (0.18,2.4);
+  \node[text=white,font=\bfseries\fontsize{34}{36}\selectfont] at (2.5,1.48) {UAS};
+  \node[text=white!88,font=\bfseries\scriptsize,align=center] at (2.5,0.63)
+    {MARCA TIPOGRÁFICA\\PROVISIONAL};
+\end{tikzpicture}
+\end{document}
