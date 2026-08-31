@@ -5,6 +5,7 @@ Ejecutar desde la raíz de `AulaTeX-Academico`:
 ```powershell
 .\scripts\latexmk-build.ps1 .\UAS\assets\marca-uas-provisional.tex
 .\scripts\latexmk-build.ps1 .\UAS\licenciatura-en-contaduria-uas\investigacion-aplicada-a-la-contaduria\reporte-investigacion-aplicada-a-la-contaduria.tex
+.\scripts\latexmk-build.ps1 .\UAS\licenciatura-en-contaduria-uas\investigacion-aplicada-a-la-contaduria\reporte-investigacion-aplicada-a-la-contaduria-Actividad-1.tex
 .\scripts\latexmk-build.ps1 .\UAS\licenciatura-en-contaduria-uas\investigacion-aplicada-a-la-contaduria\actividad-investigacion-aplicada-a-la-contaduria.tex
 .\scripts\latexmk-build.ps1 .\UAS\licenciatura-en-contaduria-uas\investigacion-aplicada-a-la-contaduria\presentacion-investigacion-aplicada-a-la-contaduria.tex
 ```

@@ -18,6 +18,7 @@ Sistema documental y de plantillas para la asignatura **Investigación aplicada 
 ## Puntos de entrada
 
 - `reporte-investigacion-aplicada-a-la-contaduria.tex`: plantilla maestra de informes.
+- `reporte-investigacion-aplicada-a-la-contaduria-Actividad-1.tex`: reporte y mapa conceptual del Tema I.
 - `actividad-investigacion-aplicada-a-la-contaduria.tex`: ficha de planeación de una actividad.
 - `presentacion-investigacion-aplicada-a-la-contaduria.tex`: presentación Beamer 16:9.
 - `investigacion-aplicada-a-la-contaduria.bib`: bibliografía disciplinar verificada.
