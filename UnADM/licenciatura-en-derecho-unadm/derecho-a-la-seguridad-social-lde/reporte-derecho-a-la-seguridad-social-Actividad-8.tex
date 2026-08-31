@@ -108,7 +108,7 @@ El propósito del esquema es distinguir el funcionamiento de PENSIONISSSTE y ord
 \begin{tikzpicture}[
   font=\sffamily,
   principal/.style={rectangle,rounded corners=5pt,draw=unadmGreenDark,very thick,fill=unadmGreenDark,text=white,align=center,text width=9.2cm,minimum height=1.25cm,inner sep=7pt,font=\bfseries\Large},
-  fundamento/.style={rectangle,rounded corners=3pt,draw=unadmGreenDark,thick,fill=unadmBlue,align=left,text width=7.15cm,minimum height=3.65cm,inner sep=8pt,font=\small},
+  fundamento/.style={rectangle,rounded corners=3pt,draw=unadmGreenDark,thick,fill=unadmBlue,align=left,text width=7.15cm,minimum height=5.10cm,inner sep=8pt,font=\small},
   proceso/.style={rectangle,rounded corners=3pt,draw=unadmGreenDark,thick,fill=unadmGreen!22,align=center,text width=4.15cm,minimum height=1.45cm,inner sep=6pt,font=\small},
   pension/.style={rectangle,rounded corners=3pt,draw=unadmGold,thick,fill=unadmSand,align=left,text width=5.3cm,minimum height=4.25cm,inner sep=8pt,font=\small},
   modalidad/.style={rectangle,rounded corners=3pt,draw=unadmGreenDark,thick,fill=white,align=left,text width=10.85cm,minimum height=2.2cm,inner sep=8pt,font=\small},
@@ -120,47 +120,49 @@ El propósito del esquema es distinguir el funcionamiento de PENSIONISSSTE y ord
 
 \node[principal] (p) at (0,0) {PENSIONISSSTE\\[-1pt]\small Fondo Nacional de Pensiones de los Trabajadores al Servicio del Estado};
 
-\node[fundamento] (f1) at (-8.0,-3.25) {\textbf{1. Naturaleza y utilidad}\\[4pt]
+% Coordenadas verificadas por scripts/optimize_tikz_snippet.py con envolvente
+% conservadora de 5.10 cm para representar la altura real de estas tarjetas.
+\node[fundamento] (f1) at (-8.0,-4.15) {\textbf{1. Naturaleza y utilidad}\\[4pt]
 \textbf{Naturaleza:} órgano público desconcentrado del ISSSTE, con facultades ejecutivas y competencia funcional propia; opera como administradora pública y está sujeto a regulación y supervisión de CONSAR.\\[3pt]
 \textbf{Utilidad:} abre y administra cuentas; individualiza cuotas, aportaciones y rendimientos; invierte recursos, informa al trabajador y canaliza el ahorro hacia la pensión.\\[3pt]
 \textit{Arts. 103--106 LISSSTE.}};
 
-\node[fundamento] (f2) at (0,-3.25) {\textbf{2. Pensión: naturaleza y finalidad}\\[4pt]
+\node[fundamento] (f2) at (0,-4.15) {\textbf{2. Pensión: naturaleza y finalidad}\\[4pt]
 \textbf{Naturaleza:} prestación económica periódica derivada del derecho a la seguridad social, financiada con la cuenta individual y, cuando corresponde, con garantía estatal.\\[3pt]
 \textbf{Finalidad:} sustituir parte relevante del ingreso al cesar la actividad laboral y proteger la subsistencia de la persona pensionada y sus familiares mediante el seguro de sobrevivencia.\\[3pt]
 \textbf{Competencias:} el ISSSTE reconoce el derecho; PENSIONISSSTE administra; la aseguradora paga la renta vitalicia.};
 
-\node[fundamento] (f3) at (8.0,-3.25) {\textbf{3. Cuenta individual}\\[4pt]
+\node[fundamento] (f3) at (8.0,-4.15) {\textbf{3. Cuenta individual}\\[4pt]
 Es derecho de cada trabajador y puede operarla PENSIONISSSTE o una administradora elegida libremente.\\[3pt]
 \textbf{Subcuentas:} retiro, cesantía y vejez; vivienda; ahorro solidario; aportaciones complementarias; voluntarias; y ahorro a largo plazo. Los recursos pertenecen al trabajador con las modalidades legales.\\[3pt]
 \textit{Arts. 76, 83 y 97--100 LISSSTE.}};
 
 % Ramificación simétrica: un tronco central evita diagonales sobre las tarjetas.
-\coordinate (fundamentoRamal) at (0,-1.05);
+\coordinate (fundamentoRamal) at (0,-1.10);
 \draw[ramal] (p.south) -- (fundamentoRamal);
 \draw[enlace] (fundamentoRamal) -| (f1.north);
 \draw[enlace] (fundamentoRamal) -- (f2.north);
 \draw[enlace] (fundamentoRamal) -| (f3.north);
 
-\node[banda] (flujoT) at (0,-6.15) {Funcionamiento: del ahorro al pago de la pensión};
-\node[proceso] (a) at (-9.4,-7.75) {1. Cuotas y aportaciones\\Trabajador, dependencia y Estado};
-\node[proceso] (b) at (-4.7,-7.75) {2. Individualización\\Registro en subcuentas};
-\node[proceso] (c) at (0,-7.75) {3. Inversión\\Rendimientos regulados};
-\node[proceso] (d) at (4.7,-7.75) {4. Reconocimiento\\ISSSTE verifica requisitos};
-\node[proceso] (e) at (9.4,-7.75) {5. Elección y pago\\Modalidad pensionaria};
+\node[banda] (flujoT) at (0,-7.25) {Funcionamiento: del ahorro al pago de la pensión};
+\node[proceso] (a) at (-9.4,-8.75) {1. Cuotas y aportaciones\\Trabajador, dependencia y Estado};
+\node[proceso] (b) at (-4.7,-8.75) {2. Individualización\\Registro en subcuentas};
+\node[proceso] (c) at (0,-8.75) {3. Inversión\\Rendimientos regulados};
+\node[proceso] (d) at (4.7,-8.75) {4. Reconocimiento\\ISSSTE verifica requisitos};
+\node[proceso] (e) at (9.4,-8.75) {5. Elección y pago\\Modalidad pensionaria};
 \draw[enlace] (a)--(b); \draw[enlace] (b)--(c); \draw[enlace] (c)--(d); \draw[enlace] (d)--(e);
 
-\node[banda,fill=unadmGold,draw=unadmGold,text=unadmInk] (pensT) at (0,-9.35) {Pensiones y requisitos en el régimen de cuentas individuales};
-\node[pension] (r1) at (-9.0,-12.15) {\textbf{A. Retiro anticipado}\\\textit{Art. 80}\\[4pt]
+\node[banda,fill=unadmGold,draw=unadmGold,text=unadmInk] (pensT) at (0,-10.25) {Pensiones y requisitos en el régimen de cuentas individuales};
+\node[pension] (r1) at (-9.0,-13.05) {\textbf{A. Retiro anticipado}\\\textit{Art. 80}\\[4pt]
 \textbf{Requisito:} antes de las edades y tiempos ordinarios, la renta vitalicia calculada debe superar en más de 30\% la pensión garantizada, después de cubrir el seguro de sobrevivencia.\\[3pt]
 \textbf{Resultado:} renta vitalicia y posibilidad de retirar el excedente bajo la misma condición.};
-\node[pension] (r2) at (-3.0,-12.15) {\textbf{B. Cesantía en edad avanzada}\\\textit{Arts. 84--87}\\[4pt]
+\node[pension] (r2) at (-3.0,-13.05) {\textbf{B. Cesantía en edad avanzada}\\\textit{Arts. 84--87}\\[4pt]
 \textbf{Requisitos:} quedar sin trabajo desde los 60 años; tener al menos 25 años de cotización reconocidos; solicitar la pensión y acreditar la baja cuando sea necesario.\\[3pt]
 \textbf{Otorga:} pensión y seguro de salud.};
-\node[pension] (r3) at (3.0,-12.15) {\textbf{C. Vejez}\\\textit{Arts. 88--91}\\[4pt]
+\node[pension] (r3) at (3.0,-13.05) {\textbf{C. Vejez}\\\textit{Arts. 88--91}\\[4pt]
 \textbf{Requisitos:} haber cumplido 65 años; contar con al menos 25 años de cotización reconocidos; solicitar la pensión y haber concluido la relación laboral o la renta previa prevista por la ley.\\[3pt]
 \textbf{Otorga:} pensión y seguro de salud.};
-\node[pension] (r4) at (9.0,-12.15) {\textbf{D. Pensión garantizada}\\\textit{Arts. 92--96}\\[4pt]
+\node[pension] (r4) at (9.0,-13.05) {\textbf{D. Pensión garantizada}\\\textit{Arts. 92--96}\\[4pt]
 \textbf{Requisitos:} cumplir los de cesantía o vejez, pero tener saldo insuficiente para financiar vitaliciamente la pensión garantizada y el seguro de sobrevivencia.\\[3pt]
 \textbf{Operación:} se usa la cuenta y el Gobierno Federal complementa lo faltante.};
 % Cada flecha nace sobre el centro de su tarjeta: no se acumulan trazos en la banda.
@@ -168,9 +170,9 @@ Es derecho de cada trabajador y puede operarla PENSIONISSSTE o una administrador
   \draw[oro] ([xshift=\x cm]pensT.south) -- (\destino.north);
 }
 
-\node[banda] (modT) at (0,-15.25) {Modalidades de pago para cesantía y vejez};
-\node[modalidad] (m1) at (-6.0,-17.0) {\textbf{Renta vitalicia.} Seguro de pensión contratado con la aseguradora elegida. Paga durante la vida de la persona pensionada, se actualiza en febrero conforme al INPC y exige cubrir el seguro de sobrevivencia. La elección no permite regresar a retiro programado.};
-\node[modalidad] (m2) at (6.0,-17.0) {\textbf{Retiros programados.} El saldo permanece en PENSIONISSSTE o en una administradora y financia pagos periódicos recalculados. Puede cambiarse a renta vitalicia si la renta convenida no resulta inferior a la pensión garantizada.};
+\node[banda] (modT) at (0,-16.15) {Modalidades de pago para cesantía y vejez};
+\node[modalidad] (m1) at (-6.0,-17.90) {\textbf{Renta vitalicia.} Seguro de pensión contratado con la aseguradora elegida. Paga durante la vida de la persona pensionada, se actualiza en febrero conforme al INPC y exige cubrir el seguro de sobrevivencia. La elección no permite regresar a retiro programado.};
+\node[modalidad] (m2) at (6.0,-17.90) {\textbf{Retiros programados.} El saldo permanece en PENSIONISSSTE o en una administradora y financia pagos periódicos recalculados. Puede cambiarse a renta vitalicia si la renta convenida no resulta inferior a la pensión garantizada.};
 \draw[enlace] ([xshift=-6cm]modT.south) -- (m1.north);
 \draw[enlace] ([xshift=6cm]modT.south) -- (m2.north);
 \end{tikzpicture}%
