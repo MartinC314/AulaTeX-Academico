@@ -113,8 +113,9 @@ El propósito del esquema es distinguir el funcionamiento de PENSIONISSSTE y ord
   pension/.style={rectangle,rounded corners=3pt,draw=unadmGold,thick,fill=unadmSand,align=left,text width=5.3cm,minimum height=4.25cm,inner sep=8pt,font=\small},
   modalidad/.style={rectangle,rounded corners=3pt,draw=unadmGreenDark,thick,fill=white,align=left,text width=10.85cm,minimum height=2.2cm,inner sep=8pt,font=\small},
   banda/.style={rectangle,rounded corners=3pt,draw=unadmGreenDark,fill=unadmGreenDark,text=white,align=center,text width=23.1cm,minimum height=0.72cm,font=\bfseries},
-  enlace/.style={-{Stealth[length=2.3mm]},thick,draw=unadmGreenDark},
-  oro/.style={-{Stealth[length=2.3mm]},thick,draw=unadmGold}
+  enlace/.style={-{Stealth[length=2.3mm]},thick,draw=unadmGreenDark,line join=round},
+  oro/.style={-{Stealth[length=2.3mm]},thick,draw=unadmGold,line join=round},
+  ramal/.style={thick,draw=unadmGreenDark,line join=round}
 ]
 
 \node[principal] (p) at (0,0) {PENSIONISSSTE\\[-1pt]\small Fondo Nacional de Pensiones de los Trabajadores al Servicio del Estado};
@@ -134,9 +135,12 @@ Es derecho de cada trabajador y puede operarla PENSIONISSSTE o una administrador
 \textbf{Subcuentas:} retiro, cesantía y vejez; vivienda; ahorro solidario; aportaciones complementarias; voluntarias; y ahorro a largo plazo. Los recursos pertenecen al trabajador con las modalidades legales.\\[3pt]
 \textit{Arts. 76, 83 y 97--100 LISSSTE.}};
 
-\draw[enlace] (p.south west) -- (f1.north);
-\draw[enlace] (p.south) -- (f2.north);
-\draw[enlace] (p.south east) -- (f3.north);
+% Ramificación simétrica: un tronco central evita diagonales sobre las tarjetas.
+\coordinate (fundamentoRamal) at (0,-1.05);
+\draw[ramal] (p.south) -- (fundamentoRamal);
+\draw[enlace] (fundamentoRamal) -| (f1.north);
+\draw[enlace] (fundamentoRamal) -- (f2.north);
+\draw[enlace] (fundamentoRamal) -| (f3.north);
 
 \node[banda] (flujoT) at (0,-6.15) {Funcionamiento: del ahorro al pago de la pensión};
 \node[proceso] (a) at (-9.4,-7.75) {1. Cuotas y aportaciones\\Trabajador, dependencia y Estado};
@@ -159,16 +163,16 @@ Es derecho de cada trabajador y puede operarla PENSIONISSSTE o una administrador
 \node[pension] (r4) at (9.0,-12.15) {\textbf{D. Pensión garantizada}\\\textit{Arts. 92--96}\\[4pt]
 \textbf{Requisitos:} cumplir los de cesantía o vejez, pero tener saldo insuficiente para financiar vitaliciamente la pensión garantizada y el seguro de sobrevivencia.\\[3pt]
 \textbf{Operación:} se usa la cuenta y el Gobierno Federal complementa lo faltante.};
-\draw[oro] (pensT.south) -- ++(0,-0.35) -| (r1.north);
-\draw[oro] (pensT.south) -- ++(0,-0.35) -| (r2.north);
-\draw[oro] (pensT.south) -- ++(0,-0.35) -| (r3.north);
-\draw[oro] (pensT.south) -- ++(0,-0.35) -| (r4.north);
+% Cada flecha nace sobre el centro de su tarjeta: no se acumulan trazos en la banda.
+\foreach \destino/\x in {r1/-9,r2/-3,r3/3,r4/9}{
+  \draw[oro] ([xshift=\x cm]pensT.south) -- (\destino.north);
+}
 
 \node[banda] (modT) at (0,-15.25) {Modalidades de pago para cesantía y vejez};
 \node[modalidad] (m1) at (-6.0,-17.0) {\textbf{Renta vitalicia.} Seguro de pensión contratado con la aseguradora elegida. Paga durante la vida de la persona pensionada, se actualiza en febrero conforme al INPC y exige cubrir el seguro de sobrevivencia. La elección no permite regresar a retiro programado.};
 \node[modalidad] (m2) at (6.0,-17.0) {\textbf{Retiros programados.} El saldo permanece en PENSIONISSSTE o en una administradora y financia pagos periódicos recalculados. Puede cambiarse a renta vitalicia si la renta convenida no resulta inferior a la pensión garantizada.};
-\draw[enlace] (modT.south) -- ++(0,-0.25) -| (m1.north);
-\draw[enlace] (modT.south) -- ++(0,-0.25) -| (m2.north);
+\draw[enlace] ([xshift=-6cm]modT.south) -- (m1.north);
+\draw[enlace] ([xshift=6cm]modT.south) -- (m2.north);
 \end{tikzpicture}%
 }
 \vspace{0.22cm}
