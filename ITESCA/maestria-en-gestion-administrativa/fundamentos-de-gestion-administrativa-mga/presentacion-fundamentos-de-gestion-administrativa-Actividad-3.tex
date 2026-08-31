@@ -1,131 +1,197 @@
-% AulaTeX - presentacion materializada desde memoria editorial
-\documentclass[spanish]{article}
-\usepackage[paperwidth=19.2cm,paperheight=10.8cm,margin=0cm]{geometry}
+\documentclass[spanish,aspectratio=169,xcolor={dvipsnames,table}]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[spanish,es-tabla]{babel}
 \usepackage[scaled=.96]{helvet}
 \renewcommand{\familydefault}{\sfdefault}
-\usepackage[table]{xcolor}
-\usepackage{graphicx}
-\usepackage{ragged2e}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{natbib}
 \usepackage{hyperref}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit}
 
-\definecolor{unadmGreenDark}{HTML}{174A3A}
-\definecolor{unadmGreen}{HTML}{5F8F3A}
-\definecolor{unadmGold}{HTML}{B88A2A}
-\definecolor{unadmPaper}{HTML}{F6F7F2}
-\definecolor{unadmInk}{HTML}{1F2A24}
+\definecolor{itescaRedDark}{HTML}{8F1117}
+\definecolor{itescaRed}{HTML}{D70F18}
+\definecolor{itescaCharcoal}{HTML}{141414}
+\definecolor{itescaSilver}{HTML}{D9D9D9}
+\definecolor{itescaPaper}{HTML}{F5F5F5}
+\definecolor{itescaInk}{HTML}{181818}
+\definecolor{itescaMuted}{HTML}{626262}
 
-\pagestyle{empty}
-\setlength{\parindent}{0pt}
-\setlength{\fboxsep}{0pt}
-\renewcommand{\labelitemi}{\textcolor{unadmGreen}{\bfseries >}}
+\usetheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamersize{text margin left=.65cm,text margin right=.65cm}
+\setbeamercolor{normal text}{fg=itescaInk,bg=white}
+\setbeamercolor{frametitle}{fg=white,bg=itescaCharcoal}
+\setbeamercolor{block title}{fg=white,bg=itescaRedDark}
+\setbeamercolor{block body}{fg=itescaInk,bg=itescaPaper}
+\setbeamercolor{alerted text}{fg=itescaRedDark}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{itemize item}{\textcolor{itescaRedDark}{$\blacktriangleright$}}
+\hypersetup{colorlinks=true,urlcolor=itescaRedDark,linkcolor=itescaRedDark,citecolor=itescaRedDark}
+\newcommand{\itescalogo}{ITESCA/assets-itesca/web/logo-itesca-contorno.png}
+\newcommand{\monograma}{ITESCA/assets-itesca/itesca-monograma.png}
+\newcommand{\fuente}[1]{\par\vspace{.1cm}{\tiny\color{itescaMuted}Fuente: #1}}
+\newcommand{\clave}[1]{\textcolor{itescaRedDark}{\textbf{#1}}}
 
-\newcommand{\CoverSlide}{%
-  \thispagestyle{empty}
-  \noindent\colorbox{unadmGreenDark}{%
-    \begin{minipage}[t][10.55cm][t]{0.58\paperwidth}
-      \vspace*{1.15cm}
-      \hspace*{0.75cm}\begin{minipage}{9.7cm}
-        {\color{white}\fontsize{24}{29}\selectfont\bfseries Actividad 3: Fundamentos de Gestion Administrativa\par}
-        \vspace{0.35cm}
-        {\color{white!85}\Large Licenciatura en Derecho - UnADM\par}
-        \vspace{0.45cm}
-        {\color{unadmGold}\rule{8.8cm}{1.2pt}\par}
-        \vspace{0.45cm}
-        {\color{white}\large Martin Jonathan de la Cruz\par}
-      \end{minipage}
-    \end{minipage}%
-  }%
-  \colorbox{unadmGreen}{%
-    \begin{minipage}[t][10.55cm][t]{0.42\paperwidth}
-      \vspace*{1.25cm}
-      \centering
-      \includegraphics[height=2.2cm]{img/departamentos/UnADM.pdf}\\[0.65cm]
-      {\color{white}\Large\bfseries AulaTeX}\\[0.15cm]
-      {\color{white!85}Plantilla editorial verificable}\\[5.9cm]
-      {\color{white}\small Obligatoria - Semestre 2 - Bloque 1}
-    \end{minipage}%
-  }%
-}
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip\begin{beamercolorbox}[wd=\textwidth,ht=.88cm,dp=.22cm,leftskip=.30cm,rightskip=.30cm]{frametitle}
+  \insertframetitle\hfill\raisebox{-.07cm}{\includegraphics[height=.37cm]{\itescalogo}}\end{beamercolorbox}
+  {\color{itescaRed}\rule{\textwidth}{1.3pt}}}
+\setbeamertemplate{footline}{\leavevmode\hbox{%
+  \begin{beamercolorbox}[wd=.31\paperwidth,ht=2.6ex,dp=1ex,leftskip=.6em]{author in head/foot}\color{white}\scriptsize Martin Jonathan de la Cruz\end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.49\paperwidth,ht=2.6ex,dp=1ex,center]{title in head/foot}\color{white}\scriptsize Fundamentos de Gestión Administrativa\end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.20\paperwidth,ht=2.6ex,dp=1ex,rightskip=.6em plus 1fil]{date in head/foot}\color{white}\scriptsize\hfill\insertframenumber/\inserttotalframenumber\end{beamercolorbox}}}
+\setbeamercolor{author in head/foot}{bg=itescaCharcoal}
+\setbeamercolor{title in head/foot}{bg=itescaRedDark}
+\setbeamercolor{date in head/foot}{bg=itescaCharcoal}
 
-\newcommand{\ContentSlide}[2]{%
-  \clearpage
-  \thispagestyle{empty}
-  \noindent\begin{minipage}[t][10.55cm][t]{\paperwidth}
-    \noindent\colorbox{unadmGreenDark}{%
-      \begin{minipage}[c][1.18cm][c]{\paperwidth}
-        \hspace*{0.65cm}{\color{white}\Large\bfseries #1}
-      \end{minipage}%
-    }
-    \vspace{0.55cm}
-
-    \hspace*{0.8cm}\begin{minipage}{17.55cm}
-      \Large\color{unadmInk}#2
-    \end{minipage}
-    \vfill
-    \noindent\colorbox{unadmGreen}{%
-      \begin{minipage}[c][0.56cm][c]{\paperwidth}
-        \hspace*{0.65cm}{\color{white}\small Fundamentos de Gestion Administrativa - UnADM - \today}
-      \end{minipage}%
-    }
-  \end{minipage}
-}
+\title{Organización, entorno y estructura}
+\subtitle{Modelo de Kast y Rosenzweig · Actividad 3}
+\author{Martin Jonathan de la Cruz}
+\institute{Instituto Tecnológico Superior de Cajeme · Maestría en Gestión Administrativa}
+\date{Agosto de 2026}
 
 \begin{document}
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture,overlay]
+\fill[itescaRedDark] (current page.south west) rectangle ([xshift=.59\paperwidth]current page.north west);
+\fill[itescaCharcoal] ([xshift=.59\paperwidth]current page.south west) rectangle (current page.north east);
+\node[opacity=.08] at ([xshift=2.8cm]current page.center) {\includegraphics[width=.58\paperwidth]{\monograma}};
+\node[anchor=north west] at ([xshift=.55cm,yshift=-.45cm]current page.north west) {\includegraphics[width=3.9cm]{\itescalogo}};
+\end{tikzpicture}
+\vspace*{1.55cm}\begin{minipage}{.54\paperwidth}
+{\color{white}\fontsize{23}{27}\selectfont\bfseries Organización, entorno y estructura\par}
+\vspace{.25cm}{\color{itescaSilver}\large Modelo de Kast y Rosenzweig}\par
+\vspace{.45cm}{\color{white}\normalsize Martin Jonathan de la Cruz}\par
+{\color{white!80}\small Maestría en Gestión Administrativa}\end{minipage}\hfill
+\begin{minipage}{.34\paperwidth}\raggedleft\includegraphics[width=.95\linewidth]{\itescalogo}\\[.4cm]
+{\color{white}\small Fundamentos de Gestión Administrativa}\\{\color{white!75}\footnotesize Actividad 3 · Agosto de 2026}\end{minipage}
+\end{frame}
 
-\CoverSlide
+\begin{frame}{Propósito: leer la organización como sistema}
+\begin{block}{Pregunta guía}
+¿Cómo explicar una organización sin reducirla al organigrama ni aislarla de las condiciones que la rodean?
+\end{block}
+\begin{columns}[T]\begin{column}{.48\textwidth}
+\begin{itemize}\item Identificar los \clave{cinco subsistemas} interdependientes.
+\item Distinguir el entorno general del entorno de tarea.
+\item Comparar estructuras y elegir la que responda mejor a la contingencia.
+\end{itemize}\end{column}\begin{column}{.47\textwidth}
+\begin{alertblock}{Idea central} La estructura ordena el trabajo; el entorno exige adaptación; el modelo sistémico conecta ambas dimensiones.\end{alertblock}
+\end{column}\end{columns}
+\fuente{\citet{kastRosenzweig1985,kastRosenzweig1972}; \citet{bright2019}.}
+\end{frame}
 
-\ContentSlide{Objetivo editorial}{
-  {\bfseries Objetivo editable}\\[0.25cm]
-  Convertir la consigna en problema juridico verificable, con evidencia,
-  fundamento y postura academica propia.
-  \vspace{0.45cm}
-  \begin{itemize}
-    \item Semestre: 2. Bloque: 1.
-    \item Tipo: Obligatoria. Creditos: 8.
-    \item Bibliografia local: \texttt{fundamentos-de-gestion-administrativa.bib}.
-  \end{itemize}
-}
+\begin{frame}{Kast y Rosenzweig: organización como sistema abierto}
+\begin{center}\begin{tikzpicture}[node distance=1.1cm]
+\node[draw,rounded corners,fill=itescaSilver!35,minimum width=2.5cm,minimum height=1cm] (in) {\textbf{Entradas}\\recursos, personas, información};
+\node[draw=itescaRedDark,very thick,circle,fill=itescaRed!8,right=of in,minimum size=2.65cm] (org) {\textbf{Sistema}\\organización};
+\node[draw,rounded corners,fill=itescaSilver!35,minimum width=2.5cm,minimum height=1cm,right=of org] (out) {\textbf{Salidas}\\bienes, servicios, resultados};
+\draw[-{Latex[length=3mm]},very thick,itescaRedDark] (in)--(org);\draw[-{Latex[length=3mm]},very thick,itescaRedDark] (org)--(out);
+\draw[-{Latex[length=3mm]},thick,bend left=38] (out) to node[above,font=\scriptsize]{retroalimentación} (org);
+\end{tikzpicture}\end{center}
+\begin{block}{Implicación directiva} Una decisión sobre tecnología, personas o estructura altera al sistema completo y su capacidad de responder al ambiente.\end{block}
+\fuente{\citet{kastRosenzweig1972,kastRosenzweig1985}.}
+\end{frame}
 
-\ContentSlide{Marcadores de investigacion}{
-  \begin{itemize}
-    \item Delimitar marco juridico.
-    \item Identificar instituciones y sujetos.
-    \item Vincular problema con practica profesional.
-  \end{itemize}
-}
+\begin{frame}{Los cinco subsistemas del modelo}
+\small\begin{columns}[T]\begin{column}{.48\textwidth}
+\begin{block}{1. Metas y valores} Define propósito, criterios de éxito y legitimidad.\end{block}
+\begin{block}{2. Técnico} Integra conocimiento, procesos, equipos y métodos para transformar insumos.\end{block}
+\begin{block}{3. Psicosocial} Reúne personas, motivación, liderazgo, relaciones y cultura.\end{block}
+\end{column}\begin{column}{.48\textwidth}
+\begin{block}{4. Estructural} Distribuye tareas, autoridad, coordinación y reglas.\end{block}
+\begin{block}{5. Gerencial} Planea, integra, controla y vincula el sistema con el entorno.\end{block}
+\begin{alertblock}{Clave de lectura} Ningún subsistema es suficiente por sí solo: el desempeño depende de su \clave{congruencia}.\end{alertblock}
+\end{column}\end{columns}
+\fuente{\citet{kastRosenzweig1985}; material de unidad: \emph{Kast y Rosenzweig UI}.}
+\end{frame}
 
-\ContentSlide{Producto y estructura}{
-  \begin{enumerate}
-    \item Problema.
-    \item Marco conceptual y normativo.
-    \item Analisis o producto visual.
-    \item Postura personal.
-    \item Conclusion.
-  \end{enumerate}
-}
+\begin{frame}{El entorno organizacional}
+\begin{columns}[T]\begin{column}{.49\textwidth}
+\begin{block}{Entorno general (macro)}
+Fuerzas que afectan indirectamente a muchas organizaciones:
+\begin{itemize}\item económicas; \item tecnológicas; \item político-legales; \item socioculturales; \item demográficas y naturales.\end{itemize}
+\end{block}\end{column}\begin{column}{.47\textwidth}
+\begin{block}{Entorno de tarea (micro)}
+Actores con influencia directa sobre resultados:
+\begin{itemize}\item clientes o usuarios; \item proveedores; \item competidores; \item reguladores; \item aliados y comunidad.\end{itemize}
+\end{block}\end{column}\end{columns}
+\begin{alertblock}{Gestión estratégica} Vigilar, interpretar y responder a estas señales reduce incertidumbre y orienta decisiones.\end{alertblock}
+\fuente{\citet{openstaxEnvironment2019,bright2019}.}
+\end{frame}
 
-\ContentSlide{Indicaciones editoriales}{
-  \begin{itemize}
-    \item Sintetizar la memoria editorial de la materia sin perder continuidad con reporte y actividad.
-  \end{itemize}
-}
+\begin{frame}{De la incertidumbre a la respuesta}
+\begin{center}\begin{tikzpicture}[node distance=.6cm]
+\node[draw,rounded corners,fill=itescaSilver!35,minimum width=2.75cm,minimum height=.85cm] (a) {Señal del entorno};
+\node[draw,rounded corners,fill=itescaRed!8,minimum width=2.75cm,minimum height=.85cm,right=of a] (b) {Interpretación directiva};
+\node[draw,rounded corners,fill=itescaSilver!35,minimum width=2.75cm,minimum height=.85cm,right=of b] (c) {Ajuste organizacional};
+\draw[-{Latex[length=3mm]},very thick,itescaRedDark] (a)--(b);\draw[-{Latex[length=3mm]},very thick,itescaRedDark] (b)--(c);
+\end{tikzpicture}\end{center}
+\begin{block}{Ejemplo} Una innovación tecnológica puede exigir capacitar personal (psicosocial), rediseñar procesos (técnico), redefinir responsabilidades (estructural) y revisar prioridades (metas).\end{block}
+\fuente{Elaboración propia con base en \citet{kastRosenzweig1985,openstaxEnvironment2019}.}
+\end{frame}
 
-\ContentSlide{Criterios de calidad}{
-  \begin{itemize}
-    \item Citas verificables.
-    \item Bibliografia local consistente.
-    \item Compilacion limpia.
-    \item Redaccion formal.
-  \end{itemize}
-}
+\begin{frame}{Diseño estructural: decisiones básicas}
+\begin{columns}[T]\begin{column}{.49\textwidth}
+\begin{itemize}\item \clave{Especialización}: división del trabajo.
+\item \clave{Departamentalización}: agrupación por función, producto, territorio o cliente.
+\item \clave{Jerarquía}: cadena de mando y tramo de control.
+\end{itemize}\end{column}\begin{column}{.47\textwidth}
+\begin{itemize}\item \clave{Centralización}: dónde se toman las decisiones.
+\item \clave{Formalización}: reglas y procedimientos.
+\item \clave{Coordinación}: mecanismos para integrar unidades.
+\end{itemize}\end{column}\end{columns}
+\begin{alertblock}{Criterio contingente} No existe una estructura universalmente superior: debe ajustarse a estrategia, tamaño, tecnología y dinamismo ambiental.\end{alertblock}
+\fuente{\citet{openstaxStructures2019,bright2019}.}
+\end{frame}
 
-\ContentSlide{Cierre}{
-  \centering\vspace*{1.8cm}
-  La plantilla queda lista para desarrollar la actividad con criterio juridico,
-  trazabilidad y control editorial.
-}
+\begin{frame}{Tipos de estructura: funcional y divisional}
+\small\begin{columns}[T]\begin{column}{.48\textwidth}
+\begin{block}{Funcional}
+Agrupa por especialidad: finanzas, operaciones, mercadotecnia, recursos humanos.
+\begin{itemize}\item \textbf{Ventaja:} eficiencia técnica y economías de especialización.
+\item \textbf{Riesgo:} silos y coordinación lenta entre áreas.
+\end{itemize}\end{block}\end{column}\begin{column}{.48\textwidth}
+\begin{block}{Divisional}
+Agrupa por producto, mercado, cliente o región.
+\begin{itemize}\item \textbf{Ventaja:} cercanía a resultados y capacidad de respuesta.
+\item \textbf{Riesgo:} duplicación de recursos entre divisiones.
+\end{itemize}\end{block}\end{column}\end{columns}
+\fuente{\citet{openstaxStructures2019}.}
+\end{frame}
 
+\begin{frame}{Tipos de estructura: matricial, equipos y red}
+\small\begin{columns}[T]\begin{column}{.31\textwidth}
+\begin{block}{Matricial} Combina doble lógica —función y proyecto/producto—. Favorece integración, pero puede generar ambigüedad de autoridad.\end{block}\end{column}
+\begin{column}{.31\textwidth}\begin{block}{Por equipos} Organiza trabajo interdisciplinario alrededor de procesos o problemas. Acelera colaboración y aprendizaje.\end{block}\end{column}
+\begin{column}{.31\textwidth}\begin{block}{Red o virtual} Coordina capacidades internas y externas mediante alianzas y tecnología. Gana flexibilidad; exige confianza y control.\end{block}\end{column}\end{columns}
+\begin{alertblock}{Elección} A mayor complejidad e interdependencia, mayor necesidad de coordinación lateral y mecanismos orgánicos.\end{alertblock}
+\fuente{\citet{openstaxStructures2019,bright2019}.}
+\end{frame}
+
+\begin{frame}{Comparación ejecutiva: estructura según la contingencia}
+\scriptsize\centering\begin{tabular}{p{2.4cm}p{2.8cm}p{2.8cm}p{2.8cm}}\toprule
+\textbf{Estructura} & \textbf{Conviene cuando} & \textbf{Fortaleza} & \textbf{Atención directiva}\\\midrule
+Funcional & operaciones estables y especializadas & eficiencia experta & coordinar entre áreas\\
+Divisional & múltiples productos, regiones o mercados & foco en resultados & evitar duplicidad\\
+Matricial & proyectos complejos e interdependientes & integración & aclarar autoridad\\
+Equipos/red & ambiente cambiante e innovación & agilidad y aprendizaje & sostener confianza y comunicación\\\bottomrule\end{tabular}
+\vspace{.25cm}\begin{block}{Síntesis} El diseño efectivo alinea metas, tecnología, personas, estructura y exigencias ambientales; esa es la utilidad práctica de pensar sistémicamente.\end{block}
+\fuente{Síntesis propia a partir de \citet{kastRosenzweig1985,openstaxStructures2019}.}
+\end{frame}
+
+\begin{frame}{Conclusiones}
+\begin{enumerate}\item Kast y Rosenzweig permiten describir la organización como un \clave{sistema abierto} de subsistemas interdependientes.
+\item El entorno no es un fondo estático: sus fuerzas y actores condicionan información, recursos, riesgos y oportunidades.
+\item La estructura es una decisión de diseño; debe ser congruente con la contingencia y facilitar coordinación, no solo control.
+\item Una gestión responsable revisa continuamente la relación entre estrategia, entorno y capacidad organizacional.
+\end{enumerate}
+\vspace{.3cm}\begin{alertblock}{Declaración} Se utilizó IA generativa como apoyo de redacción y organización; las fuentes y la revisión final fueron verificadas por el autor.\end{alertblock}
+\end{frame}
+
+\begin{frame}{Referencias}
+\footnotesize\bibliographystyle{apalike}\bibliography{fundamentos-de-gestion-administrativa}
+\end{frame}
 \end{document}
