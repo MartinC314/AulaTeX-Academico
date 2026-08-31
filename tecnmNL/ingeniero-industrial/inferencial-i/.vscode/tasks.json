@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compilar Actividad 1 con latexmk",
+			"type": "shell",
+			"command": "C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\scripts\\latexmk-build.ps1",
+			"args": [
+				"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\tecnmNL\\ingeniero-industrial\\inferencial-i\\reporte-inferencial-i-Actividad-1.tex",
+				"-CleanMode",
+				"none"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Recompilar Actividad 1 final",
+			"type": "shell",
+			"command": "C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\scripts\\latexmk-build.ps1",
+			"args": [
+				"C:\\Users\\delaCruz\\Documents\\AulaTeX-Academico\\tecnmNL\\ingeniero-industrial\\inferencial-i\\reporte-inferencial-i-Actividad-1.tex",
+				"-CleanMode",
+				"none"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
