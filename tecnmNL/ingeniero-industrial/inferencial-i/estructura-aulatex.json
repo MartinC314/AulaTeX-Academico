@@ -1,0 +1,14 @@
+{
+  "institucion": "Tecnológico Nacional de México",
+  "campus": "Instituto Tecnológico de Nuevo León",
+  "carrera": "Ingeniería Industrial",
+  "materia": "Inferencial I",
+  "actividad_actual": 1,
+  "plantilla_maestra": "reporte-inferencial-i.tex",
+  "documento_actual": "reporte-inferencial-i-Actividad-1.tex",
+  "bibliografia": "inferencial-i.bib",
+  "assets": "assets-inferencial-i",
+  "planeaciones": "planeaciones-inferencial-i",
+  "referencias": "referencias-inferencial-i",
+  "entregas": "entregas-inferencial-i"
+}

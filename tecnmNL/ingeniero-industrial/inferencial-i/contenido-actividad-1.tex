@@ -1,0 +1,207 @@
+\begin{abstractd}
+Esta investigación explica el papel del muestreo en la estadística inferencial y desarrolla las siete distribuciones fundamentales solicitadas: media, diferencia de medias, proporción, diferencia de proporciones, $t$ de Student, varianza y relación de varianzas. Para cada caso se presentan condiciones de aplicación, distribución o aproximación, error estándar y un ejemplo resuelto con interpretación en un contexto de ingeniería industrial. El hilo conductor es que una estadística cambia de una muestra a otra; conocer su distribución muestral permite cuantificar esa variación y convertir datos parciales en decisiones justificadas sobre un proceso.
+\end{abstractd}
+
+\templateIndex
+
+\section{Introducción}
+En ingeniería industrial rara vez es viable inspeccionar cada pieza, medir a todos los operarios o ensayar hasta la falla la totalidad de un lote. La estadística inferencial resuelve este límite práctico: observa una parte de la población y, mediante modelos probabilísticos, estima parámetros, contrasta afirmaciones y cuantifica la incertidumbre de las decisiones. Su fundamento no es que una muestra reproduzca perfectamente a la población, sino que el mecanismo de selección y la variabilidad de los estadísticos sean conocidos y controlables \citep{montgomery2018,walpole2012}.
+
+El concepto central de esta actividad es la \emph{distribución muestral}: la distribución de probabilidad de un estadístico si se repitiera el mismo plan de muestreo muchas veces. Una media, una proporción o una varianza calculadas una sola vez son resultados observados; sus distribuciones muestrales describen qué resultados serían esperables bajo las mismas condiciones. Por ello conectan la probabilidad con la estimación, los intervalos de confianza, las pruebas de hipótesis y el control estadístico de procesos.
+
+\section{1.1 Introducción a la estadística inferencial}
+La estadística descriptiva organiza y resume los datos disponibles mediante tablas, gráficas y medidas como la media o la desviación estándar. La estadística inferencial va más allá: usa una muestra para formular conclusiones acerca de una población. En esta relación se distinguen:
+
+\begin{itemize}
+  \item \textbf{Población:} conjunto completo de unidades de interés.
+  \item \textbf{Parámetro:} característica fija, generalmente desconocida, de la población; por ejemplo $\mu$, $p$ o $\sigma^2$.
+  \item \textbf{Muestra:} subconjunto observado de la población.
+  \item \textbf{Estadístico:} función de los datos muestrales; por ejemplo $\bar X$, $\hat p$ o $S^2$.
+  \item \textbf{Inferencia:} conclusión probabilística sobre el parámetro a partir del estadístico.
+\end{itemize}
+
+Existen dos tareas principales. La \textbf{estimación} asigna un valor puntual o un intervalo plausible a un parámetro; la \textbf{prueba de hipótesis} evalúa si la evidencia es compatible con una afirmación. Ninguna corrige un diseño sesgado: una muestra grande reduce el error aleatorio, pero no elimina errores de cobertura, no respuesta, medición o selección \citep{devore2016}.
+
+\section{1.2 Muestreo: introducción y tipos}
+El muestreo consiste en seleccionar unidades de una población bajo un procedimiento definido. La unidad de análisis, el marco muestral, el tamaño $n$ y la forma de selección deben especificarse antes de observar los resultados. Para muestreo aleatorio simple sin reemplazo desde una población finita de tamaño $N$, el error estándar suele multiplicarse por la corrección
+\[
+  \sqrt{\frac{N-n}{N-1}},
+\]
+cuando la fracción $n/N$ no es despreciable (regla práctica: superior a 5\%).
+
+\subsection*{Muestreo probabilístico}
+Cada unidad tiene una probabilidad conocida y positiva de selección, lo que permite evaluar el error de muestreo.
+
+\begin{description}
+  \item[Aleatorio simple.] Todas las muestras de tamaño $n$ tienen la misma probabilidad. Es conceptualmente directo, pero exige un marco completo.
+  \item[Sistemático.] Se elige un inicio aleatorio y después cada $k$-ésima unidad. Es eficiente en líneas de producción, siempre que no exista periodicidad asociada con $k$.
+  \item[Estratificado.] La población se divide en estratos homogéneos (turno, máquina o proveedor) y se toma una muestra en cada uno. Mejora precisión y asegura representación.
+  \item[Por conglomerados.] Se seleccionan grupos naturales (plantas, lotes o celdas) y se observan todas o algunas unidades internas. Reduce costos, aunque unidades cercanas pueden ser semejantes.
+  \item[Multietápico.] Combina selecciones sucesivas, por ejemplo plantas, líneas y piezas.
+\end{description}
+
+\subsection*{Muestreo no probabilístico}
+La selección depende de accesibilidad o juicio; es útil en exploración, pero no permite generalizar con el mismo respaldo probabilístico.
+
+\begin{description}
+  \item[Conveniencia.] Se observan las unidades disponibles.
+  \item[Juicio o intencional.] Un experto elige casos considerados informativos.
+  \item[Cuotas.] Se fijan cantidades por categoría sin selección aleatoria dentro de ellas.
+  \item[Bola de nieve.] Los participantes remiten a otros; se usa en poblaciones difíciles de localizar.
+\end{description}
+
+\section{1.3 Teorema del límite central}
+Sean $X_1,\ldots,X_n$ variables independientes e idénticamente distribuidas, con media $\mu$ y varianza finita $\sigma^2$. El teorema del límite central (TLC) establece que
+\[
+  Z=\frac{\bar X-\mu}{\sigma/\sqrt n}\xrightarrow{d}N(0,1)
+\]
+cuando $n$ crece. En consecuencia, para muestras suficientemente grandes,
+\[
+  \bar X\approx N\!\left(\mu,\frac{\sigma^2}{n}\right).
+\]
+La media de las medias permanece en $\mu$, mientras su error estándar $\sigma/\sqrt n$ disminuye. El TLC no afirma que los datos originales se vuelvan normales ni que $n=30$ sea una frontera universal: el tamaño requerido depende de asimetría, colas, dependencia y valores atípicos. Si la población ya es normal, la media muestral es exactamente normal para cualquier $n$; en poblaciones muy sesgadas se necesita mayor tamaño \citep{openstax2023,nistNormal}.
+
+\section{1.4 Distribuciones fundamentales para el muestreo}
+Las siguientes distribuciones indican qué tan lejos puede quedar un estadístico de su parámetro por azar. En las aproximaciones normales se usa $\Phi(z)=P(Z\le z)$ para $Z\sim N(0,1)$. Los ejemplos se plantean como probabilidades para resaltar la lógica de cada distribución.
+
+\subsection{1.4.1 Distribución muestral de la media}
+Si la población es normal, o si el TLC es aplicable, entonces
+\[
+ \bar X\sim N\!\left(\mu,\frac{\sigma^2}{n}\right),\qquad
+ E(\bar X)=\mu,\qquad SE(\bar X)=\frac{\sigma}{\sqrt n}.
+\]
+Esto muestra que $\bar X$ es insesgada y que cuadruplicar el tamaño reduce a la mitad su error estándar.
+
+\begin{examplebox}{Ejemplo 1: media de llenado}
+Una llenadora produce envases con $\mu=500$ ml y $\sigma=8$ ml. Para muestras aleatorias de $n=36$, calcúlese $P(\bar X>502)$.
+\[
+ SE=\frac{8}{\sqrt{36}}=1.333,\qquad
+ z=\frac{502-500}{1.333}=1.50.
+\]
+Por tanto, $P(\bar X>502)=1-\Phi(1.50)=0.0668$. Aun con el proceso centrado en 500 ml, aproximadamente 6.68\% de las muestras de 36 envases excederían una media de 502 ml por variación aleatoria.
+\end{examplebox}
+
+\subsection{1.4.2 Distribución muestral de la diferencia de medias}
+Para dos muestras independientes,
+\[
+ E(\bar X_1-\bar X_2)=\mu_1-\mu_2,\qquad
+ SE=\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}},
+\]
+y la diferencia es normal si ambas poblaciones son normales o aproximadamente normal para muestras grandes. La independencia entre muestras es esencial.
+
+\begin{examplebox}{Ejemplo 2: tiempos de dos líneas}
+La línea A tiene $\mu_A=52$ s, $\sigma_A=5$ s y $n_A=40$; la línea B, $\mu_B=48$ s, $\sigma_B=6$ s y $n_B=50$. Se busca $P(\bar X_A-\bar X_B>6)$.
+\[
+ \mu_D=4,\quad SE_D=\sqrt{\frac{25}{40}+\frac{36}{50}}=1.160,
+ \quad z=\frac{6-4}{1.160}=1.725.
+\]
+Así, $P(D>6)=1-\Phi(1.725)=0.0423$. Una diferencia muestral mayor de seis segundos sería poco frecuente si las medias reales difieren sólo cuatro.
+\end{examplebox}
+
+\subsection{1.4.3 Distribución muestral de la proporción}
+Si $X$ cuenta éxitos en $n$ ensayos Bernoulli independientes y $\hat p=X/n$, entonces
+\[
+ E(\hat p)=p,\qquad SE(\hat p)=\sqrt{\frac{p(1-p)}{n}}.
+\]
+La distribución exacta proviene de $X\sim\operatorname{Bin}(n,p)$; se aproxima por una normal cuando $np$ y $n(1-p)$ son suficientemente grandes (comúnmente, al menos 10).
+
+\begin{examplebox}{Ejemplo 3: proporción defectuosa}
+Un proceso tiene $p=0.08$ de piezas defectuosas. En $n=200$ piezas, calcúlese aproximadamente $P(\hat p>0.11)$.
+\[
+ SE=\sqrt{\frac{0.08(0.92)}{200}}=0.01918,\qquad
+ z=\frac{0.11-0.08}{0.01918}=1.564.
+\]
+Entonces $P(\hat p>0.11)\approx1-\Phi(1.564)=0.0589$. Una muestra que supere 11\% de defectos es posible, aunque relativamente inusual, incluso si el proceso conserva $p=0.08$.
+\end{examplebox}
+
+\subsection{1.4.4 Distribución muestral de la diferencia de proporciones}
+Con muestras independientes,
+\[
+ E(\hat p_1-\hat p_2)=p_1-p_2,
+\quad SE=\sqrt{\frac{p_1(1-p_1)}{n_1}+\frac{p_2(1-p_2)}{n_2}}.
+\]
+La aproximación normal requiere suficientes éxitos y fracasos esperados en cada grupo. Para una prueba de igualdad $p_1=p_2$ suele usarse una proporción combinada; para describir la distribución bajo valores conocidos se emplea la fórmula anterior.
+
+\begin{examplebox}{Ejemplo 4: defectos de dos proveedores}
+El proveedor A tiene $p_A=0.05$, $n_A=300$ y B tiene $p_B=0.09$, $n_B=250$. Calcúlese $P(\hat p_A>\hat p_B)$.
+\[
+ \mu_D=-0.04,\quad SE_D=\sqrt{\frac{0.05(0.95)}{300}+\frac{0.09(0.91)}{250}}=0.02204,
+\]
+\[
+ z=\frac{0-(-0.04)}{0.02204}=1.815.
+\]
+Por ello, $P(D>0)=1-\Phi(1.815)=0.0348$. Aunque A tiene menor tasa real, en cerca de 3.48\% de muestreos podría parecer peor sólo por variación muestral.
+\end{examplebox}
+
+\subsection{1.4.5 Distribución $t$ de Student}
+Cuando una muestra aleatoria proviene de una población normal, $\sigma$ es desconocida y se sustituye por $S$,
+\[
+ T=\frac{\bar X-\mu}{S/\sqrt n}\sim t_{n-1}.
+\]
+La distribución es simétrica, pero tiene colas más pesadas que la normal porque incorpora la incertidumbre de estimar $\sigma$. Al aumentar los grados de libertad se aproxima a $N(0,1)$ \citep{nistStudent}.
+
+\begin{examplebox}{Ejemplo 5: tiempo de ajuste con $\sigma$ desconocida}
+Diez ajustes de máquina dan $\bar x=15.8$ min y $s=1.5$ min. Para evaluar $H_0:\mu=15$ contra $H_1:\mu\ne15$,
+\[
+ t=\frac{15.8-15}{1.5/\sqrt{10}}=1.687,\qquad \nu=9.
+\]
+El valor $p$ bilateral es $0.126$. Como $p>0.05$ (equivalentemente, $|1.687|<t_{0.975,9}=2.262$), la muestra no ofrece evidencia suficiente para concluir que el tiempo medio difiere de 15 minutos.
+\end{examplebox}
+
+\subsection{1.4.6 Distribución muestral de la varianza}
+Si $X_1,\ldots,X_n$ es una muestra aleatoria de una población normal,
+\[
+ \frac{(n-1)S^2}{\sigma^2}\sim\chi^2_{n-1}.
+\]
+La distribución ji-cuadrada sólo toma valores no negativos y es asimétrica, especialmente con pocos grados de libertad. La normalidad es un supuesto más crítico aquí que para inferencias sobre medias \citep{nistChi}.
+
+\begin{examplebox}{Ejemplo 6: variabilidad del diámetro}
+Un proceso normal tiene $\sigma^2=2.25$ mm$^2$. Para $n=20$, calcúlese $P(S^2>4)$.
+\[
+ \chi^2=\frac{(20-1)(4)}{2.25}=33.778,\qquad \nu=19.
+\]
+Por tanto, $P(\chi^2_{19}>33.778)=0.0195$. Observar una varianza superior a 4 mm$^2$ ocurre en cerca de 1.95\% de las muestras si la varianza real continúa en 2.25 mm$^2$; sería una señal para investigar el proceso.
+\end{examplebox}
+
+\subsection{1.4.7 Distribución muestral de la relación de varianzas}
+Para muestras independientes de poblaciones normales,
+\[
+ F=\frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2}\sim F_{n_1-1,n_2-1}.
+\]
+Bajo $H_0:\sigma_1^2=\sigma_2^2$, el estadístico se reduce a $S_1^2/S_2^2$. La distribución $F$ es positiva, asimétrica y depende de dos grados de libertad; sustenta comparaciones de variabilidad y el análisis de varianza \citep{nistF}.
+
+\begin{examplebox}{Ejemplo 7: comparación de variabilidad}
+Se obtienen $n_1=15$, $s_1^2=9$ de una máquina y $n_2=12$, $s_2^2=4$ de otra. Bajo igualdad de varianzas,
+\[
+ F=\frac{9}{4}=2.25,\qquad \nu_1=14,\quad\nu_2=11.
+\]
+La cola superior es $P(F_{14,11}\ge2.25)=0.0913$. En una comparación bilateral, el valor observado tampoco rebasa los críticos de 5\%, $F_{0.025}=0.323$ y $F_{0.975}=3.359$. No hay evidencia suficiente al 5\% para declarar varianzas distintas, aunque la razón observada merece seguimiento operativo.
+\end{examplebox}
+
+\section{Síntesis comparativa}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Selección de una distribución muestral.}
+\begin{tabularx}{\textwidth}{@{}lXll@{}}
+\toprule
+\textbf{Estadístico} & \textbf{Situación principal} & \textbf{Distribución} & \textbf{Supuesto clave}\\
+\midrule
+$\bar X$ & Una media, $\sigma$ conocida & Normal exacta/aprox. & Normalidad o $n$ grande\\
+$\bar X_1-\bar X_2$ & Dos medias independientes & Normal exacta/aprox. & Independencia\\
+$\hat p$ & Una proporción & Binomial / normal aprox. & Éxitos y fracasos suficientes\\
+$\hat p_1-\hat p_2$ & Dos proporciones & Normal aproximada & Grupos independientes\\
+$(\bar X-\mu)/(S/\sqrt n)$ & Una media, $\sigma$ desconocida & $t_{n-1}$ & Población normal en muestra pequeña\\
+$(n-1)S^2/\sigma^2$ & Una varianza & $\chi^2_{n-1}$ & Población normal\\
+$(S_1^2/\sigma_1^2)/(S_2^2/\sigma_2^2)$ & Razón de varianzas & $F_{n_1-1,n_2-1}$ & Normalidad e independencia\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Conclusiones}
+Las distribuciones muestrales convierten la variación entre muestras en una cantidad medible. Las cuatro primeras se apoyan en la distribución normal, de forma exacta bajo ciertos modelos o aproximada mediante el TLC; la distribución $t$ permite inferir una media cuando la desviación poblacional se desconoce; y las distribuciones $\chi^2$ y $F$ modelan la variabilidad de uno y dos procesos normales, respectivamente.
+
+Desde la perspectiva de la ingeniería industrial, el punto crítico no es memorizar fórmulas, sino seleccionar la distribución a partir de la pregunta, el estadístico y los supuestos. También debe distinguirse significación estadística de importancia práctica: un resultado raro bajo un modelo justifica revisar el proceso, pero la decisión final debe considerar costos, tolerancias, riesgo y calidad del diseño muestral. Un cálculo correcto basado en una muestra sesgada sigue produciendo una conclusión débil; por eso, inferencia y muestreo deben planearse como un solo sistema.
+
+\clearpage
+\bibliography{inferencial-i}

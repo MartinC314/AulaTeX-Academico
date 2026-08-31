@@ -1,0 +1,82 @@
+\documentclass[spanish,letterpaper,oneside]{article}
+
+\def\documenttitle {Distribuciones fundamentales para el muestreo}
+\def\documentsubtitle {Actividad 1}
+\def\documentsubject {Inferencial I}
+\def\documentauthor {Edgar Santiago Limón García}
+\def\coursename {Inferencial I}
+\def\coursecode {}
+
+\def\universityname {Tecnológico Nacional de México}
+\def\universityfaculty {Instituto Tecnológico de Nuevo León}
+\def\universitydepartment {Ingeniería Industrial}
+\def\assetpath {tecnmNL/ingeniero-industrial/inferencial-i/assets-inferencial-i/logos}
+\def\universitydepartmentimage {\assetpath/logo-campus-nuevo-leon}
+\def\universitydepartmentimagecfg {height=1.45cm}
+\def\universitylocation {Guadalupe, Nuevo León}
+
+\def\authortable {
+  \begin{tabular}{ll}
+    \textbf{Alumno:} & Edgar Santiago Limón García \\
+    \textbf{Matrícula:} & 25480546 \\
+    \textbf{Profesor(a):} & \rule{7cm}{0.4pt} \\
+    \textbf{Fecha:} & \today \\
+    \multicolumn{2}{l}{\universitylocation}
+  \end{tabular}
+}
+
+\input{template}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{tabularx}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+\setcitestyle{authoryear,open={(},close={)}}
+
+\definecolor{tecnmblue}{RGB}{31,56,100}
+\newtcolorbox{examplebox}[1]{
+  enhanced,breakable,
+  colback=blue!3,colframe=tecnmblue,
+  fonttitle=\bfseries,title={#1},
+  boxrule=0.7pt,arc=2mm,left=2mm,right=2mm,top=1mm,bottom=1mm
+}
+
+\begin{document}
+\begin{titlepage}
+  \thispagestyle{empty}
+  \begin{center}
+    \begin{minipage}[c]{0.28\textwidth}
+      \centering\includegraphics[width=0.95\linewidth]{\assetpath/logo-tecnm}
+    \end{minipage}\hfill
+    \begin{minipage}[c]{0.36\textwidth}
+      \centering\textbf{TECNOLÓGICO NACIONAL DE MÉXICO}\\[2mm]
+      \large Instituto Tecnológico de Nuevo León
+    \end{minipage}\hfill
+    \begin{minipage}[c]{0.24\textwidth}
+      \centering\includegraphics[height=2.2cm]{\assetpath/logo-campus-nuevo-leon}
+    \end{minipage}
+
+    \vspace{0.8cm}\color{tecnmblue}\rule{\textwidth}{1.2pt}\color{black}
+    \vfill
+    {\Large Ingeniería Industrial\par}
+    \vspace{0.7cm}
+    {\Huge\bfseries Distribuciones fundamentales\\para el muestreo\par}
+    \vspace{0.45cm}
+    {\LARGE Actividad 1 --- Inferencial I\par}
+    \vfill
+    \begin{tabular}{>{\bfseries}p{3.5cm}p{8cm}}
+      Alumno: & Edgar Santiago Limón García\\[4mm]
+      Matrícula: & 25480546\\[4mm]
+      Profesor(a): & \hrulefill\\[4mm]
+      Fecha: & \today
+    \end{tabular}
+    \vfill
+    {Guadalupe, Nuevo León\par}
+  \end{center}
+\end{titlepage}
+
+\templatePagecfg
+\onehalfspacing
+\input{tecnmNL/ingeniero-industrial/inferencial-i/contenido-actividad-1}
+\templateFinalcfg
+\end{document}
