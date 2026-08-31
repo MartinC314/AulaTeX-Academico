@@ -72,7 +72,11 @@
     "Soluciones",
     "Participantes",
     "Oportunidades de decisión",
-    "Coincidencia contingente"
+    "Coincidencia contingente",
+    "Foro :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "Fundamentos de administración. Eje 1: Conceptualicemos :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "Aportes teóricos a la gestión organizacional: la evolución en la visión de la organización :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "Reframing Organizations: Artistry, Choice, and Leadership :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib"
   ],
   "section_titles": [
     "Introduccion",
@@ -124,43 +128,48 @@
     "programaGestionAdministrativaLocal :: Programa analítico de Fundamentos de Gestión Administrativa :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
     "bibliografiaGestionAdministrativaLocal :: Bibliografía local de Fundamentos de Gestión Administrativa :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
     "compilacionGestionAdministrativaLocal :: Compilación de Fundamentos de Gestión Administrativa :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
-    "programaOficialGestionAdministrativaITESCA :: Programa oficial de Fundamentos de Gestión Administrativa :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib"
+    "programaOficialGestionAdministrativaITESCA :: Programa oficial de Fundamentos de Gestión Administrativa :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "lopezForo2022 :: Foro :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "larrarteSinFecha :: Fundamentos de administración. Eje 1: Conceptualicemos :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "sanchezBanuelos2017 :: Aportes teóricos a la gestión organizacional: la evolución en la visión de la organización :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "bolmanDeal2021 :: Reframing Organizations: Artistry, Choice, and Leadership :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "morgan2006 :: Images of Organization :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib"
   ],
   "node_metadata": {
     "editing_details": {
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 5 - fundamentos-de-gestion-administrativa-mga",
+        "subject_rule": "Actividad 4 - fundamentos-de-gestion-administrativa-mga",
         "scope_label": "Actividad 5"
       },
       "didactic_contract": {
-        "detected_id": "tabla_didactica",
-        "catalogo_no": 1,
-        "nombre_oficial": "Cuadro comparativo",
-        "nivel": "Sintetizar",
-        "familia": "tabular",
+        "detected_id": "foro_diagnostico",
+        "catalogo_no": 29,
+        "nombre_oficial": "Foro",
+        "nivel": "Aplicar",
+        "familia": "oral_participativo",
         "aliases": [
-          "cuadro comparativo",
-          "cuadro",
-          "tabla",
-          "longtable",
-          "tabular"
+          "foro",
+          "foro diagnóstico",
+          "foro diagnostico",
+          "participación en foro",
+          "participacion en foro"
         ],
         "required_visible_elements": [
-          "título",
-          "encabezados",
-          "filas",
-          "criterio de lectura"
+          "preguntas guía",
+          "respuesta",
+          "participación textual publicada",
+          "cierre"
         ],
-        "preservation_rule": "Si el producto solicitado es «Cuadro comparativo», conservar su forma visible característica (título, encabezados, filas, criterio de lectura) y su nivel cognitivo (Sintetizar); no transformarlo en otro producto salvo que la consigna lo pida. Construir con longtable/tabular; usar landscape, footnotesize, tabcolsep y arraystretch cuando el contenido sea amplio. Encabezados claros, filas completas y una guía de lectura de columnas.",
-        "preservation_rule_official": "Materializar «Cuadro comparativo» siguiendo la estructura oficial UnADM: Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria",
-        "structure_rule": "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. La tabla/cuadro es el NÚCLEO del acto de desarrollo. Orden: (a) marco conceptual-teórico breve que prepara la tabla, (b) la tabla en su página landscape como pieza protagónica, (c) semejanzas y diferencias u otro análisis derivado DESPUÉS de la tabla.",
-        "three_act_gravity_rule": "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, tabla y análisis (semejanzas/diferencias) son subsecciones de una sola sección de desarrollo cuyo título nombra el tema.",
-        "layout_rule": "El cuadro/tabla va en orientación horizontal (landscape) en su PROPIA página, con la tabla y su caption juntos en una sola página landscape. No anteponer \\clearpage al \\begin{landscape}. Compactar con \\arraystretch<=1.2 y caption en \\footnotesize.",
-        "no_gap_rule": "PROHIBIDO dejar media página o más en blanco justo antes del cuadro. Verificar visualmente con pdftoppm el flujo de páginas.",
-        "closure_rule": "El análisis derivado de la tabla y la postura personal se cierran en la conclusión. La conclusión inicia con \\clearpage y ocupa preferentemente una sola página; la declaración de uso de IA se liga como \\footnote.",
-        "build_steps": "Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria para establecer las comparaciones.\n 3. Trazar la tabla. Considerar el número de conceptos o\n temas y la cantidad de categorías que se utilizarán en\n la comparación. En el caso de los conceptos, cada uno\n requiere una columna. En cuanto a las categorías, se\n distribuye una en cada celda.\n 4. Titular el cuadro. Enunciar con claridad los conceptos\n o temas que se comparan.\n 5. Distribuir la información. Colocar en la parte superior\n de las columnas y las categorías se ubiquen en las celdas. En ambos casos, se debe escribir de manera puntual el nombre de cada elemento.\n 6. Revisar. Verificar la información, redacción y claridad\n de la tabla.\n\n\f Cuadro comparativo",
+        "preservation_rule": "Si el producto solicitado es «Foro», conservar su forma visible característica (preguntas guía, respuesta, participación textual publicada, cierre) y su nivel cognitivo (Aplicar); no transformarlo en otro producto salvo que la consigna lo pida. Materializar como bloque de participación (sourcecode/listings o tcolorbox) que reproduce literalmente lo publicado/expuesto: apertura, postura con evidencia citada, y cierre que invita al diálogo. El texto debe ser seleccionable y copiable en el PDF.",
+        "preservation_rule_official": "Materializar «Foro» siguiendo la estructura oficial UnADM: Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Prepara",
+        "structure_rule": "Cuerpo en TRES actos: (1) Introducción, (2) una única sección de Desarrollo con título temático (NO 'Desarrollo' ni 'Participación en el foro') y (3) Conclusiones. El PRODUCTO —la participación textual publicada— es el NÚCLEO del desarrollo y va como SUBsección. Orden: (a) marco/encuadre que conduce a las preguntas guía, (b) respuestas a las preguntas guía, (c) la participación textual publicada como subsección protagónica y su lectura.",
+        "three_act_gravity_rule": "El desarrollo NO se fragmenta en varias secciones \\section: marco, preguntas guía, participación publicada y su lectura son subsecciones de una sola sección de desarrollo cuyo título nombra el tema del foro.",
+        "layout_rule": "Bloque con breaklines para texto largo, sin numerar líneas de continuación. Cada participación en una sola línea lógica del fuente.",
+        "no_gap_rule": "",
+        "closure_rule": "La conclusión integra síntesis, análisis propio y postura personal. Inicia SIEMPRE con \\clearpage inmediatamente antes de la \\section, de modo que arranque en una PÁGINA NUEVA y ocupe preferentemente una sola página. La declaración de uso de IA se liga como \\footnote, nunca como \\section.",
+        "build_steps": "Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Preparar las argumentaciones. Pensar bien las opiniones, ya que deben favorecer un diálogo crítico y\n reflexivo. Para ello es recomendable que el usuario prepare el tema a investigar y realice breves interrogantes\n que permitan sintetizar las ideas que se piensan\n expresar.\n 4. Recopilar y analizar la información. Reunir datos, a\n partir de la pregunta detonante o el planteamiento del\n problema. Aquí comienza una discusión entre los participantes. El moderador deberá ir recabando los puntos\n de vista más importantes para elaborar un resumen de\n los comentarios que después compartirá.\n 5. Cerrar la actividad. Concluir la sesión. El moderador\n da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la\n participación.\n\n\f Foro",
         "official_contract": {
           "fuente_oficial": {
             "fuentes": [
@@ -168,37 +177,35 @@
               "100tecnicasdidacticas.unadmexico.mx"
             ],
             "sitio": "100tecnicasdidacticas.unadmexico.mx",
-            "numero_web": 76,
-            "nombre_oficial_web": "Cuadro comparativo"
+            "numero_web": 42,
+            "nombre_oficial_web": "Foro"
           },
-          "official_definition": "El cuadro comparativo establece, de manera clara y ordenada, las diferencias entre dos o más conceptos, ideas, temas o acontecimientos. Para ello, es necesario puntualizar las categorías que se contrastarán. Esta técnica se puede utilizar, por ejemplo, para comparar los costos, las medidas, las extensiones y los beneficios de dos productos.\n\nFortalece las habilidades para procesar datos,clasificar información, organizar el pensamiento y formular conclusiones o juicios de valor.",
-          "official_what_is": "Es un organizador visual y textual que se caracteriza por:\n\n ■■ Estructurar la información en una tabla.\n ■■ Identificar similitudes y diferencias.\n ■■ Comparar categorías o parámetros.\n ■■ Sintetizar la información para establecer un contraste\n inmediato.\n ■■ Facilitar el análisis y la observación.\n\n\f Cuadro comparativo",
-          "official_structure": "El cuadro comparativo tiene tres elementos esenciales:\n\n1. Tabla. Es el cuadro en el que se colocará la información.\n Se delimita con las columnas y las filas necesarias, de\n acuerdo con la cantidad de conceptos y categorías.\n2. Conceptos. Son los temas, sucesos o actividades que\n se compararán. Por ejemplo, la energía mecánica y la\n energía eléctrica.\n3. Categorías. Son los parámetros elegidos para compararse. En el caso de las energías, una categoría podría\n ser la de costo de distribución. También podrían analizarse los beneficios de cada una, o sus riesgos. No hay\n límite en los puntos a comparar, pero tienen que ser\n concretos y relevantes.\n\n\f\n\n Título\n\n Concepto A Concepto B Concepto C\n\n Categoría 1\n\n Categoría 2\n\n Categoría 3\n\n\f Cuadro comparativo",
-          "official_utility": "El cuadro comparativo tiene las siguientes funciones:\n\n■■ Establece una lectura organizada.\n■■ Expone con claridad los parámetros a comparar.\n■■ Permite un análisis cuidadoso de todas las alternativas.\n■■ Sustenta las decisiones que surgen del análisis.\n■■ Facilita la exposición de temas complejos mediante\n la identificación de diferencias y ventajas.",
-          "build_steps": "Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria para establecer las comparaciones.\n 3. Trazar la tabla. Considerar el número de conceptos o\n temas y la cantidad de categorías que se utilizarán en\n la comparación. En el caso de los conceptos, cada uno\n requiere una columna. En cuanto a las categorías, se\n distribuye una en cada celda.\n 4. Titular el cuadro. Enunciar con claridad los conceptos\n o temas que se comparan.\n 5. Distribuir la información. Colocar en la parte superior\n de las columnas y las categorías se ubiquen en las celdas. En ambos casos, se debe escribir de manera puntual el nombre de cada elemento.\n 6. Revisar. Verificar la información, redacción y claridad\n de la tabla.\n\n\f Cuadro comparativo",
-          "caveats": "…\n\nLa elaboración de un cuadro comparativo implica:\n\n■■ Identificar las características comunes o divergentes\n entre los conceptos o elementos.\n■■ Sintetizar para comunicar lo más relevante de los conceptos que se comparan.\n■■ Estructurar con orden y lógica.\n■■ Identificar el formato adecuado, pues existen distintos\n tipos. Hay cuadros comparativos:\n ■■ Tabulares: son los más usados y tienen un diseño\n sencillo basado en columnas y filas.\n ■■ Cualitativos: corresponden a los métodos de\n investigación cualitativos e integran palabras o\n significados.\n ■■ Cuantitativos: corresponden a los métodos de\n investigación cuantitativos y, por tanto, integran\n datos numéricos.\n\n Tabular Cualitativo Cuantitativo\n\n Concepto Concepto Conceptos Significados Cifras Datos\n A B\n Concepto Significado 10 1/1\n A A\nCategoría 1\n\n 5 1/2\n Concepto Significado\n B B\n 2.5 1/4\n Concepto Significado\n C C 1 1/10",
-          "authorities": "…\n\n Pimienta (s. f.) comenta que un cuadro comparativo permitirá desarrollar competencias que facilitará la generación de ideas, por medio de conocimientos previos porque\n constituye la organización del pensamiento.\n\n El cuadro comparativo es una técnica de síntesis, la cual\n según Sebastián et al. (s. f.) ayuda a organizar diversas\n ideas con la finalidad de establecer una jerarquización de\n argumentos claros y de fácil comprensión.\n\n Se considera que el cuadro comparativo permite esquematizar y organizar la información de forma gráfica, y que\n ayuda a comprender y relacionar las ideas de un texto\n (Montanero y Blázquez, 2001).\n\n ...facilitará la generación de ideas...\n\n\f Cuadro comparativo",
-          "references_seed": "Montanero, M. y Blázquez, F. (2001). Eficacia de las técnicas de síntesis en la comprensión y recuerdo de textos académicos. Revista Española de Pedagogía,\n 59(219), 251-267. https://dialnet.unirioja.es/servlet/articulo?codigo=23689\nPimienta, J. (s. f.). Estrategias de enseñanza aprendizaje [presentación]. https://\n cmapspublic2.ihmc.us/rid=1V2J9XZYF-B98X90-3VQC/ESTRATEGIAS%20\n DE%20ENSE%C3%91ANZA-APRENDIZAJE.pdf\nSebastián, A., Ballesteros, B. y Sánchez, M. (s. f.). Técnicas de estudio [presentación]. http://qinnova.uned.es/archivos_publicos/qweb_paginas/3439/tecnicasdeestudio.pdf\n\n\f\f Cuadro\nsinóptico\n\n Sintetizar\n\f\n\n El",
-          "how_to_cite": "López, A. (2022). Cuadro comparativo. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Sintetizar. Universidad Abierta y a Distancia de México.\nhttps://100tecnicasdidacticas.unadmexico.mx/index.html\r\n\n Copiar cita al portapapeles",
-          "preservation_rule_official": "Materializar «Cuadro comparativo» siguiendo la estructura oficial UnADM: Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria"
+          "official_definition": "El foro es una reunión que permite establecer una conversación para la solución de problemas, mediante un trabajo colaborativo y cooperativo. Se discute un tema específico, según los intereses de los participantes y se aborda desde un pensamiento crítico, reflexivo y autónomo.\n\nFacilita la interacción y el intercambio de posturas de manera colectiva, respecto al tema a tratar.",
+          "official_what_is": "Es una práctica grupal que se caracteriza por:\n\n ■■ Permitir la formación entre pares, ya que se orientan\n los temas de mejor manera, se concretan y ejemplifican. En el caso de los foros virtuales, las actividades\n pueden seguir una metodología de enseñanza y aprendizaje considerando contenidos y recursos de información ofrecidos para las actividades que llevarán a cabo.\n ■■ Fortalecer el pensamiento crítico flexible, en virtud de\n que la comunicación que se establece es organizada,\n precisa y sistemática.\n ■■ Favorecer la interacción como un aspecto central para\n la enseñanza y el aprendizaje.\n\n\f Foro",
+          "official_structure": "El foro tiene cuatro elementos esenciales:\n\n1. Apertura. En el espacio destinado para la interacción\n (virtual o presencial), un moderador expone las reglas\n de participación y presenta una pregunta detonante\n para iniciar el diálogo.\n2. Participantes. El número de integrantes dependerá\n del tipo y las características del foro.\n3. Coordinación. El moderador orienta las intervenciones de los participantes y reúne datos para el cierre del\n foro.\n4. Cierre. Se da una conclusión sobre la temática.\n\n\f\n\n Participantes\n\n Moderador\n\n Toma de datos para la\n moderación y el cierre\n\n\f Foro",
+          "official_utility": "El foro tiene las siguientes funciones:\n\n■■ Inicia una conversación sobre un tema en específico y mediante intereses particulares a partir de una\n investigación.\n■■ Sintetiza ideas y las comparte ante un grupo de\n manera reflexiva para intercambiar opiniones y experiencias, desde un punto participativo y respetuoso.\n■■ Permite expresar pensamientos críticos de manera\n colaborativa, a través de un diálogo que propicia el\n desarrollo de habilidades cognitivas y procesos\n mentales como la interpretación y comprensión de la\n información.\n■■ Estimula la expresión libre de ideas y opiniones sobre\n un tema, en donde la conjunción de ideas amplía el\n conocimiento sobre el mismo, permitiendo la comunicación permanente y simultánea entre pares.",
+          "build_steps": "Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Preparar las argumentaciones. Pensar bien las opiniones, ya que deben favorecer un diálogo crítico y\n reflexivo. Para ello es recomendable que el usuario prepare el tema a investigar y realice breves interrogantes\n que permitan sintetizar las ideas que se piensan\n expresar.\n 4. Recopilar y analizar la información. Reunir datos, a\n partir de la pregunta detonante o el planteamiento del\n problema. Aquí comienza una discusión entre los participantes. El moderador deberá ir recabando los puntos\n de vista más importantes para elaborar un resumen de\n los comentarios que después compartirá.\n 5. Cerrar la actividad. Concluir la sesión. El moderador\n da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la\n participación.\n\n\f Foro",
+          "caveats": "…\n\nEl desarrollo de un foro implica:\n\n■■ Mantener una actitud positiva, lo cual permitirá expresar argumentos y respetar otras opiniones para llegar\n a una conclusión exacta.\n■■ Aclarar dudas durante el intercambio de información.\n■■ Saber que en el entorno virtual hay tres tipos:\n ■■ Foros públicos: no hay reglas, número de participantes ni formas de participación, es decir, cualquier persona puede integrarse y comentar acerca\n de la problemática.\n ■■ Foros protegidos: es necesario registrarse para\n ingresar a la discusión.\n ■■ Foros privados: se integra por un cierto número de\n registrados y un administrador decide dar acceso\n o rechazar la solicitud de ingreso. En este tipo de\n foro, es recomendable investigar con anterioridad\n el tema para tener una perspectiva amplia y poder\n expresar puntos de vista críticos y reflexivos.",
+          "authorities": "…\n\n El foro es una técnica didáctica, mediante un espacio real\n o virtual, comunicativo o colaborativo en el que todo un\n grupo toma parte en un debate sobre un tema que sea de\n interés general (Berlo, 2004).\n\n Para Arango (2003) un foro es un escenario de comunicación, donde se propicia el debate, la concertación y el\n consenso de ideas, el cual permite a un usuario publicar\n su mensaje en cualquier momento, quedando visible para\n que otros usuarios expresen sus opiniones.\n\n Los foros pueden definirse como “espacios para discusiones académicas que contribuyen al desarrollo del pensamiento crítico a partir del diálogo” (Castro et al., 2016, p. 25).\n La principal finalidad de la discusión es expresar ideas a\n partir de una problemática e intervenir en una discusión\n con diversos puntos de vista.\n\n ...un espacio real o virtual,\n comunicativo o colaborativo\n en el que todo un grupo\n toma pa",
+          "references_seed": "Arango, M. (2003). Foros virtuales como estrategia de aprendizaje. https://\n revistas.rlcu.org.ar/index.php/Debates/article/view/33/19\nBerlo, D. (2004). El proceso de la comunicación. Introducción a la teoría y a la\n práctica. Buenos Aires: El Ateneo.\nCastro, N., Suárez, X. y Soto, V. (2016). El uso del foro virtual para desarrollar el aprendizaje autorregulado de los estudiantes universitarios.\n Innovación Educativa, 16(70), 23-41. https://www.redalyc.org/journal/1794/\n 179445403002/html/\n\n\f\fGrupos de\ndiscusión\n\n Aplicar\n\f\n\n Los",
+          "how_to_cite": "López, A. (2022). Foro. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Aplicar. Universidad Abierta y a Distancia de México.\nhttps://100tecnicasdidacticas.unadmexico.mx/index.html\r\n\n Copiar cita al portapapeles",
+          "preservation_rule_official": "Materializar «Foro» siguiendo la estructura oficial UnADM: Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Prepara"
         },
         "tikz_pattern": {
           "packages": [
-            "\\usepackage{longtable}",
-            "\\usepackage{booktabs}",
-            "\\usepackage{colortbl}",
-            "\\usepackage{pdflscape}",
-            "\\usepackage{graphicx}",
+            "\\usepackage[most]{tcolorbox}",
+            "\\usepackage{enumitem}",
+            "\\usepackage{attachfile}",
             "\\usepackage{helvet}"
           ],
-          "skeleton": "% ARQUITECTURA CUADRO COMPARATIVO (reporte contenedor; el producto es la tabla):\n\\section{Introducci\\'on}\n% Plantea QUE se compara y POR QUE esa comparacion importa. Sin metadiscurso.\n\n\\section{<titulo tematico del eje de contraste>}\n% Prosa que delimita los conceptos con \\textbf{} ANTES de la tabla:\n% la tabla contrasta, no define por primera vez.\n\n\\begin{landscape}\n\\begingroup\n\\setlength{\\parskip}{0pt}\n\\centering\n{\\scriptsize\n\\setlength{\\tabcolsep}{8pt}\n\\renewcommand{\\arraystretch}{1.86}\n\\resizebox{\\linewidth}{!}{%\n\\begin{tabular}{L{0.17\\linewidth} L{0.39\\linewidth} L{0.39\\linewidth}}\n\\rowcolor{unadmGreenDark}\n\\textbf{\\color{white}Criterio} & \\textbf{\\color{white}<Opcion A>} & \\textbf{\\color{white}<Opcion B>} \\\\\n\\midrule\n\\textbf{<Criterio 1>} & <rasgo A con \\citep{}> & <rasgo B con \\citep{}> \\\\\n\\rowcolor{unadmRowAlt}\n\\textbf{<Criterio 2>} & <rasgo A> & <rasgo B> \\\\\n\\end{tabular}}\n}\n\\endgroup\n\\end{landscape}\n\n\\section{<titulo tematico del analisis>}\n% LECTURA de la tabla: que revela el contraste. No repetir celdas en prosa.\n\n\\section{Conclusi\\'on}\n% Postura propia sobre el contraste + nota al pie de declaracion de IA.\n",
-          "rules": "Criterios en filas, opciones en columnas; caption + label; landscape en página propia; \\arraystretch<=1.2 y \\footnotesize; guía de lectura antes y análisis (semejanzas/diferencias) después.",
-          "materializacion": "Construir con longtable/tabular; usar landscape, footnotesize, tabcolsep y arraystretch cuando el contenido sea amplio. Encabezados claros, filas completas y una guía de lectura de columnas.",
+          "skeleton": "% ARQUITECTURA FORO (reporte contenedor + producto publicado en caja):\n\\section{Introducci\\'on}\n% Plantea el problema y anuncia la postura. SIN metadiscurso: no se dice\n% 'en esta actividad se pide'. La consigna no se copia al entregable.\n\n\\section{<titulo tematico del eje conceptual>}\n% Desarrollo argumentativo en prosa, con subsecciones TEMATICAS.\n% Aqui vive la base conceptual: terminos delimitados con \\textbf{}.\n\n% EL PRODUCTO: lo que efectivamente se publico en la plataforma.\n\\begin{forobox}[title={Participaci\\'on publicada en el foro}]\n\\hfill\\foroCopyButton{foro-participacion-Actividad-N.txt}\\\\[-0.5em]\n\\phantomsection\\label{foro-participacion}\n\n\\textbf{Asunto:} <asunto breve y tematico>\\par\n\\medskip\n<saludo y encuadre en una sola frase>\n\\medskip\n\n\\begin{enumerate}[leftmargin=1.6em,labelsep=0.6em,itemsep=0.5em,label=\\textbf{\\arabic*)}]\n  \\item \\textbf{<pregunta guia>} <respuesta con fundamento y cita>\n\\end{enumerate}\n\\end{forobox}\n\n\\section{Conclusi\\'on}\n% Cierra con postura propia y consecuencia practica. Incluye la nota al\n% pie de declaracion de uso de IA (requisito UnADM).\n",
+          "rules": "Bloque forobox reproduce lo publicado (apertura, respuesta con cita textual APA 7, cierre con pregunta); texto seleccionable/copiable; apartado Referencias con sangría francesa; retroalimentación en forobox aparte.",
+          "materializacion": "Materializar como bloque de participación (sourcecode/listings o tcolorbox) que reproduce literalmente lo publicado/expuesto: apertura, postura con evidencia citada, y cierre que invita al diálogo. El texto debe ser seleccionable y copiable en el PDF.",
           "source": "actividad_real",
           "fuente_real": {
-            "materia": "Redacción en Contextos Virtuales, Derecho a la Seguridad Social y Ética y Moral Jurídica (UnADM, Licenciatura en Derecho)",
-            "actividad": "Tres entregas compiladas y validadas: Redacción A2 (criterios de redacción académica), Seguridad Social A4 (seguro social vs privado, 11 criterios) y Ética A1 (seis escuelas éticas)",
-            "nota": "Las tres coinciden en landscape + cabecera de color + criterios en la primera columna. Difieren en el entorno de tabla, y la diferencia no es estilística sino funcional: ver `dos_variantes_rule`."
+            "materia": "Garantías Constitucionales, Interaprendizaje en Ambientes Virtuales y Derecho a la Seguridad Social (UnADM, Licenciatura en Derecho)",
+            "actividad": "Cuatro entregas compiladas y validadas: Garantías A1 y A2, Interaprendizaje A2, Seguridad Social A1",
+            "nota": "Patrón consolidado por convergencia: los cuatro TEX comparten paquetes, paleta, entorno y estructura del bloque de producto."
           }
         },
         "scoring_rubric": {
@@ -231,88 +238,79 @@
           },
           "criterios_de_construccion_oficial": [
             {
-              "criterio": "Investigar. Recopilar toda la información necesaria sobre los conceptos o temas que se compararán. Lo adecuado es consultar fuentes diversas que aporten varias perspectivas y datos confiables.",
-              "peso": 4.17
+              "criterio": "Delimitar el tema y el tipo de foro. Especificar las características del foro. Se trata de que los participantes tengan los mismos intereses en el tema, hecho o problema a dialogar.",
+              "peso": 8.33
             },
             {
-              "criterio": "Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información necesaria para establecer las comparaciones.",
-              "peso": 4.17
+              "criterio": "Establecer reglas. Elegir a un moderador para que presente el tema y comparta las instrucciones para participar de manera ordenada.",
+              "peso": 8.33
             },
             {
-              "criterio": "Trazar la tabla. Considerar el número de conceptos o temas y la cantidad de categorías que se utilizarán en la comparación. En el caso de los conceptos, cada uno requiere una columna. En cuanto a las categorías, se distribuye una en cada celda.",
-              "peso": 4.17
-            },
-            {
-              "criterio": "Titular el cuadro. Enunciar con claridad los conceptos o temas que se comparan.",
-              "peso": 4.17
-            },
-            {
-              "criterio": "Distribuir la información. Colocar en la parte superior de las columnas y las categorías se ubiquen en las celdas. En ambos casos, se debe escribir de manera puntual el nombre de cada elemento.",
-              "peso": 4.17
-            },
-            {
-              "criterio": "Revisar. Verificar la información, redacción y claridad de la tabla. Cuadro comparativo",
-              "peso": 4.17
+              "criterio": "Cerrar la actividad. Concluir la sesión. El moderador da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la participación. Foro",
+              "peso": 8.33
             }
           ],
           "consideraciones_para_puntuar": [
-            "… La elaboración de un cuadro comparativo implica: ■■ Identificar las características comunes o divergentes entre los conceptos o elementos.",
-            "■■ Sintetizar para comunicar lo más relevante de los conceptos que se comparan.",
-            "■■ Estructurar con orden y lógica.",
-            "■■ Identificar el formato adecuado, pues existen distintos tipos.",
-            "Hay cuadros comparativos: ■■ Tabulares: son los más usados y tienen un diseño sencillo basado en columnas y filas.",
-            "■■ Cualitativos: corresponden a los métodos de investigación cualitativos e integran palabras o significados.",
-            "■■ Cuantitativos: corresponden a los métodos de investigación cuantitativos y, por tanto, integran datos numéricos.",
-            "Tabular Cualitativo Cuantitativo Concepto Concepto Conceptos Significados Cifras Datos A B Concepto Significado 10 1/1 A A Categoría 1 5 1/2 Concepto Significado B B 2.5 1/4 Concepto Significado C C 1 1/10",
-            "La primera columna contiene los criterios y las demás los objetos comparados.",
-            "Hay entre 6 y 11 criterios de comparación efectivos.",
-            "Cada celda sustantiva está respaldada con \\citep de fuente verificable.",
-            "La tabla va precedida de prosa conceptual y seguida de un análisis del contraste.",
-            "El caption nombra el contenido temático, no la actividad.",
-            "La variante de tabla (tabular+resizebox o longtable) corresponde al tamaño real."
+            "… El desarrollo de un foro implica: ■■ Mantener una actitud positiva, lo cual permitirá expresar argumentos y respetar otras opiniones para llegar a una conclusión exacta.",
+            "■■ Aclarar dudas durante el intercambio de información.",
+            "■■ Saber que en el entorno virtual hay tres tipos: ■■ Foros públicos: no hay reglas, número de participantes ni formas de participación, es decir, cualquier persona puede integrarse y comentar acerca de la problemática.",
+            "■■ Foros protegidos: es necesario registrarse para ingresar a la discusión.",
+            "■■ Foros privados: se integra por un cierto número de registrados y un administrador decide dar acceso o rechazar la solicitud de ingreso.",
+            "En este tipo de foro, es recomendable investigar con anterioridad el tema para tener una perspectiva amplia y poder expresar puntos de vista críticos y reflexivos.",
+            "El reporte contiene una caja `forobox` con el texto exacto publicado.",
+            "El título de la caja nombra el acto comunicativo, no una etiqueta genérica.",
+            "Cada pregunta guía de la consigna recibe respuesta con fundamento citado.",
+            "Las secciones del desarrollo tienen títulos temáticos, no de andamiaje.",
+            "La conclusión sostiene postura propia y cierra con la declaración de IA.",
+            "No se copian instrucciones de la planeación dentro del entregable."
           ],
           "umbral_aprobacion": 100,
           "nota": "El producto puntúa por fidelidad a la técnica (forma oficial) + calidad editorial (tres actos, citas, postura)."
         },
         "construction_integration": {
-          "deteccion": "Aliases: cuadro comparativo, cuadro, tabla, longtable, tabular.",
-          "producto_nucleo": "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, tabla y análisis (semejanzas/diferencias) son subsecciones de una sola sección de desarrollo cuyo título nombra el tema.",
-          "estructura": "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. La tabla/cuadro es el NÚCLEO del acto de desarrollo. Orden: (a) marco conceptual-teórico breve que prepara la tabla, (b) la tabla en su página landscape como pieza protagónica, (c) semejanzas y diferencias u otro análisis derivado DESPUÉS de la tabla.",
-          "layout": "El cuadro/tabla va en orientación horizontal (landscape) en su PROPIA página, con la tabla y su caption juntos en una sola página landscape. No anteponer \\clearpage al \\begin{landscape}. Compactar con \\arraystretch<=1.2 y caption en \\footnotesize.",
-          "cierre": "El análisis derivado de la tabla y la postura personal se cierran en la conclusión. La conclusión inicia con \\clearpage y ocupa preferentemente una sola página; la declaración de uso de IA se liga como \\footnote.",
-          "preservacion_oficial": "Materializar «Cuadro comparativo» siguiendo la estructura oficial UnADM: Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria",
-          "pasos_construccion": "Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria para establecer las comparaciones.\n 3. Trazar la tabla. Considerar el número de conceptos o\n temas y la cantidad de categorías que se utilizarán en\n la comparación. En el caso de los conceptos, cada uno\n requiere una columna. En cuanto a las categorías, se\n distribuye una en cada celda.\n 4. Titular el cuadro. Enunciar con claridad los conceptos\n o temas que se comparan.\n 5. Distribuir la información. Colocar en la parte superior\n de las columnas y las categorías se ubiquen en las celdas. En ambos casos, se debe escribir de manera puntual el nombre de cada elemento.\n 6. Revisar. Verificar la información, redacción y claridad\n de la tabla.\n\n\f Cuadro comparativo",
+          "deteccion": "Aliases: foro, foro diagnóstico, foro diagnostico, participación en foro, participacion en foro.",
+          "producto_nucleo": "El desarrollo NO se fragmenta en varias secciones \\section: marco, preguntas guía, participación publicada y su lectura son subsecciones de una sola sección de desarrollo cuyo título nombra el tema del foro.",
+          "estructura": "Cuerpo en TRES actos: (1) Introducción, (2) una única sección de Desarrollo con título temático (NO 'Desarrollo' ni 'Participación en el foro') y (3) Conclusiones. El PRODUCTO —la participación textual publicada— es el NÚCLEO del desarrollo y va como SUBsección. Orden: (a) marco/encuadre que conduce a las preguntas guía, (b) respuestas a las preguntas guía, (c) la participación textual publicada como subsección protagónica y su lectura.",
+          "layout": "Bloque con breaklines para texto largo, sin numerar líneas de continuación. Cada participación en una sola línea lógica del fuente.",
+          "cierre": "La conclusión integra síntesis, análisis propio y postura personal. Inicia SIEMPRE con \\clearpage inmediatamente antes de la \\section, de modo que arranque en una PÁGINA NUEVA y ocupe preferentemente una sola página. La declaración de uso de IA se liga como \\footnote, nunca como \\section.",
+          "preservacion_oficial": "Materializar «Foro» siguiendo la estructura oficial UnADM: Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Prepara",
+          "pasos_construccion": "Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Preparar las argumentaciones. Pensar bien las opiniones, ya que deben favorecer un diálogo crítico y\n reflexivo. Para ello es recomendable que el usuario prepare el tema a investigar y realice breves interrogantes\n que permitan sintetizar las ideas que se piensan\n expresar.\n 4. Recopilar y analizar la información. Reunir datos, a\n partir de la pregunta detonante o el planteamiento del\n problema. Aquí comienza una discusión entre los participantes. El moderador deberá ir recabando los puntos\n de vista más importantes para elaborar un resumen de\n los comentarios que después compartirá.\n 5. Cerrar la actividad. Concluir la sesión. El moderador\n da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la\n participación.\n\n\f Foro",
           "compilacion": "Compilar con latexmk -pdf -bibtex; verificar el producto renderizando a PNG con pdftoppm (no solo returncode)."
         },
         "real_pattern": {
           "fuente_real": {
-            "materia": "Redacción en Contextos Virtuales, Derecho a la Seguridad Social y Ética y Moral Jurídica (UnADM, Licenciatura en Derecho)",
-            "actividad": "Tres entregas compiladas y validadas: Redacción A2 (criterios de redacción académica), Seguridad Social A4 (seguro social vs privado, 11 criterios) y Ética A1 (seis escuelas éticas)",
-            "nota": "Las tres coinciden en landscape + cabecera de color + criterios en la primera columna. Difieren en el entorno de tabla, y la diferencia no es estilística sino funcional: ver `dos_variantes_rule`."
+            "materia": "Garantías Constitucionales, Interaprendizaje en Ambientes Virtuales y Derecho a la Seguridad Social (UnADM, Licenciatura en Derecho)",
+            "actividad": "Cuatro entregas compiladas y validadas: Garantías A1 y A2, Interaprendizaje A2, Seguridad Social A1",
+            "nota": "Patrón consolidado por convergencia: los cuatro TEX comparten paquetes, paleta, entorno y estructura del bloque de producto."
           },
           "packages": [
-            "\\usepackage{longtable}",
-            "\\usepackage{booktabs}",
-            "\\usepackage{colortbl}",
-            "\\usepackage{pdflscape}",
-            "\\usepackage{graphicx}",
+            "\\usepackage[most]{tcolorbox}",
+            "\\usepackage{enumitem}",
+            "\\usepackage{attachfile}",
             "\\usepackage{helvet}"
           ],
-          "macro_columnas": "% Columnas de ancho fijo con texto justificado arriba.\n\\newcolumntype{L}[1]{>{\\raggedright\\arraybackslash}p{#1}}",
-          "skeleton": "% ARQUITECTURA CUADRO COMPARATIVO (reporte contenedor; el producto es la tabla):\n\\section{Introducci\\'on}\n% Plantea QUE se compara y POR QUE esa comparacion importa. Sin metadiscurso.\n\n\\section{<titulo tematico del eje de contraste>}\n% Prosa que delimita los conceptos con \\textbf{} ANTES de la tabla:\n% la tabla contrasta, no define por primera vez.\n\n\\begin{landscape}\n\\begingroup\n\\setlength{\\parskip}{0pt}\n\\centering\n{\\scriptsize\n\\setlength{\\tabcolsep}{8pt}\n\\renewcommand{\\arraystretch}{1.86}\n\\resizebox{\\linewidth}{!}{%\n\\begin{tabular}{L{0.17\\linewidth} L{0.39\\linewidth} L{0.39\\linewidth}}\n\\rowcolor{unadmGreenDark}\n\\textbf{\\color{white}Criterio} & \\textbf{\\color{white}<Opcion A>} & \\textbf{\\color{white}<Opcion B>} \\\\\n\\midrule\n\\textbf{<Criterio 1>} & <rasgo A con \\citep{}> & <rasgo B con \\citep{}> \\\\\n\\rowcolor{unadmRowAlt}\n\\textbf{<Criterio 2>} & <rasgo A> & <rasgo B> \\\\\n\\end{tabular}}\n}\n\\endgroup\n\\end{landscape}\n\n\\section{<titulo tematico del analisis>}\n% LECTURA de la tabla: que revela el contraste. No repetir celdas en prosa.\n\n\\section{Conclusi\\'on}\n% Postura propia sobre el contraste + nota al pie de declaracion de IA.\n",
-          "dos_variantes_rule": "Hay DOS variantes legítimas y la elección depende del tamaño, no del gusto. (a) `tabular` dentro de \\resizebox: para tablas que caben en UNA página apaisada; conserva proporciones y no parte filas. (b) `longtable` con \\endfirsthead/\\endhead: obligatoria cuando la tabla se desborda, porque repite la cabecera en cada página. Usar `longtable` dentro de \\resizebox NO funciona: resizebox necesita medir la caja completa.",
-          "criterios_en_columna_rule": "La PRIMERA columna lleva los criterios de comparación en \\textbf{}; las siguientes, los objetos comparados. Nunca al revés: leído de arriba abajo, el cuadro debe permitir seguir un mismo criterio a través de las opciones. Se recomiendan entre 6 y 11 criterios: menos empobrece el contraste, más vuelve la tabla ilegible.",
-          "cita_por_celda_rule": "Cada celda con afirmación sustantiva lleva su \\citep. Una tabla comparativa sin fuentes es una opinión tabulada. Las citas van DENTRO de la celda, no agrupadas al pie.",
-          "prosa_antes_y_despues_rule": "La tabla no se basta a sí misma: va precedida por prosa que delimita los conceptos y seguida por un análisis que LEE el contraste. Sin ese marco, la métrica castiga la base conceptual y el trabajo parece un formulario.",
-          "landscape_rule": "El cuadro va en \\begin{landscape} con \\null\\vspace*{-1.35cm} para recuperar el margen superior. Tras \\end{landscape} conviene \\clearpage y restaurar \\pagestyle{fancy} si se alteró.",
-          "sin_metadiscurso_rule": "El entregable no menciona el proceso editorial ni copia las instrucciones de la planeación. El caption nombra el contenido, no la tarea: «Comparación de criterios de redacción académica», no «Cuadro comparativo Actividad 2».",
+          "colores": [
+            "\\definecolor{unadmGreen}{HTML}{6A8A3A}",
+            "\\definecolor{unadmGreenDark}{HTML}{4F6A2A}",
+            "\\definecolor{unadmPaper}{HTML}{F7F8F3}",
+            "\\definecolor{unadmInk}{HTML}{22262B}",
+            "\\definecolor{unadmGold}{HTML}{C8A24B}"
+          ],
+          "macro_forobox": "\\newtcolorbox{forobox}[1][]{%\n  enhanced,\n  breakable,\n  colback=unadmPaper,\n  colframe=unadmGreen,\n  boxrule=0pt,\n  leftrule=3pt,\n  arc=1.2mm,\n  left=4mm, right=4mm, top=3mm, bottom=3mm,\n  fonttitle=\\bfseries\\color{white},\n  coltitle=white,\n  colbacktitle=unadmGreenDark,\n  attach boxed title to top left={xshift=4mm,yshift=-2mm},\n  boxed title style={colframe=unadmGreenDark,arc=0.6mm},\n  #1\n}",
+          "skeleton": "% ARQUITECTURA FORO (reporte contenedor + producto publicado en caja):\n\\section{Introducci\\'on}\n% Plantea el problema y anuncia la postura. SIN metadiscurso: no se dice\n% 'en esta actividad se pide'. La consigna no se copia al entregable.\n\n\\section{<titulo tematico del eje conceptual>}\n% Desarrollo argumentativo en prosa, con subsecciones TEMATICAS.\n% Aqui vive la base conceptual: terminos delimitados con \\textbf{}.\n\n% EL PRODUCTO: lo que efectivamente se publico en la plataforma.\n\\begin{forobox}[title={Participaci\\'on publicada en el foro}]\n\\hfill\\foroCopyButton{foro-participacion-Actividad-N.txt}\\\\[-0.5em]\n\\phantomsection\\label{foro-participacion}\n\n\\textbf{Asunto:} <asunto breve y tematico>\\par\n\\medskip\n<saludo y encuadre en una sola frase>\n\\medskip\n\n\\begin{enumerate}[leftmargin=1.6em,labelsep=0.6em,itemsep=0.5em,label=\\textbf{\\arabic*)}]\n  \\item \\textbf{<pregunta guia>} <respuesta con fundamento y cita>\n\\end{enumerate}\n\\end{forobox}\n\n\\section{Conclusi\\'on}\n% Cierra con postura propia y consecuencia practica. Incluye la nota al\n% pie de declaracion de uso de IA (requisito UnADM).\n",
+          "producto_en_caja_rule": "REGLA CENTRAL DEL FORO: el entregable tiene DOS capas. El reporte es el contenedor (introducción, desarrollo, conclusión) y la caja `forobox` reproduce EXACTAMENTE el texto publicado en la plataforma. La caja documenta algo verificable en el aula virtual; no lo sustituye. Por eso el texto de la caja debe poder copiarse y pegarse tal cual.",
+          "titulo_caja_rule": "El título de la caja nombra el acto comunicativo real: «Participación publicada en el foro», «Retroalimentación publicada a otra participación» o «Intervención en el foro sobre <tema>». Nunca «Desarrollo» ni «Participación publicada» como título-etiqueta de sección, porque la métrica penaliza los títulos que no nombran el tema.",
+          "preguntas_guia_rule": "Cuando la consigna trae preguntas guía, cada una se responde en un \\item con la pregunta en \\textbf{} seguida de la respuesta. La pregunta se reproduce para que la intervención sea legible por sí sola, pero NO se copian las instrucciones de la planeación.",
+          "retroalimentacion_rule": "Si la consigna pide comentar a un compañero, se agrega una SEGUNDA caja titulada «Retroalimentación publicada a otra participación». La retroalimentación aporta un argumento o una fuente; no es elogio genérico.",
+          "boton_copiar_rule": "La macro \\foroCopyButton adjunta el texto plano de la intervención con attachfile, para poder pegarlo en la plataforma sin arrastrar formato de LaTeX. El archivo adjunto debe existir junto al TEX.",
+          "sin_metadiscurso_rule": "El entregable NO menciona el sistema que lo produjo ni el proceso editorial: nada de «brechas detectadas», «refuerzo del ciclo A» o «esta actividad solicita». Ese andamiaje es telemetría interna.",
           "scoring_extra": [
-            "La primera columna contiene los criterios y las demás los objetos comparados.",
-            "Hay entre 6 y 11 criterios de comparación efectivos.",
-            "Cada celda sustantiva está respaldada con \\citep de fuente verificable.",
-            "La tabla va precedida de prosa conceptual y seguida de un análisis del contraste.",
-            "El caption nombra el contenido temático, no la actividad.",
-            "La variante de tabla (tabular+resizebox o longtable) corresponde al tamaño real."
+            "El reporte contiene una caja `forobox` con el texto exacto publicado.",
+            "El título de la caja nombra el acto comunicativo, no una etiqueta genérica.",
+            "Cada pregunta guía de la consigna recibe respuesta con fundamento citado.",
+            "Las secciones del desarrollo tienen títulos temáticos, no de andamiaje.",
+            "La conclusión sostiene postura propia y cierra con la declaración de IA.",
+            "No se copian instrucciones de la planeación dentro del entregable."
           ]
         }
       },
@@ -341,7 +339,7 @@
         "career": "maestria-en-gestion-administrativa",
         "subject": "fundamentos-de-gestion-administrativa-mga",
         "activity": "Actividad 5",
-        "seed_scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-5"
+        "seed_scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-4"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -403,7 +401,10 @@
           "has_memory": false
         }
       ],
-      "novelty_signals": [],
+      "novelty_signals": [
+        "heading_contract",
+        "institutional_identity"
+      ],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -436,7 +437,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260830-125855",
+      "run_id": "20260831-153125",
       "scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-5",
       "related_scope_keys": [
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-5",
@@ -448,7 +449,7 @@
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-10",
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-2"
       ],
-      "novelty_count": 0
+      "novelty_count": 2
     },
     "scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-5",
     "level": "actividad",
@@ -474,15 +475,15 @@
           "heading_contract": {
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-            "subject_rule": "Actividad 5 - fundamentos-de-gestion-administrativa-mga",
+            "subject_rule": "Actividad 4 - fundamentos-de-gestion-administrativa-mga",
             "scope_label": "Actividad 5"
           },
           "didactic_contract": {
-            "detected_id": "tabla_didactica",
-            "catalogo_no": 1,
-            "nombre_oficial": "Cuadro comparativo",
-            "nivel": "Sintetizar",
-            "familia": "tabular",
+            "detected_id": "foro_diagnostico",
+            "catalogo_no": 29,
+            "nombre_oficial": "Foro",
+            "nivel": "Aplicar",
+            "familia": "oral_participativo",
             "aliases": [
               "cuestionario",
               "diagnóstico",
@@ -492,7 +493,12 @@
               "cuadro",
               "tabla",
               "longtable",
-              "tabular"
+              "tabular",
+              "foro",
+              "foro diagnóstico",
+              "foro diagnostico",
+              "participación en foro",
+              "participacion en foro"
             ],
             "required_visible_elements": [
               "pregunta",
@@ -501,16 +507,19 @@
               "título",
               "encabezados",
               "filas",
-              "criterio de lectura"
+              "criterio de lectura",
+              "preguntas guía",
+              "participación textual publicada",
+              "cierre"
             ],
-            "preservation_rule": "Si el producto solicitado es «Cuadro comparativo», conservar su forma visible característica (título, encabezados, filas, criterio de lectura) y su nivel cognitivo (Sintetizar); no transformarlo en otro producto salvo que la consigna lo pida. Construir con longtable/tabular; usar landscape, footnotesize, tabcolsep y arraystretch cuando el contenido sea amplio. Encabezados claros, filas completas y una guía de lectura de columnas.",
-            "preservation_rule_official": "Materializar «Cuadro comparativo» siguiendo la estructura oficial UnADM: Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria",
-            "structure_rule": "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. La tabla/cuadro es el NÚCLEO del acto de desarrollo. Orden: (a) marco conceptual-teórico breve que prepara la tabla, (b) la tabla en su página landscape como pieza protagónica, (c) semejanzas y diferencias u otro análisis derivado DESPUÉS de la tabla.",
-            "three_act_gravity_rule": "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, tabla y análisis (semejanzas/diferencias) son subsecciones de una sola sección de desarrollo cuyo título nombra el tema.",
-            "layout_rule": "El cuadro/tabla va en orientación horizontal (landscape) en su PROPIA página, con la tabla y su caption juntos en una sola página landscape. No anteponer \\clearpage al \\begin{landscape}. Compactar con \\arraystretch<=1.2 y caption en \\footnotesize.",
+            "preservation_rule": "Si el producto solicitado es «Foro», conservar su forma visible característica (preguntas guía, respuesta, participación textual publicada, cierre) y su nivel cognitivo (Aplicar); no transformarlo en otro producto salvo que la consigna lo pida. Materializar como bloque de participación (sourcecode/listings o tcolorbox) que reproduce literalmente lo publicado/expuesto: apertura, postura con evidencia citada, y cierre que invita al diálogo. El texto debe ser seleccionable y copiable en el PDF.",
+            "preservation_rule_official": "Materializar «Foro» siguiendo la estructura oficial UnADM: Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Prepara",
+            "structure_rule": "Cuerpo en TRES actos: (1) Introducción, (2) una única sección de Desarrollo con título temático (NO 'Desarrollo' ni 'Participación en el foro') y (3) Conclusiones. El PRODUCTO —la participación textual publicada— es el NÚCLEO del desarrollo y va como SUBsección. Orden: (a) marco/encuadre que conduce a las preguntas guía, (b) respuestas a las preguntas guía, (c) la participación textual publicada como subsección protagónica y su lectura.",
+            "three_act_gravity_rule": "El desarrollo NO se fragmenta en varias secciones \\section: marco, preguntas guía, participación publicada y su lectura son subsecciones de una sola sección de desarrollo cuyo título nombra el tema del foro.",
+            "layout_rule": "Bloque con breaklines para texto largo, sin numerar líneas de continuación. Cada participación en una sola línea lógica del fuente.",
             "no_gap_rule": "PROHIBIDO dejar media página o más en blanco justo antes del cuadro. Verificar visualmente con pdftoppm el flujo de páginas.",
-            "closure_rule": "El análisis derivado de la tabla y la postura personal se cierran en la conclusión. La conclusión inicia con \\clearpage y ocupa preferentemente una sola página; la declaración de uso de IA se liga como \\footnote.",
-            "build_steps": "Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria para establecer las comparaciones.\n 3. Trazar la tabla. Considerar el número de conceptos o\n temas y la cantidad de categorías que se utilizarán en\n la comparación. En el caso de los conceptos, cada uno\n requiere una columna. En cuanto a las categorías, se\n distribuye una en cada celda.\n 4. Titular el cuadro. Enunciar con claridad los conceptos\n o temas que se comparan.\n 5. Distribuir la información. Colocar en la parte superior\n de las columnas y las categorías se ubiquen en las celdas. En ambos casos, se debe escribir de manera puntual el nombre de cada elemento.\n 6. Revisar. Verificar la información, redacción y claridad\n de la tabla.\n\n\f Cuadro comparativo",
+            "closure_rule": "La conclusión integra síntesis, análisis propio y postura personal. Inicia SIEMPRE con \\clearpage inmediatamente antes de la \\section, de modo que arranque en una PÁGINA NUEVA y ocupe preferentemente una sola página. La declaración de uso de IA se liga como \\footnote, nunca como \\section.",
+            "build_steps": "Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Preparar las argumentaciones. Pensar bien las opiniones, ya que deben favorecer un diálogo crítico y\n reflexivo. Para ello es recomendable que el usuario prepare el tema a investigar y realice breves interrogantes\n que permitan sintetizar las ideas que se piensan\n expresar.\n 4. Recopilar y analizar la información. Reunir datos, a\n partir de la pregunta detonante o el planteamiento del\n problema. Aquí comienza una discusión entre los participantes. El moderador deberá ir recabando los puntos\n de vista más importantes para elaborar un resumen de\n los comentarios que después compartirá.\n 5. Cerrar la actividad. Concluir la sesión. El moderador\n da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la\n participación.\n\n\f Foro",
             "official_contract": {
               "fuente_oficial": {
                 "fuentes": [
@@ -518,19 +527,19 @@
                   "100tecnicasdidacticas.unadmexico.mx"
                 ],
                 "sitio": "100tecnicasdidacticas.unadmexico.mx",
-                "numero_web": 76,
-                "nombre_oficial_web": "Cuadro comparativo"
+                "numero_web": 42,
+                "nombre_oficial_web": "Foro"
               },
-              "official_definition": "El cuadro comparativo establece, de manera clara y ordenada, las diferencias entre dos o más conceptos, ideas, temas o acontecimientos. Para ello, es necesario puntualizar las categorías que se contrastarán. Esta técnica se puede utilizar, por ejemplo, para comparar los costos, las medidas, las extensiones y los beneficios de dos productos.\n\nFortalece las habilidades para procesar datos,clasificar información, organizar el pensamiento y formular conclusiones o juicios de valor.",
-              "official_what_is": "Es un organizador visual y textual que se caracteriza por:\n\n ■■ Estructurar la información en una tabla.\n ■■ Identificar similitudes y diferencias.\n ■■ Comparar categorías o parámetros.\n ■■ Sintetizar la información para establecer un contraste\n inmediato.\n ■■ Facilitar el análisis y la observación.\n\n\f Cuadro comparativo",
-              "official_structure": "El cuadro comparativo tiene tres elementos esenciales:\n\n1. Tabla. Es el cuadro en el que se colocará la información.\n Se delimita con las columnas y las filas necesarias, de\n acuerdo con la cantidad de conceptos y categorías.\n2. Conceptos. Son los temas, sucesos o actividades que\n se compararán. Por ejemplo, la energía mecánica y la\n energía eléctrica.\n3. Categorías. Son los parámetros elegidos para compararse. En el caso de las energías, una categoría podría\n ser la de costo de distribución. También podrían analizarse los beneficios de cada una, o sus riesgos. No hay\n límite en los puntos a comparar, pero tienen que ser\n concretos y relevantes.\n\n\f\n\n Título\n\n Concepto A Concepto B Concepto C\n\n Categoría 1\n\n Categoría 2\n\n Categoría 3\n\n\f Cuadro comparativo",
-              "official_utility": "El cuadro comparativo tiene las siguientes funciones:\n\n■■ Establece una lectura organizada.\n■■ Expone con claridad los parámetros a comparar.\n■■ Permite un análisis cuidadoso de todas las alternativas.\n■■ Sustenta las decisiones que surgen del análisis.\n■■ Facilita la exposición de temas complejos mediante\n la identificación de diferencias y ventajas.",
-              "build_steps": "Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria para establecer las comparaciones.\n 3. Trazar la tabla. Considerar el número de conceptos o\n temas y la cantidad de categorías que se utilizarán en\n la comparación. En el caso de los conceptos, cada uno\n requiere una columna. En cuanto a las categorías, se\n distribuye una en cada celda.\n 4. Titular el cuadro. Enunciar con claridad los conceptos\n o temas que se comparan.\n 5. Distribuir la información. Colocar en la parte superior\n de las columnas y las categorías se ubiquen en las celdas. En ambos casos, se debe escribir de manera puntual el nombre de cada elemento.\n 6. Revisar. Verificar la información, redacción y claridad\n de la tabla.\n\n\f Cuadro comparativo",
-              "caveats": "…\n\nLa elaboración de un cuadro comparativo implica:\n\n■■ Identificar las características comunes o divergentes\n entre los conceptos o elementos.\n■■ Sintetizar para comunicar lo más relevante de los conceptos que se comparan.\n■■ Estructurar con orden y lógica.\n■■ Identificar el formato adecuado, pues existen distintos\n tipos. Hay cuadros comparativos:\n ■■ Tabulares: son los más usados y tienen un diseño\n sencillo basado en columnas y filas.\n ■■ Cualitativos: corresponden a los métodos de\n investigación cualitativos e integran palabras o\n significados.\n ■■ Cuantitativos: corresponden a los métodos de\n investigación cuantitativos y, por tanto, integran\n datos numéricos.\n\n Tabular Cualitativo Cuantitativo\n\n Concepto Concepto Conceptos Significados Cifras Datos\n A B\n Concepto Significado 10 1/1\n A A\nCategoría 1\n\n 5 1/2\n Concepto Significado\n B B\n 2.5 1/4\n Concepto Significado\n C C 1 1/10",
-              "authorities": "…\n\n Pimienta (s. f.) comenta que un cuadro comparativo permitirá desarrollar competencias que facilitará la generación de ideas, por medio de conocimientos previos porque\n constituye la organización del pensamiento.\n\n El cuadro comparativo es una técnica de síntesis, la cual\n según Sebastián et al. (s. f.) ayuda a organizar diversas\n ideas con la finalidad de establecer una jerarquización de\n argumentos claros y de fácil comprensión.\n\n Se considera que el cuadro comparativo permite esquematizar y organizar la información de forma gráfica, y que\n ayuda a comprender y relacionar las ideas de un texto\n (Montanero y Blázquez, 2001).\n\n ...facilitará la generación de ideas...\n\n\f Cuadro comparativo",
-              "references_seed": "Montanero, M. y Blázquez, F. (2001). Eficacia de las técnicas de síntesis en la comprensión y recuerdo de textos académicos. Revista Española de Pedagogía,\n 59(219), 251-267. https://dialnet.unirioja.es/servlet/articulo?codigo=23689\nPimienta, J. (s. f.). Estrategias de enseñanza aprendizaje [presentación]. https://\n cmapspublic2.ihmc.us/rid=1V2J9XZYF-B98X90-3VQC/ESTRATEGIAS%20\n DE%20ENSE%C3%91ANZA-APRENDIZAJE.pdf\nSebastián, A., Ballesteros, B. y Sánchez, M. (s. f.). Técnicas de estudio [presentación]. http://qinnova.uned.es/archivos_publicos/qweb_paginas/3439/tecnicasdeestudio.pdf\n\n\f\f Cuadro\nsinóptico\n\n Sintetizar\n\f\n\n El",
-              "how_to_cite": "López, A. (2022). Cuadro comparativo. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Sintetizar. Universidad Abierta y a Distancia de México.\nhttps://100tecnicasdidacticas.unadmexico.mx/index.html\r\n\n Copiar cita al portapapeles",
-              "preservation_rule_official": "Materializar «Cuadro comparativo» siguiendo la estructura oficial UnADM: Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria"
+              "official_definition": "El foro es una reunión que permite establecer una conversación para la solución de problemas, mediante un trabajo colaborativo y cooperativo. Se discute un tema específico, según los intereses de los participantes y se aborda desde un pensamiento crítico, reflexivo y autónomo.\n\nFacilita la interacción y el intercambio de posturas de manera colectiva, respecto al tema a tratar.",
+              "official_what_is": "Es una práctica grupal que se caracteriza por:\n\n ■■ Permitir la formación entre pares, ya que se orientan\n los temas de mejor manera, se concretan y ejemplifican. En el caso de los foros virtuales, las actividades\n pueden seguir una metodología de enseñanza y aprendizaje considerando contenidos y recursos de información ofrecidos para las actividades que llevarán a cabo.\n ■■ Fortalecer el pensamiento crítico flexible, en virtud de\n que la comunicación que se establece es organizada,\n precisa y sistemática.\n ■■ Favorecer la interacción como un aspecto central para\n la enseñanza y el aprendizaje.\n\n\f Foro",
+              "official_structure": "El foro tiene cuatro elementos esenciales:\n\n1. Apertura. En el espacio destinado para la interacción\n (virtual o presencial), un moderador expone las reglas\n de participación y presenta una pregunta detonante\n para iniciar el diálogo.\n2. Participantes. El número de integrantes dependerá\n del tipo y las características del foro.\n3. Coordinación. El moderador orienta las intervenciones de los participantes y reúne datos para el cierre del\n foro.\n4. Cierre. Se da una conclusión sobre la temática.\n\n\f\n\n Participantes\n\n Moderador\n\n Toma de datos para la\n moderación y el cierre\n\n\f Foro",
+              "official_utility": "El foro tiene las siguientes funciones:\n\n■■ Inicia una conversación sobre un tema en específico y mediante intereses particulares a partir de una\n investigación.\n■■ Sintetiza ideas y las comparte ante un grupo de\n manera reflexiva para intercambiar opiniones y experiencias, desde un punto participativo y respetuoso.\n■■ Permite expresar pensamientos críticos de manera\n colaborativa, a través de un diálogo que propicia el\n desarrollo de habilidades cognitivas y procesos\n mentales como la interpretación y comprensión de la\n información.\n■■ Estimula la expresión libre de ideas y opiniones sobre\n un tema, en donde la conjunción de ideas amplía el\n conocimiento sobre el mismo, permitiendo la comunicación permanente y simultánea entre pares.",
+              "build_steps": "Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Preparar las argumentaciones. Pensar bien las opiniones, ya que deben favorecer un diálogo crítico y\n reflexivo. Para ello es recomendable que el usuario prepare el tema a investigar y realice breves interrogantes\n que permitan sintetizar las ideas que se piensan\n expresar.\n 4. Recopilar y analizar la información. Reunir datos, a\n partir de la pregunta detonante o el planteamiento del\n problema. Aquí comienza una discusión entre los participantes. El moderador deberá ir recabando los puntos\n de vista más importantes para elaborar un resumen de\n los comentarios que después compartirá.\n 5. Cerrar la actividad. Concluir la sesión. El moderador\n da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la\n participación.\n\n\f Foro",
+              "caveats": "…\n\nEl desarrollo de un foro implica:\n\n■■ Mantener una actitud positiva, lo cual permitirá expresar argumentos y respetar otras opiniones para llegar\n a una conclusión exacta.\n■■ Aclarar dudas durante el intercambio de información.\n■■ Saber que en el entorno virtual hay tres tipos:\n ■■ Foros públicos: no hay reglas, número de participantes ni formas de participación, es decir, cualquier persona puede integrarse y comentar acerca\n de la problemática.\n ■■ Foros protegidos: es necesario registrarse para\n ingresar a la discusión.\n ■■ Foros privados: se integra por un cierto número de\n registrados y un administrador decide dar acceso\n o rechazar la solicitud de ingreso. En este tipo de\n foro, es recomendable investigar con anterioridad\n el tema para tener una perspectiva amplia y poder\n expresar puntos de vista críticos y reflexivos.",
+              "authorities": "…\n\n El foro es una técnica didáctica, mediante un espacio real\n o virtual, comunicativo o colaborativo en el que todo un\n grupo toma parte en un debate sobre un tema que sea de\n interés general (Berlo, 2004).\n\n Para Arango (2003) un foro es un escenario de comunicación, donde se propicia el debate, la concertación y el\n consenso de ideas, el cual permite a un usuario publicar\n su mensaje en cualquier momento, quedando visible para\n que otros usuarios expresen sus opiniones.\n\n Los foros pueden definirse como “espacios para discusiones académicas que contribuyen al desarrollo del pensamiento crítico a partir del diálogo” (Castro et al., 2016, p. 25).\n La principal finalidad de la discusión es expresar ideas a\n partir de una problemática e intervenir en una discusión\n con diversos puntos de vista.\n\n ...un espacio real o virtual,\n comunicativo o colaborativo\n en el que todo un grupo\n toma pa",
+              "references_seed": "Arango, M. (2003). Foros virtuales como estrategia de aprendizaje. https://\n revistas.rlcu.org.ar/index.php/Debates/article/view/33/19\nBerlo, D. (2004). El proceso de la comunicación. Introducción a la teoría y a la\n práctica. Buenos Aires: El Ateneo.\nCastro, N., Suárez, X. y Soto, V. (2016). El uso del foro virtual para desarrollar el aprendizaje autorregulado de los estudiantes universitarios.\n Innovación Educativa, 16(70), 23-41. https://www.redalyc.org/journal/1794/\n 179445403002/html/\n\n\f\fGrupos de\ndiscusión\n\n Aplicar\n\f\n\n Los",
+              "how_to_cite": "López, A. (2022). Foro. En López, A. 100 Técnicas Didácticas de Enseñanza y Aprendizaje. Aplicar. Universidad Abierta y a Distancia de México.\nhttps://100tecnicasdidacticas.unadmexico.mx/index.html\r\n\n Copiar cita al portapapeles",
+              "preservation_rule_official": "Materializar «Foro» siguiendo la estructura oficial UnADM: Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Prepara"
             },
             "tikz_pattern": {
               "packages": [
@@ -540,20 +549,23 @@
                 "\\usepackage{pdflscape}",
                 "\\usepackage{colortbl}",
                 "\\usepackage{graphicx}",
-                "\\usepackage{helvet}"
+                "\\usepackage{helvet}",
+                "\\usepackage[most]{tcolorbox}",
+                "\\usepackage{enumitem}",
+                "\\usepackage{attachfile}"
               ],
-              "skeleton": "% ARQUITECTURA CUADRO COMPARATIVO (reporte contenedor; el producto es la tabla):\n\\section{Introducci\\'on}\n% Plantea QUE se compara y POR QUE esa comparacion importa. Sin metadiscurso.\n\n\\section{<titulo tematico del eje de contraste>}\n% Prosa que delimita los conceptos con \\textbf{} ANTES de la tabla:\n% la tabla contrasta, no define por primera vez.\n\n\\begin{landscape}\n\\begingroup\n\\setlength{\\parskip}{0pt}\n\\centering\n{\\scriptsize\n\\setlength{\\tabcolsep}{8pt}\n\\renewcommand{\\arraystretch}{1.86}\n\\resizebox{\\linewidth}{!}{%\n\\begin{tabular}{L{0.17\\linewidth} L{0.39\\linewidth} L{0.39\\linewidth}}\n\\rowcolor{unadmGreenDark}\n\\textbf{\\color{white}Criterio} & \\textbf{\\color{white}<Opcion A>} & \\textbf{\\color{white}<Opcion B>} \\\\\n\\midrule\n\\textbf{<Criterio 1>} & <rasgo A con \\citep{}> & <rasgo B con \\citep{}> \\\\\n\\rowcolor{unadmRowAlt}\n\\textbf{<Criterio 2>} & <rasgo A> & <rasgo B> \\\\\n\\end{tabular}}\n}\n\\endgroup\n\\end{landscape}\n\n\\section{<titulo tematico del analisis>}\n% LECTURA de la tabla: que revela el contraste. No repetir celdas en prosa.\n\n\\section{Conclusi\\'on}\n% Postura propia sobre el contraste + nota al pie de declaracion de IA.\n",
-              "rules": "Criterios en filas, opciones en columnas; caption + label; landscape en página propia; \\arraystretch<=1.2 y \\footnotesize; guía de lectura antes y análisis (semejanzas/diferencias) después.",
-              "materializacion": "Construir con longtable/tabular; usar landscape, footnotesize, tabcolsep y arraystretch cuando el contenido sea amplio. Encabezados claros, filas completas y una guía de lectura de columnas.",
+              "skeleton": "% ARQUITECTURA FORO (reporte contenedor + producto publicado en caja):\n\\section{Introducci\\'on}\n% Plantea el problema y anuncia la postura. SIN metadiscurso: no se dice\n% 'en esta actividad se pide'. La consigna no se copia al entregable.\n\n\\section{<titulo tematico del eje conceptual>}\n% Desarrollo argumentativo en prosa, con subsecciones TEMATICAS.\n% Aqui vive la base conceptual: terminos delimitados con \\textbf{}.\n\n% EL PRODUCTO: lo que efectivamente se publico en la plataforma.\n\\begin{forobox}[title={Participaci\\'on publicada en el foro}]\n\\hfill\\foroCopyButton{foro-participacion-Actividad-N.txt}\\\\[-0.5em]\n\\phantomsection\\label{foro-participacion}\n\n\\textbf{Asunto:} <asunto breve y tematico>\\par\n\\medskip\n<saludo y encuadre en una sola frase>\n\\medskip\n\n\\begin{enumerate}[leftmargin=1.6em,labelsep=0.6em,itemsep=0.5em,label=\\textbf{\\arabic*)}]\n  \\item \\textbf{<pregunta guia>} <respuesta con fundamento y cita>\n\\end{enumerate}\n\\end{forobox}\n\n\\section{Conclusi\\'on}\n% Cierra con postura propia y consecuencia practica. Incluye la nota al\n% pie de declaracion de uso de IA (requisito UnADM).\n",
+              "rules": "Bloque forobox reproduce lo publicado (apertura, respuesta con cita textual APA 7, cierre con pregunta); texto seleccionable/copiable; apartado Referencias con sangría francesa; retroalimentación en forobox aparte.",
+              "materializacion": "Materializar como bloque de participación (sourcecode/listings o tcolorbox) que reproduce literalmente lo publicado/expuesto: apertura, postura con evidencia citada, y cierre que invita al diálogo. El texto debe ser seleccionable y copiable en el PDF.",
               "source": "actividad_real",
               "fuente_real": {
-                "materia": "Redacción en Contextos Virtuales, Derecho a la Seguridad Social y Ética y Moral Jurídica (UnADM, Licenciatura en Derecho)",
-                "actividad": "Tres entregas compiladas y validadas: Redacción A2 (criterios de redacción académica), Seguridad Social A4 (seguro social vs privado, 11 criterios) y Ética A1 (seis escuelas éticas)",
+                "materia": "Garantías Constitucionales, Interaprendizaje en Ambientes Virtuales y Derecho a la Seguridad Social (UnADM, Licenciatura en Derecho)",
+                "actividad": "Cuatro entregas compiladas y validadas: Garantías A1 y A2, Interaprendizaje A2, Seguridad Social A1",
                 "archivo": "UCNL/licenciatura-en-administracion/microeconomia-lad/reporte-microeconomia-Actividad-1.tex",
                 "archivo_variante_justificacion": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-1.tex",
                 "titulo": "Cuestionario resuelto en tabla (opción múltiple) con marco conceptual previo, opciones comentadas y conclusión que integra postura",
                 "estado": "PATRÓN DE REFERENCIA VALIDADO al 100/100 (20/20 checks): Microeconomía A1 usa longtable 4 col (No./Pregunta/Respuesta/Justificación) con marco conceptual sólido citado, opciones múltiples COMENTADAS (solo la pregunta visible), título y sección temáticos (no 'Actividad #'/'Desarrollo'), análisis+postura integrados en la conclusión (no secciones separadas), declaración de IA como \\footnote, conclusión y referencias en páginas propias (\\clearpage). Interaprendizaje es la variante 4 col con justificación APA.",
-                "nota": "Las tres coinciden en landscape + cabecera de color + criterios en la primera columna. Difieren en el entorno de tabla, y la diferencia no es estilística sino funcional: ver `dos_variantes_rule`."
+                "nota": "Patrón consolidado por convergencia: los cuatro TEX comparten paquetes, paleta, entorno y estructura del bloque de producto."
               }
             },
             "scoring_rubric": {
@@ -600,7 +612,10 @@
                 "{'criterio': 'Trazar la tabla. Considerar el número de conceptos o temas y la cantidad de categorías que se utilizarán en la comparación. En el caso de los conceptos, cada uno requiere una columna. En cuanto a las categorías, se distribuye una en cada celda.', 'peso': 4.17}",
                 "{'criterio': 'Titular el cuadro. Enunciar con claridad los conceptos o temas que se comparan.', 'peso': 4.17}",
                 "{'criterio': 'Distribuir la información. Colocar en la parte superior de las columnas y las categorías se ubiquen en las celdas. En ambos casos, se debe escribir de manera puntual el nombre de cada elemento.', 'peso': 4.17}",
-                "{'criterio': 'Revisar. Verificar la información, redacción y claridad de la tabla. Cuadro comparativo', 'peso': 4.17}"
+                "{'criterio': 'Revisar. Verificar la información, redacción y claridad de la tabla. Cuadro comparativo', 'peso': 4.17}",
+                "{'criterio': 'Delimitar el tema y el tipo de foro. Especificar las características del foro. Se trata de que los participantes tengan los mismos intereses en el tema, hecho o problema a dialogar.', 'peso': 8.33}",
+                "{'criterio': 'Establecer reglas. Elegir a un moderador para que presente el tema y comparta las instrucciones para participar de manera ordenada.', 'peso': 8.33}",
+                "{'criterio': 'Cerrar la actividad. Concluir la sesión. El moderador da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la participación. Foro', 'peso': 8.33}"
               ],
               "consideraciones_para_puntuar": [
                 "… La elaboración de un cuestionario implica: ■■ Llevar a cabo un procedimiento de análisis, diseño y selección del tipo de preguntas a incluir.",
@@ -628,30 +643,42 @@
                 "Cada celda sustantiva está respaldada con \\citep de fuente verificable.",
                 "La tabla va precedida de prosa conceptual y seguida de un análisis del contraste.",
                 "El caption nombra el contenido temático, no la actividad.",
-                "La variante de tabla (tabular+resizebox o longtable) corresponde al tamaño real."
+                "La variante de tabla (tabular+resizebox o longtable) corresponde al tamaño real.",
+                "… El desarrollo de un foro implica: ■■ Mantener una actitud positiva, lo cual permitirá expresar argumentos y respetar otras opiniones para llegar a una conclusión exacta.",
+                "■■ Aclarar dudas durante el intercambio de información.",
+                "■■ Saber que en el entorno virtual hay tres tipos: ■■ Foros públicos: no hay reglas, número de participantes ni formas de participación, es decir, cualquier persona puede integrarse y comentar acerca de la problemática.",
+                "■■ Foros protegidos: es necesario registrarse para ingresar a la discusión.",
+                "■■ Foros privados: se integra por un cierto número de registrados y un administrador decide dar acceso o rechazar la solicitud de ingreso.",
+                "En este tipo de foro, es recomendable investigar con anterioridad el tema para tener una perspectiva amplia y poder expresar puntos de vista críticos y reflexivos.",
+                "El reporte contiene una caja `forobox` con el texto exacto publicado.",
+                "El título de la caja nombra el acto comunicativo, no una etiqueta genérica.",
+                "Cada pregunta guía de la consigna recibe respuesta con fundamento citado.",
+                "Las secciones del desarrollo tienen títulos temáticos, no de andamiaje.",
+                "La conclusión sostiene postura propia y cierra con la declaración de IA.",
+                "No se copian instrucciones de la planeación dentro del entregable."
               ],
               "umbral_aprobacion": 100,
               "nota": "El producto puntúa por fidelidad a la técnica (forma oficial) + calidad editorial (tres actos, citas, postura)."
             },
             "construction_integration": {
-              "deteccion": "Aliases: cuadro comparativo, cuadro, tabla, longtable, tabular.",
-              "producto_nucleo": "El desarrollo NO se fragmenta en varias secciones \\section: marco conceptual, tabla y análisis (semejanzas/diferencias) son subsecciones de una sola sección de desarrollo cuyo título nombra el tema.",
-              "estructura": "Cuerpo en TRES actos: Introducción, un Desarrollo con título temático (NO 'Desarrollo') y Conclusiones. La tabla/cuadro es el NÚCLEO del acto de desarrollo. Orden: (a) marco conceptual-teórico breve que prepara la tabla, (b) la tabla en su página landscape como pieza protagónica, (c) semejanzas y diferencias u otro análisis derivado DESPUÉS de la tabla.",
-              "layout": "El cuadro/tabla va en orientación horizontal (landscape) en su PROPIA página, con la tabla y su caption juntos en una sola página landscape. No anteponer \\clearpage al \\begin{landscape}. Compactar con \\arraystretch<=1.2 y caption en \\footnotesize.",
-              "cierre": "El análisis derivado de la tabla y la postura personal se cierran en la conclusión. La conclusión inicia con \\clearpage y ocupa preferentemente una sola página; la declaración de uso de IA se liga como \\footnote.",
-              "preservacion_oficial": "Materializar «Cuadro comparativo» siguiendo la estructura oficial UnADM: Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria",
-              "pasos_construccion": "Para construir un cuadro comparativo, se sugieren los\n siguientes pasos:\n\n 1. Investigar. Recopilar toda la información necesaria\n sobre los conceptos o temas que se compararán. Lo\n adecuado es consultar fuentes diversas que aporten\n varias perspectivas y datos confiables.\n 2. Seleccionar. Subrayar, separar o catalogar la información relevante y útil. Esto permitirá tener la información\n necesaria para establecer las comparaciones.\n 3. Trazar la tabla. Considerar el número de conceptos o\n temas y la cantidad de categorías que se utilizarán en\n la comparación. En el caso de los conceptos, cada uno\n requiere una columna. En cuanto a las categorías, se\n distribuye una en cada celda.\n 4. Titular el cuadro. Enunciar con claridad los conceptos\n o temas que se comparan.\n 5. Distribuir la información. Colocar en la parte superior\n de las columnas y las categorías se ubiquen en las celdas. En ambos casos, se debe escribir de manera puntual el nombre de cada elemento.\n 6. Revisar. Verificar la información, redacción y claridad\n de la tabla.\n\n\f Cuadro comparativo",
+              "deteccion": "Aliases: foro, foro diagnóstico, foro diagnostico, participación en foro, participacion en foro.",
+              "producto_nucleo": "El desarrollo NO se fragmenta en varias secciones \\section: marco, preguntas guía, participación publicada y su lectura son subsecciones de una sola sección de desarrollo cuyo título nombra el tema del foro.",
+              "estructura": "Cuerpo en TRES actos: (1) Introducción, (2) una única sección de Desarrollo con título temático (NO 'Desarrollo' ni 'Participación en el foro') y (3) Conclusiones. El PRODUCTO —la participación textual publicada— es el NÚCLEO del desarrollo y va como SUBsección. Orden: (a) marco/encuadre que conduce a las preguntas guía, (b) respuestas a las preguntas guía, (c) la participación textual publicada como subsección protagónica y su lectura.",
+              "layout": "Bloque con breaklines para texto largo, sin numerar líneas de continuación. Cada participación en una sola línea lógica del fuente.",
+              "cierre": "La conclusión integra síntesis, análisis propio y postura personal. Inicia SIEMPRE con \\clearpage inmediatamente antes de la \\section, de modo que arranque en una PÁGINA NUEVA y ocupe preferentemente una sola página. La declaración de uso de IA se liga como \\footnote, nunca como \\section.",
+              "preservacion_oficial": "Materializar «Foro» siguiendo la estructura oficial UnADM: Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Prepara",
+              "pasos_construccion": "Para llevar a cabo un foro, se sugieren los siguientes pasos:\n\n 1. Delimitar el tema y el tipo de foro. Especificar las\n características del foro. Se trata de que los participantes\n tengan los mismos intereses en el tema, hecho o problema a dialogar.\n 2. Establecer reglas. Elegir a un moderador para que\n presente el tema y comparta las instrucciones para\n participar de manera ordenada.\n 3. Preparar las argumentaciones. Pensar bien las opiniones, ya que deben favorecer un diálogo crítico y\n reflexivo. Para ello es recomendable que el usuario prepare el tema a investigar y realice breves interrogantes\n que permitan sintetizar las ideas que se piensan\n expresar.\n 4. Recopilar y analizar la información. Reunir datos, a\n partir de la pregunta detonante o el planteamiento del\n problema. Aquí comienza una discusión entre los participantes. El moderador deberá ir recabando los puntos\n de vista más importantes para elaborar un resumen de\n los comentarios que después compartirá.\n 5. Cerrar la actividad. Concluir la sesión. El moderador\n da por terminada la reunión compartiendo las principales conclusiones y agradeciendo la asistencia y la\n participación.\n\n\f Foro",
               "compilacion": "Compilar con latexmk -pdf -bibtex; verificar el producto renderizando a PNG con pdftoppm (no solo returncode)."
             },
             "real_pattern": {
               "fuente_real": {
-                "materia": "Redacción en Contextos Virtuales, Derecho a la Seguridad Social y Ética y Moral Jurídica (UnADM, Licenciatura en Derecho)",
-                "actividad": "Tres entregas compiladas y validadas: Redacción A2 (criterios de redacción académica), Seguridad Social A4 (seguro social vs privado, 11 criterios) y Ética A1 (seis escuelas éticas)",
+                "materia": "Garantías Constitucionales, Interaprendizaje en Ambientes Virtuales y Derecho a la Seguridad Social (UnADM, Licenciatura en Derecho)",
+                "actividad": "Cuatro entregas compiladas y validadas: Garantías A1 y A2, Interaprendizaje A2, Seguridad Social A1",
                 "archivo": "UCNL/licenciatura-en-administracion/microeconomia-lad/reporte-microeconomia-Actividad-1.tex",
                 "archivo_variante_justificacion": "UnADM/licenciatura-en-derecho-unadm/interaprendizaje-en-ambientes-virtuales-lde/reporte-interaprendizaje-en-ambientes-virtuales-Actividad-1.tex",
                 "titulo": "Cuestionario resuelto en tabla (opción múltiple) con marco conceptual previo, opciones comentadas y conclusión que integra postura",
                 "estado": "PATRÓN DE REFERENCIA VALIDADO al 100/100 (20/20 checks): Microeconomía A1 usa longtable 4 col (No./Pregunta/Respuesta/Justificación) con marco conceptual sólido citado, opciones múltiples COMENTADAS (solo la pregunta visible), título y sección temáticos (no 'Actividad #'/'Desarrollo'), análisis+postura integrados en la conclusión (no secciones separadas), declaración de IA como \\footnote, conclusión y referencias en páginas propias (\\clearpage). Interaprendizaje es la variante 4 col con justificación APA.",
-                "nota": "Las tres coinciden en landscape + cabecera de color + criterios en la primera columna. Difieren en el entorno de tabla, y la diferencia no es estilística sino funcional: ver `dos_variantes_rule`."
+                "nota": "Patrón consolidado por convergencia: los cuatro TEX comparten paquetes, paleta, entorno y estructura del bloque de producto."
               },
               "packages": [
                 "\\usepackage{array}",
@@ -660,9 +687,12 @@
                 "\\usepackage{pdflscape}",
                 "\\usepackage{colortbl}",
                 "\\usepackage{graphicx}",
-                "\\usepackage{helvet}"
+                "\\usepackage{helvet}",
+                "\\usepackage[most]{tcolorbox}",
+                "\\usepackage{enumitem}",
+                "\\usepackage{attachfile}"
               ],
-              "skeleton": "% ARQUITECTURA CUADRO COMPARATIVO (reporte contenedor; el producto es la tabla):\n\\section{Introducci\\'on}\n% Plantea QUE se compara y POR QUE esa comparacion importa. Sin metadiscurso.\n\n\\section{<titulo tematico del eje de contraste>}\n% Prosa que delimita los conceptos con \\textbf{} ANTES de la tabla:\n% la tabla contrasta, no define por primera vez.\n\n\\begin{landscape}\n\\begingroup\n\\setlength{\\parskip}{0pt}\n\\centering\n{\\scriptsize\n\\setlength{\\tabcolsep}{8pt}\n\\renewcommand{\\arraystretch}{1.86}\n\\resizebox{\\linewidth}{!}{%\n\\begin{tabular}{L{0.17\\linewidth} L{0.39\\linewidth} L{0.39\\linewidth}}\n\\rowcolor{unadmGreenDark}\n\\textbf{\\color{white}Criterio} & \\textbf{\\color{white}<Opcion A>} & \\textbf{\\color{white}<Opcion B>} \\\\\n\\midrule\n\\textbf{<Criterio 1>} & <rasgo A con \\citep{}> & <rasgo B con \\citep{}> \\\\\n\\rowcolor{unadmRowAlt}\n\\textbf{<Criterio 2>} & <rasgo A> & <rasgo B> \\\\\n\\end{tabular}}\n}\n\\endgroup\n\\end{landscape}\n\n\\section{<titulo tematico del analisis>}\n% LECTURA de la tabla: que revela el contraste. No repetir celdas en prosa.\n\n\\section{Conclusi\\'on}\n% Postura propia sobre el contraste + nota al pie de declaracion de IA.\n",
+              "skeleton": "% ARQUITECTURA FORO (reporte contenedor + producto publicado en caja):\n\\section{Introducci\\'on}\n% Plantea el problema y anuncia la postura. SIN metadiscurso: no se dice\n% 'en esta actividad se pide'. La consigna no se copia al entregable.\n\n\\section{<titulo tematico del eje conceptual>}\n% Desarrollo argumentativo en prosa, con subsecciones TEMATICAS.\n% Aqui vive la base conceptual: terminos delimitados con \\textbf{}.\n\n% EL PRODUCTO: lo que efectivamente se publico en la plataforma.\n\\begin{forobox}[title={Participaci\\'on publicada en el foro}]\n\\hfill\\foroCopyButton{foro-participacion-Actividad-N.txt}\\\\[-0.5em]\n\\phantomsection\\label{foro-participacion}\n\n\\textbf{Asunto:} <asunto breve y tematico>\\par\n\\medskip\n<saludo y encuadre en una sola frase>\n\\medskip\n\n\\begin{enumerate}[leftmargin=1.6em,labelsep=0.6em,itemsep=0.5em,label=\\textbf{\\arabic*)}]\n  \\item \\textbf{<pregunta guia>} <respuesta con fundamento y cita>\n\\end{enumerate}\n\\end{forobox}\n\n\\section{Conclusi\\'on}\n% Cierra con postura propia y consecuencia practica. Incluye la nota al\n% pie de declaracion de uso de IA (requisito UnADM).\n",
               "marco_conceptual_rule": "OBLIGATORIO: antes del cuestionario debe existir un MARCO CONCEPTUAL SÓLIDO (sección o subsección) que desarrolle, con fuentes citadas \\citep, los conceptos clave que sustentan las respuestas del cuestionario. El cuestionario NO puede aparecer 'a secas': cada respuesta debe poder justificarse desde ese marco. El marco define los términos técnicos (destacados con \\textbf/\\textit) que luego se aplican en los reactivos, de modo que resolver el cuestionario sea aplicar el marco, no adivinar.",
               "columna_justificacion_rule": "La tabla del cuestionario DEBE incluir una columna de JUSTIFICACIÓN (4 columnas: No./Pregunta+opciones/Respuesta correcta/Justificación). Cada justificación explica por qué la opción es correcta desde el concepto evaluado, idealmente con \\citep a la fuente del marco conceptual; no repite la respuesta, la fundamenta.",
               "sin_planeacion_rule": "CUANDO NO HAY PLANEACIÓN/CONSIGNA OFICIAL disponible en el repositorio (materias sin extractor/planeación): NO forzar trazabilidad ni criterios oficiales inexistentes. En su lugar, el objetivo de calidad es construir (1) una INTRODUCCIÓN SINTÉTICA que plantee el tema y su relevancia en pocas líneas, (2) un MARCO CONCEPTUAL SÓLIDO con los conceptos clave citados que sustentan el cuestionario, y (3) una CONCLUSIÓN SÓLIDA sobre el tema (síntesis + postura + implicación), además del cuestionario en tabla con justificación. El techo razonable de contract score sin planeación es ~80; los checks instruction_source/traceability/concepts_min dependen del extractor y no deben bloquear la entrega.",
@@ -685,7 +715,13 @@
                 "Cada celda sustantiva está respaldada con \\citep de fuente verificable.",
                 "La tabla va precedida de prosa conceptual y seguida de un análisis del contraste.",
                 "El caption nombra el contenido temático, no la actividad.",
-                "La variante de tabla (tabular+resizebox o longtable) corresponde al tamaño real."
+                "La variante de tabla (tabular+resizebox o longtable) corresponde al tamaño real.",
+                "El reporte contiene una caja `forobox` con el texto exacto publicado.",
+                "El título de la caja nombra el acto comunicativo, no una etiqueta genérica.",
+                "Cada pregunta guía de la consigna recibe respuesta con fundamento citado.",
+                "Las secciones del desarrollo tienen títulos temáticos, no de andamiaje.",
+                "La conclusión sostiene postura propia y cierra con la declaración de IA.",
+                "No se copian instrucciones de la planeación dentro del entregable."
               ],
               "macro_columnas": "% Columnas de ancho fijo con texto justificado arriba.\n\\newcolumntype{L}[1]{>{\\raggedright\\arraybackslash}p{#1}}",
               "dos_variantes_rule": "Hay DOS variantes legítimas y la elección depende del tamaño, no del gusto. (a) `tabular` dentro de \\resizebox: para tablas que caben en UNA página apaisada; conserva proporciones y no parte filas. (b) `longtable` con \\endfirsthead/\\endhead: obligatoria cuando la tabla se desborda, porque repite la cabecera en cada página. Usar `longtable` dentro de \\resizebox NO funciona: resizebox necesita medir la caja completa.",
@@ -693,7 +729,20 @@
               "cita_por_celda_rule": "Cada celda con afirmación sustantiva lleva su \\citep. Una tabla comparativa sin fuentes es una opinión tabulada. Las citas van DENTRO de la celda, no agrupadas al pie.",
               "prosa_antes_y_despues_rule": "La tabla no se basta a sí misma: va precedida por prosa que delimita los conceptos y seguida por un análisis que LEE el contraste. Sin ese marco, la métrica castiga la base conceptual y el trabajo parece un formulario.",
               "landscape_rule": "El cuadro va en \\begin{landscape} con \\null\\vspace*{-1.35cm} para recuperar el margen superior. Tras \\end{landscape} conviene \\clearpage y restaurar \\pagestyle{fancy} si se alteró.",
-              "sin_metadiscurso_rule": "El entregable no menciona el proceso editorial ni copia las instrucciones de la planeación. El caption nombra el contenido, no la tarea: «Comparación de criterios de redacción académica», no «Cuadro comparativo Actividad 2»."
+              "sin_metadiscurso_rule": "El entregable NO menciona el sistema que lo produjo ni el proceso editorial: nada de «brechas detectadas», «refuerzo del ciclo A» o «esta actividad solicita». Ese andamiaje es telemetría interna.",
+              "colores": [
+                "\\definecolor{unadmGreen}{HTML}{6A8A3A}",
+                "\\definecolor{unadmGreenDark}{HTML}{4F6A2A}",
+                "\\definecolor{unadmPaper}{HTML}{F7F8F3}",
+                "\\definecolor{unadmInk}{HTML}{22262B}",
+                "\\definecolor{unadmGold}{HTML}{C8A24B}"
+              ],
+              "macro_forobox": "\\newtcolorbox{forobox}[1][]{%\n  enhanced,\n  breakable,\n  colback=unadmPaper,\n  colframe=unadmGreen,\n  boxrule=0pt,\n  leftrule=3pt,\n  arc=1.2mm,\n  left=4mm, right=4mm, top=3mm, bottom=3mm,\n  fonttitle=\\bfseries\\color{white},\n  coltitle=white,\n  colbacktitle=unadmGreenDark,\n  attach boxed title to top left={xshift=4mm,yshift=-2mm},\n  boxed title style={colframe=unadmGreenDark,arc=0.6mm},\n  #1\n}",
+              "producto_en_caja_rule": "REGLA CENTRAL DEL FORO: el entregable tiene DOS capas. El reporte es el contenedor (introducción, desarrollo, conclusión) y la caja `forobox` reproduce EXACTAMENTE el texto publicado en la plataforma. La caja documenta algo verificable en el aula virtual; no lo sustituye. Por eso el texto de la caja debe poder copiarse y pegarse tal cual.",
+              "titulo_caja_rule": "El título de la caja nombra el acto comunicativo real: «Participación publicada en el foro», «Retroalimentación publicada a otra participación» o «Intervención en el foro sobre <tema>». Nunca «Desarrollo» ni «Participación publicada» como título-etiqueta de sección, porque la métrica penaliza los títulos que no nombran el tema.",
+              "preguntas_guia_rule": "Cuando la consigna trae preguntas guía, cada una se responde en un \\item con la pregunta en \\textbf{} seguida de la respuesta. La pregunta se reproduce para que la intervención sea legible por sí sola, pero NO se copian las instrucciones de la planeación.",
+              "retroalimentacion_rule": "Si la consigna pide comentar a un compañero, se agrega una SEGUNDA caja titulada «Retroalimentación publicada a otra participación». La retroalimentación aporta un argumento o una fuente; no es elogio genérico.",
+              "boton_copiar_rule": "La macro \\foroCopyButton adjunta el texto plano de la intervención con attachfile, para poder pegarlo en la plataforma sin arrastrar formato de LaTeX. El archivo adjunto debe existir junto al TEX."
             }
           },
           "structure_contract": {
@@ -721,7 +770,7 @@
             "career": "maestria-en-gestion-administrativa",
             "subject": "fundamentos-de-gestion-administrativa-mga",
             "activity": "Actividad 5",
-            "seed_scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-5"
+            "seed_scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-4"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -800,7 +849,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260830-125855",
+          "run_id": "20260831-153125",
           "scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-5",
           "related_scope_keys": [
             "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-5",
@@ -813,7 +862,7 @@
             "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-3",
             "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-10"
           ],
-          "novelty_count": 0
+          "novelty_count": 2
         },
         "scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-5",
         "level": "actividad",
@@ -900,7 +949,9 @@
     "reinforcement_log": [
       "ADN sintetizado con 22 conceptos, 5 citas y 18 relaciones.",
       "Memoria de redacción preservada en 72 bloques.",
-      "ADN sintetizado con 22 conceptos, 9 citas y 18 relaciones."
+      "ADN sintetizado con 22 conceptos, 9 citas y 18 relaciones.",
+      "ADN sintetizado con 25 conceptos, 9 citas y 18 relaciones.",
+      "ADN sintetizado con 26 conceptos, 9 citas y 18 relaciones."
     ],
     "knowledge_graph": {
       "concepts": [
@@ -925,7 +976,11 @@
         "Soluciones",
         "Participantes",
         "Oportunidades de decisión",
-        "Coincidencia contingente"
+        "Coincidencia contingente",
+        "Foro :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "Fundamentos de administración. Eje 1: Conceptualicemos :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "Aportes teóricos a la gestión organizacional: la evolución en la visión de la organización :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "Reframing Organizations: Artistry, Choice, and Leadership :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib"
       ],
       "citations": [
         "clave",
@@ -975,7 +1030,12 @@
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/reporte-fundamentos-de-gestion-administrativa-mga.tex",
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/presentacion-fundamentos-de-gestion-administrativa-mga.tex",
-        "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/presentacion-fundamentos-de-gestion-administrativa-Actividad-5.tex"
+        "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/presentacion-fundamentos-de-gestion-administrativa-Actividad-5.tex",
+        "lopezForo2022 :: Foro :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "larrarteSinFecha :: Fundamentos de administración. Eje 1: Conceptualicemos :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "sanchezBanuelos2017 :: Aportes teóricos a la gestión organizacional: la evolución en la visión de la organización :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "bolmanDeal2021 :: Reframing Organizations: Artistry, Choice, and Leadership :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "morgan2006 :: Images of Organization :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib"
       ],
       "relations": [
         {
@@ -16385,6 +16445,67 @@
         "author": "Instituto Tecnológico Superior de Cajeme",
         "note": "Referencia objetivo. Localizar y verificar versión, fecha, código, contenidos y URL institucional.",
         "raw_entry": "@misc{programaOficialGestionAdministrativaITESCA,\n  author = {{Instituto Tecnológico Superior de Cajeme}},\n  title = {Programa oficial de Fundamentos de Gestión Administrativa},\n  note = {Referencia objetivo. Localizar y verificar versión, fecha, código, contenidos y URL institucional.}\n}"
+      },
+      "lopezForo2022": {
+        "key": "lopezForo2022",
+        "source_type": "bibtex",
+        "source_path": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "entry_type": "incollection",
+        "title": "Foro",
+        "author": "López, Aarón",
+        "year": "2022",
+        "publisher": "Universidad Abierta y a Distancia de México",
+        "url": "https://100tecnicasdidacticas.unadmexico.mx/index.html",
+        "note": "Técnica 42, sección Aplicar",
+        "raw_entry": "@incollection{lopezForo2022,\n  author = {López, Aarón},\n  title = {Foro},\n  booktitle = {100 Técnicas Didácticas de Enseñanza y Aprendizaje},\n  year = {2022},\n  publisher = {Universidad Abierta y a Distancia de México},\n  address = {Ciudad de México},\n  url = {https://100tecnicasdidacticas.unadmexico.mx/index.html},\n  urldate = {2026-08-30},\n  note = {Técnica 42, sección Aplicar}\n}"
+      },
+      "larrarteSinFecha": {
+        "key": "larrarteSinFecha",
+        "source_type": "bibtex",
+        "source_path": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "entry_type": "book",
+        "title": "Fundamentos de administración. Eje 1: Conceptualicemos",
+        "author": "Larrarte, Patricia",
+        "year": "s. f.",
+        "publisher": "Fundación Universitaria del Área Andina",
+        "note": "Material didáctico consultado en archivo PDF local",
+        "raw_entry": "@book{larrarteSinFecha,\n  author = {Larrarte, Patricia},\n  title = {Fundamentos de administración. Eje 1: Conceptualicemos},\n  publisher = {Fundación Universitaria del Área Andina},\n  year = {s. f.},\n  note = {Material didáctico consultado en archivo PDF local}\n}"
+      },
+      "sanchezBanuelos2017": {
+        "key": "sanchezBanuelos2017",
+        "source_type": "bibtex",
+        "source_path": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "entry_type": "article",
+        "title": "Aportes teóricos a la gestión organizacional: la evolución en la visión de la organización",
+        "author": "Sánchez Bañuelos, María Nélida",
+        "year": "2017",
+        "journal": "Ciencias Administrativas",
+        "url": "https://www.redalyc.org/articulo.oa?id=511653854007",
+        "raw_entry": "@article{sanchezBanuelos2017,\n  author = {Sánchez Bañuelos, María Nélida},\n  title = {Aportes teóricos a la gestión organizacional: la evolución en la visión de la organización},\n  journal = {Ciencias Administrativas},\n  year = {2017},\n  number = {10},\n  pages = {64--74},\n  issn = {2314-3738},\n  url = {https://www.redalyc.org/articulo.oa?id=511653854007},\n  urldate = {2026-08-28}\n}"
+      },
+      "bolmanDeal2021": {
+        "key": "bolmanDeal2021",
+        "source_type": "bibtex",
+        "source_path": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "entry_type": "book",
+        "title": "Reframing Organizations: Artistry, Choice, and Leadership",
+        "author": "Bolman, Lee G. and Deal, Terrence E.",
+        "year": "2021",
+        "publisher": "Jossey-Bass",
+        "url": "https://www.wiley.com/en-us/Reframing+Organizations%3A+Artistry%2C+Choice%2C+and+Leadership%2C+7th+Edition-p-9781119756835",
+        "raw_entry": "@book{bolmanDeal2021,\n  author = {Bolman, Lee G. and Deal, Terrence E.},\n  title = {Reframing Organizations: Artistry, Choice, and Leadership},\n  edition = {7},\n  year = {2021},\n  publisher = {Jossey-Bass},\n  address = {Hoboken, New Jersey},\n  isbn = {9781119756835},\n  url = {https://www.wiley.com/en-us/Reframing+Organizations%3A+Artistry%2C+Choice%2C+and+Leadership%2C+7th+Edition-p-9781119756835},\n  urldate = {2026-08-28}\n}"
+      },
+      "morgan2006": {
+        "key": "morgan2006",
+        "source_type": "bibtex",
+        "source_path": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "entry_type": "book",
+        "title": "Images of Organization",
+        "author": "Morgan, Gareth",
+        "year": "2006",
+        "publisher": "SAGE Publications",
+        "url": "https://us.sagepub.com/en-us/nam/images-of-organization/book252708",
+        "raw_entry": "@book{morgan2006,\n  author = {Morgan, Gareth},\n  title = {Images of Organization},\n  edition = {Updated},\n  year = {2006},\n  publisher = {SAGE Publications},\n  address = {Thousand Oaks, California},\n  isbn = {9781412939799},\n  url = {https://us.sagepub.com/en-us/nam/images-of-organization/book252708},\n  urldate = {2026-08-28}\n}"
       }
     }
   },

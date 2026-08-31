@@ -133,7 +133,7 @@
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 5 - maestria-en-gestion-administrativa",
+        "subject_rule": "Actividad 4 - maestria-en-gestion-administrativa",
         "scope_label": "maestria-en-gestion-administrativa"
       },
       "didactic_contract": {
@@ -359,8 +359,8 @@
         "institution": "ITESCA",
         "career": "maestria-en-gestion-administrativa",
         "subject": "",
-        "activity": "Actividad 5",
-        "seed_scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-5"
+        "activity": "Actividad 4",
+        "seed_scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-4"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -456,7 +456,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260830-125720",
+      "run_id": "20260831-153107",
       "scope_key": "ITESCA/maestria-en-gestion-administrativa",
       "related_scope_keys": [
         "ITESCA/maestria-en-gestion-administrativa",

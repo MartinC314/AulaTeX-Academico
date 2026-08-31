@@ -1,0 +1,232 @@
+Organización, entorno
+y estructura
+Modelo de Kast y Rosenzweig
+                                     Fundamentos de Gestión
+Martin Jonathan de la Cruz                    Administrativa
+Maestría en Gestión Administrativa   Actividad 3 · Agosto de 2026
+       Propósito: leer la organización como sistema
+
+
+
+    Pregunta guía
+    ¿Cómo explicar una organización sin reducirla al organigrama ni aislarla de las
+    condiciones que la rodean?
+
+       ▶ Identificar los cinco subsistemas                                          Idea central
+         interdependientes.                                                         La estructura ordena el trabajo; el entorno
+       ▶ Distinguir el entorno general del                                          exige adaptación; el modelo sistémico
+         entorno de tarea.                                                          conecta ambas dimensiones.
+       ▶ Comparar estructuras y elegir la que
+         responda mejor a la contingencia.
+    Fuente: Kast and Rosenzweig (1985, 1972); Bright et al. (2019).
+
+
+
+
+Martin Jonathan de la Cruz                                            Fundamentos de Gestión Administrativa                       2/12
+       Kast y Rosenzweig: organización como sistema abierto
+
+
+
+
+                                Entradas                                           Salidas
+                                                      Sistema
+                             recursos, perso-                                   bienes, servi-
+                                                    organización
+                             nas, información                                  cios, resultados
+                                                                  retroalimentación
+
+
+
+
+    Implicación directiva
+    Una decisión sobre tecnología, personas o estructura altera al sistema completo y su
+    capacidad de responder al ambiente.
+
+    Fuente: Kast and Rosenzweig (1972, 1985).
+
+
+
+
+Martin Jonathan de la Cruz                      Fundamentos de Gestión Administrativa             3/12
+       Los cinco subsistemas del modelo
+
+
+
+    1. Metas y valores                                                              4. Estructural
+    Define propósito, criterios de éxito y                                          Distribuye tareas, autoridad, coordinación y
+    legitimidad.                                                                    reglas.
+
+
+    2. Técnico                                                                      5. Gerencial
+    Integra conocimiento, procesos, equipos y                                       Planea, integra, controla y vincula el sistema
+    métodos para transformar insumos.                                               con el entorno.
+
+
+    3. Psicosocial                                                                  Clave de lectura
+                                                                                    Ningún subsistema es suficiente por sí solo: el
+    Reúne personas, motivación, liderazgo,                                          desempeño depende de su congruencia.
+    relaciones y cultura.
+    Fuente: Kast and Rosenzweig (1985); material de unidad: Kast y Rosenzweig UI.
+
+
+
+Martin Jonathan de la Cruz                                       Fundamentos de Gestión Administrativa                                4/12
+       El entorno organizacional
+
+
+    Entorno general (macro)                                      Entorno de tarea (micro)
+    Fuerzas que afectan indirectamente a muchas                  Actores con influencia directa sobre
+    organizaciones:                                              resultados:
+       ▶ económicas;                                               ▶ clientes o usuarios;
+       ▶ tecnológicas;                                             ▶ proveedores;
+       ▶ político-legales;                                         ▶ competidores;
+       ▶ socioculturales;                                          ▶ reguladores;
+       ▶ demográficas y naturales.                                 ▶ aliados y comunidad.
+
+    Gestión estratégica
+    Vigilar, interpretar y responder a estas señales reduce incertidumbre y orienta decisiones.
+    Fuente: Weiss (2019); Bright et al. (2019).
+Martin Jonathan de la Cruz                        Fundamentos de Gestión Administrativa                 5/12
+       De la incertidumbre a la respuesta
+
+
+
+
+                  Señal del entorno                       Interpretación directiva             Ajuste organizacional
+
+
+    Ejemplo
+    Una innovación tecnológica puede exigir capacitar personal (psicosocial), rediseñar
+    procesos (técnico), redefinir responsabilidades (estructural) y revisar prioridades (metas).
+
+    Fuente: Elaboración propia con base en Kast and Rosenzweig (1985); Weiss (2019).
+
+
+
+
+Martin Jonathan de la Cruz                                       Fundamentos de Gestión Administrativa                 6/12
+       Diseño estructural: decisiones básicas
+
+
+
+      ▶ Especialización: división del trabajo.                       ▶ Centralización: dónde se toman las
+      ▶ Departamentalización: agrupación                               decisiones.
+        por función, producto, territorio o                          ▶ Formalización: reglas y
+        cliente.                                                       procedimientos.
+      ▶ Jerarquía: cadena de mando y tramo                           ▶ Coordinación: mecanismos para
+        de control.                                                    integrar unidades.
+    Criterio contingente
+    No existe una estructura universalmente superior: debe ajustarse a estrategia, tamaño,
+    tecnología y dinamismo ambiental.
+    Fuente: Muldoon (2019); Bright et al. (2019).
+
+
+
+
+Martin Jonathan de la Cruz                          Fundamentos de Gestión Administrativa                   7/12
+       Tipos de estructura: funcional y divisional
+
+
+
+
+    Funcional                                            Divisional
+    Agrupa por especialidad: finanzas,                   Agrupa por producto, mercado, cliente o
+    operaciones, mercadotecnia, recursos                 región.
+    humanos.
+                                                           ▶ Ventaja: cercanía a resultados y
+      ▶ Ventaja: eficiencia técnica y economías              capacidad de respuesta.
+        de especialización.
+                                                           ▶ Riesgo: duplicación de recursos entre
+      ▶ Riesgo: silos y coordinación lenta entre             divisiones.
+        áreas.
+    Fuente: Muldoon (2019).
+
+
+
+
+Martin Jonathan de la Cruz                 Fundamentos de Gestión Administrativa                     8/12
+       Tipos de estructura: matricial, equipos y red
+
+
+
+   Matricial                                        Por equipos                           Red o virtual
+   Combina doble lógica                             Organiza trabajo                      Coordina capacidades
+   —función y                                       interdisciplinario alrededor de       internas y externas mediante
+   proyecto/producto—.                              procesos o problemas.                 alianzas y tecnología. Gana
+   Favorece integración, pero                       Acelera colaboración y                flexibilidad; exige confianza y
+   puede generar ambigüedad                         aprendizaje.                          control.
+   de autoridad.
+
+    Elección
+    A mayor complejidad e interdependencia, mayor necesidad de coordinación lateral y mecanismos
+    orgánicos.
+    Fuente: Muldoon (2019); Bright et al. (2019).
+
+
+
+
+Martin Jonathan de la Cruz                               Fundamentos de Gestión Administrativa                              9/12
+      Comparación ejecutiva: estructura según la contingencia
+
+
+              Estructura               Conviene cuando                    Fortaleza                          Atención directiva
+              Funcional                operaciones estables y             eficiencia experta                 coordinar entre áreas
+                                       especializadas
+              Divisional               múltiples productos, re-           foco en resultados                 evitar duplicidad
+                                       giones o mercados
+              Matricial                proyectos complejos e              integración                        aclarar autoridad
+                                       interdependientes
+              Equipos/red              ambiente cambiante e               agilidad y aprendizaje             sostener confianza y
+                                       innovación                                                            comunicación
+
+
+
+    Síntesis
+    El diseño efectivo alinea metas, tecnología, personas, estructura y exigencias ambientales; esa es la utilidad práctica de
+    pensar sistémicamente.
+
+                                   Fuente: Síntesis propia a partir de Kast and Rosenzweig (1985); Muldoon (2019).
+
+
+
+
+Martin Jonathan de la Cruz                                Fundamentos de Gestión Administrativa                                      10/12
+      Conclusiones
+
+
+      1. Kast y Rosenzweig permiten describir la organización como un sistema abierto de
+         subsistemas interdependientes.
+      2. El entorno no es un fondo estático: sus fuerzas y actores condicionan información,
+         recursos, riesgos y oportunidades.
+      3. La estructura es una decisión de diseño; debe ser congruente con la contingencia y
+         facilitar coordinación, no solo control.
+      4. Una gestión responsable revisa continuamente la relación entre estrategia, entorno y
+         capacidad organizacional.
+
+    Declaración
+    Se utilizó IA generativa como apoyo de redacción y organización; las fuentes y la revisión
+    final fueron verificadas por el autor.
+
+Martin Jonathan de la Cruz             Fundamentos de Gestión Administrativa                  11/12
+      Referencias
+
+
+
+
+    Bright, D. S., Cortes, A. H., Gardner, D. G., Hartmann, E., Lambert, J., Leduc, L. M., Leopold, J., Muldoon, J.,
+       O’Rourke, J. S., Parboteeah, K. P., Pierce, J. L., Reece, M., Shah, A., Terjesen, S., Weiss, J., and White,
+       M. A. (2019). Principles of Management. OpenStax, Rice University, Houston, Texas. Capítulos 4 y 10;
+       licencia CC BY-NC-SA 4.0.
+    Kast, F. E. and Rosenzweig, J. E. (1972). General system theory: Applications for organization and
+      management. Academy of Management Journal, 15(4):447–465.
+    Kast, F. E. and Rosenzweig, J. E. (1985). Organization and Management: A Systems and Contingency
+      Approach. McGraw-Hill, New York, 4 edition.
+    Muldoon, J. (2019). Organizational structures and design.
+    Weiss, J. W. (2019). The organization’s external environment.
+
+
+
+
+Martin Jonathan de la Cruz                      Fundamentos de Gestión Administrativa                              12/12
+

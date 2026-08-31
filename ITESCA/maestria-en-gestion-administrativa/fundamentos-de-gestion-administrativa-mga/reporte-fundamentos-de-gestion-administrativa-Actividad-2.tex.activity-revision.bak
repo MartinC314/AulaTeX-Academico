@@ -1,0 +1,172 @@
+\documentclass[12pt,oneside]{article}
+
+% La plantilla institucional definitiva deberá heredar el preámbulo
+% de reporte-fundamentos-de-gestion-administrativa-mga.tex.
+% Este bloque representa únicamente la estructura editorial.
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\geometry{margin=2.5cm}
+
+\title{La organización y sus elementos fundamentales}
+\author{Nombre de la o del estudiante}
+\date{\today}
+
+\begin{document}
+
+% La portada institucional deberá sustituirse por la portada de ITESCA.
+\maketitle
+
+\section*{Datos de la actividad}
+
+\begin{tabular}{>{\bfseries}p{0.32\textwidth}p{0.58\textwidth}}
+Institución & Instituto Tecnológico Superior de Cajeme (ITESCA)\\
+Programa & Maestría en Gestión Administrativa\\
+Asignatura & Fundamentos de Gestión Administrativa\\
+Clave & ACF-0901\\
+Actividad & 2\\
+Evidencia & Infografía\\
+Ponderación & 5\,\%\\
+Unidad & I\\
+\end{tabular}
+
+\section{Introducción}
+
+La organización constituye una unidad de análisis central para la gestión
+administrativa. Comprender sus elementos permite reconocer cómo se coordinan
+las personas, los recursos, las actividades y los propósitos institucionales.
+La presente evidencia organiza visualmente los conceptos fundamentales que
+deben considerarse para analizar una organización.
+
+\textbf{Marcador de verificación:} la introducción deberá ajustarse a la
+consigna oficial de la Actividad 2 cuando se confirme su redacción definitiva.
+
+\section{Propósito}
+
+Elaborar una infografía que relacione los principales elementos de una
+organización y muestre su utilidad para el análisis y la gestión administrativa.
+
+\section{Infografía}
+
+\begin{center}
+\begin{tikzpicture}[
+    every node/.style={
+        align=center,
+        rounded corners,
+        draw=gray!70,
+        fill=blue!5,
+        text width=3.3cm,
+        minimum height=1.05cm,
+        font=\small
+    },
+    central/.style={
+        fill=blue!25,
+        draw=blue!70,
+        text width=4.2cm,
+        minimum height=1.3cm,
+        font=\bfseries
+    },
+    relation/.style={->,>=stealth,thick,gray!80}
+]
+
+\node[central] (org) at (0,0)
+    {ORGANIZACIÓN\\Sistema social orientado a propósitos};
+
+\node (prop) at (-5,2.8)
+    {Propósito\\y objetivos};
+
+\node (personas) at (0,3.2)
+    {Personas\\y grupos};
+
+\node (estructura) at (5,2.8)
+    {Estructura\\y roles};
+
+\node (recursos) at (-5,-2.8)
+    {Recursos\\y capacidades};
+
+\node (procesos) at (0,-3.2)
+    {Procesos\\de trabajo};
+
+\node (entorno) at (5,-2.8)
+    {Entorno\\y cambio};
+
+\draw[relation] (org) -- (prop);
+\draw[relation] (org) -- (personas);
+\draw[relation] (org) -- (estructura);
+\draw[relation] (org) -- (recursos);
+\draw[relation] (org) -- (procesos);
+\draw[relation] (org) -- (entorno);
+
+\node[draw=none,fill=none,text width=10cm] at (0,-5.2)
+    {\textbf{Gestión administrativa:} planeación, organización, dirección y
+    control de recursos y actividades para alcanzar objetivos.};
+
+\end{tikzpicture}
+\end{center}
+
+\subsection{Lectura de la infografía}
+
+\begin{description}[leftmargin=3.2cm,style=nextline]
+    \item[Propósito y objetivos]
+    Orientan la acción organizacional y permiten valorar los resultados
+    esperados.
+
+    \item[Personas y grupos]
+    Aportan conocimientos, capacidades, necesidades, intereses y formas de
+    colaboración.
+
+    \item[Estructura y roles]
+    Distribuyen responsabilidades, autoridad, funciones y mecanismos de
+    coordinación.
+
+    \item[Recursos y capacidades]
+    Incluyen los medios materiales, financieros, tecnológicos, informativos y
+    humanos necesarios para operar.
+
+    \item[Procesos de trabajo]
+    Articulan actividades, decisiones y flujos de información para producir
+    bienes, servicios o resultados.
+
+    \item[Entorno y cambio]
+    Comprenden las condiciones externas que influyen en la organización y
+    demandan adaptación administrativa.
+\end{description}
+
+\section{Aplicación al análisis organizacional}
+
+Para estudiar una organización no es suficiente describir su estructura
+formal. También es necesario observar la interacción entre sus integrantes,
+los recursos disponibles, los procesos de trabajo y las condiciones del
+entorno. Esta perspectiva permite formular diagnósticos más completos y
+evita reducir los problemas administrativos a una sola causa.
+
+\section{Conclusiones}
+
+La organización puede analizarse como un sistema compuesto por elementos
+interdependientes. Sus objetivos, personas, estructura, recursos, procesos y
+entorno se influyen mutuamente. Desde la gestión administrativa, esta
+comprensión favorece decisiones más consistentes porque relaciona la
+planeación y la coordinación con las condiciones reales en que se desarrolla
+el trabajo.
+
+\textbf{Marcador de investigación:} incorporar aquí las citas de las fuentes
+disciplinares verificadas que respalden la definición de organización, sus
+elementos y las funciones administrativas.
+
+\section*{Referencias}
+
+% No agregar entradas bibliográficas hasta verificar los metadatos de las
+% fuentes locales. La bibliografía definitiva deberá construirse con fuentes
+% académicas comprobables.
+
+\end{document}

@@ -1,105 +1,121 @@
-% AulaTeX - plantilla materializada desde memoria editorial
-\documentclass[12pt,letterpaper,oneside]{article}
-\usepackage[margin=2.35cm]{geometry}
+\documentclass[12pt,oneside]{article}
+
+% La plantilla institucional definitiva deberá heredar el preámbulo
+% de reporte-fundamentos-de-gestion-administrativa-mga.tex.
+% Este bloque representa únicamente la estructura editorial.
+
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[spanish,es-tabla]{babel}
-\usepackage[scaled=.96]{helvet}
-\renewcommand{\familydefault}{\sfdefault}
-\usepackage{setspace}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{geometry}
 \usepackage{graphicx}
-\usepackage[table]{xcolor}
-\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
 \usepackage{array}
-\usepackage{longtable}
 \usepackage{hyperref}
 \usepackage[authoryear,round]{natbib}
 
-\definecolor{unadmGreenDark}{HTML}{174A3A}
-\definecolor{unadmGreen}{HTML}{5F8F3A}
-\definecolor{unadmGold}{HTML}{B88A2A}
-\definecolor{unadmPaper}{HTML}{F6F7F2}
-\definecolor{unadmInk}{HTML}{1F2A24}
-\hypersetup{colorlinks=true,linkcolor=unadmGreenDark,citecolor=unadmGreenDark,urlcolor=unadmGreenDark}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.72em}
-\onehalfspacing
+\geometry{margin=2.2cm}
 \bibliographystyle{plainnat}
+\definecolor{itescaRed}{HTML}{D70F18}
+\definecolor{itescaDark}{HTML}{8F1117}
 
-\newcommand{\pendiente}[1]{\textcolor{red}{[PENDIENTE: #1]}}
+\title{\textcolor{itescaDark}{Enfoques múltiples para comprender las organizaciones}\\[0.4em]\large Marcos, metáforas y perspectiva global}
+\author{Martin Jonathan de la Cruz\\Instituto Tecnológico Superior de Cajeme}
+\date{\today}
 
 \begin{document}
 
-\begin{titlepage}
-  \pagecolor{unadmPaper}
-  \color{unadmInk}
-  \begin{center}
-    \vspace*{0.8cm}
-    \includegraphics[height=2.05cm]{img/departamentos/UnADM.pdf}\\[0.7cm]
-    {\Large Universidad Abierta y a Distancia de Mexico}\\[0.2cm]
-    {\large Programa académico: por verificar}\\[1.2cm]
-    {\color{unadmGreenDark}\rule{0.82\linewidth}{1.4pt}}\\[0.55cm]
-    {\Huge\bfseries Actividad 2 - Fundamentos de Gestion Administrativa\par}
-    \vspace{0.35cm}
-    {\Large Actividad 2 - Fundamentos de Gestion Administrativa\par}
-    \vspace{0.45cm}
-    {\color{unadmGold}\rule{0.62\linewidth}{1.1pt}}\\[1.1cm]
-    \begin{tabular}{rl}
-      \textbf{Alumno:} & Martin Jonathan de la Cruz \\
-      \textbf{Matrícula:} & ES2611202040 \\
-      \textbf{Figura docente:} & Nombre por definir \\
-      \textbf{Materia:} & Fundamentos de Gestion Administrativa \\
-      \textbf{Semestre/Bloque:} & Por verificar \\
-      \textbf{Tipo/Créditos:} & Por verificar \\
-      \textbf{Fecha:} & \today
-    \end{tabular}
-    \vfill
-    {\small Roma Norte, Ciudad de Mexico}
-  \end{center}
-  \nopagecolor
-\end{titlepage}
+% La portada institucional deberá sustituirse por la portada de ITESCA.
+\maketitle
 
-\tableofcontents
+\section*{Datos de la actividad}
+
+\begin{tabular}{>{\bfseries}p{0.32\textwidth}p{0.58\textwidth}}
+Institución & Instituto Tecnológico Superior de Cajeme (ITESCA)\\
+Programa & Maestría en Gestión Administrativa\\
+Asignatura & Fundamentos de Gestión Administrativa\\
+Clave & ACF-0901\\
+Actividad & 2\\
+Evidencia & Mapa conceptual\\
+Ponderación & 5\,\%\\
+Unidad & I. Introducción a la Administración y a los estudios organizacionales\\
+\end{tabular}
+
+\section{Introducción}
+
+Las organizaciones concentran estructuras formales, necesidades humanas, disputas de poder, significados compartidos y presiones del entorno. Ninguna dimensión explica por sí sola por qué una decisión funciona en una institución y fracasa en otra. Bolman y Deal ordenan esa pluralidad en cuatro marcos ---estructural, recursos humanos, político y simbólico--- \citep{bolmanDeal2021}. Morgan muestra, mediante metáforas, que cada lente hace visibles ciertos rasgos y oculta otros \citep{morgan2006}. El mapa conceptual integra ambas clasificaciones y presenta la perspectiva global como lectura transversal del ambiente, no como una equivalencia artificial.
+
+\section{Enfoques múltiples del análisis organizacional}
+
+\subsection{Preparación conceptual}
+
+El \textbf{marco estructural} estudia roles, reglas, metas y coordinación; el de \textbf{recursos humanos}, el ajuste entre personas y organización; el \textbf{político}, los intereses, coaliciones, conflictos y recursos escasos; y el \textbf{simbólico}, la cultura, los rituales, relatos y significados \citep{bolmanDeal2021}. Las metáforas de máquina, organismo, cerebro, cultura, sistema político, prisión psíquica, flujo y transformación, e instrumento de dominación ofrecen imágenes críticas complementarias \citep{morgan2006}. La \textbf{perspectiva global} incorpora fuerzas económicas, tecnológicas, político-legales, socioculturales y ambientales que condicionan todas las dimensiones internas \citep{bright2019,openstaxEnvironment2019}.
+
+\subsection{Mapa conceptual}
+
+\begin{center}
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+ root/.style={rounded corners,draw=itescaDark,fill=itescaDark,text=white,font=\bfseries,align=center,text width=5cm,minimum height=1.2cm},
+ branch/.style={rounded corners,draw=itescaRed,fill=itescaRed!10,font=\bfseries\small,align=center,text width=3.7cm,minimum height=1cm},
+ concept/.style={rounded corners,draw=gray!65,fill=white,font=\scriptsize,align=center,text width=3.5cm,minimum height=1cm},
+ edge/.style={-{Stealth[length=2mm]},thick,draw=gray!75},
+ label/.style={font=\tiny\itshape,fill=white,inner sep=1pt}
+]
+\node[root] (root) at (0,7.4) {ENFOQUES MÚLTIPLES\\DE LA ORGANIZACIÓN};
+\node[branch] (bd) at (-6.5,5.3) {Bolman y Deal\\cuatro marcos};
+\node[branch] (mo) at (0,5.3) {Morgan\\metáforas};
+\node[branch] (gl) at (6.5,5.3) {Perspectiva global\\lectura transversal};
+\draw[edge] (root) -- node[label]{se clasifican mediante} (bd);
+\draw[edge] (root) -- node[label]{se reinterpretan con} (mo);
+\draw[edge] (root) -- node[label]{se contextualizan desde} (gl);
+
+\node[concept] (es) at (-8.5,3.3) {Estructural\\roles, reglas y coordinación};
+\node[concept] (rh) at (-4.5,3.3) {Recursos humanos\\necesidades y capacidades};
+\node[concept] (po) at (-8.5,1.7) {Político\\intereses, poder y negociación};
+\node[concept] (si) at (-4.5,1.7) {Simbólico\\cultura, rituales y sentido};
+\foreach \n in {es,rh,po,si} \draw[edge] (bd) -- node[label]{incluye} (\n);
+
+\node[concept] (m1) at (-2,3.3) {Máquina / organismo\\orden y adaptación};
+\node[concept] (m2) at (2,3.3) {Cerebro / cultura\\aprendizaje y significado};
+\node[concept] (m3) at (-2,1.7) {Sistema político /\\prisión psíquica};
+\node[concept] (m4) at (2,1.7) {Flujo / dominación\\cambio y efectos};
+\foreach \n in {m1,m2,m3,m4} \draw[edge] (mo) -- node[label]{representa como} (\n);
+
+\node[concept] (g1) at (4.5,3.3) {Economía y tecnología\\transforman capacidades};
+\node[concept] (g2) at (8.5,3.3) {Política y cultura\\modifican reglas y sentido};
+\node[concept] (g3) at (4.5,1.7) {Interdependencia\\vincula actores y países};
+\node[concept] (g4) at (8.5,1.7) {Adaptación responsable\\responde al entorno};
+\foreach \n in {g1,g2,g3,g4} \draw[edge] (gl) -- node[label]{considera} (\n);
+
+\node[root,font=\bfseries\small] (diag) at (0,-0.3) {DIAGNÓSTICO INTEGRAL\\decidir sin reducir la complejidad};
+\draw[edge] (rh) -- node[label]{humaniza} (diag);
+\draw[edge] (po) -- node[label]{explica tensiones} (diag);
+\draw[edge] (si) -- node[label]{aporta sentido} (diag);
+\draw[edge] (m4) -- node[label]{revela efectos} (diag);
+\draw[edge] (g3) -- node[label]{amplía el contexto} (diag);
+\end{tikzpicture}}
+
+\smallskip
+{\footnotesize\textbf{Figura 1.} Marcos, metáforas y perspectiva global convergen en un diagnóstico integral. Elaboración propia con base en \citeauthor{bolmanDeal2021}, \citeauthor{morgan2006} y \citeauthor{bright2019}.}
+\end{center}
+
+\subsection{Lectura del mapa conceptual}
+
+La primera rama conduce a los cuatro marcos de Bolman y Deal. Desde recursos humanos, una baja productividad puede indicar falta de capacidades, reconocimiento o participación; desde el marco político, el mismo síntoma puede revelar competencia por recursos y desacuerdo entre coaliciones; desde el simbólico, puede expresar pérdida de identidad o legitimidad. El marco estructural pregunta si responsabilidades, reglas y procesos están alineados con la estrategia.
+
+La segunda rama incorpora las metáforas de Morgan como dispositivos críticos. Ver una institución como máquina hace visibles estandarización y control, mientras verla como organismo destaca adaptación y supervivencia. Las imágenes de cultura y sistema político se aproximan a los marcos simbólico y político, pero no son equivalentes: Morgan explora formas de imaginar la organización y Bolman y Deal ordenan perspectivas para comprenderla y actuar sobre ella \citep{bolmanDeal2021,morgan2006}.
+
+La tercera rama muestra que cambios tecnológicos, regulación, diversidad cultural, mercados y problemas ambientales alteran competencias, estructuras, poder y significados. Por tanto, la perspectiva global invita a considerar cómo fuerzas externas, como cambios económicos, tecnológicos, legales o de consumidores, pueden incidir en decisiones organizacionales \citep{openstaxEnvironment2019}. El diagnóstico integral surge de contrastar lentes y seleccionar una respuesta congruente con personas, intereses, símbolos, diseño y entorno.
+
 \clearpage
+\section{Conclusiones}
 
-\section*{Resumen editorial}
-\addcontentsline{toc}{section}{Resumen editorial}
-Esta plantilla materializa la memoria editorial de \textit{Fundamentos de Gestion Administrativa}.
-La entrega debe convertir la consigna en un problema juridico delimitado, con
-fundamento verificable, analisis propio y conclusion aplicable.
-
-\section{Introduccion}
-\pendiente{Abrir con una afirmacion fuerte que traduzca la consigna a problema juridico.}
-
-\section{Delimitación de la asignatura}
-En este documento, la asignatura se denomina \textit{Fundamentos de Gestión Administrativa}. Esta denominación no permite afirmar, por sí sola, su adscripción institucional, su pertenencia a un programa académico específico ni un enfoque jurídico aplicado. Por tanto, esas características quedan pendientes de verificación y no se emplean como fundamento del análisis.
-
-\section{Memoria editorial aplicada}
-\begin{itemize}
-  \item Organizar la entrega en problema, marco juridico, analisis, producto, conclusion y referencias.
-\end{itemize}
-
-\section{Marcadores de investigacion}
-\begin{itemize}
-  \item Delimitar fuentes oficiales, doctrina pertinente y criterios aplicables antes de redactar.
-\end{itemize}
-
-\section{Desarrollo del producto}
-\pendiente{Insertar aqui el producto solicitado: informe, cuadro, mapa, analisis de caso, matriz, linea de tiempo o ensayo.}
-
-\subsection{Analisis propio}
-\pendiente{Explicar la consecuencia administrativa del producto y sostener una postura personal argumentada.}
-
-\section{Checklist de calidad}
-\begin{itemize}
-  \item Verificar citas, bibliografia, coherencia de estructura, ortografia y compilacion.
-\end{itemize}
-
-\section{Conclusion}
-\pendiente{Cerrar con aprendizaje, criterio administrativo propio y aplicacion profesional.}
+Los enfoques múltiples impiden confundir una explicación parcial con la organización completa. Bolman y Deal ofrecen cuatro marcos accionables; Morgan demuestra que toda imagen ilumina ciertos procesos y oscurece otros; y la perspectiva global recuerda que las fronteras organizacionales son permeables. Mi postura es que un diagnóstico responsable debe comenzar con el marco que mejor explique el problema, contrastarlo al menos con otro y revisar después las presiones externas. Esta secuencia reduce decisiones mecánicas: una reestructuración puede requerir simultáneamente nuevas capacidades, negociación política y reconstrucción de significado. El mapa convierte esa pluralidad teórica en una guía de análisis aplicable.\footnote{Declaración de uso: se utilizó inteligencia artificial como apoyo para organizar, revisar y editar el texto y el diagrama; el autor verificó las fuentes, asumió la postura expresada y conserva la responsabilidad sobre el contenido final.}
 
 \clearpage
-\nocite{itescaProgramaFundamentosGestion,robbinsCoulter2018Administracion}
-\bibliography{fundamentos-de-gestion-administrativa}
+\bibliography{ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa}
 
 \end{document}

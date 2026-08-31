@@ -56,7 +56,11 @@
     "Organizational Structures and Design :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
     "Organization and Management: A Systems Approach :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
     "Modelo de subsistemas organizacionales :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
-    "4.3 Organizational Designs and Structures :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib"
+    "4.3 Organizational Designs and Structures :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "Foro :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "Fundamentos de administración. Eje 1: Conceptualicemos :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "Aportes teóricos a la gestión organizacional: la evolución en la visión de la organización :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "Reframing Organizations: Artistry, Choice, and Leadership :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib"
   ],
   "section_titles": [
     "Introduccion",
@@ -104,14 +108,19 @@
     "programaGestionAdministrativaLocal :: Programa analítico de Fundamentos de Gestión Administrativa :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
     "bibliografiaGestionAdministrativaLocal :: Bibliografía local de Fundamentos de Gestión Administrativa :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
     "compilacionGestionAdministrativaLocal :: Compilación de Fundamentos de Gestión Administrativa :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
-    "programaOficialGestionAdministrativaITESCA :: Programa oficial de Fundamentos de Gestión Administrativa :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib"
+    "programaOficialGestionAdministrativaITESCA :: Programa oficial de Fundamentos de Gestión Administrativa :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "lopezForo2022 :: Foro :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "larrarteSinFecha :: Fundamentos de administración. Eje 1: Conceptualicemos :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "sanchezBanuelos2017 :: Aportes teóricos a la gestión organizacional: la evolución en la visión de la organización :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "bolmanDeal2021 :: Reframing Organizations: Artistry, Choice, and Leadership :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+    "morgan2006 :: Images of Organization :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib"
   ],
   "node_metadata": {
     "editing_details": {
       "heading_contract": {
         "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
         "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-        "subject_rule": "Actividad 5 - fundamentos-de-gestion-administrativa-mga",
+        "subject_rule": "Actividad 4 - fundamentos-de-gestion-administrativa-mga",
         "scope_label": "Actividad 10"
       },
       "didactic_contract": {
@@ -310,7 +319,7 @@
         "career": "maestria-en-gestion-administrativa",
         "subject": "fundamentos-de-gestion-administrativa-mga",
         "activity": "Actividad 10",
-        "seed_scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-5"
+        "seed_scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-4"
       },
       "compilation_fixes": [],
       "quality_rules": [
@@ -372,7 +381,10 @@
           "has_memory": false
         }
       ],
-      "novelty_signals": [],
+      "novelty_signals": [
+        "heading_contract",
+        "institutional_identity"
+      ],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -405,7 +417,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260830-125902",
+      "run_id": "20260831-153117",
       "scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-10",
       "related_scope_keys": [
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-10",
@@ -417,7 +429,7 @@
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-2",
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-3"
       ],
-      "novelty_count": 0
+      "novelty_count": 2
     },
     "scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-10",
     "level": "actividad",
@@ -443,7 +455,7 @@
           "heading_contract": {
             "title_rule": "El titulo visible no debe incluir 'Actividad #' cuando el producto es una actividad.",
             "subtitle_rule": "El subtitulo debe compactar tema, producto o problema sin metadiscurso.",
-            "subject_rule": "Actividad 5 - fundamentos-de-gestion-administrativa-mga",
+            "subject_rule": "Actividad 4 - fundamentos-de-gestion-administrativa-mga",
             "scope_label": "Actividad 10"
           },
           "didactic_contract": {
@@ -633,7 +645,7 @@
             "career": "maestria-en-gestion-administrativa",
             "subject": "fundamentos-de-gestion-administrativa-mga",
             "activity": "Actividad 10",
-            "seed_scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-5"
+            "seed_scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-4"
           },
           "compilation_fixes": [],
           "quality_rules": [
@@ -672,7 +684,9 @@
             "{'scope_key': 'ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-3', 'has_memory': False}"
           ],
           "novelty_signals": [
-            "bootstrap"
+            "bootstrap",
+            "heading_contract",
+            "institutional_identity"
           ],
           "derived_from": {
             "local_memory": true,
@@ -706,7 +720,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260830-125902",
+          "run_id": "20260831-153117",
           "scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-10",
           "related_scope_keys": [
             "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-10",
@@ -718,7 +732,7 @@
             "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-2",
             "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-3"
           ],
-          "novelty_count": 0
+          "novelty_count": 2
         },
         "scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-10",
         "level": "actividad",
@@ -776,7 +790,9 @@
     ],
     "reinforcement_log": [
       "ADN sintetizado con 17 conceptos, 5 citas y 0 relaciones.",
-      "Memoria de redacción preservada en 14 bloques."
+      "Memoria de redacción preservada en 14 bloques.",
+      "ADN sintetizado con 20 conceptos, 5 citas y 0 relaciones.",
+      "ADN sintetizado con 21 conceptos, 5 citas y 0 relaciones."
     ],
     "knowledge_graph": {
       "concepts": [
@@ -796,7 +812,11 @@
         "Organizational Structures and Design :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
         "Organization and Management: A Systems Approach :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
         "Modelo de subsistemas organizacionales :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
-        "4.3 Organizational Designs and Structures :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib"
+        "4.3 Organizational Designs and Structures :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "Foro :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "Fundamentos de administración. Eje 1: Conceptualicemos :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "Aportes teóricos a la gestión organizacional: la evolución en la visión de la organización :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "Reframing Organizations: Artistry, Choice, and Leadership :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib"
       ],
       "citations": [
         "clave",
@@ -842,7 +862,12 @@
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/reporte-fundamentos-de-gestion-administrativa-mga.tex",
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/presentacion-fundamentos-de-gestion-administrativa-mga.tex",
-        "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/reporte-fundamentos-de-gestion-administrativa-Actividad-10.tex"
+        "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/reporte-fundamentos-de-gestion-administrativa-Actividad-10.tex",
+        "lopezForo2022 :: Foro :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "larrarteSinFecha :: Fundamentos de administración. Eje 1: Conceptualicemos :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "sanchezBanuelos2017 :: Aportes teóricos a la gestión organizacional: la evolución en la visión de la organización :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "bolmanDeal2021 :: Reframing Organizations: Artistry, Choice, and Leadership :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "morgan2006 :: Images of Organization :: fuente=ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib"
       ],
       "relations": [],
       "concept_weights": {},
@@ -10945,6 +10970,67 @@
         "author": "Instituto Tecnológico Superior de Cajeme",
         "note": "Referencia objetivo. Localizar y verificar versión, fecha, código, contenidos y URL institucional.",
         "raw_entry": "@misc{programaOficialGestionAdministrativaITESCA,\n  author = {{Instituto Tecnológico Superior de Cajeme}},\n  title = {Programa oficial de Fundamentos de Gestión Administrativa},\n  note = {Referencia objetivo. Localizar y verificar versión, fecha, código, contenidos y URL institucional.}\n}"
+      },
+      "lopezForo2022": {
+        "key": "lopezForo2022",
+        "source_type": "bibtex",
+        "source_path": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "entry_type": "incollection",
+        "title": "Foro",
+        "author": "López, Aarón",
+        "year": "2022",
+        "publisher": "Universidad Abierta y a Distancia de México",
+        "url": "https://100tecnicasdidacticas.unadmexico.mx/index.html",
+        "note": "Técnica 42, sección Aplicar",
+        "raw_entry": "@incollection{lopezForo2022,\n  author = {López, Aarón},\n  title = {Foro},\n  booktitle = {100 Técnicas Didácticas de Enseñanza y Aprendizaje},\n  year = {2022},\n  publisher = {Universidad Abierta y a Distancia de México},\n  address = {Ciudad de México},\n  url = {https://100tecnicasdidacticas.unadmexico.mx/index.html},\n  urldate = {2026-08-30},\n  note = {Técnica 42, sección Aplicar}\n}"
+      },
+      "larrarteSinFecha": {
+        "key": "larrarteSinFecha",
+        "source_type": "bibtex",
+        "source_path": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "entry_type": "book",
+        "title": "Fundamentos de administración. Eje 1: Conceptualicemos",
+        "author": "Larrarte, Patricia",
+        "year": "s. f.",
+        "publisher": "Fundación Universitaria del Área Andina",
+        "note": "Material didáctico consultado en archivo PDF local",
+        "raw_entry": "@book{larrarteSinFecha,\n  author = {Larrarte, Patricia},\n  title = {Fundamentos de administración. Eje 1: Conceptualicemos},\n  publisher = {Fundación Universitaria del Área Andina},\n  year = {s. f.},\n  note = {Material didáctico consultado en archivo PDF local}\n}"
+      },
+      "sanchezBanuelos2017": {
+        "key": "sanchezBanuelos2017",
+        "source_type": "bibtex",
+        "source_path": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "entry_type": "article",
+        "title": "Aportes teóricos a la gestión organizacional: la evolución en la visión de la organización",
+        "author": "Sánchez Bañuelos, María Nélida",
+        "year": "2017",
+        "journal": "Ciencias Administrativas",
+        "url": "https://www.redalyc.org/articulo.oa?id=511653854007",
+        "raw_entry": "@article{sanchezBanuelos2017,\n  author = {Sánchez Bañuelos, María Nélida},\n  title = {Aportes teóricos a la gestión organizacional: la evolución en la visión de la organización},\n  journal = {Ciencias Administrativas},\n  year = {2017},\n  number = {10},\n  pages = {64--74},\n  issn = {2314-3738},\n  url = {https://www.redalyc.org/articulo.oa?id=511653854007},\n  urldate = {2026-08-28}\n}"
+      },
+      "bolmanDeal2021": {
+        "key": "bolmanDeal2021",
+        "source_type": "bibtex",
+        "source_path": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "entry_type": "book",
+        "title": "Reframing Organizations: Artistry, Choice, and Leadership",
+        "author": "Bolman, Lee G. and Deal, Terrence E.",
+        "year": "2021",
+        "publisher": "Jossey-Bass",
+        "url": "https://www.wiley.com/en-us/Reframing+Organizations%3A+Artistry%2C+Choice%2C+and+Leadership%2C+7th+Edition-p-9781119756835",
+        "raw_entry": "@book{bolmanDeal2021,\n  author = {Bolman, Lee G. and Deal, Terrence E.},\n  title = {Reframing Organizations: Artistry, Choice, and Leadership},\n  edition = {7},\n  year = {2021},\n  publisher = {Jossey-Bass},\n  address = {Hoboken, New Jersey},\n  isbn = {9781119756835},\n  url = {https://www.wiley.com/en-us/Reframing+Organizations%3A+Artistry%2C+Choice%2C+and+Leadership%2C+7th+Edition-p-9781119756835},\n  urldate = {2026-08-28}\n}"
+      },
+      "morgan2006": {
+        "key": "morgan2006",
+        "source_type": "bibtex",
+        "source_path": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa.bib",
+        "entry_type": "book",
+        "title": "Images of Organization",
+        "author": "Morgan, Gareth",
+        "year": "2006",
+        "publisher": "SAGE Publications",
+        "url": "https://us.sagepub.com/en-us/nam/images-of-organization/book252708",
+        "raw_entry": "@book{morgan2006,\n  author = {Morgan, Gareth},\n  title = {Images of Organization},\n  edition = {Updated},\n  year = {2006},\n  publisher = {SAGE Publications},\n  address = {Thousand Oaks, California},\n  isbn = {9781412939799},\n  url = {https://us.sagepub.com/en-us/nam/images-of-organization/book252708},\n  urldate = {2026-08-28}\n}"
       }
     }
   },
