@@ -1,48 +1,101 @@
-\documentclass[12pt,oneside]{article}
+% Actividad 2 contractualizada por AulaTeX: mapa conceptual.
+\providecommand{\itescastudentname}{Martin Jonathan de la Cruz}
+\providecommand{\itescastudentid}{Por confirmar}
+\providecommand{\itescastudentemail}{Dato no proporcionado}
+\providecommand{\itescafaculty}{Maestría en Gestión Administrativa}
+\providecommand{\itescacoursename}{Fundamentos de Gestión Administrativa}
+\providecommand{\itescacoursecode}{ACF--0901}
+\providecommand{\itescadepartment}{Posgrado e Investigación}
+\providecommand{\itescateachingfigure}{Docente de la materia por confirmar}
+\providecommand{\itescaprogramlevel}{Maestría}
+\providecommand{\itescaprogramperiod}{Agosto--noviembre de 2026}
+\providecommand{\itescamodality}{En línea}
+\providecommand{\itescalocation}{Cajeme, Sonora}
+\providecommand{\itescaasset}{ITESCA/assets-itesca/itesca-monograma.png}
+\providecommand{\itescaofficialasset}{ITESCA/assets-itesca/web/logo-itesca-contorno.png}
+\providecommand{\itescasecondaryasset}{ITESCA/assets-itesca/itesca-monograma.png}
 
-% La plantilla institucional definitiva deberá heredar el preámbulo
-% de reporte-fundamentos-de-gestion-administrativa-mga.tex.
-% Este bloque representa únicamente la estructura editorial.
+\def\itescadocumenttitle {Enfoques múltiples para comprender las organizaciones}
+\def\itescadocumentsubtitle {Marcos, metáforas y perspectiva global}
+\def\itescadocumentsubject {Actividad 2 - Fundamentos de Gestión Administrativa}
+\def\itescaactivityname {Actividad 2. Mapa conceptual}
+\def\itescasessionname {Unidad I}
+\def\itescablockname {Fundamentos de Gestión Administrativa}
+\def\itescamainproduct {Mapa conceptual}
 
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[spanish,es-nodecimaldot]{babel}
-\usepackage{geometry}
-\usepackage{graphicx}
-\usepackage{xcolor}
+\documentclass[spanish,letterpaper,oneside]{article}
+
+\def\documenttitle {\itescadocumenttitle}
+\def\documentsubtitle {\itescadocumentsubtitle}
+\def\documentsubject {\itescadocumentsubject}
+\def\documentauthor {\itescastudentname}
+\def\coursename {\itescacoursename}
+\def\coursecode {\itescacoursecode}
+\def\universityname {Instituto Tecnológico Superior de Cajeme}
+\def\universityfaculty {\itescafaculty}
+\def\universitydepartment {\itescadepartment}
+\def\universitydepartmentimage {\itescaofficialasset}
+\def\universitydepartmentimagecfg {width=5.2cm}
+\def\universitylocation {\itescalocation}
+
+\def\authortable {
+  \begin{tabular}{ll}
+    \textbf{Alumno:} & \itescastudentname \\
+    No. de control: & \itescastudentid \\
+    Carrera: & \itescafaculty \\
+    Semestre: & \itescaprogramperiod \\
+    Asignatura: & \itescacoursename \\
+    Docente: & \itescateachingfigure \\
+    Modalidad: & \itescamodality \\
+    Fecha de entrega: & \today \\
+    Lugar: & \universitylocation
+  \end{tabular}
+}
+
+\input{template}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
-\usepackage{array}
-\usepackage{hyperref}
-\usepackage[authoryear,round]{natbib}
+\setcitestyle{numbers,open={[},close={]}}
 
-\geometry{margin=2.2cm}
-\bibliographystyle{plainnat}
+\definecolor{itescaRedDark}{HTML}{8F1117}
 \definecolor{itescaRed}{HTML}{D70F18}
-\definecolor{itescaDark}{HTML}{8F1117}
+\definecolor{itescaCharcoal}{HTML}{141414}
+\definecolor{itescaPaper}{HTML}{F7F7F7}
+\def\portraittitlecolor {itescaRedDark}
 
-\title{\textcolor{itescaDark}{Enfoques múltiples para comprender las organizaciones}\\[0.4em]\large Marcos, metáforas y perspectiva global}
-\author{Martin Jonathan de la Cruz\\Instituto Tecnológico Superior de Cajeme}
-\date{\today}
+\hypersetup{
+  pdftitle={\itescadocumenttitle},
+  pdfsubject={\itescadocumentsubject},
+  pdfauthor={\itescastudentname},
+  colorlinks=true,
+  linkcolor=itescaRedDark,
+  citecolor=itescaRedDark,
+  urlcolor=itescaRedDark
+}
 
 \begin{document}
+\templatePortrait
+\templatePagecfg
+\onehalfspacing
 
-% La portada institucional deberá sustituirse por la portada de ITESCA.
-\maketitle
+\begin{abstractd}
+\textbf{Objetivo:} Sintetizar los enfoques múltiples del análisis organizacional y explicar cómo los marcos de Bolman y Deal, las metáforas de Morgan y la perspectiva global permiten formular diagnósticos complementarios.
 
-\section*{Datos de la actividad}
+\textbf{Producto:} Mapa conceptual jerárquico con conceptos, palabras enlace, proposiciones y relaciones cruzadas.
 
-\begin{tabular}{>{\bfseries}p{0.32\textwidth}p{0.58\textwidth}}
-Institución & Instituto Tecnológico Superior de Cajeme (ITESCA)\\
-Programa & Maestría en Gestión Administrativa\\
-Asignatura & Fundamentos de Gestión Administrativa\\
-Clave & ACF-0901\\
-Actividad & 2\\
-Evidencia & Mapa conceptual\\
-Ponderación & 5\,\%\\
-Unidad & I. Introducción a la Administración y a los estudios organizacionales\\
-\end{tabular}
+\textbf{Técnica didáctica:} Mapa conceptual orientado a seleccionar, jerarquizar y relacionar conceptos para representar una explicación integrada.
 
+\textbf{Criterios de entrega:} Cobertura de los enfoques solicitados, claridad jerárquica, relaciones conceptuales legibles, sustento académico y entrega final en PDF.
+\end{abstractd}
+
+\templateIndex
+\templateFinalcfg
+
+% Técnica didáctica: mapa conceptual.
+% Nivel cognitivo: sintetizar y relacionar.
+% Criterio de organización: enfoque múltiple -> autores -> lentes -> implicaciones -> entorno global.
 \section{Introducción}
 
 Las organizaciones concentran estructuras formales, necesidades humanas, disputas de poder, significados compartidos y presiones del entorno. Ninguna dimensión explica por sí sola por qué una decisión funciona en una institución y fracasa en otra. Bolman y Deal ordenan esa pluralidad en cuatro marcos ---estructural, recursos humanos, político y simbólico--- \citep{bolmanDeal2021}. Morgan muestra, mediante metáforas, que cada lente hace visibles ciertos rasgos y oculta otros \citep{morgan2006}. El mapa conceptual integra ambas clasificaciones y presenta la perspectiva global como lectura transversal del ambiente, no como una equivalencia artificial.
@@ -58,10 +111,10 @@ El \textbf{marco estructural} estudia roles, reglas, metas y coordinación; el d
 \begin{center}
 \resizebox{\textwidth}{!}{%
 \begin{tikzpicture}[
- root/.style={rounded corners,draw=itescaDark,fill=itescaDark,text=white,font=\bfseries,align=center,text width=5cm,minimum height=1.2cm},
+ root/.style={rounded corners,draw=itescaRedDark,fill=itescaRedDark,text=white,font=\bfseries,align=center,text width=5cm,minimum height=1.2cm},
  branch/.style={rounded corners,draw=itescaRed,fill=itescaRed!10,font=\bfseries\small,align=center,text width=3.7cm,minimum height=1cm},
- concept/.style={rounded corners,draw=gray!65,fill=white,font=\scriptsize,align=center,text width=3.5cm,minimum height=1cm},
- edge/.style={-{Stealth[length=2mm]},thick,draw=gray!75},
+ concept/.style={rounded corners,draw=itescaCharcoal!65,fill=white,font=\scriptsize,align=center,text width=3.5cm,minimum height=1cm},
+ edge/.style={-{Stealth[length=2mm]},thick,draw=itescaCharcoal!75},
  label/.style={font=\tiny\itshape,fill=white,inner sep=1pt}
 ]
 \node[root] (root) at (0,7.4) {ENFOQUES MÚLTIPLES\\DE LA ORGANIZACIÓN};
@@ -108,7 +161,7 @@ La primera rama conduce a los cuatro marcos de Bolman y Deal. Desde recursos hum
 
 La segunda rama incorpora las metáforas de Morgan como dispositivos críticos. Ver una institución como máquina hace visibles estandarización y control, mientras verla como organismo destaca adaptación y supervivencia. Las imágenes de cultura y sistema político se aproximan a los marcos simbólico y político, pero no son equivalentes: Morgan explora formas de imaginar la organización y Bolman y Deal ordenan perspectivas para comprenderla y actuar sobre ella \citep{bolmanDeal2021,morgan2006}.
 
-La tercera rama muestra que cambios tecnológicos, regulación, diversidad cultural, mercados y problemas ambientales alteran competencias, estructuras, poder y significados. Por tanto, la perspectiva global invita a considerar cómo fuerzas externas, como cambios económicos, tecnológicos, legales o de consumidores, pueden incidir en decisiones organizacionales \citep{openstaxEnvironment2019}. El diagnóstico integral surge de contrastar lentes y seleccionar una respuesta congruente con personas, intereses, símbolos, diseño y entorno.
+La tercera rama muestra que cambios tecnológicos, regulación, diversidad cultural, mercados y problemas ambientales alteran competencias, estructuras, poder y significados. La perspectiva global obliga a volver sobre todas las ramas y preguntar cómo una decisión local depende de actores y fuerzas externas \citep{openstaxEnvironment2019}. El diagnóstico integral surge de contrastar lentes y seleccionar una respuesta congruente con personas, intereses, símbolos, diseño y entorno.
 
 \clearpage
 \section{Conclusiones}
@@ -116,6 +169,29 @@ La tercera rama muestra que cambios tecnológicos, regulación, diversidad cultu
 Los enfoques múltiples impiden confundir una explicación parcial con la organización completa. Bolman y Deal ofrecen cuatro marcos accionables; Morgan demuestra que toda imagen ilumina ciertos procesos y oscurece otros; y la perspectiva global recuerda que las fronteras organizacionales son permeables. Mi postura es que un diagnóstico responsable debe comenzar con el marco que mejor explique el problema, contrastarlo al menos con otro y revisar después las presiones externas. Esta secuencia reduce decisiones mecánicas: una reestructuración puede requerir simultáneamente nuevas capacidades, negociación política y reconstrucción de significado. El mapa convierte esa pluralidad teórica en una guía de análisis aplicable.\footnote{Declaración de uso: se utilizó inteligencia artificial como apoyo para organizar, revisar y editar el texto y el diagrama; el autor verificó las fuentes, asumió la postura expresada y conserva la responsabilidad sobre el contenido final.}
 
 \clearpage
-\bibliography{ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/fundamentos-de-gestion-administrativa}
+\begin{thebibliography}{9}
+
+\bibitem[Bolman y Deal(2021)]{bolmanDeal2021}
+Bolman, L. G. y Deal, T. E. (2021).
+\textit{Reframing Organizations: Artistry, Choice, and Leadership} (7.ª ed.).
+Jossey-Bass. \url{https://www.wiley.com/en-us/Reframing+Organizations%3A+Artistry%2C+Choice%2C+and+Leadership%2C+7th+Edition-p-9781119756835}
+
+\bibitem[Morgan(2006)]{morgan2006}
+Morgan, G. (2006).
+\textit{Images of Organization} (edición actualizada).
+SAGE Publications. \url{https://us.sagepub.com/en-us/nam/images-of-organization/book252708}
+
+\bibitem[Bright et al.(2019)]{bright2019}
+Bright, D. S. y Cortes, A. H. (eds.). (2019).
+\textit{Principles of Management}.
+OpenStax, Rice University. \url{https://openstax.org/details/books/principles-management}
+
+\bibitem[Weiss(2019)]{openstaxEnvironment2019}
+Weiss, J. W. (2019).
+The Organization's External Environment.
+En \textit{Principles of Management}. OpenStax, Rice University.
+\url{https://openstax.org/books/principles-management/pages/4-1-the-organizations-external-environment}
+
+\end{thebibliography}
 
 \end{document}

@@ -408,10 +408,7 @@
           "has_memory": false
         }
       ],
-      "novelty_signals": [
-        "heading_contract",
-        "institutional_identity"
-      ],
+      "novelty_signals": [],
       "derived_from": {
         "local_memory": true,
         "ancestor_memory": true,
@@ -444,7 +441,7 @@
       }
     },
     "detail_planner": {
-      "run_id": "20260831-153122",
+      "run_id": "20260831-153434",
       "scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-3",
       "related_scope_keys": [
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-3",
@@ -456,7 +453,7 @@
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-10",
         "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-2"
       ],
-      "novelty_count": 2
+      "novelty_count": 0
     },
     "scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-3",
     "level": "actividad",
@@ -811,7 +808,7 @@
           }
         },
         "detail_planner": {
-          "run_id": "20260831-153122",
+          "run_id": "20260831-153434",
           "scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-3",
           "related_scope_keys": [
             "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-3",
@@ -824,7 +821,7 @@
             "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-5",
             "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-10"
           ],
-          "novelty_count": 2
+          "novelty_count": 0
         },
         "scope_key": "ITESCA/maestria-en-gestion-administrativa/fundamentos-de-gestion-administrativa-mga/actividad-3",
         "level": "actividad",

@@ -1,227 +1,155 @@
 [
   {
-    "concepto": "management",
+    "concepto": "adaptación",
     "tipo": "idea",
-    "idea_base": "3 The History of Management Exhibit 3.1 (Gawler History/ Attribution 2.0 Generic (CC BY 2.0)) Introduction Learning Outcomes After reading this chapter, you should be able to answer these questions: 1. Describe management in the ancient world.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 64",
+    "idea_base": "Esto se debe principalmente a que el aprendizaje estructurado ayuda a reducir la incertidumbre inherente a una nueva situación y suaviza la transición a un nuevo puesto de trabajo. Un dato adicional acerca de la adaptación a un nuevo empleo es el valor que tienen los contactos dentro de la organización como valiosas fuentes de información. Los colegas, supervisores y mentores son más útiles como fuentes de información precisa acerca de su trabajo y de la organización que los programas de orientación formales o la documentación organizacional.",
+    "fuente": "Robbins y Coulter - Administracion - 13a ed - 2018.pdf",
+    "ubicacion": "p. 131",
+    "funcion_sugerida": "desarrollo",
+    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto."
+  },
+  {
+    "concepto": "administrativa",
+    "tipo": "idea",
+    "idea_base": "Si dichos objetivos no se han logrado, es labor del gerente corregir la situación. Este proceso de supervisar, comparar y corregir es la función de control. organización Función administrativa que tiene que ver con disponer y estructurar el trabajo para lograr los objetivos organizacionales dirección Función administrativa que involucra trabajar con y a través de las personas para lograr los objetivos organizacionales control Función administrativa que consiste en supervisar, comparar y corregir el desempeño laboral ¿Qué tan bien este enfoque en las funciones logra describir la labor gerencial? ¿En todos los casos, los gerentes planean, organizan, dirigen y luego controlan?",
+    "fuente": "Robbins y Coulter - Administracion - 13a ed - 2018.pdf",
+    "ubicacion": "p. 45",
+    "funcion_sugerida": "desarrollo",
+    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto."
+  },
+  {
+    "concepto": "basta estructura",
+    "tipo": "idea",
+    "idea_base": "estructura circular Estructura organizacional donde los ejecu- tivos se ubican en el centro y difunden su visión hacia afuera, en anillos agrupados de acuerdo con su función (gerentes, luego especialistas, después trabajadores). estructura de equipo Estructura organizacional que sustituye los departamentos con equipos facultados, y que elimina los límites horizontales y las barreras externas entre los clientes y los proveedores. estructura de iniciación El grado en que un líder tiende a de- finir y estructurar su rol y el de los subalternos, en la búsqueda del logro de las metas. estructura de la tarea Grado en que están definidos los proce- dimientos para las tareas del puesto. estructura...",
+    "fuente": "Robbins y Judge - Comportamiento organizacional - 17a ed - 2017.pdf",
+    "ubicacion": "p. 707",
+    "funcion_sugerida": "desarrollo",
+    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto."
+  },
+  {
+    "concepto": "competitiva",
+    "tipo": "idea",
+    "idea_base": "Estas empresas han generado una ventaja competitiva. Para desarrollar una estrategia competitiva eficaz, es preciso comprender qué es la ventaja competitiva, es decir, aquello que distingue a una organización respecto de las demás, es decir, su sello distintivo.27 Ese rasgo definitorio puede derivar de las competencias fundamentales de la organización, las cuales le permiten hacer algo que el resto no puede o hacerlo mejor que todas las demás.",
+    "fuente": "Robbins y Coulter - Administracion - 13a ed - 2018.pdf",
+    "ubicacion": "p. 323",
     "funcion_sugerida": "desarrollo",
     "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
   },
   {
-    "concepto": "organization",
+    "concepto": "estrategia",
     "tipo": "idea",
-    "idea_base": "organization, it is common to see a horizontal organizational structure, in which many individuals across the whole system are empowered to make organizational decision. An organization with a horizontal structure is also known as a flat organization because it often features only a few levels of organizational hierarchy.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 320",
+    "idea_base": "decisiones y realice el trabajo de la forma que considere más conveniente estrategia competitiva  Estrategia organizacional que deter­ cuando el grupo es totalmente funcional y trabaja en el cum­ plimiento de una tarea específica etapa de disolución  Etapa final del desarrollo para los grupos mina cómo competirá la organización en sus líneas de negocio estrategia corporativa  Estrategia organizacional que deter­ temporales, durante la cual los integrantes del grupo tienen más interés en actividades de conclusión que en el desem­ peño de la tarea etapa de normalización  Tercera etapa del desarrollo grupal, mina en qué líneas de negocio opera o desea operar la empresa y qué quiere lograr al...",
+    "fuente": "Robbins y Coulter - Administracion - 13a ed - 2018.pdf",
+    "ubicacion": "p. 707",
     "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
+    "observacion": "La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto."
   },
   {
-    "concepto": "organizational",
+    "concepto": "estructura",
     "tipo": "idea",
-    "idea_base": "Chapter 10 Organizational Structure and Change 335 2. What are different types of organizational structures?",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 344",
+    "idea_base": "estructura circular Estructura organizacional donde los ejecu- tivos se ubican en el centro y difunden su visión hacia afuera, en anillos agrupados de acuerdo con su función (gerentes, luego especialistas, después trabajadores). estructura de equipo Estructura organizacional que sustituye los departamentos con equipos facultados, y que elimina los límites horizontales y las barreras externas entre los clientes y los proveedores. estructura de iniciación El grado en que un líder tiende a de- finir y estructurar su rol y el de los subalternos, en la búsqueda del logro de las metas. estructura de la tarea Grado en que están definidos los proce- dimientos para las tareas del puesto. estructura...",
+    "fuente": "Robbins y Judge - Comportamiento organizacional - 17a ed - 2017.pdf",
+    "ubicacion": "p. 707",
     "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
+    "observacion": "La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto."
   },
   {
-    "concepto": "performance",
+    "concepto": "innovación",
     "tipo": "idea",
-    "idea_base": "Chapter 11 Human Resource Management 349 challenges over time. Human resource management professionals need to be aware of these challenges and design a performance management system that addresses them in the format and within the context of their culture. C O N C E P T C H E C K 1.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 358",
+    "idea_base": "618 PARTE 4 El sistema de la organización Basada en su frase publicitaria “Piensa diferente”, Apple ha construido una cultura de innovación, donde los empleados comparten la pasión por crear productos de consumo amigables como el Apple Watch, mostrado en la fotografía por un cliente de una tienda Apple en Toronto, Canadá. La cultura de apoyo de Apple involucra la creación conjunta de ideas, colaboración, experimentación y toma de riesgos.",
+    "fuente": "Robbins y Judge - Comportamiento organizacional - 17a ed - 2017.pdf",
+    "ubicacion": "p. 656",
     "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon varias referencias dentro de la misma fuente."
+    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto."
   },
   {
-    "concepto": "organizations",
+    "concepto": "motivación",
     "tipo": "idea",
-    "idea_base": "Studies show that women and minorities have greater job-pursuit intentions and higher attraction toward organizations that promote workplace diversity in their recruitment materials compared to organizations that do not.102 When employers attract minority applicants, their labor pool increases in size compared to organizations that are not attractive to them. As organizations attract more job candidates, the chances of hiring quality employees increases, especially for jobs that demand highly skilled labor.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 392",
+    "idea_base": "Describa las cuatro primeras teorías de la motivación. 16-3. ¿De qué manera las teorías del establecimiento de fuerza laboral actual?",
+    "fuente": "Robbins y Coulter - Administracion - 13a ed - 2018.pdf",
+    "ubicacion": "p. 579",
     "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "leadership",
-    "tipo": "idea",
-    "idea_base": "cultural leadership research will no doubt intensify as the global economy becomes an ever more dominant force in the world. Chapter Review Questions 1.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 453",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "environment",
-    "tipo": "idea",
-    "idea_base": "Of course unpredicted conditions, such as global and international turmoil, economic downturns, and so on, could affect these industries, but generally, these alignments have served as an ideal type and starting point for understanding the “fit” between environment and industries. In a stable but complex, low- to moderate-uncertainty environment, cell 2 in Exhibit 4.4, universities, appliance manufacturers, chemical companies, and insurances companies would generally prosper.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 98",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "motivation",
-    "tipo": "idea",
-    "idea_base": "14 Work Motivation for Performance Exhibit 14.1 (Credit: mohamed_hassan/ Pixabay/ (CC BY 0)) Introduction Learning Outcomes After reading this chapter, you should be able to answer these questions: 1. Define motivation, and distinguish direction and intensity of motivation.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 458",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "information",
-    "tipo": "idea",
-    "idea_base": "24 Chapter 2 Managerial Decision-Making Deciding When to Decide While some decisions are simple, a manager’s decisions are often complex ones that involve a range of options and uncertain outcomes. When deciding among various options and uncertain outcomes, managers need to gather information, which leads them to another necessary decision: how much information is needed to make a good decision? Managers frequently make decisions without complete information; indeed, one of the hallmarks of an effective leader is the ability to determine when to hold off on a decision and gather more information, and when to make a decision with the information at hand.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 33",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "technology",
-    "tipo": "idea",
-    "idea_base": "618 Chapter 18 Management of Technology and Innovation Chapter Review Questions 1. How do we define technology and innovation, and how are they related?",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 627",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "decision-making",
-    "tipo": "idea",
-    "idea_base": "2. What are the six steps in the decision-making process? 3.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 54",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
+    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto."
   },
   {
     "concepto": "organización",
     "tipo": "idea",
-    "idea_base": "La atención se centró en el método de trabajo, en la ejecución de una tarea y en el tiem- po estándar para ejecutarla. Esta orientación permitió la especialización del obrero y la reagrupación de los movimientos, las operaciones, tareas y los cargos que constituyeron la organización racional del trabajo (Chiavenato, 2004) . b . Corriente de los anatomistas y fisiólogos de la organización: sus principales ex- ponentes fueron Henry Fayol, James Mooney, Lyndall Urwick y Luther Gulick .",
-    "fuente": "larrarte-sf-fundamentos-administracion.pdf",
-    "ubicacion": "p. 11",
+    "idea_base": "Creación de una organización que aprende Otra forma como las organizaciones administran el cambio de manera proactiva con- siste en lograr que el crecimiento continuo forme parte de su cultura: al convertirse en una organización que aprende.57 ¿Qué es una organización que aprende? Así como los individuos aprenden, también lo hacen las organizaciones.",
+    "fuente": "Robbins y Judge - Comportamiento organizacional - 17a ed - 2017.pdf",
+    "ubicacion": "p. 657",
     "funcion_sugerida": "desarrollo",
     "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto."
   },
   {
-    "concepto": "activities",
+    "concepto": "precisión larrarte",
     "tipo": "idea",
-    "idea_base": "important, but training has a greater effect when the other factors are also included. A recent study investigated various diversity-training methods, including having participants engage in activities on perspective taking and goal setting. For perspective-taking activities, participants were asked to write a few sentences about the challenges they believed minority group members might experience.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 407",
+    "idea_base": "El tamaño reducido de las nuevas empresas suele ir acompañado de costos fijos bajos y de una mínima estructura de costos, lo cual se puede traducir en una enorme ventaja competitiva. Las compañías grandes implican elevados costos fijos; reglas, regulaciones y jerarquías burocráticas que limitan la flexibilidad y la rapidez de respuesta; así como culturas arraigadas que son muy efi- cientes para eliminar las ideas que no se ajustan con precisión a sus modelos actuales de negocios. PARA LOS GERENTES CORPORATIVOS  A los gerentes de las organizaciones grandes y exitosas, la innovación disruptiva les plantea el desafío de producir una respuesta adecuada.",
+    "fuente": "Robbins y Coulter - Administracion - 13a ed - 2018.pdf",
+    "ubicacion": "p. 269",
     "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
+    "observacion": "La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 8 referencia(s) de baja similitud que podrían introducir ruido."
   },
   {
-    "concepto": "development",
+    "concepto": "racionalidad limitada",
     "tipo": "idea",
-    "idea_base": "Chapter 11 Human Resource Management 361 manager, peers, direct reports, customers, or others who interact with the employee regularly. Finally, an individual development plan is an important document that employees should use to map out their personal development goals and actions, and to track their own status and progress toward those goals. Talent development is a collection of organization-wide processes that help to evaluate talent strengths and gaps within the organization.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 370",
+    "idea_base": "Racionalidad limitada A menudo no utilizamos el modelo racional de toma de deci- siones por un motivo: nuestra capacidad limitada para procesar información hace im- posible que asimilemos toda la información que se necesitaría para tomar decisiones óptimas, incluso si esa información está disponible.35 Asimismo, muchos problemas no tienen una solución óptima porque es demasiado complicado aplicar el modelo racio- nal de la toma de decisiones, y la gente sacrifica, es decir, busca soluciones que sean tanto satisfactorias como suficientes. Los seres humanos tienden a reducir los problemas complejos a un nivel comprensible.",
+    "fuente": "Robbins y Judge - Comportamiento organizacional - 17a ed - 2017.pdf",
+    "ubicacion": "p. 218",
     "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
+    "observacion": "La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon referencias de múltiples fuentes para enriquecer el concepto."
   },
   {
-    "concepto": "individuals",
+    "concepto": "relaciones",
     "tipo": "idea",
-    "idea_base": "learning about industry and general environment trends can help individuals and teams forecast more accurately. Individuals within the firm also need to have certain skills to enhance the management of technology and innovation processes.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 622",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "managerial",
-    "tipo": "idea",
-    "idea_base": "Suppression of dissent When a group member exerts his or her power to prevent others from voicing their thoughts or opinions. Summary of Learning Outcomes 2.1 Overview of Managerial Decision-Making 1. What are the basic characteristics of managerial decision-making?",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 58",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "communication",
-    "tipo": "idea",
-    "idea_base": "Chapter 16 Managerial Communication 545 communication processes involve people in different functions and that all functions need to operate effectively to achieve organizational objectives. Chapter Review Questions 1.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 554",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "that they",
-    "tipo": "idea",
-    "idea_base": "Making the jump from individual contributor to manager is never easy, and it doesn’t take long for a new manager to realize that what got him there is much different than what is needed to be successful in the future. Individual contributors that have been recently promoted would probably say that they have strong technical skills in their area, and that they were very good at doing what they were doing. In a more savvy organization that recognizes leadership competencies, individual contributors would probably say that they have strong technical skills AND that they showed some behaviors and potential to lead others.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 514",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "international",
-    "tipo": "idea",
-    "idea_base": "India, have coworkers from Egypt, Brazil, or Germany, or have to negotiate with someone from Russia. This chapter will prepare you for the complexities of international management by discussing some of the crucial issues faced by managers of international companies today. The chapter begins by discussing some of the key factors in making the business world global today and why an understanding of international management is so critical.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 168",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "structures",
-    "tipo": "idea",
-    "idea_base": "334 Chapter 10 Organizational Structure and Change called “tall” structures due to the presence of many levels of management. Summary of Learning Outcomes 10.1 Organizational Structures and Design 1.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 343",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "innovation",
-    "tipo": "idea",
-    "idea_base": "Management of technology and innovation is critical to the organization. Because of innovations and new technologies, we have historically seen the emergence of innovative organizational structures and new ways of performing work.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 625",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta una coincidencia fuerte con el concepto buscado. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "understand",
-    "tipo": "idea",
-    "idea_base": "What steps can you undertake to be better prepared for cross-cultural assignments? While the above sections provided you with many diagnostic tools to understand how to evaluate cross- cultural differences, this section presented you with the ways to prepare for cross-cultural assignments. The goal of any training is to increase cultural intelligence, the ability to function and manage effectively in culturally diverse settings.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 210",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "competitive",
-    "tipo": "idea",
-    "idea_base": "274 Chapter 8 Strategic Analysis: Understanding a Firm’s Competitive Environment 8.6 Competition, Strategy, and Competitive Advantage 6. What does it mean to compete with other firms in a business environment, and what does it mean when a firm has a competitive advantage over its rivals and what generic strategies can a firm implement to gain advantage over its rivals?",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 283",
-    "funcion_sugerida": "desarrollo",
-    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon varias referencias dentro de la misma fuente."
-  },
-  {
-    "concepto": "organizaciones",
-    "tipo": "idea",
-    "idea_base": "Ciencias Administrativas, 2017, núm. 10, July-December, ISSN: 2314-3738 De ello se desprende dicha necesidad de conocimiento referente a las organizaciones y su funcionamiento. Por este motivo han surgido diferentes teorías que han planteado un panorama de las organizaciones en el acontecer real, dejando por sentado en base a evidencia empírica, cómo es que se puede analizar dichas organizaciones mediante teorías que pretenden describir la realidad.",
-    "fuente": "sanchez-banuelos-2017-evolucion-gestion-organizacional.pdf",
-    "ubicacion": "p. 3",
+    "idea_base": "Por otro lado, una proporción significativa de la fuerza laboral australiana está sindicalizada. Esta condición ha incrementado la importancia de los espe- cialistas en relaciones industriales, además de disminuir el control de los gerentes de línea sobre los problemas que se presentan en el ámbito laboral. En 1997, Austra- lia hizo una revisión de sus leyes de trabajo y relaciones industriales con el objetivo de incrementar la producti- vidad y reducir el poder sindical.",
+    "fuente": "Robbins y Coulter - Administracion - 13a ed - 2018.pdf",
+    "ubicacion": "p. 421",
     "funcion_sugerida": "desarrollo",
     "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto."
   },
   {
-    "concepto": "attribution",
+    "concepto": "suficiente precisión",
     "tipo": "idea",
-    "idea_base": "Visit the Instructor Resources section of your book page on openstax.org for more information. Art Attribution In Principles of Management, most art contains attribution to its title, creator, or rights holder, host platform, and license within the caption. Because the art is openly licensed, anyone may reuse the art as long as they provide the same attribution to its original source.",
-    "fuente": "bright-et-al-2019-principles-of-management-openstax.pdf",
-    "ubicacion": "p. 10",
+    "idea_base": "Sin embargo, contar con personal creativo no es suficiente. También se requiere un entorno adecuado que contribuya a transformar los insumos en productos o métodos de trabajo innovadores.",
+    "fuente": "Robbins y Coulter - Administracion - 13a ed - 2018.pdf",
+    "ubicacion": "p. 262",
+    "funcion_sugerida": "desarrollo",
+    "observacion": "La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon referencias de múltiples fuentes para enriquecer el concepto. Hay 8 referencia(s) de baja similitud que podrían introducir ruido."
+  },
+  {
+    "concepto": "teoría administrativa",
+    "tipo": "idea",
+    "idea_base": "xii CONTENIDO 7 Conceptos de motivación 206 La motivación y las primeras teorías 209 Primeras teorías sobre la motivación 210 Teoría de la jerarquía de las necesidades 210 • Teoría de los dos factores 211 • Teoría de las necesidades de McClelland 212 Objetivos de carrera ¿Por qué no siguen mi consejo? 214 Teorías contemporáneas de la motivación 214 Teoría de la autodeterminación 215 ¿Mito o ciencia?",
+    "fuente": "Robbins y Judge - Comportamiento organizacional - 17a ed - 2017.pdf",
+    "ubicacion": "p. 14",
+    "funcion_sugerida": "desarrollo",
+    "observacion": "La ficha presenta coincidencias útiles, pero conviene revisar la pertinencia de cada cita. Se agruparon referencias de múltiples fuentes para enriquecer el concepto."
+  },
+  {
+    "concepto": "trayectoria",
+    "tipo": "idea",
+    "idea_base": "Capítulo 5  Administración de la diversidad    159 una “brecha de ambición de liderazgo”; es decir, las mujeres no tienen puestos altos debido a que realmente no quieren tenerlos.104 Sugiere que las mujeres deben “ir hacia delante” y ser tan aserti- vas como son los hombres para impulsar su desarrollo profesional.105 Sin importar cuál sea la razón de que muy pocas mujeres lleguen a puestos ejecutivos, y como otros han dicho, es momento de romper el techo de cristal para todos los empleados. Cada traba- jador debe tener la oportunidad de utilizar sus habilidades y capacidades de forma que les permita crear una trayectoria profesional en la cual puedan progresar tanto como lo deseen.",
+    "fuente": "Robbins y Coulter - Administracion - 13a ed - 2018.pdf",
+    "ubicacion": "p. 195",
+    "funcion_sugerida": "desarrollo",
+    "observacion": "La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon varias referencias dentro de la misma fuente. Hay 1 referencia(s) de baja similitud que podrían introducir ruido."
+  },
+  {
+    "concepto": "trayectoria teoría",
+    "tipo": "idea",
+    "idea_base": "xii CONTENIDO 7 Conceptos de motivación 206 La motivación y las primeras teorías 209 Primeras teorías sobre la motivación 210 Teoría de la jerarquía de las necesidades 210 • Teoría de los dos factores 211 • Teoría de las necesidades de McClelland 212 Objetivos de carrera ¿Por qué no siguen mi consejo? 214 Teorías contemporáneas de la motivación 214 Teoría de la autodeterminación 215 ¿Mito o ciencia?",
+    "fuente": "Robbins y Judge - Comportamiento organizacional - 17a ed - 2017.pdf",
+    "ubicacion": "p. 14",
     "funcion_sugerida": "desarrollo",
     "observacion": "La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon varias referencias dentro de la misma fuente."
+  },
+  {
+    "concepto": "unidad análisis",
+    "tipo": "idea",
+    "idea_base": "Para cumplirla, ha implementado una estrategia corporativa en sus diferentes líneas de negocio, incluyendo Pepsico Americas Beverage (bebidas), Pepsico Americas Foods (botanas y alimentos estrategia corporativa Estrategia organizacional que determina en qué líneas de negocio opera o desea operar la empresa y qué quiere lograr al participar en ellas Figura 9-3 Tipos de estrategias organizacionales Corporativa Corporación diversiﬁcada Competitiva Unidad estratégica Unidad estratégica Unidad estratégica de negocios 1 de negocios 2 de negocios 3 Funcional Investigación Recursos humanos Manufactura Marketing Finanzas y desarrollo",
+    "fuente": "Robbins y Coulter - Administracion - 13a ed - 2018.pdf",
+    "ubicacion": "p. 319",
+    "funcion_sugerida": "desarrollo",
+    "observacion": "La ficha presenta coincidencias débiles; se recomienda validar manualmente las citas. Se agruparon referencias de múltiples fuentes para enriquecer el concepto."
   }
 ]
