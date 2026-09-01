@@ -36,8 +36,10 @@
 }
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.65em}
-\setlength{\LTpre}{0.4em}
-\setlength{\LTpost}{0.4em}
+\setlength{\LTpre}{0.15em}
+\setlength{\LTpost}{0pt}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
 \renewcommand{\arraystretch}{1.23}
 \linespread{1.22}\selectfont
 \bibliographystyle{apalike}
@@ -45,6 +47,8 @@
 \newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
 \newcommand{\teoria}[1]{\textcolor{itescaRedDark}{\textbf{#1}}}
 \newcommand{\aporte}[1]{\textbullet\ #1\par}
+\newcommand{\horizontalpageson}{\pdfpageattr{\the\pdfpageattr /Rotate 90}}
+\newcommand{\horizontalpagesoff}{\pdfpageattr{\the\pdfpageattr /Rotate 0}}
 
 \begin{document}
 
@@ -90,14 +94,18 @@ La teoría administrativa no evolucionó mediante la sustitución completa de un
 
 Los criterios de evaluación y entrega son la secuencia cronológica, la presencia de los cuatro campos solicitados, la precisión conceptual, la legibilidad de la tabla y el uso de referencias bibliográficas en formato APA.
 
-\section{Trayectoria de la teoría administrativa}
-
-\subsection{Tabla cronológica}
-
+\clearpage
+\newgeometry{left=0.85cm,right=0.85cm,top=0.75cm,bottom=0.75cm}
+\pagestyle{empty}
+\horizontalpageson
 \begin{landscape}
-\small
-\begin{longtable}{L{3.5cm} L{2.7cm} L{4.4cm} L{10.1cm}}
-\caption{Evolución cronológica de la teoría administrativa}\label{tab:evolucion-administrativa}\\
+\phantomsection
+\addcontentsline{toc}{section}{Trayectoria de la teoría administrativa}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.02}
+\begin{longtable}{L{3.7cm} L{2.9cm} L{4.6cm} L{12.8cm}}
+\caption{\textbf{Tabla cronológica: evolución de la teoría administrativa}}\label{tab:evolucion-administrativa}\\[-0.45em]
 \toprule
 \rowcolor{itescaCharcoal}
 \textcolor{white}{\textbf{Nombre de la teoría}} &
@@ -118,7 +126,6 @@ Los criterios de evaluación y entrega son la secuencia cronológica, la presenc
 \endhead
 
 \midrule
-\multicolumn{4}{r}{\small Continúa en la página siguiente}\\
 \endfoot
 
 \bottomrule
@@ -201,12 +208,14 @@ Edith Penrose; Birger Wernerfelt; Jay Barney; Robert Grant; Ikujiro Nonaka; Hiro
 \aporte{Amplió la unidad de análisis desde la empresa aislada hacia aprendizaje, innovación, redes y relaciones interorganizacionales.}
 Este enfoque integra adaptación externa con desarrollo de capacidades internas, sin invalidar los aportes previos \citep{sanchezBanuelos2017}. \\
 
+\midrule
+\multicolumn{4}{L{24.3cm}}{\scriptsize\textit{Nota.} Elaboración propia a partir de \citet{larrarteSinFecha}, \citet{bright2019} y \citet{sanchezBanuelos2017}. Los periodos indican obras o momentos de consolidación y pueden superponerse; las teorías continúan empleándose de forma combinada según el problema administrativo.} \\
+\bottomrule
 \end{longtable}
-
-\begin{minipage}{0.96\linewidth}
-\footnotesize\textit{Nota.} Elaboración propia a partir de \citet{larrarteSinFecha}, \citet{bright2019} y \citet{sanchezBanuelos2017}. Los periodos indican obras o momentos de consolidación y pueden superponerse; las teorías continúan empleándose de forma combinada según el problema administrativo.
-\end{minipage}
 \end{landscape}
+\horizontalpagesoff
+\restoregeometry
+\pagestyle{plain}
 
 \subsection{Lectura evolutiva}
 
@@ -225,14 +234,3 @@ La tabla muestra que administrar en el presente exige una perspectiva contingent
 \bibliography{fundamentos-de-gestion-administrativa}
 
 \end{document}
-
-\section{Criterios de entrega y evaluación}
-
-Para considerar cumplido el entregable, se verifican los siguientes criterios:
-
-\begin{enumerate}
-	\item \textbf{Pertinencia del producto}: El mapa conceptual debe responder al objetivo y propósito planteados.
-	\item \textbf{Cobertura conceptual}: el desarrollo debe incorporar los conceptos fundamentales identificados en la bibliografía y en la síntesis previa.
-	\item \textbf{Sustento académico}: toda afirmación relevante debe mantenerse trazable a las fuentes citadas en el documento.
-	\item \textbf{Claridad argumentativa}: la explicación del producto debe mostrar coherencia, orden expositivo y cierre reflexivo.
-\end{enumerate}
