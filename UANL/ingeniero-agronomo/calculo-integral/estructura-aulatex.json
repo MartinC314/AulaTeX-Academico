@@ -1,0 +1,50 @@
+{
+  "institucion": "Universidad Autónoma de Nuevo León",
+  "facultad": "Facultad de Agronomía",
+  "carrera": "Ingeniero Agrónomo",
+  "materia": "Cálculo Integral",
+  "slug": "calculo-integral",
+  "alumno": "Diego de la Cruz",
+  "actividades": [
+    {
+      "numero": 1,
+      "titulo": "Evidencia 1: aprendizaje basado en problemas",
+      "valor": 20,
+      "entregable": "reporte-calculo-integral-Actividad-1.pdf",
+      "consigna": "planeaciones-calculo-integral/consigna-Actividad-1.md",
+      "fuente": "planeaciones-calculo-integral/Evidencia-1-20-puntos.docx"
+    },
+    {
+      "numero": 2,
+      "titulo": "Actividad ponderada 2.1",
+      "valor": 6,
+      "entregable": "reporte-calculo-integral-Actividad-2.pdf",
+      "consigna": "planeaciones-calculo-integral/consigna-Actividad-2.md",
+      "fuente": "planeaciones-calculo-integral/Actividad-ponderada-2.1-6-puntos.docx"
+    },
+    {
+      "numero": 3,
+      "titulo": "Evidencia 2",
+      "valor": 15,
+      "entregable": "reporte-calculo-integral-Actividad-3.pdf",
+      "consigna": "planeaciones-calculo-integral/consigna-Actividad-3.md",
+      "fuente": "planeaciones-calculo-integral/Evidencia-2-15-puntos.docx"
+    },
+    {
+      "numero": 4,
+      "titulo": "Actividad ponderada 2.2",
+      "valor": 6,
+      "entregable": "reporte-calculo-integral-Actividad-4.pdf",
+      "consigna": "planeaciones-calculo-integral/consigna-Actividad-4.md",
+      "fuente": "planeaciones-calculo-integral/Actividad-ponderada-2.2-6-puntos.docx"
+    },
+    {
+      "numero": 5,
+      "titulo": "PIA de Cálculo Integral",
+      "valor": 30,
+      "entregable": "reporte-calculo-integral-Actividad-5.pdf",
+      "consigna": "planeaciones-calculo-integral/consigna-Actividad-5.md",
+      "fuente": "planeaciones-calculo-integral/PIA-30-puntos.docx"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+\begin{abstractd}
+Este reporte presenta el sustento teórico y el procedimiento de resolución de la Evidencia 1 de Cálculo Integral. Se emplean linealidad, regla de la potencia, sustitución, simplificación algebraica, fracciones parciales e identidades trigonométricas. Cada ejercicio cuya expresión pudo cotejarse sin ambigüedad se desarrolla en una caja CAA y se verifica mediante diferenciación. Las cuatro capturas originales se incluyen como anexos de control para preservar fielmente radicales, exponentes y denominadores.
+\end{abstractd}
+
+\templateIndex
+
+\section{Introducción}
+Una antiderivada de $f$ es una función $F$ tal que $F'(x)=f(x)$. Todas las antiderivadas de una misma función en un intervalo difieren en una constante; por eso la integral indefinida se escribe $\int f(x)\,dx=F(x)+C$. La integración revierte la diferenciación, pero antes de aplicar una fórmula es necesario simplificar productos, cocientes y radicales para reconocer potencias o una composición adecuada \citep{stewart2016calculus,openstax2016calculus1}.
+
+En Agronomía, las integrales permiten acumular tasas de cambio: crecimiento de biomasa, consumo de agua, nutrientes aplicados, producción acumulada y variación de poblaciones. El valor técnico de una solución no reside solamente en obtener una expresión, sino en justificar el método y comprobar que su derivada reproduce el integrando.
+
+\section{Fórmulas y procedimientos}
+\subsection{Reglas básicas}
+Para $n\neq-1$,
+\[
+ \int x^n\,dx=\frac{x^{n+1}}{n+1}+C,\qquad
+ \int\!\bigl(af(x)+bg(x)\bigr)dx=a\int f(x)dx+b\int g(x)dx.
+\]
+Los radicales se reescriben como potencias: $\sqrt{x}=x^{1/2}$ y $\sqrt[3]{x}=x^{1/3}$. Para $x^{-1}$ se utiliza $\int x^{-1}dx=\ln|x|+C$.
+
+\subsection{Sustitución}
+Si $u=g(x)$ y $du=g'(x)dx$, entonces
+\[
+ \int f(g(x))g'(x)\,dx=\int f(u)\,du.
+\]
+El procedimiento consiste en elegir la expresión interna, calcular su diferencial, sustituir, integrar en $u$ y regresar a la variable original.
+
+\subsection{Funciones racionales y trigonométricas}
+Una fracción impropia se divide antes de integrar; una fracción propia se factoriza y, cuando procede, se expresa en fracciones parciales. Entre las identidades directas se usan
+\[
+ \int\sec^2x\,dx=\tan x+C,\quad
+ \int\csc^2x\,dx=-\cot x+C,
+\]
+\[
+ \int\sec x\tan x\,dx=\sec x+C,\quad
+ \int\csc x\cot x\,dx=-\csc x+C.
+\]
+
+\subsection{Control de resultados}
+Para cada respuesta $F(x)+C$ se calcula $F'(x)$. Si la simplificación de $F'$ coincide con el integrando, la antiderivada queda verificada. Esta comprobación detecta errores de signo, exponentes y factores constantes \citep{thomas2018calculus}.
+
+\section{Ejercicios 4.1: antiderivación directa}
+Los siguientes ejercicios se transcribieron directamente de la primera captura. En cada caja se simplifica el integrando, se aplica linealidad y se verifica la respuesta.
+
+\begin{examplebox}{Ejercicio 4.1.10}
+\textbf{Integral:} $\displaystyle \int(3u^5-2u^3)\,du$.
+\[
+ \int(3u^5-2u^3)du
+ =3\frac{u^6}{6}-2\frac{u^4}{4}+C
+ =\frac{u^6-u^4}{2}+C.
+\]
+\textbf{Verificación:} $\displaystyle \frac{d}{du}\left(\frac{u^6-u^4}{2}\right)=3u^5-2u^3$.
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.1.11}
+\textbf{Integral:} $\displaystyle \int y^3(2y^2-3)\,dy$.
+\[
+ \int(2y^5-3y^3)dy=\frac{y^6}{3}-\frac{3y^4}{4}+C.
+\]
+\textbf{Verificación:} $\displaystyle \frac{d}{dy}\left(\frac{y^6}{3}-\frac{3y^4}{4}\right)=2y^5-3y^3$.
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.1.12}
+\textbf{Integral:} $\displaystyle \int x^4(5-x^3)\,dx$.
+\[
+ \int(5x^4-x^7)dx=x^5-\frac{x^8}{8}+C.
+\]
+\textbf{Verificación:} $\displaystyle \frac{d}{dx}\left(x^5-\frac{x^8}{8}\right)=5x^4-x^7$.
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.1.13}
+\textbf{Integral:} $\displaystyle \int(8x^4+4x^3-6x^2-4x+5)\,dx$.
+\[
+ \frac{8}{5}x^5+x^4-2x^3-2x^2+5x+C.
+\]
+\textbf{Verificación:} al derivar término a término se recupera $8x^4+4x^3-6x^2-4x+5$.
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.1.14}
+\textbf{Integral:} $\displaystyle \int(2+3x^2-8x^3)\,dx$.
+\[
+ 2x+x^3-2x^4+C.
+\]
+\textbf{Verificación:} $(2x+x^3-2x^4)'=2+3x^2-8x^3$.
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.1.15}
+\textbf{Integral:} $\displaystyle \int\sqrt{x}(x+1)\,dx$.
+\[
+ \int(x^{3/2}+x^{1/2})dx
+ =\frac{2}{5}x^{5/2}+\frac{2}{3}x^{3/2}+C.
+\]
+\textbf{Verificación:} la derivada es $x^{3/2}+x^{1/2}=\sqrt{x}(x+1)$.
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.1.19}
+\textbf{Integral transcrita:} $\displaystyle \int\sqrt{x^2+4x-4}\,dx$.
+Al completar el cuadrado, $x^2+4x-4=(x+2)^2-8$. Con $u=x+2$ y $a^2=8$,
+\[
+ \int\sqrt{u^2-a^2}\,du
+ =\frac{u}{2}\sqrt{u^2-a^2}-\frac{a^2}{2}
+ \ln\left|u+\sqrt{u^2-a^2}\right|+C.
+\]
+Por tanto,
+\[
+ \frac{x+2}{2}\sqrt{x^2+4x-4}
+ -4\ln\left|x+2+\sqrt{x^2+4x-4}\right|+C.
+\]
+\textbf{Verificación:} al derivar y reducir a denominador común se obtiene $\sqrt{x^2+4x-4}$.
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.1.22}
+\textbf{Integral:} $\displaystyle \int\frac{6t^2}{2t^3-1}\,dt$.
+Sea $u=2t^3-1$, de modo que $du=6t^2dt$:
+\[
+ \int\frac{du}{u}=\ln|u|+C=\ln|2t^3-1|+C.
+\]
+\textbf{Verificación:} $\displaystyle \frac{d}{dt}\ln|2t^3-1|=\frac{6t^2}{2t^3-1}$.
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.1.23}
+\textbf{Integral:} $\displaystyle \int(3\sen t-2\cos t)\,dt$.
+\[
+ -3\cos t-2\sen t+C.
+\]
+\textbf{Verificación:} $(-3\cos t-2\sen t)'=3\sen t-2\cos t$.
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.1.24}
+\textbf{Integral:} $\displaystyle \int(5\cos x-4\sen x)\,dx$.
+\[
+ 5\sen x+4\cos x+C.
+\]
+\textbf{Verificación:} $(5\sen x+4\cos x)'=5\cos x-4\sen x$.
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.1.25}
+\textbf{Integral:} $\displaystyle \int\frac{\sen x}{\cos^2x}\,dx$.
+Como $\sen x/\cos^2x=\tan x\sec x$,
+\[
+ \int\sec x\tan x\,dx=\sec x+C.
+\]
+\textbf{Verificación:} $(\sec x)'=\sec x\tan x=\sen x/\cos^2x$.
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.1.26}
+\textbf{Integral:} $\displaystyle \int\frac{\cos x}{\sen^2x}\,dx$.
+Como $\cos x/\sen^2x=\cot x\csc x$,
+\[
+ \int\csc x\cot x\,dx=-\csc x+C.
+\]
+\textbf{Verificación:} $(-\csc x)'=\csc x\cot x$.
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.1.27}
+\textbf{Integral:} $\displaystyle \int(4\csc x\cot x+2\sec^2x)\,dx$.
+\[
+ -4\csc x+2\tan x+C.
+\]
+\textbf{Verificación:} la derivada es $4\csc x\cot x+2\sec^2x$.
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.1.28}
+\textbf{Integral:} $\displaystyle \int(3\csc^2t-5\sec t\tan t)\,dt$.
+\[
+ -3\cot t-5\sec t+C.
+\]
+\textbf{Verificación:} $(-3\cot t-5\sec t)'=3\csc^2t-5\sec t\tan t$.
+\end{examplebox}
+
+\section{Ejercicios 4.2: sustitución}
+\begin{examplebox}{Ejercicio 4.2.3}
+\textbf{Integral:} $\displaystyle \int x\sqrt[3]{x^2-9}\,dx$.
+Sea $u=x^2-9$, $du=2x\,dx$:
+\[
+ \frac12\int u^{1/3}du=\frac{3}{8}u^{4/3}+C
+ =\frac{3}{8}(x^2-9)^{4/3}+C.
+\]
+\textbf{Verificación:} la regla de la cadena produce $x(x^2-9)^{1/3}$.
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.2.4}
+\textbf{Integral:} $\displaystyle \int x(2x^2+1)^6\,dx$.
+Con $u=2x^2+1$ y $du=4x\,dx$,
+\[
+ \frac14\int u^6du=\frac{u^7}{28}+C
+ =\frac{(2x^2+1)^7}{28}+C.
+\]
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.2.5}
+\textbf{Integral:} $\displaystyle \int x^2(x^3-1)^{10}\,dx$.
+Con $u=x^3-1$, $du=3x^2dx$,
+\[
+ \frac13\int u^{10}du=\frac{(x^3-1)^{11}}{33}+C.
+\]
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.2.36}
+\textbf{Integral:} $\displaystyle \int x(x^2+1)\sqrt{4-2x^2-x^4}\,dx$.
+Como $4-2x^2-x^4=5-(x^2+1)^2$, sea $u=x^2+1$ y $du=2x\,dx$:
+\[
+ \frac12\int u\sqrt{5-u^2}\,du
+ =-\frac16(5-u^2)^{3/2}+C.
+\]
+Así,
+\[
+ -\frac16(4-2x^2-x^4)^{3/2}+C.
+\]
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.2.37}
+\textbf{Integral:} $\displaystyle \int\frac{y+3}{(3-y)^{2/3}}\,dy$.
+Sea $u=3-y$, $dy=-du$ y $y+3=6-u$:
+\[
+ -\int(6-u)u^{-2/3}du
+ =-18u^{1/3}+\frac34u^{4/3}+C.
+\]
+Por tanto,
+\[
+ -18(3-y)^{1/3}+\frac34(3-y)^{4/3}+C.
+\]
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.2.41}
+\textbf{Integral:} $\displaystyle \int\frac{x^3}{(x^2+4)^{3/2}}\,dx$.
+Sea $u=x^2+4$, $x^2=u-4$ y $x\,dx=du/2$:
+\[
+ \frac12\int(u-4)u^{-3/2}du
+ =u^{1/2}+4u^{-1/2}+C.
+\]
+Resultado:
+\[
+ \sqrt{x^2+4}+\frac{4}{\sqrt{x^2+4}}+C.
+\]
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.2.42}
+\textbf{Integral:} $\displaystyle \int\frac{dx}{\sqrt{1-2x^2}}$.
+Usando $u=\sqrt2x$,
+\[
+ \frac1{\sqrt2}\int\frac{du}{\sqrt{1-u^2}}
+ =\frac1{\sqrt2}\arcsen(\sqrt2x)+C.
+\]
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.2.43}
+\textbf{Integral:} $\displaystyle \int\sen x\,\sen(\cos x)\,dx$.
+Con $u=\cos x$, $du=-\sen x\,dx$,
+\[
+ -\int\sen u\,du=\cos u+C=\cos(\cos x)+C.
+\]
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 4.2.44}
+\textbf{Integral:} $\displaystyle \int\sec x\tan x\cos(\sec x)\,dx$.
+Con $u=\sec x$, $du=\sec x\tan x\,dx$,
+\[
+ \int\cos u\,du=\sen u+C=\sen(\sec x)+C.
+\]
+\end{examplebox}
+
+\section{Control editorial de los ejercicios restantes}
+\begin{sourcebox}{Criterio de fidelidad}
+Las capturas segunda, tercera y cuarta presentan parte de sus listas con resolución insuficiente para distinguir de manera inequívoca algunos índices de radical, exponentes y barras de fracción. No se sustituyeron por expresiones inferidas. Los anexos siguientes conservan la fuente primaria y deberán usarse para cerrar la transcripción de cada caja faltante antes de considerar finalizada la evidencia.
+\end{sourcebox}
+
+\section{Conclusiones}
+La resolución muestra que el paso decisivo consiste en reconocer la estructura del integrando. Las expresiones polinomiales se simplifican y se integran término a término; los productos que contienen la derivada de una expresión interna se resuelven por sustitución; y las expresiones trigonométricas se reducen a derivadas conocidas. La derivación de cada resultado funciona como control algebraico independiente. Para una entrega íntegra aún debe completarse la transcripción verificable de las fórmulas que las capturas originales no permiten leer sin ambigüedad.
+
+\clearpage
+\appendix
+\section{Anexos de la consigna original}
+Las siguientes imágenes se extrajeron sin modificación del archivo `Evidencia-1-20-puntos.docx`.
+
+\foreach \n in {1,...,4}{
+  \begin{figure}[p]
+    \centering
+    \includegraphics[width=0.95\textwidth,height=0.86\textheight,keepaspectratio]{UANL/ingeniero-agronomo/calculo-integral/assets-calculo-integral/actividad-1-fuentes/image\n.png}
+    \caption{Captura original \n\ de la Actividad 1.}
+  \end{figure}
+  \clearpage
+}
+
+\nocite{*}
+\bibliography{UANL/ingeniero-agronomo/calculo-integral/calculo-integral}
