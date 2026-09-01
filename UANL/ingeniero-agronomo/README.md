@@ -5,6 +5,7 @@ Espacio académico de la carrera de **Ingeniero Agrónomo** de la Universidad Au
 ## Materias
 
 - [`algebra-lineal/`](algebra-lineal/): Álgebra Lineal.
+- [`calculo-integral/`](calculo-integral/): Cálculo Integral.
 
 ## Convenciones AulaTeX
 
