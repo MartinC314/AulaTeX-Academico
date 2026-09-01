@@ -47,41 +47,51 @@
 \newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
 \newcommand{\teoria}[1]{\textcolor{itescaRedDark}{\textbf{#1}}}
 \newcommand{\aporte}[1]{\textbullet\ #1\par}
-\newcommand{\horizontalpageson}{\pdfpageattr{\the\pdfpageattr /Rotate 90}}
-\newcommand{\horizontalpagesoff}{\pdfpageattr{\the\pdfpageattr /Rotate 0}}
+\newcommand{\horizontalpageson}{\pdfpageattr{/Rotate 90}}
+\newcommand{\horizontalpagesoff}{\pdfpageattr{}}
 
 \begin{document}
 
 \begin{titlepage}
-  \pagecolor{itescaPaper}
+  \thispagestyle{empty}
   \color{itescaInk}
+  \noindent
+  \begin{minipage}[t]{0.62\textwidth}
+    \vspace{0pt}
+    {\small Instituto Tecnológico Superior de Cajeme\par}
+    {\small Maestría en Gestión Administrativa\par}
+    {\small Posgrado e Investigación\par}
+  \end{minipage}%
+  \begin{minipage}[t]{0.38\textwidth}
+    \vspace{0pt}\raggedleft
+    \includegraphics[width=5.2cm]{ITESCA/assets-itesca/web/logo-itesca-contorno.png}
+  \end{minipage}
+
+  \vfill
   \begin{center}
-    \vspace*{0.7cm}
-    \includegraphics[width=5.4cm]{ITESCA/assets-itesca/web/logo-itesca-contorno.png}\\[0.75cm]
-    {\Large Instituto Tecnológico Superior de Cajeme}\\[0.2cm]
-    {\large Maestría en Gestión Administrativa}\\[0.9cm]
-    {\color{itescaRedDark}\rule{0.84\linewidth}{1.5pt}}\\[0.55cm]
-    {\Huge\bfseries Actividad 4\par}
-    \vspace{0.35cm}
-    {\LARGE\bfseries Tabla cronológica de la evolución de la teoría administrativa\par}
-    \vspace{0.4cm}
-    {\Large Unidad II · Evolución de la Gestión · 10\%\par}
+    {\color{itescaRedDark}\fontsize{25}{30}\selectfont\bfseries
+      Tabla cronológica de la evolución de la teoría administrativa\par}
     \vspace{0.45cm}
-    {\color{itescaRed}\rule{0.62\linewidth}{1.1pt}}\\[0.95cm]
-    \begin{tabular}{rl}
-      \textbf{Alumno:} & Martin Jonathan de la Cruz \\
-      \textbf{Matrícula:} & ITESCA--MGA \\
-      \textbf{Docente:} & Por definir \\
-      \textbf{Asignatura:} & Fundamentos de Gestión Administrativa \\
-      \textbf{Clave:} & ACF--0901 \\
-      \textbf{Créditos:} & 6 \\
-      \textbf{Producto:} & Tabla cronológica \\
-      \textbf{Periodo de entrega:} & 17 al 24 de agosto de 2026
-    \end{tabular}
-    \vfill
-    {\small Cajeme, Sonora · Agosto de 2026}
+    {\large Actividad 4 -- Fundamentos de Gestión Administrativa\par}
   \end{center}
-  \nopagecolor
+
+  \vfill
+  \noindent
+  \begin{minipage}{\textwidth}
+    \raggedleft
+    \renewcommand{\arraystretch}{1.18}
+    \begin{tabular}{ll}
+      \textbf{Alumno:} & Martin Jonathan de la Cruz \\
+      No. de control: & Por confirmar \\
+      Carrera: & Maestría en Gestión Administrativa \\
+      Semestre: & Agosto--noviembre de 2026 \\
+      Asignatura: & Fundamentos de Gestión Administrativa \\
+      Docente: & Docente de la materia por confirmar \\
+      Modalidad: & En línea \\
+      Fecha de entrega: & 24 de agosto de 2026 \\
+      Lugar: & Cajeme, Sonora
+    \end{tabular}
+  \end{minipage}
 \end{titlepage}
 
 % Técnica didáctica: tabla cronológica. Criterio: teoría -> periodo -> precursores -> aportaciones.
@@ -103,7 +113,7 @@ Los criterios de evaluación y entrega son la secuencia cronológica, la presenc
 \addcontentsline{toc}{section}{Trayectoria de la teoría administrativa}
 \scriptsize
 \setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.02}
+\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{L{3.7cm} L{2.9cm} L{4.6cm} L{12.8cm}}
 \caption{\textbf{Tabla cronológica: evolución de la teoría administrativa}}\label{tab:evolucion-administrativa}\\[-0.45em]
 \toprule

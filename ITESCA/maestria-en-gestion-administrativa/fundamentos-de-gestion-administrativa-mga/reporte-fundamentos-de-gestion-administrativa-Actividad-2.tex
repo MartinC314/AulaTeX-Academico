@@ -110,44 +110,42 @@ El \textbf{marco estructural} estudia roles, reglas, metas y coordinación; el d
 \thispagestyle{empty}
 \begingroup
 \centering
-{\Large\bfseries\color{itescaRedDark}Mapa conceptual: enfoques múltiples de la organización\par}
-\vspace{0.35cm}
-\resizebox{0.96\linewidth}{!}{%
+\resizebox{0.90\linewidth}{!}{%
 \begin{tikzpicture}[
- root/.style={rounded corners=3pt,draw=itescaRedDark,fill=itescaRedDark,text=white,font=\bfseries\large,align=center,text width=5.4cm,minimum height=1.25cm},
- branch/.style={rounded corners=2pt,draw=itescaRed,fill=itescaRed!10,font=\bfseries\small,align=center,text width=4cm,minimum height=1.05cm},
- concept/.style={rounded corners=2pt,draw=itescaCharcoal!65,fill=white,font=\footnotesize,align=center,text width=3.8cm,minimum height=1.05cm},
+ root/.style={rounded corners=3pt,draw=itescaRedDark,fill=itescaRedDark,text=white,font=\bfseries\large,align=center,text width=5.4cm,minimum height=1.5cm},
+ branch/.style={rounded corners=2pt,draw=itescaRed,fill=itescaRed!10,font=\bfseries\small,align=center,text width=4cm,minimum height=1.35cm},
+ concept/.style={rounded corners=2pt,draw=itescaCharcoal!65,fill=white,font=\footnotesize,align=center,text width=3.8cm,minimum height=1.35cm},
  edge/.style={-{Stealth[length=2mm]},thick,draw=itescaCharcoal!75},
  cross/.style={-{Stealth[length=2mm]},thick,dashed,draw=itescaRed!75},
  label/.style={font=\scriptsize\itshape,fill=white,inner sep=1.2pt,align=center}
 ]
-\node[root] (root) at (0,7.8) {ENFOQUES MÚLTIPLES\\DE LA ORGANIZACIÓN};
-\node[branch] (bd) at (-7.8,5.7) {Bolman y Deal\\cuatro marcos};
-\node[branch] (mo) at (0,5.7) {Morgan\\ocho metáforas};
-\node[branch] (gl) at (7.8,5.7) {Perspectiva global\\lectura transversal};
+\node[root] (root) at (0,15.6) {ENFOQUES MÚLTIPLES\\DE LA ORGANIZACIÓN};
+\node[branch] (bd) at (-7.8,11.8) {Bolman y Deal\\cuatro marcos};
+\node[branch] (mo) at (0,11.8) {Morgan\\ocho metáforas};
+\node[branch] (gl) at (7.8,11.8) {Perspectiva global\\lectura transversal};
 \draw[edge] (root) -- node[label]{se clasifican mediante} (bd);
 \draw[edge] (root) -- node[label]{se reinterpretan con} (mo);
 \draw[edge] (root) -- node[label]{se contextualizan desde} (gl);
 
-\node[concept] (es) at (-10,3.6) {Estructural\\roles, reglas, metas\\y coordinación};
-\node[concept] (rh) at (-5.6,3.6) {Recursos humanos\\necesidades, capacidades\\y participación};
-\node[concept] (po) at (-10,1.6) {Político\\intereses, conflicto,\\poder y negociación};
-\node[concept] (si) at (-5.6,1.6) {Simbólico\\cultura, rituales,\\relatos y sentido};
+\node[concept] (es) at (-10,7.7) {Estructural\\roles, reglas, metas\\y coordinación};
+\node[concept] (rh) at (-5.6,7.7) {Recursos humanos\\necesidades, capacidades\\y participación};
+\node[concept] (po) at (-10,3.8) {Político\\intereses, conflicto,\\poder y negociación};
+\node[concept] (si) at (-5.6,3.8) {Simbólico\\cultura, rituales,\\relatos y sentido};
 \foreach \n in {es,rh,po,si} \draw[edge] (bd) -- node[label]{incluye} (\n);
 
-\node[concept] (m1) at (-2.2,3.6) {Máquina / organismo\\orden y adaptación};
-\node[concept] (m2) at (2.2,3.6) {Cerebro / cultura\\aprendizaje y significado};
-\node[concept] (m3) at (-2.2,1.6) {Sistema político /\\prisión psíquica};
-\node[concept] (m4) at (2.2,1.6) {Flujo y transformación /\\instrumento de dominación};
+\node[concept] (m1) at (-2.2,7.7) {Máquina / organismo\\orden y adaptación};
+\node[concept] (m2) at (2.2,7.7) {Cerebro / cultura\\aprendizaje y significado};
+\node[concept] (m3) at (-2.2,3.8) {Sistema político /\\prisión psíquica};
+\node[concept] (m4) at (2.2,3.8) {Flujo y transformación /\\instrumento de dominación};
 \foreach \n in {m1,m2,m3,m4} \draw[edge] (mo) -- node[label]{representa como} (\n);
 
-\node[concept] (g1) at (5.6,3.6) {Economía y tecnología\\transforman capacidades};
-\node[concept] (g2) at (10,3.6) {Política y cultura\\modifican reglas y sentido};
-\node[concept] (g3) at (5.6,1.6) {Interdependencia\\vincula actores y países};
-\node[concept] (g4) at (10,1.6) {Adaptación responsable\\responde al entorno};
+\node[concept] (g1) at (5.6,7.7) {Economía y tecnología\\transforman capacidades};
+\node[concept] (g2) at (10,7.7) {Política y cultura\\modifican reglas y sentido};
+\node[concept] (g3) at (5.6,3.8) {Interdependencia\\vincula actores y países};
+\node[concept] (g4) at (10,3.8) {Adaptación responsable\\responde al entorno};
 \foreach \n in {g1,g2,g3,g4} \draw[edge] (gl) -- node[label]{considera} (\n);
 
-\node[root,font=\bfseries\small,minimum width=5.5cm] (diag) at (0,-0.6) {DIAGNÓSTICO INTEGRAL\\decidir sin reducir la complejidad};
+\node[root,font=\bfseries\small,minimum width=5.5cm] (diag) at (0,-1.2) {DIAGNÓSTICO INTEGRAL\\decidir sin reducir la complejidad};
 \draw[edge] (es) -- node[label]{ordena} (diag);
 \draw[edge] (rh) -- node[label]{humaniza} (diag);
 \draw[edge] (po) -- node[label]{explica tensiones} (diag);
@@ -163,8 +161,11 @@ El \textbf{marco estructural} estudia roles, reglas, metas y coordinación; el d
 \draw[cross] (g2) to[bend left=10] node[label]{modifica intereses y símbolos} (po);
 \end{tikzpicture}}
 
-\vspace{0.25cm}
-{\footnotesize\textbf{Figura 1.} Los marcos de acción, las metáforas interpretativas y las condiciones globales convergen en un diagnóstico integral. Elaboración propia con base en \citeauthor{bolmanDeal2021}, \citeauthor{morgan2006} y \citeauthor{bright2019}.}
+\par\vspace{0.03cm}
+\begin{minipage}{0.88\linewidth}
+\centering\scriptsize
+\textbf{Figura 1.} Los marcos de acción, las metáforas interpretativas y las condiciones globales convergen en un diagnóstico integral. Elaboración propia con base en \citeauthor{bolmanDeal2021}, \citeauthor{morgan2006} y \citeauthor{bright2019}.
+\end{minipage}
 \endgroup
 \end{landscape}
 
