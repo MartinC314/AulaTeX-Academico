@@ -97,14 +97,16 @@ El propósito del esquema es distinguir el funcionamiento de PENSIONISSSTE y ord
 {\small\color{unadmGreenDark}\textbf{Pregunta rectora:} ¿qué requisitos debe acreditar la persona trabajadora y qué función cumple PENSIONISSSTE desde la recepción de aportaciones hasta el pago de la modalidad pensionaria?}
 
 \clearpage
+\newgeometry{top=0.65cm,bottom=0.65cm,left=0.75cm,right=0.75cm}
 \begin{landscape}
 \thispagestyle{empty}
-\newgeometry{top=0.7cm,bottom=0.65cm,left=0.75cm,right=0.75cm}
 \begin{center}
 {\color{unadmGreenDark}\LARGE\bfseries Esquema integral del PENSIONISSSTE\par}
 {\small Naturaleza, operación de la cuenta individual, pensiones y modalidades de pago\par}
-\vspace{0.3cm}
-\resizebox{0.98\linewidth}{!}{%
+\vspace{0.2cm}
+% La escala se limita por altura para conservar diagrama y fuente en una sola página.
+\makebox[\linewidth][c]{%
+\resizebox{!}{16.6cm}{%
 \begin{tikzpicture}[
   font=\sffamily,
   principal/.style={rectangle,rounded corners=5pt,draw=unadmGreenDark,very thick,fill=unadmGreenDark,text=white,align=center,text width=9.2cm,minimum height=1.25cm,inner sep=7pt,font=\bfseries\Large},
@@ -176,13 +178,14 @@ Es derecho de cada trabajador y puede operarla PENSIONISSSTE o una administrador
 \draw[enlace] ([xshift=-6cm]modT.south) -- (m1.north);
 \draw[enlace] ([xshift=6cm]modT.south) -- (m2.north);
 \end{tikzpicture}%
+}%
 }
-\vspace{0.22cm}
+\vspace{0.12cm}
 
-{\footnotesize\textit{Figura 1. Elaboración propia con base en los artículos 76--113 de la LISSSTE y los materiales de la semana 8 \citep{lissste2026,materialS8DSS2026}.}}
+{\scriptsize\textit{Figura 1. Elaboración propia con base en los artículos 76--113 de la LISSSTE y los materiales de la semana 8 \citep{lissste2026,materialS8DSS2026}.}}
 \end{center}
-\restoregeometry
 \end{landscape}
+\restoregeometry
 \clearpage
 
 \section{Lectura jurídica del esquema}
