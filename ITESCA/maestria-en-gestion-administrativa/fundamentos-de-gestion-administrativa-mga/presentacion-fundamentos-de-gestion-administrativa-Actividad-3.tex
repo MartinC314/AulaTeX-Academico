@@ -84,10 +84,10 @@
 \end{frame}
 
 \begin{frame}{Kast y Rosenzweig: organización como sistema abierto}
-\begin{center}\begin{tikzpicture}[node distance=.65cm,font=\small]
-\node[draw,rounded corners,fill=itescaSilver!35,text width=3.1cm,minimum height=1cm,align=center] (in) {\textbf{Entradas}\\recursos, personas, información};
-\node[draw=itescaRedDark,very thick,circle,fill=itescaRed!8,right=of in,minimum size=2.5cm,align=center] (org) {\textbf{Sistema}\\organización};
-\node[draw,rounded corners,fill=itescaSilver!35,text width=3.1cm,minimum height=1cm,right=of org,align=center] (out) {\textbf{Salidas}\\bienes, servicios, resultados};
+\begin{center}\begin{tikzpicture}[node distance=1.1cm]
+\node[draw,rounded corners,fill=itescaSilver!35,minimum width=2.5cm,minimum height=1cm] (in) {\textbf{Entradas}\\recursos, personas, información};
+\node[draw=itescaRedDark,very thick,circle,fill=itescaRed!8,right=of in,minimum size=2.65cm] (org) {\textbf{Sistema}\\organización};
+\node[draw,rounded corners,fill=itescaSilver!35,minimum width=2.5cm,minimum height=1cm,right=of org] (out) {\textbf{Salidas}\\bienes, servicios, resultados};
 \draw[-{Latex[length=3mm]},very thick,itescaRedDark] (in)--(org);\draw[-{Latex[length=3mm]},very thick,itescaRedDark] (org)--(out);
 \draw[-{Latex[length=3mm]},thick,bend left=38] (out) to node[above,font=\scriptsize]{retroalimentación} (org);
 \end{tikzpicture}\end{center}
@@ -109,7 +109,6 @@
 \end{frame}
 
 \begin{frame}{El entorno organizacional}
-\footnotesize
 \begin{columns}[T]\begin{column}{.49\textwidth}
 \begin{block}{Entorno general (macro)}
 Fuerzas que afectan indirectamente a muchas organizaciones:
