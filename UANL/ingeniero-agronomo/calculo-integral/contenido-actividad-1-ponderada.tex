@@ -1,0 +1,195 @@
+\begin{abstractd}
+Este reporte resuelve los cuatro ejercicios de la Actividad ponderada mediante integración por partes. En cada caso se conserva la elección indicada de $u$ y $dv$, se calculan $du$ y $v$, se aplica la fórmula $\int u\,dv=uv-\int v\,du$ y se verifica el resultado por diferenciación. El procedimiento muestra cómo integrar productos de funciones algebraicas con logaritmos, exponenciales y funciones trigonométricas.
+\end{abstractd}
+
+\templateIndex
+
+\section{Introducción}
+La integración por partes deriva de la regla del producto. Si
+\[
+ \frac{d}{dx}(uv)=u\frac{dv}{dx}+v\frac{du}{dx},
+\]
+al integrar y despejar se obtiene
+\[
+ \boxed{\int u\,dv=uv-\int v\,du}.
+\]
+El método es apropiado cuando el integrando es un producto y una de las funciones se simplifica al derivarse, mientras la otra puede integrarse directamente. En esta actividad las elecciones de $u$ y $dv$ ya están indicadas en la consigna; esto permite concentrarse en el cálculo correcto de $du$, $v$ y la integral restante \citep{stewart2016calculus,openstax2016calculus2}.
+
+\section{Fórmulas y procedimiento resumido}
+\subsection{Fórmulas auxiliares}
+\[
+ \frac{d}{dx}\ln x=\frac1x\quad(x>0),\qquad
+ \int x^n\,dx=\frac{x^{n+1}}{n+1}+C\quad(n\neq-1),
+\]
+\[
+ \int e^x\,dx=e^x+C,
+ \qquad \int\sen(ax)\,dx=-\frac{\cos(ax)}{a}+C,
+ \qquad \int\cos(ax)\,dx=\frac{\sen(ax)}{a}+C.
+\]
+
+\subsection{Secuencia de trabajo}
+\begin{enumerate}
+  \item Identificar $u$ y $dv$ según la consigna.
+  \item Derivar $u$ para obtener $du$ e integrar $dv$ para obtener $v$.
+  \item Sustituir en $\int u\,dv=uv-\int v\,du$.
+  \item Resolver la integral restante, simplificar y añadir $C$.
+  \item Derivar la respuesta y comprobar que se recupera el integrando.
+\end{enumerate}
+
+\section{Resolución de ejercicios}
+
+\begin{examplebox}{Ejercicio 7: $\int x^3\ln x\,dx$}
+\textbf{Elección indicada:}
+\[
+ u=\ln x,\qquad dv=x^3\,dx.
+\]
+Derivamos $u$ e integramos $dv$:
+\[
+ du=\frac{d}{dx}(\ln x)\,dx=\frac{1}{x}\,dx,
+ \qquad
+ v=\int x^3dx=\frac{x^{3+1}}{3+1}=\frac{x^4}{4}.
+\]
+Sustituimos $u$, $v$ y $du$ en $uv-\int v\,du$:
+\begin{align*}
+ \int x^3\ln x\,dx
+ &=(\ln x)\left(\frac{x^4}{4}\right)
+   -\int\left(\frac{x^4}{4}\right)\left(\frac{1}{x}\,dx\right)\\
+ &=\frac{x^4}{4}\ln x-\int\frac{x^4}{4x}\,dx\\
+ &=\frac{x^4}{4}\ln x-\frac14\int x^3dx\\
+ &=\frac{x^4}{4}\ln x-\frac14\left(\frac{x^4}{4}\right)+C\\
+ &=\frac{x^4}{4}\ln x-\frac{x^4}{16}+C.
+\end{align*}
+\textbf{Resultado:}
+\[
+ \boxed{\int x^3\ln x\,dx=\frac{x^4}{4}\ln x-\frac{x^4}{16}+C},\qquad x>0.
+\]
+\textbf{Verificación:}
+\begin{align*}
+ \frac{d}{dx}\left(\frac{x^4}{4}\ln x-\frac{x^4}{16}\right)
+ &=\frac{d}{dx}\left(\frac{x^4}{4}\ln x\right)
+   -\frac{d}{dx}\left(\frac{x^4}{16}\right)\\
+ &=\left(x^3\ln x+\frac{x^4}{4}\frac1x\right)-\frac{4x^3}{16}\\
+ &=x^3\ln x+\frac{x^3}{4}-\frac{x^3}{4}=x^3\ln x.
+\end{align*}
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 8: $\int(4x+7)e^x\,dx$}
+\textbf{Elección indicada:}
+\[
+ u=4x+7,\qquad dv=e^x\,dx.
+\]
+Derivamos $u$ e integramos $dv$:
+\[
+ du=\frac{d}{dx}(4x+7)\,dx=4\,dx,
+ \qquad v=\int e^x\,dx=e^x.
+\]
+Sustituimos en $uv-\int v\,du$:
+\begin{align*}
+ \int(4x+7)e^x\,dx
+ &=(4x+7)e^x-\int e^x(4\,dx)\\
+ &=(4x+7)e^x-4\int e^x\,dx\\
+ &=(4x+7)e^x-4e^x+C\\
+ &=\bigl[(4x+7)-4\bigr]e^x+C\\
+ &=(4x+3)e^x+C.
+\end{align*}
+\textbf{Resultado:}
+\[
+ \boxed{\int(4x+7)e^x\,dx=(4x+3)e^x+C}.
+\]
+\textbf{Verificación:}
+\begin{align*}
+ \frac{d}{dx}\bigl((4x+3)e^x\bigr)
+ &=(4x+3)'e^x+(4x+3)(e^x)'\\
+ &=4e^x+(4x+3)e^x\\
+ &=(4x+7)e^x.
+\end{align*}
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 9: $\int x\sen(3x)\,dx$}
+\textbf{Elección indicada:}
+\[
+ u=x,\qquad dv=\sen(3x)\,dx.
+\]
+Derivamos $u$. Para integrar $dv$, usamos $w=3x$, de modo que
+$dw=3\,dx$ y $dx=dw/3$:
+\[
+ du=\frac{d}{dx}(x)\,dx=dx,
+ \qquad
+ v=\int\sen(3x)dx
+ =\frac13\int\sen w\,dw
+ =-\frac13\cos(3x).
+\]
+Sustituimos en $uv-\int v\,du$:
+\begin{align*}
+ \int x\sen(3x)\,dx
+ &=x\left(-\frac13\cos(3x)\right)
+   -\int\left(-\frac13\cos(3x)\right)dx\\
+ &=-\frac{x}{3}\cos(3x)+\frac13\int\cos(3x)dx\\
+ &=-\frac{x}{3}\cos(3x)
+   +\frac13\left(\frac13\sen(3x)\right)+C\\
+ &=-\frac{x}{3}\cos(3x)+\frac19\sen(3x)+C.
+\end{align*}
+\textbf{Resultado:}
+\[
+ \boxed{\int x\sen(3x)\,dx=-\frac{x}{3}\cos(3x)+\frac19\sen(3x)+C}.
+\]
+\textbf{Verificación:}
+\begin{align*}
+ \frac{d}{dx}\left(-\frac{x}{3}\cos(3x)+\frac19\sen(3x)\right)
+ &=-\frac13\left[x'\cos(3x)+x\bigl(\cos(3x)\bigr)'\right]
+   +\frac19\bigl(\sen(3x)\bigr)'\\
+ &=-\frac13\left[\cos(3x)-3x\sen(3x)\right]
+   +\frac19\left[3\cos(3x)\right]\\
+ &=-\frac13\cos(3x)+x\sen(3x)+\frac13\cos(3x)\\
+ &=x\sen(3x).
+\end{align*}
+\end{examplebox}
+
+\begin{examplebox}{Ejercicio 10: $\int x\cos(4x)\,dx$}
+\textbf{Elección indicada:}
+\[
+ u=x,\qquad dv=\cos(4x)\,dx.
+\]
+Derivamos $u$. Para integrar $dv$, hacemos $w=4x$; entonces
+$dw=4\,dx$ y $dx=dw/4$:
+\[
+ du=\frac{d}{dx}(x)\,dx=dx,
+ \qquad
+ v=\int\cos(4x)dx
+ =\frac14\int\cos w\,dw
+ =\frac14\sen(4x).
+\]
+Sustituimos en $uv-\int v\,du$:
+\begin{align*}
+ \int x\cos(4x)\,dx
+ &=x\left(\frac14\sen(4x)\right)
+   -\int\left(\frac14\sen(4x)\right)dx\\
+ &=\frac{x}{4}\sen(4x)-\frac14\int\sen(4x)dx\\
+ &=\frac{x}{4}\sen(4x)
+   -\frac14\left(-\frac14\cos(4x)\right)+C\\
+ &=\frac{x}{4}\sen(4x)+\frac1{16}\cos(4x)+C.
+\end{align*}
+\textbf{Resultado:}
+\[
+ \boxed{\int x\cos(4x)\,dx=\frac{x}{4}\sen(4x)+\frac1{16}\cos(4x)+C}.
+\]
+\textbf{Verificación:}
+\begin{align*}
+ \frac{d}{dx}\left(\frac{x}{4}\sen(4x)+\frac1{16}\cos(4x)\right)
+ &=\frac14\left[x'\sen(4x)+x\bigl(\sen(4x)\bigr)'\right]
+   +\frac1{16}\bigl(\cos(4x)\bigr)'\\
+ &=\frac14\left[\sen(4x)+4x\cos(4x)\right]
+   +\frac1{16}\left[-4\sen(4x)\right]\\
+ &=\frac14\sen(4x)+x\cos(4x)-\frac14\sen(4x)\\
+ &=x\cos(4x).
+\end{align*}
+\end{examplebox}
+
+\section{Comprobación global}
+Las cuatro verificaciones producen exactamente los integrandos originales. Además, una comprobación simbólica independiente confirmó que la diferencia entre la derivada de cada respuesta y su integrando es cero. La constante $C$ aparece en todas las respuestas porque se trata de integrales indefinidas.
+
+\section{Conclusiones}
+La integración por partes transforma un producto difícil en otro más sencillo. En el ejercicio logarítmico, derivar $\ln x$ elimina el logaritmo; en el exponencial, derivar el factor lineal lo convierte en una constante; y en los ejercicios trigonométricos, derivar $x$ reduce el producto a una integral inmediata. Los signos y factores $1/3$ y $1/4$ son esenciales al integrar funciones trigonométricas compuestas. La verificación por derivación confirma los cuatro resultados y constituye el control más directo del procedimiento.
+
+\nocite{thomas2018calculus,openstax2016calculus1}
+\bibliography{UANL/ingeniero-agronomo/calculo-integral/calculo-integral}

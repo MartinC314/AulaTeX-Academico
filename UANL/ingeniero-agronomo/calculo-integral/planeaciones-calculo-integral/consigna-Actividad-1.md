@@ -1,28 +1,23 @@
-# Actividad 1 — Evidencia 1: aprendizaje basado en problemas
+# Actividad 1 — Actividad ponderada: integración por partes
 
 ## Datos de la consigna
 
-- **Valor:** 20 puntos.
-- **Indicación original:** resolver a mano y entregar en hoja de máquina.
-- **Fuente original:** `Evidencia-1-20-puntos.docx`.
-- **Criterio de elaboración ampliado:** resolver todos los ejercicios visibles en los anexos, aunque la instrucción original pudiera solicitar una selección.
+- **Valor:** 6 puntos.
+- **Indicación original:** resolver adecuadamente y entregar a mano en hoja de máquina.
+- **Fuente oficial:** `Actividad-ponderada-1.md`.
+- **Tema:** integración por partes.
 
-## Contenido identificado
+## Ejercicios
 
-La evidencia reúne cuatro capturas de ejercicios de integración tomadas de *El cálculo*, séptima edición, de Louis Leithold:
-
-1. **Ejercicios 4.1:** antiderivación y verificación de resultados.
-2. **Ejercicios 4.2:** antiderivación mediante sustitución.
-3. **Ejercicios 1–24:** integrales de funciones racionales y otras expresiones, principalmente mediante fracciones parciales y transformaciones algebraicas.
-4. **Ejercicios 25–36:** sustitución y funciones trigonométricas.
+7. $\int x^{3}\ln x\,dx$, con $u=\ln x$ y $dv=x^{3}\,dx$.
+8. $\int(4x+7)e^{x}\,dx$, con $u=4x+7$ y $dv=e^{x}\,dx$.
+9. $\int x\operatorname{sen}(3x)\,dx$, con $u=x$ y $dv=\operatorname{sen}(3x)\,dx$.
+10. $\int x\cos(4x)\,dx$, con $u=x$ y $dv=\cos(4x)\,dx$.
 
 ## Alcance obligatorio del reporte
 
-- Transcribir y resolver cada ejercicio incluido en las cuatro capturas.
-- Mostrar fórmula, procedimiento, simplificación, constante de integración y verificación por derivación cuando corresponda.
-- Incluir brevemente las reglas de potencia, linealidad, sustitución, identidades trigonométricas y descomposición en fracciones parciales.
+- Resolver los cuatro ejercicios.
+- Incorporar la fórmula $\int u\,dv=uv-\int v\,du$ y el procedimiento resumido.
+- Mostrar $u$, $dv$, $du$, $v$, sustitución, simplificación, resultado y constante $C$.
+- Verificar cada resultado mediante diferenciación.
 - Presentar cada ejercicio en una caja de actividad AulaTeX.
-
-## Control de fidelidad
-
-Las fórmulas se encuentran incrustadas como imágenes en el archivo Word. El documento original constituye la fuente autoritativa para exponentes, radicales, numeradores, denominadores y funciones trigonométricas; toda transcripción LaTeX debe cotejarse visualmente con las cuatro capturas antes de resolverla.
