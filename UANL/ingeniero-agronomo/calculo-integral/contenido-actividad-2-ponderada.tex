@@ -18,14 +18,17 @@ con $M=1200$, primero se observa que $w(t)=M$ es una solución constante. Para l
 \begin{align*}
  \frac{dw}{M-w}&=k\,dt,\\
  \int\frac{dw}{M-w}&=\int k\,dt,\\
+ u&=M-w,\qquad du=-dw,\\
+ \int\frac{dw}{M-w}&=-\int\frac{du}{u}=-\ln|u|+C_1,\\
  -\ln|M-w|&=kt+C.
 \end{align*}
-Multiplicando por $-1$ y exponentiando:
+En la última igualdad, las constantes de integración de ambos miembros se reúnen en una sola constante $C$. Multiplicando por $-1$ y aplicando la función exponencial a ambos lados:
 \begin{align*}
  \ln|M-w|&=-kt-C,\\
+ e^{\ln|M-w|}&=e^{-kt-C},\\
  |M-w|&=e^{-C}e^{-kt}.
 \end{align*}
-El factor $e^{-C}$ es positivo; al retirar el valor absoluto, su signo se incorpora en una constante real $A$. Así,
+El factor $e^{-C}$ es una constante positiva. Al retirar el valor absoluto aparecen los signos positivo y negativo; ambos se incorporan en una constante real $A$. Así,
 \[
  M-w=Ae^{-kt},
  \qquad
@@ -33,6 +36,7 @@ El factor $e^{-C}$ es positivo; al retirar el valor absoluto, su signo se incorp
 \]
 El caso de equilibrio queda incluido al tomar $A=0$. La condición inicial permite determinar $A$, y la solución se verifica derivándola y sustituyéndola en la ecuación original.
 
+\Needspace{12\baselineskip}
 \section{Problema 63: becerro de 60 libras}
 
 \begin{examplebox}{Planteamiento y solución general}
@@ -43,11 +47,29 @@ Los datos son
  \frac{dw}{dt}=k(1200-w),
  \qquad k>0.
 \]
-La forma obtenida por separación es
+Como $w(0)=60\neq1200$, la trayectoria buscada no es la solución constante $w=1200$. Se divide entre $1200-w$ y se multiplica por $dt$:
+\begin{align*}
+ \frac{1}{1200-w}\frac{dw}{dt}&=k,\\
+ \frac{dw}{1200-w}&=k\,dt.
+\end{align*}
+Se integran ambos miembros. En el lado izquierdo se usa $u=1200-w$, por lo que $du=-dw$:
+\begin{align*}
+ \int\frac{dw}{1200-w}&=\int k\,dt,\\
+ -\int\frac{du}{u}&=kt+C_1,\\
+ -\ln|u|&=kt+C_1,\\
+ -\ln|1200-w|&=kt+C_1.
+\end{align*}
+Ahora se multiplica por $-1$ y se aplica la función exponencial:
+\begin{align*}
+ \ln|1200-w|&=-kt-C_1,\\
+ |1200-w|&=e^{-C_1}e^{-kt},\\
+ 1200-w&=Ae^{-kt}.
+\end{align*}
+La constante real $A$ incorpora el factor positivo $e^{-C_1}$ y los dos signos posibles al retirar el valor absoluto. Al despejar $w$ se obtiene
 \[
  w(t)=1200-Ae^{-kt}.
 \]
-Se aplica la condición inicial:
+Se aplica la condición inicial $w(0)=60$:
 \begin{align*}
  60&=1200-Ae^0,\\
  60&=1200-A,\\
@@ -60,30 +82,40 @@ Por tanto, el modelo para cualquier constante positiva $k$ es
 \]
 
 \textbf{Comprobación:}
-\[
- w'(t)=1140ke^{-kt}
- \quad\text{y}\quad
- k(1200-w)=k\bigl(1140e^{-kt}\bigr)=1140ke^{-kt}.
-\]
+\begin{align*}
+ w'(t)&=\frac{d}{dt}\left(1200-1140e^{-kt}\right)\\
+ &=0-1140e^{-kt}(-k)\\
+ &=1140ke^{-kt},\\[1mm]
+ k(1200-w(t))&=k\left[1200-\left(1200-1140e^{-kt}\right)\right]\\
+ &=k\left(1140e^{-kt}\right)\\
+ &=1140ke^{-kt}.
+\end{align*}
 Además, $w(0)=1200-1140=60$, de modo que se satisfacen tanto la ecuación diferencial como el dato inicial.
 \end{examplebox}
 
 \subsection{Inciso a: soluciones y representación gráfica}
 Al sustituir los tres valores de $k$ se obtienen las soluciones:
 \begin{align*}
- k=0.8:&\quad \boxed{w_{0.8}(t)=1200-1140e^{-0.8t}},\\
- k=0.9:&\quad \boxed{w_{0.9}(t)=1200-1140e^{-0.9t}},\\
- k=1.0:&\quad \boxed{w_{1.0}(t)=1200-1140e^{-t}}.
+ k=0.8:&\quad w(t)=1200-1140e^{-(0.8)t}
+ \quad\Longrightarrow\quad \boxed{w_{0.8}(t)=1200-1140e^{-0.8t}},\\
+ k=0.9:&\quad w(t)=1200-1140e^{-(0.9)t}
+ \quad\Longrightarrow\quad \boxed{w_{0.9}(t)=1200-1140e^{-0.9t}},\\
+ k=1.0:&\quad w(t)=1200-1140e^{-(1)t}
+ \quad\Longrightarrow\quad \boxed{w_{1.0}(t)=1200-1140e^{-t}}.
 \end{align*}
-Para atender la indicación de usar un sistema algebraico por computadora, se introdujeron la ecuación y la condición inicial en un solucionador simbólico. En notación de SymPy, la operación equivalente es
-\[
- \operatorname{dsolve}\!\left(w'(t)=k(1200-w(t)),\;w(0)=60\right),
-\]
-cuyo resultado simplificado es $w(t)=1200-1140e^{-kt}$. Después se sustituyeron $k=0.8$, $0.9$ y $1$. La comprobación simbólica de cada resultado da
-\[
- \operatorname{simplify}\!\left(w_k'(t)-k[1200-w_k(t)]\right)=0,
- \qquad w_k(0)=60.
-\]
+En cada caso, sustituir $t=0$ produce $1200-1140e^0=1200-1140=60$. La ecuación diferencial también se comprueba individualmente:
+\begin{align*}
+ w_{0.8}'(t)&=-1140(-0.8)e^{-0.8t}=912e^{-0.8t},\\
+ 0.8\bigl(1200-w_{0.8}(t)\bigr)
+ &=0.8\bigl(1140e^{-0.8t}\bigr)=912e^{-0.8t};\\[1mm]
+ w_{0.9}'(t)&=-1140(-0.9)e^{-0.9t}=1026e^{-0.9t},\\
+ 0.9\bigl(1200-w_{0.9}(t)\bigr)
+ &=0.9\bigl(1140e^{-0.9t}\bigr)=1026e^{-0.9t};\\[1mm]
+ w_{1.0}'(t)&=-1140(-1)e^{-t}=1140e^{-t},\\
+ 1\bigl(1200-w_{1.0}(t)\bigr)
+ &=1\bigl(1140e^{-t}\bigr)=1140e^{-t}.
+\end{align*}
+En las tres parejas, la derivada coincide exactamente con el lado derecho del modelo. Por ello, cada expresión satisface simultáneamente la ecuación diferencial y la condición inicial.
 
 \begin{figure}[H]
 \centering
@@ -98,34 +130,42 @@ La Figura~\ref{fig:modelos-peso} muestra que un valor mayor de $k$ produce una a
 El animal se vende cuando $w(t)=800$. Para cualquier $k>0$:
 \begin{align*}
  800&=1200-1140e^{-kt},\\
+ 800-1200&=-1140e^{-kt},\\
+ -400&=-1140e^{-kt},\\
  1140e^{-kt}&=400,\\
  e^{-kt}&=\frac{400}{1140}=\frac{20}{57},\\
+ \ln\left(e^{-kt}\right)&=\ln\left(\frac{20}{57}\right),\\
  -kt&=\ln\left(\frac{20}{57}\right),\\
  t&=-\frac{1}{k}\ln\left(\frac{20}{57}\right),\\
  \boxed{t_{\mathrm{venta}}=\frac{1}{k}\ln\left(\frac{57}{20}\right)}.
 \end{align*}
 La última igualdad usa $-\ln(a)=\ln(1/a)$. Como $\ln(57/20)\approx1.047319$, cada sustitución queda:
 \begin{align*}
- t_{0.8}&=\frac{1.047319}{0.8}=1.309149\text{ años}
-		  \approx 1.3091(12)=15.71\text{ meses},\\
- t_{0.9}&=\frac{1.047319}{0.9}=1.163688\text{ años}
-		  \approx 1.1637(12)=13.96\text{ meses},\\
- t_{1.0}&=\frac{1.047319}{1}=1.047319\text{ años}
-		  \approx 1.0473(12)=12.57\text{ meses}.
+ t_{0.8}&=\frac{1}{0.8}\ln\left(\frac{57}{20}\right)
+          =\frac{1.047319}{0.8}=1.309149\text{ años}
+		  \approx 1.3091\times12=15.71\text{ meses},\\
+ t_{0.9}&=\frac{1}{0.9}\ln\left(\frac{57}{20}\right)
+          =\frac{1.047319}{0.9}=1.163688\text{ años}
+		  \approx 1.1637\times12=13.96\text{ meses},\\
+ t_{1.0}&=\frac{1}{1}\ln\left(\frac{57}{20}\right)
+          =\frac{1.047319}{1}=1.047319\text{ años}
+		  \approx 1.0473\times12=12.57\text{ meses}.
 \end{align*}
+La conversión a meses se obtiene multiplicando cada resultado en años por $12$ meses/año.
 Los resultados se resumen en la tabla siguiente:
 
 \begin{table}[H]
 \centering
 \caption{Tiempo requerido para alcanzar 800 libras.}
 \label{tab:tiempos-venta}
+\renewcommand{\arraystretch}{1.65}
 \begin{tabular}{ccc}
 \toprule
 $k$ (años$^{-1}$) & Tiempo exacto (años) & Tiempo aproximado \\
 \midrule
-$0.8$ & $\dfrac{1}{0.8}\ln\!\left(\dfrac{57}{20}\right)$ & $1.3091$ años ($15.71$ meses) \\
-$0.9$ & $\dfrac{1}{0.9}\ln\!\left(\dfrac{57}{20}\right)$ & $1.1637$ años ($13.96$ meses) \\
-$1.0$ & $\ln\!\left(\dfrac{57}{20}\right)$ & $1.0473$ años ($12.57$ meses) \\
+$0.8$ & $\frac{5}{4}\ln(57/20)$ & $1.3091$ años ($15.71$ meses) \\
+$0.9$ & $\frac{10}{9}\ln(57/20)$ & $1.1637$ años ($13.96$ meses) \\
+$1.0$ & $\ln(57/20)$ & $1.0473$ años ($12.57$ meses) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -136,7 +176,11 @@ $1.0$ & $\ln\!\left(\dfrac{57}{20}\right)$ & $1.0473$ años ($12.57$ meses) \\
  w(t)&=1200-1140\left(\frac{20}{57}\right)
 	=1200-400=800.
 \end{align*}
-Por tanto, los tres tiempos satisfacen exactamente la condición de venta. El modelo con $k=1$ llega primero al peso de venta y el de $k=0.8$ tarda más.
+Por tanto, los tres tiempos satisfacen exactamente la condición de venta. Además,
+\[
+ t_{\mathrm{venta}}=\frac{\ln(57/20)}{k}
+\]
+es inversamente proporcional a $k$: al aumentar $k$, disminuye el tiempo requerido. Esto explica, sin depender solo de los decimales, por qué el modelo con $k=1$ llega primero al peso de venta y el de $k=0.8$ tarda más.
 
 \subsection{Inciso c: peso máximo}
 Para $t\geq0$ y $k>0$, el factor $e^{-kt}$ es positivo y tiende a cero cuando $t$ crece. Por ello,
@@ -158,7 +202,7 @@ por lo que
 \[
  \boxed{\lim_{t\to\infty}w(t)=1200\text{ libras}}.
 \]
-Así, los tres modelos tienen el mismo peso máximo límite de \textbf{1200 libras}. Con precisión matemática, 1200 libras es el supremo o valor asintótico: la función se aproxima indefinidamente, pero no lo alcanza en un tiempo finito. El parámetro $k$ modifica la rapidez de crecimiento, no el límite.
+Por lo tanto, la respuesta aplicada al inciso es un \textbf{peso máximo límite de 1200 libras} para los tres modelos. Con precisión matemática, no existe un máximo alcanzado en un tiempo finito: 1200 libras es el supremo y la asíntota horizontal de las trayectorias. El parámetro $k$ modifica la rapidez con que el peso se aproxima al límite, pero no cambia ese límite.
 
 \section{Problema 64: peso inicial arbitrario}
 
@@ -172,8 +216,11 @@ Esta ecuación es el caso $k=1$ del modelo anterior. Si $w_0=1200$, se obtiene d
 \begin{align*}
  \frac{dw}{1200-w}&=dt,\\
  \int\frac{dw}{1200-w}&=\int dt,\\
+ u&=1200-w,\qquad du=-dw,\\
+ -\int\frac{du}{u}&=\int dt,\\
  -\ln|1200-w|&=t+C,\\
  \ln|1200-w|&=-t-C,\\
+ e^{\ln|1200-w|}&=e^{-t-C},\\
  |1200-w|&=e^{-C}e^{-t},\\
  1200-w&=Ae^{-t},\\
  w(t)&=1200-Ae^{-t}.
@@ -181,44 +228,73 @@ Esta ecuación es el caso $k=1$ del modelo anterior. Si $w_0=1200$, se obtiene d
 Al retirar el valor absoluto, el signo se absorbe en la constante real $A$. La condición inicial determina esa constante:
 \begin{align*}
  w_0&=1200-A,\\
+ w_0-1200&=-A,\\
  A&=1200-w_0.
 \end{align*}
 En consecuencia,
 \begin{align*}
- \boxed{w(t)=1200-(1200-w_0)e^{-t}}
- &\qquad\text{o, equivalentemente,}\\
- \boxed{w(t)=1200+(w_0-1200)e^{-t}}.
+ w(t)&=1200-(1200-w_0)e^{-t}\\
+ &=1200+(-1200+w_0)e^{-t}\\
+ &=1200+(w_0-1200)e^{-t},
 \end{align*}
+de modo que las dos formas equivalentes de la respuesta son
+\[
+ \boxed{w(t)=1200-(1200-w_0)e^{-t}}
+ \qquad\text{y}\qquad
+ \boxed{w(t)=1200+(w_0-1200)e^{-t}}.
+\]
 Esta fórmula también incluye el caso inicialmente separado $w_0=1200$, pues entonces el término exponencial es cero y $w(t)=1200$.
 
 \textbf{Comprobación:}
 \begin{align*}
- w'(t)&=-(w_0-1200)e^{-t}=(1200-w_0)e^{-t},\\
+ w'(t)&=\frac{d}{dt}\left[1200+(w_0-1200)e^{-t}\right]\\
+ &=0+(w_0-1200)(-e^{-t})\\
+ &=-(w_0-1200)e^{-t}=(1200-w_0)e^{-t},\\
  1200-w(t)&=1200-\bigl[1200+(w_0-1200)e^{-t}\bigr]\\
+ &=1200-1200-(w_0-1200)e^{-t}\\
  &=-(w_0-1200)e^{-t}=(1200-w_0)e^{-t}.
 \end{align*}
-Por tanto, $w'(t)=1200-w(t)$; además, $w(0)=1200+(w_0-1200)=w_0$.
+Por tanto, $w'(t)=1200-w(t)$. La condición inicial también se verifica paso a paso:
+\[
+ w(0)=1200+(w_0-1200)e^0=1200+w_0-1200=w_0.
+\]
 \end{examplebox}
 
-Si $0<w_0<1200$, el peso aumenta y se aproxima a 1200 libras. Si $w_0=1200$, la solución es constante. Aunque matemáticamente un valor $w_0>1200$ produciría una trayectoria decreciente hacia 1200, ese caso queda fuera de la interpretación habitual de ganancia de peso de un becerro recién nacido.
+\Needspace{15\baselineskip}
+\subsection{Interpretación de la solución general}
+La distancia entre el peso y el nivel de equilibrio puede escribirse como
+\[
+ 1200-w(t)=(1200-w_0)e^{-t}.
+\]
+Como $e^{-t}>0$ para todo $t$ y $e^{-t}\to0$, esa distancia conserva su signo y disminuye en magnitud. La derivada también permite distinguir todos los casos:
+\[
+ w'(t)=(1200-w_0)e^{-t}.
+\]
+Por consiguiente:
+\begin{itemize}
+ \item Si $0<w_0<1200$, entonces $w'(t)>0$: el peso aumenta desde $w_0$ y se aproxima a 1200 libras desde abajo.
+ \item Si $w_0=1200$, entonces $w'(t)=0$: el peso permanece constante en 1200 libras.
+ \item Si $w_0>1200$, entonces $w'(t)<0$: la solución matemática disminuye hacia 1200 libras desde arriba, aunque este caso no corresponde a la interpretación habitual de ganancia de peso de un becerro recién nacido.
+\end{itemize}
+En todos los casos con peso inicial positivo,
+\[
+ \lim_{t\to\infty}w(t)=1200,
+\]
+por lo que el valor 1200 representa el peso de equilibrio del modelo y no un peso alcanzado necesariamente en un tiempo finito.
 
 \section{Conclusiones}
-La separación de variables permitió resolver ambos problemas y evidenciar el significado de sus parámetros. En el problema 63, las tres soluciones parten de 60 libras y comparten el límite de 1200 libras; aumentar $k$ únicamente reduce el tiempo necesario para acercarse a ese límite. Los tiempos de venta calculados son aproximadamente 1.3091, 1.1637 y 1.0473 años para $k=0.8$, $0.9$ y $1$, respectivamente. En el problema 64, el peso inicial queda incorporado en la constante de integración, dando una expresión válida para cualquier $w_0$. La derivación directa y la sustitución de las condiciones iniciales confirman todas las soluciones.
+La separación de variables muestra que la diferencia entre el peso del animal y el nivel de equilibrio disminuye exponencialmente. En el problema 63, la condición inicial fija esa diferencia en $1200-60=1140$ libras y produce el modelo $w(t)=1200-1140e^{-kt}$. Las tres trayectorias parten del mismo peso y tienen el mismo límite; el parámetro $k$ solo controla la rapidez de aproximación.
 
-\begin{thebibliography}{4}
-\bibitem[Hass et~al.(2018)]{thomas2018calculus}
-Hass, J., Heil, C. y Weir, M. D. (2018).
-\textit{Thomas' Calculus} (14.a ed.). Pearson.
+Los tiempos para alcanzar 800 libras son aproximadamente $1.3091$, $1.1637$ y $1.0473$ años para $k=0.8$, $0.9$ y $1$, respectivamente. El orden de estos resultados se explica porque $t_{\mathrm{venta}}=\ln(57/20)/k$: una tasa mayor reduce el tiempo de venta. En sentido estricto, ninguna trayectoria alcanza 1200 libras en un tiempo finito; ese valor es el supremo y el peso de equilibrio del modelo.
 
+En el problema 64, la expresión $w(t)=1200+(w_0-1200)e^{-t}$ incorpora cualquier peso inicial y permite reconocer crecimiento, equilibrio o decrecimiento según la posición de $w_0$ respecto de 1200. Las derivadas, las condiciones iniciales, los tiempos de venta y los límites fueron comprobados antes de presentar los resultados finales.
+
+\begin{thebibliography}{2}
 \bibitem[Stewart(2016)]{stewart2016calculus}
 Stewart, J. (2016).
 \textit{Calculus: Early Transcendentals} (8.a ed.). Cengage Learning.
 
-\bibitem[Strang y Herman(2016a)]{openstax2016calculus1}
-Strang, G. y Herman, E. J. (2016a).
-\textit{Calculus Volume 1}. OpenStax, Rice University.
-
-\bibitem[Strang y Herman(2016b)]{openstax2016calculus2}
-Strang, G. y Herman, E. J. (2016b).
+\bibitem[Strang y Herman(2016)]{openstax2016calculus2}
+Strang, G. y Herman, E. J. (2016).
 \textit{Calculus Volume 2}. OpenStax, Rice University.
 \end{thebibliography}

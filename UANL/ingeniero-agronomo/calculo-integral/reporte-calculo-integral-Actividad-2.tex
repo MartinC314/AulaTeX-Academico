@@ -1,7 +1,7 @@
 \documentclass[spanish,letterpaper,oneside]{article}
 
-\def\documenttitle {Modelos de ganancia de peso}
-\def\documentsubtitle {Actividad 2.2 --- Actividad ponderada 2}
+\def\documenttitle {Aprendizaje basado en problemas}
+\def\documentsubtitle {Actividad 2 --- Evidencia 1}
 \def\documentsubject {Cálculo Integral}
 \def\documentauthor {Diego de la Cruz}
 \def\coursename {Cálculo Integral}
@@ -27,11 +27,17 @@
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{framed}
+\usepackage{pgffor}
 \setcitestyle{authoryear,open={(},close={)}}
 
 \definecolor{uanlblue}{RGB}{0,55,108}
 \newenvironment{examplebox}[1]{%
   \def\FrameCommand{\fcolorbox{uanlblue}{blue!3}}%
+  \MakeFramed{\advance\hsize-2\width\FrameRestore}%
+  \noindent\textbf{#1}\par\smallskip
+}{\endMakeFramed}
+\newenvironment{sourcebox}[1]{%
+  \def\FrameCommand{\fcolorbox{orange!70!black}{yellow!5}}%
   \MakeFramed{\advance\hsize-2\width\FrameRestore}%
   \noindent\textbf{#1}\par\smallskip
 }{\endMakeFramed}
@@ -49,11 +55,11 @@
     \vfill
     {\Large Ingeniero Agrónomo\par}
     \vspace{0.7cm}
-    {\Huge\bfseries Modelos de ganancia de peso\par}
+    {\Huge\bfseries Aprendizaje basado en problemas\par}
     \vspace{0.45cm}
-    {\LARGE Actividad 2.2 --- Actividad ponderada 2\par}
+    {\LARGE Actividad 2 --- Evidencia 1\par}
     \vspace{0.3cm}
-    {\large Valor: 6 puntos\par}
+    {\large Valor: 20 puntos\par}
     \vfill
     \begin{tabular}{>{\bfseries}p{3.5cm}p{8cm}}
       Alumno: & Diego de la Cruz\\[4mm]
@@ -69,6 +75,6 @@
 
 \templatePagecfg
 \onehalfspacing
-\input{UANL/ingeniero-agronomo/calculo-integral/contenido-actividad-2-ponderada}
+\input{UANL/ingeniero-agronomo/calculo-integral/contenido-actividad-1}
 \templateFinalcfg
 \end{document}
