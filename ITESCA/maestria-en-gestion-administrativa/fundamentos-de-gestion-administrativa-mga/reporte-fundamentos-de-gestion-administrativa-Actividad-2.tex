@@ -110,55 +110,60 @@ El \textbf{marco estructural} estudia roles, reglas, metas y coordinación; el d
 \thispagestyle{empty}
 \begingroup
 \centering
-\resizebox{0.90\linewidth}{!}{%
+\resizebox{0.97\linewidth}{!}{%
 \begin{tikzpicture}[
  root/.style={rounded corners=3pt,draw=itescaRedDark,fill=itescaRedDark,text=white,font=\bfseries\large,align=center,text width=5.4cm,minimum height=1.5cm},
  branch/.style={rounded corners=2pt,draw=itescaRed,fill=itescaRed!10,font=\bfseries\small,align=center,text width=4cm,minimum height=1.35cm},
- concept/.style={rounded corners=2pt,draw=itescaCharcoal!65,fill=white,font=\footnotesize,align=center,text width=3.8cm,minimum height=1.35cm},
+ concept/.style={rounded corners=2pt,draw=itescaCharcoal!65,fill=white,font=\footnotesize,align=center,text width=3.6cm,minimum height=1.35cm},
  edge/.style={-{Stealth[length=2mm]},thick,draw=itescaCharcoal!75},
  cross/.style={-{Stealth[length=2mm]},thick,dashed,draw=itescaRed!75},
  label/.style={font=\scriptsize\itshape,fill=white,inner sep=1.2pt,align=center}
 ]
 \node[root] (root) at (0,15.6) {ENFOQUES MÚLTIPLES\\DE LA ORGANIZACIÓN};
-\node[branch] (bd) at (-7.8,11.8) {Bolman y Deal\\cuatro marcos};
+\node[branch] (bd) at (-10,11.8) {Bolman y Deal\\cuatro marcos};
 \node[branch] (mo) at (0,11.8) {Morgan\\ocho metáforas};
-\node[branch] (gl) at (7.8,11.8) {Perspectiva global\\lectura transversal};
+\node[branch] (gl) at (10,11.8) {Perspectiva global\\lectura transversal};
 \draw[edge] (root) -- node[label]{se clasifican mediante} (bd);
 \draw[edge] (root) -- node[label]{se reinterpretan con} (mo);
 \draw[edge] (root) -- node[label]{se contextualizan desde} (gl);
 
-\node[concept] (es) at (-10,7.7) {Estructural\\roles, reglas, metas\\y coordinación};
-\node[concept] (rh) at (-5.6,7.7) {Recursos humanos\\necesidades, capacidades\\y participación};
-\node[concept] (po) at (-10,3.8) {Político\\intereses, conflicto,\\poder y negociación};
-\node[concept] (si) at (-5.6,3.8) {Simbólico\\cultura, rituales,\\relatos y sentido};
-\foreach \n in {es,rh,po,si} \draw[edge] (bd) -- node[label]{incluye} (\n);
+\node[concept] (es) at (-12.5,7.7) {Estructural\\roles, reglas, metas\\y coordinación};
+\node[concept] (rh) at (-7.5,7.7) {Recursos humanos\\necesidades, capacidades\\y participación};
+\node[concept] (po) at (-12.5,3.8) {Político\\intereses, conflicto,\\poder y negociación};
+\node[concept] (si) at (-7.5,3.8) {Simbólico\\cultura, rituales,\\relatos y sentido};
+\draw[edge] (bd.south west) -- node[label,pos=.42,sloped,above]{incluye} (es.north);
+\draw[edge] (bd.south east) -- node[label,pos=.42,sloped,above]{incluye} (rh.north);
+\draw[edge] (es.south) -- node[label,pos=.50,fill=white]{se complementa con} (po.north);
+\draw[edge] (rh.south) -- node[label,pos=.50,fill=white]{se complementa con} (si.north);
 
-\node[concept] (m1) at (-2.2,7.7) {Máquina / organismo\\orden y adaptación};
-\node[concept] (m2) at (2.2,7.7) {Cerebro / cultura\\aprendizaje y significado};
-\node[concept] (m3) at (-2.2,3.8) {Sistema político /\\prisión psíquica};
-\node[concept] (m4) at (2.2,3.8) {Flujo y transformación /\\instrumento de dominación};
-\foreach \n in {m1,m2,m3,m4} \draw[edge] (mo) -- node[label]{representa como} (\n);
+\node[concept] (m1) at (-2.5,7.7) {Máquina / organismo\\orden y adaptación};
+\node[concept] (m2) at (2.5,7.7) {Cerebro / cultura\\aprendizaje y significado};
+\node[concept] (m3) at (-2.5,3.8) {Sistema político /\\prisión psíquica};
+\node[concept] (m4) at (2.5,3.8) {Flujo y transformación /\\instrumento de dominación};
+\draw[edge] (mo.south west) -- node[label,pos=.42,sloped,above]{representa como} (m1.north);
+\draw[edge] (mo.south east) -- node[label,pos=.42,sloped,above]{representa como} (m2.north);
+\draw[edge] (m1.south) -- node[label,pos=.50,fill=white]{amplía con} (m3.north);
+\draw[edge] (m2.south) -- node[label,pos=.50,fill=white]{amplía con} (m4.north);
 
-\node[concept] (g1) at (5.6,7.7) {Economía y tecnología\\transforman capacidades};
-\node[concept] (g2) at (10,7.7) {Política y cultura\\modifican reglas y sentido};
-\node[concept] (g3) at (5.6,3.8) {Interdependencia\\vincula actores y países};
-\node[concept] (g4) at (10,3.8) {Adaptación responsable\\responde al entorno};
-\foreach \n in {g1,g2,g3,g4} \draw[edge] (gl) -- node[label]{considera} (\n);
+\node[concept] (g1) at (7.5,7.7) {Economía y tecnología\\transforman capacidades};
+\node[concept] (g2) at (12.5,7.7) {Política y cultura\\modifican reglas y sentido};
+\node[concept] (g3) at (7.5,3.8) {Interdependencia\\vincula actores y países};
+\node[concept] (g4) at (12.5,3.8) {Adaptación responsable\\responde al entorno};
+\draw[edge] (gl.south west) -- node[label,pos=.42,sloped,above]{considera} (g1.north);
+\draw[edge] (gl.south east) -- node[label,pos=.42,sloped,above]{considera} (g2.north);
+\draw[edge] (g1.south) -- node[label,pos=.50,fill=white]{se proyecta en} (g3.north);
+\draw[edge] (g2.south) -- node[label,pos=.50,fill=white]{orienta} (g4.north);
 
 \node[root,font=\bfseries\small,minimum width=5.5cm] (diag) at (0,-1.2) {DIAGNÓSTICO INTEGRAL\\decidir sin reducir la complejidad};
-\draw[edge] (es) -- node[label]{ordena} (diag);
-\draw[edge] (rh) -- node[label]{humaniza} (diag);
-\draw[edge] (po) -- node[label]{explica tensiones} (diag);
-\draw[edge] (si) -- node[label]{aporta sentido} (diag);
-\draw[edge] (m3) -- node[label]{cuestiona supuestos} (diag);
-\draw[edge] (m4) -- node[label]{revela efectos} (diag);
-\draw[edge] (g3) -- node[label]{amplía el contexto} (diag);
-\draw[edge] (g4) -- node[label]{orienta respuestas} (diag);
+\draw[edge] (po.south) to[out=-72,in=170] node[label,pos=.18,sloped,above]{explica tensiones} (diag.west);
+\draw[edge] (si.south) to[out=-68,in=150] node[label,pos=.30,sloped,below]{aporta sentido} (diag.west);
+\draw[edge] (m3.south) -- node[label,pos=.22,sloped,above]{cuestiona supuestos} (diag.north west);
+\draw[edge] (m4.south) -- node[label,pos=.42,sloped,below]{revela efectos} (diag.north east);
+\draw[edge] (g3.south) to[out=-112,in=30] node[label,pos=.30,sloped,below]{amplía el contexto} (diag.east);
+\draw[edge] (g4.south) to[out=-108,in=10] node[label,pos=.18,sloped,above]{orienta respuestas} (diag.east);
 
-\draw[cross] (rh) to[bend left=12] node[label]{converge en personas} (m2);
-\draw[cross] (po) to[bend right=12] node[label]{dialoga con} (m3);
-\draw[cross] (si) to[bend right=9] node[label]{dialoga con} (m2);
-\draw[cross] (g2) to[bend left=10] node[label]{modifica intereses y símbolos} (po);
+\draw[cross] (rh.east) -- node[label,pos=.50,above=2pt]{converge en personas} (m1.west);
+\draw[cross] (m2.east) -- node[label,pos=.50,above=2pt]{vincula cultura y entorno} (g1.west);
 \end{tikzpicture}}
 
 \par\vspace{0.03cm}
