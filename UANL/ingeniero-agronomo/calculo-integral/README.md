@@ -20,8 +20,8 @@ Cada actividad debe resolver todos los ejercicios de su consigna, incluir una s�
 
 ## Actividades normalizadas
 
-1. **Evidencia 1:** aprendizaje basado en problemas — 20 puntos.
-2. **Actividad ponderada 2.1:** integración por partes — 6 puntos.
+1. **Actividad ponderada:** integración por partes — 6 puntos.
+2. **Evidencia 1:** aprendizaje basado en problemas — 20 puntos.
 3. **Evidencia 2:** funciones racionales — 15 puntos.
 4. **Actividad ponderada 2.2:** modelos de ganancia de peso — 6 puntos.
 5. **PIA:** integrales algebraicas y racionales — 30 puntos.

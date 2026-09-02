@@ -8,19 +8,19 @@
   "actividades": [
     {
       "numero": 1,
-      "titulo": "Evidencia 1: aprendizaje basado en problemas",
-      "valor": 20,
+      "titulo": "Actividad ponderada: integración por partes",
+      "valor": 6,
       "entregable": "reporte-calculo-integral-Actividad-1.pdf",
       "consigna": "planeaciones-calculo-integral/consigna-Actividad-1.md",
-      "fuente": "planeaciones-calculo-integral/Evidencia-1-20-puntos.docx"
+      "fuente": "planeaciones-calculo-integral/Actividad-ponderada-1.md"
     },
     {
       "numero": 2,
-      "titulo": "Actividad ponderada 2.1",
-      "valor": 6,
+      "titulo": "Evidencia 1: aprendizaje basado en problemas",
+      "valor": 20,
       "entregable": "reporte-calculo-integral-Actividad-2.pdf",
       "consigna": "planeaciones-calculo-integral/consigna-Actividad-2.md",
-      "fuente": "planeaciones-calculo-integral/Actividad-ponderada-2.1-6-puntos.docx"
+      "fuente": "planeaciones-calculo-integral/Evidencia-1-20-puntos.docx"
     },
     {
       "numero": 3,
