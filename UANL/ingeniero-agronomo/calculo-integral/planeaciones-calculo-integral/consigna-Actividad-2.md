@@ -1,28 +1,19 @@
-# Actividad 2 — Actividad ponderada 2.1
+# Actividad 2 — Evidencia 1: aprendizaje basado en problemas
 
 ## Datos de la consigna
 
-- **Valor:** 6 puntos.
-- **Indicación original:** resolver adecuadamente y entregar a mano en hoja de máquina.
-- **Fuente original:** `Actividad-ponderada-2.1-6-puntos.docx`.
-- **Tema:** integración por partes.
+- **Valor:** 20 puntos.
+- **Indicación original:** resolver a mano y entregar en hoja de máquina.
+- **Fuente original:** `Evidencia-1-20-puntos.docx`.
+- **Criterio de elaboración ampliado:** resolver todos los ejercicios visibles, aunque la instrucción original solicite una selección.
 
-## Ejercicios
+## Contenido identificado
 
-Resolver todos los ejercicios mostrados, usando la elección de $u$ y $dv$ indicada:
-
-1. Ejercicio 7: $\int x^3\ln x\,dx$; $u=\ln x$, $dv=x^3\,dx$.
-2. Ejercicio 8: $\int (4x+7)e^x\,dx$; $u=4x+7$, $dv=e^x\,dx$.
-3. Ejercicio 9: integral con factor $\sen(3x)$ y elección de $u$ indicada en la captura.
-4. Ejercicio 10: $\int x\cos(4x)\,dx$; $u=x$, $dv=\cos(4x)\,dx$.
+La evidencia reúne ejercicios de antiderivación directa, sustitución, simplificación de funciones racionales y funciones trigonométricas.
 
 ## Alcance obligatorio del reporte
 
-- Incorporar la fórmula $\int u\,dv=uv-\int v\,du$ y un procedimiento resumido.
-- Resolver los cuatro ejercicios, sin omitir el ejercicio 9.
-- Verificar cada antiderivada mediante diferenciación.
+- Resolver todos los ejercicios contenidos en la fuente.
+- Mostrar fórmula, procedimiento, constante de integración y verificación por derivación.
+- Incluir brevemente las reglas y técnicas empleadas.
 - Presentar cada ejercicio en una caja de actividad AulaTeX.
-
-## Control de fidelidad
-
-El ejercicio 9 aparece rotado en la captura original. Debe cotejarse directamente con `Actividad-ponderada-2.1-6-puntos.docx` antes de fijar su transcripción matemática definitiva.
