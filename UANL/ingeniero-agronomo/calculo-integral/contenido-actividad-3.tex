@@ -1,0 +1,521 @@
+\begin{abstractd}
+Se resuelven los 60 ejercicios de la Evidencia 1 proporcionada para la Actividad 3. Se aplican la regla de la potencia, sustitución algebraica, división de polinomios, fracciones parciales e identidades de integración trigonométrica. En cada bloque se explicita el cambio decisivo y se presentan las antiderivadas con su constante de integración. La comprobación se realiza mediante diferenciación.
+\end{abstractd}
+
+\templateIndex
+
+\section{Introducción}
+Una antiderivada de $f$ es una función $F$ que satisface $F'=f$. Por ello,
+\[
+ \int f(x)\,dx=F(x)+C,
+\]
+donde $C$ representa la familia de constantes posibles. Resolver una integral exige reconocer su estructura: una potencia se integra término a término; una composición acompañada por su derivada se trata mediante sustitución; una función racional puede requerir división o fracciones parciales; y una expresión trigonométrica se reduce a formas conocidas \citep{stewart2016calculus,openstax2016calculus1}.
+
+\section{Procedimiento general}
+Se utilizaron las identidades
+\[
+ \int x^n\,dx=\frac{x^{n+1}}{n+1}+C\quad(n\ne-1),
+ \qquad \int\frac{f'(x)}{f(x)}\,dx=\ln|f(x)|+C,
+\]
+y la sustitución $u=g(x)$, $du=g'(x)\,dx$. En cocientes impropios se efectuó división algebraica antes de integrar. Los resultados son válidos en cada intervalo del dominio del integrando. Para verificarlos basta derivar el miembro derecho y simplificar hasta recuperar el integrando \citep{thomas2018calculus}.
+
+\section{Bloque I: potencias, radicales y sustitución}
+
+\begin{examplebox}{Ejercicios 1--6}
+\begin{enumerate}
+\item Sea $u=1-4y$. Entonces $du=-4\,dy$ y $dy=-\frac14du$:
+\begin{align*}
+\int\sqrt{1-4y}\,dy
+&=-\frac14\int u^{1/2}du
+=-\frac14\left(\frac{u^{3/2}}{3/2}\right)+C\\
+&=\boxed{-\frac{(1-4y)^{3/2}}6+C}.
+\end{align*}
+\item Sea $u=3x-4$. Entonces $du=3\,dx$ y $dx=\frac13du$:
+\begin{align*}
+\int(3x-4)^{1/3}dx
+&=\frac13\int u^{1/3}du
+=\frac13\left(\frac{u^{4/3}}{4/3}\right)+C\\
+&=\boxed{\frac{(3x-4)^{4/3}}4+C}.
+\end{align*}
+\item Sea $u=x^2-9$. Entonces $du=2x\,dx$ y $x\,dx=\frac12du$:
+\begin{align*}
+\int x(x^2-9)^{1/3}dx
+&=\frac12\int u^{1/3}du
+=\frac12\left(\frac34u^{4/3}\right)+C\\
+&=\boxed{\frac38(x^2-9)^{4/3}+C}.
+\end{align*}
+\item Sea $u=2x^2+1$. Entonces $du=4x\,dx$ y $x\,dx=\frac14du$:
+\begin{align*}
+\int x(2x^2+1)^6dx
+&=\frac14\int u^6du
+=\frac{u^7}{28}+C
+=\boxed{\frac{(2x^2+1)^7}{28}+C}.
+\end{align*}
+\item Sea $u=x^3-1$. Entonces $du=3x^2dx$ y $x^2dx=\frac13du$:
+\begin{align*}
+\int x^2(x^3-1)^{10}dx
+&=\frac13\int u^{10}du
+=\frac{u^{11}}{33}+C
+=\boxed{\frac{(x^3-1)^{11}}{33}+C}.
+\end{align*}
+\item Sea $u=4-x^2$. Entonces $du=-2x\,dx$ y $3x\,dx=-\frac32du$:
+\begin{align*}
+\int3x\sqrt{4-x^2}\,dx
+&=-\frac32\int u^{1/2}du
+=-\frac32\left(\frac23u^{3/2}\right)+C\\
+&=\boxed{-(4-x^2)^{3/2}+C}.
+\end{align*}
+\end{enumerate}
+\end{examplebox}
+
+\begin{examplebox}{Ejercicios 7--12}
+\begin{enumerate}\setcounter{enumi}{6}
+\item Sea $u=1-2y^4$. Entonces $du=-8y^3dy$ y $y^3dy=-\frac18du$:
+\begin{align*}
+\int\frac{y^3}{(1-2y^4)^5}dy
+&=-\frac18\int u^{-5}du
+=-\frac18\left(\frac{u^{-4}}{-4}\right)+C\\
+&=\boxed{\frac{1}{32(1-2y^4)^4}+C}.
+\end{align*}
+\item Sea $u=3s^2+1$. Como $du=6s\,ds$, se tiene $s\,ds=\frac16du$:
+\begin{align*}
+\int\frac{s}{\sqrt{3s^2+1}}ds
+&=\frac16\int u^{-1/2}du
+=\frac16(2u^{1/2})+C\\
+&=\boxed{\frac13\sqrt{3s^2+1}+C}.
+\end{align*}
+\item Se factoriza el trinomio perfecto:
+\[
+x^2-4x+4=(x-2)^2,
+\qquad ((x-2)^2)^{4/3}=(x-2)^{8/3}.
+\]
+Por la regla de la potencia,
+\[
+\int(x-2)^{8/3}dx
+=\frac{(x-2)^{11/3}}{11/3}+C
+=\boxed{\frac3{11}(x-2)^{11/3}+C}.
+\]
+\item Sea $u=3x^5-5$. Entonces $du=15x^4dx$ y $x^4dx=\frac1{15}du$:
+\begin{align*}
+\int x^4\sqrt{3x^5-5}\,dx
+&=\frac1{15}\int u^{1/2}du
+=\frac1{15}\left(\frac23u^{3/2}\right)+C\\
+&=\boxed{\frac2{45}(3x^5-5)^{3/2}+C}.
+\end{align*}
+\item Sea $u=x+2$; entonces $du=dx$ y $x=u-2$:
+\begin{align*}
+\int x\sqrt{x+2}\,dx
+&=\int(u-2)u^{1/2}du
+=\int(u^{3/2}-2u^{1/2})du\\
+&=\frac25u^{5/2}-\frac43u^{3/2}+C\\
+&=\boxed{\frac25(x+2)^{5/2}-\frac43(x+2)^{3/2}+C}.
+\end{align*}
+\item Sea $u=t+3$; entonces $du=dt$ y $t=u-3$:
+\begin{align*}
+\int\frac{t}{\sqrt{t+3}}dt
+&=\int(u-3)u^{-1/2}du
+=\int(u^{1/2}-3u^{-1/2})du\\
+&=\frac23u^{3/2}-6u^{1/2}+C\\
+&=\boxed{\frac23(t+3)^{3/2}-6\sqrt{t+3}+C}.
+\end{align*}
+\end{enumerate}
+\end{examplebox}
+
+\begin{examplebox}{Ejercicios 13--18}
+\begin{enumerate}\setcounter{enumi}{12}
+\item Sea $u=1-r$. Entonces $r=1-u$ y $dr=-du$:
+\begin{align*}
+\int\frac{2r}{(1-r)^7}dr
+&=-2\int(1-u)u^{-7}du
+=-2\int(u^{-7}-u^{-6})du\\
+&=\frac13u^{-6}-\frac25u^{-5}+C\\
+&=\boxed{\frac1{3(1-r)^6}-\frac2{5(1-r)^5}+C}.
+\end{align*}
+\item Por linealidad y regla de la potencia,
+\begin{align*}
+\int(2+3x^2-8x^3)dx
+&=2\int dx+3\int x^2dx-8\int x^3dx\\
+&=2x+x^3-2x^4+C.
+\end{align*}
+Por tanto, el resultado es $\boxed{2x+x^3-2x^4+C}$.
+\item Sea $u=2-x^2$. Entonces $du=-2x\,dx$, $x\,dx=-\frac12du$ y $x^2=2-u$:
+\begin{align*}
+\int x^3(2-x^2)^{12}dx
+&=-\frac12\int(2-u)u^{12}du
+=-\frac12\int(2u^{12}-u^{13})du\\
+&=-\frac{u^{13}}{13}+\frac{u^{14}}{28}+C\\
+&=\boxed{-\frac{(2-x^2)^{13}}{13}+\frac{(2-x^2)^{14}}{28}+C}.
+\end{align*}
+\item Primero se distribuye $\sqrt{x}$:
+\begin{align*}
+\int\sqrt{x}(x+1)dx
+&=\int(x^{3/2}+x^{1/2})dx\\
+&=\frac{x^{5/2}}{5/2}+\frac{x^{3/2}}{3/2}+C\\
+&=\boxed{\frac25x^{5/2}+\frac23x^{3/2}+C}.
+\end{align*}
+\item Se escriben los radicales como potencias:
+\begin{align*}
+\int\left(\sqrt{x}-\frac1{\sqrt{x}}\right)dx
+&=\int(x^{1/2}-x^{-1/2})dx\\
+&=\frac{x^{3/2}}{3/2}-\frac{x^{1/2}}{1/2}+C\\
+&=\boxed{\frac23x^{3/2}-2\sqrt{x}+C}.
+\end{align*}
+\item Se aplican linealidad y la regla de la potencia:
+\begin{align*}
+\int(2x^{-3}+3x^{-2}+5)dx
+&=2\frac{x^{-2}}{-2}+3\frac{x^{-1}}{-1}+5x+C\\
+&=\boxed{-\frac1{x^2}-\frac3x+5x+C}.
+\end{align*}
+\end{enumerate}
+\end{examplebox}
+
+\begin{examplebox}{Ejercicios 19--24}
+\begin{enumerate}\setcounter{enumi}{18}
+\item Se convierten los cocientes en potencias:
+\begin{align*}
+\int(3-x^{-4}+x^{-2})dx
+&=3x-\frac{x^{-3}}{-3}+\frac{x^{-1}}{-1}+C\\
+&=\boxed{3x+\frac1{3x^3}-\frac1x+C}.
+\end{align*}
+\item Se divide cada término entre $x^{1/2}$:
+\begin{align*}
+\int\frac{x^2+4x-4}{\sqrt{x}}dx
+&=\int(x^{3/2}+4x^{1/2}-4x^{-1/2})dx\\
+&=\frac{x^{5/2}}{5/2}+4\frac{x^{3/2}}{3/2}
+ -4\frac{x^{1/2}}{1/2}+C\\
+&=\boxed{\frac25x^{5/2}+\frac83x^{3/2}-8\sqrt{x}+C}.
+\end{align*}
+\item De manera análoga,
+\begin{align*}
+\int\frac{y^4+2y^2-1}{\sqrt y}dy
+&=\int(y^{7/2}+2y^{3/2}-y^{-1/2})dy\\
+&=\frac{y^{9/2}}{9/2}+2\frac{y^{5/2}}{5/2}
+ -\frac{y^{1/2}}{1/2}+C\\
+&=\boxed{\frac29y^{9/2}+\frac45y^{5/2}-2\sqrt y+C}.
+\end{align*}
+\item Se usan exponentes fraccionarios:
+\begin{align*}
+\int(x^{1/3}+x^{-1/3})dx
+&=\frac{x^{4/3}}{4/3}+\frac{x^{2/3}}{2/3}+C\\
+&=\boxed{\frac34x^{4/3}+\frac32x^{2/3}+C}.
+\end{align*}
+\item Primero se simplifica el cociente:
+\begin{align*}
+\int\frac{27t^3-1}{t^{1/3}}dt
+&=\int(27t^{8/3}-t^{-1/3})dt\\
+&=27\frac{t^{11/3}}{11/3}-\frac{t^{2/3}}{2/3}+C\\
+&=\boxed{\frac{81}{11}t^{11/3}-\frac32t^{2/3}+C}.
+\end{align*}
+\item Por linealidad, $\int\sen t\,dt=-\cos t$ y $\int\cos t\,dt=\sen t$:
+\begin{align*}
+\int(3\sen t-2\cos t)dt
+&=3(-\cos t)-2(\sen t)+C\\
+&=\boxed{-3\cos t-2\sen t+C}.
+\end{align*}
+\end{enumerate}
+\end{examplebox}
+
+\section{Bloque II: logaritmos y funciones racionales}
+La numeración reinicia porque así aparece en la segunda serie del archivo fuente.
+
+\begin{examplebox}{Ejercicios 1--6}
+Para los dos primeros se aplica directamente $\int dx/x=\ln|x|+C$:
+\[
+1.\quad \int\frac5x dx=5\int\frac{dx}{x}
+=\boxed{5\ln|x|+C},
+\qquad
+2.\quad \int\frac{10}x dx=10\int\frac{dx}{x}
+=\boxed{10\ln|x|+C}.
+\]
+En los demás, se sustituye el denominador:
+\begin{align*}
+3.\quad u&=x+1, &du&=dx,
+&\int\frac{dx}{x+1}&=\int\frac{du}{u}=\ln|u|+C
+=\boxed{\ln|x+1|+C};\\
+4.\quad u&=x-5, &du&=dx,
+&\int\frac{dx}{x-5}&=\int\frac{du}{u}=\ln|u|+C
+=\boxed{\ln|x-5|+C};\\
+5.\quad u&=3-2x, &du&=-2dx,
+&\int\frac{dx}{3-2x}&=-\frac12\int\frac{du}{u}
+=-\frac12\ln|u|+C
+=\boxed{-\frac12\ln|3-2x|+C};\\
+6.\quad u&=3x+2, &du&=3dx,
+&\int\frac{dx}{3x+2}&=\frac13\int\frac{du}{u}
+=\frac13\ln|u|+C
+=\boxed{\frac13\ln|3x+2|+C}.
+\end{align*}
+\end{examplebox}
+
+\begin{examplebox}{Ejercicios 7--12}
+\begin{enumerate}\setcounter{enumi}{6}
+\item Sea $u=x^2+1$, $du=2x\,dx$ y $x\,dx=du/2$:
+\[
+\int\frac{x}{x^2+1}dx=\frac12\int\frac{du}{u}
+=\frac12\ln|u|+C
+=\boxed{\frac12\ln(x^2+1)+C}.
+\]
+\item Sea $u=3-x^3$, $du=-3x^2dx$:
+\[
+\int\frac{x^2}{3-x^3}dx=-\frac13\int\frac{du}{u}
+=-\frac13\ln|u|+C
+=\boxed{-\frac13\ln|3-x^3|+C}.
+\]
+\item Se divide cada término del numerador entre $x$:
+\begin{align*}
+\int\frac{x^2-4}{x}dx
+&=\int\left(x-\frac4x\right)dx
+=\boxed{\frac{x^2}{2}-4\ln|x|+C}.
+\end{align*}
+\item Sea $u=9-x^2$. Como $du=-2x\,dx$,
+\[
+\int\frac{x}{\sqrt{9-x^2}}dx
+=-\frac12\int u^{-1/2}du
+=-u^{1/2}+C
+=\boxed{-\sqrt{9-x^2}+C}.
+\]
+\item Se factoriza el denominador y se propone
+\[
+\frac{x^2+2x+3}{x(x^2+3x+9)}=\frac{A}{x}+\frac{Bx+C}{x^2+3x+9}.
+\]
+Al multiplicar por el denominador común,
+\[
+x^2+2x+3=A(x^2+3x+9)+x(Bx+C).
+\]
+Comparando coeficientes: $9A=3$, $3A+C=2$ y $A+B=1$; por tanto,
+$A=1/3$, $B=2/3$ y $C=1$. Además,
+$(2/3)x+1=\frac13(2x+3)$, que es un múltiplo de la derivada del cuadrático. Así,
+\begin{align*}
+\int\frac{x^2+2x+3}{x^3+3x^2+9x}dx
+&=\frac13\int\frac{dx}{x}
+ +\frac13\int\frac{2x+3}{x^2+3x+9}dx\\
+&=\boxed{\frac13\ln|x|+\frac13\ln(x^2+3x+9)+C}.
+\end{align*}
+\item Se factoriza
+\[
+x^3+3x^2-4=(x-1)(x+2)^2.
+\]
+Como el numerador contiene $x+2$, se simplifica para $x\ne-2$:
+\[
+\frac{x(x+2)}{(x-1)(x+2)^2}=\frac{x}{(x-1)(x+2)}
+=\frac{A}{x-1}+\frac{B}{x+2}.
+\]
+De $x=A(x+2)+B(x-1)$ resultan $A=1/3$ y $B=2/3$. Entonces
+\begin{align*}
+\int\frac{x(x+2)}{x^3+3x^2-4}dx
+&=\frac13\int\frac{dx}{x-1}+\frac23\int\frac{dx}{x+2}\\
+&=\boxed{\frac13\ln|x-1|+\frac23\ln|x+2|+C}.
+\end{align*}
+\end{enumerate}
+\end{examplebox}
+
+\begin{examplebox}{Ejercicios 13--18: división polinómica}
+En cada fracción impropia se divide el numerador entre el denominador; el residuo queda sobre el divisor:
+\begin{align*}
+13.\quad x^2-3x+2&=(x+1)(x-4)+6,\\
+14.\quad 2x^2+7x-3&=(x-2)(2x+11)+19,\\
+15.\quad x^3-3x^2+5&=(x-3)x^2+5,\\
+16.\quad x^3-6x-20&=(x+5)(x^2-5x+19)-115.
+\end{align*}
+Por consiguiente,
+\begin{align*}
+13.\quad \int\frac{x^2-3x+2}{x+1}dx
+&=\int\left(x-4+\frac6{x+1}\right)dx\\
+&=\boxed{\frac{x^2}{2}-4x+6\ln|x+1|+C},\\
+14.\quad \int\frac{2x^2+7x-3}{x-2}dx
+&=\int\left(2x+11+\frac{19}{x-2}\right)dx\\
+&=\boxed{x^2+11x+19\ln|x-2|+C},\\
+15.\quad \int\frac{x^3-3x^2+5}{x-3}dx
+&=\int\left(x^2+\frac5{x-3}\right)dx\\
+&=\boxed{\frac{x^3}{3}+5\ln|x-3|+C},\\
+16.\quad \int\frac{x^3-6x-20}{x+5}dx
+&=\int\left(x^2-5x+19-\frac{115}{x+5}\right)dx\\
+&=\boxed{\frac{x^3}{3}-\frac52x^2+19x-115\ln|x+5|+C}.
+\end{align*}
+En el ejercicio 17 se distribuye el factor $1/2$ y se expresan los cocientes como potencias:
+\begin{align*}
+\int\frac{x^4+(x-4)/x^2+2}{2}dx
+&=\int\left(\frac{x^4}{2}+\frac1{2x}-\frac2{x^2}+1\right)dx\\
+&=\frac{x^5}{10}+\frac12\ln|x|+2x^{-1}+x+C\\
+&=\boxed{\frac{x^5}{10}+\frac12\ln|x|+\frac2x+x+C}.
+\end{align*}
+En el ejercicio 18, la división da
+\[
+x^3-3x^2+4x-9=(x^2+3)(x-3)+x.
+\]
+Por tanto,
+\begin{align*}
+\int\frac{x^3-3x^2+4x-9}{x^2+3}dx
+&=\int\left(x-3+\frac{x}{x^2+3}\right)dx\\
+&=\frac{x^2}{2}-3x+\frac12\ln(x^2+3)+C\\
+&=\boxed{\frac{x^2}{2}-3x+\frac12\ln(x^2+3)+C}.
+\end{align*}
+\end{examplebox}
+
+\begin{examplebox}{Ejercicios 19--24}
+\begin{enumerate}\setcounter{enumi}{18}
+\item Sea $u=\ln x$, de modo que $du=dx/x$:
+\[
+\int\frac{(\ln x)^2}{x}dx=\int u^2du
+=\boxed{\frac{(\ln x)^3}{3}+C}.
+\]
+\item Puesto que $\ln(x^3)=3\ln x$,
+\begin{align*}
+\int\frac{dx}{x\ln(x^3)}
+&=\frac13\int\frac{dx}{x\ln x}.
+\end{align*}
+Con $u=\ln x$ y $du=dx/x$,
+\[
+\frac13\int\frac{du}{u}=\boxed{\frac13\ln|\ln x|+C}.
+\]
+\item Sea $u=x+1$ y $du=dx$:
+\[
+\int\frac{dx}{\sqrt{x+1}}=\int u^{-1/2}du
+=\boxed{2\sqrt{x+1}+C}.
+\]
+\item Sea $u=x^{1/3}$. Entonces $x=u^3$, $dx=3u^2du$ y $x^{2/3}=u^2$:
+\begin{align*}
+\int\frac{dx}{x^{2/3}(1+x^{1/3})}
+&=\int\frac{3u^2du}{u^2(1+u)}
+=3\int\frac{du}{1+u}\\
+&=\boxed{3\ln|1+x^{1/3}|+C}.
+\end{align*}
+\item Sea $u=x-1$, de modo que $x=u+1$ y $dx=du$:
+\begin{align*}
+\int\frac{2x}{(x-1)^2}dx
+&=\int\frac{2(u+1)}{u^2}du
+=\int(2u^{-1}+2u^{-2})du\\
+&=\boxed{2\ln|x-1|-\frac2{x-1}+C}.
+\end{align*}
+\item Como $x(x-2)=(x-1)^2-1$, sea $u=x-1$:
+\begin{align*}
+\int\frac{x(x-2)}{(x-1)^3}dx
+&=\int\frac{u^2-1}{u^3}du
+=\int(u^{-1}-u^{-3})du\\
+&=\ln|u|+\frac12u^{-2}+C\\
+&=\boxed{\ln|x-1|+\frac1{2(x-1)^2}+C}.
+\end{align*}
+\end{enumerate}
+\end{examplebox}
+
+\begin{examplebox}{Ejercicios 25--28: sustituciones con radicales}
+\begin{enumerate}\setcounter{enumi}{24}
+\item Sea $u=\sqrt{2x}$. Entonces $u^2=2x$ y $dx=u\,du$:
+\begin{align*}
+\int\frac{dx}{1+\sqrt{2x}}
+&=\int\frac{u}{1+u}du
+=\int\left(1-\frac1{1+u}\right)du\\
+&=u-\ln|1+u|+C\\
+&=\boxed{\sqrt{2x}-\ln|1+\sqrt{2x}|+C}.
+\end{align*}
+\item Sea $u=\sqrt{3x}$. Entonces $u^2=3x$ y $dx=\frac23u\,du$:
+\begin{align*}
+\int\frac{dx}{1+\sqrt{3x}}
+&=\frac23\int\frac{u}{1+u}du
+=\frac23\int\left(1-\frac1{1+u}\right)du\\
+&=\boxed{\frac23\left(\sqrt{3x}-\ln|1+\sqrt{3x}|\right)+C}.
+\end{align*}
+\item Sea $u=\sqrt{x}$. Entonces $x=u^2$, $dx=2u\,du$ y
+$u^2/(u-3)=u+3+9/(u-3)$:
+\begin{align*}
+\int\frac{\sqrt{x}}{\sqrt{x}-3}dx
+&=2\int\frac{u^2}{u-3}du
+=2\int\left(u+3+\frac9{u-3}\right)du\\
+&=u^2+6u+18\ln|u-3|+C\\
+&=\boxed{x+6\sqrt{x}+18\ln|\sqrt{x}-3|+C}.
+\end{align*}
+\item Sea $u=\sqrt[3]{x}$. Entonces $x=u^3$, $dx=3u^2du$ y
+$u^3/(u-1)=u^2+u+1+1/(u-1)$:
+\begin{align*}
+\int\frac{\sqrt[3]x}{\sqrt[3]x-1}dx
+&=3\int\frac{u^3}{u-1}du
+=3\int\left(u^2+u+1+\frac1{u-1}\right)du\\
+&=u^3+\frac32u^2+3u+3\ln|u-1|+C\\
+&=\boxed{x+\frac32x^{2/3}+3x^{1/3}+3\ln|x^{1/3}-1|+C}.
+\end{align*}
+\end{enumerate}
+\end{examplebox}
+
+\section{Bloque III: integrales trigonométricas}
+
+\begin{examplebox}{Ejercicios 29--32}
+\begin{enumerate}\setcounter{enumi}{28}
+\item Sea $u=\sen\theta$; entonces $du=\cos\theta\,d\theta$:
+\[
+\int\frac{\cos\theta}{\sen\theta}d\theta
+=\int\frac{du}{u}=\boxed{\ln|\sen\theta|+C}.
+\]
+\item Sea $u=5\theta$, de modo que $d\theta=du/5$. Como
+$\int\tan u\,du=-\ln|\cos u|+C$,
+\[
+\int\tan(5\theta)d\theta
+=\frac15\int\tan u\,du
+=\boxed{-\frac15\ln|\cos(5\theta)|+C}.
+\]
+\item Sea $u=2x$, $dx=du/2$. Usando
+$\int\csc u\,du=\ln|\csc u-\cot u|+C$,
+\[
+\int\csc(2x)dx
+=\frac12\int\csc u\,du
+=\boxed{\frac12\ln|\csc(2x)-\cot(2x)|+C}.
+\]
+\item Sea $u=x/2$, $dx=2du$. Con
+$\int\sec u\,du=\ln|\sec u+\tan u|+C$,
+\begin{align*}
+\int\sec\left(\frac{x}{2}\right)dx
+&=2\int\sec u\,du\\
+&=\boxed{2\ln\left|\sec\left(\frac{x}{2}\right)
++\tan\left(\frac{x}{2}\right)\right|+C}.
+\end{align*}
+\end{enumerate}
+\end{examplebox}
+
+\begin{examplebox}{Ejercicios 33--36}
+\begin{enumerate}\setcounter{enumi}{32}
+\item Sea $u=1+\sen t$; entonces $du=\cos t\,dt$:
+\[
+\int\frac{\cos t}{1+\sen t}dt
+=\int\frac{du}{u}=\boxed{\ln|1+\sen t|+C}.
+\]
+\item Sea $u=\cot t$; entonces $du=-\csc^2t\,dt$:
+\[
+\int\frac{\csc^2t}{\cot t}dt
+=-\int\frac{du}{u}=\boxed{-\ln|\cot t|+C}.
+\]
+\item Sea $u=\sec x-1$; entonces $du=\sec x\tan x\,dx$:
+\[
+\int\frac{\sec x\tan x}{\sec x-1}dx
+=\int\frac{du}{u}=\boxed{\ln|\sec x-1|+C}.
+\]
+\item Se separa la integral y se usan las fórmulas de secante y tangente:
+\begin{align*}
+\int(\sec t+\tan t)dt
+&=\int\sec t\,dt+\int\tan t\,dt\\
+&=\ln|\sec t+\tan t|-\ln|\cos t|+C.
+\end{align*}
+Por tanto,
+\[
+\boxed{\int(\sec t+\tan t)dt
+=\ln|\sec t+\tan t|-\ln|\cos t|+C}.
+\]
+\end{enumerate}
+\end{examplebox}
+
+\section{Comprobación}
+La verificación consiste en derivar cada respuesta. Por ejemplo,
+\[
+ \frac{d}{dx}\left[\frac2{45}(3x^5-5)^{3/2}\right]
+ =\frac2{45}\frac32(3x^5-5)^{1/2}(15x^4)
+ =x^4\sqrt{3x^5-5},
+\]
+y
+\[
+ \frac{d}{dx}\left[2\ln|x-1|-\frac2{x-1}\right]
+ =\frac2{x-1}+\frac2{(x-1)^2}=\frac{2x}{(x-1)^2}.
+\]
+Los demás resultados se comprueban del mismo modo mediante regla de la cadena, regla de la potencia y simplificación algebraica. En todos los casos la derivada coincide con el integrando en cada intervalo de su dominio.
+
+\section{Conclusiones}
+La actividad muestra que la elección del método depende de la forma del integrando. Las potencias y sumas se atienden directamente; las composiciones se simplifican con una sustitución; las funciones racionales impropias requieren división y las expresiones con radicales pueden racionalizarse mediante un cambio de variable. Finalmente, las integrales trigonométricas se reconocen a partir de derivadas fundamentales. La diferenciación confirma los 60 resultados y permite detectar de manera inmediata errores de signo o factores constantes.
+
+\nocite{openstax2016calculus2}
+\bibliography{UANL/ingeniero-agronomo/calculo-integral/calculo-integral}
